@@ -1,0 +1,8 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Thea2Translator/Thea2Translator/obj/Debug/Thea2Translator.csproj.CoreCompileInputs.cache
+/Thea2Translator/Thea2Translator/obj/Debug/Thea2Translator.csprojAssemblyReference.cache
+/Thea2Translator/Thea2Translator.CSVReader/bin/Debug
+/Thea2Translator/Thea2Translator.CSVReader/obj/Debug

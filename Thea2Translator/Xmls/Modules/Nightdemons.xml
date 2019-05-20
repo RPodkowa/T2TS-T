@@ -1,0 +1,1480 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<MODULE xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Nightdemons" lastEventIndex="34" allowToUse="true" uniqueModuleID="0">
+  <Adventure name="NightdemonsTradeadv" uniqueID="31" typeGeneric="false" typePerGroupGeneric="false" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="12" joinIsForced="false" joinType="OnlyOwn" joinRange="SinglePosition">
+    <nodes xsi:type="NodeStarting" ID="1" positionX="10" positionY="-10" width="347" height="661" image="Event205">
+      <outputs ownerID="1" targetID="2" fromX="334" fromY="-613" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="2" positionX="478.965057" positionY="-130.811157" width="350" height="966">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="stuff" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsItems" />
+          </LogicFilter>
+          <LogicProcessing name="unstuff" makePublic="true" list1="stuff">
+            <scriptCallWithTag scriptName="FLP_FilterAnyUnEquippedItems" />
+          </LogicProcessing>
+        </FilterBlock>
+      </logic>
+      <outputs name="Trade." ownerID="2" targetID="7" group="G1" fromX="804" fromY="-621" />
+      <outputs name="Trade." ownerID="2" targetID="5" group="G1" fromX="804" fromY="-702" />
+      <outputs name="Trade." ownerID="2" targetID="3" group="G1" fromX="804" fromY="-782" />
+      <outputs name="Come back another time." ownerID="2" targetID="6" fromX="804" fromY="-862" />The trader's stalls stand open for you
+
+</nodes>
+    <nodes xsi:type="NodeTrade" ID="3" positionX="1021.18225" positionY="131.77655" width="460" height="479" traderProfile="TRADER-NIGHT_DEMONS_LARGE" playerInventory="stuff">
+      <outputs name="Confirm" ownerID="3" targetID="6" fromX="1451" fromY="-196" />
+      <outputs name="Cancel" ownerID="3" targetID="11" fromX="1451" fromY="-276" />
+    </nodes>
+    <nodes xsi:type="NodeTrade" ID="4" positionX="1691" positionY="-474" width="460" height="479" traderProfile="TRADER-NIGHT_DEMONS_LARGE" playerInventory="nofood" startingBalance="-50">
+      <logic>
+        <ModifierBlock>
+          <LogicFilter name="food">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsItems" parameter="1" tag="TAG-FOOD" />
+          </LogicFilter>
+          <LogicProcessing name="nofood" makePublic="true" list1="stuff" list2="food">
+            <scriptCallWithTag scriptName="FLP_AminusB" />
+          </LogicProcessing>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Confirm" ownerID="4" targetID="6" fromX="2121" fromY="-802" />
+      <outputs name="Cancel" ownerID="4" targetID="11" fromX="2121" fromY="-882" />
+    </nodes>
+    <nodes xsi:type="NodeTrade" ID="5" positionX="1804.08765" positionY="-1106.60278" width="460" height="479" traderProfile="TRADER-NIGHT_DEMONS_LARGE_FRIENDLY" playerInventory="stuff">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_PlayersHaveSharedTag" parameter="50" tag="TAG-LOYALTY_NIGHT_DEMONS" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Confirm" ownerID="5" targetID="6" fromX="2234" fromY="-1434" />
+      <outputs name="Cancel" ownerID="5" targetID="11" fromX="2234" fromY="-1515" />
+    </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="6" positionX="2576.332" positionY="-789.021667" width="350" height="530" linkedEventUniqueID="0" />
+    <nodes xsi:type="NodeAdventure" ID="7" positionX="1119.83972" positionY="-417.843842" width="350" height="805">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_PlayersHaveSharedTag" parameter="0" tag="TAG-LOYALTY_NIGHT_DEMONS" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Trade." ownerID="7" targetID="4" fromX="1445" fromY="-908" />
+      <outputs name="Come back another time." ownerID="7" targetID="6" fromX="1445" fromY="-989" />'You are no friends of ours, so you will pay extra.'</nodes>
+    <nodes xsi:type="NodeAdventure" ID="11" positionX="1789.41174" positionY="355.919952" width="350" height="725">
+      <outputs name="Leave." ownerID="11" targetID="6" fromX="2115" fromY="-135" />'You waste our time, go.'</nodes>
+  </Adventure>
+  <Adventure name="NightdemonsVillage" uniqueID="32" typeGeneric="false" typePerGroupGeneric="false" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="95" joinIsForced="false" joinType="AllAlly" joinRange="MovementArea">
+    <nodes xsi:type="NodeStarting" ID="1" positionX="0" positionY="55" width="347" height="741" image="Event217">
+      <outputs ownerID="1" targetID="3" group="G1" fromX="324" fromY="-548" />
+      <outputs ownerID="1" targetID="2" group="G1" fromX="324" fromY="-628" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="2" positionX="510" positionY="-407" width="350" height="966">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="ppl" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" />
+          </LogicFilter>
+          <LogicFilter name="wood" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsResources" parameter="1" tag="TAG-SILVER" />
+          </LogicFilter>
+          <LogicFilter name="ndemon" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="TAG-NIGHT_DEMON" />
+          </LogicFilter>
+          <LogicFilter name="wisdom" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="20" tag="TAG-WISDOM" />
+          </LogicFilter>
+          <LogicFilter name="zerca" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_ThisPlayerAllGroupsCharacters" parameter="1" tag="TAG-ZERCA" />
+          </LogicFilter>
+          <LogicFilter name="children" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="TAG-CHILD" />
+          </LogicFilter>
+          <LogicFilter name="wer1">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" tag="SUBRACE-NIGHT_WEREWOLF_WEAK" />
+          </LogicFilter>
+          <LogicFilter name="wer2">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" tag="SUBRACE-NIGHT_WEREWOLF_WEAK" />
+          </LogicFilter>
+          <LogicProcessing name="wise" makePublic="true" list1="wisdom" list2="zerca">
+            <scriptCallWithTag scriptName="FLP_AorB" />
+          </LogicProcessing>
+          <LogicProcessing name="werewolves" makePublic="true" list1="wer1" list2="wer2">
+            <scriptCallWithTag scriptName="FLP_AorB" />
+          </LogicProcessing>
+        </FilterBlock>
+      </logic>
+      <outputs name="[Horz or Zorya] As masters of moon and the stars, claim your affinity with the children of the night." ownerID="2" targetID="85" group="G1" fromX="835" fromY="-898" />
+      <outputs name="Ask if there is anything you can help with?" ownerID="2" targetID="5" fromX="835" fromY="-978" />
+      <outputs name="Leave." ownerID="2" targetID="25" fromX="835" fromY="-1058" />
+      <outputs name="[Friend or night demon] Say that you accept any dangers that may befall you here and would like to enter regardless." ownerID="2" targetID="7" group="G1" fromX="835" fromY="-1138" />You enter the territory claimed by the night demons. You see werewolves and strigas skulk in the shadows, watching you with hungry eyes:
+
+'Have you come to offer your tasty blood, or flesh maybe?'</nodes>
+    <nodes xsi:type="NodeAdventure" ID="3" positionX="511" positionY="515" width="350" height="885">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="ppl" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" />
+          </LogicFilter>
+          <LogicFilter name="ndemon" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="TAG-NIGHT_DEMON" />
+          </LogicFilter>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_PlayersHaveSharedTag" parameter="0" tag="TAG-LOYALTY_NIGHT_DEMONS" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Attack!" ownerID="3" targetID="26" group="G1" fromX="836" fromY="23" />
+      <outputs name="Attack!" ownerID="3" targetID="35" group="G1" fromX="836" fromY="-56" />
+      <outputs name="Leave." ownerID="3" targetID="25" fromX="836" fromY="-136" />You enter the territory claimed by the night demons. You feel many eyes upon you and a deep growl greets you:
+
+'Have you come to feed our bloodlust, enemy of the night?'
+
+</nodes>
+    <nodes xsi:type="NodeAdventure" ID="4" positionX="1513" positionY="279" width="350" height="885">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction list="wood">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="15" />
+          </LogicResultAction>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="70" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicProcessing name="1" list1="ppl">
+            <scriptCallWithTag scriptName="FLP_GetRandomXelements" parameter="1" />
+          </LogicProcessing>
+          <LogicModifiers list="1">
+            <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="2" tag="SKILL_PACK-CURSE_M" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Better leave." ownerID="4" targetID="25" fromX="1838" fromY="-212" />
+      <outputs name="Attack!" ownerID="4" targetID="26" group="G1" fromX="1838" fromY="-292" />
+      <outputs name="Attack!" ownerID="4" targetID="35" group="G1" fromX="1838" fromY="-372" />The inhabitants of this place begin circling you and you feel terribly exposed to their hunger.
+
+'You carry much silver,  mithril, or other material that was borne of the faul metals that hurt us  and come here.  Leave.'</nodes>
+    <nodes xsi:type="NodeDealDamage" ID="5" positionX="963" positionY="-173" width="460" height="699" challengeTypeDamage="TypeMental" minDamage="0" maxDamage="0" useCountInPercent="true" targetGroup="ppl">
+      <outputs ownerID="5" targetID="4" group="G1" fromX="1392" fromY="-561" />
+      <outputs ownerID="5" targetID="16" group="G1" fromX="1392" fromY="-641" />
+      <outputs ownerID="5" targetID="37" group="G1" fromX="1392" fromY="-721" />
+      <outputs ownerID="5" targetID="36" group="G1" fromX="1392" fromY="-801" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="7" positionX="629" positionY="-1481" width="350" height="966">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="pet" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsItems" parameter="1" tag="TAG-PET" />
+          </LogicFilter>
+          <LogicFilter name="ghost">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="TAG-GHOST" />
+          </LogicFilter>
+          <LogicFilter name="food" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsItems" parameter="1" tag="TAG-MEAT" />
+          </LogicFilter>
+          <LogicFilter name="petghost">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsItems" parameter="1" tag="TAG-PET_GHOST" />
+          </LogicFilter>
+          <LogicFilter name="petwraith">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsItems" parameter="1" tag="TAG-PET_WRAITH" />
+          </LogicFilter>
+          <LogicFilter name="wraith">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="" tag="SUBRACE-UNLI_WRAITH" />
+          </LogicFilter>
+          <LogicProcessing name="ghostorwraith" list1="ghost" list2="wraith">
+            <scriptCallWithTag scriptName="FLP_AorB" />
+          </LogicProcessing>
+          <LogicProcessing name="petghostorwraith" list1="petwraith" list2="petghost">
+            <scriptCallWithTag scriptName="FLP_AorB" />
+          </LogicProcessing>
+          <LogicProcessing name="spirits" makePublic="true" list1="ghostorwraith" list2="petghostorwraith">
+            <scriptCallWithTag scriptName="FLP_AorB" />
+          </LogicProcessing>
+          <LogicProcessing name="petsnoghost" makePublic="true" list1="pet" list2="petghostorwraith">
+            <scriptCallWithTag scriptName="FLP_AminusB" />
+          </LogicProcessing>
+          <LogicResultAction list="ndemon" resultGroup="G1">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+          <LogicResultAction resultGroup="G1">
+            <scriptCallWithTag scriptName="FRA_PlayersHaveSharedTag" parameter="50" tag="TAG-LOYALTY_NIGHT_DEMONS" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Ask around for anything of interest." ownerID="7" targetID="65" fromX="954" fromY="-1972" />
+      <outputs name="Ask if they would trade with you?" ownerID="7" targetID="12" fromX="954" fromY="-2052" />
+      <outputs name="There are some werewolves in a fighting ring, go see them." ownerID="7" targetID="15" fromX="954" fromY="-2132" />
+      <outputs name="Visit the pleasure houses." ownerID="7" targetID="17" fromX="954" fromY="-2212" />'You are friends, for now. So, you may enter at your own peril.'</nodes>
+    <nodes xsi:type="NodeTrade" ID="8" positionX="1907" positionY="-1852" width="460" height="479" traderProfile="TRADER-BANDIT_TWO" playerInventory="petsnoghost" startingBalance="-15">
+      <outputs name="Confirm" ownerID="8" targetID="11" fromX="2337" fromY="-2180" />
+      <outputs name="Cancel" ownerID="8" targetID="87" fromX="2337" fromY="-2260" />
+    </nodes>
+    <nodes xsi:type="NodeTrade" ID="9" positionX="1662" positionY="-2508" width="460" height="479" traderProfile="TRADER-BANDIT_TWO" playerInventory="noch" startingBalance="-1">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="child">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="TAG-CHILD" />
+          </LogicFilter>
+          <LogicFilter name="ch">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="TAG-CHOSEN" />
+          </LogicFilter>
+          <LogicProcessing name="noch" list1="child" list2="ch">
+            <scriptCallWithTag scriptName="FLP_AminusB" />
+          </LogicProcessing>
+        </FilterBlock>
+      </logic>
+      <outputs name="Confirm" ownerID="9" targetID="11" fromX="2092" fromY="-2836" />
+      <outputs name="Cancel" ownerID="9" targetID="87" fromX="2092" fromY="-2916" />
+    </nodes>
+    <nodes xsi:type="NodeTrade" ID="10" positionX="1103" positionY="-2579" width="460" height="479" traderProfile="TRADER-BANDIT_TWO" playerInventory="noch" startingBalance="-1">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="unl">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" tag="RACE-UNLIVING" />
+          </LogicFilter>
+          <LogicFilter name="ch">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="TAG-CHOSEN" />
+          </LogicFilter>
+          <LogicProcessing name="pplnounl" makePublic="true" list1="ppl" list2="unl">
+            <scriptCallWithTag scriptName="FLP_AminusB" />
+          </LogicProcessing>
+          <LogicProcessing name="noch" list1="pplnounl" list2="ch">
+            <scriptCallWithTag scriptName="FLP_AminusB" />
+          </LogicProcessing>
+        </FilterBlock>
+      </logic>
+      <outputs name="Confirm" ownerID="10" targetID="11" fromX="1533" fromY="-2907" />
+      <outputs name="Cancel" ownerID="10" targetID="87" fromX="1533" fromY="-2987" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="11" positionX="2639" positionY="-1399" width="350" height="805">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="2" tag="TAG-LOYALTY_NIGHT_DEMONS" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Leave." ownerID="11" targetID="66" group="G1" fromX="2964" fromY="-1890" />
+      <outputs name="Leave." ownerID="11" targetID="67" group="G1" fromX="2964" fromY="-1970" />'I accept your offering and will summon the unliving to your service.'</nodes>
+    <nodes xsi:type="NodeAdventure" ID="12" positionX="3293" positionY="-1343" width="350" height="725">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_PlayersHaveSharedTag" parameter="50" tag="TAG-LOYALTY_NIGHT_DEMONS" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="1" tag="TAG-TRADERFDEMONMED1" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Trade." ownerID="12" targetID="14" fromX="3618" fromY="-1834" />'You have proven friends to us so far, yes, we will trade with you.'</nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="14" positionX="3879" positionY="-1933" width="350" height="530" linkedEventUniqueID="31" />
+    <nodes xsi:type="NodeAdventure" ID="15" positionX="1633" positionY="-3063" width="350" height="966">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="strong" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="25" tag="TAG-STRENGTH" />
+          </LogicFilter>
+          <LogicFilter name="mustic" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="20" tag="TAG-MYSTICISM" />
+          </LogicFilter>
+          <LogicProcessing name="strongest" list1="ppl">
+            <scriptCallWithTag scriptName="FLP_SortByTagDown" tag="TAG-STRENGTH" />
+          </LogicProcessing>
+          <LogicProcessing name="2str" makePublic="true" list1="strongest">
+            <scriptCallWithTag scriptName="FLP_GetTopXElements" parameter="2" />
+          </LogicProcessing>
+          <LogicProcessing name="1str" makePublic="true" list1="strongest">
+            <scriptCallWithTag scriptName="FLP_GetTopXElements" parameter="1" />
+          </LogicProcessing>
+          <LogicProcessing name="myst" list1="mustic">
+            <scriptCallWithTag scriptName="FLP_SortByTagDown" tag="TAG-MYSTICISM" />
+          </LogicProcessing>
+          <LogicProcessing name="1myst" makePublic="true" list1="myst">
+            <scriptCallWithTag scriptName="FLP_GetTopXElements" parameter="1" />
+          </LogicProcessing>
+        </FilterBlock>
+      </logic>
+      <outputs name="[One time only] Test your brawn against a werewolf. Two of your strongest will fight." ownerID="15" targetID="49" fromX="1958" fromY="-3554" />
+      <outputs name="[One time only] Test your brawn against a werewolf.  One of your strongest will fight." ownerID="15" targetID="58" fromX="1958" fromY="-3634" />
+      <outputs name="You have either exhausted your chances for a challenge, or this just isn't your time. Go back." ownerID="15" targetID="87" fromX="1958" fromY="-3714" />
+      <outputs name="[One time only] Challenge the striga master, one on one." ownerID="15" targetID="71" fromX="1958" fromY="-3794" />The night beasts are brawling to prove their worth. You are welcome to join if you dare.
+
+Close by, a striga master is showing off his mystical powers.</nodes>
+    <nodes xsi:type="NodeAdventure" ID="16" positionX="2029" positionY="102" width="350" height="885">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="luck">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="12" tag="TAG-LUCK" />
+          </LogicFilter>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="20" />
+          </LogicResultAction>
+          <LogicResultAction list="luck">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="1" tag="TAG-LOYALTY_NIGHT_DEMONS" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Ask if they would trade with you?" ownerID="16" targetID="84" fromX="2354" fromY="-389" />
+      <outputs name="Visit the pleasure houses." ownerID="16" targetID="17" fromX="2354" fromY="-469" />
+      <outputs name="The pleasure house is busy, come back later." ownerID="16" targetID="25" fromX="2354" fromY="-549" />'It is your lucky day, you may enter, at your own risk.'</nodes>
+    <nodes xsi:type="NodeDealDamage" ID="17" positionX="3523" positionY="-2529" width="460" height="940" challengeTypeDamage="TypePhysical" minDamage="10" maxDamage="20" useCountInPercent="true" targetGroup="ppl">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_TurnAboveOrEqualTag" tag="TAG-KS_PLEASUREHOUSE1" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_SetTurnTag" parameter="20" tag="TAG-KS_PLEASUREHOUSE1" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs ownerID="17" targetID="18" group="G1" fromX="3952" fromY="-2917" />
+      <outputs ownerID="17" targetID="19" group="G1" fromX="3952" fromY="-2997" />
+      <outputs ownerID="17" targetID="21" group="G1" fromX="3952" fromY="-3077" />
+      <outputs ownerID="17" targetID="20" group="G1" fromX="3952" fromY="-3157" />
+      <outputs ownerID="17" targetID="22" group="G1" fromX="3952" fromY="-3238" />
+      <outputs ownerID="17" targetID="82" group="G1" fromX="3952" fromY="-3318" />
+      <outputs ownerID="17" targetID="83" group="G1" fromX="3952" fromY="-3398" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="18" positionX="4932" positionY="-2215" width="350" height="725" image="Event102">
+      <logic>
+        <FilterBlock>
+          <LogicProcessing name="spirit" list1="ppl">
+            <scriptCallWithTag scriptName="FLP_FilterByUnhealthy" tag="TAG-HEALTH_SPIRIT" />
+          </LogicProcessing>
+          <LogicResultAction list="spirit">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="10" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicModifiers list="spirit">
+            <scriptCallWithTag scriptName="FMO_SetHealthPercentTo" parameter="100" tag="TAG-HEALTH_SPIRIT" />
+          </LogicModifiers>
+          <LogicModifiers list="ppl">
+            <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="1" tag="SKILL_PACK-BLESS_S" />
+          </LogicModifiers>
+          <LogicModifiers list="ppl">
+            <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="2" tag="SKILL_PACK-ILLNESS" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Thank them, rest and leave." ownerID="18" targetID="23" fromX="5257" fromY="-2706" />You enter the dark rooms of the pleasure house and an exotic dancer that seems part spirit part flesh entertains you. 
+
+Your spirt is restored but you feel some of your blood was drained and this left you ailing.</nodes>
+    <nodes xsi:type="NodeAdventure" ID="19" positionX="4056" positionY="-2498" width="350" height="725">
+      <logic>
+        <FilterBlock>
+          <LogicProcessing name="physical" list1="ppl">
+            <scriptCallWithTag scriptName="FLP_FilterByUnhealthy" tag="TAG-HEALTH_MENTAL" />
+          </LogicProcessing>
+          <LogicResultAction list="physical">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="15" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicModifiers list="physical">
+            <scriptCallWithTag scriptName="FMO_SetHealthPercentTo" parameter="100" tag="TAG-HEALTH_MENTAL" />
+          </LogicModifiers>
+          <LogicModifiers list="ppl">
+            <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="2" tag="SKILL_PACK-ILLNESS" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Thank them, rest and leave." ownerID="19" targetID="23" fromX="4381" fromY="-2989" />You got drunk in a night demon pleasure house, when you wake, you are covered in wolf fur and rather rough 'love bites'... but you do feel renewed. </nodes>
+    <nodes xsi:type="NodeAdventure" ID="20" positionX="5356" positionY="-2760" width="350" height="725">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="45" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicModifiers list="ppl">
+            <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="3" tag="SKILL_PACK-ILLNESS" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Leave..." ownerID="20" targetID="23" fromX="5681" fromY="-3251" />You got drunk in a night demon pleasure house, when you wake, you are covered in wolf fur and rather rough 'love bites'... You do not feel very well, but it was certainly a night to remember, or was it?</nodes>
+    <nodes xsi:type="NodeAdventure" allowOnce="true" ID="21" positionX="4509" positionY="-2625" width="350" height="725">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction list="ppl">
+            <scriptCallWithTag scriptName="FRA_ChancePlusLuck" parameter="5" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicProcessing name="1" list1="ppl">
+            <scriptCallWithTag scriptName="FLP_GetRandomXelements" parameter="1" />
+          </LogicProcessing>
+          <LogicModifiers list="1">
+            <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="2" tag="SKILL_PACK-BLESS_P" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="1" tag="ITEM_CARGO-RARE_ONE_PET_WOLF" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Leave..." ownerID="21" targetID="23" fromX="4834" fromY="-3116" />You got drunk in a night demon pleasure house, when you wake, you are covered in wolf fur and rather rough 'love bites'... And one wolf seems to now think you're its daddy.</nodes>
+    <nodes xsi:type="NodeAdventure" ID="22" positionX="6005" positionY="-3079" width="350" height="725">
+      <logic>
+        <FilterBlock>
+          <LogicProcessing name="pplnochild" list1="ppl" list2="children">
+            <scriptCallWithTag scriptName="FLP_AminusB" />
+          </LogicProcessing>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="4" />
+          </LogicResultAction>
+          <LogicResultAction list="pplnochild">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicProcessing name="1" list1="pplnochild">
+            <scriptCallWithTag scriptName="FLP_GetRandomXelements" parameter="1" />
+          </LogicProcessing>
+          <LogicModifiers list="1">
+            <scriptCallWithTag scriptName="FMO_UpgradeToSubrace" parameter="" tag="SUBRACE-NIGHT_STRIGA" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Leave..." ownerID="22" targetID="23" fromX="6330" fromY="-3570" />You got drunk in a night demon pleasure house, when you wake, you are covered in wolf fur and rather rough 'love bites'... and when you look down at yourself - you're a striga!</nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="23" positionX="4927" positionY="-3093" width="350" height="530" linkedEventUniqueID="0">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="2" tag="TAG-LOYALTY_NIGHT_DEMONS" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+    </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="25" positionX="1854" positionY="-1297" width="350" height="530" linkedEventUniqueID="0" />
+    <nodes xsi:type="NodeChallenge" ID="26" positionX="-1594" positionY="-852" width="500" height="726" challengeType="TypePhysical" versusGroup="GROUP-NIGHT_DEMON_8P_8M_8S" challengeScale="101" challengedList="ppl">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="60" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Win" ownerID="26" targetID="30" fromX="-1152" fromY="-1347" />
+      <outputs name="Lose" ownerID="26" targetID="29" fromX="-1152" fromY="-1427" />
+      <outputs name="Surrender" ownerID="26" targetID="29" fromX="-1152" fromY="-1507" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="28" positionX="17" positionY="-848" width="350" height="725">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_PlayerHaveTag" parameter="1" tag="TAG-HORZ" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="10" tag="TAG-LOYALTY_NIGHT_DEMONS" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="2" tag="TAG-LOYALTY_ALPHA_CLANS" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Leave." ownerID="28" targetID="33" fromX="342" fromY="-1339" />The night demons are slain and you hear a dreadful howling in the distance...
+
+But then again, you are chosen of Horz, an alpha of the moon. it is your right to claim these beasts if you so wish and you know those who witnessed it will respect you.</nodes>
+    <nodes xsi:type="NodeDealDamage" ID="29" positionX="-2332" positionY="-1684" width="460" height="459" challengeTypeDamage="TypeMental" minDamage="30" maxDamage="60" useCountInPercent="true" targetGroup="ndemon">
+      <outputs ownerID="29" targetID="31" fromX="-1902" fromY="-2072" />
+    </nodes>
+    <nodes xsi:type="NodeDealDamage" ID="30" positionX="-952" positionY="-606" width="460" height="539" challengeTypeDamage="TypeMental" minDamage="20" maxDamage="50" useCountInPercent="true" targetGroup="ndemon">
+      <outputs ownerID="30" targetID="28" group="G1" fromX="-522" fromY="-588" />
+      <outputs ownerID="30" targetID="44" group="G1" fromX="-964" fromY="-668" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="31" positionX="-1894" positionY="-2202" width="350" height="805">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="chosen">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="TAG-CHOSEN" />
+          </LogicFilter>
+          <LogicProcessing name="deadnochosen" list1="ppl" list2="chosen">
+            <scriptCallWithTag scriptName="FLP_AminusB" parameter="" />
+          </LogicProcessing>
+          <LogicProcessing name="dead" makePublic="true" list1="deadnochosen">
+            <scriptCallWithTag scriptName="FLP_GetRandomXelementsIfPossible" parameter="1" />
+          </LogicProcessing>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="-30" tag="TAG-LOYALTY_NIGHT_DEMONS" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="-5" tag="TAG-LOYALTY_SHADOW_KIN" />
+          </LogicModifiers>
+          <LogicModifiers list="dead">
+            <scriptCallWithTag scriptName="FMO_TakeCharacters" parameter="ndemonkill" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Leave." ownerID="31" targetID="32" group="G1" fromX="-1568" fromY="-2693" />
+      <outputs name="Leave." ownerID="31" targetID="88" group="G1" fromX="-1568" fromY="-2773" />The night beasts defeat you and claim their blood price for your attack.</nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="32" positionX="-1432" positionY="-1929" width="350" height="530" allPlayersXP="1" allPlayersRP="1" linkedEventUniqueID="0">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="pppl">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" />
+          </LogicFilter>
+          <LogicProcessing name="1" list1="pppl">
+            <scriptCallWithTag scriptName="FLP_GetRandomXelements" parameter="1" />
+          </LogicProcessing>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="3" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicModifiers list="1">
+            <scriptCallWithTag scriptName="FMO_UpgradeToSubrace" parameter="" tag="SUBRACE-NIGHT_STRIGA" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+    </nodes>
+    <nodes xsi:type="NodeSpawnOnMap" ID="33" positionX="-978" positionY="-1249" width="480" height="583" radius="0" destroyOwner="true" linkedEventUniqueID="0">
+      <outputs ownerID="33" targetID="90" group="G1" fromX="-529" fromY="-1231" />
+      <outputs ownerID="33" targetID="89" group="G1" fromX="-989" fromY="-1311" />
+    </nodes>
+    <nodes xsi:type="NodeChallenge" ID="35" positionX="-2190" positionY="-634" width="500" height="726" challengeType="TypeSpirit" versusGroup="GROUP-NIGHT_DEMON_8P_8M_8S" challengeScale="101" challengedList="ppl">
+      <outputs name="Win" ownerID="35" targetID="30" fromX="-1748" fromY="-1129" />
+      <outputs name="Lose" ownerID="35" targetID="29" fromX="-1748" fromY="-1209" />
+      <outputs name="Surrender" ownerID="35" targetID="29" fromX="-1748" fromY="-1289" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="36" positionX="2630" positionY="-39" width="350" height="885">
+      <outputs name="Better leave." ownerID="36" targetID="25" fromX="2955" fromY="-530" />
+      <outputs name="Attack!" ownerID="36" targetID="26" group="G1" fromX="2955" fromY="-610" />
+      <outputs name="Attack!" ownerID="36" targetID="35" group="G1" fromX="2955" fromY="-690" />'No, leave. Return with those who are friends of the night, perhaps then we will listen.'</nodes>
+    <nodes xsi:type="NodeAdventure" ID="37" positionX="3538" positionY="-260" width="350" height="805">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="luck">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="12" tag="TAG-LUCK" />
+          </LogicFilter>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="70" />
+          </LogicResultAction>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_PlayerHaveTag" parameter="1" tag="TAG-DOMAIN_NATURE" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="1" tag="TAG-LOYALTY_NIGHT_DEMONS" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Ask if they would trade with you?" ownerID="37" targetID="95" fromX="3863" fromY="-751" />
+      <outputs name="Visit the pleasure houses." ownerID="37" targetID="17" fromX="3863" fromY="-831" />'It is your lucky day, you call nature your master and we respect that. You may enter, at your own risk.'</nodes>
+    <nodes xsi:type="NodeAdventure" allowOnce="true" ID="38" positionX="274" positionY="-2823" width="350" height="805">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_PlayersHaveSharedTag" parameter="50" tag="TAG-LOYALTY_NIGHT_DEMONS" />
+          </LogicResultAction>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_TurnAboveOrEqualTag" tag="TAG-RECRUITMENT1" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_SetTurnTag" parameter="15" tag="TAG-RECRUITMENT1" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Accept whoever it is that wants to join." ownerID="38" targetID="39" fromX="599" fromY="-3314" />
+      <outputs name="Refuse politely." ownerID="38" targetID="25" fromX="599" fromY="-3394" />From within the shadows they speak to you:
+
+'You are chosen of the night. We want to be in your pack.'</nodes>
+    <nodes xsi:type="NodeDealDamage" ID="39" positionX="453" positionY="-3831" width="460" height="619" challengeTypeDamage="TypeMental" minDamage="0" maxDamage="0" useCountInPercent="false">
+      <outputs ownerID="39" targetID="41" group="G1" fromX="882" fromY="-4219" />
+      <outputs ownerID="39" targetID="40" group="G1" fromX="882" fromY="-4299" />
+      <outputs ownerID="39" targetID="43" group="G1" fromX="882" fromY="-4379" />
+    </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="40" positionX="1244" positionY="-4350" width="350" height="530" linkedEventUniqueID="0">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="10" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddCharacterNoDefaultCargo" parameter="1" tag="SUBRACE-NIGHT_STRIGA_MISTRESS" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+    </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="41" positionX="1029" positionY="-3684" width="350" height="530" linkedEventUniqueID="0">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="5" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddCharacterNoDefaultCargo" parameter="1" tag="SUBRACE-NIGHT_WEREWOLF" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+    </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="43" positionX="792" positionY="-4514" width="350" height="530" linkedEventUniqueID="0">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddCharacterNoDefaultCargo" parameter="1" tag="SUBRACE-NIGHT_STRIGA" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="44" positionX="-375" positionY="-792" width="350" height="725">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="-30" tag="TAG-LOYALTY_NIGHT_DEMONS" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="-5" tag="TAG-LOYALTY_SHADOW_KIN" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Leave." ownerID="44" targetID="33" fromX="-49" fromY="-1283" />The night demons are slain and you hear a dreadful howling in the distance...</nodes>
+    <nodes xsi:type="NodeChallenge" ID="47" positionX="2962" positionY="-3352" width="500" height="726" challengeType="TypePhysical" versusGroup="GROUP-WEREWOLF_ONE_5P_2M_2S" challengeScale="101" challengedList="2str">
+      <outputs name="Win" ownerID="47" targetID="48" fromX="3403" fromY="-3847" />
+      <outputs name="Lose" ownerID="47" targetID="50" fromX="3403" fromY="-3927" />
+      <outputs name="Surrender" ownerID="47" targetID="57" fromX="3403" fromY="-4007" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="48" positionX="3558" positionY="-3535" width="350" height="885">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="0;1" tag="ITEM_CARGO-RARE_ONE_PET_WOLF" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="20;40" tag="ITEM_CARGO-FEW_MONSTER_BONE" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="8" tag="TAG-LOYALTY_NIGHT_DEMONS" />
+          </LogicModifiers>
+          <LogicModifiers list="2str">
+            <scriptCallWithTag scriptName="FMO_AddTags" parameter="1" tag="TAG-STRENGTH" />
+          </LogicModifiers>
+          <LogicModifiers list="2str">
+            <scriptCallWithTag scriptName="FMO_AddTags" parameter="10" tag="TAG-HEALTH_PHYSICAL" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Offer to drink with your opponent for a battle well fought." ownerID="48" targetID="54" fromX="3883" fromY="-4026" />
+      <outputs name="Ask for one of you to be turned into a child of the moon like him!" ownerID="48" targetID="56" group="G1" fromX="3883" fromY="-4106" />
+      <outputs name="Ask for one of you to be turned into a child of the moon like him!" ownerID="48" targetID="93" group="G1" fromX="3883" fromY="-4186" />The werewolf yields to your strength and gives you trophies as reward for your victory. 
+
+His pack howls in your honour.</nodes>
+    <nodes xsi:type="NodeAdventure" allowOnce="true" ID="49" positionX="2454" positionY="-3389" width="350" height="725">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction list="strong">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+          <LogicResultAction list="ppl">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="2" />
+          </LogicResultAction>
+          <LogicResultAction list="werewolves">
+            <scriptCallWithTag scriptName="FRA_ListSizeLessEqualThan" parameter="0" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Begin." ownerID="49" targetID="47" fromX="2779" fromY="-3880" />Night demons gather and bow before your challenge. A werewolf enters the ring and bares his razor-sharp teeth in an invitation.</nodes>
+    <nodes xsi:type="NodeAdventure" ID="50" positionX="4114" positionY="-4697" width="350" height="725">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="2" tag="TAG-LOYALTY_NIGHT_DEMONS" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Drink if you still can..." ownerID="50" targetID="51" fromX="4439" fromY="-5188" />You are defeated and must bow down to the victor. 
+
+'You fought well, but you are yet be a true night child. Now, if you still stand, let us drink together!'</nodes>
+    <nodes xsi:type="NodeDealDamage" ID="51" positionX="5077" positionY="-4438" width="460" height="539" challengeTypeDamage="TypeMental" minDamage="0" maxDamage="0" useCountInPercent="false">
+      <outputs ownerID="51" targetID="52" group="G1" fromX="5506" fromY="-4826" />
+      <outputs ownerID="51" targetID="53" group="G1" fromX="5506" fromY="-4906" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="52" positionX="5577" positionY="-4432" width="350" height="725">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="3" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicProcessing name="1" list1="2str">
+            <scriptCallWithTag scriptName="FLP_SortByTagUp" tag="TAG-STRENGTH" />
+          </LogicProcessing>
+          <LogicProcessing name="the1" list1="1">
+            <scriptCallWithTag scriptName="FLP_GetTopXElements" parameter="1" />
+          </LogicProcessing>
+          <LogicModifiers list="the1">
+            <scriptCallWithTag scriptName="FMO_UpgradeToSubrace" parameter="" tag="SUBRACE-NIGHT_WEREWOLF" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Praise Horz. " ownerID="52" targetID="53" fromX="5902" fromY="-4923" />One of the challengers wakes with the next full moon as child of the night!</nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="53" positionX="6206" positionY="-4512" width="350" height="530" allPlayersXP="1" allPlayersRP="1" linkedEventUniqueID="0" />
+    <nodes xsi:type="NodeAdventureEnd" ID="54" positionX="4071" positionY="-3404" width="350" height="530" allPlayersXP="5" allPlayersRP="2" linkedEventUniqueID="0">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers list="ppl">
+            <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="2" tag="SKILL_PACK-BLESS_M" />
+          </LogicModifiers>
+          <LogicModifiers list="2str">
+            <scriptCallWithTag scriptName="FMO_SetHealthPercentTo" parameter="100" tag="TAG-HEALTH_MENTAL" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+    </nodes>
+    <nodes xsi:type="NodeAdventure" allowOnce="true" ID="56" positionX="4612" positionY="-3613" width="350" height="725">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction list="2str">
+            <scriptCallWithTag scriptName="FRA_ChancePlusLuck" parameter="5" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicProcessing name="1" list1="2str">
+            <scriptCallWithTag scriptName="FLP_SortByTagUp" tag="TAG-STRENGTH" />
+          </LogicProcessing>
+          <LogicProcessing name="the1" list1="1">
+            <scriptCallWithTag scriptName="FLP_GetTopXElements" parameter="1" />
+          </LogicProcessing>
+          <LogicModifiers list="the1">
+            <scriptCallWithTag scriptName="FMO_UpgradeToSubraceNoLevelReset" parameter="" tag="SUBRACE-NIGHT_WEREWOLF" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Praise Horz. " ownerID="56" targetID="54" fromX="4937" fromY="-4104" />'Agreed, you deserve to join our ranks, for Horz!'
+
+One of the challengers wakes with the next full moon as child of the night!</nodes>
+    <nodes xsi:type="NodeAdventure" ID="57" positionX="4448" positionY="-5535" width="350" height="725">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="-5" tag="TAG-LOYALTY_NIGHT_DEMONS" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Leave." ownerID="57" targetID="53" fromX="4773" fromY="-6026" />'You give up? Coward. Begone from my sight.'</nodes>
+    <nodes xsi:type="NodeAdventure" allowOnce="true" ID="58" positionX="2063" positionY="-3554" width="350" height="725">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction list="strong">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+          <LogicResultAction list="werewolves">
+            <scriptCallWithTag scriptName="FRA_ListSizeLessEqualThan" parameter="1" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Begin." ownerID="58" targetID="59" fromX="2388" fromY="-4045" />Night demons gather and bow before your challenge. A werewolf enters the ring and bares his razor-sharp teeth in an invitation.</nodes>
+    <nodes xsi:type="NodeChallenge" ID="59" positionX="2953" positionY="-4130" width="500" height="726" challengeType="TypePhysical" versusGroup="GROUP-WEREWOLF_ONE_5P_2M_2S" challengeScale="101" challengedList="1str">
+      <outputs name="Win" ownerID="59" targetID="63" fromX="3394" fromY="-4625" />
+      <outputs name="Lose" ownerID="59" targetID="60" fromX="3394" fromY="-4705" />
+      <outputs name="Surrender" ownerID="59" targetID="57" fromX="3394" fromY="-4785" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="60" positionX="3714" positionY="-5312" width="350" height="725">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="2" tag="TAG-LOYALTY_NIGHT_DEMONS" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Drink if you still can..." ownerID="60" targetID="61" fromX="4039" fromY="-5803" />You are defeated and must bow down to the victor. 
+
+'You fought well, but you are yet be a true night child. Now, if you still stand, let us drink together!'</nodes>
+    <nodes xsi:type="NodeDealDamage" ID="61" positionX="4892" positionY="-5372" width="460" height="539" challengeTypeDamage="TypeMental" minDamage="0" maxDamage="0" useCountInPercent="false">
+      <outputs ownerID="61" targetID="62" group="G1" fromX="5321" fromY="-5760" />
+      <outputs ownerID="61" targetID="53" group="G1" fromX="5321" fromY="-5840" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="62" positionX="6010" positionY="-5341" width="350" height="725">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="35" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicModifiers list="1str">
+            <scriptCallWithTag scriptName="FMO_UpgradeToSubraceNoLevelReset" parameter="" tag="SUBRACE-NIGHT_WEREWOLF" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Praise Horz. " ownerID="62" targetID="53" fromX="6335" fromY="-5832" />One of the challengers wakes with the next full moon as child of the night!</nodes>
+    <nodes xsi:type="NodeAdventure" ID="63" positionX="3538" positionY="-4447" width="350" height="805">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="1" tag="ITEM_CARGO-RARE_ONE_PET_WOLF" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="20;40" tag="ITEM_CARGO-FEW_MONSTER_BONE" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="10" tag="TAG-LOYALTY_NIGHT_DEMONS" />
+          </LogicModifiers>
+          <LogicModifiers list="1str">
+            <scriptCallWithTag scriptName="FMO_AddTags" parameter="2" tag="TAG-STRENGTH" />
+          </LogicModifiers>
+          <LogicModifiers list="1str">
+            <scriptCallWithTag scriptName="FMO_AddTags" parameter="15" tag="TAG-HEALTH_PHYSICAL" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Offer to drink with your opponent for a battle well fought." ownerID="63" targetID="54" fromX="3863" fromY="-4938" />
+      <outputs name="Ask to be turned into a child of the moon like him!" ownerID="63" targetID="64" fromX="3863" fromY="-5018" />The werewolf yields to your strength and gives you trophies as reward for your victory. 
+
+His pack howls in your honour.</nodes>
+    <nodes xsi:type="NodeAdventure" allowOnce="true" ID="64" positionX="4111" positionY="-3958" width="350" height="725">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers list="1str">
+            <scriptCallWithTag scriptName="FMO_UpgradeToSubraceNoLevelReset" parameter="" tag="SUBRACE-NIGHT_WEREWOLF" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Praise Horz. " ownerID="64" targetID="54" fromX="4436" fromY="-4449" />'Agreed, you deserve to join our ranks, for Horz!'
+
+One of the challengers wakes with the next full moon as child of the night!</nodes>
+    <nodes xsi:type="NodeAdventure" ID="65" positionX="1065" positionY="-1507" width="350" height="885">
+      <outputs name="Offer some pets as payment (you need to have 15)." ownerID="65" targetID="68" fromX="1390" fromY="-1998" />
+      <outputs name="Offer a child." ownerID="65" targetID="9" fromX="1390" fromY="-2078" />
+      <outputs name="Offer a party member, including adults." ownerID="65" targetID="10" fromX="1390" fromY="-2158" />There is a necromancer staying in the settlement. They can offer you your very own unliving companion, for a price.</nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="66" positionX="3137" positionY="-2105" width="350" height="530" linkedEventUniqueID="0">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="50" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddCharacterNoDefaultCargo" parameter="1" tag="SUBRACE-UNLI_BROKEN_SKELETON" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+    </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="67" positionX="3065" positionY="-2746" width="350" height="530" linkedEventUniqueID="0">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddCharacterNoDefaultCargo" parameter="1" tag="SUBRACE-UNLI_CORPSE" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+    </nodes>
+    <nodes xsi:type="NodeAdventure" allowOnce="true" ID="68" positionX="1470" positionY="-1621" width="350" height="725">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction list="petsnoghost">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="15" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Pay." ownerID="68" targetID="8" fromX="1795" fromY="-2112" />'Hmm, not my typical price, but I will accept it, this once.'</nodes>
+    <nodes xsi:type="NodeChallenge" ID="69" positionX="2076" positionY="-5105" width="500" height="807" challengeType="TypeSpirit" versusGroup="GROUP-STRIGA_MASTER_ONE_4P_4M_5S" challengeScale="101" challengedList="1myst">
+      <outputs name="Win" ownerID="69" targetID="70" group="G1" fromX="2517" fromY="-5600" />
+      <outputs name="Lose" ownerID="69" targetID="78" fromX="2517" fromY="-5680" />
+      <outputs name="Surrender" ownerID="69" targetID="78" fromX="2517" fromY="-5760" />
+      <outputs name="Win" ownerID="69" targetID="75" group="G1" fromX="2517" fromY="-5841" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="70" positionX="2637" positionY="-5364" width="350" height="966">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="fem">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="TAG-GENDER_FEMALE" />
+          </LogicFilter>
+          <LogicFilter name="beast">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" tag="RACE-BEAST" />
+          </LogicFilter>
+          <LogicFilter name="attr">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="TAG-ATTRACTIVE" />
+          </LogicFilter>
+          <LogicProcessing name="femnobeast" list1="fem" list2="beast">
+            <scriptCallWithTag scriptName="FLP_AminusB" />
+          </LogicProcessing>
+          <LogicProcessing name="attrfem" list1="attr" list2="femnobeast">
+            <scriptCallWithTag scriptName="FLP_AandB" />
+          </LogicProcessing>
+          <LogicProcessing name="attrfemmyst" makePublic="true" list1="attrfem" list2="1myst">
+            <scriptCallWithTag scriptName="FLP_AandB" />
+          </LogicProcessing>
+          <LogicResultAction list="attrfemmyst">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicModifiers list="attrfemmyst">
+            <scriptCallWithTag scriptName="FMO_AddTags" parameter="3" tag="TAG-DESTINY" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="20;30" tag="ITEM_CARGO-FEW_DIAMOND" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="1" tag="ITEM_CARGO-ANCIENT_ONE_PET_CROW" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="[Elf] Alas, elves cannot accept such dark gifts. Thank him all the same." ownerID="70" targetID="72" fromX="2962" fromY="-5855" />
+      <outputs name="Accept the offer." ownerID="70" targetID="74" group="G1" fromX="2962" fromY="-5935" />
+      <outputs name="Decline politely and leave." ownerID="70" targetID="73" fromX="2962" fromY="-6015" />
+      <outputs name="Accept the offer." ownerID="70" targetID="92" group="G1" fromX="2962" fromY="-6095" />'You have enchanted my heart with your masterful skill. I bow to your superior power and your baffling beauty. 
+
+Will you agree to me my mistress of the night? One sweet bite and your world will become changed forever!'</nodes>
+    <nodes xsi:type="NodeAdventure" allowOnce="true" ID="71" positionX="2086" positionY="-4342" width="350" height="725">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction list="mustic">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Begin." ownerID="71" targetID="69" fromX="2411" fromY="-4833" />'Challenge me? How delightful. Let us dance my dear.'</nodes>
+    <nodes xsi:type="NodeAdventure" ID="72" positionX="3127" positionY="-5296" width="350" height="725">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="elf">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" tag="RACE-ELF" />
+          </LogicFilter>
+          <LogicProcessing name="elffem" list1="elf" list2="attrfemmyst">
+            <scriptCallWithTag scriptName="FLP_AandB" />
+          </LogicProcessing>
+          <LogicResultAction list="elffem">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicProcessing name="1elf" list1="elffem">
+            <scriptCallWithTag scriptName="FLP_GetRandomXelements" parameter="1" />
+          </LogicProcessing>
+          <LogicModifiers list="1elf">
+            <scriptCallWithTag scriptName="FMO_ChangeLearnedSkillOnCharacter" parameter="1" tag="SKILL_PACK-SUMMON_NIGHT_WEREWOLF" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Thank him and leave, this is getting awkward. " ownerID="72" targetID="73" fromX="3452" fromY="-5787" />'Ah, yes, children of light. Such a shame, still. I am enamoured and so shall gift you a servant so they may remind you of me. From now on, you shall be able to summon a werewolf mutt and he will be your to command. Now fare thee well, my love!'</nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="73" positionX="4213" positionY="-6031" width="350" height="530" allPlayersXP="4" allPlayersRP="1" linkedEventUniqueID="0" />
+    <nodes xsi:type="NodeAdventure" ID="74" positionX="3478" positionY="-6184" width="350" height="725">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction list="attrfemmyst">
+            <scriptCallWithTag scriptName="FRA_ChancePlusLuck" parameter="2" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicModifiers list="attrfemmyst">
+            <scriptCallWithTag scriptName="FMO_UpgradeToSubraceNoLevelReset" parameter="" tag="SUBRACE-NIGHT_STRIGA_MISTRESS" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="5" tag="TAG-LOYALTY_NIGHT_DEMONS" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Leave, but promise to visit..." ownerID="74" targetID="73" fromX="3803" fromY="-6675" />You become the mistress of the night. The striga master is exhausted from the ritual, so it is a good time to go.</nodes>
+    <nodes xsi:type="NodeAdventure" ID="75" positionX="1848" positionY="-5972" width="350" height="885">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="5" tag="TAG-LOYALTY_NIGHT_DEMONS" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="1" tag="ITEM_CARGO-RARE_ONE_PET_CROW" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="30;45" tag="ITEM_CARGO-FEW_BLOOD_BONE" />
+          </LogicModifiers>
+          <LogicModifiers list="1myst">
+            <scriptCallWithTag scriptName="FMO_AddTags" parameter="2" tag="TAG-MYSTICISM" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="0;1" tag="ITEM_CARGO-RARE_ONE_PET_WRAITH" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Thank him and leave." ownerID="75" targetID="73" fromX="2173" fromY="-6463" />
+      <outputs name="Ask to be turned into a striga master!" ownerID="75" targetID="76" group="G1" fromX="2173" fromY="-6543" />
+      <outputs name="Ask to be turned into a common striga." ownerID="75" targetID="77" group="G1" fromX="2173" fromY="-6623" />'Wonderful, yes, your power is great and I am impressed. I bow to your superiority, friend. Here, a reward for your challenge.'</nodes>
+    <nodes xsi:type="NodeAdventure" ID="76" positionX="2277" positionY="-6213" width="350" height="725">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="male">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="TAG-GENDER_MALE" />
+          </LogicFilter>
+          <LogicProcessing name="1m" list1="1myst" list2="male">
+            <scriptCallWithTag scriptName="FLP_AandB" />
+          </LogicProcessing>
+          <LogicResultAction list="1m">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_ChancePlusLuck" parameter="1" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicModifiers list="1m">
+            <scriptCallWithTag scriptName="FMO_UpgradeToSubraceNoLevelReset" parameter="" tag="SUBRACE-NIGHT_STRIGA_MASTER" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="5" tag="TAG-LOYALTY_NIGHT_DEMONS" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Thank him and leave." ownerID="76" targetID="73" fromX="2602" fromY="-6704" />'Yes, you shall become a brother of mine. Agreed.'</nodes>
+    <nodes xsi:type="NodeAdventure" ID="77" positionX="1884" positionY="-6895" width="350" height="725">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers list="1myst">
+            <scriptCallWithTag scriptName="FMO_UpgradeToSubrace" parameter="" tag="SUBRACE-NIGHT_STRIGA" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="5" tag="TAG-LOYALTY_NIGHT_DEMONS" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Thank him and leave." ownerID="77" targetID="73" fromX="2209" fromY="-7386" />'Yes, you shall become a child of mine. Agreed.'</nodes>
+    <nodes xsi:type="NodeAdventure" ID="78" positionX="883" positionY="-5382" width="350" height="885">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="-4" tag="TAG-LOYALTY_NIGHT_DEMONS" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Accept your defeat. " ownerID="78" targetID="79" group="G1" fromX="1208" fromY="-5873" />
+      <outputs name="Accept your defeat. " ownerID="78" targetID="81" group="G1" fromX="1208" fromY="-5953" />
+      <outputs name="Accept your defeat. " ownerID="78" targetID="80" group="G1" fromX="1208" fromY="-6033" />'And so, you bow down to my superior power, good...</nodes>
+    <nodes xsi:type="NodeAdventure" ID="79" positionX="371" positionY="-5727" width="350" height="725">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="fem">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="TAG-GENDER_FEMALE" />
+          </LogicFilter>
+          <LogicFilter name="beast">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" tag="RACE-ELF" />
+          </LogicFilter>
+          <LogicFilter name="attr">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="TAG-ATTRACTIVE" />
+          </LogicFilter>
+          <LogicProcessing name="femnobeast" list1="fem" list2="beast">
+            <scriptCallWithTag scriptName="FLP_AminusB" />
+          </LogicProcessing>
+          <LogicProcessing name="attrfem" list1="attr" list2="femnobeast">
+            <scriptCallWithTag scriptName="FLP_AandB" />
+          </LogicProcessing>
+          <LogicProcessing name="attrfemmyst" makePublic="true" list1="attrfem" list2="1myst">
+            <scriptCallWithTag scriptName="FLP_AandB" />
+          </LogicProcessing>
+          <LogicResultAction list="attrfemmyst">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="15" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicModifiers list="attrfemmyst">
+            <scriptCallWithTag scriptName="FMO_UpgradeToSubrace" parameter="" tag="SUBRACE-NIGHT_STRIGA_MISTRESS" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="6" tag="TAG-LOYALTY_NIGHT_DEMONS" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="You don't seem to have too much choice. Nod." ownerID="79" targetID="80" fromX="696" fromY="-6218" />'Despite your failure, you have enchanted my heart  with your baffling beauty. You will be my mistress of the night. One sweet bite and your world will become changed forever!'
+
+You become the mistress of the night. The striga master is exhausted from the ritual, so it is a good time to go.</nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="80" positionX="355" positionY="-6504" width="350" height="408" allPlayersXP="1" allPlayersRP="1" linkedEventUniqueID="0" />
+    <nodes xsi:type="NodeAdventure" ID="81" positionX="858" positionY="-6442" width="350" height="725">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="8" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicModifiers list="1myst">
+            <scriptCallWithTag scriptName="FMO_UpgradeToSubrace" parameter="" tag="SUBRACE-NIGHT_STRIGA" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="2" tag="TAG-LOYALTY_NIGHT_DEMONS" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="You don't seem to have too much choice. Nod." ownerID="81" targetID="80" fromX="1183" fromY="-6933" />'Also, you shall become a child of mine and serve the night.'</nodes>
+    <nodes xsi:type="NodeAdventure" allowOnce="true" ID="82" positionX="6468" positionY="-3370" width="350" height="725">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="1" />
+          </LogicResultAction>
+          <LogicResultAction list="werewolves">
+            <scriptCallWithTag scriptName="FRA_ListSizeLessEqualThan" parameter="0" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicProcessing name="1" list1="ppl">
+            <scriptCallWithTag scriptName="FLP_GetRandomXelements" parameter="1" />
+          </LogicProcessing>
+          <LogicModifiers list="1">
+            <scriptCallWithTag scriptName="FMO_UpgradeToSubraceNoLevelReset" parameter="" tag="SUBRACE-NIGHT_WEREWOLF_WEAK" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Leave..." ownerID="82" targetID="23" fromX="6793" fromY="-3861" />You got drunk in a night demon pleasure house, when you wake, you are covered in wolf fur and rather rough 'love bites'... and when you look down at yourself - you're a werewolf!</nodes>
+    <nodes xsi:type="NodeAdventure" ID="83" positionX="5551" positionY="-3611" width="350" height="725">
+      <logic>
+        <ModifierBlock>
+          <LogicProcessing name="1" list1="ppl">
+            <scriptCallWithTag scriptName="FLP_GetRandomXelements" parameter="1" />
+          </LogicProcessing>
+          <LogicModifiers list="1">
+            <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="1" tag="SKILL_PACK-BLESS_M" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Leave..." ownerID="83" targetID="23" fromX="5876" fromY="-4102" />You got drunk in a night demon pleasure house, when you wake, you are covered in wolf fur and rather rough 'love bites'.</nodes>
+    <nodes xsi:type="NodeAdventure" ID="84" positionX="4025" positionY="-1048" width="350" height="725">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_PlayersHaveSharedTag" parameter="30" tag="TAG-LOYALTY_NIGHT_DEMONS" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="1" tag="TAG-TRADERFDEMONMED1" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Trade." ownerID="84" targetID="14" fromX="4350" fromY="-1539" />'You have proven friendly to us so far, yes, we will trade with you.'</nodes>
+    <nodes xsi:type="NodeAdventure" ID="85" positionX="162" positionY="-1692" width="350" height="1046">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="pet" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsItems" parameter="1" tag="TAG-PET" />
+          </LogicFilter>
+          <LogicFilter name="ghost">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="TAG-GHOST" />
+          </LogicFilter>
+          <LogicFilter name="food" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsItems" parameter="1" tag="TAG-MEAT" />
+          </LogicFilter>
+          <LogicFilter name="petghost">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsItems" parameter="1" tag="TAG-PET_GHOST" />
+          </LogicFilter>
+          <LogicFilter name="petwraith">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsItems" parameter="1" tag="TAG-PET_WRAITH" />
+          </LogicFilter>
+          <LogicFilter name="wraith">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="" tag="SUBRACE-UNLI_WRAITH" />
+          </LogicFilter>
+          <LogicProcessing name="ghostorwraith" list1="ghost" list2="wraith">
+            <scriptCallWithTag scriptName="FLP_AorB" />
+          </LogicProcessing>
+          <LogicProcessing name="petghostorwraith" list1="petwraith" list2="petghost">
+            <scriptCallWithTag scriptName="FLP_AorB" />
+          </LogicProcessing>
+          <LogicProcessing name="spirits" makePublic="true" list1="ghostorwraith" list2="petghostorwraith">
+            <scriptCallWithTag scriptName="FLP_AorB" />
+          </LogicProcessing>
+          <LogicProcessing name="petsnoghost" makePublic="true" list1="pet" list2="petghostorwraith">
+            <scriptCallWithTag scriptName="FLP_AminusB" />
+          </LogicProcessing>
+          <LogicResultAction resultGroup="G1">
+            <scriptCallWithTag scriptName="FRA_PlayerHaveTag" parameter="1" tag="TAG-ZORYA" />
+          </LogicResultAction>
+          <LogicResultAction resultGroup="G1">
+            <scriptCallWithTag scriptName="FRA_PlayerHaveTag" parameter="1" tag="TAG-HORZ" />
+          </LogicResultAction>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_PlayersHaveSharedTag" parameter="40" tag="TAG-LOYALTY_NIGHT_DEMONS" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Ask around for anything of interest." ownerID="85" targetID="65" fromX="487" fromY="-2183" />
+      <outputs name="Ask if they would trade with you?" ownerID="85" targetID="12" fromX="487" fromY="-2263" />
+      <outputs name="There are some werewolves in a fighting ring, go see them." ownerID="85" targetID="15" fromX="487" fromY="-2343" />
+      <outputs name="Visit the pleasure houses." ownerID="85" targetID="17" fromX="487" fromY="-2423" />
+      <outputs name="A few children of the night keep watching you. Approach them." ownerID="85" targetID="38" fromX="487" fromY="-2503" />'Yes, the night mates, bonded forever and you call one of them your alpha, good. Enter, enjoy the night!'</nodes>
+    <nodes xsi:type="NodeAdventure" ID="87" positionX="2541" positionY="-2270" width="350" height="966">
+      <outputs name="Better leave." ownerID="87" targetID="25" fromX="2866" fromY="-2761" />
+      <outputs name="Visit the pleasure houses." ownerID="87" targetID="17" fromX="2866" fromY="-2841" />
+      <outputs name="There are some werewolves in a fighting ring, go see them." ownerID="87" targetID="15" fromX="2866" fromY="-2921" />
+      <outputs name="Ask if they would trade with you?" ownerID="87" targetID="12" fromX="2866" fromY="-3001" />'No deal, time to depart?'</nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="88" positionX="-1280" positionY="-2561" width="350" height="530" allPlayersXP="1" allPlayersRP="1" linkedEventUniqueID="0" />
+    <nodes xsi:type="NodeAdventureEnd" ID="89" positionX="-966" positionY="-1948" width="350" height="530" allPlayersXP="8" allPlayersRP="2" linkedEventUniqueID="0">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_SetTagShared" parameter="-10" tag="TAG-LOYALTY_NIGHT_DEMONS" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="-20" tag="TAG-LOYALTY_FOREST_DEMONS" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="-10" tag="TAG-LOYALTY_SHADOW_KIN" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="90" positionX="-294" positionY="-1713" width="350" height="725">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="30" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_ReturnCharacters" parameter="ndemonkill" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Take them with you and leave." ownerID="90" targetID="91" fromX="31" fromY="-2204" />Someone you once lost to the night demons has returned to you, albeit, changed.</nodes>
+    <nodes xsi:type="NodeDealDamage" ID="91" positionX="-426" positionY="-2595" width="460" height="459" challengeTypeDamage="TypeMental" minDamage="0" maxDamage="0" useCountInPercent="false">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="newppl">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" />
+          </LogicFilter>
+          <LogicProcessing name="returned" list1="newppl" list2="ppl">
+            <scriptCallWithTag scriptName="FLP_AminusB" />
+          </LogicProcessing>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicModifiers list="returned">
+            <scriptCallWithTag scriptName="FMO_UpgradeToSubrace" parameter="" tag="SUBRACE-NIGHT_STRIGA" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs ownerID="91" targetID="89" fromX="3" fromY="-2983" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="92" positionX="3101" positionY="-6105" width="350" height="725">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers list="attrfemmyst">
+            <scriptCallWithTag scriptName="FMO_UpgradeToSubrace" parameter="" tag="SUBRACE-NIGHT_STRIGA" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="5" tag="TAG-LOYALTY_NIGHT_DEMONS" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Leave, but promise to visit..." ownerID="92" targetID="73" fromX="3426" fromY="-6596" />'Ah, it seems you were only able to become a lesser child of the night, still, we are bound now!'</nodes>
+    <nodes xsi:type="NodeAdventure" allowOnce="true" ID="93" positionX="5020" positionY="-3639" width="350" height="725">
+      <logic>
+        <ModifierBlock>
+          <LogicProcessing name="1" list1="2str">
+            <scriptCallWithTag scriptName="FLP_SortByTagUp" tag="TAG-STRENGTH" />
+          </LogicProcessing>
+          <LogicProcessing name="the1" list1="1">
+            <scriptCallWithTag scriptName="FLP_GetTopXElements" parameter="1" />
+          </LogicProcessing>
+          <LogicModifiers list="the1">
+            <scriptCallWithTag scriptName="FMO_UpgradeToSubraceNoLevelReset" parameter="" tag="SUBRACE-NIGHT_WEREWOLF_WEAK" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Praise Horz. " ownerID="93" targetID="54" fromX="5345" fromY="-4130" />'Agreed, you deserve to join our ranks, for Horz!'
+
+One of the challengers wakes with the next full moon as child of the night!</nodes>
+    <nodes xsi:type="NodeAdventure" ID="95" positionX="4472" positionY="-734" width="350" height="725">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="1" tag="TAG-TRADERFDEMONMED1" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Trade." ownerID="95" targetID="14" fromX="4797" fromY="-1225" />'Agreed.'</nodes>
+  </Adventure>
+  <Adventure name="ArmyNightDemon_" uniqueID="34" typeGeneric="false" typePerGroupGeneric="false" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="30" joinIsForced="false" joinType="AllAlly" joinRange="MovementArea">
+    <nodes xsi:type="NodeStarting" ID="1" positionX="10" positionY="-10" width="347" height="661" image="Event015">
+      <outputs ownerID="1" targetID="2" fromX="334" fromY="-613" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="2" positionX="403.4507" positionY="-186.133682" width="350" height="1046">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="ppl" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" />
+          </LogicFilter>
+        </FilterBlock>
+      </logic>
+      <outputs name="Greet your allies. " ownerID="2" targetID="3" fromX="729" fromY="-677" />
+      <outputs name="Stay cautious, but speak to them." ownerID="2" targetID="11" fromX="729" fromY="-757" />
+      <outputs name="Use silver, or better metal, to intimidate them into backing down!" ownerID="2" targetID="12" fromX="729" fromY="-837" />
+      <outputs name="Fight!" ownerID="2" targetID="15" fromX="729" fromY="-917" />
+      <outputs name="Move away." ownerID="2" targetID="10" fromX="729" fromY="-998" />Beasts of the night are stalking you!</nodes>
+    <nodes xsi:type="NodeAdventure" ID="3" positionX="813" positionY="717" width="350" height="805">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_PlayersHaveSharedTag" parameter="50" tag="TAG-LOYALTY_NIGHT_DEMONS" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Ask if they want to trade." ownerID="3" targetID="4" fromX="1138" fromY="225" />
+      <outputs name="Leave." ownerID="3" targetID="26" fromX="1138" fromY="145" />'Apologies, friends. We did not recognise you. Greetings and well wishes.'</nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="4" positionX="1257" positionY="791" width="350" height="530" linkedEventUniqueID="31" />
+    <nodes xsi:type="NodeAdventureEnd" ID="10" positionX="-160" positionY="-772" width="350" height="530" linkedEventUniqueID="0">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_IsPlayerTurn" parameter="" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="11" positionX="873" positionY="-184" width="350" height="966">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_PlayersHaveSharedTag" parameter="0" tag="TAG-LOYALTY_NIGHT_DEMONS" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Leave." ownerID="11" targetID="10" fromX="1198" fromY="-675" />
+      <outputs name="Use silver, or better metal, to intimidate them into backing down!" ownerID="11" targetID="12" fromX="1198" fromY="-755" />
+      <outputs name="Fight!" ownerID="11" targetID="15" fromX="1198" fromY="-835" />
+      <outputs name="Face the night beasts with spirit to gain their respect." ownerID="11" targetID="27" fromX="1198" fromY="-915" />They do not answer, they keep coming towards you.</nodes>
+    <nodes xsi:type="NodeChallenge" ID="12" positionX="1416" positionY="-259" width="500" height="726" challengeType="TypeMental" versusEventOwner="true" challengeScale="101" challengedList="ppl">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="silv">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsItems" parameter="1" tag="TAG-SILVER" />
+          </LogicFilter>
+          <LogicFilter name="silvr">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsResources" parameter="1" tag="TAG-SILVER" />
+          </LogicFilter>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_IsPlayerTurn" />
+          </LogicResultAction>
+          <LogicResultAction list="silv" resultGroup="G1">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+          <LogicResultAction list="silvr" resultGroup="G1">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="5" tag="---" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Win" ownerID="12" targetID="16" fromX="1857" fromY="-754" />
+      <outputs name="Lose" ownerID="12" targetID="20" fromX="1857" fromY="-834" />
+      <outputs name="Surrender" ownerID="12" targetID="20" fromX="1857" fromY="-914" />
+    </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="13" positionX="3457" positionY="-337" width="350" height="530" allPlayersXP="-1" linkedEventUniqueID="0">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="0" tag="TAG-LOYALTY_NIGHT_DEMONS" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+    </nodes>
+    <nodes xsi:type="NodeChallenge" ID="15" positionX="944" positionY="-1259" width="500" height="726" challengeType="TypePhysical" versusEventOwner="true" challengeScale="101" challengedList="ppl">
+      <outputs name="Win" ownerID="15" targetID="17" fromX="1385" fromY="-1754" />
+      <outputs name="Lose" ownerID="15" targetID="20" fromX="1385" fromY="-1834" />
+      <outputs name="Surrender" ownerID="15" targetID="20" fromX="1385" fromY="-1914" />
+    </nodes>
+    <nodes xsi:type="NodeProduceDrop" ID="16" positionX="1985" positionY="-294" width="460" height="429" fromEventOwner="true" cargoPercentage="50">
+      <outputs ownerID="16" targetID="25" fromX="2415" fromY="-652" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="17" positionX="2234" positionY="-1419" width="350" height="725">
+      <outputs name="Leave." ownerID="17" targetID="22" fromX="2559" fromY="-1910" />You defeat the night beasts.
+</nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="18" positionX="3337.90649" positionY="-1385.14355" width="350" height="530" allPlayersXP="-1" linkedEventUniqueID="0">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="-2" tag="TAG-LOYALTY_NIGHT_DEMONS" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="19" positionX="1579.68909" positionY="-1842.37109" width="350" height="725">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers list="ppl">
+            <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="2" tag="SKILL_PACK-ILLNESS" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Run." ownerID="19" targetID="24" fromX="1905" fromY="-2333" />The night beats defeat you and feast on your blood and life essence before you manage to escape.</nodes>
+    <nodes xsi:type="NodeDealDamage" ID="20" positionX="1018" positionY="-2116" width="460" height="459" challengeTypeDamage="TypeSpirit" minDamage="50" maxDamage="70" useCountInPercent="true" targetGroup="ppl">
+      <outputs ownerID="20" targetID="19" fromX="1447" fromY="-2504" />
+    </nodes>
+    <nodes xsi:type="NodeSpawnOnMap" ID="21" positionX="2929" positionY="-52" width="480" height="503" radius="0" destroyOwner="true" linkedEventUniqueID="0">
+      <outputs ownerID="21" targetID="13" fromX="3377" fromY="-484" />
+    </nodes>
+    <nodes xsi:type="NodeSpawnOnMap" ID="22" positionX="2748.798" positionY="-1401.57886" width="480" height="503" radius="0" destroyOwner="true" linkedEventUniqueID="0">
+      <outputs ownerID="22" targetID="18" fromX="3197" fromY="-1833" />
+    </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="24" positionX="2053" positionY="-2230" width="350" height="530" linkedEventUniqueID="0">
+      <logic>
+        <ModifierBlock>
+          <LogicFilter name="stuff">
+            <scriptCallWithTag scriptName="FwT_ThisPlayerThisGroupItems" parameter="1" tag="TAG-PET_WOLF" />
+          </LogicFilter>
+          <LogicProcessing name="1" list1="stuff">
+            <scriptCallWithTag scriptName="FLP_GetRandomXelements" parameter="1" />
+          </LogicProcessing>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="-1" tag="TAG-LOYALTY_NIGHT_DEMONS" />
+          </LogicModifiers>
+          <LogicModifiers list="1">
+            <scriptCallWithTag scriptName="FMO_TakeItems" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="25" positionX="2511" positionY="-96" width="350" height="725">
+      <outputs name="Leave." ownerID="25" targetID="21" fromX="2836" fromY="-587" />The night demons cower before you and skulk back into the shadows.</nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="26" positionX="1876" positionY="356" width="350" height="530" linkedEventUniqueID="0" />
+    <nodes xsi:type="NodeChallenge" ID="27" positionX="285" positionY="-1305" width="500" height="726" challengeType="TypeSpirit" versusEventOwner="true" challengeScale="101" challengedList="ppl">
+      <outputs name="Win" ownerID="27" targetID="28" fromX="726" fromY="-1800" />
+      <outputs name="Lose" ownerID="27" targetID="20" fromX="726" fromY="-1880" />
+      <outputs name="Surrender" ownerID="27" targetID="20" fromX="726" fromY="-1960" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="28" positionX="1637" positionY="-1023" width="350" height="725">
+      <outputs name="Leave." ownerID="28" targetID="29" fromX="1962" fromY="-1514" />You defeat the night beasts and they are impressed with your understanding of the mystical ways. 
+</nodes>
+    <nodes xsi:type="NodeSpawnOnMap" ID="29" positionX="2086" positionY="-879" width="480" height="503" radius="0" destroyOwner="true" linkedEventUniqueID="0">
+      <outputs ownerID="29" targetID="30" fromX="2534" fromY="-1311" />
+    </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="30" positionX="2987" positionY="-818" width="350" height="530" allPlayersXP="-1" linkedEventUniqueID="0">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="2" tag="TAG-LOYALTY_NIGHT_DEMONS" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+    </nodes>
+  </Adventure>
+</MODULE>

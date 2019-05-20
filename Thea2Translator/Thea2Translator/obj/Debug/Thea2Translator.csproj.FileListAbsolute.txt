@@ -8,3 +8,13 @@ C:\Users\Radek\Dropbox\Projekty\Thea2\Thea2Translator\Thea2Translator\obj\Debug\
 C:\Users\Radek\Dropbox\Projekty\Thea2\Thea2Translator\Thea2Translator\obj\Debug\Thea2Translator.csproj.CoreCompileInputs.cache
 C:\Users\Radek\Dropbox\Projekty\Thea2\Thea2Translator\Thea2Translator\obj\Debug\Thea2Translator.exe
 C:\Users\Radek\Dropbox\Projekty\Thea2\Thea2Translator\Thea2Translator\obj\Debug\Thea2Translator.pdb
+d:\RPA\T2TS-T\Thea2Translator\Thea2Translator\bin\Debug\Thea2Translator.exe.config
+d:\RPA\T2TS-T\Thea2Translator\Thea2Translator\bin\Debug\Thea2Translator.exe
+d:\RPA\T2TS-T\Thea2Translator\Thea2Translator\bin\Debug\Thea2Translator.pdb
+d:\RPA\T2TS-T\Thea2Translator\Thea2Translator\obj\Debug\Thea2Translator.csprojAssemblyReference.cache
+d:\RPA\T2TS-T\Thea2Translator\Thea2Translator\obj\Debug\Thea2Translator.Form1.resources
+d:\RPA\T2TS-T\Thea2Translator\Thea2Translator\obj\Debug\Thea2Translator.Properties.Resources.resources
+d:\RPA\T2TS-T\Thea2Translator\Thea2Translator\obj\Debug\Thea2Translator.csproj.GenerateResource.cache
+d:\RPA\T2TS-T\Thea2Translator\Thea2Translator\obj\Debug\Thea2Translator.csproj.CoreCompileInputs.cache
+d:\RPA\T2TS-T\Thea2Translator\Thea2Translator\obj\Debug\Thea2Translator.exe
+d:\RPA\T2TS-T\Thea2Translator\Thea2Translator\obj\Debug\Thea2Translator.pdb

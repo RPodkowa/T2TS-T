@@ -15,7 +15,7 @@ namespace Thea2Translator
         }
 
         #region Step1
-        private void bttnStart_Click(object sender, EventArgs e)
+        private void btnStart_Click(object sender, EventArgs e)
         {
             ProcessFilesDataBase();
             ProcessFilesModule();

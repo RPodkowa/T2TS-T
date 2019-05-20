@@ -28,22 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.bttnStep1 = new System.Windows.Forms.Button();
+            this.btnStep1 = new System.Windows.Forms.Button();
             this.bttnStep2 = new System.Windows.Forms.Button();
             this.textBoxDir = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.buttonDir = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // bttnStep1
+            // btnStep1
             // 
-            this.bttnStep1.Location = new System.Drawing.Point(12, 38);
-            this.bttnStep1.Name = "bttnStep1";
-            this.bttnStep1.Size = new System.Drawing.Size(253, 23);
-            this.bttnStep1.TabIndex = 0;
-            this.bttnStep1.Text = "Step 1";
-            this.bttnStep1.UseVisualStyleBackColor = true;
-            this.bttnStep1.Click += new System.EventHandler(this.bttnStart_Click);
+            this.btnStep1.Location = new System.Drawing.Point(12, 38);
+            this.btnStep1.Name = "btnStep1";
+            this.btnStep1.Size = new System.Drawing.Size(253, 23);
+            this.btnStep1.TabIndex = 0;
+            this.btnStep1.Text = "Step 1";
+            this.btnStep1.UseVisualStyleBackColor = true;
+            this.btnStep1.Click += new System.EventHandler(this.btnStart_Click);
             // 
             // bttnStep2
             // 
@@ -90,7 +90,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxDir);
             this.Controls.Add(this.bttnStep2);
-            this.Controls.Add(this.bttnStep1);
+            this.Controls.Add(this.btnStep1);
             this.Name = "Form1";
             this.Text = "Translator";
             this.ResumeLayout(false);
@@ -100,7 +100,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button bttnStep1;
+        private System.Windows.Forms.Button btnStep1;
         private System.Windows.Forms.Button bttnStep2;
         private System.Windows.Forms.TextBox textBoxDir;
         private System.Windows.Forms.Label label1;

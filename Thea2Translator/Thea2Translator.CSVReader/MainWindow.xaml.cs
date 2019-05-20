@@ -24,10 +24,20 @@ namespace Thea2Translator.CSVReader
     public partial class MainWindow : Window
     {
         IList<TextRecord> recordsToTranslate;
+        TextRecord choosenRecord;
 
         public MainWindow()
         {
             InitializeComponent();
+            lblStepInfo.Content = "Wybierz plik CSV do przetłumaczenia";
+
+            lbTranlationItems.Visibility = Visibility.Hidden;
+            txtOriginalText.Visibility = Visibility.Hidden;
+            txtTranslatedText.Visibility = Visibility.Hidden;
+            btnTranslate.Visibility = Visibility.Hidden;
+            btnSave.Visibility = Visibility.Hidden;
+
+            txtOriginalText.IsEnabled = false;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -38,6 +48,20 @@ namespace Thea2Translator.CSVReader
 
             var recordsToTranslateFromFile = File.ReadAllLines(openFileDialog.FileName);
             CreateModel(recordsToTranslateFromFile);
+
+            lblStepInfo.Visibility = Visibility.Hidden;
+            btnLoadFile.Visibility = Visibility.Hidden;
+
+            foreach(var record in recordsToTranslate)
+            {
+                lbTranlationItems.Items.Add(record.OriginalText);
+            }
+
+            lbTranlationItems.Visibility = Visibility.Visible;
+            txtOriginalText.Visibility = Visibility.Visible;
+            txtTranslatedText.Visibility = Visibility.Visible;
+            btnTranslate.Visibility = Visibility.Visible;
+            btnSave.Visibility = Visibility.Visible;
         }
 
         private void CreateModel(string[] recordsToTranslateFromFile)
@@ -49,11 +73,37 @@ namespace Thea2Translator.CSVReader
                 return new TextRecord
                 {
                     Id = spllitedText[0],
-                    IsCorrectedByHuman = bool.Parse(spllitedText[1]),
+                    IsCorrectedByHuman = bool.TryParse(spllitedText[1], out bool isCorrected) ? 
+                        isCorrected : false,
                     OriginalText = spllitedText[2],
                     TranslatedText = spllitedText[3]
                 };
             }).ToList();
+        }
+
+        private void LbTranlationItems_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var control = sender as System.Windows.Controls.ListBox;
+            choosenRecord = recordsToTranslate.FirstOrDefault(r => r.OriginalText == control.SelectedValue.ToString());
+
+            txtOriginalText.Text = choosenRecord.OriginalText;
+            txtTranslatedText.Text = choosenRecord.TranslatedText;
+        }
+
+        private void BtnTranslate_Click(object sender, RoutedEventArgs e)
+        {
+            choosenRecord.TranslatedText = txtTranslatedText.Text;
+        }
+
+        private void BtnSave_Click(object sender, RoutedEventArgs e)
+        {
+            using (var textWritter = new StreamWriter(File.Create("translated.csv")))
+            {
+                foreach (var record in recordsToTranslate)
+                {
+                    textWritter.WriteLine($"{record.Id};{record.IsCorrectedByHuman};{record.OriginalText};{record.TranslatedText}");
+                }
+            }
         }
     }
 }

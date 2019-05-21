@@ -74,7 +74,7 @@ namespace Thea2Translator.CSVReader.Pages
                     filtredElements = allElements;
                     break;
                 case 1:
-                    filtredElements = allElements.Where(c => c.OriginalText == c.TranslatedText).ToList();
+                    filtredElements = allElements.Where(c => c.ToTranslate).ToList();
                     break;
             }
 

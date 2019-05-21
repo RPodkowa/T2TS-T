@@ -13,7 +13,7 @@ namespace Thea2Translator
         public Form1()
         {
             InitializeComponent();
-            textBoxDir.Text = @"d:\t2";
+            textBoxDir.Text = @"C:\Program Files (x86)\Steam\steamapps\common\Thea 2 The Shattering\Thea2_Data\StreamingAssets";
             checkBoxDataBaseStep1.Checked = true;
             checkBoxModulesStep1.Checked = true;
 

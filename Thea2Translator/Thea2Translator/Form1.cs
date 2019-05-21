@@ -14,19 +14,24 @@ namespace Thea2Translator
         {
             InitializeComponent();
             textBoxDir.Text = @"d:\t2";
+            checkBoxDataBaseStep1.Checked = true;
+            checkBoxModulesStep1.Checked = true;
+
+            checkBoxDataBaseStep2.Checked = true;
+            checkBoxModulesStep2.Checked = true;
         }
 
         private void btnStart_Click(object sender, EventArgs e)
         {
             FileHelper.MainDir = textBoxDir.Text;
-            ProcessFiles(FilesType.DataBase, 1);
-            ProcessFiles(FilesType.Modules, 1);
+            if (checkBoxDataBaseStep1.Checked) ProcessFiles(FilesType.DataBase, 1);
+            if (checkBoxModulesStep1.Checked) ProcessFiles(FilesType.Modules, 1);
         }
         private void bttnStart2_Click(object sender, EventArgs e)
         {
             FileHelper.MainDir = textBoxDir.Text;
-            ProcessFiles(FilesType.DataBase, 2);
-            ProcessFiles(FilesType.Modules, 2);
+            if (checkBoxDataBaseStep2.Checked) ProcessFiles(FilesType.DataBase, 2);
+            if (checkBoxModulesStep2.Checked) ProcessFiles(FilesType.Modules, 2);
         }
 
         private void ProcessFiles(FilesType filesType, int step)

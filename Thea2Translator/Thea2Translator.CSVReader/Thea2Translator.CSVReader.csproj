@@ -73,6 +73,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\WorkMenuSelector.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\WorkPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -81,6 +85,9 @@
   <ItemGroup>
     <Compile Include="Pages\HomePage.xaml.cs">
       <DependentUpon>HomePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\WorkMenuSelector.xaml.cs">
+      <DependentUpon>WorkMenuSelector.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\WorkPage.xaml.cs">
       <DependentUpon>WorkPage.xaml</DependentUpon>

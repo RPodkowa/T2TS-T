@@ -6,9 +6,59 @@
       xmlns:local="clr-namespace:Thea2Translator.CSVReader.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="WorkPage">
+      Title="WorkPage"
+      Style="{StaticResource MainPageStyle}">
 
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="60*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="3" Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="16*"/>
+                <RowDefinition/>
+                <RowDefinition Height="16*"/>
+                <RowDefinition/>
+                <RowDefinition Height="3*"/>
+            </Grid.RowDefinitions>
+            <TextBox x:Name="txtOriginalText" TextWrapping="Wrap"/>
+            <TextBox x:Name="txtTranslatedText" Grid.Row="2" TextWrapping="Wrap"/>
+            <Button x:Name="btnTranslate" Content="Translate " Grid.Row="4" Click="BtnTranslate_Click"/>
+        </Grid>
+        <Grid Grid.Column="1" Grid.RowSpan="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="3*"/>
+                <RowDefinition/>
+                <RowDefinition Height="31*"/>
+                <RowDefinition/>
+                <RowDefinition Height="3*"/>
+            </Grid.RowDefinitions>
+            <ListBox x:Name="lbItemsToTranslate" Grid.Row="2" SelectionChanged="LbItemsToTranslate_SelectionChanged">
+                <ListBox.ItemTemplate >
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="{Binding Id}"/>
+                            <Label Content=". " />
+                            <Label Content="{Binding OriginalText}" />
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+            <ComboBox x:Name="cbItemsToTranslateFilter" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="0,8,0,0" SelectionChanged="CbItemsToTranslateFilter_SelectionChanged">
+                <ComboBoxItem Content="All items"/>
+                <ComboBoxItem Content="Without translation"/>
+            </ComboBox>
+            <Button x:Name="btnSaveToFile" Content="Save to file" Grid.Row="4" Click="BtnSaveToFile_Click"/>
+        </Grid>
+
     </Grid>
 </Page>

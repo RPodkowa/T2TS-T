@@ -26,13 +26,13 @@ namespace Thea2Translator.CSVReader.Pages
         {
             InitializeComponent();
             txtFolderDir.IsEnabled = false;
-            btnStartTranslate.IsEnabled = false;
+            txtFolderDir.Text = @"C:\";
         }
 
         private void BtnStartTranslate_Click(object sender, RoutedEventArgs e)
         {
             FileHelper.MainDir = txtFolderDir.Text;
-            this.NavigationService.Navigate(new WorkPage());
+            this.NavigationService.Navigate(new WorkMenuSelector());
         }
 
         private void BtnChooseFolder_Click(object sender, RoutedEventArgs e)

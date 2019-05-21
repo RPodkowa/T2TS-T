@@ -60,7 +60,7 @@ namespace Thea2Translator.Helpers
             return MainDir + @"\" + dir;
         }
 
-        public static void SaveElemsToFile(List<CacheElem> elems, string path)
+        public static void SaveElemsToFile(IEnumerable<CacheElem> elems, string path)
         {
             CreatedPathIfNotExists(path);
             DeleteFileIfExists(path);

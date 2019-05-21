@@ -11,10 +11,12 @@ namespace Thea2Translator.Cache
         public const string DataSeparator = "[::]";
         public const int LinesInFile = 6000;
 
+        public IList<CacheElem> CacheElems { get; private set; }
+
         private readonly FilesType Type;
         private readonly string FullPath;
         private int CurrentId;
-        private List<CacheElem> CacheElems;
+
 
         public bool IsDataBaseCache { get { return Type == FilesType.DataBase; } }
         public bool IsModulesCache { get { return Type == FilesType.Modules; } }

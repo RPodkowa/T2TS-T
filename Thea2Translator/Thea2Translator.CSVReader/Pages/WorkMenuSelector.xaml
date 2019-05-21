@@ -18,12 +18,15 @@
             <ColumnDefinition Width="250*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="5*"/>
-            <RowDefinition Height="2*"/>
+            <RowDefinition/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition/>
+            <RowDefinition Height="3*"/>
             <RowDefinition Height="5*"/>
         </Grid.RowDefinitions>
-        <Button x:Name="btnChooseDataBase" Content="DataBase" Grid.Column="1" Grid.Row="1" />
-        <Button x:Name="btnChooseModulus" Content="Modulus" Grid.Column="3" Grid.Row="1" />
+        <Button x:Name="btnChooseDataBase" FontWeight="Bold" Content="DataBase" Grid.Column="1" Grid.Row="3" />
+        <Button x:Name="btnChooseModulus" FontWeight="Bold" Content="Modules" Grid.Column="3" Grid.Row="3" />
+        <Label Content="Select module to translate" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="20" FontWeight="Bold" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="3"/>
 
     </Grid>
 </Page>

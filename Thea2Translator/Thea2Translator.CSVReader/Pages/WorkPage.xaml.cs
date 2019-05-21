@@ -54,8 +54,8 @@ namespace Thea2Translator.CSVReader.Pages
         {
             selectedCacheElement = lbItemsToTranslate.SelectedItem as CacheElem;
 
-            txtOriginalText.Text = selectedCacheElement?.OriginalText;
-            txtTranslatedText.Text = selectedCacheElement?.TranslatedText;
+            txtOriginalText.Text = selectedCacheElement?.OriginalNormalizedText;
+            txtTranslatedText.Text = selectedCacheElement?.TranslatedNormalizedText;
 
             btnTranslate.IsEnabled = selectedCacheElement == null ? false : true;
         }

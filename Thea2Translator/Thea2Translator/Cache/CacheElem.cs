@@ -32,7 +32,11 @@ namespace Thea2Translator.Cache
         private string _originalText;
         public string OriginalText
         {
-            get { return _originalText; }
+            get
+            {
+                if (IsModulesElem) return OriginalNormalizedText;
+                return _originalText;
+            }
             private set
             {
                 _originalText = value;

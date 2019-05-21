@@ -1,10 +1,11 @@
 ﻿using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using Thea2Translator.Cache;
 
 namespace Thea2Translator.Helpers
 {
-    public class FileHelper
+    public static class FileHelper
     {
         public static string MainDir = "";
 
@@ -57,6 +58,19 @@ namespace Thea2Translator.Helpers
         public static string GetDirName(string dir)
         {
             return MainDir + @"\" + dir;
+        }
+
+        public static void SaveElemsToFile(List<CacheElem> elems, string path)
+        {
+            CreatedPathIfNotExists(path);
+            DeleteFileIfExists(path);
+            TextWriter tw = new StreamWriter(path, true);
+            foreach (var elem in elems)
+            {
+                tw.WriteLine(elem.ToString());
+            }
+
+            tw.Close();
         }
     }
 }

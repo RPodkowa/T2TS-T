@@ -21,7 +21,6 @@ d:\RPA\T2TS-T\Thea2Translator\Thea2Translator\obj\Debug\Thea2Translator.pdb
 C:\Users\miol\Source\Repos\T2TS-T\Thea2Translator\Thea2Translator\bin\Debug\Thea2Translator.exe.config
 C:\Users\miol\Source\Repos\T2TS-T\Thea2Translator\Thea2Translator\bin\Debug\Thea2Translator.exe
 C:\Users\miol\Source\Repos\T2TS-T\Thea2Translator\Thea2Translator\bin\Debug\Thea2Translator.pdb
-C:\Users\miol\Source\Repos\T2TS-T\Thea2Translator\Thea2Translator\obj\Debug\Thea2Translator.csprojAssemblyReference.cache
 C:\Users\miol\Source\Repos\T2TS-T\Thea2Translator\Thea2Translator\obj\Debug\Thea2Translator.Form1.resources
 C:\Users\miol\Source\Repos\T2TS-T\Thea2Translator\Thea2Translator\obj\Debug\Thea2Translator.Properties.Resources.resources
 C:\Users\miol\Source\Repos\T2TS-T\Thea2Translator\Thea2Translator\obj\Debug\Thea2Translator.csproj.GenerateResource.cache

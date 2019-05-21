@@ -5,16 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Thea2Translator.CSVReader"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Thea2TranslatorTool" Height="450" Width="800">
     <DockPanel>
         <Frame x:Name="navigationFrame" NavigationUIVisibility="Hidden" />
-        <!--<Button x:Name="btnLoadFile" Content="Load translation file" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Center" Width="121" Click="Button_Click" Height="33"/>
-        <Label x:Name="lblStepInfo" Content="Label" HorizontalAlignment="Center" Margin="163,114,121,243" VerticalAlignment="Center" Width="508" FontSize="18" FontWeight="Bold" Height="62"/>
-        <ListBox x:Name="lbTranlationItems" HorizontalAlignment="Left" Height="309" Margin="10,100,0,0" VerticalAlignment="Top" Width="244" SelectionChanged="LbTranlationItems_SelectionChanged"/>
-        <TextBox x:Name="txtOriginalText" HorizontalAlignment="Left" Height="166" Margin="259,10,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="523"/>
-        <TextBox x:Name="txtTranslatedText" HorizontalAlignment="Left" Height="166" Margin="259,193,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="523"/>
-        <Button x:Name="btnSave" Content="Save file" HorizontalAlignment="Left" Margin="677,364,0,0" VerticalAlignment="Top" Width="75" Click="BtnSave_Click"/>
-        <Button x:Name="btnTranslate" Content="Translate" HorizontalAlignment="Left" Margin="309,364,0,0" VerticalAlignment="Top" Width="75" Click="BtnTranslate_Click"/>-->
-
     </DockPanel>
 </Window>

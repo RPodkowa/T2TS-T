@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cache\AlgorithmStep.cs" />
     <Compile Include="Cache\CacheElem.cs" />
     <Compile Include="Cache\FilesType.cs" />
     <Compile Include="Cache\DataCache.cs" />

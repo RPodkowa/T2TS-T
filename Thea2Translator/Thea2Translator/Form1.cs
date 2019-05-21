@@ -19,22 +19,42 @@ namespace Thea2Translator
 
             checkBoxDataBaseStep2.Checked = true;
             checkBoxModulesStep2.Checked = true;
-        }
 
-        private void btnStart_Click(object sender, EventArgs e)
+            checkBoxDataBaseStep3.Checked = true;
+            checkBoxModulesStep3.Checked = true;
+
+            checkBoxDataBaseStep4.Checked = true;
+            checkBoxModulesStep4.Checked = true;
+        }
+                
+        private void bttnStart_Click(object sender, EventArgs e)
         {
             FileHelper.MainDir = textBoxDir.Text;
-            if (checkBoxDataBaseStep1.Checked) ProcessFiles(FilesType.DataBase, 1);
-            if (checkBoxModulesStep1.Checked) ProcessFiles(FilesType.Modules, 1);
+            if (checkBoxDataBaseStep1.Checked) ProcessFiles(FilesType.DataBase, AlgorithmStep.ImportFromSteam);
+            if (checkBoxModulesStep1.Checked) ProcessFiles(FilesType.Modules, AlgorithmStep.ImportFromSteam);
         }
         private void bttnStart2_Click(object sender, EventArgs e)
         {
             FileHelper.MainDir = textBoxDir.Text;
-            if (checkBoxDataBaseStep2.Checked) ProcessFiles(FilesType.DataBase, 2);
-            if (checkBoxModulesStep2.Checked) ProcessFiles(FilesType.Modules, 2);
+            if (checkBoxDataBaseStep2.Checked) ProcessFiles(FilesType.DataBase, AlgorithmStep.PrepareToMachineTranslate);
+            if (checkBoxModulesStep2.Checked) ProcessFiles(FilesType.Modules, AlgorithmStep.PrepareToMachineTranslate);
         }
 
-        private void ProcessFiles(FilesType filesType, int step)
+        private void bttnStep3_Click(object sender, EventArgs e)
+        {
+            FileHelper.MainDir = textBoxDir.Text;
+            if (checkBoxDataBaseStep2.Checked) ProcessFiles(FilesType.DataBase, AlgorithmStep.ImportFromMachineTranslate);
+            if (checkBoxModulesStep2.Checked) ProcessFiles(FilesType.Modules, AlgorithmStep.ImportFromMachineTranslate);
+        }
+
+        private void bttnStep4_Click(object sender, EventArgs e)
+        {
+            FileHelper.MainDir = textBoxDir.Text;
+            if (checkBoxDataBaseStep2.Checked) ProcessFiles(FilesType.DataBase, AlgorithmStep.ExportToSteam);
+            if (checkBoxModulesStep2.Checked) ProcessFiles(FilesType.Modules, AlgorithmStep.ExportToSteam);
+        }
+
+        private void ProcessFiles(FilesType filesType, AlgorithmStep step)
         {
             var cache = new DataCache(filesType);
             cache.MakeStep(step);

@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnStep1 = new System.Windows.Forms.Button();
+            this.bttnStep1 = new System.Windows.Forms.Button();
             this.bttnStep2 = new System.Windows.Forms.Button();
             this.textBoxDir = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -37,25 +37,31 @@
             this.checkBoxDataBaseStep2 = new System.Windows.Forms.CheckBox();
             this.checkBoxModulesStep2 = new System.Windows.Forms.CheckBox();
             this.checkBoxModulesStep1 = new System.Windows.Forms.CheckBox();
+            this.checkBoxModulesStep3 = new System.Windows.Forms.CheckBox();
+            this.checkBoxDataBaseStep3 = new System.Windows.Forms.CheckBox();
+            this.bttnStep3 = new System.Windows.Forms.Button();
+            this.checkBoxModulesStep4 = new System.Windows.Forms.CheckBox();
+            this.checkBoxDataBaseStep4 = new System.Windows.Forms.CheckBox();
+            this.bttnStep4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // btnStep1
+            // bttnStep1
             // 
-            this.btnStep1.Location = new System.Drawing.Point(181, 38);
-            this.btnStep1.Name = "btnStep1";
-            this.btnStep1.Size = new System.Drawing.Size(84, 23);
-            this.btnStep1.TabIndex = 0;
-            this.btnStep1.Text = "Step 1";
-            this.btnStep1.UseVisualStyleBackColor = true;
-            this.btnStep1.Click += new System.EventHandler(this.btnStart_Click);
+            this.bttnStep1.Location = new System.Drawing.Point(181, 38);
+            this.bttnStep1.Name = "bttnStep1";
+            this.bttnStep1.Size = new System.Drawing.Size(159, 23);
+            this.bttnStep1.TabIndex = 0;
+            this.bttnStep1.Text = "ImportFromSteam";
+            this.bttnStep1.UseVisualStyleBackColor = true;
+            this.bttnStep1.Click += new System.EventHandler(this.bttnStart_Click);
             // 
             // bttnStep2
             // 
             this.bttnStep2.Location = new System.Drawing.Point(181, 67);
             this.bttnStep2.Name = "bttnStep2";
-            this.bttnStep2.Size = new System.Drawing.Size(84, 23);
+            this.bttnStep2.Size = new System.Drawing.Size(159, 23);
             this.bttnStep2.TabIndex = 1;
-            this.bttnStep2.Text = "Step 2";
+            this.bttnStep2.Text = "PrepareToMachineTranslate";
             this.bttnStep2.UseVisualStyleBackColor = true;
             this.bttnStep2.Click += new System.EventHandler(this.bttnStart2_Click);
             // 
@@ -63,7 +69,7 @@
             // 
             this.textBoxDir.Location = new System.Drawing.Point(41, 12);
             this.textBoxDir.Name = "textBoxDir";
-            this.textBoxDir.Size = new System.Drawing.Size(190, 20);
+            this.textBoxDir.Size = new System.Drawing.Size(265, 20);
             this.textBoxDir.TabIndex = 6;
             // 
             // label1
@@ -77,7 +83,7 @@
             // 
             // buttonDir
             // 
-            this.buttonDir.Location = new System.Drawing.Point(237, 9);
+            this.buttonDir.Location = new System.Drawing.Point(312, 10);
             this.buttonDir.Name = "buttonDir";
             this.buttonDir.Size = new System.Drawing.Size(28, 23);
             this.buttonDir.TabIndex = 8;
@@ -125,11 +131,77 @@
             this.checkBoxModulesStep1.Text = "Modules";
             this.checkBoxModulesStep1.UseVisualStyleBackColor = true;
             // 
+            // checkBoxModulesStep3
+            // 
+            this.checkBoxModulesStep3.AutoSize = true;
+            this.checkBoxModulesStep3.Location = new System.Drawing.Point(91, 100);
+            this.checkBoxModulesStep3.Name = "checkBoxModulesStep3";
+            this.checkBoxModulesStep3.Size = new System.Drawing.Size(66, 17);
+            this.checkBoxModulesStep3.TabIndex = 15;
+            this.checkBoxModulesStep3.Text = "Modules";
+            this.checkBoxModulesStep3.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxDataBaseStep3
+            // 
+            this.checkBoxDataBaseStep3.AutoSize = true;
+            this.checkBoxDataBaseStep3.Location = new System.Drawing.Point(12, 100);
+            this.checkBoxDataBaseStep3.Name = "checkBoxDataBaseStep3";
+            this.checkBoxDataBaseStep3.Size = new System.Drawing.Size(73, 17);
+            this.checkBoxDataBaseStep3.TabIndex = 14;
+            this.checkBoxDataBaseStep3.Text = "DataBase";
+            this.checkBoxDataBaseStep3.UseVisualStyleBackColor = true;
+            // 
+            // bttnStep3
+            // 
+            this.bttnStep3.Location = new System.Drawing.Point(181, 96);
+            this.bttnStep3.Name = "bttnStep3";
+            this.bttnStep3.Size = new System.Drawing.Size(159, 23);
+            this.bttnStep3.TabIndex = 13;
+            this.bttnStep3.Text = "ImportFromMachineTranslate";
+            this.bttnStep3.UseVisualStyleBackColor = true;
+            this.bttnStep3.Click += new System.EventHandler(this.bttnStep3_Click);
+            // 
+            // checkBoxModulesStep4
+            // 
+            this.checkBoxModulesStep4.AutoSize = true;
+            this.checkBoxModulesStep4.Location = new System.Drawing.Point(91, 129);
+            this.checkBoxModulesStep4.Name = "checkBoxModulesStep4";
+            this.checkBoxModulesStep4.Size = new System.Drawing.Size(66, 17);
+            this.checkBoxModulesStep4.TabIndex = 18;
+            this.checkBoxModulesStep4.Text = "Modules";
+            this.checkBoxModulesStep4.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxDataBaseStep4
+            // 
+            this.checkBoxDataBaseStep4.AutoSize = true;
+            this.checkBoxDataBaseStep4.Location = new System.Drawing.Point(12, 129);
+            this.checkBoxDataBaseStep4.Name = "checkBoxDataBaseStep4";
+            this.checkBoxDataBaseStep4.Size = new System.Drawing.Size(73, 17);
+            this.checkBoxDataBaseStep4.TabIndex = 17;
+            this.checkBoxDataBaseStep4.Text = "DataBase";
+            this.checkBoxDataBaseStep4.UseVisualStyleBackColor = true;
+            // 
+            // bttnStep4
+            // 
+            this.bttnStep4.Location = new System.Drawing.Point(181, 125);
+            this.bttnStep4.Name = "bttnStep4";
+            this.bttnStep4.Size = new System.Drawing.Size(159, 23);
+            this.bttnStep4.TabIndex = 16;
+            this.bttnStep4.Text = "ExportToSteam";
+            this.bttnStep4.UseVisualStyleBackColor = true;
+            this.bttnStep4.Click += new System.EventHandler(this.bttnStep4_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(287, 100);
+            this.ClientSize = new System.Drawing.Size(361, 161);
+            this.Controls.Add(this.checkBoxModulesStep4);
+            this.Controls.Add(this.checkBoxDataBaseStep4);
+            this.Controls.Add(this.bttnStep4);
+            this.Controls.Add(this.checkBoxModulesStep3);
+            this.Controls.Add(this.checkBoxDataBaseStep3);
+            this.Controls.Add(this.bttnStep3);
             this.Controls.Add(this.checkBoxModulesStep1);
             this.Controls.Add(this.checkBoxModulesStep2);
             this.Controls.Add(this.checkBoxDataBaseStep2);
@@ -138,7 +210,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxDir);
             this.Controls.Add(this.bttnStep2);
-            this.Controls.Add(this.btnStep1);
+            this.Controls.Add(this.bttnStep1);
             this.Name = "Form1";
             this.Text = "Translator";
             this.ResumeLayout(false);
@@ -148,7 +220,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnStep1;
+        private System.Windows.Forms.Button bttnStep1;
         private System.Windows.Forms.Button bttnStep2;
         private System.Windows.Forms.TextBox textBoxDir;
         private System.Windows.Forms.Label label1;
@@ -157,6 +229,12 @@
         private System.Windows.Forms.CheckBox checkBoxDataBaseStep2;
         private System.Windows.Forms.CheckBox checkBoxModulesStep2;
         private System.Windows.Forms.CheckBox checkBoxModulesStep1;
+        private System.Windows.Forms.CheckBox checkBoxModulesStep3;
+        private System.Windows.Forms.CheckBox checkBoxDataBaseStep3;
+        private System.Windows.Forms.Button bttnStep3;
+        private System.Windows.Forms.CheckBox checkBoxModulesStep4;
+        private System.Windows.Forms.CheckBox checkBoxDataBaseStep4;
+        private System.Windows.Forms.Button bttnStep4;
     }
 }
 

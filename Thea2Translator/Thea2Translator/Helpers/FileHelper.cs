@@ -46,11 +46,17 @@ namespace Thea2Translator.Helpers
                 Directory.Delete(path, true);
         }
 
+        public static void CreateDirectory(string dir)
+        {
+            dir = GetDirName(dir);
+            if (!Directory.Exists(dir))
+                Directory.CreateDirectory(dir);
+        }
+
         public static string GetCreatedPath(string path)
         {
+            CreateDirectory(path);
             path = GetDirName(path);
-            if (!Directory.Exists(path))
-                Directory.CreateDirectory(path);
 
             return path + @"\";
         }

@@ -11,8 +11,8 @@ namespace Thea2Translator.Cache
         public const string DataSeparator = "[::]";
         public const int LinesInFile = 6000;
 
-        private FilesType Type;
-        private string FullPath;
+        private readonly FilesType Type;
+        private readonly string FullPath;
         private int CurrentId;
         private List<CacheElem> CacheElems;
 
@@ -23,22 +23,21 @@ namespace Thea2Translator.Cache
         {
             Type = type;
             FullPath = $"{FileHelper.MainDir}\\Cache\\{type}.cache";
-            Init();
+            ResetElems();
         }
 
-        private void Init()
+        private void ResetElems()
         {
             CurrentId = 0;
             CacheElems = new List<CacheElem>();
         }
 
-        private void LoadElems()
+        public void ReloadElems()
         {
-            Init();
+            ResetElems();
             var lines = FileHelper.ReadFileLines(FullPath);
             foreach (var line in lines)
                 LoadElem(line);
-
         }
 
         private void LoadElem(string line)
@@ -48,45 +47,40 @@ namespace Thea2Translator.Cache
             CacheElems.Add(elem);
         }
 
-        private void SaveElems()
+        public void SaveElems()
         {
-            FileHelper.CreatedPathIfNotExists(FullPath);
-            FileHelper.DeleteFileIfExists(FullPath);            
-            TextWriter tw = new StreamWriter(FullPath, true);
-            foreach (var elem in CacheElems)
-            {
-                tw.WriteLine(elem.ToString());
-            }
+            FileHelper.SaveElemsToFile(CacheElems, FullPath);
+        }
 
-            tw.Close();
+        public void MakeStep(int step)
+        {
+            if (step == 1) MakeStep1();
+            if (step == 2) MakeStep2();
         }
 
         #region Step1
-        public void MakeStep1()
+        private void MakeStep1()
         {
-            LoadElems();
+            ReloadElems();
             DeleteFilesStep1();
             ReadFilesStep1();
             SaveElems();
             SaveFilesStep1();
         }
-
         private void DeleteFilesStep1()
         {
             FileHelper.DeletePath(GetDirectoryName("Step1"));
         }
-
         private void ReadFilesStep1()
         {
             string[] files = FileHelper.GetFiles(GetDirectoryName());
             if (files == null) return;
             foreach (string file in files)
             {
-                if (IsDataBaseCache) ProcessFileDataBase1(file);
-                if (IsModulesCache) ProcessFileModules1(file);
+                if (IsDataBaseCache) ProcessFileDataBase(file, false);
+                if (IsModulesCache) ProcessFileModules(file, false);
             }
         }
-
         private void SaveFilesStep1()
         {
             string path = FileHelper.GetCreatedPath(GetDirectoryName("Step1"));
@@ -107,7 +101,7 @@ namespace Thea2Translator.Cache
                 }
 
                 var id = elem.Id;
-                var v = elem.OriginalText;
+                var v = elem.OriginalNormalizedText;
 
                 if (tw_v != null) tw_v.WriteLine($"{id}:{v}");
                 i++;
@@ -115,91 +109,16 @@ namespace Thea2Translator.Cache
 
             if (tw_v != null) tw_v.Close();
         }
-
-        private void ProcessFileDataBase1(string file)
-        {
-            XmlDocument doc = new XmlDocument();
-            doc.Load(file);
-            var entrys = doc.SelectNodes("//LOC_LIBRARY-EN_DES/Entry");
-            foreach (XmlNode entry in entrys)
-            {
-                if (entry.Attributes == null)
-                    continue;
-
-                var key = entry.Attributes["Key"]?.Value;
-                var val = entry.Attributes["Val"]?.Value;
-
-                TryAddNormalizedToCache(key, val);
-            }
-        }
-
-        private void ProcessFileModules1(string file)
-        {
-            var fn = Path.GetFileNameWithoutExtension(file);
-
-            XmlDocument doc = new XmlDocument();
-            doc.Load(file);
-            var adventures = doc.DocumentElement.GetElementsByTagName("Adventure");
-            foreach (XmlNode adventure in adventures)
-            {
-                var nodes = adventure.SelectNodes("nodes");
-                foreach (XmlNode node in nodes)
-                {
-                    if (node.Attributes == null)
-                        continue;
-
-                    var xsi_type = node.Attributes["xsi:type"]?.Value;
-                    if (string.IsNullOrEmpty(xsi_type) || xsi_type != "NodeAdventure")
-                        continue;
-
-                    TryAddNormalizedToCache(node.InnerText);
-
-                    var outputs = adventure.SelectNodes("outputs");
-                    foreach (XmlNode output in outputs)
-                    {
-                        if (output.Attributes == null)
-                            continue;
-
-                        TryAddNormalizedToCache(output.Attributes["name"].ToString());
-                    }
-                }
-            }
-
-        }
-        private void TryAddNormalizedToCache(string key, string value)
-        {
-            var val = TextHelper.Normalize(value);
-            TryAddToCache(key, val);
-        }
-
-        private void TryAddNormalizedToCache(string value)
-        {
-            var val = TextHelper.Normalize(value);
-            TryAddToCache(val, val);
-        }
-
-        private void TryAddToCache(string key, string value)
-        {
-            if (string.IsNullOrEmpty(key))
-                return;
-
-            if (ContainsElem(key))
-                return;
-
-            CacheElems.Add(CreateElem(key, value));
-        }
         #endregion
-
         #region Step2
-        public void MakeStep2()
+        private void MakeStep2()
         {
-            LoadElems();
+            ReloadElems();
             DeleteFilesStep2();
             ReadFilesStep2();
             SaveElems();
             SaveFilesStep2();
         }
-
         private void DeleteFilesStep2()
         {
             FileHelper.DeletePath(GetDirectoryName("New"));
@@ -209,12 +128,10 @@ namespace Thea2Translator.Cache
         {
             string[] files = FileHelper.GetFiles(GetDirectoryName("Step2"));
             if (files == null) return;
-            foreach (string file in files)
-            {
-                ProcessFile2(file);
-            }
-        }
 
+            foreach (string file in files)            
+                ProcessFile2(file);            
+        }
         private void ProcessFile2(string file)
         {
             var lines = FileHelper.ReadFileLines(file);
@@ -231,19 +148,19 @@ namespace Thea2Translator.Cache
                 elem.SetTranslated(value);
             }
         }
-
         private void SaveFilesStep2()
         {
             string[] files = FileHelper.GetFiles(GetDirectoryName());
             if (files == null) return;
             foreach (string file in files)
             {
-                if (IsDataBaseCache) SaveFileDataBase2(file);
-                if (IsModulesCache) SaveFileModules2(file);
+                if (IsDataBaseCache) ProcessFileDataBase(file, true);
+                if (IsModulesCache) ProcessFileModules(file, true);
             }
         }
-
-        private void SaveFileDataBase2(string file)
+        #endregion
+               
+        private void ProcessFileDataBase(string file, bool saveToFile)
         {
             XmlDocument doc = new XmlDocument();
             doc.Load(file);
@@ -254,21 +171,30 @@ namespace Thea2Translator.Cache
                     continue;
 
                 var key = entry.Attributes["Key"]?.Value;
-                var elem = GetElem(key);
-                if (elem == null) continue;
 
-                entry.Attributes["Val"].Value = elem.TranslatedText;
+                if (!saveToFile)
+                {
+                    var val = entry.Attributes["Val"]?.Value;
+                    TryAddToCache(key, val);
+                }
+                else
+                {
+                    var elem = GetElem(key);
+                    if (elem == null) continue;
+
+                    entry.Attributes["Val"].Value = elem.TranslatedText;
+                }
             }
 
-            string path = FileHelper.GetCreatedPath(GetDirectoryName("New"));
-            string newFile = path + Path.GetFileNameWithoutExtension(file) + ".xml";
-            doc.Save(newFile);
+            if (saveToFile)
+            {
+                string path = FileHelper.GetCreatedPath(GetDirectoryName("New"));
+                string newFile = path + Path.GetFileName(file);
+                doc.Save(newFile);
+            }
         }
-
-        private void SaveFileModules2(string file)
+        private void ProcessFileModules(string file, bool saveToFile)
         {
-            var fn = Path.GetFileNameWithoutExtension(file);
-
             XmlDocument doc = new XmlDocument();
             doc.Load(file);
             var adventures = doc.DocumentElement.GetElementsByTagName("Adventure");
@@ -283,37 +209,48 @@ namespace Thea2Translator.Cache
                     var xsi_type = node.Attributes["xsi:type"]?.Value;
                     if (string.IsNullOrEmpty(xsi_type) || xsi_type != "NodeAdventure")
                         continue;
-                    
-                    var key = TextHelper.Normalize(node.InnerText);
-                    var elem = GetElem(key);
-                    if (elem != null)                    
-                        node.InnerText = TextHelper.UnNormalize(elem.TranslatedText, node.InnerText);                    
-                    
+
+                    if (!saveToFile)                    
+                        TryAddToCache(node.InnerText);                    
+                    else
+                    {
+                        var key = TextHelper.Normalize(node.InnerText);
+                        var elem = GetElem(key);
+                        if (elem != null)
+                            node.InnerText = elem.TranslatedText;
+                    }
+
                     var outputs = adventure.SelectNodes("outputs");
                     foreach (XmlNode output in outputs)
                     {
                         if (output.Attributes == null)
                             continue;
 
-                        elem = null;
-                        string name = output.Attributes["name"].ToString();
-                        if (!string.IsNullOrEmpty(name))
-                        {
-                            key = TextHelper.Normalize(name);
-                            elem = GetElem(key);
-                            if (elem != null)
-                                output.Attributes["name"].Value = TextHelper.UnNormalize(elem.TranslatedText, name);
+                        if (!saveToFile)
+                            TryAddToCache(output.Attributes["name"].ToString());
+                        else
+                        {                            
+                            string name = output.Attributes["name"].ToString();
+                            if (!string.IsNullOrEmpty(name))
+                            {
+                                var key = TextHelper.Normalize(name);
+                                var elem = GetElem(key);
+                                if (elem != null)
+                                    output.Attributes["name"].Value = elem.TranslatedText;
+                            }
                         }
                     }
                 }
             }
-            
-            string path = FileHelper.GetCreatedPath(GetDirectoryName("New"));
-            string newFile = path + Path.GetFileNameWithoutExtension(file) + ".xml";
-            doc.Save(newFile);
+
+            if (saveToFile)
+            {
+                string path = FileHelper.GetCreatedPath(GetDirectoryName("New"));
+                string newFile = path + Path.GetFileName(file);
+                doc.Save(newFile);
+            }            
         }
 
-        #endregion
         private bool ContainsElem(string key)
         {
             return (GetElem(key) != null);
@@ -350,6 +287,22 @@ namespace Thea2Translator.Cache
         private string GetFileName(string sufix = "")
         {
             return GetDirectoryName(sufix);
+        }
+
+        private void TryAddToCache(string value)
+        {
+            TryAddToCache(value, value);
+        }
+
+        private void TryAddToCache(string key, string value)
+        {
+            if (string.IsNullOrEmpty(key))
+                return;
+
+            if (ContainsElem(key))
+                return;
+
+            CacheElems.Add(CreateElem(key, value));
         }
 
         private string GetDirectoryName(string sufix = "")

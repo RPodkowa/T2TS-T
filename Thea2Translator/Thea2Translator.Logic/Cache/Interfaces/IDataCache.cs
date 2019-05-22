@@ -8,6 +8,8 @@ namespace Thea2Translator.Logic.Cache.Interfaces
 {
     public interface IDataCache
     {
+        event Action<string, double> StatusChanged;
+
         IList<CacheElem> CacheElems { get; }
 
         void ReloadElems();

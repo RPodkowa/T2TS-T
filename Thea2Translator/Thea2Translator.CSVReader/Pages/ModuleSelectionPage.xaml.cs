@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using System;
+using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 using Thea2Translator.Logic;
@@ -15,6 +16,7 @@ namespace Thea2Translator.DesktopApp.Pages
         private static SolidColorBrush selectedButtonColor = Brushes.LightGreen;
         private static SolidColorBrush unSelectedButtonColor = Brushes.Orange;
 
+        public int XYZ;
         bool isDataBaseModuleSelected = false;
         bool isModulesModuleSelected = false;
 
@@ -22,6 +24,7 @@ namespace Thea2Translator.DesktopApp.Pages
         {
             InitializeComponent();
             SetStepsButtonVisibility(false);
+            ClearProgressBar();
             ChangeButtonSelectColor(btnChooseDataBase, false);
             ChangeButtonSelectColor(btnChooseModulus, false);
 
@@ -62,6 +65,12 @@ namespace Thea2Translator.DesktopApp.Pages
             btnExportToSteam.Visibility = isVisible ? Visibility.Visible : Visibility.Hidden;
         }
 
+        private void ClearProgressBar()
+        {
+            barTextBlock.Text = "";
+            barStatus.Value = 0;
+        }
+
         private void BtnTranslate_Click(object sender, RoutedEventArgs e)
         {
             if (isDataBaseModuleSelected && isModulesModuleSelected)
@@ -83,7 +92,16 @@ namespace Thea2Translator.DesktopApp.Pages
             IDataCache cache = filesType == FilesType.DataBase ?
                 LogicProvider.DataBase : LogicProvider.Modules;
 
+            ClearProgressBar();
+            cache.StatusChanged += (s, p) => UpdateStatus(s, p); ;
             cache.MakeStep(step);
+            cache.StatusChanged -= UpdateStatus;
+        }
+
+        private void UpdateStatus(string s, double p)
+        {
+            barTextBlock.Text = s;
+            barStatus.Value = p * 100;
         }
 
         private void BtnImportFromSteam_Click(object sender, RoutedEventArgs e)

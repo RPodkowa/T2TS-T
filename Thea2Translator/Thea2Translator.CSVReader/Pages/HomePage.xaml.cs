@@ -13,9 +13,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using Thea2Translator.Helpers;
+using Thea2Translator.Logic.Helpers;
 
-namespace Thea2Translator.CSVReader.Pages
+namespace Thea2Translator.DesktopApp.Pages
 {
     /// <summary>
     /// Interaction logic for HomePage.xaml

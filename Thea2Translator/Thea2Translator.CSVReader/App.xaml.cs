@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace Thea2Translator.CSVReader
+namespace Thea2Translator.DesktopApp
 {
     /// <summary>
     /// Interaction logic for App.xaml

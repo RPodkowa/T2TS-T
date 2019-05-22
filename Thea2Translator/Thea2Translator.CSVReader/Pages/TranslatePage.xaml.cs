@@ -12,9 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using Thea2Translator.Cache;
+using Thea2Translator.Logic.Cache;
 
-namespace Thea2Translator.CSVReader.Pages
+namespace Thea2Translator.DesktopApp.Pages
 {
     /// <summary>
     /// Interaction logic for WorkPage.xaml

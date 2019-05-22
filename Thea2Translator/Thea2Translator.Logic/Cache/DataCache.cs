@@ -5,14 +5,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
+using Thea2Translator.Logic.Cache.Interfaces;
 using Thea2Translator.Logic.Helpers;
 
 namespace Thea2Translator.Logic.Cache
 {
-    public class DataCache
+    internal class DataCache : IDataCache
     {
-        public const string DataSeparator = "[::]";
-        public const int LinesInFile = 6000;
+        internal const string DataSeparator = "[::]";
+        internal const int LinesInFile = 6000;
 
         public IList<CacheElem> CacheElems { get; private set; }
 
@@ -20,9 +21,8 @@ namespace Thea2Translator.Logic.Cache
         private readonly string FullPath;
         private int CurrentId;
 
-
-        public bool IsDataBaseCache { get { return Type == FilesType.DataBase; } }
-        public bool IsModulesCache { get { return Type == FilesType.Modules; } }
+        internal bool IsDataBaseCache { get { return Type == FilesType.DataBase; } }
+        internal bool IsModulesCache { get { return Type == FilesType.Modules; } }
 
         public DataCache(FilesType type)
         {

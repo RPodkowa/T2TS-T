@@ -45,9 +45,11 @@
     <Compile Include="Cache\CacheElem.cs" />
     <Compile Include="Cache\DataCache.cs" />
     <Compile Include="Cache\FilesType.cs" />
+    <Compile Include="Cache\Interfaces\IDataCache.cs" />
     <Compile Include="Helpers\FileHelper.cs" />
     <Compile Include="Helpers\FlagHelper.cs" />
     <Compile Include="Helpers\TextHelper.cs" />
+    <Compile Include="LogicProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

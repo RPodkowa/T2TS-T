@@ -12,7 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Thea2Translator.Logic;
 using Thea2Translator.Logic.Cache;
+using Thea2Translator.Logic.Cache.Interfaces;
 
 namespace Thea2Translator.DesktopApp.Pages
 {
@@ -21,7 +23,7 @@ namespace Thea2Translator.DesktopApp.Pages
     /// </summary>
     public partial class TranslatePage : Page
     {
-        DataCache dataCache;
+        IDataCache dataCache;
         IList<CacheElem> allElements;
         IList<CacheElem> filtredElements;
         CacheElem selectedCacheElement;
@@ -29,7 +31,10 @@ namespace Thea2Translator.DesktopApp.Pages
         public TranslatePage(FilesType fileType)
         {
             InitializeComponent();
-            dataCache = new DataCache(fileType);
+
+            dataCache = fileType == FilesType.DataBase ?
+                LogicProvider.DataBase : LogicProvider.Modules;
+
             btnTranslate.IsEnabled = false;
             btnSaveToFile.IsEnabled = false;
 

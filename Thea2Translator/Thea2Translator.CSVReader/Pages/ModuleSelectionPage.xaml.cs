@@ -1,7 +1,9 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
+using Thea2Translator.Logic;
 using Thea2Translator.Logic.Cache;
+using Thea2Translator.Logic.Cache.Interfaces;
 
 namespace Thea2Translator.DesktopApp.Pages
 {
@@ -78,7 +80,9 @@ namespace Thea2Translator.DesktopApp.Pages
 
         private void ProcessFiles(FilesType filesType, AlgorithmStep step)
         {
-            var cache = new DataCache(filesType);
+            IDataCache cache = filesType == FilesType.DataBase ?
+                LogicProvider.DataBase : LogicProvider.Modules;
+
             cache.MakeStep(step);
         }
 

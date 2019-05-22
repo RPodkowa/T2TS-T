@@ -10,4 +10,5 @@
 /Thea2Translator/.vs
 /Thea2Translator/Thea2Translator/bin
 /Thea2Translator/Thea2Translator/obj
-/Thea2Translator/Thea2Translator.Logic/obj/Debug
+/Thea2Translator/Thea2Translator.Logic/obj
+/Thea2Translator/Thea2Translator.Logic/bin

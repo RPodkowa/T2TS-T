@@ -32,7 +32,7 @@ namespace Thea2Translator.CSVReader.Pages
         private void BtnStartTranslate_Click(object sender, RoutedEventArgs e)
         {
             FileHelper.MainDir = txtFolderDir.Text;
-            this.NavigationService.Navigate(new WorkMenuSelector());
+            this.NavigationService.Navigate(new ModuleSelectionPage());
         }
 
         private void BtnChooseFolder_Click(object sender, RoutedEventArgs e)

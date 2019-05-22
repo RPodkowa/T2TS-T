@@ -73,11 +73,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pages\WorkMenuSelector.xaml">
+    <Page Include="Pages\ModuleSelectionPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pages\WorkPage.xaml">
+    <Page Include="Pages\TranslatePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -86,11 +86,11 @@
     <Compile Include="Pages\HomePage.xaml.cs">
       <DependentUpon>HomePage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\WorkMenuSelector.xaml.cs">
-      <DependentUpon>WorkMenuSelector.xaml</DependentUpon>
+    <Compile Include="Pages\ModuleSelectionPage.xaml.cs">
+      <DependentUpon>ModuleSelectionPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\WorkPage.xaml.cs">
-      <DependentUpon>WorkPage.xaml</DependentUpon>
+    <Compile Include="Pages\TranslatePage.xaml.cs">
+      <DependentUpon>TranslatePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>

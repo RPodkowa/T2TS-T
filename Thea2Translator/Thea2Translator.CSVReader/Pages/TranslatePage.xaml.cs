@@ -19,14 +19,14 @@ namespace Thea2Translator.CSVReader.Pages
     /// <summary>
     /// Interaction logic for WorkPage.xaml
     /// </summary>
-    public partial class WorkPage : Page
+    public partial class TranslatePage : Page
     {
         DataCache dataCache;
         IList<CacheElem> allElements;
         IList<CacheElem> filtredElements;
         CacheElem selectedCacheElement;
 
-        public WorkPage(FilesType fileType)
+        public TranslatePage(FilesType fileType)
         {
             InitializeComponent();
             dataCache = new DataCache(fileType);

@@ -94,11 +94,9 @@ namespace Thea2Translator.Logic.Cache
         {
             ResetElems();
             var lines = FileHelper.ReadFileLines(FullPath);
-            int linesCount = lines.Count;
-            int currentLine = 1;
+            UpdateStatus($"Read elems from cache '{lines.Count}'");
             foreach (var line in lines)
             {
-                UpdateStatusWithPortion($"Read elem from cache '{line.Substring(10)}'", currentLine++, linesCount);
                 LoadElem(line);
             }
 

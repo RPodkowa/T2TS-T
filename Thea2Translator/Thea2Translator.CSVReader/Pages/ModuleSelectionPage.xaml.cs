@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -15,13 +16,14 @@ namespace Thea2Translator.DesktopApp.Pages
     public partial class ModuleSelectionPage : Page
     {
         private object _lockObject = new object();
+        private TimeSpan? processTimeSpan;
 
         private static SolidColorBrush selectedButtonColor = Brushes.LightGreen;
         private static SolidColorBrush unSelectedButtonColor = Brushes.Orange;
-
-        public int XYZ;
+                
         bool isDataBaseModuleSelected = false;
         bool isModulesModuleSelected = false;
+
 
         public ModuleSelectionPage()
         {
@@ -108,12 +110,21 @@ namespace Thea2Translator.DesktopApp.Pages
                         SetButtonEnableProp(false);
                         txtCurrentModuleInProcess.Content = $"{step.ToString()} - {filesType.ToString()}";
                     });
-                    
+
+                    var stopWatch = new Stopwatch();
+                    stopWatch.Start();
                     cache.MakeStep(step);
+                    stopWatch.Stop();
+
+                    if (processTimeSpan==null) processTimeSpan = stopWatch.Elapsed;
+                    else processTimeSpan += stopWatch.Elapsed;
+                                                            
                     cache.StatusChanged -= UpdateStatus;
 
                     this.Dispatcher.Invoke(() => {
                         SetButtonEnableProp(true);
+                        string elapsedTime = string.Format(" [{0:00}:{1:00}:{2:00}.{3:00}]", processTimeSpan?.Hours, processTimeSpan?.Minutes, processTimeSpan?.Seconds, processTimeSpan?.Milliseconds / 10);
+                        txtCurrentModuleInProcess.Content = $"{step.ToString()} done in {elapsedTime}";
                     });
                 }
             });
@@ -129,47 +140,42 @@ namespace Thea2Translator.DesktopApp.Pages
             btnPrepareToMachineTranslate.IsEnabled = isEnable;
             btnTranslate.IsEnabled = isEnable;
             btnExportToSteam.IsEnabled = isEnable;
-
         }
 
         private void UpdateStatus(string s, double p)
         {
-            //if (!string.IsNullOrWhiteSpace(s))
-            //{
-            //    barTextBlock.Dispatcher.Invoke(() =>
-            //    {
-            //        barTextBlock.Text = s;
-            //    });
-            //}
-
             this.Dispatcher.Invoke(() =>
             {
+                barTextBlock.Text = s;
                 barStatus.Value = p * 100;
             });
         }
 
         private void BtnImportFromSteam_Click(object sender, RoutedEventArgs e)
         {
-            if (isDataBaseModuleSelected) ProcessFiles(FilesType.DataBase, AlgorithmStep.ImportFromSteam);
-            if (isModulesModuleSelected) ProcessFiles(FilesType.Modules, AlgorithmStep.ImportFromSteam);
+            Process(AlgorithmStep.ImportFromSteam);
         }
 
         private void BtnPrepareToMachineTranslate_Click(object sender, RoutedEventArgs e)
         {
-            if (isDataBaseModuleSelected) ProcessFiles(FilesType.DataBase, AlgorithmStep.PrepareToMachineTranslate);
-            if (isModulesModuleSelected) ProcessFiles(FilesType.Modules, AlgorithmStep.PrepareToMachineTranslate);
+            Process(AlgorithmStep.PrepareToMachineTranslate);
         }
 
         private void BtnImportFromMachineTranslate_Click(object sender, RoutedEventArgs e)
         {
-            if (isDataBaseModuleSelected) ProcessFiles(FilesType.DataBase, AlgorithmStep.ImportFromMachineTranslate);
-            if (isModulesModuleSelected) ProcessFiles(FilesType.Modules, AlgorithmStep.ImportFromMachineTranslate);
+            Process(AlgorithmStep.ImportFromMachineTranslate);
         }
 
         private void BtnExportToSteam_Click(object sender, RoutedEventArgs e)
         {
-            if (isDataBaseModuleSelected) ProcessFiles(FilesType.DataBase, AlgorithmStep.ExportToSteam);
-            if (isModulesModuleSelected) ProcessFiles(FilesType.Modules, AlgorithmStep.ExportToSteam);
+            Process(AlgorithmStep.ExportToSteam);
+        }
+
+        private void Process(AlgorithmStep step)
+        {
+            processTimeSpan = null;
+            if (isDataBaseModuleSelected) ProcessFiles(FilesType.DataBase, step);
+            if (isModulesModuleSelected) ProcessFiles(FilesType.Modules, step);
         }
     }
 }

@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Thea2Translator.DesktopApp.Properties;
 using Thea2Translator.Logic.Helpers;
 
 namespace Thea2Translator.DesktopApp.Pages
@@ -26,12 +27,15 @@ namespace Thea2Translator.DesktopApp.Pages
         {
             InitializeComponent();
             txtFolderDir.IsEnabled = false;
-            txtFolderDir.Text = @"C:\";
+            txtFolderDir.Text = Settings.Default.FolderSrc;
         }
 
         private void BtnStartTranslate_Click(object sender, RoutedEventArgs e)
         {
             FileHelper.MainDir = txtFolderDir.Text;
+            Settings.Default.FolderSrc = txtFolderDir.Text;
+            Settings.Default.Save();
+
             this.NavigationService.Navigate(new ModuleSelectionPage());
         }
 

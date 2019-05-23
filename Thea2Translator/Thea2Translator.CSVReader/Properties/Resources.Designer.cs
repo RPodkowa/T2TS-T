@@ -59,5 +59,14 @@ namespace Thea2Translator.DesktopApp.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to C:\.
+        /// </summary>
+        internal static string folderSrc {
+            get {
+                return ResourceManager.GetString("folderSrc", resourceCulture);
+            }
+        }
     }
 }

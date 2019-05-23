@@ -57,6 +57,7 @@
         </Grid>
         <ProgressBar x:Name="barStatus" Grid.Column="1" HorizontalAlignment="Left" Height="40" Grid.Row="7" VerticalAlignment="Top" Width="655" Grid.ColumnSpan="5"/>
         <TextBlock x:Name="barTextBlock" Grid.Column="1" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="7" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Grid.ColumnSpan="5" Width="635" TextAlignment="Center"/>
+        <Label x:Name="txtCurrentModuleInProcess" Content="Choose action" FontSize="18" FontWeight="Bold" HorizontalContentAlignment="Center" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="6" VerticalAlignment="Top" Width="655" Grid.ColumnSpan="5" Height="36" Margin="0,5,0,0"/>
 
     </Grid>
 </Page>

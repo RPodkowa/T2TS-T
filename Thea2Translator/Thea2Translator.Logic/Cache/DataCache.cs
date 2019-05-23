@@ -38,7 +38,7 @@ namespace Thea2Translator.Logic.Cache
 
         private void ChangeStatus(string status, double progress)
         {
-            StatusChanged.Invoke(status, progress);
+            StatusChanged?.Invoke(status, progress);
         }
 
         private void UpdateStatusWithPortion(string status, int elemNumber, int elemCount)

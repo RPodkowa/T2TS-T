@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
@@ -13,6 +14,8 @@ namespace Thea2Translator.DesktopApp.Pages
     /// </summary>
     public partial class ModuleSelectionPage : Page
     {
+        private object _lockObject = new object();
+
         private static SolidColorBrush selectedButtonColor = Brushes.LightGreen;
         private static SolidColorBrush unSelectedButtonColor = Brushes.Orange;
 
@@ -67,8 +70,10 @@ namespace Thea2Translator.DesktopApp.Pages
 
         private void ClearProgressBar()
         {
-            barTextBlock.Text = "";
-            barStatus.Value = 0;
+            this.Dispatcher.Invoke(() => {
+                barTextBlock.Text = "";
+                barStatus.Value = 0;
+            });    
         }
 
         private void BtnTranslate_Click(object sender, RoutedEventArgs e)
@@ -89,19 +94,58 @@ namespace Thea2Translator.DesktopApp.Pages
 
         private void ProcessFiles(FilesType filesType, AlgorithmStep step)
         {
-            IDataCache cache = filesType == FilesType.DataBase ?
-                LogicProvider.DataBase : LogicProvider.Modules;
+            Task.Run(() =>
+            {
+                lock (_lockObject)
+                {
+                    IDataCache cache = filesType == FilesType.DataBase ?
+                    LogicProvider.DataBase : LogicProvider.Modules;
 
-            ClearProgressBar();
-            cache.StatusChanged += (s, p) => UpdateStatus(s, p); ;
-            cache.MakeStep(step);
-            cache.StatusChanged -= UpdateStatus;
+                    ClearProgressBar();
+                    cache.StatusChanged += (s, p) => UpdateStatus(s, p);
+
+                    this.Dispatcher.Invoke(() => {
+                        SetButtonEnableProp(false);
+                        txtCurrentModuleInProcess.Content = $"{step.ToString()} - {filesType.ToString()}";
+                    });
+                    
+                    cache.MakeStep(step);
+                    cache.StatusChanged -= UpdateStatus;
+
+                    this.Dispatcher.Invoke(() => {
+                        SetButtonEnableProp(true);
+                    });
+                }
+            });
+        }
+
+        private void SetButtonEnableProp(bool isEnable)
+        {
+            btnChooseDataBase.IsEnabled = isEnable;
+            btnChooseModulus.IsEnabled = isEnable;
+
+            btnImportFromSteam.IsEnabled = isEnable;
+            btnImportFromMachineTranslate.IsEnabled = isEnable;
+            btnPrepareToMachineTranslate.IsEnabled = isEnable;
+            btnTranslate.IsEnabled = isEnable;
+            btnExportToSteam.IsEnabled = isEnable;
+
         }
 
         private void UpdateStatus(string s, double p)
         {
-            barTextBlock.Text = s;
-            barStatus.Value = p * 100;
+            //if (!string.IsNullOrWhiteSpace(s))
+            //{
+            //    barTextBlock.Dispatcher.Invoke(() =>
+            //    {
+            //        barTextBlock.Text = s;
+            //    });
+            //}
+
+            this.Dispatcher.Invoke(() =>
+            {
+                barStatus.Value = p * 100;
+            });
         }
 
         private void BtnImportFromSteam_Click(object sender, RoutedEventArgs e)

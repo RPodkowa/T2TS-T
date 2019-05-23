@@ -16,6 +16,7 @@ namespace Thea2Translator.Logic.Cache
         internal const int LinesInFile = 6000;
 
         public IList<CacheElem> CacheElems { get; private set; }
+        public Dictionary<string, int> Glossary;
 
         private readonly FilesType Type;
         private readonly string FullPath;
@@ -100,8 +101,12 @@ namespace Thea2Translator.Logic.Cache
                 UpdateStatusWithPortion($"Read elem from cache '{line.Substring(10)}'", currentLine++, linesCount);
                 LoadElem(line);
             }
-        }
 
+            //var g = new Glossary.Glossary();
+            //g.UpdateByCache(this);
+            //var elems = g.GetElemsForText("wit abccrafting");
+        }
+                
         private void LoadElem(string line)
         {
             var elem = new CacheElem(Type, line);

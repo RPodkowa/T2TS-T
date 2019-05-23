@@ -8,6 +8,31 @@ namespace Thea2Translator.Logic.Helpers
 {
     public class TextHelper
     {
+        public static string NormalizeForGlossary(string text)
+        {
+            var ret = RemoveUnnecessaryForGlossary(text);
+            if (ret.Length > 1)
+                ret = ret.First().ToString() + ret.Substring(1).ToLower();
+
+            return ret;
+        }
+
+        public static string RemoveUnnecessaryForGlossary(string text)
+        {
+            if (string.IsNullOrEmpty(text))
+                return "";
+
+            var ret = text.ToUpper();
+            ret = ret.Trim();
+            ret = ret.Replace("[EOLNN]", "");
+            ret = ret.Replace("[EOLN]", "");
+            ret = ret.Replace("[EOLRR]", "");
+            ret = ret.Replace("[EOLR]", "");
+
+            ret = new string(ret.Where(c => char.IsLetterOrDigit(c) || c == '-' || c == '\'').ToArray());
+            return ret;
+        }
+
         public static string Normalize(string text)
         {
             if (string.IsNullOrEmpty(text))

@@ -46,6 +46,8 @@
     <Compile Include="Cache\DataCache.cs" />
     <Compile Include="Cache\FilesType.cs" />
     <Compile Include="Cache\Interfaces\IDataCache.cs" />
+    <Compile Include="Glossary\Glossary.cs" />
+    <Compile Include="Glossary\GlossaryElem.cs" />
     <Compile Include="Helpers\FileHelper.cs" />
     <Compile Include="Helpers\FlagHelper.cs" />
     <Compile Include="Helpers\TextHelper.cs" />

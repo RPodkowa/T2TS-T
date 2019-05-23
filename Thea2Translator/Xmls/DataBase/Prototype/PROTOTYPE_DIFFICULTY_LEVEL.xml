@@ -1,0 +1,17 @@
+﻿<PROTOTYPE_DIFFICULTY_LEVEL>
+	
+    <DIFFICULTY_RANGE Name="DifficultyRange">
+        <Min Name="min" Type="float" Required="TRUE"/>
+        <Max Name="max" Type="float" Required="TRUE"/>
+        <IconName Name="icon" Type="string" Required="TRUE"/>
+    </DIFFICULTY_RANGE>
+	
+	<!--xxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	
+	<!-- Group thread (number of skull's) icon boundaries -->
+	<DIFFICULTY_LEVEL Name="DifficultyLevel" Abbreviation="DIFF">
+		<!--  -->
+		<Diff Name="diff" Type="ArrayDIFFICULTY_RANGE" Required="TRUE"/>		
+	</DIFFICULTY_LEVEL>
+	
+</PROTOTYPE_DIFFICULTY_LEVEL>

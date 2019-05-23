@@ -1,0 +1,183 @@
+﻿<PROTOTYPE_SUBSKILL>
+
+	<!-- Random or player choice of targets -->
+	<E_TARGET_INDICATION_TYPE Type="enum" Name="ETargetIndicationType">
+		<!-- player is allowed to choose any number between min and max targets. 
+    If cannot choose minimum targets, skill cannot be executed -->
+		<Chosen/>
+		<!-- 
+    If target count is bigger tham maximum only maximum targets are considered chosen randomly. 
+    If target count is smaller than minimum, skill cannot be used.
+    Otherwise all targets would be chosen by the skill. -->
+		<Random/>
+		<!--Works like Random, but targets are forwarded from parent skill-->
+		<FromParentTarget/>
+	</E_TARGET_INDICATION_TYPE>	
+
+	<!-- General trigger division groups -->
+	<E_TRIGGER_GROUP_TYPE Type="enum" Name="ETriggerGroupType">
+		<!-- subskill with that trigger need to be child effect of other subskill
+		or failure effect. It will never work stand alone -->
+		<Never/>
+		<!-- Simple attribute modifier in calculation, this subskill should not require regular tests for itself, 
+		as it would be activated each time attributes need recalculation, not based on external events-->
+		<Passive/>
+        <GroupPassive/>
+		<!-- Is triggered whenever path is executed onece for each hex entered for the group -->
+		<OnMovement/>
+        <GroupOnMovement/>
+		<!-- Is triggered whenever new turn starts -->
+		<OnStartTurn/>
+        <GroupOnStartTurn/>
+		<!-- Is triggered whenever turn ends, before any end turn actions (eg food, healings, deaths etc) -->
+		<OnEndTurn/>
+        <GroupOnEndTurn/>
+        <OnSezonEnd/>
+        <GroupOnSezonEnd/>
+        <OnYearEnd/>
+        <GroupOnYearEnd/>
+
+		<!--  <<Challenge: Manual actions>> -->    
+		<!-- Action done AS normal card action, eg weapon attacks
+		which should apply default OnAttack extras like poisoned sword
+		This action PLACES owner on battelfield 
+		and its effect is triggered AFTER DELAY.-->
+		<DoAttack/>
+
+		<!-- Action done INSTEAD normal card action, eg fireballs, some ranged attacks, healing
+		which should not apply default OnAttack extras like poisoned sword
+		This action PLACES owner on battelfield 
+		and its effect is triggered AFTER DELAY.-->
+		<DoAlternateAttack/>
+
+		<!-- Action done INSTEAD of normal card action, eg fireballs, area of effects...
+		This action DOESN'T PLACE owner on battelfield,
+		and its effect is triggered AFTER DELAY.-->
+		<DoCast/>
+
+		<!-- Action done INSTEAD of normal card action, eg summon, Accelerate allay etc
+		This action DOESN'T PLACE owner on battelfield, 
+		Effect is triggered INSTANTLY -->
+		<DoCastInstant/>
+
+		<!--  <<Challenge: Automatic actions>> -->
+		<!-- Is triggered whenever any card activates DoAttack skill -->
+		<OnAttack/>
+		<!-- Is triggered whenever any card activates DoAlternateAttack skill -->
+		<OnAlternateAttack/>
+		<!-- Is triggered whenever any card activates DoCast skill -->
+		<OnCast/>
+		<!-- Is triggered whenever any card activates DoCastInstant skill -->
+		<OnCastInstant/>
+		<!-- Is triggered when challenge is starting -->
+		<OnStartChallenge/>
+		<!-- Is triggered when challenge is ending regardless of result -->
+		<OnEndChallenge/>
+		<!-- Is triggered whenever any card is placed on battlefield (preparing for DoAttack or DoCast) -->
+		<OnCardPlay/>
+		<!-- Is triggered whenever any card is reciving damage during challenge (before shielding is applied) -->
+		<OnDamage/>
+	</E_TRIGGER_GROUP_TYPE>
+
+	<!-- selected targets count -->
+	<TARGETS_COUNT_RANGE Name="TargetsCount">
+		<!-- -->
+		<MinimumCount Name="minimumCount" Type="int" Required="TRUE"/>
+		<!-- -->
+		<MaximumCount Name="maximumCount" Type="int" Required="TRUE"/>
+		<!-- -->
+		<TargetIndication Name="targetIndication" Type="E_TARGET_INDICATION_TYPE" Required="TRUE"/>
+	</TARGETS_COUNT_RANGE>
+
+	<!-- script definition -->
+	<SCRIPT Name="Script">
+		<ScriptName Name="scriptName" Type="string" Required="TRUE"/>
+	</SCRIPT>
+
+	<!-- selecting targets for a given skill, spell, effect or functionality 
+	Base weapon target is https://goo.gl/NeBa23
+	If a person with theweapon destroyed the target that blocked them:
+	-	Melee attacks the whole board randomly or the support
+	-	Range attacks selected target from the entire board or the support randomly
+	A Weapon that has splash, can use it only on its primary target -->
+	<TARGETS_SELECTOR Name="TargetsSelector">
+		<!-- -->
+		<TargetScript Name="script" Type="SCRIPT" Required="TRUE"/>
+		<!-- -->
+		<SecondaryScript Name="script2" Type="SCRIPT" Required="FALSE"/>
+		<!-- -->
+		<TargetCountRange Name="targetCountRange" Type="TARGETS_COUNT_RANGE" Required="TRUE"/>
+	</TARGETS_SELECTOR>
+
+
+    <SUB_SKILL_SHORT_INFO Name="SubSkillShortInfo">
+		<!-- -->
+        <TriggerIcon Name="triggerTypeIcon" Type="TAG" Required="TRUE"/>
+		<!-- -->
+        <DamageIcon Name="damageIcon" Type="TAG" Required="TRUE"/>
+		<!-- -->
+        <TargetIcon Name="targetIcon" Type="TAG" Required="TRUE"/>
+		<!-- -->
+        <AttackInfo Name="attackInfo" Type="string" Required="TRUE"/>
+    </SUB_SKILL_SHORT_INFO>
+
+    <!-- Additional information associated with subskill, floating values are interpolated between levels, 
+	while string values are acquired at levels -->
+	<SUB_SKILL_ATTRIBUTE Name="SubSkillAttribute">
+		<!-- -->
+		<Identifier Name="identifier" Type="string" Required="TRUE"/>
+		<!-- -->
+		<AttributeFloatValue Name="attributeFloatValue" Type="float" Required="FALSE"/>
+		<!-- -->
+		<AttributeStringValue Name="attributeStringValue" Type="string" Required="FALSE"/>
+	</SUB_SKILL_ATTRIBUTE>
+
+	<!-- Skill changes that occur when leveling -->
+	<SUB_SKILL_ATTRIBUTES_ON_LEVEL Name="SkillAttributesOnLevel">
+		<!-- what is the level -->
+		<Level Name="level" Type="int" Required="TRUE"/>
+		<!-- how strong is a subskill at specific level -->
+		<PowerLevel Name="powerLevel" Type="float" Required="TRUE"/>
+		<MainAtt Name="mainAtt" Type="COUNTED_TAG" Required="FALSE"/>
+		<SecondaryAtt Name="secondaryAtt" Type="COUNTED_TAG" Required="FALSE"/>
+		<!-- This change relates to skills -->
+		<SubskillAttribute Name="subskillAttributes" Type="ArraySUB_SKILL_ATTRIBUTE" Required="FALSE"/>
+	</SUB_SKILL_ATTRIBUTES_ON_LEVEL>
+
+	<!--  -->
+	<SUBSKILL_REFERENCE Name="SubskillReference">
+		<!-- subskill name  -->
+		<Subskill Name="subskill" Type="SUBSKILL" Required="TRUE"/>
+		<!-- is that subskill optional -->
+		<Optional Name="optional" Type="bool" Required="FALSE"/>
+	</SUBSKILL_REFERENCE>
+
+	<!--xxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+
+	<!-- skill components-->
+	<SUBSKILL Name="Subskill">
+		<!-- animation-->
+		<Animation Name="animation" Type="string" Required="TRUE"/>
+		<!-- description -->
+		<DescriptionInfo Name="descriptionInfo" Type="DESCRIPTION_INFO" Required="TRUE"/>
+        <!-- Short Skill Info-->
+        <ShortInfo Name="shortInfo" Type="SUB_SKILL_SHORT_INFO"  Required="FALSE"/>
+		<!-- sound-->
+		<Sound Name="sound" Type="string" Required="TRUE"/>
+		<!-- Delay or acceleration of skill use in relation to selected delay and is modified by character delay -->
+		<Delay Name="delay" Type="float" Required="FALSE"/>
+		<!-- subskill activation conditions -->
+		<Trigger Name="trigger" Type="TRIGGER" Required="TRUE"/>
+		<!-- selected areas of influence for a subskill -->
+		<Targets Name="targets" Type="TARGETS_SELECTOR" Required="FALSE"/>
+		<!-- the function of a given subskill and its range, Includes its influence on tags -->
+		<Activation Name="activation" Type="SCRIPT" Required="TRUE"/>
+		<!-- type of challenge that has to occur for a subskill to work -->
+		<ChallengeType Name="challengeTypes" Type="ArrayE_CHALLENGE_TYPE" Required="FALSE"/>
+		<!-- a subskill that has to be used in order for a given subskill to check its trigger -->
+		<ChildEffect Name="childEffect" Type="SUBSKILL_REFERENCE" Required="FALSE"/>
+		<!-- Subskill changes that occur when levelling -->
+		<SubskillAttributesOnLevel Name="subskillAttributesOnLevels" Type="ArraySUB_SKILL_ATTRIBUTES_ON_LEVEL" Required="FALSE"/>
+	</SUBSKILL>
+
+</PROTOTYPE_SUBSKILL>

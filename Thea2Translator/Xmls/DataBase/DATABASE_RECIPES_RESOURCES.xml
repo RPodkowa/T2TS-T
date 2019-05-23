@@ -1,0 +1,545 @@
+﻿<!-- RESEARCH COSTS:
+1 or more = locked, visible on the advancement graph and available for unlock at the specified cost
+0         = unlocked and visible on the graph (e.g. basic Wood)
+-1        = unlocked and not visible on the graph (e.g. Idol)
+-2        = locked and invisible on the graph, unlocking will require a special script
+-->
+
+
+<RECIPE_RESOURCE>
+	<!-- RES_TIER2 -->
+	<RES_AMOUNT_CHART-TIER2>
+		<ResResult Amount="0.5"/>
+		<ResResult Amount="3.5"/>
+		<ResResult Amount="5.5"/>
+		<ResResult Amount="15.5"/>
+		<ResResult Amount="50.5"/>
+	</RES_AMOUNT_CHART-TIER2>
+	<RES_AMOUNT_CHART-TIER3>
+		<ResResult Amount="0.0"/>
+		<ResResult Amount="2.5"/>
+		<ResResult Amount="4.5"/>
+		<ResResult Amount="7.5"/>
+		<ResResult Amount="20.5"/>
+	</RES_AMOUNT_CHART-TIER3>
+
+	<!-- RES_TIER2 -->
+	<RES_REC-PURE_STONE>
+		<RecipeBase ResChildForbid="FALSE">
+      <DescriptionInfo Name="DES_RES_PURE_STONE" Description="DES_RES_PURE_STONE_DES" IconName="PureStone"/>
+			<MaterialRow>
+				<Material ResourceCount="35">
+					<Resource Value="RES-SANDSTONE"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="35">
+					<Resource Value="RES-SANDSTONE"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+		<Resource Value="RES-PURE_STONE"/>
+		<ResChart Value="RES_AMOUNT_CHART-TIER2"/>
+	</RES_REC-PURE_STONE>
+	<RES_REC-ARMOURED_STONE>
+		<RecipeBase ResChildForbid="FALSE">
+      <DescriptionInfo Name="DES_RES_ARMOURED_STONE" Description="DES_RES_ARMOURED_STONE_DES" IconName="ArmouredStone"/>
+			<MaterialRow>
+				<Material ResourceCount="35">
+					<Resource Value="RES-SANDSTONE"/>
+				</Material>
+				<Material ResourceCount="35">
+					<Resource Value="RES-IRON"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="35">
+					<Resource Value="RES-SANDSTONE"/>
+				</Material>
+				<Material ResourceCount="35">
+					<Resource Value="RES-IRON"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+		<Resource Value="RES-ARMOURED_STONE"/>
+		<ResChart Value="RES_AMOUNT_CHART-TIER2"/>
+	</RES_REC-ARMOURED_STONE>
+	<RES_REC-METAL_COMPOSITE>
+		<RecipeBase ResChildForbid="FALSE">
+      <DescriptionInfo Name="DES_RES_METAL_COMPOSITE" Description="DES_RES_METAL_COMPOSITE_DES" IconName="MetalComposite"/>
+			<MaterialRow>
+				<Material ResourceCount="35">
+					<Resource Value="RES-IRON"/>
+				</Material>
+			</MaterialRow>	
+			<MaterialRow>
+				<Material ResourceCount="35">
+					<Resource Value="RES-IRON"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+		<Resource Value="RES-METAL_COMPOSITE"/>
+		<ResChart Value="RES_AMOUNT_CHART-TIER2"/>
+	</RES_REC-METAL_COMPOSITE>
+	<RES_REC-GOLEM_LEATHER>
+		<RecipeBase ResChildForbid="FALSE">
+      <DescriptionInfo Name="DES_RES_GOLEM_LEATHER" Description="DES_RES_GOLEM_LEATHER_DES" IconName="GolemLeather"/>
+			<MaterialRow>
+				<Material ResourceCount="35">
+					<Resource Value="RES-IRON"/>
+				</Material>
+				<Material ResourceCount="35">
+					<Resource Value="RES-LEATHER"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="35">
+					<Resource Value="RES-IRON"/>
+				</Material>
+				<Material ResourceCount="35">
+					<Resource Value="RES-LEATHER"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+		<Resource Value="RES-GOLEM_LEATHER"/>
+		<ResChart Value="RES_AMOUNT_CHART-TIER2"/>
+	</RES_REC-GOLEM_LEATHER>
+	<RES_REC-COMBAT_LEATHER>
+		<RecipeBase ResChildForbid="FALSE">
+      <DescriptionInfo Name="DES_RES_COMBAT_LEATHER" Description="DES_RES_COMBAT_LEATHER_DES" IconName="CombatLeather"/>
+			<MaterialRow>
+				<Material ResourceCount="35">
+					<Resource Value="RES-LEATHER"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="35">
+					<Resource Value="RES-LEATHER"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+		<Resource Value="RES-COMBAT_LEATHER"/>
+		<ResChart Value="RES_AMOUNT_CHART-TIER2"/>
+	</RES_REC-COMBAT_LEATHER>
+	<RES_REC-SPIKE_LEATHER>
+		<RecipeBase ResChildForbid="FALSE">
+      <DescriptionInfo Name="DES_RES_SPIKE_LEATHER" Description="DES_RES_SPIKE_LEATHER_DES" IconName="SpikeLeather"/>
+			<MaterialRow>
+				<Material ResourceCount="35">
+					<Resource Value="RES-LEATHER"/>
+				</Material>
+				<Material ResourceCount="35">
+					<Resource Value="RES-BONE"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="35">
+					<Resource Value="RES-LEATHER"/>
+				</Material>
+				<Material ResourceCount="35">
+					<Resource Value="RES-BONE"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+		<Resource Value="RES-SPIKE_LEATHER"/>
+		<ResChart Value="RES_AMOUNT_CHART-TIER2"/>
+	</RES_REC-SPIKE_LEATHER>
+	<RES_REC-RUNE_BONE>
+		<RecipeBase ResChildForbid="FALSE">
+      <DescriptionInfo Name="DES_RES_RUNE_BONE" Description="DES_RES_RUNE_BONE_DES" IconName="RuneBone"/>
+			<MaterialRow>
+				<Material ResourceCount="35">
+					<Resource Value="RES-BONE"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="35">
+					<Resource Value="RES-BONE"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+		<Resource Value="RES-RUNE_BONE"/>
+		<ResChart Value="RES_AMOUNT_CHART-TIER2"/>
+	</RES_REC-RUNE_BONE>
+	<RES_REC-ENCHANTED_BONE>
+		<RecipeBase ResChildForbid="FALSE">
+      <DescriptionInfo Name="DES_RES_ENCHANTED_BONE" Description="DES_RES_ENCHANTED_BONE_DES" IconName="EnchantedBone"/>
+			<MaterialRow>
+				<Material ResourceCount="35">
+					<Resource Value="RES-BONE"/>
+				</Material>
+				<Material ResourceCount="35">
+					<Resource Value="RES-AMBER"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="35">
+					<Resource Value="RES-BONE"/>
+				</Material>
+				<Material ResourceCount="35">
+					<Resource Value="RES-AMBER"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+		<Resource Value="RES-ENCHANTED_BONE"/>
+		<ResChart Value="RES_AMOUNT_CHART-TIER2"/>
+	</RES_REC-ENCHANTED_BONE>
+	<RES_REC-GRANDGEM>
+		<RecipeBase ResChildForbid="FALSE">
+      <DescriptionInfo Name="DES_RES_GRANDGEM" Description="DES_RES_GRANDGEM_DES" IconName="Grandgem"/>
+			<MaterialRow>
+				<Material ResourceCount="35">
+					<Resource Value="RES-AMBER"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="35">
+					<Resource Value="RES-AMBER"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+		<Resource Value="RES-GRANDGEM"/>
+		<ResChart Value="RES_AMOUNT_CHART-TIER2"/>
+	</RES_REC-GRANDGEM>
+	<RES_REC-CRYSTAL_WOOD>
+		<RecipeBase ResChildForbid="FALSE">
+      <DescriptionInfo Name="DES_RES_CRYSTAL_WOOD" Description="DES_RES_CRYSTAL_WOOD_DES" IconName="CrystalWood"/>
+			<MaterialRow>
+				<Material ResourceCount="35">
+					<Resource Value="RES-AMBER"/>
+				</Material>
+				<Material ResourceCount="35">
+					<Resource Value="RES-WOOD"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="35">
+					<Resource Value="RES-AMBER"/>
+				</Material>
+				<Material ResourceCount="35">
+					<Resource Value="RES-WOOD"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+		<Resource Value="RES-CRYSTAL_WOOD"/>
+		<ResChart Value="RES_AMOUNT_CHART-TIER2"/>
+	</RES_REC-CRYSTAL_WOOD>
+	<RES_REC-SACRED_WOOD>
+		<RecipeBase ResChildForbid="FALSE">
+      <DescriptionInfo Name="DES_RES_SACRED_WOOD" Description="DES_RES_SACRED_WOOD_DES" IconName="SacredWood"/>
+			<MaterialRow>
+				<Material ResourceCount="35">
+					<Resource Value="RES-WOOD"/>
+				</Material>
+			</MaterialRow>	
+			<MaterialRow>
+				<Material ResourceCount="35">
+					<Resource Value="RES-WOOD"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+		<Resource Value="RES-SACRED_WOOD"/>
+		<ResChart Value="RES_AMOUNT_CHART-TIER2"/>
+	</RES_REC-SACRED_WOOD>
+	<RES_REC-STONE_WOOD>
+		<RecipeBase ResChildForbid="FALSE">
+      <DescriptionInfo Name="DES_RES_STONE_WOOD" Description="DES_RES_STONE_WOOD_DES" IconName="StoneWood"/>
+			<MaterialRow>
+				<Material ResourceCount="35">
+					<Resource Value="RES-SANDSTONE"/>
+				</Material>
+				<Material ResourceCount="35">
+					<Resource Value="RES-WOOD"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="35">
+					<Resource Value="RES-SANDSTONE"/>
+				</Material>
+				<Material ResourceCount="35">
+					<Resource Value="RES-WOOD"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+		<Resource Value="RES-STONE_WOOD"/>
+		<ResChart Value="RES_AMOUNT_CHART-TIER2"/>
+	</RES_REC-STONE_WOOD>
+
+	<!-- RES_TIER3 -->
+	<RES_REC-PRISTINE_MATTER>
+		<RecipeBase ResChildForbid="FALSE">
+      <DescriptionInfo Name="DES_RES_PRISTINE_MATTER" Description="DES_RES_PRISTINE_MATTER_DES" IconName="PristineMatter"/>
+			<MaterialRow>
+				<Material ResourceCount="55">
+					<Resource Value="RES-SANDSTONE"/>
+				</Material>
+				<Material ResourceCount="60">
+					<Resource Value="RES-WOOD"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="55">
+					<Resource Value="RES-SANDSTONE"/>
+				</Material>
+				<Material ResourceCount="60">
+					<Resource Value="RES-WOOD"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+		<Resource Value="RES-PRISTINE_MATTER"/>
+		<ResChart Value="RES_AMOUNT_CHART-TIER3"/>
+	</RES_REC-PRISTINE_MATTER>
+	<RES_REC-MOONSTONE>
+    <RecipeBase ResChildForbid="FALSE">
+      <DescriptionInfo Name="DES_RES_MOONSTONE" Description="DES_RES_MOONSTONE_DES" IconName="Moonstone"/>
+			<MaterialRow>
+				<Material ResourceCount="55">
+					<Resource Value="RES-SANDSTONE"/>
+				</Material>
+				<Material ResourceCount="60">
+					<Resource Value="RES-IRON"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="55">
+					<Resource Value="RES-SANDSTONE"/>
+				</Material>
+				<Material ResourceCount="60">
+					<Resource Value="RES-IRON"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+		<Resource Value="RES-MOONSTONE"/>
+		<ResChart Value="RES_AMOUNT_CHART-TIER3"/>
+	</RES_REC-MOONSTONE>
+	<RES_REC-SECRET_ALLOY>
+		<RecipeBase ResChildForbid="FALSE">
+      <DescriptionInfo Name="DES_RES_SECRET_ALLOY" Description="DES_RES_SECRET_ALLOY_DES" IconName="SecretAlloy"/>
+			<MaterialRow>
+				<Material ResourceCount="60">
+					<Resource Value="RES-SANDSTONE"/>
+				</Material>
+				<Material ResourceCount="55">
+					<Resource Value="RES-IRON"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="60">
+					<Resource Value="RES-SANDSTONE"/>
+				</Material>
+				<Material ResourceCount="55">
+					<Resource Value="RES-IRON"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+		<Resource Value="RES-SECRET_ALLOY"/>
+		<ResChart Value="RES_AMOUNT_CHART-TIER3"/>
+	</RES_REC-SECRET_ALLOY>
+	<RES_REC-IGNEOUS_SPIKE>
+		<RecipeBase ResChildForbid="FALSE">
+      <DescriptionInfo Name="DES_RES_IGNEOUS_SPIKE" Description="DES_RES_IGNEOUS_SPIKE_DES" IconName="IgneousSpike"/>
+			<MaterialRow>
+				<Material ResourceCount="55">
+					<Resource Value="RES-IRON"/>
+				</Material>
+				<Material ResourceCount="60">
+					<Resource Value="RES-LEATHER"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="55">
+					<Resource Value="RES-IRON"/>
+				</Material>
+				<Material ResourceCount="60">
+					<Resource Value="RES-LEATHER"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+		<Resource Value="RES-IGNEOUS_SPIKE"/>
+		<ResChart Value="RES_AMOUNT_CHART-TIER3"/>
+	</RES_REC-IGNEOUS_SPIKE>
+	<RES_REC-ALCHEMY_SKIN>
+		<RecipeBase ResChildForbid="FALSE">
+      <DescriptionInfo Name="DES_RES_ALCHEMY_SKIN" Description="DES_RES_ALCHEMY_SKIN_DES" IconName="AlchemySkin"/>
+			<MaterialRow>
+				<Material ResourceCount="60">
+					<Resource Value="RES-IRON"/>
+				</Material>
+				<Material ResourceCount="55">
+					<Resource Value="RES-LEATHER"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="60">
+					<Resource Value="RES-IRON"/>
+				</Material>
+				<Material ResourceCount="55">
+					<Resource Value="RES-LEATHER"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+		<Resource Value="RES-ALCHEMY_SKIN"/>
+		<ResChart Value="RES_AMOUNT_CHART-TIER3"/>
+	</RES_REC-ALCHEMY_SKIN>
+	<RES_REC-MORPH_MATERIAL>
+		<RecipeBase ResChildForbid="FALSE">
+      <DescriptionInfo Name="DES_RES_MORPH_MATERIAL" Description="DES_RES_MORPH_MATERIAL_DES" IconName="MorphMaterial"/>
+			<MaterialRow>
+				<Material ResourceCount="55">
+					<Resource Value="RES-LEATHER"/>
+				</Material>
+				<Material ResourceCount="60">
+					<Resource Value="RES-BONE"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="55">
+					<Resource Value="RES-LEATHER"/>
+				</Material>
+				<Material ResourceCount="60">
+					<Resource Value="RES-BONE"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+		<Resource Value="RES-MORPH_MATERIAL"/>
+		<ResChart Value="RES_AMOUNT_CHART-TIER3"/>
+	</RES_REC-MORPH_MATERIAL>
+	<RES_REC-WYRM_SILK>
+		<RecipeBase ResChildForbid="FALSE">
+      <DescriptionInfo Name="DES_RES_WYRM_SILK" Description="DES_RES_WYRM_SILK_DES" IconName="WyrmSilk"/>
+			<MaterialRow>
+				<Material ResourceCount="60">
+					<Resource Value="RES-LEATHER"/>
+				</Material>
+				<Material ResourceCount="55">
+					<Resource Value="RES-BONE"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="60">
+					<Resource Value="RES-LEATHER"/>
+				</Material>
+				<Material ResourceCount="55">
+					<Resource Value="RES-BONE"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+		<Resource Value="RES-WYRM_SILK"/>
+		<ResChart Value="RES_AMOUNT_CHART-TIER3"/>
+	</RES_REC-WYRM_SILK>
+	<RES_REC-FORGOTTEN_ESSENCE>
+		<RecipeBase ResChildForbid="FALSE">
+      <DescriptionInfo Name="DES_RES_FORGOTTEN_ESSENCE" Description="DES_RES_FORGOTTEN_ESSENCE_DES" IconName="ForgottenEssence"/>
+			<MaterialRow>
+				<Material ResourceCount="55">
+					<Resource Value="RES-BONE"/>
+				</Material>
+				<Material ResourceCount="60">
+					<Resource Value="RES-AMBER"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="55">
+					<Resource Value="RES-BONE"/>
+				</Material>
+				<Material ResourceCount="60">
+					<Resource Value="RES-AMBER"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+		<Resource Value="RES-FORGOTTEN_ESSENCE"/>
+		<ResChart Value="RES_AMOUNT_CHART-TIER3"/>
+	</RES_REC-FORGOTTEN_ESSENCE>
+	<RES_REC-VOID_SPARKLER>
+		<RecipeBase ResChildForbid="FALSE">
+      <DescriptionInfo Name="DES_RES_VOID_SPARKLER" Description="DES_RES_VOID_SPARKLER_DES" IconName="VoidSparkler"/>
+			<MaterialRow>
+				<Material ResourceCount="60">
+					<Resource Value="RES-BONE"/>
+				</Material>
+				<Material ResourceCount="55">
+					<Resource Value="RES-AMBER"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="60">
+					<Resource Value="RES-BONE"/>
+				</Material>
+				<Material ResourceCount="55">
+					<Resource Value="RES-AMBER"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+		<Resource Value="RES-VOID_SPARKLER"/>
+		<ResChart Value="RES_AMOUNT_CHART-TIER3"/>
+	</RES_REC-VOID_SPARKLER>
+	<RES_REC-EARTH_CORE>
+		<RecipeBase ResChildForbid="FALSE">
+      <DescriptionInfo Name="DES_RES_EARTH_CORE" Description="DES_RES_EARTH_CORE_DES" IconName="EarthCore"/>
+			<MaterialRow>
+				<Material ResourceCount="55">
+					<Resource Value="RES-AMBER"/>
+				</Material>
+				<Material ResourceCount="60">
+					<Resource Value="RES-WOOD"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="55">
+					<Resource Value="RES-AMBER"/>
+				</Material>
+				<Material ResourceCount="60">
+					<Resource Value="RES-WOOD"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+		<Resource Value="RES-EARTH_CORE"/>
+		<ResChart Value="RES_AMOUNT_CHART-TIER3"/>
+	</RES_REC-EARTH_CORE>
+	<RES_REC-LIFE_ROOT>
+		<RecipeBase ResChildForbid="FALSE">
+      <DescriptionInfo Name="DES_RES_LIFE_ROOT" Description="DES_RES_LIFE_ROOT_DES" IconName="LifeRoot"/>
+			<MaterialRow>
+				<Material ResourceCount="60">
+					<Resource Value="RES-AMBER"/>
+				</Material>
+				<Material ResourceCount="55">
+					<Resource Value="RES-WOOD"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="60">
+					<Resource Value="RES-AMBER"/>
+				</Material>
+				<Material ResourceCount="55">
+					<Resource Value="RES-WOOD"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+		<Resource Value="RES-LIFE_ROOT"/>
+		<ResChart Value="RES_AMOUNT_CHART-TIER3"/>
+	</RES_REC-LIFE_ROOT>
+	<RES_REC-GODS_BRANCH>
+		<RecipeBase ResChildForbid="FALSE">
+      <DescriptionInfo Name="DES_RES_GODS_BRANCH" Description="DES_RES_GODS_BRANCH_DES" IconName="GodsBranch"/>
+			<MaterialRow>
+				<Material ResourceCount="60">
+					<Resource Value="RES-SANDSTONE"/>
+				</Material>
+				<Material ResourceCount="55">
+					<Resource Value="RES-WOOD"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="60">
+					<Resource Value="RES-SANDSTONE"/>
+				</Material>
+				<Material ResourceCount="55">
+					<Resource Value="RES-WOOD"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+		<Resource Value="RES-GODS_BRANCH"/>
+		<ResChart Value="RES_AMOUNT_CHART-TIER3"/>
+	</RES_REC-GODS_BRANCH>
+</RECIPE_RESOURCE>

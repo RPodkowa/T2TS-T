@@ -1,0 +1,388 @@
+﻿<SKILLS_CHALLENGES_ITEMS>
+	
+	<!-- ITEMS_SKILLS - ESSENCE_GRAY-->
+	<SKILL-JEWELLERY_SHIELDING Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_JEWELLERY_SHIELDING" Description="DES_SKILL_JEWELLERY_SHIELDING_DES" IconName="SkillJewelleryShielding"/>
+		<BaseEssence Amount="10" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-EXTRA_SHIELDING"/>
+		<SkillGroupFilter Value="Item"/>
+		<SkillGroupFilter Value="Jewellery"/>
+	</SKILL-JEWELLERY_SHIELDING>
+	<SKILL-JEWELLERY_CARRY Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_JEWELLERY_CARRY" Description="DES_SKILL_JEWELLERY_CARRY_DES" IconName="SkillJewelleryCarry"/>
+		<BaseEssence Amount="10" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-ADD_PERSONAL_CARRY"/>
+		<SkillGroupFilter Value="Item"/>
+		<SkillGroupFilter Value="Jewellery"/>
+	</SKILL-JEWELLERY_CARRY>
+	<SKILL-JEWELLERY_FAST_THINKER Rarity="20">
+		<DescriptionInfo Name="DES_SKILL_JEWELLERY_FAST_THINKER" Description="DES_SKILL_JEWELLERY_FAST_THINKER_DES" IconName="SkillJewelleryFastThinker"/>
+		<BaseEssence Amount="14" Tag="TAG-ESSENCE_LEATHER"/>
+		<SkillSubskill Value="SUBSKILL-ADD_WEAK_WITS"/>
+		<SkillSubskill Value="SUBSKILL-ADD_WEAK_INTELLIGENCE"/>
+		<SkillGroupFilter Value="Item"/>
+		<SkillGroupFilter Value="Jewellery"/>
+	</SKILL-JEWELLERY_FAST_THINKER>
+	<SKILL-JEWELLERY_DIVINE_GOAL Rarity="20">
+		<DescriptionInfo Name="DES_SKILL_JEWELLERY_DIVINE_GOAL" Description="DES_SKILL_JEWELLERY_DIVINE_GOAL_DES" IconName="SkillJewelleryDivineGoal"/>
+		<BaseEssence Amount="14" Tag="TAG-ESSENCE_GEM"/>
+		<SkillSubskill Value="SUBSKILL-ADD_WEAK_PERCEPTION"/>
+		<SkillSubskill Value="SUBSKILL-ADD_WEAK_DESTINY"/>
+		<SkillGroupFilter Value="Item"/>
+		<SkillGroupFilter Value="Jewellery"/>
+	</SKILL-JEWELLERY_DIVINE_GOAL>
+	<SKILL-JEWELLERY_MYSTICAL_SIGN Rarity="20">
+		<DescriptionInfo Name="DES_SKILL_JEWELLERY_MYSTICAL_SIGN" Description="DES_SKILL_JEWELLERY_MYSTICAL_SIGN_DES" IconName="SkillJewelleryMysticalSign"/>
+		<BaseEssence Amount="14" Tag="TAG-ESSENCE_WOOD"/>
+		<SkillSubskill Value="SUBSKILL-ADD_WEAK_MYSTICISM"/>
+		<SkillSubskill Value="SUBSKILL-ADD_WEAK_WISDOM"/>
+		<SkillGroupFilter Value="Item"/>
+		<SkillGroupFilter Value="Jewellery"/>
+	</SKILL-JEWELLERY_MYSTICAL_SIGN>
+	<SKILL-JEWELLERY_GATHERING Rarity="20">
+		<DescriptionInfo Name="DES_SKILL_JEWELLERY_GATHERING" Description="DES_SKILL_JEWELLERY_GATHERING_DES" IconName="SkillJewelleryGathering"/>
+		<BaseEssence Amount="14" Tag="TAG-ESSENCE_WOOD"/>
+		<SkillSubskill Value="SUBSKILL-ADD_GATHERING"/>
+		<SkillGroupFilter Value="Item"/>
+		<SkillGroupFilter Value="Jewellery"/>
+	</SKILL-JEWELLERY_GATHERING>
+	<SKILL-JEWELLERY_CRAFTING Rarity="20">
+		<DescriptionInfo Name="DES_SKILL_JEWELLERY_CRAFTING" Description="DES_SKILL_JEWELLERY_CRAFTING_DES" IconName="SkillJewelleryCrafting"/>
+		<BaseEssence Amount="14" Tag="TAG-ESSENCE_STONE"/>
+		<SkillSubskill Value="SUBSKILL-ADD_CRAFTING"/>
+		<SkillGroupFilter Value="Item"/>
+		<SkillGroupFilter Value="Jewellery"/>
+	</SKILL-JEWELLERY_CRAFTING>
+	<SKILL-JEWELLERY_LULLABYE Rarity="20">
+		<DescriptionInfo Name="DES_SKILL_JEWELLERY_LULLABYE" Description="DES_SKILL_JEWELLERY_LULLABYE_DES" IconName="SkillDistractingJewel"/>
+		<BaseEssence Amount="8" Tag="TAG-ESSENCE_LEATHER"/>
+		<SkillSubskill Value="SUBSKILL-DELAY_ENEMY"/>
+		<SkillGroupFilter Value="Item"/>
+		<SkillGroupFilter Value="Jewellery"/>
+		<SkillGroupFilter Value="JewelleryLullabye"/>
+	</SKILL-JEWELLERY_LULLABYE>
+	<SKILL-JEWELLERY_BEAR_SPIRIT Rarity="50">
+		<DescriptionInfo Name="DES_SKILL_JEWELLERY_BEAR_SPIRIT" Description="DES_SKILL_JEWELLERY_BEAR_SPIRIT_DES" IconName="SkillBearSpirit"/>
+		<BaseEssence Amount="16" Tag="TAG-ESSENCE_METAL"/>
+		<SkillSubskill Value="SUBSKILL-CLAW_HIT"/>
+		<SkillGroupFilter Value="Item"/>
+		<SkillGroupFilter Value="Jewellery"/>
+	</SKILL-JEWELLERY_BEAR_SPIRIT>
+	<SKILL-JEWELLERY_SOUL_TEAR Rarity="50">
+		<DescriptionInfo Name="DES_SKILL_JEWELLERY_SOUL_TEAR" Description="DES_SKILL_JEWELLERY_SOUL_TEAR_DES" IconName="SkillSoulTear"/>
+		<BaseEssence Amount="16" Tag="TAG-ESSENCE_BONE"/>
+		<SkillSubskill Value="SUBSKILL-SOUL_TEAR"/>
+		<SkillGroupFilter Value="Item"/>
+		<SkillGroupFilter Value="Jewellery"/>
+	</SKILL-JEWELLERY_SOUL_TEAR>
+	<SKILL-JEWELLERY_HYPNOTISE_MOVE Rarity="50">
+		<DescriptionInfo Name="DES_SKILL_JEWELLERY_HYPNOTISE_MOVE" Description="DES_SKILL_JEWELLERY_HYPNOTISE_MOVE_DES" IconName="SkillHypnosis"/>
+		<BaseEssence Amount="16" Tag="TAG-ESSENCE_GEM"/>
+		<SkillSubskill Value="SUBSKILL-HYPNOTISE_MOVE"/>
+		<SkillGroupFilter Value="Item"/>
+		<SkillGroupFilter Value="Jewellery"/>
+	</SKILL-JEWELLERY_HYPNOTISE_MOVE>
+	<SKILL-JEWELLERY_HURRY_UP Rarity="20">
+		<DescriptionInfo Name="DES_SKILL_JEWELLERY_HURRY_UP" Description="DES_SKILL_JEWELLERY_HURRY_UP_DES" IconName="SkillHurryUp"/>
+		<BaseEssence Amount="10" Tag="TAG-ESSENCE_METAL"/>
+		<SkillSubskill Value="SUBSKILL-HURRY_UP"/>
+		<SkillGroupFilter Value="Item"/>
+		<SkillGroupFilter Value="Jewellery"/>
+	</SKILL-JEWELLERY_HURRY_UP>
+
+  <SKILL-WEAK_ADD_GATHERING_TOOL Rarity="0">
+    <DescriptionInfo Name="DES_SKILL_WEAK_ADD_GATHERING_TOOL" Description="DES_SKILL_WEAK_GATHERING_TOOL_DES" IconName="SkillGatheringTool"/>
+    <BaseEssence Amount="9" Tag="TAG-ESSENCE_GRAY"/>
+    <SkillSubskill Value="SUBSKILL-ADD_GATHERING_KH"/>
+    <SkillGroupFilter Value="Item"/>
+    <SkillGroupFilter Value="GatheringTool"/>
+  </SKILL-WEAK_ADD_GATHERING_TOOL>
+  <SKILL-WEAK_MULTI_GATHERING_TOOL Rarity="0">
+    <DescriptionInfo Name="DES_SKILL_WEAK_MULTI_GATHERING_TOOL" Description="DES_SKILL_WEAK_GATHERING_TOOL_DES" IconName="SkillGatheringTool"/>
+    <BaseEssence Amount="9" Tag="TAG-ESSENCE_GRAY"/>
+    <SkillSubskill Value="SUBSKILL-MP_GATHERING_KH"/>
+    <SkillGroupFilter Value="Item"/>
+    <SkillGroupFilter Value="GatheringTool"/>
+  </SKILL-WEAK_MULTI_GATHERING_TOOL>
+  <SKILL-GATHERING_TOOL Rarity="0">
+    <DescriptionInfo Name="DES_SKILL_GATHERING_TOOL" Description="DES_SKILL_GATHERING_TOOL_DES" IconName="SkillGatheringTool"/>
+    <BaseEssence Amount="16" Tag="TAG-ESSENCE_GRAY"/>
+    <SkillSubskill Value="SUBSKILL-MP_GROUP_CARRY_KH"/>
+    <SkillSubskill Value="SUBSKILL-MP_GATHERING_ADV_KH"/>
+    <SkillSubskill Value="SUBSKILL-ADD_RITUALS"/>
+    <SkillGroupFilter Value="Item"/>
+    <SkillGroupFilter Value="GatheringTool"/>
+  </SKILL-GATHERING_TOOL>
+
+  <SKILL-WEAK_ADD_CRAFTING_TOOL Rarity="0">
+    <DescriptionInfo Name="DES_SKILL_WEAK_ADD_CRAFTING_TOOL" Description="DES_SKILL_WEAK_CRAFTING_TOOL_DES" IconName="SkillCraftingTool"/>
+    <BaseEssence Amount="9" Tag="TAG-ESSENCE_GRAY"/>
+    <SkillSubskill Value="SUBSKILL-ADD_CRAFTING_KH"/>
+    <SkillGroupFilter Value="Item"/>
+    <SkillGroupFilter Value="CraftingTool"/>
+  </SKILL-WEAK_ADD_CRAFTING_TOOL>
+	<SKILL-WEAK_MULTI_CRAFTING_TOOL Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_WEAK_MULTI_CRAFTING_TOOL" Description="DES_SKILL_WEAK_CRAFTING_TOOL_DES" IconName="SkillCraftingTool"/>
+		<BaseEssence Amount="9" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-MP_CRAFTING_KH"/>
+		<SkillGroupFilter Value="Item"/>
+		<SkillGroupFilter Value="CraftingTool"/>
+	</SKILL-WEAK_MULTI_CRAFTING_TOOL>
+	<SKILL-CRAFTING_TOOL Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_CRAFTING_TOOL" Description="DES_SKILL_CRAFTING_TOOL_DES" IconName="SkillCraftingTool"/>
+		<BaseEssence Amount="16" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-MHP_REGENERATION_KH"/>
+		<SkillSubskill Value="SUBSKILL-MP_CRAFTING_ADV_KH"/>
+		<SkillSubskill Value="SUBSKILL-ADD_RESEARCH"/>
+		<SkillGroupFilter Value="Item"/>
+		<SkillGroupFilter Value="CraftingTool"/>
+	</SKILL-CRAFTING_TOOL>
+
+	<SKILL-COSMIC_RING Rarity="100">
+		<DescriptionInfo Name="DES_SKILL_COSMIC_SEED" Description="DES_SKILL_COSMIC_SEED_DES" IconName="SkillCosmicRing"/>
+		<BaseEssence Amount="17" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillGroupFilter Value="CosmicSeed"/>
+		<SkillSubskill Value="SUBSKILL-ADD_SHIELDING_HEAVY"/>
+		<SkillSubskill Value="SUBSKILL-ADD_STRONG_MAX_HEALTH"/>
+		<SkillSubskill Value="SUBSKILL-ADD_MAIN_ATT"/>
+		<SkillSubskill Value="SUBSKILL-SUMMON_DEMON"/>
+	</SKILL-COSMIC_RING>
+
+	
+	<!-- PET SKILL -->
+	<SKILL-PET_HORSE Rarity="1">
+		<DescriptionInfo Name="DES_SKILL_PET_HORSE" Description="DES_SKILL_PET_HORSE_DES" IconName="SkillHorse"/>
+		<BaseEssence Amount="6" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-ADD_MOVEMENT"/>
+		<SkillSubskill Value="SUBSKILL-ADD_GROUP_CARRY"/>
+		<SkillGroupFilter Value="Pet"/>
+		<SkillGroupFilter Value="PetHorse"/>
+	</SKILL-PET_HORSE>
+	<SKILL-PET_HORSE_ADV Rarity="51">
+		<DescriptionInfo Name="DES_SKILL_PET_HORSE" Description="DES_SKILL_PET_HORSE_DES" IconName="SkillHorse"/>
+		<BaseEssence Amount="8" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-ADD_MOVEMENT"/>
+		<SkillSubskill Value="SUBSKILL-ADD_GROUP_CARRY"/>
+		<SkillGroupFilter Value="Pet"/>
+		<SkillGroupFilter Value="PetHorse"/>
+	</SKILL-PET_HORSE_ADV>
+	<SKILL-PET_GOAT Rarity="1">
+		<DescriptionInfo Name="DES_SKILL_PET_GOAT" Description="DES_SKILL_PET_GOAT_DES" IconName="SkillGoat"/>
+		<BaseEssence Amount="6" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-ADD_GROUP_CARRY"/>
+		<SkillGroupFilter Value="Pet"/>
+		<SkillGroupFilter Value="PetMule"/>
+	</SKILL-PET_GOAT>
+	<SKILL-PET_GOAT1_ADV Rarity="51">
+		<DescriptionInfo Name="DES_SKILL_PET_GOAT" Description="DES_SKILL_PET_GOAT_DES" IconName="SkillGoat"/>
+		<BaseEssence Amount="8" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-ADD_GROUP_CARRY"/>
+		<SkillGroupFilter Value="Pet"/>
+		<SkillGroupFilter Value="PetMule"/>
+	</SKILL-PET_GOAT1_ADV>
+	<SKILL-PET_CAT Rarity="1">
+		<DescriptionInfo Name="DES_SKILL_PET_CAT" Description="DES_SKILL_PET_CAT_DES" IconName="SkillCat"/>
+		<BaseEssence Amount="6" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-ADD_MYSTICISM"/>
+		<SkillSubskill Value="SUBSKILL-ADD_WEAK_MAX_HEALTH_M"/>
+		<SkillGroupFilter Value="Pet"/>
+		<SkillGroupFilter Value="PetCat"/>
+	</SKILL-PET_CAT>
+	<SKILL-PET_CAT1_ADV Rarity="51">
+		<DescriptionInfo Name="DES_SKILL_PET_CAT" Description="DES_SKILL_PET_CAT_DES" IconName="SkillCat"/>
+		<BaseEssence Amount="8" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-ADD_MYSTICISM"/>
+		<SkillSubskill Value="SUBSKILL-ADD_WEAK_MAX_HEALTH_M"/>
+		<SkillGroupFilter Value="Pet"/>
+		<SkillGroupFilter Value="PetCat"/>
+	</SKILL-PET_CAT1_ADV>
+	<SKILL-PET_DOG Rarity="1">
+		<DescriptionInfo Name="DES_SKILL_PET_DOG" Description="DES_SKILL_PET_DOG_DES" IconName="SkillDog"/>
+		<BaseEssence Amount="6" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-ADD_PERCEPTION"/>
+		<SkillSubskill Value="SUBSKILL-ADD_WEAK_MAX_HEALTH_M"/>
+		<SkillGroupFilter Value="Pet"/>
+		<SkillGroupFilter Value="PetDog"/>
+	</SKILL-PET_DOG>
+	<SKILL-PET_DOG_ADV Rarity="51">
+		<DescriptionInfo Name="DES_SKILL_PET_DOG" Description="DES_SKILL_PET_DOG_DES" IconName="SkillDog"/>
+		<BaseEssence Amount="8" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-ADD_PERCEPTION"/>
+		<SkillSubskill Value="SUBSKILL-ADD_WEAK_MAX_HEALTH_M"/>
+		<SkillGroupFilter Value="Pet"/>
+		<SkillGroupFilter Value="PetDog"/>
+	</SKILL-PET_DOG_ADV>
+	<SKILL-PET_WOLF Rarity="1">
+		<DescriptionInfo Name="DES_SKILL_PET_WOLF" Description="DES_SKILL_PET_SUMMON_DES" IconName="SkillWolf"/>
+		<BaseEssence Amount="6" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-ADD_WEAK_PERCEPTION"/>
+		<SkillSubskill Value="SUBSKILL-SUMMON_PET_WOLF"/>
+		<SkillGroupFilter Value="Pet"/>
+		<SkillGroupFilter Value="PetWolf"/>
+	</SKILL-PET_WOLF>
+	<SKILL-PET_WOLF_ADV Rarity="51">
+		<DescriptionInfo Name="DES_SKILL_PET_WOLF" Description="DES_SKILL_PET_SUMMON_DES" IconName="SkillWolf"/>
+		<BaseEssence Amount="8" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-ADD_WEAK_PERCEPTION"/>
+		<SkillSubskill Value="SUBSKILL-SUMMON_PET_WOLF"/>
+		<SkillGroupFilter Value="Pet"/>
+		<SkillGroupFilter Value="PetWolf"/>
+	</SKILL-PET_WOLF_ADV>
+	<SKILL-PET_BEAR Rarity="1">
+		<DescriptionInfo Name="DES_SKILL_PET_BEAR" Description="DES_SKILL_PET_SUMMON_DES" IconName="SkillBear"/>
+		<BaseEssence Amount="6" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-SUMMON_PET_BEAR"/>
+		<SkillGroupFilter Value="Pet"/>
+		<SkillGroupFilter Value="PetBear"/>
+	</SKILL-PET_BEAR>
+	<SKILL-PET_BEAR_ADV Rarity="51">
+		<DescriptionInfo Name="DES_SKILL_PET_BEAR" Description="DES_SKILL_PET_SUMMON_DES" IconName="SkillBear"/>
+		<BaseEssence Amount="8" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-SUMMON_PET_BEAR"/>
+		<SkillGroupFilter Value="Pet"/>
+		<SkillGroupFilter Value="PetBear"/>
+	</SKILL-PET_BEAR_ADV>
+	<SKILL-PET_BOAR Rarity="1">
+		<DescriptionInfo Name="DES_SKILL_PET_BOAR" Description="DES_SKILL_PET_BOAR_DES" IconName="SkillBoar"/>
+		<BaseEssence Amount="6" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-ADD_MOVEMENT"/>
+		<SkillSubskill Value="SUBSKILL-SUMMON_PET_BOAR"/>
+		<SkillGroupFilter Value="Pet"/>
+		<SkillGroupFilter Value="PetBoar"/>
+	</SKILL-PET_BOAR>
+	<SKILL-PET_BOAR_ADV Rarity="51">
+		<DescriptionInfo Name="DES_SKILL_PET_BOAR" Description="DES_SKILL_PET_BOAR_DES" IconName="SkillBoar"/>
+		<BaseEssence Amount="8" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-ADD_MOVEMENT"/>
+		<SkillSubskill Value="SUBSKILL-SUMMON_PET_BOAR"/>
+		<SkillGroupFilter Value="Pet"/>
+		<SkillGroupFilter Value="PetBoar"/>
+	</SKILL-PET_BOAR_ADV>
+	<SKILL-PET_SKSHACK Rarity="1">
+		<DescriptionInfo Name="DES_SKILL_PET_SKSHACK" Description="DES_SKILL_PET_SKSHACK_DES" IconName="SkillSkshack"/>
+		<BaseEssence Amount="6" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-ADD_GATHERING"/>
+		<SkillGroupFilter Value="Pet"/>
+		<SkillGroupFilter Value="PetSkshack"/>
+	</SKILL-PET_SKSHACK>
+	<SKILL-PET_SKSHACK_ADV Rarity="51">
+		<DescriptionInfo Name="DES_SKILL_PET_SKSHACK" Description="DES_SKILL_PET_SKSHACK_DES" IconName="SkillSkshack"/>
+		<BaseEssence Amount="8" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-ADD_GATHERING"/>
+		<SkillGroupFilter Value="Pet"/>
+		<SkillGroupFilter Value="PetSkshack"/>
+	</SKILL-PET_SKSHACK_ADV>
+	<SKILL-PET_CMUCH Rarity="1">
+		<DescriptionInfo Name="DES_SKILL_PET_CMUCH" Description="DES_SKILL_PET_CMUCH_DES" IconName="SkillCmuch"/>
+		<BaseEssence Amount="6" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-ADD_WEAK_MAX_HEALTH_P"/>
+		<SkillGroupFilter Value="Pet"/>
+		<SkillGroupFilter Value="PetCmuch"/>
+	</SKILL-PET_CMUCH>
+	<SKILL-PET_CMUCH_ADV Rarity="51">
+		<DescriptionInfo Name="DES_SKILL_PET_CMUCH" Description="DES_SKILL_PET_CMUCH_DES" IconName="SkillCmuch"/>
+		<BaseEssence Amount="8" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-ADD_WEAK_MAX_HEALTH_P"/>
+		<SkillGroupFilter Value="Pet"/>
+		<SkillGroupFilter Value="PetCmuch"/>
+	</SKILL-PET_CMUCH_ADV>
+	<SKILL-PET_WRAITH Rarity="1">
+		<DescriptionInfo Name="DES_SKILL_PET_WRAITH" Description="DES_SKILL_PET_SUMMON_DES" IconName="SkillWraith"/>
+		<BaseEssence Amount="10" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-SUMMON_PET_WRAITH"/>
+		<SkillGroupFilter Value="Pet"/>
+		<SkillGroupFilter Value="PetWraith"/>
+	</SKILL-PET_WRAITH>
+	<SKILL-PET_WRAITH_ADV Rarity="51">
+		<DescriptionInfo Name="DES_SKILL_PET_WRAITH" Description="DES_SKILL_PET_SUMMON_DES" IconName="SkillWraith"/>
+		<BaseEssence Amount="14" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-SUMMON_PET_WRAITH"/>
+		<SkillGroupFilter Value="Pet"/>
+		<SkillGroupFilter Value="PetWraith"/>
+	</SKILL-PET_WRAITH_ADV>
+	<SKILL-PET_GHOST Rarity="1">
+		<DescriptionInfo Name="DES_SKILL_PET_GHOST" Description="DES_SKILL_PET_SUMMON_DES" IconName="SkillGhost"/>
+		<BaseEssence Amount="10" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-ADD_WEAK_MYSTICISM"/>
+		<SkillSubskill Value="SUBSKILL-ADD_WEAK_MAX_HEALTH_S"/>
+		<SkillSubskill Value="SUBSKILL-SUMMON_PET_GHOST"/>
+		<SkillGroupFilter Value="Pet"/>
+		<SkillGroupFilter Value="PetGhost"/>
+	</SKILL-PET_GHOST>
+	<SKILL-PET_GHOST_ADV Rarity="51">
+		<DescriptionInfo Name="DES_SKILL_PET_GHOST" Description="DES_SKILL_PET_SUMMON_DES" IconName="SkillGhost"/>
+		<BaseEssence Amount="14" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-ADD_WEAK_MYSTICISM"/>
+		<SkillSubskill Value="SUBSKILL-ADD_WEAK_MAX_HEALTH_S"/>
+		<SkillSubskill Value="SUBSKILL-SUMMON_PET_GHOST"/>
+		<SkillGroupFilter Value="Pet"/>
+		<SkillGroupFilter Value="PetGhost"/>
+	</SKILL-PET_GHOST_ADV>
+	<SKILL-PET_CROW Rarity="1">
+		<DescriptionInfo Name="DES_SKILL_PET_CROW" Description="DES_SKILL_PET_CROW_DES" IconName="SkillCrow"/>
+		<BaseEssence Amount="6" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-ADD_PERCEPTION"/>
+		<SkillSubskill Value="SUBSKILL-ADD_RITUALS"/>
+		<SkillGroupFilter Value="Pet"/>
+		<SkillGroupFilter Value="PetCrow"/>
+	</SKILL-PET_CROW>
+	<SKILL-PET_CROW_ADV Rarity="51">
+		<DescriptionInfo Name="DES_SKILL_PET_CROW" Description="DES_SKILL_PET_CROW_DES" IconName="SkillCrow"/>
+		<BaseEssence Amount="8" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-CONST_WEAK_ADD_RANGE_OF_SIGHT"/>
+		<SkillGroupFilter Value="Pet"/>
+		<SkillGroupFilter Value="PetCrow"/>
+	</SKILL-PET_CROW_ADV>
+	<SKILL-PET_SPIDER_SPITTING Rarity="1">
+		<DescriptionInfo Name="DES_SKILL_PET_SPIDER_SPITTING" Description="DES_SKILL_PET_SUMMON_DES" IconName="SkillSpider"/>
+		<BaseEssence Amount="6" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-SUMMON_PET_SPIDER_SPITTING"/>
+		<SkillGroupFilter Value="Pet"/>
+		<SkillGroupFilter Value="PetSpider"/>
+	</SKILL-PET_SPIDER_SPITTING>
+	<SKILL-PET_SPIDER_SPITTING_ADV Rarity="51">
+		<DescriptionInfo Name="DES_SKILL_PET_SPIDER_SPITTING" Description="DES_SKILL_PET_SUMMON_DES" IconName="SkillSpider"/>
+		<BaseEssence Amount="8" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-SUMMON_PET_SPIDER_SPITTING"/>
+		<SkillGroupFilter Value="Pet"/>
+		<SkillGroupFilter Value="PetSpider"/>
+	</SKILL-PET_SPIDER_SPITTING_ADV>
+	<SKILL-PET_GOAT_BUNNY Rarity="1">
+		<DescriptionInfo Name="DES_SKILL_PET_GOAT_BUNNY" Description="DES_SKILL_PET_GOAT_BUNNY_DES" IconName="SkillGoat"/>
+		<BaseEssence Amount="6" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-ADD_GROUP_CARRY"/>
+		<SkillSubskill Value="SUBSKILL-CONST_WEAK_LOWER_DEATH_CHANCE"/>
+		<SkillGroupFilter Value="PetGoatBunny"/>
+	</SKILL-PET_GOAT_BUNNY>
+	<SKILL-PET_BUNNY Rarity="1">
+		<DescriptionInfo Name="DES_SKILL_PET_BUNNY" Description="DES_SKILL_PET_BUNNY_DES" IconName="SkillBunny"/>
+		<BaseEssence Amount="6" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-ADD_MAX_HEALTH_S"/>
+		<SkillSubskill Value="SUBSKILL-ADD_WITS"/>
+		<SkillSubskill Value="SUBSKILL-MULTI_ADD_GATHERING"/>
+		<SkillGroupFilter Value="PetBunny"/>
+	</SKILL-PET_BUNNY>
+	<SKILL-PET_TURTLE Rarity="1">
+		<DescriptionInfo Name="DES_SKILL_PET_TURTLE" Description="DES_SKILL_PET_TURTLE_DES" IconName="SkillIronFrog"/>
+		<BaseEssence Amount="6" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-ADD_INTELLIGENCE"/>
+		<SkillGroupFilter Value="Pet"/>
+		<SkillGroupFilter Value="PetTurtle"/>
+	</SKILL-PET_TURTLE>
+	<SKILL-PET_CHICKEN Rarity="1">
+		<DescriptionInfo Name="DES_SKILL_PET_CHICKEN" Description="DES_SKILL_PET_CHICKEN_DES" IconName="SkillCock"/>
+		<BaseEssence Amount="6" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-ADD_WEAK_WISDOM"/>
+		<SkillSubskill Value="SUBSKILL-ADD_WEAK_RITUALS"/>
+		<SkillGroupFilter Value="Pet"/>
+		<SkillGroupFilter Value="PetChicken"/>
+	</SKILL-PET_CHICKEN>
+	
+	
+	<SKILL-TUT_FAKE_WEAPON Rarity="1">
+		<DescriptionInfo Name="DES_PLACEHOLDER" Description="DES_PLACEHOLDER_DES" IconName="Placeholder"/>
+		<BaseEssence Amount="7" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-TUT_FAKE_WEAPON"/>
+		<SkillGroupFilter Value="FakeWeapon"/>
+	</SKILL-TUT_FAKE_WEAPON>
+</SKILLS_CHALLENGES_ITEMS>

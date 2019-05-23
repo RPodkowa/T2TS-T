@@ -1,0 +1,13 @@
+﻿<PROTOTYPE_ACHIEVEMENT>
+	
+	<!-- ways to gain an achievement -->
+	<ACHIEVEMENT Name="Achievement" Abbreviation="ACHI">
+		<!-- achievement description  -->
+		<DescriptionInfo Name="descriptionInfo" Type="DESCRIPTION_INFO" Required="TRUE"/>
+		<!-- tags checked during the game that unlock achievements-->
+		<TagCorrectnes Name="tagsCorrectness" Type="ArrayCONFORMANCE_TAG_COUNT" Required="TRUE"/>
+		<!-- trait that is unlocked after getting that achi -->
+		<RewardTraitCard Name="rewardTraitCard" Type="ArrayTRAIT_CARD" Required="TRUE"/>
+	</ACHIEVEMENT>
+	
+</PROTOTYPE_ACHIEVEMENT>

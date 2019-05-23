@@ -1,0 +1,167 @@
+<OBI>
+	<SKILL-RACE_TROLL_OBI Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_RACE_TROLL" Description="DES_SKILL_RACE_TROLL_DES" IconName="SkillRaceTroll"/>
+		<BaseEssence Amount="10" Tag="TAG-ESSENCE_GRAY"/>
+		<!--<SkillSubskill Value="SUBSKILL-REGENERATION_P_OBI"/>
+		<SkillSubskill Value="SUBSKILL-ARRIVAL_TRAP_FIRST2_OBI"/>
+		<SkillSubskill Value="SUBSKILL-EXPLODING_DEATH_OBI"/>-->
+		<SkillSubskill Value="SUBSKILL-SELF_PROTECTION_M_S"/>
+		<SkillGroupFilter Value="Obi"/>
+	</SKILL-RACE_TROLL_OBI>
+	
+	<SKILL_PACK-TEST_PACK_OBI>
+        <RarityRange MinimumCount="0" MaximumCount="100"/>
+    <!--<GuarantedSkill Value="SKILL-DEFAULT_SHIELD_OBI"/>
+		<GuarantedSkill Value="SKILL-DEFAULT_POLEARM_OBI"/>
+		<GuarantedSkill Value="SKILL-LIGHTNING_OBI"/>
+		<GuarantedSkill Value="SKILL-SUMMON_KRAKEN_TENTACLE"/>-->
+		<GuarantedSkill Value="SKILL-RACE_TROLL_OBI"/>
+		<SkillGroupFilters>
+			<SkillGroupSingleFilter Name="None" Requirement="NecessaryType"/>
+		</SkillGroupFilters>
+	</SKILL_PACK-TEST_PACK_OBI>
+	
+	<SUBRACE-HUM_CHILD_OBI>
+		<DescriptionInfo Name="DES_SUBRACE_HUM_CHILD" Description="DES_SUBRACE_CHILD_DES" IconName="ClassChild"/>
+		<Race Value="RACE-HUMAN"/>
+		<SecondSubraceAttributes Amount="1" Tag="TAG-HUMANOID"/>
+		<MainSubraceAttributes Amount="5" Tag="TAG-WITS"/>
+		<MainSubraceAttributes Amount="10" Tag="TAG-STRENGTH"/>
+		<MainSubraceAttributes Amount="10" Tag="TAG-PERCEPTION"/>
+		<MainSubraceAttributes Amount="5" Tag="TAG-INTELLIGENCE"/>
+		<MainSubraceAttributes Amount="10" Tag="TAG-WISDOM"/>
+		<MainSubraceAttributes Amount="10" Tag="TAG-MYSTICISM"/>
+		<MainSubraceAttributes Amount="10" Tag="TAG-DESTINY"/>
+		<SecondSubraceAttributes Amount="3" Tag="TAG-MAX_HEALTH_PHYSICAL"/>
+		<SecondSubraceAttributes Amount="1" Tag="TAG-MAX_HEALTH_MENTAL"/>
+		<SecondSubraceAttributes Amount="1" Tag="TAG-MAX_HEALTH_SPIRIT"/>
+		<SecondSubraceAttributes Amount="4" Tag="TAG-MOVEMENT_RANGE"/>
+		<SecondSubraceAttributes Amount="1" Tag="TAG-RANGE_OF_SIGHT_DAY"/>
+		<SecondSubraceAttributes Amount="0" Tag="TAG-RANGE_OF_SIGHT_NIGHT"/>
+		<CommonSubraceAttributes Chance="50">
+			<CountedTag Amount="1" Tag="TAG-GENDER_FEMALE"/>
+		</CommonSubraceAttributes>
+		<BlockedItemSlot Value="TAG-BLOCKED_LEFT_HAND"/>
+		<BlockedItemSlot Value="TAG-BLOCKED_ARMOUR"/>
+		<BlockedItemSlot Value="TAG-BLOCKED_TOOL"/>
+		<BlockedItemSlot Value="TAG-BLOCKED_SPECIAL_ITEM"/>
+		<NaturalSkills Value="SKILL_PACK-HUM_CHILD"/>
+		<NaturalSkills Value="SKILL_PACK-TEST_PACK_OBI"/>
+        <GraphicMale Value="HumanChildMale"/>
+        <GraphicFemale Value="HumanChildFemale"/>
+	</SUBRACE-HUM_CHILD_OBI>
+	
+	<SUBRACE-ELF_GUARDIAN_OBI>
+		<DescriptionInfo Name="DES_SUBRACE_ELF_GUARDIAN" Description="DES_SUBRACE_ELF_GUARDIAN_DES" IconName="ClassWarrior"/>
+		<Race Value="RACE-ELF"/>
+		<SecondSubraceAttributes Amount="1" Tag="TAG-HUMANOID"/>
+		<SecondSubraceAttributes Amount="1" Tag="TAG-WARRIOR"/>
+		<SecondSubraceAttributes Amount="1" Tag="TAG-WOODFOLK"/>
+        <MainSubraceAttributes Amount="9" Tag="TAG-WITS"/>
+        <MainSubraceAttributes Amount="9" Tag="TAG-STRENGTH"/>
+        <MainSubraceAttributes Amount="8" Tag="TAG-PERCEPTION"/>
+		<MainSubraceAttributes Amount="5" Tag="TAG-INTELLIGENCE"/>
+		<MainSubraceAttributes Amount="5" Tag="TAG-WISDOM"/>
+		<MainSubraceAttributes Amount="10" Tag="TAG-MYSTICISM"/>
+		<MainSubraceAttributes Amount="8" Tag="TAG-DESTINY"/>
+        <SecondSubraceAttributes Amount="30" Tag="TAG-MAX_HEALTH_PHYSICAL"/>
+        <SecondSubraceAttributes Amount="20" Tag="TAG-MAX_HEALTH_MENTAL"/>
+        <SecondSubraceAttributes Amount="20" Tag="TAG-MAX_HEALTH_SPIRIT"/>
+        <SecondSubraceAttributes Amount="5" Tag="TAG-MOVEMENT_RANGE"/>
+        <SecondSubraceAttributes Amount="2" Tag="TAG-RANGE_OF_SIGHT_DAY"/>
+        <SecondSubraceAttributes Amount="2" Tag="TAG-RANGE_OF_SIGHT_NIGHT"/>
+        <SecondSubraceAttributes Amount="150" Tag="TAG-PERSONAL_CARRY_LIMIT"/>
+		<CommonSubraceAttributes Chance="50">
+			<CountedTag Amount="1" Tag="TAG-GENDER_FEMALE"/>
+		</CommonSubraceAttributes>
+		<CommonSubraceAttributes Chance="3">
+			<CountedTag Amount="1" Tag="TAG-CREEPY"/>
+		</CommonSubraceAttributes>
+		<CommonSubraceAttributes Chance="70">
+			<CountedTag Amount="1" Tag="TAG-ATTRACTIVE"/>
+		</CommonSubraceAttributes>
+		<CommonSubraceAttributes Chance="30">
+			<CountedTag Amount="1" Tag="TAG-BEAUTIFUL"/>
+		</CommonSubraceAttributes>
+        <CommonSubraceAttributes Chance="60">
+            <CountedTag Amount="5" Tag="TAG-MAX_HEALTH_PHYSICAL"/>
+        </CommonSubraceAttributes>
+        <CommonSubraceAttributes Chance="40">
+            <CountedTag Amount="5" Tag="TAG-MAX_HEALTH_PHYSICAL"/>
+        </CommonSubraceAttributes>
+        <CommonSubraceAttributes Chance="20">
+            <CountedTag Amount="3" Tag="TAG-MAX_HEALTH_PHYSICAL"/>
+        </CommonSubraceAttributes>
+        <CommonSubraceAttributes Chance="50">
+            <CountedTag Amount="5" Tag="TAG-MAX_HEALTH_SPIRIT"/>
+        </CommonSubraceAttributes>
+        <CommonSubraceAttributes Chance="30">
+            <CountedTag Amount="5" Tag="TAG-MAX_HEALTH_SPIRIT"/>
+        </CommonSubraceAttributes>
+		<CommonSubraceAttributes Chance="60">
+			<CountedTag Amount="3" Tag="TAG-PERCEPTION"/>
+		</CommonSubraceAttributes>
+		<CommonSubraceAttributes Chance="60">
+			<CountedTag Amount="3" Tag="TAG-WITS"/>
+		</CommonSubraceAttributes>
+		<CommonSubraceAttributes Chance="60">
+			<CountedTag Amount="3" Tag="TAG-STRENGTH"/>
+		</CommonSubraceAttributes>
+		<CommonSubraceAttributes Chance="40">
+			<CountedTag Amount="3" Tag="TAG-DESTINY"/>
+		</CommonSubraceAttributes>
+		<BlockedItemSlot Value="TAG-BLOCKED_COMPANION"/>
+		<BlockedItemSlot Value="TAG-BLOCKED_TOOL"/>
+		<NaturalSkills Value="SKILL_PACK-RACE_ELVES"/>
+		<NaturalSkills Value="SKILL_PACK-TEST_PACK_OBI"/>
+		<ClassSkills Value="SKILL_PACK-WARRIOR"/>
+		<AdvancementSkills Value="SKILL_PACK-WARRIOR"/>
+		<GraphicMale Value="ElfWarriorM1"/>
+		<GraphicMale Value="ElfWarriorM2"/>
+		<GraphicMale Value="ElfWarriorM3"/>
+		<GraphicFemale Value="ElfWarriorF1"/>
+		<GraphicFemale Value="ElfWarriorF2"/>
+		<BodyCargo Chance="80" ItemCargo="ITEM_CARGO-BASIC_FEW_EQUIPMENT"/>
+		<DefaultCargo Chance="100" ItemCargo="ITEM_CARGO-BASIC_ONE_WEAPON"/>
+		<DefaultCargo Chance="100" ItemCargo="ITEM_CARGO-BASIC_ONE_1H_MELEE_WEAPON"/>
+		<DefaultCargo Chance="100" ItemCargo="ITEM_CARGO-BASIC_ONE_2H_MELEE_WEAPON"/>
+		<DefaultCargo Chance="100" ItemCargo="ITEM_CARGO-BASIC_ONE_RANGE_WEAPON"/>
+		<DefaultCargo Chance="100" ItemCargo="ITEM_CARGO-BASIC_ONE_ARMOUR"/>
+		<DefaultCargo Chance="100" ItemCargo="ITEM_CARGO-BASIC_ONE_SHIELD"/>
+		<DefaultCargo Chance="100" ItemCargo="ITEM_CARGO-BASIC_ONE_JEWELLERY"/>
+		<DefaultCargo Chance="100" ItemCargo="ITEM_CARGO-BASIC_ONE_TOOL"/>
+		<DefaultCargo Chance="100" ItemCargo="ITEM_CARGO-WEAK_ONE_RANDOM_DOMESTIC_PET"/>
+	</SUBRACE-ELF_GUARDIAN_OBI>
+	
+	<GROUP-OBI_PARTY>
+		<ChallengeLvl Physical="1" Mental="1" Spirit="1"/>
+		<DescriptionInfo Name="DES_PLACEHOLDER" Description="DES_PLACEHOLDER_DES"  IconName="IconPlaceholder"/>
+		<EventsLoyalty Value="EVENTC-ARMY_SLAVYAN"/>
+		<EventsRoaming Value="EVENTC-ARMY_SLAVYAN"/>
+		<PreferredChallenge Value="TypePhysical"/>
+		<Member>
+			<MemberSubrace Value="SUBRACE-HUM_WARRIOR"/>
+			<MemberCount MinimumCount="4" MaximumCount="4"/>
+		</Member>
+		<!--<Member>
+			<MemberSubrace Value="SUBRACE-HUM_CHILD_OBI"/>
+			<MemberCount MinimumCount="1" MaximumCount="1"/>
+		</Member>-->
+		<Member>
+			<MemberSubrace Value="SUBRACE-ELF_GUARDIAN_OBI"/>
+			<MemberCount MinimumCount="1" MaximumCount="1"/>
+		</Member>
+	</GROUP-OBI_PARTY>
+	
+	<GROUP-RATS_OBI>
+		<ChallengeLvl Physical="1" Mental="1" Spirit="1"/>
+		<DescriptionInfo Name="DES_PLACEHOLDER" Description="DES_PLACEHOLDER_DES"  IconName="IconPlaceholder"/>
+		<EventsLoyalty Value="EVENTC-ARMY_SLAVYAN"/>
+		<EventsRoaming Value="EVENTC-ARMY_SLAVYAN"/>
+		<PreferredChallenge Value="TypePhysical"/>
+		<Member>
+			<MemberSubrace Value="SUBRACE-TEST_RAT"/>
+			<MemberCount MinimumCount="3" MaximumCount="3"/>
+		</Member>
+	</GROUP-RATS_OBI>
+</OBI>

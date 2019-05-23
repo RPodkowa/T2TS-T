@@ -1,0 +1,29 @@
+﻿<PROTOTYPE_SKILL_PACK>
+
+	<!-- information about skill category and the range it needs to fulfil -->
+	<SKILL_GROUP_SINGLE_FILTER Name="SkillGroupSingleFilter">
+		<!--  -->
+		<Name Name="name" Type="string" Required="TRUE"/>
+		<!-- is the given element necessary/optional/forbidden -->
+		<Requirement Name="requirement" Type="E_SCOPE_TYPES" Required="TRUE"/>
+	</SKILL_GROUP_SINGLE_FILTER>
+
+	<SKILL_GROUP_FILTERS Name="SkillGroupFilters">
+		<!--  -->
+		<SkillGroupSingleFilter Name="skillGroupSingleFilter" Type="ArraySKILL_GROUP_SINGLE_FILTER" Required="TRUE"/>    
+	</SKILL_GROUP_FILTERS>
+
+	<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+	
+	<!-- skill pack containing skills that match a given group filters and rarity range -->
+	<SKILL_PACK Name="SkillPack">	
+		<!-- the range of rarity within which a  skill has to fit -->
+		<RarityRange Name="rarityRange" Type="FLOATING_RANGE" Required="TRUE"/>
+		<!-- Skill that is add to skill tag automatically -->
+		<GuarantedSkill Name="guarantedSkills" Type="ArraySKILL" Required="FALSE"/>
+		<!-- prerequisites for skills to match a given skill pack --> 
+		<SkillGroupFilters Name="skillGroupFilters" Type="ArraySKILL_GROUP_FILTERS" Required="FALSE"/>
+	</SKILL_PACK>
+
+
+</PROTOTYPE_SKILL_PACK>

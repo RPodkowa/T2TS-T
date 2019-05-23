@@ -1,0 +1,20 @@
+﻿<PROTOTYPE_GOD>
+
+	<!-- the cost and benefits of a god -->
+	<GOD Name="God">
+		<!-- Two from starting gods need to be unlock on 1 game start.
+		If bool false good need to be unlock by game progress.-->
+		<RandomStartGod Name="randomStartGod" Type="bool" Required="TRUE"/>
+		<!-- points needed to unlock -->
+		<DescriptionInfo Name="descriptionInfo" Type="DESCRIPTION_INFO" Required="TRUE"/>
+		<!-- god tag -->
+		<Tag Name="tag" Type="TAG" Required="TRUE"/>
+		<!-- god domain -->
+		<Domain Name="domains" Type="ArrayTAG" Required="FALSE"/>
+		<!-- Special slot with card available only for on god -->
+		<SpecialSlot Name="specialSlot" Type="ArrayTRAIT_CARD" Required="TRUE"/>
+		<!-- slot with domain alow type -->
+		<CardSlot Name="cardSlot" Type="ArrayCARD_SLOT" Required="TRUE"/>
+	</GOD>
+	
+</PROTOTYPE_GOD>

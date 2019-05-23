@@ -1,0 +1,185 @@
+﻿<BUILDINGS_TECH>
+	<BUILDING_TECH-IDOL UpgradeCost="0">
+		<DescriptionInfo Name="DES_IDOL" Description="DES_IDOL_DES" IconName="BuildingIdolWood"/>
+		<UnlockRecipe UnlockPrimeRes="4" UnlockSecRes="4">
+			<BuildingRecipe Value="BUILD_REC-IDOL"/>
+		</UnlockRecipe>
+	</BUILDING_TECH-IDOL>
+	<BUILDING_TECH-WAREHOUSE UpgradeCost="1">
+		<DescriptionInfo Name="DES_WAREHOUSE" Description="DES_WAREHOUSE_DES" IconName="BuildingWarehouseWood"/>
+		<UnlockRecipe UnlockPrimeRes="4" UnlockSecRes="4">
+			<BuildingRecipe Value="BUILD_REC-WAREHOUSE"/>
+		</UnlockRecipe>
+		<ParentBuildingTech Value="BUILDING_TECH-IDOL"/>
+	</BUILDING_TECH-WAREHOUSE>
+	<BUILDING_TECH-FORGE UpgradeCost="1">
+		<DescriptionInfo Name="DES_FORGE" Description="DES_FORGE_DES" IconName="BuildingForgeStone"/>
+		<UnlockRecipe UnlockPrimeRes="4" UnlockSecRes="4">
+			<BuildingRecipe Value="BUILD_REC-FORGE"/>
+		</UnlockRecipe>
+		<ParentBuildingTech Value="BUILDING_TECH-IDOL"/>
+	</BUILDING_TECH-FORGE>
+	<BUILDING_TECH-ARMOURY UpgradeCost="1">
+		<DescriptionInfo Name="DES_ARMOURY" Description="DES_ARMOURY_DES" IconName="BuildingArmouryStone"/>
+		<UnlockRecipe UnlockPrimeRes="4" UnlockSecRes="4">
+			<BuildingRecipe Value="BUILD_REC-ARMOURY"/>
+		</UnlockRecipe>
+		<ParentBuildingTech Value="BUILDING_TECH-FORGE"/>
+	</BUILDING_TECH-ARMOURY>
+	<BUILDING_TECH-SCHOOL UpgradeCost="1">
+		<DescriptionInfo Name="DES_SCHOOL" Description="DES_SCHOOL_DES" IconName="BuildingSchoolWood"/>
+		<UnlockRecipe UnlockPrimeRes="4" UnlockSecRes="4">
+			<BuildingRecipe Value="BUILD_REC-SCHOOL"/>
+		</UnlockRecipe>
+		<ParentBuildingTech Value="BUILDING_TECH-IDOL"/>
+	</BUILDING_TECH-SCHOOL>
+	<BUILDING_TECH-DWELLING_BEDS UpgradeCost="1">
+		<DescriptionInfo Name="DES_DWELLING_BEDS" Description="DES_DWELLING_BEDS_DES" IconName="BuildingDwellingBedsWood"/>
+		<UnlockRecipe UnlockPrimeRes="4" UnlockSecRes="4">
+			<BuildingRecipe Value="BUILD_REC-DWELLING_BEDS"/>
+		</UnlockRecipe>
+		<ParentBuildingTech Value="BUILDING_TECH-IDOL"/>
+	</BUILDING_TECH-DWELLING_BEDS>
+	<BUILDING_TECH-HERBALIST_HUT UpgradeCost="1">
+		<DescriptionInfo Name="DES_HERBALIST_HUT" Description="DES_HERBALIST_HUT_DES" IconName="BuildingHerbalistsHutLeather"/>
+		<UnlockRecipe UnlockPrimeRes="4" UnlockSecRes="4">
+			<BuildingRecipe Value="BUILD_REC-HERBALIST_HUT"/>
+		</UnlockRecipe>
+		<ParentBuildingTech Value="BUILDING_TECH-IDOL"/>
+	</BUILDING_TECH-HERBALIST_HUT>
+	<BUILDING_TECH-WISHING_WELL UpgradeCost="1">
+		<DescriptionInfo Name="DES_WISHING_WELL" Description="DES_WISHING_WELL_DES" IconName="BuildingWishingWellWood"/>
+		<UnlockRecipe UnlockPrimeRes="4" UnlockSecRes="4">
+			<BuildingRecipe Value="BUILD_REC-WISHING_WELL"/>
+		</UnlockRecipe>
+		<ParentBuildingTech Value="BUILDING_TECH-IDOL"/>
+	</BUILDING_TECH-WISHING_WELL>
+	<BUILDING_TECH-LUMBER_MILL UpgradeCost="1">
+		<DescriptionInfo Name="DES_LUMBER_MILL" Description="DES_LUMBER_MILL_DES" IconName="BuildingLumberMillMetal"/>
+		<UnlockRecipe UnlockPrimeRes="4" UnlockSecRes="4">
+			<BuildingRecipe Value="BUILD_REC-LUMBER_MILL"/>
+		</UnlockRecipe>
+		<ParentBuildingTech Value="BUILDING_TECH-IDOL"/>
+	</BUILDING_TECH-LUMBER_MILL>
+	<BUILDING_TECH-CHILD_PLAYGROUND UpgradeCost="1">
+		<DescriptionInfo Name="DES_CHILD_PLAYGROUND" Description="DES_CHILD_PLAYGROUND_DES" IconName="BuildingPlaygroundWood"/>
+		<UnlockRecipe UnlockPrimeRes="4" UnlockSecRes="4">
+			<BuildingRecipe Value="BUILD_REC-CHILD_PLAYGROUND"/>
+		</UnlockRecipe>
+		<ParentBuildingTech Value="BUILDING_TECH-SCHOOL"/>
+	</BUILDING_TECH-CHILD_PLAYGROUND>
+	<BUILDING_TECH-GUARD_TOWER UpgradeCost="1">
+		<DescriptionInfo Name="DES_GUARD_TOWER" Description="DES_GUARD_TOWER_DES" IconName="BuildingWatchtowerStone"/>
+		<UnlockRecipe UnlockPrimeRes="4" UnlockSecRes="4">
+			<BuildingRecipe Value="BUILD_REC-GUARD_TOWER"/>
+		</UnlockRecipe>
+		<ParentBuildingTech Value="BUILDING_TECH-DWELLING_BEDS"/>
+	</BUILDING_TECH-GUARD_TOWER>
+	<BUILDING_TECH-WITCH_HUT UpgradeCost="1">
+		<DescriptionInfo Name="DES_WITCH_HUT" Description="DES_WITCH_HUT_DES" IconName="BuildingWitchHutLeather"/>
+		<UnlockRecipe UnlockPrimeRes="4" UnlockSecRes="4">
+			<BuildingRecipe Value="BUILD_REC-WITCH_HUT"/>
+		</UnlockRecipe>
+		<ParentBuildingTech Value="BUILDING_TECH-HERBALIST_HUT"/>
+	</BUILDING_TECH-WITCH_HUT>
+	<BUILDING_TECH-CROP_FIELD UpgradeCost="1">
+		<DescriptionInfo Name="DES_CROP_FIELD" Description="DES_CROP_FIELD_DES" IconName="BuildingCropFieldStone"/>
+		<UnlockRecipe UnlockPrimeRes="4" UnlockSecRes="4">
+			<BuildingRecipe Value="BUILD_REC-CROP_FIELD"/>
+		</UnlockRecipe>
+		<ParentBuildingTech Value="BUILDING_TECH-WISHING_WELL"/>
+	</BUILDING_TECH-CROP_FIELD>
+	<BUILDING_TECH-MINE UpgradeCost="1">
+		<DescriptionInfo Name="DES_MINE" Description="DES_MINE_DES" IconName="BuildingMineMetal"/>
+		<UnlockRecipe UnlockPrimeRes="4" UnlockSecRes="4">
+			<BuildingRecipe Value="BUILD_REC-MINE"/>
+		</UnlockRecipe>
+		<ParentBuildingTech Value="BUILDING_TECH-LUMBER_MILL"/>
+	</BUILDING_TECH-MINE>
+	<BUILDING_TECH-TRADING_POST UpgradeCost="1">
+		<DescriptionInfo Name="DES_TRADING_POST" Description="DES_TRADING_POST_DES" IconName="BuildingTradingPostLeather"/>
+		<UnlockRecipe UnlockPrimeRes="4" UnlockSecRes="4">
+			<BuildingRecipe Value="BUILD_REC-TRADING_POST"/>
+		</UnlockRecipe>
+		<ParentBuildingTech Value="BUILDING_TECH-WAREHOUSE"/>
+	</BUILDING_TECH-TRADING_POST>
+	
+	
+	<BUILDING_TECH-SPIRITUAL_HEALING UpgradeCost="0">
+		<DescriptionInfo Name="DES_SPIRITUAL_HEALING" Description="DES_SPIRITUAL_HEALING_DES" IconName="RitualSpiritualHealing"/>
+		<UnlockRecipe UnlockPrimeRes="5" UnlockSecRes="5">
+			<RitualRecipe Value="RITUAL_REC-SPIRITUAL_HEALING"/>
+		</UnlockRecipe>
+	</BUILDING_TECH-SPIRITUAL_HEALING>
+    <BUILDING_TECH-CURSE_REMOVAL UpgradeCost="1">
+        <DescriptionInfo Name="DES_RITUAL_CURSE_REMOVAL" Description="DES_RITUAL_CURSE_REMOVAL_DES" IconName="RitualCurseRemoval"/>
+        <UnlockRecipe UnlockPrimeRes="5" UnlockSecRes="5">
+            <RitualRecipe Value="RITUAL_REC-CURSE_REMOVAL"/>
+        </UnlockRecipe>
+        <ParentBuildingTech Value="BUILDING_TECH-SPIRITUAL_HEALING"/>
+    </BUILDING_TECH-CURSE_REMOVAL>
+    <BUILDING_TECH-UPGRADE_IDOL UpgradeCost="1">
+        <DescriptionInfo Name="DES_RITUAL_UPGRADE_IDOL" Description="DES_RITUAL_UPGRADE_IDOL_DES" IconName="RitualUpgradeIdol"/>
+        <UnlockRecipe UnlockPrimeRes="5" UnlockSecRes="5">
+            <RitualRecipe Value="RITUAL_REC-UPGRADE_IDOL"/>
+        </UnlockRecipe>
+        <ParentBuildingTech Value="BUILDING_TECH-SPIRITUAL_HEALING"/>
+    </BUILDING_TECH-UPGRADE_IDOL>
+	<!--<BUILDING_TECH-HIGHER_EDUCATION UpgradeCost="1">
+		<DescriptionInfo Name="DES_HIGHER_EDUCATION" Description="DES_HIGHER_EDUCATION_DES" IconName="RitualHigherEducation"/>
+		<UnlockRecipe UnlockPrimeRes="4" UnlockSecRes="4">
+			<RitualRecipe Value="RITUAL_REC-HIGHER_EDUCATION"/>
+		</UnlockRecipe>
+		<ParentBuildingTech Value="BUILDING_TECH-SCHOOL"/>
+	</BUILDING_TECH-HIGHER_EDUCATION>
+	<BUILDING_TECH-MYSTICAL_KNOWLEDGE UpgradeCost="1">
+		<DescriptionInfo Name="DES_MYSTICAL_KNOWLEDGE" Description="DES_MYSTICAL_KNOWLEDGE_DES" IconName="RitualMysticalKnowledge"/>
+		<UnlockRecipe UnlockPrimeRes="4" UnlockSecRes="4">
+			<RitualRecipe Value="RITUAL_REC-MYSTICAL_KNOWLEDGE"/>
+		</UnlockRecipe>
+		<ParentBuildingTech Value="BUILDING_TECH-SCHOOL"/>
+	</BUILDING_TECH-MYSTICAL_KNOWLEDGE>
+	<BUILDING_TECH-DEMONIC_SPLINTER UpgradeCost="1">
+		<DescriptionInfo Name="DES_DEMONIC_SPLINTER" Description="DES_DEMONIC_SPLINTER_DES" IconName="RitualDemonicSplinter"/>
+		<UnlockRecipe UnlockPrimeRes="4" UnlockSecRes="4">
+			<RitualRecipe Value="RITUAL_REC-DEMONIC_SPLINTER"/>
+		</UnlockRecipe>
+		<ParentBuildingTech Value="BUILDING_TECH-HERBALIST_HUT"/>
+	</BUILDING_TECH-DEMONIC_SPLINTER>
+	<BUILDING_TECH-SHOULDERS_POWER UpgradeCost="1">
+		<DescriptionInfo Name="DES_SHOULDERS_POWER" Description="DES_SHOULDERS_POWER_DES" IconName="RitualShouldersPower"/>
+		<UnlockRecipe UnlockPrimeRes="4" UnlockSecRes="4">
+			<RitualRecipe Value="RITUAL_REC-SHOULDERS_POWER"/>
+		</UnlockRecipe>
+		<ParentBuildingTech Value="BUILDING_TECH-FORGE"/>
+	</BUILDING_TECH-SHOULDERS_POWER>
+	<BUILDING_TECH-FIRE_GIFT UpgradeCost="1">
+		<DescriptionInfo Name="DES_FIRE_GIFT" Description="DES_FIRE_GIFT_DES" IconName="RitualFireGift"/>
+		<UnlockRecipe UnlockPrimeRes="4" UnlockSecRes="4">
+			<RitualRecipe Value="RITUAL_REC-FIRE_GIFT"/>
+		</UnlockRecipe>
+		<ParentBuildingTech Value="BUILDING_TECH-WAREHOUSE"/>
+	</BUILDING_TECH-FIRE_GIFT>
+	<BUILDING_TECH-MAGIC_POWDER UpgradeCost="1">
+		<DescriptionInfo Name="DES_MAGIC_POWDER" Description="DES_MAGIC_POWDER_DES" IconName="RitualMagicPowder"/>
+		<UnlockRecipe UnlockPrimeRes="4" UnlockSecRes="4">
+			<RitualRecipe Value="RITUAL_REC-MAGIC_POWDER"/>
+		</UnlockRecipe>
+		<ParentBuildingTech Value="BUILDING_TECH-HERBALIST_HUT"/>
+	</BUILDING_TECH-MAGIC_POWDER>
+	<BUILDING_TECH-CABBAGE_FIELD UpgradeCost="1">
+		<DescriptionInfo Name="DES_CABBAGE_FIELD" Description="DES_CABBAGE_FIELD_DES" IconName="RitualCabbageField"/>
+		<UnlockRecipe UnlockPrimeRes="4" UnlockSecRes="4">
+			<RitualRecipe Value="RITUAL_REC-CABBAGE_FIELD"/>
+		</UnlockRecipe>
+		<ParentBuildingTech Value="BUILDING_TECH-DWELLING_BEDS"/>
+	</BUILDING_TECH-CABBAGE_FIELD>
+	<BUILDING_TECH-KNOWLEDGE_ARMOR UpgradeCost="1">
+		<DescriptionInfo Name="DES_KNOWLEDGE_ARMOR" Description="DES_KNOWLEDGE_ARMOR_DES" IconName="RitualKnowledgeArmour"/>
+		<UnlockRecipe UnlockPrimeRes="4" UnlockSecRes="4">
+			<RitualRecipe Value="RITUAL_REC-KNOWLEDGE_ARMOR"/>
+		</UnlockRecipe>
+		<ParentBuildingTech Value="BUILDING_TECH-LUMBER_MILL"/>
+	</BUILDING_TECH-KNOWLEDGE_ARMOR>-->
+
+</BUILDINGS_TECH>

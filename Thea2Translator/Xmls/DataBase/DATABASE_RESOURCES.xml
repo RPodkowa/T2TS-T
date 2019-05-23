@@ -1,0 +1,1136 @@
+﻿<RESOURCES>
+
+	<!--RES_TIER1-->
+	<!-- Gathering cost per unit (PP/Amout=) 16.0-->
+	<RES-WOOD ResearchCost="0" Rarity="0" Worth="3" ProductionPoints="100" Weight="3.5" GatheringMultiplier="0.6" WinterMultiplier="-0.3">
+		<DescriptionInfo Name="DES_RES_WOOD" Description="DES_RES_WOOD_DES" IconName="Wood"/>
+		<ResourceDeposit MinimumCount="10.0" MaximumCount="25.0"/>
+		<WorkersAllowedToWork MinimumCount="1.0" MaximumCount="5.0"/>
+		<HiddenResourceLayers MinimumCount="0.0" MaximumCount="0.0"/>
+		<ResLifeCycle DSeasonKillPercent="50" RSeasonGrowPercent="25">
+			<RegenerationSeason Value="TAG-SUMMER"/>
+			<DeadSeason Value="TAG-WINTER"/>
+		</ResLifeCycle>
+		<TerrainModel Value="WoodPlaceholder"/> <!--Wood resources will spawn of forest-covered hexes, there will be no additional models-->
+		<Essences Amount="0.5" Tag="TAG-ESSENCE_WOOD"/>
+		<Tag Value="TAG-RESOURCE"/>
+		<Tag Value="TAG-WOOD"/>
+		<Tag Value="TAG-FUEL"/>
+        <Tag Value="TAG-FOREST_TYPE"/>
+	</RES-WOOD>
+    <!-- Gathering cost per unit (PP/Amout=) 34.0-->
+    <RES-ELVEN_WOOD CraftedRes="TRUE" ResearchCost="1" Rarity="30" Worth="30" ProductionPoints="340" Weight="2.1" GatheringMultiplier="1.0" WinterMultiplier="-0.3" ResourceType="Improved">
+        <DescriptionInfo Name="DES_RES_ELVEN_WOOD" Description="DES_RES_ELVEN_WOOD_DES" IconName="ElvenWood"/>
+        <ResourceDeposit MinimumCount="5.0" MaximumCount="15.0"/>
+        <WorkersAllowedToWork MinimumCount="1.0" MaximumCount="5.0"/>
+        <HiddenResourceLayers MinimumCount="0.0" MaximumCount="0.0"/>
+        <ResLifeCycle DSeasonKillPercent="50" RSeasonGrowPercent="25">
+            <RegenerationSeason Value="TAG-SUMMER"/>
+            <DeadSeason Value="TAG-WINTER"/>
+        </ResLifeCycle>
+        <TerrainModel Value="ElvenWoodPlaceholder"/>
+        <!--Wood resources will spawn of forest-covered hexes, there will be no additional models-->
+        <Essences Amount="0.9" Tag="TAG-ESSENCE_WOOD"/>
+        <Tag Value="TAG-RESOURCE"/>
+        <Tag Value="TAG-FUEL"/>
+        <Tag Value="TAG-ELVEN_WOOD"/>
+        <Tag Value="TAG-FOREST_TYPE"/>
+        <Parent Value="RES-WOOD"/>
+    </RES-ELVEN_WOOD>
+	<!-- Gathering cost per unit (PP/Amout=) 38.0-->
+	<RES-DRYAD_WOOD CraftedRes="TRUE" ResearchCost="1" Rarity="40" Worth="20" ProductionPoints="350" Weight="3.0" GatheringMultiplier="0.9" WinterMultiplier="-0.3">
+		<DescriptionInfo Name="DES_RES_DRYAD_WOOD" Description="DES_RES_DRYAD_WOOD_DES" IconName="DryadWood"/>
+		<ResourceDeposit MinimumCount="5.0" MaximumCount="15.0"/>
+		<WorkersAllowedToWork MinimumCount="1.0" MaximumCount="5.0"/>
+		<HiddenResourceLayers MinimumCount="0.0" MaximumCount="0.0"/>
+		<ResLifeCycle DSeasonKillPercent="50" RSeasonGrowPercent="25">
+			<RegenerationSeason Value="TAG-SUMMER"/>
+			<DeadSeason Value="TAG-WINTER"/>
+		</ResLifeCycle>
+		<TerrainModel Value="DryadWoodPlaceholder"/> <!--Wood resources will spawn of forest-covered hexes, there will be no additional models-->
+		<Essences Amount="0.9" Tag="TAG-ESSENCE_WOOD"/>
+		<Tag Value="TAG-RESOURCE"/>
+		<Tag Value="TAG-FUEL"/>
+		<Tag Value="TAG-DRYAD_WOOD"/>
+        <Tag Value="TAG-FOREST_TYPE"/>
+		<Parent Value="RES-WOOD"/>
+	</RES-DRYAD_WOOD>
+	<!-- Gathering cost per unit (PP/Amout=) 31.0-->
+	<RES-DARK_WOOD CraftedRes="TRUE" ResearchCost="1" Rarity="20" Worth="35" ProductionPoints="220" Weight="3.5" GatheringMultiplier="0.7" WinterMultiplier="-0.3" ResourceType="Wild">
+		<DescriptionInfo Name="DES_RES_DARK_WOOD" Description="DES_RES_DARK_WOOD_DES" IconName="DarkWood"/>
+		<ResourceDeposit MinimumCount="5.0" MaximumCount="15.0"/>
+		<WorkersAllowedToWork MinimumCount="1.0" MaximumCount="5.0"/>
+		<HiddenResourceLayers MinimumCount="0.0" MaximumCount="0.0"/>
+		<ResLifeCycle DSeasonKillPercent="50" RSeasonGrowPercent="25">
+			<RegenerationSeason Value="TAG-SUMMER"/>
+			<DeadSeason Value="TAG-WINTER"/>
+		</ResLifeCycle>
+		<TerrainModel Value="DarkWoodPlaceholder"/> <!--Wood resources will spawn of forest-covered hexes, there will be no additional models-->
+		<Essences Amount="0.9" Tag="TAG-ESSENCE_WOOD"/>
+		<Tag Value="TAG-RESOURCE"/>
+		<Tag Value="TAG-FUEL"/>
+		<Tag Value="TAG-DARK_WOOD"/>
+        <Tag Value="TAG-FOREST_TYPE"/>
+		<Parent Value="RES-WOOD"/>
+	</RES-DARK_WOOD>
+	
+	<!-- Gathering cost per unit (PP/Amout=) 55.0-->
+	<RES-ANCIENT_WOOD CraftedRes="TRUE" ResearchCost="2" Rarity="60" Worth="110" ProductionPoints="500" Weight="3.5" GatheringMultiplier="0.9" WinterMultiplier="-0.3">
+		<DescriptionInfo Name="DES_RES_ANCIENT_WOOD" Description="DES_RES_ANCIENT_WOOD_DES" IconName="AncientWood"/>
+		<ResourceDeposit MinimumCount="5.0" MaximumCount="10.0"/>
+		<WorkersAllowedToWork MinimumCount="1.0" MaximumCount="5.0"/>
+		<HiddenResourceLayers MinimumCount="0.0" MaximumCount="0.0"/>
+		<ResLifeCycle DSeasonKillPercent="50" RSeasonGrowPercent="25">
+			<RegenerationSeason Value="TAG-SUMMER"/>
+			<DeadSeason Value="TAG-WINTER"/>
+		</ResLifeCycle>
+		<TerrainModel Value="AncientWoodPlaceholder"/> <!--Wood resources will spawn of forest-covered hexes, there will be no additional models-->
+		<Essences Amount="1.4" Tag="TAG-ESSENCE_WOOD"/>
+		<Tag Value="TAG-RESOURCE"/>
+		<Tag Value="TAG-ANCIENT_WOOD"/>
+		<Tag Value="TAG-FUEL"/>
+        <Tag Value="TAG-FOREST_TYPE"/>
+		<Parent Value="RES-DRYAD_WOOD"/>
+		<Parent Value="RES-DARK_WOOD"/>
+		<Parent Value="RES-ELVEN_WOOD"/>
+    </RES-ANCIENT_WOOD>
+
+	<!-- Gathering cost per unit (PP/Amout=) 28.0-->
+	<RES-AMBER ResearchCost="0" Rarity="10" Worth="9" ProductionPoints="140" Weight="1.7" GatheringMultiplier="0.5" WinterMultiplier="-0.3">
+		<DescriptionInfo Name="DES_RES_AMBER" Description="DES_RES_AMBER_DES" IconName="Amber"/>
+		<ResourceDeposit MinimumCount="5.0" MaximumCount="15.0"/>
+		<WorkersAllowedToWork MinimumCount="1.0" MaximumCount="3.0"/>
+		<HiddenResourceLayers MinimumCount="1.0" MaximumCount="3.0"/>
+		<ResLifeCycle DSeasonKillPercent="0" RSeasonGrowPercent="0">
+			<RegenerationSeason Value="TAG-SUMMER"/>
+			<DeadSeason Value="TAG-WINTER"/>
+		</ResLifeCycle>
+		<TerrainModel Value="Amber"/>
+		<Essences Amount="0.5" Tag="TAG-ESSENCE_GEM"/>
+		<Tag Value="TAG-RESOURCE"/>
+		<Tag Value="TAG-AMBER"/>
+	</RES-AMBER>
+    <!-- Gathering cost per unit (PP/Amout=) 47.0-->
+    <RES-TOPAZ CraftedRes="TRUE" ResearchCost="1" Rarity="30" Worth="35" ProductionPoints="520" Weight="1.0" GatheringMultiplier="1.1" WinterMultiplier="-0.3" ResourceType="Improved">
+        <DescriptionInfo Name="DES_RES_TOPAZ" Description="DES_RES_TOPAZ_DES" IconName="Topaz"/>
+        <ResourceDeposit MinimumCount="5.0" MaximumCount="10.0"/>
+        <WorkersAllowedToWork MinimumCount="1.0" MaximumCount="3.0"/>
+        <HiddenResourceLayers MinimumCount="1.0" MaximumCount="3.0"/>
+        <ResLifeCycle DSeasonKillPercent="0" RSeasonGrowPercent="0">
+            <RegenerationSeason Value="TAG-SUMMER"/>
+            <DeadSeason Value="TAG-WINTER"/>
+        </ResLifeCycle>
+        <TerrainModel Value="Topaz"/>
+        <Essences Amount="0.9" Tag="TAG-ESSENCE_GEM"/>
+        <Tag Value="TAG-RESOURCE"/>
+        <Tag Value="TAG-TOPAZ"/>
+        <Parent Value="RES-AMBER"/>
+    </RES-TOPAZ>
+	<!-- Gathering cost per unit (PP/Amout=) 52.0-->
+	<RES-MALACHITE CraftedRes="TRUE" ResearchCost="1" Rarity="40" Worth="40" ProductionPoints="520" Weight="1.4" GatheringMultiplier="1.0" WinterMultiplier="-0.3">
+		<DescriptionInfo Name="DES_RES_MALACHITE" Description="DES_RES_MALACHITE_DES" IconName="Malachite"/>
+		<ResourceDeposit MinimumCount="5.0" MaximumCount="10.0"/>
+		<WorkersAllowedToWork MinimumCount="1.0" MaximumCount="3.0"/>
+		<HiddenResourceLayers MinimumCount="1.0" MaximumCount="3.0"/>
+		<ResLifeCycle DSeasonKillPercent="0" RSeasonGrowPercent="0">
+			<RegenerationSeason Value="TAG-SUMMER"/>
+			<DeadSeason Value="TAG-WINTER"/>
+		</ResLifeCycle>
+		<TerrainModel Value="Malachite"/>
+		<Essences Amount="0.9" Tag="TAG-ESSENCE_GEM"/>
+		<Tag Value="TAG-RESOURCE"/>
+		<Tag Value="TAG-MALACHITE"/>
+		<Parent Value="RES-AMBER"/>
+	</RES-MALACHITE>	
+	<!-- Gathering cost per unit (PP/Amout=) 49.0-->
+	<RES-RUBY CraftedRes="TRUE" ResearchCost="1" Rarity="50" Worth="45" ProductionPoints="540" Weight="1.5" GatheringMultiplier="1.1" WinterMultiplier="-0.3" ResourceType="Wild">
+		<DescriptionInfo Name="DES_RES_RUBY" Description="DES_RES_RUBY_DES" IconName="Ruby"/>
+		<ResourceDeposit MinimumCount="5.0" MaximumCount="10.0"/>
+		<WorkersAllowedToWork MinimumCount="1.0" MaximumCount="3.0"/>
+		<HiddenResourceLayers MinimumCount="1.0" MaximumCount="3.0"/>
+		<ResLifeCycle DSeasonKillPercent="0" RSeasonGrowPercent="0">
+			<RegenerationSeason Value="TAG-SUMMER"/>
+			<DeadSeason Value="TAG-WINTER"/>
+		</ResLifeCycle>
+		<TerrainModel Value="Ruby"/>
+		<Essences Amount="0.9" Tag="TAG-ESSENCE_GEM"/>
+		<Tag Value="TAG-RESOURCE"/>
+		<Tag Value="TAG-RUBY"/>
+		<Parent Value="RES-AMBER"/>
+	</RES-RUBY>
+	<!-- Gathering cost per unit (PP/Amout=) 67.0-->
+	<RES-DIAMOND CraftedRes="TRUE" ResearchCost="2" Rarity="60" Worth="85" ProductionPoints="950" Weight="1.2" GatheringMultiplier="1.4" WinterMultiplier="-0.3">
+		<DescriptionInfo Name="DES_RES_DIAMOND" Description="DES_RES_DIAMOND_DES" IconName="Diamond"/>
+		<ResourceDeposit MinimumCount="5.0" MaximumCount="10.0"/>
+		<WorkersAllowedToWork MinimumCount="1.0" MaximumCount="3.0"/>
+		<HiddenResourceLayers MinimumCount="1.0" MaximumCount="3.0"/>
+		<ResLifeCycle DSeasonKillPercent="0" RSeasonGrowPercent="0">
+			<RegenerationSeason Value="TAG-SUMMER"/>
+			<DeadSeason Value="TAG-WINTER"/>
+		</ResLifeCycle>
+		<TerrainModel Value="Diamond"/>
+		<Essences Amount="1.4" Tag="TAG-ESSENCE_GEM"/>
+		<Tag Value="TAG-RESOURCE"/>
+		<Tag Value="TAG-DIAMOND"/>
+		<Parent Value="RES-MALACHITE"/>
+		<Parent Value="RES-TOPAZ"/>
+		<Parent Value="RES-RUBY"/>
+	</RES-DIAMOND>
+
+	<!-- Gathering cost per unit (PP/Amout=) 20.0-->
+	<RES-BONE ResearchCost="0" Rarity="0" Worth="3" ProductionPoints="140" Weight="2.5" GatheringMultiplier="0.7" WinterMultiplier="-0.3">
+		<DescriptionInfo Name="DES_RES_BONE" Description="DES_RES_BONE_DES" IconName="Bone"/>
+		<ResourceDeposit MinimumCount="1.0" MaximumCount="20.0"/>
+		<WorkersAllowedToWork MinimumCount="1.0" MaximumCount="5.0"/>
+		<HiddenResourceLayers MinimumCount="1.0" MaximumCount="1.0"/>
+		<ResLifeCycle DSeasonKillPercent="0" RSeasonGrowPercent="0">
+			<RegenerationSeason Value="TAG-SUMMER"/>
+			<DeadSeason Value="TAG-WINTER"/>
+		</ResLifeCycle>
+		<TerrainModel Value="Bone"/>
+		<Essences Amount="0.5" Tag="TAG-ESSENCE_BONE"/>
+		<Tag Value="TAG-RESOURCE"/>
+		<Tag Value="TAG-BONE"/>
+	</RES-BONE>
+	<!-- Gathering cost per unit (PP/Amout=) 35.0-->
+	<RES-BLOOD_BONE CraftedRes="TRUE" ResearchCost="1" Rarity="50" Worth="30" ProductionPoints="315" Weight="2.8" GatheringMultiplier="0.9" WinterMultiplier="-0.3" ResourceType="Improved">
+		<DescriptionInfo Name="DES_RES_BLOOD_BONE" Description="DES_RES_BLOOD_BONE_DES" IconName="BloodBone"/>
+		<ResourceDeposit MinimumCount="1.0" MaximumCount="15.0"/>
+		<WorkersAllowedToWork MinimumCount="1.0" MaximumCount="5.0"/>
+		<HiddenResourceLayers MinimumCount="1.0" MaximumCount="1.0"/>
+		<ResLifeCycle DSeasonKillPercent="0" RSeasonGrowPercent="0">
+			<RegenerationSeason Value="TAG-SUMMER"/>
+			<DeadSeason Value="TAG-WINTER"/>
+		</ResLifeCycle>
+		<TerrainModel Value="BloodBone"/>
+		<Essences Amount="0.9" Tag="TAG-ESSENCE_BONE"/>
+		<Tag Value="TAG-RESOURCE"/>
+		<Tag Value="TAG-BLOOD_BONE"/>
+		<Parent Value="RES-BONE"/>
+	</RES-BLOOD_BONE>
+    <!-- Gathering cost per unit (PP/Amout=) 29.0-->
+    <RES-MONSTER_BONE CraftedRes="TRUE" ResearchCost="1" Rarity="30" Worth="30" ProductionPoints="312" Weight="4.0" GatheringMultiplier="1.2" WinterMultiplier="-0.3">
+        <DescriptionInfo Name="DES_RES_MONSTER_BONE" Description="DES_RES_MONSTER_BONE_DES" IconName="MonsterBone"/>
+        <ResourceDeposit MinimumCount="1.0" MaximumCount="15.0"/>
+        <WorkersAllowedToWork MinimumCount="1.0" MaximumCount="5.0"/>
+        <HiddenResourceLayers MinimumCount="1.0" MaximumCount="1.0"/>
+        <ResLifeCycle DSeasonKillPercent="0" RSeasonGrowPercent="0">
+            <RegenerationSeason Value="TAG-SUMMER"/>
+            <DeadSeason Value="TAG-WINTER"/>
+        </ResLifeCycle>
+        <TerrainModel Value="MonsterBone"/>
+        <Essences Amount="0.9" Tag="TAG-ESSENCE_BONE"/>
+        <Tag Value="TAG-RESOURCE"/>
+        <Tag Value="TAG-MONSTER_BONE"/>
+        <Parent Value="RES-BONE"/>
+    </RES-MONSTER_BONE>
+	<!-- Gathering cost per unit (PP/Amout=) 35.0-->
+	<RES-SHADOW_BONE CraftedRes="TRUE" ResearchCost="1" Rarity="40" Worth="25" ProductionPoints="280" Weight="3.5" GatheringMultiplier="0.8" WinterMultiplier="-0.3" ResourceType="Wild">
+		<DescriptionInfo Name="DES_RES_SHADOW_BONE" Description="DES_RES_SHADOW_BONE_DES" IconName="ShadowBone"/>
+		<ResourceDeposit MinimumCount="1.0" MaximumCount="15.0"/>
+		<WorkersAllowedToWork MinimumCount="1.0" MaximumCount="5.0"/>
+		<HiddenResourceLayers MinimumCount="1.0" MaximumCount="1.0"/>
+		<ResLifeCycle DSeasonKillPercent="0" RSeasonGrowPercent="0">
+			<RegenerationSeason Value="TAG-SUMMER"/>
+			<DeadSeason Value="TAG-WINTER"/>
+		</ResLifeCycle>
+		<TerrainModel Value="ShadowBone"/>
+		<Essences Amount="0.9" Tag="TAG-ESSENCE_BONE"/>
+		<Tag Value="TAG-RESOURCE"/>
+		<Tag Value="TAG-SHADOW_BONE"/>
+		<Parent Value="RES-BONE"/>
+	</RES-SHADOW_BONE>
+	
+	<!-- Gathering cost per unit (PP/Amout=) 60.0-->
+	<RES-DRAGON_BONE CraftedRes="TRUE" ResearchCost="2" Rarity="60" Worth="100" ProductionPoints="440" Weight="2.0" GatheringMultiplier="0.8" WinterMultiplier="-0.3">
+		<DescriptionInfo Name="DES_RES_DRAGON_BONE" Description="DES_RES_DRAGON_BONE_DES" IconName="DragonBone"/>
+		<ResourceDeposit MinimumCount="1.0" MaximumCount="10.0"/>
+		<WorkersAllowedToWork MinimumCount="1.0" MaximumCount="5.0"/>
+		<HiddenResourceLayers MinimumCount="1.0" MaximumCount="1.0"/>
+		<ResLifeCycle DSeasonKillPercent="0" RSeasonGrowPercent="0">
+			<RegenerationSeason Value="TAG-SUMMER"/>
+			<DeadSeason Value="TAG-WINTER"/>
+		</ResLifeCycle>
+		<TerrainModel Value="DragonBone"/>
+		<Essences Amount="1.4" Tag="TAG-ESSENCE_BONE"/>
+		<Tag Value="TAG-RESOURCE"/>
+		<Tag Value="TAG-DRAGON_BONE"/>
+		<Parent Value="RES-BLOOD_BONE"/>
+		<Parent Value="RES-SHADOW_BONE"/>
+		<Parent Value="RES-MONSTER_BONE"/>
+	</RES-DRAGON_BONE>
+
+	<!-- Gathering cost per unit (PP/Amout=) 20.0-->
+	<RES-LEATHER ResearchCost="0" Rarity="0" Worth="5" ProductionPoints="180" Weight="2.5" GatheringMultiplier="0.9" WinterMultiplier="-0.3">
+		<DescriptionInfo Name="DES_RES_LEATHER" Description="DES_RES_LEATHER_DES" IconName="Leather"/>
+		<ResourceDeposit MinimumCount="3.0" MaximumCount="20.0"/>
+		<WorkersAllowedToWork MinimumCount="1.0" MaximumCount="3.0"/>
+		<HiddenResourceLayers MinimumCount="0.0" MaximumCount="0.0"/>
+		<ResLifeCycle DSeasonKillPercent="50" RSeasonGrowPercent="50">
+			<RegenerationSeason Value="TAG-SUMMER"/>
+			<DeadSeason Value="TAG-WINTER"/>
+		</ResLifeCycle>
+		<TerrainModel Value="Leather"/>
+		<Essences Amount="0.5" Tag="TAG-ESSENCE_LEATHER"/>
+		<Tag Value="TAG-RESOURCE"/>
+		<Tag Value="TAG-LEATHER"/>
+	</RES-LEATHER>
+	<!-- Gathering cost per unit (PP/Amout=) 31.0-->
+	<RES-SCALED_LEATHER CraftedRes="TRUE" ResearchCost="1" Rarity="30" Worth="30" ProductionPoints="380" Weight="2.1" GatheringMultiplier="1.2" WinterMultiplier="-0.3" ResourceType="Improved">
+		<DescriptionInfo Name="DES_RES_SCALED_LEATHER" Description="DES_RES_SCALED_LEATHER_DES" IconName="ScaledLeather"/>
+		<ResourceDeposit MinimumCount="3.0" MaximumCount="15.0"/>
+		<WorkersAllowedToWork MinimumCount="1.0" MaximumCount="3.0"/>
+		<HiddenResourceLayers MinimumCount="0.0" MaximumCount="0.0"/>
+		<ResLifeCycle DSeasonKillPercent="50" RSeasonGrowPercent="50">
+			<RegenerationSeason Value="TAG-SUMMER"/>
+			<DeadSeason Value="TAG-WINTER"/>
+		</ResLifeCycle>
+		<TerrainModel Value="ScaledLeather"/>
+		<Essences Amount="0.9" Tag="TAG-ESSENCE_LEATHER"/>
+		<Tag Value="TAG-RESOURCE"/>
+		<Tag Value="TAG-SCALED_LEATHER"/>
+		<Parent Value="RES-LEATHER"/>
+	</RES-SCALED_LEATHER>
+	<!-- Gathering cost per unit (PP/Amout=) 32.0-->
+	<RES-FUR_LEATHER CraftedRes="TRUE" ResearchCost="1" Rarity="20" Worth="30" ProductionPoints="420" Weight="3.0" GatheringMultiplier="1.3" WinterMultiplier="-0.3">
+		<DescriptionInfo Name="DES_RES_FUR_LEATHER" Description="DES_RES_FUR_LEATHER_DES" IconName="FurLeather"/>
+		<ResourceDeposit MinimumCount="3.0" MaximumCount="15.0"/>
+		<WorkersAllowedToWork MinimumCount="1.0" MaximumCount="3.0"/>
+		<HiddenResourceLayers MinimumCount="0.0" MaximumCount="0.0"/>
+		<ResLifeCycle DSeasonKillPercent="50" RSeasonGrowPercent="50">
+			<RegenerationSeason Value="TAG-SUMMER"/>
+			<DeadSeason Value="TAG-WINTER"/>
+		</ResLifeCycle>
+		<TerrainModel Value="FurLeather"/>
+		<Essences Amount="0.9" Tag="TAG-ESSENCE_LEATHER"/>
+		<Tag Value="TAG-RESOURCE"/>
+		<Tag Value="TAG-FUR_LEATHER"/>
+		<Parent Value="RES-LEATHER"/>
+	</RES-FUR_LEATHER>
+	<!-- Gathering cost per unit (PP/Amout=) 32.0-->
+	<RES-ENCHANTED_LEATHER CraftedRes="TRUE" ResearchCost="1" Rarity="50" Worth="35" ProductionPoints="360" Weight="3.0" GatheringMultiplier="1.1" WinterMultiplier="-0.3" ResourceType="Wild">
+		<DescriptionInfo Name="DES_RES_ENCHANTED_LEATHER" Description="DES_RES_ENCHANTED_LEATHER_DES" IconName="EnchantedLeather"/>
+		<ResourceDeposit MinimumCount="3.0" MaximumCount="15.0"/>
+		<WorkersAllowedToWork MinimumCount="1.0" MaximumCount="3.0"/>
+		<HiddenResourceLayers MinimumCount="0.0" MaximumCount="0.0"/>
+		<ResLifeCycle DSeasonKillPercent="50" RSeasonGrowPercent="50">
+			<RegenerationSeason Value="TAG-SUMMER"/>
+			<DeadSeason Value="TAG-WINTER"/>
+		</ResLifeCycle>
+		<TerrainModel Value="EnchantedLeather"/>
+		<Essences Amount="0.9" Tag="TAG-ESSENCE_LEATHER"/>
+		<Tag Value="TAG-RESOURCE"/>
+		<Tag Value="TAG-ENCHANTED_LEATHER"/>
+		<Parent Value="RES-LEATHER"/>
+	</RES-ENCHANTED_LEATHER>
+	<!-- Gathering cost per unit (PP/Amout=) 60.0-->
+	<RES-MYTHICAL_LEATHER CraftedRes="TRUE" ResearchCost="2" Rarity="60" Worth="100" ProductionPoints="780" Weight="2.5" GatheringMultiplier="1.3" WinterMultiplier="-0.3">
+		<DescriptionInfo Name="DES_RES_MYTHICAL_LEATHER" Description="DES_RES_MYTHICAL_LEATHER_DES" IconName="MythicalLeather"/>
+		<ResourceDeposit MinimumCount="3.0" MaximumCount="10.0"/>
+		<WorkersAllowedToWork MinimumCount="1.0" MaximumCount="3.0"/>
+		<HiddenResourceLayers MinimumCount="0.0" MaximumCount="0.0"/>
+		<ResLifeCycle DSeasonKillPercent="50" RSeasonGrowPercent="50">
+			<RegenerationSeason Value="TAG-SUMMER"/>
+			<DeadSeason Value="TAG-WINTER"/>
+		</ResLifeCycle>
+		<TerrainModel Value="MythicalLeather"/>
+		<Essences Amount="1.4" Tag="TAG-ESSENCE_LEATHER"/>
+		<Tag Value="TAG-RESOURCE"/>
+		<Tag Value="TAG-MYTHICAL_LEATHER"/>
+		<Parent Value="RES-SCALED_LEATHER"/>
+		<Parent Value="RES-FUR_LEATHER"/>
+		<Parent Value="RES-ENCHANTED_LEATHER"/>
+	</RES-MYTHICAL_LEATHER>
+
+	<!-- Gathering cost per unit (PP/Amout=) 22.0-->
+	<RES-IRON ResearchCost="0" Rarity="10" Worth="15" ProductionPoints="286" Weight="5.0" GatheringMultiplier="1.3" WinterMultiplier="-0.3">
+		<DescriptionInfo Name="DES_RES_IRON" Description="DES_RES_IRON_DES" IconName="Iron"/>
+		<ResourceDeposit MinimumCount="5.0" MaximumCount="15.0"/>
+		<WorkersAllowedToWork MinimumCount="1.0" MaximumCount="5.0"/>
+		<HiddenResourceLayers MinimumCount="3.0" MaximumCount="8.0"/>
+		<ResLifeCycle DSeasonKillPercent="0" RSeasonGrowPercent="0">
+			<RegenerationSeason Value="TAG-SUMMER"/>
+			<DeadSeason Value="TAG-WINTER"/>
+		</ResLifeCycle>
+		<TerrainModel Value="Iron"/> 
+		<Essences Amount="0.5" Tag="TAG-ESSENCE_METAL"/>
+		<Tag Value="TAG-RESOURCE"/>
+		<Tag Value="TAG-IRON"/>
+	</RES-IRON>
+	
+	
+	<!-- Gathering cost per unit (PP/Amout=) 35.0-->
+	<RES-SILVER CraftedRes="TRUE" ResearchCost="1" Rarity="50" Worth="40" ProductionPoints="462" Weight="3.8" GatheringMultiplier="1.2" WinterMultiplier="-0.3" ResourceType="Improved">
+		<DescriptionInfo Name="DES_RES_SILVER" Description="DES_RES_SILVER_DES" IconName="Silver"/>
+		<ResourceDeposit MinimumCount="5.0" MaximumCount="15.0"/>
+		<WorkersAllowedToWork MinimumCount="1.0" MaximumCount="5.0"/>
+		<HiddenResourceLayers MinimumCount="3.0" MaximumCount="10.0"/>
+		<ResLifeCycle DSeasonKillPercent="0" RSeasonGrowPercent="0">
+			<RegenerationSeason Value="TAG-SUMMER"/>
+			<DeadSeason Value="TAG-WINTER"/>
+		</ResLifeCycle>
+		<TerrainModel Value="Silver"/>
+		<Essences Amount="0.9" Tag="TAG-ESSENCE_METAL"/>
+		<Tag Value="TAG-RESOURCE"/>
+		<Tag Value="TAG-SILVER"/>
+		<Parent Value="RES-IRON"/>
+	</RES-SILVER>
+  <!-- Gathering cost per unit (PP/Amout=) 30.0-->
+  <RES-STEEL CraftedRes="TRUE" ResearchCost="1" Rarity="30" Worth="35" ProductionPoints="364" Weight="5.5" GatheringMultiplier="1.4" WinterMultiplier="-0.3" >
+    <DescriptionInfo Name="DES_RES_STEEL" Description="DES_RES_STEEL_DES" IconName="Steel"/>
+    <ResourceDeposit MinimumCount="5.0" MaximumCount="15.0"/>
+    <WorkersAllowedToWork MinimumCount="1.0" MaximumCount="5.0"/>
+    <HiddenResourceLayers MinimumCount="1.0" MaximumCount="10.0"/>
+    <ResLifeCycle DSeasonKillPercent="0" RSeasonGrowPercent="0">
+      <RegenerationSeason Value="TAG-SUMMER"/>
+      <DeadSeason Value="TAG-WINTER"/>
+    </ResLifeCycle>
+    <TerrainModel Value="Steel"/>
+    <Essences Amount="0.9" Tag="TAG-ESSENCE_METAL"/>
+    <Tag Value="TAG-RESOURCE"/>
+    <Tag Value="TAG-STEEL"/>
+    <Parent Value="RES-IRON"/>
+  </RES-STEEL>
+    <!-- Gathering cost per unit (PP/Amout=) 34.0-->
+    <RES-GOLD CraftedRes="TRUE" ResearchCost="1" Rarity="40" Worth="45" ProductionPoints="448" Weight="4.5" GatheringMultiplier="1.1" WinterMultiplier="-0.3" ResourceType="Wild">
+        <DescriptionInfo Name="DES_RES_GOLD" Description="DES_RES_GOLD_DES" IconName="Gold"/>
+        <ResourceDeposit MinimumCount="5.0" MaximumCount="15.0"/>
+        <WorkersAllowedToWork MinimumCount="1.0" MaximumCount="5.0"/>
+        <HiddenResourceLayers MinimumCount="1.0" MaximumCount="6.0"/>
+        <ResLifeCycle DSeasonKillPercent="0" RSeasonGrowPercent="0">
+            <RegenerationSeason Value="TAG-SUMMER"/>
+            <DeadSeason Value="TAG-WINTER"/>
+        </ResLifeCycle>
+        <TerrainModel Value="Gold"/>
+        <Essences Amount="0.9" Tag="TAG-ESSENCE_METAL"/>
+        <Tag Value="TAG-RESOURCE"/>
+        <Tag Value="TAG-GOLD"/>
+        <Parent Value="RES-IRON"/>
+    </RES-GOLD>
+	<!-- Gathering cost per unit (PP/Amout=) 60.0-->
+	<RES-MITHRILL CraftedRes="TRUE" ResearchCost="2" Rarity="60" Worth="120" ProductionPoints="720" Weight="4.5" GatheringMultiplier="1.2" WinterMultiplier="-0.3">
+		<DescriptionInfo Name="DES_RES_MITHRIL" Description="DES_RES_MITHRIL_DES" IconName="Mithril"/>
+		<ResourceDeposit MinimumCount="5.0" MaximumCount="15.0"/>
+		<WorkersAllowedToWork MinimumCount="1.0" MaximumCount="5.0"/>
+		<HiddenResourceLayers MinimumCount="2.0" MaximumCount="6.0"/>
+		<ResLifeCycle DSeasonKillPercent="0" RSeasonGrowPercent="0">
+			<RegenerationSeason Value="TAG-SUMMER"/>
+			<DeadSeason Value="TAG-WINTER"/>
+		</ResLifeCycle>
+		<TerrainModel Value="Mithrill"/>
+		<Essences Amount="1.4" Tag="TAG-ESSENCE_METAL"/>
+		<Tag Value="TAG-RESOURCE"/>
+		<Tag Value="TAG-MITHRILL"/>
+		<Parent Value="RES-GOLD"/>
+		<Parent Value="RES-STEEL"/>
+		<Parent Value="RES-SILVER"/>
+	</RES-MITHRILL>
+	
+	<!-- Gathering cost per unit (PP/Amout=) 18.0-->
+	<RES-SANDSTONE ResearchCost="0" Rarity="0" Worth="7" ProductionPoints="144" Weight="6.0" GatheringMultiplier="0.8" WinterMultiplier="-0.3">
+		<DescriptionInfo Name="DES_RES_SANDSTONE" Description="DES_RES_SANDSTONE_DES" IconName="Sandstone"/>
+		<ResourceDeposit MinimumCount="5.0" MaximumCount="10.0"/>
+		<WorkersAllowedToWork MinimumCount="1.0" MaximumCount="5.0"/>
+		<HiddenResourceLayers MinimumCount="3.0" MaximumCount="8.0"/>
+		<ResLifeCycle DSeasonKillPercent="0" RSeasonGrowPercent="0">
+			<RegenerationSeason Value="TAG-SUMMER"/>
+			<DeadSeason Value="TAG-WINTER"/>
+		</ResLifeCycle>
+		<TerrainModel Value="Sandstone"/>
+		<Essences Amount="0.5" Tag="TAG-ESSENCE_STONE"/>
+		<Tag Value="TAG-RESOURCE"/>
+		<Tag Value="TAG-SANDSTONE"/>
+	</RES-SANDSTONE>
+    <!-- Gathering cost per unit (PP/Amout=) 30.0-->
+    <RES-QUARTZ CraftedRes="TRUE" ResearchCost="1" Rarity="20" Worth="40" ProductionPoints="360" Weight="3.5" GatheringMultiplier="1.2" WinterMultiplier="-0.3" ResourceType="Improved">
+        <DescriptionInfo Name="DES_RES_QUARTZ" Description="DES_RES_QUARTZ_DES" IconName="Quartz"/>
+        <ResourceDeposit MinimumCount="5.0" MaximumCount="10.0"/>
+        <WorkersAllowedToWork MinimumCount="1.0" MaximumCount="5.0"/>
+        <HiddenResourceLayers MinimumCount="3.0" MaximumCount="7.0"/>
+        <ResLifeCycle DSeasonKillPercent="0" RSeasonGrowPercent="0">
+            <RegenerationSeason Value="TAG-SUMMER"/>
+            <DeadSeason Value="TAG-WINTER"/>
+        </ResLifeCycle>
+        <TerrainModel Value="Quartz"/>
+        <Essences Amount="0.9" Tag="TAG-ESSENCE_STONE"/>
+        <Tag Value="TAG-RESOURCE"/>
+        <Tag Value="TAG-QUARTZ"/>
+        <Parent Value="RES-SANDSTONE"/>
+    </RES-QUARTZ>
+	<!-- Gathering cost per unit (PP/Amout=) 27.0-->
+	<RES-CLAY CraftedRes="TRUE" ResearchCost="1" Rarity="25" Worth="35" ProductionPoints="351" Weight="5.0" GatheringMultiplier="1.3" WinterMultiplier="-0.3">
+		<DescriptionInfo Name="DES_RES_CLAY" Description="DES_RES_CLAY_DES" IconName="Clay"/>
+		<ResourceDeposit MinimumCount="5.0" MaximumCount="10.0"/>
+		<WorkersAllowedToWork MinimumCount="1.0" MaximumCount="5.0"/>
+		<HiddenResourceLayers MinimumCount="3.0" MaximumCount="7.0"/>
+		<ResLifeCycle DSeasonKillPercent="0" RSeasonGrowPercent="0">
+			<RegenerationSeason Value="TAG-SUMMER"/>
+			<DeadSeason Value="TAG-WINTER"/>
+		</ResLifeCycle>
+		<TerrainModel Value="Clay"/>
+		<Essences Amount="0.9" Tag="TAG-ESSENCE_STONE"/>
+		<Tag Value="TAG-RESOURCE"/>
+		<Tag Value="TAG-CLAY"/>
+		<Parent Value="RES-SANDSTONE"/>
+	</RES-CLAY>
+	<!-- Gathering cost per unit (PP/Amout=) 24.0-->
+	<RES-GRANITE CraftedRes="TRUE" ResearchCost="1" Rarity="35" Worth="45" ProductionPoints="312" Weight="6.5" GatheringMultiplier="1.3" WinterMultiplier="-0.3" ResourceType="Wild">
+		<DescriptionInfo Name="DES_RES_GRANITE" Description="DES_RES_GRANITE_DES" IconName="Granite"/>
+		<ResourceDeposit MinimumCount="5.0" MaximumCount="10.0"/>
+		<WorkersAllowedToWork MinimumCount="1.0" MaximumCount="5.0"/>
+		<HiddenResourceLayers MinimumCount="3.0" MaximumCount="7.0"/>
+		<ResLifeCycle DSeasonKillPercent="0" RSeasonGrowPercent="0">
+			<RegenerationSeason Value="TAG-SUMMER"/>
+			<DeadSeason Value="TAG-WINTER"/>
+		</ResLifeCycle>
+		<TerrainModel Value="Granite"/>
+		<Essences Amount="0.9" Tag="TAG-ESSENCE_STONE"/>
+		<Tag Value="TAG-RESOURCE"/>
+		<Tag Value="TAG-GRANITE"/>
+		<Parent Value="RES-SANDSTONE"/>
+	</RES-GRANITE>
+	<!-- Gathering cost per unit (PP/Amout=) 60.0-->
+	<RES-OBSIDIAN CraftedRes="TRUE" ResearchCost="2" Rarity="60" Worth="95" ProductionPoints="720" Weight="5.5" GatheringMultiplier="1.2" WinterMultiplier="-0.3">
+		<DescriptionInfo Name="DES_RES_OBSIDIAN" Description="DES_RES_OBSIDIAN_DES" IconName="Obsidian"/>
+		<ResourceDeposit MinimumCount="5.0" MaximumCount="10.0"/>
+		<WorkersAllowedToWork MinimumCount="1.0" MaximumCount="5.0"/>
+		<HiddenResourceLayers MinimumCount="3.0" MaximumCount="6.0"/>
+		<ResLifeCycle DSeasonKillPercent="0" RSeasonGrowPercent="0">
+			<RegenerationSeason Value="TAG-SUMMER"/>
+			<DeadSeason Value="TAG-WINTER"/>
+		</ResLifeCycle>
+		<TerrainModel Value="Obsidian"/>
+		<Essences Amount="1.4" Tag="TAG-ESSENCE_STONE"/>
+		<Tag Value="TAG-RESOURCE"/>
+		<Tag Value="TAG-OBSIDIAN"/>
+		<Parent Value="RES-CLAY"/>
+		<Parent Value="RES-QUARTZ"/>
+		<Parent Value="RES-GRANITE"/>
+	</RES-OBSIDIAN>
+	
+	<!--RES_TIER4-->
+	<RES-PURE_STONE CraftedRes="TRUE" ResearchCost="3" Rarity="70" Worth="180" ProductionPoints="1000" Weight="6.0" GatheringMultiplier="1.0">
+		<DescriptionInfo Name="DES_RES_PURE_STONE" Description="DES_RES_PURE_STONE_DES" IconName="PureStone"/>
+		<ResourceDeposit MinimumCount="10.0" MaximumCount="20.0"/>
+		<WorkersAllowedToWork MinimumCount="1.0" MaximumCount="5.0"/>
+		<HiddenResourceLayers MinimumCount="1.0" MaximumCount="3.0"/>
+		<ResLifeCycle DSeasonKillPercent="0" RSeasonGrowPercent="0">
+			<RegenerationSeason Value="TAG-SUMMER"/>
+			<DeadSeason Value="TAG-WINTER"/>
+		</ResLifeCycle>
+		<TerrainModel Value="Placeholder"/>
+		<Essences Amount="2.4" Tag="TAG-ESSENCE_STONE"/> 		
+		<Tag Value="TAG-RESOURCE"/>
+		<Tag Value="TAG-PURE_STONE"/>
+		<Parent Value="RES-OBSIDIAN"/>
+	</RES-PURE_STONE>
+	<RES-ARMOURED_STONE CraftedRes="TRUE" ResearchCost="3" Rarity="80" Worth="175" ProductionPoints="1000" Weight="5.0" GatheringMultiplier="1.0" ResourceType="Wild">
+		<DescriptionInfo Name="DES_RES_ARMOURED_STONE" Description="DES_RES_ARMOURED_STONE_DES" IconName="ArmouredStone"/>
+		<ResourceDeposit MinimumCount="10.0" MaximumCount="20.0"/>
+		<WorkersAllowedToWork MinimumCount="1.0" MaximumCount="5.0"/>
+		<HiddenResourceLayers MinimumCount="1.0" MaximumCount="3.0"/>
+		<ResLifeCycle DSeasonKillPercent="0" RSeasonGrowPercent="0">
+			<RegenerationSeason Value="TAG-SUMMER"/>
+			<DeadSeason Value="TAG-WINTER"/>
+		</ResLifeCycle>
+		<TerrainModel Value="Placeholder"/>
+		<Essences Amount="1.1" Tag="TAG-ESSENCE_STONE"/>
+		<Essences Amount="1.3" Tag="TAG-ESSENCE_METAL"/>
+		<Tag Value="TAG-RESOURCE"/>
+		<Tag Value="TAG-ARMOURED_STONE"/>
+		<Parent Value="RES-OBSIDIAN"/>
+		<Parent Value="RES-MITHRILL"/>
+	</RES-ARMOURED_STONE>
+	<RES-METAL_COMPOSITE CraftedRes="TRUE" ResearchCost="3" Rarity="75" Worth="170" ProductionPoints="1000" Weight="4.0" GatheringMultiplier="1.0">
+		<DescriptionInfo Name="DES_RES_METAL_COMPOSITE" Description="DES_RES_METAL_COMPOSITE_DES" IconName="MetalComposite"/>
+		<ResourceDeposit MinimumCount="10.0" MaximumCount="20.0"/>
+		<WorkersAllowedToWork MinimumCount="1.0" MaximumCount="5.0"/>
+		<HiddenResourceLayers MinimumCount="1.0" MaximumCount="3.0"/>
+		<ResLifeCycle DSeasonKillPercent="0" RSeasonGrowPercent="0">
+			<RegenerationSeason Value="TAG-SUMMER"/>
+			<DeadSeason Value="TAG-WINTER"/>
+		</ResLifeCycle>
+		<TerrainModel Value="Placeholder"/>
+		<Essences Amount="2.4" Tag="TAG-ESSENCE_METAL"/> 		
+		<Tag Value="TAG-RESOURCE"/>
+		<Tag Value="TAG-METAL_COMPOSITE"/>
+		<Parent Value="RES-MITHRILL"/>
+	</RES-METAL_COMPOSITE>
+	<RES-GOLEM_LEATHER CraftedRes="TRUE" ResearchCost="3" Rarity="70" Worth="165" ProductionPoints="1000" Weight="2.8" GatheringMultiplier="1.0" ResourceType="Improved">
+		<DescriptionInfo Name="DES_RES_GOLEM_LEATHER" Description="DES_RES_GOLEM_LEATHER_DES" IconName="GolemLeather"/>
+		<ResourceDeposit MinimumCount="10.0" MaximumCount="20.0"/>
+		<WorkersAllowedToWork MinimumCount="1.0" MaximumCount="5.0"/>
+		<HiddenResourceLayers MinimumCount="1.0" MaximumCount="3.0"/>
+		<ResLifeCycle DSeasonKillPercent="0" RSeasonGrowPercent="0">
+			<RegenerationSeason Value="TAG-SUMMER"/>
+			<DeadSeason Value="TAG-WINTER"/>
+		</ResLifeCycle>
+		<TerrainModel Value="Placeholder"/>
+		<Essences Amount="1.1" Tag="TAG-ESSENCE_METAL"/>
+		<Essences Amount="1.3" Tag="TAG-ESSENCE_LEATHER"/>
+		<Tag Value="TAG-RESOURCE"/>
+		<Tag Value="TAG-GOLEM_LEATHER"/>
+		<Parent Value="RES-MITHRILL"/>
+		<Parent Value="RES-MYTHICAL_LEATHER"/>
+	</RES-GOLEM_LEATHER>
+	<RES-COMBAT_LEATHER CraftedRes="TRUE" ResearchCost="3" Rarity="75" Worth="160" ProductionPoints="1000" Weight="2.5" GatheringMultiplier="1.0">
+		<DescriptionInfo Name="DES_RES_COMBAT_LEATHER" Description="DES_RES_COMBAT_LEATHER_DES" IconName="CombatLeather"/>
+		<ResourceDeposit MinimumCount="10.0" MaximumCount="20.0"/>
+		<WorkersAllowedToWork MinimumCount="1.0" MaximumCount="5.0"/>
+		<HiddenResourceLayers MinimumCount="1.0" MaximumCount="3.0"/>
+		<ResLifeCycle DSeasonKillPercent="0" RSeasonGrowPercent="0">
+			<RegenerationSeason Value="TAG-SUMMER"/>
+			<DeadSeason Value="TAG-WINTER"/>
+		</ResLifeCycle>
+		<TerrainModel Value="Placeholder"/>
+		<Essences Amount="2.4" Tag="TAG-ESSENCE_LEATHER"/>		
+		<Tag Value="TAG-RESOURCE"/>
+		<Tag Value="TAG-COMBAT_LEATHER"/>
+		<Parent Value="RES-MYTHICAL_LEATHER"/>
+	</RES-COMBAT_LEATHER>
+	<RES-SPIKE_LEATHER CraftedRes="TRUE" ResearchCost="3" Rarity="77" Worth="165" ProductionPoints="1000" Weight="3.0" GatheringMultiplier="1.0" ResourceType="Wild">
+		<DescriptionInfo Name="DES_RES_SPIKE_LEATHER" Description="DES_RES_SPIKE_LEATHER_DES" IconName="SpikeLeather"/>
+		<ResourceDeposit MinimumCount="10.0" MaximumCount="20.0"/>
+		<WorkersAllowedToWork MinimumCount="1.0" MaximumCount="5.0"/>
+		<HiddenResourceLayers MinimumCount="1.0" MaximumCount="3.0"/>
+		<ResLifeCycle DSeasonKillPercent="0" RSeasonGrowPercent="0">
+			<RegenerationSeason Value="TAG-SUMMER"/>
+			<DeadSeason Value="TAG-WINTER"/>
+		</ResLifeCycle>
+		<TerrainModel Value="Placeholder"/>
+		<Essences Amount="1.1" Tag="TAG-ESSENCE_LEATHER"/>
+		<Essences Amount="1.3" Tag="TAG-ESSENCE_BONE"/>
+		<Tag Value="TAG-RESOURCE"/>
+		<Tag Value="TAG-SPIKE_LEATHER"/>
+		<Parent Value="RES-MYTHICAL_LEATHER"/>
+		<Parent Value="RES-DRAGON_BONE"/>
+	</RES-SPIKE_LEATHER>
+	<RES-RUNE_BONE CraftedRes="TRUE" ResearchCost="3" Rarity="80" Worth="160" ProductionPoints="1000" Weight="2.5" GatheringMultiplier="1.0">
+		<DescriptionInfo Name="DES_RES_RUNE_BONE" Description="DES_RES_RUNE_BONE_DES" IconName="RuneBone"/>
+		<ResourceDeposit MinimumCount="10.0" MaximumCount="20.0"/>
+		<WorkersAllowedToWork MinimumCount="1.0" MaximumCount="5.0"/>
+		<HiddenResourceLayers MinimumCount="1.0" MaximumCount="3.0"/>
+		<ResLifeCycle DSeasonKillPercent="0" RSeasonGrowPercent="0">
+			<RegenerationSeason Value="TAG-SUMMER"/>
+			<DeadSeason Value="TAG-WINTER"/>
+		</ResLifeCycle>
+		<TerrainModel Value="Placeholder"/>
+		<Essences Amount="2.4" Tag="TAG-ESSENCE_BONE"/>		
+		<Tag Value="TAG-RESOURCE"/>
+		<Tag Value="TAG-RUNE_BONE"/>
+		<Parent Value="RES-DRAGON_BONE"/>
+	</RES-RUNE_BONE>
+	<RES-ENCHANTED_BONE CraftedRes="TRUE" ResearchCost="3" Rarity="70" Worth="160" ProductionPoints="1200" Weight="1.8" GatheringMultiplier="1.0" ResourceType="Improved">
+		<DescriptionInfo Name="DES_RES_ENCHANTED_BONE" Description="DES_RES_ENCHANTED_BONE_DES" IconName="EnchantedBone"/>
+		<ResourceDeposit MinimumCount="10.0" MaximumCount="20.0"/>
+		<WorkersAllowedToWork MinimumCount="1.0" MaximumCount="5.0"/>
+		<HiddenResourceLayers MinimumCount="1.0" MaximumCount="3.0"/>
+		<ResLifeCycle DSeasonKillPercent="0" RSeasonGrowPercent="0">
+			<RegenerationSeason Value="TAG-SUMMER"/>
+			<DeadSeason Value="TAG-WINTER"/>
+		</ResLifeCycle>
+		<TerrainModel Value="Placeholder"/>
+		<Essences Amount="1.1" Tag="TAG-ESSENCE_BONE"/>
+		<Essences Amount="1.3" Tag="TAG-ESSENCE_GEM"/>
+		<Tag Value="TAG-RESOURCE"/>
+		<Tag Value="TAG-ENCHANTED_BONE"/>
+		<Parent Value="RES-DRAGON_BONE"/>
+		<Parent Value="RES-DIAMOND"/>
+	</RES-ENCHANTED_BONE>
+	<RES-GRANDGEM CraftedRes="TRUE" ResearchCost="3" Rarity="80" Worth="160" ProductionPoints="1200" Weight="1.5" GatheringMultiplier="1.0">
+		<DescriptionInfo Name="DES_RES_GRANDGEM" Description="DES_RES_GRANDGEM_DES" IconName="Grandgem"/>
+		<ResourceDeposit MinimumCount="10.0" MaximumCount="20.0"/>
+		<WorkersAllowedToWork MinimumCount="1.0" MaximumCount="5.0"/>
+		<HiddenResourceLayers MinimumCount="1.0" MaximumCount="3.0"/>
+		<ResLifeCycle DSeasonKillPercent="0" RSeasonGrowPercent="0">
+			<RegenerationSeason Value="TAG-SUMMER"/>
+			<DeadSeason Value="TAG-WINTER"/>
+		</ResLifeCycle>
+		<TerrainModel Value="Placeholder"/>
+		<Essences Amount="2.4" Tag="TAG-ESSENCE_GEM"/>  		
+		<Tag Value="TAG-RESOURCE"/>
+		<Tag Value="TAG-GRANDGEM"/>
+		<Parent Value="RES-DIAMOND"/>
+	</RES-GRANDGEM>
+	<RES-CRYSTAL_WOOD CraftedRes="TRUE" ResearchCost="3" Rarity="75" Worth="160" ProductionPoints="1200" Weight="2.0" GatheringMultiplier="1.0" ResourceType="Wild">
+		<DescriptionInfo Name="DES_RES_CRYSTAL_WOOD" Description="DES_RES_CRYSTAL_WOOD_DES" IconName="CrystalWood"/>
+		<ResourceDeposit MinimumCount="10.0" MaximumCount="20.0"/>
+		<WorkersAllowedToWork MinimumCount="1.0" MaximumCount="5.0"/>
+		<HiddenResourceLayers MinimumCount="1.0" MaximumCount="3.0"/>
+		<ResLifeCycle DSeasonKillPercent="0" RSeasonGrowPercent="0">
+			<RegenerationSeason Value="TAG-SUMMER"/>
+			<DeadSeason Value="TAG-WINTER"/>
+		</ResLifeCycle>
+		<TerrainModel Value="Placeholder"/>
+		<Essences Amount="1.1" Tag="TAG-ESSENCE_GEM"/>
+		<Essences Amount="1.3" Tag="TAG-ESSENCE_WOOD"/>
+		<Tag Value="TAG-RESOURCE"/>
+		<Tag Value="TAG-CRYSTAL_WOOD"/>
+		<Parent Value="RES-DIAMOND"/>
+		<Parent Value="RES-ANCIENT_WOOD"/>
+	</RES-CRYSTAL_WOOD>
+	<RES-SACRED_WOOD CraftedRes="TRUE" ResearchCost="3" Rarity="70" Worth="170" ProductionPoints="1000" Weight="3.5" GatheringMultiplier="1.0">
+		<DescriptionInfo Name="DES_RES_SACRED_WOOD" Description="DES_RES_SACRED_WOOD_DES" IconName="SacredWood"/>
+		<ResourceDeposit MinimumCount="10.0" MaximumCount="20.0"/>
+		<WorkersAllowedToWork MinimumCount="1.0" MaximumCount="5.0"/>
+		<HiddenResourceLayers MinimumCount="1.0" MaximumCount="3.0"/>
+		<ResLifeCycle DSeasonKillPercent="0" RSeasonGrowPercent="0">
+			<RegenerationSeason Value="TAG-SUMMER"/>
+			<DeadSeason Value="TAG-WINTER"/>
+		</ResLifeCycle>
+		<TerrainModel Value="Placeholder"/>
+		<Essences Amount="2.4" Tag="TAG-ESSENCE_WOOD"/> 		
+		<Tag Value="TAG-RESOURCE"/>
+		<Tag Value="TAG-SACRED_WOOD"/>
+		<Parent Value="RES-ANCIENT_WOOD"/>
+	</RES-SACRED_WOOD>
+	<RES-STONE_WOOD CraftedRes="TRUE" ResearchCost="3" Rarity="70" Worth="180" ProductionPoints="1000" Weight="4.0" GatheringMultiplier="1.0" ResourceType="Improved">
+		<DescriptionInfo Name="DES_RES_STONE_WOOD" Description="DES_RES_STONE_WOOD_DES" IconName="StoneWood"/>
+		<ResourceDeposit MinimumCount="10.0" MaximumCount="20.0"/>
+		<WorkersAllowedToWork MinimumCount="1.0" MaximumCount="5.0"/>
+		<HiddenResourceLayers MinimumCount="1.0" MaximumCount="3.0"/>
+		<ResLifeCycle DSeasonKillPercent="0" RSeasonGrowPercent="0">
+			<RegenerationSeason Value="TAG-SUMMER"/>
+			<DeadSeason Value="TAG-WINTER"/>
+		</ResLifeCycle>
+		<TerrainModel Value="Placeholder"/>
+		<Essences Amount="1.1" Tag="TAG-ESSENCE_WOOD"/>
+		<Essences Amount="1.3" Tag="TAG-ESSENCE_STONE"/>
+		<Tag Value="TAG-RESOURCE"/>
+		<Tag Value="TAG-STONE_WOOD"/>
+		<Parent Value="RES-ANCIENT_WOOD"/>
+		<Parent Value="RES-OBSIDIAN"/>
+	</RES-STONE_WOOD>
+	
+	<!-- RES_TIER5 -->
+	<RES-PRISTINE_MATTER CraftedRes="TRUE" ResearchCost="3" Rarity="82" Worth="450" ProductionPoints="1500" Weight="4.0" GatheringMultiplier="1.0" ResourceType="Improved">
+		<DescriptionInfo Name="DES_RES_PRISTINE_MATTER" Description="DES_RES_PRISTINE_MATTER_DES" IconName="PristineMatter"/>
+		<ResourceDeposit MinimumCount="10.0" MaximumCount="20.0"/>
+		<WorkersAllowedToWork MinimumCount="1.0" MaximumCount="5.0"/>
+		<HiddenResourceLayers MinimumCount="1.0" MaximumCount="3.0"/>
+		<ResLifeCycle DSeasonKillPercent="0" RSeasonGrowPercent="0">
+			<RegenerationSeason Value="TAG-SUMMER"/>
+			<DeadSeason Value="TAG-WINTER"/>
+		</ResLifeCycle>
+		<TerrainModel Value="Placeholder"/>
+		<Essences Amount="2.0" Tag="TAG-ESSENCE_STONE"/>
+		<Essences Amount="1.6" Tag="TAG-ESSENCE_WOOD"/>		
+		<Tag Value="TAG-RESOURCE"/>
+		<Tag Value="TAG-PRISTINE_MATTER"/>
+		<Parent Value="RES-PURE_STONE"/>		
+		<Parent Value="RES-STONE_WOOD"/>
+	</RES-PRISTINE_MATTER>
+	<RES-MOONSTONE CraftedRes="TRUE" ResearchCost="3" Rarity="82" Worth="430" ProductionPoints="1500" Weight="5.5" GatheringMultiplier="1.0" ResourceType="Wild">
+		<DescriptionInfo Name="DES_RES_MOONSTONE" Description="DES_RES_MOONSTONE_DES" IconName="Moonstone"/>
+		<ResourceDeposit MinimumCount="10.0" MaximumCount="20.0"/>
+		<WorkersAllowedToWork MinimumCount="1.0" MaximumCount="5.0"/>
+		<HiddenResourceLayers MinimumCount="1.0" MaximumCount="3.0"/>
+		<ResLifeCycle DSeasonKillPercent="0" RSeasonGrowPercent="0">
+			<RegenerationSeason Value="TAG-SUMMER"/>
+			<DeadSeason Value="TAG-WINTER"/>
+		</ResLifeCycle>
+		<TerrainModel Value="Placeholder"/>
+		<Essences Amount="2.0" Tag="TAG-ESSENCE_STONE"/>
+		<Essences Amount="1.6" Tag="TAG-ESSENCE_METAL"/>		
+		<Tag Value="TAG-RESOURCE"/>
+		<Tag Value="TAG-MOONSTONE"/>
+		<Parent Value="RES-PURE_STONE"/>		
+		<Parent Value="RES-ARMOURED_STONE"/>
+	</RES-MOONSTONE>
+	<RES-SECRET_ALLOY CraftedRes="TRUE" ResearchCost="3" Rarity="87" Worth="400" ProductionPoints="1500" Weight="3.0" GatheringMultiplier="1.0" ResourceType="Improved">
+		<DescriptionInfo Name="DES_RES_SECRET_ALLOY" Description="DES_RES_SECRET_ALLOY_DES" IconName="SecretAlloy"/>
+		<ResourceDeposit MinimumCount="10.0" MaximumCount="20.0"/>
+		<WorkersAllowedToWork MinimumCount="1.0" MaximumCount="5.0"/>
+		<HiddenResourceLayers MinimumCount="1.0" MaximumCount="3.0"/>
+		<ResLifeCycle DSeasonKillPercent="0" RSeasonGrowPercent="0">
+			<RegenerationSeason Value="TAG-SUMMER"/>
+			<DeadSeason Value="TAG-WINTER"/>
+		</ResLifeCycle>
+		<TerrainModel Value="Placeholder"/>
+		<Essences Amount="2.0" Tag="TAG-ESSENCE_METAL"/>
+		<Essences Amount="1.6" Tag="TAG-ESSENCE_STONE"/>		
+		<Tag Value="TAG-RESOURCE"/>
+		<Tag Value="TAG-SECRET_ALLOY"/>
+		<Parent Value="RES-METAL_COMPOSITE"/>		
+		<Parent Value="RES-ARMOURED_STONE"/>
+	</RES-SECRET_ALLOY>
+	<RES-IGNEOUS_SPIKE CraftedRes="TRUE" ResearchCost="3" Rarity="81" Worth="400" ProductionPoints="1500" Weight="4.5" GatheringMultiplier="1.0" ResourceType="Wild">
+		<DescriptionInfo Name="DES_RES_IGNEOUS_SPIKE" Description="DES_RES_IGNEOUS_SPIKE_DES" IconName="IgneousSpike"/>
+		<ResourceDeposit MinimumCount="10.0" MaximumCount="20.0"/>
+		<WorkersAllowedToWork MinimumCount="1.0" MaximumCount="5.0"/>
+		<HiddenResourceLayers MinimumCount="1.0" MaximumCount="3.0"/>
+		<ResLifeCycle DSeasonKillPercent="0" RSeasonGrowPercent="0">
+			<RegenerationSeason Value="TAG-SUMMER"/>
+			<DeadSeason Value="TAG-WINTER"/>
+		</ResLifeCycle>
+		<TerrainModel Value="Placeholder"/>
+		<Essences Amount="2.0" Tag="TAG-ESSENCE_METAL"/>
+		<Essences Amount="1.6" Tag="TAG-ESSENCE_LEATHER"/>		
+		<Tag Value="TAG-RESOURCE"/>
+		<Tag Value="TAG-IGNEOUS_SPIKE"/>
+		<Parent Value="RES-METAL_COMPOSITE"/>		
+		<Parent Value="RES-GOLEM_LEATHER"/>
+	</RES-IGNEOUS_SPIKE>
+	<RES-ALCHEMY_SKIN CraftedRes="TRUE" ResearchCost="3" Rarity="85" Worth="400" ProductionPoints="1500" Weight="3.0" GatheringMultiplier="1.0" ResourceType="Improved">
+		<DescriptionInfo Name="DES_RES_ALCHEMY_SKIN" Description="DES_RES_ALCHEMY_SKIN_DES" IconName="AlchemySkin"/>
+		<ResourceDeposit MinimumCount="10.0" MaximumCount="20.0"/>
+		<WorkersAllowedToWork MinimumCount="1.0" MaximumCount="5.0"/>
+		<HiddenResourceLayers MinimumCount="1.0" MaximumCount="3.0"/>
+		<ResLifeCycle DSeasonKillPercent="0" RSeasonGrowPercent="0">
+			<RegenerationSeason Value="TAG-SUMMER"/>
+			<DeadSeason Value="TAG-WINTER"/>
+		</ResLifeCycle>
+		<TerrainModel Value="Placeholder"/>
+		<Essences Amount="2.0" Tag="TAG-ESSENCE_LEATHER"/>
+		<Essences Amount="1.6" Tag="TAG-ESSENCE_METAL"/>		
+		<Tag Value="TAG-RESOURCE"/>
+		<Tag Value="TAG-ALCHEMY_SKIN"/>
+		<Parent Value="RES-GOLEM_LEATHER"/>		
+		<Parent Value="RES-COMBAT_LEATHER"/>
+	</RES-ALCHEMY_SKIN>
+	<RES-MORPH_MATERIAL CraftedRes="TRUE" ResearchCost="3" Rarity="90" Worth="400" ProductionPoints="1500" Weight="5.5" GatheringMultiplier="1.0" ResourceType="Wild">
+		<DescriptionInfo Name="DES_RES_MORPH_MATERIAL" Description="DES_RES_MORPH_MATERIAL_DES" IconName="MorphMaterial"/>
+		<ResourceDeposit MinimumCount="10.0" MaximumCount="20.0"/>
+		<WorkersAllowedToWork MinimumCount="1.0" MaximumCount="5.0"/>
+		<HiddenResourceLayers MinimumCount="1.0" MaximumCount="3.0"/>
+		<ResLifeCycle DSeasonKillPercent="0" RSeasonGrowPercent="0">
+			<RegenerationSeason Value="TAG-SUMMER"/>
+			<DeadSeason Value="TAG-WINTER"/>
+		</ResLifeCycle>
+		<TerrainModel Value="Placeholder"/>
+		<Essences Amount="2.0" Tag="TAG-ESSENCE_LEATHER"/>
+		<Essences Amount="1.6" Tag="TAG-ESSENCE_BONE"/>
+	    <Tag Value="TAG-RESOURCE"/>
+		<Tag Value="TAG-MORPH_MATERIAL"/>
+		<Parent Value="RES-SPIKE_LEATHER"/>		
+		<Parent Value="RES-COMBAT_LEATHER"/>
+	</RES-MORPH_MATERIAL>
+	<RES-WYRM_SILK CraftedRes="TRUE" ResearchCost="3" Rarity="85" Worth="400" ProductionPoints="1500" Weight="2.0" GatheringMultiplier="1.0" ResourceType="Improved">
+		<DescriptionInfo Name="DES_RES_WYRM_SILK" Description="DES_RES_WYRM_SILK_DES" IconName="WyrmSilk"/>
+		<ResourceDeposit MinimumCount="10.0" MaximumCount="20.0"/>
+		<WorkersAllowedToWork MinimumCount="1.0" MaximumCount="5.0"/>
+		<HiddenResourceLayers MinimumCount="1.0" MaximumCount="3.0"/>
+		<ResLifeCycle DSeasonKillPercent="0" RSeasonGrowPercent="0">
+			<RegenerationSeason Value="TAG-SUMMER"/>
+			<DeadSeason Value="TAG-WINTER"/>
+		</ResLifeCycle>
+		<TerrainModel Value="Placeholder"/>
+		<Essences Amount="2.0" Tag="TAG-ESSENCE_BONE"/>
+		<Essences Amount="1.6" Tag="TAG-ESSENCE_LEATHER"/>		
+		<Tag Value="TAG-RESOURCE"/>
+		<Tag Value="TAG-WYRM_SILK"/>
+		<Parent Value="RES-SPIKE_LEATHER"/>
+		<Parent Value="RES-RUNE_BONE"/>
+	</RES-WYRM_SILK>
+	<RES-FORGOTTEN_ESSENCE CraftedRes="TRUE" ResearchCost="3" Rarity="95" Worth="400" ProductionPoints="1500" Weight="3.5" GatheringMultiplier="1.0" ResourceType="Wild">
+		<DescriptionInfo Name="DES_RES_FORGOTTEN_ESSENCE" Description="DES_RES_FORGOTTEN_ESSENCE_DES" IconName="ForgottenEssence"/>
+		<ResourceDeposit MinimumCount="10.0" MaximumCount="20.0"/>
+		<WorkersAllowedToWork MinimumCount="1.0" MaximumCount="5.0"/>
+		<HiddenResourceLayers MinimumCount="1.0" MaximumCount="3.0"/>
+		<ResLifeCycle DSeasonKillPercent="0" RSeasonGrowPercent="0">
+			<RegenerationSeason Value="TAG-SUMMER"/>
+			<DeadSeason Value="TAG-WINTER"/>
+		</ResLifeCycle>
+		<TerrainModel Value="Placeholder"/>
+		<Essences Amount="2.0" Tag="TAG-ESSENCE_BONE"/>
+		<Essences Amount="1.6" Tag="TAG-ESSENCE_GEM"/>		
+		<Tag Value="TAG-RESOURCE"/>
+		<Tag Value="TAG-FORGOTTEN_ESSENCE"/>
+		<Parent Value="RES-ENCHANTED_BONE"/>		
+		<Parent Value="RES-RUNE_BONE"/>
+	</RES-FORGOTTEN_ESSENCE>
+	<RES-VOID_SPARKLER CraftedRes="TRUE" ResearchCost="3" Rarity="95" Worth="400" ProductionPoints="1500" Weight="2.0" GatheringMultiplier="1.0" ResourceType="Improved">
+		<DescriptionInfo Name="DES_RES_VOID_SPARKLER" Description="DES_RES_VOID_SPARKLER_DES" IconName="VoidSparkler"/>
+		<ResourceDeposit MinimumCount="10.0" MaximumCount="20.0"/>
+		<WorkersAllowedToWork MinimumCount="1.0" MaximumCount="5.0"/>
+		<HiddenResourceLayers MinimumCount="1.0" MaximumCount="3.0"/>
+		<ResLifeCycle DSeasonKillPercent="0" RSeasonGrowPercent="0">
+			<RegenerationSeason Value="TAG-SUMMER"/>
+			<DeadSeason Value="TAG-WINTER"/>
+		</ResLifeCycle>
+		<TerrainModel Value="Placeholder"/>
+		<Essences Amount="2.0" Tag="TAG-ESSENCE_GEM"/>
+		<Essences Amount="1.6" Tag="TAG-ESSENCE_BONE"/>
+		<Tag Value="TAG-RESOURCE"/>
+		<Tag Value="TAG-VOID_SPARKLER"/>
+		<Parent Value="RES-ENCHANTED_BONE"/>		
+		<Parent Value="RES-GRANDGEM"/>
+	</RES-VOID_SPARKLER>
+	<RES-EARTH_CORE CraftedRes="TRUE" ResearchCost="3" Rarity="85" Worth="400" ProductionPoints="1500" Weight="3.8" GatheringMultiplier="1.0" ResourceType="Wild">
+		<DescriptionInfo Name="DES_RES_EARTH_CORE" Description="DES_RES_EARTH_CORE_DES" IconName="EarthCore"/>
+		<ResourceDeposit MinimumCount="10.0" MaximumCount="20.0"/>
+		<WorkersAllowedToWork MinimumCount="1.0" MaximumCount="5.0"/>
+		<HiddenResourceLayers MinimumCount="1.0" MaximumCount="3.0"/>
+		<ResLifeCycle DSeasonKillPercent="0" RSeasonGrowPercent="0">
+			<RegenerationSeason Value="TAG-SUMMER"/>
+			<DeadSeason Value="TAG-WINTER"/>
+		</ResLifeCycle>
+		<TerrainModel Value="Placeholder"/>
+		<Essences Amount="2.0" Tag="TAG-ESSENCE_GEM"/>
+		<Essences Amount="1.6" Tag="TAG-ESSENCE_WOOD"/>		
+		<Tag Value="TAG-RESOURCE"/>
+		<Tag Value="TAG-EARTH_CORE"/>
+		<Parent Value="RES-CRYSTAL_WOOD"/>		
+		<Parent Value="RES-GRANDGEM"/>
+	</RES-EARTH_CORE>
+	<RES-LIFE_ROOT CraftedRes="TRUE" ResearchCost="3" Rarity="85" Worth="400" ProductionPoints="1500" Weight="3.0" GatheringMultiplier="1.0" ResourceType="Improved">
+		<DescriptionInfo Name="DES_RES_LIFE_ROOT" Description="DES_RES_LIFE_ROOT_DES" IconName="LifeRoot"/>
+		<ResourceDeposit MinimumCount="10.0" MaximumCount="20.0"/>
+		<WorkersAllowedToWork MinimumCount="1.0" MaximumCount="5.0"/>
+		<HiddenResourceLayers MinimumCount="1.0" MaximumCount="3.0"/>
+		<ResLifeCycle DSeasonKillPercent="0" RSeasonGrowPercent="0">
+			<RegenerationSeason Value="TAG-SUMMER"/>
+			<DeadSeason Value="TAG-WINTER"/>
+		</ResLifeCycle>
+		<TerrainModel Value="Placeholder"/>
+		<Essences Amount="2.0" Tag="TAG-ESSENCE_WOOD"/>
+		<Essences Amount="1.6" Tag="TAG-ESSENCE_GEM"/>		
+		<Tag Value="TAG-RESOURCE"/>
+		<Tag Value="TAG-LIFE_ROOT"/>
+		<Parent Value="RES-CRYSTAL_WOOD"/>		
+		<Parent Value="RES-SACRED_WOOD"/>
+	</RES-LIFE_ROOT>
+	<RES-GODS_BRANCH CraftedRes="TRUE" ResearchCost="3" Rarity="84" Worth="450" ProductionPoints="1500" Weight="4.5" GatheringMultiplier="1.0" ResourceType="Wild">
+		<DescriptionInfo Name="DES_RES_GODS_BRANCH" Description="DES_RES_GODS_BRANCH_DES" IconName="GodsBranch"/>
+		<ResourceDeposit MinimumCount="10.0" MaximumCount="20.0"/>
+		<WorkersAllowedToWork MinimumCount="1.0" MaximumCount="5.0"/>
+		<HiddenResourceLayers MinimumCount="1.0" MaximumCount="3.0"/>
+		<ResLifeCycle DSeasonKillPercent="0" RSeasonGrowPercent="0">
+			<RegenerationSeason Value="TAG-SUMMER"/>
+			<DeadSeason Value="TAG-WINTER"/>
+		</ResLifeCycle>
+		<TerrainModel Value="Placeholder"/>
+		<Essences Amount="2.0" Tag="TAG-ESSENCE_WOOD"/>
+		<Essences Amount="1.6" Tag="TAG-ESSENCE_STONE"/>
+		<Tag Value="TAG-RESOURCE"/>
+		<Tag Value="TAG-GODS_BRANCH"/>
+		<Parent Value="RES-STONE_WOOD"/>
+		<Parent Value="RES-SACRED_WOOD"/>
+	</RES-GODS_BRANCH>
+	
+	<!--FOOD-->
+	<!-- Gathering cost per unit (PP/Amout=) 13.5-->
+	<RES-MEAT ResearchCost="-1" Rarity="10" Worth="4" ProductionPoints="135" Weight="3.0" GatheringMultiplier="1" WinterMultiplier="-0.3">
+		<DescriptionInfo Name="DES_RES_MEAT" Description="DES_RES_MEAT_DES" IconName="Meat"/>
+		<ResourceDeposit MinimumCount="10.0" MaximumCount="50.0"/>
+		<WorkersAllowedToWork MinimumCount="1.0" MaximumCount="5.0"/>
+		<HiddenResourceLayers MinimumCount="0.0" MaximumCount="0.0"/>
+		<ResLifeCycle DSeasonKillPercent="50" RSeasonGrowPercent="50">
+			<RegenerationSeason Value="TAG-SUMMER"/>
+			<DeadSeason Value="TAG-WINTER"/>
+		</ResLifeCycle>
+		<TerrainModel Value="Meat"/>
+		<Essences Amount="0.0" Tag="TAG-ESSENCE_GRAY"/>
+		<Tag Value="TAG-RESOURCE"/>
+		<Tag Value="TAG-MEAT"/>
+		<Tag Value="TAG-FOOD"/>
+	</RES-MEAT>
+	<!-- Gathering cost per unit (PP/Amout=) 13.5-->
+	<RES-FISH ResearchCost="-1" Rarity="15" Worth="5" ProductionPoints="135" Weight="2.0" GatheringMultiplier="1">
+		<DescriptionInfo Name="DES_RES_FISH" Description="DES_RES_FISH_DES" IconName="Fish"/>
+		<ResourceDeposit MinimumCount="10.0" MaximumCount="50.0"/>
+		<WorkersAllowedToWork MinimumCount="1.0" MaximumCount="5.0"/>
+		<HiddenResourceLayers MinimumCount="0.0" MaximumCount="0.0"/>
+		<ResLifeCycle DSeasonKillPercent="0" RSeasonGrowPercent="50">
+			<RegenerationSeason Value="TAG-SPRING"/>
+			<DeadSeason Value="TAG-WINTER"/>
+		</ResLifeCycle>
+		<TerrainModel Value="Fish"/>
+		<Essences Amount="0.0" Tag="TAG-ESSENCE_GRAY"/>
+		<Tag Value="TAG-RESOURCE"/>
+		<Tag Value="TAG-FISH"/>
+		<Tag Value="TAG-FOOD"/>
+		<Parent Value="RES-MEAT"/>
+	</RES-FISH>
+	<!-- Gathering cost per unit (PP/Amout=) 9.0-->
+	<RES-VEGGIES ResearchCost="-1" Rarity="5" Worth="3" ProductionPoints="90" Weight="1.5" GatheringMultiplier="1" SpringMultiplier="0" SummerMultiplier="0" AutumnMultiplier="-0.25" WinterMultiplier="-0.7">
+		<DescriptionInfo Name="DES_RES_VEGGIES" Description="DES_RES_VEGGIES_DES" IconName="Veggies"/>
+		<ResourceDeposit MinimumCount="10.0" MaximumCount="50.0"/>
+		<WorkersAllowedToWork MinimumCount="1.0" MaximumCount="5.0"/>
+		<HiddenResourceLayers MinimumCount="0.0" MaximumCount="0.0"/>
+		<ResLifeCycle DSeasonKillPercent="50" RSeasonGrowPercent="50">
+			<RegenerationSeason Value="TAG-AUTUMN"/>
+			<DeadSeason Value="TAG-WINTER"/>
+		</ResLifeCycle>
+		<TerrainModel Value="Veggies"/>
+		<Essences Amount="0.0" Tag="TAG-ESSENCE_GRAY"/>
+		<Tag Value="TAG-RESOURCE"/>
+		<Tag Value="TAG-VEGGIES"/>
+		<Tag Value="TAG-FOOD"/>
+	</RES-VEGGIES>
+	<!-- Gathering cost per unit (PP/Amout=) 13.5-->
+	<RES-HERBS ResearchCost="-1" Rarity="20" Worth="8" ProductionPoints="81" Weight="0.5" GatheringMultiplier="0.6" SpringMultiplier="0" SummerMultiplier="0" AutumnMultiplier="-0.25" WinterMultiplier="-0.7">
+		<DescriptionInfo Name="DES_RES_HERBS" Description="DES_RES_HERBS_DES" IconName="Herbs"/>
+		<ResourceDeposit MinimumCount="10.0" MaximumCount="50.0"/>
+		<WorkersAllowedToWork MinimumCount="1.0" MaximumCount="5.0"/>
+		<HiddenResourceLayers MinimumCount="0.0" MaximumCount="0.0"/>
+		<ResLifeCycle DSeasonKillPercent="100" RSeasonGrowPercent="50">
+			<RegenerationSeason Value="TAG-AUTUMN"/>
+			<DeadSeason Value="TAG-WINTER"/>
+		</ResLifeCycle>
+		<TerrainModel Value="Herbs"/>
+		<Essences Amount="0.0" Tag="TAG-ESSENCE_GRAY"/>
+		<Tag Value="TAG-RESOURCE"/>
+		<Tag Value="TAG-HERBS"/>
+		<Parent Value="RES-SPICES"/>
+	</RES-HERBS>
+	<!-- Gathering cost per unit (PP/Amout=) 9.0-->
+	<RES-FRUITS ResearchCost="-1" Rarity="10" Worth="2" ProductionPoints="90" Weight="0.5" GatheringMultiplier="1" SpringMultiplier="0" SummerMultiplier="0" AutumnMultiplier="-0.25" WinterMultiplier="-0.7">
+		<DescriptionInfo Name="DES_RES_FRUITS" Description="DES_RES_FRUITS_DES" IconName="Fruits"/>
+		<ResourceDeposit MinimumCount="10.0" MaximumCount="50.0"/>
+		<WorkersAllowedToWork MinimumCount="1.0" MaximumCount="5.0"/>
+		<HiddenResourceLayers MinimumCount="0.0" MaximumCount="0.0"/>
+		<ResLifeCycle DSeasonKillPercent="100" RSeasonGrowPercent="50">
+			<RegenerationSeason Value="TAG-SUMMER"/>
+			<DeadSeason Value="TAG-WINTER"/>
+		</ResLifeCycle>
+		<TerrainModel Value="Fruits"/>
+		<Essences Amount="0.0" Tag="TAG-ESSENCE_GRAY"/>
+		<Tag Value="TAG-RESOURCE"/>
+		<Tag Value="TAG-FRUITS"/>
+		<Tag Value="TAG-FOOD"/>
+	</RES-FRUITS>
+	<!-- Gathering cost per unit (PP/Amout=) 12.0-->
+	<RES-GRAIN ResearchCost="-1" Rarity="15" Worth="4" ProductionPoints="180" Weight="1.5" GatheringMultiplier="2" SpringMultiplier="-0.25" SummerMultiplier="0" AutumnMultiplier="0" WinterMultiplier="-0.7">
+		<DescriptionInfo Name="DES_RES_GRAIN" Description="DES_RES_GRAIN_DES" IconName="Grain"/>
+		<ResourceDeposit MinimumCount="10.0" MaximumCount="50.0"/>
+		<WorkersAllowedToWork MinimumCount="1.0" MaximumCount="5.0"/>
+		<HiddenResourceLayers MinimumCount="0.0" MaximumCount="0.0"/>
+		<ResLifeCycle DSeasonKillPercent="100" RSeasonGrowPercent="50">
+			<RegenerationSeason Value="TAG-SUMMER"/>
+			<DeadSeason Value="TAG-WINTER"/>
+		</ResLifeCycle>
+		<TerrainModel Value="Grain"/>
+		<Essences Amount="0.0" Tag="TAG-ESSENCE_GRAY"/>
+		<Tag Value="TAG-RESOURCE"/>
+		<Tag Value="TAG-GRAIN"/>
+		<Tag Value="TAG-FOOD"/>
+		<Parent Value="RES-VEGGIES"/>
+	</RES-GRAIN>
+	<!-- Gathering cost per unit (PP/Amout=) 13.6-->
+	<RES-BEETLE_JELLY ResearchCost="-1" Rarity="20" Worth="6" ProductionPoints="68" Weight="2.0" GatheringMultiplier="0.5" WinterMultiplier="-0.3">
+		<DescriptionInfo Name="DES_RES_BEETLE_JELLY" Description="DES_RES_BEETLE_JELLY_DES" IconName="BeetleJelly"/>
+		<ResourceDeposit MinimumCount="10.0" MaximumCount="50.0"/>
+		<WorkersAllowedToWork MinimumCount="1.0" MaximumCount="5.0"/>
+		<HiddenResourceLayers MinimumCount="0.0" MaximumCount="0.0"/>
+		<ResLifeCycle DSeasonKillPercent="100" RSeasonGrowPercent="50">
+			<RegenerationSeason Value="TAG-SUMMER"/>
+			<DeadSeason Value="TAG-WINTER"/>
+		</ResLifeCycle>
+		<TerrainModel Value="BeetleJelly"/>
+		<Essences Amount="0.0" Tag="TAG-ESSENCE_GRAY"/>
+		<Tag Value="TAG-RESOURCE"/>
+		<Tag Value="TAG-BEETLE_JELLY"/>
+		<Tag Value="TAG-FOOD"/>
+		<Parent Value="RES-MEAT"/>
+	</RES-BEETLE_JELLY>
+	<!-- Gathering cost per unit (PP/Amout=) 7.2-->
+	<RES-SPICES ResearchCost="-1" Rarity="30" Worth="6" ProductionPoints="72" Weight="0.5" GatheringMultiplier="1.0" SpringMultiplier="-0.25" SummerMultiplier="0" AutumnMultiplier="0" WinterMultiplier="-0.7">
+		<DescriptionInfo Name="DES_RES_SPICES" Description="DES_RES_SPICES_DES" IconName="Spices"/>
+		<ResourceDeposit MinimumCount="10.0" MaximumCount="50.0"/>
+		<WorkersAllowedToWork MinimumCount="1.0" MaximumCount="5.0"/>
+		<HiddenResourceLayers MinimumCount="0.0" MaximumCount="0.0"/>
+		<ResLifeCycle DSeasonKillPercent="100" RSeasonGrowPercent="50">
+			<RegenerationSeason Value="TAG-SUMMER"/>
+			<DeadSeason Value="TAG-WINTER"/>
+		</ResLifeCycle>
+		<TerrainModel Value="Spices"/>
+		<Essences Amount="0.0" Tag="TAG-ESSENCE_GRAY"/>
+		<Tag Value="TAG-RESOURCE"/>
+		<Tag Value="TAG-SPICES"/>
+		<Tag Value="TAG-FOOD"/>
+	</RES-SPICES>
+	<!-- Gathering cost per unit (PP/Amout=) 9.0-->
+	<RES-NUTS ResearchCost="-1" Rarity="15" Worth="3" ProductionPoints="180" Weight="0.6" GatheringMultiplier="2" SpringMultiplier="-0.25" SummerMultiplier="0" AutumnMultiplier="0" WinterMultiplier="-0.7">
+		<DescriptionInfo Name="DES_RES_NUTS" Description="DES_RES_NUTS_DES" IconName="Nuts"/>
+		<ResourceDeposit MinimumCount="10.0" MaximumCount="50.0"/>
+		<WorkersAllowedToWork MinimumCount="1.0" MaximumCount="5.0"/>
+		<HiddenResourceLayers MinimumCount="0.0" MaximumCount="0.0"/>
+		<ResLifeCycle DSeasonKillPercent="100" RSeasonGrowPercent="50">
+			<RegenerationSeason Value="TAG-SUMMER"/>
+			<DeadSeason Value="TAG-WINTER"/>
+		</ResLifeCycle>
+		<TerrainModel Value="Nuts"/>
+		<Essences Amount="0.0" Tag="TAG-ESSENCE_GRAY"/>
+		<Tag Value="TAG-RESOURCE"/>
+		<Tag Value="TAG-NUTS"/>
+		<Tag Value="TAG-FOOD"/>
+		<Parent Value="RES-FRUITS"/>
+	</RES-NUTS>
+	<!-- Gathering cost per unit (PP/Amout=) 9.0-->
+	<RES-MUSHROOMS ResearchCost="-1" Rarity="5" Worth="3" ProductionPoints="45" Weight="1.5" GatheringMultiplier="0.5" SpringMultiplier="-0.25" SummerMultiplier="0" AutumnMultiplier="0" WinterMultiplier="-0.7">
+		<DescriptionInfo Name="DES_RES_MUSHROOMS" Description="DES_RES_MUSHROOMS_DES" IconName="Mushrooms"/>
+		<ResourceDeposit MinimumCount="10.0" MaximumCount="50.0"/>
+		<WorkersAllowedToWork MinimumCount="1.0" MaximumCount="5.0"/>
+		<HiddenResourceLayers MinimumCount="0.0" MaximumCount="0.0"/>
+		<ResLifeCycle DSeasonKillPercent="100" RSeasonGrowPercent="50">
+			<RegenerationSeason Value="TAG-SUMMER"/>
+			<DeadSeason Value="TAG-WINTER"/>
+		</ResLifeCycle>
+		<TerrainModel Value="Mushrooms"/>
+		<Essences Amount="0.0" Tag="TAG-ESSENCE_GRAY"/>
+		<Tag Value="TAG-RESOURCE"/>
+		<Tag Value="TAG-MUSHROOMS"/>
+		<Tag Value="TAG-FOOD"/>
+		<Parent Value="RES-VEGGIES"/>
+	</RES-MUSHROOMS>
+	<!-- Gathering cost per unit (PP/Amout=) 5.4-->
+	<RES-EGGS ResearchCost="-1" Rarity="15" Worth="5" ProductionPoints="81" Weight="1.5" GatheringMultiplier="0.6">
+		<DescriptionInfo Name="DES_RES_EGGS" Description="DES_RES_EGGS_DES" IconName="Eggs"/>
+		<ResourceDeposit MinimumCount="10.0" MaximumCount="50.0"/>
+		<WorkersAllowedToWork MinimumCount="1.0" MaximumCount="5.0"/>
+		<HiddenResourceLayers MinimumCount="0.0" MaximumCount="0.0"/>
+		<ResLifeCycle DSeasonKillPercent="100" RSeasonGrowPercent="50">
+			<RegenerationSeason Value="TAG-SUMMER"/>
+			<DeadSeason Value="TAG-WINTER"/>
+		</ResLifeCycle>
+		<TerrainModel Value="Eggs"/>
+		<Essences Amount="0.0" Tag="TAG-ESSENCE_GRAY"/>
+		<Tag Value="TAG-RESOURCE"/>
+		<Tag Value="TAG-EGGS"/>
+		<Tag Value="TAG-FOOD"/>
+		<Parent Value="RES-MEAT"/>
+	</RES-EGGS>
+    <RES-COOKED_FOOD ResearchCost="-1" Rarity="50" Worth="8" ProductionPoints="300" Weight="0.5" GatheringMultiplier="1.0">
+        <DescriptionInfo Name="DES_RES_COOKED_FOOD" Description="DES_RES_COOKED_FOOD_DES" IconName="Placeholder"/>
+        <Essences Amount="0.0" Tag="TAG-ESSENCE_GRAY"/>        
+    </RES-COOKED_FOOD>
+
+	<!--SPECIAL STONE-->
+	<RES-COSMIC_SEED ResearchCost="-1" Rarity="99" Worth="700" ProductionPoints="99999" Weight="1.0" GatheringMultiplier="1.0">
+		<DescriptionInfo Name="DES_RES_COSMIC_SEED" Description="DES_RES_COSMIC_SEED_DES" IconName="CosmicSeed"/>
+		<ResourceDeposit MinimumCount="0.0" MaximumCount="0.0"/>
+		<WorkersAllowedToWork MinimumCount="0.0" MaximumCount="0.0"/>
+		<HiddenResourceLayers MinimumCount="0.0" MaximumCount="0.0"/>
+		<ResLifeCycle DSeasonKillPercent="100" RSeasonGrowPercent="0">
+			<RegenerationSeason Value="TAG-AUTUMN"/>
+			<DeadSeason Value="TAG-WINTER"/>
+		</ResLifeCycle>
+		<Essences Amount="13.0" Tag="TAG-ESSENCE_GRAY"/>
+		<Tag Value="TAG-RESOURCE"/>
+		<Tag Value="TAG-COSMIC_SEED"/>
+	</RES-COSMIC_SEED>
+  <RES-TERRAIN_ARTIFACT ResearchCost="-1" Rarity="99" Worth="999" ProductionPoints="800" Weight="1.0" GatheringMultiplier="0.1">
+		<DescriptionInfo Name="DES_TERRAIN_ARTIFACT" Description="DES_TERRAIN_ARTIFACT_DES" IconName="ResearchSpot1"/>
+		<ResourceDeposit MinimumCount="1.0" MaximumCount="1.0"/>
+		<WorkersAllowedToWork MinimumCount="0.0" MaximumCount="0.0"/>
+		<HiddenResourceLayers MinimumCount="0.0" MaximumCount="0.0"/>
+		<Essences Amount="0.0" Tag="TAG-ESSENCE_GRAY"/>
+		<Tag Value="TAG-RESOURCE"/>
+        <TerrainModel Value="ResearchSpot1"/>
+	</RES-TERRAIN_ARTIFACT>
+  <RES-COAL ResearchCost="-1" Rarity="0" Worth="5" ProductionPoints="150" Weight="3.5" GatheringMultiplier="0.5" WinterMultiplier="-0.3">
+    <DescriptionInfo Name="DES_RES_COAL" Description="DES_RES_COAL_DES" IconName="Coal"/>
+    <ResourceDeposit MinimumCount="5.0" MaximumCount="10.0"/>
+    <WorkersAllowedToWork MinimumCount="1.0" MaximumCount="5.0"/>
+    <HiddenResourceLayers MinimumCount="3.0" MaximumCount="7.0"/>
+    <ResLifeCycle DSeasonKillPercent="0" RSeasonGrowPercent="0">
+      <RegenerationSeason Value="TAG-SUMMER"/>
+      <DeadSeason Value="TAG-WINTER"/>
+    </ResLifeCycle>
+    <TerrainModel Value="Coal"/>
+    <Essences Amount="0.0" Tag="TAG-ESSENCE_GRAY"/>
+    <Tag Value="TAG-RESOURCE"/>
+    <Tag Value="TAG-FUEL"/>
+  </RES-COAL>
+</RESOURCES>

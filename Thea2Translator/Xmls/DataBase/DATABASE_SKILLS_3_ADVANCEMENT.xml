@@ -1,0 +1,162 @@
+﻿<SKILLS_3_ADVANCEMENT>
+	<SKILL-COUNTER_ATTACK Rarity="40">
+		<DescriptionInfo Name="DES_SKILL_COUNTER_ATTACK" Description="DES_SKILL_COUNTER_ATTACK_DES" IconName="SkillCounterAttack"/>
+		<BaseEssence Amount="20" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-RETALIATION_DMG_PER"/>
+		<SkillGroupFilter Value="AdvFighter"/>
+		<SkillGroupFilter Value="AdvAssassin"/>
+	</SKILL-COUNTER_ATTACK>
+	<SKILL-SNEAK_ATTACK Rarity="51">
+		<DescriptionInfo Name="DES_SKILL_SNEAK_ATTACK" Description="DES_SKILL_SNEAK_ATTACK_DES" IconName="SkillSneakAttack"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-SNEAK_ATTACK"/>
+		<SkillGroupFilter Value="ClassHunter"/>
+		<SkillGroupFilter Value="AdvAssassin"/>
+	</SKILL-SNEAK_ATTACK>
+	<SKILL-GROUND_SHAKING Rarity="60">
+		<DescriptionInfo Name="DES_SKILL_GROUND_SHAKING" Description="DES_SKILL_GROUND_SHAKING_DES" IconName="SkillGroundShaking"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-GROUND_SHAKING"/>
+		<SkillGroupFilter Value="AdvMagicUser"/>
+	</SKILL-GROUND_SHAKING>
+	<SKILL-ICE_SPIKE Rarity="60">
+		<DescriptionInfo Name="DES_SKILL_ICE_SPIKE" Description="DES_SKILL_ICE_SPIKE_DES" IconName="SkillIceSpike"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-ICE_SPIKE"/>
+		<SkillGroupFilter Value="AdvMagicUser"/>
+		<SkillGroupFilter Value="ClassNecromancer"/>
+	</SKILL-ICE_SPIKE>
+	<SKILL-POISON_DUST Rarity="40">
+		<DescriptionInfo Name="DES_SKILL_POISON_DUST" Description="DES_SKILL_POISON_DUST_DES" IconName="SkillPoisonDust"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-POISON_DUST"/>
+		<SkillGroupFilter Value="AdvMagicUser"/>
+		<SkillGroupFilter Value="ClassNecromancer"/>
+	</SKILL-POISON_DUST>
+	<SKILL-GHOST_TOUCH Rarity="40">
+		<DescriptionInfo Name="DES_SKILL_GHOST_TOUCH" Description="DES_SKILL_GHOST_TOUCH_DES" IconName="SkillGhostTouch"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-GHOST_TOUCH"/>
+		<SkillGroupFilter Value="ClassGhost"/>
+		<SkillGroupFilter Value="ClassNecromancer"/>
+	</SKILL-GHOST_TOUCH>
+	<SKILL-GOD_WORD Rarity="20">
+		<DescriptionInfo Name="DES_SKILL_GOD_WORD" Description="DES_SKILL_GOD_WORD_DES" IconName="SkillGodWord"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-ENERGY_DISTURB"/>
+		<SkillSubskill Value="SUBSKILL-SELF_PROTECTION_M_S"/>
+		<SkillGroupFilter Value="AdvGodMessenger"/>
+	</SKILL-GOD_WORD>
+	<SKILL-RELIABLE_ARGUMENT Rarity="20">
+		<DescriptionInfo Name="DES_SKILL_RELIABLE_ARGUMENT" Description="DES_SKILL_RELIABLE_ARGUMENT_DES" IconName="SkillReliableArgument"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-RELIABLE_ARGUMENT"/>
+		<SkillGroupFilter Value="AdvWiseman"/>
+		<SkillGroupFilter Value="ClassCraftsman"/>
+		<SkillGroupFilter Value="ClassInventor"/>
+	</SKILL-RELIABLE_ARGUMENT>
+	<SKILL-SOUL_TEAR Rarity="20">
+		<DescriptionInfo Name="DES_SKILL_SOUL_TEAR" Description="DES_SKILL_SOUL_TEAR_DES" IconName="SkillSoulTear"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-SOUL_TEAR"/>
+		<SkillGroupFilter Value="AdvSoulAttack"/>
+		<SkillGroupFilter Value="ClassNecromancer"/>
+	</SKILL-SOUL_TEAR>
+	<SKILL-SHADOW_WHISPERS Rarity="60">
+		<DescriptionInfo Name="DES_SKILL_SHADOW_WHISPERS" Description="DES_SKILL_SHADOW_WHISPERS_DES" IconName="SkillShadowWhispers"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-SHADOW_WHISPERS"/>
+		<SkillGroupFilter Value="AdvSoulAttack"/>
+		<SkillGroupFilter Value="ClassNecromancer"/>
+	</SKILL-SHADOW_WHISPERS>
+	<SKILL-PRESENCE Rarity="70">
+		<DescriptionInfo Name="DES_SKILL_PRESENCE" Description="DES_SKILL_PRESENCE_DES" IconName="SkillPresence"/>
+		<BaseEssence Amount="20" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-OVERWHELM"/>
+		<SkillGroupFilter Value="ClassGhost"/>
+	</SKILL-PRESENCE>
+	<SKILL-WEAKNESS Rarity="30">
+		<DescriptionInfo Name="DES_SKILL_WEAKNESS" Description="DES_SKILL_WEAKNESS_DES" IconName="SkillWeakness"/>
+		<BaseEssence Amount="35" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-WEAKNESS"/>
+		<SkillGroupFilter Value="ClassWitch"/>
+		<SkillGroupFilter Value="ClassShaman"/>
+		<SkillGroupFilter Value="ClassNecromancer"/>
+		<SkillGroupFilter Value="AdvSoulAttack"/>
+	</SKILL-WEAKNESS>
+	<SKILL-CORRUPTION Rarity="60">
+		<DescriptionInfo Name="DES_SKILL_CORRUPTION" Description="DES_SKILL_CORRUPTION_DES" IconName="SkillCorruption"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-CORRUPTION"/>
+		<SkillGroupFilter Value="Erotic"/>
+		<SkillGroupFilter Value="ClassWitch"/>
+		<SkillGroupFilter Value="ClassShaman"/>
+		<SkillGroupFilter Value="AdvSoulAttack"/>
+	</SKILL-CORRUPTION>
+	<SKILL-WILL_DRAIN Rarity="40">
+		<DescriptionInfo Name="DES_SKILL_WILL_DRAIN" Description="DES_SKILL_WILL_DRAIN_DES" IconName="SkillWillDrain"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-WILL_DRAIN"/>
+		<SkillGroupFilter Value="Erotic"/>
+		<SkillGroupFilter Value="ClassWitch"/>
+		<SkillGroupFilter Value="ClassShaman"/>
+		<SkillGroupFilter Value="AdvSoulAttack"/>
+	</SKILL-WILL_DRAIN>
+	<!--<SKILL-VIGOUR_DRAIN Rarity="70">
+		<DescriptionInfo Name="DES_SKILL_VIGOUR_DRAIN" Description="DES_SKILL_VIGOUR_DRAIN_DES" IconName="SkillVigourDrain"/>
+		<BaseEssence Amount="17" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-VIGOUR_DRAIN"/>
+		<SkillGroupFilter Value="AdvSoulAttack"/>
+		<SkillGroupFilter Value="ClassShaman"/>
+	</SKILL-VIGOUR_DRAIN>-->
+	
+	
+	<SKILL-SUMMON_DEMON Rarity="60">
+		<DescriptionInfo Name="DES_SKILL_SUMMON_DEMON" Description="DES_SKILL_SUMMON_DEMON_DES" IconName="SkillSummonDemon"/>
+		<BaseEssence Amount="50" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-SUMMON_DEMON"/>
+		<SkillGroupFilter Value="AdvSummoner"/>
+		<SkillGroupFilter Value="SummonDemon"/>
+	</SKILL-SUMMON_DEMON>
+	<SKILL-SUMMON_SHAMAN_MINION Rarity="60">
+		<DescriptionInfo Name="DES_SKILL_SUMMON_SHAMAN_MINION" Description="DES_SKILL_SUMMON_SHAMAN_MINION_DES" IconName="SkillSummonShamanDemon"/>
+		<BaseEssence Amount="50" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-SUMMON_SHAMAN_MINION"/>
+		<SkillGroupFilter Value="ClassShaman"/>
+	</SKILL-SUMMON_SHAMAN_MINION>
+	<SKILL-SUMMON_WRAITH Rarity="60">
+		<DescriptionInfo Name="DES_SKILL_SUMMON_WRAITH" Description="DES_SKILL_SUMMON_WRAITH_DES" IconName="SkillSummonUnliving"/>
+		<BaseEssence Amount="50" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-SUMMON_WRAITH"/>
+		<SkillGroupFilter Value="ClassWarrakus"/>
+	</SKILL-SUMMON_WRAITH>
+	
+	<SKILL-SUMMON_UNLIVING Rarity="50">
+		<DescriptionInfo Name="DES_SKILL_SUMMON_UNLIVING" Description="DES_SKILL_SUMMON_UNLIVING_DES" IconName="SkillSummonUnliving"/>
+		<BaseEssence Amount="35" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-SUMMON_UNLIVING"/>
+		<SkillGroupFilter Value="AdvSummoner"/>
+		<SkillGroupFilter Value="SummonUnliving"/>
+	</SKILL-SUMMON_UNLIVING>
+	<SKILL-SUMMON_WILD_BEAST Rarity="40">
+		<DescriptionInfo Name="DES_SKILL_SUMMON_WILD_BEAST" Description="DES_SKILL_SUMMON_WILD_BEAST_DES" IconName="SkillSummonWildBeast"/>
+		<BaseEssence Amount="35" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-SUMMON_WILD_BEAST"/>
+		<SkillGroupFilter Value="AdvSummoner"/>
+		<SkillGroupFilter Value="SummonBeast"/>
+	</SKILL-SUMMON_WILD_BEAST>
+	
+	<SKILL-SUMMON_ELDERCONE Rarity="60">
+		<DescriptionInfo Name="DES_SKILL_SUMMON_ELDERCONE" Description="DES_SKILL_SUMMON_ELDERCONE_DES" IconName="SkillSummonForestDemon"/>
+		<BaseEssence Amount="50" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-SUMMON_FOREST_ELDERCONE"/>
+		<SkillGroupFilter Value="ClassNaiysir"/>
+	</SKILL-SUMMON_ELDERCONE>
+	<SKILL-SUMMON_UNLIVING_RAT Rarity="35">
+		<DescriptionInfo Name="DES_SKILL_SUMMON_UNLIVING_RAT" Description="DES_SKILL_SUMMON_UNLIVING_DES" IconName="SkillSummonUnliving"/>
+		<BaseEssence Amount="50" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-SUMMON_UNLIVING_RAT"/>
+		<SkillGroupFilter Value="ClassWitch"/>
+	</SKILL-SUMMON_UNLIVING_RAT>
+	
+</SKILLS_3_ADVANCEMENT>

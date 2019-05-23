@@ -1,0 +1,90 @@
+﻿<PROTOTYPE_FACTION>
+
+	<!-- Primary behavior types. They give information about fraction reaction to players. -->
+	<E_UNITS_BEHAVIOR_PRIMARY Type="enum" Name="EUnitBehaviorPrimary">
+		<!--  -->
+		<Aggressive/>
+		<!--  -->
+		<Neutral/>
+		<!--  -->
+		<Peaceful/>
+	</E_UNITS_BEHAVIOR_PRIMARY>
+	
+	<!-- Secondary behavior types. They give information about fraction moving on island and its territory.-->
+	<E_UNITS_BEHAVIOR_SECONDARY Type="enum" Name="EUnitBehaviorSecondary">
+		<!--  -->
+		<Territorial/>
+		<!--  -->
+		<Nomadic/>
+		<!--  -->
+		<Builders/>
+	</E_UNITS_BEHAVIOR_SECONDARY>
+	
+	<!-- Thirdiart behavior types. They give information about fraction "motivation".-->
+	<E_UNITS_BEHAVIOR_THIRDIARY Type="enum" Name="EUnitBehaviorThirdiary">
+		<!--  -->
+		<Blacksmiths/>
+		<!--  -->
+		<Treasurers/>
+		<!--  -->
+		<Trophies/>
+	</E_UNITS_BEHAVIOR_THIRDIARY>
+	
+	<!-- Fraction posibble behaviors with default behavior state -->
+	<BEHAVIOR_TYPE Name="BehaviorType">
+		<!--  -->
+		<DefaultState Name="defaultState" Type="bool" Required="TRUE"/>
+		<!-- -->
+		<Primary Name="primary" Type="E_UNITS_BEHAVIOR_PRIMARY" Required="FALSE"/>
+		<!--  -->
+		<Secondary Name="secondary" Type="E_UNITS_BEHAVIOR_SECONDARY" Required="FALSE"/>
+		<!--  -->
+		<Thirdiary Name="thirdiary" Type="E_UNITS_BEHAVIOR_THIRDIARY" Required="FALSE"/>
+	</BEHAVIOR_TYPE>
+	
+	<!-- Fraction available behaviors -->
+	<BEHAVIORS_SET Name="BehaviorsSet">
+		<!-- -->
+		<BehaviorType Name="behaviorsTypes" Type="ArrayBEHAVIOR_TYPE" Required="TRUE"/>
+	</BEHAVIORS_SET>
+
+	<!-- Units behavior on map and in communication with player through merchants -->
+	<UNITS_BEHAVIOR Name="UnitsBehavior" Abbreviation="BEH">
+		<!-- -->
+		<BehaviorsSet Name="behaviorsSets" Type="ArrayBEHAVIORS_SET" Required="FALSE"/>
+	</UNITS_BEHAVIOR>
+	
+	<!--xxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	
+	
+	<!-- Information about the faction and its inhabitants/settlements inside -->
+	<FACTION Name="Faction" Abbreviation="FAC">
+		<!-- Factions must exist in game, otherwise the game/events will not work correctly. -->
+		<CompulsoryAttendent Name="compulsoryAttendent" Type="bool" Required="TRUE"/>
+		<!-- How popular is it? 0 – available anywhere, 100 – not available -->	
+		<Rarity Name="rarity" Type="int" Required="TRUE"/>
+		<!-- Loyalty tag assigned to faction -->	
+		<LoyaltyTag Name="loyaltyTag" Type="TAG" Required="TRUE"/>
+		<!-- description -->
+		<DescriptionInfo Name="descriptionInfo" Type="DESCRIPTION_INFO" Required="TRUE"/>
+		<!--  -->
+		<UnitsBehavior Name="unitsBehavior" Type="UNITS_BEHAVIOR" Required="TRUE"/>
+		<!-- Spawn small Villages -->
+		<SmallVillage Name="smallVillages" Type="ArraySETTLEMENT" Required="FALSE"/>
+		<!-- Event on small Village -->
+		<SmallVillageEvent Name="smallVillageEvent" Type="EVENT_COLLECTION" Required="FALSE"/>
+		<!-- Spawn big Villages/city -->
+		<BigVillage Name="bigVillages" Type="ArraySETTLEMENT" Required="FALSE"/>
+		<!-- Events on big Village -->
+		<BigVillageEvent Name="bigVillageEvent" Type="EVENT_COLLECTION" Required="FALSE"/>
+		<!-- Armies spawned when faction city or army is attacked or offer to trade -->
+		<Army Name="armies" Type="ArrayGROUP" Required="TRUE"/>
+		<!-- Armies event spawned when faction city or army is attacked or offer to trade -->
+		<ArmyEvent Name="armyEvent" Type="EVENT_COLLECTION" Required="TRUE"/>
+		<!-- Civilian units moving through faction territory and out of it -->
+		<Civilian Name="civilians" Type="ArrayGROUP" Required="TRUE"/>
+		<!-- Civilian even spawned when civilian is attacked or offer to trade -->
+		<CivilianEvent Name="CivilianEvent" Type="EVENT_COLLECTION" Required="TRUE"/>
+	</FACTION>
+	
+</PROTOTYPE_FACTION>

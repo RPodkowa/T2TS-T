@@ -1,0 +1,36 @@
+<PROTOTYPE_PROCEDURAL_ITEM_DATA>
+	<E_ESSENCE_QUALITY Type="enum" Name="EEssenceQuality">
+		<Gray/>
+		<Essence/>
+		<Ancient/>
+	</E_ESSENCE_QUALITY>
+	
+	<SUBSKILL_ESSENCE_TYPE Name="SubskillEssenceType">
+		<Subskill Name="subskills" Type="ArraySUBSKILL" Required="TRUE"/>
+		<EssenceType Name="essenceTypes" Type="ArrayTAG" Required="TRUE"/>
+	</SUBSKILL_ESSENCE_TYPE>
+
+	<SUBSKILL_QUALITY Name="SubskillQuality">
+		<EssenceQuality Name="essenceQuality" Type="E_ESSENCE_QUALITY" Required="TRUE"/>
+		<SubskillEssenceType Name="subskillEssenceType" Type="ArraySUBSKILL_ESSENCE_TYPE" Required="TRUE"/>
+	</SUBSKILL_QUALITY>
+
+    <RECIPE_ATTRIBUTES Name="RecipeAttributes"  Abbreviation="RAT">
+		<!-- animation-->
+		<Animation Name="animation" Type="string" Required="FALSE"/>
+		<!-- sound-->
+		<Sound Name="sound" Type="string" Required="FALSE"/>
+		<RelatedRecipe Name="relatedRecipe" Type="ITEM_RECIPE"  Required="TRUE"/>
+		<SpeedStars Name="speedStars" Type="int" Required="TRUE"/>
+		<DamageStars Name="damageStars" Type="int" Required="TRUE"/>
+        <IconPrefix Name="iconPrefix" Type="string" Required="TRUE"/>
+		<!-- specifies how many of the subskills provided would be add to the item -->
+		<AdditionalSubskillsCount Name="additionalSubskillsCount" Type="int" Required="TRUE"/>
+		
+		<!-- Additional subskill is chosen from the array provided,
+		If library contains multiple skills they will be assigned based on some logic eg, rarity etc. 
+		But they will not be assigned in randomw way so that this assignment process can be recreated predictabily-->
+        <SubskillCollection Name="subskillCollection" Type="ArraySUBSKILL_QUALITY" Required="FALSE"/>		
+    </RECIPE_ATTRIBUTES>
+  
+</PROTOTYPE_PROCEDURAL_ITEM_DATA>

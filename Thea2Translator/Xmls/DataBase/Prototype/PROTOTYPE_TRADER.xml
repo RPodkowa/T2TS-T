@@ -1,0 +1,23 @@
+﻿<PROTOTYPE_TRADER>
+		
+	<!-- Information what trader have and what is willing to buy. If not scripts given,
+		 trader will base on default settings from item Value. What player may trade 
+		 with trader is filtered in EVENT-->
+	<TRADER_PROFILE Name="TraderProfile" Abbreviation="TRADER">
+		<!-- Do player is available to cancel trade or need to fulfill the conditions of trade -->
+		<CancelLock Name="cancelLock" Type="bool" Required="FALSE"/>
+		<!-- Conditions that need to be fulfilled to confirm finishing trade. -->
+		<ConfirmLockScript Name="confirmLockScript" Type="SCRIPT" Required="FALSE"/>
+		<!-- Price script inform what trader is willing to buy in what price -->
+		<BuingValueModify Name="buingValueModify" Type="SCRIPT" Required="FALSE"/>
+		<!-- Sell script inform what trader is willing to sell in what price -->
+		<SellingValueModify Name="sellingValueModify" Type="SCRIPT" Required="FALSE"/>
+		<!-- Extra trade conditions that may to be fulfilled after base trade is complete. -->
+		<PostConfirmScript Name="postConfirmScript" Type="SCRIPT" Required="FALSE"/>
+		<!-- Type and number of items that trader have -->
+		<TradeableItems Name="tradeableItems" Type="ArrayITEM_CARGO" Required="FALSE"/>
+		<!-- Type and number of items that trader have -->
+		<TradeableSubraces Name="tradeableSubraces" Type="ArrayCOUNTED_MEMBERS" Required="FALSE"/>
+	</TRADER_PROFILE>
+	
+</PROTOTYPE_TRADER>

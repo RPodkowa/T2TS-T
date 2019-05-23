@@ -1,0 +1,307 @@
+﻿<SUBSKILLS_RITUALS>
+	<!-- healing percent of s life -->
+	<SUBSKILL-SPIRITUAL_HEALING Animation="" Sound="">
+		<DescriptionInfo Name="DES_PLACEHOLDER" Description="DES_PLACEHOLDER_DES" IconName="RitualSpiritualHealing"/>
+        <ShortInfo TriggerIcon="TAG-TRIGGER_PASSIVE" DamageIcon="TAG-DAMAGE_RITUALS" TargetIcon="TAG-TARGET_SELF" AttackInfo="{SCRIPT:SI_Placeholder}"/>
+		<Trigger Priority="0" RequiredToBeInFrontline="FALSE" RequiredToBeInBackline="FALSE">
+			<TriggerGroup Value="Passive"/>
+			<TriggerScript ScriptName=""/>
+		</Trigger>
+		<Targets>
+			<TargetScript ScriptName="Trg_PlaceHolder"/> 
+		</Targets>
+		<Activation ScriptName="Act_PlaceHolder"/>
+		<SubskillAttributesOnLevel Level="0" PowerLevel="0.0">
+			<MainAtt Amount="0.0" Tag="TAG-MAX_HEALTH_SPIRIT"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="1" PowerLevel="0.0">
+			<MainAtt Amount="0.2" Tag="TAG-MAX_HEALTH_SPIRIT"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="2" PowerLevel="0.0">
+			<MainAtt Amount="0.4" Tag="TAG-MAX_HEALTH_SPIRIT"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="3" PowerLevel="0.0">
+			<MainAtt Amount="0.6" Tag="TAG-MAX_HEALTH_SPIRIT"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="4" PowerLevel="0.0">
+			<MainAtt Amount="0.8" Tag="TAG-MAX_HEALTH_SPIRIT"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="5" PowerLevel="0.0">
+			<MainAtt Amount="1.0" Tag="TAG-MAX_HEALTH_SPIRIT"/>
+		</SubskillAttributesOnLevel>
+	</SUBSKILL-SPIRITUAL_HEALING>
+	<SUBSKILL-HIGHER_EDUCATION Animation="" Sound="">
+		<DescriptionInfo Name="DES_PLACEHOLDER" Description="DES_PLACEHOLDER_DES" IconName="RitualHigherEducation"/>
+        <ShortInfo TriggerIcon="TAG-TRIGGER_PASSIVE" DamageIcon="TAG-DAMAGE_RITUALS" TargetIcon="TAG-TARGET_SELF" AttackInfo="{SCRIPT:SI_Placeholder}"/>
+		<Trigger Priority="0" RequiredToBeInFrontline="FALSE" RequiredToBeInBackline="FALSE">
+			<TriggerGroup Value="Passive"/>
+			<TriggerScript ScriptName=""/>
+		</Trigger>
+		<Targets>
+			<TargetScript ScriptName="Trg_PlaceHolder"/>
+		</Targets>
+		<Activation ScriptName="Act_PlaceHolder"/>
+		<SubskillAttributesOnLevel Level="1" PowerLevel="0.0">
+			<SubskillAttribute Identifier="Summer"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="2" PowerLevel="0.0">
+			<SubskillAttribute Identifier="Summer"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="3" PowerLevel="0.0">
+			<SubskillAttribute Identifier="Summer"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="4" PowerLevel="0.0">
+			<SubskillAttribute Identifier="Summer"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="5" PowerLevel="0.0">
+			<SubskillAttribute Identifier="Summer"/>
+		</SubskillAttributesOnLevel>
+	</SUBSKILL-HIGHER_EDUCATION>
+	<SUBSKILL-MYSTICAL_KNOWLEDGE Animation="" Sound="">
+		<DescriptionInfo Name="DES_PLACEHOLDER" Description="DES_PLACEHOLDER_DES" IconName="RitualMysticalKnowledge"/>
+        <ShortInfo TriggerIcon="TAG-TRIGGER_PASSIVE" DamageIcon="TAG-DAMAGE_RITUALS" TargetIcon="TAG-TARGET_SELF" AttackInfo="{SCRIPT:SI_Placeholder}"/>
+		<Trigger Priority="0" RequiredToBeInFrontline="FALSE" RequiredToBeInBackline="FALSE">
+			<TriggerGroup Value="Passive"/>
+			<TriggerScript ScriptName=""/>
+		</Trigger>
+		<Targets>
+			<TargetScript ScriptName="Trg_PlaceHolder"/>
+		</Targets>
+		<Activation ScriptName="Act_PlaceHolder"/>
+		<SubskillAttributesOnLevel Level="1" PowerLevel="0.0">
+			<SubskillAttribute Identifier="Summer"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="2" PowerLevel="0.0">
+			<SubskillAttribute Identifier="Summer"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="3" PowerLevel="0.0">
+			<SubskillAttribute Identifier="Summer"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="4" PowerLevel="0.0">
+			<SubskillAttribute Identifier="Summer"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="5" PowerLevel="0.0">
+			<SubskillAttribute Identifier="Summer"/>
+		</SubskillAttributesOnLevel>
+	</SUBSKILL-MYSTICAL_KNOWLEDGE>
+	<SUBSKILL-DEMONIC_SPLINTER_HP Animation="" Sound="">
+		<DescriptionInfo Name="DES_PLACEHOLDER" Description="DES_PLACEHOLDER_DES" IconName="RitualDemonicSplinter"/>
+        <ShortInfo TriggerIcon="TAG-TRIGGER_PASSIVE" DamageIcon="TAG-DAMAGE_RITUALS" TargetIcon="TAG-TARGET_SELF" AttackInfo="{SCRIPT:SI_Placeholder}"/>
+		<Trigger Priority="0" RequiredToBeInFrontline="FALSE" RequiredToBeInBackline="FALSE">
+			<TriggerGroup Value="Passive"/>
+			<TriggerScript ScriptName=""/>
+		</Trigger>
+		<Targets>
+			<TargetScript ScriptName="Trg_PlaceHolder"/>
+		</Targets>
+		<Activation ScriptName="Act_PlaceHolder"/>
+		<SubskillAttributesOnLevel Level="1" PowerLevel="0.0">
+			<SubskillAttribute Identifier="DemonHp" AttributeStringValue="*" AttributeFloatValue="5"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="2" PowerLevel="0.0">
+			<SubskillAttribute Identifier="DemonHp" AttributeStringValue="*" AttributeFloatValue="7"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="3" PowerLevel="0.0">
+			<SubskillAttribute Identifier="DemonHp" AttributeStringValue="*" AttributeFloatValue="9"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="4" PowerLevel="0.0">
+			<SubskillAttribute Identifier="DemonHp" AttributeStringValue="*" AttributeFloatValue="11"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="5" PowerLevel="0.0">
+			<SubskillAttribute Identifier="DemonHp" AttributeStringValue="*" AttributeFloatValue="13"/>
+		</SubskillAttributesOnLevel>
+	</SUBSKILL-DEMONIC_SPLINTER_HP>
+	<SUBSKILL-DEMONIC_SPLINTER_MORALE Animation="" Sound="">
+		<DescriptionInfo Name="DES_PLACEHOLDER" Description="DES_PLACEHOLDER_DES" IconName="RitualDemonicSplinter"/>
+        <ShortInfo TriggerIcon="TAG-TRIGGER_PASSIVE" DamageIcon="TAG-DAMAGE_RITUALS" TargetIcon="TAG-TARGET_SELF" AttackInfo="{SCRIPT:SI_Placeholder}"/>
+		<Trigger Priority="0" RequiredToBeInFrontline="FALSE" RequiredToBeInBackline="FALSE">
+			<TriggerGroup Value="Passive"/>
+			<TriggerScript ScriptName=""/>
+		</Trigger>
+		<Targets>
+			<TargetScript ScriptName="Trg_PlaceHolder"/>
+		</Targets>
+		<Activation ScriptName="Act_PlaceHolder"/>
+		<SubskillAttributesOnLevel Level="0" PowerLevel="0.0">
+			<SubskillAttribute Identifier="Morale" AttributeStringValue="+" AttributeFloatValue="0"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="1" PowerLevel="0.0">
+			<SubskillAttribute Identifier="Morale" AttributeStringValue="+" AttributeFloatValue="-10"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="2" PowerLevel="0.0">
+			<SubskillAttribute Identifier="Morale" AttributeStringValue="+" AttributeFloatValue="-15"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="3" PowerLevel="0.0">
+			<SubskillAttribute Identifier="Morale" AttributeStringValue="+" AttributeFloatValue="-20"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="4" PowerLevel="0.0">
+			<SubskillAttribute Identifier="Morale" AttributeStringValue="+" AttributeFloatValue="-25"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="5" PowerLevel="0.0">
+			<SubskillAttribute Identifier="Morale" AttributeStringValue="+" AttributeFloatValue="-30"/>
+		</SubskillAttributesOnLevel>
+	</SUBSKILL-DEMONIC_SPLINTER_MORALE>
+	<SUBSKILL-SHOULDERS_POWER Animation="" Sound="">
+		<DescriptionInfo Name="DES_PLACEHOLDER" Description="DES_PLACEHOLDER_DES" IconName="RitualShouldersPower"/>
+        <ShortInfo TriggerIcon="TAG-TRIGGER_PASSIVE" DamageIcon="TAG-DAMAGE_RITUALS" TargetIcon="TAG-TARGET_SELF" AttackInfo="{SCRIPT:SI_Placeholder}"/>
+		<Trigger Priority="0" RequiredToBeInFrontline="FALSE" RequiredToBeInBackline="FALSE">
+			<TriggerGroup Value="Passive"/>
+			<TriggerScript ScriptName=""/>
+		</Trigger>
+		<Targets>
+			<TargetScript ScriptName="Trg_PlaceHolder"/>
+		</Targets>
+		<Activation ScriptName="Act_PlaceHolder"/>
+		<SubskillAttributesOnLevel Level="0" PowerLevel="0.0">
+			<SubskillAttribute Identifier="TAG-PERSONAL_CARRY_LIMIT" AttributeStringValue="*" AttributeFloatValue="0.0"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="1" PowerLevel="0.0">
+			<SubskillAttribute Identifier="TAG-PERSONAL_CARRY_LIMIT" AttributeStringValue="*" AttributeFloatValue="106.0"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="2" PowerLevel="0.0">
+			<SubskillAttribute Identifier="TAG-PERSONAL_CARRY_LIMIT" AttributeStringValue="*" AttributeFloatValue="108.0"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="3" PowerLevel="0.0">
+			<SubskillAttribute Identifier="TAG-PERSONAL_CARRY_LIMIT" AttributeStringValue="*" AttributeFloatValue="110.0"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="4" PowerLevel="0.0">
+			<SubskillAttribute Identifier="TAG-PERSONAL_CARRY_LIMIT" AttributeStringValue="*" AttributeFloatValue="112.0"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="5" PowerLevel="0.0">
+			<SubskillAttribute Identifier="TAG-PERSONAL_CARRY_LIMIT" AttributeStringValue="*" AttributeFloatValue="115.0"/>
+		</SubskillAttributesOnLevel>
+	</SUBSKILL-SHOULDERS_POWER>
+	<SUBSKILL-FIRE_GIFT Animation="" Sound="">
+		<DescriptionInfo Name="DES_PLACEHOLDER" Description="DES_PLACEHOLDER_DES" IconName="RitualFireGift"/>
+        <ShortInfo TriggerIcon="TAG-TRIGGER_PASSIVE" DamageIcon="TAG-DAMAGE_RITUALS" TargetIcon="TAG-TARGET_SELF" AttackInfo="{SCRIPT:SI_Placeholder}"/>
+		<Trigger Priority="0" RequiredToBeInFrontline="FALSE" RequiredToBeInBackline="FALSE">
+			<TriggerGroup Value="Passive"/>
+			<TriggerScript ScriptName=""/>
+		</Trigger>
+		<Targets>
+			<TargetScript ScriptName="Trg_PlaceHolder"/>
+		</Targets>
+		<Activation ScriptName="Act_PlaceHolder"/>
+		<SubskillAttributesOnLevel Level="0" PowerLevel="0.0">
+			<SubskillAttribute Identifier="TAG-CRAFTING" AttributeStringValue="*" AttributeFloatValue="0.0"/>
+			<SubskillAttribute Identifier="TAG-GATHERING" AttributeStringValue="*" AttributeFloatValue="0.0"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="1" PowerLevel="0.0">
+			<SubskillAttribute Identifier="TAG-CRAFTING" AttributeStringValue="*" AttributeFloatValue="106.0"/>
+			<SubskillAttribute Identifier="TAG-GATHERING" AttributeStringValue="*" AttributeFloatValue="97.0"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="2" PowerLevel="0.0">
+			<SubskillAttribute Identifier="TAG-CRAFTING" AttributeStringValue="*" AttributeFloatValue="108.0"/>
+			<SubskillAttribute Identifier="TAG-GATHERING" AttributeStringValue="*" AttributeFloatValue="96.0"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="3" PowerLevel="0.0">
+			<SubskillAttribute Identifier="TAG-CRAFTING" AttributeStringValue="*" AttributeFloatValue="110.0"/>
+			<SubskillAttribute Identifier="TAG-GATHERING" AttributeStringValue="*" AttributeFloatValue="95.0"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="4" PowerLevel="0.0">
+			<SubskillAttribute Identifier="TAG-CRAFTING" AttributeStringValue="*" AttributeFloatValue="112.0"/>
+			<SubskillAttribute Identifier="TAG-GATHERING" AttributeStringValue="*" AttributeFloatValue="94.0"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="5" PowerLevel="0.0">
+			<SubskillAttribute Identifier="TAG-CRAFTING" AttributeStringValue="*" AttributeFloatValue="114.0"/>
+			<SubskillAttribute Identifier="TAG-GATHERING" AttributeStringValue="*" AttributeFloatValue="93.0"/>
+		</SubskillAttributesOnLevel>
+	</SUBSKILL-FIRE_GIFT>
+	<SUBSKILL-MAGIC_POWDER Animation="" Sound="">
+		<DescriptionInfo Name="DES_PLACEHOLDER" Description="DES_PLACEHOLDER_DES" IconName="RitualMagicPowder"/>
+        <ShortInfo TriggerIcon="TAG-TRIGGER_PASSIVE" DamageIcon="TAG-DAMAGE_RITUALS" TargetIcon="TAG-TARGET_SELF" AttackInfo="{SCRIPT:SI_Placeholder}"/>
+		<Trigger Priority="0" RequiredToBeInFrontline="FALSE" RequiredToBeInBackline="FALSE">
+			<TriggerGroup Value="Passive"/>
+			<TriggerScript ScriptName=""/>
+		</Trigger>
+		<Targets>
+			<TargetScript ScriptName="Trg_PlaceHolder"/>
+		</Targets>
+		<Activation ScriptName="Act_PlaceHolder"/>
+		<SubskillAttributesOnLevel Level="0" PowerLevel="0.0">
+			<SubskillAttribute Identifier="ChangeVegi" AttributeStringValue="*" AttributeFloatValue="0.0"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="1" PowerLevel="0.0">
+			<SubskillAttribute Identifier="ChangeVegi" AttributeStringValue="*" AttributeFloatValue="0.0"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="2" PowerLevel="0.0">
+			<SubskillAttribute Identifier="ChangeVegi" AttributeStringValue="*" AttributeFloatValue="0.0"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="3" PowerLevel="0.0">
+			<SubskillAttribute Identifier="ChangeVegi" AttributeStringValue="*" AttributeFloatValue="0.0"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="4" PowerLevel="0.0">
+			<SubskillAttribute Identifier="ChangeVegi" AttributeStringValue="*" AttributeFloatValue="0.0"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="5" PowerLevel="0.0">
+			<SubskillAttribute Identifier="ChangeVegi" AttributeStringValue="*" AttributeFloatValue="0.0"/>
+		</SubskillAttributesOnLevel>
+	</SUBSKILL-MAGIC_POWDER>
+	<SUBSKILL-CABBAGE_FIELD Animation="" Sound="">
+		<DescriptionInfo Name="DES_PLACEHOLDER" Description="DES_PLACEHOLDER_DES" IconName="RitualCabbageField"/>
+        <ShortInfo TriggerIcon="TAG-TRIGGER_PASSIVE" DamageIcon="TAG-DAMAGE_RITUALS" TargetIcon="TAG-TARGET_SELF" AttackInfo="{SCRIPT:SI_Placeholder}"/>
+		<Trigger Priority="0" RequiredToBeInFrontline="FALSE" RequiredToBeInBackline="FALSE">
+			<TriggerGroup Value="Passive"/>
+			<TriggerScript ScriptName=""/>
+		</Trigger>
+		<Targets>
+			<TargetScript ScriptName="Trg_PlaceHolder"/>
+		</Targets>
+		<Activation ScriptName="Act_PlaceHolder"/>
+		<SubskillAttributesOnLevel Level="0" PowerLevel="0.0">
+			<SubskillAttribute Identifier="Child" AttributeStringValue="+" AttributeFloatValue="0.0"/>
+			<SubskillAttribute Identifier="DelRes" AttributeStringValue="*" AttributeFloatValue="0.0"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="1" PowerLevel="0.0">
+			<SubskillAttribute Identifier="Child" AttributeStringValue="+" AttributeFloatValue="1.0"/>
+			<SubskillAttribute Identifier="DelRes" AttributeStringValue="*" AttributeFloatValue="30.0"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="2" PowerLevel="0.0">
+			<SubskillAttribute Identifier="Child" AttributeStringValue="+" AttributeFloatValue="1.0"/>
+			<SubskillAttribute Identifier="DelRes" AttributeStringValue="*" AttributeFloatValue="25.0"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="3" PowerLevel="0.0">
+			<SubskillAttribute Identifier="Child" AttributeStringValue="+" AttributeFloatValue="1.0"/>
+			<SubskillAttribute Identifier="DelRes" AttributeStringValue="*" AttributeFloatValue="17.0"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="4" PowerLevel="0.0">
+			<SubskillAttribute Identifier="Child" AttributeStringValue="+" AttributeFloatValue="1.0"/>
+			<SubskillAttribute Identifier="DelRes" AttributeStringValue="*" AttributeFloatValue="10.0"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="5" PowerLevel="0.0">
+			<SubskillAttribute Identifier="Child" AttributeStringValue="+" AttributeFloatValue="1.0"/>
+			<SubskillAttribute Identifier="DelRes" AttributeStringValue="*" AttributeFloatValue="0.0"/>
+		</SubskillAttributesOnLevel>
+	</SUBSKILL-CABBAGE_FIELD>
+	<SUBSKILL-KNOWLEDGE_ARMOR Animation="" Sound="">
+		<DescriptionInfo Name="DES_PLACEHOLDER" Description="DES_PLACEHOLDER_DES" IconName="RitualKnowledgeArmour"/>
+        <ShortInfo TriggerIcon="TAG-TRIGGER_PASSIVE" DamageIcon="TAG-DAMAGE_RITUALS" TargetIcon="TAG-TARGET_SELF" AttackInfo="{SCRIPT:SI_Placeholder}"/>
+		<Trigger Priority="0" RequiredToBeInFrontline="FALSE" RequiredToBeInBackline="FALSE">
+			<TriggerGroup Value="Passive"/>
+			<TriggerScript ScriptName=""/>
+		</Trigger>
+		<Targets>
+			<TargetScript ScriptName="Trg_PlaceHolder"/>
+		</Targets>
+		<Activation ScriptName="Act_PlaceHolder"/>
+		<SubskillAttributesOnLevel Level="0" PowerLevel="0.0">
+			<SubskillAttribute Identifier="TAG-SHIELDING"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="1" PowerLevel="0.0">
+			<SubskillAttribute Identifier="TAG-SHIELDING"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="2" PowerLevel="0.0">
+			<SubskillAttribute Identifier="TAG-SHIELDING"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="3" PowerLevel="0.0">
+			<SubskillAttribute Identifier="TAG-SHIELDING"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="4" PowerLevel="0.0">
+			<SubskillAttribute Identifier="TAG-SHIELDING"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="5" PowerLevel="0.0">
+			<SubskillAttribute Identifier="TAG-SHIELDING"/>
+		</SubskillAttributesOnLevel>
+	</SUBSKILL-KNOWLEDGE_ARMOR>
+	
+</SUBSKILLS_RITUALS>

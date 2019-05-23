@@ -1,0 +1,59 @@
+﻿<PROTOTYPE_TECH>
+	
+	
+	<!-- shared information for researchable items -->
+	<UNLOCK_RECIPE Name="UnlockRecipe">
+		<!-- number of unlocked primary resource -->
+		<UnlockPrimeRes Name="unlockPrimeRes" Type="int" Required="FALSE"/>
+		<!-- number of unlocked secondary resource -->
+		<UnlockSecRes Name="unlockSecRes" Type="int" Required="FALSE"/>
+		<!-- item recipe parent -->
+		<ItemRecipe Name="itemRecipe" Type="ITEM_RECIPE" Required="FALSE"/>
+		<!-- building recipe parent -->
+		<BuildingRecipe Name="buildingRecipe" Type="BUILDING_RECIPE" Required="FALSE"/>
+		<!-- ritual recipe parent -->
+		<RitualRecipe Name="ritualRecipe" Type="RITUAL_RECIPE" Required="FALSE"/>
+	</UNLOCK_RECIPE>
+	
+	<!-- shared information for researchable items -->
+	<UPGRADE_RECIPE Name="UpgradeRecipe">
+		<!-- percentage essence bonus in crafting -->
+		<EssenceBonus Name="essenceBonus" Type="int" Required="FALSE"/>
+		<!-- number of additional primary resource -->
+		<AdditionalPrimeRes Name="additionalPrimeRes" Type="int" Required="FALSE"/>
+		<!-- number of unlocked secondary resource -->
+		<AdditionalSecRes Name="additionalSecRes" Type="int" Required="FALSE"/>
+		<!-- recipe parent -->
+		<ItemRecipe Name="itemRecipe" Type="ITEM_RECIPE" Required="FALSE"/>
+	</UPGRADE_RECIPE>
+	
+
+	<!--xxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+
+	<!-- researchable items -->
+	<ITEM_TECH Name="ItemTech">
+		<!-- cost of upgrade -->
+		<UpgradeCost Name="upgradeCost" Type="int" Required="TRUE"/>
+		<!-- description -->
+		<DescriptionInfo Name="descriptionInfo" Type="DESCRIPTION_INFO" Required="TRUE"/>
+		<!-- parent item tech -->
+		<ParentItemTech Name="parentsItemTech" Type="ArrayITEM_TECH" Required="FALSE"/>
+		<!-- unlock recipe -->
+		<UnlockRecipe Name="unlockRecipes" Type="ArrayUNLOCK_RECIPE" Required="FALSE"/>
+		<!-- upgrade recipe -->
+		<UpgradeRecipe Name="upgradeRecipes" Type="ArrayUPGRADE_RECIPE" Required="FALSE"/>
+	</ITEM_TECH>
+	
+	<!-- researchable buildings -->
+	<BUILDING_TECH Name="BuildingTech">
+		<!-- cost of upgrade -->
+		<UpgradeCost Name="upgradeCost" Type="int" Required="TRUE"/>
+		<!-- description -->
+		<DescriptionInfo Name="descriptionInfo" Type="DESCRIPTION_INFO" Required="TRUE"/>
+		<!-- parent item tech -->
+		<ParentBuildingTech Name="parentsBuildingTech" Type="ArrayBUILDING_TECH" Required="FALSE"/>
+		<!-- unlock recipe -->
+		<UnlockRecipe Name="unlockRecipes" Type="ArrayUNLOCK_RECIPE" Required="FALSE"/>
+	</BUILDING_TECH>
+	
+</PROTOTYPE_TECH>

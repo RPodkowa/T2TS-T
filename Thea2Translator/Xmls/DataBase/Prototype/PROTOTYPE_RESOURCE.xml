@@ -1,0 +1,55 @@
+﻿<PROTOTYPE_RESOURCE>
+
+    <E_RESOURCE_TYPE Type="enum" Name="EResourceType">
+        <Normal/>
+        <Improved/>
+        <Wild/>
+    </E_RESOURCE_TYPE>
+    
+	<!-- how does the resource renew itself; how many can gather it etc. -->
+	<RESOURCE Name="Resource" Abbreviation="RES">
+		<!-- Res with true is crafted. -->
+		<CraftedRes Name="craftedRes" Type="bool" Required="FALSE"/>
+        <!-- Res with true is crafted. -->
+        <ResourceType Name="resourceType" Type="E_RESOURCE_TYPE" Required="FALSE"/>
+		<!--Research cost. Cost 0 is automatically researched -->
+		<ResearchCost Name="researchCost" Type="int" Required="TRUE"/>
+		<!-- How popular is the given object. 0 – available everywhere 100- never available -->	
+		<Rarity Name="rarity" Type="int" Required="TRUE"/>
+		<!-- Product price is based on resource worth -->	
+		<Worth Name="worth" Type="int" Required="TRUE"/>
+		<!-- how hard is to extract res and how got it is for production spells -->
+		<ProductionPoints Name="productionPoints" Type="float" Required="TRUE"/>
+		<!-- Single resource weight -->
+		<Weight Name="weight" Type="float" Required="TRUE"/>
+		<!-- Gathering speed for a given resource -->		
+		<GatheringMultiplier Name="gatheringMultiplier" Type="float" Required="FALSE"/>
+		<!-- Description of a given object -->
+		<DescriptionInfo Name="descriptionInfo" Type="DESCRIPTION_INFO" Required="TRUE"/>
+		<!-- Size of the deposit available  -->
+		<ResourceDeposit Name="resourceDeposit " Type="FLOATING_RANGE" Required="FALSE"/>
+		<!-- Max workers allowed to gather  -->
+		<WorkersAllowedToWork Name="workersAllowedToWork" Type="FLOATING_RANGE" Required="FALSE"/>
+		<!-- Can you search for another deposit?  -->
+		<HiddenResourceLayers Name="hiddenResourceLayers" Type="FLOATING_RANGE" Required="FALSE"/>
+		<!-- Speed and time of resource regeneration -->
+		<ResLifeCycle Name="resLifeCycle" Type="RES_LIFE_CYCLE" Required="FALSE"/>
+		<!-- Terrain model spawned in the world -->
+		<TerrainModel Name="terrainModel" Type="Arraystring" Required="FALSE"/>
+		<!-- essence points given by a given resource during production-->
+		<Essences Name="essences" Type="ArrayCOUNTED_TAG" Required="FALSE"/>
+		<!-- resource parent  -->
+		<Parent Name="parents" Type="ArrayRESOURCE" Required="FALSE"/>
+		<!-- resource tags -->
+		<Tag Name="tags" Type="ArrayTAG" Required="FALSE"/>
+		<!-- spring gathering speed -->
+		<SpringMultiplier Name="springMultiplier" Type="float" Required="FALSE"/>
+		<!-- summer gathering speed -->
+		<SummerMultiplier Name="summerMultiplier" Type="float" Required="FALSE"/>
+		<!-- autumn gathering speed -->
+		<AutumnMultiplier Name="autumnMultiplier" Type="float" Required="FALSE"/>
+		<!-- winter gathering speed -->
+		<WinterMultiplier Name="winterMultiplier" Type="float" Required="FALSE"/>
+	</RESOURCE>
+	
+</PROTOTYPE_RESOURCE>

@@ -1,0 +1,24 @@
+﻿<PROTOTYPE_ITEM_CARGO>
+	
+	<!-- item collection -->
+	<ITEM_CARGO Name="ItemCargo">
+		<!-- resource’s rarity range -->
+		<ResourceRarityRange Name="resourceRarityRange" Type="FLOATING_RANGE" Required="TRUE"/>
+		<!-- skill’s rarity range -->
+		<SkillRarityRange Name="skillRarityRange" Type="FLOATING_RANGE" Required="TRUE"/>	
+		<!-- item’s power range -->
+		<LevelRange Name="levelRange" Type="INT_RANGE" Required="TRUE"/>
+		<!--  random number of items from range -->
+		<NumberOfItems Name="numberOfItems" Type="INT_RANGE" Required="TRUE"/>
+		<!-- Tags that need to be in cargo -->
+		<RequiredTag Name="requiredTags" Type="ArrayTAG" Required="FALSE"/>
+		<!-- Tags that may be in cargo. If there is no RequiredTag at least one will be in cargo  -->
+		<OptionalTag Name="optionalTags" Type="ArrayTAG" Required="FALSE"/>
+		<!--Tags that cannot be in cargo -->
+		<ExcludeTag Name="excludeTags" Type="ArrayTAG" Required="FALSE"/>
+    
+    <TrashChance Name="trashChance" Type="float" Required="FALSE"/>
+    <MasterChance Name="masterChance" Type="float" Required="FALSE"/>
+	</ITEM_CARGO>
+	
+</PROTOTYPE_ITEM_CARGO>

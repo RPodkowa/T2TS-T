@@ -1,0 +1,25 @@
+﻿<PROTOTYPE_TRAIT_CARD>
+
+	<!-- God skills-->
+	<TRAIT_CARD Name="Trait">
+		<!-- UnlockCost -1= is a god trait and its unlocked only for certain god, 0= unlocked from game start, >=1 is cost in god points -->
+		<UnlockCost Name="unlockCost" Type="int" Required="FALSE"/>
+		<!-- UseCost is only for humans character cards, only >0 is on trait visible. -->
+		<UseCost Name="useCost" Type="int" Required="FALSE"/>
+		<!-- Trait description -->
+		<DescriptionInfo Name="descriptionInfo" Type="DESCRIPTION_INFO" Required="TRUE"/>
+		<!-- script activated at the start of the game, it changes the beginning of the playthrough, for example it can give an extra character -->
+		<TraitGameStartScript Name="traitGameStartScript" Type="SCRIPT" Required="FALSE"/>
+		<!-- a skill that works in specific circumstances, for example, during combat with undead hit them on start of challenge-->
+		<TraitSkill Name="traitSkill" Type="SKILL" Required="FALSE"/>
+		<!-- a skill given to everyone -->
+		<SkillForAllFollowers Name="skillForAllFollowers" Type="SKILL" Required="FALSE"/>
+		<!-- Adding item cargo -->
+		<AddItemCargo Name="addItemCargo" Type="ArrayITEM_CARGO" Required="FALSE"/>
+		<!-- Adding subrace -->
+		<AddSubrace Name="addSubrace" Type="ArraySUBRACE" Required="FALSE"/>
+		<!-- trait’s domain -->
+		<DomainType Name="domainType" Type="TAG" Required="FALSE"/>
+	</TRAIT_CARD>
+
+</PROTOTYPE_TRAIT_CARD>

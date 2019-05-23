@@ -30,6 +30,17 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
+        <Grid Grid.ColumnSpan="5" Grid.RowSpan="2" Grid.Column="1" Grid.Row="6">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock x:Name="barTextBlock" HorizontalAlignment="Left" Margin="83,312.667,-63,-317" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="635" TextAlignment="Center" Grid.Row="2"/>
+            <Label Content="Choose action" x:Name="txtCurrentModuleInProcess" FontSize="18" FontWeight="Bold" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Grid.Row="1"/>
+            <ProgressBar x:Name="barStatus" Grid.Row="2"/>
+        </Grid>
         <Button x:Name="btnChooseDataBase" FontWeight="Bold" Content="DataBase" Grid.Column="2" Grid.Row="3" />
         <Button x:Name="btnChooseModulus" FontWeight="Bold" Content="Modules" Grid.Column="4" Grid.Row="3" />
         <Label Content="Select module" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="20" FontWeight="Bold" Grid.Column="2" Grid.Row="1" Grid.ColumnSpan="3"/>
@@ -47,17 +58,14 @@
             </Grid.ColumnDefinitions>
             <Button x:Name="btnImportFromSteam" Content="Import From Steam" Click="BtnImportFromSteam_Click"/>
             <Button x:Name="btnPrepareToMachineTranslate" Grid.Column="2" Click="BtnPrepareToMachineTranslate_Click">
-                <TextBlock TextWrapping="Wrap" TextAlignment="Center">Prepare To Machine Translate</TextBlock>
+                <TextBlock TextWrapping="Wrap" TextAlignment="Center"><Run Text="Prepare To Machine Translate"/></TextBlock>
             </Button>
             <Button x:Name="btnImportFromMachineTranslate" Grid.Column="4" Click="BtnImportFromMachineTranslate_Click">
-                <TextBlock TextWrapping="Wrap" TextAlignment="Center">Import From Machine Translate</TextBlock>
+                <TextBlock TextWrapping="Wrap" TextAlignment="Center"><Run Text="Import From Machine Translate"/></TextBlock>
             </Button>
             <Button x:Name="btnTranslate" Content="Translate" Grid.Column="6" Click="BtnTranslate_Click"/>
             <Button x:Name="btnExportToSteam" Content="Export To Steam" Grid.Column="8" Click="BtnExportToSteam_Click"/>
         </Grid>
-        <ProgressBar x:Name="barStatus" Grid.Column="1" HorizontalAlignment="Left" Height="40" Grid.Row="7" VerticalAlignment="Top" Width="655" Grid.ColumnSpan="5"/>
-        <TextBlock x:Name="barTextBlock" Grid.Column="1" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="7" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Grid.ColumnSpan="5" Width="635" TextAlignment="Center"/>
-        <Label x:Name="txtCurrentModuleInProcess" Content="Choose action" FontSize="18" FontWeight="Bold" HorizontalContentAlignment="Center" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="6" VerticalAlignment="Top" Width="655" Grid.ColumnSpan="5" Height="36" Margin="0,5,0,0"/>
 
     </Grid>
 </Page>

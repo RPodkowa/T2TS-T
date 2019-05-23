@@ -11,9 +11,9 @@
 
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="3*"/>
+            <RowDefinition Height="5*"/>
             <RowDefinition Height="60*"/>
-            <RowDefinition Height="3*"/>
+            <RowDefinition Height="5*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -46,17 +46,30 @@
                 <ListBox.ItemTemplate >
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal">
-                            <Label Content="{Binding Id}"/>
-                            <Label Content="{Binding OriginalText}" />
+                            <Label Content="{Binding CacheElem.Id}" Foreground="{Binding Color}" FontWeight="Bold" />
+                            <Label Content="{Binding CacheElem.OriginalText}" Foreground="{Binding Color}" FontWeight="Bold" />
                         </StackPanel>
                     </DataTemplate>
                 </ListBox.ItemTemplate>
             </ListBox>
             <ComboBox x:Name="cbItemsToTranslateFilter" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" SelectionChanged="CbItemsToTranslateFilter_SelectionChanged">
                 <ComboBoxItem Content="All items"/>
-                <ComboBoxItem Content="Without translation"/>
+                <ComboBoxItem Content="Without translation" />
             </ComboBox>
             <Button x:Name="btnSaveToFile" FontWeight="Bold" Content="Save to file" Grid.Row="4" Click="BtnSaveToFile_Click"/>
+        </Grid>
+        <Grid Grid.Column="1" Grid.ColumnSpan="3">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="5*"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button Content="Back" FontWeight="Bold" Grid.Column="1" Grid.Row="1" Click="Button_Click"/>
         </Grid>
 
     </Grid>

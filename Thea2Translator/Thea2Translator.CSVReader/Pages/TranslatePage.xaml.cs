@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Thea2Translator.DesktopApp.ViewModels;
 using Thea2Translator.Logic;
 using Thea2Translator.Logic.Cache;
 using Thea2Translator.Logic.Cache.Interfaces;
@@ -24,9 +25,9 @@ namespace Thea2Translator.DesktopApp.Pages
     public partial class TranslatePage : Page
     {
         IDataCache dataCache;
-        IList<CacheElem> allElements;
-        IList<CacheElem> filtredElements;
-        CacheElem selectedCacheElement;
+        IList<CacheElemViewModel> allElements;
+        IList<CacheElemViewModel> filtredElements;
+        CacheElemViewModel selectedCacheElement;
 
         public TranslatePage(FilesType fileType)
         {
@@ -41,7 +42,7 @@ namespace Thea2Translator.DesktopApp.Pages
             cbItemsToTranslateFilter.SelectedIndex = 0;
 
             dataCache.ReloadElems();
-            allElements = dataCache.CacheElems;
+            allElements = dataCache.CacheElems.Select(c => new CacheElemViewModel(c)).ToList();
             filtredElements = allElements;
 
             lbItemsToTranslate.ItemsSource = filtredElements;
@@ -49,18 +50,18 @@ namespace Thea2Translator.DesktopApp.Pages
 
         private void BtnTranslate_Click(object sender, RoutedEventArgs e)
         {
-            selectedCacheElement.SetTranslated(txtTranslatedText.Text);
-            selectedCacheElement.IsCorrectedByHuman = true;
+            selectedCacheElement.CacheElem.SetTranslated(txtTranslatedText.Text);
+            selectedCacheElement.CacheElem.IsCorrectedByHuman = true;
 
             btnSaveToFile.IsEnabled = true;
         }
 
         private void LbItemsToTranslate_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            selectedCacheElement = lbItemsToTranslate.SelectedItem as CacheElem;
+            selectedCacheElement = lbItemsToTranslate.SelectedItem as CacheElemViewModel;
 
-            txtOriginalText.Text = selectedCacheElement?.OriginalNormalizedText;
-            txtTranslatedText.Text = selectedCacheElement?.TranslatedNormalizedText;
+            txtOriginalText.Text = selectedCacheElement?.CacheElem?.OriginalNormalizedText;
+            txtTranslatedText.Text = selectedCacheElement?.CacheElem?.TranslatedNormalizedText;
 
             btnTranslate.IsEnabled = selectedCacheElement == null ? false : true;
         }
@@ -79,13 +80,18 @@ namespace Thea2Translator.DesktopApp.Pages
                     filtredElements = allElements;
                     break;
                 case 1:
-                    filtredElements = allElements.Where(c => c.ToTranslate).ToList();
+                    filtredElements = allElements.Where(c => c.CacheElem.ToTranslate).ToList();
                     break;
             }
 
             btnTranslate.IsEnabled = false;
             lbItemsToTranslate.ItemsSource = null;
             lbItemsToTranslate.ItemsSource = filtredElements;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new ModuleSelectionPage());
         }
     }
 }

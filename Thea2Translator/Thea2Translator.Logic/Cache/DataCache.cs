@@ -319,7 +319,7 @@ namespace Thea2Translator.Logic.Cache
                         continue;
 
                     if (!saveToFile)
-                        TryAddToCache(node.InnerText);
+                        TryAddToCache(TextHelper.Normalize(node.InnerText));
                     else
                     {
                         var key = TextHelper.Normalize(node.InnerText);
@@ -335,7 +335,7 @@ namespace Thea2Translator.Logic.Cache
                             continue;
 
                         if (!saveToFile)
-                            TryAddToCache(output.Attributes["name"].ToString());
+                            TryAddToCache(TextHelper.Normalize(output.Attributes["name"].ToString()));
                         else
                         {
                             string name = output.Attributes["name"].ToString();

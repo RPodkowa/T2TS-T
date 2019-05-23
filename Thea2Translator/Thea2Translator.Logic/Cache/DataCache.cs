@@ -153,7 +153,9 @@ namespace Thea2Translator.Logic.Cache
         {
             StartAlgorithmStep(3);
             ReloadElems();
+            StartNextPart();
             DeleteFilesToMachineTranslate();
+            StartNextPart();
             SaveFilesToMachineTranslate();
             StopAlgorithmStep();
         }
@@ -196,7 +198,9 @@ namespace Thea2Translator.Logic.Cache
         {
             StartAlgorithmStep(3);
             ReloadElems();
+            StartNextPart();
             ReadMachineTranslatedFiles();
+            StartNextPart();
             SaveElems();
             StopAlgorithmStep();
         }
@@ -232,8 +236,11 @@ namespace Thea2Translator.Logic.Cache
         {
             StartAlgorithmStep(4);
             ReloadElems();
+            StartNextPart();
             DeleteFilesToSteam();
+            StartNextPart();
             SaveElems();
+            StartNextPart();
             SaveFilesToSteam();
             StopAlgorithmStep();
         }

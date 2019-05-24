@@ -323,20 +323,26 @@ namespace Thea2Translator.Logic.Cache
                         var key = TextHelper.Normalize(node.InnerText);
                         var elem = GetElem(key);
                         if (elem != null)
-                            node.InnerText = elem.TranslatedText;
+                        {
+                            foreach (XmlNode child in node.ChildNodes)
+                            {
+                                if (child.Name != "#text") continue;
+                                child.InnerText= elem.TranslatedText;
+                            }
+                        }
                     }
 
-                    var outputs = adventure.SelectNodes("outputs");
+                    var outputs = node.SelectNodes("outputs");
                     foreach (XmlNode output in outputs)
                     {
                         if (output.Attributes == null)
                             continue;
 
                         if (!saveToFile)
-                            TryAddToCache(TextHelper.Normalize(output.Attributes["name"].ToString()));
+                            TryAddToCache(TextHelper.Normalize(output.Attributes["name"].Value.ToString()));
                         else
                         {
-                            string name = output.Attributes["name"].ToString();
+                            string name = output.Attributes["name"].Value.ToString();
                             if (!string.IsNullOrEmpty(name))
                             {
                                 var key = TextHelper.Normalize(name);

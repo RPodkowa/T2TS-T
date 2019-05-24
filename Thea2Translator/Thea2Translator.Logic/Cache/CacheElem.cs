@@ -149,6 +149,11 @@ namespace Thea2Translator.Logic
             return Groups.Contains(group);
         }
 
+        public string GetTranslateLink()
+        {
+            return @"https://translate.google.pl/?hl=pl#view=home&op=translate&sl=en&tl=pl&text=" + OriginalNormalizedText.ToLower();
+        }
+
         public override string ToString()
         {
             var arr = new List<string>();

@@ -91,5 +91,11 @@ namespace Thea2Translator.DesktopApp.Pages
         {
             this.NavigationService.Navigate(new ModuleSelectionPage());
         }
+
+        private void btnGoogle_Click(object sender, RoutedEventArgs e)
+        {
+            var link = selectedCacheElement.CacheElem.GetTranslateLink();
+            System.Diagnostics.Process.Start(link);
+        }
     }
 }

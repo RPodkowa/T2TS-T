@@ -1,22 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Xml;
-using Thea2Translator.Logic.Cache.Interfaces;
-using Thea2Translator.Logic.Helpers;
 
-namespace Thea2Translator.Logic.Cache
+namespace Thea2Translator.Logic
 {
     internal class DataCache : IDataCache
-    {        
+    {
         internal const string DataSeparator = "[::]";
         internal const int LinesInFile = 6000;
 
         public IList<CacheElem> CacheElems { get; private set; }
-        public Dictionary<string, int> Glossary;
+        public IList<string> Groups { get; private set; }
+        public Vocabulary Vocabulary { get; private set; }
 
         private readonly FilesType Type;
         private readonly string FullPath;
@@ -90,7 +86,7 @@ namespace Thea2Translator.Logic.Cache
             CacheElems = new List<CacheElem>();
         }
 
-        public void ReloadElems()
+        public void ReloadElems(bool withGroups = false, bool withVocabulary = false)
         {
             ResetElems();
             var lines = FileHelper.ReadFileLines(FullPath);
@@ -100,11 +96,32 @@ namespace Thea2Translator.Logic.Cache
                 LoadElem(line);
             }
 
-            //var g = new Glossary.Glossary();
-            //g.UpdateByCache(this);
-            //var elems = g.GetElemsForText("wit abccrafting");
+            if (withGroups) ReloadGroups();
+            if (withVocabulary) ReloadVocabulary();
         }
-                
+
+        private void ReloadGroups()
+        {
+            Groups = new List<string>();
+
+            foreach (var elem in CacheElems)
+            {
+                foreach (var group in elem.Groups)
+                {
+                    if (Groups.Contains(group))
+                        continue;
+
+                    Groups.Add(group);
+                }
+            }
+        }
+
+        private void ReloadVocabulary()
+        {
+            Vocabulary = new Vocabulary();
+            Vocabulary.Reload(this);
+        }
+
         private void LoadElem(string line)
         {
             var elem = new CacheElem(Type, line);
@@ -112,10 +129,19 @@ namespace Thea2Translator.Logic.Cache
             CacheElems.Add(elem);
         }
 
-        public void SaveElems()
+        public void SaveElems(bool withVocabulary = false)
         {
             UpdateStatus($"SaveElemsToFile '{FullPath}'");
             FileHelper.SaveElemsToFile(CacheElems, FullPath);
+            if (withVocabulary) SaveVocabulary();
+        }
+
+        private void SaveVocabulary()
+        {
+            if (Vocabulary == null)
+                return;
+
+            Vocabulary.SaveElems();
         }
 
         public void MakeStep(AlgorithmStep step)
@@ -265,12 +291,24 @@ namespace Thea2Translator.Logic.Cache
             }
         }
         #endregion
+        private string GetMainNodesName(string file)
+        {
+            var fileName = Path.GetFileNameWithoutExtension(file);
+            switch (fileName)
+            {
+                case "DATABASE_DES_LOCALIZATION": return "LOC_LIBRARY-EN_DES";
+                case "DATABASE_QUEST_LOCALIZATION": return "LOC_LIBRARY-EN_QUEST";
+                case "DATABASE_UI_LOCALIZATION": return "LOC_LIBRARY-EN_UI";
+            }
+
+            return "LOC_LIBRARY-EN_DES";
+        }
 
         private void ProcessFileDataBase(string file, bool saveToFile)
         {
             XmlDocument doc = new XmlDocument();
             doc.Load(file);
-            var entrys = doc.SelectNodes("//LOC_LIBRARY-EN_DES/Entry");
+            var entrys = doc.SelectNodes($"//{GetMainNodesName(file)}/Entry");
             foreach (XmlNode entry in entrys)
             {
                 if (entry.Attributes == null)
@@ -281,7 +319,7 @@ namespace Thea2Translator.Logic.Cache
                 if (!saveToFile)
                 {
                     var val = entry.Attributes["Val"]?.Value;
-                    TryAddToCache(key, val);
+                    TryAddToCacheWithGroup(key, val, TextHelper.GetGroupsFromKey(key));
                 }
                 else
                 {
@@ -303,9 +341,15 @@ namespace Thea2Translator.Logic.Cache
         {
             XmlDocument doc = new XmlDocument();
             doc.Load(file);
+            var fileName = Path.GetFileNameWithoutExtension(file);
             var adventures = doc.DocumentElement.GetElementsByTagName("Adventure");
             foreach (XmlNode adventure in adventures)
             {
+                if (adventure.Attributes == null)
+                    continue;
+
+                var adventureName = adventure.Attributes["name"]?.Value;
+
                 var nodes = adventure.SelectNodes("nodes");
                 foreach (XmlNode node in nodes)
                 {
@@ -316,18 +360,21 @@ namespace Thea2Translator.Logic.Cache
                     if (string.IsNullOrEmpty(xsi_type) || xsi_type != "NodeAdventure")
                         continue;
 
+                    var adventureNodeId = node.Attributes["ID"]?.Value;
+                    var group = $"{fileName}_{adventureName}_{adventureNodeId}";
+                    var text = TextHelper.Normalize(node.InnerText, true);
                     if (!saveToFile)
-                        TryAddToCache(TextHelper.Normalize(node.InnerText));
+                        TryAddToCacheWithGroup(text, group);
                     else
                     {
-                        var key = TextHelper.Normalize(node.InnerText);
+                        var key = text;
                         var elem = GetElem(key);
                         if (elem != null)
                         {
                             foreach (XmlNode child in node.ChildNodes)
                             {
                                 if (child.Name != "#text") continue;
-                                child.InnerText= elem.TranslatedText;
+                                child.InnerText = elem.TranslatedText;
                             }
                         }
                     }
@@ -338,14 +385,14 @@ namespace Thea2Translator.Logic.Cache
                         if (output.Attributes == null)
                             continue;
 
+                        var name = TextHelper.Normalize(output.Attributes["name"].Value.ToString(), true);
                         if (!saveToFile)
-                            TryAddToCache(TextHelper.Normalize(output.Attributes["name"].Value.ToString()));
+                            TryAddToCacheWithGroup(name, group);
                         else
                         {
-                            string name = output.Attributes["name"].Value.ToString();
                             if (!string.IsNullOrEmpty(name))
                             {
-                                var key = TextHelper.Normalize(name);
+                                var key = name;
                                 var elem = GetElem(key);
                                 if (elem != null)
                                     output.Attributes["name"].Value = elem.TranslatedText;
@@ -361,11 +408,6 @@ namespace Thea2Translator.Logic.Cache
                 string newFile = path + Path.GetFileName(file);
                 doc.Save(newFile);
             }
-        }
-
-        private bool ContainsElem(string key)
-        {
-            return (GetElem(key) != null);
         }
 
         private CacheElem GetElem(string key)
@@ -391,9 +433,11 @@ namespace Thea2Translator.Logic.Cache
             return ret;
         }
 
-        private CacheElem CreateElem(string key, string value)
+        private CacheElem CreateElem(string key, string value, List<string> groups)
         {
-            return new CacheElem(Type, ++CurrentId, key, value);
+            var elem = new CacheElem(Type, ++CurrentId, key, value);
+            elem.AddGroups(groups);
+            return elem;
         }
 
         private string GetFileName(string sufix = "")
@@ -403,20 +447,30 @@ namespace Thea2Translator.Logic.Cache
             return file += sufix;
         }
 
-        private void TryAddToCache(string value)
+        private void TryAddToCacheWithGroup(string value, List<string> groups)
         {
-            TryAddToCache(value, value);
+            TryAddToCacheWithGroup(value, value, groups);
         }
 
-        private void TryAddToCache(string key, string value)
+        private void TryAddToCacheWithGroup(string value, string group)
+        {
+            var groups = new List<string>() { group };
+            TryAddToCacheWithGroup(value, value, groups);
+        }
+
+        private void TryAddToCacheWithGroup(string key, string value, List<string> groups)
         {
             if (string.IsNullOrEmpty(key))
                 return;
 
-            if (ContainsElem(key))
+            var elem = GetElem(key);
+            if (elem != null)
+            {
+                elem.AddGroups(groups);
                 return;
+            }
 
-            CacheElems.Add(CreateElem(key, value));
+            CacheElems.Add(CreateElem(key, value, groups));
         }
 
         private string GetDirectoryName(AlgorithmStep step)

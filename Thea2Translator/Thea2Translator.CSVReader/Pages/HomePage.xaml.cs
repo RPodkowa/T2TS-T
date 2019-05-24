@@ -14,7 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Thea2Translator.DesktopApp.Properties;
-using Thea2Translator.Logic.Helpers;
+using Thea2Translator.Logic;
 
 namespace Thea2Translator.DesktopApp.Pages
 {

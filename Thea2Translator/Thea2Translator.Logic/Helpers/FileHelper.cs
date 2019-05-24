@@ -4,9 +4,8 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Thea2Translator.Logic.Cache;
 
-namespace Thea2Translator.Logic.Helpers
+namespace Thea2Translator.Logic
 {
     public class FileHelper
     {
@@ -70,6 +69,19 @@ namespace Thea2Translator.Logic.Helpers
         }
 
         public static void SaveElemsToFile(IEnumerable<CacheElem> elems, string path)
+        {
+            CreatedPathIfNotExists(path);
+            DeleteFileIfExists(path);
+            TextWriter tw = new StreamWriter(path, true);
+            foreach (var elem in elems)
+            {
+                tw.WriteLine(elem.ToString());
+            }
+
+            tw.Close();
+        }
+
+        public static void SaveElemsToFile(IEnumerable<object> elems, string path)
         {
             CreatedPathIfNotExists(path);
             DeleteFileIfExists(path);

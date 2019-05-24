@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Media;
-using Thea2Translator.Logic.Cache;
+using Thea2Translator.Logic;
 
 namespace Thea2Translator.DesktopApp.ViewModels
 {

@@ -1,23 +1,61 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Thea2Translator.Logic.Helpers
+namespace Thea2Translator.Logic
 {
     public class TextHelper
     {
-        public static string NormalizeForGlossary(string text)
+        private static string CutTail(string source, string tail)
         {
-            var ret = RemoveUnnecessaryForGlossary(text);
+            if (!isEndingWith(source, tail))
+                return source;
+
+            return source.Substring(0, source.Length - tail.Length);
+        }
+
+        private static string GetLast(string source, int tail_length)
+        {
+            if (tail_length >= source.Length)
+                return source;
+
+            return source.Substring(source.Length - tail_length);
+        }
+
+        private static bool isEndingWith(string source, string tail)
+        {
+            var lasts = GetLast(source, tail.Length);
+            return (lasts == tail);
+        }
+
+        public static List<string> GetGroupsFromKey(string key)
+        {
+            var ret = new List<string>();
+
+            key = CutTail(key, "_DES");
+            key = new string(key.Where(c => char.IsLetter(c) || c == '_').ToArray());
+
+            var elems = key.Split('_');
+            var group = "";
+            foreach (var elem in elems)
+            {
+                group += elem;
+                ret.Add(group);
+                group += "_";
+            }
+
+            return ret;
+        }
+
+        public static string NormalizeForVocabulary(string text)
+        {
+            var ret = RemoveUnnecessaryForVocabulary(text);
             if (ret.Length > 1)
                 ret = ret.First().ToString() + ret.Substring(1).ToLower();
 
             return ret;
         }
 
-        public static string RemoveUnnecessaryForGlossary(string text)
+        public static string RemoveUnnecessaryForVocabulary(string text)
         {
             if (string.IsNullOrEmpty(text))
                 return "";
@@ -33,7 +71,7 @@ namespace Thea2Translator.Logic.Helpers
             return ret;
         }
 
-        public static string Normalize(string text)
+        public static string Normalize(string text, bool withRemoveSpecials)
         {
             if (string.IsNullOrEmpty(text))
                 return "";
@@ -44,11 +82,11 @@ namespace Thea2Translator.Logic.Helpers
             ret = ret.Replace("\\r", "[EOLRR]");
             ret = ret.Replace("\r", "[EOLR]");
 
-            ret = removeSpecials(ret, "{", "}");
+            if (withRemoveSpecials) ret = removeSpecials(ret, "{", "}");
             return ret;
         }
 
-        public static string UnNormalize(string text, string textPattern, bool replaseSpecialChars = false)
+        public static string UnNormalize(string text, string textPattern, bool withRemoveSpecials, bool replaceSpecialChars)
         {
             if (string.IsNullOrEmpty(text))
                 return "";
@@ -59,7 +97,7 @@ namespace Thea2Translator.Logic.Helpers
             ret = ret.Replace("[EOLRR]", "\\r");
             ret = ret.Replace("[EOLR]", "\r");
 
-            if (replaseSpecialChars)
+            if (replaceSpecialChars)
             {
                 string[,] specialChars =
                 {
@@ -73,7 +111,7 @@ namespace Thea2Translator.Logic.Helpers
                 }
             }
 
-            ret = replaceSpecials(ret, textPattern, "{", "}");
+            if (withRemoveSpecials) ret = replaceSpecials(ret, textPattern, "{", "}");
             return ret;
         }
 

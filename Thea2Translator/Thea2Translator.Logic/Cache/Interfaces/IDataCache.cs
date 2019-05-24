@@ -4,16 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Thea2Translator.Logic.Cache.Interfaces
+namespace Thea2Translator.Logic
 {
     public interface IDataCache
     {
         event Action<string, double> StatusChanged;
 
         IList<CacheElem> CacheElems { get; }
+        IList<string> Groups { get; }
+        Vocabulary Vocabulary { get; }
 
-        void ReloadElems();
-        void SaveElems();
+        void ReloadElems(bool withGroups = false, bool withVocabulary = false);
+        void SaveElems(bool withVocabulary = false);
         void MakeStep(AlgorithmStep step);
 
     }

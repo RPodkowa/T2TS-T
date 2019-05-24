@@ -14,8 +14,6 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Thea2Translator.DesktopApp.ViewModels;
 using Thea2Translator.Logic;
-using Thea2Translator.Logic.Cache;
-using Thea2Translator.Logic.Cache.Interfaces;
 
 namespace Thea2Translator.DesktopApp.Pages
 {
@@ -41,7 +39,7 @@ namespace Thea2Translator.DesktopApp.Pages
 
             cbItemsToTranslateFilter.SelectedIndex = 0;
 
-            dataCache.ReloadElems();
+            dataCache.ReloadElems(true, true);
             allElements = dataCache.CacheElems.Select(c => new CacheElemViewModel(c)).ToList();
             filtredElements = allElements;
 
@@ -68,7 +66,7 @@ namespace Thea2Translator.DesktopApp.Pages
 
         private void BtnSaveToFile_Click(object sender, RoutedEventArgs e)
         {
-            dataCache.SaveElems();
+            dataCache.SaveElems(true);
             btnSaveToFile.IsEnabled = false;
         }
 

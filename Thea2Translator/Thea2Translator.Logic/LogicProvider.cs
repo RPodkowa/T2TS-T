@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Thea2Translator.Logic.Cache;
-using Thea2Translator.Logic.Cache.Interfaces;
-
-namespace Thea2Translator.Logic
+﻿namespace Thea2Translator.Logic
 {
     public static class LogicProvider
     {

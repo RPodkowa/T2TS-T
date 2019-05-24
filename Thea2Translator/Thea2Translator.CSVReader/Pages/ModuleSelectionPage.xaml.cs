@@ -5,8 +5,6 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 using Thea2Translator.Logic;
-using Thea2Translator.Logic.Cache;
-using Thea2Translator.Logic.Cache.Interfaces;
 
 namespace Thea2Translator.DesktopApp.Pages
 {

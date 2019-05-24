@@ -1,13 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Thea2Translator.Logic.Helpers;
 
-namespace Thea2Translator.Logic.Glossary
+namespace Thea2Translator.Logic
 {
-    public class GlossaryElem
+    public class VocabularyElem
     {
         public int UsageCount { get; private set; }
         public int Flag { get; private set; }
@@ -20,7 +16,7 @@ namespace Thea2Translator.Logic.Glossary
         public string OriginalWord;
         public string Translation;
 
-        public GlossaryElem(string line)
+        public VocabularyElem(string line)
         {            
             var elems = line.Split(';');
 
@@ -34,7 +30,7 @@ namespace Thea2Translator.Logic.Glossary
             Translation = elems[elem++];
         }
 
-        public GlossaryElem(string originalWord, string translation)
+        public VocabularyElem(string originalWord, string translation)
         {
             UsageCount = 0;
             Flag = 0;
@@ -50,7 +46,7 @@ namespace Thea2Translator.Logic.Glossary
 
         public bool OccursInText(string text)
         {
-            return OccursInPreparedText(TextHelper.RemoveUnnecessaryForGlossary(text).ToLower());
+            return OccursInPreparedText(TextHelper.RemoveUnnecessaryForVocabulary(text).ToLower());
         }
 
         public bool OccursInPreparedText(string text)

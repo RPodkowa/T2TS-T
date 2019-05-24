@@ -1,14 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Thea2Translator.Logic.Helpers;
 
-namespace Thea2Translator.Logic.Cache
+namespace Thea2Translator.Logic
 {
     public class CacheElem
     {
+        internal const char GroupSeparator = ';';
+
         public FilesType Type { get; private set; }
         public int Id { get; private set; }
 
@@ -43,7 +42,7 @@ namespace Thea2Translator.Logic.Cache
             private set
             {
                 _originalText = value;
-                OriginalNormalizedText = TextHelper.Normalize(_originalText);
+                OriginalNormalizedText = TextHelper.Normalize(_originalText, IsModulesElem);
             }
         }
         public string OriginalNormalizedText { get; private set; }
@@ -54,7 +53,7 @@ namespace Thea2Translator.Logic.Cache
             private set
             {
                 _translatedText = value;
-                _translatedNormalizedText = TextHelper.Normalize(_translatedText);
+                _translatedNormalizedText = TextHelper.Normalize(_translatedText, IsModulesElem);
             }
         }
         private string _translatedNormalizedText;
@@ -64,9 +63,11 @@ namespace Thea2Translator.Logic.Cache
             private set
             {
                 _translatedNormalizedText = value;
-                _translatedText = TextHelper.UnNormalize(_translatedNormalizedText, OriginalText, IsModulesElem); ;
+                _translatedText = TextHelper.UnNormalize(_translatedNormalizedText, OriginalText, IsModulesElem, IsModulesElem); ;
             }
         }
+
+        public List<string> Groups;
 
         public bool IsDataBaseElem { get { return Type == FilesType.DataBase; } }
         public bool IsModulesElem { get { return Type == FilesType.Modules; } }
@@ -81,6 +82,7 @@ namespace Thea2Translator.Logic.Cache
             Key = key;
             OriginalText = originalText;
             TranslatedText = originalText;
+            Groups = new List<string>();
         }
 
         public CacheElem(FilesType type, string line)
@@ -95,24 +97,31 @@ namespace Thea2Translator.Logic.Cache
             int elem = 0;
             Id = int.Parse(elems[elem++]);
             Flag = int.Parse(elems[elem++]);
+            var groups = elems[elem++];
 
             if (IsDataBaseElem)
             {
                 Key = elems[elem++];
-                OriginalText = elems[elem++];
-                TranslatedText = elems[elem++];
+                //OriginalText = elems[elem++];
+                //TranslatedText = elems[elem++];
+                OriginalNormalizedText = elems[elem++];
+                _originalText = OriginalNormalizedText;
+                TranslatedNormalizedText = elems[elem++];
             }
             else
             {
                 OriginalNormalizedText = elems[elem++];
                 TranslatedNormalizedText = elems[elem++];
             }
+
+            Groups = groups.Split(GroupSeparator).ToList();
+            if (Groups == null) Groups = new List<string>();
         }
 
         private bool CheckElems(string[] elems)
         {
-            if (IsDataBaseElem && elems.Length != 5) return false;
-            if (IsModulesElem && elems.Length != 4) return false;
+            if (IsDataBaseElem && elems.Length != 6) return false;
+            if (IsModulesElem && elems.Length != 5) return false;
             return true;
         }
 
@@ -121,16 +130,38 @@ namespace Thea2Translator.Logic.Cache
             TranslatedNormalizedText = text;
         }
 
+        public void AddGroups(List<string> groups)
+        {
+            foreach (var group in groups)
+            {
+                AddGroup(group);
+            }
+        }
+
+        public void AddGroup(string group)
+        {
+            if (InGroup(group)) return;
+            Groups.Add(group);
+        }
+
+        public bool InGroup(string group)
+        {
+            return Groups.Contains(group);
+        }
+
         public override string ToString()
         {
             var arr = new List<string>();
             arr.Add(Id.ToString());
             arr.Add(Flag.ToString());
+            arr.Add(string.Join(GroupSeparator.ToString(), Groups.ToArray()));
             if (IsDataBaseElem)
             {
                 arr.Add(Key);
-                arr.Add(OriginalText);
-                arr.Add(TranslatedText);
+                //arr.Add(OriginalText);
+                //arr.Add(TranslatedText);
+                arr.Add(OriginalNormalizedText);
+                arr.Add(TranslatedNormalizedText);
             }
             else
             {

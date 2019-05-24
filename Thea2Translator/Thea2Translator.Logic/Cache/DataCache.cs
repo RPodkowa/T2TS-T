@@ -382,7 +382,7 @@ namespace Thea2Translator.Logic
                     var outputs = node.SelectNodes("outputs");
                     foreach (XmlNode output in outputs)
                     {
-                        if (output.Attributes == null)
+                        if (output.Attributes == null || output.Attributes["name"] == null)
                             continue;
 
                         var name = TextHelper.Normalize(output.Attributes["name"].Value.ToString(), true);

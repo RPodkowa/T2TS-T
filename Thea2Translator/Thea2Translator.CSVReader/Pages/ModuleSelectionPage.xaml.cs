@@ -98,32 +98,45 @@ namespace Thea2Translator.DesktopApp.Pages
             {
                 lock (_lockObject)
                 {
-                    IDataCache cache = filesType == FilesType.DataBase ?
-                    LogicProvider.DataBase : LogicProvider.Modules;
+                    try
+                    {
+                        IDataCache cache = filesType == FilesType.DataBase ?
+                        LogicProvider.DataBase : LogicProvider.Modules;
 
-                    ClearProgressBar();
-                    cache.StatusChanged += (s, p) => UpdateStatus(s, p);
+                        ClearProgressBar();
+                        cache.StatusChanged += (s, p) => UpdateStatus(s, p);
 
-                    this.Dispatcher.Invoke(() => {
-                        SetButtonEnableProp(false);
-                        txtCurrentModuleInProcess.Content = $"{step.ToString()} - {filesType.ToString()}";
-                    });
+                        this.Dispatcher.Invoke(() =>
+                        {
+                            SetButtonEnableProp(false);
+                            txtCurrentModuleInProcess.Content = $"{step.ToString()} - {filesType.ToString()}";
+                        });
 
-                    var stopWatch = new Stopwatch();
-                    stopWatch.Start();
-                    cache.MakeStep(step);
-                    stopWatch.Stop();
+                        var stopWatch = new Stopwatch();
+                        stopWatch.Start();
+                        cache.MakeStep(step);
+                        stopWatch.Stop();
 
-                    if (processTimeSpan==null) processTimeSpan = stopWatch.Elapsed;
-                    else processTimeSpan += stopWatch.Elapsed;
-                                                            
-                    cache.StatusChanged -= UpdateStatus;
+                        if (processTimeSpan == null) processTimeSpan = stopWatch.Elapsed;
+                        else processTimeSpan += stopWatch.Elapsed;
 
-                    this.Dispatcher.Invoke(() => {
-                        SetButtonEnableProp(true);
-                        string elapsedTime = string.Format(" [{0:00}:{1:00}:{2:00}.{3:00}]", processTimeSpan?.Hours, processTimeSpan?.Minutes, processTimeSpan?.Seconds, processTimeSpan?.Milliseconds / 10);
-                        txtCurrentModuleInProcess.Content = $"{step.ToString()} done in {elapsedTime}";
-                    });
+                        cache.StatusChanged -= UpdateStatus;
+
+                        this.Dispatcher.Invoke(() =>
+                        {
+                            SetButtonEnableProp(true);
+                            string elapsedTime = string.Format(" [{0:00}:{1:00}:{2:00}.{3:00}]", processTimeSpan?.Hours, processTimeSpan?.Minutes, processTimeSpan?.Seconds, processTimeSpan?.Milliseconds / 10);
+                            txtCurrentModuleInProcess.Content = $"{step.ToString()} done in {elapsedTime}";
+                        });
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message, "Error");
+                        this.Dispatcher.Invoke(() =>
+                        {
+                            SetButtonEnableProp(true);
+                        });
+                    }
                 }
             });
         }
@@ -150,8 +163,8 @@ namespace Thea2Translator.DesktopApp.Pages
         }
 
         private void BtnImportFromSteam_Click(object sender, RoutedEventArgs e)
-        {
-            Process(AlgorithmStep.ImportFromSteam);
+        {        
+                Process(AlgorithmStep.ImportFromSteam);         
         }
 
         private void BtnPrepareToMachineTranslate_Click(object sender, RoutedEventArgs e)
@@ -171,9 +184,9 @@ namespace Thea2Translator.DesktopApp.Pages
 
         private void Process(AlgorithmStep step)
         {
-            processTimeSpan = null;
-            if (isDataBaseModuleSelected) ProcessFiles(FilesType.DataBase, step);
-            if (isModulesModuleSelected) ProcessFiles(FilesType.Modules, step);
+                processTimeSpan = null;
+                if (isDataBaseModuleSelected) ProcessFiles(FilesType.DataBase, step);
+                if (isModulesModuleSelected) ProcessFiles(FilesType.Modules, step);         
         }
     }
 }

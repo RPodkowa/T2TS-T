@@ -39,8 +39,8 @@
                     <ColumnDefinition/>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
-                <Button x:Name="btnTranslate" Content="Translate"  Click="BtnTranslate_Click" FontWeight="Bold"/>
-                <Button x:Name="btnGoogle" Content="Google" Click="btnGoogle_Click" FontWeight="Bold" Grid.Column="1"/>
+                <Button x:Name="btnTranslate" Content="{DynamicResource translateButtonTranslate}"  Click="BtnTranslate_Click" FontWeight="Bold"/>
+                <Button x:Name="btnGoogle" Content="{DynamicResource googleButtonTranslate}" Click="btnGoogle_Click" FontWeight="Bold" Grid.Column="1"/>
             </Grid>
             <TextBox x:Name="txtOriginalText" TextWrapping="Wrap" IsEnabled="False" />
             <TextBox x:Name="txtTranslatedText" Grid.Row="2" TextWrapping="Wrap"/>
@@ -65,10 +65,10 @@
                 </ListBox.ItemTemplate>
             </ListBox>
             <ComboBox x:Name="cbItemsToTranslateFilter" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" SelectionChanged="CbItemsToTranslateFilter_SelectionChanged">
-                <ComboBoxItem Content="All items"/>
-                <ComboBoxItem Content="Without translation" />
+                <ComboBoxItem Content="{DynamicResource allComboItemTranslate}"/>
+                <ComboBoxItem Content="{DynamicResource withoutTranslationComboItemTranslate}" />
             </ComboBox>
-            <Button x:Name="btnSaveToFile" FontWeight="Bold" Content="Save to file" Grid.Row="4" Click="BtnSaveToFile_Click"/>
+            <Button x:Name="btnSaveToFile" FontWeight="Bold" Content="{DynamicResource saveFileButtonTranslate}" Grid.Row="4" Click="BtnSaveToFile_Click"/>
         </Grid>
         <Grid Grid.Column="1" Grid.ColumnSpan="5">
             <Grid.RowDefinitions>
@@ -81,7 +81,7 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <Button Content="Back" FontWeight="Bold" Grid.Column="1" Grid.Row="1" Click="Button_Click"/>
+            <Button Content="{DynamicResource backButtonTranslate}" FontWeight="Bold" Grid.Column="1" Grid.Row="1" Click="Button_Click"/>
         </Grid>
         <cefSharp:ChromiumWebBrowser x:Name="wbGoogleTranslate" Grid.Column="5" Grid.Row="1" />
     </Grid>

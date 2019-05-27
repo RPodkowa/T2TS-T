@@ -27,8 +27,22 @@
         <Button x:Name="btnChooseFolder" Grid.Column="3" Grid.Row="2" Width="30" Height="20" Content="..." Click="BtnChooseFolder_Click"/>
         <TextBox x:Name="txtFolderDir" Grid.Row="2" TextWrapping="Wrap" Grid.Column="2" Height="20"/>
         <Label Content="Dir:" Grid.Row="2" Grid.Column="1" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" />
-        <Button x:Name="btnStartTranslate" FontWeight="Bold" Content="Start" Grid.Column="2" Grid.Row="4" Click="BtnStartTranslate_Click"/>
-        <Label Content="Choose folder with data:" FontWeight="Bold" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="20" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="3"/>
+        <Button x:Name="btnStartTranslate" FontWeight="Bold" Content="{DynamicResource startButtonHomePage}" Grid.Column="2" Grid.Row="4" Click="BtnStartTranslate_Click"/>
+        <Label Content="{DynamicResource chooseFolderLabelHomePage}" FontWeight="Bold" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="20" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="3"/>
+        <Grid Grid.Column="4">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="6*"/>
+            </Grid.RowDefinitions>
+            <Button x:Name="btnChangeLangToPolish" Content="Polski" Grid.Row="1" Click="BtnChangeLangToPolish_Click"/>
+            <Button x:Name="btnChangeLangToEnglish" Content="English" Grid.Column="2" Grid.Row="1"/>
+        </Grid>
 
     </Grid>
 </Page>

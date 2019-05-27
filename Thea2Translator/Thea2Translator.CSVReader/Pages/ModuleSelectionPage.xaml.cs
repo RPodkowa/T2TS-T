@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
+using Thea2Translator.DesktopApp.Helpers;
 using Thea2Translator.Logic;
 
 namespace Thea2Translator.DesktopApp.Pages
@@ -52,6 +53,8 @@ namespace Thea2Translator.DesktopApp.Pages
                 if (!isDataBaseModuleSelected && !isModulesModuleSelected)
                     SetStepsButtonVisibility(false);
             };
+
+            this.SetLanguageDictinary();
         }
 
         private void ChangeButtonSelectColor(Button button, bool isModuleSelected)

@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Thea2Translator.DesktopApp.Helpers;
 using Thea2Translator.DesktopApp.Properties;
 using Thea2Translator.Logic;
 
@@ -23,11 +24,16 @@ namespace Thea2Translator.DesktopApp.Pages
     /// </summary>
     public partial class HomePage : Page
     {
+        ResourceDictionary currentLangDictinary;
+
         public HomePage()
         {
             InitializeComponent();
             txtFolderDir.IsEnabled = false;
             txtFolderDir.Text = Settings.Default.FolderSrc;
+
+            currentLangDictinary = LanguageHelper.GetLanguageDictinary(LogicProvider.Language.CurrentLanguage);
+            this.Resources.MergedDictionaries.Add(currentLangDictinary);
         }
 
         private void BtnStartTranslate_Click(object sender, RoutedEventArgs e)
@@ -51,6 +57,15 @@ namespace Thea2Translator.DesktopApp.Pages
                 txtFolderDir.Text = fbd.SelectedPath;
                 btnStartTranslate.IsEnabled = true;
             }
+        }
+
+        private void BtnChangeLangToPolish_Click(object sender, RoutedEventArgs e)
+        {
+            this.Resources.MergedDictionaries.Remove(currentLangDictinary);
+            LogicProvider.Language.SetLanguage(Logic.Languages.Languages.Polish);
+
+            currentLangDictinary = LanguageHelper.GetLanguageDictinary(LogicProvider.Language.CurrentLanguage);
+            this.Resources.MergedDictionaries.Add(currentLangDictinary);
         }
     }
 }

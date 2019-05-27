@@ -112,6 +112,9 @@
     <Compile Include="Cache\DataCache.cs" />
     <Compile Include="Cache\FilesType.cs" />
     <Compile Include="Cache\Interfaces\IDataCache.cs" />
+    <Compile Include="Languages\Interfaces\ILanguageManager.cs" />
+    <Compile Include="Languages\Language.cs" />
+    <Compile Include="Languages\LanguageManager.cs" />
     <Compile Include="Vocabulary\Vocabulary.cs" />
     <Compile Include="Vocabulary\VocabularyElem.cs" />
     <Compile Include="Helpers\FileHelper.cs" />

@@ -3,6 +3,7 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:cefSharp="clr-namespace:CefSharp.Wpf;assembly=CefSharp.Wpf"
       xmlns:local="clr-namespace:Thea2Translator.DesktopApp.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
@@ -16,10 +17,13 @@
             <RowDefinition Height="5*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition Width="20*"/>
-            <ColumnDefinition/>
-            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition Width="19*"/>
+            <ColumnDefinition Width="372*"/>
+            <ColumnDefinition Width="19*"/>
+            <ColumnDefinition Width="372*"/>
+            <ColumnDefinition Width="19*"/>
+            <ColumnDefinition Width="372*"/>
+            <ColumnDefinition Width="19*"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Grid Grid.Column="3" Grid.Row="1">
@@ -30,10 +34,17 @@
                 <RowDefinition/>
                 <RowDefinition Height="3*"/>
             </Grid.RowDefinitions>
+            <Grid Grid.Row="4">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="btnTranslate" Content="Translate"  Click="BtnTranslate_Click" FontWeight="Bold"/>
+                <Button x:Name="btnGoogle" Content="Google" Click="btnGoogle_Click" FontWeight="Bold" Grid.Column="1"/>
+            </Grid>
             <TextBox x:Name="txtOriginalText" TextWrapping="Wrap" IsEnabled="False" />
             <TextBox x:Name="txtTranslatedText" Grid.Row="2" TextWrapping="Wrap"/>
-            <Button x:Name="btnTranslate" Content="Translate " Grid.Row="4" Click="BtnTranslate_Click" Margin="0,0,139,0" FontWeight="Bold"/>
-            <Button x:Name="btnGoogle" Content="Google" HorizontalAlignment="Left" Margin="238,0,0,0" Grid.Row="4" VerticalAlignment="Top" Width="134" Height="31" Click="btnGoogle_Click" FontWeight="Bold"/>
+
         </Grid>
         <Grid Grid.Column="1" Grid.Row="1">
             <Grid.RowDefinitions>
@@ -59,7 +70,7 @@
             </ComboBox>
             <Button x:Name="btnSaveToFile" FontWeight="Bold" Content="Save to file" Grid.Row="4" Click="BtnSaveToFile_Click"/>
         </Grid>
-        <Grid Grid.Column="1" Grid.ColumnSpan="3">
+        <Grid Grid.Column="1" Grid.ColumnSpan="5">
             <Grid.RowDefinitions>
                 <RowDefinition/>
                 <RowDefinition Height="5*"/>
@@ -72,6 +83,6 @@
             </Grid.ColumnDefinitions>
             <Button Content="Back" FontWeight="Bold" Grid.Column="1" Grid.Row="1" Click="Button_Click"/>
         </Grid>
-
+        <cefSharp:ChromiumWebBrowser x:Name="wbGoogleTranslate" Grid.Column="5" Grid.Row="1" />
     </Grid>
 </Page>

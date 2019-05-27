@@ -62,6 +62,7 @@ namespace Thea2Translator.DesktopApp.Pages
             txtTranslatedText.Text = selectedCacheElement?.CacheElem?.TranslatedNormalizedText;
 
             btnTranslate.IsEnabled = selectedCacheElement == null ? false : true;
+            btnGoogle.IsEnabled = selectedCacheElement == null ? false : true; ;
         }
 
         private void BtnSaveToFile_Click(object sender, RoutedEventArgs e)
@@ -95,7 +96,10 @@ namespace Thea2Translator.DesktopApp.Pages
         private void btnGoogle_Click(object sender, RoutedEventArgs e)
         {
             var link = selectedCacheElement.CacheElem.GetTranslateLink();
-            System.Diagnostics.Process.Start(link);
+            //System.Diagnostics.Process.Start(link);
+
+            wbGoogleTranslate.Address = link;
+            btnGoogle.IsEnabled = false;
         }
     }
 }

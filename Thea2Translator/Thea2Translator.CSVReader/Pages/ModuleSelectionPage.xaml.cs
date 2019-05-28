@@ -83,7 +83,7 @@ namespace Thea2Translator.DesktopApp.Pages
         {
             if (isDataBaseModuleSelected && isModulesModuleSelected)
             {
-                MessageBox.Show("Choose only one module!", "Warning");
+                MessageBox.Show(this.Resources["transSelOneModuleSelection"].ToString(), this.Resources["transWarSelection"].ToString());
             }
             else if (isDataBaseModuleSelected)
             {

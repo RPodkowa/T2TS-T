@@ -33,7 +33,7 @@
         <Grid Grid.ColumnSpan="5" Grid.RowSpan="2" Grid.Column="1" Grid.Row="6">
             <Grid.RowDefinitions>
                 <RowDefinition/>
-                <RowDefinition Height="2*"/>
+                <RowDefinition Height="3*"/>
                 <RowDefinition Height="2*"/>
             </Grid.RowDefinitions>
 
@@ -63,8 +63,12 @@
             <Button x:Name="btnImportFromMachineTranslate" Grid.Column="4" Click="BtnImportFromMachineTranslate_Click">
                 <TextBlock TextWrapping="Wrap" TextAlignment="Center"><Run Text="{DynamicResource importMachineButtonModuleSelection}"/></TextBlock>
             </Button>
-            <Button x:Name="btnTranslate" Content="{DynamicResource translateButtonModuleSelection}" Grid.Column="6" Click="BtnTranslate_Click"/>
-            <Button x:Name="btnExportToSteam" Content="{DynamicResource exportSteamButtonModuleSelection}" Grid.Column="8" Click="BtnExportToSteam_Click"/>
+            <Button x:Name="btnTranslate" Grid.Column="6" Click="BtnTranslate_Click">
+                <TextBlock TextWrapping="Wrap" TextAlignment="Center"><Run Text="{DynamicResource translateButtonModuleSelection}"/></TextBlock>
+            </Button>
+            <Button x:Name="btnExportToSteam" Grid.Column="8" Click="BtnExportToSteam_Click">
+                <TextBlock TextWrapping="Wrap" TextAlignment="Center"><Run Text="{DynamicResource exportSteamButtonModuleSelection}"/></TextBlock>
+            </Button>
         </Grid>
 
     </Grid>

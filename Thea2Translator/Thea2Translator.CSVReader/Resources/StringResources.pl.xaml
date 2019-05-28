@@ -13,6 +13,9 @@
     <system:String x:Key="translateButtonModuleSelection">Tłumacz</system:String>
     <system:String x:Key="exportSteamButtonModuleSelection">Eksportuj do Steama</system:String>
 
+    <system:String x:Key="transWarSelection">Ostrzeżenie</system:String>
+    <system:String x:Key="transSelOneModuleSelection">Wybierz jeden moduł</system:String>
+
     <system:String x:Key="chooseActionLabelModuleSelection">Wybierz akcję</system:String>
 
     <system:String x:Key="backButtonTranslate">Powrót</system:String>

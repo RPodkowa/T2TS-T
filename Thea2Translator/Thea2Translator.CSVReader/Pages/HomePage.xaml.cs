@@ -57,12 +57,21 @@ namespace Thea2Translator.DesktopApp.Pages
                 txtFolderDir.Text = fbd.SelectedPath;
                 btnStartTranslate.IsEnabled = true;
             }
-        }
+        }      
 
-        private void BtnChangeLangToPolish_Click(object sender, RoutedEventArgs e)
+        private void BtnChangeLangToPolish_Click(object sender, MouseButtonEventArgs e)
         {
             this.Resources.MergedDictionaries.Remove(currentLangDictinary);
             LogicProvider.Language.SetLanguage(Logic.Languages.Languages.Polish);
+
+            currentLangDictinary = LanguageHelper.GetLanguageDictinary(LogicProvider.Language.CurrentLanguage);
+            this.Resources.MergedDictionaries.Add(currentLangDictinary);
+        }
+
+        private void Image_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            this.Resources.MergedDictionaries.Remove(currentLangDictinary);
+            LogicProvider.Language.SetLanguage(Logic.Languages.Languages.English);
 
             currentLangDictinary = LanguageHelper.GetLanguageDictinary(LogicProvider.Language.CurrentLanguage);
             this.Resources.MergedDictionaries.Add(currentLangDictinary);

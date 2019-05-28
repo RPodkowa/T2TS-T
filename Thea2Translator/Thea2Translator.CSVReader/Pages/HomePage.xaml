@@ -17,7 +17,7 @@
             <ColumnDefinition Width="4*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition/>
+            <RowDefinition Height="2*"/>
             <RowDefinition Height="3*"/>
             <RowDefinition Height="3*"/>
             <RowDefinition/>
@@ -31,17 +31,27 @@
         <Label Content="{DynamicResource chooseFolderLabelHomePage}" FontWeight="Bold" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="20" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="3"/>
         <Grid Grid.Column="4">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition Width="8*"/>
+                <ColumnDefinition Width="3*"/>
                 <ColumnDefinition/>
-                <ColumnDefinition Width="5*"/>
-                <ColumnDefinition/>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="8*"/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition/>
                 <RowDefinition Height="6*"/>
             </Grid.RowDefinitions>
-            <Button x:Name="btnChangeLangToPolish" Content="Polski" Grid.Row="1" Click="BtnChangeLangToPolish_Click"/>
-            <Button x:Name="btnChangeLangToEnglish" Content="English" Grid.Column="2" Grid.Row="1"/>
+            <Image x:Name="imgEnglishFlag" Source="/Thea2Translator.DesktopApp;component/Resources/Images/english-flag-circle.png" MouseLeftButtonDown="Image_MouseLeftButtonDown" Grid.Column="3" Grid.Row="1" />
+            <Image x:Name="imgPolishFlag" Source="/Thea2Translator.DesktopApp;component/Resources/Images/polish-flag-circle.png" MouseLeftButtonDown="BtnChangeLangToPolish_Click" RenderTransformOrigin="0.5,0.5" Grid.Row="1" Grid.Column="1" >
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
         </Grid>
 
     </Grid>

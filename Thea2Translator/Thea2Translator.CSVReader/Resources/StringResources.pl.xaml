@@ -19,6 +19,9 @@
 
     <system:String x:Key="chooseActionLabelModuleSelection">Wybierz akcję</system:String>
 
+    <system:String x:Key="filterLabelTranslate">Filtr</system:String>
+    <system:String x:Key="groupLabelTranslate">Grupy</system:String>
+
     <system:String x:Key="backButtonTranslate">Powrót</system:String>
     <system:String x:Key="saveFileButtonTranslate">Zapisz do pliku</system:String>
     <system:String x:Key="translateButtonTranslate">Tłumacz</system:String>

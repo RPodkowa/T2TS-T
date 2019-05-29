@@ -33,6 +33,9 @@
         <system:String x:Key="transWarSelection">Warning</system:String>
         <system:String x:Key="chooseActionLabelModuleSelection">Choose action</system:String>
 
+        <system:String x:Key="filterLabelTranslate">Filter</system:String>
+        <system:String x:Key="groupLabelTranslate">Group</system:String>
+
         <system:String x:Key="backButtonTranslate">Back</system:String>
         <system:String x:Key="saveFileButtonTranslate">Save to file</system:String>
         <system:String x:Key="translateButtonTranslate">Translate</system:String>

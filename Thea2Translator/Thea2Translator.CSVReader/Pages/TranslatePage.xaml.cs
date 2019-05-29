@@ -24,6 +24,8 @@ namespace Thea2Translator.DesktopApp.Pages
     public partial class TranslatePage : Page
     {
         IDataCache dataCache;
+
+        IList<string> groups;
         IList<CacheElemViewModel> allElements;
         IList<CacheElemViewModel> filtredElements;
         CacheElemViewModel selectedCacheElement;
@@ -43,6 +45,12 @@ namespace Thea2Translator.DesktopApp.Pages
             dataCache.ReloadElems(true, true);
             allElements = dataCache.CacheElems.Select(c => new CacheElemViewModel(c)).ToList();
             filtredElements = allElements;
+            groups = dataCache.Groups;
+            
+            foreach(var group in groups)
+            {
+                cbGroups.Items.Add(group);
+            }
 
             lbItemsToTranslate.ItemsSource = filtredElements;
 
@@ -76,19 +84,33 @@ namespace Thea2Translator.DesktopApp.Pages
 
         private void CbItemsToTranslateFilter_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            switch (cbItemsToTranslateFilter.SelectedIndex)
-            {
-                case 0:
-                    filtredElements = allElements;
-                    break;
-                case 1:
-                    filtredElements = allElements.Where(c => c.CacheElem.ToTranslate).ToList();
-                    break;
-            }
+            FilterItems();
+        }
 
-            btnTranslate.IsEnabled = false;
-            lbItemsToTranslate.ItemsSource = null;
-            lbItemsToTranslate.ItemsSource = filtredElements;
+        private void FilterItems()
+        {
+            if (cbItemsToTranslateFilter != null && cbGroups != null)
+            {
+                switch (cbItemsToTranslateFilter.SelectedIndex)
+                {
+                    case 0:
+                        filtredElements = allElements;
+                        break;
+                    case 1:
+                        filtredElements = allElements.Where(c => c.CacheElem.ToTranslate).ToList();
+                        break;
+                }
+
+                if (cbGroups.SelectedIndex != 0)
+                {
+                    filtredElements = filtredElements.Where(e =>
+                    e.CacheElem.Groups.Contains(cbGroups.SelectedValue)).ToList();
+                }
+
+                btnTranslate.IsEnabled = false;
+                lbItemsToTranslate.ItemsSource = null;
+                lbItemsToTranslate.ItemsSource = filtredElements;
+            }
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -103,6 +125,11 @@ namespace Thea2Translator.DesktopApp.Pages
 
             wbGoogleTranslate.Address = link;
             btnGoogle.IsEnabled = false;
+        }
+
+        private void CbGroups_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            FilterItems();
         }
     }
 }

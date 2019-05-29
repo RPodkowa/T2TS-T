@@ -12,7 +12,7 @@
 
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="5*"/>
+            <RowDefinition Height="11*"/>
             <RowDefinition Height="60*"/>
             <RowDefinition Height="5*"/>
         </Grid.RowDefinitions>
@@ -22,10 +22,30 @@
             <ColumnDefinition Width="19*"/>
             <ColumnDefinition Width="372*"/>
             <ColumnDefinition Width="19*"/>
-            <ColumnDefinition Width="440*"/>
+            <ColumnDefinition Width="372*"/>
             <ColumnDefinition Width="19*"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
+        <Grid Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="25*"/>
+                <ColumnDefinition Width="35*"/>
+                <ColumnDefinition Width="50*"/>
+                <ColumnDefinition Width="35*"/>
+                <ColumnDefinition Width="50*"/>
+                <ColumnDefinition Width="25*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="20*"/>
+                <RowDefinition Height="20*"/>
+                <RowDefinition Height="4*"/>
+            </Grid.RowDefinitions>
+            <ComboBox x:Name="cbGroups" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Style="{StaticResource fontBase}" Grid.Row="2" Grid.ColumnSpan="6" SelectionChanged="CbGroups_SelectionChanged">
+                <ComboBoxItem Content="All" HorizontalAlignment="Left" Selector.IsSelected="True" Width="247"/>
+            </ComboBox>
+            <Label Content="Groups" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" RenderTransformOrigin="1.663,-0.231" Grid.ColumnSpan="6" Grid.Row="1"/>
+        </Grid>
         <Grid Grid.Column="3" Grid.Row="1">
             <Grid.RowDefinitions>
                 <RowDefinition Height="16*"/>
@@ -39,8 +59,8 @@
                     <ColumnDefinition/>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
-                <Button x:Name="btnTranslate" Content="{DynamicResource translateButtonTranslate}"  Click="BtnTranslate_Click" FontWeight="Bold"/>
-                <Button x:Name="btnGoogle" Content="{DynamicResource googleButtonTranslate}" Click="btnGoogle_Click" FontWeight="Bold" Grid.Column="1"/>
+                <Button x:Name="btnTranslate" Style="{StaticResource styleButton}" Content="{DynamicResource translateButtonTranslate}"  Click="BtnTranslate_Click" FontWeight="Bold"/>
+                <Button x:Name="btnGoogle" Style="{StaticResource styleButton}" Content="{DynamicResource googleButtonTranslate}" Click="btnGoogle_Click" FontWeight="Bold" Grid.Column="1"/>
             </Grid>
             <TextBox x:Name="txtOriginalText" TextWrapping="Wrap" IsEnabled="False" />
             <TextBox x:Name="txtTranslatedText" Grid.Row="2" TextWrapping="Wrap"/>
@@ -64,11 +84,11 @@
                     </DataTemplate>
                 </ListBox.ItemTemplate>
             </ListBox>
-            <ComboBox x:Name="cbItemsToTranslateFilter" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" SelectionChanged="CbItemsToTranslateFilter_SelectionChanged">
-                <ComboBoxItem Content="{DynamicResource allComboItemTranslate}"/>
+            <ComboBox x:Name="cbItemsToTranslateFilter" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Style="{StaticResource fontBase}" SelectionChanged="CbItemsToTranslateFilter_SelectionChanged" Height="30" VerticalAlignment="Bottom">
+                <ComboBoxItem Content="{DynamicResource allComboItemTranslate}" IsSelected="True" />
                 <ComboBoxItem Content="{DynamicResource withoutTranslationComboItemTranslate}" />
             </ComboBox>
-            <Button x:Name="btnSaveToFile" FontWeight="Bold" Content="{DynamicResource saveFileButtonTranslate}" Grid.Row="4" Click="BtnSaveToFile_Click"/>
+            <Button x:Name="btnSaveToFile" Style="{StaticResource styleButton}" FontWeight="Bold" Content="{DynamicResource saveFileButtonTranslate}" Grid.Row="4" Click="BtnSaveToFile_Click"/>
         </Grid>
         <Grid Grid.Column="1" Grid.ColumnSpan="5">
             <Grid.RowDefinitions>
@@ -81,7 +101,7 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <Button Content="{DynamicResource backButtonTranslate}" FontWeight="Bold" Grid.Column="1" Grid.Row="1" Click="Button_Click"/>
+            <Button Content="{DynamicResource backButtonTranslate}" Style="{StaticResource styleButton}" FontWeight="Bold" Grid.Column="1" Grid.Row="1" Click="Button_Click"/>
         </Grid>
         <cefSharp:ChromiumWebBrowser x:Name="wbGoogleTranslate" Grid.Column="5" Grid.Row="1" />
     </Grid>

@@ -9,7 +9,15 @@
             <Setter Property="Background" Value="LightGray" />
         </Style>
 
-        <system:String x:Key="startButtonHomePage">Start</system:String>
+        <Style x:Key="fontBase" TargetType="Control">
+            <!--<Setter Property="FontFamily" Value="Palatino Linotype" />-->
+        </Style>
+
+        <Style x:Key="styleButton" TargetType="Button" BasedOn="{StaticResource fontBase}">
+            <Setter Property="FontSize" Value="17" />
+        </Style>
+
+        <system:String x:Key="startButtonHome">Start</system:String>
         <system:String x:Key="chooseFolderLabelHomePage">Choose folder with data:</system:String>
 
         <system:String x:Key="selectModuleLabelModuleSelection">Select module</system:String>

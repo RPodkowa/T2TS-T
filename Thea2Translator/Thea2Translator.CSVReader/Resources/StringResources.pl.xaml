@@ -2,7 +2,8 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:local="clr-namespace:Thea2Translator.DesktopApp.Resources"
                     xmlns:system="clr-namespace:System;assembly=mscorlib">
-    <system:String x:Key="startButtonHomePage">Rozpocznij</system:String>
+    
+    <system:String x:Key="startButtonHome">Rozpocznij</system:String>
     <system:String x:Key="chooseFolderLabelHomePage">Wybierz folder z danymi:</system:String>
     
     <system:String x:Key="selectModuleLabelModuleSelection">Wybierz moduł</system:String>

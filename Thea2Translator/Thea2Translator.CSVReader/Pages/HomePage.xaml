@@ -26,9 +26,14 @@
         </Grid.RowDefinitions>
         <Button x:Name="btnChooseFolder" Grid.Column="3" Grid.Row="2" Width="30" Height="20" Content="..." Click="BtnChooseFolder_Click"/>
         <TextBox x:Name="txtFolderDir" Grid.Row="2" TextWrapping="Wrap" Grid.Column="2" Height="20"/>
-        <Label Content="Dir:" Grid.Row="2" Grid.Column="1" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" />
-        <Button x:Name="btnStartTranslate" FontWeight="Bold" Content="{DynamicResource startButtonHomePage}" Grid.Column="2" Grid.Row="4" Click="BtnStartTranslate_Click"/>
-        <Label Content="{DynamicResource chooseFolderLabelHomePage}" FontWeight="Bold" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="20" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="3"/>
+        <Label Content="Dir:" Style="{StaticResource fontBase}" Grid.Row="2" Grid.Column="1" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" />
+
+        <Border Background="#FF18BD54" CornerRadius="40" Grid.Column="2" Grid.Row="4" BorderBrush="#FF818181" BorderThickness="3">
+            <Button x:Name="btnStartTranslate" FontWeight="Bold" Content="{DynamicResource startButtonHome}" Click="BtnStartTranslate_Click" BorderThickness="0" FontSize="20"  
+            Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" FontFamily="Palatino Linotype" Margin="-3" Width="134" Height="84"/>
+        </Border>
+
+        <Label Content="{DynamicResource chooseFolderLabelHomePage}" Style="{StaticResource fontBase}" FontWeight="Bold" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="20" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="3"/>
         <Grid Grid.Column="4">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="8*"/>
@@ -41,8 +46,8 @@
                 <RowDefinition/>
                 <RowDefinition Height="6*"/>
             </Grid.RowDefinitions>
-            <Image x:Name="imgEnglishFlag" Source="/Thea2Translator.DesktopApp;component/Resources/Images/english-flag-circle.png" MouseLeftButtonDown="Image_MouseLeftButtonDown" Grid.Column="3" Grid.Row="1" />
-            <Image x:Name="imgPolishFlag" Source="/Thea2Translator.DesktopApp;component/Resources/Images/polish-flag-circle.png" MouseLeftButtonDown="BtnChangeLangToPolish_Click" RenderTransformOrigin="0.5,0.5" Grid.Row="1" Grid.Column="1" >
+            <Image x:Name="imgEnglishFlag" Source="/Thea2Translator.DesktopApp;component/Resources/Images/english-flag-circle.png" MaxHeight="50" MouseLeftButtonDown="Image_MouseLeftButtonDown" Grid.Column="3" Grid.Row="1" />
+            <Image x:Name="imgPolishFlag" Source="/Thea2Translator.DesktopApp;component/Resources/Images/polish-flag-circle.png" MaxHeight="50" MouseLeftButtonDown="BtnChangeLangToPolish_Click" RenderTransformOrigin="0.5,0.5" Grid.Row="1" Grid.Column="1" >
                 <Image.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform ScaleX="-1"/>

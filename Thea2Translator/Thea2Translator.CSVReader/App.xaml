@@ -13,6 +13,12 @@
             <!--<Setter Property="FontFamily" Value="Palatino Linotype" />-->
         </Style>
 
+        <Style x:Key="titleLabel" TargetType="Label">
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="HorizontalContentAlignment" Value="Center" />
+            <Setter Property="VerticalContentAlignment" Value="Center" />
+        </Style>
+
         <Style x:Key="styleButton" TargetType="Button" BasedOn="{StaticResource fontBase}">
             <Setter Property="FontSize" Value="17" />
         </Style>

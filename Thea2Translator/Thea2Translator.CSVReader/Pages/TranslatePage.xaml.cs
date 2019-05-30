@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -23,6 +24,11 @@ namespace Thea2Translator.DesktopApp.Pages
     /// </summary>
     public partial class TranslatePage : Page
     {
+        private static readonly Regex _regex = new Regex("[^0-9.-]+");
+
+        private string oldStartRange = "";
+        private string oldEndRange = "";
+
         IDataCache dataCache;
 
         IList<string> groups;
@@ -46,8 +52,8 @@ namespace Thea2Translator.DesktopApp.Pages
             allElements = dataCache.CacheElems.Select(c => new CacheElemViewModel(c)).ToList();
             filtredElements = allElements;
             groups = dataCache.Groups;
-            
-            foreach(var group in groups)
+
+            foreach (var group in groups)
             {
                 cbGroups.Items.Add(group);
             }
@@ -89,22 +95,41 @@ namespace Thea2Translator.DesktopApp.Pages
 
         private void FilterItems()
         {
-            if (cbItemsToTranslateFilter != null && cbGroups != null)
+            if (cbItemsToTranslateFilter != null && cbGroups != null && txtStartRange != null && txtEndRange != null)
             {
+                var start = (txtStartRange.Text != "" ? 
+                    int.Parse(txtStartRange.Text) : 1);
+                start--;
+
+                var end = txtEndRange.Text != "" ?
+                    int.Parse(txtEndRange.Text) : allElements.Count;
+
                 switch (cbItemsToTranslateFilter.SelectedIndex)
                 {
                     case 0:
-                        filtredElements = allElements;
+                        filtredElements = allElements
+                            .ToList();
                         break;
                     case 1:
-                        filtredElements = allElements.Where(c => c.CacheElem.ToTranslate).ToList();
+                        filtredElements = allElements.Where(c => c.CacheElem.ToTranslate)
+                            .ToList();
                         break;
                 }
 
                 if (cbGroups.SelectedIndex != 0)
                 {
                     filtredElements = filtredElements.Where(e =>
-                    e.CacheElem.Groups.Contains(cbGroups.SelectedValue)).ToList();
+                    e.CacheElem.Groups.Contains(cbGroups.SelectedValue))
+                        .Skip(start)
+                        .Take(end - start)
+                        .ToList();
+                }
+                else
+                {
+                    filtredElements = filtredElements
+                        .Skip(start)
+                        .Take(end - start)
+                        .ToList();
                 }
 
                 btnTranslate.IsEnabled = false;
@@ -131,5 +156,60 @@ namespace Thea2Translator.DesktopApp.Pages
         {
             FilterItems();
         }
+
+        private void TxtStartRange_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            CheckRangeTextbox(txtStartRange, ref oldStartRange);
+        }
+
+        private void TxtEndRange_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            CheckRangeTextbox(txtEndRange, ref oldEndRange);
+        }
+
+        private void CheckRangeTextbox(TextBox textBox, ref string oldValue)
+        {
+            if (textBox.Text == "")
+                return;
+
+            textBox.Text = IsTextAllowed(textBox.Text) ? textBox.Text : oldValue;
+            oldValue = textBox.Text;
+        }
+
+        private static bool IsTextAllowed(string text)
+        {
+            return !_regex.IsMatch(text);
+        }
+
+        private void TxtStartRange_LostFocus(object sender, RoutedEventArgs e)
+        {
+
+            CheckRangeValues(txtStartRange, txtEndRange, false);
+            FilterItems();
+        }
+
+        private void TxtEndRange_LostFocus(object sender, RoutedEventArgs e)
+        {
+            CheckRangeValues(txtEndRange, txtStartRange, true);
+            FilterItems();
+        }
+
+        private void CheckRangeValues(TextBox txtCurrent, TextBox txtSecond, bool isGreater)
+        {
+            if (txtCurrent.Text != "" && txtSecond.Text != "")
+            {
+                var currentValue = int.Parse(txtCurrent.Text);
+                var secondValue = int.Parse(txtSecond.Text);
+
+                if(isGreater && currentValue < secondValue)
+                {
+                    txtSecond.Text = (currentValue - 1).ToString();
+                }
+                else if(!isGreater && currentValue > secondValue)
+                {
+                    txtSecond.Text = (currentValue + 1).ToString();
+                }
+            }
+        }     
     }
 }

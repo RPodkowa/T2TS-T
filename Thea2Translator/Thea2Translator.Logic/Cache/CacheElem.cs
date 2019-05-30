@@ -44,6 +44,7 @@ namespace Thea2Translator.Logic
 
         public bool IsDataBaseElem { get { return Type == FilesType.DataBase; } }
         public bool IsModulesElem { get { return Type == FilesType.Modules; } }
+        public bool IsNamesElem { get { return Type == FilesType.Names; } }
 
         public bool ToTranslate { get { return TextHelper.EqualsTexts(OriginalText, TranslatedText); } }
         public bool ToConfirm { get { return !IsCorrectedByHuman; } }
@@ -54,7 +55,7 @@ namespace Thea2Translator.Logic
             Id = id;
             Flag = 0;
             Key = key;
-            if (IsModulesElem) Key = "";
+            if (IsModulesElem) Key = "";            
             InputText = inputText;
             OriginalText = TextHelper.Normalize(InputText, out Specials);
             TranslatedText = OriginalText;
@@ -133,13 +134,6 @@ namespace Thea2Translator.Logic
             XmlAttribute attribute = doc.CreateAttribute(name);
             attribute.Value = value;
             return attribute;
-        }
-        
-        private bool CheckElems(string[] elems)
-        {
-            if (IsDataBaseElem && elems.Length != 6) return false;
-            if (IsModulesElem && elems.Length != 5) return false;
-            return true;
         }
 
         public void SetTranslated(string text)

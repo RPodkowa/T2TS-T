@@ -72,6 +72,7 @@
                 <TextBlock TextWrapping="Wrap" TextAlignment="Center"><Run Text="{DynamicResource exportSteamButtonModuleSelection}"/></TextBlock>
             </Button>
         </Grid>
+        <Button x:Name="btnChooseNames" FontWeight="Bold" Content="Names" Style="{StaticResource styleButton}" Grid.Column="5" Grid.Row="3" Margin="73,0,0,0"/>
 
     </Grid>
 </Page>

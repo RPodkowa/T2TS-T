@@ -22,6 +22,7 @@ namespace Thea2Translator.DesktopApp.Pages
                 
         bool isDataBaseModuleSelected = false;
         bool isModulesModuleSelected = false;
+        bool isNamesModuleSelected = false;
 
 
         public ModuleSelectionPage()
@@ -39,7 +40,7 @@ namespace Thea2Translator.DesktopApp.Pages
                 SetStepsButtonVisibility(true);
                 ChangeButtonSelectColor(o as Button, isDataBaseModuleSelected);
 
-                if(!isDataBaseModuleSelected && !isModulesModuleSelected)
+                if (!isDataBaseModuleSelected && !isModulesModuleSelected && !isNamesModuleSelected)
                     SetStepsButtonVisibility(false);
             };
 
@@ -50,7 +51,18 @@ namespace Thea2Translator.DesktopApp.Pages
                 SetStepsButtonVisibility(true);
                 ChangeButtonSelectColor(o as Button, isModulesModuleSelected);
 
-                if (!isDataBaseModuleSelected && !isModulesModuleSelected)
+                if (!isDataBaseModuleSelected && !isModulesModuleSelected && !isNamesModuleSelected)
+                    SetStepsButtonVisibility(false);
+            };
+
+            btnChooseNames.Click += (o, e) =>
+            {
+                isNamesModuleSelected = !isNamesModuleSelected;
+
+                SetStepsButtonVisibility(true);
+                ChangeButtonSelectColor(o as Button, isNamesModuleSelected);
+
+                if (!isDataBaseModuleSelected && !isModulesModuleSelected && !isNamesModuleSelected)
                     SetStepsButtonVisibility(false);
             };
 
@@ -103,8 +115,13 @@ namespace Thea2Translator.DesktopApp.Pages
                 {
                     try
                     {
-                        IDataCache cache = filesType == FilesType.DataBase ?
-                        LogicProvider.DataBase : LogicProvider.Modules;
+                        IDataCache cache = null;
+                        switch(filesType)
+                        {
+                            case FilesType.DataBase: cache = LogicProvider.DataBase; break;
+                            case FilesType.Modules: cache = LogicProvider.Modules; break;
+                            case FilesType.Names: cache = LogicProvider.Names; break;
+                        }
 
                         ClearProgressBar();
                         cache.StatusChanged += (s, p) => UpdateStatus(s, p);
@@ -187,9 +204,10 @@ namespace Thea2Translator.DesktopApp.Pages
 
         private void Process(AlgorithmStep step)
         {
-                processTimeSpan = null;
-                if (isDataBaseModuleSelected) ProcessFiles(FilesType.DataBase, step);
-                if (isModulesModuleSelected) ProcessFiles(FilesType.Modules, step);         
+            processTimeSpan = null;
+            if (isDataBaseModuleSelected) ProcessFiles(FilesType.DataBase, step);
+            if (isModulesModuleSelected) ProcessFiles(FilesType.Modules, step);
+            if (isNamesModuleSelected) ProcessFiles(FilesType.Names, step);
         }
     }
 }

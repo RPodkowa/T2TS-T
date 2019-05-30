@@ -23,6 +23,7 @@ namespace Thea2Translator.Logic
 
         internal bool IsDataBaseCache { get { return Type == FilesType.DataBase; } }
         internal bool IsModulesCache { get { return Type == FilesType.Modules; } }
+        internal bool IsNamesCache { get { return Type == FilesType.Names; } }
 
         public DataCache(FilesType type)
         {
@@ -195,6 +196,7 @@ namespace Thea2Translator.Logic
                 UpdateStatusWithPortion($"Process file '{file}'", currentFile++, filesCount);
                 if (IsDataBaseCache) ProcessFileDataBase(file, false);
                 if (IsModulesCache) ProcessFileModules(file, false);
+                if (IsNamesCache) ProcessFileNames(file, false);
             }
         }
         #endregion
@@ -309,6 +311,7 @@ namespace Thea2Translator.Logic
                 UpdateStatusWithPortion($"Process file '{file}'", currentFile++, filesCount);
                 if (IsDataBaseCache) ProcessFileDataBase(file, true);
                 if (IsModulesCache) ProcessFileModules(file, true);
+                if (IsNamesCache) ProcessFileNames(file, true);
             }
         }
         #endregion
@@ -430,6 +433,50 @@ namespace Thea2Translator.Logic
                 doc.Save(newFile);
             }
         }
+        private void ProcessFileNames(string file, bool saveToFile)
+        {
+            XmlDocument doc = new XmlDocument();
+            doc.Load(file);
+            var fileName = Path.GetFileNameWithoutExtension(file);
+            var collections = doc.DocumentElement.ChildNodes;
+            foreach (XmlNode collection in collections)
+            {
+                var collectionName = collection.Name;
+                collectionName = collectionName.Replace("NAME_COLLECTION-", "");
+                var collectionElems = collection.ChildNodes;
+                foreach (XmlNode collectionElem in collectionElems)
+                {
+                    var collectionElemName = collectionElem.Name;
+                    if (collectionElemName != "CharacterMale" && collectionElemName != "CharacterFemale")
+                        continue;
+
+                    if (collectionElem.Attributes == null)
+                        continue;
+
+                    var collectionElemValue = collectionElem.Attributes["Value"]?.Value;
+                    if (!saveToFile)
+                    {
+                        var groups = new List<string>() { collectionName, $"{collectionName}_{collectionElemName}" };
+
+                        TryAddToCacheWithGroup(collectionElemValue, groups);
+                    }
+                    else
+                    {
+                        var elem = GetElem(collectionElemValue);
+                        if (elem == null) continue;
+
+                        collectionElem.Attributes["Value"].Value = elem.OutputText;
+                    }
+                }
+            }
+
+            if (saveToFile)
+            {
+                string path = FileHelper.GetCreatedPath(GetDirectoryName(AlgorithmStep.ExportToSteam));
+                string newFile = path + Path.GetFileName(file);
+                doc.Save(newFile);
+            }
+        }
 
         private CacheElem GetElem(string key)
         {
@@ -465,6 +512,7 @@ namespace Thea2Translator.Logic
         {
             var file = "DataBase";
             if (IsModulesCache) file = "Modules";
+            if (IsNamesCache) file = "Names";
             return file += sufix;
         }
 
@@ -492,6 +540,7 @@ namespace Thea2Translator.Logic
         {
             var dir = "DataBase";
             if (IsModulesCache) dir = "Modules";
+            if (IsNamesCache) dir = "Names";
             string sufix = step.ToString();
             switch (step)
             {

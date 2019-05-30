@@ -5,6 +5,14 @@ namespace Thea2Translator.Logic
 {
     public class TextHelper
     {
+        public static bool EqualsTexts(string text1, string text2)
+        {
+            text1 = new string(text1.Where(c => char.IsLetter(c)).ToArray());
+            text2 = new string(text2.Where(c => char.IsLetter(c)).ToArray());
+
+            return text1 == text2;
+        }
+
         private static string CutTail(string source, string tail)
         {
             if (!isEndingWith(source, tail))
@@ -27,12 +35,15 @@ namespace Thea2Translator.Logic
             return (lasts == tail);
         }
 
-        public static List<string> GetGroupsFromKey(string key)
+        public static List<string> GetGroupsFromKey(string key, bool usePureKey)
         {
             var ret = new List<string>();
 
-            key = CutTail(key, "_DES");
-            key = new string(key.Where(c => char.IsLetter(c) || c == '_').ToArray());
+            if (!usePureKey)
+            {
+                key = CutTail(key, "_DES");
+                key = new string(key.Where(c => char.IsLetter(c) || c == '_').ToArray());
+            }
 
             var elems = key.Split('_');
             var group = "";
@@ -71,83 +82,31 @@ namespace Thea2Translator.Logic
             return ret;
         }
 
-        public static string Normalize(string text, bool withRemoveSpecials)
+        public static string Normalize(string text)
         {
+            List<string> specials;
+            return Normalize(text, out specials);
+        }
+
+        public static string Normalize(string text, out List<string> specials)
+        {
+            specials = null;
             if (string.IsNullOrEmpty(text))
                 return "";
 
             var ret = text;
-            ret = ret.Replace("\\n", "[EOLNN]");
-            ret = ret.Replace("\n", "[EOLN]");
-            ret = ret.Replace("\\r", "[EOLRR]");
-            ret = ret.Replace("\r", "[EOLR]");
+            ret = ret.Replace("\\n", "{EOLNN}");
+            ret = ret.Replace("\n", "{EOLN}");
+            ret = ret.Replace("\\r", "{EOLRR}");
+            ret = ret.Replace("\r", "{EOLR}");
 
-            if (withRemoveSpecials) ret = removeSpecials(ret, "{", "}");
+            ret = removeSpecials(ret, out specials, "{", "}");
             return ret;
         }
 
-        public static string UnNormalize(string text, string textPattern, bool withRemoveSpecials, bool replaceSpecialChars)
+        private static string removeSpecials(string text, out List<string> specials, string c1, string c2)
         {
-            if (string.IsNullOrEmpty(text))
-                return "";
-
-            var ret = text;
-            ret = ret.Replace("[EOLNN]", "\\n");
-            ret = ret.Replace("[EOLN]", "\n");
-            ret = ret.Replace("[EOLRR]", "\\r");
-            ret = ret.Replace("[EOLR]", "\r");
-
-            if (replaceSpecialChars)
-            {
-                string[,] specialChars =
-                {
-                        { "Ą", "A" }, { "Ć", "C" }, { "Ę", "E" }, { "Ł", "L" }, { "Ń", "N" }, { "Ó", "O" }, { "Ś", "S" }, { "Ź", "Z" }, { "Ż", "Z" },
-                        { "ą", "a" }, { "ć", "c" }, { "ę", "e" }, { "ł", "l" }, { "ń", "n" }, { "ó", "o" }, { "ś", "s" }, { "ź", "z" }, { "ż", "z" },
-                };
-
-                for (int i = 0; i < specialChars.GetLength(0); i++)
-                {
-                    ret = ret.Replace(specialChars[i, 0], specialChars[i, 1]);
-                }
-            }
-
-            if (withRemoveSpecials) ret = replaceSpecials(ret, textPattern, "{", "}");
-            return ret;
-        }
-
-        private static string replaceSpecials(string text, string textPattern, string c1, string c2)
-        {
-            string result = text;
-            int indexOfOpenT = 0;
-            int indexOfOpenP = 0;
-            do
-            {
-                indexOfOpenT = text.IndexOf(c1, indexOfOpenT);
-                int indexOfCloseT = text.IndexOf(c2, indexOfOpenT + 1);
-                if (indexOfOpenT < 0) break;
-                if (indexOfCloseT < 0)
-                    break;
-
-                indexOfOpenP = textPattern.IndexOf(c1, indexOfOpenP);
-                int indexOfCloseP = textPattern.IndexOf(c2, indexOfOpenP + 1);
-                if (indexOfOpenP < 0) break;
-                if (indexOfCloseP < 0)
-                    break;
-
-                string textL = text.Substring(0, indexOfOpenT + 1);
-                string textM = textPattern.Substring(indexOfOpenP + 1, indexOfCloseP - (indexOfOpenP + 1));
-                string textR = text.Substring(indexOfCloseT);
-                text = textL + textM + textR;
-                indexOfOpenT += 2;
-                indexOfOpenP = indexOfCloseP;
-
-            } while (true);
-
-            return text;
-        }
-
-        private static string removeSpecials(string text, string c1, string c2)
-        {
+            specials = new List<string>();
             string result = text;
             int indexOfOpen = 0;
             do
@@ -158,8 +117,66 @@ namespace Thea2Translator.Logic
                 if (indexOfClose < 0)
                     break;
 
-                text = text.Substring(0, indexOfOpen + 1) + text.Substring(indexOfClose);
+                var special = text.Substring(indexOfOpen + 1, indexOfClose - indexOfOpen-1);
+                specials.Add(special);
+
+                text = text.Substring(0, indexOfOpen + 1) + text.Substring(indexOfClose);                
                 indexOfOpen += 2;
+
+            } while (true);
+
+            return text;
+        }
+
+        public static string UnNormalize(string text, List<string> specials)
+        {
+            if (string.IsNullOrEmpty(text))
+                return "";
+
+            var ret = text;
+            ret = ret.Replace("} ", "}");
+            ret = InsertSpecials(ret, specials, "{", "}");
+            ret = ret.Replace("{EOLNN}", "\\n");
+            ret = ret.Replace("{EOLN}", "\n");
+            ret = ret.Replace("{EOLRR}", "\\r");
+            ret = ret.Replace("{EOLR}", "\r");
+            return ret;
+        }
+
+        public static string ReplacePolishChars(string text)
+        {
+            string[,] polishChars =
+{
+                        { "Ą", "A" }, { "Ć", "C" }, { "Ę", "E" }, { "Ł", "L" }, { "Ń", "N" }, { "Ó", "O" }, { "Ś", "S" }, { "Ź", "Z" }, { "Ż", "Z" },
+                        { "ą", "a" }, { "ć", "c" }, { "ę", "e" }, { "ł", "l" }, { "ń", "n" }, { "ó", "o" }, { "ś", "s" }, { "ź", "z" }, { "ż", "z" },
+                };
+
+            for (int i = 0; i < polishChars.GetLength(0); i++)
+            {
+                text = text.Replace(polishChars[i, 0], polishChars[i, 1]);
+            }
+
+            return text;
+        }
+
+        private static string InsertSpecials(string text, List<string> specials, string c1, string c2)
+        {
+            string result = text;
+            int indexOfOpenT = 0;
+            int listIndex = 0;
+            do
+            {
+                indexOfOpenT = text.IndexOf(c1, indexOfOpenT);
+                int indexOfCloseT = text.IndexOf(c2, indexOfOpenT + 1);
+                if (indexOfOpenT < 0) break;
+                if (indexOfCloseT < 0)
+                    break;
+
+                string textL = text.Substring(0, indexOfOpenT + 1);
+                string textM = specials[listIndex++];
+                string textR = text.Substring(indexOfCloseT);
+                text = textL + textM + textR;
+                indexOfOpenT += 2;
 
             } while (true);
 

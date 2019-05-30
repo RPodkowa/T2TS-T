@@ -75,8 +75,8 @@ namespace Thea2Translator.DesktopApp.Pages
         {
             selectedCacheElement = lbItemsToTranslate.SelectedItem as CacheElemViewModel;
 
-            txtOriginalText.Text = selectedCacheElement?.CacheElem?.OriginalNormalizedText;
-            txtTranslatedText.Text = selectedCacheElement?.CacheElem?.TranslatedNormalizedText;
+            txtOriginalText.Text = selectedCacheElement?.CacheElem?.OriginalText;
+            txtTranslatedText.Text = selectedCacheElement?.CacheElem?.TranslatedText;
 
             btnTranslate.IsEnabled = selectedCacheElement == null ? false : true;
             btnGoogle.IsEnabled = selectedCacheElement == null ? false : true; ;

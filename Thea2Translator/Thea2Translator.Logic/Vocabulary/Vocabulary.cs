@@ -45,7 +45,7 @@ namespace Thea2Translator.Logic
 
             foreach (var cacheElem in dataCache.CacheElems)
             {
-                var txt = cacheElem.OriginalNormalizedText;
+                var txt = cacheElem.OriginalText;
 
                 var elems = txt.Split(' ');
                 foreach (var elem in elems)

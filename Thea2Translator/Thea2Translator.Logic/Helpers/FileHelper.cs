@@ -36,9 +36,14 @@ namespace Thea2Translator.Logic
             if (!Directory.Exists(path)) Directory.CreateDirectory(path);
         }
 
+        public static bool FileExists(string fileFullPath)
+        {
+            return File.Exists(fileFullPath);
+        }
+
         public static void DeleteFileIfExists(string fileFullPath)
         {
-            if (File.Exists(fileFullPath)) File.Delete(fileFullPath);
+            if (FileExists(fileFullPath)) File.Delete(fileFullPath);
         }
 
         public static void DeletePath(string path)

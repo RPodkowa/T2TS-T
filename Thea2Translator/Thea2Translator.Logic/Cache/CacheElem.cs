@@ -1,13 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Xml;
 
 namespace Thea2Translator.Logic
 {
     public class CacheElem
     {
-        internal const char GroupSeparator = ';';
-
         public FilesType Type { get; private set; }
         public int Id { get; private set; }
 
@@ -18,106 +17,124 @@ namespace Thea2Translator.Logic
             set { Flag = FlagHelper.GetSettedBitValue(Flag, 0, value); }
         }
 
-        private string _key;
-        public string Key
-        {
-            get
-            {
-                if (IsModulesElem) return OriginalNormalizedText;
-                return _key;
-            }
-            private set
-            {
-                _key = value;
-            }
-        }
-        private string _originalText;
-        public string OriginalText
-        {
-            get
-            {
-                if (IsModulesElem) return OriginalNormalizedText;
-                return _originalText;
-            }
-            private set
-            {
-                _originalText = value;
-                OriginalNormalizedText = TextHelper.Normalize(_originalText, IsModulesElem);
-            }
-        }
-        public string OriginalNormalizedText { get; private set; }
-        private string _translatedText;
-        public string TranslatedText
-        {
-            get { return _translatedText; }
-            private set
-            {
-                _translatedText = value;
-                _translatedNormalizedText = TextHelper.Normalize(_translatedText, IsModulesElem);
-            }
-        }
-        private string _translatedNormalizedText;
-        public string TranslatedNormalizedText
-        {
-            get { return _translatedNormalizedText; }
-            private set
-            {
-                _translatedNormalizedText = value;
-                _translatedText = TextHelper.UnNormalize(_translatedNormalizedText, OriginalText, IsModulesElem, IsModulesElem); ;
-            }
-        }
+        public string Key { get; private set; }
+        /// <summary>
+        /// Tekst wejsciowy (czysty) bez formatowania/normalizowania
+        /// Taki tekst jest wczytywany w trakcie importu 
+        /// </summary>
+        public string InputText { get; private set; }
+        /// <summary>
+        /// Tekst do tlumaczenia po odpowiednim formatowaniu/normalizacji
+        /// Taki tekst jest przekazywany do tlumaczenia (automatycznego i recznego)
+        /// </summary>
+        public string OriginalText { get; private set; }
+        /// <summary>
+        /// Tekst przetlumaczony po odpowiednim formatowaniu/normalizacji
+        /// Taki tekst jest odbierany z tlumaczenia (automatycznego i recznego)
+        /// </summary>
+        public string TranslatedText { get; private set; }
+        /// <summary>
+        /// Tekst wyjsciowy (przetlumaczony) bez formatowania/normalizowania
+        /// Taki tekst jest zapisywany w trakcie exportu
+        /// </summary>
+        public string OutputText { get; private set; }
 
         public List<string> Groups;
+        private List<string> Specials;
 
         public bool IsDataBaseElem { get { return Type == FilesType.DataBase; } }
         public bool IsModulesElem { get { return Type == FilesType.Modules; } }
 
-        public bool ToTranslate { get { return OriginalNormalizedText == TranslatedNormalizedText; } }
+        public bool ToTranslate { get { return TextHelper.EqualsTexts(OriginalText, TranslatedText); } }
+        public bool ToConfirm { get { return !IsCorrectedByHuman; } }
 
-        public CacheElem(FilesType type, int id, string key, string originalText)
+        public CacheElem(FilesType type, int id, string key, string inputText)
         {
             Type = type;
             Id = id;
             Flag = 0;
             Key = key;
-            OriginalText = originalText;
-            TranslatedText = originalText;
+            if (IsModulesElem) Key = "";
+            InputText = inputText;
+            OriginalText = TextHelper.Normalize(InputText, out Specials);
+            TranslatedText = OriginalText;
+            OutputText = InputText;
             Groups = new List<string>();
         }
 
-        public CacheElem(FilesType type, string line)
+        public CacheElem(FilesType type, XmlNode element)
         {
             Type = type;
-            var separator = new[] { DataCache.DataSeparator };
-            var elems = line.Split(separator, StringSplitOptions.None);
 
-            if (!CheckElems(elems))
-                throw new Exception($"Niepoprawna linia '{line}'!");
-
-            int elem = 0;
-            Id = int.Parse(elems[elem++]);
-            Flag = int.Parse(elems[elem++]);
-            var groups = elems[elem++];
-
-            if (IsDataBaseElem)
+            if (element.Attributes != null)
             {
-                Key = elems[elem++];
-                //OriginalText = elems[elem++];
-                //TranslatedText = elems[elem++];
-                OriginalNormalizedText = elems[elem++];
-                _originalText = OriginalNormalizedText;
-                TranslatedNormalizedText = elems[elem++];
+                Id = int.Parse(element.Attributes["ID"]?.Value);
+                Key = element.Attributes["Key"]?.Value.ToString();
+                Flag = int.Parse(element.Attributes["Flag"]?.Value);
             }
-            else
+            
+            Groups = new List<string>();
+
+            var groups = element.SelectNodes("Groups/Group");
+            foreach (XmlNode group in groups)
             {
-                OriginalNormalizedText = elems[elem++];
-                TranslatedNormalizedText = elems[elem++];
+                AddGroup(group.InnerText);
             }
 
-            Groups = groups.Split(GroupSeparator).ToList();
-            if (Groups == null) Groups = new List<string>();
+            InputText = element.SelectSingleNode("Texts/Input").InnerText;
+            OriginalText = TextHelper.Normalize(InputText, out Specials);
+            OutputText = element.SelectSingleNode("Texts/Output").InnerText;
+            TranslatedText = TextHelper.Normalize(OutputText);
         }
 
+        public bool EqualsTexts(string inputText)
+        {
+            return (GetTextToCompare() == inputText);
+        }
+
+        private string GetTextToCompare()
+        {
+            if (IsDataBaseElem) return Key;
+            return InputText;
+        }
+
+        public XmlNode ToXmlNode(XmlDocument doc)
+        {
+            XmlNode elementNode = doc.CreateElement("Element");
+            elementNode.Attributes.Append(GetAttribute(doc, "ID", Id.ToString()));
+            elementNode.Attributes.Append(GetAttribute(doc, "Key", Key));
+            elementNode.Attributes.Append(GetAttribute(doc, "Flag", Flag.ToString()));
+
+            XmlNode groupsNode = doc.CreateElement("Groups");
+            foreach (var group in Groups)
+            {
+                groupsNode.AppendChild(GetNode(doc, "Group", group));
+            }
+            elementNode.AppendChild(groupsNode);
+            
+            XmlNode textsNode = doc.CreateElement("Texts");
+            textsNode.AppendChild(GetNode(doc, "Input", InputText));
+            textsNode.AppendChild(GetNode(doc, "Output", OutputText));
+
+            elementNode.AppendChild(textsNode);
+
+            return elementNode;
+        }
+
+        private XmlNode GetNode(XmlDocument doc, string name, string value)
+        {
+            XmlNode node = doc.CreateElement(name);
+            node.AppendChild(doc.CreateTextNode(value));
+            return node;
+        }
+
+        private XmlAttribute GetAttribute(XmlDocument doc, string name, string value)
+        {
+            XmlAttribute attribute = doc.CreateAttribute(name);
+            attribute.Value = value;
+            return attribute;
+        }
+        
         private bool CheckElems(string[] elems)
         {
             if (IsDataBaseElem && elems.Length != 6) return false;
@@ -127,7 +144,9 @@ namespace Thea2Translator.Logic
 
         public void SetTranslated(string text)
         {
-            TranslatedNormalizedText = text;
+            TranslatedText = text;
+            OutputText = TextHelper.UnNormalize(text, Specials);
+            if (IsModulesElem) OutputText = TextHelper.ReplacePolishChars(OutputText);
         }
 
         public void AddGroups(List<string> groups)
@@ -151,30 +170,7 @@ namespace Thea2Translator.Logic
 
         public string GetTranslateLink()
         {
-            return @"https://translate.google.pl/?hl=pl#view=home&op=translate&sl=en&tl=pl&text=" + OriginalNormalizedText.ToLower();
-        }
-
-        public override string ToString()
-        {
-            var arr = new List<string>();
-            arr.Add(Id.ToString());
-            arr.Add(Flag.ToString());
-            arr.Add(string.Join(GroupSeparator.ToString(), Groups.ToArray()));
-            if (IsDataBaseElem)
-            {
-                arr.Add(Key);
-                //arr.Add(OriginalText);
-                //arr.Add(TranslatedText);
-                arr.Add(OriginalNormalizedText);
-                arr.Add(TranslatedNormalizedText);
-            }
-            else
-            {
-                arr.Add(OriginalNormalizedText);
-                arr.Add(TranslatedNormalizedText);
-            }
-            string text = string.Join(DataCache.DataSeparator, arr.ToArray());
-            return text;
+            return @"https://translate.google.pl/?hl=pl#view=home&op=translate&sl=en&tl=pl&text=" + OriginalText.ToLower();
         }
     }
 }

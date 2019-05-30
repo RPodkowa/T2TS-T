@@ -7,7 +7,6 @@ namespace Thea2Translator.Logic
 {
     internal class DataCache : IDataCache
     {
-        internal const string DataSeparator = "[::]";
         internal const int LinesInFile = 6000;
 
         public IList<CacheElem> CacheElems { get; private set; }
@@ -28,7 +27,7 @@ namespace Thea2Translator.Logic
         public DataCache(FilesType type)
         {
             Type = type;
-            FullPath = $"{FileHelper.MainDir}\\Cache\\{type}.cache";
+            FullPath = $"{FileHelper.MainDir}\\Cache\\{type}.xml";
             ResetElems();
         }
 
@@ -88,16 +87,28 @@ namespace Thea2Translator.Logic
 
         public void ReloadElems(bool withGroups = false, bool withVocabulary = false)
         {
-            ResetElems();
-            var lines = FileHelper.ReadFileLines(FullPath);
-            UpdateStatus($"Read elems from cache '{lines.Count}'");
-            foreach (var line in lines)
-            {
-                LoadElem(line);
-            }
+            LoadFromFile();
 
             if (withGroups) ReloadGroups();
             if (withVocabulary) ReloadVocabulary();
+        }
+
+        private void LoadFromFile()
+        {
+            ResetElems();
+
+            if (!FileHelper.FileExists(FullPath))
+                return;
+
+            XmlDocument doc = new XmlDocument();
+            doc.Load(FullPath);
+            var elements = doc.DocumentElement.GetElementsByTagName("Element");
+            foreach (XmlNode element in elements)
+            {
+                var elem = new CacheElem(Type, element);                                
+                CurrentId = Math.Max(CurrentId, elem.Id);
+                CacheElems.Add(elem);
+            }
         }
 
         private void ReloadGroups()
@@ -121,19 +132,29 @@ namespace Thea2Translator.Logic
             Vocabulary = new Vocabulary();
             Vocabulary.Reload(this);
         }
-
-        private void LoadElem(string line)
-        {
-            var elem = new CacheElem(Type, line);
-            CurrentId = Math.Max(CurrentId, elem.Id);
-            CacheElems.Add(elem);
-        }
-
+        
         public void SaveElems(bool withVocabulary = false)
         {
             UpdateStatus($"SaveElemsToFile '{FullPath}'");
-            FileHelper.SaveElemsToFile(CacheElems, FullPath);
+            SaveToFile();
             if (withVocabulary) SaveVocabulary();
+        }
+
+        private void SaveToFile()
+        {
+            FileHelper.CreatedPathIfNotExists(FullPath);
+            FileHelper.DeleteFileIfExists(FullPath);
+            
+            XmlDocument doc = new XmlDocument();            
+            XmlNode databaseNode = doc.CreateElement("Database");
+            doc.AppendChild(databaseNode);
+
+            foreach (var cacheElem in CacheElems)
+            {
+                databaseNode.AppendChild(cacheElem.ToXmlNode(doc));
+            }
+
+            doc.Save(FullPath);
         }
 
         private void SaveVocabulary()
@@ -212,7 +233,7 @@ namespace Thea2Translator.Logic
                 }
 
                 var id = elem.Id;
-                var v = elem.OriginalNormalizedText;
+                var v = elem.OriginalText;
 
                 if (tw_v != null) tw_v.WriteLine($"{id}:{v}");
                 i++;
@@ -319,14 +340,14 @@ namespace Thea2Translator.Logic
                 if (!saveToFile)
                 {
                     var val = entry.Attributes["Val"]?.Value;
-                    TryAddToCacheWithGroup(key, val, TextHelper.GetGroupsFromKey(key));
+                    TryAddToCacheWithGroup(key, val, TextHelper.GetGroupsFromKey(key, false));
                 }
                 else
                 {
                     var elem = GetElem(key);
                     if (elem == null) continue;
 
-                    entry.Attributes["Val"].Value = elem.TranslatedText;
+                    entry.Attributes["Val"].Value = elem.OutputText;
                 }
             }
 
@@ -362,19 +383,19 @@ namespace Thea2Translator.Logic
 
                     var adventureNodeId = node.Attributes["ID"]?.Value;
                     var group = $"{fileName}_{adventureName}_{adventureNodeId}";
-                    var text = TextHelper.Normalize(node.InnerText, true);
+                    var inputText = node.InnerText;
                     if (!saveToFile)
-                        TryAddToCacheWithGroup(text, group);
+                        TryAddToCacheWithGroup(inputText, TextHelper.GetGroupsFromKey(group, true));
                     else
                     {
-                        var key = text;
+                        var key = inputText;
                         var elem = GetElem(key);
                         if (elem != null)
                         {
                             foreach (XmlNode child in node.ChildNodes)
                             {
                                 if (child.Name != "#text") continue;
-                                child.InnerText = elem.TranslatedText;
+                                child.InnerText = elem.OutputText;
                             }
                         }
                     }
@@ -385,17 +406,17 @@ namespace Thea2Translator.Logic
                         if (output.Attributes == null)
                             continue;
 
-                        var name = TextHelper.Normalize(output.Attributes["name"].Value.ToString(), true);
+                        var inputTextName = output.Attributes["name"].Value.ToString();
                         if (!saveToFile)
-                            TryAddToCacheWithGroup(name, group);
+                            TryAddToCacheWithGroup(inputTextName, TextHelper.GetGroupsFromKey(group, true));
                         else
                         {
-                            if (!string.IsNullOrEmpty(name))
+                            if (!string.IsNullOrEmpty(inputTextName))
                             {
-                                var key = name;
+                                var key = inputTextName;
                                 var elem = GetElem(key);
                                 if (elem != null)
-                                    output.Attributes["name"].Value = elem.TranslatedText;
+                                    output.Attributes["name"].Value = elem.OutputText;
                             }
                         }
                     }
@@ -416,7 +437,7 @@ namespace Thea2Translator.Logic
 
             foreach (var elem in CacheElems)
             {
-                if (elem.Key == key) return elem;
+                if (elem.EqualsTexts(key)) return elem;
             }
 
             return ret;
@@ -449,12 +470,6 @@ namespace Thea2Translator.Logic
 
         private void TryAddToCacheWithGroup(string value, List<string> groups)
         {
-            TryAddToCacheWithGroup(value, value, groups);
-        }
-
-        private void TryAddToCacheWithGroup(string value, string group)
-        {
-            var groups = new List<string>() { group };
             TryAddToCacheWithGroup(value, value, groups);
         }
 

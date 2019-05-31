@@ -394,6 +394,10 @@
 		<Entry Key="UI_TUTORIAL_CAMP3" Val="Move your group near a tile with a resource located no further than one hex away.\n\nTo assign your workers to collecting resources, your group has to be in {COLOR:yellow}Camp Mode.{END_COLOR}"/>
 		<Entry Key="UI_TUTORIAL_CAMP4" Val="Setting Up a Camp"/>
 		<Entry Key="UI_TUTORIAL_CAMP5" Val="To set up a camp:\n\n1. Left click on the group. A radial menu will appear.\n\n2. Click the Camp button.\n\nThe Gathering screen will open automatically."/>
+		<Entry Key="UI_TUTORIAL_CAMP5A" Val="To set up a camp:"/>
+		<Entry Key="UI_TUTORIAL_CAMP5B" Val="1. Left click on the group. A radial menu will appear."/>
+		<Entry Key="UI_TUTORIAL_CAMP5C" Val="2. Click the Camp button."/>
+		<Entry Key="UI_TUTORIAL_CAMP5D" Val="The Gathering screen will open automatically."/>
 		<Entry Key="UI_TUTORIAL_CAMP6" Val="Camping also increases health recovery rate, provided the group has fuel. One unit of fuel ({ICON:FuelIcon}) is used per turn (more during Winter)."/>
 		<Entry Key="UI_TUTORIAL_CARDS1" Val="You have just started a card minigame.\nEach round consists of {COLOR:yellow}8 Preparation Phases{END_COLOR} and {COLOR:yellow}2 Fight Phases{END_COLOR}.\n\nTo win, eliminate all of your enemy's cards."/>
 		<Entry Key="UI_TUTORIAL_CARDS2" Val="During {COLOR:yellow}Preparation Phases{END_COLOR} players take turns to play their cards."/>
@@ -696,8 +700,8 @@
 		<Entry Key="UI_TUTORIAL_ADVANCEMENT2" Val="Press these buttons to view each category:"/>
 		<Entry Key="UI_TUTORIAL_ADVANCEMENT3" Val="The unlock cost of each recipe is shown next to its icon."/>
 		<Entry Key="UI_TUTORIAL_ADVANCEMENT4" Val="Materials in {COLOR:yellow}equipment recipes{END_COLOR} unlock in random order each playthrough, but you can see the details before you spend your Advancement Points by clicking on a recipe."/>
-		<Entry Key="UI_TUTORIAL_ADVANCEMENT5" Val="Some recipes require that you unlock all nodes that lead to them. "/>
-		<Entry Key="UI_TUTORIAL_ADVANCEMENT6" Val="For example, Crystal Wood recipe, which is a {COLOR:yellow}composite material{END_COLOR}, can only be obtained after unlocking both Diamond and Ancient Wood materials. "/>
+		<Entry Key="UI_TUTORIAL_ADVANCEMENT5" Val="Each recipe requires that you unlock at least one parent node that leads to it."/>
+		<Entry Key="UI_TUTORIAL_ADVANCEMENT6" Val="For example, Crystal Wood can only be obtained after unlocking either Diamond or Ancient Wood."/>
 		<Entry Key="UI_TUTORIAL_ADVANCEMENT7" Val="Advancement Points {ICON:AdvancementPointIcon} are awarded each time your collect enough Research Points (RPs)."/>
 		<Entry Key="UI_TUTORIAL_ADVANCEMENT8" Val="RPs are given after completing events, building a School or researching terrain and creature artifacts."/>
 		<Entry Key="UI_STAY_IN_GAME" Val="Stay in Game"/>
@@ -889,5 +893,10 @@
 		<Entry Key="UI_SWITCHING_DATABASE" Val="We recommend that you use the latest version of database files and only go back to another version if you know what you're doing. Make sure the game versions match, using an incorrect database is likely to cause crashes! If you want to continue a game saved in a previous game version, switch to the previous version using beta branches."/>
 		<Entry Key="UI_PATCH_NOTES" Val="Patch Notes"/>
 		<Entry Key="UI_TAB_TO_SWITCH" Val="TAB - switch between groups"/>
+		<Entry Key="UI_SEE_RESULTS" Val="See Results"/>
+		<Entry Key="UI_LESS" Val="Less"/>
+		<Entry Key="UI_ADDED_TO_PROFILE" Val="Added To Profile:"/>
+		<Entry Key="UI_CLAIM" Val="Claim Points"/>
+		<Entry Key="UI_TOTAL_VALUE" Val="Total Value:"/>
     </LOC_LIBRARY-EN_UI>
 </DATABASE_UI_LOCALIZATION-NO_HSH>

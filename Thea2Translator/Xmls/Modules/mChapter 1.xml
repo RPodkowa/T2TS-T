@@ -5120,6 +5120,9 @@ This sacrifice also allowed us to acquire the heart of the forest from a forest 
           <LogicResultAction>
             <scriptCallWithTag scriptName="FRA_PlayersHaveSharedTag" parameter="1" tag="TAG-MAIN26" />
           </LogicResultAction>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_PlayersDoNotHaveSharedTag" parameter="1" tag="TAG-MAIN28" />
+          </LogicResultAction>
         </FilterBlock>
         <ModifierBlock>
           <LogicModifiers>
@@ -14323,21 +14326,27 @@ You drink everyone under the table and impress the locals greatly.</nodes>
       <outputs name="Time to leave." ownerID="37" targetID="31" fromX="1616" fromY="-3044" />You got into a fight and discovered hidden strength within you. Unfortunately, the locals do not appreciate your prowess. You get kicked out of the tavern.</nodes>
   </Adventure>
   <Adventure name=" Scavenger witch training" uniqueID="70" typeGeneric="false" typePerGroupGeneric="false" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="6" joinIsForced="false" joinType="OnlyOwn" joinRange="SinglePosition">
-    <nodes xsi:type="NodeStarting" ID="1" positionX="10" positionY="-10" width="347" height="704" image="Event121">
-      <outputs ownerID="1" targetID="2" fromX="334" fromY="-656" />
+    <nodes xsi:type="NodeStarting" ID="1" positionX="10" positionY="-10" width="347" height="661" image="Event121">
+      <outputs ownerID="1" targetID="2" fromX="334" fromY="-613" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="2" positionX="483" positionY="-176" width="350" height="805">
       <logic>
         <FilterBlock>
-          <LogicFilter name="scav" makePublic="true">
+          <LogicFilter name="scavs">
             <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="TAG-SCAVENGER" />
           </LogicFilter>
+          <LogicFilter name="witch">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="SUBRACE-HUM_SCAVENGER_WITCH" />
+          </LogicFilter>
+          <LogicProcessing name="scav" makePublic="true" list1="scavs" list2="witch">
+            <scriptCallWithTag scriptName="FLP_AminusB" />
+          </LogicProcessing>
         </FilterBlock>
       </logic>
-      <outputs name="Yes, train one random scavenger to become a magic user." ownerID="2" targetID="5" fromX="815" fromY="-667" />
-      <outputs name="No, refuse and leave." ownerID="2" targetID="3" fromX="815" fromY="-747" />'Say, you did us a solid and all, our witch will teach ya to be like her, warts and all, but also that dark magic stuff. It may kill ya, but your choice.'</nodes>
-    <nodes xsi:type="NodeAdventureEnd" ID="3" positionX="-3" positionY="-788" width="350" height="455" linkedEventUniqueID="0" />
-    <nodes xsi:type="NodeAdventureEnd" ID="4" positionX="1651" positionY="-728" width="350" height="455" linkedEventUniqueID="0">
+      <outputs name="Yes, train one random scavenger to become a magic user." ownerID="2" targetID="5" fromX="808" fromY="-667" />
+      <outputs name="No, refuse and leave." ownerID="2" targetID="3" fromX="808" fromY="-747" />'Say, you did us a solid and all, our witch will teach ya to be like her, warts and all, but also that dark magic stuff. It may kill ya, but your choice.'</nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="3" positionX="-3" positionY="-788" width="350" height="530" linkedEventUniqueID="0" />
+    <nodes xsi:type="NodeAdventureEnd" ID="4" positionX="1651" positionY="-728" width="350" height="530" linkedEventUniqueID="0">
       <logic>
         <ModifierBlock>
           <LogicProcessing name="1" list1="scav">
@@ -14363,9 +14372,9 @@ You drink everyone under the table and impress the locals greatly.</nodes>
     </nodes>
     <nodes xsi:type="NodeProduceDrop" ID="5" positionX="958" positionY="-256" width="460" height="509">
       <outputs ownerID="5" targetID="6" group="G1" fromX="1388" fromY="-614" />
-      <outputs ownerID="5" targetID="4" group="G1" fromX="1388" fromY="-695" />
+      <outputs ownerID="5" targetID="4" group="G1" fromX="1388" fromY="-694" />
     </nodes>
-    <nodes xsi:type="NodeAdventureEnd" ID="6" positionX="1625" positionY="-167" width="350" height="455" linkedEventUniqueID="0">
+    <nodes xsi:type="NodeAdventureEnd" ID="6" positionX="1625" positionY="-167" width="350" height="530" linkedEventUniqueID="0">
       <logic>
         <FilterBlock>
           <LogicResultAction>

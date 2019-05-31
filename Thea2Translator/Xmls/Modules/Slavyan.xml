@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="Windows-1252"?>
+<?xml version="1.0" encoding="windows-1250"?>
 <MODULE xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Slavyan" lastEventIndex="56" allowToUse="true" uniqueModuleID="-461441224">
   <Adventure name="SlavyanTradesmall" uniqueID="1" typeGeneric="false" typePerGroupGeneric="false" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="12" joinIsForced="false" joinType="OnlyOwn" joinRange="SinglePosition">
     <nodes xsi:type="NodeStarting" ID="1" positionX="10" positionY="-10" width="347" height="579" image="Event006">
@@ -3251,7 +3251,7 @@ We also have a healer in the village. If they're not busy, they're good with the
       <outputs name="Agree." ownerID="19" targetID="20" fromX="2810" fromY="-520" />
       <outputs name="Decline and leave." ownerID="19" targetID="3" fromX="2810" fromY="-600" />'There's always trouble about the place. Some boars are roaming nearby and causing a lot of trouble. We'd go deal with it, but since you asked...'</nodes>
     <nodes xsi:type="NodeSpawnOnMap" ID="20" positionX="2876.108" positionY="-32.8595276" width="480" height="503" radius="4" groupID="GROUP-BOARS_2P_1M_0S" destroyOwner="false" linkedEventUniqueID="26">
-      <outputs ownerID="20" targetID="64" fromX="3324" fromY="-464" />
+      <outputs ownerID="20" targetID="64" fromX="3324" fromY="-14" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="21" positionX="1971" positionY="-611" width="350" height="1126">
       <outputs name="Ask if anything needs killing." ownerID="21" targetID="14" group="G1" fromX="2296" fromY="-1102" />
@@ -3422,7 +3422,7 @@ Together, you remove any curses you had.
       <logic>
         <ModifierBlock>
           <LogicModifiers>
-            <scriptCallWithTag scriptName="FMO_AddItems" parameter="0;2" tag="ITEM_CARGO-ADV_ONE_ROBE" />
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="0;1" tag="ITEM_CARGO-ADV_ONE_ROBE" />
           </LogicModifiers>
           <LogicModifiers>
             <scriptCallWithTag scriptName="FMO_AddItems" parameter="30;60" tag="ITEM_CARGO-BASIC_FEW_FOOD" />
@@ -3434,7 +3434,7 @@ Together, you remove any curses you had.
             <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="3" tag="TAG-LOYALTY_SLAVYAN" />
           </LogicModifiers>
           <LogicModifiers>
-            <scriptCallWithTag scriptName="FMO_AddItems" parameter="50% 0;2" tag="ITEM_CARGO-STRONG_ONE_ROBE" />
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="50% 0;1" tag="ITEM_CARGO-STRONG_ONE_ROBE" />
           </LogicModifiers>
         </ModifierBlock>
       </logic>
@@ -3475,7 +3475,7 @@ We cannot give much, but here, have what we can spare.'</nodes>
       <outputs name="Confirm" ownerID="38" targetID="37" fromX="2878" fromY="-1175" />
       <outputs name="Cancel" ownerID="38" targetID="21" fromX="2878" fromY="-1255" />
     </nodes>
-    <nodes xsi:type="NodeTrade" ID="39" positionX="2426" positionY="-1391" width="460" height="479" traderProfile="TRADER-BANDIT_TWO" playerInventory="w2" startingBalance="-25">
+    <nodes xsi:type="NodeTrade" ID="39" positionX="2482" positionY="-1412" width="460" height="479" traderProfile="TRADER-BANDIT_TWO" playerInventory="w2" startingBalance="-25">
       <logic>
         <FilterBlock>
           <LogicFilter name="wood1">
@@ -3506,8 +3506,8 @@ We cannot give much, but here, have what we can spare.'</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Confirm" ownerID="39" targetID="37" fromX="2856" fromY="-1719" />
-      <outputs name="Cancel" ownerID="39" targetID="21" fromX="2856" fromY="-1799" />
+      <outputs name="Confirm" ownerID="39" targetID="37" fromX="2912" fromY="-1741" />
+      <outputs name="Cancel" ownerID="39" targetID="21" fromX="2912" fromY="-1821" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="40" positionX="-420" positionY="-529" width="350" height="725">
       <logic>
@@ -5236,7 +5236,7 @@ The villagers thank you and give you a reward.</nodes>
       <outputs name="Lose" ownerID="12" targetID="14" fromX="2081" fromY="-1134" />
       <outputs name="Surrender" ownerID="12" targetID="14" fromX="2081" fromY="-1215" />
     </nodes>
-    <nodes xsi:type="NodeAdventureEnd" ID="13" positionX="2902.06519" positionY="-383.361359" width="350" height="530" allPlayersXP="-1" logBookName="QUEST_SLAVYANARMY" linkedEventUniqueID="0" endOfQuest="true">
+    <nodes xsi:type="NodeAdventureEnd" ID="13" positionX="2902.06519" positionY="-383.361359" width="350" height="530" allPlayersXP="-1" linkedEventUniqueID="0" endOfQuest="true">
       <logic>
         <ModifierBlock>
           <LogicModifiers>
@@ -5245,7 +5245,7 @@ The villagers thank you and give you a reward.</nodes>
         </ModifierBlock>
       </logic>
     </nodes>
-    <nodes xsi:type="NodeAdventureEnd" ID="14" positionX="2444" positionY="-882" width="350" height="530" logBookName="QUEST_SLAVYANARMY" linkedEventUniqueID="0" endOfQuest="true" />
+    <nodes xsi:type="NodeAdventureEnd" ID="14" positionX="2444" positionY="-882" width="350" height="530" linkedEventUniqueID="0" endOfQuest="true" />
     <nodes xsi:type="NodeChallenge" ID="15" positionX="952" positionY="-1272" width="500" height="726" challengeType="TypeMental" versusEventOwner="true" challengeScale="101" challengedList="ppl">
       <logic>
         <FilterBlock>
@@ -5270,7 +5270,7 @@ The villagers thank you and give you a reward.</nodes>
         </ModifierBlock>
       </logic>
       <outputs name="If they left anything of use take it and leave." ownerID="17" targetID="22" fromX="2609" fromY="-1962" />'Fine, fine, here, take our stuff and we'll back away, no need for fightin' and no hard feelings either, eh.'</nodes>
-    <nodes xsi:type="NodeAdventureEnd" ID="18" positionX="3321.27271" positionY="-1357.81689" width="350" height="530" allPlayersXP="-1" logBookName="QUEST_SLAVYANARMY" linkedEventUniqueID="0" endOfQuest="true">
+    <nodes xsi:type="NodeAdventureEnd" ID="18" positionX="3321.27271" positionY="-1357.81689" width="350" height="530" allPlayersXP="-1" linkedEventUniqueID="0" endOfQuest="true">
       <logic>
         <ModifierBlock>
           <LogicModifiers>
@@ -5346,7 +5346,7 @@ They walk off and you gain some friendship.</nodes>
     <nodes xsi:type="NodeSpawnOnMap" ID="26" positionX="2758" positionY="-1968" width="480" height="503" radius="0" destroyOwner="true" linkedEventUniqueID="0">
       <outputs ownerID="26" targetID="27" fromX="3206" fromY="-2400" />
     </nodes>
-    <nodes xsi:type="NodeAdventureEnd" ID="27" positionX="3376" positionY="-2046" width="350" height="530" allPlayersXP="-1" logBookName="QUEST_SLAVYANARMY" linkedEventUniqueID="0" endOfQuest="true">
+    <nodes xsi:type="NodeAdventureEnd" ID="27" positionX="3376" positionY="-2046" width="350" height="530" allPlayersXP="-1" linkedEventUniqueID="0" endOfQuest="true">
       <logic>
         <ModifierBlock>
           <LogicModifiers>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="Windows-1252"?>
+<?xml version="1.0" encoding="windows-1250"?>
 <MODULE xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Quarry" lastEventIndex="9" allowToUse="true" uniqueModuleID="-1864951172">
   <Adventure name="Quarrydiff8" uniqueID="1" allowToUse="false" typeGeneric="false" typePerGroupGeneric="false" typeInterrupt="true" typeExpedition="true" typeVillage="false" difficulty="8" nodeIdMax="9" joinIsForced="false" joinType="AllAlly" joinRange="SinglePosition">
     <nodes xsi:type="NodeStarting" ID="1" positionX="10" positionY="-10" width="347" height="661" image="Event014">
@@ -39,7 +39,7 @@
     </nodes>
   </Adventure>
   <Adventure name="Zmey" uniqueID="2" typeGeneric="false" typePerGroupGeneric="false" typeInterrupt="true" typeExpedition="true" typeVillage="false" difficulty="8" nodeIdMax="39" joinIsForced="false" joinType="AllAlly" joinRange="MovementArea">
-    <nodes xsi:type="NodeStarting" ID="1" positionX="10" positionY="-10" width="347" height="783" image="Event039">
+    <nodes xsi:type="NodeStarting" ID="1" positionX="10" positionY="-10" width="347" height="661" image="Event039">
       <logic>
         <FilterBlock>
           <LogicResultAction resultGroup="G1">
@@ -56,7 +56,7 @@
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs ownerID="1" targetID="3" fromX="334" fromY="-735" />
+      <outputs ownerID="1" targetID="3" fromX="334" fromY="-613" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="3" positionX="536" positionY="51" width="350" height="885">
       <logic>
@@ -103,10 +103,10 @@ And worse yet, you sense a powerful drain on your spirit, pulling at you mercile
 
 You hear mocking laughter bellowing at you.
 </nodes>
-    <nodes xsi:type="NodeAdventure" ID="8" positionX="3263.87451" positionY="-940.817" width="350" height="885">
-      <outputs name="What tribute does it mean?" ownerID="8" targetID="17" fromX="3589" fromY="-1431" />
-      <outputs name="Attack!" ownerID="8" targetID="15" fromX="3589" fromY="-1512" />
-      <outputs name="It is a creature of mystical birth, so fight it with your spirit!" ownerID="8" targetID="16" fromX="3589" fromY="-1592" />'Ssso ssstrong, you've come to pay tribute, have you?'
+    <nodes xsi:type="NodeAdventure" ID="8" positionX="3232" positionY="-916" width="350" height="885">
+      <outputs name="What tribute does it mean?" ownerID="8" targetID="17" fromX="3557" fromY="-1407" />
+      <outputs name="Attack!" ownerID="8" targetID="15" fromX="3557" fromY="-1487" />
+      <outputs name="It is a creature of mystical birth, so fight it with your spirit!" ownerID="8" targetID="16" fromX="3557" fromY="-1567" />'Ssso ssstrong, you've come to pay tribute, have you?'
 
 A zmey, one of the eldest dragon kin, slithers into view from within a dark cave. </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="9" positionX="1484" positionY="754" width="350" height="530" allPlayersXP="2" allPlayersRP="1" linkedEventUniqueID="0">
@@ -205,11 +205,11 @@ A zmey, one of the eldest dragon kin, slithers into view.
       <outputs name="Lose" ownerID="16" targetID="36" fromX="3690" fromY="304" />
       <outputs name="Surrender" ownerID="16" targetID="36" fromX="3690" fromY="224" />
     </nodes>
-    <nodes xsi:type="NodeAdventure" ID="17" positionX="2575" positionY="709" width="350" height="966">
-      <outputs name="Attack!" ownerID="17" targetID="15" fromX="2900" fromY="217" />
-      <outputs name="It is a creature of mystical birth, so fight it with your spirit!" ownerID="17" targetID="16" fromX="2900" fromY="137" />
-      <outputs name="Agree." ownerID="17" targetID="30" fromX="2900" fromY="57" />
-      <outputs name="Try to run away!" ownerID="17" targetID="31" fromX="2900" fromY="-22" />'I am not asss greedy asss my drake kin. One life will sssuffice, and it doesss not need to be pure.' 
+    <nodes xsi:type="NodeAdventure" ID="17" positionX="2559" positionY="619" width="350" height="966">
+      <outputs name="Attack!" ownerID="17" targetID="15" fromX="2884" fromY="127" />
+      <outputs name="It is a creature of mystical birth, so fight it with your spirit!" ownerID="17" targetID="16" fromX="2884" fromY="47" />
+      <outputs name="Agree." ownerID="17" targetID="30" fromX="2884" fromY="-32" />
+      <outputs name="Try to run away!" ownerID="17" targetID="31" fromX="2884" fromY="-112" />'I am not asss greedy asss my drake kin. One life will sssuffice, and it doesss not need to be pure.' 
 
 You think it winked at you.
 
@@ -217,18 +217,21 @@ You think it winked at you.
     <nodes xsi:type="NodeAdventure" ID="18" positionX="5223.23438" positionY="591.872864" width="350" height="725">
       <logic>
         <FilterBlock>
+          <LogicFilter name="ppls">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" />
+          </LogicFilter>
           <LogicResultAction>
             <scriptCallWithTag scriptName="FRA_Chance" parameter="20" />
           </LogicResultAction>
         </FilterBlock>
         <ModifierBlock>
-          <LogicProcessing name="1" list1="ppl">
+          <LogicProcessing name="1" list1="ppls">
             <scriptCallWithTag scriptName="FLP_GetRandomXelements" parameter="1" />
           </LogicProcessing>
-          <LogicProcessing name="2" list1="ppl">
+          <LogicProcessing name="2" list1="ppls">
             <scriptCallWithTag scriptName="FLP_GetRandomXelements" parameter="2" />
           </LogicProcessing>
-          <LogicProcessing name="1b" list1="ppl">
+          <LogicProcessing name="1b" list1="ppls">
             <scriptCallWithTag scriptName="FLP_GetRandomXelements" parameter="1" />
           </LogicProcessing>
           <LogicModifiers list="1">
@@ -240,7 +243,7 @@ You think it winked at you.
           <LogicModifiers list="2">
             <scriptCallWithTag scriptName="FMO_AddTags" parameter="1" tag="TAG-DESTINY" />
           </LogicModifiers>
-          <LogicModifiers list="ppl">
+          <LogicModifiers>
             <scriptCallWithTag scriptName="FMO_AddItems" parameter="20;30" tag="ITEM_CARGO-FEW_ADV_STONE" />
           </LogicModifiers>
         </ModifierBlock>
@@ -255,14 +258,19 @@ You fall into slumber, but when you wake, you feel strengthened and the promised
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="27" positionX="4373.59863" positionY="50.436676" width="350" height="725">
       <logic>
+        <FilterBlock>
+          <LogicFilter name="ppls">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" />
+          </LogicFilter>
+        </FilterBlock>
         <ModifierBlock>
-          <LogicProcessing name="1" list1="ppl">
+          <LogicProcessing name="1" list1="ppls">
             <scriptCallWithTag scriptName="FLP_GetRandomXelements" parameter="1" />
           </LogicProcessing>
           <LogicModifiers list="1">
             <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="2" tag="SKILL_PACK-TOXINE" />
           </LogicModifiers>
-          <LogicModifiers list="ppl">
+          <LogicModifiers>
             <scriptCallWithTag scriptName="FMO_AddItems" parameter="20;30" tag="ITEM_CARGO-FEW_SANDSTONE" />
           </LogicModifiers>
         </ModifierBlock>
@@ -295,16 +303,23 @@ You feel sickened from the spit, and worse yet, you discover only sandstone left
         </ModifierBlock>
       </logic>
       <outputs name="Leave." ownerID="29" targetID="21" fromX="4763" fromY="957" />The zmey shrieks in pain as you break its soul. You see a dark spirit escape, but the body lies dead before you.</nodes>
-    <nodes xsi:type="NodeTrade" ID="30" positionX="3264" positionY="91" width="460" height="639" traderProfile="TRADER-BANDIT_TWO" playerInventory="ppl" startingBalance="-1">
-      <outputs name="Confirm" ownerID="30" targetID="18" group="G1" fromX="3694" fromY="-237" />
-      <outputs name="Cancel" ownerID="30" targetID="17" fromX="3694" fromY="-317" />
-      <outputs name="Confirm" ownerID="30" targetID="35" group="G1" fromX="3694" fromY="-397" />
-      <outputs name="Confirm" ownerID="30" targetID="27" group="G1" fromX="3694" fromY="-477" />
+    <nodes xsi:type="NodeTrade" ID="30" positionX="3295" positionY="91" width="460" height="639" traderProfile="TRADER-BANDIT_TWO" playerInventory="ppl2" startingBalance="-1">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="ppl2">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" />
+          </LogicFilter>
+        </FilterBlock>
+      </logic>
+      <outputs name="Confirm" ownerID="30" targetID="18" group="G1" fromX="3725" fromY="-237" />
+      <outputs name="Cancel" ownerID="30" targetID="17" fromX="3725" fromY="-317" />
+      <outputs name="Confirm" ownerID="30" targetID="35" group="G1" fromX="3725" fromY="-397" />
+      <outputs name="Confirm" ownerID="30" targetID="27" group="G1" fromX="3725" fromY="-477" />
     </nodes>
-    <nodes xsi:type="NodeChallenge" ID="31" positionX="3793.332" positionY="-490.285767" width="500" height="726" challengeType="TypePhysical" versusConcept="true" versusGroup="GROUP-CON_P_5P_0M_0S" challengeScale="101" challengedList="ppl">
-      <outputs name="Win" ownerID="31" targetID="33" fromX="4234" fromY="-985" />
-      <outputs name="Lose" ownerID="31" targetID="32" fromX="4234" fromY="-1065" />
-      <outputs name="Surrender" ownerID="31" targetID="32" fromX="4234" fromY="-1146" />
+    <nodes xsi:type="NodeChallenge" ID="31" positionX="3904" positionY="-556" width="500" height="726" challengeType="TypePhysical" versusConcept="true" versusGroup="GROUP-CON_P_5P_0M_0S" challengeScale="101" challengedList="ppl">
+      <outputs name="Win" ownerID="31" targetID="33" fromX="4345" fromY="-1051" />
+      <outputs name="Lose" ownerID="31" targetID="32" fromX="4345" fromY="-1131" />
+      <outputs name="Surrender" ownerID="31" targetID="32" fromX="4345" fromY="-1211" />
     </nodes>
     <nodes xsi:type="NodeDealDamage" ID="32" positionX="4296.395" positionY="-1188.88928" width="460" height="459" challengeTypeDamage="TypePhysical" minDamage="30" maxDamage="40" useCountInPercent="true" targetGroup="ppl">
       <outputs ownerID="32" targetID="34" fromX="4725" fromY="-1577" />
@@ -332,18 +347,21 @@ You feel sickened from the spit, and worse yet, you discover only sandstone left
     <nodes xsi:type="NodeAdventure" ID="35" positionX="4829.868" positionY="396.526337" width="350" height="725">
       <logic>
         <FilterBlock>
+          <LogicFilter name="ppls">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" />
+          </LogicFilter>
           <LogicResultAction>
             <scriptCallWithTag scriptName="FRA_Chance" parameter="70" />
           </LogicResultAction>
         </FilterBlock>
         <ModifierBlock>
-          <LogicProcessing name="2" list1="ppl">
+          <LogicProcessing name="2" list1="ppls">
             <scriptCallWithTag scriptName="FLP_GetRandomXelements" parameter="2" />
           </LogicProcessing>
           <LogicModifiers list="2">
             <scriptCallWithTag scriptName="FMO_AddTags" parameter="1" tag="TAG-DESTINY" />
           </LogicModifiers>
-          <LogicModifiers list="ppl">
+          <LogicModifiers>
             <scriptCallWithTag scriptName="FMO_AddItems" parameter="20;30" tag="ITEM_CARGO-PACK_HIGH_RANDOM_STONE" />
           </LogicModifiers>
         </ModifierBlock>

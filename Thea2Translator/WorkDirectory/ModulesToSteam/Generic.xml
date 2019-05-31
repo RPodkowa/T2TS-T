@@ -915,7 +915,7 @@
         </ModifierBlock>
       </logic>
       <outputs name="[Magiczni uzytkownicy lub lojalnosc i mistycyzm] Albo wiesz wystarczajaco duzo o magii, aby sprobowac nauczyc nawet elfiego dziecka, albo jestes przyjacielem Woodlandkina, tak jak mozesz poprosic o jego wskazowki, aby mlodziez mogla zostac magicznym uzytkownikiem elfow." ownerID="2" targetID="3" fromX="199" fromY="-157" />
-      <outputs name="[Sila i percepcja] Dziecko jest silne, byc moze wyrosnie na wojownika." ownerID="2" targetID="39" fromX="199" fromY="-237" />
+      <outputs name="[Percepcja i sila] Dziecko ma sprawnosc fizyczna, byc moze sciezka wojownika jest ich przeznaczeniem." ownerID="2" targetID="39" fromX="199" fromY="-237" />
       <outputs name="Naucz elfiego dziecka dobrego starego handlu. " ownerID="2" targetID="14" fromX="199" fromY="-317" />
       <outputs name="[Szansa] Elfy sa na zawsze zwiazane z lasem, pozwol dziecku przeksztalcic sie w demona lasu, nawet jesli wynik jest niepewny." ownerID="2" targetID="25" fromX="199" fromY="-397" />Twoje elfie dziecko nie bedzie uwazane za doroslego wsrod swoich elfich krewnych jeszcze przez wiele dziesiecioleci, ale osiagnelo czas wzrostu. 
 
@@ -954,7 +954,7 @@ Ale ta sciezka nigdy nie jest latwa. Musisz wybrac, jaka podroz zabierze mlody c
       <outputs name="Rozpocznij proby dla maga." ownerID="3" targetID="7" fromX="589" fromY="916" />
       <outputs name="Wroc do wyborow." ownerID="3" targetID="2" fromX="589" fromY="836" />
       <outputs name="Rozpocznij proby dla druida." ownerID="3" targetID="33" fromX="589" fromY="756" />
-      <outputs name="[Sila i percepcja] Dziecko jest silne, byc moze wyrosnie na wojownika." ownerID="3" targetID="20" fromX="589" fromY="676" />Sploty magii sa naturalne dla wszystkich elfow, ale sciezka magicznego uzytkownika jest dokonywana z mrocznymi niebezpieczenstwami, szczegolnie dla elfiego dziecka wychowanego z wlasnego rodzaju.  Moga nie wrocic do ciebie lub ich sciezka moze nie doprowadzic do tego, czego szukasz. 
+      <outputs name="[Percepcja i sila] Dziecko ma sprawnosc fizyczna, byc moze sciezka wojownika jest ich przeznaczeniem." ownerID="3" targetID="20" fromX="589" fromY="676" />Sploty magii sa naturalne dla wszystkich elfow, ale sciezka magicznego uzytkownika jest dokonywana z mrocznymi niebezpieczenstwami, szczegolnie dla elfiego dziecka wychowanego z wlasnego rodzaju.  Moga nie wrocic do ciebie lub ich sciezka moze nie doprowadzic do tego, czego szukasz. 
 
 [Aby realizowac rzadkie klasy, dziecko czesto potrzebuje wysokiej statystyki w odpowiednim polu (dokladne liczby sie roznia), takie jak sila dla wojownikow itp., Jak rowniez szansa. Poprawienie atrybutu szczescia moze rowniez pomoc w tym.] 
 </nodes>
@@ -1169,10 +1169,10 @@ Wiele lat pozniej otrzymujesz wiadomosc, ze ich podroz zabrala ich do odleglych 
       <logic>
         <FilterBlock>
           <LogicFilter name="str">
-            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="5" tag="TAG-STRENGTH" />
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="3" tag="TAG-STRENGTH" />
           </LogicFilter>
           <LogicFilter name="perc">
-            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="4" tag="TAG-PERCEPTION" />
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="7" tag="TAG-PERCEPTION" />
           </LogicFilter>
           <LogicProcessing name="strch" list1="1elfgrowing" list2="str">
             <scriptCallWithTag scriptName="FLP_AandB" />
@@ -1187,7 +1187,7 @@ Wiele lat pozniej otrzymujesz wiadomosc, ze ich podroz zabrala ich do odleglych 
             <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
           </LogicResultAction>
           <LogicResultAction>
-            <scriptCallWithTag scriptName="FRA_Chance" parameter="40" />
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="70" />
           </LogicResultAction>
         </FilterBlock>
       </logic>
@@ -1453,10 +1453,10 @@ Proby byly trudne i nie sa tak silne jak pelnoprawny dorosly, ale z czasem stana
       <logic>
         <FilterBlock>
           <LogicFilter name="str">
-            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="5" tag="TAG-STRENGTH" />
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="3" tag="TAG-STRENGTH" />
           </LogicFilter>
           <LogicFilter name="perc">
-            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="4" tag="TAG-PERCEPTION" />
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="7" tag="TAG-PERCEPTION" />
           </LogicFilter>
           <LogicProcessing name="strch" list1="1elfgrowing" list2="str">
             <scriptCallWithTag scriptName="FLP_AandB" />
@@ -1471,7 +1471,7 @@ Proby byly trudne i nie sa tak silne jak pelnoprawny dorosly, ale z czasem stana
             <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
           </LogicResultAction>
           <LogicResultAction>
-            <scriptCallWithTag scriptName="FRA_Chance" parameter="5" />
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="10" />
           </LogicResultAction>
         </FilterBlock>
       </logic>
@@ -4184,7 +4184,7 @@ Staja sie harcownikami, ale nawet w tym, ze pozostaja slabi.</nodes>
       <outputs name="Zbieracze sa zawsze potrzebni, a szkolenie jest mniej niebezpieczne. " ownerID="2" targetID="30" fromX="591" fromY="17" />
       <outputs name="[Chance] Twoje dziecko zawsze bylo inne. Pozwol losowi calkowicie pokierowac swoja sciezka." ownerID="2" targetID="34" fromX="591" fromY="-62" />
       <outputs name="[Mistycyzm, przypadek i kobieta] Twoje dziecko urodzilo sie ze znakiem czarownicy. Ta sciezka jest mroczna i niebezpieczna." ownerID="2" targetID="49" group="G1" fromX="591" fromY="-142" />
-      <outputs name="[Madrosc] Twoje dziecko sie uczy, byc moze moze zostac uzdrowicielem." ownerID="2" targetID="55" fromX="591" fromY="-222" />
+      <outputs name="[Inteligencja] Twoje dziecko sie uczy, byc moze moze zostac uzdrowicielem." ownerID="2" targetID="55" fromX="591" fromY="-222" />
       <outputs name="[Mistycyzm, przypadek i kobieta] Twoje dziecko urodzilo sie ze znakiem czarownicy. Ta sciezka jest mroczna i niebezpieczna." ownerID="2" targetID="68" group="G1" fromX="591" fromY="-302" />
       <outputs name="[Madrosc i szansa] Dziecko jest madre poza swymi latami, moga trenowac, by stac sie duchowym przywodca twojej trzody, zerka." ownerID="2" targetID="70" group="G2" fromX="591" fromY="-383" />
       <outputs name="[Spryt i szansa] Zycie bandytyzmu to nieortodoksyjna sciezka wyslania dziecka, ale ten swiat jest surowy, a ty potrzebujesz zatwardzialego ludu." ownerID="2" targetID="71" group="G3" fromX="591" fromY="-463" />
@@ -4952,11 +4952,11 @@ Na sciezce losu powrocil ich prawdziwy obraz, ale zawsze sa lojalni wobec twojej
         </ModifierBlock>
       </logic>
       <outputs name="Radujcie sie." ownerID="54" targetID="5" fromX="-1165" fromY="-3353" />Dziecko nie jest juz mlodoscia, dzis przylacza sie do mrocznej sciezki czarow, ale nie bez placenia swietnej ceny za mroczna sztuke.</nodes>
-    <nodes xsi:type="NodeAdventure" ID="55" positionX="2037" positionY="-326" width="350" height="966">
+    <nodes xsi:type="NodeAdventure" ID="55" positionX="2046" positionY="-317" width="350" height="966">
       <logic>
         <FilterBlock>
           <LogicFilter name="wis">
-            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="3" tag="TAG-WISDOM" />
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="3" tag="TAG-INTELLIGENCE" />
           </LogicFilter>
           <LogicFilter name="zerca" makePublic="true">
             <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="TAG-HEALER" />
@@ -4969,10 +4969,10 @@ Na sciezce losu powrocil ich prawdziwy obraz, ale zawsze sa lojalni wobec twojej
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Rozpocznij proby." ownerID="55" targetID="69" group="G1" fromX="2362" fromY="-817" />
-      <outputs name="Rozpocznij proby." ownerID="55" targetID="56" group="G1" fromX="2362" fromY="-897" />
-      <outputs name="Rozpocznij proby." ownerID="55" targetID="57" group="G1" fromX="2362" fromY="-977" />
-      <outputs name="Rozpocznij proby." ownerID="55" targetID="21" group="G1" fromX="2362" fromY="-1057" />Sciezka, ktorej uzdrowiciel nie jest wyzwaniem fizycznym, ale niewielu ma madrosc lub wytrwalosc, aby odniesc sukces.</nodes>
+      <outputs name="Rozpocznij proby." ownerID="55" targetID="69" group="G1" fromX="2372" fromY="-808" />
+      <outputs name="Rozpocznij proby." ownerID="55" targetID="56" group="G1" fromX="2372" fromY="-888" />
+      <outputs name="Rozpocznij proby." ownerID="55" targetID="57" group="G1" fromX="2372" fromY="-969" />
+      <outputs name="Rozpocznij proby." ownerID="55" targetID="21" group="G1" fromX="2372" fromY="-1049" />Sciezka, ktorej uzdrowiciel nie jest wyzwaniem fizycznym, ale niewielu ma madrosc lub wytrwalosc, aby odniesc sukces.</nodes>
     <nodes xsi:type="NodeAdventure" ID="56" positionX="2807" positionY="-560" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -5600,7 +5600,7 @@ Ale sa tak samo lojalni wobec ciebie i twoich bogow, jak wczesniej.</nodes>
       </logic>
       <outputs name="Witaj z powrotem." ownerID="88" targetID="38" fromX="-1668" fromY="-3334" />Twoje dziecko bylo obdarzone magia, niestety, zazdrosna wiedzma znalazla go i przeklela, by zyc jak pajak!</nodes>
   </Adventure>
-  <Adventure name="__Childgrowingup__" uniqueID="29" seaEvent="true" typeGeneric="false" typePerGroupGeneric="true" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="88" joinIsForced="false" joinType="OnlyOwn" joinRange="SinglePosition">
+  <Adventure name="Childgrowingup__Sea" uniqueID="29" seaEvent="true" typeGeneric="false" typePerGroupGeneric="true" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="88" joinIsForced="false" joinType="OnlyOwn" joinRange="SinglePosition">
     <nodes xsi:type="NodeStarting" ID="1" positionX="-139" positionY="518" width="347" height="661" image="Event010">
       <logic>
         <FilterBlock>
@@ -5656,7 +5656,7 @@ Ale sa tak samo lojalni wobec ciebie i twoich bogow, jak wczesniej.</nodes>
       <outputs name="Zbieracze sa zawsze potrzebni, a szkolenie jest mniej niebezpieczne. " ownerID="2" targetID="30" fromX="591" fromY="17" />
       <outputs name="[Chance] Twoje dziecko zawsze bylo inne. Pozwol losowi calkowicie pokierowac swoja sciezka." ownerID="2" targetID="34" fromX="591" fromY="-62" />
       <outputs name="[Mistycyzm, przypadek i kobieta] Twoje dziecko urodzilo sie ze znakiem czarownicy. Ta sciezka jest mroczna i niebezpieczna." ownerID="2" targetID="49" group="G1" fromX="591" fromY="-142" />
-      <outputs name="[Madrosc] Twoje dziecko sie uczy, byc moze moze zostac uzdrowicielem." ownerID="2" targetID="55" fromX="591" fromY="-222" />
+      <outputs name="[Inteligencja] Twoje dziecko sie uczy, byc moze moze zostac uzdrowicielem." ownerID="2" targetID="55" fromX="591" fromY="-222" />
       <outputs name="[Mistycyzm, przypadek i kobieta] Twoje dziecko urodzilo sie ze znakiem czarownicy. Ta sciezka jest mroczna i niebezpieczna." ownerID="2" targetID="68" group="G1" fromX="591" fromY="-302" />
       <outputs name="[Madrosc i szansa] Dziecko jest madre poza swymi latami, moga trenowac, by stac sie duchowym przywodca twojej trzody, zerka." ownerID="2" targetID="70" group="G2" fromX="591" fromY="-383" />
       <outputs name="[Spryt i szansa] Zycie bandytyzmu to nieortodoksyjna sciezka wyslania dziecka, ale ten swiat jest surowy, a ty potrzebujesz zatwardzialego ludu." ownerID="2" targetID="71" group="G3" fromX="591" fromY="-463" />
@@ -6428,7 +6428,7 @@ Na sciezce losu powrocil ich prawdziwy obraz, ale zawsze sa lojalni wobec twojej
       <logic>
         <FilterBlock>
           <LogicFilter name="wis">
-            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="3" tag="TAG-WISDOM" />
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="3" tag="TAG-INTELLIGENCE" />
           </LogicFilter>
           <LogicFilter name="zerca" makePublic="true">
             <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="TAG-HEALER" />

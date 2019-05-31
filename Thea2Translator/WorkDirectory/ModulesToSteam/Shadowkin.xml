@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="Windows-1252"?>
+<?xml version="1.0" encoding="windows-1250"?>
 <MODULE xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Shadowkin" lastEventIndex="34" allowToUse="true" uniqueModuleID="0">
   <Adventure name="ShadowKinTradesmall" uniqueID="29" allowToUse="false" typeGeneric="false" typePerGroupGeneric="false" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="12" joinIsForced="false" joinType="OnlyOwn" joinRange="SinglePosition">
     <nodes xsi:type="NodeStarting" ID="1" positionX="10" positionY="-10" width="347" height="704" image="Event006">
@@ -514,7 +514,7 @@ Tutaj mozesz odwiedzic kilka miejsc otwartych dla osob z zewnatrz.
             <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="-5" tag="SKILL_PACK-CURSE_M" />
           </LogicModifiers>
           <LogicModifiers list="PMS">
-            <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="-5" tag="SKILL_PACK-CURSE_S" />
+            <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="-5" tag="SKILL_PACK-CURSE_P" />
           </LogicModifiers>
         </ModifierBlock>
       </logic>

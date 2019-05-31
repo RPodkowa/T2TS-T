@@ -134,7 +134,7 @@
     <CharacterMale Value="Lubovid" />
     <CharacterMale Value="Ludzivoy" />
     <CharacterMale Value="Lutek" />
-    <CharacterMale Value="Lutoslav" />
+    <CharacterMale Value="Lutosławski" />
     <CharacterMale Value="Macko" />
     <CharacterMale Value="Malkavoj" />
     <CharacterMale Value="Malovid" />
@@ -152,7 +152,7 @@
     <CharacterMale Value="Mieshko" />
     <CharacterMale Value="Miestwin" />
     <CharacterMale Value="Mihu" />
-    <CharacterMale Value="Mikhail" />
+    <CharacterMale Value="Michaił" />
     <CharacterMale Value="Mileslav" />
     <CharacterMale Value="Milobor" />
     <CharacterMale Value="Milobrat" />
@@ -176,7 +176,7 @@
     <CharacterMale Value="Myslidar" />
     <CharacterMale Value="Myszyvor" />
     <CharacterMale Value="Naczevoy" />
-    <CharacterMale Value="Namyslav" />
+    <CharacterMale Value="Namysław" />
     <CharacterMale Value="Nasarog" />
     <CharacterMale Value="Naslav" />
     <CharacterMale Value="Nicolay" />
@@ -199,7 +199,7 @@
     <CharacterMale Value="Palimir" />
     <CharacterMale Value="Parunovoj" />
     <CharacterMale Value="Pasha" />
-    <CharacterMale Value="Pavel" />
+    <CharacterMale Value="Paweł" />
     <CharacterMale Value="Pavleslav" />
     <CharacterMale Value="Pelchybog" />
     <CharacterMale Value="Pendantryk" />
@@ -232,10 +232,10 @@
     <CharacterMale Value="Ryshard" />
     <CharacterMale Value="Rysiek" />
     <CharacterMale Value="Samogost" />
-    <CharacterMale Value="Samoslav" />
+    <CharacterMale Value="Samosław" />
     <CharacterMale Value="Sasha" />
     <CharacterMale Value="Senderslav" />
-    <CharacterMale Value="Sergei" />
+    <CharacterMale Value="Siergiej" />
     <CharacterMale Value="Shanemir" />
     <CharacterMale Value="Siemierz" />
     <CharacterMale Value="Siemoradz" />
@@ -259,7 +259,7 @@
     <CharacterMale Value="Strzebor" />
     <CharacterMale Value="Sulibrat" />
     <CharacterMale Value="Sulirad" />
-    <CharacterMale Value="Szaloslav" />
+    <CharacterMale Value="Szalosław" />
     <CharacterMale Value="Tadeas" />
     <CharacterMale Value="Tatomier" />
     <CharacterMale Value="Tatomir" />
@@ -291,12 +291,12 @@
     <CharacterMale Value="Vojmir" />
     <CharacterMale Value="Voyemil" />
     <CharacterMale Value="Voytech" />
-    <CharacterMale Value="Vshesul" />
+    <CharacterMale Value="Wshesul" />
     <CharacterMale Value="Vuk" />
     <CharacterMale Value="Wschodrzev" />
     <CharacterMale Value="Yan" />
     <CharacterMale Value="Yanko" />
-    <CharacterMale Value="Yaroslav" />
+    <CharacterMale Value="Jarosław" />
     <CharacterMale Value="Yarostry" />
     <CharacterMale Value="Yutrovoy" />
     <CharacterMale Value="Zadar" />
@@ -337,14 +337,14 @@
     <CharacterFemale Value="Bogodara" />
     <CharacterFemale Value="Bogufala" />
     <CharacterFemale Value="Bogumila" />
-    <CharacterFemale Value="Boguslawa" />
+    <CharacterFemale Value="Bogusława" />
     <CharacterFemale Value="Boguwola" />
     <CharacterFemale Value="Bohna" />
     <CharacterFemale Value="Bohumila" />
     <CharacterFemale Value="Bolemira" />
     <CharacterFemale Value="Boyana" />
     <CharacterFemale Value="Bozecieha" />
-    <CharacterFemale Value="Bozena" />
+    <CharacterFemale Value="Bożena" />
     <CharacterFemale Value="Branka" />
     <CharacterFemale Value="Bratumila" />
     <CharacterFemale Value="Bretka" />
@@ -389,7 +389,7 @@
     <CharacterFemale Value="Gnievosadka" />
     <CharacterFemale Value="Goslava" />
     <CharacterFemale Value="Gostirada" />
-    <CharacterFemale Value="Grazyna" />
+    <CharacterFemale Value="Grażyna" />
     <CharacterFemale Value="Greta" />
     <CharacterFemale Value="Grodzislava" />
     <CharacterFemale Value="Hana" />
@@ -466,7 +466,7 @@
     <CharacterFemale Value="Naslava" />
     <CharacterFemale Value="Nastka" />
     <CharacterFemale Value="Natalia" />
-    <CharacterFemale Value="Natasha" />
+    <CharacterFemale Value="Natasza" />
     <CharacterFemale Value="Navoya" />
     <CharacterFemale Value="Navoyka" />
     <CharacterFemale Value="Niegoslava" />
@@ -501,10 +501,10 @@
     <CharacterFemale Value="Ruuzena" />
     <CharacterFemale Value="Sabina" />
     <CharacterFemale Value="Scibora" />
-    <CharacterFemale Value="Sedzislava" />
+    <CharacterFemale Value="Sędzislava" />
     <CharacterFemale Value="Siecieslava" />
     <CharacterFemale Value="Sieclava" />
-    <CharacterFemale Value="Siecslawa" />
+    <CharacterFemale Value="Sieclawa" />
     <CharacterFemale Value="Sieslava" />
     <CharacterFemale Value="Siroslava" />
     <CharacterFemale Value="Skarbimira" />
@@ -554,10 +554,10 @@
     <CharacterFemale Value="Yania" />
     <CharacterFemale Value="Yanina" />
     <CharacterFemale Value="Yanka" />
-    <CharacterFemale Value="Yarmila" />
+    <CharacterFemale Value="Jarmila" />
     <CharacterFemale Value="Yasna" />
     <CharacterFemale Value="Yuzia" />
-    <CharacterFemale Value="Zachryaslawa" />
+    <CharacterFemale Value="Zachryasława" />
     <CharacterFemale Value="Zadra" />
     <CharacterFemale Value="Zahradka" />
     <CharacterFemale Value="Zdenka" />
@@ -580,17 +580,17 @@
   <NAME_COLLECTION-HUM_BANDIT_CAP_BEAR>
     <Race Value="RACE-HUMAN" />
     <Subrace Value="SUBRACE-HUM_BANDIT_CAP_BEAR" />
-    <CharacterMale Value="Capitan Bear" />
+    <CharacterMale Value="Niedźwiedź Capitan" />
   </NAME_COLLECTION-HUM_BANDIT_CAP_BEAR>
   <NAME_COLLECTION-NASAROG>
     <Race Value="RACE-HUMAN" />
     <Subrace Value="SUBRACE-NASAROG" />
-    <CharacterMale Value="Alchemist" />
+    <CharacterMale Value="Alchemik" />
   </NAME_COLLECTION-NASAROG>
   <NAME_COLLECTION-NASAROG_GHOST>
     <Race Value="RACE-HUMAN" />
     <Subrace Value="SUBRACE-NASAROG_GHOST" />
-    <CharacterMale Value="Alchemist" />
+    <CharacterMale Value="Alchemik" />
   </NAME_COLLECTION-NASAROG_GHOST>
   <NAME_COLLECTION-SCAVENGER_BOSS_HANKA>
     <Race Value="RACE-HUMAN" />
@@ -605,17 +605,17 @@
   <NAME_COLLECTION-HUM_CHILD_2NAME_GIRL>
     <Race Value="RACE-HUMAN" />
     <Subrace Value="SUBRACE-HUM_CHILD_2NAME_GIRL" />
-    <CharacterMale Value="Zloslawa" />
+    <CharacterMale Value="Zlosława" />
   </NAME_COLLECTION-HUM_CHILD_2NAME_GIRL>
   <NAME_COLLECTION-HUM_CRAFTSMAN_STAROSLAW>
     <Race Value="RACE-HUMAN" />
     <Subrace Value="SUBRACE-HUM_CRAFTSMAN_STAROSLAW" />
-    <CharacterMale Value="Staroslaw" />
+    <CharacterMale Value="Starosław" />
   </NAME_COLLECTION-HUM_CRAFTSMAN_STAROSLAW>
   <NAME_COLLECTION-HUM_THE_GUARD>
     <Race Value="RACE-HUMAN" />
     <Subrace Value="SUBRACE-HUM_THE_GUARD" />
-    <CharacterMale Value="The Guard" />
+    <CharacterMale Value="Strażnik" />
   </NAME_COLLECTION-HUM_THE_GUARD>
   <NAME_COLLECTION-HUM_WARRIOR_TOBIASZ>
     <Race Value="RACE-HUMAN" />
@@ -649,111 +649,111 @@
   </NAME_COLLECTION-HUM_WOJ_HUFFMIR>
   <NAME_COLLECTION-ELF>
     <Race Value="RACE-ELF" />
-    <CharacterMale Value="Ab’yell" />
-    <CharacterMale Value="Ab’yith" />
-    <CharacterMale Value="Ab’yleth" />
-    <CharacterMale Value="Ab’yssa" />
-    <CharacterMale Value="Ab’yssil" />
-    <CharacterMale Value="Ab’ythien" />
-    <CharacterMale Value="Ab’yvenn" />
-    <CharacterMale Value="Ad’yell" />
-    <CharacterMale Value="Ad’yith" />
-    <CharacterMale Value="Ad’yleth" />
-    <CharacterMale Value="Ad’yssa" />
-    <CharacterMale Value="Ad’yssil" />
-    <CharacterMale Value="Ad’ythien" />
-    <CharacterMale Value="Ad’yvenn" />
-    <CharacterMale Value="Adon’yell" />
-    <CharacterMale Value="Adon’yith" />
-    <CharacterMale Value="Adon’yleth" />
-    <CharacterMale Value="Adon’yssa" />
-    <CharacterMale Value="Adon’yssil" />
-    <CharacterMale Value="Adon’ythien" />
-    <CharacterMale Value="Adon’yvenn" />
-    <CharacterMale Value="Ak’yell" />
-    <CharacterMale Value="Ak’yith" />
-    <CharacterMale Value="Ak’yleth" />
-    <CharacterMale Value="Ak’yssa" />
-    <CharacterMale Value="Ak’yssil" />
-    <CharacterMale Value="Ak’ythien" />
-    <CharacterMale Value="Ak’yvenn" />
-    <CharacterMale Value="Al’yell" />
-    <CharacterMale Value="Al’yith" />
-    <CharacterMale Value="Al’yleth" />
-    <CharacterMale Value="Al’yssa" />
-    <CharacterMale Value="Al’yssil" />
-    <CharacterMale Value="Al’ythien" />
-    <CharacterMale Value="Al’yvenn" />
-    <CharacterMale Value="Ala’yell" />
-    <CharacterMale Value="Ala’yith" />
-    <CharacterMale Value="Ala’yleth" />
-    <CharacterMale Value="Ala’yssa" />
-    <CharacterMale Value="Ala’yssil" />
-    <CharacterMale Value="Ala’ythien" />
-    <CharacterMale Value="Ala’yvenn" />
-    <CharacterMale Value="Alun’yell" />
-    <CharacterMale Value="Alun’yith" />
-    <CharacterMale Value="Alun’yleth" />
-    <CharacterMale Value="Alun’yssa" />
-    <CharacterMale Value="Alun’yssil" />
-    <CharacterMale Value="Alun’ythien" />
-    <CharacterMale Value="Alun’yvenn" />
-    <CharacterMale Value="Am’yell" />
-    <CharacterMale Value="Am’yith" />
-    <CharacterMale Value="Am’yleth" />
-    <CharacterMale Value="Am’yssa" />
-    <CharacterMale Value="Am’yssil" />
-    <CharacterMale Value="Am’ythien" />
-    <CharacterMale Value="Am’yvenn" />
-    <CharacterMale Value="Amu’yell" />
-    <CharacterMale Value="Amu’yith" />
-    <CharacterMale Value="Amu’yleth" />
-    <CharacterMale Value="Amu’yssa" />
-    <CharacterMale Value="Amu’yssil" />
-    <CharacterMale Value="Amu’ythien" />
-    <CharacterMale Value="Amu’yvenn" />
-    <CharacterMale Value="An’yell" />
-    <CharacterMale Value="An’yith" />
-    <CharacterMale Value="An’yleth" />
-    <CharacterMale Value="An’yssa" />
-    <CharacterMale Value="An’yssil" />
-    <CharacterMale Value="An’ythien" />
-    <CharacterMale Value="An’yvenn" />
-    <CharacterMale Value="Ana’yell" />
-    <CharacterMale Value="Ana’yith" />
-    <CharacterMale Value="Ana’yleth" />
-    <CharacterMale Value="Ana’yssa" />
-    <CharacterMale Value="Ana’yssil" />
-    <CharacterMale Value="Ana’ythien" />
-    <CharacterMale Value="Ana’yvenn" />
-    <CharacterMale Value="Ar’yell" />
-    <CharacterMale Value="Ar’yith" />
-    <CharacterMale Value="Ar’yleth" />
-    <CharacterMale Value="Ar’yssa" />
-    <CharacterMale Value="Ar’yssil" />
-    <CharacterMale Value="Ar’ythien," />
-    <CharacterMale Value="Ar’yvenn" />
-    <CharacterMale Value="Ari’yell" />
-    <CharacterMale Value="Ari’yith" />
-    <CharacterMale Value="Ari’yleth" />
-    <CharacterMale Value="Ari’yssa" />
-    <CharacterMale Value="Ari’yssil" />
-    <CharacterMale Value="Ari’ythien" />
-    <CharacterMale Value="Ari’yvenn" />
-    <CharacterMale Value="Aru’yell" />
-    <CharacterMale Value="Aru’yith" />
-    <CharacterMale Value="Aru’yleth" />
-    <CharacterMale Value="Aru’yssa" />
-    <CharacterMale Value="Aru’yssil" />
-    <CharacterMale Value="Aru’ythien" />
-    <CharacterMale Value="Aru’yvenn" />
-    <CharacterMale Value="Av’yell" />
-    <CharacterMale Value="Av’yith" />
-    <CharacterMale Value="Av’yleth" />
-    <CharacterMale Value="Av’yssa" />
-    <CharacterMale Value="Av’yssii" />
-    <CharacterMale Value="Av’ythien" />
-    <CharacterMale Value="Av’yvenn" />
+    <CharacterMale Value="Ab'yell" />
+    <CharacterMale Value="Ab'yith" />
+    <CharacterMale Value="Ab'yleth" />
+    <CharacterMale Value="Ab'yssa" />
+    <CharacterMale Value="Ab'yssil" />
+    <CharacterMale Value="Ab'ythien" />
+    <CharacterMale Value="Ab'yvenn" />
+    <CharacterMale Value="Ad'yell" />
+    <CharacterMale Value="Ad'yith" />
+    <CharacterMale Value="Ad'yleth" />
+    <CharacterMale Value="Ad'yssa" />
+    <CharacterMale Value="Ad'yssil" />
+    <CharacterMale Value="Ad'ythien" />
+    <CharacterMale Value="Ad'yvenn" />
+    <CharacterMale Value="Adon'yell" />
+    <CharacterMale Value="Adon'yith" />
+    <CharacterMale Value="Adon'yleth" />
+    <CharacterMale Value="Adon'yssa" />
+    <CharacterMale Value="Adon'yssil" />
+    <CharacterMale Value="Adon'ythien" />
+    <CharacterMale Value="Adon'yvenn" />
+    <CharacterMale Value="Ak'yell" />
+    <CharacterMale Value="Ak'yith" />
+    <CharacterMale Value="Ak'yleth" />
+    <CharacterMale Value="Ak'yssa" />
+    <CharacterMale Value="Ak'yssil" />
+    <CharacterMale Value="Ak'ythien" />
+    <CharacterMale Value="Ak'yvenn" />
+    <CharacterMale Value="Al'yell" />
+    <CharacterMale Value="Al'yith" />
+    <CharacterMale Value="Al'yleth" />
+    <CharacterMale Value="Al'yssa" />
+    <CharacterMale Value="Al'yssil" />
+    <CharacterMale Value="Al'ythien" />
+    <CharacterMale Value="Al'yvenn" />
+    <CharacterMale Value="Ala'yell" />
+    <CharacterMale Value="Ala'yith" />
+    <CharacterMale Value="Ala'yleth" />
+    <CharacterMale Value="Ala'yssa" />
+    <CharacterMale Value="Ala'yssil" />
+    <CharacterMale Value="Ala'ythien" />
+    <CharacterMale Value="Ala'yvenn" />
+    <CharacterMale Value="Alun'yell" />
+    <CharacterMale Value="Alun'yith" />
+    <CharacterMale Value="Alun'yleth" />
+    <CharacterMale Value="Alun'yssa" />
+    <CharacterMale Value="Alun'yssil" />
+    <CharacterMale Value="Alun'ythien" />
+    <CharacterMale Value="Alun'yvenn" />
+    <CharacterMale Value="Am'yell" />
+    <CharacterMale Value="Am'yith" />
+    <CharacterMale Value="Am'yleth" />
+    <CharacterMale Value="Am'yssa" />
+    <CharacterMale Value="Am'yssil" />
+    <CharacterMale Value="Am'ythien" />
+    <CharacterMale Value="Am'yvenn" />
+    <CharacterMale Value="Amu'yell" />
+    <CharacterMale Value="Amu'yith" />
+    <CharacterMale Value="Amu'yleth" />
+    <CharacterMale Value="Amu'yssa" />
+    <CharacterMale Value="Amu'yssil" />
+    <CharacterMale Value="Amu'ythien" />
+    <CharacterMale Value="Amu'yvenn" />
+    <CharacterMale Value="An'yell" />
+    <CharacterMale Value="An'yith" />
+    <CharacterMale Value="An'yleth" />
+    <CharacterMale Value="An'yssa" />
+    <CharacterMale Value="An'yssil" />
+    <CharacterMale Value="An'ythien" />
+    <CharacterMale Value="An'yvenn" />
+    <CharacterMale Value="Ana'yell" />
+    <CharacterMale Value="Ana'yith" />
+    <CharacterMale Value="Ana'yleth" />
+    <CharacterMale Value="Ana'yssa" />
+    <CharacterMale Value="Ana'yssil" />
+    <CharacterMale Value="Ana'ythien" />
+    <CharacterMale Value="Ana'yvenn" />
+    <CharacterMale Value="Ar'yell" />
+    <CharacterMale Value="Ar'yith" />
+    <CharacterMale Value="Ar'yleth" />
+    <CharacterMale Value="Ar'yssa" />
+    <CharacterMale Value="Ar'yssil" />
+    <CharacterMale Value="Ar'ythien," />
+    <CharacterMale Value="Ar'yvenn" />
+    <CharacterMale Value="Ari'yell" />
+    <CharacterMale Value="Ari'yith" />
+    <CharacterMale Value="Ari'yleth" />
+    <CharacterMale Value="Ari'yssa" />
+    <CharacterMale Value="Ari'yssil" />
+    <CharacterMale Value="Ari'ythien" />
+    <CharacterMale Value="Ari'yvenn" />
+    <CharacterMale Value="Aru'yell" />
+    <CharacterMale Value="Aru'yith" />
+    <CharacterMale Value="Aru'yleth" />
+    <CharacterMale Value="Aru'yssa" />
+    <CharacterMale Value="Aru'yssil" />
+    <CharacterMale Value="Aru'ythien" />
+    <CharacterMale Value="Aru'yvenn" />
+    <CharacterMale Value="Av'yell" />
+    <CharacterMale Value="Av'yith" />
+    <CharacterMale Value="Av'yleth" />
+    <CharacterMale Value="Av'yssa" />
+    <CharacterMale Value="Av'yssii" />
+    <CharacterMale Value="Av'ythien" />
+    <CharacterMale Value="Av'yvenn" />
     <CharacterMale Value="Eal'yell" />
     <CharacterMale Value="Eal'yith" />
     <CharacterMale Value="Eal'yleth" />
@@ -851,7 +851,7 @@
     <CharacterMale Value="Na'yssa" />
     <CharacterMale Value="Na'yssil" />
     <CharacterMale Value="Na'ythien" />
-    <CharacterMale Value="Na'yvenn" />
+    <CharacterMale Value="Na'venen" />
     <CharacterMale Value="Neh'yell" />
     <CharacterMale Value="Neh'yith" />
     <CharacterMale Value="Neh'yleth" />
@@ -908,111 +908,111 @@
     <CharacterMale Value="Nym'yssil" />
     <CharacterMale Value="Nym'ythien" />
     <CharacterMale Value="Nym'yvenn" />
-    <CharacterFemale Value="Ab’yell" />
-    <CharacterFemale Value="Ab’yith" />
-    <CharacterFemale Value="Ab’yleth" />
-    <CharacterFemale Value="Ab’yssa" />
-    <CharacterFemale Value="Ab’yssil" />
-    <CharacterFemale Value="Ab’ythien" />
-    <CharacterFemale Value="Ab’yvenn" />
-    <CharacterFemale Value="Ad’yell" />
-    <CharacterFemale Value="Ad’yith" />
-    <CharacterFemale Value="Ad’yleth" />
-    <CharacterFemale Value="Ad’yssa" />
-    <CharacterFemale Value="Ad’yssil" />
-    <CharacterFemale Value="Ad’ythien" />
-    <CharacterFemale Value="Ad’yvenn" />
-    <CharacterFemale Value="Adon’yell" />
-    <CharacterFemale Value="Adon’yith" />
-    <CharacterFemale Value="Adon’yleth" />
-    <CharacterFemale Value="Adon’yssa" />
-    <CharacterFemale Value="Adon’yssil" />
-    <CharacterFemale Value="Adon’ythien" />
-    <CharacterFemale Value="Adon’yvenn" />
-    <CharacterFemale Value="Ak’yell" />
-    <CharacterFemale Value="Ak’yith" />
-    <CharacterFemale Value="Ak’yleth" />
-    <CharacterFemale Value="Ak’yssa" />
-    <CharacterFemale Value="Ak’yssil" />
-    <CharacterFemale Value="Ak’ythien" />
-    <CharacterFemale Value="Ak’yvenn" />
-    <CharacterFemale Value="Al’yell" />
-    <CharacterFemale Value="Al’yith" />
-    <CharacterFemale Value="Al’yleth" />
-    <CharacterFemale Value="Al’yssa" />
-    <CharacterFemale Value="Al’yssil" />
-    <CharacterFemale Value="Al’ythien" />
-    <CharacterFemale Value="Al’yvenn" />
-    <CharacterFemale Value="Ala’yell" />
-    <CharacterFemale Value="Ala’yith" />
-    <CharacterFemale Value="Ala’yleth" />
-    <CharacterFemale Value="Ala’yssa" />
-    <CharacterFemale Value="Ala’yssil" />
-    <CharacterFemale Value="Ala’ythien" />
-    <CharacterFemale Value="Ala’yvenn" />
-    <CharacterFemale Value="Alun’yell" />
-    <CharacterFemale Value="Alun’yith" />
-    <CharacterFemale Value="Alun’yleth" />
-    <CharacterFemale Value="Alun’yssa" />
-    <CharacterFemale Value="Alun’yssil" />
-    <CharacterFemale Value="Alun’ythien" />
-    <CharacterFemale Value="Alun’yvenn" />
-    <CharacterFemale Value="Am’yell" />
-    <CharacterFemale Value="Am’yith" />
-    <CharacterFemale Value="Am’yleth" />
-    <CharacterFemale Value="Am’yssa" />
-    <CharacterFemale Value="Am’yssil" />
-    <CharacterFemale Value="Am’ythien" />
-    <CharacterFemale Value="Am’yvenn" />
-    <CharacterFemale Value="Amu’yell" />
-    <CharacterFemale Value="Amu’yith" />
-    <CharacterFemale Value="Amu’yleth" />
-    <CharacterFemale Value="Amu’yssa" />
-    <CharacterFemale Value="Amu’yssil" />
-    <CharacterFemale Value="Amu’ythien" />
-    <CharacterFemale Value="Amu’yvenn" />
-    <CharacterFemale Value="An’yell" />
-    <CharacterFemale Value="An’yith" />
-    <CharacterFemale Value="An’yleth" />
-    <CharacterFemale Value="An’yssa" />
-    <CharacterFemale Value="An’yssil" />
-    <CharacterFemale Value="An’ythien" />
-    <CharacterFemale Value="An’yvenn" />
-    <CharacterFemale Value="Ana’yell" />
-    <CharacterFemale Value="Ana’yith" />
-    <CharacterFemale Value="Ana’yleth" />
-    <CharacterFemale Value="Ana’yssa" />
-    <CharacterFemale Value="Ana’yssil" />
-    <CharacterFemale Value="Ana’ythien" />
-    <CharacterFemale Value="Ana’yvenn" />
-    <CharacterFemale Value="Ar’yell" />
-    <CharacterFemale Value="Ar’yith" />
-    <CharacterFemale Value="Ar’yleth" />
-    <CharacterFemale Value="Ar’yssa" />
-    <CharacterFemale Value="Ar’yssil" />
-    <CharacterFemale Value="Ar’ythien," />
-    <CharacterFemale Value="Ar’yvenn" />
-    <CharacterFemale Value="Ari’yell" />
-    <CharacterFemale Value="Ari’yith" />
-    <CharacterFemale Value="Ari’yleth" />
-    <CharacterFemale Value="Ari’yssa" />
-    <CharacterFemale Value="Ari’yssil" />
-    <CharacterFemale Value="Ari’ythien" />
-    <CharacterFemale Value="Ari’yvenn" />
-    <CharacterFemale Value="Aru’yell" />
-    <CharacterFemale Value="Aru’yith" />
-    <CharacterFemale Value="Aru’yleth" />
-    <CharacterFemale Value="Aru’yssa" />
-    <CharacterFemale Value="Aru’yssil" />
-    <CharacterFemale Value="Aru’ythien" />
-    <CharacterFemale Value="Aru’yvenn" />
-    <CharacterFemale Value="Av’yell" />
-    <CharacterFemale Value="Av’yith" />
-    <CharacterFemale Value="Av’yleth" />
-    <CharacterFemale Value="Av’yssa" />
-    <CharacterFemale Value="Av’yssii" />
-    <CharacterFemale Value="Av’ythien" />
-    <CharacterFemale Value="Av’yvenn" />
+    <CharacterFemale Value="Ab'yell" />
+    <CharacterFemale Value="Ab'yith" />
+    <CharacterFemale Value="Ab'yleth" />
+    <CharacterFemale Value="Ab'yssa" />
+    <CharacterFemale Value="Ab'yssil" />
+    <CharacterFemale Value="Ab'ythien" />
+    <CharacterFemale Value="Ab'yvenn" />
+    <CharacterFemale Value="Ad'yell" />
+    <CharacterFemale Value="Ad'yith" />
+    <CharacterFemale Value="Ad'yleth" />
+    <CharacterFemale Value="Ad'yssa" />
+    <CharacterFemale Value="Ad'yssil" />
+    <CharacterFemale Value="Ad'ythien" />
+    <CharacterFemale Value="Ad'yvenn" />
+    <CharacterFemale Value="Adon'yell" />
+    <CharacterFemale Value="Adon'yith" />
+    <CharacterFemale Value="Adon'yleth" />
+    <CharacterFemale Value="Adon'yssa" />
+    <CharacterFemale Value="Adon'yssil" />
+    <CharacterFemale Value="Adon'ythien" />
+    <CharacterFemale Value="Adon'yvenn" />
+    <CharacterFemale Value="Ak'yell" />
+    <CharacterFemale Value="Ak'yith" />
+    <CharacterFemale Value="Ak'yleth" />
+    <CharacterFemale Value="Ak'yssa" />
+    <CharacterFemale Value="Ak'yssil" />
+    <CharacterFemale Value="Ak'ythien" />
+    <CharacterFemale Value="Ak'yvenn" />
+    <CharacterFemale Value="Al'yell" />
+    <CharacterFemale Value="Al'yith" />
+    <CharacterFemale Value="Al'yleth" />
+    <CharacterFemale Value="Al'yssa" />
+    <CharacterFemale Value="Al'yssil" />
+    <CharacterFemale Value="Al'ythien" />
+    <CharacterFemale Value="Al'yvenn" />
+    <CharacterFemale Value="Ala'yell" />
+    <CharacterFemale Value="Ala'yith" />
+    <CharacterFemale Value="Ala'yleth" />
+    <CharacterFemale Value="Ala'yssa" />
+    <CharacterFemale Value="Ala'yssil" />
+    <CharacterFemale Value="Ala'ythien" />
+    <CharacterFemale Value="Ala'yvenn" />
+    <CharacterFemale Value="Alun'yell" />
+    <CharacterFemale Value="Alun'yith" />
+    <CharacterFemale Value="Alun'yleth" />
+    <CharacterFemale Value="Alun'yssa" />
+    <CharacterFemale Value="Alun'yssil" />
+    <CharacterFemale Value="Alun'ythien" />
+    <CharacterFemale Value="Alun'yvenn" />
+    <CharacterFemale Value="Am'yell" />
+    <CharacterFemale Value="Am'yith" />
+    <CharacterFemale Value="Am'yleth" />
+    <CharacterFemale Value="Am'yssa" />
+    <CharacterFemale Value="Am'yssil" />
+    <CharacterFemale Value="Am'ythien" />
+    <CharacterFemale Value="Am'yvenn" />
+    <CharacterFemale Value="Amu'yell" />
+    <CharacterFemale Value="Amu'yith" />
+    <CharacterFemale Value="Amu'yleth" />
+    <CharacterFemale Value="Amu'yssa" />
+    <CharacterFemale Value="Amu'yssil" />
+    <CharacterFemale Value="Amu'ythien" />
+    <CharacterFemale Value="Amu'yvenn" />
+    <CharacterFemale Value="An'yell" />
+    <CharacterFemale Value="An'yith" />
+    <CharacterFemale Value="An'yleth" />
+    <CharacterFemale Value="An'yssa" />
+    <CharacterFemale Value="An'yssil" />
+    <CharacterFemale Value="An'ythien" />
+    <CharacterFemale Value="An'yvenn" />
+    <CharacterFemale Value="Ana'yell" />
+    <CharacterFemale Value="Ana'yith" />
+    <CharacterFemale Value="Ana'yleth" />
+    <CharacterFemale Value="Ana'yssa" />
+    <CharacterFemale Value="Ana'yssil" />
+    <CharacterFemale Value="Ana'ythien" />
+    <CharacterFemale Value="Ana'yvenn" />
+    <CharacterFemale Value="Ar'yell" />
+    <CharacterFemale Value="Ar'yith" />
+    <CharacterFemale Value="Ar'yleth" />
+    <CharacterFemale Value="Ar'yssa" />
+    <CharacterFemale Value="Ar'yssil" />
+    <CharacterFemale Value="Ar'ythien," />
+    <CharacterFemale Value="Ar'yvenn" />
+    <CharacterFemale Value="Ari'yell" />
+    <CharacterFemale Value="Ari'yith" />
+    <CharacterFemale Value="Ari'yleth" />
+    <CharacterFemale Value="Ari'yssa" />
+    <CharacterFemale Value="Ari'yssil" />
+    <CharacterFemale Value="Ari'ythien" />
+    <CharacterFemale Value="Ari'yvenn" />
+    <CharacterFemale Value="Aru'yell" />
+    <CharacterFemale Value="Aru'yith" />
+    <CharacterFemale Value="Aru'yleth" />
+    <CharacterFemale Value="Aru'yssa" />
+    <CharacterFemale Value="Aru'yssil" />
+    <CharacterFemale Value="Aru'ythien" />
+    <CharacterFemale Value="Aru'yvenn" />
+    <CharacterFemale Value="Av'yell" />
+    <CharacterFemale Value="Av'yith" />
+    <CharacterFemale Value="Av'yleth" />
+    <CharacterFemale Value="Av'yssa" />
+    <CharacterFemale Value="Av'yssii" />
+    <CharacterFemale Value="Av'ythien" />
+    <CharacterFemale Value="Av'yvenn" />
     <CharacterFemale Value="Eal'yell" />
     <CharacterFemale Value="Eal'yith" />
     <CharacterFemale Value="Eal'yleth" />
@@ -1069,7 +1069,7 @@
     <CharacterFemale Value="Er'yssil" />
     <CharacterFemale Value="Er'ythien" />
     <CharacterFemale Value="Er'yvenn" />
-    <CharacterFemale Value="Ev'yell" />
+    <CharacterFemale Value="Jasne" />
     <CharacterFemale Value="Ev'yith" />
     <CharacterFemale Value="Ev'yleth" />
     <CharacterFemale Value="Ev'yssa" />
@@ -1110,7 +1110,7 @@
     <CharacterFemale Value="Na'yssa" />
     <CharacterFemale Value="Na'yssil" />
     <CharacterFemale Value="Na'ythien" />
-    <CharacterFemale Value="Na'yvenn" />
+    <CharacterFemale Value="Na'venen" />
     <CharacterFemale Value="Neh'yell" />
     <CharacterFemale Value="Neh'yith" />
     <CharacterFemale Value="Neh'yleth" />
@@ -1186,9 +1186,9 @@
     <CharacterMale Value="Meatbasher" />
     <CharacterMale Value="Limbslicer" />
     <CharacterMale Value="Fearbringer" />
-    <CharacterFemale Value="Bloodseeker" />
+    <CharacterFemale Value="Poszukiwacz krwi" />
     <CharacterFemale Value="Skullbasher" />
-    <CharacterFemale Value="Bruisebearer" />
+    <CharacterFemale Value="Poskramiacz" />
     <CharacterFemale Value="Deathlover" />
     <CharacterFemale Value="Widowmaker" />
     <CharacterFemale Value="Truthgiver" />
@@ -1211,29 +1211,29 @@
     <CharacterMale Value="Axeslicer" />
     <CharacterMale Value="Axelover" />
     <CharacterMale Value="Armbreaker" />
-    <CharacterMale Value="Armcrusher" />
+    <CharacterMale Value="Pancernik" />
     <CharacterMale Value="Armbasher" />
     <CharacterMale Value="Arntrasher" />
-    <CharacterMale Value="Armsbearer" />
+    <CharacterMale Value="Nosiciel broni" />
     <CharacterMale Value="Bloodmaker" />
-    <CharacterMale Value="Bloodtaker" />
-    <CharacterMale Value="Bloodgiver" />
-    <CharacterMale Value="Bloodbringer" />
-    <CharacterMale Value="Bloodkiller" />
-    <CharacterMale Value="Bloodseeker" />
+    <CharacterMale Value="Krwawiący" />
+    <CharacterMale Value="Dawca krwi" />
+    <CharacterMale Value="Przynoszący krew" />
+    <CharacterMale Value="Zabójca krwi" />
+    <CharacterMale Value="Poszukiwacz krwi" />
     <CharacterMale Value="Bloodbasher" />
     <CharacterMale Value="Bloodrunner" />
-    <CharacterMale Value="Bloodbearer" />
-    <CharacterMale Value="Bloodslayer" />
+    <CharacterMale Value="Niosący Krwi" />
+    <CharacterMale Value="Zabójca Krwi" />
     <CharacterMale Value="Bloodhacker" />
     <CharacterMale Value="Bloodlover" />
     <CharacterMale Value="Bruisemaker" />
     <CharacterMale Value="Bruisegiver" />
-    <CharacterMale Value="Bruisebearer" />
+    <CharacterMale Value="Strażnik siniaków" />
     <CharacterMale Value="Bruisetrasher" />
     <CharacterMale Value="Bruisebringer" />
     <CharacterMale Value="Beastmaker" />
-    <CharacterMale Value="Beastbreaker" />
+    <CharacterMale Value="Łamacz bestii" />
     <CharacterMale Value="Beastbringer" />
     <CharacterMale Value="Beastkiller" />
     <CharacterMale Value="Beastseeker" />
@@ -1241,7 +1241,7 @@
     <CharacterMale Value="Beasttrasher" />
     <CharacterMale Value="Beastcrusher" />
     <CharacterMale Value="Beastrunner" />
-    <CharacterMale Value="Beastslayer" />
+    <CharacterMale Value="Zabójca zwierząt" />
     <CharacterMale Value="Beathacker" />
     <CharacterMale Value="Beastslicer" />
     <CharacterMale Value="Beastlover" />
@@ -1252,34 +1252,34 @@
     <CharacterMale Value="Boarcrusher" />
     <CharacterMale Value="Boartrasher" />
     <CharacterMale Value="Boarbasher" />
-    <CharacterMale Value="Bearbreaker" />
+    <CharacterMale Value="Łamacz niedźwiedzi" />
     <CharacterMale Value="Bearkiller" />
     <CharacterMale Value="Bearslayer" />
     <CharacterMale Value="Bearbasher" />
-    <CharacterMale Value="Bearcrusher" />
+    <CharacterMale Value="Zbieracz niedźwiedzi" />
     <CharacterMale Value="Beartrasher" />
-    <CharacterMale Value="Bearseeker" />
+    <CharacterMale Value="Poszukiwacz niedźwiedzi" />
     <CharacterMale Value="Bearhacker" />
     <CharacterMale Value="Bearslicer" />
     <CharacterMale Value="Bearlover" />
-    <CharacterMale Value="Bonebreaker" />
+    <CharacterMale Value="Łamacz kości" />
     <CharacterMale Value="Bonebringer" />
     <CharacterMale Value="Bonekiller" />
     <CharacterMale Value="Boneseeker" />
     <CharacterMale Value="Bonecrusher" />
     <CharacterMale Value="Bonebasher" />
     <CharacterMale Value="Bonethrasher" />
-    <CharacterMale Value="Bonebearer" />
-    <CharacterMale Value="Boneslayer" />
+    <CharacterMale Value="Nosiciel kości" />
+    <CharacterMale Value="Zabójca kości" />
     <CharacterMale Value="Boneslicer" />
     <CharacterMale Value="Bonehacker" />
     <CharacterMale Value="Biesbreaker" />
     <CharacterMale Value="Bieskiller" />
     <CharacterMale Value="Biesslayer" />
     <CharacterMale Value="Biesbasher" />
-    <CharacterMale Value="Chainbreaker" />
-    <CharacterMale Value="Chainbringer" />
-    <CharacterMale Value="Chaincrusher" />
+    <CharacterMale Value="Łamacz łańcuchów" />
+    <CharacterMale Value="Łańcuchowiec" />
+    <CharacterMale Value="Łamacz łańcuchów" />
     <CharacterMale Value="Chainbasher" />
     <CharacterMale Value="Chainthrasher" />
     <CharacterMale Value="Chainslicer" />
@@ -1287,11 +1287,11 @@
     <CharacterMale Value="Crowslayer" />
     <CharacterMale Value="Crowbasher" />
     <CharacterMale Value="Crowrunner" />
-    <CharacterMale Value="Childmaker" />
-    <CharacterMale Value="Childtaker" />
+    <CharacterMale Value="Twórca dzieci" />
+    <CharacterMale Value="Opiekun dziecka" />
     <CharacterMale Value="Childgiver" />
-    <CharacterMale Value="Childcrusher" />
-    <CharacterMale Value="Childbringer" />
+    <CharacterMale Value="Dzieciątko" />
+    <CharacterMale Value="Dzieciak" />
     <CharacterMale Value="Demonbreaker" />
     <CharacterMale Value="Demonbringer" />
     <CharacterMale Value="Demonkiller" />
@@ -1307,23 +1307,23 @@
     <CharacterMale Value="Doomgiver" />
     <CharacterMale Value="Doombringer" />
     <CharacterMale Value="Doomseeker" />
-    <CharacterMale Value="Doombearer" />
+    <CharacterMale Value="Nosiciel Doomu" />
     <CharacterMale Value="Doomslayer" />
     <CharacterMale Value="Doomlover" />
     <CharacterMale Value="Deathmaker" />
-    <CharacterMale Value="Deathtaker" />
+    <CharacterMale Value="Zabójca" />
     <CharacterMale Value="Deathgiver" />
     <CharacterMale Value="Deathbringer" />
-    <CharacterMale Value="Deathseeker" />
+    <CharacterMale Value="Poszukiwacz śmierci" />
     <CharacterMale Value="Deathcrusher" />
     <CharacterMale Value="Deathrunner" />
-    <CharacterMale Value="Deathbearer" />
+    <CharacterMale Value="Niosący śmierć" />
     <CharacterMale Value="Deathlover" />
     <CharacterMale Value="Daybreaker" />
     <CharacterMale Value="Dayseeker" />
     <CharacterMale Value="Daythrasher" />
     <CharacterMale Value="Dayrunner" />
-    <CharacterMale Value="Dayslayer" />
+    <CharacterMale Value="Zabójca dni" />
     <CharacterMale Value="Dirtbringer" />
     <CharacterMale Value="Dirtgiver" />
     <CharacterMale Value="Darkmaker" />
@@ -1345,19 +1345,19 @@
     <CharacterMale Value="Dawnrunner" />
     <CharacterMale Value="Dawnbearer" />
     <CharacterMale Value="Dawnseeker" />
-    <CharacterMale Value="Dragonbreaker" />
+    <CharacterMale Value="Łamacz smoków" />
     <CharacterMale Value="Dragontaker" />
-    <CharacterMale Value="Dragonkiller" />
+    <CharacterMale Value="Smoczy Zabójca" />
     <CharacterMale Value="Dragonseeker" />
-    <CharacterMale Value="Dragoncrusher" />
+    <CharacterMale Value="Zbieracz smoków" />
     <CharacterMale Value="Dragonbasher" />
     <CharacterMale Value="Dragonthrasher" />
-    <CharacterMale Value="Dragonbearer" />
+    <CharacterMale Value="Nosiciel Smoka" />
     <CharacterMale Value="Dragonslicer" />
     <CharacterMale Value="Dragonhacker" />
     <CharacterMale Value="Dragonlover" />
     <CharacterMale Value="Dwarfbreaker" />
-    <CharacterMale Value="Dwarftaker" />
+    <CharacterMale Value="Krasnoludy" />
     <CharacterMale Value="Dwarfkiller" />
     <CharacterMale Value="Dwarfseeker" />
     <CharacterMale Value="Dwarfcrusher" />
@@ -1382,7 +1382,7 @@
     <CharacterMale Value="Elfhacker" />
     <CharacterMale Value="Firemaker" />
     <CharacterMale Value="Firebringer" />
-    <CharacterMale Value="Firetaker" />
+    <CharacterMale Value="Strażak" />
     <CharacterMale Value="Firegiver" />
     <CharacterMale Value="Firebreaker" />
     <CharacterMale Value="Fireseeker" />
@@ -1397,17 +1397,17 @@
     <CharacterMale Value="Fearmaker" />
     <CharacterMale Value="Fearbreaker" />
     <CharacterMale Value="Feartaker" />
-    <CharacterMale Value="Feargiver" />
-    <CharacterMale Value="fearbringer" />
+    <CharacterMale Value="Strachliwy" />
+    <CharacterMale Value="Pogromca strachu" />
     <CharacterMale Value="Fearkiller" />
     <CharacterMale Value="Fearseeker" />
     <CharacterMale Value="Fearcrusher" />
     <CharacterMale Value="Fearbasher" />
     <CharacterMale Value="Fearthrasher" />
-    <CharacterMale Value="Fearrunner" />
-    <CharacterMale Value="Fearslayer" />
+    <CharacterMale Value="Strachliwy" />
+    <CharacterMale Value="Straszny morderca" />
     <CharacterMale Value="Fearlover" />
-    <CharacterMale Value="Fightmaker" />
+    <CharacterMale Value="Walczący" />
     <CharacterMale Value="Fightbringer" />
     <CharacterMale Value="Fightlover" />
     <CharacterMale Value="Frostbreaker" />
@@ -1436,12 +1436,12 @@
     <CharacterMale Value="Godbringer" />
     <CharacterMale Value="Godseeker" />
     <CharacterMale Value="Godlover" />
-    <CharacterMale Value="Guiltmaker" />
-    <CharacterMale Value="Guilttaker" />
-    <CharacterMale Value="Guiltbreaker" />
+    <CharacterMale Value="Wytwórca winy" />
+    <CharacterMale Value="Winowajca" />
+    <CharacterMale Value="Łamacz winy" />
     <CharacterMale Value="Guiltgiver" />
     <CharacterMale Value="Guiltseeker" />
-    <CharacterMale Value="Guiltbearer" />
+    <CharacterMale Value="Nosiciel winy" />
     <CharacterMale Value="Groincrusher" />
     <CharacterMale Value="Groinbasher" />
     <CharacterMale Value="Groinslasher" />
@@ -1452,7 +1452,7 @@
     <CharacterMale Value="Gutbearer" />
     <CharacterMale Value="Gutslicer" />
     <CharacterMale Value="Gutlover" />
-    <CharacterMale Value="Ghostbreaker" />
+    <CharacterMale Value="Łamacz duchów" />
     <CharacterMale Value="Ghostbasher" />
     <CharacterMale Value="Ghostrunner" />
     <CharacterMale Value="Ghosthacker" />
@@ -1466,13 +1466,13 @@
     <CharacterMale Value="Honourbreaker" />
     <CharacterMale Value="Honourtaker" />
     <CharacterMale Value="Honourbringer" />
-    <CharacterMale Value="Honourbearer" />
-    <CharacterMale Value="Hammerbreaker" />
+    <CharacterMale Value="Nosicielka" />
+    <CharacterMale Value="Łamacz młotów" />
     <CharacterMale Value="Hammertaker" />
-    <CharacterMale Value="Hammercrusher" />
+    <CharacterMale Value="Młotowiertarka" />
     <CharacterMale Value="Hammerbasher" />
-    <CharacterMale Value="Hammerbearer" />
-    <CharacterMale Value="Hammerlover" />
+    <CharacterMale Value="Nosiciel młota" />
+    <CharacterMale Value="Młotowierca" />
     <CharacterMale Value="Hatemaker" />
     <CharacterMale Value="Hategiver" />
     <CharacterMale Value="Hatebreaker" />
@@ -1493,7 +1493,7 @@
     <CharacterMale Value="Jawslicer" />
     <CharacterMale Value="Jawthrasher" />
     <CharacterMale Value="Joybreaker" />
-    <CharacterMale Value="Joytaker" />
+    <CharacterMale Value="Radość" />
     <CharacterMale Value="Joykiller" />
     <CharacterMale Value="Joycrusher" />
     <CharacterMale Value="Joybasher" />
@@ -1519,7 +1519,7 @@
     <CharacterMale Value="Loveslayer" />
     <CharacterMale Value="Lovecrusher" />
     <CharacterMale Value="Lifemaker" />
-    <CharacterMale Value="Lifebreaker" />
+    <CharacterMale Value="Ratownik" />
     <CharacterMale Value="Lifetaker" />
     <CharacterMale Value="Lifegiver" />
     <CharacterMale Value="Lifeseeker" />
@@ -1530,7 +1530,7 @@
     <CharacterMale Value="Lointhrasher" />
     <CharacterMale Value="Loinseeker" />
     <CharacterMale Value="Limbbreaker" />
-    <CharacterMale Value="Limbcrusher" />
+    <CharacterMale Value="Pogrzebacz" />
     <CharacterMale Value="Limbbasher" />
     <CharacterMale Value="Limbthrasher" />
     <CharacterMale Value="Limbslicer" />
@@ -1540,11 +1540,11 @@
     <CharacterMale Value="Lustmaker" />
     <CharacterMale Value="Lavacrusher" />
     <CharacterMale Value="Lavarunner" />
-    <CharacterMale Value="Mithrilbreaker" />
+    <CharacterMale Value="Mitrilbreaker" />
     <CharacterMale Value="Mithrilcrusher" />
     <CharacterMale Value="Mithrilbasher" />
     <CharacterMale Value="Mithrillover" />
-    <CharacterMale Value="Meatbreaker" />
+    <CharacterMale Value="Łamacz mięsa" />
     <CharacterMale Value="Meatcrusher" />
     <CharacterMale Value="Meatbasher" />
     <CharacterMale Value="Meathacker" />
@@ -1556,13 +1556,13 @@
     <CharacterMale Value="Manlover" />
     <CharacterMale Value="Moonbreaker" />
     <CharacterMale Value="Moonbringer" />
-    <CharacterMale Value="Moonseeker" />
+    <CharacterMale Value="Księżycowy poszukiwacz" />
     <CharacterMale Value="Moonrunner" />
     <CharacterMale Value="Moonlover" />
     <CharacterMale Value="Nosebreaker" />
     <CharacterMale Value="Nosecrusher" />
     <CharacterMale Value="Nosebasher" />
-    <CharacterMale Value="Nutbreaker" />
+    <CharacterMale Value="Łamacz" />
     <CharacterMale Value="Nutbasher" />
     <CharacterMale Value="Nutcrusher" />
     <CharacterMale Value="Nutslicer" />
@@ -1579,14 +1579,14 @@
     <CharacterMale Value="Nimbleslicer" />
     <CharacterMale Value="Nimblehacker" />
     <CharacterMale Value="Nimblelover" />
-    <CharacterMale Value="Oathmaker" />
+    <CharacterMale Value="Przysmak" />
     <CharacterMale Value="Oathbreaker" />
-    <CharacterMale Value="Oathtaker" />
-    <CharacterMale Value="Oathgiver" />
+    <CharacterMale Value="Przysięga" />
+    <CharacterMale Value="Przysięga" />
     <CharacterMale Value="Oathkiller" />
     <CharacterMale Value="Oathseeker" />
     <CharacterMale Value="Oathcrusher" />
-    <CharacterMale Value="Oathbearer" />
+    <CharacterMale Value="Nosiciel" />
     <CharacterMale Value="Pridemaker" />
     <CharacterMale Value="Pridegiver" />
     <CharacterMale Value="Pridebearer" />
@@ -1604,62 +1604,62 @@
     <CharacterMale Value="Runebasher" />
     <CharacterMale Value="Runethrasher" />
     <CharacterMale Value="Ragemaker" />
-    <CharacterMale Value="Ragebreaker" />
+    <CharacterMale Value="Niszczyciel" />
     <CharacterMale Value="Ragecrusher" />
-    <CharacterMale Value="Ragebearer" />
+    <CharacterMale Value="Nosiciel wściekłości" />
     <CharacterMale Value="Ragerunner" />
     <CharacterMale Value="Ragelover" />
     <CharacterMale Value="Starmaker" />
     <CharacterMale Value="Starbreaker" />
-    <CharacterMale Value="Starbringer" />
+    <CharacterMale Value="Gwiazdor" />
     <CharacterMale Value="Starkiller" />
     <CharacterMale Value="Starseeker" />
     <CharacterMale Value="Starcrusher" />
     <CharacterMale Value="Starbasher" />
     <CharacterMale Value="STarThrasher" />
     <CharacterMale Value="Starrunner" />
-    <CharacterMale Value="Starbearer" />
-    <CharacterMale Value="Starslayer" />
+    <CharacterMale Value="Nosiciel" />
+    <CharacterMale Value="Gwiazdozbiór" />
     <CharacterMale Value="Starslicer" />
     <CharacterMale Value="Starlover" />
     <CharacterMale Value="Screammaker" />
     <CharacterMale Value="Screamgiver" />
-    <CharacterMale Value="Screambringer" />
+    <CharacterMale Value="Śpiewak" />
     <CharacterMale Value="Screamrunner" />
     <CharacterMale Value="Screambearer" />
-    <CharacterMale Value="Swordbreaker" />
+    <CharacterMale Value="Łamacz miecza" />
     <CharacterMale Value="Swordtaker" />
     <CharacterMale Value="Swordkiller" />
-    <CharacterMale Value="Swordcrusher" />
-    <CharacterMale Value="Swordbearer" />
+    <CharacterMale Value="Miecznik" />
+    <CharacterMale Value="Miecznik" />
     <CharacterMale Value="Swordlover" />
-    <CharacterMale Value="Spearbreaker" />
+    <CharacterMale Value="Łamacz włóczni" />
     <CharacterMale Value="Speartaker" />
     <CharacterMale Value="Spearkiller" />
-    <CharacterMale Value="Spearcrusher" />
-    <CharacterMale Value="Spearbearer" />
+    <CharacterMale Value="Łowca włóczni" />
+    <CharacterMale Value="Nosiciel włóczni" />
     <CharacterMale Value="Spearlover" />
-    <CharacterMale Value="Spellbreaker" />
-    <CharacterMale Value="Spellkiller" />
+    <CharacterMale Value="Łamacz czarów" />
+    <CharacterMale Value="Zabójca czarów" />
     <CharacterMale Value="Spellcrusher" />
-    <CharacterMale Value="Spellslayer" />
+    <CharacterMale Value="Zabójca zaklęć" />
     <CharacterMale Value="Shamemaker" />
-    <CharacterMale Value="Shamebreaker" />
+    <CharacterMale Value="Łamacz wstydu" />
     <CharacterMale Value="Shamegiver" />
-    <CharacterMale Value="Shamebringer" />
-    <CharacterMale Value="Shamebearer" />
-    <CharacterMale Value="Steelbreaker" />
+    <CharacterMale Value="Nosiciel wstydu" />
+    <CharacterMale Value="Nosiciel wstydu" />
+    <CharacterMale Value="Łamacz stali" />
     <CharacterMale Value="Steelcrusher" />
     <CharacterMale Value="Steelslicer" />
     <CharacterMale Value="Steelhacker" />
     <CharacterMale Value="Steelbringer" />
-    <CharacterMale Value="Stealbearer" />
+    <CharacterMale Value="Kradzież krwi" />
     <CharacterMale Value="Shieldbreaker" />
     <CharacterMale Value="Shieldtaker" />
     <CharacterMale Value="Shieldcrusher" />
     <CharacterMale Value="Shieldbasher" />
     <CharacterMale Value="Shieldthrasher" />
-    <CharacterMale Value="Shieldbearer" />
+    <CharacterMale Value="Nosiciel tarczy" />
     <CharacterMale Value="Shieldslicer" />
     <CharacterMale Value="Shieldlover" />
     <CharacterMale Value="Sunbringer" />
@@ -1668,12 +1668,12 @@
     <CharacterMale Value="Stonebreaker" />
     <CharacterMale Value="Stonekiller" />
     <CharacterMale Value="Stonecrusher" />
-    <CharacterMale Value="Shadowbringer" />
+    <CharacterMale Value="Nosiciel Cienia" />
     <CharacterMale Value="Shadowbreaker" />
-    <CharacterMale Value="Shadowkiller" />
+    <CharacterMale Value="Zabójca Cienia" />
     <CharacterMale Value="Shadowslicer" />
-    <CharacterMale Value="SHadowhacker" />
-    <CharacterMale Value="Shadowbearer" />
+    <CharacterMale Value="Shadowhacker" />
+    <CharacterMale Value="Nosiciel Cienia" />
     <CharacterMale Value="Shadowmaker" />
     <CharacterMale Value="Trollbreaker" />
     <CharacterMale Value="Trolltaker" />
@@ -1681,15 +1681,15 @@
     <CharacterMale Value="Trollseeker" />
     <CharacterMale Value="Trollcrusher" />
     <CharacterMale Value="Trolllover" />
-    <CharacterMale Value="Troublemaker" />
+    <CharacterMale Value="Wichrzyciel" />
     <CharacterMale Value="Troubletaker" />
     <CharacterMale Value="Troubleseeker" />
     <CharacterMale Value="Truthgiver" />
     <CharacterMale Value="Truthseeker" />
     <CharacterMale Value="Truthbasher" />
-    <CharacterMale Value="Truthbearer" />
+    <CharacterMale Value="Nosiciel prawdy" />
     <CharacterMale Value="Towerbreaker" />
-    <CharacterMale Value="Towercrusher" />
+    <CharacterMale Value="Poganiacz wież" />
     <CharacterMale Value="Umbrageslayer" />
     <CharacterMale Value="Umbragecrusher" />
     <CharacterMale Value="Umbragebasher" />
@@ -1700,7 +1700,7 @@
     <CharacterMale Value="Vengencegiver" />
     <CharacterMale Value="Vengenceseeker" />
     <CharacterMale Value="Vengencelover" />
-    <CharacterMale Value="Vengencebearer" />
+    <CharacterMale Value="Nosiciel powagi" />
     <CharacterMale Value="Widowmaker" />
     <CharacterMale Value="Widowtaker" />
     <CharacterMale Value="Widowslayer" />
@@ -1714,22 +1714,22 @@
     <CharacterMale Value="Wraithcrusher" />
     <CharacterMale Value="Wraithslicer" />
     <CharacterMale Value="Wrathmaker" />
-    <CharacterMale Value="Wrathbringer" />
-    <CharacterMale Value="Wrathgiver" />
-    <CharacterMale Value="Wrathseeker" />
-    <CharacterMale Value="Wrathlover" />
-    <CharacterMale Value="Wrathtaker" />
+    <CharacterMale Value="Pogromca gniewu" />
+    <CharacterMale Value="Złodziej gniewu" />
+    <CharacterMale Value="Poszukiwacz gniewu" />
+    <CharacterMale Value="Pokłon Gniewu" />
+    <CharacterMale Value="Gniewnik" />
     <CharacterMale Value="Warmaker" />
     <CharacterMale Value="Wargiver" />
     <CharacterMale Value="Warbreaker" />
-    <CharacterMale Value="Warbringer" />
+    <CharacterMale Value="Wojownik" />
     <CharacterMale Value="Warcrusher" />
     <CharacterMale Value="Warlover" />
     <CharacterMale Value="Warseeker" />
-    <CharacterMale Value="Warbearer" />
+    <CharacterMale Value="Niosący wojnę" />
     <CharacterMale Value="Wolfseeker" />
-    <CharacterMale Value="Wolfslayer" />
-    <CharacterMale Value="Wolfbearer" />
+    <CharacterMale Value="Wilczyca" />
+    <CharacterMale Value="Nosiciel wilka" />
     <CharacterMale Value="Zmeybreaker" />
     <CharacterMale Value="Zmeytaker" />
     <CharacterMale Value="Zmeykiller" />
@@ -1757,22 +1757,22 @@
     <CharacterFemale Value="Armcrusher" />
     <CharacterFemale Value="Armbasher" />
     <CharacterFemale Value="Arntrasher" />
-    <CharacterFemale Value="Armsbearer" />
-    <CharacterFemale Value="Bloodmaker" />
+    <CharacterFemale Value="Nosiciel broni" />
+    <CharacterFemale Value="Wytwórca krwi" />
     <CharacterFemale Value="Bloodtaker" />
-    <CharacterFemale Value="Bloodgiver" />
-    <CharacterFemale Value="Bloodbringer" />
-    <CharacterFemale Value="Bloodkiller" />
-    <CharacterFemale Value="Bloodseeker" />
+    <CharacterFemale Value="Dawca krwi" />
+    <CharacterFemale Value="Przynoszący krew" />
+    <CharacterFemale Value="Krwawy zabójca" />
+    <CharacterFemale Value="Poszukiwacz krwi" />
     <CharacterFemale Value="Bloodbasher" />
     <CharacterFemale Value="Bloodrunner" />
-    <CharacterFemale Value="Bloodbearer" />
+    <CharacterFemale Value="Niosący Krwi" />
     <CharacterFemale Value="Bloodslayer" />
     <CharacterFemale Value="Bloodhacker" />
     <CharacterFemale Value="Bloodlover" />
     <CharacterFemale Value="Bruisemaker" />
     <CharacterFemale Value="Bruisegiver" />
-    <CharacterFemale Value="Bruisebearer" />
+    <CharacterFemale Value="Strażnik siniaków" />
     <CharacterFemale Value="Bruisetrasher" />
     <CharacterFemale Value="Bruisebringer" />
     <CharacterFemale Value="Beastmaker" />
@@ -1784,7 +1784,7 @@
     <CharacterFemale Value="Beasttrasher" />
     <CharacterFemale Value="Beastcrusher" />
     <CharacterFemale Value="Beastrunner" />
-    <CharacterFemale Value="Beastslayer" />
+    <CharacterFemale Value="Zabójca zwierząt" />
     <CharacterFemale Value="Beathacker" />
     <CharacterFemale Value="Beastslicer" />
     <CharacterFemale Value="Beastlover" />
@@ -1795,34 +1795,34 @@
     <CharacterFemale Value="Boarcrusher" />
     <CharacterFemale Value="Boartrasher" />
     <CharacterFemale Value="Boarbasher" />
-    <CharacterFemale Value="Bearbreaker" />
+    <CharacterFemale Value="Łamacz niedźwiedzi" />
     <CharacterFemale Value="Bearkiller" />
-    <CharacterFemale Value="Bearslayer" />
+    <CharacterFemale Value="Zabójca niedźwiedzi" />
     <CharacterFemale Value="Bearbasher" />
-    <CharacterFemale Value="Bearcrusher" />
+    <CharacterFemale Value="Zbieracz niedźwiedzi" />
     <CharacterFemale Value="Beartrasher" />
     <CharacterFemale Value="Bearseeker" />
-    <CharacterFemale Value="Bearhacker" />
+    <CharacterFemale Value="Niedźwiadek" />
     <CharacterFemale Value="Bearslicer" />
     <CharacterFemale Value="Bearlover" />
-    <CharacterFemale Value="Bonebreaker" />
+    <CharacterFemale Value="Łamacz kości" />
     <CharacterFemale Value="Bonebringer" />
     <CharacterFemale Value="Bonekiller" />
     <CharacterFemale Value="Boneseeker" />
     <CharacterFemale Value="Bonecrusher" />
     <CharacterFemale Value="Bonebasher" />
     <CharacterFemale Value="Bonethrasher" />
-    <CharacterFemale Value="Bonebearer" />
-    <CharacterFemale Value="Boneslayer" />
+    <CharacterFemale Value="Nosiciel kości" />
+    <CharacterFemale Value="Zabójca kości" />
     <CharacterFemale Value="Boneslicer" />
     <CharacterFemale Value="Bonehacker" />
     <CharacterFemale Value="Biesbreaker" />
     <CharacterFemale Value="Bieskiller" />
     <CharacterFemale Value="Biesslayer" />
     <CharacterFemale Value="Biesbasher" />
-    <CharacterFemale Value="Chainbreaker" />
-    <CharacterFemale Value="Chainbringer" />
-    <CharacterFemale Value="Chaincrusher" />
+    <CharacterFemale Value="Łamacz łańcuchów" />
+    <CharacterFemale Value="Łańcuchowiec" />
+    <CharacterFemale Value="Łowca łańcuchów" />
     <CharacterFemale Value="Chainbasher" />
     <CharacterFemale Value="Chainthrasher" />
     <CharacterFemale Value="Chainslicer" />
@@ -1830,11 +1830,11 @@
     <CharacterFemale Value="Crowslayer" />
     <CharacterFemale Value="Crowbasher" />
     <CharacterFemale Value="Crowrunner" />
-    <CharacterFemale Value="Childmaker" />
-    <CharacterFemale Value="Childtaker" />
+    <CharacterFemale Value="Twórca dzieci" />
+    <CharacterFemale Value="Opiekunka do dzieci" />
     <CharacterFemale Value="Childgiver" />
-    <CharacterFemale Value="Childcrusher" />
-    <CharacterFemale Value="Childbringer" />
+    <CharacterFemale Value="Opiekunka do dzieci" />
+    <CharacterFemale Value="Dzieciak" />
     <CharacterFemale Value="Demonbreaker" />
     <CharacterFemale Value="Demonbringer" />
     <CharacterFemale Value="Demonkiller" />
@@ -1850,23 +1850,23 @@
     <CharacterFemale Value="Doomgiver" />
     <CharacterFemale Value="Doombringer" />
     <CharacterFemale Value="Doomseeker" />
-    <CharacterFemale Value="Doombearer" />
+    <CharacterFemale Value="Nosiciel Doomu" />
     <CharacterFemale Value="Doomslayer" />
     <CharacterFemale Value="Doomlover" />
     <CharacterFemale Value="Deathmaker" />
-    <CharacterFemale Value="Deathtaker" />
-    <CharacterFemale Value="Deathgiver" />
+    <CharacterFemale Value="Zabójca" />
+    <CharacterFemale Value="Dawca śmierci" />
     <CharacterFemale Value="Deathbringer" />
-    <CharacterFemale Value="Deathseeker" />
+    <CharacterFemale Value="Poszukiwacz śmierci" />
     <CharacterFemale Value="Deathcrusher" />
     <CharacterFemale Value="Deathrunner" />
-    <CharacterFemale Value="Deathbearer" />
+    <CharacterFemale Value="Niosący śmierć" />
     <CharacterFemale Value="Deathlover" />
     <CharacterFemale Value="Daybreaker" />
     <CharacterFemale Value="Dayseeker" />
     <CharacterFemale Value="Daythrasher" />
     <CharacterFemale Value="Dayrunner" />
-    <CharacterFemale Value="Dayslayer" />
+    <CharacterFemale Value="Zabójca dni" />
     <CharacterFemale Value="Dirtbringer" />
     <CharacterFemale Value="Dirtgiver" />
     <CharacterFemale Value="Darkmaker" />
@@ -1888,19 +1888,19 @@
     <CharacterFemale Value="Dawnrunner" />
     <CharacterFemale Value="Dawnbearer" />
     <CharacterFemale Value="Dawnseeker" />
-    <CharacterFemale Value="Dragonbreaker" />
+    <CharacterFemale Value="Łamacz smoków" />
     <CharacterFemale Value="Dragontaker" />
     <CharacterFemale Value="Dragonkiller" />
     <CharacterFemale Value="Dragonseeker" />
-    <CharacterFemale Value="Dragoncrusher" />
+    <CharacterFemale Value="Zbieracz smoków" />
     <CharacterFemale Value="Dragonbasher" />
     <CharacterFemale Value="Dragonthrasher" />
-    <CharacterFemale Value="Dragonbearer" />
+    <CharacterFemale Value="Nosiciel Smoka" />
     <CharacterFemale Value="Dragonslicer" />
     <CharacterFemale Value="Dragonhacker" />
     <CharacterFemale Value="Dragonlover" />
     <CharacterFemale Value="Dwarfbreaker" />
-    <CharacterFemale Value="Dwarftaker" />
+    <CharacterFemale Value="Krasnoludy" />
     <CharacterFemale Value="Dwarfkiller" />
     <CharacterFemale Value="Dwarfseeker" />
     <CharacterFemale Value="Dwarfcrusher" />
@@ -1925,11 +1925,11 @@
     <CharacterFemale Value="Elfhacker" />
     <CharacterFemale Value="Firemaker" />
     <CharacterFemale Value="Firebringer" />
-    <CharacterFemale Value="Firetaker" />
+    <CharacterFemale Value="Strażak" />
     <CharacterFemale Value="Firegiver" />
     <CharacterFemale Value="Firebreaker" />
     <CharacterFemale Value="Fireseeker" />
-    <CharacterFemale Value="Firecrusher" />
+    <CharacterFemale Value="Zbieracz ognia" />
     <CharacterFemale Value="Firethrasher" />
     <CharacterFemale Value="Firerunner" />
     <CharacterFemale Value="Firehacker" />
@@ -1938,19 +1938,19 @@
     <CharacterFemale Value="Fistbringer" />
     <CharacterFemale Value="Fistbasher" />
     <CharacterFemale Value="Fearmaker" />
-    <CharacterFemale Value="Fearbreaker" />
+    <CharacterFemale Value="Przerażający" />
     <CharacterFemale Value="Feartaker" />
-    <CharacterFemale Value="Feargiver" />
-    <CharacterFemale Value="fearbringer" />
+    <CharacterFemale Value="Strachliwy" />
+    <CharacterFemale Value="Pogromca strachu" />
     <CharacterFemale Value="Fearkiller" />
     <CharacterFemale Value="Fearseeker" />
     <CharacterFemale Value="Fearcrusher" />
     <CharacterFemale Value="Fearbasher" />
     <CharacterFemale Value="Fearthrasher" />
     <CharacterFemale Value="Fearrunner" />
-    <CharacterFemale Value="Fearslayer" />
+    <CharacterFemale Value="Straszny morderca" />
     <CharacterFemale Value="Fearlover" />
-    <CharacterFemale Value="Fightmaker" />
+    <CharacterFemale Value="Walczący" />
     <CharacterFemale Value="Fightbringer" />
     <CharacterFemale Value="Fightlover" />
     <CharacterFemale Value="Frostbreaker" />
@@ -1979,12 +1979,12 @@
     <CharacterFemale Value="Godbringer" />
     <CharacterFemale Value="Godseeker" />
     <CharacterFemale Value="Godlover" />
-    <CharacterFemale Value="Guiltmaker" />
-    <CharacterFemale Value="Guilttaker" />
+    <CharacterFemale Value="Wytwórca winy" />
+    <CharacterFemale Value="Winowajca" />
     <CharacterFemale Value="Guiltbreaker" />
     <CharacterFemale Value="Guiltgiver" />
     <CharacterFemale Value="Guiltseeker" />
-    <CharacterFemale Value="Guiltbearer" />
+    <CharacterFemale Value="Strażnik winy" />
     <CharacterFemale Value="Groincrusher" />
     <CharacterFemale Value="Groinbasher" />
     <CharacterFemale Value="Groinslasher" />
@@ -1995,7 +1995,7 @@
     <CharacterFemale Value="Gutbearer" />
     <CharacterFemale Value="Gutslicer" />
     <CharacterFemale Value="Gutlover" />
-    <CharacterFemale Value="Ghostbreaker" />
+    <CharacterFemale Value="Łamacz duchów" />
     <CharacterFemale Value="Ghostbasher" />
     <CharacterFemale Value="Ghostrunner" />
     <CharacterFemale Value="Ghosthacker" />
@@ -2009,8 +2009,8 @@
     <CharacterFemale Value="Honourbreaker" />
     <CharacterFemale Value="Honourtaker" />
     <CharacterFemale Value="Honourbringer" />
-    <CharacterFemale Value="Honourbearer" />
-    <CharacterFemale Value="Hammerbreaker" />
+    <CharacterFemale Value="Czcigodny" />
+    <CharacterFemale Value="Łamacz młotów" />
     <CharacterFemale Value="Hammertaker" />
     <CharacterFemale Value="Hammercrusher" />
     <CharacterFemale Value="Hammerbasher" />
@@ -2036,7 +2036,7 @@
     <CharacterFemale Value="Jawslicer" />
     <CharacterFemale Value="Jawthrasher" />
     <CharacterFemale Value="Joybreaker" />
-    <CharacterFemale Value="Joytaker" />
+    <CharacterFemale Value="Radość" />
     <CharacterFemale Value="Joykiller" />
     <CharacterFemale Value="Joycrusher" />
     <CharacterFemale Value="Joybasher" />
@@ -2083,11 +2083,11 @@
     <CharacterFemale Value="Lustmaker" />
     <CharacterFemale Value="Lavacrusher" />
     <CharacterFemale Value="Lavarunner" />
-    <CharacterFemale Value="Mithrilbreaker" />
+    <CharacterFemale Value="Mitrilbreaker" />
     <CharacterFemale Value="Mithrilcrusher" />
     <CharacterFemale Value="Mithrilbasher" />
     <CharacterFemale Value="Mithrillover" />
-    <CharacterFemale Value="Meatbreaker" />
+    <CharacterFemale Value="Łamacz mięsa" />
     <CharacterFemale Value="Meatcrusher" />
     <CharacterFemale Value="Meatbasher" />
     <CharacterFemale Value="Meathacker" />
@@ -2122,14 +2122,14 @@
     <CharacterFemale Value="Nimbleslicer" />
     <CharacterFemale Value="Nimblehacker" />
     <CharacterFemale Value="Nimblelover" />
-    <CharacterFemale Value="Oathmaker" />
+    <CharacterFemale Value="Przysmak" />
     <CharacterFemale Value="Oathbreaker" />
-    <CharacterFemale Value="Oathtaker" />
-    <CharacterFemale Value="Oathgiver" />
+    <CharacterFemale Value="Przysięga" />
+    <CharacterFemale Value="Przysięga" />
     <CharacterFemale Value="Oathkiller" />
     <CharacterFemale Value="Oathseeker" />
     <CharacterFemale Value="Oathcrusher" />
-    <CharacterFemale Value="Oathbearer" />
+    <CharacterFemale Value="Nosiciel" />
     <CharacterFemale Value="Pridemaker" />
     <CharacterFemale Value="Pridegiver" />
     <CharacterFemale Value="Pridebearer" />
@@ -2149,60 +2149,60 @@
     <CharacterFemale Value="Ragemaker" />
     <CharacterFemale Value="Ragebreaker" />
     <CharacterFemale Value="Ragecrusher" />
-    <CharacterFemale Value="Ragebearer" />
+    <CharacterFemale Value="Nosiciel wściekłości" />
     <CharacterFemale Value="Ragerunner" />
     <CharacterFemale Value="Ragelover" />
     <CharacterFemale Value="Starmaker" />
     <CharacterFemale Value="Starbreaker" />
-    <CharacterFemale Value="Starbringer" />
+    <CharacterFemale Value="Gwiazdor" />
     <CharacterFemale Value="Starkiller" />
     <CharacterFemale Value="Starseeker" />
     <CharacterFemale Value="Starcrusher" />
     <CharacterFemale Value="Starbasher" />
     <CharacterFemale Value="STarThrasher" />
     <CharacterFemale Value="Starrunner" />
-    <CharacterFemale Value="Starbearer" />
+    <CharacterFemale Value="Nosiciel" />
     <CharacterFemale Value="Starslayer" />
     <CharacterFemale Value="Starslicer" />
     <CharacterFemale Value="Starlover" />
     <CharacterFemale Value="Screammaker" />
     <CharacterFemale Value="Screamgiver" />
-    <CharacterFemale Value="Screambringer" />
+    <CharacterFemale Value="Śpiewak" />
     <CharacterFemale Value="Screamrunner" />
-    <CharacterFemale Value="Screambearer" />
+    <CharacterFemale Value="Podstęp" />
     <CharacterFemale Value="Swordbreaker" />
     <CharacterFemale Value="Swordtaker" />
     <CharacterFemale Value="Swordkiller" />
-    <CharacterFemale Value="Swordcrusher" />
-    <CharacterFemale Value="Swordbearer" />
+    <CharacterFemale Value="Miecznik" />
+    <CharacterFemale Value="Miecznik" />
     <CharacterFemale Value="Swordlover" />
     <CharacterFemale Value="Spearbreaker" />
     <CharacterFemale Value="Speartaker" />
     <CharacterFemale Value="Spearkiller" />
     <CharacterFemale Value="Spearcrusher" />
-    <CharacterFemale Value="Spearbearer" />
+    <CharacterFemale Value="Nosiciel włóczni" />
     <CharacterFemale Value="Spearlover" />
-    <CharacterFemale Value="Spellbreaker" />
+    <CharacterFemale Value="Łamacz czarów" />
     <CharacterFemale Value="Spellkiller" />
     <CharacterFemale Value="Spellcrusher" />
-    <CharacterFemale Value="Spellslayer" />
+    <CharacterFemale Value="Zabójca czarów" />
     <CharacterFemale Value="Shamemaker" />
-    <CharacterFemale Value="Shamebreaker" />
+    <CharacterFemale Value="Łamacz wstydu" />
     <CharacterFemale Value="Shamegiver" />
-    <CharacterFemale Value="Shamebringer" />
-    <CharacterFemale Value="Shamebearer" />
-    <CharacterFemale Value="Steelbreaker" />
+    <CharacterFemale Value="Nosiciel wstydu" />
+    <CharacterFemale Value="Nosiciel wstydu" />
+    <CharacterFemale Value="Łamacz stali" />
     <CharacterFemale Value="Steelcrusher" />
     <CharacterFemale Value="Steelslicer" />
     <CharacterFemale Value="Steelhacker" />
     <CharacterFemale Value="Steelbringer" />
-    <CharacterFemale Value="Stealbearer" />
+    <CharacterFemale Value="Kradzież krwi" />
     <CharacterFemale Value="Shieldbreaker" />
     <CharacterFemale Value="Shieldtaker" />
     <CharacterFemale Value="Shieldcrusher" />
     <CharacterFemale Value="Shieldbasher" />
     <CharacterFemale Value="Shieldthrasher" />
-    <CharacterFemale Value="Shieldbearer" />
+    <CharacterFemale Value="Nosiciel tarczy" />
     <CharacterFemale Value="Shieldslicer" />
     <CharacterFemale Value="Shieldlover" />
     <CharacterFemale Value="Sunbringer" />
@@ -2211,12 +2211,12 @@
     <CharacterFemale Value="Stonebreaker" />
     <CharacterFemale Value="Stonekiller" />
     <CharacterFemale Value="Stonecrusher" />
-    <CharacterFemale Value="Shadowbringer" />
+    <CharacterFemale Value="Nosiciel Cienia" />
     <CharacterFemale Value="Shadowbreaker" />
     <CharacterFemale Value="Shadowkiller" />
     <CharacterFemale Value="Shadowslicer" />
-    <CharacterFemale Value="SHadowhacker" />
-    <CharacterFemale Value="Shadowbearer" />
+    <CharacterFemale Value="Shadowhacker" />
+    <CharacterFemale Value="Nosiciel Cienia" />
     <CharacterFemale Value="Shadowmaker" />
     <CharacterFemale Value="Trollbreaker" />
     <CharacterFemale Value="Trolltaker" />
@@ -2224,15 +2224,15 @@
     <CharacterFemale Value="Trollseeker" />
     <CharacterFemale Value="Trollcrusher" />
     <CharacterFemale Value="Trolllover" />
-    <CharacterFemale Value="Troublemaker" />
+    <CharacterFemale Value="Wichrzyciel" />
     <CharacterFemale Value="Troubletaker" />
     <CharacterFemale Value="Troubleseeker" />
     <CharacterFemale Value="Truthgiver" />
-    <CharacterFemale Value="Truthseeker" />
+    <CharacterFemale Value="Badacz prawdy" />
     <CharacterFemale Value="Truthbasher" />
-    <CharacterFemale Value="Truthbearer" />
+    <CharacterFemale Value="Nosiciel prawdy" />
     <CharacterFemale Value="Towerbreaker" />
-    <CharacterFemale Value="Towercrusher" />
+    <CharacterFemale Value="Zagniatacz wieży" />
     <CharacterFemale Value="Umbrageslayer" />
     <CharacterFemale Value="Umbragecrusher" />
     <CharacterFemale Value="Umbragebasher" />
@@ -2243,7 +2243,7 @@
     <CharacterFemale Value="Vengencegiver" />
     <CharacterFemale Value="Vengenceseeker" />
     <CharacterFemale Value="Vengencelover" />
-    <CharacterFemale Value="Vengencebearer" />
+    <CharacterFemale Value="Vengencearearer" />
     <CharacterFemale Value="Widowmaker" />
     <CharacterFemale Value="Widowtaker" />
     <CharacterFemale Value="Widowslayer" />
@@ -2257,22 +2257,22 @@
     <CharacterFemale Value="Wraithcrusher" />
     <CharacterFemale Value="Wraithslicer" />
     <CharacterFemale Value="Wrathmaker" />
-    <CharacterFemale Value="Wrathbringer" />
-    <CharacterFemale Value="Wrathgiver" />
-    <CharacterFemale Value="Wrathseeker" />
+    <CharacterFemale Value="Pogromca gniewu" />
+    <CharacterFemale Value="Złodziej gniewu" />
+    <CharacterFemale Value="Poszukiwacz gniewu" />
     <CharacterFemale Value="Wrathlover" />
-    <CharacterFemale Value="Wrathtaker" />
+    <CharacterFemale Value="Gniewnik" />
     <CharacterFemale Value="Warmaker" />
     <CharacterFemale Value="Wargiver" />
     <CharacterFemale Value="Warbreaker" />
-    <CharacterFemale Value="Warbringer" />
+    <CharacterFemale Value="Wojownik" />
     <CharacterFemale Value="Warcrusher" />
     <CharacterFemale Value="Warlover" />
     <CharacterFemale Value="Warseeker" />
-    <CharacterFemale Value="Warbearer" />
+    <CharacterFemale Value="Wojownik" />
     <CharacterFemale Value="Wolfseeker" />
-    <CharacterFemale Value="Wolfslayer" />
-    <CharacterFemale Value="Wolfbearer" />
+    <CharacterFemale Value="Zabójca wilków" />
+    <CharacterFemale Value="Nosiciel wilka" />
     <CharacterFemale Value="Zmeybreaker" />
     <CharacterFemale Value="Zmeytaker" />
     <CharacterFemale Value="Zmeykiller" />
@@ -2289,10 +2289,10 @@
     <Subrace Value="SUBRACE-ORC_PLODDER_CRAFTSMAN" />
     <Subrace Value="SUBRACE-ORC_PLODDER_GATHERER" />
     <CharacterMale Value="Axemaker" />
-    <CharacterMale Value="Armsgiver" />
+    <CharacterMale Value="Armator broni" />
     <CharacterMale Value="Armsmaker" />
-    <CharacterMale Value="Axegiver" />
-    <CharacterMale Value="Bookmaker" />
+    <CharacterMale Value="Osiągacz" />
+    <CharacterMale Value="Bukmacher" />
     <CharacterMale Value="Bookthinker" />
     <CharacterMale Value="Bowgiver" />
     <CharacterMale Value="Bowmaker" />
@@ -2302,7 +2302,7 @@
     <CharacterMale Value="Clayfinder" />
     <CharacterMale Value="Claygiver" />
     <CharacterMale Value="Claymaker" />
-    <CharacterMale Value="Claysweeper" />
+    <CharacterMale Value="Nożownik" />
     <CharacterMale Value="Dirstmaker" />
     <CharacterMale Value="Dirtfinder" />
     <CharacterMale Value="Dirtgrinder" />
@@ -2324,9 +2324,9 @@
     <CharacterMale Value="Hearthgiver" />
     <CharacterMale Value="Hearthmaker" />
     <CharacterMale Value="Homefinder" />
-    <CharacterMale Value="Homemaker" />
+    <CharacterMale Value="Gospodyni domowa" />
     <CharacterMale Value="Leathergrinder" />
-    <CharacterMale Value="Leathermaker" />
+    <CharacterMale Value="Producent skór" />
     <CharacterMale Value="Lifegiver" />
     <CharacterMale Value="Lifemaker" />
     <CharacterMale Value="Lovegiver" />
@@ -2348,12 +2348,12 @@
     <CharacterMale Value="Silktalker" />
     <CharacterMale Value="Silktwirler" />
     <CharacterMale Value="Silkweaver" />
-    <CharacterMale Value="Speargiver" />
+    <CharacterMale Value="Włócznik" />
     <CharacterMale Value="Spearmaker" />
-    <CharacterMale Value="Steel" />
+    <CharacterMale Value="Stal" />
     <CharacterMale Value="Steelfinder" />
     <CharacterMale Value="Steelgiver" />
-    <CharacterMale Value="Steelmaker" />
+    <CharacterMale Value="Wytwórca stali" />
     <CharacterMale Value="Steelthinker" />
     <CharacterMale Value="Stonefinder" />
     <CharacterMale Value="Stonegrinder" />
@@ -2361,7 +2361,7 @@
     <CharacterMale Value="Stonetalker" />
     <CharacterMale Value="Swordgiver" />
     <CharacterMale Value="Swordmaker" />
-    <CharacterMale Value="talker" />
+    <CharacterMale Value="mówca" />
     <CharacterMale Value="talkgiver" />
     <CharacterMale Value="Talkmaker" />
     <CharacterMale Value="Talkweaver" />
@@ -2374,15 +2374,15 @@
     <CharacterMale Value="Woodgrinder" />
     <CharacterMale Value="Woodmaker" />
     <CharacterMale Value="Woodscraper" />
-    <CharacterMale Value="Yarnfinder" />
-    <CharacterMale Value="Yarnmaker" />
+    <CharacterMale Value="Przędza" />
+    <CharacterMale Value="Przędza" />
     <CharacterMale Value="Yarntwirler" />
-    <CharacterMale Value="Yarnweaver" />
+    <CharacterMale Value="Przędza tkacza" />
     <CharacterFemale Value="Axemaker" />
     <CharacterFemale Value="Armsgiver" />
     <CharacterFemale Value="Armsmaker" />
     <CharacterFemale Value="Axegiver" />
-    <CharacterFemale Value="Bookmaker" />
+    <CharacterFemale Value="Bukmacher" />
     <CharacterFemale Value="Bookthinker" />
     <CharacterFemale Value="Bowgiver" />
     <CharacterFemale Value="Bowmaker" />
@@ -2392,7 +2392,7 @@
     <CharacterFemale Value="Clayfinder" />
     <CharacterFemale Value="Claygiver" />
     <CharacterFemale Value="Claymaker" />
-    <CharacterFemale Value="Claysweeper" />
+    <CharacterFemale Value="Nożownik" />
     <CharacterFemale Value="Dirstmaker" />
     <CharacterFemale Value="Dirtfinder" />
     <CharacterFemale Value="Dirtgrinder" />
@@ -2414,9 +2414,9 @@
     <CharacterFemale Value="Hearthgiver" />
     <CharacterFemale Value="Hearthmaker" />
     <CharacterFemale Value="Homefinder" />
-    <CharacterFemale Value="Homemaker" />
+    <CharacterFemale Value="Gospodyni domowa" />
     <CharacterFemale Value="Leathergrinder" />
-    <CharacterFemale Value="Leathermaker" />
+    <CharacterFemale Value="Wytwórca skór" />
     <CharacterFemale Value="Lifegiver" />
     <CharacterFemale Value="Lifemaker" />
     <CharacterFemale Value="Lovegiver" />
@@ -2438,12 +2438,12 @@
     <CharacterFemale Value="Silktalker" />
     <CharacterFemale Value="Silktwirler" />
     <CharacterFemale Value="Silkweaver" />
-    <CharacterFemale Value="Speargiver" />
+    <CharacterFemale Value="Włócznik" />
     <CharacterFemale Value="Spearmaker" />
-    <CharacterFemale Value="Steel" />
+    <CharacterFemale Value="Stal" />
     <CharacterFemale Value="Steelfinder" />
     <CharacterFemale Value="Steelgiver" />
-    <CharacterFemale Value="Steelmaker" />
+    <CharacterFemale Value="Wytwórca stali" />
     <CharacterFemale Value="Steelthinker" />
     <CharacterFemale Value="Stonefinder" />
     <CharacterFemale Value="Stonegrinder" />
@@ -2451,7 +2451,7 @@
     <CharacterFemale Value="Stonetalker" />
     <CharacterFemale Value="Swordgiver" />
     <CharacterFemale Value="Swordmaker" />
-    <CharacterFemale Value="talker" />
+    <CharacterFemale Value="mówca" />
     <CharacterFemale Value="talkgiver" />
     <CharacterFemale Value="Talkmaker" />
     <CharacterFemale Value="Talkweaver" />
@@ -2467,7 +2467,7 @@
     <CharacterFemale Value="Yarnfinder" />
     <CharacterFemale Value="Yarnmaker" />
     <CharacterFemale Value="Yarntwirler" />
-    <CharacterFemale Value="Yarnweaver" />
+    <CharacterFemale Value="Tkacz przędzy" />
   </NAME_COLLECTION-ORC_WORKER>
   <NAME_COLLECTION-ORC_WITCH>
     <Race Value="RACE-ORC" />
@@ -2479,7 +2479,7 @@
     <CharacterFemale Value="Beastsinger" />
     <CharacterFemale Value="Beastspeaker" />
     <CharacterFemale Value="Beasttamer" />
-    <CharacterFemale Value="Beastteller" />
+    <CharacterFemale Value="Śmiertelnik" />
     <CharacterFemale Value="Beastwalker" />
     <CharacterFemale Value="Beastwhisperer" />
     <CharacterFemale Value="Beastwriter" />
@@ -2488,9 +2488,9 @@
     <CharacterFemale Value="Bloodknower" />
     <CharacterFemale Value="Bloodlooker" />
     <CharacterFemale Value="Bloodreader" />
-    <CharacterFemale Value="Bloodsayer" />
+    <CharacterFemale Value="Krwawnik" />
     <CharacterFemale Value="Bloodseer" />
-    <CharacterFemale Value="Bloodsinger" />
+    <CharacterFemale Value="Śpiewak krwi" />
     <CharacterFemale Value="Bloodtaker" />
     <CharacterFemale Value="Bloodteller" />
     <CharacterFemale Value="Bloodwalker" />
@@ -2505,7 +2505,7 @@
     <CharacterFemale Value="Bonewalker" />
     <CharacterFemale Value="Bonewhisperer" />
     <CharacterFemale Value="CrookedChildseeer" />
-    <CharacterFemale Value="Crowdancer" />
+    <CharacterFemale Value="Tłum" />
     <CharacterFemale Value="Crowseer" />
     <CharacterFemale Value="Crowsinger" />
     <CharacterFemale Value="Crowspeeker" />
@@ -2534,12 +2534,12 @@
     <CharacterFemale Value="Deathknower" />
     <CharacterFemale Value="Deathlooker" />
     <CharacterFemale Value="Deathreader" />
-    <CharacterFemale Value="Deathsayer" />
+    <CharacterFemale Value="Wróżbita" />
     <CharacterFemale Value="Deathseer" />
-    <CharacterFemale Value="Deathsinger" />
-    <CharacterFemale Value="Deathtamer" />
+    <CharacterFemale Value="Śmiercionośny" />
+    <CharacterFemale Value="Śmiertelnik" />
     <CharacterFemale Value="Deathwalker" />
-    <CharacterFemale Value="Deathwhisperer" />
+    <CharacterFemale Value="Śmiertelny zaklinacz" />
     <CharacterFemale Value="Deathwriter" />
     <CharacterFemale Value="Deatspeaker" />
     <CharacterFemale Value="Demondancer" />
@@ -2577,8 +2577,8 @@
     <CharacterFemale Value="Dustwalker" />
     <CharacterFemale Value="Dustwalker" />
     <CharacterFemale Value="Dwarfknower" />
-    <CharacterFemale Value="Dwarfteller" />
-    <CharacterFemale Value="Earthdancer" />
+    <CharacterFemale Value="Krasnolud" />
+    <CharacterFemale Value="Tancerz Ziemi" />
     <CharacterFemale Value="Earthseer" />
     <CharacterFemale Value="Earthwalker" />
     <CharacterFemale Value="Earthwhisperer" />
@@ -2591,8 +2591,8 @@
     <CharacterFemale Value="Fearwhisperer" />
     <CharacterFemale Value="Firedancer" />
     <CharacterFemale Value="Firedreamer" />
-    <CharacterFemale Value="Firesinger" />
-    <CharacterFemale Value="Firetaker" />
+    <CharacterFemale Value="Śpiewak" />
+    <CharacterFemale Value="Strażak" />
     <CharacterFemale Value="Firetamer" />
     <CharacterFemale Value="Firewalker" />
     <CharacterFemale Value="Frostdancer" />
@@ -2620,12 +2620,12 @@
     <CharacterFemale Value="Gravelooker" />
     <CharacterFemale Value="Gravetamer" />
     <CharacterFemale Value="Gravewalker" />
-    <CharacterFemale Value="Hummingstone" />
+    <CharacterFemale Value="Koliber" />
     <CharacterFemale Value="Joydancer" />
     <CharacterFemale Value="Joydreamer" />
     <CharacterFemale Value="Joysayer" />
     <CharacterFemale Value="Joysinger" />
-    <CharacterFemale Value="Joytaker" />
+    <CharacterFemale Value="Radość" />
     <CharacterFemale Value="Lightdancer" />
     <CharacterFemale Value="Lightdreamer" />
     <CharacterFemale Value="Lightknower" />
@@ -2639,8 +2639,8 @@
     <CharacterFemale Value="Moondancer" />
     <CharacterFemale Value="Moonknower" />
     <CharacterFemale Value="Moonreader" />
-    <CharacterFemale Value="Moonseer" />
-    <CharacterFemale Value="Moonsinger" />
+    <CharacterFemale Value="Księżycowy" />
+    <CharacterFemale Value="Śpiewak" />
     <CharacterFemale Value="Moontamer" />
     <CharacterFemale Value="Moonteller" />
     <CharacterFemale Value="Nightdancer" />
@@ -2652,11 +2652,11 @@
     <CharacterFemale Value="Nightteller" />
     <CharacterFemale Value="Nightwalker" />
     <CharacterFemale Value="Oathdreamer" />
-    <CharacterFemale Value="Oathsayer" />
-    <CharacterFemale Value="Oathsinger" />
+    <CharacterFemale Value="Wróżbita" />
+    <CharacterFemale Value="Świerszcz" />
     <CharacterFemale Value="Oathspeaker" />
     <CharacterFemale Value="Oathteller" />
-    <CharacterFemale Value="Oathwriter" />
+    <CharacterFemale Value="Pisarz" />
     <CharacterFemale Value="OldChildseer" />
     <CharacterFemale Value="OnefingerChildseer" />
     <CharacterFemale Value="Quickdreamer" />
@@ -2671,24 +2671,24 @@
     <CharacterFemale Value="Shadowreader" />
     <CharacterFemale Value="Shadowsinger" />
     <CharacterFemale Value="Shadowspeaker" />
-    <CharacterFemale Value="Shadowtamer" />
+    <CharacterFemale Value="Gracz Cienia" />
     <CharacterFemale Value="Shadowteller" />
     <CharacterFemale Value="Shadowwalker" />
     <CharacterFemale Value="Shadowwhisperer" />
     <CharacterFemale Value="Soothdreamer" />
-    <CharacterFemale Value="Soothsayer" />
+    <CharacterFemale Value="Wróżbita" />
     <CharacterFemale Value="Soothteller" />
     <CharacterFemale Value="Spelldancer" />
     <CharacterFemale Value="Spelldreamer" />
     <CharacterFemale Value="Spellsinger" />
-    <CharacterFemale Value="Spelltaker" />
+    <CharacterFemale Value="Zaklinacz" />
     <CharacterFemale Value="Spelltamer" />
     <CharacterFemale Value="Spelltamer" />
     <CharacterFemale Value="Spellteller" />
     <CharacterFemale Value="Stardancer" />
     <CharacterFemale Value="Stardreamer" />
     <CharacterFemale Value="Starknower" />
-    <CharacterFemale Value="Starlooker" />
+    <CharacterFemale Value="Obserwator gwiazd" />
     <CharacterFemale Value="Starreader" />
     <CharacterFemale Value="Starseer" />
     <CharacterFemale Value="Starsinger" />
@@ -2705,15 +2705,15 @@
     <CharacterFemale Value="Sunteller" />
     <CharacterFemale Value="Sunwalker" />
     <CharacterFemale Value="Truthdreamer" />
-    <CharacterFemale Value="Truthlooker" />
+    <CharacterFemale Value="Obserwator prawdy" />
     <CharacterFemale Value="Truthreader" />
-    <CharacterFemale Value="Truthsayer" />
+    <CharacterFemale Value="Prawda" />
     <CharacterFemale Value="Truthseer" />
     <CharacterFemale Value="Truthsinger" />
     <CharacterFemale Value="Truthspeaker" />
     <CharacterFemale Value="Truthtaker" />
     <CharacterFemale Value="Truthteller" />
-    <CharacterFemale Value="Truthwhisperer" />
+    <CharacterFemale Value="Zaklinacz prawdy" />
     <CharacterFemale Value="Truthwriter" />
     <CharacterFemale Value="Umbrageknower" />
     <CharacterFemale Value="Umbragetamer" />
@@ -2850,7 +2850,7 @@
     <CharacterFemale Value="Da Boneseeker" />
     <CharacterFemale Value="Da Boneseer" />
     <CharacterFemale Value="Da Bonesinger" />
-    <CharacterFemale Value="Da Boneslayer" />
+    <CharacterFemale Value="Zabójca kości" />
     <CharacterFemale Value="Da Boneslicer" />
     <CharacterFemale Value="Da Bonespeaker" />
     <CharacterFemale Value="Da Bonetamer" />
@@ -2924,7 +2924,7 @@
     <CharacterFemale Value="Da Deathcrusher" />
     <CharacterFemale Value="Da Deathdancer" />
     <CharacterFemale Value="Da Deathdreamer" />
-    <CharacterFemale Value="Da Deathgiver" />
+    <CharacterFemale Value="Da Śmierciożerca" />
     <CharacterFemale Value="Da Deathknower" />
     <CharacterFemale Value="Da Deathlooker" />
     <CharacterFemale Value="Da Deathlover" />
@@ -3021,7 +3021,7 @@
     <CharacterFemale Value="Da Dwarfknower" />
     <CharacterFemale Value="Da Dwarflover" />
     <CharacterFemale Value="Da Dwarfseeker" />
-    <CharacterFemale Value="Da Dwarfslayer" />
+    <CharacterFemale Value="Dwarfslayer Da" />
     <CharacterFemale Value="Da Dwarfslicer" />
     <CharacterFemale Value="Da Dwarftaker" />
     <CharacterFemale Value="Da Dwarfteller" />
@@ -3047,7 +3047,7 @@
     <CharacterFemale Value="Da Elfthrasher" />
     <CharacterFemale Value="Da Fearbasher" />
     <CharacterFemale Value="Da Fearbreaker" />
-    <CharacterFemale Value="Da fearbringer" />
+    <CharacterFemale Value="Da stracharz" />
     <CharacterFemale Value="Da Fearcrusher" />
     <CharacterFemale Value="Da Feardancer" />
     <CharacterFemale Value="Da Feargiver" />
@@ -3057,7 +3057,7 @@
     <CharacterFemale Value="Da Fearrunner" />
     <CharacterFemale Value="Da Fearseeker" />
     <CharacterFemale Value="Da Fearsinger" />
-    <CharacterFemale Value="Da Fearslayer" />
+    <CharacterFemale Value="Straszny Da" />
     <CharacterFemale Value="Da Feartaker" />
     <CharacterFemale Value="Da Feartaker" />
     <CharacterFemale Value="Da Feartamer" />
@@ -3219,7 +3219,7 @@
     <CharacterFemale Value="Da Krakenkiller" />
     <CharacterFemale Value="Da Krakenlover" />
     <CharacterFemale Value="Da Krakenseeker" />
-    <CharacterFemale Value="Da Krakenslayer" />
+    <CharacterFemale Value="Zabójca Da Krakens" />
     <CharacterFemale Value="Da Krakentaker" />
     <CharacterFemale Value="Da Krakenthrasher" />
     <CharacterFemale Value="Da Lavacrusher" />
@@ -3365,7 +3365,7 @@
     <CharacterFemale Value="Da Shadowbreaker" />
     <CharacterFemale Value="Da Shadowbringer" />
     <CharacterFemale Value="Da Shadowdancer" />
-    <CharacterFemale Value="Da SHadowhacker" />
+    <CharacterFemale Value="Da Shadowhacker" />
     <CharacterFemale Value="Da Shadowkiller" />
     <CharacterFemale Value="Da Shadowlooker" />
     <CharacterFemale Value="Da Shadowmaker" />
@@ -3405,7 +3405,7 @@
     <CharacterFemale Value="Da Spelldreamer" />
     <CharacterFemale Value="Da Spellkiller" />
     <CharacterFemale Value="Da Spellsinger" />
-    <CharacterFemale Value="Da Spellslayer" />
+    <CharacterFemale Value="Zabójca Czarów Da" />
     <CharacterFemale Value="Da Spelltaker" />
     <CharacterFemale Value="Da Spelltamer" />
     <CharacterFemale Value="Da Spelltamer" />
@@ -3456,7 +3456,7 @@
     <CharacterFemale Value="Da Sunwalker" />
     <CharacterFemale Value="Da Swordbearer" />
     <CharacterFemale Value="Da Swordbreaker" />
-    <CharacterFemale Value="Da Swordcrusher" />
+    <CharacterFemale Value="Niszczyciel miecza" />
     <CharacterFemale Value="Da Swordkiller" />
     <CharacterFemale Value="Da Swordlover" />
     <CharacterFemale Value="Da Swordtaker" />
@@ -3527,7 +3527,7 @@
     <CharacterFemale Value="Da Wolfbearer" />
     <CharacterFemale Value="Da Wolfseeker" />
     <CharacterFemale Value="Da Wolfseer" />
-    <CharacterFemale Value="Da Wolfslayer" />
+    <CharacterFemale Value="Zabójca Da Wolf" />
     <CharacterFemale Value="Da Wolftamer" />
     <CharacterFemale Value="Da Wraithbasher" />
     <CharacterFemale Value="Da Wraithcrusher" />
@@ -3570,7 +3570,7 @@
   <NAME_COLLECTION-NECROMANCER>
     <Race Value="RACE-ORC" />
     <Subrace Value="SUBRACE-NECROMANCER" />
-    <CharacterMale Value="Necromancer" />
+    <CharacterMale Value="Nekromanta" />
   </NAME_COLLECTION-NECROMANCER>
   <NAME_COLLECTION-GOBLIN>
     <Race Value="RACE-GOBLIN" />
@@ -3605,7 +3605,7 @@
     <CharacterMale Value="Kai" />
     <CharacterMale Value="Keljan" />
     <CharacterMale Value="Kless" />
-    <CharacterMale Value="Knuckle" />
+    <CharacterMale Value="Golonka" />
     <CharacterMale Value="Kovac" />
     <CharacterMale Value="Kyal" />
     <CharacterMale Value="Lah" />
@@ -3635,13 +3635,13 @@
     <CharacterMale Value="Simski" />
     <CharacterMale Value="Sitrus" />
     <CharacterMale Value="Stig'y" />
-    <CharacterMale Value="Suffix" />
+    <CharacterMale Value="Sufiks" />
     <CharacterMale Value="Tao" />
     <CharacterMale Value="Thijs" />
     <CharacterMale Value="Tino" />
     <CharacterMale Value="Tusk" />
     <CharacterMale Value="Ubirak" />
-    <CharacterMale Value="Valerian" />
+    <CharacterMale Value="Waleriana" />
     <CharacterMale Value="Vex" />
     <CharacterMale Value="Vilh" />
     <CharacterMale Value="Wer" />
@@ -3651,12 +3651,12 @@
     <CharacterMale Value="Zaz" />
     <CharacterMale Value="Zeno" />
     <CharacterMale Value="Zosh" />
-    <CharacterMale Value="Zurek" />
+    <CharacterMale Value="Żurek" />
     <CharacterFemale Value="Aeys" />
     <CharacterFemale Value="Agitza" />
     <CharacterFemale Value="Agnia" />
     <CharacterFemale Value="Ahzek" />
-    <CharacterFemale Value="Aljachat" />
+    <CharacterFemale Value="Aljaczat" />
     <CharacterFemale Value="Ayaz" />
     <CharacterFemale Value="Ayina" />
     <CharacterFemale Value="Cas" />
@@ -3689,7 +3689,7 @@
     <CharacterFemale Value="Linn" />
     <CharacterFemale Value="Magdaki" />
     <CharacterFemale Value="Makzi" />
-    <CharacterFemale Value="Masha" />
+    <CharacterFemale Value="Masza" />
     <CharacterFemale Value="Micela" />
     <CharacterFemale Value="Minx" />
     <CharacterFemale Value="Mira" />
@@ -3706,10 +3706,10 @@
     <CharacterFemale Value="Schmieztwyn" />
     <CharacterFemale Value="Shaka" />
     <CharacterFemale Value="Shava" />
-    <CharacterFemale Value="Shmala" />
+    <CharacterFemale Value="Szmala" />
     <CharacterFemale Value="Simska" />
     <CharacterFemale Value="Stig'y" />
-    <CharacterFemale Value="Suffix" />
+    <CharacterFemale Value="Przyrostek" />
     <CharacterFemale Value="Taka" />
     <CharacterFemale Value="Tawni" />
     <CharacterFemale Value="Thijs" />
@@ -3776,7 +3776,7 @@
     <CharacterMale Value="Mlotobojgh" />
     <CharacterMale Value="Norin" />
     <CharacterMale Value="Nothger" />
-    <CharacterMale Value="Ovczarz" />
+    <CharacterMale Value="Owczarz" />
     <CharacterMale Value="Rockmily" />
     <CharacterMale Value="Saragh" />
     <CharacterMale Value="Silberfluege" />
@@ -3790,10 +3790,10 @@
     <CharacterMale Value="Turkh" />
     <CharacterMale Value="Voghler" />
     <CharacterMale Value="Vojdargh" />
-    <CharacterMale Value="Voskhodit" />
+    <CharacterMale Value="Woskhodit" />
     <CharacterMale Value="Wardh" />
     <CharacterMale Value="Zakhar" />
-    <CharacterMale Value="Zlotoslavgh" />
+    <CharacterMale Value="Złotowłosy" />
     <CharacterFemale Value="Aghturon" />
     <CharacterFemale Value="Bharvena" />
     <CharacterFemale Value="Caldazargh" />
@@ -3835,7 +3835,7 @@
     <CharacterFemale Value="Turkh" />
     <CharacterFemale Value="Voghlara" />
     <CharacterFemale Value="Vojslavah" />
-    <CharacterFemale Value="Voskhodit" />
+    <CharacterFemale Value="Woskhodit" />
     <CharacterFemale Value="Wardah" />
     <CharacterFemale Value="Zakhara" />
     <CharacterFemale Value="Zelaznah" />
@@ -3854,7 +3854,7 @@
   <NAME_COLLECTION-WEAKENED_WARRAX>
     <Race Value="RACE-DEMON" />
     <Subrace Value="SUBRACE-WEAKENED_WARRAX" />
-    <CharacterMale Value="Weakened Warrax" />
+    <CharacterMale Value="Osłabiony Warrax" />
   </NAME_COLLECTION-WEAKENED_WARRAX>
   <NAME_COLLECTION-DEMONS>
     <Race Value="RACE-DEMON" />
@@ -3868,17 +3868,17 @@
   </NAME_COLLECTION-UNLIVING>
   <NAME_COLLECTION-BEASTS>
     <Race Value="RACE-BEAST" />
-    <CharacterMale Value="Beast" />
-    <CharacterFemale Value="Beast" />
+    <CharacterMale Value="Bestia" />
+    <CharacterFemale Value="Bestia" />
   </NAME_COLLECTION-BEASTS>
   <NAME_COLLECTION-MYTHICAL_BEASTS>
     <Race Value="RACE-MYTHICAL" />
-    <CharacterMale Value="Mythical" />
-    <CharacterFemale Value="Mythical" />
+    <CharacterMale Value="Mityczny" />
+    <CharacterFemale Value="Mityczny" />
   </NAME_COLLECTION-MYTHICAL_BEASTS>
   <NAME_COLLECTION-CONCEPT>
     <Race Value="RACE-CONCEPT" />
-    <CharacterMale Value="Concept" />
+    <CharacterMale Value="Pojęcie" />
   </NAME_COLLECTION-CONCEPT>
   <NAME_COLLECTION-TUT_WARRIOR_YANEK>
     <Race Value="RACE-HUMAN" />
@@ -3900,12 +3900,12 @@
   <NAME_COLLECTION-TUT_HUM_CRAFTSMAN_GRANDMA_STASIA>
     <Race Value="RACE-HUMAN" />
     <Subrace Value="SUBRACE-TUT_HUM_CRAFTSMAN_GRANDMA_STASIA" />
-    <CharacterMale Value="Grandma Stasia" />
+    <CharacterMale Value="Babcia Stasia" />
   </NAME_COLLECTION-TUT_HUM_CRAFTSMAN_GRANDMA_STASIA>
   <NAME_COLLECTION-TUT_DWARF_GRUMPY>
     <Race Value="RACE-HUMAN" />
     <Subrace Value="SUBRACE-TUT_DWARF_GRUMPY" />
-    <CharacterMale Value="Grumpy" />
+    <CharacterMale Value="W złym humorze" />
   </NAME_COLLECTION-TUT_DWARF_GRUMPY>
   <NAME_COLLECTION-TUT_DWARF_BUMPY>
     <Race Value="RACE-HUMAN" />
@@ -3923,8 +3923,8 @@
   <NAME_COLLECTION-DZIEVANNAS_FERAL>
     <Race Value="RACE-DEMON" />
     <Subrace Value="SUBRACE-DZIEVANNAS_FERAL" />
-    <CharacterMale Value="Dzievanna's Feral" />
-    <CharacterFemale Value="Dzievanna's Feral" />
+    <CharacterMale Value="Dziadek Dzievanny" />
+    <CharacterFemale Value="Dziadek Dzievanny" />
   </NAME_COLLECTION-DZIEVANNAS_FERAL>
   <NAME_COLLECTION-WARRAKUS>
     <Race Value="RACE-DEMON" />
@@ -3941,8 +3941,8 @@
   <NAME_COLLECTION-DEMON_BABA_YAGA>
     <Race Value="RACE-DEMON" />
     <Subrace Value="SUBRACE-DEMON_BABA_YAGA" />
-    <CharacterMale Value="Baba Yaga" />
-    <CharacterFemale Value="Baba Yaga" />
+    <CharacterMale Value="Baba Jaga" />
+    <CharacterFemale Value="Baba Jaga" />
   </NAME_COLLECTION-DEMON_BABA_YAGA>
   <NAME_COLLECTION-DEMON_SKSHACK>
     <Race Value="RACE-DEMON" />
@@ -3959,8 +3959,8 @@
   <NAME_COLLECTION-DEMON_LIGHT_SICK_KARAKANDZA>
     <Race Value="RACE-DEMON" />
     <Subrace Value="SUBRACE-DEMON_LIGHT_SICK_KARAKANDZA" />
-    <CharacterMale Value="Light-sick Karakandza" />
-    <CharacterFemale Value="Light-sick Karakandza" />
+    <CharacterMale Value="Lekki Karakandza" />
+    <CharacterFemale Value="Lekki Karakandza" />
   </NAME_COLLECTION-DEMON_LIGHT_SICK_KARAKANDZA>
   <NAME_COLLECTION-DEMON_KARAKANDZA>
     <Race Value="RACE-DEMON" />
@@ -3971,8 +3971,8 @@
   <NAME_COLLECTION-DEMON_CMUCH>
     <Race Value="RACE-DEMON" />
     <Subrace Value="SUBRACE-DEMON_CMUCH" />
-    <CharacterMale Value="Cmuch" />
-    <CharacterFemale Value="Cmuch" />
+    <CharacterMale Value="Dużo" />
+    <CharacterFemale Value="Dużo" />
   </NAME_COLLECTION-DEMON_CMUCH>
   <NAME_COLLECTION-DEMON_BIES>
     <Race Value="RACE-DEMON" />
@@ -3995,8 +3995,8 @@
   <NAME_COLLECTION-DEMON_LIGHT_SICK_ALKONOST>
     <Race Value="RACE-DEMON" />
     <Subrace Value="SUBRACE-DEMON_LIGHT_SICK_ALKONOST" />
-    <CharacterMale Value="Light-sick Alkonost" />
-    <CharacterFemale Value="Light-sick Alkonost" />
+    <CharacterMale Value="Jasno chory Alkonost" />
+    <CharacterFemale Value="Jasno chory Alkonost" />
   </NAME_COLLECTION-DEMON_LIGHT_SICK_ALKONOST>
   <NAME_COLLECTION-DEMON_ALKONOST>
     <Race Value="RACE-DEMON" />
@@ -4037,8 +4037,8 @@
   <NAME_COLLECTION-FOREST_DORMANT_LESHY>
     <Race Value="RACE-DEMON" />
     <Subrace Value="SUBRACE-FOREST_DORMANT_LESHY" />
-    <CharacterMale Value="Dormant Leshy" />
-    <CharacterFemale Value="Dormant Leshy" />
+    <CharacterMale Value="Uśpiony Leshy" />
+    <CharacterFemale Value="Uśpiony Leshy" />
   </NAME_COLLECTION-FOREST_DORMANT_LESHY>
   <NAME_COLLECTION-FOREST_LESHY>
     <Race Value="RACE-DEMON" />
@@ -4074,19 +4074,19 @@
     <Race Value="RACE-DEMON" />
     <Subrace Value="SUBRACE-FOREST_FAIRY" />
     <CharacterMale Value="Forest Fairy" />
-    <CharacterFemale Value="Forest Fairy" />
+    <CharacterFemale Value="Lasowa wróżka" />
   </NAME_COLLECTION-FOREST_FAIRY>
   <NAME_COLLECTION-NIGHT_WEREWOLF>
     <Race Value="RACE-DEMON" />
     <Subrace Value="SUBRACE-NIGHT_WEREWOLF" />
-    <CharacterMale Value="Werewolf" />
-    <CharacterFemale Value="Werewolf" />
+    <CharacterMale Value="Wilkołak" />
+    <CharacterFemale Value="Wilkołak" />
   </NAME_COLLECTION-NIGHT_WEREWOLF>
   <NAME_COLLECTION-NIGHT_LIGHT_SICK_STRIGA>
     <Race Value="RACE-DEMON" />
     <Subrace Value="SUBRACE-NIGHT_LIGHT_SICK_STRIGA" />
-    <CharacterMale Value="Light-sick Striga" />
-    <CharacterFemale Value="Light-sick Striga" />
+    <CharacterMale Value="Lekka chora Striga" />
+    <CharacterFemale Value="Lekka chora Striga" />
   </NAME_COLLECTION-NIGHT_LIGHT_SICK_STRIGA>
   <NAME_COLLECTION-NIGHT_STRIGA>
     <Race Value="RACE-DEMON" />
@@ -4097,26 +4097,26 @@
   <NAME_COLLECTION-NIGHT_LIGHT_SICK_STRIGA_MASTER>
     <Race Value="RACE-DEMON" />
     <Subrace Value="SUBRACE-NIGHT_LIGHT_SICK_STRIGA_MASTER" />
-    <CharacterMale Value="Light-sick Striga Master" />
-    <CharacterFemale Value="Light-sick Striga Master" />
+    <CharacterMale Value="Lekki mistrz Striga" />
+    <CharacterFemale Value="Lekki mistrz Striga" />
   </NAME_COLLECTION-NIGHT_LIGHT_SICK_STRIGA_MASTER>
   <NAME_COLLECTION-NIGHT_STRIGA_MASTER>
     <Race Value="RACE-DEMON" />
     <Subrace Value="SUBRACE-NIGHT_STRIGA_MASTER" />
-    <CharacterMale Value="Striga Master" />
+    <CharacterMale Value="Mistrz Striga" />
     <CharacterFemale Value="Striga Master" />
   </NAME_COLLECTION-NIGHT_STRIGA_MASTER>
   <NAME_COLLECTION-NIGHT_LIGHT_SICK_STRIGA_MISTRESS>
     <Race Value="RACE-DEMON" />
     <Subrace Value="SUBRACE-NIGHT_LIGHT_SICK_STRIGA_MISTRESS" />
-    <CharacterMale Value="Light-sick Striga Mistress" />
-    <CharacterFemale Value="Light-sick Striga Mistress" />
+    <CharacterMale Value="Lekka chora Striga" />
+    <CharacterFemale Value="Lekka pani Striga" />
   </NAME_COLLECTION-NIGHT_LIGHT_SICK_STRIGA_MISTRESS>
   <NAME_COLLECTION-NIGHT_STRIGA_MISTRESS>
     <Race Value="RACE-DEMON" />
     <Subrace Value="SUBRACE-NIGHT_STRIGA_MISTRESS" />
-    <CharacterMale Value="Striga Mistress" />
-    <CharacterFemale Value="Striga Mistress" />
+    <CharacterMale Value="Mistrzyni Striga" />
+    <CharacterFemale Value="Mistrzyni Striga" />
   </NAME_COLLECTION-NIGHT_STRIGA_MISTRESS>
   <NAME_COLLECTION-NIGHT_CMOK>
     <Race Value="RACE-DEMON" />
@@ -4139,14 +4139,14 @@
   <NAME_COLLECTION-WATER_LIGHT_SICK_RUSALKA>
     <Race Value="RACE-DEMON" />
     <Subrace Value="SUBRACE-WATER_LIGHT_SICK_RUSALKA" />
-    <CharacterMale Value="Light-sick Rusalka" />
-    <CharacterFemale Value="Light-sick Rusalka" />
+    <CharacterMale Value="Lekka Rusałka" />
+    <CharacterFemale Value="Lekka Rusałka" />
   </NAME_COLLECTION-WATER_LIGHT_SICK_RUSALKA>
   <NAME_COLLECTION-WATER_RUSALKA>
     <Race Value="RACE-DEMON" />
     <Subrace Value="SUBRACE-WATER_RUSALKA" />
-    <CharacterMale Value="Rusalka" />
-    <CharacterFemale Value="Rusalka" />
+    <CharacterMale Value="Rusałka" />
+    <CharacterFemale Value="Rusałka" />
   </NAME_COLLECTION-WATER_RUSALKA>
   <NAME_COLLECTION-WATER_UTOPIEC>
     <Race Value="RACE-DEMON" />
@@ -4157,8 +4157,8 @@
   <NAME_COLLECTION-WATER_LIGHT_SICK_BEFUDDLER>
     <Race Value="RACE-DEMON" />
     <Subrace Value="SUBRACE-WATER_LIGHT_SICK_BEFUDDLER" />
-    <CharacterMale Value="Light-sick Befuddler" />
-    <CharacterFemale Value="Light-sick Befuddler" />
+    <CharacterMale Value="Lekki chory Befuddler" />
+    <CharacterFemale Value="Lekki chory Befuddler" />
   </NAME_COLLECTION-WATER_LIGHT_SICK_BEFUDDLER>
   <NAME_COLLECTION-WATER_BEFUDDLER>
     <Race Value="RACE-DEMON" />
@@ -4181,8 +4181,8 @@
   <NAME_COLLECTION-LIGHT_HUM_CHILD>
     <Race Value="RACE-DEMON" />
     <Subrace Value="SUBRACE-LIGHT_HUM_CHILD" />
-    <CharacterMale Value="Enlightened Child" />
-    <CharacterFemale Value="Enlightened Child" />
+    <CharacterMale Value="Oświecone dziecko" />
+    <CharacterFemale Value="Oświecone dziecko" />
   </NAME_COLLECTION-LIGHT_HUM_CHILD>
   <NAME_COLLECTION-LIGHT_SVIATELKO>
     <Race Value="RACE-DEMON" />
@@ -4199,45 +4199,45 @@
   <NAME_COLLECTION-ELDER_LIGHT_LIGHTBRINGER>
     <Race Value="RACE-DEMON" />
     <Subrace Value="SUBRACE-ELDER_LIGHT_LIGHTBRINGER" />
-    <CharacterMale Value="Elder Lightbringer" />
-    <CharacterFemale Value="Elder Lightbringer" />
+    <CharacterMale Value="Starszy Lightbringer" />
+    <CharacterFemale Value="Starszy Lightbringer" />
   </NAME_COLLECTION-ELDER_LIGHT_LIGHTBRINGER>
   <NAME_COLLECTION-LIGHT_ENLIGHTENED_HUM_WARRIOR>
     <Race Value="RACE-DEMON" />
     <Subrace Value="SUBRACE-LIGHT_ENLIGHTENED_HUM_WARRIOR" />
-    <CharacterMale Value="Enlightened Human" />
-    <CharacterFemale Value="Enlightened Human" />
+    <CharacterMale Value="Oświecony człowiek" />
+    <CharacterFemale Value="Oświecony człowiek" />
   </NAME_COLLECTION-LIGHT_ENLIGHTENED_HUM_WARRIOR>
   <NAME_COLLECTION-LIGHT_ENLIGHTENED_DWARF_SMITH>
     <Race Value="RACE-DEMON" />
     <Subrace Value="SUBRACE-LIGHT_ENLIGHTENED_DWARF_SMITH" />
     <Subrace Value="SUBRACE-ELDER_LIGHT_ENLIGHTENED_DWARF_SMITH" />
-    <CharacterMale Value="Enlightened Dwarf" />
-    <CharacterFemale Value="Enlightened Dwarf" />
+    <CharacterMale Value="Oświecony Krasnolud" />
+    <CharacterFemale Value="Oświecony Krasnolud" />
   </NAME_COLLECTION-LIGHT_ENLIGHTENED_DWARF_SMITH>
   <NAME_COLLECTION-ELDER_LIGHT_ENLIGHTENED_DWARF_SMITH>
     <Race Value="RACE-DEMON" />
     <Subrace Value="SUBRACE-ELDER_LIGHT_ENLIGHTENED_DWARF_SMITH" />
-    <CharacterMale Value="Elder Enlightened Dwarf" />
-    <CharacterFemale Value="Elder Enlightened Dwarf" />
+    <CharacterMale Value="Starszy Oświecony Krasnolud" />
+    <CharacterFemale Value="Starszy Oświecony Krasnolud" />
   </NAME_COLLECTION-ELDER_LIGHT_ENLIGHTENED_DWARF_SMITH>
   <NAME_COLLECTION-LIGHT_ENLIGHTENED_SPIDER_QUEEN>
     <Race Value="RACE-DEMON" />
     <Subrace Value="SUBRACE-LIGHT_ENLIGHTENED_SPIDER_QUEEN" />
-    <CharacterMale Value="Enlightened Spider Queen" />
-    <CharacterFemale Value="Enlightened Spider Queen" />
+    <CharacterMale Value="Oświecona Królowa Pająków" />
+    <CharacterFemale Value="Oświecona Królowa Pająków" />
   </NAME_COLLECTION-LIGHT_ENLIGHTENED_SPIDER_QUEEN>
   <NAME_COLLECTION-LIGHT_ENLIGHTENED_LESHY>
     <Race Value="RACE-DEMON" />
     <Subrace Value="SUBRACE-LIGHT_ENLIGHTENED_LESHY" />
-    <CharacterMale Value="Enlightened Leshy" />
-    <CharacterFemale Value="Enlightened Leshy" />
+    <CharacterMale Value="Oświecony Leshy" />
+    <CharacterFemale Value="Oświecony Leshy" />
   </NAME_COLLECTION-LIGHT_ENLIGHTENED_LESHY>
   <NAME_COLLECTION-ELF_SHADOW>
     <Race Value="RACE-DEMON" />
     <Subrace Value="SUBRACE-ELF_SHADOW" />
-    <CharacterMale Value="Shadow Elf" />
-    <CharacterFemale Value="Shadow Elf" />
+    <CharacterMale Value="Elf Cienia" />
+    <CharacterFemale Value="Elf Cienia" />
   </NAME_COLLECTION-ELF_SHADOW>
   <NAME_COLLECTION-MENAVCA>
     <Race Value="RACE-DEMON" />
@@ -4261,8 +4261,8 @@
   <NAME_COLLECTION-SPIDER_QUEEN>
     <Race Value="RACE-BEAST" />
     <Subrace Value="SUBRACE-SPIDER_QUEEN" />
-    <CharacterMale Value="Spider Queen" />
-    <CharacterFemale Value="Spider Queen" />
+    <CharacterMale Value="Królowa Pająków" />
+    <CharacterFemale Value="Królowa Pająków" />
   </NAME_COLLECTION-SPIDER_QUEEN>
   <NAME_COLLECTION-BEE_BLOOD>
     <Race Value="RACE-BEAST" />
@@ -4292,14 +4292,14 @@
     <Race Value="RACE-BEAST" />
     <Subrace Value="SUBRACE-RAT" />
     <Subrace Value="SUBRACE-TUT_RAT" />
-    <CharacterMale Value="Rat" />
-    <CharacterFemale Value="Rat" />
+    <CharacterMale Value="Szczur" />
+    <CharacterFemale Value="Szczur" />
   </NAME_COLLECTION-RAT>
   <NAME_COLLECTION-RAT_FAT>
     <Race Value="RACE-BEAST" />
     <Subrace Value="SUBRACE-RAT_FAT" />
     <CharacterMale Value="Fat Rat" />
-    <CharacterFemale Value="Fat Rat" />
+    <CharacterFemale Value="Gruby szczur" />
   </NAME_COLLECTION-RAT_FAT>
   <NAME_COLLECTION-CRADLE_YOUNG_POSSUM>
     <Race Value="RACE-BEAST" />
@@ -4316,8 +4316,8 @@
   <NAME_COLLECTION-SNAKE>
     <Race Value="RACE-BEAST" />
     <Subrace Value="SUBRACE-SNAKE" />
-    <CharacterMale Value="Snake" />
-    <CharacterFemale Value="Snake" />
+    <CharacterMale Value="Wąż" />
+    <CharacterFemale Value="Wąż" />
   </NAME_COLLECTION-SNAKE>
   <NAME_COLLECTION-SNAKE_ROYAL>
     <Race Value="RACE-BEAST" />
@@ -4328,44 +4328,44 @@
   <NAME_COLLECTION-WOLF_STARVING>
     <Race Value="RACE-BEAST" />
     <Subrace Value="SUBRACE-WOLF_STARVING" />
-    <CharacterMale Value="Starving Wolf" />
-    <CharacterFemale Value="Starving Wolf" />
+    <CharacterMale Value="Głodujący wilk" />
+    <CharacterFemale Value="Głodujący wilk" />
   </NAME_COLLECTION-WOLF_STARVING>
   <NAME_COLLECTION-WOLF>
     <Race Value="RACE-BEAST" />
     <Subrace Value="SUBRACE-WOLF" />
-    <CharacterMale Value="Wolf" />
-    <CharacterFemale Value="Wolf" />
+    <CharacterMale Value="Wilk" />
+    <CharacterFemale Value="Wilk" />
   </NAME_COLLECTION-WOLF>
   <NAME_COLLECTION-WOLF_ALFA>
     <Race Value="RACE-BEAST" />
     <Subrace Value="SUBRACE-WOLF_ALFA" />
-    <CharacterMale Value="Alpha Wolf" />
-    <CharacterFemale Value="Alpha Wolf" />
+    <CharacterMale Value="Alfa Wilk" />
+    <CharacterFemale Value="Alfa Wilk" />
   </NAME_COLLECTION-WOLF_ALFA>
   <NAME_COLLECTION-BOAR_YOUNG>
     <Race Value="RACE-BEAST" />
     <Subrace Value="SUBRACE-BOAR_YOUNG" />
-    <CharacterMale Value="Young Boar" />
-    <CharacterFemale Value="Young Boar" />
+    <CharacterMale Value="Młody Dzik" />
+    <CharacterFemale Value="Młody Dzik" />
   </NAME_COLLECTION-BOAR_YOUNG>
   <NAME_COLLECTION-BOAR_WILD>
     <Race Value="RACE-BEAST" />
     <Subrace Value="SUBRACE-BOAR_WILD" />
-    <CharacterMale Value="Wild Boar" />
-    <CharacterFemale Value="Wild Boar" />
+    <CharacterMale Value="Dzik" />
+    <CharacterFemale Value="Dzik" />
   </NAME_COLLECTION-BOAR_WILD>
   <NAME_COLLECTION-BOAR_GIANT_WILD>
     <Race Value="RACE-BEAST" />
     <Subrace Value="SUBRACE-BOAR_GIANT_WILD" />
-    <CharacterMale Value="Giant Wild Boar" />
-    <CharacterFemale Value="Giant Wild Boar" />
+    <CharacterMale Value="Gigantyczny dzik" />
+    <CharacterFemale Value="Gigantyczny dzik" />
   </NAME_COLLECTION-BOAR_GIANT_WILD>
   <NAME_COLLECTION-BAT>
     <Race Value="RACE-BEAST" />
     <Subrace Value="SUBRACE-BAT" />
     <CharacterMale Value="Bat" />
-    <CharacterFemale Value="Bat" />
+    <CharacterFemale Value="Nietoperz" />
   </NAME_COLLECTION-BAT>
   <NAME_COLLECTION-BAT_STRIGA>
     <Race Value="RACE-BEAST" />
@@ -4377,74 +4377,74 @@
     <Race Value="RACE-BEAST" />
     <Subrace Value="SUBRACE-CROW_GIANT" />
     <CharacterMale Value="Giant Crow" />
-    <CharacterFemale Value="Giant Crow" />
+    <CharacterFemale Value="Olbrzymia Wrona" />
   </NAME_COLLECTION-CROW_GIANT>
   <NAME_COLLECTION-CROW_ROYAL>
     <Race Value="RACE-BEAST" />
     <Subrace Value="SUBRACE-CROW_ROYAL" />
     <CharacterMale Value="Royal Crow" />
-    <CharacterFemale Value="Royal Crow" />
+    <CharacterFemale Value="Królewska wrona" />
   </NAME_COLLECTION-CROW_ROYAL>
   <NAME_COLLECTION-YOUNG_BEAR>
     <Race Value="RACE-BEAST" />
     <Subrace Value="SUBRACE-YOUNG_BEAR" />
-    <CharacterMale Value="Young Bear" />
-    <CharacterFemale Value="Young Bear" />
+    <CharacterMale Value="Młody niedźwiedź" />
+    <CharacterFemale Value="Młody niedźwiedź" />
   </NAME_COLLECTION-YOUNG_BEAR>
   <NAME_COLLECTION-BEAR>
     <Race Value="RACE-BEAST" />
     <Subrace Value="SUBRACE-BEAR" />
-    <CharacterMale Value="Bear" />
-    <CharacterFemale Value="Bear" />
+    <CharacterMale Value="Niedźwiedź" />
+    <CharacterFemale Value="Niedźwiedź" />
   </NAME_COLLECTION-BEAR>
   <NAME_COLLECTION-BEAR_LIGHT_SICK_RABID>
     <Race Value="RACE-BEAST" />
     <Subrace Value="SUBRACE-BEAR_LIGHT_SICK_RABID" />
     <CharacterMale Value="Light-sick Bear" />
-    <CharacterFemale Value="Light-sick Bear" />
+    <CharacterFemale Value="Jasny chory Niedźwiedź" />
   </NAME_COLLECTION-BEAR_LIGHT_SICK_RABID>
   <NAME_COLLECTION-BEAR_RABID>
     <Race Value="RACE-BEAST" />
     <Subrace Value="SUBRACE-BEAR_RABID" />
-    <CharacterMale Value="Rabid Bear" />
+    <CharacterMale Value="Wściekły niedźwiedź" />
     <CharacterFemale Value="Rabid Bear" />
   </NAME_COLLECTION-BEAR_RABID>
   <NAME_COLLECTION-BEAR_ARMOURED_SMALL>
     <Race Value="RACE-BEAST" />
     <Subrace Value="SUBRACE-BEAR_ARMOURED_SMALL" />
-    <CharacterMale Value="Small Armoured Bear" />
-    <CharacterFemale Value="Small Armoured Bear" />
+    <CharacterMale Value="Mały niedźwiedź pancerny" />
+    <CharacterFemale Value="Mały niedźwiedź pancerny" />
   </NAME_COLLECTION-BEAR_ARMOURED_SMALL>
   <NAME_COLLECTION-BEAR_ARMOURED>
     <Race Value="RACE-BEAST" />
     <Subrace Value="SUBRACE-BEAR_ARMOURED" />
-    <CharacterMale Value="Armoured Bear" />
-    <CharacterFemale Value="Armoured Bear" />
+    <CharacterMale Value="Niedźwiedź pancerny" />
+    <CharacterFemale Value="Niedźwiedź pancerny" />
   </NAME_COLLECTION-BEAR_ARMOURED>
   <NAME_COLLECTION-SEA_PREDATOR_FISH>
     <Race Value="RACE-BEAST" />
     <Subrace Value="SUBRACE-SEA_PREDATOR_FISH" />
-    <CharacterMale Value="Predator Fish" />
-    <CharacterFemale Value="Predator Fish" />
+    <CharacterMale Value="Ryba drapieżna" />
+    <CharacterFemale Value="Ryba drapieżna" />
   </NAME_COLLECTION-SEA_PREDATOR_FISH>
   <NAME_COLLECTION-SEA_SHARK>
     <Race Value="RACE-BEAST" />
     <Subrace Value="SUBRACE-SEA_SHARK" />
-    <CharacterMale Value="Shark" />
-    <CharacterFemale Value="Shark" />
+    <CharacterMale Value="Rekin" />
+    <CharacterFemale Value="Rekin" />
   </NAME_COLLECTION-SEA_SHARK>
   <NAME_COLLECTION-SEA_SERPENT>
     <Race Value="RACE-BEAST" />
     <Subrace Value="SUBRACE-SEA_SERPENT" />
-    <CharacterMale Value="Sea Serpent" />
-    <CharacterFemale Value="Sea Serpent" />
+    <CharacterMale Value="Wąż morski" />
+    <CharacterFemale Value="Wąż morski" />
   </NAME_COLLECTION-SEA_SERPENT>
   <!-- Unliving -->
   <NAME_COLLECTION-UNLI_BROKEN_SKELETON>
     <Race Value="RACE-UNLIVING" />
     <Subrace Value="SUBRACE-UNLI_BROKEN_SKELETON" />
-    <CharacterMale Value="Broken Skeleton" />
-    <CharacterFemale Value="Broken Skeleton" />
+    <CharacterMale Value="Złamany szkielet" />
+    <CharacterFemale Value="Złamany szkielet" />
   </NAME_COLLECTION-UNLI_BROKEN_SKELETON>
   <NAME_COLLECTION-UNLI_CORPSE>
     <Race Value="RACE-UNLIVING" />
@@ -4455,14 +4455,14 @@
   <NAME_COLLECTION-UNLI_HUM_SKELETON>
     <Race Value="RACE-UNLIVING" />
     <Subrace Value="SUBRACE-UNLI_HUM_SKELETON" />
-    <CharacterMale Value="Human Skeleton" />
-    <CharacterFemale Value="Human Skeleton" />
+    <CharacterMale Value="Ludzki szkielet" />
+    <CharacterFemale Value="Ludzki szkielet" />
   </NAME_COLLECTION-UNLI_HUM_SKELETON>
   <NAME_COLLECTION-UNLI_ORC_SKELETON>
     <Race Value="RACE-UNLIVING" />
     <Subrace Value="SUBRACE-UNLI_ORC_SKELETON" />
-    <CharacterMale Value="Orc Skeleton" />
-    <CharacterFemale Value="Orc Skeleton" />
+    <CharacterMale Value="Ork Skeleton" />
+    <CharacterFemale Value="Ork Skeleton" />
   </NAME_COLLECTION-UNLI_ORC_SKELETON>
   <NAME_COLLECTION-UNLI_TOPIELEC>
     <Race Value="RACE-UNLIVING" />
@@ -4491,8 +4491,8 @@
   <NAME_COLLECTION-UNLI_GHOST>
     <Race Value="RACE-UNLIVING" />
     <Subrace Value="SUBRACE-UNLI_GHOST" />
-    <CharacterMale Value="Ghost" />
-    <CharacterFemale Value="Ghost" />
+    <CharacterMale Value="Duch" />
+    <CharacterFemale Value="Duch" />
   </NAME_COLLECTION-UNLI_GHOST>
   <NAME_COLLECTION-WRAITH>
     <Race Value="RACE-UNLIVING" />
@@ -4522,8 +4522,8 @@
   <NAME_COLLECTION-DRAGON>
     <Race Value="RACE-MYTHICAL" />
     <Subrace Value="SUBRACE-DRAGON" />
-    <CharacterMale Value="Dragon" />
-    <CharacterFemale Value="Dragon" />
+    <CharacterMale Value="Smok" />
+    <CharacterFemale Value="Smok" />
   </NAME_COLLECTION-DRAGON>
   <NAME_COLLECTION-ZMEY>
     <Race Value="RACE-MYTHICAL" />
@@ -4541,13 +4541,13 @@
     <Race Value="RACE-MYTHICAL" />
     <Subrace Value="SUBRACE-TROLL_ROCKERS" />
     <CharacterMale Value="Rockers" />
-    <CharacterFemale Value="Rockers" />
+    <CharacterFemale Value="Rockery" />
   </NAME_COLLECTION-TROLL_ROCKERS>
   <NAME_COLLECTION-TROLL_ICICLES>
     <Race Value="RACE-MYTHICAL" />
     <Subrace Value="SUBRACE-TROLL_ICICLES" />
-    <CharacterMale Value="Icicles" />
-    <CharacterFemale Value="Icicles" />
+    <CharacterMale Value="Sople" />
+    <CharacterFemale Value="Sople" />
   </NAME_COLLECTION-TROLL_ICICLES>
   <NAME_COLLECTION-TROLL_LAVA_ROCKERS>
     <Race Value="RACE-MYTHICAL" />
@@ -4570,14 +4570,14 @@
   <NAME_COLLECTION-TROLL_ICE>
     <Race Value="RACE-MYTHICAL" />
     <Subrace Value="SUBRACE-TROLL_ICE" />
-    <CharacterMale Value="Ice Troll" />
-    <CharacterFemale Value="Ice Troll" />
+    <CharacterMale Value="Lód Troll" />
+    <CharacterFemale Value="Troll lodowy" />
   </NAME_COLLECTION-TROLL_ICE>
   <NAME_COLLECTION-TROLL_LAVA>
     <Race Value="RACE-MYTHICAL" />
     <Subrace Value="SUBRACE-TROLL_LAVA" />
-    <CharacterMale Value="Lava Troll" />
-    <CharacterFemale Value="Lava Troll" />
+    <CharacterMale Value="Lawa Troll" />
+    <CharacterFemale Value="Lawa Troll" />
   </NAME_COLLECTION-TROLL_LAVA>
   <NAME_COLLECTION-DARKNESS_MROKI>
     <Race Value="RACE-MYTHICAL" />
@@ -4588,15 +4588,15 @@
   <NAME_COLLECTION-ELDER_DARKNESS_MROKI>
     <Race Value="RACE-MYTHICAL" />
     <Subrace Value="SUBRACE-ELDER_DARKNESS_MROKI" />
-    <CharacterMale Value="Elder Mroki" />
-    <CharacterFemale Value="Elder Mroki" />
+    <CharacterMale Value="Starszy Mroki" />
+    <CharacterFemale Value="Starszy Mroki" />
   </NAME_COLLECTION-ELDER_DARKNESS_MROKI>
   <NAME_COLLECTION-BOSS>
     <Race Value="RACE-MYTHICAL" />
     <Subrace Value="SUBRACE-BOSS" />
     <Subrace Value="SUBRACE-WEAK_BOSS" />
-    <CharacterMale Value="Light-corrupted Zmey" />
-    <CharacterFemale Value="Light-corrupted Zmey" />
+    <CharacterMale Value="Lekkie uszkodzenie Zmey" />
+    <CharacterFemale Value="Lekkie uszkodzenie Zmey" />
   </NAME_COLLECTION-BOSS>
   <NAME_COLLECTION-DWARVEN_GUARDIAN_STATUE>
     <Race Value="RACE-MYTHICAL" />
@@ -4604,27 +4604,27 @@
     <Subrace Value="SUBRACE-DWARVEN_GUARDIAN_STATUE_2" />
     <Subrace Value="SUBRACE-DWARVEN_GUARDIAN_STATUE_3" />
     <Subrace Value="SUBRACE-DWARVEN_GUARDIAN_STATUE_4" />
-    <CharacterMale Value="Guardian Statue" />
-    <CharacterFemale Value="Guardian Statue" />
+    <CharacterMale Value="Statua strażnika" />
+    <CharacterFemale Value="Statua strażnika" />
   </NAME_COLLECTION-DWARVEN_GUARDIAN_STATUE>
   <!-- Summons and pets-->
   <NAME_COLLECTION-FAIL_SUMMON>
     <Race Value="RACE-DEMON" />
     <Subrace Value="SUBRACE-FAIL_SUMMON" />
-    <CharacterMale Value="Failed Summon" />
-    <CharacterFemale Value="Failed Summon" />
+    <CharacterMale Value="Niepowodzenie przywołania" />
+    <CharacterFemale Value="Niepowodzenie przywołania" />
   </NAME_COLLECTION-FAIL_SUMMON>
   <NAME_COLLECTION-SUMMON_DEMON_SKSHACK>
     <Race Value="RACE-DEMON" />
     <Subrace Value="SUBRACE-SUMMON_DEMON_SKSHACK" />
     <CharacterMale Value="Summon Skshack" />
-    <CharacterFemale Value="Summon Skshack" />
+    <CharacterFemale Value="Przywołaj Skshacka" />
   </NAME_COLLECTION-SUMMON_DEMON_SKSHACK>
   <NAME_COLLECTION-SUMMON_DEMON_CZORT>
     <Race Value="RACE-DEMON" />
     <Subrace Value="SUBRACE-SUMMON_DEMON_CZORT" />
-    <CharacterMale Value="Summon Czort" />
-    <CharacterFemale Value="Summon Czort" />
+    <CharacterMale Value="Przywołaj Czorta" />
+    <CharacterFemale Value="Przywołaj Czorta" />
   </NAME_COLLECTION-SUMMON_DEMON_CZORT>
   <NAME_COLLECTION-SUMMON_DEMON_CMUCH>
     <Race Value="RACE-DEMON" />
@@ -4635,26 +4635,26 @@
   <NAME_COLLECTION-SUMMON_DEMON_POLUDNICA>
     <Race Value="RACE-DEMON" />
     <Subrace Value="SUBRACE-SUMMON_DEMON_POLUDNICA" />
-    <CharacterMale Value="Summon Poludnica" />
-    <CharacterFemale Value="Summon Poludnica" />
+    <CharacterMale Value="Przywołaj Poludnicę" />
+    <CharacterFemale Value="Przywołaj Poludnicę" />
   </NAME_COLLECTION-SUMMON_DEMON_POLUDNICA>
   <NAME_COLLECTION-SUMMON_DEMON_ALKONOST>
     <Race Value="RACE-DEMON" />
     <Subrace Value="SUBRACE-SUMMON_DEMON_ALKONOST" />
-    <CharacterMale Value="Summon Alkonost" />
-    <CharacterFemale Value="Summon Alkonost" />
+    <CharacterMale Value="Przywołanie Alkonost" />
+    <CharacterFemale Value="Przywołanie Alkonost" />
   </NAME_COLLECTION-SUMMON_DEMON_ALKONOST>
   <NAME_COLLECTION-SUMMON_DEMON_BIES>
     <Race Value="RACE-DEMON" />
     <Subrace Value="SUBRACE-SUMMON_DEMON_BIES" />
-    <CharacterMale Value="Summon Bies" />
-    <CharacterFemale Value="Summon Bies" />
+    <CharacterMale Value="Przywołaj Bies" />
+    <CharacterFemale Value="Przywołaj Bies" />
   </NAME_COLLECTION-SUMMON_DEMON_BIES>
   <NAME_COLLECTION-SUMMON_NIGHT_WEREWOLF>
     <Race Value="RACE-DEMON" />
     <Subrace Value="SUBRACE-SUMMON_NIGHT_WEREWOLF" />
-    <CharacterMale Value="Summon Werewolf" />
-    <CharacterFemale Value="Summon Werewolf" />
+    <CharacterMale Value="Przywołaj wilkołaka" />
+    <CharacterFemale Value="Przywołaj wilkołaka" />
   </NAME_COLLECTION-SUMMON_NIGHT_WEREWOLF>
   <NAME_COLLECTION-SUMMON_UNLI_BROKEN_SKELETON>
     <Race Value="RACE-UNLIVING" />
@@ -4677,26 +4677,26 @@
   <NAME_COLLECTION-SUMMON_UNLI_TOPIELEC>
     <Race Value="RACE-UNLIVING" />
     <Subrace Value="SUBRACE-SUMMON_UNLI_TOPIELEC" />
-    <CharacterMale Value="Summon Topielec" />
+    <CharacterMale Value="Przywołaj Topielec" />
     <CharacterFemale Value="Summon Topielec" />
   </NAME_COLLECTION-SUMMON_UNLI_TOPIELEC>
   <NAME_COLLECTION-SUMMON_UNLI_HUM_SKELETON>
     <Race Value="RACE-UNLIVING" />
     <Subrace Value="SUBRACE-SUMMON_UNLI_HUM_SKELETON" />
-    <CharacterMale Value="Summon Human Skeleton" />
-    <CharacterFemale Value="Summon Human Skeleton" />
+    <CharacterMale Value="Przywołaj Ludzki Szkielet" />
+    <CharacterFemale Value="Przywołaj Ludzki Szkielet" />
   </NAME_COLLECTION-SUMMON_UNLI_HUM_SKELETON>
   <NAME_COLLECTION-SUMMON_UNLI_ORC_SKELETON>
     <Race Value="RACE-UNLIVING" />
     <Subrace Value="SUBRACE-SUMMON_UNLI_ORC_SKELETON" />
-    <CharacterMale Value="Orc Skeleton" />
+    <CharacterMale Value="Ork Skeleton" />
     <CharacterFemale Value="Orc Skeleton" />
   </NAME_COLLECTION-SUMMON_UNLI_ORC_SKELETON>
   <NAME_COLLECTION-SUMMON_RAT>
     <Race Value="RACE-BEAST" />
     <Subrace Value="SUBRACE-SUMMON_RAT" />
-    <CharacterMale Value="Summon Rat" />
-    <CharacterFemale Value="Summon Rat" />
+    <CharacterMale Value="Przywołaj Szczura" />
+    <CharacterFemale Value="Przywołaj Szczura" />
   </NAME_COLLECTION-SUMMON_RAT>
   <NAME_COLLECTION-SUMMON_SPIDER_SPITTING>
     <Race Value="RACE-BEAST" />
@@ -4713,20 +4713,20 @@
   <NAME_COLLECTION-SUMMON_SPIDER_GIANT>
     <Race Value="RACE-BEAST" />
     <Subrace Value="SUBRACE-SUMMON_SPIDER_GIANT" />
-    <CharacterMale Value="Summon Giant Spider" />
-    <CharacterFemale Value="Summon Giant Spider" />
+    <CharacterMale Value="Przywołaj Giant Spider" />
+    <CharacterFemale Value="Przywołaj Giant Spider" />
   </NAME_COLLECTION-SUMMON_SPIDER_GIANT>
   <NAME_COLLECTION-SUMMON_BOAR_WILD>
     <Race Value="RACE-BEAST" />
     <Subrace Value="SUBRACE-SUMMON_BOAR_WILD" />
-    <CharacterMale Value="Summon Wild Boar" />
-    <CharacterFemale Value="Summon Wild Boar" />
+    <CharacterMale Value="Przywołaj Dzika" />
+    <CharacterFemale Value="Przywołaj Dzika" />
   </NAME_COLLECTION-SUMMON_BOAR_WILD>
   <NAME_COLLECTION-SUMMON_BOAR_GIANT_WILD>
     <Race Value="RACE-BEAST" />
     <Subrace Value="SUBRACE-SUMMON_BOAR_GIANT_WILD" />
-    <CharacterMale Value="Summon Giant Wild Boar" />
-    <CharacterFemale Value="Summon Giant Wild Boar" />
+    <CharacterMale Value="Przywołaj Gigantycznego Dzika" />
+    <CharacterFemale Value="Przywołaj Gigantycznego Dzika" />
   </NAME_COLLECTION-SUMMON_BOAR_GIANT_WILD>
   <NAME_COLLECTION-SUMMON_BEE_BLOOD>
     <Race Value="RACE-BEAST" />
@@ -4737,8 +4737,8 @@
   <NAME_COLLECTION-SUMMON_KRAKEN_TENTACLE>
     <Race Value="RACE-BEAST" />
     <Subrace Value="SUBRACE-SUMMON_KRAKEN_TENTACLE" />
-    <CharacterMale Value="Summon Tentacle" />
-    <CharacterFemale Value="Summon Tentacle" />
+    <CharacterMale Value="Przywołaj Mackę" />
+    <CharacterFemale Value="Przywołaj Mackę" />
   </NAME_COLLECTION-SUMMON_KRAKEN_TENTACLE>
   <NAME_COLLECTION-SUMMON_TROLL_LAVA_ROCKERS>
     <Race Value="RACE-MYTHICAL" />
@@ -4749,44 +4749,44 @@
   <NAME_COLLECTION-SUMMON_LIGHT_SVIATELKO>
     <Race Value="RACE-DEMON" />
     <Subrace Value="SUBRACE-SUMMON_LIGHT_SVIATELKO" />
-    <CharacterMale Value="Summon Sviatelko" />
-    <CharacterFemale Value="Summon Sviatelko" />
+    <CharacterMale Value="Przywołaj Sviatelko" />
+    <CharacterFemale Value="Przywołaj Sviatelko" />
   </NAME_COLLECTION-SUMMON_LIGHT_SVIATELKO>
   <NAME_COLLECTION-SUMMON_BEE_DRAGON>
     <Race Value="RACE-BEAST" />
     <Subrace Value="SUBRACE-SUMMON_BEE_DRAGON" />
-    <CharacterMale Value="Summon Dragon Bee" />
-    <CharacterFemale Value="Summon Dragon Bee" />
+    <CharacterMale Value="Przywołaj Dragon Bee" />
+    <CharacterFemale Value="Przywołaj Dragon Bee" />
   </NAME_COLLECTION-SUMMON_BEE_DRAGON>
   <NAME_COLLECTION-SUMMON_FOREST_PINECONETTES>
     <Race Value="RACE-DEMON" />
     <Subrace Value="SUBRACE-SUMMON_FOREST_PINECONETTES" />
-    <CharacterMale Value="Summon Pineconette" />
+    <CharacterMale Value="Przywołaj Pineconette" />
     <CharacterFemale Value="Summon Pineconette" />
   </NAME_COLLECTION-SUMMON_FOREST_PINECONETTES>
   <NAME_COLLECTION-SUMMON_FOREST_ELDERCONE>
     <Race Value="RACE-DEMON" />
     <Subrace Value="SUBRACE-SUMMON_FOREST_ELDERCONE" />
-    <CharacterMale Value="Summon Eldercone" />
-    <CharacterFemale Value="Summon Eldercone" />
+    <CharacterMale Value="Przywołaj Eldercone" />
+    <CharacterFemale Value="Przywołaj Eldercone" />
   </NAME_COLLECTION-SUMMON_FOREST_ELDERCONE>
   <NAME_COLLECTION-SUMMON_FOREST_VILY>
     <Race Value="RACE-DEMON" />
     <Subrace Value="SUBRACE-SUMMON_FOREST_VILY" />
-    <CharacterMale Value="Summon Vily" />
-    <CharacterFemale Value="Summon Vily" />
+    <CharacterMale Value="Przywołaj Vily" />
+    <CharacterFemale Value="Przywołaj Vily" />
   </NAME_COLLECTION-SUMMON_FOREST_VILY>
   <NAME_COLLECTION-SUMMON_UNLI_GHOST>
     <Race Value="RACE-UNLIVING" />
     <Subrace Value="SUBRACE-SUMMON_UNLI_GHOST" />
-    <CharacterMale Value="Summon Ghost" />
+    <CharacterMale Value="Przywołaj Ducha" />
     <CharacterFemale Value="Summon Ghost" />
   </NAME_COLLECTION-SUMMON_UNLI_GHOST>
   <NAME_COLLECTION-SUMMON_UNLI_WRAITH>
     <Race Value="RACE-UNLIVING" />
     <Subrace Value="SUBRACE-SUMMON_UNLI_WRAITH" />
-    <CharacterMale Value="Summon Wraith" />
-    <CharacterFemale Value="Summon Wraith" />
+    <CharacterMale Value="Przywołaj Wraith" />
+    <CharacterFemale Value="Przywołaj Wraith" />
   </NAME_COLLECTION-SUMMON_UNLI_WRAITH>
   <NAME_COLLECTION-PET_UNLI_STRONG_GHOST>
     <Race Value="RACE-UNLIVING" />
@@ -4849,14 +4849,14 @@
     <CharacterFemale Value="Pet Spitting Spider" />
   </NAME_COLLECTION-PET_SPIDER_WEAK_SPITTING>
   <NAME_COLLECTION-VILLAGE>
-    <CharacterMale Value="Bialobrod" />
+    <CharacterMale Value="Białobrod" />
     <CharacterMale Value="Slavogrod" />
-    <CharacterMale Value="Lysogora" />
+    <CharacterMale Value="Lizogora" />
     <CharacterMale Value="Ostrogora" />
     <CharacterMale Value="Radogrod" />
-    <CharacterMale Value="Swiatogard" />
+    <CharacterMale Value="Światogard" />
     <CharacterMale Value="Krasnodvor" />
-    <CharacterMale Value="Nowogrod" />
+    <CharacterMale Value="Nowogród" />
     <CharacterMale Value="Dudnica" />
     <CharacterMale Value="Sokokovice" />
   </NAME_COLLECTION-VILLAGE>

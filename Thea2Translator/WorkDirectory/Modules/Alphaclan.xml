@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="Windows-1252"?>
+<?xml version="1.0" encoding="windows-1250"?>
 <MODULE xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Alphaclan" lastEventIndex="80" allowToUse="true" uniqueModuleID="1862270847">
   <Adventure name="OrcKillDwarf" uniqueID="10" typeGeneric="false" typePerGroupGeneric="false" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="57" joinIsForced="false" joinType="AllAlly" joinRange="MovementArea">
     <nodes xsi:type="NodeStarting" ID="1" positionX="10" positionY="-10" width="347" height="825" image="Event016">
@@ -4383,12 +4383,12 @@ The orcs are strangely surprised by your valiant success. They say the gods must
       <outputs name="[Skeleton]Go in alone and convince your kin to leave here." ownerID="2" targetID="11" group="G1" fromX="756" fromY="-763" />
       <outputs name="[Skeleton]Go in alone and convince your kin to leave here." ownerID="2" targetID="9" group="G1" fromX="756" fromY="-843" />
       <outputs name="Come back another time." ownerID="2" targetID="5" fromX="756" fromY="-923" />You approach the graveyard where the alpha clan sent you to deal with some skeletons.</nodes>
-    <nodes xsi:type="NodeChallenge" ID="3" positionX="809" positionY="997" width="500" height="689" challengeType="TypePhysical" versusGroup="GROUP-ORC_SKELETON_6P_2M_3S" challengeScale="101" challengedList="ppl">
-      <outputs name="Win" ownerID="3" targetID="68" fromX="1250" fromY="538" />
-      <outputs name="Lose" ownerID="3" targetID="56" fromX="1250" fromY="458" />
-      <outputs name="Surrender" ownerID="3" targetID="81" fromX="1250" fromY="378" />
+    <nodes xsi:type="NodeChallenge" ID="3" positionX="809" positionY="997" width="500" height="726" challengeType="TypePhysical" versusGroup="GROUP-ORC_SKELETON_6P_2M_3S" challengeScale="101" challengedList="ppl">
+      <outputs name="Win" ownerID="3" targetID="68" fromX="1250" fromY="501" />
+      <outputs name="Lose" ownerID="3" targetID="56" fromX="1250" fromY="421" />
+      <outputs name="Surrender" ownerID="3" targetID="81" fromX="1250" fromY="341" />
     </nodes>
-    <nodes xsi:type="NodeChallenge" ID="4" positionX="887" positionY="128" width="500" height="726" challengeType="TypeMental" versusConcept="true" versusGroup="GROUP-CON_M_0P_1M_0S" challengeScale="400" challengedList="ppl">
+    <nodes xsi:type="NodeChallenge" ID="4" positionX="895" positionY="158" width="500" height="726" challengeType="TypeMental" versusConcept="true" versusGroup="GROUP-CON_M_0P_4M_0S" challengeScale="101" challengedList="ppl">
       <logic>
         <FilterBlock>
           <LogicFilter name="hunter">
@@ -4402,9 +4402,9 @@ The orcs are strangely surprised by your valiant success. They say the gods must
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Win" ownerID="4" targetID="19" fromX="1328" fromY="-367" />
-      <outputs name="Lose" ownerID="4" targetID="46" fromX="1328" fromY="-447" />
-      <outputs name="Surrender" ownerID="4" targetID="46" fromX="1328" fromY="-527" />
+      <outputs name="Win" ownerID="4" targetID="19" fromX="1333" fromY="-342" />
+      <outputs name="Lose" ownerID="4" targetID="46" fromX="1333" fromY="-423" />
+      <outputs name="Surrender" ownerID="4" targetID="46" fromX="1333" fromY="-503" />
     </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="5" positionX="-187" positionY="-842" width="350" height="530" linkedEventUniqueID="0">
       <logic>
@@ -4431,7 +4431,7 @@ The orcs are strangely surprised by your valiant success. They say the gods must
       <outputs name="This challenge is too great. Abandon it." ownerID="7" targetID="48" fromX="1161" fromY="-1239" />
       <outputs name="[Unliving]No need to kill. Tell your unliving brethren to abandon the area." ownerID="7" targetID="8" fromX="1161" fromY="-1319" />You prepare a ritual that should disrupt the dark magic that animates these bones. This will make destroying them much easier. Now that they are wakened, you can face them in the spirit realm and thus completely destroy the dark magic.
 </nodes>
-    <nodes xsi:type="NodeChallenge" ID="8" positionX="1431" positionY="-1326" width="500" height="769" challengeType="TypeMental" versusGroup="GROUP-ORC_SKELETON_6P_2M_3S" challengeScale="101" challengedList="ppl">
+    <nodes xsi:type="NodeChallenge" ID="8" positionX="1431" positionY="-1326" width="500" height="807" challengeType="TypeMental" versusGroup="GROUP-ORC_SKELETON_6P_2M_3S" challengeScale="101" challengedList="ppl">
       <logic>
         <FilterBlock>
           <LogicFilter name="unl" makePublic="true">
@@ -4445,10 +4445,10 @@ The orcs are strangely surprised by your valiant success. They say the gods must
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Win" ownerID="8" targetID="49" group="G1" fromX="1872" fromY="-1784" />
-      <outputs name="Lose" ownerID="8" targetID="46" fromX="1872" fromY="-1864" />
-      <outputs name="Surrender" ownerID="8" targetID="46" fromX="1872" fromY="-1944" />
-      <outputs name="Win" ownerID="8" targetID="50" group="G1" fromX="1872" fromY="-2024" />
+      <outputs name="Win" ownerID="8" targetID="49" group="G1" fromX="1872" fromY="-1821" />
+      <outputs name="Lose" ownerID="8" targetID="46" fromX="1872" fromY="-1901" />
+      <outputs name="Surrender" ownerID="8" targetID="46" fromX="1872" fromY="-1981" />
+      <outputs name="Win" ownerID="8" targetID="50" group="G1" fromX="1872" fromY="-2062" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="9" positionX="140" positionY="-1358" width="350" height="681">
       <logic>
@@ -4573,8 +4573,8 @@ The orcs thank you for freeing their fallen, and leave a reward.</nodes>
       <outputs name="Kill the wraith, as it's clearly an instrument of this evil!" ownerID="25" targetID="34" fromX="-2428" fromY="-931" />The skeletons and their dark master lie dead, but his body dissolves into thick smoke before you can inspect it further.
 
 You also find a wraith, likely the product of whatever dark arts were performed here. It may want to stay with you.</nodes>
-    <nodes xsi:type="NodeAdventure" ID="28" positionX="2932" positionY="-167" width="350" height="681">
-      <outputs name="Leave." ownerID="28" targetID="48" fromX="3257" fromY="-614" />The orc skeletons defeat your efforts and swarm you. The orcs have to come to your rescue and they are not impressed with your 'help.'</nodes>
+    <nodes xsi:type="NodeAdventure" ID="28" positionX="2932" positionY="-167" width="350" height="725">
+      <outputs name="Leave." ownerID="28" targetID="48" fromX="3257" fromY="-658" />The orc skeletons defeat your efforts and swarm you. The orcs have to come to your rescue and they are not impressed with your 'help.'</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="30" positionX="3947" positionY="-538" width="350" height="408" allPlayersXP="1" allPlayersRP="1" linkedEventUniqueID="0">
       <logic>
         <ModifierBlock>
@@ -4702,8 +4702,8 @@ The orcs are not happy that you did not end their kin's unnatural state, but you
       <outputs name="Lose" ownerID="55" targetID="56" fromX="-2541" fromY="-80" />
       <outputs name="Surrender" ownerID="55" targetID="81" fromX="-2541" fromY="-160" />
     </nodes>
-    <nodes xsi:type="NodeAdventure" ID="56" positionX="2780" positionY="831" width="350" height="681">
-      <outputs name="Leave." ownerID="56" targetID="48" fromX="3105" fromY="383" />The unliving orcs beat you badly and force you to flee. The orcs have to come to your rescue and they are not impressed with your 'help.'</nodes>
+    <nodes xsi:type="NodeAdventure" ID="56" positionX="2780" positionY="831" width="350" height="725">
+      <outputs name="Leave." ownerID="56" targetID="48" fromX="3105" fromY="339" />The unliving orcs beat you badly and force you to flee. The orcs have to come to your rescue and they are not impressed with your 'help.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="58" positionX="-1217" positionY="-883" width="350" height="725">
       <logic>
         <ModifierBlock>
@@ -4737,7 +4737,7 @@ They thank you for getting rid of the scourge, and leave a reward.</nodes>
       </logic>
       <outputs ownerID="60" targetID="58" fromX="-1694" fromY="-1124" />
     </nodes>
-    <nodes xsi:type="NodeAdventure" ID="62" positionX="343" positionY="1296" width="350" height="922">
+    <nodes xsi:type="NodeAdventure" ID="62" positionX="343" positionY="1296" width="350" height="966">
       <logic>
         <FilterBlock>
           <LogicFilter name="magic" makePublic="true">
@@ -4754,10 +4754,10 @@ They thank you for getting rid of the scourge, and leave a reward.</nodes>
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Attack now while he is busy." ownerID="62" targetID="55" fromX="668" fromY="848" />
-      <outputs name="[Orc witch or matriarch]This is no mere man -- it is an orc male, daring to practise necromancy! Charge at him." ownerID="62" targetID="78" group="G1" fromX="668" fromY="768" />
-      <outputs name="[Orc witch or matriarch]This is no mere man -- it is an orc male, daring to practise necromancy! Charge at him." ownerID="62" targetID="79" group="G1" fromX="668" fromY="688" />
-      <outputs name="Prepare a ritual to face these fiends in the spirit world!" ownerID="62" targetID="85" fromX="668" fromY="608" />Neither the man in the arena nor the orc skeletons react to you. Whatever this is, they are entirely enthralled. 
+      <outputs name="Attack now while he is busy." ownerID="62" targetID="55" fromX="668" fromY="804" />
+      <outputs name="[Orc witch or matriarch]This is no mere man -- it is an orc male, daring to practise necromancy! Charge at him." ownerID="62" targetID="78" group="G1" fromX="668" fromY="724" />
+      <outputs name="[Orc witch or matriarch]This is no mere man -- it is an orc male, daring to practise necromancy! Charge at him." ownerID="62" targetID="79" group="G1" fromX="668" fromY="644" />
+      <outputs name="Prepare a ritual to face these fiends in the spirit world!" ownerID="62" targetID="85" fromX="668" fromY="564" />Neither the man in the arena nor the orc skeletons react to you. Whatever this is, they are entirely enthralled. 
 
 You sense strong turmoil magic here, and you think whatever this ritual is, it is clearly necromancy!</nodes>
     <nodes xsi:type="NodeAdventure" ID="64" positionX="2442" positionY="-724" width="350" height="681">
@@ -4780,10 +4780,10 @@ You sense strong turmoil magic here, and you think whatever this ritual is, it i
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Leave." ownerID="64" targetID="21" group="G1" fromX="2767" fromY="-1171" />You destroy the binding spell and the unliving orcs collapse in a pile of bones. 
+      <outputs name="Leave." ownerID="64" targetID="21" group="G1" fromX="2767" fromY="-1215" />You destroy the binding spell and the unliving orcs collapse in a pile of bones. 
 
 The orcs thank you for freeing their fallen, and leave a reward.</nodes>
-    <nodes xsi:type="NodeChallenge" ID="66" positionX="-237" positionY="1531" width="500" height="689" challengeType="TypePhysical" versusGroup="GROUP-ORC_SKELETON_6P_2M_3S" challengeScale="101" challengedList="ppl">
+    <nodes xsi:type="NodeChallenge" ID="66" positionX="-237" positionY="1531" width="500" height="726" challengeType="TypePhysical" versusGroup="GROUP-ORC_SKELETON_6P_2M_3S" challengeScale="101" challengedList="ppl">
       <logic>
         <FilterBlock>
           <LogicResultAction>
@@ -4791,9 +4791,9 @@ The orcs thank you for freeing their fallen, and leave a reward.</nodes>
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Win" ownerID="66" targetID="67" fromX="204" fromY="1072" />
-      <outputs name="Lose" ownerID="66" targetID="56" fromX="204" fromY="992" />
-      <outputs name="Surrender" ownerID="66" targetID="81" fromX="204" fromY="912" />
+      <outputs name="Win" ownerID="66" targetID="67" fromX="204" fromY="1035" />
+      <outputs name="Lose" ownerID="66" targetID="56" fromX="204" fromY="955" />
+      <outputs name="Surrender" ownerID="66" targetID="81" fromX="204" fromY="875" />
     </nodes>
     <nodes xsi:type="NodeProduceDrop" ID="67" positionX="717" positionY="1511" width="460" height="429">
       <logic>
@@ -4805,7 +4805,7 @@ The orcs thank you for freeing their fallen, and leave a reward.</nodes>
       </logic>
       <outputs ownerID="67" targetID="68" fromX="1147" fromY="1152" />
     </nodes>
-    <nodes xsi:type="NodeAdventure" ID="68" positionX="1550" positionY="1649" width="350" height="681" image="Event020">
+    <nodes xsi:type="NodeAdventure" ID="68" positionX="1550" positionY="1649" width="350" height="725" image="Event020">
       <logic>
         <ModifierBlock>
           <LogicModifiers>
@@ -4822,7 +4822,7 @@ The orcs thank you for freeing their fallen, and leave a reward.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Leave." ownerID="68" targetID="21" group="G1" fromX="1875" fromY="1201" />You destroy the skeletons and burn the remains so they do not rise again.
+      <outputs name="Leave." ownerID="68" targetID="21" group="G1" fromX="1875" fromY="1157" />You destroy the skeletons and burn the remains so they do not rise again.
 
 The orcs thank you for freeing their fallen, and leave a reward.</nodes>
     <nodes xsi:type="NodeSpawnOnMap" ID="69" positionX="2182" positionY="-2644" width="480" height="503" radius="8" groupID="GROUP-ORC_SKELETON_5P_1M_2S" destroyOwner="false" linkedEventUniqueID="0">
@@ -7053,7 +7053,7 @@ The orcs are pleased with your help and offer a small reward. Later, you notice 
       </logic>
       <outputs name="Ask if they want to trade." ownerID="3" targetID="25" fromX="1212" fromY="356" />
       <outputs name="Have a drink together." ownerID="3" targetID="23" fromX="1212" fromY="276" />'Battle sisters,  well met.'</nodes>
-    <nodes xsi:type="NodeAdventureEnd" ID="4" positionX="1903" positionY="1012" width="350" height="455" linkedEventUniqueID="29" />
+    <nodes xsi:type="NodeAdventureEnd" ID="4" positionX="1903" positionY="1012" width="350" height="530" linkedEventUniqueID="29" />
     <nodes xsi:type="NodeAdventureEnd" ID="10" positionX="-103" positionY="-804" width="350" height="530" logBookName="QUEST_ALPHACLANSARMY" linkedEventUniqueID="0">
       <logic>
         <FilterBlock>
@@ -7085,7 +7085,7 @@ The orcs are pleased with your help and offer a small reward. Later, you notice 
       <outputs name="Lose" ownerID="12" targetID="14" fromX="2004" fromY="-986" />
       <outputs name="Surrender" ownerID="12" targetID="24" fromX="2004" fromY="-1066" />
     </nodes>
-    <nodes xsi:type="NodeAdventureEnd" ID="13" positionX="2893" positionY="-318" width="350" height="530" allPlayersXP="-1" logBookName="QUEST_ALPHACLANSARMY" linkedEventUniqueID="0">
+    <nodes xsi:type="NodeAdventureEnd" ID="13" positionX="2893" positionY="-318" width="350" height="530" allPlayersXP="-1" linkedEventUniqueID="0">
       <logic>
         <ModifierBlock>
           <LogicModifiers>
@@ -7094,7 +7094,7 @@ The orcs are pleased with your help and offer a small reward. Later, you notice 
         </ModifierBlock>
       </logic>
     </nodes>
-    <nodes xsi:type="NodeAdventureEnd" ID="14" positionX="3567" positionY="-790" width="350" height="530" logBookName="QUEST_ALPHACLANSARMY" linkedEventUniqueID="0">
+    <nodes xsi:type="NodeAdventureEnd" ID="14" positionX="3567" positionY="-790" width="350" height="530" linkedEventUniqueID="0">
       <logic>
         <ModifierBlock>
           <LogicModifiers>
@@ -7120,7 +7120,7 @@ The orcs are pleased with your help and offer a small reward. Later, you notice 
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="17" positionX="2221" positionY="-1428" width="350" height="725">
       <outputs name="Take their stuff and leave." ownerID="17" targetID="22" fromX="2546" fromY="-1919" />'We bow to your dominance, we do as you say as is our custom when met with an alpha.'</nodes>
-    <nodes xsi:type="NodeAdventureEnd" ID="18" positionX="3409" positionY="-1435" width="350" height="530" allPlayersXP="-1" logBookName="QUEST_ALPHACLANSARMY" linkedEventUniqueID="0">
+    <nodes xsi:type="NodeAdventureEnd" ID="18" positionX="3409" positionY="-1435" width="350" height="530" allPlayersXP="-1" linkedEventUniqueID="0">
       <logic>
         <ModifierBlock>
           <LogicModifiers>
@@ -11467,12 +11467,12 @@ So the core of darkness will remain at bay. Only what is left here with us will 
       <outputs name="So he is proposing sabotage? A fake heart designed to destroy, not restore, the old ways?" ownerID="15" targetID="11" fromX="3043" fromY="-528" />
       <outputs name="Why is he seeking to aid you?" ownerID="15" targetID="20" fromX="3043" fromY="-608" />'The earth shatters as the lightbringers escape the core and come up topside. With the light corrupted, the tremors should stop in time.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="16" positionX="5566" positionY="-91" width="350" height="805">
-      <outputs name="Agree and go hunt for some mroki. They can be found in the darkness, in volcanic biomes,." ownerID="16" targetID="18" fromX="5891" fromY="-582" />
-      <outputs name="Refuse and leave." ownerID="16" targetID="30" fromX="5891" fromY="-662" />'The mroki were once giants, you know? They were changed by darkness and over time became something entirely new. But their hearts, infused with my magic, will trick the mechanism in the living cave into thinking it is a giant's heart. 
+      <outputs name="Agree and go hunt for some mroki. They can be found in the darkness, in volcanic biomes." ownerID="16" targetID="18" fromX="5891" fromY="-582" />
+      <outputs name="Refuse and leave." ownerID="16" targetID="30" fromX="5547" fromY="-662" />'The mroki were once giants, you know? They were changed by darkness and over time became something entirely new. But their hearts, infused with my magic, will trick the mechanism in the living cave into thinking it is a giant's heart. 
 
 You will of course need to defeat the light-beast that now guards the chamber. But if you agree, I will aid you. And remember, not every mroki will have a heart, so it may take some hunting.'</nodes>
     <nodes xsi:type="NodeSpawnOnMap" ID="18" positionX="6034" positionY="-225" width="480" height="503" radius="0" destroyOwner="true" linkedEventUniqueID="0">
-      <outputs ownerID="18" targetID="19" fromX="6482" fromY="-657" />
+      <outputs ownerID="18" targetID="19" fromX="6482" fromY="-207" />
     </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="19" positionX="6638" positionY="-300" width="350" height="530" allPlayersXP="2" allPlayersRP="2" logBookName="QUEST_MQ_NECROMANCER" logBookDescription="QUEST_MQ_NECROMANCER_DES" linkedEventUniqueID="0">
       <logic>
@@ -11500,8 +11500,8 @@ You will of course need to defeat the light-beast that now guards the chamber. B
 'So, she did listen, but she was too cowardly to come! Or is it a sign of her brilliance that also resides within me that she should use the champions of other gods to do her bidding? It matters not, for you are here, willing to listen.'</nodes>
     <nodes xsi:type="NodeChallenge" ID="22" positionX="4734" positionY="-290" width="500" height="726" challengeType="TypePhysical" versusGroup="GROUP-Q_NECROMANCER_9P_9M_9S" challengeScale="101" challengedList="ppl">
       <outputs name="Win" ownerID="22" targetID="23" fromX="5175" fromY="-785" />
-      <outputs name="Lose" ownerID="22" targetID="26" fromX="5175" fromY="-865" />
-      <outputs name="Surrender" ownerID="22" targetID="26" fromX="5175" fromY="-945" />
+      <outputs name="Lose" ownerID="22" targetID="26" fromX="4750" fromY="-865" />
+      <outputs name="Surrender" ownerID="22" targetID="26" fromX="4750" fromY="-865" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="23" positionX="4614" positionY="-1377" width="350" height="725">
       <outputs name="Leave." ownerID="23" targetID="24" fromX="4939" fromY="-1868" />The necromancer's body turns to dark mist and dissolves. You must find other ways to stop the Shattering.

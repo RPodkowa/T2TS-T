@@ -243,13 +243,13 @@
 		<Entry Key="DES_TAG_DAMAGE_LIFE_LEECH" Val="Life Leech"/>
 		<Entry Key="DES_TAG_DAMAGE_SHIELD_LEECH" Val="Shield Leech"/>
 		<Entry Key="DES_TAG_DAMAGE_ADDITIVE" Val=" (Additive)"/>
-		<Entry Key="DES_TAG_DAMAGE_TRUE_ESSENCE_DES" Val="Deals 1.5x damage if the target has armour."/>
-		<Entry Key="DES_TAG_DAMAGE_POISON_ESSENCE_DES" Val="If the target has less than maximum hit points, damage is x1.25."/>
+		<Entry Key="DES_TAG_DAMAGE_TRUE_ESSENCE_DES" Val="Deals 150% damage if the target has armour."/>
+		<Entry Key="DES_TAG_DAMAGE_POISON_ESSENCE_DES" Val="If the target has less than maximum hit points, damage is +35%."/>
 		<Entry Key="DES_TAG_DAMAGE_AOE_ESSENCE_DES" Val="Melee weapons with AOE: Splash Damage is 75%.\nRanged weapons: Adds vertical splash."/>		
 		<Entry Key="DES_TAG_DAMAGE_LIFE_LEECH_ESSENCE_DES" Val="Returns 40% of the damage dealt as hit points."/>	
 		<Entry Key="DES_TAG_DAMAGE_SHIELD_LEECH_ESSENCE_DES" Val="Returns 50% of the damage dealt as shield points."/>
 		<Entry Key="DES_TAG_DAMAGE_TRUE_ANCIENT_DES" Val="Damages both shield and hit points for the full damage amount each."/>
-		<Entry Key="DES_TAG_DAMAGE_POISON_ANCIENT_DES" Val="If the target has less than maximum hit points, damage is x1.5."/>
+		<Entry Key="DES_TAG_DAMAGE_POISON_ANCIENT_DES" Val="If the target has less than maximum hit points, damage is +60%."/>
 		<Entry Key="DES_TAG_DAMAGE_AOE_ANCIENT_DES" Val="Melee weapons with AOE: Splash Damage is 100%.\nRanged weapons: Adds vertical splash."/>
 		<Entry Key="DES_TAG_DAMAGE_LIFE_LEECH_ANCIENT_DES" Val="Returns 80% of the damage dealt as hit points."/>
 		<Entry Key="DES_TAG_DAMAGE_SHIELD_LEECH_ANCIENT_DES" Val="Returns 100% of the damage dealt as shield points."/>
@@ -2056,7 +2056,7 @@
 		<Entry Key="DES_PET_WRAITH" Val="Wraith"/>
 		<Entry Key="DES_PET_WRAITH_DES" Val="Try calling me a pet again, you pathetic bag of flesh!"/>
 		<Entry Key="DES_PET_GHOST" Val="Ghost"/>
-		<Entry Key="DES_PET_GHOST_DES" Val="Your very own friendly ghost. Can be summoned to aid you in Spiritual challenges."/>
+		<Entry Key="DES_PET_GHOST_DES" Val="Your very own friendly ghost."/>
 		<Entry Key="DES_PET_CROW" Val="Crow"/>
 		<Entry Key="DES_PET_CROW_DES" Val="The best companion for a witch."/>
 		<Entry Key="DES_PET_SPIDER_SPITTING" Val="Spitting Spider"/>
@@ -2977,6 +2977,7 @@
 		<Entry Key="DES_SUBSKILL_SUMMON_PET_BOAR" Val="Summon Boar"/>
 		<Entry Key="DES_SUBSKILL_SUMMON_PET_SPIDER_SPITTING" Val="Summon Spitting Spider"/>
 		<Entry Key="DES_SUBSKILL_SUMMON_PET_ANIMAL_DES" Val="{COLOR:red}Only one copy of this character is permitted on the battlefield at any time.{END_COLOR}\nSummon your pet animal into a free melee spot."/>
+		<Entry Key="DES_SUBSKILL_SUMMON_PET_ANIMAL_RANGED_DES" Val="{COLOR:red}Only one copy of this character is permitted on the battlefield at any time.{END_COLOR}\nSummon your pet animal into a free ranged spot."/>
 		<Entry Key="DES_SUBSKILL_ADD_HEALTH_P_REGENERATION" Val="Increase Health Regeneration."/>
 		<Entry Key="DES_SUBSKILL_ADD_HEALTH_P_REGENERATION_DES" Val="Increase the amount of Health regenerated at the end of each turn."/>
 		<Entry Key="DES_SUBSKILL_MHP_REGENERATION" Val="Increase Sanity Regeneration"/>
@@ -3599,7 +3600,7 @@
 		<Entry Key="DES_TRAIT_ALL_ENEMIES_ARE_MINE" Val="Target Practice"/>
 		<Entry Key="DES_TRAIT_ALL_ENEMIES_ARE_MINE_DES" Val="Enemies give 15% extra Experience Points."/>
 		<Entry Key="DES_TRAIT_TOUGH_GUY" Val="Tough Guy"/>
-		<Entry Key="DES_TRAIT_TOUGH_GUY_DES" Val="Your followers get +10% Health but have and additional 5% chance to die when their Health is below 30%."/>
+		<Entry Key="DES_TRAIT_TOUGH_GUY_DES" Val="Your followers get +10% Health but have an additional 5% chance to die when their Health is below 30%."/>
 		<Entry Key="DES_TRAIT_DEMONIC_POSSESSION" Val="Demonic Possession"/>
 		<Entry Key="DES_TRAIT_DEMONIC_POSSESSION_DES" Val="The Chosen gets +15 Health and +30 Spiritual Shielding, but -80% Mysticism and Destiny."/>
 		<Entry Key="DES_TRAIT_SHADOW_PROTECTION" Val="Divine Protection"/>
@@ -3654,7 +3655,7 @@
 		<Entry Key="DES_TOOLTIP_PRODUCTION_COST" Val="Production Cost"/>
 		<Entry Key="DES_TOOLTIP_PRODUCTION_COST_DES" Val="How much production points it costs to create this item."/>
 		<Entry Key="DES_TOOLTIP_ITEM_VALUE" Val="Item Value"/>
-		<Entry Key="DES_TOOLTIP_ITEM_VALUE_DES" Val="Value of this item when it is traded. Note, that Traders will usually don't offer to pay you full prices, otherwise they would go bust!"/>
+		<Entry Key="DES_TOOLTIP_ITEM_VALUE_DES" Val="Value of this item when it is traded. Note, that Traders won't usually offer to pay you full prices, otherwise they would go bust!"/>
 		<Entry Key="DES_TOOLTIP_PACK_SIZE" Val="Pack Size"/>
 		<Entry Key="DES_TOOLTIP_PACK_SIZE_DES" Val="How many items you receive when production is finished."/>
 		<Entry Key="DES_TOOLTIP_FORFEIT" Val="Forfeit Challenge"/>
@@ -3875,6 +3876,8 @@
 		<Entry Key="DES_TOOLTIP_SHOW_NOTES_DES" Val="A space for custom notes."/>
 		<Entry Key="DES_TOOLTIP_TRANSFER_FOOD" Val="Transfer Food"/>
 		<Entry Key="DES_TOOLTIP_TRANSFER_FOOD_DES" Val="Use this to quickly transfer a variety of food between your groups."/>
+		<Entry Key="DES_TOOLTIP_GOD_POINTS_CLAIMED" Val="God Points"/>
+		<Entry Key="DES_TOOLTIP_GOD_POINTS_CLAIMED_DES" Val="God Points are added to your profile when opening the Game Summary screen. If you continue playing and earn more points, only the difference will be added next time."/>
 		
 		
 		<!-- LOCATIONS AND GROUPS -->

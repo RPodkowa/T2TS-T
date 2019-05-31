@@ -241,13 +241,13 @@
     <Entry Key="DES_TAG_DAMAGE_LIFE_LEECH" Val="Life Leech" />
     <Entry Key="DES_TAG_DAMAGE_SHIELD_LEECH" Val="Shield Leech" />
     <Entry Key="DES_TAG_DAMAGE_ADDITIVE" Val="(dodatek)" />
-    <Entry Key="DES_TAG_DAMAGE_TRUE_ESSENCE_DES" Val="Zadaje 1,5x obrażeń, jeśli cel ma zbroję." />
-    <Entry Key="DES_TAG_DAMAGE_POISON_ESSENCE_DES" Val="Jeśli cel ma mniej niż maksymalne punkty wytrzymałości, obrażenia wynoszą x1,25." />
+    <Entry Key="DES_TAG_DAMAGE_TRUE_ESSENCE_DES" Val="Zadaje 150% obrażeń, jeśli cel ma zbroję." />
+    <Entry Key="DES_TAG_DAMAGE_POISON_ESSENCE_DES" Val="Jeśli cel ma mniej niż maksymalne punkty wytrzymałości, obrażenia wynoszą + 35%." />
     <Entry Key="DES_TAG_DAMAGE_AOE_ESSENCE_DES" Val="Broń biała z AOE: Obrażenia od plusków wynoszą 75%. \nBroń dystansowa: Dodaje pionowy plusk." />
     <Entry Key="DES_TAG_DAMAGE_LIFE_LEECH_ESSENCE_DES" Val="Zwraca 40% zadanych obrażeń jako punkty wytrzymałości." />
     <Entry Key="DES_TAG_DAMAGE_SHIELD_LEECH_ESSENCE_DES" Val="Zwraca 50% zadanych obrażeń jako punkty tarczy." />
     <Entry Key="DES_TAG_DAMAGE_TRUE_ANCIENT_DES" Val="Zadaje obrażenia zarówno tarczy, jak i punktom życia za pełną wartość obrażeń." />
-    <Entry Key="DES_TAG_DAMAGE_POISON_ANCIENT_DES" Val="Jeśli cel ma mniej niż maksymalne punkty wytrzymałości, obrażenia wynoszą x1,5." />
+    <Entry Key="DES_TAG_DAMAGE_POISON_ANCIENT_DES" Val="Jeśli cel ma mniej niż maksymalne punkty wytrzymałości, obrażenia wynoszą + 60%." />
     <Entry Key="DES_TAG_DAMAGE_AOE_ANCIENT_DES" Val="Broń biała z AOE: Obrażenia od Splashu wynoszą 100%. \nBroń dystansowa: Dodaje pionowy plusk." />
     <Entry Key="DES_TAG_DAMAGE_LIFE_LEECH_ANCIENT_DES" Val="Zwraca 80% zadanych obrażeń jako punkty wytrzymałości." />
     <Entry Key="DES_TAG_DAMAGE_SHIELD_LEECH_ANCIENT_DES" Val="Zwraca 100% zadanych obrażeń jako punkty tarczy." />
@@ -2024,7 +2024,7 @@
     <Entry Key="DES_PET_WRAITH" Val="Wraith" />
     <Entry Key="DES_PET_WRAITH_DES" Val="Spróbuj ponownie nazwać mnie zwierzakiem, ty żałosna torebka ciała!" />
     <Entry Key="DES_PET_GHOST" Val="Duch" />
-    <Entry Key="DES_PET_GHOST_DES" Val="Twój własny, przyjazny duch. Może zostać wezwany do pomocy w wyzwaniach duchowych." />
+    <Entry Key="DES_PET_GHOST_DES" Val="Twój własny, przyjazny duch." />
     <Entry Key="DES_PET_CROW" Val="Wrona" />
     <Entry Key="DES_PET_CROW_DES" Val="Najlepszy towarzysz dla czarownicy." />
     <Entry Key="DES_PET_SPIDER_SPITTING" Val="Spitting Spider" />
@@ -2317,9 +2317,9 @@
     <Entry Key="DES_SKILL_STRONG_GATHERING_TOOL" Val="Pomoc kolekcjonera" />
     <Entry Key="DES_SKILL_STRONG_GATHERING_TOOL_DES" Val="Zapewnia premię do atrybutów Gromadzenie i Przenoszenie osobiste, gdy są one wyposażone." />
     <Entry Key="DES_SKILL_WEAK_MULTI_CRAFTING_TOOL" Val="Pomoc rzemieślnika " />
-    <Entry Key="DES_SKILL_WEAK_ADD_CRAFTING_TOOL" Val="Pomoc robotnicza " />
+    <Entry Key="DES_SKILL_WEAK_ADD_CRAFTING_TOOL" Val="Pomoc rzemieślnika" />
     <Entry Key="DES_SKILL_WEAK_CRAFTING_TOOL_DES" Val="Zapewnia premię do atrybutu Crafting, gdy jest wyposażony." />
-    <Entry Key="DES_SKILL_WEAK_ADD_CRAFTING_TOOL" Val="Pomoc robotnicza " />
+    <Entry Key="DES_SKILL_WEAK_ADD_CRAFTING_TOOL" Val="Pomoc rzemieślnika" />
     <Entry Key="DES_SKILL_WEAK_ADD_CRAFTING_TOOL_DES" Val="Zapewnia premię do atrybutu Craftingu, gdy jest wyposażony." />
     <Entry Key="DES_SKILL_CRAFTING_TOOL" Val="Pomoc wynalazcy" />
     <Entry Key="DES_SKILL_CRAFTING_TOOL_DES" Val="Zapewnia premię do atrybutów Rzemiosła i Badań po wyposażeniu. Zwiększa również regenerację poczytalności." />
@@ -2928,6 +2928,7 @@
     <Entry Key="DES_SUBSKILL_SUMMON_PET_BOAR" Val="Przywołaj Dzika" />
     <Entry Key="DES_SUBSKILL_SUMMON_PET_SPIDER_SPITTING" Val="Przywołaj Spitting Spider" />
     <Entry Key="DES_SUBSKILL_SUMMON_PET_ANIMAL_DES" Val="{COLOR:red}Tylko jedna kopia tej postaci jest dozwolona na polu bitwy w dowolnym momencie. {END_COLOR}\nPrzywołaj swoje zwierzę domowe do wolnego miejsca walki wręcz." />
+    <Entry Key="DES_SUBSKILL_SUMMON_PET_ANIMAL_RANGED_DES" Val="{COLOR:red}Tylko jedna kopia tej postaci jest dozwolona na polu bitwy w dowolnym momencie. {END_COLOR}\nPrzywołać swoje zwierzę domowe do wolnego miejsca na dystans." />
     <Entry Key="DES_SUBSKILL_ADD_HEALTH_P_REGENERATION" Val="Zwiększ regenerację zdrowia." />
     <Entry Key="DES_SUBSKILL_ADD_HEALTH_P_REGENERATION_DES" Val="Zwiększ ilość regenerowanych punktów życia na koniec każdej tury." />
     <Entry Key="DES_SUBSKILL_MHP_REGENERATION" Val="Zwiększ regenerację poczytalności" />
@@ -3320,8 +3321,8 @@
     <Entry Key="DES_SUBSKILL_GROUP_ADD_SHIELDING_P_M_S_DES" Val="Ta postać otrzymuje bonus do fizycznego, mentalnego i duchowego osłaniania z pobliskiego budynku." />
     <Entry Key="DES_SUBSKILL_GROUP_ADD_RESEARCH" Val="Bonus badawczy" />
     <Entry Key="DES_SUBSKILL_GROUP_ADD_RESEARCH_DES" Val="Ta postać otrzymuje bonus do atrybutu badań z pobliskiego budynku." />
-    <Entry Key="DES_SUBSKILL_GROUP_MEDICINE" Val="Premia lecznicza" />
-    <Entry Key="DES_SUBSKILL_GROUP_MEDICINE" Val="Premia lecznicza" />
+    <Entry Key="DES_SUBSKILL_GROUP_MEDICINE" Val="Ta postać otrzymuje bonus do atrybutu leczenia z pobliskiego budynku." />
+    <Entry Key="DES_SUBSKILL_GROUP_MEDICINE" Val="Ta postać otrzymuje bonus do atrybutu leczenia z pobliskiego budynku." />
     <Entry Key="DES_SUBSKILL_GROUP_LOWER_DEATH_CHANCE" Val="Bonus za niższą szansę na śmierć" />
     <Entry Key="DES_SUBSKILL_GROUP_LOWER_DEATH_CHANCE_DES" Val="Szansa na śmierć tej postaci z powodu poważnych ran zostaje zmniejszona przez pobliski budynek." />
     <Entry Key="DES_SUBSKILL_GROUP_ADD_CHILDREN_ATT" Val="Główny atrybut atrybutu" />
@@ -3461,8 +3462,8 @@
     <Entry Key="DES_TRAIT_START_LOYALTY_DEMONS_DES" Val="Początek lojalności frakcji dla wszystkich frakcji demonów wzrasta do 10." />
     <Entry Key="DES_TRAIT_FAMILIAR_AREA" Val="Obszar rodzinny" />
     <Entry Key="DES_TRAIT_FAMILIAR_AREA_DES" Val="Camping daje dodatkową odległość zbierania." />
-    <Entry Key="DES_TRAIT_SMARTER_EVERY_DAY" Val="Nowy dzień, nowa przygoda" />
-    <Entry Key="DES_TRAIT_SMARTER_EVERY_DAY_DES" Val="Każdego dnia każda postać otrzymuje 1 PD." />
+    <Entry Key="DES_TRAIT_SMARTER_EVERY_DAY" Val="Smarter Every Day" />
+    <Entry Key="DES_TRAIT_SMARTER_EVERY_DAY_DES" Val="Każdego dnia każda z twoich postaci otrzymuje 0,2 punktów doświadczenia." />
     <Entry Key="DES_TRAIT_LOGIC_WALL" Val="Ściana logiczna" />
     <!--<Entry Key="DES_TRAIT_LOGIC_WALL_DES" Val="All your characters will share an additional pool of 20 Mental Hit Points, divided equally between them."/>-->
     <Entry Key="DES_TRAIT_LOGIC_WALL_DES" Val="Wszyscy twoi wyznawcy otrzymują +4 mentalne i duchowe osłonę." />
@@ -3520,8 +3521,8 @@
     <Entry Key="DES_TRAIT_FOG_OF_KNOWLEDGE_DES" Val="W pierwszej turze zobaczysz 5 heksów dalej niż normalnie. Dodatkowo zaczynasz od 20 podstawowych materiałów." />
     <Entry Key="DES_TRAIT_SEASONED_FOLLOWERS" Val="Doświadczeni zwolennicy" />
     <Entry Key="DES_TRAIT_SEASONED_FOLLOWERS_DES" Val="Zacznij od 20 punktów doświadczenia podzielonych równo pomiędzy wszystkich członków twojej grupy." />
-    <Entry Key="DES_TRAIT_SMARTER_EVERY_DAY" Val="Nowy dzień, nowa przygoda" />
-    <Entry Key="DES_TRAIT_SMARTER_EVERY_DAY_DES" Val="Każdego dnia każda postać otrzymuje 1 PD." />
+    <Entry Key="DES_TRAIT_SMARTER_EVERY_DAY" Val="Smarter Every Day" />
+    <Entry Key="DES_TRAIT_SMARTER_EVERY_DAY_DES" Val="Każdego dnia każda z twoich postaci otrzymuje 0,2 punktów doświadczenia." />
     <Entry Key="DES_TRAIT_SOLAR_POWERED" Val="Zasilany energią słoneczną" />
     <Entry Key="DES_TRAIT_SOLAR_POWERED_DES" Val="Twoje postacie regenerują 1 dodatkowe Zdrowie, Poczytalność i Wiarę w ciągu dnia, ale tracą 1 Poczytalność w nocy." />
     <Entry Key="DES_TRAIT_JUMPING_FISH" Val="Skacząca ryba" />
@@ -3545,7 +3546,7 @@
     <Entry Key="DES_TRAIT_ALL_ENEMIES_ARE_MINE" Val="Praktyka celu" />
     <Entry Key="DES_TRAIT_ALL_ENEMIES_ARE_MINE_DES" Val="Wrogowie dają 15% dodatkowych punktów doświadczenia." />
     <Entry Key="DES_TRAIT_TOUGH_GUY" Val="Tough Guy" />
-    <Entry Key="DES_TRAIT_TOUGH_GUY_DES" Val="Twoi wyznawcy otrzymują + 10% życia, ale mają dodatkowe 5% szansy na śmierć, gdy ich zdrowie wynosi poniżej 30%." />
+    <Entry Key="DES_TRAIT_TOUGH_GUY_DES" Val="Twoi wyznawcy otrzymują + 10% zdrowia, ale mają dodatkowe 5% szansy na śmierć, gdy ich zdrowie wynosi poniżej 30%." />
     <Entry Key="DES_TRAIT_DEMONIC_POSSESSION" Val="Demonic Possession" />
     <Entry Key="DES_TRAIT_DEMONIC_POSSESSION_DES" Val="The Chosen dostaje +15 punktów zdrowia i +30 duchowego osłony, ale -80% mistycyzmu i przeznaczenia." />
     <Entry Key="DES_TRAIT_SHADOW_PROTECTION" Val="Boska ochrona" />
@@ -3598,7 +3599,7 @@
     <Entry Key="DES_TOOLTIP_PRODUCTION_COST" Val="Koszt produkcji" />
     <Entry Key="DES_TOOLTIP_PRODUCTION_COST_DES" Val="Ile punktów produkcyjnych kosztuje stworzenie tego przedmiotu." />
     <Entry Key="DES_TOOLTIP_ITEM_VALUE" Val="Wartość przedmiotu" />
-    <Entry Key="DES_TOOLTIP_ITEM_VALUE_DES" Val="Wartość tego przedmiotu podczas obrotu. Zwróć uwagę, że inwestorzy zazwyczaj nie oferują Ci pełnej ceny, w przeciwnym razie popadną w ruinę!" />
+    <Entry Key="DES_TOOLTIP_ITEM_VALUE_DES" Val="Wartość tego przedmiotu podczas obrotu. Zwróć uwagę, że inwestorzy zwykle nie oferują pełnej ceny, w przeciwnym razie popadną w ruinę!" />
     <Entry Key="DES_TOOLTIP_PACK_SIZE" Val="Rozmiar paczki" />
     <Entry Key="DES_TOOLTIP_PACK_SIZE_DES" Val="Ile przedmiotów otrzymasz po zakończeniu produkcji." />
     <Entry Key="DES_TOOLTIP_FORFEIT" Val="Forfeit Challenge" />
@@ -3819,6 +3820,8 @@
     <Entry Key="DES_TOOLTIP_SHOW_NOTES_DES" Val="Miejsce na notatki niestandardowe." />
     <Entry Key="DES_TOOLTIP_TRANSFER_FOOD" Val="Transfer żywności" />
     <Entry Key="DES_TOOLTIP_TRANSFER_FOOD_DES" Val="Służy do szybkiego przesyłania różnych potraw między grupami." />
+    <Entry Key="DES_TOOLTIP_GOD_POINTS_CLAIMED" Val="God Points" />
+    <Entry Key="DES_TOOLTIP_GOD_POINTS_CLAIMED_DES" Val="Punkty God są dodawane do twojego profilu po otwarciu ekranu Podsumowanie gry. Jeśli będziesz kontynuować grę i zdobędziesz więcej punktów, tylko różnica zostanie dodana następnym razem." />
     <!-- LOCATIONS AND GROUPS -->
     <Entry Key="DES_ENEMY_GROUP" Val="Enemy Group" />
     <Entry Key="DES_GROUP_HUMANS" Val="Ludzie" />

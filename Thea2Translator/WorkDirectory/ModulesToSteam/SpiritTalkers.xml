@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="Windows-1252"?>
+<?xml version="1.0" encoding="windows-1250"?>
 <MODULE xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="SpiritTalkers" lastEventIndex="75" allowToUse="true" uniqueModuleID="1987895295">
   <Adventure name="SpiritKillShelf" uniqueID="10" typeGeneric="false" typePerGroupGeneric="false" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="4" nodeIdMax="63" joinIsForced="false" joinType="AllAlly" joinRange="MovementArea">
     <nodes xsi:type="NodeStarting" ID="1" positionX="10" positionY="-10" width="347" height="661" image="Event016">
@@ -1498,7 +1498,7 @@ Latwo jest zniszczyc, ale moze zranic ducha i najprawdopodobniej zniszczy upiory
         </FilterBlock>
         <ModifierBlock>
           <LogicModifiers>
-            <scriptCallWithTag scriptName="FMO_SetTagShared" parameter="7" tag="TAG-LOYALTY_SPIRIT_TALKERS" />
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="7" tag="TAG-LOYALTY_SPIRIT_TALKERS" />
           </LogicModifiers>
           <LogicModifiers list="wraith">
             <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="4" tag="SKILL_PACK-BLESS_M" />
@@ -1550,9 +1550,9 @@ Gobliny sa pod wrazeniem twojej pracy i dziekuje.
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Win" ownerID="16" targetID="52" fromX="1294" fromY="-1330" />
-      <outputs name="Lose" ownerID="16" targetID="57" fromX="1294" fromY="-1410" />
-      <outputs name="Surrender" ownerID="16" targetID="57" fromX="1294" fromY="-1490" />
+      <outputs name="Win" ownerID="16" targetID="52" fromX="1295" fromY="-1330" />
+      <outputs name="Lose" ownerID="16" targetID="57" fromX="1295" fromY="-1410" />
+      <outputs name="Surrender" ownerID="16" targetID="57" fromX="1295" fromY="-1490" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="18" positionX="2766" positionY="136" width="350" height="725">
       <outputs name="Wyjdz." ownerID="18" targetID="10" fromX="3091" fromY="-355" />Upiory sa niszczone przez wstrzasajacy blysk bolu i udreki. 
@@ -5157,7 +5157,7 @@ Czujemy wstrzasniety swiat szarosci, bardzo zly na duchy. Ale oni nas nie slucha
       <outputs name="[Goblin lub lojalnosc] Powiedz mu, ze juz za duzo pali, widzac, ze juz nie widzi swoich krewnych. Wez fajke i podziel sie nia bezpiecznie ze znajomymi." ownerID="94" targetID="99" fromX="-286" fromY="-3210" />
       <outputs name="Zgadzam sie. " ownerID="94" targetID="43" fromX="-286" fromY="-3290" />
       <outputs name="Zmien zdanie i wyjdz." ownerID="94" targetID="3" fromX="-286" fromY="-3370" />„Ach tak, bol serca, co? Ciemny swiat sprawia, ze placzesz. My goblimy, palimy to, znow sie cieszymy - czasami zbyt szczesliwi. Nie jestes goblinem, moze ci sie nie podobac, ale placisz i pozwalam ci sprobowac, tak?'</nodes>
-    <nodes xsi:type="NodeAdventure" ID="96" positionX="-556" positionY="-4195" width="350" height="681">
+    <nodes xsi:type="NodeAdventure" ID="96" positionX="-556" positionY="-4195" width="350" height="725">
       <logic>
         <FilterBlock>
           <LogicResultAction>
@@ -5173,16 +5173,16 @@ Czujemy wstrzasniety swiat szarosci, bardzo zly na duchy. Ale oni nas nie slucha
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="96" targetID="97" fromX="-230" fromY="-4642" />Swiat szarego nie jest miejscem dla zywych, zwlaszcza tych, ktorzy nie sa duchowymi rozmowcami. Wasze cialo jest wyrwane z waszego ciala, wasza dusza wykrzywiona i pokaleczona. 
+      <outputs name="Wyjdz." ownerID="96" targetID="97" fromX="-230" fromY="-4686" />Swiat szarego nie jest miejscem dla zywych, zwlaszcza tych, ktorzy nie sa duchowymi rozmowcami. Wasze cialo jest wyrwane z waszego ciala, wasza dusza wykrzywiona i pokaleczona. 
 
 Wracasz zmieniony, zly i przegrany. Jednak twoja wiez z boskoscia pozwala ci trwac na swojej drodze.</nodes>
-    <nodes xsi:type="NodeAdventureEnd" ID="97" positionX="-98" positionY="-4252" width="350" height="408" linkedEventUniqueID="0">
+    <nodes xsi:type="NodeAdventureEnd" ID="97" positionX="-98" positionY="-4252" width="350" height="530" linkedEventUniqueID="0">
       <logic>
         <ModifierBlock>
           <LogicModifiers list="ghost">
             <scriptCallWithTag scriptName="FMO_AddTags" parameter="6" tag="TAG-INTELLIGENCE" />
           </LogicModifiers>
-          <LogicModifiers>
+          <LogicModifiers list="ghost">
             <scriptCallWithTag scriptName="FMO_ChangeLearnedSkillOnCharacter" parameter="1" tag="SKILL_PACK-SHAMAN" />
           </LogicModifiers>
           <LogicModifiers list="ghost">
@@ -5220,7 +5220,7 @@ Wracasz zmieniony, zly i przegrany. Jednak twoja wiez z boskoscia pozwala ci trw
       <outputs name="Confirm" ownerID="99" targetID="25" fromX="832" fromY="-3015" />
       <outputs name="Cancel" ownerID="99" targetID="3" fromX="832" fromY="-3095" />
     </nodes>
-    <nodes xsi:type="NodeDealDamage" ID="100" positionX="-670" positionY="-3621" width="460" height="539" challengeTypeDamage="TypeMental" minDamage="0" maxDamage="0" useCountInPercent="false">
+    <nodes xsi:type="NodeDealDamage" ID="100" positionX="-668" positionY="-3603" width="460" height="539" challengeTypeDamage="TypeMental" minDamage="0" maxDamage="0" useCountInPercent="false">
       <logic>
         <FilterBlock>
           <LogicFilter name="myst" makePublic="true">
@@ -5234,8 +5234,8 @@ Wracasz zmieniony, zly i przegrany. Jednak twoja wiez z boskoscia pozwala ci trw
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs ownerID="100" targetID="96" group="G1" fromX="-240" fromY="-4009" />
-      <outputs ownerID="100" targetID="101" group="G1" fromX="-240" fromY="-4089" />
+      <outputs ownerID="100" targetID="96" group="G1" fromX="-237" fromY="-3993" />
+      <outputs ownerID="100" targetID="101" group="G1" fromX="-237" fromY="-4073" />
     </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="101" positionX="-1131" positionY="-3572" width="350" height="530" linkedEventUniqueID="0">
       <logic>

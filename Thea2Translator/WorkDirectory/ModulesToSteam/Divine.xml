@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="Windows-1252"?>
+<?xml version="1.0" encoding="windows-1250"?>
 <MODULE xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Divine" lastEventIndex="27" allowToUse="true" uniqueModuleID="1711258550">
   <Adventure name="Divine Q Start" uniqueID="1" typeGeneric="false" typePerGroupGeneric="true" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="3" nodeIdMax="39" eventTag="TAG-DIVINELOGBOOK" joinIsForced="false" joinType="OnlyOwn" joinRange="SinglePosition">
     <nodes xsi:type="NodeStarting" ID="1" positionX="-522" positionY="61" width="347" height="661" image="Event122">
@@ -1367,7 +1367,7 @@ Niestety, wiekszosc z nich ginie, jakby polaczenie z umyslem swiatla bylo ich je
     <nodes xsi:type="NodeAdventureEnd" ID="29" positionX="-895" positionY="-233" width="350" height="530" logBookName="QUEST_DIV_ALLPATHS1" logBookDescription="QUEST_DIV_ALLPATHS_ONE_DES" linkedEventUniqueID="0" />
   </Adventure>
   <Adventure name="Divine 2c" uniqueID="4" typeGeneric="false" typePerGroupGeneric="true" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="40" eventTag="TAG-DIVINELOGBOOK" joinIsForced="false" joinType="OnlyOwn" joinRange="MovementArea">
-    <nodes xsi:type="NodeStarting" ID="1" positionX="10" positionY="-10" width="347" height="661" image="Event307">
+    <nodes xsi:type="NodeStarting" ID="1" positionX="10" positionY="-10" width="347" height="783" image="Event307">
       <logic>
         <FilterBlock>
           <LogicFilter name="ch">
@@ -1398,7 +1398,7 @@ Niestety, wiekszosc z nich ginie, jakby polaczenie z umyslem swiatla bylo ich je
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs ownerID="1" targetID="2" fromX="334" fromY="-613" />
+      <outputs ownerID="1" targetID="2" fromX="334" fromY="-735" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="2" positionX="463" positionY="-273" width="350" height="885">
       <logic>
@@ -2446,10 +2446,10 @@ Wiec tak i nie. Niosa wole wszystkich trzech starszych bogow, ale takze ich wlas
       </logic>
     </nodes>
   </Adventure>
-  <Adventure name="Divine 2c spwn" uniqueID="7" typeGeneric="false" typePerGroupGeneric="false" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="50" eventTag="TAG-DIVINELOGBOOK" joinIsForced="false" joinType="AllAlly" joinRange="MovementArea">
-    <nodes xsi:type="NodeStarting" ID="1" positionX="10" positionY="-10" width="347" height="741" image="Event307">
-      <outputs ownerID="1" targetID="38" group="G1" fromX="334" fromY="-613" />
-      <outputs ownerID="1" targetID="2" group="G1" fromX="334" fromY="-693" />
+  <Adventure name="Divine 2c spwn" uniqueID="7" typeGeneric="false" typePerGroupGeneric="false" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="50" eventTag="TAG-DIVINELOGBOOK" joinIsForced="false" joinType="OnlyOwn" joinRange="MovementArea">
+    <nodes xsi:type="NodeStarting" ID="1" positionX="10" positionY="-10" width="347" height="863" image="Event307">
+      <outputs ownerID="1" targetID="38" group="G1" fromX="334" fromY="-735" />
+      <outputs ownerID="1" targetID="2" group="G1" fromX="334" fromY="-815" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="2" positionX="463" positionY="-273" width="350" height="885">
       <logic>
@@ -2923,7 +2923,7 @@ Domena intelektu zostala obdarowana dzieckiem nadziei, poniewaz jej tassk prowad
     </nodes>
   </Adventure>
   <Adventure name="Divine 2a" uniqueID="8" typeGeneric="false" typePerGroupGeneric="true" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="49" eventTag="TAG-DIVINELOGBOOK" joinIsForced="false" joinType="OnlyOwn" joinRange="MovementArea">
-    <nodes xsi:type="NodeStarting" ID="1" positionX="10" positionY="-10" width="347" height="661" image="Event302">
+    <nodes xsi:type="NodeStarting" ID="1" positionX="10" positionY="-10" width="347" height="783" image="Event302">
       <logic>
         <FilterBlock>
           <LogicFilter name="div8">
@@ -2948,7 +2948,7 @@ Domena intelektu zostala obdarowana dzieckiem nadziei, poniewaz jej tassk prowad
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs ownerID="1" targetID="2" fromX="334" fromY="-613" />
+      <outputs ownerID="1" targetID="2" fromX="334" fromY="-735" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="2" positionX="416" positionY="-258" width="350" height="725">
       <logic>
@@ -3427,6 +3427,13 @@ W zwiazku z tym zwieksza sie twoja umiejetnosc i masz narzedzia do tworzenia bos
       </logic>
       <outputs name="Wez pret." ownerID="39" targetID="14" fromX="4180" fromY="-1384" />Stary olbrzym slucha twoich szeptow i slucha twojej prosby. Reka otwiera sie i bezpiecznie wyciagasz pret z kamiennej reki i czujesz, ze ziemia drzy, ale wedka jest wolna i drzenie mija.</nodes>
     <nodes xsi:type="NodeChallenge" ID="40" positionX="2325" positionY="-1556" width="500" height="726" challengeType="TypeSpirit" versusConcept="true" versusGroup="GROUP-CON_S_0P_0M_3S" challengeScale="101" challengedList="adultelf">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction list="adultelf">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
       <outputs name="Win" ownerID="40" targetID="39" fromX="2766" fromY="-2051" />
       <outputs name="Lose" ownerID="40" targetID="43" fromX="2766" fromY="-2131" />
       <outputs name="Surrender" ownerID="40" targetID="43" fromX="2766" fromY="-2211" />
@@ -3519,10 +3526,10 @@ Glos zanika, a kiedy wzrok zostanie przywrocony, olbrzymia reka ponownie trzyma 
       </logic>
     </nodes>
   </Adventure>
-  <Adventure name="Divine 2a spwn" uniqueID="9" typeGeneric="false" typePerGroupGeneric="false" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="55" eventTag="TAG-DIVINELOGBOOK" joinIsForced="false" joinType="OnlyOwn" joinRange="SinglePosition">
-    <nodes xsi:type="NodeStarting" ID="1" positionX="10" positionY="-10" width="347" height="741" image="Event302">
-      <outputs ownerID="1" targetID="47" group="G1" fromX="334" fromY="-613" />
-      <outputs ownerID="1" targetID="2" group="G1" fromX="334" fromY="-693" />
+  <Adventure name="Divine 2a spwn" uniqueID="9" typeGeneric="false" typePerGroupGeneric="false" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="55" eventTag="TAG-DIVINELOGBOOK" joinIsForced="false" joinType="OnlyOwn" joinRange="MovementArea">
+    <nodes xsi:type="NodeStarting" ID="1" positionX="10" positionY="-10" width="347" height="863" image="Event302">
+      <outputs ownerID="1" targetID="47" group="G1" fromX="334" fromY="-735" />
+      <outputs ownerID="1" targetID="2" group="G1" fromX="334" fromY="-815" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="2" positionX="416" positionY="-258" width="350" height="725">
       <logic>
@@ -4001,14 +4008,21 @@ W zwiazku z tym zwieksza sie twoja umiejetnosc i masz narzedzia do tworzenia bos
       </logic>
       <outputs name="Wez pret." ownerID="39" targetID="14" fromX="4180" fromY="-1384" />Stary olbrzym slucha twoich szeptow i slucha twojej prosby. Reka otwiera sie i bezpiecznie wyciagasz pret z kamiennej reki i czujesz, ze ziemia drzy, ale wedka jest wolna i drzenie mija.</nodes>
     <nodes xsi:type="NodeChallenge" ID="40" positionX="2325" positionY="-1556" width="500" height="726" challengeType="TypeSpirit" versusConcept="true" versusGroup="GROUP-CON_S_0P_0M_3S" challengeScale="101" challengedList="adultelf">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction list="adultelf">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
       <outputs name="Win" ownerID="40" targetID="39" fromX="2766" fromY="-2051" />
       <outputs name="Lose" ownerID="40" targetID="43" fromX="2766" fromY="-2131" />
       <outputs name="Surrender" ownerID="40" targetID="43" fromX="2766" fromY="-2211" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="41" positionX="3430" positionY="-1237" width="350" height="885">
       <outputs name="Wymus to przez rozbicie skaly." ownerID="41" targetID="8" fromX="3755" fromY="-1728" />
-      <outputs name="[Narzedzia i rzemieslnik] Sprobuj go wyciagnac bez zrywania skaly." ownerID="41" targetID="35" fromX="3758" fromY="-1808" />
-      <outputs name="Zostaw to na razie." ownerID="41" targetID="23" fromX="3758" fromY="-1888" />Kamien nie slucha twoich szeptow, co bardzo zasmuca twoje serce.</nodes>
+      <outputs name="[Narzedzia i rzemieslnik] Sprobuj go wyciagnac bez zrywania skaly." ownerID="41" targetID="35" fromX="3755" fromY="-1808" />
+      <outputs name="Zostaw to na razie." ownerID="41" targetID="23" fromX="3755" fromY="-1888" />Kamien nie slucha twoich szeptow, co bardzo zasmuca twoje serce.</nodes>
     <nodes xsi:type="NodeDealDamage" ID="42" positionX="2917" positionY="-1283" width="460" height="459" challengeTypeDamage="TypeMental" minDamage="100" maxDamage="100" useCountInPercent="true" targetGroup="adutdwarf">
       <outputs ownerID="42" targetID="41" fromX="3346" fromY="-1671" />
     </nodes>
@@ -4119,7 +4133,7 @@ Glos zanika, a kiedy wzrok zostanie przywrocony, olbrzymia reka ponownie trzyma 
     </nodes>
   </Adventure>
   <Adventure name="Divine 2b" uniqueID="10" typeGeneric="false" typePerGroupGeneric="true" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="59" eventTag="TAG-DIVINELOGBOOK" joinIsForced="false" joinType="OnlyOwn" joinRange="MovementArea">
-    <nodes xsi:type="NodeStarting" ID="1" positionX="-9" positionY="17" width="347" height="661" image="DefaultForest">
+    <nodes xsi:type="NodeStarting" ID="1" positionX="-9" positionY="17" width="347" height="783" image="DefaultForest">
       <logic>
         <FilterBlock>
           <LogicFilter name="div7">
@@ -4156,7 +4170,7 @@ Glos zanika, a kiedy wzrok zostanie przywrocony, olbrzymia reka ponownie trzyma 
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs ownerID="1" targetID="2" fromX="315" fromY="-586" />
+      <outputs ownerID="1" targetID="2" fromX="315" fromY="-708" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="2" positionX="387" positionY="10" width="350" height="885">
       <logic>
@@ -4830,10 +4844,10 @@ Chory nie czeka na odpowiedz, ale wraca do snu.</nodes>
       </logic>
     </nodes>
   </Adventure>
-  <Adventure name="Divine 2b spwn" uniqueID="11" typeGeneric="false" typePerGroupGeneric="false" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="66" eventTag="TAG-DIVINELOGBOOK" joinIsForced="false" joinType="AllAlly" joinRange="MovementArea">
-    <nodes xsi:type="NodeStarting" ID="1" positionX="-9" positionY="17" width="347" height="741" image="DefaultForest">
-      <outputs ownerID="1" targetID="54" group="G1" fromX="315" fromY="-586" />
-      <outputs ownerID="1" targetID="2" group="G1" fromX="315" fromY="-666" />
+  <Adventure name="Divine 2b spwn" uniqueID="11" typeGeneric="false" typePerGroupGeneric="false" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="66" eventTag="TAG-DIVINELOGBOOK" joinIsForced="false" joinType="OnlyOwn" joinRange="MovementArea">
+    <nodes xsi:type="NodeStarting" ID="1" positionX="-9" positionY="17" width="347" height="863" image="DefaultForest">
+      <outputs ownerID="1" targetID="54" group="G1" fromX="315" fromY="-708" />
+      <outputs ownerID="1" targetID="2" group="G1" fromX="315" fromY="-788" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="2" positionX="387" positionY="10" width="350" height="885">
       <logic>

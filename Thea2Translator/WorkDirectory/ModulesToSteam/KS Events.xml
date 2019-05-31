@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="Windows-1252"?>
-<MODULE xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="KS Events" lastEventIndex="83" allowToUse="true" uniqueModuleID="2010316765">
+<?xml version="1.0" encoding="windows-1250"?>
+<MODULE xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="KS Events" lastEventIndex="84" allowToUse="true" uniqueModuleID="2010316765">
   <Adventure name="Glass King" uniqueID="1" allowOnce="true" typeGeneric="false" typePerGroupGeneric="false" typeInterrupt="true" typeExpedition="true" typeVillage="false" difficulty="8" nodeIdMax="29" eventTag="TAG-LOG6" joinIsForced="false" joinType="AllAlly" joinRange="MovementArea">
     <nodes xsi:type="NodeStarting" ID="1" positionX="10" positionY="-10" width="347" height="661" image="Event045">
       <logic>
@@ -4181,7 +4181,7 @@ Kraken ignoruje cie, jego oczy blyszcza zlotem, gdy odplywa na powierzchnie, w k
       <outputs name="Wyjdz." ownerID="10" targetID="11" fromX="3164" fromY="-417" />Niestety, tropienie krakena przez wody okazuje sie zbyt trudne, a ty tracisz szlak.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="11" positionX="3252" positionY="-4" width="350" height="530" allPlayersXP="1" allPlayersRP="1" logBookName="QUEST_KS_SEA" logBookDescription="QUEST_KS_SEA4_DES" linkedEventUniqueID="0" endOfQuest="true" />
   </Adventure>
-  <Adventure name="Sea Haven 2" uniqueID="24" allowOnce="true" typeGeneric="false" typePerGroupGeneric="false" typeInterrupt="true" typeExpedition="true" typeVillage="false" difficulty="0" nodeIdMax="4" eventTag="TAG-LOG10" joinIsForced="false" joinType="AllAlly" joinRange="MovementArea">
+  <Adventure name="Sea Haven 2" uniqueID="24" allowOnce="true" typeGeneric="false" typePerGroupGeneric="true" typeInterrupt="true" typeExpedition="true" typeVillage="false" difficulty="0" nodeIdMax="4" eventTag="TAG-LOG10" joinIsForced="false" joinType="AllAlly" joinRange="MovementArea">
     <nodes xsi:type="NodeStarting" ID="1" positionX="10" positionY="-10" width="347" height="661" image="Event048">
       <logic>
         <FilterBlock>
@@ -4810,9 +4810,6 @@ Niestety, odkrycie ich zajelo ci zbyt dlugo. Uzdrowienie idola trwa kilka tygodn
           <LogicResultAction list="curseS" resultGroup="G1">
             <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
           </LogicResultAction>
-          <LogicResultAction>
-            <scriptCallWithTag scriptName="FRA_Chance" parameter="10" />
-          </LogicResultAction>
         </FilterBlock>
       </logic>
       <outputs ownerID="1" targetID="2" fromX="334" fromY="-613" />
@@ -4854,7 +4851,7 @@ Niestety, odkrycie ich zajelo ci zbyt dlugo. Uzdrowienie idola trwa kilka tygodn
 'Czuje slodka ciemnosc sciskajaca twoje dusze. A tam, gdzie jest popyt, przynosze zaopatrzenie. 
 
 Zaplac, moi drodzy, a twoje przeklenstwa zostana wyleczone!'</nodes>
-    <nodes xsi:type="NodeAdventureEnd" ID="3" positionX="-25" positionY="-764" width="350" height="530" linkedEventUniqueID="0" />
+    <nodes xsi:type="NodeAdventureEnd" ID="3" positionX="-14" positionY="-1088" width="350" height="530" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventure" ID="4" positionX="900" positionY="104" width="350" height="805">
       <logic>
         <FilterBlock>
@@ -4912,7 +4909,7 @@ Zaplac, moi drodzy, a twoje przeklenstwa zostana wyleczone!'</nodes>
         </ModifierBlock>
       </logic>
     </nodes>
-    <nodes xsi:type="NodeAdventureEnd" ID="10" positionX="2778" positionY="-370" width="350" height="455" linkedEventUniqueID="0">
+    <nodes xsi:type="NodeAdventureEnd" ID="10" positionX="2778" positionY="-370" width="350" height="530" linkedEventUniqueID="0">
       <logic>
         <FilterBlock>
           <LogicResultAction list="curseS">
@@ -6473,10 +6470,10 @@ Pakuja sie i odchodza, a kult pajaka zbliza sie:
       <outputs name="Na razie nic do zrobienia. Pozostawiac." ownerID="23" targetID="25" fromX="-261" fromY="-698" />Znajdujesz gniazdo z kultem pajaka, ktoremu kiedys pomogles: 
 
 'Witaj z powrotem, przyjacielu. Mozesz odpoczywac, rekrutowac ludzi, ktorzy chcieliby dolaczyc do ciebie, leczyc toksyny lub handlowac z nami.'</nodes>
-    <nodes xsi:type="NodeTrade" ID="24" positionX="-1149" positionY="72" width="460" height="479" traderProfile="TRADER-BEASTS_FRIENDLY" playerInventory="stuff">
+    <nodes xsi:type="NodeTrade" ID="24" positionX="-1149" positionY="72" width="460" height="479" traderProfile="TRADER-BEASTS_FRIENDLY" playerInventory="stuff2">
       <logic>
         <FilterBlock>
-          <LogicFilter name="stuff">
+          <LogicFilter name="stuff2">
             <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsItems" />
           </LogicFilter>
           <LogicResultAction>
@@ -6951,15 +6948,23 @@ Ale nasz porzadek zostal stworzony, aby utrzymac rownowage w czasie, gdy grozila
         </ModifierBlock>
       </logic>
       <outputs name="Zycz mu dobrze i wroc do pracy." ownerID="13" targetID="10" fromX="3051" fromY="-993" />„Idziesz sciezka bogow, ale moja sluzba lezy gdzie indziej. Byc moze pewnego dnia znow sie spotkamy. Jesli nie, zycze ci powodzenia w walce o bogow. Ale zostawiam wam mojego zaufanego rumaka - niech dobrze sluzy waszej sprawie. Pozegnanie.'</nodes>
-    <nodes xsi:type="NodeAdventure" ID="14" positionX="2276" positionY="-525" width="350" height="725">
+    <nodes xsi:type="NodeAdventure" ID="14" positionX="2296" positionY="-546" width="350" height="725">
       <logic>
+        <FilterBlock>
+          <LogicFilter name="guard">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="SUBRACE-HUM_THE_GUARD" />
+          </LogicFilter>
+        </FilterBlock>
         <ModifierBlock>
           <LogicModifiers>
             <scriptCallWithTag scriptName="FMO_AddItems" parameter="1" tag="ITEM_CARGO-STRONG_ONE_PET_HORSE" />
           </LogicModifiers>
+          <LogicModifiers list="guard">
+            <scriptCallWithTag scriptName="FMO_TakeCharacters" />
+          </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Zycz mu dobrze i wroc do pracy." ownerID="14" targetID="10" fromX="2601" fromY="-1016" />„To byl moj obowiazek jako straznika, aby pomoc tym, ktorzy go potrzebuja. Byc moze pewnego dnia znow sie spotkamy. Jesli nie, zycze ci powodzenia w walce o bogow. Ale zostawiam wam mojego zaufanego rumaka - niech dobrze sluzy waszej sprawie. Pozegnanie.'</nodes>
+      <outputs name="Zycz mu dobrze i wroc do pracy." ownerID="14" targetID="10" fromX="2621" fromY="-1037" />„To byl moj obowiazek jako straznika, aby pomoc tym, ktorzy go potrzebuja. Byc moze pewnego dnia znow sie spotkamy. Jesli nie, zycze ci powodzenia w walce o bogow. Ale zostawiam wam mojego zaufanego rumaka - niech dobrze sluzy waszej sprawie. Pozegnanie.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="15" positionX="1135" positionY="-1363" width="350" height="725">
       <logic>
         <ModifierBlock>
@@ -7293,8 +7298,8 @@ Wojownik zostaje z toba przez pewien czas i poddaje cie rygorystycznemu treningo
       <outputs name="Cancel" ownerID="26" targetID="11" fromX="-898" fromY="-1001" />
     </nodes>
   </Adventure>
-  <Adventure name="Dwarf baker" uniqueID="36" allowOnce="true" typeGeneric="false" typePerGroupGeneric="false" typeInterrupt="true" typeExpedition="true" typeVillage="false" difficulty="7" nodeIdMax="47" eventTag="TAG-LOG13" joinIsForced="false" joinType="AllAlly" joinRange="MovementArea">
-    <nodes xsi:type="NodeStarting" ID="1" positionX="-90" positionY="529" width="347" height="741" image="Event150">
+  <Adventure name="Dwarf baker" uniqueID="36" allowOnce="true" typeGeneric="false" typePerGroupGeneric="false" typeInterrupt="true" typeExpedition="true" typeVillage="false" difficulty="7" nodeIdMax="50" eventTag="TAG-LOG13" joinIsForced="false" joinType="AllAlly" joinRange="MovementArea">
+    <nodes xsi:type="NodeStarting" ID="1" positionX="-470" positionY="898" width="347" height="741" image="Event150">
       <logic>
         <FilterBlock>
           <LogicResultAction>
@@ -7302,10 +7307,10 @@ Wojownik zostaje z toba przez pewien czas i poddaje cie rygorystycznemu treningo
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs ownerID="1" targetID="2" group="G1" fromX="234" fromY="-74" />
-      <outputs ownerID="1" targetID="26" group="G1" fromX="234" fromY="-154" />
+      <outputs ownerID="1" targetID="2" group="G1" fromX="-145" fromY="294" />
+      <outputs ownerID="1" targetID="26" group="G1" fromX="-145" fromY="214" />
     </nodes>
-    <nodes xsi:type="NodeAdventure" allowOnce="true" ID="2" positionX="338" positionY="-22" width="350" height="805">
+    <nodes xsi:type="NodeAdventure" allowOnce="true" ID="2" positionX="-264" positionY="37" width="350" height="805">
       <logic>
         <FilterBlock>
           <LogicFilter name="ppl" makePublic="true">
@@ -7328,16 +7333,16 @@ Wojownik zostaje z toba przez pewien czas i poddaje cie rygorystycznemu treningo
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Zbadaj." ownerID="2" targetID="3" fromX="663" fromY="-513" />
-      <outputs name="Wyjdz." ownerID="2" targetID="4" fromX="663" fromY="-593" />Natkniesz sie na samotny dom i uslyszysz wiele krasnoludzkich przeklenstw z tylu. </nodes>
-    <nodes xsi:type="NodeAdventure" ID="3" positionX="800" positionY="80" width="350" height="885">
-      <outputs name="[Krasnolud] Powiedz swoim krewnym, aby sie uspokoili i powiedzieli, co jest nie tak." ownerID="3" targetID="5" fromX="1125" fromY="-411" />
-      <outputs name="Zapytaj krasnoluda, czy potrzebuje pomocy." ownerID="3" targetID="8" fromX="1125" fromY="-491" />
-      <outputs name="Atak!" ownerID="3" targetID="6" fromX="1125" fromY="-571" />Widzisz krasnoluda, ktory wyrywa sobie wlosy i kopie gliniany piec: 
+      <outputs name="Zbadaj." ownerID="2" targetID="3" fromX="61" fromY="-454" />
+      <outputs name="Wyjdz." ownerID="2" targetID="4" fromX="61" fromY="-534" />Natkniesz sie na samotny dom i uslyszysz wiele krasnoludzkich przeklenstw z tylu. </nodes>
+    <nodes xsi:type="NodeAdventure" ID="3" positionX="473" positionY="162" width="350" height="885">
+      <outputs name="[Krasnolud] Powiedz swoim krewnym, aby sie uspokoili i powiedzieli, co jest nie tak." ownerID="3" targetID="5" fromX="798" fromY="-329" />
+      <outputs name="Zapytaj krasnoluda, czy potrzebuje pomocy." ownerID="3" targetID="8" fromX="798" fromY="-409" />
+      <outputs name="Atak!" ownerID="3" targetID="6" fromX="798" fromY="-489" />Widzisz krasnoluda, ktory wyrywa sobie wlosy i kopie gliniany piec: 
 
 'Cholernie bezuzyteczny stos smieci. Wypieprz mnie piekarniku, synu dziwki!'</nodes>
-    <nodes xsi:type="NodeAdventureEnd" ID="4" positionX="80" positionY="-1055" width="350" height="530" linkedEventUniqueID="0" />
-    <nodes xsi:type="NodeAdventure" ID="5" positionX="1018" positionY="1079" width="350" height="966">
+    <nodes xsi:type="NodeAdventureEnd" ID="4" positionX="224" positionY="-932" width="350" height="530" linkedEventUniqueID="0" />
+    <nodes xsi:type="NodeAdventure" ID="5" positionX="1010" positionY="1445" width="350" height="966">
       <logic>
         <FilterBlock>
           <LogicResultAction list="dwarf">
@@ -7345,35 +7350,35 @@ Wojownik zostaje z toba przez pewien czas i poddaje cie rygorystycznemu treningo
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Ciasto? To wydaje sie ponizej jego stacji." ownerID="5" targetID="7" fromX="1343" fromY="587" />
-      <outputs name="Czy wie, jak sie go pozbyc?" ownerID="5" targetID="9" fromX="1343" fromY="507" />
-      <outputs name="[Magiczny uzytkownik] Powiedz mu, ze mozesz wypedzic dla niego ducha." ownerID="5" targetID="10" fromX="1343" fromY="427" />
-      <outputs name="[Goblinski szaman lub Duchy] Wyczuwasz ducha w srodku. Porozmawiaj z nim." ownerID="5" targetID="36" fromX="1343" fromY="347" />„Och, ty, kamien i metal, badz dla mnie laskawy! Czy mozesz przemowic do piekarnika w jakims sensie? Wykonalem go wlasnorecznie, idealnie - utrzymuje temperature na tym samym poziomie. Upieklbym najlepsze ciasto! 
+      <outputs name="Ciasto? To wydaje sie ponizej jego stacji." ownerID="5" targetID="7" fromX="1335" fromY="953" />
+      <outputs name="Czy wie, jak sie go pozbyc?" ownerID="5" targetID="9" fromX="1335" fromY="873" />
+      <outputs name="[Magiczny uzytkownik] Powiedz mu, ze mozesz wypedzic dla niego ducha." ownerID="5" targetID="10" fromX="1335" fromY="793" />
+      <outputs name="[Goblinski szaman lub Duchy] Wyczuwasz ducha w srodku. Porozmawiaj z nim." ownerID="5" targetID="36" fromX="1335" fromY="713" />„Och, ty, kamien i metal, badz dla mnie laskawy! Czy mozesz przemowic do piekarnika w jakims sensie? Wykonalem go wlasnorecznie, idealnie - utrzymuje temperature na tym samym poziomie. Upieklbym najlepsze ciasto! 
 
 Ale nie, ten idiota wpadl w pulapke i nie odejdzie!'</nodes>
-    <nodes xsi:type="NodeChallenge" ID="6" positionX="460" positionY="-1167" width="500" height="726" challengeType="TypePhysical" versusGroup="GROUP-Q_SMITH_BEAR_6P_5M_2S" challengeScale="101" challengedList="ppl">
-      <outputs name="Win" ownerID="6" targetID="21" fromX="901" fromY="-1662" />
-      <outputs name="Lose" ownerID="6" targetID="29" fromX="901" fromY="-1742" />
-      <outputs name="Surrender" ownerID="6" targetID="30" fromX="901" fromY="-1822" />
+    <nodes xsi:type="NodeChallenge" ID="6" positionX="610" positionY="-869" width="500" height="726" challengeType="TypePhysical" versusGroup="GROUP-Q_SMITH_BEAR_6P_5M_2S" challengeScale="101" challengedList="ppl">
+      <outputs name="Win" ownerID="6" targetID="21" fromX="1051" fromY="-1364" />
+      <outputs name="Lose" ownerID="6" targetID="29" fromX="1051" fromY="-1444" />
+      <outputs name="Surrender" ownerID="6" targetID="30" fromX="1051" fromY="-1524" />
     </nodes>
-    <nodes xsi:type="NodeAdventure" ID="7" positionX="1757" positionY="1022" width="350" height="885">
-      <outputs name="Wyglada na zmartwionego, wiec tylko przytaknij. Czy on wie, jak pozbyc sie ducha?" ownerID="7" targetID="9" fromX="2082" fromY="530" />
-      <outputs name="[Magiczny uzytkownik] Powiedz mu, ze mozesz wypedzic dla niego ducha." ownerID="7" targetID="10" fromX="2082" fromY="450" />
-      <outputs name="[Goblinski szaman lub Duchy] Wyczuwasz ducha w srodku. Porozmawiaj z nim." ownerID="7" targetID="36" fromX="2082" fromY="370" />„Co, myslisz, ze krasnoludzki kowal moze tylko topic rzeczy, co? Tak jak Helga. Powiedziala, ze nie bede w stanie tego zrobic, wiec zrobie to!'
+    <nodes xsi:type="NodeAdventure" ID="7" positionX="1732" positionY="1409" width="350" height="885">
+      <outputs name="Wyglada na zmartwionego, wiec tylko przytaknij. Czy on wie, jak pozbyc sie ducha?" ownerID="7" targetID="9" fromX="2057" fromY="917" />
+      <outputs name="[Magiczny uzytkownik] Powiedz mu, ze mozesz wypedzic dla niego ducha." ownerID="7" targetID="10" fromX="2057" fromY="837" />
+      <outputs name="[Goblinski szaman lub Duchy] Wyczuwasz ducha w srodku. Porozmawiaj z nim." ownerID="7" targetID="36" fromX="2057" fromY="757" />„Co, myslisz, ze krasnoludzki kowal moze tylko topic rzeczy, co? Tak jak Helga. Powiedziala, ze nie bede w stanie tego zrobic, wiec zrobie to!'
 
 Wyciaga troche wiecej swoich juz przerzedzonych wlosow. </nodes>
-    <nodes xsi:type="NodeAdventure" ID="8" positionX="1273" positionY="-187" width="350" height="966">
-      <outputs name="Ciasto? To wydaje sie ponizej jego stacji." ownerID="8" targetID="7" fromX="1598" fromY="-678" />
-      <outputs name="Czy wie, jak sie go pozbyc?" ownerID="8" targetID="9" fromX="1598" fromY="-758" />
-      <outputs name="[Magiczny uzytkownik] Powiedz mu, ze mozesz wypedzic dla niego ducha." ownerID="8" targetID="10" fromX="1598" fromY="-838" />
-      <outputs name="[Goblinski szaman lub Duchy] Wyczuwasz ducha w srodku. Porozmawiaj z nim." ownerID="8" targetID="36" fromX="1598" fromY="-918" />„Kim jestes? Nie obchodzi mnie to! Czy mozesz przemowic do piekarnika w jakims sensie? Wykonalem go wlasnorecznie, idealnie - utrzymuje temperature na tym samym poziomie. Upieklbym najlepsze ciasto! 
+    <nodes xsi:type="NodeAdventure" ID="8" positionX="1166" positionY="18" width="350" height="966">
+      <outputs name="Ciasto? To wydaje sie ponizej jego stacji." ownerID="8" targetID="7" fromX="1491" fromY="-473" />
+      <outputs name="Czy wie, jak sie go pozbyc?" ownerID="8" targetID="9" fromX="1491" fromY="-553" />
+      <outputs name="[Magiczny uzytkownik] Powiedz mu, ze mozesz wypedzic dla niego ducha." ownerID="8" targetID="10" fromX="1491" fromY="-633" />
+      <outputs name="[Goblinski szaman lub Duchy] Wyczuwasz ducha w srodku. Porozmawiaj z nim." ownerID="8" targetID="36" fromX="1491" fromY="-713" />„Kim jestes? Nie obchodzi mnie to! Czy mozesz przemowic do piekarnika w jakims sensie? Wykonalem go wlasnorecznie, idealnie - utrzymuje temperature na tym samym poziomie. Upieklbym najlepsze ciasto! 
 
 Ale nie, ten idiota wpadl w pulapke i nie odejdzie!'</nodes>
-    <nodes xsi:type="NodeAdventure" ID="9" positionX="2393" positionY="690" width="350" height="725">
-      <outputs name="Idz szukac bryly granitu." ownerID="9" targetID="27" fromX="2718" fromY="198" />„Tak, to robie. Ten robak utknal w kawalku granitu, ktorego uzylem. Znam tylko bryle, z ktorej pochodzi, ale jestem w trakcie robienia najlepszego ciasta, nie moge tak po prostu wyjsc. 
+    <nodes xsi:type="NodeAdventure" ID="9" positionX="2219" positionY="694" width="350" height="725">
+      <outputs name="Idz szukac bryly granitu." ownerID="9" targetID="49" fromX="2544" fromY="202" />„Tak, to robie. Ten robak utknal w kawalku granitu, ktorego uzylem. Znam tylko bryle, z ktorej pochodzi, ale jestem w trakcie robienia najlepszego ciasta, nie moge tak po prostu wyjsc. 
 
 Jesli dostaniesz bryle, dam ci napiwek na temat dobrego miejsca do mojego. I nagroda tez. Pospiesz sie, prosze.'</nodes>
-    <nodes xsi:type="NodeAdventure" ID="10" positionX="1823" positionY="-191" width="350" height="805">
+    <nodes xsi:type="NodeAdventure" ID="10" positionX="1847" positionY="-147" width="350" height="805">
       <logic>
         <FilterBlock>
           <LogicResultAction list="mag">
@@ -7381,12 +7386,12 @@ Jesli dostaniesz bryle, dam ci napiwek na temat dobrego miejsca do mojego. I nag
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Rytual." ownerID="10" targetID="11" fromX="2148" fromY="-682" />
-      <outputs name="To moze byc zbyt trudne. Czy on zna inny sposob?" ownerID="10" targetID="9" fromX="2148" fromY="-762" />„Och, chlopcze, to sprawia, ze jestem taka szczesliwa! Zaplace za to milo.'</nodes>
-    <nodes xsi:type="NodeChallenge" ID="11" positionX="2324" positionY="-688" width="500" height="726" challengeType="TypeSpirit" versusConcept="true" versusGroup="GROUP-CON_S_0P_0M_5S" challengeScale="101" challengedList="ppl">
-      <outputs name="Win" ownerID="11" targetID="12" fromX="2765" fromY="-1183" />
-      <outputs name="Lose" ownerID="11" targetID="18" fromX="2765" fromY="-1263" />
-      <outputs name="Surrender" ownerID="11" targetID="18" fromX="2765" fromY="-1343" />
+      <outputs name="Rytual." ownerID="10" targetID="11" fromX="2172" fromY="-638" />
+      <outputs name="To moze byc zbyt trudne. Czy on zna inny sposob?" ownerID="10" targetID="9" fromX="2172" fromY="-718" />„Och, chlopcze, to sprawia, ze jestem taka szczesliwa! Zaplace za to milo.'</nodes>
+    <nodes xsi:type="NodeChallenge" ID="11" positionX="2268" positionY="-690" width="500" height="726" challengeType="TypeSpirit" versusConcept="true" versusGroup="GROUP-CON_S_0P_0M_5S" challengeScale="101" challengedList="ppl">
+      <outputs name="Win" ownerID="11" targetID="12" fromX="2709" fromY="-1185" />
+      <outputs name="Lose" ownerID="11" targetID="18" fromX="2709" fromY="-1265" />
+      <outputs name="Surrender" ownerID="11" targetID="18" fromX="2709" fromY="-1345" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="12" positionX="2923" positionY="-511" width="350" height="725">
       <logic>
@@ -7428,10 +7433,10 @@ Och, i zaznaczylem zyle zasobow dla ciebie na twojej mapie. Idz po dobry kamien 
         </ModifierBlock>
       </logic>
     </nodes>
-    <nodes xsi:type="NodeSpawnOnMap" ID="15" positionX="3378" positionY="-597" width="480" height="663" radius="0" destroyOwner="true" linkedEventUniqueID="0">
-      <outputs ownerID="15" targetID="14" group="G1" fromX="3826" fromY="-1029" />
-      <outputs ownerID="15" targetID="16" group="G3" fromX="3826" fromY="-1109" />
-      <outputs ownerID="15" targetID="17" group="G1" fromX="3826" fromY="-1189" />
+    <nodes xsi:type="NodeSpawnOnMap" ID="15" positionX="3301" positionY="-572" width="480" height="663" radius="0" destroyOwner="true" linkedEventUniqueID="0">
+      <outputs ownerID="15" targetID="14" group="G1" fromX="3749" fromY="-554" />
+      <outputs ownerID="15" targetID="16" group="G3" fromX="3289" fromY="-634" />
+      <outputs ownerID="15" targetID="17" group="G1" fromX="3289" fromY="-634" />
     </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="16" positionX="4341" positionY="-736" width="350" height="530" allPlayersXP="5" allPlayersRP="2" logBookName="QUEST_KS_BAKER" logBookDescription="QUEST_KS_BAKER2_DES" linkedEventUniqueID="0" endOfQuest="true">
       <logic>
@@ -7463,8 +7468,8 @@ Och, i zaznaczylem zyle zasobow dla ciebie na twojej mapie. Idz po dobry kamien 
     <nodes xsi:type="NodeSpawnOnMap" ID="19" positionX="3840" positionY="-1691" width="480" height="503" radius="0" destroyOwner="true" linkedEventUniqueID="0">
       <outputs ownerID="19" targetID="20" fromX="4288" fromY="-2123" />
     </nodes>
-    <nodes xsi:type="NodeAdventureEnd" ID="20" positionX="4434" positionY="-1632" width="350" height="530" allPlayersXP="1" allPlayersRP="1" logBookName="QUEST_KS_BAKER" logBookDescription="QUEST_KS_BAKER3_DES" linkedEventUniqueID="0" endOfQuest="true" />
-    <nodes xsi:type="NodeAdventure" ID="21" positionX="989" positionY="-1606" width="350" height="805">
+    <nodes xsi:type="NodeAdventureEnd" ID="20" positionX="4835" positionY="-1704" width="350" height="530" allPlayersXP="1" allPlayersRP="1" logBookName="QUEST_KS_BAKER" logBookDescription="QUEST_KS_BAKER3_DES" linkedEventUniqueID="0" endOfQuest="true" />
+    <nodes xsi:type="NodeAdventure" ID="21" positionX="1000" positionY="-1709" width="350" height="805">
       <logic>
         <ModifierBlock>
           <LogicModifiers>
@@ -7472,27 +7477,27 @@ Och, i zaznaczylem zyle zasobow dla ciebie na twojej mapie. Idz po dobry kamien 
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Co mozna zrobic?" ownerID="21" targetID="22" fromX="1314" fromY="-2097" />
-      <outputs name="Odrzuc i odejdz." ownerID="21" targetID="25" fromX="1314" fromY="-2177" />Zabijasz krasnoluda, a duch wzywa cie: 
+      <outputs name="Co mozna zrobic?" ownerID="21" targetID="22" fromX="1325" fromY="-2200" />
+      <outputs name="Odrzuc i odejdz." ownerID="21" targetID="25" fromX="1325" fromY="-2280" />Zabijasz krasnoluda, a duch wzywa cie: 
 
 'Och, hej. Teraz, kiedy zabiles tego niegrzecznego glupka, moglbys mnie uwolnic?'</nodes>
-    <nodes xsi:type="NodeAdventure" ID="22" positionX="1383" positionY="-1574" width="350" height="805">
-      <outputs name="Zgadzam sie." ownerID="22" targetID="23" fromX="1708" fromY="-2065" />
-      <outputs name="Odrzuc i odejdz." ownerID="22" targetID="25" fromX="1708" fromY="-2145" />„Jest bryla granitu, ktora zalamal glupi krasnolud. Jesli go tu przyniesiesz, moge go z powrotem przeniesc. Podobalo mi sie tam.'</nodes>
+    <nodes xsi:type="NodeAdventure" ID="22" positionX="1545" positionY="-1661" width="350" height="805">
+      <outputs name="Zgadzam sie." ownerID="22" targetID="23" fromX="1870" fromY="-2152" />
+      <outputs name="Odrzuc i odejdz." ownerID="22" targetID="25" fromX="1870" fromY="-2232" />„Jest bryla granitu, ktora zalamal glupi krasnolud. Jesli go tu przyniesiesz, moge go z powrotem przeniesc. Podobalo mi sie tam.'</nodes>
     <nodes xsi:type="NodeSpawnOnMap" ID="23" positionX="1908" positionY="-1931" width="480" height="503" radius="4" settlementID="SET-CAVE_ENTRANCE" destroyOwner="true" linkedEventUniqueID="38">
       <outputs ownerID="23" targetID="24" fromX="2356" fromY="-2363" />
     </nodes>
-    <nodes xsi:type="NodeAdventureEnd" ID="24" positionX="2560" positionY="-2382" width="350" height="530" allPlayersXP="5" allPlayersRP="2" logBookName="QUEST_KS_BAKER" logBookDescription="QUEST_KS_BAKER6_DES" linkedEventUniqueID="0" />
+    <nodes xsi:type="NodeAdventureEnd" ID="24" positionX="2464" positionY="-2731" width="350" height="530" allPlayersXP="5" allPlayersRP="2" logBookName="QUEST_KS_BAKER" logBookDescription="QUEST_KS_BAKER6_DES" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeSpawnOnMap" ID="25" positionX="1314" positionY="-2511" width="480" height="503" radius="0" destroyOwner="true" linkedEventUniqueID="0">
       <outputs ownerID="25" targetID="43" fromX="1762" fromY="-2943" />
     </nodes>
-    <nodes xsi:type="NodeAdventure" ID="26" positionX="-677" positionY="-393" width="350" height="805">
-      <outputs name="Tak." ownerID="26" targetID="34" group="G1" fromX="-351" fromY="-884" />
-      <outputs name="Zostaw, aby poszukac obsydianowej bryly, aby pozbyc sie ducha." ownerID="26" targetID="4" group="G1" fromX="-351" fromY="-964" />„Znalazles go jeszcze? Nie? Idz stad...'</nodes>
-    <nodes xsi:type="NodeSpawnOnMap" ID="27" positionX="2947" positionY="407" width="480" height="503" radius="4" settlementID="SET-CAVE_ENTRANCE" destroyOwner="false" linkedEventUniqueID="37">
-      <outputs ownerID="27" targetID="28" fromX="3395" fromY="-25" />
+    <nodes xsi:type="NodeAdventure" ID="26" positionX="-916" positionY="-126" width="350" height="805">
+      <outputs name="Tak." ownerID="26" targetID="34" group="G1" fromX="-590" fromY="-617" />
+      <outputs name="Zostaw, aby poszukac obsydianowej bryly, aby pozbyc sie ducha." ownerID="26" targetID="4" group="G1" fromX="-590" fromY="-697" />„Znalazles go jeszcze? Nie? Idz stad...'</nodes>
+    <nodes xsi:type="NodeSpawnOnMap" ID="27" positionX="3382" positionY="597" width="480" height="503" radius="4" settlementID="SET-CAVE_ENTRANCE" destroyOwner="true" linkedEventUniqueID="37">
+      <outputs ownerID="27" targetID="28" fromX="3830" fromY="164" />
     </nodes>
-    <nodes xsi:type="NodeAdventureEnd" ID="28" positionX="3531" positionY="480" width="350" height="530" allPlayersXP="3" allPlayersRP="2" logBookName="QUEST_KS_BAKER" logBookDescription="QUEST_KS_BAKER_DES" linkedEventUniqueID="0">
+    <nodes xsi:type="NodeAdventureEnd" ID="28" positionX="3976" positionY="540" width="350" height="530" allPlayersXP="3" allPlayersRP="2" logBookName="QUEST_KS_BAKER" logBookDescription="QUEST_KS_BAKER_DES" linkedEventUniqueID="0">
       <logic>
         <ModifierBlock>
           <LogicModifiers>
@@ -7510,14 +7515,14 @@ Och, i zaznaczylem zyle zasobow dla ciebie na twojej mapie. Idz po dobry kamien 
         </ModifierBlock>
       </logic>
       <outputs name="Wyjdz." ownerID="29" targetID="31" fromX="741" fromY="-2530" />Jestes ciezko pobity i przepedzony.</nodes>
-    <nodes xsi:type="NodeDealDamage" ID="30" positionX="-117" positionY="-1931" width="460" height="459" challengeTypeDamage="TypePhysical" minDamage="20" maxDamage="30" useCountInPercent="true" targetGroup="ppl">
-      <outputs ownerID="30" targetID="29" fromX="312" fromY="-2319" />
+    <nodes xsi:type="NodeDealDamage" ID="30" positionX="-267" positionY="-1849" width="460" height="459" challengeTypeDamage="TypePhysical" minDamage="20" maxDamage="30" useCountInPercent="true" targetGroup="ppl">
+      <outputs ownerID="30" targetID="29" fromX="162" fromY="-2237" />
     </nodes>
     <nodes xsi:type="NodeSpawnOnMap" ID="31" positionX="-198" positionY="-2546" width="480" height="503" radius="0" destroyOwner="true" linkedEventUniqueID="0">
       <outputs ownerID="31" targetID="32" fromX="250" fromY="-2978" />
     </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="32" positionX="-654" positionY="-2584" width="350" height="530" allPlayersXP="1" allPlayersRP="1" logBookName="QUEST_KS_BAKER" logBookDescription="QUEST_KS_BAKER7_DES" linkedEventUniqueID="0" endOfQuest="true" />
-    <nodes xsi:type="NodeAdventure" ID="34" positionX="-1204" positionY="-324" width="350" height="725">
+    <nodes xsi:type="NodeAdventure" ID="34" positionX="-1656" positionY="-309" width="350" height="725">
       <logic>
         <FilterBlock>
           <LogicResultAction>
@@ -7542,7 +7547,7 @@ Och, i zaznaczylem zyle zasobow dla ciebie na twojej mapie. Idz po dobry kamien 
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Dziekuje mu i odejdz." ownerID="34" targetID="44" fromX="-878" fromY="-815" />„Ach, masz to, swietnie. Daj to szybko, sam sie tym zajme. Oto nagroda zgodnie z obietnica! Metal i kamien do ciebie, chlopcze. Och, i dla ciebie tez wyznaczylem miejsce dla jakiegos dobrego gornictwa.'
+      <outputs name="Dziekuje mu i odejdz." ownerID="34" targetID="44" fromX="-1330" fromY="-800" />„Ach, masz to, swietnie. Daj to szybko, sam sie tym zajme. Oto nagroda zgodnie z obietnica! Metal i kamien do ciebie, chlopcze. Och, i dla ciebie tez wyznaczylem miejsce dla jakiegos dobrego gornictwa.'
 </nodes>
     <nodes xsi:type="NodeAdventure" ID="36" positionX="1833" positionY="-1038" width="350" height="725">
       <logic>
@@ -7619,13 +7624,13 @@ Duch jest teraz zwiazany z toba i rowniez zadowolony.
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Zabierz ducha i wyjdz." ownerID="41" targetID="42" fromX="4850" fromY="-3055" />Z powodzeniem wydobywasz ducha, ale rytual rozbija gliniany piec. Krasnolud nie jest szczesliwy: 
+      <outputs name="Zabierz ducha i wyjdz." ownerID="41" targetID="48" fromX="4850" fromY="-3055" />Z powodzeniem wydobywasz ducha, ale rytual rozbija gliniany piec. Krasnolud nie jest szczesliwy: 
 
 'Oi, cholerne panienki! Wszystkie moje wysilki zostaly zniszczone! Najlepiej opusc moj wzrok, zanim cie podrzuce!'
 
 Ale przynajmniej duch jest teraz zwiazany z toba i szczesliwy. 
 </nodes>
-    <nodes xsi:type="NodeAdventureEnd" ID="42" positionX="4951" positionY="-2702" width="350" height="530" allPlayersXP="5" allPlayersRP="2" logBookName="QUEST_KS_BAKER" logBookDescription="QUEST_KS_BAKER4_DES" linkedEventUniqueID="0" endOfQuest="true" />
+    <nodes xsi:type="NodeAdventureEnd" ID="42" positionX="5666" positionY="-2781" width="350" height="530" allPlayersXP="5" allPlayersRP="2" logBookName="QUEST_KS_BAKER" logBookDescription="QUEST_KS_BAKER4_DES" linkedEventUniqueID="0" endOfQuest="true" />
     <nodes xsi:type="NodeAdventureEnd" ID="43" positionX="1922" positionY="-2539" width="350" height="530" allPlayersXP="5" allPlayersRP="2" logBookName="QUEST_KS_BAKER" logBookDescription="QUEST_KS_BAKER5_DES" linkedEventUniqueID="0" endOfQuest="true" />
     <nodes xsi:type="NodeSpawnOnMap" ID="44" positionX="-1036" positionY="-1212" width="480" height="663" radius="0" destroyOwner="true" linkedEventUniqueID="0">
       <outputs ownerID="44" targetID="45" group="G1" fromX="-587" fromY="-1644" />
@@ -7668,6 +7673,12 @@ Ale przynajmniej duch jest teraz zwiazany z toba i szczesliwy.
           </LogicModifiers>
         </ModifierBlock>
       </logic>
+    </nodes>
+    <nodes xsi:type="NodeSpawnOnMap" ID="48" positionX="5014" positionY="-2734" width="480" height="503" radius="0" destroyOwner="true" linkedEventUniqueID="0">
+      <outputs ownerID="48" targetID="42" fromX="5462" fromY="-3166" />
+    </nodes>
+    <nodes xsi:type="NodeSpawnOnMap" ID="49" positionX="2763" positionY="699" width="480" height="503" radius="0" settlementID="SET-SMALL_HUT" destroyOwner="true" linkedEventUniqueID="84">
+      <outputs ownerID="49" targetID="27" fromX="3211" fromY="266" />
     </nodes>
   </Adventure>
   <Adventure name="Dwarf Baker spwn" uniqueID="37" typeGeneric="false" typePerGroupGeneric="false" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="11" eventTag="TAG-LOG13" joinIsForced="false" joinType="AllAlly" joinRange="MovementArea">
@@ -7773,8 +7784,8 @@ Kiedy wracales do miejsca krasnoluda, duch pojawil sie obok ciebie:
 
 'Jest wystarczajaco blisko, po prostu poloz go tutaj na podlodze i zostaw mnie badz, dzieki! Tutaj postaram sie dac ci troche mojej mocy, aby cie wzmocnic.'
 </nodes>
-    <nodes xsi:type="NodeSpawnOnMap" ID="5" positionX="2009" positionY="271" width="480" height="503" radius="0" destroyOwner="true" linkedEventUniqueID="0">
-      <outputs ownerID="5" targetID="6" fromX="2457" fromY="-161" />
+    <nodes xsi:type="NodeSpawnOnMap" ID="5" positionX="1983" positionY="251" width="480" height="503" radius="0" destroyOwner="true" linkedEventUniqueID="0">
+      <outputs ownerID="5" targetID="6" fromX="2431" fromY="-181" />
     </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="6" positionX="2571" positionY="298" width="350" height="530" allPlayersXP="4" allPlayersRP="2" logBookName="QUEST_KS_BAKERSPWNTWO" logBookDescription="QUEST_KS_BAKERSPWNTWO_DES" linkedEventUniqueID="0" endOfQuest="true" />
     <nodes xsi:type="NodeAdventure" ID="7" positionX="1651" positionY="-686" width="350" height="725">
@@ -10402,9 +10413,6 @@ Mowi do innych i szybko wychodzi.</nodes>
           <LogicFilter name="orc" makePublic="true">
             <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" tag="RACE-ORC" />
           </LogicFilter>
-          <LogicFilter name="talia" makePublic="true">
-            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" tag="SUBRACE-HUM_HUNTER_TALIA" />
-          </LogicFilter>
         </FilterBlock>
         <ModifierBlock>
           <LogicModifiers>
@@ -10417,10 +10425,10 @@ Mowi do innych i szybko wychodzi.</nodes>
       <outputs name="Patrz, jak ucieka i zabija sie, a potem wyjdz." ownerID="2" targetID="21" fromX="755" fromY="-392" />Wysledzisz orki, ktore tropila Talia, ktora prosila Talia. Dolacza do ciebie: 
 
 'Oto jestes! Czekalem tu przez chwile. Chodz, podkradnijmy sie do nich i zabijmy ich, tak jak zrobili to moi ludzie!'</nodes>
-    <nodes xsi:type="NodeChallenge" ID="3" positionX="883" positionY="178" width="500" height="726" challengeType="TypePhysical" versusGroup="GROUP-ORCS_4P_3M_1S" challengeScale="101" challengedList="ppl">
-      <outputs name="Win" ownerID="3" targetID="4" fromX="1324" fromY="-317" />
-      <outputs name="Lose" ownerID="3" targetID="17" fromX="1324" fromY="-397" />
-      <outputs name="Surrender" ownerID="3" targetID="16" fromX="1324" fromY="-477" />
+    <nodes xsi:type="NodeChallenge" ID="3" positionX="846" positionY="242" width="500" height="726" challengeType="TypePhysical" versusGroup="GROUP-ORCS_4P_3M_1S" challengeScale="101" challengedList="ppl">
+      <outputs name="Win" ownerID="3" targetID="4" fromX="1287" fromY="-253" />
+      <outputs name="Lose" ownerID="3" targetID="17" fromX="1287" fromY="-333" />
+      <outputs name="Surrender" ownerID="3" targetID="16" fromX="1287" fromY="-413" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="4" positionX="1435" positionY="572" width="350" height="805">
       <logic>
@@ -10437,7 +10445,7 @@ Mowi do innych i szybko wychodzi.</nodes>
         </ModifierBlock>
       </logic>
       <outputs name="Popros ja, aby zostala z toba." ownerID="4" targetID="12" fromX="1760" fromY="80" />
-      <outputs name="Powiedz jej, ze ucieszyles sie, ze mozesz pomoc i odejsc." ownerID="4" targetID="15" fromX="1760" fromY="0" />Zabijasz orkow, a Talia jest szczesliwa: 
+      <outputs name="Powiedz jej, ze ucieszyles sie, ze mozesz pomoc i odejsc." ownerID="4" targetID="15" fromX="1763" fromY="0" />Zabijasz orkow, a Talia jest szczesliwa: 
 
 'Dziekuje, dziekuje bardzo! Tutaj wszystko, za co moge zaplacic.'
 
@@ -10454,6 +10462,9 @@ Daje ci nagrode i zbiera jej rzeczy do wyjscia.</nodes>
     <nodes xsi:type="NodeAdventure" ID="6" positionX="859" positionY="-705" width="350" height="805">
       <logic>
         <ModifierBlock>
+          <LogicFilter name="talia2">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" tag="SUBRACE-HUM_HUNTER_TALIA" />
+          </LogicFilter>
           <LogicModifiers>
             <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="10" tag="TAG-LOYALTY_ALPHA_CLANS" />
           </LogicModifiers>
@@ -10463,7 +10474,7 @@ Daje ci nagrode i zbiera jej rzeczy do wyjscia.</nodes>
           <LogicModifiers>
             <scriptCallWithTag scriptName="FMO_AddItems" parameter="1" tag="ITEM_CARGO-STRONG_ONE_ORC_WEAPON" />
           </LogicModifiers>
-          <LogicModifiers list="talia">
+          <LogicModifiers list="talia2">
             <scriptCallWithTag scriptName="FMO_TakeCharacters" />
           </LogicModifiers>
         </ModifierBlock>
@@ -10526,10 +10537,13 @@ Przedstawiaja ci dziecko orkow.</nodes>
           </LogicResultAction>
         </FilterBlock>
         <ModifierBlock>
+          <LogicFilter name="tal">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" tag="SUBRACE-HUM_HUNTER_TALIA" />
+          </LogicFilter>
           <LogicModifiers>
             <scriptCallWithTag scriptName="FMO_AddItems" parameter="20;40" tag="ITEM_CARGO-ONE_ADV_LEATHER" />
           </LogicModifiers>
-          <LogicModifiers list="talia">
+          <LogicModifiers list="tal">
             <scriptCallWithTag scriptName="FMO_AddTags" parameter="5" tag="TAG-MAX_HEALTH_MENTAL" />
           </LogicModifiers>
         </ModifierBlock>
@@ -10542,7 +10556,10 @@ Przedstawiaja ci dziecko orkow.</nodes>
     <nodes xsi:type="NodeSpawnOnMap" ID="15" positionX="2310" positionY="129" width="480" height="503" radius="0" destroyOwner="true" linkedEventUniqueID="0">
       <logic>
         <ModifierBlock>
-          <LogicModifiers list="talia">
+          <LogicFilter name="talia3">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" tag="SUBRACE-HUM_HUNTER_TALIA" />
+          </LogicFilter>
+          <LogicModifiers list="talia3">
             <scriptCallWithTag scriptName="FMO_TakeCharacters" />
           </LogicModifiers>
           <LogicModifiers>
@@ -10568,10 +10585,13 @@ Przedstawiaja ci dziecko orkow.</nodes>
     <nodes xsi:type="NodeAdventure" ID="17" positionX="2692" positionY="-448" width="350" height="725">
       <logic>
         <ModifierBlock>
+          <LogicFilter name="tali">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" tag="SUBRACE-HUM_HUNTER_TALIA" />
+          </LogicFilter>
           <LogicModifiers>
             <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="-3" tag="TAG-LOYALTY_ALPHA_CLANS" />
           </LogicModifiers>
-          <LogicModifiers list="talia">
+          <LogicModifiers list="tali">
             <scriptCallWithTag scriptName="FMO_TakeCharacters" />
           </LogicModifiers>
         </ModifierBlock>
@@ -10592,6 +10612,9 @@ Przedstawiaja ci dziecko orkow.</nodes>
     <nodes xsi:type="NodeSpawnOnMap" ID="21" positionX="-90" positionY="-722" width="480" height="503" radius="0" destroyOwner="true" linkedEventUniqueID="0">
       <logic>
         <ModifierBlock>
+          <LogicFilter name="talia">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" tag="SUBRACE-HUM_HUNTER_TALIA" />
+          </LogicFilter>
           <LogicModifiers list="talia">
             <scriptCallWithTag scriptName="FMO_TakeCharacters" />
           </LogicModifiers>
@@ -16222,6 +16245,9 @@ Jeden zwraca sie do ciebie:
           <LogicModifiers>
             <scriptCallWithTag scriptName="FMO_AddCharacter" parameter="1" tag="SUBRACE-HUM_WARRIOR_TOBIASZ" />
           </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="1" tag="ITEM_CARGO-STRONG_ONE_ARTIFACT_1H" />
+          </LogicModifiers>
         </ModifierBlock>
       </logic>
       <outputs ownerID="5" targetID="6" fromX="1382" fromY="-517" />
@@ -16257,6 +16283,9 @@ Patrzy na ciebie podejrzliwie. </nodes>
         <ModifierBlock>
           <LogicModifiers>
             <scriptCallWithTag scriptName="FMO_AddCharacter" parameter="1" tag="SUBRACE-HUM_WARRIOR_TOBIASZ" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="1" tag="ITEM_CARGO-STRONG_ONE_ARTIFACT_1H" />
           </LogicModifiers>
         </ModifierBlock>
       </logic>
@@ -16507,12 +16536,19 @@ Odchodza.</nodes>
     <nodes xsi:type="NodeDealDamage" ID="29" positionX="2125" positionY="1391" width="460" height="459" challengeTypeDamage="TypePhysical" minDamage="40" maxDamage="60" useCountInPercent="true" targetGroup="ppl">
       <outputs ownerID="29" targetID="28" fromX="2554" fromY="1002" />
     </nodes>
-    <nodes xsi:type="NodeAdventure" ID="30" positionX="2718" positionY="-1416" width="350" height="1046">
-      <outputs name="[Swiatlo] Nie znasz liczby, ale wzywacie swoja domene, abyscie byli posluszni waszemu poleceniu!" ownerID="30" targetID="34" fromX="3043" fromY="-1907" />
-      <outputs name="[Zerca] Liczba bedzie oczywiscie trzy - na pewno nie cztery, absolutnie nie piec, a nigdy nie powiedzielibysmy dwoch, nie. Trzy." ownerID="30" targetID="32" fromX="3043" fromY="-1987" />
-      <outputs name="Dziewiec, jak liczba bogow." ownerID="30" targetID="36" fromX="3043" fromY="-2067" />
-      <outputs name="Trzy wydaja sie dobra liczba." ownerID="30" targetID="33" fromX="3043" fromY="-2147" />
-      <outputs name="Dziesiec jest czesto uzywane jako odliczanie." ownerID="30" targetID="36" fromX="3043" fromY="-2227" />Prezentuja ci okragly przedmiot, wykonany recznie z mithrilu i nieskazitelnej materii. 
+    <nodes xsi:type="NodeAdventure" ID="30" positionX="2684" positionY="-1421" width="350" height="1046">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="ppls" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" />
+          </LogicFilter>
+        </FilterBlock>
+      </logic>
+      <outputs name="[Swiatlo] Nie znasz liczby, ale wzywacie swoja domene, abyscie byli posluszni waszemu poleceniu!" ownerID="30" targetID="34" fromX="3009" fromY="-1912" />
+      <outputs name="[Zerca] Liczba bedzie oczywiscie trzy - na pewno nie cztery, absolutnie nie piec, a nigdy nie powiedzielibysmy dwoch, nie. Trzy." ownerID="30" targetID="32" fromX="3009" fromY="-1992" />
+      <outputs name="Dziewiec, jak liczba bogow." ownerID="30" targetID="36" fromX="3009" fromY="-2072" />
+      <outputs name="Trzy wydaja sie dobra liczba." ownerID="30" targetID="33" fromX="3009" fromY="-2152" />
+      <outputs name="Dziesiec jest czesto uzywane jako odliczanie." ownerID="30" targetID="36" fromX="3009" fromY="-2232" />Prezentuja ci okragly przedmiot, wykonany recznie z mithrilu i nieskazitelnej materii. 
 
 Musisz szepnac odpowiednia liczbe, aby dzialala poprawnie.</nodes>
     <nodes xsi:type="NodeAdventure" ID="32" positionX="3191" positionY="-1163" width="350" height="805">
@@ -16538,10 +16574,10 @@ Musisz szepnac odpowiednia liczbe, aby dzialala poprawnie.</nodes>
           <LogicModifiers>
             <scriptCallWithTag scriptName="FMO_AddItems" parameter="15;20" tag="ITEM_CARGO-HORDE_HIGH_RANDOM_GEMSTONE" />
           </LogicModifiers>
-          <LogicModifiers list="ppl">
+          <LogicModifiers list="ppls">
             <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="3" tag="SKILL_PACK-BLESS_M" />
           </LogicModifiers>
-          <LogicModifiers list="ppl">
+          <LogicModifiers list="ppls">
             <scriptCallWithTag scriptName="FMO_SetHealthPercentTo" parameter="100" tag="TAG-HEALTH_MENTAL" />
           </LogicModifiers>
           <LogicModifiers>
@@ -16575,10 +16611,10 @@ Wyprowadzaja sie.</nodes>
           <LogicModifiers>
             <scriptCallWithTag scriptName="FMO_AddItems" parameter="15;20" tag="ITEM_CARGO-FEW_HIGH_RANDOM_GEMSTONE" />
           </LogicModifiers>
-          <LogicModifiers list="ppl">
+          <LogicModifiers list="ppls">
             <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="3" tag="SKILL_PACK-BLESS_M" />
           </LogicModifiers>
-          <LogicModifiers list="ppl">
+          <LogicModifiers list="ppls">
             <scriptCallWithTag scriptName="FMO_SetHealthPercentTo" parameter="100" tag="TAG-HEALTH_MENTAL" />
           </LogicModifiers>
           <LogicModifiers>
@@ -16615,10 +16651,10 @@ Wyprowadzaja sie.</nodes>
           <LogicModifiers>
             <scriptCallWithTag scriptName="FMO_AddItems" parameter="15;20" tag="ITEM_CARGO-PACK_HIGH_RANDOM_GEMSTONE" />
           </LogicModifiers>
-          <LogicModifiers list="ppl">
+          <LogicModifiers list="ppls">
             <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="3" tag="SKILL_PACK-BLESS_M" />
           </LogicModifiers>
-          <LogicModifiers list="ppl">
+          <LogicModifiers list="ppls">
             <scriptCallWithTag scriptName="FMO_SetHealthPercentTo" parameter="100" tag="TAG-HEALTH_MENTAL" />
           </LogicModifiers>
           <LogicModifiers>
@@ -16664,7 +16700,7 @@ Wyprowadzaja sie.</nodes>
 
 Wyprowadzaja sie.</nodes>
     <nodes xsi:type="NodeDealDamage" ID="38" positionX="2616" positionY="-766" width="460" height="459" challengeTypeDamage="TypePhysical" minDamage="50" maxDamage="70" useCountInPercent="true" targetGroup="ppl">
-      <outputs ownerID="38" targetID="39" fromX="3045" fromY="-748" />
+      <outputs ownerID="38" targetID="39" fromX="3045" fromY="-1154" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="39" positionX="3572" positionY="-364" width="350" height="725">
       <logic>
@@ -16690,6 +16726,382 @@ Odchodza.
         </FilterBlock>
       </logic>
       <outputs ownerID="40" targetID="35" fromX="4034" fromY="-2565" />
+    </nodes>
+  </Adventure>
+  <Adventure name="Dwarf baker2" uniqueID="84" typeGeneric="false" typePerGroupGeneric="false" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="50" eventTag="TAG-LOG13" joinIsForced="false" joinType="AllAlly" joinRange="MovementArea">
+    <nodes xsi:type="NodeStarting" ID="1" positionX="-470" positionY="898" width="347" height="741" image="Event150">
+      <outputs ownerID="1" targetID="2" group="G1" fromX="-145" fromY="294" />
+      <outputs ownerID="1" targetID="26" group="G1" fromX="-145" fromY="214" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" allowOnce="true" ID="2" positionX="-264" positionY="37" width="350" height="805">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="ppl" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" />
+          </LogicFilter>
+          <LogicFilter name="dwarf" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" tag="RACE-DWARF" />
+          </LogicFilter>
+          <LogicFilter name="sham" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="TAG-SHAMAN" />
+          </LogicFilter>
+          <LogicFilter name="ghost" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="TAG-GHOST" />
+          </LogicFilter>
+          <LogicFilter name="mag" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="TAG-MAGIC_USER" />
+          </LogicFilter>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_PlayersDoNotHaveSharedTag" parameter="1" tag="TAG-QUEST56" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Zbadaj." ownerID="2" targetID="3" fromX="61" fromY="-454" />
+      <outputs name="Wyjdz." ownerID="2" targetID="4" fromX="61" fromY="-534" />Natkniesz sie na samotny dom i uslyszysz wiele krasnoludzkich przeklenstw z tylu. </nodes>
+    <nodes xsi:type="NodeAdventure" ID="3" positionX="800" positionY="80" width="350" height="885">
+      <outputs name="[Krasnolud] Powiedz swoim krewnym, aby sie uspokoili i powiedzieli, co jest nie tak." ownerID="3" targetID="5" fromX="1125" fromY="-411" />
+      <outputs name="Zapytaj krasnoluda, czy potrzebuje pomocy." ownerID="3" targetID="8" fromX="1125" fromY="-491" />
+      <outputs name="Atak!" ownerID="3" targetID="6" fromX="1125" fromY="-571" />Widzisz krasnoluda, ktory wyrywa sobie wlosy i kopie gliniany piec: 
+
+'Cholernie bezuzyteczny stos smieci. Wypieprz mnie piekarniku, synu dziwki!'</nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="4" positionX="224" positionY="-932" width="350" height="530" linkedEventUniqueID="0" />
+    <nodes xsi:type="NodeAdventure" ID="5" positionX="1018" positionY="1079" width="350" height="966">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction list="dwarf">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Ciasto? To wydaje sie ponizej jego stacji." ownerID="5" targetID="7" fromX="1343" fromY="587" />
+      <outputs name="Czy wie, jak sie go pozbyc?" ownerID="5" targetID="9" fromX="1343" fromY="507" />
+      <outputs name="[Magiczny uzytkownik] Powiedz mu, ze mozesz wypedzic dla niego ducha." ownerID="5" targetID="10" fromX="1343" fromY="427" />
+      <outputs name="[Goblinski szaman lub Duchy] Wyczuwasz ducha w srodku. Porozmawiaj z nim." ownerID="5" targetID="36" fromX="1343" fromY="347" />„Och, ty, kamien i metal, badz dla mnie laskawy! Czy mozesz przemowic do piekarnika w jakims sensie? Wykonalem go wlasnorecznie, idealnie - utrzymuje temperature na tym samym poziomie. Upieklbym najlepsze ciasto! 
+
+Ale nie, ten idiota wpadl w pulapke i nie odejdzie!'</nodes>
+    <nodes xsi:type="NodeChallenge" ID="6" positionX="962" positionY="-1082" width="500" height="726" challengeType="TypePhysical" versusGroup="GROUP-Q_SMITH_BEAR_6P_5M_2S" challengeScale="101" challengedList="ppl">
+      <outputs name="Win" ownerID="6" targetID="21" fromX="1403" fromY="-1577" />
+      <outputs name="Lose" ownerID="6" targetID="29" fromX="1403" fromY="-1657" />
+      <outputs name="Surrender" ownerID="6" targetID="30" fromX="1403" fromY="-1737" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="7" positionX="1577" positionY="1193" width="350" height="885">
+      <outputs name="Wyglada na zmartwionego, wiec tylko przytaknij. Czy on wie, jak pozbyc sie ducha?" ownerID="7" targetID="9" fromX="1902" fromY="701" />
+      <outputs name="[Magiczny uzytkownik] Powiedz mu, ze mozesz wypedzic dla niego ducha." ownerID="7" targetID="10" fromX="1902" fromY="621" />
+      <outputs name="[Goblinski szaman lub Duchy] Wyczuwasz ducha w srodku. Porozmawiaj z nim." ownerID="7" targetID="36" fromX="1902" fromY="541" />„Co, myslisz, ze krasnoludzki kowal moze tylko topic rzeczy, co? Tak jak Helga. Powiedziala, ze nie bede w stanie tego zrobic, wiec zrobie to!'
+
+Wyciaga troche wiecej swoich juz przerzedzonych wlosow. </nodes>
+    <nodes xsi:type="NodeAdventure" ID="8" positionX="1178" positionY="-50" width="350" height="966">
+      <outputs name="Ciasto? To wydaje sie ponizej jego stacji." ownerID="8" targetID="7" fromX="1503" fromY="-541" />
+      <outputs name="Czy wie, jak sie go pozbyc?" ownerID="8" targetID="9" fromX="1503" fromY="-621" />
+      <outputs name="[Magiczny uzytkownik] Powiedz mu, ze mozesz wypedzic dla niego ducha." ownerID="8" targetID="10" fromX="1503" fromY="-701" />
+      <outputs name="[Goblinski szaman lub Duchy] Wyczuwasz ducha w srodku. Porozmawiaj z nim." ownerID="8" targetID="36" fromX="1503" fromY="-781" />„Kim jestes? Nie obchodzi mnie to! Czy mozesz przemowic do piekarnika w jakims sensie? Wykonalem go wlasnorecznie, idealnie - utrzymuje temperature na tym samym poziomie. Upieklbym najlepsze ciasto! 
+
+Ale nie, ten idiota wpadl w pulapke i nie odejdzie!'</nodes>
+    <nodes xsi:type="NodeAdventure" ID="9" positionX="2219" positionY="694" width="350" height="725">
+      <outputs name="Idz szukac bryly granitu." ownerID="9" targetID="49" fromX="2544" fromY="202" />„Tak, to robie. Ten robak utknal w kawalku granitu, ktorego uzylem. Znam tylko bryle, z ktorej pochodzi, ale jestem w trakcie robienia najlepszego ciasta, nie moge tak po prostu wyjsc. 
+
+Jesli dostaniesz bryle, dam ci napiwek na temat dobrego miejsca do mojego. I nagroda tez. Pospiesz sie, prosze.'</nodes>
+    <nodes xsi:type="NodeAdventure" ID="10" positionX="1756" positionY="-195" width="350" height="805">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction list="mag">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Rytual." ownerID="10" targetID="11" fromX="2081" fromY="-686" />
+      <outputs name="To moze byc zbyt trudne. Czy on zna inny sposob?" ownerID="10" targetID="9" fromX="2081" fromY="-766" />„Och, chlopcze, to sprawia, ze jestem taka szczesliwa! Zaplace za to milo.'</nodes>
+    <nodes xsi:type="NodeChallenge" ID="11" positionX="2268" positionY="-690" width="500" height="726" challengeType="TypeSpirit" versusConcept="true" versusGroup="GROUP-CON_S_0P_0M_5S" challengeScale="101" challengedList="ppl">
+      <outputs name="Win" ownerID="11" targetID="12" fromX="2709" fromY="-1185" />
+      <outputs name="Lose" ownerID="11" targetID="18" fromX="2709" fromY="-1265" />
+      <outputs name="Surrender" ownerID="11" targetID="18" fromX="2709" fromY="-1345" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="12" positionX="2923" positionY="-511" width="350" height="725">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="1" tag="ITEM_CARGO-RARE_ONE_TOOL" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="0;1" tag="ITEM_CARGO-P_STRONG_ONE_DWARF_WEAPON" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="5" tag="TAG-LOYALTY_EARTHBOUND" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="10;30" tag="ITEM_CARGO-DWARFMOONSHINE" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="10;30" tag="ITEM_CARGO-BASIC_COOKED_FEW_FOOD" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Dziekuje mu i odejdz." ownerID="12" targetID="15" fromX="3248" fromY="-1002" />Udaje ci sie wygnac ducha i krasnolud klaszcze w dlonie: 
+
+'Tak, laddie, zrobiles to! Tutaj, moja nagroda za ciebie, ale prosze, odejdz teraz, musze sie skupic! 
+
+Och, i zaznaczylem zyle zasobow dla ciebie na twojej mapie. Idz po dobry kamien lub metal.'
+</nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="14" positionX="3934" positionY="-544" width="350" height="530" allPlayersXP="5" allPlayersRP="2" logBookName="QUEST_KS_BAKER" logBookDescription="QUEST_KS_BAKER2_DES" linkedEventUniqueID="0" endOfQuest="true">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="33" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddResourceOnMap" parameter="3" tag="RES-OBSIDIAN" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+    </nodes>
+    <nodes xsi:type="NodeSpawnOnMap" ID="15" positionX="3301" positionY="-572" width="480" height="663" radius="0" destroyOwner="true" linkedEventUniqueID="0">
+      <outputs ownerID="15" targetID="14" group="G1" fromX="3749" fromY="-554" />
+      <outputs ownerID="15" targetID="16" group="G3" fromX="3289" fromY="-634" />
+      <outputs ownerID="15" targetID="17" group="G1" fromX="3289" fromY="-634" />
+    </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="16" positionX="4341" positionY="-736" width="350" height="530" allPlayersXP="5" allPlayersRP="2" logBookName="QUEST_KS_BAKER" logBookDescription="QUEST_KS_BAKER2_DES" linkedEventUniqueID="0" endOfQuest="true">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="50" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddResourceOnMap" parameter="3" tag="RES-MITHRILL" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+    </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="17" positionX="3969" positionY="-1145" width="350" height="530" allPlayersXP="5" allPlayersRP="2" logBookName="QUEST_KS_BAKER" logBookDescription="QUEST_KS_BAKER2_DES" linkedEventUniqueID="0" endOfQuest="true">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddResourceOnMap" parameter="3" tag="RES-DIAMOND" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="18" positionX="3424" positionY="-1324" width="350" height="725">
+      <outputs name="Wyjdz." ownerID="18" targetID="19" fromX="3749" fromY="-1815" />Przegrywasz rytual i tylko gniewa ducha. Piec gliniany trzesie sie i staje sie niebieski. Krasnolud jest wsciekly: 
+
+'Lepiej zostaw mnie, lassie, nie mam na to ochoty!'</nodes>
+    <nodes xsi:type="NodeSpawnOnMap" ID="19" positionX="3840" positionY="-1691" width="480" height="503" radius="0" destroyOwner="true" linkedEventUniqueID="0">
+      <outputs ownerID="19" targetID="20" fromX="4288" fromY="-2123" />
+    </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="20" positionX="4835" positionY="-1704" width="350" height="530" allPlayersXP="1" allPlayersRP="1" logBookName="QUEST_KS_BAKER" logBookDescription="QUEST_KS_BAKER3_DES" linkedEventUniqueID="0" endOfQuest="true" />
+    <nodes xsi:type="NodeAdventure" ID="21" positionX="989" positionY="-1606" width="350" height="805">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="-4" tag="TAG-LOYALTY_EARTHBOUND" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Co mozna zrobic?" ownerID="21" targetID="22" fromX="1314" fromY="-2097" />
+      <outputs name="Odrzuc i odejdz." ownerID="21" targetID="25" fromX="1314" fromY="-2177" />Zabijasz krasnoluda, a duch wzywa cie: 
+
+'Och, hej. Teraz, kiedy zabiles tego niegrzecznego glupka, moglbys mnie uwolnic?'</nodes>
+    <nodes xsi:type="NodeAdventure" ID="22" positionX="1383" positionY="-1574" width="350" height="805">
+      <outputs name="Zgadzam sie." ownerID="22" targetID="23" fromX="1708" fromY="-2065" />
+      <outputs name="Odrzuc i odejdz." ownerID="22" targetID="25" fromX="1708" fromY="-2145" />„Jest bryla granitu, ktora zalamal glupi krasnolud. Jesli go tu przyniesiesz, moge go z powrotem przeniesc. Podobalo mi sie tam.'</nodes>
+    <nodes xsi:type="NodeSpawnOnMap" ID="23" positionX="1908" positionY="-1931" width="480" height="503" radius="4" settlementID="SET-CAVE_ENTRANCE" destroyOwner="true" linkedEventUniqueID="38">
+      <outputs ownerID="23" targetID="24" fromX="2356" fromY="-2363" />
+    </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="24" positionX="2464" positionY="-2731" width="350" height="530" allPlayersXP="5" allPlayersRP="2" logBookName="QUEST_KS_BAKER" logBookDescription="QUEST_KS_BAKER6_DES" linkedEventUniqueID="0" />
+    <nodes xsi:type="NodeSpawnOnMap" ID="25" positionX="1314" positionY="-2511" width="480" height="503" radius="0" destroyOwner="true" linkedEventUniqueID="0">
+      <outputs ownerID="25" targetID="43" fromX="1762" fromY="-2943" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="26" positionX="-916" positionY="-126" width="350" height="805">
+      <outputs name="Tak." ownerID="26" targetID="34" group="G1" fromX="-590" fromY="-617" />
+      <outputs name="Zostaw, aby poszukac obsydianowej bryly, aby pozbyc sie ducha." ownerID="26" targetID="4" group="G1" fromX="-590" fromY="-697" />„Znalazles go jeszcze? Nie? Idz stad...'</nodes>
+    <nodes xsi:type="NodeSpawnOnMap" ID="27" positionX="3382" positionY="597" width="480" height="503" radius="4" settlementID="SET-CAVE_ENTRANCE" destroyOwner="true" linkedEventUniqueID="37">
+      <outputs ownerID="27" targetID="28" fromX="3832" fromY="168" />
+    </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="28" positionX="3976" positionY="540" width="350" height="530" allPlayersXP="3" allPlayersRP="2" logBookName="QUEST_KS_BAKER" logBookDescription="QUEST_KS_BAKER_DES" linkedEventUniqueID="0">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="1" tag="TAG-QUEST56" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="29" positionX="416" positionY="-2039" width="350" height="725">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="-3" tag="TAG-LOYALTY_EARTHBOUND" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Wyjdz." ownerID="29" targetID="31" fromX="741" fromY="-2530" />Jestes ciezko pobity i przepedzony.</nodes>
+    <nodes xsi:type="NodeDealDamage" ID="30" positionX="-117" positionY="-1931" width="460" height="459" challengeTypeDamage="TypePhysical" minDamage="20" maxDamage="30" useCountInPercent="true" targetGroup="ppl">
+      <outputs ownerID="30" targetID="29" fromX="312" fromY="-2319" />
+    </nodes>
+    <nodes xsi:type="NodeSpawnOnMap" ID="31" positionX="-198" positionY="-2546" width="480" height="503" radius="0" destroyOwner="true" linkedEventUniqueID="0">
+      <outputs ownerID="31" targetID="32" fromX="250" fromY="-2978" />
+    </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="32" positionX="-654" positionY="-2584" width="350" height="530" allPlayersXP="1" allPlayersRP="1" logBookName="QUEST_KS_BAKER" logBookDescription="QUEST_KS_BAKER7_DES" linkedEventUniqueID="0" endOfQuest="true" />
+    <nodes xsi:type="NodeAdventure" ID="34" positionX="-1656" positionY="-309" width="350" height="725">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_PlayersDoNotHaveSharedTag" parameter="1" tag="TAG-QUEST56" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="0;1" tag="ITEM_CARGO-RARE_ONE_TOOL" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="0;1" tag="ITEM_CARGO-P_STRONG_ONE_DWARF_WEAPON" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="5" tag="TAG-LOYALTY_EARTHBOUND" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="10;30" tag="ITEM_CARGO-DWARFMOONSHINE" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="10;30" tag="ITEM_CARGO-BASIC_COOKED_FEW_FOOD" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Dziekuje mu i odejdz." ownerID="34" targetID="44" fromX="-1330" fromY="-800" />„Ach, masz to, swietnie. Daj to szybko, sam sie tym zajme. Oto nagroda zgodnie z obietnica! Metal i kamien do ciebie, chlopcze. Och, i dla ciebie tez wyznaczylem miejsce dla jakiegos dobrego gornictwa.'
+</nodes>
+    <nodes xsi:type="NodeAdventure" ID="36" positionX="1833" positionY="-1038" width="350" height="725">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction list="sham" resultGroup="G1">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+          <LogicResultAction list="ghost" resultGroup="G1">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Zgodz sie i powiedz krasnoludowi, ze zamiast tego wydobedziesz ducha." ownerID="36" targetID="37" fromX="2158" fromY="-1529" />„Och, mozesz do mnie mowic, wiec wiesz o duchach, dobrze. Prosze, nie wynos mnie. Jesli zabierzesz mnie stad bezpiecznie, pojde z toba, co?'</nodes>
+    <nodes xsi:type="NodeAdventure" ID="37" positionX="2574" positionY="-1461" width="350" height="725">
+      <outputs name="Powiedz, ze nie ma gwarancji, ale szansa na to jest mala." ownerID="37" targetID="38" fromX="2899" fromY="-1952" />„Dobrze, jesli nie uszkodzisz mojego piekarnika, prawda?'</nodes>
+    <nodes xsi:type="NodeAdventure" ID="38" positionX="3030" positionY="-1988" width="350" height="885">
+      <outputs name="Zignoruj go i wydobadz ducha." ownerID="38" targetID="39" fromX="3355" fromY="-2479" />
+      <outputs name="Wypedz ducha." ownerID="38" targetID="11" fromX="3355" fromY="-2559" />
+      <outputs name="To moze byc zbyt trudne. Czy on zna inny sposob?" ownerID="38" targetID="9" fromX="3355" fromY="-2639" />„Co? Nie! Po prostu pozbadz sie glupiej rzeczy!'</nodes>
+    <nodes xsi:type="NodeChallenge" ID="39" positionX="3444" positionY="-2241" width="500" height="807" challengeType="TypeSpirit" versusConcept="true" versusGroup="GROUP-CON_S_0P_0M_5S" challengeScale="101" challengedList="ppl">
+      <outputs name="Win" ownerID="39" targetID="40" group="G1" fromX="3885" fromY="-2736" />
+      <outputs name="Lose" ownerID="39" targetID="18" fromX="3885" fromY="-2816" />
+      <outputs name="Surrender" ownerID="39" targetID="18" fromX="3885" fromY="-2896" />
+      <outputs name="Win" ownerID="39" targetID="41" group="G1" fromX="3885" fromY="-2977" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="40" positionX="4010" positionY="-2212" width="350" height="725">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="80" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="1" tag="ITEM_CARGO-RARE_ONE_TOOL" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="0;1" tag="ITEM_CARGO-P_STRONG_ONE_DWARF_WEAPON" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="5" tag="TAG-LOYALTY_EARTHBOUND" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="10;30" tag="ITEM_CARGO-DWARFMOONSHINE" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="10;30" tag="ITEM_CARGO-BASIC_COOKED_FEW_FOOD" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="1" tag="ITEM_CARGO-RARE_ONE_PET_GHOST" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="5" tag="TAG-LOYALTY_SPIRIT_TALKERS" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Dziekuje mu i odejdz." ownerID="40" targetID="15" fromX="4335" fromY="-2703" />Udaje ci sie wydobyc ducha i krasnolud klaszcze w dlonie: 
+
+'Tak, laddie, zrobiles to! Tutaj, moja nagroda za ciebie, ale prosze, odejdz teraz, musze sie skupic! Och, i zaznaczylem zyle zasobow dla ciebie na twojej mapie. Idz po dobry kamien lub metal.'
+
+Duch jest teraz zwiazany z toba i rowniez zadowolony. 
+</nodes>
+    <nodes xsi:type="NodeAdventure" ID="41" positionX="4525" positionY="-2564" width="350" height="725">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="-2" tag="TAG-LOYALTY_EARTHBOUND" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="1" tag="ITEM_CARGO-RARE_ONE_PET_GHOST" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="5" tag="TAG-LOYALTY_SPIRIT_TALKERS" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Zabierz ducha i wyjdz." ownerID="41" targetID="48" fromX="4850" fromY="-3055" />Z powodzeniem wydobywasz ducha, ale rytual rozbija gliniany piec. Krasnolud nie jest szczesliwy: 
+
+'Oi, cholerne panienki! Wszystkie moje wysilki zostaly zniszczone! Najlepiej opusc moj wzrok, zanim cie podrzuce!'
+
+Ale przynajmniej duch jest teraz zwiazany z toba i szczesliwy. 
+</nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="42" positionX="5666" positionY="-2781" width="350" height="530" allPlayersXP="5" allPlayersRP="2" logBookName="QUEST_KS_BAKER" logBookDescription="QUEST_KS_BAKER4_DES" linkedEventUniqueID="0" endOfQuest="true" />
+    <nodes xsi:type="NodeAdventureEnd" ID="43" positionX="1922" positionY="-2539" width="350" height="530" allPlayersXP="5" allPlayersRP="2" logBookName="QUEST_KS_BAKER" logBookDescription="QUEST_KS_BAKER5_DES" linkedEventUniqueID="0" endOfQuest="true" />
+    <nodes xsi:type="NodeSpawnOnMap" ID="44" positionX="-1036" positionY="-1212" width="480" height="663" radius="0" destroyOwner="true" linkedEventUniqueID="0">
+      <outputs ownerID="44" targetID="45" group="G1" fromX="-587" fromY="-1644" />
+      <outputs ownerID="44" targetID="46" group="G3" fromX="-587" fromY="-1724" />
+      <outputs ownerID="44" targetID="47" group="G1" fromX="-587" fromY="-1804" />
+    </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="45" positionX="5435" positionY="-374" width="350" height="530" allPlayersXP="5" allPlayersRP="2" logBookName="QUEST_KS_BAKER" logBookDescription="QUEST_KS_BAKER8_DES" linkedEventUniqueID="0" endOfQuest="true">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="33" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddResourceOnMap" parameter="3" tag="RES-OBSIDIAN" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+    </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="46" positionX="5485" positionY="-945" width="350" height="530" allPlayersXP="5" allPlayersRP="2" logBookName="QUEST_KS_BAKER" logBookDescription="QUEST_KS_BAKER8_DES" linkedEventUniqueID="0" endOfQuest="true">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="50" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddResourceOnMap" parameter="3" tag="RES-MITHRILL" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+    </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="47" positionX="5043" positionY="-1027" width="350" height="530" allPlayersXP="5" allPlayersRP="2" logBookName="QUEST_KS_BAKER" logBookDescription="QUEST_KS_BAKER8_DES" linkedEventUniqueID="0" endOfQuest="true">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddResourceOnMap" parameter="3" tag="RES-DIAMOND" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+    </nodes>
+    <nodes xsi:type="NodeSpawnOnMap" ID="48" positionX="5014" positionY="-2734" width="480" height="503" radius="0" destroyOwner="true" linkedEventUniqueID="0">
+      <outputs ownerID="48" targetID="42" fromX="5462" fromY="-3166" />
+    </nodes>
+    <nodes xsi:type="NodeSpawnOnMap" ID="49" positionX="2763" positionY="699" width="480" height="503" radius="0" settlementID="SET-SMALL_HUT" destroyOwner="true" linkedEventUniqueID="36">
+      <outputs ownerID="49" targetID="27" fromX="3211" fromY="257" />
     </nodes>
   </Adventure>
 </MODULE>

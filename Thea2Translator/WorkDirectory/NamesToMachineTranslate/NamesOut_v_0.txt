@@ -128,7 +128,6 @@
 128:Lubovid
 129:Ludzivoy
 130:Lutek
-131:Lutoslav
 132:Macko
 133:Malkavoj
 134:Malovid
@@ -146,7 +145,6 @@
 146:Mieshko
 147:Miestwin
 148:Mihu
-149:Mikhail
 150:Mileslav
 151:Milobor
 152:Milobrat
@@ -170,7 +168,6 @@
 170:Myslidar
 171:Myszyvor
 172:Naczevoy
-173:Namyslav
 174:Nasarog
 175:Naslav
 176:Nicolay
@@ -193,7 +190,6 @@
 193:Palimir
 194:Parunovoj
 195:Pasha
-196:Pavel
 197:Pavleslav
 198:Pelchybog
 199:Pendantryk
@@ -226,10 +222,8 @@
 226:Ryshard
 227:Rysiek
 228:Samogost
-229:Samoslav
 230:Sasha
 231:Senderslav
-232:Sergei
 233:Shanemir
 234:Siemierz
 235:Siemoradz
@@ -253,7 +247,6 @@
 253:Strzebor
 254:Sulibrat
 255:Sulirad
-256:Szaloslav
 257:Tadeas
 258:Tatomier
 259:Tatomir
@@ -285,12 +278,10 @@
 285:Vojmir
 286:Voyemil
 287:Voytech
-288:Vshesul
 289:Vuk
 290:Wschodrzev
 291:Yan
 292:Yanko
-293:Yaroslav
 294:Yarostry
 295:Yutrovoy
 296:Zadar
@@ -331,14 +322,12 @@
 331:Bogodara
 332:Bogufala
 333:Bogumila
-334:Boguslawa
 335:Boguwola
 336:Bohna
 337:Bohumila
 338:Bolemira
 339:Boyana
 340:Bozecieha
-341:Bozena
 342:Branka
 343:Bratumila
 344:Bretka
@@ -383,7 +372,6 @@
 383:Gnievosadka
 384:Goslava
 385:Gostirada
-386:Grazyna
 387:Greta
 388:Grodzislava
 389:Hana
@@ -460,7 +448,6 @@
 460:Naslava
 461:Nastka
 462:Natalia
-463:Natasha
 464:Navoya
 465:Navoyka
 466:Niegoslava
@@ -495,10 +482,8 @@
 495:Ruuzena
 496:Sabina
 497:Scibora
-498:Sedzislava
 499:Siecieslava
 500:Sieclava
-501:Siecslawa
 502:Sieslava
 503:Siroslava
 504:Skarbimira
@@ -548,10 +533,8 @@
 548:Yania
 549:Yanina
 550:Yanka
-551:Yarmila
 552:Yasna
 553:Yuzia
-554:Zachryaslawa
 555:Zadra
 556:Zahradka
 557:Zdenka
@@ -566,14 +549,8 @@
 566:Zuska
 567:Zuzia
 568:Monia
-569:Capitan Bear
-570:Alchemist
-571:Alchemist
 572:Hanka
 573:Dagmara
-574:Zloslawa
-575:Staroslaw
-576:The Guard
 577:Tobiasz
 578:Spider Boy
 579:Talia
@@ -782,7 +759,6 @@
 782:Na'yssa
 783:Na'yssil
 784:Na'ythien
-785:Na'yvenn
 786:Neh'yell
 787:Neh'yith
 788:Neh'yleth
@@ -1000,7 +976,6 @@
 1000:Er'yssil
 1001:Er'ythien
 1002:Er'yvenn
-1003:Ev'yell
 1004:Ev'yith
 1005:Ev'yleth
 1006:Ev'yssa
@@ -1041,7 +1016,6 @@
 1041:Na'yssa
 1042:Na'yssil
 1043:Na'ythien
-1044:Na'yvenn
 1045:Neh'yell
 1046:Neh'yith
 1047:Neh'yleth
@@ -1106,9 +1080,7 @@
 1106:Meatbasher
 1107:Limbslicer
 1108:Fearbringer
-1109:Bloodseeker
 1110:Skullbasher
-1111:Bruisebearer
 1112:Deathlover
 1113:Widowmaker
 1114:Truthgiver
@@ -1126,29 +1098,18 @@
 1126:Axeslicer
 1127:Axelover
 1128:Armbreaker
-1129:Armcrusher
 1130:Armbasher
 1131:Arntrasher
-1132:Armsbearer
 1133:Bloodmaker
-1134:Bloodtaker
-1135:Bloodgiver
-1136:Bloodbringer
-1137:Bloodkiller
-1138:Bloodseeker
 1139:Bloodbasher
 1140:Bloodrunner
-1141:Bloodbearer
-1142:Bloodslayer
 1143:Bloodhacker
 1144:Bloodlover
 1145:Bruisemaker
 1146:Bruisegiver
-1147:Bruisebearer
 1148:Bruisetrasher
 1149:Bruisebringer
 1150:Beastmaker
-1151:Beastbreaker
 1152:Beastbringer
 1153:Beastkiller
 1154:Beastseeker
@@ -1156,7 +1117,6 @@
 1156:Beasttrasher
 1157:Beastcrusher
 1158:Beastrunner
-1159:Beastslayer
 1160:Beathacker
 1161:Beastslicer
 1162:Beastlover
@@ -1167,34 +1127,25 @@
 1167:Boarcrusher
 1168:Boartrasher
 1169:Boarbasher
-1170:Bearbreaker
 1171:Bearkiller
 1172:Bearslayer
 1173:Bearbasher
-1174:Bearcrusher
 1175:Beartrasher
-1176:Bearseeker
 1177:Bearhacker
 1178:Bearslicer
 1179:Bearlover
-1180:Bonebreaker
 1181:Bonebringer
 1182:Bonekiller
 1183:Boneseeker
 1184:Bonecrusher
 1185:Bonebasher
 1186:Bonethrasher
-1187:Bonebearer
-1188:Boneslayer
 1189:Boneslicer
 1190:Bonehacker
 1191:Biesbreaker
 1192:Bieskiller
 1193:Biesslayer
 1194:Biesbasher
-1195:Chainbreaker
-1196:Chainbringer
-1197:Chaincrusher
 1198:Chainbasher
 1199:Chainthrasher
 1200:Chainslicer
@@ -1202,11 +1153,7 @@
 1202:Crowslayer
 1203:Crowbasher
 1204:Crowrunner
-1205:Childmaker
-1206:Childtaker
 1207:Childgiver
-1208:Childcrusher
-1209:Childbringer
 1210:Demonbreaker
 1211:Demonbringer
 1212:Demonkiller
@@ -1222,23 +1169,18 @@
 1222:Doomgiver
 1223:Doombringer
 1224:Doomseeker
-1225:Doombearer
 1226:Doomslayer
 1227:Doomlover
 1228:Deathmaker
-1229:Deathtaker
 1230:Deathgiver
 1231:Deathbringer
-1232:Deathseeker
 1233:Deathcrusher
 1234:Deathrunner
-1235:Deathbearer
 1236:Deathlover
 1237:Daybreaker
 1238:Dayseeker
 1239:Daythrasher
 1240:Dayrunner
-1241:Dayslayer
 1242:Dirtbringer
 1243:Dirtgiver
 1244:Darkmaker
@@ -1260,19 +1202,14 @@
 1260:Dawnrunner
 1261:Dawnbearer
 1262:Dawnseeker
-1263:Dragonbreaker
 1264:Dragontaker
-1265:Dragonkiller
 1266:Dragonseeker
-1267:Dragoncrusher
 1268:Dragonbasher
 1269:Dragonthrasher
-1270:Dragonbearer
 1271:Dragonslicer
 1272:Dragonhacker
 1273:Dragonlover
 1274:Dwarfbreaker
-1275:Dwarftaker
 1276:Dwarfkiller
 1277:Dwarfseeker
 1278:Dwarfcrusher
@@ -1297,7 +1234,6 @@
 1297:Elfhacker
 1298:Firemaker
 1299:Firebringer
-1300:Firetaker
 1301:Firegiver
 1302:Firebreaker
 1303:Fireseeker
@@ -1312,17 +1248,12 @@
 1312:Fearmaker
 1313:Fearbreaker
 1314:Feartaker
-1315:Feargiver
-1316:fearbringer
 1317:Fearkiller
 1318:Fearseeker
 1319:Fearcrusher
 1320:Fearbasher
 1321:Fearthrasher
-1322:Fearrunner
-1323:Fearslayer
 1324:Fearlover
-1325:Fightmaker
 1326:Fightbringer
 1327:Fightlover
 1328:Frostbreaker
@@ -1351,12 +1282,8 @@
 1351:Godbringer
 1352:Godseeker
 1353:Godlover
-1354:Guiltmaker
-1355:Guilttaker
-1356:Guiltbreaker
 1357:Guiltgiver
 1358:Guiltseeker
-1359:Guiltbearer
 1360:Groincrusher
 1361:Groinbasher
 1362:Groinslasher
@@ -1367,7 +1294,6 @@
 1367:Gutbearer
 1368:Gutslicer
 1369:Gutlover
-1370:Ghostbreaker
 1371:Ghostbasher
 1372:Ghostrunner
 1373:Ghosthacker
@@ -1381,13 +1307,8 @@
 1381:Honourbreaker
 1382:Honourtaker
 1383:Honourbringer
-1384:Honourbearer
-1385:Hammerbreaker
 1386:Hammertaker
-1387:Hammercrusher
 1388:Hammerbasher
-1389:Hammerbearer
-1390:Hammerlover
 1391:Hatemaker
 1392:Hategiver
 1393:Hatebreaker
@@ -1408,7 +1329,6 @@
 1408:Jawslicer
 1409:Jawthrasher
 1410:Joybreaker
-1411:Joytaker
 1412:Joykiller
 1413:Joycrusher
 1414:Joybasher
@@ -1434,7 +1354,6 @@
 1434:Loveslayer
 1435:Lovecrusher
 1436:Lifemaker
-1437:Lifebreaker
 1438:Lifetaker
 1439:Lifegiver
 1440:Lifeseeker
@@ -1445,7 +1364,6 @@
 1445:Lointhrasher
 1446:Loinseeker
 1447:Limbbreaker
-1448:Limbcrusher
 1449:Limbbasher
 1450:Limbthrasher
 1451:Limbslicer
@@ -1455,11 +1373,9 @@
 1455:Lustmaker
 1456:Lavacrusher
 1457:Lavarunner
-1458:Mithrilbreaker
 1459:Mithrilcrusher
 1460:Mithrilbasher
 1461:Mithrillover
-1462:Meatbreaker
 1463:Meatcrusher
 1464:Meatbasher
 1465:Meathacker
@@ -1471,13 +1387,11 @@
 1471:Manlover
 1472:Moonbreaker
 1473:Moonbringer
-1474:Moonseeker
 1475:Moonrunner
 1476:Moonlover
 1477:Nosebreaker
 1478:Nosecrusher
 1479:Nosebasher
-1480:Nutbreaker
 1481:Nutbasher
 1482:Nutcrusher
 1483:Nutslicer
@@ -1494,14 +1408,10 @@
 1494:Nimbleslicer
 1495:Nimblehacker
 1496:Nimblelover
-1497:Oathmaker
 1498:Oathbreaker
-1499:Oathtaker
-1500:Oathgiver
 1501:Oathkiller
 1502:Oathseeker
 1503:Oathcrusher
-1504:Oathbearer
 1505:Pridemaker
 1506:Pridegiver
 1507:Pridebearer
@@ -1519,62 +1429,41 @@
 1519:Runebasher
 1520:Runethrasher
 1521:Ragemaker
-1522:Ragebreaker
 1523:Ragecrusher
-1524:Ragebearer
 1525:Ragerunner
 1526:Ragelover
 1527:Starmaker
 1528:Starbreaker
-1529:Starbringer
 1530:Starkiller
 1531:Starseeker
 1532:Starcrusher
 1533:Starbasher
 1534:STarThrasher
 1535:Starrunner
-1536:Starbearer
-1537:Starslayer
 1538:Starslicer
 1539:Starlover
 1540:Screammaker
 1541:Screamgiver
-1542:Screambringer
 1543:Screamrunner
 1544:Screambearer
-1545:Swordbreaker
 1546:Swordtaker
 1547:Swordkiller
-1548:Swordcrusher
-1549:Swordbearer
 1550:Swordlover
-1551:Spearbreaker
 1552:Speartaker
 1553:Spearkiller
-1554:Spearcrusher
-1555:Spearbearer
 1556:Spearlover
-1557:Spellbreaker
-1558:Spellkiller
 1559:Spellcrusher
-1560:Spellslayer
 1561:Shamemaker
-1562:Shamebreaker
 1563:Shamegiver
-1564:Shamebringer
-1565:Shamebearer
-1566:Steelbreaker
 1567:Steelcrusher
 1568:Steelslicer
 1569:Steelhacker
 1570:Steelbringer
-1571:Stealbearer
 1572:Shieldbreaker
 1573:Shieldtaker
 1574:Shieldcrusher
 1575:Shieldbasher
 1576:Shieldthrasher
-1577:Shieldbearer
 1578:Shieldslicer
 1579:Shieldlover
 1580:Sunbringer
@@ -1583,12 +1472,8 @@
 1583:Stonebreaker
 1584:Stonekiller
 1585:Stonecrusher
-1586:Shadowbringer
 1587:Shadowbreaker
-1588:Shadowkiller
 1589:Shadowslicer
-1590:SHadowhacker
-1591:Shadowbearer
 1592:Shadowmaker
 1593:Trollbreaker
 1594:Trolltaker
@@ -1596,15 +1481,12 @@
 1596:Trollseeker
 1597:Trollcrusher
 1598:Trolllover
-1599:Troublemaker
 1600:Troubletaker
 1601:Troubleseeker
 1602:Truthgiver
 1603:Truthseeker
 1604:Truthbasher
-1605:Truthbearer
 1606:Towerbreaker
-1607:Towercrusher
 1608:Umbrageslayer
 1609:Umbragecrusher
 1610:Umbragebasher
@@ -1615,7 +1497,6 @@
 1615:Vengencegiver
 1616:Vengenceseeker
 1617:Vengencelover
-1618:Vengencebearer
 1619:Widowmaker
 1620:Widowtaker
 1621:Widowslayer
@@ -1629,22 +1510,13 @@
 1629:Wraithcrusher
 1630:Wraithslicer
 1631:Wrathmaker
-1632:Wrathbringer
-1633:Wrathgiver
-1634:Wrathseeker
-1635:Wrathlover
-1636:Wrathtaker
 1637:Warmaker
 1638:Wargiver
 1639:Warbreaker
-1640:Warbringer
 1641:Warcrusher
 1642:Warlover
 1643:Warseeker
-1644:Warbearer
 1645:Wolfseeker
-1646:Wolfslayer
-1647:Wolfbearer
 1648:Zmeybreaker
 1649:Zmeytaker
 1650:Zmeykiller
@@ -1672,22 +1544,14 @@
 1672:Armcrusher
 1673:Armbasher
 1674:Arntrasher
-1675:Armsbearer
-1676:Bloodmaker
 1677:Bloodtaker
-1678:Bloodgiver
-1679:Bloodbringer
-1680:Bloodkiller
-1681:Bloodseeker
 1682:Bloodbasher
 1683:Bloodrunner
-1684:Bloodbearer
 1685:Bloodslayer
 1686:Bloodhacker
 1687:Bloodlover
 1688:Bruisemaker
 1689:Bruisegiver
-1690:Bruisebearer
 1691:Bruisetrasher
 1692:Bruisebringer
 1693:Beastmaker
@@ -1699,7 +1563,6 @@
 1699:Beasttrasher
 1700:Beastcrusher
 1701:Beastrunner
-1702:Beastslayer
 1703:Beathacker
 1704:Beastslicer
 1705:Beastlover
@@ -1710,34 +1573,24 @@
 1710:Boarcrusher
 1711:Boartrasher
 1712:Boarbasher
-1713:Bearbreaker
 1714:Bearkiller
-1715:Bearslayer
 1716:Bearbasher
-1717:Bearcrusher
 1718:Beartrasher
 1719:Bearseeker
-1720:Bearhacker
 1721:Bearslicer
 1722:Bearlover
-1723:Bonebreaker
 1724:Bonebringer
 1725:Bonekiller
 1726:Boneseeker
 1727:Bonecrusher
 1728:Bonebasher
 1729:Bonethrasher
-1730:Bonebearer
-1731:Boneslayer
 1732:Boneslicer
 1733:Bonehacker
 1734:Biesbreaker
 1735:Bieskiller
 1736:Biesslayer
 1737:Biesbasher
-1738:Chainbreaker
-1739:Chainbringer
-1740:Chaincrusher
 1741:Chainbasher
 1742:Chainthrasher
 1743:Chainslicer
@@ -1745,11 +1598,7 @@
 1745:Crowslayer
 1746:Crowbasher
 1747:Crowrunner
-1748:Childmaker
-1749:Childtaker
 1750:Childgiver
-1751:Childcrusher
-1752:Childbringer
 1753:Demonbreaker
 1754:Demonbringer
 1755:Demonkiller
@@ -1765,23 +1614,17 @@
 1765:Doomgiver
 1766:Doombringer
 1767:Doomseeker
-1768:Doombearer
 1769:Doomslayer
 1770:Doomlover
 1771:Deathmaker
-1772:Deathtaker
-1773:Deathgiver
 1774:Deathbringer
-1775:Deathseeker
 1776:Deathcrusher
 1777:Deathrunner
-1778:Deathbearer
 1779:Deathlover
 1780:Daybreaker
 1781:Dayseeker
 1782:Daythrasher
 1783:Dayrunner
-1784:Dayslayer
 1785:Dirtbringer
 1786:Dirtgiver
 1787:Darkmaker
@@ -1803,19 +1646,15 @@
 1803:Dawnrunner
 1804:Dawnbearer
 1805:Dawnseeker
-1806:Dragonbreaker
 1807:Dragontaker
 1808:Dragonkiller
 1809:Dragonseeker
-1810:Dragoncrusher
 1811:Dragonbasher
 1812:Dragonthrasher
-1813:Dragonbearer
 1814:Dragonslicer
 1815:Dragonhacker
 1816:Dragonlover
 1817:Dwarfbreaker
-1818:Dwarftaker
 1819:Dwarfkiller
 1820:Dwarfseeker
 1821:Dwarfcrusher
@@ -1840,11 +1679,9 @@
 1840:Elfhacker
 1841:Firemaker
 1842:Firebringer
-1843:Firetaker
 1844:Firegiver
 1845:Firebreaker
 1846:Fireseeker
-1847:Firecrusher
 1848:Firethrasher
 1849:Firerunner
 1850:Firehacker
@@ -1853,19 +1690,14 @@
 1853:Fistbringer
 1854:Fistbasher
 1855:Fearmaker
-1856:Fearbreaker
 1857:Feartaker
-1858:Feargiver
-1859:fearbringer
 1860:Fearkiller
 1861:Fearseeker
 1862:Fearcrusher
 1863:Fearbasher
 1864:Fearthrasher
 1865:Fearrunner
-1866:Fearslayer
 1867:Fearlover
-1868:Fightmaker
 1869:Fightbringer
 1870:Fightlover
 1871:Frostbreaker
@@ -1894,12 +1726,9 @@
 1894:Godbringer
 1895:Godseeker
 1896:Godlover
-1897:Guiltmaker
-1898:Guilttaker
 1899:Guiltbreaker
 1900:Guiltgiver
 1901:Guiltseeker
-1902:Guiltbearer
 1903:Groincrusher
 1904:Groinbasher
 1905:Groinslasher
@@ -1910,7 +1739,6 @@
 1910:Gutbearer
 1911:Gutslicer
 1912:Gutlover
-1913:Ghostbreaker
 1914:Ghostbasher
 1915:Ghostrunner
 1916:Ghosthacker
@@ -1924,8 +1752,6 @@
 1924:Honourbreaker
 1925:Honourtaker
 1926:Honourbringer
-1927:Honourbearer
-1928:Hammerbreaker
 1929:Hammertaker
 1930:Hammercrusher
 1931:Hammerbasher
@@ -1951,7 +1777,6 @@
 1951:Jawslicer
 1952:Jawthrasher
 1953:Joybreaker
-1954:Joytaker
 1955:Joykiller
 1956:Joycrusher
 1957:Joybasher
@@ -1998,11 +1823,9 @@
 1998:Lustmaker
 1999:Lavacrusher
 2000:Lavarunner
-2001:Mithrilbreaker
 2002:Mithrilcrusher
 2003:Mithrilbasher
 2004:Mithrillover
-2005:Meatbreaker
 2006:Meatcrusher
 2007:Meatbasher
 2008:Meathacker
@@ -2037,14 +1860,10 @@
 2037:Nimbleslicer
 2038:Nimblehacker
 2039:Nimblelover
-2040:Oathmaker
 2041:Oathbreaker
-2042:Oathtaker
-2043:Oathgiver
 2044:Oathkiller
 2045:Oathseeker
 2046:Oathcrusher
-2047:Oathbearer
 2048:Pridemaker
 2049:Pridegiver
 2050:Pridebearer
@@ -2064,60 +1883,44 @@
 2064:Ragemaker
 2065:Ragebreaker
 2066:Ragecrusher
-2067:Ragebearer
 2068:Ragerunner
 2069:Ragelover
 2070:Starmaker
 2071:Starbreaker
-2072:Starbringer
 2073:Starkiller
 2074:Starseeker
 2075:Starcrusher
 2076:Starbasher
 2077:STarThrasher
 2078:Starrunner
-2079:Starbearer
 2080:Starslayer
 2081:Starslicer
 2082:Starlover
 2083:Screammaker
 2084:Screamgiver
-2085:Screambringer
 2086:Screamrunner
-2087:Screambearer
 2088:Swordbreaker
 2089:Swordtaker
 2090:Swordkiller
-2091:Swordcrusher
-2092:Swordbearer
 2093:Swordlover
 2094:Spearbreaker
 2095:Speartaker
 2096:Spearkiller
 2097:Spearcrusher
-2098:Spearbearer
 2099:Spearlover
-2100:Spellbreaker
 2101:Spellkiller
 2102:Spellcrusher
-2103:Spellslayer
 2104:Shamemaker
-2105:Shamebreaker
 2106:Shamegiver
-2107:Shamebringer
-2108:Shamebearer
-2109:Steelbreaker
 2110:Steelcrusher
 2111:Steelslicer
 2112:Steelhacker
 2113:Steelbringer
-2114:Stealbearer
 2115:Shieldbreaker
 2116:Shieldtaker
 2117:Shieldcrusher
 2118:Shieldbasher
 2119:Shieldthrasher
-2120:Shieldbearer
 2121:Shieldslicer
 2122:Shieldlover
 2123:Sunbringer
@@ -2126,12 +1929,9 @@
 2126:Stonebreaker
 2127:Stonekiller
 2128:Stonecrusher
-2129:Shadowbringer
 2130:Shadowbreaker
 2131:Shadowkiller
 2132:Shadowslicer
-2133:SHadowhacker
-2134:Shadowbearer
 2135:Shadowmaker
 2136:Trollbreaker
 2137:Trolltaker
@@ -2139,15 +1939,11 @@
 2139:Trollseeker
 2140:Trollcrusher
 2141:Trolllover
-2142:Troublemaker
 2143:Troubletaker
 2144:Troubleseeker
 2145:Truthgiver
-2146:Truthseeker
 2147:Truthbasher
-2148:Truthbearer
 2149:Towerbreaker
-2150:Towercrusher
 2151:Umbrageslayer
 2152:Umbragecrusher
 2153:Umbragebasher
@@ -2158,7 +1954,6 @@
 2158:Vengencegiver
 2159:Vengenceseeker
 2160:Vengencelover
-2161:Vengencebearer
 2162:Widowmaker
 2163:Widowtaker
 2164:Widowslayer
@@ -2172,22 +1967,14 @@
 2172:Wraithcrusher
 2173:Wraithslicer
 2174:Wrathmaker
-2175:Wrathbringer
-2176:Wrathgiver
-2177:Wrathseeker
 2178:Wrathlover
-2179:Wrathtaker
 2180:Warmaker
 2181:Wargiver
 2182:Warbreaker
-2183:Warbringer
 2184:Warcrusher
 2185:Warlover
 2186:Warseeker
-2187:Warbearer
 2188:Wolfseeker
-2189:Wolfslayer
-2190:Wolfbearer
 2191:Zmeybreaker
 2192:Zmeytaker
 2193:Zmeykiller
@@ -2199,10 +1986,7 @@
 2199:Zmeylover
 2200:Thundershield
 2201:Axemaker
-2202:Armsgiver
 2203:Armsmaker
-2204:Axegiver
-2205:Bookmaker
 2206:Bookthinker
 2207:Bowgiver
 2208:Bowmaker
@@ -2212,7 +1996,6 @@
 2212:Clayfinder
 2213:Claygiver
 2214:Claymaker
-2215:Claysweeper
 2216:Dirstmaker
 2217:Dirtfinder
 2218:Dirtgrinder
@@ -2234,9 +2017,7 @@
 2234:Hearthgiver
 2235:Hearthmaker
 2236:Homefinder
-2237:Homemaker
 2238:Leathergrinder
-2239:Leathermaker
 2240:Lifegiver
 2241:Lifemaker
 2242:Lovegiver
@@ -2258,12 +2039,9 @@
 2258:Silktalker
 2259:Silktwirler
 2260:Silkweaver
-2261:Speargiver
 2262:Spearmaker
-2263:Steel
 2264:Steelfinder
 2265:Steelgiver
-2266:Steelmaker
 2267:Steelthinker
 2268:Stonefinder
 2269:Stonegrinder
@@ -2271,7 +2049,6 @@
 2271:Stonetalker
 2272:Swordgiver
 2273:Swordmaker
-2274:talker
 2275:talkgiver
 2276:Talkmaker
 2277:Talkweaver
@@ -2284,15 +2061,11 @@
 2284:Woodgrinder
 2285:Woodmaker
 2286:Woodscraper
-2287:Yarnfinder
-2288:Yarnmaker
 2289:Yarntwirler
-2290:Yarnweaver
 2291:Axemaker
 2292:Armsgiver
 2293:Armsmaker
 2294:Axegiver
-2295:Bookmaker
 2296:Bookthinker
 2297:Bowgiver
 2298:Bowmaker
@@ -2302,7 +2075,6 @@
 2302:Clayfinder
 2303:Claygiver
 2304:Claymaker
-2305:Claysweeper
 2306:Dirstmaker
 2307:Dirtfinder
 2308:Dirtgrinder
@@ -2324,9 +2096,7 @@
 2324:Hearthgiver
 2325:Hearthmaker
 2326:Homefinder
-2327:Homemaker
 2328:Leathergrinder
-2329:Leathermaker
 2330:Lifegiver
 2331:Lifemaker
 2332:Lovegiver
@@ -2348,12 +2118,9 @@
 2348:Silktalker
 2349:Silktwirler
 2350:Silkweaver
-2351:Speargiver
 2352:Spearmaker
-2353:Steel
 2354:Steelfinder
 2355:Steelgiver
-2356:Steelmaker
 2357:Steelthinker
 2358:Stonefinder
 2359:Stonegrinder
@@ -2361,7 +2128,6 @@
 2361:Stonetalker
 2362:Swordgiver
 2363:Swordmaker
-2364:talker
 2365:talkgiver
 2366:Talkmaker
 2367:Talkweaver
@@ -2377,7 +2143,6 @@
 2377:Yarnfinder
 2378:Yarnmaker
 2379:Yarntwirler
-2380:Yarnweaver
 2381:Bloodspeaker
 2382:Beastdancer
 2383:Beastknower
@@ -2385,7 +2150,6 @@
 2385:Beastsinger
 2386:Beastspeaker
 2387:Beasttamer
-2388:Beastteller
 2389:Beastwalker
 2390:Beastwhisperer
 2391:Beastwriter
@@ -2394,9 +2158,7 @@
 2394:Bloodknower
 2395:Bloodlooker
 2396:Bloodreader
-2397:Bloodsayer
 2398:Bloodseer
-2399:Bloodsinger
 2400:Bloodtaker
 2401:Bloodteller
 2402:Bloodwalker
@@ -2411,7 +2173,6 @@
 2411:Bonewalker
 2412:Bonewhisperer
 2413:CrookedChildseeer
-2414:Crowdancer
 2415:Crowseer
 2416:Crowsinger
 2417:Crowspeeker
@@ -2440,12 +2201,8 @@
 2440:Deathknower
 2441:Deathlooker
 2442:Deathreader
-2443:Deathsayer
 2444:Deathseer
-2445:Deathsinger
-2446:Deathtamer
 2447:Deathwalker
-2448:Deathwhisperer
 2449:Deathwriter
 2450:Deatspeaker
 2451:Demondancer
@@ -2483,8 +2240,6 @@
 2483:Dustwalker
 2484:Dustwalker
 2485:Dwarfknower
-2486:Dwarfteller
-2487:Earthdancer
 2488:Earthseer
 2489:Earthwalker
 2490:Earthwhisperer
@@ -2497,8 +2252,6 @@
 2497:Fearwhisperer
 2498:Firedancer
 2499:Firedreamer
-2500:Firesinger
-2501:Firetaker
 2502:Firetamer
 2503:Firewalker
 2504:Frostdancer
@@ -2526,12 +2279,10 @@
 2526:Gravelooker
 2527:Gravetamer
 2528:Gravewalker
-2529:Hummingstone
 2530:Joydancer
 2531:Joydreamer
 2532:Joysayer
 2533:Joysinger
-2534:Joytaker
 2535:Lightdancer
 2536:Lightdreamer
 2537:Lightknower
@@ -2545,8 +2296,6 @@
 2545:Moondancer
 2546:Moonknower
 2547:Moonreader
-2548:Moonseer
-2549:Moonsinger
 2550:Moontamer
 2551:Moonteller
 2552:Nightdancer
@@ -2558,11 +2307,8 @@
 2558:Nightteller
 2559:Nightwalker
 2560:Oathdreamer
-2561:Oathsayer
-2562:Oathsinger
 2563:Oathspeaker
 2564:Oathteller
-2565:Oathwriter
 2566:OldChildseer
 2567:OnefingerChildseer
 2568:Quickdreamer
@@ -2577,24 +2323,20 @@
 2577:Shadowreader
 2578:Shadowsinger
 2579:Shadowspeaker
-2580:Shadowtamer
 2581:Shadowteller
 2582:Shadowwalker
 2583:Shadowwhisperer
 2584:Soothdreamer
-2585:Soothsayer
 2586:Soothteller
 2587:Spelldancer
 2588:Spelldreamer
 2589:Spellsinger
-2590:Spelltaker
 2591:Spelltamer
 2592:Spelltamer
 2593:Spellteller
 2594:Stardancer
 2595:Stardreamer
 2596:Starknower
-2597:Starlooker
 2598:Starreader
 2599:Starseer
 2600:Starsinger
@@ -2611,15 +2353,12 @@
 2611:Sunteller
 2612:Sunwalker
 2613:Truthdreamer
-2614:Truthlooker
 2615:Truthreader
-2616:Truthsayer
 2617:Truthseer
 2618:Truthsinger
 2619:Truthspeaker
 2620:Truthtaker
 2621:Truthteller
-2622:Truthwhisperer
 2623:Truthwriter
 2624:Umbrageknower
 2625:Umbragetamer
@@ -2751,7 +2490,6 @@
 2751:Da Boneseeker
 2752:Da Boneseer
 2753:Da Bonesinger
-2754:Da Boneslayer
 2755:Da Boneslicer
 2756:Da Bonespeaker
 2757:Da Bonetamer
@@ -2825,7 +2563,6 @@
 2825:Da Deathcrusher
 2826:Da Deathdancer
 2827:Da Deathdreamer
-2828:Da Deathgiver
 2829:Da Deathknower
 2830:Da Deathlooker
 2831:Da Deathlover
@@ -2922,7 +2659,6 @@
 2922:Da Dwarfknower
 2923:Da Dwarflover
 2924:Da Dwarfseeker
-2925:Da Dwarfslayer
 2926:Da Dwarfslicer
 2927:Da Dwarftaker
 2928:Da Dwarfteller
@@ -2948,7 +2684,6 @@
 2948:Da Elfthrasher
 2949:Da Fearbasher
 2950:Da Fearbreaker
-2951:Da fearbringer
 2952:Da Fearcrusher
 2953:Da Feardancer
 2954:Da Feargiver
@@ -2958,7 +2693,6 @@
 2958:Da Fearrunner
 2959:Da Fearseeker
 2960:Da Fearsinger
-2961:Da Fearslayer
 2962:Da Feartaker
 2963:Da Feartaker
 2964:Da Feartamer
@@ -3120,7 +2854,6 @@
 3120:Da Krakenkiller
 3121:Da Krakenlover
 3122:Da Krakenseeker
-3123:Da Krakenslayer
 3124:Da Krakentaker
 3125:Da Krakenthrasher
 3126:Da Lavacrusher
@@ -3266,7 +2999,6 @@
 3266:Da Shadowbreaker
 3267:Da Shadowbringer
 3268:Da Shadowdancer
-3269:Da SHadowhacker
 3270:Da Shadowkiller
 3271:Da Shadowlooker
 3272:Da Shadowmaker
@@ -3306,7 +3038,6 @@
 3306:Da Spelldreamer
 3307:Da Spellkiller
 3308:Da Spellsinger
-3309:Da Spellslayer
 3310:Da Spelltaker
 3311:Da Spelltamer
 3312:Da Spelltamer
@@ -3357,7 +3088,6 @@
 3357:Da Sunwalker
 3358:Da Swordbearer
 3359:Da Swordbreaker
-3360:Da Swordcrusher
 3361:Da Swordkiller
 3362:Da Swordlover
 3363:Da Swordtaker
@@ -3428,7 +3158,6 @@
 3428:Da Wolfbearer
 3429:Da Wolfseeker
 3430:Da Wolfseer
-3431:Da Wolfslayer
 3432:Da Wolftamer
 3433:Da Wraithbasher
 3434:Da Wraithcrusher
@@ -3467,7 +3196,6 @@
 3467:Da Zmeytaker
 3468:Da Zmeytamer
 3469:Da Zmeyteller
-3470:Necromancer
 3471:Aavak
 3472:Agitz
 3473:Agni
@@ -3499,7 +3227,6 @@
 3499:Kai
 3500:Keljan
 3501:Kless
-3502:Knuckle
 3503:Kovac
 3504:Kyal
 3505:Lah
@@ -3529,13 +3256,11 @@
 3529:Simski
 3530:Sitrus
 3531:Stig'y
-3532:Suffix
 3533:Tao
 3534:Thijs
 3535:Tino
 3536:Tusk
 3537:Ubirak
-3538:Valerian
 3539:Vex
 3540:Vilh
 3541:Wer
@@ -3545,12 +3270,10 @@
 3545:Zaz
 3546:Zeno
 3547:Zosh
-3548:Zurek
 3549:Aeys
 3550:Agitza
 3551:Agnia
 3552:Ahzek
-3553:Aljachat
 3554:Ayaz
 3555:Ayina
 3556:Cas
@@ -3583,7 +3306,6 @@
 3583:Linn
 3584:Magdaki
 3585:Makzi
-3586:Masha
 3587:Micela
 3588:Minx
 3589:Mira
@@ -3600,10 +3322,8 @@
 3600:Schmieztwyn
 3601:Shaka
 3602:Shava
-3603:Shmala
 3604:Simska
 3605:Stig'y
-3606:Suffix
 3607:Taka
 3608:Tawni
 3609:Thijs
@@ -3663,7 +3383,6 @@
 3663:Mlotobojgh
 3664:Norin
 3665:Nothger
-3666:Ovczarz
 3667:Rockmily
 3668:Saragh
 3669:Silberfluege
@@ -3677,10 +3396,8 @@
 3677:Turkh
 3678:Voghler
 3679:Vojdargh
-3680:Voskhodit
 3681:Wardh
 3682:Zakhar
-3683:Zlotoslavgh
 3684:Aghturon
 3685:Bharvena
 3686:Caldazargh
@@ -3722,58 +3439,39 @@
 3722:Turkh
 3723:Voghlara
 3724:Vojslavah
-3725:Voskhodit
 3726:Wardah
 3727:Zakhara
 3728:Zelaznah
 3729:Zlotoslavah
 3730:Iron-Storm
 3731:Warrax
-3732:Weakened Warrax
 3733:Demon
 3734:Demon
 3735:Unliving
 3736:Unliving
-3737:Beast
-3738:Beast
-3739:Mythical
-3740:Mythical
-3741:Concept
 3742:Yanek
 3743:Kamil
 3744:Anya
-3745:Grandma Stasia
-3746:Grumpy
 3747:Bumpy
 3748:Fiodor
 3749:Bogdan
 3750:Bożydar
-3751:Dzievanna's Feral
-3752:Dzievanna's Feral
 3753:Warrakus
 3754:Warrakus
 3755:Czytlica
 3756:Czytlica
-3757:Baba Yaga
-3758:Baba Yaga
 3759:Skshack
 3760:Skshack
 3761:Poludnica
 3762:Poludnica
-3763:Light-sick Karakandza
-3764:Light-sick Karakandza
 3765:Karakandza
 3766:Karakandza
-3767:Cmuch
-3768:Cmuch
 3769:Bies
 3770:Bies
 3771:Light-sick Syrin
 3772:Light-sick Syrin
 3773:Syrin
 3774:Syrin
-3775:Light-sick Alkonost
-3776:Light-sick Alkonost
 3777:Alkonost
 3778:Alkonost
 3779:Czort
@@ -3786,8 +3484,6 @@
 3786:Pineconette
 3787:Eldercone
 3788:Eldercone
-3789:Dormant Leshy
-3790:Dormant Leshy
 3791:Leshy
 3792:Leshy
 3793:Vily
@@ -3799,69 +3495,33 @@
 3799:Vihur
 3800:Vihur
 3801:Forest Fairy
-3802:Forest Fairy
-3803:Werewolf
-3804:Werewolf
-3805:Light-sick Striga
-3806:Light-sick Striga
 3807:Striga
 3808:Striga
-3809:Light-sick Striga Master
-3810:Light-sick Striga Master
-3811:Striga Master
 3812:Striga Master
-3813:Light-sick Striga Mistress
-3814:Light-sick Striga Mistress
-3815:Striga Mistress
-3816:Striga Mistress
 3817:Cmok
 3818:Cmok
 3819:Light-sick Vodnik
 3820:Light-sick Vodnik
 3821:Vodnik
 3822:Vodnik
-3823:Light-sick Rusalka
-3824:Light-sick Rusalka
-3825:Rusalka
-3826:Rusalka
 3827:Utopiec
 3828:Utopiec
-3829:Light-sick Befuddler
-3830:Light-sick Befuddler
 3831:Befuddler
 3832:Befuddler
 3833:Dziad Mroz
 3834:Dziad Mroz
 3835:Sniezynki
 3836:Sniezynki
-3837:Enlightened Child
-3838:Enlightened Child
 3839:Sviatelko
 3840:Sviatelko
 3841:Lightbringer
 3842:Lightbringer
-3843:Elder Lightbringer
-3844:Elder Lightbringer
-3845:Enlightened Human
-3846:Enlightened Human
-3847:Enlightened Dwarf
-3848:Enlightened Dwarf
-3849:Elder Enlightened Dwarf
-3850:Elder Enlightened Dwarf
-3851:Enlightened Spider Queen
-3852:Enlightened Spider Queen
-3853:Enlightened Leshy
-3854:Enlightened Leshy
-3855:Shadow Elf
-3856:Shadow Elf
 3857:Menavca
 3858:Menavca
 3859:Spitting Spider
 3860:Spitting Spider
 3861:Giant Spider
 3862:Giant Spider
-3863:Spider Queen
-3864:Spider Queen
 3865:Blood Bee
 3866:Blood Bee
 3867:Dragon Bee
@@ -3870,64 +3530,22 @@
 3870:Queen Bee
 3871:Spider Bee
 3872:Spider Bee
-3873:Rat
-3874:Rat
 3875:Fat Rat
-3876:Fat Rat
 3877:Young Cradle Possum
 3878:Young Cradle Possum
 3879:Cradle Possum
 3880:Cradle Possum
-3881:Snake
-3882:Snake
 3883:Royal Snake
 3884:Royal Snake
-3885:Starving Wolf
-3886:Starving Wolf
-3887:Wolf
-3888:Wolf
-3889:Alpha Wolf
-3890:Alpha Wolf
-3891:Young Boar
-3892:Young Boar
-3893:Wild Boar
-3894:Wild Boar
-3895:Giant Wild Boar
-3896:Giant Wild Boar
 3897:Bat
-3898:Bat
 3899:Striga Bat
 3900:Striga Bat
 3901:Giant Crow
-3902:Giant Crow
 3903:Royal Crow
-3904:Royal Crow
-3905:Young Bear
-3906:Young Bear
-3907:Bear
-3908:Bear
 3909:Light-sick Bear
-3910:Light-sick Bear
-3911:Rabid Bear
 3912:Rabid Bear
-3913:Small Armoured Bear
-3914:Small Armoured Bear
-3915:Armoured Bear
-3916:Armoured Bear
-3917:Predator Fish
-3918:Predator Fish
-3919:Shark
-3920:Shark
-3921:Sea Serpent
-3922:Sea Serpent
-3923:Broken Skeleton
-3924:Broken Skeleton
 3925:Unliving Corpse
 3926:Unliving Corpse
-3927:Human Skeleton
-3928:Human Skeleton
-3929:Orc Skeleton
-3930:Orc Skeleton
 3931:Topielec
 3932:Topielec
 3933:Unliving Rat
@@ -3936,8 +3554,6 @@
 3936:Unliving Spider
 3937:Unliving Dragon
 3938:Unliving Dragon
-3939:Ghost
-3940:Ghost
 3941:Wraith
 3942:Wraith
 3943:Jurata
@@ -3946,94 +3562,40 @@
 3946:Kraken
 3947:Light-sick Rock Troll
 3948:Light-sick Rock Troll
-3949:Dragon
-3950:Dragon
 3951:Zmey
 3952:Zmey
 3953:Swamper
 3954:Swamper
 3955:Rockers
-3956:Rockers
-3957:Icicles
-3958:Icicles
 3959:Lava Rockers
 3960:Lava Rockers
 3961:Rock Troll
 3962:Rock Troll
 3963:Swamp Troll
 3964:Swamp Troll
-3965:Ice Troll
-3966:Ice Troll
-3967:Lava Troll
-3968:Lava Troll
 3969:Mroki
 3970:Mroki
-3971:Elder Mroki
-3972:Elder Mroki
-3973:Light-corrupted Zmey
-3974:Light-corrupted Zmey
-3975:Guardian Statue
-3976:Guardian Statue
-3977:Failed Summon
-3978:Failed Summon
 3979:Summon Skshack
-3980:Summon Skshack
-3981:Summon Czort
-3982:Summon Czort
 3983:Summon Cmuch
 3984:Summon Cmuch
-3985:Summon Poludnica
-3986:Summon Poludnica
-3987:Summon Alkonost
-3988:Summon Alkonost
-3989:Summon Bies
-3990:Summon Bies
-3991:Summon Werewolf
-3992:Summon Werewolf
 3993:Summon Broken Skeleton
 3994:Summon Broken Skeleton
 3995:Summon Broken Archer
 3996:Summon Broken Archer
 3997:Summon Unliving Corpse
 3998:Summon Unliving Corpse
-3999:Summon Topielec
 4000:Summon Topielec
-4001:Summon Human Skeleton
-4002:Summon Human Skeleton
-4003:Orc Skeleton
 4004:Orc Skeleton
-4005:Summon Rat
-4006:Summon Rat
 4007:Summon Spider
 4008:Summon Spider
 4009:Summon Spider
 4010:Summon Spider
-4011:Summon Giant Spider
-4012:Summon Giant Spider
-4013:Summon Wild Boar
-4014:Summon Wild Boar
-4015:Summon Giant Wild Boar
-4016:Summon Giant Wild Boar
 4017:Summon Blood Bee
 4018:Summon Blood Bee
-4019:Summon Tentacle
-4020:Summon Tentacle
 4021:Summon Lava Rockers
 4022:Summon Lava Rockers
-4023:Summon Sviatelko
-4024:Summon Sviatelko
-4025:Summon Dragon Bee
-4026:Summon Dragon Bee
-4027:Summon Pineconette
 4028:Summon Pineconette
-4029:Summon Eldercone
-4030:Summon Eldercone
-4031:Summon Vily
-4032:Summon Vily
-4033:Summon Ghost
 4034:Summon Ghost
-4035:Summon Wraith
-4036:Summon Wraith
 4037:Pet Ghost
 4038:Pet Ghost
 4039:Pet Wraith
@@ -4046,13 +3608,9 @@
 4046:Pet Boar
 4047:Pet Spitting Spider
 4048:Pet Spitting Spider
-4049:Bialobrod
 4050:Slavogrod
-4051:Lysogora
 4052:Ostrogora
 4053:Radogrod
-4054:Swiatogard
 4055:Krasnodvor
-4056:Nowogrod
 4057:Dudnica
 4058:Sokokovice

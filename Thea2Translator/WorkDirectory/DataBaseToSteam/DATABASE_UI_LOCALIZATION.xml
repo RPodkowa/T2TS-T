@@ -394,6 +394,10 @@
     <Entry Key="UI_TUTORIAL_CAMP3" Val="Przesuń swoją grupę w pobliżu płytki z zasobem znajdującym się nie dalej niż jeden heks dalej. \n\nAby przypisać swoich pracowników do zbierania zasobów, twoja grupa musi być w trybie obozu {COLOR:yellow}" />
     <Entry Key="UI_TUTORIAL_CAMP4" Val="Ustawianie obozu" />
     <Entry Key="UI_TUTORIAL_CAMP5" Val="Aby założyć obóz: \n\n1. Kliknij lewym przyciskiem myszy grupę. Pojawi się menu radialne. \n\n2. Kliknij przycisk Obóz. \n\nEkran zbierania danych otworzy się automatycznie." />
+    <Entry Key="UI_TUTORIAL_CAMP5A" Val="Aby założyć obóz:" />
+    <Entry Key="UI_TUTORIAL_CAMP5B" Val="1. Kliknij lewym przyciskiem myszy grupę. Pojawi się menu radialne." />
+    <Entry Key="UI_TUTORIAL_CAMP5C" Val="2. Kliknij przycisk Obóz." />
+    <Entry Key="UI_TUTORIAL_CAMP5D" Val="Ekran Gathering otworzy się automatycznie." />
     <Entry Key="UI_TUTORIAL_CAMP6" Val="Kemping zwiększa również wskaźnik zdrowia, pod warunkiem, że grupa ma paliwo. Jedna jednostka paliwa ({ICON:FuelIcon}) jest zużywana na turę (więcej podczas zimy)." />
     <Entry Key="UI_TUTORIAL_CARDS1" Val="Właśnie rozpocząłeś grę w karty. \nKażda runda składa się z {COLOR:yellow}8 faz przygotowawczych {END_COLOR}i {COLOR:yellow}2 faz walki {END_COLOR}. \n\nAby wygrać, wyeliminuj wszystkie karty wroga." />
     <Entry Key="UI_TUTORIAL_CARDS2" Val="Podczas {COLOR:yellow}Faz przygotowawczych {END_COLOR}gracze na zmianę grają swoje karty." />
@@ -696,8 +700,8 @@
     <Entry Key="UI_TUTORIAL_ADVANCEMENT2" Val="Naciśnij te przyciski, aby wyświetlić każdą kategorię:" />
     <Entry Key="UI_TUTORIAL_ADVANCEMENT3" Val="Koszt odblokowania każdego przepisu jest wyświetlany obok jego ikony." />
     <Entry Key="UI_TUTORIAL_ADVANCEMENT4" Val="Materiały w {COLOR:yellow}przepisach na sprzęt {END_COLOR}odblokowują w losowej kolejności każdą rozgrywkę, ale możesz zobaczyć szczegóły zanim wydasz swoje Punkty Awansu klikając na przepis." />
-    <Entry Key="UI_TUTORIAL_ADVANCEMENT5" Val="Niektóre przepisy wymagają odblokowania wszystkich węzłów, które do nich prowadzą. " />
-    <Entry Key="UI_TUTORIAL_ADVANCEMENT6" Val="Na przykład receptura Kryształowego Drewna, która jest {COLOR:yellow}materiałem kompozytowym {END_COLOR}, można uzyskać tylko po odblokowaniu zarówno Diamentowego, jak i Starożytnego drewna. " />
+    <Entry Key="UI_TUTORIAL_ADVANCEMENT5" Val="Każdy przepis wymaga odblokowania co najmniej jednego węzła nadrzędnego, który do niego prowadzi." />
+    <Entry Key="UI_TUTORIAL_ADVANCEMENT6" Val="Na przykład Kryształowe Drewno można uzyskać tylko po odblokowaniu Diamentu lub Starożytnego Drewna." />
     <Entry Key="UI_TUTORIAL_ADVANCEMENT7" Val="Punkty Awansu {ICON:AdvancementPointIcon}są przyznawane za każdym razem, gdy zbierzesz wystarczającą liczbę Punktów Badawczych (RP)." />
     <Entry Key="UI_TUTORIAL_ADVANCEMENT8" Val="RP są wydawane po ukończeniu wydarzeń, zbudowaniu szkoły lub zbadaniu terenu i artefaktów istot." />
     <Entry Key="UI_STAY_IN_GAME" Val="Zostań w grze" />
@@ -889,5 +893,10 @@
     <Entry Key="UI_SWITCHING_DATABASE" Val="Zalecamy korzystanie z najnowszej wersji plików bazy danych i powrót do innej wersji, jeśli wiesz, co robisz. Upewnij się, że wersje gier są zgodne, użycie niewłaściwej bazy danych może spowodować awarie! Jeśli chcesz kontynuować grę zapisaną w poprzedniej wersji gry, przełącz się na poprzednią wersję, używając gałęzi beta." />
     <Entry Key="UI_PATCH_NOTES" Val="Uwagi do poprawki" />
     <Entry Key="UI_TAB_TO_SWITCH" Val="TAB - przełączanie między grupami" />
+    <Entry Key="UI_SEE_RESULTS" Val="Zobacz wyniki" />
+    <Entry Key="UI_LESS" Val="Mniej" />
+    <Entry Key="UI_ADDED_TO_PROFILE" Val="Dodano do profilu:" />
+    <Entry Key="UI_CLAIM" Val="Punkty roszczenia" />
+    <Entry Key="UI_TOTAL_VALUE" Val="Łączna wartość:" />
   </LOC_LIBRARY-EN_UI>
 </DATABASE_UI_LOCALIZATION-NO_HSH>

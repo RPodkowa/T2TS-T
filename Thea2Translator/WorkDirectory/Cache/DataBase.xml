@@ -3098,8 +3098,8 @@
       <Group>DES_TAG_DAMAGE_TRUE_ESSENCE</Group>
     </Groups>
     <Texts>
-      <Input>Deals 1.5x damage if the target has armour.</Input>
-      <Output>Zadaje 1,5x obrażeń, jeśli cel ma zbroję.</Output>
+      <Input>Deals 150% damage if the target has armour.</Input>
+      <Output>Zadaje 150% obrażeń, jeśli cel ma zbroję.</Output>
     </Texts>
   </Element>
   <Element ID="242" Key="DES_TAG_DAMAGE_POISON_ESSENCE_DES" Flag="0">
@@ -3111,8 +3111,8 @@
       <Group>DES_TAG_DAMAGE_POISON_ESSENCE</Group>
     </Groups>
     <Texts>
-      <Input>If the target has less than maximum hit points, damage is x1.25.</Input>
-      <Output>Jeśli cel ma mniej niż maksymalne punkty wytrzymałości, obrażenia wynoszą x1,25.</Output>
+      <Input>If the target has less than maximum hit points, damage is +35%.</Input>
+      <Output>Jeśli cel ma mniej niż maksymalne punkty wytrzymałości, obrażenia wynoszą + 35%.</Output>
     </Texts>
   </Element>
   <Element ID="243" Key="DES_TAG_DAMAGE_AOE_ESSENCE_DES" Flag="0">
@@ -3178,8 +3178,8 @@
       <Group>DES_TAG_DAMAGE_POISON_ANCIENT</Group>
     </Groups>
     <Texts>
-      <Input>If the target has less than maximum hit points, damage is x1.5.</Input>
-      <Output>Jeśli cel ma mniej niż maksymalne punkty wytrzymałości, obrażenia wynoszą x1,5.</Output>
+      <Input>If the target has less than maximum hit points, damage is +60%.</Input>
+      <Output>Jeśli cel ma mniej niż maksymalne punkty wytrzymałości, obrażenia wynoszą + 60%.</Output>
     </Texts>
   </Element>
   <Element ID="248" Key="DES_TAG_DAMAGE_AOE_ANCIENT_DES" Flag="0">
@@ -25099,8 +25099,8 @@
       <Group>DES_PET_GHOST</Group>
     </Groups>
     <Texts>
-      <Input>Your very own friendly ghost. Can be summoned to aid you in Spiritual challenges.</Input>
-      <Output>Twój własny, przyjazny duch. Może zostać wezwany do pomocy w wyzwaniach duchowych.</Output>
+      <Input>Your very own friendly ghost.</Input>
+      <Output>Twój własny, przyjazny duch.</Output>
     </Texts>
   </Element>
   <Element ID="2022" Key="DES_PET_CROW" Flag="0">
@@ -28567,8 +28567,8 @@
       <Group>DES_SKILL_WEAK_ADD_CRAFTING_TOOL</Group>
     </Groups>
     <Texts>
-      <Input>Worker's Aid </Input>
-      <Output>Pomoc robotnicza </Output>
+      <Input>Artisan's Aid</Input>
+      <Output>Pomoc rzemieślnika</Output>
     </Texts>
   </Element>
   <Element ID="2311" Key="DES_SKILL_WEAK_CRAFTING_TOOL_DES" Flag="0">
@@ -41126,8 +41126,8 @@
       <Group>DES_SUBSKILL_GROUP_MEDICINE</Group>
     </Groups>
     <Texts>
-      <Input>Healing Bonus</Input>
-      <Output>Premia lecznicza</Output>
+      <Input>This character receives a bonus to Healing attribute from a nearby building.</Input>
+      <Output>Ta postać otrzymuje bonus do atrybutu leczenia z pobliskiego budynku.</Output>
     </Texts>
   </Element>
   <Element ID="3313" Key="DES_SUBSKILL_GROUP_LOWER_DEATH_CHANCE" Flag="0">
@@ -42893,8 +42893,8 @@
       <Group>DES_TRAIT_SMARTER_EVERY_DAY</Group>
     </Groups>
     <Texts>
-      <Input>New Day, New Adventure</Input>
-      <Output>Nowy dzień, nowa przygoda</Output>
+      <Input>Smarter Every Day</Input>
+      <Output>Smarter Every Day</Output>
     </Texts>
   </Element>
   <Element ID="3450" Key="DES_TRAIT_SMARTER_EVERY_DAY_DES" Flag="0">
@@ -42906,8 +42906,8 @@
       <Group>DES_TRAIT_SMARTER_EVERY_DAY</Group>
     </Groups>
     <Texts>
-      <Input>Every day each character gets 1 XP.</Input>
-      <Output>Każdego dnia każda postać otrzymuje 1 PD.</Output>
+      <Input>Each day each of your characters receive 0.2 Experience Points.</Input>
+      <Output>Każdego dnia każda z twoich postaci otrzymuje 0,2 punktów doświadczenia.</Output>
     </Texts>
   </Element>
   <Element ID="3451" Key="DES_TRAIT_LOGIC_WALL" Flag="0">
@@ -43914,8 +43914,8 @@
       <Group>DES_TRAIT_TOUGH_GUY</Group>
     </Groups>
     <Texts>
-      <Input>Your followers get +10% Health but have and additional 5% chance to die when their Health is below 30%.</Input>
-      <Output>Twoi wyznawcy otrzymują + 10% życia, ale mają dodatkowe 5% szansy na śmierć, gdy ich zdrowie wynosi poniżej 30%.</Output>
+      <Input>Your followers get +10% Health but have an additional 5% chance to die when their Health is below 30%.</Input>
+      <Output>Twoi wyznawcy otrzymują + 10% zdrowia, ale mają dodatkowe 5% szansy na śmierć, gdy ich zdrowie wynosi poniżej 30%.</Output>
     </Texts>
   </Element>
   <Element ID="3531" Key="DES_TRAIT_DEMONIC_POSSESSION" Flag="0">
@@ -44520,8 +44520,8 @@
       <Group>DES_TOOLTIP_ITEM_VALUE</Group>
     </Groups>
     <Texts>
-      <Input>Value of this item when it is traded. Note, that Traders will usually don't offer to pay you full prices, otherwise they would go bust!</Input>
-      <Output>Wartość tego przedmiotu podczas obrotu. Zwróć uwagę, że inwestorzy zazwyczaj nie oferują Ci pełnej ceny, w przeciwnym razie popadną w ruinę!</Output>
+      <Input>Value of this item when it is traded. Note, that Traders won't usually offer to pay you full prices, otherwise they would go bust!</Input>
+      <Output>Wartość tego przedmiotu podczas obrotu. Zwróć uwagę, że inwestorzy zwykle nie oferują pełnej ceny, w przeciwnym razie popadną w ruinę!</Output>
     </Texts>
   </Element>
   <Element ID="3583" Key="DES_TOOLTIP_PACK_SIZE" Flag="0">
@@ -61770,8 +61770,8 @@ Orkowie zazwyczaj nie handlują kością ani skórą, ponieważ zazwyczaj mają 
       <Group>UI_TUTORIAL_ADVANCEMENT</Group>
     </Groups>
     <Texts>
-      <Input>Some recipes require that you unlock all nodes that lead to them. </Input>
-      <Output>Niektóre przepisy wymagają odblokowania wszystkich węzłów, które do nich prowadzą. </Output>
+      <Input>Each recipe requires that you unlock at least one parent node that leads to it.</Input>
+      <Output>Każdy przepis wymaga odblokowania co najmniej jednego węzła nadrzędnego, który do niego prowadzi.</Output>
     </Texts>
   </Element>
   <Element ID="5110" Key="UI_TUTORIAL_ADVANCEMENT6" Flag="0">
@@ -61781,8 +61781,8 @@ Orkowie zazwyczaj nie handlują kością ani skórą, ponieważ zazwyczaj mają 
       <Group>UI_TUTORIAL_ADVANCEMENT</Group>
     </Groups>
     <Texts>
-      <Input>For example, Crystal Wood recipe, which is a {COLOR:yellow}composite material{END_COLOR}, can only be obtained after unlocking both Diamond and Ancient Wood materials. </Input>
-      <Output>Na przykład receptura Kryształowego Drewna, która jest {COLOR:yellow}materiałem kompozytowym {END_COLOR}, można uzyskać tylko po odblokowaniu zarówno Diamentowego, jak i Starożytnego drewna. </Output>
+      <Input>For example, Crystal Wood can only be obtained after unlocking either Diamond or Ancient Wood.</Input>
+      <Output>Na przykład Kryształowe Drewno można uzyskać tylko po odblokowaniu Diamentu lub Starożytnego Drewna.</Output>
     </Texts>
   </Element>
   <Element ID="5111" Key="UI_TUTORIAL_ADVANCEMENT7" Flag="0">
@@ -63916,6 +63916,144 @@ Orkowie zazwyczaj nie handlują kością ani skórą, ponieważ zazwyczaj mają 
     <Texts>
       <Input>TAB - switch between groups</Input>
       <Output>TAB - przełączanie między grupami</Output>
+    </Texts>
+  </Element>
+  <Element ID="5302" Key="DES_SUBSKILL_SUMMON_PET_ANIMAL_RANGED_DES" Flag="0">
+    <Groups>
+      <Group>DES</Group>
+      <Group>DES_SUBSKILL</Group>
+      <Group>DES_SUBSKILL_SUMMON</Group>
+      <Group>DES_SUBSKILL_SUMMON_PET</Group>
+      <Group>DES_SUBSKILL_SUMMON_PET_ANIMAL</Group>
+      <Group>DES_SUBSKILL_SUMMON_PET_ANIMAL_RANGED</Group>
+    </Groups>
+    <Texts>
+      <Input>{COLOR:red}Only one copy of this character is permitted on the battlefield at any time.{END_COLOR}\nSummon your pet animal into a free ranged spot.</Input>
+      <Output>{COLOR:red}Tylko jedna kopia tej postaci jest dozwolona na polu bitwy w dowolnym momencie. {END_COLOR}\nPrzywołać swoje zwierzę domowe do wolnego miejsca na dystans.</Output>
+    </Texts>
+  </Element>
+  <Element ID="5303" Key="DES_TOOLTIP_GOD_POINTS_CLAIMED" Flag="0">
+    <Groups>
+      <Group>DES</Group>
+      <Group>DES_TOOLTIP</Group>
+      <Group>DES_TOOLTIP_GOD</Group>
+      <Group>DES_TOOLTIP_GOD_POINTS</Group>
+      <Group>DES_TOOLTIP_GOD_POINTS_CLAIMED</Group>
+    </Groups>
+    <Texts>
+      <Input>God Points</Input>
+      <Output>God Points</Output>
+    </Texts>
+  </Element>
+  <Element ID="5304" Key="DES_TOOLTIP_GOD_POINTS_CLAIMED_DES" Flag="0">
+    <Groups>
+      <Group>DES</Group>
+      <Group>DES_TOOLTIP</Group>
+      <Group>DES_TOOLTIP_GOD</Group>
+      <Group>DES_TOOLTIP_GOD_POINTS</Group>
+      <Group>DES_TOOLTIP_GOD_POINTS_CLAIMED</Group>
+    </Groups>
+    <Texts>
+      <Input>God Points are added to your profile when opening the Game Summary screen. If you continue playing and earn more points, only the difference will be added next time.</Input>
+      <Output>Punkty God są dodawane do twojego profilu po otwarciu ekranu Podsumowanie gry. Jeśli będziesz kontynuować grę i zdobędziesz więcej punktów, tylko różnica zostanie dodana następnym razem.</Output>
+    </Texts>
+  </Element>
+  <Element ID="5305" Key="UI_TUTORIAL_CAMP5A" Flag="0">
+    <Groups>
+      <Group>UI</Group>
+      <Group>UI_TUTORIAL</Group>
+      <Group>UI_TUTORIAL_CAMPA</Group>
+    </Groups>
+    <Texts>
+      <Input>To set up a camp:</Input>
+      <Output>Aby założyć obóz:</Output>
+    </Texts>
+  </Element>
+  <Element ID="5306" Key="UI_TUTORIAL_CAMP5B" Flag="0">
+    <Groups>
+      <Group>UI</Group>
+      <Group>UI_TUTORIAL</Group>
+      <Group>UI_TUTORIAL_CAMPB</Group>
+    </Groups>
+    <Texts>
+      <Input>1. Left click on the group. A radial menu will appear.</Input>
+      <Output>1. Kliknij lewym przyciskiem myszy grupę. Pojawi się menu radialne.</Output>
+    </Texts>
+  </Element>
+  <Element ID="5307" Key="UI_TUTORIAL_CAMP5C" Flag="0">
+    <Groups>
+      <Group>UI</Group>
+      <Group>UI_TUTORIAL</Group>
+      <Group>UI_TUTORIAL_CAMPC</Group>
+    </Groups>
+    <Texts>
+      <Input>2. Click the Camp button.</Input>
+      <Output>2. Kliknij przycisk Obóz.</Output>
+    </Texts>
+  </Element>
+  <Element ID="5308" Key="UI_TUTORIAL_CAMP5D" Flag="0">
+    <Groups>
+      <Group>UI</Group>
+      <Group>UI_TUTORIAL</Group>
+      <Group>UI_TUTORIAL_CAMPD</Group>
+    </Groups>
+    <Texts>
+      <Input>The Gathering screen will open automatically.</Input>
+      <Output>Ekran Gathering otworzy się automatycznie.</Output>
+    </Texts>
+  </Element>
+  <Element ID="5309" Key="UI_SEE_RESULTS" Flag="0">
+    <Groups>
+      <Group>UI</Group>
+      <Group>UI_SEE</Group>
+      <Group>UI_SEE_RESULTS</Group>
+    </Groups>
+    <Texts>
+      <Input>See Results</Input>
+      <Output>Zobacz wyniki</Output>
+    </Texts>
+  </Element>
+  <Element ID="5310" Key="UI_LESS" Flag="0">
+    <Groups>
+      <Group>UI</Group>
+      <Group>UI_LESS</Group>
+    </Groups>
+    <Texts>
+      <Input>Less</Input>
+      <Output>Mniej</Output>
+    </Texts>
+  </Element>
+  <Element ID="5311" Key="UI_ADDED_TO_PROFILE" Flag="0">
+    <Groups>
+      <Group>UI</Group>
+      <Group>UI_ADDED</Group>
+      <Group>UI_ADDED_TO</Group>
+      <Group>UI_ADDED_TO_PROFILE</Group>
+    </Groups>
+    <Texts>
+      <Input>Added To Profile:</Input>
+      <Output>Dodano do profilu:</Output>
+    </Texts>
+  </Element>
+  <Element ID="5312" Key="UI_CLAIM" Flag="0">
+    <Groups>
+      <Group>UI</Group>
+      <Group>UI_CLAIM</Group>
+    </Groups>
+    <Texts>
+      <Input>Claim Points</Input>
+      <Output>Punkty roszczenia</Output>
+    </Texts>
+  </Element>
+  <Element ID="5313" Key="UI_TOTAL_VALUE" Flag="0">
+    <Groups>
+      <Group>UI</Group>
+      <Group>UI_TOTAL</Group>
+      <Group>UI_TOTAL_VALUE</Group>
+    </Groups>
+    <Texts>
+      <Input>Total Value:</Input>
+      <Output>Łączna wartość:</Output>
     </Texts>
   </Element>
 </Database>

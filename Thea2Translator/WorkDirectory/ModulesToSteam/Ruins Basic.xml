@@ -5207,9 +5207,9 @@ Ale uczciwe jest sprawiedliwe, udowodniles swoja wartosc i zawstydzasz mnie. Ta 
         </ModifierBlock>
       </logic>
       <outputs name="Wyjdz." ownerID="45" targetID="46" fromX="2825" fromY="-2359" />
-      <outputs name="Pompatyczny dranie. Zamiast tego zaatakuj ich!" ownerID="45" targetID="47" fromX="2825" fromY="-2439" />'Surrender! You male piece of shit, how dare you dishonour orc blood so!'
+      <outputs name="Pompatyczny dranie. Zamiast tego zaatakuj ich!" ownerID="45" targetID="47" fromX="2825" fromY="-2439" />„Poddaj sie! Ty meski gowno, jak smiesz tak hanbic orcza krew!'
 
-The orc spits in your face with disgust, then growls at you, her fists clenched.</nodes>
+Ork pluje ci w twarz z obrzydzeniem, a potem warczy na ciebie, zacisniete piesci.</nodes>
     <nodes xsi:type="NodeDealDamage" ID="46" positionX="2915.4292" positionY="-2094.54932" width="460" height="459" challengeTypeDamage="TypeMental" minDamage="40" maxDamage="60" useCountInPercent="true" targetGroup="1orcmale">
       <outputs ownerID="46" targetID="40" fromX="3344" fromY="-2482" />
     </nodes>

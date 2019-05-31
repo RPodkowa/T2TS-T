@@ -79,6 +79,7 @@
                 <ComboBox x:Name="cbItemsToTranslateFilter" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Style="{StaticResource fontBase}" SelectionChanged="CbItemsToTranslateFilter_SelectionChanged" Grid.Row="1">
                     <ComboBoxItem Content="{DynamicResource allComboItemTranslate}" IsSelected="True" />
                     <ComboBoxItem Content="{DynamicResource withoutTranslationComboItemTranslate}" />
+                    <ComboBoxItem Content="{DynamicResource withoutConfirmationComboItemTranslate}" />                    
                 </ComboBox>
                 <ComboBox x:Name="cbGroups" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Style="{StaticResource fontBase}" SelectionChanged="CbGroups_SelectionChanged" Grid.Column="2" Grid.Row="1">
                     <ComboBoxItem Content="{DynamicResource allComboItemTranslate}" Selector.IsSelected="True"/>

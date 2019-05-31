@@ -28,5 +28,6 @@
     <system:String x:Key="googleButtonTranslate">Google</system:String>
 
     <system:String x:Key="allComboItemTranslate">Wszystkie</system:String>
-    <system:String x:Key="withoutTranslationComboItemTranslate">Nie przetłumaczone</system:String>
+    <system:String x:Key="withoutTranslationComboItemTranslate">Nieprzetłumaczone</system:String>
+	<system:String x:Key="withoutConfirmationComboItemTranslate">Niepotwierdzone</system:String>
 </ResourceDictionary>

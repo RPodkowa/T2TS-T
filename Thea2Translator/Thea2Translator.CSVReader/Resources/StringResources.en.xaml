@@ -28,4 +28,5 @@
 
     <system:String x:Key="allComboItemTranslate">All</system:String>
     <system:String x:Key="withoutTranslationComboItemTranslate">Without translation</system:String>
+	<system:String x:Key="withoutConfirmationComboItemTranslate">Without confirmation</system:String>
 </ResourceDictionary>

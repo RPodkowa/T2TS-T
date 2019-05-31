@@ -30,8 +30,10 @@ namespace Thea2Translator.DesktopApp.Pages
             InitializeComponent();
             SetStepsButtonVisibility(false);
             ClearProgressBar();
+
             ChangeButtonSelectColor(btnChooseDataBase, false);
             ChangeButtonSelectColor(btnChooseModulus, false);
+            ChangeButtonSelectColor(btnChooseNames, false);
 
             btnChooseDataBase.Click += (o, e) =>
             {

@@ -23,6 +23,8 @@ namespace Thea2Translator.DesktopApp
         public MainWindow()
         {
             InitializeComponent();
+            NavigationCommands.BrowseBack.InputGestures.Clear();
+            NavigationCommands.BrowseForward.InputGestures.Clear();
             navigationFrame.Navigate(new HomePage());
         }
     }

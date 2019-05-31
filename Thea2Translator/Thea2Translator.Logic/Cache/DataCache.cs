@@ -106,7 +106,7 @@ namespace Thea2Translator.Logic
             var elements = doc.DocumentElement.GetElementsByTagName("Element");
             foreach (XmlNode element in elements)
             {
-                var elem = new CacheElem(Type, element);                                
+                var elem = new CacheElem(Type, element);
                 CurrentId = Math.Max(CurrentId, elem.Id);
                 CacheElems.Add(elem);
             }
@@ -133,7 +133,7 @@ namespace Thea2Translator.Logic
             Vocabulary = new Vocabulary();
             Vocabulary.Reload(this);
         }
-        
+
         public void SaveElems(bool withVocabulary = false)
         {
             UpdateStatus($"SaveElemsToFile '{FullPath}'");
@@ -145,8 +145,8 @@ namespace Thea2Translator.Logic
         {
             FileHelper.CreatedPathIfNotExists(FullPath);
             FileHelper.DeleteFileIfExists(FullPath);
-            
-            XmlDocument doc = new XmlDocument();            
+
+            XmlDocument doc = new XmlDocument();
             XmlNode databaseNode = doc.CreateElement("Database");
             doc.AppendChild(databaseNode);
 
@@ -273,6 +273,10 @@ namespace Thea2Translator.Logic
                 var elems = line.Split(':');
                 if (elems.Length <= 1) continue;
                 var id = int.Parse(elems[0]);
+
+                if (line == id + ":")
+                    continue;
+
                 var value = string.Join(":", elems, 1, elems.Length - 1);
 
                 if (value[0] == ' ') value = value.Substring(1);
@@ -325,11 +329,18 @@ namespace Thea2Translator.Logic
                 case "DATABASE_UI_LOCALIZATION": return "LOC_LIBRARY-EN_UI";
             }
 
-            return "LOC_LIBRARY-EN_DES";
+            return "";
+        }
+        private bool IsFileToProcess(string file)
+        {
+            return !string.IsNullOrEmpty(GetMainNodesName(file));
         }
 
         private void ProcessFileDataBase(string file, bool saveToFile)
         {
+            if (!IsFileToProcess(file))
+                return;
+
             XmlDocument doc = new XmlDocument();
             doc.Load(file);
             var entrys = doc.SelectNodes($"//{GetMainNodesName(file)}/Entry");
@@ -363,9 +374,12 @@ namespace Thea2Translator.Logic
         }
         private void ProcessFileModules(string file, bool saveToFile)
         {
+            var fileName = Path.GetFileNameWithoutExtension(file);
+            if (fileName == "sAbandoned lumbermil")
+                return;
+
             XmlDocument doc = new XmlDocument();
             doc.Load(file);
-            var fileName = Path.GetFileNameWithoutExtension(file);
             var adventures = doc.DocumentElement.GetElementsByTagName("Adventure");
             foreach (XmlNode adventure in adventures)
             {
@@ -435,9 +449,12 @@ namespace Thea2Translator.Logic
         }
         private void ProcessFileNames(string file, bool saveToFile)
         {
+            var fileName = Path.GetFileNameWithoutExtension(file);
+            if (fileName != "DATABASE_DES_NAMES")
+                return;
+
             XmlDocument doc = new XmlDocument();
             doc.Load(file);
-            var fileName = Path.GetFileNameWithoutExtension(file);
             var collections = doc.DocumentElement.ChildNodes;
             foreach (XmlNode collection in collections)
             {
@@ -461,7 +478,7 @@ namespace Thea2Translator.Logic
                     {
                         var groups = new List<string>() { collectionName, collectionElemName };
 
-                        TryAddToCacheWithGroup(key,collectionElemValue, groups);
+                        TryAddToCacheWithGroup(key, collectionElemValue, groups);
                     }
                     else
                     {
@@ -547,7 +564,9 @@ namespace Thea2Translator.Logic
             string sufix = step.ToString();
             switch (step)
             {
-                case AlgorithmStep.ImportFromSteam: sufix = ""; break;
+                case AlgorithmStep.ImportFromSteam:
+                    if (IsNamesCache) dir = "DataBase";
+                    sufix = ""; break;
                 case AlgorithmStep.PrepareToMachineTranslate: sufix = "ToMachineTranslate"; break;
                 case AlgorithmStep.ImportFromMachineTranslate: sufix = "FromMachineTranslate"; break;
                 case AlgorithmStep.ExportToSteam: sufix = "ToSteam"; break;

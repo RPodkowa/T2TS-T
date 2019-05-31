@@ -1,0 +1,87 @@
+<CONFIGURATION>
+
+    <!--xxxxxxxxxxxxCOLORSxxxxxxxxxxx -->
+    <XML_COLOR Name="XmlColor">
+        <R Name="r" Type="float" Required="FALSE"/>
+        <G Name="g" Type="float" Required="FALSE"/>
+        <B Name="b" Type="float" Required="FALSE"/>
+        <A Name="a" Type="float" Required="FALSE"/>
+        <Hex Name="hex" Type="string" Required="FALSE"/>
+    </XML_COLOR>
+  
+    <POINT2D Name="Point2D">
+        <X Name="x" Type="float" Required="TRUE"/>
+	    <Y Name="y" Type="float" Required="TRUE"/>
+    </POINT2D>
+	
+    <EVENT_SPAWN Name="EventSpawn">
+        <Module Name="module" Type="string" Required="TRUE"/>
+        <EventID Name="eventID" Type="int" Required="TRUE"/>
+		<PosX Name="posX" Type="int" Required="TRUE"/>
+		<PosY Name="posY" Type="int" Required="TRUE"/>
+		<PosZ Name="posZ" Type="int" Required="TRUE"/>
+        <Group Name="group" Type="GROUP" Required="FALSE"/>
+        <Location Name="location" Type="SETTLEMENT" Required="FALSE"/>
+    </EVENT_SPAWN>
+  
+    <!--xxxxxxxxxxxxARROWSxxxxxxxxxxx -->
+    <VECTROSITY_ARROWS Name="VectrosityArrows">
+        <HeadTexture Name="headTexture" Type="string" Required="FALSE"/>	
+        <HeadSize Name="headSize" Type="POINT2D" Required="FALSE"/>
+        <HeadPivot Name="headPivot" Type="POINT2D" Required="FALSE"/>
+        
+        <BodyTexture Name="bodyTexture" Type="string" Required="FALSE"/>	
+        <BodyWidth Name="bodyWidth" Type="POINT2D" Required="FALSE"/>
+        <UseBodyTextureScale Name="useBodyTextureScale" Type="bool" Required="TRUE"/>
+        <BodyTextureScale Name="bodyTextureScale" Type="float" Required="FALSE"/>
+        
+        <Color Name="color" Type="XML_COLOR" Required="FALSE"/>               
+    </VECTROSITY_ARROWS>
+	
+  
+    <SERVER_SETTINGS Name="ServerSettings">
+        <Address Name="address" Type="string" Required="FALSE"/>
+        <Port Name="port" Type="int" Required="FALSE"/>
+        <ClientDisconnectTimeout Name="clientDisconnectTimeout" Type="int"  Required="FALSE"/>
+    </SERVER_SETTINGS>
+  
+    <GAME_SETTINGS Name="GameSettings">        
+        <PlayerGroup Name="playerGroup" Type="string" Required="TRUE"/>
+        <Seed Name="seed" Type="int" Required="TRUE"/>
+        <StartEventModule Name="startEventModule" Type="string" Required="TRUE"/>
+        <StartEventID Name="startEventID" Type="int" Required="TRUE"/>
+        <God Name="god" Type="GOD" Required="TRUE"/>
+        <EventSpawn Name="eventSpawn" Type="ArrayEVENT_SPAWN" Required="FALSE"/>
+    </GAME_SETTINGS>
+
+    <RESOURCE_TYPE Name="ResourceType">
+        <TEnum Name="tEnum" Type="E_RESOURCE_TYPE" Required="TRUE"/>
+        <CraftingCost Name="craftingCost" Type="float" Required="TRUE"/>
+        <ResourceValue Name="resourceValue" Type="float" Required="TRUE"/>
+        <ChanceToFail Name="chanceToFail" Type="float" Required="TRUE"/>
+        <ChanceToMaster Name="chanceToMster" Type="float" Required="TRUE"/>
+        <Essence Name="essence" Type="float" Required="TRUE"/>
+        <Weight Name="weight" Type="float" Required="TRUE"/>
+        <Delay Name="delay" Type="float" Required="TRUE"/>
+    </RESOURCE_TYPE>
+
+    <DIFFICULTY_SETTING Name="DifficultySetting">
+        <Title Name="title"  Type="string" Required="TRUE"/>
+        <Val Name="val"  Type="string" Required="TRUE"/>
+        <Difficulty Name="difficulty"  Type="float" Required="TRUE"/>
+        <Collection Name="collection" Type="int" Required="TRUE"/>
+    </DIFFICULTY_SETTING>
+
+    <DIFFICULTY_OPTION Name="DifficultyOption">
+        <Description Name="description" Type="string" Required="TRUE"/>
+        <Title Name="title"  Type="string" Required="TRUE"/>
+        <FullValue Name="fullValue"  Type="float" Required="TRUE"/>
+        <Setting Name="setting"  Type="ArrayDIFFICULTY_SETTING" Required="TRUE"/>
+    </DIFFICULTY_OPTION>
+  
+    <DIFFICULTY Name="Difficulty">
+        <Option Name="options" Type="ArrayDIFFICULTY_OPTION" Required="TRUE"/>
+    </DIFFICULTY>
+      
+  
+</CONFIGURATION>

@@ -1,0 +1,51 @@
+﻿<SKILL_PACK>
+    
+  <SKILL_PACK-SWORD_1H>
+    <RarityRange MinimumCount="0" MaximumCount="100"/>
+    <SkillGroupFilters>     
+      <SkillGroupSingleFilter Name="1H" Requirement="NecessaryType"/>
+      <SkillGroupSingleFilter Name="Sword" Requirement="NecessaryType"/>      
+      <SkillGroupSingleFilter Name="DeBuff" Requirement="ForbiddenType"/>      
+    </SkillGroupFilters>    
+  </SKILL_PACK-SWORD_1H>
+
+  <SKILL_PACK-CLUB_1H>
+    <RarityRange MinimumCount="0" MaximumCount="100"/>
+    <SkillGroupFilters>
+      <SkillGroupSingleFilter Name="1H" Requirement="NecessaryType"/>
+      <SkillGroupSingleFilter Name="Club" Requirement="NecessaryType"/>
+      <SkillGroupSingleFilter Name="DeBuff" Requirement="ForbiddenType"/>
+    </SkillGroupFilters>
+  </SKILL_PACK-CLUB_1H>
+
+  <SKILL_PACK-BOW>
+    <RarityRange MinimumCount="0" MaximumCount="100"/>
+    <SkillGroupFilters>
+      <SkillGroupSingleFilter Name="2H" Requirement="NecessaryType"/>
+      <SkillGroupSingleFilter Name="Bow" Requirement="NecessaryType"/>
+      <SkillGroupSingleFilter Name="DeBuff" Requirement="ForbiddenType"/>
+    </SkillGroupFilters>
+  </SKILL_PACK-BOW>
+  
+  <SKILL_PACK-SHIELD>
+    <RarityRange MinimumCount="0" MaximumCount="100"/>
+    <SkillGroupFilters>     
+      <SkillGroupSingleFilter Name="Shield" Requirement="NecessaryType"/>
+      <SkillGroupSingleFilter Name="DeBuff" Requirement="ForbiddenType"/>
+    </SkillGroupFilters>
+  </SKILL_PACK-SHIELD>
+  
+  <SKILL_PACK-MEDIUM_ARMOUR>
+    <RarityRange MinimumCount="0" MaximumCount="100"/>   
+    <SkillGroupFilters>
+      <SkillGroupSingleFilter Name="LightArmour" Requirement="NecessaryType"/>
+      <SkillGroupSingleFilter Name="DeBuff" Requirement="ForbiddenType"/>
+    </SkillGroupFilters>
+  </SKILL_PACK-MEDIUM_ARMOUR>
+  
+  <SKILL_PACK-DEFAULT_FALLBACK>
+    <RarityRange MinimumCount="0" MaximumCount="100"/>
+    <GuarantedSkill Value="SKILL-DEFAULT_FALLBACK"/>
+  </SKILL_PACK-DEFAULT_FALLBACK>
+
+</SKILL_PACK>

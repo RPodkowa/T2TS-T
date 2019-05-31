@@ -1,0 +1,13 @@
+﻿<PROTOTYPE_RESEARCH>
+
+	<!-- define types of research tasks -->
+	<RESEARCH Name="Research">
+		<!-- Description of given object  -->	
+		<DescriptionInfo Name="descriptionInfo" Type="DESCRIPTION_INFO" Required="TRUE"/>
+		<!-- procution cost required to complete -->
+		<ProductionCost Name="productionCost" Type="int" Required="TRUE"/>		
+		<!-- Research Points granted when this task is completed -->
+		<RPOnCompletion Name="rpOnCompletion" Type="int" Required="TRUE"/>
+	</RESEARCH>
+	
+</PROTOTYPE_RESEARCH>

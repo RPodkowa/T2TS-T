@@ -1,0 +1,17 @@
+<PROTOTYPE_SOUND>
+
+    <!-- -->
+    <SOUND Name="Sound">
+		<Name Name="name" Type="string" Required="TRUE"/>
+		<File Name="file" Type="string" Required="TRUE"/>
+    </SOUND>
+  
+	<!--xxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+  
+    <!-- -->
+    <SOUND_LIST Name="SoundList">
+		<Sound Name="sound" Type="ArraySOUND" Required="TRUE"/>
+    </SOUND_LIST>
+
+  
+</PROTOTYPE_SOUND>

@@ -1,0 +1,45 @@
+﻿<MORALE_IMPACT>
+
+	<MORALE_IMPACT-NLOWEST>
+		<MoraleAmount MinimumCount="-100" MaximumCount="0"/>
+		<SkillPack Value="SKILL_PACK-MORALE_IMPACT_NLOWEST"/>
+	</MORALE_IMPACT-NLOWEST>
+	
+	<MORALE_IMPACT-LOW>
+		<MoraleAmount MinimumCount="11" MaximumCount="20"/>
+		<SkillPack Value="SKILL_PACK-MORALE_IMPACT_LOW"/>
+	</MORALE_IMPACT-LOW>
+	<MORALE_IMPACT-POOR>
+		<MoraleAmount MinimumCount="21" MaximumCount="30"/>
+		<SkillPack Value="SKILL_PACK-MORALE_IMPACT_POOR"/>
+	</MORALE_IMPACT-POOR>
+	<MORALE_IMPACT-NORMAL>
+		<MoraleAmount MinimumCount="31" MaximumCount="40"/>
+		<SkillPack Value="SKILL_PACK-MORALE_IMPACT_NORMAL"/>
+	</MORALE_IMPACT-NORMAL>
+	<MORALE_IMPACT-ENOUGH>
+		<MoraleAmount MinimumCount="41" MaximumCount="50"/>
+		<SkillPack Value="SKILL_PACK-MORALE_IMPACT_ENOUGH"/>
+	</MORALE_IMPACT-ENOUGH>
+	<MORALE_IMPACT-GOOD>
+		<MoraleAmount MinimumCount="51" MaximumCount="60"/>
+		<SkillPack Value="SKILL_PACK-MORALE_IMPACT_GOOD"/>
+	</MORALE_IMPACT-GOOD>
+	<MORALE_IMPACT-WELL>
+		<MoraleAmount MinimumCount="61" MaximumCount="70"/>
+		<SkillPack Value="SKILL_PACK-MORALE_IMPACT_WELL"/>
+	</MORALE_IMPACT-WELL>
+	<MORALE_IMPACT-BEST>
+		<MoraleAmount MinimumCount="71" MaximumCount="80"/>
+		<SkillPack Value="SKILL_PACK-MORALE_IMPACT_BEST"/>
+	</MORALE_IMPACT-BEST>
+	<MORALE_IMPACT-AMAZING>
+		<MoraleAmount MinimumCount="81" MaximumCount="90"/>
+		<SkillPack Value="SKILL_PACK-MORALE_IMPACT_AMAZING"/>
+	</MORALE_IMPACT-AMAZING>
+	<MORALE_IMPACT-PERFECT>
+		<MoraleAmount MinimumCount="91" MaximumCount="100"/>
+		<SkillPack Value="SKILL_PACK-MORALE_IMPACT_PERFECT"/>
+	</MORALE_IMPACT-PERFECT>
+	
+</MORALE_IMPACT>

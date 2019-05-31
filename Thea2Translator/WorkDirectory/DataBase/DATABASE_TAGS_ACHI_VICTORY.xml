@@ -1,0 +1,45 @@
+﻿  <TAGS_ACHI_VICTORY>
+  
+  <!-- ACHI -->
+	<TAG-LONE_FIGHTER Visible="FALSE">
+		<DescriptionInfo Name="DES_PLACEHOLDER" Description="DES_PLACEHOLDER_DES" IconName="IconPlaceholder"/>
+		<TagType Value="WorldType"/>
+	</TAG-LONE_FIGHTER>
+	<TAG-LONE_WOLF Visible="FALSE">
+		<DescriptionInfo Name="DES_PLACEHOLDER" Description="DES_PLACEHOLDER_DES" IconName="IconPlaceholder"/>
+		<TagType Value="WorldType"/>
+	</TAG-LONE_WOLF>
+	<TAG-BOOKWORM Visible="FALSE">
+		<DescriptionInfo Name="DES_PLACEHOLDER" Description="DES_PLACEHOLDER_DES" IconName="IconPlaceholder"/>
+		<TagType Value="WorldType"/>
+	</TAG-BOOKWORM>
+	<TAG-FACTIONSHIP Visible="FALSE">
+		<DescriptionInfo Name="DES_PLACEHOLDER" Description="DES_PLACEHOLDER_DES" IconName="IconPlaceholder"/>
+		<TagType Value="WorldType"/>
+	</TAG-FACTIONSHIP>
+	<TAG-FOUR_VS_WORLD Visible="FALSE">
+		<DescriptionInfo Name="DES_PLACEHOLDER" Description="DES_PLACEHOLDER_DES" IconName="IconPlaceholder"/>
+		<TagType Value="WorldType"/>
+	</TAG-FOUR_VS_WORLD>
+	<TAG-WORKSHOP Visible="FALSE">
+		<DescriptionInfo Name="DES_PLACEHOLDER" Description="DES_PLACEHOLDER_DES" IconName="IconPlaceholder"/>
+		<TagType Value="WorldType"/>
+	</TAG-WORKSHOP>
+	<TAG-DEMON_KITCHEN Visible="FALSE">
+		<DescriptionInfo Name="DES_PLACEHOLDER" Description="DES_PLACEHOLDER_DES" IconName="IconPlaceholder"/>
+		<TagType Value="WorldType"/>
+	</TAG-DEMON_KITCHEN>
+	<TAG-PET_LOVER Visible="FALSE">
+		<DescriptionInfo Name="DES_PLACEHOLDER" Description="DES_PLACEHOLDER_DES" IconName="IconPlaceholder"/>
+		<TagType Value="WorldType"/>
+	</TAG-PET_LOVER>
+	<TAG-AWEKENED Visible="FALSE">
+		<DescriptionInfo Name="DES_PLACEHOLDER" Description="DES_PLACEHOLDER_DES" IconName="IconPlaceholder"/>
+		<TagType Value="WorldType"/>
+	</TAG-AWEKENED>
+	<TAG-CHALLENGER Visible="FALSE">
+		<DescriptionInfo Name="DES_PLACEHOLDER" Description="DES_PLACEHOLDER_DES" IconName="IconPlaceholder"/>
+		<TagType Value="WorldType"/>
+	</TAG-CHALLENGER>
+
+  </TAGS_ACHI_VICTORY>

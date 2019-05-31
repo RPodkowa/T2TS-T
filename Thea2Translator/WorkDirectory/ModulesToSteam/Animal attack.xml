@@ -1,0 +1,1664 @@
+<?xml version="1.0"?>
+<MODULE xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Animal attack" lastEventIndex="9" allowToUse="true" uniqueModuleID="1014990028">
+  <Adventure name="Animal attack2" uniqueID="1" allowToUse="false" typeGeneric="false" typePerGroupGeneric="false" typeInterrupt="true" typeExpedition="true" typeVillage="false" difficulty="2" nodeIdMax="10" joinIsForced="false" joinType="AllAlly" joinRange="MovementArea">
+    <nodes xsi:type="NodeStarting" ID="1" positionX="10" positionY="-10" width="347" height="704" image="Event015">
+      <outputs ownerID="1" targetID="2" fromX="334" fromY="-656" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="2" positionX="644.5246" positionY="-125.975945" width="350" height="966">
+      <outputs name="Zobacz, co sie dzieje." ownerID="2" targetID="5" group="G1" fromX="970" fromY="-617" />
+      <outputs name="Zobacz, co sie dzieje." ownerID="2" targetID="3" group="G1" fromX="970" fromY="-697" />
+      <outputs name="Zobacz, co sie dzieje." ownerID="2" targetID="4" group="G1" fromX="970" fromY="-777" />
+      <outputs name="Zobacz, co sie dzieje." ownerID="2" targetID="7" group="G1" fromX="970" fromY="-857" />Twoja podroz zostala przerwana.</nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="3" positionX="1514" positionY="12" width="350" height="455" linkedEventUniqueID="3">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="33" />
+          </LogicResultAction>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_PlayersHaveSharedTag" parameter="1" tag="TAG-NIGHT" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+    </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="4" positionX="1905" positionY="-422" width="350" height="455" linkedEventUniqueID="4">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="50" />
+          </LogicResultAction>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_IsOnTerrain" parameter="1" tag="TAG-TERRAIN_MOUNTAIN" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+    </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="5" positionX="1110" positionY="273" width="350" height="455" linkedEventUniqueID="2">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="25" />
+          </LogicResultAction>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_IsOnTerrain" parameter="1" tag="TAG-FOREST_TYPE" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+    </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="7" positionX="1363" positionY="-930" width="350" height="455" linkedEventUniqueID="5" />
+  </Adventure>
+  <Adventure name="Spiders everywhere" uniqueID="2" typeGeneric="false" typePerGroupGeneric="false" typeInterrupt="false" typeExpedition="true" typeVillage="false" difficulty="2" nodeIdMax="34" joinIsForced="false" joinType="AllAlly" joinRange="MovementArea">
+    <nodes xsi:type="NodeStarting" ID="1" positionX="10" positionY="-10" width="347" height="825" image="Event200">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_IsOnTerrain" tag="TAG-FOREST_TYPE" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs ownerID="1" targetID="2" fromX="334" fromY="-777" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="2" positionX="616.499756" positionY="645.622559" width="350" height="1206">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="ppl" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="" />
+          </LogicFilter>
+          <LogicFilter name="hunter" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" tag="TAG-HUNTER" />
+          </LogicFilter>
+        </FilterBlock>
+      </logic>
+      <outputs name="[Zamieszanie] Ogarnij los i zacznij szarzowac." ownerID="2" targetID="4" fromX="942" fromY="154" />
+      <outputs name="[Natura] Zaufajcie cokolwiek, co zdecyduje sie rzucic na wasza sciezke." ownerID="2" targetID="6" fromX="942" fromY="74" />
+      <outputs name="Po co czekac? Zaladuj i odszukaj pajaki, aby je zabic!" ownerID="2" targetID="3" fromX="942" fromY="-5" />
+      <outputs name="[Hunter] Znajdz bezpieczna sciezke." ownerID="2" targetID="7" group="G1" fromX="942" fromY="-86" />
+      <outputs name="Znajdz alternatywna sciezke." ownerID="2" targetID="30" group="G1" fromX="942" fromY="-166" />
+      <outputs name="Znajdz alternatywna sciezke." ownerID="2" targetID="13" group="G1" fromX="942" fromY="-246" />
+      <outputs name="Zostaw calkowicie." ownerID="2" targetID="33" fromX="942" fromY="-326" />Przechodzac przez las w poszukiwaniu dobrych zasobow, zauwazasz, ze drzewa sa pokryte grubymi pajeczynami.</nodes>
+    <nodes xsi:type="NodeChallenge" ID="3" positionX="1387.29578" positionY="822.834" width="500" height="726" challengeType="TypePhysical" versusGroup="GROUP-SPIDERS_2P_1M_0S" challengeScale="101" challengedList="ppl">
+      <outputs name="Win" ownerID="3" targetID="9" fromX="1828" fromY="327" />
+      <outputs name="Lose" ownerID="3" targetID="16" fromX="1828" fromY="247" />
+      <outputs name="Surrender" ownerID="3" targetID="16" fromX="1828" fromY="166" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="4" positionX="1454.75671" positionY="-134.621658" width="350" height="805">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_PlayerHaveTag" parameter="1" tag="TAG-DOMAIN_TURMOIL" />
+          </LogicResultAction>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="25" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Badz wierny swojej sciezce i atakuj!" ownerID="4" targetID="22" fromX="1780" fromY="-625" />
+      <outputs name="Wlasciwie nie. Pozostawiac." ownerID="4" targetID="23" fromX="1780" fromY="-705" />Krolowa pajakow stoi ci na drodze, czy to przez przypadek, czy przez los - obie leza w zasiegu twojej domeny. 
+</nodes>
+    <nodes xsi:type="NodeAdventure" ID="6" positionX="1572.26025" positionY="-974.075256" width="350" height="725">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_PlayerHaveTag" parameter="1" tag="TAG-DOMAIN_NATURE" />
+          </LogicResultAction>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="35" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicModifiers list="ppl">
+            <scriptCallWithTag scriptName="FMO_SetHealthPercentTo" parameter="100" tag="TAG-HEALTH_SPIRIT" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Wyjdz." ownerID="6" targetID="28" fromX="1898" fromY="-1465" />Natura tym razem byla mila i chociaz zauwazyles kilka gigantycznych pajakow, nie zaatakowaly, wyczuwajac, ze nie chcesz im szkodzic. 
+
+Mozesz zbierac towary za darmo.</nodes>
+    <nodes xsi:type="NodeAdventure" ID="7" positionX="623.007141" positionY="-792.3507" width="350" height="885">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="perc">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="20" tag="TAG-PERCEPTION" />
+          </LogicFilter>
+          <LogicProcessing name="scout" list1="perc" list2="hunter">
+            <scriptCallWithTag scriptName="FLP_AorB" />
+          </LogicProcessing>
+          <LogicResultAction list="scout">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Idz zabic pajaki!" ownerID="7" targetID="14" fromX="948" fromY="-1283" />
+      <outputs name="[Hunter] Ustaw pulapke." ownerID="7" targetID="19" fromX="948" fromY="-1363" />
+      <outputs name="Zbierz to, po co przyszedles i odejdz." ownerID="7" targetID="13" fromX="948" fromY="-1443" />Znajdujesz bezpieczna sciezke miedzy sieciami i docierasz do gaju, ktorego szukales, by zebrac troche drewna i zapasow. 
+
+Dostrzegasz takze gniazdo pajaka.</nodes>
+    <nodes xsi:type="NodeAdventure" ID="9" positionX="2173.534" positionY="164.9054" width="350" height="725">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers list="ppl">
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="10;20" tag="ITEM_CARGO-PACK_BONE" />
+          </LogicModifiers>
+          <LogicModifiers list="ppl">
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="0;1" tag="ITEM_CARGO-ADV_ONE_WEAPON" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Zbierz co mozesz i wyjdz." ownerID="9" targetID="28" fromX="2499" fromY="-326" />Walczysz przez pajeczyny i znajdujesz martwe ciala tych, ktorzy nie mieli tyle szczescia. W koncu docierasz do gaju, w ktorym szukasz zasobow. </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="13" positionX="1120.70337" positionY="-1447.22607" width="350" height="408" allPlayersXP="2" allPlayersRP="1" linkedEventUniqueID="0">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="5;10" tag="ITEM_CARGO-FEW_DRYAD_WOOD" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="20" tag="ITEM_CARGO-BASIC_FEW_FOOD" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+    </nodes>
+    <nodes xsi:type="NodeChallenge" ID="14" positionX="-513.5188" positionY="-295.049438" width="500" height="726" challengeType="TypePhysical" versusGroup="GROUP-SPIDERS_2P_1M_0S" challengeScale="101" challengedList="ppl">
+      <outputs name="Win" ownerID="14" targetID="15" fromX="-72" fromY="-790" />
+      <outputs name="Lose" ownerID="14" targetID="16" fromX="-72" fromY="-870" />
+      <outputs name="Surrender" ownerID="14" targetID="16" fromX="-72" fromY="-950" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="15" positionX="-965.8995" positionY="-382.370178" width="350" height="725">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers list="ppl">
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="1" tag="ITEM_CARGO-BASIC_ONE_WEAPON_NO_SCROLLS" />
+          </LogicModifiers>
+          <LogicModifiers list="ppl">
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="0;1" tag="ITEM_CARGO-ADV_ONE_WEAPON" />
+          </LogicModifiers>
+          <LogicModifiers list="ppl">
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="50% 0;1" tag="ITEM_CARGO-ADV_ONE_ARMOUR" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Zbierz co mozesz i wyjdz." ownerID="15" targetID="34" fromX="-640" fromY="-873" />Pajaki sa martwe. Znajdziesz szczatki nieszczesliwych dusz zabranych przez zwierzeta.</nodes>
+    <nodes xsi:type="NodeAdventure" ID="16" positionX="-1455.35645" positionY="-1206.39868" width="350" height="681">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers list="ppl">
+            <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="2" tag="SKILL_PACK-TOXINE" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Wyjdz." ownerID="16" targetID="18" fromX="-1129" fromY="-1697" />Pajaki pobily cie i zmusily do ucieczki. Paskudne ukaszenia pajakow utrzymuja sie podczas biegu.</nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="18" positionX="-957.286" positionY="-2037.01624" width="350" height="408" allPlayersXP="1" allPlayersRP="1" linkedEventUniqueID="0" />
+    <nodes xsi:type="NodeChallenge" ID="19" positionX="-310.4386" positionY="-1380.55066" width="500" height="726" challengeType="TypeMental" versusConcept="true" versusGroup="GROUP-CON_M_0P_2M_0S" challengeScale="101" challengedList="ppl">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction list="hunter">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Win" ownerID="19" targetID="32" fromX="130" fromY="-1876" />
+      <outputs name="Lose" ownerID="19" targetID="16" fromX="130" fromY="-1956" />
+      <outputs name="Surrender" ownerID="19" targetID="16" fromX="130" fromY="-2036" />
+    </nodes>
+    <nodes xsi:type="NodeChallenge" ID="22" positionX="2562.61279" positionY="856.254" width="500" height="726" challengeType="TypePhysical" versusGroup="GROUP-SPIDERS_QUEEN_MIX_3P_2M_1S" challengeScale="101" challengedList="ppl">
+      <outputs name="Win" ownerID="22" targetID="29" fromX="3003" fromY="360" />
+      <outputs name="Lose" ownerID="22" targetID="16" fromX="3003" fromY="280" />
+      <outputs name="Surrender" ownerID="22" targetID="16" fromX="3003" fromY="200" />
+    </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="23" positionX="1955.36047" positionY="-600.698853" width="350" height="455" allPlayersXP="1" allPlayersRP="1" linkedEventUniqueID="0">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers list="ppl">
+            <scriptCallWithTag scriptName="FMO_AddTags" parameter="-8" tag="TAG-HEALTH_SPIRIT" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+    </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="28" positionX="2211.1062" positionY="-1257.07813" width="350" height="408" allPlayersXP="3" allPlayersRP="1" linkedEventUniqueID="0">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers list="ppl">
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="8;20" tag="ITEM_CARGO-FEW_DRYAD_WOOD" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="29" positionX="3156.88843" positionY="1181.49841" width="350" height="725">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers list="ppl">
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="10;25" tag="ITEM_CARGO-PACK_BONE" />
+          </LogicModifiers>
+          <LogicModifiers list="ppl">
+            <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="3" tag="SKILL_PACK-BLESS_P" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Zbierz co mozesz i wyjdz." ownerID="29" targetID="34" fromX="3482" fromY="690" />Krolowa pajakow lezy u twoich stop jako trofeum i znak twojej sprawnosci. Czujesz sie upowazniony przez swoja domene. 
+
+Nastepnie docierasz do gaju, w ktorym szukasz zasobow. </nodes>
+    <nodes xsi:type="NodeAdventure" ID="30" positionX="1677.19189" positionY="-1726.05542" width="350" height="725">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="30" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicProcessing name="2" list1="ppl">
+            <scriptCallWithTag scriptName="FLP_GetRandomXelements" parameter="2" />
+          </LogicProcessing>
+          <LogicModifiers list="2">
+            <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="2" tag="SKILL_PACK-TOXINE" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Wyjdz." ownerID="30" targetID="13" fromX="2002" fromY="-2217" />Znajdujesz inna sciezke, ale niektore pajaki wciaz cie scigaja. Bierzesz kilka paskudnych ugryzien, zanim uciekniesz. 
+
+Udajesz sie jednak dotrzec do gaju i zebrac troche drewna.</nodes>
+    <nodes xsi:type="NodeAdventure" ID="31" positionX="895.662048" positionY="-1886.47656" width="350" height="725">
+      <logic>
+        <ModifierBlock>
+          <LogicProcessing name="1" list1="hunter">
+            <scriptCallWithTag scriptName="FLP_GetRandomXelements" parameter="1" />
+          </LogicProcessing>
+          <LogicModifiers list="1">
+            <scriptCallWithTag scriptName="FMO_AddTags" parameter="1" tag="TAG-WISDOM" />
+          </LogicModifiers>
+          <LogicModifiers list="ppl">
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="1" tag="ITEM_CARGO-BASIC_ONE_WEAPON_NO_SCROLLS" />
+          </LogicModifiers>
+          <LogicModifiers list="ppl">
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="0;1" tag="ITEM_CARGO-ADV_ONE_WEAPON" />
+          </LogicModifiers>
+          <LogicModifiers list="ppl">
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="50% 0;1" tag="ITEM_CARGO-ADV_ONE_ARMOUR" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Zbierz co mozesz i wyjdz." ownerID="31" targetID="28" fromX="1221" fromY="-2377" />Pulapka dziala dobrze. Niektore pajaki leza martwe, a inne uciekaja. Znajdziesz szczatki nieszczesliwych dusz zabranych przez zwierzeta.</nodes>
+    <nodes xsi:type="NodeProduceDrop" ID="32" positionX="323.507935" positionY="-1755.84985" width="460" height="429" sourceGroup="GROUP-SPIDERS_2P_1M_0S" cargoPercentage="60" dropPercentage="60" targetGroup="ppl">
+      <outputs ownerID="32" targetID="31" fromX="753" fromY="-2114" />
+    </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="33" positionX="117.743073" positionY="-857.588745" width="350" height="455" allPlayersXP="1" linkedEventUniqueID="0" />
+    <nodes xsi:type="NodeAdventureEnd" ID="34" positionX="2846.28564" positionY="58.7124557" width="350" height="408" allPlayersXP="4" allPlayersRP="1" linkedEventUniqueID="0">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers list="ppl">
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="8;20" tag="ITEM_CARGO-FEW_DRYAD_WOOD" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+    </nodes>
+  </Adventure>
+  <Adventure name="Wolves" uniqueID="3" typeGeneric="false" typePerGroupGeneric="false" typeInterrupt="false" typeExpedition="true" typeVillage="false" difficulty="2" nodeIdMax="29" joinIsForced="false" joinType="AllAlly" joinRange="MovementArea">
+    <nodes xsi:type="NodeStarting" ID="1" positionX="10" positionY="-10" width="347" height="825" image="Event005">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_PlayersHaveSharedTag" parameter="1" tag="TAG-NIGHT" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs ownerID="1" targetID="2" fromX="334" fromY="-777" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="2" positionX="498.585815" positionY="-128.3998" width="350" height="1126">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="ppl" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="" />
+          </LogicFilter>
+          <LogicFilter name="hunter" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="TAG-HUNTER" />
+          </LogicFilter>
+        </FilterBlock>
+      </logic>
+      <outputs name="[Nocny demon] Rozkazuj tym wilkom, by sluchaly twojego wycie alfa!" ownerID="2" targetID="3" fromX="824" fromY="-619" />
+      <outputs name="[Wilk] Wyc z powrotem i zasygnalizowac, ze twoja sfora nie jest tutaj, by ich wyzwac." ownerID="2" targetID="4" fromX="824" fromY="-699" />
+      <outputs name="Stoj mocno i walcz!" ownerID="2" targetID="6" fromX="824" fromY="-779" />
+      <outputs name="[Hunter] Ustaw pulapke wilka." ownerID="2" targetID="5" fromX="824" fromY="-860" />
+      <outputs name="Uciekaj." ownerID="2" targetID="7" group="G1" fromX="824" fromY="-940" />
+      <outputs name="Uciekaj." ownerID="2" targetID="8" group="G1" fromX="824" fromY="-1020" />Gdy zapada noc, slyszysz wycie wilkow, ktore prawdopodobnie sa na polowaniu.</nodes>
+    <nodes xsi:type="NodeAdventure" ID="3" positionX="969.5077" positionY="591.3769" width="350" height="725">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="nighdemon">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="TAG-NIGHT_DEMON" />
+          </LogicFilter>
+          <LogicResultAction list="nighdemon">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="60" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicProcessing name="2" list1="ppl">
+            <scriptCallWithTag scriptName="FLP_GetRandomXelements" parameter="2" />
+          </LogicProcessing>
+          <LogicModifiers list="2">
+            <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="2" tag="SKILL_PACK-BLESS_M" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="70% 0;1" tag="ITEM_CARGO-WEAK_ONE_PET_WOLF" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="8;15" tag="ITEM_CARGO-FEW_BONE" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="8;15" tag="ITEM_CARGO-FEW_LEATHER" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Wyjdz." ownerID="3" targetID="9" fromX="1295" fromY="100" />Twoja obecnosc krzyczy o dominacji w noc, a wilki przechodza do twojej woli. 
+
+Porzucaja tez zdobycz, ktora juz zlapali. </nodes>
+    <nodes xsi:type="NodeAdventure" ID="4" positionX="1404.56262" positionY="15.9472122" width="350" height="805">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="wolf" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="TAG-WOLF" />
+          </LogicFilter>
+          <LogicResultAction list="wolf">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="65" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicProcessing name="2" list1="ppl">
+            <scriptCallWithTag scriptName="FLP_GetRandomXelements" parameter="2" />
+          </LogicProcessing>
+          <LogicModifiers list="2">
+            <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="2" tag="SKILL_PACK-BLESS_M" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Dominacja." ownerID="4" targetID="21" fromX="1730" fromY="-475" />
+      <outputs name="Wyjdz." ownerID="4" targetID="9" fromX="1730" fromY="-555" />Wycie, a druga paczka odpowiada w naturze. 
+
+Kraza wokol ciebie, ale nie atakuja. Mozesz albo sprobowac je zdominowac, albo opuscic tereny lowieckie.</nodes>
+    <nodes xsi:type="NodeAdventure" ID="5" positionX="1475.82568" positionY="-835.5287" width="350" height="805">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction list="hunter">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Atak!" ownerID="5" targetID="11" fromX="1801" fromY="-1326" />
+      <outputs name="Poprowadz wilki w pulapke." ownerID="5" targetID="12" fromX="1801" fromY="-1406" />Lowca staje sie mysliwym, gdy cicho sledzisz stado wilkow. Wybierasz kilku maruderow, wiec paczka powinna byc teraz latwiejsza do rozwiazania.</nodes>
+    <nodes xsi:type="NodeChallenge" ID="6" positionX="2055.954" positionY="-774.1932" width="500" height="807" challengeType="TypePhysical" versusGroup="GROUP-WOLVES_STARVING_2P_1M_0S" challengeScale="101" challengedList="ppl">
+      <outputs name="Win" ownerID="6" targetID="28" group="G1" fromX="2497" fromY="-1269" />
+      <outputs name="Lose" ownerID="6" targetID="15" fromX="2497" fromY="-1349" />
+      <outputs name="Surrender" ownerID="6" targetID="15" fromX="2497" fromY="-1430" />
+      <outputs name="Win" ownerID="6" targetID="29" group="G1" fromX="2497" fromY="-1510" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="7" positionX="1044.02673" positionY="-982.8783" width="350" height="725">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="food">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsItems" parameter="1" tag="TAG-FOOD" />
+          </LogicFilter>
+          <LogicResultAction list="food">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="30" />
+          </LogicResultAction>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="60" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicProcessing name="50" list1="food">
+            <scriptCallWithTag scriptName="FLP_GetTopXPercentElements" parameter="50" />
+          </LogicProcessing>
+          <LogicModifiers list="50">
+            <scriptCallWithTag scriptName="FMO_TakeItems" parameter="" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Uruchom. &#xD;&#xA;" ownerID="7" targetID="8" fromX="1369" fromY="-1474" />Wilki zyskuja na tobie, wiec jestes zmuszony opuscic czesc swojego jedzenia, aby uciec.</nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="8" positionX="598.8051" positionY="-1399.46118" width="350" height="408" allPlayersXP="1" allPlayersRP="1" linkedEventUniqueID="0" />
+    <nodes xsi:type="NodeAdventureEnd" ID="9" positionX="1413.785" positionY="675.7581" width="350" height="455" allPlayersXP="3" allPlayersRP="1" linkedEventUniqueID="0" />
+    <nodes xsi:type="NodeAdventureEnd" ID="10" positionX="3687.459" positionY="-76.43485" width="350" height="408" allPlayersXP="2" allPlayersRP="1" linkedEventUniqueID="0" />
+    <nodes xsi:type="NodeChallenge" ID="11" positionX="2435.6875" positionY="-1675.841" width="500" height="807" challengeType="TypePhysical" versusGroup="GROUP-WOLVES_2P_1M_0S" challengeScale="101" challengedList="ppl">
+      <outputs name="Win" ownerID="11" targetID="28" group="G1" fromX="2876" fromY="-2171" />
+      <outputs name="Lose" ownerID="11" targetID="15" fromX="2876" fromY="-2251" />
+      <outputs name="Surrender" ownerID="11" targetID="15" fromX="2876" fromY="-2331" />
+      <outputs name="Win" ownerID="11" targetID="29" group="G1" fromX="2876" fromY="-2411" />
+    </nodes>
+    <nodes xsi:type="NodeChallenge" ID="12" positionX="1813.88147" positionY="-1906.83545" width="500" height="769" challengeType="TypeMental" versusConcept="true" versusGroup="GROUP-CON_M_0P_2M_0S" challengeScale="101" challengedList="ppl">
+      <outputs name="Win" ownerID="12" targetID="19" group="G1" fromX="2255" fromY="-2402" />
+      <outputs name="Lose" ownerID="12" targetID="15" fromX="2255" fromY="-2482" />
+      <outputs name="Surrender" ownerID="12" targetID="15" fromX="2255" fromY="-2562" />
+      <outputs name="Win" ownerID="12" targetID="27" group="G1" fromX="2255" fromY="-2642" />
+    </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="14" positionX="3679.17139" positionY="-2898.1272" width="350" height="408" allPlayersXP="3" allPlayersRP="1" linkedEventUniqueID="0" />
+    <nodes xsi:type="NodeAdventure" ID="15" positionX="3055.566" positionY="-1331.468" width="350" height="725">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers list="ppl">
+            <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="2" tag="SKILL_PACK-ILLNESS" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Wyjdz." ownerID="15" targetID="16" fromX="3381" fromY="-1822" />Wilki pobily cie i zmusily do ucieczki. Niektore z twoich ran zostaja zainfekowane.</nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="16" positionX="3484.60669" positionY="-1407.3584" width="350" height="408" allPlayersXP="2" allPlayersRP="1" linkedEventUniqueID="0" />
+    <nodes xsi:type="NodeProduceDrop" ID="19" positionX="2378" positionY="-2497" width="460" height="429" dropPercentage="80">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="30" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicModifiers list="hunter">
+            <scriptCallWithTag scriptName="FMO_AddTags" parameter="1" tag="TAG-DAMAGE_ADD_WISDOM" />
+          </LogicModifiers>
+          <LogicModifiers list="hunter">
+            <scriptCallWithTag scriptName="FMO_AddTags" parameter="2" tag="TAG-GATHERING" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="8;15" tag="ITEM_CARGO-FEW_FUR_LEATHER" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs ownerID="19" targetID="14" fromX="2808" fromY="-2855" />
+    </nodes>
+    <nodes xsi:type="NodeChallenge" ID="21" positionX="1819.68823" positionY="112.08432" width="500" height="726" challengeType="TypeMental" versusGroup="GROUP-WOLVES_2P_1M_0S" challengeScale="101" challengedList="wolf">
+      <outputs name="Win" ownerID="21" targetID="23" fromX="2260" fromY="-383" />
+      <outputs name="Lose" ownerID="21" targetID="25" fromX="2260" fromY="-463" />
+      <outputs name="Surrender" ownerID="21" targetID="25" fromX="2260" fromY="-543" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="23" positionX="2380.79517" positionY="357.119354" width="350" height="725">
+      <logic>
+        <ModifierBlock>
+          <LogicProcessing name="2" list1="ppl">
+            <scriptCallWithTag scriptName="FLP_GetRandomXelements" parameter="2" />
+          </LogicProcessing>
+          <LogicModifiers list="2">
+            <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="2" tag="SKILL_PACK-BLESS_M" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="70% 0;1" tag="ITEM_CARGO-WEAK_ONE_PET_WOLF" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="8;15" tag="ITEM_CARGO-FEW_BONE" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="8;15" tag="ITEM_CARGO-FEW_LEATHER" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Wyjdz." ownerID="23" targetID="9" fromX="2706" fromY="-134" />Twoja obecnosc krzyczy o dominacji w noc, a wilki przechodza do twojej woli. 
+
+Porzucaja tez zdobycz, ktora juz zlapali. </nodes>
+    <nodes xsi:type="NodeAdventure" ID="24" positionX="3265.79688" positionY="176.689819" width="350" height="725">
+      <outputs name="Wyjdz." ownerID="24" targetID="10" fromX="3591" fromY="-314" />Nie zdolasz zdominowac stada, a oni scigaja cie ze swojego polowania, ranni, ale nie martwi.</nodes>
+    <nodes xsi:type="NodeDealDamage" ID="25" positionX="2686.107" positionY="-445.590942" width="460" height="459" challengeTypeDamage="TypeMental" minDamage="10" maxDamage="20" useCountInPercent="true" targetGroup="wolf">
+      <outputs ownerID="25" targetID="24" fromX="3115" fromY="-833" />
+    </nodes>
+    <nodes xsi:type="NodeProduceDrop" ID="27" positionX="2371.01636" positionY="-2955.06421" width="460" height="429" dropPercentage="80">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers list="hunter">
+            <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="3" tag="SKILL_PACK-BLESS_M" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="8;15" tag="ITEM_CARGO-FEW_FUR_LEATHER" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs ownerID="27" targetID="14" fromX="2801" fromY="-3313" />
+    </nodes>
+    <nodes xsi:type="NodeProduceDrop" ID="28" positionX="3258.75049" positionY="-2053.589" width="460" height="429">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="20" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicProcessing name="1" list1="ppl">
+            <scriptCallWithTag scriptName="FLP_GetRandomXelements" parameter="1" />
+          </LogicProcessing>
+          <LogicModifiers list="1">
+            <scriptCallWithTag scriptName="FMO_AddTags" parameter="1" tag="TAG-PERCEPTION" />
+          </LogicModifiers>
+          <LogicModifiers list="hunter">
+            <scriptCallWithTag scriptName="FMO_AddTags" parameter="2" tag="TAG-GATHERING" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="10;20" tag="ITEM_CARGO-FEW_FUR_LEATHER" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs ownerID="28" targetID="14" fromX="3689" fromY="-2411" />
+    </nodes>
+    <nodes xsi:type="NodeProduceDrop" ID="29" positionX="2973.69775" positionY="-2539.882" width="460" height="429">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers list="ppl">
+            <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="2" tag="SKILL_PACK-BLESS_P" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="10;20" tag="ITEM_CARGO-FEW_FUR_LEATHER" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs ownerID="29" targetID="14" fromX="3403" fromY="-2898" />
+    </nodes>
+  </Adventure>
+  <Adventure name="Wild boars" uniqueID="4" typeGeneric="false" typePerGroupGeneric="false" typeInterrupt="false" typeExpedition="true" typeVillage="false" difficulty="2" nodeIdMax="41" joinIsForced="false" joinType="AllAlly" joinRange="MovementArea">
+    <nodes xsi:type="NodeStarting" ID="1" positionX="-152.772278" positionY="55.3465347" width="347" height="661" image="Event202">
+      <outputs ownerID="1" targetID="2" fromX="171" fromY="-548" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="2" positionX="261.140076" positionY="-205.819153" width="350" height="1126">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="ppl" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="" />
+          </LogicFilter>
+          <LogicFilter name="woodkin" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" tag="TAG-FOREST_TYPE" />
+          </LogicFilter>
+        </FilterBlock>
+      </logic>
+      <outputs name="Gdzie sa prosieta, w poblizu jest z pewnoscia nadopiekuncza matka. Ostroznie obserwuj obszar." ownerID="2" targetID="3" fromX="586" fromY="-696" />
+      <outputs name="[Beastmaster] Dzikie prosieta doskonale nadaja sie do oswajania, ale najpierw musisz zwabic je bez alarmowania matki." ownerID="2" targetID="31" fromX="586" fromY="-777" />
+      <outputs name="[Hunter] Dziki mama jest na pewno w poblizu. Ustaw pulapke, aby oddzielic paczke i polowac tylko na mniejsza partie." ownerID="2" targetID="6" fromX="586" fromY="-857" />
+      <outputs name="Podejdz blizej, aby sprobowac schwytac prosieta." ownerID="2" targetID="10" group="G1" fromX="586" fromY="-937" />
+      <outputs name="Podejdz blizej, aby sprobowac schwytac prosieta." ownerID="2" targetID="36" group="G1" fromX="586" fromY="-1017" />
+      <outputs name="Wyjdz." ownerID="2" targetID="14" fromX="586" fromY="-1097" />Przechodzac przez las, natkniesz sie na dzikie prosieta. </nodes>
+    <nodes xsi:type="NodeAdventure" ID="3" positionX="407.651154" positionY="788.436646" width="350" height="885">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction list="woodkin" resultGroup="G1">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+          <LogicResultAction resultGroup="G1">
+            <scriptCallWithTag scriptName="FRA_PlayerHaveTag" parameter="1" tag="TAG-DOMAIN_NATURE" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="To jest szkodliwe dla stada, aby zabic prosieta lub matke. Zamiast tego odseparuj slabszych mezczyzn, aby ich polowali." ownerID="3" targetID="26" group="G1" fromX="733" fromY="297" />
+      <outputs name="Lepiej nie ryzykowac krzywdzenia mlodych. Okraz paczke i wyjdz." ownerID="3" targetID="30" fromX="733" fromY="297" />
+      <outputs name="To jest szkodliwe dla stada, aby zabic prosieta lub matke. Zamiast tego odseparuj slabszych mezczyzn, aby ich polowali." ownerID="3" targetID="28" group="G1" fromX="733" fromY="297" />Rzeczywiscie, wkrotce zauwazysz mala paczke starszych knurow grzebiacych w lisciach. </nodes>
+    <nodes xsi:type="NodeAdventure" ID="5" positionX="1562" positionY="42" width="350" height="725">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="1" tag="ITEM_CARGO-STRONG_ONE_PET_BOAR" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="40% 0;1" tag="ITEM_CARGO-RARE_ONE_PET_BOAR" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Wyjdz." ownerID="5" targetID="9" fromX="1887" fromY="-449" />Zwabisz silnego prosiaka i wyszkolisz go, by stal sie twoim wlasnym dzikiem.</nodes>
+    <nodes xsi:type="NodeChallenge" ID="6" positionX="1515.55225" positionY="-688.1881" width="500" height="807" challengeType="TypePhysical" versusGroup="GROUP-BOARS_1P_1M_0S" challengeScale="101" challengedList="ppl">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="hunters" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="TAG-HUNTER" />
+          </LogicFilter>
+          <LogicResultAction list="hunters">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Win" ownerID="6" targetID="38" group="G1" fromX="1956" fromY="-1183" />
+      <outputs name="Lose" ownerID="6" targetID="22" fromX="1956" fromY="-1263" />
+      <outputs name="Surrender" ownerID="6" targetID="22" fromX="1956" fromY="-1344" />
+      <outputs name="Win" ownerID="6" targetID="33" group="G1" fromX="1956" fromY="-1424" />
+    </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="8" positionX="2986.768" positionY="-1604.91687" width="350" height="408" allPlayersXP="1" linkedEventUniqueID="0" />
+    <nodes xsi:type="NodeAdventureEnd" ID="9" positionX="2833.564" positionY="-859.757446" width="350" height="530" allPlayersXP="3" allPlayersRP="1" linkedEventUniqueID="0" />
+    <nodes xsi:type="NodeChallenge" ID="10" positionX="845.217041" positionY="-940.921753" width="500" height="726" challengeType="TypePhysical" versusConcept="true" versusGroup="GROUP-CON_P_2P_0M_0S" challengeScale="101" challengedList="ppl">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="40" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Win" ownerID="10" targetID="34" fromX="1286" fromY="-1436" />
+      <outputs name="Lose" ownerID="10" targetID="35" fromX="1286" fromY="-1516" />
+      <outputs name="Surrender" ownerID="10" targetID="35" fromX="1286" fromY="-1596" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="13" positionX="-262" positionY="-1514" width="350" height="725">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="50% 0;1" tag="ITEM_CARGO-STRONG_ONE_PET_BOAR" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Wyjdz." ownerID="13" targetID="9" fromX="63" fromY="-2005" />Probujesz zlapac prosieta, ale zamiast tego paczka wscieklych dzikow zarzuca cie. 
+
+Na szczescie jestes w stanie z nimi walczyc.</nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="14" positionX="-171.259445" positionY="-942.61084" width="350" height="530" allPlayersXP="1" linkedEventUniqueID="0" />
+    <nodes xsi:type="NodeAdventureEnd" ID="16" positionX="2082.68579" positionY="-1513.73865" width="350" height="530" allPlayersXP="3" allPlayersRP="1" linkedEventUniqueID="0">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="30" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="1" tag="ITEM_CARGO-WEAK_ONE_PET_BOAR" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+    </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="21" positionX="2224.095" positionY="1375.88477" width="350" height="530" allPlayersXP="3" allPlayersRP="1" linkedEventUniqueID="0">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers list="woodkin">
+            <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="3" tag="SKILL_PACK-BLESS_M" />
+          </LogicModifiers>
+          <LogicModifiers list="woodkin">
+            <scriptCallWithTag scriptName="FMO_AddTags" parameter="1" tag="TAG-DESTINY" />
+          </LogicModifiers>
+          <LogicModifiers list="ppl">
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="10;30" tag="ITEM_CARGO-FEW_FUR_LEATHER" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+    </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="22" positionX="3050.032" positionY="-109.865349" width="350" height="530" allPlayersXP="1" allPlayersRP="1" linkedEventUniqueID="0" />
+    <nodes xsi:type="NodeDealDamage" ID="23" positionX="1983.89917" positionY="-73.5871" width="460" height="459" challengeTypeDamage="TypeMental" minDamage="20" maxDamage="30" useCountInPercent="true" targetGroup="beastmaster">
+      <outputs ownerID="23" targetID="32" fromX="2413" fromY="-461" />
+    </nodes>
+    <nodes xsi:type="NodeChallenge" ID="26" positionX="1598.71167" positionY="1640.70422" width="500" height="726" challengeType="TypePhysical" versusGroup="GROUP-BOARS_1P_1M_0S" challengeScale="101" challengedList="ppl">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="70" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Win" ownerID="26" targetID="21" fromX="2039" fromY="1145" />
+      <outputs name="Lose" ownerID="26" targetID="27" fromX="2039" fromY="1065" />
+      <outputs name="Surrender" ownerID="26" targetID="27" fromX="2039" fromY="984" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="27" positionX="2609.78735" positionY="1340.59937" width="350" height="725">
+      <outputs name="Wyjdz." ownerID="27" targetID="22" fromX="2935" fromY="849" />Dziki bardzo cie bija i zmuszaja do ucieczki.</nodes>
+    <nodes xsi:type="NodeChallenge" ID="28" positionX="1638.91248" positionY="886.8775" width="500" height="726" challengeType="TypePhysical" versusGroup="GROUP-BOARS_2P_1M_0S" challengeScale="101" challengedList="ppl">
+      <outputs name="Win" ownerID="28" targetID="29" fromX="2080" fromY="391" />
+      <outputs name="Lose" ownerID="28" targetID="27" fromX="2080" fromY="311" />
+      <outputs name="Surrender" ownerID="28" targetID="27" fromX="2080" fromY="231" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="29" positionX="2230.77734" positionY="910.5002" width="350" height="805">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="-2" tag="TAG-LOYALTY_WOODLAND_KIN" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="-2" tag="TAG-LOYALTY_FOREST_DEMONS" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Wyjdz." ownerID="29" targetID="41" group="G1" fromX="2556" fromY="419" />
+      <outputs name="Wyjdz." ownerID="29" targetID="37" group="G1" fromX="2556" fromY="339" />Probujesz oddzielic paczke, ale ci sie nie udaje i jestes zmuszony zabic matke i mlodych. 
+
+To nie jest droga natury, ale dostajesz wiecej miesa i skory.</nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="30" positionX="1093.74719" positionY="166.737671" width="350" height="530" allPlayersXP="2" allPlayersRP="1" linkedEventUniqueID="0">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers list="woodkin">
+            <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="4" tag="SKILL_PACK-BLESS_M" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="3" tag="TAG-LOYALTY_FOREST_DEMONS" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="2" tag="TAG-LOYALTY_WOODLAND_KIN" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+    </nodes>
+    <nodes xsi:type="NodeChallenge" ID="31" positionX="699" positionY="-193" width="500" height="726" challengeType="TypeMental" versusConcept="true" versusGroup="GROUP-CON_M_0P_3M_0S" challengeScale="101" challengedList="ppl">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="beastmaster" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" tag="TAG-BEAST_MASTER" />
+          </LogicFilter>
+          <LogicResultAction list="beastmaster">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Win" ownerID="31" targetID="5" fromX="1140" fromY="-688" />
+      <outputs name="Lose" ownerID="31" targetID="23" fromX="1140" fromY="-768" />
+      <outputs name="Surrender" ownerID="31" targetID="23" fromX="1140" fromY="-848" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="32" positionX="2524.243" positionY="60.9949646" width="350" height="725">
+      <outputs name="Wyjdz." ownerID="32" targetID="22" fromX="2849" fromY="-430" />Bez wzgledu na to, jak bardzo sie starasz, te male prosieta sa zdecydowane trzymac sie blisko swojej matki. Jestes zuzyty, gdy slyszysz pomruki starego dzika i jestes zmuszony do wycofania sie.</nodes>
+    <nodes xsi:type="NodeProduceDrop" ID="33" positionX="2197.57837" positionY="-836.1363" width="460" height="429" sourceGroup="GROUP-BOARS_1P_1M_0S" dropPercentage="100" targetGroup="ppl">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers list="hunters">
+            <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="2" tag="SKILL_PACK-BLESS_P" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs ownerID="33" targetID="9" fromX="2627" fromY="-1194" />
+    </nodes>
+    <nodes xsi:type="NodeProduceDrop" ID="34" positionX="1524.03906" positionY="-1731.79626" width="460" height="509" sourceGroup="GROUP-BOARS_1P_1M_0S" dropPercentage="100" targetGroup="ppl">
+      <outputs ownerID="34" targetID="16" group="G1" fromX="1954" fromY="-2090" />
+      <outputs ownerID="34" targetID="9" group="G1" fromX="1954" fromY="-2170" />
+    </nodes>
+    <nodes xsi:type="NodeDealDamage" ID="35" positionX="2498.26782" positionY="-1402.69507" width="460" height="459" challengeTypeDamage="TypePhysical" minDamage="20" maxDamage="20" useCountInPercent="true" targetGroup="ppl">
+      <outputs ownerID="35" targetID="32" fromX="2927" fromY="-1791" />
+    </nodes>
+    <nodes xsi:type="NodeChallenge" ID="36" positionX="221.095215" positionY="-1363.12122" width="500" height="726" challengeType="TypePhysical" versusGroup="GROUP-BOARS_2P_1M_0S" challengeScale="101" challengedList="ppl">
+      <outputs name="Win" ownerID="36" targetID="13" fromX="662" fromY="-1858" />
+      <outputs name="Lose" ownerID="36" targetID="22" fromX="662" fromY="-1938" />
+      <outputs name="Surrender" ownerID="36" targetID="22" fromX="662" fromY="-2018" />
+    </nodes>
+    <nodes xsi:type="NodeDealDamage" ID="37" positionX="2608.26318" positionY="622.2944" width="460" height="459" challengeTypeDamage="TypeSpirit" minDamage="15" maxDamage="30" useCountInPercent="true" targetGroup="woodkin">
+      <outputs ownerID="37" targetID="9" fromX="3037" fromY="233" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="38" positionX="3252.57422" positionY="-640.3887" width="350" height="805">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction list="woodkin" resultGroup="G1">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+          <LogicResultAction resultGroup="G1">
+            <scriptCallWithTag scriptName="FRA_PlayerHaveTag" parameter="1" tag="TAG-DOMAIN_NATURE" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="-1" tag="TAG-LOYALTY_WOODLAND_KIN" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="-1" tag="TAG-LOYALTY_FOREST_DEMONS" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Wyjdz." ownerID="38" targetID="39" group="G1" fromX="3578" fromY="-1131" />
+      <outputs name="Wyjdz." ownerID="38" targetID="40" group="G1" fromX="3578" fromY="-1211" />Zabijanie prosiat lub matki jest szkodliwe dla stada, wiec odczuwasz ciezar swojego braku szacunku dla natury.</nodes>
+    <nodes xsi:type="NodeDealDamage" ID="39" positionX="3685.353" positionY="-539.0975" width="460" height="459" challengeTypeDamage="TypeSpirit" minDamage="20" maxDamage="35" useCountInPercent="true" targetGroup="ppl">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_PlayerHaveTag" parameter="1" tag="TAG-DOMAIN_NATURE" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs ownerID="39" targetID="33" fromX="4114" fromY="-927" />
+    </nodes>
+    <nodes xsi:type="NodeDealDamage" ID="40" positionX="3711.362" positionY="-1079.36157" width="460" height="459" challengeTypeDamage="TypeSpirit" minDamage="20" maxDamage="25" useCountInPercent="true" targetGroup="woodkin">
+      <outputs ownerID="40" targetID="33" fromX="4140" fromY="-1467" />
+    </nodes>
+    <nodes xsi:type="NodeDealDamage" ID="41" positionX="3117.41455" positionY="671.365356" width="460" height="459" challengeTypeDamage="TypeSpirit" minDamage="15" maxDamage="30" useCountInPercent="true" targetGroup="ppl">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_PlayerHaveTag" parameter="1" tag="TAG-DOMAIN_NATURE" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs ownerID="41" targetID="9" fromX="3546" fromY="283" />
+    </nodes>
+  </Adventure>
+  <Adventure name="Lightbirds" uniqueID="5" typeGeneric="false" typePerGroupGeneric="false" typeInterrupt="false" typeExpedition="true" typeVillage="false" difficulty="2" nodeIdMax="25" joinIsForced="false" joinType="AllAlly" joinRange="MovementArea">
+    <nodes xsi:type="NodeStarting" ID="1" positionX="10" positionY="-10" width="347" height="825" image="Event040">
+      <outputs ownerID="1" targetID="2" fromX="334" fromY="-777" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="2" positionX="444.439636" positionY="38.8695221" width="350" height="966">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="ppl" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="" />
+          </LogicFilter>
+          <LogicFilter name="per">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="12" tag="TAG-PERCEPTION" />
+          </LogicFilter>
+          <LogicFilter name="hunt">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="TAG-HUNTER" />
+          </LogicFilter>
+          <LogicFilter name="woodfolk">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="TAG-WOODFOLK" />
+          </LogicFilter>
+          <LogicProcessing name="scouts" makePublic="true" list1="per" list2="hunt">
+            <scriptCallWithTag scriptName="FLP_AorB" />
+          </LogicProcessing>
+          <LogicProcessing name="all" makePublic="true" list1="scouts" list2="woodfolk">
+            <scriptCallWithTag scriptName="FLP_AorB" />
+          </LogicProcessing>
+        </FilterBlock>
+      </logic>
+      <outputs name="Zwiadowca przed nami." ownerID="2" targetID="24" group="G1" fromX="770" fromY="-452" />
+      <outputs name="Zwiadowca przed nami." ownerID="2" targetID="4" group="G1" fromX="770" fromY="-532" />
+      <outputs name="Przygotuj sie na cokolwiek to jest." ownerID="2" targetID="5" fromX="770" fromY="-612" />
+      <outputs name="Uciekaj." ownerID="2" targetID="3" fromX="770" fromY="-692" />Widzisz ciemna chmure zblizajaca sie z dziwna predkoscia.</nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="3" positionX="-20" positionY="-841" width="350" height="455" allPlayersXP="1" linkedEventUniqueID="0" />
+    <nodes xsi:type="NodeAdventure" ID="4" positionX="1359.3761" positionY="677.0692" width="350" height="885">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction list="all" resultGroup="G1">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+          <LogicResultAction resultGroup="G1">
+            <scriptCallWithTag scriptName="FRA_PlayerHaveTag" parameter="1" tag="TAG-DOMAIN_NATURE" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Atakuj te obrzydliwosci!" ownerID="4" targetID="7" fromX="1685" fromY="185" />
+      <outputs name="[Zamieszanie i magia] Jest to perwersja swiatla i jako taka twoja domena cierpi z powodu napiecia. Ale masz rowniez glebokie wyczucie zrodla i mozesz probowac walczyc z nim swoim duchem." ownerID="4" targetID="21" group="G1" fromX="1685" fromY="105" />
+      <outputs name="Uciekaj." ownerID="4" targetID="3" fromX="1685" fromY="25" />Zauwazasz, ze jest to stado wron zmierzajacych w twoja strone, ale nie zachowuja sie naturalnie. 
+
+Nie podazaja za pradami wiatru, zamiast poruszac sie po niebie jak brzydki mlot, ani nie komunikuja sie ze soba, zamiast tego lataja w niesamowitej ciszy. Ich typowo paciorkowe czarne oczy emituja matowa biala poswiate. </nodes>
+    <nodes xsi:type="NodeAdventure" ID="5" positionX="927" positionY="-587" width="350" height="725">
+      <logic>
+        <ModifierBlock>
+          <LogicProcessing name="1" list1="ppl">
+            <scriptCallWithTag scriptName="FLP_GetRandomXelements" parameter="1" />
+          </LogicProcessing>
+          <LogicModifiers list="1">
+            <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="1" tag="SKILL_PACK-CURSE_S" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Walcz!" ownerID="5" targetID="6" fromX="1252" fromY="-1078" />Stado wron spada na ciebie, ale nie zachowuja sie naturalnie. 
+
+Nie podazaja za pradami wiatru, zamiast poruszac sie po niebie jak brzydki mlot, ani nie komunikuja sie ze soba, zamiast tego lataja w niesamowitej ciszy. Ich typowo paciorkowe czarne oczy emituja matowa biala poswiate. 
+
+Czujesz klatwe, ktora zabierasz, zanim jeszcze zaatakuja.</nodes>
+    <nodes xsi:type="NodeChallenge" ID="6" positionX="1428.15637" positionY="-732.2353" width="500" height="726" challengeType="TypePhysical" versusGroup="GROUP-CROW_2P_2M_2S" challengeScale="101" challengedList="ppl">
+      <outputs name="Win" ownerID="6" targetID="22" fromX="1869" fromY="-1227" />
+      <outputs name="Lose" ownerID="6" targetID="11" fromX="1869" fromY="-1307" />
+      <outputs name="Surrender" ownerID="6" targetID="11" fromX="1869" fromY="-1388" />
+    </nodes>
+    <nodes xsi:type="NodeChallenge" ID="7" positionX="1580.55994" positionY="1495.76013" width="500" height="726" challengeType="TypePhysical" versusGroup="GROUP-CROW_2P_2M_2S" challengeScale="101" challengedList="ppl">
+      <outputs name="Win" ownerID="7" targetID="23" fromX="2021" fromY="1000" />
+      <outputs name="Lose" ownerID="7" targetID="11" fromX="2021" fromY="920" />
+      <outputs name="Surrender" ownerID="7" targetID="11" fromX="2021" fromY="839" />
+    </nodes>
+    <nodes xsi:type="NodeChallenge" ID="8" positionX="2374" positionY="773" width="500" height="726" challengeType="TypeSpirit" versusConcept="true" versusGroup="GROUP-CON_S_0P_0M_2S" challengeScale="101" challengedList="ppl">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="mag">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="12" tag="TAG-MYSTICISM" />
+          </LogicFilter>
+          <LogicFilter name="witch">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="TAG-MAGIC_USER" />
+          </LogicFilter>
+          <LogicProcessing name="maw" list1="mag" list2="witch">
+            <scriptCallWithTag scriptName="FLP_AorB" />
+          </LogicProcessing>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_PlayerHaveTag" parameter="1" tag="TAG-DOMAIN_LIGHT" />
+          </LogicResultAction>
+          <LogicResultAction list="maw">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Win" ownerID="8" targetID="18" fromX="2815" fromY="277" />
+      <outputs name="Lose" ownerID="8" targetID="16" fromX="2815" fromY="197" />
+      <outputs name="Surrender" ownerID="8" targetID="16" fromX="2815" fromY="117" />
+    </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="10" positionX="2403.90454" positionY="-1601.74792" width="350" height="455" allPlayersXP="3" allPlayersRP="1" linkedEventUniqueID="0" />
+    <nodes xsi:type="NodeAdventure" ID="11" positionX="2446.16919" positionY="-630.284241" width="350" height="725">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers list="ppl">
+            <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="1" tag="SKILL_PACK-CURSE_S" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Uciekaj." ownerID="11" targetID="12" fromX="2771" fromY="-1121" />Ptaki bija cie mocno i zmuszaja cie do ucieczki, ale, co dziwne, rowniez rania twojego ducha. Ciezkie biale swiatlo splatuje twoje dusze i nie odpuszcza latwo.</nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="12" positionX="2857.2002" positionY="-1090.29138" width="350" height="455" allPlayersXP="1" allPlayersRP="1" linkedEventUniqueID="0" />
+    <nodes xsi:type="NodeAdventure" ID="16" positionX="3081.874" positionY="-144.786545" width="350" height="725">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers list="ppl">
+            <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="1" tag="SKILL_PACK-CURSE_S" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Wyjdz." ownerID="16" targetID="25" fromX="3407" fromY="-635" />Jakakolwiek moc utrzymuje te ptaki jest silna i nieublagana. Pali sie gleboko w twojej duszy, starajac sie oczyscic cie ze wszystkiego, czym jestes. 
+
+Uciekasz, ale twoj duch cierpi. </nodes>
+    <nodes xsi:type="NodeAdventure" ID="18" positionX="3052.612" positionY="587.818848" width="350" height="725">
+      <logic>
+        <ModifierBlock>
+          <LogicProcessing name="2" list1="ppl">
+            <scriptCallWithTag scriptName="FLP_GetRandomXelements" parameter="2" />
+          </LogicProcessing>
+          <LogicModifiers list="2">
+            <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="3" tag="SKILL_PACK-BLESS_S" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="0;1" tag="ITEM_CARGO-ADV_ONE_PET_CROW" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Wyjdz." ownerID="18" targetID="10" fromX="3378" fromY="96" />Usuwasz kazda sile, ktora trzyma te wrony. Niektore ptaki padaja martwe u twoich stop, podczas gdy inne odlatuja, zmieszane. A niektore moga chciec zostac z toba.</nodes>
+    <nodes xsi:type="NodeChallenge" ID="21" positionX="1819" positionY="620" width="500" height="726" challengeType="TypeSpirit" versusConcept="true" versusGroup="GROUP-CON_S_0P_0M_1S" challengeScale="101" challengedList="ppl">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="mag">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="12" tag="TAG-MYSTICISM" />
+          </LogicFilter>
+          <LogicFilter name="witch">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="TAG-MAGIC_USER" />
+          </LogicFilter>
+          <LogicProcessing name="maw" makePublic="true" list1="mag" list2="witch">
+            <scriptCallWithTag scriptName="FLP_AorB" />
+          </LogicProcessing>
+          <LogicResultAction list="maw">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+          <LogicResultAction resultGroup="G1">
+            <scriptCallWithTag scriptName="FRA_PlayerHaveTag" parameter="1" tag="TAG-DOMAIN_MAGIC" />
+          </LogicResultAction>
+          <LogicResultAction resultGroup="G1">
+            <scriptCallWithTag scriptName="FRA_PlayerHaveTag" parameter="1" tag="TAG-DOMAIN_TURMOIL" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicProcessing name="1" list1="ppl">
+            <scriptCallWithTag scriptName="FLP_GetRandomXelements" parameter="2" />
+          </LogicProcessing>
+          <LogicModifiers list="1">
+            <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="1" tag="SKILL_PACK-CURSE_S" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Win" ownerID="21" targetID="18" fromX="2260" fromY="124" />
+      <outputs name="Lose" ownerID="21" targetID="16" fromX="2260" fromY="44" />
+      <outputs name="Surrender" ownerID="21" targetID="16" fromX="2260" fromY="-35" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="22" positionX="1999.09424" positionY="-1231.67822" width="350" height="725">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="50%;0;1" tag="ITEM_CARGO-ADV_ONE_PET_CROW" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="1" tag="ITEM_CARGO-WEAK_ONE_PET_CROW" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Wyjdz." ownerID="22" targetID="10" fromX="2324" fromY="-1722" />Pokonujesz dziwne ptaki, a gdy ich ciala spadaja, niektore z nich wypalaja sie od wewnatrz, podczas gdy inne, ktore przetrwaly, wygladaja na zmieszanych i oszolomionych. A niektorzy moga chciec zostac z toba. 
+</nodes>
+    <nodes xsi:type="NodeAdventure" ID="23" positionX="2128.40039" positionY="1701.58911" width="350" height="725">
+      <logic>
+        <ModifierBlock>
+          <LogicProcessing name="1" list1="ppl">
+            <scriptCallWithTag scriptName="FLP_GetRandomXelements" parameter="2" />
+          </LogicProcessing>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="0;2" tag="ITEM_CARGO-ADV_ONE_PET_CROW" />
+          </LogicModifiers>
+          <LogicModifiers list="1">
+            <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="2" tag="SKILL_PACK-BLESS_P" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Wyjdz." ownerID="23" targetID="10" fromX="2454" fromY="1210" />Pokonujesz dziwne ptaki, a gdy ich ciala spadaja, niektore z nich wypalaja sie od wewnatrz, podczas gdy inne, ktore przetrwaly, wygladaja na zmieszanych i oszolomionych. A niektorzy moga chciec zostac z toba. 
+</nodes>
+    <nodes xsi:type="NodeAdventure" ID="24" positionX="901.752258" positionY="724.395935" width="350" height="966">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction resultGroup="G1">
+            <scriptCallWithTag scriptName="FRA_PlayerHaveTag" parameter="1" tag="TAG-DOMAIN_LIGHT" />
+          </LogicResultAction>
+          <LogicResultAction list="all" resultGroup="G1">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicProcessing name="1" list1="ppl">
+            <scriptCallWithTag scriptName="FLP_GetRandomXelements" parameter="1" />
+          </LogicProcessing>
+          <LogicModifiers list="1">
+            <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="1" tag="SKILL_PACK-BLESS_S" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Atakuj te obrzydliwosci!" ownerID="24" targetID="7" fromX="1227" fromY="233" />
+      <outputs name="[Swiatlo] To jest perwersja twojej domeny. Sprobuj to zwalczyc sila woli." ownerID="24" targetID="8" group="G1" fromX="1227" fromY="153" />
+      <outputs name="[Zamieszanie i magia] Jest to perwersja swiatla i jako taka twoja domena cierpi z powodu napiecia. Ale masz rowniez glebokie wyczucie zrodla i mozesz probowac walczyc z nim swoim duchem." ownerID="24" targetID="21" group="G1" fromX="1227" fromY="72" />
+      <outputs name="Uciekaj." ownerID="24" targetID="3" fromX="1227" fromY="-7" />Zauwazasz, ze jest to stado wron zmierzajacych w twoja strone, ale nie zachowuja sie naturalnie. 
+
+Nie podazaja za pradami wiatru, zamiast poruszac sie po niebie jak brzydki mlot, ani nie komunikuja sie ze soba, zamiast tego lataja w niesamowitej ciszy. Ich typowo paciorkowe czarne oczy emituja matowa biala poswiate. Czujesz dziwne uczucie pieczenia w swojej domenie, nienaturalne przyciaganie ku swiatlu.</nodes>
+    <nodes xsi:type="NodeDealDamage" ID="25" positionX="3518.97827" positionY="-272.373627" width="460" height="459" challengeTypeDamage="TypeSpirit" minDamage="20" maxDamage="30" useCountInPercent="true" targetGroup="ppl">
+      <outputs ownerID="25" targetID="12" fromX="3948" fromY="-660" />
+    </nodes>
+  </Adventure>
+  <Adventure name="Rat nest" uniqueID="6" typeGeneric="false" typePerGroupGeneric="false" typeInterrupt="false" typeExpedition="true" typeVillage="false" difficulty="1" nodeIdMax="26" joinIsForced="false" joinType="AllAlly" joinRange="MovementArea">
+    <nodes xsi:type="NodeStarting" ID="1" positionX="10" positionY="18.5148525" width="347" height="825" image="Event095">
+      <outputs ownerID="1" targetID="2" fromX="334" fromY="-749" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="2" positionX="404.5315" positionY="24.299221" width="350" height="1046">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="ppl" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="" />
+          </LogicFilter>
+        </FilterBlock>
+      </logic>
+      <outputs name="Atak!" ownerID="2" targetID="3" fromX="730" fromY="-466" />
+      <outputs name="Wyslij koty i psy, aby poradzily sobie z ta uciazliwoscia. " ownerID="2" targetID="23" fromX="730" fromY="-547" />
+      <outputs name="[Madrosc] Znasz sztuczke lub dwie, jesli chodzi o szczury. Gonia ich." ownerID="2" targetID="8" fromX="730" fromY="-627" />
+      <outputs name="[Szczur] Powiedz swojemu koledze robactwo, ze jestes tu tylko po to, by sie przywitac i zostawic je." ownerID="2" targetID="22" fromX="730" fromY="-707" />
+      <outputs name="Sprobuj szybko sie wspiac." ownerID="2" targetID="4" fromX="730" fromY="-787" />Wpadasz do podziemnego tunelu i zdajesz sobie sprawe, ze to gniazdo pelne kosci, odchodow i szczurow, mnostwo szczurow.</nodes>
+    <nodes xsi:type="NodeChallenge" ID="3" positionX="813" positionY="637" width="500" height="726" challengeType="TypePhysical" versusGroup="GROUP-RATS_1P_1M_1S" challengeScale="101" challengedList="ppl">
+      <outputs name="Win" ownerID="3" targetID="12" fromX="1254" fromY="141" />
+      <outputs name="Lose" ownerID="3" targetID="18" fromX="1254" fromY="61" />
+      <outputs name="Surrender" ownerID="3" targetID="18" fromX="1254" fromY="-18" />
+    </nodes>
+    <nodes xsi:type="NodeChallenge" ID="4" positionX="1726" positionY="-556" width="500" height="726" challengeType="TypePhysical" versusConcept="true" versusGroup="GROUP-CON_P_1P_0M_0S" challengeScale="101" challengedList="ppl">
+      <outputs name="Win" ownerID="4" targetID="15" fromX="2167" fromY="-1051" />
+      <outputs name="Lose" ownerID="4" targetID="18" fromX="2167" fromY="-1131" />
+      <outputs name="Surrender" ownerID="4" targetID="18" fromX="2167" fromY="-1211" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="8" positionX="848.6338" positionY="-921.4895" width="350" height="725">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="druid">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="9" tag="TAG-WISDOM" />
+          </LogicFilter>
+          <LogicResultAction list="druid">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Zbierz co mozesz i wyjdz." ownerID="8" targetID="26" fromX="1174" fromY="-1412" />Bez wzgledu na to, czy uzywasz fletu grajacego wlasciwa melodie, czy cichego szeptu zwierzecego jezyka, gonisz robactwo. 
+
+Znajdziesz tez szczatki samotnego poszukiwacza przygod trzymajacego flet. Najwyrazniej nie znal swoich szczurzych melodii.</nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="9" positionX="2871" positionY="-2030" width="350" height="455" allPlayersXP="2" allPlayersRP="1" linkedEventUniqueID="0">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers list="ppl">
+            <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="1" tag="SKILL_PACK-ILLNESS" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="12" positionX="1382.92322" positionY="898.505432" width="350" height="725">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers list="ppl">
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="50%;0;1" tag="ITEM_CARGO-BASIC_ONE_WEAPON_NO_SCROLLS" />
+          </LogicModifiers>
+          <LogicModifiers list="ppl">
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="50%;0;1" tag="ITEM_CARGO-BASIC_ONE_ARMOUR" />
+          </LogicModifiers>
+          <LogicModifiers list="ppl">
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="6;10" tag="ITEM_CARGO-PACK_LOW_RANDOM_LEATHER" />
+          </LogicModifiers>
+          <LogicModifiers list="ppl">
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="6;10" tag="ITEM_CARGO-PACK_LOW_RANDOM_BONE" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Wyjdz." ownerID="12" targetID="25" fromX="1708" fromY="407" />Wyczysc to gniazdo i znajdz szczatki samotnego poszukiwacza przygod trzymajacego flet. Najwyrazniej nie znal swoich szczurzych melodii.</nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="13" positionX="3415.65723" positionY="-1011.07654" width="350" height="455" allPlayersXP="2" allPlayersRP="1" linkedEventUniqueID="0" />
+    <nodes xsi:type="NodeAdventureEnd" ID="15" positionX="2359" positionY="-653" width="350" height="455" allPlayersXP="2" allPlayersRP="1" linkedEventUniqueID="0">
+      <logic>
+        <ModifierBlock>
+          <LogicProcessing name="2" list1="ppl">
+            <scriptCallWithTag scriptName="FLP_GetRandomXelements" parameter="2" />
+          </LogicProcessing>
+          <LogicModifiers list="2">
+            <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="2" tag="SKILL_PACK-BLESS_P" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="18" positionX="1933.043" positionY="222.160416" width="350" height="725">
+      <logic>
+        <ModifierBlock>
+          <LogicProcessing name="4" list1="ppl">
+            <scriptCallWithTag scriptName="FLP_GetRandomXelements" parameter="2" />
+          </LogicProcessing>
+          <LogicModifiers list="4">
+            <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="2" tag="SKILL_PACK-ILLNESS" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Wyjdz." ownerID="18" targetID="19" fromX="2258" fromY="-268" />Szczury roi sie od ciebie i zmusza cie do ucieczki.  Po drodze masz kilka zainfekowanych ukaszen.</nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="19" positionX="2377.38062" positionY="145.289352" width="350" height="455" allPlayersXP="1" allPlayersRP="1" linkedEventUniqueID="0" />
+    <nodes xsi:type="NodeAdventureEnd" ID="20" positionX="2458" positionY="-1915" width="350" height="455" allPlayersXP="2" allPlayersRP="1" linkedEventUniqueID="0">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="15" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicModifiers list="ppl">
+            <scriptCallWithTag scriptName="FMO_AddCharacterNoDefaultCargo" parameter="1" tag="SUBRACE-RAT" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="21" positionX="1911" positionY="-1792" width="350" height="885">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="50" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicModifiers list="ppl">
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="0;1" tag="ITEM_CARGO-BASIC_ONE_WEAPON_NO_SCROLLS" />
+          </LogicModifiers>
+          <LogicModifiers list="ppl">
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="0;1" tag="ITEM_CARGO-BASIC_ONE_ARMOUR" />
+          </LogicModifiers>
+          <LogicModifiers list="ppl">
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="6;10" tag="ITEM_CARGO-PACK_LOW_RANDOM_LEATHER" />
+          </LogicModifiers>
+          <LogicModifiers list="ppl">
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="6;10" tag="ITEM_CARGO-PACK_LOW_RANDOM_BONE" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Sprobuj go trenowac." ownerID="21" targetID="20" group="G1" fromX="2236" fromY="-2283" />
+      <outputs name="Sprobuj go trenowac." ownerID="21" targetID="9" group="G1" fromX="2236" fromY="-2363" />
+      <outputs name="Zabij go i wyjdz." ownerID="21" targetID="13" fromX="2236" fromY="-2443" />Zauwazyles, ze mlody szczur zostal w poblizu i unosi sie w poblizu. Byc moze mozna go wyszkolic, ale moze to byc takze wscieklosc, a ty zachorujesz.</nodes>
+    <nodes xsi:type="NodeAdventure" ID="22" positionX="296" positionY="-1063" width="350" height="725">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="rat" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="TAG-RAT" />
+          </LogicFilter>
+          <LogicResultAction list="rat">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicModifiers list="ppl">
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="5;10" tag="ITEM_CARGO-PACK_LOW_RANDOM_LEATHER" />
+          </LogicModifiers>
+          <LogicModifiers list="ppl">
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="5;10" tag="ITEM_CARGO-PACK_LOW_RANDOM_BONE" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Wyjdz." ownerID="22" targetID="13" fromX="621" fromY="-1554" />Szczury kiwaja glowa i pozwalaja ci odejsc bez problemow. Dostajesz nawet od nich prezent. </nodes>
+    <nodes xsi:type="NodeAdventure" ID="23" positionX="827.609" positionY="-124.351532" width="350" height="725">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="cat">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsItems" parameter="1" tag="TAG-PET_CAT" />
+          </LogicFilter>
+          <LogicFilter name="dog">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsItems" parameter="1" tag="TAG-PET_DOG" />
+          </LogicFilter>
+          <LogicProcessing name="ratcatchers" list1="cat" list2="dog">
+            <scriptCallWithTag scriptName="FLP_AorB" />
+          </LogicProcessing>
+          <LogicResultAction list="ratcatchers">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="2" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Zbierz, co mozesz, i wespnij sie z powrotem." ownerID="23" targetID="24" fromX="1153" fromY="-615" />Twoje zwierzeta wchodza i robia swoje interesy, oczyszczajac gniazdo robactwa. </nodes>
+    <nodes xsi:type="NodeProduceDrop" ID="24" positionX="1211.37183" positionY="-169.499771" width="460" height="429" sourceGroup="GROUP-RATS_1P_1M_1S" dropPercentage="100" targetGroup="ppl">
+      <outputs ownerID="24" targetID="13" fromX="1641" fromY="-527" />
+    </nodes>
+    <nodes xsi:type="NodeProduceDrop" ID="25" positionX="1866.011" positionY="795.77" width="460" height="429" sourceGroup="GROUP-RATS_1P_1M_1S" dropPercentage="100" targetGroup="ppl">
+      <outputs ownerID="25" targetID="13" fromX="2296" fromY="437" />
+    </nodes>
+    <nodes xsi:type="NodeProduceDrop" ID="26" positionX="1330.78418" positionY="-1326.16833" width="460" height="509" sourceGroup="GROUP-GOBS_2P_4M_3S" cargoPercentage="100">
+      <outputs ownerID="26" targetID="21" group="G1" fromX="1761" fromY="-1684" />
+      <outputs ownerID="26" targetID="13" group="G1" fromX="1761" fromY="-1764" />
+    </nodes>
+  </Adventure>
+  <Adventure name="Sweet honey" uniqueID="7" typeGeneric="false" typePerGroupGeneric="false" typeInterrupt="false" typeExpedition="true" typeVillage="false" difficulty="1" nodeIdMax="35" joinIsForced="false" joinType="AllAlly" joinRange="MovementArea">
+    <nodes xsi:type="NodeStarting" ID="1" positionX="10" positionY="-10" width="347" height="825" image="Event220">
+      <outputs ownerID="1" targetID="2" fromX="334" fromY="-777" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="2" positionX="420.5323" positionY="-33.0026436" width="350" height="1046">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="ppl" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="" />
+          </LogicFilter>
+        </FilterBlock>
+      </logic>
+      <outputs name="[Pszczola] Zadaj, zeby mi dano ci teraz." ownerID="2" targetID="3" fromX="746" fromY="-524" />
+      <outputs name="[Druid] Zapytaj pszczoly o przyjemnosc ich miodu. " ownerID="2" targetID="4" fromX="746" fromY="-604" />
+      <outputs name="Atak!" ownerID="2" targetID="5" fromX="746" fromY="-684" />
+      <outputs name="[Lowcy i zbieracze] Wiesz, jak wypalic te zadla, abys mogl ograbic ul." ownerID="2" targetID="8" fromX="746" fromY="-764" />
+      <outputs name="Idz dookola ula i wyjdz." ownerID="2" targetID="7" fromX="746" fromY="-844" />Kiedy przechodzisz przez rowniny, dostrzegasz zatloczony ul pelen miodu i nektaru. Moze byc bardzo pozywny, moze nawet leczyc niektore rany. </nodes>
+    <nodes xsi:type="NodeAdventure" ID="3" positionX="465.685181" positionY="899.1871" width="350" height="885">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="bee" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="TAG-BEE" />
+          </LogicFilter>
+          <LogicResultAction list="bee">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Zaakceptuj jej wyzwanie, pszczola, pszczola. [Tylko krolowa pszczol]" ownerID="3" targetID="28" fromX="791" fromY="408" />
+      <outputs name="Wypij nektar i miod. " ownerID="3" targetID="22" group="G1" fromX="791" fromY="327" />
+      <outputs name="Wypij nektar i miod. " ownerID="3" targetID="23" group="G1" fromX="791" fromY="247" />Pszczoly wycofuja sie i pozwalaja ci wziac udzial w lupach. 
+
+Inna mlodsza pszczola, byc moze krolowa, obserwuje cie z iskra wyzwania w oczach.</nodes>
+    <nodes xsi:type="NodeAdventure" ID="4" positionX="1255.07349" positionY="20.2837219" width="350" height="885">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="druid" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="TAG-DRUID" />
+          </LogicFilter>
+          <LogicResultAction list="druid">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Wypij nektar i miod. " ownerID="4" targetID="31" group="G1" fromX="1580" fromY="-470" />
+      <outputs name="Wypij nektar i miod. " ownerID="4" targetID="23" group="G1" fromX="1580" fromY="-551" />
+      <outputs name="Gdy pszczoly opuszczaja straz, mozesz wykonac rytual, ktory oszolomi zadlami i pozwoli ci odpowiednio obrabowac ich roj." ownerID="4" targetID="11" fromX="1580" fromY="-631" />Pszczoly brzecza wokol ciebie, jak gdyby oceniajac szczerosc twoich slow, i niektore zadly. Ale kiedy widza, ze zachowujesz spokoj, pozwalaja ci wyprobowac swoje towary.</nodes>
+    <nodes xsi:type="NodeChallenge" ID="5" positionX="1750.13086" positionY="-979.991943" width="500" height="726" challengeType="TypePhysical" versusGroup="GROUP-BEES_1P_1M_0S" challengeScale="101" challengedList="ppl">
+      <outputs name="Win" ownerID="5" targetID="33" fromX="2191" fromY="-1475" />
+      <outputs name="Lose" ownerID="5" targetID="35" fromX="2191" fromY="-1555" />
+      <outputs name="Surrender" ownerID="5" targetID="35" fromX="2191" fromY="-1635" />
+    </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="7" positionX="407.990265" positionY="-1172.97375" width="350" height="455" allPlayersXP="1" linkedEventUniqueID="0" />
+    <nodes xsi:type="NodeAdventure" ID="8" positionX="1069.15857" positionY="-929.1984" width="350" height="885">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="hunter">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="TAG-HUNTER" />
+          </LogicFilter>
+          <LogicFilter name="gatherer">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="TAG-GATHERER" />
+          </LogicFilter>
+          <LogicProcessing name="huntgather" list1="hunter" list2="gatherer">
+            <scriptCallWithTag scriptName="FLP_AorB" />
+          </LogicProcessing>
+          <LogicResultAction list="huntgather">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Ustaw pulapke." ownerID="8" targetID="12" fromX="1394" fromY="-1420" />
+      <outputs name="Wlasciwie po prostu zaatakuj!" ownerID="8" targetID="5" fromX="1394" fromY="-1500" />
+      <outputs name="Wyjdz." ownerID="8" targetID="7" fromX="1394" fromY="-1580" />Ustawiles pulapke i rozpaliles ogien, aby stworzyc dym. Teraz musisz tylko ustalic wlasciwy kierunek wiatru i czas, aby wytracic pulapke.</nodes>
+    <nodes xsi:type="NodeChallenge" ID="11" positionX="2339.64941" positionY="-372.161438" width="500" height="726" challengeType="TypeSpirit" versusConcept="true" versusGroup="GROUP-CON_S_0P_0M_2S" challengeScale="101" challengedList="ppl">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="witch">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" tag="TAG-WITCH" />
+          </LogicFilter>
+          <LogicResultAction list="witch">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Win" ownerID="11" targetID="32" fromX="2780" fromY="-867" />
+      <outputs name="Lose" ownerID="11" targetID="34" fromX="2780" fromY="-947" />
+      <outputs name="Surrender" ownerID="11" targetID="34" fromX="2780" fromY="-1028" />
+    </nodes>
+    <nodes xsi:type="NodeChallenge" ID="12" positionX="1827.07971" positionY="-1746.57922" width="500" height="726" challengeType="TypeMental" versusConcept="true" versusGroup="GROUP-CON_M_0P_1M_0S" challengeScale="101" challengedList="ppl">
+      <outputs name="Win" ownerID="12" targetID="33" group="G1" fromX="2268" fromY="-2242" />
+      <outputs name="Lose" ownerID="12" targetID="35" fromX="2268" fromY="-2322" />
+      <outputs name="Surrender" ownerID="12" targetID="35" fromX="2268" fromY="-2402" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="13" positionX="3507.89038" positionY="-810.2887" width="350" height="725">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="10;20" tag="ITEM_CARGO-FEW_AMBER" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Wypij nektar i miod. " ownerID="13" targetID="23" fromX="3833" fromY="-1301" />Jako druid czujesz sie brudny za zdradzenie swojej natury. 
+
+Mimo to to wlasnie dostajesz za powiazanie z czarownica. Teraz ula jest otwarta na grabieze i odkrywasz, ze pszczoly zgromadzily tu bursztyn. </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="20" positionX="3344.88037" positionY="-2374.82617" width="350" height="455" allPlayersXP="1" allPlayersRP="1" linkedEventUniqueID="0">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers list="ppl">
+            <scriptCallWithTag scriptName="FMO_ChangeLearnedSkillOnCharacter" parameter="1" tag="SKILL_PACK-ILLNESS" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+    </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="22" positionX="1328.94971" positionY="561.636658" width="350" height="455" allPlayersXP="2" allPlayersRP="1" linkedEventUniqueID="0">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="40" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicProcessing name="2" makePublic="true" list1="ppl">
+            <scriptCallWithTag scriptName="FLP_GetRandomXelements" parameter="2" />
+          </LogicProcessing>
+          <LogicProcessing name="1" makePublic="true" list1="bee">
+            <scriptCallWithTag scriptName="FLP_GetRandomXelements" parameter="1" />
+          </LogicProcessing>
+          <LogicModifiers list="ppl">
+            <scriptCallWithTag scriptName="FMO_SetHealthPercentTo" parameter="100" tag="TAG-HEALTH_PHYSICAL" />
+          </LogicModifiers>
+          <LogicModifiers list="2">
+            <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="2" tag="SKILL_PACK-BLESS_P" />
+          </LogicModifiers>
+          <LogicModifiers list="1">
+            <scriptCallWithTag scriptName="FMO_AddTags" parameter="1" tag="TAG-INTELLIGENCE" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+    </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="23" positionX="1926.90271" positionY="477.822174" width="350" height="455" allPlayersXP="2" allPlayersRP="1" linkedEventUniqueID="0">
+      <logic>
+        <ModifierBlock>
+          <LogicProcessing name="1" list1="ppl">
+            <scriptCallWithTag scriptName="FLP_GetRandomXelements" parameter="1" />
+          </LogicProcessing>
+          <LogicModifiers list="ppl">
+            <scriptCallWithTag scriptName="FMO_SetHealthPercentTo" parameter="100" tag="TAG-HEALTH_PHYSICAL" />
+          </LogicModifiers>
+          <LogicModifiers list="1">
+            <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="2" tag="SKILL_PACK-BLESS_P" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+    </nodes>
+    <nodes xsi:type="NodeChallenge" ID="28" positionX="1053.65894" positionY="1436.34717" width="500" height="726" challengeType="TypePhysical" versusGroup="GROUP-BEES_1P_1M_0S" challengeScale="101" challengedList="bee">
+      <outputs name="Win" ownerID="28" targetID="29" fromX="1494" fromY="940" />
+      <outputs name="Lose" ownerID="28" targetID="35" fromX="1494" fromY="860" />
+      <outputs name="Surrender" ownerID="28" targetID="35" fromX="1494" fromY="780" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="29" positionX="1806.61829" positionY="1497.43042" width="350" height="725">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers list="bee">
+            <scriptCallWithTag scriptName="FMO_AddTags" parameter="1" tag="TAG-WITS" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="10;20" tag="ITEM_CARGO-FEW_AMBER" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="2" tag="TAG-LOYALTY_STINGERS" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Zaakceptuj i odejdz." ownerID="29" targetID="23" fromX="2132" fromY="1006" />Pomimo tego, ze jest to niesprawiedliwy pojedynek, wiesz, ze droga twoich krewnych jest taka. Wygrales, wiec honoruja cie i daja ci prezenty.</nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="31" positionX="1823.582" positionY="-4.35754" width="350" height="455" allPlayersXP="2" allPlayersRP="1" linkedEventUniqueID="0">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="40" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicProcessing name="2" makePublic="true" list1="ppl">
+            <scriptCallWithTag scriptName="FLP_GetRandomXelements" parameter="2" />
+          </LogicProcessing>
+          <LogicProcessing name="1" makePublic="true" list1="druid">
+            <scriptCallWithTag scriptName="FLP_GetRandomXelements" parameter="1" />
+          </LogicProcessing>
+          <LogicModifiers list="ppl">
+            <scriptCallWithTag scriptName="FMO_SetHealthPercentTo" parameter="100" tag="TAG-HEALTH_PHYSICAL" />
+          </LogicModifiers>
+          <LogicModifiers list="2">
+            <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="2" tag="SKILL_PACK-BLESS_P" />
+          </LogicModifiers>
+          <LogicModifiers list="1">
+            <scriptCallWithTag scriptName="FMO_AddTags" parameter="1" tag="TAG-INTELLIGENCE" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+    </nodes>
+    <nodes xsi:type="NodeDealDamage" ID="32" positionX="2975.72778" positionY="-712.4422" width="460" height="459" challengeTypeDamage="TypeSpirit" minDamage="40" maxDamage="60" useCountInPercent="true" targetGroup="druid">
+      <logic>
+        <ModifierBlock>
+          <LogicProcessing name="1" list1="ppl">
+            <scriptCallWithTag scriptName="FLP_GetRandomXelements" parameter="1" />
+          </LogicProcessing>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTags" parameter="1" tag="TAG-MYSTICISM" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs ownerID="32" targetID="13" fromX="3404" fromY="-1100" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="33" positionX="3624" positionY="-1563" width="350" height="725">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="10;20" tag="ITEM_CARGO-FEW_AMBER" />
+          </LogicModifiers>
+          <LogicModifiers list="ppl">
+            <scriptCallWithTag scriptName="FMO_SetHealthPercentTo" parameter="100" tag="TAG-HEALTH_PHYSICAL" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Wypij nektar i miod. " ownerID="33" targetID="23" group="G1" fromX="3949" fromY="-2054" />Teraz ul jest otwarty do grabiezy. Nektar miodowy leczy twoje rany, a ty odkrywasz, ze pszczoly zgromadzily tu bursztyn. </nodes>
+    <nodes xsi:type="NodeDealDamage" ID="34" positionX="2482.54688" positionY="-1303.52429" width="460" height="459" challengeTypeDamage="TypeMental" minDamage="20" maxDamage="25" useCountInPercent="true" targetGroup="ppl">
+      <outputs ownerID="34" targetID="35" fromX="2911" fromY="-1691" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="35" positionX="2786" positionY="-2009" width="350" height="725">
+      <outputs name="Wyjdz." ownerID="35" targetID="20" fromX="3111" fromY="-2500" />Pszczoly wpadaja w szal i bardzo cie zadla. Ciezka choroba utrzymuje sie, gdy uciekasz.</nodes>
+  </Adventure>
+  <Adventure name="Night bat atack" uniqueID="8" typeGeneric="false" typePerGroupGeneric="false" typeInterrupt="false" typeExpedition="true" typeVillage="false" difficulty="1" nodeIdMax="23" joinIsForced="false" joinType="AllAlly" joinRange="MovementArea">
+    <nodes xsi:type="NodeStarting" ID="1" positionX="10" positionY="-10" width="347" height="825" image="Event178">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_PlayersHaveSharedTag" parameter="1" tag="TAG-NIGHT" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs ownerID="1" targetID="2" fromX="334" fromY="-777" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="2" positionX="440.488831" positionY="-121.583466" width="350" height="1126">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="ppl" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="" />
+          </LogicFilter>
+        </FilterBlock>
+      </logic>
+      <outputs name="[Zamieszanie] Nagly przyplyw podniecenia zasila Twoja domene i sprawia, ze twoje serce bije szybciej. Atak!" ownerID="2" targetID="5" group="G1" fromX="766" fromY="-612" />
+      <outputs name="[Nocny demon] Zadaj posluszenstwa od latajacych gryzoni!" ownerID="2" targetID="14" fromX="766" fromY="-692" />
+      <outputs name="[Postrzeganie] Nie ruszaj sie i pozwol im latac obok siebie, nawet jesli oznacza to wykonanie kilku zadrapan. Sprobuj dostrzec dokladnie skad pochodza." ownerID="2" targetID="20" fromX="766" fromY="-773" />
+      <outputs name="Walcz!" ownerID="2" targetID="6" group="G1" fromX="766" fromY="-853" />
+      <outputs name="Uciekaj!" ownerID="2" targetID="13" group="G2" fromX="766" fromY="-933" />
+      <outputs name="Uciekaj!" ownerID="2" targetID="4" group="G2" fromX="766" fromY="-1013" />Roj nietoperzy spada na ciebie znikad!</nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="4" positionX="-63" positionY="-784" width="350" height="455" allPlayersXP="1" linkedEventUniqueID="0" />
+    <nodes xsi:type="NodeChallenge" ID="5" positionX="1359.12207" positionY="539.77" width="500" height="726" challengeType="TypePhysical" versusGroup="GROUP-BATS_1P_1M_2S" challengeScale="101" challengedList="ppl">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_PlayerHaveTag" parameter="1" tag="TAG-DOMAIN_TURMOIL" />
+          </LogicResultAction>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="70" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicProcessing name="2" list1="ppl">
+            <scriptCallWithTag scriptName="FLP_GetRandomXelements" parameter="2" />
+          </LogicProcessing>
+          <LogicModifiers list="2">
+            <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="2" tag="SKILL_PACK-BLESS_P" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Win" ownerID="5" targetID="9" fromX="1800" fromY="44" />
+      <outputs name="Lose" ownerID="5" targetID="7" fromX="1800" fromY="-35" />
+      <outputs name="Surrender" ownerID="5" targetID="7" fromX="1800" fromY="-116" />
+    </nodes>
+    <nodes xsi:type="NodeChallenge" ID="6" positionX="711.856" positionY="-1905.94385" width="500" height="726" challengeType="TypePhysical" versusGroup="GROUP-BATS_1P_1M_2S" challengeScale="101" challengedList="ppl">
+      <outputs name="Win" ownerID="6" targetID="9" fromX="1152" fromY="-2401" />
+      <outputs name="Lose" ownerID="6" targetID="7" fromX="1152" fromY="-2481" />
+      <outputs name="Surrender" ownerID="6" targetID="7" fromX="1152" fromY="-2561" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="7" positionX="2410" positionY="-1519" width="350" height="725">
+      <logic>
+        <ModifierBlock>
+          <LogicProcessing name="4" list1="ppl">
+            <scriptCallWithTag scriptName="FLP_GetRandomXelements" parameter="4" />
+          </LogicProcessing>
+          <LogicModifiers list="4">
+            <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="2" tag="SKILL_PACK-ILLNESS" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Wyjdz." ownerID="7" targetID="8" fromX="2735" fromY="-2010" />Nietoperze roija sie i zywia sie twoja krwia, pozostawiajac niektorych z was chorych. </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="8" positionX="2839.557" positionY="-1547.56519" width="350" height="408" allPlayersXP="1" allPlayersRP="1" linkedEventUniqueID="0" />
+    <nodes xsi:type="NodeAdventure" ID="9" positionX="2590.80981" positionY="-485.32077" width="350" height="805">
+      <outputs name="[Postrzeganie] Badasz miejsce, z ktorego pochodza nietoperze." ownerID="9" targetID="21" fromX="2916" fromY="-976" />
+      <outputs name="Wyjdz." ownerID="9" targetID="10" fromX="2916" fromY="-1056" />Zabijasz nietoperze bez wiekszych problemow.</nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="10" positionX="3013.17676" positionY="-1077.2887" width="350" height="408" allPlayersXP="3" allPlayersRP="1" linkedEventUniqueID="0" />
+    <nodes xsi:type="NodeDealDamage" ID="13" positionX="-8.298019" positionY="-1335.44226" width="460" height="459" challengeTypeDamage="TypePhysical" minDamage="4" maxDamage="6" useCountInPercent="false" targetGroup="50">
+      <logic>
+        <FilterBlock>
+          <LogicProcessing name="50" list1="ppl">
+            <scriptCallWithTag scriptName="FLP_GetRandomXPercentElements" parameter="50" />
+          </LogicProcessing>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="30" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs ownerID="13" targetID="4" fromX="420" fromY="-1723" />
+    </nodes>
+    <nodes xsi:type="NodeChallenge" ID="14" positionX="881.074341" positionY="-571.0841" width="500" height="726" challengeType="TypeMental" versusGroup="GROUP-BATS_1P_1M_2S" challengeScale="101" challengedList="ppl">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="ndemon" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="TAG-NIGHT_DEMON" />
+          </LogicFilter>
+          <LogicResultAction list="ndemon">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Win" ownerID="14" targetID="22" fromX="1322" fromY="-1066" />
+      <outputs name="Lose" ownerID="14" targetID="23" fromX="1322" fromY="-1146" />
+      <outputs name="Surrender" ownerID="14" targetID="23" fromX="1322" fromY="-1226" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="15" positionX="1471.5697" positionY="-973.8565" width="350" height="805">
+      <outputs name="Zbadaj." ownerID="15" targetID="16" group="G1" fromX="1797" fromY="-1465" />
+      <outputs name="Zbadaj." ownerID="15" targetID="17" group="G1" fromX="1797" fromY="-1545" />Nietoperze przelatuja obok ciebie, zostawiajac kilka zadrapan, a ty widzisz male, ukryte wejscie do jaskini.</nodes>
+    <nodes xsi:type="NodeAdventure" ID="16" positionX="1918.30237" positionY="-1567.91577" width="350" height="805">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="50" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Atak!" ownerID="16" targetID="18" fromX="2244" fromY="-2059" />
+      <outputs name="Wyjdz." ownerID="16" targetID="8" fromX="2244" fromY="-2139" />Ostroznie wslizgujesz sie i odkrywasz wscieklego niedzwiedzia szalejacego w srodku. Przylegajaca bron jest umieszczona w jej boku, ale rana jest stara i prawdopodobnie nie spowolni jej ataku.</nodes>
+    <nodes xsi:type="NodeAdventure" ID="17" positionX="1397" positionY="-1819" width="350" height="725">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="10;30" tag="ITEM_CARGO-FEW_SANDSTONE" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Zbierz co mozesz i wyjdz." ownerID="17" targetID="10" fromX="1722" fromY="-2310" />Znajdujesz jaskinie pusta, chociaz sa oznaki czegos wielkiego przechodzacego przez nia - prawdopodobnie to, co przerazilo nietoperze. 
+
+Znajdujesz zapas dobrego kamienia.</nodes>
+    <nodes xsi:type="NodeChallenge" ID="18" positionX="2336" positionY="-2289" width="500" height="726" challengeType="TypePhysical" versusGroup="GROUP-RABIT_BEAR_ONE_2P_0M_0S" challengeScale="101" challengedList="ppl">
+      <outputs name="Win" ownerID="18" targetID="19" fromX="2777" fromY="-2784" />
+      <outputs name="Lose" ownerID="18" targetID="8" fromX="2777" fromY="-2864" />
+      <outputs name="Surrender" ownerID="18" targetID="8" fromX="2777" fromY="-2944" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="19" positionX="3008" positionY="-2207" width="350" height="725">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="1" tag="ITEM_CARGO-ADV_ONE_SWORD_1H" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Wyjdz." ownerID="19" targetID="10" fromX="3333" fromY="-2698" />Niedzwiedz jest martwy, a ty mozesz odebrac bron zlozona po jego stronie.</nodes>
+    <nodes xsi:type="NodeDealDamage" ID="20" positionX="897" positionY="-1391" width="460" height="459" challengeTypeDamage="TypePhysical" minDamage="2" maxDamage="5" useCountInPercent="false" targetGroup="ppl">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="perc">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="10" tag="TAG-PERCEPTION" />
+          </LogicFilter>
+          <LogicResultAction list="perc">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="60" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs ownerID="20" targetID="15" fromX="1326" fromY="-1779" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="21" positionX="2415" positionY="733" width="350" height="805">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="perc">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="8" tag="TAG-PERCEPTION" />
+          </LogicFilter>
+          <LogicResultAction list="perc">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="70" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Zbadaj." ownerID="21" targetID="16" group="G1" fromX="2740" fromY="241" />
+      <outputs name="Zbadaj." ownerID="21" targetID="17" group="G1" fromX="2740" fromY="161" />Widzisz male, ukryte wejscie do jaskini.</nodes>
+    <nodes xsi:type="NodeAdventure" ID="22" positionX="2124.71313" positionY="-646.7356" width="350" height="805">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers list="ndemon">
+            <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="2" tag="SKILL_PACK-BLESS_M" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="[Postrzeganie] Badasz miejsce, z ktorego pochodza nietoperze." ownerID="22" targetID="21" fromX="2450" fromY="-1137" />
+      <outputs name="Wyjdz." ownerID="22" targetID="10" fromX="2450" fromY="-1218" />Nietoperze sa posluszne twojemu nocnemu wezwaniu i oddalaja sie.</nodes>
+    <nodes xsi:type="NodeDealDamage" ID="23" positionX="1462" positionY="-435" width="460" height="459" challengeTypeDamage="TypeMental" minDamage="10" maxDamage="30" useCountInPercent="true" targetGroup="ppl">
+      <outputs ownerID="23" targetID="7" fromX="1891" fromY="-823" />
+    </nodes>
+  </Adventure>
+  <Adventure name="Animal attack1" uniqueID="9" allowToUse="false" typeGeneric="false" typePerGroupGeneric="false" typeInterrupt="true" typeExpedition="true" typeVillage="false" difficulty="1" nodeIdMax="10" joinIsForced="false" joinType="AllAlly" joinRange="MovementArea">
+    <nodes xsi:type="NodeStarting" ID="1" positionX="10" positionY="-10" width="347" height="825" image="Event015">
+      <outputs ownerID="1" targetID="2" fromX="334" fromY="-777" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="2" positionX="554" positionY="-114" width="350" height="885">
+      <outputs name="Zobacz, co sie dzieje." ownerID="2" targetID="8" group="G1" fromX="879" fromY="-605" />
+      <outputs name="Zobacz, co sie dzieje." ownerID="2" targetID="10" group="G1" fromX="879" fromY="-685" />
+      <outputs name="Zobacz, co sie dzieje." ownerID="2" targetID="6" group="G1" fromX="879" fromY="-765" />Twoja podroz zostala przerwana.</nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="6" positionX="1022" positionY="-893" width="350" height="455" linkedEventUniqueID="6" />
+    <nodes xsi:type="NodeAdventureEnd" ID="8" positionX="1051" positionY="-217" width="350" height="455" linkedEventUniqueID="7">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="33" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+    </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="10" positionX="1542" positionY="-462" width="350" height="455" linkedEventUniqueID="8">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_PlayersHaveSharedTag" parameter="1" tag="TAG-NIGHT" />
+          </LogicResultAction>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="50" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+    </nodes>
+  </Adventure>
+</MODULE>

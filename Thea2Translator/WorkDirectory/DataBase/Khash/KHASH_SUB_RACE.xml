@@ -1,0 +1,172 @@
+﻿<SUB_RACE>
+    <!-- HUMANS -->   
+    <SUBRACE-HUMAN_WARRIOR>
+        <DescriptionInfo Name="DES_PLACEHOLDER" Description="DES_PLACEHOLDER_DES" IconName="ClassWarrior"/>
+        <Race Value="RACE-HUMAN"/>
+        <SecondSubraceAttributes Amount="1" Tag="TAG-WARRIOR"/>
+        <MainSubraceAttributes Amount="5" Tag="TAG-WITS"/>
+        <MainSubraceAttributes Amount="7" Tag="TAG-STRENGTH"/>
+        <MainSubraceAttributes Amount="5" Tag="TAG-PERCEPTION"/>
+        <MainSubraceAttributes Amount="2" Tag="TAG-INTELLIGENCE"/>
+        <MainSubraceAttributes Amount="2" Tag="TAG-WISDOM"/>
+        <MainSubraceAttributes Amount="2" Tag="TAG-MYSTICISM"/>
+        <MainSubraceAttributes Amount="2" Tag="TAG-DESTINY"/>
+        <SecondSubraceAttributes Amount="6" Tag="TAG-MAX_HEALTH_PHYSICAL"/>
+        <SecondSubraceAttributes Amount="4" Tag="TAG-MAX_HEALTH_MENTAL"/>
+        <SecondSubraceAttributes Amount="4" Tag="TAG-MAX_HEALTH_SPIRIT"/>
+        <SecondSubraceAttributes Amount="5" Tag="TAG-MOVEMENT_RANGE"/>
+        <SecondSubraceAttributes Amount="2" Tag="TAG-RANGE_OF_SIGHT_DAY"/>
+        <CommonSubraceAttributes Chance="50">
+            <CountedTag Amount="1" Tag="TAG-GENDER_FEMALE"/>
+        </CommonSubraceAttributes>
+        <CommonSubraceAttributes Chance="60">
+            <CountedTag Amount="2" Tag="TAG-MAX_HEALTH_PHYSICAL"/>
+        </CommonSubraceAttributes>
+        <CommonSubraceAttributes Chance="60">
+            <CountedTag Amount="2" Tag="TAG-MAX_HEALTH_PHYSICAL"/>
+        </CommonSubraceAttributes>
+        <CommonSubraceAttributes Chance="40">
+            <CountedTag Amount="2" Tag="TAG-MAX_HEALTH_MENTAL"/>
+        </CommonSubraceAttributes>
+        <CommonSubraceAttributes Chance="40">
+            <CountedTag Amount="2" Tag="TAG-MAX_HEALTH_SPIRIT"/>
+        </CommonSubraceAttributes>
+        <CommonSubraceAttributes Chance="60">
+            <CountedTag Amount="1" Tag="TAG-WITS"/>
+        </CommonSubraceAttributes>
+        <CommonSubraceAttributes Chance="60">
+            <CountedTag Amount="1" Tag="TAG-STRENGTH"/>
+        </CommonSubraceAttributes>
+        <CommonSubraceAttributes Chance="40">
+            <CountedTag Amount="1" Tag="TAG-STRENGTH"/>
+        </CommonSubraceAttributes>
+        <CommonSubraceAttributes Chance="40">
+            <CountedTag Amount="1" Tag="TAG-PERCEPTION"/>
+        </CommonSubraceAttributes>
+        <BlockedItemSlot Value="TAG-BLOCKED_COMPANION"/>
+        <BlockedItemSlot Value="TAG-BLOCKED_TOOL"/>
+        <BlockedItemSlot Value="TAG-BLOCKED_SPECIAL_ITEM"/>
+        <NaturalSkills Value="SKILL_PACK-DEFAULT_FALLBACK"/>
+        <!--<AdvancementSkills Value="SKILL_PACK-WARRIOR_FRONT_LINE"/> -->
+        <GraphicMale Value="HumanWarriorM01"/>
+        <GraphicMale Value="HumanWarriorM02"/>
+        <GraphicMale Value="HumanWarriorM03"/>
+        <GraphicMale Value="HumanWarriorM04"/>
+        <GraphicMale Value="HumanWarriorM05"/>
+        <GraphicMale Value="HumanWarriorM06"/>
+        <GraphicFemale Value="HumanWarriorF01"/>
+        <GraphicFemale Value="HumanWarriorF02"/>
+        <GraphicFemale Value="HumanWarriorF03"/>
+        <GraphicFemale Value="HumanWarriorF04"/>
+        <GraphicFemale Value="HumanWarriorF05"/>
+        <GraphicFemale Value="HumanWarriorF06"/>
+        
+        <DefaultCargo Chance="100" ItemCargo="ITEM_CARGO-BASIC_MELEE_WEAPON"/>
+        <DefaultCargo Chance="70" ItemCargo="ITEM_CARGO-BASIC_MELEE_WEAPON"/>
+        <DefaultCargo Chance="70" ItemCargo="ITEM_CARGO-BASIC_MELEE_WEAPON"/>
+        <DefaultCargo Chance="100" ItemCargo="ITEM_CARGO-BASIC_ARMOUR"/>
+        <DefaultCargo Chance="70" ItemCargo="ITEM_CARGO-BASIC_ARMOUR"/>
+        <DefaultCargo Chance="70" ItemCargo="ITEM_CARGO-BASIC_RANGED_WEAPON"/>
+        <DefaultCargo Chance="50" ItemCargo="ITEM_CARGO-BASIC_SHIELD"/>
+        <DefaultCargo Chance="50" ItemCargo="ITEM_CARGO-BASIC_SHIELD"/>
+        
+        <!--
+        <DefaultCargo Chance="100" ItemCargo="ITEM_CARGO-BASIC_PACK_FOOD"/>
+        <DefaultCargo Chance="80" ItemCargo="ITEM_CARGO-BASIC_FEW_SUPPLIES"/>
+        
+        -->
+    </SUBRACE-HUMAN_WARRIOR>
+    <!-- ANIMALS -->
+    <SUBRACE-RAT>
+      <DescriptionInfo Name="DES_RAT" Description="DES_RAT_DES" IconName="ClassBeast"/>
+      <Race Value="RACE-BEAST"/>
+      <SecondSubraceAttributes Amount="1" Tag="TAG-RAT"/>
+      <SecondSubraceAttributes Amount="1" Tag="TAG-GENDER_OTHER"/>
+      <MainSubraceAttributes Amount="2" Tag="TAG-WITS"/>
+      <MainSubraceAttributes Amount="2" Tag="TAG-STRENGTH"/>
+      <MainSubraceAttributes Amount="1" Tag="TAG-PERCEPTION"/>
+      <MainSubraceAttributes Amount="8" Tag="TAG-MAX_HEALTH_PHYSICAL"/>
+      <BlockedItemSlot Value="TAG-BLOCKED_LEFT_HAND"/>
+      <BlockedItemSlot Value="TAG-BLOCKED_RIGHT_HAND"/>
+      <BlockedItemSlot Value="TAG-BLOCKED_COMPANION"/>
+      <BlockedItemSlot Value="TAG-BLOCKED_SPECIAL_ITEM"/>
+      <BlockedItemSlot Value="TAG-BLOCKED_ARMOUR"/>
+      <BlockedItemSlot Value="TAG-BLOCKED_TOOL"/>
+      <NaturalSkills Value="SKILL_PACK-DEFAULT_FALLBACK"/>
+      <GraphicMale Value="Rat"/>      
+    </SUBRACE-RAT>
+    <SUBRACE-YOUNG_BOAR>
+        <DescriptionInfo Name="DES_BOAR" Description="DES_BOAR_DES" IconName="ClassBeast"/>
+        <Race Value="RACE-BEAST"/>
+        <SecondSubraceAttributes Amount="1" Tag="TAG-BOAR"/>
+        <SecondSubraceAttributes Amount="1" Tag="TAG-GENDER_OTHER"/>
+        <MainSubraceAttributes Amount="2" Tag="TAG-WITS"/>
+        <MainSubraceAttributes Amount="6" Tag="TAG-STRENGTH"/>
+        <MainSubraceAttributes Amount="3" Tag="TAG-PERCEPTION"/>
+        <MainSubraceAttributes Amount="1" Tag="TAG-INTELLIGENCE"/>
+        <MainSubraceAttributes Amount="1" Tag="TAG-MYSTICISM"/>
+        <MainSubraceAttributes Amount="1" Tag="TAG-WISDOM"/>
+        <MainSubraceAttributes Amount="1" Tag="TAG-DESTINY"/>
+        <SecondSubraceAttributes Amount="20" Tag="TAG-MAX_HEALTH_PHYSICAL"/>
+        <SecondSubraceAttributes Amount="2" Tag="TAG-MAX_HEALTH_MENTAL"/>
+        <SecondSubraceAttributes Amount="2" Tag="TAG-MAX_HEALTH_SPIRIT"/>
+        <SecondSubraceAttributes Amount="6" Tag="TAG-MOVEMENT_RANGE"/>
+        <SecondSubraceAttributes Amount="2" Tag="TAG-RANGE_OF_SIGHT_DAY"/>
+        <SecondSubraceAttributes Amount="1" Tag="TAG-RANGE_OF_SIGHT_NIGHT"/>
+        <BlockedItemSlot Value="TAG-BLOCKED_LEFT_HAND"/>
+        <BlockedItemSlot Value="TAG-BLOCKED_RIGHT_HAND"/>
+        <BlockedItemSlot Value="TAG-BLOCKED_COMPANION"/>
+        <BlockedItemSlot Value="TAG-BLOCKED_SPECIAL_ITEM"/>
+        <BlockedItemSlot Value="TAG-BLOCKED_ARMOUR"/>
+        <BlockedItemSlot Value="TAG-BLOCKED_TOOL"/>
+        <NaturalSkills Value="SKILL_PACK-DEFAULT_FALLBACK"/>
+        <GraphicMale Value="WildBoar3"/>
+    </SUBRACE-YOUNG_BOAR>
+    <!-- DEMO -->
+    <SUBRACE-TUTORIAL_ORC_BLOODTRACKER>
+        <DescriptionInfo Name="DES_SUBRACE_ORC_BLOODTRACKER" Description="DES_SUBRACE_ORC_BLOODTRACKER_DES" IconName="IconPlaceholder"/>
+        <Race Value="RACE-ORC"/>
+        <SecondSubraceAttributes Amount="1" Tag="TAG-HUNTER"/>
+        <MainSubraceAttributes Amount="3" Tag="TAG-WITS"/>
+        <MainSubraceAttributes Amount="9" Tag="TAG-STRENGTH"/>
+        <MainSubraceAttributes Amount="6" Tag="TAG-PERCEPTION"/>
+        <MainSubraceAttributes Amount="3" Tag="TAG-WISDOM"/>
+        <MainSubraceAttributes Amount="1" Tag="TAG-MYSTICISM"/>
+        <MainSubraceAttributes Amount="1" Tag="TAG-DESTINY"/>
+        <SecondSubraceAttributes Amount="10" Tag="TAG-MAX_HEALTH_PHYSICAL"/>
+        <SecondSubraceAttributes Amount="4" Tag="TAG-MAX_HEALTH_MENTAL"/>
+        <SecondSubraceAttributes Amount="6" Tag="TAG-MAX_HEALTH_SPIRIT"/>
+        <SecondSubraceAttributes Amount="5" Tag="TAG-MOVEMENT_RANGE"/>
+        <SecondSubraceAttributes Amount="2" Tag="TAG-RANGE_OF_SIGHT_DAY"/>
+        <SecondSubraceAttributes Amount="2" Tag="TAG-RANGE_OF_SIGHT_NIGHT"/>
+        <CommonSubraceAttributes Chance="50">
+            <CountedTag Amount="1" Tag="TAG-GENDER_FEMALE"/>
+        </CommonSubraceAttributes>
+        <CommonSubraceAttributes Chance="50">
+            <CountedTag Amount="2" Tag="TAG-MAX_HEALTH_PHYSICAL"/>
+        </CommonSubraceAttributes>
+        <CommonSubraceAttributes Chance="50">
+            <CountedTag Amount="2" Tag="TAG-MAX_HEALTH_SPIRIT"/>
+        </CommonSubraceAttributes>
+        <CommonSubraceAttributes Chance="60">
+            <CountedTag Amount="1" Tag="TAG-PERCEPTION"/>
+        </CommonSubraceAttributes>
+        <CommonSubraceAttributes Chance="50">
+            <CountedTag Amount="1" Tag="TAG-DESTINY"/>
+        </CommonSubraceAttributes>
+        <CommonSubraceAttributes Chance="50">
+            <CountedTag Amount="1" Tag="TAG-MYSTICISM"/>
+        </CommonSubraceAttributes>
+        <BlockedItemSlot Value="TAG-BLOCKED_TOOL"/>
+        <NaturalSkills Value="SKILL_PACK-DEFAULT_FALLBACK"/>     
+        <GraphicMale Value="OrcBloodtrackerM1"/>
+        <GraphicMale Value="OrcBloodtrackerM2"/>
+        <GraphicFemale Value="OrcBloodtrackerF1"/>
+        <GraphicFemale Value="OrcBloodtrackerF2"/>
+        <GraphicFemale Value="OrcBloodtrackerF3"/>
+        <GraphicFemale Value="OrcBloodtrackerF4"/>
+        <GraphicFemale Value="OrcBloodtrackerF5"/>
+        <DefaultCargo Chance="100" ItemCargo="ITEM_CARGO-BASIC_MELEE_WEAPON"/>
+        <DefaultCargo Chance="100" ItemCargo="ITEM_CARGO-BASIC_ARMOUR"/>
+    </SUBRACE-TUTORIAL_ORC_BLOODTRACKER>
+</SUB_RACE>

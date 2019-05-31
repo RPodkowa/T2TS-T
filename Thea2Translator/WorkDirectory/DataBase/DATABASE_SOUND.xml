@@ -1,0 +1,210 @@
+﻿<SOUND_MUSIC>
+
+	<SOUND_LIST-SFX>
+		<Sound Name="ButtonClick" File="ButtonClick.wav"/>
+		<Sound Name="ButtonHover" File="ButtonHover.wav"/>		
+		<Sound Name="SelectGroup" File="SFXPlaceholder.wav"/>
+		<Sound Name="GroupMove" File="SFXPlaceholder.wav"/>
+		<Sound Name="CreateCamp" File="Camp.wav"/>
+		<Sound Name="EndCamp" File="CampEnd.wav"/>
+		<Sound Name="Move" File="Move.wav"/>
+		<Sound Name="WaterMove" File="WaterMove.wav"/>
+		<Sound Name="Embark" File="Embark.wav"/>
+		<Sound Name="EquipmentScreenOpen" File="OpenEquip.wav"/>
+		<Sound Name="InventoryScreenOpen" File="OpenInventory.wav"/>
+		<Sound Name="BuildingsScreenOpen" File="OpenBuild.wav"/>
+		<Sound Name="GatheringScreenOpen" File="OpenGather.wav"/>
+		<Sound Name="CraftingScreenOpen" File="OpenCraft.wav"/>
+		<Sound Name="CookingScreenOpen" File="OpenCooking.wav"/>
+		<Sound Name="ResearchScreenOpen" File="OpenResearch.wav"/>
+		<Sound Name="RitualsScreenOpen" File="OpenRituals.wav"/>
+		<Sound Name="AdvancementScreenOpen" File="OpenAdvancement.wav"/>
+		<Sound Name="VillageOverviewOpen" File="OpenVillage.wav"/>
+		<Sound Name="GroupManagementOpen" File="OpenGroupManagement.wav"/>
+		<Sound Name="AdvancementUnlock" File="AdvancementUnlock.wav"/>
+		<Sound Name="StartChallenge" File="StartChallenge.wav"/>
+		<Sound Name="AddRecipe" File="AddRecipe.wav"/>		
+		<Sound Name="CardEndTurn" File="CardEndTurn.wav"/>
+		<Sound Name="CardPlayed" File="CardPlayed.wav"/>
+		<Sound Name="CardHover" File="SFXPlaceholder.wav"/>
+		<Sound Name="CardDead" File="SFXPlaceholder.wav"/>
+		<Sound Name="FightWin" File="SFXPlaceholder.wav"/>
+		<Sound Name="FightLoss" File="SFXPlaceholder.wav"/>
+		<Sound Name="FightRetreat" File="SFXPlaceholder.wav"/>
+		<Sound Name="NewTurn" File="TurnBeginsAfternoon.wav"/>
+		<Sound Name="EndTurn" File="EndTurn.wav"/>
+		<Sound Name="EndTurnOtherPlayer" File="EndTurnOtherPlayer.wav"/>
+		<Sound Name="WinterStart" File="SFXPlaceholder.wav"/>
+		<Sound Name="SpringStart" File="SFXPlaceholder.wav"/>
+		<Sound Name="SummerStart" File="SFXPlaceholder.wav"/>
+		<Sound Name="AutumnStart" File="SFXPlaceholder.wav"/>
+		<Sound Name="MorningStart" File="SFXPlaceholder.wav"/>
+		<Sound Name="NoonStart" File="SFXPlaceholder.wav"/>
+		<Sound Name="AfternoonStart" File="SFXPlaceholder.wav"/>
+		<Sound Name="EveningStart" File="SFXPlaceholder.wav"/>
+		<Sound Name="DuskStart" File="SFXPlaceholder.wav"/>
+					
+		<Sound Name="AttackDefault" File="AttackDefault.wav"/>
+		<Sound Name="AttackSword1H" File="AttackSword1H.wav"/>
+		<Sound Name="AttackSword2H" File="AttackSword2H.wav"/>
+		<Sound Name="AttackAxe1H" File="AttackAxe1H.wav"/>
+		<Sound Name="AttackAxe2H" File="AttackAxe2H.wav"/>
+		<Sound Name="AttackClub1H" File="AttackClub1H.wav"/>
+		<Sound Name="AttackClub2H" File="AttackClub2H.wav"/>
+		<Sound Name="AttackPolearm1H" File="AttackPolearm1H.wav"/>
+		<Sound Name="AttackPolearm2H" File="AttackPolearm2H.wav"/>
+		<Sound Name="AttackArtifact1H" File="AttackArtifact1H.wav"/>
+		<Sound Name="AttackArtifact2H" File="AttackArtifact2H.wav"/>
+		<Sound Name="AttackScroll1H" File="AttackScroll1H.wav"/>
+		<Sound Name="AttackScroll2H" File="AttackScroll2H.wav"/>
+		<Sound Name="AttackWand" File="AttackWand.wav"/>
+		<Sound Name="AttackBow" File="AttackBow.wav"/>
+		<Sound Name="AttackThrownSpears" File="AttackThrownSpears.wav"/>
+		<Sound Name="IncreaseShield" File="IncreaseShield.wav"/>
+		
+		<Sound Name="SubskillRandomBlasts" File="SubskillRandomBlasts.wav"/>
+		<Sound Name="SubskillPoisonFog" File="SubskillRandomBlasts.wav"/>
+		<Sound Name="SubskillTrueFog" File="SubskillTrueFog.wav"/>
+		<Sound Name="SubskillExplodingDeath" File="SubskillExplodingDeath.wav"/>
+		<Sound Name="SubskillGhostTouch" File="SubskillGhostTouch.wav"/>
+		<Sound Name="SubskillEnergyDisturb" File="SubskillEnergyDisturb.wav"/>
+		<Sound Name="SubskillPrimalDesire" File="SubskillPrimalDesire.wav"/>
+		<Sound Name="SubskillCorruption" File="SubskillCorruption.wav"/>
+		<Sound Name="SubskillAncestorVoice" File="SubskillAncestorVoice.wav"/>
+		<Sound Name="SubskillPoisonDust" File="SubskillPoisonDust.wav"/>
+		<Sound Name="SubskillWillDrain" File="SubskillWillDrain.wav"/>
+		<Sound Name="SubskillLightning" File="SubskillLightning.wav"/>
+		<Sound Name="SubskillChainLightning" File="SubskillChainLightning.wav"/>
+		<Sound Name="SubskillGroundShaking" File="SubskillGroundShaking.wav"/>
+		<Sound Name="SubskillIceSpike" File="SubskillIceSpike.wav"/>
+		<Sound Name="SubskillPoisonSpit" File="SubskillPoisonSpit.wav"/>
+		<Sound Name="SubskillDiveAttack" File="SubskillDiveAttack.wav"/>
+		<Sound Name="SubskillBite" File="SubskillBite.wav"/>
+		<Sound Name="SubskillClawHit" File="SubskillClawHit.wav"/>
+		<Sound Name="SubskillLineCharge" File="SubskillLineCharge.wav"/>
+		<Sound Name="SubskillHeadbutt" File="SubskillHeadbutt.wav"/>
+		<Sound Name="SubskillHornImpale" File="SubskillHornImpale.wav"/>
+		<Sound Name="SubskillPoisonThrowingDagger" File="SubskillPoisonThrowingDagger.wav"/>
+		<Sound Name="SubskillSneakAttack" File="SubskillSneakAttack.wav"/>
+		<Sound Name="SubskillGroundHits" File="SubskillGroundHits.wav"/>
+		<Sound Name="SubskillFastMultiThrow" File="SubskillFastMultiThrow.wav"/>
+		<Sound Name="SubskillFireball" File="SubskillFireball.wav"/>
+		<Sound Name="SubskillReliableArgument" File="SubskillReliableArgument.wav"/>
+		<Sound Name="SubskillSoulTear" File="SubskillSoulTear.wav"/>
+		<Sound Name="SubskillConceptDefaultMelee" File="SubskillConceptDefaultMelee.wav"/>
+		<Sound Name="SubskillConceptDefaultRange" File="SubskillConceptDefaultRange.wav"/>
+		<Sound Name="SubskillConceptDefaultRangeHeavy" File="SubskillConceptDefaultRangeHeavy.wav"/>
+		<Sound Name="SubskillAddAttribute" File="SubskillAddAttribute.wav"/>
+		<Sound Name="SubskillChildMagicShield" File="SubskillChildMagicShield.wav"/>
+		<Sound Name="SubskillInspire" File="SubskillInspire.wav"/>
+		<Sound Name="SubskillBloodBrotherhood" File="SubskillBloodBrotherhood.wav"/>
+		<Sound Name="SubskillWeakness" File="SubskillWeakness.wav"/>
+		<Sound Name="SubskillHurryUpSubskillHurryUp" File="SubskillHurryUp.wav"/>
+		<Sound Name="SubskillDelayEnemies" File="SubskillDelayEnemies.wav"/>
+		<Sound Name="SubskillHealOnDmg" File="SubskillHealOnDmg.wav"/>
+		<Sound Name="SubskillOverwhelm" File="SubskillOverwhelm.wav"/>
+		<Sound Name="SubskillVigourDrain" File="SubskillVigourDrain.wav"/>
+		<Sound Name="SubskillSwarmStrength" File="SubskillSwarmStrength.wav"/>
+		<Sound Name="SubskillArrivalTrap" File="SubskillArrivalTrap.wav"/>
+		<Sound Name="SubskillCorpseEaterHeal" File="SubskillCorpseEaterHeal.wav"/>
+		<Sound Name="SubskillDestroyShielding" File="SubskillDestroyShielding.wav"/>
+		<Sound Name="SubskillBlessedArmour" File="SubskillBlessedArmour.wav"/>
+		<Sound Name="SubskillEssenceSkin" File="SubskillEssenceSkin.wav"/>
+		<Sound Name="SubskillHuntersMark" File="SubskillHuntersMark.wav"/>
+		<Sound Name="SubskillBloodySacrifice" File="SubskillBloodySacrifice.wav"/>
+		<Sound Name="SubskillProtectionMS" File="SubskillProtectionMS.wav"/>
+		<Sound Name="SubskillRetaliationCA1" File="SubskillRetaliationCA1.wav"/>
+		<Sound Name="SubskillTransferDmg" File="SubskillTransferDmg.wav"/>
+		<Sound Name="SubskillRegeneration" File="SubskillRegeneration.wav"/>
+		<Sound Name="SubskillWarShout" File="SubskillWarShout.wav"/>
+		<Sound Name="SubskillEnergyExplosion" File="SubskillEnergyExplosion.wav"/>
+		<Sound Name="SubskillShowingOff" File="SubskillShowingOff.wav"/>
+		<Sound Name="SubskillSummonDemon" File="SubskillSummonDemon.wav"/>
+		<Sound Name="SubskillSummonUnliving" File="SubskillSummonUnliving.wav"/>
+		<Sound Name="SubskillSummonWildBeast" File="SubskillSummonWildBeast.wav"/>
+		<Sound Name="SubskillSummonBee" File="SubskillSummonBee.wav"/>
+		<Sound Name="SubskillSummonTentacle" File="SubskillSummonTentacle.wav"/>
+		<Sound Name="SubskillSummonPetWraith" File="SubskillSummonPetWraith.wav"/>
+		<Sound Name="SubskillSummonPetGhost" File="SubskillSummonPetGhost.wav"/>
+		<Sound Name="SubskillSummonPetWolf" File="SubskillSummonPetWolf.wav"/>
+		<Sound Name="SubskillSummonPetBear" File="SubskillSummonPetBear.wav"/>
+		<Sound Name="SubskillSummonPetBoar" File="SubskillSummonPetBoar.wav"/>
+		<Sound Name="SubskillSummonPetSpider" File="SubskillSummonPetSpider.wav"/>
+		<Sound Name="SubskillSummonLavaRockers" File="SubskillSummonLavaRockers.wav"/>
+		<Sound Name="SubskillSummonLightSviatelko" File="SubskillSummonLightSviatelko.wav"/>
+		<Sound Name="SubskillAddShielding" File="SubskillAddShielding.wav"/>
+		<Sound Name="SubskillLeechWhipHit" File="SubskillLeechWhipHit.wav"/>
+		<Sound Name="SubskillDragonBreath" File="SubskillDragonBreath.wav"/>
+		<Sound Name="SubskillTrueBite" File="SubskillTrueBite.wav"/>
+		<Sound Name="SubskillMightyRoar" File="SubskillMightyRoar.wav"/>
+		<Sound Name="SubskillPoisonSpew" File="SubskillPoisonSpew.wav"/>
+		<Sound Name="SubskillShadowWhispers" File="SubskillShadowWhispers.wav"/>
+		<Sound Name="SubskillDevouringRoar" File="SubskillDevouringRoar.wav"/>
+		<Sound Name="SubskillSwarmSpeed" File="SubskillSwarmSpeed.wav"/>
+		<Sound Name="SubskillEerieThrowingAxe" File="SubskillEerieThrowingAxe.wav"/>
+		<Sound Name="SubskillEnergyBlur" File="SubskillEnergyBlur.wav"/>
+		<Sound Name="SubskillSpiritCutoff" File="SubskillSpiritCutoff.wav"/>
+		<Sound Name="SubskillFireGlance" File="SubskillFireGlance.wav"/>
+		<Sound Name="SubskillThrow" File="SubskillThrow.wav"/>
+		<Sound Name="SubskillInternalPain" File="SubskillInternalPain.wav"/>
+		<Sound Name="SubskillHypnosis" File="SubskillHypnosis.wav"/>
+		<Sound Name="SubskillFirstStrike" File="SubskillFirstStrike.wav"/>
+	</SOUND_LIST-SFX>
+	
+	<SOUND_LIST-WEATHER>
+		<Sound Name="Wind" File="Wind.wav"/>
+		<Sound Name="Rain" File="Rain.wav"/>
+		<Sound Name="Snowstorm" File="Snowstorm.wav"/>
+		<Sound Name="Sunnyday" File="Sunnyday.wav"/>
+		<Sound Name="Darkness" File="Darkness.wav"/>
+	</SOUND_LIST-WEATHER>
+	
+    <SOUND_LIST-MAINMENU>
+        <Sound Name="Menu1" File="Menu-Theme.ogg"/>
+    </SOUND_LIST-MAINMENU>
+    <SOUND_LIST-WORLD>
+        <Sound Name="Map1" File="Map-Theme-01.ogg"/>
+        <Sound Name="Map2" File="Map-Theme-02.ogg"/>
+        <Sound Name="Map3" File="Map-Theme-03.ogg"/>
+        <Sound Name="Map4" File="Map-Theme-04.ogg"/>
+        <Sound Name="Map5" File="Map-Theme-05.ogg"/>
+        <Sound Name="Map6" File="Map-Theme-06.ogg"/>
+        <Sound Name="Map7" File="Map-Theme-07.ogg"/>
+        <Sound Name="Map8" File="Map-Theme-08.ogg"/>
+        <Sound Name="Map9" File="Map-Theme-09.ogg"/>
+        <Sound Name="Map10" File="Map-Theme-10.ogg"/>
+        <Sound Name="Map11" File="Map-Theme-11.ogg"/>
+		<Sound Name="Settlement1" File="Settlement-Theme-1.ogg"/>
+        <Sound Name="Settlement2" File="Settlement-Theme-2.ogg"/>
+        <Sound Name="Settlement3" File="Settlement-Theme-3.ogg"/>
+        <Sound Name="Settlement4" File="Settlement-Theme-4.ogg"/>
+        <Sound Name="Settlement5" File="Settlement-Theme-5.ogg"/>
+        <Sound Name="Settlement6" File="Settlement-Theme-6.ogg"/>
+        <Sound Name="Settlement7" File="Settlement-Theme-7.ogg"/>
+        <Sound Name="Settlement8" File="Settlement-Theme-8.ogg"/>
+        <Sound Name="Settlement9" File="Settlement-Theme-9.ogg"/>
+    </SOUND_LIST-WORLD>
+	
+	<!-- Moved settlement tracks to world to keep continuity
+    <SOUND_LIST-NAVBAR>
+    </SOUND_LIST-NAVBAR> -->
+	
+    <SOUND_LIST-CARD_PHYSICAL>
+        <Sound Name="FightPhysical1" File="Battle-Strength-Theme-1.ogg"/>
+        <Sound Name="FightPhysical2" File="Battle-Strength-Theme-2.ogg"/>
+        <Sound Name="FightPhysical3" File="Battle-Strength-Theme-3.ogg"/>
+        <Sound Name="FightPhysical4" File="Battle-Strength-Theme-4.ogg"/>
+    </SOUND_LIST-CARD_PHYSICAL>
+    <SOUND_LIST-CARD_MENTAL>
+        <Sound Name="FightMental1" File="Battle-Mind-Theme-1.ogg"/>
+        <Sound Name="FightMental2" File="Battle-Mind-Theme-2.ogg"/>
+        <Sound Name="FightMental3" File="Battle-Mind-Theme-3.ogg"/>
+        <Sound Name="FightMental4" File="Battle-Mind-Theme-4.ogg"/>
+    </SOUND_LIST-CARD_MENTAL>
+    <SOUND_LIST-CARD_SPIRIT>
+        <Sound Name="FightSpirit1" File="Battle-Spirit-Theme-1.ogg"/>
+        <Sound Name="FightSpirit2" File="Battle-Spirit-Theme-2.ogg"/>
+        <Sound Name="FightSpirit3" File="Battle-Spirit-Theme-3.ogg"/>
+        <Sound Name="FightSpirit4" File="Battle-Spirit-Theme-4.ogg"/>
+    </SOUND_LIST-CARD_SPIRIT>
+</SOUND_MUSIC>

@@ -1,0 +1,36 @@
+﻿<RACES>
+
+	<RACE-TEST_RACE>
+		<DescriptionInfo Name="DES_PLACEHOLDER" Description="DES_PLACEHOLDER_DES" IconName="IconPlaceholder"/>
+	</RACE-TEST_RACE>
+	<RACE-HUMAN>
+		<DescriptionInfo Name="DES_PLACEHOLDER" Description="DES_PLACEHOLDER_DES" IconName="IconPlaceholder"/>
+	</RACE-HUMAN>
+	<RACE-ELF>
+		<DescriptionInfo Name="DES_PLACEHOLDER" Description="DES_PLACEHOLDER_DES" IconName="IconPlaceholder"/>
+	</RACE-ELF>
+	<RACE-ORC>
+		<DescriptionInfo Name="DES_PLACEHOLDER" Description="DES_PLACEHOLDER_DES" IconName="IconPlaceholder"/>
+	</RACE-ORC>
+	<RACE-GOBLIN>
+		<DescriptionInfo Name="DES_PLACEHOLDER" Description="DES_PLACEHOLDER_DES" IconName="IconPlaceholder"/>
+	</RACE-GOBLIN>
+	<RACE-DWARF>
+		<DescriptionInfo Name="DES_PLACEHOLDER" Description="DES_PLACEHOLDER_DES" IconName="IconPlaceholder"/>
+	</RACE-DWARF>
+	<RACE-BEAST>
+		<DescriptionInfo Name="DES_PLACEHOLDER" Description="DES_PLACEHOLDER_DES" IconName="IconPlaceholder"/>
+	</RACE-BEAST>
+	<RACE-DEMON>
+		<DescriptionInfo Name="DES_PLACEHOLDER" Description="DES_PLACEHOLDER_DES" IconName="IconPlaceholder"/>
+	</RACE-DEMON>
+	<RACE-UNLIVING>
+		<DescriptionInfo Name="DES_PLACEHOLDER" Description="DES_PLACEHOLDER_DES" IconName="IconPlaceholder"/>
+	</RACE-UNLIVING>
+	<RACE-MYTHICAL>
+		<DescriptionInfo Name="DES_PLACEHOLDER" Description="DES_PLACEHOLDER_DES" IconName="IconPlaceholder"/>
+	</RACE-MYTHICAL>
+	<RACE-CONCEPT>
+		<DescriptionInfo Name="DES_PLACEHOLDER" Description="DES_PLACEHOLDER_DES" IconName="IconPlaceholder"/>
+	</RACE-CONCEPT>
+</RACES>

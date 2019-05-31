@@ -1,0 +1,15 @@
+﻿<PROTOTYPE_EXP>
+	
+	<!-- Number of experience needed to level up character-->
+	<EXP_CHARACTER_LEVEL Name="XpCharacterLevel" Abbreviation="EXP_LVL">
+		<!--  -->
+		<XPLevel Name="xpLevel" Type="Arrayint" Required="TRUE"/>		
+	</EXP_CHARACTER_LEVEL>	
+	
+	<!-- Experience gained from events/ fights -->
+	<EVENT_XP Name="EventXp" Abbreviation="EV_EXP">
+		<!--  -->
+		<Exp Name="exp" Type="Arrayint" Required="TRUE"/>
+	</EVENT_XP>
+	
+</PROTOTYPE_EXP>

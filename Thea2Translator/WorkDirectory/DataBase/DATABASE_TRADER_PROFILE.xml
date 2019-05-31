@@ -1,0 +1,1744 @@
+﻿<TRADER_PROFILE>
+	
+	<TRADER-DEFAULT>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeDefaultBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_EQUIPMENT"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_EQUIPMENT"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_EQUIPMENT"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_EQUIPMENT"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_EQUIPMENT"/>
+	</TRADER-DEFAULT>
+	
+	<TRADER-DEFAULT_FRIENDLY>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeFriendlyBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_EQUIPMENT"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_EQUIPMENT"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_EQUIPMENT"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_EQUIPMENT"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_EQUIPMENT"/>
+	</TRADER-DEFAULT_FRIENDLY>
+	
+	<TRADER-COOKER>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeDefaultBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_PACK_FOOD"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_PACK_FOOD"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_PACK_FOOD"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_PACK_FOOD"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_PACK_FOOD"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_PACK_FOOD"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_COOKED_PACK_FOOD"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_COOKED_PACK_FOOD"/>
+	</TRADER-COOKER>
+	
+	<TRADER-COOKER_FRIENDLY>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeFriendlyBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_PACK_FOOD"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_PACK_FOOD"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_PACK_FOOD"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_PACK_FOOD"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_PACK_FOOD"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_PACK_FOOD"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_COOKED_PACK_FOOD"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_COOKED_PACK_FOOD"/>
+	</TRADER-COOKER_FRIENDLY>
+	
+	
+	<TRADER-BANDIT>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeDefaultBuying"/>
+	</TRADER-BANDIT>
+	
+	
+	<TRADER-BANDIT_TWO>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeBuyingFor1Value"/>
+	</TRADER-BANDIT_TWO>
+
+
+
+	<TRADER-SLAVYAN_SMALL>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeDefaultBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_EQUIPMENT"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_PACK_MATERIALS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_PACK_MATERIALS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_PACK_SUPPLIES"/>
+	    <TradeableItems Value="ITEM_CARGO-BASIC_PACK_SUPPLIES"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_MATERIALS"/>
+	</TRADER-SLAVYAN_SMALL>
+	<TRADER-SLAVYAN_SMALL_FRIENDLY>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeFriendlyBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_EQUIPMENT"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_PACK_MATERIALS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_PACK_MATERIALS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_PACK_SUPPLIES"/>
+	    <TradeableItems Value="ITEM_CARGO-BASIC_PACK_SUPPLIES"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_MATERIALS"/>
+	</TRADER-SLAVYAN_SMALL_FRIENDLY>
+	<TRADER-SLAVYAN>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeDefaultBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_EQUIPMENT"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_HORDE_MATERIALS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_HORDE_MATERIALS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_HORDE_SUPPLIES"/>
+	    <TradeableItems Value="ITEM_CARGO-BASIC_HORDE_SUPPLIES"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_PACK_MATERIALS"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_PACK_MATERIALS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_PACK_HERBS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_ONE_TOOL"/>
+	</TRADER-SLAVYAN>
+	<TRADER-SLAVYAN_FRIENDLY>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeFriendlyBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_EQUIPMENT"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_HORDE_MATERIALS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_HORDE_MATERIALS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_HORDE_SUPPLIES"/>
+	    <TradeableItems Value="ITEM_CARGO-BASIC_HORDE_SUPPLIES"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_PACK_MATERIALS"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_PACK_MATERIALS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_PACK_HERBS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_ONE_TOOL"/>
+	</TRADER-SLAVYAN_FRIENDLY>
+	<TRADER-SLAVYAN_LARGE>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeDefaultBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_RANDOM_ITEMS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_EQUIPMENT"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_HORDE_MATERIALS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_HORDE_MATERIALS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_HORDE_SUPPLIES"/>
+	    <TradeableItems Value="ITEM_CARGO-BASIC_HORDE_SUPPLIES"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_PACK_MATERIALS"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_PACK_MATERIALS"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_PACK_MATERIALS"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_PACK_MATERIALS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_HORDE_HERBS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_TOOL"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_TOOL"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_ONE_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_ONE_ARMOUR"/>
+	</TRADER-SLAVYAN_LARGE>
+	<TRADER-SLAVYAN_LARGE_FRIENDLY>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeFriendlyBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_RANDOM_ITEMS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_EQUIPMENT"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_HORDE_MATERIALS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_HORDE_MATERIALS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_HORDE_SUPPLIES"/>
+	    <TradeableItems Value="ITEM_CARGO-BASIC_HORDE_SUPPLIES"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_PACK_MATERIALS"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_PACK_MATERIALS"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_PACK_MATERIALS"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_PACK_MATERIALS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_HORDE_HERBS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_TOOL"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_TOOL"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_ONE_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_ONE_ARMOUR"/>
+	</TRADER-SLAVYAN_LARGE_FRIENDLY>
+	
+	<!--<TRADER-ROAMERS_SMALL>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeRoamersBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_RANDOM_ITEMS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_EQUIPMENT"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_PACK_MATERIALS"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_PACK_MATERIALS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_PACK_SUPPLIES"/>
+	    <TradeableItems Value="ITEM_CARGO-BASIC_PACK_HERBS"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_MATERIALS"/>
+	</TRADER-ROAMERS_SMALL>
+	<TRADER-ROAMERS_SMALL_FRIENDLY>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeRoamersFriendlyBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_RANDOM_ITEMS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_EQUIPMENT"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_PACK_MATERIALS"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_PACK_MATERIALS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_PACK_SUPPLIES"/>
+	    <TradeableItems Value="ITEM_CARGO-BASIC_PACK_HERBS"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_MATERIALS"/>
+	</TRADER-ROAMERS_SMALL_FRIENDLY>
+	<TRADER-ROAMERS>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeRoamersBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_RANDOM_ITEMS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_EQUIPMENT"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_PACK_MATERIALS"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_PACK_MATERIALS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_PACK_SUPPLIES"/>
+	    <TradeableItems Value="ITEM_CARGO-BASIC_PACK_SUPPLIES"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_PACK_MATERIALS"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_PACK_MATERIALS"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_PACK_MATERIALS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_PACK_HERBS"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_ONE_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_ONE_WEAPON"/>
+	</TRADER-ROAMERS>
+	<TRADER-ROAMERS_FRIENDLY>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeRoamersFriendlyBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_RANDOM_ITEMS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_EQUIPMENT"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_PACK_MATERIALS"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_PACK_MATERIALS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_PACK_SUPPLIES"/>
+	    <TradeableItems Value="ITEM_CARGO-BASIC_PACK_SUPPLIES"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_PACK_MATERIALS"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_PACK_MATERIALS"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_PACK_MATERIALS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_PACK_HERBS"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_ONE_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_ONE_WEAPON"/>
+	</TRADER-ROAMERS_FRIENDLY>
+	<TRADER-ROAMERS_LARGE>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeRoamersBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_RANDOM_ITEMS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_EQUIPMENT"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_HORDE_MATERIALS"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_HORDE_MATERIALS"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_HORDE_MATERIALS"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_HORDE_MATERIALS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_HORDE_SUPPLIES"/>
+	    <TradeableItems Value="ITEM_CARGO-BASIC_HORDE_SUPPLIES"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_PACK_MATERIALS"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_PACK_MATERIALS"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_PACK_MATERIALS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_HORDE_HERBS"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_ONE_MELEE_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_ONE_MELEE_WEAPON"/>
+	</TRADER-ROAMERS_LARGE>
+	<TRADER-ROAMERS_LARGE_FRIENDLY>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeRoamersFriendlyBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_RANDOM_ITEMS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_RANDOM_ITEMS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_EQUIPMENT"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_HORDE_MATERIALS"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_HORDE_MATERIALS"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_HORDE_MATERIALS"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_HORDE_MATERIALS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_HORDE_SUPPLIES"/>
+	    <TradeableItems Value="ITEM_CARGO-BASIC_HORDE_SUPPLIES"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_PACK_MATERIALS"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_PACK_MATERIALS"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_PACK_MATERIALS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_HORDE_HERBS"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_ONE_MELEE_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_ONE_MELEE_WEAPON"/>
+	</TRADER-ROAMERS_LARGE_FRIENDLY>-->
+	
+	
+
+	
+	<TRADER-SCAVENGERS_SMALL>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeScavengersBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_RANDOM_ITEMS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_EQUIPMENT"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_EQUIPMENT"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_PACK_MATERIALS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_PACK_MATERIALS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_PACK_SUPPLIES"/>
+	    <TradeableItems Value="ITEM_CARGO-BASIC_ONE_TOOL"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_PACK_HERBS"/>
+	</TRADER-SCAVENGERS_SMALL>
+	<TRADER-SCAVENGERS_SMALL_FRIENDLY>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeScavengersFriendlyBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_RANDOM_ITEMS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_EQUIPMENT"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_EQUIPMENT"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_PACK_MATERIALS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_PACK_MATERIALS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_PACK_SUPPLIES"/>
+	    <TradeableItems Value="ITEM_CARGO-BASIC_ONE_TOOL"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_PACK_HERBS"/>
+	</TRADER-SCAVENGERS_SMALL_FRIENDLY>
+	<TRADER-SCAVENGERS>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeScavengersBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_RANDOM_ITEMS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_EQUIPMENT"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_PACK_MATERIALS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_PACK_MATERIALS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_PACK_MATERIALS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_PACK_MATERIALS"/>
+	    <TradeableItems Value="ITEM_CARGO-BASIC_PACK_SUPPLIES"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_PACK_HERBS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_PACK_HERBS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_TOOL"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_TOOL"/>
+	</TRADER-SCAVENGERS>
+	<TRADER-SCAVENGERS_FRIENDLY>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeScavengersFriendlyBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_RANDOM_ITEMS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_EQUIPMENT"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_PACK_MATERIALS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_PACK_MATERIALS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_PACK_MATERIALS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_PACK_MATERIALS"/>
+	    <TradeableItems Value="ITEM_CARGO-BASIC_PACK_SUPPLIES"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_PACK_HERBS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_PACK_HERBS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_TOOL"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_TOOL"/>
+	</TRADER-SCAVENGERS_FRIENDLY>
+	<TRADER-SCAVENGERS_LARGE>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeScavengersBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_RANDOM_ITEMS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_EQUIPMENT"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_EQUIPMENT"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_HORDE_MATERIALS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_HORDE_MATERIALS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_HORDE_MATERIALS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_HORDE_MATERIALS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_HORDE_SUPPLIES"/>
+	    <TradeableItems Value="ITEM_CARGO-ADV_PACK_MATERIALS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_HORDE_HERBS"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_ONE_TOOL"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_TOOL"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_TOOL"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_TOOL"/>
+	</TRADER-SCAVENGERS_LARGE>
+	<TRADER-SCAVENGERS_LARGE_FRIENDLY>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeScavengersFriendlyBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_RANDOM_ITEMS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_EQUIPMENT"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_EQUIPMENT"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_HORDE_MATERIALS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_HORDE_MATERIALS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_HORDE_MATERIALS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_HORDE_MATERIALS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_HORDE_SUPPLIES"/>
+	    <TradeableItems Value="ITEM_CARGO-ADV_PACK_MATERIALS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_HORDE_HERBS"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_ONE_TOOL"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_TOOL"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_TOOL"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_TOOL"/>
+	</TRADER-SCAVENGERS_LARGE_FRIENDLY>
+	
+
+	
+	<!--<TRADER-ELDER_KIN_SMALL>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeElderKinBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_WOOD"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_WOOD"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_WOOD"/>
+	    <TradeableItems Value="ITEM_CARGO-BASIC_PACK_HERBS"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_ONE_ELF_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_ONE_ELF_WEAPON"/>
+	</TRADER-ELDER_KIN_SMALL>
+	<TRADER-ELDER_KIN_SMALL_FRIENDLY>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeElderKinFriendlyBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_WOOD"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_WOOD"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_WOOD"/>
+	    <TradeableItems Value="ITEM_CARGO-BASIC_PACK_HERBS"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_ONE_ELF_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_ONE_ELF_WEAPON"/>
+	</TRADER-ELDER_KIN_SMALL_FRIENDLY>
+	<TRADER-ELDER_KIN>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeElderKinBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_ONE_ELF_RANGE_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_WOOD"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_WOOD"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_ADV_WOOD"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_HIGH_RANDOM_WOOD"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_HORDE_HERBS"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_ELF_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_ELF_WEAPON"/>
+	</TRADER-ELDER_KIN>
+	<TRADER-ELDER_KIN_FRIENDLY>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeElderKinFriendlyBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_ONE_ELF_RANGE_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_WOOD"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_WOOD"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_ADV_WOOD"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_HIGH_RANDOM_WOOD"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_HORDE_HERBS"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_ELF_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_ELF_WEAPON"/>
+	</TRADER-ELDER_KIN_FRIENDLY>
+	<TRADER-ELDER_KIN_LARGE>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeElderKinBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_WOOD"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_WOOD"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_WOOD"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ANCIENT_WOOD"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_HIGH_RANDOM_WOOD"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_HORDE_HERBS"/>
+	    <TradeableItems Value="ITEM_CARGO-ADV_FEW_ELF_RANGE_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_ELF_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_ELF_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_ELF_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_ELF_RANGE_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_ELF_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_ELF_WEAPON"/>
+	</TRADER-ELDER_KIN_LARGE>
+	<TRADER-ELDER_KIN_LARGE_FRIENDLY>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeElderKinFriendlyBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_WOOD"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_WOOD"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_WOOD"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ANCIENT_WOOD"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_HIGH_RANDOM_WOOD"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_HORDE_HERBS"/>
+	    <TradeableItems Value="ITEM_CARGO-ADV_FEW_ELF_RANGE_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_ELF_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_ELF_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_ELF_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_ELF_RANGE_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_ELF_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_ELF_WEAPON"/>
+	</TRADER-ELDER_KIN_LARGE_FRIENDLY>-->
+	
+	
+	
+	<TRADER-WOODLAND_KIN_SMALL>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeDefaultBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_WOOD"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_WOOD"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_WOOD"/>
+	    <TradeableItems Value="ITEM_CARGO-BASIC_PACK_HERBS"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_ONE_ELF_RANGE_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_ONE_ELF_RANGE_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_ELF_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_LEATHER"/>
+	</TRADER-WOODLAND_KIN_SMALL>
+	<TRADER-WOODLAND_KIN_SMALL_FRIENDLY>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeFriendlyBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_WOOD"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_WOOD"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_WOOD"/>
+	    <TradeableItems Value="ITEM_CARGO-BASIC_PACK_HERBS"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_ONE_ELF_RANGE_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_ONE_ELF_RANGE_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_ELF_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_LEATHER"/>
+	</TRADER-WOODLAND_KIN_SMALL_FRIENDLY>
+	<TRADER-WOODLAND_KIN>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeDefaultBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_ELF_RANGE_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-STRONG_ONE_ELF_RANGE_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-STRONG_ONE_ELF_RANGE_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_ELF_RANGE_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-STRONG_ONE_ELF_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-STRONG_ONE_ELF_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_ADV_WOOD"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_WOOD"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_HIGH_RANDOM_WOOD"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_ADV_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_HIGH_RANDOM_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_HORDE_HERBS"/>
+		<TradeableItems Value="ITEM_CARGO-STRONG_ONE_GATHERING_TOOL"/>
+	</TRADER-WOODLAND_KIN>
+	<TRADER-WOODLAND_KIN_FRIENDLY>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeFriendlyBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_ELF_RANGE_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-STRONG_ONE_ELF_RANGE_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-STRONG_ONE_ELF_RANGE_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_ELF_RANGE_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-STRONG_ONE_ELF_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-STRONG_ONE_ELF_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_ADV_WOOD"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_WOOD"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_HIGH_RANDOM_WOOD"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_ADV_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_HIGH_RANDOM_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_HORDE_HERBS"/>
+		<TradeableItems Value="ITEM_CARGO-STRONG_ONE_GATHERING_TOOL"/>
+	</TRADER-WOODLAND_KIN_FRIENDLY>
+	<TRADER-WOODLAND_KIN_LARGE>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeDefaultBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_WOOD"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_WOOD"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ANCIENT_WOOD"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_HIGH_RANDOM_WOOD"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_HIGH_RANDOM_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_MYTHICAL_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_HORDE_HERBS"/>
+	    <TradeableItems Value="ITEM_CARGO-STRONG_ONE_ELF_RANGE_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-STRONG_ONE_ELF_RANGE_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_ELF_RANGE_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_ELF_RANGE_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-ANCIENT_ONE_ELF_RANGE_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-ANCIENT_ONE_ELF_RANGE_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-STRONG_ONE_ELF_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-ANCIENT_ONE_ELF_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_ELF_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_ELF_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-STRONG_ONE_GATHERING_TOOL"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_GATHERING_TOOL"/>
+	</TRADER-WOODLAND_KIN_LARGE>
+	<TRADER-WOODLAND_KIN_LARGE_FRIENDLY>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeFriendlyBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_WOOD"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_WOOD"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ANCIENT_WOOD"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_HIGH_RANDOM_WOOD"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_HIGH_RANDOM_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_MYTHICAL_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_HORDE_HERBS"/>
+		<TradeableItems Value="ITEM_CARGO-STRONG_ONE_ELF_RANGE_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-STRONG_ONE_ELF_RANGE_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_ELF_RANGE_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_ELF_RANGE_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-ANCIENT_ONE_ELF_RANGE_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-ANCIENT_ONE_ELF_RANGE_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-STRONG_ONE_ELF_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-ANCIENT_ONE_ELF_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_ELF_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_ELF_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-STRONG_ONE_GATHERING_TOOL"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_GATHERING_TOOL"/>
+	</TRADER-WOODLAND_KIN_LARGE_FRIENDLY>
+	
+	
+	
+	<TRADER-SHADOW_KIN_SMALL>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeShadowKinBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_RANDOM_ITEMS"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_GRANITE"/>
+		<TradeableItems Value="ITEM_CARGO-STRONG_ONE_JEWELLERY"/>
+		<TradeableItems Value="ITEM_CARGO-STRONG_ONE_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-STRONG_ONE_MELEE_WEAPON"/>
+	</TRADER-SHADOW_KIN_SMALL>
+	<TRADER-SHADOW_KIN_SMALL_FRIENDLY>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeShadowKinFriendlyBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_RANDOM_ITEMS"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_GRANITE"/>
+		<TradeableItems Value="ITEM_CARGO-STRONG_ONE_JEWELLERY"/>
+		<TradeableItems Value="ITEM_CARGO-STRONG_ONE_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-STRONG_ONE_MELEE_WEAPON"/>
+	</TRADER-SHADOW_KIN_SMALL_FRIENDLY>
+	<TRADER-SHADOW_KIN>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeShadowKinBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_RANDOM_ITEMS"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_GRANITE"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_GRANITE"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_JEWELLERY"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-STRONG_FEW_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-STRONG_ONE_MELEE_WEAPON"/>
+	</TRADER-SHADOW_KIN>
+	<TRADER-SHADOW_KIN_FRIENDLY>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeShadowKinFriendlyBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_RANDOM_ITEMS"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_GRANITE"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_GRANITE"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_JEWELLERY"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-STRONG_FEW_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-STRONG_ONE_MELEE_WEAPON"/>
+	</TRADER-SHADOW_KIN_FRIENDLY>
+	<TRADER-SHADOW_KIN_LARGE>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeShadowKinBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_RANDOM_ITEMS"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_GRANITE"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_GRANITE"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_GRANITE"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_JEWELLERY"/>
+		<TradeableItems Value="ITEM_CARGO-ANCIENT_ONE_JEWELLERY"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_FEW_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-ANCIENT_FEW_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-STRONG_FEW_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-STRONG_FEW_MELEE_WEAPON"/>
+	</TRADER-SHADOW_KIN_LARGE>
+	<TRADER-SHADOW_KIN_LARGE_FRIENDLY>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeShadowKinFriendlyBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_RANDOM_ITEMS"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_GRANITE"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_GRANITE"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_GRANITE"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_JEWELLERY"/>
+		<TradeableItems Value="ITEM_CARGO-ANCIENT_ONE_JEWELLERY"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_FEW_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-ANCIENT_FEW_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-STRONG_FEW_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-STRONG_FEW_MELEE_WEAPON"/>
+	</TRADER-SHADOW_KIN_LARGE_FRIENDLY>
+	
+	
+	
+	<TRADER-EARTHBOUND_SMALL>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeEarthboundBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_HIGH_RANDOM_STONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_STONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_STONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_HIGH_RANDOM_METAL"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_METAL"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_METAL"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_ONE_DWARF_ARMOUR"/>
+	    <TradeableItems Value="ITEM_CARGO-ADV_ONE_DWARF_MELEE_WEAPON"/>
+	</TRADER-EARTHBOUND_SMALL>
+	<TRADER-EARTHBOUND_SMALL_FRIENDLY>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeEarthboundFriendlyBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_RANDOM_ITEMS"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_HIGH_RANDOM_STONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_STONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_STONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_HIGH_RANDOM_METAL"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_METAL"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_METAL"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_ONE_DWARF_ARMOUR"/>
+	    <TradeableItems Value="ITEM_CARGO-ADV_ONE_DWARF_MELEE_WEAPON"/>
+	</TRADER-EARTHBOUND_SMALL_FRIENDLY>
+	<TRADER-EARTHBOUND>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeEarthboundBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_HIGH_RANDOM_STONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_STONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_OBSIDIAN"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_HIGH_RANDOM_METAL"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_METAL"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_MITHRILL"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_DWARF_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_DWARF_ARMOUR"/>
+	    <TradeableItems Value="ITEM_CARGO-ADV_FEW_DWARF_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_DWARF_MELEE_WEAPON"/>
+	</TRADER-EARTHBOUND>
+	<TRADER-EARTHBOUND_FRIENDLY>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeEarthboundFriendlyBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_HIGH_RANDOM_STONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_STONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_OBSIDIAN"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_HIGH_RANDOM_METAL"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_METAL"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_MITHRILL"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_DWARF_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_DWARF_ARMOUR"/>
+	    <TradeableItems Value="ITEM_CARGO-ADV_FEW_DWARF_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_DWARF_MELEE_WEAPON"/>
+	</TRADER-EARTHBOUND_FRIENDLY>
+	<TRADER-EARTHBOUND_LARGE>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeEarthboundBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_HIGH_RANDOM_STONE"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_ADV_STONE"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_OBSIDIAN"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_HIGH_RANDOM_METAL"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_ADV_METAL"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_MITHRILL"/>
+	    <TradeableItems Value="ITEM_CARGO-ADV_FEW_DWARF_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_DWARF_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_DWARF_MELEE_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_DWARF_MELEE_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_DWARF_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_DWARF_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_DWARF_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_DWARF_ARMOUR"/>
+	</TRADER-EARTHBOUND_LARGE>
+	<TRADER-EARTHBOUND_LARGE_FRIENDLY>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeEarthboundFriendlyBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_HIGH_RANDOM_STONE"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_ADV_STONE"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_OBSIDIAN"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_HIGH_RANDOM_METAL"/>
+	    <TradeableItems Value="ITEM_CARGO-ADV_FEW_DWARF_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_DWARF_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_DWARF_MELEE_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_DWARF_MELEE_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_DWARF_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_DWARF_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_DWARF_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_DWARF_ARMOUR"/>
+	</TRADER-EARTHBOUND_LARGE_FRIENDLY>
+	
+	
+	
+	<!--<TRADER-SMALL_BANISHED>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeEarthboundBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_HIGH_RANDOM_STONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_STONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_STONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_HIGH_RANDOM_GEMSTONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_GEMSTONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_GEMSTONE"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_DWARF_WEAPON"/>
+	</TRADER-SMALL_BANISHED>
+	<TRADER-SMALL_BANISHED_FRIENDLY>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeEarthboundFriendlyBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_HIGH_RANDOM_STONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_STONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_STONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_HIGH_RANDOM_GEMSTONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_GEMSTONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_GEMSTONE"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_DWARF_WEAPON"/>
+	</TRADER-SMALL_BANISHED_FRIENDLY>
+	<TRADER-BANISHED>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeEarthboundBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_HIGH_RANDOM_STONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_STONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_OBSIDIAN"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_HIGH_RANDOM_GEMSTONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_GEMSTONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_DIAMOND"/>
+	    <TradeableItems Value="ITEM_CARGO-ADV_FEW_DWARF_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_DWARF_MELEE_WEAPON"/>
+	    <TradeableItems Value="ITEM_CARGO-ADV_FEW_DWARF_WEAPON"/>
+	</TRADER-BANISHED>
+	<TRADER-BANISHED_FRIENDLY>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeEarthboundFriendlyBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_HIGH_RANDOM_STONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_STONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_OBSIDIAN"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_HIGH_RANDOM_GEMSTONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_GEMSTONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_DIAMOND"/>
+	    <TradeableItems Value="ITEM_CARGO-ADV_FEW_DWARF_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_DWARF_MELEE_WEAPON"/>
+	    <TradeableItems Value="ITEM_CARGO-ADV_FEW_DWARF_WEAPON"/>
+	</TRADER-BANISHED_FRIENDLY>
+	<TRADER-BANISHED_LARGE>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeEarthboundBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_HIGH_RANDOM_STONE"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_ADV_STONE"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_OBSIDIAN"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_HIGH_RANDOM_GEMSTONE"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_ADV_GEMSTONE"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_DIAMOND"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_ONE_MEDIUM_ARMOUR"/>
+	    <TradeableItems Value="ITEM_CARGO-ADV_FEW_DWARF_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_DWARF_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_DWARF_MELEE_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_DWARF_MELEE_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_DWARF_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_DWARF_ARMOUR"/>
+	</TRADER-BANISHED_LARGE>
+	<TRADER-BANISHED_LARGE_FRIENDLY>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeEarthboundFriendlyBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_RANDOM_ITEMS"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_HIGH_RANDOM_STONE"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_ADV_STONE"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_OBSIDIAN"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_HIGH_RANDOM_GEMSTONE"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_ADV_GEMSTONE"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_DIAMOND"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_ONE_MEDIUM_ARMOUR"/>
+	    <TradeableItems Value="ITEM_CARGO-ADV_FEW_DWARF_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_DWARF_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_DWARF_MELEE_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_DWARF_MELEE_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_DWARF_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_DWARF_ARMOUR"/>
+	</TRADER-BANISHED_LARGE_FRIENDLY>-->
+	
+	
+	<TRADER-ALPHA_CLANS_SMALL>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeAlphaClansBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_HIGH_RANDOM_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_HIGH_RANDOM_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_ONE_ORC_ARMOUR"/>
+	    <TradeableItems Value="ITEM_CARGO-ADV_ONE_ORC_WEAPON"/>
+	</TRADER-ALPHA_CLANS_SMALL>
+	<TRADER-ALPHA_CLANS_SMALL_FRIENDLY>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeAlphaClansFriandlyBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_HIGH_RANDOM_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_HIGH_RANDOM_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_ONE_ORC_ARMOUR"/>
+	    <TradeableItems Value="ITEM_CARGO-ADV_ONE_ORC_WEAPON"/>
+	</TRADER-ALPHA_CLANS_SMALL_FRIENDLY>
+	<TRADER-ALPHA_CLANS>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeAlphaClansBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_HIGH_RANDOM_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_DRAGON_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_HIGH_RANDOM_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_MYTHICAL_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_ORC_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_ORC_WEAPON"/>
+	    <TradeableItems Value="ITEM_CARGO-RARE_ONE_ORC_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_ORC_ARMOUR"/>
+	</TRADER-ALPHA_CLANS>
+	<TRADER-ALPHA_CLANS_FRIENDLY>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeAlphaClansFriandlyBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_HIGH_RANDOM_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_DRAGON_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_HIGH_RANDOM_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_MYTHICAL_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_ORC_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_ORC_WEAPON"/>
+	    <TradeableItems Value="ITEM_CARGO-RARE_ONE_ORC_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_ORC_ARMOUR"/>
+	</TRADER-ALPHA_CLANS_FRIENDLY>
+	<TRADER-ALPHA_CLANS_LARGE>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeAlphaClansBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_HIGH_RANDOM_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_ADV_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_DRAGON_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_HIGH_RANDOM_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_ADV_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_MYTHICAL_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_ORC_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_ORC_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_ORC_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_ORC_WEAPON"/>
+	    <TradeableItems Value="ITEM_CARGO-RARE_ONE_ORC_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_ORC_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_ORC_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_ORC_ARMOUR"/>
+	</TRADER-ALPHA_CLANS_LARGE>
+	<TRADER-ALPHA_CLANS_LARGE_FRIENDLY>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeAlphaClansFriandlyBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_HIGH_RANDOM_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_ADV_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_DRAGON_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_HIGH_RANDOM_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_ADV_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_MYTHICAL_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_ORC_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_ORC_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_ORC_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_ORC_WEAPON"/>
+	    <TradeableItems Value="ITEM_CARGO-RARE_ONE_ORC_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_ORC_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_ORC_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_ORC_ARMOUR"/>
+	</TRADER-ALPHA_CLANS_LARGE_FRIENDLY>
+	
+	
+	
+	<!--<TRADER-CLANLESS_SMALL>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeClanlessBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_ONE_ORC_ARMOUR"/>
+	    <TradeableItems Value="ITEM_CARGO-ADV_ONE_ORC_WEAPON"/>
+	</TRADER-CLANLESS_SMALL>
+	<TRADER-CLANLESS_SMALL_FRIENDLY>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeClanlessFriendlyBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_ONE_ORC_ARMOUR"/>
+	    <TradeableItems Value="ITEM_CARGO-ADV_ONE_ORC_WEAPON"/>
+	</TRADER-CLANLESS_SMALL_FRIENDLY>
+	<TRADER-CLANLESS>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeClanlessBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_HIGH_RANDOM_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_HIGH_RANDOM_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_ORC_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_ORC_ARMOUR"/>
+	</TRADER-CLANLESS>
+	<TRADER-CLANLESS_FRIENDLY>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeClanlessFriendlyBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_HIGH_RANDOM_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_HIGH_RANDOM_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_ORC_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_ORC_ARMOUR"/>
+	</TRADER-CLANLESS_FRIENDLY>
+	<TRADER-CLANLESS_LARGE>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeClanlessBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_HIGH_RANDOM_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_ADV_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_ADV_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_HIGH_RANDOM_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_ADV_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_ADV_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_ORC_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_ORC_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_ORC_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_ORC_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_ORC_ARMOUR"/>
+	</TRADER-CLANLESS_LARGE>
+	<TRADER-CLANLESS_LARGE_FRIENDLY>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeClanlessFriendlyBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_HIGH_RANDOM_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_ADV_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_ADV_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_HIGH_RANDOM_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_ADV_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_ADV_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_ORC_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_ORC_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_ORC_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_ORC_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_ORC_ARMOUR"/>
+	</TRADER-CLANLESS_LARGE_FRIENDLY>-->
+	
+	
+	
+	<!--<TRADER-TINKERERS_SMALL>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeTinkerersBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_RANDOM_ITEMS"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_METAL"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_METAL"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_METAL"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_AMBER"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_GEMSTONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_GEMSTONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_GEMSTONE"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_ONE_WEAPON"/>
+	</TRADER-TINKERERS_SMALL>
+	<TRADER-TINKERERS_SMALL_FRIENDLY>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeTinkerersFriendlyBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_RANDOM_ITEMS"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_METAL"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_METAL"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_METAL"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_AMBER"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_GEMSTONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_GEMSTONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_GEMSTONE"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_ONE_WEAPON"/>
+	</TRADER-TINKERERS_SMALL_FRIENDLY>
+	<TRADER-TINKERERS>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeTinkerersBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_RANDOM_ITEMS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_RANDOM_ITEMS"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_HIGH_RANDOM_METAL"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_METAL"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_METAL"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_AMBER"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_HIGH_RANDOM_GEMSTONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_GEMSTONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_GEMSTONE"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_ONE_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_WEAPON"/>
+	</TRADER-TINKERERS>
+	<TRADER-TINKERERS_FRIENDLY>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeTinkerersFriendlyBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_RANDOM_ITEMS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_RANDOM_ITEMS"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_HIGH_RANDOM_METAL"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_METAL"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_METAL"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_AMBER"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_HIGH_RANDOM_GEMSTONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_GEMSTONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_GEMSTONE"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_ONE_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_WEAPON"/>
+	</TRADER-TINKERERS_FRIENDLY>
+	<TRADER-TINKERERS_LARGE>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeTinkerersBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_RANDOM_ITEMS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_RANDOM_ITEMS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_RANDOM_ITEMS"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_HIGH_RANDOM_METAL"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_ADV_METAL"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_ADV_METAL"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_AMBER"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_AMBER"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_HIGH_RANDOM_GEMSTONE"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_ADV_GEMSTONE"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_ADV_GEMSTONE"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_WEAPON"/>
+	</TRADER-TINKERERS_LARGE>
+	<TRADER-TINKERERS_LARGE_FRIENDLY>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeTinkerersFriendlyBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_RANDOM_ITEMS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_RANDOM_ITEMS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_RANDOM_ITEMS"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_HIGH_RANDOM_METAL"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_ADV_METAL"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_ADV_METAL"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_AMBER"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_AMBER"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_HIGH_RANDOM_GEMSTONE"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_ADV_GEMSTONE"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_ADV_GEMSTONE"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_WEAPON"/>
+	</TRADER-TINKERERS_LARGE_FRIENDLY>-->
+	
+	
+	
+	<TRADER-SPIRIT_TALKERS_SMALL>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeSpiritTalkersBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_RANDOM_ITEMS"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_WOOD"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_WOOD"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_LOTS_FOOD"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_PACK_HERBS"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_ONE_TOOL"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_ONE_TOOL"/>
+	</TRADER-SPIRIT_TALKERS_SMALL>
+	<TRADER-SPIRIT_TALKERS_SMALL_FRIENDLY>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeSpiritTalkersFriendlyBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_RANDOM_ITEMS"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_WOOD"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_WOOD"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_LOTS_FOOD"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_PACK_HERBS"/>
+	</TRADER-SPIRIT_TALKERS_SMALL_FRIENDLY>
+	<TRADER-SPIRIT_TALKERS>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeSpiritTalkersBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_RANDOM_ITEMS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_RANDOM_ITEMS"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_HIGH_RANDOM_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_HIGH_RANDOM_WOOD"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_HIGH_RANDOM_WOOD"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_WOOD"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_HIGH_RANDOM_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_LOTS_FOOD"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_LOTS_FOOD"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_LOTS_HERBS"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_ONE_TOOL"/>
+	</TRADER-SPIRIT_TALKERS>
+	<TRADER-SPIRIT_TALKERS_FRIENDLY>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeSpiritTalkersFriendlyBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_RANDOM_ITEMS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_RANDOM_ITEMS"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_HIGH_RANDOM_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_HIGH_RANDOM_WOOD"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_HIGH_RANDOM_WOOD"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_WOOD"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_HIGH_RANDOM_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_LOTS_FOOD"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_LOTS_FOOD"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_LOTS_HERBS"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_ONE_TOOL"/>
+	</TRADER-SPIRIT_TALKERS_FRIENDLY>
+	<TRADER-SPIRIT_TALKERS_LARGE>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeSpiritTalkersBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_RANDOM_ITEMS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_RANDOM_ITEMS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_RANDOM_ITEMS"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_ADV_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_HIGH_RANDOM_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_HIGH_RANDOM_WOOD"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_HIGH_RANDOM_WOOD"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_ADV_WOOD"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_HIGH_RANDOM_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_ADV_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_LOTS_FOOD"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_LOTS_FOOD"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_LOTS_FOOD"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_LOTS_HERBS"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_ADV_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_ONE_TOOL"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_ONE_TOOL"/>
+	</TRADER-SPIRIT_TALKERS_LARGE>
+	<TRADER-SPIRIT_TALKERS_LARGE_FRIENDLY>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeSpiritTalkersFriendlyBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_RANDOM_ITEMS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_RANDOM_ITEMS"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_RANDOM_ITEMS"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_ADV_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_HIGH_RANDOM_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_HIGH_RANDOM_WOOD"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_HIGH_RANDOM_WOOD"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_ADV_WOOD"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_HIGH_RANDOM_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_ADV_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_LOTS_FOOD"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_LOTS_FOOD"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_LOTS_FOOD"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_LOTS_HERBS"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_ADV_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_ONE_TOOL"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_ONE_TOOL"/>
+	</TRADER-SPIRIT_TALKERS_LARGE_FRIENDLY>
+	
+	
+	
+	<TRADER-FOREST_DEMONS_SMALL>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeForestDemonsBuying"/>
+		<SellingValueModify ScriptName="Tsv_TradeAncientWoodSelling"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_EQUIPMENT"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_LOW_RANDOM_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_LOW_RANDOM_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-FEW_ANCIENT_WOOD"/>
+		<TradeableItems Value="ITEM_CARGO-FEW_ANCIENT_WOOD"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_PACK_HERBS"/>
+	    <TradeableItems Value="ITEM_CARGO-STRONG_ONE_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_WEAPON"/>
+	</TRADER-FOREST_DEMONS_SMALL>
+	<TRADER-FOREST_DEMONS_SMALL_FRIENDLY>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeForestDemonsFriendlyBuying"/>
+		<SellingValueModify ScriptName="Tsv_TradeAncientWoodSelling"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_EQUIPMENT"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_LOW_RANDOM_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_LOW_RANDOM_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-FEW_ANCIENT_WOOD"/>
+		<TradeableItems Value="ITEM_CARGO-FEW_ANCIENT_WOOD"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_PACK_HERBS"/>
+	    <TradeableItems Value="ITEM_CARGO-STRONG_ONE_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_WEAPON"/>
+	</TRADER-FOREST_DEMONS_SMALL_FRIENDLY>
+    <TRADER-FOREST_DEMONS>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeForestDemonsBuying"/>
+		<SellingValueModify ScriptName="Tsv_TradeAncientWoodSelling"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_EQUIPMENT"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_EQUIPMENT"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_LOW_RANDOM_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_LOW_RANDOM_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-FEW_ANCIENT_WOOD"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ANCIENT_WOOD"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_LOTS_HERBS"/>
+	    <TradeableItems Value="ITEM_CARGO-STRONG_FEW_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_FEW_WEAPON"/>
+	</TRADER-FOREST_DEMONS>
+	<TRADER-FOREST_DEMONS_FRIENDLY>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeForestDemonsFriendlyBuying"/>
+		<SellingValueModify ScriptName="Tsv_TradeAncientWoodSelling"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_EQUIPMENT"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_EQUIPMENT"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_LOW_RANDOM_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_LOW_RANDOM_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-FEW_ANCIENT_WOOD"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ANCIENT_WOOD"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_LOTS_HERBS"/>
+	    <TradeableItems Value="ITEM_CARGO-STRONG_FEW_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_FEW_WEAPON"/>
+	</TRADER-FOREST_DEMONS_FRIENDLY>
+	<TRADER-FOREST_DEMONS_LARGE>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeForestDemonsBuying"/>
+		<SellingValueModify ScriptName="Tsv_TradeAncientWoodSelling"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_EQUIPMENT"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_EQUIPMENT"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_EQUIPMENT"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_ADV_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_HIGH_RANDOM_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_ADV_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_HIGH_RANDOM_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_ANCIENT_WOOD"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_HORDE_HERBS"/>
+	    <TradeableItems Value="ITEM_CARGO-STRONG_FEW_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_FEW_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-ANCIENT_ONE_WEAPON"/>
+	</TRADER-FOREST_DEMONS_LARGE>
+	<TRADER-FOREST_DEMONS_LARGE_FRIENDLY>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeForestDemonsFriendlyBuying"/>
+		<SellingValueModify ScriptName="Tsv_TradeAncientWoodSelling"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_EQUIPMENT"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_EQUIPMENT"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_FEW_EQUIPMENT"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_ADV_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_HIGH_RANDOM_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_ADV_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_HIGH_RANDOM_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_ANCIENT_WOOD"/>
+		<TradeableItems Value="ITEM_CARGO-BASIC_HORDE_HERBS"/>
+	    <TradeableItems Value="ITEM_CARGO-BASIC_FEW_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-ADV_FEW_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-ANCIENT_ONE_WEAPON"/>
+	</TRADER-FOREST_DEMONS_LARGE_FRIENDLY>
+	
+	
+	
+	<TRADER-NIGHT_DEMONS_SMALL>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeNightDemonsBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_GEMSTONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_GEMSTONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_GEMSTONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_GEMSTONE"/>
+		<TradeableItems Value="ITEM_CARGO-STRONG_ONE_JEWELLERY"/>
+		<TradeableItems Value="ITEM_CARGO-STRONG_ONE_ELF_ARMOUR"/>
+	</TRADER-NIGHT_DEMONS_SMALL>
+	<TRADER-NIGHT_DEMONS_SMALL_FRIENDLY>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeNightDemonsFriendlyBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_GEMSTONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_GEMSTONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_GEMSTONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_GEMSTONE"/>
+		<TradeableItems Value="ITEM_CARGO-STRONG_ONE_JEWELLERY"/>
+		<TradeableItems Value="ITEM_CARGO-STRONG_ONE_ELF_ARMOUR"/>
+	</TRADER-NIGHT_DEMONS_SMALL_FRIENDLY>
+	<TRADER-NIGHT_DEMONS>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeNightDemonsBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_GEMSTONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_GEMSTONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_HIGH_RANDOM_GEMSTONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_HIGH_RANDOM_GEMSTONE"/>
+		<TradeableItems Value="ITEM_CARGO-STRONG_ONE_JEWELLERY"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_JEWELLERY"/>
+		<TradeableItems Value="ITEM_CARGO-STRONG_ONE_ELF_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-STRONG_ONE_ELF_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_ELF_ARMOUR"/>
+	</TRADER-NIGHT_DEMONS>
+	<TRADER-NIGHT_DEMONS_FRIENDLY>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeNightDemonsFriendlyBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_GEMSTONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_GEMSTONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_HIGH_RANDOM_GEMSTONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_HIGH_RANDOM_GEMSTONE"/>
+		<TradeableItems Value="ITEM_CARGO-STRONG_ONE_JEWELLERY"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_JEWELLERY"/>
+		<TradeableItems Value="ITEM_CARGO-STRONG_ONE_ELF_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-STRONG_ONE_ELF_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_ELF_ARMOUR"/>
+	</TRADER-NIGHT_DEMONS_FRIENDLY>
+	<TRADER-NIGHT_DEMONS_LARGE>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeNightDemonsBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_ADV_GEMSTONE"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_ADV_GEMSTONE"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_HIGH_RANDOM_GEMSTONE"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_HIGH_RANDOM_GEMSTONE"/>
+		<TradeableItems Value="ITEM_CARGO-ANCIENT_ONE_JEWELLERY"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_JEWELLERY"/>
+		<TradeableItems Value="ITEM_CARGO-STRONG_ONE_ELF_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-STRONG_ONE_ELF_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-STRONG_ONE_ELF_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-STRONG_ONE_ELF_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_ELF_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_ELF_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-ANCIENT_ONE_ELF_ARMOUR"/>
+	</TRADER-NIGHT_DEMONS_LARGE>
+	<TRADER-NIGHT_DEMONS_LARGE_FRIENDLY>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeNightDemonsFriendlyBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_ADV_GEMSTONE"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_ADV_GEMSTONE"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_HIGH_RANDOM_GEMSTONE"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_HIGH_RANDOM_GEMSTONE"/>
+		<TradeableItems Value="ITEM_CARGO-ANCIENT_ONE_JEWELLERY"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_JEWELLERY"/>
+		<TradeableItems Value="ITEM_CARGO-STRONG_ONE_ELF_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-STRONG_ONE_ELF_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-STRONG_ONE_ELF_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-STRONG_ONE_ELF_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_ELF_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_ELF_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-ANCIENT_ONE_ELF_ARMOUR"/>
+	</TRADER-NIGHT_DEMONS_LARGE_FRIENDLY>
+	
+	
+	
+	<TRADER-WATER_DEMONS_SMALL>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeWaterDemonsBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_GOLD"/>
+		<TradeableItems Value="ITEM_CARGO-FEW_DIAMOND"/>
+		<TradeableItems Value="ITEM_CARGO-FEW_DIAMOND"/>
+		<TradeableItems Value="ITEM_CARGO-STRONG_ONE_JEWELLERY"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_MELEE_WEAPON"/>
+	</TRADER-WATER_DEMONS_SMALL>
+	<TRADER-WATER_DEMONS_SMALL_FRIENDLY>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeWaterDemonsFriendlyBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_GOLD"/>
+		<TradeableItems Value="ITEM_CARGO-FEW_DIAMOND"/>
+		<TradeableItems Value="ITEM_CARGO-FEW_DIAMOND"/>
+		<TradeableItems Value="ITEM_CARGO-STRONG_ONE_JEWELLERY"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_MELEE_WEAPON"/>
+	</TRADER-WATER_DEMONS_SMALL_FRIENDLY>
+	<TRADER-WATER_DEMONS>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeWaterDemonsBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_GOLD"/>
+		<TradeableItems Value="ITEM_CARGO-FEW_DIAMOND"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_DIAMOND"/>
+		<TradeableItems Value="ITEM_CARGO-STRONG_ONE_JEWELLERY"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_JEWELLERY"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_MELEE_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_MELEE_WEAPON"/>
+	</TRADER-WATER_DEMONS>
+	<TRADER-WATER_DEMONS_FRIENDLY>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeWaterDemonsFriendlyBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_GOLD"/>
+		<TradeableItems Value="ITEM_CARGO-FEW_DIAMOND"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_DIAMOND"/>
+		<TradeableItems Value="ITEM_CARGO-STRONG_ONE_JEWELLERY"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_JEWELLERY"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_WEAPON"/>
+	</TRADER-WATER_DEMONS_FRIENDLY>
+	<TRADER-WATER_DEMONS_LARGE>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeWaterDemonsBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_GOLD"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_GOLD"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_DIAMOND"/>
+		<TradeableItems Value="ITEM_CARGO-FEW_DIAMOND"/>
+		<TradeableItems Value="ITEM_CARGO-ANCIENT_ONE_JEWELLERY"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_JEWELLERY"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-ANCIENT_ONE_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-ANCIENT_ONE_WEAPON"/>
+	</TRADER-WATER_DEMONS_LARGE>
+	<TRADER-WATER_DEMONS_LARGE_FRIENDLY>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeWaterDemonsFriendlyBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_GOLD"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_GOLD"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_DIAMOND"/>
+		<TradeableItems Value="ITEM_CARGO-FEW_DIAMOND"/>
+		<TradeableItems Value="ITEM_CARGO-ANCIENT_ONE_JEWELLERY"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_JEWELLERY"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_WEAPON"/>
+		<TradeableItems Value="ITEM_CARGO-ANCIENT_ONE_ARMOUR"/>
+		<TradeableItems Value="ITEM_CARGO-ANCIENT_ONE_WEAPON"/>
+	</TRADER-WATER_DEMONS_LARGE_FRIENDLY>
+	
+	
+	
+	<TRADER-ICE_DEMONS_SMALL>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeIceDemonsBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_MITHRILL"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_DIAMOND"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_MITHRILL"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_DIAMOND"/>
+		<TradeableItems Value="ITEM_CARGO-STRONG_ONE_JEWELLERY"/>
+		<TradeableItems Value="ITEM_CARGO-STRONG_ONE_JEWELLERY"/>
+	</TRADER-ICE_DEMONS_SMALL>
+	<TRADER-ICE_DEMONS_SMALL_FRIENDLY>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeIceDemonsFriendlyBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_MITHRILL"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_DIAMOND"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_MITHRILL"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_DIAMOND"/>
+		<TradeableItems Value="ITEM_CARGO-STRONG_ONE_JEWELLERY"/>
+		<TradeableItems Value="ITEM_CARGO-STRONG_ONE_JEWELLERY"/>
+	</TRADER-ICE_DEMONS_SMALL_FRIENDLY>
+	<TRADER-ICE_DEMONS>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeIceDemonsBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_DIAMOND"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_MITHRILL"/>
+		<TradeableItems Value="ITEM_CARGO-FEW_MITHRILL"/>
+		<TradeableItems Value="ITEM_CARGO-FEW_DIAMOND"/>
+		<TradeableItems Value="ITEM_CARGO-STRONG_ONE_JEWELLERY"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_JEWELLERY"/>
+		<TradeableItems Value="ITEM_CARGO-STRONG_ONE_JEWELLERY"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_JEWELLERY"/>
+	</TRADER-ICE_DEMONS>
+	<TRADER-ICE_DEMONS_FRIENDLY>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeIceDemonsFriendlyBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_DIAMOND"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_MITHRILL"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_MITHRILL"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_DIAMOND"/>
+		<TradeableItems Value="ITEM_CARGO-STRONG_ONE_JEWELLERY"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_JEWELLERY"/>
+		<TradeableItems Value="ITEM_CARGO-STRONG_ONE_JEWELLERY"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_JEWELLERY"/>
+	</TRADER-ICE_DEMONS_FRIENDLY>
+	<TRADER-ICE_DEMONS_LARGE>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeIceDemonsBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_DIAMOND"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_MITHRILL"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_MITHRILL"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_DIAMOND"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_MITHRILL"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_DIAMOND"/>
+		<TradeableItems Value="ITEM_CARGO-ANCIENT_ONE_JEWELLERY"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_JEWELLERY"/>
+		<TradeableItems Value="ITEM_CARGO-ANCIENT_ONE_JEWELLERY"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_JEWELLERY"/>
+	</TRADER-ICE_DEMONS_LARGE>
+	<TRADER-ICE_DEMONS_LARGE_FRIENDLY>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeIceDemonsFriendlyBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_DIAMOND"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_MITHRILL"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_MITHRILL"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_DIAMOND"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_MITHRILL"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_DIAMOND"/>
+		<TradeableItems Value="ITEM_CARGO-ANCIENT_ONE_JEWELLERY"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_JEWELLERY"/>
+		<TradeableItems Value="ITEM_CARGO-ANCIENT_ONE_JEWELLERY"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_JEWELLERY"/>
+	</TRADER-ICE_DEMONS_LARGE_FRIENDLY>
+	<TRADER-ICE_DEMONS_CHILD>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeBuyingFor1Value"/>
+		<SellingValueModify ScriptName="Tbv_TradeFor1ValueSelling"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_DIAMOND"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_MITHRILL"/>
+		<TradeableItems Value="ITEM_CARGO-STRONG_ONE_JEWELLERY"/>
+		<TradeableItems Value="ITEM_CARGO-STRONG_ONE_JEWELLERY"/>
+		<TradeableItems Value="ITEM_CARGO-STRONG_ONE_JEWELLERY"/>
+		<TradeableItems Value="ITEM_CARGO-STRONG_ONE_JEWELLERY"/>
+		<TradeableItems Value="ITEM_CARGO-STRONG_ONE_JEWELLERY"/>
+		<TradeableItems Value="ITEM_CARGO-STRONG_ONE_JEWELLERY"/>
+		<TradeableItems Value="ITEM_CARGO-ANCIENT_ONE_JEWELLERY"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_JEWELLERY"/>
+		<TradeableItems Value="ITEM_CARGO-ANCIENT_ONE_JEWELLERY"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_JEWELLERY"/>
+		<TradeableItems Value="ITEM_CARGO-ANCIENT_ONE_JEWELLERY"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_JEWELLERY"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_ONE_JEWELLERY"/>
+	</TRADER-ICE_DEMONS_CHILD>
+	
+	
+	
+	<TRADER-BEASTS_SMALL>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeBeastBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_LEATHER"/>
+	</TRADER-BEASTS_SMALL>
+	<TRADER-BEASTS_SMALL_FRIENDLY>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeBeastFriendlyBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_ADV_LEATHER"/>
+	</TRADER-BEASTS_SMALL_FRIENDLY>
+	<TRADER-BEASTS>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeBeastBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_ADV_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_ADV_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_HIGH_RANDOM_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_HIGH_RANDOM_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_HIGH_RANDOM_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_HIGH_RANDOM_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_ADV_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_ADV_LEATHER"/>
+	</TRADER-BEASTS>
+	<TRADER-BEASTS_FRIENDLY>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeBeastFriendlyBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_ADV_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_ADV_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_HIGH_RANDOM_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_HIGH_RANDOM_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_HIGH_RANDOM_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_HIGH_RANDOM_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_ADV_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_ADV_LEATHER"/>
+	</TRADER-BEASTS_FRIENDLY>
+	<TRADER-BEASTS_LARGE>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeBeastBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_ADV_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_ADV_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_HIGH_RANDOM_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_HIGH_RANDOM_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_HIGH_RANDOM_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_HIGH_RANDOM_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_HIGH_RANDOM_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_HIGH_RANDOM_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_HIGH_RANDOM_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_HIGH_RANDOM_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_ADV_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_ADV_LEATHER"/>
+	</TRADER-BEASTS_LARGE>
+	<TRADER-BEASTS_LARGE_FRIENDLY>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeBeastFriendlyBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_ADV_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_ADV_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_HIGH_RANDOM_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_HIGH_RANDOM_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_HIGH_RANDOM_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_HIGH_RANDOM_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_HIGH_RANDOM_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_HIGH_RANDOM_BONE"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_HIGH_RANDOM_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_HIGH_RANDOM_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_ADV_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_ADV_LEATHER"/>
+	</TRADER-BEASTS_LARGE_FRIENDLY>
+	
+	<TRADER-Q_TRADER>
+		<CancelLock Value="FALSE"/>
+        <BuingValueModify ScriptName="Tbv_TradeDefaultBuying"/>
+		<SellingValueModify ScriptName="Tsv_Trade2XSelling"/>
+		<TradeableItems Value="ITEM_CARGO-PACK_HIGH_RANDOM_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_ADV_LEATHER"/>
+		<TradeableItems Value="ITEM_CARGO-HORDE_ADV_LEATHER"/>
+	    <TradeableItems Value="ITEM_CARGO-ADV_FEW_ROBE"/>
+		<TradeableItems Value="ITEM_CARGO-STRONG_FEW_ROBE"/>
+		<TradeableItems Value="ITEM_CARGO-RARE_FEW_ROBE"/>
+	</TRADER-Q_TRADER>
+	
+	
+	
+	
+	
+</TRADER_PROFILE>
+	

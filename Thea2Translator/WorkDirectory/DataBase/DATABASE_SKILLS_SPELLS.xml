@@ -1,0 +1,36 @@
+﻿<SKILLS_SPELLS>
+
+	<SKILL-LIGHTNING_SPELL Rarity="0">
+		<DescriptionInfo Name="DES_PLACEHOLDER" Description="DES_PLACEHOLDER_DES" IconName="SkillLightningSpell"/>
+		<BaseEssence Amount="12" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-LIGHTNING_SPELL"/>
+		<SkillGroupFilter Value="Spell"/>
+		<SkillGroupFilter Value="Attack"/>	
+	</SKILL-LIGHTNING_SPELL>
+
+	<!-- SUMMONS-->
+	<SKILL-SUMMON_DEMON_SPELL Rarity="40">
+		<DescriptionInfo Name="DES_PLACEHOLDER" Description="DES_PLACEHOLDER_DES" IconName="SkillSummonDemon"/>
+		<BaseEssence Amount="25" Tag="TAG-ESSENCE_GEM"/>
+		<SkillSubskill Value="SUBSKILL-SUMMON_DEMON_SPELL"/>
+		<SkillGroupFilter Value="Spell"/>
+		<SkillGroupFilter Value="SummonSpell"/>
+		<SkillGroupFilter Value="SummonDeamonSpell"/>
+	</SKILL-SUMMON_DEMON_SPELL>
+	<SKILL-SUMMON_UNLIVING_SPELL Rarity="25">
+		<DescriptionInfo Name="DES_PLACEHOLDER" Description="DES_PLACEHOLDER_DES" IconName="SkillSummonUnliving"/>
+		<BaseEssence Amount="17" Tag="TAG-ESSENCE_BONE"/>
+		<SkillSubskill Value="SUBSKILL-SUMMON_UNLIVING_SPELL"/>
+		<SkillGroupFilter Value="Spell"/>
+		<SkillGroupFilter Value="SummonSpell"/>
+		<SkillGroupFilter Value="SummonUnlivingSpell"/>
+	</SKILL-SUMMON_UNLIVING_SPELL>
+	<SKILL-SUMMON_WILD_BEAST_SPELL Rarity="10"> 
+		<DescriptionInfo Name="DES_PLACEHOLDER" Description="DES_PLACEHOLDER_DES" IconName="SkillSummonWildBeast"/>
+		<BaseEssence Amount="17" Tag="TAG-ESSENCE_LEATHER"/>
+		<SkillSubskill Value="SUBSKILL-SUMMON_WILD_BEAST_SPELL"/>
+		<SkillGroupFilter Value="Spell"/>
+		<SkillGroupFilter Value="SummonSpell"/>
+		<SkillGroupFilter Value="SummonBeastSpell"/>
+	</SKILL-SUMMON_WILD_BEAST_SPELL>
+</SKILLS_SPELLS>

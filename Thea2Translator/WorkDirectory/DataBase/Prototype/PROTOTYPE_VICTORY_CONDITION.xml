@@ -1,0 +1,11 @@
+﻿<PROTOTYPE_VICTORY_CONDITION>
+	
+	<!-- how do you achieve a given victory condition  -->
+	<VICTORY_CONDITION Name="VictoryCondition" Abbreviation="VICTORY">
+		<!-- victory description  -->
+		<DescriptionInfo Name="descriptionInfo" Type="DESCRIPTION_INFO" Required="TRUE"/>
+		<!-- tags checked during the game that unlock the victory point-->
+		<TagCorrectnes Name="tagsCorrectness" Type="ArrayCONFORMANCE_TAG_COUNT" Required="TRUE"/>
+	</VICTORY_CONDITION>
+
+</PROTOTYPE_VICTORY_CONDITION>

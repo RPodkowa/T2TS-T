@@ -1,0 +1,328 @@
+﻿<SUBSKILLS_CHALLANGES>
+
+	<!-- DEFENCE PASSIVE -->
+	<SUBSKILL-EXTRA_SHIELDING Delay="0.0" Animation="Hit15" Sound="SubskillAddAttribute">
+		<DescriptionInfo Name="DES_SUBSKILL_ADD_EXTRA_SHIELDING_SELF" Description="DES_SUBSKILL_ADD_EXTRA_SHIELDING_SELF_DES" IconName="SubskillAddAttribute"/>
+		<ShortInfo TriggerIcon="TAG-TRIGGER_PASSIVE" DamageIcon="TAG-DAMAGE_SHIELD" TargetIcon="TAG-TARGET_SELF" AttackInfo="{SCRIPT:SI_DefaultAttributeTrioChange}"/>
+		<Trigger Priority="0" RequiredToBeInFrontline="FALSE" RequiredToBeInBackline="FALSE">
+			<TriggerGroup Value="Passive"/>
+			<TriggerScript ScriptName=""/>
+		</Trigger>
+		<Targets>
+			<TargetScript ScriptName="Trg_Self"/>
+			<TargetCountRange MinimumCount="1" MaximumCount="1" TargetIndication="Random"/>
+		</Targets>
+		<Activation ScriptName="WAct_AttributeChange"/>
+		<ChallengeType Value="TypePhysical"/>
+		<ChallengeType Value="TypeMental"/>
+		<ChallengeType Value="TypeSpirit"/>
+		<SubskillAttributesOnLevel Level="0" PowerLevel="0.0">
+			<SubskillAttribute Identifier="TAG-SHIELDING_PHYSICAL" AttributeStringValue="+" AttributeFloatValue="0.0"/>
+			<SubskillAttribute Identifier="TAG-SHIELDING_MENTAL" AttributeStringValue="+" AttributeFloatValue="0.0"/>
+			<SubskillAttribute Identifier="TAG-SHIELDING_SPIRIT" AttributeStringValue="+" AttributeFloatValue="0.0"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="1" PowerLevel="0.0">
+			<SubskillAttribute Identifier="TAG-SHIELDING_PHYSICAL" AttributeStringValue="+" AttributeFloatValue="2.0"/>
+			<SubskillAttribute Identifier="TAG-SHIELDING_MENTAL" AttributeStringValue="+" AttributeFloatValue="2.0"/>
+			<SubskillAttribute Identifier="TAG-SHIELDING_SPIRIT" AttributeStringValue="+" AttributeFloatValue="2.0"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="2" PowerLevel="4.0">
+			<SubskillAttribute Identifier="TAG-SHIELDING_PHYSICAL" AttributeStringValue="+" AttributeFloatValue="4.0"/>
+			<SubskillAttribute Identifier="TAG-SHIELDING_MENTAL" AttributeStringValue="+" AttributeFloatValue="4.0"/>
+			<SubskillAttribute Identifier="TAG-SHIELDING_SPIRIT" AttributeStringValue="+" AttributeFloatValue="4.0"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="3" PowerLevel="14.0">
+			<SubskillAttribute Identifier="TAG-SHIELDING_PHYSICAL" AttributeStringValue="+" AttributeFloatValue="7.0"/>
+			<SubskillAttribute Identifier="TAG-SHIELDING_MENTAL" AttributeStringValue="+" AttributeFloatValue="7.0"/>
+			<SubskillAttribute Identifier="TAG-SHIELDING_SPIRIT" AttributeStringValue="+" AttributeFloatValue="7.0"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="4" PowerLevel="29.0">
+			<SubskillAttribute Identifier="TAG-SHIELDING_PHYSICAL" AttributeStringValue="+" AttributeFloatValue="11.0"/>
+			<SubskillAttribute Identifier="TAG-SHIELDING_MENTAL" AttributeStringValue="+" AttributeFloatValue="11.0"/>
+			<SubskillAttribute Identifier="TAG-SHIELDING_SPIRIT" AttributeStringValue="+" AttributeFloatValue="11.0"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="5" PowerLevel="59.0">
+			<SubskillAttribute Identifier="TAG-SHIELDING_PHYSICAL" AttributeStringValue="+" AttributeFloatValue="16.0"/>
+			<SubskillAttribute Identifier="TAG-SHIELDING_MENTAL" AttributeStringValue="+" AttributeFloatValue="16.0"/>
+			<SubskillAttribute Identifier="TAG-SHIELDING_SPIRIT" AttributeStringValue="+" AttributeFloatValue="16.0"/>
+		</SubskillAttributesOnLevel>
+	</SUBSKILL-EXTRA_SHIELDING>
+	<SUBSKILL-ADD_SHIELDING_VLIGHT_P Delay="0.0" Animation="Hit15" Sound="SubskillAddAttribute">
+		<DescriptionInfo Name="DES_SUBSKILL_ADD_SHIELDING_VLIGHT_P" Description="DES_SUBSKILL_ADD_SHIELDING_VLIGHT_P_DES" IconName="SubskillAddAttribute"/>
+		<ShortInfo TriggerIcon="TAG-TRIGGER_PASSIVE" DamageIcon="TAG-DAMAGE_SHIELD_P" TargetIcon="TAG-TARGET_SELF" AttackInfo="{SCRIPT:SI_DefaultAttributeChange}"/>
+		<Trigger Priority="0" RequiredToBeInFrontline="FALSE" RequiredToBeInBackline="FALSE">
+			<TriggerGroup Value="Passive"/>
+			<TriggerScript ScriptName=""/>
+		</Trigger>
+		<Targets>
+			<TargetScript ScriptName="Trg_Self"/>
+			<TargetCountRange MinimumCount="1" MaximumCount="1" TargetIndication="Random"/>
+		</Targets>
+		<Activation ScriptName="WAct_AttributeChange"/>
+		<ChallengeType Value="TypePhysical"/>
+		<SubskillAttributesOnLevel Level="0" PowerLevel="0.0">
+			<SubskillAttribute Identifier="TAG-SHIELDING_PHYSICAL" AttributeStringValue="+" AttributeFloatValue="0.0"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="1" PowerLevel="0.0">
+			<SubskillAttribute Identifier="TAG-SHIELDING_PHYSICAL" AttributeStringValue="+" AttributeFloatValue="1.0"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="2" PowerLevel="4.0">
+			<SubskillAttribute Identifier="TAG-SHIELDING_PHYSICAL" AttributeStringValue="+" AttributeFloatValue="3.0"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="3" PowerLevel="14.0">
+			<SubskillAttribute Identifier="TAG-SHIELDING_PHYSICAL" AttributeStringValue="+" AttributeFloatValue="5.0"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="4" PowerLevel="29.0">
+			<SubskillAttribute Identifier="TAG-SHIELDING_PHYSICAL" AttributeStringValue="+" AttributeFloatValue="7.0"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="5" PowerLevel="59.0">
+			<SubskillAttribute Identifier="TAG-SHIELDING_PHYSICAL" AttributeStringValue="+" AttributeFloatValue="10.0"/>
+		</SubskillAttributesOnLevel>
+	</SUBSKILL-ADD_SHIELDING_VLIGHT_P>
+	<SUBSKILL-ADD_SHIELDING_MEDIUM_P Delay="0.0" Animation="Hit15" Sound="">
+		<DescriptionInfo Name="DES_SUBSKILL_ADD_SHIELDING_MEDIUM_P" Description="DES_SUBSKILL_ADD_SHIELDING_MEDIUM_P_DES" IconName="SubskillAddAttribute"/>
+		<ShortInfo TriggerIcon="TAG-TRIGGER_PASSIVE" DamageIcon="TAG-DAMAGE_SHIELD_P" TargetIcon="TAG-TARGET_SELF" AttackInfo="{SCRIPT:SI_DefaultAttributeChange}"/>
+		<Trigger Priority="0" RequiredToBeInFrontline="FALSE" RequiredToBeInBackline="FALSE">
+			<TriggerGroup Value="Passive"/>
+			<TriggerScript ScriptName=""/>
+		</Trigger>
+		<Targets>
+			<TargetScript ScriptName="Trg_Self"/>
+			<TargetCountRange MinimumCount="1" MaximumCount="1" TargetIndication="Random"/>
+		</Targets>
+		<Activation ScriptName="WAct_AttributeChange"/>
+		<ChallengeType Value="TypePhysical"/>
+		<SubskillAttributesOnLevel Level="0" PowerLevel="0.0">
+			<SubskillAttribute Identifier="TAG-SHIELDING_PHYSICAL" AttributeStringValue="+" AttributeFloatValue="0.0"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="1" PowerLevel="0.0">
+			<SubskillAttribute Identifier="TAG-SHIELDING_PHYSICAL" AttributeStringValue="+" AttributeFloatValue="5.0"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="2" PowerLevel="4.0">
+			<SubskillAttribute Identifier="TAG-SHIELDING_PHYSICAL" AttributeStringValue="+" AttributeFloatValue="11.0"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="3" PowerLevel="14.0">
+			<SubskillAttribute Identifier="TAG-SHIELDING_PHYSICAL" AttributeStringValue="+" AttributeFloatValue="16.0"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="4" PowerLevel="29.0">
+			<SubskillAttribute Identifier="TAG-SHIELDING_PHYSICAL" AttributeStringValue="+" AttributeFloatValue="22.0"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="5" PowerLevel="59.0">
+			<SubskillAttribute Identifier="TAG-SHIELDING_PHYSICAL" AttributeStringValue="+" AttributeFloatValue="30.0"/>
+		</SubskillAttributesOnLevel>
+	</SUBSKILL-ADD_SHIELDING_MEDIUM_P>
+	<SUBSKILL-ADD_SHIELDING_MEDIUM_S Delay="0.0" Animation="Hit15" Sound="">
+		<DescriptionInfo Name="DES_SUBSKILL_ADD_SHIELDING_MEDIUM_S" Description="DES_SUBSKILL_ADD_SHIELDING_MEDIUM_S_DES" IconName="SubskillAddAttribute"/>
+		<ShortInfo TriggerIcon="TAG-TRIGGER_PASSIVE" DamageIcon="TAG-DAMAGE_SHIELD_S" TargetIcon="TAG-TARGET_SELF" AttackInfo="{SCRIPT:SI_DefaultAttributeChange}"/>
+		<Trigger Priority="0" RequiredToBeInFrontline="FALSE" RequiredToBeInBackline="FALSE">
+			<TriggerGroup Value="Passive"/>
+			<TriggerScript ScriptName=""/>
+		</Trigger>
+		<Targets>
+			<TargetScript ScriptName="Trg_Self"/>
+			<TargetCountRange MinimumCount="1" MaximumCount="1" TargetIndication="Random"/>
+		</Targets>
+		<Activation ScriptName="WAct_AttributeChange"/>
+		<ChallengeType Value="TypeSpirit"/>
+		<SubskillAttributesOnLevel Level="0" PowerLevel="0.0">
+			<SubskillAttribute Identifier="TAG-SHIELDING_SPIRIT" AttributeStringValue="+" AttributeFloatValue="0.0"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="1" PowerLevel="0.0">
+			<SubskillAttribute Identifier="TAG-SHIELDING_SPIRIT" AttributeStringValue="+" AttributeFloatValue="5.0"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="2" PowerLevel="4.0">
+			<SubskillAttribute Identifier="TAG-SHIELDING_SPIRIT" AttributeStringValue="+" AttributeFloatValue="11.0"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="3" PowerLevel="14.0">
+			<SubskillAttribute Identifier="TAG-SHIELDING_SPIRIT" AttributeStringValue="+" AttributeFloatValue="16.0"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="4" PowerLevel="29.0">
+			<SubskillAttribute Identifier="TAG-SHIELDING_SPIRIT" AttributeStringValue="+" AttributeFloatValue="22.0"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="5" PowerLevel="59.0">
+			<SubskillAttribute Identifier="TAG-SHIELDING_SPIRIT" AttributeStringValue="+" AttributeFloatValue="30.0"/>
+		</SubskillAttributesOnLevel>
+	</SUBSKILL-ADD_SHIELDING_MEDIUM_S>
+	<SUBSKILL-ADD_SHIELDING_LIGHT Delay="0.0" Animation="Hit15" Sound="SubskillAddAttribute">
+		<DescriptionInfo Name="DES_SUBSKILL_ADD_SHIELDING_LIGHT" Description="DES_SUBSKILL_ADD_SHIELDING_LIGHT_DES" IconName="SubskillAddAttribute"/>
+		<ShortInfo TriggerIcon="TAG-TRIGGER_PASSIVE" DamageIcon="TAG-DAMAGE_SHIELD" TargetIcon="TAG-TARGET_SELF" AttackInfo="{SCRIPT:SI_DefaultAttributeTrioChange}"/>
+		<Trigger Priority="0" RequiredToBeInFrontline="FALSE" RequiredToBeInBackline="FALSE">
+			<TriggerGroup Value="Passive"/>
+			<TriggerScript ScriptName=""/>
+		</Trigger>
+		<Targets>
+			<TargetScript ScriptName="Trg_Self"/>
+			<TargetCountRange MinimumCount="1" MaximumCount="1" TargetIndication="Random"/>
+		</Targets>
+		<Activation ScriptName="WAct_AttributeChange"/>
+		<ChallengeType Value="TypePhysical"/>
+		<ChallengeType Value="TypeMental"/>
+		<ChallengeType Value="TypeSpirit"/>
+		<SubskillAttributesOnLevel Level="0" PowerLevel="0.0">
+			<SubskillAttribute Identifier="TAG-SHIELDING_PHYSICAL" AttributeStringValue="+" AttributeFloatValue="0.0"/>
+			<SubskillAttribute Identifier="TAG-SHIELDING_MENTAL" AttributeStringValue="+" AttributeFloatValue="0.0"/>
+			<SubskillAttribute Identifier="TAG-SHIELDING_SPIRIT" AttributeStringValue="+" AttributeFloatValue="0.0"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="1" PowerLevel="0.0">
+			<SubskillAttribute Identifier="TAG-SHIELDING_PHYSICAL" AttributeStringValue="+" AttributeFloatValue="3.0"/>
+			<SubskillAttribute Identifier="TAG-SHIELDING_MENTAL" AttributeStringValue="+" AttributeFloatValue="3.0"/>
+			<SubskillAttribute Identifier="TAG-SHIELDING_SPIRIT" AttributeStringValue="+" AttributeFloatValue="3.0"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="2" PowerLevel="4.0">
+			<SubskillAttribute Identifier="TAG-SHIELDING_PHYSICAL" AttributeStringValue="+" AttributeFloatValue="5.0"/>
+			<SubskillAttribute Identifier="TAG-SHIELDING_MENTAL" AttributeStringValue="+" AttributeFloatValue="5.0"/>
+			<SubskillAttribute Identifier="TAG-SHIELDING_SPIRIT" AttributeStringValue="+" AttributeFloatValue="5.0"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="3" PowerLevel="14.0">
+			<SubskillAttribute Identifier="TAG-SHIELDING_PHYSICAL" AttributeStringValue="+" AttributeFloatValue="8.0"/>
+			<SubskillAttribute Identifier="TAG-SHIELDING_MENTAL" AttributeStringValue="+" AttributeFloatValue="8.0"/>
+			<SubskillAttribute Identifier="TAG-SHIELDING_SPIRIT" AttributeStringValue="+" AttributeFloatValue="8.0"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="4" PowerLevel="29.0">
+			<SubskillAttribute Identifier="TAG-SHIELDING_PHYSICAL" AttributeStringValue="+" AttributeFloatValue="12.0"/>
+			<SubskillAttribute Identifier="TAG-SHIELDING_MENTAL" AttributeStringValue="+" AttributeFloatValue="12.0"/>
+			<SubskillAttribute Identifier="TAG-SHIELDING_SPIRIT" AttributeStringValue="+" AttributeFloatValue="12.0"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="5" PowerLevel="59.0">
+			<SubskillAttribute Identifier="TAG-SHIELDING_PHYSICAL" AttributeStringValue="+" AttributeFloatValue="17.0"/>
+			<SubskillAttribute Identifier="TAG-SHIELDING_MENTAL" AttributeStringValue="+" AttributeFloatValue="17.0"/>
+			<SubskillAttribute Identifier="TAG-SHIELDING_SPIRIT" AttributeStringValue="+" AttributeFloatValue="17.0"/>
+		</SubskillAttributesOnLevel>
+	</SUBSKILL-ADD_SHIELDING_LIGHT>
+	<SUBSKILL-ADD_SHIELDING_MEDIUM Delay="0.0" Animation="Hit15" Sound="SubskillAddAttribute">
+		<DescriptionInfo Name="DES_SUBSKILL_ADD_SHIELDING_MEDIUM" Description="DES_SUBSKILL_ADD_SHIELDING_MEDIUM_DES" IconName="SubskillAddAttribute"/>
+		<ShortInfo TriggerIcon="TAG-TRIGGER_PASSIVE" DamageIcon="TAG-DAMAGE_SHIELD" TargetIcon="TAG-TARGET_SELF" AttackInfo="{SCRIPT:SI_DefaultAttributeTrioChange}"/>
+		<Trigger Priority="10" RequiredToBeInFrontline="FALSE" RequiredToBeInBackline="FALSE">
+			<TriggerGroup Value="Passive"/>
+			<TriggerScript ScriptName=""/>
+		</Trigger>
+		<Targets>
+			<TargetScript ScriptName="Trg_Self"/>
+			<TargetCountRange MinimumCount="1" MaximumCount="1" TargetIndication="Random"/>
+		</Targets>
+		<Activation ScriptName="WAct_AttributeChange"/>
+		<ChallengeType Value="TypePhysical"/>
+		<ChallengeType Value="TypeMental"/>
+		<ChallengeType Value="TypeSpirit"/>
+		<SubskillAttributesOnLevel Level="0" PowerLevel="0.0">
+			<SubskillAttribute Identifier="TAG-SHIELDING_PHYSICAL" AttributeStringValue="+" AttributeFloatValue="0.0"/>
+			<SubskillAttribute Identifier="TAG-SHIELDING_MENTAL" AttributeStringValue="+" AttributeFloatValue="0.0"/>
+			<SubskillAttribute Identifier="TAG-SHIELDING_SPIRIT" AttributeStringValue="+" AttributeFloatValue="0.0"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="1" PowerLevel="0.0">
+			<SubskillAttribute Identifier="TAG-SHIELDING_PHYSICAL" AttributeStringValue="+" AttributeFloatValue="5.0"/>
+			<SubskillAttribute Identifier="TAG-SHIELDING_MENTAL" AttributeStringValue="+" AttributeFloatValue="5.0"/>
+			<SubskillAttribute Identifier="TAG-SHIELDING_SPIRIT" AttributeStringValue="+" AttributeFloatValue="5.0"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="2" PowerLevel="4.0">
+			<SubskillAttribute Identifier="TAG-SHIELDING_PHYSICAL" AttributeStringValue="+" AttributeFloatValue="11.0"/>
+			<SubskillAttribute Identifier="TAG-SHIELDING_MENTAL" AttributeStringValue="+" AttributeFloatValue="11.0"/>
+			<SubskillAttribute Identifier="TAG-SHIELDING_SPIRIT" AttributeStringValue="+" AttributeFloatValue="11.0"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="3" PowerLevel="14.0">
+			<SubskillAttribute Identifier="TAG-SHIELDING_PHYSICAL" AttributeStringValue="+" AttributeFloatValue="16.0"/>
+			<SubskillAttribute Identifier="TAG-SHIELDING_MENTAL" AttributeStringValue="+" AttributeFloatValue="16.0"/>
+			<SubskillAttribute Identifier="TAG-SHIELDING_SPIRIT" AttributeStringValue="+" AttributeFloatValue="16.0"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="4" PowerLevel="29.0">
+			<SubskillAttribute Identifier="TAG-SHIELDING_PHYSICAL" AttributeStringValue="+" AttributeFloatValue="22.0"/>
+			<SubskillAttribute Identifier="TAG-SHIELDING_MENTAL" AttributeStringValue="+" AttributeFloatValue="22.0"/>
+			<SubskillAttribute Identifier="TAG-SHIELDING_SPIRIT" AttributeStringValue="+" AttributeFloatValue="22.0"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="5" PowerLevel="59.0">
+			<SubskillAttribute Identifier="TAG-SHIELDING_PHYSICAL" AttributeStringValue="+" AttributeFloatValue="30.0"/>
+			<SubskillAttribute Identifier="TAG-SHIELDING_MENTAL" AttributeStringValue="+" AttributeFloatValue="30.0"/>
+			<SubskillAttribute Identifier="TAG-SHIELDING_SPIRIT" AttributeStringValue="+" AttributeFloatValue="30.0"/>
+		</SubskillAttributesOnLevel>
+	</SUBSKILL-ADD_SHIELDING_MEDIUM>
+	<SUBSKILL-ADD_SHIELDING_HEAVY Delay="0.0" Animation="Hit15" Sound="SubskillAddAttribute">
+		<DescriptionInfo Name="DES_SUBSKILL_ADD_SHIELDING_HEAVY" Description="DES_SUBSKILL_ADD_SHIELDING_HEAVY_DES" IconName="SubskillAddAttribute"/>
+		<ShortInfo TriggerIcon="TAG-TRIGGER_PASSIVE" DamageIcon="TAG-DAMAGE_SHIELD" TargetIcon="TAG-TARGET_SELF" AttackInfo="{SCRIPT:SI_DefaultAttributeTrioChange}"/>
+		<Trigger Priority="10" RequiredToBeInFrontline="FALSE" RequiredToBeInBackline="FALSE">
+			<TriggerGroup Value="Passive"/>
+			<TriggerScript ScriptName=""/>
+		</Trigger>
+		<Targets>
+			<TargetScript ScriptName="Trg_Self"/>
+			<TargetCountRange MinimumCount="1" MaximumCount="1" TargetIndication="Random"/>
+		</Targets>
+		<Activation ScriptName="WAct_AttributeChange"/>
+		<ChallengeType Value="TypePhysical"/>
+		<ChallengeType Value="TypeMental"/>
+		<ChallengeType Value="TypeSpirit"/>
+		<SubskillAttributesOnLevel Level="0" PowerLevel="0.0">
+			<SubskillAttribute Identifier="TAG-SHIELDING_PHYSICAL" AttributeStringValue="+" AttributeFloatValue="0.0"/>
+			<SubskillAttribute Identifier="TAG-SHIELDING_MENTAL" AttributeStringValue="+" AttributeFloatValue="0.0"/>
+			<SubskillAttribute Identifier="TAG-SHIELDING_SPIRIT" AttributeStringValue="+" AttributeFloatValue="0.0"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="1" PowerLevel="0.0">
+			<SubskillAttribute Identifier="TAG-SHIELDING_PHYSICAL" AttributeStringValue="+" AttributeFloatValue="10.0"/>
+			<SubskillAttribute Identifier="TAG-SHIELDING_MENTAL" AttributeStringValue="+" AttributeFloatValue="10.0"/>
+			<SubskillAttribute Identifier="TAG-SHIELDING_SPIRIT" AttributeStringValue="+" AttributeFloatValue="10.0"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="2" PowerLevel="4.0">
+			<SubskillAttribute Identifier="TAG-SHIELDING_PHYSICAL" AttributeStringValue="+" AttributeFloatValue="16.0"/>
+			<SubskillAttribute Identifier="TAG-SHIELDING_MENTAL" AttributeStringValue="+" AttributeFloatValue="16.0"/>
+			<SubskillAttribute Identifier="TAG-SHIELDING_SPIRIT" AttributeStringValue="+" AttributeFloatValue="16.0"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="3" PowerLevel="14.0">
+			<SubskillAttribute Identifier="TAG-SHIELDING_PHYSICAL" AttributeStringValue="+" AttributeFloatValue="25.0"/>
+			<SubskillAttribute Identifier="TAG-SHIELDING_MENTAL" AttributeStringValue="+" AttributeFloatValue="25.0"/>
+			<SubskillAttribute Identifier="TAG-SHIELDING_SPIRIT" AttributeStringValue="+" AttributeFloatValue="25.0"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="4" PowerLevel="29.0">
+			<SubskillAttribute Identifier="TAG-SHIELDING_PHYSICAL" AttributeStringValue="+" AttributeFloatValue="35.0"/>
+			<SubskillAttribute Identifier="TAG-SHIELDING_MENTAL" AttributeStringValue="+" AttributeFloatValue="35.0"/>
+			<SubskillAttribute Identifier="TAG-SHIELDING_SPIRIT" AttributeStringValue="+" AttributeFloatValue="35.0"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="5" PowerLevel="59.0">
+			<SubskillAttribute Identifier="TAG-SHIELDING_PHYSICAL" AttributeStringValue="+" AttributeFloatValue="50.0"/>
+			<SubskillAttribute Identifier="TAG-SHIELDING_MENTAL" AttributeStringValue="+" AttributeFloatValue="50.0"/>
+			<SubskillAttribute Identifier="TAG-SHIELDING_SPIRIT" AttributeStringValue="+" AttributeFloatValue="50.0"/>
+		</SubskillAttributesOnLevel>
+	</SUBSKILL-ADD_SHIELDING_HEAVY>
+
+	
+	<!-- CHILD-->
+	<SUBSKILL-CHILD_MAGIC_SHIELD Delay="0.0" Animation="Hit13" Sound="SubskillChildMagicShield">
+		<DescriptionInfo Name="DES_SUBSKILL_ADD_CHILD_MAGIC_SHIELD" Description="DES_SUBSKILL_ADD_CHILD_MAGIC_SHIELD_DES" IconName="SubskillAddAttribute"/>
+		<ShortInfo TriggerIcon="TAG-TRIGGER_PASSIVE" DamageIcon="TAG-DAMAGE_SHIELD" TargetIcon="TAG-TARGET_SELF" AttackInfo="{SCRIPT:SI_DefaultAttributeTrioChange}"/>
+		<Trigger Priority="10" RequiredToBeInFrontline="FALSE" RequiredToBeInBackline="FALSE">
+			<TriggerGroup Value="Passive"/>
+			<TriggerScript ScriptName=""/>
+		</Trigger>
+		<Targets>
+			<TargetScript ScriptName="Trg_Self"/>
+			<TargetCountRange MinimumCount="1" MaximumCount="1" TargetIndication="Random"/>
+		</Targets>
+		<Activation ScriptName="WAct_AttributeChange"/>
+		<ChallengeType Value="TypePhysical"/>
+		<ChallengeType Value="TypeMental"/>
+		<ChallengeType Value="TypeSpirit"/>
+		<SubskillAttributesOnLevel Level="1" PowerLevel="0.0">
+			<SubskillAttribute Identifier="TAG-SHIELDING_PHYSICAL" AttributeStringValue="+" AttributeFloatValue="5.0"/>
+			<SubskillAttribute Identifier="TAG-SHIELDING_MENTAL" AttributeStringValue="+" AttributeFloatValue="5.0"/>
+			<SubskillAttribute Identifier="TAG-SHIELDING_SPIRIT" AttributeStringValue="+" AttributeFloatValue="5.0"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="2" PowerLevel="0.0">
+			<SubskillAttribute Identifier="TAG-SHIELDING_PHYSICAL" AttributeStringValue="+" AttributeFloatValue="5.0"/>
+			<SubskillAttribute Identifier="TAG-SHIELDING_MENTAL" AttributeStringValue="+" AttributeFloatValue="5.0"/>
+			<SubskillAttribute Identifier="TAG-SHIELDING_SPIRIT" AttributeStringValue="+" AttributeFloatValue="5.0"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="3" PowerLevel="0.0">
+			<SubskillAttribute Identifier="TAG-SHIELDING_PHYSICAL" AttributeStringValue="+" AttributeFloatValue="5.0"/>
+			<SubskillAttribute Identifier="TAG-SHIELDING_MENTAL" AttributeStringValue="+" AttributeFloatValue="5.0"/>
+			<SubskillAttribute Identifier="TAG-SHIELDING_SPIRIT" AttributeStringValue="+" AttributeFloatValue="5.0"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="4" PowerLevel="0.0">
+			<SubskillAttribute Identifier="TAG-SHIELDING_PHYSICAL" AttributeStringValue="+" AttributeFloatValue="5.0"/>
+			<SubskillAttribute Identifier="TAG-SHIELDING_MENTAL" AttributeStringValue="+" AttributeFloatValue="5.0"/>
+			<SubskillAttribute Identifier="TAG-SHIELDING_SPIRIT" AttributeStringValue="+" AttributeFloatValue="5.0"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="5" PowerLevel="0.0">
+			<SubskillAttribute Identifier="TAG-SHIELDING_PHYSICAL" AttributeStringValue="+" AttributeFloatValue="5.0"/>
+			<SubskillAttribute Identifier="TAG-SHIELDING_MENTAL" AttributeStringValue="+" AttributeFloatValue="5.0"/>
+			<SubskillAttribute Identifier="TAG-SHIELDING_SPIRIT" AttributeStringValue="+" AttributeFloatValue="5.0"/>
+		</SubskillAttributesOnLevel>
+	</SUBSKILL-CHILD_MAGIC_SHIELD>
+</SUBSKILLS_CHALLANGES>

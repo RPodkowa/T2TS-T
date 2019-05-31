@@ -1,0 +1,13 @@
+﻿<PROTOTYPE_MORALE_IMPACT>
+
+	<!-- -->
+	<MORALE_IMPACT Name="MoraleImpact">
+		<!-- -->
+		<MoraleAmount Name="moraleAmount" Type="INT_RANGE" Required="TRUE"/>
+		<!-- -->
+		<SkillPack Name="skillPacks" Type="ArraySKILL_PACK" Required="TRUE"/>
+	</MORALE_IMPACT>
+	
+
+
+</PROTOTYPE_MORALE_IMPACT>

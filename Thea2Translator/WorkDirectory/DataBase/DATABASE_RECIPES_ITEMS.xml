@@ -1,0 +1,1339 @@
+﻿<!-- RESEARCH COSTS:
+1 or more = locked, visible on the advancement graph and available for unlock at the specified cost
+0         = unlocked and visible on the graph (e.g. basic Wood)
+-1        = unlocked and not visible on the graph (e.g. Idol)
+-2        = locked and invisible on the graph, unlocking will require a special script
+-->
+
+
+<RECIPES_ITEMS>
+	<!-- WEAPON -->
+	<ITEM_REC-SWORD_1H ItemsAmount="1" WeightMultiplier="1.0">
+		<InventorySlot Value="RightHand"/>
+        <RecipeBase ResearchCost="1" ResChildForbid="FALSE" >
+			<DescriptionInfo Name="DES_SWORD_1H" Description="DES_SWORD_1H_DES" IconName="RecipeSword1H"/>
+			<CountedTag Tag="TAG-SWORD_1H" Amount="1.0"/>
+			<MaterialRow>
+				<Material ResourceCount="14">
+					<Resource Value="RES-IRON"/>
+				</Material>
+				<Material ResourceCount="12">
+					<Resource Value="RES-SANDSTONE"/>
+				</Material>
+				<Material ResourceCount="11">
+					<Resource Value="RES-BONE"/>
+				</Material>
+				<Material ResourceCount="10">
+					<Resource Value="RES-IRON"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="10">
+					<Resource Value="RES-AMBER"/>
+				</Material>
+				<Material ResourceCount="9">
+					<Resource Value="RES-BONE"/>
+				</Material>
+				<Material ResourceCount="8">
+					<Resource Value="RES-LEATHER"/>
+				</Material>
+				<Material ResourceCount="7">
+					<Resource Value="RES-SANDSTONE"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>		
+	</ITEM_REC-SWORD_1H>
+	<ITEM_REC-SWORD_2H ItemsAmount="1" WeightMultiplier="0.9">
+		<InventorySlot Value="LeftHand"/>
+		<InventorySlot Value="RightHand"/>
+		<RecipeBase ResearchCost="1" ResChildForbid="FALSE">
+			<DescriptionInfo Name="DES_SWORD_2H" Description="DES_SWORD_2H_DES" IconName="RecipeSword2H"/>
+			<CountedTag Tag="TAG-SWORD_2H" Amount="1.0" />
+			<MaterialRow>
+				<Material ResourceCount="25">
+					<Resource Value="RES-IRON"/>
+				</Material>
+				<Material ResourceCount="23">
+					<Resource Value="RES-BONE"/>
+				</Material>
+				<Material ResourceCount="20">
+					<Resource Value="RES-WOOD"/>
+				</Material>
+				<Material ResourceCount="18">
+					<Resource Value="RES-SANDSTONE"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="18">
+					<Resource Value="RES-IRON"/>
+				</Material>
+				<Material ResourceCount="16">
+					<Resource Value="RES-AMBER"/>
+				</Material>
+				<Material ResourceCount="14">
+					<Resource Value="RES-LEATHER"/>
+				</Material>
+				<Material ResourceCount="12">
+					<Resource Value="RES-BONE"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+	</ITEM_REC-SWORD_2H>
+	<ITEM_REC-AXE_1H ItemsAmount="1" WeightMultiplier="1.0">
+		<InventorySlot Value="RightHand"/>
+		<RecipeBase ResearchCost="1" ResChildForbid="FALSE">
+			<DescriptionInfo Name="DES_AXE_1H" Description="DES_AXE_1H_DES" IconName="RecipeAxe1H"/>
+			<CountedTag Tag="TAG-AXE_1H" Amount="1.0"/>
+			<MaterialRow>
+				<Material ResourceCount="14">
+					<Resource Value="RES-SANDSTONE"/>
+				</Material>
+				<Material ResourceCount="12">
+					<Resource Value="RES-IRON"/>
+				</Material>
+				<Material ResourceCount="11">
+					<Resource Value="RES-BONE"/>
+				</Material>
+				<Material ResourceCount="10">
+					<Resource Value="RES-SANDSTONE"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="10">
+					<Resource Value="RES-IRON"/>
+				</Material>
+				<Material ResourceCount="9">
+					<Resource Value="RES-LEATHER"/>
+				</Material>
+				<Material ResourceCount="8">
+					<Resource Value="RES-SANDSTONE"/>
+				</Material>
+				<Material ResourceCount="7">
+					<Resource Value="RES-IRON"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+	</ITEM_REC-AXE_1H>
+	<ITEM_REC-AXE_2H ItemsAmount="1" WeightMultiplier="0.9">
+		<InventorySlot Value="LeftHand"/>
+		<InventorySlot Value="RightHand"/>
+		<RecipeBase ResearchCost="1" ResChildForbid="FALSE">
+			<DescriptionInfo Name="DES_AXE_2H" Description="DES_AXE_2H_DES" IconName="RecipeAxe2H"/>
+			<CountedTag Tag="TAG-AXE_2H" Amount="1.0"/>
+			<MaterialRow>
+				<Material ResourceCount="25">
+					<Resource Value="RES-SANDSTONE"/>
+				</Material>
+				<Material ResourceCount="23">
+					<Resource Value="RES-BONE"/>
+				</Material>
+				<Material ResourceCount="20">
+					<Resource Value="RES-IRON"/>
+				</Material>
+				<Material ResourceCount="18">
+					<Resource Value="RES-SANDSTONE"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="18">
+					<Resource Value="RES-IRON"/>
+				</Material>
+				<Material ResourceCount="16">
+					<Resource Value="RES-SANDSTONE"/>
+				</Material>
+				<Material ResourceCount="14">
+					<Resource Value="RES-LEATHER"/>
+				</Material>
+				<Material ResourceCount="12">
+					<Resource Value="RES-IRON"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+	</ITEM_REC-AXE_2H>
+	<ITEM_REC-BOW ItemsAmount="1" WeightMultiplier="1.0">
+		<InventorySlot Value="LeftHand"/>
+		<InventorySlot Value="RightHand"/>
+		<RecipeBase ResearchCost="1" ResChildForbid="FALSE">
+			<DescriptionInfo Name="DES_BOW" Description="DES_BOW_DES" IconName="RecipeBow"/>
+			<CountedTag Tag="TAG-BOW" Amount="1.0"/>
+			<MaterialRow>
+				<Material ResourceCount="14">
+					<Resource Value="RES-WOOD"/>
+				</Material>
+				<Material ResourceCount="12">
+					<Resource Value="RES-BONE"/>
+				</Material>
+				<Material ResourceCount="11">
+					<Resource Value="RES-AMBER"/>
+				</Material>
+				<Material ResourceCount="10">
+					<Resource Value="RES-IRON"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="10">
+					<Resource Value="RES-LEATHER"/>
+				</Material>
+				<Material ResourceCount="9">
+					<Resource Value="RES-IRON"/>
+				</Material>
+				<Material ResourceCount="8">
+					<Resource Value="RES-BONE"/>
+				</Material>
+				<Material ResourceCount="7">
+					<Resource Value="RES-WOOD"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+	</ITEM_REC-BOW>
+	
+	<ITEM_REC-POLEARM_1H ItemsAmount="1" WeightMultiplier="1.0">
+		<InventorySlot Value="RightHand"/>
+		<RecipeBase ResearchCost="1" ResChildForbid="FALSE">
+			<DescriptionInfo Name="DES_POLEARM_1H" Description="DES_POLEARM_1H_DES" IconName="RecipePolearm1H"/>
+			<CountedTag Tag="TAG-POLEARM_1H" Amount="1.0" />
+			<MaterialRow>
+				<Material ResourceCount="14">
+					<Resource Value="RES-WOOD"/>
+				</Material>
+				<Material ResourceCount="12">
+					<Resource Value="RES-BONE"/>
+				</Material>
+				<Material ResourceCount="11">
+					<Resource Value="RES-SANDSTONE"/>
+				</Material>
+				<Material ResourceCount="10">
+					<Resource Value="RES-AMBER"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="10">
+					<Resource Value="RES-IRON"/>
+				</Material>
+				<Material ResourceCount="9">
+					<Resource Value="RES-AMBER"/>
+				</Material>
+				<Material ResourceCount="8">
+					<Resource Value="RES-WOOD"/>
+				</Material>
+				<Material ResourceCount="7">
+					<Resource Value="RES-LEATHER"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+	</ITEM_REC-POLEARM_1H>
+	<ITEM_REC-POLEARM_2H ItemsAmount="1" WeightMultiplier="0.9">
+		<InventorySlot Value="LeftHand"/>
+		<InventorySlot Value="RightHand"/>
+		<RecipeBase ResearchCost="1" ResChildForbid="FALSE">
+			<DescriptionInfo Name="DES_POLEARM_2H" Description="DES_POLEARM_2H_DES" IconName="RecipePolearm2H"/>
+			<CountedTag Tag="TAG-POLEARM_2H" Amount="1.0"/>
+			<MaterialRow>
+				<Material ResourceCount="25">
+					<Resource Value="RES-IRON"/>
+				</Material>
+				<Material ResourceCount="23">
+					<Resource Value="RES-SANDSTONE"/>
+				</Material>
+				<Material ResourceCount="20">
+					<Resource Value="RES-WOOD"/>
+				</Material>
+				<Material ResourceCount="18">
+					<Resource Value="RES-IRON"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="18">
+					<Resource Value="RES-WOOD"/>
+				</Material>
+				<Material ResourceCount="16">
+					<Resource Value="RES-AMBER"/>
+				</Material>
+				<Material ResourceCount="14">
+					<Resource Value="RES-LEATHER"/>
+				</Material>
+				<Material ResourceCount="12">
+					<Resource Value="RES-WOOD"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+	</ITEM_REC-POLEARM_2H>
+	<ITEM_REC-CLUB_1H ItemsAmount="1" WeightMultiplier="1.0">
+		<InventorySlot Value="RightHand"/>
+		<RecipeBase ResearchCost="1" ResChildForbid="FALSE">
+			<DescriptionInfo Name="DES_CLUB_1H" Description="DES_CLUB_1H_DES" IconName="RecipeClub1H"/>
+			<CountedTag Tag="TAG-CLUB_1H" Amount="1.0" />
+			<MaterialRow>
+				<Material ResourceCount="14">
+					<Resource Value="RES-SANDSTONE"/>
+				</Material>
+				<Material ResourceCount="12">
+					<Resource Value="RES-IRON"/>
+				</Material>
+				<Material ResourceCount="11">
+					<Resource Value="RES-WOOD"/>
+				</Material>
+				<Material ResourceCount="10">
+					<Resource Value="RES-AMBER"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="10">
+					<Resource Value="RES-IRON"/>
+				</Material>
+				<Material ResourceCount="9">
+					<Resource Value="RES-SANDSTONE"/>
+				</Material>
+				<Material ResourceCount="8">
+					<Resource Value="RES-WOOD"/>
+				</Material>
+				<Material ResourceCount="7">
+					<Resource Value="RES-LEATHER"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+	</ITEM_REC-CLUB_1H>
+	<ITEM_REC-CLUB_2H ItemsAmount="1" WeightMultiplier="0.9">
+		<InventorySlot Value="LeftHand"/>
+		<InventorySlot Value="RightHand"/>
+		<RecipeBase ResearchCost="1" ResChildForbid="FALSE">
+			<DescriptionInfo Name="DES_CLUB_2H" Description="DES_CLUB_2H_DES" IconName="RecipeClub2H"/>
+			<CountedTag Tag="TAG-CLUB_2H" Amount="1.0" />
+			<MaterialRow>
+				<Material ResourceCount="25">
+					<Resource Value="RES-SANDSTONE"/>
+				</Material>
+				<Material ResourceCount="23">
+					<Resource Value="RES-IRON"/>
+				</Material>
+				<Material ResourceCount="20">
+					<Resource Value="RES-WOOD"/>
+				</Material>
+				<Material ResourceCount="18">
+					<Resource Value="RES-AMBER"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="18">
+					<Resource Value="RES-IRON"/>
+				</Material>
+				<Material ResourceCount="16">
+					<Resource Value="RES-SANDSTONE"/>
+				</Material>
+				<Material ResourceCount="14">
+					<Resource Value="RES-BONE"/>
+				</Material>
+				<Material ResourceCount="12">
+					<Resource Value="RES-WOOD"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+	</ITEM_REC-CLUB_2H>
+	<ITEM_REC-THROWN_SPEARS ItemsAmount="1" WeightMultiplier="0.8">
+		<InventorySlot Value="LeftHand"/>
+		<InventorySlot Value="RightHand"/>
+		<RecipeBase ResearchCost="1" ResChildForbid="FALSE">
+			<DescriptionInfo Name="DES_THROWN_SPEARS" Description="DES_THROWN_SPEARS_DES" IconName="RecipeThrownSpears"/>
+			<CountedTag Tag="TAG-THROWN_SPEARS" Amount="1.0" />
+			<MaterialRow>
+				<Material ResourceCount="25">
+					<Resource Value="RES-SANDSTONE"/>
+				</Material>
+				<Material ResourceCount="23">
+					<Resource Value="RES-IRON"/>
+				</Material>
+				<Material ResourceCount="20">
+					<Resource Value="RES-BONE"/>
+				</Material>
+				<Material ResourceCount="18">
+					<Resource Value="RES-SANDSTONE"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="18">
+					<Resource Value="RES-BONE"/>
+				</Material>
+				<Material ResourceCount="16">
+					<Resource Value="RES-IRON"/>
+				</Material>
+				<Material ResourceCount="14">
+					<Resource Value="RES-SANDSTONE"/>
+				</Material>
+				<Material ResourceCount="12">
+					<Resource Value="RES-BONE"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+	</ITEM_REC-THROWN_SPEARS>
+	
+	<ITEM_REC-SCROLL_1H ItemsAmount="1" WeightMultiplier="0.9">
+		<InventorySlot Value="RightHand"/>
+		<RecipeBase ResearchCost="1" ResChildForbid="FALSE">
+			<DescriptionInfo Name="DES_SCROLL_1H" Description="DES_SCROLL_1H_DES" IconName="RecipeScroll1H"/>
+			<CountedTag Tag="TAG-SCROLL_1H" Amount="1.0" />
+			<MaterialRow>
+				<Material ResourceCount="14">
+					<Resource Value="RES-LEATHER"/>
+				</Material>
+				<Material ResourceCount="12">
+					<Resource Value="RES-WOOD"/>
+				</Material>
+				<Material ResourceCount="11">
+					<Resource Value="RES-AMBER"/>
+				</Material>
+				<Material ResourceCount="10">
+					<Resource Value="RES-LEATHER"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="10">
+					<Resource Value="RES-LEATHER"/>
+				</Material>
+				<Material ResourceCount="9">
+					<Resource Value="RES-BONE"/>
+				</Material>
+				<Material ResourceCount="8">
+					<Resource Value="RES-AMBER"/>
+				</Material>
+				<Material ResourceCount="7">
+					<Resource Value="RES-LEATHER"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+	</ITEM_REC-SCROLL_1H>
+	<ITEM_REC-SCROLL_2H ItemsAmount="1" WeightMultiplier="0.8">
+		<InventorySlot Value="LeftHand"/>
+		<InventorySlot Value="RightHand"/>
+		<RecipeBase ResearchCost="1" ResChildForbid="FALSE">
+			<DescriptionInfo Name="DES_SCROLL_2H" Description="DES_SCROLL_2H_DES" IconName="RecipeScroll2H"/>
+			<CountedTag Tag="TAG-SCROLL_2H" Amount="1.0"/>
+			<MaterialRow>
+				<Material ResourceCount="25">
+					<Resource Value="RES-LEATHER"/>
+				</Material>
+				<Material ResourceCount="23">
+					<Resource Value="RES-AMBER"/>
+				</Material>
+				<Material ResourceCount="20">
+					<Resource Value="RES-WOOD"/>
+				</Material>
+				<Material ResourceCount="18">
+					<Resource Value="RES-LEATHER"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="18">
+					<Resource Value="RES-LEATHER"/>
+				</Material>
+				<Material ResourceCount="16">
+					<Resource Value="RES-AMBER"/>
+				</Material>
+				<Material ResourceCount="14">
+					<Resource Value="RES-BONE"/>
+				</Material>
+				<Material ResourceCount="12">
+					<Resource Value="RES-LEATHER"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+	</ITEM_REC-SCROLL_2H>
+	<ITEM_REC-ARTIFACT_1H ItemsAmount="1" WeightMultiplier="0.8">
+		<InventorySlot Value="RightHand"/>
+		<RecipeBase ResearchCost="1" ResChildForbid="FALSE">
+			<DescriptionInfo Name="DES_ARTIFACT_1H" Description="DES_ARTIFACT_1H_DES" IconName="RecipeArtifact1H"/>
+			<CountedTag Tag="TAG-ARTIFACT_1H" Amount="1.0"/>
+			<MaterialRow>
+				<Material ResourceCount="14">
+					<Resource Value="RES-LEATHER"/>
+				</Material>
+				<Material ResourceCount="12">
+					<Resource Value="RES-AMBER"/>
+				</Material>
+				<Material ResourceCount="11">
+					<Resource Value="RES-BONE"/>
+				</Material>
+				<Material ResourceCount="10">
+					<Resource Value="RES-WOOD"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="10">
+					<Resource Value="RES-LEATHER"/>
+				</Material>
+				<Material ResourceCount="9">
+					<Resource Value="RES-IRON"/>
+				</Material>
+				<Material ResourceCount="8">
+					<Resource Value="RES-SANDSTONE"/>
+				</Material>
+				<Material ResourceCount="7">
+					<Resource Value="RES-LEATHER"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+	</ITEM_REC-ARTIFACT_1H>
+	<ITEM_REC-ARTIFACT_2H ItemsAmount="1" WeightMultiplier="0.6">
+		<InventorySlot Value="LeftHand"/>
+		<InventorySlot Value="RightHand"/>
+		<RecipeBase ResearchCost="1" ResChildForbid="FALSE">
+			<DescriptionInfo Name="DES_ARTIFACT_2H" Description="DES_ARTIFACT_2H_DES" IconName="RecipeArtifact2H"/>
+			<CountedTag Tag="TAG-ARTIFACT_2H" Amount="1.0"/>
+			<MaterialRow>
+				<Material ResourceCount="25">
+					<Resource Value="RES-SANDSTONE"/>
+				</Material>
+				<Material ResourceCount="23">
+					<Resource Value="RES-AMBER"/>
+				</Material>
+				<Material ResourceCount="20">
+					<Resource Value="RES-IRON"/>
+				</Material>
+				<Material ResourceCount="18">
+					<Resource Value="RES-SANDSTONE"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="18">
+					<Resource Value="RES-LEATHER"/>
+				</Material>
+				<Material ResourceCount="16">
+					<Resource Value="RES-BONE"/>
+				</Material>
+				<Material ResourceCount="14">
+					<Resource Value="RES-AMBER"/>
+				</Material>
+				<Material ResourceCount="12">
+					<Resource Value="RES-LEATHER"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+	</ITEM_REC-ARTIFACT_2H>
+	<ITEM_REC-WAND ItemsAmount="1" WeightMultiplier="0.8">
+		<InventorySlot Value="LeftHand"/>
+		<InventorySlot Value="RightHand"/>
+		<RecipeBase ResearchCost="1" ResChildForbid="FALSE">
+			<DescriptionInfo Name="DES_WAND" Description="DES_WAND_DES" IconName="RecipeWand"/>
+			<CountedTag Tag="TAG-WAND" Amount="1.0"/>
+			<MaterialRow>
+				<Material ResourceCount="14">
+					<Resource Value="RES-BONE"/>
+				</Material>
+				<Material ResourceCount="12">
+					<Resource Value="RES-WOOD"/>
+				</Material>
+				<Material ResourceCount="11">
+					<Resource Value="RES-AMBER"/>
+				</Material>
+				<Material ResourceCount="10">
+					<Resource Value="RES-BONE"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="10">
+					<Resource Value="RES-IRON"/>
+				</Material>
+				<Material ResourceCount="9">
+					<Resource Value="RES-WOOD"/>
+				</Material>
+				<Material ResourceCount="8">
+					<Resource Value="RES-SANDSTONE"/>
+				</Material>
+				<Material ResourceCount="7">
+					<Resource Value="RES-IRON"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+	</ITEM_REC-WAND>
+	
+	<!-- ARMOURS + SHIELD -->
+	<ITEM_REC-SHIELD ItemsAmount="1" WeightMultiplier="1.0">
+		<InventorySlot Value="LeftHand"/>
+		<RecipeBase ResearchCost="1" ResChildForbid="FALSE">
+			<DescriptionInfo Name="DES_SHIELD" Description="DES_SHIELD_DES" IconName="RecipeShields"/>
+			<CountedTag Tag="TAG-SHIELD" Amount="1.0"/>
+			<MaterialRow>
+				<Material ResourceCount="20">
+					<Resource Value="RES-WOOD"/>
+				</Material>
+				<Material ResourceCount="18">
+					<Resource Value="RES-BONE"/>
+				</Material>
+				<Material ResourceCount="16">
+					<Resource Value="RES-IRON"/>
+				</Material>
+				<Material ResourceCount="14">
+					<Resource Value="RES-WOOD"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="14">
+					<Resource Value="RES-WOOD"/>
+				</Material>
+				<Material ResourceCount="13">
+					<Resource Value="RES-BONE"/>
+				</Material>				
+				<Material ResourceCount="11">
+					<Resource Value="RES-LEATHER"/>
+				</Material>
+                <Material ResourceCount="10">
+                    <Resource Value="RES-AMBER"/>
+                </Material>
+			</MaterialRow>
+		</RecipeBase>
+	</ITEM_REC-SHIELD>
+	<ITEM_REC-ROBES ItemsAmount="1" WeightMultiplier="0.5" WeightBase="0">
+		<InventorySlot Value="Armour"/>
+		<RecipeBase ResearchCost="1" ResChildForbid="FALSE">
+			<DescriptionInfo Name="DES_ROBES" Description="DES_ROBES_DES" IconName="RecipeRobes"/>
+			<CountedTag Tag="TAG-ROBES" Amount="1.0" />
+			<MaterialRow>
+				<Material ResourceCount="16">
+					<Resource Value="RES-LEATHER"/>
+				</Material>
+				<Material ResourceCount="15">
+					<Resource Value="RES-AMBER"/>
+				</Material>
+				<Material ResourceCount="13">
+					<Resource Value="RES-LEATHER"/>
+				</Material>
+				<Material ResourceCount="12">
+					<Resource Value="RES-AMBER"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="10">
+					<Resource Value="RES-LEATHER"/>
+				</Material>
+				<Material ResourceCount="9">
+					<Resource Value="RES-AMBER"/>
+				</Material>
+				<Material ResourceCount="8">
+					<Resource Value="RES-WOOD"/>
+				</Material>
+				<Material ResourceCount="7">
+					<Resource Value="RES-BONE"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+	</ITEM_REC-ROBES>
+	<ITEM_REC-MEDIUM_ARMOUR ItemsAmount="1" WeightMultiplier="0.5" WeightBase="60">
+		<InventorySlot Value="Armour"/>
+		<RecipeBase ResearchCost="1" ResChildForbid="FALSE">
+			<DescriptionInfo Name="DES_MEDIUM_ARMOUR" Description="DES_MEDIUM_ARMOUR_DES" IconName="RecipeMediumArmour"/>
+			<CountedTag Tag="TAG-MEDIUM_ARMOUR" Amount="1.0"/>
+			<MaterialRow>
+				<Material ResourceCount="30">
+					<Resource Value="RES-LEATHER"/>
+				</Material>
+				<Material ResourceCount="27">
+					<Resource Value="RES-WOOD"/>
+				</Material>
+				<Material ResourceCount="24">
+					<Resource Value="RES-IRON"/>
+				</Material>
+				<Material ResourceCount="22">
+					<Resource Value="RES-BONE"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="16">
+					<Resource Value="RES-LEATHER"/>
+				</Material>
+				<Material ResourceCount="15">
+					<Resource Value="RES-WOOD"/>
+				</Material>				
+				<Material ResourceCount="13">
+					<Resource Value="RES-IRON"/>
+				</Material>
+                <Material ResourceCount="12">
+                    <Resource Value="RES-SANDSTONE"/>
+                </Material>
+			</MaterialRow>
+		</RecipeBase>
+	</ITEM_REC-MEDIUM_ARMOUR>
+	<ITEM_REC-HEAVY_ARMOUR ItemsAmount="1" WeightMultiplier="0.5" WeightBase="120">
+		<InventorySlot Value="Armour"/>
+		<RecipeBase ResearchCost="1" ResChildForbid="FALSE">
+			<DescriptionInfo Name="DES_HEAVY_ARMOUR" Description="DES_HEAVY_ARMOUR_DES" IconName="RecipeHeavyArmour"/>
+			<CountedTag Tag="TAG-HEAVY_ARMOUR" Amount="1.0"/>
+			<MaterialRow>
+				<Material ResourceCount="42">
+					<Resource Value="RES-IRON"/>
+				</Material>
+				<Material ResourceCount="38">
+					<Resource Value="RES-SANDSTONE"/>
+				</Material>
+				<Material ResourceCount="34">
+					<Resource Value="RES-WOOD"/>
+				</Material>
+				<Material ResourceCount="30">
+					<Resource Value="RES-BONE"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+                <Material ResourceCount="25">
+					<Resource Value="RES-WOOD"/>
+				</Material>
+                <Material ResourceCount="23">
+                    <Resource Value="RES-IRON"/>
+                </Material>
+				<Material ResourceCount="20">
+					<Resource Value="RES-LEATHER"/>
+				</Material>
+				<Material ResourceCount="18">
+					<Resource Value="RES-AMBER"/>
+				</Material>				
+			</MaterialRow>
+		</RecipeBase>
+	</ITEM_REC-HEAVY_ARMOUR>
+	
+	<!-- JEWELLERY LAYOUTS -->
+	<ITEM_REC-JEWELLERY ItemsAmount="1" WeightMultiplier="0.5">
+		<InventorySlot Value="Jewellery"/>
+		<RecipeBase ResearchCost="1" ResChildForbid="FALSE">
+			<DescriptionInfo Name="DES_JEWELLERY" Description="DES_JEWELLERY_DES" IconName="RecipeJewellery"/>
+			<CountedTag Tag="TAG-JEWELLERY" Amount="1.0"/>
+			<MaterialRow>
+				<Material ResourceCount="18">
+					<Resource Value="RES-AMBER"/>
+				</Material>
+				<Material ResourceCount="16">
+					<Resource Value="RES-BONE"/>
+				</Material>
+				<Material ResourceCount="14">
+					<Resource Value="RES-LEATHER"/>
+				</Material>
+				<Material ResourceCount="12">
+					<Resource Value="RES-IRON"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="12">
+					<Resource Value="RES-SANDSTONE"/>
+				</Material>
+				<Material ResourceCount="11">
+					<Resource Value="RES-LEATHER"/>
+				</Material>
+				<Material ResourceCount="10">
+					<Resource Value="RES-AMBER"/>
+				</Material>
+				<Material ResourceCount="8">
+					<Resource Value="RES-WOOD"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+		<Skills Value="SKILL_PACK-ITEM_JEWELLERY"/>
+	</ITEM_REC-JEWELLERY>
+	
+	<!-- TOOLS LAYOUTS -->
+	<ITEM_REC-GATHERING_TOOL ItemsAmount="1" WeightMultiplier="0.8">
+		<InventorySlot Value="Tool"/>
+		<RecipeBase ResearchCost="0" ResChildForbid="FALSE">
+			<DescriptionInfo Name="DES_GATHERING_TOOL" Description="DES_GATHERING_TOOL_DES" IconName="RecipeGatheringTool"/>
+			<CountedTag Tag="TAG-GATHERING_TOOL" Amount="1.0"/>
+			<MaterialRow>
+				<Material ResourceCount="18">
+					<Resource Value="RES-LEATHER"/>
+				</Material>
+				<Material ResourceCount="16">
+					<Resource Value="RES-WOOD"/>
+				</Material>
+				<Material ResourceCount="14">
+					<Resource Value="RES-AMBER"/>
+				</Material>
+				<Material ResourceCount="11">
+					<Resource Value="RES-LEATHER"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="12">
+					<Resource Value="RES-LEATHER"/>
+				</Material>
+				<Material ResourceCount="11">
+					<Resource Value="RES-WOOD"/>
+				</Material>
+				<Material ResourceCount="10">
+					<Resource Value="RES-AMBER"/>
+				</Material>
+				<Material ResourceCount="8">
+					<Resource Value="RES-LEATHER"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+		<Skills Value="SKILL_PACK-ITEM_GATHERING_TOOL"/>
+	</ITEM_REC-GATHERING_TOOL>
+	<ITEM_REC-CRAFTING_TOOL ItemsAmount="1" WeightMultiplier="0.8">
+		<InventorySlot Value="Tool"/>
+		<RecipeBase ResearchCost="0" ResChildForbid="FALSE">
+			<DescriptionInfo Name="DES_CRAFTING_TOOL" Description="DES_CRAFTING_TOOL_DES" IconName="RecipeCraftingTool"/>
+			<CountedTag Tag="TAG-CRAFTING_TOOL" Amount="1.0"/>
+			<MaterialRow>
+				<Material ResourceCount="18">
+					<Resource Value="RES-IRON"/>
+				</Material>
+				<Material ResourceCount="16">
+					<Resource Value="RES-SANDSTONE"/>
+				</Material>
+				<Material ResourceCount="14">
+					<Resource Value="RES-AMBER"/>
+				</Material>
+				<Material ResourceCount="11">
+					<Resource Value="RES-IRON"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="12">
+					<Resource Value="RES-IRON"/>
+				</Material>
+				<Material ResourceCount="11">
+					<Resource Value="RES-SANDSTONE"/>
+				</Material>
+				<Material ResourceCount="10">
+					<Resource Value="RES-AMBER"/>
+				</Material>
+				<Material ResourceCount="8">
+					<Resource Value="RES-IRON"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+		<Skills Value="SKILL_PACK-ITEM_CRAFTING_TOOL"/>
+	</ITEM_REC-CRAFTING_TOOL>
+	
+
+		
+	<!-- SPELL LAYOUTS -->
+	<ITEM_REC-CRYSTAL_SPELL_LAYOUT ItemsAmount="10" WeightMultiplier="0.0">
+		<InventorySlot Value="None"/>
+		<RecipeBase ResearchCost="1" ResChildForbid="FALSE">
+			<DescriptionInfo Name="DES_CRYSTAL_SPELL_LAYOUT" Description="DES_CRYSTAL_SPELL_LAYOUT_DES" IconName="RecipeSpell"/>
+			<CountedTag Tag="TAG-SPELL_LAYOUT" Amount="1.0"/>
+			<MaterialRow>
+				<Material ResourceCount="30">
+					<Resource Value="RES-MALACHITE"/>
+				</Material>
+				<Material ResourceCount="27">
+					<Resource Value="RES-TOPAZ"/>
+				</Material>
+				<Material ResourceCount="24">
+					<Resource Value="RES-RUBY"/>
+				</Material>
+				<Material ResourceCount="18">
+					<Resource Value="RES-DIAMOND"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="20">
+					<Resource Value="RES-TOPAZ"/>
+				</Material>
+				<Material ResourceCount="18">
+					<Resource Value="RES-MALACHITE"/>
+				</Material>
+				<Material ResourceCount="16">
+					<Resource Value="RES-RUBY"/>
+				</Material>
+				<Material ResourceCount="12">
+					<Resource Value="RES-DIAMOND"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+	</ITEM_REC-CRYSTAL_SPELL_LAYOUT>
+
+	<!-- FOOD -->
+	<ITEM_REC-COOKING_MEAT1 ItemsAmount="12" WeightMultiplier="0.5">
+		<InventorySlot Value="None"/>
+		<RecipeBase ResearchCost="0"  >
+			<DescriptionInfo Name="DES_COOKING_MEAT1" Description="DES_COOKING_MEAT1_DES" IconName="GrilledMeat"/>
+			<CountedTag Tag="TAG-COOKED_FOOD" Amount="1.0"/>            
+			<MaterialRow>
+                <Material ResourceCount="5">
+                    <Resource Value="RES-MEAT"/>
+                </Material>       
+			</MaterialRow>
+			<MaterialRow>
+                <Material ResourceCount="3">
+                    <Resource Value="RES-FRUITS"/>
+                </Material>
+                <Material ResourceCount="3">
+                    <Resource Value="RES-SPICES"/>
+                </Material>
+			</MaterialRow>
+		</RecipeBase>
+	</ITEM_REC-COOKING_MEAT1>
+	<ITEM_REC-COOKING_MEAT2 ItemsAmount="12" WeightMultiplier="0.5" >
+		<InventorySlot Value="None"/>
+		<RecipeBase ResearchCost="1"  >
+			<DescriptionInfo Name="DES_COOKING_MEAT2" Description="DES_COOKING_MEAT2_DES" IconName="Pulpety"/>
+			<CountedTag Tag="TAG-COOKED_FOOD" Amount="1.0"/>            
+			<MaterialRow>
+                <Material ResourceCount="5">
+                    <Resource Value="RES-MEAT"/>
+                </Material>       
+			</MaterialRow>
+			<MaterialRow>
+                <Material ResourceCount="3">
+                    <Resource Value="RES-VEGGIES"/>
+                </Material>
+                <Material ResourceCount="3">
+                    <Resource Value="RES-MEAT"/>
+                </Material>
+			</MaterialRow>
+		</RecipeBase>
+	</ITEM_REC-COOKING_MEAT2>
+	<ITEM_REC-COOKING_VEGGIES1 ItemsAmount="12" WeightMultiplier="0.5">
+        <InventorySlot Value="None"/>
+        <RecipeBase ResearchCost="1" >
+            <DescriptionInfo Name="DES_COOKING_VEGGIES1" Description="DES_COOKING_VEGGIES1_DES" IconName="FriedMushrooms"/>
+            <CountedTag Tag="TAG-COOKED_FOOD" Amount="1.0"/>
+            <MaterialRow>
+                <Material ResourceCount="5">
+                    <Resource Value="RES-VEGGIES"/>
+                </Material>
+            </MaterialRow>
+            <MaterialRow>                
+                <Material ResourceCount="3">
+                    <Resource Value="RES-VEGGIES"/>
+                </Material>
+                <Material ResourceCount="3">
+                    <Resource Value="RES-SPICES"/>
+                </Material>                
+            </MaterialRow>
+        </RecipeBase>
+    </ITEM_REC-COOKING_VEGGIES1>
+	<ITEM_REC-COOKING_VEGGIES2 ItemsAmount="12" WeightMultiplier="0.5">
+		<InventorySlot Value="None"/>
+		<RecipeBase ResearchCost="1" >
+			<DescriptionInfo Name="DES_COOKING_VEGGIES2" Description="DES_COOKING_VEGGIES2_DES" IconName="Leczo"/>
+			<CountedTag Tag="TAG-COOKED_FOOD" Amount="1.0"/>
+			<MaterialRow>
+                <Material ResourceCount="5">
+                    <Resource Value="RES-VEGGIES"/>
+                </Material>           
+			</MaterialRow>
+            <MaterialRow>
+                <Material ResourceCount="3">
+                    <Resource Value="RES-MEAT"/>
+                </Material>                
+                <Material ResourceCount="3">
+                    <Resource Value="RES-FRUITS"/>
+                </Material>
+            </MaterialRow>
+		</RecipeBase>
+	</ITEM_REC-COOKING_VEGGIES2>
+	<ITEM_REC-COOKING_FRUITS1 ItemsAmount="12" WeightMultiplier="0.5">
+		<InventorySlot Value="None"/>
+		<RecipeBase ResearchCost="1" >
+			<DescriptionInfo Name="DES_COOKING_FRUITS1" Description="DES_COOKING_FRUITS1_DES" IconName="Jam"/>
+			<CountedTag Tag="TAG-COOKED_FOOD" Amount="1.0"/>            
+			<MaterialRow>
+                <Material ResourceCount="5">
+                    <Resource Value="RES-FRUITS"/>
+                </Material>    
+			</MaterialRow>
+			<MaterialRow>                
+                <Material ResourceCount="3">
+                    <Resource Value="RES-FRUITS"/>
+                </Material>
+                <Material ResourceCount="3">
+                    <Resource Value="RES-VEGGIES"/>
+                </Material>
+			</MaterialRow>
+		</RecipeBase>
+	</ITEM_REC-COOKING_FRUITS1>
+    <ITEM_REC-COOKING_FRUITS2 ItemsAmount="12" WeightMultiplier="0.5">
+        <InventorySlot Value="None"/>
+        <RecipeBase ResearchCost="1" >
+            <DescriptionInfo Name="DES_COOKING_FRUITS2" Description="DES_COOKING_FRUITS2_DES" IconName="GoblinWine"/>
+            <CountedTag Tag="TAG-COOKED_FOOD" Amount="1.0"/>
+            <MaterialRow>
+                <Material ResourceCount="5">
+                    <Resource Value="RES-FRUITS"/>
+                </Material>
+            </MaterialRow>
+            <MaterialRow>
+                <Material ResourceCount="3">
+                    <Resource Value="RES-MEAT"/>
+                </Material>
+                <Material ResourceCount="3">
+                    <Resource Value="RES-SPICES"/>
+                </Material>                
+            </MaterialRow>
+        </RecipeBase>
+    </ITEM_REC-COOKING_FRUITS2>
+	
+	
+	<!-- PET -->
+	<ITEM_REC-HORSE ItemsAmount="0" WeightMultiplier="0.0">
+		<InventorySlot Value="Companion"/>
+		<RecipeBase ResearchCost="-2">
+			<DescriptionInfo Name="DES_PET_HORSE" Description="DES_PET_HORSE_DES" IconName="PetHorse"/>
+			<CountedTag Tag="TAG-PET_HORSE" Amount="1.0"/>
+			<MaterialRow>
+				<Material ResourceCount="12">
+					<Resource Value="RES-BONE"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="15">
+					<Resource Value="RES-MEAT"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+		<Skills Value="SKILL_PACK-PET_HORSE"/>
+	</ITEM_REC-HORSE>
+	<ITEM_REC-GOAT ItemsAmount="0" WeightMultiplier="0.0">
+		<InventorySlot Value="Companion"/>
+		<RecipeBase ResearchCost="-2">
+			<DescriptionInfo Name="DES_PET_GOAT" Description="DES_PET_GOAT_DES" IconName="PetGoat"/>
+			<CountedTag Tag="TAG-PET_GOAT" Amount="1.0"/>
+			<MaterialRow>
+				<Material ResourceCount="12">
+					<Resource Value="RES-BONE"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="15">
+					<Resource Value="RES-MEAT"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+		<Skills Value="SKILL_PACK-PET_GOAT"/>
+	</ITEM_REC-GOAT>
+	<ITEM_REC-GOAT_BUNNY ItemsAmount="0" WeightMultiplier="0.0">
+		<InventorySlot Value="Companion"/>
+		<RecipeBase ResearchCost="-2">
+			<DescriptionInfo Name="DES_PET_GOAT_BUNNY" Description="DES_PET_GOAT_BUNNY_DES" IconName="PetGoat"/>
+			<CountedTag Tag="TAG-PET_GOAT_BUNNY" Amount="1.0"/>
+			<CountedTag Tag="TAG-UNIQUE" Amount="1.0"/>
+			<MaterialRow>
+				<Material ResourceCount="12">
+					<Resource Value="RES-FUR_LEATHER"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="15">
+					<Resource Value="RES-MEAT"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+		<Skills Value="SKILL_PACK-PET_GOAT_BUNNY"/>
+	</ITEM_REC-GOAT_BUNNY>
+	<ITEM_REC-BUNNY ItemsAmount="0" WeightMultiplier="0.0">
+		<InventorySlot Value="Companion"/>
+		<RecipeBase ResearchCost="-2">
+			<DescriptionInfo Name="DES_PET_BUNNY" Description="DES_PET_BUNNY_DES" IconName="PetBunny"/>
+			<CountedTag Tag="TAG-PET_BUNNY" Amount="1.0"/>
+			<CountedTag Tag="TAG-UNIQUE" Amount="1.0"/>
+			<MaterialRow>
+				<Material ResourceCount="12">
+					<Resource Value="RES-FUR_LEATHER"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="15">
+					<Resource Value="RES-MEAT"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+		<Skills Value="SKILL_PACK-PET_BUNNY"/>
+	</ITEM_REC-BUNNY>
+	<ITEM_REC-CAT ItemsAmount="0" WeightMultiplier="0.0">
+		<InventorySlot Value="Companion"/>
+		<RecipeBase ResearchCost="-2">
+			<DescriptionInfo Name="DES_PET_CAT" Description="DES_PET_CAT_DES" IconName="PetCat"/>
+			<CountedTag Tag="TAG-PET_CAT" Amount="1.0"/>
+			<MaterialRow>
+				<Material ResourceCount="12">
+					<Resource Value="RES-BONE"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="15">
+					<Resource Value="RES-MEAT"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+		<Skills Value="SKILL_PACK-PET_CAT"/>
+	</ITEM_REC-CAT>
+	<ITEM_REC-DOG ItemsAmount="0" WeightMultiplier="0.0">
+		<InventorySlot Value="Companion"/>
+		<RecipeBase ResearchCost="-2">
+			<DescriptionInfo Name="DES_PET_DOG" Description="DES_PET_DOG_DES" IconName="PetDog"/>
+			<CountedTag Tag="TAG-PET_DOG" Amount="1.0"/>
+			<MaterialRow>
+				<Material ResourceCount="12">
+					<Resource Value="RES-BONE"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="15">
+					<Resource Value="RES-MEAT"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+		<Skills Value="SKILL_PACK-PET_DOG"/>
+	</ITEM_REC-DOG>
+	<ITEM_REC-WOLF ItemsAmount="0" WeightMultiplier="0.0">
+		<InventorySlot Value="Companion"/>
+		<RecipeBase ResearchCost="-2">
+			<DescriptionInfo Name="DES_PET_WOLF" Description="DES_PET_WOLF_DES" IconName="PetWolf"/>
+			<CountedTag Tag="TAG-PET_WOLF" Amount="1.0"/>
+			<MaterialRow>
+				<Material ResourceCount="12">
+					<Resource Value="RES-BONE"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="15">
+					<Resource Value="RES-MEAT"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+		<Skills Value="SKILL_PACK-PET_WOLF"/>
+	</ITEM_REC-WOLF>
+	<ITEM_REC-BEAR ItemsAmount="0" WeightMultiplier="0.0">
+		<InventorySlot Value="Companion"/>
+		<RecipeBase ResearchCost="-2">
+			<DescriptionInfo Name="DES_PET_BEAR" Description="DES_PET_BEAR_DES" IconName="PetBear"/>
+			<CountedTag Tag="TAG-PET_BEAR" Amount="1.0"/>
+			<MaterialRow>
+				<Material ResourceCount="12">
+					<Resource Value="RES-BONE"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="15">
+					<Resource Value="RES-MEAT"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+		<Skills Value="SKILL_PACK-PET_BEAR"/>
+	</ITEM_REC-BEAR>
+	<ITEM_REC-BOAR ItemsAmount="0" WeightMultiplier="0.0">
+		<InventorySlot Value="Companion"/>
+		<RecipeBase ResearchCost="-2">
+			<DescriptionInfo Name="DES_PET_BOAR" Description="DES_PET_BOAR_DES" IconName="PetBoar"/>
+			<CountedTag Tag="TAG-PET_BOAR" Amount="1.0"/>
+			<MaterialRow>
+				<Material ResourceCount="12">
+					<Resource Value="RES-BONE"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="15">
+					<Resource Value="RES-MEAT"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+		<Skills Value="SKILL_PACK-PET_BOAR"/>
+	</ITEM_REC-BOAR>
+	<ITEM_REC-SKSHACK ItemsAmount="0" WeightMultiplier="0.0">
+		<InventorySlot Value="Companion"/>
+		<RecipeBase ResearchCost="-2">
+			<DescriptionInfo Name="DES_PET_SKSHACK" Description="DES_PET_SKSHACK_DES" IconName="PetSkshack"/>
+			<CountedTag Tag="TAG-PET_SKSHACK" Amount="1.0"/>
+			<MaterialRow>
+				<Material ResourceCount="12">
+					<Resource Value="RES-BONE"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="15">
+					<Resource Value="RES-MEAT"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+		<Skills Value="SKILL_PACK-PET_SKSHACK"/>
+	</ITEM_REC-SKSHACK>
+	<ITEM_REC-CMUCH ItemsAmount="0" WeightMultiplier="0.0">
+		<InventorySlot Value="Companion"/>
+		<RecipeBase ResearchCost="-2">
+			<DescriptionInfo Name="DES_PET_CMUCH" Description="DES_PET_CMUCH_DES" IconName="PetCmuch"/>
+			<CountedTag Tag="TAG-PET_CMUCH" Amount="1.0"/>
+			<MaterialRow>
+				<Material ResourceCount="12">
+					<Resource Value="RES-BONE"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="15">
+					<Resource Value="RES-MEAT"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+		<Skills Value="SKILL_PACK-PET_CMUCH"/>
+	</ITEM_REC-CMUCH>
+	<ITEM_REC-WRAITH ItemsAmount="0" WeightMultiplier="0.0">
+		<InventorySlot Value="Companion"/>
+		<RecipeBase ResearchCost="-2">
+			<DescriptionInfo Name="DES_PET_WRAITH" Description="DES_PET_WRAITH_DES" IconName="PetWraith"/>
+			<CountedTag Tag="TAG-PET_WRAITH" Amount="1.0"/>
+			<MaterialRow>
+				<Material ResourceCount="10">
+					<Resource Value="RES-AMBER"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="10">
+					<Resource Value="RES-AMBER"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+		<Skills Value="SKILL_PACK-PET_WRAITH"/>
+	</ITEM_REC-WRAITH>
+	<ITEM_REC-GHOST ItemsAmount="0" WeightMultiplier="0.0">
+		<InventorySlot Value="Companion"/>
+		<RecipeBase ResearchCost="-2">
+			<DescriptionInfo Name="DES_PET_GHOST" Description="DES_PET_GHOST_DES" IconName="PetGhost"/>
+			<CountedTag Tag="TAG-PET_GHOST" Amount="1.0"/>
+			<MaterialRow>
+				<Material ResourceCount="10">
+					<Resource Value="RES-AMBER"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="10">
+					<Resource Value="RES-AMBER"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+		<Skills Value="SKILL_PACK-PET_GHOST"/>
+	</ITEM_REC-GHOST>
+	<ITEM_REC-CROW ItemsAmount="0" WeightMultiplier="0.0">
+		<InventorySlot Value="Companion"/>
+		<RecipeBase ResearchCost="-2">
+			<DescriptionInfo Name="DES_PET_CROW" Description="DES_PET_CROW_DES" IconName="PetCrow"/>
+			<CountedTag Tag="TAG-PET_CROW" Amount="1.0"/>
+			<MaterialRow>
+				<Material ResourceCount="12">
+					<Resource Value="RES-BONE"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="15">
+					<Resource Value="RES-MEAT"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+		<Skills Value="SKILL_PACK-PET_CROW"/>
+	</ITEM_REC-CROW>
+	<ITEM_REC-SPIDER_SPITTING ItemsAmount="0" WeightMultiplier="0.0">
+		<InventorySlot Value="Companion"/>
+		<RecipeBase ResearchCost="-2">
+			<DescriptionInfo Name="DES_PET_SPIDER_SPITTING" Description="DES_PET_SPIDER_SPITTING_DES" IconName="PetSpider"/>
+			<CountedTag Tag="TAG-PET_SPIDER_SPITTING" Amount="1.0"/>
+			<MaterialRow>
+				<Material ResourceCount="12">
+					<Resource Value="RES-BONE"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="15">
+					<Resource Value="RES-MEAT"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+		<Skills Value="SKILL_PACK-PET_SPIDER_SPITTING"/>
+	</ITEM_REC-SPIDER_SPITTING>
+	<ITEM_REC-TURTLE ItemsAmount="0" WeightMultiplier="0.0">
+		<InventorySlot Value="Companion"/>
+		<RecipeBase ResearchCost="-2">
+			<DescriptionInfo Name="DES_PET_TURTLE" Description="DES_PET_TURTLE_DES" IconName="PetIronFrog"/>
+			<CountedTag Tag="TAG-PET_TURTLE" Amount="1.0"/>
+			<MaterialRow>
+				<Material ResourceCount="12">
+					<Resource Value="RES-IRON"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="15">
+					<Resource Value="RES-FISH"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+		<Skills Value="SKILL_PACK-PET_TURTLE"/>
+	</ITEM_REC-TURTLE>
+	<ITEM_REC-CHICKEN ItemsAmount="0" WeightMultiplier="0.0">
+		<InventorySlot Value="Companion"/>
+		<RecipeBase ResearchCost="-2">
+			<DescriptionInfo Name="DES_PET_CHICKEN" Description="DES_PET_CHICKEN_DES" IconName="PetCock"/>
+			<CountedTag Tag="TAG-PET_CHICKEN" Amount="1.0"/>
+			<MaterialRow>
+				<Material ResourceCount="12">
+					<Resource Value="RES-BONE"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="15">
+					<Resource Value="RES-EGGS"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+		<Skills Value="SKILL_PACK-PET_CHICKEN"/>
+	</ITEM_REC-CHICKEN>
+	
+	<!-- SPECIAL ITEMS -->
+	<ITEM_REC-COSMIC_RING ItemsAmount="1" WeightMultiplier="0.1">
+		<InventorySlot Value="Jewellery"/>
+		<RecipeBase ResearchCost="-1">
+			<DescriptionInfo Name="DES_COSMIC_RING" Description="DES_COSMIC_RING_DES" IconName="CosmicRing"/>
+			<CountedTag Tag="TAG-JEWELLERY" Amount="1.0"/>
+			<MaterialRow>
+				<Material ResourceCount="21">
+					<Resource Value="RES-MITHRILL"/>
+				</Material>
+				<Material ResourceCount="20">
+					<Resource Value="RES-DRAGON_BONE"/>
+				</Material>
+				<Material ResourceCount="19">
+					<Resource Value="RES-OBSIDIAN"/>
+				</Material>
+				<Material ResourceCount="18">
+					<Resource Value="RES-DIAMOND"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="1">
+					<Resource Value="RES-COSMIC_SEED"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+		<Skills Value="SKILL_PACK-ITEM_COSMIC_RING"/>
+	</ITEM_REC-COSMIC_RING>
+	<ITEM_REC-TUT_JEWELLERY_LULLABYE ItemsAmount="-1" WeightMultiplier="0.5">
+		<InventorySlot Value="Jewellery"/>
+		<RecipeBase ResearchCost="1" ResChildForbid="FALSE">
+			<DescriptionInfo Name="DES_JEWELLERY" Description="DES_JEWELLERY_DES" IconName="RecipeJewellery"/>
+			<CountedTag Tag="TAG-TUT_JEWELLERY" Amount="1.0"/>
+			<MaterialRow>
+				<Material ResourceCount="18">
+					<Resource Value="RES-AMBER"/>
+				</Material>
+				<Material ResourceCount="16">
+					<Resource Value="RES-BONE"/>
+				</Material>
+				<Material ResourceCount="14">
+					<Resource Value="RES-LEATHER"/>
+				</Material>
+				<Material ResourceCount="12">
+					<Resource Value="RES-IRON"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="12">
+					<Resource Value="RES-SANDSTONE"/>
+				</Material>
+				<Material ResourceCount="11">
+					<Resource Value="RES-LEATHER"/>
+				</Material>
+				<Material ResourceCount="10">
+					<Resource Value="RES-AMBER"/>
+				</Material>
+				<Material ResourceCount="8">
+					<Resource Value="RES-WOOD"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+		<Skills Value="SKILL_PACK-TUT_ITEM_JEWELLERY_LULLABYE"/>
+	</ITEM_REC-TUT_JEWELLERY_LULLABYE>
+
+</RECIPES_ITEMS>

@@ -1,0 +1,13 @@
+﻿<RESEARCH>
+
+	<RESEARCH-GENERIC ProductionCost="250" RPOnCompletion="1">
+		<DescriptionInfo Name="DES_RESEARCH_GENERIC" Description="DES_RESEARCH_GENERIC_DES" IconName="ResearchGeneric"/>				
+	</RESEARCH-GENERIC>	
+	<RESEARCH-TERRAIN  ProductionCost="800" RPOnCompletion="30">
+		<DescriptionInfo Name="DES_RESEARCH_TERRAIN" Description="DES_RESEARCH_TERRAIN_DES" IconName="ResearchTerrain"/>		
+	</RESEARCH-TERRAIN>
+	<RESEARCH-CREATURE  ProductionCost="400" RPOnCompletion="15">
+		<DescriptionInfo Name="DES_RESEARCH_CREATURE" Description="DES_RESEARCH_CREATURE_DES" IconName="ResearchCreature"/>		
+	</RESEARCH-CREATURE>
+
+</RESEARCH>

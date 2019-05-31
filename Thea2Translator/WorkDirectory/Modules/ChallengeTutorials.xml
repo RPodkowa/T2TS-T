@@ -1,0 +1,285 @@
+<?xml version="1.0"?>
+<MODULE xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="ChallengeTutorials" lastEventIndex="3" allowToUse="true" uniqueModuleID="1879039998">
+  <Adventure name="Tutorial1" uniqueID="1" typeGeneric="false" typePerGroupGeneric="false" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="18" joinIsForced="false" joinType="OnlyOwn" joinRange="SinglePosition">
+    <nodes xsi:type="NodeStarting" ID="1" positionX="-11" positionY="42" width="347" height="704" image="Event253">
+      <outputs ownerID="1" targetID="2" fromX="313" fromY="-604" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="2" positionX="430" positionY="108" width="350" height="725">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="ppl" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_ThisPlayerThisGroupCharacters" />
+          </LogicFilter>
+        </FilterBlock>
+      </logic>
+      <outputs name="Tell your nan you'll go straight away. Head to the cellar, prepared to face the rats." ownerID="2" targetID="3" fromX="755" fromY="-383" />'Yanek, Yanek! Come over here lad!'
+You hear your grandma's voice coming from the house: 
+'Bring me a jar of pickles dear, they're in the cellar. Just watch out for them pesky rats, they get pretty big this time of year'. 
+
+You grab your sword, though a mouse trap would probably be more appropriate.
+
+</nodes>
+    <nodes xsi:type="NodeAdventure" ID="3" positionX="922" positionY="81" width="350" height="725" image="Event272">
+      <outputs name="A card game? Like a regular blackjack?" ownerID="3" targetID="15" fromX="1247" fromY="-410" />Just as nan warned you, there are rats here. You hesitate and hear the trusted voice of your friend, Theodore:
+
+'You are about to start a challenge lad. What is a challenge, you'll ask me? Well, a challenge is a way of resolving conflicts or problems in this world. Sometimes it will be a conflict between your group and an enemy group, other times it will be an attempt to solve a puzzle or simply a test of strength. Challenges take the form of a card game. As the gods themselves were playing with our fate, you see.'
+</nodes>
+    <nodes xsi:type="NodeChallenge" ID="4" positionX="1468" positionY="73" width="500" height="726" challengeType="TypePhysical" versusGroup="GROUP-TUT_RAT" challengeScale="101" challengedList="ppl">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_SetGlobalVariable" parameter="Tut:Chal1" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Win" ownerID="4" targetID="7" fromX="1909" fromY="-422" />
+      <outputs name="Lose" ownerID="4" targetID="6" fromX="1909" fromY="-502" />
+      <outputs name="Surrender" ownerID="4" targetID="6" fromX="1909" fromY="-582" />
+    </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="5" positionX="3871" positionY="-1244" width="350" height="455" linkedEventUniqueID="0" />
+    <nodes xsi:type="NodeAdventure" ID="6" positionX="2245" positionY="-726" width="350" height="805" image="Event251">
+      <outputs name="Try again." ownerID="6" targetID="4" fromX="2570" fromY="-1217" />
+      <outputs name="Run away to Main Menu." ownerID="6" targetID="5" fromX="2570" fromY="-1297" />You're not going to give up that easily, are you?</nodes>
+    <nodes xsi:type="NodeAdventure" ID="7" positionX="2656" positionY="89" width="350" height="725" image="Event273">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="1" tag="ITEM_CARGO-TUT_PICKLES" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Go back to the cellar." ownerID="7" targetID="9" fromX="2981" fromY="-402" />The rats are dead and the pickles are yours at last. Proud of yourself, you bring the jar back to grandma.
+
+'Your ankle is bleeding Yanek, are you okay?'- she asks.
+You shrug and assure her you're good. Grandma gives you that patronising, nan look: 
+
+'Better take a suit of armour next time dear, one day you'll scratch your legs off! Anyway, be a dearie and go check what attracts those nasty critters to our cellar, eh? If grandpa's spilled some pear compote again...'
+</nodes>
+    <nodes xsi:type="NodeAdventure" ID="9" positionX="3284" positionY="58" width="350" height="725" image="Event258">
+      <outputs name="Could this be  a pineconette?" ownerID="9" targetID="10" fromX="3609" fromY="-433" />You open the cellar door again, prepared to clean the rat corpses away and be done with it, when you sense movement. In a  dark corner, you notice a familiar shape, although much bigger than usual. A pine cone? You look closer and notice that a set of beady yellow eyes is looking you up and down and a row of sharp teeth glares at you in a smile.</nodes>
+    <nodes xsi:type="NodeAdventure" ID="10" positionX="3763" positionY="58" width="350" height="725">
+      <outputs name="Defend yourself!" ownerID="10" targetID="11" fromX="4088" fromY="-433" />You faintly recall some stories you've heard about woodland spirits looking like pine cones. They are sure to know a bit of magic but rarely bother humans outside of the forest. What is this one doing here you can't tell, but it's your grandma's cellar after all, and no pinecone will munch on her winter supplies! 
+As you march confidently to kick the creature out, sword drawn, its eyes start glowing and a high-pitched shout hurts your ears. You tighten the grip on your sword only to notice that it crumbles away to dust. 
+What trickery is this? - you ask yourself, but no answer follows and the pineconette attacks you with its magic.
+</nodes>
+    <nodes xsi:type="NodeChallenge" ID="11" positionX="4241" positionY="90" width="500" height="726" challengeType="TypeSpirit" versusGroup="GROUP-TUT_PINECONETTES" challengeScale="101" challengedList="ppl">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_SetGlobalVariable" parameter="Tut:Chal2" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Win" ownerID="11" targetID="12" fromX="4682" fromY="-405" />
+      <outputs name="Lose" ownerID="11" targetID="13" fromX="4682" fromY="-485" />
+      <outputs name="Surrender" ownerID="11" targetID="14" fromX="4682" fromY="-565" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="12" positionX="4937" positionY="222" width="350" height="725" image="Event251">
+      <outputs name="Leave..." ownerID="12" targetID="5" fromX="5262" fromY="-269" />Ok, this wasn't supposed to happen. Have you cheated? The whole purpose of this tutorial was to teach you how to run away. What are you doing in the tutorial area anyway, eh? Go smash some orc skulls and stop pretending you don't know how to play.</nodes>
+    <nodes xsi:type="NodeAdventure" ID="13" positionX="5439" positionY="-63" width="350" height="725" image="Event255">
+      <outputs name="Aww, my head..." ownerID="13" targetID="5" fromX="5764" fromY="-554" />You black out, but Theodores' voice wakes you:
+
+'Well, you were asking for it, you know? Fighting a spiritual challenge without a specialist? Facing a much stronger enemy is rarely a good idea. When odds are stacked against you, running away or surrendering could be the best option. Sure, you might get a bruise or lose some morale, but it's still better than outright losing. Remember that lesson for the future!'
+</nodes>
+    <nodes xsi:type="NodeAdventure" ID="14" positionX="4977" positionY="-718" width="350" height="725" image="Event253">
+      <outputs name="End" ownerID="14" targetID="5" fromX="5302" fromY="-1209" />You snap out of the half-hypnotic state the pineconette has put you in and manage to rush out of the cellar and lock the door behind you. You run to your nan and scream a pineconette is attacking your house. Grandma raises her brow at you: 
+
+'Is? You mean you left it there? By Svarog's might... In my days we stoked fires with cones, you youngsters are so timid. Fine, I'll deal with it myself. After dinner that is. I suppose you were a smart lad to escape instead of getting your bottom whacked.'</nodes>
+    <nodes xsi:type="NodeAdventure" ID="15" positionX="234" positionY="-743" width="350" height="725" image="Event251">
+      <outputs name="Phew, you thought for a minute there you could get hurt from this challenge business?" ownerID="15" targetID="16" fromX="559" fromY="-1234" />'Nothing of that sort, lad. The cards you play  represent *you*, with all your strengths, weaknesses and abilities. That sword you've got there - you can use it against the rats and you will gain skill in the card game because of it.'</nodes>
+    <nodes xsi:type="NodeAdventure" ID="16" positionX="794" positionY="-664" width="350" height="805" image="Event272">
+      <outputs name="Open the door and fight your way to the jar of pickles." ownerID="16" targetID="4" fromX="1119" fromY="-1155" />
+      <outputs name="Head back, you've got more important things to do. [EXIT TO MAIN MENU]" ownerID="16" targetID="5" fromX="1119" fromY="-1235" />'Sure you can, lad! The wounds you get during a challenge are as real as that jar of pickles you're about to fetch. If you're not careful, you'll have to spend the next week at the healer's hut, or your mind or spirit may suffer. Better be careful!
+
+If you see this symbol: &lt;sprite name=ChallengePhysical&gt; - it means that answer leads to a challenge. The number next to it, between 1 and 10,  indicates difficulty.'
+
+You're never quite sure how and when Theo comes and goes, but here you are - standing in front of grandma's cellar, ready for anything.</nodes>
+  </Adventure>
+  <Adventure name="Tutorial2" uniqueID="2" typeGeneric="false" typePerGroupGeneric="false" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="13" joinIsForced="false" joinType="OnlyOwn" joinRange="SinglePosition">
+    <nodes xsi:type="NodeStarting" ID="1" positionX="10" positionY="-10" width="347" height="704" image="Event255">
+      <outputs ownerID="1" targetID="2" fromX="334" fromY="-656" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="2" positionX="494" positionY="-8" width="350" height="725">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="ppl" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_ThisPlayerThisGroupCharacters" />
+          </LogicFilter>
+        </FilterBlock>
+      </logic>
+      <outputs name="Wait for nan to leave and look at the map." ownerID="2" targetID="3" fromX="819" fromY="-499" />'Thank you, brave adventurers!' - grandma tries her best to say it in as deep and smooth voice as she can, but still sounds more like the big bad wolf: 'The princess is safe. Here is your map to the treasure.'
+
+You squeak with joy and jump up vigorously, almost knocking over granny's rocking chair. When you finally settle down, she continues:
+
+'When the heroes look closer at the map, they realise, that it's all mixed up. They will have to solve the puzzle to get to the treasure.'
+
+She gives you one of her serious looks:
+
+ 'But it's only a story, right? Now off to bed you two!' 
+</nodes>
+    <nodes xsi:type="NodeAdventure" ID="3" positionX="982" positionY="41" width="350" height="725" image="Event251">
+      <outputs name="Okay, begin the mental challenge." ownerID="3" targetID="4" fromX="1307" fromY="-450" />You hear Theodore's voice again:
+
+'Challenges can also be used to test your group's intellectual abilities. But unlike when you faced the rats, this time, you will be challenged by a concept.
+
+"Concepts" is a general term and covers all situations where you do not fight against characters. Climbing a cliff, spotting danger, solving a puzzle or performing a ritual are all examples of a challenge versus concept.
+
+Concepts are represented by cards just as characters are, but in all concept challenges only the natural abilities of your characters count. Any equipment they have is disregarded. Other rules remain the same.
+
+Each time you see a symbol with cards black inside like this - &lt;sprite name="MentalConceptChallengeIcon"&gt; - it means it is a challenge against a concept.'
+</nodes>
+    <nodes xsi:type="NodeChallenge" ID="4" positionX="1499" positionY="24" width="500" height="726" challengeType="TypeMental" versusConcept="true" versusGroup="GROUP-TUT_CON" challengeScale="101" challengedList="ppl">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_SetGlobalVariable" parameter="Tut:Chal3" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Win" ownerID="4" targetID="7" fromX="1940" fromY="-471" />
+      <outputs name="Lose" ownerID="4" targetID="6" fromX="1940" fromY="-551" />
+      <outputs name="Surrender" ownerID="4" targetID="6" fromX="1940" fromY="-631" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="5" positionX="2733" positionY="324" width="350" height="725" image="Event255">
+      <outputs name="Noooo... one more story! Pleeeease!" ownerID="5" targetID="10" fromX="3058" fromY="-167" />You hear nan laugh behind you: 
+
+'Well done my little adventurers! There, in the middle of a meadow, you see a table, full of goodies!" 
+
+And having said that, granny produces a bowl of fruit and beetle jelly - your favourites.
+
+'Now, this time, off to bed, for real!'
+
+But, as usual, there's only one answer one can expect...</nodes>
+    <nodes xsi:type="NodeAdventure" ID="6" positionX="2152" positionY="-560" width="350" height="885" image="Event255">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers list="ppl">
+            <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="2" tag="SKILL_PACK-BLESS_M" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Yes." ownerID="6" targetID="4" fromX="2477" fromY="-1051" />
+      <outputs name="No." ownerID="6" targetID="9" fromX="2477" fromY="-1131" />
+      <outputs name="Fall asleep. [EXIT TO MENU]" ownerID="6" targetID="8" fromX="2477" fromY="-1211" />Nan sighs. Knowing that it's late and seeing how hard you tried, she gives you some clues and you feel smarter. She asks:  
+
+'I know I said bedtime before, but do you want to try again?'</nodes>
+    <nodes xsi:type="NodeProduceDrop" ID="7" positionX="2134" positionY="61" width="460" height="429">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="2;5" tag="ITEM_CARGO-FRUITS" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="2;5" tag="ITEM_CARGO-BEETLE_JELLY" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs ownerID="7" targetID="5" fromX="2564" fromY="-297" />
+    </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="8" positionX="5704" positionY="-905" width="350" height="455" linkedEventUniqueID="0" />
+    <nodes xsi:type="NodeAdventure" ID="9" positionX="3225" positionY="-386" width="350" height="725">
+      <outputs name="Noooo... one more story! Pleeeease!" ownerID="9" targetID="10" fromX="3550" fromY="-877" />'Okay, it's getting late, time for bed.' - says grandma and closes her book: 
+
+'Make sure you wash your feet!'
+
+But, as usual, there's only one answer one can expect...</nodes>
+    <nodes xsi:type="NodeAdventure" ID="10" positionX="3863" positionY="-17" width="350" height="725">
+      <outputs name="Story! Story! Story!" ownerID="10" targetID="11" fromX="4188" fromY="-508" />Nan takes a deep breath, she looks tired herself but determined to keep her authority:
+
+'Now you listen to me rascals, if you want to hear another story, it will be tomorrow. You want night demons or wolves to come snatch you up for being naughty?'
+
+You look at each other. The threat of the night mares, or worse, chills your bones, but winning with nan would be so exciting.
+</nodes>
+    <nodes xsi:type="NodeChallenge" ID="11" positionX="4375" positionY="-7" width="500" height="726" challengeType="TypeMental" versusGroup="GROUP-TUT_HUM_CRAFTSMAN_GRANDMA_STASIA" challengeScale="101" challengedList="ppl">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_SetGlobalVariable" parameter="Tut:Chal4" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Win" ownerID="11" targetID="12" fromX="4816" fromY="-502" />
+      <outputs name="Lose" ownerID="11" targetID="13" fromX="4816" fromY="-582" />
+      <outputs name="Surrender" ownerID="11" targetID="13" fromX="4816" fromY="-662" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="12" positionX="5073" positionY="134" width="350" height="725">
+      <outputs name="The End." ownerID="12" targetID="8" fromX="5398" fromY="-357" />You really thought you had her, but then she pulls the old nan card, leans back in her chair, and closes her eyes and snores. 
+Quietly, you slide the book from her hands, hoping to find another story.
+As the moon shines through your window, you hear wolves howling in the distance and the wind rustling in the yard...
+</nodes>
+    <nodes xsi:type="NodeAdventure" ID="13" positionX="5072" positionY="-597" width="350" height="725">
+      <outputs name="The End." ownerID="13" targetID="8" fromX="5397" fromY="-1088" />That nan is no joker. She crosses her arms and raises her brow at you and you know the fun is over. You rush to bed obediently. 
+
+As the moon shines through your window, you hear wolves howling in the distance and the wind rustling in the yard...
+</nodes>
+  </Adventure>
+  <Adventure name="Tutorial3" uniqueID="3" typeGeneric="false" typePerGroupGeneric="false" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="8" joinIsForced="false" joinType="OnlyOwn" joinRange="SinglePosition">
+    <nodes xsi:type="NodeStarting" ID="1" positionX="10" positionY="-10" width="347" height="661" image="Event190">
+      <outputs ownerID="1" targetID="2" fromX="334" fromY="-613" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="2" positionX="408" positionY="-31" width="350" height="725">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="ppl" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_ThisPlayerThisGroupCharacters" />
+          </LogicFilter>
+        </FilterBlock>
+      </logic>
+      <outputs name="Your dwarven pride is slightly wounded at this brazen display of ignorance. Tell them to beat it before they spoil your good day. " ownerID="2" targetID="3" fromX="733" fromY="-522" />Drunk and jolly you make your way home from a good game of dice. A heavy purse jingles at your belt. The sun is setting but the air is still warm, so the long walk home doesn't bother you. 
+ 
+The path leads through a small woodland and as you were about to take the last turn towards home, some ruffians jump out from behind a bush:
+
+'Your money or your lives!' - shouts the smallest of them with a squeaky voice.
+</nodes>
+    <nodes xsi:type="NodeAdventure" ID="3" positionX="850" positionY="-11" width="350" height="725">
+      <outputs name="Fight!" ownerID="3" targetID="4" fromX="1175" fromY="-502" />They look at each other and then back at your sack of coins. 
+
+'We ain't scared of your kind, we'll take ya!'
+
+They are either brave, stupid or desperate.</nodes>
+    <nodes xsi:type="NodeChallenge" ID="4" positionX="1324" positionY="24" width="500" height="726" challengeType="TypePhysical" versusGroup="GROUP-TUT_HUM_BANDIT" challengeScale="101" challengedList="ppl">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_SetGlobalVariable" parameter="Tut:Chal5" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Win" ownerID="4" targetID="5" fromX="1765" fromY="-471" />
+      <outputs name="Lose" ownerID="4" targetID="8" fromX="1765" fromY="-551" />
+      <outputs name="Surrender" ownerID="4" targetID="8" fromX="1765" fromY="-631" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="5" positionX="1937" positionY="153" width="350" height="725">
+      <outputs name="Watch them leave." ownerID="5" targetID="6" fromX="2262" fromY="-338" />You beat their silly arses to a pulp and make them run:
+
+'Sorry, sorry master dwarf, we'll go now!' 
+
+You return home, and hopefully, confident enough to face any challenge Thea may throw you.
+
+</nodes>
+    <nodes xsi:type="NodeAdventure" ID="6" positionX="2471" positionY="110" width="350" height="725" image="Event251">
+      <outputs name="End tutorial and return to the Main Menu" ownerID="6" targetID="7" fromX="2796" fromY="-381" />Congratulations!
+
+You have completed our tutorial and learnt the basics of our card game mechanics. Remember, you can always replay this if you need to refresh any information.
+ 
+Now go face the real Thea, if you dare!
+
+
+</nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="7" positionX="2968" positionY="-119" width="350" height="530" linkedEventUniqueID="0" />
+    <nodes xsi:type="NodeAdventure" ID="8" positionX="1985" positionY="-657" width="350" height="805">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers list="ppl">
+            <scriptCallWithTag scriptName="FMO_SetHealthPercentTo" parameter="100" tag="TAG-HEALTH_PHYSICAL" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Yes." ownerID="8" targetID="4" fromX="2310" fromY="-1148" />
+      <outputs name="No, they beat me, but I get the rules now." ownerID="8" targetID="6" fromX="2310" fromY="-1228" />Ouch, dwarf or no dwarf, they beat you badly!
+
+For now, you have been healed.
+
+Would you like a rematch?</nodes>
+  </Adventure>
+</MODULE>

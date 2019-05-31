@@ -1,0 +1,209 @@
+﻿<WEATHER>
+
+    <WEATHER-WIND>        
+        <DescriptionInfo Name="DES_WEATHER_WIND" Description="DES_WEATHER_WIND_DES" IconName="Placeholder"/>
+        <WeatherTag Value="TAG-WIND"/>
+        <WorldScript ScriptName="W_Wind"/>
+    </WEATHER-WIND>
+    <WEATHER-RAIN>
+        <DescriptionInfo Name="DES_WEATHER_RAIN" Description="DES_WEATHER_RAIN_DES" IconName="Placeholder"/>
+        <WeatherTag Value="TAG-RAIN"/>
+        <WorldScript ScriptName="W_Rain"/>
+    </WEATHER-RAIN>
+    <WEATHER-SNOW>
+        <DescriptionInfo Name="DES_WEATHER_SNOW" Description="DES_WEATHER_SNOW_DES" IconName="Placeholder"/>
+        <WeatherTag Value="TAG-SNOW"/>
+        <WorldScript ScriptName="W_Snow"/>
+    </WEATHER-SNOW>
+    <WEATHER-SNOW_STORM>
+        <DescriptionInfo Name="DES_WEATHER_SNOW_STORM" Description="DES_WEATHER_SNOW_STORM_DES" IconName="Placeholder"/>
+        <WeatherTag Value="TAG-SNOW_STORM"/>
+        <WorldScript ScriptName="W_SnowStorm"/>
+    </WEATHER-SNOW_STORM>
+    
+    <WEATHER-SUNNY_DAY>
+        <DescriptionInfo Name="DES_WEATHER_SUNNY_DAY" Description="DES_WEATHER_SUNNY_DAY_DES" IconName="Placeholder"/>
+        <WeatherTag Value="TAG-SUNNY_DAY"/>
+        <WorldScript ScriptName="W_SunnyDay"/>
+    </WEATHER-SUNNY_DAY>
+
+    <WEATHER-SCORCH>
+        <DescriptionInfo Name="DES_WEATHER_SCORCH" Description="DES_WEATHER_SCORCH_DES" IconName="Placeholder"/>
+        <WeatherTag Value="TAG-SCORCH"/>
+        <WorldScript ScriptName="W_Scorch"/>
+    </WEATHER-SCORCH>
+    <WEATHER-DARKNESS>
+        <DescriptionInfo Name="DES_WEATHER_DARKNESS" Description="DES_WEATHER_DARKNESS_DES" IconName="Placeholder"/>
+        <WeatherTag Value="TAG-DARKNESS"/>
+        <WorldScript ScriptName="W_Darkness"/>
+    </WEATHER-DARKNESS>
+
+    <SUBSKILL-WEATHER_MP Delay="0" Animation="" Sound="">
+        <DescriptionInfo Name="DES_SUBSKILL_SUB_MOVEMENT" Description="DES_PLACEHOLDER_DES" IconName="SubskillSubAttribute"/>
+        <ShortInfo TriggerIcon="TAG-TRIGGER_PASSIVE" DamageIcon="TAG-DAMAGE_SUB_MOVEMENT_POINTS" TargetIcon="TAG-TARGET_SELF" AttackInfo="{SCRIPT:SI_DefaultAttributeChange}"/>
+        <Trigger Priority="10" RequiredToBeInFrontline="FALSE" RequiredToBeInBackline="FALSE">
+            <TriggerGroup Value="Passive"/>
+            <TriggerScript ScriptName=""/>
+        </Trigger>
+        <Targets>
+            <TargetScript ScriptName="Trg_Self"/>
+            <TargetCountRange MinimumCount="1" MaximumCount="1" TargetIndication="Random"/>
+        </Targets>
+        <Activation ScriptName="WAct_AttributeChange"/>
+        <SubskillAttributesOnLevel Level="0" PowerLevel="0.0">
+            <SubskillAttribute Identifier="TAG-MOVEMENT_RANGE" AttributeStringValue="+" AttributeFloatValue="0.0"/>
+        </SubskillAttributesOnLevel>
+        <SubskillAttributesOnLevel Level="1" PowerLevel="-10.0">
+            <SubskillAttribute Identifier="TAG-MOVEMENT_RANGE" AttributeStringValue="+" AttributeFloatValue="-1.0"/>
+        </SubskillAttributesOnLevel>
+        <SubskillAttributesOnLevel Level="2" PowerLevel="-20.0">
+            <SubskillAttribute Identifier="TAG-MOVEMENT_RANGE" AttributeStringValue="+" AttributeFloatValue="-1.0"/>
+        </SubskillAttributesOnLevel>
+        <SubskillAttributesOnLevel Level="3" PowerLevel="-30.0">
+            <SubskillAttribute Identifier="TAG-MOVEMENT_RANGE" AttributeStringValue="+" AttributeFloatValue="-2.0"/>
+        </SubskillAttributesOnLevel>
+        <SubskillAttributesOnLevel Level="4" PowerLevel="-40.0">
+            <SubskillAttribute Identifier="TAG-MOVEMENT_RANGE" AttributeStringValue="+" AttributeFloatValue="-2.0"/>
+        </SubskillAttributesOnLevel>
+        <SubskillAttributesOnLevel Level="5" PowerLevel="-50.0">
+            <SubskillAttribute Identifier="TAG-MOVEMENT_RANGE" AttributeStringValue="+" AttributeFloatValue="-3.0"/>
+        </SubskillAttributesOnLevel>
+    </SUBSKILL-WEATHER_MP>
+    <SUBSKILL-WEATHER_VIS Delay="0" Animation="" Sound="">
+        <DescriptionInfo Name="DES_SUBSKILL_SUB_VISIBILITY" Description="DES_PLACEHOLDER_DES" IconName="SubskillSubAttribute"/>
+        <ShortInfo TriggerIcon="TAG-TRIGGER_PASSIVE" DamageIcon="TAG-DAMAGE_SUB_RANGE_OF_SIGHT" TargetIcon="TAG-TARGET_SELF" AttackInfo="{SCRIPT:SI_DefaultAttributeChange}"/>
+        <Trigger Priority="10" RequiredToBeInFrontline="FALSE" RequiredToBeInBackline="FALSE">
+            <TriggerGroup Value="Passive"/>
+            <TriggerScript ScriptName=""/>
+        </Trigger>
+        <Targets>
+            <TargetScript ScriptName="Trg_Self"/>
+            <TargetCountRange MinimumCount="1" MaximumCount="1" TargetIndication="Random"/>
+        </Targets>
+        <Activation ScriptName="WAct_AttributeChange"/>
+        <SubskillAttributesOnLevel Level="0" PowerLevel="0.0">
+            <SubskillAttribute Identifier="TAG-RANGE_OF_SIGHT_DAY" AttributeStringValue="+" AttributeFloatValue="0.0"/>
+            <SubskillAttribute Identifier="TAG-RANGE_OF_SIGHT_NIGHT" AttributeStringValue="+" AttributeFloatValue="0.0"/>
+        </SubskillAttributesOnLevel>
+        <SubskillAttributesOnLevel Level="1" PowerLevel="-10.0">
+            <SubskillAttribute Identifier="TAG-RANGE_OF_SIGHT_DAY" AttributeStringValue="+" AttributeFloatValue="-1.0"/>
+            <SubskillAttribute Identifier="TAG-RANGE_OF_SIGHT_NIGHT" AttributeStringValue="+" AttributeFloatValue="-1.0"/>
+        </SubskillAttributesOnLevel>
+        <SubskillAttributesOnLevel Level="2" PowerLevel="-20.0">
+            <SubskillAttribute Identifier="TAG-RANGE_OF_SIGHT_DAY" AttributeStringValue="+" AttributeFloatValue="-2.0"/>
+            <SubskillAttribute Identifier="TAG-RANGE_OF_SIGHT_NIGHT" AttributeStringValue="+" AttributeFloatValue="-2.0"/>
+        </SubskillAttributesOnLevel>
+        <SubskillAttributesOnLevel Level="3" PowerLevel="-30.0">
+            <SubskillAttribute Identifier="TAG-RANGE_OF_SIGHT_DAY" AttributeStringValue="+" AttributeFloatValue="-3.0"/>
+            <SubskillAttribute Identifier="TAG-RANGE_OF_SIGHT_NIGHT" AttributeStringValue="+" AttributeFloatValue="-3.0"/>
+        </SubskillAttributesOnLevel>
+        <SubskillAttributesOnLevel Level="4" PowerLevel="-40.0">
+            <SubskillAttribute Identifier="TAG-RANGE_OF_SIGHT_DAY" AttributeStringValue="+" AttributeFloatValue="-4.0"/>
+            <SubskillAttribute Identifier="TAG-RANGE_OF_SIGHT_NIGHT" AttributeStringValue="+" AttributeFloatValue="-4.0"/>
+        </SubskillAttributesOnLevel>
+        <SubskillAttributesOnLevel Level="5" PowerLevel="-50.0">
+            <SubskillAttribute Identifier="TAG-RANGE_OF_SIGHT_DAY" AttributeStringValue="+" AttributeFloatValue="-5.0"/>
+            <SubskillAttribute Identifier="TAG-RANGE_OF_SIGHT_NIGHT" AttributeStringValue="+" AttributeFloatValue="-5.0"/>
+        </SubskillAttributesOnLevel>
+    </SUBSKILL-WEATHER_VIS>
+    <SUBSKILL-WEATHER_SUNNY_DAY Delay="0.0" Animation="" Sound="">
+        <DescriptionInfo Name="DES_SUBSKILL_ADD_TASK_EFFICIENCY" Description="DES_PLACEHOLDER_DES" IconName="SubskillAddAttribute"/>
+        <ShortInfo TriggerIcon="TAG-TRIGGER_PASSIVE" DamageIcon="TAG-DAMAGE_ADD_TASK_EFFICIENCY" TargetIcon="TAG-TARGET_SELF" AttackInfo="{SCRIPT:SI_DefaultAttributeChange}"/>
+        <Trigger Priority="10" RequiredToBeInFrontline="FALSE" RequiredToBeInBackline="FALSE">
+            <TriggerGroup Value="Passive"/>
+            <TriggerScript ScriptName=""/>
+        </Trigger>
+        <Targets>
+            <TargetScript ScriptName="Trg_Self"/>
+            <TargetCountRange MinimumCount="1" MaximumCount="1" TargetIndication="Random"/>
+        </Targets>
+        <Activation ScriptName="WAct_AttributeChange"/>
+        <SubskillAttributesOnLevel Level="0" PowerLevel="0.0">
+            <SubskillAttribute Identifier="TAG-GATHERING" AttributeStringValue="*" AttributeFloatValue="0.0"/>
+            <SubskillAttribute Identifier="TAG-LUCK" AttributeStringValue="*" AttributeFloatValue="0.0"/>
+            <SubskillAttribute Identifier="TAG-CRAFTING" AttributeStringValue="*" AttributeFloatValue="0.0"/>
+            <SubskillAttribute Identifier="TAG-RESEARCH" AttributeStringValue="*" AttributeFloatValue="0.0"/>
+            <SubskillAttribute Identifier="TAG-RITUALS" AttributeStringValue="*" AttributeFloatValue="0.0"/>
+        </SubskillAttributesOnLevel>
+        <SubskillAttributesOnLevel Level="1" PowerLevel="10.0">
+            <SubskillAttribute Identifier="TAG-GATHERING" AttributeStringValue="*" AttributeFloatValue="110.0"/>
+            <SubskillAttribute Identifier="TAG-LUCK" AttributeStringValue="*" AttributeFloatValue="110.0"/>
+            <SubskillAttribute Identifier="TAG-CRAFTING" AttributeStringValue="*" AttributeFloatValue="110.0"/>
+            <SubskillAttribute Identifier="TAG-RESEARCH" AttributeStringValue="*" AttributeFloatValue="110.0"/>
+            <SubskillAttribute Identifier="TAG-RITUALS" AttributeStringValue="*" AttributeFloatValue="110.0"/>
+        </SubskillAttributesOnLevel>
+        <SubskillAttributesOnLevel Level="2" PowerLevel="20.0">
+            <SubskillAttribute Identifier="TAG-GATHERING" AttributeStringValue="*" AttributeFloatValue="120.0"/>
+            <SubskillAttribute Identifier="TAG-LUCK" AttributeStringValue="*" AttributeFloatValue="120.0"/>
+            <SubskillAttribute Identifier="TAG-CRAFTING" AttributeStringValue="*" AttributeFloatValue="120.0"/>
+            <SubskillAttribute Identifier="TAG-RESEARCH" AttributeStringValue="*" AttributeFloatValue="120.0"/>
+            <SubskillAttribute Identifier="TAG-RITUALS" AttributeStringValue="*" AttributeFloatValue="120.0"/>
+        </SubskillAttributesOnLevel>
+        <SubskillAttributesOnLevel Level="3" PowerLevel="30.0">
+            <SubskillAttribute Identifier="TAG-GATHERING" AttributeStringValue="*" AttributeFloatValue="130.0"/>
+            <SubskillAttribute Identifier="TAG-LUCK" AttributeStringValue="*" AttributeFloatValue="130.0"/>
+            <SubskillAttribute Identifier="TAG-CRAFTING" AttributeStringValue="*" AttributeFloatValue="130.0"/>
+            <SubskillAttribute Identifier="TAG-RESEARCH" AttributeStringValue="*" AttributeFloatValue="130.0"/>
+            <SubskillAttribute Identifier="TAG-RITUALS" AttributeStringValue="*" AttributeFloatValue="130.0"/>
+        </SubskillAttributesOnLevel>
+        <SubskillAttributesOnLevel Level="4" PowerLevel="40.0">
+            <SubskillAttribute Identifier="TAG-GATHERING" AttributeStringValue="*" AttributeFloatValue="140.0"/>
+            <SubskillAttribute Identifier="TAG-LUCK" AttributeStringValue="*" AttributeFloatValue="140.0"/>
+            <SubskillAttribute Identifier="TAG-CRAFTING" AttributeStringValue="*" AttributeFloatValue="140.0"/>
+            <SubskillAttribute Identifier="TAG-RESEARCH" AttributeStringValue="*" AttributeFloatValue="140.0"/>
+            <SubskillAttribute Identifier="TAG-RITUALS" AttributeStringValue="*" AttributeFloatValue="140.0"/>
+        </SubskillAttributesOnLevel>
+        <SubskillAttributesOnLevel Level="5" PowerLevel="50.0">
+            <SubskillAttribute Identifier="TAG-GATHERING" AttributeStringValue="*" AttributeFloatValue="150.0"/>
+            <SubskillAttribute Identifier="TAG-LUCK" AttributeStringValue="*" AttributeFloatValue="150.0"/>
+            <SubskillAttribute Identifier="TAG-CRAFTING" AttributeStringValue="*" AttributeFloatValue="150.0"/>
+            <SubskillAttribute Identifier="TAG-RESEARCH" AttributeStringValue="*" AttributeFloatValue="150.0"/>
+            <SubskillAttribute Identifier="TAG-RITUALS" AttributeStringValue="*" AttributeFloatValue="150.0"/>
+        </SubskillAttributesOnLevel>
+    </SUBSKILL-WEATHER_SUNNY_DAY>
+    <SKILL-WEATHER_VIS Rarity="0">
+        <DescriptionInfo Name="DES_SKILL_WEATHER_VIS" Description="DES_SKILL_WEATHER_VIS_DES" IconName="SkillWeatherVis"/>
+        <BaseEssence Amount="0" Tag="TAG-ESSENCE_GRAY"/>
+        <ChargesCounter>
+            <ChargesCount MinimumCount="1" MaximumCount="1"/>
+            <ChargesTrigger Priority="0" RequiredToBeInFrontline="FALSE" RequiredToBeInBackline="FALSE">
+                <TriggerGroup Value="OnStartTurn"/>
+                <TriggerScript ScriptName=""/>
+            </ChargesTrigger>
+            <Script ScriptName="Deg_SimpleCountdown"/>
+        </ChargesCounter>
+        <SkillSubskill Value="SUBSKILL-WEATHER_VIS"/>
+        <SkillGroupFilter Value="Weather"/>
+    </SKILL-WEATHER_VIS>
+    <SKILL-WEATHER_SNOW Rarity="0">
+        <DescriptionInfo Name="DES_SKILL_WEATHER_SNOW" Description="DES_SKILL_WEATHER_SNOW_DES" IconName="SkillSnow"/>
+        <BaseEssence Amount="0" Tag="TAG-ESSENCE_GRAY"/>
+        <ChargesCounter>
+            <ChargesCount MinimumCount="1" MaximumCount="1"/>
+            <ChargesTrigger Priority="0" RequiredToBeInFrontline="FALSE" RequiredToBeInBackline="FALSE">
+                <TriggerGroup Value="OnStartTurn"/>
+                <TriggerScript ScriptName=""/>
+            </ChargesTrigger>
+            <Script ScriptName="Deg_SimpleCountdown"/>
+        </ChargesCounter>
+        <SkillSubskill Value="SUBSKILL-WEATHER_MP"/>
+        <SkillSubskill Value="SUBSKILL-WEATHER_VIS"/>
+        <SkillGroupFilter Value="Weather"/>
+    </SKILL-WEATHER_SNOW>
+    <SKILL-WEATHER_SUNNY_DAY Rarity="0">
+        <DescriptionInfo Name="DES_SKILL_WEATHER_SUNNY_DAY" Description="DES_SKILL_WEATHER_SUNNY_DAY_DES" IconName="SkillSunnyDay"/>
+        <BaseEssence Amount="0" Tag="TAG-ESSENCE_GRAY"/>
+        <ChargesCounter>
+            <ChargesCount MinimumCount="1" MaximumCount="1"/>
+            <ChargesTrigger Priority="0" RequiredToBeInFrontline="FALSE" RequiredToBeInBackline="FALSE">
+                <TriggerGroup Value="OnStartTurn"/>
+                <TriggerScript ScriptName=""/>
+            </ChargesTrigger>
+            <Script ScriptName="Deg_SimpleCountdown"/>
+        </ChargesCounter>
+        <SkillSubskill Value="SUBSKILL-WEATHER_SUNNY_DAY"/>
+        <SkillGroupFilter Value="Weather"/>
+    </SKILL-WEATHER_SUNNY_DAY>
+	
+	
+</WEATHER>

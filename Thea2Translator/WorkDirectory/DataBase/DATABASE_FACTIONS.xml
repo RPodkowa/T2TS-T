@@ -1,0 +1,592 @@
+﻿<FRACTIONS>
+
+	<BEH-CALM>
+		<BehaviorsSet>
+			<BehaviorType Primary="Aggressive" DefaultState="FALSE"/>
+			<BehaviorType Primary="Neutral" DefaultState="FALSE"/>
+			<BehaviorType Primary="Peaceful" DefaultState="TRUE"/>
+		</BehaviorsSet>
+		<BehaviorsSet>
+			<BehaviorType Secondary="Territorial" DefaultState="FALSE"/>
+			<BehaviorType Secondary="Nomadic" DefaultState="FALSE"/>
+			<BehaviorType Secondary="Builders" DefaultState="FALSE"/>
+		</BehaviorsSet>
+		<BehaviorsSet>
+			<BehaviorType Thirdiary="Blacksmiths" DefaultState="FALSE"/>
+			<BehaviorType Thirdiary="Treasurers" DefaultState="FALSE"/>
+			<BehaviorType Thirdiary="Trophies" DefaultState="FALSE"/>
+		</BehaviorsSet>
+	</BEH-CALM>
+	<BEH-NORMAL>
+		<BehaviorsSet>
+			<BehaviorType Primary="Aggressive" DefaultState="FALSE"/>
+			<BehaviorType Primary="Neutral" DefaultState="TRUE"/>
+			<BehaviorType Primary="Peaceful" DefaultState="FALSE"/>
+		</BehaviorsSet>
+		<BehaviorsSet>
+			<BehaviorType Secondary="Territorial" DefaultState="FALSE"/>
+			<BehaviorType Secondary="Nomadic" DefaultState="FALSE"/>
+			<BehaviorType Secondary="Builders" DefaultState="FALSE"/>
+		</BehaviorsSet>
+		<BehaviorsSet>
+			<BehaviorType Thirdiary="Blacksmiths" DefaultState="FALSE"/>
+			<BehaviorType Thirdiary="Treasurers" DefaultState="FALSE"/>
+			<BehaviorType Thirdiary="Trophies" DefaultState="FALSE"/>
+		</BehaviorsSet>
+	</BEH-NORMAL>
+	<BEH-AGGRESSIVE>
+		<BehaviorsSet>
+			<BehaviorType Primary="Aggressive" DefaultState="TRUE"/>
+			<BehaviorType Primary="Neutral" DefaultState="FALSE"/>
+		</BehaviorsSet>
+		<BehaviorsSet>
+			<BehaviorType Secondary="Territorial" DefaultState="FALSE"/>
+			<BehaviorType Secondary="Nomadic" DefaultState="FALSE"/>
+		</BehaviorsSet>
+		<BehaviorsSet>
+			<BehaviorType Thirdiary="Treasurers" DefaultState="FALSE"/>
+			<BehaviorType Thirdiary="Trophies" DefaultState="FALSE"/>
+		</BehaviorsSet>
+	</BEH-AGGRESSIVE>
+	<BEH-VERY_AGGRESSIVE>
+		<BehaviorsSet>
+			<BehaviorType Primary="Aggressive" DefaultState="TRUE"/>
+		</BehaviorsSet>
+		<BehaviorsSet>
+			<BehaviorType Secondary="Nomadic" DefaultState="FALSE"/>
+		</BehaviorsSet>
+		<BehaviorsSet>
+			<BehaviorType Thirdiary="Trophies" DefaultState="FALSE"/>
+		</BehaviorsSet>
+	</BEH-VERY_AGGRESSIVE>
+
+	<FAC-SLAVYAN CompulsoryAttendent="TRUE" Rarity="0">
+		<LoyaltyTag Value="TAG-LOYALTY_SLAVYAN"/>
+		<DescriptionInfo Name="DES_FACTIONS_SLAVYANS" Description="DES_PLACEHOLDER_DES"  IconName="FactionSlavyan"/>
+		<UnitsBehavior Value="BEH-NORMAL"/>
+		<SmallVillage Value="SET-HUM_SMALL_VILLAGE"/>
+		<SmallVillageEvent Value="EVENTC-SLAVYAN_VILLAGE_SMALL"/>
+		<BigVillage Value="SET-HUM_BIG_VILLAGE"/>
+		<BigVillageEvent Value="EVENTC-SLAVYAN_VILLAGE_MED"/>
+		<Army Value="GROUP-LOTS_HUMS_4P_4M_3S"/>
+		<ArmyEvent Value="EVENTC-ARMY_SLAVYAN"/>
+		<Civilian Value="GROUP-HUMS_3P_2M_1S"/>
+		<CivilianEvent Value="EVENTC-ARMY_SLAVYAN"/>
+	</FAC-SLAVYAN>
+	<FAC-SCAVENGERS CompulsoryAttendent="FALSE" Rarity="20">
+		<LoyaltyTag Value="TAG-LOYALTY_SCAVENGERS"/>
+		<DescriptionInfo Name="DES_FACTIONS_SCAVENGERS" Description="DES_PLACEHOLDER_DES"  IconName="FactionScavengers"/>
+		<UnitsBehavior Value="BEH-NORMAL"/>
+		<SmallVillage Value="SET-HUM_SMALL_VILLAGE"/>
+		<SmallVillageEvent Value="EVENTC-SCAVENGERS_VILLAGE_SMALL"/>
+		<BigVillage Value="SET-HUM_BIG_VILLAGE"/>
+		<BigVillageEvent Value="EVENTC-SCAVENGERS_VILLAGE_MED"/>
+		<Army Value="GROUP-SCAVENGER_3P_3M_2S"/>
+		<ArmyEvent Value="EVENTC-ARMY_SCAVENGERS"/>
+		<Civilian Value="GROUP-SCAVENGER_2P_2M_2S"/>
+		<CivilianEvent Value="EVENTC-ARMY_SCAVENGERS"/>
+	</FAC-SCAVENGERS>
+
+	<FAC-WOODLAND_KIN CompulsoryAttendent="FALSE" Rarity="20">
+		<LoyaltyTag Value="TAG-LOYALTY_WOODLAND_KIN"/>
+		<DescriptionInfo Name="DES_FACTIONS_WOODLAND_KIN" Description="DES_PLACEHOLDER_DES"  IconName="FactionWoodlandKin"/>
+		<UnitsBehavior Value="BEH-CALM"/>
+		<SmallVillage Value="SET-ELVES_SMALL_VILLAGE"/>
+		<SmallVillageEvent Value="EVENTC-WOODKIN_VILLAGE_SMALL"/>
+		<BigVillage Value="SET-ELVES_BIG_VILLAGE"/>
+		<BigVillageEvent Value="EVENTC-WOODKIN_VILLAGE_MED"/>
+		<Army Value="GROUP-LOTS_ELVES_8P_8M_7S"/>
+		<ArmyEvent Value="EVENTC-ARMY_WOODLANDKIN"/>
+		<Civilian Value="GROUP-ELVES_6P_6M_5S"/>
+		<CivilianEvent Value="EVENTC-ARMY_WOODLANDKIN"/>
+	</FAC-WOODLAND_KIN>
+	
+	<FAC-EARTHBOUND CompulsoryAttendent="FALSE" Rarity="20">
+		<LoyaltyTag Value="TAG-LOYALTY_EARTHBOUND"/>
+		<DescriptionInfo Name="DES_FACTIONS_EARTHBOUND" Description="DES_PLACEHOLDER_DES"  IconName="FactionEarthbound"/>
+		<UnitsBehavior Value="BEH-NORMAL"/>
+		<SmallVillage Value="SET-DWARVES_SMALL_VILLAGE"/>
+		<SmallVillageEvent Value="EVENTC-EARTHBOUND_VILLAGE_SMALL"/>
+		<BigVillage Value="SET-DWARVES_BIG_VILLAGE"/>
+		<BigVillageEvent Value="EVENTC-EARTHBOUND_VILLAGE_MED"/>
+		<Army Value="GROUP-LOTS_DWARVES_8P_7M_5S"/>
+		<ArmyEvent Value="EVENTC-ARMY_EARTHBOUND"/>
+		<Civilian Value="GROUP-DWARVES_7P_6M_2S"/>
+		<CivilianEvent Value="EVENTC-ARMY_EARTHBOUND"/>
+	</FAC-EARTHBOUND>
+
+	<FAC-ALPHA_CLANS CompulsoryAttendent="FALSE" Rarity="20">
+		<LoyaltyTag Value="TAG-LOYALTY_ALPHA_CLANS"/>
+		<DescriptionInfo Name="DES_FACTIONS_ALPHA_CLANS" Description="DES_PLACEHOLDER_DES"  IconName="FactionAlphaClans"/>
+		<UnitsBehavior Value="BEH-AGGRESSIVE"/>
+		<SmallVillage Value="SET-ORCS_SMALL_VILLAGE"/>
+		<SmallVillageEvent Value="EVENTC-ALPHACLAN_VILLAGE_SMALL"/>
+		<BigVillage Value="SET-ORCS_BIG_VILLAGE"/>
+		<BigVillageEvent Value="EVENTC-ALPHACLAN_VILLAGE_MED"/>
+		<Army Value="GROUP-LOTS_ORCS_7P_6M_6S"/>
+		<ArmyEvent Value="EVENTC-ARMY_ALPHACLAN"/>
+		<Civilian Value="GROUP-ORCS_5P_3M_1S"/>
+		<CivilianEvent Value="EVENTC-ARMY_ALPHACLAN"/>
+	</FAC-ALPHA_CLANS>
+	
+	<FAC-SPIRIT_TALKERS CompulsoryAttendent="FALSE" Rarity="20">
+		<LoyaltyTag Value="TAG-LOYALTY_SPIRIT_TALKERS"/>
+		<DescriptionInfo Name="DES_FACTIONS_SPIRIT_TALKERS" Description="DES_PLACEHOLDER_DES"  IconName="FactionSpiritTalkers"/>
+		<UnitsBehavior Value="BEH-NORMAL"/>
+		<SmallVillage Value="SET-GOBS_SMALL_VILLAGE"/>
+		<SmallVillageEvent Value="EVENTC-SPIRIT_TALKERS_VILLAGE_SMALL"/>
+		<BigVillage Value="SET-GOBS_BIG_VILLAGE"/>
+		<BigVillageEvent Value="EVENTC-SPIRIT_TALKERS_VILLAGE_MED"/>
+		<Army Value="GROUP-LOTS_GOBS_4P_4M_5S"/>
+		<ArmyEvent Value="EVENTC-ARMY_SPIRIT_TALKERS"/>
+		<Civilian Value="GROUP-GOBS_4P_3M_4S"/>
+		<CivilianEvent Value="EVENTC-ARMY_SPIRIT_TALKERS"/>
+	</FAC-SPIRIT_TALKERS>
+
+	<FAC-LIGHTBRINGERS CompulsoryAttendent="TRUE" Rarity="20">
+		<LoyaltyTag Value="TAG-LOYALTY_LIGHTBRINGERS"/>
+		<DescriptionInfo Name="DES_FACTIONS_LIGHTBRINGERS" Description="DES_PLACEHOLDER_DES"  IconName="FactionLightbringers"/>
+		<UnitsBehavior Value="BEH-VERY_AGGRESSIVE"/>
+		<SmallVillage Value="SET-LIGHT_SMALL_VILLAGE"/>
+		<SmallVillageEvent Value="EVENTC-LIGHTBRINGERS_VILLAGE_SMALL"/>
+		<BigVillage Value="SET-LIGHT_BIG_VILLAGE"/>
+		<BigVillageEvent Value="EVENTC-LIGHTBRINGERS_VILLAGE_MED"/>
+		<Army Value="GROUP-LIGHT_6P_6M_6S"/>
+		<ArmyEvent Value="EVENTC-ARMY_LIGHTBRINGERS"/>
+		<Civilian Value="GROUP-LIGHT_4P_4M_4S"/>
+		<CivilianEvent Value="EVENTC-ARMY_LIGHTBRINGERS"/>
+	</FAC-LIGHTBRINGERS>
+
+	<FAC-FOREST_DEMONS CompulsoryAttendent="FALSE" Rarity="20">
+		<LoyaltyTag Value="TAG-LOYALTY_FOREST_DEMONS"/>
+		<DescriptionInfo Name="DES_FACTIONS_FOREST_DEMONS" Description="DES_PLACEHOLDER_DES"  IconName="FactionForestDemons"/>
+		<UnitsBehavior Value="BEH-NORMAL"/>
+		<SmallVillage Value="SET-FOREST_SMALL_VILLAGE"/>
+		<SmallVillageEvent Value="EVENTC-FOREST_DEMONS_VILLAGE_SMALL"/>
+		<BigVillage Value="SET-FOREST_DEMONS_BIG_VILLAGE"/>
+		<BigVillageEvent Value="EVENTC-FOREST_DEMONS_VILLAGE_MED"/>
+		<Army Value="GROUP-VILY_4P_4M_3S"/>
+		<ArmyEvent Value="EVENTC-ARMY_FOREST_DEMONS"/>
+		<Civilian Value="GROUP-PINECONETTES_0P_3M_2S"/>
+		<CivilianEvent Value="EVENTC-ARMY_FOREST_DEMONS"/>
+	</FAC-FOREST_DEMONS>
+	<FAC-NIGHT_DEMONS CompulsoryAttendent="FALSE" Rarity="20">
+		<LoyaltyTag Value="TAG-LOYALTY_NIGHT_DEMONS"/>
+		<DescriptionInfo Name="DES_FACTIONS_NIGHT_DEMONS" Description="DES_PLACEHOLDER_DES"  IconName="FactionNightDemons"/>
+		<UnitsBehavior Value="BEH-NORMAL"/>
+		<SmallVillage Value="SET-NIGHT_SMALL_VILLAGE"/>
+		<SmallVillageEvent Value="EVENTC-NIGHT_DEMONS_VILLAGE_SMALL"/>
+		<BigVillage Value="SET-NIGHTS_BIG_VILLAGE"/>
+		<BigVillageEvent Value="EVENTC-NIGHT_DEMONS_VILLAGE_MED"/>
+		<Army Value="GROUP-STRIGA_MASTER_ONE_4P_4M_5S"/>
+		<ArmyEvent Value="EVENTC-ARMY_NIGHT_DEMONS"/>
+		<Civilian Value="GROUP-STRIGA_MASTER_ONE_4P_4M_5S"/>
+		<CivilianEvent Value="EVENTC-ARMY_NIGHT_DEMONS"/>
+	</FAC-NIGHT_DEMONS>
+	<FAC-WATER_DEMONS CompulsoryAttendent="FALSE" Rarity="20">
+		<LoyaltyTag Value="TAG-LOYALTY_WATER_DEMONS"/>
+		<DescriptionInfo Name="DES_FACTIONS_WATER_DEMONS" Description="DES_PLACEHOLDER_DES"  IconName="FactionWaterDemons"/>
+		<UnitsBehavior Value="BEH-NORMAL"/>
+		<SmallVillage Value="SET-WATER_SMALL_VILLAGE"/>
+		<SmallVillageEvent Value="EVENTC-WOODKIN_VILLAGE_SMALL"/>
+		<BigVillage Value="SET-WATER_SMALL_VILLAGE"/>
+		<BigVillageEvent Value="EVENTC-WOODKIN_VILLAGE_MED"/>
+		<Army Value="GROUP-RUSALKA_4P_5M_4S"/>
+		<ArmyEvent Value="EVENTC-ARMY_SLAVYAN"/>
+		<Civilian Value="GROUP-RUSALKA_4P_5M_4S"/>
+		<CivilianEvent Value="EVENTC-ARMY_SLAVYAN"/>
+	</FAC-WATER_DEMONS>
+	<FAC-ICE_DEMONS CompulsoryAttendent="FALSE" Rarity="20">
+		<LoyaltyTag Value="TAG-LOYALTY_ICE_DEMONS"/>
+		<DescriptionInfo Name="DES_FACTIONS_ICE_DEMONS" Description="DES_PLACEHOLDER_DES"  IconName="FactionIceDemons"/>
+		<UnitsBehavior Value="BEH-NORMAL"/>
+		<SmallVillage Value="SET-ICE_SMALL_VILLAGE"/>
+		<SmallVillageEvent Value="EVENTC-ICE_DEMONS_VILLAGE_SMALL"/>
+		<BigVillage Value="SET-ICE_BIG_VILLAGE"/>
+		<BigVillageEvent Value="EVENTC-ICE_DEMONS_VILLAGE_MED"/>
+		<Army Value="GROUP-SNIEZYNKI_5P_5M_5S"/>
+		<ArmyEvent Value="EVENTC-ARMY_ICE_DEMONS"/>
+		<Civilian Value="GROUP-SNIEZYNKI_5P_5M_5S"/>
+		<CivilianEvent Value="EVENTC-ARMY_ICE_DEMONS"/>
+	</FAC-ICE_DEMONS>
+
+	<FAC-STINGERS CompulsoryAttendent="FALSE" Rarity="20">
+		<LoyaltyTag Value="TAG-LOYALTY_STINGERS"/>
+		<DescriptionInfo Name="DES_FACTIONS_STINGERS" Description="DES_PLACEHOLDER_DES"  IconName="FactionStingers"/>
+		<UnitsBehavior Value="BEH-NORMAL"/>
+		<SmallVillage Value="SET-STINGETS_SMALL_VILLAGE"/>
+		<SmallVillageEvent Value="EVENTC-STINGERS_VILLAGE_SMALL"/>
+		<BigVillage Value="SET-STINGETS_BIG_VILLAGE"/>
+		<BigVillageEvent Value="EVENTC-STINGERS_VILLAGE_MED"/>
+		<Army Value="GROUP-CITY_ARMY_STINGERS_4P_3M_1S"/>
+		<ArmyEvent Value="EVENTC-ARMY_STINGERS"/>
+		<Civilian Value="GROUP-BEES_2P_1M_0S"/>
+		<CivilianEvent Value="EVENTC-ARMY_STINGERS"/>
+	</FAC-STINGERS>
+	
+	<FAC-SHADOW_KIN CompulsoryAttendent="FALSE" Rarity="20">
+		<LoyaltyTag Value="TAG-LOYALTY_SHADOW_KIN"/>
+		<DescriptionInfo Name="DES_FACTIONS_SHADOW_KIN" Description="DES_PLACEHOLDER_DES"  IconName="FactionShadowKin"/>
+		<UnitsBehavior Value="BEH-NORMAL"/>
+		<SmallVillage Value="SET-SHADOW_KIN_SMALL_VILLAGE"/>
+		<SmallVillageEvent Value="EVENTC-SHADOWKIN_VILLAGE_SMALL"/>
+		<BigVillage Value="SET-SHADOW_KIN_BIG_VILLAGE"/>
+		<BigVillageEvent Value="EVENTC-SHADOWKIN_VILLAGE_MED"/>
+		<Army Value="GROUP-LOTS_DEMON_D_7P_6M_7S"/>
+		<ArmyEvent Value="EVENTC-ARMY_SHADOWKIN"/>
+		<Civilian Value="GROUP-ELF_SHADOW_5P_5M_5S"/>
+		<CivilianEvent Value="EVENTC-ARMY_SHADOWKIN"/>
+	</FAC-SHADOW_KIN>
+	
+	
+	<FAC-NEUTRAL_BEAST CompulsoryAttendent="FALSE" Rarity="1">
+		<LoyaltyTag Value="TAG-LOYALTY_NEUTRAL"/>
+		<DescriptionInfo Name="DES_FACTIONS_BEASTS" Description="DES_PLACEHOLDER_DES"  IconName="Placeholder"/>
+		<UnitsBehavior Value="BEH-NORMAL"/>
+		<Army Value="GROUP-SPIDER_0P_0M_0S"/>
+		<Army Value="GROUP-SPIDERS_1P_1M_0S"/>
+		<Army Value="GROUP-LOTS_SPIDERS_3P_2M_1S"/>
+		<Army Value="GROUP-BEES_1P_1M_0S"/>
+		<Army Value="GROUP-BEES_2P_1M_0S"/>
+		<Army Value="GROUP-BEES_3P_2M_0S"/>
+		<Army Value="GROUP-LOTS_BEES_4P_3M_1S"/>
+		<Army Value="GROUP-HORD_BEES_5P_4M_2S"/>
+		<Army Value="GROUP-RATS_0P_0M_0S"/>
+		<Army Value="GROUP-RATS_1P_1M_1S"/>
+		<Army Value="GROUP-FAT_RATS_MIX_1P_1M_1S"/>
+		<Army Value="GROUP-UNLI_VERMIN_3P_2M_2S"/>
+		<Army Value="GROUP-SNAKES_1P_0M_0S"/>
+		<Army Value="GROUP-SNAKES_2P_1M_0S"/>
+		<Army Value="GROUP-SNAKES_3P_2M_0S"/>
+		<Army Value="GROUP-WOLVES_2P_1M_0S"/>
+		<Army Value="GROUP-WOLVES_3P_1M_0S"/>
+		<Army Value="GROUP-WOLVES_STARVING_2P_1M_0S"/>
+		<Army Value="GROUP-BOARS_1P_1M_0S"/>
+		<Army Value="GROUP-BOARS_2P_1M_0S"/>
+		<Army Value="GROUP-BATS_0P_0M_1S"/>
+		<Army Value="GROUP-BATS_1P_1M_2S"/>
+		<Army Value="GROUP-BATS_1P_1M_2S"/>
+		<Army Value="GROUP-CROW_1P_1M_1S"/>
+		<Army Value="GROUP-CROW_2P_2M_2S"/>
+		<Army Value="GROUP-BEARS_3P_1M_0S"/>
+		<Army Value="GROUP-BEARS_4P_1M_0S"/>
+		<Army Value="GROUP-BEARS_5P_2M_0S"/>
+		<Army Value="GROUP-SWAMPER_1P_3M_2S"/>
+		<ArmyEvent Value="EVENTC-ARMY_NEUTRAL_BEAST"/>
+		<Civilian Value="GROUP-BEES_2P_1M_0S"/>
+		<CivilianEvent Value="EVENTC-ARMY_NEUTRAL_BEAST"/>
+	</FAC-NEUTRAL_BEAST>
+	<FAC-NEUTRAL_WATER_BEAST CompulsoryAttendent="FALSE" Rarity="1">
+		<LoyaltyTag Value="TAG-LOYALTY_NEUTRAL"/>
+		<DescriptionInfo Name="DES_FACTIONS_WATER_BEASTS" Description="DES_PLACEHOLDER_DES"  IconName="Placeholder"/>
+		<UnitsBehavior Value="BEH-NORMAL"/>
+		<Army Value="GROUP-SEA_BEAST_2P_1M_1S"/>
+		<Army Value="GROUP-SEA_BEAST_3P_1M_1S"/>
+		<Army Value="GROUP-LOTS_SEA_BEAST_4P_2M_1S"/>
+		<Army Value="GROUP-JURATA_MIX_6P_6M_6S"/>
+		<ArmyEvent Value="EVENTC-ARMY_NEUTRAL_BEAST"/>
+		<Civilian Value="GROUP-SEA_BEAST_2P_1M_1S"/>
+		<CivilianEvent Value="EVENTC-ARMY_NEUTRAL_BEAST"/>
+	</FAC-NEUTRAL_WATER_BEAST>
+	<FAC-NEUTRAL_WATER_MYTHICAL CompulsoryAttendent="FALSE" Rarity="1">
+		<LoyaltyTag Value="TAG-LOYALTY_NEUTRAL"/>
+		<DescriptionInfo Name="DES_FACTIONS_MYTHICAL_WATER_BEASTS" Description="DES_PLACEHOLDER_DES"  IconName="Placeholder"/>
+		<UnitsBehavior Value="BEH-NORMAL"/>
+		<Army Value="GROUP-JURATA_MIX_6P_6M_6S"/>
+		<Army Value="GROUP-ONE_KRAKEN_10P_8M_8S"/>
+		<ArmyEvent Value="EVENTC-ARMY_NEUTRAL_MYTHICAL"/>
+		<Civilian Value="GROUP-JURATA_MIX_6P_6M_6S"/>
+		<CivilianEvent Value="EVENTC-ARMY_NEUTRAL_MYTHICAL"/>
+	</FAC-NEUTRAL_WATER_MYTHICAL>
+	<FAC-NEUTRAL_HUM_BANDITS CompulsoryAttendent="FALSE" Rarity="1">
+		<LoyaltyTag Value="TAG-LOYALTY_NEUTRAL"/>
+		<DescriptionInfo Name="DES_FACTIONS_BANDITS" Description="DES_PLACEHOLDER_DES"  IconName="Placeholder"/>
+		<UnitsBehavior Value="BEH-NORMAL"/>
+		<Army Value="GROUP-BANDITS_3P_3M_1S"/>
+		<Army Value="GROUP-BANDITS_4P_3M_1S"/>
+		<Army Value="GROUP-BANDITS_5P_4M_3S"/>
+		<Army Value="GROUP-LOTS_BANDITS_6P_5M_4S"/>
+		<ArmyEvent Value="EVENTC-ARMY_NEUTRAL_HUMANOID"/>
+		<Civilian Value="GROUP-BANDITS_4P_3M_1S"/>
+		<CivilianEvent Value="EVENTC-ARMY_NEUTRAL_HUMANOID"/>
+	</FAC-NEUTRAL_HUM_BANDITS>
+	<FAC-NEUTRAL_HUM CompulsoryAttendent="FALSE" Rarity="1">
+		<LoyaltyTag Value="TAG-LOYALTY_NEUTRAL"/>
+		<DescriptionInfo Name="DES_FACTIONS_HUMANS" Description="DES_PLACEHOLDER_DES"  IconName="Placeholder"/>
+		<UnitsBehavior Value="BEH-NORMAL"/>
+		<Army Value="GROUP-HUMS_2P_2M_1S"/>
+		<Army Value="GROUP-HUMS_3P_2M_1S"/>
+		<Army Value="GROUP-HUMS_4P_2M_2S"/>
+		<Army Value="GROUP-HORDE_HUMS_5P_4M_3S"/>
+		<ArmyEvent Value="EVENTC-ARMY_NEUTRAL_HUMANOID"/>
+		<Civilian Value="GROUP-BANDITS_4P_3M_1S"/>
+		<CivilianEvent Value="EVENTC-ARMY_NEUTRAL_HUMANOID"/>
+	</FAC-NEUTRAL_HUM>
+	<FAC-NEUTRAL_ELF CompulsoryAttendent="FALSE" Rarity="1">
+		<LoyaltyTag Value="TAG-LOYALTY_NEUTRAL"/>
+		<DescriptionInfo Name="DES_FACTIONS_ELVES" Description="DES_PLACEHOLDER_DES"  IconName="Placeholder"/>
+		<UnitsBehavior Value="BEH-NORMAL"/>
+		<Army Value="GROUP-ELVES_5P_5M_4S"/>
+		<Army Value="GROUP-ELVES_6P_6M_5S"/>
+		<Army Value="GROUP-LOTS_ELVES_8P_8M_7S"/>
+		<ArmyEvent Value="EVENTC-ARMY_NEUTRAL_HUMANOID"/>
+		<Civilian Value="GROUP-BANDITS_4P_3M_1S"/>
+		<CivilianEvent Value="EVENTC-ARMY_NEUTRAL_HUMANOID"/>
+	</FAC-NEUTRAL_ELF>
+	<FAC-NEUTRAL_ORCS CompulsoryAttendent="FALSE" Rarity="1">
+		<LoyaltyTag Value="TAG-LOYALTY_NEUTRAL"/>
+		<DescriptionInfo Name="DES_FACTIONS_ORCS" Description="DES_PLACEHOLDER_DES"  IconName="Placeholder"/>
+		<UnitsBehavior Value="BEH-NORMAL"/>
+		<Army Value="GROUP-ORCS_4P_3M_1S"/>
+		<Army Value="GROUP-ORCS_5P_3M_1S"/>
+		<Army Value="GROUP-LOTS_ORCS_7P_6M_6S"/>
+		<ArmyEvent Value="EVENTC-ARMY_NEUTRAL_HUMANOID"/>
+		<Civilian Value="GROUP-BANDITS_4P_3M_1S"/>
+		<CivilianEvent Value="EVENTC-ARMY_NEUTRAL_HUMANOID"/>
+	</FAC-NEUTRAL_ORCS>
+	<FAC-NEUTRAL_GOBLINS CompulsoryAttendent="FALSE" Rarity="1">
+		<LoyaltyTag Value="TAG-LOYALTY_NEUTRAL"/>
+		<DescriptionInfo Name="DES_FACTIONS_GOBLINS" Description="DES_PLACEHOLDER_DES"  IconName="Placeholder"/>
+		<UnitsBehavior Value="BEH-NORMAL"/>
+		<Army Value="GROUP-GOBS_2P_4M_3S"/>
+		<Army Value="GROUP-GOBS_4P_3M_4S"/>
+		<Army Value="GROUP-LOTS_GOBS_4P_4M_5S"/>
+		<ArmyEvent Value="EVENTC-ARMY_NEUTRAL_HUMANOID"/>
+		<Civilian Value="GROUP-BANDITS_4P_3M_1S"/>
+		<CivilianEvent Value="EVENTC-ARMY_NEUTRAL_HUMANOID"/>
+	</FAC-NEUTRAL_GOBLINS>
+	<FAC-NEUTRAL_DWARVES CompulsoryAttendent="FALSE" Rarity="1">
+		<LoyaltyTag Value="TAG-LOYALTY_NEUTRAL"/>
+		<DescriptionInfo Name="DES_FACTIONS_DWARVES" Description="DES_PLACEHOLDER_DES"  IconName="Placeholder"/>
+		<UnitsBehavior Value="BEH-NORMAL"/>
+		<Army Value="GROUP-DWARVES_6P_5M_2S"/>
+		<Army Value="GROUP-DWARVES_7P_6M_2S"/>
+		<Army Value="GROUP-LOTS_DWARVES_8P_7M_5S"/>
+		<ArmyEvent Value="EVENTC-ARMY_NEUTRAL_HUMANOID"/>
+		<Civilian Value="GROUP-BANDITS_4P_3M_1S"/>
+		<CivilianEvent Value="EVENTC-ARMY_NEUTRAL_HUMANOID"/>
+	</FAC-NEUTRAL_DWARVES>
+	<FAC-NEUTRAL_SPIRIT CompulsoryAttendent="FALSE" Rarity="1">
+		<LoyaltyTag Value="TAG-LOYALTY_NEUTRAL"/>
+		<DescriptionInfo Name="DES_FACTIONS_SPIRITS" Description="DES_PLACEHOLDER_DES"  IconName="Placeholder"/>
+		<UnitsBehavior Value="BEH-NORMAL"/>
+		<Army Value="GROUP-GHOST_2P_3M_4S"/>
+		<Army Value="GROUP-GHOST_3P_4M_5S"/>
+		<Army Value="GROUP-LOTS_GHOST_4P_5M_6S"/>
+		<Army Value="GROUP-WRAITH_4P_3M_4S"/>
+		<Army Value="GROUP-WRAITH_5P_4M_5S"/>
+		<Army Value="GROUP-LOTS_WRAITH_6P_5M_6S"/>
+		<ArmyEvent Value="EVENTC-ARMY_NEUTRAL_SPIRIT"/>
+		<Civilian Value="GROUP-GHOST_3P_4M_5S"/>
+		<CivilianEvent Value="EVENTC-ARMY_NEUTRAL_SPIRIT"/>
+	</FAC-NEUTRAL_SPIRIT>
+	<FAC-NEUTRAL_MYTHICAL CompulsoryAttendent="FALSE" Rarity="1">
+		<LoyaltyTag Value="TAG-LOYALTY_NEUTRAL"/>
+		<DescriptionInfo Name="DES_FACTIONS_MYTHICAL" Description="DES_PLACEHOLDER_DES"  IconName="Placeholder"/>
+		<UnitsBehavior Value="BEH-NORMAL"/>
+		<Army Value="GROUP-DRAGON_ONE_10P_8M_8S"/>
+		<Army Value="GROUP-ZMEY_ONE_8P_10M_9S"/>
+		<ArmyEvent Value="EVENTC-ARMY_NEUTRAL_MYTHICAL"/>
+		<Civilian Value="GROUP-DRAGON_ONE_10P_8M_8S"/>
+		<CivilianEvent Value="EVENTC-ARMY_NEUTRAL_MYTHICAL"/>
+	</FAC-NEUTRAL_MYTHICAL>
+	<FAC-NEUTRAL_MROKI CompulsoryAttendent="FALSE" Rarity="1">
+		<LoyaltyTag Value="TAG-LOYALTY_NEUTRAL"/>
+		<DescriptionInfo Name="DES_FACTIONS_MROKI" Description="DES_PLACEHOLDER_DES"  IconName="Placeholder"/>
+		<UnitsBehavior Value="BEH-NORMAL"/>
+		<Army Value="GROUP-MROKI_8P_6M_8S"/>
+		<Army Value="GROUP-MROKI_MIX_6P_5M_6S"/>
+		<ArmyEvent Value="EVENTC-ARMY_NEUTRAL_MYTHICAL"/>
+		<Civilian Value="GROUP-ELF_SHADOW_MIX_4P_4M_4S"/>
+		<CivilianEvent Value="EVENTC-ARMY_NEUTRAL_MYTHICAL"/>
+	</FAC-NEUTRAL_MROKI>
+	<FAC-NEUTRAL_TROLL CompulsoryAttendent="FALSE" Rarity="1">
+		<LoyaltyTag Value="TAG-LOYALTY_NEUTRAL"/>
+		<DescriptionInfo Name="DES_FACTIONS_TROLLS" Description="DES_PLACEHOLDER_DES"  IconName="Placeholder"/>
+		<UnitsBehavior Value="BEH-NORMAL"/>
+		<Army Value="GROUP-TROLL_ROCK_MIX_9P_7M_6S"/>
+		<Army Value="GROUP-TROLL_ROCK_MIX_9P_7M_6S"/>
+		<Army Value="GROUP-LOTS_SWAMPER_2P_4M_3S"/>
+		<ArmyEvent Value="EVENTC-ARMY_NEUTRAL_TROLL"/>
+		<Civilian Value="GROUP-TROLL_ROCK_MIX_9P_7M_6S"/>
+		<CivilianEvent Value="EVENTC-ARMY_NEUTRAL_TROLL"/>
+	</FAC-NEUTRAL_TROLL>
+	<FAC-NEUTRAL_ICE_TROLL CompulsoryAttendent="FALSE" Rarity="1">
+		<LoyaltyTag Value="TAG-LOYALTY_NEUTRAL"/>
+		<DescriptionInfo Name="DES_FACTIONS_ICE_TROLLS" Description="DES_PLACEHOLDER_DES"  IconName="Placeholder"/>
+		<UnitsBehavior Value="BEH-NORMAL"/>
+		<Army Value="GROUP-TROLL_ROCK_MIX_9P_7M_6S"/>
+		<Army Value="GROUP-TROLL_ROCK_MIX_9P_7M_6S"/>
+		<Army Value="GROUP-LOTS_ICICLES_2P_4M_3S"/>
+		<ArmyEvent Value="EVENTC-ARMY_NEUTRAL_TROLL"/>
+		<Civilian Value="GROUP-LOTS_ICICLES_2P_4M_3S"/>
+		<CivilianEvent Value="EVENTC-ARMY_NEUTRAL_TROLL"/>
+	</FAC-NEUTRAL_ICE_TROLL>
+	<FAC-NEUTRAL_LAVA_TROLL CompulsoryAttendent="FALSE" Rarity="1">
+		<LoyaltyTag Value="TAG-LOYALTY_NEUTRAL"/>
+		<DescriptionInfo Name="DES_FACTIONS_LAVA_TROLLS" Description="DES_PLACEHOLDER_DES"  IconName="Placeholder"/>
+		<UnitsBehavior Value="BEH-NORMAL"/>
+		<Army Value="GROUP-TROLL_ROCK_MIX_9P_7M_6S"/>
+		<Army Value="GROUP-TROLL_ROCK_MIX_9P_7M_6S"/>
+		<Army Value="GROUP-LOTS_LAVA_ROCKERS_2P_4M_3S"/>
+		<ArmyEvent Value="EVENTC-ARMY_NEUTRAL_TROLL"/>
+		<Civilian Value="GROUP-LOTS_LAVA_ROCKERS_2P_4M_3S"/>
+		<CivilianEvent Value="EVENTC-ARMY_NEUTRAL_TROLL"/>
+	</FAC-NEUTRAL_LAVA_TROLL>
+	<FAC-NEUTRAL_PHYSICAL_DEMON_FOREST CompulsoryAttendent="FALSE" Rarity="1">
+		<LoyaltyTag Value="TAG-LOYALTY_NEUTRAL"/>
+		<DescriptionInfo Name="DES_FACTIONS_FOREST_DEMONS" Description="DES_PLACEHOLDER_DES"  IconName="Placeholder"/>
+		<UnitsBehavior Value="BEH-NORMAL"/>
+		<Army Value="GROUP-KARAKANDZAS_4P_3M_2S"/>
+		<Army Value="GROUP-BIES_6P_5M_5S"/>
+		<Army Value="GROUP-ALKONOSTS_5P_4M_3S"/>
+		<ArmyEvent Value="EVENTC-ARMY_NEUTRAL_PHYSICAL_DEMON"/>
+		<Civilian Value="GROUP-KARAKANDZAS_4P_3M_2S"/>
+		<CivilianEvent Value="EVENTC-ARMY_NEUTRAL_PHYSICAL_DEMON"/>
+	</FAC-NEUTRAL_PHYSICAL_DEMON_FOREST>
+	<FAC-NEUTRAL_PHYSICAL_DEMON CompulsoryAttendent="FALSE" Rarity="1">
+		<LoyaltyTag Value="TAG-LOYALTY_NEUTRAL"/>
+		<DescriptionInfo Name="DES_FACTIONS_DEMONS" Description="DES_PLACEHOLDER_DES"  IconName="Placeholder"/>
+		<UnitsBehavior Value="BEH-NORMAL"/>
+		<Army Value="GROUP-LESHY_MIX_7P_6M_7S"/>
+		<Army Value="GROUP-VILY_4P_4M_3S"/>
+		<ArmyEvent Value="EVENTC-ARMY_NEUTRAL_PHYSICAL_DEMON"/>
+		<Civilian Value="GROUP-KARAKANDZAS_4P_3M_2S"/>
+		<CivilianEvent Value="EVENTC-ARMY_NEUTRAL_PHYSICAL_DEMON"/>
+	</FAC-NEUTRAL_PHYSICAL_DEMON>
+	<FAC-NEUTRAL_PHYSICAL_DEMON_NIGHT CompulsoryAttendent="FALSE" Rarity="1">
+		<LoyaltyTag Value="TAG-LOYALTY_NEUTRAL"/>
+		<DescriptionInfo Name="DES_FACTIONS_NIGHT_DEMONS" Description="DES_PLACEHOLDER_DES"  IconName="Placeholder"/>
+		<UnitsBehavior Value="BEH-NORMAL"/>
+		<Army Value="GROUP-WEREWOLFS_7P_4M_4S"/>
+		<Army Value="GROUP-STRIGA_3P_3M_3S"/>
+		<Army Value="GROUP-STRIGA_MASTER_ONE_4P_4M_5S"/>
+		<ArmyEvent Value="EVENTC-ARMY_NEUTRAL_PHYSICAL_DEMON"/>
+		<Civilian Value="GROUP-WEREWOLFS_7P_4M_4S"/>
+		<CivilianEvent Value="EVENTC-ARMY_NEUTRAL_PHYSICAL_DEMON"/>
+	</FAC-NEUTRAL_PHYSICAL_DEMON_NIGHT>
+	<FAC-NEUTRAL_PHYSICAL_DEMON_WATER CompulsoryAttendent="FALSE" Rarity="1">
+		<LoyaltyTag Value="TAG-LOYALTY_NEUTRAL"/>
+		<DescriptionInfo Name="DES_FACTIONS_WATER_DEMONS" Description="DES_PLACEHOLDER_DES"  IconName="Placeholder"/>
+		<UnitsBehavior Value="BEH-NORMAL"/>
+		<Army Value="GROUP-UTOPIECS_3P_3M_3S"/>
+		<Army Value="GROUP-RUSALKA_4P_5M_4S"/>
+		<ArmyEvent Value="EVENTC-ARMY_NEUTRAL_PHYSICAL_DEMON"/>
+		<Civilian Value="GROUP-UTOPIECS_3P_3M_3S"/>
+		<CivilianEvent Value="EVENTC-ARMY_NEUTRAL_PHYSICAL_DEMON"/>
+	</FAC-NEUTRAL_PHYSICAL_DEMON_WATER>
+	<FAC-NEUTRAL_PHYSICAL_DEMON_ICE CompulsoryAttendent="FALSE" Rarity="1">
+		<LoyaltyTag Value="TAG-LOYALTY_NEUTRAL"/>
+		<DescriptionInfo Name="DES_FACTIONS_ICE_DEMONS" Description="DES_PLACEHOLDER_DES"  IconName="Placeholder"/>
+		<UnitsBehavior Value="BEH-NORMAL"/>
+		<Army Value="GROUP-DZIAD_MROZ_ONE_7P_7M_7S"/>
+		<Army Value="GROUP-SNIEZYNKI_5P_5M_5S"/>
+		<ArmyEvent Value="EVENTC-ARMY_NEUTRAL_PHYSICAL_DEMON"/>
+		<Civilian Value="GROUP-SNIEZYNKI_5P_5M_5S"/>
+		<CivilianEvent Value="EVENTC-ARMY_NEUTRAL_PHYSICAL_DEMON"/>
+	</FAC-NEUTRAL_PHYSICAL_DEMON_ICE>
+	<FAC-NEUTRAL_PHYSICAL_DEMON_LIGHT CompulsoryAttendent="FALSE" Rarity="1">
+		<LoyaltyTag Value="TAG-LOYALTY_NEUTRAL"/>
+		<DescriptionInfo Name="DES_FACTIONS_LIGHT_DEMONS" Description="DES_PLACEHOLDER_DES"  IconName="Placeholder"/>
+		<UnitsBehavior Value="BEH-NORMAL"/>
+		<Army Value="GROUP-LIGHT_2P_2M_2S"/>
+		<Army Value="GROUP-LIGHT_6P_6M_6S"/>
+		<ArmyEvent Value="EVENTC-ARMY_NEUTRAL_PHYSICAL_DEMON"/>
+		<Civilian Value="GROUP-LIGHT_2P_2M_2S"/>
+		<CivilianEvent Value="EVENTC-ARMY_NEUTRAL_PHYSICAL_DEMON"/>
+	</FAC-NEUTRAL_PHYSICAL_DEMON_LIGHT>
+	<FAC-NEUTRAL_SOCIAL_DEMON CompulsoryAttendent="FALSE" Rarity="1">
+		<LoyaltyTag Value="TAG-LOYALTY_NEUTRAL"/>
+		<DescriptionInfo Name="DES_FACTIONS_DEMONS" Description="DES_PLACEHOLDER_DES"  IconName="Placeholder"/>
+		<UnitsBehavior Value="BEH-NORMAL"/>
+		<Army Value="GROUP-BABA_YAGA_4P_4M_6S"/>
+		<Army Value="GROUP-SKSHACKS_1P_3M_2S"/>
+		<Army Value="GROUP-POLUDNICAS_3P_4M_4S"/>
+		<Army Value="GROUP-CMUCH_2P_3M_3S"/>
+		<Army Value="GROUP-SYRINS_3P_6M_4S"/>
+		<Army Value="GROUP-PINECONETTES_0P_3M_2S"/>
+		<Army Value="GROUP-VIATROVIEC_3P_4M_4S"/>
+		<ArmyEvent Value="EVENTC-ARMY_NEUTRAL_SOCIAL"/>
+		<Civilian Value="GROUP-BABA_YAGA_4P_4M_6S"/>
+		<CivilianEvent Value="EVENTC-ARMY_NEUTRAL_SOCIAL"/>
+	</FAC-NEUTRAL_SOCIAL_DEMON>
+	<FAC-NEUTRAL_SOCIAL_DEMON_FOREST CompulsoryAttendent="FALSE" Rarity="1">
+		<LoyaltyTag Value="TAG-LOYALTY_NEUTRAL"/>
+		<DescriptionInfo Name="DES_FACTIONS_FOREST_DEMONS" Description="DES_PLACEHOLDER_DES"  IconName="Placeholder"/>
+		<UnitsBehavior Value="BEH-NORMAL"/>
+		<Army Value="GROUP-PINECONETTES_0P_3M_2S"/>
+		<Army Value="GROUP-VIATROVIEC_3P_4M_4S"/>
+		<ArmyEvent Value="EVENTC-ARMY_NEUTRAL_SOCIAL"/>
+		<Civilian Value="GROUP-PINECONETTES_0P_3M_2S"/>
+		<CivilianEvent Value="EVENTC-ARMY_NEUTRAL_SOCIAL"/>
+	</FAC-NEUTRAL_SOCIAL_DEMON_FOREST>
+	<FAC-NEUTRAL_SOCIAL_DEMON_NIGHT CompulsoryAttendent="FALSE" Rarity="1">
+		<LoyaltyTag Value="TAG-LOYALTY_NEUTRAL"/>
+		<DescriptionInfo Name="DES_FACTIONS_NIGHT_DEMONS" Description="DES_PLACEHOLDER_DES"  IconName="Placeholder"/>
+		<UnitsBehavior Value="BEH-NORMAL"/>
+		<Army Value="GROUP-STRIGA_MISTRESS_ONE_4P_5M_4S"/>
+		<Army Value="GROUP-STRIGA_MASTER_ONE_4P_4M_5S"/>
+		<ArmyEvent Value="EVENTC-ARMY_NEUTRAL_SOCIAL"/>
+		<Civilian Value="GROUP-STRIGA_MISTRESS_ONE_4P_5M_4S"/>
+		<CivilianEvent Value="EVENTC-ARMY_NEUTRAL_SOCIAL"/>
+	</FAC-NEUTRAL_SOCIAL_DEMON_NIGHT>
+	<FAC-NEUTRAL_SOCIAL_DEMON_WATER CompulsoryAttendent="FALSE" Rarity="1">
+		<LoyaltyTag Value="TAG-LOYALTY_NEUTRAL"/>
+		<DescriptionInfo Name="DES_FACTIONS_WATER_DEMONS" Description="DES_PLACEHOLDER_DES"  IconName="Placeholder"/>
+		<UnitsBehavior Value="BEH-NORMAL"/>
+		<Army Value="GROUP-VODNIKS_4P_6M_4S"/>
+		<Army Value="GROUP-RUSALKA_4P_5M_4S"/>
+		<Army Value="GROUP-BEFUDDLER_3P_4M_3S"/>
+		<ArmyEvent Value="EVENTC-ARMY_NEUTRAL_SOCIAL"/>
+		<Civilian Value="GROUP-STRIGA_MISTRESS_ONE_4P_5M_4S"/>
+		<CivilianEvent Value="EVENTC-ARMY_NEUTRAL_SOCIAL"/>
+	</FAC-NEUTRAL_SOCIAL_DEMON_WATER>
+	<FAC-NEUTRAL_SOCIAL_DEMON_ICE CompulsoryAttendent="FALSE" Rarity="1">
+		<LoyaltyTag Value="TAG-LOYALTY_NEUTRAL"/>
+		<DescriptionInfo Name="DES_FACTIONS_ICE_DEMONS" Description="DES_PLACEHOLDER_DES"  IconName="Placeholder"/>
+		<UnitsBehavior Value="BEH-NORMAL"/>
+		<Army Value="GROUP-DZIAD_MROZ_ONE_7P_7M_7S"/>
+		<Army Value="GROUP-SNIEZYNKI_5P_5M_5S"/>
+		<ArmyEvent Value="EVENTC-ARMY_NEUTRAL_SOCIAL"/>
+		<Civilian Value="GROUP-STRIGA_MISTRESS_ONE_4P_5M_4S"/>
+		<CivilianEvent Value="EVENTC-ARMY_NEUTRAL_SOCIAL"/>
+	</FAC-NEUTRAL_SOCIAL_DEMON_ICE>
+	<FAC-NEUTRAL_SOCIAL_DEMON_LIGHT CompulsoryAttendent="FALSE" Rarity="1">
+		<LoyaltyTag Value="TAG-LOYALTY_NEUTRAL"/>
+		<DescriptionInfo Name="DES_FACTIONS_LIGHT_DEMONS" Description="DES_PLACEHOLDER_DES"  IconName="Placeholder"/>
+		<UnitsBehavior Value="BEH-NORMAL"/>
+		<Army Value="GROUP-LIGHT_4P_4M_4S"/>
+		<Army Value="GROUP-LIGHT_6P_6M_6S"/>
+		<ArmyEvent Value="EVENTC-ARMY_NEUTRAL_SOCIAL"/>
+		<Civilian Value="GROUP-STRIGA_MISTRESS_ONE_4P_5M_4S"/>
+		<CivilianEvent Value="EVENTC-ARMY_NEUTRAL_SOCIAL"/>
+	</FAC-NEUTRAL_SOCIAL_DEMON_LIGHT>
+	<FAC-NEUTRAL_UNLIVING CompulsoryAttendent="FALSE" Rarity="1">
+		<LoyaltyTag Value="TAG-LOYALTY_NEUTRAL"/>
+		<DescriptionInfo Name="DES_FACTIONS_UNLIVING" Description="DES_PLACEHOLDER_DES"  IconName="Placeholder"/>
+		<UnitsBehavior Value="BEH-NORMAL"/>
+		<Army Value="GROUP-CORPSE_2P_1M_1S"/>
+		<Army Value="GROUP-UNLI_MIX_3P_1M_1S"/>
+		<Army Value="GROUP-UNLI_MIX_2P_1M_1S"/>
+		<Army Value="GROUP-UNLI_MIX_4P_2M_3S"/>
+		<Army Value="GROUP-HORDE_ORC_SKELETON_7P_3M_4S"/>
+		<ArmyEvent Value="EVENTC-ARMY_NEUTRAL_UNLIVING"/>
+		<Civilian Value="GROUP-LOTS_LAVA_ROCKERS_2P_4M_3S"/>
+		<CivilianEvent Value="EVENTC-ARMY_NEUTRAL_UNLIVING"/>
+	</FAC-NEUTRAL_UNLIVING>
+	
+	<FAC-TUTORIAL_NEUTRAL_BEAST CompulsoryAttendent="FALSE" Rarity="1">
+		<LoyaltyTag Value="TAG-LOYALTY_NEUTRAL"/>
+		<DescriptionInfo Name="DES_FACTIONS_BEASTS" Description="DES_PLACEHOLDER_DES"  IconName="Placeholder"/>
+		<UnitsBehavior Value="BEH-NORMAL"/>
+		<Army Value="GROUP-SPIDER_0P_0M_0S"/>
+		<Army Value="GROUP-RATS_0P_0M_0S"/>
+		<Army Value="GROUP-RATS_1P_1M_1S"/>
+		<Army Value="GROUP-SNAKES_1P_0M_0S"/>
+		<Army Value="GROUP-WOLF_STARVING_1P_0M_0S"/>
+		<ArmyEvent Value="EVENTC-ARMY_NEUTRAL_BEAST"/>
+		<Civilian Value="GROUP-SPIDER_0P_0M_0S"/>
+		<CivilianEvent Value="EVENTC-ARMY_NEUTRAL_BEAST"/>
+	</FAC-TUTORIAL_NEUTRAL_BEAST>
+
+</FRACTIONS>

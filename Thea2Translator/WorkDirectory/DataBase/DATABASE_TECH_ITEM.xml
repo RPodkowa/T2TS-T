@@ -1,0 +1,446 @@
+﻿<ITEMS_TECH>
+	<ITEM_TECH-SWORDS UpgradeCost="1">
+		<DescriptionInfo Name="DES_TECH_SWORDS" Description="DES_TECH_SWORDS_DES" IconName="RecipeSwords"/>
+		<UnlockRecipe UnlockPrimeRes="2" UnlockSecRes="2">
+			<ItemRecipe Value="ITEM_REC-SWORD_1H"/>
+		</UnlockRecipe>
+		<UnlockRecipe UnlockPrimeRes="2" UnlockSecRes="2">
+			<ItemRecipe Value="ITEM_REC-SWORD_2H"/>
+		</UnlockRecipe>
+	</ITEM_TECH-SWORDS>
+	<ITEM_TECH-SWORD_1H_1 UpgradeCost="1" >
+		<DescriptionInfo Name="DES_TECH_SWORD_1H_1" Description="DES_TECH_SWORD_1H_1_DES" IconName="RecipeSword1H1"/>
+		<UpgradeRecipe EssenceBonus="10" AdditionalPrimeRes="1" AdditionalSecRes="1">
+			<ItemRecipe Value="ITEM_REC-SWORD_1H"/>
+		</UpgradeRecipe>
+		<ParentItemTech Value="ITEM_TECH-SWORDS"/>
+	</ITEM_TECH-SWORD_1H_1>
+	<ITEM_TECH-SWORD_1H_2 UpgradeCost="1">
+		<DescriptionInfo Name="DES_TECH_SWORD_1H_2" Description="DES_TECH_SWORD_1H_2_DES" IconName="RecipeSword1H2"/>
+		<UpgradeRecipe EssenceBonus="10" AdditionalPrimeRes="1" AdditionalSecRes="1">
+			<ItemRecipe Value="ITEM_REC-SWORD_1H"/>
+		</UpgradeRecipe>
+		<ParentItemTech Value="ITEM_TECH-SWORD_1H_1"/>
+	</ITEM_TECH-SWORD_1H_2>
+	<ITEM_TECH-SWORD_2H_1 UpgradeCost="1" >
+		<DescriptionInfo Name="DES_TECH_SWORD_2H_1" Description="DES_TECH_SWORD_2H_1_DES" IconName="RecipeSword2H1"/>
+		<UpgradeRecipe EssenceBonus="10" AdditionalPrimeRes="1" AdditionalSecRes="1">
+			<ItemRecipe Value="ITEM_REC-SWORD_2H"/>
+		</UpgradeRecipe>
+		<ParentItemTech Value="ITEM_TECH-SWORDS"/>
+	</ITEM_TECH-SWORD_2H_1>
+	<ITEM_TECH-SWORD_2H_2 UpgradeCost="1">
+		<DescriptionInfo Name="DES_TECH_SWORD_2H_2" Description="DES_TECH_SWORD_2H_2_DES" IconName="RecipeSword2H2"/>
+		<UpgradeRecipe EssenceBonus="10" AdditionalPrimeRes="1" AdditionalSecRes="1">
+			<ItemRecipe Value="ITEM_REC-SWORD_2H"/>
+		</UpgradeRecipe>
+		<ParentItemTech Value="ITEM_TECH-SWORD_2H_1"/>
+	</ITEM_TECH-SWORD_2H_2>
+	<ITEM_TECH-AXES UpgradeCost="1">
+		<DescriptionInfo Name="DES_TECH_AXES" Description="DES_TECH_AXES_DES" IconName="RecipeAxes"/>
+		<UnlockRecipe UnlockPrimeRes="2" UnlockSecRes="2">
+			<ItemRecipe Value="ITEM_REC-AXE_1H"/>
+		</UnlockRecipe>
+		<UnlockRecipe UnlockPrimeRes="2" UnlockSecRes="2">
+			<ItemRecipe Value="ITEM_REC-AXE_2H"/>
+		</UnlockRecipe>
+	</ITEM_TECH-AXES>
+	<ITEM_TECH-AXE_1H_1 UpgradeCost="1" >
+		<DescriptionInfo Name="DES_TECH_AXE_1H_1" Description="DES_TECH_AXE_1H_1_DES" IconName="RecipeAxe1H1"/>
+		<UpgradeRecipe EssenceBonus="10" AdditionalPrimeRes="1" AdditionalSecRes="1">
+			<ItemRecipe Value="ITEM_REC-AXE_1H"/>
+		</UpgradeRecipe>
+		<ParentItemTech Value="ITEM_TECH-AXES"/>
+	</ITEM_TECH-AXE_1H_1>
+	<ITEM_TECH-AXE_1H_2 UpgradeCost="1">
+		<DescriptionInfo Name="DES_TECH_AXE_1H_2" Description="DES_TECH_AXE_1H_2_DES" IconName="RecipeAxe1H2"/>
+		<UpgradeRecipe EssenceBonus="10" AdditionalPrimeRes="1" AdditionalSecRes="1">
+			<ItemRecipe Value="ITEM_REC-AXE_1H"/>
+		</UpgradeRecipe>
+		<ParentItemTech Value="ITEM_TECH-AXE_1H_1"/>
+	</ITEM_TECH-AXE_1H_2>
+	<ITEM_TECH-AXE_2H_1 UpgradeCost="1" >
+		<DescriptionInfo Name="DES_TECH_AXE_2H_1" Description="DES_TECH_AXE_2H_1_DES" IconName="RecipeAxe2H1"/>
+		<UpgradeRecipe EssenceBonus="10" AdditionalPrimeRes="1" AdditionalSecRes="1">
+			<ItemRecipe Value="ITEM_REC-AXE_2H"/>
+		</UpgradeRecipe>
+		<ParentItemTech Value="ITEM_TECH-AXES"/>
+	</ITEM_TECH-AXE_2H_1>
+	<ITEM_TECH-AXE_2H_2 UpgradeCost="1">
+		<DescriptionInfo Name="DES_TECH_AXE_2H_2" Description="DES_TECH_AXE_2H_2_DES" IconName="RecipeAxe2H2"/>
+		<UpgradeRecipe EssenceBonus="10" AdditionalPrimeRes="1" AdditionalSecRes="1">
+			<ItemRecipe Value="ITEM_REC-AXE_2H"/>
+		</UpgradeRecipe>
+		<ParentItemTech Value="ITEM_TECH-AXE_2H_1"/>
+	</ITEM_TECH-AXE_2H_2>
+	<ITEM_TECH-CLUBS UpgradeCost="1">
+		<DescriptionInfo Name="DES_TECH_CLUBS" Description="DES_TECH_CLUBS_DES" IconName="RecipeClubs"/>
+		<UnlockRecipe UnlockPrimeRes="2" UnlockSecRes="2">
+			<ItemRecipe Value="ITEM_REC-CLUB_1H"/>
+		</UnlockRecipe>
+		<UnlockRecipe UnlockPrimeRes="2" UnlockSecRes="2">
+			<ItemRecipe Value="ITEM_REC-CLUB_2H"/>
+		</UnlockRecipe>
+	</ITEM_TECH-CLUBS>
+	<ITEM_TECH-CLUB_1H_1 UpgradeCost="1" >
+		<DescriptionInfo Name="DES_TECH_CLUB_1H_1" Description="DES_TECH_CLUB_1H_1_DES" IconName="RecipeClub1H1"/>
+		<UpgradeRecipe EssenceBonus="10" AdditionalPrimeRes="1" AdditionalSecRes="1">
+			<ItemRecipe Value="ITEM_REC-CLUB_1H"/>
+		</UpgradeRecipe>
+		<ParentItemTech Value="ITEM_TECH-CLUBS"/>
+	</ITEM_TECH-CLUB_1H_1>
+	<ITEM_TECH-CLUB_1H_2 UpgradeCost="1">
+		<DescriptionInfo Name="DES_TECH_CLUB_1H_2" Description="DES_TECH_CLUB_1H_2_DES" IconName="RecipeClub1H2"/>
+		<UpgradeRecipe EssenceBonus="10" AdditionalPrimeRes="1" AdditionalSecRes="1">
+			<ItemRecipe Value="ITEM_REC-CLUB_1H"/>
+		</UpgradeRecipe>
+		<ParentItemTech Value="ITEM_TECH-CLUB_1H_1"/>
+	</ITEM_TECH-CLUB_1H_2>
+	<ITEM_TECH-CLUB_2H_1 UpgradeCost="1" >
+		<DescriptionInfo Name="DES_TECH_CLUB_2H_1" Description="DES_TECH_CLUB_2H_1_DES" IconName="RecipeClub2H1"/>
+		<UpgradeRecipe EssenceBonus="10" AdditionalPrimeRes="1" AdditionalSecRes="1">
+			<ItemRecipe Value="ITEM_REC-CLUB_2H"/>
+		</UpgradeRecipe>
+		<ParentItemTech Value="ITEM_TECH-CLUBS"/>
+	</ITEM_TECH-CLUB_2H_1>
+	<ITEM_TECH-CLUB_2H_2 UpgradeCost="1">
+		<DescriptionInfo Name="DES_TECH_CLUB_2H_2" Description="DES_TECH_CLUB_2H_2_DES" IconName="RecipeClub2H2"/>
+		<UpgradeRecipe EssenceBonus="10" AdditionalPrimeRes="1" AdditionalSecRes="1">
+			<ItemRecipe Value="ITEM_REC-CLUB_2H"/>
+		</UpgradeRecipe>
+		<ParentItemTech Value="ITEM_TECH-CLUB_2H_1"/>
+	</ITEM_TECH-CLUB_2H_2>
+	<ITEM_TECH-POLEARMS UpgradeCost="1">
+		<DescriptionInfo Name="DES_TECH_POLEARMS" Description="DES_TECH_POLEARMS_DES" IconName="RecipePolearms"/>
+		<UnlockRecipe UnlockPrimeRes="2" UnlockSecRes="2">
+			<ItemRecipe Value="ITEM_REC-POLEARM_1H"/>
+		</UnlockRecipe>
+		<UnlockRecipe UnlockPrimeRes="2" UnlockSecRes="2">
+			<ItemRecipe Value="ITEM_REC-POLEARM_2H"/>
+		</UnlockRecipe>
+	</ITEM_TECH-POLEARMS>
+	<ITEM_TECH-POLEARM_1H_1 UpgradeCost="1" >
+		<DescriptionInfo Name="DES_TECH_POLEARM_1H_1" Description="DES_TECH_POLEARM_1H_1_DES" IconName="RecipePolearm1H1"/>
+		<UpgradeRecipe EssenceBonus="10" AdditionalPrimeRes="1" AdditionalSecRes="1">
+			<ItemRecipe Value="ITEM_REC-POLEARM_1H"/>
+		</UpgradeRecipe>
+		<ParentItemTech Value="ITEM_TECH-POLEARMS"/>
+	</ITEM_TECH-POLEARM_1H_1>
+	<ITEM_TECH-POLEARM_1H_2 UpgradeCost="1">
+		<DescriptionInfo Name="DES_TECH_POLEARM_1H_2" Description="DES_TECH_POLEARM_1H_2_DES" IconName="RecipePolearm1H2"/>
+		<UpgradeRecipe EssenceBonus="10" AdditionalPrimeRes="1" AdditionalSecRes="1">
+			<ItemRecipe Value="ITEM_REC-POLEARM_1H"/>
+		</UpgradeRecipe>
+		<ParentItemTech Value="ITEM_TECH-POLEARM_1H_1"/>
+	</ITEM_TECH-POLEARM_1H_2>
+	<ITEM_TECH-POLEARM_2H_1 UpgradeCost="1" >
+		<DescriptionInfo Name="DES_TECH_POLEARM_2H_1" Description="DES_TECH_POLEARM_2H_1_DES" IconName="RecipePolearm2H1"/>
+		<UpgradeRecipe EssenceBonus="10" AdditionalPrimeRes="1" AdditionalSecRes="1">
+			<ItemRecipe Value="ITEM_REC-POLEARM_2H"/>
+		</UpgradeRecipe>
+		<ParentItemTech Value="ITEM_TECH-POLEARMS"/>
+	</ITEM_TECH-POLEARM_2H_1>
+	<ITEM_TECH-POLEARM_2H_2 UpgradeCost="1">
+		<DescriptionInfo Name="DES_TECH_POLEARM_2H_2" Description="DES_TECH_POLEARM_2H_2_DES" IconName="RecipePolearm2H2"/>
+		<UpgradeRecipe EssenceBonus="10" AdditionalPrimeRes="1" AdditionalSecRes="1">
+			<ItemRecipe Value="ITEM_REC-POLEARM_2H"/>
+		</UpgradeRecipe>
+		<ParentItemTech Value="ITEM_TECH-POLEARM_2H_1"/>
+	</ITEM_TECH-POLEARM_2H_2>
+	<ITEM_TECH-SCROLLS UpgradeCost="1">
+		<DescriptionInfo Name="DES_TECH_SCROLLS" Description="DES_TECH_SCROLLS_DES" IconName="RecipeScrolls"/>
+		<UnlockRecipe UnlockPrimeRes="2" UnlockSecRes="2">
+			<ItemRecipe Value="ITEM_REC-SCROLL_1H"/>
+		</UnlockRecipe>
+		<UnlockRecipe UnlockPrimeRes="2" UnlockSecRes="2">
+			<ItemRecipe Value="ITEM_REC-SCROLL_2H"/>
+		</UnlockRecipe>
+	</ITEM_TECH-SCROLLS>
+	<ITEM_TECH-SCROLL_1H_1 UpgradeCost="1" >
+		<DescriptionInfo Name="DES_TECH_SCROLL_1H_1" Description="DES_TECH_SCROLL_1H_1_DES" IconName="RecipeScroll1H1"/>
+		<UpgradeRecipe EssenceBonus="10" AdditionalPrimeRes="1" AdditionalSecRes="1">
+			<ItemRecipe Value="ITEM_REC-SCROLL_1H"/>
+		</UpgradeRecipe>
+		<ParentItemTech Value="ITEM_TECH-SCROLLS"/>
+	</ITEM_TECH-SCROLL_1H_1>
+	<ITEM_TECH-SCROLL_1H_2 UpgradeCost="1">
+		<DescriptionInfo Name="DES_TECH_SCROLL_1H_2" Description="DES_TECH_SCROLL_1H_2_DES" IconName="RecipeScroll1H2"/>
+		<UpgradeRecipe EssenceBonus="10" AdditionalPrimeRes="1" AdditionalSecRes="1">
+			<ItemRecipe Value="ITEM_REC-SCROLL_1H"/>
+		</UpgradeRecipe>
+		<ParentItemTech Value="ITEM_TECH-SCROLL_1H_1"/>
+	</ITEM_TECH-SCROLL_1H_2>
+	<ITEM_TECH-SCROLL_2H_1 UpgradeCost="1" >
+		<DescriptionInfo Name="DES_TECH_SCROLL_2H_1" Description="DES_TECH_SCROLL_2H_1_DES" IconName="RecipeScroll2H1"/>
+		<UpgradeRecipe EssenceBonus="10" AdditionalPrimeRes="1" AdditionalSecRes="1">
+			<ItemRecipe Value="ITEM_REC-SCROLL_2H"/>
+		</UpgradeRecipe>
+		<ParentItemTech Value="ITEM_TECH-SCROLLS"/>
+	</ITEM_TECH-SCROLL_2H_1>
+	<ITEM_TECH-SCROLL_2H_2 UpgradeCost="1">
+		<DescriptionInfo Name="DES_TECH_SCROLL_2H_2" Description="DES_TECH_SCROLL_2H_2_DES" IconName="RecipeScroll2H2"/>
+		<UpgradeRecipe EssenceBonus="10" AdditionalPrimeRes="1" AdditionalSecRes="1">
+			<ItemRecipe Value="ITEM_REC-SCROLL_2H"/>
+		</UpgradeRecipe>
+		<ParentItemTech Value="ITEM_TECH-SCROLL_2H_1"/>
+	</ITEM_TECH-SCROLL_2H_2>
+	<ITEM_TECH-ARTIFACTS UpgradeCost="1">
+		<DescriptionInfo Name="DES_TECH_ARTIFACTS" Description="DES_TECH_ARTIFACTS_DES" IconName="RecipeArtifacts"/>
+		<UnlockRecipe UnlockPrimeRes="2" UnlockSecRes="2">
+			<ItemRecipe Value="ITEM_REC-ARTIFACT_1H"/>
+		</UnlockRecipe>
+		<UnlockRecipe UnlockPrimeRes="2" UnlockSecRes="2">
+			<ItemRecipe Value="ITEM_REC-ARTIFACT_2H"/>
+		</UnlockRecipe>
+	</ITEM_TECH-ARTIFACTS>
+	<ITEM_TECH-ARTIFACT_1H_1 UpgradeCost="1" >
+		<DescriptionInfo Name="DES_TECH_ARTIFACT_1H_1" Description="DES_TECH_ARTIFACT_1H_1_DES" IconName="RecipeArtifact1H1"/>
+		<UpgradeRecipe EssenceBonus="10" AdditionalPrimeRes="1" AdditionalSecRes="1">
+			<ItemRecipe Value="ITEM_REC-ARTIFACT_1H"/>
+		</UpgradeRecipe>
+		<ParentItemTech Value="ITEM_TECH-ARTIFACTS"/>
+	</ITEM_TECH-ARTIFACT_1H_1>
+	<ITEM_TECH-ARTIFACT_1H_2 UpgradeCost="1">
+		<DescriptionInfo Name="DES_TECH_ARTIFACT_1H_2" Description="DES_TECH_ARTIFACT_1H_2_DES" IconName="RecipeArtifact1H2"/>
+		<UpgradeRecipe EssenceBonus="10" AdditionalPrimeRes="1" AdditionalSecRes="1">
+			<ItemRecipe Value="ITEM_REC-ARTIFACT_1H"/>
+		</UpgradeRecipe>
+		<ParentItemTech Value="ITEM_TECH-ARTIFACT_1H_1"/>
+	</ITEM_TECH-ARTIFACT_1H_2>
+	<ITEM_TECH-ARTIFACT_2H_1 UpgradeCost="1" >
+		<DescriptionInfo Name="DES_TECH_ARTIFACT_2H_1" Description="DES_TECH_ARTIFACT_2H_1_DES" IconName="RecipeArtifact2H1"/>
+		<UpgradeRecipe EssenceBonus="10" AdditionalPrimeRes="1" AdditionalSecRes="1">
+			<ItemRecipe Value="ITEM_REC-ARTIFACT_2H"/>
+		</UpgradeRecipe>
+		<ParentItemTech Value="ITEM_TECH-ARTIFACTS"/>
+	</ITEM_TECH-ARTIFACT_2H_1>
+	<ITEM_TECH-ARTIFACT_2H_2 UpgradeCost="1">
+		<DescriptionInfo Name="DES_TECH_ARTIFACT_2H_2" Description="DES_TECH_ARTIFACT_2H_2_DES" IconName="RecipeArtifact2H2"/>
+		<UpgradeRecipe EssenceBonus="10" AdditionalPrimeRes="1" AdditionalSecRes="1">
+			<ItemRecipe Value="ITEM_REC-ARTIFACT_2H"/>
+		</UpgradeRecipe>
+		<ParentItemTech Value="ITEM_TECH-ARTIFACT_2H_1"/>
+	</ITEM_TECH-ARTIFACT_2H_2>
+	<ITEM_TECH-RANGED_WEAPONS UpgradeCost="1">
+		<DescriptionInfo Name="DES_TECH_RANGED_WEAPONS" Description="DES_TECH_RANGED_WEAPONS_DES" IconName="RecipeRanged"/>
+		<UnlockRecipe UnlockPrimeRes="2" UnlockSecRes="2">
+			<ItemRecipe Value="ITEM_REC-BOW"/>
+		</UnlockRecipe>
+		<UnlockRecipe UnlockPrimeRes="2" UnlockSecRes="2">
+			<ItemRecipe Value="ITEM_REC-WAND"/>
+		</UnlockRecipe>
+		<UnlockRecipe UnlockPrimeRes="2" UnlockSecRes="2">
+			<ItemRecipe Value="ITEM_REC-THROWN_SPEARS"/>
+		</UnlockRecipe>
+	</ITEM_TECH-RANGED_WEAPONS>
+	<ITEM_TECH-BOW_1 UpgradeCost="1" >
+		<DescriptionInfo Name="DES_TECH_BOW_1" Description="DES_TECH_BOW_1_DES" IconName="RecipeBow1"/>
+		<UpgradeRecipe EssenceBonus="10" AdditionalPrimeRes="1" AdditionalSecRes="1">
+			<ItemRecipe Value="ITEM_REC-BOW"/>
+		</UpgradeRecipe>
+		<ParentItemTech Value="ITEM_TECH-RANGED_WEAPONS"/>
+	</ITEM_TECH-BOW_1>
+	<ITEM_TECH-BOW_2 UpgradeCost="1">
+		<DescriptionInfo Name="DES_TECH_BOW_2" Description="DES_TECH_BOW_2_DES" IconName="RecipeBow2"/>
+		<UpgradeRecipe EssenceBonus="10" AdditionalPrimeRes="1" AdditionalSecRes="1">
+			<ItemRecipe Value="ITEM_REC-BOW"/>
+		</UpgradeRecipe>
+		<ParentItemTech Value="ITEM_TECH-BOW_1"/>
+	</ITEM_TECH-BOW_2>
+	<ITEM_TECH-WAND_1 UpgradeCost="1" >
+		<DescriptionInfo Name="DES_TECH_WAND_1" Description="DES_TECH_WAND_1_DES" IconName="RecipeWand1"/>
+		<UpgradeRecipe EssenceBonus="10" AdditionalPrimeRes="1" AdditionalSecRes="1">
+			<ItemRecipe Value="ITEM_REC-WAND"/>
+		</UpgradeRecipe>
+		<ParentItemTech Value="ITEM_TECH-RANGED_WEAPONS"/>
+	</ITEM_TECH-WAND_1>
+	<ITEM_TECH-WAND_2 UpgradeCost="1">
+		<DescriptionInfo Name="DES_TECH_WAND_2" Description="DES_TECH_WAND_2_DES" IconName="RecipeWand2"/>
+		<UpgradeRecipe EssenceBonus="10" AdditionalPrimeRes="1" AdditionalSecRes="1">
+			<ItemRecipe Value="ITEM_REC-WAND"/>
+		</UpgradeRecipe>
+		<ParentItemTech Value="ITEM_TECH-WAND_1"/>
+	</ITEM_TECH-WAND_2>
+	<ITEM_TECH-THROWN_SPEARS_1 UpgradeCost="1" >
+		<DescriptionInfo Name="DES_TECH_THROWN_SPEARS_1" Description="DES_TECH_THROWN_SPEARS_1_DES" IconName="RecipeThrownSpears1"/>
+		<UpgradeRecipe EssenceBonus="10" AdditionalPrimeRes="1" AdditionalSecRes="1">
+			<ItemRecipe Value="ITEM_REC-THROWN_SPEARS"/>
+		</UpgradeRecipe>
+		<ParentItemTech Value="ITEM_TECH-RANGED_WEAPONS"/>
+	</ITEM_TECH-THROWN_SPEARS_1>
+	<ITEM_TECH-THROWN_SPEARS_2 UpgradeCost="1">
+		<DescriptionInfo Name="DES_TECH_THROWN_SPEARS_2" Description="DES_TECH_THROWN_SPEARS_2_DES" IconName="RecipeThrownSpears2"/>
+		<UpgradeRecipe EssenceBonus="10" AdditionalPrimeRes="1" AdditionalSecRes="1">
+			<ItemRecipe Value="ITEM_REC-THROWN_SPEARS"/>
+		</UpgradeRecipe>
+		<ParentItemTech Value="ITEM_TECH-THROWN_SPEARS_1"/>
+	</ITEM_TECH-THROWN_SPEARS_2>
+	<ITEM_TECH-JEWELLERY UpgradeCost="1">
+		<DescriptionInfo Name="DES_TECH_JEWELLERY" Description="DES_TECH_JEWELLERY_DES" IconName="RecipeJewellery"/>
+		<UnlockRecipe UnlockPrimeRes="2" UnlockSecRes="2">
+			<ItemRecipe Value="ITEM_REC-JEWELLERY"/>
+		</UnlockRecipe>
+		<UnlockRecipe UnlockPrimeRes="2" UnlockSecRes="2">
+			<ItemRecipe Value="ITEM_REC-COSMIC_RING"/>
+		</UnlockRecipe>
+	</ITEM_TECH-JEWELLERY>
+	<ITEM_TECH-JEWELLERY_1 UpgradeCost="1" >
+		<DescriptionInfo Name="DES_TECH_JEWELLERY_1" Description="DES_TECH_JEWELLERY_1_DES" IconName="RecipeJewellery1"/>
+		<UpgradeRecipe EssenceBonus="10" AdditionalPrimeRes="1" AdditionalSecRes="1">
+			<ItemRecipe Value="ITEM_REC-JEWELLERY"/>
+		</UpgradeRecipe>
+		<UpgradeRecipe EssenceBonus="5" AdditionalPrimeRes="1" AdditionalSecRes="1">
+			<ItemRecipe Value="ITEM_REC-COSMIC_RING"/>
+		</UpgradeRecipe>
+		<ParentItemTech Value="ITEM_TECH-JEWELLERY"/>
+	</ITEM_TECH-JEWELLERY_1>
+	<ITEM_TECH-JEWELLERY_2 UpgradeCost="1">
+		<DescriptionInfo Name="DES_TECH_JEWELLERY_2" Description="DES_TECH_JEWELLERY_2_DES" IconName="RecipeJewellery2"/>
+		<UpgradeRecipe EssenceBonus="10" AdditionalPrimeRes="1" AdditionalSecRes="1">
+			<ItemRecipe Value="ITEM_REC-JEWELLERY"/>
+		</UpgradeRecipe>
+		<UpgradeRecipe EssenceBonus="5" AdditionalPrimeRes="1" AdditionalSecRes="1">
+			<ItemRecipe Value="ITEM_REC-COSMIC_RING"/>
+		</UpgradeRecipe>
+		<ParentItemTech Value="ITEM_TECH-JEWELLERY_1"/>
+	</ITEM_TECH-JEWELLERY_2>
+	<ITEM_TECH-SHIELDS UpgradeCost="1">
+		<DescriptionInfo Name="DES_TECH_SHIELDS" Description="DES_TECH_SHIELDS_DES" IconName="RecipeShields"/>
+		<UnlockRecipe UnlockPrimeRes="2" UnlockSecRes="2">
+			<ItemRecipe Value="ITEM_REC-SHIELD"/>
+		</UnlockRecipe>
+	</ITEM_TECH-SHIELDS>
+	<ITEM_TECH-SHIELDS_1 UpgradeCost="1" >
+		<DescriptionInfo Name="DES_TECH_SHIELDS_1" Description="DES_TECH_SHIELDS_1_DES" IconName="RecipeShields1"/>
+		<UpgradeRecipe EssenceBonus="10" AdditionalPrimeRes="1" AdditionalSecRes="1">
+			<ItemRecipe Value="ITEM_REC-SHIELD"/>
+		</UpgradeRecipe>
+		<ParentItemTech Value="ITEM_TECH-SHIELDS"/>
+	</ITEM_TECH-SHIELDS_1>
+	<ITEM_TECH-SHIELDS_2 UpgradeCost="1">
+		<DescriptionInfo Name="DES_TECH_SHIELDS_2" Description="DES_TECH_SHIELDS_2_DES" IconName="RecipeShields2"/>
+		<UpgradeRecipe EssenceBonus="10" AdditionalPrimeRes="1" AdditionalSecRes="1">
+			<ItemRecipe Value="ITEM_REC-SHIELD"/>
+		</UpgradeRecipe>
+		<ParentItemTech Value="ITEM_TECH-SHIELDS_1"/>
+	</ITEM_TECH-SHIELDS_2>
+	<ITEM_TECH-ARMOURS UpgradeCost="1">
+		<DescriptionInfo Name="DES_TECH_ARMOURS" Description="DES_TECH_ARMOURS_DES" IconName="RecipeArmours"/>
+		<UnlockRecipe UnlockPrimeRes="2" UnlockSecRes="2">
+			<ItemRecipe Value="ITEM_REC-ROBES"/>
+		</UnlockRecipe>
+		<UnlockRecipe UnlockPrimeRes="2" UnlockSecRes="2">
+			<ItemRecipe Value="ITEM_REC-MEDIUM_ARMOUR"/>
+		</UnlockRecipe>
+		<UnlockRecipe UnlockPrimeRes="2" UnlockSecRes="2">
+			<ItemRecipe Value="ITEM_REC-HEAVY_ARMOUR"/>
+		</UnlockRecipe>
+	</ITEM_TECH-ARMOURS>
+	<ITEM_TECH-ROBES_1 UpgradeCost="1" >
+		<DescriptionInfo Name="DES_TECH_ROBES_1" Description="DES_TECH_ROBES_1_DES" IconName="RecipeRobes1"/>
+		<UpgradeRecipe EssenceBonus="15" AdditionalPrimeRes="1" AdditionalSecRes="1">
+			<ItemRecipe Value="ITEM_REC-ROBES"/>
+		</UpgradeRecipe>
+		<ParentItemTech Value="ITEM_TECH-ARMOURS"/>
+	</ITEM_TECH-ROBES_1>
+	<ITEM_TECH-ROBES_2 UpgradeCost="1" >
+		<DescriptionInfo Name="DES_TECH_ROBES_2" Description="DES_TECH_ROBES_2_DES" IconName="RecipeRobes2"/>
+		<UpgradeRecipe EssenceBonus="15" AdditionalPrimeRes="1" AdditionalSecRes="1">
+			<ItemRecipe Value="ITEM_REC-ROBES"/>
+		</UpgradeRecipe>
+		<ParentItemTech Value="ITEM_TECH-ROBES_1"/>
+	</ITEM_TECH-ROBES_2>
+	<ITEM_TECH-MEDIUM_ARMOUR_1 UpgradeCost="1">
+		<DescriptionInfo Name="DES_TECH_MEDIUM_ARMOUR_1" Description="DES_TECH_MEDIUM_ARMOUR_1_DES" IconName="RecipeMediumArmour1"/>
+		<UpgradeRecipe EssenceBonus="15" AdditionalPrimeRes="1" AdditionalSecRes="1">
+			<ItemRecipe Value="ITEM_REC-MEDIUM_ARMOUR"/>
+		</UpgradeRecipe>
+		<ParentItemTech Value="ITEM_TECH-ARMOURS"/>
+	</ITEM_TECH-MEDIUM_ARMOUR_1>
+	<ITEM_TECH-MEDIUM_ARMOUR_2 UpgradeCost="1">
+		<DescriptionInfo Name="DES_TECH_MEDIUM_ARMOUR_2" Description="DES_TECH_MEDIUM_ARMOUR_2_DES" IconName="RecipeMediumArmour2"/>
+		<UpgradeRecipe EssenceBonus="15" AdditionalPrimeRes="1" AdditionalSecRes="1">
+			<ItemRecipe Value="ITEM_REC-MEDIUM_ARMOUR"/>
+		</UpgradeRecipe>
+		<ParentItemTech Value="ITEM_TECH-MEDIUM_ARMOUR_1"/>
+	</ITEM_TECH-MEDIUM_ARMOUR_2>
+	<ITEM_TECH-HEAVY_ARMOUR_1 UpgradeCost="1">
+		<DescriptionInfo Name="DES_TECH_HEAVY_ARMOUR_1" Description="DES_TECH_HEAVY_ARMOUR_1_DES" IconName="RecipeHeavyArmour1"/>
+		<UpgradeRecipe EssenceBonus="15" AdditionalPrimeRes="1" AdditionalSecRes="1">
+			<ItemRecipe Value="ITEM_REC-HEAVY_ARMOUR"/>
+		</UpgradeRecipe>
+		<ParentItemTech Value="ITEM_TECH-ARMOURS"/>
+	</ITEM_TECH-HEAVY_ARMOUR_1>
+	<ITEM_TECH-HEAVY_ARMOUR_2 UpgradeCost="1">
+		<DescriptionInfo Name="DES_TECH_HEAVY_ARMOUR_2" Description="DES_TECH_HEAVY_ARMOUR_2_DES" IconName="RecipeHeavyArmour2"/>
+		<UpgradeRecipe EssenceBonus="15" AdditionalPrimeRes="1" AdditionalSecRes="1">
+			<ItemRecipe Value="ITEM_REC-HEAVY_ARMOUR"/>
+		</UpgradeRecipe>
+		<ParentItemTech Value="ITEM_TECH-HEAVY_ARMOUR_1"/>
+	</ITEM_TECH-HEAVY_ARMOUR_2>
+	
+	<ITEM_TECH-COOKING_MEAT1 UpgradeCost="0">
+		<DescriptionInfo Name="DES_COOKING_MEAT1" Description="DES_COOKING_MEAT1_DES" IconName="GrilledMeat"/>
+		<UnlockRecipe UnlockPrimeRes="2" UnlockSecRes="2">
+			<ItemRecipe Value="ITEM_REC-COOKING_MEAT1"/>
+		</UnlockRecipe>
+	</ITEM_TECH-COOKING_MEAT1>
+	<ITEM_TECH-COOKING_MEAT2 UpgradeCost="2" >
+		<DescriptionInfo Name="DES_COOKING_MEAT2" Description="DES_COOKING_MEAT2_DES" IconName="Pulpety"/>
+		<UnlockRecipe UnlockPrimeRes="2" UnlockSecRes="2">
+			<ItemRecipe Value="ITEM_REC-COOKING_MEAT2"/>
+		</UnlockRecipe>
+	</ITEM_TECH-COOKING_MEAT2>
+	<ITEM_TECH-COOKING_VEGGIES1 UpgradeCost="1" >
+		<DescriptionInfo Name="DES_COOKING_VEGGIES1" Description="DES_COOKING_VEGGIES1_DES" IconName="FriedMushrooms"/>
+		<UnlockRecipe UnlockPrimeRes="2" UnlockSecRes="2">
+			<ItemRecipe Value="ITEM_REC-COOKING_VEGGIES1"/>
+		</UnlockRecipe>
+	</ITEM_TECH-COOKING_VEGGIES1>
+    <ITEM_TECH-COOKING_VEGGIES2 UpgradeCost="1" >
+        <DescriptionInfo Name="DES_COOKING_VEGGIES2" Description="DES_COOKING_VEGGIES2_DES" IconName="Leczo"/>
+        <UnlockRecipe UnlockPrimeRes="2" UnlockSecRes="2">
+            <ItemRecipe Value="ITEM_REC-COOKING_VEGGIES2"/>
+        </UnlockRecipe>
+    </ITEM_TECH-COOKING_VEGGIES2>
+	<ITEM_TECH-COOKING_FRUITS1 UpgradeCost="1" >
+		<DescriptionInfo Name="DES_COOKING_FRUITS1" Description="DES_COOKING_FRUITS1_DES" IconName="Jam"/>
+		<UnlockRecipe UnlockPrimeRes="2" UnlockSecRes="2">
+			<ItemRecipe Value="ITEM_REC-COOKING_FRUITS1"/>
+		</UnlockRecipe>
+	</ITEM_TECH-COOKING_FRUITS1>
+    <ITEM_TECH-COOKING_FRUITS2 UpgradeCost="1" >
+        <DescriptionInfo Name="DES_COOKING_FRUITS2" Description="DES_COOKING_FRUITS2_DES" IconName="VeggieBake"/>
+        <UnlockRecipe UnlockPrimeRes="2" UnlockSecRes="2">
+            <ItemRecipe Value="ITEM_REC-COOKING_FRUITS2"/>
+        </UnlockRecipe>
+    </ITEM_TECH-COOKING_FRUITS2>
+	
+	<!--<ITEM_TECH-SPELL_LAYOUTS UpgradeCost="1">
+		<DescriptionInfo Name="PLACEHOLDER" Description="PLACEHOLDER" IconName="Placeholder"/>
+		<UnlockRecipe UnlockPrimeRes="2" UnlockSecRes="2">
+			<ItemRecipe Value="ITEM_REC-CRYSTAL_SPELL_LAYOUT"/>
+		</UnlockRecipe>
+	</ITEM_TECH-SPELL_LAYOUTS>
+	<ITEM_TECH-SPELL_LAYOUT_1 UpgradeCost="1" >
+		<DescriptionInfo Name="PLACEHOLDER" Description="PLACEHOLDER" IconName="Placeholder"/>
+		<UpgradeRecipe EssenceBonus="3" AdditionalPrimeRes="1" AdditionalSecRes="1">
+			<ItemRecipe Value="ITEM_REC-CRYSTAL_SPELL_LAYOUT"/>
+		</UpgradeRecipe>
+		<ParentItemTech Value="ITEM_TECH-SPELL_LAYOUTS"/>
+	</ITEM_TECH-SPELL_LAYOUT_1>
+	<ITEM_TECH-SPELL_LAYOUT_2 UpgradeCost="1">
+		<DescriptionInfo Name="PLACEHOLDER" Description="PLACEHOLDER" IconName="Placeholder"/>
+		<UpgradeRecipe EssenceBonus="8" AdditionalPrimeRes="1" AdditionalSecRes="1">
+			<ItemRecipe Value="ITEM_REC-CRYSTAL_SPELL_LAYOUT"/>
+		</UpgradeRecipe>
+		<ParentItemTech Value="ITEM_TECH-SPELL_LAYOUT_1"/>
+	</ITEM_TECH-SPELL_LAYOUT_2>
+	<ITEM_TECH-SPELL_LAYOUT_3 UpgradeCost="1">
+		<DescriptionInfo Name="PLACEHOLDER" Description="PLACEHOLDER" IconName="Placeholder"/>
+		<UpgradeRecipe EssenceBonus="20">
+			<ItemRecipe Value="ITEM_REC-CRYSTAL_SPELL_LAYOUT"/>
+		</UpgradeRecipe>
+		<ParentItemTech Value="ITEM_TECH-SPELL_LAYOUT_2"/>
+	</ITEM_TECH-SPELL_LAYOUT_3>-->
+</ITEMS_TECH>

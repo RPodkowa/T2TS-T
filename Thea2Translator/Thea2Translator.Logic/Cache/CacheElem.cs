@@ -34,6 +34,12 @@ namespace Thea2Translator.Logic
         /// </summary>
         public string TranslatedText { get; private set; }
         /// <summary>
+        /// Poprzedni przetlumaczony tekst
+        /// Tekst jest ustawiany w momencie importu z Steam jesli zmienil sie oryginalny tekst
+        /// Usuwane z XML po zatwierdzeniu tlumaczenia
+        /// </summary>
+        public string OldTranslatedText { get; private set; }
+        /// <summary>
         /// Tekst wyjsciowy (przetlumaczony) bez formatowania/normalizowania
         /// Taki tekst jest zapisywany w trakcie exportu
         /// </summary>
@@ -73,7 +79,7 @@ namespace Thea2Translator.Logic
                 Key = element.Attributes["Key"]?.Value.ToString();
                 Flag = int.Parse(element.Attributes["Flag"]?.Value);
             }
-            
+
             Groups = new List<string>();
 
             var groups = element.SelectNodes("Groups/Group");
@@ -82,10 +88,20 @@ namespace Thea2Translator.Logic
                 AddGroup(group.InnerText);
             }
 
-            InputText = element.SelectSingleNode("Texts/Input").InnerText;
+            InputText = GetNodeText(element, "Texts/Input");
             OriginalText = TextHelper.Normalize(InputText, out Specials);
-            OutputText = element.SelectSingleNode("Texts/Output").InnerText;
+            OutputText = GetNodeText(element, "Texts/Output");
             TranslatedText = TextHelper.Normalize(OutputText);
+            OldTranslatedText = GetNodeText(element, "Texts/Old");
+        }
+
+        private string GetNodeText(XmlNode element, string xpath)
+        {
+            var node = element.SelectSingleNode(xpath);
+            if (node == null) return "";
+
+            var ret = node.InnerText;
+            return ret;
         }
 
         public bool EqualsTexts(string inputText)
@@ -116,6 +132,8 @@ namespace Thea2Translator.Logic
             XmlNode textsNode = doc.CreateElement("Texts");
             textsNode.AppendChild(GetNode(doc, "Input", InputText));
             textsNode.AppendChild(GetNode(doc, "Output", OutputText));
+            if (!string.IsNullOrEmpty(OldTranslatedText))
+                textsNode.AppendChild(GetNode(doc, "Old", OldTranslatedText));
 
             elementNode.AppendChild(textsNode);
 
@@ -141,6 +159,19 @@ namespace Thea2Translator.Logic
             TranslatedText = text;
             OutputText = TextHelper.UnNormalize(text, Specials);
             if (IsModulesElem) OutputText = TextHelper.ReplacePolishChars(OutputText);
+            OldTranslatedText = "";
+        }
+
+        public void TryUpdateValue(string text)
+        {
+            if (TextHelper.EqualsTexts(InputText, text))
+                return;
+
+            OldTranslatedText = TranslatedText;
+            InputText = text;
+            OriginalText = TextHelper.Normalize(InputText, out Specials);
+            TranslatedText = OriginalText;
+            OutputText = InputText;
         }
 
         public void AddGroups(List<string> groups)

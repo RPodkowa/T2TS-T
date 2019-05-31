@@ -354,6 +354,14 @@ namespace Thea2Translator.Logic
                 if (!saveToFile)
                 {
                     var val = entry.Attributes["Val"]?.Value;
+
+                    var elem = GetElem(key);
+                    if (elem != null)
+                    {
+                        elem.TryUpdateValue(val);
+                        continue;
+                    }
+
                     TryAddToCacheWithGroup(key, val, TextHelper.GetGroupsFromKey(key, false));
                 }
                 else
@@ -476,8 +484,14 @@ namespace Thea2Translator.Logic
                     var key = $"{collectionElemValue}_{collectionElemName}";
                     if (!saveToFile)
                     {
+                        var elem = GetElem(key);
+                        if (elem != null)
+                        {
+                            elem.TryUpdateValue(collectionElemValue);
+                            continue;
+                        }
+                        
                         var groups = new List<string>() { collectionName, collectionElemName };
-
                         TryAddToCacheWithGroup(key, collectionElemValue, groups);
                     }
                     else

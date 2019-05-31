@@ -7,8 +7,8 @@ namespace Thea2Translator.Logic
     {
         public static bool EqualsTexts(string text1, string text2)
         {
-            text1 = new string(text1.Where(c => char.IsLetter(c)).ToArray());
-            text2 = new string(text2.Where(c => char.IsLetter(c)).ToArray());
+            text1 = new string(text1.Where(c => char.IsLetterOrDigit(c)).ToArray());
+            text2 = new string(text2.Where(c => char.IsLetterOrDigit(c)).ToArray());
 
             return text1 == text2;
         }

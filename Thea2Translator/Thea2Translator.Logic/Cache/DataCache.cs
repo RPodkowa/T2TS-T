@@ -450,19 +450,22 @@ namespace Thea2Translator.Logic
                     if (collectionElemName != "CharacterMale" && collectionElemName != "CharacterFemale")
                         continue;
 
+                    collectionElemName = $"{collectionName}_{collectionElemName}";
+
                     if (collectionElem.Attributes == null)
                         continue;
 
                     var collectionElemValue = collectionElem.Attributes["Value"]?.Value;
+                    var key = $"{collectionElemValue}_{collectionElemName}";
                     if (!saveToFile)
                     {
-                        var groups = new List<string>() { collectionName, $"{collectionName}_{collectionElemName}" };
+                        var groups = new List<string>() { collectionName, collectionElemName };
 
-                        TryAddToCacheWithGroup(collectionElemValue, groups);
+                        TryAddToCacheWithGroup(key,collectionElemValue, groups);
                     }
                     else
                     {
-                        var elem = GetElem(collectionElemValue);
+                        var elem = GetElem(key);
                         if (elem == null) continue;
 
                         collectionElem.Attributes["Value"].Value = elem.OutputText;

@@ -93,18 +93,26 @@ namespace Thea2Translator.DesktopApp.Pages
 
         private void BtnTranslate_Click(object sender, RoutedEventArgs e)
         {
-            if (isDataBaseModuleSelected && isModulesModuleSelected)
+            int selectetCount = 0;
+            if (isDataBaseModuleSelected) selectetCount++;
+            if (isModulesModuleSelected) selectetCount++;
+            if (isNamesModuleSelected) selectetCount++;
+
+            if (selectetCount == 0)
+                return;
+
+            if (selectetCount > 1)
             {
                 MessageBox.Show(this.Resources["transSelOneModuleSelection"].ToString(), this.Resources["transWarSelection"].ToString());
+                return;
             }
-            else if (isDataBaseModuleSelected)
-            {
-                this.NavigationService.Navigate(new TranslatePage(FilesType.DataBase));
-            }
-            else
-            {
-                this.NavigationService.Navigate(new TranslatePage(FilesType.Modules));
-            }
+
+            FilesType filesType = FilesType.DataBase;
+            if (isDataBaseModuleSelected) filesType = FilesType.DataBase;
+            if (isModulesModuleSelected) filesType = FilesType.Modules;
+            if (isNamesModuleSelected) filesType = FilesType.Names;
+            
+            NavigationService.Navigate(new TranslatePage(filesType));
         }
 
         private void ProcessFiles(FilesType filesType, AlgorithmStep step)

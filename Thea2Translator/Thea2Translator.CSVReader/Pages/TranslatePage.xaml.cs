@@ -40,9 +40,14 @@ namespace Thea2Translator.DesktopApp.Pages
         {
             InitializeComponent();
 
-            dataCache = fileType == FilesType.DataBase ?
-                LogicProvider.DataBase : LogicProvider.Modules;
-
+            dataCache = null;
+            switch(fileType)
+            {
+                case FilesType.DataBase: dataCache = LogicProvider.DataBase; break;
+                case FilesType.Modules: dataCache = LogicProvider.Modules; break;
+                case FilesType.Names: dataCache = LogicProvider.Names; break;
+            }
+            
             btnTranslate.IsEnabled = false;
             btnSaveToFile.IsEnabled = false;
 

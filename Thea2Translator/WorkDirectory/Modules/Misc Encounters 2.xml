@@ -3578,7 +3578,7 @@ While a friendly dola is known to watch over children or bring good fortune, an 
         </ModifierBlock>
       </logic>
       <outputs name="How can she get you in?" ownerID="26" targetID="18" group="G1" fromX="1411" fromY="1176" />
-      <outputs name="How can she get you in?" ownerID="26" targetID="19" group="G1" fromX="1411" fromY="1096" />'Playing nasty tricks on children? I will not stand idly by, my dear. I shall aid you, because someone should go and sort those fools out.'</nodes>
+      <outputs name="How can she get you in?" ownerID="26" targetID="19" group="G1" fromX="1411" fromY="1096" />'Yes, your nature feels right. Besides, playing nasty tricks on children? I will not stand idly by, my dear. I shall aid you, because someone should go and sort those fools out.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="27" positionX="4134" positionY="175" width="350" height="805">
       <outputs name="Leave." ownerID="27" targetID="33" fromX="4459" fromY="-316" />
       <outputs name="Attack!" ownerID="27" targetID="10" fromX="4459" fromY="-396" />'It is typically in my nature to help, and I am pretty sure Leopold sent you here just for that reason. However, I will not interfere on his behalf this time. He must learn to deal with his own mischief. 

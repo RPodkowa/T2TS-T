@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="windows-1250"?>
+<?xml version="1.0" encoding="Windows-1252"?>
 <MODULE xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="mChapter 1" lastEventIndex="73" allowToUse="true" uniqueModuleID="-711595215">
   <Adventure name="Shattering1" uniqueID="1" allowOnce="true" typeGeneric="false" typePerGroupGeneric="true" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="27" eventTag="TAG-MAINLOGBOOK1" joinIsForced="false" joinType="AllAlly" joinRange="MovementArea">
     <nodes xsi:type="NodeStarting" ID="1" positionX="-44" positionY="73" width="347" height="661" image="Event093">
@@ -2778,8 +2778,8 @@ You are not able to spot much from a safe distance, but you see regular patrols 
     <nodes xsi:type="NodeAdventure" ID="6" positionX="1360" positionY="-1036" width="350" height="805">
       <outputs name="Try to haggle with them. Surely there is a price they would accept for entry?" ownerID="6" targetID="8" fromX="1685" fromY="-1527" />
       <outputs name="Attack!" ownerID="6" targetID="4" fromX="1685" fromY="-1607" />'You with that oddball bookworm type? We told him and we'll tell you - that cave is our turf, no stragglers, no sightseein'.'</nodes>
-    <nodes xsi:type="NodeAdventure" ID="7" positionX="2819" positionY="-965" width="350" height="725">
-      <outputs name="Keep listening." ownerID="7" targetID="9" fromX="3144" fromY="-1456" />'You speak some sense. No reason to pass on an opportunity when it comes a'knockin'. I tell ya what, there's an old witch hut not too far from here -- a baba yaga, we think, lives there. The cursed thing's been interfering with business and we ain't no spirit folk to deal with such sort. 
+    <nodes xsi:type="NodeAdventure" ID="7" positionX="2799" positionY="-1068" width="350" height="725">
+      <outputs name="Keep listening." ownerID="7" targetID="9" fromX="3124" fromY="-1559" />'You speak some sense. No reason to pass on an opportunity when it comes a'knockin'. I tell ya what, there's an old witch hut not too far from here - a baba yaga, we think, lives there. The cursed thing's been interfering with business and we ain't no spirit folk to deal with such sort. 
 
 Deal with her, and we may let you peek into our cave.
 
@@ -2808,6 +2808,13 @@ I'll mark both on your maps, and you decide which favour you'll do.'</nodes>
       <outputs ownerID="12" targetID="10" fromX="4070" fromY="-1909" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="13" positionX="2496" positionY="-1886" width="350" height="725">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers list="ppl">
+            <scriptCallWithTag scriptName="FMO_SetHealthPercentTo" parameter="100" tag="---" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
       <outputs name="Keep listening." ownerID="13" targetID="14" fromX="2821" fromY="-2377" />'Bah, you bore me to death with your word vomit. Just shut your gob. 
 
 I'd kick your butts and be done with it, but we do have us two problems we'd like dealt with, and I ain't gonna cry if you die trying to do them for us.'</nodes>
@@ -3608,7 +3615,7 @@ They beat you badly, take all your stuff, and chase you away. No chance for parl
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Keep running." ownerID="101" targetID="98" group="G1" fromX="2024" fromY="-3645" />The bandits beat you badly and force you to flee, taking some of your belongings!
+      <outputs name="Keep running." ownerID="101" targetID="98" fromX="2024" fromY="-3645" />The bandits beat you badly and force you to flee, taking some of your belongings!
 
 Your only option now is to find a way to come back and defeat them.
 </nodes>
@@ -5119,9 +5126,6 @@ This sacrifice also allowed us to acquire the heart of the forest from a forest 
           </LogicFilter>
           <LogicResultAction>
             <scriptCallWithTag scriptName="FRA_PlayersHaveSharedTag" parameter="1" tag="TAG-MAIN26" />
-          </LogicResultAction>
-          <LogicResultAction>
-            <scriptCallWithTag scriptName="FRA_PlayersDoNotHaveSharedTag" parameter="1" tag="TAG-MAIN28" />
           </LogicResultAction>
         </FilterBlock>
         <ModifierBlock>
@@ -11128,7 +11132,7 @@ I suppose I am done too, really. An odd thing, to be done with things.'</nodes>
       <logic>
         <ModifierBlock>
           <LogicFilter name="war">
-            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" tag="SUBRACE-DWARF_WARMASTER" />
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" tag="SUBRACE-DWARF_WARRIOR_IRON_STORM" />
           </LogicFilter>
           <LogicProcessing name="new" list1="war" list2="ppl">
             <scriptCallWithTag scriptName="FLP_AminusB" />
@@ -11915,7 +11919,7 @@ Together, you remove any curses you had.
       <outputs name="Wish them well and leave." ownerID="37" targetID="4" fromX="3339" fromY="-1392" />'You weird, you are. But sure, thanks.
 
 We cannot give much in return 'cause we ain't as odd as you, but here, have what we can spare.'</nodes>
-    <nodes xsi:type="NodeTrade" ID="38" positionX="2476.26929" positionY="-907.6588" width="460" height="479" traderProfile="TRADER-BANDIT" playerInventory="stone1" startingBalance="-30">
+    <nodes xsi:type="NodeTrade" ID="38" positionX="2476.26929" positionY="-907.6588" width="460" height="479" traderProfile="TRADER-BANDIT_TWO" playerInventory="stone1" startingBalance="-30">
       <logic>
         <FilterBlock>
           <LogicFilter name="stone1">
@@ -11937,7 +11941,7 @@ We cannot give much in return 'cause we ain't as odd as you, but here, have what
       <outputs name="Confirm" ownerID="38" targetID="37" fromX="2906" fromY="-1236" />
       <outputs name="Cancel" ownerID="38" targetID="21" fromX="2906" fromY="-1316" />
     </nodes>
-    <nodes xsi:type="NodeTrade" ID="39" positionX="2421.8667" positionY="-1414.84644" width="460" height="479" traderProfile="TRADER-BANDIT" playerInventory="wood1" startingBalance="-50">
+    <nodes xsi:type="NodeTrade" ID="39" positionX="2421.8667" positionY="-1414.84644" width="460" height="479" traderProfile="TRADER-BANDIT_TWO" playerInventory="wood1" startingBalance="-50">
       <logic>
         <FilterBlock>
           <LogicFilter name="wood1">
@@ -12790,8 +12794,8 @@ The folk who asked for your help hear your screams and come to your aid. They ha
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Leave and report your success." ownerID="17" targetID="52" fromX="1830" fromY="-1149" />
-      <outputs name="Leave and report your success." ownerID="17" targetID="36" fromX="1830" fromY="-1229" />'You speak for gods, so we will listen. We will make peace.'</nodes>
+      <outputs name="Leave and report your success." ownerID="17" targetID="52" group="G1" fromX="1830" fromY="-1149" />
+      <outputs name="Leave and report your success." ownerID="17" targetID="36" group="G1" fromX="1830" fromY="-1229" />'You speak for gods, so we will listen. We will make peace.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="18" positionX="3010.982" positionY="322.349" width="350" height="725">
       <outputs name="Leave." ownerID="18" targetID="57" fromX="3336" fromY="-168" />You got rid of the problem as you were asked, and your friendship will surely grow. 
 </nodes>
@@ -12868,7 +12872,7 @@ Your friendship suffers for it.</nodes>
       <outputs ownerID="28" targetID="29" fromX="4201" fromY="-1399" />
     </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="29" positionX="4347" positionY="-1208" width="350" height="408" allPlayersXP="3" allPlayersRP="1" linkedEventUniqueID="0" />
-    <nodes xsi:type="NodeAdventureEnd" ID="31" positionX="-287.021729" positionY="-721.838745" width="350" height="408" linkedEventUniqueID="0">
+    <nodes xsi:type="NodeAdventureEnd" ID="31" positionX="-287.021729" positionY="-721.838745" width="350" height="530" linkedEventUniqueID="0">
       <logic>
         <ModifierBlock>
           <LogicModifiers>
@@ -12910,8 +12914,8 @@ You dealt with the problem as asked, so you gain friendship.
     <nodes xsi:type="NodeAdventureEnd" ID="46" positionX="4354.608" positionY="-2269.19" width="350" height="408" allPlayersXP="1" allPlayersRP="1" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventure" ID="48" positionX="2607" positionY="-1305" width="350" height="885">
       <outputs name="Give up." ownerID="48" targetID="37" fromX="2932" fromY="-1796" />
-      <outputs name="Pay them off." ownerID="48" targetID="15" fromX="2932" fromY="-1876" />
-      <outputs name="Just attack them." ownerID="48" targetID="24" fromX="2932" fromY="-1956" />'You talk for the gods, sure, but we got to make a living. You pay us, we leave you and your friends in peace, deal?'</nodes>
+      <outputs name="Pay them off." ownerID="48" targetID="15" fromX="2588" fromY="-1876" />
+      <outputs name="Just attack them." ownerID="48" targetID="24" fromX="2588" fromY="-1876" />'You talk for the gods, sure, but we got to make a living. You pay us, we leave you and your friends in peace, deal?'</nodes>
     <nodes xsi:type="NodeSpawnOnMap" ID="50" positionX="1493" positionY="-1575" width="480" height="503" radius="0" destroyOwner="true" linkedEventUniqueID="0">
       <logic>
         <FilterBlock>
@@ -12948,8 +12952,8 @@ You dealt with the problem as asked, so you gain friendship.
         </FilterBlock>
       </logic>
       <outputs name="Win" ownerID="51" targetID="34" fromX="725" fromY="-1549" />
-      <outputs name="Lose" ownerID="51" targetID="32" fromX="725" fromY="-1630" />
-      <outputs name="Surrender" ownerID="51" targetID="56" fromX="725" fromY="-1710" />
+      <outputs name="Lose" ownerID="51" targetID="32" fromX="300" fromY="-1630" />
+      <outputs name="Surrender" ownerID="51" targetID="56" fromX="300" fromY="-1630" />
     </nodes>
     <nodes xsi:type="NodeProduceDrop" ID="52" positionX="1976" positionY="-860" width="460" height="429">
       <outputs ownerID="52" targetID="53" fromX="2406" fromY="-1218" />
@@ -12969,7 +12973,7 @@ You dealt with the problem as asked, so you gain friendship.
       <outputs ownerID="54" targetID="26" fromX="2278" fromY="-527" />
     </nodes>
     <nodes xsi:type="NodeDealDamage" ID="55" positionX="2067" positionY="-1373" width="460" height="459" challengeTypeDamage="TypeMental" minDamage="20" maxDamage="30" useCountInPercent="true" targetGroup="ppl">
-      <outputs ownerID="55" targetID="48" fromX="2496" fromY="-1761" />
+      <outputs ownerID="55" targetID="48" fromX="2496" fromY="-1355" />
     </nodes>
     <nodes xsi:type="NodeDealDamage" ID="56" positionX="1658" positionY="-2141" width="460" height="459" challengeTypeDamage="TypeMental" minDamage="10" maxDamage="30" useCountInPercent="true" targetGroup="ppl">
       <outputs ownerID="56" targetID="32" fromX="2087" fromY="-2529" />
@@ -14326,27 +14330,21 @@ You drink everyone under the table and impress the locals greatly.</nodes>
       <outputs name="Time to leave." ownerID="37" targetID="31" fromX="1616" fromY="-3044" />You got into a fight and discovered hidden strength within you. Unfortunately, the locals do not appreciate your prowess. You get kicked out of the tavern.</nodes>
   </Adventure>
   <Adventure name=" Scavenger witch training" uniqueID="70" typeGeneric="false" typePerGroupGeneric="false" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="6" joinIsForced="false" joinType="OnlyOwn" joinRange="SinglePosition">
-    <nodes xsi:type="NodeStarting" ID="1" positionX="10" positionY="-10" width="347" height="661" image="Event121">
-      <outputs ownerID="1" targetID="2" fromX="334" fromY="-613" />
+    <nodes xsi:type="NodeStarting" ID="1" positionX="10" positionY="-10" width="347" height="704" image="Event121">
+      <outputs ownerID="1" targetID="2" fromX="334" fromY="-656" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="2" positionX="483" positionY="-176" width="350" height="805">
       <logic>
         <FilterBlock>
-          <LogicFilter name="scavs">
+          <LogicFilter name="scav" makePublic="true">
             <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="TAG-SCAVENGER" />
           </LogicFilter>
-          <LogicFilter name="witch">
-            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="SUBRACE-HUM_SCAVENGER_WITCH" />
-          </LogicFilter>
-          <LogicProcessing name="scav" makePublic="true" list1="scavs" list2="witch">
-            <scriptCallWithTag scriptName="FLP_AminusB" />
-          </LogicProcessing>
         </FilterBlock>
       </logic>
-      <outputs name="Yes, train one random scavenger to become a magic user." ownerID="2" targetID="5" fromX="808" fromY="-667" />
-      <outputs name="No, refuse and leave." ownerID="2" targetID="3" fromX="808" fromY="-747" />'Say, you did us a solid and all, our witch will teach ya to be like her, warts and all, but also that dark magic stuff. It may kill ya, but your choice.'</nodes>
-    <nodes xsi:type="NodeAdventureEnd" ID="3" positionX="-3" positionY="-788" width="350" height="530" linkedEventUniqueID="0" />
-    <nodes xsi:type="NodeAdventureEnd" ID="4" positionX="1651" positionY="-728" width="350" height="530" linkedEventUniqueID="0">
+      <outputs name="Yes, train one random scavenger to become a magic user." ownerID="2" targetID="5" fromX="815" fromY="-667" />
+      <outputs name="No, refuse and leave." ownerID="2" targetID="3" fromX="815" fromY="-747" />'Say, you did us a solid and all, our witch will teach ya to be like her, warts and all, but also that dark magic stuff. It may kill ya, but your choice.'</nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="3" positionX="-3" positionY="-788" width="350" height="455" linkedEventUniqueID="0" />
+    <nodes xsi:type="NodeAdventureEnd" ID="4" positionX="1651" positionY="-728" width="350" height="455" linkedEventUniqueID="0">
       <logic>
         <ModifierBlock>
           <LogicProcessing name="1" list1="scav">
@@ -14372,9 +14370,9 @@ You drink everyone under the table and impress the locals greatly.</nodes>
     </nodes>
     <nodes xsi:type="NodeProduceDrop" ID="5" positionX="958" positionY="-256" width="460" height="509">
       <outputs ownerID="5" targetID="6" group="G1" fromX="1388" fromY="-614" />
-      <outputs ownerID="5" targetID="4" group="G1" fromX="1388" fromY="-694" />
+      <outputs ownerID="5" targetID="4" group="G1" fromX="1388" fromY="-695" />
     </nodes>
-    <nodes xsi:type="NodeAdventureEnd" ID="6" positionX="1625" positionY="-167" width="350" height="530" linkedEventUniqueID="0">
+    <nodes xsi:type="NodeAdventureEnd" ID="6" positionX="1625" positionY="-167" width="350" height="455" linkedEventUniqueID="0">
       <logic>
         <FilterBlock>
           <LogicResultAction>

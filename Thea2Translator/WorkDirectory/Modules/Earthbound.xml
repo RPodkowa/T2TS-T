@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="windows-1250"?>
+<?xml version="1.0" encoding="Windows-1252"?>
 <MODULE xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Earthbound" lastEventIndex="85" allowToUse="true" uniqueModuleID="-144450658">
   <Adventure name="EarthboundTradesmall" uniqueID="29" typeGeneric="false" typePerGroupGeneric="false" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="13" joinIsForced="false" joinType="OnlyOwn" joinRange="SinglePosition">
     <nodes xsi:type="NodeStarting" ID="1" positionX="10" positionY="-10" width="347" height="579" image="Event216">
@@ -5257,7 +5257,7 @@ The dwarves are happy with your results and reward you well.</nodes>
       </logic>
       <outputs name="Approach carefully." ownerID="2" targetID="3" fromX="734" fromY="-610" />
       <outputs name="[Dwarf]You sense the barrier that your brethren spoke of, and you know you will not be able to enter. If you have no companions with you, leave this place for now." ownerID="2" targetID="4" group="G1" fromX="734" fromY="-690" />
-      <outputs name="Come back later." ownerID="2" targetID="5" group="G1" fromX="734" fromY="-610" />You spot the ruins of the old forge, and even from afar you see a thick, dark mist hanging low on the ground, still as death.</nodes>
+      <outputs name="Come back later." ownerID="2" targetID="5" group="G1" fromX="734" fromY="-770" />You spot the ruins of the old forge, and even from afar you see a thick, dark mist hanging low on the ground, still as death.</nodes>
     <nodes xsi:type="NodeAdventure" ID="3" positionX="813" positionY="465" width="350" height="1046" image="Event064">
       <logic>
         <FilterBlock>
@@ -5285,7 +5285,7 @@ The dwarves are happy with your results and reward you well.</nodes>
         </ModifierBlock>
       </logic>
     </nodes>
-    <nodes xsi:type="NodeAdventureEnd" ID="5" positionX="-613" positionY="-705" width="350" height="455" linkedEventUniqueID="0">
+    <nodes xsi:type="NodeAdventureEnd" ID="5" positionX="-613" positionY="-705" width="350" height="530" linkedEventUniqueID="0">
       <logic>
         <ModifierBlock>
           <LogicModifiers>
@@ -5305,7 +5305,7 @@ The dwarves are happy with your results and reward you well.</nodes>
       <outputs name="Say that the dwarves asked you to reclaim their ancient forge. It is important to them, so they won't let it go." ownerID="6" targetID="30" fromX="1538" fromY="550" />
       <outputs name="Yes, kill it in the name of light!" ownerID="6" targetID="25" fromX="1538" fromY="470" />You call upon the light and it guides you in, past the many wards. 
 
-Within the forge you see a burning furnace, an anvil, and all the trappings you'd expect, but behind the hammer stands a creature of the dark -- a mroki. It looks at you, its empty eyes revealing no emotion:
+Within the forge you see a burning furnace, an anvil, and all the trappings you'd expect, but behind the hammer stands a creature of the dark - a mroki. It looks at you, its empty eyes revealing no emotion:
 
 'You smell of the light. Are you here to smite me?'</nodes>
     <nodes xsi:type="NodeAdventure" ID="7" positionX="1677" positionY="927" width="350" height="725">
@@ -5318,7 +5318,7 @@ Within the forge you see a burning furnace, an anvil, and all the trappings you'
       </logic>
       <outputs name="Say that the dwarves asked you to reclaim their ancient forge. It is important to them, so they won't let it go." ownerID="7" targetID="30" fromX="2002" fromY="435" />You call upon the light and it guides you in, past the many wards. 
 
-Within the forge you see a burning furnace, an anvil, and all the trappings you'd expect, but behind the hammer stands a creature of the dark -- a mroki. It looks at you, its empty eyes revealing no emotion:
+Within the forge you see a burning furnace, an anvil, and all the trappings you'd expect, but behind the hammer stands a creature of the dark - a mroki. It looks at you, its empty eyes revealing no emotion:
 
 'You smell of the darkness of turmoil. Have you come for a weapon, or do you wish to fight me? One never knows with you chaotic types.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="8" positionX="2138" positionY="626" width="350" height="725">
@@ -5332,9 +5332,9 @@ Within the forge you see a burning furnace, an anvil, and all the trappings you'
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Say that the dwarves asked you to reclaim their ancient forge. It is important to them, so they won't let it go." ownerID="8" targetID="32" fromX="2463" fromY="134" />You call upon the light and it guides you in, past the many wards. 
+      <outputs name="Say that the dwarves asked you to reclaim their ancient forge. It is important to them, so they won't let it go." ownerID="8" targetID="32" fromX="2463" fromY="134" />You call upon the dark and it obeys and guides you in, past the many wards. 
 
-Within the forge you see a burning furnace, an anvil, and all the trappings you'd expect, but behind the hammer stands a creature of the dark -- a mroki. It looks at you, its empty eyes revealing no emotion:
+Within the forge you see a burning furnace, an anvil, and all the trappings you'd expect, but behind the hammer stands a creature of the dark - a mroki. It looks at you, its empty eyes revealing no emotion:
 
 'Dark friend, welcome. How can I aid you?'</nodes>
     <nodes xsi:type="NodeAdventure" ID="9" positionX="1551" positionY="-171" width="350" height="805">
@@ -5365,8 +5365,8 @@ Within the forge you see a burning furnace, an anvil, and all the trappings you'
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Insist that the forge belongs to the dwarves and they are stubborn. They will surely continue to harass him here. " ownerID="12" targetID="11" fromX="2894" fromY="-669" />
-      <outputs name="[Wisdom]Say that the dwarves pay great respect to their forefathers and fallen heroes. It sounds like the mroki has at least an echo of such a dwarf inside, so you will tell the dwarves of this, and perhaps the two of them can come to an agreement." ownerID="12" targetID="13" fromX="2894" fromY="-749" />'I am a mroki, a creature of darkness is what you know of me. Does it matter? I feel an affinity to stone and metal, a stirring of old lives a calling of the fire, who knows? I am here to forge.'</nodes>
+      <outputs name="Insist that the forge belongs to the dwarves and they are stubborn. They will surely continue to harass him here. " ownerID="12" targetID="11" fromX="2893" fromY="-669" />
+      <outputs name="[Wisdom]Say that the dwarves pay great respect to their forefathers and fallen heroes. It sounds like the mroki has at least an echo of such a dwarf inside, so you will tell the dwarves of this, and perhaps the two of them can come to an agreement." ownerID="12" targetID="13" fromX="2893" fromY="-749" />'I am a mroki, a creature of darkness is what you know of me. Does it matter? I feel an affinity to stone and metal, a stirring of old lives a calling of the fire, who knows? I am here to forge.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="13" positionX="3001" positionY="-226" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -5425,7 +5425,7 @@ The mroki hands you a small gift and goes back to work.</nodes>
     <nodes xsi:type="NodeSpawnOnMap" ID="17" positionX="4681" positionY="-496" width="480" height="503" radius="0" destroyOwner="true" linkedEventUniqueID="0">
       <outputs ownerID="17" targetID="18" fromX="5129" fromY="-928" />
     </nodes>
-    <nodes xsi:type="NodeAdventureEnd" ID="18" positionX="5214" positionY="-565" width="350" height="408" allPlayersXP="4" allPlayersRP="1" linkedEventUniqueID="0" />
+    <nodes xsi:type="NodeAdventureEnd" ID="18" positionX="5214" positionY="-565" width="350" height="530" allPlayersXP="4" allPlayersRP="1" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventure" ID="19" positionX="3090" positionY="-1115" width="350" height="805">
       <outputs name="Say that while you sympathise, the dwarves are very possessive of their forges, so the mroki must leave." ownerID="19" targetID="20" fromX="3415" fromY="-1606" />
       <outputs name="[Wisdom]Say that the dwarves pay great respect to their forefathers and fallen heroes. It sounds like the mroki has at least an echo of such a dwarf inside, so you will tell the dwarves of this, and perhaps the two of them can come to an agreement." ownerID="19" targetID="13" fromX="3415" fromY="-1686" />'For you, a mroki is a creature of darkness, and we are that, but how do we come to be? I don't know the answer, but I feel many minds within me. Perhaps those lost to darkness? Or just dark thoughts of those who encountered turmoil in its purest form? In any case, the dwarven mind speaks loudly to me, so I came here to forge weapons. That's all.'</nodes>
@@ -5440,7 +5440,7 @@ The mroki hands you a small gift and goes back to work.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Report back to the dwarves." ownerID="20" targetID="21" fromX="3826" fromY="-1929" />'Yes, yes, that we -- or they -- are. I will go, for the voice in my mind does not want to spill dwarven blood. You spoke well. Here, you may have better use of this than me.'
+      <outputs name="Report back to the dwarves." ownerID="20" targetID="21" fromX="3826" fromY="-1929" />'Yes, yes, that we - or they - are. I will go, for the voice in my mind does not want to spill dwarven blood. You spoke well. Here, you may have better use of this than me.'
 
 The mroki hands you a gift, then dissolves into shadow, and you feel the black mist leave with him. </nodes>
     <nodes xsi:type="NodeAdventure" ID="21" positionX="4019" positionY="-1685" width="350" height="725">
@@ -5461,10 +5461,10 @@ The mroki hands you a gift, then dissolves into shadow, and you feel the black m
     <nodes xsi:type="NodeDealDamage" ID="22" positionX="2322" positionY="-1910" width="460" height="459" challengeTypeDamage="TypeMental" minDamage="20" maxDamage="40" useCountInPercent="true" targetGroup="nodwarf">
       <outputs ownerID="22" targetID="23" fromX="2751" fromY="-2298" />
     </nodes>
-    <nodes xsi:type="NodeAdventure" ID="23" positionX="2984" positionY="-2004" width="350" height="761">
-      <outputs name="Attack!" ownerID="23" targetID="25" fromX="3309" fromY="-2451" />
-      <outputs name="Give up." ownerID="23" targetID="24" fromX="3309" fromY="-2531" />'No! I claimed this forge for it is mine, and those children of stone can wait their turn. Leave!'</nodes>
-    <nodes xsi:type="NodeAdventure" ID="24" positionX="3439" positionY="-2246" width="350" height="681">
+    <nodes xsi:type="NodeAdventure" ID="23" positionX="2984" positionY="-2004" width="350" height="805">
+      <outputs name="Attack!" ownerID="23" targetID="25" fromX="3309" fromY="-2495" />
+      <outputs name="Give up." ownerID="23" targetID="24" fromX="3309" fromY="-2575" />'No! I claimed this forge for it is mine, and those children of stone can wait their turn. Leave!'</nodes>
+    <nodes xsi:type="NodeAdventure" ID="24" positionX="3439" positionY="-2246" width="350" height="725">
       <logic>
         <ModifierBlock>
           <LogicModifiers>
@@ -5472,7 +5472,7 @@ The mroki hands you a gift, then dissolves into shadow, and you feel the black m
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Leave." ownerID="24" targetID="17" fromX="3764" fromY="-2693" />'A shame, lassie, a shame. Ya ain't so useful after all, eh?'
+      <outputs name="Leave." ownerID="24" targetID="17" fromX="3764" fromY="-2737" />'A shame, lassie, a shame. Ya ain't so useful after all, eh?'
 
 The dwarves have to deal with the problem themselves, so your friendship does not grow.</nodes>
     <nodes xsi:type="NodeChallenge" ID="25" positionX="1047" positionY="-1036" width="500" height="807" challengeType="TypePhysical" versusGroup="GROUP-MROKI_8P_6M_8S" challengeScale="101" challengedList="nodwarf">

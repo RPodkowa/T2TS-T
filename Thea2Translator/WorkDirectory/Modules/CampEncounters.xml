@@ -1,5 +1,5 @@
-<?xml version="1.0"?>
-<MODULE xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="CampEncounters" lastEventIndex="9" allowToUse="true" uniqueModuleID="1583969057">
+<?xml version="1.0" encoding="Windows-1252"?>
+<MODULE xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="CampEncounters" lastEventIndex="9" allowToUse="true" uniqueModuleID="1583969057">
   <Adventure name="CampEvents" uniqueID="1" allowToUse="false" typeGeneric="false" typePerGroupGeneric="false" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="4" nodeIdMax="7" joinIsForced="false" joinType="AllAlly" joinRange="MovementArea">
     <nodes xsi:type="NodeStarting" ID="1" positionX="10" positionY="-10" width="347" height="1024" image="Event014">
       <logic>
@@ -1110,13 +1110,7 @@ But beware -- their madness is more than mental, for they spread toxin and disea
           <LogicFilter name="med">
             <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="TAG-HEALER" />
           </LogicFilter>
-          <LogicFilter name="mag">
-            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="TAG-MAGIC_USER" />
-          </LogicFilter>
-          <LogicProcessing name="mm" list1="med" list2="mag">
-            <scriptCallWithTag scriptName="FLP_AorB" />
-          </LogicProcessing>
-          <LogicResultAction list="mm">
+          <LogicResultAction list="med">
             <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
           </LogicResultAction>
         </FilterBlock>
@@ -1326,16 +1320,10 @@ Perhaps some will choose to stay with you. Even if they do not, they leave what 
     <nodes xsi:type="NodeAdventure" ID="48" positionX="-567" positionY="-44" width="350" height="725">
       <logic>
         <FilterBlock>
-          <LogicFilter name="med">
-            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="TAG-HEALER" />
-          </LogicFilter>
           <LogicFilter name="mag">
             <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="TAG-MAGIC_USER" />
           </LogicFilter>
-          <LogicProcessing name="mm" list1="med" list2="mag">
-            <scriptCallWithTag scriptName="FLP_AorB" />
-          </LogicProcessing>
-          <LogicResultAction list="mm">
+          <LogicResultAction list="mag">
             <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
           </LogicResultAction>
         </FilterBlock>
@@ -1360,7 +1348,7 @@ Perhaps some will choose to stay with you. Even if they do not, they leave what 
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Leave." ownerID="48" targetID="47" fromX="-236" fromY="-535" />Not all minds and bodies are strong enough to survive this taint, and even with your help, some of the victims pass away. 
+      <outputs name="Leave." ownerID="48" targetID="47" fromX="-241" fromY="-535" />Not all minds and bodies are strong enough to survive this taint, and even with your help, some of the victims pass away. 
 
 But others show signs of recovery, or at least improvement. They regain some semblance of their mind and are thankful for your aid. 
 

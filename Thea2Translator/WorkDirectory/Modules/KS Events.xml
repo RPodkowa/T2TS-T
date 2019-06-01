@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="windows-1250"?>
+<?xml version="1.0" encoding="Windows-1252"?>
 <MODULE xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="KS Events" lastEventIndex="84" allowToUse="true" uniqueModuleID="2010316765">
   <Adventure name="Glass King" uniqueID="1" allowOnce="true" typeGeneric="false" typePerGroupGeneric="false" typeInterrupt="true" typeExpedition="true" typeVillage="false" difficulty="8" nodeIdMax="29" eventTag="TAG-LOG6" joinIsForced="false" joinType="AllAlly" joinRange="MovementArea">
     <nodes xsi:type="NodeStarting" ID="1" positionX="10" positionY="-10" width="347" height="661" image="Event045">
@@ -87,11 +87,11 @@ A golden throne is submerged in the odd glass, and atop it sits a lone figure, t
       <outputs name="Wait to listen to more of his story." ownerID="11" targetID="12" fromX="3576" fromY="-610" />
       <outputs name="Tell him that if he calls your gods idiotic once more, you will teach him a lesson!" ownerID="11" targetID="13" fromX="3576" fromY="-690" />
       <outputs name="Say that you agree about the gods. Even though you are forced to do their bidding, you dislike their constant meddling." ownerID="11" targetID="14" fromX="3576" fromY="-770" />'A learned one? How rare. When I rebuilt mankind's greatness, we had scholars once more. Now, the earth shatters ever more, the light, no doubt brought by the meddling of those idiotic gods...a mere priest holds tatters of great knowledge...'</nodes>
-    <nodes xsi:type="NodeAdventure" ID="12" positionX="3679" positionY="331" width="350" height="805">
-      <outputs name="Tell him that if he calls your gods idiotic once more, you will teach him a lesson!" ownerID="12" targetID="13" fromX="4004" fromY="-160" />
-      <outputs name="Say that you agree about the gods. Even though you are forced to do their bidding, you dislike their constant meddling." ownerID="12" targetID="14" fromX="4004" fromY="-240" />'What happened, you ask? THEY happened. I was strong, I had beauty, wisdom, and the love of my people. But the gods did not like it, no. 
+    <nodes xsi:type="NodeAdventure" ID="12" positionX="3686" positionY="363" width="350" height="805">
+      <outputs name="Tell him that if he calls your gods idiotic once more, you will teach him a lesson!" ownerID="12" targetID="13" fromX="4012" fromY="-127" />
+      <outputs name="Say that you agree about the gods. Even though you are forced to do their bidding, you dislike their constant meddling." ownerID="12" targetID="14" fromX="4012" fromY="-207" />'What happened, you ask? THEY happened. I was strong, I had beauty, wisdom, and the love of my people. But the gods did not like it, no. 
 
-They made my kingdom rot, rough betrayal, and misery, and in the end, on my deathbed, I was cursed, my face torn from me and this body trapped in this glass ruin forever. I cannot touch anything, I cannot leave, and I cannot even look into the mirror, damn them!'</nodes>
+They made my kingdom rot, through betrayal, and misery, and in the end, on my deathbed, I was cursed, my face torn from me and this body trapped in this glass ruin forever. I cannot touch anything, I cannot leave, and I cannot even look into the mirror, damn them!'</nodes>
     <nodes xsi:type="NodeAdventure" ID="13" positionX="4129" positionY="-340" width="350" height="805">
       <outputs name="Accept his tale and tell him it is a terrible fate indeed." ownerID="13" targetID="16" fromX="4454" fromY="-831" />
       <outputs name="Question his story. You do not think your gods would be so petty. He must have done more to anger them." ownerID="13" targetID="17" fromX="4454" fromY="-911" />'Bah, a servant of our tormentors. Did they promise you riches, make you their pet chosen? 
@@ -4831,9 +4831,6 @@ Alas, it took you too long to discover them. The idol takes weeks to heal, causi
           <LogicFilter name="mag" makePublic="true">
             <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="TAG-MAGIC_USER" />
           </LogicFilter>
-          <LogicProcessing name="unstuff" makePublic="true" list1="stuff">
-            <scriptCallWithTag scriptName="FLP_FilterAnyUnEquippedItems" />
-          </LogicProcessing>
           <LogicProcessing name="curseM" makePublic="true" list1="nppl">
             <scriptCallWithTag scriptName="FLP_CharactersWithSkill" tag="SKILL-CURSE_M" />
           </LogicProcessing>
@@ -16732,222 +16729,13 @@ They depart.
     </nodes>
   </Adventure>
   <Adventure name="Dwarf baker2" uniqueID="84" typeGeneric="false" typePerGroupGeneric="false" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="50" eventTag="TAG-LOG13" joinIsForced="false" joinType="AllAlly" joinRange="MovementArea">
-    <nodes xsi:type="NodeStarting" ID="1" positionX="-470" positionY="898" width="347" height="741" image="Event150">
-      <outputs ownerID="1" targetID="2" group="G1" fromX="-145" fromY="294" />
-      <outputs ownerID="1" targetID="26" group="G1" fromX="-145" fromY="214" />
+    <nodes xsi:type="NodeStarting" ID="1" positionX="-470" positionY="898" width="347" height="661" image="Event150">
+      <outputs ownerID="1" targetID="26" group="G1" fromX="-145" fromY="294" />
     </nodes>
-    <nodes xsi:type="NodeAdventure" allowOnce="true" ID="2" positionX="-264" positionY="37" width="350" height="805">
-      <logic>
-        <FilterBlock>
-          <LogicFilter name="ppl" makePublic="true">
-            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" />
-          </LogicFilter>
-          <LogicFilter name="dwarf" makePublic="true">
-            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" tag="RACE-DWARF" />
-          </LogicFilter>
-          <LogicFilter name="sham" makePublic="true">
-            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="TAG-SHAMAN" />
-          </LogicFilter>
-          <LogicFilter name="ghost" makePublic="true">
-            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="TAG-GHOST" />
-          </LogicFilter>
-          <LogicFilter name="mag" makePublic="true">
-            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="TAG-MAGIC_USER" />
-          </LogicFilter>
-          <LogicResultAction>
-            <scriptCallWithTag scriptName="FRA_PlayersDoNotHaveSharedTag" parameter="1" tag="TAG-QUEST56" />
-          </LogicResultAction>
-        </FilterBlock>
-      </logic>
-      <outputs name="Investigate." ownerID="2" targetID="3" fromX="61" fromY="-454" />
-      <outputs name="Leave." ownerID="2" targetID="4" fromX="61" fromY="-534" />You come across a lone house and hear a lot of dwarvish swearing from the back. </nodes>
-    <nodes xsi:type="NodeAdventure" ID="3" positionX="800" positionY="80" width="350" height="885">
-      <outputs name="[Dwarf]Tell your kin to calm down and tell you what is wrong." ownerID="3" targetID="5" fromX="1125" fromY="-411" />
-      <outputs name="Ask the dwarf if he needs assistance." ownerID="3" targetID="8" fromX="1125" fromY="-491" />
-      <outputs name="Attack!" ownerID="3" targetID="6" fromX="1125" fromY="-571" />You see a dwarf tearing his hair out and kicking a clay oven:
-
-'Ya bloody useless pile of junk. Get the fuck out me oven, ya son of a whore spirit!'</nodes>
-    <nodes xsi:type="NodeAdventureEnd" ID="4" positionX="224" positionY="-932" width="350" height="530" linkedEventUniqueID="0" />
-    <nodes xsi:type="NodeAdventure" ID="5" positionX="1018" positionY="1079" width="350" height="966">
-      <logic>
-        <FilterBlock>
-          <LogicResultAction list="dwarf">
-            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
-          </LogicResultAction>
-        </FilterBlock>
-      </logic>
-      <outputs name="A cake? That seems below his station." ownerID="5" targetID="7" fromX="1343" fromY="587" />
-      <outputs name="Does he know how to get rid of it?" ownerID="5" targetID="9" fromX="1343" fromY="507" />
-      <outputs name="[Magic user]Tell him you can banish the spirit for him." ownerID="5" targetID="10" fromX="1343" fromY="427" />
-      <outputs name="[Goblin shaman or Spirits]You sense the ghost inside. Speak to it." ownerID="5" targetID="36" fromX="1343" fromY="347" />'Oh, you, stone and metal be kind to me! Can you talk some sense into the oven? I crafted it with my own hands, perfect -- keeps the temperature just so. I would bake the best cake there is!
-
-But no, this idiot spirit got itself trapped inside, and it won't leave!'</nodes>
-    <nodes xsi:type="NodeChallenge" ID="6" positionX="962" positionY="-1082" width="500" height="726" challengeType="TypePhysical" versusGroup="GROUP-Q_SMITH_BEAR_6P_5M_2S" challengeScale="101" challengedList="ppl">
-      <outputs name="Win" ownerID="6" targetID="21" fromX="1403" fromY="-1577" />
-      <outputs name="Lose" ownerID="6" targetID="29" fromX="1403" fromY="-1657" />
-      <outputs name="Surrender" ownerID="6" targetID="30" fromX="1403" fromY="-1737" />
-    </nodes>
-    <nodes xsi:type="NodeAdventure" ID="7" positionX="1577" positionY="1193" width="350" height="885">
-      <outputs name="He looks distressed, so just nod. Does he know how to get rid of the ghost?" ownerID="7" targetID="9" fromX="1902" fromY="701" />
-      <outputs name="[Magic user]Tell him you can banish the spirit for him." ownerID="7" targetID="10" fromX="1902" fromY="621" />
-      <outputs name="[Goblin shaman or Spirits]You sense the ghost inside. Speak to it." ownerID="7" targetID="36" fromX="1902" fromY="541" />'What, ya think a dwarven smith can only melt things, eh? Yer just like Helga. She said I won't be able to do it, and so I will do it!'
-
-He pulls a bit more of his already thinned hair out. </nodes>
-    <nodes xsi:type="NodeAdventure" ID="8" positionX="1178" positionY="-50" width="350" height="966">
-      <outputs name="A cake? That seems below his station." ownerID="8" targetID="7" fromX="1503" fromY="-541" />
-      <outputs name="Does he know how to get rid of it?" ownerID="8" targetID="9" fromX="1503" fromY="-621" />
-      <outputs name="[Magic user]Tell him you can banish the spirit for him." ownerID="8" targetID="10" fromX="1503" fromY="-701" />
-      <outputs name="[Goblin shaman or Spirits]You sense the ghost inside. Speak to it." ownerID="8" targetID="36" fromX="1503" fromY="-781" />'Who are you? I don't care! Can you talk some sense into the oven? I crafted it with my own hands, perfect - keeps the temperature just so. I would bake the best cake there is!
-
-But no, this idiot spirit got itself trapped inside, and it won't leave!'</nodes>
-    <nodes xsi:type="NodeAdventure" ID="9" positionX="2219" positionY="694" width="350" height="725">
-      <outputs name="Go look for the granite lump." ownerID="9" targetID="49" fromX="2544" fromY="202" />'Aye, that I do. This maggot got itself stuck in the bit of granite I used. I know just the lump it came from, but I am in the midst of making the best cake mix, I can't just leave.
-
-If ya go get the lump, I'll give ya a tip about a good place to mine. And a reward, too. Just hurry, please.'</nodes>
-    <nodes xsi:type="NodeAdventure" ID="10" positionX="1756" positionY="-195" width="350" height="805">
-      <logic>
-        <FilterBlock>
-          <LogicResultAction list="mag">
-            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
-          </LogicResultAction>
-        </FilterBlock>
-      </logic>
-      <outputs name="Do the ritual." ownerID="10" targetID="11" fromX="2081" fromY="-686" />
-      <outputs name="It may be too difficult. Does he know another way?" ownerID="10" targetID="9" fromX="2081" fromY="-766" />'Oh laddie, that makes me so happy! I'll pay ya nice for it.'</nodes>
-    <nodes xsi:type="NodeChallenge" ID="11" positionX="2268" positionY="-690" width="500" height="726" challengeType="TypeSpirit" versusConcept="true" versusGroup="GROUP-CON_S_0P_0M_5S" challengeScale="101" challengedList="ppl">
-      <outputs name="Win" ownerID="11" targetID="12" fromX="2709" fromY="-1185" />
-      <outputs name="Lose" ownerID="11" targetID="18" fromX="2709" fromY="-1265" />
-      <outputs name="Surrender" ownerID="11" targetID="18" fromX="2709" fromY="-1345" />
-    </nodes>
-    <nodes xsi:type="NodeAdventure" ID="12" positionX="2923" positionY="-511" width="350" height="725">
-      <logic>
-        <ModifierBlock>
-          <LogicModifiers>
-            <scriptCallWithTag scriptName="FMO_AddItems" parameter="1" tag="ITEM_CARGO-RARE_ONE_TOOL" />
-          </LogicModifiers>
-          <LogicModifiers>
-            <scriptCallWithTag scriptName="FMO_AddItems" parameter="0;1" tag="ITEM_CARGO-P_STRONG_ONE_DWARF_WEAPON" />
-          </LogicModifiers>
-          <LogicModifiers>
-            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="5" tag="TAG-LOYALTY_EARTHBOUND" />
-          </LogicModifiers>
-          <LogicModifiers>
-            <scriptCallWithTag scriptName="FMO_AddItems" parameter="10;30" tag="ITEM_CARGO-DWARFMOONSHINE" />
-          </LogicModifiers>
-          <LogicModifiers>
-            <scriptCallWithTag scriptName="FMO_AddItems" parameter="10;30" tag="ITEM_CARGO-BASIC_COOKED_FEW_FOOD" />
-          </LogicModifiers>
-        </ModifierBlock>
-      </logic>
-      <outputs name="Thank him and leave." ownerID="12" targetID="15" fromX="3248" fromY="-1002" />You banish the spirit successfully and the dwarf claps his hands:
-
-'Aye, laddie, ya did it! Here, my reward for ya, but please do leave now, I need to focus!
-
-Oh, and I marked a resource vein for you on your map. Go get some good stone or metal.'
-</nodes>
-    <nodes xsi:type="NodeAdventureEnd" ID="14" positionX="3934" positionY="-544" width="350" height="530" allPlayersXP="5" allPlayersRP="2" logBookName="QUEST_KS_BAKER" logBookDescription="QUEST_KS_BAKER2_DES" linkedEventUniqueID="0" endOfQuest="true">
-      <logic>
-        <FilterBlock>
-          <LogicResultAction>
-            <scriptCallWithTag scriptName="FRA_Chance" parameter="33" />
-          </LogicResultAction>
-        </FilterBlock>
-        <ModifierBlock>
-          <LogicModifiers>
-            <scriptCallWithTag scriptName="FMO_AddResourceOnMap" parameter="3" tag="RES-OBSIDIAN" />
-          </LogicModifiers>
-        </ModifierBlock>
-      </logic>
-    </nodes>
-    <nodes xsi:type="NodeSpawnOnMap" ID="15" positionX="3301" positionY="-572" width="480" height="663" radius="0" destroyOwner="true" linkedEventUniqueID="0">
-      <outputs ownerID="15" targetID="14" group="G1" fromX="3749" fromY="-554" />
-      <outputs ownerID="15" targetID="16" group="G3" fromX="3289" fromY="-634" />
-      <outputs ownerID="15" targetID="17" group="G1" fromX="3289" fromY="-634" />
-    </nodes>
-    <nodes xsi:type="NodeAdventureEnd" ID="16" positionX="4341" positionY="-736" width="350" height="530" allPlayersXP="5" allPlayersRP="2" logBookName="QUEST_KS_BAKER" logBookDescription="QUEST_KS_BAKER2_DES" linkedEventUniqueID="0" endOfQuest="true">
-      <logic>
-        <FilterBlock>
-          <LogicResultAction>
-            <scriptCallWithTag scriptName="FRA_Chance" parameter="50" />
-          </LogicResultAction>
-        </FilterBlock>
-        <ModifierBlock>
-          <LogicModifiers>
-            <scriptCallWithTag scriptName="FMO_AddResourceOnMap" parameter="3" tag="RES-MITHRILL" />
-          </LogicModifiers>
-        </ModifierBlock>
-      </logic>
-    </nodes>
-    <nodes xsi:type="NodeAdventureEnd" ID="17" positionX="3969" positionY="-1145" width="350" height="530" allPlayersXP="5" allPlayersRP="2" logBookName="QUEST_KS_BAKER" logBookDescription="QUEST_KS_BAKER2_DES" linkedEventUniqueID="0" endOfQuest="true">
-      <logic>
-        <ModifierBlock>
-          <LogicModifiers>
-            <scriptCallWithTag scriptName="FMO_AddResourceOnMap" parameter="3" tag="RES-DIAMOND" />
-          </LogicModifiers>
-        </ModifierBlock>
-      </logic>
-    </nodes>
-    <nodes xsi:type="NodeAdventure" ID="18" positionX="3424" positionY="-1324" width="350" height="725">
-      <outputs name="Leave." ownerID="18" targetID="19" fromX="3749" fromY="-1815" />You fail the ritual and it only angers the spirit. The clay oven shakes and turns blue. The dwarf is angry:
-
-'Ya best leave me be, lassie, I am in no mood for this!'</nodes>
-    <nodes xsi:type="NodeSpawnOnMap" ID="19" positionX="3840" positionY="-1691" width="480" height="503" radius="0" destroyOwner="true" linkedEventUniqueID="0">
-      <outputs ownerID="19" targetID="20" fromX="4288" fromY="-2123" />
-    </nodes>
-    <nodes xsi:type="NodeAdventureEnd" ID="20" positionX="4835" positionY="-1704" width="350" height="530" allPlayersXP="1" allPlayersRP="1" logBookName="QUEST_KS_BAKER" logBookDescription="QUEST_KS_BAKER3_DES" linkedEventUniqueID="0" endOfQuest="true" />
-    <nodes xsi:type="NodeAdventure" ID="21" positionX="989" positionY="-1606" width="350" height="805">
-      <logic>
-        <ModifierBlock>
-          <LogicModifiers>
-            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="-4" tag="TAG-LOYALTY_EARTHBOUND" />
-          </LogicModifiers>
-        </ModifierBlock>
-      </logic>
-      <outputs name="What can be done?" ownerID="21" targetID="22" fromX="1314" fromY="-2097" />
-      <outputs name="Decline and leave." ownerID="21" targetID="25" fromX="1314" fromY="-2177" />You kill the dwarf, and the ghost calls out to you:
-
-'Oh, hey. Now that you have killed that rude oaf, could you free me, please?'</nodes>
-    <nodes xsi:type="NodeAdventure" ID="22" positionX="1383" positionY="-1574" width="350" height="805">
-      <outputs name="Agree." ownerID="22" targetID="23" fromX="1708" fromY="-2065" />
-      <outputs name="Decline and leave." ownerID="22" targetID="25" fromX="1708" fromY="-2145" />'There is a lump of granite that stupid dwarf broke down. If you bring it here, I can transfer back into it. I liked it there.'</nodes>
-    <nodes xsi:type="NodeSpawnOnMap" ID="23" positionX="1908" positionY="-1931" width="480" height="503" radius="4" settlementID="SET-CAVE_ENTRANCE" destroyOwner="true" linkedEventUniqueID="38">
-      <outputs ownerID="23" targetID="24" fromX="2356" fromY="-2363" />
-    </nodes>
-    <nodes xsi:type="NodeAdventureEnd" ID="24" positionX="2464" positionY="-2731" width="350" height="530" allPlayersXP="5" allPlayersRP="2" logBookName="QUEST_KS_BAKER" logBookDescription="QUEST_KS_BAKER6_DES" linkedEventUniqueID="0" />
-    <nodes xsi:type="NodeSpawnOnMap" ID="25" positionX="1314" positionY="-2511" width="480" height="503" radius="0" destroyOwner="true" linkedEventUniqueID="0">
-      <outputs ownerID="25" targetID="43" fromX="1762" fromY="-2943" />
-    </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="4" positionX="-347" positionY="-524" width="350" height="530" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventure" ID="26" positionX="-916" positionY="-126" width="350" height="805">
       <outputs name="Yes." ownerID="26" targetID="34" group="G1" fromX="-590" fromY="-617" />
       <outputs name="Leave to look for the obsidian lump to get rid of the ghost." ownerID="26" targetID="4" group="G1" fromX="-590" fromY="-697" />'You found it yet? No? Go away...'</nodes>
-    <nodes xsi:type="NodeSpawnOnMap" ID="27" positionX="3382" positionY="597" width="480" height="503" radius="4" settlementID="SET-CAVE_ENTRANCE" destroyOwner="true" linkedEventUniqueID="37">
-      <outputs ownerID="27" targetID="28" fromX="3832" fromY="168" />
-    </nodes>
-    <nodes xsi:type="NodeAdventureEnd" ID="28" positionX="3976" positionY="540" width="350" height="530" allPlayersXP="3" allPlayersRP="2" logBookName="QUEST_KS_BAKER" logBookDescription="QUEST_KS_BAKER_DES" linkedEventUniqueID="0">
-      <logic>
-        <ModifierBlock>
-          <LogicModifiers>
-            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="1" tag="TAG-QUEST56" />
-          </LogicModifiers>
-        </ModifierBlock>
-      </logic>
-    </nodes>
-    <nodes xsi:type="NodeAdventure" ID="29" positionX="416" positionY="-2039" width="350" height="725">
-      <logic>
-        <ModifierBlock>
-          <LogicModifiers>
-            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="-3" tag="TAG-LOYALTY_EARTHBOUND" />
-          </LogicModifiers>
-        </ModifierBlock>
-      </logic>
-      <outputs name="Leave." ownerID="29" targetID="31" fromX="741" fromY="-2530" />You are badly beaten and chased away.</nodes>
-    <nodes xsi:type="NodeDealDamage" ID="30" positionX="-117" positionY="-1931" width="460" height="459" challengeTypeDamage="TypePhysical" minDamage="20" maxDamage="30" useCountInPercent="true" targetGroup="ppl">
-      <outputs ownerID="30" targetID="29" fromX="312" fromY="-2319" />
-    </nodes>
-    <nodes xsi:type="NodeSpawnOnMap" ID="31" positionX="-198" positionY="-2546" width="480" height="503" radius="0" destroyOwner="true" linkedEventUniqueID="0">
-      <outputs ownerID="31" targetID="32" fromX="250" fromY="-2978" />
-    </nodes>
-    <nodes xsi:type="NodeAdventureEnd" ID="32" positionX="-654" positionY="-2584" width="350" height="530" allPlayersXP="1" allPlayersRP="1" logBookName="QUEST_KS_BAKER" logBookDescription="QUEST_KS_BAKER7_DES" linkedEventUniqueID="0" endOfQuest="true" />
     <nodes xsi:type="NodeAdventure" ID="34" positionX="-1656" positionY="-309" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -16975,95 +16763,12 @@ Oh, and I marked a resource vein for you on your map. Go get some good stone or 
       </logic>
       <outputs name="Thank him and leave." ownerID="34" targetID="44" fromX="-1330" fromY="-800" />'Ah, ya got it, great. Give it quick, I'll take it back myself. Here, a reward as promised! Metal and stone to ya, laddie. Oh, and I marked a spot for some good mining for ya too.'
 </nodes>
-    <nodes xsi:type="NodeAdventure" ID="36" positionX="1833" positionY="-1038" width="350" height="725">
-      <logic>
-        <FilterBlock>
-          <LogicResultAction list="sham" resultGroup="G1">
-            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
-          </LogicResultAction>
-          <LogicResultAction list="ghost" resultGroup="G1">
-            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
-          </LogicResultAction>
-        </FilterBlock>
-      </logic>
-      <outputs name="Agree and tell the dwarf you will extract the ghost instead." ownerID="36" targetID="37" fromX="2158" fromY="-1529" />'Oh, you can speak to me, so you know about spirits, good. Please don't just banish me. If you take me out of here safely, I will come with you, eh?'</nodes>
-    <nodes xsi:type="NodeAdventure" ID="37" positionX="2574" positionY="-1461" width="350" height="725">
-      <outputs name="Say that there is no guarantee, but the chance for it is small." ownerID="37" targetID="38" fromX="2899" fromY="-1952" />'Fine with me, as long as ya don't damage my oven, right?'</nodes>
-    <nodes xsi:type="NodeAdventure" ID="38" positionX="3030" positionY="-1988" width="350" height="885">
-      <outputs name="Ignore him and extract the ghost." ownerID="38" targetID="39" fromX="3355" fromY="-2479" />
-      <outputs name="Banish the ghost." ownerID="38" targetID="11" fromX="3355" fromY="-2559" />
-      <outputs name="It may be too difficult. Does he know another way?" ownerID="38" targetID="9" fromX="3355" fromY="-2639" />'What? No! Just banish the stupid thing!'</nodes>
-    <nodes xsi:type="NodeChallenge" ID="39" positionX="3444" positionY="-2241" width="500" height="807" challengeType="TypeSpirit" versusConcept="true" versusGroup="GROUP-CON_S_0P_0M_5S" challengeScale="101" challengedList="ppl">
-      <outputs name="Win" ownerID="39" targetID="40" group="G1" fromX="3885" fromY="-2736" />
-      <outputs name="Lose" ownerID="39" targetID="18" fromX="3885" fromY="-2816" />
-      <outputs name="Surrender" ownerID="39" targetID="18" fromX="3885" fromY="-2896" />
-      <outputs name="Win" ownerID="39" targetID="41" group="G1" fromX="3885" fromY="-2977" />
+    <nodes xsi:type="NodeSpawnOnMap" ID="44" positionX="-1117" positionY="-1217" width="480" height="663" radius="0" destroyOwner="true" linkedEventUniqueID="0">
+      <outputs ownerID="44" targetID="45" group="G1" fromX="-668" fromY="-1649" />
+      <outputs ownerID="44" targetID="46" group="G3" fromX="-668" fromY="-1729" />
+      <outputs ownerID="44" targetID="47" group="G1" fromX="-668" fromY="-1809" />
     </nodes>
-    <nodes xsi:type="NodeAdventure" ID="40" positionX="4010" positionY="-2212" width="350" height="725">
-      <logic>
-        <FilterBlock>
-          <LogicResultAction>
-            <scriptCallWithTag scriptName="FRA_Chance" parameter="80" />
-          </LogicResultAction>
-        </FilterBlock>
-        <ModifierBlock>
-          <LogicModifiers>
-            <scriptCallWithTag scriptName="FMO_AddItems" parameter="1" tag="ITEM_CARGO-RARE_ONE_TOOL" />
-          </LogicModifiers>
-          <LogicModifiers>
-            <scriptCallWithTag scriptName="FMO_AddItems" parameter="0;1" tag="ITEM_CARGO-P_STRONG_ONE_DWARF_WEAPON" />
-          </LogicModifiers>
-          <LogicModifiers>
-            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="5" tag="TAG-LOYALTY_EARTHBOUND" />
-          </LogicModifiers>
-          <LogicModifiers>
-            <scriptCallWithTag scriptName="FMO_AddItems" parameter="10;30" tag="ITEM_CARGO-DWARFMOONSHINE" />
-          </LogicModifiers>
-          <LogicModifiers>
-            <scriptCallWithTag scriptName="FMO_AddItems" parameter="10;30" tag="ITEM_CARGO-BASIC_COOKED_FEW_FOOD" />
-          </LogicModifiers>
-          <LogicModifiers>
-            <scriptCallWithTag scriptName="FMO_AddItems" parameter="1" tag="ITEM_CARGO-RARE_ONE_PET_GHOST" />
-          </LogicModifiers>
-          <LogicModifiers>
-            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="5" tag="TAG-LOYALTY_SPIRIT_TALKERS" />
-          </LogicModifiers>
-        </ModifierBlock>
-      </logic>
-      <outputs name="Thank him and leave." ownerID="40" targetID="15" fromX="4335" fromY="-2703" />You extract the spirit successfully and the dwarf claps his hands:
-
-'Aye, laddie, ya did it! Here, my reward for ya, but please do leave now, I need to focus! Oh, and I marked a resource vein for you on your map. Go get some good stone or metal.'
-
-The ghost is now bound to you and also pleased.
-</nodes>
-    <nodes xsi:type="NodeAdventure" ID="41" positionX="4525" positionY="-2564" width="350" height="725">
-      <logic>
-        <ModifierBlock>
-          <LogicModifiers>
-            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="-2" tag="TAG-LOYALTY_EARTHBOUND" />
-          </LogicModifiers>
-          <LogicModifiers>
-            <scriptCallWithTag scriptName="FMO_AddItems" parameter="1" tag="ITEM_CARGO-RARE_ONE_PET_GHOST" />
-          </LogicModifiers>
-          <LogicModifiers>
-            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="5" tag="TAG-LOYALTY_SPIRIT_TALKERS" />
-          </LogicModifiers>
-        </ModifierBlock>
-      </logic>
-      <outputs name="Take the ghost and leave." ownerID="41" targetID="48" fromX="4850" fromY="-3055" />You extract the spirit successfully, but the ritual shatters the clay oven. The dwarf is not happy:
-
-'Oi, ya bloody lassies! All my efforts ruined! Ya best leave my sight before I thrash ya!'
-
-But at least the ghost is now bound to you and happy.
-</nodes>
-    <nodes xsi:type="NodeAdventureEnd" ID="42" positionX="5666" positionY="-2781" width="350" height="530" allPlayersXP="5" allPlayersRP="2" logBookName="QUEST_KS_BAKER" logBookDescription="QUEST_KS_BAKER4_DES" linkedEventUniqueID="0" endOfQuest="true" />
-    <nodes xsi:type="NodeAdventureEnd" ID="43" positionX="1922" positionY="-2539" width="350" height="530" allPlayersXP="5" allPlayersRP="2" logBookName="QUEST_KS_BAKER" logBookDescription="QUEST_KS_BAKER5_DES" linkedEventUniqueID="0" endOfQuest="true" />
-    <nodes xsi:type="NodeSpawnOnMap" ID="44" positionX="-1036" positionY="-1212" width="480" height="663" radius="0" destroyOwner="true" linkedEventUniqueID="0">
-      <outputs ownerID="44" targetID="45" group="G1" fromX="-587" fromY="-1644" />
-      <outputs ownerID="44" targetID="46" group="G3" fromX="-587" fromY="-1724" />
-      <outputs ownerID="44" targetID="47" group="G1" fromX="-587" fromY="-1804" />
-    </nodes>
-    <nodes xsi:type="NodeAdventureEnd" ID="45" positionX="5435" positionY="-374" width="350" height="530" allPlayersXP="5" allPlayersRP="2" logBookName="QUEST_KS_BAKER" logBookDescription="QUEST_KS_BAKER8_DES" linkedEventUniqueID="0" endOfQuest="true">
+    <nodes xsi:type="NodeAdventureEnd" ID="45" positionX="705" positionY="-705" width="350" height="530" allPlayersXP="5" allPlayersRP="2" logBookName="QUEST_KS_BAKER" logBookDescription="QUEST_KS_BAKER8_DES" linkedEventUniqueID="0" endOfQuest="true">
       <logic>
         <FilterBlock>
           <LogicResultAction>
@@ -17077,7 +16782,7 @@ But at least the ghost is now bound to you and happy.
         </ModifierBlock>
       </logic>
     </nodes>
-    <nodes xsi:type="NodeAdventureEnd" ID="46" positionX="5485" positionY="-945" width="350" height="530" allPlayersXP="5" allPlayersRP="2" logBookName="QUEST_KS_BAKER" logBookDescription="QUEST_KS_BAKER8_DES" linkedEventUniqueID="0" endOfQuest="true">
+    <nodes xsi:type="NodeAdventureEnd" ID="46" positionX="550" positionY="-1431" width="350" height="530" allPlayersXP="5" allPlayersRP="2" logBookName="QUEST_KS_BAKER" logBookDescription="QUEST_KS_BAKER8_DES" linkedEventUniqueID="0" endOfQuest="true">
       <logic>
         <FilterBlock>
           <LogicResultAction>
@@ -17091,7 +16796,7 @@ But at least the ghost is now bound to you and happy.
         </ModifierBlock>
       </logic>
     </nodes>
-    <nodes xsi:type="NodeAdventureEnd" ID="47" positionX="5043" positionY="-1027" width="350" height="530" allPlayersXP="5" allPlayersRP="2" logBookName="QUEST_KS_BAKER" logBookDescription="QUEST_KS_BAKER8_DES" linkedEventUniqueID="0" endOfQuest="true">
+    <nodes xsi:type="NodeAdventureEnd" ID="47" positionX="-75" positionY="-2183" width="350" height="530" allPlayersXP="5" allPlayersRP="2" logBookName="QUEST_KS_BAKER" logBookDescription="QUEST_KS_BAKER8_DES" linkedEventUniqueID="0" endOfQuest="true">
       <logic>
         <ModifierBlock>
           <LogicModifiers>
@@ -17099,12 +16804,6 @@ But at least the ghost is now bound to you and happy.
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-    </nodes>
-    <nodes xsi:type="NodeSpawnOnMap" ID="48" positionX="5014" positionY="-2734" width="480" height="503" radius="0" destroyOwner="true" linkedEventUniqueID="0">
-      <outputs ownerID="48" targetID="42" fromX="5462" fromY="-3166" />
-    </nodes>
-    <nodes xsi:type="NodeSpawnOnMap" ID="49" positionX="2763" positionY="699" width="480" height="503" radius="0" settlementID="SET-SMALL_HUT" destroyOwner="true" linkedEventUniqueID="36">
-      <outputs ownerID="49" targetID="27" fromX="3211" fromY="257" />
     </nodes>
   </Adventure>
 </MODULE>

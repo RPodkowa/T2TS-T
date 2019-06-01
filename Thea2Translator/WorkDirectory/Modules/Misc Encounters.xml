@@ -5087,11 +5087,17 @@ The child will surely grow to be lucky, and the whole household feels the positi
     <nodes xsi:type="NodeStarting" ID="1" positionX="10" positionY="-10" width="347" height="661" image="Event029">
       <logic>
         <FilterBlock>
+          <LogicFilter name="child">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="TAG-CHILD" />
+          </LogicFilter>
           <LogicResultAction>
             <scriptCallWithTag scriptName="FRA_PlayersHaveSharedTag" parameter="1" tag="TAG-NIGHT" />
           </LogicResultAction>
           <LogicResultAction>
             <scriptCallWithTag scriptName="FRA_IsOnTerrain" tag="TAG-TERRAIN_LAKE" />
+          </LogicResultAction>
+          <LogicResultAction list="child">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
           </LogicResultAction>
         </FilterBlock>
       </logic>
@@ -5125,7 +5131,7 @@ The child will surely grow to be lucky, and the whole household feels the positi
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Run in and try to get them out!" ownerID="2" targetID="7" fromX="728" fromY="-539" />A full moon hangs heavy atop the calm waters. You set up camp to rest, doing everything the same as always -- check the area, set watch, stay alert.
+      <outputs name="Run in and try to get them out!" ownerID="2" targetID="7" fromX="728" fromY="-539" />A full moon hangs heavy atop the calm waters. You set up camp to rest, doing everything the same as always - check the area, set watch, stay alert.
 
 Alas, one your children wanders off to throw stones in the water, and with a sudden splash, they disappear beneath the surface of the crystal-clear lake!</nodes>
     <nodes xsi:type="NodeAdventure" ID="3" positionX="864.5605" positionY="119.890091" width="350" height="885">

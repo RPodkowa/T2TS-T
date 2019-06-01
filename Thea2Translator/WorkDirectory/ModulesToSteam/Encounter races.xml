@@ -1626,7 +1626,7 @@ Oni takze zostawiaja prezent.
 
 Teraz, gdy istoty nocy poluja na nasze sny, a swiatlo dnia stara sie spalic nasze dusze, podczas gdy ziemia wciaz sie rozpada - coz, niewiele czasu na wiedze. A jednak znosimy. Jako uczeni mezczyzni i kobiety zbieramy wiedze i zapisujemy ja.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="40" positionX="1024.83679" positionY="1768.3219" width="350" height="725">
-      <outputs name="Nod. " ownerID="40" targetID="47" fromX="1350" fromY="1277" />„Oczywiscie na przyszlosc. Gdy swiat powroci do pozorow rownowagi, jeszcze raz bedziemy potrzebowac wiedzy! To nasza najlepsza bron, nasz jedyny zbawiciel, nasza laska ...'
+      <outputs name="Nod." ownerID="40" targetID="47" fromX="1350" fromY="1277" />„Oczywiscie na przyszlosc. Gdy swiat powroci do pozorow rownowagi, jeszcze raz bedziemy potrzebowac wiedzy! To nasza najlepsza bron, nasz jedyny zbawiciel, nasza laska ...'
 
 Odjezdza.</nodes>
     <nodes xsi:type="NodeAdventure" ID="42" positionX="1337.474" positionY="1024.735" width="350" height="805">

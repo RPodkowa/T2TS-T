@@ -2790,7 +2790,7 @@ Kamienna statua staje sie animowana i zwraca sie do ciebie.
       <outputs name="Powiedz, ze jest ci przykro, ale nie ryzykujesz. Pozostawiac." ownerID="22" targetID="56" fromX="3835" fromY="-1189" />„Brzydcy rabusie przyjechali i splugawili naszych przodkow. Szczesliwi drani wzieli kamien smierci, zanim zdolalem sie w pelni obudzic. Teraz sa uwiezieni w grobie, ale trzymaja moj kamien smierci. Jestesmy w impasie.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="24" positionX="128.453079" positionY="-1927.062" width="350" height="805">
       <outputs name="Co mozna zrobic?" ownerID="24" targetID="22" fromX="454" fromY="-2418" />
-      <outputs name="Deathstone?" ownerID="24" targetID="21" fromX="454" fromY="-2498" />„Moj kamien smierci, moje serce ... skradzione ... zniknelo ... '</nodes>
+      <outputs name="Kamien smierci?" ownerID="24" targetID="21" fromX="454" fromY="-2498" />„Moj kamien smierci, moje serce ... skradzione ... zniknelo ... '</nodes>
     <nodes xsi:type="NodeAdventure" ID="25" positionX="-369.151917" positionY="-2821.27979" width="350" height="805">
       <outputs name="Zapytaj, jakiej pomocy potrzebuja." ownerID="25" targetID="24" fromX="-43" fromY="-3312" />
       <outputs name="Wyjdz." ownerID="25" targetID="56" fromX="-43" fromY="-3392" />Duch milczy, jego obecnosc migocze i skupia sie. Czujesz nagromadzenie ciemnych energii.</nodes>
@@ -3180,7 +3180,7 @@ Slyszysz dziwne szperanie w kacie i zdajesz sobie sprawe, ze obserwujesz, jak ni
       </logic>
       <outputs name="[Smith] Znajdz uchwyt otwierajacy i wyjdz." ownerID="35" targetID="63" fromX="609" fromY="-2026" />
       <outputs name="Sprobuj dowiedziec sie, jak go otworzyc." ownerID="35" targetID="37" fromX="609" fromY="-2107" />
-      <outputs name="Bash it open." ownerID="35" targetID="36" fromX="609" fromY="-2187" />Zbierasz to, co mozesz, ale kiedy skradasz posagi, ozywa mechanizm, ktory zamyka cie w komnacie!</nodes>
+      <outputs name="Otworz to." ownerID="35" targetID="36" fromX="609" fromY="-2187" />Zbierasz to, co mozesz, ale kiedy skradasz posagi, ozywa mechanizm, ktory zamyka cie w komnacie!</nodes>
     <nodes xsi:type="NodeAdventure" ID="36" positionX="218.918488" positionY="-2429.173" width="350" height="725">
       <outputs name="Sprobuj dowiedziec sie, jak go otworzyc." ownerID="36" targetID="37" fromX="544" fromY="-2920" />Bez wzgledu na to, jak mocno uderzysz, kamien pozostaje nieruchomy.</nodes>
     <nodes xsi:type="NodeChallenge" ID="37" positionX="753" positionY="-1944" width="500" height="726" challengeType="TypeMental" versusConcept="true" versusGroup="GROUP-CON_M_0P_4M_0S" challengeScale="101" challengedList="ppl">

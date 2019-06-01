@@ -3099,14 +3099,14 @@ Rozlega sie grzmiacy glos:
     <nodes xsi:type="NodeAdventure" ID="15" positionX="4493" positionY="2757" width="350" height="1046">
       <outputs name="Zapytaj, dlaczego porzucil panteon." ownerID="15" targetID="16" fromX="4818" fromY="2265" />
       <outputs name="Zorya." ownerID="15" targetID="17" fromX="4818" fromY="2185" />
-      <outputs name="Triglav." ownerID="15" targetID="18" fromX="4818" fromY="2105" />
-      <outputs name="Svarog." ownerID="15" targetID="45" fromX="4818" fromY="2025" />
-      <outputs name="Stribog." ownerID="15" targetID="46" fromX="4818" fromY="1945" />„Jestem glosem Peruna, ojca niebios. Jestem tutaj, aby powiedziec, jakie beda twoje nastepne kroki. Komu sluzysz, dziecko?'</nodes>
+      <outputs name="Trzyglow." ownerID="15" targetID="18" fromX="4818" fromY="2105" />
+      <outputs name="Swarog." ownerID="15" targetID="45" fromX="4818" fromY="2025" />
+      <outputs name="Strzybog." ownerID="15" targetID="46" fromX="4818" fromY="1945" />„Jestem glosem Peruna, ojca niebios. Jestem tutaj, aby powiedziec, jakie beda twoje nastepne kroki. Komu sluzysz, dziecko?'</nodes>
     <nodes xsi:type="NodeAdventure" ID="16" positionX="4874" positionY="3771" width="350" height="966">
       <outputs name="Zorya." ownerID="16" targetID="17" fromX="5199" fromY="3279" />
-      <outputs name="Triglav." ownerID="16" targetID="18" fromX="5199" fromY="3199" />
-      <outputs name="Svarog." ownerID="16" targetID="45" fromX="5199" fromY="3119" />
-      <outputs name="Stribog." ownerID="16" targetID="46" fromX="5199" fromY="3039" />„Niebo nie moze pozostac w bezruchu; grzmot nie pozostaje. Bylismy potrzebni, wiec wyszlismy. Niebo, ziemia i swiat podziemny, potega trzech jako jednosci, aby utrzymac Ziemie w naszym uscisku i pozwolic naszym dzieciom stac silnymi. Zostalem uczyniony boskim, by stanac za Swiatlem, a zatem moja moc byla potrzebna, aby utrzymac go w ryzach. Ale poznacie wszystko, gdy odzyskasz pamiec boska. Teraz komu sluzysz, dziecko?'</nodes>
+      <outputs name="Trzyglow." ownerID="16" targetID="18" fromX="5199" fromY="3199" />
+      <outputs name="Swarog." ownerID="16" targetID="45" fromX="5199" fromY="3119" />
+      <outputs name="Strzybog." ownerID="16" targetID="46" fromX="5199" fromY="3039" />„Niebo nie moze pozostac w bezruchu; grzmot nie pozostaje. Bylismy potrzebni, wiec wyszlismy. Niebo, ziemia i swiat podziemny, potega trzech jako jednosci, aby utrzymac Ziemie w naszym uscisku i pozwolic naszym dzieciom stac silnymi. Zostalem uczyniony boskim, by stanac za Swiatlem, a zatem moja moc byla potrzebna, aby utrzymac go w ryzach. Ale poznacie wszystko, gdy odzyskasz pamiec boska. Teraz komu sluzysz, dziecko?'</nodes>
     <nodes xsi:type="NodeAdventure" ID="17" positionX="5405" positionY="3780" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -3680,14 +3680,14 @@ Rozlega sie grzmiacy glos:
     <nodes xsi:type="NodeAdventure" ID="15" positionX="4495" positionY="2450" width="350" height="1046">
       <outputs name="Zapytaj, dlaczego porzucil panteon." ownerID="15" targetID="16" fromX="4820" fromY="1958" />
       <outputs name="Zorya." ownerID="15" targetID="17" fromX="4820" fromY="1878" />
-      <outputs name="Triglav." ownerID="15" targetID="18" fromX="4820" fromY="1798" />
-      <outputs name="Svarog." ownerID="15" targetID="45" fromX="4820" fromY="1718" />
-      <outputs name="Stribog." ownerID="15" targetID="46" fromX="4820" fromY="1638" />„Jestem glosem Peruna, ojca niebios. Jestem tutaj, aby powiedziec, jakie beda twoje nastepne kroki. Komu sluzysz, dziecko?'</nodes>
+      <outputs name="Trzyglow." ownerID="15" targetID="18" fromX="4820" fromY="1798" />
+      <outputs name="Swarog." ownerID="15" targetID="45" fromX="4820" fromY="1718" />
+      <outputs name="Strzybog." ownerID="15" targetID="46" fromX="4820" fromY="1638" />„Jestem glosem Peruna, ojca niebios. Jestem tutaj, aby powiedziec, jakie beda twoje nastepne kroki. Komu sluzysz, dziecko?'</nodes>
     <nodes xsi:type="NodeAdventure" ID="16" positionX="4972" positionY="2778" width="350" height="966">
       <outputs name="Zorya." ownerID="16" targetID="17" fromX="5297" fromY="2286" />
-      <outputs name="Triglav." ownerID="16" targetID="18" fromX="5297" fromY="2206" />
-      <outputs name="Svarog." ownerID="16" targetID="45" fromX="5297" fromY="2126" />
-      <outputs name="Stribog." ownerID="16" targetID="46" fromX="5297" fromY="2046" />„Niebo nie moze pozostac w bezruchu; grzmot nie pozostaje. Bylismy potrzebni, wiec wyszlismy. Niebo, ziemia i swiat podziemny, potega trzech jako jednosci, aby utrzymac Ziemie w naszym uscisku i pozwolic naszym dzieciom stac silnymi. Ale poznacie wszystko, gdy odzyskasz pamiec boska. Teraz komu sluzysz, dziecko?'</nodes>
+      <outputs name="Trzyglow." ownerID="16" targetID="18" fromX="5297" fromY="2206" />
+      <outputs name="Swarog." ownerID="16" targetID="45" fromX="5297" fromY="2126" />
+      <outputs name="Strzybog." ownerID="16" targetID="46" fromX="5297" fromY="2046" />„Niebo nie moze pozostac w bezruchu; grzmot nie pozostaje. Bylismy potrzebni, wiec wyszlismy. Niebo, ziemia i swiat podziemny, potega trzech jako jednosci, aby utrzymac Ziemie w naszym uscisku i pozwolic naszym dzieciom stac silnymi. Ale poznacie wszystko, gdy odzyskasz pamiec boska. Teraz komu sluzysz, dziecko?'</nodes>
     <nodes xsi:type="NodeAdventure" ID="17" positionX="5440" positionY="3104" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -4541,10 +4541,10 @@ Czujesz jednak przeplyw negatywnej energii z pnia drzewa. Wyglada na to, ze niez
     <nodes xsi:type="NodeAdventure" ID="36" positionX="5653" positionY="2643" width="350" height="1126">
       <outputs name="Dievanna." ownerID="36" targetID="41" fromX="5978" fromY="2151" />
       <outputs name="Horz." ownerID="36" targetID="43" fromX="5978" fromY="2071" />
-      <outputs name="Triglav." ownerID="36" targetID="44" fromX="5978" fromY="1991" />
+      <outputs name="Trzyglow." ownerID="36" targetID="44" fromX="5978" fromY="1991" />
       <outputs name="Nyia." ownerID="36" targetID="45" fromX="5978" fromY="1911" />
       <outputs name="Lada." ownerID="36" targetID="46" fromX="5978" fromY="1831" />
-      <outputs name="Stribog." ownerID="36" targetID="58" fromX="5978" fromY="1750" />„Ten wybor jest zawsze twoj, ale jest ostatni etap twojej podrozy, ktory doprowadzi cie do twojego boskiego patrona i odblokuje w ten sposob oba twoje potencjaly. 
+      <outputs name="Strzybog." ownerID="36" targetID="58" fromX="5978" fromY="1750" />„Ten wybor jest zawsze twoj, ale jest ostatni etap twojej podrozy, ktory doprowadzi cie do twojego boskiego patrona i odblokuje w ten sposob oba twoje potencjaly. 
 
 Do jakiego bostwa dzwonisz?'</nodes>
     <nodes xsi:type="NodeAdventure" ID="37" positionX="5391" positionY="1066" width="350" height="725">
@@ -5218,10 +5218,10 @@ Czujesz jednak przeplyw negatywnej energii z pnia drzewa. Wyglada na to, ze niez
     <nodes xsi:type="NodeAdventure" ID="36" positionX="5566" positionY="2692" width="350" height="1126">
       <outputs name="Dievanna." ownerID="36" targetID="41" fromX="5891" fromY="2200" />
       <outputs name="Horz." ownerID="36" targetID="43" fromX="5891" fromY="2120" />
-      <outputs name="Triglav." ownerID="36" targetID="44" fromX="5891" fromY="2040" />
+      <outputs name="Trzyglow." ownerID="36" targetID="44" fromX="5891" fromY="2040" />
       <outputs name="Nyia." ownerID="36" targetID="45" fromX="5891" fromY="1960" />
       <outputs name="Lada." ownerID="36" targetID="46" fromX="5891" fromY="1880" />
-      <outputs name="Stribog." ownerID="36" targetID="64" fromX="5891" fromY="1799" />„Ten wybor jest zawsze twoj, ale jest ostatni etap twojej podrozy, ktory doprowadzi cie do twojego boskiego patrona i odblokuje w ten sposob oba twoje potencjaly. 
+      <outputs name="Strzybog." ownerID="36" targetID="64" fromX="5891" fromY="1799" />„Ten wybor jest zawsze twoj, ale jest ostatni etap twojej podrozy, ktory doprowadzi cie do twojego boskiego patrona i odblokuje w ten sposob oba twoje potencjaly. 
 
 Do jakiego bostwa dzwonisz?'</nodes>
     <nodes xsi:type="NodeAdventure" ID="37" positionX="5391" positionY="1066" width="350" height="725">

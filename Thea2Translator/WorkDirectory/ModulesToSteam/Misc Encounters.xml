@@ -5082,11 +5082,17 @@ Dziecko z pewnoscia bedzie mialo szczescie, a cale gospodarstwo odczuje pozytywn
     <nodes xsi:type="NodeStarting" ID="1" positionX="10" positionY="-10" width="347" height="661" image="Event029">
       <logic>
         <FilterBlock>
+          <LogicFilter name="child">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="TAG-CHILD" />
+          </LogicFilter>
           <LogicResultAction>
             <scriptCallWithTag scriptName="FRA_PlayersHaveSharedTag" parameter="1" tag="TAG-NIGHT" />
           </LogicResultAction>
           <LogicResultAction>
             <scriptCallWithTag scriptName="FRA_IsOnTerrain" tag="TAG-TERRAIN_LAKE" />
+          </LogicResultAction>
+          <LogicResultAction list="child">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
           </LogicResultAction>
         </FilterBlock>
       </logic>
@@ -5120,9 +5126,9 @@ Dziecko z pewnoscia bedzie mialo szczescie, a cale gospodarstwo odczuje pozytywn
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wbiegnij i sprobuj je wydostac!" ownerID="2" targetID="7" fromX="728" fromY="-539" />Ksiezyc w pelni wisi ciezko na spokojnych wodach. Ustawiles oboz na odpoczynek, robiac wszystko tak jak zawsze - sprawdz obszar, ustaw zegarek, badz czujny. 
+      <outputs name="Wbiegnij i sprobuj je wydostac!" ownerID="2" targetID="7" fromX="728" fromY="-539" />Ksiezyc w pelni wisi ciezko na spokojnych wodach. Ustawiles oboz na odpoczynek, robiac wszystko tak samo jak zawsze - sprawdz obszar, ustaw czujnosc, badz czujny. 
 
-Niestety, jedno z waszych dzieci odchodzi, by rzucic kamieniami w wode, i z naglym pluskiem znikaja pod powierzchnia krystalicznie czystego jeziora!</nodes>
+Niestety, jedno z twoich dzieci odchodzi, by rzucic kamieniami w wode i nagle plusk, znikaja pod powierzchnia krystalicznie czystego jeziora!</nodes>
     <nodes xsi:type="NodeAdventure" ID="3" positionX="864.5605" positionY="119.890091" width="350" height="885">
       <outputs name="Grzecznie przeszkadzaj mu zapytac, czy widzial twoje dziecko lub cokolwiek innego podejrzanego w ciagu ostatnich kilku minut." ownerID="3" targetID="4" fromX="1190" fromY="-371" />
       <outputs name="Krzycz na stworzenie i zapytaj, gdzie jest twoje dziecko." ownerID="3" targetID="6" fromX="1190" fromY="-451" />

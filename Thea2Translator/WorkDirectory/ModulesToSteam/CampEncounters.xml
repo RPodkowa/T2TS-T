@@ -1,5 +1,5 @@
-<?xml version="1.0"?>
-<MODULE xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="CampEncounters" lastEventIndex="9" allowToUse="true" uniqueModuleID="1583969057">
+<?xml version="1.0" encoding="Windows-1252"?>
+<MODULE xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="CampEncounters" lastEventIndex="9" allowToUse="true" uniqueModuleID="1583969057">
   <Adventure name="CampEvents" uniqueID="1" allowToUse="false" typeGeneric="false" typePerGroupGeneric="false" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="4" nodeIdMax="7" joinIsForced="false" joinType="AllAlly" joinRange="MovementArea">
     <nodes xsi:type="NodeStarting" ID="1" positionX="10" positionY="-10" width="347" height="1024" image="Event014">
       <logic>
@@ -690,7 +690,7 @@ Na szczescie wiesz, jak bezpiecznie zlamac ochrone.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Zbierz to, co jest w srodku i wyjdz." ownerID="32" targetID="44" fromX="1870" fromY="-2544" />â€žTak, dziekuje! Jestesmy teraz wolni ... a moze mozemy cie sledzic?'
+      <outputs name="Zbierz to, co jest w srodku i wyjdz." ownerID="32" targetID="44" fromX="1870" fromY="-2544" />„Tak, dziekuje! Jestesmy teraz wolni ... a moze mozemy cie sledzic?'
 
 Rozgrywa sie miedzy upiorami. Wiekszosc znika, ale niektorzy moga zostac z toba. 
 
@@ -1110,13 +1110,7 @@ Ale uwaga - ich szalenstwo jest wiecej niz mentalne, poniewaz rozprzestrzeniaja 
           <LogicFilter name="med">
             <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="TAG-HEALER" />
           </LogicFilter>
-          <LogicFilter name="mag">
-            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="TAG-MAGIC_USER" />
-          </LogicFilter>
-          <LogicProcessing name="mm" list1="med" list2="mag">
-            <scriptCallWithTag scriptName="FLP_AorB" />
-          </LogicProcessing>
-          <LogicResultAction list="mm">
+          <LogicResultAction list="med">
             <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
           </LogicResultAction>
         </FilterBlock>
@@ -1326,16 +1320,10 @@ Byc moze niektorzy zdecyduja sie zostac z toba. Nawet jesli tego nie zrobia, zos
     <nodes xsi:type="NodeAdventure" ID="48" positionX="-567" positionY="-44" width="350" height="725">
       <logic>
         <FilterBlock>
-          <LogicFilter name="med">
-            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="TAG-HEALER" />
-          </LogicFilter>
           <LogicFilter name="mag">
             <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="TAG-MAGIC_USER" />
           </LogicFilter>
-          <LogicProcessing name="mm" list1="med" list2="mag">
-            <scriptCallWithTag scriptName="FLP_AorB" />
-          </LogicProcessing>
-          <LogicResultAction list="mm">
+          <LogicResultAction list="mag">
             <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
           </LogicResultAction>
         </FilterBlock>
@@ -1360,7 +1348,7 @@ Byc moze niektorzy zdecyduja sie zostac z toba. Nawet jesli tego nie zrobia, zos
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="48" targetID="47" fromX="-236" fromY="-535" />Nie wszystkie umysly i ciala sa wystarczajaco silne, aby przetrwac te skazenie, a nawet z twoja pomoca niektore ofiary przemijaja. 
+      <outputs name="Wyjdz." ownerID="48" targetID="47" fromX="-241" fromY="-535" />Nie wszystkie umysly i ciala sa wystarczajaco silne, aby przetrwac te skazenie, a nawet z twoja pomoca niektore ofiary przemijaja. 
 
 Ale inni wykazuja oznaki ozywienia, a przynajmniej poprawy. Odzyskuja pozory umyslu i sa wdzieczni za pomoc. 
 

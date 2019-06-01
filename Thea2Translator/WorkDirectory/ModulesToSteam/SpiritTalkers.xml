@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="windows-1250"?>
+<?xml version="1.0" encoding="Windows-1252"?>
 <MODULE xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="SpiritTalkers" lastEventIndex="75" allowToUse="true" uniqueModuleID="1987895295">
   <Adventure name="SpiritKillShelf" uniqueID="10" typeGeneric="false" typePerGroupGeneric="false" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="4" nodeIdMax="63" joinIsForced="false" joinType="AllAlly" joinRange="MovementArea">
     <nodes xsi:type="NodeStarting" ID="1" positionX="10" positionY="-10" width="347" height="661" image="Event016">
@@ -1498,7 +1498,7 @@ Latwo jest zniszczyc, ale moze zranic ducha i najprawdopodobniej zniszczy upiory
         </FilterBlock>
         <ModifierBlock>
           <LogicModifiers>
-            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="7" tag="TAG-LOYALTY_SPIRIT_TALKERS" />
+            <scriptCallWithTag scriptName="FMO_SetTagShared" parameter="7" tag="TAG-LOYALTY_SPIRIT_TALKERS" />
           </LogicModifiers>
           <LogicModifiers list="wraith">
             <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="4" tag="SKILL_PACK-BLESS_M" />
@@ -1550,9 +1550,9 @@ Gobliny sa pod wrazeniem twojej pracy i dziekuje.
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Win" ownerID="16" targetID="52" fromX="1295" fromY="-1330" />
-      <outputs name="Lose" ownerID="16" targetID="57" fromX="1295" fromY="-1410" />
-      <outputs name="Surrender" ownerID="16" targetID="57" fromX="1295" fromY="-1490" />
+      <outputs name="Win" ownerID="16" targetID="52" fromX="1294" fromY="-1330" />
+      <outputs name="Lose" ownerID="16" targetID="57" fromX="1294" fromY="-1410" />
+      <outputs name="Surrender" ownerID="16" targetID="57" fromX="1294" fromY="-1490" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="18" positionX="2766" positionY="136" width="350" height="725">
       <outputs name="Wyjdz." ownerID="18" targetID="10" fromX="3091" fromY="-355" />Upiory sa niszczone przez wstrzasajacy blysk bolu i udreki. 
@@ -5157,7 +5157,7 @@ Czujemy wstrzasniety swiat szarosci, bardzo zly na duchy. Ale oni nas nie slucha
       <outputs name="[Goblin lub lojalnosc] Powiedz mu, ze juz za duzo pali, widzac, ze juz nie widzi swoich krewnych. Wez fajke i podziel sie nia bezpiecznie ze znajomymi." ownerID="94" targetID="99" fromX="-286" fromY="-3210" />
       <outputs name="Zgadzam sie. " ownerID="94" targetID="43" fromX="-286" fromY="-3290" />
       <outputs name="Zmien zdanie i wyjdz." ownerID="94" targetID="3" fromX="-286" fromY="-3370" />„Ach tak, bol serca, co? Ciemny swiat sprawia, ze placzesz. My goblimy, palimy to, znow sie cieszymy - czasami zbyt szczesliwi. Nie jestes goblinem, moze ci sie nie podobac, ale placisz i pozwalam ci sprobowac, tak?'</nodes>
-    <nodes xsi:type="NodeAdventure" ID="96" positionX="-556" positionY="-4195" width="350" height="725">
+    <nodes xsi:type="NodeAdventure" ID="96" positionX="-556" positionY="-4195" width="350" height="681">
       <logic>
         <FilterBlock>
           <LogicResultAction>
@@ -5173,16 +5173,16 @@ Czujemy wstrzasniety swiat szarosci, bardzo zly na duchy. Ale oni nas nie slucha
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="96" targetID="97" fromX="-230" fromY="-4686" />Swiat szarego nie jest miejscem dla zywych, zwlaszcza tych, ktorzy nie sa duchowymi rozmowcami. Wasze cialo jest wyrwane z waszego ciala, wasza dusza wykrzywiona i pokaleczona. 
+      <outputs name="Wyjdz." ownerID="96" targetID="97" fromX="-230" fromY="-4642" />Swiat szarego nie jest miejscem dla zywych, zwlaszcza tych, ktorzy nie sa duchowymi rozmowcami. Wasze cialo jest wyrwane z waszego ciala, wasza dusza wykrzywiona i pokaleczona. 
 
 Wracasz zmieniony, zly i przegrany. Jednak twoja wiez z boskoscia pozwala ci trwac na swojej drodze.</nodes>
-    <nodes xsi:type="NodeAdventureEnd" ID="97" positionX="-98" positionY="-4252" width="350" height="530" linkedEventUniqueID="0">
+    <nodes xsi:type="NodeAdventureEnd" ID="97" positionX="-98" positionY="-4252" width="350" height="408" linkedEventUniqueID="0">
       <logic>
         <ModifierBlock>
           <LogicModifiers list="ghost">
             <scriptCallWithTag scriptName="FMO_AddTags" parameter="6" tag="TAG-INTELLIGENCE" />
           </LogicModifiers>
-          <LogicModifiers list="ghost">
+          <LogicModifiers>
             <scriptCallWithTag scriptName="FMO_ChangeLearnedSkillOnCharacter" parameter="1" tag="SKILL_PACK-SHAMAN" />
           </LogicModifiers>
           <LogicModifiers list="ghost">
@@ -5220,7 +5220,7 @@ Wracasz zmieniony, zly i przegrany. Jednak twoja wiez z boskoscia pozwala ci trw
       <outputs name="Confirm" ownerID="99" targetID="25" fromX="832" fromY="-3015" />
       <outputs name="Cancel" ownerID="99" targetID="3" fromX="832" fromY="-3095" />
     </nodes>
-    <nodes xsi:type="NodeDealDamage" ID="100" positionX="-668" positionY="-3603" width="460" height="539" challengeTypeDamage="TypeMental" minDamage="0" maxDamage="0" useCountInPercent="false">
+    <nodes xsi:type="NodeDealDamage" ID="100" positionX="-670" positionY="-3621" width="460" height="539" challengeTypeDamage="TypeMental" minDamage="0" maxDamage="0" useCountInPercent="false">
       <logic>
         <FilterBlock>
           <LogicFilter name="myst" makePublic="true">
@@ -5234,8 +5234,8 @@ Wracasz zmieniony, zly i przegrany. Jednak twoja wiez z boskoscia pozwala ci trw
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs ownerID="100" targetID="96" group="G1" fromX="-237" fromY="-3993" />
-      <outputs ownerID="100" targetID="101" group="G1" fromX="-237" fromY="-4073" />
+      <outputs ownerID="100" targetID="96" group="G1" fromX="-240" fromY="-4009" />
+      <outputs ownerID="100" targetID="101" group="G1" fromX="-240" fromY="-4089" />
     </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="101" positionX="-1131" positionY="-3572" width="350" height="530" linkedEventUniqueID="0">
       <logic>
@@ -5376,10 +5376,10 @@ Przez dziwna blyskotke, szklanke umieszczona na szczycie wyschnietej dloni hochl
     </nodes>
   </Adventure>
   <Adventure name="RemnantsOfDark2" uniqueID="58" typeGeneric="false" typePerGroupGeneric="false" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="24" joinIsForced="false" joinType="OnlyOwn" joinRange="SinglePosition">
-    <nodes xsi:type="NodeStarting" ID="1" positionX="10" positionY="-10" width="347" height="661" image="Event076">
-      <outputs ownerID="1" targetID="2" fromX="334" fromY="-613" />
+    <nodes xsi:type="NodeStarting" ID="1" positionX="-32" positionY="39" width="347" height="661" image="Event076">
+      <outputs ownerID="1" targetID="2" fromX="291" fromY="-563" />
     </nodes>
-    <nodes xsi:type="NodeAdventure" ID="2" positionX="423" positionY="-11" width="350" height="1126">
+    <nodes xsi:type="NodeAdventure" ID="2" positionX="396" positionY="80" width="350" height="1126">
       <logic>
         <FilterBlock>
           <LogicFilter name="ppl" makePublic="true">
@@ -5398,12 +5398,12 @@ Przez dziwna blyskotke, szklanke umieszczona na szczycie wyschnietej dloni hochl
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="[Swiatlo lub harmonia] Wezwij swoja domene, aby calkowicie oczyscic to miejsce ciemnosci. Gobliny moga chciec opuscic niektore, ale twoim obowiazkiem jest pozbyc sie tego wszystkiego!" ownerID="2" targetID="17" fromX="748" fromY="-502" />
-      <outputs name="[Shadow elf] Zostan jednym z ciemna mgla i przekieruj go z tego miejsca. To powinno rozszerzyc sile i tym samym zatrzymac ten rzekomy wzrost." ownerID="2" targetID="7" fromX="748" fromY="-582" />
-      <outputs name="[Magiczni uzytkownicy lub magia] Wykonaj rytual oslabienia, ktory nie zniszczy, ale tylko zmniejszy koncentracje ciemnosci tutaj." ownerID="2" targetID="11" fromX="748" fromY="-662" />
-      <outputs name="[Madrosc] Uwaznie rozwaz swoje opcje." ownerID="2" targetID="3" fromX="748" fromY="-742" />
-      <outputs name="Sprobuj zaatakowac mgle." ownerID="2" targetID="21" fromX="748" fromY="-822" />
-      <outputs name="Wroc z wieksza madroscia lub tymi, ktorzy wiedza o rzeczach mistycznych." ownerID="2" targetID="4" fromX="748" fromY="-903" />Znajdujesz stare ruiny, w ktorych gobliny mowia, ze ciemnosc utrzymuje sie i cicho rosnie w sile. 
+      <outputs name="[Swiatlo lub harmonia] Wezwij swoja domene, aby calkowicie oczyscic to miejsce ciemnosci. Gobliny moga chciec opuscic niektore, ale twoim obowiazkiem jest pozbyc sie tego wszystkiego!" ownerID="2" targetID="17" fromX="721" fromY="-411" />
+      <outputs name="[Shadow elf] Zostan jednym z ciemna mgla i przekieruj go z tego miejsca. To powinno rozszerzyc sile i tym samym zatrzymac ten rzekomy wzrost." ownerID="2" targetID="7" fromX="721" fromY="-491" />
+      <outputs name="[Magiczni uzytkownicy lub magia] Wykonaj rytual oslabienia, ktory nie zniszczy, ale tylko zmniejszy koncentracje ciemnosci tutaj." ownerID="2" targetID="11" fromX="721" fromY="-571" />
+      <outputs name="[Madrosc] Uwaznie rozwaz swoje opcje." ownerID="2" targetID="3" fromX="721" fromY="-651" />
+      <outputs name="Sprobuj zaatakowac mgle." ownerID="2" targetID="21" fromX="721" fromY="-731" />
+      <outputs name="Wroc z wieksza madroscia lub tymi, ktorzy wiedza o rzeczach mistycznych." ownerID="2" targetID="4" fromX="721" fromY="-812" />Znajdujesz stare ruiny, w ktorych gobliny mowia, ze ciemnosc utrzymuje sie i cicho rosnie w sile. 
 
 Mozesz wyczuc intensywne spojrzenie chaosu i rozpaczy, probujace cie pozrec.</nodes>
     <nodes xsi:type="NodeAdventure" ID="3" positionX="994" positionY="-788" width="350" height="966">
@@ -5430,7 +5430,7 @@ Mozesz wyczuc intensywne spojrzenie chaosu i rozpaczy, probujace cie pozrec.</no
         </ModifierBlock>
       </logic>
     </nodes>
-    <nodes xsi:type="NodeChallenge" ID="5" positionX="1507" positionY="-873" width="500" height="726" challengeType="TypeMental" versusConcept="true" versusGroup="GROUP-CON_M_0P_1M_0S" challengeScale="500" challengedList="ppl">
+    <nodes xsi:type="NodeChallenge" ID="5" positionX="1507" positionY="-873" width="500" height="726" challengeType="TypeMental" versusConcept="true" versusGroup="GROUP-CON_M_0P_5M_0S" challengeScale="500" challengedList="ppl">
       <outputs name="Win" ownerID="5" targetID="6" fromX="1948" fromY="-1368" />
       <outputs name="Lose" ownerID="5" targetID="12" fromX="1948" fromY="-1448" />
       <outputs name="Surrender" ownerID="5" targetID="12" fromX="1948" fromY="-1528" />
@@ -5461,7 +5461,7 @@ Mozesz wyczuc intensywne spojrzenie chaosu i rozpaczy, probujace cie pozrec.</no
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="6" targetID="8" fromX="2440" fromY="-1301" />Wytrwales i rzeczywiscie czarna mgla zmniejsza sie w intensywnosci i wycofuje glebiej w ruiny. 
+      <outputs name="Wyjdz." ownerID="6" targetID="8" fromX="2440" fromY="-1301" />Wytrwales i rzeczywiscie czarna mgla zmniejsza intensywnosc i wycofuje sie glebiej w ruiny. 
 
 Windy powietrzne i goblinski szaman podchodza do ciebie: 
 
@@ -5502,7 +5502,7 @@ Podnosniki powietrzne i goblinski szaman podchodza do ciebie:
     <nodes xsi:type="NodeSpawnOnMap" ID="8" positionX="2532" positionY="-844" width="480" height="503" radius="0" destroyOwner="true" linkedEventUniqueID="0">
       <outputs ownerID="8" targetID="9" fromX="2980" fromY="-1276" />
     </nodes>
-    <nodes xsi:type="NodeAdventureEnd" ID="9" positionX="3054" positionY="-916" width="350" height="408" allPlayersXP="4" allPlayersRP="1" linkedEventUniqueID="0">
+    <nodes xsi:type="NodeAdventureEnd" ID="9" positionX="3054" positionY="-916" width="350" height="530" allPlayersXP="4" allPlayersRP="1" linkedEventUniqueID="0">
       <logic>
         <ModifierBlock>
           <LogicModifiers>
@@ -5537,12 +5537,12 @@ Podnosniki powietrzne i goblinski szaman podchodza do ciebie:
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="10" targetID="8" fromX="2423" fromY="-376" />Rytual dziala i rzeczywiscie czarna mgla zmniejsza intensywnosc i wycofuje sie glebiej w ruiny. 
+      <outputs name="Wyjdz." ownerID="10" targetID="8" fromX="2423" fromY="-376" />Rytual dziala i rzeczywiscie czarna mgla zmniejsza swoja intensywnosc i wycofuje sie glebiej w ruiny. 
 
 Windy powietrzne i goblinski szaman podchodza do ciebie: 
 
 'Heh, nigdy nie sadzilem, ze to zrobisz. Dobrze dobrze. Potrzebujemy ciemnosci, ale nie tak, nie. Dziekujemy, tutaj - masz mile wizje ode mnie. PA.'</nodes>
-    <nodes xsi:type="NodeChallenge" ID="11" positionX="1487" positionY="98" width="500" height="726" challengeType="TypeSpirit" versusConcept="true" versusGroup="GROUP-CON_S_0P_0M_1S" challengeScale="300" challengedList="ppl">
+    <nodes xsi:type="NodeChallenge" ID="11" positionX="1487" positionY="98" width="500" height="726" challengeType="TypeSpirit" versusConcept="true" versusGroup="GROUP-CON_S_0P_0M_3S" challengeScale="300" challengedList="ppl">
       <logic>
         <FilterBlock>
           <LogicResultAction list="magic">
@@ -5561,23 +5561,26 @@ Windy powietrzne i goblinski szaman podchodza do ciebie:
     <nodes xsi:type="NodeSpawnOnMap" ID="14" positionX="3640" positionY="-142" width="480" height="503" radius="0" destroyOwner="true" linkedEventUniqueID="0">
       <outputs ownerID="14" targetID="13" fromX="4088" fromY="-574" />
     </nodes>
-    <nodes xsi:type="NodeAdventure" ID="15" positionX="3163" positionY="-122" width="350" height="681">
-      <outputs name="Wyjdz." ownerID="15" targetID="14" fromX="3488" fromY="-569" />Goblinski szaman wyciaga cie z czarnej mgly: 
+    <nodes xsi:type="NodeAdventure" ID="15" positionX="3163" positionY="-122" width="350" height="725">
+      <outputs name="Wyjdz." ownerID="15" targetID="14" fromX="3488" fromY="-613" />Goblinski szaman wyciaga cie z czarnej mgly: 
 
 'Heh, nigdy nie sadzilem, ze to zrobisz. Dobrze dobrze. Potrzebujemy ciemnosci, ale nie tak, nie. Sprobuj, dobrze zrobione. Na razie.'</nodes>
-    <nodes xsi:type="NodeChallenge" ID="17" positionX="933" positionY="876" width="500" height="689" challengeType="TypeSpirit" versusConcept="true" versusGroup="GROUP-CON_S_0P_0M_1S" challengeScale="400" challengedList="ppl">
+    <nodes xsi:type="NodeChallenge" ID="17" positionX="933" positionY="876" width="500" height="726" challengeType="TypeSpirit" versusConcept="true" versusGroup="GROUP-CON_S_0P_0M_4S" challengeScale="400" challengedList="ppl">
       <logic>
         <FilterBlock>
-          <LogicResultAction list="magic">
-            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          <LogicResultAction resultGroup="G1">
+            <scriptCallWithTag scriptName="FRA_PlayerHaveTag" parameter="1" tag="TAG-DOMAIN_HARMONY" />
+          </LogicResultAction>
+          <LogicResultAction resultGroup="G1">
+            <scriptCallWithTag scriptName="FRA_PlayerHaveTag" parameter="1" tag="TAG-DOMAIN_LIGHT" />
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Win" ownerID="17" targetID="18" fromX="1374" fromY="417" />
-      <outputs name="Lose" ownerID="17" targetID="12" fromX="1374" fromY="337" />
-      <outputs name="Surrender" ownerID="17" targetID="12" fromX="1374" fromY="257" />
+      <outputs name="Win" ownerID="17" targetID="18" fromX="1374" fromY="380" />
+      <outputs name="Lose" ownerID="17" targetID="12" fromX="1374" fromY="300" />
+      <outputs name="Surrender" ownerID="17" targetID="12" fromX="1374" fromY="220" />
     </nodes>
-    <nodes xsi:type="NodeAdventure" ID="18" positionX="1526" positionY="933" width="350" height="681">
+    <nodes xsi:type="NodeAdventure" ID="18" positionX="1526" positionY="933" width="350" height="725">
       <logic>
         <ModifierBlock>
           <LogicProcessing name="2" list1="ppl">
@@ -5603,7 +5606,7 @@ Windy powietrzne i goblinski szaman podchodza do ciebie:
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="18" targetID="19" fromX="1851" fromY="485" />Rytual dziala, a czarna mgla jest zniszczona przez twoje boskie slowo. 
+      <outputs name="Wyjdz." ownerID="18" targetID="19" fromX="1851" fromY="441" />Rytual dziala, a czarna mgla jest zniszczona przez twoje boskie slowo. 
 
 Podnosniki powietrzne i goblinski szaman podchodza do ciebie: 
 
@@ -5612,7 +5615,7 @@ Podnosniki powietrzne i goblinski szaman podchodza do ciebie:
     <nodes xsi:type="NodeSpawnOnMap" ID="19" positionX="1964" positionY="875" width="480" height="503" radius="0" destroyOwner="true" linkedEventUniqueID="0">
       <outputs ownerID="19" targetID="20" fromX="2412" fromY="442" />
     </nodes>
-    <nodes xsi:type="NodeAdventureEnd" ID="20" positionX="2522" positionY="760" width="350" height="408" allPlayersXP="4" allPlayersRP="1" linkedEventUniqueID="0">
+    <nodes xsi:type="NodeAdventureEnd" ID="20" positionX="2522" positionY="760" width="350" height="530" allPlayersXP="4" allPlayersRP="1" linkedEventUniqueID="0">
       <logic>
         <ModifierBlock>
           <LogicModifiers>
@@ -5628,7 +5631,7 @@ Podnosniki powietrzne i goblinski szaman podchodza do ciebie:
       <outputs ownerID="21" targetID="22" group="G1" fromX="686" fromY="-1629" />
       <outputs ownerID="21" targetID="24" group="G1" fromX="686" fromY="-1709" />
     </nodes>
-    <nodes xsi:type="NodeAdventure" ID="22" positionX="-219" positionY="-1120" width="350" height="681">
+    <nodes xsi:type="NodeAdventure" ID="22" positionX="-219" positionY="-1120" width="350" height="725">
       <logic>
         <FilterBlock>
           <LogicResultAction>
@@ -5636,10 +5639,10 @@ Podnosniki powietrzne i goblinski szaman podchodza do ciebie:
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Odpocznij." ownerID="22" targetID="23" fromX="106" fromY="-1567" />Atakujesz mgle i pochlania cie czysta rozpacz. Twoje stopy sie trzesa, szczeka napina, a koszmary kraza wokol ciebie i szepcza najciemniejsze mysli. 
+      <outputs name="Odpocznij." ownerID="22" targetID="23" fromX="106" fromY="-1611" />Atakujesz mgle i pochlania cie czysta rozpacz. Twoje stopy sie trzesa, szczeka napina, a koszmary kraza wokol ciebie i szepcza najciemniejsze mysli. 
 
 A jednak, pomimo wszelkich przeciwnosci, brutalna sila wytrwa. Rzucasz sie i czarna mgla sie wycofuje.</nodes>
-    <nodes xsi:type="NodeAdventure" ID="23" positionX="-645" positionY="-1109" width="350" height="681">
+    <nodes xsi:type="NodeAdventure" ID="23" positionX="-645" positionY="-1109" width="350" height="725">
       <logic>
         <ModifierBlock>
           <LogicProcessing name="2" list1="ppl">
@@ -5665,11 +5668,11 @@ A jednak, pomimo wszelkich przeciwnosci, brutalna sila wytrwa. Rzucasz sie i cza
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="23" targetID="8" fromX="-319" fromY="-1556" />Podnosniki powietrzne i goblinski szaman podchodza do ciebie: 
+      <outputs name="Wyjdz." ownerID="23" targetID="8" fromX="-319" fromY="-1600" />Podnosniki powietrzne i goblinski szaman podchodza do ciebie: 
 
 'Heh, nigdy nie sadzilem, ze to zrobisz. Z pewnoscia nie tak! Dobrze dobrze. Potrzebujemy ciemnosci, ale nie tak, nie. Dziekujemy, tutaj - masz mile wizje ode mnie. PA.'</nodes>
-    <nodes xsi:type="NodeAdventure" ID="24" positionX="253" positionY="-1820" width="350" height="681">
-      <outputs name="Sprobuj sie wydostac!" ownerID="24" targetID="12" fromX="578" fromY="-2267" />Szarzujesz we mgle i pochlania cie czysta rozpacz. Twoje stopy sie trzesa, szczeka napina, a koszmary kraza wokol ciebie i szepcza najciemniejsze mysli. 
+    <nodes xsi:type="NodeAdventure" ID="24" positionX="253" positionY="-1820" width="350" height="725">
+      <outputs name="Sprobuj sie wydostac!" ownerID="24" targetID="12" fromX="578" fromY="-2311" />Szarzujesz we mgle i pochlania cie czysta rozpacz. Twoje stopy sie trzesa, szczeka napina, a koszmary kraza wokol ciebie i szepcza najciemniejsze mysli. 
 </nodes>
   </Adventure>
   <Adventure name="GobYoungsters" uniqueID="59" typeGeneric="false" typePerGroupGeneric="false" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="34" joinIsForced="false" joinType="AllAlly" joinRange="MovementArea">

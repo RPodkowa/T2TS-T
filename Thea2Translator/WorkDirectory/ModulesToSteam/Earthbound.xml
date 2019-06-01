@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="windows-1250"?>
+<?xml version="1.0" encoding="Windows-1252"?>
 <MODULE xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Earthbound" lastEventIndex="85" allowToUse="true" uniqueModuleID="-144450658">
   <Adventure name="EarthboundTradesmall" uniqueID="29" typeGeneric="false" typePerGroupGeneric="false" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="13" joinIsForced="false" joinType="OnlyOwn" joinRange="SinglePosition">
     <nodes xsi:type="NodeStarting" ID="1" positionX="10" positionY="-10" width="347" height="579" image="Event216">
@@ -5257,7 +5257,7 @@ Krasnoludy sa zadowolone z twoich wynikow i dobrze cie wynagradzaja.</nodes>
       </logic>
       <outputs name="Podejdz ostroznie." ownerID="2" targetID="3" fromX="734" fromY="-610" />
       <outputs name="[Krasnolud] Wyczuwasz bariere, o ktorej mowili twoi bracia i wiesz, ze nie bedziesz mogl wejsc. Jesli nie masz ze soba towarzyszy, na razie opusc to miejsce." ownerID="2" targetID="4" group="G1" fromX="734" fromY="-690" />
-      <outputs name="Wroc pozniej." ownerID="2" targetID="5" group="G1" fromX="734" fromY="-610" />Dostrzegasz ruiny starej kuzni, a nawet z daleka widac gesta, ciemna mgle wiszaca nisko nad ziemia, wciaz jak smierc.</nodes>
+      <outputs name="Wroc pozniej." ownerID="2" targetID="5" group="G1" fromX="734" fromY="-770" />Dostrzegasz ruiny starej kuzni, a nawet z daleka widac gesta, ciemna mgle wiszaca nisko nad ziemia, wciaz jak smierc.</nodes>
     <nodes xsi:type="NodeAdventure" ID="3" positionX="813" positionY="465" width="350" height="1046" image="Event064">
       <logic>
         <FilterBlock>
@@ -5285,7 +5285,7 @@ Krasnoludy sa zadowolone z twoich wynikow i dobrze cie wynagradzaja.</nodes>
         </ModifierBlock>
       </logic>
     </nodes>
-    <nodes xsi:type="NodeAdventureEnd" ID="5" positionX="-613" positionY="-705" width="350" height="455" linkedEventUniqueID="0">
+    <nodes xsi:type="NodeAdventureEnd" ID="5" positionX="-613" positionY="-705" width="350" height="530" linkedEventUniqueID="0">
       <logic>
         <ModifierBlock>
           <LogicModifiers>
@@ -5307,7 +5307,7 @@ Krasnoludy sa zadowolone z twoich wynikow i dobrze cie wynagradzaja.</nodes>
 
 W kuzni widzisz plonacy piec, kowadlo i wszystkie pulapki, jakich mozna sie spodziewac, ale za mlotem stoi stworzenie ciemnosci - mroki. Patrzy na ciebie, jego puste oczy nie ujawniaja zadnych emocji: 
 
-'Czujesz zapach swiatla. Jestes tu, by mnie uderzyc?'</nodes>
+'Czujesz zapach swiatla. Jestes tutaj, zeby mnie uderzyc?</nodes>
     <nodes xsi:type="NodeAdventure" ID="7" positionX="1677" positionY="927" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -5316,11 +5316,11 @@ W kuzni widzisz plonacy piec, kowadlo i wszystkie pulapki, jakich mozna sie spod
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Powiedz, ze krasnoludy poprosily cie o odzyskanie ich starozytnej kuzni. Jest dla nich wazne, wiec nie pozwola jej odejsc." ownerID="7" targetID="30" fromX="2002" fromY="435" />Wzywasz swiatlo i prowadzi cie, mijajac wiele okregow. 
+      <outputs name="Powiedz, ze krasnoludy poprosily cie o odzyskanie ich starozytnej kuzni. Jest dla nich wazne, wiec nie pozwola jej odejsc." ownerID="7" targetID="30" fromX="2002" fromY="435" />Wzywasz swiatlo i ono prowadzi cie, mijajac wiele oslon. 
 
 W kuzni widzisz plonacy piec, kowadlo i wszystkie pulapki, jakich mozna sie spodziewac, ale za mlotem stoi stworzenie ciemnosci - mroki. Patrzy na ciebie, jego puste oczy nie ujawniaja zadnych emocji: 
 
-'Czujesz zapach ciemnosci zamieszania. Czy przyszedles po bron, czy chcesz ze mna walczyc? Nigdy nie wiadomo z wami typow chaotycznych.'</nodes>
+'Czujesz zapach ciemnosci zamieszania. Czy przyszedles po bron, czy chcesz ze mna walczyc? Nigdy nie wiadomo z wami chaotycznych typow.</nodes>
     <nodes xsi:type="NodeAdventure" ID="8" positionX="2138" positionY="626" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -5332,11 +5332,11 @@ W kuzni widzisz plonacy piec, kowadlo i wszystkie pulapki, jakich mozna sie spod
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Powiedz, ze krasnoludy poprosily cie o odzyskanie ich starozytnej kuzni. Jest dla nich wazne, wiec nie pozwola jej odejsc." ownerID="8" targetID="32" fromX="2463" fromY="134" />Wzywasz swiatlo i ono prowadzi cie, mijajac wiele okregow. 
+      <outputs name="Powiedz, ze krasnoludy poprosily cie o odzyskanie ich starozytnej kuzni. Jest dla nich wazne, wiec nie pozwola jej odejsc." ownerID="8" targetID="32" fromX="2463" fromY="134" />Wzywasz ciemnosc, ktora slucha cie i prowadzi, mijajac wiele oslon. 
 
 W kuzni widzisz plonacy piec, kowadlo i wszystkie pulapki, jakich mozna sie spodziewac, ale za mlotem stoi stworzenie ciemnosci - mroki. Patrzy na ciebie, jego puste oczy nie ujawniaja zadnych emocji: 
 
-'Mroczny przyjacielu, witaj. Jak moge ci pomoc?'</nodes>
+'Mroczny przyjacielu, witaj. Jak moge ci pomoc?</nodes>
     <nodes xsi:type="NodeAdventure" ID="9" positionX="1551" positionY="-171" width="350" height="805">
       <outputs name="Powiedz, ze krasnoludy chca odzyskac swoja kuznie. " ownerID="9" targetID="10" fromX="1876" fromY="-662" />
       <outputs name="Atak!" ownerID="9" targetID="25" fromX="1876" fromY="-742" />Ciemna mgla unosi sie teraz do pasa i pojawia sie ogromny cien i mowi do ciebie: 
@@ -5365,8 +5365,8 @@ W kuzni widzisz plonacy piec, kowadlo i wszystkie pulapki, jakich mozna sie spod
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Nalegaj, aby kuznia nalezala do krasnoludow i sa uparci. Z pewnoscia beda go tutaj nekac. " ownerID="12" targetID="11" fromX="2894" fromY="-669" />
-      <outputs name="[Madrosc] Powiedz, ze krasnoludy wielce szanuja swoich przodkow i poleglych bohaterow. Wyglada na to, ze mroki ma przynajmniej echo takiego krasnoluda w srodku, wiec powiesz o tym krasnoludom, a moze dwoje z nich dojdzie do porozumienia." ownerID="12" targetID="13" fromX="2894" fromY="-749" />„Jestem mroki, istota ciemnosci jest tym, co o mnie wiesz. Czy to ma znaczenie? Czuje pokrewienstwo z kamieniem i metalem, poruszenie starych zywotow jest wezwaniem ognia, kto wie? Jestem tu, by wykuc.'</nodes>
+      <outputs name="Nalegaj, aby kuznia nalezala do krasnoludow i sa uparci. Z pewnoscia beda go tutaj nekac. " ownerID="12" targetID="11" fromX="2893" fromY="-669" />
+      <outputs name="[Madrosc] Powiedz, ze krasnoludy wielce szanuja swoich przodkow i poleglych bohaterow. Wyglada na to, ze mroki ma przynajmniej echo takiego krasnoluda w srodku, wiec powiesz o tym krasnoludom, a moze dwoje z nich dojdzie do porozumienia." ownerID="12" targetID="13" fromX="2893" fromY="-749" />„Jestem mroki, istota ciemnosci jest tym, co o mnie wiesz. Czy to ma znaczenie? Czuje pokrewienstwo z kamieniem i metalem, poruszenie starych zywotow jest wezwaniem ognia, kto wie? Jestem tu, by wykuc.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="13" positionX="3001" positionY="-226" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -5425,7 +5425,7 @@ Mroki wrecza ci maly prezent i wraca do pracy.</nodes>
     <nodes xsi:type="NodeSpawnOnMap" ID="17" positionX="4681" positionY="-496" width="480" height="503" radius="0" destroyOwner="true" linkedEventUniqueID="0">
       <outputs ownerID="17" targetID="18" fromX="5129" fromY="-928" />
     </nodes>
-    <nodes xsi:type="NodeAdventureEnd" ID="18" positionX="5214" positionY="-565" width="350" height="408" allPlayersXP="4" allPlayersRP="1" linkedEventUniqueID="0" />
+    <nodes xsi:type="NodeAdventureEnd" ID="18" positionX="5214" positionY="-565" width="350" height="530" allPlayersXP="4" allPlayersRP="1" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventure" ID="19" positionX="3090" positionY="-1115" width="350" height="805">
       <outputs name="Powiedz, ze gdy wspolczujesz, krasnoludy sa bardzo zaborcze w swoich kuzniach, wiec mroki musza odejsc." ownerID="19" targetID="20" fromX="3415" fromY="-1606" />
       <outputs name="[Madrosc] Powiedz, ze krasnoludy wielce szanuja swoich przodkow i poleglych bohaterow. Wyglada na to, ze mroki ma przynajmniej echo takiego krasnoluda w srodku, wiec powiesz o tym krasnoludom, a moze dwoje z nich dojdzie do porozumienia." ownerID="19" targetID="13" fromX="3415" fromY="-1686" />„Dla ciebie mroki jest istota ciemnosci, a my tak wlasnie jest, ale jak do tego dojsc? Nie znam odpowiedzi, ale czuje w sobie wiele umyslow. Moze ci, ktorzy zgineli w ciemnosci? Czy tylko mroczne mysli tych, ktorzy napotkali zamieszanie w najczystszej formie? W kazdym razie umysl krasnoludow mowi do mnie glosno, wiec przyjechalem tu, by sfalszowac bron. To wszystko.'</nodes>
@@ -5440,9 +5440,9 @@ Mroki wrecza ci maly prezent i wraca do pracy.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Zglos sie do krasnoludow." ownerID="20" targetID="21" fromX="3826" fromY="-1929" />„Tak, tak, ze my - lub oni - jestesmy. Pojde, bo glos w moim umysle nie chce rozlac krasnoludzkiej krwi. Dobrze mowiles. Tutaj mozesz lepiej to wykorzystac niz ja.'
+      <outputs name="Zglos sie do krasnoludow." ownerID="20" targetID="21" fromX="3826" fromY="-1929" />„Tak, tak, ze my - lub oni - jestesmy. Pojde, bo glos w moim umysle nie chce rozlac krasnoludzkiej krwi. Dobrze mowiles. Tutaj mozesz lepiej to wykorzystac niz ja. ”
 
-Mroki wrecza ci prezent, a nastepnie rozpuszcza sie w cieniu i czujesz, ze czarna mgla z nim wychodzi. </nodes>
+Mroki wrecza ci prezent, a nastepnie rozpuszcza sie w cieniu i czujesz, ze czarna mgla z nim wychodzi.</nodes>
     <nodes xsi:type="NodeAdventure" ID="21" positionX="4019" positionY="-1685" width="350" height="725">
       <logic>
         <ModifierBlock>
@@ -5461,10 +5461,10 @@ Mroki wrecza ci prezent, a nastepnie rozpuszcza sie w cieniu i czujesz, ze czarn
     <nodes xsi:type="NodeDealDamage" ID="22" positionX="2322" positionY="-1910" width="460" height="459" challengeTypeDamage="TypeMental" minDamage="20" maxDamage="40" useCountInPercent="true" targetGroup="nodwarf">
       <outputs ownerID="22" targetID="23" fromX="2751" fromY="-2298" />
     </nodes>
-    <nodes xsi:type="NodeAdventure" ID="23" positionX="2984" positionY="-2004" width="350" height="761">
-      <outputs name="Atak!" ownerID="23" targetID="25" fromX="3309" fromY="-2451" />
-      <outputs name="Daj spokoj." ownerID="23" targetID="24" fromX="3309" fromY="-2531" />„Nie! Twierdzilem, ze ta kuznia jest moja, a dzieci kamienne moga czekac na swoja kolej. Pozostawiac!'</nodes>
-    <nodes xsi:type="NodeAdventure" ID="24" positionX="3439" positionY="-2246" width="350" height="681">
+    <nodes xsi:type="NodeAdventure" ID="23" positionX="2984" positionY="-2004" width="350" height="805">
+      <outputs name="Atak!" ownerID="23" targetID="25" fromX="3309" fromY="-2495" />
+      <outputs name="Daj spokoj." ownerID="23" targetID="24" fromX="3309" fromY="-2575" />„Nie! Twierdzilem, ze ta kuznia jest moja, a dzieci kamienne moga czekac na swoja kolej. Pozostawiac!'</nodes>
+    <nodes xsi:type="NodeAdventure" ID="24" positionX="3439" positionY="-2246" width="350" height="725">
       <logic>
         <ModifierBlock>
           <LogicModifiers>
@@ -5472,7 +5472,7 @@ Mroki wrecza ci prezent, a nastepnie rozpuszcza sie w cieniu i czujesz, ze czarn
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="24" targetID="17" fromX="3764" fromY="-2693" />„Wstyd, lassie, wstyd. W koncu nie jestes taki przydatny, co?'
+      <outputs name="Wyjdz." ownerID="24" targetID="17" fromX="3764" fromY="-2737" />„Wstyd, lassie, wstyd. W koncu nie jestes taki przydatny, co?'
 
 Krasnoludy musza sobie poradzic z problemem, wiec twoja przyjazn nie rosnie.</nodes>
     <nodes xsi:type="NodeChallenge" ID="25" positionX="1047" positionY="-1036" width="500" height="807" challengeType="TypePhysical" versusGroup="GROUP-MROKI_8P_6M_8S" challengeScale="101" challengedList="nodwarf">
@@ -8134,7 +8134,7 @@ Idz po mroz dziad w lodowych krainach.'</nodes>
 A jesli mozemy, wyslemy ludziom, ktorzy pomoga ci po drodze, i pomozemy przy koncu bestii swietlnej. Teraz idz. Znajdz dziad mroz.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="21" positionX="4391" positionY="458" width="350" height="805">
       <outputs name="Co z arcymistrzem trzymanym przez trolle w wiezieniu? Alchemik powiedzial, ze zna jedna." ownerID="21" targetID="10" fromX="4716" fromY="-33" />
-      <outputs name="Czy oni wiedza, kto zniszczyl serce i jak?" ownerID="21" targetID="11" fromX="4716" fromY="-113" />”. . .'</nodes>
+      <outputs name="Czy oni wiedza, kto zniszczyl serce i jak?" ownerID="21" targetID="11" fromX="4716" fromY="-113" />”. . . '</nodes>
   </Adventure>
   <Adventure name="DziadMroz" uniqueID="81" allowOnce="true" typeGeneric="false" typePerGroupGeneric="true" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="29" eventTag="TAG-MAINLOGBOOK1" joinIsForced="false" joinType="AllAlly" joinRange="MovementArea">
     <nodes xsi:type="NodeStarting" ID="1" positionX="10" positionY="-10" width="347" height="661" image="Event036">

@@ -4075,7 +4075,7 @@ Staja sie harcownikami, ale nawet w tym, ze pozostaja slabi.</nodes>
         </FilterBlock>
       </logic>
       <outputs name="Zapros kupcow." ownerID="2" targetID="3" fromX="831" fromY="-509" />
-      <outputs name="Powiedz kupcom, ze tym razem cie to nie interesuje." ownerID="2" targetID="19" fromX="831" fromY="-589" />Twoj post handlowy przyciagnal wiecej Twoich odwiedzajacych.</nodes>
+      <outputs name="Powiedz kupcom, ze tym razem cie to nie interesuje." ownerID="2" targetID="19" fromX="831" fromY="-589" />Twoj post handlowy przyciagnal wiecej odwiedzajacych.</nodes>
     <nodes xsi:type="NodeProduceDrop" ID="3" positionX="1000" positionY="66" width="460" height="750">
       <outputs ownerID="3" targetID="7" group="G1" fromX="1430" fromY="-292" />
       <outputs ownerID="3" targetID="8" group="G1" fromX="1430" fromY="-372" />
@@ -4126,7 +4126,7 @@ Staja sie harcownikami, ale nawet w tym, ze pozostaja slabi.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="14" positionX="3355" positionY="-361" width="350" height="530" linkedEventUniqueID="22" />
     <nodes xsi:type="NodeAdventureEnd" ID="15" positionX="2960" positionY="-1046" width="350" height="530" linkedEventUniqueID="24" />
     <nodes xsi:type="NodeAdventureEnd" ID="16" positionX="2135" positionY="-1518" width="350" height="530" linkedEventUniqueID="21" />
-    <nodes xsi:type="NodeAdventureEnd" ID="19" positionX="101" positionY="-736" width="350" height="530" linkedEventUniqueID="0" />
+    <nodes xsi:type="NodeAdventureEnd" ID="19" positionX="922" positionY="-732" width="350" height="530" linkedEventUniqueID="0" />
   </Adventure>
   <Adventure name="Childgrowingup__" uniqueID="28" typeGeneric="false" typePerGroupGeneric="true" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="88" joinIsForced="false" joinType="OnlyOwn" joinRange="SinglePosition">
     <nodes xsi:type="NodeStarting" ID="1" positionX="-139" positionY="518" width="347" height="661" image="Event010">

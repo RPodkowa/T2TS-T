@@ -3578,7 +3578,7 @@ Podczas gdy znana jest przyjazna dola, ktora pilnuje dzieci lub przynosi szczesc
         </ModifierBlock>
       </logic>
       <outputs name="Jak ona moze cie wprowadzic?" ownerID="26" targetID="18" group="G1" fromX="1411" fromY="1176" />
-      <outputs name="Jak ona moze cie wprowadzic?" ownerID="26" targetID="19" group="G1" fromX="1411" fromY="1096" />„Granie w paskudne sztuczki na dzieciach? Nie bede stal bezczynnie, moja droga. Pomoge ci, bo ktos powinien odejsc i posortowac tych glupcow.'</nodes>
+      <outputs name="Jak ona moze cie wprowadzic?" ownerID="26" targetID="19" group="G1" fromX="1411" fromY="1096" />„Tak, twoja natura czuje sie dobrze. Poza tym granie w paskudne sztuczki na dzieciach? Nie bede stal bezczynnie, moja droga. Pomoge ci, bo ktos powinien odejsc i posortowac tych glupcow.</nodes>
     <nodes xsi:type="NodeAdventure" ID="27" positionX="4134" positionY="175" width="350" height="805">
       <outputs name="Wyjdz." ownerID="27" targetID="33" fromX="4459" fromY="-316" />
       <outputs name="Atak!" ownerID="27" targetID="10" fromX="4459" fromY="-396" />„Zazwyczaj w mojej naturze jest pomoc, a jestem pewien, ze Leopold przyslal cie tutaj wlasnie z tego powodu. Jednak tym razem nie bede ingerowac w jego imieniu. Musi nauczyc sie radzic sobie z wlasna krzywda. 

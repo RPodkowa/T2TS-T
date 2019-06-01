@@ -3497,7 +3497,7 @@ Elfy sa przerazone twoja brutalna natura. Placa ci zgodnie z ustaleniami, ale tr
 
 Niektore zajecia w wiosce beda dostepne tylko wtedy, gdy przyjaznisz sie z jej ludzmi, a niektore sa ograniczone do szansy, wiec powrot od czasu do czasu moze byc tego wart.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="3" positionX="3565.721" positionY="1486.53271" width="350" height="360.8" linkedEventUniqueID="0" />
-    <nodes xsi:type="NodeAdventureEnd" ID="4" positionX="4553" positionY="-2153" width="350" height="530" linkedEventUniqueID="0" />
+    <nodes xsi:type="NodeAdventureEnd" ID="4" positionX="4497" positionY="-2120" width="350" height="530" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventure" ID="5" positionX="432.185" positionY="931.1078" width="350" height="885">
       <logic>
         <FilterBlock>
@@ -4055,7 +4055,7 @@ Mozesz szukac naszych uzdrowicieli, a moze odmlodzic umysl i ducha, jesli los da
       <outputs name="Confirm" ownerID="81" targetID="28" fromX="1045" fromY="-3377" />
       <outputs name="Cancel" ownerID="81" targetID="79" fromX="1045" fromY="-3457" />
     </nodes>
-    <nodes xsi:type="NodeAdventure" ID="82" positionX="2872" positionY="-1843" width="350" height="1046" image="Event167">
+    <nodes xsi:type="NodeAdventure" ID="82" positionX="2914" positionY="-1884" width="350" height="1046" image="Event167">
       <logic>
         <FilterBlock>
           <LogicResultAction>
@@ -4063,11 +4063,11 @@ Mozesz szukac naszych uzdrowicieli, a moze odmlodzic umysl i ducha, jesli los da
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="[Elf] Delikatnie przechyl glowe." ownerID="82" targetID="83" fromX="3197" fromY="-2334" />
-      <outputs name="[Magiczni uzytkownicy] Powiedz, ze znasz troche oczyszczania, ale potrzebujesz ich pomocy, aby zrobic to wlasciwie." ownerID="82" targetID="84" fromX="3197" fromY="-2414" />
-      <outputs name="Zgodz sie zaplacic cene za usuniecie klatwy. [20 szlachetnych klejnotow]" ownerID="82" targetID="86" fromX="3197" fromY="-2494" />
-      <outputs name="Pros o uzdrowienie ran duchowych." ownerID="82" targetID="62" fromX="3197" fromY="-2574" />
-      <outputs name="Powiedz, ze nie masz platnosci." ownerID="82" targetID="79" fromX="3197" fromY="-2654" />Jeden z elfow kiwa glowa i pokazuje ci miejsce do siedzenia. 
+      <outputs name="[Elf] Delikatnie przechyl glowe." ownerID="82" targetID="83" fromX="3239" fromY="-2375" />
+      <outputs name="[Magiczni uzytkownicy] Powiedz, ze znasz troche oczyszczania, ale potrzebujesz ich pomocy, aby zrobic to wlasciwie." ownerID="82" targetID="84" fromX="3239" fromY="-2455" />
+      <outputs name="Zgodz sie zaplacic cene za usuniecie klatwy. [20 szlachetnych klejnotow]" ownerID="82" targetID="86" fromX="3239" fromY="-2535" />
+      <outputs name="Pros o uzdrowienie ran duchowych." ownerID="82" targetID="62" fromX="3239" fromY="-2615" />
+      <outputs name="Powiedz, ze nie masz platnosci." ownerID="82" targetID="79" fromX="3239" fromY="-2695" />Jeden z elfow kiwa glowa i pokazuje ci miejsce do siedzenia. 
 
 „Twoja dusza jest skazona i potrzebuje oczyszczenia. Klatwy przeciazaja swiatlo naszych dusz; w ten sposob cena bedzie wysoka i obciazy twoje umysly. Uzdrowienie twoich duchowych ran jest dla mnie latwiejsze, wiec nie bede prosic o wiele w zamian.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="83" positionX="3408" positionY="-1971" width="350" height="966">
@@ -4093,13 +4093,13 @@ Mozesz szukac naszych uzdrowicieli, a moze odmlodzic umysl i ducha, jesli los da
         </ModifierBlock>
       </logic>
       <outputs name="Dziekuje im i odejdzcie." ownerID="83" targetID="4" fromX="3733" fromY="-2462" />
-      <outputs name="[Magiczni uzytkownicy] Powiedz, ze znasz troche oczyszczania, ale potrzebujesz ich pomocy, aby zrobic to wlasciwie." ownerID="83" targetID="84" fromX="3733" fromY="-2542" />
+      <outputs name="[Magiczni uzytkownicy] Powiedz, ze znasz niektore oczyszczenie klatw, ale potrzebujesz ich pomocy, aby zrobic to poprawnie." ownerID="83" targetID="84" fromX="3733" fromY="-2542" />
       <outputs name="Zgodz sie zaplacic cene za usuniecie klatwy." ownerID="83" targetID="86" fromX="3733" fromY="-2622" />
       <outputs name="Pros o uzdrowienie ran duchowych." ownerID="83" targetID="62" fromX="3733" fromY="-2702" />Uzdrowiciel ducha usmiecha sie. - Ach, przepraszam, poczulem dotyk mlodych bogow i nie spodziewalem sie starszego dziecka. 
 
 Usiadz, odpocznij i medytuj, a twoja dusza zostanie oczyszczona. Oczywiscie twoi krewni beda musieli zaplacic.'
 </nodes>
-    <nodes xsi:type="NodeAdventure" ID="84" positionX="4384" positionY="-2812" width="350" height="725">
+    <nodes xsi:type="NodeAdventure" ID="84" positionX="4175" positionY="-2803" width="350" height="725">
       <logic>
         <FilterBlock>
           <LogicResultAction list="magic">
@@ -4118,7 +4118,7 @@ Usiadz, odpocznij i medytuj, a twoja dusza zostanie oczyszczona. Oczywiscie twoi
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Dziekuje im i odejdzcie." ownerID="84" targetID="4" fromX="4709" fromY="-3303" />„Rozumiem. W takim przypadku pomoge ci, a ty wykonasz prace. Usiadz, odpocznij, medytuj, stan sie jednym z lasem i sluchaj jego madrosci.'
+      <outputs name="Dziekuje im i odejdzcie." ownerID="84" targetID="4" fromX="4500" fromY="-3294" />„Rozumiem. W takim przypadku pomoge ci, a ty wykonasz prace. Usiadz, odpocznij, medytuj, stan sie jednym z lasem i sluchaj jego madrosci.'
 
 Czujesz, ze ciemna energia powoli odplywa. 
 </nodes>

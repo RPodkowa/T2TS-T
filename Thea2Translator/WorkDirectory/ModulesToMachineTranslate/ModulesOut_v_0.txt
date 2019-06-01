@@ -1,4 +1,3 @@
-753:'Surrender! You male piece of shit, how dare you dishonour orc blood so!'{}{}{}{}The orc spits in your face with disgust, then growls at you, her fists clenched.
 1936:Deathstone?
 1991:Oh?
 2015:Bash it open.
@@ -21,9 +20,16 @@
 7931:Chale?
 9629:'Yoou smeelll of woodkin, yoou maay passs.'
 10346:Enter.
-11851:Agree and go hunt for some mroki. They can be found in the darkness, in volcanic biomes.
-11852:[Perception and strength] The child is has physical prowess, perhaps the path of a warrior is their destiny.
-11853:[Intelligence] Your child is learned, perhaps they can become a healer.
-11854:[Intelligence]Your child is learned, perhaps they can become a healer.
 11855:Hahaha
 11856:Wyjdz.
+11857:You call upon the light and it guides you in, past the many wards. {}{}{}{}Within the forge you see a burning furnace, an anvil, and all the trappings you'd expect, but behind the hammer stands a creature of the dark - a mroki. It looks at you, its empty eyes revealing no emotion:{}{}{}{}'You smell of the light. Are you here to smite me?'
+11858:You call upon the light and it guides you in, past the many wards. {}{}{}{}Within the forge you see a burning furnace, an anvil, and all the trappings you'd expect, but behind the hammer stands a creature of the dark - a mroki. It looks at you, its empty eyes revealing no emotion:{}{}{}{}'You smell of the darkness of turmoil. Have you come for a weapon, or do you wish to fight me? One never knows with you chaotic types.'
+11859:You call upon the dark and it obeys and guides you in, past the many wards. {}{}{}{}Within the forge you see a burning furnace, an anvil, and all the trappings you'd expect, but behind the hammer stands a creature of the dark - a mroki. It looks at you, its empty eyes revealing no emotion:{}{}{}{}'Dark friend, welcome. How can I aid you?'
+11860:'Yes, yes, that we - or they - are. I will go, for the voice in my mind does not want to spill dwarven blood. You spoke well. Here, you may have better use of this than me.'{}{}{}{}The mroki hands you a gift, then dissolves into shadow, and you feel the black mist leave with him. 
+11861:Your trading post has attracted some more visitors.
+11862:'What happened, you ask? THEY happened. I was strong, I had beauty, wisdom, and the love of my people. But the gods did not like it, no. {}{}{}{}They made my kingdom rot, through betrayal, and misery, and in the end, on my deathbed, I was cursed, my face torn from me and this body trapped in this glass ruin forever. I cannot touch anything, I cannot leave, and I cannot even look into the mirror, damn them!'
+11863:'You speak some sense. No reason to pass on an opportunity when it comes a'knockin'. I tell ya what, there's an old witch hut not too far from here - a baba yaga, we think, lives there. The cursed thing's been interfering with business and we ain't no spirit folk to deal with such sort. {}{}{}{}Deal with her, and we may let you peek into our cave.{}{}{}{}Or there's another task you can do.'
+11864:'Yes, your nature feels right. Besides, playing nasty tricks on children? I will not stand idly by, my dear. I shall aid you, because someone should go and sort those fools out.'
+11865:A full moon hangs heavy atop the calm waters. You set up camp to rest, doing everything the same as always - check the area, set watch, stay alert.{}{}{}{}Alas, one your children wanders off to throw stones in the water, and with a sudden splash, they disappear beneath the surface of the crystal-clear lake!
+11866:You persevere, and indeed the black mist lessens in intensity and withdraws deeper into the ruins. {}{}{}{}The air lifts and a goblin shaman approaches you:{}{}{}{}'Heh, I never did think you do it. Good, good. We need the dark, we do, but not so much, no. We thank you, here - you have nice visions from me. Bye.'
+11867:[Magic users]Say that you know some of the cleansing of curses, but you require their aid to do it properly.

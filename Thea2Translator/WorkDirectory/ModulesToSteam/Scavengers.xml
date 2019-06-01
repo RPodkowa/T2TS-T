@@ -2881,7 +2881,7 @@ Poradziles sobie z tym problemem, jak zapytales, wiec zyskujesz przyjazn.
       <outputs name="Znajdz je i zaatakuj!" ownerID="2" targetID="24" fromX="352" fromY="-725" />
       <outputs name="Uzyj swojego miesa, aby zwabic te zwierzeta z terytorium i miec nadzieje, ze nie wroca." ownerID="2" targetID="15" fromX="352" fromY="-806" />
       <outputs name="Wroc pozniej." ownerID="2" targetID="31" fromX="352" fromY="-886" />Zblizasz sie do obszaru, gdzie mowi sie, ze stado wilkow, z ktorymi miales do czynienia, wedruje.</nodes>
-    <nodes xsi:type="NodeAdventure" ID="3" positionX="-340.975922" positionY="1744.97815" width="350" height="1002">
+    <nodes xsi:type="NodeAdventure" ID="3" positionX="-340.975922" positionY="1744.97815" width="350" height="1046">
       <logic>
         <FilterBlock>
           <LogicFilter name="beast" makePublic="true">
@@ -2907,11 +2907,11 @@ Poradziles sobie z tym problemem, jak zapytales, wiec zyskujesz przyjazn.
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="[Wolf] Biegnij z paczka i przekonaj ich, aby ruszyli dalej." ownerID="3" targetID="7" group="G1" fromX="-15" fromY="1297" />
-      <outputs name="[Wolf] Biegnij z paczka i przekonaj ich, aby ruszyli dalej." ownerID="3" targetID="42" group="G1" fromX="-15" fromY="1217" />
-      <outputs name="Masz tych, ktorzy potrafia komunikowac sie z wilkami, wiec spraw, by wilki byly posluszne." ownerID="3" targetID="5" group="G1" fromX="-15" fromY="1137" />
-      <outputs name="Wilki szanuja terytorium. Sprobuj wymyslic sposob na oznaczenie tej ziemi dla padlinozercow, dzieki czemu wilki odejda." ownerID="3" targetID="6" fromX="-15" fromY="1057" />
-      <outputs name="Ustaw pulapke na paczke i atakuj, gdy sa oslabione." ownerID="3" targetID="30" fromX="-15" fromY="977" />Dostrzegasz paczke biegnaca razem, ale jeszcze cie nie widzieli. </nodes>
+      <outputs name="[Wolf] Biegnij z paczka i przekonaj ich, aby ruszyli dalej." ownerID="3" targetID="7" group="G1" fromX="-15" fromY="1253" />
+      <outputs name="[Wolf] Biegnij z paczka i przekonaj ich, aby ruszyli dalej." ownerID="3" targetID="42" group="G1" fromX="-15" fromY="1253" />
+      <outputs name="Masz tych, ktorzy potrafia komunikowac sie z wilkami, wiec spraw, by wilki byly posluszne." ownerID="3" targetID="5" group="G1" fromX="-15" fromY="1253" />
+      <outputs name="Wilki szanuja terytorium. Sprobuj wymyslic sposob na oznaczenie tej ziemi dla padlinozercow, dzieki czemu wilki odejda." ownerID="3" targetID="6" fromX="-15" fromY="1253" />
+      <outputs name="Ustaw pulapke na paczke i atakuj, gdy sa oslabione." ownerID="3" targetID="30" fromX="-15" fromY="1253" />Dostrzegasz paczke biegnaca razem, ale jeszcze cie nie widzieli. </nodes>
     <nodes xsi:type="NodeAdventure" ID="4" positionX="1003.39478" positionY="-64.493" width="350" height="805">
       <logic>
         <FilterBlock>
@@ -2930,7 +2930,7 @@ Poradziles sobie z tym problemem, jak zapytales, wiec zyskujesz przyjazn.
       <outputs name="Po prostu zabij ich w staromodny sposob." ownerID="4" targetID="24" fromX="1329" fromY="-635" />Sledzisz wilki do ich legowiska. Jest to jaskinia z tylko jedna droga do srodka lub na zewnatrz. 
 
 Mozesz tu zastawic pulapke i zabic ich pojedynczo.</nodes>
-    <nodes xsi:type="NodeChallenge" ID="5" positionX="545" positionY="1760" width="500" height="689" challengeType="TypeMental" versusGroup="GROUP-WOLVES_3P_1M_0S" challengeScale="101" challengedList="beastatlkers">
+    <nodes xsi:type="NodeChallenge" ID="5" positionX="545" positionY="1760" width="500" height="726" challengeType="TypeMental" versusGroup="GROUP-WOLVES_3P_1M_0S" challengeScale="101" challengedList="beastatlkers">
       <logic>
         <FilterBlock>
           <LogicProcessing name="werebeats" list1="werewolf" list2="beast">
@@ -2944,16 +2944,16 @@ Mozesz tu zastawic pulapke i zabic ich pojedynczo.</nodes>
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Win" ownerID="5" targetID="34" fromX="986" fromY="1301" />
-      <outputs name="Lose" ownerID="5" targetID="32" fromX="986" fromY="1221" />
-      <outputs name="Surrender" ownerID="5" targetID="32" fromX="986" fromY="1141" />
+      <outputs name="Win" ownerID="5" targetID="34" fromX="986" fromY="1264" />
+      <outputs name="Lose" ownerID="5" targetID="32" fromX="986" fromY="1184" />
+      <outputs name="Surrender" ownerID="5" targetID="32" fromX="986" fromY="1104" />
     </nodes>
-    <nodes xsi:type="NodeChallenge" ID="6" positionX="1003" positionY="694" width="500" height="726" challengeType="TypeMental" versusConcept="true" versusGroup="GROUP-CON_M_0P_1M_0S" challengeScale="200" challengedList="ppl">
+    <nodes xsi:type="NodeChallenge" ID="6" positionX="1003" positionY="694" width="500" height="726" challengeType="TypeMental" versusConcept="true" versusGroup="GROUP-CON_M_0P_2M_0S" challengeScale="200" challengedList="ppl">
       <outputs name="Win" ownerID="6" targetID="17" fromX="1444" fromY="198" />
       <outputs name="Lose" ownerID="6" targetID="33" fromX="1444" fromY="118" />
       <outputs name="Surrender" ownerID="6" targetID="53" fromX="1444" fromY="38" />
     </nodes>
-    <nodes xsi:type="NodeAdventure" ID="7" positionX="73" positionY="2999" width="350" height="681">
+    <nodes xsi:type="NodeAdventure" ID="7" positionX="73" positionY="2999" width="350" height="725">
       <logic>
         <FilterBlock>
           <LogicResultAction>
@@ -2975,7 +2975,7 @@ Mozesz tu zastawic pulapke i zabic ich pojedynczo.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="7" targetID="40" fromX="398" fromY="2551" />Biegniesz z wilkami i poprowadzisz ich do lepszej krainy. Dziekuja i nie wracaja tutaj. 
+      <outputs name="Wyjdz." ownerID="7" targetID="40" fromX="398" fromY="2507" />Biegniesz z wilkami i poprowadzisz ich do lepszej krainy. Dziekuja i nie wracaja tutaj. 
 
 Pozbyles sie problemu, tak jak zostales zapytany, wiec padlinozercy sa wdzieczni. 
 </nodes>
@@ -2983,7 +2983,7 @@ Pozbyles sie problemu, tak jak zostales zapytany, wiec padlinozercy sa wdzieczni
       <outputs ownerID="9" targetID="12" group="G1" fromX="2098" fromY="-418" />
       <outputs ownerID="9" targetID="19" group="G1" fromX="2098" fromY="-498" />
     </nodes>
-    <nodes xsi:type="NodeAdventureEnd" ID="10" positionX="3470.99" positionY="-238.9382" width="350" height="408" allPlayersXP="2" allPlayersRP="1" linkedEventUniqueID="0">
+    <nodes xsi:type="NodeAdventureEnd" ID="10" positionX="3470.99" positionY="-238.9382" width="350" height="530" allPlayersXP="2" allPlayersRP="1" linkedEventUniqueID="0">
       <logic>
         <ModifierBlock>
           <LogicModifiers>
@@ -3005,8 +3005,8 @@ Pozbyles sie problemu, tak jak zostales zapytany, wiec padlinozercy sa wdzieczni
       </logic>
       <outputs ownerID="12" targetID="18" fromX="2674" fromY="-472" />
     </nodes>
-    <nodes xsi:type="NodeAdventure" ID="13" positionX="3022.0813" positionY="-682.100952" width="350" height="681">
-      <outputs name="Odloz je." ownerID="13" targetID="18" fromX="3347" fromY="-1129" />Niektore wilki probuja uciec od twoich pulapek i ugryzc cie w ich umierajacym szalenstwie. 
+    <nodes xsi:type="NodeAdventure" ID="13" positionX="3022.0813" positionY="-682.100952" width="350" height="725">
+      <outputs name="Odloz je." ownerID="13" targetID="18" fromX="3347" fromY="-1173" />Niektore wilki probuja uciec od twoich pulapek i ugryzc cie w ich umierajacym szalenstwie. 
 </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="14" positionX="2045.21411" positionY="-2396.92188" width="350" height="408" allPlayersXP="2" allPlayersRP="1" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeTrade" ID="15" positionX="-275.89563" positionY="-1472.6062" width="460" height="479" traderProfile="TRADER-BANDIT" playerInventory="meat" startingBalance="-100">
@@ -3041,26 +3041,26 @@ Pozbyles sie problemu, tak jak zostales zapytany, wiec padlinozercy sa wdzieczni
       <outputs name="Lose" ownerID="16" targetID="33" fromX="1423" fromY="-1431" />
       <outputs name="Surrender" ownerID="16" targetID="53" fromX="1423" fromY="-1512" />
     </nodes>
-    <nodes xsi:type="NodeAdventure" ID="17" positionX="1634" positionY="704" width="350" height="725">
+    <nodes xsi:type="NodeAdventure" ID="17" positionX="1617" positionY="682" width="350" height="725">
       <logic>
         <ModifierBlock>
           <LogicProcessing name="2" list1="ppl">
             <scriptCallWithTag scriptName="FLP_GetRandomXelements" />
           </LogicProcessing>
           <LogicModifiers>
-            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="6" tag="TAG-LOYALTY_SLAVYAN" />
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="6" tag="TAG-SCAVENGER" />
           </LogicModifiers>
           <LogicModifiers list="2">
             <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="3" tag="SKILL_PACK-BLESS_M" />
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="17" targetID="36" fromX="1959" fromY="212" />Zaznaczasz terytorium i nekasz paczke przez pewien czas, aby w koncu sie ruszyli. 
+      <outputs name="Wyjdz." ownerID="17" targetID="36" fromX="1942" fromY="191" />Zaznaczasz terytorium i nekasz paczke przez pewien czas, aby w koncu sie ruszyli. 
 
 Pozbyles sie problemu, tak jak zostales zapytany, wiec padlinozercy sa wdzieczni. 
 </nodes>
-    <nodes xsi:type="NodeAdventure" ID="18" positionX="2851.84644" positionY="46.0069351" width="350" height="681">
-      <outputs name="Wyjdz." ownerID="18" targetID="10" fromX="3177" fromY="-401" />Pozbyles sie problemu, tak jak zostales poproszony, a twoja przyjazn z pewnoscia wzrosnie. 
+    <nodes xsi:type="NodeAdventure" ID="18" positionX="2851.84644" positionY="46.0069351" width="350" height="725">
+      <outputs name="Wyjdz." ownerID="18" targetID="10" fromX="3177" fromY="-445" />Pozbyles sie problemu, tak jak zostales poproszony, a twoja przyjazn z pewnoscia wzrosnie. 
 </nodes>
     <nodes xsi:type="NodeSpawnOnMap" ID="19" positionX="1891.91553" positionY="-691.4325" width="480" height="503" radius="0" destroyOwner="true" linkedEventUniqueID="0">
       <outputs ownerID="19" targetID="11" fromX="2340" fromY="-1123" />
@@ -3122,10 +3122,10 @@ Pozbyles sie problemu, tak jak zostales zapytany, wiec padlinozercy sa wdzieczni
     <nodes xsi:type="NodeSpawnOnMap" ID="27" positionX="3917.40649" positionY="-2064.86816" width="480" height="503" radius="0" destroyOwner="true" linkedEventUniqueID="0">
       <outputs ownerID="27" targetID="48" fromX="4366" fromY="-2496" />
     </nodes>
-    <nodes xsi:type="NodeChallenge" ID="30" positionX="47" positionY="1184" width="500" height="689" challengeType="TypePhysical" versusGroup="GROUP-WOLVES_2P_1M_0S" challengeScale="60" challengedList="ppl">
-      <outputs name="Win" ownerID="30" targetID="25" fromX="488" fromY="725" />
-      <outputs name="Lose" ownerID="30" targetID="26" fromX="488" fromY="645" />
-      <outputs name="Surrender" ownerID="30" targetID="52" fromX="488" fromY="565" />
+    <nodes xsi:type="NodeChallenge" ID="30" positionX="47" positionY="1184" width="500" height="726" challengeType="TypePhysical" versusGroup="GROUP-WOLVES_2P_1M_0S" challengeScale="100" challengedList="ppl">
+      <outputs name="Win" ownerID="30" targetID="25" fromX="488" fromY="688" />
+      <outputs name="Lose" ownerID="30" targetID="26" fromX="488" fromY="608" />
+      <outputs name="Surrender" ownerID="30" targetID="52" fromX="488" fromY="528" />
     </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="31" positionX="-535.1704" positionY="-799.3526" width="350" height="530" linkedEventUniqueID="0">
       <logic>
@@ -3136,10 +3136,10 @@ Pozbyles sie problemu, tak jak zostales zapytany, wiec padlinozercy sa wdzieczni
         </ModifierBlock>
       </logic>
     </nodes>
-    <nodes xsi:type="NodeAdventure" ID="32" positionX="1258.63318" positionY="1626.64209" width="350" height="841">
-      <outputs name="Daj spokoj." ownerID="32" targetID="37" fromX="1584" fromY="1179" />
-      <outputs name="Uzyj swojego miesa, aby zwabic te zwierzeta z terytorium i miec nadzieje, ze nie wroca." ownerID="32" targetID="15" fromX="1584" fromY="1099" />
-      <outputs name="Po prostu ich zaatakuj. [Fizyczny]" ownerID="32" targetID="30" fromX="1584" fromY="1019" />Nie przekonujesz, wiec bestie zostaja.</nodes>
+    <nodes xsi:type="NodeAdventure" ID="32" positionX="1258.63318" positionY="1626.64209" width="350" height="885">
+      <outputs name="Daj spokoj." ownerID="32" targetID="37" fromX="1584" fromY="1135" />
+      <outputs name="Uzyj swojego miesa, aby zwabic te zwierzeta z terytorium i miec nadzieje, ze nie wroca." ownerID="32" targetID="15" fromX="1584" fromY="1055" />
+      <outputs name="Po prostu ich zaatakuj. [Fizyczny]" ownerID="32" targetID="30" fromX="1584" fromY="975" />Nie przekonujesz, wiec bestie zostaja.</nodes>
     <nodes xsi:type="NodeAdventure" ID="33" positionX="2277.30176" positionY="738.5839" width="350" height="725">
       <logic>
         <ModifierBlock>
@@ -3151,7 +3151,7 @@ Pozbyles sie problemu, tak jak zostales zapytany, wiec padlinozercy sa wdzieczni
       <outputs name="Wyjdz." ownerID="33" targetID="47" fromX="2603" fromY="247" />Twoje knowania sie nie udaja i jestes atakowany przez stado wilkow. 
 
 Padlinozercy slysza twoje krzyki i przychodza z pomoca. Musza sami zabic wilki i sa wsciekli na koniecznosc oszczedzania czasu. Nie zyskujesz zadnej przyjazni.</nodes>
-    <nodes xsi:type="NodeAdventure" ID="34" positionX="1871.72742" positionY="2213.116" width="350" height="681">
+    <nodes xsi:type="NodeAdventure" ID="34" positionX="1871.72742" positionY="2213.116" width="350" height="725">
       <logic>
         <ModifierBlock>
           <LogicModifiers list="beastatlkers">
@@ -3165,14 +3165,14 @@ Padlinozercy slysza twoje krzyki i przychodza z pomoca. Musza sami zabic wilki i
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="34" targetID="36" group="G1" fromX="2197" fromY="1766" />Wilki klaniaja sie twojej dominacji i odchodza. Moze jeden lub dwoch moze nawet zdecydowac sie zostac z toba. 
+      <outputs name="Wyjdz." ownerID="34" targetID="36" group="G1" fromX="2197" fromY="1721" />Wilki klaniaja sie twojej dominacji i odchodza. Moze jeden lub dwoch moze nawet zdecydowac sie zostac z toba. 
 
 Zmiatacze sa zadowoleni z twojej pracy. 
 </nodes>
     <nodes xsi:type="NodeSpawnOnMap" ID="36" positionX="2387.63965" positionY="1992.71545" width="480" height="503" radius="0" destroyOwner="true" linkedEventUniqueID="0">
       <outputs ownerID="36" targetID="39" fromX="2836" fromY="1560" />
     </nodes>
-    <nodes xsi:type="NodeAdventure" ID="37" positionX="1823.09717" positionY="1417.966" width="350" height="681">
+    <nodes xsi:type="NodeAdventure" ID="37" positionX="1823.09717" positionY="1417.966" width="350" height="725">
       <logic>
         <ModifierBlock>
           <LogicModifiers>
@@ -3180,13 +3180,13 @@ Zmiatacze sa zadowoleni z twojej pracy.
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="37" targetID="27" fromX="2148" fromY="970" />padlinozercy slysza o twojej porazce i przychodza ci z pomoca. Musza sami zabijac pszczoly i sa zli na koniecznosc oszczedzania czasu. Nie zyskujesz zadnej przyjazni.</nodes>
-    <nodes xsi:type="NodeAdventureEnd" ID="39" positionX="2936.88281" positionY="1623.93677" width="350" height="408" allPlayersXP="3" allPlayersRP="1" linkedEventUniqueID="0" />
+      <outputs name="Wyjdz." ownerID="37" targetID="27" fromX="2148" fromY="926" />padlinozercy slysza o twojej porazce i przychodza ci z pomoca. Musza sami zabijac pszczoly i sa zli na koniecznosc oszczedzania czasu. Nie zyskujesz zadnej przyjazni.</nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="39" positionX="2936.88281" positionY="1623.93677" width="350" height="530" allPlayersXP="3" allPlayersRP="1" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeSpawnOnMap" ID="40" positionX="654.0436" positionY="3052.068" width="480" height="503" radius="0" destroyOwner="true" linkedEventUniqueID="0">
       <outputs ownerID="40" targetID="41" fromX="1102" fromY="2619" />
     </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="41" positionX="1259.13611" positionY="2975.36865" width="350" height="408" allPlayersXP="2" allPlayersRP="1" linkedEventUniqueID="0" />
-    <nodes xsi:type="NodeAdventure" ID="42" positionX="122.122307" positionY="2218.033" width="350" height="681">
+    <nodes xsi:type="NodeAdventure" ID="42" positionX="122.122307" positionY="2218.033" width="350" height="725">
       <logic>
         <FilterBlock>
           <LogicResultAction>
@@ -3205,7 +3205,7 @@ Zmiatacze sa zadowoleni z twojej pracy.
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="42" targetID="40" fromX="447" fromY="1770" />Biegniesz z wilkami i poprowadzisz ich do lepszej krainy, ale biora to tylko za zwiekszenie swojego terytorium. 
+      <outputs name="Wyjdz." ownerID="42" targetID="40" fromX="447" fromY="1726" />Biegniesz z wilkami i poprowadzisz ich do lepszej krainy, ale biora to tylko za zwiekszenie swojego terytorium. 
 
 Masz ich wdziecznosc, ale padlinozercy nie sa pod wrazeniem twojej pomocy.'
 </nodes>

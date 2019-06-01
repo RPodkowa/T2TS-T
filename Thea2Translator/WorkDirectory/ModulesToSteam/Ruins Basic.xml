@@ -3268,7 +3268,7 @@ Mozesz teraz przeszukac ruiny.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Dokoncz eksploracje i wyjdz." ownerID="14" targetID="38" fromX="2661" fromY="-37" />„Yoou smeelll of woodkin, yoou maay passs.'</nodes>
+      <outputs name="Dokoncz eksploracje i wyjdz." ownerID="14" targetID="38" fromX="2661" fromY="-37" />„Tyyy pachnieszzz skora, ty maaasz przeeeepasc”.</nodes>
     <nodes xsi:type="NodeAdventure" ID="15" positionX="2036.51025" positionY="-560.709656" width="350" height="805">
       <logic>
         <ModifierBlock>

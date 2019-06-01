@@ -1,30 +1,35 @@
-﻿
-753: „Poddaj się! Ty męski gówno, jak śmiesz tak hańbić orczą krew!'{} {} {} {} Ork pluje ci w twarz z obrzydzeniem, a potem warczy na ciebie, zaciśnięte pięści.
-1936: Deathstone?
+﻿1936: Kamień śmierci?
 1991: Oh?
-2015: Bash it open.
+2015: Otwórz to.
 2863 :?
 3264: Zorya.
-3265: Triglav.
-3266: Svarog.
-3267: Stribog.
+3265: Trzygłów.
+3266: Swaróg.
+3267: Strzybóg.
 3333: Dievanna.
 3334: Horz.
 3335: Nyia.
 3336: Łada.
-3946: ”. . .'
-4141: Nod. 
+3946: ”. . . '
+4141: Nod.
 6119: Deal.
 6985: A warrakus?
 7173: ??
 7609: Theodore?
 7679: Leopold ?!
 7931: Chale?
-9629: „Yoou smeelll of woodkin, yoou maay passs.'
+9629: „Tyyy pachnieszzz skórą, ty maaasz przeeeepaść”.
 10346: Enter.
-11851: Zgadzam się i poluj na mroki. Można je znaleźć w ciemności, w biomach wulkanicznych.
-11852: [Percepcja i siła] Dziecko ma sprawność fizyczną, być może ścieżka wojownika jest ich przeznaczeniem.
-11853: [Inteligencja] Twoje dziecko się uczy, być może może zostać uzdrowicielem.
-11854: [Inteligencja] Twoje dziecko się uczy, być może może zostać uzdrowicielem.
 11855: Hahaha
 11856: Wyjdz.
+11857: Wzywasz światło i ono prowadzi cię, mijając wiele osłon. {} {} {} {} W kuźni widzisz płonący piec, kowadło i wszystkie pułapki, jakich można się spodziewać, ale za młotem stoi stworzenie ciemności - mroki. Patrzy na ciebie, jego puste oczy nie ujawniają żadnych emocji: {} {} {} {} 'Czujesz zapach światła. Jesteś tutaj, żeby mnie uderzyć?
+11858: Wzywasz światło i ono prowadzi cię, mijając wiele osłon. {} {} {} {} W kuźni widzisz płonący piec, kowadło i wszystkie pułapki, jakich można się spodziewać, ale za młotem stoi stworzenie ciemności - mroki. Patrzy na ciebie, jego puste oczy nie ujawniają żadnych emocji: {} {} {} {} 'Czujesz zapach ciemności zamieszania. Czy przyszedłeś po broń, czy chcesz ze mną walczyć? Nigdy nie wiadomo z wami chaotycznych typów.
+11859: Wzywasz ciemność, która słucha cię i prowadzi, mijając wiele osłon. {} {} {} {} W kuźni widzisz płonący piec, kowadło i wszystkie pułapki, jakich można się spodziewać, ale za młotem stoi stworzenie ciemności - mroki. Patrzy na ciebie, jego puste oczy nie ujawniają żadnych emocji: {} {} {} {} 'Mroczny przyjacielu, witaj. Jak mogę ci pomóc?
+11860: „Tak, tak, że my - lub oni - jesteśmy. Pójdę, bo głos w moim umyśle nie chce rozlać krasnoludzkiej krwi. Dobrze mówiłeś. Tutaj możesz lepiej to wykorzystać niż ja. ”{} {} {} {} Mroki wręcza ci prezent, a następnie rozpuszcza się w cieniu i czujesz, że czarna mgła z nim wychodzi.
+11861: Twój post handlowy przyciągnął więcej odwiedzających.
+11862: „Co się stało, pytasz? Stały się. Byłem silny, miałem piękno, mądrość i miłość mojego ludu. Ale bogom się to nie podobało, nie. {} {} {} {} Sprawili, że moje królestwo zgniło, przez zdradę i nędzę, a na końcu, na moim łożu śmierci, zostałem przeklęty, moja twarz rozdarta ode mnie, a to ciało uwięzione w tym szkle zrujnowało na zawsze. Nie mogę niczego dotknąć, nie mogę odejść, a nawet nie mogę patrzeć w lustro, do cholery!
+11863: „Mówisz w pewnym sensie. Nie ma powodu, aby przekazywać okazję, kiedy nadchodzi „knockin”. Mówię ci, jest tam stara chata czarownicy nie za daleko - myślę, że mieszka tam baba-yaga. Przeklęta rzecz wtrąca się w interesy i nie jesteśmy ludem duchowym, który ma do czynienia z takim rodzajem. {} {} {} {} Rozpraw się z nią, a możemy pozwolić ci zajrzeć do naszej jaskini. {} {} {} {} Albo jest jeszcze jedno zadanie, które możesz zrobić.
+11864: „Tak, twoja natura czuje się dobrze. Poza tym granie w paskudne sztuczki na dzieciach? Nie będę stał bezczynnie, moja droga. Pomogę ci, bo ktoś powinien odejść i posortować tych głupców.
+11865: Księżyc w pełni wisi ciężko na spokojnych wodach. Ustawiłeś obóz na odpoczynek, robiąc wszystko tak samo jak zawsze - sprawdź obszar, ustaw czujność, bądź czujny. {} {} {} {} Niestety, jedno z twoich dzieci odchodzi, by rzucić kamieniami w wodę i nagle plusk, znikają pod powierzchnią krystalicznie czystego jeziora!
+11866: Wytrwałeś i rzeczywiście czarna mgła zmniejsza intensywność i wycofuje się głębiej w ruiny. {} {} {} {} Windy powietrzne i gobliński szaman podchodzą do ciebie: {} {} {} {} 'Heh, nigdy nie sądziłem, że to zrobisz. Dobrze dobrze. Potrzebujemy ciemności, ale nie tak, nie. Dziękujemy, tutaj - masz miłe wizje ode mnie. PA.'
+11867: [Magiczni użytkownicy] Powiedz, że znasz niektóre oczyszczenie klątw, ale potrzebujesz ich pomocy, aby zrobić to poprawnie.

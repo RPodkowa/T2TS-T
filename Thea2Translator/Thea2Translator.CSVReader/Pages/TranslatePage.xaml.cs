@@ -111,14 +111,9 @@ namespace Thea2Translator.DesktopApp.Pages
 
                 switch (cbItemsToTranslateFilter.SelectedIndex)
                 {
-                    case 0:
-                        filtredElements = allElements
-                            .ToList();
-                        break;
-                    case 1:
-                        filtredElements = allElements.Where(c => c.CacheElem.ToTranslate)
-                            .ToList();
-                        break;
+                    case 0: filtredElements = allElements .ToList(); break;
+                    case 1: filtredElements = allElements.Where(c => c.CacheElem.ToTranslate) .ToList(); break;
+                    case 2: filtredElements = allElements.Where(c => c.CacheElem.ToConfirm).ToList(); break;
                 }
 
                 if (cbGroups.SelectedIndex != 0)
@@ -151,7 +146,6 @@ namespace Thea2Translator.DesktopApp.Pages
         private void btnGoogle_Click(object sender, RoutedEventArgs e)
         {
             var link = selectedCacheElement.CacheElem.GetTranslateLink();
-            //System.Diagnostics.Process.Start(link);
 
             wbGoogleTranslate.Address = link;
             btnGoogle.IsEnabled = false;

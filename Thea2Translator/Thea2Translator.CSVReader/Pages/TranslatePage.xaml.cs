@@ -24,8 +24,12 @@ namespace Thea2Translator.DesktopApp.Pages
     /// </summary>
     public partial class TranslatePage : Page
     {
-        private static readonly Regex _regex = new Regex("[^0-9.-]+");
+        public static RoutedCommand SaveCommand = new RoutedCommand();
+        public static RoutedCommand GoogleCommand = new RoutedCommand();
+        public static RoutedCommand NextItemCommand = new RoutedCommand();
 
+        private static readonly Regex _regex = new Regex("[^0-9.-]+");
+        
         private string oldStartRange = "";
         private string oldEndRange = "";
 
@@ -46,12 +50,10 @@ namespace Thea2Translator.DesktopApp.Pages
                 case FilesType.DataBase: dataCache = LogicProvider.DataBase; break;
                 case FilesType.Modules: dataCache = LogicProvider.Modules; break;
                 case FilesType.Names: dataCache = LogicProvider.Names; break;
-            }
-            
-            btnTranslate.IsEnabled = false;
-            btnSaveToFile.IsEnabled = false;
+            }           
 
             cbItemsToTranslateFilter.SelectedIndex = 0;
+            btnGoogle.IsEnabled = false;
 
             dataCache.ReloadElems(true, true);
             allElements = dataCache.CacheElems.Select(c => new CacheElemViewModel(c)).ToList();
@@ -66,14 +68,34 @@ namespace Thea2Translator.DesktopApp.Pages
             lbItemsToTranslate.ItemsSource = filtredElements;
 
             this.SetLanguageDictinary();
+
+            SaveCommand.InputGestures.Add(new KeyGesture(Key.S, ModifierKeys.Control));
+            GoogleCommand.InputGestures.Add(new KeyGesture(Key.G, ModifierKeys.Control));
+            NextItemCommand.InputGestures.Add(new KeyGesture(Key.N, ModifierKeys.Control));
+
+            CommandBindings.Add(new CommandBinding(SaveCommand, (d, e) => {
+                SaveToFile();
+            }));
+
+            CommandBindings.Add(new CommandBinding(GoogleCommand, (d, e) => {
+                OpenGoogleTranslate();
+            }));
+
+            CommandBindings.Add(new CommandBinding(NextItemCommand, (d, e) => {
+                ChooseNextItem();
+            }));
         }
 
-        private void BtnTranslate_Click(object sender, RoutedEventArgs e)
+        private void ChooseNextItem()
         {
-            selectedCacheElement.CacheElem.SetTranslated(txtTranslatedText.Text);
-            selectedCacheElement.CacheElem.IsCorrectedByHuman = true;
-
-            btnSaveToFile.IsEnabled = true;
+            if (selectedCacheElement == null)
+            {
+                lbItemsToTranslate.SelectedIndex = 0;
+            }
+            else if (lbItemsToTranslate.SelectedIndex + 1 < filtredElements.Count)
+            {
+                lbItemsToTranslate.SelectedIndex++;
+            }
         }
 
         private void LbItemsToTranslate_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -83,14 +105,20 @@ namespace Thea2Translator.DesktopApp.Pages
             txtOriginalText.Text = selectedCacheElement?.CacheElem?.OriginalText;
             txtTranslatedText.Text = selectedCacheElement?.CacheElem?.TranslatedText;
 
-            btnTranslate.IsEnabled = selectedCacheElement == null ? false : true;
             btnGoogle.IsEnabled = selectedCacheElement == null ? false : true; ;
         }
 
         private void BtnSaveToFile_Click(object sender, RoutedEventArgs e)
         {
+            SaveToFile();
+        }
+
+        private void SaveToFile()
+        {
+            selectedCacheElement.CacheElem.SetTranslated(txtTranslatedText.Text);
+            selectedCacheElement.CacheElem.IsCorrectedByHuman = true;
+
             dataCache.SaveElems(true);
-            btnSaveToFile.IsEnabled = false;
         }
 
         private void CbItemsToTranslateFilter_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -132,7 +160,6 @@ namespace Thea2Translator.DesktopApp.Pages
                         .ToList();
                 }
 
-                btnTranslate.IsEnabled = false;
                 lbItemsToTranslate.ItemsSource = null;
                 lbItemsToTranslate.ItemsSource = filtredElements;
             }
@@ -145,10 +172,18 @@ namespace Thea2Translator.DesktopApp.Pages
 
         private void btnGoogle_Click(object sender, RoutedEventArgs e)
         {
-            var link = selectedCacheElement.CacheElem.GetTranslateLink();
+            OpenGoogleTranslate();
+        }
 
-            wbGoogleTranslate.Address = link;
-            btnGoogle.IsEnabled = false;
+        private void OpenGoogleTranslate()
+        {
+            if (selectedCacheElement != null)
+            {
+                var link = selectedCacheElement.CacheElem.GetTranslateLink();
+
+                wbGoogleTranslate.Address = link;
+                btnGoogle.IsEnabled = false;
+            }
         }
 
         private void CbGroups_SelectionChanged(object sender, SelectionChangedEventArgs e)

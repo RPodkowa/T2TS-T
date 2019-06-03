@@ -9,7 +9,6 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="WorkPage"
       Style="{StaticResource MainPageStyle}">
-
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="11*"/>
@@ -39,7 +38,7 @@
                     <ColumnDefinition/>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
-                <Button x:Name="btnTranslate" Style="{StaticResource styleButton}" Content="{DynamicResource translateButtonTranslate}"  Click="BtnTranslate_Click" FontWeight="Bold"/>
+                <Button x:Name="btnSaveToFile" Style="{StaticResource styleButton}" FontWeight="Bold" Content="{DynamicResource saveFileButtonTranslate}" Click="BtnSaveToFile_Click" Grid.Column="0"/>
                 <Button x:Name="btnGoogle" Style="{StaticResource styleButton}" Content="{DynamicResource googleButtonTranslate}" Click="btnGoogle_Click" FontWeight="Bold" Grid.Column="1"/>
             </Grid>
             <TextBox x:Name="txtOriginalText" TextWrapping="Wrap" IsEnabled="False" />
@@ -64,7 +63,6 @@
                     </DataTemplate>
                 </ListBox.ItemTemplate>
             </ListBox>
-            <Button x:Name="btnSaveToFile" Style="{StaticResource styleButton}" FontWeight="Bold" Content="{DynamicResource saveFileButtonTranslate}" Grid.Row="4" Click="BtnSaveToFile_Click"/>
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition/>
@@ -79,7 +77,7 @@
                 <ComboBox x:Name="cbItemsToTranslateFilter" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Style="{StaticResource fontBase}" SelectionChanged="CbItemsToTranslateFilter_SelectionChanged" Grid.Row="1">
                     <ComboBoxItem Content="{DynamicResource allComboItemTranslate}" IsSelected="True" />
                     <ComboBoxItem Content="{DynamicResource withoutTranslationComboItemTranslate}" />
-                    <ComboBoxItem Content="{DynamicResource withoutConfirmationComboItemTranslate}" />                    
+                    <ComboBoxItem Content="{DynamicResource withoutConfirmationComboItemTranslate}" />
                 </ComboBox>
                 <ComboBox x:Name="cbGroups" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Style="{StaticResource fontBase}" SelectionChanged="CbGroups_SelectionChanged" Grid.Column="2" Grid.Row="1">
                     <ComboBoxItem Content="{DynamicResource allComboItemTranslate}" Selector.IsSelected="True"/>

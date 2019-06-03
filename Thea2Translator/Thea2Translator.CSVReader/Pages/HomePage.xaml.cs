@@ -32,6 +32,8 @@ namespace Thea2Translator.DesktopApp.Pages
             txtFolderDir.IsEnabled = false;
             txtFolderDir.Text = Settings.Default.FolderSrc;
 
+            LogicProvider.Language.SetLanguage(Settings.Default.Language);
+
             currentLangDictinary = LanguageHelper.GetLanguageDictinary(LogicProvider.Language.CurrentLanguage);
             this.Resources.MergedDictionaries.Add(currentLangDictinary);
         }
@@ -66,6 +68,9 @@ namespace Thea2Translator.DesktopApp.Pages
 
             currentLangDictinary = LanguageHelper.GetLanguageDictinary(LogicProvider.Language.CurrentLanguage);
             this.Resources.MergedDictionaries.Add(currentLangDictinary);
+
+            Settings.Default.Language = Logic.Languages.Languages.Polish;
+            Settings.Default.Save();
         }
 
         private void Image_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
@@ -75,6 +80,9 @@ namespace Thea2Translator.DesktopApp.Pages
 
             currentLangDictinary = LanguageHelper.GetLanguageDictinary(LogicProvider.Language.CurrentLanguage);
             this.Resources.MergedDictionaries.Add(currentLangDictinary);
+
+            Settings.Default.Language = Logic.Languages.Languages.English;
+            Settings.Default.Save();
         }
     }
 }

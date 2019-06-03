@@ -34,5 +34,17 @@ namespace Thea2Translator.DesktopApp.Properties {
                 this["FolderSrc"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Polish")]
+        public global::Thea2Translator.Logic.Languages.Languages Language {
+            get {
+                return ((global::Thea2Translator.Logic.Languages.Languages)(this["Language"]));
+            }
+            set {
+                this["Language"] = value;
+            }
+        }
     }
 }

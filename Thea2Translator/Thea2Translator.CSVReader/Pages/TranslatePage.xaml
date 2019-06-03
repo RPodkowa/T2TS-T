@@ -13,7 +13,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="11*"/>
             <RowDefinition Height="60*"/>
-            <RowDefinition Height="5*"/>
+            <RowDefinition Height="3*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="19*"/>
@@ -31,15 +31,19 @@
                 <RowDefinition/>
                 <RowDefinition Height="16*"/>
                 <RowDefinition/>
-                <RowDefinition Height="3*"/>
+                <RowDefinition Height="6*"/>
             </Grid.RowDefinitions>
             <Grid Grid.Row="4">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition/>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
-                <Button x:Name="btnSaveToFile" Style="{StaticResource styleButton}" FontWeight="Bold" Content="{DynamicResource saveFileButtonTranslate}" Click="BtnSaveToFile_Click" Grid.Column="0"/>
-                <Button x:Name="btnGoogle" Style="{StaticResource styleButton}" Content="{DynamicResource googleButtonTranslate}" Click="btnGoogle_Click" FontWeight="Bold" Grid.Column="1"/>
+                <Button x:Name="btnSaveToFile" Style="{StaticResource styleButton}" FontWeight="Bold" Click="BtnSaveToFile_Click" Grid.Column="0">
+                    <TextBlock TextWrapping="Wrap" TextAlignment="Center"><Run Text="{DynamicResource saveFileButtonTranslate}"/></TextBlock>
+                </Button>
+                <Button x:Name="btnGoogle" Style="{StaticResource styleButton}" Click="btnGoogle_Click" FontWeight="Bold" Grid.Column="1">
+                    <TextBlock TextWrapping="Wrap" TextAlignment="Center"><Run Text="{DynamicResource googleButtonTranslate}"/></TextBlock>
+                </Button>
             </Grid>
             <TextBox x:Name="txtOriginalText" TextWrapping="Wrap" IsEnabled="False" />
             <TextBox x:Name="txtTranslatedText" Grid.Row="2" TextWrapping="Wrap"/>

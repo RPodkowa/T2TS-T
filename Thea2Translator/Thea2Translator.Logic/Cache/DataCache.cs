@@ -283,7 +283,7 @@ namespace Thea2Translator.Logic
 
                 var elem = GetElemById(id);
                 if (elem == null) continue;
-                elem.SetTranslated(value);
+                elem.SetTranslated(value, false);
             }
         }
         #endregion

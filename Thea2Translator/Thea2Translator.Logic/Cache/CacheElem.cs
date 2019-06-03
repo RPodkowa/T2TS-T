@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Xml;
 
 namespace Thea2Translator.Logic
@@ -14,7 +13,7 @@ namespace Thea2Translator.Logic
         public bool IsCorrectedByHuman
         {
             get { return FlagHelper.IsSettedBit(Flag, 0); }
-            set { Flag = FlagHelper.GetSettedBitValue(Flag, 0, value); }
+            private set { Flag = FlagHelper.GetSettedBitValue(Flag, 0, value); }
         }
 
         public string Key { get; private set; }
@@ -45,6 +44,10 @@ namespace Thea2Translator.Logic
         /// </summary>
         public string OutputText { get; private set; }
 
+        private string ConfirmationTime;
+        private string ConfirmationUser;
+        private string ConfirmationGuid;
+
         public List<string> Groups;
         private List<string> Specials;
 
@@ -61,7 +64,7 @@ namespace Thea2Translator.Logic
             Id = id;
             Flag = 0;
             Key = key;
-            if (IsModulesElem) Key = "";            
+            if (IsModulesElem) Key = "";
             InputText = inputText;
             OriginalText = TextHelper.Normalize(InputText, out Specials);
             TranslatedText = OriginalText;
@@ -93,6 +96,10 @@ namespace Thea2Translator.Logic
             OutputText = GetNodeText(element, "Texts/Output");
             TranslatedText = TextHelper.Normalize(OutputText);
             OldTranslatedText = GetNodeText(element, "Texts/Old");
+
+            ConfirmationTime = GetNodeText(element, "Confirmation/Time");
+            ConfirmationGuid = GetNodeText(element, "Confirmation/GUID");
+            ConfirmationUser = GetNodeText(element, "Confirmation/User");
         }
 
         private string GetNodeText(XmlNode element, string xpath)
@@ -122,19 +129,23 @@ namespace Thea2Translator.Logic
             elementNode.Attributes.Append(GetAttribute(doc, "Key", Key));
             elementNode.Attributes.Append(GetAttribute(doc, "Flag", Flag.ToString()));
 
+            XmlNode confirmationNode = doc.CreateElement("Confirmation");
+            if (!string.IsNullOrEmpty(ConfirmationTime)) confirmationNode.AppendChild(GetNode(doc, "Time", ConfirmationTime));
+            if (!string.IsNullOrEmpty(ConfirmationGuid)) confirmationNode.AppendChild(GetNode(doc, "GUID", ConfirmationGuid));
+            if (!string.IsNullOrEmpty(ConfirmationUser)) confirmationNode.AppendChild(GetNode(doc, "User", ConfirmationUser));
+            elementNode.AppendChild(confirmationNode);
+
             XmlNode groupsNode = doc.CreateElement("Groups");
             foreach (var group in Groups)
             {
                 groupsNode.AppendChild(GetNode(doc, "Group", group));
             }
             elementNode.AppendChild(groupsNode);
-            
+
             XmlNode textsNode = doc.CreateElement("Texts");
             textsNode.AppendChild(GetNode(doc, "Input", InputText));
             textsNode.AppendChild(GetNode(doc, "Output", OutputText));
-            if (!string.IsNullOrEmpty(OldTranslatedText))
-                textsNode.AppendChild(GetNode(doc, "Old", OldTranslatedText));
-
+            if (!string.IsNullOrEmpty(OldTranslatedText)) textsNode.AppendChild(GetNode(doc, "Old", OldTranslatedText));
             elementNode.AppendChild(textsNode);
 
             return elementNode;
@@ -154,12 +165,20 @@ namespace Thea2Translator.Logic
             return attribute;
         }
 
-        public void SetTranslated(string text)
+        public void SetTranslated(string text, bool withConfirm)
         {
             TranslatedText = text;
             OutputText = TextHelper.UnNormalize(text, Specials);
             if (IsModulesElem) OutputText = TextHelper.ReplacePolishChars(OutputText);
             OldTranslatedText = "";
+
+            if (withConfirm)
+            {
+                IsCorrectedByHuman = true;
+                ConfirmationTime = DateTime.Now.ToString("MM/dd/yyyy HH:mm:ss");
+                ConfirmationUser = Environment.UserName;
+                ConfirmationGuid = LogicProvider.UserId;
+            }
         }
 
         public void TryUpdateValue(string text)

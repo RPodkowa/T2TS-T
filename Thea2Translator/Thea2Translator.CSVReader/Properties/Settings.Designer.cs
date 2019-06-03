@@ -41,7 +41,7 @@ namespace Thea2Translator.DesktopApp.Properties {
         {
             get
             {
-                return ((string)(this["UserId"])).ToUpper();
+                return ((string)(this["UserId"]))?.ToUpper();
             }
             set
             {

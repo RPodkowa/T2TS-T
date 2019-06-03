@@ -39,8 +39,14 @@ namespace Thea2Translator.DesktopApp.Pages
         private void BtnStartTranslate_Click(object sender, RoutedEventArgs e)
         {
             FileHelper.MainDir = txtFolderDir.Text;
+
+            if (string.IsNullOrEmpty(Settings.Default.UserId))
+                Settings.Default.UserId = Guid.NewGuid().ToString();
+                       
             Settings.Default.FolderSrc = txtFolderDir.Text;
             Settings.Default.Save();
+
+            LogicProvider.UserId = Settings.Default.UserId;
 
             this.NavigationService.Navigate(new ModuleSelectionPage());
         }

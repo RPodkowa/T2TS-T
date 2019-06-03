@@ -34,5 +34,19 @@ namespace Thea2Translator.DesktopApp.Properties {
                 this["FolderSrc"] = value;
             }
         }
+
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]        
+        public string UserId
+        {
+            get
+            {
+                return ((string)(this["UserId"])).ToUpper();
+            }
+            set
+            {
+                this["UserId"] = value;
+            }
+        }
     }
 }

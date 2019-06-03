@@ -115,9 +115,7 @@ namespace Thea2Translator.DesktopApp.Pages
 
         private void SaveToFile()
         {
-            selectedCacheElement.CacheElem.SetTranslated(txtTranslatedText.Text);
-            selectedCacheElement.CacheElem.IsCorrectedByHuman = true;
-
+            selectedCacheElement.CacheElem.SetTranslated(txtTranslatedText.Text, true);
             dataCache.SaveElems(true);
         }
 

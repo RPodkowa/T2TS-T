@@ -133,7 +133,8 @@ namespace Thea2Translator.Logic
             if (!string.IsNullOrEmpty(ConfirmationTime)) confirmationNode.AppendChild(GetNode(doc, "Time", ConfirmationTime));
             if (!string.IsNullOrEmpty(ConfirmationGuid)) confirmationNode.AppendChild(GetNode(doc, "GUID", ConfirmationGuid));
             if (!string.IsNullOrEmpty(ConfirmationUser)) confirmationNode.AppendChild(GetNode(doc, "User", ConfirmationUser));
-            elementNode.AppendChild(confirmationNode);
+            if (confirmationNode.ChildNodes != null && confirmationNode.ChildNodes.Count > 0)
+                elementNode.AppendChild(confirmationNode);
 
             XmlNode groupsNode = doc.CreateElement("Groups");
             foreach (var group in Groups)

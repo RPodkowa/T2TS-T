@@ -39,10 +39,10 @@
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
                 <Button x:Name="btnSaveToFile" Style="{StaticResource styleButton}" FontWeight="Bold" Click="BtnSaveToFile_Click" Grid.Column="0">
-                    <TextBlock TextWrapping="Wrap" TextAlignment="Center"><Run Text="{DynamicResource saveFileButtonTranslate}"/></TextBlock>
+                    <TextBlock TextWrapping="Wrap" TextAlignment="Center"><Run Text="{DynamicResource saveFileButtonTranslate}"/><LineBreak /><Run>(CTRL+S)</Run></TextBlock>
                 </Button>
                 <Button x:Name="btnGoogle" Style="{StaticResource styleButton}" Click="btnGoogle_Click" FontWeight="Bold" Grid.Column="1">
-                    <TextBlock TextWrapping="Wrap" TextAlignment="Center"><Run Text="{DynamicResource googleButtonTranslate}"/></TextBlock>
+                    <TextBlock TextWrapping="Wrap" TextAlignment="Center"><Run Text="{DynamicResource googleButtonTranslate}"/><LineBreak /><Run>(CTRL+G)</Run></TextBlock>
                 </Button>
             </Grid>
             <TextBox x:Name="txtOriginalText" TextWrapping="Wrap" IsEnabled="False" />

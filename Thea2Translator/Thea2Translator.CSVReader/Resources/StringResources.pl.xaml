@@ -22,8 +22,8 @@
     <system:String x:Key="groupLabelTranslate">Grupy</system:String>
 
     <system:String x:Key="backButtonTranslate">Powrót</system:String>
-    <system:String x:Key="saveFileButtonTranslate">Zapisz do pliku (CTRL+S)</system:String>
-    <system:String x:Key="googleButtonTranslate">Google (CTRL+G)</system:String>
+    <system:String x:Key="saveFileButtonTranslate">Zapisz do pliku</system:String>
+    <system:String x:Key="googleButtonTranslate">Google</system:String>
 
     <system:String x:Key="allComboItemTranslate">Wszystkie</system:String>
     <system:String x:Key="withoutTranslationComboItemTranslate">Nieprzetłumaczone</system:String>

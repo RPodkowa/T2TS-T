@@ -43,8 +43,8 @@
         <system:String x:Key="groupLabelTranslate">Group</system:String>
 
         <system:String x:Key="backButtonTranslate">Back</system:String>
-        <system:String x:Key="saveFileButtonTranslate">Save to file (CTRL+S)</system:String>
-        <system:String x:Key="googleButtonTranslate">Google (CTRL+G)</system:String>
+        <system:String x:Key="saveFileButtonTranslate">Save to file</system:String>
+        <system:String x:Key="googleButtonTranslate">Google</system:String>
 
         <system:String x:Key="allComboItemTranslate">All</system:String>
         <system:String x:Key="withoutTranslationComboItemTranslate">Without translation</system:String>

@@ -11,6 +11,7 @@ namespace Thea2Translator.Logic
         {
             ReadFromFile();
             UpdateByCache(dataCache);
+            VocabularyElems=((List<VocabularyElem>)VocabularyElems).OrderByDescending(x => x.UsageCount).ToList();
         }
 
         private void ReadFromFile()

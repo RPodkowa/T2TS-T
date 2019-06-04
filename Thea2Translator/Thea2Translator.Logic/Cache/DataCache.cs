@@ -126,6 +126,8 @@ namespace Thea2Translator.Logic
                     Groups.Add(group);
                 }
             }
+
+            ((List<string>)Groups).Sort();
         }
 
         private void ReloadVocabulary()

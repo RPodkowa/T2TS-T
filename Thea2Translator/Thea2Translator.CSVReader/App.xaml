@@ -13,14 +13,18 @@
             <!--<Setter Property="FontFamily" Value="Palatino Linotype" />-->
         </Style>
 
-        <Style x:Key="titleLabel" TargetType="Label">
-            <Setter Property="FontWeight" Value="Bold" />
+        <Style x:Key="fontCenter" TargetType="Control" BasedOn="{StaticResource fontBase}">
             <Setter Property="HorizontalContentAlignment" Value="Center" />
             <Setter Property="VerticalContentAlignment" Value="Center" />
+        </Style>
+        
+        <Style x:Key="labelCenterTitle" TargetType="Label" BasedOn="{StaticResource fontCenter}">
+            <Setter Property="FontWeight" Value="Bold" />
         </Style>
 
         <Style x:Key="styleButton" TargetType="Button" BasedOn="{StaticResource fontBase}">
             <Setter Property="FontSize" Value="17" />
+            <Setter Property="FontWeight" Value="Bold" />
         </Style>
 
         <system:String x:Key="startButtonHome">Start</system:String>
@@ -41,12 +45,24 @@
 
         <system:String x:Key="filterLabelTranslate">Filter</system:String>
         <system:String x:Key="groupLabelTranslate">Group</system:String>
+        <system:String x:Key="rangeLabelTranslate">Range</system:String>
 
         <system:String x:Key="backButtonTranslate">Back</system:String>
+        <system:String x:Key="dictinaryButtonTranslate">Dictinary</system:String>
         <system:String x:Key="saveFileButtonTranslate">Save to file</system:String>
         <system:String x:Key="googleButtonTranslate">Google</system:String>
 
         <system:String x:Key="allComboItemTranslate">All</system:String>
         <system:String x:Key="withoutTranslationComboItemTranslate">Without translation</system:String>
+        <system:String x:Key="withoutConfirmationComboItemTranslate">Without confirmation</system:String>
+
+        <system:String x:Key="titleLabelDictinary">Dictinary</system:String>
+        <system:String x:Key="usageCountLabelDictinary">Usage count</system:String>
+        <system:String x:Key="isActiveLabelDictinary">Is active</system:String>
+        <system:String x:Key="originalWordLabelDictinary">Original word</system:String>
+        <system:String x:Key="translationLabelDictinary">Translation</system:String>
+        
+        <system:String x:Key="saveChangesButtonDictinary">Save changes</system:String>
+
     </Application.Resources>
 </Application>

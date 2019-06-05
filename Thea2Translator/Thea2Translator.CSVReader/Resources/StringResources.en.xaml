@@ -1,6 +1,5 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                    xmlns:local="clr-namespace:Thea2Translator.DesktopApp.Resources"
                     xmlns:system="clr-namespace:System;assembly=mscorlib">
     <system:String x:Key="startButtonHome">Start</system:String>
     <system:String x:Key="chooseFolderLabelHomePage">Choose folder with data:</system:String>
@@ -20,12 +19,22 @@
 
     <system:String x:Key="filterLabelTranslate">Filter</system:String>
     <system:String x:Key="groupLabelTranslate">Group</system:String>
-    
+    <system:String x:Key="rangeLabelTranslate">Range</system:String>
+
     <system:String x:Key="backButtonTranslate">Back</system:String>
+    <system:String x:Key="dictinaryButtonTranslate">Dictinary</system:String>
     <system:String x:Key="saveFileButtonTranslate">Save to file</system:String>
     <system:String x:Key="googleButtonTranslate">Google</system:String>
 
     <system:String x:Key="allComboItemTranslate">All</system:String>
     <system:String x:Key="withoutTranslationComboItemTranslate">Without translation</system:String>
 	<system:String x:Key="withoutConfirmationComboItemTranslate">Without confirmation</system:String>
+
+    <system:String x:Key="titleLabelDictinary">Dictinary</system:String>
+    <system:String x:Key="usageCountLabelDictinary">Usage count</system:String>
+    <system:String x:Key="isActiveLabelDictinary">Is active</system:String>
+    <system:String x:Key="originalWordLabelDictinary">Original word</system:String>
+    <system:String x:Key="translationLabelDictinary">Translation</system:String>
+
+    <system:String x:Key="saveChangesButtonDictinary">Save changes</system:String>
 </ResourceDictionary>

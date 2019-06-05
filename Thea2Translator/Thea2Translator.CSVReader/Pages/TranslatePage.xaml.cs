@@ -29,11 +29,15 @@ namespace Thea2Translator.DesktopApp.Pages
         public static RoutedCommand NextItemCommand = new RoutedCommand();
 
         private static readonly Regex _regex = new Regex("[^0-9.-]+");
-        
+
         private string oldStartRange = "";
         private string oldEndRange = "";
 
-        IDataCache dataCache;
+        private DictinaryWindow dictinaryWindow;
+
+        private Vocabulary vocabulary;
+        private IDataCache dataCache;
+
 
         IList<string> groups;
         IList<CacheElemViewModel> allElements;
@@ -45,13 +49,15 @@ namespace Thea2Translator.DesktopApp.Pages
             InitializeComponent();
 
             dataCache = null;
-            switch(fileType)
+            switch (fileType)
             {
                 case FilesType.DataBase: dataCache = LogicProvider.DataBase; break;
                 case FilesType.Modules: dataCache = LogicProvider.Modules; break;
                 case FilesType.Names: dataCache = LogicProvider.Names; break;
-            }           
+            }
 
+            vocabulary = LogicProvider.Vocabulary;
+            vocabulary.Reload(dataCache);
             cbItemsToTranslateFilter.SelectedIndex = 0;
             btnGoogle.IsEnabled = false;
 
@@ -73,15 +79,18 @@ namespace Thea2Translator.DesktopApp.Pages
             GoogleCommand.InputGestures.Add(new KeyGesture(Key.G, ModifierKeys.Control));
             NextItemCommand.InputGestures.Add(new KeyGesture(Key.N, ModifierKeys.Control));
 
-            CommandBindings.Add(new CommandBinding(SaveCommand, (d, e) => {
+            CommandBindings.Add(new CommandBinding(SaveCommand, (d, e) =>
+            {
                 SaveToFile();
             }));
 
-            CommandBindings.Add(new CommandBinding(GoogleCommand, (d, e) => {
+            CommandBindings.Add(new CommandBinding(GoogleCommand, (d, e) =>
+            {
                 OpenGoogleTranslate();
             }));
 
-            CommandBindings.Add(new CommandBinding(NextItemCommand, (d, e) => {
+            CommandBindings.Add(new CommandBinding(NextItemCommand, (d, e) =>
+            {
                 ChooseNextItem();
             }));
         }
@@ -105,7 +114,15 @@ namespace Thea2Translator.DesktopApp.Pages
             txtOriginalText.Text = selectedCacheElement?.CacheElem?.OriginalText;
             txtTranslatedText.Text = selectedCacheElement?.CacheElem?.TranslatedText;
 
-            btnGoogle.IsEnabled = selectedCacheElement == null ? false : true; ;
+            btnGoogle.IsEnabled = selectedCacheElement == null ? false : true;
+
+            if (selectedCacheElement?.CacheElem?.OriginalText != null)
+            {
+                var vocabularyElems = vocabulary.GetElemsForText(selectedCacheElement?.CacheElem?.OriginalText);
+
+                lbDictinaryItems.ItemsSource = vocabularyElems;
+            }
+
         }
 
         private void BtnSaveToFile_Click(object sender, RoutedEventArgs e)
@@ -128,7 +145,7 @@ namespace Thea2Translator.DesktopApp.Pages
         {
             if (cbItemsToTranslateFilter != null && cbGroups != null && txtStartRange != null && txtEndRange != null)
             {
-                var start = (txtStartRange.Text != "" ? 
+                var start = (txtStartRange.Text != "" ?
                     int.Parse(txtStartRange.Text) : 1);
                 start--;
 
@@ -137,8 +154,8 @@ namespace Thea2Translator.DesktopApp.Pages
 
                 switch (cbItemsToTranslateFilter.SelectedIndex)
                 {
-                    case 0: filtredElements = allElements .ToList(); break;
-                    case 1: filtredElements = allElements.Where(c => c.CacheElem.ToTranslate) .ToList(); break;
+                    case 0: filtredElements = allElements.ToList(); break;
+                    case 1: filtredElements = allElements.Where(c => c.CacheElem.ToTranslate).ToList(); break;
                     case 2: filtredElements = allElements.Where(c => c.CacheElem.ToConfirm).ToList(); break;
                 }
 
@@ -233,15 +250,27 @@ namespace Thea2Translator.DesktopApp.Pages
                 var currentValue = int.Parse(txtCurrent.Text);
                 var secondValue = int.Parse(txtSecond.Text);
 
-                if(isGreater && currentValue < secondValue)
+                if (isGreater && currentValue < secondValue)
                 {
                     txtSecond.Text = (currentValue - 1).ToString();
                 }
-                else if(!isGreater && currentValue > secondValue)
+                else if (!isGreater && currentValue > secondValue)
                 {
                     txtSecond.Text = (currentValue + 1).ToString();
                 }
             }
-        }     
+        }
+
+        private void LbDictinary_SelectionChange(object sender, SelectionChangedEventArgs e)
+        {
+            if (lbDictinaryItems.SelectedItem != null)
+            {
+                if (dictinaryWindow != null)
+                    dictinaryWindow.Close();
+
+                dictinaryWindow = new DictinaryWindow(vocabulary, lbDictinaryItems.SelectedItem as VocabularyElem);
+                dictinaryWindow.Show();
+            }
+        }
     }
 }

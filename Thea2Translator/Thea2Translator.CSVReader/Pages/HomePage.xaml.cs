@@ -34,8 +34,7 @@ namespace Thea2Translator.DesktopApp.Pages
 
             LogicProvider.Language.SetLanguage(Settings.Default.Language);
 
-            currentLangDictinary = LanguageHelper.GetLanguageDictinary(LogicProvider.Language.CurrentLanguage);
-            this.Resources.MergedDictionaries.Add(currentLangDictinary);
+            this.SetLanguageDictinary();
         }
 
         private void BtnStartTranslate_Click(object sender, RoutedEventArgs e)

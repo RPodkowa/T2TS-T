@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls;
 using Thea2Translator.Logic;
+using System.Windows;
 
 namespace Thea2Translator.DesktopApp.Helpers
 {
@@ -14,6 +15,12 @@ namespace Thea2Translator.DesktopApp.Helpers
         {
             var currentLangDictinary = LanguageHelper.GetLanguageDictinary(LogicProvider.Language.CurrentLanguage);
             page.Resources.MergedDictionaries.Add(currentLangDictinary);
+        }
+
+        public static void SetLanguageDictinary(this Window window)
+        {
+            var currentLangDictinary = LanguageHelper.GetLanguageDictinary(LogicProvider.Language.CurrentLanguage);
+            window.Resources.MergedDictionaries.Add(currentLangDictinary);
         }
     }
 }

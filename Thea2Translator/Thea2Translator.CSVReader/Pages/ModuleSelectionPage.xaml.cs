@@ -175,6 +175,7 @@ namespace Thea2Translator.DesktopApp.Pages
         {
             btnChooseDataBase.IsEnabled = isEnable;
             btnChooseModulus.IsEnabled = isEnable;
+            btnChooseNames.IsEnabled = isEnable;
 
             btnImportFromSteam.IsEnabled = isEnable;
             btnImportFromMachineTranslate.IsEnabled = isEnable;

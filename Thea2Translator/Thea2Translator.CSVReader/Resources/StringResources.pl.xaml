@@ -20,6 +20,7 @@
 
     <system:String x:Key="filterLabelTranslate">Filtr</system:String>
     <system:String x:Key="groupLabelTranslate">Grupy</system:String>
+    <system:String x:Key="rangeLabelTranslate">Zakres</system:String>
 
     <system:String x:Key="backButtonTranslate">Powrót</system:String>
     <system:String x:Key="saveFileButtonTranslate">Zapisz do pliku</system:String>
@@ -28,4 +29,12 @@
     <system:String x:Key="allComboItemTranslate">Wszystkie</system:String>
     <system:String x:Key="withoutTranslationComboItemTranslate">Nieprzetłumaczone</system:String>
 	<system:String x:Key="withoutConfirmationComboItemTranslate">Niepotwierdzone</system:String>
+
+    <system:String x:Key="titleLabelDictinary">Słownik</system:String>
+    <system:String x:Key="usageCountLabelDictinary">Liczba użyć</system:String>
+    <system:String x:Key="isActiveLabelDictinary">Czy aktywne</system:String>
+    <system:String x:Key="originalWordLabelDictinary">Oryginalne słowo</system:String>
+    <system:String x:Key="translationLabelDictinary">Tłumaczenie</system:String>
+
+    <system:String x:Key="saveChangesButtonDictinary">Zapisz zmiany</system:String>
 </ResourceDictionary>

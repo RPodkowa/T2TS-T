@@ -133,9 +133,16 @@
     </Compile>
     <Compile Include="Helpers\ExtensionsMethods.cs" />
     <Compile Include="Helpers\LanguageHelper.cs" />
+    <Compile Include="Pages\DictinaryWindow.xaml.cs">
+      <DependentUpon>DictinaryWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Setting.cs" />
     <Compile Include="ViewModels\CacheElemViewModel.cs" />
     <Page Include="MainWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\DictinaryWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

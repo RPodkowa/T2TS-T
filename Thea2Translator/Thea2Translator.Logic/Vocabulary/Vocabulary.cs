@@ -11,7 +11,7 @@ namespace Thea2Translator.Logic
         {
             ReadFromFile();
             UpdateByCache(dataCache);
-            VocabularyElems=((List<VocabularyElem>)VocabularyElems).OrderByDescending(x => x.UsageCount).ToList();
+            VocabularyElems = ((List<VocabularyElem>)VocabularyElems).OrderByDescending(x => x.UsageCount).ToList();
         }
 
         private void ReadFromFile()
@@ -44,6 +44,11 @@ namespace Thea2Translator.Logic
             if (VocabularyElems == null)
                 VocabularyElems = new List<VocabularyElem>();
 
+            foreach (var elem in VocabularyElems)
+            {
+                elem.ResetUsages();
+            }
+
             foreach (var cacheElem in dataCache.CacheElems)
             {
                 var txt = cacheElem.OriginalText;
@@ -65,7 +70,7 @@ namespace Thea2Translator.Logic
         {
             text = TextHelper.RemoveUnnecessaryForVocabulary(text).ToLower();
 
-            var elems = VocabularyElems.Where(x => x.OccursInPreparedText(text)).OrderByDescending(x => x.UsageCount);
+            var elems = VocabularyElems.Where(x => x.IsActive).Where(x => x.OccursInPreparedText(text)).OrderByDescending(x => x.UsageCount);
 
             return elems.ToList();
         }
@@ -79,7 +84,8 @@ namespace Thea2Translator.Logic
         {
             foreach (var elem in VocabularyElems)
             {
-                if (elem.OriginalWord == word) return elem;
+                if (elem.OriginalWord == word)
+                    return elem;
             }
 
             if (!withCreate)

@@ -73,27 +73,14 @@ namespace Thea2Translator.Logic
             return MainDir + @"\" + dir;
         }
 
-        public static void SaveElemsToFile(IEnumerable<CacheElem> elems, string path)
+        public static void SaveElemsToFile(IEnumerable<VocabularyElem> elems, string path)
         {
             CreatedPathIfNotExists(path);
             DeleteFileIfExists(path);
             TextWriter tw = new StreamWriter(path, true);
             foreach (var elem in elems)
             {
-                tw.WriteLine(elem.ToString());
-            }
-
-            tw.Close();
-        }
-
-        public static void SaveElemsToFile(IEnumerable<object> elems, string path)
-        {
-            CreatedPathIfNotExists(path);
-            DeleteFileIfExists(path);
-            TextWriter tw = new StreamWriter(path, true);
-            foreach (var elem in elems)
-            {
-                tw.WriteLine(elem.ToString());
+                tw.WriteLine(elem.GetStringToSave());
             }
 
             tw.Close();

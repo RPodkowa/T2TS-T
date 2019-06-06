@@ -136,6 +136,11 @@ namespace Thea2Translator.Logic
             Vocabulary.Reload(this);
         }
 
+        public void UpdateVocabulary(Vocabulary vocabulary)
+        {
+            Vocabulary = vocabulary;
+        }
+
         public void SaveElems(bool withVocabulary = false)
         {
             UpdateStatus($"SaveElemsToFile '{FullPath}'");

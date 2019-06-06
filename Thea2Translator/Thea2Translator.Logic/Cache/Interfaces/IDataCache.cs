@@ -14,6 +14,7 @@ namespace Thea2Translator.Logic
         IList<string> Groups { get; }
         Vocabulary Vocabulary { get; }
 
+        void UpdateVocabulary(Vocabulary vocabulary);
         void ReloadElems(bool withGroups = false, bool withVocabulary = false);
         void SaveElems(bool withVocabulary = false);
         void MakeStep(AlgorithmStep step);

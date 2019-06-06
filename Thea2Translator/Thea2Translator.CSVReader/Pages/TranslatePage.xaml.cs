@@ -27,7 +27,7 @@ namespace Thea2Translator.DesktopApp.Pages
         public static RoutedCommand SaveCommand = new RoutedCommand();
         public static RoutedCommand GoogleCommand = new RoutedCommand();
         public static RoutedCommand NextItemCommand = new RoutedCommand();
-
+        
         private static readonly Regex _regex = new Regex("[^0-9.-]+");
 
         private string oldStartRange = "";
@@ -56,12 +56,13 @@ namespace Thea2Translator.DesktopApp.Pages
                 case FilesType.Names: dataCache = LogicProvider.Names; break;
             }
 
-            vocabulary = LogicProvider.Vocabulary;
-            vocabulary.Reload(dataCache);
             cbItemsToTranslateFilter.SelectedIndex = 0;
             btnGoogle.IsEnabled = false;
 
             dataCache.ReloadElems(true, true);
+            vocabulary = LogicProvider.Vocabulary;
+            vocabulary = dataCache.Vocabulary;
+
             allElements = dataCache.CacheElems.Select(c => new CacheElemViewModel(c)).ToList();
             filtredElements = allElements;
             groups = dataCache.Groups;
@@ -116,13 +117,7 @@ namespace Thea2Translator.DesktopApp.Pages
 
             btnGoogle.IsEnabled = selectedCacheElement == null ? false : true;
 
-            if (selectedCacheElement?.CacheElem?.OriginalText != null)
-            {
-                var vocabularyElems = vocabulary.GetElemsForText(selectedCacheElement?.CacheElem?.OriginalText);
-
-                lbDictinaryItems.ItemsSource = vocabularyElems;
-            }
-
+            RefreshVocabularyList();
         }
 
         private void BtnSaveToFile_Click(object sender, RoutedEventArgs e)
@@ -132,7 +127,12 @@ namespace Thea2Translator.DesktopApp.Pages
 
         private void SaveToFile()
         {
-            selectedCacheElement.CacheElem.SetTranslated(txtTranslatedText.Text, true);
+            if (txtTranslatedText.Text != null && selectedCacheElement?.CacheElem != null)
+            {
+                selectedCacheElement.CacheElem.SetTranslated(txtTranslatedText.Text, true);
+            }
+
+            dataCache.UpdateVocabulary(vocabulary);
             dataCache.SaveElems(true);
         }
 
@@ -263,14 +263,62 @@ namespace Thea2Translator.DesktopApp.Pages
 
         private void LbDictinary_SelectionChange(object sender, SelectionChangedEventArgs e)
         {
-            if (lbDictinaryItems.SelectedItem != null)
-            {
-                if (dictinaryWindow != null)
-                    dictinaryWindow.Close();
+        }
 
-                dictinaryWindow = new DictinaryWindow(vocabulary, lbDictinaryItems.SelectedItem as VocabularyElem);
-                dictinaryWindow.Show();
+        private void lbDictinaryItems_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.D && Keyboard.Modifiers == ModifierKeys.Control)
+            {
+                DeactivationVocabularyItem();
             }
+
+            if (e.Key == Key.Enter)
+            {
+                ShowSelectedVocabularyDialog();
+            }
+        }
+
+        private void DeactivationVocabularyItem()
+        {
+            if (lbDictinaryItems.SelectedItem == null)
+                return;
+
+            var vocabularyElem = lbDictinaryItems.SelectedItem as VocabularyElem;
+            if (vocabularyElem == null)
+                return;
+
+            vocabularyElem.IsActive = false;
+            RefreshVocabularyList();
+        }
+
+        private void RefreshVocabularyList()
+        {
+            if (selectedCacheElement?.CacheElem?.OriginalText == null)
+                return;
+
+            var vocabularyElems = vocabulary.GetElemsForText(selectedCacheElement?.CacheElem?.OriginalText);
+
+            var selectedIndex = lbDictinaryItems.SelectedIndex;
+            lbDictinaryItems.ItemsSource = vocabularyElems;
+            lbDictinaryItems.SelectedIndex = Math.Min(selectedIndex, lbDictinaryItems.Items.Count - 1);
+        }
+
+        private void lbDictinaryItems_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            ShowSelectedVocabularyDialog();
+        }
+
+        private void ShowSelectedVocabularyDialog()
+        {
+            if (lbDictinaryItems.SelectedItem == null)
+                return;
+            
+            if (dictinaryWindow != null)
+                dictinaryWindow.Close();
+
+            dictinaryWindow = new DictinaryWindow(vocabulary, lbDictinaryItems.SelectedItem as VocabularyElem);
+            dictinaryWindow.ShowDialog();
+            RefreshVocabularyList();
         }
     }
 }

@@ -49,7 +49,7 @@
             </Grid>
             <TextBox x:Name="txtOriginalText" TextWrapping="Wrap" IsEnabled="False" />
             <TextBox x:Name="txtTranslatedText" Grid.Row="4" TextWrapping="Wrap"/>
-            <ListBox x:Name="lbDictinaryItems" Grid.Row="2" SelectionChanged="LbDictinary_SelectionChange" />
+            <ListBox x:Name="lbDictinaryItems" Grid.Row="2" SelectionChanged="LbDictinary_SelectionChange" MouseDoubleClick="lbDictinaryItems_MouseDoubleClick" KeyDown="lbDictinaryItems_KeyDown" />
 
         </Grid>
         <Grid Grid.Column="1" Grid.Row="1">

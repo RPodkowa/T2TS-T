@@ -39,6 +39,11 @@ namespace Thea2Translator.Logic
             Translation = translation;
         }
 
+        public void ResetUsages()
+        {
+            UsageCount = 0;
+        }
+
         public void AddUsage(int usages = 1)
         {
             UsageCount += usages;
@@ -55,7 +60,7 @@ namespace Thea2Translator.Logic
             return text.Contains(word);
         }
 
-        public override string ToString()
+        public string GetStringToSave()
         {
             var arr = new List<string>();
             arr.Add(UsageCount.ToString());
@@ -63,6 +68,13 @@ namespace Thea2Translator.Logic
             arr.Add(OriginalWord);
             arr.Add(Translation);
             string text = string.Join(";", arr.ToArray());
+            return text;
+        }
+
+        public override string ToString()
+        {
+            string text = $"({UsageCount}) {OriginalWord}";
+            if (!string.IsNullOrEmpty(Translation)) text = $"{text} - {Translation}";
             return text;
         }
     }

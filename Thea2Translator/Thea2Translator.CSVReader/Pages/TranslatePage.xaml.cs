@@ -139,6 +139,8 @@ namespace Thea2Translator.DesktopApp.Pages
 
             dataCache.UpdateVocabulary(vocabulary);
             dataCache.SaveElems(true);
+
+            ChooseNextItem();
         }
 
         private void CbItemsToTranslateFilter_SelectionChanged(object sender, SelectionChangedEventArgs e)

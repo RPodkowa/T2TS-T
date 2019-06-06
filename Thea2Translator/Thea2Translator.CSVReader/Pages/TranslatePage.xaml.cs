@@ -130,6 +130,11 @@ namespace Thea2Translator.DesktopApp.Pages
             if (txtTranslatedText.Text != null && selectedCacheElement?.CacheElem != null)
             {
                 selectedCacheElement.CacheElem.SetTranslated(txtTranslatedText.Text, true);
+
+                var index = lbItemsToTranslate.SelectedIndex;
+
+                FilterItems();
+                lbItemsToTranslate.SelectedIndex = index;
             }
 
             dataCache.UpdateVocabulary(vocabulary);

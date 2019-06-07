@@ -40,12 +40,12 @@
             </Grid.RowDefinitions>
 
             <TextBlock x:Name="barTextBlock" HorizontalAlignment="Left" Margin="83,312.667,-63,-317" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="635" TextAlignment="Center" Grid.Row="2"/>
-            <Label Content="{DynamicResource chooseActionLabelModuleSelection}" Style="{StaticResource fontBase}" x:Name="txtCurrentModuleInProcess" FontSize="18" FontWeight="Bold" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Grid.Row="1"/>
+            <Label Content="{DynamicResource chooseActionLabelModuleSelection}" FontSize="{DynamicResource bigFontSize}" Style="{StaticResource fontBase}" x:Name="txtCurrentModuleInProcess" FontWeight="Bold" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Grid.Row="1"/>
             <ProgressBar x:Name="barStatus" Grid.Row="2"/>
         </Grid>
-        <Button x:Name="btnChooseDataBase" FontWeight="Bold" Content="DataBase" Style="{StaticResource styleButton}" Grid.Column="2" Grid.Row="3" />
-        <Button x:Name="btnChooseModulus" FontWeight="Bold" Content="Modules" Style="{StaticResource styleButton}" Grid.Column="4" Grid.Row="3" />
-        <Label Content="{DynamicResource selectModuleLabelModuleSelection}" Style="{StaticResource fontBase}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="20" FontWeight="Bold" Grid.Column="2" Grid.Row="1" Grid.ColumnSpan="5"/>
+        <Button x:Name="btnChooseDataBase" FontWeight="Bold" FontSize="{DynamicResource bigFontSize}" Content="DataBase" Style="{StaticResource styleButton}" Grid.Column="2" Grid.Row="3" />
+        <Button x:Name="btnChooseModulus" FontWeight="Bold" FontSize="{DynamicResource bigFontSize}" Content="Modules" Style="{StaticResource styleButton}" Grid.Column="4" Grid.Row="3" />
+        <Label Content="{DynamicResource selectModuleLabelModuleSelection}" Style="{StaticResource fontBase}" FontSize="{DynamicResource veryBigFontSize}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontWeight="Bold" Grid.Column="2" Grid.Row="1" Grid.ColumnSpan="5"/>
         <Grid Grid.Column="1" Grid.Row="5" Grid.ColumnSpan="7">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="5*"/>
@@ -58,23 +58,23 @@
                 <ColumnDefinition/>
                 <ColumnDefinition Width="5*"/>
             </Grid.ColumnDefinitions>
-            <Button x:Name="btnImportFromSteam" Style="{StaticResource styleButton}" Click="BtnImportFromSteam_Click">
+            <Button x:Name="btnImportFromSteam" Style="{StaticResource styleButton}" FontSize="{DynamicResource mediumFontSize}" Click="BtnImportFromSteam_Click">
                 <TextBlock TextWrapping="Wrap" TextAlignment="Center"><Run Text="{DynamicResource importSteamButtonModuleSelection}"/></TextBlock>
             </Button>
-            <Button x:Name="btnPrepareToMachineTranslate" Style="{StaticResource styleButton}" Grid.Column="2" Click="BtnPrepareToMachineTranslate_Click">
+            <Button x:Name="btnPrepareToMachineTranslate" FontSize="{DynamicResource mediumFontSize}" Style="{StaticResource styleButton}" Grid.Column="2" Click="BtnPrepareToMachineTranslate_Click">
                 <TextBlock TextWrapping="Wrap" TextAlignment="Center"><Run Text="{DynamicResource prepareMachineButtonModuleSelection}"/></TextBlock>
             </Button>
-            <Button x:Name="btnImportFromMachineTranslate" Style="{StaticResource styleButton}" Grid.Column="4" Click="BtnImportFromMachineTranslate_Click">
+            <Button x:Name="btnImportFromMachineTranslate" FontSize="{DynamicResource mediumFontSize}" Style="{StaticResource styleButton}" Grid.Column="4" Click="BtnImportFromMachineTranslate_Click">
                 <TextBlock TextWrapping="Wrap" TextAlignment="Center"><Run Text="{DynamicResource importMachineButtonModuleSelection}"/></TextBlock>
             </Button>
-            <Button x:Name="btnTranslate" Style="{StaticResource styleButton}" Grid.Column="6" Click="BtnTranslate_Click">
+            <Button x:Name="btnTranslate" Style="{StaticResource styleButton}" FontSize="{DynamicResource mediumFontSize}" Grid.Column="6" Click="BtnTranslate_Click">
                 <TextBlock TextWrapping="Wrap" TextAlignment="Center"><Run Text="{DynamicResource translateButtonModuleSelection}"/></TextBlock>
             </Button>
-            <Button x:Name="btnExportToSteam" Style="{StaticResource styleButton}" Grid.Column="8" Click="BtnExportToSteam_Click">
+            <Button x:Name="btnExportToSteam" Style="{StaticResource styleButton}" FontSize="{DynamicResource mediumFontSize}" Grid.Column="8" Click="BtnExportToSteam_Click">
                 <TextBlock TextWrapping="Wrap" TextAlignment="Center"><Run Text="{DynamicResource exportSteamButtonModuleSelection}"/></TextBlock>
             </Button>
         </Grid>
-        <Button x:Name="btnChooseNames" FontWeight="Bold" Content="Names" Style="{StaticResource styleButton}" Grid.Column="6" Grid.Row="3"/>
+        <Button x:Name="btnChooseNames" FontWeight="Bold" FontSize="{DynamicResource bigFontSize}" Content="Names" Style="{StaticResource styleButton}" Grid.Column="6" Grid.Row="3"/>
 
     </Grid>
 </Page>

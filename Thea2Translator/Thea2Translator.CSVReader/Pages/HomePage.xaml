@@ -26,14 +26,14 @@
         </Grid.RowDefinitions>
         <Button x:Name="btnChooseFolder" Grid.Column="3" Grid.Row="2" Width="30" Height="20" Content="..." Click="BtnChooseFolder_Click"/>
         <TextBox x:Name="txtFolderDir" Grid.Row="2" TextWrapping="Wrap" Grid.Column="2" Height="20"/>
-        <Label Content="Dir:" Style="{StaticResource fontBase}" Grid.Row="2" Grid.Column="1" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" />
+        <Label Content="Dir:" Style="{StaticResource fontBase}" FontSize="{DynamicResource mediumFontSize}" Grid.Row="2" Grid.Column="1" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" />
 
         <Border Background="#FF18BD54" CornerRadius="40" Grid.Column="2" Grid.Row="4" BorderBrush="#FF818181" BorderThickness="3">
-            <Button x:Name="btnStartTranslate" FontWeight="Bold" Content="{DynamicResource startButtonHome}" Click="BtnStartTranslate_Click" BorderThickness="0" FontSize="20"  
+            <Button x:Name="btnStartTranslate" FontWeight="Bold" FontSize="{DynamicResource bigFontSize}" Content="{DynamicResource startButtonHome}" Click="BtnStartTranslate_Click" BorderThickness="0" 
             Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" FontFamily="Palatino Linotype" Margin="-3" Width="134" Height="84"/>
         </Border>
 
-        <Label Content="{DynamicResource chooseFolderLabelHomePage}" Style="{StaticResource fontBase}" FontWeight="Bold" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="20" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="3"/>
+        <Label Content="{DynamicResource chooseFolderLabelHomePage}" FontSize="{DynamicResource veryBigFontSize}" Style="{StaticResource labelCenterTitle}" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="3"/>
         <Grid Grid.Column="4">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="8*"/>

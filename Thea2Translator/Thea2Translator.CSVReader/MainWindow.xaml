@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Thea2Translator.DesktopApp"
         mc:Ignorable="d"
-        Title="Thea 2 Translator" Height="650" Width="1100">
+        Title="Thea 2 Translator" Height="650" Width="1100" SizeChanged="Window_SizeChanged">
     <DockPanel>
         <Frame x:Name="navigationFrame" NavigationUIVisibility="Hidden" />
     </DockPanel>

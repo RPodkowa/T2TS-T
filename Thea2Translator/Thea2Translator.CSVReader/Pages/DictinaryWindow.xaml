@@ -21,7 +21,7 @@
             <RowDefinition Height="3*"/>
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
-        <Label x:Name="lblTitle" Content="{DynamicResource titleLabelDictinary}" Style="{StaticResource labelCenterTitle}" Grid.Row="1" FontSize="20" Grid.ColumnSpan="3" />
+        <Label x:Name="lblTitle" Content="{DynamicResource titleLabelDictinary}" FontSize="{DynamicResource bigFontSize}" Style="{StaticResource labelCenterTitle}" Grid.Row="1" Grid.ColumnSpan="3" />
         <Grid Grid.Column="1" Grid.Row="2" Grid.RowSpan="2">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="75*"/>
@@ -40,12 +40,12 @@
                 <RowDefinition Height="5*"/>
                 <RowDefinition Height="1*"/>
             </Grid.RowDefinitions>
-            <Label Style="{StaticResource labelCenterTitle}" Content="{DynamicResource usageCountLabelDictinary}" Grid.Column="1" />
-            <Label Style="{StaticResource labelCenterTitle}" Content="{DynamicResource isActiveLabelDictinary}" Grid.Column="1" Grid.Row="2"/>
-            <Label Style="{StaticResource labelCenterTitle}" Content="{DynamicResource originalWordLabelDictinary}" Grid.Column="1" Grid.Row="4"/>
-            <Label Style="{StaticResource labelCenterTitle}" Content="{DynamicResource translationLabelDictinary}" Grid.Column="1" Grid.Row="6"/>
-            <Label x:Name="lblUsageCount" Style="{StaticResource fontCenter}" Content="COUNT" Grid.Column="3"/>
-            <Label x:Name="lblOriginalWord"  Style="{StaticResource fontCenter}" Content="TEXT" Grid.Column="3" Grid.Row="4"/>
+            <Label Style="{StaticResource labelCenterTitle}" FontSize="{DynamicResource smallFontSize}" Content="{DynamicResource usageCountLabelDictinary}" Grid.Column="1" />
+            <Label Style="{StaticResource labelCenterTitle}" FontSize="{DynamicResource smallFontSize}" Content="{DynamicResource isActiveLabelDictinary}" Grid.Column="1" Grid.Row="2"/>
+            <Label Style="{StaticResource labelCenterTitle}" FontSize="{DynamicResource smallFontSize}" Content="{DynamicResource originalWordLabelDictinary}" Grid.Column="1" Grid.Row="4"/>
+            <Label Style="{StaticResource labelCenterTitle}" FontSize="{DynamicResource smallFontSize}" Content="{DynamicResource translationLabelDictinary}" Grid.Column="1" Grid.Row="6"/>
+            <Label x:Name="lblUsageCount" FontSize="{DynamicResource smallFontSize}" Style="{StaticResource fontCenter}" Content="COUNT" Grid.Column="3"/>
+            <Label x:Name="lblOriginalWord" FontSize="{DynamicResource smallFontSize}"  Style="{StaticResource fontCenter}" Content="TEXT" Grid.Column="3" Grid.Row="4"/>
             <CheckBox x:Name="checkBoxIsActive" Grid.Column="3" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center">
                 <CheckBox.LayoutTransform>
                     <ScaleTransform ScaleX="1.5" ScaleY="1.5" />
@@ -55,9 +55,10 @@
                      HorizontalContentAlignment="Center" 
                      VerticalContentAlignment="Center" 
                      TextWrapping="Wrap" 
+                     FontSize="{DynamicResource smallFontSize}"
                      Text="TEXT"/>
         </Grid>
-        <Button Content="{DynamicResource saveChangesButtonDictinary}" Style="{StaticResource styleButton}" Grid.Column="1" Grid.Row="4" Click="Button_Click"/>
+        <Button Content="{DynamicResource saveChangesButtonDictinary}" FontSize="{DynamicResource mediumFontSize}" Style="{StaticResource styleButton}" Grid.Column="1" Grid.Row="4" Click="Button_Click"/>
 
     </Grid>
 </Window>

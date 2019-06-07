@@ -21,7 +21,7 @@ namespace Thea2Translator.Logic.Cache
             TranslatedItemsCount = allElements.Count(e => !e.ToTranslate);
             ItemWithoutTranslationCount = allElements.Count(e => e.ToTranslate);
 
-            TranslatedPercent = (int)((TranslatedItemsCount / AllItemsCount) * 100);
+            TranslatedPercent = (int)(((double)TranslatedItemsCount / (double)AllItemsCount) * 100);
         }
     }
 }

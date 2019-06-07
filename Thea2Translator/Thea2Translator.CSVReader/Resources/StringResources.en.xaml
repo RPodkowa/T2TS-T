@@ -26,6 +26,10 @@
     <system:String x:Key="saveFileButtonTranslate">Save to file</system:String>
     <system:String x:Key="googleButtonTranslate">Google</system:String>
 
+    <system:String x:Key="allLabelStatistic">All</system:String>
+    <system:String x:Key="translatedLabelStatistic">Translated</system:String>
+    <system:String x:Key="percentLabelStatistic">Percent</system:String>
+
     <system:String x:Key="allComboItemTranslate">All</system:String>
     <system:String x:Key="withoutTranslationComboItemTranslate">Without translation</system:String>
 	<system:String x:Key="withoutConfirmationComboItemTranslate">Without confirmation</system:String>

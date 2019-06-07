@@ -26,6 +26,10 @@
     <system:String x:Key="saveFileButtonTranslate">Zapisz do pliku</system:String>
     <system:String x:Key="googleButtonTranslate">Google</system:String>
 
+    <system:String x:Key="allLabelStatistic">Wszystkie</system:String>
+    <system:String x:Key="translatedLabelStatistic">Przetłumaczone</system:String>
+    <system:String x:Key="percentLabelStatistic">Procent</system:String>
+
     <system:String x:Key="allComboItemTranslate">Wszystkie</system:String>
     <system:String x:Key="withoutTranslationComboItemTranslate">Nieprzetłumaczone</system:String>
 	<system:String x:Key="withoutConfirmationComboItemTranslate">Niepotwierdzone</system:String>

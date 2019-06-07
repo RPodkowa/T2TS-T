@@ -40,16 +40,16 @@
                     <ColumnDefinition/>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
-                <Button x:Name="btnSaveToFile" Style="{StaticResource styleButton}" FontWeight="Bold" Click="BtnSaveToFile_Click" Grid.Column="0">
+                <Button x:Name="btnSaveToFile" Style="{StaticResource styleButton}" FontWeight="Bold" FontSize="{DynamicResource mediumFontSize}" Click="BtnSaveToFile_Click" Grid.Column="0">
                     <TextBlock TextWrapping="Wrap" TextAlignment="Center"><Run Text="{DynamicResource saveFileButtonTranslate}"/><LineBreak /><Run>(CTRL+S)</Run></TextBlock>
                 </Button>
-                <Button x:Name="btnGoogle" Style="{StaticResource styleButton}" Click="btnGoogle_Click" FontWeight="Bold" Grid.Column="1">
+                <Button x:Name="btnGoogle" Style="{StaticResource styleButton}" FontSize="{DynamicResource mediumFontSize}" Click="btnGoogle_Click" FontWeight="Bold" Grid.Column="1">
                     <TextBlock TextWrapping="Wrap" TextAlignment="Center"><Run Text="{DynamicResource googleButtonTranslate}"/><LineBreak /><Run>(CTRL+G)</Run></TextBlock>
                 </Button>
             </Grid>
-            <TextBox x:Name="txtOriginalText" TextWrapping="Wrap" IsEnabled="False" />
-            <TextBox x:Name="txtTranslatedText" Grid.Row="4" TextWrapping="Wrap"/>
-            <ListBox x:Name="lbDictinaryItems" Grid.Row="2" SelectionChanged="LbDictinary_SelectionChange" MouseDoubleClick="lbDictinaryItems_MouseDoubleClick" KeyDown="lbDictinaryItems_KeyDown" />
+            <TextBox x:Name="txtOriginalText" TextWrapping="Wrap" IsEnabled="False"  FontSize="{DynamicResource smallFontSize}" />
+            <TextBox x:Name="txtTranslatedText" Grid.Row="4" TextWrapping="Wrap" FontSize="{DynamicResource smallFontSize}"/>
+            <ListBox x:Name="lbDictinaryItems" Grid.Row="2" SelectionChanged="LbDictinary_SelectionChange" FontSize="{DynamicResource smallFontSize}" MouseDoubleClick="lbDictinaryItems_MouseDoubleClick" KeyDown="lbDictinaryItems_KeyDown" />
 
         </Grid>
         <Grid Grid.Column="1" Grid.Row="1">
@@ -60,7 +60,7 @@
                 <RowDefinition/>
                 <RowDefinition Height="8*"/>
             </Grid.RowDefinitions>
-            <ListBox x:Name="lbItemsToTranslate" Grid.Row="2" SelectionChanged="LbItemsToTranslate_SelectionChanged">
+            <ListBox x:Name="lbItemsToTranslate" FontSize="{DynamicResource smallFontSize}" Grid.Row="2" SelectionChanged="LbItemsToTranslate_SelectionChanged">
                 <ListBox.ItemTemplate >
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal">
@@ -80,16 +80,16 @@
                     <ColumnDefinition/>
                     <ColumnDefinition Width="10*"/>
                 </Grid.ColumnDefinitions>
-                <Label Content="{DynamicResource filterLabelTranslate}" Style="{StaticResource labelCenterTitle}" />
-                <ComboBox x:Name="cbItemsToTranslateFilter" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Style="{StaticResource fontBase}" SelectionChanged="CbItemsToTranslateFilter_SelectionChanged" Grid.Row="1">
+                <Label Content="{DynamicResource filterLabelTranslate}" Style="{StaticResource labelCenterTitle}" FontSize="{DynamicResource smallFontSize}" />
+                <ComboBox x:Name="cbItemsToTranslateFilter" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Style="{StaticResource fontBase}" FontSize="{DynamicResource smallFontSize}" SelectionChanged="CbItemsToTranslateFilter_SelectionChanged" Grid.Row="1">
                     <ComboBoxItem Content="{DynamicResource allComboItemTranslate}" IsSelected="True" />
                     <ComboBoxItem Content="{DynamicResource withoutTranslationComboItemTranslate}" />
                     <ComboBoxItem Content="{DynamicResource withoutConfirmationComboItemTranslate}" />
                 </ComboBox>
-                <ComboBox x:Name="cbGroups" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Style="{StaticResource fontBase}" SelectionChanged="CbGroups_SelectionChanged" Grid.Column="2" Grid.Row="1">
+                <ComboBox x:Name="cbGroups" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Style="{StaticResource fontBase}" FontSize="{DynamicResource smallFontSize}" SelectionChanged="CbGroups_SelectionChanged" Grid.Column="2" Grid.Row="1">
                     <ComboBoxItem Content="{DynamicResource allComboItemTranslate}" Selector.IsSelected="True"/>
                 </ComboBox>
-                <Label Content="{DynamicResource groupLabelTranslate}" Style="{StaticResource labelCenterTitle}" Grid.Column="2"/>
+                <Label Content="{DynamicResource groupLabelTranslate}" Style="{StaticResource labelCenterTitle}" FontSize="{DynamicResource smallFontSize}" Grid.Column="2"/>
             </Grid>
             <Grid Grid.Row="4">
                 <Grid.RowDefinitions>
@@ -102,12 +102,12 @@
                     <ColumnDefinition/>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
-                <Label Content="All" Style="{StaticResource labelCenterTitle}"/>
-                <Label Content="Translated" Style="{StaticResource labelCenterTitle}" Grid.Column="1"/>
-                <Label Content="Percent" Style="{StaticResource labelCenterTitle}" Grid.Column="2"/>
-                <Label x:Name="lblAllCount" Content="Label" Style="{StaticResource fontCenter}" Grid.Row="2"/>
-                <Label x:Name="lblTranslatedCount" Content="Label" Style="{StaticResource fontCenter}" Grid.Column="1" Grid.Row="2"/>
-                <Label x:Name="lblPercent" Content="Label" Foreground="DarkGreen" FontWeight="Bold" Style="{StaticResource fontCenter}" Grid.Column="2" Grid.Row="2" />
+                <Label Content="{DynamicResource allLabelStatistic}" Style="{StaticResource labelCenterTitle}" FontSize="{DynamicResource smallFontSize}"/>
+                <Label Content="{DynamicResource translatedLabelStatistic}" Style="{StaticResource labelCenterTitle}" FontSize="{DynamicResource smallFontSize}" Grid.Column="1"/>
+                <Label Content="{DynamicResource percentLabelStatistic}" Style="{StaticResource labelCenterTitle}" FontSize="{DynamicResource smallFontSize}" Grid.Column="2"/>
+                <Label x:Name="lblAllCount" Content="Label" Style="{StaticResource fontCenter}" FontSize="{DynamicResource smallFontSize}" Grid.Row="2"/>
+                <Label x:Name="lblTranslatedCount" Content="Label" Style="{StaticResource fontCenter}" FontSize="{DynamicResource smallFontSize}" Grid.Column="1" Grid.Row="2"/>
+                <Label x:Name="lblPercent" Content="Label" Foreground="DarkGreen" FontWeight="Bold" FontSize="{DynamicResource smallFontSize}" Style="{StaticResource fontCenter}" Grid.Column="2" Grid.Row="2" />
             </Grid>
         </Grid>
         <Grid Grid.Column="1" Grid.ColumnSpan="5">
@@ -121,7 +121,7 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <Button Content="{DynamicResource backButtonTranslate}" Style="{StaticResource styleButton}" FontWeight="Bold" Grid.Column="1" Grid.Row="1" Click="Button_Click"/>
+            <Button Content="{DynamicResource backButtonTranslate}" FontSize="{DynamicResource bigFontSize}" Style="{StaticResource styleButton}" FontWeight="Bold" Grid.Column="1" Grid.Row="1" Click="Button_Click"/>
             <Grid Grid.Row="1" Grid.RowSpan="2">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="10*"/>
@@ -134,13 +134,16 @@
                     <ColumnDefinition Width="3*"/>
                     <ColumnDefinition Width="8*"/>
                 </Grid.ColumnDefinitions>
-                <Label Content="{DynamicResource rangeLabelTranslate}" Style="{StaticResource labelCenterTitle}" Grid.ColumnSpan="5"/>
+                <Label Content="{DynamicResource rangeLabelTranslate}" Style="{StaticResource labelCenterTitle}" FontSize="{DynamicResource mediumFontSize}" Grid.ColumnSpan="5"/>
                 <TextBox x:Name="txtStartRange" Grid.Row="1" TextWrapping="Wrap" Text="" Grid.Column="1"
+                         FontSize="{DynamicResource mediumFontSize}"
                          VerticalContentAlignment="Center" HorizontalContentAlignment="Center"
                          TextChanged="TxtStartRange_TextChanged" LostFocus="TxtStartRange_LostFocus"/>
                 <TextBox x:Name="txtEndRange" Grid.Row="1" TextWrapping="Wrap" Text="" Grid.Column="3" 
                          VerticalContentAlignment="Center" HorizontalContentAlignment="Center"
-                         TextChanged="TxtEndRange_TextChanged" LostFocus="TxtEndRange_LostFocus"/>
+                         TextChanged="TxtEndRange_TextChanged" LostFocus="TxtEndRange_LostFocus"
+                         FontSize="{DynamicResource mediumFontSize}"
+                         />
                 <Label Content="-" Style="{StaticResource labelCenterTitle}" Grid.Column="2" Grid.Row="1"/>
             </Grid>
         </Grid>

@@ -112,6 +112,8 @@
     <Compile Include="Cache\DataCache.cs" />
     <Compile Include="Cache\FilesType.cs" />
     <Compile Include="Cache\Interfaces\IDataCache.cs" />
+    <Compile Include="Cache\Interfaces\IStatistic.cs" />
+    <Compile Include="Cache\Statistic.cs" />
     <Compile Include="Languages\Interfaces\ILanguageManager.cs" />
     <Compile Include="Languages\Language.cs" />
     <Compile Include="Languages\LanguageManager.cs" />

@@ -1,4 +1,6 @@
-﻿using Thea2Translator.Logic.Languages;
+﻿using Thea2Translator.Logic.Cache;
+using Thea2Translator.Logic.Cache.Interfaces;
+using Thea2Translator.Logic.Languages;
 using Thea2Translator.Logic.Languages.Interfaces;
 
 namespace Thea2Translator.Logic
@@ -11,7 +13,7 @@ namespace Thea2Translator.Logic
         private static DataCache _modules;
         private static DataCache _names;
         private static LanguageManager _languageManager;
-        private static Vocabulary _vocabulary;
+        private static Statistic _statistic;
 
         public static IDataCache DataBase => 
             _dataBase != null ?_dataBase : _dataBase = new DataCache(FilesType.DataBase);
@@ -25,8 +27,8 @@ namespace Thea2Translator.Logic
         public static ILanguageManager Language =>
             _languageManager != null ? _languageManager : _languageManager = new LanguageManager();
 
-        public static Vocabulary Vocabulary =>
-            _vocabulary != null ? _vocabulary : _vocabulary = new Vocabulary();
+        public static IStatistic Statistic =>
+            _statistic != null ? _statistic : _statistic = new Statistic();
 
     }
 }

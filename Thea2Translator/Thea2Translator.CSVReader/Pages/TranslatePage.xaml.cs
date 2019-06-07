@@ -16,6 +16,7 @@ using System.Windows.Shapes;
 using Thea2Translator.DesktopApp.Helpers;
 using Thea2Translator.DesktopApp.ViewModels;
 using Thea2Translator.Logic;
+using Thea2Translator.Logic.Cache.Interfaces;
 
 namespace Thea2Translator.DesktopApp.Pages
 {
@@ -37,6 +38,7 @@ namespace Thea2Translator.DesktopApp.Pages
 
         private Vocabulary vocabulary;
         private IDataCache dataCache;
+        private IStatistic statistic;
 
 
         IList<string> groups;
@@ -60,8 +62,11 @@ namespace Thea2Translator.DesktopApp.Pages
             btnGoogle.IsEnabled = false;
 
             dataCache.ReloadElems(true, true);
-            vocabulary = LogicProvider.Vocabulary;
             vocabulary = dataCache.Vocabulary;
+            statistic = LogicProvider.Statistic;
+
+            statistic.Reload(dataCache);
+            RealodStatistic();
 
             allElements = dataCache.CacheElems.Select(c => new CacheElemViewModel(c)).ToList();
             filtredElements = allElements;
@@ -118,6 +123,16 @@ namespace Thea2Translator.DesktopApp.Pages
             btnGoogle.IsEnabled = selectedCacheElement == null ? false : true;
 
             RefreshVocabularyList();
+            RealodStatistic();
+        }
+
+        private void RealodStatistic()
+        {
+            statistic.Reload(dataCache);
+
+            lblAllCount.Content = statistic.AllItemsCount;
+            lblTranslatedCount.Content = statistic.TranslatedItemsCount;
+            lblPercent.Content = $"{statistic.TranslatedPercent}%";
         }
 
         private void BtnSaveToFile_Click(object sender, RoutedEventArgs e)

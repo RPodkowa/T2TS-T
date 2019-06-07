@@ -58,7 +58,7 @@
                 <RowDefinition/>
                 <RowDefinition Height="31*"/>
                 <RowDefinition/>
-                <RowDefinition Height="3*"/>
+                <RowDefinition Height="8*"/>
             </Grid.RowDefinitions>
             <ListBox x:Name="lbItemsToTranslate" Grid.Row="2" SelectionChanged="LbItemsToTranslate_SelectionChanged">
                 <ListBox.ItemTemplate >
@@ -90,6 +90,24 @@
                     <ComboBoxItem Content="{DynamicResource allComboItemTranslate}" Selector.IsSelected="True"/>
                 </ComboBox>
                 <Label Content="{DynamicResource groupLabelTranslate}" Style="{StaticResource labelCenterTitle}" Grid.Column="2"/>
+            </Grid>
+            <Grid Grid.Row="4">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="8*"/>
+                    <RowDefinition/>
+                    <RowDefinition Height="13*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Content="All" Style="{StaticResource labelCenterTitle}"/>
+                <Label Content="Translated" Style="{StaticResource labelCenterTitle}" Grid.Column="1"/>
+                <Label Content="Percent" Style="{StaticResource labelCenterTitle}" Grid.Column="2"/>
+                <Label x:Name="lblAllCount" Content="Label" Style="{StaticResource fontCenter}" Grid.Row="2"/>
+                <Label x:Name="lblTranslatedCount" Content="Label" Style="{StaticResource fontCenter}" Grid.Column="1" Grid.Row="2"/>
+                <Label x:Name="lblPercent" Content="Label" Foreground="DarkGreen" FontWeight="Bold" Style="{StaticResource fontCenter}" Grid.Column="2" Grid.Row="2" />
             </Grid>
         </Grid>
         <Grid Grid.Column="1" Grid.ColumnSpan="5">

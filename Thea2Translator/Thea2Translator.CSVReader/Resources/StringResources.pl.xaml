@@ -21,6 +21,7 @@
     <system:String x:Key="filterLabelTranslate">Filtr</system:String>
     <system:String x:Key="groupLabelTranslate">Grupy</system:String>
     <system:String x:Key="rangeLabelTranslate">Zakres</system:String>
+    <system:String x:Key="searchLabelTranslate">Szukaj:</system:String>
 
     <system:String x:Key="backButtonTranslate">Powrót</system:String>
     <system:String x:Key="saveFileButtonTranslate">Zapisz do pliku</system:String>

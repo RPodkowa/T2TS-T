@@ -155,7 +155,8 @@ namespace Thea2Translator.DesktopApp.Pages
             dataCache.UpdateVocabulary(vocabulary);
             dataCache.SaveElems(true);
 
-            ChooseNextItem();
+            if (cbItemsToTranslateFilter.SelectedIndex != 1)
+                ChooseNextItem();
         }
 
         private void CbItemsToTranslateFilter_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -179,6 +180,14 @@ namespace Thea2Translator.DesktopApp.Pages
                     case 0: filtredElements = allElements.ToList(); break;
                     case 1: filtredElements = allElements.Where(c => c.CacheElem.ToTranslate).ToList(); break;
                     case 2: filtredElements = allElements.Where(c => c.CacheElem.ToConfirm).ToList(); break;
+                }
+
+                if(txtSearch.Text != "")
+                {
+                    var text = txtSearch.Text.ToLower();
+                    filtredElements = filtredElements.Where(e => e.CacheElem.OriginalText.ToLower().Contains(text)
+                    || e.CacheElem.TranslatedText.ToLower().Contains(text))
+                    .ToList();
                 }
 
                 if (cbGroups.SelectedIndex != 0)
@@ -341,6 +350,11 @@ namespace Thea2Translator.DesktopApp.Pages
             dictinaryWindow = new DictinaryWindow(vocabulary, lbDictinaryItems.SelectedItem as VocabularyElem);
             dictinaryWindow.ShowDialog();
             RefreshVocabularyList();
+        }
+
+        private void TxtSearch_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            FilterItems();
         }
     }
 }

@@ -50,6 +50,7 @@
         <system:String x:Key="filterLabelTranslate">Filter</system:String>
         <system:String x:Key="groupLabelTranslate">Group</system:String>
         <system:String x:Key="rangeLabelTranslate">Range</system:String>
+        <system:String x:Key="searchLabelTranslate">Search:</system:String>
 
         <system:String x:Key="backButtonTranslate">Back</system:String>
         <system:String x:Key="dictinaryButtonTranslate">Dictinary</system:String>

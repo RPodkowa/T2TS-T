@@ -54,13 +54,12 @@
         </Grid>
         <Grid Grid.Column="1" Grid.Row="1">
             <Grid.RowDefinitions>
-                <RowDefinition Height="6*"/>
-                <RowDefinition/>
-                <RowDefinition Height="31*"/>
-                <RowDefinition/>
+                <RowDefinition Height="46*"/>
                 <RowDefinition Height="8*"/>
+                <RowDefinition Height="35*"/>
+                <RowDefinition Height="296*"/>
             </Grid.RowDefinitions>
-            <ListBox x:Name="lbItemsToTranslate" FontSize="{DynamicResource smallFontSize}" Grid.Row="2" SelectionChanged="LbItemsToTranslate_SelectionChanged">
+            <ListBox x:Name="lbItemsToTranslate" FontSize="{DynamicResource smallFontSize}" Grid.Row="3" SelectionChanged="LbItemsToTranslate_SelectionChanged">
                 <ListBox.ItemTemplate >
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal">
@@ -91,23 +90,18 @@
                 </ComboBox>
                 <Label Content="{DynamicResource groupLabelTranslate}" Style="{StaticResource labelCenterTitle}" FontSize="{DynamicResource smallFontSize}" Grid.Column="2"/>
             </Grid>
-            <Grid Grid.Row="4">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="8*"/>
-                    <RowDefinition/>
-                    <RowDefinition Height="13*"/>
-                </Grid.RowDefinitions>
+            <Grid Grid.Row="2">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
+                    <ColumnDefinition Width="15*"/>
+                    <ColumnDefinition Width="40*"/>
                 </Grid.ColumnDefinitions>
-                <Label Content="{DynamicResource allLabelStatistic}" Style="{StaticResource labelCenterTitle}" FontSize="{DynamicResource smallFontSize}"/>
-                <Label Content="{DynamicResource translatedLabelStatistic}" Style="{StaticResource labelCenterTitle}" FontSize="{DynamicResource smallFontSize}" Grid.Column="1"/>
-                <Label Content="{DynamicResource percentLabelStatistic}" Style="{StaticResource labelCenterTitle}" FontSize="{DynamicResource smallFontSize}" Grid.Column="2"/>
-                <Label x:Name="lblAllCount" Content="Label" Style="{StaticResource fontCenter}" FontSize="{DynamicResource smallFontSize}" Grid.Row="2"/>
-                <Label x:Name="lblTranslatedCount" Content="Label" Style="{StaticResource fontCenter}" FontSize="{DynamicResource smallFontSize}" Grid.Column="1" Grid.Row="2"/>
-                <Label x:Name="lblPercent" Content="Label" Foreground="DarkGreen" FontWeight="Bold" FontSize="{DynamicResource smallFontSize}" Style="{StaticResource fontCenter}" Grid.Column="2" Grid.Row="2" />
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition Height="14*"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Label Content="{DynamicResource searchLabelTranslate}" Style="{StaticResource labelCenterTitle}" FontSize="{DynamicResource smallFontSize}" Grid.Row="1"/>
+                <TextBox x:Name="txtSearch" Grid.Column="1" Grid.Row="1" Style="{StaticResource fontCenter}" TextWrapping="Wrap" FontSize="{DynamicResource smallFontSize}" Text="Search" TextChanged="TxtSearch_TextChanged"/>
             </Grid>
         </Grid>
         <Grid Grid.Column="1" Grid.ColumnSpan="5">
@@ -121,6 +115,24 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
+            <Grid Grid.Row="1" Grid.Column="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="8*"/>
+                    <RowDefinition/>
+                    <RowDefinition Height="8*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Content="{DynamicResource allLabelStatistic}" Style="{StaticResource labelCenterTitle}" FontSize="{DynamicResource smallFontSize}"/>
+                <Label Content="{DynamicResource translatedLabelStatistic}" Style="{StaticResource labelCenterTitle}" FontSize="{DynamicResource smallFontSize}" Grid.Column="1"/>
+                <Label Content="{DynamicResource percentLabelStatistic}" Style="{StaticResource labelCenterTitle}" FontSize="{DynamicResource smallFontSize}" Grid.Column="2"/>
+                <Label x:Name="lblAllCount" Content="Label" Style="{StaticResource fontCenter}" FontSize="{DynamicResource smallFontSize}" Grid.Row="2"/>
+                <Label x:Name="lblTranslatedCount" Content="Label" Style="{StaticResource fontCenter}" FontSize="{DynamicResource smallFontSize}" Grid.Column="1" Grid.Row="2"/>
+                <Label x:Name="lblPercent" Content="Label" Foreground="DarkGreen" FontWeight="Bold" FontSize="{DynamicResource smallFontSize}" Style="{StaticResource fontCenter}" Grid.Column="2" Grid.Row="2" />
+            </Grid>
             <Button Content="{DynamicResource backButtonTranslate}" FontSize="{DynamicResource bigFontSize}" Style="{StaticResource styleButton}" FontWeight="Bold" Grid.Column="1" Grid.Row="1" Click="Button_Click"/>
             <Grid Grid.Row="1" Grid.RowSpan="2">
                 <Grid.RowDefinitions>

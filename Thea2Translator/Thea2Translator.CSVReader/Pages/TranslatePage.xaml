@@ -101,7 +101,7 @@
                     <RowDefinition/>
                 </Grid.RowDefinitions>
                 <Label Content="{DynamicResource searchLabelTranslate}" Style="{StaticResource labelCenterTitle}" FontSize="{DynamicResource smallFontSize}" Grid.Row="1"/>
-                <TextBox x:Name="txtSearch" Grid.Column="1" Grid.Row="1" Style="{StaticResource fontCenter}" TextWrapping="Wrap" FontSize="{DynamicResource smallFontSize}" Text="Search" TextChanged="TxtSearch_TextChanged"/>
+                <TextBox x:Name="txtSearch" Grid.Column="1" Grid.Row="1" Style="{StaticResource fontCenter}" TextWrapping="Wrap" FontSize="{DynamicResource smallFontSize}" Text="" TextChanged="TxtSearch_TextChanged"/>
             </Grid>
         </Grid>
         <Grid Grid.Column="1" Grid.ColumnSpan="5">

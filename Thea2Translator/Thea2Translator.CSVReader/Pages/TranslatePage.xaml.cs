@@ -175,11 +175,13 @@ namespace Thea2Translator.DesktopApp.Pages
                 var end = txtEndRange.Text != "" ?
                     int.Parse(txtEndRange.Text) : allElements.Count;
 
+                filtredElements = allElements.Skip(start).Take(end - start).ToList();
+
                 switch (cbItemsToTranslateFilter.SelectedIndex)
                 {
-                    case 0: filtredElements = allElements.ToList(); break;
-                    case 1: filtredElements = allElements.Where(c => c.CacheElem.ToTranslate).ToList(); break;
-                    case 2: filtredElements = allElements.Where(c => c.CacheElem.ToConfirm).ToList(); break;
+                    case 0: filtredElements = filtredElements.ToList(); break;
+                    case 1: filtredElements = filtredElements.Where(c => c.CacheElem.ToTranslate).ToList(); break;
+                    case 2: filtredElements = filtredElements.Where(c => c.CacheElem.ToConfirm).ToList(); break;
                 }
 
                 if(txtSearch.Text != "")
@@ -194,15 +196,6 @@ namespace Thea2Translator.DesktopApp.Pages
                 {
                     filtredElements = filtredElements.Where(e =>
                     e.CacheElem.Groups.Contains(cbGroups.SelectedValue))
-                        .Skip(start)
-                        .Take(end - start)
-                        .ToList();
-                }
-                else
-                {
-                    filtredElements = filtredElements
-                        .Skip(start)
-                        .Take(end - start)
                         .ToList();
                 }
 

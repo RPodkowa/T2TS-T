@@ -37,7 +37,7 @@
 125;1;All;
 121;1;Armour;
 119;0;One;
-116;1;Shielding;
+116;1;Shielding;Osłona
 115;0;At;
 114;1;Damage;
 106;1;Challenge;
@@ -82,7 +82,7 @@
 69;1;Now;
 68;1;Targets;
 68;1;Heavy;
-67;1;Shield;
+67;1;Shield;Osłona/Tarcza
 67;0;Her;
 66;1;Chosen;
 66;1;Add;
@@ -95,7 +95,7 @@
 61;1;His;
 61;1;Find;
 60;1;Village;
-59;1;Secondary;
+59;1;Secondary;Dodatkowy
 59;1;Research;Badania
 59;0;Its;
 58;1;Carry;(Carry limit) udźwig
@@ -2590,7 +2590,7 @@
 2;0;Ships;
 2;1;Conquered;
 1;1;Determines;
-1;1;Blending;
+1;0;Blending;
 1;1;Studying;
 1;1;Rolls;
 1;1;Integrity;

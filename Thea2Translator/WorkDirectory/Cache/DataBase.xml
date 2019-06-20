@@ -1,9 +1,9 @@
 <Database>
   <Element ID="1" Key="DES_TAG_WITS" Flag="1">
     <Confirmation>
-      <Time>06-06-2019 10:41:23</Time>
-      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
-      <User>Radek</User>
+      <Time>06-18-2019 18:30:40</Time>
+      <GUID>590EC2B4-67A3-4223-A40F-E8488978B519</GUID>
+      <User>RPA</User>
     </Confirmation>
     <Groups>
       <Group>DES</Group>
@@ -15,7 +15,12 @@
       <Output>Spryt</Output>
     </Texts>
   </Element>
-  <Element ID="2" Key="DES_TAG_WITS_DES" Flag="0">
+  <Element ID="2" Key="DES_TAG_WITS_DES" Flag="1">
+    <Confirmation>
+      <Time>06-18-2019 18:30:43</Time>
+      <GUID>590EC2B4-67A3-4223-A40F-E8488978B519</GUID>
+      <User>RPA</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -28,9 +33,9 @@
   </Element>
   <Element ID="3" Key="DES_TAG_STRENGTH" Flag="1">
     <Confirmation>
-      <Time>06-06-2019 10:41:13</Time>
-      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
-      <User>Radek</User>
+      <Time>06-18-2019 18:30:45</Time>
+      <GUID>590EC2B4-67A3-4223-A40F-E8488978B519</GUID>
+      <User>RPA</User>
     </Confirmation>
     <Groups>
       <Group>DES</Group>
@@ -42,7 +47,12 @@
       <Output>Siła</Output>
     </Texts>
   </Element>
-  <Element ID="4" Key="DES_TAG_STRENGTH_DES" Flag="0">
+  <Element ID="4" Key="DES_TAG_STRENGTH_DES" Flag="1">
+    <Confirmation>
+      <Time>06-18-2019 18:30:47</Time>
+      <GUID>590EC2B4-67A3-4223-A40F-E8488978B519</GUID>
+      <User>RPA</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -50,14 +60,14 @@
     </Groups>
     <Texts>
       <Input>Primary Physical attribute. Affects carry limits and Health.</Input>
-      <Output>Podstawowy atrybut fizyczny. Wpływa na limity przenoszenia i zdrowie.</Output>
+      <Output>Podstawowy atrybut fizyczny. Wpływa na udźwig i zdrowie.</Output>
     </Texts>
   </Element>
   <Element ID="5" Key="DES_TAG_PERCEPTION" Flag="1">
     <Confirmation>
-      <Time>06-06-2019 10:41:06</Time>
-      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
-      <User>Radek</User>
+      <Time>06-18-2019 18:30:48</Time>
+      <GUID>590EC2B4-67A3-4223-A40F-E8488978B519</GUID>
+      <User>RPA</User>
     </Confirmation>
     <Groups>
       <Group>DES</Group>
@@ -69,7 +79,12 @@
       <Output>Percepcja</Output>
     </Texts>
   </Element>
-  <Element ID="6" Key="DES_TAG_PERCEPTION_DES" Flag="0">
+  <Element ID="6" Key="DES_TAG_PERCEPTION_DES" Flag="1">
+    <Confirmation>
+      <Time>06-18-2019 18:30:55</Time>
+      <GUID>590EC2B4-67A3-4223-A40F-E8488978B519</GUID>
+      <User>RPA</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -77,14 +92,14 @@
     </Groups>
     <Texts>
       <Input>Secondary Physical attribute. Affects Gathering, Luck and Health.</Input>
-      <Output>Drugorzędny atrybut fizyczny. Wpływa na gromadzenie, szczęście i zdrowie.</Output>
+      <Output>Dodatkowy atrybut fizyczny. Wpływa na zbieractwo, szczęście i zdrowie.</Output>
     </Texts>
   </Element>
   <Element ID="7" Key="DES_TAG_INTELLIGENCE" Flag="1">
     <Confirmation>
-      <Time>06-06-2019 10:41:00</Time>
-      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
-      <User>Radek</User>
+      <Time>06-18-2019 18:30:58</Time>
+      <GUID>590EC2B4-67A3-4223-A40F-E8488978B519</GUID>
+      <User>RPA</User>
     </Confirmation>
     <Groups>
       <Group>DES</Group>
@@ -96,7 +111,12 @@
       <Output>Inteligencja</Output>
     </Texts>
   </Element>
-  <Element ID="8" Key="DES_TAG_INTELLIGENCE_DES" Flag="0">
+  <Element ID="8" Key="DES_TAG_INTELLIGENCE_DES" Flag="1">
+    <Confirmation>
+      <Time>06-18-2019 18:31:51</Time>
+      <GUID>590EC2B4-67A3-4223-A40F-E8488978B519</GUID>
+      <User>RPA</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -104,14 +124,14 @@
     </Groups>
     <Texts>
       <Input>Primary Mental attribute. Affects Research and Crafting abilities and Sanity (mental health).</Input>
-      <Output>Podstawowy atrybut mentalny. Wpływa na zdolności badawcze i rzemieślnicze oraz zdrowie psychiczne.</Output>
+      <Output>Podstawowy atrybut mentalny. Wpływa na badania i rzemiosło oraz zdrowie psychiczne.</Output>
     </Texts>
   </Element>
   <Element ID="9" Key="DES_TAG_WISDOM" Flag="1">
     <Confirmation>
-      <Time>06-06-2019 10:40:53</Time>
-      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
-      <User>Radek</User>
+      <Time>06-18-2019 18:31:53</Time>
+      <GUID>590EC2B4-67A3-4223-A40F-E8488978B519</GUID>
+      <User>RPA</User>
     </Confirmation>
     <Groups>
       <Group>DES</Group>
@@ -123,7 +143,12 @@
       <Output>Mądrość</Output>
     </Texts>
   </Element>
-  <Element ID="10" Key="DES_TAG_WISDOM_DES" Flag="0">
+  <Element ID="10" Key="DES_TAG_WISDOM_DES" Flag="1">
+    <Confirmation>
+      <Time>06-18-2019 18:32:28</Time>
+      <GUID>590EC2B4-67A3-4223-A40F-E8488978B519</GUID>
+      <User>RPA</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -131,14 +156,14 @@
     </Groups>
     <Texts>
       <Input>Secondary Mental attribute. Affects Luck, Rituals, Crafting and Gathering abilities and Sanity (mental health).</Input>
-      <Output>Dodatkowy atrybut mentalny. Wpływa na szczęście, rytuały, umiejętności tworzenia i gromadzenia oraz poczytalność (zdrowie psychiczne).</Output>
+      <Output>Dodatkowy atrybut mentalny. Wpływa na szczęście, rytuały, rzemiosło i zbieractwo oraz poczytalność (zdrowie psychiczne).</Output>
     </Texts>
   </Element>
   <Element ID="11" Key="DES_TAG_MYSTICISM" Flag="1">
     <Confirmation>
-      <Time>06-06-2019 10:40:47</Time>
-      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
-      <User>Radek</User>
+      <Time>06-18-2019 18:32:30</Time>
+      <GUID>590EC2B4-67A3-4223-A40F-E8488978B519</GUID>
+      <User>RPA</User>
     </Confirmation>
     <Groups>
       <Group>DES</Group>
@@ -150,7 +175,12 @@
       <Output>Mistycyzm</Output>
     </Texts>
   </Element>
-  <Element ID="12" Key="DES_TAG_MYSTICISM_DES" Flag="0">
+  <Element ID="12" Key="DES_TAG_MYSTICISM_DES" Flag="1">
+    <Confirmation>
+      <Time>06-18-2019 18:32:53</Time>
+      <GUID>590EC2B4-67A3-4223-A40F-E8488978B519</GUID>
+      <User>RPA</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -158,14 +188,14 @@
     </Groups>
     <Texts>
       <Input>Primary Spiritual attribute. Affects Research and Rituals abilities and Faith (spiritual health).</Input>
-      <Output>Pierwotny atrybut duchowy. Wpływa na zdolności badawcze i rytuały oraz na wiarę (zdrowie duchowe).</Output>
+      <Output>Podstawowy atrybut duchowy. Wpływa na badania i rytuały oraz na wiarę (zdrowie duchowe).</Output>
     </Texts>
   </Element>
   <Element ID="13" Key="DES_TAG_DESTINY" Flag="1">
     <Confirmation>
-      <Time>06-06-2019 10:40:36</Time>
-      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
-      <User>Radek</User>
+      <Time>06-18-2019 18:32:54</Time>
+      <GUID>590EC2B4-67A3-4223-A40F-E8488978B519</GUID>
+      <User>RPA</User>
     </Confirmation>
     <Groups>
       <Group>DES</Group>
@@ -177,7 +207,12 @@
       <Output>Przeznaczenie</Output>
     </Texts>
   </Element>
-  <Element ID="14" Key="DES_TAG_DESTINY_DES" Flag="0">
+  <Element ID="14" Key="DES_TAG_DESTINY_DES" Flag="1">
+    <Confirmation>
+      <Time>06-18-2019 18:33:28</Time>
+      <GUID>590EC2B4-67A3-4223-A40F-E8488978B519</GUID>
+      <User>RPA</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -185,14 +220,14 @@
     </Groups>
     <Texts>
       <Input>Secondary Spiritual attribute. Affects Gathering, Crafting, Research, Rituals, Luck and Faith (spiritual health).</Input>
-      <Output>Drugorzędny atrybut duchowy. Wpływa na zbieranie, tworzenie, badania, rytuały, szczęście i wiarę (zdrowie duchowe).</Output>
+      <Output>Dodatkowy atrybut duchowy. Wpływa na zbieractwo, rzemiosło, badania, rytuały, szczęście i wiarę (zdrowie duchowe).</Output>
     </Texts>
   </Element>
   <Element ID="15" Key="DES_TAG_GATHERING" Flag="1">
     <Confirmation>
-      <Time>06-06-2019 10:38:40</Time>
-      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
-      <User>Radek</User>
+      <Time>06-18-2019 18:33:30</Time>
+      <GUID>590EC2B4-67A3-4223-A40F-E8488978B519</GUID>
+      <User>RPA</User>
     </Confirmation>
     <Groups>
       <Group>DES</Group>
@@ -204,7 +239,12 @@
       <Output>Zbieractwo</Output>
     </Texts>
   </Element>
-  <Element ID="16" Key="DES_TAG_GATHERING_DES" Flag="0">
+  <Element ID="16" Key="DES_TAG_GATHERING_DES" Flag="1">
+    <Confirmation>
+      <Time>06-18-2019 18:33:54</Time>
+      <GUID>590EC2B4-67A3-4223-A40F-E8488978B519</GUID>
+      <User>RPA</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -212,14 +252,14 @@
     </Groups>
     <Texts>
       <Input>Determines the character's ability to gather materials and the speed at which they do it.</Input>
-      <Output>Określa zdolność postaci do zbierania materiałów i szybkość, z jaką to robią.</Output>
+      <Output>Określa zdolność postaci do zbierania materiałów i szybkość, z jaką to robi.</Output>
     </Texts>
   </Element>
   <Element ID="17" Key="DES_TAG_CRAFTING" Flag="1">
     <Confirmation>
-      <Time>06-06-2019 10:38:51</Time>
-      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
-      <User>Radek</User>
+      <Time>06-18-2019 18:33:55</Time>
+      <GUID>590EC2B4-67A3-4223-A40F-E8488978B519</GUID>
+      <User>RPA</User>
     </Confirmation>
     <Groups>
       <Group>DES</Group>
@@ -231,7 +271,12 @@
       <Output>Rzemiosło</Output>
     </Texts>
   </Element>
-  <Element ID="18" Key="DES_TAG_CRAFTING_DES" Flag="0">
+  <Element ID="18" Key="DES_TAG_CRAFTING_DES" Flag="1">
+    <Confirmation>
+      <Time>06-18-2019 18:35:03</Time>
+      <GUID>590EC2B4-67A3-4223-A40F-E8488978B519</GUID>
+      <User>RPA</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -239,14 +284,14 @@
     </Groups>
     <Texts>
       <Input>The ability to create items, buildings, cooking food and blending materials.</Input>
-      <Output>Możliwość tworzenia przedmiotów, budynków, gotowania potraw i mieszania materiałów.</Output>
+      <Output>Możliwość tworzenia przedmiotów, budynków, gotowania potraw i łączenia materiałów.</Output>
     </Texts>
   </Element>
   <Element ID="19" Key="DES_TAG_RESEARCH" Flag="1">
     <Confirmation>
-      <Time>06-06-2019 10:40:26</Time>
-      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
-      <User>Radek</User>
+      <Time>06-18-2019 18:35:08</Time>
+      <GUID>590EC2B4-67A3-4223-A40F-E8488978B519</GUID>
+      <User>RPA</User>
     </Confirmation>
     <Groups>
       <Group>DES</Group>
@@ -258,7 +303,12 @@
       <Output>Badania</Output>
     </Texts>
   </Element>
-  <Element ID="20" Key="DES_TAG_RESEARCH_DES" Flag="0">
+  <Element ID="20" Key="DES_TAG_RESEARCH_DES" Flag="1">
+    <Confirmation>
+      <Time>06-18-2019 18:35:32</Time>
+      <GUID>590EC2B4-67A3-4223-A40F-E8488978B519</GUID>
+      <User>RPA</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -271,9 +321,9 @@
   </Element>
   <Element ID="21" Key="DES_TAG_LUCK" Flag="1">
     <Confirmation>
-      <Time>06-06-2019 10:40:22</Time>
-      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
-      <User>Radek</User>
+      <Time>06-18-2019 18:35:33</Time>
+      <GUID>590EC2B4-67A3-4223-A40F-E8488978B519</GUID>
+      <User>RPA</User>
     </Confirmation>
     <Groups>
       <Group>DES</Group>
@@ -285,7 +335,12 @@
       <Output>Szczęście</Output>
     </Texts>
   </Element>
-  <Element ID="22" Key="DES_TAG_LUCK_DES" Flag="0">
+  <Element ID="22" Key="DES_TAG_LUCK_DES" Flag="1">
+    <Confirmation>
+      <Time>06-18-2019 18:36:26</Time>
+      <GUID>590EC2B4-67A3-4223-A40F-E8488978B519</GUID>
+      <User>RPA</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -298,9 +353,9 @@
   </Element>
   <Element ID="23" Key="DES_TAG_RITUALS" Flag="1">
     <Confirmation>
-      <Time>06-06-2019 10:40:10</Time>
-      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
-      <User>Radek</User>
+      <Time>06-18-2019 18:36:28</Time>
+      <GUID>590EC2B4-67A3-4223-A40F-E8488978B519</GUID>
+      <User>RPA</User>
     </Confirmation>
     <Groups>
       <Group>DES</Group>
@@ -312,7 +367,12 @@
       <Output>Rytuały</Output>
     </Texts>
   </Element>
-  <Element ID="24" Key="DES_TAG_RITUALS_DES" Flag="0">
+  <Element ID="24" Key="DES_TAG_RITUALS_DES" Flag="1">
+    <Confirmation>
+      <Time>06-18-2019 18:36:36</Time>
+      <GUID>590EC2B4-67A3-4223-A40F-E8488978B519</GUID>
+      <User>RPA</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -325,9 +385,9 @@
   </Element>
   <Element ID="25" Key="DES_TAG_HEALTH_PHYSICAL" Flag="1">
     <Confirmation>
-      <Time>06-06-2019 10:40:08</Time>
-      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
-      <User>Radek</User>
+      <Time>06-18-2019 18:36:38</Time>
+      <GUID>590EC2B4-67A3-4223-A40F-E8488978B519</GUID>
+      <User>RPA</User>
     </Confirmation>
     <Groups>
       <Group>DES</Group>
@@ -340,7 +400,12 @@
       <Output>Zdrowie</Output>
     </Texts>
   </Element>
-  <Element ID="26" Key="DES_TAG_HEALTH_PHYSICAL_DES" Flag="0">
+  <Element ID="26" Key="DES_TAG_HEALTH_PHYSICAL_DES" Flag="1">
+    <Confirmation>
+      <Time>06-18-2019 18:37:27</Time>
+      <GUID>590EC2B4-67A3-4223-A40F-E8488978B519</GUID>
+      <User>RPA</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -349,14 +414,14 @@
     </Groups>
     <Texts>
       <Input>Reflects physical wellbeing.</Input>
-      <Output>Odzwierciedla dobre samopoczucie fizyczne.</Output>
+      <Output>Odzwierciedla samopoczucie fizyczne.</Output>
     </Texts>
   </Element>
   <Element ID="27" Key="DES_TAG_HEALTH_MENTAL" Flag="1">
     <Confirmation>
-      <Time>06-06-2019 10:42:01</Time>
-      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
-      <User>Radek</User>
+      <Time>06-18-2019 18:37:28</Time>
+      <GUID>590EC2B4-67A3-4223-A40F-E8488978B519</GUID>
+      <User>RPA</User>
     </Confirmation>
     <Groups>
       <Group>DES</Group>
@@ -369,7 +434,12 @@
       <Output>Poczytalność</Output>
     </Texts>
   </Element>
-  <Element ID="28" Key="DES_TAG_HEALTH_MENTAL_DES" Flag="0">
+  <Element ID="28" Key="DES_TAG_HEALTH_MENTAL_DES" Flag="1">
+    <Confirmation>
+      <Time>06-18-2019 18:37:33</Time>
+      <GUID>590EC2B4-67A3-4223-A40F-E8488978B519</GUID>
+      <User>RPA</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -383,9 +453,9 @@
   </Element>
   <Element ID="29" Key="DES_TAG_HEALTH_SPIRITUAL" Flag="1">
     <Confirmation>
-      <Time>06-06-2019 10:39:51</Time>
-      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
-      <User>Radek</User>
+      <Time>06-18-2019 18:37:34</Time>
+      <GUID>590EC2B4-67A3-4223-A40F-E8488978B519</GUID>
+      <User>RPA</User>
     </Confirmation>
     <Groups>
       <Group>DES</Group>
@@ -398,7 +468,12 @@
       <Output>Wiara</Output>
     </Texts>
   </Element>
-  <Element ID="30" Key="DES_TAG_HEALTH_SPIRITUAL_DES" Flag="0">
+  <Element ID="30" Key="DES_TAG_HEALTH_SPIRITUAL_DES" Flag="1">
+    <Confirmation>
+      <Time>06-18-2019 18:38:33</Time>
+      <GUID>590EC2B4-67A3-4223-A40F-E8488978B519</GUID>
+      <User>RPA</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -407,10 +482,15 @@
     </Groups>
     <Texts>
       <Input>Reflects the inner integrity.</Input>
-      <Output>Odzwierciedla wewnętrzną integralność.</Output>
+      <Output>Odzwierciedla duchową całość.</Output>
     </Texts>
   </Element>
-  <Element ID="31" Key="DES_TAG_MAX_HEALTH_PHYSICAL" Flag="0">
+  <Element ID="31" Key="DES_TAG_MAX_HEALTH_PHYSICAL" Flag="1">
+    <Confirmation>
+      <Time>06-18-2019 18:38:46</Time>
+      <GUID>590EC2B4-67A3-4223-A40F-E8488978B519</GUID>
+      <User>RPA</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -420,10 +500,15 @@
     </Groups>
     <Texts>
       <Input>Max Health</Input>
-      <Output>Max Health</Output>
+      <Output>Maksymalne Zdrowie</Output>
     </Texts>
   </Element>
-  <Element ID="32" Key="DES_TAG_MAX_HEALTH_PHYSICAL_DES" Flag="0">
+  <Element ID="32" Key="DES_TAG_MAX_HEALTH_PHYSICAL_DES" Flag="1">
+    <Confirmation>
+      <Time>06-18-2019 18:41:14</Time>
+      <GUID>590EC2B4-67A3-4223-A40F-E8488978B519</GUID>
+      <User>RPA</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -433,10 +518,15 @@
     </Groups>
     <Texts>
       <Input>The maximum amount of Health the character can have. 1 Health point is recovered each turn, regeneration rate can be increased by camping or visiting a Healer's Hut. Health below 30% poses a death risk.</Input>
-      <Output>Maksymalna ilość zdrowia, jaką może posiadać postać. 1 punkt zdrowia jest odzyskiwany w każdej turze, tempo regeneracji można zwiększyć, kempingując lub odwiedzając chatę uzdrowiciela. Zdrowie poniżej 30% stwarza ryzyko śmierci.</Output>
+      <Output>Maksymalna ilość zdrowia, jaką może posiadać postać. W każdej turze odzyskiwany jest 1 punkt zdrowia. Tempo regeneracji można zwiększyć rozbijająć obóz lub odwiedzając chatę uzdrowiciela. Zdrowie poniżej 30% stwarza ryzyko śmierci.</Output>
     </Texts>
   </Element>
-  <Element ID="33" Key="DES_TAG_MAX_HEALTH_MENTAL" Flag="0">
+  <Element ID="33" Key="DES_TAG_MAX_HEALTH_MENTAL" Flag="1">
+    <Confirmation>
+      <Time>06-18-2019 18:41:37</Time>
+      <GUID>590EC2B4-67A3-4223-A40F-E8488978B519</GUID>
+      <User>RPA</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -446,10 +536,15 @@
     </Groups>
     <Texts>
       <Input>Max Sanity</Input>
-      <Output>Max Sanity</Output>
+      <Output>Maksymalna Poczytalność</Output>
     </Texts>
   </Element>
-  <Element ID="34" Key="DES_TAG_MAX_HEALTH_MENTAL_DES" Flag="0">
+  <Element ID="34" Key="DES_TAG_MAX_HEALTH_MENTAL_DES" Flag="1">
+    <Confirmation>
+      <Time>06-18-2019 18:44:37</Time>
+      <GUID>590EC2B4-67A3-4223-A40F-E8488978B519</GUID>
+      <User>RPA</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -459,10 +554,15 @@
     </Groups>
     <Texts>
       <Input>The maximum amount of Sanity the character can have. Regeneration of each Sanity point consumes 2 Morale, up to 20% of maximum Sanity per turn. Sanity below 30% poses a risk of the character leaving your group.</Input>
-      <Output>Maksymalna ilość poczytalności, jaką może mieć postać. Regeneracja każdego punktu poczytalności zużywa 2 morale, do 20% maksymalnego poczytalności na turę. Poczytalność poniżej 30% stwarza ryzyko, że postać opuści twoją grupę.</Output>
+      <Output>Maksymalna ilość poczytalności, jaką może posiadać postać. W każdej turze może zostać zregenerowane do 20% maksymalnej poczytalności. Regeneracja każdego punktu zużywa 2 morale. Poczytalność poniżej 30% stwarza ryzyko, że postać opuści twoją grupę.</Output>
     </Texts>
   </Element>
-  <Element ID="35" Key="DES_TAG_MAX_HEALTH_SPIRITUAL" Flag="0">
+  <Element ID="35" Key="DES_TAG_MAX_HEALTH_SPIRITUAL" Flag="1">
+    <Confirmation>
+      <Time>06-18-2019 18:45:02</Time>
+      <GUID>590EC2B4-67A3-4223-A40F-E8488978B519</GUID>
+      <User>RPA</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -472,7 +572,7 @@
     </Groups>
     <Texts>
       <Input>Max Faith</Input>
-      <Output>Max Faith</Output>
+      <Output>Maksymalna Wiara</Output>
     </Texts>
   </Element>
   <Element ID="36" Key="DES_TAG_MAX_HEALTH_SPIRITUAL_DES" Flag="0">
@@ -488,7 +588,12 @@
       <Output>Maksymalna ilość wiary, jaką postać może mieć. 1 punkt wiary jest odzyskiwany w każdej turze, ale możesz również wykonać rytuał duchowego uzdrawiania. Wiara poniżej 30% powoduje stopniową utratę zdrowia.</Output>
     </Texts>
   </Element>
-  <Element ID="37" Key="DES_TAG_SHIELDING" Flag="0">
+  <Element ID="37" Key="DES_TAG_SHIELDING" Flag="1">
+    <Confirmation>
+      <Time>06-18-2019 18:45:59</Time>
+      <GUID>590EC2B4-67A3-4223-A40F-E8488978B519</GUID>
+      <User>RPA</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -3340,7 +3445,12 @@
       <Output>Obrażenia są zwiększane o stałą wartość.</Output>
     </Texts>
   </Element>
-  <Element ID="252" Key="DES_NEW_LINE_SIGN" Flag="0">
+  <Element ID="252" Key="DES_NEW_LINE_SIGN" Flag="1">
+    <Confirmation>
+      <Time>06-19-2019 07:40:00</Time>
+      <GUID>590EC2B4-67A3-4223-A40F-E8488978B519</GUID>
+      <User>RPA</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_NEW</Group>

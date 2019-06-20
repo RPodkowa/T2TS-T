@@ -16,7 +16,11 @@ namespace Thea2Translator.DesktopApp.ViewModels
         {
             get
             {
-                return CacheElem.ToTranslate ? "Black" : Colors.DarkGreen.ToString();
+                
+                return CacheElem.ToConfirm ? 
+                    (CacheElem.ToTranslate? Colors.Red.ToString()
+                    :Colors.Black.ToString())
+                    : Colors.DarkGreen.ToString();
             }
         }
 

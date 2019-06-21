@@ -16,7 +16,7 @@
     <Entry Key="UI_ADVENTURE_SPAWN_NODE" Val="Węzeł spawnowania" />
     <Entry Key="UI_ADVENTURE_TRADE_NODE" Val="Węzeł handlowy" />
     <Entry Key="UI_MAKE_PUBLIC" Val="Zrób publiczny" />
-    <Entry Key="UI_ENEMY_TURN" Val="Zwrot wroga" />
+    <Entry Key="UI_ENEMY_TURN" Val="Tura przeciwnika" />
     <Entry Key="UI_FRIENDLY_TURN" Val="Przyjazna tura" />
     <Entry Key="UI_AT_DELAY" Val="Opóźnienie" />
     <Entry Key="UI_BATTLE_RESOLVE" Val="Rozstrzyganie bitwy (1/2)" />
@@ -94,8 +94,8 @@
     <Entry Key="UI_ENTER_QUEST_DESCRIPTION" Val="Opis zadania (Loc String)" />
     <Entry Key="UI_SHOW_IN_LOGBOOK" Val="Pokaż w dzienniku" />
     <Entry Key="UI_PICK_A_TAG" Val="Wybierz tag" />
-    <Entry Key="UI_TURN" Val="Turn:" />
-    <Entry Key="UI_TURN2" Val="Obróć " />
+    <Entry Key="UI_TURN" Val="Tura:" />
+    <Entry Key="UI_TURN2" Val="Tura" />
     <Entry Key="UI_INVENTORY" Val="Inwentaryzacja" />
     <Entry Key="UI_FILTER" Val="Filtruj…" />
     <Entry Key="UI_SORT" Val="Sortuj…" />
@@ -800,7 +800,7 @@
     <Entry Key="UI_WINTER_EFFECT3" Val="Szansa na pojawienie się gniazd Monster jest wyższa" />
     <Entry Key="UI_WINTER_EFFECT4" Val="Obozy i wioski zużywają 2 paliwo na turę zamiast 1" />
     <Entry Key="UI_WINTER_EFFECT5" Val="Odzyskiwanie Zdrowia, Poczytalności lub Wiary wymaga napędzanego obozu lub wioski" />
-    <Entry Key="UI_WINTER_EFFECT6" Val="Gromadzenie żywności i zasobów rzemieślniczych jest trudniejsze" />
+    <Entry Key="UI_WINTER_EFFECT6" Val="Zbieranie żywności i zasobów rzemieślniczych jest trudniejsze" />
     <Entry Key="UI_TRAITS" Val="Cechy" />
     <Entry Key="UI_COMPOSITE_INFO" Val="Ten zasób jest złożony i można go utworzyć na panelu Gotowanie i kompozyty." />
     <Entry Key="UI_INVENTORY_SHIFT" Val="- stos transferowy" />
@@ -861,8 +861,8 @@
     <Entry Key="UI_SAVE_AND_QUIT" Val="Zapisz i zakończ" />
     <Entry Key="UI_FINISHED_QUESTS" Val="Zakończone misje" />
     <Entry Key="UI_CHALLENGE_DIFFICULTY_INCREASE" Val="Zwiększenie trudności wyzwania" />
-    <Entry Key="UI_NYIA_UNLOCKED" Val="Nyia Unlocked!" />
-    <Entry Key="UI_TRIGLAV_UNLOCKED" Val="Triglav odblokowany!" />
+    <Entry Key="UI_NYIA_UNLOCKED" Val="Nyja odblokowana!" />
+    <Entry Key="UI_TRIGLAV_UNLOCKED" Val="Trzygłów odblokowany!" />
     <Entry Key="UI_COAL_REMOVED_FROM_FIRST_ISLAND" Val="Węgiel usunięty z początkowej wyspy" />
     <Entry Key="UI_SKIP_TO_RESOLUTION" Val="Przejdź do rozdzielczości" />
     <Entry Key="UI_ARE_YOU_SURE_SKIP_TO_RESOLUTION" Val="Czy na pewno chcesz zakończyć rzucanie kart w tej rundzie i przejść do rozdzielczości? Twój wróg normalnie zagra swoje karty." />

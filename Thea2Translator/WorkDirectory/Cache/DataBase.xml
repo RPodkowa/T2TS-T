@@ -54660,7 +54660,12 @@ Orkowie zazwyczaj nie handlują kością ani skórą, ponieważ zazwyczaj mają 
       <Output>Zrób publiczny</Output>
     </Texts>
   </Element>
-  <Element ID="4436" Key="UI_ENEMY_TURN" Flag="0">
+  <Element ID="4436" Key="UI_ENEMY_TURN" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 06:50:48</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>UI</Group>
       <Group>UI_ENEMY</Group>
@@ -54668,7 +54673,7 @@ Orkowie zazwyczaj nie handlują kością ani skórą, ponieważ zazwyczaj mają 
     </Groups>
     <Texts>
       <Input>Enemy Turn</Input>
-      <Output>Zwrot wroga</Output>
+      <Output>Tura przeciwnika</Output>
     </Texts>
   </Element>
   <Element ID="4437" Key="UI_FRIENDLY_TURN" Flag="0">
@@ -55144,7 +55149,12 @@ Orkowie zazwyczaj nie handlują kością ani skórą, ponieważ zazwyczaj mają 
       <Output>Rozwiązywanie bieżącego stosu ...</Output>
     </Texts>
   </Element>
-  <Element ID="4480" Key="UI_END_TURN" Flag="0">
+  <Element ID="4480" Key="UI_END_TURN" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 06:50:34</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>UI</Group>
       <Group>UI_END</Group>
@@ -55526,24 +55536,34 @@ Orkowie zazwyczaj nie handlują kością ani skórą, ponieważ zazwyczaj mają 
       <Output>Wybierz tag</Output>
     </Texts>
   </Element>
-  <Element ID="4514" Key="UI_TURN" Flag="0">
+  <Element ID="4514" Key="UI_TURN" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 06:50:30</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>UI</Group>
       <Group>UI_TURN</Group>
     </Groups>
     <Texts>
       <Input>Turn:</Input>
-      <Output>Turn:</Output>
+      <Output>Tura:</Output>
     </Texts>
   </Element>
-  <Element ID="4515" Key="UI_TURN2" Flag="0">
+  <Element ID="4515" Key="UI_TURN2" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 06:50:21</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>UI</Group>
       <Group>UI_TURN</Group>
     </Groups>
     <Texts>
       <Input>Turn </Input>
-      <Output>Obróć </Output>
+      <Output>Tura</Output>
     </Texts>
   </Element>
   <Element ID="4516" Key="UI_INVENTORY" Flag="0">

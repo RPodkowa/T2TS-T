@@ -4,21 +4,21 @@
     <Entry Key="DES_TAG_WITS" Val="Spryt" />
     <Entry Key="DES_TAG_WITS_DES" Val="Spryt określa, jak szybko postać może działać podczas wyzwania." />
     <Entry Key="DES_TAG_STRENGTH" Val="Siła" />
-    <Entry Key="DES_TAG_STRENGTH_DES" Val="Podstawowy atrybut fizyczny. Wpływa na limity przenoszenia i zdrowie." />
+    <Entry Key="DES_TAG_STRENGTH_DES" Val="Podstawowy atrybut fizyczny. Wpływa na udźwig i zdrowie." />
     <Entry Key="DES_TAG_PERCEPTION" Val="Percepcja" />
-    <Entry Key="DES_TAG_PERCEPTION_DES" Val="Drugorzędny atrybut fizyczny. Wpływa na gromadzenie, szczęście i zdrowie." />
+    <Entry Key="DES_TAG_PERCEPTION_DES" Val="Dodatkowy atrybut fizyczny. Wpływa na zbieractwo, szczęście i zdrowie." />
     <Entry Key="DES_TAG_INTELLIGENCE" Val="Inteligencja" />
-    <Entry Key="DES_TAG_INTELLIGENCE_DES" Val="Podstawowy atrybut mentalny. Wpływa na zdolności badawcze i rzemieślnicze oraz zdrowie psychiczne." />
+    <Entry Key="DES_TAG_INTELLIGENCE_DES" Val="Podstawowy atrybut mentalny. Wpływa na badania i rzemiosło oraz zdrowie psychiczne." />
     <Entry Key="DES_TAG_WISDOM" Val="Mądrość" />
-    <Entry Key="DES_TAG_WISDOM_DES" Val="Dodatkowy atrybut mentalny. Wpływa na szczęście, rytuały, umiejętności tworzenia i gromadzenia oraz poczytalność (zdrowie psychiczne)." />
+    <Entry Key="DES_TAG_WISDOM_DES" Val="Dodatkowy atrybut mentalny. Wpływa na szczęście, rytuały, rzemiosło i zbieractwo oraz poczytalność (zdrowie psychiczne)." />
     <Entry Key="DES_TAG_MYSTICISM" Val="Mistycyzm" />
-    <Entry Key="DES_TAG_MYSTICISM_DES" Val="Pierwotny atrybut duchowy. Wpływa na zdolności badawcze i rytuały oraz na wiarę (zdrowie duchowe)." />
+    <Entry Key="DES_TAG_MYSTICISM_DES" Val="Podstawowy atrybut duchowy. Wpływa na badania i rytuały oraz na wiarę (zdrowie duchowe)." />
     <Entry Key="DES_TAG_DESTINY" Val="Przeznaczenie" />
-    <Entry Key="DES_TAG_DESTINY_DES" Val="Drugorzędny atrybut duchowy. Wpływa na zbieranie, tworzenie, badania, rytuały, szczęście i wiarę (zdrowie duchowe)." />
-    <Entry Key="DES_TAG_GATHERING" Val="Zbieranie" />
-    <Entry Key="DES_TAG_GATHERING_DES" Val="Określa zdolność postaci do zbierania materiałów i szybkość, z jaką to robią." />
-    <Entry Key="DES_TAG_CRAFTING" Val="Crafting" />
-    <Entry Key="DES_TAG_CRAFTING_DES" Val="Możliwość tworzenia przedmiotów, budynków, gotowania potraw i mieszania materiałów." />
+    <Entry Key="DES_TAG_DESTINY_DES" Val="Dodatkowy atrybut duchowy. Wpływa na zbieractwo, rzemiosło, badania, rytuały, szczęście i wiarę (zdrowie duchowe)." />
+    <Entry Key="DES_TAG_GATHERING" Val="Zbieractwo" />
+    <Entry Key="DES_TAG_GATHERING_DES" Val="Określa zdolność postaci do zbierania materiałów i szybkość, z jaką to robi." />
+    <Entry Key="DES_TAG_CRAFTING" Val="Rzemiosło" />
+    <Entry Key="DES_TAG_CRAFTING_DES" Val="Możliwość tworzenia przedmiotów, budynków, gotowania potraw i łączenia materiałów." />
     <Entry Key="DES_TAG_RESEARCH" Val="Badania" />
     <Entry Key="DES_TAG_RESEARCH_DES" Val="Poznawanie nowych rzeczy i studiowanie przedmiotów i miejsc." />
     <Entry Key="DES_TAG_LUCK" Val="Szczęście" />
@@ -26,16 +26,16 @@
     <Entry Key="DES_TAG_RITUALS" Val="Rytuały" />
     <Entry Key="DES_TAG_RITUALS_DES" Val="Wiedza o wykonywaniu rytuałów." />
     <Entry Key="DES_TAG_HEALTH_PHYSICAL" Val="Zdrowie" />
-    <Entry Key="DES_TAG_HEALTH_PHYSICAL_DES" Val="Odzwierciedla dobre samopoczucie fizyczne." />
+    <Entry Key="DES_TAG_HEALTH_PHYSICAL_DES" Val="Odzwierciedla samopoczucie fizyczne." />
     <Entry Key="DES_TAG_HEALTH_MENTAL" Val="Poczytalność" />
     <Entry Key="DES_TAG_HEALTH_MENTAL_DES" Val="Odzwierciedla samopoczucie psychiczne." />
     <Entry Key="DES_TAG_HEALTH_SPIRITUAL" Val="Wiara" />
-    <Entry Key="DES_TAG_HEALTH_SPIRITUAL_DES" Val="Odzwierciedla wewnętrzną integralność." />
-    <Entry Key="DES_TAG_MAX_HEALTH_PHYSICAL" Val="Max Health" />
-    <Entry Key="DES_TAG_MAX_HEALTH_PHYSICAL_DES" Val="Maksymalna ilość zdrowia, jaką może posiadać postać. 1 punkt zdrowia jest odzyskiwany w każdej turze, tempo regeneracji można zwiększyć, kempingując lub odwiedzając chatę uzdrowiciela. Zdrowie poniżej 30% stwarza ryzyko śmierci." />
-    <Entry Key="DES_TAG_MAX_HEALTH_MENTAL" Val="Max Sanity" />
-    <Entry Key="DES_TAG_MAX_HEALTH_MENTAL_DES" Val="Maksymalna ilość poczytalności, jaką może mieć postać. Regeneracja każdego punktu poczytalności zużywa 2 morale, do 20% maksymalnego poczytalności na turę. Poczytalność poniżej 30% stwarza ryzyko, że postać opuści twoją grupę." />
-    <Entry Key="DES_TAG_MAX_HEALTH_SPIRITUAL" Val="Max Faith" />
+    <Entry Key="DES_TAG_HEALTH_SPIRITUAL_DES" Val="Odzwierciedla duchową całość." />
+    <Entry Key="DES_TAG_MAX_HEALTH_PHYSICAL" Val="Maksymalne Zdrowie" />
+    <Entry Key="DES_TAG_MAX_HEALTH_PHYSICAL_DES" Val="Maksymalna ilość zdrowia, jaką może posiadać postać. W każdej turze odzyskiwany jest 1 punkt zdrowia. Tempo regeneracji można zwiększyć rozbijająć obóz lub odwiedzając chatę uzdrowiciela. Zdrowie poniżej 30% stwarza ryzyko śmierci." />
+    <Entry Key="DES_TAG_MAX_HEALTH_MENTAL" Val="Maksymalna Poczytalność" />
+    <Entry Key="DES_TAG_MAX_HEALTH_MENTAL_DES" Val="Maksymalna ilość poczytalności, jaką może posiadać postać. W każdej turze może zostać zregenerowane do 20% maksymalnej poczytalności. Regeneracja każdego punktu zużywa 2 morale. Poczytalność poniżej 30% stwarza ryzyko, że postać opuści twoją grupę." />
+    <Entry Key="DES_TAG_MAX_HEALTH_SPIRITUAL" Val="Maksymalna Wiara" />
     <Entry Key="DES_TAG_MAX_HEALTH_SPIRITUAL_DES" Val="Maksymalna ilość wiary, jaką postać może mieć. 1 punkt wiary jest odzyskiwany w każdej turze, ale możesz również wykonać rytuał duchowego uzdrawiania. Wiara poniżej 30% powoduje stopniową utratę zdrowia." />
     <Entry Key="DES_TAG_SHIELDING" Val="Osłona" />
     <Entry Key="DES_TAG_SHIELDING_DES" Val="Ilość ochrony odnawialnej, jaką ma postać podczas wyzwania." />
@@ -57,8 +57,8 @@
     <Entry Key="DES_TAG_ACTION_POINT_COST_DES" Val="Ilość punktów akcji wymaganych do zagrania tej karty." />
     <Entry Key="DES_TAG_DUPLICATE" Val="Duplikat" />
     <Entry Key="DES_TAG_DUPLICATE_DES" Val="Ta postać została umieszczona więcej niż raz na polu bitwy. Każda kopia ma swoją własną akcję, ale za każdym razem, gdy wpływa na nią umiejętność, wszystkie inne kopie również są dotknięte. Wszystkie kopie jednego znaku mają ten sam kolor." />
-    <Entry Key="DES_TAG_SUMMON" Val="Przywołanie" />
-    <Entry Key="DES_TAG_SUMMON_DES" Val="Ta postać została wezwana i nie będzie istnieć poza walką." />
+    <Entry Key="DES_TAG_SUMMON" Val="Przywołaniec" />
+    <Entry Key="DES_TAG_SUMMON_DES" Val="Ta postać została przywołana i nie będzie istnieć poza walką." />
     <Entry Key="DES_TAG_MOVEMENT_RANGE" Val="Zasięg ruchu" />
     <Entry Key="DES_TAG_MOVEMENT_RANGE_DES" Val="Maksymalna ilość punktów ruchu (MP), którą ma postać." />
     <Entry Key="DES_TAG_SEA_MOVEMENT_RANGE" Val="Zasięg ruchu morskiego" />
@@ -81,7 +81,7 @@
     <Entry Key="DES_TAG_CA_SHIELD_DES" Val="Amouting Shielding Points podczas wyzwania. Zwykle należy je najpierw zlikwidować, zanim punkty obrażeń zostaną dotknięte obrażeniami." />
     <Entry Key="DES_TAG_CHOSEN" Val="Wybrany" />
     <Entry Key="DES_TAG_CHOSEN_DES" Val="Ta postać jest wybrana przez bogów. Są odporni na śmierć umysłową i mniej prawdopodobne, że zostaną porwani, ale jeśli umrą, twój czas się skończy." />
-    <Entry Key="DES_TAG_WOODFOLK" Val="Wood Folk" />
+    <Entry Key="DES_TAG_WOODFOLK" Val="Leśny lud" />
     <Entry Key="DES_TAG_WOODFOLK_DES" Val="Istoty, które są dostrojone do lasu." />
     <Entry Key="DES_TAG_MAGIC_USER" Val="Magiczny użytkownik" />
     <Entry Key="DES_TAG_MAGIC_USER_DES" Val="Ci, którzy zostali wyszkoleni do władania splotami magii." />
@@ -447,28 +447,28 @@
     <Entry Key="DES_TAG_ESSENCE_GRAY_DES" Val="Neutralna esencja, która może być używana wszędzie, ale nie daje żadnych specjalnych właściwości." />
     <Entry Key="DES_TAG_ESSENCE_LEATHER" Val="Esencja skóry" />
     <Entry Key="DES_TAG_ESSENCE_LEATHER_DES" Val="Opis esencji wody" />
-    <Entry Key="DES_TAG_ESSENCE_METAL" Val="Metal Essence" />
+    <Entry Key="DES_TAG_ESSENCE_METAL" Val="Esencja metalu" />
     <Entry Key="DES_TAG_ESSENCE_METAL_DES" Val="Opis esencji ognia" />
     <Entry Key="DES_TAG_ESSENCE_WOOD" Val="Esencja drewna" />
     <Entry Key="DES_TAG_ESSENCE_WOOD_DES" Val="Opis esencji wiatru" />
-    <Entry Key="DES_TAG_ESSENCE_BONE" Val="Bone Essence" />
-    <Entry Key="DES_TAG_ESSENCE_BONE_DES" Val="Opis istoty duszy" />
-    <Entry Key="DES_TAG_ESSENCE_GEM" Val="Gem Essence" />
-    <Entry Key="DES_TAG_ESSENCE_GEM_DES" Val="Opis esencji Ziemi" />
-    <Entry Key="DES_TAG_ESSENCE_STONE" Val="Stone Essence" />
+    <Entry Key="DES_TAG_ESSENCE_BONE" Val="Esencja kości" />
+    <Entry Key="DES_TAG_ESSENCE_BONE_DES" Val="Opis esencji duszy" />
+    <Entry Key="DES_TAG_ESSENCE_GEM" Val="Esencja klejnotu" />
+    <Entry Key="DES_TAG_ESSENCE_GEM_DES" Val="Opis esencji ziemi" />
+    <Entry Key="DES_TAG_ESSENCE_STONE" Val="Esencja kamienia" />
     <Entry Key="DES_TAG_ESSENCE_STONE_DES" Val="Opis esencji umysłu" />
     <Entry Key="DES_TAG_ESSENCE_DARKNESS" Val="Esencja ciemności" />
     <Entry Key="DES_TAG_ESSENCE_DARKNESS_DES" Val="Opis esencji ciemności" />
-    <Entry Key="DES_TAG_ESSENCE_LIFE" Val="Life Essence" />
-    <Entry Key="DES_TAG_ESSENCE_LIFE_DES" Val="Opis istoty życia" />
-    <Entry Key="DES_TAG_ESSENCE_SUNLIGHT" Val="Sunlight Essence" />
-    <Entry Key="DES_TAG_ESSENCE_SUNLIGHT_DES" Val="Opis esencji światła słonecznego" />
-    <Entry Key="DES_TAG_ESSENCE_DEMONIC" Val="Demoniczna esencja" />
-    <Entry Key="DES_TAG_ESSENCE_DEMONIC_DES" Val="Opis demonicznej esencji" />
+    <Entry Key="DES_TAG_ESSENCE_LIFE" Val="Esencja życia" />
+    <Entry Key="DES_TAG_ESSENCE_LIFE_DES" Val="Opis esencji życia" />
+    <Entry Key="DES_TAG_ESSENCE_SUNLIGHT" Val="Esencja światła" />
+    <Entry Key="DES_TAG_ESSENCE_SUNLIGHT_DES" Val="Opis esencji światła" />
+    <Entry Key="DES_TAG_ESSENCE_DEMONIC" Val="Esencja demona" />
+    <Entry Key="DES_TAG_ESSENCE_DEMONIC_DES" Val="Opis esencji demona" />
     <Entry Key="DES_TAG_ESSENCE_DEATH" Val="Esencja śmierci" />
     <Entry Key="DES_TAG_ESSENCE_DEATH_DES" Val="Opis esencji śmierci" />
-    <Entry Key="DES_TAG_ESSENCE_INVENTION" Val="Esencja wynalazków" />
-    <Entry Key="DES_TAG_ESSENCE_INVENTION_DES" Val="Opis esencji wynalazku" />
+    <Entry Key="DES_TAG_ESSENCE_INVENTION" Val="Esencja inwencji" />
+    <Entry Key="DES_TAG_ESSENCE_INVENTION_DES" Val="Opis esencji inwencji" />
     <Entry Key="DES_TAG_DOMAIN_NEUTRAL" Val="Domena - neutralna" />
     <Entry Key="DES_TAG_DOMAIN_NEUTRAL_DES" Val="Boska domena wszechstronności." />
     <Entry Key="DES_TAG_DOMAIN_TURMOIL" Val="Domena - zamieszanie " />
@@ -483,23 +483,23 @@
     <Entry Key="DES_TAG_DOMAIN_NATURE_DES" Val="Natura - boska domena sił naturalnych, życia, śmierci i odrodzenia. Patron mieszkańców lasu i tych, którzy szanują cykl życia." />
     <Entry Key="DES_TAG_DOMAIN_INTELLECT" Val="Domena - Intelekt" />
     <Entry Key="DES_TAG_DOMAIN_INTELLECT_DES" Val="Intelekt - boska domena umysłu i wiedzy. Patron logiki i zimnej kalkulacji, często sprzeczny z własną boską opatrznością." />
-    <Entry Key="DES_TAG_DZIEVANNA" Val="Dzievanna" />
-    <Entry Key="DES_TAG_DZIEVANNA_DES" Val="Dzievanna Opis" />
-    <Entry Key="DES_TAG_ZORYA" Val="Zorya" />
+    <Entry Key="DES_TAG_DZIEVANNA" Val="Dziewanna" />
+    <Entry Key="DES_TAG_DZIEVANNA_DES" Val="Opis Dziewanny" />
+    <Entry Key="DES_TAG_ZORYA" Val="Zoria" />
     <Entry Key="DES_TAG_ZORYA_DES" Val="Opis Zorya" />
     <Entry Key="DES_TAG_LADA" Val="Łada" />
     <Entry Key="DES_TAG_LADA_DES" Val="Opis Łady" />
-    <Entry Key="DES_TAG_STRIBOG" Val="Stribog" />
+    <Entry Key="DES_TAG_STRIBOG" Val="Strzybóg" />
     <Entry Key="DES_TAG_STRIBOG_DES" Val="Opis Stribog" />
-    <Entry Key="DES_TAG_HORZ" Val="Horz" />
-    <Entry Key="DES_TAG_HORZ_DES" Val="Horz Opis" />
-    <Entry Key="DES_TAG_MAROVIT" Val="Marovit" />
+    <Entry Key="DES_TAG_HORZ" Val="Chors" />
+    <Entry Key="DES_TAG_HORZ_DES" Val="Opis Chorsa" />
+    <Entry Key="DES_TAG_MAROVIT" Val="Marowit" />
     <Entry Key="DES_TAG_MAROVIT_DES" Val="Opis Marovit" />
-    <Entry Key="DES_TAG_SVAROG" Val="Svarog" />
+    <Entry Key="DES_TAG_SVAROG" Val="Swaróg" />
     <Entry Key="DES_TAG_SVAROG_DES" Val="Opis Svaroga" />
-    <Entry Key="DES_TAG_TRIGLAV" Val="Triglav" />
+    <Entry Key="DES_TAG_TRIGLAV" Val="Trzygłów" />
     <Entry Key="DES_TAG_TRIGLAV_DES" Val="Opis Triglav" />
-    <Entry Key="DES_TAG_NYIA" Val="Nyia" />
+    <Entry Key="DES_TAG_NYIA" Val="Nyja" />
     <Entry Key="DES_TAG_NYIA_DES" Val="Opis Nyia" />
     <Entry Key="DES_TAG_MASTERPIECE_QUALITY" Val="Jakość arcydzieła" />
     <Entry Key="DES_TAG_MASTERPIECE_QUALITY_DES" Val="Opis jakości arcydzieła" />
@@ -514,8 +514,8 @@
     <Entry Key="DES_TAG_FUEL" Val="Paliwo" />
     <Entry Key="DES_TAG_FUEL_DES" Val="Używane do podsycania ognia w osadach i obozach." />
     <Entry Key="DES_TAG_FOOD" Val="Żywność" />
-    <Entry Key="DES_TAG_FOOD_DES" Val="Potrzebny do przetrwania każdej postaci. Zróżnicowane jedzenie zwiększa morale i zapewnia bonusy." />
-    <Entry Key="DES_TAG_HERB" Val="Herb" />
+    <Entry Key="DES_TAG_FOOD_DES" Val="Potrzebna do przetrwania każdej postaci. Zróżnicowana żywność zwiększa morale i zapewnia bonusy." />
+    <Entry Key="DES_TAG_HERB" Val="Zioło" />
     <Entry Key="DES_TAG_HERB_DES" Val="Służy do gotowania lub do celów leczniczych." />
     <Entry Key="DES_TAG_ITEM" Val="Przedmiot" />
     <Entry Key="DES_TAG_ITEM_DES" Val="Opis przedmiotu" />
@@ -534,11 +534,11 @@
     <Entry Key="DES_TAG_BEAUTIFUL" Val="Piękny" />
     <Entry Key="DES_TAG_BEAUTIFUL_DES" Val="Ta postać jest piękna." />
     <Entry Key="DES_TAG_SWORD_1H" Val="Miecz jednoręczny" />
-    <Entry Key="DES_TAG_SWORD_1H_DES" Val="One Handed Sword." />
+    <Entry Key="DES_TAG_SWORD_1H_DES" Val="Miecz jednoręczny" />
     <Entry Key="DES_TAG_SWORD_2H" Val="Miecz dwuręczny" />
     <Entry Key="DES_TAG_SWORD_2H_DES" Val="Miecz dwuręczny." />
     <Entry Key="DES_TAG_AXE_1H" Val="Topór z jedną ręką" />
-    <Entry Key="DES_TAG_AXE_1H_DES" Val="One Handed Axe." />
+    <Entry Key="DES_TAG_AXE_1H_DES" Val="Topór jednoręczny" />
     <Entry Key="DES_TAG_AXE_2H" Val="Topór dwuręczny" />
     <Entry Key="DES_TAG_AXE_2H_DES" Val="Dwa rozdane topory." />
     <Entry Key="DES_TAG_THROWN_SPEARS" Val="Rzucone włócznie" />
@@ -606,13 +606,13 @@
     <Entry Key="DES_SUBRACE_HUM_STRONG1_CHILD_DES" Val="Młodzieniec, potrzebuje ochrony, zanim stanie się dorosły. Są silniejsi niż zwykłe dzieci." />
     <Entry Key="DES_SUBRACE_HUM_STRONG2_CHILD" Val="Human Child - Apprentice Hunter" />
     <Entry Key="DES_SUBRACE_HUM_STRONG2_CHILD_DES" Val="Młodzieniec, potrzebuje ochrony, zanim stanie się dorosły. są bardziej spostrzegawczy niż młodsze dzieci." />
-    <Entry Key="DES_SUBRACE_HUM_WARRIOR" Val="Human Warrior" />
+    <Entry Key="DES_SUBRACE_HUM_WARRIOR" Val="Ludzki wojownik" />
     <Entry Key="DES_SUBRACE_HUM_WARRIOR_DES" Val="Biegły w wyzwaniach fizycznych, silny i twardy." />
-    <Entry Key="DES_SUBRACE_HUM_WOJ" Val="Human Woj" />
+    <Entry Key="DES_SUBRACE_HUM_WOJ" Val="Ludzki wój" />
     <Entry Key="DES_SUBRACE_HUM_WOJ_DES" Val="Doświadczony wojownik. Biegły w wyzwaniach fizycznych, silny i twardy." />
     <Entry Key="DES_SUBRACE_HUM_CRAFTSMAN" Val="Człowiek-rzemieślnik" />
     <Entry Key="DES_SUBRACE_HUM_CRAFTSMAN_DES" Val="Specjalizuje się w wytwarzaniu przedmiotów i konstrukcji." />
-    <Entry Key="DES_SUBRACE_HUM_GATHERER" Val="Human Gatherer" />
+    <Entry Key="DES_SUBRACE_HUM_GATHERER" Val="Ludzki zbieracz" />
     <Entry Key="DES_SUBRACE_HUM_GATHERER_DES" Val="Szybkie dłonie i ostre oczy sprawiają, że są biegli w zbieraniu zasobów." />
     <Entry Key="DES_SUBRACE_HUM_HUNTER" Val="Ludzki łowca" />
     <Entry Key="DES_SUBRACE_HUM_HUNTER_DES" Val="Adept w polowaniu na zdobycz i zwiad." />
@@ -627,11 +627,11 @@
     <Entry Key="DES_SUBRACE_HUM_WITCH_DES" Val="Mądra kobieta, znająca mistyczne sposoby, ale często praktykująca mroczną magię, która niszczy duszę i ciało. Dlatego czarownice, nawet te ledwo dorosłe, mogą przypominać stare kobiety. Młoda czarownica ukończyła próby, ale została uznana za potrzebującą dalszej nauki. " />
     <Entry Key="DES_SUBRACE_HUM_BANDIT_ARCHER" Val="Ludzki bandyta Archer" />
     <Entry Key="DES_SUBRACE_HUM_BANDIT_ARCHER_DES" Val="Banita uzbrojony w łuk, żerujący na bogatych i słabych." />
-    <Entry Key="DES_SUBRACE_HUM_BANDIT_WARRIOR" Val="Human Bandit Warrior" />
+    <Entry Key="DES_SUBRACE_HUM_BANDIT_WARRIOR" Val="Ludzki wojownik bandytów" />
     <Entry Key="DES_SUBRACE_HUM_BANDIT_WARRIOR_DES" Val="Banita uzbrojony w broń do walki wręcz, żerujący na bogatych i słabych." />
     <Entry Key="DES_SUBRACE_HUM_BANDIT_LEADER" Val="Ludzki przywódca bandytów" />
     <Entry Key="DES_SUBRACE_HUM_BANDIT_LEADER_DES" Val="Doświadczony łobuziak z następcą. Wiadomo, że ma słabość do ładnych twarzy." />
-    <Entry Key="DES_SUBRACE_HUM_SCAVENGER" Val="Human Scavenger" />
+    <Entry Key="DES_SUBRACE_HUM_SCAVENGER" Val="Ludzki padlinożerca" />
     <Entry Key="DES_SUBRACE_HUM_SCAVENGER_DES" Val="Opuszczeni przez bogów dawno temu i doprowadzeni do szaleństwa, przetrwają wszelkimi niezbędnymi środkami." />
     <Entry Key="DES_SUBRACE_HUM_SCAVENGER_WITCH" Val="Human Scavenger Witch" />
     <Entry Key="DES_SUBRACE_HUM_SCAVENGER_WITCH_DES" Val="Zbieracze są zazwyczaj bandą niewykwalifikowanych zbirów, ale nawet wśród ich rodzaju można znaleźć mroczny znak czarów. Czarownice zwiadowcze są bardziej narażone na korupcję i na ogół mają mniejszą kontrolę niż ich odpowiedniki ludzkie lub orkowe." />

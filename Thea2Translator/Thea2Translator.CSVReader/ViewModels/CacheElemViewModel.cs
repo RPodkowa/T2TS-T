@@ -11,22 +11,23 @@ namespace Thea2Translator.DesktopApp.ViewModels
     internal class CacheElemViewModel
     {
         public CacheElem CacheElem { get; set; }
+        public bool IsConfirm { get; set; }
 
         public string Color
         {
             get
-            {
-                
+            {               
                 return CacheElem.ToConfirm ? 
                     (CacheElem.ToTranslate? Colors.Red.ToString()
                     :Colors.Black.ToString())
                     : Colors.DarkGreen.ToString();
             }
-        }
+        }     
 
         public CacheElemViewModel(CacheElem CacheElem)
         {
             this.CacheElem = CacheElem;
+            this.IsConfirm = !CacheElem.ToConfirm;
         }
 
 

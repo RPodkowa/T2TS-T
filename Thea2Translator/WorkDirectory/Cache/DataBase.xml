@@ -585,7 +585,7 @@
     </Groups>
     <Texts>
       <Input>The maximum amount of Faith the character can have. 1 Faith point is recovered each turn, but you can also perform the Spiritual Healing ritual. Faith below 30% causes gradual Health loss.</Input>
-      <Output>Maksymalna ilość wiary, jaką postać może mieć. 1 punkt wiary jest odzyskiwany w każdej turze, ale możesz również wykonać rytuał duchowego uzdrawiania. Wiara poniżej 30% powoduje stopniową utratę zdrowia.</Output>
+      <Output>Maksymalna ilość wiary, jaką postać może mieć. 1 punkt wiary jest odzyskiwany w każdej turze, ale możesz również wykonać rytuał duchowego uzdrawiania. Wiara poniżej 30% powoduje stopniową utratę zdrowia.555</Output>
     </Texts>
   </Element>
   <Element ID="37" Key="DES_TAG_SHIELDING" Flag="1">
@@ -6062,7 +6062,12 @@
       <Output>Efekty podrzędności są wyzwalane, gdy grupa się porusza.</Output>
     </Texts>
   </Element>
-  <Element ID="443" Key="DES_TAG_ESSENCE_GRAY" Flag="0">
+  <Element ID="443" Key="DES_TAG_ESSENCE_GRAY" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 22:37:38</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -16247,7 +16252,12 @@
       <Output>Topór walki magmowej</Output>
     </Texts>
   </Element>
-  <Element ID="1261" Key="DES_CLUB_1H" Flag="0">
+  <Element ID="1261" Key="DES_CLUB_1H" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 22:54:42</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_CLUB</Group>
@@ -16255,7 +16265,7 @@
     </Groups>
     <Texts>
       <Input>Club</Input>
-      <Output>Klub</Output>
+      <Output>Pałka</Output>
     </Texts>
   </Element>
   <Element ID="1262" Key="DES_CLUB_1H_DES" Flag="0">
@@ -16269,7 +16279,12 @@
       <Output>Dość prymitywna, ale wciąż dość skuteczna broń tępa, która zadaje obrażenia od rozbryzgu wokół głównego celu. Trzymany w jednej ręce.</Output>
     </Texts>
   </Element>
-  <Element ID="1263" Key="DES_CLUB_1H_IRON" Flag="0">
+  <Element ID="1263" Key="DES_CLUB_1H_IRON" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 22:55:25</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_CLUB</Group>
@@ -16278,10 +16293,15 @@
     </Groups>
     <Texts>
       <Input>Iron Club</Input>
-      <Output>Żelazny klub</Output>
+      <Output>Żelazna pałka</Output>
     </Texts>
   </Element>
-  <Element ID="1264" Key="DES_CLUB_1H_GOLD" Flag="0">
+  <Element ID="1264" Key="DES_CLUB_1H_GOLD" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 22:55:32</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_CLUB</Group>
@@ -16290,10 +16310,15 @@
     </Groups>
     <Texts>
       <Input>Golden Club</Input>
-      <Output>Złoty klub</Output>
+      <Output>Złota pałka</Output>
     </Texts>
   </Element>
-  <Element ID="1265" Key="DES_CLUB_1H_STEEL" Flag="0">
+  <Element ID="1265" Key="DES_CLUB_1H_STEEL" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 22:55:40</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_CLUB</Group>
@@ -16302,10 +16327,15 @@
     </Groups>
     <Texts>
       <Input>Steel Club</Input>
-      <Output>Klub stali</Output>
+      <Output>Stalowa pałka</Output>
     </Texts>
   </Element>
-  <Element ID="1266" Key="DES_CLUB_1H_SILVER" Flag="0">
+  <Element ID="1266" Key="DES_CLUB_1H_SILVER" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 22:55:51</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_CLUB</Group>
@@ -16314,10 +16344,15 @@
     </Groups>
     <Texts>
       <Input>Silver Club</Input>
-      <Output>Srebrny Klub</Output>
+      <Output>Srebrna pałka</Output>
     </Texts>
   </Element>
-  <Element ID="1267" Key="DES_CLUB_1H_MITHRILL" Flag="0">
+  <Element ID="1267" Key="DES_CLUB_1H_MITHRILL" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 22:56:12</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_CLUB</Group>
@@ -16326,10 +16361,15 @@
     </Groups>
     <Texts>
       <Input>Mithril Club</Input>
-      <Output>Mithril Club</Output>
+      <Output>Mithrilowa pałka</Output>
     </Texts>
   </Element>
-  <Element ID="1268" Key="DES_CLUB_1H_BONE" Flag="0">
+  <Element ID="1268" Key="DES_CLUB_1H_BONE" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 22:56:22</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_CLUB</Group>
@@ -16338,10 +16378,15 @@
     </Groups>
     <Texts>
       <Input>Bone Club</Input>
-      <Output>Klub kości</Output>
+      <Output>Kościana pałka</Output>
     </Texts>
   </Element>
-  <Element ID="1269" Key="DES_CLUB_1H_BLOOD_BONE" Flag="0">
+  <Element ID="1269" Key="DES_CLUB_1H_BLOOD_BONE" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 22:56:35</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_CLUB</Group>
@@ -16351,10 +16396,15 @@
     </Groups>
     <Texts>
       <Input>Blood Club</Input>
-      <Output>Blood Club</Output>
+      <Output>Krwista pałka</Output>
     </Texts>
   </Element>
-  <Element ID="1270" Key="DES_CLUB_1H_SHADOW_BONE" Flag="0">
+  <Element ID="1270" Key="DES_CLUB_1H_SHADOW_BONE" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 22:56:49</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_CLUB</Group>
@@ -16364,10 +16414,15 @@
     </Groups>
     <Texts>
       <Input>Shadow Club</Input>
-      <Output>Klub Cienia</Output>
+      <Output>Cienista pałka</Output>
     </Texts>
   </Element>
-  <Element ID="1271" Key="DES_CLUB_1H_MONSTER_BONE" Flag="0">
+  <Element ID="1271" Key="DES_CLUB_1H_MONSTER_BONE" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 22:57:17</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_CLUB</Group>
@@ -16377,10 +16432,15 @@
     </Groups>
     <Texts>
       <Input>Monster Club</Input>
-      <Output>Klub Monsterów</Output>
+      <Output>Potworna pałka</Output>
     </Texts>
   </Element>
-  <Element ID="1272" Key="DES_CLUB_1H_DRAGON_BONE" Flag="0">
+  <Element ID="1272" Key="DES_CLUB_1H_DRAGON_BONE" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 22:57:42</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_CLUB</Group>
@@ -16390,10 +16450,15 @@
     </Groups>
     <Texts>
       <Input>Dragon Club</Input>
-      <Output>Dragon Club</Output>
+      <Output>Smocza pałka</Output>
     </Texts>
   </Element>
-  <Element ID="1273" Key="DES_CLUB_1H_WOOD" Flag="0">
+  <Element ID="1273" Key="DES_CLUB_1H_WOOD" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 22:57:50</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_CLUB</Group>
@@ -16402,10 +16467,15 @@
     </Groups>
     <Texts>
       <Input>Wooden Club</Input>
-      <Output>Drewniany klub</Output>
+      <Output>Drewniana pałka</Output>
     </Texts>
   </Element>
-  <Element ID="1274" Key="DES_CLUB_1H_DRYAD_WOOD" Flag="0">
+  <Element ID="1274" Key="DES_CLUB_1H_DRYAD_WOOD" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 22:58:18</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_CLUB</Group>
@@ -16415,10 +16485,15 @@
     </Groups>
     <Texts>
       <Input>Dryad Club</Input>
-      <Output>Klub Driady</Output>
+      <Output>Pałka Driady</Output>
     </Texts>
   </Element>
-  <Element ID="1275" Key="DES_CLUB_1H_DARK_WOOD" Flag="0">
+  <Element ID="1275" Key="DES_CLUB_1H_DARK_WOOD" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 22:58:33</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_CLUB</Group>
@@ -16428,10 +16503,15 @@
     </Groups>
     <Texts>
       <Input>Dark Club</Input>
-      <Output>Dark Club</Output>
+      <Output>Pałka ciemności</Output>
     </Texts>
   </Element>
-  <Element ID="1276" Key="DES_CLUB_1H_ELVEN_WOOD" Flag="0">
+  <Element ID="1276" Key="DES_CLUB_1H_ELVEN_WOOD" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 22:58:42</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_CLUB</Group>
@@ -16441,10 +16521,15 @@
     </Groups>
     <Texts>
       <Input>Elven Club</Input>
-      <Output>Elven Club</Output>
+      <Output>Elficka pałka</Output>
     </Texts>
   </Element>
-  <Element ID="1277" Key="DES_CLUB_1H_ANCIENT_WOOD" Flag="0">
+  <Element ID="1277" Key="DES_CLUB_1H_ANCIENT_WOOD" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 22:58:48</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_CLUB</Group>
@@ -16454,10 +16539,15 @@
     </Groups>
     <Texts>
       <Input>Ancient Club</Input>
-      <Output>Starożytny klub</Output>
+      <Output>Starożytna pałka</Output>
     </Texts>
   </Element>
-  <Element ID="1278" Key="DES_CLUB_1H_SANDSTONE" Flag="0">
+  <Element ID="1278" Key="DES_CLUB_1H_SANDSTONE" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 22:58:57</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_CLUB</Group>
@@ -16466,10 +16556,15 @@
     </Groups>
     <Texts>
       <Input>Sandstone Club</Input>
-      <Output>Klub z piaskowca</Output>
+      <Output>Pałka z piaskowca</Output>
     </Texts>
   </Element>
-  <Element ID="1279" Key="DES_CLUB_1H_CLAY" Flag="0">
+  <Element ID="1279" Key="DES_CLUB_1H_CLAY" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 22:59:09</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_CLUB</Group>
@@ -16478,10 +16573,15 @@
     </Groups>
     <Texts>
       <Input>Clay Club</Input>
-      <Output>Klub gliny</Output>
+      <Output>Gliniana pałka</Output>
     </Texts>
   </Element>
-  <Element ID="1280" Key="DES_CLUB_1H_QUARTZ" Flag="0">
+  <Element ID="1280" Key="DES_CLUB_1H_QUARTZ" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 22:59:16</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_CLUB</Group>
@@ -16490,10 +16590,15 @@
     </Groups>
     <Texts>
       <Input>Quartz Club</Input>
-      <Output>Klub Kwarcowy</Output>
+      <Output>Kwarcowa pałka</Output>
     </Texts>
   </Element>
-  <Element ID="1281" Key="DES_CLUB_1H_GRANITE" Flag="0">
+  <Element ID="1281" Key="DES_CLUB_1H_GRANITE" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 22:59:25</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_CLUB</Group>
@@ -16502,10 +16607,15 @@
     </Groups>
     <Texts>
       <Input>Granite Club</Input>
-      <Output>Klub granitowy</Output>
+      <Output>Granitowa pałka</Output>
     </Texts>
   </Element>
-  <Element ID="1282" Key="DES_CLUB_1H_OBSIDIAN" Flag="0">
+  <Element ID="1282" Key="DES_CLUB_1H_OBSIDIAN" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 22:59:38</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_CLUB</Group>
@@ -16514,10 +16624,15 @@
     </Groups>
     <Texts>
       <Input>Obsidian Club</Input>
-      <Output>Obsidian Club</Output>
+      <Output>Obydianowa pałka</Output>
     </Texts>
   </Element>
-  <Element ID="1283" Key="DES_CLUB_1H_AMBER" Flag="0">
+  <Element ID="1283" Key="DES_CLUB_1H_AMBER" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 22:59:45</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_CLUB</Group>
@@ -16526,10 +16641,15 @@
     </Groups>
     <Texts>
       <Input>Amber Club</Input>
-      <Output>Amber Club</Output>
+      <Output>Bursztynowa pałka</Output>
     </Texts>
   </Element>
-  <Element ID="1284" Key="DES_CLUB_1H_MALACHITE" Flag="0">
+  <Element ID="1284" Key="DES_CLUB_1H_MALACHITE" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 22:59:53</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_CLUB</Group>
@@ -16538,10 +16658,15 @@
     </Groups>
     <Texts>
       <Input>Malachite Club</Input>
-      <Output>Klub Malachitów</Output>
+      <Output>Malachitowa pałka</Output>
     </Texts>
   </Element>
-  <Element ID="1285" Key="DES_CLUB_1H_TOPAZ" Flag="0">
+  <Element ID="1285" Key="DES_CLUB_1H_TOPAZ" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 23:00:01</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_CLUB</Group>
@@ -16550,10 +16675,15 @@
     </Groups>
     <Texts>
       <Input>Topaz Club</Input>
-      <Output>Klub Topaz</Output>
+      <Output>Topazowa pałka</Output>
     </Texts>
   </Element>
-  <Element ID="1286" Key="DES_CLUB_1H_RUBY" Flag="0">
+  <Element ID="1286" Key="DES_CLUB_1H_RUBY" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 23:00:08</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_CLUB</Group>
@@ -16562,10 +16692,15 @@
     </Groups>
     <Texts>
       <Input>Ruby Club</Input>
-      <Output>Ruby Club</Output>
+      <Output>Rubinowa pałka</Output>
     </Texts>
   </Element>
-  <Element ID="1287" Key="DES_CLUB_1H_DIAMOND" Flag="0">
+  <Element ID="1287" Key="DES_CLUB_1H_DIAMOND" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 23:00:15</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_CLUB</Group>
@@ -16574,10 +16709,15 @@
     </Groups>
     <Texts>
       <Input>Diamond Club</Input>
-      <Output>Klub Diamentów</Output>
+      <Output>Diamentowa pałka</Output>
     </Texts>
   </Element>
-  <Element ID="1288" Key="DES_CLUB_1H_ENCHANTED_BONE" Flag="0">
+  <Element ID="1288" Key="DES_CLUB_1H_ENCHANTED_BONE" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 23:00:22</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_CLUB</Group>
@@ -16587,10 +16727,15 @@
     </Groups>
     <Texts>
       <Input>Enchanted Club</Input>
-      <Output>Zaczarowany klub</Output>
+      <Output>Zaczarowana pałka</Output>
     </Texts>
   </Element>
-  <Element ID="1289" Key="DES_CLUB_1H_VOID_SPARKLER" Flag="0">
+  <Element ID="1289" Key="DES_CLUB_1H_VOID_SPARKLER" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 23:00:55</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_CLUB</Group>
@@ -16600,10 +16745,15 @@
     </Groups>
     <Texts>
       <Input>Sparkling Club</Input>
-      <Output>Klub musujący</Output>
+      <Output>Błyszcząca pałka</Output>
     </Texts>
   </Element>
-  <Element ID="1290" Key="DES_CLUB_1H_FORGOTTEN_ESSENCE" Flag="0">
+  <Element ID="1290" Key="DES_CLUB_1H_FORGOTTEN_ESSENCE" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 23:01:11</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_CLUB</Group>
@@ -16613,10 +16763,15 @@
     </Groups>
     <Texts>
       <Input>Forgotten Club</Input>
-      <Output>Zapomniany klub</Output>
+      <Output>Zapomniana pałka</Output>
     </Texts>
   </Element>
-  <Element ID="1291" Key="DES_CLUB_1H_STONE_WOOD" Flag="0">
+  <Element ID="1291" Key="DES_CLUB_1H_STONE_WOOD" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 23:01:40</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_CLUB</Group>
@@ -16626,10 +16781,15 @@
     </Groups>
     <Texts>
       <Input>Stonewood Club</Input>
-      <Output>Klub Stonewood</Output>
+      <Output>Skamieniała pałka</Output>
     </Texts>
   </Element>
-  <Element ID="1292" Key="DES_CLUB_1H_SACRED_WOOD" Flag="0">
+  <Element ID="1292" Key="DES_CLUB_1H_SACRED_WOOD" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 23:01:52</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_CLUB</Group>
@@ -16639,10 +16799,15 @@
     </Groups>
     <Texts>
       <Input>Sacred Club</Input>
-      <Output>Sacred Club</Output>
+      <Output>Święta pałka</Output>
     </Texts>
   </Element>
-  <Element ID="1293" Key="DES_CLUB_1H_CRYSTAL_WOOD" Flag="0">
+  <Element ID="1293" Key="DES_CLUB_1H_CRYSTAL_WOOD" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 23:01:57</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_CLUB</Group>
@@ -16652,10 +16817,15 @@
     </Groups>
     <Texts>
       <Input>Crystal Club</Input>
-      <Output>Kryształowy klub</Output>
+      <Output>Kryształowa pałka</Output>
     </Texts>
   </Element>
-  <Element ID="1294" Key="DES_CLUB_1H_PRISTINE_MATTER" Flag="0">
+  <Element ID="1294" Key="DES_CLUB_1H_PRISTINE_MATTER" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 23:02:03</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_CLUB</Group>
@@ -16665,10 +16835,15 @@
     </Groups>
     <Texts>
       <Input>Pristine Club</Input>
-      <Output>Nieskazitelny klub</Output>
+      <Output>Nieskazitelna pałka</Output>
     </Texts>
   </Element>
-  <Element ID="1295" Key="DES_CLUB_1H_GODS_BRANCH" Flag="0">
+  <Element ID="1295" Key="DES_CLUB_1H_GODS_BRANCH" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 23:02:10</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_CLUB</Group>
@@ -16678,10 +16853,15 @@
     </Groups>
     <Texts>
       <Input>Gods' Club</Input>
-      <Output>Klub bogów</Output>
+      <Output>Boska pałka</Output>
     </Texts>
   </Element>
-  <Element ID="1296" Key="DES_CLUB_1H_LIFE_ROOT" Flag="0">
+  <Element ID="1296" Key="DES_CLUB_1H_LIFE_ROOT" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 23:02:19</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_CLUB</Group>
@@ -16691,10 +16871,15 @@
     </Groups>
     <Texts>
       <Input>Living Club</Input>
-      <Output>Living Club</Output>
+      <Output>Żywa pałka</Output>
     </Texts>
   </Element>
-  <Element ID="1297" Key="DES_CLUB_1H_EARTH_CORE" Flag="0">
+  <Element ID="1297" Key="DES_CLUB_1H_EARTH_CORE" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 23:02:30</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_CLUB</Group>
@@ -16704,10 +16889,15 @@
     </Groups>
     <Texts>
       <Input>Molten Club</Input>
-      <Output>Molten Club</Output>
+      <Output>Pałka ze stopu</Output>
     </Texts>
   </Element>
-  <Element ID="1298" Key="DES_CLUB_1H_METAL_COMPOSITE" Flag="0">
+  <Element ID="1298" Key="DES_CLUB_1H_METAL_COMPOSITE" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 23:02:46</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_CLUB</Group>
@@ -16717,10 +16907,15 @@
     </Groups>
     <Texts>
       <Input>Composite Club</Input>
-      <Output>Klub kompozytowy</Output>
+      <Output>Kompozytowapałka</Output>
     </Texts>
   </Element>
-  <Element ID="1299" Key="DES_CLUB_1H_ARMOURED_STONE" Flag="0">
+  <Element ID="1299" Key="DES_CLUB_1H_ARMOURED_STONE" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 23:02:56</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_CLUB</Group>
@@ -16730,10 +16925,15 @@
     </Groups>
     <Texts>
       <Input>Armoured Club</Input>
-      <Output>Klub pancerny</Output>
+      <Output>Pancerna pałka</Output>
     </Texts>
   </Element>
-  <Element ID="1300" Key="DES_CLUB_1H_GOLEM_LEATHER" Flag="0">
+  <Element ID="1300" Key="DES_CLUB_1H_GOLEM_LEATHER" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 23:03:11</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_CLUB</Group>
@@ -16743,10 +16943,15 @@
     </Groups>
     <Texts>
       <Input>Golem Club</Input>
-      <Output>Klub Golem</Output>
+      <Output>Pałka golema</Output>
     </Texts>
   </Element>
-  <Element ID="1301" Key="DES_CLUB_1H_SECRET_ALLOY" Flag="0">
+  <Element ID="1301" Key="DES_CLUB_1H_SECRET_ALLOY" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 23:03:29</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_CLUB</Group>
@@ -16756,10 +16961,15 @@
     </Groups>
     <Texts>
       <Input>Alloy Club</Input>
-      <Output>Alloy Club</Output>
+      <Output>Pałka ze stopu</Output>
     </Texts>
   </Element>
-  <Element ID="1302" Key="DES_CLUB_1H_MOONSTONE" Flag="0">
+  <Element ID="1302" Key="DES_CLUB_1H_MOONSTONE" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 23:03:43</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_CLUB</Group>
@@ -16768,10 +16978,15 @@
     </Groups>
     <Texts>
       <Input>Moonstone Club</Input>
-      <Output>Klub Księżycowych Kamieni</Output>
+      <Output>Księżycowa pałka</Output>
     </Texts>
   </Element>
-  <Element ID="1303" Key="DES_CLUB_1H_ALCHEMY_SKIN" Flag="0">
+  <Element ID="1303" Key="DES_CLUB_1H_ALCHEMY_SKIN" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 23:04:00</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_CLUB</Group>
@@ -16781,10 +16996,15 @@
     </Groups>
     <Texts>
       <Input>Alchemy Club</Input>
-      <Output>Klub Alchemy</Output>
+      <Output>Alchemiczna pałka</Output>
     </Texts>
   </Element>
-  <Element ID="1304" Key="DES_CLUB_1H_IGNEOUS_SPIKE" Flag="0">
+  <Element ID="1304" Key="DES_CLUB_1H_IGNEOUS_SPIKE" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 23:04:16</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_CLUB</Group>
@@ -16794,10 +17014,15 @@
     </Groups>
     <Texts>
       <Input>Igneous Club</Input>
-      <Output>Igneous Club</Output>
+      <Output>Ognista pałka</Output>
     </Texts>
   </Element>
-  <Element ID="1305" Key="DES_CLUB_1H_PURE_STONE" Flag="0">
+  <Element ID="1305" Key="DES_CLUB_1H_PURE_STONE" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 23:04:22</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_CLUB</Group>
@@ -16807,10 +17032,15 @@
     </Groups>
     <Texts>
       <Input>Pure Club</Input>
-      <Output>Czysty klub</Output>
+      <Output>Czysta pałka</Output>
     </Texts>
   </Element>
-  <Element ID="1306" Key="DES_CLUB_1H_GRANDGEM" Flag="0">
+  <Element ID="1306" Key="DES_CLUB_1H_GRANDGEM" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 23:04:35</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_CLUB</Group>
@@ -16819,10 +17049,15 @@
     </Groups>
     <Texts>
       <Input>Grand Club</Input>
-      <Output>Grand Club</Output>
+      <Output>Wielka pałka</Output>
     </Texts>
   </Element>
-  <Element ID="1307" Key="DES_CLUB_2H" Flag="0">
+  <Element ID="1307" Key="DES_CLUB_2H" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 23:05:05</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_CLUB</Group>
@@ -16830,7 +17065,7 @@
     </Groups>
     <Texts>
       <Input>Mallet</Input>
-      <Output>Mallet</Output>
+      <Output>Młot</Output>
     </Texts>
   </Element>
   <Element ID="1308" Key="DES_CLUB_2H_DES" Flag="0">
@@ -25270,7 +25505,12 @@
       <Output>Naczynia i napoje z Goblins 'Donoughteet Book. \nPodstawowe składniki: \n{ICON:Fruits}{ICON:Nuts}\nDodatkowe składniki: \n{ICON:Meat}{ICON:Fish}{ICON:BeetleJelly}{ICON:Eggs}{ICON:Spices}{ICON:Herbs}</Output>
     </Texts>
   </Element>
-  <Element ID="1996" Key="DES_PET_HORSE" Flag="0">
+  <Element ID="1996" Key="DES_PET_HORSE" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 22:41:22</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_PET</Group>
@@ -25281,7 +25521,12 @@
       <Output>Koń</Output>
     </Texts>
   </Element>
-  <Element ID="1997" Key="DES_PET_HORSE_DES" Flag="0">
+  <Element ID="1997" Key="DES_PET_HORSE_DES" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 22:41:27</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_PET</Group>
@@ -25292,7 +25537,12 @@
       <Output>Lojalny rumak, cenny towarzysz każdego bohatera.</Output>
     </Texts>
   </Element>
-  <Element ID="1998" Key="DES_PET_GOAT" Flag="0">
+  <Element ID="1998" Key="DES_PET_GOAT" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 22:41:49</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_PET</Group>
@@ -25300,10 +25550,15 @@
     </Groups>
     <Texts>
       <Input>Carrier Goat</Input>
-      <Output>Carrier Goat</Output>
+      <Output>Juczna koza</Output>
     </Texts>
   </Element>
-  <Element ID="1999" Key="DES_PET_GOAT_DES" Flag="0">
+  <Element ID="1999" Key="DES_PET_GOAT_DES" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 22:41:36</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_PET</Group>
@@ -25314,7 +25569,12 @@
       <Output>Oswojona koza specjalnie przeszkolona do noszenia twoich rzeczy.</Output>
     </Texts>
   </Element>
-  <Element ID="2000" Key="DES_PET_GOAT_BUNNY" Flag="0">
+  <Element ID="2000" Key="DES_PET_GOAT_BUNNY" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 22:42:00</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_PET</Group>
@@ -25323,10 +25583,15 @@
     </Groups>
     <Texts>
       <Input>Bunny</Input>
-      <Output>Bunny</Output>
+      <Output>Królik</Output>
     </Texts>
   </Element>
-  <Element ID="2001" Key="DES_PET_GOAT_BUNNY_DES" Flag="0">
+  <Element ID="2001" Key="DES_PET_GOAT_BUNNY_DES" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 22:42:13</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_PET</Group>
@@ -25338,7 +25603,12 @@
       <Output>To królik. Naprawdę tak jest!</Output>
     </Texts>
   </Element>
-  <Element ID="2002" Key="DES_PET_BUNNY" Flag="0">
+  <Element ID="2002" Key="DES_PET_BUNNY" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 22:42:29</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_PET</Group>
@@ -25346,10 +25616,15 @@
     </Groups>
     <Texts>
       <Input>Bunny</Input>
-      <Output>Bunny</Output>
+      <Output>Królik</Output>
     </Texts>
   </Element>
-  <Element ID="2003" Key="DES_PET_BUNNY_DES" Flag="0">
+  <Element ID="2003" Key="DES_PET_BUNNY_DES" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 22:42:58</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_PET</Group>
@@ -25360,7 +25635,12 @@
       <Output>Biały, puszysty duch.</Output>
     </Texts>
   </Element>
-  <Element ID="2004" Key="DES_PET_CAT" Flag="0">
+  <Element ID="2004" Key="DES_PET_CAT" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 22:43:04</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_PET</Group>
@@ -25368,10 +25648,15 @@
     </Groups>
     <Texts>
       <Input>Cat</Input>
-      <Output>Cat</Output>
+      <Output>Kot</Output>
     </Texts>
   </Element>
-  <Element ID="2005" Key="DES_PET_CAT_DES" Flag="0">
+  <Element ID="2005" Key="DES_PET_CAT_DES" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 22:43:10</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_PET</Group>
@@ -25382,7 +25667,12 @@
       <Output>Kot pozwala ci być jego lojalnym sługą.</Output>
     </Texts>
   </Element>
-  <Element ID="2006" Key="DES_PET_DOG" Flag="0">
+  <Element ID="2006" Key="DES_PET_DOG" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 22:43:12</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_PET</Group>
@@ -25393,7 +25683,12 @@
       <Output>Pies</Output>
     </Texts>
   </Element>
-  <Element ID="2007" Key="DES_PET_DOG_DES" Flag="0">
+  <Element ID="2007" Key="DES_PET_DOG_DES" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 22:43:14</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_PET</Group>
@@ -25404,7 +25699,12 @@
       <Output>Najlepszy przyjaciel człowieka.</Output>
     </Texts>
   </Element>
-  <Element ID="2008" Key="DES_PET_WOLF" Flag="0">
+  <Element ID="2008" Key="DES_PET_WOLF" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 22:43:18</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_PET</Group>
@@ -25415,7 +25715,12 @@
       <Output>Wilk</Output>
     </Texts>
   </Element>
-  <Element ID="2009" Key="DES_PET_WOLF_DES" Flag="0">
+  <Element ID="2009" Key="DES_PET_WOLF_DES" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 22:43:21</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_PET</Group>
@@ -25426,7 +25731,12 @@
       <Output>Ten wilk zdecydował, że jesteś alfą.</Output>
     </Texts>
   </Element>
-  <Element ID="2010" Key="DES_PET_BEAR" Flag="0">
+  <Element ID="2010" Key="DES_PET_BEAR" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 22:43:23</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_PET</Group>
@@ -25437,7 +25747,12 @@
       <Output>Niedźwiedź</Output>
     </Texts>
   </Element>
-  <Element ID="2011" Key="DES_PET_BEAR_DES" Flag="0">
+  <Element ID="2011" Key="DES_PET_BEAR_DES" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 22:43:28</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_PET</Group>
@@ -25448,7 +25763,12 @@
       <Output>Oswojony niedźwiedź, dopóki karmisz go miodem, powinieneś być w porządku.</Output>
     </Texts>
   </Element>
-  <Element ID="2012" Key="DES_PET_BOAR" Flag="0">
+  <Element ID="2012" Key="DES_PET_BOAR" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 22:43:30</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_PET</Group>
@@ -25459,7 +25779,12 @@
       <Output>Dzik</Output>
     </Texts>
   </Element>
-  <Element ID="2013" Key="DES_PET_BOAR_DES" Flag="0">
+  <Element ID="2013" Key="DES_PET_BOAR_DES" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 22:43:33</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_PET</Group>
@@ -25470,7 +25795,12 @@
       <Output>Przeszkolony dzik.</Output>
     </Texts>
   </Element>
-  <Element ID="2014" Key="DES_PET_SKSHACK" Flag="0">
+  <Element ID="2014" Key="DES_PET_SKSHACK" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 22:43:57</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_PET</Group>
@@ -25478,10 +25808,15 @@
     </Groups>
     <Texts>
       <Input>Skshack</Input>
-      <Output>Skshack</Output>
+      <Output>Skrzat</Output>
     </Texts>
   </Element>
-  <Element ID="2015" Key="DES_PET_SKSHACK_DES" Flag="0">
+  <Element ID="2015" Key="DES_PET_SKSHACK_DES" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 22:44:26</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_PET</Group>
@@ -25489,10 +25824,15 @@
     </Groups>
     <Texts>
       <Input>A friendly house demon who decided you're worthy of its blessings.</Input>
-      <Output>Przyjazny demon domowy, który zdecydował, że jesteś godny jego błogosławieństw.</Output>
+      <Output>Przyjazny domowy demon, który zdecydował, że jesteś godny jego błogosławieństw.</Output>
     </Texts>
   </Element>
-  <Element ID="2016" Key="DES_PET_CMUCH" Flag="0">
+  <Element ID="2016" Key="DES_PET_CMUCH" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 22:45:05</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_PET</Group>
@@ -25500,10 +25840,15 @@
     </Groups>
     <Texts>
       <Input>Cmuch</Input>
-      <Output>Wiele</Output>
+      <Output>Ćmuch</Output>
     </Texts>
   </Element>
-  <Element ID="2017" Key="DES_PET_CMUCH_DES" Flag="0">
+  <Element ID="2017" Key="DES_PET_CMUCH_DES" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 22:45:44</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_PET</Group>
@@ -25511,10 +25856,15 @@
     </Groups>
     <Texts>
       <Input>A shy and not so pretty demon, but he will bring you good health when befriended.</Input>
-      <Output>nieśmiały i niezbyt ładny demon, ale przyniesie ci dobre zdrowie, gdy się zaprzyjaźnisz.</Output>
+      <Output>Nieśmiały i niezbyt urodziwy demon, ale przyniesie ci dobre zdrowie, gdy się zaprzyjaźnicie.</Output>
     </Texts>
   </Element>
-  <Element ID="2018" Key="DES_PET_WRAITH" Flag="0">
+  <Element ID="2018" Key="DES_PET_WRAITH" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 22:45:52</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_PET</Group>
@@ -25522,10 +25872,15 @@
     </Groups>
     <Texts>
       <Input>Wraith</Input>
-      <Output>Wraith</Output>
+      <Output>Widmo</Output>
     </Texts>
   </Element>
-  <Element ID="2019" Key="DES_PET_WRAITH_DES" Flag="0">
+  <Element ID="2019" Key="DES_PET_WRAITH_DES" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 22:46:30</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_PET</Group>
@@ -25533,10 +25888,15 @@
     </Groups>
     <Texts>
       <Input>Try calling me a pet again, you pathetic bag of flesh!</Input>
-      <Output>Spróbuj ponownie nazwać mnie zwierzakiem, ty żałosna torebka ciała!</Output>
+      <Output>Spróbuj ponownie nazwać mnie zwierzakiem, ty żałosny worku mięsa!</Output>
     </Texts>
   </Element>
-  <Element ID="2020" Key="DES_PET_GHOST" Flag="0">
+  <Element ID="2020" Key="DES_PET_GHOST" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 22:46:32</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_PET</Group>
@@ -25547,7 +25907,12 @@
       <Output>Duch</Output>
     </Texts>
   </Element>
-  <Element ID="2021" Key="DES_PET_GHOST_DES" Flag="0">
+  <Element ID="2021" Key="DES_PET_GHOST_DES" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 22:46:36</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_PET</Group>
@@ -25558,7 +25923,12 @@
       <Output>Twój własny, przyjazny duch.</Output>
     </Texts>
   </Element>
-  <Element ID="2022" Key="DES_PET_CROW" Flag="0">
+  <Element ID="2022" Key="DES_PET_CROW" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 22:46:38</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_PET</Group>
@@ -25569,7 +25939,12 @@
       <Output>Wrona</Output>
     </Texts>
   </Element>
-  <Element ID="2023" Key="DES_PET_CROW_DES" Flag="0">
+  <Element ID="2023" Key="DES_PET_CROW_DES" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 22:46:42</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_PET</Group>
@@ -25580,7 +25955,12 @@
       <Output>Najlepszy towarzysz dla czarownicy.</Output>
     </Texts>
   </Element>
-  <Element ID="2024" Key="DES_PET_SPIDER_SPITTING" Flag="0">
+  <Element ID="2024" Key="DES_PET_SPIDER_SPITTING" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 22:48:46</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_PET</Group>
@@ -25589,10 +25969,15 @@
     </Groups>
     <Texts>
       <Input>Spitting Spider</Input>
-      <Output>Spitting Spider</Output>
+      <Output>Plujący pająk</Output>
     </Texts>
   </Element>
-  <Element ID="2025" Key="DES_PET_SPIDER_SPITTING_DES" Flag="0">
+  <Element ID="2025" Key="DES_PET_SPIDER_SPITTING_DES" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 22:46:52</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_PET</Group>
@@ -25604,7 +25989,12 @@
       <Output>Twój własny, przerażający przyjaciel.</Output>
     </Texts>
   </Element>
-  <Element ID="2026" Key="DES_PET_TURTLE" Flag="0">
+  <Element ID="2026" Key="DES_PET_TURTLE" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 22:48:51</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_PET</Group>
@@ -25615,7 +26005,12 @@
       <Output>Żelazna żaba</Output>
     </Texts>
   </Element>
-  <Element ID="2027" Key="DES_PET_TURTLE_DES" Flag="0">
+  <Element ID="2027" Key="DES_PET_TURTLE_DES" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 22:51:16</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_PET</Group>
@@ -25623,10 +26018,15 @@
     </Groups>
     <Texts>
       <Input>Although commonly known as the iron frog, wise ones know this creature to be called a turtle. It is extremely rare in Slavya, but they are as old as the elves and thus grant one's keeper their knowledge when you rub their shell three times, anti-clockwise.</Input>
-      <Output>Mądrzy, powszechnie znani jako żaba żelazna, znają to stworzenie jako żółwia. Jest to niezwykle rzadkie w Slavyi, ale są one tak stare jak elfy, a zatem dają swojemu posiadaczowi wiedzę, kiedy trzy razy pocierasz jego muszlę, w kierunku przeciwnym do ruchu wskazówek zegara.</Output>
+      <Output>Uczeni nazywają to stworzenie żółwiem. Jest niezwykle rzadkie w kraju Słowian. Są tak stare jak elfy, a zatem dają swojemu posiadaczowi wiedzę, kiedy trzy razy potryesy jego muszlę, w kierunku przeciwnym do ruchu wskazówek zegara.</Output>
     </Texts>
   </Element>
-  <Element ID="2028" Key="DES_PET_CHICKEN" Flag="0">
+  <Element ID="2028" Key="DES_PET_CHICKEN" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 22:47:57</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_PET</Group>
@@ -25634,10 +26034,15 @@
     </Groups>
     <Texts>
       <Input>Slavyan Cock</Input>
-      <Output>Slavyan Cock</Output>
+      <Output>Słowiański kogut</Output>
     </Texts>
   </Element>
-  <Element ID="2029" Key="DES_PET_CHICKEN_DES" Flag="0">
+  <Element ID="2029" Key="DES_PET_CHICKEN_DES" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 22:48:23</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_PET</Group>
@@ -25645,10 +26050,15 @@
     </Groups>
     <Texts>
       <Input>Your Slavyan Cock is the envy of all your neighbours.</Input>
-      <Output>Twój słowiański kutas jest zazdrością wszystkich twoich sąsiadów.</Output>
+      <Output>Twój słowiański kogut jest powodem zazdrości wszystkich sąsiadów.</Output>
     </Texts>
   </Element>
-  <Element ID="2030" Key="DES_IDOL" Flag="0">
+  <Element ID="2030" Key="DES_IDOL" Flag="1">
+    <Confirmation>
+      <Time>06-21-2019 22:40:52</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_IDOL</Group>

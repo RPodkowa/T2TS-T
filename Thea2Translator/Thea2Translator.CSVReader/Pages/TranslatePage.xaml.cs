@@ -115,6 +115,12 @@ namespace Thea2Translator.DesktopApp.Pages
 
         private void LbItemsToTranslate_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            if(selectedCacheElement != null 
+                && txtTranslatedText.Text != selectedCacheElement.CacheElem.OriginalText)
+            {
+                selectedCacheElement.CacheElem.SetTranslated(txtTranslatedText.Text);
+            }
+
             selectedCacheElement = lbItemsToTranslate.SelectedItem as CacheElemViewModel;
 
             txtOriginalText.Text = selectedCacheElement?.CacheElem?.OriginalText;
@@ -124,6 +130,29 @@ namespace Thea2Translator.DesktopApp.Pages
 
             RefreshVocabularyList();
             RealodStatistic();
+            SetAvaibleGroups();
+        }
+
+        private void SetAvaibleGroups()
+        {
+            if(selectedCacheElement != null)
+            {
+                groups = selectedCacheElement.CacheElem.Groups;
+                var allGroup = cbGroups.Items[0];
+                var selectedGroup = cbGroups.SelectedItem;
+
+                cbGroups.Items.Clear();
+                cbGroups.Items.Add(allGroup);
+
+                foreach(var group in groups)
+                {
+                    cbGroups.Items.Add(group);
+                }
+
+                var index = cbGroups.Items.IndexOf(selectedGroup);
+
+                cbGroups.SelectedIndex = index != -1 ? index : 0;
+            }
         }
 
         private void RealodStatistic()
@@ -144,7 +173,7 @@ namespace Thea2Translator.DesktopApp.Pages
         {
             if (txtTranslatedText.Text != null && selectedCacheElement?.CacheElem != null)
             {
-                selectedCacheElement.CacheElem.SetTranslated(txtTranslatedText.Text, true);
+                selectedCacheElement.CacheElem.SetTranslated(txtTranslatedText.Text);
 
                 var index = lbItemsToTranslate.SelectedIndex;
 
@@ -192,15 +221,15 @@ namespace Thea2Translator.DesktopApp.Pages
                     .ToList();
                 }
 
-                if (cbGroups.SelectedIndex != 0)
+                if (cbGroups.SelectedIndex != 0 && cbGroups.SelectedIndex != -1)
                 {
                     filtredElements = filtredElements.Where(e =>
                     e.CacheElem.Groups.Contains(cbGroups.SelectedValue))
                         .ToList();
                 }
 
-                lbItemsToTranslate.ItemsSource = null;
-                lbItemsToTranslate.ItemsSource = filtredElements;
+                //lbItemsToTranslate.ItemsSource = null;
+                lbItemsToTranslate.ItemsSource = filtredElements;              
             }
         }
 
@@ -227,6 +256,7 @@ namespace Thea2Translator.DesktopApp.Pages
 
         private void CbGroups_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            var cb = sender as ComboBox;
             FilterItems();
         }
 
@@ -347,6 +377,16 @@ namespace Thea2Translator.DesktopApp.Pages
 
         private void TxtSearch_TextChanged(object sender, TextChangedEventArgs e)
         {
+            FilterItems();
+        }
+
+        private void SetConfirmOnCache(object sender, RoutedEventArgs e)
+        {
+            var checkBox = sender as CheckBox;
+            var index = lbItemsToTranslate.Items.IndexOf(checkBox.DataContext);
+
+            filtredElements[index].CacheElem.SetConfirmation(checkBox.IsChecked.Value);
+            dataCache.SaveElems();
             FilterItems();
         }
     }

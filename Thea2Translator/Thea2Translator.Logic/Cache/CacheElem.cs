@@ -166,20 +166,30 @@ namespace Thea2Translator.Logic
             return attribute;
         }
 
-        public void SetTranslated(string text, bool withConfirm)
+        public void SetTranslated(string text)
         {
             TranslatedText = text;
             OutputText = TextHelper.UnNormalize(text, Specials);
             if (IsModulesElem) OutputText = TextHelper.ReplacePolishChars(OutputText);
             OldTranslatedText = "";
+        }
 
-            if (withConfirm)
+        public void SetConfirmation(bool confirm)
+        {
+            if (confirm)
             {
                 IsCorrectedByHuman = true;
                 ConfirmationTime = DateTime.Now.ToString("MM/dd/yyyy HH:mm:ss");
                 ConfirmationUser = Environment.UserName;
                 ConfirmationGuid = LogicProvider.UserId;
             }
+            else
+            {
+                IsCorrectedByHuman = false;
+                ConfirmationTime = "";
+                ConfirmationUser = "";
+                ConfirmationGuid = "";
+            }           
         }
 
         public void TryUpdateValue(string text)

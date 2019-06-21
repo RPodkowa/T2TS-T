@@ -30,7 +30,7 @@
       <outputs name="Handel." ownerID="2" targetID="7" group="G1" fromX="804" fromY="-621" />
       <outputs name="Handel." ownerID="2" targetID="5" group="G1" fromX="804" fromY="-702" />
       <outputs name="Handel." ownerID="2" targetID="3" group="G1" fromX="804" fromY="-782" />
-      <outputs name="Wracaj innym razem." ownerID="2" targetID="6" fromX="804" fromY="-862" />The Stingers pokazuja ci swój zapas do handlu.</nodes>
+      <outputs name="Wracaj innym razem." ownerID="2" targetID="6" fromX="804" fromY="-862" />The Stingers pokazuja ci swoj zapas do handlu.</nodes>
     <nodes xsi:type="NodeTrade" ID="3" positionX="1021.18225" positionY="131.77655" width="460" height="479" traderProfile="TRADER-BEASTS" playerInventory="sell">
       <outputs name="Confirm" ownerID="3" targetID="6" fromX="1451" fromY="-196" />
       <outputs name="Cancel" ownerID="3" targetID="11" fromX="1451" fromY="-276" />
@@ -73,7 +73,7 @@
         </FilterBlock>
       </logic>
       <outputs name="Handel." ownerID="7" targetID="4" fromX="1445" fromY="-908" />
-      <outputs name="Wracaj innym razem." ownerID="7" targetID="6" fromX="1445" fromY="-989" />„Nie jestescie naszymi przyjaciólmi, placicie nam najpierw.'</nodes>
+      <outputs name="Wracaj innym razem." ownerID="7" targetID="6" fromX="1445" fromY="-989" />„Nie jestescie naszymi przyjaciolmi, placicie nam najpierw.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="11" positionX="1789.41174" positionY="355.919952" width="350" height="725">
       <outputs name="Wyjdz." ownerID="11" targetID="6" fromX="2115" fromY="-135" />„Dobry handel z toba. Teraz sie wylacz.'</nodes>
   </Adventure>
@@ -119,7 +119,7 @@
       <outputs name="Handel." ownerID="2" targetID="7" group="G1" fromX="804" fromY="-621" />
       <outputs name="Handel." ownerID="2" targetID="5" group="G1" fromX="804" fromY="-702" />
       <outputs name="Handel." ownerID="2" targetID="3" group="G1" fromX="804" fromY="-782" />
-      <outputs name="Wracaj innym razem." ownerID="2" targetID="6" fromX="804" fromY="-862" />The Stingers pokazuja ci swój zapas do handlu.</nodes>
+      <outputs name="Wracaj innym razem." ownerID="2" targetID="6" fromX="804" fromY="-862" />The Stingers pokazuja ci swoj zapas do handlu.</nodes>
     <nodes xsi:type="NodeTrade" ID="3" positionX="1021.18225" positionY="131.77655" width="460" height="479" traderProfile="TRADER-BEASTS_LARGE" playerInventory="sell2">
       <outputs name="Confirm" ownerID="3" targetID="6" fromX="1451" fromY="-196" />
       <outputs name="Cancel" ownerID="3" targetID="11" fromX="1451" fromY="-276" />
@@ -162,7 +162,7 @@
         </FilterBlock>
       </logic>
       <outputs name="Handel." ownerID="7" targetID="4" fromX="1445" fromY="-908" />
-      <outputs name="Wracaj innym razem." ownerID="7" targetID="6" fromX="1445" fromY="-989" />„Nie jestescie naszymi przyjaciólmi, wiec najpierw musicie zaplacic nam dodatkowo.'</nodes>
+      <outputs name="Wracaj innym razem." ownerID="7" targetID="6" fromX="1445" fromY="-989" />„Nie jestescie naszymi przyjaciolmi, wiec najpierw musicie zaplacic nam dodatkowo.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="11" positionX="1789.41174" positionY="355.919952" width="350" height="725">
       <outputs name="Wyjdz." ownerID="11" targetID="6" fromX="2115" fromY="-135" />„Dobry handel z toba. Teraz sie wylacz.'</nodes>
   </Adventure>
@@ -181,12 +181,12 @@
           </LogicFilter>
         </FilterBlock>
       </logic>
-      <outputs name="Pozdrów swoich sojuszników. " ownerID="2" targetID="3" fromX="729" fromY="-677" />
+      <outputs name="Pozdrow swoich sojusznikow. " ownerID="2" targetID="3" fromX="729" fromY="-677" />
       <outputs name="Badz ostrozny, ale rozmawiaj z nimi." ownerID="2" targetID="11" fromX="729" fromY="-757" />
-      <outputs name="Spróbuj poradzic sobie z tym." ownerID="2" targetID="12" fromX="729" fromY="-837" />
+      <outputs name="Sprobuj poradzic sobie z tym." ownerID="2" targetID="12" fromX="729" fromY="-837" />
       <outputs name="Walcz!" ownerID="2" targetID="15" fromX="729" fromY="-917" />
       <outputs name="Odsun sie." ownerID="2" targetID="10" fromX="729" fromY="-998" />
-      <outputs name="Przekupcie Stingerów, aby pokazac, ze jestescie przyjaciólmi." ownerID="2" targetID="26" fromX="729" fromY="-1078" />Slyszysz niebezpieczny szum patrolu Stingera za toba!</nodes>
+      <outputs name="Przekupcie Stingerow, aby pokazac, ze jestescie przyjaciolmi." ownerID="2" targetID="26" fromX="729" fromY="-1078" />Slyszysz niebezpieczny szum patrolu Stingera za toba!</nodes>
     <nodes xsi:type="NodeAdventure" ID="3" positionX="813" positionY="717" width="350" height="805">
       <logic>
         <FilterBlock>
@@ -216,7 +216,7 @@
         </FilterBlock>
       </logic>
       <outputs name="Wyjdz." ownerID="11" targetID="10" fromX="1271" fromY="-688" />
-      <outputs name="Spróbuj poradzic sobie z tym." ownerID="11" targetID="12" fromX="1271" fromY="-768" />
+      <outputs name="Sprobuj poradzic sobie z tym." ownerID="11" targetID="12" fromX="1271" fromY="-768" />
       <outputs name="Walcz!" ownerID="11" targetID="15" fromX="1271" fromY="-848" />Oni nie odpowiadaja, oni ciagle przychodza do ciebie.</nodes>
     <nodes xsi:type="NodeChallenge" ID="12" positionX="1416" positionY="-259" width="500" height="726" challengeType="TypeMental" versusEventOwner="true" challengeScale="101" challengedList="ppl">
       <logic>
@@ -248,7 +248,7 @@
       <outputs ownerID="16" targetID="25" fromX="2425" fromY="-553" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="17" positionX="2234" positionY="-1419" width="350" height="725">
-      <outputs name="Wyjdz." ownerID="17" targetID="22" fromX="2559" fromY="-1910" />Pokonujesz Stingerów. 
+      <outputs name="Wyjdz." ownerID="17" targetID="22" fromX="2559" fromY="-1910" />Pokonujesz Stingerow. 
 </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="18" positionX="3337.90649" positionY="-1385.14355" width="350" height="530" allPlayersXP="-1" linkedEventUniqueID="0">
       <logic>
@@ -365,10 +365,10 @@
           </LogicFilter>
         </FilterBlock>
       </logic>
-      <outputs name="Spróbuj z nimi porozmawiac." ownerID="3" targetID="4" fromX="626" fromY="91" />
-      <outputs name="Atak!" ownerID="3" targetID="14" fromX="626" fromY="11" />Znajdujesz tetniace zyciem centrum aktywnosci zwierzat. Wyglada to troche jak duzy ul, ale potem dostrzegasz takze pare par podziemnych i rózne inne gniazda, które sa zorganizowane w jedna osade. 
+      <outputs name="Sprobuj z nimi porozmawiac." ownerID="3" targetID="4" fromX="626" fromY="91" />
+      <outputs name="Atak!" ownerID="3" targetID="14" fromX="626" fromY="11" />Znajdujesz tetniace zyciem centrum aktywnosci zwierzat. Wyglada to troche jak duzy ul, ale potem dostrzegasz takze pare par podziemnych i rozne inne gniazda, ktore sa zorganizowane w jedna osade. 
 
-Kilka pszczól zbliza sie do ciebie i mówi: 
+Kilka pszczol zbliza sie do ciebie i mowi: 
 'Ty, ty nie jestes bestia. Chcesz walczyc, czy chcesz handlowac?'
 </nodes>
     <nodes xsi:type="NodeAdventure" ID="4" positionX="715" positionY="672" width="350" height="1206">
@@ -376,13 +376,13 @@ Kilka pszczól zbliza sie do ciebie i mówi:
       <outputs name="Wyjdz." ownerID="4" targetID="6" fromX="1040" fromY="100" />
       <outputs name="Atak!" ownerID="4" targetID="14" fromX="1040" fromY="20" />
       <outputs name="[Bestia] Idz zobaczyc trening bestii." ownerID="4" targetID="16" fromX="1040" fromY="-59" />
-      <outputs name="Cos, co cie pociaga. Spójrz w dól." ownerID="4" targetID="26" fromX="1040" fromY="-139" />
+      <outputs name="Cos, co cie pociaga. Spojrz w dol." ownerID="4" targetID="26" fromX="1040" fromY="-139" />
       <outputs name="Plac z jedzeniem, aby weze usunely toksyny." ownerID="4" targetID="23" fromX="1040" fromY="-220" />
       <outputs name="Plac za rzadkiego pajaka domowego [Co 80 tur]." ownerID="4" targetID="30" fromX="1040" fromY="-300" />Lair tetni zyciem, ale staraja sie trzymac z dala od ciebie. 
 
-Mozesz handlowac lub leczyc toksyny, a niektóre pajaki moga chciec do ciebie dolaczyc za oplata. 
+Mozesz handlowac lub leczyc toksyny, a niektore pajaki moga chciec do ciebie dolaczyc za oplata. 
 
-Kiedy jestescie przyjaciólmi, mozecie rekrutowac niektóre pszczoly, pajaki lub trenowac swoje bestie, aby staly sie silniejsze, zdrowsze lub madrzejsze.</nodes>
+Kiedy jestescie przyjaciolmi, mozecie rekrutowac niektore pszczoly, pajaki lub trenowac swoje bestie, aby staly sie silniejsze, zdrowsze lub madrzejsze.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="6" positionX="-184" positionY="-309" width="350" height="530" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventure" ID="7" positionX="-595" positionY="-116" width="350" height="805">
       <logic>
@@ -396,9 +396,9 @@ Kiedy jestescie przyjaciólmi, mozecie rekrutowac niektóre pszczoly, pajaki lub t
         </FilterBlock>
       </logic>
       <outputs name="Obron sie!" ownerID="7" targetID="14" fromX="-269" fromY="-607" />
-      <outputs name="Biegnij!" ownerID="7" targetID="6" fromX="-269" fromY="-687" />Znajdujesz tetniace zyciem centrum aktywnosci zwierzat. Wyglada to troche jak duzy ul, ale potem dostrzegasz takze pare par podziemnych i rózne inne gniazda, które sa zorganizowane w jedna osade. 
+      <outputs name="Biegnij!" ownerID="7" targetID="6" fromX="-269" fromY="-687" />Znajdujesz tetniace zyciem centrum aktywnosci zwierzat. Wyglada to troche jak duzy ul, ale potem dostrzegasz takze pare par podziemnych i rozne inne gniazda, ktore sa zorganizowane w jedna osade. 
 
-Ale nie jestescie przyjaciólmi kluciarzy, wiec atakuja! 
+Ale nie jestescie przyjaciolmi kluciarzy, wiec atakuja! 
 </nodes>
     <nodes xsi:type="NodeAdventure" ID="8" positionX="2372" positionY="-555" width="350" height="725">
       <logic>
@@ -417,7 +417,7 @@ Ale nie jestescie przyjaciólmi kluciarzy, wiec atakuja!
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="8" targetID="9" fromX="2697" fromY="-1046" />Legowisko zadlów jest zniszczone. Jego mieszkancy nie zyja.</nodes>
+      <outputs name="Wyjdz." ownerID="8" targetID="9" fromX="2697" fromY="-1046" />Legowisko zadlow jest zniszczone. Jego mieszkancy nie zyja.</nodes>
     <nodes xsi:type="NodeSpawnOnMap" ID="9" positionX="2777" positionY="-690" width="480" height="503" radius="0" destroyOwner="true" linkedEventUniqueID="0">
       <outputs ownerID="9" targetID="10" fromX="3225" fromY="-1122" />
     </nodes>
@@ -467,7 +467,7 @@ Ale nie jestescie przyjaciólmi kluciarzy, wiec atakuja!
         </FilterBlock>
       </logic>
       <outputs name="Trenuj zwierzeta " ownerID="16" targetID="17" fromX="507" fromY="-1284" />
-      <outputs name="Upadek polityczny." ownerID="16" targetID="4" fromX="507" fromY="-1364" />Królowa cie bada: 
+      <outputs name="Upadek polityczny." ownerID="16" targetID="4" fromX="507" fromY="-1364" />Krolowa cie bada: 
 
 'Ciemnosc nadeszla dawno temu i zmienila nas. Wiemy, jak opanowac nasze ciala i umysly. 
 
@@ -514,7 +514,7 @@ Plac nam mieso, duzo! My tez cie szkolimy, przyjacielu bestii.'
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="22" positionX="1082" positionY="-1542" width="350" height="805">
       <outputs name="Tak, zaakceptuj." ownerID="22" targetID="17" fromX="1407" fromY="-2033" />
-      <outputs name="Upadek polityczny." ownerID="22" targetID="4" fromX="1407" fromY="-2113" />Królowa cie bada: 
+      <outputs name="Upadek polityczny." ownerID="22" targetID="4" fromX="1407" fromY="-2113" />Krolowa cie bada: 
 
 'Ciemnosc nadeszla dawno temu i zmienila nas. Wiemy, jak opanowac nasze ciala i umysly. 
 
@@ -565,7 +565,7 @@ Plac nam mieso, duzo! My tez cie szkolimy, przyjacielu bestii.'
         </FilterBlock>
       </logic>
       <outputs name="Wez to." ownerID="26" targetID="32" fromX="1965" fromY="373" />
-      <outputs name="Nie, wróc do miasta." ownerID="26" targetID="4" fromX="1965" fromY="293" />Maly critter lubi cie i chce sie przylaczyc, ale musisz zaplacic stingerom.</nodes>
+      <outputs name="Nie, wroc do miasta." ownerID="26" targetID="4" fromX="1965" fromY="293" />Maly critter lubi cie i chce sie przylaczyc, ale musisz zaplacic stingerom.</nodes>
     <nodes xsi:type="NodeDealDamage" ID="27" positionX="2209" positionY="639" width="460" height="619" challengeTypeDamage="TypeMental" minDamage="0" maxDamage="0" useCountInPercent="false">
       <logic>
         <ModifierBlock>
@@ -652,6 +652,6 @@ Plac nam mieso, duzo! My tez cie szkolimy, przyjacielu bestii.'
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="33" positionX="2216" positionY="1474" width="350" height="805">
       <outputs name="Wez to." ownerID="33" targetID="32" fromX="2541" fromY="982" />
-      <outputs name="Nie, wróc do miasta." ownerID="33" targetID="4" fromX="2541" fromY="902" />Maly critter lubi cie i chce sie przylaczyc, ale musisz zaplacic stingerom.</nodes>
+      <outputs name="Nie, wroc do miasta." ownerID="33" targetID="4" fromX="2541" fromY="902" />Maly critter lubi cie i chce sie przylaczyc, ale musisz zaplacic stingerom.</nodes>
   </Adventure>
 </MODULE>

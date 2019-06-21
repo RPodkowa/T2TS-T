@@ -17,7 +17,7 @@
     <nodes xsi:type="NodeAdventure" ID="2" positionX="467.225372" positionY="-54.73321" width="350" height="885">
       <outputs name="Zbadaj." ownerID="2" targetID="9" group="G1" fromX="792" fromY="-545" />
       <outputs name="Zbadaj." ownerID="2" targetID="3" group="G1" fromX="792" fromY="-626" />
-      <outputs name="Zbadaj." ownerID="2" targetID="8" group="G1" fromX="792" fromY="-706" />Znajdziesz stary kamienio≥om, pozornie opuszczony.</nodes>
+      <outputs name="Zbadaj." ownerID="2" targetID="8" group="G1" fromX="792" fromY="-706" />Znajdziesz stary kamieniolom, pozornie opuszczony.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="3" positionX="1119.10742" positionY="-320.504761" width="350" height="530" linkedEventUniqueID="6">
       <logic>
         <FilterBlock>
@@ -77,7 +77,7 @@
       </logic>
       <outputs name="Przeszukaj obszar." ownerID="3" targetID="5" group="G1" fromX="861" fromY="-440" />
       <outputs name="Przeszukaj obszar." ownerID="3" targetID="6" group="G1" fromX="861" fromY="-520" />
-      <outputs name="Wyjdü." ownerID="3" targetID="4" fromX="861" fromY="-600" />Znajdziesz stary kamienio≥om, pozornie opuszczony. Gdy podejdziesz bliøej, zobaczysz úlady przesz≥oúci - po≥amany sprzÍt, porzucone narzÍdzia i odrzuconπ rudÍ.</nodes>
+      <outputs name="Wyjdz." ownerID="3" targetID="4" fromX="861" fromY="-600" />Znajdziesz stary kamieniolom, pozornie opuszczony. Gdy podejdziesz blizej, zobaczysz slady przeszlosci - polamany sprzet, porzucone narzedzia i odrzucona rude.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="4" positionX="1022.04578" positionY="-1047.7019" width="350" height="530" allPlayersXP="1" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventure" ID="5" positionX="1028" positionY="675" width="350" height="885">
       <logic>
@@ -87,28 +87,28 @@
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Zbierz wszystko, co moøesz tutaj, i odejdü szybko." ownerID="5" targetID="9" group="G1" fromX="1353" fromY="183" />
-      <outputs name="Idü do ska≥y." ownerID="5" targetID="10" fromX="1353" fromY="103" />
-      <outputs name="Zbierz wszystko, co moøesz tutaj, i odejdü szybko." ownerID="5" targetID="39" group="G1" fromX="1353" fromY="23" />Gdy wchodzisz g≥Íbiej, odkrywasz pozosta≥oúci wielu humanoidÛw pod warstwπ gÍstego py≥u. Wyglπda na to, øe walczyli ze sobπ w rodzaju sza≥u, ktÛry pozostawi≥ obie strony martwe z powodu utraty krwi i wyczerpania. 
+      <outputs name="Zbierz wszystko, co mozesz tutaj, i odejdz szybko." ownerID="5" targetID="9" group="G1" fromX="1353" fromY="183" />
+      <outputs name="Idz do skaly." ownerID="5" targetID="10" fromX="1353" fromY="103" />
+      <outputs name="Zbierz wszystko, co mozesz tutaj, i odejdz szybko." ownerID="5" targetID="39" group="G1" fromX="1353" fromY="23" />Gdy wchodzisz glebiej, odkrywasz pozostalosci wielu humanoidow pod warstwa gestego pylu. Wyglada na to, ze walczyli ze soba w rodzaju szalu, ktory pozostawil obie strony martwe z powodu utraty krwi i wyczerpania. 
 
-NastÍpnie odkrywasz úlady czegoú duøego, úlizgajπcego siÍ i ciÍøkiego - i zag≥Íbi≥ siÍ on w pobliskiej skalnej powierzchni. 
+Nastepnie odkrywasz slady czegos duzego, slizgajacego sie i ciezkiego - i zaglebil sie on w pobliskiej skalnej powierzchni. 
 </nodes>
     <nodes xsi:type="NodeAdventure" ID="6" positionX="1473" positionY="-476" width="350" height="805">
-      <outputs name="Zdobπdü kamieÒ." ownerID="6" targetID="11" group="G1" fromX="1798" fromY="-967" />
-      <outputs name="Zdobπdü kamieÒ." ownerID="6" targetID="12" group="G1" fromX="1798" fromY="-1047" />Przeszukujesz miejsce i nie znajdujesz nic interesujπcego. Nadal moøe byÊ moøliwe zebranie czÍúci kamienia z tego miejsca.</nodes>
+      <outputs name="Zdobadz kamien." ownerID="6" targetID="11" group="G1" fromX="1798" fromY="-967" />
+      <outputs name="Zdobadz kamien." ownerID="6" targetID="12" group="G1" fromX="1798" fromY="-1047" />Przeszukujesz miejsce i nie znajdujesz nic interesujacego. Nadal moze byc mozliwe zebranie czesci kamienia z tego miejsca.</nodes>
     <nodes xsi:type="NodeAdventure" ID="7" positionX="2689.99756" positionY="-1458.57837" width="350" height="725">
-      <outputs name="SprÛbuj kontrolowaÊ siebie i zobacz, kto siÍ úmieje." ownerID="7" targetID="8" fromX="3015" fromY="-1949" />Zbiera≥eú zasoby w spokoju, kiedy zda≥eú sobie sprawÍ, øe masz teraz swojπ broÒ w rÍku, i czujesz siÍ coraz bardziej sk≥onny zabiÊ kogoú. 
+      <outputs name="Sprobuj kontrolowac siebie i zobacz, kto sie smieje." ownerID="7" targetID="8" fromX="3015" fromY="-1949" />Zbierales zasoby w spokoju, kiedy zdales sobie sprawe, ze masz teraz swoja bron w reku, i czujesz sie coraz bardziej sklonny zabic kogos. 
 
-A co gorsza, odczuwasz potÍøny drenaø swojego ducha, ciπgnπc ciÍ bezlitoúnie. 
+A co gorsza, odczuwasz potezny drenaz swojego ducha, ciagnac cie bezlitosnie. 
 
-S≥yszysz kpiπcy úmiech na ciebie. 
+Slyszysz kpiacy smiech na ciebie. 
 </nodes>
     <nodes xsi:type="NodeAdventure" ID="8" positionX="3232" positionY="-916" width="350" height="885">
-      <outputs name="Co to za ho≥d?" ownerID="8" targetID="17" fromX="3557" fromY="-1407" />
+      <outputs name="Co to za hold?" ownerID="8" targetID="17" fromX="3557" fromY="-1407" />
       <outputs name="Atak!" ownerID="8" targetID="15" fromX="3557" fromY="-1487" />
-      <outputs name="To jest stworzenie o mistycznym narodzeniu, wiÍc walcz z nim swoim duchem!" ownerID="8" targetID="16" fromX="3557" fromY="-1567" />ÑSsso ssstrong, przyszed≥eú oddaÊ ho≥d, prawda?'
+      <outputs name="To jest stworzenie o mistycznym narodzeniu, wiec walcz z nim swoim duchem!" ownerID="8" targetID="16" fromX="3557" fromY="-1567" />ÑSsso ssstrong, przyszedles oddac hold, prawda?'
 
-Zmys≥y, jeden z najstarszych krewnych smokÛw, wúlizguje siÍ w ciemnπ jaskiniÍ. </nodes>
+Zmysly, jeden z najstarszych krewnych smokow, wslizguje sie w ciemna jaskinie. </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="9" positionX="1484" positionY="754" width="350" height="530" allPlayersXP="2" allPlayersRP="1" linkedEventUniqueID="0">
       <logic>
         <FilterBlock>
@@ -134,12 +134,12 @@ Zmys≥y, jeden z najstarszych krewnych smokÛw, wúlizguje siÍ w ciemnπ jaskiniÍ. <
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="10" positionX="1980.35254" positionY="1023.03632" width="350" height="885" image="Event096">
       <outputs name="Atak!" ownerID="10" targetID="15" fromX="2306" fromY="531" />
-      <outputs name="To jest stworzenie o mistycznym narodzeniu, wiÍc walcz z nim swoim duchem!" ownerID="10" targetID="16" fromX="2306" fromY="451" />
-      <outputs name="Co to za ho≥d?" ownerID="10" targetID="17" fromX="2306" fromY="371" />Wkradasz siÍ ostroønie, a nawet znajdziesz kilka rozrzuconych kamieni szlachetnych. Ale tak jak myúlisz, øe nie ma juø nic do znalezienia, s≥yszysz cichy úmiech: 
+      <outputs name="To jest stworzenie o mistycznym narodzeniu, wiec walcz z nim swoim duchem!" ownerID="10" targetID="16" fromX="2306" fromY="451" />
+      <outputs name="Co to za hold?" ownerID="10" targetID="17" fromX="2306" fromY="371" />Wkradasz sie ostroznie, a nawet znajdziesz kilka rozrzuconych kamieni szlachetnych. Ale tak jak myslisz, ze nie ma juz nic do znalezienia, slyszysz cichy smiech: 
 
-'Ssso ssstrong, przyszed≥eú zap≥aciÊ daninÍ, prawda?'
+'Ssso ssstrong, przyszedles zaplacic danine, prawda?'
 
-Zmys≥y, jeden z najstarszych smoczych krewnych, pojawia siÍ w polu widzenia.</nodes>
+Zmysly, jeden z najstarszych smoczych krewnych, pojawia sie w polu widzenia.</nodes>
     <nodes xsi:type="NodeAdventure" ID="11" positionX="2114.38916" positionY="-176.694473" width="350" height="805">
       <logic>
         <FilterBlock>
@@ -156,10 +156,10 @@ Zmys≥y, jeden z najstarszych smoczych krewnych, pojawia siÍ w polu widzenia.</no
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Oprzyj siÍ tej klπtwie." ownerID="11" targetID="14" fromX="2440" fromY="-667" />
-      <outputs name="Lepiej po prostu biegnij." ownerID="11" targetID="4" fromX="2440" fromY="-748" />Zbiera≥eú zasoby w spokoju, kiedy zda≥eú sobie sprawÍ, øe masz teraz swojπ broÒ w rÍku, i czujesz siÍ coraz bardziej sk≥onny zabiÊ kogoú. 
+      <outputs name="Oprzyj sie tej klatwie." ownerID="11" targetID="14" fromX="2440" fromY="-667" />
+      <outputs name="Lepiej po prostu biegnij." ownerID="11" targetID="4" fromX="2440" fromY="-748" />Zbierales zasoby w spokoju, kiedy zdales sobie sprawe, ze masz teraz swoja bron w reku, i czujesz sie coraz bardziej sklonny zabic kogos. 
 
-Teraz czujesz, øe to miejsce jest przekleÒstwem, ktÛre moøe okazaÊ siÍ úmiertelne.</nodes>
+Teraz czujesz, ze to miejsce jest przeklenstwem, ktore moze okazac sie smiertelne.</nodes>
     <nodes xsi:type="NodeDealDamage" ID="12" positionX="2090.2002" positionY="-1033.7168" width="460" height="459" challengeTypeDamage="TypeSpirit" minDamage="10" maxDamage="30" useCountInPercent="true" targetGroup="ppl">
       <logic>
         <ModifierBlock>
@@ -171,11 +171,11 @@ Teraz czujesz, øe to miejsce jest przekleÒstwem, ktÛre moøe okazaÊ siÍ úmierteln
       <outputs name="male zrodlo jakies tych dmg" ownerID="12" targetID="7" fromX="2519" fromY="-1422" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="14" positionX="2644.7085" positionY="-451.4554" width="350" height="885">
-      <outputs name="Co to za ho≥d?" ownerID="14" targetID="17" fromX="2970" fromY="-942" />
+      <outputs name="Co to za hold?" ownerID="14" targetID="17" fromX="2970" fromY="-942" />
       <outputs name="Atak!" ownerID="14" targetID="15" fromX="2970" fromY="-1022" />
-      <outputs name="To jest stworzenie o mistycznym narodzeniu, wiÍc walcz z nim swoim duchem!" ownerID="14" targetID="16" fromX="2970" fromY="-1103" />Na razie chronisz siÍ przed przekleÒstwem, ale wiesz, øe nie wytrzyma d≥ugo. Wyczuwasz nag≥y przyp≥yw ciemnej, guzowatej energii, a potem s≥yszysz úmiech dochodzπcy z ukrytej jaskini: 
+      <outputs name="To jest stworzenie o mistycznym narodzeniu, wiec walcz z nim swoim duchem!" ownerID="14" targetID="16" fromX="2970" fromY="-1103" />Na razie chronisz sie przed przeklenstwem, ale wiesz, ze nie wytrzyma dlugo. Wyczuwasz nagly przyplyw ciemnej, guzowatej energii, a potem slyszysz smiech dochodzacy z ukrytej jaskini: 
 
-'Ssso ssstrong, przyszed≥eú oddaÊ ho≥d, prawda?'
+'Ssso ssstrong, przyszedles oddac hold, prawda?'
 
 Zmey, jeden z najstarszych smoczych krewnych, wpada w pole widzenia. 
 </nodes>
@@ -207,13 +207,13 @@ Zmey, jeden z najstarszych smoczych krewnych, wpada w pole widzenia.
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="17" positionX="2559" positionY="619" width="350" height="966">
       <outputs name="Atak!" ownerID="17" targetID="15" fromX="2884" fromY="127" />
-      <outputs name="To jest stworzenie o mistycznym narodzeniu, wiÍc walcz z nim swoim duchem!" ownerID="17" targetID="16" fromX="2884" fromY="47" />
-      <outputs name="Zgadzam siÍ." ownerID="17" targetID="30" fromX="2884" fromY="-32" />
-      <outputs name="SprÛbuj uciec!" ownerID="17" targetID="31" fromX="2884" fromY="-112" />ÑNie jestem chciwym dupkiem, dupkiem mojego kaczora. Jedno øycie bÍdzie wystarczajπce i nie bÍdzie musia≥o byÊ czyste.'
+      <outputs name="To jest stworzenie o mistycznym narodzeniu, wiec walcz z nim swoim duchem!" ownerID="17" targetID="16" fromX="2884" fromY="47" />
+      <outputs name="Zgadzam sie." ownerID="17" targetID="30" fromX="2884" fromY="-32" />
+      <outputs name="Sprobuj uciec!" ownerID="17" targetID="31" fromX="2884" fromY="-112" />ÑNie jestem chciwym dupkiem, dupkiem mojego kaczora. Jedno zycie bedzie wystarczajace i nie bedzie musialo byc czyste.'
 
-Myúlisz, øe mrugnπ≥ do ciebie. 
+Myslisz, ze mrugnal do ciebie. 
 
-ÑPozwolÍ ci odebraÊ im ciÍøar w skarbie.'</nodes>
+ÑPozwole ci odebrac im ciezar w skarbie.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="18" positionX="5223.23438" positionY="591.872864" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -248,9 +248,9 @@ Myúlisz, øe mrugnπ≥ do ciebie.
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdü." ownerID="18" targetID="28" fromX="5548" fromY="100" />PoúwiÍcasz jednego ze swoich, a mroczni podchodzπ do niego z chytrym uúmiechem. Gdy siÍ odsuwa, wypluwa na twarze lepkπ toksynÍ. 
+      <outputs name="Wyjdz." ownerID="18" targetID="28" fromX="5548" fromY="100" />Poswiecasz jednego ze swoich, a mroczni podchodza do niego z chytrym usmiechem. Gdy sie odsuwa, wypluwa na twarze lepka toksyne. 
 
-Drzemiesz siÍ, ale kiedy siÍ budzisz, czujesz siÍ wzmocniony, a obiecany kamieÒ leøy obok ciebie.</nodes>
+Drzemiesz sie, ale kiedy sie budzisz, czujesz sie wzmocniony, a obiecany kamien lezy obok ciebie.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="21" positionX="4344" positionY="2085" width="350" height="530" allPlayersXP="8" allPlayersRP="3" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventureEnd" ID="24" positionX="4391.13965" positionY="685.3114" width="350" height="530" allPlayersXP="2" allPlayersRP="1" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeProduceDrop" ID="26" positionX="3672.38159" positionY="1327.33228" width="460" height="429" sourceGroup="GROUP-ZMEY_ONE_8P_10M_9S" cargoPercentage="100" dropPercentage="100" targetGroup="ppl">
@@ -275,9 +275,9 @@ Drzemiesz siÍ, ale kiedy siÍ budzisz, czujesz siÍ wzmocniony, a obiecany kamieÒ 
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdü." ownerID="27" targetID="28" fromX="4699" fromY="-440" />PoúwiÍcasz jednego ze swoich, a mroczni podchodzπ do niego z chytrym uúmiechem. Gdy siÍ odsuwa, wypluwa na twarze lepkπ toksynÍ. 
+      <outputs name="Wyjdz." ownerID="27" targetID="28" fromX="4699" fromY="-440" />Poswiecasz jednego ze swoich, a mroczni podchodza do niego z chytrym usmiechem. Gdy sie odsuwa, wypluwa na twarze lepka toksyne. 
 
-Czujesz md≥oúci z powodu plwociny, a co gorsza, odkrywasz tylko nagrobek z piaskowca.</nodes>
+Czujesz mdlosci z powodu plwociny, a co gorsza, odkrywasz tylko nagrobek z piaskowca.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="28" positionX="5409.201" positionY="-274.814667" width="350" height="530" allPlayersXP="4" allPlayersRP="3" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventure" ID="29" positionX="4437.43262" positionY="1448.5354" width="350" height="725">
       <logic>
@@ -302,7 +302,7 @@ Czujesz md≥oúci z powodu plwociny, a co gorsza, odkrywasz tylko nagrobek z piask
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdü." ownerID="29" targetID="21" fromX="4763" fromY="957" />Zmys≥y krzyczπ z bÛlu, gdy ≥amiesz jego duszÍ. Widzisz ucieczkÍ mrocznego ducha, ale cia≥o leøy martwe przed tobπ.</nodes>
+      <outputs name="Wyjdz." ownerID="29" targetID="21" fromX="4763" fromY="957" />Zmysly krzycza z bolu, gdy lamiesz jego dusze. Widzisz ucieczke mrocznego ducha, ale cialo lezy martwe przed toba.</nodes>
     <nodes xsi:type="NodeTrade" ID="30" positionX="3295" positionY="91" width="460" height="639" traderProfile="TRADER-BANDIT_TWO" playerInventory="ppl2" startingBalance="-1">
       <logic>
         <FilterBlock>
@@ -343,7 +343,7 @@ Czujesz md≥oúci z powodu plwociny, a co gorsza, odkrywasz tylko nagrobek z piask
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdü." ownerID="34" targetID="24" fromX="5830" fromY="-1354" />Zmey jest szybki i zabÛjczy, zmuszajπc ciÍ do zrzucenia niektÛrych towarÛw, aby przecisnπÊ siÍ przez ciasne miejsce, gdzie nie moøe podπøaÊ. Uciekasz skÛrπ zÍbÛw, ale nie bez blizn. </nodes>
+      <outputs name="Wyjdz." ownerID="34" targetID="24" fromX="5830" fromY="-1354" />Zmey jest szybki i zabojczy, zmuszajac cie do zrzucenia niektorych towarow, aby przecisnac sie przez ciasne miejsce, gdzie nie moze podazac. Uciekasz skora zebow, ale nie bez blizn. </nodes>
     <nodes xsi:type="NodeAdventure" ID="35" positionX="4829.868" positionY="396.526337" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -366,9 +366,9 @@ Czujesz md≥oúci z powodu plwociny, a co gorsza, odkrywasz tylko nagrobek z piask
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdü." ownerID="35" targetID="28" fromX="5155" fromY="-94" />PoúwiÍcasz jednego ze swoich, a mroczni podchodzπ do niego z chytrym uúmiechem. Gdy siÍ odsuwa, wypluwa na twarze lepkπ toksynÍ. 
+      <outputs name="Wyjdz." ownerID="35" targetID="28" fromX="5155" fromY="-94" />Poswiecasz jednego ze swoich, a mroczni podchodza do niego z chytrym usmiechem. Gdy sie odsuwa, wypluwa na twarze lepka toksyne. 
 
-Drzemiesz siÍ, ale kiedy siÍ budzisz, czujesz siÍ wzmocniony, a obiecany kamieÒ leøy obok ciebie.</nodes>
+Drzemiesz sie, ale kiedy sie budzisz, czujesz sie wzmocniony, a obiecany kamien lezy obok ciebie.</nodes>
     <nodes xsi:type="NodeAdventure" ID="36" positionX="3843.24316" positionY="690.6616" width="350" height="725">
       <logic>
         <ModifierBlock>
@@ -377,7 +377,7 @@ Drzemiesz siÍ, ale kiedy siÍ budzisz, czujesz siÍ wzmocniony, a obiecany kamieÒ 
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Biegnij, zanim zmieni zdanie." ownerID="36" targetID="24" fromX="4168" fromY="199" />ÑSssuch sssweet sssorrow w twoich sssoulsss ... NamÛwi≥eú mnie. Zacznij, bπdü wolny.'
+      <outputs name="Biegnij, zanim zmieni zdanie." ownerID="36" targetID="24" fromX="4168" fromY="199" />ÑSssuch sssweet sssorrow w twoich sssoulsss ... Namowiles mnie. Zacznij, badz wolny.'
 </nodes>
     <nodes xsi:type="NodeAdventure" ID="37" positionX="3664.115" positionY="2042.793" width="350" height="725">
       <logic>
@@ -405,7 +405,7 @@ Drzemiesz siÍ, ale kiedy siÍ budzisz, czujesz siÍ wzmocniony, a obiecany kamieÒ 
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdü." ownerID="37" targetID="21" fromX="3989" fromY="1551" />Zmys≥y krzyczπ z bÛlu, gdy go uderzasz. Cia≥o leøy martwe przed tobπ.</nodes>
+      <outputs name="Wyjdz." ownerID="37" targetID="21" fromX="3989" fromY="1551" />Zmysly krzycza z bolu, gdy go uderzasz. Cialo lezy martwe przed toba.</nodes>
     <nodes xsi:type="NodeAdventure" ID="38" positionX="3040.5083" positionY="1590.96216" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -428,7 +428,7 @@ Drzemiesz siÍ, ale kiedy siÍ budzisz, czujesz siÍ wzmocniony, a obiecany kamieÒ 
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdü." ownerID="38" targetID="28" fromX="3366" fromY="1099" />Zmey jest szybki i zabÛjczy, zmuszajπc ciÍ do zrzucenia niektÛrych towarÛw, aby przecisnπÊ siÍ przez ciasne miejsce, gdzie nie moøe podπøaÊ. Uciekasz skÛrπ zÍbÛw, ale nie bez blizn. </nodes>
+      <outputs name="Wyjdz." ownerID="38" targetID="28" fromX="3366" fromY="1099" />Zmey jest szybki i zabojczy, zmuszajac cie do zrzucenia niektorych towarow, aby przecisnac sie przez ciasne miejsce, gdzie nie moze podazac. Uciekasz skora zebow, ale nie bez blizn. </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="39" positionX="1493.93" positionY="95.02179" width="350" height="530" allPlayersXP="2" allPlayersRP="1" linkedEventUniqueID="0">
       <logic>
         <ModifierBlock>
@@ -464,15 +464,15 @@ Drzemiesz siÍ, ale kiedy siÍ budzisz, czujesz siÍ wzmocniony, a obiecany kamieÒ 
           </LogicFilter>
         </FilterBlock>
       </logic>
-      <outputs name="Podejdü bliøej, aby powitaÊ towarzyszy podrÛøy." ownerID="2" targetID="4" fromX="870" fromY="-420" />
-      <outputs name="[£owca lub Percepcja] Zwiad ogniska." ownerID="2" targetID="5" fromX="870" fromY="-500" />
-      <outputs name="Wyjdü." ownerID="2" targetID="3" fromX="870" fromY="-580" />Znajdziesz stary kamienio≥om. Chociaø miejsce poczπtkowo wydawa≥o siÍ opuszczone, widzicie ognisko ukryte wúrÛd ska≥.</nodes>
+      <outputs name="Podejdz blizej, aby powitac towarzyszy podrozy." ownerID="2" targetID="4" fromX="870" fromY="-420" />
+      <outputs name="[Lowca lub Percepcja] Zwiad ogniska." ownerID="2" targetID="5" fromX="870" fromY="-500" />
+      <outputs name="Wyjdz." ownerID="2" targetID="3" fromX="870" fromY="-580" />Znajdziesz stary kamieniolom. Chociaz miejsce poczatkowo wydawalo sie opuszczone, widzicie ognisko ukryte wsrod skal.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="3" positionX="529" positionY="-839" width="350" height="530" allPlayersXP="1" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventure" ID="4" positionX="1060.01953" positionY="723.3911" width="350" height="966" image="Event119">
       <outputs name="Do broni!" ownerID="4" targetID="10" fromX="1385" fromY="232" />
-      <outputs name="StaÒ mocno, zgnij miÍúnie i powiedz im, øeby siÍ wycofali! [ZastraszyÊ]" ownerID="4" targetID="11" fromX="1385" fromY="152" />
-      <outputs name="SprÛbuj uciec." ownerID="4" targetID="12" fromX="1385" fromY="71" />
-      <outputs name="UpuúÊ niektÛre torby, aby u≥atwiÊ ucieczkÍ." ownerID="4" targetID="13" fromX="1385" fromY="-8" />Odkrywasz, øe kemping zosta≥ za≥oøony przez nomadÛw, ale zostali zaatakowani przez bandytÛw, ktÛrzy teraz oczyszczajπ cia≥a, a oni ciÍ zauwaøyli!</nodes>
+      <outputs name="Stan mocno, zgnij miesnie i powiedz im, zeby sie wycofali! [Zastraszyc]" ownerID="4" targetID="11" fromX="1385" fromY="152" />
+      <outputs name="Sprobuj uciec." ownerID="4" targetID="12" fromX="1385" fromY="71" />
+      <outputs name="Upusc niektore torby, aby ulatwic ucieczke." ownerID="4" targetID="13" fromX="1385" fromY="-8" />Odkrywasz, ze kemping zostal zalozony przez nomadow, ale zostali zaatakowani przez bandytow, ktorzy teraz oczyszczaja ciala, a oni cie zauwazyli!</nodes>
     <nodes xsi:type="NodeAdventure" ID="5" positionX="1154.81433" positionY="-423.568817" width="350" height="966" image="Event190">
       <logic>
         <FilterBlock>
@@ -490,10 +490,10 @@ Drzemiesz siÍ, ale kiedy siÍ budzisz, czujesz siÍ wzmocniony, a obiecany kamieÒ 
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Atakuj bandytÛw!" ownerID="5" targetID="6" fromX="1480" fromY="-914" />
-      <outputs name="Uøyj sprytu lub doúwiadczenia, aby znaleüÊ pu≥apkÍ dla bandytÛw." ownerID="5" targetID="7" fromX="1480" fromY="-994" />
-      <outputs name="[Bloodtracker] Wychwytuj ich i cicho morduj jak najwiÍcej." ownerID="5" targetID="8" group="G1" fromX="1480" fromY="-1075" />
-      <outputs name="[Bloodtracker] Wychwytuj ich i cicho morduj jak najwiÍcej." ownerID="5" targetID="9" group="G1" fromX="1480" fromY="-1155" />Odkrywasz, øe kemping zosta≥ za≥oøony przez nomadÛw, ale zostali zaatakowani przez bandytÛw, ktÛrzy teraz oczyszczajπ cia≥a.</nodes>
+      <outputs name="Atakuj bandytow!" ownerID="5" targetID="6" fromX="1480" fromY="-914" />
+      <outputs name="Uzyj sprytu lub doswiadczenia, aby znalezc pulapke dla bandytow." ownerID="5" targetID="7" fromX="1480" fromY="-994" />
+      <outputs name="[Bloodtracker] Wychwytuj ich i cicho morduj jak najwiecej." ownerID="5" targetID="8" group="G1" fromX="1480" fromY="-1075" />
+      <outputs name="[Bloodtracker] Wychwytuj ich i cicho morduj jak najwiecej." ownerID="5" targetID="9" group="G1" fromX="1480" fromY="-1155" />Odkrywasz, ze kemping zostal zalozony przez nomadow, ale zostali zaatakowani przez bandytow, ktorzy teraz oczyszczaja ciala.</nodes>
     <nodes xsi:type="NodeChallenge" ID="6" positionX="2234" positionY="-717" width="500" height="726" challengeType="TypePhysical" versusGroup="GROUP-BANDITS_5P_4M_3S" challengeScale="101" challengedList="ppl">
       <outputs name="Win" ownerID="6" targetID="17" fromX="2675" fromY="-1212" />
       <outputs name="Lose" ownerID="6" targetID="37" fromX="2675" fromY="-1292" />
@@ -540,9 +540,9 @@ Drzemiesz siÍ, ale kiedy siÍ budzisz, czujesz siÍ wzmocniony, a obiecany kamieÒ 
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Wyjdü." ownerID="8" targetID="39" fromX="1996" fromY="-1709" />Jako tropiciel krwi masz umiejÍtnoúci polowania na zdobycz, kaødπ zdobycz. 
+      <outputs name="Wyjdz." ownerID="8" targetID="39" fromX="1996" fromY="-1709" />Jako tropiciel krwi masz umiejetnosci polowania na zdobycz, kazda zdobycz. 
 
-Podkradasz siÍ i po cichu mordujesz kilku bandytÛw, w tym kapitana, a gdy reszta zdaje sobie sprawÍ z tego, co siÍ dzieje, uciekajπ.</nodes>
+Podkradasz sie i po cichu mordujesz kilku bandytow, w tym kapitana, a gdy reszta zdaje sobie sprawe z tego, co sie dzieje, uciekaja.</nodes>
     <nodes xsi:type="NodeAdventure" ID="9" positionX="1134.80115" positionY="-1527.9209" width="350" height="805">
       <logic>
         <FilterBlock>
@@ -554,10 +554,10 @@ Podkradasz siÍ i po cichu mordujesz kilku bandytÛw, w tym kapitana, a gdy reszta
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Atakuj tych, ktÛrzy zostali!" ownerID="9" targetID="40" fromX="1460" fromY="-2019" />
-      <outputs name="Uciekaj!" ownerID="9" targetID="16" fromX="1460" fromY="-2099" />Jako tropiciel krwi masz umiejÍtnoúci polowania na zdobycz, jakπkolwiek zdobycz. 
+      <outputs name="Atakuj tych, ktorzy zostali!" ownerID="9" targetID="40" fromX="1460" fromY="-2019" />
+      <outputs name="Uciekaj!" ownerID="9" targetID="16" fromX="1460" fromY="-2099" />Jako tropiciel krwi masz umiejetnosci polowania na zdobycz, jakakolwiek zdobycz. 
 
-Niestety, pomimo kπpieli we krwi twoich wrogÛw, jest ich zbyt wiele. Wycofujesz siÍ, kiedy ciÍ úcigajπ!</nodes>
+Niestety, pomimo kapieli we krwi twoich wrogow, jest ich zbyt wiele. Wycofujesz sie, kiedy cie scigaja!</nodes>
     <nodes xsi:type="NodeChallenge" ID="10" positionX="1885.6156" positionY="1644.85364" width="500" height="726" challengeType="TypePhysical" versusGroup="GROUP-LOTS_BANDITS_6P_5M_4S" challengeScale="101" challengedList="ppl">
       <outputs name="Win" ownerID="10" targetID="17" fromX="2326" fromY="1149" />
       <outputs name="Lose" ownerID="10" targetID="37" fromX="2326" fromY="1069" />
@@ -604,10 +604,10 @@ Niestety, pomimo kπpieli we krwi twoich wrogÛw, jest ich zbyt wiele. Wycofujesz 
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Zbierz co moøesz i wyjdü." ownerID="17" targetID="19" group="G1" fromX="3821" fromY="-1113" />
-      <outputs name="Zbierz co moøesz i wyjdü." ownerID="17" targetID="21" group="G1" fromX="3821" fromY="-1113" />Zabijasz szumowiny bandytÛw i sprawdzasz obÛz. Niestety, øaden z nomadÛw nie przeøy≥. 
+      <outputs name="Zbierz co mozesz i wyjdz." ownerID="17" targetID="19" group="G1" fromX="3821" fromY="-1113" />
+      <outputs name="Zbierz co mozesz i wyjdz." ownerID="17" targetID="21" group="G1" fromX="3821" fromY="-1113" />Zabijasz szumowiny bandytow i sprawdzasz oboz. Niestety, zaden z nomadow nie przezyl. 
 
-Przygotowujesz prowizoryczny pochÛwek przed wyjazdem.</nodes>
+Przygotowujesz prowizoryczny pochowek przed wyjazdem.</nodes>
     <nodes xsi:type="NodeProduceDrop" ID="19" positionX="4241.7373" positionY="-546.5654" width="460" height="429.36" sourceGroup="GROUP-BANDITS_3P_3M_1S" cargoPercentage="50" targetGroup="ppl">
       <logic>
         <FilterBlock>
@@ -654,10 +654,10 @@ Przygotowujesz prowizoryczny pochÛwek przed wyjazdem.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Zbierz co moøesz i wyjdü." ownerID="22" targetID="19" group="G1" fromX="3820" fromY="-2524" />
-      <outputs name="Zbierz co moøesz i wyjdü." ownerID="22" targetID="21" group="G1" fromX="3820" fromY="-2604" />Zabijasz szumowiny bandytÛw i sprawdzasz obÛz. Niestety, øaden z nomadÛw nie przeøy≥. 
+      <outputs name="Zbierz co mozesz i wyjdz." ownerID="22" targetID="19" group="G1" fromX="3820" fromY="-2524" />
+      <outputs name="Zbierz co mozesz i wyjdz." ownerID="22" targetID="21" group="G1" fromX="3820" fromY="-2604" />Zabijasz szumowiny bandytow i sprawdzasz oboz. Niestety, zaden z nomadow nie przezyl. 
 
-Przygotowujesz prowizoryczny pochÛwek przed wyjazdem.</nodes>
+Przygotowujesz prowizoryczny pochowek przed wyjazdem.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="23" positionX="3405.09131" positionY="-1456.771" width="350" height="530" allPlayersXP="2" allPlayersRP="1" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventureEnd" ID="28" positionX="3217.44385" positionY="534.952759" width="350" height="530" allPlayersXP="3" allPlayersRP="1" linkedEventUniqueID="0">
       <logic>
@@ -688,7 +688,7 @@ Przygotowujesz prowizoryczny pochÛwek przed wyjazdem.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdü." ownerID="29" targetID="30" fromX="3598" fromY="-505" />Ledwo uciekasz po upuszczeniu kilku torebek do ucieczki.</nodes>
+      <outputs name="Wyjdz." ownerID="29" targetID="30" fromX="3598" fromY="-505" />Ledwo uciekasz po upuszczeniu kilku torebek do ucieczki.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="30" positionX="3836" positionY="274" width="350" height="530" allPlayersXP="2" allPlayersRP="1" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventure" ID="34" positionX="3326.85083" positionY="1501.88672" width="350" height="725">
       <logic>
@@ -707,14 +707,14 @@ Przygotowujesz prowizoryczny pochÛwek przed wyjazdem.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Zbierz to, co zosta≥o, i wyjdü." ownerID="34" targetID="20" fromX="3652" fromY="1010" />ÑEch, dobrze, dobrze, nie warto nasze k≥opoty. Wyjeødøamy - moøesz nawet wymierzyÊ wszystko, co tu zostawiliúmy.'
+      <outputs name="Zbierz to, co zostalo, i wyjdz." ownerID="34" targetID="20" fromX="3652" fromY="1010" />ÑEch, dobrze, dobrze, nie warto nasze klopoty. Wyjezdzamy - mozesz nawet wymierzyc wszystko, co tu zostawilismy.'
 
-Ostroønie odsuwajπ siÍ od ciebie. </nodes>
+Ostroznie odsuwaja sie od ciebie. </nodes>
     <nodes xsi:type="NodeAdventure" ID="35" positionX="2178.46948" positionY="899.709839" width="350" height="805">
       <outputs name="Walcz!" ownerID="35" targetID="10" fromX="2504" fromY="408" />
-      <outputs name="UpuúÊ niektÛre torby, aby u≥atwiÊ ucieczkÍ." ownerID="35" targetID="13" fromX="2504" fromY="328" />ÑCo ty kurwa robisz?'
+      <outputs name="Upusc niektore torby, aby ulatwic ucieczke." ownerID="35" targetID="13" fromX="2504" fromY="328" />ÑCo ty kurwa robisz?'
 
-Zarzucajπ!</nodes>
+Zarzucaja!</nodes>
     <nodes xsi:type="NodeAdventure" ID="37" positionX="3036.255" positionY="-1089.87183" width="350" height="725">
       <logic>
         <ModifierBlock>
@@ -732,7 +732,7 @@ Zarzucajπ!</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Uciekaj." ownerID="37" targetID="23" fromX="3362" fromY="-1581" />Bandyci okazujπ siÍ silniejsi. èle ciÍ pobili, a ty musisz zrzuciÊ niektÛre swoje towary, aby uciec. 
+      <outputs name="Uciekaj." ownerID="37" targetID="23" fromX="3362" fromY="-1581" />Bandyci okazuja sie silniejsi. Zle cie pobili, a ty musisz zrzucic niektore swoje towary, aby uciec. 
 </nodes>
     <nodes xsi:type="NodeDealDamage" ID="38" positionX="2942.057" positionY="-1907.4248" width="460" height="459" challengeTypeDamage="TypePhysical" minDamage="10" maxDamage="20" useCountInPercent="true" targetGroup="ppl">
       <outputs ownerID="38" targetID="37" fromX="3371" fromY="-2295" />
@@ -790,9 +790,9 @@ Zarzucajπ!</nodes>
           </LogicFilter>
         </FilterBlock>
       </logic>
-      <outputs name="[£owca lub Postrzeganie] Ostroønie przeszukaj obszar." ownerID="2" targetID="3" fromX="754" fromY="-556" />
-      <outputs name="Przeszukaj kamienio≥om." ownerID="2" targetID="5" fromX="754" fromY="-636" />
-      <outputs name="Wyjdü." ownerID="2" targetID="4" fromX="754" fromY="-716" />Znajdziesz stary kamienio≥om, pozornie opuszczony. WiÍkszoúÊ tego kamienio≥omu zapad≥a siÍ w g≥Íboki wπwÛz, ale wciπø mogπ byÊ tu uøyteczne zasoby.</nodes>
+      <outputs name="[Lowca lub Postrzeganie] Ostroznie przeszukaj obszar." ownerID="2" targetID="3" fromX="754" fromY="-556" />
+      <outputs name="Przeszukaj kamieniolom." ownerID="2" targetID="5" fromX="754" fromY="-636" />
+      <outputs name="Wyjdz." ownerID="2" targetID="4" fromX="754" fromY="-716" />Znajdziesz stary kamieniolom, pozornie opuszczony. Wiekszosc tego kamieniolomu zapadla sie w gleboki wawoz, ale wciaz moga byc tu uzyteczne zasoby.</nodes>
     <nodes xsi:type="NodeAdventure" ID="3" positionX="848.1224" positionY="754.823364" width="350" height="966" image="Event096">
       <logic>
         <FilterBlock>
@@ -807,19 +807,19 @@ Zarzucajπ!</nodes>
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Uøyj elementu zaskoczenia i ataku!" ownerID="3" targetID="6" fromX="1173" fromY="263" />
-      <outputs name="[Magiczny uøytkownik] Smoki sπ stworzeniami zrodzonymi z mocy mistycznej, wiÍc rzuÊ mu wyzwanie swoim duchem i prze≥am jego duszÍ!" ownerID="3" targetID="8" fromX="1173" fromY="183" />
-      <outputs name="[Magiczny uøytkownik lub zerka i inteligencja] Smoki nie sπ zwyk≥ymi bestiami. CzÍsto sπ mπdrzy i czasami chÍtni do rozmowy. Podejdü do smoka i porozmawiaj z nim." ownerID="3" targetID="9" fromX="1173" fromY="103" />
-      <outputs name="Ostroønie wycofaj siÍ." ownerID="3" targetID="4" fromX="1173" fromY="23" />Twoje oczy or≥a przydajπ siÍ, gdy w ciemnoúci wπwozu zauwaøysz, øe ziemia wydaje siÍ poruszaÊ w gÛrÍ iw dÛ≥ w powolnym rytmie. 
+      <outputs name="Uzyj elementu zaskoczenia i ataku!" ownerID="3" targetID="6" fromX="1173" fromY="263" />
+      <outputs name="[Magiczny uzytkownik] Smoki sa stworzeniami zrodzonymi z mocy mistycznej, wiec rzuc mu wyzwanie swoim duchem i przelam jego dusze!" ownerID="3" targetID="8" fromX="1173" fromY="183" />
+      <outputs name="[Magiczny uzytkownik lub zerka i inteligencja] Smoki nie sa zwyklymi bestiami. Czesto sa madrzy i czasami chetni do rozmowy. Podejdz do smoka i porozmawiaj z nim." ownerID="3" targetID="9" fromX="1173" fromY="103" />
+      <outputs name="Ostroznie wycofaj sie." ownerID="3" targetID="4" fromX="1173" fromY="23" />Twoje oczy orla przydaja sie, gdy w ciemnosci wawozu zauwazysz, ze ziemia wydaje sie poruszac w gore iw dol w powolnym rytmie. 
 
-Wtedy zauwaøysz duøy, podobny do smoka kszta≥t wúrÛd kamieni.</nodes>
+Wtedy zauwazysz duzy, podobny do smoka ksztalt wsrod kamieni.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="4" positionX="25.1742554" positionY="-832.9875" width="350" height="530" allPlayersXP="1" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventure" ID="5" positionX="910.544" positionY="-499.2058" width="350" height="885" image="Event096">
       <outputs name="Do broni!" ownerID="5" targetID="6" fromX="1236" fromY="-990" />
-      <outputs name="Biegnij na swoje øycie!" ownerID="5" targetID="13" fromX="1236" fromY="-1070" />
-      <outputs name="PozostaÒ spokojny i opanowany i sprÛbuj z nim porozmawiaÊ." ownerID="5" targetID="40" fromX="1236" fromY="-1150" />Ostroønie zejdü na dÛ≥ i przeszukaj stary kamienio≥om. Niewiele moøna znaleüÊ, ale widaÊ oznaki przewoøenia rudy do jednego miejsca. 
+      <outputs name="Biegnij na swoje zycie!" ownerID="5" targetID="13" fromX="1236" fromY="-1070" />
+      <outputs name="Pozostan spokojny i opanowany i sprobuj z nim porozmawiac." ownerID="5" targetID="40" fromX="1236" fromY="-1150" />Ostroznie zejdz na dol i przeszukaj stary kamieniolom. Niewiele mozna znalezc, ale widac oznaki przewozenia rudy do jednego miejsca. 
 
-Kiedy podejdziesz bliøej, zobaczysz stos kamieni, niektÛre z nich cenne, ale potem s≥yszysz szorstki, rykliwy g≥os: 
+Kiedy podejdziesz blizej, zobaczysz stos kamieni, niektore z nich cenne, ale potem slyszysz szorstki, rykliwy glos: 
 'Kto mnie budzi?'
 
 Czerwony smok patrzy na ciebie. 
@@ -873,12 +873,12 @@ Czerwony smok patrzy na ciebie.
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Skinienie g≥owπ." ownerID="9" targetID="10" fromX="1930" fromY="-708" />Zbliøasz siÍ do smoka i widzisz, jak jego oczy úledzπ ciÍ z zainteresowaniem. K≥aniasz siÍ i mÛwisz. S≥ucha, a nastÍpnie powoli odpowiada: 
+      <outputs name="Skinienie glowa." ownerID="9" targetID="10" fromX="1930" fromY="-708" />Zblizasz sie do smoka i widzisz, jak jego oczy sledza cie z zainteresowaniem. Klaniasz sie i mowisz. Slucha, a nastepnie powoli odpowiada: 
 
-'Dobrze, gra zagadek mnie tak bawi. Jeúli twÛj umys≥ jest tak ostry jak moje ≥uski, moøesz otrzymaÊ dobrodziejstwo.'</nodes>
+'Dobrze, gra zagadek mnie tak bawi. Jesli twoj umysl jest tak ostry jak moje luski, mozesz otrzymac dobrodziejstwo.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="10" positionX="2080.40259" positionY="-215.74585" width="350" height="805">
-      <outputs name="Zgadzam siÍ i obiecujÍ, øe pozostanπ prawdziwe." ownerID="10" targetID="11" fromX="2406" fromY="-706" />
-      <outputs name="W≥aúciwie grzecznie odmÛw i odejdü." ownerID="10" targetID="4" fromX="2406" fromY="-787" />ÑNic z tegoÑ co jest w moich spodniach îg≥upota, pamiÍtaj. Oszukuj mnie raz i tak dalej. Powaøna gra zagadek, nic innego nie zrobi.'</nodes>
+      <outputs name="Zgadzam sie i obiecuje, ze pozostana prawdziwe." ownerID="10" targetID="11" fromX="2406" fromY="-706" />
+      <outputs name="Wlasciwie grzecznie odmow i odejdz." ownerID="10" targetID="4" fromX="2406" fromY="-787" />ÑNic z tegoÑ co jest w moich spodniach îglupota, pamietaj. Oszukuj mnie raz i tak dalej. Powazna gra zagadek, nic innego nie zrobi.'</nodes>
     <nodes xsi:type="NodeChallenge" ID="11" positionX="2551" positionY="-402" width="500" height="726" challengeType="TypeMental" versusConcept="true" versusGroup="GROUP-CON_M_0P_7M_0S" challengeScale="101" challengedList="ppl">
       <outputs name="Win" ownerID="11" targetID="28" fromX="2992" fromY="-897" />
       <outputs name="Lose" ownerID="11" targetID="42" fromX="2992" fromY="-977" />
@@ -902,15 +902,15 @@ Czerwony smok patrzy na ciebie.
       </logic>
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="16" positionX="3215.52441" positionY="-1989.37085" width="350" height="725">
-      <outputs name="Wyjdü." ownerID="16" targetID="18" fromX="3541" fromY="-2480" />Ledwo uciekasz, gdy smok leniwie oddycha ogniem za tobπ. Odnosi siÍ wraøenie, øe to nie wszystko da≥o temu poúcigowi.</nodes>
+      <outputs name="Wyjdz." ownerID="16" targetID="18" fromX="3541" fromY="-2480" />Ledwo uciekasz, gdy smok leniwie oddycha ogniem za toba. Odnosi sie wrazenie, ze to nie wszystko dalo temu poscigowi.</nodes>
     <nodes xsi:type="NodeDealDamage" ID="17" positionX="2509" positionY="-2228" width="460" height="459" challengeTypeDamage="TypePhysical" minDamage="30" maxDamage="40" useCountInPercent="true" targetGroup="ppl">
       <outputs ownerID="17" targetID="16" fromX="2938" fromY="-2616" />
     </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="18" positionX="3725.30469" positionY="-2208.35132" width="350" height="530" allPlayersXP="2" allPlayersRP="1" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventure" ID="19" positionX="2116.00879" positionY="740.500549" width="350" height="725">
-      <outputs name="Uruchom. &#xD;" ownerID="19" targetID="21" fromX="2441" fromY="249" />PotÍga smoka nie okazuje przesady, a ty masz wraøenie, øe ten by≥ senny. 
+      <outputs name="Uruchom. &#xD;" ownerID="19" targetID="21" fromX="2441" fromY="249" />Potega smoka nie okazuje przesady, a ty masz wrazenie, ze ten byl senny. 
 
-Nie wiesz dlaczego, ale bestia pozwala ci uciec, choÊ bez twoich toreb.</nodes>
+Nie wiesz dlaczego, ale bestia pozwala ci uciec, choc bez twoich toreb.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="21" positionX="2629" positionY="742" width="350" height="530" allPlayersXP="2" allPlayersRP="1" linkedEventUniqueID="0">
       <logic>
         <ModifierBlock>
@@ -927,12 +927,12 @@ Nie wiesz dlaczego, ale bestia pozwala ci uciec, choÊ bez twoich toreb.</nodes>
       </logic>
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="22" positionX="3409.494" positionY="-927.419861" width="350" height="966">
-      <outputs name="Oferta z≥ota." ownerID="22" targetID="23" fromX="3735" fromY="-1418" />
-      <outputs name="Zaoferuj osobÍ. To powinno daÊ ci wielkπ nagrodÍ." ownerID="22" targetID="41" fromX="3735" fromY="-1498" />
+      <outputs name="Oferta zlota." ownerID="22" targetID="23" fromX="3735" fromY="-1418" />
+      <outputs name="Zaoferuj osobe. To powinno dac ci wielka nagrode." ownerID="22" targetID="41" fromX="3735" fromY="-1498" />
       <outputs name="Zostaw szybko, zanim zmieni zdanie." ownerID="22" targetID="18" fromX="3735" fromY="-1578" />
-      <outputs name="Atak!" ownerID="22" targetID="6" fromX="3735" fromY="-1659" />ÑBah, twoje umys≥y sπ tak tÍpe, jak wyglπdasz. Co za rozczarowanie. Zostaw mi dar jako przeprosiny, a ja jeszcze mogÍ ciÍ wynagrodziÊ. W przeciwnym razie zacznij, bo nie jesteú godny mojego zawiadomienia.'
+      <outputs name="Atak!" ownerID="22" targetID="6" fromX="3735" fromY="-1659" />ÑBah, twoje umysly sa tak tepe, jak wygladasz. Co za rozczarowanie. Zostaw mi dar jako przeprosiny, a ja jeszcze moge cie wynagrodzic. W przeciwnym razie zacznij, bo nie jestes godny mojego zawiadomienia.'
 
-Czujesz wielki wysi≥ek umys≥owy wynikajπcy z tego wysi≥ku i poczucia, øe najlepiej jest szybko odejúÊ. </nodes>
+Czujesz wielki wysilek umyslowy wynikajacy z tego wysilku i poczucia, ze najlepiej jest szybko odejsc. </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="23" positionX="4008.42358" positionY="-983.444031" width="350" height="530" allPlayersXP="2" allPlayersRP="1" linkedEventUniqueID="0">
       <logic>
         <FilterBlock>
@@ -1012,7 +1012,7 @@ Czujesz wielki wysi≥ek umys≥owy wynikajπcy z tego wysi≥ku i poczucia, øe najlepi
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Zbierz co moøesz i odejdü zanim odleci." ownerID="27" targetID="43" fromX="4158" fromY="616" />Twoja wola okaza≥a siÍ silniejsza od smoka i przed tobπ pÍka. Zrozpaczony poraøkπ, stwÛr odlatuje, pozostawiajπc swπ kryjÛwkÍ w spokoju. 
+      <outputs name="Zbierz co mozesz i odejdz zanim odleci." ownerID="27" targetID="43" fromX="4158" fromY="616" />Twoja wola okazala sie silniejsza od smoka i przed toba peka. Zrozpaczony porazka, stwor odlatuje, pozostawiajac swa kryjowke w spokoju. 
 </nodes>
     <nodes xsi:type="NodeAdventure" ID="28" positionX="3231.464" positionY="-141.274338" width="350" height="725">
       <logic>
@@ -1043,11 +1043,11 @@ Czujesz wielki wysi≥ek umys≥owy wynikajπcy z tego wysi≥ku i poczucia, øe najlepi
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Weü nagrodÍ i wyjdü." ownerID="28" targetID="35" fromX="3557" fromY="-632" />ÑAch, jak wspaniale, przechytrzy≥eú mnie!'
+      <outputs name="Wez nagrode i wyjdz." ownerID="28" targetID="35" fromX="3557" fromY="-632" />ÑAch, jak wspaniale, przechytrzyles mnie!'
 
-Trzepocze skrzyd≥ami gada tak mocno z radoúciπ, øe rzucasz o úcianÍ skalnπ. 
+Trzepocze skrzydlami gada tak mocno z radoscia, ze rzucasz o sciane skalna. 
 
-- Och, uh. Przeprosiny. Oto twoja nagroda, zgodnie z obietnicπ, chociaø zaszczyt pokonania kaczora jest twoim prawdziwym osiπgniÍciem.'
+- Och, uh. Przeprosiny. Oto twoja nagroda, zgodnie z obietnica, chociaz zaszczyt pokonania kaczora jest twoim prawdziwym osiagnieciem.'
 
 Smok zasypia.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="30" positionX="4797.918" positionY="1004.34503" width="350" height="530" allPlayersXP="9" allPlayersRP="3" linkedEventUniqueID="0" />
@@ -1074,7 +1074,7 @@ Smok zasypia.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdü." ownerID="31" targetID="33" fromX="2434" fromY="1112" />Smok jest martwy, a jego skarby twoje. 
+      <outputs name="Wyjdz." ownerID="31" targetID="33" fromX="2434" fromY="1112" />Smok jest martwy, a jego skarby twoje. 
 </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="33" positionX="2582" positionY="1452" width="350" height="530" allPlayersXP="9" allPlayersRP="3" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventureEnd" ID="35" positionX="3683" positionY="-232" width="350" height="530" allPlayersXP="8" allPlayersRP="3" linkedEventUniqueID="0" />
@@ -1104,9 +1104,9 @@ Smok zasypia.</nodes>
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Skinienie g≥owπ." ownerID="40" targetID="10" fromX="1658" fromY="-1772" />Zbliøasz siÍ do smoka i widzisz, jak jego oczy úledzπ ciÍ z zainteresowaniem. K≥aniasz siÍ i mÛwisz. S≥ucha, a nastÍpnie powoli odpowiada: 
+      <outputs name="Skinienie glowa." ownerID="40" targetID="10" fromX="1658" fromY="-1772" />Zblizasz sie do smoka i widzisz, jak jego oczy sledza cie z zainteresowaniem. Klaniasz sie i mowisz. Slucha, a nastepnie powoli odpowiada: 
 
-'Dobrze, gra zagadek mnie tak bawi. Jeúli twÛj umys≥ jest tak ostry jak moje ≥uski, moøesz otrzymaÊ dobrodziejstwo.'</nodes>
+'Dobrze, gra zagadek mnie tak bawi. Jesli twoj umysl jest tak ostry jak moje luski, mozesz otrzymac dobrodziejstwo.'</nodes>
     <nodes xsi:type="NodeTrade" ID="41" positionX="3855" positionY="-1509" width="460" height="479" traderProfile="TRADER-BANDIT_TWO" playerInventory="ppl" startingBalance="-1">
       <outputs name="Confirm" ownerID="41" targetID="24" fromX="4285" fromY="-1837" />
       <outputs name="Cancel" ownerID="41" targetID="22" fromX="4285" fromY="-1917" />
@@ -1146,7 +1146,7 @@ Smok zasypia.</nodes>
       <outputs name="[Percepcja] Najpierw zajrzyj na miejsce." ownerID="2" targetID="36" group="G1" fromX="709" fromY="-429" />
       <outputs name="Wyszukaj miejsce." ownerID="2" targetID="4" group="G1" fromX="709" fromY="-509" />
       <outputs name="Wyszukaj miejsce." ownerID="2" targetID="5" group="G1" fromX="709" fromY="-589" />
-      <outputs name="Wyjdü." ownerID="2" targetID="3" fromX="709" fromY="-669" />Znajdziesz stary kamienio≥om, pozornie opuszczony. WiÍkszoúÊ tego kamienio≥omu zapad≥a siÍ w g≥Íboki wπwÛz, ale wciπø mogπ byÊ tu uøyteczne zasoby.</nodes>
+      <outputs name="Wyjdz." ownerID="2" targetID="3" fromX="709" fromY="-669" />Znajdziesz stary kamieniolom, pozornie opuszczony. Wiekszosc tego kamieniolomu zapadla sie w gleboki wawoz, ale wciaz moga byc tu uzyteczne zasoby.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="3" positionX="-81" positionY="-790" width="350" height="530" allPlayersXP="1" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventure" ID="4" positionX="1478.47607" positionY="1198.66418" width="350" height="885">
       <logic>
@@ -1156,9 +1156,9 @@ Smok zasypia.</nodes>
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="[Scavenger] Porozmawiaj ze swoimi krewnymi. Powiedz im, øe twÛj los jest wiÍkszy i trudniejszy, wiÍc lepiej siÍ dzielπ." ownerID="4" targetID="41" fromX="1804" fromY="707" />
+      <outputs name="[Scavenger] Porozmawiaj ze swoimi krewnymi. Powiedz im, ze twoj los jest wiekszy i trudniejszy, wiec lepiej sie dziela." ownerID="4" targetID="41" fromX="1804" fromY="707" />
       <outputs name="Atak!" ownerID="4" targetID="22" fromX="1804" fromY="627" />
-      <outputs name="Uciekaj." ownerID="4" targetID="3" fromX="1804" fromY="547" />Przeszukujesz gruz, ale zamiast zasobÛw natkniesz siÍ na bandÍ padlinoøercÛw, ktÛrzy nie wyglπdajπ na zadowolonych z udostÍpniania tej strony.</nodes>
+      <outputs name="Uciekaj." ownerID="4" targetID="3" fromX="1804" fromY="547" />Przeszukujesz gruz, ale zamiast zasobow natkniesz sie na bande padlinozercow, ktorzy nie wygladaja na zadowolonych z udostepniania tej strony.</nodes>
     <nodes xsi:type="NodeAdventure" ID="5" positionX="1485.41907" positionY="-611.82605" width="350" height="1126">
       <logic>
         <FilterBlock>
@@ -1167,12 +1167,12 @@ Smok zasypia.</nodes>
           </LogicFilter>
         </FilterBlock>
       </logic>
-      <outputs name="[Krasnolud] Uøyj swojej krasnoludzkiej wiedzy, aby u≥atwiÊ ci wykop." ownerID="5" targetID="39" group="G1" fromX="1811" fromY="-1102" />
-      <outputs name="[Krasnolud] Uøyj swojej krasnoludzkiej wiedzy, aby u≥atwiÊ ci wykop." ownerID="5" targetID="47" group="G1" fromX="1811" fromY="-1183" />
-      <outputs name="Uøyj narzÍdzi do kopania." ownerID="5" targetID="7" fromX="1811" fromY="-1263" />
+      <outputs name="[Krasnolud] Uzyj swojej krasnoludzkiej wiedzy, aby ulatwic ci wykop." ownerID="5" targetID="39" group="G1" fromX="1811" fromY="-1102" />
+      <outputs name="[Krasnolud] Uzyj swojej krasnoludzkiej wiedzy, aby ulatwic ci wykop." ownerID="5" targetID="47" group="G1" fromX="1811" fromY="-1183" />
+      <outputs name="Uzyj narzedzi do kopania." ownerID="5" targetID="7" fromX="1811" fromY="-1263" />
       <outputs name="Kop." ownerID="5" targetID="6" fromX="1811" fromY="-1343" />
-      <outputs name="Wyjdü." ownerID="5" targetID="3" fromX="1811" fromY="-1423" />
-      <outputs name="[Krasnolud] Uøyj swojej krasnoludzkiej wiedzy, aby u≥atwiÊ ci wykop." ownerID="5" targetID="40" group="G1" fromX="1811" fromY="-1503" />Przeszukujesz gruz tego starego kamienio≥omu i dostrzegasz úlady rudy z≥ota, ale podejrzewasz, øe musisz kopaÊ g≥Íboko, aby znaleüÊ coú znaczπcego. </nodes>
+      <outputs name="Wyjdz." ownerID="5" targetID="3" fromX="1811" fromY="-1423" />
+      <outputs name="[Krasnolud] Uzyj swojej krasnoludzkiej wiedzy, aby ulatwic ci wykop." ownerID="5" targetID="40" group="G1" fromX="1811" fromY="-1503" />Przeszukujesz gruz tego starego kamieniolomu i dostrzegasz slady rudy zlota, ale podejrzewasz, ze musisz kopac gleboko, aby znalezc cos znaczacego. </nodes>
     <nodes xsi:type="NodeChallenge" ID="6" positionX="2634.89771" positionY="-513.4236" width="500" height="726" challengeType="TypePhysical" versusConcept="true" versusGroup="GROUP-CON_P_4P_0M_0S" challengeScale="101" challengedList="ppl">
       <outputs name="Win" ownerID="6" targetID="16" fromX="3076" fromY="-1008" />
       <outputs name="Lose" ownerID="6" targetID="11" fromX="3076" fromY="-1089" />
@@ -1203,9 +1203,9 @@ Smok zasypia.</nodes>
       <outputs ownerID="11" targetID="12" fromX="4125" fromY="-1861" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="12" positionX="4336.713" positionY="-1567.58667" width="350" height="725">
-      <outputs name="Wyjdü." ownerID="12" targetID="46" fromX="4662" fromY="-2058" />Gdy prÛbujesz kopaÊ w poszukiwaniu z≥ota, ziemia przesuwa siÍ jeszcze raz i prawie grzebie ciÍ øywcem. 
+      <outputs name="Wyjdz." ownerID="12" targetID="46" fromX="4662" fromY="-2058" />Gdy probujesz kopac w poszukiwaniu zlota, ziemia przesuwa sie jeszcze raz i prawie grzebie cie zywcem. 
 
-Udaje ci siÍ wspiπÊ na powierzchniÍ. Jeúli by≥o jakieú z≥oto, zniknÍ≥o.</nodes>
+Udaje ci sie wspiac na powierzchnie. Jesli bylo jakies zloto, zniknelo.</nodes>
     <nodes xsi:type="NodeAdventure" ID="16" positionX="3397" positionY="-513" width="350" height="725">
       <logic>
         <ModifierBlock>
@@ -1232,7 +1232,7 @@ Udaje ci siÍ wspiπÊ na powierzchniÍ. Jeúli by≥o jakieú z≥oto, zniknÍ≥o.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Zbierz co moøesz i wyjdü." ownerID="16" targetID="17" fromX="3722" fromY="-1004" />Odkrywasz dobry zapas z≥ota i kilka szkieletÛw gÛrnikÛw, ktÛrzy prawdopodobnie zginÍli wraz z nim.</nodes>
+      <outputs name="Zbierz co mozesz i wyjdz." ownerID="16" targetID="17" fromX="3722" fromY="-1004" />Odkrywasz dobry zapas zlota i kilka szkieletow gornikow, ktorzy prawdopodobnie zgineli wraz z nim.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="17" positionX="3809" positionY="-663" width="350" height="530" allPlayersXP="3" allPlayersRP="1" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeChallenge" ID="21" positionX="2099.19971" positionY="1114.32776" width="500" height="726" challengeType="TypeMental" versusConcept="true" versusGroup="GROUP-CON_M_0P_2M_0S" challengeScale="101" challengedList="ppl">
       <logic>
@@ -1272,7 +1272,7 @@ Udaje ci siÍ wspiπÊ na powierzchniÍ. Jeúli by≥o jakieú z≥oto, zniknÍ≥o.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdü." ownerID="25" targetID="42" fromX="4150" fromY="-141" />Kiedy zniknÍli padlinoøercy, przekopujesz siÍ przez gruz, ale poza jakimú podstawowym kamieniem, odkrywasz, øe kamienio≥om siÍ wyczerpa≥.</nodes>
+      <outputs name="Wyjdz." ownerID="25" targetID="42" fromX="4150" fromY="-141" />Kiedy znikneli padlinozercy, przekopujesz sie przez gruz, ale poza jakims podstawowym kamieniem, odkrywasz, ze kamieniolom sie wyczerpal.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="26" positionX="5147.0957" positionY="404.6511" width="350" height="530" allPlayersXP="4" allPlayersRP="1" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventureEnd" ID="27" positionX="3096.49121" positionY="14.3428917" width="350" height="530" allPlayersXP="1" allPlayersRP="1" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventure" ID="29" positionX="3777.9563" positionY="1899.1123" width="350" height="725">
@@ -1291,15 +1291,15 @@ Udaje ci siÍ wspiπÊ na powierzchniÍ. Jeúli by≥o jakieú z≥oto, zniknÍ≥o.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Zabierz dziecko i wyjdü." ownerID="29" targetID="42" fromX="4103" fromY="1407" />OprÛcz kamienia, znajdujesz porzucone dziecko zamkniÍte w klatce i wykorzystywane. Jest wdziÍczny za pomoc i chce iúÊ z tobπ.</nodes>
+      <outputs name="Zabierz dziecko i wyjdz." ownerID="29" targetID="42" fromX="4103" fromY="1407" />Oprocz kamienia, znajdujesz porzucone dziecko zamkniete w klatce i wykorzystywane. Jest wdzieczny za pomoc i chce isc z toba.</nodes>
     <nodes xsi:type="NodeProduceDrop" ID="30" positionX="3168.60449" positionY="1606.25378" width="460" height="509" sourceGroup="GROUP-SCAVENGER_2P_2M_2S" cargoPercentage="100">
       <outputs ownerID="30" targetID="29" group="G2" fromX="3598" fromY="1247" />
       <outputs ownerID="30" targetID="25" group="G2" fromX="3598" fromY="1167" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="31" positionX="3356.202" positionY="1011.07452" width="350" height="725">
-      <outputs name="Wyjdü." ownerID="31" targetID="46" fromX="3681" fromY="519" />PrÛbujesz uøyÊ przesπdÛw padlinoøercÛw i zestawu jaskiÒ i tuneli, aby sk≥oniÊ ich do myúlenia, øe ten kamienio≥om jest nawiedzony. Dzia≥a, ale zamiast uciekaÊ, padlinoøercy decydujπ siÍ zawaliÊ jaskinie i zabiÊ Ñduchyî.'
+      <outputs name="Wyjdz." ownerID="31" targetID="46" fromX="3681" fromY="519" />Probujesz uzyc przesadow padlinozercow i zestawu jaskin i tuneli, aby sklonic ich do myslenia, ze ten kamieniolom jest nawiedzony. Dziala, ale zamiast uciekac, padlinozercy decyduja sie zawalic jaskinie i zabic Ñduchyî.'
 
-Ledwo co øyjesz.</nodes>
+Ledwo co zyjesz.</nodes>
     <nodes xsi:type="NodeAdventure" ID="36" positionX="822" positionY="1099" width="350" height="966">
       <logic>
         <FilterBlock>
@@ -1320,14 +1320,14 @@ Ledwo co øyjesz.</nodes>
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="[Scavenger] Porozmawiaj ze swoimi krewnymi. Powiedz im, øe twÛj los jest wiÍkszy i trudniejszy, wiÍc lepiej siÍ dzielπ." ownerID="36" targetID="41" fromX="1147" fromY="608" />
-      <outputs name="SprÛbuj przechytrzyÊ tych padlinoøercÛw, zanim ciÍ zobaczπ." ownerID="36" targetID="21" fromX="1147" fromY="528" />
+      <outputs name="[Scavenger] Porozmawiaj ze swoimi krewnymi. Powiedz im, ze twoj los jest wiekszy i trudniejszy, wiec lepiej sie dziela." ownerID="36" targetID="41" fromX="1147" fromY="608" />
+      <outputs name="Sprobuj przechytrzyc tych padlinozercow, zanim cie zobacza." ownerID="36" targetID="21" fromX="1147" fromY="528" />
       <outputs name="Atak!" ownerID="36" targetID="22" fromX="1147" fromY="448" />
-      <outputs name="Uciekaj." ownerID="36" targetID="3" fromX="1147" fromY="368" />Przeszukujesz gruz, ale zamiast zasobÛw natkniesz siÍ na bandÍ padlinoøercÛw. Jeszcze ciÍ nie zauwaøyli.</nodes>
+      <outputs name="Uciekaj." ownerID="36" targetID="3" fromX="1147" fromY="368" />Przeszukujesz gruz, ale zamiast zasobow natkniesz sie na bande padlinozercow. Jeszcze cie nie zauwazyli.</nodes>
     <nodes xsi:type="NodeAdventure" ID="38" positionX="2703.64917" positionY="1606.73755" width="350" height="725">
-      <outputs name="Zbierz co moøesz." ownerID="38" targetID="30" fromX="3029" fromY="1115" />Te stare kamienio≥omy majπ wiele jaskiÒ i nor, a padlinoøercy sπ bardzo przesπdni. 
+      <outputs name="Zbierz co mozesz." ownerID="38" targetID="30" fromX="3029" fromY="1115" />Te stare kamieniolomy maja wiele jaskin i nor, a padlinozercy sa bardzo przesadni. 
 
-Podsycasz ich podejrzanymi düwiÍkami i spadajπcymi kamieniami, dopÛki nie zdecydujπ, øe to miejsce jest nawiedzone i porzucajπ je, zostawiajπc nawet trochÍ ich rzeczy.</nodes>
+Podsycasz ich podejrzanymi dzwiekami i spadajacymi kamieniami, dopoki nie zdecyduja, ze to miejsce jest nawiedzone i porzucaja je, zostawiajac nawet troche ich rzeczy.</nodes>
     <nodes xsi:type="NodeAdventure" ID="39" positionX="1998" positionY="-872" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -1362,7 +1362,7 @@ Podsycasz ich podejrzanymi düwiÍkami i spadajπcymi kamieniami, dopÛki nie zdecyd
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Zbierz co moøesz i wyjdü." ownerID="39" targetID="17" fromX="2323" fromY="-1363" />Odkrywasz dobry zapas z≥ota i kilka szkieletÛw gÛrnikÛw, ktÛrzy prawdopodobnie zginÍli wraz z nim.</nodes>
+      <outputs name="Zbierz co mozesz i wyjdz." ownerID="39" targetID="17" fromX="2323" fromY="-1363" />Odkrywasz dobry zapas zlota i kilka szkieletow gornikow, ktorzy prawdopodobnie zgineli wraz z nim.</nodes>
     <nodes xsi:type="NodeDealDamage" ID="40" positionX="1886.47729" positionY="-1903.96631" width="460" height="459" challengeTypeDamage="TypePhysical" minDamage="10" maxDamage="30" useCountInPercent="true" targetGroup="ppl">
       <logic>
         <FilterBlock>
@@ -1396,14 +1396,14 @@ Podsycasz ich podejrzanymi düwiÍkami i spadajπcymi kamieniami, dopÛki nie zdecyd
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Zbierz ich rzeczy." ownerID="43" targetID="30" fromX="2185" fromY="2080" />Zmiatacze wyglπdajπ na przeraøonych i oddalajπ siÍ: 
+      <outputs name="Zbierz ich rzeczy." ownerID="43" targetID="30" fromX="2185" fromY="2080" />Zmiatacze wygladaja na przerazonych i oddalaja sie: 
 
-'Tak, weü udzia≥, weü, weü i idü.'</nodes>
+'Tak, wez udzial, wez, wez i idz.'</nodes>
     <nodes xsi:type="NodeDealDamage" ID="44" positionX="1408.56421" positionY="1811.60291" width="460" height="459" challengeTypeDamage="TypeMental" minDamage="20" maxDamage="40" useCountInPercent="true" targetGroup="ppl">
       <outputs ownerID="44" targetID="45" fromX="1837" fromY="1423" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="45" positionX="2076.826" positionY="1818.394" width="350" height="725">
-      <outputs name="Uruchom. &#xD;" ownerID="45" targetID="46" fromX="2402" fromY="1327" />Jest ich tak wiele i wyglπdajπ dobrze wyposaøone i agresywne. Myúlisz, øe najlepiej teraz odejúÊ.</nodes>
+      <outputs name="Uruchom. &#xD;" ownerID="45" targetID="46" fromX="2402" fromY="1327" />Jest ich tak wiele i wygladaja dobrze wyposazone i agresywne. Myslisz, ze najlepiej teraz odejsc.</nodes>
     <nodes xsi:type="NodeSpawnOnMap" ID="46" positionX="2517.07959" positionY="147.048187" width="480" height="503" radius="0" destroyOwner="true" linkedEventUniqueID="0">
       <outputs ownerID="46" targetID="27" fromX="2965" fromY="-285" />
     </nodes>
@@ -1448,9 +1448,9 @@ Podsycasz ich podejrzanymi düwiÍkami i spadajπcymi kamieniami, dopÛki nie zdecyd
           </LogicFilter>
         </FilterBlock>
       </logic>
-      <outputs name="[£owca lub Percepcja] Przeszukaj kamienio≥om." ownerID="2" targetID="31" group="G1" fromX="745" fromY="-608" />
-      <outputs name="Przeszukaj kamienio≥om." ownerID="2" targetID="4" group="G1" fromX="745" fromY="-688" />
-      <outputs name="Wyjdü." ownerID="2" targetID="3" fromX="745" fromY="-768" />Znajdziesz stary kamienio≥om, pozornie opuszczony. WiÍkszoúÊ tego kamienio≥omu zapad≥a siÍ w g≥Íboki wπwÛz, ale wciπø mogπ byÊ tu uøyteczne zasoby.</nodes>
+      <outputs name="[Lowca lub Percepcja] Przeszukaj kamieniolom." ownerID="2" targetID="31" group="G1" fromX="745" fromY="-608" />
+      <outputs name="Przeszukaj kamieniolom." ownerID="2" targetID="4" group="G1" fromX="745" fromY="-688" />
+      <outputs name="Wyjdz." ownerID="2" targetID="3" fromX="745" fromY="-768" />Znajdziesz stary kamieniolom, pozornie opuszczony. Wiekszosc tego kamieniolomu zapadla sie w gleboki wawoz, ale wciaz moga byc tu uzyteczne zasoby.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="3" positionX="-12" positionY="-835" width="350" height="530" allPlayersXP="1" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventure" ID="4" positionX="1294.14221" positionY="321.721741" width="350" height="885">
       <logic>
@@ -1462,11 +1462,11 @@ Podsycasz ich podejrzanymi düwiÍkami i spadajπcymi kamieniami, dopÛki nie zdecyd
       </logic>
       <outputs name="Uciekaj!" ownerID="4" targetID="5" group="G1" fromX="1619" fromY="-169" />
       <outputs name="Uciekaj!" ownerID="4" targetID="7" group="G1" fromX="1619" fromY="-249" />
-      <outputs name="Atak!" ownerID="4" targetID="9" fromX="1619" fromY="-329" />Wyglπda na to, øe w kilku duøych kopcach jest duøo dobrego kamienia - byÊ moøe porzucony tutaj, a moøe to rozbija siÍ tutaj. 
+      <outputs name="Atak!" ownerID="4" targetID="9" fromX="1619" fromY="-329" />Wyglada na to, ze w kilku duzych kopcach jest duzo dobrego kamienia - byc moze porzucony tutaj, a moze to rozbija sie tutaj. 
 
-Zaczynasz ≥adowaÊ kamieÒ, gdy zdasz sobie sprawÍ, øe kopce siÍ poruszy≥y. Oni ciÍ obserwujπ, a ty s≥yszysz: 
+Zaczynasz ladowac kamien, gdy zdasz sobie sprawe, ze kopce sie poruszyly. Oni cie obserwuja, a ty slyszysz: 
 
-'Czy oni wyglπdajπ dla ciebie smacznie? Bony, nie?'</nodes>
+'Czy oni wygladaja dla ciebie smacznie? Bony, nie?'</nodes>
     <nodes xsi:type="NodeAdventure" ID="5" positionX="1833.91309" positionY="995.542053" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -1486,13 +1486,13 @@ Zaczynasz ≥adowaÊ kamieÒ, gdy zdasz sobie sprawÍ, øe kopce siÍ poruszy≥y. Oni ci
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdü." ownerID="5" targetID="6" fromX="2159" fromY="504" />Jesteú szybki na nogach i masz dobry rozum o tobie, wiÍc udaje ci siÍ odskoczyÊ i uciekaÊ w bezpieczne miejsce, zanim rockowe trolle zakoÒczπ to, co majπ do powiedzenia.</nodes>
+      <outputs name="Wyjdz." ownerID="5" targetID="6" fromX="2159" fromY="504" />Jestes szybki na nogach i masz dobry rozum o tobie, wiec udaje ci sie odskoczyc i uciekac w bezpieczne miejsce, zanim rockowe trolle zakoncza to, co maja do powiedzenia.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="6" positionX="2405" positionY="1086" width="350" height="530" allPlayersXP="2" allPlayersRP="1" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeDealDamage" ID="7" positionX="1865" positionY="204" width="460" height="459" challengeTypeDamage="TypePhysical" minDamage="15" maxDamage="40" useCountInPercent="true" targetGroup="ppl">
       <outputs ownerID="7" targetID="8" fromX="2294" fromY="-184" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="8" positionX="2460.62476" positionY="482.424927" width="350" height="725">
-      <outputs name="Wyjdü." ownerID="8" targetID="6" fromX="2786" fromY="-8" />Wskakujesz na nogi i biegniesz do øycia. Jeden z trolli zostaje trafiony przed ucieczkπ, ale nie jest wystarczajπco szybki, by go úcigaÊ.</nodes>
+      <outputs name="Wyjdz." ownerID="8" targetID="6" fromX="2786" fromY="-8" />Wskakujesz na nogi i biegniesz do zycia. Jeden z trolli zostaje trafiony przed ucieczka, ale nie jest wystarczajaco szybki, by go scigac.</nodes>
     <nodes xsi:type="NodeChallenge" ID="9" positionX="2768.89282" positionY="-297.2513" width="500" height="726" challengeType="TypePhysical" versusGroup="GROUP-TROLL_ROCK_MIX_9P_7M_6S" challengeScale="101" challengedList="ppl">
       <outputs name="Win" ownerID="9" targetID="18" fromX="3210" fromY="-792" />
       <outputs name="Lose" ownerID="9" targetID="24" fromX="3210" fromY="-872" />
@@ -1522,9 +1522,9 @@ Zaczynasz ≥adowaÊ kamieÒ, gdy zdasz sobie sprawÍ, øe kopce siÍ poruszy≥y. Oni ci
         </FilterBlock>
       </logic>
       <outputs name="Najsilniejszym prawem jest prawo natury. Walcz z nimi!" ownerID="11" targetID="12" fromX="1795" fromY="-1515" />
-      <outputs name="Zgadzam siÍ daÊ im jednego z was do jedzenia." ownerID="11" targetID="33" fromX="1795" fromY="-1595" />
-      <outputs name="ZgÛdü siÍ daÊ im jedzenie w zamian za ma≥y kamieÒ." ownerID="11" targetID="16" fromX="1795" fromY="-1675" />
-      <outputs name="Øπdajcie, aby was zostawili, albo bÍdπ rozgniewaÊ bogÛw natury." ownerID="11" targetID="17" fromX="1795" fromY="-1755" />ÑBÛg natury, mÛwisz? Hmmm. Tak, pachniesz drzewami i innymi rzeczami, ziemia teø, jak przypuszczam. Powiedz, jeúli jesteú taki przyjazny, daj nam jedzenie, a my ciÍ nie zjemy.'</nodes>
+      <outputs name="Zgadzam sie dac im jednego z was do jedzenia." ownerID="11" targetID="33" fromX="1795" fromY="-1595" />
+      <outputs name="Zgodz sie dac im jedzenie w zamian za maly kamien." ownerID="11" targetID="16" fromX="1795" fromY="-1675" />
+      <outputs name="Zadajcie, aby was zostawili, albo beda rozgniewac bogow natury." ownerID="11" targetID="17" fromX="1795" fromY="-1755" />ÑBog natury, mowisz? Hmmm. Tak, pachniesz drzewami i innymi rzeczami, ziemia tez, jak przypuszczam. Powiedz, jesli jestes taki przyjazny, daj nam jedzenie, a my cie nie zjemy.'</nodes>
     <nodes xsi:type="NodeChallenge" ID="12" positionX="2357.57568" positionY="-1298.87878" width="500" height="726" challengeType="TypePhysical" versusGroup="GROUP-TROLL_ROCK_MIX_9P_7M_6S" challengeScale="101" challengedList="ppl">
       <logic>
         <ModifierBlock>
@@ -1596,7 +1596,7 @@ Zaczynasz ≥adowaÊ kamieÒ, gdy zdasz sobie sprawÍ, øe kopce siÍ poruszy≥y. Oni ci
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Zbierz co moøesz i wyjdü." ownerID="18" targetID="19" fromX="4311" fromY="-1142" />Pokonujesz trolle, a kamienio≥om stoi przed tobπ.</nodes>
+      <outputs name="Zbierz co mozesz i wyjdz." ownerID="18" targetID="19" fromX="4311" fromY="-1142" />Pokonujesz trolle, a kamieniolom stoi przed toba.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="19" positionX="4476.238" positionY="-811.4142" width="350" height="530" allPlayersXP="8" allPlayersRP="2" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeProduceDrop" ID="21" positionX="3388" positionY="-953" width="460" height="429" sourceGroup="GROUP-TROLL_ROCK_MIX_9P_7M_6S" dropPercentage="100" targetGroup="ppl">
       <outputs ownerID="21" targetID="36" fromX="3818" fromY="-1311" />
@@ -1604,7 +1604,7 @@ Zaczynasz ≥adowaÊ kamieÒ, gdy zdasz sobie sprawÍ, øe kopce siÍ poruszy≥y. Oni ci
     <nodes xsi:type="NodeAdventure" ID="22" positionX="2980" positionY="-1069" width="350" height="885">
       <outputs name="Walcz!" ownerID="22" targetID="9" fromX="3306" fromY="-1559" />
       <outputs name="Uciekaj!" ownerID="22" targetID="5" group="G1" fromX="3306" fromY="-1639" />
-      <outputs name="Uciekaj!" ownerID="22" targetID="7" group="G1" fromX="3306" fromY="-1719" />TwÛj plan siÍ nie powiÛd≥, a trolle wyglπdajπ na g≥odne.</nodes>
+      <outputs name="Uciekaj!" ownerID="22" targetID="7" group="G1" fromX="3306" fromY="-1719" />Twoj plan sie nie powiodl, a trolle wygladaja na glodne.</nodes>
     <nodes xsi:type="NodeAdventure" ID="24" positionX="3521.21387" positionY="-1843.3584" width="350" height="725">
       <logic>
         <ModifierBlock>
@@ -1616,7 +1616,7 @@ Zaczynasz ≥adowaÊ kamieÒ, gdy zdasz sobie sprawÍ, øe kopce siÍ poruszy≥y. Oni ci
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Uruchom. &#xD;&#xA;" ownerID="24" targetID="25" fromX="3846" fromY="-2334" />Trolle bijπ ciÍ i udaje ci siÍ z≥apaÊ jednego z was, jedzπc tÍ øywπ osobÍ przed oczami, tak jak reszta z was ucieka.</nodes>
+      <outputs name="Uruchom. &#xD;&#xA;" ownerID="24" targetID="25" fromX="3846" fromY="-2334" />Trolle bija cie i udaje ci sie zlapac jednego z was, jedzac te zywa osobe przed oczami, tak jak reszta z was ucieka.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="25" positionX="3943.344" positionY="-2018.79944" width="350" height="530" allPlayersXP="2" allPlayersRP="1" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventure" ID="26" positionX="2654.1814" positionY="-2455.60474" width="350" height="681">
       <logic>
@@ -1629,12 +1629,12 @@ Zaczynasz ≥adowaÊ kamieÒ, gdy zdasz sobie sprawÍ, øe kopce siÍ poruszy≥y. Oni ci
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Uúmiechnij siÍ uprzejmie i weü kamieÒ. " ownerID="26" targetID="27" fromX="2979" fromY="-2902" />ÑEch, wciπø nie jestem pewien co do tych twoich bogÛw, ale najlepiej bπdü bezpieczny niø przepraszam. Weü kamieÒ, ktÛry znajdziesz - po prostu nie moje kule, co, ha!'</nodes>
+      <outputs name="Usmiechnij sie uprzejmie i wez kamien. " ownerID="26" targetID="27" fromX="2979" fromY="-2902" />ÑEch, wciaz nie jestem pewien co do tych twoich bogow, ale najlepiej badz bezpieczny niz przepraszam. Wez kamien, ktory znajdziesz - po prostu nie moje kule, co, ha!'</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="27" positionX="3106.49854" positionY="-2694.258" width="350" height="360.8" allPlayersXP="5" allPlayersRP="1" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventure" ID="28" positionX="2087.287" positionY="-2575.17773" width="350" height="841.85">
       <outputs name="Walcz!" ownerID="28" targetID="9" fromX="2413" fromY="-3022" />
       <outputs name="Uciekaj!" ownerID="28" targetID="5" group="G1" fromX="2413" fromY="-3102" />
-      <outputs name="Uciekaj!" ownerID="28" targetID="7" group="G1" fromX="2413" fromY="-3182" />ÑNudzi≥eú mnie swojπ rozmowπ. Wyglπdasz smacznie!'</nodes>
+      <outputs name="Uciekaj!" ownerID="28" targetID="7" group="G1" fromX="2413" fromY="-3182" />ÑNudziles mnie swoja rozmowa. Wygladasz smacznie!'</nodes>
     <nodes xsi:type="NodeAdventure" ID="31" positionX="853" positionY="454" width="350" height="1126">
       <logic>
         <FilterBlock>
@@ -1660,11 +1660,11 @@ Zaczynasz ≥adowaÊ kamieÒ, gdy zdasz sobie sprawÍ, øe kopce siÍ poruszy≥y. Oni ci
       <outputs name="Uciekaj!" ownerID="31" targetID="5" group="G1" fromX="1178" fromY="-37" />
       <outputs name="Uciekaj!" ownerID="31" targetID="7" group="G1" fromX="1178" fromY="-117" />
       <outputs name="Atak!" ownerID="31" targetID="9" fromX="1178" fromY="-197" />
-      <outputs name="SprÛbuj ich przechytrzyÊ." ownerID="31" targetID="10" fromX="1178" fromY="-277" />
-      <outputs name="[Runemaster] W imiÍ staroøytnych kamiennych murarzy, ktÛrzy ciÍ wykuwali, wyrzeüb úpiπcπ runÍ na cia≥ach trolli, abyú mÛg≥ wziπÊ to, co twoje." ownerID="31" targetID="32" fromX="1178" fromY="-357" />
-      <outputs name="[Natura] Gdy trolle sπ stworzeniami woli natury, og≥aszaj, øe jest to twoja domena i dlatego muszπ staÊ z boku!" ownerID="31" targetID="11" fromX="1178" fromY="-438" />Wyglπda na to, øe w kilku duøych kopcach jest duøo dobrego kamienia - byÊ moøe porzucone tutaj, a moøe to tutaj rozbijajπ. 
+      <outputs name="Sprobuj ich przechytrzyc." ownerID="31" targetID="10" fromX="1178" fromY="-277" />
+      <outputs name="[Runemaster] W imie starozytnych kamiennych murarzy, ktorzy cie wykuwali, wyrzezb spiaca rune na cialach trolli, abys mogl wziac to, co twoje." ownerID="31" targetID="32" fromX="1178" fromY="-357" />
+      <outputs name="[Natura] Gdy trolle sa stworzeniami woli natury, oglaszaj, ze jest to twoja domena i dlatego musza stac z boku!" ownerID="31" targetID="11" fromX="1178" fromY="-438" />Wyglada na to, ze w kilku duzych kopcach jest duzo dobrego kamienia - byc moze porzucone tutaj, a moze to tutaj rozbijaja. 
 
-Ale z czasem zauwaøasz, øe kopce majπ oczy - na pewno trolle rockowe - i patrzπ na ciebie, udajπc, øe úpiπ.</nodes>
+Ale z czasem zauwazasz, ze kopce maja oczy - na pewno trolle rockowe - i patrza na ciebie, udajac, ze spia.</nodes>
     <nodes xsi:type="NodeAdventure" ID="32" positionX="876.3228" positionY="-834.8466" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -1690,9 +1690,9 @@ Ale z czasem zauwaøasz, øe kopce majπ oczy - na pewno trolle rockowe - i patrzπ 
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Zbierz co moøesz i wyjdü." ownerID="32" targetID="6" fromX="1202" fromY="-1325" />Kiedy udajesz, øe zbierasz kamieÒ, wyrzeübisz úpiπcπ runÍ na niczego nie podejrzewajπcych trollach i zasypiajπ. 
+      <outputs name="Zbierz co mozesz i wyjdz." ownerID="32" targetID="6" fromX="1202" fromY="-1325" />Kiedy udajesz, ze zbierasz kamien, wyrzezbisz spiaca rune na niczego nie podejrzewajacych trollach i zasypiaja. 
 
-Nie bÍdπ d≥ugo leøeÊ bezradni, wiÍc najlepiej siÍ poúpiesz.</nodes>
+Nie beda dlugo lezec bezradni, wiec najlepiej sie pospiesz.</nodes>
     <nodes xsi:type="NodeTrade" ID="33" positionX="909.5221" positionY="-1587.56763" width="460" height="479" traderProfile="TRADER-BANDIT_TWO" playerInventory="ppl" startingBalance="-1">
       <outputs name="Confirm" ownerID="33" targetID="35" fromX="1339" fromY="-1915" />
       <outputs name="Cancel" ownerID="33" targetID="11" fromX="1339" fromY="-1996" />
@@ -1708,11 +1708,11 @@ Nie bÍdπ d≥ugo leøeÊ bezradni, wiÍc najlepiej siÍ poúpiesz.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Zbierz co masz i wyjdü." ownerID="35" targetID="14" fromX="609" fromY="-2104" />ÑHmm, nie widzia≥em tego nadchodzπcego. Nie. Øyjesz tak d≥ugo i wciπø siÍ zaskakujesz. åwietny. Masz kamieÒ, wydaje siÍ sprawiedliwy.'
+      <outputs name="Zbierz co masz i wyjdz." ownerID="35" targetID="14" fromX="609" fromY="-2104" />ÑHmm, nie widzialem tego nadchodzacego. Nie. Zyjesz tak dlugo i wciaz sie zaskakujesz. Swietny. Masz kamien, wydaje sie sprawiedliwy.'
 
-TwÛj facet jest wziÍty i rozdarty na trzy czÍúci, ktÛre majπ zostaÊ poøarte. Ich zdezorientowana twarz patrzy na ciebie martwa, gdy ich g≥owa toczy siÍ na ziemiÍ. 
+Twoj facet jest wziety i rozdarty na trzy czesci, ktore maja zostac pozarte. Ich zdezorientowana twarz patrzy na ciebie martwa, gdy ich glowa toczy sie na ziemie. 
 
-ÑWszystkie te w≥osy, zÍby i lepkie oczy, nie podoba siÍ to, moøesz je odzyskaÊ.'</nodes>
+ÑWszystkie te wlosy, zeby i lepkie oczy, nie podoba sie to, mozesz je odzyskac.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="36" positionX="4059" positionY="-1433" width="350" height="725">
       <logic>
         <ModifierBlock>
@@ -1724,7 +1724,7 @@ TwÛj facet jest wziÍty i rozdarty na trzy czÍúci, ktÛre majπ zostaÊ poøarte. Ich
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Zbierz co moøesz i wyjdü." ownerID="36" targetID="19" fromX="4384" fromY="-1924" />Zauwaøasz, øe trolle sπ nadal bardzo úpiπce. Rozpraszasz ich i krπøysz wokÛ≥ nich, podczas gdy inni biorπ kamieÒ, ktÛry mogπ znaleüÊ. </nodes>
+      <outputs name="Zbierz co mozesz i wyjdz." ownerID="36" targetID="19" fromX="4384" fromY="-1924" />Zauwazasz, ze trolle sa nadal bardzo spiace. Rozpraszasz ich i krazysz wokol nich, podczas gdy inni biora kamien, ktory moga znalezc. </nodes>
   </Adventure>
   <Adventure name="Rockers" uniqueID="7" typeGeneric="false" typePerGroupGeneric="false" typeInterrupt="true" typeExpedition="true" typeVillage="false" difficulty="4" nodeIdMax="31" joinIsForced="false" joinType="AllAlly" joinRange="MovementArea">
     <nodes xsi:type="NodeStarting" ID="1" positionX="10" positionY="-10" width="347" height="661" image="Event039">
@@ -1752,14 +1752,14 @@ TwÛj facet jest wziÍty i rozdarty na trzy czÍúci, ktÛre majπ zostaÊ poøarte. Ich
         </FilterBlock>
       </logic>
       <outputs name="Wyszukaj miejsce." ownerID="2" targetID="4" fromX="871" fromY="-589" />
-      <outputs name="Wyjdü." ownerID="2" targetID="7" fromX="871" fromY="-669" />Stoisz na ma≥ym klifie, a poniøej widaÊ pozosta≥oúci kamienio≥omu. Wyglπda na to, øe jest w wiÍkszoúci wyczerpany, ale wiesz, øe te miejsca mogπ nadal posiadaÊ dobre zasoby.</nodes>
+      <outputs name="Wyjdz." ownerID="2" targetID="7" fromX="871" fromY="-669" />Stoisz na malym klifie, a ponizej widac pozostalosci kamieniolomu. Wyglada na to, ze jest w wiekszosci wyczerpany, ale wiesz, ze te miejsca moga nadal posiadac dobre zasoby.</nodes>
     <nodes xsi:type="NodeAdventure" ID="4" positionX="1007.89587" positionY="342.38446" width="350" height="1126">
-      <outputs name="Lepiej nie czekaÊ, aø urosnπ do trolli. Atak!" ownerID="4" targetID="6" fromX="1333" fromY="-148" />
-      <outputs name="[Krasnolud] Te maleÒkie kamienne niemowlÍta zas≥ugujπ na to, by pozostawiÊ je w spokoju. W rzeczywistoúci zostaw im trochÍ jedzenia i szybko pozbπdü siÍ kamienia od m≥odzieÒcÛw, zanim wrÛci kamienna mama." ownerID="4" targetID="30" fromX="1333" fromY="-228" />
-      <outputs name="[Percepcja] Przyjrzyj siÍ bliøej, zanim cokolwiek zrobisz." ownerID="4" targetID="8" fromX="1333" fromY="-309" />
-      <outputs name="Zbliø siÍ do nich." ownerID="4" targetID="9" group="G2" fromX="1333" fromY="-389" />
-      <outputs name="Zbliø siÍ do nich." ownerID="4" targetID="10" group="G2" fromX="1333" fromY="-469" />
-      <outputs name="Wyjdü." ownerID="4" targetID="7" fromX="1333" fromY="-549" />Gdy tylko zejdziesz na dÛ≥, zobaczysz, øe kamienie poniøej poruszajπ siÍ w nienaturalny sposÛb. Szybko zdajesz sobie sprawÍ, øe muszπ byÊ rockerami - m≥ode trolle. W pobliøu zawsze istnieje niebezpieczeÒstwo rodzica. 
+      <outputs name="Lepiej nie czekac, az urosna do trolli. Atak!" ownerID="4" targetID="6" fromX="1333" fromY="-148" />
+      <outputs name="[Krasnolud] Te malenkie kamienne niemowleta zasluguja na to, by pozostawic je w spokoju. W rzeczywistosci zostaw im troche jedzenia i szybko pozbadz sie kamienia od mlodziencow, zanim wroci kamienna mama." ownerID="4" targetID="30" fromX="1333" fromY="-228" />
+      <outputs name="[Percepcja] Przyjrzyj sie blizej, zanim cokolwiek zrobisz." ownerID="4" targetID="8" fromX="1333" fromY="-309" />
+      <outputs name="Zbliz sie do nich." ownerID="4" targetID="9" group="G2" fromX="1333" fromY="-389" />
+      <outputs name="Zbliz sie do nich." ownerID="4" targetID="10" group="G2" fromX="1333" fromY="-469" />
+      <outputs name="Wyjdz." ownerID="4" targetID="7" fromX="1333" fromY="-549" />Gdy tylko zejdziesz na dol, zobaczysz, ze kamienie ponizej poruszaja sie w nienaturalny sposob. Szybko zdajesz sobie sprawe, ze musza byc rockerami - mlode trolle. W poblizu zawsze istnieje niebezpieczenstwo rodzica. 
 </nodes>
     <nodes xsi:type="NodeChallenge" ID="6" positionX="1488.30542" positionY="1197.01538" width="500" height="807" challengeType="TypePhysical" versusGroup="GROUP-LOTS_ROCKERS_2P_4M_3S" challengeScale="101" challengedList="ppl">
       <outputs name="Win" ownerID="6" targetID="16" group="G1" fromX="1929" fromY="701" />
@@ -1787,12 +1787,12 @@ TwÛj facet jest wziÍty i rozdarty na trzy czÍúci, ktÛre majπ zostaÊ poøarte. Ich
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Lepiej nie czekaÊ, aø urosnπ do trolli. Atak!" ownerID="8" targetID="6" fromX="3078" fromY="-954" />
-      <outputs name="SprÛbuj przekraúÊ siÍ wokÛ≥ rockerÛw, aby zebraÊ jak najwiÍcej." ownerID="8" targetID="31" fromX="3078" fromY="-1034" />
-      <outputs name="[Krasnolud] Te maleÒkie kamienne niemowlÍta zas≥ugujπ na to, by pozostawiÊ je w spokoju. W rzeczywistoúci zostaw im trochÍ jedzenia i szybko pozbπdü siÍ kamienia od m≥odzieÒcÛw, zanim wrÛci kamienna mama." ownerID="8" targetID="30" fromX="3078" fromY="-1114" />
-      <outputs name="Podejdü do rockerÛw." ownerID="8" targetID="9" group="G1" fromX="3078" fromY="-1195" />
-      <outputs name="Podejdü do rockerÛw." ownerID="8" targetID="10" group="G1" fromX="3078" fromY="-1275" />
-      <outputs name="Wyjdü." ownerID="8" targetID="7" fromX="3078" fromY="-1355" />Sprawdzasz úlady i zdajesz sobie sprawÍ, øe niektÛrzy doroúli mogπ byÊ blisko. Mimo to widzisz tutaj duøo cennego kamienia i nie moøesz go ≥atwo zebraÊ bez zauwaøenia rockerÛw.</nodes>
+      <outputs name="Lepiej nie czekac, az urosna do trolli. Atak!" ownerID="8" targetID="6" fromX="3078" fromY="-954" />
+      <outputs name="Sprobuj przekrasc sie wokol rockerow, aby zebrac jak najwiecej." ownerID="8" targetID="31" fromX="3078" fromY="-1034" />
+      <outputs name="[Krasnolud] Te malenkie kamienne niemowleta zasluguja na to, by pozostawic je w spokoju. W rzeczywistosci zostaw im troche jedzenia i szybko pozbadz sie kamienia od mlodziencow, zanim wroci kamienna mama." ownerID="8" targetID="30" fromX="3078" fromY="-1114" />
+      <outputs name="Podejdz do rockerow." ownerID="8" targetID="9" group="G1" fromX="3078" fromY="-1195" />
+      <outputs name="Podejdz do rockerow." ownerID="8" targetID="10" group="G1" fromX="3078" fromY="-1275" />
+      <outputs name="Wyjdz." ownerID="8" targetID="7" fromX="3078" fromY="-1355" />Sprawdzasz slady i zdajesz sobie sprawe, ze niektorzy dorosli moga byc blisko. Mimo to widzisz tutaj duzo cennego kamienia i nie mozesz go latwo zebrac bez zauwazenia rockerow.</nodes>
     <nodes xsi:type="NodeAdventure" ID="9" positionX="2222" positionY="-539" width="350" height="805">
       <logic>
         <FilterBlock>
@@ -1802,14 +1802,14 @@ TwÛj facet jest wziÍty i rozdarty na trzy czÍúci, ktÛre majπ zostaÊ poøarte. Ich
         </FilterBlock>
       </logic>
       <outputs name="Atak!" ownerID="9" targetID="6" fromX="2547" fromY="-1030" />
-      <outputs name="Najlepsza ucieczka." ownerID="9" targetID="21" fromX="2547" fromY="-1110" />Rockowcy widzπ, øe podchodzisz i panikujesz. Szalejπ wokÛ≥, powodujπc, øe ca≥y kamienio≥om trzÍsie siÍ niebezpiecznie. 
+      <outputs name="Najlepsza ucieczka." ownerID="9" targetID="21" fromX="2547" fromY="-1110" />Rockowcy widza, ze podchodzisz i panikujesz. Szaleja wokol, powodujac, ze caly kamieniolom trzesie sie niebezpiecznie. 
 
-Ty teø czujesz dudnienie czegoú wiÍkszego.</nodes>
+Ty tez czujesz dudnienie czegos wiekszego.</nodes>
     <nodes xsi:type="NodeAdventure" ID="10" positionX="1543.89172" positionY="-843.0886" width="350" height="966">
-      <outputs name="Majπ kamienie szlachetne. Atak!" ownerID="10" targetID="6" fromX="1869" fromY="-1334" />
+      <outputs name="Maja kamienie szlachetne. Atak!" ownerID="10" targetID="6" fromX="1869" fromY="-1334" />
       <outputs name="Graj z nimi." ownerID="10" targetID="12" group="G1" fromX="1869" fromY="-1414" />
       <outputs name="Graj z nimi." ownerID="10" targetID="15" group="G1" fromX="1869" fromY="-1494" />
-      <outputs name="[Krasnolud] Te maleÒkie kamienne niemowlÍta zas≥ugujπ na to, by pozostawiÊ je w spokoju. W rzeczywistoúci zostaw im trochÍ jedzenia i szybko pozbπdü siÍ kamienia od m≥odzieÒcÛw, zanim wrÛci kamienna mama." ownerID="10" targetID="30" fromX="1869" fromY="-1574" />Rockers ciÍ widzπ i na poczπtku siÍ denerwujπ, ale gdy zbliøasz siÍ bez z≥oúci, stajπ siÍ ciekawi. WúrÛd szurania kamieni i chrzπkniÍÊ s≥yszysz: 
+      <outputs name="[Krasnolud] Te malenkie kamienne niemowleta zasluguja na to, by pozostawic je w spokoju. W rzeczywistosci zostaw im troche jedzenia i szybko pozbadz sie kamienia od mlodziencow, zanim wroci kamienna mama." ownerID="10" targetID="30" fromX="1869" fromY="-1574" />Rockers cie widza i na poczatku sie denerwuja, ale gdy zblizasz sie bez zlosci, staja sie ciekawi. Wsrod szurania kamieni i chrzakniec slyszysz: 
 'Graj?'</nodes>
     <nodes xsi:type="NodeAdventure" ID="12" positionX="2375.84229" positionY="-1557.22192" width="350" height="725">
       <logic>
@@ -1839,7 +1839,7 @@ Ty teø czujesz dudnienie czegoú wiÍkszego.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="DziÍkujÍ im i odejdücie." ownerID="12" targetID="14" fromX="2701" fromY="-2048" />Masz ze sobπ silnego ludu, wiÍc gra idzie dobrze. Rockerzy sπ zadowoleni ze swoich towarzyszy zabaw i podlewajπ ciÍ prezentami, zanim zaprowadzπ ciÍ, wskazujπc swoim rodzicom, øe zaraz wrÛcπ.</nodes>
+      <outputs name="Dziekuje im i odejdzcie." ownerID="12" targetID="14" fromX="2701" fromY="-2048" />Masz ze soba silnego ludu, wiec gra idzie dobrze. Rockerzy sa zadowoleni ze swoich towarzyszy zabaw i podlewaja cie prezentami, zanim zaprowadza cie, wskazujac swoim rodzicom, ze zaraz wroca.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="14" positionX="3172.311" positionY="-2206.62939" width="350" height="530" allPlayersXP="3" allPlayersRP="2" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeDealDamage" ID="15" positionX="1796.04358" positionY="-1900.02673" width="460" height="459" challengeTypeDamage="TypePhysical" minDamage="20" maxDamage="35" useCountInPercent="true" targetGroup="ppl">
       <outputs ownerID="15" targetID="28" fromX="2225" fromY="-2288" />
@@ -1867,11 +1867,11 @@ Ty teø czujesz dudnienie czegoú wiÍkszego.</nodes>
         </ModifierBlock>
       </logic>
       <outputs name="Uciekaj!" ownerID="16" targetID="24" fromX="2480" fromY="911" />
-      <outputs name="Atak!" ownerID="16" targetID="25" fromX="2480" fromY="831" />Bujaki leøπ roztrzaskane u twoich stÛp, a ty czujesz to nienaturalne, niesprowokowane zabijanie m≥odych nie pasowa≥o do twojej domeny. 
+      <outputs name="Atak!" ownerID="16" targetID="25" fromX="2480" fromY="831" />Bujaki leza roztrzaskane u twoich stop, a ty czujesz to nienaturalne, niesprowokowane zabijanie mlodych nie pasowalo do twojej domeny. 
 
-S≥yszysz ryczπcy krzyk mamusi trolla szybko!</nodes>
+Slyszysz ryczacy krzyk mamusi trolla szybko!</nodes>
     <nodes xsi:type="NodeAdventure" ID="20" positionX="2345.63062" positionY="423.795044" width="350" height="725">
-      <outputs name="Uruchom. &#xD;" ownerID="20" targetID="21" fromX="2671" fromY="-67" />Bujaki ciÍ bijπ i zmuszajπ do ucieczki.</nodes>
+      <outputs name="Uruchom. &#xD;" ownerID="20" targetID="21" fromX="2671" fromY="-67" />Bujaki cie bija i zmuszaja do ucieczki.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="21" positionX="2812.06" positionY="305.384583" width="350" height="530" allPlayersXP="1" allPlayersRP="1" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventureEnd" ID="24" positionX="3300.53516" positionY="1344.45447" width="350" height="530" allPlayersXP="4" allPlayersRP="2" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeChallenge" ID="25" positionX="3986.21631" positionY="586.7356" width="500" height="726" challengeType="TypePhysical" versusGroup="GROUP-TROLL_ROCK_MIX_9P_7M_6S" challengeScale="101" challengedList="ppl">
@@ -1906,7 +1906,7 @@ S≥yszysz ryczπcy krzyk mamusi trolla szybko!</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="DziÍkujÍ im i odejdücie." ownerID="28" targetID="14" fromX="2713" fromY="-2865" />Masz ze sobπ silnego ludu, wiÍc gra idzie dobrze, choÊ okazuje siÍ bardziej niø szorstka. Rockerzy sπ zadowoleni ze swoich towarzyszy zabaw i podlewajπ ciÍ prezentami, zanim zaprowadzπ ciÍ, wskazujπc swoim rodzicom, øe zaraz wrÛcπ.</nodes>
+      <outputs name="Dziekuje im i odejdzcie." ownerID="28" targetID="14" fromX="2713" fromY="-2865" />Masz ze soba silnego ludu, wiec gra idzie dobrze, choc okazuje sie bardziej niz szorstka. Rockerzy sa zadowoleni ze swoich towarzyszy zabaw i podlewaja cie prezentami, zanim zaprowadza cie, wskazujac swoim rodzicom, ze zaraz wroca.</nodes>
     <nodes xsi:type="NodeAdventure" ID="29" positionX="2814.46558" positionY="1363.7041" width="350" height="805">
       <logic>
         <ModifierBlock>
@@ -1919,9 +1919,9 @@ S≥yszysz ryczπcy krzyk mamusi trolla szybko!</nodes>
         </ModifierBlock>
       </logic>
       <outputs name="Uciekaj!" ownerID="29" targetID="24" fromX="3140" fromY="872" />
-      <outputs name="Atak!" ownerID="29" targetID="25" fromX="3140" fromY="792" />Bujaki leøπ roztrzaskane u twoich stÛp, a ty moøesz zebraÊ kamieÒ. 
+      <outputs name="Atak!" ownerID="29" targetID="25" fromX="3140" fromY="792" />Bujaki leza roztrzaskane u twoich stop, a ty mozesz zebrac kamien. 
 
-Jednak s≥yszysz ryczπce okrzyki trollÛw mamuúki, ktÛre toczy siÍ szybko!</nodes>
+Jednak slyszysz ryczace okrzyki trollow mamuski, ktore toczy sie szybko!</nodes>
     <nodes xsi:type="NodeAdventure" ID="30" positionX="1015.33179" positionY="-850.291931" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -1959,9 +1959,9 @@ Jednak s≥yszysz ryczπce okrzyki trollÛw mamuúki, ktÛre toczy siÍ szybko!</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdü." ownerID="30" targetID="24" fromX="1341" fromY="-1341" />Dajesz bujakom trochÍ jedzenia i po cichu zbierasz kamieÒ na boku. 
+      <outputs name="Wyjdz." ownerID="30" targetID="24" fromX="1341" fromY="-1341" />Dajesz bujakom troche jedzenia i po cichu zbierasz kamien na boku. 
 
-M≥odzieø wydaje siÍ bardzo zadowolona z daru, a twoje duchy zostajπ zniesione.</nodes>
+Mlodziez wydaje sie bardzo zadowolona z daru, a twoje duchy zostaja zniesione.</nodes>
     <nodes xsi:type="NodeAdventure" ID="31" positionX="3200.08447" positionY="-838.6088" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -1978,9 +1978,9 @@ M≥odzieø wydaje siÍ bardzo zadowolona z daru, a twoje duchy zostajπ zniesione.</
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdü." ownerID="31" targetID="24" fromX="3525" fromY="-1329" />Dajesz bujakom trochÍ jedzenia i po cichu zbierasz kamieÒ na boku. 
+      <outputs name="Wyjdz." ownerID="31" targetID="24" fromX="3525" fromY="-1329" />Dajesz bujakom troche jedzenia i po cichu zbierasz kamien na boku. 
 
-M≥odzieø wydaje siÍ bardzo zadowolona z daru, a twoje duchy zostajπ zniesione.</nodes>
+Mlodziez wydaje sie bardzo zadowolona z daru, a twoje duchy zostaja zniesione.</nodes>
   </Adventure>
   <Adventure name="Rockfalling" uniqueID="8" typeGeneric="false" typePerGroupGeneric="false" typeInterrupt="true" typeExpedition="true" typeVillage="false" difficulty="3" nodeIdMax="20" joinIsForced="false" joinType="AllAlly" joinRange="MovementArea">
     <nodes xsi:type="NodeStarting" ID="1" positionX="10" positionY="-10" width="347" height="661" image="Event039">
@@ -2004,8 +2004,8 @@ M≥odzieø wydaje siÍ bardzo zadowolona z daru, a twoje duchy zostajπ zniesione.</
           </LogicFilter>
         </FilterBlock>
       </logic>
-      <outputs name="SprÛbuj zebraÊ trochÍ kamienia." ownerID="2" targetID="4" fromX="829" fromY="-561" />
-      <outputs name="Wyjdü." ownerID="2" targetID="3" fromX="829" fromY="-641" />Znajdziesz stary kamienio≥om, pozornie opuszczony. WiÍkszoúÊ tego kamienio≥omu zapad≥a siÍ w g≥Íboki wπwÛz, ale wciπø mogπ byÊ tu uøyteczne zasoby.</nodes>
+      <outputs name="Sprobuj zebrac troche kamienia." ownerID="2" targetID="4" fromX="829" fromY="-561" />
+      <outputs name="Wyjdz." ownerID="2" targetID="3" fromX="829" fromY="-641" />Znajdziesz stary kamieniolom, pozornie opuszczony. Wiekszosc tego kamieniolomu zapadla sie w gleboki wawoz, ale wciaz moga byc tu uzyteczne zasoby.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="3" positionX="15.9418259" positionY="-749.8534" width="350" height="530" allPlayersXP="1" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventure" ID="4" positionX="1058.91077" positionY="894.5257" width="350" height="966">
       <logic>
@@ -2022,9 +2022,9 @@ M≥odzieø wydaje siÍ bardzo zadowolona z daru, a twoje duchy zostajπ zniesione.</
         </ModifierBlock>
       </logic>
       <outputs name="Wykop je." ownerID="4" targetID="5" fromX="1384" fromY="403" />
-      <outputs name="Mamy rzemieúlnikÛw, mπdrych ludzi i narzÍdzia. Wymyúl bezpieczny sposÛb na ich wykopanie." ownerID="4" targetID="6" fromX="1384" fromY="323" />
-      <outputs name="[Krasnolud] Takie zawalenia sπ codziennoúciπ w gÛrach i wiesz, jak je szybko i bezpiecznie wykopaÊ." ownerID="4" targetID="7" fromX="1384" fromY="242" />
-      <outputs name="[Ork] Takie rzeczy by≥y codziennym wydarzeniem, w ktÛrym mieszka≥eú. Znakiem prawdziwego wojownika jest znalezienie w≥asnej drogi wyjúcia!" ownerID="4" targetID="18" fromX="1384" fromY="162" />Zaczynacie kopaÊ w kamieniu, kiedy ziemia siÍ zmienia i jeden z was zostaje uwiÍziony pod kamieniami! </nodes>
+      <outputs name="Mamy rzemieslnikow, madrych ludzi i narzedzia. Wymysl bezpieczny sposob na ich wykopanie." ownerID="4" targetID="6" fromX="1384" fromY="323" />
+      <outputs name="[Krasnolud] Takie zawalenia sa codziennoscia w gorach i wiesz, jak je szybko i bezpiecznie wykopac." ownerID="4" targetID="7" fromX="1384" fromY="242" />
+      <outputs name="[Ork] Takie rzeczy byly codziennym wydarzeniem, w ktorym mieszkales. Znakiem prawdziwego wojownika jest znalezienie wlasnej drogi wyjscia!" ownerID="4" targetID="18" fromX="1384" fromY="162" />Zaczynacie kopac w kamieniu, kiedy ziemia sie zmienia i jeden z was zostaje uwieziony pod kamieniami! </nodes>
     <nodes xsi:type="NodeChallenge" ID="5" positionX="1967" positionY="865" width="500" height="726" challengeType="TypePhysical" versusConcept="true" versusGroup="GROUP-CON_P_3P_0M_0S" challengeScale="101" challengedList="diggers">
       <outputs name="Win" ownerID="5" targetID="16" fromX="2408" fromY="369" />
       <outputs name="Lose" ownerID="5" targetID="10" fromX="2408" fromY="289" />
@@ -2088,7 +2088,7 @@ M≥odzieø wydaje siÍ bardzo zadowolona z daru, a twoje duchy zostajπ zniesione.</
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdü." ownerID="7" targetID="8" fromX="2380" fromY="-1142" />Tajemnice ziemi sπ twoim codziennym krasnoludzkim chlebem, wiÍc bezpiecznie odkrywasz swoich krewnych i udaje ci siÍ znaleüÊ dobre zasoby, gdy jesteú w tym miejscu. </nodes>
+      <outputs name="Wyjdz." ownerID="7" targetID="8" fromX="2380" fromY="-1142" />Tajemnice ziemi sa twoim codziennym krasnoludzkim chlebem, wiec bezpiecznie odkrywasz swoich krewnych i udaje ci sie znalezc dobre zasoby, gdy jestes w tym miejscu. </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="8" positionX="2577.145" positionY="-935.5292" width="350" height="530" allPlayersXP="4" allPlayersRP="2" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventure" ID="10" positionX="4291.93164" positionY="-74.1889" width="350" height="725">
       <logic>
@@ -2104,7 +2104,7 @@ M≥odzieø wydaje siÍ bardzo zadowolona z daru, a twoje duchy zostajπ zniesione.</
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdü." ownerID="10" targetID="12" fromX="4617" fromY="-565" />Odkopujesz swojego przyjaciela, ale oni prawie umarli i sπ przez to trwale os≥abieni. </nodes>
+      <outputs name="Wyjdz." ownerID="10" targetID="12" fromX="4617" fromY="-565" />Odkopujesz swojego przyjaciela, ale oni prawie umarli i sa przez to trwale oslabieni. </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="12" positionX="4762.172" positionY="-399.738647" width="350" height="530" allPlayersXP="2" allPlayersRP="1" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeDealDamage" ID="16" positionX="2888.918" positionY="55.40367" width="460" height="459" challengeTypeDamage="TypeMental" minDamage="4" maxDamage="8" useCountInPercent="false" targetGroup="helpme">
       <logic>
@@ -2127,7 +2127,7 @@ M≥odzieø wydaje siÍ bardzo zadowolona z daru, a twoje duchy zostajπ zniesione.</
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdü." ownerID="17" targetID="8" fromX="3902" fromY="-602" />Wykopujesz je i poza odrobinπ siniakÛw wydajπ siÍ dobrze. Odkrywasz takøe kamieÒ. </nodes>
+      <outputs name="Wyjdz." ownerID="17" targetID="8" fromX="3902" fromY="-602" />Wykopujesz je i poza odrobina siniakow wydaja sie dobrze. Odkrywasz takze kamien. </nodes>
     <nodes xsi:type="NodeDealDamage" ID="18" positionX="1032.20325" positionY="-319.8023" width="460" height="539" challengeTypeDamage="TypePhysical" minDamage="10" maxDamage="30" useCountInPercent="true" targetGroup="helpme">
       <logic>
         <FilterBlock>
@@ -2165,9 +2165,9 @@ M≥odzieø wydaje siÍ bardzo zadowolona z daru, a twoje duchy zostajπ zniesione.</
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdü." ownerID="19" targetID="8" fromX="1320" fromY="-1433" />Jak siÍ okazuje, w twoim przyjacielu by≥a dusza wojownika i czujπ siÍ silniejsi niø kiedykolwiek! 
+      <outputs name="Wyjdz." ownerID="19" targetID="8" fromX="1320" fromY="-1433" />Jak sie okazuje, w twoim przyjacielu byla dusza wojownika i czuja sie silniejsi niz kiedykolwiek! 
 
-Znajdziesz teø trochÍ kamienia.</nodes>
+Znajdziesz tez troche kamienia.</nodes>
     <nodes xsi:type="NodeAdventure" ID="20" positionX="1569" positionY="-501" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -2190,9 +2190,9 @@ Znajdziesz teø trochÍ kamienia.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdü." ownerID="20" targetID="8" fromX="1894" fromY="-992" />Niestety, nieszczÍúliwa dusza nie by≥a przecieø wojownikiem. Nie dostrzegajπ, ale szanujesz ich dzielne wysi≥ki taÒcem tarczy. 
+      <outputs name="Wyjdz." ownerID="20" targetID="8" fromX="1894" fromY="-992" />Niestety, nieszczesliwa dusza nie byla przeciez wojownikiem. Nie dostrzegaja, ale szanujesz ich dzielne wysilki tancem tarczy. 
 
-Znajdujesz jakiú kamieÒ.</nodes>
+Znajdujesz jakis kamien.</nodes>
   </Adventure>
   <Adventure name="Quarrydiff4" uniqueID="9" allowToUse="false" typeGeneric="false" typePerGroupGeneric="false" typeInterrupt="true" typeExpedition="false" typeVillage="false" difficulty="4" nodeIdMax="10" joinIsForced="false" joinType="AllAlly" joinRange="SinglePosition">
     <nodes xsi:type="NodeStarting" ID="1" positionX="10" positionY="-10" width="347" height="704" image="Event014">
@@ -2212,7 +2212,7 @@ Znajdujesz jakiú kamieÒ.</nodes>
       <outputs name="Zbadaj." ownerID="2" targetID="9" group="G1" fromX="792" fromY="-545" />
       <outputs name="Zbadaj." ownerID="2" targetID="10" group="G1" fromX="792" fromY="-626" />
       <outputs name="Zbadaj." ownerID="2" targetID="8" group="G1" fromX="792" fromY="-706" />
-      <outputs name="Zbadaj." ownerID="2" targetID="3" group="G1" fromX="792" fromY="-786" />Znajdziesz stary kamienio≥om, pozornie opuszczony.</nodes>
+      <outputs name="Zbadaj." ownerID="2" targetID="3" group="G1" fromX="792" fromY="-786" />Znajdziesz stary kamieniolom, pozornie opuszczony.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="3" positionX="1084" positionY="-904" width="350" height="455" linkedEventUniqueID="7" />
     <nodes xsi:type="NodeAdventureEnd" ID="8" positionX="1595" positionY="-823" width="350" height="455" linkedEventUniqueID="8">
       <logic>

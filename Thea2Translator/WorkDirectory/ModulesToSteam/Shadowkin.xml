@@ -30,7 +30,7 @@
       <outputs name="Handel." ownerID="2" targetID="7" group="G1" fromX="804" fromY="-621" />
       <outputs name="Handel." ownerID="2" targetID="5" group="G1" fromX="804" fromY="-702" />
       <outputs name="Handel." ownerID="2" targetID="3" group="G1" fromX="804" fromY="-782" />
-      <outputs name="Wracaj innym razem." ownerID="2" targetID="6" fromX="804" fromY="-862" />Stoiska handlowca s¹ dla ciebie otwarte.   
+      <outputs name="Wracaj innym razem." ownerID="2" targetID="6" fromX="804" fromY="-862" />Stoiska handlowca sa dla ciebie otwarte.   
 </nodes>
     <nodes xsi:type="NodeTrade" ID="3" positionX="1021.18225" positionY="131.77655" width="460" height="479" traderProfile="TRADER-SHADOW_KIN_SMALL" playerInventory="sell">
       <outputs name="Confirm" ownerID="3" targetID="6" fromX="1451" fromY="-196" />
@@ -74,9 +74,9 @@
         </FilterBlock>
       </logic>
       <outputs name="Handel." ownerID="7" targetID="4" fromX="1445" fromY="-908" />
-      <outputs name="Wracaj innym razem." ownerID="7" targetID="6" fromX="1445" fromY="-989" />„Nie jesteœcie naszymi przyjació³mi, wiêc nie bêdziemy przyjmowaæ ¿ywnoœci jako p³atnoœci, a najpierw musicie zap³aciæ nam dodatkowo.'</nodes>
+      <outputs name="Wracaj innym razem." ownerID="7" targetID="6" fromX="1445" fromY="-989" />„Nie jestescie naszymi przyjaciolmi, wiec nie bedziemy przyjmowac zywnosci jako platnosci, a najpierw musicie zaplacic nam dodatkowo.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="11" positionX="1789.41174" positionY="355.919952" width="350" height="725">
-      <outputs name="WyjdŸ." ownerID="11" targetID="6" fromX="2115" fromY="-135" />„Dobry handel z tob¹. Bogowie niech bêd¹ z tob¹.'</nodes>
+      <outputs name="Wyjdz." ownerID="11" targetID="6" fromX="2115" fromY="-135" />„Dobry handel z toba. Bogowie niech beda z toba.'</nodes>
   </Adventure>
   <Adventure name="ShadowKinTrademedium" uniqueID="30" typeGeneric="false" typePerGroupGeneric="false" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="12" joinIsForced="false" joinType="OnlyOwn" joinRange="SinglePosition">
     <nodes xsi:type="NodeStarting" ID="1" positionX="10" positionY="-10" width="347" height="704" image="Event009">
@@ -108,7 +108,7 @@
       <outputs name="Handel." ownerID="2" targetID="7" group="G1" fromX="804" fromY="-621" />
       <outputs name="Handel." ownerID="2" targetID="5" group="G1" fromX="804" fromY="-702" />
       <outputs name="Handel." ownerID="2" targetID="3" group="G1" fromX="804" fromY="-782" />
-      <outputs name="Wracaj innym razem." ownerID="2" targetID="6" fromX="804" fromY="-862" />Stoiska kupca s¹ otwarte dla ciebie.  </nodes>
+      <outputs name="Wracaj innym razem." ownerID="2" targetID="6" fromX="804" fromY="-862" />Stoiska kupca sa otwarte dla ciebie.  </nodes>
     <nodes xsi:type="NodeTrade" ID="3" positionX="1021.18225" positionY="131.77655" width="460" height="479" traderProfile="TRADER-SHADOW_KIN" playerInventory="sell">
       <outputs name="Confirm" ownerID="3" targetID="6" fromX="1451" fromY="-196" />
       <outputs name="Cancel" ownerID="3" targetID="11" fromX="1451" fromY="-276" />
@@ -151,9 +151,9 @@
         </FilterBlock>
       </logic>
       <outputs name="Handel." ownerID="7" targetID="4" fromX="1445" fromY="-908" />
-      <outputs name="Wracaj innym razem." ownerID="7" targetID="6" fromX="1445" fromY="-989" />„Nie jesteœcie naszymi przyjació³mi, wiêc nie bêdziemy przyjmowaæ ¿ywnoœci jako p³atnoœci, a najpierw musicie zap³aciæ nam dodatkowo.'</nodes>
+      <outputs name="Wracaj innym razem." ownerID="7" targetID="6" fromX="1445" fromY="-989" />„Nie jestescie naszymi przyjaciolmi, wiec nie bedziemy przyjmowac zywnosci jako platnosci, a najpierw musicie zaplacic nam dodatkowo.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="11" positionX="1789.41174" positionY="355.919952" width="350" height="725">
-      <outputs name="WyjdŸ." ownerID="11" targetID="6" fromX="2115" fromY="-135" />„Dobry handel z tob¹. Bogowie niech bêd¹ z tob¹.'</nodes>
+      <outputs name="Wyjdz." ownerID="11" targetID="6" fromX="2115" fromY="-135" />„Dobry handel z toba. Bogowie niech beda z toba.'</nodes>
   </Adventure>
   <Adventure name="ShadowKinTradeadv" uniqueID="31" typeGeneric="false" typePerGroupGeneric="false" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="12" joinIsForced="false" joinType="OnlyOwn" joinRange="SinglePosition">
     <nodes xsi:type="NodeStarting" ID="1" positionX="10" positionY="-10" width="347" height="704" image="Event009">
@@ -185,7 +185,7 @@
       <outputs name="Handel." ownerID="2" targetID="7" group="G1" fromX="804" fromY="-621" />
       <outputs name="Handel." ownerID="2" targetID="5" group="G1" fromX="804" fromY="-702" />
       <outputs name="Handel." ownerID="2" targetID="3" group="G1" fromX="804" fromY="-782" />
-      <outputs name="Wracaj innym razem." ownerID="2" targetID="6" fromX="804" fromY="-862" />Stoiska handlowca s¹ dla ciebie otwarte.   
+      <outputs name="Wracaj innym razem." ownerID="2" targetID="6" fromX="804" fromY="-862" />Stoiska handlowca sa dla ciebie otwarte.   
 </nodes>
     <nodes xsi:type="NodeTrade" ID="3" positionX="1021.18225" positionY="131.77655" width="460" height="479" traderProfile="TRADER-SHADOW_KIN_LARGE" playerInventory="sell">
       <outputs name="Confirm" ownerID="3" targetID="6" fromX="1451" fromY="-196" />
@@ -229,9 +229,9 @@
         </FilterBlock>
       </logic>
       <outputs name="Handel." ownerID="7" targetID="4" fromX="1445" fromY="-908" />
-      <outputs name="Wracaj innym razem." ownerID="7" targetID="6" fromX="1445" fromY="-989" />„Nie jesteœcie naszymi przyjació³mi, wiêc nie bêdziemy przyjmowaæ ¿ywnoœci jako p³atnoœci, a najpierw musicie zap³aciæ nam dodatkowo.'</nodes>
+      <outputs name="Wracaj innym razem." ownerID="7" targetID="6" fromX="1445" fromY="-989" />„Nie jestescie naszymi przyjaciolmi, wiec nie bedziemy przyjmowac zywnosci jako platnosci, a najpierw musicie zaplacic nam dodatkowo.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="11" positionX="1789.41174" positionY="355.919952" width="350" height="725">
-      <outputs name="WyjdŸ." ownerID="11" targetID="6" fromX="2115" fromY="-135" />„Skoñczyliœmy, zostaw nas teraz.'</nodes>
+      <outputs name="Wyjdz." ownerID="11" targetID="6" fromX="2115" fromY="-135" />„Skonczylismy, zostaw nas teraz.'</nodes>
   </Adventure>
   <Adventure name="ShadowkinTown" uniqueID="32" typeGeneric="false" typePerGroupGeneric="false" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="65" joinIsForced="false" joinType="AllAlly" joinRange="MovementArea">
     <nodes xsi:type="NodeStarting" ID="1" positionX="-57" positionY="173" width="347" height="741" image="Event005">
@@ -285,16 +285,16 @@
           </LogicProcessing>
         </FilterBlock>
       </logic>
-      <outputs name="[Œwiat³o lub harmonia] Czujesz siê tu wyj¹tkowo nieswojo. Ale zapewnij ich, ¿e nie jesteœ wrogiem, po prostu chcesz porozmawiaæ i odwiedziæ." ownerID="2" targetID="3" group="G1" fromX="768" fromY="-623" />
-      <outputs name="[Elf] To jest miejsce, gdzie ¿yj¹ teraz twoi przeklêci bracia, elfy cienia. Ta ciemnoœæ czyni ciê chorym. Ale powiedz, ¿e jesteœ tutaj bez uprzedzeñ i chcesz tylko odwiedziæ." ownerID="2" targetID="6" fromX="768" fromY="-703" />
-      <outputs name="[Zamieszanie lub magia] Czujesz tutaj siln¹ domenê. Powiedz mieszkañcom, ¿e chcesz rozmawiaæ, a nie jesteœ wrogiem." ownerID="2" targetID="27" group="G1" fromX="768" fromY="-783" />
-      <outputs name="[Ork] Jako stworzenie zrodzone z ciemnoœci, czujesz siê tutaj jak w domu. Powiedz, ¿e jesteœ tutaj tylko po to, by odwiedziæ." ownerID="2" targetID="42" fromX="768" fromY="-863" />
-      <outputs name="Powiedz g³osowi, który chcesz wejœæ do osady, a nie walczyæ." ownerID="2" targetID="44" fromX="768" fromY="-943" />
-      <outputs name="[Demon] Wszystkie demony rodz¹ siê z magii, a ta z kolei jest zanurzona w ciemnoœci z natury, wiêc nie jesteœ tutaj, aby walczyæ z nimi bez powodu. " ownerID="2" targetID="43" fromX="768" fromY="-1024" />
-      <outputs name="[Shadow Elf] Powiedz, ¿e jesteœ tu jako krewny i chcesz tylko odwiedziæ. " ownerID="2" targetID="47" fromX="768" fromY="-1104" />
-      <outputs name="Atak!" ownerID="2" targetID="49" fromX="768" fromY="-1184" />Wchodzisz na krainy cienia i czujesz tutaj surow¹ obecnoœæ ciemnoœci. Gruba, nisko zawieszona czarna mg³a pokrywa ziemiê, dziêki czemu nigdy nie zobaczysz stóp. A inna taka warstwa, choæ cieñsza, zas³ania niebo. G³os z cienia mówi: 
+      <outputs name="[Swiatlo lub harmonia] Czujesz sie tu wyjatkowo nieswojo. Ale zapewnij ich, ze nie jestes wrogiem, po prostu chcesz porozmawiac i odwiedzic." ownerID="2" targetID="3" group="G1" fromX="768" fromY="-623" />
+      <outputs name="[Elf] To jest miejsce, gdzie zyja teraz twoi przekleci bracia, elfy cienia. Ta ciemnosc czyni cie chorym. Ale powiedz, ze jestes tutaj bez uprzedzen i chcesz tylko odwiedzic." ownerID="2" targetID="6" fromX="768" fromY="-703" />
+      <outputs name="[Zamieszanie lub magia] Czujesz tutaj silna domene. Powiedz mieszkancom, ze chcesz rozmawiac, a nie jestes wrogiem." ownerID="2" targetID="27" group="G1" fromX="768" fromY="-783" />
+      <outputs name="[Ork] Jako stworzenie zrodzone z ciemnosci, czujesz sie tutaj jak w domu. Powiedz, ze jestes tutaj tylko po to, by odwiedzic." ownerID="2" targetID="42" fromX="768" fromY="-863" />
+      <outputs name="Powiedz glosowi, ktory chcesz wejsc do osady, a nie walczyc." ownerID="2" targetID="44" fromX="768" fromY="-943" />
+      <outputs name="[Demon] Wszystkie demony rodza sie z magii, a ta z kolei jest zanurzona w ciemnosci z natury, wiec nie jestes tutaj, aby walczyc z nimi bez powodu. " ownerID="2" targetID="43" fromX="768" fromY="-1024" />
+      <outputs name="[Shadow Elf] Powiedz, ze jestes tu jako krewny i chcesz tylko odwiedzic. " ownerID="2" targetID="47" fromX="768" fromY="-1104" />
+      <outputs name="Atak!" ownerID="2" targetID="49" fromX="768" fromY="-1184" />Wchodzisz na krainy cienia i czujesz tutaj surowa obecnosc ciemnosci. Gruba, nisko zawieszona czarna mgla pokrywa ziemie, dzieki czemu nigdy nie zobaczysz stop. A inna taka warstwa, choc ciensza, zaslania niebo. Glos z cienia mowi: 
 
-'Dlaczego przychodzisz szukaæ ciemnoœci? Czy chcesz, ¿ebyœ siê zmieni³, czy jesteœ tu, by spróbowaæ nas wyrzuciæ?'
+'Dlaczego przychodzisz szukac ciemnosci? Czy chcesz, zebys sie zmienil, czy jestes tu, by sprobowac nas wyrzucic?'
 
 </nodes>
     <nodes xsi:type="NodeAdventure" ID="3" positionX="918" positionY="359" width="350" height="805">
@@ -308,10 +308,10 @@
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="WejdŸ." ownerID="3" targetID="5" fromX="1243" fromY="-132" />
-      <outputs name="Zawróæ." ownerID="3" targetID="4" fromX="1243" fromY="-212" />„Wyznawca œcie¿ki stagnacji. Najlepiej trzymaj siê z dala od naszego serca lub ryzykuj, ¿e poczernisz. A mo¿e to jest twoje ¿yczenie? 
+      <outputs name="Wejdz." ownerID="3" targetID="5" fromX="1243" fromY="-132" />
+      <outputs name="Zawroc." ownerID="3" targetID="4" fromX="1243" fromY="-212" />„Wyznawca sciezki stagnacji. Najlepiej trzymaj sie z dala od naszego serca lub ryzykuj, ze poczernisz. A moze to jest twoje zyczenie? 
 
-Mo¿esz wejœæ, ale na w³asne ryzyko i wiesz, ¿e los jest w naszym domu zamieszany i nie bêdziemy ci pomagaæ, jeœli chce graæ w gry.'</nodes>
+Mozesz wejsc, ale na wlasne ryzyko i wiesz, ze los jest w naszym domu zamieszany i nie bedziemy ci pomagac, jesli chce grac w gry.'</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="4" positionX="2023" positionY="-3249" width="350" height="530" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeDealDamage" ID="5" positionX="1383" positionY="956" width="460" height="699" challengeTypeDamage="TypeSpirit" minDamage="10" maxDamage="20" useCountInPercent="true" targetGroup="ppl">
       <outputs ownerID="5" targetID="25" group="G1" fromX="1812" fromY="567" />
@@ -327,12 +327,12 @@ Mo¿esz wejœæ, ale na w³asne ryzyko i wiesz, ¿e los jest w naszym domu zamieszany
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="WejdŸ." ownerID="6" targetID="5" fromX="1796" fromY="-625" />
-      <outputs name="Zawróæ." ownerID="6" targetID="4" fromX="1796" fromY="-705" />
-      <outputs name="Powiedz, ¿e chcesz zostaæ przemieniony w cienia." ownerID="6" targetID="7" fromX="1796" fromY="-785" />
-      <outputs name="Powiedz im, ¿e twoje elfie dziecko obejmie œcie¿kê cienia, jeœli ich oferta jest prawdziwa?" ownerID="6" targetID="9" fromX="1796" fromY="-865" />„Dziecko œwiat³a ³askawi nas swoj¹ obecnoœci¹, czy chcesz zostaæ shadowkinem? Czy jesteœ ciekawy, jak przekierowaliœmy przekleñstwo na now¹ œcie¿kê? Zapraszamy do przy³¹czenia siê, ciemnoœæ jest otwarta dla wszystkich. Oczywiœcie mo¿esz umrzeæ ... 
+      <outputs name="Wejdz." ownerID="6" targetID="5" fromX="1796" fromY="-625" />
+      <outputs name="Zawroc." ownerID="6" targetID="4" fromX="1796" fromY="-705" />
+      <outputs name="Powiedz, ze chcesz zostac przemieniony w cienia." ownerID="6" targetID="7" fromX="1796" fromY="-785" />
+      <outputs name="Powiedz im, ze twoje elfie dziecko obejmie sciezke cienia, jesli ich oferta jest prawdziwa?" ownerID="6" targetID="9" fromX="1796" fromY="-865" />„Dziecko swiatla laskawi nas swoja obecnoscia, czy chcesz zostac shadowkinem? Czy jestes ciekawy, jak przekierowalismy przeklenstwo na nowa sciezke? Zapraszamy do przylaczenia sie, ciemnosc jest otwarta dla wszystkich. Oczywiscie mozesz umrzec ... 
 
-WejdŸ, ale na w³asne ryzyko i wiedz, ¿e los jest w naszym domu zamieszany i nie bêdziemy ci pomagaæ, jeœli chce graæ w gry.'</nodes>
+Wejdz, ale na wlasne ryzyko i wiedz, ze los jest w naszym domu zamieszany i nie bedziemy ci pomagac, jesli chce grac w gry.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="7" positionX="1942" positionY="-528" width="350" height="805" image="Event173">
       <logic>
         <FilterBlock>
@@ -342,7 +342,7 @@ WejdŸ, ale na w³asne ryzyko i wiedz, ¿e los jest w naszym domu zamieszany i nie 
         </FilterBlock>
       </logic>
       <outputs name="Kontynuuj." ownerID="7" targetID="8" fromX="2267" fromY="-1019" />
-      <outputs name="Zawróæ." ownerID="7" targetID="4" fromX="2267" fromY="-1099" />WejdŸ wiêc, obejmij ciemnoœæ, bracia, a ja poprowadzê ciê na twoj¹ now¹ œcie¿kê. </nodes>
+      <outputs name="Zawroc." ownerID="7" targetID="4" fromX="2267" fromY="-1099" />Wejdz wiec, obejmij ciemnosc, bracia, a ja poprowadze cie na twoja nowa sciezke. </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="8" positionX="2481" positionY="-655" width="350" height="530" linkedEventUniqueID="0">
       <logic>
         <ModifierBlock>
@@ -370,7 +370,7 @@ WejdŸ, ale na w³asne ryzyko i wiedz, ¿e los jest w naszym domu zamieszany i nie 
         </FilterBlock>
       </logic>
       <outputs name="Kontynuuj." ownerID="9" targetID="10" fromX="2675" fromY="-1722" />
-      <outputs name="Zawróæ." ownerID="9" targetID="4" fromX="2675" fromY="-1802" />WejdŸ wiêc, obejmij ciemnoœæ, bracia, a ja poprowadzimy naszego m³odego przyjaciela do mrocznego i piêknego losu. ChodŸ dziecko, idŸ za mn¹.</nodes>
+      <outputs name="Zawroc." ownerID="9" targetID="4" fromX="2675" fromY="-1802" />Wejdz wiec, obejmij ciemnosc, bracia, a ja poprowadzimy naszego mlodego przyjaciela do mrocznego i pieknego losu. Chodz dziecko, idz za mna.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="10" positionX="2800" positionY="-1239" width="350" height="530" linkedEventUniqueID="0">
       <logic>
         <ModifierBlock>
@@ -387,12 +387,12 @@ WejdŸ, ale na w³asne ryzyko i wiedz, ¿e los jest w naszym domu zamieszany i nie 
       </logic>
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="11" positionX="2824" positionY="653" width="350" height="966" image="Event002">
-      <outputs name="Istnieje taki rodzaj ratusza, w którym ludzie p³ac¹ sk³adki, robi¹ to, rozdaj¹c ciemn¹ energiê, aby w ten sposób pozbyæ siê swoich przekleñstw. " ownerID="11" targetID="21" fromX="3149" fromY="161" />
-      <outputs name="Chata zielarza interesuje siê toksynami, bêd¹ one wysysaæ twoje, ale procedura nie jest ca³kowicie bezpieczna." ownerID="11" targetID="22" fromX="3149" fromY="81" />
-      <outputs name="Czarownica oferuje ci sprzeda¿ niektórych swoich chowañców. " ownerID="11" targetID="13" fromX="3149" fromY="1" />
-      <outputs name="Po prostu ciesz siê wizyt¹, rozmawiaj z ludŸmi i odpoczywaj." ownerID="11" targetID="12" fromX="3149" fromY="-78" />Ciemnoœæ obci¹¿a twoj¹ naturê, ale przenikasz i wchodzisz do miasta, usytuowanego w ukrytej jaskini. 
+      <outputs name="Istnieje taki rodzaj ratusza, w ktorym ludzie placa skladki, robia to, rozdajac ciemna energie, aby w ten sposob pozbyc sie swoich przeklenstw. " ownerID="11" targetID="21" fromX="3149" fromY="161" />
+      <outputs name="Chata zielarza interesuje sie toksynami, beda one wysysac twoje, ale procedura nie jest calkowicie bezpieczna." ownerID="11" targetID="22" fromX="3149" fromY="81" />
+      <outputs name="Czarownica oferuje ci sprzedaz niektorych swoich chowancow. " ownerID="11" targetID="13" fromX="3149" fromY="1" />
+      <outputs name="Po prostu ciesz sie wizyta, rozmawiaj z ludzmi i odpoczywaj." ownerID="11" targetID="12" fromX="3149" fromY="-78" />Ciemnosc obciaza twoja nature, ale przenikasz i wchodzisz do miasta, usytuowanego w ukrytej jaskini. 
 
-Tutaj mo¿esz odwiedziæ kilka miejsc otwartych dla osób z zewn¹trz. 
+Tutaj mozesz odwiedzic kilka miejsc otwartych dla osob z zewnatrz. 
 
 </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="12" positionX="3355" positionY="-157" width="350" height="530" linkedEventUniqueID="0">
@@ -419,7 +419,7 @@ Tutaj mo¿esz odwiedziæ kilka miejsc otwartych dla osób z zewn¹trz.
       </logic>
       <outputs name="Kup kota." ownerID="13" targetID="14" fromX="4127" fromY="146" />
       <outputs name="Kup wrona." ownerID="13" targetID="62" fromX="4127" fromY="66" />
-      <outputs name="Kup paj¹ka." ownerID="13" targetID="63" fromX="4127" fromY="-13" />„Przyjrzyj siê mojemu losowi, niektórzy z nich s¹ gotowi znaleŸæ nowych mistrzów.'</nodes>
+      <outputs name="Kup pajaka." ownerID="13" targetID="63" fromX="4127" fromY="-13" />„Przyjrzyj sie mojemu losowi, niektorzy z nich sa gotowi znalezc nowych mistrzow.'</nodes>
     <nodes xsi:type="NodeTrade" ID="14" positionX="4225" positionY="727" width="460" height="479" traderProfile="TRADER-BANDIT" playerInventory="nocat" startingBalance="-3000">
       <logic>
         <FilterBlock>
@@ -458,8 +458,8 @@ Tutaj mo¿esz odwiedziæ kilka miejsc otwartych dla osób z zewn¹trz.
     <nodes xsi:type="NodeAdventure" ID="16" positionX="4887" positionY="197" width="350" height="966" image="Event250">
       <outputs name="Kup kota." ownerID="16" targetID="14" fromX="5212" fromY="-294" />
       <outputs name="Kup wrona." ownerID="16" targetID="62" fromX="5212" fromY="-374" />
-      <outputs name="Kup paj¹ka." ownerID="16" targetID="63" fromX="5212" fromY="-454" />
-      <outputs name="Byæ mo¿e innym razem. Pozostawiaæ." ownerID="16" targetID="4" fromX="5212" fromY="-534" />„Przyjrzyj siê mojemu losowi, niektórzy z nich s¹ gotowi znaleŸæ nowych mistrzów.'</nodes>
+      <outputs name="Kup pajaka." ownerID="16" targetID="63" fromX="5212" fromY="-454" />
+      <outputs name="Byc moze innym razem. Pozostawiac." ownerID="16" targetID="4" fromX="5212" fromY="-534" />„Przyjrzyj sie mojemu losowi, niektorzy z nich sa gotowi znalezc nowych mistrzow.'</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="18" positionX="5273" positionY="324" width="350" height="530" linkedEventUniqueID="0">
       <logic>
         <ModifierBlock>
@@ -537,9 +537,9 @@ Tutaj mo¿esz odwiedziæ kilka miejsc otwartych dla osób z zewn¹trz.
       </logic>
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="23" positionX="2868" positionY="1447" width="350" height="725">
-      <outputs name="Wpisz." ownerID="23" targetID="11" fromX="3193" fromY="955" />Zosta³eœ pob³ogos³awiony, kiedy wszed³eœ, ale ciemnoœæ przekrêci³a œwiat³o b³ogos³awieñstw i pozostawi³a ciê pust¹. 
+      <outputs name="Wpisz." ownerID="23" targetID="11" fromX="3193" fromY="955" />Zostales poblogoslawiony, kiedy wszedles, ale ciemnosc przekrecila swiatlo blogoslawienstw i pozostawila cie pusta. 
 
-Mo¿esz jednak teraz wejœæ do miasta.</nodes>
+Mozesz jednak teraz wejsc do miasta.</nodes>
     <nodes xsi:type="NodeDealDamage" ID="24" positionX="2167" positionY="1637" width="460" height="459" challengeTypeDamage="TypeMental" minDamage="30" maxDamage="40" useCountInPercent="true" targetGroup="ppl">
       <logic>
         <FilterBlock>
@@ -605,9 +605,9 @@ Mo¿esz jednak teraz wejœæ do miasta.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wpisz." ownerID="25" targetID="11" fromX="1858" fromY="1483" />Ciemnoœæ jest si³¹ zmiany, a niektórzy mówi¹, korupcj¹. Jedna z twoich kobiet mia³a na sobie œlad mrocznych sztuk, a czarna mg³a go obudzi³a, przemieniaj¹c w czarownicê. 
+      <outputs name="Wpisz." ownerID="25" targetID="11" fromX="1858" fromY="1483" />Ciemnosc jest sila zmiany, a niektorzy mowia, korupcja. Jedna z twoich kobiet miala na sobie slad mrocznych sztuk, a czarna mgla go obudzila, przemieniajac w czarownice. 
 
-Mo¿esz teraz wejœæ do miasta.</nodes>
+Mozesz teraz wejsc do miasta.</nodes>
     <nodes xsi:type="NodeAdventure" ID="26" positionX="1994" positionY="1117" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -624,7 +624,7 @@ Mo¿esz teraz wejœæ do miasta.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="WyjdŸ." ownerID="26" targetID="4" fromX="2319" fromY="625" />Czarna mg³a wsi¹ka g³êboko w jedn¹ z twoich dusz, pozostawiaj¹c j¹ przeklêt¹ i na razie nie mo¿esz wejœæ do osady.</nodes>
+      <outputs name="Wyjdz." ownerID="26" targetID="4" fromX="2319" fromY="625" />Czarna mgla wsiaka gleboko w jedna z twoich dusz, pozostawiajac ja przekleta i na razie nie mozesz wejsc do osady.</nodes>
     <nodes xsi:type="NodeAdventure" ID="27" positionX="1024" positionY="-786" width="350" height="805">
       <logic>
         <FilterBlock>
@@ -636,23 +636,23 @@ Mo¿esz teraz wejœæ do miasta.</nodes>
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="WejdŸ." ownerID="27" targetID="37" fromX="1349" fromY="-1277" />
-      <outputs name="Zawróæ." ownerID="27" targetID="4" fromX="1349" fromY="-1357" />„Ach, zwolennicy ciemniejszych œcie¿ek. Dobry. Strze¿ siê jednak, ¿e ciemnoœæ nie jest jedn¹ z wielu przys³ug, poniewa¿ nie jesteœcie naszymi przyjació³mi, nadal bêdziecie musieli zmierzyæ siê z czarnymi kaprysami mg³y, jeœli chcecie wejœæ.'</nodes>
+      <outputs name="Wejdz." ownerID="27" targetID="37" fromX="1349" fromY="-1277" />
+      <outputs name="Zawroc." ownerID="27" targetID="4" fromX="1349" fromY="-1357" />„Ach, zwolennicy ciemniejszych sciezek. Dobry. Strzez sie jednak, ze ciemnosc nie jest jedna z wielu przyslug, poniewaz nie jestescie naszymi przyjaciolmi, nadal bedziecie musieli zmierzyc sie z czarnymi kaprysami mgly, jesli chcecie wejsc.'</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="29" positionX="-913" positionY="-63" width="350" height="530" linkedEventUniqueID="31" />
     <nodes xsi:type="NodeAdventure" ID="30" positionX="-869" positionY="-663" width="350" height="1046" image="Event002">
-      <outputs name="Istnieje taki rodzaj ratusza, w którym ludzie p³ac¹ sk³adki, robi¹ to, rozdaj¹c ciemn¹ energiê, aby w ten sposób pozbyæ siê swoich przekleñstw. " ownerID="30" targetID="21" fromX="-543" fromY="-1154" />
-      <outputs name="Chata zielarza interesuje siê toksynami, bêd¹ one wysysaæ twoje, ale procedura nie jest ca³kowicie bezpieczna." ownerID="30" targetID="22" fromX="-543" fromY="-1234" />
-      <outputs name="Czarownica oferuje ci sprzeda¿ niektórych swoich chowañców. " ownerID="30" targetID="13" fromX="-543" fromY="-1314" />
-      <outputs name="Po prostu ciesz siê wizyt¹, rozmawiaj z ludŸmi i odpoczywaj." ownerID="30" targetID="12" fromX="-543" fromY="-1394" />
-      <outputs name="Porozmawiaj z ludŸmi, mo¿e ktoœ chcia³by do³¹czyæ do œcie¿ki kosmicznego drzewa?" ownerID="30" targetID="31" fromX="-543" fromY="-1474" />Ciemnoœæ obci¹¿a twoj¹ naturê, ale przenikasz i wchodzisz do miasta, usytuowanego w ukrytej jaskini. 
+      <outputs name="Istnieje taki rodzaj ratusza, w ktorym ludzie placa skladki, robia to, rozdajac ciemna energie, aby w ten sposob pozbyc sie swoich przeklenstw. " ownerID="30" targetID="21" fromX="-543" fromY="-1154" />
+      <outputs name="Chata zielarza interesuje sie toksynami, beda one wysysac twoje, ale procedura nie jest calkowicie bezpieczna." ownerID="30" targetID="22" fromX="-543" fromY="-1234" />
+      <outputs name="Czarownica oferuje ci sprzedaz niektorych swoich chowancow. " ownerID="30" targetID="13" fromX="-543" fromY="-1314" />
+      <outputs name="Po prostu ciesz sie wizyta, rozmawiaj z ludzmi i odpoczywaj." ownerID="30" targetID="12" fromX="-543" fromY="-1394" />
+      <outputs name="Porozmawiaj z ludzmi, moze ktos chcialby dolaczyc do sciezki kosmicznego drzewa?" ownerID="30" targetID="31" fromX="-543" fromY="-1474" />Ciemnosc obciaza twoja nature, ale przenikasz i wchodzisz do miasta, usytuowanego w ukrytej jaskini. 
 
-Tutaj mo¿esz odwiedziæ kilka miejsc otwartych dla osób z zewn¹trz. 
+Tutaj mozesz odwiedzic kilka miejsc otwartych dla osob z zewnatrz. 
 
 </nodes>
     <nodes xsi:type="NodeAdventure" ID="31" positionX="-1481" positionY="-769" width="350" height="885">
-      <outputs name="Zap³aæ za rekrutacjê elfa cienia." ownerID="31" targetID="32" fromX="-1155" fromY="-1260" />
-      <outputs name="Zaoferuj wymianê, jedn¹ z twoich na jedn¹ z nich." ownerID="31" targetID="35" fromX="-1155" fromY="-1340" />
-      <outputs name="Nie ma nikogo zainteresowanego. Pozostawiaæ." ownerID="31" targetID="4" fromX="-1155" fromY="-1420" />„Udowodni³eœ, ¿e jesteœ przyjacielem cieni, mo¿e jeden z nas pójdzie za tob¹, ale tylko wtedy, gdy uczynisz go wartym dla nas wszystkich. Przyjmiemy równie¿ dziecko w zamian za nasze us³ugi. Nie jesteœmy idealistami, musimy przetrwaæ. Obie oferty s¹ jednorazowe.'</nodes>
+      <outputs name="Zaplac za rekrutacje elfa cienia." ownerID="31" targetID="32" fromX="-1155" fromY="-1260" />
+      <outputs name="Zaoferuj wymiane, jedna z twoich na jedna z nich." ownerID="31" targetID="35" fromX="-1155" fromY="-1340" />
+      <outputs name="Nie ma nikogo zainteresowanego. Pozostawiac." ownerID="31" targetID="4" fromX="-1155" fromY="-1420" />„Udowodniles, ze jestes przyjacielem cieni, moze jeden z nas pojdzie za toba, ale tylko wtedy, gdy uczynisz go wartym dla nas wszystkich. Przyjmiemy rowniez dziecko w zamian za nasze uslugi. Nie jestesmy idealistami, musimy przetrwac. Obie oferty sa jednorazowe.'</nodes>
     <nodes xsi:type="NodeTrade" ID="32" positionX="-2314" positionY="-552" width="460" height="479" traderProfile="TRADER-BANDIT" playerInventory="nopet" startingBalance="-10000">
       <logic>
         <FilterBlock>
@@ -727,9 +727,9 @@ Tutaj mo¿esz odwiedziæ kilka miejsc otwartych dla osób z zewn¹trz.
         </FilterBlock>
       </logic>
       <outputs name="Handel." ownerID="33" targetID="29" fromX="-141" fromY="-532" />
-      <outputs name="OdwiedŸ miasto." ownerID="33" targetID="30" fromX="-141" fromY="-612" />Wchodzisz na krainy cienia i czujesz tutaj surow¹ obecnoœæ ciemnoœci. Gruba, nisko zawieszona czarna mg³a pokrywa ziemiê, dziêki czemu nigdy nie zobaczysz stóp. A inna taka warstwa, choæ cieñsza, zas³ania niebo. G³os z cienia mówi: 
+      <outputs name="Odwiedz miasto." ownerID="33" targetID="30" fromX="-141" fromY="-612" />Wchodzisz na krainy cienia i czujesz tutaj surowa obecnosc ciemnosci. Gruba, nisko zawieszona czarna mgla pokrywa ziemie, dzieki czemu nigdy nie zobaczysz stop. A inna taka warstwa, choc ciensza, zaslania niebo. Glos z cienia mowi: 
 
-'Przyjacielu, wejdŸ i os³onimy ciê przed nasz¹ ciemnoœci¹.'</nodes>
+'Przyjacielu, wejdz i oslonimy cie przed nasza ciemnoscia.'</nodes>
     <nodes xsi:type="NodeTrade" ID="34" positionX="-2656" positionY="-1372" width="460" height="479" traderProfile="TRADER-BANDIT_TWO" playerInventory="noch" startingBalance="-1">
       <outputs name="Confirm" ownerID="34" targetID="65" fromX="-2225" fromY="-1700" />
       <outputs name="Cancel" ownerID="34" targetID="31" fromX="-2225" fromY="-1780" />
@@ -751,7 +751,7 @@ Tutaj mo¿esz odwiedziæ kilka miejsc otwartych dla osób z zewn¹trz.
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Handel." ownerID="35" targetID="34" fromX="-1706" fromY="-1737" />„Tak, jest to dopuszczalne. M³ody nauczy siê naszych sposobów, a jeden z nas do³¹czy do ciebie.'</nodes>
+      <outputs name="Handel." ownerID="35" targetID="34" fromX="-1706" fromY="-1737" />„Tak, jest to dopuszczalne. Mlody nauczy sie naszych sposobow, a jeden z nas dolaczy do ciebie.'</nodes>
     <nodes xsi:type="NodeDealDamage" ID="37" positionX="142" positionY="1873" width="460" height="699" challengeTypeDamage="TypeMental" minDamage="0" maxDamage="0" useCountInPercent="false">
       <outputs ownerID="37" targetID="38" group="G1" fromX="571" fromY="1484" />
       <outputs ownerID="37" targetID="39" group="G1" fromX="571" fromY="1404" />
@@ -792,9 +792,9 @@ Tutaj mo¿esz odwiedziæ kilka miejsc otwartych dla osób z zewn¹trz.
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wpisz." ownerID="38" targetID="11" fromX="1095" fromY="1775" />Ciemnoœæ jest si³¹ zmiany, a niektórzy mówi¹, korupcj¹. Jedna z twoich kobiet mia³a na sobie œlad mrocznych sztuk, a czarna mg³a go obudzi³a, przemieniaj¹c w czarownicê. 
+      <outputs name="Wpisz." ownerID="38" targetID="11" fromX="1095" fromY="1775" />Ciemnosc jest sila zmiany, a niektorzy mowia, korupcja. Jedna z twoich kobiet miala na sobie slad mrocznych sztuk, a czarna mgla go obudzila, przemieniajac w czarownice. 
 
-Mo¿esz teraz wejœæ do miasta.</nodes>
+Mozesz teraz wejsc do miasta.</nodes>
     <nodes xsi:type="NodeAdventure" ID="39" positionX="1010" positionY="1503" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -811,7 +811,7 @@ Mo¿esz teraz wejœæ do miasta.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="WyjdŸ." ownerID="39" targetID="4" fromX="1335" fromY="1011" />Czarna mg³a wsi¹ka g³êboko w jedn¹ z twoich dusz, pozostawiaj¹c j¹ przeklêt¹ i na razie nie mo¿esz wejœæ do osady.</nodes>
+      <outputs name="Wyjdz." ownerID="39" targetID="4" fromX="1335" fromY="1011" />Czarna mgla wsiaka gleboko w jedna z twoich dusz, pozostawiajac ja przekleta i na razie nie mozesz wejsc do osady.</nodes>
     <nodes xsi:type="NodeDealDamage" ID="40" positionX="2005" positionY="2234" width="460" height="459" challengeTypeDamage="TypeMental" minDamage="30" maxDamage="40" useCountInPercent="true" targetGroup="ppl">
       <logic>
         <FilterBlock>
@@ -871,9 +871,9 @@ Mo¿esz teraz wejœæ do miasta.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wpisz." ownerID="41" targetID="11" fromX="1264" fromY="-2147" />Wchodzisz do jednej z ciemnych jaskiñ, a wnêtrze ciemnoœci wita ciê. Dziel¹ siê swoj¹ energi¹ z tob¹ i budz¹ siê twoje ciemne dary. Stajesz siê czarownic¹. 
+      <outputs name="Wpisz." ownerID="41" targetID="11" fromX="1264" fromY="-2147" />Wchodzisz do jednej z ciemnych jaskin, a wnetrze ciemnosci wita cie. Dziela sie swoja energia z toba i budza sie twoje ciemne dary. Stajesz sie czarownica. 
 
-Mo¿esz równie¿ odwiedziæ osadê teraz. </nodes>
+Mozesz rowniez odwiedzic osade teraz. </nodes>
     <nodes xsi:type="NodeAdventure" ID="42" positionX="498" positionY="-1519" width="350" height="805">
       <logic>
         <FilterBlock>
@@ -882,8 +882,8 @@ Mo¿esz równie¿ odwiedziæ osadê teraz. </nodes>
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Jedna z twoich orkowych kobiet ma na sobie ciemn¹ plamê magii, mimo ¿e nie jest wyszkolona. Oferta cienia, aby obudziæ te prezenty, przekszta³ci j¹ w czarownicê." ownerID="42" targetID="41" fromX="823" fromY="-2010" />
-      <outputs name="Wpisz." ownerID="42" targetID="46" fromX="823" fromY="-2090" />„Ach, dziecko zrodzone z ciemnoœci, bardzo podobne do nas, tylko bardziej - pierwotne. Czego od nas szukasz? Jeœli jesteœ tutaj, aby odwiedziæ, wejdŸ, ciemnoœæ ciê nie skrzywdzi, prawdopodobnie ...'</nodes>
+      <outputs name="Jedna z twoich orkowych kobiet ma na sobie ciemna plame magii, mimo ze nie jest wyszkolona. Oferta cienia, aby obudzic te prezenty, przeksztalci ja w czarownice." ownerID="42" targetID="41" fromX="823" fromY="-2010" />
+      <outputs name="Wpisz." ownerID="42" targetID="46" fromX="823" fromY="-2090" />„Ach, dziecko zrodzone z ciemnosci, bardzo podobne do nas, tylko bardziej - pierwotne. Czego od nas szukasz? Jesli jestes tutaj, aby odwiedzic, wejdz, ciemnosc cie nie skrzywdzi, prawdopodobnie ...'</nodes>
     <nodes xsi:type="NodeAdventure" ID="43" positionX="46" positionY="-1359" width="350" height="805">
       <logic>
         <FilterBlock>
@@ -892,13 +892,13 @@ Mo¿esz równie¿ odwiedziæ osadê teraz. </nodes>
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="WejdŸ." ownerID="43" targetID="37" fromX="371" fromY="-1850" />
-      <outputs name="Zawróæ." ownerID="43" targetID="4" fromX="371" fromY="-1930" />„Ach, zwolennicy ciemniejszych œcie¿ek. Dobry. Strze¿ siê jednak, ¿e ciemnoœæ nie jest jedn¹ z wielu przys³ug, poniewa¿ nie jesteœcie naszymi przyjació³mi, nadal bêdziecie musieli zmierzyæ siê z czarnymi kaprysami mg³y, jeœli chcecie wejœæ.„”</nodes>
+      <outputs name="Wejdz." ownerID="43" targetID="37" fromX="371" fromY="-1850" />
+      <outputs name="Zawroc." ownerID="43" targetID="4" fromX="371" fromY="-1930" />„Ach, zwolennicy ciemniejszych sciezek. Dobry. Strzez sie jednak, ze ciemnosc nie jest jedna z wielu przyslug, poniewaz nie jestescie naszymi przyjaciolmi, nadal bedziecie musieli zmierzyc sie z czarnymi kaprysami mgly, jesli chcecie wejsc.„”</nodes>
     <nodes xsi:type="NodeAdventure" ID="44" positionX="541" positionY="957" width="350" height="805">
-      <outputs name="WejdŸ." ownerID="44" targetID="45" fromX="866" fromY="465" />
-      <outputs name="Zawróæ." ownerID="44" targetID="4" fromX="866" fromY="385" />„Najlepiej trzymaj siê z daleka od naszego serca lub ryzykuj, ¿e poczernisz. A mo¿e to jest twoje ¿yczenie? 
+      <outputs name="Wejdz." ownerID="44" targetID="45" fromX="866" fromY="465" />
+      <outputs name="Zawroc." ownerID="44" targetID="4" fromX="866" fromY="385" />„Najlepiej trzymaj sie z daleka od naszego serca lub ryzykuj, ze poczernisz. A moze to jest twoje zyczenie? 
 
-Mo¿esz wejœæ, ale na w³asne ryzyko i wiesz, ¿e los jest w naszym domu zamieszany i nie bêdziemy ci pomagaæ, jeœli chce graæ w gry.'</nodes>
+Mozesz wejsc, ale na wlasne ryzyko i wiesz, ze los jest w naszym domu zamieszany i nie bedziemy ci pomagac, jesli chce grac w gry.'</nodes>
     <nodes xsi:type="NodeDealDamage" ID="45" positionX="-322" positionY="982" width="460" height="699" challengeTypeDamage="TypeSpirit" minDamage="10" maxDamage="20" useCountInPercent="true" targetGroup="ppl">
       <outputs ownerID="45" targetID="25" group="G1" fromX="107" fromY="593" />
       <outputs ownerID="45" targetID="26" group="G1" fromX="107" fromY="513" />
@@ -917,8 +917,8 @@ Mo¿esz wejœæ, ale na w³asne ryzyko i wiesz, ¿e los jest w naszym domu zamieszany
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Powiedz, ¿e chcia³byœ, aby jedno z twoich elfich dzieci posz³o œcie¿k¹ cienia. " ownerID="47" targetID="48" fromX="363" fromY="-2703" />
-      <outputs name="Wpisz." ownerID="47" targetID="46" fromX="363" fromY="-2783" />„Witajcie, krewni cieniu, to by³ wasz dom, ale postanowiliœcie odejœæ, wiêc b¹dŸcie zmêczeni kaprysami swojej starej rodziny.  Jeœli jesteœ tutaj, aby odwiedziæ, wejdŸ, ciemnoœæ ciê nie skrzywdzi, prawdopodobnie ...'</nodes>
+      <outputs name="Powiedz, ze chcialbys, aby jedno z twoich elfich dzieci poszlo sciezka cienia. " ownerID="47" targetID="48" fromX="363" fromY="-2703" />
+      <outputs name="Wpisz." ownerID="47" targetID="46" fromX="363" fromY="-2783" />„Witajcie, krewni cieniu, to byl wasz dom, ale postanowiliscie odejsc, wiec badzcie zmeczeni kaprysami swojej starej rodziny.  Jesli jestes tutaj, aby odwiedzic, wejdz, ciemnosc cie nie skrzywdzi, prawdopodobnie ...'</nodes>
     <nodes xsi:type="NodeAdventure" allowOnce="true" ID="48" positionX="457" positionY="-2477" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -927,7 +927,7 @@ Mo¿esz wejœæ, ale na w³asne ryzyko i wiesz, ¿e los jest w naszym domu zamieszany
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Kontynuuj." ownerID="48" targetID="10" fromX="782" fromY="-2968" />„Tak, jest to dopuszczalne. M³ody nauczy siê naszych sposobów, a jeden z nas do³¹czy do ciebie.'</nodes>
+      <outputs name="Kontynuuj." ownerID="48" targetID="10" fromX="782" fromY="-2968" />„Tak, jest to dopuszczalne. Mlody nauczy sie naszych sposobow, a jeden z nas dolaczy do ciebie.'</nodes>
     <nodes xsi:type="NodeChallenge" ID="49" positionX="-1520" positionY="-2022" width="500" height="726" challengeType="TypePhysical" versusGroup="GROUP-MROKI_MIX_6P_5M_6S" challengeScale="101" challengedList="ppl">
       <outputs name="Win" ownerID="49" targetID="50" fromX="-1078" fromY="-2517" />
       <outputs name="Lose" ownerID="49" targetID="61" fromX="-1078" fromY="-2597" />
@@ -950,8 +950,8 @@ Mo¿esz wejœæ, ale na w³asne ryzyko i wiesz, ¿e los jest w naszym domu zamieszany
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Opuœæ bez grabie¿y." ownerID="50" targetID="53" fromX="-550" fromY="-2389" />
-      <outputs name="£up i wyjdŸ." ownerID="50" targetID="55" fromX="-550" fromY="-2469" />Mroczne miasto jest zrujnowane i mo¿esz je spl¹drowaæ, ale uwa¿aj, ciemnoœæ siê tu utrzymuje i prawdopodobnie ciê zarazi.</nodes>
+      <outputs name="Opusc bez grabiezy." ownerID="50" targetID="53" fromX="-550" fromY="-2389" />
+      <outputs name="Lup i wyjdz." ownerID="50" targetID="55" fromX="-550" fromY="-2469" />Mroczne miasto jest zrujnowane i mozesz je spladrowac, ale uwazaj, ciemnosc sie tu utrzymuje i prawdopodobnie cie zarazi.</nodes>
     <nodes xsi:type="NodeAdventure" ID="52" positionX="-1284" positionY="1754" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -989,9 +989,9 @@ Mo¿esz wejœæ, ale na w³asne ryzyko i wiesz, ¿e los jest w naszym domu zamieszany
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="WyjdŸ." ownerID="52" targetID="53" fromX="-958" fromY="1262" />Ciemnoœæ jest si³¹ zmiany, a niektórzy mówi¹, korupcj¹. Jedna z twoich kobiet mia³a na sobie œlad mrocznych sztuk, a czarna mg³a go obudzi³a, przemieniaj¹c w czarownicê. 
+      <outputs name="Wyjdz." ownerID="52" targetID="53" fromX="-958" fromY="1262" />Ciemnosc jest sila zmiany, a niektorzy mowia, korupcja. Jedna z twoich kobiet miala na sobie slad mrocznych sztuk, a czarna mgla go obudzila, przemieniajac w czarownice. 
 
-Uda³o ci siê odzyskaæ kilka u¿ytecznych zasobów, ale wiêkszoœæ miasta zdawa³a siê natychmiast popadaæ w ruinê, kiedy zabi³eœ lud cienia. 
+Udalo ci sie odzyskac kilka uzytecznych zasobow, ale wiekszosc miasta zdawala sie natychmiast popadac w ruine, kiedy zabiles lud cienia. 
 
 </nodes>
     <nodes xsi:type="NodeSpawnOnMap" ID="53" positionX="-692" positionY="2357" width="480" height="503" radius="0" destroyOwner="true" linkedEventUniqueID="0">
@@ -1025,9 +1025,9 @@ Uda³o ci siê odzyskaæ kilka u¿ytecznych zasobów, ale wiêkszoœæ miasta zdawa³a si
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="WyjdŸ." ownerID="56" targetID="53" fromX="-964" fromY="2037" />Czarna mg³a wsi¹ka g³êboko w jedn¹ z twoich dusz, zostawiaj¹c j¹ przeklêt¹. 
+      <outputs name="Wyjdz." ownerID="56" targetID="53" fromX="-964" fromY="2037" />Czarna mgla wsiaka gleboko w jedna z twoich dusz, zostawiajac ja przekleta. 
 
-Uda³o ci siê odzyskaæ u¿yteczne zasoby, ale wiêkszoœæ miasta zdawa³a siê natychmiast popadaæ w ruinê, gdy zabi³eœ lud cienia.</nodes>
+Udalo ci sie odzyskac uzyteczne zasoby, ale wiekszosc miasta zdawala sie natychmiast popadac w ruine, gdy zabiles lud cienia.</nodes>
     <nodes xsi:type="NodeAdventure" ID="57" positionX="-2348" positionY="1726" width="350" height="725">
       <logic>
         <ModifierBlock>
@@ -1039,9 +1039,9 @@ Uda³o ci siê odzyskaæ u¿yteczne zasoby, ale wiêkszoœæ miasta zdawa³a siê natychm
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="WyjdŸ." ownerID="57" targetID="53" fromX="-2022" fromY="1234" />Ciemnoœæ ci nie zaszkodzi. 
+      <outputs name="Wyjdz." ownerID="57" targetID="53" fromX="-2022" fromY="1234" />Ciemnosc ci nie zaszkodzi. 
 
-Uda³o ci siê odzyskaæ u¿yteczne zasoby, ale wiêkszoœæ miasta zdawa³a siê natychmiast popadaæ w ruinê, gdy zabi³eœ lud cienia.</nodes>
+Udalo ci sie odzyskac uzyteczne zasoby, ale wiekszosc miasta zdawala sie natychmiast popadac w ruine, gdy zabiles lud cienia.</nodes>
     <nodes xsi:type="NodeAdventure" ID="58" positionX="-932" positionY="-2770" width="350" height="725">
       <logic>
         <ModifierBlock>
@@ -1050,7 +1050,7 @@ Uda³o ci siê odzyskaæ u¿yteczne zasoby, ale wiêkszoœæ miasta zdawa³a siê natychm
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="WyjdŸ." ownerID="58" targetID="59" fromX="-606" fromY="-3261" />Byliœcie bardzo pobici, a ciemnoœci wnikaj¹ g³êboko w wasze dusze, gdy uciekacie.</nodes>
+      <outputs name="Wyjdz." ownerID="58" targetID="59" fromX="-606" fromY="-3261" />Byliscie bardzo pobici, a ciemnosci wnikaja gleboko w wasze dusze, gdy uciekacie.</nodes>
     <nodes xsi:type="NodeSpawnOnMap" ID="59" positionX="-499" positionY="-3125" width="480" height="503" radius="0" destroyOwner="false" linkedEventUniqueID="0">
       <outputs ownerID="59" targetID="60" fromX="-50" fromY="-3557" />
     </nodes>
@@ -1129,11 +1129,11 @@ Uda³o ci siê odzyskaæ u¿yteczne zasoby, ale wiêkszoœæ miasta zdawa³a siê natychm
           </LogicFilter>
         </FilterBlock>
       </logic>
-      <outputs name="Pozdrów swoich sojuszników. " ownerID="2" targetID="3" fromX="729" fromY="-677" />
-      <outputs name="B¹dŸ ostro¿ny, ale rozmawiaj z nimi." ownerID="2" targetID="11" fromX="729" fromY="-757" />
-      <outputs name="Spróbuj poradziæ sobie z tym." ownerID="2" targetID="12" fromX="729" fromY="-837" />
+      <outputs name="Pozdrow swoich sojusznikow. " ownerID="2" targetID="3" fromX="729" fromY="-677" />
+      <outputs name="Badz ostrozny, ale rozmawiaj z nimi." ownerID="2" targetID="11" fromX="729" fromY="-757" />
+      <outputs name="Sprobuj poradzic sobie z tym." ownerID="2" targetID="12" fromX="729" fromY="-837" />
       <outputs name="Walcz!" ownerID="2" targetID="15" fromX="729" fromY="-917" />
-      <outputs name="Odsuñ siê." ownerID="2" targetID="10" fromX="729" fromY="-998" />Zdajesz sobie sprawê, ¿e cienie pod¹¿aj¹ za tob¹!</nodes>
+      <outputs name="Odsun sie." ownerID="2" targetID="10" fromX="729" fromY="-998" />Zdajesz sobie sprawe, ze cienie podazaja za toba!</nodes>
     <nodes xsi:type="NodeAdventure" ID="3" positionX="813" positionY="717" width="350" height="805">
       <logic>
         <FilterBlock>
@@ -1142,8 +1142,8 @@ Uda³o ci siê odzyskaæ u¿yteczne zasoby, ale wiêkszoœæ miasta zdawa³a siê natychm
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Zapytaj, czy chc¹ handlowaæ." ownerID="3" targetID="4" fromX="1138" fromY="225" />
-      <outputs name="Medytujcie razem." ownerID="3" targetID="23" fromX="1138" fromY="145" />„Przepraszam, przyjaciele. Nie poznaliœmy ciê. Pozdrowienia i ¿yczenia.'</nodes>
+      <outputs name="Zapytaj, czy chca handlowac." ownerID="3" targetID="4" fromX="1138" fromY="225" />
+      <outputs name="Medytujcie razem." ownerID="3" targetID="23" fromX="1138" fromY="145" />„Przepraszam, przyjaciele. Nie poznalismy cie. Pozdrowienia i zyczenia.'</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="4" positionX="1238" positionY="746" width="350" height="530" linkedEventUniqueID="31" />
     <nodes xsi:type="NodeAdventureEnd" ID="10" positionX="-84" positionY="-1283" width="350" height="455" linkedEventUniqueID="0">
       <logic>
@@ -1162,9 +1162,9 @@ Uda³o ci siê odzyskaæ u¿yteczne zasoby, ale wiêkszoœæ miasta zdawa³a siê natychm
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="WyjdŸ." ownerID="11" targetID="10" fromX="1236" fromY="-713" />
-      <outputs name="Spróbuj poradziæ sobie z tym." ownerID="11" targetID="12" fromX="1236" fromY="-793" />
-      <outputs name="Walcz!" ownerID="11" targetID="15" fromX="1236" fromY="-873" />Oni nie odpowiadaj¹, oni ci¹gle przychodz¹ do ciebie.</nodes>
+      <outputs name="Wyjdz." ownerID="11" targetID="10" fromX="1236" fromY="-713" />
+      <outputs name="Sprobuj poradzic sobie z tym." ownerID="11" targetID="12" fromX="1236" fromY="-793" />
+      <outputs name="Walcz!" ownerID="11" targetID="15" fromX="1236" fromY="-873" />Oni nie odpowiadaja, oni ciagle przychodza do ciebie.</nodes>
     <nodes xsi:type="NodeChallenge" ID="12" positionX="1416" positionY="-259" width="500" height="726" challengeType="TypeMental" versusEventOwner="true" challengeScale="101" challengedList="ppl">
       <logic>
         <FilterBlock>
@@ -1195,7 +1195,7 @@ Uda³o ci siê odzyskaæ u¿yteczne zasoby, ale wiêkszoœæ miasta zdawa³a siê natychm
       <outputs ownerID="16" targetID="25" fromX="2433" fromY="-680" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="17" positionX="2234" positionY="-1419" width="350" height="725">
-      <outputs name="WyjdŸ." ownerID="17" targetID="22" fromX="2559" fromY="-1910" />Pokonujesz cienia. 
+      <outputs name="Wyjdz." ownerID="17" targetID="22" fromX="2559" fromY="-1910" />Pokonujesz cienia. 
 </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="18" positionX="3337.90649" positionY="-1385.14355" width="350" height="530" allPlayersXP="-1" linkedEventUniqueID="0">
       <logic>
@@ -1214,7 +1214,7 @@ Uda³o ci siê odzyskaæ u¿yteczne zasoby, ale wiêkszoœæ miasta zdawa³a siê natychm
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Uruchom." ownerID="19" targetID="24" fromX="1905" fromY="-2333" />The shadowkin pokonuje ciê i zara¿a ciê ciemnoœci¹, zanim uda ci siê uciec.</nodes>
+      <outputs name="Uruchom." ownerID="19" targetID="24" fromX="1905" fromY="-2333" />The shadowkin pokonuje cie i zaraza cie ciemnoscia, zanim uda ci sie uciec.</nodes>
     <nodes xsi:type="NodeDealDamage" ID="20" positionX="1018" positionY="-2116" width="460" height="459" challengeTypeDamage="TypeSpirit" minDamage="50" maxDamage="70" useCountInPercent="true" targetGroup="ppl">
       <outputs ownerID="20" targetID="19" fromX="1447" fromY="-2504" />
     </nodes>
@@ -1270,6 +1270,6 @@ Uda³o ci siê odzyskaæ u¿yteczne zasoby, ale wiêkszoœæ miasta zdawa³a siê natychm
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="WyjdŸ." ownerID="25" targetID="21" fromX="2838" fromY="-665" />Cienie oddalaj¹ siê.</nodes>
+      <outputs name="Wyjdz." ownerID="25" targetID="21" fromX="2838" fromY="-665" />Cienie oddalaja sie.</nodes>
   </Adventure>
 </MODULE>

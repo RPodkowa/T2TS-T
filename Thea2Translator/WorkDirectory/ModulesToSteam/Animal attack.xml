@@ -5,10 +5,10 @@
       <outputs ownerID="1" targetID="2" fromX="334" fromY="-656" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="2" positionX="644.5246" positionY="-125.975945" width="350" height="966">
-      <outputs name="Zobacz, co się dzieje." ownerID="2" targetID="5" group="G1" fromX="970" fromY="-617" />
-      <outputs name="Zobacz, co się dzieje." ownerID="2" targetID="3" group="G1" fromX="970" fromY="-697" />
-      <outputs name="Zobacz, co się dzieje." ownerID="2" targetID="4" group="G1" fromX="970" fromY="-777" />
-      <outputs name="Zobacz, co się dzieje." ownerID="2" targetID="7" group="G1" fromX="970" fromY="-857" />Twoja podróż została przerwana.</nodes>
+      <outputs name="Zobacz, co sie dzieje." ownerID="2" targetID="5" group="G1" fromX="970" fromY="-617" />
+      <outputs name="Zobacz, co sie dzieje." ownerID="2" targetID="3" group="G1" fromX="970" fromY="-697" />
+      <outputs name="Zobacz, co sie dzieje." ownerID="2" targetID="4" group="G1" fromX="970" fromY="-777" />
+      <outputs name="Zobacz, co sie dzieje." ownerID="2" targetID="7" group="G1" fromX="970" fromY="-857" />Twoja podroz zostala przerwana.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="3" positionX="1514" positionY="12" width="350" height="455" linkedEventUniqueID="3">
       <logic>
         <FilterBlock>
@@ -69,13 +69,13 @@
           </LogicFilter>
         </FilterBlock>
       </logic>
-      <outputs name="[Zamieszanie] Ogarnij los i zacznij szarżować." ownerID="2" targetID="4" fromX="942" fromY="154" />
-      <outputs name="[Natura] Ufaj w cokolwiek, co zdecyduje się rzucić na twoją ścieżkę." ownerID="2" targetID="6" fromX="942" fromY="74" />
-      <outputs name="Po co czekać? Załaduj i odszukaj pająki, aby je zabić!" ownerID="2" targetID="3" fromX="942" fromY="-5" />
-      <outputs name="[Hunter] Znajdź bezpieczną ścieżkę." ownerID="2" targetID="7" group="G1" fromX="942" fromY="-86" />
-      <outputs name="Znajdź alternatywną ścieżkę." ownerID="2" targetID="30" group="G1" fromX="942" fromY="-166" />
-      <outputs name="Znajdź alternatywną ścieżkę." ownerID="2" targetID="13" group="G1" fromX="942" fromY="-246" />
-      <outputs name="Zostaw całkowicie." ownerID="2" targetID="33" fromX="942" fromY="-326" />Przechodząc przez las w poszukiwaniu dobrych zasobów, zauważasz, że drzewa są pokryte grubymi pajęczynami.</nodes>
+      <outputs name="[Zamieszanie] Ogarnij los i zacznij szarzowac." ownerID="2" targetID="4" fromX="942" fromY="154" />
+      <outputs name="[Natura] Ufaj w cokolwiek, co zdecyduje sie rzucic na twoja sciezke." ownerID="2" targetID="6" fromX="942" fromY="74" />
+      <outputs name="Po co czekac? Zaladuj i odszukaj pajaki, aby je zabic!" ownerID="2" targetID="3" fromX="942" fromY="-5" />
+      <outputs name="[Hunter] Znajdz bezpieczna sciezke." ownerID="2" targetID="7" group="G1" fromX="942" fromY="-86" />
+      <outputs name="Znajdz alternatywna sciezke." ownerID="2" targetID="30" group="G1" fromX="942" fromY="-166" />
+      <outputs name="Znajdz alternatywna sciezke." ownerID="2" targetID="13" group="G1" fromX="942" fromY="-246" />
+      <outputs name="Zostaw calkowicie." ownerID="2" targetID="33" fromX="942" fromY="-326" />Przechodzac przez las w poszukiwaniu dobrych zasobow, zauwazasz, ze drzewa sa pokryte grubymi pajeczynami.</nodes>
     <nodes xsi:type="NodeChallenge" ID="3" positionX="1387.29578" positionY="822.834" width="500" height="726" challengeType="TypePhysical" versusGroup="GROUP-SPIDERS_2P_1M_0S" challengeScale="101" challengedList="ppl">
       <outputs name="Win" ownerID="3" targetID="9" fromX="1828" fromY="327" />
       <outputs name="Lose" ownerID="3" targetID="16" fromX="1828" fromY="247" />
@@ -92,8 +92,8 @@
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Bądź wierny swojej ścieżce i atakuj!" ownerID="4" targetID="22" fromX="1780" fromY="-625" />
-      <outputs name="Właściwie nie. Pozostawiać." ownerID="4" targetID="23" fromX="1780" fromY="-705" />Królowa pająków stoi ci na drodze, czy to przez przypadek, czy przez los - obie leżą w zasięgu twojej domeny. 
+      <outputs name="Badz wierny swojej sciezce i atakuj!" ownerID="4" targetID="22" fromX="1780" fromY="-625" />
+      <outputs name="Wlasciwie nie. Pozostawiac." ownerID="4" targetID="23" fromX="1780" fromY="-705" />Krolowa pajakow stoi ci na drodze, czy to przez przypadek, czy przez los - obie leza w zasiegu twojej domeny. 
 </nodes>
     <nodes xsi:type="NodeAdventure" ID="6" positionX="1572.26025" positionY="-974.075256" width="350" height="725">
       <logic>
@@ -111,9 +111,9 @@
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdź." ownerID="6" targetID="28" fromX="1898" fromY="-1465" />Natura tym razem była miła i chociaż zauważyłeś kilka gigantycznych pająków, nie zaatakowały, wyczuwając, że nie chcesz im szkodzić. 
+      <outputs name="Wyjdz." ownerID="6" targetID="28" fromX="1898" fromY="-1465" />Natura tym razem byla mila i chociaz zauwazyles kilka gigantycznych pajakow, nie zaatakowaly, wyczuwajac, ze nie chcesz im szkodzic. 
 
-Możesz zbierać towary za darmo.</nodes>
+Mozesz zbierac towary za darmo.</nodes>
     <nodes xsi:type="NodeAdventure" ID="7" positionX="623.007141" positionY="-792.3507" width="350" height="885">
       <logic>
         <FilterBlock>
@@ -128,11 +128,11 @@ Możesz zbierać towary za darmo.</nodes>
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Idź zabić pająki!" ownerID="7" targetID="14" fromX="948" fromY="-1283" />
-      <outputs name="[Hunter] Ustaw pułapkę." ownerID="7" targetID="19" fromX="948" fromY="-1363" />
-      <outputs name="Zbierz to, po co przyszedłeś i odejdź." ownerID="7" targetID="13" fromX="948" fromY="-1443" />Znajdujesz bezpieczną ścieżkę między sieciami i docierasz do gaju, którego szukałeś, by zebrać trochę drewna i zapasów. 
+      <outputs name="Idz zabic pajaki!" ownerID="7" targetID="14" fromX="948" fromY="-1283" />
+      <outputs name="[Hunter] Ustaw pulapke." ownerID="7" targetID="19" fromX="948" fromY="-1363" />
+      <outputs name="Zbierz to, po co przyszedles i odejdz." ownerID="7" targetID="13" fromX="948" fromY="-1443" />Znajdujesz bezpieczna sciezke miedzy sieciami i docierasz do gaju, ktorego szukales, by zebrac troche drewna i zapasow. 
 
-Dostrzegasz także gniazdo pająka.</nodes>
+Dostrzegasz takze gniazdo pajaka.</nodes>
     <nodes xsi:type="NodeAdventure" ID="9" positionX="2173.534" positionY="164.9054" width="350" height="725">
       <logic>
         <ModifierBlock>
@@ -144,7 +144,7 @@ Dostrzegasz także gniazdo pająka.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Zbierz co możesz i wyjdź." ownerID="9" targetID="28" fromX="2499" fromY="-326" />Walczysz przez pajęczyny i znajdujesz martwe ciała tych, którzy nie mieli tyle szczęścia. W końcu docierasz do gaju, w którym szukasz zasobów. </nodes>
+      <outputs name="Zbierz co mozesz i wyjdz." ownerID="9" targetID="28" fromX="2499" fromY="-326" />Walczysz przez pajeczyny i znajdujesz martwe ciala tych, ktorzy nie mieli tyle szczescia. W koncu docierasz do gaju, w ktorym szukasz zasobow. </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="13" positionX="1120.70337" positionY="-1447.22607" width="350" height="408" allPlayersXP="2" allPlayersRP="1" linkedEventUniqueID="0">
       <logic>
         <ModifierBlock>
@@ -176,7 +176,7 @@ Dostrzegasz także gniazdo pająka.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Zbierz co możesz i wyjdź." ownerID="15" targetID="34" fromX="-640" fromY="-873" />Pająki są martwe. Znajdziesz szczątki nieszczęśliwych dusz zabranych przez zwierzęta.</nodes>
+      <outputs name="Zbierz co mozesz i wyjdz." ownerID="15" targetID="34" fromX="-640" fromY="-873" />Pajaki sa martwe. Znajdziesz szczatki nieszczesliwych dusz zabranych przez zwierzeta.</nodes>
     <nodes xsi:type="NodeAdventure" ID="16" positionX="-1455.35645" positionY="-1206.39868" width="350" height="681">
       <logic>
         <ModifierBlock>
@@ -185,7 +185,7 @@ Dostrzegasz także gniazdo pająka.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdź." ownerID="16" targetID="18" fromX="-1129" fromY="-1697" />Pająki pobiły cię i zmusiły do ucieczki. Paskudne ukąszenia pająków utrzymują się podczas biegu.</nodes>
+      <outputs name="Wyjdz." ownerID="16" targetID="18" fromX="-1129" fromY="-1697" />Pajaki pobily cie i zmusily do ucieczki. Paskudne ukaszenia pajakow utrzymuja sie podczas biegu.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="18" positionX="-957.286" positionY="-2037.01624" width="350" height="408" allPlayersXP="1" allPlayersRP="1" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeChallenge" ID="19" positionX="-310.4386" positionY="-1380.55066" width="500" height="726" challengeType="TypeMental" versusConcept="true" versusGroup="GROUP-CON_M_0P_2M_0S" challengeScale="101" challengedList="ppl">
       <logic>
@@ -233,9 +233,9 @@ Dostrzegasz także gniazdo pająka.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Zbierz co możesz i wyjdź." ownerID="29" targetID="34" fromX="3482" fromY="690" />Królowa pająków leży u twoich stóp jako trofeum i znak twojej sprawności. Czujesz się upoważniony przez swoją domenę. 
+      <outputs name="Zbierz co mozesz i wyjdz." ownerID="29" targetID="34" fromX="3482" fromY="690" />Krolowa pajakow lezy u twoich stop jako trofeum i znak twojej sprawnosci. Czujesz sie upowazniony przez swoja domene. 
 
-Następnie docierasz do gaju, w którym szukasz zasobów. </nodes>
+Nastepnie docierasz do gaju, w ktorym szukasz zasobow. </nodes>
     <nodes xsi:type="NodeAdventure" ID="30" positionX="1677.19189" positionY="-1726.05542" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -252,9 +252,9 @@ Następnie docierasz do gaju, w którym szukasz zasobów. </nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdź." ownerID="30" targetID="13" fromX="2002" fromY="-2217" />Znajdujesz inną ścieżkę, ale niektóre pająki wciąż cię ścigają. Bierzesz kilka paskudnych ugryzień, zanim uciekniesz. 
+      <outputs name="Wyjdz." ownerID="30" targetID="13" fromX="2002" fromY="-2217" />Znajdujesz inna sciezke, ale niektore pajaki wciaz cie scigaja. Bierzesz kilka paskudnych ugryzien, zanim uciekniesz. 
 
-Udajesz się jednak dotrzeć do gaju i zebrać trochę drewna.</nodes>
+Udajesz sie jednak dotrzec do gaju i zebrac troche drewna.</nodes>
     <nodes xsi:type="NodeAdventure" ID="31" positionX="895.662048" positionY="-1886.47656" width="350" height="725">
       <logic>
         <ModifierBlock>
@@ -275,7 +275,7 @@ Udajesz się jednak dotrzeć do gaju i zebrać trochę drewna.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Zbierz co możesz i wyjdź." ownerID="31" targetID="28" fromX="1221" fromY="-2377" />Pułapka działa dobrze. Niektóre pająki leżą martwe, a inne uciekają. Znajdziesz szczątki nieszczęśliwych dusz zabranych przez zwierzęta.</nodes>
+      <outputs name="Zbierz co mozesz i wyjdz." ownerID="31" targetID="28" fromX="1221" fromY="-2377" />Pulapka dziala dobrze. Niektore pajaki leza martwe, a inne uciekaja. Znajdziesz szczatki nieszczesliwych dusz zabranych przez zwierzeta.</nodes>
     <nodes xsi:type="NodeProduceDrop" ID="32" positionX="323.507935" positionY="-1755.84985" width="460" height="429" sourceGroup="GROUP-SPIDERS_2P_1M_0S" cargoPercentage="60" dropPercentage="60" targetGroup="ppl">
       <outputs ownerID="32" targetID="31" fromX="753" fromY="-2114" />
     </nodes>
@@ -312,12 +312,12 @@ Udajesz się jednak dotrzeć do gaju i zebrać trochę drewna.</nodes>
           </LogicFilter>
         </FilterBlock>
       </logic>
-      <outputs name="[Nocny demon] Rozkazuj tym wilkom, by słuchały twojego wycie alfa!" ownerID="2" targetID="3" fromX="824" fromY="-619" />
-      <outputs name="[Wilk] Wyć z powrotem i zasygnalizować, że twoja sfora nie jest tutaj, by ich wyzwać." ownerID="2" targetID="4" fromX="824" fromY="-699" />
-      <outputs name="Stój mocno i walcz!" ownerID="2" targetID="6" fromX="824" fromY="-779" />
-      <outputs name="[Hunter] Ustaw pułapkę wilka." ownerID="2" targetID="5" fromX="824" fromY="-860" />
+      <outputs name="[Nocny demon] Rozkazuj tym wilkom, by sluchaly twojego wycie alfa!" ownerID="2" targetID="3" fromX="824" fromY="-619" />
+      <outputs name="[Wilk] Wyc z powrotem i zasygnalizowac, ze twoja sfora nie jest tutaj, by ich wyzwac." ownerID="2" targetID="4" fromX="824" fromY="-699" />
+      <outputs name="Stoj mocno i walcz!" ownerID="2" targetID="6" fromX="824" fromY="-779" />
+      <outputs name="[Hunter] Ustaw pulapke wilka." ownerID="2" targetID="5" fromX="824" fromY="-860" />
       <outputs name="Uciekaj." ownerID="2" targetID="7" group="G1" fromX="824" fromY="-940" />
-      <outputs name="Uciekaj." ownerID="2" targetID="8" group="G1" fromX="824" fromY="-1020" />Gdy zapada noc, słyszysz wycie wilków, które prawdopodobnie są na polowaniu.</nodes>
+      <outputs name="Uciekaj." ownerID="2" targetID="8" group="G1" fromX="824" fromY="-1020" />Gdy zapada noc, slyszysz wycie wilkow, ktore prawdopodobnie sa na polowaniu.</nodes>
     <nodes xsi:type="NodeAdventure" ID="3" positionX="969.5077" positionY="591.3769" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -349,9 +349,9 @@ Udajesz się jednak dotrzeć do gaju i zebrać trochę drewna.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdź." ownerID="3" targetID="9" fromX="1295" fromY="100" />Twoja obecność krzyczy o dominacji w noc, a wilki przechodzą do twojej woli. 
+      <outputs name="Wyjdz." ownerID="3" targetID="9" fromX="1295" fromY="100" />Twoja obecnosc krzyczy o dominacji w noc, a wilki przechodza do twojej woli. 
 
-Porzucają też zdobycz, którą już złapali. </nodes>
+Porzucaja tez zdobycz, ktora juz zlapali. </nodes>
     <nodes xsi:type="NodeAdventure" ID="4" positionX="1404.56262" positionY="15.9472122" width="350" height="805">
       <logic>
         <FilterBlock>
@@ -375,9 +375,9 @@ Porzucają też zdobycz, którą już złapali. </nodes>
         </ModifierBlock>
       </logic>
       <outputs name="Dominacja." ownerID="4" targetID="21" fromX="1730" fromY="-475" />
-      <outputs name="Wyjdź." ownerID="4" targetID="9" fromX="1730" fromY="-555" />Wycie, a druga paczka odpowiada w naturze. 
+      <outputs name="Wyjdz." ownerID="4" targetID="9" fromX="1730" fromY="-555" />Wycie, a druga paczka odpowiada w naturze. 
 
-Krążą wokół ciebie, ale nie atakują. Możesz albo spróbować je zdominować, albo opuścić tereny łowieckie.</nodes>
+Kraza wokol ciebie, ale nie atakuja. Mozesz albo sprobowac je zdominowac, albo opuscic tereny lowieckie.</nodes>
     <nodes xsi:type="NodeAdventure" ID="5" positionX="1475.82568" positionY="-835.5287" width="350" height="805">
       <logic>
         <FilterBlock>
@@ -387,7 +387,7 @@ Krążą wokół ciebie, ale nie atakują. Możesz albo spróbować je zdominowa
         </FilterBlock>
       </logic>
       <outputs name="Atak!" ownerID="5" targetID="11" fromX="1801" fromY="-1326" />
-      <outputs name="Poprowadź wilki w pułapkę." ownerID="5" targetID="12" fromX="1801" fromY="-1406" />Łowca staje się myśliwym, gdy cicho śledzisz stado wilków. Wybierasz kilku maruderów, więc paczka powinna być teraz łatwiejsza do rozwiązania.</nodes>
+      <outputs name="Poprowadz wilki w pulapke." ownerID="5" targetID="12" fromX="1801" fromY="-1406" />Lowca staje sie mysliwym, gdy cicho sledzisz stado wilkow. Wybierasz kilku maruderow, wiec paczka powinna byc teraz latwiejsza do rozwiazania.</nodes>
     <nodes xsi:type="NodeChallenge" ID="6" positionX="2055.954" positionY="-774.1932" width="500" height="807" challengeType="TypePhysical" versusGroup="GROUP-WOLVES_STARVING_2P_1M_0S" challengeScale="101" challengedList="ppl">
       <outputs name="Win" ownerID="6" targetID="28" group="G1" fromX="2497" fromY="-1269" />
       <outputs name="Lose" ownerID="6" targetID="15" fromX="2497" fromY="-1349" />
@@ -416,7 +416,7 @@ Krążą wokół ciebie, ale nie atakują. Możesz albo spróbować je zdominowa
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Uruchom. &#xD;&#xA;" ownerID="7" targetID="8" fromX="1369" fromY="-1474" />Wilki zyskują na tobie, więc jesteś zmuszony opuścić część swojego jedzenia, aby uciec.</nodes>
+      <outputs name="Uruchom. &#xD;&#xA;" ownerID="7" targetID="8" fromX="1369" fromY="-1474" />Wilki zyskuja na tobie, wiec jestes zmuszony opuscic czesc swojego jedzenia, aby uciec.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="8" positionX="598.8051" positionY="-1399.46118" width="350" height="408" allPlayersXP="1" allPlayersRP="1" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventureEnd" ID="9" positionX="1413.785" positionY="675.7581" width="350" height="455" allPlayersXP="3" allPlayersRP="1" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventureEnd" ID="10" positionX="3687.459" positionY="-76.43485" width="350" height="408" allPlayersXP="2" allPlayersRP="1" linkedEventUniqueID="0" />
@@ -441,7 +441,7 @@ Krążą wokół ciebie, ale nie atakują. Możesz albo spróbować je zdominowa
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdź." ownerID="15" targetID="16" fromX="3381" fromY="-1822" />Wilki pobiły cię i zmusiły do ucieczki. Niektóre z twoich ran zostają zainfekowane.</nodes>
+      <outputs name="Wyjdz." ownerID="15" targetID="16" fromX="3381" fromY="-1822" />Wilki pobily cie i zmusily do ucieczki. Niektore z twoich ran zostaja zainfekowane.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="16" positionX="3484.60669" positionY="-1407.3584" width="350" height="408" allPlayersXP="2" allPlayersRP="1" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeProduceDrop" ID="19" positionX="2378" positionY="-2497" width="460" height="429" dropPercentage="80">
       <logic>
@@ -489,11 +489,11 @@ Krążą wokół ciebie, ale nie atakują. Możesz albo spróbować je zdominowa
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdź." ownerID="23" targetID="9" fromX="2706" fromY="-134" />Twoja obecność krzyczy o dominacji w noc, a wilki przechodzą do twojej woli. 
+      <outputs name="Wyjdz." ownerID="23" targetID="9" fromX="2706" fromY="-134" />Twoja obecnosc krzyczy o dominacji w noc, a wilki przechodza do twojej woli. 
 
-Porzucają też zdobycz, którą już złapali. </nodes>
+Porzucaja tez zdobycz, ktora juz zlapali. </nodes>
     <nodes xsi:type="NodeAdventure" ID="24" positionX="3265.79688" positionY="176.689819" width="350" height="725">
-      <outputs name="Wyjdź." ownerID="24" targetID="10" fromX="3591" fromY="-314" />Nie zdołasz zdominować stada, a oni ścigają cię ze swojego polowania, ranni, ale nie martwi.</nodes>
+      <outputs name="Wyjdz." ownerID="24" targetID="10" fromX="3591" fromY="-314" />Nie zdolasz zdominowac stada, a oni scigaja cie ze swojego polowania, ranni, ale nie martwi.</nodes>
     <nodes xsi:type="NodeDealDamage" ID="25" positionX="2686.107" positionY="-445.590942" width="460" height="459" challengeTypeDamage="TypeMental" minDamage="10" maxDamage="20" useCountInPercent="true" targetGroup="wolf">
       <outputs ownerID="25" targetID="24" fromX="3115" fromY="-833" />
     </nodes>
@@ -563,12 +563,12 @@ Porzucają też zdobycz, którą już złapali. </nodes>
           </LogicFilter>
         </FilterBlock>
       </logic>
-      <outputs name="Gdzie są prosięta, w pobliżu jest z pewnością nadopiekuńcza matka. Ostrożnie obserwuj obszar." ownerID="2" targetID="3" fromX="586" fromY="-696" />
-      <outputs name="[Beastmaster] Dzikie prosięta doskonale nadają się do oswajania, ale najpierw musisz zwabić je bez alarmowania matki." ownerID="2" targetID="31" fromX="586" fromY="-777" />
-      <outputs name="[Hunter] Dziki mama jest na pewno w pobliżu. Ustaw pułapkę, aby oddzielić paczkę i polować tylko na mniejszą partię." ownerID="2" targetID="6" fromX="586" fromY="-857" />
-      <outputs name="Podejdź bliżej, aby spróbować schwytać prosięta." ownerID="2" targetID="10" group="G1" fromX="586" fromY="-937" />
-      <outputs name="Podejdź bliżej, aby spróbować schwytać prosięta." ownerID="2" targetID="36" group="G1" fromX="586" fromY="-1017" />
-      <outputs name="Wyjdź." ownerID="2" targetID="14" fromX="586" fromY="-1097" />Przechodząc przez las, natkniesz się na dzikie prosięta. </nodes>
+      <outputs name="Gdzie sa prosieta, w poblizu jest z pewnoscia nadopiekuncza matka. Ostroznie obserwuj obszar." ownerID="2" targetID="3" fromX="586" fromY="-696" />
+      <outputs name="[Beastmaster] Dzikie prosieta doskonale nadaja sie do oswajania, ale najpierw musisz zwabic je bez alarmowania matki." ownerID="2" targetID="31" fromX="586" fromY="-777" />
+      <outputs name="[Hunter] Dziki mama jest na pewno w poblizu. Ustaw pulapke, aby oddzielic paczke i polowac tylko na mniejsza partie." ownerID="2" targetID="6" fromX="586" fromY="-857" />
+      <outputs name="Podejdz blizej, aby sprobowac schwytac prosieta." ownerID="2" targetID="10" group="G1" fromX="586" fromY="-937" />
+      <outputs name="Podejdz blizej, aby sprobowac schwytac prosieta." ownerID="2" targetID="36" group="G1" fromX="586" fromY="-1017" />
+      <outputs name="Wyjdz." ownerID="2" targetID="14" fromX="586" fromY="-1097" />Przechodzac przez las, natkniesz sie na dzikie prosieta. </nodes>
     <nodes xsi:type="NodeAdventure" ID="3" positionX="407.651154" positionY="788.436646" width="350" height="885">
       <logic>
         <FilterBlock>
@@ -580,9 +580,9 @@ Porzucają też zdobycz, którą już złapali. </nodes>
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="To jest szkodliwe dla stada, aby zabić prosięta lub matkę. Zamiast tego odseparuj słabszych mężczyzn, aby ich polowali." ownerID="3" targetID="26" group="G1" fromX="733" fromY="297" />
-      <outputs name="Lepiej nie ryzykować krzywdzenia młodych. Okrąż paczkę i wyjdź." ownerID="3" targetID="30" fromX="733" fromY="297" />
-      <outputs name="To jest szkodliwe dla stada, aby zabić prosięta lub matkę. Zamiast tego odseparuj słabszych mężczyzn, aby ich polowali." ownerID="3" targetID="28" group="G1" fromX="733" fromY="297" />Rzeczywiście, wkrótce zauważysz małą paczkę starszych knurów grzebiących w liściach. </nodes>
+      <outputs name="To jest szkodliwe dla stada, aby zabic prosieta lub matke. Zamiast tego odseparuj slabszych mezczyzn, aby ich polowali." ownerID="3" targetID="26" group="G1" fromX="733" fromY="297" />
+      <outputs name="Lepiej nie ryzykowac krzywdzenia mlodych. Okraz paczke i wyjdz." ownerID="3" targetID="30" fromX="733" fromY="297" />
+      <outputs name="To jest szkodliwe dla stada, aby zabic prosieta lub matke. Zamiast tego odseparuj slabszych mezczyzn, aby ich polowali." ownerID="3" targetID="28" group="G1" fromX="733" fromY="297" />Rzeczywiscie, wkrotce zauwazysz mala paczke starszych knurow grzebiacych w lisciach. </nodes>
     <nodes xsi:type="NodeAdventure" ID="5" positionX="1562" positionY="42" width="350" height="725">
       <logic>
         <ModifierBlock>
@@ -594,7 +594,7 @@ Porzucają też zdobycz, którą już złapali. </nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdź." ownerID="5" targetID="9" fromX="1887" fromY="-449" />Zwabisz silnego prosiaka i wyszkolisz go, by stał się twoim własnym dzikiem.</nodes>
+      <outputs name="Wyjdz." ownerID="5" targetID="9" fromX="1887" fromY="-449" />Zwabisz silnego prosiaka i wyszkolisz go, by stal sie twoim wlasnym dzikiem.</nodes>
     <nodes xsi:type="NodeChallenge" ID="6" positionX="1515.55225" positionY="-688.1881" width="500" height="807" challengeType="TypePhysical" versusGroup="GROUP-BOARS_1P_1M_0S" challengeScale="101" challengedList="ppl">
       <logic>
         <FilterBlock>
@@ -633,9 +633,9 @@ Porzucają też zdobycz, którą już złapali. </nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdź." ownerID="13" targetID="9" fromX="63" fromY="-2005" />Próbujesz złapać prosięta, ale zamiast tego paczka wściekłych dzików zarzuca cię. 
+      <outputs name="Wyjdz." ownerID="13" targetID="9" fromX="63" fromY="-2005" />Probujesz zlapac prosieta, ale zamiast tego paczka wscieklych dzikow zarzuca cie. 
 
-Na szczęście jesteś w stanie z nimi walczyć.</nodes>
+Na szczescie jestes w stanie z nimi walczyc.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="14" positionX="-171.259445" positionY="-942.61084" width="350" height="530" allPlayersXP="1" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventureEnd" ID="16" positionX="2082.68579" positionY="-1513.73865" width="350" height="530" allPlayersXP="3" allPlayersRP="1" linkedEventUniqueID="0">
       <logic>
@@ -683,7 +683,7 @@ Na szczęście jesteś w stanie z nimi walczyć.</nodes>
       <outputs name="Surrender" ownerID="26" targetID="27" fromX="2039" fromY="984" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="27" positionX="2609.78735" positionY="1340.59937" width="350" height="725">
-      <outputs name="Wyjdź." ownerID="27" targetID="22" fromX="2935" fromY="849" />Dziki bardzo cię biją i zmuszają do ucieczki.</nodes>
+      <outputs name="Wyjdz." ownerID="27" targetID="22" fromX="2935" fromY="849" />Dziki bardzo cie bija i zmuszaja do ucieczki.</nodes>
     <nodes xsi:type="NodeChallenge" ID="28" positionX="1638.91248" positionY="886.8775" width="500" height="726" challengeType="TypePhysical" versusGroup="GROUP-BOARS_2P_1M_0S" challengeScale="101" challengedList="ppl">
       <outputs name="Win" ownerID="28" targetID="29" fromX="2080" fromY="391" />
       <outputs name="Lose" ownerID="28" targetID="27" fromX="2080" fromY="311" />
@@ -700,10 +700,10 @@ Na szczęście jesteś w stanie z nimi walczyć.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdź." ownerID="29" targetID="41" group="G1" fromX="2556" fromY="419" />
-      <outputs name="Wyjdź." ownerID="29" targetID="37" group="G1" fromX="2556" fromY="339" />Próbujesz oddzielić paczkę, ale ci się nie udaje i jesteś zmuszony zabić matkę i młodych. 
+      <outputs name="Wyjdz." ownerID="29" targetID="41" group="G1" fromX="2556" fromY="419" />
+      <outputs name="Wyjdz." ownerID="29" targetID="37" group="G1" fromX="2556" fromY="339" />Probujesz oddzielic paczke, ale ci sie nie udaje i jestes zmuszony zabic matke i mlodych. 
 
-To nie jest droga natury, ale dostajesz więcej mięsa i skóry.</nodes>
+To nie jest droga natury, ale dostajesz wiecej miesa i skory.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="30" positionX="1093.74719" positionY="166.737671" width="350" height="530" allPlayersXP="2" allPlayersRP="1" linkedEventUniqueID="0">
       <logic>
         <ModifierBlock>
@@ -735,7 +735,7 @@ To nie jest droga natury, ale dostajesz więcej mięsa i skóry.</nodes>
       <outputs name="Surrender" ownerID="31" targetID="23" fromX="1140" fromY="-848" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="32" positionX="2524.243" positionY="60.9949646" width="350" height="725">
-      <outputs name="Wyjdź." ownerID="32" targetID="22" fromX="2849" fromY="-430" />Bez względu na to, jak bardzo się starasz, te małe prosięta są zdecydowane trzymać się blisko swojej matki. Jesteś zużyty, gdy słyszysz pomruki starego dzika i jesteś zmuszony do wycofania się.</nodes>
+      <outputs name="Wyjdz." ownerID="32" targetID="22" fromX="2849" fromY="-430" />Bez wzgledu na to, jak bardzo sie starasz, te male prosieta sa zdecydowane trzymac sie blisko swojej matki. Jestes zuzyty, gdy slyszysz pomruki starego dzika i jestes zmuszony do wycofania sie.</nodes>
     <nodes xsi:type="NodeProduceDrop" ID="33" positionX="2197.57837" positionY="-836.1363" width="460" height="429" sourceGroup="GROUP-BOARS_1P_1M_0S" dropPercentage="100" targetGroup="ppl">
       <logic>
         <ModifierBlock>
@@ -780,8 +780,8 @@ To nie jest droga natury, ale dostajesz więcej mięsa i skóry.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdź." ownerID="38" targetID="39" group="G1" fromX="3578" fromY="-1131" />
-      <outputs name="Wyjdź." ownerID="38" targetID="40" group="G1" fromX="3578" fromY="-1211" />Zabijanie prosiąt lub matki jest szkodliwe dla stada, więc odczuwasz ciężar swojego braku szacunku dla natury.</nodes>
+      <outputs name="Wyjdz." ownerID="38" targetID="39" group="G1" fromX="3578" fromY="-1131" />
+      <outputs name="Wyjdz." ownerID="38" targetID="40" group="G1" fromX="3578" fromY="-1211" />Zabijanie prosiat lub matki jest szkodliwe dla stada, wiec odczuwasz ciezar swojego braku szacunku dla natury.</nodes>
     <nodes xsi:type="NodeDealDamage" ID="39" positionX="3685.353" positionY="-539.0975" width="460" height="459" challengeTypeDamage="TypeSpirit" minDamage="20" maxDamage="35" useCountInPercent="true" targetGroup="ppl">
       <logic>
         <FilterBlock>
@@ -835,8 +835,8 @@ To nie jest droga natury, ale dostajesz więcej mięsa i skóry.</nodes>
       </logic>
       <outputs name="Zwiadowca przed nami." ownerID="2" targetID="24" group="G1" fromX="770" fromY="-452" />
       <outputs name="Zwiadowca przed nami." ownerID="2" targetID="4" group="G1" fromX="770" fromY="-532" />
-      <outputs name="Przygotuj się na cokolwiek to jest." ownerID="2" targetID="5" fromX="770" fromY="-612" />
-      <outputs name="Uciekaj." ownerID="2" targetID="3" fromX="770" fromY="-692" />Widzisz ciemną chmurę zbliżającą się z dziwną prędkością.</nodes>
+      <outputs name="Przygotuj sie na cokolwiek to jest." ownerID="2" targetID="5" fromX="770" fromY="-612" />
+      <outputs name="Uciekaj." ownerID="2" targetID="3" fromX="770" fromY="-692" />Widzisz ciemna chmure zblizajaca sie z dziwna predkoscia.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="3" positionX="-20" positionY="-841" width="350" height="455" allPlayersXP="1" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventure" ID="4" positionX="1359.3761" positionY="677.0692" width="350" height="885">
       <logic>
@@ -849,11 +849,11 @@ To nie jest droga natury, ale dostajesz więcej mięsa i skóry.</nodes>
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Atakuj te obrzydliwości!" ownerID="4" targetID="7" fromX="1685" fromY="185" />
-      <outputs name="[Zamieszanie i magia] Jest to perwersja światła i jako taka twoja domena cierpi z powodu napięcia. Ale masz również głębokie wyczucie źródła i możesz próbować walczyć z nim swoim duchem." ownerID="4" targetID="21" group="G1" fromX="1685" fromY="105" />
-      <outputs name="Uciekaj." ownerID="4" targetID="3" fromX="1685" fromY="25" />Zauważasz, że jest to stado wron zmierzających w twoją stronę, ale nie zachowują się naturalnie. 
+      <outputs name="Atakuj te obrzydliwosci!" ownerID="4" targetID="7" fromX="1685" fromY="185" />
+      <outputs name="[Zamieszanie i magia] Jest to perwersja swiatla i jako taka twoja domena cierpi z powodu napiecia. Ale masz rowniez glebokie wyczucie zrodla i mozesz probowac walczyc z nim swoim duchem." ownerID="4" targetID="21" group="G1" fromX="1685" fromY="105" />
+      <outputs name="Uciekaj." ownerID="4" targetID="3" fromX="1685" fromY="25" />Zauwazasz, ze jest to stado wron zmierzajacych w twoja strone, ale nie zachowuja sie naturalnie. 
 
-Nie podążają za prądami wiatru, zamiast poruszać się po niebie jak brzydki młot, ani nie komunikują się ze sobą, zamiast tego latają w niesamowitej ciszy. Ich typowo paciorkowe czarne oczy emitują matową białą poświatę. </nodes>
+Nie podazaja za pradami wiatru, zamiast poruszac sie po niebie jak brzydki mlot, ani nie komunikuja sie ze soba, zamiast tego lataja w niesamowitej ciszy. Ich typowo paciorkowe czarne oczy emituja matowa biala poswiate. </nodes>
     <nodes xsi:type="NodeAdventure" ID="5" positionX="927" positionY="-587" width="350" height="725">
       <logic>
         <ModifierBlock>
@@ -865,11 +865,11 @@ Nie podążają za prądami wiatru, zamiast poruszać się po niebie jak brzydki
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Walcz!" ownerID="5" targetID="6" fromX="1252" fromY="-1078" />Stado wron spada na ciebie, ale nie zachowują się naturalnie. 
+      <outputs name="Walcz!" ownerID="5" targetID="6" fromX="1252" fromY="-1078" />Stado wron spada na ciebie, ale nie zachowuja sie naturalnie. 
 
-Nie podążają za prądami wiatru, zamiast poruszać się po niebie jak brzydki młot, ani nie komunikują się ze sobą, zamiast tego latają w niesamowitej ciszy. Ich typowo paciorkowe czarne oczy emitują matową białą poświatę. 
+Nie podazaja za pradami wiatru, zamiast poruszac sie po niebie jak brzydki mlot, ani nie komunikuja sie ze soba, zamiast tego lataja w niesamowitej ciszy. Ich typowo paciorkowe czarne oczy emituja matowa biala poswiate. 
 
-Czujesz klątwę, którą zabierasz, zanim jeszcze zaatakują.</nodes>
+Czujesz klatwe, ktora zabierasz, zanim jeszcze zaatakuja.</nodes>
     <nodes xsi:type="NodeChallenge" ID="6" positionX="1428.15637" positionY="-732.2353" width="500" height="726" challengeType="TypePhysical" versusGroup="GROUP-CROW_2P_2M_2S" challengeScale="101" challengedList="ppl">
       <outputs name="Win" ownerID="6" targetID="22" fromX="1869" fromY="-1227" />
       <outputs name="Lose" ownerID="6" targetID="11" fromX="1869" fromY="-1307" />
@@ -913,7 +913,7 @@ Czujesz klątwę, którą zabierasz, zanim jeszcze zaatakują.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Uciekaj." ownerID="11" targetID="12" fromX="2771" fromY="-1121" />Ptaki biją cię mocno i zmuszają cię do ucieczki, ale, co dziwne, również ranią twojego ducha. Ciężkie białe światło splątuje twoje dusze i nie odpuszcza łatwo.</nodes>
+      <outputs name="Uciekaj." ownerID="11" targetID="12" fromX="2771" fromY="-1121" />Ptaki bija cie mocno i zmuszaja cie do ucieczki, ale, co dziwne, rowniez rania twojego ducha. Ciezkie biale swiatlo splatuje twoje dusze i nie odpuszcza latwo.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="12" positionX="2857.2002" positionY="-1090.29138" width="350" height="455" allPlayersXP="1" allPlayersRP="1" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventure" ID="16" positionX="3081.874" positionY="-144.786545" width="350" height="725">
       <logic>
@@ -923,9 +923,9 @@ Czujesz klątwę, którą zabierasz, zanim jeszcze zaatakują.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdź." ownerID="16" targetID="25" fromX="3407" fromY="-635" />Jakakolwiek moc utrzymuje te ptaki jest silna i nieubłagana. Pali się głęboko w twojej duszy, starając się oczyścić cię ze wszystkiego, czym jesteś. 
+      <outputs name="Wyjdz." ownerID="16" targetID="25" fromX="3407" fromY="-635" />Jakakolwiek moc utrzymuje te ptaki jest silna i nieublagana. Pali sie gleboko w twojej duszy, starajac sie oczyscic cie ze wszystkiego, czym jestes. 
 
-Uciekasz, ale twój duch cierpi. </nodes>
+Uciekasz, ale twoj duch cierpi. </nodes>
     <nodes xsi:type="NodeAdventure" ID="18" positionX="3052.612" positionY="587.818848" width="350" height="725">
       <logic>
         <ModifierBlock>
@@ -940,7 +940,7 @@ Uciekasz, ale twój duch cierpi. </nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdź." ownerID="18" targetID="10" fromX="3378" fromY="96" />Usuwasz każdą siłę, która trzyma te wrony. Niektóre ptaki padają martwe u twoich stóp, podczas gdy inne odlatują, zmieszane. A niektóre mogą chcieć zostać z tobą.</nodes>
+      <outputs name="Wyjdz." ownerID="18" targetID="10" fromX="3378" fromY="96" />Usuwasz kazda sile, ktora trzyma te wrony. Niektore ptaki padaja martwe u twoich stop, podczas gdy inne odlatuja, zmieszane. A niektore moga chciec zostac z toba.</nodes>
     <nodes xsi:type="NodeChallenge" ID="21" positionX="1819" positionY="620" width="500" height="726" challengeType="TypeSpirit" versusConcept="true" versusGroup="GROUP-CON_S_0P_0M_1S" challengeScale="101" challengedList="ppl">
       <logic>
         <FilterBlock>
@@ -987,7 +987,7 @@ Uciekasz, ale twój duch cierpi. </nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdź." ownerID="22" targetID="10" fromX="2324" fromY="-1722" />Pokonujesz dziwne ptaki, a gdy ich ciała spadają, niektóre z nich wypalają się od wewnątrz, podczas gdy inne, które przetrwały, wyglądają na zmieszanych i oszołomionych. A niektórzy mogą chcieć zostać z tobą. 
+      <outputs name="Wyjdz." ownerID="22" targetID="10" fromX="2324" fromY="-1722" />Pokonujesz dziwne ptaki, a gdy ich ciala spadaja, niektore z nich wypalaja sie od wewnatrz, podczas gdy inne, ktore przetrwaly, wygladaja na zmieszanych i oszolomionych. A niektorzy moga chciec zostac z toba. 
 </nodes>
     <nodes xsi:type="NodeAdventure" ID="23" positionX="2128.40039" positionY="1701.58911" width="350" height="725">
       <logic>
@@ -1003,7 +1003,7 @@ Uciekasz, ale twój duch cierpi. </nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdź." ownerID="23" targetID="10" fromX="2454" fromY="1210" />Pokonujesz dziwne ptaki, a gdy ich ciała spadają, niektóre z nich wypalają się od wewnątrz, podczas gdy inne, które przetrwały, wyglądają na zmieszanych i oszołomionych. A niektórzy mogą chcieć zostać z tobą. 
+      <outputs name="Wyjdz." ownerID="23" targetID="10" fromX="2454" fromY="1210" />Pokonujesz dziwne ptaki, a gdy ich ciala spadaja, niektore z nich wypalaja sie od wewnatrz, podczas gdy inne, ktore przetrwaly, wygladaja na zmieszanych i oszolomionych. A niektorzy moga chciec zostac z toba. 
 </nodes>
     <nodes xsi:type="NodeAdventure" ID="24" positionX="901.752258" positionY="724.395935" width="350" height="966">
       <logic>
@@ -1024,12 +1024,12 @@ Uciekasz, ale twój duch cierpi. </nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Atakuj te obrzydliwości!" ownerID="24" targetID="7" fromX="1227" fromY="233" />
-      <outputs name="[Światło] To jest perwersja twojej domeny. Spróbuj to zwalczyć siłą woli." ownerID="24" targetID="8" group="G1" fromX="1227" fromY="153" />
-      <outputs name="[Zamieszanie i magia] Jest to perwersja światła i jako taka twoja domena cierpi z powodu napięcia. Ale masz również głębokie wyczucie źródła i możesz próbować walczyć z nim swoim duchem." ownerID="24" targetID="21" group="G1" fromX="1227" fromY="72" />
-      <outputs name="Uciekaj." ownerID="24" targetID="3" fromX="1227" fromY="-7" />Zauważasz, że jest to stado wron zmierzających w twoją stronę, ale nie zachowują się naturalnie. 
+      <outputs name="Atakuj te obrzydliwosci!" ownerID="24" targetID="7" fromX="1227" fromY="233" />
+      <outputs name="[Swiatlo] To jest perwersja twojej domeny. Sprobuj to zwalczyc sila woli." ownerID="24" targetID="8" group="G1" fromX="1227" fromY="153" />
+      <outputs name="[Zamieszanie i magia] Jest to perwersja swiatla i jako taka twoja domena cierpi z powodu napiecia. Ale masz rowniez glebokie wyczucie zrodla i mozesz probowac walczyc z nim swoim duchem." ownerID="24" targetID="21" group="G1" fromX="1227" fromY="72" />
+      <outputs name="Uciekaj." ownerID="24" targetID="3" fromX="1227" fromY="-7" />Zauwazasz, ze jest to stado wron zmierzajacych w twoja strone, ale nie zachowuja sie naturalnie. 
 
-Nie podążają za prądami wiatru, zamiast poruszać się po niebie jak brzydki młot, ani nie komunikują się ze sobą, zamiast tego latają w niesamowitej ciszy. Ich typowo paciorkowe czarne oczy emitują matową białą poświatę. Czujesz dziwne uczucie pieczenia w swojej domenie, nienaturalne przyciąganie ku światłu.</nodes>
+Nie podazaja za pradami wiatru, zamiast poruszac sie po niebie jak brzydki mlot, ani nie komunikuja sie ze soba, zamiast tego lataja w niesamowitej ciszy. Ich typowo paciorkowe czarne oczy emituja matowa biala poswiate. Czujesz dziwne uczucie pieczenia w swojej domenie, nienaturalne przyciaganie ku swiatlu.</nodes>
     <nodes xsi:type="NodeDealDamage" ID="25" positionX="3518.97827" positionY="-272.373627" width="460" height="459" challengeTypeDamage="TypeSpirit" minDamage="20" maxDamage="30" useCountInPercent="true" targetGroup="ppl">
       <outputs ownerID="25" targetID="12" fromX="3948" fromY="-660" />
     </nodes>
@@ -1047,10 +1047,10 @@ Nie podążają za prądami wiatru, zamiast poruszać się po niebie jak brzydki
         </FilterBlock>
       </logic>
       <outputs name="Atak!" ownerID="2" targetID="3" fromX="730" fromY="-466" />
-      <outputs name="Wyślij koty i psy, aby poradziły sobie z tą uciążliwością. " ownerID="2" targetID="23" fromX="730" fromY="-547" />
-      <outputs name="[Mądrość] Znasz sztuczkę lub dwie, jeśli chodzi o szczury. Gonią ich." ownerID="2" targetID="8" fromX="730" fromY="-627" />
-      <outputs name="[Szczur] Powiedz swojemu koledze robactwo, że jesteś tu tylko po to, by się przywitać i zostawić je." ownerID="2" targetID="22" fromX="730" fromY="-707" />
-      <outputs name="Spróbuj szybko się wspiąć." ownerID="2" targetID="4" fromX="730" fromY="-787" />Wpadasz do podziemnego tunelu i zdajesz sobie sprawę, że to gniazdo pełne kości, odchodów i szczurów, mnóstwo szczurów.</nodes>
+      <outputs name="Wyslij koty i psy, aby poradzily sobie z ta uciazliwoscia. " ownerID="2" targetID="23" fromX="730" fromY="-547" />
+      <outputs name="[Madrosc] Znasz sztuczke lub dwie, jesli chodzi o szczury. Gonia ich." ownerID="2" targetID="8" fromX="730" fromY="-627" />
+      <outputs name="[Szczur] Powiedz swojemu koledze robactwo, ze jestes tu tylko po to, by sie przywitac i zostawic je." ownerID="2" targetID="22" fromX="730" fromY="-707" />
+      <outputs name="Sprobuj szybko sie wspiac." ownerID="2" targetID="4" fromX="730" fromY="-787" />Wpadasz do podziemnego tunelu i zdajesz sobie sprawe, ze to gniazdo pelne kosci, odchodow i szczurow, mnostwo szczurow.</nodes>
     <nodes xsi:type="NodeChallenge" ID="3" positionX="813" positionY="637" width="500" height="726" challengeType="TypePhysical" versusGroup="GROUP-RATS_1P_1M_1S" challengeScale="101" challengedList="ppl">
       <outputs name="Win" ownerID="3" targetID="12" fromX="1254" fromY="141" />
       <outputs name="Lose" ownerID="3" targetID="18" fromX="1254" fromY="61" />
@@ -1072,9 +1072,9 @@ Nie podążają za prądami wiatru, zamiast poruszać się po niebie jak brzydki
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Zbierz co możesz i wyjdź." ownerID="8" targetID="26" fromX="1174" fromY="-1412" />Bez względu na to, czy używasz fletu grającego właściwą melodię, czy cichego szeptu zwierzęcego języka, gonisz robactwo. 
+      <outputs name="Zbierz co mozesz i wyjdz." ownerID="8" targetID="26" fromX="1174" fromY="-1412" />Bez wzgledu na to, czy uzywasz fletu grajacego wlasciwa melodie, czy cichego szeptu zwierzecego jezyka, gonisz robactwo. 
 
-Znajdziesz też szczątki samotnego poszukiwacza przygód trzymającego flet. Najwyraźniej nie znał swoich szczurzych melodii.</nodes>
+Znajdziesz tez szczatki samotnego poszukiwacza przygod trzymajacego flet. Najwyrazniej nie znal swoich szczurzych melodii.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="9" positionX="2871" positionY="-2030" width="350" height="455" allPlayersXP="2" allPlayersRP="1" linkedEventUniqueID="0">
       <logic>
         <ModifierBlock>
@@ -1101,7 +1101,7 @@ Znajdziesz też szczątki samotnego poszukiwacza przygód trzymającego flet. Na
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdź." ownerID="12" targetID="25" fromX="1708" fromY="407" />Wyczyść to gniazdo i znajdź szczątki samotnego poszukiwacza przygód trzymającego flet. Najwyraźniej nie znał swoich szczurzych melodii.</nodes>
+      <outputs name="Wyjdz." ownerID="12" targetID="25" fromX="1708" fromY="407" />Wyczysc to gniazdo i znajdz szczatki samotnego poszukiwacza przygod trzymajacego flet. Najwyrazniej nie znal swoich szczurzych melodii.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="13" positionX="3415.65723" positionY="-1011.07654" width="350" height="455" allPlayersXP="2" allPlayersRP="1" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventureEnd" ID="15" positionX="2359" positionY="-653" width="350" height="455" allPlayersXP="2" allPlayersRP="1" linkedEventUniqueID="0">
       <logic>
@@ -1126,7 +1126,7 @@ Znajdziesz też szczątki samotnego poszukiwacza przygód trzymającego flet. Na
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdź." ownerID="18" targetID="19" fromX="2258" fromY="-268" />Szczury roi się od ciebie i zmusza cię do ucieczki.  Po drodze masz kilka zainfekowanych ukąszeń.</nodes>
+      <outputs name="Wyjdz." ownerID="18" targetID="19" fromX="2258" fromY="-268" />Szczury roi sie od ciebie i zmusza cie do ucieczki.  Po drodze masz kilka zainfekowanych ukaszen.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="19" positionX="2377.38062" positionY="145.289352" width="350" height="455" allPlayersXP="1" allPlayersRP="1" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventureEnd" ID="20" positionX="2458" positionY="-1915" width="350" height="455" allPlayersXP="2" allPlayersRP="1" linkedEventUniqueID="0">
       <logic>
@@ -1164,9 +1164,9 @@ Znajdziesz też szczątki samotnego poszukiwacza przygód trzymającego flet. Na
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Spróbuj go trenować." ownerID="21" targetID="20" group="G1" fromX="2236" fromY="-2283" />
-      <outputs name="Spróbuj go trenować." ownerID="21" targetID="9" group="G1" fromX="2236" fromY="-2363" />
-      <outputs name="Zabij go i wyjdź." ownerID="21" targetID="13" fromX="2236" fromY="-2443" />Zauważyłeś, że młody szczur został w pobliżu i unosi się w pobliżu. Być może można go wyszkolić, ale może to być także wściekłość, a ty zachorujesz.</nodes>
+      <outputs name="Sprobuj go trenowac." ownerID="21" targetID="20" group="G1" fromX="2236" fromY="-2283" />
+      <outputs name="Sprobuj go trenowac." ownerID="21" targetID="9" group="G1" fromX="2236" fromY="-2363" />
+      <outputs name="Zabij go i wyjdz." ownerID="21" targetID="13" fromX="2236" fromY="-2443" />Zauwazyles, ze mlody szczur zostal w poblizu i unosi sie w poblizu. Byc moze mozna go wyszkolic, ale moze to byc takze wscieklosc, a ty zachorujesz.</nodes>
     <nodes xsi:type="NodeAdventure" ID="22" positionX="296" positionY="-1063" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -1186,7 +1186,7 @@ Znajdziesz też szczątki samotnego poszukiwacza przygód trzymającego flet. Na
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdź." ownerID="22" targetID="13" fromX="621" fromY="-1554" />Szczury kiwają głową i pozwalają ci odejść bez problemów. Dostajesz nawet od nich prezent. </nodes>
+      <outputs name="Wyjdz." ownerID="22" targetID="13" fromX="621" fromY="-1554" />Szczury kiwaja glowa i pozwalaja ci odejsc bez problemow. Dostajesz nawet od nich prezent. </nodes>
     <nodes xsi:type="NodeAdventure" ID="23" positionX="827.609" positionY="-124.351532" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -1204,7 +1204,7 @@ Znajdziesz też szczątki samotnego poszukiwacza przygód trzymającego flet. Na
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Zbierz, co możesz, i wespnij się z powrotem." ownerID="23" targetID="24" fromX="1153" fromY="-615" />Twoje zwierzęta wchodzą i robią swoje interesy, oczyszczając gniazdo robactwa. </nodes>
+      <outputs name="Zbierz, co mozesz, i wespnij sie z powrotem." ownerID="23" targetID="24" fromX="1153" fromY="-615" />Twoje zwierzeta wchodza i robia swoje interesy, oczyszczajac gniazdo robactwa. </nodes>
     <nodes xsi:type="NodeProduceDrop" ID="24" positionX="1211.37183" positionY="-169.499771" width="460" height="429" sourceGroup="GROUP-RATS_1P_1M_1S" dropPercentage="100" targetGroup="ppl">
       <outputs ownerID="24" targetID="13" fromX="1641" fromY="-527" />
     </nodes>
@@ -1228,11 +1228,11 @@ Znajdziesz też szczątki samotnego poszukiwacza przygód trzymającego flet. Na
           </LogicFilter>
         </FilterBlock>
       </logic>
-      <outputs name="[Pszczoła] Żądaj, żeby mi dano ci teraz." ownerID="2" targetID="3" fromX="746" fromY="-524" />
-      <outputs name="[Druid] Zapytaj pszczoły o przyjemność ich miodu. " ownerID="2" targetID="4" fromX="746" fromY="-604" />
+      <outputs name="[Pszczola] Zadaj, zeby mi dano ci teraz." ownerID="2" targetID="3" fromX="746" fromY="-524" />
+      <outputs name="[Druid] Zapytaj pszczoly o przyjemnosc ich miodu. " ownerID="2" targetID="4" fromX="746" fromY="-604" />
       <outputs name="Atak!" ownerID="2" targetID="5" fromX="746" fromY="-684" />
-      <outputs name="[Łowcy i zbieracze] Wiesz, jak wypalić te żądła, abyś mógł ograbić ul." ownerID="2" targetID="8" fromX="746" fromY="-764" />
-      <outputs name="Idź dookoła ula i wyjdź." ownerID="2" targetID="7" fromX="746" fromY="-844" />Kiedy przechodzisz przez równiny, dostrzegasz zatłoczony ul pełen miodu i nektaru. Może być bardzo pożywny, może nawet leczyć niektóre rany. </nodes>
+      <outputs name="[Lowcy i zbieracze] Wiesz, jak wypalic te zadla, abys mogl ograbic ul." ownerID="2" targetID="8" fromX="746" fromY="-764" />
+      <outputs name="Idz dookola ula i wyjdz." ownerID="2" targetID="7" fromX="746" fromY="-844" />Kiedy przechodzisz przez rowniny, dostrzegasz zatloczony ul pelen miodu i nektaru. Moze byc bardzo pozywny, moze nawet leczyc niektore rany. </nodes>
     <nodes xsi:type="NodeAdventure" ID="3" positionX="465.685181" positionY="899.1871" width="350" height="885">
       <logic>
         <FilterBlock>
@@ -1244,11 +1244,11 @@ Znajdziesz też szczątki samotnego poszukiwacza przygód trzymającego flet. Na
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Zaakceptuj jej wyzwanie, pszczoła, pszczoła. [Tylko królowa pszczół]" ownerID="3" targetID="28" fromX="791" fromY="408" />
-      <outputs name="Wypij nektar i miód. " ownerID="3" targetID="22" group="G1" fromX="791" fromY="327" />
-      <outputs name="Wypij nektar i miód. " ownerID="3" targetID="23" group="G1" fromX="791" fromY="247" />Pszczoły wycofują się i pozwalają ci wziąć udział w łupach. 
+      <outputs name="Zaakceptuj jej wyzwanie, pszczola, pszczola. [Tylko krolowa pszczol]" ownerID="3" targetID="28" fromX="791" fromY="408" />
+      <outputs name="Wypij nektar i miod. " ownerID="3" targetID="22" group="G1" fromX="791" fromY="327" />
+      <outputs name="Wypij nektar i miod. " ownerID="3" targetID="23" group="G1" fromX="791" fromY="247" />Pszczoly wycofuja sie i pozwalaja ci wziac udzial w lupach. 
 
-Inna młodsza pszczoła, być może królowa, obserwuje cię z iskrą wyzwania w oczach.</nodes>
+Inna mlodsza pszczola, byc moze krolowa, obserwuje cie z iskra wyzwania w oczach.</nodes>
     <nodes xsi:type="NodeAdventure" ID="4" positionX="1255.07349" positionY="20.2837219" width="350" height="885">
       <logic>
         <FilterBlock>
@@ -1260,9 +1260,9 @@ Inna młodsza pszczoła, być może królowa, obserwuje cię z iskrą wyzwania w
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Wypij nektar i miód. " ownerID="4" targetID="31" group="G1" fromX="1580" fromY="-470" />
-      <outputs name="Wypij nektar i miód. " ownerID="4" targetID="23" group="G1" fromX="1580" fromY="-551" />
-      <outputs name="Gdy pszczoły opuszczają straż, możesz wykonać rytuał, który oszołomi żądłami i pozwoli ci odpowiednio obrabować ich rój." ownerID="4" targetID="11" fromX="1580" fromY="-631" />Pszczoły brzęczą wokół ciebie, jak gdyby oceniając szczerość twoich słów, i niektóre żądły. Ale kiedy widzą, że zachowujesz spokój, pozwalają ci wypróbować swoje towary.</nodes>
+      <outputs name="Wypij nektar i miod. " ownerID="4" targetID="31" group="G1" fromX="1580" fromY="-470" />
+      <outputs name="Wypij nektar i miod. " ownerID="4" targetID="23" group="G1" fromX="1580" fromY="-551" />
+      <outputs name="Gdy pszczoly opuszczaja straz, mozesz wykonac rytual, ktory oszolomi zadlami i pozwoli ci odpowiednio obrabowac ich roj." ownerID="4" targetID="11" fromX="1580" fromY="-631" />Pszczoly brzecza wokol ciebie, jak gdyby oceniajac szczerosc twoich slow, i niektore zadly. Ale kiedy widza, ze zachowujesz spokoj, pozwalaja ci wyprobowac swoje towary.</nodes>
     <nodes xsi:type="NodeChallenge" ID="5" positionX="1750.13086" positionY="-979.991943" width="500" height="726" challengeType="TypePhysical" versusGroup="GROUP-BEES_1P_1M_0S" challengeScale="101" challengedList="ppl">
       <outputs name="Win" ownerID="5" targetID="33" fromX="2191" fromY="-1475" />
       <outputs name="Lose" ownerID="5" targetID="35" fromX="2191" fromY="-1555" />
@@ -1286,9 +1286,9 @@ Inna młodsza pszczoła, być może królowa, obserwuje cię z iskrą wyzwania w
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Ustaw pułapkę." ownerID="8" targetID="12" fromX="1394" fromY="-1420" />
-      <outputs name="Właściwie po prostu zaatakuj!" ownerID="8" targetID="5" fromX="1394" fromY="-1500" />
-      <outputs name="Wyjdź." ownerID="8" targetID="7" fromX="1394" fromY="-1580" />Ustawiłeś pułapkę i rozpaliłeś ogień, aby stworzyć dym. Teraz musisz tylko ustalić właściwy kierunek wiatru i czas, aby wytrącić pułapkę.</nodes>
+      <outputs name="Ustaw pulapke." ownerID="8" targetID="12" fromX="1394" fromY="-1420" />
+      <outputs name="Wlasciwie po prostu zaatakuj!" ownerID="8" targetID="5" fromX="1394" fromY="-1500" />
+      <outputs name="Wyjdz." ownerID="8" targetID="7" fromX="1394" fromY="-1580" />Ustawiles pulapke i rozpaliles ogien, aby stworzyc dym. Teraz musisz tylko ustalic wlasciwy kierunek wiatru i czas, aby wytracic pulapke.</nodes>
     <nodes xsi:type="NodeChallenge" ID="11" positionX="2339.64941" positionY="-372.161438" width="500" height="726" challengeType="TypeSpirit" versusConcept="true" versusGroup="GROUP-CON_S_0P_0M_2S" challengeScale="101" challengedList="ppl">
       <logic>
         <FilterBlock>
@@ -1317,9 +1317,9 @@ Inna młodsza pszczoła, być może królowa, obserwuje cię z iskrą wyzwania w
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wypij nektar i miód. " ownerID="13" targetID="23" fromX="3833" fromY="-1301" />Jako druid czujesz się brudny za zdradzenie swojej natury. 
+      <outputs name="Wypij nektar i miod. " ownerID="13" targetID="23" fromX="3833" fromY="-1301" />Jako druid czujesz sie brudny za zdradzenie swojej natury. 
 
-Mimo to to właśnie dostajesz za powiązanie z czarownicą. Teraz ula jest otwarta na grabieże i odkrywasz, że pszczoły zgromadziły tu bursztyn. </nodes>
+Mimo to to wlasnie dostajesz za powiazanie z czarownica. Teraz ula jest otwarta na grabieze i odkrywasz, ze pszczoly zgromadzily tu bursztyn. </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="20" positionX="3344.88037" positionY="-2374.82617" width="350" height="455" allPlayersXP="1" allPlayersRP="1" linkedEventUniqueID="0">
       <logic>
         <ModifierBlock>
@@ -1389,7 +1389,7 @@ Mimo to to właśnie dostajesz za powiązanie z czarownicą. Teraz ula jest otwa
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Zaakceptuj i odejdź." ownerID="29" targetID="23" fromX="2132" fromY="1006" />Pomimo tego, że jest to niesprawiedliwy pojedynek, wiesz, że droga twoich krewnych jest taka. Wygrałeś, więc honorują cię i dają ci prezenty.</nodes>
+      <outputs name="Zaakceptuj i odejdz." ownerID="29" targetID="23" fromX="2132" fromY="1006" />Pomimo tego, ze jest to niesprawiedliwy pojedynek, wiesz, ze droga twoich krewnych jest taka. Wygrales, wiec honoruja cie i daja ci prezenty.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="31" positionX="1823.582" positionY="-4.35754" width="350" height="455" allPlayersXP="2" allPlayersRP="1" linkedEventUniqueID="0">
       <logic>
         <FilterBlock>
@@ -1440,12 +1440,12 @@ Mimo to to właśnie dostajesz za powiązanie z czarownicą. Teraz ula jest otwa
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wypij nektar i miód. " ownerID="33" targetID="23" group="G1" fromX="3949" fromY="-2054" />Teraz ul jest otwarty do grabieży. Nektar miodowy leczy twoje rany, a ty odkrywasz, że pszczoły zgromadziły tu bursztyn. </nodes>
+      <outputs name="Wypij nektar i miod. " ownerID="33" targetID="23" group="G1" fromX="3949" fromY="-2054" />Teraz ul jest otwarty do grabiezy. Nektar miodowy leczy twoje rany, a ty odkrywasz, ze pszczoly zgromadzily tu bursztyn. </nodes>
     <nodes xsi:type="NodeDealDamage" ID="34" positionX="2482.54688" positionY="-1303.52429" width="460" height="459" challengeTypeDamage="TypeMental" minDamage="20" maxDamage="25" useCountInPercent="true" targetGroup="ppl">
       <outputs ownerID="34" targetID="35" fromX="2911" fromY="-1691" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="35" positionX="2786" positionY="-2009" width="350" height="725">
-      <outputs name="Wyjdź." ownerID="35" targetID="20" fromX="3111" fromY="-2500" />Pszczoły wpadają w szał i bardzo cię żądlą. Ciężka choroba utrzymuje się, gdy uciekasz.</nodes>
+      <outputs name="Wyjdz." ownerID="35" targetID="20" fromX="3111" fromY="-2500" />Pszczoly wpadaja w szal i bardzo cie zadla. Ciezka choroba utrzymuje sie, gdy uciekasz.</nodes>
   </Adventure>
   <Adventure name="Night bat atack" uniqueID="8" typeGeneric="false" typePerGroupGeneric="false" typeInterrupt="false" typeExpedition="true" typeVillage="false" difficulty="1" nodeIdMax="23" joinIsForced="false" joinType="AllAlly" joinRange="MovementArea">
     <nodes xsi:type="NodeStarting" ID="1" positionX="10" positionY="-10" width="347" height="825" image="Event178">
@@ -1466,12 +1466,12 @@ Mimo to to właśnie dostajesz za powiązanie z czarownicą. Teraz ula jest otwa
           </LogicFilter>
         </FilterBlock>
       </logic>
-      <outputs name="[Zamieszanie] Nagły przypływ podniecenia zasila Twoją domenę i sprawia, że twoje serce bije szybciej. Atak!" ownerID="2" targetID="5" group="G1" fromX="766" fromY="-612" />
-      <outputs name="[Nocny demon] Żądaj posłuszeństwa od latających gryzoni!" ownerID="2" targetID="14" fromX="766" fromY="-692" />
-      <outputs name="[Postrzeganie] Nie ruszaj się i pozwól im latać obok siebie, nawet jeśli oznacza to wykonanie kilku zadrapań. Spróbuj dostrzec dokładnie skąd pochodzą." ownerID="2" targetID="20" fromX="766" fromY="-773" />
+      <outputs name="[Zamieszanie] Nagly przyplyw podniecenia zasila Twoja domene i sprawia, ze twoje serce bije szybciej. Atak!" ownerID="2" targetID="5" group="G1" fromX="766" fromY="-612" />
+      <outputs name="[Nocny demon] Zadaj posluszenstwa od latajacych gryzoni!" ownerID="2" targetID="14" fromX="766" fromY="-692" />
+      <outputs name="[Postrzeganie] Nie ruszaj sie i pozwol im latac obok siebie, nawet jesli oznacza to wykonanie kilku zadrapan. Sprobuj dostrzec dokladnie skad pochodza." ownerID="2" targetID="20" fromX="766" fromY="-773" />
       <outputs name="Walcz!" ownerID="2" targetID="6" group="G1" fromX="766" fromY="-853" />
       <outputs name="Uciekaj!" ownerID="2" targetID="13" group="G2" fromX="766" fromY="-933" />
-      <outputs name="Uciekaj!" ownerID="2" targetID="4" group="G2" fromX="766" fromY="-1013" />Rój nietoperzy spada na ciebie znikąd!</nodes>
+      <outputs name="Uciekaj!" ownerID="2" targetID="4" group="G2" fromX="766" fromY="-1013" />Roj nietoperzy spada na ciebie znikad!</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="4" positionX="-63" positionY="-784" width="350" height="455" allPlayersXP="1" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeChallenge" ID="5" positionX="1359.12207" positionY="539.77" width="500" height="726" challengeType="TypePhysical" versusGroup="GROUP-BATS_1P_1M_2S" challengeScale="101" challengedList="ppl">
       <logic>
@@ -1512,11 +1512,11 @@ Mimo to to właśnie dostajesz za powiązanie z czarownicą. Teraz ula jest otwa
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdź." ownerID="7" targetID="8" fromX="2735" fromY="-2010" />Nietoperze roiją się i żywią się twoją krwią, pozostawiając niektórych z was chorych. </nodes>
+      <outputs name="Wyjdz." ownerID="7" targetID="8" fromX="2735" fromY="-2010" />Nietoperze roija sie i zywia sie twoja krwia, pozostawiajac niektorych z was chorych. </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="8" positionX="2839.557" positionY="-1547.56519" width="350" height="408" allPlayersXP="1" allPlayersRP="1" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventure" ID="9" positionX="2590.80981" positionY="-485.32077" width="350" height="805">
-      <outputs name="[Postrzeganie] Badasz miejsce, z którego pochodzą nietoperze." ownerID="9" targetID="21" fromX="2916" fromY="-976" />
-      <outputs name="Wyjdź." ownerID="9" targetID="10" fromX="2916" fromY="-1056" />Zabijasz nietoperze bez większych problemów.</nodes>
+      <outputs name="[Postrzeganie] Badasz miejsce, z ktorego pochodza nietoperze." ownerID="9" targetID="21" fromX="2916" fromY="-976" />
+      <outputs name="Wyjdz." ownerID="9" targetID="10" fromX="2916" fromY="-1056" />Zabijasz nietoperze bez wiekszych problemow.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="10" positionX="3013.17676" positionY="-1077.2887" width="350" height="408" allPlayersXP="3" allPlayersRP="1" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeDealDamage" ID="13" positionX="-8.298019" positionY="-1335.44226" width="460" height="459" challengeTypeDamage="TypePhysical" minDamage="4" maxDamage="6" useCountInPercent="false" targetGroup="50">
       <logic>
@@ -1548,7 +1548,7 @@ Mimo to to właśnie dostajesz za powiązanie z czarownicą. Teraz ula jest otwa
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="15" positionX="1471.5697" positionY="-973.8565" width="350" height="805">
       <outputs name="Zbadaj." ownerID="15" targetID="16" group="G1" fromX="1797" fromY="-1465" />
-      <outputs name="Zbadaj." ownerID="15" targetID="17" group="G1" fromX="1797" fromY="-1545" />Nietoperze przelatują obok ciebie, zostawiając kilka zadrapań, a ty widzisz małe, ukryte wejście do jaskini.</nodes>
+      <outputs name="Zbadaj." ownerID="15" targetID="17" group="G1" fromX="1797" fromY="-1545" />Nietoperze przelatuja obok ciebie, zostawiajac kilka zadrapan, a ty widzisz male, ukryte wejscie do jaskini.</nodes>
     <nodes xsi:type="NodeAdventure" ID="16" positionX="1918.30237" positionY="-1567.91577" width="350" height="805">
       <logic>
         <FilterBlock>
@@ -1558,7 +1558,7 @@ Mimo to to właśnie dostajesz za powiązanie z czarownicą. Teraz ula jest otwa
         </FilterBlock>
       </logic>
       <outputs name="Atak!" ownerID="16" targetID="18" fromX="2244" fromY="-2059" />
-      <outputs name="Wyjdź." ownerID="16" targetID="8" fromX="2244" fromY="-2139" />Ostrożnie wślizgujesz się i odkrywasz wściekłego niedźwiedzia szalejącego w środku. Przylegająca broń jest umieszczona w jej boku, ale rana jest stara i prawdopodobnie nie spowolni jej ataku.</nodes>
+      <outputs name="Wyjdz." ownerID="16" targetID="8" fromX="2244" fromY="-2139" />Ostroznie wslizgujesz sie i odkrywasz wscieklego niedzwiedzia szalejacego w srodku. Przylegajaca bron jest umieszczona w jej boku, ale rana jest stara i prawdopodobnie nie spowolni jej ataku.</nodes>
     <nodes xsi:type="NodeAdventure" ID="17" positionX="1397" positionY="-1819" width="350" height="725">
       <logic>
         <ModifierBlock>
@@ -1567,7 +1567,7 @@ Mimo to to właśnie dostajesz za powiązanie z czarownicą. Teraz ula jest otwa
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Zbierz co możesz i wyjdź." ownerID="17" targetID="10" fromX="1722" fromY="-2310" />Znajdujesz jaskinię pustą, chociaż są oznaki czegoś wielkiego przechodzącego przez nią - prawdopodobnie to, co przeraziło nietoperze. 
+      <outputs name="Zbierz co mozesz i wyjdz." ownerID="17" targetID="10" fromX="1722" fromY="-2310" />Znajdujesz jaskinie pusta, chociaz sa oznaki czegos wielkiego przechodzacego przez nia - prawdopodobnie to, co przerazilo nietoperze. 
 
 Znajdujesz zapas dobrego kamienia.</nodes>
     <nodes xsi:type="NodeChallenge" ID="18" positionX="2336" positionY="-2289" width="500" height="726" challengeType="TypePhysical" versusGroup="GROUP-RABIT_BEAR_ONE_2P_0M_0S" challengeScale="101" challengedList="ppl">
@@ -1583,7 +1583,7 @@ Znajdujesz zapas dobrego kamienia.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdź." ownerID="19" targetID="10" fromX="3333" fromY="-2698" />Niedźwiedź jest martwy, a ty możesz odebrać broń złożoną po jego stronie.</nodes>
+      <outputs name="Wyjdz." ownerID="19" targetID="10" fromX="3333" fromY="-2698" />Niedzwiedz jest martwy, a ty mozesz odebrac bron zlozona po jego stronie.</nodes>
     <nodes xsi:type="NodeDealDamage" ID="20" positionX="897" positionY="-1391" width="460" height="459" challengeTypeDamage="TypePhysical" minDamage="2" maxDamage="5" useCountInPercent="false" targetGroup="ppl">
       <logic>
         <FilterBlock>
@@ -1615,7 +1615,7 @@ Znajdujesz zapas dobrego kamienia.</nodes>
         </FilterBlock>
       </logic>
       <outputs name="Zbadaj." ownerID="21" targetID="16" group="G1" fromX="2740" fromY="241" />
-      <outputs name="Zbadaj." ownerID="21" targetID="17" group="G1" fromX="2740" fromY="161" />Widzisz małe, ukryte wejście do jaskini.</nodes>
+      <outputs name="Zbadaj." ownerID="21" targetID="17" group="G1" fromX="2740" fromY="161" />Widzisz male, ukryte wejscie do jaskini.</nodes>
     <nodes xsi:type="NodeAdventure" ID="22" positionX="2124.71313" positionY="-646.7356" width="350" height="805">
       <logic>
         <ModifierBlock>
@@ -1624,8 +1624,8 @@ Znajdujesz zapas dobrego kamienia.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="[Postrzeganie] Badasz miejsce, z którego pochodzą nietoperze." ownerID="22" targetID="21" fromX="2450" fromY="-1137" />
-      <outputs name="Wyjdź." ownerID="22" targetID="10" fromX="2450" fromY="-1218" />Nietoperze są posłuszne twojemu nocnemu wezwaniu i oddalają się.</nodes>
+      <outputs name="[Postrzeganie] Badasz miejsce, z ktorego pochodza nietoperze." ownerID="22" targetID="21" fromX="2450" fromY="-1137" />
+      <outputs name="Wyjdz." ownerID="22" targetID="10" fromX="2450" fromY="-1218" />Nietoperze sa posluszne twojemu nocnemu wezwaniu i oddalaja sie.</nodes>
     <nodes xsi:type="NodeDealDamage" ID="23" positionX="1462" positionY="-435" width="460" height="459" challengeTypeDamage="TypeMental" minDamage="10" maxDamage="30" useCountInPercent="true" targetGroup="ppl">
       <outputs ownerID="23" targetID="7" fromX="1891" fromY="-823" />
     </nodes>
@@ -1635,9 +1635,9 @@ Znajdujesz zapas dobrego kamienia.</nodes>
       <outputs ownerID="1" targetID="2" fromX="334" fromY="-777" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="2" positionX="554" positionY="-114" width="350" height="885">
-      <outputs name="Zobacz, co się dzieje." ownerID="2" targetID="8" group="G1" fromX="879" fromY="-605" />
-      <outputs name="Zobacz, co się dzieje." ownerID="2" targetID="10" group="G1" fromX="879" fromY="-685" />
-      <outputs name="Zobacz, co się dzieje." ownerID="2" targetID="6" group="G1" fromX="879" fromY="-765" />Twoja podróż została przerwana.</nodes>
+      <outputs name="Zobacz, co sie dzieje." ownerID="2" targetID="8" group="G1" fromX="879" fromY="-605" />
+      <outputs name="Zobacz, co sie dzieje." ownerID="2" targetID="10" group="G1" fromX="879" fromY="-685" />
+      <outputs name="Zobacz, co sie dzieje." ownerID="2" targetID="6" group="G1" fromX="879" fromY="-765" />Twoja podroz zostala przerwana.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="6" positionX="1022" positionY="-893" width="350" height="455" linkedEventUniqueID="6" />
     <nodes xsi:type="NodeAdventureEnd" ID="8" positionX="1051" positionY="-217" width="350" height="455" linkedEventUniqueID="7">
       <logic>

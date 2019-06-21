@@ -54,7 +54,7 @@
       <outputs name="Handel." ownerID="2" targetID="7" group="G1" fromX="804" fromY="-621" />
       <outputs name="Handel." ownerID="2" targetID="5" group="G1" fromX="804" fromY="-702" />
       <outputs name="Handel." ownerID="2" targetID="3" group="G1" fromX="804" fromY="-782" />
-      <outputs name="Wracaj innym razem." ownerID="2" targetID="6" fromX="804" fromY="-862" />Demony lesne wydobywaja rózne przedmioty, które „nabyli” od tych, którzy wkraczaja na ich ziemie.</nodes>
+      <outputs name="Wracaj innym razem." ownerID="2" targetID="6" fromX="804" fromY="-862" />Demony lesne wydobywaja rozne przedmioty, ktore „nabyli” od tych, ktorzy wkraczaja na ich ziemie.</nodes>
     <nodes xsi:type="NodeTrade" ID="3" positionX="1021.18225" positionY="131.77655" width="460" height="479" traderProfile="TRADER-FOREST_DEMONS_LARGE" playerInventory="sell">
       <outputs name="Confirm" ownerID="3" targetID="6" fromX="1451" fromY="-196" />
       <outputs name="Cancel" ownerID="3" targetID="11" fromX="1451" fromY="-276" />
@@ -97,7 +97,7 @@
         </FilterBlock>
       </logic>
       <outputs name="Handel." ownerID="7" targetID="4" fromX="1445" fromY="-908" />
-      <outputs name="Wracaj innym razem." ownerID="7" targetID="6" fromX="1445" fromY="-989" />„Nie jestescie naszymi przyjaciólmi, nie lubimy tej wymiany, wiec dacie wiecej.'</nodes>
+      <outputs name="Wracaj innym razem." ownerID="7" targetID="6" fromX="1445" fromY="-989" />„Nie jestescie naszymi przyjaciolmi, nie lubimy tej wymiany, wiec dacie wiecej.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="11" positionX="1677.34949" positionY="245.258484" width="350" height="725" image="Event247">
       <outputs name="Wyjdz." ownerID="11" targetID="6" fromX="2003" fromY="-245" />„Teraz zacznij od naszej ziemi.'</nodes>
   </Adventure>
@@ -130,10 +130,10 @@
         </FilterBlock>
       </logic>
       <outputs name="[Drewno, madrosc lub przyjaciel] Zaoferuj straznikom lesnym danine, aby zlagodzic ich gniew." ownerID="2" targetID="7" fromX="859" fromY="-1064" />
-      <outputs name="Zapytaj, czy mozesz w czyms pomóc?" ownerID="2" targetID="5" fromX="859" fromY="-1144" />
+      <outputs name="Zapytaj, czy mozesz w czyms pomoc?" ownerID="2" targetID="5" fromX="859" fromY="-1144" />
       <outputs name="Wyjdz." ownerID="2" targetID="25" fromX="859" fromY="-1224" />Wchodzisz na terytorium zadeklarowane przez demony lesne. Czujesz na sobie wiele oczu. 
 
-- Co cie tu szuka, nieznajomy? Nie lubimy czajacych sie tu osób z zewnatrz.'</nodes>
+- Co cie tu szuka, nieznajomy? Nie lubimy czajacych sie tu osob z zewnatrz.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="3" positionX="541" positionY="517" width="350" height="885">
       <logic>
         <FilterBlock>
@@ -215,7 +215,7 @@
       <outputs name="Atak!" ownerID="6" targetID="26" group="G1" fromX="2354" fromY="-776" />
       <outputs name="Atak!" ownerID="6" targetID="35" group="G1" fromX="2354" fromY="-856" />Im dluzej tu bedziesz, tym bardziej poczujesz ciezkie zniwo lasu na twoim morale. 
 
-„Ty, ty i twój rodzaj, zawsze przychodzicie z brudnymi toporami, zawsze palcie i tniecie! Zacznijcie i niech wasze ciala gnija.'</nodes>
+„Ty, ty i twoj rodzaj, zawsze przychodzicie z brudnymi toporami, zawsze palcie i tniecie! Zacznijcie i niech wasze ciala gnija.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="7" positionX="953" positionY="-1557" width="350" height="1126">
       <logic>
         <FilterBlock>
@@ -263,8 +263,8 @@
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Ofiarowanie zywnosci, wykonane z wlasnych, gotowanych produktów. " ownerID="7" targetID="8" fromX="1278" fromY="-2048" />
-      <outputs name="Ofiarowanie zwierzat domowych, w zamian za jakakolwiek zwierzyne, na która polowales lub na która polujesz." ownerID="7" targetID="9" fromX="1278" fromY="-2128" />
+      <outputs name="Ofiarowanie zywnosci, wykonane z wlasnych, gotowanych produktow. " ownerID="7" targetID="8" fromX="1278" fromY="-2048" />
+      <outputs name="Ofiarowanie zwierzat domowych, w zamian za jakakolwiek zwierzyne, na ktora polowales lub na ktora polujesz." ownerID="7" targetID="9" fromX="1278" fromY="-2128" />
       <outputs name="Osie, aby pokazac, ze nie chcesz zbezczescic lasu." ownerID="7" targetID="10" fromX="1278" fromY="-2208" />
       <outputs name="Atak!" ownerID="7" targetID="26" group="G1" fromX="1278" fromY="-2288" />
       <outputs name="Atak!" ownerID="7" targetID="35" group="G1" fromX="1278" fromY="-2368" />
@@ -290,8 +290,8 @@
         </ModifierBlock>
       </logic>
       <outputs name="Zapytaj, czy beda z toba handlowac?" ownerID="11" targetID="12" fromX="2719" fromY="-2292" />
-      <outputs name="Oczekuj, czy duchy poblogoslawia cie w jakikolwiek sposób." ownerID="11" targetID="17" fromX="2719" fromY="-2372" />
-      <outputs name="Zapytaj, czy moga wytrenowac twoje zwierzeta-demony." ownerID="11" targetID="44" fromX="2719" fromY="-2452" />„Akceptujemy Twoja oferte. Mozesz wejsc i jesli którykolwiek z moich duchów tego zyczy, moga obdarzyc cie blogoslawienstwem.'</nodes>
+      <outputs name="Oczekuj, czy duchy poblogoslawia cie w jakikolwiek sposob." ownerID="11" targetID="17" fromX="2719" fromY="-2372" />
+      <outputs name="Zapytaj, czy moga wytrenowac twoje zwierzeta-demony." ownerID="11" targetID="44" fromX="2719" fromY="-2452" />„Akceptujemy Twoja oferte. Mozesz wejsc i jesli ktorykolwiek z moich duchow tego zyczy, moga obdarzyc cie blogoslawienstwem.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="12" positionX="2911" positionY="-1750" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -305,7 +305,7 @@
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Handel." ownerID="12" targetID="14" fromX="3236" fromY="-2241" />„Dotychczas udowodniles nam, ze jestescie przyjaciólmi, tak, bedziemy z wami handlowac.'</nodes>
+      <outputs name="Handel." ownerID="12" targetID="14" fromX="3236" fromY="-2241" />„Dotychczas udowodniles nam, ze jestescie przyjaciolmi, tak, bedziemy z wami handlowac.'</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="14" positionX="3331" positionY="-1852" width="350" height="455" linkedEventUniqueID="31" />
     <nodes xsi:type="NodeAdventure" ID="15" positionX="2407" positionY="-2719" width="350" height="966">
       <logic>
@@ -316,9 +316,9 @@
         </ModifierBlock>
       </logic>
       <outputs name="Zapytaj, czy beda z toba handlowac?" ownerID="15" targetID="12" fromX="2732" fromY="-3210" />
-      <outputs name="Oczekuj, czy duchy poblogoslawia cie w jakikolwiek sposób." ownerID="15" targetID="17" fromX="2732" fromY="-3290" />
+      <outputs name="Oczekuj, czy duchy poblogoslawia cie w jakikolwiek sposob." ownerID="15" targetID="17" fromX="2732" fromY="-3290" />
       <outputs name="Glos cie wzywa, idz zobaczyc, czego chca?" ownerID="15" targetID="38" fromX="2732" fromY="-3370" />
-      <outputs name="Zapytaj, czy moga wytrenowac twoje zwierzeta-demony." ownerID="15" targetID="44" fromX="2732" fromY="-3450" />„Akceptujemy Twoja oferte. Mozesz wejsc i jesli którykolwiek z moich duchów tego zyczy, moga obdarzyc cie blogoslawienstwem.'</nodes>
+      <outputs name="Zapytaj, czy moga wytrenowac twoje zwierzeta-demony." ownerID="15" targetID="44" fromX="2732" fromY="-3450" />„Akceptujemy Twoja oferte. Mozesz wejsc i jesli ktorykolwiek z moich duchow tego zyczy, moga obdarzyc cie blogoslawienstwem.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="16" positionX="2410" positionY="-366" width="350" height="805">
       <logic>
         <FilterBlock>
@@ -339,7 +339,7 @@
         </ModifierBlock>
       </logic>
       <outputs name="Zapytaj, czy beda z toba handlowac?" ownerID="16" targetID="12" fromX="2735" fromY="-857" />
-      <outputs name="Oczekuj, czy duchy poblogoslawia cie w jakikolwiek sposób." ownerID="16" targetID="17" fromX="2735" fromY="-937" />„Akceptujemy twoja obecnosc tutaj. Mozesz wejsc i jesli którykolwiek z moich duchów tego zyczy, moga obdarzyc cie blogoslawienstwem.'</nodes>
+      <outputs name="Oczekuj, czy duchy poblogoslawia cie w jakikolwiek sposob." ownerID="16" targetID="17" fromX="2735" fromY="-937" />„Akceptujemy twoja obecnosc tutaj. Mozesz wejsc i jesli ktorykolwiek z moich duchow tego zyczy, moga obdarzyc cie blogoslawienstwem.'</nodes>
     <nodes xsi:type="NodeDealDamage" ID="17" positionX="2986" positionY="-2623" width="460" height="780" challengeTypeDamage="TypeMental" minDamage="0" maxDamage="0" useCountInPercent="false">
       <outputs ownerID="17" targetID="18" group="G1" fromX="3415" fromY="-3011" />
       <outputs ownerID="17" targetID="19" group="G1" fromX="3415" fromY="-3091" />
@@ -366,7 +366,7 @@
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Dziekuje im, odpocznijcie i odejdzcie." ownerID="18" targetID="23" fromX="3933" fromY="-2943" />„Twój duch jest chory, zabierzemy ci te skaze.'</nodes>
+      <outputs name="Dziekuje im, odpocznijcie i odejdzcie." ownerID="18" targetID="23" fromX="3933" fromY="-2943" />„Twoj duch jest chory, zabierzemy ci te skaze.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="19" positionX="4045" positionY="-2565" width="350" height="725" image="Event241">
       <logic>
         <FilterBlock>
@@ -403,9 +403,9 @@
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Dziekuje im, odpocznijcie i odejdzcie." ownerID="20" targetID="23" fromX="4275" fromY="-4022" />Siedzisz i ogladasz las, który tetni zyciem i jest bardzo relaksujacy. Las szepcze ci do ucha: 
+      <outputs name="Dziekuje im, odpocznijcie i odejdzcie." ownerID="20" targetID="23" fromX="4275" fromY="-4022" />Siedzisz i ogladasz las, ktory tetni zyciem i jest bardzo relaksujacy. Las szepcze ci do ucha: 
 
-'Leshy, Borowy, nasz opiekun, moze przybierac wiele form, niedzwiedzia jest tylko jedna. Ten bedzie ci towarzyszyl, moze nauczy cie dróg lesnych, przyjacielu.' </nodes>
+'Leshy, Borowy, nasz opiekun, moze przybierac wiele form, niedzwiedzia jest tylko jedna. Ten bedzie ci towarzyszyl, moze nauczy cie drog lesnych, przyjacielu.' </nodes>
     <nodes xsi:type="NodeAdventure" ID="21" positionX="4471" positionY="-2854" width="350" height="725" image="Event200">
       <logic>
         <FilterBlock>
@@ -431,7 +431,7 @@
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Dziekuje im, odpocznijcie i odejdzcie." ownerID="21" targetID="23" fromX="4796" fromY="-3345" />Siedzisz i ogladasz las, który tetni zyciem i jest bardzo relaksujacy.</nodes>
+      <outputs name="Dziekuje im, odpocznijcie i odejdzcie." ownerID="21" targetID="23" fromX="4796" fromY="-3345" />Siedzisz i ogladasz las, ktory tetni zyciem i jest bardzo relaksujacy.</nodes>
     <nodes xsi:type="NodeAdventure" ID="22" positionX="3377" positionY="-3536" width="350" height="725" image="Event200">
       <logic>
         <ModifierBlock>
@@ -446,7 +446,7 @@
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Dziekuje im, odpocznijcie i odejdzcie." ownerID="22" targetID="23" fromX="3702" fromY="-4027" />Siedzisz i ogladasz las, który tetni zyciem i jest bardzo relaksujacy.</nodes>
+      <outputs name="Dziekuje im, odpocznijcie i odejdzcie." ownerID="22" targetID="23" fromX="3702" fromY="-4027" />Siedzisz i ogladasz las, ktory tetni zyciem i jest bardzo relaksujacy.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="23" positionX="4925" positionY="-3135" width="350" height="530" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventureEnd" ID="25" positionX="1854" positionY="-1297" width="350" height="530" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeChallenge" ID="26" positionX="-1515" positionY="-894" width="500" height="726" challengeType="TypePhysical" versusGroup="GROUP-LOTS_FOREST_D_10P_9M_10S" challengeScale="101" challengedList="ppl">
@@ -475,7 +475,7 @@
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="28" targetID="33" fromX="-6" fromY="-1379" />Demony lesne sa zabijane i slyszysz straszny szept lasu wokól ciebie ...</nodes>
+      <outputs name="Wyjdz." ownerID="28" targetID="33" fromX="-6" fromY="-1379" />Demony lesne sa zabijane i slyszysz straszny szept lasu wokol ciebie ...</nodes>
     <nodes xsi:type="NodeDealDamage" ID="29" positionX="-982" positionY="-1871" width="460" height="459" challengeTypeDamage="TypeMental" minDamage="30" maxDamage="60" useCountInPercent="true" targetGroup="woodfolk">
       <outputs ownerID="29" targetID="31" fromX="-552" fromY="-2259" />
     </nodes>
@@ -520,7 +520,7 @@
       <outputs name="Atak!" ownerID="36" targetID="26" group="G1" fromX="3233" fromY="-744" />
       <outputs name="Atak!" ownerID="36" targetID="35" group="G1" fromX="3233" fromY="-824" />Im dluzej tu bedziesz, tym bardziej poczujesz ciezkie zniwo lasu na twoim morale. 
 
-'Nie odchodz. Wróc z tymi, którzy wiedza o lesie, byc moze wtedy bedziemy sluchac.'</nodes>
+'Nie odchodz. Wroc z tymi, ktorzy wiedza o lesie, byc moze wtedy bedziemy sluchac.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="37" positionX="3354" positionY="-441" width="350" height="805">
       <logic>
         <FilterBlock>
@@ -541,7 +541,7 @@
         </ModifierBlock>
       </logic>
       <outputs name="Zapytaj, czy beda z toba handlowac?" ownerID="37" targetID="12" fromX="3679" fromY="-932" />
-      <outputs name="Oczekuj, czy duchy poblogoslawia cie w jakikolwiek sposób." ownerID="37" targetID="17" fromX="3679" fromY="-1012" />„Akceptujemy twoja obecnosc tutaj. Mozesz wejsc i jesli którykolwiek z moich duchów tego zyczy, moga obdarzyc cie blogoslawienstwem.'</nodes>
+      <outputs name="Oczekuj, czy duchy poblogoslawia cie w jakikolwiek sposob." ownerID="37" targetID="17" fromX="3679" fromY="-1012" />„Akceptujemy twoja obecnosc tutaj. Mozesz wejsc i jesli ktorykolwiek z moich duchow tego zyczy, moga obdarzyc cie blogoslawienstwem.'</nodes>
     <nodes xsi:type="NodeAdventure" allowOnce="true" ID="38" positionX="1574" positionY="-3506" width="350" height="805">
       <logic>
         <FilterBlock>
@@ -562,9 +562,9 @@
         </ModifierBlock>
       </logic>
       <outputs name="Zaakceptuj tego, kto chce dolaczyc." ownerID="38" targetID="39" fromX="1899" fromY="-3997" />
-      <outputs name="Odmów grzecznie." ownerID="38" targetID="25" fromX="1899" fromY="-4077" />Z wnetrza lasu rozmawiaja z toba: 
+      <outputs name="Odmow grzecznie." ownerID="38" targetID="25" fromX="1899" fromY="-4077" />Z wnetrza lasu rozmawiaja z toba: 
 
-'Twój panteon nazywa Dievanna ich córka, a natura jest jedna z twoich domen. Chce dolaczyc do waszej sciezki i dowiedziec sie wiecej o tych bogach, którzy uczynili was przyjaciólmi lasu.</nodes>
+'Twoj panteon nazywa Dievanna ich corka, a natura jest jedna z twoich domen. Chce dolaczyc do waszej sciezki i dowiedziec sie wiecej o tych bogach, ktorzy uczynili was przyjaciolmi lasu.</nodes>
     <nodes xsi:type="NodeDealDamage" ID="39" positionX="2050" positionY="-3943" width="460" height="699" challengeTypeDamage="TypeMental" minDamage="0" maxDamage="0" useCountInPercent="false">
       <outputs ownerID="39" targetID="41" group="G1" fromX="2479" fromY="-4331" />
       <outputs ownerID="39" targetID="40" group="G1" fromX="2479" fromY="-4411" />
@@ -653,7 +653,7 @@
           </LogicFilter>
         </FilterBlock>
       </logic>
-      <outputs name="Pozdrów swoich sojuszników. " ownerID="2" targetID="3" fromX="729" fromY="-677" />
+      <outputs name="Pozdrow swoich sojusznikow. " ownerID="2" targetID="3" fromX="729" fromY="-677" />
       <outputs name="Badz ostrozny, ale rozmawiaj z nimi." ownerID="2" targetID="11" fromX="729" fromY="-757" />
       <outputs name="Walcz!" ownerID="2" targetID="12" fromX="729" fromY="-837" />
       <outputs name="Bron swojego ducha!" ownerID="2" targetID="15" fromX="729" fromY="-917" />
@@ -734,7 +734,7 @@
       </logic>
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="19" positionX="1579.68909" positionY="-1842.37109" width="350" height="725">
-      <outputs name="Uruchom." ownerID="19" targetID="24" fromX="1905" fromY="-2333" />Las osusza twojego ducha, ale pozwala ci uciekac. Tracisz niektóre rzeczy po drodze.</nodes>
+      <outputs name="Uruchom." ownerID="19" targetID="24" fromX="1905" fromY="-2333" />Las osusza twojego ducha, ale pozwala ci uciekac. Tracisz niektore rzeczy po drodze.</nodes>
     <nodes xsi:type="NodeDealDamage" ID="20" positionX="1021.27332" positionY="-1870.886" width="460" height="459" challengeTypeDamage="TypeSpirit" minDamage="60" maxDamage="80" useCountInPercent="true" targetGroup="ppl">
       <outputs ownerID="20" targetID="19" fromX="1450" fromY="-2259" />
     </nodes>
@@ -847,7 +847,7 @@
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Dziekuje trenerowi i odejdz." ownerID="9" targetID="10" fromX="2607" fromY="432" />Twój zwierzak wraca po chwili i wydaje sie, ze lepiej sie zachowuje.</nodes>
+      <outputs name="Dziekuje trenerowi i odejdz." ownerID="9" targetID="10" fromX="2607" fromY="432" />Twoj zwierzak wraca po chwili i wydaje sie, ze lepiej sie zachowuje.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="10" positionX="3121" positionY="884" width="350" height="530" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeTrade" ID="27" positionX="1154" positionY="-418" width="460" height="479" traderProfile="TRADER-BANDIT_TWO" playerInventory="stuff" startingBalance="-70">
       <logic>
@@ -874,7 +874,7 @@
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Dziekuje trenerowi i odejdz." ownerID="30" targetID="10" fromX="2758" fromY="-1298" />Twój zwierzak wraca po chwili i wydaje sie, ze lepiej sie zachowuje.</nodes>
+      <outputs name="Dziekuje trenerowi i odejdz." ownerID="30" targetID="10" fromX="2758" fromY="-1298" />Twoj zwierzak wraca po chwili i wydaje sie, ze lepiej sie zachowuje.</nodes>
     <nodes xsi:type="NodeDealDamage" ID="31" positionX="1661" positionY="-415" width="460" height="459" challengeTypeDamage="TypeSpirit" minDamage="40" maxDamage="70" useCountInPercent="true" targetGroup="ppl">
       <logic>
         <FilterBlock>
@@ -909,6 +909,6 @@
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Dziekuje trenerowi i odejdz." ownerID="36" targetID="10" fromX="4036" fromY="-121" />Twój zwierzak wraca po chwili i wydaje sie, ze lepiej sie zachowuje.</nodes>
+      <outputs name="Dziekuje trenerowi i odejdz." ownerID="36" targetID="10" fromX="4036" fromY="-121" />Twoj zwierzak wraca po chwili i wydaje sie, ze lepiej sie zachowuje.</nodes>
   </Adventure>
 </MODULE>

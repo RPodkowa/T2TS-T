@@ -17,15 +17,15 @@
       </logic>
       <outputs name="Zapytaj ich, co jest nie tak." ownerID="2" targetID="3" fromX="713" fromY="475" />
       <outputs name="Uzyj tego rozproszenia, aby ich zaatakowac!" ownerID="2" targetID="18" fromX="713" fromY="395" />
-      <outputs name="Naprawde nie w twojej firmie; po prostu wyjdz." ownerID="2" targetID="32" fromX="713" fromY="315" />Natkniesz sie na mala wioske. Wewnatrz znajduje sie grupa zmartwionych ludzi zebranych wokól placzacej kobiety.</nodes>
+      <outputs name="Naprawde nie w twojej firmie; po prostu wyjdz." ownerID="2" targetID="32" fromX="713" fromY="315" />Natkniesz sie na mala wioske. Wewnatrz znajduje sie grupa zmartwionych ludzi zebranych wokol placzacej kobiety.</nodes>
     <nodes xsi:type="NodeAdventure" ID="3" positionX="833" positionY="314" width="350" height="725">
-      <outputs name="Zapytaj ja, dlaczego inni nie pomoga. Z pewnoscia jeden czlowiek nie jest taki niebezpieczny?" ownerID="3" targetID="4" fromX="1158" fromY="-177" />Kobieta zwraca sie do ciebie z wahaniem, a potem patrzy na innych z odwaga i kiwa glowa, wiec mówi: 
+      <outputs name="Zapytaj ja, dlaczego inni nie pomoga. Z pewnoscia jeden czlowiek nie jest taki niebezpieczny?" ownerID="3" targetID="4" fromX="1158" fromY="-177" />Kobieta zwraca sie do ciebie z wahaniem, a potem patrzy na innych z odwaga i kiwa glowa, wiec mowi: 
 
 - To ta bezuzyteczna bryla meza. On nie zostawi mnie samego!'</nodes>
     <nodes xsi:type="NodeAdventure" ID="4" positionX="1259" positionY="488" width="350" height="885">
       <outputs name="[Zerca lub madrosc] Powiedz jej, ze wiesz, jak pozbyc sie objawienia, poniewaz jest ono z pewnoscia zwiazane z przywiazaniem malzenskim. Powiedz jej, zeby nosila siedem sukienek." ownerID="4" targetID="5" fromX="1584" fromY="-3" />
       <outputs name="[Szaman] Powiedz jej duchom, ze sa twoja wiedza i porozmawiasz z jej mezem." ownerID="4" targetID="8" fromX="1584" fromY="-83" />
-      <outputs name="Powiedz, ze z przyjemnoscia zabijesz ducha, jesli mu sie spodoba - oczywiscie za cene." ownerID="4" targetID="10" fromX="1584" fromY="-163" />„Drapak musial trzymac sie trawy, kiedy sie trzesie, wiec nie, to nie to. Widzisz, on jest martwy. Minal dwa tygodnie. Ale on wciaz idzie w moja strone, wchodzac do mojego lózka, jakby nic sie nie stalo!'</nodes>
+      <outputs name="Powiedz, ze z przyjemnoscia zabijesz ducha, jesli mu sie spodoba - oczywiscie za cene." ownerID="4" targetID="10" fromX="1584" fromY="-163" />„Drapak musial trzymac sie trawy, kiedy sie trzesie, wiec nie, to nie to. Widzisz, on jest martwy. Minal dwa tygodnie. Ale on wciaz idzie w moja strone, wchodzac do mojego lozka, jakby nic sie nie stalo!'</nodes>
     <nodes xsi:type="NodeAdventure" ID="5" positionX="1705" positionY="489" width="350" height="805">
       <logic>
         <FilterBlock>
@@ -50,7 +50,7 @@
         </FilterBlock>
       </logic>
       <outputs name="Kiwnij glowa w potwierdzeniu." ownerID="5" targetID="6" group="G1" fromX="2030" fromY="-2" />
-      <outputs name="Kiwnij glowa w potwierdzeniu." ownerID="5" targetID="29" group="G1" fromX="2030" fromY="-82" />„Mówisz, ze powinienem zalozyc siedem moich najlepszych sukienek, a potem isc jak zwykle spac? 
+      <outputs name="Kiwnij glowa w potwierdzeniu." ownerID="5" targetID="29" group="G1" fromX="2030" fromY="-82" />„Mowisz, ze powinienem zalozyc siedem moich najlepszych sukienek, a potem isc jak zwykle spac? 
 
 Wydaje sie dziwna rzecza i bede musial pozyczyc sukienki. Jestes tego pewien?'</nodes>
     <nodes xsi:type="NodeAdventure" ID="6" positionX="1919" positionY="1341" width="350" height="725">
@@ -63,7 +63,7 @@ Wydaje sie dziwna rzecza i bede musial pozyczyc sukienki. Jestes tego pewien?'</
       </logic>
       <outputs name="Poczekaj, az uslyszysz reszte." ownerID="6" targetID="7" fromX="2244" fromY="849" />Kobieta zglasza sie nastepnego dnia: 
 
-'Inteligentny, jestes! Zrobilem to, o co prosiles, nosilem siedem sukienek i przyjechal lobuz, a on stal tam, gapiac sie na mnie. Siedem sukienek? - mówi z szeroko otwartymi glupimi ustami. Siedem, powiedzmy.</nodes>
+'Inteligentny, jestes! Zrobilem to, o co prosiles, nosilem siedem sukienek i przyjechal lobuz, a on stal tam, gapiac sie na mnie. Siedem sukienek? - mowi z szeroko otwartymi glupimi ustami. Siedem, powiedzmy.</nodes>
     <nodes xsi:type="NodeAdventure" ID="7" positionX="2471" positionY="1456" width="350" height="725">
       <logic>
         <ModifierBlock>
@@ -77,7 +77,7 @@ Wydaje sie dziwna rzecza i bede musial pozyczyc sukienki. Jestes tego pewien?'</
       </logic>
       <outputs name="Powiedz jej, ze z checia Ci pomogles." ownerID="7" targetID="35" fromX="2796" fromY="964" />„Marszczy brwi - Dlaczego, nigdy przedtem nie widzialem zadnej kobiety w siedmiu sukienkach! 
 
-Dlaczego nigdy nie widzialem martwego meza, który przedtem wchodzil do lózka malzenskiego! - mówie I. I nedzna rzecz, zaklopotana, znika i znika!'
+Dlaczego nigdy nie widzialem martwego meza, ktory przedtem wchodzil do lozka malzenskiego! - mowie I. I nedzna rzecz, zaklopotana, znika i znika!'
 
 W nagrode daje ci pamiatke rodzinna.</nodes>
     <nodes xsi:type="NodeAdventure" ID="8" positionX="1793" positionY="-407" width="350" height="966">
@@ -93,16 +93,16 @@ W nagrode daje ci pamiatke rodzinna.</nodes>
       <outputs name="W takim razie po prostu zabij tych niewdziecznych drani!" ownerID="8" targetID="18" fromX="2118" fromY="-1058" />
       <outputs name="Zapytaj, dlaczego jest tak nastawiona przeciwko duchom. Nadal jest jej mezem, nie?" ownerID="8" targetID="22" fromX="2118" fromY="-1138" />Kobieta wyglada niepewnie. 
 
-- Ty wtracajacy sie w duchy lud, martwisz sie tak bardzo, jak mój martwy maz.'</nodes>
+- Ty wtracajacy sie w duchy lud, martwisz sie tak bardzo, jak moj martwy maz.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="9" positionX="2249" positionY="-298" width="350" height="725">
-      <outputs name="Zgadzam sie i idz do jej domu, aby porozmawiac z duchem." ownerID="9" targetID="24" fromX="2574" fromY="-789" />„Nie trzeba sie martwic, panowie. Nie mialem na mysli obrazania sie. Zabij ogien ogniem, co mówie. 
+      <outputs name="Zgadzam sie i idz do jej domu, aby porozmawiac z duchem." ownerID="9" targetID="24" fromX="2574" fromY="-789" />„Nie trzeba sie martwic, panowie. Nie mialem na mysli obrazania sie. Zabij ogien ogniem, co mowie. 
 
 Idziesz porozmawiac z moim mezem. Noc nadchodzi i on tez przyjdzie.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="10" positionX="1114" positionY="-752" width="350" height="805">
       <outputs name="Wytycz dom i zaatakuj ducha, gdy sie pojawi." ownerID="10" targetID="11" fromX="1439" fromY="-1243" />
-      <outputs name="Naprawde nie w twojej firmie; po prostu wyjdz." ownerID="10" targetID="32" fromX="1439" fromY="-1323" />„Zabij ducha, dobrze? Mówie dobrze. Mój maz odszedl i skonczyl. To nie jest mój krewny. Badz ostrozny, ale te rzeczy moga przyniesc wrogów, gdy zostana zaatakowani. Dlatego jeszcze tego nie zrobilismy.'
+      <outputs name="Naprawde nie w twojej firmie; po prostu wyjdz." ownerID="10" targetID="32" fromX="1439" fromY="-1323" />„Zabij ducha, dobrze? Mowie dobrze. Moj maz odszedl i skonczyl. To nie jest moj krewny. Badz ostrozny, ale te rzeczy moga przyniesc wrogow, gdy zostana zaatakowani. Dlatego jeszcze tego nie zrobilismy.'
 
-Reszta mieszkanców wioski przytakuje.</nodes>
+Reszta mieszkancow wioski przytakuje.</nodes>
     <nodes xsi:type="NodeChallenge" ID="11" positionX="1608" positionY="-1472" width="500" height="726" challengeType="TypePhysical" versusGroup="GROUP-GHOST_2P_3M_4S" challengeScale="101" challengedList="ppl">
       <outputs name="Win" ownerID="11" targetID="12" fromX="2049" fromY="-1967" />
       <outputs name="Lose" ownerID="11" targetID="16" fromX="2049" fromY="-2047" />
@@ -126,7 +126,7 @@ Reszta mieszkanców wioski przytakuje.</nodes>
       <outputs name="Popros o lepsza nagrode." ownerID="12" targetID="15" group="G1" fromX="2578" fromY="-2160" />
       <outputs name="Dziekuje jej i ruszaj dalej." ownerID="12" targetID="14" fromX="2578" fromY="-2240" />Zabijasz krnabrnego meza-ducha, a zona rzuca sie w twoje ramiona: 
 
-'Dziekuje! Nie mam wiele, ale oto troche jedzenia, które zrobilem, cieple i smaczne. Po prostu to, czego potrzebujesz po walce.'</nodes>
+'Dziekuje! Nie mam wiele, ale oto troche jedzenia, ktore zrobilem, cieple i smaczne. Po prostu to, czego potrzebujesz po walce.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="13" positionX="2723" positionY="-1289" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -146,7 +146,7 @@ Reszta mieszkanców wioski przytakuje.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Cholerna wiedzma." ownerID="13" targetID="14" fromX="3048" fromY="-1780" />„Bezczelni lajdacy! Mówia, ze pomagaja, ale nasze zródla utrzymania sa wszystkim, czego chca ... 
+      <outputs name="Cholerna wiedzma." ownerID="13" targetID="14" fromX="3048" fromY="-1780" />„Bezczelni lajdacy! Mowia, ze pomagaja, ale nasze zrodla utrzymania sa wszystkim, czego chca ... 
 
 Masz troche zlota i zadlaw sie nim.'
 
@@ -160,7 +160,7 @@ Dostajesz troche zlotych monet, ale w ciagu najblizszych kilku dni twoje gardlo 
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Dobrze, wez zloto i wyjdz." ownerID="15" targetID="14" fromX="3085" fromY="-2766" />„Bezczelni robale! Mówia, ze pomagaja, ale nasze zródla utrzymania sa wszystkim, czego chca ... 
+      <outputs name="Dobrze, wez zloto i wyjdz." ownerID="15" targetID="14" fromX="3085" fromY="-2766" />„Bezczelni robale! Mowia, ze pomagaja, ale nasze zrodla utrzymania sa wszystkim, czego chca ... 
 
 Masz troche zlota i zadlaw sie nim.'
 </nodes>
@@ -197,11 +197,11 @@ Wiesniacy tez cie przeklinaja, bo tylko rozgniewales ducha.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Zabij ich tez. Nie potrzeba pózniej wrogów." ownerID="19" targetID="40" fromX="563" fromY="-1470" />
+      <outputs name="Zabij ich tez. Nie potrzeba pozniej wrogow." ownerID="19" targetID="40" fromX="563" fromY="-1470" />
       <outputs name="Wez je. Sa mlodzi i zapomna." ownerID="19" targetID="37" fromX="563" fromY="-1550" />
-      <outputs name="Zostaw ich w pobliskim zagajniku, aby zabrac demony lesne. Niektórzy moga miec szczescie i stac sie dobrymi, a inni, cóz, przynajmniej dasz im szanse." ownerID="19" targetID="38" fromX="563" fromY="-1630" />Zabijasz wszystkich osadników bez litosci! 
+      <outputs name="Zostaw ich w pobliskim zagajniku, aby zabrac demony lesne. Niektorzy moga miec szczescie i stac sie dobrymi, a inni, coz, przynajmniej dasz im szanse." ownerID="19" targetID="38" fromX="563" fromY="-1630" />Zabijasz wszystkich osadnikow bez litosci! 
 
-Ich wioska byla slaba i ledwo trwala, ale mozna znalezc pewne zasoby. W jednym z domów znajdziesz takze male dzieci.</nodes>
+Ich wioska byla slaba i ledwo trwala, ale mozna znalezc pewne zasoby. W jednym z domow znajdziesz takze male dzieci.</nodes>
     <nodes xsi:type="NodeAdventure" ID="20" positionX="-510" positionY="-1948" width="350" height="725">
       <logic>
         <ModifierBlock>
@@ -219,14 +219,14 @@ Ich wioska byla slaba i ledwo trwala, ale mozna znalezc pewne zasoby. W jednym z
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="20" targetID="14" fromX="-184" fromY="-2439" />Zabijasz wszystkich osadników bez litosci! 
+      <outputs name="Wyjdz." ownerID="20" targetID="14" fromX="-184" fromY="-2439" />Zabijasz wszystkich osadnikow bez litosci! 
 
 Ich wioska byla slaba i ledwo trwala, ale mozna znalezc pewne zasoby.</nodes>
     <nodes xsi:type="NodeAdventure" ID="21" positionX="83" positionY="-1975" width="350" height="725">
       <outputs name="Biegnij dalej." ownerID="21" targetID="17" fromX="408" fromY="-2466" />Wsciekly tlum bije cie mocno, ale nie scigaja go, gdy uciekasz.</nodes>
     <nodes xsi:type="NodeAdventure" ID="22" positionX="3174" positionY="-1020" width="350" height="805">
-      <outputs name="Spróbuj przekonac ja, ze duchy tez moga byc dobre i ze powinna dac mezowi szanse." ownerID="22" targetID="23" fromX="3499" fromY="-1511" />
-      <outputs name="Zgadzam sie, ze nigdy nie jest to rzecz jasna i zaproponuj rozwiazanie tego problemu, rozmawiajac z duchem." ownerID="22" targetID="24" fromX="3499" fromY="-1591" />„To nienaturalne, co to jest! I tak, jasne, zyjemy w miejscu, gdzie na kazdym rogu jest lud demonów, ale skad mam wiedziec, co jest zle, a co nie? Najlepiej po prostu trzymaj sie z daleka od tego wszystkiego.'</nodes>
+      <outputs name="Sprobuj przekonac ja, ze duchy tez moga byc dobre i ze powinna dac mezowi szanse." ownerID="22" targetID="23" fromX="3499" fromY="-1511" />
+      <outputs name="Zgadzam sie, ze nigdy nie jest to rzecz jasna i zaproponuj rozwiazanie tego problemu, rozmawiajac z duchem." ownerID="22" targetID="24" fromX="3499" fromY="-1591" />„To nienaturalne, co to jest! I tak, jasne, zyjemy w miejscu, gdzie na kazdym rogu jest lud demonow, ale skad mam wiedziec, co jest zle, a co nie? Najlepiej po prostu trzymaj sie z daleka od tego wszystkiego.'</nodes>
     <nodes xsi:type="NodeChallenge" ID="23" positionX="3775" positionY="-1338" width="500" height="726" challengeType="TypeMental" versusGroup="GROUP-HUMS_2P_2M_1S" challengeScale="101" challengedList="ppl">
       <outputs name="Win" ownerID="23" targetID="34" fromX="4216" fromY="-1833" />
       <outputs name="Lose" ownerID="23" targetID="33" fromX="4216" fromY="-1913" />
@@ -235,16 +235,16 @@ Ich wioska byla slaba i ledwo trwala, ale mozna znalezc pewne zasoby.</nodes>
     <nodes xsi:type="NodeAdventure" ID="24" positionX="2734" positionY="-180" width="350" height="725">
       <outputs name="Zapytaj go, dlaczego wciaz tu wraca." ownerID="24" targetID="25" fromX="3059" fromY="-671" />Duch meza jest szczuplym, zmeczonym mezczyzna w srednim wieku z wylupiasta glowa, wygladajaca na slaba i chora. 
 
-Patrzy na ciebie tepo, czekajac, az jego zona przyjdzie do lózka. 
+Patrzy na ciebie tepo, czekajac, az jego zona przyjdzie do lozka. 
 </nodes>
     <nodes xsi:type="NodeAdventure" ID="25" positionX="3234" positionY="-21" width="350" height="885">
-      <outputs name="Ten duch bedzie trudny do przekonania, ale i tak spróbuj to zrobic." ownerID="25" targetID="27" fromX="3559" fromY="-512" />
+      <outputs name="Ten duch bedzie trudny do przekonania, ale i tak sprobuj to zrobic." ownerID="25" targetID="27" fromX="3559" fromY="-512" />
       <outputs name="Biedna rzecz, po prostu go zostaw." ownerID="25" targetID="26" fromX="3559" fromY="-592" />
-      <outputs name="Wydaje sie malo prawdopodobne, aby odszedl cicho, wiec zabij go." ownerID="25" targetID="11" fromX="3559" fromY="-672" />„Moja panna powiedziala mi, ze zawsze wraca do domu, do lózka, a ona powiesilaby mój cenny na ogrodzeniu. 
+      <outputs name="Wydaje sie malo prawdopodobne, aby odszedl cicho, wiec zabij go." ownerID="25" targetID="11" fromX="3559" fromY="-672" />„Moja panna powiedziala mi, ze zawsze wraca do domu, do lozka, a ona powiesilaby moj cenny na ogrodzeniu. 
 
 Widziales jej zlosliwa twarz? Ona to robi, robi to nawet w mojej smierci. Nie trace swojej wartosci!'</nodes>
     <nodes xsi:type="NodeAdventure" ID="26" positionX="3789" positionY="-535" width="350" height="725">
-      <outputs name="Wyjdz." ownerID="26" targetID="30" fromX="4114" fromY="-1026" />Pozostawiasz ducha i gdy zona nie jest szczesliwa, ona nic nie mówi. 
+      <outputs name="Wyjdz." ownerID="26" targetID="30" fromX="4114" fromY="-1026" />Pozostawiasz ducha i gdy zona nie jest szczesliwa, ona nic nie mowi. 
 </nodes>
     <nodes xsi:type="NodeChallenge" ID="27" positionX="3846" positionY="213" width="500" height="726" challengeType="TypeMental" versusGroup="GROUP-GHOST_2P_3M_4S" challengeScale="101" challengedList="ppl">
       <outputs name="Win" ownerID="27" targetID="28" fromX="4287" fromY="-282" />
@@ -257,7 +257,7 @@ Widziales jej zlosliwa twarz? Ona to robi, robi to nawet w mojej smierci. Nie tr
 Duch znika, a zona przychodzi zobaczyc twoja prace.</nodes>
     <nodes xsi:type="NodeAdventure" ID="29" positionX="2954.13428" positionY="807.756348" width="350" height="805">
       <outputs name="Powiedz mieszkancom, ze nie bylo innego sposobu. Duch byl zbyt przywiazany do swojej zony, wiec zabral ja ze soba." ownerID="29" targetID="36" fromX="3279" fromY="316" />
-      <outputs name="Spróbuj przeprosic za swój blad. Bledy sie zdarzaja, a szeptanie duchów nie jest sztuka precyzyjna." ownerID="29" targetID="36" fromX="3279" fromY="236" />Zona krzyczy w nocy. Wbiegasz do sypialni i widzisz, jak duch rozrywa ja na strzepy. 
+      <outputs name="Sprobuj przeprosic za swoj blad. Bledy sie zdarzaja, a szeptanie duchow nie jest sztuka precyzyjna." ownerID="29" targetID="36" fromX="3279" fromY="236" />Zona krzyczy w nocy. Wbiegasz do sypialni i widzisz, jak duch rozrywa ja na strzepy. 
 
 Po jej odejsciu duch sie rozpuszcza.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="30" positionX="4238" positionY="-659" width="350" height="530" allPlayersXP="3" allPlayersRP="2" linkedEventUniqueID="0" />
@@ -274,15 +274,15 @@ Po jej odejsciu duch sie rozpuszcza.</nodes>
       </logic>
       <outputs name="Popros o lepsza nagrode." ownerID="31" targetID="13" group="G1" fromX="5346" fromY="150" />
       <outputs name="Popros o lepsza nagrode." ownerID="31" targetID="15" group="G1" fromX="5346" fromY="69" />
-      <outputs name="Dziekuje jej i ruszaj dalej." ownerID="31" targetID="14" fromX="5346" fromY="-10" />„Dziekuje! Nie mam wiele, ale oto troche jedzenia, które zrobilem, cieple i smaczne. Po prostu to, czego potrzebujesz po walce.'</nodes>
+      <outputs name="Dziekuje jej i ruszaj dalej." ownerID="31" targetID="14" fromX="5346" fromY="-10" />„Dziekuje! Nie mam wiele, ale oto troche jedzenia, ktore zrobilem, cieple i smaczne. Po prostu to, czego potrzebujesz po walce.'</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="32" positionX="1" positionY="-389" width="350" height="530" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventure" ID="33" positionX="4141" positionY="-2213" width="350" height="805">
-      <outputs name="A wiec zostaw ja. Nie twój interes." ownerID="33" targetID="17" fromX="4466" fromY="-2704" />
-      <outputs name="Zamiast tego zaproponuj rozmowe z duchem." ownerID="33" targetID="24" fromX="4466" fromY="-2784" />„Przestajesz wylewac ten brud z ust! Nie dziele mojego lózka bez ducha!'</nodes>
+      <outputs name="A wiec zostaw ja. Nie twoj interes." ownerID="33" targetID="17" fromX="4466" fromY="-2704" />
+      <outputs name="Zamiast tego zaproponuj rozmowe z duchem." ownerID="33" targetID="24" fromX="4466" fromY="-2784" />„Przestajesz wylewac ten brud z ust! Nie dziele mojego lozka bez ducha!'</nodes>
     <nodes xsi:type="NodeAdventure" ID="34" positionX="4569" positionY="-1422" width="350" height="885">
       <outputs name="Popros o lepsza nagrode." ownerID="34" targetID="13" group="G1" fromX="4894" fromY="-1913" />
       <outputs name="Popros o lepsza nagrode." ownerID="34" targetID="15" group="G1" fromX="4894" fromY="-1993" />
-      <outputs name="Dziekuje jej i ruszaj dalej." ownerID="34" targetID="14" fromX="4894" fromY="-2073" />„Cóz, byl draniem i pijany, ale byl mój. Chyba dam mu kolejna szanse. Dziekuje za pomoc. Zjedz goraca kolacje - nie mam o wiele wiecej.„”</nodes>
+      <outputs name="Dziekuje jej i ruszaj dalej." ownerID="34" targetID="14" fromX="4894" fromY="-2073" />„Coz, byl draniem i pijany, ale byl moj. Chyba dam mu kolejna szanse. Dziekuje za pomoc. Zjedz goraca kolacje - nie mam o wiele wiecej.„”</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="35" positionX="3045" positionY="1382" width="350" height="530" allPlayersXP="3" allPlayersRP="2" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventure" ID="36" positionX="3564" positionY="991" width="350" height="725">
       <logic>
@@ -387,12 +387,12 @@ Oferuja ci jedzenie w podziekowaniu i masz wrazenie, ze proszenie o wiecej moze 
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Spróbuj porozmawiac z tym dzieciakiem. Wyjasnij, ze musiales zabic tych wiesniaków, poniewaz zostali oslabieni przez demony." ownerID="2" targetID="4" fromX="583" fromY="253" />
+      <outputs name="Sprobuj porozmawiac z tym dzieciakiem. Wyjasnij, ze musiales zabic tych wiesniakow, poniewaz zostali oslabieni przez demony." ownerID="2" targetID="4" fromX="583" fromY="253" />
       <outputs name="Zastrasz dziecko. Powiedz, ze moga miec szczescie i zabic jedna osobe, ale z pewnoscia umra!" ownerID="2" targetID="16" fromX="583" fromY="173" />
       <outputs name="Zaatakuj dziecko, zanim stanie sie szkodliwe!" ownerID="2" targetID="20" group="G1" fromX="583" fromY="93" />
-      <outputs name="Zaatakuj dziecko, zanim stanie sie szkodliwe!" ownerID="2" targetID="21" group="G1" fromX="583" fromY="13" />Budzi cie krzyk i odkrywasz, ze dziecko stoi na szczycie jednego z twoich kolegów z druzyny, trzymajac zakrwawiony nóz i zaraz zanurzajac smiertelny cios! 
+      <outputs name="Zaatakuj dziecko, zanim stanie sie szkodliwe!" ownerID="2" targetID="21" group="G1" fromX="583" fromY="13" />Budzi cie krzyk i odkrywasz, ze dziecko stoi na szczycie jednego z twoich kolegow z druzyny, trzymajac zakrwawiony noz i zaraz zanurzajac smiertelny cios! 
 
-To jedno z dzieci, które „uratowales” z osady po zabiciu wszystkich jej mieszkanców.</nodes>
+To jedno z dzieci, ktore „uratowales” z osady po zabiciu wszystkich jej mieszkancow.</nodes>
     <nodes xsi:type="NodeAdventure" ID="3" positionX="456" positionY="-658" width="350" height="885">
       <logic>
         <FilterBlock>
@@ -407,12 +407,12 @@ To jedno z dzieci, które „uratowales” z osady po zabiciu wszystkich jej mieszkan
         </ModifierBlock>
       </logic>
       <outputs name="Obron sie." ownerID="3" targetID="10" fromX="781" fromY="-1149" />
-      <outputs name="Spróbuj uciec." ownerID="3" targetID="25" fromX="781" fromY="-1229" />
-      <outputs name="Spróbuj przekonac dziecko, aby sie uspokoilo. Powiedz, ze popelniles blad i chcialbys, aby zostal z toba i byl bezpieczny i kochany!" ownerID="3" targetID="28" fromX="781" fromY="-1309" />Zdeformowane, dzieciece stworzenie skrada sie na ciebie podczas snu. 
+      <outputs name="Sprobuj uciec." ownerID="3" targetID="25" fromX="781" fromY="-1229" />
+      <outputs name="Sprobuj przekonac dziecko, aby sie uspokoilo. Powiedz, ze popelniles blad i chcialbys, aby zostal z toba i byl bezpieczny i kochany!" ownerID="3" targetID="28" fromX="781" fromY="-1309" />Zdeformowane, dzieciece stworzenie skrada sie na ciebie podczas snu. 
 
 To skrzeczy: 
 
-'Ty, zrobiles mi to, ty potworze! Zabiles moja ma i pa i zostawiles mnie dla nich demonów, a teraz jestem taki!'
+'Ty, zrobiles mi to, ty potworze! Zabiles moja ma i pa i zostawiles mnie dla nich demonow, a teraz jestem taki!'
 
 Rzuca sie na ciebie!</nodes>
     <nodes xsi:type="NodeChallenge" ID="4" positionX="938" positionY="1653" width="500" height="726" challengeType="TypeMental" versusConcept="true" versusGroup="GROUP-CON_M_0P_2M_0S" challengeScale="101" challengedList="nppl">
@@ -428,8 +428,8 @@ Rzuca sie na ciebie!</nodes>
       <outputs name="Surrender" ownerID="4" targetID="19" fromX="1379" fromY="997" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="5" positionX="1575" positionY="1740" width="350" height="805">
-      <outputs name="Powiedz, ze nie zrobisz im krzywdy, dopóki beda zachowywac sie od teraz." ownerID="5" targetID="22" fromX="1900" fromY="1248" />
-      <outputs name="Zabij dziecko. To wróg czeka na ponowne uderzenie." ownerID="5" targetID="7" fromX="1900" fromY="1168" />„Ja…Przepraszam. Nie chcialem. Prosze, nie ran mnie, jakbys skrzywdzil mojego pa ... prosze'</nodes>
+      <outputs name="Powiedz, ze nie zrobisz im krzywdy, dopoki beda zachowywac sie od teraz." ownerID="5" targetID="22" fromX="1900" fromY="1248" />
+      <outputs name="Zabij dziecko. To wrog czeka na ponowne uderzenie." ownerID="5" targetID="7" fromX="1900" fromY="1168" />„Ja…Przepraszam. Nie chcialem. Prosze, nie ran mnie, jakbys skrzywdzil mojego pa ... prosze'</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="6" positionX="192" positionY="2302" width="350" height="530" allPlayersXP="2" allPlayersRP="1" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventureEnd" ID="7" positionX="2776" positionY="1629" width="350" height="530" allPlayersXP="3" allPlayersRP="2" linkedEventUniqueID="0">
       <logic>
@@ -441,13 +441,13 @@ Rzuca sie na ciebie!</nodes>
       </logic>
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="8" positionX="1808" positionY="749" width="350" height="805">
-      <outputs name="Chwyc dziecko sila i powstrzymaj je, ale pozwól im zyc dalej w nadziei, ze uspokoja sie na czas." ownerID="8" targetID="22" fromX="2133" fromY="257" />
-      <outputs name="Zabij dziecko. To wróg czeka na ponowne uderzenie." ownerID="8" targetID="7" fromX="2133" fromY="177" />„ZABILES, mój potworze!'
+      <outputs name="Chwyc dziecko sila i powstrzymaj je, ale pozwol im zyc dalej w nadziei, ze uspokoja sie na czas." ownerID="8" targetID="22" fromX="2133" fromY="257" />
+      <outputs name="Zabij dziecko. To wrog czeka na ponowne uderzenie." ownerID="8" targetID="7" fromX="2133" fromY="177" />„ZABILES, moj potworze!'
 
 Dziecko dzga dziko i chociaz ma malo sily, pobiera sie duzo krwi.</nodes>
     <nodes xsi:type="NodeAdventure" ID="9" positionX="722" positionY="254" width="350" height="805">
-      <outputs name="Chwyc dziecko sila i powstrzymaj je, ale pozwól im zyc dalej w nadziei, ze uspokoja sie na czas." ownerID="9" targetID="22" fromX="1047" fromY="-237" />
-      <outputs name="Zabij dziecko. To wróg czeka na ponowne uderzenie." ownerID="9" targetID="7" fromX="1047" fromY="-317" />„ZABILES, mój potworze!'
+      <outputs name="Chwyc dziecko sila i powstrzymaj je, ale pozwol im zyc dalej w nadziei, ze uspokoja sie na czas." ownerID="9" targetID="22" fromX="1047" fromY="-237" />
+      <outputs name="Zabij dziecko. To wrog czeka na ponowne uderzenie." ownerID="9" targetID="7" fromX="1047" fromY="-317" />„ZABILES, moj potworze!'
 
 Dziecko dzga dziko i chociaz ma malo sily, pobiera sie duzo krwi.</nodes>
     <nodes xsi:type="NodeChallenge" ID="10" positionX="940" positionY="-790" width="500" height="726" challengeType="TypePhysical" versusGroup="GROUP-BOG_BIES_2P_1M_1S" challengeScale="101" challengedList="ppl">
@@ -472,7 +472,7 @@ Dziecko dzga dziko i chociaz ma malo sily, pobiera sie duzo krwi.</nodes>
 
 Zamiast tego przeklinam ciebie i wszystkich twoich krewnych!'
 
-Stwór znika, ale klatwa spoczywa na twoich duszach. </nodes>
+Stwor znika, ale klatwa spoczywa na twoich duszach. </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="14" positionX="2574.31641" positionY="-1403.76636" width="350" height="530" allPlayersXP="1" allPlayersRP="1" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventureEnd" ID="15" positionX="2036.13037" positionY="-629.746338" width="350" height="530" allPlayersXP="3" allPlayersRP="2" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeChallenge" ID="16" positionX="72" positionY="1592" width="500" height="726" challengeType="TypeMental" versusConcept="true" versusGroup="GROUP-CON_M_0P_2M_0S" challengeScale="101" challengedList="nnp">
@@ -495,10 +495,10 @@ Stwór znika, ale klatwa spoczywa na twoich duszach. </nodes>
           </LogicProcessing>
         </ModifierBlock>
       </logic>
-      <outputs name="Chwyc dziecko sila i powstrzymaj je, ale pozwól im zyc dalej w nadziei, ze uspokoja sie na czas." ownerID="17" targetID="22" fromX="3258" fromY="9" />
-      <outputs name="Zabij dziecko. To wróg czeka na ponowne uderzenie." ownerID="17" targetID="7" fromX="3258" fromY="-70" />„ZABILES, mój potworze!'
+      <outputs name="Chwyc dziecko sila i powstrzymaj je, ale pozwol im zyc dalej w nadziei, ze uspokoja sie na czas." ownerID="17" targetID="22" fromX="3258" fromY="9" />
+      <outputs name="Zabij dziecko. To wrog czeka na ponowne uderzenie." ownerID="17" targetID="7" fromX="3258" fromY="-70" />„ZABILES, moj potworze!'
 
-Dziecko dzga dziko, napedzane jeszcze bardziej okrutnymi próbami zastraszania.</nodes>
+Dziecko dzga dziko, napedzane jeszcze bardziej okrutnymi probami zastraszania.</nodes>
     <nodes xsi:type="NodeDealDamage" ID="18" positionX="2389" positionY="521" width="460" height="459" challengeTypeDamage="TypePhysical" minDamage="70" maxDamage="100" useCountInPercent="true" targetGroup="hurt">
       <outputs ownerID="18" targetID="17" fromX="2818" fromY="132" />
     </nodes>
@@ -519,8 +519,8 @@ Dziecko dzga dziko, napedzane jeszcze bardziej okrutnymi próbami zastraszania.</
       <outputs ownerID="21" targetID="8" fromX="1665" fromY="40" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="22" positionX="-1061" positionY="2148" width="350" height="805">
-      <outputs name="Spróbuj uwazac na nich w przyszlosci." ownerID="22" targetID="23" group="G1" fromX="-735" fromY="1656" />
-      <outputs name="Spróbuj uwazac na nich w przyszlosci." ownerID="22" targetID="24" group="G1" fromX="-735" fromY="1576" />Pozwoliles skrzywdzonemu dziecku zyc, nawet po tym, jak zaatakowali cie zaciekle i oglosili zemste na twoich krewnych.</nodes>
+      <outputs name="Sprobuj uwazac na nich w przyszlosci." ownerID="22" targetID="23" group="G1" fromX="-735" fromY="1656" />
+      <outputs name="Sprobuj uwazac na nich w przyszlosci." ownerID="22" targetID="24" group="G1" fromX="-735" fromY="1576" />Pozwoliles skrzywdzonemu dziecku zyc, nawet po tym, jak zaatakowali cie zaciekle i oglosili zemste na twoich krewnych.</nodes>
     <nodes xsi:type="NodeAdventure" ID="23" positionX="-422" positionY="2578" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -566,13 +566,13 @@ Pewnego dnia przynosza ci skrzynie ze skarbami, oglaszajac, ze to tajemnica ich 
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Cholera." ownerID="24" targetID="6" fromX="-149" fromY="989" />Pomimo twoich wysilków, by czuwac, pewnego dnia okaze sie, ze zostales okradziony, a dziecko odeszlo!</nodes>
+      <outputs name="Cholera." ownerID="24" targetID="6" fromX="-149" fromY="989" />Pomimo twoich wysilkow, by czuwac, pewnego dnia okaze sie, ze zostales okradziony, a dziecko odeszlo!</nodes>
     <nodes xsi:type="NodeDealDamage" ID="25" positionX="-99" positionY="-966" width="460" height="459" challengeTypeDamage="TypePhysical" minDamage="50" maxDamage="70" useCountInPercent="true" targetGroup="ppl">
       <outputs ownerID="25" targetID="27" fromX="330" fromY="-1354" />
     </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="26" positionX="-1066" positionY="-1006" width="350" height="530" allPlayersXP="2" allPlayersRP="1" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventure" ID="27" positionX="-605" positionY="-875" width="350" height="725">
-      <outputs name="Wyjdz." ownerID="27" targetID="26" fromX="-279" fromY="-1366" />Uciekasz, ale stwór pluje na ciebie palacym blotem, zostawiajac cie pokiereszowanego.</nodes>
+      <outputs name="Wyjdz." ownerID="27" targetID="26" fromX="-279" fromY="-1366" />Uciekasz, ale stwor pluje na ciebie palacym blotem, zostawiajac cie pokiereszowanego.</nodes>
     <nodes xsi:type="NodeChallenge" ID="28" positionX="-104" positionY="-1610" width="500" height="807" challengeType="TypeMental" versusGroup="GROUP-BOG_BIES_2P_1M_1S" challengeScale="101" challengedList="ppl">
       <outputs name="Win" ownerID="28" targetID="29" group="G1" fromX="337" fromY="-2105" />
       <outputs name="Lose" ownerID="28" targetID="32" fromX="337" fromY="-2185" />
@@ -597,7 +597,7 @@ Pewnego dnia przynosza ci skrzynie ze skarbami, oglaszajac, ze to tajemnica ich 
     <nodes xsi:type="NodeAdventure" ID="31" positionX="917" positionY="-2097" width="350" height="725">
       <outputs name="Wyjdz." ownerID="31" targetID="30" fromX="1242" fromY="-2588" />Stworzenie zatrzymuje sie i patrzy na ciebie, jego oczy sa smutne i samotne. Kiwa glowa, bardziej dla siebie niz dla ciebie. Nie atakuje, ale nie dolacza do ciebie. To tylko warczy: 
 
-'Zabiles ich wszystkich, a teraz mówisz o milosci? Jestem lepszym czlowiekiem niz to. Zostawiam cie swojemu losowi, potworku.'
+'Zabiles ich wszystkich, a teraz mowisz o milosci? Jestem lepszym czlowiekiem niz to. Zostawiam cie swojemu losowi, potworku.'
 
 Odchodzi w cien.</nodes>
     <nodes xsi:type="NodeAdventure" ID="32" positionX="209" positionY="-2529" width="350" height="725">
@@ -613,7 +613,7 @@ Odchodzi w cien.</nodes>
       </logic>
       <outputs name="Wyjdz." ownerID="32" targetID="33" fromX="534" fromY="-3020" />Stworzenie zatrzymuje sie i patrzy na ciebie, jego oczy sa smutne i samotne. Kiwa glowa, bardziej dla siebie niz dla ciebie. Nie atakuje, ale nie dolacza do ciebie. To tylko warczy: 
 
-'Zabiles ich wszystkich, a teraz mówisz o milosci? Jestem lepszym czlowiekiem niz to. Zostawiam cie swojemu losowi, potworku.'
+'Zabiles ich wszystkich, a teraz mowisz o milosci? Jestem lepszym czlowiekiem niz to. Zostawiam cie swojemu losowi, potworku.'
 
 Odchodzi w cienie i czujesz na sobie ciezkie przeklenstwo.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="33" positionX="643" positionY="-2936" width="350" height="530" allPlayersXP="1" allPlayersRP="1" linkedEventUniqueID="0" />
@@ -632,7 +632,7 @@ Odchodzi w cienie i czujesz na sobie ciezkie przeklenstwo.</nodes>
 
 Zamiast tego przeklinam ciebie i wszystkich twoich krewnych!'
 
-Stwór znika, ale klatwa spoczywa na twoich duszach. </nodes>
+Stwor znika, ale klatwa spoczywa na twoich duszach. </nodes>
   </Adventure>
   <Adventure name="Goblin Killer" uniqueID="14" allowOnce="true" typeGeneric="false" typePerGroupGeneric="false" typeInterrupt="false" typeExpedition="true" typeVillage="false" difficulty="8" nodeIdMax="33" eventTag="TAG-LOG15" joinIsForced="false" joinType="AllAlly" joinRange="MovementArea">
     <nodes xsi:type="NodeStarting" ID="1" positionX="-384" positionY="718" width="347" height="661" image="Event060">
@@ -668,7 +668,7 @@ Stwór znika, ale klatwa spoczywa na twoich duszach. </nodes>
         </FilterBlock>
       </logic>
       <outputs name="Powiedz im, aby przestali i stwierdzili, czego chca." ownerID="2" targetID="4" fromX="465" fromY="-198" />
-      <outputs name="Atak!" ownerID="2" targetID="3" fromX="465" fromY="-278" />Grupa goblinów biegnie w twoim kierunku. Wygladaja na przestraszonych i wyglada na to, ze sa to glównie starsi lub mlodzi. 
+      <outputs name="Atak!" ownerID="2" targetID="3" fromX="465" fromY="-278" />Grupa goblinow biegnie w twoim kierunku. Wygladaja na przestraszonych i wyglada na to, ze sa to glownie starsi lub mlodzi. 
 
 Mimo to kilku jest uzbrojonych.</nodes>
     <nodes xsi:type="NodeChallenge" ID="3" positionX="-1583" positionY="124" width="500" height="726" challengeType="TypePhysical" versusGroup="GROUP-Q_GOBS_6P_3M_2S" challengeScale="101" challengedList="ppl">
@@ -677,11 +677,11 @@ Mimo to kilku jest uzbrojonych.</nodes>
       <outputs name="Surrender" ownerID="3" targetID="30" fromX="-1141" fromY="-531" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="4" positionX="789" positionY="0" width="350" height="885">
-      <outputs name="Zapytaj o czym mówi." ownerID="4" targetID="6" fromX="1114" fromY="-491" />
-      <outputs name="Wzruszaj ramionami i pozwól im przejsc." ownerID="4" targetID="8" fromX="1114" fromY="-571" />
-      <outputs name="Popros o krótka wersje tego, co sie dzieje. [Pomin historie]" ownerID="4" targetID="27" fromX="1114" fromY="-651" />Sa zgodne, ale wciaz nerwowo sie za nimi spogladaja. Jeden z nich mówi: 
+      <outputs name="Zapytaj o czym mowi." ownerID="4" targetID="6" fromX="1114" fromY="-491" />
+      <outputs name="Wzruszaj ramionami i pozwol im przejsc." ownerID="4" targetID="8" fromX="1114" fromY="-571" />
+      <outputs name="Popros o krotka wersje tego, co sie dzieje. [Pomin historie]" ownerID="4" targetID="27" fromX="1114" fromY="-651" />Sa zgodne, ale wciaz nerwowo sie za nimi spogladaja. Jeden z nich mowi: 
 
-'Ty nas nie zabijesz, prawda? Chcemy tylko isc, znajdujemy nowe miejsce, przysiegamy, po prostu pozwól nam odejsc!'</nodes>
+'Ty nas nie zabijesz, prawda? Chcemy tylko isc, znajdujemy nowe miejsce, przysiegamy, po prostu pozwol nam odejsc!'</nodes>
     <nodes xsi:type="NodeAdventure" ID="5" positionX="1340" positionY="1116" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -696,22 +696,22 @@ Mimo to kilku jest uzbrojonych.</nodes>
       <outputs ownerID="6" targetID="11" group="G1" fromX="1122" fromY="281" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="7" positionX="1861" positionY="1797" width="350" height="885">
-      <outputs name="Czy wiedza, dlaczego ten goblinski zabójca ich zaatakowal?" ownerID="7" targetID="9" fromX="2186" fromY="1305" />
-      <outputs name="Powiedz, ze to nie jest twoja sprawa, ale jesli zaplaca, mozesz sobie poradzic z zabójca." ownerID="7" targetID="12" fromX="2186" fromY="1225" />
-      <outputs name="Powiedz im, ze wydaje sie niebezpieczny, wiec lepiej biegnij i odejdz." ownerID="7" targetID="8" fromX="2186" fromY="1145" />„Goblinski zabójca! Nie zartuje, to nie jest zwykle imie. Ten koles, albo pani, przychodza i zabijaja, zabijaja i zabijaja. 
+      <outputs name="Czy wiedza, dlaczego ten goblinski zabojca ich zaatakowal?" ownerID="7" targetID="9" fromX="2186" fromY="1305" />
+      <outputs name="Powiedz, ze to nie jest twoja sprawa, ale jesli zaplaca, mozesz sobie poradzic z zabojca." ownerID="7" targetID="12" fromX="2186" fromY="1225" />
+      <outputs name="Powiedz im, ze wydaje sie niebezpieczny, wiec lepiej biegnij i odejdz." ownerID="7" targetID="8" fromX="2186" fromY="1145" />„Goblinski zabojca! Nie zartuje, to nie jest zwykle imie. Ten koles, albo pani, przychodza i zabijaja, zabijaja i zabijaja. 
 
-Zamordowali cala nasza wioske, a potem poszli po male dzieci, mówiac, ze beda rosnac, by stac sie jak kazdy z nas.'</nodes>
+Zamordowali cala nasza wioske, a potem poszli po male dzieci, mowiac, ze beda rosnac, by stac sie jak kazdy z nas.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="8" positionX="1945" positionY="-417" width="350" height="885">
-      <outputs name="Zgadzam sie, aby pomóc im zatrzymac to zagrozenie. Byc moze zabójca goblinów bedzie sluchal rozumu - jesli nie, to ostrze." ownerID="8" targetID="20" fromX="2270" fromY="-908" />
-      <outputs name="Powiedz, ze to nie jest twoja sprawa, ale jesli zaplaca, mozesz sobie poradzic z zabójca." ownerID="8" targetID="12" fromX="2270" fromY="-988" />
+      <outputs name="Zgadzam sie, aby pomoc im zatrzymac to zagrozenie. Byc moze zabojca goblinow bedzie sluchal rozumu - jesli nie, to ostrze." ownerID="8" targetID="20" fromX="2270" fromY="-908" />
+      <outputs name="Powiedz, ze to nie jest twoja sprawa, ale jesli zaplaca, mozesz sobie poradzic z zabojca." ownerID="8" targetID="12" fromX="2270" fromY="-988" />
       <outputs name="Nie, odejdz." ownerID="8" targetID="32" fromX="2270" fromY="-1068" />„Och, tak, dziekuje. Ale moze nam pomozesz? Moze zabic tego psycho? Pomysl o naszych dzieciach!'</nodes>
     <nodes xsi:type="NodeAdventure" ID="9" positionX="2591" positionY="1805" width="350" height="885">
       <outputs name="Czy orkowie sa znani z gwaltu po nalocie?" ownerID="9" targetID="10" fromX="2916" fromY="1313" />
-      <outputs name="Wiec ten goblinski zabójca poluje teraz na nich?" ownerID="9" targetID="13" fromX="2916" fromY="1233" />
-      <outputs name="Powiedz, ze to nie jest twoja sprawa, ale jesli zaplaca, mozesz sobie poradzic z zabójca." ownerID="9" targetID="12" fromX="2916" fromY="1153" />„Cóz, to naprawde dziwne, oni mówia, ze my, zwierzeta, zniszczylismy ich farme i zgwalcilismy wszystkie kobiety. Chodzi mi o to, ze lubimy troche wielkiego folku, ale nie raidujemy i nie gwalcimy! Musza nas zabrac na orki lub cos takiego.'</nodes>
+      <outputs name="Wiec ten goblinski zabojca poluje teraz na nich?" ownerID="9" targetID="13" fromX="2916" fromY="1233" />
+      <outputs name="Powiedz, ze to nie jest twoja sprawa, ale jesli zaplaca, mozesz sobie poradzic z zabojca." ownerID="9" targetID="12" fromX="2916" fromY="1153" />„Coz, to naprawde dziwne, oni mowia, ze my, zwierzeta, zniszczylismy ich farme i zgwalcilismy wszystkie kobiety. Chodzi mi o to, ze lubimy troche wielkiego folku, ale nie raidujemy i nie gwalcimy! Musza nas zabrac na orki lub cos takiego.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="10" positionX="3172" positionY="1107" width="350" height="805">
-      <outputs name="Wiec ten goblinski zabójca poluje teraz na nich?" ownerID="10" targetID="13" fromX="3497" fromY="615" />
-      <outputs name="Powiedz, ze to nie jest twoja sprawa, ale jesli zaplaca, mozesz sobie poradzic z zabójca." ownerID="10" targetID="12" fromX="3497" fromY="535" />„Ludzie, orkowie, jasne. Krasnoludy i elfy moze mniej, i sluchajcie, nie mówie, ze nigdy nie dzieje sie to z naszym losami. Mamy zle jablka, tak jak ty. Ale nie robimy tego caly czas, przysiegam!'</nodes>
+      <outputs name="Wiec ten goblinski zabojca poluje teraz na nich?" ownerID="10" targetID="13" fromX="3497" fromY="615" />
+      <outputs name="Powiedz, ze to nie jest twoja sprawa, ale jesli zaplaca, mozesz sobie poradzic z zabojca." ownerID="10" targetID="12" fromX="3497" fromY="535" />„Ludzie, orkowie, jasne. Krasnoludy i elfy moze mniej, i sluchajcie, nie mowie, ze nigdy nie dzieje sie to z naszym losami. Mamy zle jablka, tak jak ty. Ale nie robimy tego caly czas, przysiegam!'</nodes>
     <nodes xsi:type="NodeAdventure" ID="11" positionX="2510" positionY="3" width="350" height="725">
       <outputs name="Kto?" ownerID="11" targetID="7" fromX="2835" fromY="-488" />„Och, tak. Przepraszam. Nawet nie wygladasz na nich. Mysle, ze to elf, ale moze byc chudym czlowiekiem?'</nodes>
     <nodes xsi:type="NodeAdventure" ID="12" positionX="3525" positionY="-164" width="350" height="725">
@@ -722,13 +722,13 @@ Zamordowali cala nasza wioske, a potem poszli po male dzieci, mówiac, ze beda ro
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Kiwnij glowa i wyjdz, by znalezc tego zabójce goblinów." ownerID="12" targetID="18" fromX="3850" fromY="-655" />„Ty, prawda? Dziekuje ci na pewno! Tak, placimy, placimy, co mozemy. 
+      <outputs name="Kiwnij glowa i wyjdz, by znalezc tego zabojce goblinow." ownerID="12" targetID="18" fromX="3850" fromY="-655" />„Ty, prawda? Dziekuje ci na pewno! Tak, placimy, placimy, co mozemy. 
 
 Troche teraz, troche, kiedy przynosisz im glowe. Och, badzcie ostrozni, czasami przychodza z innymi.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="13" positionX="3666" positionY="1241" width="350" height="885">
-      <outputs name="[Percepcja, inteligencja, goblin lub szczescie] Spróbuj ustalic, czy mówi prawde." ownerID="13" targetID="14" fromX="3991" fromY="749" />
-      <outputs name="Zgadzam sie, aby pomóc im zatrzymac to zagrozenie. Byc moze zabójca goblinów bedzie sluchal rozumu - jesli nie, to ostrze." ownerID="13" targetID="20" fromX="3991" fromY="669" />
-      <outputs name="Powiedz, ze to nie jest twoja sprawa, ale jesli zaplaca, mozesz sobie poradzic z zabójca." ownerID="13" targetID="12" fromX="3991" fromY="589" />„Tak, tak, a on czesto przychodzi z przyjaciólmi, bardzo zle. Nie wiem, kto skrzywdzil ich rodzine, ale to nie byl mój krewny, przysiegam!'</nodes>
+      <outputs name="[Percepcja, inteligencja, goblin lub szczescie] Sprobuj ustalic, czy mowi prawde." ownerID="13" targetID="14" fromX="3991" fromY="749" />
+      <outputs name="Zgadzam sie, aby pomoc im zatrzymac to zagrozenie. Byc moze zabojca goblinow bedzie sluchal rozumu - jesli nie, to ostrze." ownerID="13" targetID="20" fromX="3991" fromY="669" />
+      <outputs name="Powiedz, ze to nie jest twoja sprawa, ale jesli zaplaca, mozesz sobie poradzic z zabojca." ownerID="13" targetID="12" fromX="3991" fromY="589" />„Tak, tak, a on czesto przychodzi z przyjaciolmi, bardzo zle. Nie wiem, kto skrzywdzil ich rodzine, ale to nie byl moj krewny, przysiegam!'</nodes>
     <nodes xsi:type="NodeChallenge" ID="14" positionX="4069" positionY="1657" width="500" height="726" challengeType="TypeMental" versusConcept="true" versusGroup="GROUP-CON_M_0P_5M_0S" challengeScale="101" challengedList="ppl">
       <logic>
         <FilterBlock>
@@ -762,28 +762,28 @@ Troche teraz, troche, kiedy przynosisz im glowe. Och, badzcie ostrozni, czasami 
         </ModifierBlock>
       </logic>
       <outputs name="skonfrontuj go i powiedz, ze ma jedna szanse, aby powiedziec ci prawde!" ownerID="15" targetID="16" fromX="5003" fromY="1039" />
-      <outputs name="Zaatakuj lezaca szumowine!" ownerID="15" targetID="3" fromX="5003" fromY="959" />Widzisz pocenie sie goblinów i unikanie kontaktu wzrokowego z toba. Inni wygladaja równie nieswojo. On na pewno klamie.</nodes>
+      <outputs name="Zaatakuj lezaca szumowine!" ownerID="15" targetID="3" fromX="5003" fromY="959" />Widzisz pocenie sie goblinow i unikanie kontaktu wzrokowego z toba. Inni wygladaja rownie nieswojo. On na pewno klamie.</nodes>
     <nodes xsi:type="NodeAdventure" ID="16" positionX="5107" positionY="1621" width="350" height="1046">
-      <outputs name="Powiedz im, ze spróbujesz porozmawiac z tym goblinskim zabójca, ale nie mozesz niczego obiecac, poniewaz sa po czesci winni." ownerID="16" targetID="21" fromX="5432" fromY="1129" />
-      <outputs name="Zgadzam sie, ze cala wioska nie powinna placic za dzialania niektórych, zwlaszcza dzieci. Powiedz, ze porozmawiasz z tym goblinskim zabójca." ownerID="16" targetID="21" fromX="5432" fromY="1049" />
+      <outputs name="Powiedz im, ze sprobujesz porozmawiac z tym goblinskim zabojca, ale nie mozesz niczego obiecac, poniewaz sa po czesci winni." ownerID="16" targetID="21" fromX="5432" fromY="1129" />
+      <outputs name="Zgadzam sie, ze cala wioska nie powinna placic za dzialania niektorych, zwlaszcza dzieci. Powiedz, ze porozmawiasz z tym goblinskim zabojca." ownerID="16" targetID="21" fromX="5432" fromY="1049" />
       <outputs name="Powiedz, ze cokolwiek im przyjdzie, jest zasluzone. Pozostawiac." ownerID="16" targetID="22" fromX="5432" fromY="969" />
       <outputs name="Powiedz im, ze zabierzesz ich dzieci w bezpieczne miejsce, ale reszta powinna stac i zaplacic cene za swoje zbrodnie." ownerID="16" targetID="17" fromX="5432" fromY="889" />
       <outputs name="Sa winni. Atak!" ownerID="16" targetID="3" fromX="5432" fromY="809" />„Och, dobrze ... wiec to nasi chlopcy to zrobili. Myslimy. Znaczy sie, nasza wies zle sobie radzila, plony umarly, duchy nie pomogly. 
 
-Ci chlopcy, mówia, ze ida po nas. I oni to zrobili. Nie pytalismy gdzie. Ale wiedzielismy. Moze nie wszystko, ale jak inaczej mieliby tak wiele? Gwalcilismy jednak, naprawde tego nie wiedzielismy. Ci chlopcy, oni juz nie zyja, wlasciwie umarli. Nie poszlismy, nie zabijalismy. Nasze dzieci, one sa dobre, prosze ...'</nodes>
+Ci chlopcy, mowia, ze ida po nas. I oni to zrobili. Nie pytalismy gdzie. Ale wiedzielismy. Moze nie wszystko, ale jak inaczej mieliby tak wiele? Gwalcilismy jednak, naprawde tego nie wiedzielismy. Ci chlopcy, oni juz nie zyja, wlasciwie umarli. Nie poszlismy, nie zabijalismy. Nasze dzieci, one sa dobre, prosze ...'</nodes>
     <nodes xsi:type="NodeAdventure" ID="17" positionX="5563" positionY="1069" width="350" height="805">
       <outputs name="Niech biegna." ownerID="17" targetID="22" fromX="5888" fromY="577" />
-      <outputs name="Atak!" ownerID="17" targetID="3" fromX="5888" fromY="497" />„Wez nasze dzieci? Nigdy! Bedziemy walczyc i mozemy umrzec, ale zrobimy to razem. Jesli widzisz nas jako winnych, to przynajmniej pozwól nam byc. Spróbujemy uciekac.'</nodes>
+      <outputs name="Atak!" ownerID="17" targetID="3" fromX="5888" fromY="497" />„Wez nasze dzieci? Nigdy! Bedziemy walczyc i mozemy umrzec, ale zrobimy to razem. Jesli widzisz nas jako winnych, to przynajmniej pozwol nam byc. Sprobujemy uciekac.'</nodes>
     <nodes xsi:type="NodeSpawnOnMap" ID="18" positionX="5214" positionY="-654" width="480" height="503" radius="3" groupID="GROUP-Q_SLAYER_8P_7M_6S" destroyOwner="false" linkedEventUniqueID="16">
       <outputs ownerID="18" targetID="19" fromX="5662" fromY="-1086" />
     </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="19" positionX="4669" positionY="-747" width="350" height="530" allPlayersXP="2" allPlayersRP="1" logBookName="QUEST_MISC3_GOBKILL" logBookDescription="QUEST_MISC3_GOBKILL2_DES" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventure" ID="20" positionX="4351" positionY="335" width="350" height="725">
-      <outputs name="Kiwnij glowa i wyjdz, by znalezc tego zabójce goblinów." ownerID="20" targetID="18" fromX="4676" fromY="-156" />„Ty, prawda? Dziekuje ci na pewno! Och, badzcie ostrozni, czasami przychodza z innymi.'</nodes>
+      <outputs name="Kiwnij glowa i wyjdz, by znalezc tego zabojce goblinow." ownerID="20" targetID="18" fromX="4676" fromY="-156" />„Ty, prawda? Dziekuje ci na pewno! Och, badzcie ostrozni, czasami przychodza z innymi.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="21" positionX="5686" positionY="1833" width="350" height="725">
-      <outputs name="Kiwnij glowa i wyjdz, by znalezc tego zabójce goblinów." ownerID="21" targetID="18" fromX="6011" fromY="1341" />„Ty, prawda? Dziekuje ci na pewno! Och, badzcie ostrozni, czasami przychodza z innymi.'</nodes>
+      <outputs name="Kiwnij glowa i wyjdz, by znalezc tego zabojce goblinow." ownerID="21" targetID="18" fromX="6011" fromY="1341" />„Ty, prawda? Dziekuje ci na pewno! Och, badzcie ostrozni, czasami przychodza z innymi.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="22" positionX="6074" positionY="919" width="350" height="725">
-      <outputs name="Wyjdz." ownerID="22" targetID="23" fromX="6399" fromY="427" />Gobliny odchodza tak szybko, jak tylko moga. Niektórzy patrza na ciebie z wdziecznoscia za oszczedzanie zycia, niektórzy ze strachu, a inni ze zlosci i bólu. Jedno z dzieci zegna sie i rzuca kwiat w prezencie.</nodes>
+      <outputs name="Wyjdz." ownerID="22" targetID="23" fromX="6399" fromY="427" />Gobliny odchodza tak szybko, jak tylko moga. Niektorzy patrza na ciebie z wdziecznoscia za oszczedzanie zycia, niektorzy ze strachu, a inni ze zlosci i bolu. Jedno z dzieci zegna sie i rzuca kwiat w prezencie.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="23" positionX="6525" positionY="884" width="350" height="530" allPlayersXP="6" allPlayersRP="3" logBookName="QUEST_MISC3_GOBKILL" logBookDescription="QUEST_MISC3_GOBKILL3_DES" linkedEventUniqueID="0" endOfQuest="true">
       <logic>
         <ModifierBlock>
@@ -797,7 +797,7 @@ Ci chlopcy, mówia, ze ida po nas. I oni to zrobili. Nie pytalismy gdzie. Ale wie
       </logic>
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="24" positionX="5081" positionY="510" width="350" height="725">
-      <outputs name="Popros ich ponownie o prawde." ownerID="24" targetID="25" fromX="5406" fromY="18" />Gobliny wydaja sie nerwowe. Byc moze nie mówia ci wszystkiego.</nodes>
+      <outputs name="Popros ich ponownie o prawde." ownerID="24" targetID="25" fromX="5406" fromY="18" />Gobliny wydaja sie nerwowe. Byc moze nie mowia ci wszystkiego.</nodes>
     <nodes xsi:type="NodeAdventure" ID="25" positionX="2754" positionY="-1053" width="350" height="885">
       <logic>
         <ModifierBlock>
@@ -807,13 +807,13 @@ Ci chlopcy, mówia, ze ida po nas. I oni to zrobili. Nie pytalismy gdzie. Ale wie
         </ModifierBlock>
       </logic>
       <outputs name="Powiedz, ze wszystko wydaje sie podejrzane i powinni sobie z tym poradzic. Pozostawiac." ownerID="25" targetID="8" fromX="3079" fromY="-1544" />
-      <outputs name="Zgadzam sie, aby pomóc im zatrzymac to zagrozenie. Byc moze zabójca goblinów bedzie sluchal rozumu - jesli nie, to ostrze." ownerID="25" targetID="20" fromX="3079" fromY="-1624" />
-      <outputs name="Powiedz, ze to nie jest twoja sprawa, ale jesli zaplaca, mozesz sobie poradzic z zabójca." ownerID="25" targetID="12" fromX="3079" fromY="-1704" />„Och, tak. Cóz, znalismy gobliny, które mogly zrobic zle temu zabójcy. Byc moze dlatego celuje w nas. Ale on jest potworem, nic mu nie zrobilismy!'</nodes>
+      <outputs name="Zgadzam sie, aby pomoc im zatrzymac to zagrozenie. Byc moze zabojca goblinow bedzie sluchal rozumu - jesli nie, to ostrze." ownerID="25" targetID="20" fromX="3079" fromY="-1624" />
+      <outputs name="Powiedz, ze to nie jest twoja sprawa, ale jesli zaplaca, mozesz sobie poradzic z zabojca." ownerID="25" targetID="12" fromX="3079" fromY="-1704" />„Och, tak. Coz, znalismy gobliny, ktore mogly zrobic zle temu zabojcy. Byc moze dlatego celuje w nas. Ale on jest potworem, nic mu nie zrobilismy!'</nodes>
     <nodes xsi:type="NodeAdventure" ID="27" positionX="1337" positionY="-656" width="350" height="966">
-      <outputs name="Zgadzam sie, aby pomóc im zatrzymac to zagrozenie. Byc moze zabójca goblinów bedzie sluchal rozumu - jesli nie, to ostrze." ownerID="27" targetID="20" fromX="1662" fromY="-1147" />
-      <outputs name="Powiedz, ze to nie jest twoja sprawa, ale jesli zaplaca, mozesz sobie poradzic z zabójca." ownerID="27" targetID="12" fromX="1662" fromY="-1227" />
+      <outputs name="Zgadzam sie, aby pomoc im zatrzymac to zagrozenie. Byc moze zabojca goblinow bedzie sluchal rozumu - jesli nie, to ostrze." ownerID="27" targetID="20" fromX="1662" fromY="-1147" />
+      <outputs name="Powiedz, ze to nie jest twoja sprawa, ale jesli zaplaca, mozesz sobie poradzic z zabojca." ownerID="27" targetID="12" fromX="1662" fromY="-1227" />
       <outputs name="Nie, odejdz." ownerID="27" targetID="32" fromX="1662" fromY="-1307" />
-      <outputs name="[Percepcja, inteligencja, goblin lub szczescie] Spróbuj ustalic, czy mówi prawde." ownerID="27" targetID="14" fromX="1662" fromY="-1387" />„Goblinski zabójca zniszczyl nasza wioske i poluje na nas. Ale moze nam pomozesz? Moze zabic tego psycho? Pomysl o naszych dzieciach!'</nodes>
+      <outputs name="[Percepcja, inteligencja, goblin lub szczescie] Sprobuj ustalic, czy mowi prawde." ownerID="27" targetID="14" fromX="1662" fromY="-1387" />„Goblinski zabojca zniszczyl nasza wioske i poluje na nas. Ale moze nam pomozesz? Moze zabic tego psycho? Pomysl o naszych dzieciach!'</nodes>
     <nodes xsi:type="NodeAdventure" ID="28" positionX="-854" positionY="-160" width="350" height="725">
       <logic>
         <ModifierBlock>
@@ -882,10 +882,10 @@ Gobliny uciekaja i zostawiaja cie na ziemi.</nodes>
       </logic>
       <outputs name="Zapytaj ich, czego chca." ownerID="2" targetID="18" fromX="798" fromY="-1007" />
       <outputs name="Atak!" ownerID="2" targetID="4" fromX="798" fromY="-1087" />
-      <outputs name="Zejdz im z drogi i wyjdz." ownerID="2" targetID="17" fromX="798" fromY="-1167" />Natkniesz sie na uzbrojona grupe wojowników. Jest czlowiek w helmie, wysoki, zakapturzony ork z rózdzka, zerka, elf i krasnolud. 
-Czlowiek ma na pasie glowy goblinów, wiec to musi byc szalony zabójca goblinów, o którym ci powiedziano. 
+      <outputs name="Zejdz im z drogi i wyjdz." ownerID="2" targetID="17" fromX="798" fromY="-1167" />Natkniesz sie na uzbrojona grupe wojownikow. Jest czlowiek w helmie, wysoki, zakapturzony ork z rozdzka, zerka, elf i krasnolud. 
+Czlowiek ma na pasie glowy goblinow, wiec to musi byc szalony zabojca goblinow, o ktorym ci powiedziano. 
 
-Patrza na ciebie w góre iw dól, ale nie mówia. </nodes>
+Patrza na ciebie w gore iw dol, ale nie mowia. </nodes>
     <nodes xsi:type="NodeAdventure" ID="3" positionX="133" positionY="614" width="350" height="885">
       <logic>
         <FilterBlock>
@@ -902,8 +902,8 @@ Patrza na ciebie w góre iw dól, ale nie mówia. </nodes>
       </logic>
       <outputs name="Walcz!" ownerID="3" targetID="4" fromX="458" fromY="122" />
       <outputs name="Stan miedzy nimi a twoim goblinskim przyjacielem i powiedz im, zeby sie uspokoili - nie ma potrzeby przemocy. " ownerID="3" targetID="7" fromX="458" fromY="42" />
-      <outputs name="Uciekaj." ownerID="3" targetID="17" fromX="458" fromY="-37" />Natkniesz sie na uzbrojona grupe wojowników. Jest czlowiek w helmie, wysoki, zakapturzony ork z rózdzka, zerka, elf i krasnolud. 
-Czlowiek ma na pasie glowy goblinów, wiec to musi byc szalony zabójca goblinów, o którym ci powiedziano. 
+      <outputs name="Uciekaj." ownerID="3" targetID="17" fromX="458" fromY="-37" />Natkniesz sie na uzbrojona grupe wojownikow. Jest czlowiek w helmie, wysoki, zakapturzony ork z rozdzka, zerka, elf i krasnolud. 
+Czlowiek ma na pasie glowy goblinow, wiec to musi byc szalony zabojca goblinow, o ktorym ci powiedziano. 
 
 Patrza na ciebie i pluja: „Goblin scum, chodz do nas? Dobry.'
 
@@ -939,7 +939,7 @@ Przygotowuja sie do ataku.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="5" targetID="19" fromX="1666" fromY="1057" />Zabijasz notorycznego zabójce goblinów i przez pewien czas otrzymujesz listy podziekowan od róznych ocalalych goblinów. Niektórzy nawet wysylaja prezenty.</nodes>
+      <outputs name="Wyjdz." ownerID="5" targetID="19" fromX="1666" fromY="1057" />Zabijasz notorycznego zabojce goblinow i przez pewien czas otrzymujesz listy podziekowan od roznych ocalalych goblinow. Niektorzy nawet wysylaja prezenty.</nodes>
     <nodes xsi:type="NodeAdventure" ID="6" positionX="2013" positionY="1195" width="350" height="725">
       <logic>
         <ModifierBlock>
@@ -948,7 +948,7 @@ Przygotowuja sie do ataku.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Uciekaj." ownerID="6" targetID="21" fromX="2338" fromY="703" />Zostajesz pokonany, a kazdy zielonoskóry w twojej druzynie nie wyjdzie z tego zywy.</nodes>
+      <outputs name="Uciekaj." ownerID="6" targetID="21" fromX="2338" fromY="703" />Zostajesz pokonany, a kazdy zielonoskory w twojej druzynie nie wyjdzie z tego zywy.</nodes>
     <nodes xsi:type="NodeChallenge" ID="7" positionX="1325" positionY="316" width="500" height="726" challengeType="TypeMental" versusGroup="GROUP-Q_SLAYER_8P_7M_6S" challengeScale="101" challengedList="ppl">
       <logic>
         <FilterBlock>
@@ -982,9 +982,9 @@ Przygotowuja sie do ataku.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Odmów, ze cos widziales. " ownerID="9" targetID="10" fromX="2304" fromY="-112" />
+      <outputs name="Odmow, ze cos widziales. " ownerID="9" targetID="10" fromX="2304" fromY="-112" />
       <outputs name="Powiedz, ze je widziales, ale nie chciales sie angazowac, wiec pozwoliles im uciekac." ownerID="9" targetID="29" fromX="2304" fromY="-192" />
-      <outputs name="Powiedz, ze je widziales i zabiles ich." ownerID="9" targetID="23" fromX="2304" fromY="-272" />„Mów szybko, kochanie goblinów. Czy widziales pasmo zielonej szumowiny biegnacej w ten sposób?'</nodes>
+      <outputs name="Powiedz, ze je widziales i zabiles ich." ownerID="9" targetID="23" fromX="2304" fromY="-272" />„Mow szybko, kochanie goblinow. Czy widziales pasmo zielonej szumowiny biegnacej w ten sposob?'</nodes>
     <nodes xsi:type="NodeProduceDrop" ID="10" positionX="2483" positionY="314" width="460" height="509">
       <outputs ownerID="10" targetID="11" group="G1" fromX="2913" fromY="-44" />
       <outputs ownerID="10" targetID="32" group="G1" fromX="2913" fromY="-124" />
@@ -999,7 +999,7 @@ Przygotowuja sie do ataku.</nodes>
       </logic>
       <outputs name="[Szczur] !!!" ownerID="11" targetID="12" fromX="3682" fromY="286" />
       <outputs name="Kiwnij glowa i wyjdz." ownerID="11" targetID="13" fromX="3682" fromY="206" />
-      <outputs name="Zapytaj, dlaczego tak nienawidza goblinów. Nigdy nie wiedziales, ze sa bardziej lub mniej agresywni niz ludzie." ownerID="11" targetID="15" fromX="3682" fromY="126" />„Dobrze, zostawimy cie. Ale mylisz sie z goblinem. Zielonoskórzy zawsze cie oszukaja. Nie lepiej niz robactwo.'</nodes>
+      <outputs name="Zapytaj, dlaczego tak nienawidza goblinow. Nigdy nie wiedziales, ze sa bardziej lub mniej agresywni niz ludzie." ownerID="11" targetID="15" fromX="3682" fromY="126" />„Dobrze, zostawimy cie. Ale mylisz sie z goblinem. Zielonoskorzy zawsze cie oszukaja. Nie lepiej niz robactwo.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="12" positionX="3830" positionY="1412" width="350" height="805">
       <logic>
         <FilterBlock>
@@ -1012,33 +1012,33 @@ Przygotowuja sie do ataku.</nodes>
         </FilterBlock>
       </logic>
       <outputs name="Kiwnij glowa i wyjdz." ownerID="12" targetID="13" fromX="4155" fromY="920" />
-      <outputs name="Zapytaj, dlaczego tak nienawidza goblinów. Nigdy nie wiedziales, ze sa bardziej lub mniej agresywni niz ludzie." ownerID="12" targetID="15" fromX="4155" fromY="840" />Wojownik nie odpowiada, tylko odwraca wzrok, szukajac sladów goblinów. Zamiast tego ksiadz mówi: 
+      <outputs name="Zapytaj, dlaczego tak nienawidza goblinow. Nigdy nie wiedziales, ze sa bardziej lub mniej agresywni niz ludzie." ownerID="12" targetID="15" fromX="4155" fromY="840" />Wojownik nie odpowiada, tylko odwraca wzrok, szukajac sladow goblinow. Zamiast tego ksiadz mowi: 
 
-'Bah, wyraznie masz bardzo malo sensu, jesli chodzi o przyjaciól. Bez znaczenia. Musze zlapac tych, którzy uciekli. Zacznij od naszej sciezki.'</nodes>
+'Bah, wyraznie masz bardzo malo sensu, jesli chodzi o przyjaciol. Bez znaczenia. Musze zlapac tych, ktorzy uciekli. Zacznij od naszej sciezki.'</nodes>
     <nodes xsi:type="NodeSpawnOnMap" ID="13" positionX="4527" positionY="903" width="480" height="503" radius="0" destroyOwner="true" linkedEventUniqueID="0">
       <outputs ownerID="13" targetID="14" fromX="4975" fromY="470" />
     </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="14" positionX="5190" positionY="773" width="350" height="530" allPlayersXP="6" allPlayersRP="3" logBookName="QUEST_MISC3_GOBKILLSPWNONE" logBookDescription="QUEST_MISC3_GOBKILLSPWNONE3_DES" linkedEventUniqueID="0" endOfQuest="true" />
     <nodes xsi:type="NodeAdventure" ID="15" positionX="3785" positionY="152" width="350" height="885">
       <outputs name="Powiedz, ze to nie twoja troska i odejdz. " ownerID="15" targetID="13" fromX="4110" fromY="-339" />
-      <outputs name="[Hunter] Zaoferuj, ze powiesz im, w która strone poszly gobliny." ownerID="15" targetID="37" fromX="4110" fromY="-419" />
-      <outputs name="Powiedz im, ze rozumiesz zal, ale mordowanie kazdego goblina, którego spotykaja, wydaje sie ekstremalne." ownerID="15" targetID="39" fromX="4110" fromY="-499" />Mezczyzna w helmie nie odpowiada, ale jego elficki towarzysz mówi: 
+      <outputs name="[Hunter] Zaoferuj, ze powiesz im, w ktora strone poszly gobliny." ownerID="15" targetID="37" fromX="4110" fromY="-419" />
+      <outputs name="Powiedz im, ze rozumiesz zal, ale mordowanie kazdego goblina, ktorego spotykaja, wydaje sie ekstremalne." ownerID="15" targetID="39" fromX="4110" fromY="-499" />Mezczyzna w helmie nie odpowiada, ale jego elficki towarzysz mowi: 
 
 'Jako zwykle dziecko nasz przyjaciel byl swiadkiem, jak ich dom zostal spalony i spladrowany, a siostra zgwalcona. Sprawcami byli gobliny. Od tego czasu stali sie wrogami. Ufamy naszemu przyjacielowi, wiec udzielamy pomocy. Byc moze w ich slowach jest prawda. Gobliny udaja, ze sa slabe i mile, ale zawsze knuja, planuja, wtracaja sie w zle duchy i staraja sie szerzyc ciemnosc.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="16" positionX="1365" positionY="-478" width="350" height="805">
       <outputs name="Atak!" ownerID="16" targetID="4" fromX="1690" fromY="-969" />
-      <outputs name="Uciekaj, akceptujac, ze prawdopodobnie uciekniesz elfim lucznikiem." ownerID="16" targetID="33" fromX="1690" fromY="-1049" />Zespól nie slucha. Jeden z nich krzyczy: 
+      <outputs name="Uciekaj, akceptujac, ze prawdopodobnie uciekniesz elfim lucznikiem." ownerID="16" targetID="33" fromX="1690" fromY="-1049" />Zespol nie slucha. Jeden z nich krzyczy: 
 
 'Gobliny musza umrzec!'
 
-Oni zaczynaja sie ruszac, próbujac cie okrazyc.</nodes>
+Oni zaczynaja sie ruszac, probujac cie okrazyc.</nodes>
     <nodes xsi:type="NodeSpawnOnMap" ID="17" positionX="-123" positionY="-756" width="480" height="503" radius="0" destroyOwner="true" linkedEventUniqueID="0">
       <outputs ownerID="17" targetID="8" fromX="325" fromY="-1188" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="18" positionX="965" positionY="-581" width="350" height="885">
-      <outputs name="Odmów, ze cos widziales. " ownerID="18" targetID="10" fromX="1290" fromY="-1072" />
+      <outputs name="Odmow, ze cos widziales. " ownerID="18" targetID="10" fromX="1290" fromY="-1072" />
       <outputs name="Powiedz, ze je widziales, ale nie chciales sie angazowac, wiec pozwoliles im uciekac." ownerID="18" targetID="31" fromX="1290" fromY="-1152" />
-      <outputs name="Powiedz, ze je widziales i zabiles ich." ownerID="18" targetID="23" fromX="1290" fromY="-1232" />„Mów szybko. Czy widziales pasmo zielonej szumowiny biegnacej w ten sposób?'</nodes>
+      <outputs name="Powiedz, ze je widziales i zabiles ich." ownerID="18" targetID="23" fromX="1290" fromY="-1232" />„Mow szybko. Czy widziales pasmo zielonej szumowiny biegnacej w ten sposob?'</nodes>
     <nodes xsi:type="NodeSpawnOnMap" ID="19" positionX="1994" positionY="1751" width="480" height="503" radius="0" destroyOwner="true" linkedEventUniqueID="0">
       <outputs ownerID="19" targetID="20" fromX="2442" fromY="1318" />
     </nodes>
@@ -1057,11 +1057,11 @@ Oni zaczynaja sie ruszac, próbujac cie okrazyc.</nodes>
       </logic>
       <outputs name="Wzruszaj ramionami i powiedz, ze to nie twoja sprawa, ale gobliny nie zyja. Jakakolwiek nagroda?" ownerID="23" targetID="24" fromX="2835" fromY="-907" />
       <outputs name="W tym przypadku przytaknij i powiedz, ze zrobiles dobry uczynek, prawda?" ownerID="23" targetID="28" fromX="2835" fromY="-987" />
-      <outputs name="Powiedz im, ze rozumiesz zal, ale mordowanie kazdego goblina, którego spotykaja, wydaje sie ekstremalne. Znowu tez to zrobiles, wiec kim jestes?" ownerID="23" targetID="27" fromX="2835" fromY="-1067" />„Och. Rozczarowujace dla mnie, ale martwe nie zyje. Dobry.'
+      <outputs name="Powiedz im, ze rozumiesz zal, ale mordowanie kazdego goblina, ktorego spotykaja, wydaje sie ekstremalne. Znowu tez to zrobiles, wiec kim jestes?" ownerID="23" targetID="27" fromX="2835" fromY="-1067" />„Och. Rozczarowujace dla mnie, ale martwe nie zyje. Dobry.'
 
 Jeden z pozostalych kontynuuje: 
 
-' Male gówno zgwalcilo i zabilo ich kochana siostre. Sledzilem ich od lat. Podstepne robaki. Nikt nie zasluguje na zycie. To plemie wielbia jakies mroczne bóstwo, chca, aby ciemnosc powrócila, aby ludzie znów przegrywali.'
+' Male gowno zgwalcilo i zabilo ich kochana siostre. Sledzilem ich od lat. Podstepne robaki. Nikt nie zasluguje na zycie. To plemie wielbia jakies mroczne bostwo, chca, aby ciemnosc powrocila, aby ludzie znow przegrywali.'
 
 Wojownik w helmie pluje, a pozostali skina uroczyscie.</nodes>
     <nodes xsi:type="NodeAdventure" ID="24" positionX="3005" positionY="-401" width="350" height="725">
@@ -1079,14 +1079,14 @@ Wojownik w helmie pluje, a pozostali skina uroczyscie.</nodes>
 
 'Tutaj.'
 
-Ksiadz westchnal i odezwal sie:' Nie dostajesz wiecej slów od tego. Dziekujemy. Twój czyn byl dobry. Badz zdrowy i uwazaj na zielonoskórych.'</nodes>
+Ksiadz westchnal i odezwal sie:' Nie dostajesz wiecej slow od tego. Dziekujemy. Twoj czyn byl dobry. Badz zdrowy i uwazaj na zielonoskorych.'</nodes>
     <nodes xsi:type="NodeSpawnOnMap" ID="25" positionX="3510" positionY="-1174" width="480" height="503" radius="0" destroyOwner="true" linkedEventUniqueID="0">
       <outputs ownerID="25" targetID="26" fromX="3958" fromY="-1606" />
     </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="26" positionX="4056" positionY="-1272" width="350" height="530" allPlayersXP="6" allPlayersRP="3" logBookName="QUEST_MISC3_GOBKILLSPWNONE" logBookDescription="QUEST_MISC3_GOBKILLSPWNONE3_DES" linkedEventUniqueID="0" endOfQuest="true" />
     <nodes xsi:type="NodeAdventure" ID="27" positionX="2946" positionY="-1211" width="350" height="805">
       <outputs name="Kiwnij glowa i wyjdz." ownerID="27" targetID="25" fromX="3271" fromY="-1702" />
-      <outputs name="Wzruszaj ramionami i powiedz, ze to nie twoja sprawa, ale gobliny nie zyja. Jakakolwiek nagroda?" ownerID="27" targetID="24" fromX="3271" fromY="-1782" />Wojownik mówi: 
+      <outputs name="Wzruszaj ramionami i powiedz, ze to nie twoja sprawa, ale gobliny nie zyja. Jakakolwiek nagroda?" ownerID="27" targetID="24" fromX="3271" fromY="-1782" />Wojownik mowi: 
 
 'Tak, dzieci rosna, nienawidza sie, staja sie doroslymi goblinami i szukaja zemsty. Jesli zabije, musze zabic wszystkich.'
 
@@ -1101,28 +1101,28 @@ Ksiadz wyglada na zaklopotanego, ale milczy.</nodes>
       </logic>
       <outputs name="Kiwnij glowa i wyjdz." ownerID="28" targetID="25" fromX="2833" fromY="-1805" />Wojownik kiwa glowa i podaje ci bron: 
 
-'Tak.- Nastepnie podaje ci klatke ze zwierzeciem w srodku. - Za zabicie wiecej zielonoskórych.'
+'Tak.- Nastepnie podaje ci klatke ze zwierzeciem w srodku. - Za zabicie wiecej zielonoskorych.'
 
-Ksiadz westchnal i odezwal sie:' Nie dostajesz wiecej slów od tego. Dziekujemy. Twój czyn byl dobry. Badz zdrowy i uwazaj na zielonoskórych.'</nodes>
+Ksiadz westchnal i odezwal sie:' Nie dostajesz wiecej slow od tego. Dziekujemy. Twoj czyn byl dobry. Badz zdrowy i uwazaj na zielonoskorych.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="29" positionX="4304" positionY="-194" width="350" height="805">
       <outputs name="Odsun sie od nich." ownerID="29" targetID="38" fromX="4629" fromY="-685" />
-      <outputs name="Zapytaj, dlaczego tak nienawidza goblinów. Nigdy nie wiedziales, ze sa bardziej lub mniej agresywni niz ludzie." ownerID="29" targetID="15" fromX="4629" fromY="-765" />Wojownik kiwa glowa i mówi: 
+      <outputs name="Zapytaj, dlaczego tak nienawidza goblinow. Nigdy nie wiedziales, ze sa bardziej lub mniej agresywni niz ludzie." ownerID="29" targetID="15" fromX="4629" fromY="-765" />Wojownik kiwa glowa i mowi: 
 
 - To bylo glupie. Beda uciekac, rosnac. Wiecej zabijania.'
 
-Nieprzyjemna cisza spada na grupe i jeden z towarzyszy mówi: 
+Nieprzyjemna cisza spada na grupe i jeden z towarzyszy mowi: 
 
-' Lepiej juz wyjdz, kochanie goblinów.'</nodes>
+' Lepiej juz wyjdz, kochanie goblinow.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="31" positionX="1378" positionY="-1347" width="350" height="885">
-      <outputs name="Potwierdz, ze to nie twoja troska, a takze nie pomogles goblinom - po prostu pozwól im odejsc." ownerID="31" targetID="36" fromX="1703" fromY="-1838" />
-      <outputs name="[Hunter] Zaoferuj, ze powiesz im, w która strone poszly gobliny." ownerID="31" targetID="37" fromX="1703" fromY="-1918" />
-      <outputs name="Zapytaj, dlaczego tak nienawidza goblinów. Nigdy nie wiedziales, ze sa bardziej lub mniej agresywni niz ludzie." ownerID="31" targetID="15" fromX="1703" fromY="-1998" />Wojownik kiwa glowa i mówi: 
+      <outputs name="Potwierdz, ze to nie twoja troska, a takze nie pomogles goblinom - po prostu pozwol im odejsc." ownerID="31" targetID="36" fromX="1703" fromY="-1838" />
+      <outputs name="[Hunter] Zaoferuj, ze powiesz im, w ktora strone poszly gobliny." ownerID="31" targetID="37" fromX="1703" fromY="-1918" />
+      <outputs name="Zapytaj, dlaczego tak nienawidza goblinow. Nigdy nie wiedziales, ze sa bardziej lub mniej agresywni niz ludzie." ownerID="31" targetID="15" fromX="1703" fromY="-1998" />Wojownik kiwa glowa i mowi: 
 
 - To bylo glupie. Beda uciekac, rosnac. Wiecej zabijania.'
 
-Nieprzyjemna cisza spada na grupe i jeden z towarzyszy mówi: 
+Nieprzyjemna cisza spada na grupe i jeden z towarzyszy mowi: 
 
-' Lepiej juz wyjdz, kochanie goblinów.'</nodes>
+' Lepiej juz wyjdz, kochanie goblinow.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="32" positionX="4753" positionY="-226" width="350" height="725">
       <logic>
         <ModifierBlock>
@@ -1139,11 +1139,11 @@ Nieprzyjemna cisza spada na grupe i jeden z towarzyszy mówi:
       </logic>
       <outputs name="Wyjdz." ownerID="32" targetID="13" fromX="5078" fromY="-717" />„Klamiesz. Idziesz z nimi i klamiesz dla nich. Glupi.'
 
-Nieprzyjemna cisza spada na grupe i jeden z towarzyszy mówi: 
+Nieprzyjemna cisza spada na grupe i jeden z towarzyszy mowi: 
 
-' Lepiej juz wyjdz, kochanie goblinów.'
+' Lepiej juz wyjdz, kochanie goblinow.'
 
-Odchodza i zdajesz sobie sprawe, ze jeden z ich magów cie przeklal.</nodes>
+Odchodza i zdajesz sobie sprawe, ze jeden z ich magow cie przeklal.</nodes>
     <nodes xsi:type="NodeDealDamage" ID="33" positionX="1891" positionY="-950" width="460" height="459" challengeTypeDamage="TypePhysical" minDamage="30" maxDamage="60" useCountInPercent="true" targetGroup="ppl">
       <outputs ownerID="33" targetID="34" fromX="2320" fromY="-1338" />
     </nodes>
@@ -1162,7 +1162,7 @@ Odchodza i zdajesz sobie sprawe, ze jeden z ich magów cie przeklal.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="36" targetID="13" fromX="2639" fromY="-2646" />Wojownik patrzy na ciebie przez chwile, a potem znów kiwa glowa: 
+      <outputs name="Wyjdz." ownerID="36" targetID="13" fromX="2639" fromY="-2646" />Wojownik patrzy na ciebie przez chwile, a potem znow kiwa glowa: 
 
 'Tak. Glupi, ale moze lepiej. Mogli cie skrzywdzic. Wyjedziemy teraz. Nie ufaj im.'
 </nodes>
@@ -1187,7 +1187,7 @@ Odchodza i zdajesz sobie sprawe, ze jeden z ich magów cie przeklal.</nodes>
       </logic>
       <outputs name="Zycz im szczescia i wyjdz." ownerID="37" targetID="25" fromX="1000" fromY="-2237" />„Tak, dobrze. Tutaj.'
 
-Wojownik wrecza ci zaplate za informacje, a zespól wyrusza w formacje lowiecka.</nodes>
+Wojownik wrecza ci zaplate za informacje, a zespol wyrusza w formacje lowiecka.</nodes>
     <nodes xsi:type="NodeAdventure" ID="38" positionX="5396" positionY="-184" width="350" height="725">
       <logic>
         <ModifierBlock>
@@ -1202,12 +1202,12 @@ Wojownik wrecza ci zaplate za informacje, a zespól wyrusza w formacje lowiecka.<
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="38" targetID="13" fromX="5721" fromY="-675" />Obserwuja, jak sie poruszasz, a potem takze odchodzisz, a pózniej zdajesz sobie sprawe, ze jeden z ich magów cie przeklal.</nodes>
+      <outputs name="Wyjdz." ownerID="38" targetID="13" fromX="5721" fromY="-675" />Obserwuja, jak sie poruszasz, a potem takze odchodzisz, a pozniej zdajesz sobie sprawe, ze jeden z ich magow cie przeklal.</nodes>
     <nodes xsi:type="NodeAdventure" ID="39" positionX="4821" positionY="-1002" width="350" height="966">
-      <outputs name="[Hunter] Zaoferuj, ze powiesz im, w która strone poszly gobliny." ownerID="39" targetID="37" fromX="5146" fromY="-1493" />
-      <outputs name="[Zamieszanie] Zgadzam sie z jego punktem widzenia. Wróg pozostawiony przy zyciu jest wrogiem na zawsze w cieniu. Zycze im dobrego polowania." ownerID="39" targetID="40" fromX="5146" fromY="-1573" />
+      <outputs name="[Hunter] Zaoferuj, ze powiesz im, w ktora strone poszly gobliny." ownerID="39" targetID="37" fromX="5146" fromY="-1493" />
+      <outputs name="[Zamieszanie] Zgadzam sie z jego punktem widzenia. Wrog pozostawiony przy zyciu jest wrogiem na zawsze w cieniu. Zycze im dobrego polowania." ownerID="39" targetID="40" fromX="5146" fromY="-1573" />
       <outputs name="[Harmonia] Powiedz im, ze ich nienawistna sciezka doprowadzi tylko do wiekszej smierci. Jesli te gobliny sa rzeczywiscie w zmroku z ciemnoscia, musza zostac zatrzymane. Ale zabijanie mlodych w akcji wyprzedzajacej nigdy nie bedzie dobre." ownerID="39" targetID="41" fromX="5146" fromY="-1653" />
-      <outputs name="Powiedz, ze to nie twoja troska i odejdz. " ownerID="39" targetID="38" fromX="5146" fromY="-1733" />Wojownik mówi: 
+      <outputs name="Powiedz, ze to nie twoja troska i odejdz. " ownerID="39" targetID="38" fromX="5146" fromY="-1733" />Wojownik mowi: 
 
 'Dzieci rosna, nienawidza sie, staja sie doroslymi goblinami i szukaja zemsty. Jesli zabije, musze zabic wszystkich.'
 
@@ -1228,9 +1228,9 @@ Ksiadz wyglada na zaklopotanego, ale milczy. Inni kiwaja glowa.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="40" targetID="13" fromX="5619" fromY="-1470" />Nie odpowiadaja, ale widzisz jednego z magów, który rzuci czar na twoja droge, zanim zatrzyma sie i odlozy rózdzke. 
+      <outputs name="Wyjdz." ownerID="40" targetID="13" fromX="5619" fromY="-1470" />Nie odpowiadaja, ale widzisz jednego z magow, ktory rzuci czar na twoja droge, zanim zatrzyma sie i odlozy rozdzke. 
 
-Zespól sie wyprowadza.</nodes>
+Zespol sie wyprowadza.</nodes>
     <nodes xsi:type="NodeAdventure" ID="41" positionX="5704" positionY="-1297" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -1248,11 +1248,11 @@ Zespól sie wyprowadza.</nodes>
 
 Wojownik wyglada bardzo niekomfortowo i zwraca sie do ciebie: 
 
-' Teraz to zrobiles. Mówisz tak, ale kiedy przynosza ciemnosc, twoi bogowie poprosa nas o zrobienie czegos. 
+' Teraz to zrobiles. Mowisz tak, ale kiedy przynosza ciemnosc, twoi bogowie poprosa nas o zrobienie czegos. 
 
 Ale na razie oszczedze zielone dzieci. Szczesliwy?'
 
-Pytanie bylo zdecydowanie bardziej dla kaplana niz dla ciebie. Zera kiwa glowa, a zespól odsuwa sie.</nodes>
+Pytanie bylo zdecydowanie bardziej dla kaplana niz dla ciebie. Zera kiwa glowa, a zespol odsuwa sie.</nodes>
   </Adventure>
   <Adventure name="Goblin Killer Spwn2" uniqueID="16" typeGeneric="false" typePerGroupGeneric="false" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="54" eventTag="TAG-LOG15" joinIsForced="false" joinType="AllAlly" joinRange="MovementArea">
     <nodes xsi:type="NodeStarting" ID="1" positionX="10" positionY="-10" width="347" height="661" image="Event231">
@@ -1269,13 +1269,13 @@ Pytanie bylo zdecydowanie bardziej dla kaplana niz dla ciebie. Zera kiwa glowa, 
           </LogicFilter>
         </FilterBlock>
       </logic>
-      <outputs name="Zapytaj, czy to oni scigaja grupe goblinów." ownerID="2" targetID="18" fromX="787" fromY="-455" />
+      <outputs name="Zapytaj, czy to oni scigaja grupe goblinow." ownerID="2" targetID="18" fromX="787" fromY="-455" />
       <outputs name="Atak!" ownerID="2" targetID="4" fromX="787" fromY="-535" />
       <outputs name="Zejdz im z drogi i wyjdz." ownerID="2" targetID="17" fromX="787" fromY="-615" />
-      <outputs name="[Goblin] Zabójcza szumowina. Atakuj ich!" ownerID="2" targetID="42" fromX="787" fromY="-695" />Natkniesz sie na uzbrojona grupe wojowników. Jest czlowiek w helmie, wysoki, zakapturzony ork z rózdzka, zerka, elf i krasnolud. 
-Czlowiek ma na pasie glowy goblinów, wiec to musi byc szalony zabójca goblinów, o którym ci powiedziano. 
+      <outputs name="[Goblin] Zabojcza szumowina. Atakuj ich!" ownerID="2" targetID="42" fromX="787" fromY="-695" />Natkniesz sie na uzbrojona grupe wojownikow. Jest czlowiek w helmie, wysoki, zakapturzony ork z rozdzka, zerka, elf i krasnolud. 
+Czlowiek ma na pasie glowy goblinow, wiec to musi byc szalony zabojca goblinow, o ktorym ci powiedziano. 
 
-Patrza na ciebie w góre iw dól, ale nie mówia. </nodes>
+Patrza na ciebie w gore iw dol, ale nie mowia. </nodes>
     <nodes xsi:type="NodeChallenge" ID="4" positionX="513" positionY="1695" width="500" height="726" challengeType="TypePhysical" versusGroup="GROUP-Q_SLAYER_8P_7M_6S" challengeScale="101" challengedList="ppl">
       <outputs name="Win" ownerID="4" targetID="5" fromX="954" fromY="1199" />
       <outputs name="Lose" ownerID="4" targetID="6" fromX="954" fromY="1119" />
@@ -1307,7 +1307,7 @@ Patrza na ciebie w góre iw dól, ale nie mówia. </nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="5" targetID="19" fromX="1628" fromY="1209" />Zabijasz notorycznego zabójce goblinów i przez pewien czas otrzymujesz listy podziekowan od róznych ocalalych goblinów. Niektórzy nawet wysylaja prezenty.</nodes>
+      <outputs name="Wyjdz." ownerID="5" targetID="19" fromX="1628" fromY="1209" />Zabijasz notorycznego zabojce goblinow i przez pewien czas otrzymujesz listy podziekowan od roznych ocalalych goblinow. Niektorzy nawet wysylaja prezenty.</nodes>
     <nodes xsi:type="NodeAdventure" ID="6" positionX="1970" positionY="1254" width="350" height="725">
       <logic>
         <ModifierBlock>
@@ -1316,7 +1316,7 @@ Patrza na ciebie w góre iw dól, ale nie mówia. </nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Uciekaj." ownerID="6" targetID="21" fromX="2295" fromY="762" />Zostajesz pokonany, a kazdy zielonoskóry w twojej druzynie nie wyjdzie z tego zywy.</nodes>
+      <outputs name="Uciekaj." ownerID="6" targetID="21" fromX="2295" fromY="762" />Zostajesz pokonany, a kazdy zielonoskory w twojej druzynie nie wyjdzie z tego zywy.</nodes>
     <nodes xsi:type="NodeChallenge" ID="7" positionX="2006" positionY="436" width="500" height="726" challengeType="TypeMental" versusGroup="GROUP-Q_SLAYER_8P_7M_6S" challengeScale="101" challengedList="ppl">
       <logic>
         <FilterBlock>
@@ -1341,27 +1341,27 @@ Patrza na ciebie w góre iw dól, ale nie mówia. </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="8" positionX="-781" positionY="-573" width="350" height="530" allPlayersXP="1" logBookName="QUEST_MISC3_GOBKILLSPWNONE" logBookDescription="QUEST_MISC3_GOBKILLSPWNONE_DES" linkedEventUniqueID="0" endOfQuest="true" />
     <nodes xsi:type="NodeAdventure" ID="15" positionX="1797" positionY="-1466" width="350" height="1126">
       <outputs name="Powiedz, ze wiesz, co gobliny zrobily swojej rodzinie, ale na pewno cala wioska nie musi za to placic, przynajmniej nie smiercia?" ownerID="15" targetID="44" fromX="2122" fromY="-1957" />
-      <outputs name="Gobliny ci tego nie powiedzialy. Zaproponuj ujawnienie, w która strone poszli." ownerID="15" targetID="45" fromX="2122" fromY="-2037" />
-      <outputs name="Spróbuj przekonac ich, aby to odpuscili. Z pewnoscia dzieci mozna oszczedzic?" ownerID="15" targetID="43" fromX="2122" fromY="-2117" />
+      <outputs name="Gobliny ci tego nie powiedzialy. Zaproponuj ujawnienie, w ktora strone poszli." ownerID="15" targetID="45" fromX="2122" fromY="-2037" />
+      <outputs name="Sprobuj przekonac ich, aby to odpuscili. Z pewnoscia dzieci mozna oszczedzic?" ownerID="15" targetID="43" fromX="2122" fromY="-2117" />
       <outputs name="Atak!" ownerID="15" targetID="4" fromX="2122" fromY="-2197" />
       <outputs name="[Harmonia] Powiedz im, ze ich nienawistna sciezka doprowadzi tylko do wiekszej smierci. Jesli te gobliny sa rzeczywiscie w zmroku z ciemnoscia, musza zostac zatrzymane. Ale zabijanie mlodych w akcji wyprzedzajacej nigdy nie bedzie dobre." ownerID="15" targetID="41" fromX="2122" fromY="-2277" />
-      <outputs name="[Zamieszanie] Zgadzam sie z jego punktem widzenia. Wróg pozostawiony przy zyciu jest wrogiem na zawsze w cieniu. Zycze im dobrego polowania i wskaze, dokad poszly gobliny." ownerID="15" targetID="40" fromX="2122" fromY="-2358" />Mezczyzna w helmie nie odpowiada, ale jego elficki towarzysz mówi: 
+      <outputs name="[Zamieszanie] Zgadzam sie z jego punktem widzenia. Wrog pozostawiony przy zyciu jest wrogiem na zawsze w cieniu. Zycze im dobrego polowania i wskaze, dokad poszly gobliny." ownerID="15" targetID="40" fromX="2122" fromY="-2358" />Mezczyzna w helmie nie odpowiada, ale jego elficki towarzysz mowi: 
 
 'Jako zwykle dziecko nasz przyjaciel byl swiadkiem, jak ich dom zostal spalony i spladrowany, a siostra zgwalcona. Sprawcami byli gobliny. Od tego czasu stali sie wrogami. Ufamy naszemu przyjacielowi, wiec udzielamy pomocy. Byc moze w ich slowach jest prawda. Gobliny udaja, ze sa slabe i mile, ale zawsze knuja, planuja, wtracaja sie w zle duchy i staraja sie szerzyc ciemnosc.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="16" positionX="2024" positionY="-373" width="350" height="805">
       <outputs name="Atak!" ownerID="16" targetID="4" fromX="2349" fromY="-864" />
-      <outputs name="Uciekaj, akceptujac, ze prawdopodobnie uciekniesz elfim lucznikiem." ownerID="16" targetID="33" fromX="2349" fromY="-944" />Zespól nie slucha. Jeden z nich krzyczy: 
+      <outputs name="Uciekaj, akceptujac, ze prawdopodobnie uciekniesz elfim lucznikiem." ownerID="16" targetID="33" fromX="2349" fromY="-944" />Zespol nie slucha. Jeden z nich krzyczy: 
 
 'Gobliny musza umrzec!'
 
-Oni zaczynaja sie ruszac, próbujac cie okrazyc.</nodes>
+Oni zaczynaja sie ruszac, probujac cie okrazyc.</nodes>
     <nodes xsi:type="NodeSpawnOnMap" ID="17" positionX="-251" positionY="-794" width="480" height="503" radius="0" destroyOwner="true" linkedEventUniqueID="0">
       <outputs ownerID="17" targetID="8" fromX="197" fromY="-1226" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="18" positionX="920" positionY="-81" width="350" height="885">
       <outputs name="[Inteligencja] Powiedz im, ze zabiles gobliny." ownerID="18" targetID="7" fromX="1245" fromY="-572" />
       <outputs name="Zapytaj ich, dlaczego scigaja zwykle dzieci i starszych. Z pewnoscia zniszczenie ich wioski wystarczylo." ownerID="18" targetID="31" fromX="1245" fromY="-652" />
-      <outputs name="Spróbuj przekonac ich, aby to odpuscili. Z pewnoscia dzieci mozna oszczedzic?" ownerID="18" targetID="43" fromX="1245" fromY="-732" />„Tak. Widziales je? Gdzie?'</nodes>
+      <outputs name="Sprobuj przekonac ich, aby to odpuscili. Z pewnoscia dzieci mozna oszczedzic?" ownerID="18" targetID="43" fromX="1245" fromY="-732" />„Tak. Widziales je? Gdzie?'</nodes>
     <nodes xsi:type="NodeSpawnOnMap" ID="19" positionX="1981" positionY="1859" width="480" height="503" radius="0" destroyOwner="true" linkedEventUniqueID="0">
       <outputs ownerID="19" targetID="20" fromX="2429" fromY="1426" />
     </nodes>
@@ -1375,7 +1375,7 @@ Oni zaczynaja sie ruszac, próbujac cie okrazyc.</nodes>
 
 Jeden z pozostalych kontynuuje: 
 
-' Male gówno zgwalcilo i zabilo ich kochana siostre. Sledzilem ich od lat. Podstepne robaki. Nikt nie zasluguje na zycie. To plemie wielbia jakies mroczne bóstwo, chca, aby ciemnosc powrócila, aby ludzie znów przegrywali.'
+' Male gowno zgwalcilo i zabilo ich kochana siostre. Sledzilem ich od lat. Podstepne robaki. Nikt nie zasluguje na zycie. To plemie wielbia jakies mroczne bostwo, chca, aby ciemnosc powrocila, aby ludzie znow przegrywali.'
 
 Wojownik w helmie pluje, a pozostali skina uroczyscie.</nodes>
     <nodes xsi:type="NodeAdventure" ID="24" positionX="3569" positionY="205" width="350" height="725">
@@ -1398,7 +1398,7 @@ Wojownik w helmie pluje, a pozostali skina uroczyscie.</nodes>
 
 'Tutaj.'
 
-Ksiadz westchnal i odezwal sie:' Nie dostajesz wiecej slów od tego. Dziekujemy. Twój czyn byl dobry. Badz zdrowy i uwazaj na zielonoskórych.'</nodes>
+Ksiadz westchnal i odezwal sie:' Nie dostajesz wiecej slow od tego. Dziekujemy. Twoj czyn byl dobry. Badz zdrowy i uwazaj na zielonoskorych.'</nodes>
     <nodes xsi:type="NodeSpawnOnMap" ID="25" positionX="4322" positionY="-372" width="480" height="503" radius="0" destroyOwner="true" linkedEventUniqueID="0">
       <outputs ownerID="25" targetID="26" fromX="4770" fromY="-804" />
     </nodes>
@@ -1413,16 +1413,16 @@ Ksiadz westchnal i odezwal sie:' Nie dostajesz wiecej slów od tego. Dziekujemy. 
       </logic>
       <outputs name="Kiwnij glowa i wyjdz." ownerID="28" targetID="54" fromX="3489" fromY="-873" />Wojownik kiwa glowa i mruczy: 
 
-'Tak.- Nastepnie podaje ci klatke ze zwierzeciem w srodku. - Za zabicie wiecej zielonoskórych.'
+'Tak.- Nastepnie podaje ci klatke ze zwierzeciem w srodku. - Za zabicie wiecej zielonoskorych.'
 
 Ksiadz westchnal i odezwal sie: 
 
-' Nie dostajesz wiecej slów od tego. Dziekujemy. Twój czyn byl dobry. Badz zdrowy i uwazaj na zielonoskórych.'</nodes>
+' Nie dostajesz wiecej slow od tego. Dziekujemy. Twoj czyn byl dobry. Badz zdrowy i uwazaj na zielonoskorych.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="31" positionX="1519" positionY="-351" width="350" height="966">
-      <outputs name="Zapytaj, dlaczego tak nienawidza goblinów. Nigdy nie wiedziales, ze sa bardziej lub mniej agresywni niz ludzie." ownerID="31" targetID="15" fromX="1844" fromY="-842" />
+      <outputs name="Zapytaj, dlaczego tak nienawidza goblinow. Nigdy nie wiedziales, ze sa bardziej lub mniej agresywni niz ludzie." ownerID="31" targetID="15" fromX="1844" fromY="-842" />
       <outputs name="Powiedz, ze wiesz, co gobliny zrobily swojej rodzinie, ale na pewno cala wioska nie musi za to placic, przynajmniej nie smiercia?" ownerID="31" targetID="44" fromX="1844" fromY="-922" />
-      <outputs name="Spróbuj przekonac ich, aby to odpuscili. Z pewnoscia dzieci mozna oszczedzic?" ownerID="31" targetID="43" fromX="1844" fromY="-1002" />
-      <outputs name="Atak!" ownerID="31" targetID="4" fromX="1844" fromY="-1082" />Wojownik mówi: 
+      <outputs name="Sprobuj przekonac ich, aby to odpuscili. Z pewnoscia dzieci mozna oszczedzic?" ownerID="31" targetID="43" fromX="1844" fromY="-1002" />
+      <outputs name="Atak!" ownerID="31" targetID="4" fromX="1844" fromY="-1082" />Wojownik mowi: 
 
 'Dzieci rosna, nienawidza sie, staja sie doroslymi goblinami i szukaja zemsty. Jesli zabije, musze zabic wszystkich.'
 
@@ -1438,7 +1438,7 @@ Ksiadz wyglada na zaklopotanego, ale milczy. Inni kiwaja glowa.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Powiedz, ze to wlasciwa rzecz. Cykl przemocy powinien sie zakonczyc. Zycze im dobrze i odejdz." ownerID="32" targetID="54" fromX="3873" fromY="810" />„Tak. Raz to zostawie. Ale jesli beda rosnac, by zabijac i przynosic ciemnosc, to równiez ponosicie wine.'
+      <outputs name="Powiedz, ze to wlasciwa rzecz. Cykl przemocy powinien sie zakonczyc. Zycze im dobrze i odejdz." ownerID="32" targetID="54" fromX="3873" fromY="810" />„Tak. Raz to zostawie. Ale jesli beda rosnac, by zabijac i przynosic ciemnosc, to rowniez ponosicie wine.'
 
 Wyprowadzaja sie.</nodes>
     <nodes xsi:type="NodeDealDamage" ID="33" positionX="2561" positionY="-1221" width="460" height="459" challengeTypeDamage="TypePhysical" minDamage="30" maxDamage="60" useCountInPercent="true" targetGroup="ppl">
@@ -1464,7 +1464,7 @@ Wyprowadzaja sie.</nodes>
       </logic>
       <outputs name="Zycz im szczescia i wyjdz." ownerID="37" targetID="50" fromX="2279" fromY="-3173" />„Tak, dobrze. Tutaj.'
 
-Wojownik wrecza ci zaplate za informacje, a zespól wyrusza w formacje lowiecka.</nodes>
+Wojownik wrecza ci zaplate za informacje, a zespol wyrusza w formacje lowiecka.</nodes>
     <nodes xsi:type="NodeAdventure" ID="40" positionX="2651" positionY="-2878" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -1495,7 +1495,7 @@ Wojownik wrecza ci zaplate za informacje, a zespól wyrusza w formacje lowiecka.<
       </logic>
       <outputs name="Wyjdz." ownerID="40" targetID="52" fromX="2976" fromY="-3369" />„Tak, rozumiesz. Tutaj.'
 
-Wojownik wrecza ci zaplate za informacje, a zespól wyrusza w formacje lowiecka.</nodes>
+Wojownik wrecza ci zaplate za informacje, a zespol wyrusza w formacje lowiecka.</nodes>
     <nodes xsi:type="NodeAdventure" ID="41" positionX="2442" positionY="-1992" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -1516,11 +1516,11 @@ Wojownik wrecza ci zaplate za informacje, a zespól wyrusza w formacje lowiecka.<
 
 Wojownik wyglada bardzo niekomfortowo i zwraca sie do ciebie: 
 
-' Teraz to zrobiles. Mówisz tak, ale kiedy przynosza ciemnosc, twoi bogowie poprosa nas o zrobienie czegos. 
+' Teraz to zrobiles. Mowisz tak, ale kiedy przynosza ciemnosc, twoi bogowie poprosa nas o zrobienie czegos. 
 
 Ale na razie oszczedze zielone dzieci. Szczesliwy?'
 
-Pytanie bylo zdecydowanie bardziej dla kaplana niz dla ciebie. Zera kiwa glowa, a zespól odsuwa sie.</nodes>
+Pytanie bylo zdecydowanie bardziej dla kaplana niz dla ciebie. Zera kiwa glowa, a zespol odsuwa sie.</nodes>
     <nodes xsi:type="NodeChallenge" ID="42" positionX="-219" positionY="1426" width="500" height="726" challengeType="TypePhysical" versusGroup="GROUP-Q_SLAYER_8P_7M_6S" challengeScale="101" challengedList="ppl">
       <logic>
         <FilterBlock>
@@ -1546,7 +1546,7 @@ Pytanie bylo zdecydowanie bardziej dla kaplana niz dla ciebie. Zera kiwa glowa, 
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Spróbuj przekonac ich, aby to odpuscili. Z pewnoscia dzieci mozna oszczedzic?" ownerID="44" targetID="43" fromX="1250" fromY="-1825" />
+      <outputs name="Sprobuj przekonac ich, aby to odpuscili. Z pewnoscia dzieci mozna oszczedzic?" ownerID="44" targetID="43" fromX="1250" fromY="-1825" />
       <outputs name="Tak, powiedz im, gdzie poszly gobliny." ownerID="44" targetID="45" fromX="1250" fromY="-1905" />
       <outputs name="Atak!" ownerID="44" targetID="4" fromX="1250" fromY="-1985" />„Wiec to oni, dobrze. Nie bylem pewien. Czy widziales, gdzie oni poszli? Zaplaca.'</nodes>
     <nodes xsi:type="NodeDealDamage" ID="45" positionX="1251" positionY="-2606" width="460" height="459" challengeTypeDamage="TypeMental" minDamage="40" maxDamage="80" useCountInPercent="true" targetGroup="gob">
@@ -1589,7 +1589,7 @@ Pytanie bylo zdecydowanie bardziej dla kaplana niz dla ciebie. Zera kiwa glowa, 
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="54" targetID="25" fromX="4173" fromY="-1065" />Gobliny odnajda cie pózniej i dziekuje, ze dales im czas na ucieczke. Znalezli krewnych i razem zostawiaja ci nagrode.</nodes>
+      <outputs name="Wyjdz." ownerID="54" targetID="25" fromX="4173" fromY="-1065" />Gobliny odnajda cie pozniej i dziekuje, ze dales im czas na ucieczke. Znalezli krewnych i razem zostawiaja ci nagrode.</nodes>
   </Adventure>
   <Adventure name="VOLCANIC" uniqueID="18" allowOnce="true" typeGeneric="false" typePerGroupGeneric="true" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="4" joinIsForced="true" joinType="AllAlly" joinRange="MovementArea">
     <nodes xsi:type="NodeStarting" ID="1" positionX="10" positionY="-10" width="347" height="661" image="Event031">
@@ -1603,13 +1603,13 @@ Pytanie bylo zdecydowanie bardziej dla kaplana niz dla ciebie. Zera kiwa glowa, 
       <outputs ownerID="1" targetID="2" fromX="334" fromY="-613" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="2" positionX="645" positionY="-78" width="350" height="725">
-      <outputs name="Zejdz na lad." ownerID="2" targetID="3" fromX="970" fromY="-569" />Przybywasz na ziemie wulkaniczne, nazwane tak od wielu aktywnych wulkanów i dolów lawy. 
+      <outputs name="Zejdz na lad." ownerID="2" targetID="3" fromX="970" fromY="-569" />Przybywasz na ziemie wulkaniczne, nazwane tak od wielu aktywnych wulkanow i dolow lawy. 
 
-Od pokrytych popiolem równin i wypalonych terenów suchych po wysokie szczyty wulkanicznych gór, wciaz gorace, duszne powietrze i ciagle zagrozenie erupcja utrzymuje dzika przyrode i wszystkich szalonych osadników na palcach .</nodes>
+Od pokrytych popiolem rownin i wypalonych terenow suchych po wysokie szczyty wulkanicznych gor, wciaz gorace, duszne powietrze i ciagle zagrozenie erupcja utrzymuje dzika przyrode i wszystkich szalonych osadnikow na palcach .</nodes>
     <nodes xsi:type="NodeAdventure" ID="3" positionX="1180" positionY="-180" width="350" height="725">
-      <outputs name="Wyjdz." ownerID="3" targetID="4" fromX="1505" fromY="-671" />Ta surowa, bezlitosna kraina jest domem dla klanów alfa, które ciesza sie codziennym wyzwaniem srodowiska. 
+      <outputs name="Wyjdz." ownerID="3" targetID="4" fromX="1505" fromY="-671" />Ta surowa, bezlitosna kraina jest domem dla klanow alfa, ktore ciesza sie codziennym wyzwaniem srodowiska. 
 
-Mozesz takze znalezc lawowe trolle, a nawet od czasu do czasu smok czajacy sie wsród stopionych skal. 
+Mozesz takze znalezc lawowe trolle, a nawet od czasu do czasu smok czajacy sie wsrod stopionych skal. 
 
 Ta ziemia jest bogata w obsydian i inne skaly, a galaretka z chrzaszczy to lokalna specjalnosc.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="4" positionX="1680" positionY="-268" width="350" height="530" allPlayersXP="1" allPlayersRP="2" linkedEventUniqueID="0">
@@ -1641,11 +1641,11 @@ Ta ziemia jest bogata w obsydian i inne skaly, a galaretka z chrzaszczy to lokal
 
 Uwazaj na nocne przerazenia i potwory z ciemnosci, skradajace sie w kazdym zakatku.</nodes>
     <nodes xsi:type="NodeAdventure" ID="3" positionX="905" positionY="-60" width="350" height="725">
-      <outputs name="Wyjdz." ownerID="3" targetID="4" fromX="1230" fromY="-551" />Pomimo niebezpieczenstw, kraina ciemnosci jest domem dla duchowych rozmówców, plemion goblinów, które czuja sie swobodnie w ciemnosci i wykorzystuja ciensza zaslone miedzy tym swiatem a swiatem szarosci duchów. 
+      <outputs name="Wyjdz." ownerID="3" targetID="4" fromX="1230" fromY="-551" />Pomimo niebezpieczenstw, kraina ciemnosci jest domem dla duchowych rozmowcow, plemion goblinow, ktore czuja sie swobodnie w ciemnosci i wykorzystuja ciensza zaslone miedzy tym swiatem a swiatem szarosci duchow. 
 
-The shadowkin, bardziej nieuchwytna i niebezpieczna frakcja tych, których dawno temu zmienila ciemnosc, czai sie w cieniu. 
+The shadowkin, bardziej nieuchwytna i niebezpieczna frakcja tych, ktorych dawno temu zmienila ciemnosc, czai sie w cieniu. 
 
-Wyspa znana jest ze smoczych kosci i grzybów.</nodes>
+Wyspa znana jest ze smoczych kosci i grzybow.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="4" positionX="1379" positionY="-160" width="350" height="530" allPlayersXP="1" allPlayersRP="2" linkedEventUniqueID="0">
       <logic>
         <ModifierBlock>
@@ -1677,7 +1677,7 @@ Gdy zimno przelknelo te wyspe, miasta popadly w ruine, a lud uciekl, nie mogac z
     <nodes xsi:type="NodeAdventure" ID="3" positionX="1338" positionY="-219" width="350" height="725" image="Event239">
       <outputs name="Wyjdz." ownerID="3" targetID="4" fromX="1663" fromY="-710" />Nie znajdziesz tu wielu zywych stworzen, ale wiadomo, ze demony lodowe robia od czasu do czasu legowiska. 
 
-Dziad mroz to stwór, który jest wiele, ale jeden. Mozna tez znalezc przerazajace lodowe trolle, kaprysne sniezynka lub zlosliwe sople wedrujace po lodowych równinach lub ukrywajace sie wsród górskich szczytów. 
+Dziad mroz to stwor, ktory jest wiele, ale jeden. Mozna tez znalezc przerazajace lodowe trolle, kaprysne sniezynka lub zlosliwe sople wedrujace po lodowych rowninach lub ukrywajace sie wsrod gorskich szczytow. 
 
 Mozesz tutaj znalezc diamenty i orzechy. 
 </nodes>
@@ -1706,11 +1706,11 @@ Mozesz tutaj znalezc diamenty i orzechy.
       <outputs ownerID="1" targetID="2" fromX="334" fromY="-613" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="2" positionX="533" positionY="-88" width="350" height="725">
-      <outputs name="Zejdz na lad." ownerID="2" targetID="3" fromX="858" fromY="-579" />Przybyles na legendarna starozytna wyspe lesna. Mówi sie, ze ta ziemia wyszla z ukrycia, gdy ziemia sie rozbila, podobnie jak miasta krasnoludów. 
+      <outputs name="Zejdz na lad." ownerID="2" targetID="3" fromX="858" fromY="-579" />Przybyles na legendarna starozytna wyspe lesna. Mowi sie, ze ta ziemia wyszla z ukrycia, gdy ziemia sie rozbila, podobnie jak miasta krasnoludow. 
 
-Znaczna czesc lasów zostala tutaj zniszczona, ale to, co pozostaje, jest nie mniej zapierajace dech w piersiach.</nodes>
+Znaczna czesc lasow zostala tutaj zniszczona, ale to, co pozostaje, jest nie mniej zapierajace dech w piersiach.</nodes>
     <nodes xsi:type="NodeAdventure" ID="3" positionX="1024" positionY="-296" width="350" height="725">
-      <outputs name="Wyjdz." ownerID="3" targetID="4" fromX="1349" fromY="-787" />Te ziemie sa domem dla starszych ras. Zarówno lesne i lesne demony sa straznikami wiecznie zielonych lasów, majac nadzieje, ze pewnego dnia odrodza to, co zostalo utracone. 
+      <outputs name="Wyjdz." ownerID="3" targetID="4" fromX="1349" fromY="-787" />Te ziemie sa domem dla starszych ras. Zarowno lesne i lesne demony sa straznikami wiecznie zielonych lasow, majac nadzieje, ze pewnego dnia odrodza to, co zostalo utracone. 
 
 Stworzenia lesne sa zaciekle terytorialne, wiec nalezy pozostac na strazy. 
 
@@ -1740,11 +1740,11 @@ Starozytne drewno i egzotyczne przyprawy mozna znalezc tutaj.</nodes>
       <outputs ownerID="1" targetID="2" fromX="334" fromY="-613" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="2" positionX="533" positionY="-88" width="350" height="725">
-      <outputs name="Zejdz na lad." ownerID="2" targetID="3" fromX="858" fromY="-579" />Przybyles na ziemie metalowe, bezlitosny region z kamienia i metalu. Kiedy rozbicie odkrylo starozytne krasnoludzkie miasta, ziemia wokól nich zmienila sie. Nawet drzewa staly sie pustymi luskami zelaza, a trawa skamieniala w kamien. </nodes>
+      <outputs name="Zejdz na lad." ownerID="2" targetID="3" fromX="858" fromY="-579" />Przybyles na ziemie metalowe, bezlitosny region z kamienia i metalu. Kiedy rozbicie odkrylo starozytne krasnoludzkie miasta, ziemia wokol nich zmienila sie. Nawet drzewa staly sie pustymi luskami zelaza, a trawa skamieniala w kamien. </nodes>
     <nodes xsi:type="NodeAdventure" ID="3" positionX="1024" positionY="-296" width="350" height="725">
-      <outputs name="Wyjdz." ownerID="3" targetID="4" fromX="1349" fromY="-787" />Ta niegodziwa kraina jest domem dla ziemian, którzy zostali zmuszeni do opuszczenia podziemnych królestw. Przywiazani do ziemi sa dumnymi ludzmi, chroniacymi ich prywatnosc. 
+      <outputs name="Wyjdz." ownerID="3" targetID="4" fromX="1349" fromY="-787" />Ta niegodziwa kraina jest domem dla ziemian, ktorzy zostali zmuszeni do opuszczenia podziemnych krolestw. Przywiazani do ziemi sa dumnymi ludzmi, chroniacymi ich prywatnosc. 
 
-Kraina metalu i kamienia jest takze domem dla rockowych trolli i smoków, wiec nie jest dla slabych serc. 
+Kraina metalu i kamienia jest takze domem dla rockowych trolli i smokow, wiec nie jest dla slabych serc. 
 
 Tutaj mozesz zbierac mithril i jajka.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="4" positionX="1590" positionY="-500" width="350" height="530" allPlayersXP="2" allPlayersRP="2" linkedEventUniqueID="0">
@@ -1782,18 +1782,18 @@ Tutaj mozesz zbierac mithril i jajka.</nodes>
           </LogicFilter>
         </FilterBlock>
       </logic>
-      <outputs name="Zaplac dwoma zyciami, aby je zwrócic." ownerID="2" targetID="3" fromX="452" fromY="-433" />
+      <outputs name="Zaplac dwoma zyciami, aby je zwrocic." ownerID="2" targetID="3" fromX="452" fromY="-433" />
       <outputs name="Plac czterema zyciami, aby oddac jeden." ownerID="2" targetID="6" fromX="452" fromY="-513" />
       <outputs name="Plac szescioma zyciami, aby oddac jeden." ownerID="2" targetID="8" fromX="452" fromY="-593" />
-      <outputs name="Zaplac za osiem zyc, aby je zwrócic." ownerID="2" targetID="9" fromX="452" fromY="-673" />
+      <outputs name="Zaplac za osiem zyc, aby je zwrocic." ownerID="2" targetID="9" fromX="452" fromY="-673" />
       <outputs name="Plac z dziesiecioma zyciami, aby oddac jeden." ownerID="2" targetID="10" fromX="452" fromY="-753" />
-      <outputs name="Zaplac za pietnascie zyc, aby je zwrócic." ownerID="2" targetID="16" fromX="452" fromY="-834" />
-      <outputs name="Zaplac za dwadziescia zyc, aby je zwrócic." ownerID="2" targetID="17" fromX="452" fromY="-914" />
-      <outputs name="Nie mozesz lub nie bedziesz placic. Nadszedl czas, aby zakonczyc te podróz." ownerID="2" targetID="11" fromX="452" fromY="-994" />Pozwoliles umrzec swojemu wybranemu! Bez boskiej wiezi nie bedziesz juz mial zadnej wladzy ani wplywu na swiat, a zatem twoje panowanie sie skonczy. 
+      <outputs name="Zaplac za pietnascie zyc, aby je zwrocic." ownerID="2" targetID="16" fromX="452" fromY="-834" />
+      <outputs name="Zaplac za dwadziescia zyc, aby je zwrocic." ownerID="2" targetID="17" fromX="452" fromY="-914" />
+      <outputs name="Nie mozesz lub nie bedziesz placic. Nadszedl czas, aby zakonczyc te podroz." ownerID="2" targetID="11" fromX="452" fromY="-994" />Pozwoliles umrzec swojemu wybranemu! Bez boskiej wiezi nie bedziesz juz mial zadnej wladzy ani wplywu na swiat, a zatem twoje panowanie sie skonczy. 
 
-Masz jeszcze jedna szanse na pozostanie w grze. Wzywajcie ducha samego kosmicznego drzewa i proscie o zwrócenie wam duszy wybranej przez was. 
+Masz jeszcze jedna szanse na pozostanie w grze. Wzywajcie ducha samego kosmicznego drzewa i proscie o zwrocenie wam duszy wybranej przez was. 
 
-Pamietaj, ze cena jest wysoka i bedzie wzrastac za kazdym razem, gdy naduzywasz swojej boskiej mocy w ten sposób. </nodes>
+Pamietaj, ze cena jest wysoka i bedzie wzrastac za kazdym razem, gdy naduzywasz swojej boskiej mocy w ten sposob. </nodes>
     <nodes xsi:type="NodeTrade" ID="3" positionX="788" positionY="88" width="460" height="479" traderProfile="TRADER-BANDIT_TWO" playerInventory="ppl" startingBalance="-2">
       <logic>
         <FilterBlock>
@@ -1813,7 +1813,7 @@ Pamietaj, ze cena jest wysoka i bedzie wzrastac za kazdym razem, gdy naduzywasz 
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Oczekuj swojego wybranego." ownerID="4" targetID="5" fromX="1712" fromY="-526" />Zaplaciles swoje krwawe oplaty, a duch twojego wybranego powraca. Teraz módlcie sie, aby powrócilo we wlasciwym ciele?</nodes>
+      <outputs name="Oczekuj swojego wybranego." ownerID="4" targetID="5" fromX="1712" fromY="-526" />Zaplaciles swoje krwawe oplaty, a duch twojego wybranego powraca. Teraz modlcie sie, aby powrocilo we wlasciwym ciele?</nodes>
     <nodes xsi:type="NodeDealDamage" ID="5" positionX="1913" positionY="134" width="460" height="699" challengeTypeDamage="TypeMental" minDamage="0" maxDamage="0" useCountInPercent="false">
       <logic>
         <ModifierBlock>

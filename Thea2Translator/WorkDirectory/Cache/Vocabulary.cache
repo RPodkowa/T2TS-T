@@ -34,7 +34,7 @@
 130;1;Attribute;
 130;1;Have;
 125;1;Gathering;Zbieractwo
-125;1;All;
+125;0;All;
 121;1;Armour;
 119;0;One;
 116;1;Shielding;Osłona
@@ -127,7 +127,7 @@
 49;1;Faith;Wiara
 49;0;Morale;
 49;1;Divine;
-49;1;Club;
+49;1;Club;Pałka
 48;1;Random;
 48;1;God;Bostwo
 47;0;Used;
@@ -140,7 +140,7 @@
 46;1;Maximum;
 46;1;Axe;
 46;1;Old;
-46;1;Mallet;
+46;1;Mallet;Młot
 45;1;Rituals;Rytuały
 45;1;Child;
 45;1;Sword;
@@ -271,7 +271,7 @@
 28;1;Shadow;
 28;1;Orc;
 28;1;Him;
-28;1;Bunny;
+28;0;Bunny;
 28;1;Module;
 27;1;See;
 27;1;Magic;
@@ -304,7 +304,7 @@
 24;1;Many;
 24;1;Leave;
 24;0;Water;
-24;1;Iron;
+24;1;Iron;Żelazo
 24;1;Applied;
 24;1;Told;
 23;1;How;
@@ -618,7 +618,7 @@
 11;1;Played;
 11;1;Beautiful;
 11;1;Tough;
-11;1;Slavyan;
+11;1;Slavyan;Słowianie
 11;1;Needs;
 11;1;Strong;
 11;1;Hold;
@@ -749,7 +749,7 @@
 9;1;Dangerous;
 9;1;Within;
 9;1;Yaga;
-9;1;Skshack;
+9;1;Skshack;Skrzat
 9;1;Seems;
 9;1;Trouble;
 9;1;Mroz;
@@ -901,7 +901,7 @@
 7;1;Carrying;
 7;1;Snake;
 7;1;Crow;
-7;1;Let;
+7;0;Let;
 7;1;Extremely;
 7;1;Returned;
 7;1;Appears;
@@ -3639,7 +3639,7 @@
 1;1;Portrait;
 1;1;Ferals;
 1;1;Possums;
-1;1;Shack;
+1;0;Shack;
 1;1;Graveyard;
 1;1;Woods;
 1;1;Bees';

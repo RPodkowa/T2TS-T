@@ -63,6 +63,7 @@
                 <ListBox.ItemTemplate >
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal">
+                            <CheckBox IsChecked="{Binding IsConfirm}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="SetConfirmOnCache" />
                             <Label Content="{Binding CacheElem.Id}" Foreground="{Binding Color}" FontWeight="Bold" />
                             <Label Content="{Binding CacheElem.OriginalText}" Foreground="{Binding Color}" FontWeight="Bold" />
                         </StackPanel>

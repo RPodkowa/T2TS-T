@@ -290,7 +290,7 @@ namespace Thea2Translator.Logic
 
                 var elem = GetElemById(id);
                 if (elem == null) continue;
-                elem.SetTranslated(value, false);
+                elem.SetTranslated(value);
             }
         }
         #endregion

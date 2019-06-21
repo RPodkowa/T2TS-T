@@ -144,7 +144,7 @@ namespace Thea2Translator.DesktopApp.Pages
         {
             if (txtTranslatedText.Text != null && selectedCacheElement?.CacheElem != null)
             {
-                selectedCacheElement.CacheElem.SetTranslated(txtTranslatedText.Text, true);
+                selectedCacheElement.CacheElem.SetTranslated(txtTranslatedText.Text);
 
                 var index = lbItemsToTranslate.SelectedIndex;
 
@@ -347,6 +347,16 @@ namespace Thea2Translator.DesktopApp.Pages
 
         private void TxtSearch_TextChanged(object sender, TextChangedEventArgs e)
         {
+            FilterItems();
+        }
+
+        private void SetConfirmOnCache(object sender, RoutedEventArgs e)
+        {
+            var checkBox = sender as CheckBox;
+            var index = lbItemsToTranslate.Items.IndexOf(checkBox.DataContext);
+
+            filtredElements[index].CacheElem.SetConfirmation(checkBox.IsChecked.Value);
+
             FilterItems();
         }
     }

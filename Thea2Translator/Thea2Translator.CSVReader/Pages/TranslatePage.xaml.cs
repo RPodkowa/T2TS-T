@@ -228,7 +228,7 @@ namespace Thea2Translator.DesktopApp.Pages
                         .ToList();
                 }
 
-                lbItemsToTranslate.ItemsSource = null;
+                //lbItemsToTranslate.ItemsSource = null;
                 lbItemsToTranslate.ItemsSource = filtredElements;              
             }
         }
@@ -386,7 +386,7 @@ namespace Thea2Translator.DesktopApp.Pages
             var index = lbItemsToTranslate.Items.IndexOf(checkBox.DataContext);
 
             filtredElements[index].CacheElem.SetConfirmation(checkBox.IsChecked.Value);
-
+            dataCache.SaveElems();
             FilterItems();
         }
     }

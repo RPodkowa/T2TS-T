@@ -189,7 +189,7 @@ namespace Thea2Translator.Logic
                 ConfirmationTime = "";
                 ConfirmationUser = "";
                 ConfirmationGuid = "";
-            }
+            }           
         }
 
         public void TryUpdateValue(string text)

@@ -1,5 +1,5 @@
 ﻿<DATABASE_QUEST_LOCALIZATION-NO_HSH>
-    <LOC_LIBRARY-EN_QUEST>
+    <LOC_LIBRARY-QUEST>
 	
 <Entry Key="QUEST_RATS_NEST" Val="Rat's Nest"/>   <!-- Quest name example -->
  		<Entry Key="QUEST_RATS_NEST_DES" Val="Your Grandma asked you to clear out her cellar of some pesky rodents."/>   <!-- Quest description example -->
@@ -439,9 +439,6 @@
      <Entry Key="QUEST_MISC3_GOBKILLSPWNONE5_DES" Val="You convinced the goblin killer and one way or another, convinced them not to pursue the goblins."/>
      <Entry Key="QUEST_MISC3_GOBKILLSPWNONE6_DES" Val="You were forced to run away."/>
      <Entry Key="QUEST_MISC3_GOBKILLSPWNONE7_DES" Val="You helped them to track down the goblins and they were grateful."/>
-
-    
-
-    </LOC_LIBRARY-EN_QUEST>
+    </LOC_LIBRARY-QUEST>
   </DATABASE_QUEST_LOCALIZATION-NO_HSH>
   

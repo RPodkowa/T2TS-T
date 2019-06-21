@@ -1,6 +1,6 @@
 ﻿<DATABASE_DES_LOCALIZATION-NO_HSH>
 
-    <LOC_LIBRARY-EN_DES>
+    <LOC_LIBRARY-DES>
         <!-- Tags -->
 		<Entry Key="DES_TAG_WITS" Val="Wits"/>
 		<Entry Key="DES_TAG_WITS_DES" Val="Wits define how quickly the character can act during a challenge."/>
@@ -2657,7 +2657,7 @@
 		<Entry Key="DES_SKILL_SMARTER_EVERY_DAY" Val="Smarter Every Day"/>
 		<Entry Key="DES_SKILL_SMARTER_EVERY_DAY_DES" Val="Each turn you receive a bit of XP."/>
 		<Entry Key="DES_SKILL_TRUE_HEROES" Val="True Heroes"/>
-		<Entry Key="DES_SKILL_TRUE_HEROES_DES" Val="A bit shielding in every challenge granted to each follower by their God."/>
+		<Entry Key="DES_SKILL_TRUE_HEROES_DES" Val="A bit of shielding in every challenge granted to each follower by their God."/>
 		<Entry Key="DES_SKILL_LOGIC_WALL" Val="Logic Wall"/>
 		<Entry Key="DES_SKILL_LOGIC_WALL_DES" Val="A bit shielding in mental and spiritual challenges granted to each follower by their God."/>
 		<Entry Key="DES_SKILL_BRAINER" Val="Clever"/>
@@ -3878,6 +3878,10 @@
 		<Entry Key="DES_TOOLTIP_TRANSFER_FOOD_DES" Val="Use this to quickly transfer a variety of food between your groups."/>
 		<Entry Key="DES_TOOLTIP_GOD_POINTS_CLAIMED" Val="God Points"/>
 		<Entry Key="DES_TOOLTIP_GOD_POINTS_CLAIMED_DES" Val="God Points are added to your profile when opening the Game Summary screen. If you continue playing and earn more points, only the difference will be added next time."/>
+		<Entry Key="DES_TOOLTIP_REPLAY_VO" Val="Replay Narration"/>
+		<Entry Key="DES_TOOLTIP_REPLAY_VO_DES" Val="Replay the narration of the current paragraph."/>
+		<Entry Key="DES_TOOLTIP_MORALE" Val="Morale Gain"/>
+		<Entry Key="DES_TOOLTIP_MORALE_DES" Val="The amount of Morale gained from food each turn. Each character gets +1 Morale per turn for each type of food present in the group's inventory."/>
 		
 		
 		<!-- LOCATIONS AND GROUPS -->
@@ -4117,5 +4121,5 @@
 		<Entry Key="DES_TUT_SUBSKILL_DEFAULT_AXE" Val="Axe Chop"/>
 		<Entry Key="DES_TUT_SUBSKILL_DEFAULT_AXE_DES" Val="Melee attack, targets a single enemy closest to you."/>	
 		
-    </LOC_LIBRARY-EN_DES>
+    </LOC_LIBRARY-DES>
 </DATABASE_DES_LOCALIZATION-NO_HSH>

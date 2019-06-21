@@ -1,5 +1,5 @@
 ﻿<DATABASE_UI_LOCALIZATION-NO_HSH>
-	<LOC_LIBRARY-EN_UI> 
+	<LOC_LIBRARY-UI> 
 		<Entry Key="QUOTE_MARKS_EXAMPLE" Val="&quot;Example&quot;"/>
 		<Entry Key="UI_GREET_PLAYER" Val="Greetings {SCRIPT:UIS_GetCurentPlayerName}!"/>
 		<Entry Key="UI_YOU_ARE_ABOUT_TO_DELETE_PROFILE" Val="You are about to delete player profile: {SCRIPT:UIS_GetProfileToDelete}!"/>
@@ -149,7 +149,7 @@
 		<Entry Key="UI_SVAROG" Val="Svarog"/>
 		<Entry Key="UI_SVAROG_DES" Val="From the flames of the sky and the ashes of darkness past, I rise to my duty! Sun god and master of heavenly fires - that is my honour to bear. But as I once wielded a warrior's garb I now know the true power of light and fire, the simple hearth that lights the homes and hearts of my flock.\n\nIt is not the power of the gods that will save our lands, but the power we can grant to our faithful. In the scorching flames of my domain rise the tools and weapons of true heroes, mortals and immortals alike, sworn to uphold my iron will.\n\nProtect those in need, never back down, never give in and never again allow darkness to rule over light!"/>
 		<Entry Key="UI_TRIGLAV" Val="Triglav"/>
-		<Entry Key="UI_TRIGLAV_DES" Val="Argh! From the scorching lava seeping out of the ashes of our land, I was forged! Veins of wrath pulsate thought my body with rage and purpose. My stone hearts beat in unison, my minds meld into one vision, my fists are driven trifold. I do not know who raised me from the darkness. I do not know why our hearts melt with anger, but I am ready to stand and fight against any who will dare to oppose us!\n\nA new force rises to devour Thea once again and I will stand in its way. This is why I have risen from fire. Walk with me into war, burn our enemies to the ground, melt away those who seek to wound us, crush whoever stands in the path of divine justice and wrath.\n\nAnd you? You are to bow before me and obey!"/>
+		<Entry Key="UI_TRIGLAV_DES" Val="Argh! From the scorching lava seeping out of the ashes of our land, I was forged! Veins of wrath pulsate throughout my body with rage and purpose. My stone hearts beat in unison, my minds meld into one vision, my fists are driven trifold. I do not know who raised me from the darkness. I do not know why our hearts melt with anger, but I am ready to stand and fight against any who will dare to oppose us!\n\nA new force rises to devour Thea once again and I will stand in its way. This is why I have risen from fire. Walk with me into war, burn our enemies to the ground, melt away those who seek to wound us, crush whoever stands in the path of divine justice and wrath.\n\nAnd you? You are to bow before me and obey!"/>
 		<Entry Key="UI_ZORYA" Val="Zorya"/>
 		<Entry Key="UI_ZORYA_DES" Val="My father claims the right to be master of light and the sun, but it is we who ride the night skies in their infinity! The morning star rises far and faded, it is subtle and ever watchful of her enemies. The noon star hangs low and heavy, ready to rush into combat and devour its enemies. The evening star lights up the skies and readies for war! Zorya, Zorza, the Auroras, all names given to us by those brave enough to follow!\n\nI am the bright blade of the night and the shining gauntlet of the day. I hold the beast that would devour our world in my palm and I laugh in the face of the enemy. Be bold, be brutal and swift.\n\nEnemies of balance grow in strength once more, I will tear them apart and devour their entrails! Join me!"/>
 		<Entry Key="UI_LOAD_A_SAVED_GAME" Val="Load a Saved Game"/>
@@ -541,7 +541,7 @@
 		<Entry Key="UI_TURNS_SURVIVED" Val="Turns Survived:"/>
 		<Entry Key="UI_BEST_ITEM" Val="Best Item:"/>
 		<Entry Key="UI_MOST_POWERFUL_CHARACTER" Val="Most Powerful Character:"/>
-		<Entry Key="UI_EVENTS_TAKEN_PART_IN" Val="Events Taken Part In:"/>
+		<Entry Key="UI_EVENTS_TAKEN_PART_IN" Val="Event Paths Uncovered:"/>
 		<Entry Key="UI_TOTAL_POINTS" Val="TOTAL POINTS:"/>
 		<Entry Key="UI_GAME_DIFFICULTY_ADJUSTMENT" Val="Game Difficulty Adjustment:"/>
 		<Entry Key="UI_GOD_POINTS_AWARDED" Val="God Points Awarded:"/>
@@ -898,5 +898,24 @@
 		<Entry Key="UI_ADDED_TO_PROFILE" Val="Added To Profile:"/>
 		<Entry Key="UI_CLAIM" Val="Claim Points"/>
 		<Entry Key="UI_TOTAL_VALUE" Val="Total Value:"/>
-    </LOC_LIBRARY-EN_UI>
+		<Entry Key="UI_SELECT_LANGUAGE" Val="Select Language"/>
+		<Entry Key="UI_LOADING_FILES_FROM_CLOUD_FAILED" Val="Loading files from could has failed, possibly something is blocking drive access.\n\nWarning - data loss may occur! Please contact us on bugs@muhagames.com and we will try to help you resolve your issue."/>
+		<Entry Key="UI_LOCAL_AND_CLOUD_IS_DIFFERENT" Val="Files on your local drive and in the cloud share the same name but are out of sync, which version would you like to keep?\n\n(Note: saves/profiles removed or lost on one computer will not be removed from the other. To prevent data loss, you will have to remove them again on the other computer if you wish.)"/>
+		<Entry Key="UI_USE_CLOUD" Val="Use Cloud"/>
+		<Entry Key="UI_USE_LOCAL" Val="Use Local"/>
+		<Entry Key="UI_MODS" Val="Mods"/>
+		<Entry Key="UI_MOVE_UP" Val="Move Up"/>
+		<Entry Key="UI_MOVE_DOWN" Val="Move Down"/>
+		<Entry Key="UI_MOD_MANAGER" Val="Mod Manager"/>
+		<Entry Key="UI_PUBLISH" Val="Publish"/>
+		<Entry Key="UI_DESCRIPTION" Val="Description"/>
+		<Entry Key="UI_AUTHOR" Val="Author:"/>
+		<Entry Key="UI_VISIBILITY" Val="Visibility:"/>
+		<Entry Key="UI_CHANGES_TO_HAVE_EFFECT" Val="Please restart the application for the changes to take effect."/>
+		<Entry Key="UI_LATER" Val="Later"/>		
+		<Entry Key="UI_PUBLIC" Val="Public"/>
+		<Entry Key="UI_FRIENDS_ONLY" Val="Friends Only"/>
+		<Entry Key="UI_PRIVATE" Val="Private"/>
+		<Entry Key="UI_INCORRECT_VALUE" Val="{COLOR:yellow}Incorrect Value{END_COLOR}"/>
+    </LOC_LIBRARY-UI>
 </DATABASE_UI_LOCALIZATION-NO_HSH>

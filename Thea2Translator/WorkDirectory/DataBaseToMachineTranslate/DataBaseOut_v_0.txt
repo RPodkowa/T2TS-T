@@ -1,10 +1,5 @@
-17:Crafting
-31:Max Health
-33:Max Sanity
-35:Max Faith
 47:Personal Carry Limit
 63:Morale
-81:Wood Folk
 96:DEPRECATED
 163:Summon Guardian Demon
 169:Bloody Summon
@@ -16,9 +11,6 @@
 213:Extra Gathering Slots
 238:Life Leech
 239:Shield Leech
-241:Deals 150% damage if the target has armour.
-242:If the target has less than maximum hit points, damage is +35%.
-247:If the target has less than maximum hit points, damage is +60%.
 252:{}{}
 357:Decrease Group Carry
 367:Inspire
@@ -38,23 +30,6 @@
 433:Trigger - On Enemy Killed
 439:Trigger - Group On End Turn
 441:Trigger - Group On Movement
-447:Metal Essence
-451:Bone Essence
-453:Gem Essence
-455:Stone Essence
-459:Life Essence
-461:Sunlight Essence
-483:Dzievanna
-485:Zorya
-489:Stribog
-491:Horz
-493:Marovit
-495:Svarog
-497:Triglav
-499:Nyia
-515:Herb
-534:One Handed Sword.
-538:One Handed Axe.
 585:Slavyan
 587:Woodland Kin
 588:Shadow Kin
@@ -64,11 +39,6 @@
 598:Stingers
 602:Human Child - Apprentice Warrior
 604:Human Child - Apprentice Hunter
-606:Human Warrior
-608:Human Woj
-612:Human Gatherer
-627:Human Bandit Warrior
-631:Human Scavenger
 633:Human Scavenger Witch
 637:Scavenger Boss Hanka
 639:Scavenger Monia
@@ -238,21 +208,6 @@
 1223:Golem Hatchet
 1224:Alchemy Hatchet
 1234:Blood Battle Axe
-1267:Mithril Club
-1269:Blood Club
-1272:Dragon Club
-1275:Dark Club
-1276:Elven Club
-1282:Obsidian Club
-1283:Amber Club
-1286:Ruby Club
-1292:Sacred Club
-1296:Living Club
-1297:Molten Club
-1301:Alloy Club
-1304:Igneous Club
-1306:Grand Club
-1307:Mallet
 1309:Iron Mallet
 1313:Mithril Mallet
 1314:Bone Mallet
@@ -472,15 +427,6 @@
 1966:Sparkling Crafting Tool
 1971:Igneous Crafting Tool
 1972:The Other Ring
-1998:Carrier Goat
-2000:Bunny
-2002:Bunny
-2004:Cat
-2014:Skshack
-2018:Wraith
-2021:Your very own friendly ghost.
-2024:Spitting Spider
-2028:Slavyan Cock
 2030:Idol
 2032:Idol of Wood
 2033:Idol of Stone
@@ -564,6 +510,7 @@
 2558:War Cry
 2588:Foodie
 2600:Smarter Every Day
+2603:A bit of shielding in every challenge granted to each follower by their God.
 2608:Solar Powered
 2616:Eagle Eye
 2620:Healing Touch
@@ -674,11 +621,9 @@
 3513:Eagle Eye
 3523:Flock of Gatherers
 3529:Tough Guy
-3530:Your followers get +10% Health but have an additional 5% chance to die when their Health is below 30%.
 3531:Demonic Possession
 3539:Low Food Alert
 3551:Low Morale Alert
-3582:Value of this item when it is traded. Note, that Traders won't usually offer to pay you full prices, otherwise they would go bust!
 3585:Forfeit Challenge
 3587:Move (M)
 3591:Break Camp (C)
@@ -741,7 +686,6 @@
 4457:Single Player
 4458:Multiplayer
 4475:God Card Slots
-4514:Turn:
 4520:Transfer
 4554:Dzievanna
 4556:Horz
@@ -751,6 +695,7 @@
 4564:Stribog
 4566:Svarog
 4568:Triglav
+4569:Argh! From the scorching lava seeping out of the ashes of our land, I was forged! Veins of wrath pulsate throughout my body with rage and purpose. My stone hearts beat in unison, my minds meld into one vision, my fists are driven trifold. I do not know who raised me from the darkness. I do not know why our hearts melt with anger, but I am ready to stand and fight against any who will dare to oppose us!{}{}A new force rises to devour Thea once again and I will stand in its way. This is why I have risen from fire. Walk with me into war, burn our enemies to the ground, melt away those who seek to wound us, crush whoever stands in the path of divine justice and wrath.{}{}And you? You are to bow before me and obey!
 4570:Zorya
 4633:Versus Event Owner:
 4634:Versus Group:
@@ -773,6 +718,7 @@
 4902:Self Hosted Server
 4905:Audio
 4919:VSync:
+4950:Event Paths Uncovered:
 4992:Enemy Turns
 5013:Battlefield - Allies
 5016:Fight Turns
@@ -781,8 +727,6 @@
 5093:Status
 5098:30 FPS
 5099:60 FPS
-5109:Each recipe requires that you unlock at least one parent node that leads to it.
-5110:For example, Crystal Wood can only be obtained after unlocking either Diamond or Ancient Wood.
 5120:Start Anyway
 5134:Group Carry Bonus Per Character
 5138:Dismantle Resource Recovery
@@ -790,17 +734,28 @@
 5149:400 Carry Bonus
 5150:200 Carry Bonus
 5177:Theopedia
-5270:Nyia Unlocked!
 5296:Autoresolve Proficiency
-5302:{}Only one copy of this character is permitted on the battlefield at any time.{}{}Summon your pet animal into a free ranged spot.
 5303:God Points
-5304:God Points are added to your profile when opening the Game Summary screen. If you continue playing and earn more points, only the difference will be added next time.
-5305:To set up a camp:
-5306:1. Left click on the group. A radial menu will appear.
-5307:2. Click the Camp button.
-5308:The Gathering screen will open automatically.
-5309:See Results
-5310:Less
-5311:Added To Profile:
-5312:Claim Points
-5313:Total Value:
+5314:Replay Narration
+5315:Replay the narration of the current paragraph.
+5316:Morale Gain
+5317:The amount of Morale gained from food each turn. Each character gets +1 Morale per turn for each type of food present in the group's inventory.
+5318:Select Language
+5319:Loading files from could has failed, possibly something is blocking drive access.{}{}Warning - data loss may occur! Please contact us on bugs@muhagames.com and we will try to help you resolve your issue.
+5320:Files on your local drive and in the cloud share the same name but are out of sync, which version would you like to keep?{}{}(Note: saves/profiles removed or lost on one computer will not be removed from the other. To prevent data loss, you will have to remove them again on the other computer if you wish.)
+5321:Use Cloud
+5322:Use Local
+5323:Mods
+5324:Move Up
+5325:Move Down
+5326:Mod Manager
+5327:Publish
+5328:Description
+5329:Author:
+5330:Visibility:
+5331:Please restart the application for the changes to take effect.
+5332:Later
+5333:Public
+5334:Friends Only
+5335:Private
+5336:{}Incorrect Value{}

@@ -331,9 +331,9 @@ namespace Thea2Translator.Logic
             var fileName = Path.GetFileNameWithoutExtension(file);
             switch (fileName)
             {
-                case "DATABASE_DES_LOCALIZATION": return "LOC_LIBRARY-EN_DES";
-                case "DATABASE_QUEST_LOCALIZATION": return "LOC_LIBRARY-EN_QUEST";
-                case "DATABASE_UI_LOCALIZATION": return "LOC_LIBRARY-EN_UI";
+                case "DATABASE_DES_LOCALIZATION": return "LOC_LIBRARY-DES";
+                case "DATABASE_QUEST_LOCALIZATION": return "LOC_LIBRARY-QUEST";
+                case "DATABASE_UI_LOCALIZATION": return "LOC_LIBRARY-UI";
             }
 
             return "";

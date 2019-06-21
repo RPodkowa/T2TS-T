@@ -23,8 +23,8 @@
       <outputs ownerID="1" targetID="2" fromX="334" fromY="-613" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="2" positionX="412" positionY="-82" width="350" height="805">
-      <outputs name="Odejdz." ownerID="2" targetID="4" group="G1" fromX="737" fromY="-573" />
-      <outputs name="Odejdz." ownerID="2" targetID="3" group="G1" fromX="737" fromY="-653" />Twoje rany byly zbyt powazne, wiec bramy do podziemi otworzyly sie, aby zabrac twoja dusze.</nodes>
+      <outputs name="OdejdŸ." ownerID="2" targetID="4" group="G1" fromX="737" fromY="-573" />
+      <outputs name="OdejdŸ." ownerID="2" targetID="3" group="G1" fromX="737" fromY="-653" />Twoje rany by³y zbyt powa¿ne, wiêc bramy do podziemi otworzy³y siê, aby zabraæ twoj¹ duszê.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="3" positionX="886" positionY="-578" width="350" height="530" linkedEventUniqueID="0">
       <logic>
         <ModifierBlock>
@@ -56,9 +56,9 @@
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Luk i wyjdz." ownerID="4" targetID="5" fromX="1214" fromY="-205" />„JESTES MOIM WYBRANYM, JAK Osmielisz sie!'
+      <outputs name="£uk i wyjdŸ." ownerID="4" targetID="5" fromX="1214" fromY="-205" />„JESTEŒ MOIM WYBRANYM, JAK Oœmielisz siê!'
 
-Pani smierci chwyta zwloki i wciaga w nie twoja dusze, nakazujac ci isc dalej.</nodes>
+Pani œmierci chwyta zw³oki i wci¹ga w nie twoj¹ duszê, nakazuj¹c ci iœæ dalej.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="5" positionX="1302" positionY="12" width="350" height="530" linkedEventUniqueID="0" />
   </Adventure>
   <Adventure name="Death_" uniqueID="7" typeGeneric="true" typePerGroupGeneric="false" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="6" joinIsForced="false" joinType="OnlyOwn" joinRange="SinglePosition">
@@ -84,9 +84,9 @@ Pani smierci chwyta zwloki i wciaga w nie twoja dusze, nakazujac ci isc dalej.</
       <outputs ownerID="1" targetID="2" fromX="334" fromY="-613" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="2" positionX="412" positionY="-82" width="350" height="885">
-      <outputs name="Odejdz." ownerID="2" targetID="4" group="G1" fromX="737" fromY="-573" />
-      <outputs name="Odejdz." ownerID="2" targetID="6" group="G1" fromX="737" fromY="-653" />
-      <outputs name="Odejdz." ownerID="2" targetID="3" group="G1" fromX="737" fromY="-733" />Twoje rany byly zbyt powazne, wiec bramy do podziemi otworzyly sie, aby zabrac twoja dusze.</nodes>
+      <outputs name="OdejdŸ." ownerID="2" targetID="4" group="G1" fromX="737" fromY="-573" />
+      <outputs name="OdejdŸ." ownerID="2" targetID="6" group="G1" fromX="737" fromY="-653" />
+      <outputs name="OdejdŸ." ownerID="2" targetID="3" group="G1" fromX="737" fromY="-733" />Twoje rany by³y zbyt powa¿ne, wiêc bramy do podziemi otworzy³y siê, aby zabraæ twoj¹ duszê.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="3" positionX="890" positionY="-795" width="350" height="530" linkedEventUniqueID="0">
       <logic>
         <ModifierBlock>
@@ -124,9 +124,9 @@ Pani smierci chwyta zwloki i wciaga w nie twoja dusze, nakazujac ci isc dalej.</
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Luk i wyjdz." ownerID="4" targetID="5" fromX="1214" fromY="-205" />„JESTES MOIM WYBRANYM, JAK Osmielisz sie!'
+      <outputs name="£uk i wyjdŸ." ownerID="4" targetID="5" fromX="1214" fromY="-205" />„JESTEŒ MOIM WYBRANYM, JAK Oœmielisz siê!'
 
-Pani smierci chwyta zwloki i wciaga w nie twoja dusze, nakazujac ci isc dalej.</nodes>
+Pani œmierci chwyta zw³oki i wci¹ga w nie twoj¹ duszê, nakazuj¹c ci iœæ dalej.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="5" positionX="1302" positionY="12" width="350" height="530" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventureEnd" ID="6" positionX="1369" positionY="-560" width="350" height="530" linkedEventUniqueID="10">
       <logic>
@@ -161,19 +161,19 @@ Pani smierci chwyta zwloki i wciaga w nie twoja dusze, nakazujac ci isc dalej.</
           </LogicFilter>
         </FilterBlock>
       </logic>
-      <outputs name="Zaplac dwoma zyciami, aby je zwrocic." ownerID="2" targetID="3" fromX="437" fromY="-410" />
-      <outputs name="Plac czterema zyciami, aby oddac jeden." ownerID="2" targetID="6" fromX="437" fromY="-490" />
-      <outputs name="Plac szescioma zyciami, aby oddac jeden." ownerID="2" targetID="8" fromX="437" fromY="-570" />
-      <outputs name="Zaplac za osiem zyc, aby je zwrocic." ownerID="2" targetID="9" fromX="437" fromY="-650" />
-      <outputs name="Plac z dziesiecioma zyciami, aby oddac jeden." ownerID="2" targetID="10" fromX="437" fromY="-730" />
-      <outputs name="Zaplac za pietnascie zyc, aby je zwrocic." ownerID="2" targetID="16" fromX="437" fromY="-811" />
-      <outputs name="Zaplac za dwadziescia zyc, aby je zwrocic." ownerID="2" targetID="17" fromX="437" fromY="-891" />
-      <outputs name="Nie mozesz lub nie bedziesz placic. Nadszedl czas, aby zakonczyc te podroz." ownerID="2" targetID="11" fromX="437" fromY="-971" />
-      <outputs name="Uzyj boskiej mocy kosmicznego ziarna, aby oddac wybranego!" ownerID="2" targetID="19" fromX="437" fromY="-1051" />Pozwoliles umrzec swojemu wybranemu! Bez boskiej wiezi nie bedziesz juz mial zadnej wladzy ani wplywu na swiat, a wiec twoje panowanie sie skonczy. 
+      <outputs name="Zap³aæ dwoma ¿yciami, aby je zwróciæ." ownerID="2" targetID="3" fromX="437" fromY="-410" />
+      <outputs name="P³aæ czterema ¿yciami, aby oddaæ jeden." ownerID="2" targetID="6" fromX="437" fromY="-490" />
+      <outputs name="P³aæ szeœcioma ¿yciami, aby oddaæ jeden." ownerID="2" targetID="8" fromX="437" fromY="-570" />
+      <outputs name="Zap³aæ za osiem ¿yæ, aby je zwróciæ." ownerID="2" targetID="9" fromX="437" fromY="-650" />
+      <outputs name="P³aæ z dziesiêcioma ¿yciami, aby oddaæ jeden." ownerID="2" targetID="10" fromX="437" fromY="-730" />
+      <outputs name="Zap³aæ za piêtnaœcie ¿yæ, aby je zwróciæ." ownerID="2" targetID="16" fromX="437" fromY="-811" />
+      <outputs name="Zap³aæ za dwadzieœcia ¿yæ, aby je zwróciæ." ownerID="2" targetID="17" fromX="437" fromY="-891" />
+      <outputs name="Nie mo¿esz lub nie bêdziesz p³aciæ. Nadszed³ czas, aby zakoñczyæ tê podró¿." ownerID="2" targetID="11" fromX="437" fromY="-971" />
+      <outputs name="U¿yj boskiej mocy kosmicznego ziarna, aby oddaæ wybranego!" ownerID="2" targetID="19" fromX="437" fromY="-1051" />Pozwoli³eœ umrzeæ swojemu wybranemu! Bez boskiej wiêzi nie bêdziesz ju¿ mia³ ¿adnej w³adzy ani wp³ywu na œwiat, a wiêc twoje panowanie siê skoñczy. 
 
-Na szczescie masz jeszcze jedna szanse na pozostanie w grze. Wzywajcie ducha samego Kosmicznego Drzewa i proscie o zwrocenie wam duszy wybranej przez was. 
+Na szczêœcie masz jeszcze jedn¹ szansê na pozostanie w grze. Wzywajcie ducha samego Kosmicznego Drzewa i proœcie o zwrócenie wam duszy wybranej przez was. 
 
-Pamietaj, ze cena jest wysoka i bedzie wzrastac za kazdym razem, gdy naduzywasz swojej boskiej mocy w ten sposob. </nodes>
+Pamiêtaj, ¿e cena jest wysoka i bêdzie wzrastaæ za ka¿dym razem, gdy nadu¿ywasz swojej boskiej mocy w ten sposób. </nodes>
     <nodes xsi:type="NodeTrade" ID="3" positionX="713" positionY="126" width="460" height="479" traderProfile="TRADER-BANDIT_TWO" playerInventory="ppl" startingBalance="-2">
       <logic>
         <FilterBlock>
@@ -186,7 +186,7 @@ Pamietaj, ze cena jest wysoka i bedzie wzrastac za kazdym razem, gdy naduzywasz 
       <outputs name="Cancel" ownerID="3" targetID="2" fromX="1143" fromY="-282" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="4" positionX="1353" positionY="49" width="350" height="725">
-      <outputs name="Oczekuj swojego wybranego." ownerID="4" targetID="5" fromX="1678" fromY="-442" />Zaplaciles swoje krwawe oplaty, a duch twojego wybranego powraca, teraz modl sie, aby powrocil w odpowiednim ciele ...</nodes>
+      <outputs name="Oczekuj swojego wybranego." ownerID="4" targetID="5" fromX="1678" fromY="-442" />Zap³aci³eœ swoje krwawe op³aty, a duch twojego wybranego powraca, teraz módl siê, aby powróci³ w odpowiednim ciele ...</nodes>
     <nodes xsi:type="NodeDealDamage" ID="5" positionX="1913" positionY="134" width="460" height="699" challengeTypeDamage="TypeMental" minDamage="0" maxDamage="0" useCountInPercent="false">
       <logic>
         <FilterBlock>
@@ -411,19 +411,19 @@ Pamietaj, ze cena jest wysoka i bedzie wzrastac za kazdym razem, gdy naduzywasz 
           </LogicFilter>
         </FilterBlock>
       </logic>
-      <outputs name="Zaplac dwoma zyciami, aby je zwrocic." ownerID="2" targetID="3" fromX="452" fromY="-433" />
-      <outputs name="Plac czterema zyciami, aby oddac jeden." ownerID="2" targetID="6" fromX="452" fromY="-513" />
-      <outputs name="Plac szescioma zyciami, aby oddac jeden." ownerID="2" targetID="8" fromX="452" fromY="-593" />
-      <outputs name="Zaplac za osiem zyc, aby je zwrocic." ownerID="2" targetID="9" fromX="452" fromY="-673" />
-      <outputs name="Plac z dziesiecioma zyciami, aby oddac jeden." ownerID="2" targetID="10" fromX="452" fromY="-753" />
-      <outputs name="Zaplac za pietnascie zyc, aby je zwrocic." ownerID="2" targetID="16" fromX="452" fromY="-834" />
-      <outputs name="Zaplac za dwadziescia zyc, aby je zwrocic." ownerID="2" targetID="17" fromX="452" fromY="-914" />
-      <outputs name="Nie mozesz lub nie bedziesz placic. Nadszedl czas, aby zakonczyc te podroz." ownerID="2" targetID="11" fromX="452" fromY="-994" />
-      <outputs name="Uzyj boskiej mocy kosmicznego ziarna, aby oddac wybranego!" ownerID="2" targetID="19" fromX="452" fromY="-1074" />Pozwoliles umrzec swojemu wybranemu! Bez boskiej wiezi nie bedziesz juz mial zadnej wladzy ani wplywu na swiat, a wiec twoje panowanie sie skonczy. 
+      <outputs name="Zap³aæ dwoma ¿yciami, aby je zwróciæ." ownerID="2" targetID="3" fromX="452" fromY="-433" />
+      <outputs name="P³aæ czterema ¿yciami, aby oddaæ jeden." ownerID="2" targetID="6" fromX="452" fromY="-513" />
+      <outputs name="P³aæ szeœcioma ¿yciami, aby oddaæ jeden." ownerID="2" targetID="8" fromX="452" fromY="-593" />
+      <outputs name="Zap³aæ za osiem ¿yæ, aby je zwróciæ." ownerID="2" targetID="9" fromX="452" fromY="-673" />
+      <outputs name="P³aæ z dziesiêcioma ¿yciami, aby oddaæ jeden." ownerID="2" targetID="10" fromX="452" fromY="-753" />
+      <outputs name="Zap³aæ za piêtnaœcie ¿yæ, aby je zwróciæ." ownerID="2" targetID="16" fromX="452" fromY="-834" />
+      <outputs name="Zap³aæ za dwadzieœcia ¿yæ, aby je zwróciæ." ownerID="2" targetID="17" fromX="452" fromY="-914" />
+      <outputs name="Nie mo¿esz lub nie bêdziesz p³aciæ. Nadszed³ czas, aby zakoñczyæ tê podró¿." ownerID="2" targetID="11" fromX="452" fromY="-994" />
+      <outputs name="U¿yj boskiej mocy kosmicznego ziarna, aby oddaæ wybranego!" ownerID="2" targetID="19" fromX="452" fromY="-1074" />Pozwoli³eœ umrzeæ swojemu wybranemu! Bez boskiej wiêzi nie bêdziesz ju¿ mia³ ¿adnej w³adzy ani wp³ywu na œwiat, a wiêc twoje panowanie siê skoñczy. 
 
-Na szczescie masz jeszcze jedna szanse na pozostanie w grze. Wzywajcie ducha samego Kosmicznego Drzewa i proscie o zwrocenie wam duszy wybranej przez was. 
+Na szczêœcie masz jeszcze jedn¹ szansê na pozostanie w grze. Wzywajcie ducha samego Kosmicznego Drzewa i proœcie o zwrócenie wam duszy wybranej przez was. 
 
-Pamietaj, ze cena jest wysoka i bedzie wzrastac za kazdym razem, gdy naduzywasz swojej boskiej mocy w ten sposob. </nodes>
+Pamiêtaj, ¿e cena jest wysoka i bêdzie wzrastaæ za ka¿dym razem, gdy nadu¿ywasz swojej boskiej mocy w ten sposób. </nodes>
     <nodes xsi:type="NodeTrade" ID="3" positionX="721" positionY="121" width="460" height="479" traderProfile="TRADER-BANDIT_TWO" playerInventory="ppl" startingBalance="-2">
       <logic>
         <FilterBlock>
@@ -436,7 +436,7 @@ Pamietaj, ze cena jest wysoka i bedzie wzrastac za kazdym razem, gdy naduzywasz 
       <outputs name="Cancel" ownerID="3" targetID="2" fromX="1151" fromY="-287" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="4" positionX="1357" positionY="133" width="350" height="725">
-      <outputs name="Oczekuj swojego wybranego." ownerID="4" targetID="5" fromX="1682" fromY="-358" />Zaplaciles swoje krwawe oplaty, a duch twojego wybranego powraca, teraz modl sie, aby powrocil w odpowiednim ciele ...</nodes>
+      <outputs name="Oczekuj swojego wybranego." ownerID="4" targetID="5" fromX="1682" fromY="-358" />Zap³aci³eœ swoje krwawe op³aty, a duch twojego wybranego powraca, teraz módl siê, aby powróci³ w odpowiednim ciele ...</nodes>
     <nodes xsi:type="NodeDealDamage" ID="5" positionX="1902" positionY="184" width="460" height="699" challengeTypeDamage="TypeMental" minDamage="0" maxDamage="0" useCountInPercent="false">
       <logic>
         <FilterBlock>
@@ -672,7 +672,7 @@ Pamietaj, ze cena jest wysoka i bedzie wzrastac za kazdym razem, gdy naduzywasz 
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Odejdz." ownerID="2" targetID="3" group="G1" fromX="737" fromY="-573" />Cholera bogow i ich boskie gry! Napiecie tego mrocznego swiata jest zbyt duze, wiec porzuciles obowiazki w poszukiwaniu spokojniejszego zycia. </nodes>
+      <outputs name="OdejdŸ." ownerID="2" targetID="3" group="G1" fromX="737" fromY="-573" />Cholera bogów i ich boskie gry! Napiêcie tego mrocznego œwiata jest zbyt du¿e, wiêc porzuci³eœ obowi¹zki w poszukiwaniu spokojniejszego ¿ycia. </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="3" positionX="843" positionY="-280" width="350" height="530" linkedEventUniqueID="0">
       <logic>
         <ModifierBlock>
@@ -706,9 +706,9 @@ Pamietaj, ze cena jest wysoka i bedzie wzrastac za kazdym razem, gdy naduzywasz 
       <outputs ownerID="1" targetID="2" fromX="334" fromY="-613" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="2" positionX="412" positionY="-82" width="350" height="885">
-      <outputs name="Odejdz." ownerID="2" targetID="4" group="G1" fromX="737" fromY="-573" />
-      <outputs name="Odejdz." ownerID="2" targetID="6" group="G1" fromX="737" fromY="-653" />
-      <outputs name="Odejdz." ownerID="2" targetID="3" group="G1" fromX="737" fromY="-733" />Twoje rany byly zbyt powazne, wiec bramy do podziemi otworzyly sie, aby zabrac twoja dusze.</nodes>
+      <outputs name="OdejdŸ." ownerID="2" targetID="4" group="G1" fromX="737" fromY="-573" />
+      <outputs name="OdejdŸ." ownerID="2" targetID="6" group="G1" fromX="737" fromY="-653" />
+      <outputs name="OdejdŸ." ownerID="2" targetID="3" group="G1" fromX="737" fromY="-733" />Twoje rany by³y zbyt powa¿ne, wiêc bramy do podziemi otworzy³y siê, aby zabraæ twoj¹ duszê.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="3" positionX="890" positionY="-795" width="350" height="530" linkedEventUniqueID="0">
       <logic>
         <ModifierBlock>
@@ -743,9 +743,9 @@ Pamietaj, ze cena jest wysoka i bedzie wzrastac za kazdym razem, gdy naduzywasz 
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Luk i wyjdz." ownerID="4" targetID="5" fromX="1214" fromY="-205" />„JESTES MOIM WYBRANYM, JAK Osmielisz sie!'
+      <outputs name="£uk i wyjdŸ." ownerID="4" targetID="5" fromX="1214" fromY="-205" />„JESTEŒ MOIM WYBRANYM, JAK Oœmielisz siê!'
 
-Pani smierci chwyta zwloki i wciaga w nie twoja dusze, nakazujac ci isc dalej.</nodes>
+Pani œmierci chwyta zw³oki i wci¹ga w nie twoj¹ duszê, nakazuj¹c ci iœæ dalej.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="5" positionX="1302" positionY="12" width="350" height="530" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventureEnd" ID="6" positionX="1369" positionY="-560" width="350" height="530" linkedEventUniqueID="10">
       <logic>
@@ -793,18 +793,18 @@ Pani smierci chwyta zwloki i wciaga w nie twoja dusze, nakazujac ci isc dalej.</
           </LogicFilter>
         </FilterBlock>
       </logic>
-      <outputs name="Zaplac dwoma zyciami, aby je zwrocic." ownerID="2" targetID="3" fromX="452" fromY="-433" />
-      <outputs name="Plac czterema zyciami, aby oddac jeden." ownerID="2" targetID="6" fromX="452" fromY="-513" />
-      <outputs name="Plac szescioma zyciami, aby oddac jeden." ownerID="2" targetID="8" fromX="452" fromY="-593" />
-      <outputs name="Zaplac za osiem zyc, aby je zwrocic." ownerID="2" targetID="9" fromX="452" fromY="-673" />
-      <outputs name="Plac z dziesiecioma zyciami, aby oddac jeden." ownerID="2" targetID="10" fromX="452" fromY="-753" />
-      <outputs name="Zaplac za pietnascie zyc, aby je zwrocic." ownerID="2" targetID="16" fromX="452" fromY="-834" />
-      <outputs name="Zaplac za dwadziescia zyc, aby je zwrocic." ownerID="2" targetID="17" fromX="452" fromY="-914" />
-      <outputs name="Nie mozesz lub nie bedziesz placic. Nadszedl czas, aby zakonczyc te podroz." ownerID="2" targetID="11" fromX="452" fromY="-994" />Pozwoliles umrzec swojemu wybranemu! Bez boskiej wiezi nie bedziesz juz mial zadnej wladzy ani wplywu na swiat, a wiec twoje panowanie sie skonczy. 
+      <outputs name="Zap³aæ dwoma ¿yciami, aby je zwróciæ." ownerID="2" targetID="3" fromX="452" fromY="-433" />
+      <outputs name="P³aæ czterema ¿yciami, aby oddaæ jeden." ownerID="2" targetID="6" fromX="452" fromY="-513" />
+      <outputs name="P³aæ szeœcioma ¿yciami, aby oddaæ jeden." ownerID="2" targetID="8" fromX="452" fromY="-593" />
+      <outputs name="Zap³aæ za osiem ¿yæ, aby je zwróciæ." ownerID="2" targetID="9" fromX="452" fromY="-673" />
+      <outputs name="P³aæ z dziesiêcioma ¿yciami, aby oddaæ jeden." ownerID="2" targetID="10" fromX="452" fromY="-753" />
+      <outputs name="Zap³aæ za piêtnaœcie ¿yæ, aby je zwróciæ." ownerID="2" targetID="16" fromX="452" fromY="-834" />
+      <outputs name="Zap³aæ za dwadzieœcia ¿yæ, aby je zwróciæ." ownerID="2" targetID="17" fromX="452" fromY="-914" />
+      <outputs name="Nie mo¿esz lub nie bêdziesz p³aciæ. Nadszed³ czas, aby zakoñczyæ tê podró¿." ownerID="2" targetID="11" fromX="452" fromY="-994" />Pozwoli³eœ umrzeæ swojemu wybranemu! Bez boskiej wiêzi nie bêdziesz ju¿ mia³ ¿adnej w³adzy ani wp³ywu na œwiat, a wiêc twoje panowanie siê skoñczy. 
 
-Na szczescie masz jeszcze jedna szanse na pozostanie w grze. Wzywajcie ducha samego Kosmicznego Drzewa i proscie o zwrocenie wam duszy wybranej przez was. 
+Na szczêœcie masz jeszcze jedn¹ szansê na pozostanie w grze. Wzywajcie ducha samego Kosmicznego Drzewa i proœcie o zwrócenie wam duszy wybranej przez was. 
 
-Pamietaj, ze cena jest wysoka i bedzie wzrastac za kazdym razem, gdy naduzywasz swojej boskiej mocy w ten sposob. </nodes>
+Pamiêtaj, ¿e cena jest wysoka i bêdzie wzrastaæ za ka¿dym razem, gdy nadu¿ywasz swojej boskiej mocy w ten sposób. </nodes>
     <nodes xsi:type="NodeTrade" ID="3" positionX="721" positionY="121" width="460" height="479" traderProfile="TRADER-BANDIT_TWO" playerInventory="ppl" startingBalance="-2">
       <logic>
         <FilterBlock>
@@ -817,7 +817,7 @@ Pamietaj, ze cena jest wysoka i bedzie wzrastac za kazdym razem, gdy naduzywasz 
       <outputs name="Cancel" ownerID="3" targetID="2" fromX="1151" fromY="-287" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="4" positionX="1357" positionY="133" width="350" height="725">
-      <outputs name="Oczekuj swojego wybranego." ownerID="4" targetID="5" fromX="1682" fromY="-358" />Zaplaciles swoje krwawe oplaty, a duch twojego wybranego powraca, teraz modl sie, aby powrocil w odpowiednim ciele ...</nodes>
+      <outputs name="Oczekuj swojego wybranego." ownerID="4" targetID="5" fromX="1682" fromY="-358" />Zap³aci³eœ swoje krwawe op³aty, a duch twojego wybranego powraca, teraz módl siê, aby powróci³ w odpowiednim ciele ...</nodes>
     <nodes xsi:type="NodeDealDamage" ID="5" positionX="1902" positionY="184" width="460" height="699" challengeTypeDamage="TypeMental" minDamage="0" maxDamage="0" useCountInPercent="false">
       <logic>
         <FilterBlock>
@@ -1013,7 +1013,7 @@ Pamietaj, ze cena jest wysoka i bedzie wzrastac za kazdym razem, gdy naduzywasz 
       <outputs ownerID="1" targetID="2" fromX="334" fromY="-613" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="2" positionX="412" positionY="-82" width="350" height="725">
-      <outputs name="Odejdz." ownerID="2" targetID="3" group="G1" fromX="737" fromY="-573" />Cholera bogow i ich boskie gry! Napiecie tego mrocznego swiata jest zbyt duze, wiec porzuciles obowiazki w poszukiwaniu spokojniejszego zycia. </nodes>
+      <outputs name="OdejdŸ." ownerID="2" targetID="3" group="G1" fromX="737" fromY="-573" />Cholera bogów i ich boskie gry! Napiêcie tego mrocznego œwiata jest zbyt du¿e, wiêc porzuci³eœ obowi¹zki w poszukiwaniu spokojniejszego ¿ycia. </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="3" positionX="843" positionY="-280" width="350" height="530" linkedEventUniqueID="0">
       <logic>
         <ModifierBlock>

@@ -67,9 +67,10 @@
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Radujcie sie." ownerID="2" targetID="3" fromX="760" fromY="-647" />Dwaj z was lubia razem troche czasu, byc moze jestescie przyjaciolmi wiecej. 
+      <outputs name="Radujcie sie." ownerID="2" targetID="3" fromX="760" fromY="-647" />Dwaj z was lubia razem troche czasu, byc moze jestescie przyjaciólmi wiecej. 
 
-Ale wciaz czujny i nieco zafascynowany bocian jest dostrzegany w poblizu i pewny jak smierc, wkrotce przyprowadzane jest do ciebie dziecko. </nodes>
+Ale wciaz czujny i nieco zafascynowany bocian jest dostrzegany w poblizu i pewny jak smierc, wkrótce przyprowadzane jest do ciebie dziecko. 
+</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="3" positionX="854" positionY="-334" width="350" height="530" linkedEventUniqueID="0" />
   </Adventure>
   <Adventure name="StorkGob" uniqueID="2" allowOnce="true" typeGeneric="false" typePerGroupGeneric="true" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="3" joinIsForced="false" joinType="OnlyOwn" joinRange="SinglePosition">
@@ -139,10 +140,10 @@ Ale wciaz czujny i nieco zafascynowany bocian jest dostrzegany w poblizu i pewny
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Radujcie sie." ownerID="2" targetID="3" fromX="760" fromY="-647" />Noce sa dlugie i samotne, niektorzy z was znajduja pocieche w towarzystwie innych. 
+      <outputs name="Radujcie sie." ownerID="2" targetID="3" fromX="760" fromY="-647" />Noce sa dlugie i samotne, niektórzy z was znajduja pocieche w towarzystwie innych. 
 
 
-Ale wciaz czujny i nieco nadgorliwy bocian jest dostrzegany w poblizu i pewny jak smierc, wkrotce przyprowadzane jest do ciebie dziecko. 
+Ale wciaz czujny i nieco nadgorliwy bocian jest dostrzegany w poblizu i pewny jak smierc, wkrótce przyprowadzane jest do ciebie dziecko. 
 </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="3" positionX="854" positionY="-334" width="350" height="530" linkedEventUniqueID="0" />
   </Adventure>
@@ -219,10 +220,10 @@ Ale wciaz czujny i nieco nadgorliwy bocian jest dostrzegany w poblizu i pewny ja
         </ModifierBlock>
       </logic>
       <outputs name="Radujcie sie." ownerID="2" targetID="3" group="G1" fromX="760" fromY="-647" />
-      <outputs name="Radujcie sie." ownerID="2" targetID="5" group="G1" fromX="760" fromY="-727" />Noce sa dlugie i samotne, niektorzy z was znajduja pocieche w towarzystwie innych. 
+      <outputs name="Radujcie sie." ownerID="2" targetID="5" group="G1" fromX="760" fromY="-727" />Noce sa dlugie i samotne, niektórzy z was znajduja pocieche w towarzystwie innych. 
 
 
-Ale wciaz czujny i nieco nadgorliwy bocian jest dostrzegany w poblizu i pewny jak smierc, wkrotce przyprowadzane jest do ciebie dziecko. 
+Ale wciaz czujny i nieco nadgorliwy bocian jest dostrzegany w poblizu i pewny jak smierc, wkrótce przyprowadzane jest do ciebie dziecko. 
 </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="3" positionX="1007" positionY="-179" width="350" height="530" linkedEventUniqueID="0">
       <logic>
@@ -340,10 +341,10 @@ Ale wciaz czujny i nieco nadgorliwy bocian jest dostrzegany w poblizu i pewny ja
         </ModifierBlock>
       </logic>
       <outputs name="Radujcie sie." ownerID="2" targetID="3" group="G1" fromX="760" fromY="-647" />
-      <outputs name="Radujcie sie." ownerID="2" targetID="6" group="G1" fromX="760" fromY="-727" />Noce sa dlugie i samotne, niektorzy z was znajduja pocieche w towarzystwie innych. 
+      <outputs name="Radujcie sie." ownerID="2" targetID="6" group="G1" fromX="760" fromY="-727" />Noce sa dlugie i samotne, niektórzy z was znajduja pocieche w towarzystwie innych. 
 
 
-Ale wciaz czujny i nieco nadgorliwy bocian jest dostrzegany w poblizu i pewny jak smierc, wkrotce przyprowadzane jest do ciebie dziecko. 
+Ale wciaz czujny i nieco nadgorliwy bocian jest dostrzegany w poblizu i pewny jak smierc, wkrótce przyprowadzane jest do ciebie dziecko. 
 </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="3" positionX="1007" positionY="-179" width="350" height="530" linkedEventUniqueID="0">
       <logic>
@@ -443,9 +444,9 @@ Ale wciaz czujny i nieco nadgorliwy bocian jest dostrzegany w poblizu i pewny ja
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Radujcie sie." ownerID="2" targetID="3" fromX="760" fromY="-647" />Noce sa dlugie i samotne, niektorzy z was znajduja pocieche w towarzystwie innych. 
+      <outputs name="Radujcie sie." ownerID="2" targetID="3" fromX="760" fromY="-647" />Noce sa dlugie i samotne, niektórzy z was znajduja pocieche w towarzystwie innych. 
 
-Ale wciaz czujny i nieco nadgorliwy bocian jest dostrzegany w poblizu i pewny jak smierc, wkrotce przyprowadzane jest do ciebie dziecko. 
+Ale wciaz czujny i nieco nadgorliwy bocian jest dostrzegany w poblizu i pewny jak smierc, wkrótce przyprowadzane jest do ciebie dziecko. 
 </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="3" positionX="854" positionY="-334" width="350" height="530" linkedEventUniqueID="0" />
   </Adventure>
@@ -525,11 +526,11 @@ Ale wciaz czujny i nieco nadgorliwy bocian jest dostrzegany w poblizu i pewny ja
         </ModifierBlock>
       </logic>
       <outputs name="Radujcie sie." ownerID="2" targetID="3" group="G1" fromX="766" fromY="-632" />
-      <outputs name="Radujcie sie." ownerID="2" targetID="5" group="G1" fromX="766" fromY="-712" />Elfy sa notorycznie elitarne w wyborze partnerow, ale wydaje sie, ze osoba piekna przykula wzrok. 
+      <outputs name="Radujcie sie." ownerID="2" targetID="5" group="G1" fromX="766" fromY="-712" />Elfy sa notorycznie elitarne w wyborze partnerów, ale wydaje sie, ze osoba piekna przykula wzrok. 
 
 Elfie dzieci rodza sie z mistycznej wiezi i wydaje sie, ze dwoje twoich ludzi cieszylo sie takim polaczeniem. 
 
-Skutki takiego zwiazku moga sie roznic, ale wkrotce pojawia sie dziecko.</nodes>
+Skutki takiego zwiazku moga sie róznic, ale wkrótce pojawia sie dziecko.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="3" positionX="999" positionY="-45" width="350" height="530" linkedEventUniqueID="0">
       <logic>
         <FilterBlock>
@@ -658,10 +659,10 @@ Skutki takiego zwiazku moga sie roznic, ale wkrotce pojawia sie dziecko.</nodes>
         </ModifierBlock>
       </logic>
       <outputs name="Radujcie sie." ownerID="2" targetID="3" group="G1" fromX="760" fromY="-647" />
-      <outputs name="Radujcie sie." ownerID="2" targetID="5" group="G1" fromX="760" fromY="-727" />Noce sa dlugie i samotne, niektorzy z was znajduja pocieche w towarzystwie innych. 
+      <outputs name="Radujcie sie." ownerID="2" targetID="5" group="G1" fromX="760" fromY="-727" />Noce sa dlugie i samotne, niektórzy z was znajduja pocieche w towarzystwie innych. 
 
 
-Ale wciaz czujny i nieco nadgorliwy bocian jest dostrzegany w poblizu i pewny jak smierc, wkrotce przyprowadzane jest do ciebie dziecko. 
+Ale wciaz czujny i nieco nadgorliwy bocian jest dostrzegany w poblizu i pewny jak smierc, wkrótce przyprowadzane jest do ciebie dziecko. 
 </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="3" positionX="953" positionY="-96" width="350" height="530" linkedEventUniqueID="0">
       <logic>
@@ -781,10 +782,10 @@ Ale wciaz czujny i nieco nadgorliwy bocian jest dostrzegany w poblizu i pewny ja
         </ModifierBlock>
       </logic>
       <outputs name="Radujcie sie." ownerID="2" targetID="3" group="G1" fromX="760" fromY="-647" />
-      <outputs name="Radujcie sie." ownerID="2" targetID="5" group="G1" fromX="760" fromY="-727" />Noce sa dlugie i samotne, niektorzy z was znajduja pocieche w towarzystwie innych. 
+      <outputs name="Radujcie sie." ownerID="2" targetID="5" group="G1" fromX="760" fromY="-727" />Noce sa dlugie i samotne, niektórzy z was znajduja pocieche w towarzystwie innych. 
 
 
-Ale wciaz czujny i nieco nadgorliwy bocian jest dostrzegany w poblizu i pewny jak smierc, wkrotce przyprowadzane jest do ciebie dziecko. 
+Ale wciaz czujny i nieco nadgorliwy bocian jest dostrzegany w poblizu i pewny jak smierc, wkrótce przyprowadzane jest do ciebie dziecko. 
 </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="3" positionX="1007" positionY="-179" width="350" height="530" linkedEventUniqueID="0">
       <logic>
@@ -873,7 +874,7 @@ Ale wciaz czujny i nieco nadgorliwy bocian jest dostrzegany w poblizu i pewny ja
       <outputs name="Radujcie sie." ownerID="2" targetID="5" group="G1" fromX="760" fromY="-647" />
       <outputs name="Radujcie sie." ownerID="2" targetID="7" group="G1" fromX="760" fromY="-727" />
       <outputs name="Radujcie sie." ownerID="2" targetID="8" group="G1" fromX="760" fromY="-807" />
-      <outputs name="Radujcie sie." ownerID="2" targetID="10" group="G1" fromX="760" fromY="-887" />Krasnoludzka fascynacja h wyjatkowe piekno rusalkas od dawna jest faktem. I twoj wlasny demon krasnoludow i wody postanowil zbadac te dlugoletnie tradycje. 
+      <outputs name="Radujcie sie." ownerID="2" targetID="10" group="G1" fromX="760" fromY="-887" />Krasnoludzka fascynacja h wyjatkowe piekno rusalkas od dawna jest faktem. I twój wlasny demon krasnoludów i wody postanowil zbadac te dlugoletnie tradycje. 
 
 Bocian zwiastuje dziecko ze zwiazku, ale to, kim bedzie to dziecko, jest tajemnica.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="3" positionX="1944" positionY="-798" width="350" height="455" linkedEventUniqueID="0">
@@ -913,7 +914,7 @@ Bocian zwiastuje dziecko ze zwiazku, ale to, kim bedzie to dziecko, jest tajemni
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Wez je." ownerID="5" targetID="6" fromX="1366" fromY="-171" />W przeciwienstwie do wszystkich znanych zwyczajow z zakresu wiedzy i krasnoludow, krasnoludzkie dziecko, wyrosle poza rockowe niemowlectwo, przychodzi i wiesz, ze to twoje.</nodes>
+      <outputs name="Wez je." ownerID="5" targetID="6" fromX="1366" fromY="-171" />W przeciwienstwie do wszystkich znanych zwyczajów z zakresu wiedzy i krasnoludów, krasnoludzkie dziecko, wyrosle poza rockowe niemowlectwo, przychodzi i wiesz, ze jest ono twoje.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="6" positionX="1906" positionY="-264" width="350" height="455" linkedEventUniqueID="0">
       <logic>
         <ModifierBlock>
@@ -931,7 +932,7 @@ Bocian zwiastuje dziecko ze zwiazku, ale to, kim bedzie to dziecko, jest tajemni
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Wez ja." ownerID="7" targetID="3" fromX="1779" fromY="-519" />Rusalkowie znani sa z tego, ze zwabiaja samcow, a zatem rozmnazaja sie, ale tak rzadko zdarza sie to u nie-ludzi. Mimo to losy was blogoslawia i z jeziora pojawia sie mloda rusalka, wy, corko.</nodes>
+      <outputs name="Wez ja." ownerID="7" targetID="3" fromX="1779" fromY="-519" />Rusalkowie znani sa z tego, ze zwabiaja samców, a zatem rozmnazaja sie, ale tak rzadko zdarza sie to u nie-ludzi. Mimo to losy was blogoslawia i z jeziora pojawia sie mloda rusalka, wy, córko.</nodes>
     <nodes xsi:type="NodeAdventure" ID="8" positionX="889" positionY="-419" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -940,7 +941,7 @@ Bocian zwiastuje dziecko ze zwiazku, ale to, kim bedzie to dziecko, jest tajemni
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Wez go." ownerID="8" targetID="9" fromX="1214" fromY="-910" />Rusalkowie znani sa z tego, ze zwabiaja samcow, a zatem rozmnazaja sie, ale tak rzadko zdarza sie to u nie-ludzi. Mimo to losy was blogoslawia, a z jeziora wychodzi mlody mlodzieniec, wasz syn i meski spawn rusalki.</nodes>
+      <outputs name="Wez go." ownerID="8" targetID="9" fromX="1214" fromY="-910" />Rusalkowie znani sa z tego, ze zwabiaja samców, a zatem rozmnazaja sie, ale tak rzadko zdarza sie to u nie-ludzi. Mimo to losy was blogoslawia, a z jeziora wychodzi mlody mlodzieniec, wasz syn i meski spawn rusalki.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="9" positionX="1518" positionY="-798" width="350" height="455" linkedEventUniqueID="0">
       <logic>
         <ModifierBlock>
@@ -958,9 +959,9 @@ Bocian zwiastuje dziecko ze zwiazku, ale to, kim bedzie to dziecko, jest tajemni
           </LogicFilter>
         </FilterBlock>
       </logic>
-      <outputs name="Wez je." ownerID="10" targetID="11" fromX="1207" fromY="-1678" />Rusalkowie znani sa z tego, ze zwabiaja samcow, a zatem rozmnazaja sie, ale tak rzadko zdarza sie to u nie-ludzi. 
+      <outputs name="Wez je." ownerID="10" targetID="11" fromX="1207" fromY="-1678" />Rusalkowie znani sa z tego, ze zwabiaja samców, a tym samym rozmnazaja sie, ale tak rzadko zdarza sie to u ludzi. 
 
-Dziwnie, dziecko wygladajace na czlowieka rodzi sie na rusalce, ale takie, ktore nosi cechy od obu rodzicow.</nodes>
+Dziwnie, dziecko wygladajace na czlowieka rodzi sie na rusalce, ale takie, które nosi cechy od obu rodziców.</nodes>
     <nodes xsi:type="NodeDealDamage" ID="11" positionX="1328" positionY="-1357" width="460" height="459" challengeTypeDamage="TypeMental" minDamage="0" maxDamage="0" useCountInPercent="false">
       <logic>
         <ModifierBlock>
@@ -1185,7 +1186,7 @@ Dziwnie, dziecko wygladajace na czlowieka rodzi sie na rusalce, ale takie, ktore
         </ModifierBlock>
       </logic>
       <outputs name="Radujcie sie." ownerID="2" targetID="3" group="G1" fromX="760" fromY="-647" />
-      <outputs name="Radujcie sie." ownerID="2" targetID="5" group="G1" fromX="760" fromY="-727" />Pomimo ostrych roznic w kulturze, milosc nie zna granic, a pod czujnym okiem Lady jakies zadziorne kochanie przelamuje monotonie zycia. 
+      <outputs name="Radujcie sie." ownerID="2" targetID="5" group="G1" fromX="760" fromY="-727" />Pomimo ostrych róznic w kulturze, milosc nie zna granic, a pod czujnym okiem Lady jakies zadziorne kochanie przelamuje monotonie zycia. 
 
 Bocian jest dostrzegany w poblizu i pewny smierci, niedlugo potem do szczesliwej pary przyprowadzane jest dziecko. </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="3" positionX="1119" positionY="-98" width="350" height="530" linkedEventUniqueID="0">
@@ -1304,7 +1305,7 @@ Bocian jest dostrzegany w poblizu i pewny smierci, niedlugo potem do szczesliwej
         </ModifierBlock>
       </logic>
       <outputs name="Radujcie sie." ownerID="2" targetID="3" group="G1" fromX="760" fromY="-647" />
-      <outputs name="Radujcie sie." ownerID="2" targetID="6" group="G1" fromX="760" fromY="-727" />Pomimo ostrych roznic w kulturze, milosc nie zna granic i pod czujnym okiem Lady jakies zadziorne kochanie przelamuje monotonie zycia. 
+      <outputs name="Radujcie sie." ownerID="2" targetID="6" group="G1" fromX="760" fromY="-727" />Pomimo ostrych róznic w kulturze, milosc nie zna granic i pod czujnym okiem Lady jakies zadziorne kochanie przelamuje monotonie zycia. 
 
 Bocian jest dostrzegany w poblizu i pewny smierci, niedlugo potem do szczesliwej pary przyprowadzane jest dziecko. </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="3" positionX="1007" positionY="-88" width="350" height="530" linkedEventUniqueID="0">
@@ -1411,7 +1412,7 @@ Bocian jest dostrzegany w poblizu i pewny smierci, niedlugo potem do szczesliwej
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Radujcie sie." ownerID="2" targetID="3" fromX="760" fromY="-647" />Noce sa dlugie i samotne, niektorzy z was znajduja pocieche w swoich ramionach. 
+      <outputs name="Radujcie sie." ownerID="2" targetID="3" fromX="760" fromY="-647" />Noce sa dlugie i samotne, niektórzy z was znajduja pocieche w swoich ramionach. 
 
 Bocian jest dostrzegany w poblizu i pewny smierci, niedlugo potem do szczesliwej pary przyprowadzane jest dziecko. </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="3" positionX="854" positionY="-334" width="350" height="530" linkedEventUniqueID="0" />
@@ -1483,7 +1484,7 @@ Bocian jest dostrzegany w poblizu i pewny smierci, niedlugo potem do szczesliwej
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Radujcie sie." ownerID="2" targetID="3" fromX="760" fromY="-647" />Noce sa dlugie i samotne, niektorzy z was znajduja pocieche w swoich ramionach. 
+      <outputs name="Radujcie sie." ownerID="2" targetID="3" fromX="760" fromY="-647" />Noce sa dlugie i samotne, niektórzy z was znajduja pocieche w swoich ramionach. 
 
 Bocian jest dostrzegany w poblizu i pewny smierci, niedlugo potem do szczesliwej pary przyprowadzane jest dziecko. </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="3" positionX="854" positionY="-334" width="350" height="530" linkedEventUniqueID="0" />
@@ -1561,10 +1562,10 @@ Bocian jest dostrzegany w poblizu i pewny smierci, niedlugo potem do szczesliwej
         </ModifierBlock>
       </logic>
       <outputs name="Radujcie sie." ownerID="2" targetID="3" group="G1" fromX="760" fromY="-647" />
-      <outputs name="Radujcie sie." ownerID="2" targetID="5" group="G1" fromX="760" fromY="-727" />Noce sa dlugie i samotne, niektorzy z was znajduja pocieche w towarzystwie innych. 
+      <outputs name="Radujcie sie." ownerID="2" targetID="5" group="G1" fromX="760" fromY="-727" />Noce sa dlugie i samotne, niektórzy z was znajduja pocieche w towarzystwie innych. 
 
 
-Ale wciaz czujny i nieco nadgorliwy bocian jest dostrzegany w poblizu i pewny jak smierc, wkrotce przyprowadzane jest do ciebie dziecko. 
+Ale wciaz czujny i nieco nadgorliwy bocian jest dostrzegany w poblizu i pewny jak smierc, wkrótce przyprowadzane jest do ciebie dziecko. 
 </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="3" positionX="1007" positionY="-179" width="350" height="530" linkedEventUniqueID="0">
       <logic>
@@ -1681,10 +1682,10 @@ Ale wciaz czujny i nieco nadgorliwy bocian jest dostrzegany w poblizu i pewny ja
         </ModifierBlock>
       </logic>
       <outputs name="Radujcie sie." ownerID="2" targetID="3" group="G1" fromX="760" fromY="-647" />
-      <outputs name="Radujcie sie." ownerID="2" targetID="5" group="G1" fromX="760" fromY="-727" />Noce sa dlugie i samotne, niektorzy z was znajduja pocieche w towarzystwie innych. 
+      <outputs name="Radujcie sie." ownerID="2" targetID="5" group="G1" fromX="760" fromY="-727" />Noce sa dlugie i samotne, niektórzy z was znajduja pocieche w towarzystwie innych. 
 
 
-Ale wciaz czujny i nieco nadgorliwy bocian jest dostrzegany w poblizu i pewny jak smierc, wkrotce przyprowadzane jest do ciebie dziecko. 
+Ale wciaz czujny i nieco nadgorliwy bocian jest dostrzegany w poblizu i pewny jak smierc, wkrótce przyprowadzane jest do ciebie dziecko. 
 </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="3" positionX="1007" positionY="-179" width="350" height="530" linkedEventUniqueID="0">
       <logic>
@@ -1802,7 +1803,7 @@ Ale wciaz czujny i nieco nadgorliwy bocian jest dostrzegany w poblizu i pewny ja
       <outputs name="Radujcie sie." ownerID="2" targetID="5" group="G1" fromX="772" fromY="-738" />
       <outputs name="Radujcie sie." ownerID="2" targetID="6" group="G1" fromX="772" fromY="-818" />Albo milosc nie zna granic, albo cos jest nie tak z bocianem, ale ... 
 
-Twoj niezyjacy przyjaciel bardzo sie z kims zaprzyjaznil, a bocian postanowil dostarczyc potomstwo pod ich opieke. 
+Twój niezyjacy przyjaciel bardzo sie z kims zaprzyjaznil, a bocian postanowil dostarczyc potomstwo pod ich opieke. 
 
 </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="3" positionX="914" positionY="95" width="350" height="530" linkedEventUniqueID="0">
@@ -1932,12 +1933,12 @@ Twoj niezyjacy przyjaciel bardzo sie z kims zaprzyjaznil, a bocian postanowil do
       </logic>
       <outputs name="Wez udzial w rytuale." ownerID="2" targetID="5" fromX="778" fromY="-490" />Krasnoludzkie krycie jest rzecza tajemnicy, a poniewaz wybraliscie sciezke na zewnatrz swoich krewnych, nie pamietacie, jak to dziala. 
 
-Jednakze udowodniles, ze jestes przyjacielem Ziemi, wiec oboje jestescie zaproszeni do uczestniczenia w zyciodajnym rytuale, ktory moze zapewnic wam dziecko. 
+Jednakze udowodniles, ze jestes przyjacielem Ziemi, wiec oboje jestescie zaproszeni do uczestniczenia w zyciodajnym rytuale, który moze zapewnic wam dziecko. 
 </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="3" positionX="1998" positionY="-302" width="350" height="530" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventure" ID="5" positionX="895" positionY="56" width="350" height="805">
-      <outputs name="Oczekuj wynikow. " ownerID="5" targetID="6" group="G1" fromX="1220" fromY="-435" />
-      <outputs name="Oczekuj wynikow. " ownerID="5" targetID="7" group="G1" fromX="1220" fromY="-515" />Wchodzisz gleboko w stare krasnoludzkie tunele. Samiec musi podazac za swoim instynktem i znalezc skale zycia. Jego partner czeka. Gdy kamien zostanie przywrocony, kobieta spiewa piesn zyciowa i razem wyrzezbiaja kamien w nadziei, ze stanie sie dzieckiem. 
+      <outputs name="Oczekuj wyników. " ownerID="5" targetID="6" group="G1" fromX="1220" fromY="-435" />
+      <outputs name="Oczekuj wyników. " ownerID="5" targetID="7" group="G1" fromX="1220" fromY="-515" />Wchodzisz gleboko w stare krasnoludzkie tunele. Samiec musi podazac za swoim instynktem i znalezc skale zycia. Jego partner czeka. Gdy kamien zostanie przywrócony, kobieta spiewa piesn zyciowa i razem wyrzezbiaja kamien w nadziei, ze stanie sie dzieckiem. 
 
 Tylko jedna taka ceremonia moze byc przeprowadzona co dwie dekady i nie zawsze jest to udane. 
 </nodes>
@@ -1954,7 +1955,7 @@ Tylko jedna taka ceremonia moze byc przeprowadzona co dwie dekady i nie zawsze j
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Oczekuj wynikow. " ownerID="6" targetID="3" fromX="1679" fromY="-239" />Pomimo, ze jestes z dala od swoich krewnych, twoj instynkt okazal sie silny. Twoja skala zycia rozkwita w dziecko.</nodes>
+      <outputs name="Oczekuj wyników. " ownerID="6" targetID="3" fromX="1679" fromY="-239" />Pomimo, ze jestes z dala od swoich krewnych, twój instynkt okazal sie silny. Twoja skala zycia rozkwita w dziecko.</nodes>
     <nodes xsi:type="NodeAdventure" ID="7" positionX="1361" positionY="-513" width="350" height="725">
       <logic>
         <ModifierBlock>
@@ -1972,7 +1973,7 @@ Tylko jedna taka ceremonia moze byc przeprowadzona co dwie dekady i nie zawsze j
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Oczekuj wynikow. " ownerID="7" targetID="3" fromX="1686" fromY="-1004" />Zbyt dlugo trzymales sie z dala od swego rodzaju, a twoja piesn zyciowa nie mogla obudzic duszy krasnoludow. Zamiast tego mlody rocker ozywa. 
+      <outputs name="Oczekuj wyników. " ownerID="7" targetID="3" fromX="1686" fromY="-1004" />Zbyt dlugo trzymales sie z dala od swego rodzaju, a twoja piesn zyciowa nie mogla obudzic duszy krasnoludów. Zamiast tego mlody rocker ozywa. 
 </nodes>
   </Adventure>
   <Adventure name="Unliving Mating2" uniqueID="44" typeGeneric="false" typePerGroupGeneric="true" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="6" nodeIdMax="6" joinIsForced="false" joinType="OnlyOwn" joinRange="SinglePosition">
@@ -2049,7 +2050,7 @@ Tylko jedna taka ceremonia moze byc przeprowadzona co dwie dekady i nie zawsze j
       <outputs name="Radujcie sie." ownerID="2" targetID="5" group="G1" fromX="772" fromY="-738" />
       <outputs name="Radujcie sie." ownerID="2" targetID="6" group="G1" fromX="772" fromY="-818" />Albo milosc nie zna granic, albo cos jest nie tak z bocianem, ale ... 
 
-Twoj niezyjacy przyjaciel bardzo sie z kims zaprzyjaznil, a bocian postanowil dostarczyc potomstwo pod ich opieke. 
+Twój niezyjacy przyjaciel bardzo sie z kims zaprzyjaznil, a bocian postanowil dostarczyc potomstwo pod ich opieke. 
 
 </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="3" positionX="914" positionY="95" width="350" height="530" linkedEventUniqueID="0">

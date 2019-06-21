@@ -1,5 +1,5 @@
 <DATABASE_DES_LOCALIZATION-NO_HSH>
-  <LOC_LIBRARY-EN_DES>
+  <LOC_LIBRARY-DES>
     <!-- Tags -->
     <Entry Key="DES_TAG_WITS" Val="Spryt" />
     <Entry Key="DES_TAG_WITS_DES" Val="Spryt określa, jak szybko postać może działać podczas wyzwania." />
@@ -36,7 +36,7 @@
     <Entry Key="DES_TAG_MAX_HEALTH_MENTAL" Val="Maksymalna Poczytalność" />
     <Entry Key="DES_TAG_MAX_HEALTH_MENTAL_DES" Val="Maksymalna ilość poczytalności, jaką może posiadać postać. W każdej turze może zostać zregenerowane do 20% maksymalnej poczytalności. Regeneracja każdego punktu zużywa 2 morale. Poczytalność poniżej 30% stwarza ryzyko, że postać opuści twoją grupę." />
     <Entry Key="DES_TAG_MAX_HEALTH_SPIRITUAL" Val="Maksymalna Wiara" />
-    <Entry Key="DES_TAG_MAX_HEALTH_SPIRITUAL_DES" Val="Maksymalna ilość wiary, jaką postać może mieć. 1 punkt wiary jest odzyskiwany w każdej turze, ale możesz również wykonać rytuał duchowego uzdrawiania. Wiara poniżej 30% powoduje stopniową utratę zdrowia." />
+    <Entry Key="DES_TAG_MAX_HEALTH_SPIRITUAL_DES" Val="Maksymalna ilość wiary, jaką postać może mieć. 1 punkt wiary jest odzyskiwany w każdej turze, ale możesz również wykonać rytuał duchowego uzdrawiania. Wiara poniżej 30% powoduje stopniową utratę zdrowia.555" />
     <Entry Key="DES_TAG_SHIELDING" Val="Osłona" />
     <Entry Key="DES_TAG_SHIELDING_DES" Val="Ilość ochrony odnawialnej, jaką ma postać podczas wyzwania." />
     <Entry Key="DES_TAG_SHIELDING_PHYSICAL" Val="Zbroja fizyczna" />
@@ -1263,53 +1263,53 @@
     <Entry Key="DES_AXE_2H_GOLEM_LEATHER" Val="Topór do walki z Golemem" />
     <Entry Key="DES_AXE_2H_ALCHEMY_SKIN" Val="Topór bojowy Alchemii" />
     <Entry Key="DES_AXE_2H_IGNEOUS_SPIKE" Val="Topór walki magmowej" />
-    <Entry Key="DES_CLUB_1H" Val="Klub" />
+    <Entry Key="DES_CLUB_1H" Val="Pałka" />
     <Entry Key="DES_CLUB_1H_DES" Val="Dość prymitywna, ale wciąż dość skuteczna broń tępa, która zadaje obrażenia od rozbryzgu wokół głównego celu. Trzymany w jednej ręce." />
-    <Entry Key="DES_CLUB_1H_IRON" Val="Żelazny klub" />
-    <Entry Key="DES_CLUB_1H_GOLD" Val="Złoty klub" />
-    <Entry Key="DES_CLUB_1H_STEEL" Val="Klub stali" />
-    <Entry Key="DES_CLUB_1H_SILVER" Val="Srebrny Klub" />
-    <Entry Key="DES_CLUB_1H_MITHRILL" Val="Mithril Club" />
-    <Entry Key="DES_CLUB_1H_BONE" Val="Klub kości" />
-    <Entry Key="DES_CLUB_1H_BLOOD_BONE" Val="Blood Club" />
-    <Entry Key="DES_CLUB_1H_SHADOW_BONE" Val="Klub Cienia" />
-    <Entry Key="DES_CLUB_1H_MONSTER_BONE" Val="Klub Monsterów" />
-    <Entry Key="DES_CLUB_1H_DRAGON_BONE" Val="Dragon Club" />
-    <Entry Key="DES_CLUB_1H_WOOD" Val="Drewniany klub" />
-    <Entry Key="DES_CLUB_1H_DRYAD_WOOD" Val="Klub Driady" />
-    <Entry Key="DES_CLUB_1H_DARK_WOOD" Val="Dark Club" />
-    <Entry Key="DES_CLUB_1H_ELVEN_WOOD" Val="Elven Club" />
-    <Entry Key="DES_CLUB_1H_ANCIENT_WOOD" Val="Starożytny klub" />
-    <Entry Key="DES_CLUB_1H_SANDSTONE" Val="Klub z piaskowca" />
-    <Entry Key="DES_CLUB_1H_CLAY" Val="Klub gliny" />
-    <Entry Key="DES_CLUB_1H_QUARTZ" Val="Klub Kwarcowy" />
-    <Entry Key="DES_CLUB_1H_GRANITE" Val="Klub granitowy" />
-    <Entry Key="DES_CLUB_1H_OBSIDIAN" Val="Obsidian Club" />
-    <Entry Key="DES_CLUB_1H_AMBER" Val="Amber Club" />
-    <Entry Key="DES_CLUB_1H_MALACHITE" Val="Klub Malachitów" />
-    <Entry Key="DES_CLUB_1H_TOPAZ" Val="Klub Topaz" />
-    <Entry Key="DES_CLUB_1H_RUBY" Val="Ruby Club" />
-    <Entry Key="DES_CLUB_1H_DIAMOND" Val="Klub Diamentów" />
-    <Entry Key="DES_CLUB_1H_ENCHANTED_BONE" Val="Zaczarowany klub" />
-    <Entry Key="DES_CLUB_1H_VOID_SPARKLER" Val="Klub musujący" />
-    <Entry Key="DES_CLUB_1H_FORGOTTEN_ESSENCE" Val="Zapomniany klub" />
-    <Entry Key="DES_CLUB_1H_STONE_WOOD" Val="Klub Stonewood" />
-    <Entry Key="DES_CLUB_1H_SACRED_WOOD" Val="Sacred Club" />
-    <Entry Key="DES_CLUB_1H_CRYSTAL_WOOD" Val="Kryształowy klub" />
-    <Entry Key="DES_CLUB_1H_PRISTINE_MATTER" Val="Nieskazitelny klub" />
-    <Entry Key="DES_CLUB_1H_GODS_BRANCH" Val="Klub bogów" />
-    <Entry Key="DES_CLUB_1H_LIFE_ROOT" Val="Living Club" />
-    <Entry Key="DES_CLUB_1H_EARTH_CORE" Val="Molten Club" />
-    <Entry Key="DES_CLUB_1H_METAL_COMPOSITE" Val="Klub kompozytowy" />
-    <Entry Key="DES_CLUB_1H_ARMOURED_STONE" Val="Klub pancerny" />
-    <Entry Key="DES_CLUB_1H_GOLEM_LEATHER" Val="Klub Golem" />
-    <Entry Key="DES_CLUB_1H_SECRET_ALLOY" Val="Alloy Club" />
-    <Entry Key="DES_CLUB_1H_MOONSTONE" Val="Klub Księżycowych Kamieni" />
-    <Entry Key="DES_CLUB_1H_ALCHEMY_SKIN" Val="Klub Alchemy" />
-    <Entry Key="DES_CLUB_1H_IGNEOUS_SPIKE" Val="Igneous Club" />
-    <Entry Key="DES_CLUB_1H_PURE_STONE" Val="Czysty klub" />
-    <Entry Key="DES_CLUB_1H_GRANDGEM" Val="Grand Club" />
-    <Entry Key="DES_CLUB_2H" Val="Mallet" />
+    <Entry Key="DES_CLUB_1H_IRON" Val="Żelazna pałka" />
+    <Entry Key="DES_CLUB_1H_GOLD" Val="Złota pałka" />
+    <Entry Key="DES_CLUB_1H_STEEL" Val="Stalowa pałka" />
+    <Entry Key="DES_CLUB_1H_SILVER" Val="Srebrna pałka" />
+    <Entry Key="DES_CLUB_1H_MITHRILL" Val="Mithrilowa pałka" />
+    <Entry Key="DES_CLUB_1H_BONE" Val="Kościana pałka" />
+    <Entry Key="DES_CLUB_1H_BLOOD_BONE" Val="Krwista pałka" />
+    <Entry Key="DES_CLUB_1H_SHADOW_BONE" Val="Cienista pałka" />
+    <Entry Key="DES_CLUB_1H_MONSTER_BONE" Val="Potworna pałka" />
+    <Entry Key="DES_CLUB_1H_DRAGON_BONE" Val="Smocza pałka" />
+    <Entry Key="DES_CLUB_1H_WOOD" Val="Drewniana pałka" />
+    <Entry Key="DES_CLUB_1H_DRYAD_WOOD" Val="Pałka Driady" />
+    <Entry Key="DES_CLUB_1H_DARK_WOOD" Val="Pałka ciemności" />
+    <Entry Key="DES_CLUB_1H_ELVEN_WOOD" Val="Elficka pałka" />
+    <Entry Key="DES_CLUB_1H_ANCIENT_WOOD" Val="Starożytna pałka" />
+    <Entry Key="DES_CLUB_1H_SANDSTONE" Val="Pałka z piaskowca" />
+    <Entry Key="DES_CLUB_1H_CLAY" Val="Gliniana pałka" />
+    <Entry Key="DES_CLUB_1H_QUARTZ" Val="Kwarcowa pałka" />
+    <Entry Key="DES_CLUB_1H_GRANITE" Val="Granitowa pałka" />
+    <Entry Key="DES_CLUB_1H_OBSIDIAN" Val="Obydianowa pałka" />
+    <Entry Key="DES_CLUB_1H_AMBER" Val="Bursztynowa pałka" />
+    <Entry Key="DES_CLUB_1H_MALACHITE" Val="Malachitowa pałka" />
+    <Entry Key="DES_CLUB_1H_TOPAZ" Val="Topazowa pałka" />
+    <Entry Key="DES_CLUB_1H_RUBY" Val="Rubinowa pałka" />
+    <Entry Key="DES_CLUB_1H_DIAMOND" Val="Diamentowa pałka" />
+    <Entry Key="DES_CLUB_1H_ENCHANTED_BONE" Val="Zaczarowana pałka" />
+    <Entry Key="DES_CLUB_1H_VOID_SPARKLER" Val="Błyszcząca pałka" />
+    <Entry Key="DES_CLUB_1H_FORGOTTEN_ESSENCE" Val="Zapomniana pałka" />
+    <Entry Key="DES_CLUB_1H_STONE_WOOD" Val="Skamieniała pałka" />
+    <Entry Key="DES_CLUB_1H_SACRED_WOOD" Val="Święta pałka" />
+    <Entry Key="DES_CLUB_1H_CRYSTAL_WOOD" Val="Kryształowa pałka" />
+    <Entry Key="DES_CLUB_1H_PRISTINE_MATTER" Val="Nieskazitelna pałka" />
+    <Entry Key="DES_CLUB_1H_GODS_BRANCH" Val="Boska pałka" />
+    <Entry Key="DES_CLUB_1H_LIFE_ROOT" Val="Żywa pałka" />
+    <Entry Key="DES_CLUB_1H_EARTH_CORE" Val="Pałka ze stopu" />
+    <Entry Key="DES_CLUB_1H_METAL_COMPOSITE" Val="Kompozytowapałka" />
+    <Entry Key="DES_CLUB_1H_ARMOURED_STONE" Val="Pancerna pałka" />
+    <Entry Key="DES_CLUB_1H_GOLEM_LEATHER" Val="Pałka golema" />
+    <Entry Key="DES_CLUB_1H_SECRET_ALLOY" Val="Pałka ze stopu" />
+    <Entry Key="DES_CLUB_1H_MOONSTONE" Val="Księżycowa pałka" />
+    <Entry Key="DES_CLUB_1H_ALCHEMY_SKIN" Val="Alchemiczna pałka" />
+    <Entry Key="DES_CLUB_1H_IGNEOUS_SPIKE" Val="Ognista pałka" />
+    <Entry Key="DES_CLUB_1H_PURE_STONE" Val="Czysta pałka" />
+    <Entry Key="DES_CLUB_1H_GRANDGEM" Val="Wielka pałka" />
+    <Entry Key="DES_CLUB_2H" Val="Młot" />
     <Entry Key="DES_CLUB_2H_DES" Val="Duża, ciężka i dość nieporęczna broń, ale jej moc niszcząca jest trudna do dopasowania. Może zadawać obrażenia od rozbryzgów wokół głównego celu. Wymaga obu rąk." />
     <Entry Key="DES_CLUB_2H_IRON" Val="Iron Mallet" />
     <Entry Key="DES_CLUB_2H_GOLD" Val="Złoty młotek" />
@@ -2001,13 +2001,13 @@
     <Entry Key="DES_COOKING_FRUITS2_DES" Val="Naczynia i napoje z Goblins 'Donoughteet Book. \nPodstawowe składniki: \n{ICON:Fruits}{ICON:Nuts}\nDodatkowe składniki: \n{ICON:Meat}{ICON:Fish}{ICON:BeetleJelly}{ICON:Eggs}{ICON:Spices}{ICON:Herbs}" />
     <Entry Key="DES_PET_HORSE" Val="Koń" />
     <Entry Key="DES_PET_HORSE_DES" Val="Lojalny rumak, cenny towarzysz każdego bohatera." />
-    <Entry Key="DES_PET_GOAT" Val="Carrier Goat" />
+    <Entry Key="DES_PET_GOAT" Val="Juczna koza" />
     <Entry Key="DES_PET_GOAT_DES" Val="Oswojona koza specjalnie przeszkolona do noszenia twoich rzeczy." />
-    <Entry Key="DES_PET_GOAT_BUNNY" Val="Bunny" />
+    <Entry Key="DES_PET_GOAT_BUNNY" Val="Królik" />
     <Entry Key="DES_PET_GOAT_BUNNY_DES" Val="To królik. Naprawdę tak jest!" />
-    <Entry Key="DES_PET_BUNNY" Val="Bunny" />
+    <Entry Key="DES_PET_BUNNY" Val="Królik" />
     <Entry Key="DES_PET_BUNNY_DES" Val="Biały, puszysty duch." />
-    <Entry Key="DES_PET_CAT" Val="Cat" />
+    <Entry Key="DES_PET_CAT" Val="Kot" />
     <Entry Key="DES_PET_CAT_DES" Val="Kot pozwala ci być jego lojalnym sługą." />
     <Entry Key="DES_PET_DOG" Val="Pies" />
     <Entry Key="DES_PET_DOG_DES" Val="Najlepszy przyjaciel człowieka." />
@@ -2017,22 +2017,22 @@
     <Entry Key="DES_PET_BEAR_DES" Val="Oswojony niedźwiedź, dopóki karmisz go miodem, powinieneś być w porządku." />
     <Entry Key="DES_PET_BOAR" Val="Dzik" />
     <Entry Key="DES_PET_BOAR_DES" Val="Przeszkolony dzik." />
-    <Entry Key="DES_PET_SKSHACK" Val="Skshack" />
-    <Entry Key="DES_PET_SKSHACK_DES" Val="Przyjazny demon domowy, który zdecydował, że jesteś godny jego błogosławieństw." />
-    <Entry Key="DES_PET_CMUCH" Val="Wiele" />
-    <Entry Key="DES_PET_CMUCH_DES" Val="nieśmiały i niezbyt ładny demon, ale przyniesie ci dobre zdrowie, gdy się zaprzyjaźnisz." />
-    <Entry Key="DES_PET_WRAITH" Val="Wraith" />
-    <Entry Key="DES_PET_WRAITH_DES" Val="Spróbuj ponownie nazwać mnie zwierzakiem, ty żałosna torebka ciała!" />
+    <Entry Key="DES_PET_SKSHACK" Val="Skrzat" />
+    <Entry Key="DES_PET_SKSHACK_DES" Val="Przyjazny domowy demon, który zdecydował, że jesteś godny jego błogosławieństw." />
+    <Entry Key="DES_PET_CMUCH" Val="Ćmuch" />
+    <Entry Key="DES_PET_CMUCH_DES" Val="Nieśmiały i niezbyt urodziwy demon, ale przyniesie ci dobre zdrowie, gdy się zaprzyjaźnicie." />
+    <Entry Key="DES_PET_WRAITH" Val="Widmo" />
+    <Entry Key="DES_PET_WRAITH_DES" Val="Spróbuj ponownie nazwać mnie zwierzakiem, ty żałosny worku mięsa!" />
     <Entry Key="DES_PET_GHOST" Val="Duch" />
     <Entry Key="DES_PET_GHOST_DES" Val="Twój własny, przyjazny duch." />
     <Entry Key="DES_PET_CROW" Val="Wrona" />
     <Entry Key="DES_PET_CROW_DES" Val="Najlepszy towarzysz dla czarownicy." />
-    <Entry Key="DES_PET_SPIDER_SPITTING" Val="Spitting Spider" />
+    <Entry Key="DES_PET_SPIDER_SPITTING" Val="Plujący pająk" />
     <Entry Key="DES_PET_SPIDER_SPITTING_DES" Val="Twój własny, przerażający przyjaciel." />
     <Entry Key="DES_PET_TURTLE" Val="Żelazna żaba" />
-    <Entry Key="DES_PET_TURTLE_DES" Val="Mądrzy, powszechnie znani jako żaba żelazna, znają to stworzenie jako żółwia. Jest to niezwykle rzadkie w Slavyi, ale są one tak stare jak elfy, a zatem dają swojemu posiadaczowi wiedzę, kiedy trzy razy pocierasz jego muszlę, w kierunku przeciwnym do ruchu wskazówek zegara." />
-    <Entry Key="DES_PET_CHICKEN" Val="Slavyan Cock" />
-    <Entry Key="DES_PET_CHICKEN_DES" Val="Twój słowiański kutas jest zazdrością wszystkich twoich sąsiadów." />
+    <Entry Key="DES_PET_TURTLE_DES" Val="Uczeni nazywają to stworzenie żółwiem. Jest niezwykle rzadkie w kraju Słowian. Są tak stare jak elfy, a zatem dają swojemu posiadaczowi wiedzę, kiedy trzy razy potryesy jego muszlę, w kierunku przeciwnym do ruchu wskazówek zegara." />
+    <Entry Key="DES_PET_CHICKEN" Val="Słowiański kogut" />
+    <Entry Key="DES_PET_CHICKEN_DES" Val="Twój słowiański kogut jest powodem zazdrości wszystkich sąsiadów." />
     <!-- BUILDINGS -->
     <Entry Key="DES_IDOL" Val="Idol" />
     <Entry Key="DES_IDOL_DES" Val="Rzeźbiona postać poświęcona bóstwu. Buduje twoją wioskę." />
@@ -2317,9 +2317,9 @@
     <Entry Key="DES_SKILL_STRONG_GATHERING_TOOL" Val="Pomoc kolekcjonera" />
     <Entry Key="DES_SKILL_STRONG_GATHERING_TOOL_DES" Val="Zapewnia premię do atrybutów Gromadzenie i Przenoszenie osobiste, gdy są one wyposażone." />
     <Entry Key="DES_SKILL_WEAK_MULTI_CRAFTING_TOOL" Val="Pomoc rzemieślnika " />
-    <Entry Key="DES_SKILL_WEAK_ADD_CRAFTING_TOOL" Val="Pomoc rzemieślnika" />
+    <Entry Key="DES_SKILL_WEAK_ADD_CRAFTING_TOOL" Val="Artisan's Aid" />
     <Entry Key="DES_SKILL_WEAK_CRAFTING_TOOL_DES" Val="Zapewnia premię do atrybutu Crafting, gdy jest wyposażony." />
-    <Entry Key="DES_SKILL_WEAK_ADD_CRAFTING_TOOL" Val="Pomoc rzemieślnika" />
+    <Entry Key="DES_SKILL_WEAK_ADD_CRAFTING_TOOL" Val="Artisan's Aid" />
     <Entry Key="DES_SKILL_WEAK_ADD_CRAFTING_TOOL_DES" Val="Zapewnia premię do atrybutu Craftingu, gdy jest wyposażony." />
     <Entry Key="DES_SKILL_CRAFTING_TOOL" Val="Pomoc wynalazcy" />
     <Entry Key="DES_SKILL_CRAFTING_TOOL_DES" Val="Zapewnia premię do atrybutów Rzemiosła i Badań po wyposażeniu. Zwiększa również regenerację poczytalności." />
@@ -2611,7 +2611,7 @@
     <Entry Key="DES_SKILL_SMARTER_EVERY_DAY" Val="Smarter Every Day" />
     <Entry Key="DES_SKILL_SMARTER_EVERY_DAY_DES" Val="W każdej turze otrzymujesz trochę PD." />
     <Entry Key="DES_SKILL_TRUE_HEROES" Val="Prawdziwi bohaterowie" />
-    <Entry Key="DES_SKILL_TRUE_HEROES_DES" Val="Trochę osłaniać w każdym wyzwaniu przyznanym każdemu wyznawcy przez ich Boga." />
+    <Entry Key="DES_SKILL_TRUE_HEROES_DES" Val="A bit of shielding in every challenge granted to each follower by their God." />
     <Entry Key="DES_SKILL_LOGIC_WALL" Val="Ściana logiczna" />
     <Entry Key="DES_SKILL_LOGIC_WALL_DES" Val="Trochę osłaniać w umysłowych i duchowych wyzwaniach, udzielanych każdemu wyznawcy przez ich Boga." />
     <Entry Key="DES_SKILL_BRAINER" Val="Sprytny" />
@@ -3321,8 +3321,8 @@
     <Entry Key="DES_SUBSKILL_GROUP_ADD_SHIELDING_P_M_S_DES" Val="Ta postać otrzymuje bonus do fizycznego, mentalnego i duchowego osłaniania z pobliskiego budynku." />
     <Entry Key="DES_SUBSKILL_GROUP_ADD_RESEARCH" Val="Bonus badawczy" />
     <Entry Key="DES_SUBSKILL_GROUP_ADD_RESEARCH_DES" Val="Ta postać otrzymuje bonus do atrybutu badań z pobliskiego budynku." />
-    <Entry Key="DES_SUBSKILL_GROUP_MEDICINE" Val="Ta postać otrzymuje bonus do atrybutu leczenia z pobliskiego budynku." />
-    <Entry Key="DES_SUBSKILL_GROUP_MEDICINE" Val="Ta postać otrzymuje bonus do atrybutu leczenia z pobliskiego budynku." />
+    <Entry Key="DES_SUBSKILL_GROUP_MEDICINE" Val="This character receives a bonus to Healing attribute from a nearby building." />
+    <Entry Key="DES_SUBSKILL_GROUP_MEDICINE" Val="This character receives a bonus to Healing attribute from a nearby building." />
     <Entry Key="DES_SUBSKILL_GROUP_LOWER_DEATH_CHANCE" Val="Bonus za niższą szansę na śmierć" />
     <Entry Key="DES_SUBSKILL_GROUP_LOWER_DEATH_CHANCE_DES" Val="Szansa na śmierć tej postaci z powodu poważnych ran zostaje zmniejszona przez pobliski budynek." />
     <Entry Key="DES_SUBSKILL_GROUP_ADD_CHILDREN_ATT" Val="Główny atrybut atrybutu" />
@@ -3463,7 +3463,7 @@
     <Entry Key="DES_TRAIT_FAMILIAR_AREA" Val="Obszar rodzinny" />
     <Entry Key="DES_TRAIT_FAMILIAR_AREA_DES" Val="Camping daje dodatkową odległość zbierania." />
     <Entry Key="DES_TRAIT_SMARTER_EVERY_DAY" Val="Smarter Every Day" />
-    <Entry Key="DES_TRAIT_SMARTER_EVERY_DAY_DES" Val="Każdego dnia każda z twoich postaci otrzymuje 0,2 punktów doświadczenia." />
+    <Entry Key="DES_TRAIT_SMARTER_EVERY_DAY_DES" Val="Each day each of your characters receive 0.2 Experience Points." />
     <Entry Key="DES_TRAIT_LOGIC_WALL" Val="Ściana logiczna" />
     <!--<Entry Key="DES_TRAIT_LOGIC_WALL_DES" Val="All your characters will share an additional pool of 20 Mental Hit Points, divided equally between them."/>-->
     <Entry Key="DES_TRAIT_LOGIC_WALL_DES" Val="Wszyscy twoi wyznawcy otrzymują +4 mentalne i duchowe osłonę." />
@@ -3522,7 +3522,7 @@
     <Entry Key="DES_TRAIT_SEASONED_FOLLOWERS" Val="Doświadczeni zwolennicy" />
     <Entry Key="DES_TRAIT_SEASONED_FOLLOWERS_DES" Val="Zacznij od 20 punktów doświadczenia podzielonych równo pomiędzy wszystkich członków twojej grupy." />
     <Entry Key="DES_TRAIT_SMARTER_EVERY_DAY" Val="Smarter Every Day" />
-    <Entry Key="DES_TRAIT_SMARTER_EVERY_DAY_DES" Val="Każdego dnia każda z twoich postaci otrzymuje 0,2 punktów doświadczenia." />
+    <Entry Key="DES_TRAIT_SMARTER_EVERY_DAY_DES" Val="Each day each of your characters receive 0.2 Experience Points." />
     <Entry Key="DES_TRAIT_SOLAR_POWERED" Val="Zasilany energią słoneczną" />
     <Entry Key="DES_TRAIT_SOLAR_POWERED_DES" Val="Twoje postacie regenerują 1 dodatkowe Zdrowie, Poczytalność i Wiarę w ciągu dnia, ale tracą 1 Poczytalność w nocy." />
     <Entry Key="DES_TRAIT_JUMPING_FISH" Val="Skacząca ryba" />
@@ -3822,6 +3822,10 @@
     <Entry Key="DES_TOOLTIP_TRANSFER_FOOD_DES" Val="Służy do szybkiego przesyłania różnych potraw między grupami." />
     <Entry Key="DES_TOOLTIP_GOD_POINTS_CLAIMED" Val="God Points" />
     <Entry Key="DES_TOOLTIP_GOD_POINTS_CLAIMED_DES" Val="Punkty God są dodawane do twojego profilu po otwarciu ekranu Podsumowanie gry. Jeśli będziesz kontynuować grę i zdobędziesz więcej punktów, tylko różnica zostanie dodana następnym razem." />
+    <Entry Key="DES_TOOLTIP_REPLAY_VO" Val="Replay Narration" />
+    <Entry Key="DES_TOOLTIP_REPLAY_VO_DES" Val="Replay the narration of the current paragraph." />
+    <Entry Key="DES_TOOLTIP_MORALE" Val="Morale Gain" />
+    <Entry Key="DES_TOOLTIP_MORALE_DES" Val="The amount of Morale gained from food each turn. Each character gets +1 Morale per turn for each type of food present in the group's inventory." />
     <!-- LOCATIONS AND GROUPS -->
     <Entry Key="DES_ENEMY_GROUP" Val="Enemy Group" />
     <Entry Key="DES_GROUP_HUMANS" Val="Ludzie" />
@@ -4046,5 +4050,5 @@
     <Entry Key="DES_SUBSKILL_WEAPON_ATTACK_DES" Val="Normalny atak bronią. Każdy typ broni może mieć różne efekty celu, spustu i obrażeń, więc sprawdź ikony, aby dowiedzieć się więcej." />
     <Entry Key="DES_TUT_SUBSKILL_DEFAULT_AXE" Val="Siekiera topora" />
     <Entry Key="DES_TUT_SUBSKILL_DEFAULT_AXE_DES" Val="Atak wręcz, celuje w jednego wroga, który jest najbliżej ciebie." />
-  </LOC_LIBRARY-EN_DES>
+  </LOC_LIBRARY-DES>
 </DATABASE_DES_LOCALIZATION-NO_HSH>

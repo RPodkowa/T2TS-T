@@ -1,5 +1,5 @@
 <DATABASE_QUEST_LOCALIZATION-NO_HSH>
-  <LOC_LIBRARY-EN_QUEST>
+  <LOC_LIBRARY-QUEST>
     <Entry Key="QUEST_RATS_NEST" Val="Rat's Nest" />
     <!-- Quest name example -->
     <Entry Key="QUEST_RATS_NEST_DES" Val="Twoja babcia poprosiła cię o oczyszczenie piwnicy z nieznośnych gryzoni." />
@@ -403,5 +403,5 @@
     <Entry Key="QUEST_MISC3_GOBKILLSPWNONE5_DES" Val="Przekonałeś zabójcę goblinów, w ten czy inny sposób, przekonałeś ich, by nie ścigali goblinów." />
     <Entry Key="QUEST_MISC3_GOBKILLSPWNONE6_DES" Val="Zostałeś zmuszony do ucieczki." />
     <Entry Key="QUEST_MISC3_GOBKILLSPWNONE7_DES" Val="Pomogłeś im wytropić gobliny i byli wdzięczni." />
-  </LOC_LIBRARY-EN_QUEST>
+  </LOC_LIBRARY-QUEST>
 </DATABASE_QUEST_LOCALIZATION-NO_HSH>

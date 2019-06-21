@@ -122,7 +122,7 @@
       <outputs name="Walcz!" ownerID="2" targetID="12" fromX="767" fromY="-642" />
       <outputs name="Zastrasz ich!" ownerID="2" targetID="15" fromX="767" fromY="-723" />
       <outputs name="Odsun sie." ownerID="2" targetID="10" fromX="767" fromY="-803" />
-      <outputs name="[Bestia] Razem wyspijcie sie do ksiezyca, zadzwoncie do wspolnej melodii, albo po prostu biegnijcie razem z krewnymi przez jakis czas, zanim poprosza ich, aby ruszyli dalej." ownerID="2" targetID="26" fromX="767" fromY="-883" />
+      <outputs name="[Bestia] Razem wyspijcie sie do ksiezyca, zadzwoncie do wspólnej melodii, albo po prostu biegnijcie razem z krewnymi przez jakis czas, zanim poprosza ich, aby ruszyli dalej." ownerID="2" targetID="26" fromX="767" fromY="-883" />
       <outputs name="[Lowca] Przesladuj zwierzeta i upoluj je!" ownerID="2" targetID="30" fromX="767" fromY="-963" />Zbliza sie stado bestii.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="10" positionX="6" positionY="-720" width="350" height="530" linkedEventUniqueID="0">
       <logic>
@@ -388,7 +388,7 @@
       <outputs name="Zastrasz ich!" ownerID="2" targetID="15" fromX="767" fromY="-723" />
       <outputs name="Odsun sie." ownerID="2" targetID="10" fromX="767" fromY="-803" />
       <outputs name="[Troll] Grunt na powitanie swoich krewnych i popros ich, aby przeprowadzili sie z twojego terytorium." ownerID="2" targetID="26" fromX="767" fromY="-883" />
-      <outputs name="Przekupuj ich mnostwem jedzenia!" ownerID="2" targetID="27" fromX="767" fromY="-963" />Widzisz trolle!</nodes>
+      <outputs name="Przekupuj ich mnóstwem jedzenia!" ownerID="2" targetID="27" fromX="767" fromY="-963" />Widzisz trolle!</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="10" positionX="-17.14307" positionY="-768.311951" width="350" height="530" linkedEventUniqueID="0">
       <logic>
         <FilterBlock>
@@ -478,7 +478,7 @@
       <outputs name="Cancel" ownerID="27" targetID="12" fromX="513" fromY="-2195" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="28" positionX="2466" positionY="-1159" width="350" height="725">
-      <outputs name="Wyjdz." ownerID="28" targetID="22" fromX="2791" fromY="-1650" />Trolle opuszczaja niektore towary, gdy wychodza. </nodes>
+      <outputs name="Wyjdz." ownerID="28" targetID="22" fromX="2791" fromY="-1650" />Trolle opuszczaja niektóre towary, gdy wychodza. </nodes>
   </Adventure>
   <Adventure name="GroupSocialAttack" uniqueID="7" typeGeneric="false" typePerGroupGeneric="false" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="29" joinIsForced="false" joinType="AllAlly" joinRange="MovementArea">
     <nodes xsi:type="NodeStarting" ID="1" positionX="10" positionY="-10" width="347" height="661" image="Event016">
@@ -499,10 +499,10 @@
         </FilterBlock>
       </logic>
       <outputs name="Atak!" ownerID="2" targetID="12" fromX="767" fromY="-642" />
-      <outputs name="Oprzyj sie ich urokom i sprobuj ich zastraszyc!" ownerID="2" targetID="15" fromX="767" fromY="-723" />
+      <outputs name="Oprzyj sie ich urokom i spróbuj ich zastraszyc!" ownerID="2" targetID="15" fromX="767" fromY="-723" />
       <outputs name="Odsun sie." ownerID="2" targetID="10" fromX="767" fromY="-803" />
       <outputs name="[Demon] Sluchaj uwaznie, chwal i czesciowo jako przyjaciele." ownerID="2" targetID="26" fromX="767" fromY="-883" />
-      <outputs name="[Magiczny uzytkownik lub mistycyzm] Obron sie sila swojego ducha." ownerID="2" targetID="27" fromX="767" fromY="-963" />Czy to monolog o wielkim znaczeniu, piekna piesn, czy uwodzicielski tekst, ktos probuje wejsc do ciebie swoimi srebrnymi jezykami.</nodes>
+      <outputs name="[Magiczny uzytkownik lub mistycyzm] Obron sie sila swojego ducha." ownerID="2" targetID="27" fromX="767" fromY="-963" />Czy to monolog o wielkim znaczeniu, piekna piesn, czy uwodzicielski tekst, ktos próbuje wejsc do ciebie swoimi srebrnymi jezykami.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="10" positionX="-17.14307" positionY="-768.311951" width="350" height="530" linkedEventUniqueID="0">
       <logic>
         <FilterBlock>
@@ -540,7 +540,7 @@
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Uruchom." ownerID="19" targetID="14" fromX="1862" fromY="-2268" />Nie udaje ci sie. Twoj umysl jest zmieszany, a twoj duch przeklety.</nodes>
+      <outputs name="Uruchom." ownerID="19" targetID="14" fromX="1862" fromY="-2268" />Nie udaje ci sie. Twój umysl jest zmieszany, a twój duch przeklety.</nodes>
     <nodes xsi:type="NodeDealDamage" ID="20" positionX="1021.27332" positionY="-1870.886" width="460" height="459" challengeTypeDamage="TypeMental" minDamage="40" maxDamage="50" useCountInPercent="true" targetGroup="ppl">
       <outputs ownerID="20" targetID="19" fromX="1450" fromY="-2259" />
     </nodes>
@@ -642,9 +642,9 @@
         </FilterBlock>
       </logic>
       <outputs name="Atak!" ownerID="2" targetID="12" fromX="767" fromY="-642" />
-      <outputs name="Sprobuj zastraszyc!" ownerID="2" targetID="15" fromX="767" fromY="-723" />
+      <outputs name="Spróbuj zastraszyc!" ownerID="2" targetID="15" fromX="767" fromY="-723" />
       <outputs name="Odsun sie." ownerID="2" targetID="10" fromX="767" fromY="-803" />
-      <outputs name="[Sila] Stoj mocno i nie pozwol im wejsc na twoje terytorium." ownerID="2" targetID="26" fromX="767" fromY="-883" />
+      <outputs name="[Sila] Stój mocno i nie pozwól im wejsc na twoje terytorium." ownerID="2" targetID="26" fromX="767" fromY="-883" />
       <outputs name="[Magiczny uzytkownik] Obron sie sila swojego ducha." ownerID="2" targetID="27" fromX="767" fromY="-963" />Demon zbliza sie do ciebie agresywnie.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="10" positionX="-17.14307" positionY="-768.311951" width="350" height="530" linkedEventUniqueID="0">
       <logic>
@@ -683,7 +683,7 @@
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Uruchom." ownerID="19" targetID="14" fromX="1862" fromY="-2268" />Nie udaje ci sie. Twoj umysl jest zmieszany, a twoj duch przeklety.</nodes>
+      <outputs name="Uruchom." ownerID="19" targetID="14" fromX="1862" fromY="-2268" />Nie udaje ci sie. Twój umysl jest zmieszany, a twój duch przeklety.</nodes>
     <nodes xsi:type="NodeDealDamage" ID="20" positionX="1021.27332" positionY="-1870.886" width="460" height="459" challengeTypeDamage="TypeMental" minDamage="40" maxDamage="80" useCountInPercent="true" targetGroup="ppl">
       <outputs ownerID="20" targetID="19" fromX="1450" fromY="-2259" />
     </nodes>
@@ -781,7 +781,7 @@
       <outputs name="Walcz!" ownerID="2" targetID="12" fromX="767" fromY="-642" />
       <outputs name="Zastrasz ich!" ownerID="2" targetID="15" fromX="767" fromY="-723" />
       <outputs name="Odsun sie." ownerID="2" targetID="10" fromX="767" fromY="-803" />
-      <outputs name="[Niezyjacy] Rozloz swoje niezyjace cialo lub zapach na swoich sojusznikach, aby twoi krewni pomysleli, ze wszyscy jestescie przyjaciolmi." ownerID="2" targetID="26" fromX="767" fromY="-883" />Jestes atakowany przez unliving!</nodes>
+      <outputs name="[Niezyjacy] Rozlóz swoje niezyjace cialo lub zapach na swoich sojusznikach, aby twoi krewni pomysleli, ze wszyscy jestescie przyjaciólmi." ownerID="2" targetID="26" fromX="767" fromY="-883" />Jestes atakowany przez unliving!</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="10" positionX="-17.14307" positionY="-768.311951" width="350" height="530" linkedEventUniqueID="0">
       <logic>
         <FilterBlock>
@@ -914,14 +914,14 @@
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="[Magiczni uzytkownicy lub lojalnosc i mistycyzm] Albo wiesz wystarczajaco duzo o magii, aby sprobowac nauczyc nawet elfiego dziecka, albo jestes przyjacielem Woodlandkina, tak jak mozesz poprosic o jego wskazowki, aby mlodziez mogla zostac magicznym uzytkownikiem elfow." ownerID="2" targetID="3" fromX="199" fromY="-157" />
+      <outputs name="[Magiczni uzytkownicy lub lojalnosc i mistycyzm] Albo wiesz wystarczajaco duzo o magii, aby spróbowac nauczyc nawet elfiego dziecka, albo jestes przyjacielem Woodlandkina, tak jak mozesz poprosic o jego wskazówki, aby mlodziez mogla zostac elfim magicznym uzytkownikiem." ownerID="2" targetID="3" fromX="199" fromY="-157" />
       <outputs name="[Percepcja i sila] Dziecko ma sprawnosc fizyczna, byc moze sciezka wojownika jest ich przeznaczeniem." ownerID="2" targetID="39" fromX="199" fromY="-237" />
       <outputs name="Naucz elfiego dziecka dobrego starego handlu. " ownerID="2" targetID="14" fromX="199" fromY="-317" />
-      <outputs name="[Szansa] Elfy sa na zawsze zwiazane z lasem, pozwol dziecku przeksztalcic sie w demona lasu, nawet jesli wynik jest niepewny." ownerID="2" targetID="25" fromX="199" fromY="-397" />Twoje elfie dziecko nie bedzie uwazane za doroslego wsrod swoich elfich krewnych jeszcze przez wiele dziesiecioleci, ale osiagnelo czas wzrostu. 
+      <outputs name="[Szansa] Elfy sa na zawsze zwiazane z lasem, pozwól dziecku przeksztalcic sie w demona lasu, nawet jesli wynik jest niepewny." ownerID="2" targetID="25" fromX="199" fromY="-397" />Twoje elfie dziecko nie bedzie uwazane za doroslego wsród swoich elfich krewnych jeszcze przez wiele dziesiecioleci, ale osiagnelo czas wzrostu. 
 
 Jako takie, przejda uprawy: ceremonia dojrzewania. 
 
-Ale ta sciezka nigdy nie jest latwa. Musisz wybrac, jaka podroz zabierze mlody czlowiek, jesli bogowie chca, moga wrocic do ciebie jako dorosly. 
+Ale ta sciezka nigdy nie jest latwa. Musisz wybrac, jaka podróz zabierze mlody czlowiek, jesli bogowie chca, moga wrócic do ciebie jako dorosly. 
 
 
 </nodes>
@@ -951,12 +951,12 @@ Ale ta sciezka nigdy nie jest latwa. Musisz wybrac, jaka podroz zabierze mlody c
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Rozpocznij proby dla maga." ownerID="3" targetID="7" fromX="589" fromY="916" />
-      <outputs name="Wroc do wyborow." ownerID="3" targetID="2" fromX="589" fromY="836" />
-      <outputs name="Rozpocznij proby dla druida." ownerID="3" targetID="33" fromX="589" fromY="756" />
-      <outputs name="[Percepcja i sila] Dziecko ma sprawnosc fizyczna, byc moze sciezka wojownika jest ich przeznaczeniem." ownerID="3" targetID="20" fromX="589" fromY="676" />Sploty magii sa naturalne dla wszystkich elfow, ale sciezka magicznego uzytkownika jest dokonywana z mrocznymi niebezpieczenstwami, szczegolnie dla elfiego dziecka wychowanego z wlasnego rodzaju.  Moga nie wrocic do ciebie lub ich sciezka moze nie doprowadzic do tego, czego szukasz. 
+      <outputs name="Rozpocznij próby dla maga." ownerID="3" targetID="7" fromX="589" fromY="916" />
+      <outputs name="Wróc do wyborów." ownerID="3" targetID="2" fromX="589" fromY="836" />
+      <outputs name="Rozpocznij próby dla druida." ownerID="3" targetID="33" fromX="589" fromY="756" />
+      <outputs name="[Percepcja i sila] Dziecko ma sprawnosc fizyczna, byc moze sciezka wojownika jest ich przeznaczeniem." ownerID="3" targetID="20" fromX="589" fromY="676" />Sploty magii sa naturalne dla wszystkich elfów, ale sciezka magicznego uzytkownika jest dokonywana z mrocznymi niebezpieczenstwami, szczególnie dla elfiego dziecka wychowanego z wlasnego rodzaju.  Moga nie wrócic do ciebie lub ich sciezka moze nie doprowadzic do tego, czego szukasz. 
 
-[Aby realizowac rzadkie klasy, dziecko czesto potrzebuje wysokiej statystyki w odpowiednim polu (dokladne liczby sie roznia), takie jak sila dla wojownikow itp., Jak rowniez szansa. Poprawienie atrybutu szczescia moze rowniez pomoc w tym.] 
+[Aby realizowac rzadkie klasy, dziecko czesto potrzebuje wysokiej statystyki w odpowiednim polu (dokladne liczby sie róznia), takie jak sila dla wojowników itp., Jak równiez szansa. Poprawienie atrybutu szczescia moze równiez pomóc w tym.] 
 </nodes>
     <nodes xsi:type="NodeAdventure" ID="4" positionX="1401" positionY="1598" width="350" height="725" image="Event171">
       <logic>
@@ -985,7 +985,7 @@ Ale ta sciezka nigdy nie jest latwa. Musisz wybrac, jaka podroz zabierze mlody c
       </logic>
       <outputs name="Raduj sie!" ownerID="4" targetID="8" fromX="1726" fromY="1106" />Twoja elfia mlodosc byla wyraznie przeznaczona do kroczenia mistyczna sciezka, kiedy wracaja do ciebie jako mag. 
 
-Proby byly trudne i nie sa tak silne jak pelnoprawny dorosly, ale z czasem stana sie swietne!</nodes>
+Próby byly trudne i nie sa tak silne jak pelnoprawny dorosly, ale z czasem stana sie swietne!</nodes>
     <nodes xsi:type="NodeAdventure" ID="5" positionX="1298" positionY="753" width="350" height="725" image="Event167">
       <logic>
         <FilterBlock>
@@ -1014,7 +1014,7 @@ Proby byly trudne i nie sa tak silne jak pelnoprawny dorosly, ale z czasem stana
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Raduj sie!" ownerID="5" targetID="8" fromX="1623" fromY="261" />Dziecko zwraca elfiego druida. I choc czesto sa w sprzecznosci z zyciem na wsi, pozostaja lojalni wobec bogow i ich wybranej rodziny.</nodes>
+      <outputs name="Raduj sie!" ownerID="5" targetID="8" fromX="1623" fromY="261" />Dziecko zwraca elfiego druida. I choc czesto sa w sprzecznosci z zyciem na wsi, pozostaja lojalni wobec bogów i ich wybranej rodziny.</nodes>
     <nodes xsi:type="NodeAdventure" ID="6" positionX="2000" positionY="1534" width="350" height="725" image="Event169">
       <logic>
         <ModifierBlock>
@@ -1038,7 +1038,7 @@ Proby byly trudne i nie sa tak silne jak pelnoprawny dorosly, ale z czasem stana
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Raduj sie!" ownerID="6" targetID="8" fromX="2325" fromY="1042" />Twoja elfia mlodosc najwyrazniej nie miala zamiaru kroczyc sciezka maga, przynajmniej jeszcze nie. Ale otrzymali pewne szkolenie i najprawdopodobniej nadal przewyzszaja wiekszosc nieelfickich uzytkownikow magii, lub tak ci mowia. 
+      <outputs name="Raduj sie!" ownerID="6" targetID="8" fromX="2325" fromY="1042" />Twoja elfia mlodosc najwyrazniej nie miala zamiaru kroczyc sciezka maga, przynajmniej jeszcze nie. Ale otrzymali pewne szkolenie i najprawdopodobniej nadal przewyzszaja wiekszosc nieelfickich uzytkowników magii, lub tak ci mówia. 
 
 </nodes>
     <nodes xsi:type="NodeProduceDrop" ID="7" positionX="836" positionY="1655" width="460" height="669">
@@ -1056,9 +1056,9 @@ Proby byly trudne i nie sa tak silne jak pelnoprawny dorosly, ale z czasem stana
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Staraj sie, aby ich ostatnie dni byly wygodne. Nie ma nic wiecej do roboty." ownerID="9" targetID="10" fromX="2694" fromY="-578" />Dziecko weszlo w proby, ale ciemnosc wynikajaca z magii uczenia sie okazala sie zbyt silna. 
+      <outputs name="Staraj sie, aby ich ostatnie dni byly wygodne. Nie ma nic wiecej do roboty." ownerID="9" targetID="10" fromX="2694" fromY="-578" />Dziecko weszlo w próby, ale ciemnosc wynikajaca z magii uczenia sie okazala sie zbyt silna. 
 
-Mlodzieniec upada, ich skora robi sie szara, ich zyly czarne, a wkrotce szalenstwo zabiera im umysl. 
+Mlodzieniec upada, ich skóra robi sie szara, ich zyly czarne, a wkrótce szalenstwo zabiera im umysl. 
 </nodes>
     <nodes xsi:type="NodeProduceDrop" ID="10" positionX="2770" positionY="-204" width="460" height="589">
       <outputs ownerID="10" targetID="11" group="G1" fromX="3200" fromY="-562" />
@@ -1113,10 +1113,10 @@ Mlodzieniec upada, ich skora robi sie szara, ich zyly czarne, a wkrotce szalenst
       <outputs ownerID="13" targetID="18" group="G1" fromX="2260" fromY="-1150" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="14" positionX="899" positionY="-561" width="350" height="805" image="Event169">
-      <outputs name="Rozpocznij proby dla zbieracza." ownerID="14" targetID="13" fromX="1224" fromY="-1052" />
-      <outputs name="Rozpocznij proby dla rzemieslnika." ownerID="14" targetID="30" fromX="1224" fromY="-1132" />Proby zostania pracownikiem sa czesto najbezpieczniejsze, ale dla elfiego dziecka wezwanie wlasnych krewnych moze okazac sie silne, gdy powie sie im wykonywanie przyziemnych zadan. 
+      <outputs name="Rozpocznij próby dla zbieracza." ownerID="14" targetID="13" fromX="1224" fromY="-1052" />
+      <outputs name="Rozpocznij próby dla rzemieslnika." ownerID="14" targetID="30" fromX="1224" fromY="-1132" />Próby zostania pracownikiem sa czesto najbezpieczniejsze, ale dla elfiego dziecka wezwanie wlasnych krewnych moze okazac sie silne, gdy powie sie im wykonywanie przyziemnych zadan. 
 
-Mimo to jest to podroz wartosciowa i powinna byc podejmowana z duma.</nodes>
+Mimo to jest to podróz wartosciowa i powinna byc podejmowana z duma.</nodes>
     <nodes xsi:type="NodeAdventure" ID="15" positionX="2850" positionY="-852" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -1136,9 +1136,9 @@ Mimo to jest to podroz wartosciowa i powinna byc podejmowana z duma.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Radujcie sie z ich dobrobytu, ale oplakujcie utrate ich pokrewienstwa." ownerID="15" targetID="16" fromX="3175" fromY="-1343" />Mlodziez elfow poslusznie wyrusza na probe, ale nigdy do ciebie nie wracaja. 
+      <outputs name="Radujcie sie z ich dobrobytu, ale oplakujcie utrate ich pokrewienstwa." ownerID="15" targetID="16" fromX="3175" fromY="-1343" />Mlodziez elfów poslusznie wyrusza na próbe, ale nigdy do ciebie nie wracaja. 
 
-Wiele lat pozniej otrzymujesz wiadomosc, ze ich podroz zabrala ich do odleglych krajow i maja nadzieje, ze wkrotce wroca, ale w czasach elfow, wiec moze nie byc w twoim zyciu. 
+Wiele lat pózniej otrzymujesz wiadomosc, ze ich podróz zabrala ich do odleglych krajów i maja nadzieje, ze wkrótce wróca, ale w czasach elfów, wiec moze nie byc w twoim zyciu. 
 </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="16" positionX="2981" positionY="-1666" width="350" height="530" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventure" ID="17" positionX="2345" positionY="-1347" width="350" height="725">
@@ -1152,7 +1152,7 @@ Wiele lat pozniej otrzymujesz wiadomosc, ze ich podroz zabrala ich do odleglych 
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Raduj sie!" ownerID="17" targetID="16" fromX="2670" fromY="-1838" />Proby sa udane i elfie dziecko wyrasta na mlodosc pod twoim czujnym okiem.</nodes>
+      <outputs name="Raduj sie!" ownerID="17" targetID="16" fromX="2670" fromY="-1838" />Próby sa udane i elfie dziecko wyrasta na mlodosc pod twoim czujnym okiem.</nodes>
     <nodes xsi:type="NodeAdventure" ID="18" positionX="1883" positionY="-1287" width="350" height="725">
       <logic>
         <ModifierBlock>
@@ -1164,7 +1164,7 @@ Wiele lat pozniej otrzymujesz wiadomosc, ze ich podroz zabrala ich do odleglych 
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Raduj sie!" ownerID="18" targetID="16" fromX="2208" fromY="-1778" />Proby sa udane i elfie dziecko wyrasta na mlodosc pod twoim czujnym okiem.</nodes>
+      <outputs name="Raduj sie!" ownerID="18" targetID="16" fromX="2208" fromY="-1778" />Próby sa udane i elfie dziecko wyrasta na mlodosc pod twoim czujnym okiem.</nodes>
     <nodes xsi:type="NodeAdventure" ID="20" positionX="-413" positionY="-748" width="350" height="725" image="Event166">
       <logic>
         <FilterBlock>
@@ -1191,7 +1191,7 @@ Wiele lat pozniej otrzymujesz wiadomosc, ze ich podroz zabrala ich do odleglych 
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Rozpocznij proby." ownerID="20" targetID="21" fromX="-87" fromY="-1239" />Proby wojownika sa trudne i niebezpieczne. Dziecko musi udowodnic swoj plaszcz na wolnosci i przeciwstawic sie silniejszym przeciwnikom. </nodes>
+      <outputs name="Rozpocznij próby." ownerID="20" targetID="21" fromX="-87" fromY="-1239" />Próby wojownika sa trudne i niebezpieczne. Dziecko musi udowodnic swój plaszcz na wolnosci i przeciwstawic sie silniejszym przeciwnikom. </nodes>
     <nodes xsi:type="NodeProduceDrop" ID="21" positionX="-4" positionY="-960" width="460" height="589">
       <outputs ownerID="21" targetID="22" group="G1" fromX="426" fromY="-1318" />
       <outputs ownerID="21" targetID="23" group="G1" fromX="426" fromY="-1398" />
@@ -1213,7 +1213,7 @@ Wiele lat pozniej otrzymujesz wiadomosc, ze ich podroz zabrala ich do odleglych 
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Radujcie sie z ich dobrobytu, ale oplakujcie utrate ich pokrewienstwa." ownerID="22" targetID="16" fromX="1464" fromY="-2096" />Proby wojownika okazaly sie zbyt trudne i dziecko zginelo.</nodes>
+      <outputs name="Radujcie sie z ich dobrobytu, ale oplakujcie utrate ich pokrewienstwa." ownerID="22" targetID="16" fromX="1464" fromY="-2096" />Próby wojownika okazaly sie zbyt trudne i dziecko zginelo.</nodes>
     <nodes xsi:type="NodeAdventure" ID="23" positionX="2" positionY="-1604" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -1230,7 +1230,7 @@ Wiele lat pozniej otrzymujesz wiadomosc, ze ich podroz zabrala ich do odleglych 
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Raduj sie!" ownerID="23" targetID="16" fromX="327" fromY="-2095" />Proby sa udane i elfie dziecko wyrasta na mlodosc pod twoim czujnym okiem.</nodes>
+      <outputs name="Raduj sie!" ownerID="23" targetID="16" fromX="327" fromY="-2095" />Próby sa udane i elfie dziecko wyrasta na mlodosc pod twoim czujnym okiem.</nodes>
     <nodes xsi:type="NodeAdventure" ID="24" positionX="441" positionY="-1757" width="350" height="725">
       <logic>
         <ModifierBlock>
@@ -1242,7 +1242,7 @@ Wiele lat pozniej otrzymujesz wiadomosc, ze ich podroz zabrala ich do odleglych 
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Radujcie sie z ich bezpiecznego powrotu." ownerID="24" targetID="16" fromX="766" fromY="-2248" />Dziecko nie radzi sobie dobrze w swoich probach. Wracaja do ciebie szorstcy i przygnebieni, szepcza krew i gwalt. 
+      <outputs name="Radujcie sie z ich bezpiecznego powrotu." ownerID="24" targetID="16" fromX="766" fromY="-2248" />Dziecko nie radzi sobie dobrze w swoich próbach. Wracaja do ciebie szorstcy i przygnebieni, szepcza krew i gwalt. 
 
 Byli wyraznie wzmocnieni tym, co sie wydarzylo, ale ich umysl i dusza pozostaly bliznami. </nodes>
     <nodes xsi:type="NodeAdventure" ID="25" positionX="-1103" positionY="28" width="350" height="725">
@@ -1278,7 +1278,7 @@ Byli wyraznie wzmocnieni tym, co sie wydarzylo, ale ich umysl i dusza pozostaly 
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Raduj sie!" ownerID="27" targetID="29" fromX="-2006" fromY="-298" />Dziecko uslyszalo wolanie dzikich i zniknelo w lesie na jakis czas, tylko po to, by zwrocic dzikiego.</nodes>
+      <outputs name="Raduj sie!" ownerID="27" targetID="29" fromX="-2006" fromY="-298" />Dziecko uslyszalo wolanie dzikich i zniknelo w lesie na jakis czas, tylko po to, by zwrócic dzikiego.</nodes>
     <nodes xsi:type="NodeAdventure" ID="28" positionX="-2100" positionY="-1050" width="350" height="725" image="Event227">
       <logic>
         <ModifierBlock>
@@ -1305,7 +1305,7 @@ Byli wyraznie wzmocnieni tym, co sie wydarzylo, ale ich umysl i dusza pozostaly 
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Raduj sie!" ownerID="28" targetID="29" fromX="-1774" fromY="-1541" />Dziecko staje sie lesna wrozka i wraca do domu, zmienione, ale zawsze lojalne.</nodes>
+      <outputs name="Raduj sie!" ownerID="28" targetID="29" fromX="-1774" fromY="-1541" />Dziecko staje sie lesna wrózka i wraca do domu, zmienione, ale zawsze lojalne.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="29" positionX="-2782" positionY="-434" width="350" height="530" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeProduceDrop" ID="30" positionX="1335" positionY="-925" width="460" height="509">
       <outputs ownerID="30" targetID="15" group="G1" fromX="1765" fromY="-1283" />
@@ -1382,7 +1382,7 @@ Byli wyraznie wzmocnieni tym, co sie wydarzylo, ale ich umysl i dusza pozostaly 
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Raduj sie!" ownerID="34" targetID="8" fromX="2036" fromY="173" />Dziecko zwraca wygnanego elfiego druida. I choc czesto sa w sprzecznosci z zyciem na wsi, pozostaja lojalni wobec bogow i ich wybranej rodziny.</nodes>
+      <outputs name="Raduj sie!" ownerID="34" targetID="8" fromX="2036" fromY="173" />Dziecko zwraca wygnanego elfiego druida. I choc czesto sa w sprzecznosci z zyciem na wsi, pozostaja lojalni wobec bogów i ich wybranej rodziny.</nodes>
     <nodes xsi:type="NodeAdventure" ID="35" positionX="2139" positionY="651" width="350" height="725" image="Event169">
       <logic>
         <ModifierBlock>
@@ -1439,7 +1439,7 @@ Byli wyraznie wzmocnieni tym, co sie wydarzylo, ale ich umysl i dusza pozostaly 
       </logic>
       <outputs name="Raduj sie!" ownerID="36" targetID="8" fromX="2912" fromY="1159" />Twoja elfia mlodosc byla wyraznie przeznaczona do kroczenia mistyczna sciezka, kiedy wracaja do ciebie jako mag. 
 
-Proby byly trudne i nie sa tak silne jak pelnoprawny dorosly, ale z czasem stana sie swietne!</nodes>
+Próby byly trudne i nie sa tak silne jak pelnoprawny dorosly, ale z czasem stana sie swietne!</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="38" positionX="4247" positionY="-343" width="350" height="530" linkedEventUniqueID="0">
       <logic>
         <ModifierBlock>
@@ -1475,7 +1475,7 @@ Proby byly trudne i nie sa tak silne jak pelnoprawny dorosly, ale z czasem stana
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Rozpocznij proby." ownerID="39" targetID="21" fromX="665" fromY="-589" />Proby wojownika sa trudne i niebezpieczne. Dziecko musi udowodnic swoj plaszcz na wolnosci i przeciwstawic sie silniejszym przeciwnikom. </nodes>
+      <outputs name="Rozpocznij próby." ownerID="39" targetID="21" fromX="665" fromY="-589" />Próby wojownika sa trudne i niebezpieczne. Dziecko musi udowodnic swój plaszcz na wolnosci i przeciwstawic sie silniejszym przeciwnikom. </nodes>
   </Adventure>
   <Adventure name="DwarfChildGrowingup" uniqueID="11" typeGeneric="false" typePerGroupGeneric="true" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="38" joinIsForced="false" joinType="OnlyOwn" joinRange="SinglePosition">
     <nodes xsi:type="NodeStarting" ID="1" positionX="-115" positionY="163" width="347" height="661" image="Event216">
@@ -1522,11 +1522,11 @@ Proby byly trudne i nie sa tak silne jak pelnoprawny dorosly, ale z czasem stana
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="[Krasnolud, lojalnosc i mezczyzna] Poprowadz swoje dziecko do rodziny i popros o szkolenie. Istnieje ryzyko, ze dziecko pozostanie w towarzystwie krasnoludzkich krewnych, ale jesli zdecyduja sie wrocic do ciebie, z pewnoscia beda dla niego silniejsze." ownerID="2" targetID="3" fromX="667" fromY="-443" />
+      <outputs name="[Krasnolud, lojalnosc i mezczyzna] Poprowadz swoje dziecko do rodziny i popros o szkolenie. Istnieje ryzyko, ze dziecko pozostanie w towarzystwie krasnoludzkich krewnych, ale jesli zdecyduja sie wrócic do ciebie, z pewnoscia beda dla niego silniejsze." ownerID="2" targetID="3" fromX="667" fromY="-443" />
       <outputs name="Naucz dziecko dobrego starego handlu. " ownerID="2" targetID="14" fromX="667" fromY="-523" />
-      <outputs name="[Szansa] Twoje dziecko wydaje sie dziwne, pozwol szansie kierowac swoim losem." ownerID="2" targetID="25" fromX="667" fromY="-603" />Twoje krasnoludzkie dziecko ma zamiar stac sie doroslym, przynajmniej przez to, jak smiertelnicy licza lata. W zwiazku z tym przejda uprawy: ceremonia dojrzewania. 
+      <outputs name="[Szansa] Twoje dziecko wydaje sie dziwne, pozwól szansie kierowac swoim losem." ownerID="2" targetID="25" fromX="667" fromY="-603" />Twoje krasnoludzkie dziecko ma zamiar stac sie doroslym, przynajmniej przez to, jak smiertelnicy licza lata. W zwiazku z tym przejda uprawy: ceremonia dojrzewania. 
 
-Ale sciezka nigdy nie jest latwa. Musisz teraz wybrac droge, ktora wezmie mlody, zanim bogowie zechca, moga wrocic do ciebie jako dorosly. 
+Ale sciezka nigdy nie jest latwa. Musisz teraz wybrac droge, która wezmie mlody, zanim bogowie zechca, moga wrócic do ciebie jako dorosly. 
 
 
 </nodes>
@@ -1550,12 +1550,12 @@ Ale sciezka nigdy nie jest latwa. Musisz teraz wybrac droge, ktora wezmie mlody,
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="[Szczescie] Sprobuj probowac mistrza run, wiedzac, ze moze to oznaczac, ze twoje dziecko pozostanie z krasnoludami na wieki. [Szansa na strate, bardzo wysoka]" ownerID="3" targetID="34" fromX="998" fromY="725" />
+      <outputs name="[Szczescie] Spróbuj próbowac mistrza run, wiedzac, ze moze to oznaczac, ze twoje dziecko pozostanie z krasnoludami na wieki. [Szansa na strate, bardzo wysoka]" ownerID="3" targetID="34" fromX="998" fromY="725" />
       <outputs name="[Crafting] Niech pociag dzieciecy stanie sie kowalem." ownerID="3" targetID="37" fromX="998" fromY="645" />
       <outputs name="Trenuj, by zostac wojownikiem." ownerID="3" targetID="20" fromX="998" fromY="565" />
-      <outputs name="Badz bezpieczny i naucz dziecko dobrego starego handlu. " ownerID="3" targetID="14" fromX="998" fromY="485" />Przychodzisz do miasta krasnoludow, a twoja mloda zostaje wzieta na proby z kamienia i metalu. 
+      <outputs name="Badz bezpieczny i naucz dziecko dobrego starego handlu. " ownerID="3" targetID="14" fromX="998" fromY="485" />Przychodzisz do miasta krasnoludów, a twoja mloda zostaje wzieta na próby z kamienia i metalu. 
 
-[Aby realizowac rzadkie klasy, dziecko bedzie czesto potrzebowalo wysokiej statystyki w odpowiednim polu (dokladne liczby sie roznia), jak sila dla wojownikow itd., Jak rowniez szansa. Poprawienie atrybutu szczescia moze rowniez pomoc w tym.] 
+[Aby realizowac rzadkie klasy, dziecko bedzie czesto potrzebowalo wysokiej statystyki w odpowiednim polu (dokladne liczby sie róznia), jak sila dla wojowników itd., Jak równiez szansa. Poprawienie atrybutu szczescia moze równiez pomóc w tym.] 
 </nodes>
     <nodes xsi:type="NodeAdventure" ID="5" positionX="1730" positionY="1128" width="350" height="725" image="Event152">
       <logic>
@@ -1582,7 +1582,7 @@ Ale sciezka nigdy nie jest latwa. Musisz teraz wybrac droge, ktora wezmie mlody,
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Raduj sie!" ownerID="6" targetID="8" fromX="3138" fromY="-629" />Z woli kamienia i metalu twoje krasnoludzkie dziecko okazalo sie utalentowanym robotnikiem, znacznie przewyzszajacym swoich rowiesnikow. 
+      <outputs name="Raduj sie!" ownerID="6" targetID="8" fromX="3138" fromY="-629" />Z woli kamienia i metalu twoje krasnoludzkie dziecko okazalo sie utalentowanym robotnikiem, znacznie przewyzszajacym swoich rówiesników. 
 </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="8" positionX="2824" positionY="423" width="350" height="530" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventure" ID="9" positionX="1745" positionY="322" width="350" height="725">
@@ -1601,16 +1601,16 @@ Ale sciezka nigdy nie jest latwa. Musisz teraz wybrac droge, ktora wezmie mlody,
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Zaakceptuj ich wybor." ownerID="9" targetID="8" fromX="2070" fromY="-169" />Dziecko postanowilo pozostac ze swoimi krewnymi. </nodes>
+      <outputs name="Zaakceptuj ich wybór." ownerID="9" targetID="8" fromX="2070" fromY="-169" />Dziecko postanowilo pozostac ze swoimi krewnymi. </nodes>
     <nodes xsi:type="NodeProduceDrop" ID="13" positionX="1422" positionY="-862" width="460" height="509">
       <outputs ownerID="13" targetID="15" group="G1" fromX="1852" fromY="-1220" />
       <outputs ownerID="13" targetID="18" group="G1" fromX="1852" fromY="-1300" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="14" positionX="973" positionY="-653" width="350" height="805">
-      <outputs name="Rozpocznij proby dla zbieracza." ownerID="14" targetID="13" fromX="1298" fromY="-1144" />
-      <outputs name="Rozpocznij proby dla kowala." ownerID="14" targetID="33" fromX="1298" fromY="-1224" />Proby zostania pracownikiem sa czesto najbezpieczniejsze, ale dla krasnoludzkiego dziecka wezwanie ich krewnych moze okazac sie silne, gdy zaczna dojrzewac. 
+      <outputs name="Rozpocznij próby dla zbieracza." ownerID="14" targetID="13" fromX="1298" fromY="-1144" />
+      <outputs name="Rozpocznij próby dla kowala." ownerID="14" targetID="33" fromX="1298" fromY="-1224" />Próby zostania pracownikiem sa czesto najbezpieczniejsze, ale dla krasnoludzkiego dziecka wezwanie ich krewnych moze okazac sie silne, gdy zaczna dojrzewac. 
 
-Mimo to jest to podroz wartosciowa i powinna byc podejmowana z duma. 
+Mimo to jest to podróz wartosciowa i powinna byc podejmowana z duma. 
 </nodes>
     <nodes xsi:type="NodeAdventure" ID="15" positionX="2492" positionY="-864" width="350" height="725" image="Event151">
       <logic>
@@ -1638,7 +1638,7 @@ Mimo to jest to podroz wartosciowa i powinna byc podejmowana z duma.
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Raduj sie!" ownerID="17" targetID="16" fromX="2406" fromY="-1974" />Proby sa udane i krasnoludzkie dziecko staje sie mlodoscia pod twoim czujnym okiem.</nodes>
+      <outputs name="Raduj sie!" ownerID="17" targetID="16" fromX="2406" fromY="-1974" />Próby sa udane i krasnoludzkie dziecko staje sie mlodoscia pod twoim czujnym okiem.</nodes>
     <nodes xsi:type="NodeAdventure" ID="18" positionX="1425" positionY="-1395" width="350" height="725" image="Event151">
       <logic>
         <ModifierBlock>
@@ -1650,9 +1650,9 @@ Mimo to jest to podroz wartosciowa i powinna byc podejmowana z duma.
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Raduj sie!" ownerID="18" targetID="16" fromX="1750" fromY="-1886" />Proby sa udane i krasnoludzkie dziecko staje sie mlodoscia pod twoim czujnym okiem.</nodes>
+      <outputs name="Raduj sie!" ownerID="18" targetID="16" fromX="1750" fromY="-1886" />Próby sa udane i krasnoludzkie dziecko staje sie mlodoscia pod twoim czujnym okiem.</nodes>
     <nodes xsi:type="NodeAdventure" ID="20" positionX="-69" positionY="-883" width="350" height="725">
-      <outputs name="Rozpocznij proby." ownerID="20" targetID="21" fromX="256" fromY="-1374" />Proby wojownika sa trudne i niebezpieczne. Dziecko musi udowodnic swoj plaszcz na wolnosci i przeciwstawic sie silniejszym przeciwnikom. </nodes>
+      <outputs name="Rozpocznij próby." ownerID="20" targetID="21" fromX="256" fromY="-1374" />Próby wojownika sa trudne i niebezpieczne. Dziecko musi udowodnic swój plaszcz na wolnosci i przeciwstawic sie silniejszym przeciwnikom. </nodes>
     <nodes xsi:type="NodeProduceDrop" ID="21" positionX="379" positionY="-1056" width="460" height="589">
       <outputs ownerID="21" targetID="35" group="G1" fromX="809" fromY="-1414" />
       <outputs ownerID="21" targetID="23" group="G1" fromX="809" fromY="-1494" />
@@ -1698,7 +1698,7 @@ Mimo to jest to podroz wartosciowa i powinna byc podejmowana z duma.
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Radujcie sie z ich bezpiecznego powrotu." ownerID="24" targetID="16" fromX="756" fromY="-2201" />Dziecko nie radzi sobie dobrze w swoich probach. Wracaja do ciebie obdarty i przygnebiony, szepczac krew i gwalt. 
+      <outputs name="Radujcie sie z ich bezpiecznego powrotu." ownerID="24" targetID="16" fromX="756" fromY="-2201" />Dziecko nie radzi sobie dobrze w swoich próbach. Wracaja do ciebie obdarty i przygnebiony, szepczac krew i gwalt. 
 
 Staja sie robotnikami, ale nawet w tym, ze pozostaja slabi. 
 </nodes>
@@ -1794,7 +1794,7 @@ W ciagu kilku dziesiecioleci stanie sie trollem lawowym.
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Raduj sie!" ownerID="31" targetID="8" fromX="1945" fromY="1596" />Z woli kamienia i metalu twoje krasnoludzkie dziecko okazalo sie cudownym dzieckiem i stalo sie jednym z najmlodszych mistrzow runow, jakie kiedykolwiek zarejestrowano w pamieci krasnoludow.</nodes>
+      <outputs name="Raduj sie!" ownerID="31" targetID="8" fromX="1945" fromY="1596" />Z woli kamienia i metalu twoje krasnoludzkie dziecko okazalo sie cudownym dzieckiem i stalo sie jednym z najmlodszych mistrzów runów, jakie kiedykolwiek zarejestrowano w pamieci krasnoludów.</nodes>
     <nodes xsi:type="NodeProduceDrop" ID="33" positionX="1950" positionY="-939" width="460" height="509">
       <logic>
         <FilterBlock>
@@ -1839,7 +1839,7 @@ W ciagu kilku dziesiecioleci stanie sie trollem lawowym.
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Oplakuj ich odejscie." ownerID="35" targetID="8" fromX="2388" fromY="1595" />Proby okazaly sie zbyt wiele, byc moze ich wiez z nie-krasnoludzkimi bogami zaklocila swiete obrzedy przejscia. Dziecko dojrzewa, ale ginie ze wstydu.</nodes>
+      <outputs name="Oplakuj ich odejscie." ownerID="35" targetID="8" fromX="2388" fromY="1595" />Próby okazaly sie zbyt wiele, byc moze ich wiez z nie-krasnoludzkimi bogami zaklócila swiete obrzedy przejscia. Dziecko dojrzewa, ale ginie ze wstydu.</nodes>
     <nodes xsi:type="NodeAdventure" ID="36" positionX="2509" positionY="2035" width="350" height="725">
       <logic>
         <ModifierBlock>
@@ -1848,7 +1848,7 @@ W ciagu kilku dziesiecioleci stanie sie trollem lawowym.
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Zaakceptuj ich wybor." ownerID="36" targetID="8" fromX="2834" fromY="1543" />Dziecko postanowilo pozostac ze swoimi krewnymi. </nodes>
+      <outputs name="Zaakceptuj ich wybór." ownerID="36" targetID="8" fromX="2834" fromY="1543" />Dziecko postanowilo pozostac ze swoimi krewnymi. </nodes>
     <nodes xsi:type="NodeProduceDrop" ID="37" positionX="1162" positionY="1037" width="460" height="669">
       <logic>
         <FilterBlock>
@@ -1902,7 +1902,7 @@ W ciagu kilku dziesiecioleci stanie sie trollem lawowym.
         </FilterBlock>
       </logic>
       <outputs name="Atak!" ownerID="2" targetID="12" fromX="767" fromY="-642" />
-      <outputs name="Walcz w swiecie duchow!" ownerID="2" targetID="15" fromX="767" fromY="-723" />
+      <outputs name="Walcz w swiecie duchów!" ownerID="2" targetID="15" fromX="767" fromY="-723" />
       <outputs name="Odsun sie." ownerID="2" targetID="10" fromX="767" fromY="-803" />
       <outputs name="[Demon] Sluchaj uwaznie, chwal i czesciowo jako przyjaciele." ownerID="2" targetID="26" fromX="767" fromY="-883" />
       <outputs name="[Magiczny uzytkownik] Obron sie sila swojego ducha." ownerID="2" targetID="27" fromX="767" fromY="-963" />Nagle czujesz, ze otaczaja cie wiatry mistycznych mocy i wiesz, ze jestes zlapany w jakis rytual!</nodes>
@@ -1943,7 +1943,7 @@ W ciagu kilku dziesiecioleci stanie sie trollem lawowym.
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Uruchom." ownerID="19" targetID="14" fromX="1888" fromY="-2212" />Nie udaje ci sie. Twoj umysl jest zmieszany, a twoj duch przeklety.</nodes>
+      <outputs name="Uruchom." ownerID="19" targetID="14" fromX="1888" fromY="-2212" />Nie udaje ci sie. Twój umysl jest zmieszany, a twój duch przeklety.</nodes>
     <nodes xsi:type="NodeDealDamage" ID="20" positionX="1021.27332" positionY="-1870.886" width="460" height="459" challengeTypeDamage="TypeMental" minDamage="40" maxDamage="80" useCountInPercent="true" targetGroup="ppl">
       <outputs ownerID="20" targetID="19" fromX="1450" fromY="-2259" />
     </nodes>
@@ -2065,12 +2065,12 @@ W ciagu kilku dziesiecioleci stanie sie trollem lawowym.
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="[Ork lub lojalnosc] Poprowadz swoje dziecko do rodziny i popros o szkolenie. Istnieje ryzyko, ze dziecko pozostanie w swoim klanie, ale jesli zdecyduje sie powrocic do ciebie, z pewnoscia beda dla niego silniejsze." ownerID="2" targetID="3" fromX="784" fromY="-539" />
+      <outputs name="[Ork lub lojalnosc] Poprowadz swoje dziecko do rodziny i popros o szkolenie. Istnieje ryzyko, ze dziecko pozostanie w swoim klanie, ale jesli zdecyduje sie powrócic do ciebie, z pewnoscia beda dla niego silniejsze." ownerID="2" targetID="3" fromX="784" fromY="-539" />
       <outputs name="Dziecko jest silne. Byc moze wyrosnie na wojownika." ownerID="2" targetID="20" fromX="784" fromY="-619" />
       <outputs name="Naucz dziecko dobrego starego handlu. " ownerID="2" targetID="14" fromX="784" fromY="-699" />
-      <outputs name="[Czarownica] Naucz dziecko mrocznej sciezki czarow." ownerID="2" targetID="35" fromX="784" fromY="-779" />Twoje dziecko orkow ma zamiar zostac doroslym. W zwiazku z tym przejda uprawy: ceremonia dojrzewania. 
+      <outputs name="[Czarownica] Naucz dziecko mrocznej sciezki czarów." ownerID="2" targetID="35" fromX="784" fromY="-779" />Twoje dziecko orków ma zamiar zostac doroslym. W zwiazku z tym przejda uprawy: ceremonia dojrzewania. 
 
-Ale sciezka nigdy nie jest latwa. Musisz teraz wybrac droge, ktora wezmie mlody, zanim bogowie zechca, moga wrocic do ciebie jako dorosly. 
+Ale sciezka nigdy nie jest latwa. Musisz teraz wybrac droge, która wezmie mlody, zanim bogowie zechca, moga wrócic do ciebie jako dorosly. 
 
 
 </nodes>
@@ -2098,11 +2098,11 @@ Ale sciezka nigdy nie jest latwa. Musisz teraz wybrac droge, ktora wezmie mlody,
       </logic>
       <outputs name="Prawo do zostania matriarcha jest rzadkie i niesie ze soba duze niebezpieczenstwo. Ale wyslij swoje dziecko do sprawdzenia." ownerID="3" targetID="41" group="G1" fromX="509" fromY="711" />
       <outputs name="[Sila] Wyslij swoje dziecko, aby zostalo przeszkolone jako slugger." ownerID="3" targetID="46" fromX="509" fromY="631" />
-      <outputs name="[Postrzeganie] Niech twoja mlodosc sprobuje zostac bloodtrackerem." ownerID="3" targetID="7" fromX="509" fromY="551" />
-      <outputs name="[Mistycyzm] Wyslij swoje dziecko na ciemna sciezke czarow." ownerID="3" targetID="47" fromX="509" fromY="471" />
-      <outputs name="Wy, dzieci, nie macie umiejetnosci wyprobowywania wiekszych rzeczy lub wolicie grac bezpiecznie. Naucz dziecko dobrego starego handlu. " ownerID="3" targetID="14" fromX="509" fromY="391" />Klan orkow przyjmuje dziecko na proby ognia. 
+      <outputs name="[Postrzeganie] Niech twoja mlodosc spróbuje zostac bloodtrackerem." ownerID="3" targetID="7" fromX="509" fromY="551" />
+      <outputs name="[Mistycyzm] Wyslij swoje dziecko na ciemna sciezke czarów." ownerID="3" targetID="47" fromX="509" fromY="471" />
+      <outputs name="Wy, dzieci, nie macie umiejetnosci wypróbowywania wiekszych rzeczy lub wolicie grac bezpiecznie. Naucz dziecko dobrego starego handlu. " ownerID="3" targetID="14" fromX="509" fromY="391" />Klan orków przyjmuje dziecko na próby ognia. 
 
-[Aby realizowac rzadkie klasy, dziecko czesto potrzebuje wysokiej statystyki w odpowiednim polu (dokladne liczby sie roznia), takie jak sila dla wojownikow itp., Jak rowniez szansa. Poprawa atrybutu szczescia moze rowniez pomoc w tym.] 
+[Aby realizowac rzadkie klasy, dziecko czesto potrzebuje wysokiej statystyki w odpowiednim polu (dokladne liczby sie róznia), takie jak sila dla wojowników itp., Jak równiez szansa. Poprawa atrybutu szczescia moze równiez pomóc w tym.] 
 
 </nodes>
     <nodes xsi:type="NodeAdventure" ID="5" positionX="1846" positionY="261" width="350" height="725" image="Event142">
@@ -2175,8 +2175,8 @@ Ale sciezka nigdy nie jest latwa. Musisz teraz wybrac droge, ktora wezmie mlody,
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Rozpocznij proby dla zbieracza." ownerID="14" targetID="13" fromX="1302" fromY="-1047" />
-      <outputs name="Rozpocznij proby dla jednostki." ownerID="14" targetID="49" fromX="1302" fromY="-1127" />Proby zostania pracownikiem sa czesto najbezpieczniejsze, ale dla dziecka orka moze to nie byc latwa droga do zaakceptowania. 
+      <outputs name="Rozpocznij próby dla zbieracza." ownerID="14" targetID="13" fromX="1302" fromY="-1047" />
+      <outputs name="Rozpocznij próby dla jednostki." ownerID="14" targetID="49" fromX="1302" fromY="-1127" />Próby zostania pracownikiem sa czesto najbezpieczniejsze, ale dla dziecka orka moze to nie byc latwa droga do zaakceptowania. 
 </nodes>
     <nodes xsi:type="NodeAdventure" ID="15" positionX="2537" positionY="-620" width="350" height="725" image="Event148">
       <logic>
@@ -2194,7 +2194,7 @@ Ale sciezka nigdy nie jest latwa. Musisz teraz wybrac droge, ktora wezmie mlody,
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Zaakceptuj ich wybor." ownerID="15" targetID="16" fromX="2862" fromY="-1111" />Ork poczul sie urazony, ze uczysz ich, by stali sie zwyklymi robotnikami, wyjechali, by szukac klanow orkow i prawdopodobnie zgineli, robiac to.</nodes>
+      <outputs name="Zaakceptuj ich wybór." ownerID="15" targetID="16" fromX="2862" fromY="-1111" />Ork poczul sie urazony, ze uczysz ich, by stali sie zwyklymi robotnikami, wyjechali, by szukac klanów orków i prawdopodobnie zgineli, robiac to.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="16" positionX="2981" positionY="-1666" width="350" height="530" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventure" ID="17" positionX="2466" positionY="-1449" width="350" height="725">
       <logic>
@@ -2210,7 +2210,7 @@ Ale sciezka nigdy nie jest latwa. Musisz teraz wybrac droge, ktora wezmie mlody,
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Raduj sie!" ownerID="17" targetID="16" fromX="2791" fromY="-1940" />Dziecko orkow uczy sie zostac pracownikiem, ale zdaje sie, ze za to go obrazaja.</nodes>
+      <outputs name="Raduj sie!" ownerID="17" targetID="16" fromX="2791" fromY="-1940" />Dziecko orków uczy sie zostac pracownikiem, ale zdaje sie, ze za to go obrazaja.</nodes>
     <nodes xsi:type="NodeAdventure" ID="18" positionX="1551" positionY="-1159" width="350" height="725">
       <logic>
         <ModifierBlock>
@@ -2225,7 +2225,7 @@ Ale sciezka nigdy nie jest latwa. Musisz teraz wybrac droge, ktora wezmie mlody,
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Raduj sie!" ownerID="18" targetID="16" fromX="1876" fromY="-1650" />Dziecko orkow uczy sie zostac pracownikiem, ale zdaje sie, ze za to go obrazaja.</nodes>
+      <outputs name="Raduj sie!" ownerID="18" targetID="16" fromX="1876" fromY="-1650" />Dziecko orków uczy sie zostac pracownikiem, ale zdaje sie, ze za to go obrazaja.</nodes>
     <nodes xsi:type="NodeAdventure" ID="20" positionX="-156" positionY="-902" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -2243,7 +2243,7 @@ Ale sciezka nigdy nie jest latwa. Musisz teraz wybrac droge, ktora wezmie mlody,
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Rozpocznij proby." ownerID="20" targetID="21" fromX="169" fromY="-1393" />Proby wojownika sa trudne i niebezpieczne. Dziecko musi udowodnic swoj plaszcz na wolnosci i przeciwstawic sie silniejszym przeciwnikom. </nodes>
+      <outputs name="Rozpocznij próby." ownerID="20" targetID="21" fromX="169" fromY="-1393" />Próby wojownika sa trudne i niebezpieczne. Dziecko musi udowodnic swój plaszcz na wolnosci i przeciwstawic sie silniejszym przeciwnikom. </nodes>
     <nodes xsi:type="NodeProduceDrop" ID="21" positionX="431" positionY="-1136" width="460" height="830">
       <outputs ownerID="21" targetID="30" group="G1" fromX="861" fromY="-1494" />
       <outputs ownerID="21" targetID="38" group="G1" fromX="861" fromY="-1574" />
@@ -2277,7 +2277,7 @@ Ale sciezka nigdy nie jest latwa. Musisz teraz wybrac droge, ktora wezmie mlody,
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Raduj sie!" ownerID="23" targetID="16" fromX="-294" fromY="-2041" />Dziecko orkow udowadnia swoja wartosc jako wojownik, ale ich droga byla trudna i pozostawila blizny.</nodes>
+      <outputs name="Raduj sie!" ownerID="23" targetID="16" fromX="-294" fromY="-2041" />Dziecko orków udowadnia swoja wartosc jako wojownik, ale ich droga byla trudna i pozostawila blizny.</nodes>
     <nodes xsi:type="NodeAdventure" ID="24" positionX="606" positionY="-2004" width="350" height="725" image="Event148">
       <logic>
         <ModifierBlock>
@@ -2301,7 +2301,7 @@ Ale sciezka nigdy nie jest latwa. Musisz teraz wybrac droge, ktora wezmie mlody,
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Radujcie sie z ich bezpiecznego powrotu." ownerID="24" targetID="16" fromX="931" fromY="-2495" />Dziecko nie radzi sobie dobrze w swoich probach. Wracaja do ciebie obdarty i przygnebiony, szepczac krew i gwalt. 
+      <outputs name="Radujcie sie z ich bezpiecznego powrotu." ownerID="24" targetID="16" fromX="931" fromY="-2495" />Dziecko nie radzi sobie dobrze w swoich próbach. Wracaja do ciebie obdarty i przygnebiony, szepczac krew i gwalt. 
 
 Staja sie robotnikami, ale nawet w tym, ze pozostaja slabi. 
 </nodes>
@@ -2321,7 +2321,7 @@ Staja sie robotnikami, ale nawet w tym, ze pozostaja slabi.
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Oplakuj ich odejscie." ownerID="30" targetID="8" fromX="1370" fromY="-2048" />Surowe proby bojownika odebraly zycie mlodziezy!</nodes>
+      <outputs name="Oplakuj ich odejscie." ownerID="30" targetID="8" fromX="1370" fromY="-2048" />Surowe próby bojownika odebraly zycie mlodziezy!</nodes>
     <nodes xsi:type="NodeAdventure" allowOnce="true" ID="31" positionX="1246" positionY="984" width="350" height="725" image="Event144">
       <logic>
         <FilterBlock>
@@ -2338,7 +2338,7 @@ Staja sie robotnikami, ale nawet w tym, ze pozostaja slabi.
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Raduj sie!" ownerID="31" targetID="8" fromX="1571" fromY="492" />Twoje dziecko nie jest zwyklym orkiem, jest matriarcha! Ale pomimo tego honoru postanowila wrocic na sciezke kosmicznego drzewa.</nodes>
+      <outputs name="Raduj sie!" ownerID="31" targetID="8" fromX="1571" fromY="492" />Twoje dziecko nie jest zwyklym orkiem, jest matriarcha! Ale pomimo tego honoru postanowila wrócic na sciezke kosmicznego drzewa.</nodes>
     <nodes xsi:type="NodeAdventure" ID="33" positionX="-401" positionY="-2353" width="350" height="725" image="Event146">
       <logic>
         <FilterBlock>
@@ -2364,7 +2364,7 @@ Staja sie robotnikami, ale nawet w tym, ze pozostaja slabi.
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Raduj sie!" ownerID="33" targetID="16" fromX="-75" fromY="-2844" />Dziecko orkow udowadnia swoja wartosc jako tropiciel krwi, ale ich droga byla trudna i pozostawila blizny.</nodes>
+      <outputs name="Raduj sie!" ownerID="33" targetID="16" fromX="-75" fromY="-2844" />Dziecko orków udowadnia swoja wartosc jako tropiciel krwi, ale ich droga byla trudna i pozostawila blizny.</nodes>
     <nodes xsi:type="NodeAdventure" ID="34" positionX="-2337" positionY="-782" width="350" height="725" image="Event147">
       <logic>
         <FilterBlock>
@@ -2381,7 +2381,7 @@ Staja sie robotnikami, ale nawet w tym, ze pozostaja slabi.
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Raduj sie!" ownerID="34" targetID="16" fromX="-2011" fromY="-1273" />Dziecko orkow udowadnia swoja wartosc jako czarownica.</nodes>
+      <outputs name="Raduj sie!" ownerID="34" targetID="16" fromX="-2011" fromY="-1273" />Dziecko orków udowadnia swoja wartosc jako czarownica.</nodes>
     <nodes xsi:type="NodeDealDamage" ID="35" positionX="-777" positionY="-380" width="460" height="699" challengeTypeDamage="TypeMental" minDamage="0" maxDamage="0" useCountInPercent="false">
       <logic>
         <FilterBlock>
@@ -2432,7 +2432,7 @@ Staja sie robotnikami, ale nawet w tym, ze pozostaja slabi.
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Oplakuj ich odejscie." ownerID="36" targetID="8" fromX="-1329" fromY="-886" />Ciemnosc ogarnela dusze twojego dziecka, a mlodziez wkrotce zginela. </nodes>
+      <outputs name="Oplakuj ich odejscie." ownerID="36" targetID="8" fromX="-1329" fromY="-886" />Ciemnosc ogarnela dusze twojego dziecka, a mlodziez wkrótce zginela. </nodes>
     <nodes xsi:type="NodeAdventure" ID="37" positionX="-1228" positionY="-874" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -2475,7 +2475,7 @@ Staja sie robotnikami, ale nawet w tym, ze pozostaja slabi.
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Raduj sie!" ownerID="38" targetID="16" fromX="347" fromY="-2235" />Dziecko orkow udowadnia swoja wartosc jako wojownik.</nodes>
+      <outputs name="Raduj sie!" ownerID="38" targetID="16" fromX="347" fromY="-2235" />Dziecko orków udowadnia swoja wartosc jako wojownik.</nodes>
     <nodes xsi:type="NodeAdventure" ID="39" positionX="-795" positionY="-2304" width="350" height="725" image="Event146">
       <logic>
         <FilterBlock>
@@ -2492,7 +2492,7 @@ Staja sie robotnikami, ale nawet w tym, ze pozostaja slabi.
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Raduj sie!" ownerID="39" targetID="16" fromX="-469" fromY="-2795" />Dziecko orkow udowadnia swoja wartosc jako bloodtracker.</nodes>
+      <outputs name="Raduj sie!" ownerID="39" targetID="16" fromX="-469" fromY="-2795" />Dziecko orków udowadnia swoja wartosc jako bloodtracker.</nodes>
     <nodes xsi:type="NodeAdventure" ID="40" positionX="2374" positionY="143" width="350" height="725" image="Event142">
       <logic>
         <FilterBlock>
@@ -2544,7 +2544,7 @@ Staja sie robotnikami, ale nawet w tym, ze pozostaja slabi.
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Oplakuj ich odejscie." ownerID="42" targetID="8" fromX="2105" fromY="1445" />Dziewczyna nie udowodnila swojej wartosci, a proby odebraly jej zycie!</nodes>
+      <outputs name="Oplakuj ich odejscie." ownerID="42" targetID="8" fromX="2105" fromY="1445" />Dziewczyna nie udowodnila swojej wartosci, a próby odebraly jej zycie!</nodes>
     <nodes xsi:type="NodeProduceDrop" ID="43" positionX="1233" positionY="1534" width="460" height="509">
       <logic>
         <FilterBlock>
@@ -2564,7 +2564,7 @@ Staja sie robotnikami, ale nawet w tym, ze pozostaja slabi.
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Zaakceptuj ich wybor." ownerID="44" targetID="8" fromX="2540" fromY="1294" />Dziecko zostaje przyjete do klanu i nie wraca do twojego.</nodes>
+      <outputs name="Zaakceptuj ich wybór." ownerID="44" targetID="8" fromX="2540" fromY="1294" />Dziecko zostaje przyjete do klanu i nie wraca do twojego.</nodes>
     <nodes xsi:type="NodeProduceDrop" ID="45" positionX="1727" positionY="985" width="460" height="509">
       <logic>
         <FilterBlock>
@@ -2651,7 +2651,7 @@ Staja sie robotnikami, ale nawet w tym, ze pozostaja slabi.
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Raduj sie!" ownerID="48" targetID="16" fromX="-1440" fromY="-1838" />Dziecko orkow udowadnia swoja wartosc jako czarownica, ale jej podroz nie byla latwa i pozostawila wiele blizn.</nodes>
+      <outputs name="Raduj sie!" ownerID="48" targetID="16" fromX="-1440" fromY="-1838" />Dziecko orków udowadnia swoja wartosc jako czarownica, ale jej podróz nie byla latwa i pozostawila wiele blizn.</nodes>
     <nodes xsi:type="NodeProduceDrop" ID="49" positionX="2014" positionY="-1002" width="460" height="509">
       <outputs ownerID="49" targetID="15" group="G1" fromX="2444" fromY="-1360" />
       <outputs ownerID="49" targetID="17" group="G1" fromX="2444" fromY="-1440" />
@@ -2714,7 +2714,7 @@ Staja sie robotnikami, ale nawet w tym, ze pozostaja slabi.
         </FilterBlock>
       </logic>
       <outputs name="Wyczysc to legowisko." ownerID="2" targetID="3" fromX="820" fromY="-635" />
-      <outputs name="[Zwierzecy lowca lub mysliwy] Wiesz, jak obchodzic sie ze zwierzetami, wypal je stad. Moze zostawic mniej lupow, ale znikna." ownerID="2" targetID="10" fromX="820" fromY="-715" />
+      <outputs name="[Zwierzecy lowca lub mysliwy] Wiesz, jak obchodzic sie ze zwierzetami, wypal je stad. Moze zostawic mniej lupów, ale znikna." ownerID="2" targetID="10" fromX="820" fromY="-715" />
       <outputs name="Wyjdz." ownerID="2" targetID="4" fromX="820" fromY="-795" />Znajdziesz legowisko bestii. 
 
 </nodes>
@@ -2774,7 +2774,7 @@ Staja sie robotnikami, ale nawet w tym, ze pozostaja slabi.
       </logic>
       <outputs name="Wyczysc to legowisko." ownerID="2" targetID="3" fromX="773" fromY="-566" />
       <outputs name="[Magiczny uzytkownik] Atakuj ich duchowo." ownerID="2" targetID="10" fromX="773" fromY="-646" />
-      <outputs name="Wyjdz." ownerID="2" targetID="4" fromX="773" fromY="-726" />Znajdziesz nawiedzona kryjowke, wypelniona roamingiem, ktory nie zyje. 
+      <outputs name="Wyjdz." ownerID="2" targetID="4" fromX="773" fromY="-726" />Znajdziesz nawiedzona kryjówke, wypelniona roamingiem, który nie zyje. 
 </nodes>
     <nodes xsi:type="NodeChallenge" ID="3" positionX="918" positionY="-132" width="500" height="726" challengeType="TypePhysical" autoscaleByEnemy="true" versusEventOwner="true" challengeScale="0" challengedList="ppl">
       <outputs name="Win" ownerID="3" targetID="5" fromX="1359" fromY="-627" />
@@ -2847,7 +2847,7 @@ Staja sie robotnikami, ale nawet w tym, ze pozostaja slabi.
       <outputs name="Wyczysc to legowisko." ownerID="2" targetID="3" fromX="773" fromY="-566" />
       <outputs name="[Magiczny uzytkownik] Atakuj ich duchowo." ownerID="2" targetID="10" fromX="773" fromY="-646" />
       <outputs name="Zapytaj ich, dlaczego tak sie zachowuja, demony nie zachowuja sie jak zwykle zwierzeta?" ownerID="2" targetID="13" fromX="773" fromY="-726" />
-      <outputs name="Wyjdz." ownerID="2" targetID="4" fromX="773" fromY="-806" />Znajdujesz gniazdo demona, ktore samo w sobie jest dziwne. Najwyrazniej cos zmusza te demony do gromadzenia sie tutaj i wedrowania po terytorium. 
+      <outputs name="Wyjdz." ownerID="2" targetID="4" fromX="773" fromY="-806" />Znajdujesz gniazdo demona, które samo w sobie jest dziwne. Najwyrazniej cos zmusza te demony do gromadzenia sie tutaj i wedrowania po terytorium. 
 </nodes>
     <nodes xsi:type="NodeChallenge" ID="3" positionX="912" positionY="-44" width="500" height="726" challengeType="TypePhysical" autoscaleByEnemy="true" versusEventOwner="true" challengeScale="0" challengedList="ppl">
       <outputs name="Win" ownerID="3" targetID="5" fromX="1353" fromY="-539" />
@@ -2991,12 +2991,12 @@ Staja sie robotnikami, ale nawet w tym, ze pozostaja slabi.
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="[Goblin lub Lojalnosc] Poprowadz swoje dziecko do rodziny i popros o szkolenie. Ryzykuje to, ze dziecko zostanie w klanie, ale jesli zdecyduje sie wrocic do ciebie, na pewno bedzie madrzejszy!" ownerID="2" targetID="3" fromX="787" fromY="-425" />
+      <outputs name="[Goblin lub Lojalnosc] Poprowadz swoje dziecko do rodziny i popros o szkolenie. Ryzykuje to, ze dziecko zostanie w klanie, ale jesli zdecyduje sie wrócic do ciebie, na pewno bedzie madrzejszy!" ownerID="2" targetID="3" fromX="787" fromY="-425" />
       <outputs name="[Sila] Dziecko jest silne, byc moze wyrosnie na wojownika." ownerID="2" targetID="20" fromX="787" fromY="-505" />
       <outputs name="Naucz dziecko dobrego starego handlu, zgromadzenia lub rzemiosla." ownerID="2" targetID="14" fromX="787" fromY="-585" />
-      <outputs name="[Magiczny uzytkownik, Mistycyzm i Szansa]] Gobliny moga probowac isc sciezka duchow, probujac poprowadzic ich do szamana." ownerID="2" targetID="35" fromX="787" fromY="-665" />Twoje goblinskie dziecko wkrotce stanie sie dorosle, wiec nadszedl czas, aby odkryc ich duchowa sciezke. 
+      <outputs name="[Magiczny uzytkownik, Mistycyzm i Szansa]] Gobliny moga próbowac isc sciezka duchów, próbujac poprowadzic ich do szamana." ownerID="2" targetID="35" fromX="787" fromY="-665" />Twoje goblinskie dziecko wkrótce stanie sie dorosle, wiec nadszedl czas, aby odkryc ich duchowa sciezke. 
 
-Musisz teraz wybrac podroz, ktora wezmie mlody, jesli bogowie chca, moga wrocic do ciebie jako dorosly. 
+Musisz teraz wybrac podróz, która wezmie mlody, jesli bogowie chca, moga wrócic do ciebie jako dorosly. 
 
 </nodes>
     <nodes xsi:type="NodeAdventure" ID="3" positionX="354" positionY="1411" width="350" height="1126">
@@ -3019,14 +3019,14 @@ Musisz teraz wybrac podroz, ktora wezmie mlody, jesli bogowie chca, moga wrocic 
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="[Mistycyzm i przypadek] Rozpocznij proby szamana, pomimo wielkiego ryzyka." ownerID="3" targetID="40" group="G1" fromX="679" fromY="919" />
+      <outputs name="[Mistycyzm i przypadek] Rozpocznij próby szamana, pomimo wielkiego ryzyka." ownerID="3" targetID="40" group="G1" fromX="679" fromY="919" />
       <outputs name="[Madrosc i percepcja] Wyslij swoje dziecko, by stalo sie mistrzem zwierzat." ownerID="3" targetID="42" fromX="679" fromY="839" />
-      <outputs name="[Sila] Wyslij mlodosc na sciezke jezdzca dzikow." ownerID="3" targetID="43" fromX="679" fromY="759" />
+      <outputs name="[Sila] Wyslij mlodosc na sciezke jezdzca dzików." ownerID="3" targetID="43" fromX="679" fromY="759" />
       <outputs name="[Sila] Wytrenuj dziecko do walki jako harcownik." ownerID="3" targetID="52" fromX="679" fromY="679" />
       <outputs name="Naucz dziecko dobrego starego handlu, zgromadzenia lub rzemiosla." ownerID="3" targetID="14" fromX="679" fromY="599" />
-      <outputs name="[Szansa] Wyslij swoje dziecko do jaskini duchow, gdzie ich los zostanie pozostawiony kaprysom lub madrosci goblinskich przodkow." ownerID="3" targetID="7" fromX="679" fromY="518" />Plemie goblinow akceptuje ciebie i dziecko i zgadza sie na duchowy spacer, aby ustanowic mloda prawdziwa sciezke. 
+      <outputs name="[Szansa] Wyslij swoje dziecko do jaskini duchów, gdzie ich los zostanie pozostawiony kaprysom lub madrosci goblinskich przodków." ownerID="3" targetID="7" fromX="679" fromY="518" />Plemie goblinów akceptuje ciebie i dziecko i zgadza sie na duchowy spacer, aby ustanowic mloda prawdziwa sciezke. 
 
-[Aby realizowac rzadkie klasy, dziecko czesto potrzebuje wysokiej statystyki w odpowiednim polu (dokladne liczby sie roznia), takie jak sila dla wojownikow itp., Jak rowniez szansa. Poprawa atrybutu szczescia moze rowniez pomoc w tym.] 
+[Aby realizowac rzadkie klasy, dziecko czesto potrzebuje wysokiej statystyki w odpowiednim polu (dokladne liczby sie róznia), takie jak sila dla wojowników itp., Jak równiez szansa. Poprawa atrybutu szczescia moze równiez pomóc w tym.] 
 
 </nodes>
     <nodes xsi:type="NodeAdventure" ID="5" positionX="1566" positionY="1998" width="350" height="725" image="Event156">
@@ -3078,10 +3078,10 @@ Musisz teraz wybrac podroz, ktora wezmie mlody, jesli bogowie chca, moga wrocic 
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Zaakceptuj ich wybor." ownerID="9" targetID="8" fromX="2596" fromY="1063" />Dziecko zostaje przyjete do plemienia goblinow i nie wraca do twojego.</nodes>
+      <outputs name="Zaakceptuj ich wybór." ownerID="9" targetID="8" fromX="2596" fromY="1063" />Dziecko zostaje przyjete do plemienia goblinów i nie wraca do twojego.</nodes>
     <nodes xsi:type="NodeAdventure" ID="14" positionX="1105" positionY="-724" width="350" height="805">
-      <outputs name="Rozpocznij proby dla zbieracza." ownerID="14" targetID="17" fromX="1430" fromY="-1215" />
-      <outputs name="Rozpocznij proby dla rzemieslnika." ownerID="14" targetID="18" fromX="1430" fromY="-1295" />Proby zostania pracownikiem sa czesto najbezpieczniejsze, a gobliny maja pokrewienstwo z majsterkowaniem. 
+      <outputs name="Rozpocznij próby dla zbieracza." ownerID="14" targetID="17" fromX="1430" fromY="-1215" />
+      <outputs name="Rozpocznij próby dla rzemieslnika." ownerID="14" targetID="18" fromX="1430" fromY="-1295" />Próby zostania pracownikiem sa czesto najbezpieczniejsze, a gobliny maja pokrewienstwo z majsterkowaniem. 
 </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="16" positionX="2912" positionY="-1611" width="350" height="530" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventure" ID="17" positionX="2353" positionY="-1310" width="350" height="725" image="Event155">
@@ -3095,7 +3095,7 @@ Musisz teraz wybrac podroz, ktora wezmie mlody, jesli bogowie chca, moga wrocic 
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Raduj sie!" ownerID="17" targetID="16" fromX="2678" fromY="-1801" />Dziecko nie ma okreslonej zdolnosci, ich sciezka lezy w swobodnej wedrowce zbieracza.</nodes>
+      <outputs name="Raduj sie!" ownerID="17" targetID="16" fromX="2678" fromY="-1801" />Dziecko nie ma okreslonej zdolnosci, ich sciezka lezy w swobodnej wedrówce zbieracza.</nodes>
     <nodes xsi:type="NodeAdventure" ID="18" positionX="1763" positionY="-1426" width="350" height="725" image="Event164">
       <logic>
         <ModifierBlock>
@@ -3107,7 +3107,7 @@ Musisz teraz wybrac podroz, ktora wezmie mlody, jesli bogowie chca, moga wrocic 
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Raduj sie!" ownerID="18" targetID="16" fromX="2088" fromY="-1917" />Dziecko znajduje swoj los w majsterkowaniu, naucza sie rzemiosla.</nodes>
+      <outputs name="Raduj sie!" ownerID="18" targetID="16" fromX="2088" fromY="-1917" />Dziecko znajduje swój los w majsterkowaniu, naucza sie rzemiosla.</nodes>
     <nodes xsi:type="NodeAdventure" ID="20" positionX="-23" positionY="-777" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -3122,7 +3122,7 @@ Musisz teraz wybrac podroz, ktora wezmie mlody, jesli bogowie chca, moga wrocic 
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Rozpocznij proby." ownerID="20" targetID="21" fromX="302" fromY="-1268" />Proby wojownika sa trudne i niebezpieczne. Dziecko goblinow musi udowodnic swoj plaszcz i nauczyc sie wykorzystywac jego rozmiar jako przewage, a nie uposledzenie.</nodes>
+      <outputs name="Rozpocznij próby." ownerID="20" targetID="21" fromX="302" fromY="-1268" />Próby wojownika sa trudne i niebezpieczne. Dziecko goblinów musi udowodnic swój plaszcz i nauczyc sie wykorzystywac jego rozmiar jako przewage, a nie uposledzenie.</nodes>
     <nodes xsi:type="NodeProduceDrop" ID="21" positionX="422" positionY="-972" width="460" height="750">
       <outputs ownerID="21" targetID="30" group="G1" fromX="852" fromY="-1330" />
       <outputs ownerID="21" targetID="23" group="G1" fromX="852" fromY="-1410" />
@@ -3173,7 +3173,7 @@ Musisz teraz wybrac podroz, ktora wezmie mlody, jesli bogowie chca, moga wrocic 
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Radujcie sie z ich bezpiecznego powrotu." ownerID="24" targetID="16" fromX="886" fromY="-2358" />Dziecko nie radzi sobie dobrze w swoich probach. Wracaja do ciebie szorstcy i przygnebieni, szepcza krew i gwalt. 
+      <outputs name="Radujcie sie z ich bezpiecznego powrotu." ownerID="24" targetID="16" fromX="886" fromY="-2358" />Dziecko nie radzi sobie dobrze w swoich próbach. Wracaja do ciebie szorstcy i przygnebieni, szepcza krew i gwalt. 
 
 Staja sie harcownikami, ale nawet w tym, ze pozostaja slabi.</nodes>
     <nodes xsi:type="NodeAdventure" ID="30" positionX="1183" positionY="-1765" width="350" height="725" image="Event019">
@@ -3192,7 +3192,7 @@ Staja sie harcownikami, ale nawet w tym, ze pozostaja slabi.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Oplakuj ich odejscie." ownerID="30" targetID="8" fromX="1508" fromY="-2256" />Surowe proby bojownika odebraly zycie mlodziezy!</nodes>
+      <outputs name="Oplakuj ich odejscie." ownerID="30" targetID="8" fromX="1508" fromY="-2256" />Surowe próby bojownika odebraly zycie mlodziezy!</nodes>
     <nodes xsi:type="NodeAdventure" ID="33" positionX="-389" positionY="-1563" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -3224,7 +3224,7 @@ Staja sie harcownikami, ale nawet w tym, ze pozostaja slabi.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Raduj sie!" ownerID="34" targetID="16" fromX="-865" fromY="-2056" />Dziecko wchodzi do szarego swiata, gdzie mieszkaja duchy i wraca do ciebie szaman. Podroz nie byla jednak pozbawiona niebezpieczenstw, a dusza mlodziezy pozostaje skazona.</nodes>
+      <outputs name="Raduj sie!" ownerID="34" targetID="16" fromX="-865" fromY="-2056" />Dziecko wchodzi do szarego swiata, gdzie mieszkaja duchy i wraca do ciebie szaman. Podróz nie byla jednak pozbawiona niebezpieczenstw, a dusza mlodziezy pozostaje skazona.</nodes>
     <nodes xsi:type="NodeDealDamage" ID="35" positionX="-660" positionY="-818" width="460" height="699" challengeTypeDamage="TypeMental" minDamage="0" maxDamage="0" useCountInPercent="false">
       <logic>
         <FilterBlock>
@@ -3263,7 +3263,7 @@ Staja sie harcownikami, ale nawet w tym, ze pozostaja slabi.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Oplakuj ich odejscie." ownerID="36" targetID="8" fromX="-1329" fromY="-1156" />Ciemnosc ogarnela dusze twojego dziecka, a mlodziez wkrotce zginela. </nodes>
+      <outputs name="Oplakuj ich odejscie." ownerID="36" targetID="8" fromX="-1329" fromY="-1156" />Ciemnosc ogarnela dusze twojego dziecka, a mlodziez wkrótce zginela. </nodes>
     <nodes xsi:type="NodeAdventure" ID="37" positionX="-1235" positionY="-482" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -3289,7 +3289,7 @@ Staja sie harcownikami, ale nawet w tym, ze pozostaja slabi.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Radujcie sie z ich powrotu." ownerID="37" targetID="16" fromX="-909" fromY="-973" />Swiat duchow okazal sie zbyt kuszacy i wracaja do ciebie jako widmo.</nodes>
+      <outputs name="Radujcie sie z ich powrotu." ownerID="37" targetID="16" fromX="-909" fromY="-973" />Swiat duchów okazal sie zbyt kuszacy i wracaja do ciebie jako widmo.</nodes>
     <nodes xsi:type="NodeAdventure" ID="38" positionX="-775" positionY="-2201" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -3309,7 +3309,7 @@ Staja sie harcownikami, ale nawet w tym, ze pozostaja slabi.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Raduj sie!" ownerID="38" targetID="16" fromX="-449" fromY="-2692" />Dziecko udowodni swoja wartosc jako jezdziec dzikow.</nodes>
+      <outputs name="Raduj sie!" ownerID="38" targetID="16" fromX="-449" fromY="-2692" />Dziecko udowodni swoja wartosc jako jezdziec dzików.</nodes>
     <nodes xsi:type="NodeAdventure" ID="39" positionX="-1751" positionY="-1546" width="350" height="725" image="Event160">
       <logic>
         <FilterBlock>
@@ -3332,7 +3332,7 @@ Staja sie harcownikami, ale nawet w tym, ze pozostaja slabi.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Raduj sie!" ownerID="39" targetID="16" fromX="-1425" fromY="-2037" />Dziecko wchodzi do szarego swiata, gdzie mieszkaja duchy i chociaz podroz byla trudna, wracaja do ciebie szaman.</nodes>
+      <outputs name="Raduj sie!" ownerID="39" targetID="16" fromX="-1425" fromY="-2037" />Dziecko wchodzi do szarego swiata, gdzie mieszkaja duchy i chociaz podróz byla trudna, wracaja do ciebie szaman.</nodes>
     <nodes xsi:type="NodeDealDamage" ID="40" positionX="-700" positionY="-11" width="460" height="699" challengeTypeDamage="TypeMental" minDamage="0" maxDamage="0" useCountInPercent="false">
       <logic>
         <FilterBlock>
@@ -3396,7 +3396,7 @@ Staja sie harcownikami, ale nawet w tym, ze pozostaja slabi.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Radujcie sie, ze znalezli wlasna droge." ownerID="44" targetID="8" fromX="1960" fromY="691" />Dziecko nie podaza sciezka, ktora dla nich wytyczyles, a zamiast tego staje sie zbieraczem.</nodes>
+      <outputs name="Radujcie sie, ze znalezli wlasna droge." ownerID="44" targetID="8" fromX="1960" fromY="691" />Dziecko nie podaza sciezka, która dla nich wytyczyles, a zamiast tego staje sie zbieraczem.</nodes>
     <nodes xsi:type="NodeAdventure" ID="45" positionX="2239" positionY="731" width="350" height="725" image="Event157">
       <logic>
         <FilterBlock>
@@ -3419,7 +3419,7 @@ Staja sie harcownikami, ale nawet w tym, ze pozostaja slabi.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Raduj sie!" ownerID="45" targetID="8" fromX="2564" fromY="239" />Dziecko jest szkolone jako jezdziec dzikow.</nodes>
+      <outputs name="Raduj sie!" ownerID="45" targetID="8" fromX="2564" fromY="239" />Dziecko jest szkolone jako jezdziec dzików.</nodes>
     <nodes xsi:type="NodeAdventure" ID="46" positionX="1569" positionY="391" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -3433,7 +3433,7 @@ Staja sie harcownikami, ale nawet w tym, ze pozostaja slabi.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Raduj sie ..." ownerID="46" targetID="8" fromX="1894" fromY="-100" />Dziecko w rzeczywistosci nie jest goblinem, jest orkiem i tylko nastolatkiem wciaz. To musiala byc zielona skora, ktora mylila rzeczy. Jaskinia duchowa wypluwa je, na szczescie bez szkody.</nodes>
+      <outputs name="Raduj sie ..." ownerID="46" targetID="8" fromX="1894" fromY="-100" />Dziecko w rzeczywistosci nie jest goblinem, jest orkiem i tylko nastolatkiem wciaz. To musiala byc zielona skóra, która mylila rzeczy. Jaskinia duchowa wypluwa je, na szczescie bez szkody.</nodes>
     <nodes xsi:type="NodeAdventure" ID="47" positionX="1993" positionY="-9" width="350" height="725" image="Event227">
       <logic>
         <FilterBlock>
@@ -3453,7 +3453,7 @@ Staja sie harcownikami, ale nawet w tym, ze pozostaja slabi.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Zaakceptuj je z powrotem w zakladce." ownerID="47" targetID="8" fromX="2318" fromY="-500" />Pradawni uznali kaprysny charakter dziecka i zmienili go w lesna wrozke!</nodes>
+      <outputs name="Zaakceptuj je z powrotem w zakladce." ownerID="47" targetID="8" fromX="2318" fromY="-500" />Pradawni uznali kaprysny charakter dziecka i zmienili go w lesna wrózke!</nodes>
     <nodes xsi:type="NodeAdventure" ID="48" positionX="2627" positionY="18" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -3473,7 +3473,7 @@ Staja sie harcownikami, ale nawet w tym, ze pozostaja slabi.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Zaakceptuj ich duchowy los." ownerID="48" targetID="8" fromX="2952" fromY="-473" />Dziadkowie w jaskini duchowej uwazali zycie goblinow za swoje. </nodes>
+      <outputs name="Zaakceptuj ich duchowy los." ownerID="48" targetID="8" fromX="2952" fromY="-473" />Dziadkowie w jaskini duchowej uwazali zycie goblinów za swoje. </nodes>
     <nodes xsi:type="NodeAdventure" ID="49" positionX="3073" positionY="75" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -3601,7 +3601,7 @@ Staja sie harcownikami, ale nawet w tym, ze pozostaja slabi.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Radujcie sie z ich powrotu." ownerID="54" targetID="16" fromX="1910" fromY="-873" />Swiat duchow okazal sie zbyt kuszacy i wracaja do ciebie jako widmo.</nodes>
+      <outputs name="Radujcie sie z ich powrotu." ownerID="54" targetID="16" fromX="1910" fromY="-873" />Swiat duchów okazal sie zbyt kuszacy i wracaja do ciebie jako widmo.</nodes>
   </Adventure>
   <Adventure name="TownTrader" uniqueID="20" allowOnce="true" typeGeneric="false" typePerGroupGeneric="true" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="19" joinIsForced="false" joinType="OnlyOwn" joinRange="SinglePosition">
     <nodes xsi:type="NodeStarting" ID="1" positionX="-25" positionY="3" width="347" height="661" image="Event203">
@@ -3625,8 +3625,8 @@ Staja sie harcownikami, ale nawet w tym, ze pozostaja slabi.</nodes>
           </LogicFilter>
         </FilterBlock>
       </logic>
-      <outputs name="Zapros kupcow." ownerID="2" targetID="3" fromX="831" fromY="-509" />
-      <outputs name="Powiedz kupcom, ze tym razem cie to nie interesuje." ownerID="2" targetID="19" fromX="831" fromY="-589" />Twoj post handlowy przyciagnal twoich pierwszych gosci.</nodes>
+      <outputs name="Zapros kupców." ownerID="2" targetID="3" fromX="831" fromY="-509" />
+      <outputs name="Powiedz kupcom, ze tym razem cie to nie interesuje." ownerID="2" targetID="19" fromX="831" fromY="-589" />Twój post handlowy przyciagnal twoich pierwszych gosci.</nodes>
     <nodes xsi:type="NodeProduceDrop" ID="3" positionX="1000" positionY="66" width="460" height="750">
       <outputs ownerID="3" targetID="7" group="G1" fromX="1430" fromY="-292" />
       <outputs ownerID="3" targetID="8" group="G1" fromX="1430" fromY="-372" />
@@ -3660,7 +3660,7 @@ Staja sie harcownikami, ale nawet w tym, ze pozostaja slabi.</nodes>
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Handel." ownerID="9" targetID="14" fromX="2997" fromY="-659" />Przedsiebiorca orkow oferuje swoje towary.</nodes>
+      <outputs name="Handel." ownerID="9" targetID="14" fromX="2997" fromY="-659" />Przedsiebiorca orków oferuje swoje towary.</nodes>
     <nodes xsi:type="NodeAdventure" ID="10" positionX="2171" positionY="-585" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -3669,7 +3669,7 @@ Staja sie harcownikami, ale nawet w tym, ze pozostaja slabi.</nodes>
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Handel." ownerID="10" targetID="15" fromX="2496" fromY="-1076" />Handlarz goblinow oferuje swoje towary.</nodes>
+      <outputs name="Handel." ownerID="10" targetID="15" fromX="2496" fromY="-1076" />Handlarz goblinów oferuje swoje towary.</nodes>
     <nodes xsi:type="NodeAdventure" ID="11" positionX="1492" positionY="-943" width="350" height="725">
       <outputs name="Handel." ownerID="11" targetID="16" fromX="1817" fromY="-1434" />Slavyanski kupiec oferuje swoje towary.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="12" positionX="2164" positionY="1342" width="350" height="530" linkedEventUniqueID="25" />
@@ -3736,7 +3736,7 @@ Staja sie harcownikami, ale nawet w tym, ze pozostaja slabi.</nodes>
         </FilterBlock>
       </logic>
       <outputs name="Handel." ownerID="7" targetID="4" fromX="1445" fromY="-908" />
-      <outputs name="Wracaj innym razem." ownerID="7" targetID="6" fromX="1445" fromY="-989" />„Nie jestescie naszymi przyjaciolmi, wiec nie bedziemy przyjmowac zywnosci jako platnosci, a najpierw musicie zaplacic nam dodatkowo.'</nodes>
+      <outputs name="Wracaj innym razem." ownerID="7" targetID="6" fromX="1445" fromY="-989" />„Nie jestescie naszymi przyjaciólmi, wiec nie bedziemy przyjmowac zywnosci jako platnosci, a najpierw musicie zaplacic nam dodatkowo.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="11" positionX="1789.41174" positionY="355.919952" width="350" height="725">
       <outputs name="Wyjdz." ownerID="11" targetID="6" fromX="2115" fromY="-135" />„Dobry handel z toba. Bogowie niech beda z toba.'</nodes>
   </Adventure>
@@ -3810,7 +3810,7 @@ Staja sie harcownikami, ale nawet w tym, ze pozostaja slabi.</nodes>
         </FilterBlock>
       </logic>
       <outputs name="Handel." ownerID="7" targetID="4" fromX="1445" fromY="-908" />
-      <outputs name="Wracaj innym razem." ownerID="7" targetID="6" fromX="1445" fromY="-989" />„Nie jestescie naszymi przyjaciolmi, wiec nie bedziemy przyjmowac zywnosci jako platnosci, a najpierw musicie zaplacic nam dodatkowo.'</nodes>
+      <outputs name="Wracaj innym razem." ownerID="7" targetID="6" fromX="1445" fromY="-989" />„Nie jestescie naszymi przyjaciólmi, wiec nie bedziemy przyjmowac zywnosci jako platnosci, a najpierw musicie zaplacic nam dodatkowo.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="11" positionX="1789.41174" positionY="355.919952" width="350" height="725">
       <outputs name="Wyjdz." ownerID="11" targetID="6" fromX="2115" fromY="-135" />„Dobry handel. Teraz idz, walcz z wrogami!'</nodes>
   </Adventure>
@@ -3893,7 +3893,7 @@ Staja sie harcownikami, ale nawet w tym, ze pozostaja slabi.</nodes>
         </FilterBlock>
       </logic>
       <outputs name="Handel." ownerID="7" targetID="4" fromX="1445" fromY="-908" />
-      <outputs name="Wracaj innym razem." ownerID="7" targetID="6" fromX="1445" fromY="-989" />„Nie jestescie naszymi przyjaciolmi, wiec nie bedziemy przyjmowac zywnosci jako platnosci, a najpierw musicie zaplacic nam dodatkowo.'</nodes>
+      <outputs name="Wracaj innym razem." ownerID="7" targetID="6" fromX="1445" fromY="-989" />„Nie jestescie naszymi przyjaciólmi, wiec nie bedziemy przyjmowac zywnosci jako platnosci, a najpierw musicie zaplacic nam dodatkowo.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="11" positionX="1655" positionY="293" width="350" height="725">
       <outputs name="Wyjdz." ownerID="11" targetID="6" fromX="1980" fromY="-198" />„Dobry handel z toba. Niech wasze ognie nigdy nie umra.'</nodes>
   </Adventure>
@@ -3961,7 +3961,7 @@ Staja sie harcownikami, ale nawet w tym, ze pozostaja slabi.</nodes>
         </FilterBlock>
       </logic>
       <outputs name="Handel." ownerID="7" targetID="4" fromX="1421" fromY="-881" />
-      <outputs name="Wracaj innym razem." ownerID="7" targetID="6" fromX="1421" fromY="-961" />„Nie jestescie naszymi przyjaciolmi, wiec najpierw musicie zaplacic nam dodatkowo.'
+      <outputs name="Wracaj innym razem." ownerID="7" targetID="6" fromX="1421" fromY="-961" />„Nie jestescie naszymi przyjaciólmi, wiec najpierw musicie zaplacic nam dodatkowo.'
 </nodes>
     <nodes xsi:type="NodeAdventure" ID="11" positionX="1789.41174" positionY="355.919952" width="350" height="725">
       <outputs name="Wyjdz." ownerID="11" targetID="6" fromX="2115" fromY="-135" />„Dobry handel z toba. Duchy sa z toba.'</nodes>
@@ -4045,7 +4045,7 @@ Staja sie harcownikami, ale nawet w tym, ze pozostaja slabi.</nodes>
         </FilterBlock>
       </logic>
       <outputs name="Handel." ownerID="7" targetID="4" fromX="1445" fromY="-908" />
-      <outputs name="Wracaj innym razem." ownerID="7" targetID="6" fromX="1445" fromY="-989" />„Nie jestesmy jeszcze zaprzyjaznieni; dlatego nie bedziemy oferowac dobrych warunkow, ale mozesz handlowac.'</nodes>
+      <outputs name="Wracaj innym razem." ownerID="7" targetID="6" fromX="1445" fromY="-989" />„Nie jestesmy jeszcze zaprzyjaznieni; dlatego nie bedziemy oferowac dobrych warunków, ale mozesz handlowac.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="11" positionX="1677.34949" positionY="245.258484" width="350" height="725">
       <outputs name="Wyjdz." ownerID="11" targetID="6" fromX="2003" fromY="-245" />„Dobry handel z toba. Niech natura was blogoslawi.'</nodes>
   </Adventure>
@@ -4074,8 +4074,8 @@ Staja sie harcownikami, ale nawet w tym, ze pozostaja slabi.</nodes>
           </LogicFilter>
         </FilterBlock>
       </logic>
-      <outputs name="Zapros kupcow." ownerID="2" targetID="3" fromX="831" fromY="-509" />
-      <outputs name="Powiedz kupcom, ze tym razem cie to nie interesuje." ownerID="2" targetID="19" fromX="831" fromY="-589" />Twoj post handlowy przyciagnal wiecej odwiedzajacych.</nodes>
+      <outputs name="Zapros kupców." ownerID="2" targetID="3" fromX="831" fromY="-509" />
+      <outputs name="Powiedz kupcom, ze tym razem cie to nie interesuje." ownerID="2" targetID="19" fromX="831" fromY="-589" />Twój post handlowy przyciagnal wiecej odwiedzajacych.</nodes>
     <nodes xsi:type="NodeProduceDrop" ID="3" positionX="1000" positionY="66" width="460" height="750">
       <outputs ownerID="3" targetID="7" group="G1" fromX="1430" fromY="-292" />
       <outputs ownerID="3" targetID="8" group="G1" fromX="1430" fromY="-372" />
@@ -4109,7 +4109,7 @@ Staja sie harcownikami, ale nawet w tym, ze pozostaja slabi.</nodes>
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Handel." ownerID="9" targetID="14" fromX="2997" fromY="-659" />Przedsiebiorca orkow oferuje swoje towary.</nodes>
+      <outputs name="Handel." ownerID="9" targetID="14" fromX="2997" fromY="-659" />Przedsiebiorca orków oferuje swoje towary.</nodes>
     <nodes xsi:type="NodeAdventure" ID="10" positionX="2171" positionY="-585" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -4118,7 +4118,7 @@ Staja sie harcownikami, ale nawet w tym, ze pozostaja slabi.</nodes>
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Handel." ownerID="10" targetID="15" fromX="2496" fromY="-1076" />Handlarz goblinow oferuje swoje towary.</nodes>
+      <outputs name="Handel." ownerID="10" targetID="15" fromX="2496" fromY="-1076" />Handlarz goblinów oferuje swoje towary.</nodes>
     <nodes xsi:type="NodeAdventure" ID="11" positionX="1492" positionY="-943" width="350" height="725">
       <outputs name="Handel." ownerID="11" targetID="16" fromX="1817" fromY="-1434" />Slavyanski kupiec oferuje swoje towary.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="12" positionX="2164" positionY="1342" width="350" height="530" linkedEventUniqueID="25" />
@@ -4176,30 +4176,30 @@ Staja sie harcownikami, ale nawet w tym, ze pozostaja slabi.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="[Sila lub szansa] Twoje dziecko jest silne, pojda sciezka wojownika." ownerID="2" targetID="3" fromX="591" fromY="418" />
+      <outputs name="[Sila lub szansa] Twoje dziecko jest silne, pójda sciezka wojownika." ownerID="2" targetID="3" fromX="591" fromY="418" />
       <outputs name="[Postrzeganie] Twoje dziecko jest spostrzegawcze, moze zostac mysliwym." ownerID="2" targetID="8" fromX="591" fromY="338" />
-      <outputs name="[Madrosc i szansa] Dziecko jest madre poza swymi latami, moga trenowac, by stac sie duchowym przywodca twojej trzody, zerka." ownerID="2" targetID="11" group="G2" fromX="591" fromY="258" />
+      <outputs name="[Madrosc i szansa] Dziecko jest madre poza swymi latami, moga trenowac, by stac sie duchowym przywódca twojej trzody, zerka." ownerID="2" targetID="11" group="G2" fromX="591" fromY="258" />
       <outputs name="[Spryt i szansa] Zycie bandytyzmu to nieortodoksyjna sciezka wyslania dziecka, ale ten swiat jest surowy, a ty potrzebujesz zatwardzialego ludu." ownerID="2" targetID="16" group="G3" fromX="591" fromY="178" />
       <outputs name="Dobre rzemioslo jest tym, czego chcesz uczyc swoje dziecko" ownerID="2" targetID="25" fromX="591" fromY="98" />
       <outputs name="Zbieracze sa zawsze potrzebni, a szkolenie jest mniej niebezpieczne. " ownerID="2" targetID="30" fromX="591" fromY="17" />
-      <outputs name="[Chance] Twoje dziecko zawsze bylo inne. Pozwol losowi calkowicie pokierowac swoja sciezka." ownerID="2" targetID="34" fromX="591" fromY="-62" />
+      <outputs name="[Chance] Twoje dziecko zawsze bylo inne. Pozwól losowi calkowicie pokierowac swoja sciezka." ownerID="2" targetID="34" fromX="591" fromY="-62" />
       <outputs name="[Mistycyzm, przypadek i kobieta] Twoje dziecko urodzilo sie ze znakiem czarownicy. Ta sciezka jest mroczna i niebezpieczna." ownerID="2" targetID="49" group="G1" fromX="591" fromY="-142" />
       <outputs name="[Inteligencja] Twoje dziecko sie uczy, byc moze moze zostac uzdrowicielem." ownerID="2" targetID="55" fromX="591" fromY="-222" />
       <outputs name="[Mistycyzm, przypadek i kobieta] Twoje dziecko urodzilo sie ze znakiem czarownicy. Ta sciezka jest mroczna i niebezpieczna." ownerID="2" targetID="68" group="G1" fromX="591" fromY="-302" />
-      <outputs name="[Madrosc i szansa] Dziecko jest madre poza swymi latami, moga trenowac, by stac sie duchowym przywodca twojej trzody, zerka." ownerID="2" targetID="70" group="G2" fromX="591" fromY="-383" />
+      <outputs name="[Madrosc i szansa] Dziecko jest madre poza swymi latami, moga trenowac, by stac sie duchowym przywódca twojej trzody, zerka." ownerID="2" targetID="70" group="G2" fromX="591" fromY="-383" />
       <outputs name="[Spryt i szansa] Zycie bandytyzmu to nieortodoksyjna sciezka wyslania dziecka, ale ten swiat jest surowy, a ty potrzebujesz zatwardzialego ludu." ownerID="2" targetID="71" group="G3" fromX="591" fromY="-463" />
-      <outputs name="[Sciezka natury] Zdecydowales sie wzmocnic swoj zwiazek z Natura, a zatem twoje dziecko moze zostac przeksztalcone w lesnego demona, jesli losy sa oczywiscie oczywiscie ..." ownerID="2" targetID="72" fromX="591" fromY="-543" />
-      <outputs name="[Sciezka Marovita] Pozwol swojemu boskiemu losowi przeksztalcic dziecko." ownerID="2" targetID="79" fromX="591" fromY="-623" />
-      <outputs name="[Sciezka Lady] Pozwol swojemu boskiemu losowi przemienic dziecko." ownerID="2" targetID="80" fromX="591" fromY="-703" />
-      <outputs name="[Sciezka Svaroga] Pozwol swojemu boskiemu losowi przemienic dziecko." ownerID="2" targetID="81" fromX="591" fromY="-784" />
-      <outputs name="[Sciezka Striboga] Pozwol swojemu boskiemu losowi przeksztalcic dziecko." ownerID="2" targetID="82" fromX="591" fromY="-864" />
-      <outputs name="[Sciezka Zoryi] Pozwol swojemu boskiemu losowi przemienic dziecko." ownerID="2" targetID="83" fromX="591" fromY="-944" />
-      <outputs name="[Sciezka Nyii] Pozwol swojemu boskiemu losowi przemienic dziecko." ownerID="2" targetID="84" fromX="591" fromY="-1024" />
-      <outputs name="[Sciezka Triglava] Pozwol swojemu boskiemu losowi przemienic dziecko." ownerID="2" targetID="85" fromX="591" fromY="-1104" />
-      <outputs name="[Sciezka Dzievanny] Pozwol swojemu boskiemu losowi przemienic dziecko." ownerID="2" targetID="86" fromX="591" fromY="-1185" />
-      <outputs name="[Sciezka Horza] Pozwol swojemu boskiemu losowi przemienic dziecko." ownerID="2" targetID="87" fromX="591" fromY="-1265" />Traumatyczne wydarzenia ostatnich kilku dni pokazaly, ze twoje dziecko nie jest juz dzieckiem. Teraz stoja przed czasem plonow, rytualu przejscia do doroslosci. 
+      <outputs name="[Sciezka natury] Zdecydowales sie wzmocnic swój zwiazek z Natura, a zatem twoje dziecko moze zostac przeksztalcone w lesnego demona, jesli losy sa oczywiscie oczywiscie ..." ownerID="2" targetID="72" fromX="591" fromY="-543" />
+      <outputs name="[Sciezka Marovita] Pozwól swojemu boskiemu losowi przeksztalcic dziecko." ownerID="2" targetID="79" fromX="591" fromY="-623" />
+      <outputs name="[Sciezka Lady] Pozwól swojemu boskiemu losowi przemienic dziecko." ownerID="2" targetID="80" fromX="591" fromY="-703" />
+      <outputs name="[Sciezka Svaroga] Pozwól swojemu boskiemu losowi przemienic dziecko." ownerID="2" targetID="81" fromX="591" fromY="-784" />
+      <outputs name="[Sciezka Striboga] Pozwól swojemu boskiemu losowi przeksztalcic dziecko." ownerID="2" targetID="82" fromX="591" fromY="-864" />
+      <outputs name="[Sciezka Zoryi] Pozwól swojemu boskiemu losowi przemienic dziecko." ownerID="2" targetID="83" fromX="591" fromY="-944" />
+      <outputs name="[Sciezka Nyii] Pozwól swojemu boskiemu losowi przemienic dziecko." ownerID="2" targetID="84" fromX="591" fromY="-1024" />
+      <outputs name="[Sciezka Triglava] Pozwól swojemu boskiemu losowi przemienic dziecko." ownerID="2" targetID="85" fromX="591" fromY="-1104" />
+      <outputs name="[Sciezka Dzievanny] Pozwól swojemu boskiemu losowi przemienic dziecko." ownerID="2" targetID="86" fromX="591" fromY="-1185" />
+      <outputs name="[Sciezka Horza] Pozwól swojemu boskiemu losowi przemienic dziecko." ownerID="2" targetID="87" fromX="591" fromY="-1265" />Traumatyczne wydarzenia ostatnich kilku dni pokazaly, ze twoje dziecko nie jest juz dzieckiem. Teraz stoja przed czasem plonów, rytualu przejscia do doroslosci. 
 
-Ale ta sciezka nigdy nie jest latwa. Musisz teraz wybrac, jaka podroz zabierze mlody, jesli bogowie chca, moga powrocic do ciebie jako dorosly.</nodes>
+Ale ta sciezka nigdy nie jest latwa. Musisz teraz wybrac, jaka podróz zabierze mlody, jesli bogowie chca, moga powrócic do ciebie jako dorosly.</nodes>
     <nodes xsi:type="NodeAdventure" ID="3" positionX="758" positionY="1518" width="350" height="885">
       <logic>
         <FilterBlock>
@@ -4220,9 +4220,9 @@ Ale ta sciezka nigdy nie jest latwa. Musisz teraz wybrac, jaka podroz zabierze m
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Rozpocznij proby." ownerID="3" targetID="4" group="G1" fromX="1083" fromY="1026" />
-      <outputs name="Rozpocznij proby." ownerID="3" targetID="6" group="G1" fromX="1083" fromY="946" />
-      <outputs name="Rozpocznij proby." ownerID="3" targetID="7" group="G1" fromX="1083" fromY="866" />Proby wojownika sa trudne i niebezpieczne. Dziecko musi udowodnic swoj plaszcz na wolnosci i przeciwstawic sie silniejszym przeciwnikom. </nodes>
+      <outputs name="Rozpocznij próby." ownerID="3" targetID="4" group="G1" fromX="1083" fromY="1026" />
+      <outputs name="Rozpocznij próby." ownerID="3" targetID="6" group="G1" fromX="1083" fromY="946" />
+      <outputs name="Rozpocznij próby." ownerID="3" targetID="7" group="G1" fromX="1083" fromY="866" />Próby wojownika sa trudne i niebezpieczne. Dziecko musi udowodnic swój plaszcz na wolnosci i przeciwstawic sie silniejszym przeciwnikom. </nodes>
     <nodes xsi:type="NodeAdventure" ID="4" positionX="1238" positionY="1564" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -4245,7 +4245,7 @@ Ale ta sciezka nigdy nie jest latwa. Musisz teraz wybrac, jaka podroz zabierze m
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Radujcie sie." ownerID="4" targetID="5" fromX="1563" fromY="1072" />Dziecko juz nie jest mlodoscia, dzis przylacza sie do dumnych szeregow kasty wojownikow. </nodes>
+      <outputs name="Radujcie sie." ownerID="4" targetID="5" fromX="1563" fromY="1072" />Dziecko juz nie jest mlodoscia, dzis przylacza sie do dumnych szeregów kasty wojowników. </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="5" positionX="2325" positionY="1367" width="350" height="530" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventure" ID="6" positionX="1710" positionY="850" width="350" height="725">
       <logic>
@@ -4263,7 +4263,7 @@ Ale ta sciezka nigdy nie jest latwa. Musisz teraz wybrac, jaka podroz zabierze m
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Radujcie sie." ownerID="6" targetID="5" fromX="2035" fromY="358" />Dziecko juz nie jest mlodoscia, dzis przylacza sie do dumnych szeregow kasty wojownikow. </nodes>
+      <outputs name="Radujcie sie." ownerID="6" targetID="5" fromX="2035" fromY="358" />Dziecko juz nie jest mlodoscia, dzis przylacza sie do dumnych szeregów kasty wojowników. </nodes>
     <nodes xsi:type="NodeAdventure" ID="7" positionX="2104" positionY="679" width="350" height="805">
       <outputs name="Oczekuj ich losu." ownerID="7" targetID="65" group="G1" fromX="2429" fromY="187" />
       <outputs name="Oczekuj ich losu." ownerID="7" targetID="15" group="G1" fromX="2429" fromY="107" />Dziecko nie zdalo egzaminu i grozi mu powazne niebezpieczenstwo.</nodes>
@@ -4281,9 +4281,9 @@ Ale ta sciezka nigdy nie jest latwa. Musisz teraz wybrac, jaka podroz zabierze m
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Rozpocznij proby." ownerID="8" targetID="9" group="G1" fromX="1095" fromY="118" />
-      <outputs name="Rozpocznij proby." ownerID="8" targetID="10" group="G1" fromX="1095" fromY="38" />
-      <outputs name="Rozpocznij proby." ownerID="8" targetID="7" group="G1" fromX="1095" fromY="-41" />Podroz mysliwego jest ciemna i pelna niebezpieczenstw czajacych sie na kazdym rogu. </nodes>
+      <outputs name="Rozpocznij próby." ownerID="8" targetID="9" group="G1" fromX="1095" fromY="118" />
+      <outputs name="Rozpocznij próby." ownerID="8" targetID="10" group="G1" fromX="1095" fromY="38" />
+      <outputs name="Rozpocznij próby." ownerID="8" targetID="7" group="G1" fromX="1095" fromY="-41" />Podróz mysliwego jest ciemna i pelna niebezpieczenstw czajacych sie na kazdym rogu. </nodes>
     <nodes xsi:type="NodeAdventure" ID="9" positionX="1223" positionY="553" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -4306,7 +4306,7 @@ Ale ta sciezka nigdy nie jest latwa. Musisz teraz wybrac, jaka podroz zabierze m
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Radujcie sie." ownerID="9" targetID="5" fromX="1548" fromY="61" />Dziecko juz nie jest mlodoscia, dzis dolacza do dumnych szeregow mysliwych.</nodes>
+      <outputs name="Radujcie sie." ownerID="9" targetID="5" fromX="1548" fromY="61" />Dziecko juz nie jest mlodoscia, dzis dolacza do dumnych szeregów mysliwych.</nodes>
     <nodes xsi:type="NodeAdventure" ID="10" positionX="1708" positionY="40" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -4323,7 +4323,7 @@ Ale ta sciezka nigdy nie jest latwa. Musisz teraz wybrac, jaka podroz zabierze m
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Radujcie sie." ownerID="10" targetID="5" fromX="2033" fromY="-451" />Dziecko juz nie jest mlodoscia, dzis dolacza do dumnych szeregow mysliwych.</nodes>
+      <outputs name="Radujcie sie." ownerID="10" targetID="5" fromX="2033" fromY="-451" />Dziecko juz nie jest mlodoscia, dzis dolacza do dumnych szeregów mysliwych.</nodes>
     <nodes xsi:type="NodeAdventure" ID="11" positionX="1212" positionY="-248" width="350" height="966">
       <logic>
         <FilterBlock>
@@ -4350,10 +4350,10 @@ Ale ta sciezka nigdy nie jest latwa. Musisz teraz wybrac, jaka podroz zabierze m
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Rozpocznij proby." ownerID="11" targetID="12" group="G1" fromX="1537" fromY="-739" />
-      <outputs name="Rozpocznij proby." ownerID="11" targetID="13" group="G1" fromX="1537" fromY="-819" />
-      <outputs name="Rozpocznij proby." ownerID="11" targetID="60" group="G1" fromX="1537" fromY="-899" />
-      <outputs name="Rozpocznij proby." ownerID="11" targetID="21" group="G1" fromX="1537" fromY="-979" />Sciezka zerka jest sciezka duchowa. Istnieje kilka zagrozen fizycznych, ale szansa na sukces jest niewielka bez odpowiedniego szkolenia.</nodes>
+      <outputs name="Rozpocznij próby." ownerID="11" targetID="12" group="G1" fromX="1537" fromY="-739" />
+      <outputs name="Rozpocznij próby." ownerID="11" targetID="13" group="G1" fromX="1537" fromY="-819" />
+      <outputs name="Rozpocznij próby." ownerID="11" targetID="60" group="G1" fromX="1537" fromY="-899" />
+      <outputs name="Rozpocznij próby." ownerID="11" targetID="21" group="G1" fromX="1537" fromY="-979" />Sciezka zerka jest sciezka duchowa. Istnieje kilka zagrozen fizycznych, ale szansa na sukces jest niewielka bez odpowiedniego szkolenia.</nodes>
     <nodes xsi:type="NodeAdventure" ID="12" positionX="1647" positionY="-843" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -4431,7 +4431,7 @@ Ale ta sciezka nigdy nie jest latwa. Musisz teraz wybrac, jaka podroz zabierze m
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="To musi byc wola bogow, ciesz sie z powrotu dziecka jako doroslego." ownerID="15" targetID="5" fromX="3476" fromY="-156" />Dziecko zaginelo na wiele miesiecy. Z czasem wracaja do ciebie, zmienieni - chropowaci i chorzy na dolegliwosci przekletych padlinozercow. </nodes>
+      <outputs name="To musi byc wola bogów, ciesz sie z powrotu dziecka jako doroslego." ownerID="15" targetID="5" fromX="3476" fromY="-156" />Dziecko zaginelo na wiele miesiecy. Z czasem wracaja do ciebie, zmienieni - chropowaci i chorzy na dolegliwosci przekletych padlinozerców. </nodes>
     <nodes xsi:type="NodeAdventure" ID="16" positionX="-657" positionY="-191" width="350" height="966">
       <logic>
         <FilterBlock>
@@ -4458,10 +4458,10 @@ Ale ta sciezka nigdy nie jest latwa. Musisz teraz wybrac, jaka podroz zabierze m
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Rozpocznij proby." ownerID="16" targetID="18" group="G1" fromX="-331" fromY="-682" />
-      <outputs name="Rozpocznij proby." ownerID="16" targetID="19" group="G1" fromX="-331" fromY="-762" />
-      <outputs name="Rozpocznij proby." ownerID="16" targetID="67" group="G1" fromX="-331" fromY="-842" />
-      <outputs name="Rozpocznij proby." ownerID="16" targetID="17" group="G1" fromX="-331" fromY="-922" />Proby bandyty sa trudne i niebezpieczne. Dziecko musi udowodnic swoj plaszcz wsrod zbirow tego swiata i znalezc odwage, aby powrocic do ciebie pozniej.</nodes>
+      <outputs name="Rozpocznij próby." ownerID="16" targetID="18" group="G1" fromX="-331" fromY="-682" />
+      <outputs name="Rozpocznij próby." ownerID="16" targetID="19" group="G1" fromX="-331" fromY="-762" />
+      <outputs name="Rozpocznij próby." ownerID="16" targetID="67" group="G1" fromX="-331" fromY="-842" />
+      <outputs name="Rozpocznij próby." ownerID="16" targetID="17" group="G1" fromX="-331" fromY="-922" />Próby bandyty sa trudne i niebezpieczne. Dziecko musi udowodnic swój plaszcz wsród zbirów tego swiata i znalezc odwage, aby powrócic do ciebie pózniej.</nodes>
     <nodes xsi:type="NodeAdventure" ID="17" positionX="-598" positionY="-1254" width="350" height="805">
       <outputs name="Oczekuj ich losu." ownerID="17" targetID="62" group="G1" fromX="-272" fromY="-1745" />
       <outputs name="Oczekuj ich losu." ownerID="17" targetID="15" group="G1" fromX="-272" fromY="-1825" />Dziecko nie zdalo egzaminu i grozi mu powazne niebezpieczenstwo.</nodes>
@@ -4493,7 +4493,7 @@ Ale ta sciezka nigdy nie jest latwa. Musisz teraz wybrac, jaka podroz zabierze m
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Radujcie sie." ownerID="18" targetID="5" fromX="155" fromY="-674" />Dziecko nie jest juz mlodoscia, dzis dolacza do watpliwych szeregow bandytyzmu.</nodes>
+      <outputs name="Radujcie sie." ownerID="18" targetID="5" fromX="155" fromY="-674" />Dziecko nie jest juz mlodoscia, dzis dolacza do watpliwych szeregów bandytyzmu.</nodes>
     <nodes xsi:type="NodeAdventure" ID="19" positionX="-215" positionY="-939" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -4519,7 +4519,7 @@ Ale ta sciezka nigdy nie jest latwa. Musisz teraz wybrac, jaka podroz zabierze m
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Radujcie sie." ownerID="19" targetID="5" fromX="110" fromY="-1430" />Dziecko nie jest juz mlodoscia, dzis dolacza do watpliwych szeregow bandytyzmu ...</nodes>
+      <outputs name="Radujcie sie." ownerID="19" targetID="5" fromX="110" fromY="-1430" />Dziecko nie jest juz mlodoscia, dzis dolacza do watpliwych szeregów bandytyzmu ...</nodes>
     <nodes xsi:type="NodeAdventure" ID="20" positionX="292" positionY="-1678" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -4539,11 +4539,11 @@ Ale ta sciezka nigdy nie jest latwa. Musisz teraz wybrac, jaka podroz zabierze m
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Oplakuj porazke dziecka i ruszaj dalej." ownerID="20" targetID="5" fromX="617" fromY="-2169" />Dziecko zaczelo trenowac na bandyte, ale zginelo straszliwie z rak zbirow.</nodes>
+      <outputs name="Oplakuj porazke dziecka i ruszaj dalej." ownerID="20" targetID="5" fromX="617" fromY="-2169" />Dziecko zaczelo trenowac na bandyte, ale zginelo straszliwie z rak zbirów.</nodes>
     <nodes xsi:type="NodeAdventure" ID="21" positionX="1772" positionY="-1645" width="350" height="885">
       <outputs name="Oczekuj ich losu." ownerID="21" targetID="63" group="G1" fromX="2097" fromY="-2136" />
       <outputs name="Oczekuj ich losu." ownerID="21" targetID="23" group="G1" fromX="2097" fromY="-2136" />
-      <outputs name="Oczekuj ich losu." ownerID="21" targetID="15" group="G1" fromX="2097" fromY="-2136" />Dziecko nie zdalo egzaminow, a konsekwencje czesto moga byc tragiczne dla takiego mlodego umyslu.</nodes>
+      <outputs name="Oczekuj ich losu." ownerID="21" targetID="15" group="G1" fromX="2097" fromY="-2136" />Dziecko nie zdalo egzaminów, a konsekwencje czesto moga byc tragiczne dla takiego mlodego umyslu.</nodes>
     <nodes xsi:type="NodeAdventure" ID="22" positionX="3090" positionY="-1761" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -4563,7 +4563,7 @@ Ale ta sciezka nigdy nie jest latwa. Musisz teraz wybrac, jaka podroz zabierze m
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Oplakuj porazke dziecka i ruszaj dalej." ownerID="22" targetID="29" fromX="3415" fromY="-2252" />Mlodziez byla tak przygnebiona ich niepowodzeniem, ze odeszli i nigdy nie wrocili. </nodes>
+      <outputs name="Oplakuj porazke dziecka i ruszaj dalej." ownerID="22" targetID="29" fromX="3415" fromY="-2252" />Mlodziez byla tak przygnebiona ich niepowodzeniem, ze odeszli i nigdy nie wrócili. </nodes>
     <nodes xsi:type="NodeAdventure" ID="23" positionX="3599" positionY="-1640" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -4601,10 +4601,10 @@ Ale ta sciezka nigdy nie jest latwa. Musisz teraz wybrac, jaka podroz zabierze m
 
 Oni jednak rozmnazaja sie z goblinem i zostawiaja potomstwo dla twojej opieki.</nodes>
     <nodes xsi:type="NodeAdventure" ID="25" positionX="326" positionY="-2760" width="350" height="966">
-      <outputs name="Rozpocznij proby." ownerID="25" targetID="78" group="G1" fromX="651" fromY="-3251" />
-      <outputs name="Rozpocznij proby." ownerID="25" targetID="26" group="G1" fromX="651" fromY="-3331" />
-      <outputs name="Rozpocznij proby." ownerID="25" targetID="27" group="G1" fromX="651" fromY="-3411" />
-      <outputs name="Rozpocznij proby." ownerID="25" targetID="28" group="G1" fromX="651" fromY="-3491" />Sciezka rzemiosla nie jest wypelniona fizycznym niebezpieczenstwem, ale wciaz jest wyczerpujaca i wymagajaca.</nodes>
+      <outputs name="Rozpocznij próby." ownerID="25" targetID="78" group="G1" fromX="651" fromY="-3251" />
+      <outputs name="Rozpocznij próby." ownerID="25" targetID="26" group="G1" fromX="651" fromY="-3331" />
+      <outputs name="Rozpocznij próby." ownerID="25" targetID="27" group="G1" fromX="651" fromY="-3411" />
+      <outputs name="Rozpocznij próby." ownerID="25" targetID="28" group="G1" fromX="651" fromY="-3491" />Sciezka rzemiosla nie jest wypelniona fizycznym niebezpieczenstwem, ale wciaz jest wyczerpujaca i wymagajaca.</nodes>
     <nodes xsi:type="NodeAdventure" ID="26" positionX="1158" positionY="-2258" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -4654,12 +4654,12 @@ Oni jednak rozmnazaja sie z goblinem i zostawiaja potomstwo dla twojej opieki.</
     <nodes xsi:type="NodeAdventure" ID="28" positionX="2191" positionY="-2481" width="350" height="885">
       <outputs name="Oczekuj ich losu." ownerID="28" targetID="63" group="G1" fromX="2516" fromY="-2972" />
       <outputs name="Oczekuj ich losu." ownerID="28" targetID="24" group="G1" fromX="2516" fromY="-3052" />
-      <outputs name="Oczekuj ich losu." ownerID="28" targetID="15" group="G1" fromX="2516" fromY="-3132" />Dziecko zawiodlo w probach, a konsekwencje czesto moga byc tragiczne dla takiego mlodego umyslu.</nodes>
+      <outputs name="Oczekuj ich losu." ownerID="28" targetID="15" group="G1" fromX="2516" fromY="-3132" />Dziecko zawiodlo w próbach, a konsekwencje czesto moga byc tragiczne dla takiego mlodego umyslu.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="29" positionX="3812" positionY="-2801" width="350" height="530" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventure" ID="30" positionX="-77.14334" positionY="-2570.09375" width="350" height="885">
-      <outputs name="Rozpocznij proby." ownerID="30" targetID="31" group="G1" fromX="248" fromY="-3061" />
-      <outputs name="Rozpocznij proby." ownerID="30" targetID="32" group="G1" fromX="248" fromY="-3141" />
-      <outputs name="Rozpocznij proby." ownerID="30" targetID="28" group="G1" fromX="248" fromY="-3221" />Sciezka zbieraczy nie jest wypelniona fizycznym niebezpieczenstwem, ale wciaz jest wyczerpujaca i wymagajaca.</nodes>
+      <outputs name="Rozpocznij próby." ownerID="30" targetID="31" group="G1" fromX="248" fromY="-3061" />
+      <outputs name="Rozpocznij próby." ownerID="30" targetID="32" group="G1" fromX="248" fromY="-3141" />
+      <outputs name="Rozpocznij próby." ownerID="30" targetID="28" group="G1" fromX="248" fromY="-3221" />Sciezka zbieraczy nie jest wypelniona fizycznym niebezpieczenstwem, ale wciaz jest wyczerpujaca i wymagajaca.</nodes>
     <nodes xsi:type="NodeAdventure" ID="31" positionX="-497" positionY="-3040" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -4714,7 +4714,7 @@ Oni jednak rozmnazaja sie z goblinem i zostawiaja potomstwo dla twojej opieki.</
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Rozpocznij ich proby." ownerID="34" targetID="35" fromX="-248" fromY="119" />Sciezka losu zawsze wiruje w chaosie. Dziecko zostaje odeslane w ciemnosc i z niego wynurza sie na nowo.</nodes>
+      <outputs name="Rozpocznij ich próby." ownerID="34" targetID="35" fromX="-248" fromY="119" />Sciezka losu zawsze wiruje w chaosie. Dziecko zostaje odeslane w ciemnosc i z niego wynurza sie na nowo.</nodes>
     <nodes xsi:type="NodeProduceDrop" ID="35" positionX="-1107" positionY="757" width="460" height="830">
       <outputs ownerID="35" targetID="58" group="G1" fromX="-676" fromY="398" />
       <outputs ownerID="35" targetID="37" group="G1" fromX="-676" fromY="318" />
@@ -4741,7 +4741,7 @@ Oni jednak rozmnazaja sie z goblinem i zostawiaja potomstwo dla twojej opieki.</
       </logic>
       <outputs name="Raduj sie!" ownerID="36" targetID="38" fromX="-1622" fromY="-358" />Twoje dziecko bylo w rzeczywistosci uzurpatorem! 
 
-Teraz wyrosl na demona, ale oni sa tak samo lojalni wobec ciebie i twoich bogow, jak wczesniej.</nodes>
+Teraz wyrósl na demona, ale oni sa tak samo lojalni wobec ciebie i twoich bogów, jak wczesniej.</nodes>
     <nodes xsi:type="NodeAdventure" ID="37" positionX="-2352" positionY="424" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -4757,7 +4757,7 @@ Teraz wyrosl na demona, ale oni sa tak samo lojalni wobec ciebie i twoich bogow,
       </logic>
       <outputs name="Raduj sie!" ownerID="37" targetID="38" fromX="-2026" fromY="-67" />Twoje dziecko bylo w rzeczywistosci uzurpatorem! 
 
-Teraz wyrosl na demona, ale oni sa tak samo lojalni wobec ciebie i twoich bogow, jak wczesniej.</nodes>
+Teraz wyrósl na demona, ale oni sa tak samo lojalni wobec ciebie i twoich bogów, jak wczesniej.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="38" positionX="-3153" positionY="101" width="350" height="530" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventure" ID="39" positionX="-2245" positionY="-827" width="350" height="725">
       <logic>
@@ -4777,7 +4777,7 @@ Teraz wyrosl na demona, ale oni sa tak samo lojalni wobec ciebie i twoich bogow,
       </logic>
       <outputs name="Raduj sie!" ownerID="39" targetID="38" fromX="-1919" fromY="-1318" />Twoje dziecko bylo w rzeczywistosci uzurpatorem, a raczej przeklete, by zyc pod falszywa postacia. 
 
-Na sciezce losu powrocil ich prawdziwy obraz, ale zawsze sa lojalni wobec twojej sprawy i krewnych.</nodes>
+Na sciezce losu powrócil ich prawdziwy obraz, ale zawsze sa lojalni wobec twojej sprawy i krewnych.</nodes>
     <nodes xsi:type="NodeAdventure" ID="40" positionX="-1679" positionY="-812" width="350" height="725">
       <logic>
         <ModifierBlock>
@@ -4795,9 +4795,9 @@ Na sciezce losu powrocil ich prawdziwy obraz, ale zawsze sa lojalni wobec twojej
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Radujcie sie, ze wrocili zywi." ownerID="40" targetID="38" fromX="-1353" fromY="-1303" />Niestety, twoje dziecko kroczylo sciezka losu, a los nie mial dobrych rzeczy w zapasie. 
+      <outputs name="Radujcie sie, ze wrócili zywi." ownerID="40" targetID="38" fromX="-1353" fromY="-1303" />Niestety, twoje dziecko kroczylo sciezka losu, a los nie mial dobrych rzeczy w zapasie. 
 
-Nie mowia o tym, co ich spotkalo, ale wracaja oslabieni i przygnebieni, ale takze towarzyszy im przyjaciel szczura.</nodes>
+Nie mówia o tym, co ich spotkalo, ale wracaja oslabieni i przygnebieni, ale takze towarzyszy im przyjaciel szczura.</nodes>
     <nodes xsi:type="NodeAdventure" ID="41" positionX="-2944" positionY="-797" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -4816,7 +4816,7 @@ Nie mowia o tym, co ich spotkalo, ale wracaja oslabieni i przygnebieni, ale takz
       </logic>
       <outputs name="Raduj sie!" ownerID="41" targetID="38" fromX="-2618" fromY="-1288" />Twoje dziecko bylo w rzeczywistosci uzurpatorem, a raczej przeklete, by zyc pod falszywa postacia. 
 
-Na sciezce losu powrocil ich prawdziwy obraz, ale zawsze sa lojalni wobec twojej sprawy i krewnych.</nodes>
+Na sciezce losu powrócil ich prawdziwy obraz, ale zawsze sa lojalni wobec twojej sprawy i krewnych.</nodes>
     <nodes xsi:type="NodeAdventure" ID="49" positionX="-1685" positionY="-1578" width="350" height="1206">
       <logic>
         <FilterBlock>
@@ -4856,12 +4856,12 @@ Na sciezce losu powrocil ich prawdziwy obraz, ale zawsze sa lojalni wobec twojej
         </FilterBlock>
       </logic>
       <outputs name="[Magiczny uzytkownik lub magiczna boska sciezka] Poprowadz mloda czarownice." ownerID="49" targetID="51" group="G1" fromX="-1359" fromY="-2069" />
-      <outputs name="Rozpocznij proby." ownerID="49" targetID="52" group="G1" fromX="-1359" fromY="-2149" />
-      <outputs name="Rozpocznij proby." ownerID="49" targetID="53" group="G1" fromX="-1359" fromY="-2229" />
-      <outputs name="Rozpocznij proby." ownerID="49" targetID="65" group="G1" fromX="-1359" fromY="-2309" />
-      <outputs name="Rozpocznij proby." ownerID="49" targetID="59" group="G1" fromX="-1359" fromY="-2389" />
-      <outputs name="Rozpocznij proby." ownerID="49" targetID="88" group="G1" fromX="-1359" fromY="-2470" />
-      <outputs name="Rozpocznij proby." ownerID="49" targetID="54" group="G1" fromX="-1359" fromY="-2550" />Mloda czarownica musi wejsc w swiat szarosci i szukac swojego przeznaczenia wewnatrz. </nodes>
+      <outputs name="Rozpocznij próby." ownerID="49" targetID="52" group="G1" fromX="-1359" fromY="-2149" />
+      <outputs name="Rozpocznij próby." ownerID="49" targetID="53" group="G1" fromX="-1359" fromY="-2229" />
+      <outputs name="Rozpocznij próby." ownerID="49" targetID="65" group="G1" fromX="-1359" fromY="-2309" />
+      <outputs name="Rozpocznij próby." ownerID="49" targetID="59" group="G1" fromX="-1359" fromY="-2389" />
+      <outputs name="Rozpocznij próby." ownerID="49" targetID="88" group="G1" fromX="-1359" fromY="-2470" />
+      <outputs name="Rozpocznij próby." ownerID="49" targetID="54" group="G1" fromX="-1359" fromY="-2550" />Mloda czarownica musi wejsc w swiat szarosci i szukac swojego przeznaczenia wewnatrz. </nodes>
     <nodes xsi:type="NodeAdventure" ID="51" positionX="-1164" positionY="-1467" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -4887,7 +4887,7 @@ Na sciezce losu powrocil ich prawdziwy obraz, ale zawsze sa lojalni wobec twojej
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Radujcie sie." ownerID="51" targetID="5" fromX="-838" fromY="-1958" />Dziecko juz nie jest mlodoscia, dzis dolacza do mrocznej sciezki czarow.</nodes>
+      <outputs name="Radujcie sie." ownerID="51" targetID="5" fromX="-838" fromY="-1958" />Dziecko juz nie jest mlodoscia, dzis dolacza do mrocznej sciezki czarów.</nodes>
     <nodes xsi:type="NodeAdventure" ID="52" positionX="-598" positionY="-2255" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -4904,7 +4904,7 @@ Na sciezce losu powrocil ich prawdziwy obraz, ale zawsze sa lojalni wobec twojej
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Radujcie sie." ownerID="52" targetID="5" fromX="-272" fromY="-2746" />Dziecko juz nie jest mlodoscia, dzis dolacza do mrocznej sciezki czarow.</nodes>
+      <outputs name="Radujcie sie." ownerID="52" targetID="5" fromX="-272" fromY="-2746" />Dziecko juz nie jest mlodoscia, dzis dolacza do mrocznej sciezki czarów.</nodes>
     <nodes xsi:type="NodeAdventure" ID="53" positionX="-1035" positionY="-2237" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -4951,7 +4951,7 @@ Na sciezce losu powrocil ich prawdziwy obraz, ale zawsze sa lojalni wobec twojej
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Radujcie sie." ownerID="54" targetID="5" fromX="-1165" fromY="-3353" />Dziecko nie jest juz mlodoscia, dzis przylacza sie do mrocznej sciezki czarow, ale nie bez placenia swietnej ceny za mroczna sztuke.</nodes>
+      <outputs name="Radujcie sie." ownerID="54" targetID="5" fromX="-1165" fromY="-3353" />Dziecko nie jest juz mlodoscia, dzis przylacza sie do mrocznej sciezki czarów, ale nie bez placenia swietnej ceny za mroczna sztuke.</nodes>
     <nodes xsi:type="NodeAdventure" ID="55" positionX="2046" positionY="-317" width="350" height="966">
       <logic>
         <FilterBlock>
@@ -4969,10 +4969,10 @@ Na sciezce losu powrocil ich prawdziwy obraz, ale zawsze sa lojalni wobec twojej
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Rozpocznij proby." ownerID="55" targetID="69" group="G1" fromX="2372" fromY="-808" />
-      <outputs name="Rozpocznij proby." ownerID="55" targetID="56" group="G1" fromX="2372" fromY="-888" />
-      <outputs name="Rozpocznij proby." ownerID="55" targetID="57" group="G1" fromX="2372" fromY="-969" />
-      <outputs name="Rozpocznij proby." ownerID="55" targetID="21" group="G1" fromX="2372" fromY="-1049" />Sciezka, ktorej uzdrowiciel nie jest wyzwaniem fizycznym, ale niewielu ma madrosc lub wytrwalosc, aby odniesc sukces.</nodes>
+      <outputs name="Rozpocznij próby." ownerID="55" targetID="69" group="G1" fromX="2372" fromY="-808" />
+      <outputs name="Rozpocznij próby." ownerID="55" targetID="56" group="G1" fromX="2372" fromY="-888" />
+      <outputs name="Rozpocznij próby." ownerID="55" targetID="57" group="G1" fromX="2372" fromY="-969" />
+      <outputs name="Rozpocznij próby." ownerID="55" targetID="21" group="G1" fromX="2372" fromY="-1049" />Sciezka, której uzdrowiciel nie jest wyzwaniem fizycznym, ale niewielu ma madrosc lub wytrwalosc, aby odniesc sukces.</nodes>
     <nodes xsi:type="NodeAdventure" ID="56" positionX="2807" positionY="-560" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -5052,7 +5052,7 @@ Na sciezce losu powrocil ich prawdziwy obraz, ale zawsze sa lojalni wobec twojej
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Radujcie sie." ownerID="59" targetID="5" fromX="-1784" fromY="-2391" />Dziecko juz nie jest mlodoscia, dzis dolacza do mrocznej sciezki czarow.</nodes>
+      <outputs name="Radujcie sie." ownerID="59" targetID="5" fromX="-1784" fromY="-2391" />Dziecko juz nie jest mlodoscia, dzis dolacza do mrocznej sciezki czarów.</nodes>
     <nodes xsi:type="NodeAdventure" ID="60" positionX="1229" positionY="-1478" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -5087,7 +5087,7 @@ Na sciezce losu powrocil ich prawdziwy obraz, ale zawsze sa lojalni wobec twojej
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Oplakuj porazke dziecka i ruszaj dalej." ownerID="61" targetID="5" fromX="619" fromY="-2482" />Dziecko zaczelo trenowac, by zostac bandyta, ale nigdy nie wrocilo do stada.</nodes>
+      <outputs name="Oplakuj porazke dziecka i ruszaj dalej." ownerID="61" targetID="5" fromX="619" fromY="-2482" />Dziecko zaczelo trenowac, by zostac bandyta, ale nigdy nie wrócilo do stada.</nodes>
     <nodes xsi:type="NodeDealDamage" ID="62" positionX="-218" positionY="-1689" width="460" height="539" challengeTypeDamage="TypeMental" minDamage="0" maxDamage="0" useCountInPercent="false">
       <logic>
         <FilterBlock>
@@ -5118,7 +5118,7 @@ Na sciezce losu powrocil ich prawdziwy obraz, ale zawsze sa lojalni wobec twojej
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Oplakuj porazke dziecka i ruszaj dalej." ownerID="64" targetID="29" fromX="3034" fromY="-2368" />Mlodziez byla tak przygnebiona ich niepowodzeniem, ze odeszli i nigdy nie wrocili. </nodes>
+      <outputs name="Oplakuj porazke dziecka i ruszaj dalej." ownerID="64" targetID="29" fromX="3034" fromY="-2368" />Mlodziez byla tak przygnebiona ich niepowodzeniem, ze odeszli i nigdy nie wrócili. </nodes>
     <nodes xsi:type="NodeDealDamage" ID="65" positionX="3025" positionY="1086" width="460" height="539" challengeTypeDamage="TypeMental" minDamage="0" maxDamage="0" useCountInPercent="false">
       <logic>
         <FilterBlock>
@@ -5155,7 +5155,7 @@ Na sciezce losu powrocil ich prawdziwy obraz, ale zawsze sa lojalni wobec twojej
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Radujcie sie." ownerID="67" targetID="5" fromX="-816" fromY="-1162" />Dziecko nie jest juz mlodoscia, dzis dolacza do watpliwych szeregow bandytyzmu ...</nodes>
+      <outputs name="Radujcie sie." ownerID="67" targetID="5" fromX="-816" fromY="-1162" />Dziecko nie jest juz mlodoscia, dzis dolacza do watpliwych szeregów bandytyzmu ...</nodes>
     <nodes xsi:type="NodeAdventure" ID="68" positionX="-2497" positionY="-1660" width="350" height="1206">
       <logic>
         <FilterBlock>
@@ -5192,12 +5192,12 @@ Na sciezce losu powrocil ich prawdziwy obraz, ale zawsze sa lojalni wobec twojej
         </FilterBlock>
       </logic>
       <outputs name="[Magiczny uzytkownik] Poprowadz mloda czarownice." ownerID="68" targetID="51" group="G1" fromX="-2171" fromY="-2151" />
-      <outputs name="Rozpocznij proby." ownerID="68" targetID="52" group="G1" fromX="-2171" fromY="-2231" />
-      <outputs name="Rozpocznij proby." ownerID="68" targetID="53" group="G1" fromX="-2171" fromY="-2311" />
-      <outputs name="Rozpocznij proby." ownerID="68" targetID="65" group="G1" fromX="-2171" fromY="-2391" />
-      <outputs name="Rozpocznij proby." ownerID="68" targetID="59" group="G1" fromX="-2171" fromY="-2471" />
-      <outputs name="Rozpocznij proby." ownerID="68" targetID="88" group="G1" fromX="-2171" fromY="-2552" />
-      <outputs name="Rozpocznij proby." ownerID="68" targetID="54" group="G1" fromX="-2171" fromY="-2632" />Mloda czarownica musi wejsc w swiat szarosci i szukac swojego przeznaczenia wewnatrz. </nodes>
+      <outputs name="Rozpocznij próby." ownerID="68" targetID="52" group="G1" fromX="-2171" fromY="-2231" />
+      <outputs name="Rozpocznij próby." ownerID="68" targetID="53" group="G1" fromX="-2171" fromY="-2311" />
+      <outputs name="Rozpocznij próby." ownerID="68" targetID="65" group="G1" fromX="-2171" fromY="-2391" />
+      <outputs name="Rozpocznij próby." ownerID="68" targetID="59" group="G1" fromX="-2171" fromY="-2471" />
+      <outputs name="Rozpocznij próby." ownerID="68" targetID="88" group="G1" fromX="-2171" fromY="-2552" />
+      <outputs name="Rozpocznij próby." ownerID="68" targetID="54" group="G1" fromX="-2171" fromY="-2632" />Mloda czarownica musi wejsc w swiat szarosci i szukac swojego przeznaczenia wewnatrz. </nodes>
     <nodes xsi:type="NodeAdventure" ID="69" positionX="3594" positionY="-484" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -5253,10 +5253,10 @@ Na sciezce losu powrocil ich prawdziwy obraz, ale zawsze sa lojalni wobec twojej
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Rozpocznij proby." ownerID="70" targetID="12" group="G1" fromX="1094" fromY="-846" />
-      <outputs name="Rozpocznij proby." ownerID="70" targetID="13" group="G1" fromX="1094" fromY="-926" />
-      <outputs name="Rozpocznij proby." ownerID="70" targetID="60" group="G1" fromX="1094" fromY="-1006" />
-      <outputs name="Rozpocznij proby." ownerID="70" targetID="21" group="G1" fromX="1094" fromY="-1086" />Sciezka zerka jest sciezka duchowa. Istnieje kilka zagrozen fizycznych, ale szansa na sukces jest niewielka bez odpowiedniego szkolenia.</nodes>
+      <outputs name="Rozpocznij próby." ownerID="70" targetID="12" group="G1" fromX="1094" fromY="-846" />
+      <outputs name="Rozpocznij próby." ownerID="70" targetID="13" group="G1" fromX="1094" fromY="-926" />
+      <outputs name="Rozpocznij próby." ownerID="70" targetID="60" group="G1" fromX="1094" fromY="-1006" />
+      <outputs name="Rozpocznij próby." ownerID="70" targetID="21" group="G1" fromX="1094" fromY="-1086" />Sciezka zerka jest sciezka duchowa. Istnieje kilka zagrozen fizycznych, ale szansa na sukces jest niewielka bez odpowiedniego szkolenia.</nodes>
     <nodes xsi:type="NodeAdventure" ID="71" positionX="-1555" positionY="209" width="350" height="966">
       <logic>
         <FilterBlock>
@@ -5280,10 +5280,10 @@ Na sciezce losu powrocil ich prawdziwy obraz, ale zawsze sa lojalni wobec twojej
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Rozpocznij proby." ownerID="71" targetID="18" group="G1" fromX="-1229" fromY="-282" />
-      <outputs name="Rozpocznij proby." ownerID="71" targetID="19" group="G1" fromX="-1229" fromY="-362" />
-      <outputs name="Rozpocznij proby." ownerID="71" targetID="67" group="G1" fromX="-1229" fromY="-442" />
-      <outputs name="Rozpocznij proby." ownerID="71" targetID="17" group="G1" fromX="-1229" fromY="-522" />Proby bandyty sa trudne i niebezpieczne. Dziecko musi udowodnic swoj plaszcz wsrod zbirow tego swiata i znalezc odwage, aby powrocic do ciebie pozniej.</nodes>
+      <outputs name="Rozpocznij próby." ownerID="71" targetID="18" group="G1" fromX="-1229" fromY="-282" />
+      <outputs name="Rozpocznij próby." ownerID="71" targetID="19" group="G1" fromX="-1229" fromY="-362" />
+      <outputs name="Rozpocznij próby." ownerID="71" targetID="67" group="G1" fromX="-1229" fromY="-442" />
+      <outputs name="Rozpocznij próby." ownerID="71" targetID="17" group="G1" fromX="-1229" fromY="-522" />Próby bandyty sa trudne i niebezpieczne. Dziecko musi udowodnic swój plaszcz wsród zbirów tego swiata i znalezc odwage, aby powrócic do ciebie pózniej.</nodes>
     <nodes xsi:type="NodeAdventure" ID="72" positionX="-553" positionY="1369" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -5295,7 +5295,7 @@ Na sciezce losu powrocil ich prawdziwy obraz, ale zawsze sa lojalni wobec twojej
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Rozpocznij ich proby." ownerID="72" targetID="73" fromX="-227" fromY="877" />Sciezka losu zawsze wiruje w chaosie. Dziecko zostaje odeslane do lasu iz niego wynurza sie na nowo.</nodes>
+      <outputs name="Rozpocznij ich próby." ownerID="72" targetID="73" fromX="-227" fromY="877" />Sciezka losu zawsze wiruje w chaosie. Dziecko zostaje odeslane do lasu iz niego wynurza sie na nowo.</nodes>
     <nodes xsi:type="NodeProduceDrop" ID="73" positionX="-1117" positionY="1841" width="460" height="669">
       <outputs ownerID="73" targetID="74" group="G1" fromX="-686" fromY="1482" />
       <outputs ownerID="73" targetID="75" group="G1" fromX="-686" fromY="1402" />
@@ -5326,7 +5326,7 @@ Na sciezce losu powrocil ich prawdziwy obraz, ale zawsze sa lojalni wobec twojej
       </logic>
       <outputs name="Raduj sie!" ownerID="74" targetID="38" fromX="-1322" fromY="1889" />Natura przeksztalcila twoje dziecko w lesnego demona. 
 
-Ale sa tak samo lojalni wobec ciebie i twoich bogow, jak wczesniej.</nodes>
+Ale sa tak samo lojalni wobec ciebie i twoich bogów, jak wczesniej.</nodes>
     <nodes xsi:type="NodeAdventure" ID="75" positionX="-1944" positionY="2245" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -5345,7 +5345,7 @@ Ale sa tak samo lojalni wobec ciebie i twoich bogow, jak wczesniej.</nodes>
       </logic>
       <outputs name="Raduj sie!" ownerID="75" targetID="38" fromX="-1618" fromY="1753" />Natura przeksztalcila twoje dziecko w lesnego demona. 
 
-Ale sa tak samo lojalni wobec ciebie i twoich bogow, jak wczesniej.</nodes>
+Ale sa tak samo lojalni wobec ciebie i twoich bogów, jak wczesniej.</nodes>
     <nodes xsi:type="NodeAdventure" ID="76" positionX="-2541" positionY="2161" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -5361,7 +5361,7 @@ Ale sa tak samo lojalni wobec ciebie i twoich bogow, jak wczesniej.</nodes>
       </logic>
       <outputs name="Raduj sie!" ownerID="76" targetID="38" fromX="-2215" fromY="1669" />Natura przeksztalcila twoje dziecko w lesnego demona. 
 
-Ale sa tak samo lojalni wobec ciebie i twoich bogow, jak wczesniej.</nodes>
+Ale sa tak samo lojalni wobec ciebie i twoich bogów, jak wczesniej.</nodes>
     <nodes xsi:type="NodeAdventure" ID="77" positionX="-2953" positionY="2031" width="350" height="725">
       <logic>
         <ModifierBlock>
@@ -5372,7 +5372,7 @@ Ale sa tak samo lojalni wobec ciebie i twoich bogow, jak wczesniej.</nodes>
       </logic>
       <outputs name="Raduj sie!" ownerID="77" targetID="38" fromX="-2627" fromY="1539" />Natura nie przeksztalcila twojego dziecka w swojego demona, zamiast tego beda teraz kroczyc sciezka bestii. 
 
-Ale sa tak samo lojalni wobec ciebie i twoich bogow, jak wczesniej.</nodes>
+Ale sa tak samo lojalni wobec ciebie i twoich bogów, jak wczesniej.</nodes>
     <nodes xsi:type="NodeAdventure" ID="78" positionX="1191" positionY="-3002" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -5648,30 +5648,30 @@ Ale sa tak samo lojalni wobec ciebie i twoich bogow, jak wczesniej.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="[Sila lub szansa] Twoje dziecko jest silne, pojda sciezka wojownika." ownerID="2" targetID="3" fromX="591" fromY="418" />
+      <outputs name="[Sila lub szansa] Twoje dziecko jest silne, pójda sciezka wojownika." ownerID="2" targetID="3" fromX="591" fromY="418" />
       <outputs name="[Postrzeganie] Twoje dziecko jest spostrzegawcze, moze zostac mysliwym." ownerID="2" targetID="8" fromX="591" fromY="338" />
-      <outputs name="[Madrosc i szansa] Dziecko jest madre poza swymi latami, moga trenowac, by stac sie duchowym przywodca twojej trzody, zerka." ownerID="2" targetID="11" group="G2" fromX="591" fromY="258" />
+      <outputs name="[Madrosc i szansa] Dziecko jest madre poza swymi latami, moga trenowac, by stac sie duchowym przywódca twojej trzody, zerka." ownerID="2" targetID="11" group="G2" fromX="591" fromY="258" />
       <outputs name="[Spryt i szansa] Zycie bandytyzmu to nieortodoksyjna sciezka wyslania dziecka, ale ten swiat jest surowy, a ty potrzebujesz zatwardzialego ludu." ownerID="2" targetID="16" group="G3" fromX="591" fromY="178" />
       <outputs name="Dobre rzemioslo jest tym, czego chcesz uczyc swoje dziecko" ownerID="2" targetID="25" fromX="591" fromY="98" />
       <outputs name="Zbieracze sa zawsze potrzebni, a szkolenie jest mniej niebezpieczne. " ownerID="2" targetID="30" fromX="591" fromY="17" />
-      <outputs name="[Chance] Twoje dziecko zawsze bylo inne. Pozwol losowi calkowicie pokierowac swoja sciezka." ownerID="2" targetID="34" fromX="591" fromY="-62" />
+      <outputs name="[Chance] Twoje dziecko zawsze bylo inne. Pozwól losowi calkowicie pokierowac swoja sciezka." ownerID="2" targetID="34" fromX="591" fromY="-62" />
       <outputs name="[Mistycyzm, przypadek i kobieta] Twoje dziecko urodzilo sie ze znakiem czarownicy. Ta sciezka jest mroczna i niebezpieczna." ownerID="2" targetID="49" group="G1" fromX="591" fromY="-142" />
       <outputs name="[Inteligencja] Twoje dziecko sie uczy, byc moze moze zostac uzdrowicielem." ownerID="2" targetID="55" fromX="591" fromY="-222" />
       <outputs name="[Mistycyzm, przypadek i kobieta] Twoje dziecko urodzilo sie ze znakiem czarownicy. Ta sciezka jest mroczna i niebezpieczna." ownerID="2" targetID="68" group="G1" fromX="591" fromY="-302" />
-      <outputs name="[Madrosc i szansa] Dziecko jest madre poza swymi latami, moga trenowac, by stac sie duchowym przywodca twojej trzody, zerka." ownerID="2" targetID="70" group="G2" fromX="591" fromY="-383" />
+      <outputs name="[Madrosc i szansa] Dziecko jest madre poza swymi latami, moga trenowac, by stac sie duchowym przywódca twojej trzody, zerka." ownerID="2" targetID="70" group="G2" fromX="591" fromY="-383" />
       <outputs name="[Spryt i szansa] Zycie bandytyzmu to nieortodoksyjna sciezka wyslania dziecka, ale ten swiat jest surowy, a ty potrzebujesz zatwardzialego ludu." ownerID="2" targetID="71" group="G3" fromX="591" fromY="-463" />
-      <outputs name="[Sciezka natury] Zdecydowales sie wzmocnic swoj zwiazek z Natura, a zatem twoje dziecko moze zostac przeksztalcone w lesnego demona, jesli losy sa oczywiscie oczywiscie ..." ownerID="2" targetID="72" fromX="591" fromY="-543" />
-      <outputs name="[Sciezka Marovita] Pozwol swojemu boskiemu losowi przeksztalcic dziecko." ownerID="2" targetID="79" fromX="591" fromY="-623" />
-      <outputs name="[Sciezka Lady] Pozwol swojemu boskiemu losowi przemienic dziecko." ownerID="2" targetID="80" fromX="591" fromY="-703" />
-      <outputs name="[Sciezka Svaroga] Pozwol swojemu boskiemu losowi przemienic dziecko." ownerID="2" targetID="81" fromX="591" fromY="-784" />
-      <outputs name="[Sciezka Striboga] Pozwol swojemu boskiemu losowi przeksztalcic dziecko." ownerID="2" targetID="82" fromX="591" fromY="-864" />
-      <outputs name="[Sciezka Zoryi] Pozwol swojemu boskiemu losowi przemienic dziecko." ownerID="2" targetID="83" fromX="591" fromY="-944" />
-      <outputs name="[Sciezka Nyii] Pozwol swojemu boskiemu losowi przemienic dziecko." ownerID="2" targetID="84" fromX="591" fromY="-1024" />
-      <outputs name="[Sciezka Triglava] Pozwol swojemu boskiemu losowi przemienic dziecko." ownerID="2" targetID="85" fromX="591" fromY="-1104" />
-      <outputs name="[Sciezka Dzievanny] Pozwol swojemu boskiemu losowi przemienic dziecko." ownerID="2" targetID="86" fromX="591" fromY="-1185" />
-      <outputs name="[Sciezka Horza] Pozwol swojemu boskiemu losowi przemienic dziecko." ownerID="2" targetID="87" fromX="591" fromY="-1265" />Traumatyczne wydarzenia ostatnich kilku dni pokazaly, ze twoje dziecko nie jest juz dzieckiem. Teraz stoja przed czasem plonow, rytualu przejscia do doroslosci. 
+      <outputs name="[Sciezka natury] Zdecydowales sie wzmocnic swój zwiazek z Natura, a zatem twoje dziecko moze zostac przeksztalcone w lesnego demona, jesli losy sa oczywiscie oczywiscie ..." ownerID="2" targetID="72" fromX="591" fromY="-543" />
+      <outputs name="[Sciezka Marovita] Pozwól swojemu boskiemu losowi przeksztalcic dziecko." ownerID="2" targetID="79" fromX="591" fromY="-623" />
+      <outputs name="[Sciezka Lady] Pozwól swojemu boskiemu losowi przemienic dziecko." ownerID="2" targetID="80" fromX="591" fromY="-703" />
+      <outputs name="[Sciezka Svaroga] Pozwól swojemu boskiemu losowi przemienic dziecko." ownerID="2" targetID="81" fromX="591" fromY="-784" />
+      <outputs name="[Sciezka Striboga] Pozwól swojemu boskiemu losowi przeksztalcic dziecko." ownerID="2" targetID="82" fromX="591" fromY="-864" />
+      <outputs name="[Sciezka Zoryi] Pozwól swojemu boskiemu losowi przemienic dziecko." ownerID="2" targetID="83" fromX="591" fromY="-944" />
+      <outputs name="[Sciezka Nyii] Pozwól swojemu boskiemu losowi przemienic dziecko." ownerID="2" targetID="84" fromX="591" fromY="-1024" />
+      <outputs name="[Sciezka Triglava] Pozwól swojemu boskiemu losowi przemienic dziecko." ownerID="2" targetID="85" fromX="591" fromY="-1104" />
+      <outputs name="[Sciezka Dzievanny] Pozwól swojemu boskiemu losowi przemienic dziecko." ownerID="2" targetID="86" fromX="591" fromY="-1185" />
+      <outputs name="[Sciezka Horza] Pozwól swojemu boskiemu losowi przemienic dziecko." ownerID="2" targetID="87" fromX="591" fromY="-1265" />Traumatyczne wydarzenia ostatnich kilku dni pokazaly, ze twoje dziecko nie jest juz dzieckiem. Teraz stoja przed czasem plonów, rytualu przejscia do doroslosci. 
 
-Ale ta sciezka nigdy nie jest latwa. Musisz teraz wybrac, jaka podroz zabierze mlody, jesli bogowie chca, moga powrocic do ciebie jako dorosly.</nodes>
+Ale ta sciezka nigdy nie jest latwa. Musisz teraz wybrac, jaka podróz zabierze mlody, jesli bogowie chca, moga powrócic do ciebie jako dorosly.</nodes>
     <nodes xsi:type="NodeAdventure" ID="3" positionX="758" positionY="1518" width="350" height="885">
       <logic>
         <FilterBlock>
@@ -5692,9 +5692,9 @@ Ale ta sciezka nigdy nie jest latwa. Musisz teraz wybrac, jaka podroz zabierze m
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Rozpocznij proby." ownerID="3" targetID="4" group="G1" fromX="1083" fromY="1026" />
-      <outputs name="Rozpocznij proby." ownerID="3" targetID="6" group="G1" fromX="1083" fromY="946" />
-      <outputs name="Rozpocznij proby." ownerID="3" targetID="7" group="G1" fromX="1083" fromY="866" />Proby wojownika sa trudne i niebezpieczne. Dziecko musi udowodnic swoj plaszcz na wolnosci i przeciwstawic sie silniejszym przeciwnikom. </nodes>
+      <outputs name="Rozpocznij próby." ownerID="3" targetID="4" group="G1" fromX="1083" fromY="1026" />
+      <outputs name="Rozpocznij próby." ownerID="3" targetID="6" group="G1" fromX="1083" fromY="946" />
+      <outputs name="Rozpocznij próby." ownerID="3" targetID="7" group="G1" fromX="1083" fromY="866" />Próby wojownika sa trudne i niebezpieczne. Dziecko musi udowodnic swój plaszcz na wolnosci i przeciwstawic sie silniejszym przeciwnikom. </nodes>
     <nodes xsi:type="NodeAdventure" ID="4" positionX="1238" positionY="1564" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -5717,7 +5717,7 @@ Ale ta sciezka nigdy nie jest latwa. Musisz teraz wybrac, jaka podroz zabierze m
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Radujcie sie." ownerID="4" targetID="5" fromX="1563" fromY="1072" />Dziecko juz nie jest mlodoscia, dzis przylacza sie do dumnych szeregow kasty wojownikow. </nodes>
+      <outputs name="Radujcie sie." ownerID="4" targetID="5" fromX="1563" fromY="1072" />Dziecko juz nie jest mlodoscia, dzis przylacza sie do dumnych szeregów kasty wojowników. </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="5" positionX="2325" positionY="1367" width="350" height="530" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventure" ID="6" positionX="1710" positionY="850" width="350" height="725">
       <logic>
@@ -5735,7 +5735,7 @@ Ale ta sciezka nigdy nie jest latwa. Musisz teraz wybrac, jaka podroz zabierze m
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Radujcie sie." ownerID="6" targetID="5" fromX="2035" fromY="358" />Dziecko juz nie jest mlodoscia, dzis przylacza sie do dumnych szeregow kasty wojownikow. </nodes>
+      <outputs name="Radujcie sie." ownerID="6" targetID="5" fromX="2035" fromY="358" />Dziecko juz nie jest mlodoscia, dzis przylacza sie do dumnych szeregów kasty wojowników. </nodes>
     <nodes xsi:type="NodeAdventure" ID="7" positionX="2104" positionY="679" width="350" height="805">
       <outputs name="Oczekuj ich losu." ownerID="7" targetID="65" group="G1" fromX="2429" fromY="187" />
       <outputs name="Oczekuj ich losu." ownerID="7" targetID="15" group="G1" fromX="2429" fromY="107" />Dziecko nie zdalo egzaminu i grozi mu powazne niebezpieczenstwo.</nodes>
@@ -5753,9 +5753,9 @@ Ale ta sciezka nigdy nie jest latwa. Musisz teraz wybrac, jaka podroz zabierze m
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Rozpocznij proby." ownerID="8" targetID="9" group="G1" fromX="1095" fromY="118" />
-      <outputs name="Rozpocznij proby." ownerID="8" targetID="10" group="G1" fromX="1095" fromY="38" />
-      <outputs name="Rozpocznij proby." ownerID="8" targetID="7" group="G1" fromX="1095" fromY="-41" />Podroz mysliwego jest ciemna i pelna niebezpieczenstw czajacych sie na kazdym rogu. </nodes>
+      <outputs name="Rozpocznij próby." ownerID="8" targetID="9" group="G1" fromX="1095" fromY="118" />
+      <outputs name="Rozpocznij próby." ownerID="8" targetID="10" group="G1" fromX="1095" fromY="38" />
+      <outputs name="Rozpocznij próby." ownerID="8" targetID="7" group="G1" fromX="1095" fromY="-41" />Podróz mysliwego jest ciemna i pelna niebezpieczenstw czajacych sie na kazdym rogu. </nodes>
     <nodes xsi:type="NodeAdventure" ID="9" positionX="1223" positionY="553" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -5778,7 +5778,7 @@ Ale ta sciezka nigdy nie jest latwa. Musisz teraz wybrac, jaka podroz zabierze m
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Radujcie sie." ownerID="9" targetID="5" fromX="1548" fromY="61" />Dziecko juz nie jest mlodoscia, dzis dolacza do dumnych szeregow mysliwych.</nodes>
+      <outputs name="Radujcie sie." ownerID="9" targetID="5" fromX="1548" fromY="61" />Dziecko juz nie jest mlodoscia, dzis dolacza do dumnych szeregów mysliwych.</nodes>
     <nodes xsi:type="NodeAdventure" ID="10" positionX="1708" positionY="40" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -5795,7 +5795,7 @@ Ale ta sciezka nigdy nie jest latwa. Musisz teraz wybrac, jaka podroz zabierze m
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Radujcie sie." ownerID="10" targetID="5" fromX="2033" fromY="-451" />Dziecko juz nie jest mlodoscia, dzis dolacza do dumnych szeregow mysliwych.</nodes>
+      <outputs name="Radujcie sie." ownerID="10" targetID="5" fromX="2033" fromY="-451" />Dziecko juz nie jest mlodoscia, dzis dolacza do dumnych szeregów mysliwych.</nodes>
     <nodes xsi:type="NodeAdventure" ID="11" positionX="1212" positionY="-248" width="350" height="966">
       <logic>
         <FilterBlock>
@@ -5822,10 +5822,10 @@ Ale ta sciezka nigdy nie jest latwa. Musisz teraz wybrac, jaka podroz zabierze m
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Rozpocznij proby." ownerID="11" targetID="12" group="G1" fromX="1537" fromY="-739" />
-      <outputs name="Rozpocznij proby." ownerID="11" targetID="13" group="G1" fromX="1537" fromY="-819" />
-      <outputs name="Rozpocznij proby." ownerID="11" targetID="60" group="G1" fromX="1537" fromY="-899" />
-      <outputs name="Rozpocznij proby." ownerID="11" targetID="21" group="G1" fromX="1537" fromY="-979" />Sciezka zerka jest sciezka duchowa. Istnieje kilka zagrozen fizycznych, ale szansa na sukces jest niewielka bez odpowiedniego szkolenia.</nodes>
+      <outputs name="Rozpocznij próby." ownerID="11" targetID="12" group="G1" fromX="1537" fromY="-739" />
+      <outputs name="Rozpocznij próby." ownerID="11" targetID="13" group="G1" fromX="1537" fromY="-819" />
+      <outputs name="Rozpocznij próby." ownerID="11" targetID="60" group="G1" fromX="1537" fromY="-899" />
+      <outputs name="Rozpocznij próby." ownerID="11" targetID="21" group="G1" fromX="1537" fromY="-979" />Sciezka zerka jest sciezka duchowa. Istnieje kilka zagrozen fizycznych, ale szansa na sukces jest niewielka bez odpowiedniego szkolenia.</nodes>
     <nodes xsi:type="NodeAdventure" ID="12" positionX="1647" positionY="-843" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -5903,7 +5903,7 @@ Ale ta sciezka nigdy nie jest latwa. Musisz teraz wybrac, jaka podroz zabierze m
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="To musi byc wola bogow, ciesz sie z powrotu dziecka jako doroslego." ownerID="15" targetID="5" fromX="3476" fromY="-156" />Dziecko zaginelo na wiele miesiecy. Z czasem wracaja do ciebie, zmienieni - chropowaci i chorzy na dolegliwosci przekletych padlinozercow. </nodes>
+      <outputs name="To musi byc wola bogów, ciesz sie z powrotu dziecka jako doroslego." ownerID="15" targetID="5" fromX="3476" fromY="-156" />Dziecko zaginelo na wiele miesiecy. Z czasem wracaja do ciebie, zmienieni - chropowaci i chorzy na dolegliwosci przekletych padlinozerców. </nodes>
     <nodes xsi:type="NodeAdventure" ID="16" positionX="-657" positionY="-191" width="350" height="966">
       <logic>
         <FilterBlock>
@@ -5930,10 +5930,10 @@ Ale ta sciezka nigdy nie jest latwa. Musisz teraz wybrac, jaka podroz zabierze m
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Rozpocznij proby." ownerID="16" targetID="18" group="G1" fromX="-331" fromY="-682" />
-      <outputs name="Rozpocznij proby." ownerID="16" targetID="19" group="G1" fromX="-331" fromY="-762" />
-      <outputs name="Rozpocznij proby." ownerID="16" targetID="67" group="G1" fromX="-331" fromY="-842" />
-      <outputs name="Rozpocznij proby." ownerID="16" targetID="17" group="G1" fromX="-331" fromY="-922" />Proby bandyty sa trudne i niebezpieczne. Dziecko musi udowodnic swoj plaszcz wsrod zbirow tego swiata i znalezc odwage, aby powrocic do ciebie pozniej.</nodes>
+      <outputs name="Rozpocznij próby." ownerID="16" targetID="18" group="G1" fromX="-331" fromY="-682" />
+      <outputs name="Rozpocznij próby." ownerID="16" targetID="19" group="G1" fromX="-331" fromY="-762" />
+      <outputs name="Rozpocznij próby." ownerID="16" targetID="67" group="G1" fromX="-331" fromY="-842" />
+      <outputs name="Rozpocznij próby." ownerID="16" targetID="17" group="G1" fromX="-331" fromY="-922" />Próby bandyty sa trudne i niebezpieczne. Dziecko musi udowodnic swój plaszcz wsród zbirów tego swiata i znalezc odwage, aby powrócic do ciebie pózniej.</nodes>
     <nodes xsi:type="NodeAdventure" ID="17" positionX="-598" positionY="-1254" width="350" height="805">
       <outputs name="Oczekuj ich losu." ownerID="17" targetID="62" group="G1" fromX="-272" fromY="-1745" />
       <outputs name="Oczekuj ich losu." ownerID="17" targetID="15" group="G1" fromX="-272" fromY="-1825" />Dziecko nie zdalo egzaminu i grozi mu powazne niebezpieczenstwo.</nodes>
@@ -5965,7 +5965,7 @@ Ale ta sciezka nigdy nie jest latwa. Musisz teraz wybrac, jaka podroz zabierze m
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Radujcie sie." ownerID="18" targetID="5" fromX="155" fromY="-674" />Dziecko nie jest juz mlodoscia, dzis dolacza do watpliwych szeregow bandytyzmu.</nodes>
+      <outputs name="Radujcie sie." ownerID="18" targetID="5" fromX="155" fromY="-674" />Dziecko nie jest juz mlodoscia, dzis dolacza do watpliwych szeregów bandytyzmu.</nodes>
     <nodes xsi:type="NodeAdventure" ID="19" positionX="-215" positionY="-939" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -5991,7 +5991,7 @@ Ale ta sciezka nigdy nie jest latwa. Musisz teraz wybrac, jaka podroz zabierze m
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Radujcie sie." ownerID="19" targetID="5" fromX="110" fromY="-1430" />Dziecko nie jest juz mlodoscia, dzis dolacza do watpliwych szeregow bandytyzmu ...</nodes>
+      <outputs name="Radujcie sie." ownerID="19" targetID="5" fromX="110" fromY="-1430" />Dziecko nie jest juz mlodoscia, dzis dolacza do watpliwych szeregów bandytyzmu ...</nodes>
     <nodes xsi:type="NodeAdventure" ID="20" positionX="292" positionY="-1678" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -6011,11 +6011,11 @@ Ale ta sciezka nigdy nie jest latwa. Musisz teraz wybrac, jaka podroz zabierze m
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Oplakuj porazke dziecka i ruszaj dalej." ownerID="20" targetID="5" fromX="617" fromY="-2169" />Dziecko zaczelo trenowac na bandyte, ale zginelo straszliwie z rak zbirow.</nodes>
+      <outputs name="Oplakuj porazke dziecka i ruszaj dalej." ownerID="20" targetID="5" fromX="617" fromY="-2169" />Dziecko zaczelo trenowac na bandyte, ale zginelo straszliwie z rak zbirów.</nodes>
     <nodes xsi:type="NodeAdventure" ID="21" positionX="1772" positionY="-1645" width="350" height="885">
       <outputs name="Oczekuj ich losu." ownerID="21" targetID="63" group="G1" fromX="2097" fromY="-2136" />
       <outputs name="Oczekuj ich losu." ownerID="21" targetID="23" group="G1" fromX="2097" fromY="-2136" />
-      <outputs name="Oczekuj ich losu." ownerID="21" targetID="15" group="G1" fromX="2097" fromY="-2136" />Dziecko nie zdalo egzaminow, a konsekwencje czesto moga byc tragiczne dla takiego mlodego umyslu.</nodes>
+      <outputs name="Oczekuj ich losu." ownerID="21" targetID="15" group="G1" fromX="2097" fromY="-2136" />Dziecko nie zdalo egzaminów, a konsekwencje czesto moga byc tragiczne dla takiego mlodego umyslu.</nodes>
     <nodes xsi:type="NodeAdventure" ID="22" positionX="3090" positionY="-1761" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -6035,7 +6035,7 @@ Ale ta sciezka nigdy nie jest latwa. Musisz teraz wybrac, jaka podroz zabierze m
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Oplakuj porazke dziecka i ruszaj dalej." ownerID="22" targetID="29" fromX="3415" fromY="-2252" />Mlodziez byla tak przygnebiona ich niepowodzeniem, ze odeszli i nigdy nie wrocili. </nodes>
+      <outputs name="Oplakuj porazke dziecka i ruszaj dalej." ownerID="22" targetID="29" fromX="3415" fromY="-2252" />Mlodziez byla tak przygnebiona ich niepowodzeniem, ze odeszli i nigdy nie wrócili. </nodes>
     <nodes xsi:type="NodeAdventure" ID="23" positionX="3599" positionY="-1640" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -6073,10 +6073,10 @@ Ale ta sciezka nigdy nie jest latwa. Musisz teraz wybrac, jaka podroz zabierze m
 
 Oni jednak rozmnazaja sie z goblinem i zostawiaja potomstwo dla twojej opieki.</nodes>
     <nodes xsi:type="NodeAdventure" ID="25" positionX="326" positionY="-2760" width="350" height="966">
-      <outputs name="Rozpocznij proby." ownerID="25" targetID="78" group="G1" fromX="651" fromY="-3251" />
-      <outputs name="Rozpocznij proby." ownerID="25" targetID="26" group="G1" fromX="651" fromY="-3331" />
-      <outputs name="Rozpocznij proby." ownerID="25" targetID="27" group="G1" fromX="651" fromY="-3411" />
-      <outputs name="Rozpocznij proby." ownerID="25" targetID="28" group="G1" fromX="651" fromY="-3491" />Sciezka rzemiosla nie jest wypelniona fizycznym niebezpieczenstwem, ale wciaz jest wyczerpujaca i wymagajaca.</nodes>
+      <outputs name="Rozpocznij próby." ownerID="25" targetID="78" group="G1" fromX="651" fromY="-3251" />
+      <outputs name="Rozpocznij próby." ownerID="25" targetID="26" group="G1" fromX="651" fromY="-3331" />
+      <outputs name="Rozpocznij próby." ownerID="25" targetID="27" group="G1" fromX="651" fromY="-3411" />
+      <outputs name="Rozpocznij próby." ownerID="25" targetID="28" group="G1" fromX="651" fromY="-3491" />Sciezka rzemiosla nie jest wypelniona fizycznym niebezpieczenstwem, ale wciaz jest wyczerpujaca i wymagajaca.</nodes>
     <nodes xsi:type="NodeAdventure" ID="26" positionX="1158" positionY="-2258" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -6126,12 +6126,12 @@ Oni jednak rozmnazaja sie z goblinem i zostawiaja potomstwo dla twojej opieki.</
     <nodes xsi:type="NodeAdventure" ID="28" positionX="2191" positionY="-2481" width="350" height="885">
       <outputs name="Oczekuj ich losu." ownerID="28" targetID="63" group="G1" fromX="2516" fromY="-2972" />
       <outputs name="Oczekuj ich losu." ownerID="28" targetID="24" group="G1" fromX="2516" fromY="-3052" />
-      <outputs name="Oczekuj ich losu." ownerID="28" targetID="15" group="G1" fromX="2516" fromY="-3132" />Dziecko zawiodlo w probach, a konsekwencje czesto moga byc tragiczne dla takiego mlodego umyslu.</nodes>
+      <outputs name="Oczekuj ich losu." ownerID="28" targetID="15" group="G1" fromX="2516" fromY="-3132" />Dziecko zawiodlo w próbach, a konsekwencje czesto moga byc tragiczne dla takiego mlodego umyslu.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="29" positionX="3812" positionY="-2801" width="350" height="530" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventure" ID="30" positionX="-77.14334" positionY="-2570.09375" width="350" height="885">
-      <outputs name="Rozpocznij proby." ownerID="30" targetID="31" group="G1" fromX="248" fromY="-3061" />
-      <outputs name="Rozpocznij proby." ownerID="30" targetID="32" group="G1" fromX="248" fromY="-3141" />
-      <outputs name="Rozpocznij proby." ownerID="30" targetID="28" group="G1" fromX="248" fromY="-3221" />Sciezka zbieraczy nie jest wypelniona fizycznym niebezpieczenstwem, ale wciaz jest wyczerpujaca i wymagajaca.</nodes>
+      <outputs name="Rozpocznij próby." ownerID="30" targetID="31" group="G1" fromX="248" fromY="-3061" />
+      <outputs name="Rozpocznij próby." ownerID="30" targetID="32" group="G1" fromX="248" fromY="-3141" />
+      <outputs name="Rozpocznij próby." ownerID="30" targetID="28" group="G1" fromX="248" fromY="-3221" />Sciezka zbieraczy nie jest wypelniona fizycznym niebezpieczenstwem, ale wciaz jest wyczerpujaca i wymagajaca.</nodes>
     <nodes xsi:type="NodeAdventure" ID="31" positionX="-497" positionY="-3040" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -6186,7 +6186,7 @@ Oni jednak rozmnazaja sie z goblinem i zostawiaja potomstwo dla twojej opieki.</
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Rozpocznij ich proby." ownerID="34" targetID="35" fromX="-248" fromY="119" />Sciezka losu zawsze wiruje w chaosie. Dziecko zostaje odeslane w ciemnosc i z niego wynurza sie na nowo.</nodes>
+      <outputs name="Rozpocznij ich próby." ownerID="34" targetID="35" fromX="-248" fromY="119" />Sciezka losu zawsze wiruje w chaosie. Dziecko zostaje odeslane w ciemnosc i z niego wynurza sie na nowo.</nodes>
     <nodes xsi:type="NodeProduceDrop" ID="35" positionX="-1107" positionY="757" width="460" height="830">
       <outputs ownerID="35" targetID="58" group="G1" fromX="-676" fromY="398" />
       <outputs ownerID="35" targetID="37" group="G1" fromX="-676" fromY="318" />
@@ -6213,7 +6213,7 @@ Oni jednak rozmnazaja sie z goblinem i zostawiaja potomstwo dla twojej opieki.</
       </logic>
       <outputs name="Raduj sie!" ownerID="36" targetID="38" fromX="-1622" fromY="-358" />Twoje dziecko bylo w rzeczywistosci uzurpatorem! 
 
-Teraz wyrosl na demona, ale oni sa tak samo lojalni wobec ciebie i twoich bogow, jak wczesniej.</nodes>
+Teraz wyrósl na demona, ale oni sa tak samo lojalni wobec ciebie i twoich bogów, jak wczesniej.</nodes>
     <nodes xsi:type="NodeAdventure" ID="37" positionX="-2352" positionY="424" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -6229,7 +6229,7 @@ Teraz wyrosl na demona, ale oni sa tak samo lojalni wobec ciebie i twoich bogow,
       </logic>
       <outputs name="Raduj sie!" ownerID="37" targetID="38" fromX="-2026" fromY="-67" />Twoje dziecko bylo w rzeczywistosci uzurpatorem! 
 
-Teraz wyrosl na demona, ale oni sa tak samo lojalni wobec ciebie i twoich bogow, jak wczesniej.</nodes>
+Teraz wyrósl na demona, ale oni sa tak samo lojalni wobec ciebie i twoich bogów, jak wczesniej.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="38" positionX="-3153" positionY="101" width="350" height="530" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventure" ID="39" positionX="-2245" positionY="-827" width="350" height="725">
       <logic>
@@ -6249,7 +6249,7 @@ Teraz wyrosl na demona, ale oni sa tak samo lojalni wobec ciebie i twoich bogow,
       </logic>
       <outputs name="Raduj sie!" ownerID="39" targetID="38" fromX="-1919" fromY="-1318" />Twoje dziecko bylo w rzeczywistosci uzurpatorem, a raczej przeklete, by zyc pod falszywa postacia. 
 
-Na sciezce losu powrocil ich prawdziwy obraz, ale zawsze sa lojalni wobec twojej sprawy i krewnych.</nodes>
+Na sciezce losu powrócil ich prawdziwy obraz, ale zawsze sa lojalni wobec twojej sprawy i krewnych.</nodes>
     <nodes xsi:type="NodeAdventure" ID="40" positionX="-1679" positionY="-812" width="350" height="725">
       <logic>
         <ModifierBlock>
@@ -6267,9 +6267,9 @@ Na sciezce losu powrocil ich prawdziwy obraz, ale zawsze sa lojalni wobec twojej
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Radujcie sie, ze wrocili zywi." ownerID="40" targetID="38" fromX="-1353" fromY="-1303" />Niestety, twoje dziecko kroczylo sciezka losu, a los nie mial dobrych rzeczy w zapasie. 
+      <outputs name="Radujcie sie, ze wrócili zywi." ownerID="40" targetID="38" fromX="-1353" fromY="-1303" />Niestety, twoje dziecko kroczylo sciezka losu, a los nie mial dobrych rzeczy w zapasie. 
 
-Nie mowia o tym, co ich spotkalo, ale wracaja oslabieni i przygnebieni, ale takze towarzyszy im przyjaciel szczura.</nodes>
+Nie mówia o tym, co ich spotkalo, ale wracaja oslabieni i przygnebieni, ale takze towarzyszy im przyjaciel szczura.</nodes>
     <nodes xsi:type="NodeAdventure" ID="41" positionX="-2944" positionY="-797" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -6288,7 +6288,7 @@ Nie mowia o tym, co ich spotkalo, ale wracaja oslabieni i przygnebieni, ale takz
       </logic>
       <outputs name="Raduj sie!" ownerID="41" targetID="38" fromX="-2618" fromY="-1288" />Twoje dziecko bylo w rzeczywistosci uzurpatorem, a raczej przeklete, by zyc pod falszywa postacia. 
 
-Na sciezce losu powrocil ich prawdziwy obraz, ale zawsze sa lojalni wobec twojej sprawy i krewnych.</nodes>
+Na sciezce losu powrócil ich prawdziwy obraz, ale zawsze sa lojalni wobec twojej sprawy i krewnych.</nodes>
     <nodes xsi:type="NodeAdventure" ID="49" positionX="-1685" positionY="-1578" width="350" height="1206">
       <logic>
         <FilterBlock>
@@ -6328,12 +6328,12 @@ Na sciezce losu powrocil ich prawdziwy obraz, ale zawsze sa lojalni wobec twojej
         </FilterBlock>
       </logic>
       <outputs name="[Magiczny uzytkownik lub magiczna boska sciezka] Poprowadz mloda czarownice." ownerID="49" targetID="51" group="G1" fromX="-1359" fromY="-2069" />
-      <outputs name="Rozpocznij proby." ownerID="49" targetID="52" group="G1" fromX="-1359" fromY="-2149" />
-      <outputs name="Rozpocznij proby." ownerID="49" targetID="53" group="G1" fromX="-1359" fromY="-2229" />
-      <outputs name="Rozpocznij proby." ownerID="49" targetID="65" group="G1" fromX="-1359" fromY="-2309" />
-      <outputs name="Rozpocznij proby." ownerID="49" targetID="59" group="G1" fromX="-1359" fromY="-2389" />
-      <outputs name="Rozpocznij proby." ownerID="49" targetID="88" group="G1" fromX="-1359" fromY="-2470" />
-      <outputs name="Rozpocznij proby." ownerID="49" targetID="54" group="G1" fromX="-1359" fromY="-2550" />Mloda czarownica musi wejsc w swiat szarosci i szukac swojego przeznaczenia wewnatrz. </nodes>
+      <outputs name="Rozpocznij próby." ownerID="49" targetID="52" group="G1" fromX="-1359" fromY="-2149" />
+      <outputs name="Rozpocznij próby." ownerID="49" targetID="53" group="G1" fromX="-1359" fromY="-2229" />
+      <outputs name="Rozpocznij próby." ownerID="49" targetID="65" group="G1" fromX="-1359" fromY="-2309" />
+      <outputs name="Rozpocznij próby." ownerID="49" targetID="59" group="G1" fromX="-1359" fromY="-2389" />
+      <outputs name="Rozpocznij próby." ownerID="49" targetID="88" group="G1" fromX="-1359" fromY="-2470" />
+      <outputs name="Rozpocznij próby." ownerID="49" targetID="54" group="G1" fromX="-1359" fromY="-2550" />Mloda czarownica musi wejsc w swiat szarosci i szukac swojego przeznaczenia wewnatrz. </nodes>
     <nodes xsi:type="NodeAdventure" ID="51" positionX="-1164" positionY="-1467" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -6359,7 +6359,7 @@ Na sciezce losu powrocil ich prawdziwy obraz, ale zawsze sa lojalni wobec twojej
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Radujcie sie." ownerID="51" targetID="5" fromX="-838" fromY="-1958" />Dziecko juz nie jest mlodoscia, dzis dolacza do mrocznej sciezki czarow.</nodes>
+      <outputs name="Radujcie sie." ownerID="51" targetID="5" fromX="-838" fromY="-1958" />Dziecko juz nie jest mlodoscia, dzis dolacza do mrocznej sciezki czarów.</nodes>
     <nodes xsi:type="NodeAdventure" ID="52" positionX="-598" positionY="-2255" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -6376,7 +6376,7 @@ Na sciezce losu powrocil ich prawdziwy obraz, ale zawsze sa lojalni wobec twojej
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Radujcie sie." ownerID="52" targetID="5" fromX="-272" fromY="-2746" />Dziecko juz nie jest mlodoscia, dzis dolacza do mrocznej sciezki czarow.</nodes>
+      <outputs name="Radujcie sie." ownerID="52" targetID="5" fromX="-272" fromY="-2746" />Dziecko juz nie jest mlodoscia, dzis dolacza do mrocznej sciezki czarów.</nodes>
     <nodes xsi:type="NodeAdventure" ID="53" positionX="-1035" positionY="-2237" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -6423,7 +6423,7 @@ Na sciezce losu powrocil ich prawdziwy obraz, ale zawsze sa lojalni wobec twojej
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Radujcie sie." ownerID="54" targetID="5" fromX="-1165" fromY="-3353" />Dziecko nie jest juz mlodoscia, dzis przylacza sie do mrocznej sciezki czarow, ale nie bez placenia swietnej ceny za mroczna sztuke.</nodes>
+      <outputs name="Radujcie sie." ownerID="54" targetID="5" fromX="-1165" fromY="-3353" />Dziecko nie jest juz mlodoscia, dzis przylacza sie do mrocznej sciezki czarów, ale nie bez placenia swietnej ceny za mroczna sztuke.</nodes>
     <nodes xsi:type="NodeAdventure" ID="55" positionX="2037" positionY="-326" width="350" height="966">
       <logic>
         <FilterBlock>
@@ -6441,10 +6441,10 @@ Na sciezce losu powrocil ich prawdziwy obraz, ale zawsze sa lojalni wobec twojej
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Rozpocznij proby." ownerID="55" targetID="69" group="G1" fromX="2362" fromY="-817" />
-      <outputs name="Rozpocznij proby." ownerID="55" targetID="56" group="G1" fromX="2362" fromY="-897" />
-      <outputs name="Rozpocznij proby." ownerID="55" targetID="57" group="G1" fromX="2362" fromY="-977" />
-      <outputs name="Rozpocznij proby." ownerID="55" targetID="21" group="G1" fromX="2362" fromY="-1057" />Sciezka, ktorej uzdrowiciel nie jest wyzwaniem fizycznym, ale niewielu ma madrosc lub wytrwalosc, aby odniesc sukces.</nodes>
+      <outputs name="Rozpocznij próby." ownerID="55" targetID="69" group="G1" fromX="2362" fromY="-817" />
+      <outputs name="Rozpocznij próby." ownerID="55" targetID="56" group="G1" fromX="2362" fromY="-897" />
+      <outputs name="Rozpocznij próby." ownerID="55" targetID="57" group="G1" fromX="2362" fromY="-977" />
+      <outputs name="Rozpocznij próby." ownerID="55" targetID="21" group="G1" fromX="2362" fromY="-1057" />Sciezka, której uzdrowiciel nie jest wyzwaniem fizycznym, ale niewielu ma madrosc lub wytrwalosc, aby odniesc sukces.</nodes>
     <nodes xsi:type="NodeAdventure" ID="56" positionX="2807" positionY="-560" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -6524,7 +6524,7 @@ Na sciezce losu powrocil ich prawdziwy obraz, ale zawsze sa lojalni wobec twojej
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Radujcie sie." ownerID="59" targetID="5" fromX="-1784" fromY="-2391" />Dziecko juz nie jest mlodoscia, dzis dolacza do mrocznej sciezki czarow.</nodes>
+      <outputs name="Radujcie sie." ownerID="59" targetID="5" fromX="-1784" fromY="-2391" />Dziecko juz nie jest mlodoscia, dzis dolacza do mrocznej sciezki czarów.</nodes>
     <nodes xsi:type="NodeAdventure" ID="60" positionX="1229" positionY="-1478" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -6559,7 +6559,7 @@ Na sciezce losu powrocil ich prawdziwy obraz, ale zawsze sa lojalni wobec twojej
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Oplakuj porazke dziecka i ruszaj dalej." ownerID="61" targetID="5" fromX="619" fromY="-2482" />Dziecko zaczelo trenowac, by zostac bandyta, ale nigdy nie wrocilo do stada.</nodes>
+      <outputs name="Oplakuj porazke dziecka i ruszaj dalej." ownerID="61" targetID="5" fromX="619" fromY="-2482" />Dziecko zaczelo trenowac, by zostac bandyta, ale nigdy nie wrócilo do stada.</nodes>
     <nodes xsi:type="NodeDealDamage" ID="62" positionX="-218" positionY="-1689" width="460" height="539" challengeTypeDamage="TypeMental" minDamage="0" maxDamage="0" useCountInPercent="false">
       <logic>
         <FilterBlock>
@@ -6590,7 +6590,7 @@ Na sciezce losu powrocil ich prawdziwy obraz, ale zawsze sa lojalni wobec twojej
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Oplakuj porazke dziecka i ruszaj dalej." ownerID="64" targetID="29" fromX="3034" fromY="-2368" />Mlodziez byla tak przygnebiona ich niepowodzeniem, ze odeszli i nigdy nie wrocili. </nodes>
+      <outputs name="Oplakuj porazke dziecka i ruszaj dalej." ownerID="64" targetID="29" fromX="3034" fromY="-2368" />Mlodziez byla tak przygnebiona ich niepowodzeniem, ze odeszli i nigdy nie wrócili. </nodes>
     <nodes xsi:type="NodeDealDamage" ID="65" positionX="3025" positionY="1086" width="460" height="539" challengeTypeDamage="TypeMental" minDamage="0" maxDamage="0" useCountInPercent="false">
       <logic>
         <FilterBlock>
@@ -6627,7 +6627,7 @@ Na sciezce losu powrocil ich prawdziwy obraz, ale zawsze sa lojalni wobec twojej
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Radujcie sie." ownerID="67" targetID="5" fromX="-816" fromY="-1162" />Dziecko nie jest juz mlodoscia, dzis dolacza do watpliwych szeregow bandytyzmu ...</nodes>
+      <outputs name="Radujcie sie." ownerID="67" targetID="5" fromX="-816" fromY="-1162" />Dziecko nie jest juz mlodoscia, dzis dolacza do watpliwych szeregów bandytyzmu ...</nodes>
     <nodes xsi:type="NodeAdventure" ID="68" positionX="-2497" positionY="-1660" width="350" height="1206">
       <logic>
         <FilterBlock>
@@ -6664,12 +6664,12 @@ Na sciezce losu powrocil ich prawdziwy obraz, ale zawsze sa lojalni wobec twojej
         </FilterBlock>
       </logic>
       <outputs name="[Magiczny uzytkownik] Poprowadz mloda czarownice." ownerID="68" targetID="51" group="G1" fromX="-2171" fromY="-2151" />
-      <outputs name="Rozpocznij proby." ownerID="68" targetID="52" group="G1" fromX="-2171" fromY="-2231" />
-      <outputs name="Rozpocznij proby." ownerID="68" targetID="53" group="G1" fromX="-2171" fromY="-2311" />
-      <outputs name="Rozpocznij proby." ownerID="68" targetID="65" group="G1" fromX="-2171" fromY="-2391" />
-      <outputs name="Rozpocznij proby." ownerID="68" targetID="59" group="G1" fromX="-2171" fromY="-2471" />
-      <outputs name="Rozpocznij proby." ownerID="68" targetID="88" group="G1" fromX="-2171" fromY="-2552" />
-      <outputs name="Rozpocznij proby." ownerID="68" targetID="54" group="G1" fromX="-2171" fromY="-2632" />Mloda czarownica musi wejsc w swiat szarosci i szukac swojego przeznaczenia wewnatrz. </nodes>
+      <outputs name="Rozpocznij próby." ownerID="68" targetID="52" group="G1" fromX="-2171" fromY="-2231" />
+      <outputs name="Rozpocznij próby." ownerID="68" targetID="53" group="G1" fromX="-2171" fromY="-2311" />
+      <outputs name="Rozpocznij próby." ownerID="68" targetID="65" group="G1" fromX="-2171" fromY="-2391" />
+      <outputs name="Rozpocznij próby." ownerID="68" targetID="59" group="G1" fromX="-2171" fromY="-2471" />
+      <outputs name="Rozpocznij próby." ownerID="68" targetID="88" group="G1" fromX="-2171" fromY="-2552" />
+      <outputs name="Rozpocznij próby." ownerID="68" targetID="54" group="G1" fromX="-2171" fromY="-2632" />Mloda czarownica musi wejsc w swiat szarosci i szukac swojego przeznaczenia wewnatrz. </nodes>
     <nodes xsi:type="NodeAdventure" ID="69" positionX="3594" positionY="-484" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -6725,10 +6725,10 @@ Na sciezce losu powrocil ich prawdziwy obraz, ale zawsze sa lojalni wobec twojej
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Rozpocznij proby." ownerID="70" targetID="12" group="G1" fromX="1094" fromY="-846" />
-      <outputs name="Rozpocznij proby." ownerID="70" targetID="13" group="G1" fromX="1094" fromY="-926" />
-      <outputs name="Rozpocznij proby." ownerID="70" targetID="60" group="G1" fromX="1094" fromY="-1006" />
-      <outputs name="Rozpocznij proby." ownerID="70" targetID="21" group="G1" fromX="1094" fromY="-1086" />Sciezka zerka jest sciezka duchowa. Istnieje kilka zagrozen fizycznych, ale szansa na sukces jest niewielka bez odpowiedniego szkolenia.</nodes>
+      <outputs name="Rozpocznij próby." ownerID="70" targetID="12" group="G1" fromX="1094" fromY="-846" />
+      <outputs name="Rozpocznij próby." ownerID="70" targetID="13" group="G1" fromX="1094" fromY="-926" />
+      <outputs name="Rozpocznij próby." ownerID="70" targetID="60" group="G1" fromX="1094" fromY="-1006" />
+      <outputs name="Rozpocznij próby." ownerID="70" targetID="21" group="G1" fromX="1094" fromY="-1086" />Sciezka zerka jest sciezka duchowa. Istnieje kilka zagrozen fizycznych, ale szansa na sukces jest niewielka bez odpowiedniego szkolenia.</nodes>
     <nodes xsi:type="NodeAdventure" ID="71" positionX="-1555" positionY="209" width="350" height="966">
       <logic>
         <FilterBlock>
@@ -6752,10 +6752,10 @@ Na sciezce losu powrocil ich prawdziwy obraz, ale zawsze sa lojalni wobec twojej
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Rozpocznij proby." ownerID="71" targetID="18" group="G1" fromX="-1229" fromY="-282" />
-      <outputs name="Rozpocznij proby." ownerID="71" targetID="19" group="G1" fromX="-1229" fromY="-362" />
-      <outputs name="Rozpocznij proby." ownerID="71" targetID="67" group="G1" fromX="-1229" fromY="-442" />
-      <outputs name="Rozpocznij proby." ownerID="71" targetID="17" group="G1" fromX="-1229" fromY="-522" />Proby bandyty sa trudne i niebezpieczne. Dziecko musi udowodnic swoj plaszcz wsrod zbirow tego swiata i znalezc odwage, aby powrocic do ciebie pozniej.</nodes>
+      <outputs name="Rozpocznij próby." ownerID="71" targetID="18" group="G1" fromX="-1229" fromY="-282" />
+      <outputs name="Rozpocznij próby." ownerID="71" targetID="19" group="G1" fromX="-1229" fromY="-362" />
+      <outputs name="Rozpocznij próby." ownerID="71" targetID="67" group="G1" fromX="-1229" fromY="-442" />
+      <outputs name="Rozpocznij próby." ownerID="71" targetID="17" group="G1" fromX="-1229" fromY="-522" />Próby bandyty sa trudne i niebezpieczne. Dziecko musi udowodnic swój plaszcz wsród zbirów tego swiata i znalezc odwage, aby powrócic do ciebie pózniej.</nodes>
     <nodes xsi:type="NodeAdventure" ID="72" positionX="-553" positionY="1369" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -6767,7 +6767,7 @@ Na sciezce losu powrocil ich prawdziwy obraz, ale zawsze sa lojalni wobec twojej
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Rozpocznij ich proby." ownerID="72" targetID="73" fromX="-227" fromY="877" />Sciezka losu zawsze wiruje w chaosie. Dziecko zostaje odeslane do lasu iz niego wynurza sie na nowo.</nodes>
+      <outputs name="Rozpocznij ich próby." ownerID="72" targetID="73" fromX="-227" fromY="877" />Sciezka losu zawsze wiruje w chaosie. Dziecko zostaje odeslane do lasu iz niego wynurza sie na nowo.</nodes>
     <nodes xsi:type="NodeProduceDrop" ID="73" positionX="-1117" positionY="1841" width="460" height="669">
       <outputs ownerID="73" targetID="74" group="G1" fromX="-686" fromY="1482" />
       <outputs ownerID="73" targetID="75" group="G1" fromX="-686" fromY="1402" />
@@ -6798,7 +6798,7 @@ Na sciezce losu powrocil ich prawdziwy obraz, ale zawsze sa lojalni wobec twojej
       </logic>
       <outputs name="Raduj sie!" ownerID="74" targetID="38" fromX="-1322" fromY="1889" />Natura przeksztalcila twoje dziecko w lesnego demona. 
 
-Ale sa tak samo lojalni wobec ciebie i twoich bogow, jak wczesniej.</nodes>
+Ale sa tak samo lojalni wobec ciebie i twoich bogów, jak wczesniej.</nodes>
     <nodes xsi:type="NodeAdventure" ID="75" positionX="-1944" positionY="2245" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -6817,7 +6817,7 @@ Ale sa tak samo lojalni wobec ciebie i twoich bogow, jak wczesniej.</nodes>
       </logic>
       <outputs name="Raduj sie!" ownerID="75" targetID="38" fromX="-1618" fromY="1753" />Natura przeksztalcila twoje dziecko w lesnego demona. 
 
-Ale sa tak samo lojalni wobec ciebie i twoich bogow, jak wczesniej.</nodes>
+Ale sa tak samo lojalni wobec ciebie i twoich bogów, jak wczesniej.</nodes>
     <nodes xsi:type="NodeAdventure" ID="76" positionX="-2541" positionY="2161" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -6833,7 +6833,7 @@ Ale sa tak samo lojalni wobec ciebie i twoich bogow, jak wczesniej.</nodes>
       </logic>
       <outputs name="Raduj sie!" ownerID="76" targetID="38" fromX="-2215" fromY="1669" />Natura przeksztalcila twoje dziecko w lesnego demona. 
 
-Ale sa tak samo lojalni wobec ciebie i twoich bogow, jak wczesniej.</nodes>
+Ale sa tak samo lojalni wobec ciebie i twoich bogów, jak wczesniej.</nodes>
     <nodes xsi:type="NodeAdventure" ID="77" positionX="-2953" positionY="2031" width="350" height="725">
       <logic>
         <ModifierBlock>
@@ -6844,7 +6844,7 @@ Ale sa tak samo lojalni wobec ciebie i twoich bogow, jak wczesniej.</nodes>
       </logic>
       <outputs name="Raduj sie!" ownerID="77" targetID="38" fromX="-2627" fromY="1539" />Natura nie przeksztalcila twojego dziecka w swojego demona, zamiast tego beda teraz kroczyc sciezka bestii. 
 
-Ale sa tak samo lojalni wobec ciebie i twoich bogow, jak wczesniej.</nodes>
+Ale sa tak samo lojalni wobec ciebie i twoich bogów, jak wczesniej.</nodes>
     <nodes xsi:type="NodeAdventure" ID="78" positionX="1191" positionY="-3002" width="350" height="725">
       <logic>
         <FilterBlock>

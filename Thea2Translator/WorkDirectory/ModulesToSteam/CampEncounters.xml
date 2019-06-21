@@ -72,7 +72,7 @@
           </LogicFilter>
         </FilterBlock>
       </logic>
-      <outputs name="Sprobuj sie obudzic." ownerID="2" targetID="3" fromX="814" fromY="-605" />Kiedy zasypiasz na swoim kempingu, twoje sny staja sie ciezkie i niepokojace. Kiedy rzucasz i odwracasz sie, czujesz sie coraz bardziej niepewny, gdy twoje najglebsze, najciemniejsze leki staja sie rzeczywiste i trzymaja cie w pulapce koszmaru.</nodes>
+      <outputs name="Spróbuj sie obudzic." ownerID="2" targetID="3" fromX="814" fromY="-605" />Kiedy zasypiasz na swoim kempingu, twoje sny staja sie ciezkie i niepokojace. Kiedy rzucasz i odwracasz sie, czujesz sie coraz bardziej zaniepokojony, gdy twoje najglebsze, najciemniejsze leki staja sie rzeczywiste i trzymaja cie w pulapce koszmaru.</nodes>
     <nodes xsi:type="NodeChallenge" ID="3" positionX="920" positionY="190" width="500" height="726" challengeType="TypeSpirit" versusConcept="true" versusGroup="GROUP-CON_S_0P_0M_2S" challengeScale="101" challengedList="ppl">
       <outputs name="Win" ownerID="3" targetID="4" fromX="1361" fromY="-305" />
       <outputs name="Lose" ownerID="3" targetID="10" fromX="1361" fromY="-385" />
@@ -94,7 +94,7 @@
       </logic>
       <outputs name="Zbierz to i ruszaj dalej." ownerID="4" targetID="7" group="G1" fromX="1886" fromY="32" />Powoli sie budzisz iw stanie przebudzenia widzisz klacze siedzace na twoich piersiach, wysysajace twoje duchy. 
 
-Gdy tylko odzyskasz pelna swiadomosc, demony znikna, ale nadal czujesz gleboki chlod biegnacy po twoich kregoslupach.</nodes>
+Gdy tylko odzyskasz pelna swiadomosc, demony znikna, ale nadal czujesz gleboki chlód biegnacy po twoich kregoslupach.</nodes>
     <nodes xsi:type="NodeAdventure" ID="5" positionX="1612.29822" positionY="-554.1605" width="350" height="725">
       <logic>
         <ModifierBlock>
@@ -106,7 +106,7 @@ Gdy tylko odzyskasz pelna swiadomosc, demony znikna, ale nadal czujesz gleboki c
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Zbierz to i ruszaj dalej." ownerID="5" targetID="9" group="G1" fromX="1938" fromY="-1045" />Probujesz sie obudzic iw stanie przebudzenia widzisz klacze siedzace na twoich piersiach, wysysajace twoje duchy. 
+      <outputs name="Zbierz to i ruszaj dalej." ownerID="5" targetID="9" group="G1" fromX="1938" fromY="-1045" />Próbujesz sie obudzic iw stanie przebudzenia widzisz klacze siedzace na twoich piersiach, wysysajace twoje duchy. 
 
 Nagly przyplyw paniki karmi demony, a ty wracasz do udreczonego snu, wiedzac, ze beda mialy swoja droge. 
 
@@ -133,11 +133,11 @@ Kiedy nadejdzie poranek, zostaniesz uwolniony, ale jestes rozbity i wyczerpany.<
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Zbierz to i ruszaj dalej." ownerID="11" targetID="9" fromX="1940" fromY="-1737" />Probujesz sie obudzic iw stanie przebudzenia widzisz klacze siedzace na twoich piersiach, wysysajace twoje duchy. 
+      <outputs name="Zbierz to i ruszaj dalej." ownerID="11" targetID="9" fromX="1940" fromY="-1737" />Próbujesz sie obudzic iw stanie przebudzenia widzisz klacze siedzace na twoich piersiach, wysysajace twoje duchy. 
 
 Nagly przyplyw paniki karmi demony, a ty wracasz do udreczonego snu, wiedzac, ze beda mialy swoja droge. 
 
-Dla jednego z was ta noc bedzie ostatnia w krolestwie smiertelnego ciala.</nodes>
+Dla jednego z was ta noc bedzie ostatnia w królestwie smiertelnego ciala.</nodes>
   </Adventure>
   <Adventure name="Ignis fatuus" uniqueID="6" typeGeneric="false" typePerGroupGeneric="false" typeInterrupt="false" typeExpedition="true" typeVillage="false" difficulty="4" nodeIdMax="24" joinIsForced="false" joinType="AllAlly" joinRange="MovementArea">
     <nodes xsi:type="NodeStarting" ID="1" positionX="10" positionY="-10" width="347" height="661" image="Event195">
@@ -161,7 +161,7 @@ Dla jednego z was ta noc bedzie ostatnia w krolestwie smiertelnego ciala.</nodes
       <outputs name="Sledz slady." ownerID="2" targetID="3" group="G1" fromX="789" fromY="-422" />
       <outputs name="Sledz slady." ownerID="2" targetID="4" group="G1" fromX="789" fromY="-502" />
       <outputs name="Sledz slady." ownerID="2" targetID="5" group="G1" fromX="789" fromY="-582" />
-      <outputs name="Pozostan na miejscu." ownerID="2" targetID="6" fromX="789" fromY="-663" />Gdy siedzisz przy ognisku, niektore iskry z plomienia zaczynaja tanczyc w powietrzu. Odsuwaja sie od ogniska i zamieniaja w noc. 
+      <outputs name="Pozostan na miejscu." ownerID="2" targetID="6" fromX="789" fromY="-663" />Gdy siedzisz przy ognisku, niektóre iskry z plomienia zaczynaja tanczyc w powietrzu. Odsuwaja sie od ogniska i zamieniaja w noc. 
 
 Wyglada na to, ze chca cie gdzies sledzic.</nodes>
     <nodes xsi:type="NodeAdventure" ID="3" positionX="1058.04858" positionY="459.0035" width="350" height="725" image="Event004">
@@ -180,7 +180,7 @@ Wyglada na to, ze chca cie gdzies sledzic.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wracaj do obozu." ownerID="3" targetID="19" fromX="1383" fromY="-32" />Przez krotki czas sledzisz przeblyski i niespodziewanie utknales w bagnie! 
+      <outputs name="Wracaj do obozu." ownerID="3" targetID="19" fromX="1383" fromY="-32" />Przez krótki czas sledzisz przeblyski i niespodziewanie utknales w bagnie! 
 
 Swiatla okazaly sie migotac, zlosliwe male robale zawsze szukaly okazji, by sprowadzic ludzi na manowce. 
 
@@ -207,7 +207,7 @@ Wychodzisz, ale jestes zmeczony i przeziebisz sie.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wracaj do obozu." ownerID="5" targetID="7" fromX="1596" fromY="-1421" />Blyski prowadza do sciezki, ktora jest nie tylko bogata w owoce, ale takze moze okazac sie uzytecznym skrotem w podrozy. 
+      <outputs name="Wracaj do obozu." ownerID="5" targetID="7" fromX="1596" fromY="-1421" />Blyski prowadza do sciezki, która jest nie tylko bogata w owoce, ale takze moze okazac sie uzytecznym skrótem w podrózy. 
 </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="6" positionX="1115" positionY="-447" width="350" height="530" allPlayersXP="1" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventureEnd" ID="7" positionX="2237.09351" positionY="326.9107" width="350" height="530" allPlayersXP="2" allPlayersRP="1" linkedEventUniqueID="0" />
@@ -222,7 +222,7 @@ Wychodzisz, ale jestes zmeczony i przeziebisz sie.</nodes>
       <outputs name="Atak!" ownerID="8" targetID="9" fromX="3181" fromY="-24" />
       <outputs name="[Goblin Shaman or Wraith] Przekonaj upiory, aby pozwolily ci uwolnic je." ownerID="8" targetID="22" fromX="3181" fromY="-105" />
       <outputs name="[Magiczni uzytkownicy] Walcz z upiorami swoim duchem." ownerID="8" targetID="10" fromX="3181" fromY="-185" />
-      <outputs name="Wracaj do obozu - wydaje sie to zbyt niebezpieczne." ownerID="8" targetID="6" fromX="3181" fromY="-265" />Wasza modlitwa nie zadowala rozgniewanych duchow, ktore tu mieszkaja. 
+      <outputs name="Wracaj do obozu - wydaje sie to zbyt niebezpieczne." ownerID="8" targetID="6" fromX="3181" fromY="-265" />Wasza modlitwa nie zadowala rozgniewanych duchów, które tu mieszkaja. 
 
 Upiory powoli materializuja sie przed toba, starajac sie zabrac twoje dusze.</nodes>
     <nodes xsi:type="NodeChallenge" ID="9" positionX="3573.66016" positionY="432.027222" width="500" height="726" challengeType="TypePhysical" versusGroup="GROUP-WRAITH_4P_3M_4S" challengeScale="101" challengedList="ppl">
@@ -262,11 +262,11 @@ Upiory powoli materializuja sie przed toba, starajac sie zabrac twoje dusze.</no
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Zbierz co mozesz i wyjdz." ownerID="11" targetID="21" fromX="4679" fromY="-764" />Pokonujesz upiory i rozpadaja sie w nicosc. Kilka osob, ktore pozostaly, moze nawet zostac z toba, ale teraz nie stanowia zagrozenia. 
+      <outputs name="Zbierz co mozesz i wyjdz." ownerID="11" targetID="21" fromX="4679" fromY="-764" />Pokonujesz upiory i rozpadaja sie w nicosc. Kilka osób, które pozostaly, moze nawet zostac z toba, ale teraz nie stanowia zagrozenia. 
 
 Mozesz swobodnie przeszukiwac te strone w spokoju.</nodes>
     <nodes xsi:type="NodeAdventure" ID="12" positionX="3344.17944" positionY="-2033.88879" width="350" height="681.449951">
-      <outputs name="Wracaj do swojego obozu." ownerID="12" targetID="24" fromX="3669.92944" fromY="-2480.95874" />Jestes pokonany i czujesz, ze twoj duch slabnie, gdy jestes zmuszony do ucieczki.</nodes>
+      <outputs name="Wracaj do swojego obozu." ownerID="12" targetID="24" fromX="3669.92944" fromY="-2480.95874" />Jestes pokonany i czujesz, ze twój duch slabnie, gdy jestes zmuszony do ucieczki.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="13" positionX="4826.887" positionY="-942.8579" width="350" height="408" allPlayersXP="4" allPlayersRP="1" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventureEnd" ID="15" positionX="4415.491" positionY="-1910.80774" width="350" height="360.8" allPlayersXP="1" allPlayersRP="1" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventure" ID="18" positionX="2503.37524" positionY="-1323.33875" width="350" height="725">
@@ -373,7 +373,7 @@ Mozesz teraz przeszukiwac te strone.</nodes>
       </logic>
       <outputs name="Zbierz co mozesz i wyjdz." ownerID="23" targetID="21" fromX="4662" fromY="-1656" />Upiory zatrzymuja sie i przytakuja w porozumieniu. Ponownie wykonujesz modlitwe do Nyii i tym razem moc bogini przeplywa przez ciebie i pochlania duchy w jego ciemnym, pustym uscisku. 
 
-Kilka osob, ktore sie zatrzymaja, a niektore moga zostac z toba, ale teraz nie stanowia zadnego zagrozenia.</nodes>
+Kilka osób, które sie zatrzymaja, a niektóre moga zostac z toba, ale teraz nie stanowia zadnego zagrozenia.</nodes>
     <nodes xsi:type="NodeDealDamage" ID="24" positionX="3869.591" positionY="-2045.3125" width="460" height="459.36" challengeTypeDamage="TypeSpirit" minDamage="40" maxDamage="50" useCountInPercent="true" targetGroup="ppl">
       <outputs ownerID="24" targetID="15" fromX="4298.841" fromY="-2433.67236" />
     </nodes>
@@ -396,17 +396,17 @@ Kilka osob, ktore sie zatrzymaja, a niektore moga zostac z toba, ale teraz nie s
           </LogicFilter>
         </FilterBlock>
       </logic>
-      <outputs name="[Runemaster] To nie sa symbole, sa starozytnymi runami - nie krasnoludzkimi, ale z pewnoscia probujacymi nasladowac rzemioslo twojego rodu. Sprobuj rozszyfrowac te runy." ownerID="2" targetID="30" fromX="756" fromY="-552" />
+      <outputs name="[Runemaster] To nie sa symbole, sa starozytnymi runami - nie krasnoludzkimi, ale z pewnoscia próbujacymi nasladowac rzemioslo twojego rodu. Spróbuj rozszyfrowac te runy." ownerID="2" targetID="30" fromX="756" fromY="-552" />
       <outputs name="[Wraith] Wyczuwasz innego upiora uwiezionego w tym obiekcie. Przyjrzyj sie blizej. " ownerID="2" targetID="45" fromX="756" fromY="-632" />
-      <outputs name="[Magiczny uzytkownik lub magia] W tym obiekcie przebywa silna magia. Jesli chcesz zalozyc tutaj oboz, lepiej sobie z tym poradzic. Przyjrzyj sie blizej." ownerID="2" targetID="46" fromX="756" fromY="-712" />
-      <outputs name="[Madrosc] Sprobuj dowiedziec sie, co moze oznaczac to pismo." ownerID="2" targetID="6" fromX="756" fromY="-792" />
-      <outputs name="Otworz skrzynie." ownerID="2" targetID="4" fromX="756" fromY="-872" />
-      <outputs name="Zostaw to i ustaw oboz nieco dalej." ownerID="2" targetID="43" fromX="756" fromY="-953" />Kiedy oprozniasz ziemie, by stworzyc lepszy kemping, odkrywasz ciezka klatke piersiowa, prawdopodobnie odkryta tutaj przez Roztrzaskanie. Jest on zwiazany lancuchami i ma na sobie dziwne symbole obce.</nodes>
+      <outputs name="[Magiczny uzytkownik lub magia] W tym obiekcie przebywa silna magia. Jesli chcesz zalozyc tutaj obóz, lepiej sobie z tym poradzic. Przyjrzyj sie blizej." ownerID="2" targetID="46" fromX="756" fromY="-712" />
+      <outputs name="[Madrosc] Spróbuj dowiedziec sie, co moze oznaczac to pismo." ownerID="2" targetID="6" fromX="756" fromY="-792" />
+      <outputs name="Otwórz skrzynie." ownerID="2" targetID="4" fromX="756" fromY="-872" />
+      <outputs name="Zostaw to i ustaw obóz nieco dalej." ownerID="2" targetID="43" fromX="756" fromY="-953" />Kiedy oprózniasz ziemie, by stworzyc lepszy kemping, odkrywasz ciezka klatke piersiowa, prawdopodobnie odkryta tutaj przez Roztrzaskanie. Jest on zwiazany lancuchami i ma na sobie dziwne symbole obce.</nodes>
     <nodes xsi:type="NodeAdventure" ID="4" positionX="1379.31689" positionY="-22.84874" width="350" height="966">
-      <outputs name="Sprobuj starannie wyodrebnic to, co jest w srodku, bez dalszego uszkadzania klatki piersiowej i miejmy nadzieje, zanim syczenie sie pogorszy." ownerID="4" targetID="21" group="G1" fromX="1705" fromY="-513" />
-      <outputs name="Sprobuj starannie wyodrebnic to, co jest w srodku, bez dalszego uszkadzania klatki piersiowej i miejmy nadzieje, zanim syczenie sie pogorszy." ownerID="4" targetID="40" group="G1" fromX="1705" fromY="-594" />
-      <outputs name="Sprobuj rozbic go szybko i chwycic to, co mozesz, zanim cokolwiek syczy, przyjdzie ci po drodze." ownerID="4" targetID="20" group="G2" fromX="1705" fromY="-674" />
-      <outputs name="Sprobuj rozbic go szybko i chwycic to, co mozesz, zanim cokolwiek syczy, przyjdzie ci po drodze." ownerID="4" targetID="42" group="G2" fromX="1705" fromY="-754" />Usuwasz lancuchy, ale skrzynia pozostaje zamknieta. Slyszysz powolny, zlosliwy syk. </nodes>
+      <outputs name="Spróbuj starannie wyodrebnic to, co jest w srodku, bez dalszego uszkadzania klatki piersiowej i miejmy nadzieje, zanim syczenie sie pogorszy." ownerID="4" targetID="21" group="G1" fromX="1705" fromY="-513" />
+      <outputs name="Spróbuj starannie wyodrebnic to, co jest w srodku, bez dalszego uszkadzania klatki piersiowej i miejmy nadzieje, zanim syczenie sie pogorszy." ownerID="4" targetID="40" group="G1" fromX="1705" fromY="-594" />
+      <outputs name="Spróbuj rozbic go szybko i chwycic to, co mozesz, zanim cokolwiek syczy, przyjdzie ci po drodze." ownerID="4" targetID="20" group="G2" fromX="1705" fromY="-674" />
+      <outputs name="Spróbuj rozbic go szybko i chwycic to, co mozesz, zanim cokolwiek syczy, przyjdzie ci po drodze." ownerID="4" targetID="42" group="G2" fromX="1705" fromY="-754" />Usuwasz lancuchy, ale skrzynia pozostaje zamknieta. Slyszysz powolny, zlosliwy syk. </nodes>
     <nodes xsi:type="NodeAdventure" ID="6" positionX="915" positionY="-1066" width="350" height="966">
       <logic>
         <FilterBlock>
@@ -424,12 +424,12 @@ Kilka osob, ktore sie zatrzymaja, a niektore moga zostac z toba, ale teraz nie s
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Pomimo magicznej ochrony, skrzynia jest bardzo stara i ma wiele slabych punktow. Sprobuj otworzyc skrzynie bez zrywania lancuchow." ownerID="6" targetID="7" group="G1" fromX="1240" fromY="-1557" />
-      <outputs name="Pomimo magicznej ochrony, skrzynia jest bardzo stara i ma wiele slabych punktow. Sprobuj otworzyc skrzynie bez zrywania lancuchow." ownerID="6" targetID="8" group="G1" fromX="1240" fromY="-1637" />
-      <outputs name="Teraz, kiedy juz wiesz, co to jest, sprobuj wykonac rytual oczyszczania, aby uwolnic upiory, dzieki czemu otwarcie klatki jest bezpieczne." ownerID="6" targetID="14" fromX="1240" fromY="-1717" />
-      <outputs name="[Upior] Usun lancuchy i przemow do swego rodzaju, aby je uspokoic. Przekonaj ich, ze nie musza tu podazac za zadna sila. Zamiast tego moga byc darmowe!" ownerID="6" targetID="31" fromX="1240" fromY="-1797" />Te runy maja sluzyc jako ochrona wszystkiego, co lezy w skrzyni. Wiaza runy, wiec otwarcie skrzyni uwolni straznikow - najprawdopodobniej upiory. 
+      <outputs name="Pomimo magicznej ochrony, skrzynia jest bardzo stara i ma wiele slabych punktów. Spróbuj otworzyc skrzynie bez zrywania lancuchów." ownerID="6" targetID="7" group="G1" fromX="1240" fromY="-1557" />
+      <outputs name="Pomimo magicznej ochrony, skrzynia jest bardzo stara i ma wiele slabych punktów. Spróbuj otworzyc skrzynie bez zrywania lancuchów." ownerID="6" targetID="8" group="G1" fromX="1240" fromY="-1637" />
+      <outputs name="Teraz, kiedy juz wiesz, co to jest, spróbuj wykonac rytual oczyszczania, aby uwolnic upiory, dzieki czemu otwarcie klatki jest bezpieczne." ownerID="6" targetID="14" fromX="1240" fromY="-1717" />
+      <outputs name="[Upiór] Usun lancuchy i przemów do swego rodzaju, aby je uspokoic. Przekonaj ich, ze nie musza tu podazac za zadna sila. Zamiast tego moga byc darmowe!" ownerID="6" targetID="31" fromX="1240" fromY="-1797" />Te runy maja sluzyc jako ochrona wszystkiego, co lezy w skrzyni. Wiaza runy, wiec otwarcie skrzyni uwolni strazników - najprawdopodobniej upiory. 
 
-Lancuchy dzialaja jak spust. Po zerwaniu zaczna proces uwalniania upiorow.</nodes>
+Lancuchy dzialaja jak spust. Po zerwaniu zaczna proces uwalniania upiorów.</nodes>
     <nodes xsi:type="NodeAdventure" ID="7" positionX="1344.56262" positionY="-1146.60522" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -438,20 +438,20 @@ Lancuchy dzialaja jak spust. Po zerwaniu zaczna proces uwalniania upiorow.</node
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Chwyc co mozesz i wyjdz. " ownerID="7" targetID="29" group="G1" fromX="1670" fromY="-1637" />Ostroznie odgarniasz bok klatki piersiowej i tworzysz otwor bez dotykania lancuchow lub lamania run. 
+      <outputs name="Chwyc co mozesz i wyjdz. " ownerID="7" targetID="29" group="G1" fromX="1670" fromY="-1637" />Ostroznie odgarniasz bok klatki piersiowej i tworzysz otwór bez dotykania lancuchów lub lamania run. 
 </nodes>
     <nodes xsi:type="NodeAdventure" ID="8" positionX="436.652161" positionY="-1428.8656" width="350" height="966">
       <outputs name="Walcz!" ownerID="8" targetID="13" fromX="762" fromY="-1920" />
-      <outputs name="[Upior] Porozmawiaj ze swoim rodzajem, aby ich uspokoic. Przekonaj ich, ze nie musza tu podazac za zadna sila. Zamiast tego moga byc darmowe!" ownerID="8" targetID="33" fromX="762" fromY="-2000" />
-      <outputs name="Porzuc skrzynie i sprobuj uciec." ownerID="8" targetID="16" group="G1" fromX="762" fromY="-2080" />
-      <outputs name="Porzuc skrzynie i sprobuj uciec." ownerID="8" targetID="36" group="G1" fromX="762" fromY="-2160" />Ostroznie odlupujesz bok klatki piersiowej i tworzysz otwor. Niestety, przypadkowo lamiesz jedna z run, a lancuchy pekaja, nawet jesli ich nie dotykasz. 
+      <outputs name="[Upiór] Porozmawiaj ze swoim rodzajem, aby ich uspokoic. Przekonaj ich, ze nie musza tu podazac za zadna sila. Zamiast tego moga byc darmowe!" ownerID="8" targetID="33" fromX="762" fromY="-2000" />
+      <outputs name="Porzuc skrzynie i spróbuj uciec." ownerID="8" targetID="16" group="G1" fromX="762" fromY="-2080" />
+      <outputs name="Porzuc skrzynie i spróbuj uciec." ownerID="8" targetID="36" group="G1" fromX="762" fromY="-2160" />Ostroznie odlupujesz bok klatki piersiowej i tworzysz otwór. Niestety, przypadkowo lamiesz jedna z run, a lancuchy pekaja, nawet jesli ich nie dotykasz. 
 
 Widma pojawiaja sie i schodza na ciebie! 
 </nodes>
     <nodes xsi:type="NodeAdventure" ID="10" positionX="2740.976" positionY="-1161.70508" width="350" height="841">
       <outputs name="Walcz!" ownerID="10" targetID="25" fromX="3066" fromY="-1608" />
       <outputs name="Zaatakuj ich sila woli." ownerID="10" targetID="24" fromX="3066" fromY="-1688" />
-      <outputs name="Chwyc co mozesz i uciekaj. " ownerID="10" targetID="41" fromX="3066" fromY="-1769" />Rozbijasz skrzynie, a przed toba pojawia sie stado rozgniewanych upiorow i atakuje!</nodes>
+      <outputs name="Chwyc co mozesz i uciekaj. " ownerID="10" targetID="41" fromX="3066" fromY="-1769" />Rozbijasz skrzynie, a przed toba pojawia sie stado rozgniewanych upiorów i atakuje!</nodes>
     <nodes xsi:type="NodeChallenge" ID="13" positionX="3332" positionY="-1750" width="500" height="689" challengeType="TypePhysical" versusGroup="GROUP-WRAITH_4P_3M_4S" challengeScale="130" challengedList="ppl">
       <outputs name="Win" ownerID="13" targetID="17" fromX="3773" fromY="-2214" />
       <outputs name="Lose" ownerID="13" targetID="26" fromX="3773" fromY="-2294" />
@@ -528,7 +528,7 @@ Widma pojawiaja sie i schodza na ciebie!
     <nodes xsi:type="NodeAdventure" ID="19" positionX="2639.02832" positionY="-229.378983" width="350" height="841">
       <outputs name="Walcz!" ownerID="19" targetID="25" fromX="2964" fromY="-676" />
       <outputs name="Zaatakuj ich sila woli." ownerID="19" targetID="24" fromX="2964" fromY="-756" />
-      <outputs name="Chwyc co mozesz i uciekaj. " ownerID="19" targetID="41" group="G1" fromX="2964" fromY="-836" />Probujesz starannie wyodrebnic wszystko, co jest w skrzyni, nie czyniac dalszych obrazen, ale ci sie nie udaje. Rzecz rozpada sie w twoich rekach, uwalniajac przed toba paczke rozgniewanych upiorow!</nodes>
+      <outputs name="Chwyc co mozesz i uciekaj. " ownerID="19" targetID="41" group="G1" fromX="2964" fromY="-836" />Próbujesz starannie wyodrebnic wszystko, co jest w skrzyni, nie czyniac dalszych obrazen, ale ci sie nie udaje. Rzecz rozpada sie w twoich rekach, uwalniajac przed toba paczke rozgniewanych upiorów!</nodes>
     <nodes xsi:type="NodeAdventure" ID="20" positionX="1802.31433" positionY="-831.7577" width="350" height="966">
       <logic>
         <FilterBlock>
@@ -542,7 +542,7 @@ Widma pojawiaja sie i schodza na ciebie!
       <outputs name="Chwyc co mozesz i uciekaj. " ownerID="20" targetID="22" group="G1" fromX="2128" fromY="-1483" />
       <outputs name="Chwyc co mozesz i uciekaj. " ownerID="20" targetID="23" group="G1" fromX="2128" fromY="-1563" />Rozbijasz skrzynie i szybko lapiesz lup. 
 
-Ale widzisz przed soba paczke rozgniewanych upiorow.</nodes>
+Ale widzisz przed soba paczke rozgniewanych upiorów.</nodes>
     <nodes xsi:type="NodeAdventure" ID="21" positionX="1931.19434" positionY="742.7187" width="350" height="966">
       <logic>
         <FilterBlock>
@@ -554,7 +554,7 @@ Ale widzisz przed soba paczke rozgniewanych upiorow.</nodes>
       <outputs name="Walcz!" ownerID="21" targetID="25" fromX="2256" fromY="251" />
       <outputs name="Zaatakuj ich sila woli." ownerID="21" targetID="24" fromX="2256" fromY="171" />
       <outputs name="Chwyc co mozesz i uciekaj. " ownerID="21" targetID="22" group="G1" fromX="2256" fromY="91" />
-      <outputs name="Chwyc co mozesz i uciekaj. " ownerID="21" targetID="23" group="G1" fromX="2256" fromY="10" />Ostroznie odrywasz bok skrzyni, nie powodujac dalszych obrazen, i lapiesz niektore rzeczy od srodka. 
+      <outputs name="Chwyc co mozesz i uciekaj. " ownerID="21" targetID="23" group="G1" fromX="2256" fromY="10" />Ostroznie odrywasz bok skrzyni, nie powodujac dalszych obrazen, i lapiesz niektóre rzeczy od srodka. 
 
 Syczenie staje sie jednak glosniejsze i widzisz przed soba upiory. 
 </nodes>
@@ -656,9 +656,9 @@ Syczenie staje sie jednak glosniejsze i widzisz przed soba upiory.
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Otworz skrzynie i wez co jest w srodku." ownerID="30" targetID="29" fromX="1222" fromY="-637" />Te runy maja sluzyc jako ochrona wszystkiego, co lezy w skrzyni. Wiaza runy, wiec otwarcie skrzyni uwolni straznikow - najprawdopodobniej upiory. 
+      <outputs name="Otwórz skrzynie i wez co jest w srodku." ownerID="30" targetID="29" fromX="1222" fromY="-637" />Te runy maja sluzyc jako ochrona wszystkiego, co lezy w skrzyni. Wiaza runy, wiec otwarcie skrzyni uwolni strazników - najprawdopodobniej upiory. 
 
-Lancuchy dzialaja jak spust. Po zerwaniu zaczna proces uwalniania upiorow. 
+Lancuchy dzialaja jak spust. Po zerwaniu zaczna proces uwalniania upiorów. 
 
 Na szczescie wiesz, jak bezpiecznie zlamac ochrone.</nodes>
     <nodes xsi:type="NodeChallenge" ID="31" positionX="907.36145" positionY="-2211.28223" width="500" height="726" challengeType="TypeMental" versusGroup="GROUP-WRAITH_5P_4M_5S" challengeScale="101" challengedList="ppl">
@@ -692,7 +692,7 @@ Na szczescie wiesz, jak bezpiecznie zlamac ochrone.</nodes>
       </logic>
       <outputs name="Zbierz to, co jest w srodku i wyjdz." ownerID="32" targetID="44" fromX="1870" fromY="-2544" />„Tak, dziekuje! Jestesmy teraz wolni ... a moze mozemy cie sledzic?'
 
-Rozgrywa sie miedzy upiorami. Wiekszosc znika, ale niektorzy moga zostac z toba. 
+Rozgrywa sie miedzy upiorami. Wiekszosc znika, ale niektórzy moga zostac z toba. 
 
 Mozesz teraz bezpiecznie lupic skrzynie.</nodes>
     <nodes xsi:type="NodeChallenge" ID="33" positionX="299" positionY="-2490" width="500" height="726" challengeType="TypeMental" versusGroup="GROUP-WRAITH_5P_4M_5S" challengeScale="130" challengedList="ppl">
@@ -711,7 +711,7 @@ Mozesz teraz bezpiecznie lupic skrzynie.</nodes>
       <outputs ownerID="34" targetID="35" fromX="1312" fromY="-3374" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="35" positionX="1386.84534" positionY="-2963.691" width="350" height="681">
-      <outputs name="Wyjdz." ownerID="35" targetID="15" fromX="1712" fromY="-3410" />Widma sluchaja. Niektorzy wygladaja na zainteresowanych, ale inni sa juz za daleko, zli i oszolomieni wiekami niewoli. Obie grupy walcza miedzy soba. Czujesz, ze twoj wlasny duch zostal zaatakowany i jestes zmuszony do ucieczki.</nodes>
+      <outputs name="Wyjdz." ownerID="35" targetID="15" fromX="1712" fromY="-3410" />Widma sluchaja. Niektórzy wygladaja na zainteresowanych, ale inni sa juz za daleko, zli i oszolomieni wiekami niewoli. Obie grupy walcza miedzy soba. Czujesz, ze twój wlasny duch zostal zaatakowany i jestes zmuszony do ucieczki.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="36" positionX="2020.09729" positionY="-2664.67969" width="350" height="408" allPlayersXP="2" allPlayersRP="1" linkedEventUniqueID="0">
       <logic>
         <ModifierBlock>
@@ -801,12 +801,12 @@ Mozesz teraz bezpiecznie lupic skrzynie.</nodes>
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Pomimo magicznej ochrony, skrzynia jest bardzo stara i ma wiele slabych punktow. Sprobuj otworzyc skrzynie bez zrywania lancuchow." ownerID="45" targetID="7" group="G1" fromX="252" fromY="-1734" />
-      <outputs name="Pomimo magicznej ochrony, skrzynia jest bardzo stara i ma wiele slabych punktow. Sprobuj otworzyc skrzynie bez zrywania lancuchow." ownerID="45" targetID="8" group="G1" fromX="252" fromY="-1814" />
-      <outputs name="Teraz, kiedy juz wiesz, co to jest, sprobuj wykonac rytual oczyszczania, aby uwolnic upiory, dzieki czemu otwarcie klatki jest bezpieczne." ownerID="45" targetID="14" fromX="252" fromY="-1894" />
-      <outputs name="[Upior] Usun lancuchy i przemow do swego rodzaju, aby je uspokoic. Przekonaj ich, ze nie musza tu podazac za zadna sila. Zamiast tego moga byc darmowe!" ownerID="45" targetID="31" fromX="252" fromY="-1974" />Te runy maja sluzyc jako ochrona wszystkiego, co lezy w skrzyni. Wiaza runy, wiec otwarcie skrzyni uwolni straznikow - najprawdopodobniej upiory. 
+      <outputs name="Pomimo magicznej ochrony, skrzynia jest bardzo stara i ma wiele slabych punktów. Spróbuj otworzyc skrzynie bez zrywania lancuchów." ownerID="45" targetID="7" group="G1" fromX="252" fromY="-1734" />
+      <outputs name="Pomimo magicznej ochrony, skrzynia jest bardzo stara i ma wiele slabych punktów. Spróbuj otworzyc skrzynie bez zrywania lancuchów." ownerID="45" targetID="8" group="G1" fromX="252" fromY="-1814" />
+      <outputs name="Teraz, kiedy juz wiesz, co to jest, spróbuj wykonac rytual oczyszczania, aby uwolnic upiory, dzieki czemu otwarcie klatki jest bezpieczne." ownerID="45" targetID="14" fromX="252" fromY="-1894" />
+      <outputs name="[Upiór] Usun lancuchy i przemów do swego rodzaju, aby je uspokoic. Przekonaj ich, ze nie musza tu podazac za zadna sila. Zamiast tego moga byc darmowe!" ownerID="45" targetID="31" fromX="252" fromY="-1974" />Te runy maja sluzyc jako ochrona wszystkiego, co lezy w skrzyni. Wiaza runy, wiec otwarcie skrzyni uwolni strazników - najprawdopodobniej upiory. 
 
-Lancuchy dzialaja jak spust. Po zerwaniu zaczna proces uwalniania upiorow.</nodes>
+Lancuchy dzialaja jak spust. Po zerwaniu zaczna proces uwalniania upiorów.</nodes>
     <nodes xsi:type="NodeAdventure" ID="46" positionX="-584" positionY="-1157" width="350" height="966">
       <logic>
         <FilterBlock>
@@ -821,12 +821,12 @@ Lancuchy dzialaja jak spust. Po zerwaniu zaczna proces uwalniania upiorow.</node
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Pomimo magicznej ochrony, skrzynia jest bardzo stara i ma wiele slabych punktow. Sprobuj otworzyc skrzynie bez zrywania lancuchow." ownerID="46" targetID="7" group="G1" fromX="-258" fromY="-1648" />
-      <outputs name="Pomimo magicznej ochrony, skrzynia jest bardzo stara i ma wiele slabych punktow. Sprobuj otworzyc skrzynie bez zrywania lancuchow." ownerID="46" targetID="8" group="G1" fromX="-258" fromY="-1728" />
-      <outputs name="Teraz, kiedy juz wiesz, co to jest, sprobuj wykonac rytual oczyszczania, aby uwolnic upiory, dzieki czemu otwarcie klatki jest bezpieczne." ownerID="46" targetID="14" fromX="-258" fromY="-1808" />
-      <outputs name="[Upior] Usun lancuchy i przemow do swego rodzaju, aby je uspokoic. Przekonaj ich, ze nie musza tu podazac za zadna sila. Zamiast tego moga byc darmowe!" ownerID="46" targetID="31" fromX="-258" fromY="-1888" />Te runy maja sluzyc jako ochrona wszystkiego, co lezy w skrzyni. Wiaza runy, wiec otwarcie skrzyni uwolni straznikow - najprawdopodobniej upiory. 
+      <outputs name="Pomimo magicznej ochrony, skrzynia jest bardzo stara i ma wiele slabych punktów. Spróbuj otworzyc skrzynie bez zrywania lancuchów." ownerID="46" targetID="7" group="G1" fromX="-258" fromY="-1648" />
+      <outputs name="Pomimo magicznej ochrony, skrzynia jest bardzo stara i ma wiele slabych punktów. Spróbuj otworzyc skrzynie bez zrywania lancuchów." ownerID="46" targetID="8" group="G1" fromX="-258" fromY="-1728" />
+      <outputs name="Teraz, kiedy juz wiesz, co to jest, spróbuj wykonac rytual oczyszczania, aby uwolnic upiory, dzieki czemu otwarcie klatki jest bezpieczne." ownerID="46" targetID="14" fromX="-258" fromY="-1808" />
+      <outputs name="[Upiór] Usun lancuchy i przemów do swego rodzaju, aby je uspokoic. Przekonaj ich, ze nie musza tu podazac za zadna sila. Zamiast tego moga byc darmowe!" ownerID="46" targetID="31" fromX="-258" fromY="-1888" />Te runy maja sluzyc jako ochrona wszystkiego, co lezy w skrzyni. Wiaza runy, wiec otwarcie skrzyni uwolni strazników - najprawdopodobniej upiory. 
 
-Lancuchy dzialaja jak spust. Po zerwaniu zaczna proces uwalniania upiorow.</nodes>
+Lancuchy dzialaja jak spust. Po zerwaniu zaczna proces uwalniania upiorów.</nodes>
   </Adventure>
   <Adventure name="Night attack" uniqueID="8" typeGeneric="false" typePerGroupGeneric="false" typeInterrupt="false" typeExpedition="true" typeVillage="false" difficulty="4" nodeIdMax="48" joinIsForced="false" joinType="AllAlly" joinRange="MovementArea">
     <nodes xsi:type="NodeStarting" ID="1" positionX="10" positionY="-10" width="347" height="661" image="Event195">
@@ -855,11 +855,11 @@ Lancuchy dzialaja jak spust. Po zerwaniu zaczna proces uwalniania upiorow.</node
       </logic>
       <outputs name="Atak!" ownerID="2" targetID="6" fromX="806" fromY="-476" />
       <outputs name="[Scavenger] Przyjrzyj sie blizej." ownerID="2" targetID="25" group="G1" fromX="806" fromY="-556" />
-      <outputs name="[Harmonia i intelekt] Wydaja sie chory, a jednak wciaz ludzcy. Byc moze istnieje sposob, aby im pomoc, a nie zabic. Sprobuj zlapac je zywcem." ownerID="2" targetID="27" group="G1" fromX="806" fromY="-636" />
-      <outputs name="Podejmij ryzyko i znajdz inny sposob radzenia sobie z nimi." ownerID="2" targetID="42" fromX="806" fromY="-716" />
+      <outputs name="[Harmonia i intelekt] Wydaja sie chory, a jednak wciaz ludzcy. Byc moze istnieje sposób, aby im pomóc, a nie zabic. Spróbuj zlapac je zywcem." ownerID="2" targetID="27" group="G1" fromX="806" fromY="-636" />
+      <outputs name="Podejmij ryzyko i znajdz inny sposób radzenia sobie z nimi." ownerID="2" targetID="42" fromX="806" fromY="-716" />
       <outputs name="Lapcie cokolwiek mozecie w pospiechu i uciekajcie." ownerID="2" targetID="3" group="G2" fromX="806" fromY="-796" />
       <outputs name="Lapcie cokolwiek mozecie w pospiechu i uciekajcie." ownerID="2" targetID="4" group="G2" fromX="806" fromY="-877" />
-      <outputs name="Lapcie cokolwiek mozecie w pospiechu i uciekajcie." ownerID="2" targetID="41" group="G2" fromX="806" fromY="-957" />Budzi cie niegrzeczny tlum ludu, powoli schodzacy na twoj kemping. Na poczatku wygladaja jak zwykli bandyci, ale widzisz, ze ich oczy sa przekrwione, twarze wykrzywione w gniewnym grymasie, a ich usta pienia sie. </nodes>
+      <outputs name="Lapcie cokolwiek mozecie w pospiechu i uciekajcie." ownerID="2" targetID="41" group="G2" fromX="806" fromY="-957" />Budzi cie niegrzeczny tlum ludu, powoli schodzacy na twój kemping. Na poczatku wygladaja jak zwykli bandyci, ale widzisz, ze ich oczy sa przekrwione, twarze wykrzywione w gniewnym grymasie, a ich usta pienia sie. </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="3" positionX="1596" positionY="-343" width="350" height="530" allPlayersXP="2" allPlayersRP="1" linkedEventUniqueID="0">
       <logic>
         <FilterBlock>
@@ -921,7 +921,7 @@ Lancuchy dzialaja jak spust. Po zerwaniu zaczna proces uwalniania upiorow.</node
     <nodes xsi:type="NodeAdventure" ID="7" positionX="2218.208" positionY="-652.589661" width="350" height="885">
       <outputs name="Zdobadz to, co mozesz z nich bezpiecznie i odejdz." ownerID="7" targetID="10" fromX="2543" fromY="-1143" />
       <outputs name="Zbadaj ciala." ownerID="7" targetID="11" fromX="2543" fromY="-1223" />
-      <outputs name="Pochowaj ciala i wyjdz." ownerID="7" targetID="46" fromX="2543" fromY="-1304" />Zabijasz wszystkich padlinozercow. Ich ciala pokryte sa czyrakami i saczy sie dziwnym zielonym odciekiem. 
+      <outputs name="Pochowaj ciala i wyjdz." ownerID="7" targetID="46" fromX="2543" fromY="-1304" />Zabijasz wszystkich padlinozerców. Ich ciala pokryte sa czyrakami i saczy sie dziwnym zielonym odciekiem. 
 </nodes>
     <nodes xsi:type="NodeAdventure" ID="8" positionX="2426" positionY="106" width="350" height="725">
       <logic>
@@ -943,7 +943,7 @@ Lancuchy dzialaja jak spust. Po zerwaniu zaczna proces uwalniania upiorow.</node
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="8" targetID="24" fromX="2752" fromY="-384" />Smiertelnicy cie przytlaczaja i zmuszaja do ucieczki, porzucajac niektore swoje dobra. 
+      <outputs name="Wyjdz." ownerID="8" targetID="24" fromX="2752" fromY="-384" />Smiertelnicy cie przytlaczaja i zmuszaja do ucieczki, porzucajac niektóre swoje dobra. 
 
 Potem tez jestes chory. Musieli cie czyms zarazic.</nodes>
     <nodes xsi:type="NodeAdventure" ID="9" positionX="1845.54663" positionY="1281.04663" width="350" height="805">
@@ -1054,7 +1054,7 @@ Kilka ich zwierzat domowych moze chciec przylaczyc sie do ciebie, ale moga zosta
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Sprobuj je zlapac." ownerID="25" targetID="28" fromX="1211" fromY="-839" />
+      <outputs name="Spróbuj je zlapac." ownerID="25" targetID="28" fromX="1211" fromY="-839" />
       <outputs name="Zwab ich w pulapke." ownerID="25" targetID="40" fromX="1211" fromY="-920" />Sa twoimi krewnymi, ale daleko od mrocznej choroby, pozostalosci epoki ciemnosci. Jesli udaloby ci sie ich zlapac, byc moze mogliby zostac wyleczeni, tak jak przez podazanie za bogami. 
 
 Ale uwaga - ich szalenstwo jest wiecej niz mentalne, poniewaz rozprzestrzeniaja tez toksyny i choroby.</nodes>
@@ -1077,8 +1077,8 @@ Ale uwaga - ich szalenstwo jest wiecej niz mentalne, poniewaz rozprzestrzeniaja 
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Sprobuj zlapac je sila." ownerID="27" targetID="28" fromX="288" fromY="-1274" />
-      <outputs name="Zwab ich w pulapke." ownerID="27" targetID="40" fromX="288" fromY="-1354" />Wydaja sie chory, a jednak wciaz ludzcy. Byc moze istnieje sposob, aby im pomoc, a nie zabic.</nodes>
+      <outputs name="Spróbuj zlapac je sila." ownerID="27" targetID="28" fromX="288" fromY="-1274" />
+      <outputs name="Zwab ich w pulapke." ownerID="27" targetID="40" fromX="288" fromY="-1354" />Wydaja sie chory, a jednak wciaz ludzcy. Byc moze istnieje sposób, aby im pomóc, a nie zabic.</nodes>
     <nodes xsi:type="NodeChallenge" ID="28" positionX="-1671.46252" positionY="-28.90038" width="500" height="726" challengeType="TypePhysical" versusConcept="true" versusGroup="GROUP-CON_P_3P_0M_0S" challengeScale="101" challengedList="ppl">
       <outputs name="Win" ownerID="28" targetID="36" fromX="-1230" fromY="-524" />
       <outputs name="Lose" ownerID="28" targetID="37" fromX="-1230" fromY="-604" />
@@ -1098,11 +1098,11 @@ Ale uwaga - ich szalenstwo jest wiecej niz mentalne, poniewaz rozprzestrzeniaja 
           </LogicFilter>
         </FilterBlock>
       </logic>
-      <outputs name="[Medyk] Uzyj lekarstwa, aby im pomoc." ownerID="29" targetID="30" group="G1" fromX="-822" fromY="-1036" />
-      <outputs name="[Magiczny uzytkownik] Ta choroba cuchnie ciemnoscia. Przygotuj rytual, aby sprobowac oczyscic umysly." ownerID="29" targetID="48" group="G1" fromX="-822" fromY="-1116" />
-      <outputs name="[Swiatlo] Twoja domena moze zlagodzic ich bol." ownerID="29" targetID="31" fromX="-822" fromY="-1196" />
-      <outputs name="[Elf] Byles swiadkiem tej ciemnej skazy takze na swoim rodzaju. Uzyj ducha i polaczenia ze swiatlem, aby im pomoc." ownerID="29" targetID="32" fromX="-822" fromY="-1276" />
-      <outputs name="Staraj sie pomoc. Uzyj polaczenia z bogami, aby sprobowac oswietlic ich ciemna sciezke." ownerID="29" targetID="33" fromX="-822" fromY="-1357" />Lapiesz padlinozercow bezpiecznie i rzeczywiscie sa rozgoraczkowani i chorzy. 
+      <outputs name="[Medyk] Uzyj lekarstwa, aby im pomóc." ownerID="29" targetID="30" group="G1" fromX="-822" fromY="-1036" />
+      <outputs name="[Magiczny uzytkownik] Ta choroba cuchnie ciemnoscia. Przygotuj rytual, aby spróbowac oczyscic umysly." ownerID="29" targetID="48" group="G1" fromX="-822" fromY="-1116" />
+      <outputs name="[Swiatlo] Twoja domena moze zlagodzic ich ból." ownerID="29" targetID="31" fromX="-822" fromY="-1196" />
+      <outputs name="[Elf] Byles swiadkiem tej ciemnej skazy takze na swoim rodzaju. Uzyj ducha i polaczenia ze swiatlem, aby im pomóc." ownerID="29" targetID="32" fromX="-822" fromY="-1276" />
+      <outputs name="Staraj sie pomóc. Uzyj polaczenia z bogami, aby spróbowac oswietlic ich ciemna sciezke." ownerID="29" targetID="33" fromX="-822" fromY="-1357" />Lapiesz padlinozerców bezpiecznie i rzeczywiscie sa rozgoraczkowani i chorzy. 
 </nodes>
     <nodes xsi:type="NodeAdventure" ID="30" positionX="-1097" positionY="204" width="350" height="725">
       <logic>
@@ -1135,11 +1135,11 @@ Ale uwaga - ich szalenstwo jest wiecej niz mentalne, poniewaz rozprzestrzeniaja 
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="30" targetID="47" fromX="-771" fromY="-287" />Nie wszystkie umysly i ciala sa wystarczajaco silne, aby przetrwac te skazenie, a nawet z twoja pomoca niektore ofiary przemijaja. 
+      <outputs name="Wyjdz." ownerID="30" targetID="47" fromX="-771" fromY="-287" />Nie wszystkie umysly i ciala sa wystarczajaco silne, aby przetrwac te skazenie, a nawet z twoja pomoca niektóre ofiary przemijaja. 
 
 Ale inni wykazuja oznaki ozywienia, a przynajmniej poprawy. Odzyskuja pozory umyslu i sa wdzieczni za pomoc. 
 
-Byc moze niektorzy zdecyduja sie zostac z toba. Nawet jesli tego nie zrobia, zostawia to, co moga, dzieki.</nodes>
+Byc moze niektórzy zdecyduja sie zostac z toba. Nawet jesli tego nie zrobia, zostawia to, co moga, dzieki.</nodes>
     <nodes xsi:type="NodeAdventure" ID="31" positionX="-624.833557" positionY="-1042.8363" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -1173,9 +1173,9 @@ Byc moze niektorzy zdecyduja sie zostac z toba. Nawet jesli tego nie zrobia, zos
       </logic>
       <outputs name="Wyjdz." ownerID="31" targetID="47" fromX="-299" fromY="-1533" />Swiatlo przeplywa przez chore ciala i zniszczone dusze, a ty czujesz, ze powoli sie goja. 
 
-Dla niektorych podroz moze jeszcze okazac sie zbyt duza. Ale dales im szanse. Smieciarze odzyskuja pozory umyslu i sa wdzieczni za pomoc. 
+Dla niektórych podróz moze jeszcze okazac sie zbyt duza. Ale dales im szanse. Smieciarze odzyskuja pozory umyslu i sa wdzieczni za pomoc. 
 
-Byc moze niektorzy zdecyduja sie zostac z toba. Nawet jesli tego nie zrobia, zostawia to, co moga, dzieki.</nodes>
+Byc moze niektórzy zdecyduja sie zostac z toba. Nawet jesli tego nie zrobia, zostawia to, co moga, dzieki.</nodes>
     <nodes xsi:type="NodeDealDamage" ID="32" positionX="-1496" positionY="-1798" width="460" height="459" challengeTypeDamage="TypeSpirit" minDamage="30" maxDamage="40" useCountInPercent="true" targetGroup="elf">
       <logic>
         <FilterBlock>
@@ -1218,11 +1218,11 @@ Byc moze niektorzy zdecyduja sie zostac z toba. Nawet jesli tego nie zrobia, zos
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="34" targetID="47" fromX="279" fromY="-2259" />Niektore choroby rozprzestrzeniaja sie na ciebie, ale nic nie zagraza zyciu. 
+      <outputs name="Wyjdz." ownerID="34" targetID="47" fromX="279" fromY="-2259" />Niektóre choroby rozprzestrzeniaja sie na ciebie, ale nic nie zagraza zyciu. 
 
-Robisz co w twojej mocy, aby pomoc, ale wiekszosc ofiar jest za daleko i umiera. Nieliczni, ktorzy przezyja, wykazuja oznaki ozywienia lub przynajmniej poprawy. Odzyskuja pozory umyslu i sa wdzieczni za pomoc. 
+Robisz co w twojej mocy, aby pomóc, ale wiekszosc ofiar jest za daleko i umiera. Nieliczni, którzy przezyja, wykazuja oznaki ozywienia lub przynajmniej poprawy. Odzyskuja pozory umyslu i sa wdzieczni za pomoc. 
 
-Byc moze niektorzy zdecyduja sie zostac z toba. Nawet jesli tego nie zrobia, zostawia to, co moga, dzieki.</nodes>
+Byc moze niektórzy zdecyduja sie zostac z toba. Nawet jesli tego nie zrobia, zostawia to, co moga, dzieki.</nodes>
     <nodes xsi:type="NodeAdventure" ID="35" positionX="378.0074" positionY="-1793.95129" width="350" height="725">
       <logic>
         <ModifierBlock>
@@ -1237,7 +1237,7 @@ Byc moze niektorzy zdecyduja sie zostac z toba. Nawet jesli tego nie zrobia, zos
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="35" targetID="47" fromX="703" fromY="-2285" />Niektore choroby rozprzestrzeniaja sie na ciebie, ale nic nie zagraza zyciu. Robisz co w twojej mocy, aby pomoc, ale ofiary sa za daleko i umieraja. Wiesz, ze uczyniles ich smierc bardziej spokojna, a do tego czujesz ulge.  
+      <outputs name="Wyjdz." ownerID="35" targetID="47" fromX="703" fromY="-2285" />Niektóre choroby rozprzestrzeniaja sie na ciebie, ale nic nie zagraza zyciu. Robisz co w twojej mocy, aby pomóc, ale ofiary sa za daleko i umieraja. Wiesz, ze uczyniles ich smierc bardziej spokojna, a do tego czujesz ulge.  
 </nodes>
     <nodes xsi:type="NodeProduceDrop" ID="36" positionX="-1699" positionY="-930" width="460" height="429" sourceGroup="GROUP-SCAVENGER_2P_2M_2S" cargoPercentage="120">
       <outputs ownerID="36" targetID="29" fromX="-1268" fromY="-1288" />
@@ -1256,7 +1256,7 @@ Byc moze niektorzy zdecyduja sie zostac z toba. Nawet jesli tego nie zrobia, zos
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="38" targetID="39" fromX="-2474" fromY="-1796" />Niektore choroby rozprzestrzeniaja sie na ciebie i nie udaje ci sie odpowiednio zlapac padlinozercow. Wielu ucieka, a ci, ktorych zlapiesz, sa za daleko, by ci pomoc, i umieraja. 
+      <outputs name="Wyjdz." ownerID="38" targetID="39" fromX="-2474" fromY="-1796" />Niektóre choroby rozprzestrzeniaja sie na ciebie i nie udaje ci sie odpowiednio zlapac padlinozerców. Wielu ucieka, a ci, których zlapiesz, sa za daleko, by ci pomóc, i umieraja. 
 </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="39" positionX="-2422.56079" positionY="-1708.74072" width="350" height="530" allPlayersXP="1" allPlayersRP="1" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeChallenge" ID="40" positionX="-2282" positionY="-388" width="500" height="726" challengeType="TypeMental" versusConcept="true" versusGroup="GROUP-CON_M_0P_3M_0S" challengeScale="101" challengedList="ppl">
@@ -1293,8 +1293,8 @@ Byc moze niektorzy zdecyduja sie zostac z toba. Nawet jesli tego nie zrobia, zos
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Sprobuj zlapac je sila." ownerID="42" targetID="28" fromX="1197" fromY="-1647" />
-      <outputs name="Zwab ich w pulapke." ownerID="42" targetID="40" fromX="1197" fromY="-1728" />Wydaja sie chory, a jednak wciaz ludzcy. Byc moze istnieje sposob, aby im pomoc, a nie zabic.</nodes>
+      <outputs name="Spróbuj zlapac je sila." ownerID="42" targetID="28" fromX="1197" fromY="-1647" />
+      <outputs name="Zwab ich w pulapke." ownerID="42" targetID="40" fromX="1197" fromY="-1728" />Wydaja sie chory, a jednak wciaz ludzcy. Byc moze istnieje sposób, aby im pomóc, a nie zabic.</nodes>
     <nodes xsi:type="NodeDealDamage" ID="43" positionX="2403.51221" positionY="1280.4635" width="460" height="539" challengeTypeDamage="TypeMental" minDamage="0" maxDamage="0" useCountInPercent="false">
       <outputs ownerID="43" targetID="14" group="G1" fromX="2832" fromY="892" />
       <outputs ownerID="43" targetID="45" group="G1" fromX="2832" fromY="811" />
@@ -1348,11 +1348,11 @@ Byc moze niektorzy zdecyduja sie zostac z toba. Nawet jesli tego nie zrobia, zos
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="48" targetID="47" fromX="-241" fromY="-535" />Nie wszystkie umysly i ciala sa wystarczajaco silne, aby przetrwac te skazenie, a nawet z twoja pomoca niektore ofiary przemijaja. 
+      <outputs name="Wyjdz." ownerID="48" targetID="47" fromX="-241" fromY="-535" />Nie wszystkie umysly i ciala sa wystarczajaco silne, aby przetrwac te skazenie, a nawet z twoja pomoca niektóre ofiary przemijaja. 
 
 Ale inni wykazuja oznaki ozywienia, a przynajmniej poprawy. Odzyskuja pozory umyslu i sa wdzieczni za pomoc. 
 
-Byc moze niektorzy zdecyduja sie zostac z toba. Nawet jesli tego nie zrobia, zostawia to, co moga, dzieki.</nodes>
+Byc moze niektórzy zdecyduja sie zostac z toba. Nawet jesli tego nie zrobia, zostawia to, co moga, dzieki.</nodes>
   </Adventure>
   <Adventure name="Werwolf attack" uniqueID="9" typeGeneric="false" typePerGroupGeneric="false" typeInterrupt="false" typeExpedition="true" typeVillage="false" difficulty="7" nodeIdMax="61" joinIsForced="false" joinType="AllAlly" joinRange="MovementArea">
     <nodes xsi:type="NodeStarting" ID="1" positionX="-386" positionY="423" width="347" height="661" image="Event105">
@@ -1386,11 +1386,11 @@ Byc moze niektorzy zdecyduja sie zostac z toba. Nawet jesli tego nie zrobia, zos
         </FilterBlock>
       </logic>
       <outputs name="[Nocny demon] Wola w noc." ownerID="2" targetID="33" group="G1" fromX="376" fromY="-136" />
-      <outputs name="[Horz] Zadaj posluszenstwa od tych nocnych lowcow w imie samego wladcy ksiezyca." ownerID="2" targetID="4" group="G1" fromX="376" fromY="-216" />
+      <outputs name="[Horz] Zadaj posluszenstwa od tych nocnych lowców w imie samego wladcy ksiezyca." ownerID="2" targetID="4" group="G1" fromX="376" fromY="-216" />
       <outputs name="[Hunter] Posluchaj wycia; wydaje sie, ze dzieje sie tu wiecej niz atak." ownerID="2" targetID="35" group="G1" fromX="376" fromY="-296" />
       <outputs name="[Madrosc] Masz troche srebra. Uzyj go, aby utworzyc krag ochronny." ownerID="2" targetID="34" group="G1" fromX="376" fromY="-376" />
-      <outputs name="Zbierz swoje rzeczy szybko i sprobuj uciekac." ownerID="2" targetID="54" fromX="376" fromY="-456" />
-      <outputs name="Stoj mocno i walcz!" ownerID="2" targetID="3" fromX="376" fromY="-537" />Kiedy rozbijasz oboz w nocy, slyszysz wycie wilkow wokol ciebie. Niektore z nich sa niepokojaco gardlowe, prawie ludzkie.</nodes>
+      <outputs name="Zbierz swoje rzeczy szybko i spróbuj uciekac." ownerID="2" targetID="54" fromX="376" fromY="-456" />
+      <outputs name="Stój mocno i walcz!" ownerID="2" targetID="3" fromX="376" fromY="-537" />Kiedy rozbijasz obóz w nocy, slyszysz wycie wilków wokól ciebie. Niektóre z nich sa niepokojaco gardlowe, prawie ludzkie.</nodes>
     <nodes xsi:type="NodeChallenge" ID="3" positionX="-76" positionY="1411" width="500" height="807" challengeType="TypePhysical" versusGroup="GROUP-WEREWOLFS_7P_4M_4S" challengeScale="101" challengedList="ppl">
       <outputs name="Win" ownerID="3" targetID="7" fromX="365" fromY="915" />
       <outputs name="Lose" ownerID="3" targetID="8" group="G1" fromX="365" fromY="835" />
@@ -1419,8 +1419,8 @@ Byc moze niektorzy zdecyduja sie zostac z toba. Nawet jesli tego nie zrobia, zos
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyciagnij sztylet i sprobuj mu pomoc." ownerID="4" targetID="42" fromX="1046" fromY="-1424" />
-      <outputs name="Pozwol mu umrzec i zlup cialo. " ownerID="4" targetID="53" fromX="1046" fromY="-1505" />Paczka pochyla sie w stosunku do nocnego wladcy. Jeden z mniejszych wilkow rozwaza pozostanie z toba. 
+      <outputs name="Wyciagnij sztylet i spróbuj mu pomóc." ownerID="4" targetID="42" fromX="1046" fromY="-1424" />
+      <outputs name="Pozwól mu umrzec i zlup cialo. " ownerID="4" targetID="53" fromX="1046" fromY="-1505" />Paczka pochyla sie w stosunku do nocnego wladcy. Jeden z mniejszych wilków rozwaza pozostanie z toba. 
 
 Pojawia sie samotny wilkolak. Trzyma go za bok i widzisz w nim srebrny sztylet. Upada przed toba. 
 </nodes>
@@ -1490,7 +1490,7 @@ Pojawia sie samotny wilkolak. Trzyma go za bok i widzisz w nim srebrny sztylet. 
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Pomoz wilkolakowi." ownerID="19" targetID="42" fromX="2257" fromY="-2132" />
+      <outputs name="Pomóz wilkolakowi." ownerID="19" targetID="42" fromX="2257" fromY="-2132" />
       <outputs name="Zostaw to, by umarl." ownerID="19" targetID="50" fromX="2257" fromY="-2212" />Pakiet wycofuje sie, pozostawiajac ci pomoc rannemu wilkolakowi. 
 
 Ma srebrne ostrze osadzone na boku, a rana ropieje z dziwnym skazeniem. </nodes>
@@ -1508,7 +1508,7 @@ Ma srebrne ostrze osadzone na boku, a rana ropieje z dziwnym skazeniem. </nodes>
         </ModifierBlock>
       </logic>
       <outputs name="Biegnij dalej." ownerID="24" targetID="26" group="G1" fromX="4531" fromY="-410" />
-      <outputs name="Biegnij dalej." ownerID="24" targetID="28" group="G1" fromX="4531" fromY="-491" />Odwazna dusza laduje stado wilkolakow. Stworzenia szanuja honor wojownika i nie scigaja reszty z was.</nodes>
+      <outputs name="Biegnij dalej." ownerID="24" targetID="28" group="G1" fromX="4531" fromY="-491" />Odwazna dusza laduje stado wilkolaków. Stworzenia szanuja honor wojownika i nie scigaja reszty z was.</nodes>
     <nodes xsi:type="NodeAdventure" ID="25" positionX="3830.30566" positionY="-764.9065" width="350" height="966" image="Event191">
       <logic>
         <FilterBlock>
@@ -1555,7 +1555,7 @@ Ma srebrne ostrze osadzone na boku, a rana ropieje z dziwnym skazeniem. </nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Swietnie, witajcie ich." ownerID="28" targetID="27" fromX="5184" fromY="-940" />Twoj dzielny przyjaciel wraca do ciebie, zmieniony, ale zawsze lojalny!</nodes>
+      <outputs name="Swietnie, witajcie ich." ownerID="28" targetID="27" fromX="5184" fromY="-940" />Twój dzielny przyjaciel wraca do ciebie, zmieniony, ale zawsze lojalny!</nodes>
     <nodes xsi:type="NodeAdventure" ID="29" positionX="4410.783" positionY="-861.3657" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -1597,7 +1597,7 @@ Biegasz, ale nie bez bycia zle poturbowanym.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Swietnie, witajcie ich." ownerID="32" targetID="31" fromX="4598" fromY="-2181" />Uciekasz, ale pozniej wiele ksiezycow, wilk - jedno z dzieci - wraca do swojego domu i pomimo twojego porzucenia, chce zostac z toba.</nodes>
+      <outputs name="Swietnie, witajcie ich." ownerID="32" targetID="31" fromX="4598" fromY="-2181" />Uciekasz, ale pózniej wiele ksiezyców, wilk - jedno z dzieci - wraca do swojego domu i pomimo twojego porzucenia, chce zostac z toba.</nodes>
     <nodes xsi:type="NodeAdventure" ID="33" positionX="504" positionY="433" width="350" height="805">
       <logic>
         <FilterBlock>
@@ -1606,8 +1606,8 @@ Biegasz, ale nie bez bycia zle poturbowanym.</nodes>
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Wyciagnij sztylet i sprobuj mu pomoc." ownerID="33" targetID="42" fromX="829" fromY="-58" />
-      <outputs name="Pozwol mu umrzec i zlup cialo. " ownerID="33" targetID="50" fromX="829" fromY="-138" />Widok wycie i samotny wilkolak. Trzyma go za bok i widzisz w nim srebrny sztylet. Upada przed toba.</nodes>
+      <outputs name="Wyciagnij sztylet i spróbuj mu pomóc." ownerID="33" targetID="42" fromX="829" fromY="-58" />
+      <outputs name="Pozwól mu umrzec i zlup cialo. " ownerID="33" targetID="50" fromX="829" fromY="-138" />Widok wycie i samotny wilkolak. Trzyma go za bok i widzisz w nim srebrny sztylet. Upada przed toba.</nodes>
     <nodes xsi:type="NodeAdventure" ID="34" positionX="275" positionY="-874" width="350" height="885">
       <logic>
         <FilterBlock>
@@ -1621,9 +1621,9 @@ Biegasz, ale nie bez bycia zle poturbowanym.</nodes>
       </logic>
       <outputs name="Atak!" ownerID="34" targetID="3" fromX="600" fromY="-1365" />
       <outputs name="Pozostan bezpieczny w srebrnym kole i poczekaj, az odejda." ownerID="34" targetID="36" fromX="600" fromY="-1445" />
-      <outputs name="[Zwierzece pokrewienstwo] Sprobuj pokazac, ze chcesz pomoc rannej bestii. " ownerID="34" targetID="6" fromX="600" fromY="-1525" />Slyszysz, jak kraza wokol ciebie wilki, ale nie atakuja. 
+      <outputs name="[Zwierzece pokrewienstwo] Spróbuj pokazac, ze chcesz pomóc rannej bestii. " ownerID="34" targetID="6" fromX="600" fromY="-1525" />Slyszysz, jak kraza wokól ciebie wilki, ale nie atakuja. 
 
-Pakiet jest wyraznie rozgniewany, ale takze zdesperowany. Jak zauwazysz, zauwazysz wsrod nich wilkolaka, rannego, byc moze umierajacego, ale wciaz nieufnego wobec twojej obecnosci.</nodes>
+Pakiet jest wyraznie rozgniewany, ale takze zdesperowany. Jak zauwazysz, zauwazysz wsród nich wilkolaka, rannego, byc moze umierajacego, ale wciaz nieufnego wobec twojej obecnosci.</nodes>
     <nodes xsi:type="NodeAdventure" ID="35" positionX="-361" positionY="-361" width="350" height="966">
       <logic>
         <FilterBlock>
@@ -1634,10 +1634,10 @@ Pakiet jest wyraznie rozgniewany, ale takze zdesperowany. Jak zauwazysz, zauwazy
       </logic>
       <outputs name="Atak!" ownerID="35" targetID="3" fromX="-35" fromY="-852" />
       <outputs name="[Madrosc] Masz troche srebra. Uzyj go, aby utworzyc krag ochronny." ownerID="35" targetID="34" fromX="-35" fromY="-932" />
-      <outputs name="[Zwierzece pokrewienstwo] Sprobuj pokazac, ze chcesz pomoc rannej bestii. " ownerID="35" targetID="6" group="G1" fromX="-35" fromY="-1012" />
-      <outputs name="To nie sa zwykle zwierzeta, ale nadal kieruja sie instynktem. Wilkolak jest ranny, a stado szuka pomocy. Sprobuj przekonac ich, ze nie masz nic zlego na mysli i sprobujesz im pomoc, wyrzucajac troche srebra - gest dobrej woli." ownerID="35" targetID="38" group="G1" fromX="-35" fromY="-1092" />Slyszysz, jak kraza wokol ciebie wilki, ale nie atakuja. 
+      <outputs name="[Zwierzece pokrewienstwo] Spróbuj pokazac, ze chcesz pomóc rannej bestii. " ownerID="35" targetID="6" group="G1" fromX="-35" fromY="-1012" />
+      <outputs name="To nie sa zwykle zwierzeta, ale nadal kieruja sie instynktem. Wilkolak jest ranny, a stado szuka pomocy. Spróbuj przekonac ich, ze nie masz nic zlego na mysli i spróbujesz im pomóc, wyrzucajac troche srebra - gest dobrej woli." ownerID="35" targetID="38" group="G1" fromX="-35" fromY="-1092" />Slyszysz, jak kraza wokól ciebie wilki, ale nie atakuja. 
 
-Pakiet jest wyraznie rozgniewany, ale takze zdesperowany. Jak zauwazysz, zauwazysz wsrod nich wilkolaka, rannego, byc moze umierajacego, ale wciaz nieufnego wobec twojej obecnosci.</nodes>
+Pakiet jest wyraznie rozgniewany, ale takze zdesperowany. Jak zauwazysz, zauwazysz wsród nich wilkolaka, rannego, byc moze umierajacego, ale wciaz nieufnego wobec twojej obecnosci.</nodes>
     <nodes xsi:type="NodeAdventure" ID="36" positionX="-158" positionY="-1419" width="350" height="725">
       <logic>
         <ModifierBlock>
@@ -1672,7 +1672,7 @@ Pakiet jest wyraznie rozgniewany, ale takze zdesperowany. Jak zauwazysz, zauwazy
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="40" targetID="41" fromX="1446" fromY="633" />Stado wilkolakow szanuje, ze poddajesz sie ich mocy, i zostawiaja cie bez dalszej krzywdy. </nodes>
+      <outputs name="Wyjdz." ownerID="40" targetID="41" fromX="1446" fromY="633" />Stado wilkolaków szanuje, ze poddajesz sie ich mocy, i zostawiaja cie bez dalszej krzywdy. </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="41" positionX="1531" positionY="1075" width="350" height="530" allPlayersXP="1" allPlayersRP="1" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeDealDamage" ID="42" positionX="902" positionY="357" width="460" height="619" challengeTypeDamage="TypeSpirit" minDamage="20" maxDamage="30" useCountInPercent="true" targetGroup="ppl">
       <outputs ownerID="42" targetID="43" group="G1" fromX="1331" fromY="-31" />
@@ -1698,9 +1698,9 @@ Pakiet jest wyraznie rozgniewany, ale takze zdesperowany. Jak zauwazysz, zauwazy
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Dobrze. Zostaw go, by mogl sie wycofac." ownerID="43" targetID="44" fromX="1843" fromY="-32" />Sztylet okazuje sie czyms wiecej niz tylko srebrem. Byl wyraznie przeklety, gdy zamienia sie w popiol. Uderza cie resztka zaklecia, ale nie ma na ciebie klatwy. 
+      <outputs name="Dobrze. Zostaw go, by mógl sie wycofac." ownerID="43" targetID="44" fromX="1843" fromY="-32" />Sztylet okazuje sie czyms wiecej niz tylko srebrem. Byl wyraznie przeklety, gdy zamienia sie w popiól. Uderza cie resztka zaklecia, ale nie ma na ciebie klatwy. 
 
-Twoj uzdrowiciel ma sklonnosci do ran. Wilkolak powinien szybko odzyskac sily.</nodes>
+Twój uzdrowiciel ma sklonnosci do ran. Wilkolak powinien szybko odzyskac sily.</nodes>
     <nodes xsi:type="NodeAdventure" ID="44" positionX="2348" positionY="463" width="350" height="725">
       <logic>
         <ModifierBlock>
@@ -1724,7 +1724,7 @@ Twoj uzdrowiciel ma sklonnosci do ran. Wilkolak powinien szybko odzyskac sily.</
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Dobrze. Zostaw go, by mogl sie wycofac." ownerID="45" targetID="44" fromX="3116" fromY="-79" />Sztylet okazuje sie czyms wiecej niz tylko srebrem. Byl wyraznie przeklety, gdy zamienia sie w popiol. Uderzyly cie resztki zaklecia, a na ciebie tez klatwa. 
+      <outputs name="Dobrze. Zostaw go, by mógl sie wycofac." ownerID="45" targetID="44" fromX="3116" fromY="-79" />Sztylet okazuje sie czyms wiecej niz tylko srebrem. Byl wyraznie przeklety, gdy zamienia sie w popiól. Uderzyly cie resztki zaklecia, a na ciebie tez klatwa. 
 
 Robisz, co w twojej mocy, z ranami stworzenia. Wilkolak powinien odzyskac sily na czas.</nodes>
     <nodes xsi:type="NodeAdventure" ID="46" positionX="3285" positionY="424" width="350" height="725">
@@ -1740,7 +1740,7 @@ Robisz, co w twojej mocy, z ranami stworzenia. Wilkolak powinien odzyskac sily n
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Dobrze. Zostaw go, by mogl sie wycofac." ownerID="46" targetID="44" fromX="3610" fromY="-67" />Sztylet okazuje sie czyms wiecej niz tylko srebrem. Byl wyraznie przeklety, gdy zamienia sie w popiol. Uderza cie resztka zaklecia, ale nie ma na ciebie klatwy. 
+      <outputs name="Dobrze. Zostaw go, by mógl sie wycofac." ownerID="46" targetID="44" fromX="3610" fromY="-67" />Sztylet okazuje sie czyms wiecej niz tylko srebrem. Byl wyraznie przeklety, gdy zamienia sie w popiól. Uderza cie resztka zaklecia, ale nie ma na ciebie klatwy. 
 
 Robisz, co w twojej mocy, z ranami stworzenia. Wilkolak powinien odzyskac sily na czas.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="47" positionX="2414" positionY="-515" width="350" height="530" allPlayersXP="4" allPlayersRP="2" linkedEventUniqueID="0" />
@@ -1758,7 +1758,7 @@ Robisz, co w twojej mocy, z ranami stworzenia. Wilkolak powinien odzyskac sily n
       <outputs name="Wyjdz." ownerID="48" targetID="49" group="G1" fromX="1728" fromY="-893" />
       <outputs name="Wyjdz." ownerID="48" targetID="47" group="G1" fromX="1728" fromY="-973" />Poczekaj, az wilkolak umrze. Stado wrzeszczy w ciemnosci z rozpaczy, ale z jakiegos powodu nie atakuja cie. 
 
-Wkrotce odkryjesz, ze sztylet, ktory zostal zlozony po stronie wilkolaka, byl w rzeczywistosci przeklety, a niektore z jego zlych skutkow moga do ciebie dotrzec.</nodes>
+Wkrótce odkryjesz, ze sztylet, który zostal zlozony po stronie wilkolaka, byl w rzeczywistosci przeklety, a niektóre z jego zlych skutków moga do ciebie dotrzec.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="49" positionX="1838.47388" positionY="-393.621765" width="350" height="530" allPlayersXP="4" allPlayersRP="2" linkedEventUniqueID="0">
       <logic>
         <FilterBlock>
@@ -1781,7 +1781,7 @@ Wkrotce odkryjesz, ze sztylet, ktory zostal zlozony po stronie wilkolaka, byl w 
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="51" positionX="-146" positionY="-2243" width="350" height="805">
       <outputs name="Uruchom. &#xD;" ownerID="51" targetID="52" fromX="179" fromY="-2734" />
-      <outputs name="Atak!" ownerID="51" targetID="3" fromX="179" fromY="-2814" />Paczka warczy i krazy wokol ciebie, nie chcac zaufac obcemu. 
+      <outputs name="Atak!" ownerID="51" targetID="3" fromX="179" fromY="-2814" />Paczka warczy i krazy wokól ciebie, nie chcac zaufac obcemu. 
 
 Jednak masz teraz okno do ucieczki.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="52" positionX="667.2132" positionY="-2274.84766" width="350" height="455" allPlayersXP="1" allPlayersRP="1" linkedEventUniqueID="0" />

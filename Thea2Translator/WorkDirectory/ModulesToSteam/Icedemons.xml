@@ -53,7 +53,7 @@
       </logic>
       <outputs name="Handel." ownerID="7" targetID="4" fromX="1445" fromY="-908" />
       <outputs name="Wracaj innym razem." ownerID="7" targetID="6" fromX="1445" fromY="-989" />
-      <outputs name="Handluj dziecmi." ownerID="7" targetID="17" fromX="1445" fromY="-1069" />„Nie jestescie naszymi przyjaciolmi, wiec najpierw musicie zaplacic nam dodatkowo.'</nodes>
+      <outputs name="Handluj dziecmi." ownerID="7" targetID="17" fromX="1445" fromY="-1069" />„Nie jestescie naszymi przyjaciólmi, wiec najpierw musicie zaplacic nam dodatkowo.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="11" positionX="1789.41174" positionY="355.919952" width="350" height="725">
       <outputs name="Wyjdz." ownerID="11" targetID="6" fromX="2115" fromY="-135" />„Dobry handel z toba. Bogowie niech beda z toba.'</nodes>
     <nodes xsi:type="NodeTrade" ID="13" positionX="-31" positionY="-1973" width="460" height="479" traderProfile="TRADER-BANDIT_TWO" playerInventory="child" startingBalance="-1">
@@ -149,7 +149,7 @@
       </logic>
       <outputs name="Handel." ownerID="7" targetID="4" fromX="1445" fromY="-908" />
       <outputs name="Wracaj innym razem." ownerID="7" targetID="6" fromX="1445" fromY="-989" />
-      <outputs name="Handluj dziecmi." ownerID="7" targetID="15" fromX="1445" fromY="-1069" />„Nie jestescie naszymi przyjaciolmi, wiec najpierw musicie zaplacic nam dodatkowo.'</nodes>
+      <outputs name="Handluj dziecmi." ownerID="7" targetID="15" fromX="1445" fromY="-1069" />„Nie jestescie naszymi przyjaciólmi, wiec najpierw musicie zaplacic nam dodatkowo.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="11" positionX="1789.41174" positionY="355.919952" width="350" height="725">
       <outputs name="Wyjdz." ownerID="11" targetID="6" fromX="2115" fromY="-135" />„Odejdz teraz.'</nodes>
     <nodes xsi:type="NodeTrade" ID="13" positionX="106" positionY="-1632" width="460" height="479" traderProfile="TRADER-BANDIT_TWO" playerInventory="child" startingBalance="-1">
@@ -251,7 +251,7 @@
       </logic>
       <outputs name="Handel." ownerID="7" targetID="4" fromX="1445" fromY="-908" />
       <outputs name="Wracaj innym razem." ownerID="7" targetID="6" fromX="1445" fromY="-989" />
-      <outputs name="Handluj dziecmi." ownerID="7" targetID="15" fromX="1445" fromY="-1069" />„Nie jestescie naszymi przyjaciolmi, wiec najpierw musicie zaplacic nam dodatkowo.'</nodes>
+      <outputs name="Handluj dziecmi." ownerID="7" targetID="15" fromX="1445" fromY="-1069" />„Nie jestescie naszymi przyjaciólmi, wiec najpierw musicie zaplacic nam dodatkowo.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="11" positionX="1771" positionY="332" width="350" height="725">
       <outputs name="Wyjdz." ownerID="11" targetID="6" fromX="2096" fromY="-159" />„Odejdz teraz.'</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="13" positionX="1353" positionY="-2554" width="350" height="530" linkedEventUniqueID="0">
@@ -325,7 +325,7 @@
           </LogicProcessing>
         </FilterBlock>
       </logic>
-      <outputs name="Sprobuj z nimi porozmawiac." ownerID="3" targetID="16" fromX="762" fromY="-679" />
+      <outputs name="Spróbuj z nimi porozmawiac." ownerID="3" targetID="16" fromX="762" fromY="-679" />
       <outputs name="Atak!" ownerID="3" targetID="5" fromX="762" fromY="-759" />Znajdujesz miejsce ukryte przed prostym widokiem, aw tobie spotykaja sie gromadzace sie demony lodu. 
 
 Trudno nazwac to ugoda, ale prawdopodobnie tak blisko, jak tylko sie do niej dojda. 
@@ -348,7 +348,7 @@ Trudno nazwac to ugoda, ale prawdopodobnie tak blisko, jak tylko sie do niej doj
         </FilterBlock>
       </logic>
       <outputs name="Obron sie!" ownerID="7" targetID="14" fromX="-269" fromY="-607" />
-      <outputs name="Biegnij!" ownerID="7" targetID="6" fromX="-269" fromY="-687" />Znajdujesz miejsce ukryte przed prostym widokiem, aw tobie spotykaja sie gromadzace sie demony lodu. 
+      <outputs name="Biegnij!" ownerID="7" targetID="6" fromX="-269" fromY="-687" />Znajdujesz miejsce ukryte przed prostym wzrokiem, aw tobie spotykaja sie gromadzace sie demony lodu. 
 
 Trudno nazwac to ugoda, ale prawdopodobnie jest tak blisko, jak do jednej. Dostrzegaja cie i atakuja! 
 </nodes>
@@ -385,7 +385,7 @@ Trudno nazwac to ugoda, ale prawdopodobnie jest tak blisko, jak do jednej. Dostr
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="11" targetID="12" fromX="2116" fromY="-2860" />Lodowe demony pokonuja cie i biora zycie jako zaplata za twoj atak.</nodes>
+      <outputs name="Wyjdz." ownerID="11" targetID="12" fromX="2116" fromY="-2860" />Lodowe demony pokonuja cie i biora zycie jako zaplata za twój atak.</nodes>
     <nodes xsi:type="NodeSpawnOnMap" ID="12" positionX="2287" positionY="-2172" width="480" height="503" radius="0" destroyOwner="false" linkedEventUniqueID="0">
       <outputs ownerID="12" targetID="13" fromX="2735" fromY="-2604" />
     </nodes>
@@ -412,11 +412,11 @@ Trudno nazwac to ugoda, ale prawdopodobnie jest tak blisko, jak do jednej. Dostr
       <outputs name="Jako przyjaciele popros o wymiane." ownerID="16" targetID="2" fromX="1186" fromY="-199" />
       <outputs name="Wyjdz." ownerID="16" targetID="6" fromX="1186" fromY="-279" />
       <outputs name="Atak!" ownerID="16" targetID="5" fromX="1186" fromY="-359" />
-      <outputs name="Otwiera sie dla ciebie jeden z lodowych pomnikow. Wchodzic." ownerID="16" targetID="21" fromX="1186" fromY="-439" />
-      <outputs name="Jeden z lodowych demonow oferuje oczyszczenie twoich klatw. Idz do nich." ownerID="16" targetID="20" fromX="1186" fromY="-519" />
+      <outputs name="Otwiera sie dla ciebie jeden z lodowych pomników. Wchodzic." ownerID="16" targetID="21" fromX="1186" fromY="-439" />
+      <outputs name="Jeden z lodowych demonów oferuje oczyszczenie twoich klatw. Idz do nich." ownerID="16" targetID="20" fromX="1186" fromY="-519" />
       <outputs name="Sopel podaza za toba wszedzie i myslisz, ze to znaczy zostac z toba, jesli na to pozwolisz. Opusc miasto, aby zobaczyc, czy to z toba pochodzi." ownerID="16" targetID="17" fromX="1186" fromY="-600" />Nie masz odpowiedzi, tylko kilka lodowych spojrzen. 
 
-Kiedy zostaniesz przyjaciolmi, bedziesz mogl rekrutowac, handlowac i leczyc wszystkie przeklenstwa tutaj. 
+Kiedy zostaniesz przyjaciólmi, bedziesz mógl rekrutowac, handlowac i leczyc wszystkie przeklenstwa tutaj. 
 </nodes>
     <nodes xsi:type="NodeAdventureEnd" allowOnce="true" ID="17" positionX="1330" positionY="-340" width="350" height="530" linkedEventUniqueID="0">
       <logic>
@@ -488,9 +488,9 @@ Kiedy zostaniesz przyjaciolmi, bedziesz mogl rekrutowac, handlowac i leczyc wszy
         </ModifierBlock>
       </logic>
       <outputs name="Tak, zaakceptuj." ownerID="21" targetID="23" fromX="1307" fromY="-1459" />
-      <outputs name="Upadek polityczny." ownerID="21" targetID="16" fromX="1307" fromY="-1539" />Dziad mroz siedzi w centrum, jego cialo jest czesciowo zanurzone w lodowej podlodze: 
+      <outputs name="Upadek polityczny." ownerID="21" targetID="16" fromX="1307" fromY="-1539" />Dziad mroz siedzi posrodku, jego cialo jest czesciowo zanurzone w lodowej podlodze: 
 
-'Udowodniles, ze jestes silny. Jestem zainteresowany, aby dowiedziec sie wiecej. Jeden z moich wnukow, sniezynka, dolaczy do ciebie, a jeden z twoich stanie sie lodem. W ten sposob mozemy sie oboje wzajemnie uczyc. Po prostu nie daj mi swojego wybranego, bo bogowie nie byliby ze mnie zadowoleni. Zgoda?'
+'Udowodniles, ze jestes silny. Jestem zainteresowany, aby dowiedziec sie wiecej. Jeden z moich wnuków, sniezynka, dolaczy do ciebie, a jeden z twoich stanie sie lodem. W ten sposób mozemy sie oboje wzajemnie uczyc. Po prostu nie daj mi swojego wybranego, bo bogowie nie byliby ze mnie zadowoleni. Zgoda?'
 
 </nodes>
     <nodes xsi:type="NodeProduceDrop" ID="22" positionX="1938" positionY="-1077" width="460" height="429">
@@ -522,9 +522,9 @@ Kiedy zostaniesz przyjaciolmi, bedziesz mogl rekrutowac, handlowac i leczyc wszy
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="24" positionX="2497" positionY="-1255" width="350" height="805">
       <outputs name="Tak, zaakceptuj." ownerID="24" targetID="23" fromX="2822" fromY="-1746" />
-      <outputs name="Upadek polityczny." ownerID="24" targetID="16" fromX="2822" fromY="-1826" />Dziad mroz siedzi w centrum, jego cialo jest czesciowo zanurzone w lodowej podlodze: 
+      <outputs name="Upadek polityczny." ownerID="24" targetID="16" fromX="2822" fromY="-1826" />Dziad mroz siedzi posrodku, jego cialo jest czesciowo zanurzone w lodowej podlodze: 
 
-'Udowodniles, ze jestes silny. Jestem zainteresowany, aby dowiedziec sie wiecej. Jeden z moich wnukow, sniezynka, dolaczy do ciebie, a jeden z twoich stanie sie lodem. W ten sposob mozemy sie oboje wzajemnie uczyc. Zgoda?'
+'Udowodniles, ze jestes silny. Jestem zainteresowany, aby dowiedziec sie wiecej. Jeden z moich wnuków, sniezynka, dolaczy do ciebie, a jeden z twoich stanie sie lodem. W ten sposób mozemy sie oboje wzajemnie uczyc. Zgoda?'
 </nodes>
   </Adventure>
   <Adventure name="ArmyIceDemon_" uniqueID="33" typeGeneric="false" typePerGroupGeneric="false" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="26" joinIsForced="false" joinType="AllAlly" joinRange="MovementArea">
@@ -542,7 +542,7 @@ Kiedy zostaniesz przyjaciolmi, bedziesz mogl rekrutowac, handlowac i leczyc wszy
           </LogicFilter>
         </FilterBlock>
       </logic>
-      <outputs name="Pozdrow swoich sojusznikow. " ownerID="2" targetID="3" fromX="729" fromY="-677" />
+      <outputs name="Pozdrów swoich sojuszników. " ownerID="2" targetID="3" fromX="729" fromY="-677" />
       <outputs name="Badz ostrozny, ale rozmawiaj z nimi." ownerID="2" targetID="11" fromX="729" fromY="-757" />
       <outputs name="Walcz z duchem, szanuja go najbardziej." ownerID="2" targetID="12" fromX="729" fromY="-837" />
       <outputs name="Walcz!" ownerID="2" targetID="15" fromX="729" fromY="-917" />
@@ -656,7 +656,7 @@ Kiedy zostaniesz przyjaciolmi, bedziesz mogl rekrutowac, handlowac i leczyc wszy
       </logic>
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="25" positionX="2513" positionY="-174" width="350" height="725">
-      <outputs name="Wyjdz." ownerID="25" targetID="21" fromX="2838" fromY="-665" />Twoj duch byl silniejszy. Demony gina.</nodes>
+      <outputs name="Wyjdz." ownerID="25" targetID="21" fromX="2838" fromY="-665" />Twój duch byl silniejszy. Demony gina.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="26" positionX="1253" positionY="303" width="350" height="530" linkedEventUniqueID="0" />
   </Adventure>
 </MODULE>

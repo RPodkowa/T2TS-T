@@ -56,12 +56,12 @@
       </logic>
       <outputs name="Zabij rybe." ownerID="6" targetID="3" fromX="1720" fromY="-345" />
       <outputs name="[Hunter] Poluj na rybe." ownerID="6" targetID="20" fromX="1720" fromY="-425" />
-      <outputs name="[Demon wody] Slona woda jest zla. Ale wskocz szybko i wez to, co mozesz - mala rybka ci nie przeszkadza." ownerID="6" targetID="21" fromX="1720" fromY="-505" />Statek jest stary i wydaje sie, ze nalezal do goblinow, sadzac po stylu. 
+      <outputs name="[Demon wody] Slona woda jest zla. Ale wskocz szybko i wez to, co mozesz - mala rybka ci nie przeszkadza." ownerID="6" targetID="21" fromX="1720" fromY="-505" />Statek jest stary i wydaje sie, ze nalezal do goblinów, sadzac po stylu. 
 
 Ich dzielo jest znane z przetrwania w trudnych warunkach, wiec moze uda ci sie znalezc cos dla siebie. Ale paczki morskich stworzen roi sie od talii, wiec najpierw musisz sie ich pozbyc.</nodes>
     <nodes xsi:type="NodeAdventure" ID="7" positionX="2317" positionY="906" width="350" height="805">
       <outputs name="Wez skrzynie i zignoruj ducha." ownerID="7" targetID="8" fromX="2642" fromY="414" />
-      <outputs name="Wez piers i gest, by duch przyszedl i przemowil do ciebie." ownerID="7" targetID="9" fromX="2642" fromY="334" />Gdy ryby zniknely, plywales na poklad i szukales jakiegos towaru. 
+      <outputs name="Wez piers i gest, by duch przyszedl i przemówil do ciebie." ownerID="7" targetID="9" fromX="2642" fromY="334" />Gdy ryba zniknie, plyniesz na poklad i szukasz wszelkich towarów. 
 
 Dostrzegasz rzezbiona klatke piersiowa i siedzisz przy niej, widzisz ducha, wpatrujacego sie beznadziejnie w glebiny morza przed nim.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="8" positionX="2789" positionY="780" width="350" height="408" allPlayersXP="2" allPlayersRP="1" linkedEventUniqueID="0">
@@ -83,11 +83,11 @@ Dostrzegasz rzezbiona klatke piersiowa i siedzisz przy niej, widzisz ducha, wpat
       <outputs name="[Goblinski szaman] Powiedz mu, ze zamiast tego mozesz go przywiazac do swojej sluzby. To nie w porzadku, ze powinien tu tkwic tak dlugo, nawet jesli pokuta byla zasluzona. " ownerID="9" targetID="31" fromX="3512" fromY="190" />
       <outputs name="Czy on wie, do czego byl zobowiazany? Byc moze teraz, kiedy tu jestes, moze ci sluzyc, a wiec zmyc porazke." ownerID="9" targetID="10" fromX="3512" fromY="110" />Duch pojawia sie na twoim statku: 
 
-'Dlaczego do mnie dzwonisz? Nie moge z toba przyjsc. Jestem tu zwiazany, poniewaz nie udalo mi sie poprowadzic moich przyjaciol przez burze duchowa. Juz ich nie ma, ale ja pozostaje.'</nodes>
+'Dlaczego do mnie dzwonisz? Nie moge z toba przyjsc. Jestem tu zwiazany, poniewaz nie udalo mi sie poprowadzic moich przyjaciól przez burze duchowa. Juz ich nie ma, ale ja pozostaje.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="10" positionX="3707" positionY="529" width="350" height="885">
-      <outputs name="[Magiczny uzytkownik] Powiedz, ze sprobujesz to zrobic w najbezpieczniejszy mozliwy sposob. " ownerID="10" targetID="11" fromX="4032" fromY="37" />
-      <outputs name="Kiwnij glowa i powiedz mu, ze i tak sprobujesz." ownerID="10" targetID="14" fromX="4032" fromY="-42" />
-      <outputs name="Wycofaj sie i powiedz, ze nie ryzykujesz. Pozegnajcie go." ownerID="10" targetID="8" fromX="4032" fromY="-122" />„Tak, mozemy sprobowac. Ale ostrzegam cie, niezaleznie od sily, ktora mnie tu trzyma, moze cie przeklac.'</nodes>
+      <outputs name="[Magiczny uzytkownik] Powiedz, ze spróbujesz to zrobic w najbezpieczniejszy mozliwy sposób. " ownerID="10" targetID="11" fromX="4032" fromY="37" />
+      <outputs name="Kiwnij glowa i powiedz mu, ze i tak spróbujesz." ownerID="10" targetID="14" fromX="4032" fromY="-42" />
+      <outputs name="Wycofaj sie i powiedz, ze nie ryzykujesz. Pozegnajcie go." ownerID="10" targetID="8" fromX="4032" fromY="-122" />„Tak, mozemy spróbowac. Ale ostrzegam cie, niezaleznie od sily, która mnie tu trzyma, moze cie przeklac.'</nodes>
     <nodes xsi:type="NodeDealDamage" ID="11" positionX="4189" positionY="447" width="460" height="539" challengeTypeDamage="TypeMental" minDamage="0" maxDamage="0" useCountInPercent="false">
       <logic>
         <FilterBlock>
@@ -163,7 +163,7 @@ Dostrzegasz rzezbiona klatke piersiowa i siedzisz przy niej, widzisz ducha, wpat
       </logic>
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="19" positionX="2657" positionY="-23" width="350" height="725">
-      <outputs name="Wyjdz." ownerID="19" targetID="16" fromX="2982" fromY="-514" />Ryba bardzo cie bije i zmusza do ucieczki.</nodes>
+      <outputs name="Wyjdz." ownerID="19" targetID="16" fromX="2982" fromY="-514" />Ryba cie bije i zmusza do ucieczki.</nodes>
     <nodes xsi:type="NodeChallenge" ID="20" positionX="1870" positionY="-142" width="500" height="726" challengeType="TypeMental" versusConcept="true" versusGroup="GROUP-CON_M_0P_2M_0S" challengeScale="101" challengedList="ppl">
       <logic>
         <FilterBlock>
@@ -203,9 +203,9 @@ Dostrzegasz rzezbiona klatke piersiowa i siedzisz przy niej, widzisz ducha, wpat
       </logic>
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="22" positionX="855" positionY="-944" width="350" height="885" image="Event211">
-      <outputs name="Pomoz im i zaatakuj rybe." ownerID="22" targetID="23" fromX="1180" fromY="-1435" />
+      <outputs name="Pomóz im i zaatakuj rybe." ownerID="22" targetID="23" fromX="1180" fromY="-1435" />
       <outputs name="Wyrzuc mieso z lodzi, aby zwabic rybe od osoby." ownerID="22" targetID="24" fromX="1180" fromY="-1515" />
-      <outputs name="Skorzystaj z tej okazji, aby spladrowac wrak statku bez walki z ryba. " ownerID="22" targetID="25" fromX="1180" fromY="-1595" />Przeszukasz wrak statku i zobaczysz, ze jest on bardzo niedawny. W rzeczywistosci mozesz zobaczyc cos lub kogos, kto probuje wyplynac na powierzchnie, ale sa atakowani przez roje paskudnych ryb!</nodes>
+      <outputs name="Skorzystaj z tej okazji, aby spladrowac wrak statku bez walki z ryba. " ownerID="22" targetID="25" fromX="1180" fromY="-1595" />Przeszukujesz wrak statku i widzisz, ze jest on bardzo niedawny. W rzeczywistosci mozesz zobaczyc cos lub kogos, kto próbuje wyplynac na powierzchnie, ale sa atakowani przez roje paskudnych ryb!</nodes>
     <nodes xsi:type="NodeChallenge" ID="23" positionX="1326" positionY="-1126" width="500" height="807" challengeType="TypePhysical" versusGroup="GROUP-SEA_BEAST_1P_0M_0S" challengeScale="101" challengedList="ppl">
       <outputs name="Win" ownerID="23" targetID="26" group="G1" fromX="1767" fromY="-1621" />
       <outputs name="Lose" ownerID="23" targetID="19" fromX="1767" fromY="-1701" />
@@ -276,7 +276,7 @@ Dostrzegasz rzezbiona klatke piersiowa i siedzisz przy niej, widzisz ducha, wpat
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Dobrze, dobrze. Zbierz takze statek i wyjdz." ownerID="28" targetID="27" fromX="2776" fromY="-2307" />Heroicznie uratowales?Kot.</nodes>
+      <outputs name="Dobrze, dobrze. Zbierz takze statek i wyjdz." ownerID="28" targetID="27" fromX="2776" fromY="-2307" />Bohatersko uratowales?Kot.</nodes>
     <nodes xsi:type="NodeAdventure" ID="31" positionX="3711" positionY="1315" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -364,12 +364,12 @@ Dostrzegasz rzezbiona klatke piersiowa i siedzisz przy niej, widzisz ducha, wpat
       </logic>
       <outputs name="Zabij rybe." ownerID="6" targetID="3" fromX="1720" fromY="-345" />
       <outputs name="[Hunter] Poluj na rybe." ownerID="6" targetID="20" fromX="1720" fromY="-425" />
-      <outputs name="[Demon wody] Slona woda jest zla. Ale wskocz szybko i wez to, co mozesz - mala rybka ci nie przeszkadza." ownerID="6" targetID="21" fromX="1720" fromY="-505" />Statek jest stary i wydaje sie, ze nalezal do goblinow, sadzac po stylu. 
+      <outputs name="[Demon wody] Slona woda jest zla. Ale wskocz szybko i wez to, co mozesz - mala rybka ci nie przeszkadza." ownerID="6" targetID="21" fromX="1720" fromY="-505" />Statek jest stary i wydaje sie, ze nalezal do goblinów, sadzac po stylu. 
 
 Ich dzielo jest znane z przetrwania w trudnych warunkach, wiec moze uda ci sie znalezc cos dla siebie. Ale paczki morskich stworzen roi sie od talii, wiec najpierw musisz sie ich pozbyc.</nodes>
     <nodes xsi:type="NodeAdventure" ID="7" positionX="2379" positionY="772" width="350" height="805">
       <outputs name="Wez skrzynie i zignoruj ducha." ownerID="7" targetID="8" fromX="2704" fromY="280" />
-      <outputs name="Wez piers i gest, by duch przyszedl i przemowil do ciebie." ownerID="7" targetID="9" fromX="2704" fromY="200" />Gdy ryby zniknely, plywales na poklad i szukales jakiegos towaru. 
+      <outputs name="Wez piers i gest, by duch przyszedl i przemówil do ciebie." ownerID="7" targetID="9" fromX="2704" fromY="200" />Gdy ryba zniknie, plyniesz na poklad i szukasz wszelkich towarów. 
 
 Dostrzegasz rzezbiona klatke piersiowa i siedzisz przy niej, widzisz ducha, wpatrujacego sie beznadziejnie w glebiny morza przed nim.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="8" positionX="2789" positionY="780" width="350" height="530" allPlayersXP="2" allPlayersRP="1" linkedEventUniqueID="0">
@@ -391,11 +391,11 @@ Dostrzegasz rzezbiona klatke piersiowa i siedzisz przy niej, widzisz ducha, wpat
       <outputs name="[Goblinski szaman] Powiedz mu, ze zamiast tego mozesz go przywiazac do swojej sluzby. To nie w porzadku, ze powinien tu tkwic tak dlugo, nawet jesli pokuta byla zasluzona. " ownerID="9" targetID="31" fromX="3525" fromY="178" />
       <outputs name="Czy on wie, do czego byl zobowiazany? Byc moze teraz, kiedy tu jestes, moze ci sluzyc, a wiec zmyc porazke." ownerID="9" targetID="10" fromX="3525" fromY="98" />Duch pojawia sie na twoim statku: 
 
-'Dlaczego do mnie dzwonisz? Nie moge z toba przyjsc. Jestem tu zwiazany, poniewaz nie udalo mi sie poprowadzic moich przyjaciol przez burze duchowa. Juz ich nie ma, ale ja pozostaje.'</nodes>
+'Dlaczego do mnie dzwonisz? Nie moge z toba przyjsc. Jestem tu zwiazany, poniewaz nie udalo mi sie poprowadzic moich przyjaciól przez burze duchowa. Juz ich nie ma, ale ja pozostaje.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="10" positionX="3707" positionY="529" width="350" height="885">
-      <outputs name="[Magiczny uzytkownik] Powiedz, ze sprobujesz to zrobic w najbezpieczniejszy mozliwy sposob. " ownerID="10" targetID="11" fromX="4032" fromY="37" />
-      <outputs name="Kiwnij glowa i powiedz mu, ze i tak sprobujesz." ownerID="10" targetID="14" fromX="4032" fromY="-42" />
-      <outputs name="Wycofaj sie i powiedz, ze nie ryzykujesz. Pozegnajcie go." ownerID="10" targetID="8" fromX="4032" fromY="-122" />„Tak, mozemy sprobowac. Ale ostrzegam cie, niezaleznie od sily, ktora mnie tu trzyma, moze cie przeklac.'</nodes>
+      <outputs name="[Magiczny uzytkownik] Powiedz, ze spróbujesz to zrobic w najbezpieczniejszy mozliwy sposób. " ownerID="10" targetID="11" fromX="4032" fromY="37" />
+      <outputs name="Kiwnij glowa i powiedz mu, ze i tak spróbujesz." ownerID="10" targetID="14" fromX="4032" fromY="-42" />
+      <outputs name="Wycofaj sie i powiedz, ze nie ryzykujesz. Pozegnajcie go." ownerID="10" targetID="8" fromX="4032" fromY="-122" />„Tak, mozemy spróbowac. Ale ostrzegam cie, niezaleznie od sily, która mnie tu trzyma, moze cie przeklac.'</nodes>
     <nodes xsi:type="NodeDealDamage" ID="11" positionX="4189" positionY="447" width="460" height="539" challengeTypeDamage="TypeMental" minDamage="0" maxDamage="0" useCountInPercent="false">
       <logic>
         <FilterBlock>
@@ -471,7 +471,7 @@ Dostrzegasz rzezbiona klatke piersiowa i siedzisz przy niej, widzisz ducha, wpat
       </logic>
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="19" positionX="2661" positionY="-51" width="350" height="725">
-      <outputs name="Wyjdz." ownerID="19" targetID="16" fromX="2986" fromY="-542" />Ryba bardzo cie bije i zmusza do ucieczki.</nodes>
+      <outputs name="Wyjdz." ownerID="19" targetID="16" fromX="2986" fromY="-542" />Ryba cie bije i zmusza do ucieczki.</nodes>
     <nodes xsi:type="NodeChallenge" ID="20" positionX="1985" positionY="-268" width="500" height="726" challengeType="TypeMental" versusConcept="true" versusGroup="GROUP-CON_M_0P_3M_0S" challengeScale="101" challengedList="ppl">
       <logic>
         <FilterBlock>
@@ -511,9 +511,9 @@ Dostrzegasz rzezbiona klatke piersiowa i siedzisz przy niej, widzisz ducha, wpat
       </logic>
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="22" positionX="855" positionY="-944" width="350" height="885" image="Event211">
-      <outputs name="Pomoz im i zaatakuj rybe." ownerID="22" targetID="23" fromX="1180" fromY="-1435" />
+      <outputs name="Pomóz im i zaatakuj rybe." ownerID="22" targetID="23" fromX="1180" fromY="-1435" />
       <outputs name="Wyrzuc mieso z lodzi, aby zwabic rybe od osoby." ownerID="22" targetID="24" fromX="1180" fromY="-1515" />
-      <outputs name="Skorzystaj z tej okazji, aby spladrowac wrak statku bez walki z ryba. " ownerID="22" targetID="25" fromX="1180" fromY="-1595" />Przeszukasz wrak statku i zobaczysz, ze jest on bardzo niedawny. W rzeczywistosci mozesz zobaczyc cos lub kogos, kto probuje wyplynac na powierzchnie, ale sa atakowani przez roje paskudnych ryb!</nodes>
+      <outputs name="Skorzystaj z tej okazji, aby spladrowac wrak statku bez walki z ryba. " ownerID="22" targetID="25" fromX="1180" fromY="-1595" />Przeszukujesz wrak statku i widzisz, ze jest on bardzo niedawny. W rzeczywistosci mozesz zobaczyc cos lub kogos, kto próbuje wyplynac na powierzchnie, ale sa atakowani przez roje paskudnych ryb!</nodes>
     <nodes xsi:type="NodeChallenge" ID="23" positionX="1365" positionY="-1134" width="500" height="807" challengeType="TypePhysical" versusGroup="GROUP-SEA_BEAST_2P_1M_1S" challengeScale="101" challengedList="ppl">
       <outputs name="Win" ownerID="23" targetID="26" group="G1" fromX="1806" fromY="-1629" />
       <outputs name="Lose" ownerID="23" targetID="19" fromX="1806" fromY="-1709" />
@@ -675,23 +675,23 @@ Dostrzegasz rzezbiona klatke piersiowa i siedzisz przy niej, widzisz ducha, wpat
       </logic>
       <outputs name="Zabij rybe." ownerID="6" targetID="3" fromX="1720" fromY="-345" />
       <outputs name="[Hunter] Poluj na rybe." ownerID="6" targetID="20" fromX="1720" fromY="-425" />
-      <outputs name="[Demon wody] Slona woda jest zla. Ale wskocz szybko i wez to, co mozesz - mala rybka ci nie przeszkadza." ownerID="6" targetID="21" fromX="1720" fromY="-505" />Statek jest stary i wydaje sie, ze nalezal do orkow, sadzac po surowym stylu. 
+      <outputs name="[Demon wody] Slona woda jest zla. Ale wskocz szybko i wez to, co mozesz - mala rybka ci nie przeszkadza." ownerID="6" targetID="21" fromX="1720" fromY="-505" />Statek jest stary i wydaje sie, ze nalezal do orków, sadzac po surowym stylu. 
 
 Orkowie sa znani ze swojej solidnej metalowej konstrukcji, wiec moze cos przetrwalo te katastrofe. Ale paczki morskich stworzen roi sie od talii, wiec najpierw musisz sie ich pozbyc.</nodes>
     <nodes xsi:type="NodeAdventure" ID="7" positionX="2379" positionY="772" width="350" height="805">
       <outputs name="Zignoruj widmo i spladruj co mozesz." ownerID="7" targetID="35" fromX="2704" fromY="280" />
-      <outputs name="Widmo nie wydaje sie natychmiast agresywne. Byc moze istnieje sposob, aby go uchwycic. Wejdz i sprobuj." ownerID="7" targetID="9" fromX="2704" fromY="200" />Gdy ryby zniknely, plyniesz na poklad i szukasz towarow. 
+      <outputs name="Widmo nie wydaje sie natychmiast agresywne. Byc moze istnieje sposób, aby go uchwycic. Wejdz i spróbuj." ownerID="7" targetID="9" fromX="2704" fromY="200" />Gdy ryby zniknely, plyniesz na poklad i szukasz towarów. 
 
 Dostrzegasz kilka zwlok zebranych przez ryby. Widzisz takze widmo, bez celu wedrujacego po pokladzie. </nodes>
     <nodes xsi:type="NodeAdventure" ID="9" positionX="3200" positionY="670" width="350" height="805">
       <outputs name="[Czarownica] Zbadaj szczatki. Byc moze ktos tu kontrolowal widmo." ownerID="9" targetID="31" fromX="3525" fromY="178" />
-      <outputs name="Zbadaj widmo. Byc moze istnieje tutaj obiekt, ktory kontroluje jego istnienie." ownerID="9" targetID="10" fromX="3525" fromY="98" />Duch pojawia sie na twoim statku: 
+      <outputs name="Zbadaj widmo. Byc moze istnieje tutaj obiekt, który kontroluje jego istnienie." ownerID="9" targetID="10" fromX="3525" fromY="98" />Duch pojawia sie na twoim statku: 
 
-'Dlaczego do mnie dzwonisz? Nie moge z toba przyjsc. Jestem tu zwiazany, poniewaz nie udalo mi sie poprowadzic moich przyjaciol przez burze duchowa. Juz ich nie ma, ale ja pozostaje.'</nodes>
+'Dlaczego do mnie dzwonisz? Nie moge z toba przyjsc. Jestem tu zwiazany, poniewaz nie udalo mi sie poprowadzic moich przyjaciól przez burze duchowa. Juz ich nie ma, ale ja pozostaje.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="10" positionX="3708" positionY="559" width="350" height="885">
-      <outputs name="[Magiczny uzytkownik] Wez totem i sprobuj kontrolowac jego magie." ownerID="10" targetID="11" fromX="4033" fromY="67" />
+      <outputs name="[Magiczny uzytkownik] Wez totem i spróbuj kontrolowac jego magie." ownerID="10" targetID="11" fromX="4033" fromY="67" />
       <outputs name="Wez totem i zobacz, co sie stanie." ownerID="10" targetID="14" fromX="4033" fromY="-12" />
-      <outputs name="Wycofaj sie i po prostu spladruj to miejsce." ownerID="10" targetID="35" fromX="4033" fromY="-92" />Widzisz jednego z upadlych orkow, ktory ma swego rodzaju totem. Prawdopodobnie byla to orcza czarownica, a przedmiot moze pomoc ci kontrolowac to widmo - albo moze cie skrzywdzic. Nigdy nie jest bezpiecznie mieszac sie do rzeczy zmarlej czarownicy. </nodes>
+      <outputs name="Wycofaj sie i po prostu spladruj to miejsce." ownerID="10" targetID="35" fromX="4033" fromY="-92" />Widzisz jednego z upadlych orków, który ma swego rodzaju totem. Prawdopodobnie byla to orcza czarownica, a przedmiot moze pomóc ci kontrolowac to widmo - albo moze cie skrzywdzic. Nigdy nie jest bezpiecznie mieszac sie do rzeczy zmarlej czarownicy. </nodes>
     <nodes xsi:type="NodeDealDamage" ID="11" positionX="4189" positionY="447" width="460" height="539" challengeTypeDamage="TypeMental" minDamage="0" maxDamage="0" useCountInPercent="false">
       <logic>
         <FilterBlock>
@@ -714,7 +714,7 @@ Dostrzegasz kilka zwlok zebranych przez ryby. Widzisz takze widmo, bez celu wedr
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="13" targetID="35" fromX="5078" fromY="-488" />Totem przebija twoja skore i sprawia, ze jestes chory, gdy upior znika.</nodes>
+      <outputs name="Wyjdz." ownerID="13" targetID="35" fromX="5078" fromY="-488" />Totem przebija twoja skóre i sprawia, ze jestes chory, gdy upiór znika.</nodes>
     <nodes xsi:type="NodeDealDamage" ID="14" positionX="4189" positionY="-139" width="460" height="539" challengeTypeDamage="TypeMental" minDamage="0" maxDamage="0" useCountInPercent="false">
       <outputs ownerID="14" targetID="18" group="G1" fromX="4618" fromY="-527" />
       <outputs ownerID="14" targetID="13" group="G1" fromX="4618" fromY="-607" />
@@ -747,7 +747,7 @@ Dostrzegasz kilka zwlok zebranych przez ryby. Widzisz takze widmo, bez celu wedr
       </logic>
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="19" positionX="2661" positionY="-51" width="350" height="725">
-      <outputs name="Wyjdz." ownerID="19" targetID="16" fromX="2986" fromY="-542" />Ryba bardzo cie bije i zmusza do ucieczki.</nodes>
+      <outputs name="Wyjdz." ownerID="19" targetID="16" fromX="2986" fromY="-542" />Ryba cie bije i zmusza do ucieczki.</nodes>
     <nodes xsi:type="NodeChallenge" ID="20" positionX="1985" positionY="-268" width="500" height="726" challengeType="TypeMental" versusConcept="true" versusGroup="GROUP-CON_M_0P_4M_0S" challengeScale="101" challengedList="ppl">
       <logic>
         <FilterBlock>
@@ -790,9 +790,9 @@ Dostrzegasz kilka zwlok zebranych przez ryby. Widzisz takze widmo, bez celu wedr
       </logic>
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="22" positionX="855" positionY="-944" width="350" height="885" image="Event211">
-      <outputs name="Pomoz im i zaatakuj rybe." ownerID="22" targetID="23" fromX="1180" fromY="-1435" />
+      <outputs name="Pomóz im i zaatakuj rybe." ownerID="22" targetID="23" fromX="1180" fromY="-1435" />
       <outputs name="Wyrzuc mieso z lodzi, aby zwabic rybe od osoby." ownerID="22" targetID="24" fromX="1180" fromY="-1515" />
-      <outputs name="Skorzystaj z tej okazji, aby spladrowac wrak statku bez walki z ryba. " ownerID="22" targetID="25" fromX="1180" fromY="-1595" />Przeszukasz wrak statku i zobaczysz, ze jest on bardzo niedawny. W rzeczywistosci mozesz zobaczyc cos lub kogos, kto probuje wyplynac na powierzchnie, ale sa atakowani przez roje paskudnych ryb!</nodes>
+      <outputs name="Skorzystaj z tej okazji, aby spladrowac wrak statku bez walki z ryba. " ownerID="22" targetID="25" fromX="1180" fromY="-1595" />Przeszukujesz wrak statku i widzisz, ze jest on bardzo niedawny. W rzeczywistosci mozesz zobaczyc cos lub kogos, kto próbuje wyplynac na powierzchnie, ale sa atakowani przez roje paskudnych ryb!</nodes>
     <nodes xsi:type="NodeChallenge" ID="23" positionX="1365" positionY="-1134" width="500" height="807" challengeType="TypePhysical" versusGroup="GROUP-SEA_BEAST_2P_1M_1S" challengeScale="101" challengedList="ppl">
       <outputs name="Win" ownerID="23" targetID="26" group="G1" fromX="1806" fromY="-1629" />
       <outputs name="Lose" ownerID="23" targetID="19" fromX="1806" fromY="-1709" />
@@ -980,7 +980,7 @@ Dostrzegasz kilka zwlok zebranych przez ryby. Widzisz takze widmo, bez celu wedr
       <outputs name="Zignoruj to." ownerID="2" targetID="4" fromX="740" fromY="-554" />Widzisz wrak statku siedzacy na szczycie skaly. </nodes>
     <nodes xsi:type="NodeAdventure" ID="3" positionX="807" positionY="157" width="350" height="966">
       <outputs name="[Postrzeganie] Obserwuj." ownerID="3" targetID="5" group="G1" fromX="1132" fromY="-334" />
-      <outputs name="[Unliving] Obserwuj to. " ownerID="3" targetID="19" group="G1" fromX="1132" fromY="-414" />
+      <outputs name="[Unliving] Obserwuj. " ownerID="3" targetID="19" group="G1" fromX="1132" fromY="-414" />
       <outputs name="[Magiczny uzytkownik] Najpierw poczuj ten statek." ownerID="3" targetID="20" group="G1" fromX="1132" fromY="-494" />
       <outputs name="Wejdz." ownerID="3" targetID="21" fromX="1132" fromY="-574" />Statek byl duzy i prawdopodobnie nadal posiada pewne skarby. </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="4" positionX="2" positionY="-798" width="350" height="530" linkedEventUniqueID="0" />
@@ -992,7 +992,7 @@ Dostrzegasz kilka zwlok zebranych przez ryby. Widzisz takze widmo, bez celu wedr
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="[Magiczny uzytkownik] Niektore ciemne zaklecia pozostaja tutaj. Przygotuj rytual, aby oczyscic to miejsce i uwolnic te biedne dusze. " ownerID="5" targetID="6" fromX="1560" fromY="322" />
+      <outputs name="[Magiczny uzytkownik] Niektóre ciemne zaklecia pozostaja tutaj. Przygotuj rytual, aby oczyscic to miejsce i uwolnic te biedne dusze. " ownerID="5" targetID="6" fromX="1560" fromY="322" />
       <outputs name="[Unliving] Prawdopodobnie zaatakuja tylko istoty cieplokrwiste. Wejdz ostroznie i zrabuj miejsce." ownerID="5" targetID="18" fromX="1560" fromY="242" />
       <outputs name="Atak!" ownerID="5" targetID="14" fromX="1560" fromY="162" />
       <outputs name="Opusc to miejsce." ownerID="5" targetID="4" fromX="1560" fromY="82" />Dostrzegasz nienaturalny ruch na pokladzie. Niezywy prawdopodobnie nawiedzaja ten statek.</nodes>
@@ -1021,7 +1021,7 @@ Dostrzegasz kilka zwlok zebranych przez ryby. Widzisz takze widmo, bez celu wedr
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="11" positionX="3324" positionY="274" width="350" height="805">
       <outputs name="Wyjdz." ownerID="11" targetID="13" fromX="3649" fromY="-217" />
-      <outputs name="Atak!" ownerID="11" targetID="14" fromX="3649" fromY="-297" />Cokolwiek tu dziala, magia jest dla ciebie zbyt silna i czujesz, ze jej moc wplywa na ciebie. </nodes>
+      <outputs name="Atak!" ownerID="11" targetID="14" fromX="3649" fromY="-297" />Cokolwiek tu dziala, magia ciemnosci jest dla ciebie zbyt silna i czujesz, ze jej moc wplywa na ciebie. </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="12" positionX="3173" positionY="981" width="350" height="530" allPlayersXP="4" allPlayersRP="1" linkedEventUniqueID="0">
       <logic>
         <ModifierBlock>
@@ -1050,7 +1050,7 @@ Dostrzegasz kilka zwlok zebranych przez ryby. Widzisz takze widmo, bez celu wedr
       <outputs name="Surrender" ownerID="14" targetID="17" fromX="2141" fromY="-1332" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="15" positionX="2232" positionY="-403" width="350" height="725">
-      <outputs name="Zrabuj statek i wyjdz." ownerID="15" targetID="16" fromX="2557" fromY="-894" />Niewidzialni sa bici i nie powinni przez jakis czas wstawac. </nodes>
+      <outputs name="Zrabuj statek i wyjdz." ownerID="15" targetID="16" fromX="2557" fromY="-894" />Niewolnicy sa bici i nie powinni przez jakis czas wstawac. </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="16" positionX="2669" positionY="-380" width="350" height="530" allPlayersXP="4" allPlayersRP="1" linkedEventUniqueID="0">
       <logic>
         <ModifierBlock>
@@ -1093,10 +1093,10 @@ Dostrzegasz kilka zwlok zebranych przez ryby. Widzisz takze widmo, bez celu wedr
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="[Magiczny uzytkownik] Niektore ciemne zaklecia pozostaja tutaj. Przygotuj rytual, aby oczyscic to miejsce i uwolnic te biedne dusze. " ownerID="19" targetID="6" fromX="1591" fromY="-749" />
+      <outputs name="[Magiczny uzytkownik] Niektóre ciemne zaklecia pozostaja tutaj. Przygotuj rytual, aby oczyscic to miejsce i uwolnic te biedne dusze. " ownerID="19" targetID="6" fromX="1591" fromY="-749" />
       <outputs name="[Unliving] Prawdopodobnie zaatakuja tylko istoty cieplokrwiste. Wejdz ostroznie i zrabuj miejsce." ownerID="19" targetID="18" fromX="1591" fromY="-829" />
       <outputs name="Atak!" ownerID="19" targetID="14" fromX="1591" fromY="-909" />
-      <outputs name="Opusc to miejsce." ownerID="19" targetID="4" fromX="1591" fromY="-989" />Twoi niezyjacy krewni sa zwiazani z tym wrakiem statku. Zaatakuja kazda zywa dusze, ktora sie zbliza.</nodes>
+      <outputs name="Opusc to miejsce." ownerID="19" targetID="4" fromX="1591" fromY="-989" />Twoi niezyjacy krewni sa zwiazani z tym wrakiem statku. Zaatakuja kazda zywa dusze, która sie zbliza.</nodes>
     <nodes xsi:type="NodeAdventure" ID="20" positionX="814" positionY="-919" width="350" height="966" image="Event210">
       <logic>
         <FilterBlock>
@@ -1105,13 +1105,13 @@ Dostrzegasz kilka zwlok zebranych przez ryby. Widzisz takze widmo, bez celu wedr
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="[Magiczny uzytkownik] Niektore ciemne zaklecia pozostaja tutaj. Przygotuj rytual, aby oczyscic to miejsce i uwolnic te biedne dusze. " ownerID="20" targetID="6" fromX="1139" fromY="-1410" />
+      <outputs name="[Magiczny uzytkownik] Niektóre ciemne zaklecia pozostaja tutaj. Przygotuj rytual, aby oczyscic to miejsce i uwolnic te biedne dusze. " ownerID="20" targetID="6" fromX="1139" fromY="-1410" />
       <outputs name="[Unliving] Prawdopodobnie zaatakuja tylko istoty cieplokrwiste. Wejdz ostroznie i zrabuj miejsce." ownerID="20" targetID="18" fromX="1139" fromY="-1490" />
       <outputs name="Atak!" ownerID="20" targetID="14" fromX="1139" fromY="-1570" />
-      <outputs name="Opusc to miejsce." ownerID="20" targetID="4" fromX="1139" fromY="-1650" />Niewidzialnosc zwiazana jest z tym mrocznym zakleciem. Zaatakuja kazda zywa dusze, ktora sie zbliza.</nodes>
+      <outputs name="Opusc to miejsce." ownerID="20" targetID="4" fromX="1139" fromY="-1650" />Niewidzialnosc zwiazana jest z tym mrocznym zakleciem. Zaatakuja kazda zywa dusze, która sie zbliza.</nodes>
     <nodes xsi:type="NodeAdventure" ID="21" positionX="1291" positionY="-1293" width="350" height="805" image="Event210">
       <outputs name="Atak!" ownerID="21" targetID="14" fromX="1616" fromY="-1784" />
-      <outputs name="Sprobuj uciec." ownerID="21" targetID="22" fromX="1616" fromY="-1864" />Wchodzisz i szybko zdajesz sobie sprawe, ze jestes otoczony przez niezyjace!</nodes>
+      <outputs name="Spróbuj uciec." ownerID="21" targetID="22" fromX="1616" fromY="-1864" />Wchodzisz i szybko zdajesz sobie sprawe, ze jestes otoczony przez nieozywione!</nodes>
     <nodes xsi:type="NodeChallenge" ID="22" positionX="1753" positionY="-1680" width="500" height="726" challengeType="TypePhysical" versusConcept="true" versusGroup="GROUP-CON_P_2P_0M_0S" challengeScale="101" challengedList="ppl">
       <outputs name="Win" ownerID="22" targetID="23" fromX="2194" fromY="-2175" />
       <outputs name="Lose" ownerID="22" targetID="25" fromX="2194" fromY="-2255" />
@@ -1175,7 +1175,7 @@ Dostrzegasz kilka zwlok zebranych przez ryby. Widzisz takze widmo, bez celu wedr
       <outputs name="Zignoruj to." ownerID="2" targetID="4" fromX="596" fromY="-935" />Widzisz wrak statku siedzacy na szczycie skaly. </nodes>
     <nodes xsi:type="NodeAdventure" ID="3" positionX="833" positionY="-217" width="350" height="966">
       <outputs name="[Postrzeganie] Obserwuj." ownerID="3" targetID="5" group="G1" fromX="1158" fromY="-708" />
-      <outputs name="[Unliving] Obserwuj to. " ownerID="3" targetID="19" group="G1" fromX="1158" fromY="-788" />
+      <outputs name="[Unliving] Obserwuj. " ownerID="3" targetID="19" group="G1" fromX="1158" fromY="-788" />
       <outputs name="[Magiczny uzytkownik] Najpierw poczuj ten statek." ownerID="3" targetID="20" group="G1" fromX="1158" fromY="-868" />
       <outputs name="Wejdz." ownerID="3" targetID="21" fromX="1158" fromY="-948" />Statek byl duzy i prawdopodobnie nadal posiada pewne skarby. </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="4" positionX="-479" positionY="-1335" width="350" height="455" linkedEventUniqueID="0" />
@@ -1187,7 +1187,7 @@ Dostrzegasz kilka zwlok zebranych przez ryby. Widzisz takze widmo, bez celu wedr
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="[Magiczny uzytkownik] Niektore ciemne zaklecia pozostaja tutaj. Przygotuj rytual, aby oczyscic to miejsce i uwolnic te biedne dusze. " ownerID="5" targetID="6" fromX="1560" fromY="322" />
+      <outputs name="[Magiczny uzytkownik] Niektóre ciemne zaklecia pozostaja tutaj. Przygotuj rytual, aby oczyscic to miejsce i uwolnic te biedne dusze. " ownerID="5" targetID="6" fromX="1560" fromY="322" />
       <outputs name="[Unliving] Prawdopodobnie zaatakuja tylko istoty cieplokrwiste. Wejdz ostroznie i zrabuj miejsce." ownerID="5" targetID="18" fromX="1560" fromY="242" />
       <outputs name="Atak!" ownerID="5" targetID="14" fromX="1560" fromY="162" />
       <outputs name="Opusc to miejsce." ownerID="5" targetID="4" fromX="1560" fromY="82" />Dostrzegasz nienaturalny ruch na pokladzie. Niezywy prawdopodobnie nawiedzaja ten statek.</nodes>
@@ -1216,7 +1216,7 @@ Dostrzegasz kilka zwlok zebranych przez ryby. Widzisz takze widmo, bez celu wedr
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="11" positionX="3380" positionY="306" width="350" height="805">
       <outputs name="Wyjdz." ownerID="11" targetID="13" fromX="3705" fromY="-185" />
-      <outputs name="Atak!" ownerID="11" targetID="14" fromX="3705" fromY="-265" />Cokolwiek tu dziala, magia jest dla ciebie zbyt silna i czujesz, ze jej moc wplywa na ciebie. </nodes>
+      <outputs name="Atak!" ownerID="11" targetID="14" fromX="3705" fromY="-265" />Cokolwiek tu dziala, magia ciemnosci jest dla ciebie zbyt silna i czujesz, ze jej moc wplywa na ciebie. </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="12" positionX="3207" positionY="995" width="350" height="455" allPlayersXP="4" allPlayersRP="2" linkedEventUniqueID="0">
       <logic>
         <ModifierBlock>
@@ -1245,7 +1245,7 @@ Dostrzegasz kilka zwlok zebranych przez ryby. Widzisz takze widmo, bez celu wedr
       <outputs name="Surrender" ownerID="14" targetID="17" fromX="2172" fromY="-1530" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="15" positionX="2277" positionY="-427" width="350" height="725">
-      <outputs name="Zrabuj statek i wyjdz." ownerID="15" targetID="16" fromX="2602" fromY="-918" />Niewidzialni sa bici i nie powinni przez jakis czas wstawac. </nodes>
+      <outputs name="Zrabuj statek i wyjdz." ownerID="15" targetID="16" fromX="2602" fromY="-918" />Niewolnicy sa bici i nie powinni przez jakis czas wstawac. </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="16" positionX="2669" positionY="-380" width="350" height="455" allPlayersXP="4" allPlayersRP="2" linkedEventUniqueID="0">
       <logic>
         <ModifierBlock>
@@ -1288,10 +1288,10 @@ Dostrzegasz kilka zwlok zebranych przez ryby. Widzisz takze widmo, bez celu wedr
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="[Magiczny uzytkownik] Niektore ciemne zaklecia pozostaja tutaj. Przygotuj rytual, aby oczyscic to miejsce i uwolnic te biedne dusze. " ownerID="19" targetID="6" fromX="1591" fromY="-749" />
+      <outputs name="[Magiczny uzytkownik] Niektóre ciemne zaklecia pozostaja tutaj. Przygotuj rytual, aby oczyscic to miejsce i uwolnic te biedne dusze. " ownerID="19" targetID="6" fromX="1591" fromY="-749" />
       <outputs name="[Unliving] Prawdopodobnie zaatakuja tylko istoty cieplokrwiste. Wejdz ostroznie i zrabuj miejsce." ownerID="19" targetID="18" fromX="1591" fromY="-829" />
       <outputs name="Atak!" ownerID="19" targetID="14" fromX="1591" fromY="-909" />
-      <outputs name="Opusc to miejsce." ownerID="19" targetID="4" fromX="1591" fromY="-989" />Twoi niezyjacy krewni sa zwiazani z tym wrakiem statku. Zaatakuja kazda zywa dusze, ktora sie zbliza.</nodes>
+      <outputs name="Opusc to miejsce." ownerID="19" targetID="4" fromX="1591" fromY="-989" />Twoi niezyjacy krewni sa zwiazani z tym wrakiem statku. Zaatakuja kazda zywa dusze, która sie zbliza.</nodes>
     <nodes xsi:type="NodeAdventure" ID="20" positionX="814" positionY="-919" width="350" height="966" image="Event210">
       <logic>
         <FilterBlock>
@@ -1300,13 +1300,13 @@ Dostrzegasz kilka zwlok zebranych przez ryby. Widzisz takze widmo, bez celu wedr
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="[Magiczny uzytkownik] Niektore ciemne zaklecia pozostaja tutaj. Przygotuj rytual, aby oczyscic to miejsce i uwolnic te biedne dusze. " ownerID="20" targetID="6" fromX="1139" fromY="-1410" />
+      <outputs name="[Magiczny uzytkownik] Niektóre ciemne zaklecia pozostaja tutaj. Przygotuj rytual, aby oczyscic to miejsce i uwolnic te biedne dusze. " ownerID="20" targetID="6" fromX="1139" fromY="-1410" />
       <outputs name="[Unliving] Prawdopodobnie zaatakuja tylko istoty cieplokrwiste. Wejdz ostroznie i zrabuj miejsce." ownerID="20" targetID="18" fromX="1139" fromY="-1490" />
       <outputs name="Atak!" ownerID="20" targetID="14" fromX="1139" fromY="-1570" />
-      <outputs name="Opusc to miejsce." ownerID="20" targetID="4" fromX="1139" fromY="-1650" />Niewidzialnosc zwiazana jest z tym mrocznym zakleciem. Zaatakuja kazda zywa dusze, ktora sie zbliza.</nodes>
+      <outputs name="Opusc to miejsce." ownerID="20" targetID="4" fromX="1139" fromY="-1650" />Niewidzialnosc zwiazana jest z tym mrocznym zakleciem. Zaatakuja kazda zywa dusze, która sie zbliza.</nodes>
     <nodes xsi:type="NodeAdventure" ID="21" positionX="1269" positionY="-1247" width="350" height="805" image="Event210">
       <outputs name="Atak!" ownerID="21" targetID="14" fromX="1594" fromY="-1738" />
-      <outputs name="Sprobuj uciec." ownerID="21" targetID="22" fromX="1594" fromY="-1818" />Wchodzisz i szybko zdajesz sobie sprawe, ze jestes otoczony przez niezyjace!</nodes>
+      <outputs name="Spróbuj uciec." ownerID="21" targetID="22" fromX="1594" fromY="-1818" />Wchodzisz i szybko zdajesz sobie sprawe, ze jestes otoczony przez nieozywione!</nodes>
     <nodes xsi:type="NodeChallenge" ID="22" positionX="1753" positionY="-1680" width="500" height="726" challengeType="TypePhysical" versusConcept="true" versusGroup="GROUP-CON_P_3P_0M_0S" challengeScale="101" challengedList="ppl">
       <outputs name="Win" ownerID="22" targetID="23" fromX="2194" fromY="-2175" />
       <outputs name="Lose" ownerID="22" targetID="25" fromX="2194" fromY="-2255" />
@@ -1379,7 +1379,7 @@ Dostrzegasz kilka zwlok zebranych przez ryby. Widzisz takze widmo, bez celu wedr
         </FilterBlock>
       </logic>
       <outputs name="[Magiczny uzytkownik] Tutaj dziala magia. Przygotuj sie na atak." ownerID="2" targetID="3" fromX="799" fromY="-559" />
-      <outputs name="[Demon wody lub syryna] Znasz te sztuczke - zaczarowana piosenka, by zwabic ofiary w pulapke. Paskudne morskie stworzenia nasladujace twoj styl. Badzcie gotowi na te kiepska wymowke na uwiezienie." ownerID="2" targetID="6" fromX="799" fromY="-639" />
+      <outputs name="[Demon wody lub syryna] Znasz te sztuczke - zaczarowana piosenka, by zwabic ofiary w pulapke. Paskudne morskie stworzenia nasladujace twój styl. Badzcie gotowi na te kiepska wymówke na uwiezienie." ownerID="2" targetID="6" fromX="799" fromY="-639" />
       <outputs name="Idz dalej." ownerID="2" targetID="44" fromX="799" fromY="-719" />Wody sa spokojne, niebo czyste, a na falach slychac slaby, ale ponetny spiew. </nodes>
     <nodes xsi:type="NodeAdventure" ID="3" positionX="886" positionY="472" width="350" height="805" image="Event184">
       <logic>
@@ -1393,9 +1393,9 @@ Dostrzegasz kilka zwlok zebranych przez ryby. Widzisz takze widmo, bez celu wedr
         </FilterBlock>
       </logic>
       <outputs name="Walcz z tym zakleciem!" ownerID="3" targetID="4" fromX="1211" fromY="-19" />
-      <outputs name="Atak!" ownerID="3" targetID="5" fromX="1211" fromY="-99" />Im blizej piesni, tym silniejsza jest magia, ktora jej towarzyszy, ale nawet dzieki tej wiedzy bedziesz musial walczyc z tym zakleciem. 
+      <outputs name="Atak!" ownerID="3" targetID="5" fromX="1211" fromY="-99" />Im blizej piesni, tym silniejsza jest magia, która jej towarzyszy, ale nawet dzieki tej wiedzy bedziesz musial walczyc z tym zakleciem. 
 
-Widzisz kilka morskich demonow otaczajacych twoja lodz i krazacych, kiedy spiewaja. Poniewaz byles przygotowany, mozesz sprobowac zaatakowac ich fizycznie. 
+Widzisz kilka morskich demonów otaczajacych twoja lódz i krazacych, kiedy spiewaja. Poniewaz byles przygotowany, mozesz spróbowac zaatakowac ich fizycznie. 
 </nodes>
     <nodes xsi:type="NodeChallenge" ID="4" positionX="1288" positionY="800" width="500" height="726" challengeType="TypeSpirit" versusConcept="true" versusGroup="GROUP-CON_S_0P_0M_4S" challengeScale="101" challengedList="ppl">
       <outputs name="Win" ownerID="4" targetID="7" fromX="1729" fromY="304" />
@@ -1417,9 +1417,9 @@ Widzisz kilka morskich demonow otaczajacych twoja lodz i krazacych, kiedy spiewa
       </logic>
       <outputs name="Walcz z ich wlasnym duchem!" ownerID="6" targetID="14" fromX="1651" fromY="-649" />
       <outputs name="Atak!" ownerID="6" targetID="5" fromX="1651" fromY="-729" />
-      <outputs name="Krzyknij do tych demonetek morskich i powiedz im, zeby powstrzymali ten nonsens!" ownerID="6" targetID="17" fromX="1651" fromY="-809" />Im blizej piesni, tym silniejsza jest magia, ktora jej towarzyszy, ale nawet dzieki tej wiedzy bedziesz musial walczyc z tym zakleciem. 
+      <outputs name="Krzyknij do tych demonetek morskich i powiedz im, zeby powstrzymali ten nonsens!" ownerID="6" targetID="17" fromX="1651" fromY="-809" />Im blizej piesni, tym silniejsza jest magia, która jej towarzyszy, ale nawet dzieki tej wiedzy bedziesz musial walczyc z tym zakleciem. 
 
-Widzisz kilka morskich demonow otaczajacych twoja lodz i krazacych, kiedy spiewaja. Poniewaz byles przygotowany, mozesz sprobowac zaatakowac ich fizycznie. 
+Widzisz kilka morskich demonów otaczajacych twoja lódz i krazacych, kiedy spiewaja. Poniewaz byles przygotowany, mozesz spróbowac zaatakowac ich fizycznie. 
 </nodes>
     <nodes xsi:type="NodeAdventure" ID="7" positionX="1944" positionY="1074" width="350" height="725">
       <logic>
@@ -1438,7 +1438,7 @@ Widzisz kilka morskich demonow otaczajacych twoja lodz i krazacych, kiedy spiewa
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="7" targetID="13" fromX="2269" fromY="582" />Przebijasz sie przez zaklecie i widzisz trzy bardzo zaskoczone morskie demony, ktore patrza na ciebie. Mrugaja kilka razy, a potem usmiechaja sie: 
+      <outputs name="Wyjdz." ownerID="7" targetID="13" fromX="2269" fromY="582" />Przebijasz sie przez zaklecie i widzisz trzy bardzo zaskoczone demony morskie gapiace sie na ciebie. Mrugaja kilka razy, a potem usmiechaja sie: 
 
 'Uwolniles sie, wiec mozesz zobaczyc prawdziwe twarze nas trzech. Niech morze cie wynagrodzi.'
 
@@ -1460,7 +1460,7 @@ Plywaja, ale wylewaja ci slodki pocalunek. </nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="8" targetID="13" fromX="3250" fromY="-283" />Zabijasz demony morskie i rabujesz ich rybne ciala. Po zbadaniu byly to prawdopodobnie czytlica, ktore sa pol-rybami, pol-ludzkimi samicami, o ktorych wiadomo, ze ciagna swoje ofiary do swoich podziemnych podziemi.</nodes>
+      <outputs name="Wyjdz." ownerID="8" targetID="13" fromX="3250" fromY="-283" />Zabijasz demony morskie i rabujesz ich rybne ciala. Po zbadaniu byly to prawdopodobnie czytlica, które sa pól-rybami, pól-ludzkimi samicami, o których wiadomo, ze ciagna swoje ofiary do swoich podziemnych podziemi.</nodes>
     <nodes xsi:type="NodeDealDamage" ID="9" positionX="2924" positionY="-588" width="460" height="539" challengeTypeDamage="TypeSpirit" minDamage="30" maxDamage="60" useCountInPercent="true" targetGroup="ppl">
       <outputs ownerID="9" targetID="10" group="G1" fromX="3353" fromY="-976" />
       <outputs ownerID="9" targetID="12" group="G1" fromX="3353" fromY="-1056" />
@@ -1490,9 +1490,9 @@ Plywaja, ale wylewaja ci slodki pocalunek. </nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="10" targetID="36" fromX="3819" fromY="-774" />Denne demony poruszaja twoja lodz i zywia sie twoja energia duchowa. Przeciagaja tez jednego z was w glebiny morza! 
+      <outputs name="Wyjdz." ownerID="10" targetID="36" fromX="3819" fromY="-774" />Denne demony poruszaja twoja lódz i zywia sie twoja energia duchowa. Przeciagaja tez jednego z was w glebiny morza! 
 
-Ale pozniej, morze nosi w sobie dziecko, prawdopodobnie zrodzone z psoty dennych demonow.</nodes>
+Ale pózniej, morze nosi w sobie dziecko, prawdopodobnie zrodzone z psoty dennych demonów.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="11" positionX="4612" positionY="-295" width="350" height="530" allPlayersXP="2" allPlayersRP="1" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventure" ID="12" positionX="3941" positionY="-904" width="350" height="725">
       <logic>
@@ -1519,7 +1519,7 @@ Ale pozniej, morze nosi w sobie dziecko, prawdopodobnie zrodzone z psoty dennych
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="12" targetID="11" fromX="4266" fromY="-1395" />Denne demony poruszaja twoja lodz i zywia sie twoja energia duchowa. Probuja przeciagnac jednego z was do wody, ale na szczescie udaje sie zabrac tylko plecak.</nodes>
+      <outputs name="Wyjdz." ownerID="12" targetID="11" fromX="4266" fromY="-1395" />Denne demony poruszaja twoja lódz i zywia sie twoja energia duchowa. Próbuja przeciagnac jednego z was do wody, ale na szczescie udaje sie zabrac tylko plecak.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="13" positionX="3368" positionY="425" width="350" height="530" allPlayersXP="5" allPlayersRP="2" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeChallenge" ID="14" positionX="1766" positionY="-173" width="500" height="726" challengeType="TypeSpirit" versusGroup="GROUP-CZYTLICA_5P_5M_5S" challengeScale="101" challengedList="ppl">
       <outputs name="Win" ownerID="14" targetID="16" fromX="2207" fromY="-668" />
@@ -1546,9 +1546,9 @@ Ale pozniej, morze nosi w sobie dziecko, prawdopodobnie zrodzone z psoty dennych
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="16" targetID="13" fromX="2702" fromY="-1223" />Przebijasz sie przez zaklecie i widzisz trzy bardzo zaskoczone morskie demony, ktore patrza na ciebie. Mrugaja kilka razy, a potem usmiechaja sie: 
+      <outputs name="Wyjdz." ownerID="16" targetID="13" fromX="2702" fromY="-1223" />Przebijasz sie przez zaklecie i widzisz trzy bardzo zaskoczone demony morskie gapiace sie na ciebie. Mrugaja kilka razy, a potem usmiechaja sie: 
 
-'Uwolniles sie. Jestes taki jak my? Ale zyjesz w tych malych lzach, ktore nazywasz jeziorami i rzekami. Jak smutno.'
+'Uwolniles sie. Jestes taki jak my? Ale zyjesz w tych malych lzach, które nazywasz jeziorami i rzekami. Jak smutno.'
 
 Plywaja, ale wylewaja ci slodki pocalunek. </nodes>
     <nodes xsi:type="NodeChallenge" ID="17" positionX="1363" positionY="-1249" width="500" height="726" challengeType="TypeMental" versusGroup="GROUP-CZYTLICA_5P_5M_5S" challengeScale="101" challengedList="ppl">
@@ -1558,14 +1558,14 @@ Plywaja, ale wylewaja ci slodki pocalunek. </nodes>
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="18" positionX="1964" positionY="-1549" width="350" height="805">
       <outputs name="Zapytaj ich, czym sa?" ownerID="18" targetID="19" fromX="2289" fromY="-2040" />
-      <outputs name="Odejdz." ownerID="18" targetID="21" fromX="2289" fromY="-2120" />„Jestes taki jak my? Ale zyjesz w tych malych lzach, ktore nazywasz jeziorami i rzekami. Jak smutno. Nie zabierzemy cie, bo to nie byloby zabawne.'
+      <outputs name="Odejdz." ownerID="18" targetID="21" fromX="2289" fromY="-2120" />„Jestes taki jak my? Ale zyjesz w tych malych lzach, które nazywasz jeziorami i rzekami. Jak smutno. Nie zabierzemy cie, bo to nie byloby zabawne.'
 </nodes>
     <nodes xsi:type="NodeAdventure" ID="19" positionX="2414" positionY="-1496" width="350" height="885">
-      <outputs name="[Syrin] Tak, wyglada na to, ze dwoje dzielicie sie czyms, chociaz wydaja sie bardziej jak wasze rozzloszczone siostry alkhonost. Mimo to zycz im dobrze i odejdz." ownerID="19" targetID="22" fromX="2739" fromY="-1987" />
-      <outputs name="[Vodnik] Preposterous. Podwodny jest twoja domena i zadna krolowa nie domaga sie panowania. Smieci!" ownerID="19" targetID="24" fromX="2739" fromY="-2067" />
-      <outputs name="Kiwnij glowa i podziekuj im za poswiecony czas, a potem odplyn." ownerID="19" targetID="21" fromX="2739" fromY="-2147" />„Nazywamy sie czytlica. Niektorzy nazywaja nas takze syrenami, ale moze to byc spowodowane twoja syryna, ktora spiewa nasze piosenki na ladzie. 
+      <outputs name="[Syrin] Tak, wydaje sie, ze macie cos wspólnego, chociaz wydaja sie bardziej jak wasze rozzloszczone siostry alkhonost. Mimo to zycz im dobrze i odejdz." ownerID="19" targetID="22" fromX="2739" fromY="-1987" />
+      <outputs name="[Vodnik] Preposterous. Podwodny jest twoja domena i zadna królowa nie domaga sie panowania. Smieci!" ownerID="19" targetID="24" fromX="2739" fromY="-2067" />
+      <outputs name="Kiwnij glowa i podziekuj im za poswiecony czas, a potem odplyn." ownerID="19" targetID="21" fromX="2739" fromY="-2147" />„Nazywamy sie czytlica. Niektórzy nazywaja nas takze syrenami, ale moze to byc spowodowane twoja syryna, która spiewa nasze piosenki na ladzie. 
 
-Jurata, nasze krolowe, opanowaly morza, gdy ziemia pekla. Teraz jestesmy tu mistrzami, z dala od ziemi i twoich malych stawow.'</nodes>
+Jurata, nasze królowe, opanowaly morza, gdy ziemia pekla. Teraz jestesmy tu mistrzami, z dala od ziemi i twoich malych stawów.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="21" positionX="2525" positionY="-2438" width="350" height="725">
       <logic>
         <ModifierBlock>
@@ -1583,7 +1583,7 @@ Jurata, nasze krolowe, opanowaly morza, gdy ziemia pekla. Teraz jestesmy tu mist
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="21" targetID="23" fromX="2850" fromY="-2929" />„Lubimy cie. Masz ten prezent. Niech wody morskie pozostana spokojne podczas podrozy!'</nodes>
+      <outputs name="Wyjdz." ownerID="21" targetID="23" fromX="2850" fromY="-2929" />„Lubimy cie. Masz ten prezent. Niech wody morskie pozostana spokojne podczas podrózy!'</nodes>
     <nodes xsi:type="NodeAdventure" ID="22" positionX="2924" positionY="-1405" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -1606,7 +1606,7 @@ Jurata, nasze krolowe, opanowaly morza, gdy ziemia pekla. Teraz jestesmy tu mist
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="22" targetID="23" fromX="3249" fromY="-1896" />„Lubimy cie. Masz ten prezent. Niech wody morskie pozostana spokojne podczas podrozy!'</nodes>
+      <outputs name="Wyjdz." ownerID="22" targetID="23" fromX="3249" fromY="-1896" />„Lubimy cie. Masz ten prezent. Niech wody morskie pozostana spokojne podczas podrózy!'</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="23" positionX="3062" positionY="-2414" width="350" height="530" allPlayersXP="5" allPlayersRP="2" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventure" ID="24" positionX="3586" positionY="-1895" width="350" height="805">
       <logic>
@@ -1623,7 +1623,7 @@ Jurata, nasze krolowe, opanowaly morza, gdy ziemia pekla. Teraz jestesmy tu mist
         </FilterBlock>
       </logic>
       <outputs name="Tak, przyjmij wyzwanie!" ownerID="24" targetID="25" fromX="3911" fromY="-2386" />
-      <outputs name="Nie, powiedz, ze nie chciales obrazic sie i podziekowac im za to, ze nie walczyli. W koncu demony wodne powinny trzymac sie razem." ownerID="24" targetID="21" fromX="3911" fromY="-2466" />„Czy chcialbys poznac nasza krolowa i powiedziec to jej twarzy? Ostrzegamy, ze nie bedzie milo.'</nodes>
+      <outputs name="Nie, powiedz, ze nie chciales obrazic sie i podziekowac im za to, ze nie walczyli. W koncu demony wodne powinny trzymac sie razem." ownerID="24" targetID="21" fromX="3911" fromY="-2466" />„Czy chcialbys poznac nasza królowa i powiedziec to jej twarzy? Ostrzegamy, ze nie bedzie milo.'</nodes>
     <nodes xsi:type="NodeChallenge" ID="25" positionX="4096" positionY="-2095" width="500" height="726" challengeType="TypeMental" versusGroup="GROUP-JURATA_ONE_4P_4M_4S" challengeScale="101" challengedList="1vod">
       <outputs name="Win" ownerID="25" targetID="26" fromX="4537" fromY="-2590" />
       <outputs name="Lose" ownerID="25" targetID="28" fromX="4537" fromY="-2670" />
@@ -1647,9 +1647,9 @@ Jurata, nasze krolowe, opanowaly morza, gdy ziemia pekla. Teraz jestesmy tu mist
         </ModifierBlock>
       </logic>
       <outputs name="Poklon jej w podziekowaniu." ownerID="26" targetID="27" fromX="5021" fromY="-2386" />
-      <outputs name="Kiwnij glowa na temat." ownerID="26" targetID="27" fromX="5021" fromY="-2466" />Krolowa jurata przychodzi w calej swej morskiej chwaly, ale w koncu pochyla sie do twojego stazu: 
+      <outputs name="Kiwnij glowa na temat." ownerID="26" targetID="27" fromX="5021" fromY="-2466" />Królowa jurata przychodzi w calej swej morskiej chwaly, ale w koncu pochyla sie do twojego stazu: 
 
-'Jestem tylko mloda krolowa, a ty doswiadczona pania. Bede oddawal danine waszej domenie i patrze, jak wasz statek idzie przez moje wody. Badz zdrowy, krolu.'</nodes>
+'Jestem tylko mloda królowa, a ty doswiadczona pania. Bede oddawal danine waszej domenie i patrze, jak wasz statek idzie bezpiecznie przez moje wody. Badz zdrowy, królu.'</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="27" positionX="5208" positionY="-2032" width="350" height="530" allPlayersXP="6" allPlayersRP="2" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventure" ID="28" positionX="4697" positionY="-2754" width="350" height="805">
       <logic>
@@ -1663,17 +1663,17 @@ Jurata, nasze krolowe, opanowaly morza, gdy ziemia pekla. Teraz jestesmy tu mist
         </FilterBlock>
       </logic>
       <outputs name="Poklon sie przed nia i oddaj hold." ownerID="28" targetID="29" fromX="5022" fromY="-3245" />
-      <outputs name="Przeciwstaw sie jej, nawet jesli to oznacza smierc!" ownerID="28" targetID="33" fromX="5022" fromY="-3325" />Krolowa jurata przychodzi w calej swej morskiej chwale: 
+      <outputs name="Przeciwstaw sie jej, nawet jesli to oznacza smierc!" ownerID="28" targetID="33" fromX="5022" fromY="-3325" />Królowa jurata przychodzi w calej swej morskiej chwale: 
 
-„Jestem tylko mloda krolowa, a ty doswiadczona pania. Jednak to moja mlodosc i moc przewyzszaja twoje stare tradycje! Teraz poklon mi sie lub umrzyj.'
+'Jestem tylko mloda królowa, a ty doswiadczona pania. Jednak to moja mlodosc i moc przewyzszaja twoje stare tradycje! Teraz poklon mi sie lub umrzyj.'
 
-Jej slowa niosa polecenie, ktore, jak wiesz, cie zlamie. Ona naprawde jest krolowa tych wod.</nodes>
+Jej slowa niosa polecenie, które, jak wiesz, cie zlamie. Ona naprawde jest królowa tych wód.</nodes>
     <nodes xsi:type="NodeTrade" ID="29" positionX="5144" positionY="-2768" width="460" height="479" traderProfile="TRADER-BANDIT" playerInventory="stuff" startingBalance="-50">
       <outputs name="Confirm" ownerID="29" targetID="31" fromX="5574" fromY="-3096" />
       <outputs name="Cancel" ownerID="29" targetID="28" fromX="5574" fromY="-3176" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="30" positionX="6239" positionY="-2522" width="350" height="725">
-      <outputs name="Wyjdz." ownerID="30" targetID="32" fromX="6564" fromY="-3013" />„Przyjmuje twoj hold, ksiaze slodkich wod. Mozesz odejsc.'</nodes>
+      <outputs name="Wyjdz." ownerID="30" targetID="32" fromX="6564" fromY="-3013" />„Przyjmuje twój hold, ksiaze slodkich wód. Mozesz odejsc.'</nodes>
     <nodes xsi:type="NodeDealDamage" ID="31" positionX="5700" positionY="-2651" width="460" height="459" challengeTypeDamage="TypeMental" minDamage="70" maxDamage="90" useCountInPercent="true" targetGroup="1vod">
       <outputs ownerID="31" targetID="30" fromX="6129" fromY="-3039" />
     </nodes>
@@ -1689,11 +1689,11 @@ Jej slowa niosa polecenie, ktore, jak wiesz, cie zlamie. Ona naprawde jest krolo
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz, jesli masz wystarczajaco duzo ludzi, aby to zrobic." ownerID="33" targetID="35" fromX="5465" fromY="-3778" />„Jak smialy i wyzywajacy. Bedziesz jednym z moich kochankow, tak.'
+      <outputs name="Wyjdz, jesli masz wystarczajaco duzo ludzi, aby to zrobic." ownerID="33" targetID="35" fromX="5465" fromY="-3778" />„Jak smialy i wyzywajacy. Bedziesz jednym z moich kochanków, tak.'
 
 Klika palcami, a ty podazasz za nia w glab twojego nowego domu, porzucajac wszystko inne. 
 
-- A ty pielegnowales taki okaz. Wezmiesz moje dziecko i pokazesz mu swoj dziwny swiat. Teraz wyjdz.'</nodes>
+- A ty pielegnowales taki okaz. Wezmiesz moje dziecko i pokazesz mu swój dziwny swiat. Teraz wyjdz.'</nodes>
     <nodes xsi:type="NodeDealDamage" ID="35" positionX="5689" positionY="-3446" width="460" height="459" challengeTypeDamage="TypeMental" minDamage="0" maxDamage="0" useCountInPercent="false">
       <logic>
         <FilterBlock>
@@ -1740,9 +1740,9 @@ Klika palcami, a ty podazasz za nia w glab twojego nowego domu, porzucajac wszys
       </logic>
       <outputs name="Plac, jesli mozesz." ownerID="37" targetID="39" fromX="811" fromY="-2647" />
       <outputs name="Powiedz, ze nie mozesz zaplacic, wiec dolaczysz do zabawy.'" ownerID="37" targetID="42" fromX="811" fromY="-2727" />
-      <outputs name="Atak!" ownerID="37" targetID="5" fromX="811" fromY="-2807" />Czujesz, ze demony wysysaly czesc twojego ducha, kiedy rozmawiales, ale potem sie zatrzymales. 
+      <outputs name="Atak!" ownerID="37" targetID="5" fromX="811" fromY="-2807" />Czujesz, ze demony wysysaly czesc twojego ducha, kiedy rozmawiales, ale potem zatrzymales sie. 
 
-„Jestes taki jak my? Ale zyjesz w tych malych lzach, ktore nazywasz jeziorami i rzekami. Jak smutno. Nie zabierzemy cie, jesli zaplacisz nam hold. Mozesz tez chetnie dolaczyc do nas, zeby sie zabawic. Jednak nie gwarantujemy bezpieczenstwa.- Chichocza i skacza przez obrecze w wodzie. 
+„Jestes taki jak my? Ale zyjesz w tych malych lzach, które nazywasz jeziorami i rzekami. Jak smutno. Nie zabierzemy cie, jesli zaplacisz nam hold. Mozesz tez chetnie dolaczyc do nas, zeby sie zabawic. Jednak nie gwarantujemy bezpieczenstwa.- Chichocza i skacza przez obrecze w wodzie. 
 </nodes>
     <nodes xsi:type="NodeAdventure" ID="38" positionX="1475" positionY="-2062" width="350" height="805">
       <outputs name="Zapytaj ich, czym sa?" ownerID="38" targetID="19" fromX="1800" fromY="-2553" />
@@ -1763,7 +1763,7 @@ Klika palcami, a ty podazasz za nia w glab twojego nowego domu, porzucajac wszys
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="41" targetID="11" fromX="1580" fromY="-3483" />Woda morska nie zgadza sie z toba i czujesz sie zle z powodu szalonego tanca, do ktorego wciagaja cie demony czytlica. 
+      <outputs name="Wyjdz." ownerID="41" targetID="11" fromX="1580" fromY="-3483" />Woda morska nie zgadza sie z toba i czujesz sie zle z powodu szalonego tanca, do którego wciagaja cie demony czytlica. 
 
 Nie pamietasz, co sie stalo potem, tylko ze jestes szczesliwy, ze znowu obudziles sie na lodzi.</nodes>
     <nodes xsi:type="NodeDealDamage" ID="42" positionX="689" positionY="-3096" width="460" height="539" challengeTypeDamage="TypeMental" minDamage="30" maxDamage="50" useCountInPercent="true" targetGroup="wdemon">
@@ -1795,14 +1795,14 @@ Nie pamietasz, co sie stalo potem, tylko ze jestes szczesliwy, ze znowu obudzile
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="43" targetID="36" fromX="2010" fromY="-3547" />Woda morska nie zgadza sie z toba i czujesz sie chory z powodu szalonego tanca, do ktorego wciagaja cie demony czytlica. 
+      <outputs name="Wyjdz." ownerID="43" targetID="36" fromX="2010" fromY="-3547" />Woda morska nie zgadza sie z toba i czujesz sie zle z powodu szalonego tanca, do którego wciagaja cie demony czytlica. 
 
-Nie pamietasz, co sie stalo potem, tylko ze jeden z was odszedl. Jakis czas pozniej morze nosi w sobie dziecko, prawdopodobnie zrodzone z psoty dennych demonow.</nodes>
+Nie pamietasz, co sie stalo potem, tylko ze jeden z was odszedl. Jakis czas pózniej morze nosi w sobie dziecko, prawdopodobnie zrodzone z psoty dennych demonów.</nodes>
     <nodes xsi:type="NodeAdventure" ID="44" positionX="-584" positionY="-1068" width="350" height="805" image="Event184">
       <outputs name="Walcz z tym zakleciem swoim duchem!" ownerID="44" targetID="45" fromX="-258" fromY="-1559" />
-      <outputs name="Staraj sie opierac umyslem!" ownerID="44" targetID="46" fromX="-258" fromY="-1639" />Im blizej piesni, tym silniejsza jest magia, ktora jej towarzyszy, ale nawet dzieki tej wiedzy bedziesz musial walczyc z tym zakleciem. 
+      <outputs name="Staraj sie opierac umyslem!" ownerID="44" targetID="46" fromX="-258" fromY="-1639" />Im blizej piesni, tym silniejsza jest magia, która jej towarzyszy, ale nawet dzieki tej wiedzy bedziesz musial walczyc z tym zakleciem. 
 
-Widzisz kilka morskich demonow otaczajacych twoja lodz i krazacych, kiedy spiewaja. 
+Widzisz kilka morskich demonów otaczajacych twoja lódz i krazacych, kiedy spiewaja. 
 </nodes>
     <nodes xsi:type="NodeChallenge" ID="45" positionX="321" positionY="740" width="500" height="726" challengeType="TypeSpirit" versusGroup="GROUP-CZYTLICA_5P_5M_5S" challengeScale="101" challengedList="ppl">
       <outputs name="Win" ownerID="45" targetID="47" fromX="762" fromY="244" />
@@ -1831,7 +1831,7 @@ Widzisz kilka morskich demonow otaczajacych twoja lodz i krazacych, kiedy spiewa
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="47" targetID="13" fromX="-165" fromY="-557" />Przebijasz sie przez zaklecie i widzisz trzy bardzo zaskoczone morskie demony, ktore patrza na ciebie. Mrugaja kilka razy, a potem usmiechaja sie: 
+      <outputs name="Wyjdz." ownerID="47" targetID="13" fromX="-165" fromY="-557" />Przebijasz sie przez zaklecie i widzisz trzy bardzo zaskoczone demony morskie gapiace sie na ciebie. Mrugaja kilka razy, a potem usmiechaja sie: 
 
 'Uwolniles sie, wiec mozesz zobaczyc prawdziwe twarze nas trzech. Niech morze cie wynagrodzi.'
 
@@ -1894,21 +1894,21 @@ Plywaja, ale wylewaja ci slodki pocalunek. </nodes>
       <outputs name="Zabij stwory." ownerID="6" targetID="3" fromX="1724" fromY="-265" />
       <outputs name="[Hunter] Poluj na rybe." ownerID="6" targetID="20" fromX="1724" fromY="-345" />
       <outputs name="[Demon wody] Slona woda jest zla. Ale wskocz szybko i wez to, co mozesz - mala rybka ci nie przeszkadza." ownerID="6" targetID="21" fromX="1724" fromY="-425" />
-      <outputs name="Wiekszy ksztalt wydaje sie humanoidalny. Sprobuj zawolac do niego i powiedz, ze nie chcesz walczyc." ownerID="6" targetID="37" fromX="1724" fromY="-505" />Statek jest stary i wydaje sie, ze nalezal do orkow, sadzac po surowym stylu. 
+      <outputs name="Wiekszy ksztalt wydaje sie humanoidalny. Spróbuj zawolac do niego i powiedz, ze nie chcesz walczyc." ownerID="6" targetID="37" fromX="1724" fromY="-505" />Statek jest stary i wydaje sie, ze nalezal do orków, sadzac po surowym stylu. 
 
 Orkowie sa znani ze swojej solidnej metalowej konstrukcji. Byc moze cos przezylo katastrofe. Ale sa tu male rybki i wiekszy ksztalt.</nodes>
     <nodes xsi:type="NodeAdventure" ID="7" positionX="2449" positionY="803" width="350" height="805">
       <outputs name="Zignoruj widmo i spladruj co mozesz." ownerID="7" targetID="35" fromX="2774" fromY="311" />
-      <outputs name="Widmo nie wydaje sie natychmiast agresywne. Byc moze istnieje sposob, aby go uchwycic. Wejdz i sprobuj." ownerID="7" targetID="9" fromX="2774" fromY="231" />Ryba okazala sie demonem morskim w ksztalcie czesciowo kobiety, czesciowej ryby. Jest juz martwa, a ty mozesz zrabowac. 
+      <outputs name="Widmo nie wydaje sie natychmiast agresywne. Byc moze istnieje sposób, aby go uchwycic. Wejdz i spróbuj." ownerID="7" targetID="9" fromX="2774" fromY="231" />Ryba okazala sie demonem morskim w ksztalcie czesciowo kobiety, czesciowej ryby. Jest juz martwa, a ty mozesz zrabowac. 
 
-Dostrzegasz kilka zwlok zebranych przez ryby. Widzisz rowniez upior bez celu wedrujacy po pokladzie. </nodes>
+Dostrzegasz kilka zwlok zebranych przez ryby. Widzisz równiez upiór bez celu wedrujacy po pokladzie. </nodes>
     <nodes xsi:type="NodeAdventure" ID="9" positionX="3221" positionY="670" width="350" height="805">
       <outputs name="[Czarownica] Zbadaj szczatki. Byc moze ktos tu kontrolowal widmo." ownerID="9" targetID="31" fromX="3546" fromY="178" />
-      <outputs name="Zbadaj widmo. Byc moze istnieje tutaj obiekt, ktory kontroluje jego istnienie." ownerID="9" targetID="10" fromX="3546" fromY="98" />Widmo cie obserwuje, ale nie atakuje. Wydaje sie prawie zmeczony. Placze i piszczy, ale dopoki nie podejdziesz zbyt blisko, ignoruje cie.</nodes>
+      <outputs name="Zbadaj widmo. Byc moze istnieje tutaj obiekt, który kontroluje jego istnienie." ownerID="9" targetID="10" fromX="3546" fromY="98" />Widmo cie obserwuje, ale nie atakuje. Wydaje sie prawie zmeczony. Placze i piszczy, ale dopóki nie podejdziesz zbyt blisko, ignoruje cie.</nodes>
     <nodes xsi:type="NodeAdventure" ID="10" positionX="3708" positionY="559" width="350" height="885">
-      <outputs name="[Magiczny uzytkownik] Wez totem i sprobuj kontrolowac jego magie." ownerID="10" targetID="11" fromX="4033" fromY="67" />
+      <outputs name="[Magiczny uzytkownik] Wez totem i spróbuj kontrolowac jego magie." ownerID="10" targetID="11" fromX="4033" fromY="67" />
       <outputs name="Wez totem i zobacz, co sie stanie." ownerID="10" targetID="14" fromX="4033" fromY="-12" />
-      <outputs name="Wycofaj sie i po prostu spladruj to miejsce." ownerID="10" targetID="35" fromX="4033" fromY="-92" />Widzisz jednego z upadlych orkow, ktory ma swego rodzaju totem. Prawdopodobnie byla to orcza czarownica, a przedmiot moze pomoc ci kontrolowac to widmo - albo moze cie skrzywdzic. Nigdy nie jest bezpiecznie mieszac sie do rzeczy zmarlej czarownicy. </nodes>
+      <outputs name="Wycofaj sie i po prostu spladruj to miejsce." ownerID="10" targetID="35" fromX="4033" fromY="-92" />Widzisz jednego z upadlych orków, który ma swego rodzaju totem. Prawdopodobnie byla to orcza czarownica, a przedmiot moze pomóc ci kontrolowac to widmo - albo moze cie skrzywdzic. Nigdy nie jest bezpiecznie mieszac sie do rzeczy zmarlej czarownicy. </nodes>
     <nodes xsi:type="NodeDealDamage" ID="11" positionX="4176" positionY="499" width="460" height="539" challengeTypeDamage="TypeMental" minDamage="0" maxDamage="0" useCountInPercent="false">
       <logic>
         <FilterBlock>
@@ -1931,7 +1931,7 @@ Dostrzegasz kilka zwlok zebranych przez ryby. Widzisz rowniez upior bez celu wed
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="13" targetID="35" fromX="5078" fromY="-488" />Totem przebija twoja skore i sprawia, ze jestes chory, gdy upior znika.</nodes>
+      <outputs name="Wyjdz." ownerID="13" targetID="35" fromX="5078" fromY="-488" />Totem przebija twoja skóre i sprawia, ze jestes chory, gdy upiór znika.</nodes>
     <nodes xsi:type="NodeDealDamage" ID="14" positionX="4189" positionY="-139" width="460" height="539" challengeTypeDamage="TypeMental" minDamage="0" maxDamage="0" useCountInPercent="false">
       <outputs ownerID="14" targetID="18" group="G1" fromX="4618" fromY="-527" />
       <outputs ownerID="14" targetID="13" group="G1" fromX="4618" fromY="-607" />
@@ -1964,7 +1964,7 @@ Dostrzegasz kilka zwlok zebranych przez ryby. Widzisz rowniez upior bez celu wed
       </logic>
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="19" positionX="2661" positionY="-51" width="350" height="725">
-      <outputs name="Wyjdz." ownerID="19" targetID="16" fromX="2986" fromY="-542" />Ryba bardzo cie bije i zmusza do ucieczki.</nodes>
+      <outputs name="Wyjdz." ownerID="19" targetID="16" fromX="2986" fromY="-542" />Ryba cie bije i zmusza do ucieczki.</nodes>
     <nodes xsi:type="NodeChallenge" ID="20" positionX="1994" positionY="-269" width="500" height="726" challengeType="TypeMental" versusConcept="true" versusGroup="GROUP-CON_M_0P_4M_0S" challengeScale="101" challengedList="ppl">
       <logic>
         <FilterBlock>
@@ -2007,9 +2007,9 @@ Dostrzegasz kilka zwlok zebranych przez ryby. Widzisz rowniez upior bez celu wed
       </logic>
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="22" positionX="855" positionY="-944" width="350" height="885" image="Event211">
-      <outputs name="Pomoz im i zaatakuj rybe." ownerID="22" targetID="23" fromX="1180" fromY="-1435" />
+      <outputs name="Pomóz im i zaatakuj rybe." ownerID="22" targetID="23" fromX="1180" fromY="-1435" />
       <outputs name="Wyrzuc mieso z lodzi, aby zwabic rybe od osoby." ownerID="22" targetID="24" fromX="1180" fromY="-1515" />
-      <outputs name="Skorzystaj z tej okazji, aby spladrowac wrak statku bez walki z ryba. " ownerID="22" targetID="25" fromX="1180" fromY="-1595" />Przeszukasz wrak statku i zobaczysz, ze jest on bardzo niedawny. W rzeczywistosci mozesz zobaczyc cos lub kogos, kto probuje wyplynac na powierzchnie, ale sa atakowani przez roje paskudnych ryb!</nodes>
+      <outputs name="Skorzystaj z tej okazji, aby spladrowac wrak statku bez walki z ryba. " ownerID="22" targetID="25" fromX="1180" fromY="-1595" />Przeszukujesz wrak statku i widzisz, ze jest on bardzo niedawny. W rzeczywistosci mozesz zobaczyc cos lub kogos, kto próbuje wyplynac na powierzchnie, ale sa atakowani przez roje paskudnych ryb!</nodes>
     <nodes xsi:type="NodeChallenge" ID="23" positionX="1365" positionY="-1134" width="500" height="807" challengeType="TypePhysical" versusGroup="GROUP-SEA_BEAST_3P_1M_1S" challengeScale="101" challengedList="ppl">
       <outputs name="Win" ownerID="23" targetID="26" group="G1" fromX="1806" fromY="-1629" />
       <outputs name="Lose" ownerID="23" targetID="19" fromX="1806" fromY="-1709" />
@@ -2174,9 +2174,9 @@ Dostrzegasz kilka zwlok zebranych przez ryby. Widzisz rowniez upior bez celu wed
       </logic>
       <outputs name="[Ork] Teraz, kiedy o tym wspomniala, tak! Zaatakuj ja." ownerID="36" targetID="38" fromX="1328" fromY="1301" />
       <outputs name="Zapytaj, dlaczego sama sie zatrzymala, jesli uzna, ze zostanie zaatakowana." ownerID="36" targetID="39" fromX="1328" fromY="1221" />
-      <outputs name="Powiedz, ze cie to nie obchodzi, ze jestes tu, by spladrowac, a ona lepiej trzymac sie z daleka." ownerID="36" targetID="41" fromX="1328" fromY="1141" />Stworzenie plywa na powierzchnie. Jej cialo jest po czesci ryba, a po czesci kobieta, a jej glos jest melodyjny: 
+      <outputs name="Powiedz, ze cie to nie obchodzi, jestes tu, by spladrowac, a ona lepiej trzymac sie z daleka." ownerID="36" targetID="41" fromX="1328" fromY="1141" />Stworzenie plywa na powierzchnie. Jej cialo jest po czesci ryba, a po czesci kobieta, a jej glos jest melodyjny: 
 
-- Nie chcesz mnie skrzywdzic? Ale to ja zatopilem te lodz, wiec zalozylem, ze przybyles, aby ich pomscic.'</nodes>
+- Nie chcesz mnie skrzywdzic? Ale to ja zatopilem te lódz, wiec zalozylem, ze przybyles, aby ich pomscic.'</nodes>
     <nodes xsi:type="NodeChallenge" ID="37" positionX="359" positionY="1578" width="500" height="726" challengeType="TypeMental" versusGroup="GROUP-CZYTLICA_ONE_3P_3M_3S" challengeScale="101" challengedList="ppl">
       <outputs name="Win" ownerID="37" targetID="36" fromX="800" fromY="1082" />
       <outputs name="Lose" ownerID="37" targetID="47" fromX="800" fromY="1002" />
@@ -2198,16 +2198,16 @@ Dostrzegasz kilka zwlok zebranych przez ryby. Widzisz rowniez upior bez celu wed
       <outputs name="Surrender" ownerID="38" targetID="19" fromX="2154" fromY="653" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="39" positionX="1426" positionY="2255" width="350" height="725">
-      <outputs name="I?" ownerID="39" targetID="40" fromX="1751" fromY="1763" />„Nie moge odejsc. To byla moja inicjacja. Zrobilem to dobrze, ale ...Coz, mialem przyniesc pewna prywatna czesc kapitana jako trofeum - byl mezczyzna, widzisz, niezwyklym dla orkow. To glupi zart moich siostr, ale prawo uczynilo ich slowami wypowiedzianymi oficjalnie.'</nodes>
+      <outputs name="I?" ownerID="39" targetID="40" fromX="1751" fromY="1763" />„Nie moge odejsc. To byla moja inicjacja. Zrobilem to dobrze, ale ...Cóz, mialem przyniesc pewna prywatna czesc kapitana jako trofeum - byl mezczyzna, widzisz, niezwyklym dla orków. To glupi zart moich sióstr, ale prawo uczynilo ich slowami wypowiedzianymi oficjalnie.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="40" positionX="1877" positionY="2424" width="350" height="805">
       <outputs name="Jesli poradzisz sobie z duchem, czy ona ci zaplaci?" ownerID="40" targetID="42" fromX="2202" fromY="1932" />
-      <outputs name="Powiedz, ze cie to nie obchodzi, ze jestes tu, by spladrowac, a ona lepiej trzymac sie z daleka." ownerID="40" targetID="41" fromX="2202" fromY="1852" />„Ten przeklety kapitan wyczul moj plan, a moze byla to tylko szansa, ale zamknal sie w kabinie, kiedy statek upadl i jest tam teraz cholerny duch, a ja nie jestem dobra z duchami.'</nodes>
+      <outputs name="Powiedz, ze cie to nie obchodzi, jestes tu, by spladrowac, a ona lepiej trzymac sie z daleka." ownerID="40" targetID="41" fromX="2202" fromY="1852" />„Ten przeklety kapitan wyczul mój plan, a moze byla to tylko szansa, ale zamknal sie w kabinie, kiedy statek upadl i jest tam teraz cholerny duch, a ja nie jestem dobra z duchami.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="41" positionX="2376" positionY="1734" width="350" height="725">
-      <outputs name="Lup miejsce, unikaj duchow i wyjdz." ownerID="41" targetID="35" fromX="2701" fromY="1242" />„Och, racja, idzcie wiec dalej.'
+      <outputs name="Lup miejsce, unikaj duchów i wyjdz." ownerID="41" targetID="35" fromX="2701" fromY="1242" />„Och, racja, idzcie wiec dalej.'
 
 Plywa.</nodes>
     <nodes xsi:type="NodeAdventure" ID="42" positionX="2376" positionY="2511" width="350" height="725">
-      <outputs name="Zgadzam sie poradzic sobie z duchem." ownerID="42" targetID="43" fromX="2701" fromY="2019" />„Tak, dam ci cenny artefakt, ktory znalazlem.'</nodes>
+      <outputs name="Zgadzam sie poradzic sobie z duchem." ownerID="42" targetID="43" fromX="2701" fromY="2019" />„Tak, dam ci cenny artefakt, który znalazlem.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="43" positionX="2851" positionY="2319" width="350" height="725">
       <logic>
         <ModifierBlock>
@@ -2219,15 +2219,15 @@ Plywa.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Widmo nie wydaje sie natychmiast agresywne. Byc moze istnieje sposob, aby go uchwycic. Wejdz i sprobuj." ownerID="43" targetID="44" fromX="3176" fromY="1827" />„Dobrze, zostawie ci prezent i patrze z daleka. Nie bedziemy rozmawiac ponownie, ale zycze ci dobrych wiatrow i spokojnych wod.„Znika w falach i paczka unosi sie w twoja strone. 
+      <outputs name="Widmo nie wydaje sie natychmiast agresywne. Byc moze istnieje sposób, aby go uchwycic. Wejdz i spróbuj." ownerID="43" targetID="44" fromX="3176" fromY="1827" />„Dobrze, zostawie ci prezent i patrze z daleka. Nie bedziemy rozmawiac ponownie, ale zycze ci dobrych wiatrów i spokojnych wód.„Znika w falach i paczka unosi sie w twoja strone. 
 
-Plywasz do wraku statku i widzisz kilka zwlok zebranych przez ryby. Widzisz rowniez upior bez celu wedrujacy po pokladzie. </nodes>
+Plywasz do wraku statku i widzisz kilka zwlok zebranych przez ryby. Widzisz równiez upiór bez celu wedrujacy po pokladzie. </nodes>
     <nodes xsi:type="NodeAdventure" ID="44" positionX="3322" positionY="2065" width="350" height="805">
       <outputs name="[Czarownica] Zbadaj szczatki. Byc moze ktos tu kontrolowal widmo." ownerID="44" targetID="31" fromX="3647" fromY="1573" />
-      <outputs name="Zbadaj widmo. Byc moze istnieje tutaj obiekt, ktory kontroluje jego istnienie." ownerID="44" targetID="45" fromX="3647" fromY="1493" />Widmo cie obserwuje, ale nie atakuje. Wydaje sie prawie zmeczony. Placze i piszczy, ale dopoki nie podejdziesz zbyt blisko, ignoruje cie.</nodes>
+      <outputs name="Zbadaj widmo. Byc moze istnieje tutaj obiekt, który kontroluje jego istnienie." ownerID="44" targetID="45" fromX="3647" fromY="1493" />Widmo cie obserwuje, ale nie atakuje. Wydaje sie prawie zmeczony. Placze i piszczy, ale dopóki nie podejdziesz zbyt blisko, ignoruje cie.</nodes>
     <nodes xsi:type="NodeAdventure" ID="45" positionX="3776" positionY="2237" width="350" height="805">
-      <outputs name="[Magiczny uzytkownik] Wez totem i sprobuj kontrolowac jego magie." ownerID="45" targetID="11" fromX="4101" fromY="1745" />
-      <outputs name="Wez totem i zobacz, co sie stanie." ownerID="45" targetID="14" fromX="4101" fromY="1665" />Widzisz jednego z upadlych orkow, ktory ma swego rodzaju totem. Prawdopodobnie byla to orcza czarownica, a przedmiot moze pomoc ci kontrolowac to widmo - albo moze cie skrzywdzic. Nigdy nie jest bezpiecznie mieszac sie do rzeczy zmarlej czarownicy. </nodes>
+      <outputs name="[Magiczny uzytkownik] Wez totem i spróbuj kontrolowac jego magie." ownerID="45" targetID="11" fromX="4101" fromY="1745" />
+      <outputs name="Wez totem i zobacz, co sie stanie." ownerID="45" targetID="14" fromX="4101" fromY="1665" />Widzisz jednego z upadlych orków, który ma swego rodzaju totem. Prawdopodobnie byla to orcza czarownica, a przedmiot moze pomóc ci kontrolowac to widmo - albo moze cie skrzywdzic. Nigdy nie jest bezpiecznie mieszac sie do rzeczy zmarlej czarownicy. </nodes>
     <nodes xsi:type="NodeAdventure" ID="47" positionX="896" positionY="869" width="350" height="966" image="Event211">
       <outputs name="Zabij stwory." ownerID="47" targetID="3" fromX="1221" fromY="377" />
       <outputs name="[Hunter] Poluj na rybe." ownerID="47" targetID="20" fromX="1221" fromY="297" />
@@ -2262,12 +2262,12 @@ Plywasz do wraku statku i widzisz kilka zwlok zebranych przez ryby. Widzisz rown
           </LogicProcessing>
         </FilterBlock>
       </logic>
-      <outputs name="Wez lodz powoli. " ownerID="2" targetID="4" fromX="841" fromY="-653" />
+      <outputs name="Wez lódz powoli. " ownerID="2" targetID="4" fromX="841" fromY="-653" />
       <outputs name="Plywac samemu." ownerID="2" targetID="10" fromX="841" fromY="-733" />
       <outputs name="Wyjdz." ownerID="2" targetID="3" fromX="841" fromY="-813" />
-      <outputs name="[Demon wody] Slona woda nie sluzy ci dobrze, ale oprocz mdlosci plywanie nie powinno byc dla ciebie problemem." ownerID="2" targetID="15" fromX="841" fromY="-893" />Widzisz jakies szczatki unoszace sie wsrod skal. Woda jest dosc spokojna, ale skaly sa bardzo ostre, a przestrzen miedzy nimi jest ciasna. 
+      <outputs name="[Demon wody] Slona woda nie sluzy ci dobrze, ale oprócz mdlosci plywanie nie powinno byc dla ciebie problemem." ownerID="2" targetID="15" fromX="841" fromY="-893" />Widzisz jakies gruzy unoszace sie wsród skal. Woda jest dosc spokojna, ale skaly sa bardzo ostre, a przestrzen miedzy nimi jest ciasna. 
 
-Mozesz probowac plywac dla potencjalnego lupu z lodzia lub bez niej. </nodes>
+Mozesz próbowac plywac dla potencjalnego lupu z lodzia lub bez niej. </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="3" positionX="-67" positionY="-737" width="350" height="530" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeChallenge" ID="4" positionX="979" positionY="388" width="500" height="726" challengeType="TypePhysical" versusConcept="true" versusGroup="GROUP-CON_P_1P_0M_0S" challengeScale="101" challengedList="ppl">
       <outputs name="Win" ownerID="4" targetID="5" fromX="1420" fromY="-107" />
@@ -2297,7 +2297,7 @@ Mozesz probowac plywac dla potencjalnego lupu z lodzia lub bez niej. </nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Plyn do brzegu tak szybko, jak mozesz!" ownerID="7" targetID="8" fromX="2044" fromY="-872" />Twoja lodz jest uszkodzona i tonie!</nodes>
+      <outputs name="Plyn do brzegu tak szybko, jak tylko mozesz!" ownerID="7" targetID="8" fromX="2044" fromY="-872" />Twoja lódz jest uszkodzona i tonie!</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="8" positionX="2143" positionY="-504" width="350" height="530" allPlayersXP="1" allPlayersRP="1" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventure" ID="9" positionX="1735" positionY="-1162" width="350" height="725">
       <logic>
@@ -2307,7 +2307,7 @@ Mozesz probowac plywac dla potencjalnego lupu z lodzia lub bez niej. </nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="9" targetID="8" fromX="2060" fromY="-1653" />Skaly okazuja sie byc ostre jak brzytwa, a wody nie sa tak spokojne, jak ci sie wydawalo. Uderzasz sie i wracasz do swojej lodzi.</nodes>
+      <outputs name="Wyjdz." ownerID="9" targetID="8" fromX="2060" fromY="-1653" />Skaly okazuja sie ostre jak brzytwa, a wody nie sa tak spokojne, jak sadziles. Uderzasz sie i wracasz do swojej lodzi.</nodes>
     <nodes xsi:type="NodeChallenge" ID="10" positionX="975" positionY="-391" width="500" height="726" challengeType="TypePhysical" versusConcept="true" versusGroup="GROUP-CON_P_2P_0M_0S" challengeScale="101" challengedList="ppl">
       <outputs name="Win" ownerID="10" targetID="5" fromX="1416" fromY="-886" />
       <outputs name="Lose" ownerID="10" targetID="11" fromX="1416" fromY="-966" />
@@ -2557,12 +2557,12 @@ Mozesz probowac plywac dla potencjalnego lupu z lodzia lub bez niej. </nodes>
           </LogicProcessing>
         </FilterBlock>
       </logic>
-      <outputs name="Wez lodz powoli. " ownerID="2" targetID="4" fromX="781" fromY="-600" />
+      <outputs name="Wez lódz powoli. " ownerID="2" targetID="4" fromX="781" fromY="-600" />
       <outputs name="Plywac samemu." ownerID="2" targetID="10" fromX="781" fromY="-680" />
       <outputs name="Wyjdz." ownerID="2" targetID="3" fromX="781" fromY="-760" />
-      <outputs name="[Demon wody] Slona woda nie sluzy ci dobrze, ale oprocz mdlosci plywanie nie powinno byc dla ciebie problemem." ownerID="2" targetID="15" fromX="781" fromY="-840" />Widzisz jakies szczatki unoszace sie wsrod skal. Woda jest dosc spokojna, ale skaly sa bardzo ostre, a przestrzen miedzy nimi jest ciasna. 
+      <outputs name="[Demon wody] Slona woda nie sluzy ci dobrze, ale oprócz mdlosci plywanie nie powinno byc dla ciebie problemem." ownerID="2" targetID="15" fromX="781" fromY="-840" />Widzisz jakies gruzy unoszace sie wsród skal. Woda jest dosc spokojna, ale skaly sa bardzo ostre, a przestrzen miedzy nimi jest ciasna. 
 
-Mozesz probowac plywac dla potencjalnego lupu z lodzia lub bez niej. </nodes>
+Mozesz próbowac plywac dla potencjalnego lupu z lodzia lub bez niej. </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="3" positionX="-4" positionY="-763" width="350" height="530" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeChallenge" ID="4" positionX="979" positionY="388" width="500" height="726" challengeType="TypePhysical" versusConcept="true" versusGroup="GROUP-CON_P_3P_0M_0S" challengeScale="101" challengedList="ppl">
       <outputs name="Win" ownerID="4" targetID="5" fromX="1420" fromY="-107" />
@@ -2592,7 +2592,7 @@ Mozesz probowac plywac dla potencjalnego lupu z lodzia lub bez niej. </nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Plyn do brzegu tak szybko, jak mozesz!" ownerID="7" targetID="8" fromX="2044" fromY="-872" />Twoja lodz jest uszkodzona i tonie!</nodes>
+      <outputs name="Plyn do brzegu tak szybko, jak tylko mozesz!" ownerID="7" targetID="8" fromX="2044" fromY="-872" />Twoja lódz jest uszkodzona i tonie!</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="8" positionX="2143" positionY="-504" width="350" height="530" allPlayersXP="1" allPlayersRP="1" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventure" ID="9" positionX="1735" positionY="-1162" width="350" height="725">
       <logic>
@@ -2747,10 +2747,8 @@ Mozesz probowac plywac dla potencjalnego lupu z lodzia lub bez niej. </nodes>
       </logic>
       <outputs name="[Demon lasu] Viatroviec? Powiedz im, aby sie uspokoili i przestali zawstydzac swojego rodzaju, a potem pytaja, co jest nie tak." ownerID="2" targetID="3" fromX="785" fromY="-642" />
       <outputs name="[Madrosc] Obserwuj te dziwna burze przez chwile. " ownerID="2" targetID="23" fromX="785" fromY="-722" />
-      <outputs name="Manewruj lodzia i poradzisz sobie z dziwnym wiatrem po." ownerID="2" targetID="12" fromX="785" fromY="-802" />
-      <outputs name="Zaatakuj wiatr i miej nadzieje, ze zniknie, zanim uderzysz w skaly!" ownerID="2" targetID="15" fromX="785" fromY="-882" />Kiedy przedzierasz sie przez wzburzona plame na morzach, zostajesz zlapany przez nieoczekiwany podmuch wiatru, ktory atakuje twoja talie, jakby probowal dostac sie do srodka. 
-
-Twoja lodz staje sie naprawde niestabilna, a przed nia sa skaly.</nodes>
+      <outputs name="Manewruj lodzia i uporaj sie z dziwnym wiatrem." ownerID="2" targetID="12" fromX="785" fromY="-802" />
+      <outputs name="Zaatakuj wiatr i miej nadzieje, ze zniknie, zanim uderzysz w skaly!" ownerID="2" targetID="15" fromX="785" fromY="-882" />Kiedy przedzierasz sie przez wzburzona plame na morzach, zostajesz zlapany przez nieoczekiwany podmuch wiatru, który atakuje twoja talie, jakby próbowal dostac sie do srodka.Twoja lódz staje sie naprawde niestabilna, a przed nia sa skaly.</nodes>
     <nodes xsi:type="NodeAdventure" ID="3" positionX="814" positionY="852" width="350" height="805">
       <logic>
         <FilterBlock>
@@ -2759,13 +2757,13 @@ Twoja lodz staje sie naprawde niestabilna, a przed nia sa skaly.</nodes>
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Powiedz, ze rozumiesz, ale nie moze po prostu zaatakowac zadnej lodzi, ktora widzi. Mogl sie dostac albo zabic." ownerID="3" targetID="4" fromX="1139" fromY="360" />
-      <outputs name="Powiedz mu, zeby teraz wysiadl z lodzi. " ownerID="3" targetID="11" fromX="1139" fromY="280" />Wiatr uspokaja sie, a twoja lodz znow sie uspokaja. Viatroviec mowi: 
+      <outputs name="Powiedz, ze rozumiesz, ale nie moze po prostu zaatakowac zadnej lodzi, która widzi. Mógl sie dostac albo zabic." ownerID="3" targetID="4" fromX="1139" fromY="360" />
+      <outputs name="Powiedz mu, zeby teraz wysiadl z lodzi. " ownerID="3" targetID="11" fromX="1139" fromY="280" />Wiatr uspokaja sie, a twoja lódz znów sie uspokaja. Viatroviec mówi: 
 
-'Och, dziekuje lasowi, przyjazna twarz! Zgubilem sie na wietrze i wdarlem w te nedzna rzecz, ktora ludzie nazywaja morzem. Jest tak rozlegly, bez drzew ...Wiem, ze jestem zbudowany z wiatru, ale urodzilem sie, aby wedrowac po ziemi, nie to!'</nodes>
+'Och, dziekuje lasowi, przyjazna twarz! Zgubilem sie na wietrze i wdarlem w te nedzna rzecz, która ludzie nazywaja morzem. Jest tak rozlegly, bez drzew ...Wiem, ze jestem zbudowany z wiatru, ale urodzilem sie, aby wedrowac po ziemi, nie to!'</nodes>
     <nodes xsi:type="NodeAdventure" ID="4" positionX="1228" positionY="1100" width="350" height="805">
       <outputs name="Zgadzam sie." ownerID="4" targetID="5" fromX="1553" fromY="608" />
-      <outputs name="Zgadzam sie, ale zaoferuj mu lepszy dom u twego boku, w sluzbie bogow, to nauczy go komfortu nawet na morzu." ownerID="4" targetID="6" fromX="1553" fromY="528" />„Och, tak. Przepraszam. Zabierzesz mnie do domu?'</nodes>
+      <outputs name="Zgadzam sie, ale zaoferuj mu lepszy dom u twego boku, w sluzbie bogów, to nauczy go, jak czuc sie komfortowo nawet na morzu." ownerID="4" targetID="6" fromX="1553" fromY="528" />„Och, tak. Przepraszam. Zabierzesz mnie do domu?'</nodes>
     <nodes xsi:type="NodeAdventure" ID="5" positionX="1746" positionY="1068" width="350" height="725">
       <logic>
         <ModifierBlock>
@@ -2777,7 +2775,7 @@ Twoja lodz staje sie naprawde niestabilna, a przed nia sa skaly.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Dziekuje mu i kontynuuj swoja podroz." ownerID="5" targetID="8" fromX="2071" fromY="576" />„Dziekuje, ukryje sie pod pokladem. Wypusc mnie, gdy dotrzemy do ziemi. Tutaj znalazlem to, zanim sie tu zgubilem - dar dziekuje.'</nodes>
+      <outputs name="Dziekuje mu i kontynuuj swoja podróz." ownerID="5" targetID="8" fromX="2071" fromY="576" />„Dziekuje, ukryje sie pod pokladem. Wypusc mnie, gdy dotrzemy do ziemi. Tutaj znalazlem to, zanim sie tu zgubilem - dar dziekuje.'</nodes>
     <nodes xsi:type="NodeChallenge" ID="6" positionX="2226" positionY="856" width="500" height="726" challengeType="TypeMental" versusGroup="GROUP-VIATROVIEC_3P_4M_4S" challengeScale="101" challengedList="ppl">
       <logic>
         <FilterBlock>
@@ -2791,7 +2789,7 @@ Twoja lodz staje sie naprawde niestabilna, a przed nia sa skaly.</nodes>
       <outputs name="Surrender" ownerID="6" targetID="7" fromX="2667" fromY="200" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="7" positionX="3305" positionY="739" width="350" height="725">
-      <outputs name="Wyjdz." ownerID="7" targetID="8" fromX="3630" fromY="247" />„Nie, nie, nie, probujesz mnie oszukac, nie chce juz zostac!'
+      <outputs name="Wyjdz." ownerID="7" targetID="8" fromX="3630" fromY="247" />„Nie, nie, nie, próbujesz mnie oszukac, nie chce juz zostac!'
 
 Znowu odlatuje z wiatrem, ale przynajmniej daleko od swojej lodzi.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="8" positionX="2205" positionY="1310" width="350" height="530" allPlayersXP="4" allPlayersRP="2" linkedEventUniqueID="0" />
@@ -2806,10 +2804,10 @@ Znowu odlatuje z wiatrem, ale przynajmniej daleko od swojej lodzi.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Dziekuje mu i kontynuuj swoja podroz." ownerID="9" targetID="10" fromX="3217" fromY="661" />„Dziekuje, zrobie, co mowisz, podazaj za swoim przykladem, tak. I tutaj, cos, co znalazlem wczesniej, moj pierwszy prezent dla ciebie jako nowych przyjaciol.'</nodes>
+      <outputs name="Dziekuje mu i kontynuuj swoja podróz." ownerID="9" targetID="10" fromX="3217" fromY="661" />„Dziekuje, zrobie, co mówisz, podazaj za swoim przykladem, tak. I tutaj, cos, co znalazlem wczesniej, mój pierwszy prezent dla ciebie jako nowych przyjaciól.'</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="10" positionX="3338" positionY="1277" width="350" height="530" allPlayersXP="5" allPlayersRP="2" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventure" ID="11" positionX="1812" positionY="327" width="350" height="725">
-      <outputs name="Wyjdz." ownerID="11" targetID="8" fromX="2137" fromY="-164" />„Dobrze, dobrze, odejde, zagubiony na morzu, odszedl na zawsze, okrutny los?'
+      <outputs name="Wyjdz." ownerID="11" targetID="8" fromX="2137" fromY="-164" />„Dobrze, dobrze, odejde, zagubiony na morzu, odszedl na zawsze, okrutny los?”.'
 
 Znowu odlatuje z wiatrem, ale przynajmniej daleko od swojej lodzi.</nodes>
     <nodes xsi:type="NodeChallenge" ID="12" positionX="873" positionY="-841" width="500" height="726" challengeType="TypePhysical" versusConcept="true" versusGroup="GROUP-CON_P_6P_0M_0S" challengeScale="101" challengedList="ppl">
@@ -2850,7 +2848,7 @@ Widzac, ze prawie cie to rozbilo, wykrzykuje przeprosiny i odlatuje.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="16" targetID="21" fromX="1159" fromY="-2102" />Zabijasz tego, co musialo byc demonem wiatru, ale trwalo to zbyt dlugo i twoja lodz uderzyla w niektore skaly. Tracisz troche sprzetu i siniaki. </nodes>
+      <outputs name="Wyjdz." ownerID="16" targetID="21" fromX="1159" fromY="-2102" />Zabijasz tego, co musialo byc demonem wiatru, ale trwalo to zbyt dlugo i twoja lódz uderzyla w niektóre skaly. Tracisz troche sprzetu i siniaki. </nodes>
     <nodes xsi:type="NodeAdventure" ID="17" positionX="1857" positionY="-1862" width="350" height="805">
       <logic>
         <ModifierBlock>
@@ -2863,9 +2861,9 @@ Widzac, ze prawie cie to rozbilo, wykrzykuje przeprosiny i odlatuje.</nodes>
         </ModifierBlock>
       </logic>
       <outputs name="Zgadzam sie pracowac z istota. " ownerID="17" targetID="34" fromX="2182" fromY="-2353" />
-      <outputs name="Odmow i zaryzykuj na skalach." ownerID="17" targetID="26" fromX="2182" fromY="-2433" />Poddajesz sie w sama pore, by poczuc, ze twoja lodz uderza w kamien. Uderzenie powoduje, ze niektorzy z was zachoruja, a niektore urzadzenia mogly spasc za burte. Stwor wiatru krzyczy: 
+      <outputs name="Odmów i ryzykuj na skalach." ownerID="17" targetID="26" fromX="2182" fromY="-2433" />Poddajesz sie w sama pore, by poczuc, ze twoja lódz uderza w kamien. Uderzenie powoduje, ze niektórzy z was zachoruja, a niektóre urzadzenia mogly spasc za burte. Stwór wiatru krzyczy: 
 
-'Hej, hej, nigdy nie chcialem walczyc. Chce po prostu wrocic na lad, a ta lodz sie zalamie, jesli ja zatrzymasz. Pomoge ci, ale musisz dac mi troche swojego ducha, aby mnie wzmocnic, abysmy mogli przeplynac obok skal.'</nodes>
+'Hej, hej, nigdy nie chcialem walczyc. Chce po prostu wrócic na lad, a ta lódz sie zalamie, jesli ja zatrzymasz. Pomoge ci, ale musisz dac mi troche swojego ducha, aby mnie wzmocnic, abysmy mogli przeplynac obok skal.'</nodes>
     <nodes xsi:type="NodeDealDamage" ID="18" positionX="1324" positionY="-1594" width="460" height="459" challengeTypeDamage="TypePhysical" minDamage="20" maxDamage="30" useCountInPercent="true" targetGroup="ppl">
       <outputs ownerID="18" targetID="17" fromX="1753" fromY="-1982" />
     </nodes>
@@ -2880,7 +2878,7 @@ Widzac, ze prawie cie to rozbilo, wykrzykuje przeprosiny i odlatuje.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="19" targetID="20" fromX="536" fromY="-2864" />Przegrywasz walke, a twoja lodz rozbija sie o skaly. Ale przynajmniej istota wiatru odlatuje.</nodes>
+      <outputs name="Wyjdz." ownerID="19" targetID="20" fromX="536" fromY="-2864" />Przegrywasz walke, a twoja lódz rozbija sie o skaly. Ale przynajmniej istota wiatru odlatuje.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="20" positionX="808" positionY="-2622" width="350" height="530" allPlayersXP="1" allPlayersRP="1" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventureEnd" ID="21" positionX="2828" positionY="-1725" width="350" height="455" allPlayersXP="5" allPlayersRP="1" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventure" ID="23" positionX="912" positionY="30" width="350" height="805">
@@ -2891,7 +2889,7 @@ Widzac, ze prawie cie to rozbilo, wykrzykuje przeprosiny i odlatuje.</nodes>
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Sprobuj wywolac to, co moze byc. " ownerID="23" targetID="24" fromX="1237" fromY="-461" />
+      <outputs name="Spróbuj zadzwonic do dowolnego urzadzenia. " ownerID="23" targetID="24" fromX="1237" fromY="-461" />
       <outputs name="Atakuj cokolwiek to jest." ownerID="23" targetID="15" fromX="1237" fromY="-541" />To moze byc demon, poniewaz mimo burzy nie powinien zachowywac sie wiatr. 
 </nodes>
     <nodes xsi:type="NodeChallenge" ID="24" positionX="2240" positionY="21" width="500" height="726" challengeType="TypeMental" versusGroup="GROUP-VIATROVIEC_3P_4M_4S" challengeScale="101" challengedList="ppl">
@@ -2900,8 +2898,8 @@ Widzac, ze prawie cie to rozbilo, wykrzykuje przeprosiny i odlatuje.</nodes>
       <outputs name="Surrender" ownerID="24" targetID="28" fromX="2681" fromY="-634" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="25" positionX="2859" positionY="136" width="350" height="805">
-      <outputs name="Zgodz sie pozwolic mu zostac na statku, az dotrzesz do ladu." ownerID="25" targetID="30" fromX="3184" fromY="-355" />
-      <outputs name="Nie, powiedz mu, zeby odszedl teraz!" ownerID="25" targetID="29" fromX="3184" fromY="-355" />„Ty mowisz do mnie? Jestem viatroviec. Zgubilem sie na wietrze i wdarlem w te nedzna rzecz, ktora ludzie nazywaja morzem. Jest tak rozlegly, bez drzew ...Wiem, ze jestem zbudowany z wiatru, ale urodzilem sie, aby wedrowac po ziemi, nie to! Przestane sprawiac ci klopoty, ale czy mozesz mnie zabrac do domu? Kazda ziemia zrobi.'</nodes>
+      <outputs name="Zgódz sie pozwolic mu zostac na statku, az dotrzesz do ladu." ownerID="25" targetID="30" fromX="3184" fromY="-355" />
+      <outputs name="Nie, powiedz mu, zeby odszedl teraz!" ownerID="25" targetID="29" fromX="3184" fromY="-355" />„Ty mówisz do mnie? Jestem viatroviec. Zgubilem sie na wietrze i wdarlem w te nedzna rzecz, która ludzie nazywaja morzem. Jest tak rozlegly, bez drzew ...Wiem, ze jestem zbudowany z wiatru, ale urodzilem sie, aby wedrowac po ziemi, nie to! Przestane sprawiac ci klopoty, ale czy mozesz mnie zabrac do domu? Kazda ziemia zrobi.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="26" positionX="-205" positionY="-2175" width="350" height="725">
       <logic>
         <ModifierBlock>
@@ -2925,12 +2923,12 @@ Widzac, ze prawie cie to rozbilo, wykrzykuje przeprosiny i odlatuje.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="27" targetID="20" fromX="4424" fromY="-1166" />Probujesz poradzic sobie z tym, czym jest ten wiatr, ale nie uspokaja sie, a twoja lodz rozbija sie o skaly.</nodes>
+      <outputs name="Wyjdz." ownerID="27" targetID="20" fromX="4424" fromY="-1166" />Próbujesz poradzic sobie z tym, czym jest ten wiatr, ale nie uspokaja sie, a twoja lódz rozbija sie o skaly.</nodes>
     <nodes xsi:type="NodeDealDamage" ID="28" positionX="3054" positionY="-691" width="460" height="459" challengeTypeDamage="TypePhysical" minDamage="30" maxDamage="60" useCountInPercent="true" targetGroup="ppl">
       <outputs ownerID="28" targetID="27" fromX="3483" fromY="-1079" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="29" positionX="3654" positionY="-27" width="350" height="725">
-      <outputs name="Wyjdz." ownerID="29" targetID="21" fromX="3979" fromY="-518" />Stwor placze ze smutku, ale odlatuje. Widzisz, jak burza go polknela. Ale twoja lodz wraca do normalnosci i mozesz plywac w spokoju.</nodes>
+      <outputs name="Wyjdz." ownerID="29" targetID="21" fromX="3979" fromY="-518" />Stwór placze ze smutku, ale odlatuje. Widzisz, jak burza go polknela. Ale twoja lódz wraca do normalnosci i mozesz plywac w spokoju.</nodes>
     <nodes xsi:type="NodeDealDamage" ID="30" positionX="4176" positionY="46" width="460" height="619" challengeTypeDamage="TypeMental" minDamage="0" maxDamage="0" useCountInPercent="false">
       <logic>
         <ModifierBlock>
@@ -2962,7 +2960,7 @@ Widzac, ze prawie cie to rozbilo, wykrzykuje przeprosiny i odlatuje.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Witajcie go." ownerID="32" targetID="21" fromX="5070" fromY="-203" />„Jestes dobry, jestes bezpieczny i twoj Stribog, on jest taki jak ja, tylko wiekszy. Przyjde teraz z toba.'</nodes>
+      <outputs name="Witajcie go." ownerID="32" targetID="21" fromX="5070" fromY="-203" />„Jestes dobry, jestes bezpieczny i twój Stribog, on jest taki jak ja, tylko wiekszy. Przyjde teraz z toba.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="33" positionX="5279" positionY="219" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -2976,14 +2974,14 @@ Widzac, ze prawie cie to rozbilo, wykrzykuje przeprosiny i odlatuje.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Witajcie go." ownerID="33" targetID="21" fromX="5604" fromY="-272" />„Jestes dobry, jestes bezpieczny, a jeden z twoich bogow jest wiatrem, tak? Przyjde teraz z toba.'</nodes>
+      <outputs name="Witajcie go." ownerID="33" targetID="21" fromX="5604" fromY="-272" />„Jestes dobry, jestes bezpieczny, a jeden z twoich bogów jest wiatrem, tak? Przyjde teraz z toba.'</nodes>
     <nodes xsi:type="NodeDealDamage" ID="34" positionX="2331" positionY="-2215" width="460" height="459" challengeTypeDamage="TypeSpirit" minDamage="20" maxDamage="30" useCountInPercent="true" targetGroup="ppl">
       <outputs ownerID="34" targetID="35" fromX="2760" fromY="-2603" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="35" positionX="2912" positionY="-2232" width="350" height="725">
-      <outputs name="Wyjdz." ownerID="35" targetID="36" fromX="3237" fromY="-2723" />Demon zywi sie twoim duchem i jest w stanie uspokoic burze. Plywasz z powrotem w bezpieczne miejsce, a stworzenie znowu mowi: 
+      <outputs name="Wyjdz." ownerID="35" targetID="36" fromX="3237" fromY="-2723" />Demon zywi sie twoim duchem i jest w stanie uspokoic burze. Plywasz z powrotem w bezpieczne miejsce, a stworzenie znowu mówi: 
 
-'Nakarmilam sie i jestem wystarczajaco silna, by znalezc teraz swoj dom. Przepraszam za klopot. PA.'
+'Nakarmilam sie i jestem wystarczajaco silna, by znalezc teraz swój dom. Przepraszam za klopot. PA.'
 
 Odlatuje. </nodes>
     <nodes xsi:type="NodeDealDamage" ID="36" positionX="3414" positionY="-2465" width="460" height="539" challengeTypeDamage="TypeMental" minDamage="0" maxDamage="0" useCountInPercent="false">
@@ -3005,9 +3003,9 @@ Odlatuje. </nodes>
       </logic>
       <outputs name="Witajcie go." ownerID="37" targetID="20" fromX="4409" fromY="-2946" />Demon odwraca sie do ciebie: 
 
-'Jestes dobry, jestes bezpieczny, a jeden z twoich bogow jest wiatrem, tak? Przyjde teraz z toba.'</nodes>
+'Jestes dobry, jestes bezpieczny, a jeden z twoich bogów jest wiatrem, tak? Przyjde teraz z toba.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="38" positionX="1335" positionY="-2101" width="350" height="725">
-      <outputs name="Wyjdz." ownerID="38" targetID="21" fromX="1660" fromY="-2592" />Zabijasz demona, a wiatry uspokajaja sie w czasie, abys mogl bezpiecznie poplynac lodzia. </nodes>
+      <outputs name="Wyjdz." ownerID="38" targetID="21" fromX="1660" fromY="-2592" />Zabijasz demona, a wiatry uspokajaja sie w czasie, abys mógl bezpiecznie poplynac lodzia. </nodes>
   </Adventure>
   <Adventure name="CargoShipwreck1" uniqueID="15" seaEvent="true" typeGeneric="false" typePerGroupGeneric="false" typeInterrupt="true" typeExpedition="true" typeVillage="false" difficulty="1" nodeIdMax="15" joinIsForced="false" joinType="OnlyOwn" joinRange="SinglePosition">
     <nodes xsi:type="NodeStarting" ID="1" positionX="10" positionY="-10" width="347" height="661" image="Event271">
@@ -3043,9 +3041,9 @@ Odlatuje. </nodes>
       <outputs name="[Lowca] Wabic mieso stworami z dala od lodzi." ownerID="2" targetID="4" fromX="741" fromY="-491" />
       <outputs name="[Demon wody] Zwabic stwory z dala od lodzi za pomoca zaczarowanej piosenki." ownerID="2" targetID="11" fromX="741" fromY="-571" />
       <outputs name="Wejdz i zaatakuj!" ownerID="2" targetID="13" fromX="741" fromY="-651" />
-      <outputs name="Wyjdz." ownerID="2" targetID="3" fromX="741" fromY="-731" />Dostrzegasz pozostalosci wiekszego statku, prawdopodobnie jakiegos statku towarowego - byc moze niewolnikow lub handlarzy. 
+      <outputs name="Wyjdz." ownerID="2" targetID="3" fromX="741" fromY="-731" />Dostrzegasz pozostalosci wiekszego statku, prawdopodobnie jakiegos statku towarowego - byc moze niewolników lub handlarzy. 
 
-Statek jest w kawalkach. W wodzie jest jeszcze krew i mnostwo drapieznego zycia morskiego krazacego wokol niej. Jesli podejdziesz zbyt blisko, bedziesz musial walczyc ze stworami.</nodes>
+Statek jest w kawalkach. W wodzie jest jeszcze krew i mnóstwo drapieznego zycia morskiego krazacego wokól niej. Jesli podejdziesz zbyt blisko, bedziesz musial walczyc ze stworami.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="3" positionX="-69" positionY="-785" width="350" height="530" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeChallenge" ID="4" positionX="879" positionY="272" width="500" height="726" challengeType="TypeMental" versusConcept="true" versusGroup="GROUP-CON_M_0P_1M_0S" challengeScale="101" challengedList="ppl">
       <logic>
@@ -3078,8 +3076,8 @@ Statek jest w kawalkach. W wodzie jest jeszcze krew i mnostwo drapieznego zycia 
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wez to, co mozna uratowac i odejdz." ownerID="5" targetID="7" group="G1" fromX="1892" fromY="140" />
-      <outputs name="Wez to, co mozna uratowac i odejdz." ownerID="5" targetID="8" group="G1" fromX="1892" fromY="60" />Zwabiasz drapiezniki z dala od statku towarowego i mozesz je teraz przeszukac. </nodes>
+      <outputs name="Wez to, co mozna uratowac i wyjdz." ownerID="5" targetID="7" group="G1" fromX="1892" fromY="140" />
+      <outputs name="Wez to, co mozna uratowac i wyjdz." ownerID="5" targetID="8" group="G1" fromX="1892" fromY="60" />Zwabiasz drapiezniki z dala od statku towarowego i mozesz je teraz przeszukac. </nodes>
     <nodes xsi:type="NodeAdventure" ID="6" positionX="2181" positionY="-318" width="350" height="725">
       <logic>
         <ModifierBlock>
@@ -3091,7 +3089,7 @@ Statek jest w kawalkach. W wodzie jest jeszcze krew i mnostwo drapieznego zycia 
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="6" targetID="10" fromX="2506" fromY="-809" />Zwabiasz drapiezniki, ale nie bez obgryzania cie kilka razy. Co gorsza, lodz nie ma na sobie nic pozytecznego.</nodes>
+      <outputs name="Wyjdz." ownerID="6" targetID="10" fromX="2506" fromY="-809" />Zwabiasz drapiezniki, ale nie bez obgryzania cie kilka razy. Co gorsza, lódz nie ma na sobie nic pozytecznego.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="7" positionX="2225" positionY="566" width="350" height="530" allPlayersXP="2" allPlayersRP="1" linkedEventUniqueID="0">
       <logic>
         <FilterBlock>
@@ -3183,8 +3181,8 @@ Statek jest w kawalkach. W wodzie jest jeszcze krew i mnostwo drapieznego zycia 
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wez to, co mozna uratowac i odejdz." ownerID="14" targetID="7" group="G1" fromX="1752" fromY="-1777" />
-      <outputs name="Wez to, co mozna uratowac i odejdz." ownerID="14" targetID="8" group="G1" fromX="1752" fromY="-1857" />Drapiezniki nie zyja, a ty mozesz teraz przeszukac gruzy. </nodes>
+      <outputs name="Wez to, co mozna uratowac i wyjdz." ownerID="14" targetID="7" group="G1" fromX="1752" fromY="-1777" />
+      <outputs name="Wez to, co mozna uratowac i wyjdz." ownerID="14" targetID="8" group="G1" fromX="1752" fromY="-1857" />Drapiezniki nie zyja i mozesz teraz przeszukac gruzy. </nodes>
     <nodes xsi:type="NodeAdventure" ID="15" positionX="1965" positionY="-1375" width="350" height="725">
       <logic>
         <ModifierBlock>
@@ -3193,7 +3191,7 @@ Statek jest w kawalkach. W wodzie jest jeszcze krew i mnostwo drapieznego zycia 
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="15" targetID="10" fromX="2290" fromY="-1866" />Drapiezniki cie bili i gonia za toba. Przemoczysz sie w wodzie i pozniej zachorujesz.</nodes>
+      <outputs name="Wyjdz." ownerID="15" targetID="10" fromX="2290" fromY="-1866" />Drapiezniki cie bili i scigaja z dala od ich murawy. Przemoczysz sie w wodzie i pózniej zachorujesz.</nodes>
   </Adventure>
   <Adventure name="CargoShipwreck3" uniqueID="16" seaEvent="true" typeGeneric="false" typePerGroupGeneric="false" typeInterrupt="false" typeExpedition="true" typeVillage="false" difficulty="3" nodeIdMax="18" joinIsForced="false" joinType="OnlyOwn" joinRange="SinglePosition">
     <nodes xsi:type="NodeStarting" ID="1" positionX="10" positionY="-10" width="347" height="661" image="Event271">
@@ -3227,11 +3225,11 @@ Statek jest w kawalkach. W wodzie jest jeszcze krew i mnostwo drapieznego zycia 
         </FilterBlock>
       </logic>
       <outputs name="[Hunter] Odciagnij rekina miesem." ownerID="2" targetID="4" fromX="751" fromY="-594" />
-      <outputs name="[Demon wody] Plywac z rekinem. Mozesz nie lubic wody morskiej, ale slyszysz, ze te duze ryby mozna w ten sposob oswoic." ownerID="2" targetID="11" fromX="751" fromY="-674" />
+      <outputs name="[Demon wody] Plywac z rekinem. Mozesz nie lubic wody morskiej, ale slyszysz, ze te duze ryby mozna w ten sposób oswoic." ownerID="2" targetID="11" fromX="751" fromY="-674" />
       <outputs name="Wejdz i zaatakuj!" ownerID="2" targetID="13" fromX="751" fromY="-754" />
-      <outputs name="Wyjdz." ownerID="2" targetID="3" fromX="751" fromY="-834" />Dostrzegasz pozostalosci wiekszego statku, prawdopodobnie jakiegos statku towarowego - byc moze niewolnikow lub handlarzy. 
+      <outputs name="Wyjdz." ownerID="2" targetID="3" fromX="751" fromY="-834" />Dostrzegasz pozostalosci wiekszego statku, prawdopodobnie jakiegos statku towarowego - byc moze niewolników lub handlarzy. 
 
-Statek jest w kawalkach. W wodzie jest jeszcze krew i widzisz rekina krazacego wokol niej. </nodes>
+Statek jest w kawalkach. W wodzie jest jeszcze krew i widzisz rekina krazacego wokól niej. </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="3" positionX="-69" positionY="-785" width="350" height="530" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeChallenge" ID="4" positionX="845" positionY="262" width="500" height="726" challengeType="TypeMental" versusConcept="true" versusGroup="GROUP-CON_M_0P_3M_0S" challengeScale="101" challengedList="ppl">
       <logic>
@@ -3264,8 +3262,8 @@ Statek jest w kawalkach. W wodzie jest jeszcze krew i widzisz rekina krazacego w
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wez to, co mozna uratowac i odejdz." ownerID="5" targetID="7" group="G1" fromX="1743" fromY="100" />
-      <outputs name="Wez to, co mozna uratowac i odejdz." ownerID="5" targetID="18" group="G1" fromX="1743" fromY="20" />Odciagasz rekina od statku towarowego i mozesz go teraz przeszukac. </nodes>
+      <outputs name="Wez to, co mozna uratowac i wyjdz." ownerID="5" targetID="7" group="G1" fromX="1743" fromY="100" />
+      <outputs name="Wez to, co mozna uratowac i wyjdz." ownerID="5" targetID="18" group="G1" fromX="1743" fromY="20" />Odciagasz rekina od statku towarowego i mozesz go teraz przeszukac. </nodes>
     <nodes xsi:type="NodeAdventure" ID="6" positionX="1936" positionY="-282" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -3351,8 +3349,8 @@ Statek jest w kawalkach. W wodzie jest jeszcze krew i widzisz rekina krazacego w
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wez to, co mozna uratowac i odejdz." ownerID="14" targetID="7" group="G1" fromX="1713" fromY="-1743" />
-      <outputs name="Wez to, co mozna uratowac i odejdz." ownerID="14" targetID="18" group="G1" fromX="1713" fromY="-1823" />Rekin nie zyje i mozesz teraz przeszukac gruzy. </nodes>
+      <outputs name="Wez to, co mozna uratowac i wyjdz." ownerID="14" targetID="7" group="G1" fromX="1713" fromY="-1743" />
+      <outputs name="Wez to, co mozna uratowac i wyjdz." ownerID="14" targetID="18" group="G1" fromX="1713" fromY="-1823" />Rekin nie zyje i mozesz teraz przeszukac gruzy. </nodes>
     <nodes xsi:type="NodeAdventure" ID="15" positionX="1929" positionY="-1335" width="350" height="725">
       <logic>
         <ModifierBlock>
@@ -3364,7 +3362,7 @@ Statek jest w kawalkach. W wodzie jest jeszcze krew i widzisz rekina krazacego w
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="15" targetID="10" fromX="2254" fromY="-1826" />Rekin okazuje sie zbyt inteligentny i szybki, a jeden z was wciaga w morze.</nodes>
+      <outputs name="Wyjdz." ownerID="15" targetID="10" fromX="2254" fromY="-1826" />Rekin okazuje sie zbyt sprytny i szybki, i wciaga jednego z was w morze.</nodes>
     <nodes xsi:type="NodeDealDamage" ID="16" positionX="2442" positionY="-745" width="460" height="459" challengeTypeDamage="TypePhysical" minDamage="30" maxDamage="60" useCountInPercent="true" targetGroup="ppl">
       <outputs ownerID="16" targetID="17" fromX="2871" fromY="-1133" />
     </nodes>
@@ -3376,7 +3374,7 @@ Statek jest w kawalkach. W wodzie jest jeszcze krew i widzisz rekina krazacego w
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="17" targetID="10" fromX="3331" fromY="-1078" />Plywasz z rekinem, ale okazuje sie, ze nie jest tak zabawny, jak mowia. Duza ryba sciga cie i gryzie, a woda morska sprawia, ze jestes chory.</nodes>
+      <outputs name="Wyjdz." ownerID="17" targetID="10" fromX="3331" fromY="-1078" />Plywasz z rekinem, ale okazuje sie, ze nie jest tak zabawny, jak mówia. Duza ryba sciga cie i gryzie, a woda morska sprawia, ze jestes chory.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="18" positionX="2322" positionY="351" width="350" height="530" allPlayersXP="2" allPlayersRP="1" linkedEventUniqueID="0">
       <logic>
         <ModifierBlock>
@@ -3452,12 +3450,12 @@ Statek jest w kawalkach. W wodzie jest jeszcze krew i widzisz rekina krazacego w
         </FilterBlock>
       </logic>
       <outputs name="[Stribog] Popros swojego pana, aby poprowadzil cie przez burze." ownerID="3" targetID="33" group="G1" fromX="760" fromY="-515" />
-      <outputs name="[Natura] Modl sie do Striboga, aby poprowadzil cie przez te wzburzone wody." ownerID="3" targetID="32" group="G1" fromX="760" fromY="-596" />
-      <outputs name="Modl sie do Striboga, aby poprowadzil cie przez te wzburzone wody." ownerID="3" targetID="20" group="G1" fromX="760" fromY="-676" />
-      <outputs name="[Demon wody] Morze jest dzikim miejscem, ale przystosowales sie do tego. Wskocz do wody i poprowadz statek sam." ownerID="3" targetID="28" group="G3" fromX="760" fromY="-756" />
-      <outputs name="[Demon wody] Morze jest dzikim miejscem, ale przystosowales sie do tego. Wskocz do wody i poprowadz statek sam." ownerID="3" targetID="5" group="G3" fromX="760" fromY="-836" />
-      <outputs name="Trzymaj sie czegos i sprobuj przetrwac burze." ownerID="3" targetID="6" group="G2" fromX="760" fromY="-916" />
-      <outputs name="Trzymaj sie czegos i sprobuj przetrwac burze." ownerID="3" targetID="9" group="G2" fromX="760" fromY="-997" />Chmury ciemnieja, fale sie wznosza - nadchodzi burza!</nodes>
+      <outputs name="[Natura] Módl sie do Striboga, aby poprowadzil cie przez te wzburzone wody." ownerID="3" targetID="32" group="G1" fromX="760" fromY="-596" />
+      <outputs name="Módl sie do Striboga, aby poprowadzil cie przez te wzburzone wody." ownerID="3" targetID="20" group="G1" fromX="760" fromY="-676" />
+      <outputs name="[Demon wody] Morze jest dzikim miejscem, ale przystosowales sie do niego. Wskocz do wody i poprowadz statek sam." ownerID="3" targetID="28" group="G3" fromX="760" fromY="-756" />
+      <outputs name="[Demon wody] Morze jest dzikim miejscem, ale przystosowales sie do niego. Wskocz do wody i poprowadz statek sam." ownerID="3" targetID="5" group="G3" fromX="760" fromY="-836" />
+      <outputs name="Trzymaj sie czegos i spróbuj przetrwac burze." ownerID="3" targetID="6" group="G2" fromX="760" fromY="-916" />
+      <outputs name="Trzymaj sie czegos i spróbuj przetrwac burze." ownerID="3" targetID="9" group="G2" fromX="760" fromY="-997" />Chmury ciemnieja, fale sie wznosza - nadchodzi burza!</nodes>
     <nodes xsi:type="NodeAdventure" ID="5" positionX="1128.65051" positionY="-1558.07312" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -3471,9 +3469,9 @@ Statek jest w kawalkach. W wodzie jest jeszcze krew i widzisz rekina krazacego w
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Badz silny." ownerID="5" targetID="9" fromX="1454" fromY="-2049" />Te wody sa dzikie i niesforne. Nawet twoja natura usiluje sie utrzymac, chociaz czujesz przyplyw sily, jak gdyby morze samo rozpoznalo twoje pokrewienstwo. 
+      <outputs name="Badz silny." ownerID="5" targetID="9" fromX="1454" fromY="-2049" />Wody te sa dzikie i niesforne. Nawet twoja natura usiluje sie utrzymac, chociaz czujesz przyplyw sily, jak gdyby morze samo rozpoznalo twoje pokrewienstwo. 
 
-Musisz sprobowac przetrwac te burze. </nodes>
+Musisz spróbowac przetrwac te burze. </nodes>
     <nodes xsi:type="NodeAdventure" ID="6" positionX="1787.77527" positionY="-243.2774" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -3502,7 +3500,7 @@ Musisz sprobowac przetrwac te burze. </nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Podroz dalej." ownerID="6" targetID="7" fromX="2113" fromY="-734" />Trzymasz sie i dobrze znosisz burze, ale nie bez utraty sprzetu. </nodes>
+      <outputs name="Podróz dalej." ownerID="6" targetID="7" fromX="2113" fromY="-734" />Trzymasz sie i dobrze znosisz burze, ale nie bez utraty sprzetu. </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="7" positionX="2234.35986" positionY="-410.493164" width="350" height="530" allPlayersXP="3" allPlayersRP="1" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeChallenge" ID="9" positionX="1684.85144" positionY="-1406.14111" width="500" height="726" challengeType="TypePhysical" versusConcept="true" versusGroup="GROUP-CON_P_3P_0M_0S" challengeScale="101" challengedList="ppl">
       <outputs name="Win" ownerID="9" targetID="10" fromX="2125" fromY="-1901" />
@@ -3510,8 +3508,8 @@ Musisz sprobowac przetrwac te burze. </nodes>
       <outputs name="Surrender" ownerID="9" targetID="13" fromX="2125" fromY="-2062" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="10" positionX="2402.58521" positionY="-890.3863" width="350" height="805">
-      <outputs name="Podroz dalej." ownerID="10" targetID="14" group="G1" fromX="2728" fromY="-1381" />
-      <outputs name="Podroz dalej." ownerID="10" targetID="17" group="G1" fromX="2728" fromY="-1461" />Trzymasz sie i przetrwasz burze. W glebokich, niespokojnych wodach odkrywasz wrak statku, ktory mozesz spladrowac.</nodes>
+      <outputs name="Podróz dalej." ownerID="10" targetID="14" group="G1" fromX="2728" fromY="-1381" />
+      <outputs name="Podróz dalej." ownerID="10" targetID="17" group="G1" fromX="2728" fromY="-1461" />Trzymasz sie i przetrwasz burze. W glebokich, niespokojnych wodach odkrywasz wrak statku, który mozesz spladrowac.</nodes>
     <nodes xsi:type="NodeDealDamage" ID="13" positionX="2363.17285" positionY="-1846.86877" width="460" height="459" challengeTypeDamage="TypePhysical" minDamage="3" maxDamage="6" useCountInPercent="false" targetGroup="ppl">
       <outputs ownerID="13" targetID="23" fromX="2792" fromY="-2235" />
     </nodes>
@@ -3563,9 +3561,9 @@ Musisz sprobowac przetrwac te burze. </nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Podroz dalej." ownerID="21" targetID="26" group="G1" fromX="1800" fromY="916" />
-      <outputs name="Podroz dalej." ownerID="21" targetID="35" group="G1" fromX="1800" fromY="835" />
-      <outputs name="Podroz dalej." ownerID="21" targetID="34" group="G1" fromX="1800" fromY="755" />Wiatry sprzyjaja twojej sciezce i odciagaja cie od burzy. Czujesz na sobie blogoslawienstwo Striboga. </nodes>
+      <outputs name="Podróz dalej." ownerID="21" targetID="26" group="G1" fromX="1800" fromY="916" />
+      <outputs name="Podróz dalej." ownerID="21" targetID="35" group="G1" fromX="1800" fromY="835" />
+      <outputs name="Podróz dalej." ownerID="21" targetID="34" group="G1" fromX="1800" fromY="755" />Wiatry sprzyjaja twojej sciezce i odciagaja cie od burzy. Czujesz na sobie blogoslawienstwo Striboga. </nodes>
     <nodes xsi:type="NodeDealDamage" ID="22" positionX="1540.48022" positionY="361.589172" width="460" height="459" challengeTypeDamage="TypeSpirit" minDamage="2" maxDamage="4" useCountInPercent="false" targetGroup="ppl">
       <outputs ownerID="22" targetID="23" fromX="1969" fromY="-26" />
     </nodes>
@@ -3600,9 +3598,9 @@ Musisz sprobowac przetrwac te burze. </nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Podroz dalej." ownerID="23" targetID="27" fromX="2446" fromY="-10" />Burza sie nie uspokaja. Czujesz, ze laska Striboga nie poblogoslawila cie tego dnia. 
+      <outputs name="Podróz dalej." ownerID="23" targetID="27" fromX="2446" fromY="-10" />Burza sie nie uspokaja. Czujesz, ze laska Striboga nie poblogoslawila cie tego dnia. 
 
-Tracisz czesc swojego sprzetu, a niektorzy zachoruja.</nodes>
+Tracisz czesc swojego sprzetu, a niektórzy zachoruja.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="26" positionX="1908" positionY="1385" width="350" height="530" allPlayersXP="4" allPlayersRP="1" linkedEventUniqueID="0">
       <logic>
         <FilterBlock>
@@ -3629,8 +3627,8 @@ Tracisz czesc swojego sprzetu, a niektorzy zachoruja.</nodes>
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Podroz dalej." ownerID="28" targetID="14" group="G1" fromX="1215" fromY="-1219" />
-      <outputs name="Podroz dalej." ownerID="28" targetID="17" group="G1" fromX="1215" fromY="-1299" />Znajdujesz droge do bezpieczenstwa, a na glebokich, niespokojnych wodach odkrywasz wrak statku do spladrowania.</nodes>
+      <outputs name="Podróz dalej." ownerID="28" targetID="14" group="G1" fromX="1215" fromY="-1219" />
+      <outputs name="Podróz dalej." ownerID="28" targetID="17" group="G1" fromX="1215" fromY="-1299" />Znajdujesz droge do bezpieczenstwa, aw glebokich, niespokojnych wodach odkrywasz szczatki statku, który chcesz spladrowac.</nodes>
     <nodes xsi:type="NodeChallenge" ID="32" positionX="873.8583" positionY="188.1574" width="500" height="726" challengeType="TypeSpirit" versusConcept="true" versusGroup="GROUP-CON_S_0P_0M_2S" challengeScale="101" challengedList="ppl">
       <logic>
         <FilterBlock>
@@ -3699,12 +3697,12 @@ Tracisz czesc swojego sprzetu, a niektorzy zachoruja.</nodes>
           </LogicProcessing>
         </FilterBlock>
       </logic>
-      <outputs name="Wez lodz powoli. " ownerID="2" targetID="4" fromX="781" fromY="-600" />
+      <outputs name="Wez lódz powoli. " ownerID="2" targetID="4" fromX="781" fromY="-600" />
       <outputs name="Plywac samemu." ownerID="2" targetID="10" fromX="781" fromY="-680" />
       <outputs name="Wyjdz." ownerID="2" targetID="3" fromX="781" fromY="-760" />
-      <outputs name="[Demon wody] Slona woda nie sluzy ci dobrze, ale oprocz mdlosci plywanie nie powinno byc dla ciebie problemem." ownerID="2" targetID="15" fromX="781" fromY="-840" />Widzisz jakies szczatki unoszace sie wsrod skal. Woda jest dosc spokojna, ale skaly sa bardzo ostre, a przestrzen miedzy nimi jest ciasna. 
+      <outputs name="[Demon wody] Slona woda nie sluzy ci dobrze, ale oprócz mdlosci plywanie nie powinno byc dla ciebie problemem." ownerID="2" targetID="15" fromX="781" fromY="-840" />Widzisz jakies gruzy unoszace sie wsród skal. Woda jest dosc spokojna, ale skaly sa bardzo ostre, a przestrzen miedzy nimi jest ciasna. 
 
-Mozesz probowac plywac dla potencjalnego lupu z lodzia lub bez niej. </nodes>
+Mozesz próbowac plywac dla potencjalnego lupu z lodzia lub bez niej. </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="3" positionX="-4" positionY="-763" width="350" height="530" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeChallenge" ID="4" positionX="979" positionY="388" width="500" height="726" challengeType="TypePhysical" versusConcept="true" versusGroup="GROUP-CON_P_6P_0M_0S" challengeScale="101" challengedList="ppl">
       <outputs name="Win" ownerID="4" targetID="5" fromX="1420" fromY="-107" />
@@ -3734,7 +3732,7 @@ Mozesz probowac plywac dla potencjalnego lupu z lodzia lub bez niej. </nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Plyn do brzegu tak szybko, jak mozesz!" ownerID="7" targetID="8" fromX="2033" fromY="-872" />Twoja lodz jest uszkodzona i tonie!</nodes>
+      <outputs name="Plyn do brzegu tak szybko, jak tylko mozesz!" ownerID="7" targetID="8" fromX="2033" fromY="-872" />Twoja lódz jest uszkodzona i tonie!</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="8" positionX="2143" positionY="-504" width="350" height="530" allPlayersXP="1" allPlayersRP="1" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventure" ID="9" positionX="1735" positionY="-1162" width="350" height="725">
       <logic>

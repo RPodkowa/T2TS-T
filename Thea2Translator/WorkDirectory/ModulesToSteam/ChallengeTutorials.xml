@@ -12,17 +12,17 @@
           </LogicFilter>
         </FilterBlock>
       </logic>
-      <outputs name="Powiedz swojej nan, ze od razu pojdziesz. Udaj sie do piwnicy, przygotowanej na spotkanie ze szczurami." ownerID="2" targetID="3" fromX="755" fromY="-383" />„Yanek, Yanek! Chodz tu chlopcze!'
-Slyszysz glos babci dochodzacy z domu: 
-' Przynies mi sloik z marynatami, sa w piwnicy. Uwazaj tylko na ich nieznosne szczury, o tej porze roku robia sie duze ”. 
+      <outputs name="Powiedz swojej nan, że od razu pójdziesz. Udaj się do piwnicy, przygotowanej na spotkanie ze szczurami." ownerID="2" targetID="3" fromX="755" fromY="-383" />„Yanek, Yanek! Chodź tu chłopcze!'
+Słyszysz głos babci dochodzący z domu: 
+' Przynieś mi słoik z marynatami, są w piwnicy. Uważaj tylko na ich nieznośne szczury, o tej porze roku robią się duże ”. 
 
-Chwytasz za miecz, choc pulapka na myszy prawdopodobnie bedzie bardziej odpowiednia. 
+Chwytasz za miecz, choć pułapka na myszy prawdopodobnie będzie bardziej odpowiednia. 
 
 </nodes>
     <nodes xsi:type="NodeAdventure" ID="3" positionX="922" positionY="81" width="350" height="725" image="Event272">
-      <outputs name="Gra karciana? Jak zwykly blackjack?" ownerID="3" targetID="15" fromX="1247" fromY="-410" />Tak jak ostrzegl cie nan, sa tu szczury. Wahasz sie i slyszysz zaufanego glosu swojego przyjaciela, Theodore'a: 
+      <outputs name="Gra karciana? Jak zwykły blackjack?" ownerID="3" targetID="15" fromX="1247" fromY="-410" />Tak jak ostrzegł cię nan, są tu szczury. Wahasz się i słyszysz zaufanego głosu swojego przyjaciela, Theodore'a: 
 
-'Masz zamiar rozpoczac wyzwanie chlopca. Jakie jest wyzwanie, o co mnie zapytasz? Coz, wyzwaniem jest sposob rozwiazywania konfliktow lub problemow na tym swiecie. Czasami bedzie to konflikt miedzy twoja grupa a grupa wroga, innym razem bedzie to proba rozwiazania zagadki lub po prostu test sily. Wyzwania maja forme gry w karty. Jak sami bogowie bawili sie naszym losem, widzicie.'
+'Masz zamiar rozpocząć wyzwanie chłopca. Jakie jest wyzwanie, o co mnie zapytasz? Cóż, wyzwaniem jest sposób rozwiązywania konfliktów lub problemów na tym świecie. Czasami będzie to konflikt między twoją grupą a grupą wroga, innym razem będzie to próba rozwiązania zagadki lub po prostu test siły. Wyzwania mają formę gry w karty. Jak sami bogowie bawili się naszym losem, widzicie.'
 </nodes>
     <nodes xsi:type="NodeChallenge" ID="4" positionX="1468" positionY="73" width="500" height="726" challengeType="TypePhysical" versusGroup="GROUP-TUT_RAT" challengeScale="101" challengedList="ppl">
       <logic>
@@ -38,8 +38,8 @@ Chwytasz za miecz, choc pulapka na myszy prawdopodobnie bedzie bardziej odpowied
     </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="5" positionX="3871" positionY="-1244" width="350" height="455" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventure" ID="6" positionX="2245" positionY="-726" width="350" height="805" image="Event251">
-      <outputs name="Sprobuj ponownie." ownerID="6" targetID="4" fromX="2570" fromY="-1217" />
-      <outputs name="Uciekaj do menu glownego." ownerID="6" targetID="5" fromX="2570" fromY="-1297" />Nie poddasz sie tak latwo, prawda?</nodes>
+      <outputs name="Spróbuj ponownie." ownerID="6" targetID="4" fromX="2570" fromY="-1217" />
+      <outputs name="Uciekaj do menu głównego." ownerID="6" targetID="5" fromX="2570" fromY="-1297" />Nie poddasz się tak łatwo, prawda?</nodes>
     <nodes xsi:type="NodeAdventure" ID="7" positionX="2656" positionY="89" width="350" height="725" image="Event273">
       <logic>
         <ModifierBlock>
@@ -48,19 +48,19 @@ Chwytasz za miecz, choc pulapka na myszy prawdopodobnie bedzie bardziej odpowied
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wroc do piwnicy." ownerID="7" targetID="9" fromX="2981" fromY="-402" />Szczury nie zyja, a pikle sa w koncu twoje. Dumni z siebie, przynosisz sloik babci. 
+      <outputs name="Wróć do piwnicy." ownerID="7" targetID="9" fromX="2981" fromY="-402" />Szczury nie żyją, a pikle są w końcu twoje. Dumni z siebie, przynosisz słoik babci. 
 
-- Twoja kostka krwawi Yanek, wszystko w porzadku?'- ona pyta.
-Wzruszasz ramionami i zapewniasz ja, ze jestes dobra. Babcia daje ci ten protekcjonalny wyglad, nan: 
+- Twoja kostka krwawi Yanek, wszystko w porządku?'- ona pyta.
+Wzruszasz ramionami i zapewniasz ją, że jesteś dobra. Babcia daje ci ten protekcjonalny wygląd, nan: 
 
-'Lepiej zabierz ze soba zbroje nastepnym razem, pewnego dnia zdrapiesz nogi! W kazdym razie badz kochany i sprawdz, co przyciaga te paskudne stworzenia do naszej piwnicy, co? Jesli dziadek znowu rozlal troche kompotu gruszkowego ...'
+'Lepiej zabierz ze sobą zbroję następnym razem, pewnego dnia zdrapiesz nogi! W każdym razie bądź kochany i sprawdź, co przyciąga te paskudne stworzenia do naszej piwnicy, co? Jeśli dziadek znowu rozlał trochę kompotu gruszkowego ...'
 </nodes>
     <nodes xsi:type="NodeAdventure" ID="9" positionX="3284" positionY="58" width="350" height="725" image="Event258">
-      <outputs name="Czy to moze byc pineconette?" ownerID="9" targetID="10" fromX="3609" fromY="-433" />Znowu otwieracie drzwi piwnicy, przygotowani do oczyszczenia zwlok szczurow i skonczenia z nimi, kiedy wyczujecie ruch. W ciemnym kacie zauwazysz znajomy ksztalt, choc znacznie wiekszy niz zwykle. Sosnowy stozek? Przyjrzyj sie blizej i zobacz, ze zestaw paciorkowatych oczu patrzy w gore iw dol, a rzad ostrych zebow patrzy na ciebie z usmiechem.</nodes>
+      <outputs name="Czy to może być pineconette?" ownerID="9" targetID="10" fromX="3609" fromY="-433" />Znowu otwieracie drzwi piwnicy, przygotowani do oczyszczenia zwłok szczurów i skończenia z nimi, kiedy wyczujecie ruch. W ciemnym kącie zauważysz znajomy kształt, choć znacznie większy niż zwykle. Sosnowy stożek? Przyjrzyj się bliżej i zobacz, że zestaw paciorkowatych oczu patrzy w górę iw dół, a rząd ostrych zębów patrzy na ciebie z uśmiechem.</nodes>
     <nodes xsi:type="NodeAdventure" ID="10" positionX="3763" positionY="58" width="350" height="725">
-      <outputs name="Obron sie!" ownerID="10" targetID="11" fromX="4088" fromY="-433" />Slabo przypominasz sobie historie o duchach lesnych przypominajacych szyszki sosnowe. Z pewnoscia znaja troche magii, ale rzadko przeszkadzaja ludziom spoza lasu. Co tu robisz, czego nie mozesz powiedziec, ale to przeciez piwnica twojej babci i zadna szyszka nie bedzie chrupac na jej zimowych zapasach! 
-Gdy maszerujesz pewnie, by wykopac stwora, wyciagajac miecz, jego oczy zaczynaja sie swiecic, a wysoki krzyk rani twoje uszy. Zaciskasz uchwyt na swoim mieczu tylko po to, by zauwazyc, ze rozpada sie na pyl. 
-Jakie to oszustwo? - pytasz siebie, ale nie ma odpowiedzi, a pineconette atakuje cie swoja magia. 
+      <outputs name="Obroń się!" ownerID="10" targetID="11" fromX="4088" fromY="-433" />Słabo przypominasz sobie historie o duchach leśnych przypominających szyszki sosnowe. Z pewnością znają trochę magii, ale rzadko przeszkadzają ludziom spoza lasu. Co tu robisz, czego nie możesz powiedzieć, ale to przecież piwnica twojej babci i żadna szyszka nie będzie chrupać na jej zimowych zapasach! 
+Gdy maszerujesz pewnie, by wykopać stwora, wyciągając miecz, jego oczy zaczynają się świecić, a wysoki krzyk rani twoje uszy. Zaciskasz uchwyt na swoim mieczu tylko po to, by zauważyć, że rozpada się na pył. 
+Jakie to oszustwo? - pytasz siebie, ale nie ma odpowiedzi, a pineconette atakuje cię swoją magią. 
 </nodes>
     <nodes xsi:type="NodeChallenge" ID="11" positionX="4241" positionY="90" width="500" height="726" challengeType="TypeSpirit" versusGroup="GROUP-TUT_PINECONETTES" challengeScale="101" challengedList="ppl">
       <logic>
@@ -75,25 +75,25 @@ Jakie to oszustwo? - pytasz siebie, ale nie ma odpowiedzi, a pineconette atakuje
       <outputs name="Surrender" ownerID="11" targetID="14" fromX="4682" fromY="-565" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="12" positionX="4937" positionY="222" width="350" height="725" image="Event251">
-      <outputs name="Zostaw ..." ownerID="12" targetID="5" fromX="5262" fromY="-269" />Ok, to nie powinno sie zdarzyc. Oszukales? Celem tego tutoriala bylo nauczenie Cie, jak uciec. Co i tak robisz w tutorialu? Idz rozbic kilka czaszek orkow i przestan udawac, ze nie umiesz grac.</nodes>
+      <outputs name="Zostaw ..." ownerID="12" targetID="5" fromX="5262" fromY="-269" />Ok, to nie powinno się zdarzyć. Oszukałeś? Celem tego tutoriala było nauczenie Cię, jak uciec. Co i tak robisz w tutorialu? Idź rozbić kilka czaszek orków i przestań udawać, że nie umiesz grać.</nodes>
     <nodes xsi:type="NodeAdventure" ID="13" positionX="5439" positionY="-63" width="350" height="725" image="Event255">
-      <outputs name="Aww, moja glowa ..." ownerID="13" targetID="5" fromX="5764" fromY="-554" />Zaciemniasz, ale glos Theodores budzi cie: 
+      <outputs name="Aww, moja głowa ..." ownerID="13" targetID="5" fromX="5764" fromY="-554" />Zaciemniasz, ale głos Theodores budzi cię: 
 
-'Coz, prosiles o to, wiesz? Walka z wyzwaniem duchowym bez specjalisty? Stawianie czola znacznie silniejszemu wrogowi rzadko jest dobrym pomyslem. Kiedy szanse sa przeciw tobie, ucieczka lub poddanie sie moze byc najlepsza opcja. Jasne, mozesz dostac siniaka lub stracic troche morale, ale jest to nadal lepsze niz calkowite przegranie. Pamietaj o tej lekcji na przyszlosc!'
+'Cóż, prosiłeś o to, wiesz? Walka z wyzwaniem duchowym bez specjalisty? Stawianie czoła znacznie silniejszemu wrogowi rzadko jest dobrym pomysłem. Kiedy szanse są przeciw tobie, ucieczka lub poddanie się może być najlepszą opcją. Jasne, możesz dostać siniaka lub stracić trochę morale, ale jest to nadal lepsze niż całkowite przegranie. Pamiętaj o tej lekcji na przyszłość!'
 </nodes>
     <nodes xsi:type="NodeAdventure" ID="14" positionX="4977" positionY="-718" width="350" height="725" image="Event253">
-      <outputs name="Koniec" ownerID="14" targetID="5" fromX="5302" fromY="-1209" />Wyrywasz sie z pol-hipnotycznego stanu, kiedy pineconette wprowadzila cie i udaje ci sie wyjsc z piwnicy i zamknac za soba drzwi. Biegniesz do swojej nan i krzyczysz, ze pineconette atakuje twoj dom. Babcia podnosi na ciebie brwi: 
+      <outputs name="Koniec" ownerID="14" targetID="5" fromX="5302" fromY="-1209" />Wyrywasz się z pół-hipnotycznego stanu, kiedy pineconette wprowadziła cię i udaje ci się wyjść z piwnicy i zamknąć za sobą drzwi. Biegniesz do swojej nan i krzyczysz, że pineconette atakuje twój dom. Babcia podnosi na ciebie brwi: 
 
-'Czy? Masz na mysli, ze to tam zostawiles? Sila Svaroga ... W moich czasach rozpalalismy ogien szyszkami, wy, mlodzi, jestescie tak niesmiali. Dobrze, sam sie tym zajme. Po obiedzie. Przypuszczam, ze byles madrym chlopakiem, ktory uciekl, zamiast uderzyc w dol.'</nodes>
+'Czy? Masz na myśli, że to tam zostawiłeś? Siła Svaroga ... W moich czasach rozpalaliśmy ogień szyszkami, wy, młodzi, jesteście tak nieśmiali. Dobrze, sam się tym zajmę. Po obiedzie. Przypuszczam, że byłeś mądrym chłopakiem, który uciekł, zamiast uderzyć w dół.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="15" positionX="234" positionY="-743" width="350" height="725" image="Event251">
-      <outputs name="Uff, myslales przez chwile, ze mozesz zostac ranny w wyniku tego wyzwania?" ownerID="15" targetID="16" fromX="559" fromY="-1234" />„Nic z tego, chlopcze. Karty, ktore grasz, reprezentuja * ciebie *, ze wszystkimi mocnymi i slabymi stronami oraz zdolnosciami. Ten miecz, ktory tam masz - mozesz go uzyc przeciwko szczurom i dzieki temu zdobedziesz umiejetnosci w grze karcianej.'</nodes>
+      <outputs name="Uff, myślałeś przez chwilę, że możesz zostać ranny w wyniku tego wyzwania?" ownerID="15" targetID="16" fromX="559" fromY="-1234" />„Nic z tego, chłopcze. Karty, które grasz, reprezentują * ciebie *, ze wszystkimi mocnymi i słabymi stronami oraz zdolnościami. Ten miecz, który tam masz - możesz go użyć przeciwko szczurom i dzięki temu zdobędziesz umiejętności w grze karcianej.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="16" positionX="794" positionY="-664" width="350" height="805" image="Event272">
-      <outputs name="Otworz drzwi i przedostan sie do sloika pikli." ownerID="16" targetID="4" fromX="1119" fromY="-1155" />
-      <outputs name="Wracaj, masz wazniejsze rzeczy do zrobienia. [WYJSCIE DO MENU GLOWNEGO]" ownerID="16" targetID="5" fromX="1119" fromY="-1235" />„Jasne, ze mozesz, chlopcze! Rany, ktore otrzymujesz podczas wyzwania, sa tak realne, jak ten sloik marynat, ktore masz zamiar przyniesc. Jesli nie jestes ostrozny, bedziesz musial spedzic nastepny tydzien w chacie uzdrowiciela, albo twoj umysl lub duch moga cierpiec. Lepiej uwazaj! 
+      <outputs name="Otwórz drzwi i przedostań się do słoika pikli." ownerID="16" targetID="4" fromX="1119" fromY="-1155" />
+      <outputs name="Wracaj, masz ważniejsze rzeczy do zrobienia. [WYJŚCIE DO MENU GŁÓWNEGO]" ownerID="16" targetID="5" fromX="1119" fromY="-1235" />„Jasne, że możesz, chłopcze! Rany, które otrzymujesz podczas wyzwania, są tak realne, jak ten słoik marynat, które masz zamiar przynieść. Jeśli nie jesteś ostrożny, będziesz musiał spędzić następny tydzień w chacie uzdrowiciela, albo twój umysł lub duch mogą cierpieć. Lepiej uważaj! 
 
-Jesli widzisz ten symbol: &lt;nazwa sprite = Wyzwanie fizyczne&gt; - oznacza to, ze odpowiedz prowadzi do wyzwania. Liczba obok, od 1 do 10, wskazuje trudnosci.'
+Jeśli widzisz ten symbol: &lt;nazwa sprite = Wyzwanie fizyczne&gt; - oznacza to, że odpowiedź prowadzi do wyzwania. Liczba obok, od 1 do 10, wskazuje trudności.'
 
-Nigdy nie masz pewnosci, jak i kiedy Theo przychodzi i odchodzi, ale tu jestes - stojac przed piwnica babci, gotowy na wszystko.</nodes>
+Nigdy nie masz pewności, jak i kiedy Theo przychodzi i odchodzi, ale tu jesteś - stojąc przed piwnicą babci, gotowy na wszystko.</nodes>
   </Adventure>
   <Adventure name="Tutorial2" uniqueID="2" typeGeneric="false" typePerGroupGeneric="false" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="13" joinIsForced="false" joinType="OnlyOwn" joinRange="SinglePosition">
     <nodes xsi:type="NodeStarting" ID="1" positionX="10" positionY="-10" width="347" height="704" image="Event255">
@@ -107,26 +107,26 @@ Nigdy nie masz pewnosci, jak i kiedy Theo przychodzi i odchodzi, ale tu jestes -
           </LogicFilter>
         </FilterBlock>
       </logic>
-      <outputs name="Poczekaj, az nan opusci i spojrz na mape." ownerID="2" targetID="3" fromX="819" fromY="-499" />„Dziekuje, dzielni poszukiwacze przygod!„- babcia stara sie jak najlepiej wyrazic to tak gleboko i gladko, ale wciaz brzmi bardziej jak wielki zly wilk:„ Ksiezniczka jest bezpieczna. Oto twoja mapa do skarbu.'
+      <outputs name="Poczekaj, aż nan opuści i spójrz na mapę." ownerID="2" targetID="3" fromX="819" fromY="-499" />„Dziękuję, dzielni poszukiwacze przygód!„- babcia stara się jak najlepiej wyrazić to tak głęboko i gładko, ale wciąż brzmi bardziej jak wielki zły wilk:„ Księżniczka jest bezpieczna. Oto twoja mapa do skarbu.'
 
-Piszczysz z radosci i podskakujesz energicznie, prawie przewracajac sie na bujanym fotelu babci. Kiedy w koncu sie uspokoisz, kontynuuje: 
+Piszczysz z radości i podskakujesz energicznie, prawie przewracając się na bujanym fotelu babci. Kiedy w końcu się uspokoisz, kontynuuje: 
 
-'Kiedy bohaterowie patrza blizej na mape, zdaja sobie sprawe, ze wszystko jest pomieszane. Beda musieli rozwiazac zagadke, aby dostac sie do skarbu.'
+'Kiedy bohaterowie patrzą bliżej na mapę, zdają sobie sprawę, że wszystko jest pomieszane. Będą musieli rozwiązać zagadkę, aby dostać się do skarbu.'
 
-Daje ci jeden ze swoich powaznych spojrzen: 
+Daje ci jeden ze swoich poważnych spojrzeń: 
 
-' Ale to tylko historia, prawda? A teraz do lozka!'
+' Ale to tylko historia, prawda? A teraz do łóżka!'
 </nodes>
     <nodes xsi:type="NodeAdventure" ID="3" positionX="982" positionY="41" width="350" height="725" image="Event251">
-      <outputs name="Dobra, zacznij mentalne wyzwanie." ownerID="3" targetID="4" fromX="1307" fromY="-450" />Znow slyszysz glos Theodore'a: 
+      <outputs name="Dobra, zacznij mentalne wyzwanie." ownerID="3" targetID="4" fromX="1307" fromY="-450" />Znów słyszysz głos Theodore'a: 
 
-'Wyzwania moga byc rowniez uzyte do sprawdzenia zdolnosci intelektualnych twojej grupy. Ale w przeciwienstwie do tego, kiedy stawiles czola szczurom, tym razem zostaniesz zakwestionowany przez koncepcje. 
+'Wyzwania mogą być również użyte do sprawdzenia zdolności intelektualnych twojej grupy. Ale w przeciwieństwie do tego, kiedy stawiłeś czoła szczurom, tym razem zostaniesz zakwestionowany przez koncepcję. 
 
-„Koncepcje” to termin ogolny i obejmuje wszystkie sytuacje, w ktorych nie walczysz z postaciami. Wspinanie sie na urwisko, dostrzeganie niebezpieczenstwa, rozwiazywanie lamiglowek lub rytual to przyklady wyzwania w porownaniu z koncepcja. 
+„Koncepcje” to termin ogólny i obejmuje wszystkie sytuacje, w których nie walczysz z postaciami. Wspinanie się na urwisko, dostrzeganie niebezpieczeństwa, rozwiązywanie łamigłówek lub rytuał to przykłady wyzwania w porównaniu z koncepcją. 
 
-Pojecia sa reprezentowane przez karty, tak jak postacie, ale we wszystkich koncepcjach licza sie tylko naturalne zdolnosci twoich postaci. Wszelkie posiadane urzadzenia sa ignorowane. Pozostale zasady pozostaja takie same. 
+Pojęcia są reprezentowane przez karty, tak jak postacie, ale we wszystkich koncepcjach liczą się tylko naturalne zdolności twoich postaci. Wszelkie posiadane urządzenia są ignorowane. Pozostałe zasady pozostają takie same. 
 
-Za kazdym razem, gdy widzisz symbol z czarnymi kartami w ten sposob - &lt;sprite name = "MentalConceptChallengeIcon"&gt; - oznacza to, ze jest to wyzwanie przeciwko koncepcji.'
+Za każdym razem, gdy widzisz symbol z czarnymi kartami w ten sposób - &lt;sprite name = "MentalConceptChallengeIcon"&gt; - oznacza to, że jest to wyzwanie w stosunku do koncepcji.'
 </nodes>
     <nodes xsi:type="NodeChallenge" ID="4" positionX="1499" positionY="24" width="500" height="726" challengeType="TypeMental" versusConcept="true" versusGroup="GROUP-TUT_CON" challengeScale="101" challengedList="ppl">
       <logic>
@@ -141,15 +141,15 @@ Za kazdym razem, gdy widzisz symbol z czarnymi kartami w ten sposob - &lt;sprite
       <outputs name="Surrender" ownerID="4" targetID="6" fromX="1940" fromY="-631" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="5" positionX="2733" positionY="324" width="350" height="725" image="Event255">
-      <outputs name="Noooo ... jeszcze jedna historia! Pleeeease!" ownerID="5" targetID="10" fromX="3058" fromY="-167" />Slyszysz, jak Nan smieje sie za toba: 
+      <outputs name="Noooo ... jeszcze jedna historia! Pleeeease!" ownerID="5" targetID="10" fromX="3058" fromY="-167" />Słyszysz, jak Nan śmieje się za tobą: 
 
-- Dobrze zrobione, moi mali poszukiwacze przygod! Tam, na srodku laki, widzisz stol pelen smakolykow!„
+- Dobrze zrobione, moi mali poszukiwacze przygód! Tam, na środku łąki, widzisz stół pełen smakołyków!„
 
-Mowiac to, babcia produkuje miske z owocami i galaretka z chrzaszczy - twoje ulubione. 
+Mówiąc to, babcia produkuje miskę z owocami i galaretką z chrząszczy - twoje ulubione. 
 
-- Teraz, tym razem, do lozka, na powaznie!'
+- Teraz, tym razem, do łóżka, na poważnie!'
 
-Ale jak zwykle jest tylko jedna odpowiedz, ktorej mozna sie spodziewac ...</nodes>
+Ale jak zwykle jest tylko jedna odpowiedź, której można się spodziewać ...</nodes>
     <nodes xsi:type="NodeAdventure" ID="6" positionX="2152" positionY="-560" width="350" height="885" image="Event255">
       <logic>
         <ModifierBlock>
@@ -160,9 +160,9 @@ Ale jak zwykle jest tylko jedna odpowiedz, ktorej mozna sie spodziewac ...</node
       </logic>
       <outputs name="Tak." ownerID="6" targetID="4" fromX="2477" fromY="-1051" />
       <outputs name="Nie." ownerID="6" targetID="9" fromX="2477" fromY="-1131" />
-      <outputs name="Zasnac. [WYJSCIE DO MENU]" ownerID="6" targetID="8" fromX="2477" fromY="-1211" />Nan wzdycha. Wiedzac, ze jest pozno i widzac, jak bardzo sie starales, daje ci kilka wskazowek i czujesz sie madrzej. Pyta: 
+      <outputs name="Zasnąć. [WYJŚCIE DO MENU]" ownerID="6" targetID="8" fromX="2477" fromY="-1211" />Nan wzdycha. Wiedząc, że jest późno i widząc, jak bardzo się starałeś, daje ci kilka wskazówek i czujesz się mądrzej. Pyta: 
 
-'Wiem, ze powiedzialem przed snem, ale czy chcesz sprobowac jeszcze raz?'</nodes>
+'Wiem, że powiedziałem przed snem, ale czy chcesz spróbować jeszcze raz?'</nodes>
     <nodes xsi:type="NodeProduceDrop" ID="7" positionX="2134" positionY="61" width="460" height="429">
       <logic>
         <ModifierBlock>
@@ -178,17 +178,17 @@ Ale jak zwykle jest tylko jedna odpowiedz, ktorej mozna sie spodziewac ...</node
     </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="8" positionX="5704" positionY="-905" width="350" height="455" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventure" ID="9" positionX="3225" positionY="-386" width="350" height="725">
-      <outputs name="Noooo ... jeszcze jedna historia! Pleeeease!" ownerID="9" targetID="10" fromX="3550" fromY="-877" />„Dobra, robi sie pozno, czas na lozko”. - mowi babcia i zamyka ksiazke: 
+      <outputs name="Noooo ... jeszcze jedna historia! Pleeeease!" ownerID="9" targetID="10" fromX="3550" fromY="-877" />„Dobra, robi się późno, czas na łóżko”. - mówi babcia i zamyka książkę: 
 
-'Upewnij sie, ze myjesz stopy!'
+'Upewnij się, że myjesz stopy!'
 
-Ale jak zwykle jest tylko jedna odpowiedz, ktorej mozna sie spodziewac ...</nodes>
+Ale jak zwykle jest tylko jedna odpowiedź, której można się spodziewać ...</nodes>
     <nodes xsi:type="NodeAdventure" ID="10" positionX="3863" positionY="-17" width="350" height="725">
-      <outputs name="Historia! Fabula! Fabula!" ownerID="10" targetID="11" fromX="4188" fromY="-508" />Nan bierze gleboki oddech, wyglada na zmeczona, ale zdeterminowana, by zachowac autorytet: 
+      <outputs name="Historia! Fabuła! Fabuła!" ownerID="10" targetID="11" fromX="4188" fromY="-508" />Nan bierze głęboki oddech, wygląda na zmęczoną, ale zdeterminowana, by zachować autorytet: 
 
-'Teraz sluchaj mnie dranie, jesli chcesz uslyszec inna historie, bedzie jutro. Chcesz, zeby nocne demony lub wilki cie zlapaly za bycie niegrzecznym?'
+'Teraz słuchaj mnie dranie, jeśli chcesz usłyszeć inną historię, będzie jutro. Chcesz, żeby nocne demony lub wilki cię złapały za bycie niegrzecznym?'
 
-Patrzysz na siebie. Grozba nocnych klaczy lub, co gorsza, zmrozi twoje kosci, ale wygrana z nan bylaby tak ekscytujaca. 
+Patrzysz na siebie. Groźba nocnych klaczy lub, co gorsza, zmrozi twoje kości, ale wygrana z nan byłaby tak ekscytująca. 
 </nodes>
     <nodes xsi:type="NodeChallenge" ID="11" positionX="4375" positionY="-7" width="500" height="726" challengeType="TypeMental" versusGroup="GROUP-TUT_HUM_CRAFTSMAN_GRANDMA_STASIA" challengeScale="101" challengedList="ppl">
       <logic>
@@ -203,14 +203,14 @@ Patrzysz na siebie. Grozba nocnych klaczy lub, co gorsza, zmrozi twoje kosci, al
       <outputs name="Surrender" ownerID="11" targetID="13" fromX="4816" fromY="-662" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="12" positionX="5073" positionY="134" width="350" height="725">
-      <outputs name="Koniec." ownerID="12" targetID="8" fromX="5398" fromY="-357" />Naprawde myslales, ze ja masz, ale potem ciagnie stara karte nan, odchyla sie na krzesle i zamyka oczy i chrapie. 
-Cicho, przesuwasz ksiazke z jej rak, majac nadzieje znalezc inna historie. 
-Kiedy ksiezyc swieci przez twoje okno, slyszysz wycie wilkow w oddali i szum wiatru na podworku ... 
+      <outputs name="Koniec." ownerID="12" targetID="8" fromX="5398" fromY="-357" />Naprawdę myślałeś, że ją masz, ale potem ciągnie starą kartę nan, odchyla się na krześle i zamyka oczy i chrapie. 
+Cicho, przesuwasz książkę z jej rąk, mając nadzieję znaleźć inną historię. 
+Kiedy księżyc świeci przez twoje okno, słyszysz wycie wilków w oddali i szum wiatru na podwórku ... 
 </nodes>
     <nodes xsi:type="NodeAdventure" ID="13" positionX="5072" positionY="-597" width="350" height="725">
-      <outputs name="Koniec." ownerID="13" targetID="8" fromX="5397" fromY="-1088" />To nan nie jest jokerem. Ona krzyzuje ramiona i podnosi na ciebie brew, a wiesz, ze zabawa sie skonczyla. Poslusznie spieszysz sie do lozka. 
+      <outputs name="Koniec." ownerID="13" targetID="8" fromX="5397" fromY="-1088" />To nan nie jest jokerem. Ona krzyżuje ramiona i podnosi na ciebie brew, a wiesz, że zabawa się skończyła. Posłusznie spieszysz się do łóżka. 
 
-Gdy ksiezyc swieci przez twoje okno, slyszysz wilki wyjace w oddali i szum wiatru na podworku ... 
+Gdy księżyc świeci przez twoje okno, słyszysz wilki wyjące w oddali i szum wiatru na podwórku ... 
 </nodes>
   </Adventure>
   <Adventure name="Tutorial3" uniqueID="3" typeGeneric="false" typePerGroupGeneric="false" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="8" joinIsForced="false" joinType="OnlyOwn" joinRange="SinglePosition">
@@ -225,18 +225,18 @@ Gdy ksiezyc swieci przez twoje okno, slyszysz wilki wyjace w oddali i szum wiatr
           </LogicFilter>
         </FilterBlock>
       </logic>
-      <outputs name="Twoja krasnoludzka duma jest nieco zraniona na tym bezczelnym pokazie ignorancji. Powiedz im, zeby go pobili, zanim zepsuja ci dobry dzien. " ownerID="2" targetID="3" fromX="733" fromY="-522" />Pijany i wesoly udajesz sie do domu z dobrej gry w kosci. Ciezka torebka dzwoni do twojego pasa. Slonce zachodzi, ale powietrze jest wciaz cieple, wiec dlugi spacer do domu nie przeszkadza. 
+      <outputs name="Twoja krasnoludzka duma jest nieco zraniona na tym bezczelnym pokazie ignorancji. Powiedz im, żeby go pobili, zanim zepsują ci dobry dzień. " ownerID="2" targetID="3" fromX="733" fromY="-522" />Pijany i wesoły udajesz się do domu z dobrej gry w kości. Ciężka torebka dzwoni do twojego pasa. Słońce zachodzi, ale powietrze jest wciąż ciepłe, więc długi spacer do domu nie przeszkadza. 
 
-Sciezka prowadzi przez maly las, a gdy juz miales zrobic ostatni zwrot w kierunku domu, niektorzy zbirowie wyskakuja zza krzaka: 
+Ścieżka prowadzi przez mały las, a gdy już miałeś zrobić ostatni zwrot w kierunku domu, niektórzy zbirowie wyskakują zza krzaka: 
 
-'Twoje pieniadze lub twoj zyje!'- krzyczy najmniejszy z piskliwym glosem. 
+'Twoje pieniądze lub twój zyje!'- krzyczy najmniejszy z piskliwym głosem. 
 </nodes>
     <nodes xsi:type="NodeAdventure" ID="3" positionX="850" positionY="-11" width="350" height="725">
-      <outputs name="Walcz!" ownerID="3" targetID="4" fromX="1175" fromY="-502" />Patrza na siebie, a potem na swoj worek monet. 
+      <outputs name="Walcz!" ownerID="3" targetID="4" fromX="1175" fromY="-502" />Patrzą na siebie, a potem na swój worek monet. 
 
-'Nie boimy sie twojego rodzaju, zabierzemy cie!'
+'Nie boimy się twojego rodzaju, zabierzemy cię!'
 
-Sa odwazni, glupi lub zdesperowani.</nodes>
+Są odważni, głupi lub zdesperowani.</nodes>
     <nodes xsi:type="NodeChallenge" ID="4" positionX="1324" positionY="24" width="500" height="726" challengeType="TypePhysical" versusGroup="GROUP-TUT_HUM_BANDIT" challengeScale="101" challengedList="ppl">
       <logic>
         <ModifierBlock>
@@ -250,19 +250,19 @@ Sa odwazni, glupi lub zdesperowani.</nodes>
       <outputs name="Surrender" ownerID="4" targetID="8" fromX="1765" fromY="-631" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="5" positionX="1937" positionY="153" width="350" height="725">
-      <outputs name="Obserwuj, jak odchodza." ownerID="5" targetID="6" fromX="2262" fromY="-338" />Pobiles ich glupie osly na miazge i sprawiles, ze biegna: 
+      <outputs name="Obserwuj, jak odchodzą." ownerID="5" targetID="6" fromX="2262" fromY="-338" />Pobiłeś ich głupie osły na miazgę i sprawiłeś, że biegną: 
 
-'Przepraszam, przepraszam, krasnoludku, pojdziemy teraz!'
+'Przepraszam, przepraszam, krasnoludku, pójdziemy teraz!'
 
-Wracasz do domu i mam nadzieje, ze jestes wystarczajaco pewny siebie, by stawic czola kazdemu wyzwaniu, ktore Thea moze rzucic. 
+Wracasz do domu i mam nadzieję, że jesteś wystarczająco pewny siebie, by stawić czoła każdemu wyzwaniu, które Thea może rzucić. 
 
 </nodes>
     <nodes xsi:type="NodeAdventure" ID="6" positionX="2471" positionY="110" width="350" height="725" image="Event251">
-      <outputs name="Zakoncz samouczek i wroc do menu glownego" ownerID="6" targetID="7" fromX="2796" fromY="-381" />Gratulacje! 
+      <outputs name="Zakończ samouczek i wróć do menu głównego" ownerID="6" targetID="7" fromX="2796" fromY="-381" />Gratulacje! 
 
-Ukonczyles nasz samouczek i nauczyles sie podstaw mechaniki gry w karty. Pamietaj, ze zawsze mozesz powtorzyc to, jesli chcesz odswiezyc informacje. 
+Ukończyłeś nasz samouczek i nauczyłeś się podstaw mechaniki gry w karty. Pamiętaj, że zawsze możesz powtórzyć to, jeśli chcesz odświeżyć informacje. 
 
-Teraz idz twarza w twarz z prawdziwa Thea, jesli sie odwazysz! 
+Teraz idź twarzą w twarz z prawdziwą Theą, jeśli się odważysz! 
 
 
 </nodes>
@@ -276,10 +276,10 @@ Teraz idz twarza w twarz z prawdziwa Thea, jesli sie odwazysz!
         </ModifierBlock>
       </logic>
       <outputs name="Tak." ownerID="8" targetID="4" fromX="2310" fromY="-1148" />
-      <outputs name="Nie, pobili mnie, ale teraz mam zasady." ownerID="8" targetID="6" fromX="2310" fromY="-1228" />Ojej, krasnoludie czy nie krasnoludzie, oni cie bili! 
+      <outputs name="Nie, pobili mnie, ale teraz mam zasady." ownerID="8" targetID="6" fromX="2310" fromY="-1228" />Ojej, krasnoludie czy nie krasnoludzie, oni cię bili! 
 
-Na razie zostales uzdrowiony. 
+Na razie zostałeś uzdrowiony. 
 
-Czy chcialbys rewanzu?</nodes>
+Czy chciałbyś rewanżu?</nodes>
   </Adventure>
 </MODULE>

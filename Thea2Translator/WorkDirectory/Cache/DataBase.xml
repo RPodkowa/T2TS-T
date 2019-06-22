@@ -8118,7 +8118,12 @@
       <Output>Potwory</Output>
     </Texts>
   </Element>
-  <Element ID="600" Key="DES_SUBRACE_CHILD_DES" Flag="0">
+  <Element ID="600" Key="DES_SUBRACE_CHILD_DES" Flag="1">
+    <Confirmation>
+      <Time>06-22-2019 01:35:48</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBRACE</Group>
@@ -8129,7 +8134,12 @@
       <Output>Niewielki i kruchy, potrzebuje ochrony, zanim stanie się dorosły.</Output>
     </Texts>
   </Element>
-  <Element ID="601" Key="DES_SUBRACE_HUM_CHILD" Flag="0">
+  <Element ID="601" Key="DES_SUBRACE_HUM_CHILD" Flag="1">
+    <Confirmation>
+      <Time>06-22-2019 01:35:50</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBRACE</Group>
@@ -8141,7 +8151,12 @@
       <Output>Ludzkie dziecko</Output>
     </Texts>
   </Element>
-  <Element ID="602" Key="DES_SUBRACE_HUM_STRONG1_CHILD" Flag="0">
+  <Element ID="602" Key="DES_SUBRACE_HUM_STRONG1_CHILD" Flag="1">
+    <Confirmation>
+      <Time>06-22-2019 01:37:39</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBRACE</Group>
@@ -8151,10 +8166,15 @@
     </Groups>
     <Texts>
       <Input>Human Child - Apprentice Warrior</Input>
-      <Output>Human Child - Apprentice Warrior</Output>
+      <Output>Ludzkie dziecko - adept wojownik</Output>
     </Texts>
   </Element>
-  <Element ID="603" Key="DES_SUBRACE_HUM_STRONG1_CHILD_DES" Flag="0">
+  <Element ID="603" Key="DES_SUBRACE_HUM_STRONG1_CHILD_DES" Flag="1">
+    <Confirmation>
+      <Time>06-22-2019 01:38:02</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBRACE</Group>
@@ -8164,10 +8184,15 @@
     </Groups>
     <Texts>
       <Input>A youngster, needs protection before they can grow into an adult. They are stronger than regular children.</Input>
-      <Output>Młodzieniec, potrzebuje ochrony, zanim stanie się dorosły. Są silniejsi niż zwykłe dzieci.</Output>
+      <Output>Młodzieniec, potrzebuje ochrony, zanim stanie się dorosły. Jest silniejszy niż zwykłe dzieci.</Output>
     </Texts>
   </Element>
-  <Element ID="604" Key="DES_SUBRACE_HUM_STRONG2_CHILD" Flag="0">
+  <Element ID="604" Key="DES_SUBRACE_HUM_STRONG2_CHILD" Flag="1">
+    <Confirmation>
+      <Time>06-22-2019 01:38:35</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBRACE</Group>
@@ -8177,10 +8202,15 @@
     </Groups>
     <Texts>
       <Input>Human Child - Apprentice Hunter</Input>
-      <Output>Human Child - Apprentice Hunter</Output>
+      <Output>Ludzkie dziecko - adept łowca</Output>
     </Texts>
   </Element>
-  <Element ID="605" Key="DES_SUBRACE_HUM_STRONG2_CHILD_DES" Flag="0">
+  <Element ID="605" Key="DES_SUBRACE_HUM_STRONG2_CHILD_DES" Flag="1">
+    <Confirmation>
+      <Time>06-22-2019 01:39:16</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBRACE</Group>
@@ -8190,7 +8220,7 @@
     </Groups>
     <Texts>
       <Input>A youngster, needs protection before they can grow into an adult. they are more perceptive than younger children.</Input>
-      <Output>Młodzieniec, potrzebuje ochrony, zanim stanie się dorosły. są bardziej spostrzegawczy niż młodsze dzieci.</Output>
+      <Output>Młodzieniec, potrzebuje ochrony, zanim stanie się dorosły. Jest bardziej spostrzegawczy niż zwykłe dzieci.</Output>
     </Texts>
   </Element>
   <Element ID="606" Key="DES_SUBRACE_HUM_WARRIOR" Flag="1">
@@ -8210,7 +8240,12 @@
       <Output>Ludzki wojownik</Output>
     </Texts>
   </Element>
-  <Element ID="607" Key="DES_SUBRACE_HUM_WARRIOR_DES" Flag="0">
+  <Element ID="607" Key="DES_SUBRACE_HUM_WARRIOR_DES" Flag="1">
+    <Confirmation>
+      <Time>06-22-2019 01:39:24</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBRACE</Group>
@@ -8239,7 +8274,12 @@
       <Output>Ludzki wój</Output>
     </Texts>
   </Element>
-  <Element ID="609" Key="DES_SUBRACE_HUM_WOJ_DES" Flag="0">
+  <Element ID="609" Key="DES_SUBRACE_HUM_WOJ_DES" Flag="1">
+    <Confirmation>
+      <Time>06-22-2019 01:39:35</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBRACE</Group>
@@ -8251,7 +8291,12 @@
       <Output>Doświadczony wojownik. Biegły w wyzwaniach fizycznych, silny i twardy.</Output>
     </Texts>
   </Element>
-  <Element ID="610" Key="DES_SUBRACE_HUM_CRAFTSMAN" Flag="0">
+  <Element ID="610" Key="DES_SUBRACE_HUM_CRAFTSMAN" Flag="1">
+    <Confirmation>
+      <Time>06-22-2019 01:39:56</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBRACE</Group>
@@ -8260,10 +8305,15 @@
     </Groups>
     <Texts>
       <Input>Human Craftsman</Input>
-      <Output>Człowiek-rzemieślnik</Output>
+      <Output>Ludzki rzemieślnik</Output>
     </Texts>
   </Element>
-  <Element ID="611" Key="DES_SUBRACE_HUM_CRAFTSMAN_DES" Flag="0">
+  <Element ID="611" Key="DES_SUBRACE_HUM_CRAFTSMAN_DES" Flag="1">
+    <Confirmation>
+      <Time>06-22-2019 01:40:03</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBRACE</Group>
@@ -8292,7 +8342,12 @@
       <Output>Ludzki zbieracz</Output>
     </Texts>
   </Element>
-  <Element ID="613" Key="DES_SUBRACE_HUM_GATHERER_DES" Flag="0">
+  <Element ID="613" Key="DES_SUBRACE_HUM_GATHERER_DES" Flag="1">
+    <Confirmation>
+      <Time>06-22-2019 01:40:29</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBRACE</Group>
@@ -8301,10 +8356,15 @@
     </Groups>
     <Texts>
       <Input>Swift hands and sharp eyes make them proficient at harvesting resources.</Input>
-      <Output>Szybkie dłonie i ostre oczy sprawiają, że są biegli w zbieraniu zasobów.</Output>
+      <Output>Szybkie dłonie i bystre oczy sprawiają, że są biegli w zbieraniu zasobów.</Output>
     </Texts>
   </Element>
-  <Element ID="614" Key="DES_SUBRACE_HUM_HUNTER" Flag="0">
+  <Element ID="614" Key="DES_SUBRACE_HUM_HUNTER" Flag="1">
+    <Confirmation>
+      <Time>06-22-2019 01:40:32</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBRACE</Group>
@@ -8316,7 +8376,12 @@
       <Output>Ludzki łowca</Output>
     </Texts>
   </Element>
-  <Element ID="615" Key="DES_SUBRACE_HUM_HUNTER_DES" Flag="0">
+  <Element ID="615" Key="DES_SUBRACE_HUM_HUNTER_DES" Flag="1">
+    <Confirmation>
+      <Time>06-22-2019 01:42:42</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBRACE</Group>
@@ -8325,10 +8390,15 @@
     </Groups>
     <Texts>
       <Input>Adept at hunting prey and scouting.</Input>
-      <Output>Adept w polowaniu na zdobycz i zwiad.</Output>
+      <Output>Mistrz w polowaniu i zwiadzie.</Output>
     </Texts>
   </Element>
-  <Element ID="616" Key="DES_SUBRACE_HUM_YOUNG_ZERCA" Flag="0">
+  <Element ID="616" Key="DES_SUBRACE_HUM_YOUNG_ZERCA" Flag="1">
+    <Confirmation>
+      <Time>06-22-2019 01:43:46</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBRACE</Group>
@@ -8338,10 +8408,15 @@
     </Groups>
     <Texts>
       <Input>Human Young Zerca</Input>
-      <Output>Ludzka młoda Zerca</Output>
+      <Output>Ludzki młody Żerca</Output>
     </Texts>
   </Element>
-  <Element ID="617" Key="DES_SUBRACE_HUM_YOUNG_ZERCA_DES" Flag="0">
+  <Element ID="617" Key="DES_SUBRACE_HUM_YOUNG_ZERCA_DES" Flag="1">
+    <Confirmation>
+      <Time>06-22-2019 01:43:53</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBRACE</Group>
@@ -8354,7 +8429,12 @@
       <Output>Klerycy kosmicznego panteonu, znani ze swojej mądrości i oddania bogom.</Output>
     </Texts>
   </Element>
-  <Element ID="618" Key="DES_SUBRACE_HUM_ZERCA" Flag="0">
+  <Element ID="618" Key="DES_SUBRACE_HUM_ZERCA" Flag="1">
+    <Confirmation>
+      <Time>06-22-2019 01:44:01</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBRACE</Group>
@@ -8363,10 +8443,15 @@
     </Groups>
     <Texts>
       <Input>Human Zerca</Input>
-      <Output>Ludzka Zerca</Output>
+      <Output>Ludzki Żerca</Output>
     </Texts>
   </Element>
-  <Element ID="619" Key="DES_SUBRACE_HUM_ZERCA_DES" Flag="0">
+  <Element ID="619" Key="DES_SUBRACE_HUM_ZERCA_DES" Flag="1">
+    <Confirmation>
+      <Time>06-22-2019 01:44:04</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBRACE</Group>
@@ -8378,7 +8463,12 @@
       <Output>Klerycy kosmicznego panteonu, znani ze swojej mądrości i oddania bogom.</Output>
     </Texts>
   </Element>
-  <Element ID="620" Key="DES_SUBRACE_HUM_HEALER" Flag="0">
+  <Element ID="620" Key="DES_SUBRACE_HUM_HEALER" Flag="1">
+    <Confirmation>
+      <Time>06-22-2019 01:44:07</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBRACE</Group>
@@ -8402,7 +8492,12 @@
       <Output>Mądry uczył się na temat ziół i podstawowej medycyny. Uzdrowiciele zawsze byli szanowani nie tylko ze względu na swoją wiedzę, ale także gotowość do pomocy potrzebującym. </Output>
     </Texts>
   </Element>
-  <Element ID="622" Key="DES_SUBRACE_HUM_WITCH" Flag="0">
+  <Element ID="622" Key="DES_SUBRACE_HUM_WITCH" Flag="1">
+    <Confirmation>
+      <Time>06-22-2019 01:44:19</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBRACE</Group>
@@ -8414,7 +8509,12 @@
       <Output>Ludzka czarownica</Output>
     </Texts>
   </Element>
-  <Element ID="623" Key="DES_SUBRACE_HUM_YOUNG_WITCH" Flag="0">
+  <Element ID="623" Key="DES_SUBRACE_HUM_YOUNG_WITCH" Flag="1">
+    <Confirmation>
+      <Time>06-22-2019 01:44:29</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBRACE</Group>
@@ -8424,7 +8524,7 @@
     </Groups>
     <Texts>
       <Input>Human - Young Witch</Input>
-      <Output>Człowiek - młoda czarownica</Output>
+      <Output>Ludzka młoda czarownica</Output>
     </Texts>
   </Element>
   <Element ID="624" Key="DES_SUBRACE_HUM_WITCH_DES" Flag="0">

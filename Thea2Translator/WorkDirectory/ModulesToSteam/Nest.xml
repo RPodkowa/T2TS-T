@@ -184,9 +184,7 @@ Jest malo prawdopodobne, aby ktorykolwiek z nich jeszcze zyl, ale warto to spraw
         </ModifierBlock>
       </logic>
       <outputs name="Zaakceptuj ich dobra wole i wyjdz." ownerID="62" targetID="55" fromX="3296" fromY="-864" />
-      <outputs name="Zabili cala wioske. Atak!" ownerID="62" targetID="41" fromX="3296" fromY="-944" />Pajaki sa nieco wrazliwe. Bestia do bestii, dowiadujesz sie, ze najechali pobliska wioske i przyniesli do gniazda wiele „soczystych” nagrod. 
-
-Poniewaz probuja ustanowic swoja osade jako cos wiecej niz gniazdo, oferuja pewne towary i mowia, ze jeden z nich przylaczy sie do ciebie jako dobry poczatek relacji. 
+      <outputs name="Zabili cala wioske. Atak!" ownerID="62" targetID="41" fromX="3296" fromY="-944" />Pajaki sa nieco wrazliwe. Bestia do bestii, dowiadujesz sie, ze najechali pobliska wioske i przyniesli do gniazda wiele „soczystych” nagrod.Poniewaz probuja ustanowic swoja osade jako cos wiecej niz gniazdo, oferuja pewne towary i mowia, ze jeden z nich przylaczy sie do ciebie jako dobry poczatek relacji. 
 </nodes>
     <nodes xsi:type="NodeDealDamage" ID="63" positionX="1679.63965" positionY="-632.7026" width="460" height="459" challengeTypeDamage="TypeMental" minDamage="3" maxDamage="6" useCountInPercent="false" targetGroup="ppl">
       <outputs ownerID="63" targetID="61" fromX="2108" fromY="-1021" />
@@ -290,7 +288,7 @@ Poniewaz probuja ustanowic swoja osade jako cos wiecej niz gniazdo, zgadzaja sie
       <outputs name="Atak!" ownerID="2" targetID="3" fromX="562" fromY="-280" />
       <outputs name="Sprobuj szybko sie wspiac." ownerID="2" targetID="4" fromX="562" fromY="-360" />
       <outputs name="Obserwuj szczury. Wydaje sie dziwne, ze cie nie atakuja." ownerID="2" targetID="31" fromX="562" fromY="-440" />
-      <outputs name="[Bestia lub bestia] Staraj sie dominowac w tym roju, aby wykonac licytacje!" ownerID="2" targetID="38" group="G1" fromX="562" fromY="-520" />Ziemia pod twoimi stopami zapada sie i wpadasz do tunelu. Wkrotce zdajesz sobie sprawe, ze podloga sie porusza. Roi sie od robactwa!</nodes>
+      <outputs name="[Bestia lub bestia] Staraj sie dominowac nad tym rojem, aby wykonac licytacje!" ownerID="2" targetID="38" group="G1" fromX="562" fromY="-520" />Ziemia pod twoimi stopami zapada sie i wpadasz do tunelu. Wkrotce zdajesz sobie sprawe, ze podloga sie porusza. Roi sie od robactwa!</nodes>
     <nodes xsi:type="NodeChallenge" ID="3" positionX="999.6875" positionY="737.0438" width="500" height="726" challengeType="TypePhysical" versusGroup="GROUP-RATS_1P_1M_1S" challengeScale="101" challengedList="ppl">
       <outputs name="Win" ownerID="3" targetID="12" fromX="1440" fromY="241" />
       <outputs name="Lose" ownerID="3" targetID="30" fromX="1440" fromY="161" />
@@ -316,7 +314,7 @@ Poniewaz probuja ustanowic swoja osade jako cos wiecej niz gniazdo, zgadzaja sie
       <outputs name="Atak!" ownerID="8" targetID="3" fromX="-707" fromY="-2964" />Szczury roi sie od ciebie i gryzie ze zloscia, piszczac, ze juz maja mistrza. 
 </nodes>
     <nodes xsi:type="NodeAdventure" ID="12" positionX="1933" positionY="1109" width="350" height="725">
-      <outputs name="Zbierz co mozesz i wyjdz." ownerID="12" targetID="40" fromX="2259" fromY="618" />Gniazdo szczura jest przewaznie stosem gnoju i gruzu, ale mozesz byc w stanie uratowac niektore towary.</nodes>
+      <outputs name="Zbierz co mozesz i wyjdz." ownerID="12" targetID="40" fromX="2259" fromY="618" />Gniazdo szczurow to glownie kupa gnoju i gruzu, ale mozesz byc w stanie uratowac niektore towary.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="13" positionX="3604.727" positionY="1193.58545" width="350" height="455" allPlayersXP="2" allPlayersRP="1" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventure" ID="14" positionX="2890.726" positionY="-293.46698" width="350" height="725">
       <logic>
@@ -429,7 +427,7 @@ Mniejsze szczury porastaja siedzenie i dodaja nowe warstwy.</nodes>
     <nodes xsi:type="NodeAdventure" ID="33" positionX="2062.97974" positionY="-874.6554" width="350" height="885">
       <outputs name="Wpatruj sie w nich groznie." ownerID="33" targetID="34" fromX="2388" fromY="-1365" />
       <outputs name="Odrzuc i atakuj!" ownerID="33" targetID="3" fromX="2388" fromY="-1446" />
-      <outputs name="Zgadzam sie." ownerID="33" targetID="35" fromX="2388" fromY="-1526" />„Da szefie, czlowieku, szefie, jest glodny, szefie potrzebuje rzeczy na jego blyszczaca siedzenie, wiec wszyscy jestesmy silni i radzimy sobie z twoim wielkim ludem ... tak, tak ... Ty szczurze, ty przyjacielu, nie mow szefowi, ze pozwolilismy tunelom sie zawalic, dajemy ci rzeczy, tak, tak?'
+      <outputs name="Zgadzam sie." ownerID="33" targetID="35" fromX="2388" fromY="-1526" />„Da szefie, czlowieku, szefie jest glodny, da szefowi potrzebuje rzeczy na swoje blyszczace siedzenie, wiec wszyscy jestesmy silni i radzimy sobie z toba z wielkim ludem ... tak, tak ... Ty szczurze, ty przyjacielu, nie mow szefowi, ze pozwolilismy tunelom sie zawalic, dajemy ci rzeczy, tak, tak?'
 </nodes>
     <nodes xsi:type="NodeAdventure" ID="34" positionX="2451.76758" positionY="-817.024658" width="350" height="725">
       <logic>
@@ -637,9 +635,9 @@ Gruby szczur dowodzi twoja wyzszoscia i podazy za toba.</nodes>
         </FilterBlock>
       </logic>
       <outputs name="[Percepcja lub lowca] Wiesz, ze gniazda gigantycznych wron moga ukrywac wiele skarbow w srodku. Podejdz blizej, aby zbadac." ownerID="2" targetID="3" fromX="765" fromY="-540" />
-      <outputs name="[Leshy] Drzewo nie jest calkowicie zawalone. Zaspiewajcie to i przywroccie do dawnego siebie, oszczedzajac w ten sposob gniazdo." ownerID="2" targetID="35" fromX="765" fromY="-620" />
+      <outputs name="[Leshy] Drzewo nie jest calkowicie zawalone. Zaspiewajcie to i przywroccie do dawnego siebie, oszczedzajac w ten sposob takze gniazdo." ownerID="2" targetID="35" fromX="765" fromY="-620" />
       <outputs name="Z szacunku dla natury poczekaj, az wrony uratuja swoje mlode, a nastepnie zbadaj." ownerID="2" targetID="5" fromX="765" fromY="-700" />
-      <outputs name="Przekonaj wrony, aby pomogly ci w poruszaniu sie - za cene." ownerID="2" targetID="41" fromX="765" fromY="-780" />
+      <outputs name="Przekonaj wrony, aby pomogly ci w ruchu - za cene." ownerID="2" targetID="41" fromX="765" fromY="-780" />
       <outputs name="Atak!" ownerID="2" targetID="6" fromX="765" fromY="-860" />
       <outputs name="Wyjdz." ownerID="2" targetID="7" fromX="765" fromY="-941" />Po gwaltownej burzy wiele drzew spada. Widzisz roj wron okrazajacych jedno z takich drzew, a kiedy zblizysz sie, zdasz sobie sprawe, ze ich gniazdo rowniez upadlo, a ptaki probuja przeniesc to, co moga, do innego drzewa.</nodes>
     <nodes xsi:type="NodeAdventure" ID="3" positionX="968.404053" positionY="978.44104" width="350" height="1206">
@@ -662,10 +660,10 @@ Gruby szczur dowodzi twoja wyzszoscia i podazy za toba.</nodes>
       <outputs name="Atak!" ownerID="3" targetID="10" fromX="1294" fromY="487" />
       <outputs name="Poczekaj, az skoncza i zbierz to, co zostalo. " ownerID="3" targetID="18" group="G1" fromX="1294" fromY="407" />
       <outputs name="Poczekaj, az skoncza i zbierz to, co zostalo. " ownerID="3" targetID="55" group="G1" fromX="1294" fromY="326" />
-      <outputs name="Skradnij sie miedzy nimi, aby ukrasc jakies towary. " ownerID="3" targetID="28" fromX="1294" fromY="246" />
-      <outputs name="Przekonaj wrony, aby pomogly ci w poruszaniu sie - za cene." ownerID="3" targetID="41" fromX="1294" fromY="166" />
-      <outputs name="[Leshy] Drzewo nie jest calkowicie zawalone. Zaspiewajcie to i przywroccie do dawnego siebie, oszczedzajac w ten sposob gniazdo." ownerID="3" targetID="35" fromX="1294" fromY="86" />
-      <outputs name="Wyjdz." ownerID="3" targetID="7" fromX="1294" fromY="6" />Zblizasz sie i widzisz szczatki z upadlego gniazda. Istnieje kilka martwych pisklat, ale takze wiele blyszczacych bombek wplecionych w strukture. 
+      <outputs name="Skradnij sie miedzy nimi, aby ukrasc niektore towary. " ownerID="3" targetID="28" fromX="1294" fromY="246" />
+      <outputs name="Przekonaj wrony, aby pomogly ci w ruchu - za cene." ownerID="3" targetID="41" fromX="1294" fromY="166" />
+      <outputs name="[Leshy] Drzewo nie jest calkowicie zawalone. Zaspiewajcie to i przywroccie do dawnego siebie, oszczedzajac w ten sposob takze gniazdo." ownerID="3" targetID="35" fromX="1294" fromY="86" />
+      <outputs name="Wyjdz." ownerID="3" targetID="7" fromX="1294" fromY="6" />Podchodzisz blizej i widzisz szczatki z upadlego gniazda. Istnieje kilka martwych pisklat, ale takze wiele blyszczacych bombek wplecionych w strukture. 
 
 Drzewo jest rowniez dobrej jakosci. 
 
@@ -700,7 +698,7 @@ Wrony nadal przewoza towary gdzies wysoko.</nodes>
       <outputs name="Teraz atakuj slabsze wrony." ownerID="5" targetID="4" fromX="1322" fromY="-1263" />
       <outputs name="Poczekaj, az skoncza i zbierz to, co zostalo. " ownerID="5" targetID="18" group="G1" fromX="1322" fromY="-1343" />
       <outputs name="Poczekaj, az skoncza i zbierz to, co zostalo. " ownerID="5" targetID="55" group="G1" fromX="1322" fromY="-1423" />
-      <outputs name="Przekonaj wrony, aby pomogly ci w poruszaniu sie - za cene." ownerID="5" targetID="41" fromX="1322" fromY="-1503" />Czekasz, az piskleta zostana uratowane i odlecisz z silniejszymi wronami. Niewielka grupa maruderow pozostaje, by oczyscic gniazdo. Teraz jest to kwestia najsilniejszego zdobywania lupow. </nodes>
+      <outputs name="Przekonaj wrony, aby pomogly ci w ruchu - za cene." ownerID="5" targetID="41" fromX="1322" fromY="-1503" />Czekasz, az piskleta zostana uratowane i odlecisz z silniejszymi wronami. Niewielka grupa maruderow pozostaje, by oczyscic gniazdo. Teraz jest to kwestia najsilniejszego zdobywania lupow. </nodes>
     <nodes xsi:type="NodeChallenge" ID="6" positionX="1868.54016" positionY="-1262.69568" width="500" height="726" challengeType="TypePhysical" versusGroup="GROUP-CROW_2P_2M_2S" challengeScale="101" challengedList="ppl">
       <outputs name="Win" ownerID="6" targetID="27" fromX="2309" fromY="-1758" />
       <outputs name="Lose" ownerID="6" targetID="43" fromX="2309" fromY="-1838" />
@@ -818,7 +816,7 @@ Wrony nadal przewoza towary gdzies wysoko.</nodes>
         </ModifierBlock>
       </logic>
       <outputs name="Atak!" ownerID="33" targetID="10" fromX="2847" fromY="-872" />
-      <outputs name="Wyjdz." ownerID="33" targetID="49" fromX="2847" fromY="-952" />Wrony widzialy, jak przychodzisz i atakujesz, zmuszajac cie do zrzucenia niektorych towarow.</nodes>
+      <outputs name="Wyjdz." ownerID="33" targetID="49" fromX="2847" fromY="-952" />Wrony widzialy, ze przychodzisz i atakujesz, zmuszajac cie do zrzucenia niektorych towarow.</nodes>
     <nodes xsi:type="NodeChallenge" ID="35" positionX="-263" positionY="-1274" width="500" height="726" challengeType="TypeSpirit" versusConcept="true" versusGroup="GROUP-CON_S_0P_0M_2S" challengeScale="100" challengedList="leshy">
       <logic>
         <FilterBlock>
@@ -870,7 +868,7 @@ Jeden z nich upuszcza prezent w podziekowaniu.</nodes>
       </logic>
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="39" positionX="-87.24102" positionY="-2100.19238" width="350" height="725">
-      <outputs name="Wyjdz." ownerID="39" targetID="49" fromX="238" fromY="-2591" />Niestety, drzewo bylo zbyt slabe, by zwazac na twoje wezwanie. Pomimo twojej proby pomocy uschla. 
+      <outputs name="Wyjdz." ownerID="39" targetID="49" fromX="238" fromY="-2591" />Niestety, drzewo bylo zbyt slabe, by sluchac twojego wezwania. Pomimo twojej proby pomocy uschla. 
 
 Czujesz sie bardzo zasmucony, ale wrony wydaja sie byc na razie.</nodes>
     <nodes xsi:type="NodeDealDamage" ID="40" positionX="-591.0034" positionY="-2069.30127" width="460" height="459" challengeTypeDamage="TypeSpirit" minDamage="10" maxDamage="20" useCountInPercent="true" targetGroup="leshy">
@@ -925,7 +923,7 @@ Czujesz sie bardzo zasmucony, ale wrony wydaja sie byc na razie.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="43" targetID="49" fromX="4104" fromY="-2703" />Wsciekle morderstwo wron sciga cie, zmuszajac do upuszczenia niektorych twoich towarow, aby uratowac zycie.</nodes>
+      <outputs name="Wyjdz." ownerID="43" targetID="49" fromX="4104" fromY="-2703" />Wsciekle morderstwo wron sciga cie, zmuszajac do upuszczenia niektorych towarow, aby uratowac zycie.</nodes>
     <nodes xsi:type="NodeDealDamage" ID="44" positionX="2351.38" positionY="-2184.43921" width="460" height="459" challengeTypeDamage="TypePhysical" minDamage="20" maxDamage="35" useCountInPercent="true" targetGroup="beastatlkers">
       <outputs ownerID="44" targetID="43" fromX="2780" fromY="-2572" />
     </nodes>
@@ -992,7 +990,7 @@ Czujesz sie bardzo zasmucony, ale wrony wydaja sie byc na razie.</nodes>
           </LogicFilter>
         </FilterBlock>
       </logic>
-      <outputs name="Najpierw wrzuc kilka latarek, a nastepnie zbadaj." ownerID="2" targetID="5" fromX="772" fromY="-600" />
+      <outputs name="Najpierw wrzuc kilka pochodni, a nastepnie zbadaj." ownerID="2" targetID="5" fromX="772" fromY="-600" />
       <outputs name="Wejdz i zbadaj." ownerID="2" targetID="4" fromX="772" fromY="-681" />
       <outputs name="Wyjdz." ownerID="2" targetID="3" fromX="772" fromY="-761" />Odkrywasz podziemne tunele.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="3" positionX="394.826965" positionY="-1031.34009" width="350" height="408" linkedEventUniqueID="0" />
@@ -1170,7 +1168,7 @@ Weze wydaja sie przez pewien czas zachwycone, ale jeden z nich przerywa koncentr
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Zbierz co mozesz i wyjdz." ownerID="32" targetID="44" group="G1" fromX="2882" fromY="-2575" />Z odpowiednimi ziolami i roslinami oraz odrobina pomyslowosci wypalasz weze z tunelu. Mozesz nawet polowac na niektorych, gdy probuja uciekac w panice.</nodes>
+      <outputs name="Zbierz co mozesz i wyjdz." ownerID="32" targetID="44" group="G1" fromX="2882" fromY="-2575" />Z odpowiednimi ziolami i roslinami oraz odrobina pomyslowosci, wypalasz weze z tunelu. Mozesz nawet polowac na niektorych, gdy probuja uciekac w panice.</nodes>
     <nodes xsi:type="NodeAdventure" ID="35" positionX="957.5483" positionY="-1764.81042" width="350" height="805">
       <logic>
         <ModifierBlock>

@@ -1340,7 +1340,7 @@ Widzisz zbieranie orkow.</nodes>
       <outputs name="Zgodz sie zaplacic cene za usuniecie klatwy." ownerID="26" targetID="73" fromX="2344" fromY="-2503" />
       <outputs name="Pros o uzdrowienie ran duchowych." ownerID="26" targetID="72" fromX="2344" fromY="-2583" />
       <outputs name="[Ork] Popros ja o tradycyjne leczenie orczego ducha zarowno dla przeklenstw, jak i ran duchowych." ownerID="26" targetID="71" fromX="2344" fromY="-2663" />
-      <outputs name="Wyjdz." ownerID="26" targetID="4" fromX="2344" fromY="-2743" />„Moge ci odebrac ciemnosc, ale musisz zaplacic. Magia ma swoja cene. Uzdrawianie ducha jest latwiejsze, ale przeklenstwa, coz, sa paskudnymi rzeczami i beda cie kosztowac wiecej - beda cie kosztowac krew. Och, nie lecze samcow.'</nodes>
+      <outputs name="Wyjdz." ownerID="26" targetID="4" fromX="2344" fromY="-2743" />„Moge ci odebrac ciemnosc, ale musisz zaplacic. Magia ma swoja cene. Uzdrawianie ducha jest latwiejsze, ale przeklenstwa, coz, sa paskudnymi rzeczami i beda cie kosztowac wiecej - bedzie cie to kosztowac krew. Och, nie lecze samcow.'</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="28" positionX="1486" positionY="-2591" width="350" height="530" linkedEventUniqueID="0">
       <logic>
         <ModifierBlock>
@@ -1803,7 +1803,9 @@ Mozemy zaoszczedzic czesc naszych notek.'</nodes>
       <outputs name="Dziekuje im i odejdzcie." ownerID="71" targetID="4" fromX="3822" fromY="-2109" />
       <outputs name="Zgodz sie zaplacic cene za usuniecie klatwy." ownerID="71" targetID="73" fromX="3822" fromY="-2189" />
       <outputs name="Pros o uzdrowienie ran duchowych." ownerID="71" targetID="72" fromX="3822" fromY="-2269" />
-      <outputs name="[Czarownica] Powiedz, ze potrzebujesz tylko pomocy swojej siostry. Sam zaplacisz cene i obiecasz, ze jej nie obciazysz. " ownerID="71" targetID="29" fromX="3822" fromY="-2349" />„Idziesz dziwna sciezka, ale przypuszczam, ze jestes z naszej krwi, wiec tak, ulecze twojego ducha plomieniem, ktory zabije innych.Twoi przyjaciele nadal moga mi placic, jesli potrzebuja uzdrowienia.'
+      <outputs name="[Czarownica] Powiedz, ze potrzebujesz tylko pomocy swojej siostry. Sam zaplacisz cene i obiecasz, ze jej nie obciazysz. " ownerID="71" targetID="29" fromX="3822" fromY="-2349" />„Idziesz dziwna sciezka, ale przypuszczam, ze jestes z naszej krwi, wiec tak, ulecze twojego ducha plomieniem, ktory zabije innych. 
+
+Twoi przyjaciele nadal moga mi placic, jesli potrzebuja uzdrowienia.'
 </nodes>
     <nodes xsi:type="NodeTrade" ID="72" positionX="1907" positionY="-3082" width="460" height="479" traderProfile="TRADER-BANDIT" playerInventory="stuff" startingBalance="-50">
       <logic>
@@ -2646,7 +2648,9 @@ Mozemy zaoszczedzic czesc naszych notek.'</nodes>
       <outputs name="Dziekuje im i odejdzcie." ownerID="71" targetID="4" fromX="3962" fromY="-2359" />
       <outputs name="Zgodz sie zaplacic cene za usuniecie klatwy." ownerID="71" targetID="73" fromX="3962" fromY="-2439" />
       <outputs name="Pros o uzdrowienie ran duchowych." ownerID="71" targetID="72" fromX="3962" fromY="-2519" />
-      <outputs name="[Czarownica] Powiedz, ze potrzebujesz tylko pomocy swojej siostry. Sam zaplacisz cene i obiecasz, ze jej nie obciazysz. " ownerID="71" targetID="29" fromX="3962" fromY="-2599" />„Idziesz dziwna sciezka, ale przypuszczam, ze jestes z naszej krwi, wiec tak, ulecze twojego ducha plomieniem, ktory zabije innych.Twoi przyjaciele nadal moga mi placic, jesli potrzebuja uzdrowienia.'
+      <outputs name="[Czarownica] Powiedz, ze potrzebujesz tylko pomocy swojej siostry. Sam zaplacisz cene i obiecasz, ze jej nie obciazysz. " ownerID="71" targetID="29" fromX="3962" fromY="-2599" />„Idziesz dziwna sciezka, ale przypuszczam, ze jestes z naszej krwi, wiec tak, ulecze twojego ducha plomieniem, ktory zabije innych. 
+
+Twoi przyjaciele nadal moga mi placic, jesli potrzebuja uzdrowienia.'
 </nodes>
     <nodes xsi:type="NodeTrade" ID="72" positionX="2175" positionY="-3004" width="460" height="479" traderProfile="TRADER-BANDIT" playerInventory="sell" startingBalance="-100">
       <logic>
@@ -3498,7 +3502,7 @@ Moglaby zaryzykowac wyslanie mezczyzny, a wtedy porazka zostalaby oskarzona o je
       <outputs name="Atak!" ownerID="60" targetID="24" fromX="424" fromY="-1782" />
       <outputs name="Uciekaj." ownerID="60" targetID="37" fromX="424" fromY="-1862" />Otwierasz usta, zeby mowic, ale jeden z orkow na ciebie pluje: 
 
-„Czuje stagnacje harmonii na twoim oddechu! Dziekuje ci, bo poruszyles moja wojownicza krew z tej zgnilizny. Teraz biegnij albo umrzesz!'</nodes>
+„Czuje stagnacje harmonii na twoim oddechu! Dziekuje, bo poruszyles moja wojownicza krew z tej zgnilizny. Teraz biegnij albo umrzesz!'</nodes>
     <nodes xsi:type="NodeAdventure" ID="61" positionX="-1409" positionY="-1261" width="350" height="805">
       <logic>
         <FilterBlock>
@@ -3508,7 +3512,7 @@ Moglaby zaryzykowac wyslanie mezczyzny, a wtedy porazka zostalaby oskarzona o je
         </FilterBlock>
       </logic>
       <outputs name="Uciekaj." ownerID="61" targetID="37" fromX="-1083" fromY="-1752" />
-      <outputs name="Atak!" ownerID="61" targetID="24" fromX="-1083" fromY="-1832" />„Proponujesz nam rzeczy, po ktore cicho odejdziesz, jak jakas szumowina goblinow? Jak smiesz obrazac nasz honor! Umierac!'</nodes>
+      <outputs name="Atak!" ownerID="61" targetID="24" fromX="-1083" fromY="-1832" />„Proponujesz nam rzeczy, po ktore cicho odejdziesz, jak jakies goblinskie szumowiny? Jak smiesz obrazac nasz honor! Umierac!'</nodes>
     <nodes xsi:type="NodeProduceDrop" ID="62" positionX="-996" positionY="-1277" width="460" height="509">
       <outputs ownerID="62" targetID="61" group="G1" fromX="-565" fromY="-1635" />
       <outputs ownerID="62" targetID="15" group="G1" fromX="-565" fromY="-1715" />
@@ -3892,7 +3896,7 @@ Orkowie sa zadowoleni, ze wiedza o heroicznych czynach swoich krewnych i twojej 
 
 - Czujesz zapach kuzni. Jestes solidny. Orki tez sa ogniem, zawalaja wyzwanie, teraz czcza na mojej szyi. Robisz wyzwanie, dostajesz nagrode. 
 
-A poniewaz ty zaswiecisz, nie zlapie cie w pulapke. Wybierz teraz.'</nodes>
+A poniewaz oswietlasz, nie pulapke cie. Wybierz teraz.'</nodes>
     <nodes xsi:type="NodeDealDamage" ID="49" positionX="3077" positionY="-938" width="460" height="459" challengeTypeDamage="TypePhysical" minDamage="10" maxDamage="30" useCountInPercent="true" targetGroup="ppl">
       <outputs ownerID="49" targetID="16" fromX="3506" fromY="-1326" />
     </nodes>
@@ -4570,7 +4574,7 @@ Orkowie dziekuja za uwolnienie poleglych i pozostawiaja nagrode.</nodes>
 
 Znajdziesz takze upior, prawdopodobnie produkt wszelkich ciemnych sztuk, ktore tu wykonano. Moze chcesz zostac z toba.</nodes>
     <nodes xsi:type="NodeAdventure" ID="28" positionX="2932" positionY="-167" width="350" height="725">
-      <outputs name="Wyjdz." ownerID="28" targetID="48" fromX="3257" fromY="-658" />Szkielety orkow pokonuja twoje wysilki i roj. Orkowie musza przyjsc z pomoca i nie sa pod wrazeniem twojej pomocy.'</nodes>
+      <outputs name="Wyjdz." ownerID="28" targetID="48" fromX="3257" fromY="-658" />Szkielety orkow pokonuja twoje wysilki i roi sie od ciebie. Orkowie musza przyjsc z pomoca i nie sa pod wrazeniem twojej pomocy.'</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="30" positionX="3947" positionY="-538" width="350" height="408" allPlayersXP="1" allPlayersRP="1" linkedEventUniqueID="0">
       <logic>
         <ModifierBlock>
@@ -5787,7 +5791,7 @@ Orkowie smieja sie z waszej porazki, ale to zyskuje choc troche ich przyjazni.</
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="22" targetID="23" fromX="734" fromY="-2935" />Karakandza odchodzi, ale orkowie mowia, ze wszystko, co udowodniles, to twoja glupota, oddajac wlasne sily tym stworzeniom, zamiast je zabijac. </nodes>
+      <outputs name="Wyjdz." ownerID="22" targetID="23" fromX="734" fromY="-2935" />Karakandza odchodzi, ale orkowie mowia, ze wszystko, co udowodniles, to twoja glupota, oddajac wlasne sily tym stworzeniom zamiast ich zabijac. </nodes>
     <nodes xsi:type="NodeSpawnOnMap" ID="23" positionX="1361" positionY="-2385" width="480" height="503" radius="0" destroyOwner="true" linkedEventUniqueID="0">
       <outputs ownerID="23" targetID="14" fromX="1809" fromY="-2817" />
     </nodes>
@@ -6530,7 +6534,7 @@ Straznicy jeszcze cie nie zauwazyli.</nodes>
       <outputs name="Walcz!" ownerID="4" targetID="6" fromX="2270" fromY="-704" />
       <outputs name="Sprobuj uciec." ownerID="4" targetID="49" fromX="2270" fromY="-784" />Gobliny wpadaja w zasadzke i zdajesz sobie sprawe, ze przygotowaly rytual, ktory wciaga cie w swiat duchow!</nodes>
     <nodes xsi:type="NodeAdventure" ID="5" positionX="1674" positionY="-1010" width="350" height="922">
-      <outputs name="Zatrzymaj sie, podnies rece i powiedz, ze nie chcesz walczyc, tylko po to, by powiedziec im, ze musza odejsc, poniewaz orkowie nie chca ich tutaj." ownerID="5" targetID="50" fromX="1999" fromY="-1457" />
+      <outputs name="Zatrzymaj sie, podnies rece i powiedz, ze nie chcesz walczyc, tylko po to, by powiedziec im, ze musza odejsc, poniewaz orkowie ich nie chca." ownerID="5" targetID="50" fromX="1999" fromY="-1457" />
       <outputs name="Sprobuj zastraszyc sie i powiedz im, zeby go pokonali!" ownerID="5" targetID="51" group="G1" fromX="1999" fromY="-1537" />
       <outputs name="Atak!" ownerID="5" targetID="7" fromX="1999" fromY="-1617" />
       <outputs name="[Goblin] Powiedz, ze bekarci orkowie nie zwalniaja ich. Sa nawet wystarczajaco zdeterminowani, aby wyslac outsiderow do pracy." ownerID="5" targetID="47" fromX="1999" fromY="-1697" />Przeszukujesz miejsce i wreszcie dostrzegasz gobliny. Niestety, oni tez cie zauwazaja, wiec nie masz zbyt wiele czasu, aby zdecydowac, co robic.</nodes>
@@ -8712,13 +8716,13 @@ Orki zaczynaja dziwny taniec wojownika i starasz sie jak najlepiej dolaczyc, pro
       <outputs ownerID="40" targetID="56" fromX="4021" fromY="-1732" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="41" positionX="3182.449" positionY="-1282.84326" width="350" height="725">
-      <outputs name="Wyjdz." ownerID="41" targetID="40" fromX="3508" fromY="-1773" />Poddaj sie 
+      <outputs name="Wyjdz." ownerID="41" targetID="40" fromX="3508" fromY="-1773" />„Poddaj sie!'
 
 Orki pluja, odwracaja sie od ciebie i czekaja na ciebie, zebys odszedl ze wstydem.</nodes>
     <nodes xsi:type="NodeAdventure" ID="42" positionX="1930.85876" positionY="-1928.72852" width="350" height="725">
-      <outputs name="Dziekuje im i odejdzcie." ownerID="42" targetID="57" fromX="2256" fromY="-2419" />Poddaj sie Ty meski gowno, jak smiesz tak hanbic orcza krew!'
+      <outputs name="Dziekuje im i odejdzcie." ownerID="42" targetID="57" fromX="2256" fromY="-2419" />„Dobrze walczyles! Ale ci twoi bogowie wyraznie oslabiaja twoje cialo i umysl, przyjacielu. Tylko Zorya moze cie uwiarygodnic! 
 
-Ork pluje ci w twarz z obrzydzeniem, a potem warczy na ciebie, zacisniete piesci.</nodes>
+Wygralismy, wiec to nasza ziemia, ale mozesz przeszukac zewnetrzna krawedz. Zarobiles to.'</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="43" positionX="3817.56152" positionY="-141.722351" width="350" height="530" allPlayersXP="4" allPlayersRP="2" linkedEventUniqueID="0">
       <logic>
         <ModifierBlock>
@@ -9586,7 +9590,7 @@ Mozna jednak opuscic te jaskinie i robi to, spogladajac na ciebie z ostatnim bly
       </logic>
       <outputs name="Zapytaj niedzwiedzia o jego historie." ownerID="47" targetID="33" fromX="4215" fromY="-1686" />
       <outputs name="Niedzwiedz postanawia dolaczyc do ciebie, poniewaz nie chce pozostac na pustyni sam. Zostawcie razem." ownerID="47" targetID="64" group="G1" fromX="4215" fromY="-1767" />
-      <outputs name="Niedzwiedz odchodzi, ale w jaskini znajduja sie szczatki innych, ktorzy tu mieszkali. Wez co mozesz i wyjdz." ownerID="47" targetID="75" group="G1" fromX="4215" fromY="-1847" />Niedzwiedz krzyczy z bolu w glosie dziewczyny, ale kiedy sie zatrzyma, patrzy na ciebie zdezorientowany: 
+      <outputs name="Niedzwiedz odchodzi, ale w jaskini znajduja sie szczatki innych, ktorzy mieszkali tutaj wczesniej. Wez co mozesz i wyjdz." ownerID="47" targetID="75" group="G1" fromX="4215" fromY="-1847" />Niedzwiedz krzyczy z bolu w glosie dziewczyny, ale kiedy sie zatrzyma, patrzy na ciebie zdezorientowany: 
 
 'Co ... co mi zrobiles? Jestem teraz bestia, naprawde? Ale wtedy... Jestem wolny...'
 </nodes>
@@ -9644,7 +9648,7 @@ Mozna jednak opuscic te jaskinie i robi to, spogladajac na ciebie z ostatnim bly
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="51" positionX="5437.54541" positionY="-1160.43579" width="350" height="805">
       <outputs name="Niedzwiedz postanawia dolaczyc do ciebie, poniewaz nie chce pozostac na pustyni sam. Zostawcie razem." ownerID="51" targetID="64" group="G1" fromX="5763" fromY="-1651" />
-      <outputs name="Niedzwiedz odchodzi, ale w jaskini znajduja sie szczatki innych, ktorzy tu mieszkali. Wez co mozesz i wyjdz." ownerID="51" targetID="75" group="G1" fromX="5763" fromY="-1731" />„Tak, jestem wolny. W tej skorze ... na zawsze ...'
+      <outputs name="Niedzwiedz odchodzi, ale w jaskini znajduja sie szczatki innych, ktorzy mieszkali tutaj wczesniej. Wez co mozesz i wyjdz." ownerID="51" targetID="75" group="G1" fromX="5763" fromY="-1731" />„Tak, jestem wolny. W tej skorze ... na zawsze ...'
 </nodes>
     <nodes xsi:type="NodeAdventure" ID="52" positionX="2021" positionY="-1303" width="350" height="805">
       <outputs name="Atak!" ownerID="52" targetID="10" fromX="2346" fromY="-1794" />
@@ -9965,8 +9969,8 @@ Znajdziesz szczatki innych ofiar zlapanych w sieci.</nodes>
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Wespnij sie na gore i sprobuj spladrowac gniazdo, zanim powroci okupant." ownerID="20" targetID="22" group="G1" fromX="1896" fromY="-1115" />
-      <outputs name="Wespnij sie na gore i sprobuj spladrowac gniazdo, zanim powroci okupant." ownerID="20" targetID="24" group="G1" fromX="1896" fromY="-1195" />
+      <outputs name="Wespnij sie na gore i sprobuj ograbic gniazdo, zanim powroci okupant." ownerID="20" targetID="22" group="G1" fromX="1896" fromY="-1115" />
+      <outputs name="Wespnij sie na gore i sprobuj ograbic gniazdo, zanim powroci okupant." ownerID="20" targetID="24" group="G1" fromX="1896" fromY="-1195" />
       <outputs name="Dach i stary komin sa chwiejne. Potrzasnij gniazdem." ownerID="20" targetID="26" group="G2" fromX="1896" fromY="-1275" />
       <outputs name="Dach i stary komin sa chwiejne. Potrzasnij gniazdem." ownerID="20" targetID="27" group="G2" fromX="1896" fromY="-1356" />
       <outputs name="Gigantyczne wrony sa niebezpieczne. Pozostawiac." ownerID="20" targetID="75" fromX="1896" fromY="-1436" />
@@ -11160,7 +11164,7 @@ Stara wiedzma opowiada ci wiele historii, zanim w koncu mowi, ze czas isc. </nod
       </logic>
       <outputs name="Handel." ownerID="28" targetID="45" fromX="2676" fromY="1150" />
       <outputs name="Naucz sie rytualow.  " ownerID="28" targetID="46" fromX="2676" fromY="1069" />
-      <outputs name="Dziekuje jej na razie i wyjdz." ownerID="28" targetID="52" fromX="2676" fromY="989" />„Ha! Dobry. Dobrze poznana, siostro. Teraz, dla nieznajomych, bralbym udzial w grach, transakcjach i oszustwach. 
+      <outputs name="Dziekuje jej na razie i odejdz." ownerID="28" targetID="52" fromX="2676" fromY="989" />„Ha! Dobry. Dobrze poznana, siostro. Teraz, dla nieznajomych, bralbym udzial w grach, transakcjach i oszustwach. 
 
 Ale dla ciebie oferuje uczciwa wymiane miedzy siostrami, albo moge nauczyc cie pewnych rytualow i dac ci kilka ziol, ale potrzebuje troche twojej energii duchowej w zamian.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="29" positionX="4444.15625" positionY="1490.28418" width="350" height="408" allPlayersXP="3" allPlayersRP="1" linkedEventUniqueID="0" />
@@ -11456,7 +11460,7 @@ Moge ci powiedziec, jak zrobic serce ciemnosci. Posadz go w jaskini ziemskiej i 
 
 Wiec rdzen ciemnosci pozostanie w zatoce. Wzmocni sie tylko to, co pozostanie z nami. To bedzie zmiana. W rzeczywistosci moze to wplywac na spiczaste uszy.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="13" positionX="5912" positionY="786" width="350" height="725">
-      <outputs name="Jak mozna stworzyc serce ciemnosci?" ownerID="13" targetID="16" fromX="6237" fromY="294" />„Narodzili sie ze swiatla, tak jak my z ciemnosci. Prawdopodobnie poniosa klatwe. Ale przezyli raz, wiec jestem pewien, ze moga to zrobic ponownie.'</nodes>
+      <outputs name="Jak mozna stworzyc serce ciemnosci?" ownerID="13" targetID="16" fromX="6237" fromY="294" />„Narodzili sie ze swiatla, tak jak my z ciemnosci. Prawdopodobnie poniosa klatwe ponownie. Ale przezyli raz, wiec jestem pewien, ze moga to zrobic ponownie.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="14" positionX="1802" positionY="-8" width="350" height="725">
       <outputs name="Wiec proponuje sabotaz? Sztuczne serce przeznaczone do niszczenia, a nie przywracania starych sposobow?" ownerID="14" targetID="11" fromX="2127" fromY="-499" />„Krotko mowiac, uczyn serce ciemnosci, ktore zepsuje swiatlo i zniszczy wiele z nich. Ciemnosc bedzie w stanie odeprzec reszte, a rozpad powinien ustac, poniewaz jest spowodowany ucieczkami swiatla z rdzenia Ziemi.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="15" positionX="2718" positionY="-37" width="350" height="805">
@@ -11502,7 +11506,7 @@ Oczywiscie bedziesz musial pokonac bestie swiatla, ktora teraz strzeze komnaty. 
     <nodes xsi:type="NodeAdventure" ID="23" positionX="4614" positionY="-1377" width="350" height="725">
       <outputs name="Wyjdz." ownerID="23" targetID="24" fromX="4939" fromY="-1868" />Cialo nekromanty zamienia sie w ciemna mgle i rozpuszcza sie. Musisz znalezc inne sposoby na powstrzymanie Rozpadu. 
 
-Byc moze mozesz wrocic do czerwonej jaskini i ponownie porozmawiac z Alchemikiem, uratowac krasnoluda z wiezienia lub szukac pomocy u elfow lub krasnoludow. 
+Moze uda ci sie wrocic do czerwonej jaskini i znow porozmawiac z Alchemikiem, uratowac krasnoluda z wiezienia lub szukac pomocy u elfow lub krasnoludow. 
 </nodes>
     <nodes xsi:type="NodeSpawnOnMap" ID="24" positionX="5104" positionY="-1390" width="480" height="503" radius="0" destroyOwner="true" linkedEventUniqueID="0">
       <outputs ownerID="24" targetID="25" fromX="5552" fromY="-1822" />
@@ -11795,7 +11799,7 @@ Ci, ktorzy zawodza, maja szanse odzyskac honor pozniej, ale jest to malo prawdop
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="17" targetID="23" fromX="1644" fromY="-3187" />„Jestes slaby, nasi krewni nie radza sobie dobrze w twoim klanie. Wroc tylko wtedy, gdy twoj ogien sie pali.'</nodes>
+      <outputs name="Wyjdz." ownerID="17" targetID="23" fromX="1644" fromY="-3187" />„Jestes slaby, nasi krewni nie radza sobie dobrze w twoim klanie. Wroc tylko wtedy, gdy twoj ogien plonie.'</nodes>
     <nodes xsi:type="NodeTrade" ID="19" positionX="1950" positionY="-607" width="460" height="479" traderProfile="TRADER-BANDIT" playerInventory="nofood" startingBalance="-13000">
       <logic>
         <FilterBlock>

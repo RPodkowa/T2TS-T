@@ -914,7 +914,7 @@
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="[Magiczni uzytkownicy lub lojalnosc i mistycyzm] Albo wiesz wystarczajaco duzo o magii, aby sprobowac nauczyc nawet elfiego dziecka, albo jestes przyjacielem Woodlandkina, tak jak mozesz poprosic o jego wskazowki, aby mlodziez mogla zostac magicznym uzytkownikiem elfow." ownerID="2" targetID="3" fromX="199" fromY="-157" />
+      <outputs name="[Magiczni uzytkownicy lub lojalnosc i mistycyzm] Albo wiesz wystarczajaco duzo o magii, aby sprobowac nauczyc nawet elfiego dziecka, albo jestes przyjacielem Woodlandkina, tak jak mozesz poprosic o jego wskazowki, aby mlodziez mogla zostac elfim magicznym uzytkownikiem." ownerID="2" targetID="3" fromX="199" fromY="-157" />
       <outputs name="[Percepcja i sila] Dziecko ma sprawnosc fizyczna, byc moze sciezka wojownika jest ich przeznaczeniem." ownerID="2" targetID="39" fromX="199" fromY="-237" />
       <outputs name="Naucz elfiego dziecka dobrego starego handlu. " ownerID="2" targetID="14" fromX="199" fromY="-317" />
       <outputs name="[Szansa] Elfy sa na zawsze zwiazane z lasem, pozwol dziecku przeksztalcic sie w demona lasu, nawet jesli wynik jest niepewny." ownerID="2" targetID="25" fromX="199" fromY="-397" />Twoje elfie dziecko nie bedzie uwazane za doroslego wsrod swoich elfich krewnych jeszcze przez wiele dziesiecioleci, ale osiagnelo czas wzrostu. 

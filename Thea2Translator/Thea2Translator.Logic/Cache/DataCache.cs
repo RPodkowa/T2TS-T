@@ -331,9 +331,9 @@ namespace Thea2Translator.Logic
             var fileName = Path.GetFileNameWithoutExtension(file);
             switch (fileName)
             {
-                case "DATABASE_DES_LOCALIZATION": return "LOC_LIBRARY-EN_DES";
-                case "DATABASE_QUEST_LOCALIZATION": return "LOC_LIBRARY-EN_QUEST";
-                case "DATABASE_UI_LOCALIZATION": return "LOC_LIBRARY-EN_UI";
+                case "DATABASE_DES_LOCALIZATION": return "LOC_LIBRARY-DES";
+                case "DATABASE_QUEST_LOCALIZATION": return "LOC_LIBRARY-QUEST";
+                case "DATABASE_UI_LOCALIZATION": return "LOC_LIBRARY-UI";
             }
 
             return "";
@@ -427,7 +427,7 @@ namespace Thea2Translator.Logic
                             foreach (XmlNode child in node.ChildNodes)
                             {
                                 if (child.Name != "#text") continue;
-                                child.InnerText = elem.OutputText;
+                                child.InnerText = TextHelper.ReplacePolishChars(elem.OutputText);
                             }
                         }
                     }
@@ -448,7 +448,7 @@ namespace Thea2Translator.Logic
                                 var key = inputTextName;
                                 var elem = GetElem(key);
                                 if (elem != null)
-                                    output.Attributes["name"].Value = elem.OutputText;
+                                    output.Attributes["name"].Value = TextHelper.ReplacePolishChars(elem.OutputText);
                             }
                         }
                     }

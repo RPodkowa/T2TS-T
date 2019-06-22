@@ -166,7 +166,7 @@ Widzisz pewne oznaki obecnosci humanoidow, ale nie ma jeszcze goblinow.</nodes>
         </FilterBlock>
       </logic>
       <outputs name="Otocz gobliny i poznaj swoja obecnosc." ownerID="3" targetID="26" fromX="1495" fromY="427" />
-      <outputs name="Masz przewage. Atak!" ownerID="3" targetID="7" fromX="1495" fromY="347" />Sledzisz gobliny w malym otworze, gdzie utworzyli oboz. Wyglada bardziej jak osada podrozna niz wioska, jak sugerowali Slowianie, ale jest tu naprawde wiele goblinow. 
+      <outputs name="Masz przewage. Atak!" ownerID="3" targetID="7" fromX="1495" fromY="347" />Sledzisz gobliny na niewielki otwor, gdzie utworzyli oboz. Wyglada bardziej jak osada podrozna niz wioska, jak sugerowali Slowianie, ale jest tu naprawde wiele goblinow. 
 
 Na szczescie dla ciebie tylko nieliczni maja gotowa bron.</nodes>
     <nodes xsi:type="NodeAdventure" ID="4" positionX="1961.4043" positionY="-94.85879" width="350" height="805">
@@ -180,7 +180,7 @@ Na szczescie dla ciebie tylko nieliczni maja gotowa bron.</nodes>
       <outputs name="Walcz!" ownerID="4" targetID="6" fromX="2287" fromY="-586" />
       <outputs name="Sprobuj uciec." ownerID="4" targetID="49" fromX="2287" fromY="-666" />Jestes zaskoczony przez gobliny!</nodes>
     <nodes xsi:type="NodeAdventure" ID="5" positionX="2020.36572" positionY="-1321.682" width="350" height="966">
-      <outputs name="Zatrzymaj sie, podnies rece i powiedz, ze nie chcesz walczyc, tylko po to, aby powiedziec im, ze musza odejsc, poniewaz Slowian nie chca ich tutaj." ownerID="5" targetID="50" fromX="2346" fromY="-1812" />
+      <outputs name="Zatrzymaj sie, podnies rece i powiedz, ze nie chcesz walczyc, tylko po to, by powiedziec im, ze musza odejsc, poniewaz Slowianie nie chca ich tutaj." ownerID="5" targetID="50" fromX="2346" fromY="-1812" />
       <outputs name="Sprobuj zastraszyc sie i powiedz im, zeby go pokonali!" ownerID="5" targetID="51" fromX="2346" fromY="-1893" />
       <outputs name="Atak!" ownerID="5" targetID="6" fromX="2346" fromY="-1973" />
       <outputs name="[Goblin] Powiedzmy, ze hummies sa arseholes i chca ich odejsc. Zapytaj, czy moga sie ruszyc." ownerID="5" targetID="47" fromX="2346" fromY="-2053" />Przeszukujesz miejsce i wreszcie dostrzegasz gobliny. Niestety, oni tez cie zauwazaja, wiec nie masz zbyt wiele czasu na wybor planu dzialania.</nodes>
@@ -256,7 +256,7 @@ Na szczescie dla ciebie tylko nieliczni maja gotowa bron.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="22" positionX="5600.439" positionY="898.072144" width="350" height="408" allPlayersXP="3" allPlayersRP="1" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventure" ID="23" positionX="3031.6582" positionY="926.0601" width="350" height="805">
       <outputs name="Zostaw ich." ownerID="23" targetID="42" fromX="3357" fromY="434" />
-      <outputs name="Atak!" ownerID="23" targetID="7" fromX="3357" fromY="354" />„Mamy chore dzieci, starsze, wiec nie ruszamy sie. Stajesz przed nami z mieczami, albo idziesz!'</nodes>
+      <outputs name="Atak!" ownerID="23" targetID="7" fromX="3357" fromY="354" />„Mamy chore dzieci, starsze, wiec sie nie ruszamy. Stajesz przed nami z mieczami, albo idziesz!'</nodes>
     <nodes xsi:type="NodeSpawnOnMap" ID="24" positionX="4082.62646" positionY="623.4758" width="480" height="503" radius="0" destroyOwner="true" linkedEventUniqueID="0">
       <outputs ownerID="24" targetID="25" fromX="4531" fromY="191" />
     </nodes>
@@ -324,7 +324,7 @@ Slowianie sa zadowoleni z twojej pomocy i oferuja niewielka nagrode.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Kiwnij glowa i zycz im dobrze. " ownerID="37" targetID="38" fromX="3845" fromY="947" />Gobliny sa wdzieczne za twoja laske. Pozostaja, aby uleczyc ich rany, co moze zajac troche czasu. 
+      <outputs name="Kiwnij glowa i zycz im dobrze. " ownerID="37" targetID="38" fromX="3845" fromY="947" />Gobliny sa wdzieczne za twoje milosierdzie. Pozostaja, aby uleczyc ich rany, co moze zajac troche czasu. 
 
 „Och, dziekuje, dziekuje uprzejmie. Oto maly dowod podziekowania.'</nodes>
     <nodes xsi:type="NodeProduceDrop" ID="38" positionX="5050.83057" positionY="1699.37842" width="460" height="509">
@@ -366,7 +366,7 @@ Slowianie sa zadowoleni z twojej pomocy i oferuja niewielka nagrode.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="40" targetID="44" fromX="6371" fromY="881" />Slawianczycy nie sa zachwyceni twoim „rozwiazaniem”, ale w koncu trzymaja sie swoich obietnic i pozwalaja uzdrowic gobliny, zanim wyjda. 
+      <outputs name="Wyjdz." ownerID="40" targetID="44" fromX="6371" fromY="881" />Slavyanie nie sa zachwyceni twoim „rozwiazaniem”, ale w koncu trzymaja sie swoich obietnic i pozwalaja uzdrowic gobliny, zanim odejda. 
 
 Mieszkancy wioski zostawiaja ci niewielka nagrode za twoje uslugi.</nodes>
     <nodes xsi:type="NodeDealDamage" ID="41" positionX="2501.666" positionY="915.2528" width="460" height="459" challengeTypeDamage="TypeMental" minDamage="10" maxDamage="30" useCountInPercent="true" targetGroup="ppl">
@@ -475,10 +475,10 @@ Slowianie sa zadowoleni z twojej pomocy i oferuja mala nagrode.</nodes>
       <outputs name="[Druid] Nie musisz zabijac szczurow. Sprobuj zmusic ich do opuszczenia." ownerID="2" targetID="8" fromX="771" fromY="-673" />
       <outputs name="[Czarownica] Szczury to twoje kohorty. Zdominuj robactwo i pozwol im odejsc." ownerID="2" targetID="31" group="G1" fromX="771" fromY="-753" />
       <outputs name="Zbadaj to gniazdo szczurow." ownerID="2" targetID="52" fromX="771" fromY="-833" />
-      <outputs name="[Szczur] Wejdz sam i przekonaj swoich robactwa, by odeszli." ownerID="2" targetID="10" group="G1" fromX="771" fromY="-913" />
-      <outputs name="[Szczur] Wejdz sam i przekonaj swoich robactwa, by odeszli." ownerID="2" targetID="11" group="G1" fromX="771" fromY="-994" />
-      <outputs name="[Szczur] Wejdz sam i przekonaj swoich robactwa, by odeszli." ownerID="2" targetID="9" group="G1" fromX="771" fromY="-1074" />
-      <outputs name="Wracaj innym razem." ownerID="2" targetID="5" fromX="771" fromY="-1154" />Znajdujesz gniazdo robactwa, do ktorego wyslano cie, aby je oczyscic.</nodes>
+      <outputs name="[Szczur] Wejdz sam i przekonaj swoich robaczkow, by odeszli." ownerID="2" targetID="10" group="G1" fromX="771" fromY="-913" />
+      <outputs name="[Szczur] Wejdz sam i przekonaj swoich robaczkow, by odeszli." ownerID="2" targetID="11" group="G1" fromX="771" fromY="-994" />
+      <outputs name="[Szczur] Wejdz sam i przekonaj swoich robaczkow, by odeszli." ownerID="2" targetID="9" group="G1" fromX="771" fromY="-1074" />
+      <outputs name="Wracaj innym razem." ownerID="2" targetID="5" fromX="771" fromY="-1154" />Znajdujesz gniazdo robactwa, do ktorego wyslano cie, by je oczyscic.</nodes>
     <nodes xsi:type="NodeChallenge" ID="3" positionX="956.4597" positionY="788.227966" width="500" height="726" challengeType="TypePhysical" versusGroup="GROUP-RATS_1P_1M_1S" challengeScale="101" challengedList="ppl">
       <outputs name="Win" ownerID="3" targetID="57" fromX="1397" fromY="292" />
       <outputs name="Lose" ownerID="3" targetID="56" fromX="1397" fromY="212" />
@@ -525,7 +525,7 @@ Slowianie sa zadowoleni z twojej pomocy i oferuja mala nagrode.</nodes>
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Zabij tych, ktorzy pozostali po starym stylu. Atak!" ownerID="7" targetID="44" fromX="1280" fromY="-1172" />
+      <outputs name="Zabij tych, ktorzy pozostawili staromodny sposob. Atak!" ownerID="7" targetID="44" fromX="1280" fromY="-1172" />
       <outputs name="Kontynuuj gre." ownerID="7" targetID="45" fromX="1280" fromY="-1253" />
       <outputs name="Wracaj innym razem." ownerID="7" targetID="5" fromX="1280" fromY="-1333" />Grasz na flecie, a szczury powoli zaczynaja podazac za toba. Niektorzy juz zatapiaja sie w wodzie. Musisz trzymac melodie wystarczajaco dlugo, aby utopic wszystkie. 
 </nodes>
@@ -639,7 +639,7 @@ Szczury sa tak przekonane twoimi slowami, ze chca, abys byl ich mistrzem w nowym
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Widzisz szczura czajacego sie. Podejdz do niego." ownerID="18" targetID="20" group="G1" fromX="3949" fromY="-549" />
+      <outputs name="Widzisz czajacego sie szczura. Podejdz do niego." ownerID="18" targetID="20" group="G1" fromX="3949" fromY="-549" />
       <outputs name="Wyjdz." ownerID="18" targetID="21" group="G1" fromX="3949" fromY="-630" />Ustawiasz pulapki i pozbywasz sie robactwa. 
 
 Wiesniacy dziekuja i daja ci nagrode.</nodes>
@@ -832,7 +832,7 @@ Mruczy na ciebie.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Widzisz szczura czajacego sie. Podejdz do niego." ownerID="49" targetID="20" group="G1" fromX="2600" fromY="-2368" />
+      <outputs name="Widzisz czajacego sie szczura. Podejdz do niego." ownerID="49" targetID="20" group="G1" fromX="2600" fromY="-2368" />
       <outputs name="Wyjdz." ownerID="49" targetID="21" group="G1" fromX="2600" fromY="-2448" />Szczury sluchaja i uciekaja z wioski. Natura i harmonia sa zaspokojone przez twoje dzialania. 
 
 Wiesniacy dziekuja ci i daja ci nagrode.</nodes>
@@ -853,7 +853,7 @@ Wiesniacy dziekuja ci i daja ci nagrode.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Widzisz szczura czajacego sie. Podejdz do niego." ownerID="50" targetID="20" group="G1" fromX="3070" fromY="-2814" />
+      <outputs name="Widzisz czajacego sie szczura. Podejdz do niego." ownerID="50" targetID="20" group="G1" fromX="3070" fromY="-2814" />
       <outputs name="Wyjdz." ownerID="50" targetID="21" group="G1" fromX="3070" fromY="-2894" />Szczury sluchaja i uciekaja z wioski. 
 
 Wiesniacy dziekuja ci i daja ci nagrode.</nodes>
@@ -874,7 +874,7 @@ Wiesniacy dziekuja ci i daja ci nagrode.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Widzisz szczura czajacego sie. Podejdz do niego." ownerID="51" targetID="20" group="G1" fromX="4085" fromY="-1733" />
+      <outputs name="Widzisz czajacego sie szczura. Podejdz do niego." ownerID="51" targetID="20" group="G1" fromX="4085" fromY="-1733" />
       <outputs name="Wyjdz." ownerID="51" targetID="21" group="G1" fromX="4085" fromY="-1813" />Szczury sluchaja i uciekaja z wioski. 
 
 Wiesniacy dziekuja ci i daja ci nagrode.</nodes>
@@ -909,7 +909,7 @@ Wiesniacy dziekuja ci i daja ci nagrode.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Widzisz szczura czajacego sie. Podejdz do niego." ownerID="53" targetID="20" group="G1" fromX="1266" fromY="-2039" />
+      <outputs name="Widzisz czajacego sie szczura. Podejdz do niego." ownerID="53" targetID="20" group="G1" fromX="1266" fromY="-2039" />
       <outputs name="Wyjdz." ownerID="53" targetID="21" group="G1" fromX="1266" fromY="-2120" />Wiesniacy dziekuja za oczyszczenie gniazda i daja nagrode.</nodes>
     <nodes xsi:type="NodeDealDamage" ID="54" positionX="1465.62891" positionY="-3139.79785" width="460" height="459.36" challengeTypeDamage="TypeMental" minDamage="90" maxDamage="100" useCountInPercent="true" targetGroup="rats">
       <outputs ownerID="54" targetID="39" fromX="1894.87891" fromY="-3528.158" />
@@ -942,7 +942,7 @@ Wiesniacy dziekuja ci i daja ci nagrode.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Widzisz szczura czajacego sie. Podejdz do niego." ownerID="57" targetID="20" group="G1" fromX="1940" fromY="716" />
+      <outputs name="Widzisz czajacego sie szczura. Podejdz do niego." ownerID="57" targetID="20" group="G1" fromX="1940" fromY="716" />
       <outputs name="Wyjdz." ownerID="57" targetID="21" group="G1" fromX="1940" fromY="636" />Gniazdo jest wyczyszczone. Wiesniacy dziekuja ci i daja ci nagrode.</nodes>
     <nodes xsi:type="NodeAdventure" ID="58" positionX="-1166.83789" positionY="-790.8488" width="350" height="725">
       <logic>
@@ -1017,7 +1017,7 @@ Wiesniacy dziekuja ci i daja ci nagrode.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Widzisz szczura czajacego sie. Podejdz do niego." ownerID="63" targetID="20" group="G1" fromX="2418" fromY="-1469" />
+      <outputs name="Widzisz czajacego sie szczura. Podejdz do niego." ownerID="63" targetID="20" group="G1" fromX="2418" fromY="-1469" />
       <outputs name="Wyjdz." ownerID="63" targetID="21" group="G1" fromX="2418" fromY="-1549" />Szczury podazaja za melodia i topia sie. 
 
 Wiesniacy dziekuja ci i daja ci nagrode.</nodes>
@@ -1047,8 +1047,8 @@ Wiesniacy dziekuja ci i daja ci nagrode.</nodes>
       <outputs name="Poprzez nature lub intelekt uzyj swojej zdolnosci umyslowej, aby dowiedziec sie, co robic. " ownerID="2" targetID="16" fromX="392" fromY="-664" />
       <outputs name="[Wilkolak] Dominuj wilki." ownerID="2" targetID="50" fromX="392" fromY="-744" />
       <outputs name="Znajdz je i zaatakuj!" ownerID="2" targetID="24" fromX="392" fromY="-824" />
-      <outputs name="Uzyj wlasnego miesa, aby zwabic te zwierzeta z okolicy i miej nadzieje, ze nie wroca." ownerID="2" targetID="15" fromX="392" fromY="-905" />
-      <outputs name="Wroc pozniej." ownerID="2" targetID="31" fromX="392" fromY="-985" />Zblizasz sie do obszaru, gdzie mowi sie, ze stado wilkow, z ktorymi miales do czynienia, wedruje.</nodes>
+      <outputs name="Uzyj wlasnego miesa, aby zwabic te zwierzeta z okolicy i miec nadzieje, ze nie wroca." ownerID="2" targetID="15" fromX="392" fromY="-905" />
+      <outputs name="Wroc pozniej." ownerID="2" targetID="31" fromX="392" fromY="-985" />Podchodzisz do obszaru, gdzie mowi sie, ze stado wilkow, z ktorymi miales do czynienia, wedruje.</nodes>
     <nodes xsi:type="NodeAdventure" ID="3" positionX="-340.975922" positionY="1744.97815" width="350" height="1002.25">
       <logic>
         <FilterBlock>
@@ -1079,7 +1079,7 @@ Wiesniacy dziekuja ci i daja ci nagrode.</nodes>
       <outputs name="[Wolf] Biegnij z paczka i przekonaj ich, aby ruszyli dalej." ownerID="3" targetID="42" group="G1" fromX="-15.2259521" fromY="1217.70813" />
       <outputs name="Twoja grupa obejmuje tych, ktorzy potrafia komunikowac sie z wilkami, wiec spraw, by stworzenia byly posluszne." ownerID="3" targetID="5" group="G1" fromX="-15.2259521" fromY="1137.50818" />
       <outputs name="Wilki szanuja terytorium. Sprobuj wymyslic sposob na oznaczenie tej ziemi dla Slowian, dzieki czemu wilki odejda." ownerID="3" targetID="6" fromX="-15.2259521" fromY="1057.30811" />
-      <outputs name="Ustaw pulapke na paczke i atakuj, gdy sa oslabione." ownerID="3" targetID="30" fromX="-15.2259521" fromY="977.108032" />Dostrzegasz paczke biegnaca razem. Jeszcze cie nie widzieli. </nodes>
+      <outputs name="Ustaw pulapke na paczke i atakuj, gdy sa oslabione." ownerID="3" targetID="30" fromX="-15.2259521" fromY="977.108032" />Dostrzegasz biegnace razem paczki. Jeszcze cie nie widzieli. </nodes>
     <nodes xsi:type="NodeAdventure" ID="4" positionX="1003.39478" positionY="-64.493" width="350" height="805">
       <logic>
         <FilterBlock>
@@ -1143,7 +1143,7 @@ Mozesz tu zastawic pulapke i zabic ich pojedynczo.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="7" targetID="40" fromX="455.0912" fromY="2476.7793" />Biegasz z wilkami i prowadzisz je do lepszej krainy ziemi. Dziekuja i nie wracaja. 
+      <outputs name="Wyjdz." ownerID="7" targetID="40" fromX="455.0912" fromY="2476.7793" />Biegniesz z wilkami i poprowadzisz ich do lepszej krainy. Dziekuja i nie wracaja. 
 
 Pozbyles sie problemu, tak jak zostales poproszony, wiec Slawianczycy sa wdzieczni. 
 </nodes>
@@ -1306,7 +1306,7 @@ Pozbyles sie problemu, tak jak zostales poproszony, wiec Slawianczycy sa wdziecz
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="32" positionX="1258.63318" positionY="1626.64209" width="350" height="841.85">
       <outputs name="Daj spokoj." ownerID="32" targetID="37" fromX="1584" fromY="1135" />
-      <outputs name="Uzyj wlasnego miesa, aby zwabic te zwierzeta z okolicy i miej nadzieje, ze nie wroca." ownerID="32" targetID="15" fromX="1584" fromY="1055" />
+      <outputs name="Uzyj wlasnego miesa, aby zwabic te zwierzeta z okolicy i miec nadzieje, ze nie wroca." ownerID="32" targetID="15" fromX="1584" fromY="1055" />
       <outputs name="Po prostu ich zaatakuj." ownerID="32" targetID="30" fromX="1584" fromY="1135" />Byles nieprzekonujacy, a zwierzeta zostaja.</nodes>
     <nodes xsi:type="NodeAdventure" ID="33" positionX="2277.30176" positionY="738.5839" width="350" height="725">
       <logic>
@@ -1316,7 +1316,7 @@ Pozbyles sie problemu, tak jak zostales poproszony, wiec Slawianczycy sa wdziecz
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="33" targetID="47" fromX="2603" fromY="247" />Twoje knowania sie nie udaja i jestes atakowany przez wilczaka. 
+      <outputs name="Wyjdz." ownerID="33" targetID="47" fromX="2603" fromY="247" />Twoje knowania sie nie udaja, a ty jestes atakowany przez wilczaka. 
 
 Lud, ktory poprosil cie o pomoc, uslyszy twoje krzyki i przyjdzie ci z pomoca. Sami zabijaja wilki i gniewaja sie, ze musza oszczedzac czas. Nie zyskujesz zadnej przyjazni.</nodes>
     <nodes xsi:type="NodeAdventure" ID="34" positionX="1871.72742" positionY="2213.116" width="350" height="681.449951">
@@ -1428,12 +1428,12 @@ Slowianie sa zadowoleni z twojej pracy.
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wiesz, jak sobie radzic z lotrzykami - tez w tym zyciu sie bawiles. Porozmawiaj z nimi. " ownerID="2" targetID="3" fromX="882" fromY="-507" />
+      <outputs name="Wiesz, jak sobie radzic z lotrzykami - ty tez sie tym zajmowales. Porozmawiaj z nimi. " ownerID="2" targetID="3" fromX="882" fromY="-507" />
       <outputs name="Zastraszyc bandytow. Powiedz im, ze nie bedziesz zyl, chyba ze odejda." ownerID="2" targetID="4" fromX="882" fromY="-587" />
       <outputs name="[Intelekt i harmonia] Przekonaj padlinozercow, ze madrzej jest teraz odejsc niz stawic czola tobie, a pozniej takze Slowianom." ownerID="2" targetID="16" fromX="882" fromY="-667" />
       <outputs name="Zaplac smieciarzom, aby odeszli." ownerID="2" targetID="15" fromX="882" fromY="-747" />
       <outputs name="Atak!" ownerID="2" targetID="24" fromX="882" fromY="-827" />
-      <outputs name="Wroc pozniej." ownerID="2" targetID="31" fromX="882" fromY="-908" />Znajdziesz miejsce, w ktorym zostales wyslany, by poradzic sobie z ludem atakujacym Slowian.</nodes>
+      <outputs name="Wroc pozniej." ownerID="2" targetID="31" fromX="882" fromY="-908" />Znajdziesz miejsce, w ktorym zostales wyslany, aby zajac sie niektorymi ludami atakujacymi Slowian.</nodes>
     <nodes xsi:type="NodeAdventure" ID="3" positionX="425.933655" positionY="1357.53162" width="350" height="1046">
       <logic>
         <FilterBlock>
@@ -1457,8 +1457,8 @@ Slowianie sa zadowoleni z twojej pracy.
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="[Scavenger] Przekonaj ich, ze nie warto przejmowac sie pobytem tutaj, poniewaz beda cie krzyczec albo ty, albo slowianscy. Daj im wskazowke na temat innej wioski, w ktora moga trafic, z mniejsza ochrona." ownerID="3" targetID="7" group="G1" fromX="751" fromY="866" />
-      <outputs name="[Scavenger] Przekonaj ich, ze nie warto przejmowac sie pobytem tutaj, poniewaz beda cie krzyczec albo ty, albo slowianscy. Daj im wskazowke na temat innej wioski, w ktora moga trafic, z mniejsza ochrona." ownerID="3" targetID="42" group="G1" fromX="751" fromY="786" />
+      <outputs name="[Scavenger] Przekonaj ich, ze nie warto przejmowac sie tym, zeby zostac tutaj, poniewaz beda cie krzyczec albo Ty, albo Slawiani. Daj im wskazowke na temat innej wioski, w ktora moga trafic, z mniejsza ochrona." ownerID="3" targetID="7" group="G1" fromX="751" fromY="866" />
+      <outputs name="[Scavenger] Przekonaj ich, ze nie warto przejmowac sie tym, zeby zostac tutaj, poniewaz beda cie krzyczec albo Ty, albo Slawiani. Daj im wskazowke na temat innej wioski, w ktora moga trafic, z mniejsza ochrona." ownerID="3" targetID="42" group="G1" fromX="751" fromY="786" />
       <outputs name="Handluj z nimi i przekonaj ich, ze najlepiej jest odejsc, zanim bedzie wiecej problemow." ownerID="3" targetID="5" group="G1" fromX="751" fromY="705" />
       <outputs name="Zbieracze podazaja za dobrami, wiec zaoferujcie im troche w zamian za odejscie." ownerID="3" targetID="45" fromX="751" fromY="625" />
       <outputs name="Znasz ich taktyke, wiec walka bedzie latwiejsza. Atak." ownerID="3" targetID="30" fromX="751" fromY="545" />Dostrzegasz przed toba padlinozercow. Sa zajeci kopaniem w glowe martwego demona, jakby to byla pilka. Jeszcze cie nie widzieli.</nodes>
@@ -1526,7 +1526,7 @@ Slowianie sa zadowoleni z twojej pracy.
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="7" targetID="40" fromX="109" fromY="1079" />„Ech, czemu nie, ty jeden z nas, wiec dobrze typuj. Do zobaczenia.'
+      <outputs name="Wyjdz." ownerID="7" targetID="40" fromX="109" fromY="1079" />„Ech, czemu nie, ty jeden z nas, wiec dobrze sie typujesz. Do zobaczenia.'
 
 Pozbyles sie problemu, tak jak zostales poproszony, a twoja przyjazn z pewnoscia wzrosnie. 
 </nodes>
@@ -1589,7 +1589,7 @@ Pozbyles sie problemu, tak jak zostales poproszony, a twoja przyjazn z pewnoscia
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="17" targetID="36" fromX="2002" fromY="-1363" />„Tak, masz racje, myslisz, wygladasz jak klopot, a one takze rosna. Opuszczamy.'
+      <outputs name="Wyjdz." ownerID="17" targetID="36" fromX="2002" fromY="-1363" />„Tak, masz racje, myslisz, wygladasz jak klopot, a oni takze sie rozwijaja. Opuszczamy.'
 
 Poradziles sobie z tym problemem, jak spytales, a zyskujesz przyjazn. 
 </nodes>
@@ -1824,7 +1824,7 @@ Ida dalej i zyskujesz przyjazn tych, ktorzy cie tu wyslali.
       <outputs name="Masz ludzi, ktorzy wiedza o niezyjacych, wiec przyjrzyj sie im blizej." ownerID="2" targetID="3" group="G1" fromX="805" fromY="-716" />
       <outputs name="Poprzez nature i swiatlo, oczysc to miejsce plugawej sily, ktora narusza prawa twoich bogow." ownerID="2" targetID="16" fromX="805" fromY="-796" />
       <outputs name="Atak!" ownerID="2" targetID="24" fromX="805" fromY="-876" />
-      <outputs name="Przekupcie niezyjace mieso, aby ruszyli dalej." ownerID="2" targetID="55" fromX="805" fromY="-957" />
+      <outputs name="Przekup przekupienie miesem, aby ruszyli dalej." ownerID="2" targetID="55" fromX="805" fromY="-957" />
       <outputs name="Wroc pozniej." ownerID="2" targetID="56" fromX="805" fromY="-1037" />Znajdujesz maly cmentarz, na ktorym Slowianie mysla o niezywym wedrowaniu.</nodes>
     <nodes xsi:type="NodeAdventure" ID="3" positionX="70.13552" positionY="1075.4032" width="350" height="966">
       <logic>
@@ -1849,10 +1849,10 @@ Ida dalej i zyskujesz przyjazn tych, ktorzy cie tu wyslali.
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="[Unliving] Popros ich, aby przeniesli sie lub opuscili wioske." ownerID="3" targetID="7" group="G1" fromX="395" fromY="584" />
-      <outputs name="[Unliving] Popros ich, aby przeniesli sie lub opuscili wioske." ownerID="3" targetID="42" group="G1" fromX="395" fromY="504" />
+      <outputs name="[Unliving] Popros ich, aby ruszyli lub opuscili wioske." ownerID="3" targetID="7" group="G1" fromX="395" fromY="584" />
+      <outputs name="[Unliving] Popros ich, aby ruszyli lub opuscili wioske." ownerID="3" targetID="42" group="G1" fromX="395" fromY="504" />
       <outputs name="Wykonaj rytual, ktory zatrzyma uwiezionych tutaj niezyjacych. To jest mroczna magia, wiec moze cie to kosztowac, ale powinno dzialac." ownerID="3" targetID="5" fromX="395" fromY="423" />
-      <outputs name="Zlapales ich z zaskoczenia, wiec atakuj!" ownerID="3" targetID="30" fromX="395" fromY="343" />Widzisz kilka niezyjacych zwlok chodzacych w kolko wokol jednego nagrobka.</nodes>
+      <outputs name="Zaskoczyles ich, wiec atakuj!" ownerID="3" targetID="30" fromX="395" fromY="343" />Widzisz kilka niezyjacych zwlok chodzacych po kregach wokol jednego nagrobka.</nodes>
     <nodes xsi:type="NodeAdventure" ID="4" positionX="958" positionY="55" width="350" height="885">
       <logic>
         <FilterBlock>
@@ -1983,7 +1983,9 @@ Pozbyles sie problemu, tak jak zostales poproszony, a twoja przyjazn z pewnoscia
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="21" targetID="23" fromX="1225" fromY="-2303" />Zamierzasz zglosic swoj sukces, kiedy zdasz sobie sprawe, ze ciemna sila powoduje, ze wiecej cial powstaje, a niektorzy z nich rowniez wracaja.W koncu zostaja pobici przez mieszkancow wioski bez twojej pomocy, a twoja przyjazn cierpi z tego powodu.</nodes>
+      <outputs name="Wyjdz." ownerID="21" targetID="23" fromX="1225" fromY="-2303" />Zamierzasz zglosic swoj sukces, gdy zdasz sobie sprawe, ze ciemna sila powoduje, ze wiecej cial powstaje, a niektorzy z nich rowniez wracaja. 
+
+W koncu zostaja pobici przez mieszkancow wioski bez twojej pomocy, a twoja przyjazn cierpi z tego powodu.</nodes>
     <nodes xsi:type="NodeAdventure" ID="22" positionX="487.979858" positionY="-2380.74268" width="350" height="681.449951">
       <logic>
         <ModifierBlock>
@@ -2028,7 +2030,7 @@ Pozbyles sie problemu, tak jak zostales poproszony, a twoja przyjazn z pewnoscia
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="32" positionX="2132" positionY="522" width="350" height="805">
       <outputs name="Daj spokoj." ownerID="32" targetID="37" fromX="2457" fromY="30" />
-      <outputs name="Po prostu ich zaatakuj." ownerID="32" targetID="24" fromX="2457" fromY="-49" />Twoje wysilki nie powiodly sie, a niezyjace zwracaja uwage na ciebie.</nodes>
+      <outputs name="Po prostu ich zaatakuj." ownerID="32" targetID="24" fromX="2457" fromY="-49" />Twoje wysilki nie powiodly sie, a zaniedbanie zwraca na ciebie uwage.</nodes>
     <nodes xsi:type="NodeAdventure" ID="34" positionX="1560.974" positionY="1349.79651" width="350" height="805">
       <logic>
         <ModifierBlock>
@@ -2044,7 +2046,7 @@ Pozbyles sie problemu, tak jak zostales poproszony, a twoja przyjazn z pewnoscia
         </ModifierBlock>
       </logic>
       <outputs name="Wyjdz." ownerID="34" targetID="50" group="G1" fromX="1886" fromY="858" />
-      <outputs name="Wyjdz." ownerID="34" targetID="36" group="G1" fromX="1886" fromY="778" />Wiazesz niezyjace zycie z tym grobem i jesli ktos celowo nie zlamie twojej pracy, pozostana tutaj. 
+      <outputs name="Wyjdz." ownerID="34" targetID="36" group="G1" fromX="1886" fromY="778" />Zwiazujesz niezyjace zycie z tym grobowym miejscem, a jesli ktos celowo nie przerwie twojej pracy, pozostanie tutaj. 
 
 Slavyanie nie sa pewni, co sadza o tej nowej funkcji, ale poradziliscie sobie z ich bezposrednim problemem i sa wdzieczni.  
 
@@ -2085,7 +2087,7 @@ Slavyanie nie sa pewni, co sadza o tej nowej funkcji, ale poradziliscie sobie z 
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="42" targetID="49" fromX="1174" fromY="1315" />Okazuje sie, ze niezyjace byly nazywane tutaj przez przeklety obiekt, ale twoja wiez z bogami chroni cie troche.</nodes>
+      <outputs name="Wyjdz." ownerID="42" targetID="49" fromX="1174" fromY="1315" />Okazuje sie, ze niezyjacy zostal powolany tutaj przez przeklety obiekt, ale twoja wiez z bogami chroni cie troche.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="46" positionX="3915.885" positionY="-2303.64" width="350" height="408" allPlayersXP="1" allPlayersRP="1" linkedEventUniqueID="0">
       <logic>
         <ModifierBlock>
@@ -2279,7 +2281,7 @@ Ta wioska jest mala, jako taka nie oferuje rekrutacji i moze miec inne opcje ogr
       </logic>
       <outputs name="Atak!" ownerID="5" targetID="7" fromX="778" fromY="-31" />
       <outputs name="Wyjdz." ownerID="5" targetID="3" fromX="778" fromY="-111" />
-      <outputs name="Powiedz, ze nie mowisz im nic zlego - wszystko, co chcesz, to porozmawiac i odwiedzic." ownerID="5" targetID="49" fromX="778" fromY="-192" />„Najlepiej ruszaj sie dalej. Nie jestescie naszymi przyjaciolmi.'
+      <outputs name="Powiedz, ze nie myslisz o nich nic zlego - wszystko, co chcesz, to porozmawiac i odwiedzic." ownerID="5" targetID="49" fromX="778" fromY="-192" />„Najlepiej ruszaj sie dalej. Nie jestescie naszymi przyjaciolmi.'
 
 Widzisz zbrojne zgromadzenie ludowe.</nodes>
     <nodes xsi:type="NodeAdventure" ID="6" positionX="1494.31653" positionY="753.8147" width="350" height="725">
@@ -2390,7 +2392,7 @@ Mamy tez uzdrowiciela we wsi. Jesli nie sa zajeci, sa dobrzy z cialem i umyslem.
       <outputs name="Masz na sobie duzo drewna. Zapytaj, czy czegos potrzebuja." ownerID="21" targetID="39" fromX="2262" fromY="-1415" />
       <outputs name="Widzisz, ze potrzebuja kamienia, wiec powiedz im, ze jestes gotow oddac czesc swoich." ownerID="21" targetID="38" fromX="2262" fromY="-1495" />
       <outputs name="Na razie nie ma tu nic do roboty. Wroc nastepnego dnia." ownerID="21" targetID="3" fromX="2262" fromY="-1335" />
-      <outputs name="Zapytaj, czy cos wymaga zabicia." ownerID="21" targetID="58" group="G1" fromX="2262" fromY="-1335" />„Szukasz pomocy koledze, co? Jasne, zawsze sa klopoty.'</nodes>
+      <outputs name="Zapytaj, czy cos wymaga zabicia." ownerID="21" targetID="58" group="G1" fromX="2262" fromY="-1335" />„Szukasz pomocy kolegom, co? Jasne, zawsze sa klopoty.'</nodes>
     <nodes xsi:type="NodeAdventure" allowOnce="true" ID="22" positionX="3376.02612" positionY="44.027565" width="350" height="805">
       <outputs name="Zgadzam sie." ownerID="22" targetID="23" fromX="3701" fromY="-447" />
       <outputs name="Odrzuc i odejdz." ownerID="22" targetID="3" fromX="3701" fromY="-527" />„Tak, paskudna grupka lotrow ustawia sie w poblizu. Jestesmy mali i obawiamy sie, ze wkrotce moga nas uderzyc. Ale jesli masz je pierwsze ...'</nodes>
@@ -2566,7 +2568,7 @@ Razem usuniesz wszystkie przeklenstwa, ktore miales.
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Zycze im dobrze i odejdz." ownerID="37" targetID="4" fromX="3339" fromY="-1392" />„W imie samego drzewa kosmicznego jestes naprawde dziwnym ludem, ktory oferuje takie zasoby. Dziekujemy. 
+      <outputs name="Zycze im dobrze i odejdz." ownerID="37" targetID="4" fromX="3339" fromY="-1392" />„W imie samego kosmicznego drzewa jestes naprawde dziwnym ludem, ktory oferuje takie zasoby. Dziekujemy. 
 
 Nie mozemy wiele dac, ale tutaj, mamy to, co mozemy oszczedzic.'</nodes>
     <nodes xsi:type="NodeTrade" ID="38" positionX="2440" positionY="-871" width="460" height="479" traderProfile="TRADER-BANDIT_TWO" playerInventory="stone1" startingBalance="-30">
@@ -2776,7 +2778,7 @@ Wejdz, ale obserwujemy cie!'</nodes>
       </logic>
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="58" positionX="-488" positionY="-53" width="350" height="725">
-      <outputs name="Wyjdz." ownerID="58" targetID="3" fromX="-162" fromY="-544" />„Albo nie mamy dla ciebie zadnej pracy, albo ty lub twoi krewni juz jestescie wyznaczeni na sciezke, aby nam pomoc. Zakoncz te sciezke, zanim poprosisz o nowe zadania.</nodes>
+      <outputs name="Wyjdz." ownerID="58" targetID="3" fromX="-162" fromY="-544" />„Albo nie mamy dla ciebie zadnej pracy, albo ty lub twoi krewni juz jestescie na drodze, aby nam pomoc. Zakoncz te sciezke, zanim poprosisz o nowe zadania.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="59" positionX="27" positionY="-778" width="350" height="530" linkedEventUniqueID="56">
       <logic>
         <FilterBlock>
@@ -3116,7 +3118,7 @@ To znaczy, miales na mysli dobrze. Ale moze nastepnym razem zrob to, o co prosim
       <outputs name="Odwiedz stragany z jedzeniem." ownerID="2" targetID="70" fromX="787" fromY="-1237" />
       <outputs name="Atak!" ownerID="2" targetID="7" fromX="787" fromY="-1317" />„Witaj, co sprowadza cie do naszej skromnej siedziby?'
 
-Niektore zajecia w wiosce beda dostepne tylko wtedy, gdy przyjaznisz sie z jej ludzmi, a niektore sa ograniczone do szansy, wiec powrot od czasu do czasu moze byc tego wart. 
+Niektore zajecia w wiosce beda dostepne tylko wtedy, gdy przyjaznisz sie z jej ludzmi, a niektore sa ograniczone do szansy, wiec powrot od czasu do czasu moze byc wart. 
 
 Kiedy jestes przyjaciolmi, odwiedz tawerne, aby rekrutowac ludzi.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="3" positionX="1429" positionY="-894" width="350" height="530" logBookName="QUEST_SLAYVANS" logBookDescription="QUEST_SLAVYANS_DES" linkedEventUniqueID="0" endOfQuest="true" />
@@ -3134,7 +3136,7 @@ Kiedy jestes przyjaciolmi, odwiedz tawerne, aby rekrutowac ludzi.</nodes>
       </logic>
       <outputs name="Atak!" ownerID="5" targetID="7" fromX="773" fromY="484" />
       <outputs name="Wyjdz." ownerID="5" targetID="3" fromX="773" fromY="403" />
-      <outputs name="Powiedz, ze nie mowisz im nic zlego - wszystko, co chcesz, to porozmawiac i odwiedzic." ownerID="5" targetID="48" fromX="773" fromY="323" />„Najlepiej ruszaj sie dalej. Nie jestescie naszymi przyjaciolmi.'
+      <outputs name="Powiedz, ze nie myslisz o nich nic zlego - wszystko, co chcesz, to porozmawiac i odwiedzic." ownerID="5" targetID="48" fromX="773" fromY="323" />„Najlepiej ruszaj sie dalej. Nie jestescie naszymi przyjaciolmi.'
 
 Widzisz zbrojne zgromadzenie ludowe.</nodes>
     <nodes xsi:type="NodeAdventure" ID="6" positionX="1494.31653" positionY="753.8147" width="350" height="725">
@@ -3244,7 +3246,7 @@ Mamy tez uzdrowiciela we wsi. Jesli nie sa zajeci, sa dobrzy z cialem i umyslem.
         </FilterBlock>
       </logic>
       <outputs name="Zgadzam sie." ownerID="18" targetID="47" fromX="4335" fromY="-1612" />
-      <outputs name="Odrzuc i odejdz." ownerID="18" targetID="4" fromX="4335" fromY="-1693" />„No coz, skoro juz o tym wspomniales, nie ma starego cmentarza, a prawde mowiac, nie mamy srodkow, by go wyczyscic. Jesli wiec spojrzysz, na pewno nam to pomoze.'</nodes>
+      <outputs name="Odrzuc i odejdz." ownerID="18" targetID="4" fromX="4335" fromY="-1693" />„No coz, skoro juz o tym wspomniales, jest tam stary cmentarz, a prawde mowiac, nie mamy srodkow, by go wyczyscic. Jesli wiec spojrzysz, na pewno nam to pomoze.'</nodes>
     <nodes xsi:type="NodeAdventure" allowOnce="true" ID="19" positionX="2484.25977" positionY="-29.2314758" width="350" height="805">
       <outputs name="Zgadzam sie." ownerID="19" targetID="20" fromX="2810" fromY="-520" />
       <outputs name="Odrzuc i odejdz." ownerID="19" targetID="3" fromX="2810" fromY="-600" />„Zawsze jest problem z miejscem. Niektore dziki wedruja w poblizu i powoduja wiele klopotow. Poradzilibysmy sobie z tym, ale poniewaz zapytales ...'</nodes>
@@ -3257,7 +3259,7 @@ Mamy tez uzdrowiciela we wsi. Jesli nie sa zajeci, sa dobrzy z cialem i umyslem.
       <outputs name="Masz na sobie duzo drewna. Zapytaj, czy czegos potrzebuja." ownerID="21" targetID="39" fromX="2296" fromY="-1262" />
       <outputs name="Na razie nie ma tu nic do roboty. Wroc nastepnego dnia." ownerID="21" targetID="4" fromX="2296" fromY="-1342" />
       <outputs name="Zapytaj, czy sa tu jakies interesujace miejsca." ownerID="21" targetID="56" fromX="2296" fromY="-1422" />
-      <outputs name="Zapytaj, czy cos wymaga zabicia." ownerID="21" targetID="65" group="G1" fromX="2296" fromY="-1503" />„Szukasz pomocy koledze, co? Jasne, zawsze sa klopoty.'</nodes>
+      <outputs name="Zapytaj, czy cos wymaga zabicia." ownerID="21" targetID="65" group="G1" fromX="2296" fromY="-1503" />„Szukasz pomocy kolegom, co? Jasne, zawsze sa klopoty.'</nodes>
     <nodes xsi:type="NodeAdventure" allowOnce="true" ID="22" positionX="3376.02612" positionY="44.027565" width="350" height="805">
       <outputs name="Zgadzam sie." ownerID="22" targetID="23" fromX="3701" fromY="-447" />
       <outputs name="Odrzuc i odejdz." ownerID="22" targetID="3" fromX="3701" fromY="-527" />„Tak, paskudna grupka lotrow ustawia sie w poblizu. Jestesmy mali i obawiamy sie, ze wkrotce moga nas uderzyc. Ale jesli masz je pierwsze ...'</nodes>
@@ -3436,7 +3438,7 @@ Razem usuniesz wszystkie przeklenstwa, ktore miales.
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Zycze im dobrze i odejdz." ownerID="37" targetID="4" fromX="3341" fromY="-1438" />„W imie samego drzewa kosmicznego jestes naprawde dziwnym ludem, ktory oferuje takie zasoby. Dziekujemy. 
+      <outputs name="Zycze im dobrze i odejdz." ownerID="37" targetID="4" fromX="3341" fromY="-1438" />„W imie samego kosmicznego drzewa jestes naprawde dziwnym ludem, ktory oferuje takie zasoby. Dziekujemy. 
 
 Nie mozemy wiele dac, ale tutaj, mamy to, co mozemy oszczedzic.'</nodes>
     <nodes xsi:type="NodeTrade" ID="38" positionX="2448" positionY="-847" width="460" height="479" traderProfile="TRADER-BANDIT_TWO" playerInventory="s2" startingBalance="-25">
@@ -3684,7 +3686,7 @@ Wejdz, ale obserwujemy cie!'</nodes>
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="57" positionX="4007.65967" positionY="-1920.55542" width="350" height="805">
       <outputs name="Zgadzam sie." ownerID="57" targetID="58" fromX="4333" fromY="-2411" />
-      <outputs name="Odrzuc i odejdz." ownerID="57" targetID="4" fromX="4333" fromY="-2491" />„No coz, skoro juz o tym wspomniales, nie ma starego cmentarza, a prawde mowiac, nie mamy srodkow, by go wyczyscic. Jesli wiec spojrzysz, na pewno nam to pomoze.'</nodes>
+      <outputs name="Odrzuc i odejdz." ownerID="57" targetID="4" fromX="4333" fromY="-2491" />„No coz, skoro juz o tym wspomniales, jest tam stary cmentarz, a prawde mowiac, nie mamy srodkow, by go wyczyscic. Jesli wiec spojrzysz, na pewno nam to pomoze.'</nodes>
     <nodes xsi:type="NodeSpawnOnMap" ID="58" positionX="4500.90137" positionY="-2016.93591" width="480" height="503" radius="6" settlementID="SET-GRAVEYARD" destroyOwner="false" linkedEventUniqueID="30">
       <logic>
         <ModifierBlock>
@@ -3740,7 +3742,7 @@ Wejdz, ale obserwujemy cie!'</nodes>
       </logic>
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="65" positionX="-635" positionY="261" width="350" height="725">
-      <outputs name="Wyjdz." ownerID="65" targetID="3" fromX="-309" fromY="-230" />„Albo nie mamy dla ciebie zadnej pracy, albo ty lub twoi krewni juz jestescie wyznaczeni na sciezke, aby nam pomoc. Zakoncz te sciezke, zanim poprosisz o nowe zadania.</nodes>
+      <outputs name="Wyjdz." ownerID="65" targetID="3" fromX="-309" fromY="-230" />„Albo nie mamy dla ciebie zadnej pracy, albo ty lub twoi krewni juz jestescie na drodze, aby nam pomoc. Zakoncz te sciezke, zanim poprosisz o nowe zadania.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="69" positionX="37" positionY="-833" width="350" height="530" linkedEventUniqueID="53">
       <logic>
         <FilterBlock>
@@ -3796,7 +3798,7 @@ Wejdz, ale obserwujemy cie!'</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wiesz, jak obchodzic sie z dzikami. Sprobuj to rozgryzc." ownerID="2" targetID="3" fromX="377" fromY="-499" />
+      <outputs name="Wiesz, jak postepowac z dzikami. Sprobuj to rozgryzc." ownerID="2" targetID="3" fromX="377" fromY="-499" />
       <outputs name="[Hunter] Sledz knury." ownerID="2" targetID="4" fromX="377" fromY="-579" />
       <outputs name="[Natura lub intelekt] Uzyj swojej zdolnosci umyslowej, aby dowiedziec sie, co robic. " ownerID="2" targetID="16" fromX="377" fromY="-659" />
       <outputs name="[Jezdziec dzikow] Dominuj dziki." ownerID="2" targetID="50" fromX="377" fromY="-740" />
@@ -3852,7 +3854,7 @@ Wejdz, ale obserwujemy cie!'</nodes>
         </FilterBlock>
       </logic>
       <outputs name="Tak, zrob to." ownerID="4" targetID="9" fromX="1405" fromY="-512" />
-      <outputs name="Po prostu zabij ich w staromodny sposob." ownerID="4" targetID="24" fromX="1405" fromY="-593" />Chodzisz po dzikach i mozesz je wyciagac jeden po drugim, a potem uciekasz reszte. 
+      <outputs name="Po prostu zabij ich w staromodny sposob." ownerID="4" targetID="24" fromX="1405" fromY="-593" />Przeslizgujesz sie po dzikach i mozesz je wyciagac jeden po drugim, a potem reszta ucieka. 
 </nodes>
     <nodes xsi:type="NodeChallenge" ID="5" positionX="606.889832" positionY="1794.68274" width="500" height="726" challengeType="TypeMental" versusGroup="GROUP-BOARS_2P_1M_0S" challengeScale="101" challengedList="beastatlkers">
       <logic>
@@ -3991,7 +3993,7 @@ Pozbyles sie problemu, tak jak zostales poproszony, a Slavyanie sa wdzieczni.
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="17" targetID="36" fromX="1954" fromY="173" />Wykonujesz kilka atakow z ukradkiem, aby nekac stado i stwarzac tyle klopotow, ze postanowia ruszyc dalej. 
+      <outputs name="Wyjdz." ownerID="17" targetID="36" fromX="1954" fromY="173" />Wykonujesz kilka atakow z ukradkiem, aby nekac stado i stwarzac tyle klopotow, ze zdecyduja sie ruszyc. 
 
 Pozbyles sie problemu, tak jak zostales poproszony, a Slavyanie sa wdzieczni. 
 </nodes>
@@ -4208,7 +4210,7 @@ Slowianie sa zadowoleni z twojej pracy.
       <outputs name="[Niedzwiedz] Zdominuj niedzwiedzie." ownerID="2" targetID="50" fromX="385" fromY="-749" />
       <outputs name="Znajdz je i zaatakuj!" ownerID="2" targetID="24" fromX="385" fromY="-829" />
       <outputs name="Uzyj jedzenia, aby zwabic te zwierzeta z terytorium i miec nadzieje, ze nie wroca." ownerID="2" targetID="15" fromX="385" fromY="-909" />
-      <outputs name="Wroc pozniej." ownerID="2" targetID="31" fromX="385" fromY="-990" />Podchodzisz do obszaru, na ktorym mowi sie, ze paczka niedzwiedzi, o ktora cie poproszono, wedruje.</nodes>
+      <outputs name="Wroc pozniej." ownerID="2" targetID="31" fromX="385" fromY="-990" />Podchodzisz do obszaru, na ktorym mowi sie, ze paczka niedzwiedzi, z ktora zostales poproszony, porusza sie.</nodes>
     <nodes xsi:type="NodeAdventure" ID="3" positionX="-368.302673" positionY="1761.61182" width="350" height="1046">
       <logic>
         <FilterBlock>
@@ -4308,7 +4310,7 @@ Slowianie sa zadowoleni z twojej pracy.
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="7" targetID="40" fromX="444" fromY="2432" />Mocujesz sie z niedzwiedziem alfa i lamiesz go golymi rekami. Pozostale niedzwiedzie podporzadkowuja sie twojej dominacji. 
+      <outputs name="Wyjdz." ownerID="7" targetID="40" fromX="444" fromY="2432" />Walczysz z niedzwiedziem alfa i lamiesz go golymi rekami. Pozostale niedzwiedzie podporzadkowuja sie twojej dominacji. 
 
 Pozbyles sie problemu, tak jak zostales poproszony, a Slavyanie sa wdzieczni. 
 </nodes>
@@ -4614,10 +4616,10 @@ Slowianie sa zadowoleni z twojej pracy.
       <outputs name="[Druid] Nie musisz zabijac szczurow. Sprobuj zmusic ich do opuszczenia." ownerID="2" targetID="8" fromX="767" fromY="-670" />
       <outputs name="[Czarownica] Szczury to twoje kohorty. Zdominuj robactwo i pozwol im odejsc." ownerID="2" targetID="31" fromX="767" fromY="-750" />
       <outputs name="Zbadaj to gniazdo szczurow." ownerID="2" targetID="52" fromX="767" fromY="-830" />
-      <outputs name="[Szczur] Wejdz sam i przekonaj swoich robactwa, by odeszli." ownerID="2" targetID="10" group="G1" fromX="767" fromY="-910" />
-      <outputs name="[Szczur] Wejdz sam i przekonaj swoich robactwa, by odeszli." ownerID="2" targetID="11" group="G1" fromX="767" fromY="-990" />
-      <outputs name="[Szczur] Wejdz sam i przekonaj swoich robactwa, by odeszli." ownerID="2" targetID="9" group="G1" fromX="767" fromY="-1071" />
-      <outputs name="Wracaj innym razem." ownerID="2" targetID="5" fromX="767" fromY="-1151" />Znajdujesz gniazdo robactwa, do ktorego wyslano cie, aby je oczyscic.</nodes>
+      <outputs name="[Szczur] Wejdz sam i przekonaj swoich robaczkow, by odeszli." ownerID="2" targetID="10" group="G1" fromX="767" fromY="-910" />
+      <outputs name="[Szczur] Wejdz sam i przekonaj swoich robaczkow, by odeszli." ownerID="2" targetID="11" group="G1" fromX="767" fromY="-990" />
+      <outputs name="[Szczur] Wejdz sam i przekonaj swoich robaczkow, by odeszli." ownerID="2" targetID="9" group="G1" fromX="767" fromY="-1071" />
+      <outputs name="Wracaj innym razem." ownerID="2" targetID="5" fromX="767" fromY="-1151" />Znajdujesz gniazdo robactwa, do ktorego wyslano cie, by je oczyscic.</nodes>
     <nodes xsi:type="NodeChallenge" ID="3" positionX="956.4597" positionY="788.227966" width="500" height="726" challengeType="TypePhysical" versusGroup="GROUP-HORDE_RATS_3P_3M_3S" challengeScale="101" challengedList="ppl">
       <outputs name="Win" ownerID="3" targetID="57" fromX="1397" fromY="292" />
       <outputs name="Lose" ownerID="3" targetID="56" fromX="1397" fromY="212" />
@@ -4664,7 +4666,7 @@ Slowianie sa zadowoleni z twojej pracy.
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Zabij tych, ktorzy pozostali po starym stylu. Atak!" ownerID="7" targetID="44" fromX="1266" fromY="-1152" />
+      <outputs name="Zabij tych, ktorzy pozostawili staromodny sposob. Atak!" ownerID="7" targetID="44" fromX="1266" fromY="-1152" />
       <outputs name="Kontynuuj gre." ownerID="7" targetID="45" fromX="1266" fromY="-1232" />
       <outputs name="Wracaj innym razem." ownerID="7" targetID="5" fromX="1266" fromY="-1312" />Grasz na flecie, a szczury powoli zaczynaja podazac za toba. Niektorzy juz zatapiaja sie w wodzie. Musisz trzymac melodie wystarczajaco dlugo, aby utopic wszystkie. 
 </nodes>
@@ -4778,7 +4780,7 @@ Szczury sa tak przekonane twoimi slowami, ze chca, abys byl ich mistrzem w nowym
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Widzisz szczura czajacego sie. Podejdz do niego." ownerID="18" targetID="20" group="G1" fromX="3922" fromY="-781" />
+      <outputs name="Widzisz czajacego sie szczura. Podejdz do niego." ownerID="18" targetID="20" group="G1" fromX="3922" fromY="-781" />
       <outputs name="Wyjdz." ownerID="18" targetID="21" group="G1" fromX="3922" fromY="-861" />Ustawiasz pulapki i pozbywasz sie robactwa. 
 
 Wiesniacy dziekuja i daja ci nagrode.</nodes>
@@ -4974,7 +4976,7 @@ Mruczy na ciebie.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Widzisz szczura czajacego sie. Podejdz do niego." ownerID="49" targetID="20" group="G1" fromX="2348" fromY="-2423" />
+      <outputs name="Widzisz czajacego sie szczura. Podejdz do niego." ownerID="49" targetID="20" group="G1" fromX="2348" fromY="-2423" />
       <outputs name="Wyjdz." ownerID="49" targetID="21" group="G1" fromX="2348" fromY="-2503" />Szczury sluchaja i uciekaja z wioski. Natura i harmonia sa zaspokojone przez twoje dzialania. 
 
 Wiesniacy dziekuja ci i daja ci nagrode.</nodes>
@@ -4998,7 +5000,7 @@ Wiesniacy dziekuja ci i daja ci nagrode.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Widzisz szczura czajacego sie. Podejdz do niego." ownerID="50" targetID="20" group="G1" fromX="2799" fromY="-2105" />
+      <outputs name="Widzisz czajacego sie szczura. Podejdz do niego." ownerID="50" targetID="20" group="G1" fromX="2799" fromY="-2105" />
       <outputs name="Wyjdz." ownerID="50" targetID="21" group="G1" fromX="2799" fromY="-2185" />Szczury sluchaja i uciekaja z wioski. 
 
 Wiesniacy dziekuja ci i daja ci nagrode.</nodes>
@@ -5022,7 +5024,7 @@ Wiesniacy dziekuja ci i daja ci nagrode.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Widzisz szczura czajacego sie. Podejdz do niego." ownerID="51" targetID="20" group="G1" fromX="3893" fromY="-1885" />
+      <outputs name="Widzisz czajacego sie szczura. Podejdz do niego." ownerID="51" targetID="20" group="G1" fromX="3893" fromY="-1885" />
       <outputs name="Wyjdz." ownerID="51" targetID="21" group="G1" fromX="3893" fromY="-1965" />Szczury sluchaja i uciekaja z wioski. 
 
 Wiesniacy dziekuja ci i daja ci nagrode.</nodes>
@@ -5057,7 +5059,7 @@ Wiesniacy dziekuja ci i daja ci nagrode.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Widzisz szczura czajacego sie. Podejdz do niego." ownerID="53" targetID="20" group="G1" fromX="1242" fromY="-2110" />
+      <outputs name="Widzisz czajacego sie szczura. Podejdz do niego." ownerID="53" targetID="20" group="G1" fromX="1242" fromY="-2110" />
       <outputs name="Wyjdz." ownerID="53" targetID="21" group="G1" fromX="1242" fromY="-2190" />Wiesniacy dziekuja za oczyszczenie gniazda i daja nagrode.</nodes>
     <nodes xsi:type="NodeDealDamage" ID="54" positionX="1465.62891" positionY="-3139.79785" width="460" height="459" challengeTypeDamage="TypeMental" minDamage="90" maxDamage="100" useCountInPercent="true" targetGroup="rat">
       <outputs ownerID="54" targetID="39" fromX="1894" fromY="-3528" />
@@ -5090,7 +5092,7 @@ Wiesniacy dziekuja ci i daja ci nagrode.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Widzisz szczura czajacego sie. Podejdz do niego." ownerID="57" targetID="20" group="G1" fromX="1940" fromY="716" />
+      <outputs name="Widzisz czajacego sie szczura. Podejdz do niego." ownerID="57" targetID="20" group="G1" fromX="1940" fromY="716" />
       <outputs name="Wyjdz." ownerID="57" targetID="21" group="G1" fromX="1940" fromY="636" />Gniazdo jest wyczyszczone. Wiesniacy dziekuja ci i daja ci nagrode.</nodes>
     <nodes xsi:type="NodeAdventure" ID="58" positionX="-1166.83789" positionY="-790.8488" width="350" height="725">
       <logic>
@@ -5165,7 +5167,7 @@ Wiesniacy dziekuja ci i daja ci nagrode.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Widzisz szczura czajacego sie. Podejdz do niego." ownerID="63" targetID="20" group="G1" fromX="2339" fromY="-1503" />
+      <outputs name="Widzisz czajacego sie szczura. Podejdz do niego." ownerID="63" targetID="20" group="G1" fromX="2339" fromY="-1503" />
       <outputs name="Wyjdz." ownerID="63" targetID="21" group="G1" fromX="2339" fromY="-1583" />Szczury podazaja za melodia i topia sie. 
 
 Wiesniacy dziekuja ci i daja ci nagrode.</nodes>
@@ -6071,7 +6073,7 @@ Kiedy wchodzisz do srodka, swiece zapalaja sie wzdluz twojej sciezki, a wewnatrz
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="50" targetID="55" fromX="406" fromY="-1359" />Twoj plan dziala, ale rzeczy, ktore zdobedziesz, sa zainfekowane jakas paskudna choroba szczurow.</nodes>
+      <outputs name="Wyjdz." ownerID="50" targetID="55" fromX="406" fromY="-1359" />Twoj plan dziala, ale rzeczy, ktore zdobedziesz, sa zainfekowane jakas paskudna choroba szczura.</nodes>
     <nodes xsi:type="NodeDealDamage" ID="51" positionX="-1252.78662" positionY="-2114.45117" width="460" height="539" challengeTypeDamage="TypeMental" minDamage="2" maxDamage="4" useCountInPercent="false" targetGroup="unl">
       <logic>
         <FilterBlock>
@@ -6478,7 +6480,7 @@ Pokonales strige i wyslales jej uslugi.</nodes>
         </FilterBlock>
       </logic>
       <outputs name="Sprobuj oprzec sie tej mocy!" ownerID="37" targetID="11" fromX="3797" fromY="-2518" />
-      <outputs name="Twoja wiara jest silna, a ty nie latwo cie zlamac. Atakuj go!" ownerID="37" targetID="67" fromX="3797" fromY="-2598" />
+      <outputs name="Twoja wiara jest silna i nie latwo ci sie zlamac. Atakuj go!" ownerID="37" targetID="67" fromX="3797" fromY="-2598" />
       <outputs name="Twoja wiara jest silna i nie latwo ci sie zlamac. Uciec!" ownerID="37" targetID="47" fromX="3797" fromY="-2518" />
       <outputs name="Przestrzegaj wezwania." ownerID="37" targetID="52" fromX="3797" fromY="-2518" />Na poczatku wydaje sie, ze trumna nie ma nic poza wyschnietym cialem striga, ale zanim sie zorientujesz, uslyszysz glos w swojej glowie: „Ukleknij przede mna, robactwo! Sluchajcie moich apetytow!'
 </nodes>
@@ -6711,7 +6713,7 @@ Kilkakrotnie dzgniesz nim, zanim bedzie w stanie sie calkowicie podniesc, ale po
       </logic>
       <outputs name="Zbadaj." ownerID="2" targetID="4" group="G1" fromX="794" fromY="-255" />
       <outputs name="Zbadaj." ownerID="2" targetID="5" group="G1" fromX="794" fromY="-336" />
-      <outputs name="Wyjdz." ownerID="2" targetID="94" fromX="794" fromY="-416" />Jak tylko wejdziesz do grobu, czujesz, ze cos jest nie w porzadku. 
+      <outputs name="Wyjdz." ownerID="2" targetID="94" fromX="794" fromY="-416" />Jak tylko wejdziesz do grobu, czujesz, ze cos jest nie tak. 
 
 Wiele nagrobkow jest zmiazdzonych, a ziemia pod nimi zostala przeniesiona. 
 
@@ -6804,7 +6806,7 @@ Sadzac po tym ustawieniu, podejrzewasz, ze unliving wedruje po tych terenach!
       </logic>
       <outputs name="Wykonaj taniec natury i harmonii, aby sprobowac przywrocic te istote z jej udreki." ownerID="11" targetID="60" fromX="1759" fromY="436" />
       <outputs name="Atak!" ownerID="11" targetID="6" fromX="1759" fromY="356" />
-      <outputs name="Opusc to miejsce nienaturalnego zamieszania." ownerID="11" targetID="86" fromX="1759" fromY="276" />Wyczuwasz przytlaczajaca sile harmonii, pokrecona i nienaturalna. Cos tu jest nie tak; prawa harmonii i natury sa lamane! Postac widzi cie i mowi: 
+      <outputs name="Opusc to miejsce nienaturalnego zamieszania." ownerID="11" targetID="86" fromX="1759" fromY="276" />Czujesz przytlaczajaca sile harmonii, pokrecona i nienaturalna. Cos tu jest nie tak; prawa harmonii i natury sa lamane! Postac widzi cie i mowi: 
 
 'Ty zyjesz ... dobrze ... czy nie? Nie, zle ... beda zywic sie toba! O nie!'
 </nodes>
@@ -6832,7 +6834,7 @@ Sadzac po tym ustawieniu, podejrzewasz, ze unliving wedruje po tych terenach!
       <outputs name="Znasz prosty rytual wypedzania dola bez zabijania go, ale wiadomo, ze magia czasami sie odwraca. Mimo to warto podjac ryzyko." ownerID="16" targetID="20" group="G1" fromX="3353" fromY="2798" />
       <outputs name="Znasz prosty rytual wypedzania dola bez zabijania go, ale wiadomo, ze magia czasami sie odwraca. Mimo to warto podjac ryzyko." ownerID="16" targetID="21" group="G1" fromX="3353" fromY="2878" />
       <outputs name="Znasz prosty rytual wypedzania dola bez zabijania go, ale wiadomo, ze magia czasami sie odwraca. Mimo to warto podjac ryzyko." ownerID="16" targetID="22" group="G1" fromX="3353" fromY="2878" />
-      <outputs name="Zabij tylko niezyjacych. Powiedz dola, zeby odszedl i nigdy wiecej tego nie robil." ownerID="16" targetID="6" fromX="3353" fromY="2878" />„Po prostu, dalem im moje swiatlo ... ale to poszlo zle, sprawilo, ze ozyli, ale wszyscy sie mylili ... a ja probowalem ... 
+      <outputs name="Zabij tylko niezyjacych. Powiedz dola, zeby stad wyszedl i nigdy wiecej tego nie rob." ownerID="16" targetID="6" fromX="3353" fromY="2878" />„Po prostu, dalem im moje swiatlo ... ale poszlo zle, sprawilo, ze ozyli, ale wszyscy sie mylili ... a ja probowalem i probowalem ... 
 
 Uderz mnie. Powinien je tez wziac. Nie widze innej drogi.'
 </nodes>
@@ -7029,7 +7031,7 @@ Oczy dziewczyny sa szare i puste, ale widzisz lalke, ktora nosi, ma ludzkie oczy
       <outputs name="Zabij dziewczyne." ownerID="55" targetID="70" fromX="1799.406" fromY="-3512.17676" />
       <outputs name="Opusc dziwna rodzine. To nie do ciebie oceniac." ownerID="55" targetID="87" fromX="1799.406" fromY="-3592.37671" />
       <outputs name="Przekonaj dziecko do zniszczenia lalki." ownerID="55" targetID="67" group="G1" fromX="1799.406" fromY="-3672.57666" />
-      <outputs name="Przekonaj dziecko do zniszczenia lalki." ownerID="55" targetID="69" group="G1" fromX="1799.406" fromY="-3752.77686" />„Ziemia zatrzesla sie i zadrzala, a mumia i tata i moi bracia zostali wstrzasnieci na smierc. Plakalam i plakalam, a przyszla dama, z ktorej zadrzala ziemia. Dala mi wozek i powiedziala, ze moge odzyskac moja rodzine! Teraz wrocili i gramy wiecznie i dzien!'</nodes>
+      <outputs name="Przekonaj dziecko do zniszczenia lalki." ownerID="55" targetID="69" group="G1" fromX="1799.406" fromY="-3752.77686" />„Ziemia zatrzesla sie i zatrzesla, a mumia i tata oraz moi bracia zostali potrzasnieci na smierc. Plakalam i plakalam, a przyszla dama, z ktorej trzesla sie ziemia. Dala mi wozek i powiedziala, ze moge odzyskac moja rodzine! Teraz wrocili i gramy wiecznie i dzien!'</nodes>
     <nodes xsi:type="NodeAdventure" ID="56" positionX="1479.29431" positionY="11.1980743" width="350" height="805">
       <outputs name="Akt przemocy nie pasuje do harmonii. Przyjmij pokute i wyjdz." ownerID="56" targetID="63" group="G1" fromX="1805" fromY="-479" />
       <outputs name="Wyjdz." ownerID="56" targetID="57" group="G1" fromX="1805" fromY="-560" />Zabijasz niezyjacych i dola krzyczy z bolu, ale ona tez znika, szepczac tylko: „Byc moze to jest najlepsze ...'</nodes>
@@ -7147,7 +7149,7 @@ Niewidzialne stoja na chwile, wpatrujac sie w ciebie z niedowierzaniem. Matka up
         </ModifierBlock>
       </logic>
       <outputs name="Kiwnij glowa i wyjdz." ownerID="72" targetID="91" fromX="2007.32825" fromY="-4541.241" />Ojciec odzywa sie: 
-'Zranisz moja mala dziewczynke ... ale teraz czujemy sie ... hmm ... wolni od czegos, zdolni do ponownego myslenia. Wiec dziekuje. Ale prosze, idz teraz, moja zona moze nie widziec tego tak jak ja.'</nodes>
+'Szkodzisz mojej malej dziewczynce ... ale teraz czujemy sie ... hmm ... wolni od czegos, zdolni do ponownego myslenia. Wiec dziekuje. Ale prosze, idz teraz, moja zona moze nie widziec tego tak jak ja.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="73" positionX="1422.96094" positionY="-4842.39844" width="350" height="761.649963">
       <outputs name="Walcz!" ownerID="73" targetID="42" fromX="1748.71094" fromY="-5289.46826" />
       <outputs name="Uciekaj." ownerID="73" targetID="91" fromX="1748.71094" fromY="-5369.66846" />Niezyjacy ladunek na ciebie!</nodes>
@@ -7253,8 +7255,8 @@ Niewidzialne stoja na chwile, wpatrujac sie w ciebie z niedowierzaniem. Matka up
         </FilterBlock>
       </logic>
       <outputs name="Chwyc schowek." ownerID="2" targetID="15" group="G1" fromX="806" fromY="-641" />
-      <outputs name="Pogrzeb cialo i schowaj go." ownerID="2" targetID="17" group="G2" fromX="806" fromY="-722" />
-      <outputs name="Pogrzeb cialo i schowaj go." ownerID="2" targetID="16" group="G2" fromX="806" fromY="-802" />Cmentarz jest cichy i przewaznie pusty, ale widzisz na ziemi nieopalone cialo, trzymajace zapas towarow.</nodes>
+      <outputs name="Pochowaj cialo i zabierz je." ownerID="2" targetID="17" group="G2" fromX="806" fromY="-722" />
+      <outputs name="Pochowaj cialo i zabierz je." ownerID="2" targetID="16" group="G2" fromX="806" fromY="-802" />Cmentarz jest cichy i przewaznie pusty, ale widzisz na ziemi nieopalone cialo, trzymajace zapas towarow.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="4" positionX="2118.043" positionY="463.954834" width="350" height="408" allPlayersXP="1" allPlayersRP="1" linkedEventUniqueID="0">
       <logic>
         <FilterBlock>
@@ -8425,7 +8427,7 @@ Druga grupa jeszcze cie nie widzi, ale moze sie to zmienic w kazdej chwili.</nod
       <outputs name="Zgadzam sie, aby dac im troche swoich rzeczy (do wartosci 100)." ownerID="3" targetID="70" fromX="795" fromY="-1826" />
       <outputs name="Sprobuj ich zastraszyc." ownerID="3" targetID="33" fromX="795" fromY="-1907" />
       <outputs name="Walcz!" ownerID="3" targetID="63" fromX="795" fromY="-1987" />
-      <outputs name="Okazja z nimi, bandyta do bandyty." ownerID="3" targetID="64" fromX="795" fromY="-2067" />Kiedy sie zblizasz, zbyt pozno zdajesz sobie sprawe, ze to nie sa padlinozercy, ale bandyci czekajacy na ciebie w zasadzce. 
+      <outputs name="Okazja z nimi, bandyta do bandyty." ownerID="3" targetID="64" fromX="795" fromY="-2067" />Kiedy sie zblizasz, zbyt pozno zdajesz sobie sprawe, ze nie sa to padlinozercy, ale bandyci czekajacy na ciebie w zasadzce. 
 
 „Jestesmy generem ... genr ... eh, rodzaje rodzaju. W kazdym razie bierzemy czesc twoich rzeczy, pozwalamy ci wyjsc zywcem.'
 </nodes>
@@ -8439,10 +8441,10 @@ Druga grupa jeszcze cie nie widzi, ale moze sie to zmienic w kazdej chwili.</nod
       </logic>
       <outputs name="Atak!" ownerID="4" targetID="6" fromX="830" fromY="535" />
       <outputs name="Poniewaz harmonia i intelekt dyktuja, musi istniec pokojowe wyjscie. Ci ludzie wygladaja na glodnych. Zaoferuj im jedzenie w zamian za przeszukiwanie ruin. [Lose 20 food]" ownerID="4" targetID="10" fromX="830" fromY="455" />
-      <outputs name="Podejdz do padlinozercow i zaoferuj umowe, aby przeszukac ruiny razem." ownerID="4" targetID="11" fromX="830" fromY="375" />
+      <outputs name="Podejdz do padlinozercow i zaoferuj umowe, by przeszukac ruiny razem." ownerID="4" targetID="11" fromX="830" fromY="375" />
       <outputs name="Zastrasz ich." ownerID="4" targetID="23" group="G1" fromX="830" fromY="295" />
       <outputs name="Zastrasz ich." ownerID="4" targetID="26" group="G1" fromX="830" fromY="215" />
-      <outputs name="Po prostu ich zostawcie." ownerID="4" targetID="77" fromX="830" fromY="134" />Wyglada na to, ze to padlinozercy - chropowaty, niechlujny los, grabiacy z ruin to, co moga. 
+      <outputs name="Po prostu ich zostawcie." ownerID="4" targetID="77" fromX="830" fromY="134" />Wyglada na to, ze to padlinozercy - chropowata, niechlujna partia, grabiaca to, co moze z ruin. 
 
 Poswieciles czas na zwiad, wiec teraz jestes w lepszej pozycji do ataku taktycznego.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="5" positionX="-1510" positionY="-614" width="350" height="408" linkedEventUniqueID="0" />
@@ -9341,7 +9343,7 @@ Obszar na poludniu wydaje sie mniej trawersowany, ale takze niestabilny. </nodes
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Cholera." ownerID="3" targetID="11" fromX="1297" fromY="-353" />Znajdziesz ukryta piwnice - lub raczej odnajdziesz cie, jak bolesnie upadniesz przez sufit na twarda podloge. 
+      <outputs name="Cholera." ownerID="3" targetID="11" fromX="1297" fromY="-353" />Znajdujesz ukryta piwnice - lub raczej znajdujesz ja, gdy bolesnie upadasz przez jej sufit na twarda podloge. 
 </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="6" positionX="2223.09863" positionY="-231.242218" width="350" height="408" allPlayersXP="1" linkedEventUniqueID="0">
       <logic>
@@ -9462,7 +9464,7 @@ Obszar na poludniu wydaje sie mniej trawersowany, ale takze niestabilny. </nodes
       <outputs name="Jako madry znasz wiele stworzen. Sprobuj dowiedziec sie, co to jest." ownerID="4" targetID="5" fromX="1599" fromY="795" />
       <outputs name="Staraj sie trzymac z daleka, jak lupisz. Nie chcesz go zabijac, ale potrzebujesz takze zasobow." ownerID="4" targetID="29" group="G1" fromX="1599" fromY="715" />
       <outputs name="Staraj sie trzymac z daleka, jak lupisz. Nie chcesz go zabijac, ale potrzebujesz takze zasobow." ownerID="4" targetID="40" group="G1" fromX="1599" fromY="634" />
-      <outputs name="Po prostu wyjdz. " ownerID="4" targetID="35" fromX="1599" fromY="554" />W najciemniejszym kacie komory czai sie stworzenie, jego wielkie, okragle oczy migocza w ciemnosci. Dostrzegasz jedna z jego nog z kudlatymi wlosami i dlugimi, krzywymi szponami. Slyszysz rowniez cichy pomruk 
+      <outputs name="Po prostu wyjdz. " ownerID="4" targetID="35" fromX="1599" fromY="554" />W najciemniejszym kacie komory czai sie stworzenie, jego wielkie, okragle oczy migocza w ciemnosci. Dostrzegasz jedna z jego nog z kudlatymi wlosami i dlugimi, zakrzywionymi pazurami. Slyszysz rowniez cichy pomruk 
 
 To wyraznie cie obserwuje. </nodes>
     <nodes xsi:type="NodeAdventure" ID="5" positionX="1706" positionY="1345" width="350" height="1046">
@@ -9664,7 +9666,7 @@ Potrzasasz nia i ucieka, zostawiajac cie z kilkoma glebokimi cieciami i przeklen
     <nodes xsi:type="NodeAdventure" ID="18" positionX="917.482544" positionY="-518.465637" width="350" height="885" image="Event037">
       <outputs name="Przejrzyj pokoj, aby upewnic sie, ze jest bezpieczny." ownerID="18" targetID="19" fromX="1243" fromY="-1009" />
       <outputs name="Przeszukaj pokoj i zbierz wszystko, co jest przydatne." ownerID="18" targetID="28" group="G1" fromX="1243" fromY="-1089" />
-      <outputs name="Przeszukaj pokoj i zbierz wszystko, co jest przydatne." ownerID="18" targetID="37" group="G1" fromX="1243" fromY="-1170" />Ten pokoj wyglada, jakby mogl byc starym arsenalem i chociaz byl wyraznie ewakuowany, moga go znalezc jakies uzyteczne resztki. </nodes>
+      <outputs name="Przeszukaj pokoj i zbierz wszystko, co jest przydatne." ownerID="18" targetID="37" group="G1" fromX="1243" fromY="-1170" />Wyglada na to, ze ten pokoj byl stara zbrojownia i chociaz ewakuowano go wyraznie, moga znalezc sie jakies uzyteczne resztki. </nodes>
     <nodes xsi:type="NodeAdventure" ID="19" positionX="1319.955" positionY="-447.2758" width="350" height="1126" image="Event176">
       <logic>
         <FilterBlock>
@@ -9677,11 +9679,11 @@ Potrzasasz nia i ucieka, zostawiajac cie z kilkoma glebokimi cieciami i przeklen
         </FilterBlock>
       </logic>
       <outputs name="[Strigas] Czujesz obecnosc strigi. Staraj sie dominowac nad wszystkim, co czai sie w cieniu." ownerID="19" targetID="13" fromX="1645" fromY="-938" />
-      <outputs name="Czujesz istote nocy. W imieniu Horza, wladcy ksiezyca, wezwij stworzenie do piety." ownerID="19" targetID="27" fromX="1645" fromY="-1018" />
-      <outputs name="Atak z uderzeniem wyprzedzajacym. " ownerID="19" targetID="30" fromX="1645" fromY="-1098" />
+      <outputs name="Wyczuwasz istote nocy. W imieniu Horza, wladcy ksiezyca, wezwij stworzenie do piety." ownerID="19" targetID="27" fromX="1645" fromY="-1018" />
+      <outputs name="Atak z prewencyjnym uderzeniem. " ownerID="19" targetID="30" fromX="1645" fromY="-1098" />
       <outputs name="Obserwuj obserwowanego stwora i spladruj miejsce, majac nadzieje, ze nie zaatakuje." ownerID="19" targetID="32" group="G1" fromX="1645" fromY="-1179" />
       <outputs name="Obserwuj obserwowanego stwora i spladruj miejsce, majac nadzieje, ze nie zaatakuje." ownerID="19" targetID="37" group="G1" fromX="1645" fromY="-1259" />
-      <outputs name="Uciekaj." ownerID="19" targetID="35" fromX="1645" fromY="-1339" />W najciemniejszym kacie komnaty czai sie stworzenie, a jego paciorkowate oczy migocza w ciemnosci. 
+      <outputs name="Uciekaj." ownerID="19" targetID="35" fromX="1645" fromY="-1339" />W najciemniejszym kacie komory czai sie stworzenie, ktorego paciorkowate oczy migocza w ciemnosci. 
 
 To wyraznie cie obserwuje. </nodes>
     <nodes xsi:type="NodeAdventure" ID="20" positionX="2513.42114" positionY="-321.01062" width="350" height="805" image="Event176">
@@ -9695,7 +9697,7 @@ To wyraznie cie obserwuje. </nodes>
       <outputs name="Pozeraj strige. Nastepnie zbierz wszystkie znalezione przedmioty. " ownerID="20" targetID="38" fromX="2839" fromY="-812" />
       <outputs name="Opusc stworzenie. Zbierz wszystko, co zostalo, i idz." ownerID="20" targetID="37" fromX="2839" fromY="-892" />Glodna striga klania sie przed twoja dominacja, a nastepnie oferuje ostatnia sile zyciowa, ktora mozesz pozrec. </nodes>
     <nodes xsi:type="NodeAdventure" ID="21" positionX="3151.18677" positionY="-925.1843" width="350" height="681.449951" image="Event176">
-      <outputs name="Zbierz wszystko, co zostalo, i idz." ownerID="21" targetID="37" fromX="3476" fromY="-1416" />Glodna striga klania sie przed twoja dominacja, a potem ucieka przez otwarcie, ktore zrobiles. </nodes>
+      <outputs name="Zbierz wszystko, co zostalo, i idz." ownerID="21" targetID="37" fromX="3476" fromY="-1416" />Glodna striga klania sie przed twoja dominacja, a nastepnie ucieka przez otwor, ktory zrobiles. </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="22" positionX="4343.619" positionY="-162.034973" width="350" height="455" allPlayersXP="2" allPlayersRP="1" linkedEventUniqueID="0">
       <logic>
         <ModifierBlock>
@@ -9893,7 +9895,7 @@ Rany, ktore pozostaly, okazaly sie zainfekowane.
       <outputs name="Sprawdz, czy mozesz rekrutowac kogokolwiek. [Maksymalnie 2 Slowian moze zostac zrekrutowanych w jednej grze, z czasem odnowienia 200 tur po pierwszym sukcesie, wiec wybierz madrze.]" ownerID="2" targetID="4" fromX="742" fromY="-515" />
       <outputs name="[Demon] Zrob troche hazardu." ownerID="2" targetID="26" group="G1" fromX="742" fromY="-595" />
       <outputs name="Zrob troche hazardu." ownerID="2" targetID="25" group="G1" fromX="742" fromY="-675" />
-      <outputs name="Napoj." ownerID="2" targetID="32" fromX="742" fromY="-755" />Pozary sa cieple, a piwo dobre. Tawerna tetni zyciem i radoscia. </nodes>
+      <outputs name="Drink." ownerID="2" targetID="32" fromX="742" fromY="-755" />Pozary sa cieple i piwo jest dobre. Tawerna tetni zyciem i radoscia. </nodes>
     <nodes xsi:type="NodeAdventure" ID="3" positionX="1313" positionY="251" width="350" height="1046">
       <outputs name="Podejdz do wojownika." ownerID="3" targetID="11" fromX="1638" fromY="-240" />
       <outputs name="Podejdz do lowcy." ownerID="3" targetID="12" fromX="1638" fromY="-320" />
@@ -9936,7 +9938,7 @@ Rany, ktore pozostaly, okazaly sie zainfekowane.
       </logic>
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="8" positionX="3370" positionY="-444" width="350" height="725">
-      <outputs name="Wyjdz." ownerID="8" targetID="15" fromX="3695" fromY="-935" />Bez porozumienia. Wiecej szczescia nastepnym razem. </nodes>
+      <outputs name="Wyjdz." ownerID="8" targetID="15" fromX="3695" fromY="-935" />Bez umowy. Wiecej szczescia nastepnym razem. </nodes>
     <nodes xsi:type="NodeTrade" ID="9" positionX="2170" positionY="-227" width="460" height="479" traderProfile="TRADER-BANDIT" playerInventory="nofoof" startingBalance="-8000">
       <outputs name="Confirm" ownerID="9" targetID="10" fromX="2600" fromY="-555" />
       <outputs name="Cancel" ownerID="9" targetID="8" fromX="2600" fromY="-635" />
@@ -10313,12 +10315,12 @@ Pijesz wszystkich pod stolem i imponujesz miejscowym.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wiesz, jak sobie radzic z lotrzykami - tez w tym zyciu sie bawiles. Porozmawiaj z nimi. " ownerID="2" targetID="3" fromX="882" fromY="-507" />
+      <outputs name="Wiesz, jak sobie radzic z lotrzykami - ty tez sie tym zajmowales. Porozmawiaj z nimi. " ownerID="2" targetID="3" fromX="882" fromY="-507" />
       <outputs name="Zastraszyc bandytow. Powiedz im, ze nie bedziesz zyl, chyba ze odejda." ownerID="2" targetID="4" fromX="882" fromY="-587" />
       <outputs name="[Intelekt i harmonia] Przekonaj padlinozercow, ze madrzej jest teraz odejsc niz stawic czola tobie, a pozniej takze Slowianom." ownerID="2" targetID="16" fromX="882" fromY="-667" />
       <outputs name="Zaplac smieciarzom, aby odeszli." ownerID="2" targetID="15" fromX="882" fromY="-747" />
       <outputs name="Atak!" ownerID="2" targetID="24" fromX="882" fromY="-827" />
-      <outputs name="Wroc pozniej." ownerID="2" targetID="31" fromX="882" fromY="-908" />Znajdziesz miejsce, w ktorym zostales wyslany, by poradzic sobie z ludem atakujacym Slowian.</nodes>
+      <outputs name="Wroc pozniej." ownerID="2" targetID="31" fromX="882" fromY="-908" />Znajdziesz miejsce, w ktorym zostales wyslany, aby zajac sie niektorymi ludami atakujacymi Slowian.</nodes>
     <nodes xsi:type="NodeAdventure" ID="3" positionX="425.933655" positionY="1357.53162" width="350" height="1002">
       <logic>
         <FilterBlock>
@@ -10342,8 +10344,8 @@ Pijesz wszystkich pod stolem i imponujesz miejscowym.</nodes>
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="[Scavenger] Przekonaj ich, ze nie warto przejmowac sie pobytem tutaj, poniewaz beda cie krzyczec albo ty, albo slowianscy. Daj im wskazowke na temat innej wioski, w ktora moga trafic, z mniejsza ochrona." ownerID="3" targetID="7" group="G1" fromX="751" fromY="910" />
-      <outputs name="[Scavenger] Przekonaj ich, ze nie warto przejmowac sie pobytem tutaj, poniewaz beda cie krzyczec albo ty, albo slowianscy. Daj im wskazowke na temat innej wioski, w ktora moga trafic, z mniejsza ochrona." ownerID="3" targetID="42" group="G1" fromX="751" fromY="830" />
+      <outputs name="[Scavenger] Przekonaj ich, ze nie warto przejmowac sie tym, zeby zostac tutaj, poniewaz beda cie krzyczec albo Ty, albo Slawiani. Daj im wskazowke na temat innej wioski, w ktora moga trafic, z mniejsza ochrona." ownerID="3" targetID="7" group="G1" fromX="751" fromY="910" />
+      <outputs name="[Scavenger] Przekonaj ich, ze nie warto przejmowac sie tym, zeby zostac tutaj, poniewaz beda cie krzyczec albo Ty, albo Slawiani. Daj im wskazowke na temat innej wioski, w ktora moga trafic, z mniejsza ochrona." ownerID="3" targetID="42" group="G1" fromX="751" fromY="830" />
       <outputs name="Handluj z nimi i przekonaj ich, ze najlepiej jest odejsc, zanim bedzie wiecej problemow." ownerID="3" targetID="5" group="G1" fromX="751" fromY="750" />
       <outputs name="Zbieracze podazaja za dobrami, wiec zaoferujcie im troche w zamian za odejscie." ownerID="3" targetID="45" fromX="751" fromY="669" />
       <outputs name="Znasz ich taktyke, wiec walka bedzie latwiejsza. Atak." ownerID="3" targetID="30" fromX="751" fromY="589" />Dostrzegasz przed toba padlinozercow. Sa zajeci kopaniem w glowe martwego demona, jakby to byla pilka. Jeszcze cie nie widzieli.</nodes>
@@ -10411,7 +10413,7 @@ Pijesz wszystkich pod stolem i imponujesz miejscowym.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="7" targetID="40" fromX="109" fromY="1123" />„Ech, czemu nie, ty jeden z nas, wiec dobrze typuj. Do zobaczenia.'
+      <outputs name="Wyjdz." ownerID="7" targetID="40" fromX="109" fromY="1123" />„Ech, czemu nie, ty jeden z nas, wiec dobrze sie typujesz. Do zobaczenia.'
 
 Pozbyles sie problemu, tak jak zostales poproszony, a twoja przyjazn z pewnoscia wzrosnie. 
 </nodes>
@@ -10474,7 +10476,7 @@ Pozbyles sie problemu, tak jak zostales poproszony, a twoja przyjazn z pewnoscia
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="17" targetID="36" fromX="2002" fromY="-1363" />„Tak, masz racje, myslisz, wygladasz jak klopot, a one takze rosna. Opuszczamy.'
+      <outputs name="Wyjdz." ownerID="17" targetID="36" fromX="2002" fromY="-1363" />„Tak, masz racje, myslisz, wygladasz jak klopot, a oni takze sie rozwijaja. Opuszczamy.'
 
 Poradziles sobie z tym problemem, jak spytales, a zyskujesz przyjazn. 
 </nodes>
@@ -10710,10 +10712,10 @@ Ida dalej i zyskujesz przyjazn tych, ktorzy cie tu wyslali.
           </LogicProcessing>
         </FilterBlock>
       </logic>
-      <outputs name="Sprawdz, czy mozesz rekrutowac kogokolwiek. [Ograniczona do dwoch, z 200 czasami odnowienia skretu.]" ownerID="2" targetID="4" fromX="725" fromY="-504" />
+      <outputs name="Zobacz, czy mozesz rekrutowac kogokolwiek. [Ograniczona do dwoch, z 200 czasami odnowienia skretu.]" ownerID="2" targetID="4" fromX="725" fromY="-504" />
       <outputs name="[Demon] Zrob troche hazardu." ownerID="2" targetID="26" group="G1" fromX="725" fromY="-584" />
       <outputs name="Zrob troche hazardu." ownerID="2" targetID="25" group="G1" fromX="725" fromY="-664" />
-      <outputs name="Napoj." ownerID="2" targetID="32" fromX="725" fromY="-744" />Pozary sa cieple, a piwo dobre. Tawerna tetni zyciem i radoscia. </nodes>
+      <outputs name="Drink." ownerID="2" targetID="32" fromX="725" fromY="-744" />Pozary sa cieple i piwo jest dobre. Tawerna tetni zyciem i radoscia. </nodes>
     <nodes xsi:type="NodeAdventure" ID="3" positionX="1308" positionY="180" width="350" height="1046">
       <outputs name="Podejdz do wojownika." ownerID="3" targetID="11" fromX="1633" fromY="-311" />
       <outputs name="Podejdz do lowcy." ownerID="3" targetID="12" fromX="1633" fromY="-391" />
@@ -10768,7 +10770,7 @@ Ida dalej i zyskujesz przyjazn tych, ktorzy cie tu wyslali.
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="8" targetID="15" fromX="3695" fromY="-935" />Bez porozumienia. Wiecej szczescia nastepnym razem. </nodes>
+      <outputs name="Wyjdz." ownerID="8" targetID="15" fromX="3695" fromY="-935" />Bez umowy. Wiecej szczescia nastepnym razem. </nodes>
     <nodes xsi:type="NodeTrade" ID="9" positionX="2170" positionY="-227" width="460" height="479" traderProfile="TRADER-BANDIT" playerInventory="nofoof" startingBalance="-9000">
       <outputs name="Confirm" ownerID="9" targetID="10" fromX="2600" fromY="-555" />
       <outputs name="Cancel" ownerID="9" targetID="8" fromX="2600" fromY="-635" />
@@ -10790,7 +10792,7 @@ Ida dalej i zyskujesz przyjazn tych, ktorzy cie tu wyslali.
       <outputs name="Plac im, jesli mozesz." ownerID="14" targetID="18" fromX="1192" fromY="-912" />Mowia, ze wykonaja prace najemnikow za odpowiednia cene.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="15" positionX="3809" positionY="-132" width="350" height="530" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventure" ID="17" positionX="1727" positionY="-961" width="350" height="725">
-      <outputs name="Zaplac za dziecko." ownerID="17" targetID="38" fromX="2052" fromY="-1452" />Sa niechciane sieroty, ktore Slawianczycy sa sklonni puscic, ale musisz zostawic towar w zamian - gdy pytasz o sprzedaz niewolnikow, mowia ci, ze to wcale nie jest niewolnictwo, tylko sprawiedliwa wymiana ...</nodes>
+      <outputs name="Zaplac za dziecko." ownerID="17" targetID="38" fromX="2052" fromY="-1452" />Sa niechciane sieroty, ktore Slawianczycy sa sklonni puscic, ale musisz zostawic towary w zamian - gdy pytasz o sprzedaz niewolnikow, mowia ci, ze to wcale nie jest niewolnictwo, tylko sprawiedliwa wymiana ...</nodes>
     <nodes xsi:type="NodeTrade" ID="18" positionX="2193" positionY="-1458" width="460" height="479" traderProfile="TRADER-BANDIT" playerInventory="nofoof" startingBalance="-12000">
       <outputs name="Confirm" ownerID="18" targetID="20" fromX="2623" fromY="-1786" />
       <outputs name="Cancel" ownerID="18" targetID="8" fromX="2623" fromY="-1866" />

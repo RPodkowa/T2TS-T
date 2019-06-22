@@ -32,7 +32,7 @@
       <outputs name="[Lowca lub percepcja] Sledz intruzow." ownerID="2" targetID="3" fromX="792" fromY="-390" />
       <outputs name="Wyszukaj miejsce." ownerID="2" targetID="4" group="G1" fromX="792" fromY="-470" />
       <outputs name="Wyszukaj miejsce." ownerID="2" targetID="5" group="G1" fromX="792" fromY="-550" />
-      <outputs name="Wroc pozniej." ownerID="2" targetID="52" fromX="792" fromY="-631" />Znajdziesz miejsce, w ktorym mieli sie osiedlic intruzi - maly, ale gesty gaj. 
+      <outputs name="Wroc pozniej." ownerID="2" targetID="52" fromX="792" fromY="-631" />Znajdujesz miejsce, w ktorym mieli osiedlic sie intruzi - maly, ale gesty gaj. 
 
 Widzisz pewne oznaki obecnosci humanoidow.</nodes>
     <nodes xsi:type="NodeAdventure" ID="3" positionX="780" positionY="1088" width="350" height="805" image="Event172">
@@ -49,7 +49,7 @@ Widzisz pewne oznaki obecnosci humanoidow.</nodes>
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Otaczaj cienisty lud i poznaj swoja obecnosc." ownerID="3" targetID="26" fromX="1105" fromY="596" />
+      <outputs name="Otaczaj cienie i poznaj swoja obecnosc." ownerID="3" targetID="26" fromX="1105" fromY="596" />
       <outputs name="Masz przewage. Atak!" ownerID="3" targetID="7" fromX="1105" fromY="516" />Sledzisz intruzow w jaskini. W tobie dostrzegasz jakis ruch, a z czasem zdajesz sobie sprawe, ze sa one elfami cieni kroczacymi nerwowo. 
 
 Na szczescie dla ciebie wydaje sie, ze jest tylko kilka z bronia w pogotowiu.</nodes>
@@ -62,12 +62,12 @@ Na szczescie dla ciebie wydaje sie, ze jest tylko kilka z bronia w pogotowiu.</n
         </FilterBlock>
       </logic>
       <outputs name="Walcz!" ownerID="4" targetID="6" fromX="2264" fromY="-576" />
-      <outputs name="Sprobuj uciec." ownerID="4" targetID="49" fromX="2264" fromY="-656" />Wpadles w zasadzke w cieniu elfow!</nodes>
+      <outputs name="Sprobuj uciec." ownerID="4" targetID="49" fromX="2264" fromY="-656" />Jestes zasadzka przez elfy cienia!</nodes>
     <nodes xsi:type="NodeAdventure" ID="5" positionX="913.4892" positionY="-731.1731" width="350" height="966" image="Event173">
       <outputs name="Zatrzymaj sie, pokaz swoje rece i powiedz, ze nie chcesz walczyc, tylko po to, by powiedziec im, ze musza odejsc, poniewaz elfy nie chca ich tutaj." ownerID="5" targetID="50" fromX="1239" fromY="-1222" />
       <outputs name="[Sila] Sprobuj zastraszyc sie i powiedz im, aby opuscili ten las!" ownerID="5" targetID="51" fromX="1239" fromY="-1302" />
       <outputs name="Atak!" ownerID="5" targetID="6" fromX="1239" fromY="-1382" />
-      <outputs name="[Shadow elf] Zapytaj swojego krewnego, dlaczego tu sa, gdzie nie sa pozadani." ownerID="5" targetID="47" fromX="1239" fromY="-1462" />Przeszukujesz miejsce i wreszcie dostrzegasz niektore elfy cienia. Niestety, oni tez cie zauwazaja. 
+      <outputs name="[Cien elf] Zapytaj swojego krewnego, dlaczego tu sa, gdzie nie sa pozadani." ownerID="5" targetID="47" fromX="1239" fromY="-1462" />Przeszukujesz miejsce i wreszcie dostrzegasz cienie elfow. Niestety, oni tez cie zauwazaja. 
 </nodes>
     <nodes xsi:type="NodeChallenge" ID="6" positionX="3011" positionY="-115" width="500" height="726" challengeType="TypePhysical" versusGroup="GROUP-ELF_SHADOW_5P_5M_5S" challengeScale="80" challengedList="ppl">
       <outputs name="Win" ownerID="6" targetID="43" fromX="3452" fromY="-610" />
@@ -100,7 +100,7 @@ Na szczescie dla ciebie wydaje sie, ze jest tylko kilka z bronia w pogotowiu.</n
       </logic>
       <outputs name="[Uzdrowiciel lub cmuch] Zaoferuj im pomoc w uzdrowieniu." ownerID="19" targetID="20" group="G2" fromX="3463" fromY="1817" />
       <outputs name="Powiedz, ze nie musza wychodzic. Wyjasnisz ich sytuacje elfom." ownerID="19" targetID="37" group="G2" fromX="3463" fromY="1737" />
-      <outputs name="Kiwnij glowa i nalegaj, aby odeszli w ciagu jednego dnia. " ownerID="19" targetID="48" fromX="3463" fromY="1657" />„Odwiedzalismy jedynie swiete miejsca, czczac nasze dawne i rodzinne wiezi. 
+      <outputs name="Kiwnij glowa i nalegaj, aby odeszli w ciagu jednego dnia. " ownerID="19" targetID="48" fromX="3463" fromY="1657" />„Odwiedzalismy jedynie swiete miejsca, czczac nasze przeszle i rodzinne wiezi. 
 
 Ale niektorzy z naszych oczyszczonych krewnych nie przyjeli naszej podrozy i nie zaatakowali nas. Jestesmy ranni i po prostu potrzebujemy czasu, aby sie uleczyc, zanim ruszymy dalej. Nie szukamy zemsty na lesnych krewnych 
 
@@ -139,7 +139,7 @@ Wyjedziemy teraz, jesli musimy.' </nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Kiwnij glowa i zycz im dobrze. " ownerID="20" targetID="36" fromX="3922" fromY="1700" />Pozostajesz przez jakis czas i pomagasz uzdrowic elfy cienia. 
+      <outputs name="Kiwnij glowa i zycz im dobrze. " ownerID="20" targetID="36" fromX="3922" fromY="1700" />Pozostajesz przez jakis czas i pomagasz uzdrawiac elfy cienia. 
 
 'Dziekujemy Ci i zostawimy ci ten dar, by splacic twoja dobroc. Nie wiem, jak sobie radzisz z tymi aroganckimi, stojacymi glupcami, ale to twoja droga. Dobrze cie trzymaj.'</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="22" positionX="5600.439" positionY="898.072144" width="350" height="408" allPlayersXP="6" allPlayersRP="1" linkedEventUniqueID="0">
@@ -171,7 +171,7 @@ Wyjedziemy teraz, jesli musimy.' </nodes>
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="26" positionX="1497" positionY="1460" width="350" height="966">
       <outputs name="Atak!" ownerID="26" targetID="7" fromX="1822" fromY="968" />
-      <outputs name="[Shadow elf] Zapytaj swojego krewnego, dlaczego tu sa, gdzie nie sa pozadani." ownerID="26" targetID="47" fromX="1822" fromY="888" />
+      <outputs name="[Cien elf] Zapytaj swojego krewnego, dlaczego tu sa, gdzie nie sa pozadani." ownerID="26" targetID="47" fromX="1822" fromY="888" />
       <outputs name="[Elf] Zadaj, zeby teraz odeszli, poniewaz sa plaga na twoich krewnych i przynosza ciemnosc do owczarni." ownerID="26" targetID="53" group="G1" fromX="1822" fromY="808" />
       <outputs name="Powiedz im, ze lud lesny nie chce, aby byli sasiadami, i popros ich, aby sie przeniesli, teraz!" ownerID="26" targetID="8" group="G1" fromX="1822" fromY="728" />Elfy cienia zatrzymuja sie na swoich sladach, patrzac na ciebie. Wiesz, ze wiekszosc z nich jest gotowa do walki, ale jeden z nich mowi: 
 
@@ -250,7 +250,7 @@ Elfy wydaja sie tym niewzruszone i po prostu dziekuje za dobrze wykonana prace. 
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="39" targetID="44" fromX="5961" fromY="1377" />Elfy sa niezadowolone z twojej rezolucji, a kiedy zapytano ich dlaczego, nie odpowiadaja bezposrednio, wspominajac jedynie o skazie ciemnosci i jej niebezpieczenstwach. 
+      <outputs name="Wyjdz." ownerID="39" targetID="44" fromX="5961" fromY="1377" />Elfy sa niezadowolone z twojej rezolucji, a kiedy zapytano ich dlaczego, nie odpowiadaja bezposrednio, wspominajac tylko o skazie ciemnosci i jej niebezpieczenstwach. 
 
 Zyskasz jakas przysluge, ale niewiele. 
 </nodes>
@@ -276,7 +276,7 @@ Zyskasz jakas przysluge, ale niewiele.
       <outputs ownerID="41" targetID="23" fromX="2930" fromY="526" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="42" positionX="3491.369" positionY="695.450867" width="350" height="681">
-      <outputs name="Wyjdz." ownerID="42" targetID="24" fromX="3817" fromY="248" />Kiedy informujesz elfy o swojej porazce, sa rozczarowani twoimi wysilkami. </nodes>
+      <outputs name="Wyjdz." ownerID="42" targetID="24" fromX="3817" fromY="248" />Kiedy poinformujesz elfy o swojej porazce, sa rozczarowani twoimi wysilkami. </nodes>
     <nodes xsi:type="NodeAdventure" ID="43" positionX="3644.44067" positionY="-17.6186218" width="350" height="681">
       <logic>
         <ModifierBlock>
@@ -457,9 +457,9 @@ Ale niektorzy z naszych oczyszczonych krewnych nie przyjeli naszej podrozy i nie
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Zabij tych, ktorzy pozostali po starym stylu. Atak!" ownerID="7" targetID="44" fromX="1331" fromY="-1151" />
+      <outputs name="Zabij tych, ktorzy pozostawili staromodny sposob. Atak!" ownerID="7" targetID="44" fromX="1331" fromY="-1151" />
       <outputs name="Kontynuuj zastraszanie." ownerID="7" targetID="45" fromX="1331" fromY="-1231" />
-      <outputs name="Wracaj innym razem." ownerID="7" targetID="5" fromX="1331" fromY="-1311" />Wabisz stwory w kat, zmieniasz swoja pozycje, by wygladac bardziej groznie, i szepczesz, ze las jest na nich zly. Wkrotce wielu z nich ucieka w panice. 
+      <outputs name="Wracaj innym razem." ownerID="7" targetID="5" fromX="1331" fromY="-1311" />Wabisz stwory w kat, zmieniasz swoja postawe, by wygladac bardziej groznie, i szepczesz, ze las jest na nich zly. Wkrotce wielu z nich ucieka w panice. 
 </nodes>
     <nodes xsi:type="NodeChallenge" ID="8" positionX="1383" positionY="-1449" width="500" height="807" challengeType="TypeMental" versusGroup="GROUP-ELDERCONE_MIX_5P_5M_5S" challengeScale="200" challengedList="ppl">
       <outputs name="Win" ownerID="8" targetID="49" group="G1" fromX="1824" fromY="-1944" />
@@ -586,7 +586,7 @@ Ale kiedy zglosisz sie do elfiego ludu, oni sa zrozpaczeni twoimi brutalnymi spo
       </logic>
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="25" positionX="-2289.23828" positionY="-755.1382" width="350" height="805">
-      <outputs name="Zabierz ze soba pineconette." ownerID="25" targetID="60" fromX="-1963" fromY="-1246" />
+      <outputs name="Wez ze soba pineconette." ownerID="25" targetID="60" fromX="-1963" fromY="-1246" />
       <outputs name="Swiatlo jest nienaturalne, a demon z pewnoscia obawialby sie, ze zostanie zarazony. Zabij to szybko." ownerID="25" targetID="34" fromX="-1963" fromY="-1326" />Przeszukujesz gruzy i odkrywasz, ze zyje jeszcze kilka pineconette. Najbardziej rozpraszaja sie w lesie, ale wydaje sie, ze chce zostac z toba. 
 
 Jego oczy wydaja sie czesciowo dotkniete dziwnym swiatlem - czy to tylko twoj umysl, ktory gra sztuczki?</nodes>
@@ -606,7 +606,7 @@ Jego oczy wydaja sie czesciowo dotkniete dziwnym swiatlem - czy to tylko twoj um
       </logic>
       <outputs name="Wyszukaj miejsce dla ocalalych." ownerID="27" targetID="25" fromX="-741" fromY="-543" />Ustawiasz pulapki i zabijasz wiekszosc pinekonow, ktore zamieniaja sie w bialy popiol. Inni uciekaja. 
 
-Na poczatku elfy sa zrozpaczone twoja przemoca, ale kiedy zobacza bialy popiol, zgadzaja sie, ze to byl jedyny sposob.</nodes>
+Na poczatku elfy sa zrozpaczone twoja przemoca, ale kiedy widza bialy popiol, zgadzaja sie, ze to byl jedyny sposob.</nodes>
     <nodes xsi:type="NodeAdventure" ID="28" positionX="2781.066" positionY="-346.817963" width="350" height="725">
       <logic>
         <ModifierBlock>
@@ -677,7 +677,7 @@ Na poczatku elfy sa zrozpaczone twoja przemoca, ale kiedy zobacza bialy popiol, 
       <outputs ownerID="38" targetID="67" fromX="1819" fromY="-2776" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="39" positionX="1954.75244" positionY="-2854.36646" width="350" height="725">
-      <outputs name="Sprobuj odejsc." ownerID="39" targetID="28" fromX="2280" fromY="-3345" />Twoj przyjaciel jest przygnebiony twoja decyzja, a pineconettes znow sie pobudzaja.</nodes>
+      <outputs name="Sprobuj wyjsc." ownerID="39" targetID="28" fromX="2280" fromY="-3345" />Twoj przyjaciel jest przygnebiony twoja decyzja, a pineconettes znow sie pobudzaja.</nodes>
     <nodes xsi:type="NodeChallenge" ID="44" positionX="2098.444" positionY="571.427734" width="500" height="726" challengeType="TypePhysical" versusGroup="GROUP-PINECONETTES_0P_3M_2S" challengeScale="101" challengedList="ppl">
       <outputs name="Win" ownerID="44" targetID="57" fromX="2539" fromY="75" />
       <outputs name="Lose" ownerID="44" targetID="56" fromX="2539" fromY="-4" />
@@ -762,7 +762,7 @@ Elfy dziekuja i zostawiaja nagrode.</nodes>
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="[Lowca] Sprobuj wkrasc sie i ustawic pulapki, aby pozbyc sie chorych demonow lesnych." ownerID="52" targetID="27" fromX="-272" fromY="-750" />
+      <outputs name="[Lowca] Sprobuj wkrasc sie i zalozyc pulapki, aby pozbyc sie chorych demonow lesnych." ownerID="52" targetID="27" fromX="-272" fromY="-750" />
       <outputs name="[Lasowy lud] Wykorzystaj swoje powinowactwo do lasu, aby zawolac demony. Popros las o pomoc!" ownerID="52" targetID="62" fromX="-272" fromY="-831" />
       <outputs name="Atakuj pineconettes!" ownerID="52" targetID="55" fromX="-272" fromY="-911" />Zblizasz sie i obserwujesz dziwne zachowania pineconettes. Podczas gdy myslales, ze sa po prostu destrukcyjni, teraz widzisz, ze scigaja jednego z nich i rozrywaja go na strzepy!</nodes>
     <nodes xsi:type="NodeAdventure" ID="53" positionX="913" positionY="-1580" width="350" height="805">
@@ -907,7 +907,7 @@ Ale kiedy zglosisz sie do elfiego ludu, nie sa pod wrazeniem taktyki strachu, kt
 
 Mimo to, uznaja twoje wysilki i zyskujesz niewielka przysluge.</nodes>
     <nodes xsi:type="NodeAdventure" ID="66" positionX="-962.885864" positionY="975.846558" width="350" height="725">
-      <outputs name="Pomoz im dolaczyc do elfow we wsi." ownerID="66" targetID="25" fromX="-637" fromY="484" />Kiedy dzwonisz do lasu, odpowiada, a dziwne pineconettes w koncu przepalaja sie, zostawiajac za soba wdziecznych ocalalych. 
+      <outputs name="Pomoz im dolaczyc do elfow we wsi." ownerID="66" targetID="25" fromX="-637" fromY="484" />Kiedy dzwonisz do lasu, odpowiada, a dziwne pineconettes w koncu przepalaja sie, pozostawiajac za soba wdziecznych ocalalych. 
 
 Kiedy pytasz ich, co sie tu stalo, nie wiedza. Wiedza tylko, ze swiatlo probowalo je zabrac. 
 </nodes>
@@ -966,9 +966,9 @@ Kiedy pytasz ich, co sie tu stalo, nie wiedza. Wiedza tylko, ze swiatlo probowal
       <outputs name="[Wood folk] Podejdz ostroznie i sprobuj porozmawiac z lesnymi straznikami." ownerID="2" targetID="3" fromX="311" fromY="-491" />
       <outputs name="[Goblinski szaman] Popros lesne duchy, aby powiedzialy ci, co tu jest nie w porzadku." ownerID="2" targetID="4" fromX="311" fromY="-571" />
       <outputs name="[Harmonia] Przywolaj moc harmonii, aby uspokoic gniew tego starego ducha." ownerID="2" targetID="16" fromX="311" fromY="-651" />
-      <outputs name="[Nature] Wzywaj swoja domene, aby pokazac, ze jestes po jego stronie." ownerID="2" targetID="57" fromX="311" fromY="-731" />
+      <outputs name="[Nature] Wezwij swoja domene, aby pokazac, ze jestes po jego stronie." ownerID="2" targetID="57" fromX="311" fromY="-731" />
       <outputs name="Atak!" ownerID="2" targetID="24" fromX="311" fromY="-811" />
-      <outputs name="Zaoferuj swoja wlasna energie duchowa, aby sprobowac uspokoic to stare stworzenie i zostawic je same. [Wez obrazenia duchowe]" ownerID="2" targetID="58" fromX="311" fromY="-892" />
+      <outputs name="Zaoferuj swoja wlasna energie duchowa, aby sprobowac uspokoic te stara istote i zostawic ja elfom. [Wez obrazenia duchowe]" ownerID="2" targetID="58" fromX="311" fromY="-892" />
       <outputs name="Wroc pozniej." ownerID="2" targetID="31" fromX="311" fromY="-972" />Zblizasz sie do obszaru, gdzie mieszkaja niegodziwi straznicy lasu. 
 
 Widzisz zaciemniony, zamkniety gaj i wyczuwasz wiele obserwujacych cie oczu.</nodes>
@@ -984,10 +984,10 @@ Widzisz zaciemniony, zamkniety gaj i wyczuwasz wiele obserwujacych cie oczu.</no
       <outputs name="[Leshy] Wolajcie do swoich braci i zadajcie, aby ustapili, poniewaz nie jest to ich miejsce, by atakowac inne lesne dzieci, kiedy nie zrobia nic, by na to zasluzyc!" ownerID="3" targetID="42" group="G1" fromX="-357.404083" fromY="1407.80713" />
       <outputs name="Zaangazuj lesbijke, aby sluchac rozumu. Z pewnoscia elfy tez sa dziecmi lasu. Nie mogli go tak obrazic." ownerID="3" targetID="5" fromX="-357.404083" fromY="1327.60718" />
       <outputs name="[Magiczny uzytkownik] Ten straznik lesny wydaje sie nieco wytracony z rownowagi. Wejdz do krolestwa duchow i walcz z nim, abys mogl wniesc sens do starego drewna." ownerID="3" targetID="6" fromX="-357.404083" fromY="1247.4071" />
-      <outputs name="[Ork] Te lesne demony wymknely sie spod kontroli. Otocz je, zasadzaj ogien w odpowiednich miejscach i spal je! Wyzwaniem bedzie zrobic to wystarczajaco szybko, ale wiesz, jak dobrze spalic lasy." ownerID="3" targetID="30" fromX="-357.404083" fromY="1167.20715" />
-      <outputs name="Atak!" ownerID="3" targetID="24" fromX="-357.404083" fromY="1087.007" />Jedna z lesbijek obraca na ciebie ich pradawne spojrzenie: 
+      <outputs name="[Ork] Te demony lesne wymknely sie spod kontroli. Otocz je, zasadzaj ogien w odpowiednich miejscach i spal je! Wyzwaniem bedzie zrobic to wystarczajaco szybko, ale wiesz, jak dobrze spalic lasy." ownerID="3" targetID="30" fromX="-357.404083" fromY="1167.20715" />
+      <outputs name="Atak!" ownerID="3" targetID="24" fromX="-357.404083" fromY="1087.007" />Jedno z niedoli zamienia ich starozytne spojrzenie na ciebie: 
 
-'Maly lesny podworko zakradlo cie tutaj, yee? Nie cofniemy sie. Ten las jest nasz i sa szkodnikami!' </nodes>
+'Maly lesny podworko cie tu przykryl, yee? Nie cofniemy sie. Ten las jest nasz i sa szkodnikami!' </nodes>
     <nodes xsi:type="NodeAdventure" ID="4" positionX="998.642334" positionY="180.259491" width="350" height="885">
       <logic>
         <FilterBlock>
@@ -1056,7 +1056,7 @@ Duchy proponuja ci odciecie dla ciebie niedoli od swiata duchow, ale bedzie to o
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="7" targetID="40" fromX="263" fromY="2527" />Lek marszczy brwi i jeczy, gdy slucha twoich slow. Potrzeba czasu, ale starozytny pasterz przyznaje sie do twojego argumentu i zgadza sie, ze byc moze droga elfow nie jest taka zla i musi myslec mniej konserwatywnie. 
+      <outputs name="Wyjdz." ownerID="7" targetID="40" fromX="263" fromY="2527" />Licha marszczy brwi i jeczy, gdy slucha twoich slow. Potrzeba czasu, ale starozytny pasterz przyznaje sie do twojego argumentu i zgadza sie, ze byc moze droga elfow nie jest taka zla i musi myslec mniej konserwatywnie. 
 
 Elfy sa bardzo wdzieczne za to pokojowe rozwiazanie i zostawiaja ci prezent. 
 </nodes>
@@ -1093,7 +1093,8 @@ Elfy sa bardzo wdzieczne za to pokojowe rozwiazanie i zostawiaja ci prezent.
       <outputs ownerID="12" targetID="18" fromX="2566" fromY="-334" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="13" positionX="3022.0813" positionY="-682.100952" width="350" height="725">
-      <outputs name="Idz dalej." ownerID="13" targetID="18" fromX="3347" fromY="-1173" />Lek nie idzie latwo, a ty zostajesz zraniony przez szalone proby stworzenia, by uciec, gdy probujesz szybko zakonczyc.</nodes>
+      <outputs name="Idz dalej." ownerID="13" targetID="18" fromX="3347" fromY="-1173" />Lek nie idzie latwo, a ty zostajesz zraniony przez szalone proby stworzenia, ktore probuja go szybko zakonczyc. 
+</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="14" positionX="2045.21411" positionY="-2396.92188" width="350" height="530" allPlayersXP="4" allPlayersRP="1" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeChallenge" ID="16" positionX="338" positionY="-668" width="500" height="726" challengeType="TypeMental" versusGroup="GROUP-LESHY_MIX_7P_6M_7S" challengeScale="300" challengedList="ppl">
       <logic>
@@ -1127,7 +1128,7 @@ Elfy sa bardzo wdzieczne za to pokojowe rozwiazanie i zostawiaja ci prezent.
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="17" targetID="36" fromX="2048" fromY="264" />Stoisz twarza w twarz z choroba w krolestwie duchow i odnajdujesz jego pradawne korzenie dotkniete ciemna zgnilizna, ktora pomagasz oczyscic. Opiekun lasu dziekuje i obiecuje, ze juz wiecej nie przeszkadza elfom. 
+      <outputs name="Wyjdz." ownerID="17" targetID="36" fromX="2048" fromY="264" />Stoisz twarza w twarz z choroba w krolestwie duchow i odkrywasz jego pradawne korzenie dotkniete ciemna zgnilizna, ktora pomagasz oczyscic. Opiekun lasu dziekuje i obiecuje, ze juz wiecej nie przeszkadza elfom. 
 Lesni ludzie sa bardzo wdzieczni za te spokojna decyzje i zostawia ci prezent. 
 </nodes>
     <nodes xsi:type="NodeAdventure" ID="18" positionX="2762.73755" positionY="99.47228" width="350" height="725">
@@ -1154,7 +1155,7 @@ Twoja przyjazn nie rosnie tak bardzo, jak sie spodziewales.
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="21" targetID="23" fromX="1225" fromY="-2303" />Niestety, tak jak zamierzasz zglosic swoja udana misje, dowiadujesz sie, ze lesbija powrocila na swoje miejsce i nadal nekala osadnikow. Oni musieli sobie z tym poradzic, wiec twoja przyjazn nie rosnie. </nodes>
+      <outputs name="Wyjdz." ownerID="21" targetID="23" fromX="1225" fromY="-2303" />Niestety, tak jak zamierzasz zglosic swoja udana misje, dowiadujesz sie, ze dreczyciel powrocil na swoje miejsce i nadal nekal osadnikow. Oni musieli sobie z tym poradzic, wiec twoja przyjazn nie rosnie. </nodes>
     <nodes xsi:type="NodeAdventure" ID="22" positionX="487.979858" positionY="-2380.74268" width="350" height="725">
       <logic>
         <ModifierBlock>
@@ -1233,8 +1234,8 @@ Twoja przyjazn nie rosnie tak bardzo, jak sie spodziewales.
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="32" positionX="1003.18756" positionY="2485.652" width="350" height="966">
       <outputs name="Daj spokoj." ownerID="32" targetID="37" fromX="1328" fromY="1994" />
-      <outputs name="Zaoferuj swoja wlasna energie duchowa, aby sprobowac uspokoic to stare stworzenie i zostawic je same. [Wez obrazenia duchowe]" ownerID="32" targetID="58" fromX="1328" fromY="1914" />
-      <outputs name="[Ork] Te lesne demony wymknely sie spod kontroli. Otocz je, zasadzaj ogien w odpowiednich miejscach i spal je! Wyzwaniem bedzie zrobic to wystarczajaco szybko, ale wiesz, jak dobrze spalic lasy." ownerID="32" targetID="30" fromX="1328" fromY="1834" />
+      <outputs name="Zaoferuj swoja wlasna energie duchowa, aby sprobowac uspokoic te stara istote i zostawic ja elfom. [Wez obrazenia duchowe]" ownerID="32" targetID="58" fromX="1328" fromY="1914" />
+      <outputs name="[Ork] Te demony lesne wymknely sie spod kontroli. Otocz je, zasadzaj ogien w odpowiednich miejscach i spal je! Wyzwaniem bedzie zrobic to wystarczajaco szybko, ale wiesz, jak dobrze spalic lasy." ownerID="32" targetID="30" fromX="1328" fromY="1834" />
       <outputs name="Atak!" ownerID="32" targetID="24" fromX="1328" fromY="1753" />Byles nieprzekonujacy. Choroba pozostaje i jest zdecydowana walczyc z elfami.</nodes>
     <nodes xsi:type="NodeAdventure" ID="33" positionX="2255.555" positionY="822.1182" width="350" height="725">
       <logic>
@@ -1244,7 +1245,7 @@ Twoja przyjazn nie rosnie tak bardzo, jak sie spodziewales.
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="33" targetID="47" fromX="2581" fromY="330" />Cokolwiek probowales, ta lichwa okazala sie zbyt silna i uparta. Lesne demony atakuja cie. 
+      <outputs name="Wyjdz." ownerID="33" targetID="47" fromX="2581" fromY="330" />Bez wzgledu na to, co probowales, ta choroba okazala sie zbyt silna i uparta. Lesne demony atakuja cie. 
 
 Elfy slysza twoje krzyki i przychodza z pomoca. Musza sami zabijac straznikow lesnych i sa zli na to, ze musza to robic.</nodes>
     <nodes xsi:type="NodeSpawnOnMap" ID="36" positionX="2313.97632" positionY="2072.31934" width="480" height="503" radius="0" destroyOwner="true" linkedEventUniqueID="0">
@@ -1284,7 +1285,7 @@ Elfy slysza twoje krzyki i przychodza z pomoca. Musza sami zabijac straznikow le
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="42" targetID="40" fromX="258" fromY="1812" />Lek marszczy brwi i jeczy, gdy slucha twoich slow. Ale on sie nie porusza: 
+      <outputs name="Wyjdz." ownerID="42" targetID="40" fromX="258" fromY="1812" />Licha marszczy brwi i jeczy, gdy slucha twoich slow. Ale on sie nie porusza: 
 
 'Noo, nie bede sie klanial do ich nowych, zwariowanych chwil. Oni zostawia moja ziemie!'
 
@@ -1317,7 +1318,7 @@ Lek i jego trzoda atakuja cie, a elfy musza przyjsc ci z pomoca. Sa zasmuceni po
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="52" targetID="36" fromX="1890" fromY="1850" />Lek marszczy brwi i jeczy, gdy slucha twoich slow. Potrzeba czasu, ale starozytny pasterz przyznaje sie do twojego argumentu i zgadza sie, ze byc moze droga elfow nie jest taka zla i musi myslec mniej konserwatywnie. 
+      <outputs name="Wyjdz." ownerID="52" targetID="36" fromX="1890" fromY="1850" />Licha marszczy brwi i jeczy, gdy slucha twoich slow. Potrzeba czasu, ale starozytny pasterz przyznaje sie do twojego argumentu i zgadza sie, ze byc moze droga elfow nie jest taka zla i musi myslec mniej konserwatywnie. 
 
 Elfy sa bardzo wdzieczne za to pokojowe rozwiazanie i zostawiaja ci prezent. 
 </nodes>
@@ -1434,9 +1435,9 @@ Elfy sa bardzo wdzieczne za pokojowe rozwiazanie i zostawia ci prezent.
           </LogicFilter>
         </FilterBlock>
       </logic>
-      <outputs name="Wiesz, jak sobie radzic z lotrzykami - tez w tym zyciu sie bawiles. Porozmawiaj z nimi. " ownerID="2" targetID="3" fromX="763" fromY="-532" />
+      <outputs name="Wiesz, jak sobie radzic z lotrzykami - ty tez sie tym zajmowales. Porozmawiaj z nimi. " ownerID="2" targetID="3" fromX="763" fromY="-532" />
       <outputs name="[Orc Matriarch] Powiedz im, zeby wyszli, teraz!" ownerID="2" targetID="4" fromX="763" fromY="-612" />
-      <outputs name="[Intelekt i harmonia] Przekonaj bandytow, ze madrzej jest odejsc niz stawic czola tobie - a pozniej zmierzyc sie takze z elfami." ownerID="2" targetID="16" fromX="763" fromY="-693" />
+      <outputs name="[Intelekt i harmonia] Przekonaj bandytow, ze madrzej jest odejsc niz stawic czola tobie - a pozniej takze stawic czola elfom." ownerID="2" targetID="16" fromX="763" fromY="-693" />
       <outputs name="Zaplac bandytom za wyjscie." ownerID="2" targetID="15" fromX="763" fromY="-773" />
       <outputs name="Atak!" ownerID="2" targetID="24" fromX="763" fromY="-853" />
       <outputs name="Wroc pozniej." ownerID="2" targetID="31" fromX="763" fromY="-933" />Znajdziesz miejsce, w ktorym zostales wyslany, aby poradzic sobie z niektorymi orkowymi bandytami.</nodes>
@@ -1460,7 +1461,7 @@ Elfy sa bardzo wdzieczne za pokojowe rozwiazanie i zostawia ci prezent.
       <outputs name="[Ork] Przekonaj ich, ze zawracanie sobie glowy mala osada elfow nie jest godnym wyzwaniem. Opowiedz im o innych miejscach, w ktorych natknales sie na honor ich wojownika." ownerID="3" targetID="7" group="G1" fromX="749" fromY="778" />
       <outputs name="[Ork] Przekonaj ich, ze zawracanie sobie glowy mala osada elfow nie jest godnym wyzwaniem. Opowiedz im o innych miejscach, w ktorych natknales sie na honor ich wojownika." ownerID="3" targetID="42" group="G1" fromX="749" fromY="698" />
       <outputs name="[Bandyta] Handluj z nimi. Przekonaj ich, ze nie jest prawdziwym wyzwaniem pozostac z elfami bratek." ownerID="3" targetID="5" group="G1" fromX="749" fromY="618" />
-      <outputs name="Bandyci sa za dobrami, wiec zaoferujcie im troche za odejscie." ownerID="3" targetID="45" fromX="749" fromY="538" />
+      <outputs name="Bandyci sa za dobrami, wiec zaoferujcie im troche do opuszczenia." ownerID="3" targetID="45" fromX="749" fromY="538" />
       <outputs name="Znasz ich taktyke, wiec walka bedzie latwiejsza. Atak!" ownerID="3" targetID="30" fromX="749" fromY="458" />Podchodzisz do obozu bandytow i dostrzegasz kilku orkow. Wygladaja na szczuplych i zmeczonych, wiec moze byc miejsce na negocjacje, choc nigdy nie jest pewne, ze ci tak wypelnieni chaosem.</nodes>
     <nodes xsi:type="NodeAdventure" ID="4" positionX="973.52124" positionY="21.580246" width="350" height="725">
       <logic>
@@ -1478,7 +1479,7 @@ Elfy sa bardzo wdzieczne za pokojowe rozwiazanie i zostawia ci prezent.
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Obserwuj ich kazdy krok, kiedy ida." ownerID="4" targetID="12" fromX="1299" fromY="-469" />„Cholera, tak, ehm, jak mowisz, to jest wyraznie twoja darn. Czesc tobie, matko krwi!'</nodes>
+      <outputs name="Obserwuj ich kazdy krok, gdy ida." ownerID="4" targetID="12" fromX="1299" fromY="-469" />„Cholera, tak, ehm, jak mowisz, to jest wyraznie twoja darn. Czesc tobie, matko krwi!'</nodes>
     <nodes xsi:type="NodeChallenge" ID="5" positionX="1340.92554" positionY="2223.457" width="500" height="726" challengeType="TypeMental" versusGroup="GROUP-ORCS_4P_3M_1S" challengeScale="101" challengedList="ppl">
       <logic>
         <FilterBlock>
@@ -1841,8 +1842,8 @@ Ida dalej, a elfy sa pod wrazeniem twojego pokojowego rozwiazania.
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="[Magiczny lub magiczny uzytkownik] Moze tu dzialac ciemna magia. Zbadac." ownerID="2" targetID="4" group="G1" fromX="806" fromY="-639" />
-      <outputs name="[Magiczny uzytkownik lub Wraith] Niektorzy w twojej grupie wiedza o ozywieniu dusz. Przyjrzyj sie blizej." ownerID="2" targetID="3" group="G1" fromX="806" fromY="-719" />
+      <outputs name="[Magiczny lub magiczny uzytkownik] Moze tu dzialac troche czarnej magii. Zbadac." ownerID="2" targetID="4" group="G1" fromX="806" fromY="-639" />
+      <outputs name="[Magiczny uzytkownik lub Wraith] Niektorzy w twojej grupie wiedza o niezyjacych duszach. Przyjrzyj sie blizej." ownerID="2" targetID="3" group="G1" fromX="806" fromY="-719" />
       <outputs name="[Natura lub Swiatlo] Oczysc to miejsce plugawej sily, ktora narusza prawa twoich bogow." ownerID="2" targetID="16" fromX="806" fromY="-799" />
       <outputs name="Atak!" ownerID="2" targetID="24" fromX="806" fromY="-880" />
       <outputs name="[Zerca] Te upiory sa tu zwiazane i zdarza sie, ze wiesz przez jaki rytual. Wszystko, co musisz zrobic, to pogrzebac troche srebra w ziemi i poswiecic jednego zwierzecia, a upiory nie beda juz przeszkadzac elfom. Zrob to." ownerID="2" targetID="55" fromX="806" fromY="-960" />
@@ -1861,7 +1862,7 @@ Ida dalej, a elfy sa pod wrazeniem twojego pokojowego rozwiazania.
       <outputs name="[Wraith] Porozmawiaj z nimi i popros ich, aby ruszyli lub opuscili wioske." ownerID="3" targetID="7" group="G1" fromX="501" fromY="514" />
       <outputs name="[Wraith] Porozmawiaj z nimi i popros ich, aby ruszyli lub opuscili wioske." ownerID="3" targetID="42" group="G1" fromX="501" fromY="434" />
       <outputs name="Wykonaj rytual, ktory zatrzyma uwiezionych tutaj niezyjacych. To jest mroczna magia, wiec moze cie to kosztowac, ale powinno dzialac." ownerID="3" targetID="5" fromX="501" fromY="354" />
-      <outputs name="Masz na nich skok. Atak!" ownerID="3" targetID="30" fromX="501" fromY="274" />Widzisz kilka widm unoszacych sie w kolko wokol jednego nagrobka.</nodes>
+      <outputs name="Masz na nich skok. Atak!" ownerID="3" targetID="30" fromX="501" fromY="274" />Dostrzegasz kilka widm unoszacych sie w kolko wokol jednego nagrobka.</nodes>
     <nodes xsi:type="NodeAdventure" ID="4" positionX="913.7174" positionY="53.1649551" width="350" height="885">
       <logic>
         <FilterBlock>
@@ -1878,7 +1879,7 @@ Ida dalej, a elfy sa pod wrazeniem twojego pokojowego rozwiazania.
       </logic>
       <outputs name="Zniszcz obiekt." ownerID="4" targetID="51" fromX="1239" fromY="-437" />
       <outputs name="[Magiczny uzytkownik lub Wraith] Masz ludzi, ktorzy wiedza o niezyjacych, wiec przyjrzyj sie im blizej." ownerID="4" targetID="3" fromX="1239" fromY="-518" />
-      <outputs name="Po prostu zabij ich w staromodny sposob." ownerID="4" targetID="24" fromX="1239" fromY="-598" />Smrod mrocznej magii uderza w twoje zmysly i odkrywasz, ze przekleta figurka na szczycie jednego z nagrobkow powoduje, ze dusze zmarlych zatrzymuja sie i zmieniaja w widma. 
+      <outputs name="Po prostu zabij ich w staromodny sposob." ownerID="4" targetID="24" fromX="1239" fromY="-598" />Smrod mrocznej magii uderza w twoje zmysly i odkrywasz, ze przekleta figurka na szczycie jednego z nagrobkow powoduje, ze dusze zmarlych zwlekaja i zmieniaja sie w widma. 
 
 Latwo jest zniszczyc, ale moze zranic twojego ducha.</nodes>
     <nodes xsi:type="NodeChallenge" ID="5" positionX="791" positionY="1046" width="500" height="726" challengeType="TypeSpirit" versusConcept="true" versusGroup="GROUP-CON_S_0P_0M_4S" challengeScale="400" challengedList="ppl">
@@ -1976,7 +1977,7 @@ Pozbyles sie problemu, tak jak zostales poproszony, a twoja przyjazn z elfami z 
         </ModifierBlock>
       </logic>
       <outputs name="Dobrze." ownerID="20" targetID="21" group="G1" fromX="689" fromY="-2023" />
-      <outputs name="Dobrze." ownerID="20" targetID="22" group="G1" fromX="689" fromY="-2103" />Zakopujesz cenny metal i poswiecasz esencje zycia jednego zwierzecia, a upiory powinny teraz pozostac uwiezione w duchu greyworld.</nodes>
+      <outputs name="Dobrze." ownerID="20" targetID="22" group="G1" fromX="689" fromY="-2103" />Zakopujesz cenny metal i poswiecasz esencje zycia jednego zwierzecia, a upiory powinny teraz pozostac uwiezione w duchu szarego swiata.</nodes>
     <nodes xsi:type="NodeAdventure" ID="21" positionX="899.831665" positionY="-1811.99536" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -2206,7 +2207,7 @@ Niemniej jednak pozbyles sie problemu, tak jak zostales poproszony, a twoja przy
     <nodes xsi:type="NodeAdventure" ID="2" positionX="308.155579" positionY="-974.9277" width="350" height="1206">
       <outputs name="Zapytaj, czy mozesz w czyms pomoc." ownerID="2" targetID="21" fromX="633" fromY="-1466" />
       <outputs name="Powiedz, ze wlasnie przyszedles odpoczac i odwiedzic, byc moze uleczyc rany." ownerID="2" targetID="11" fromX="633" fromY="-1546" />
-      <outputs name="Zapytaj, czy mozesz sprobowac zaprzyjaznic sie z niektorymi demonami, ktore tu zamieszkuja." ownerID="2" targetID="40" fromX="633" fromY="-1626" />
+      <outputs name="Zapytaj, czy mozesz sprobowac zaprzyjaznic sie z niektorymi demonami, ktore tutaj zamieszkuja." ownerID="2" targetID="40" fromX="633" fromY="-1626" />
       <outputs name="Handel." ownerID="2" targetID="35" fromX="633" fromY="-1706" />
       <outputs name="Wyjdz." ownerID="2" targetID="3" fromX="633" fromY="-1786" />
       <outputs name="Zapytaj, czy mozesz odwiedzic swiete drzewo debowe, aby je uczcic." ownerID="2" targetID="70" fromX="633" fromY="-1867" />
@@ -2223,7 +2224,7 @@ Niemniej jednak pozbyles sie problemu, tak jak zostales poproszony, a twoja przy
       </logic>
       <outputs name="Atak!" ownerID="5" targetID="7" fromX="759" fromY="67" />
       <outputs name="Wyjdz." ownerID="5" targetID="3" fromX="759" fromY="-12" />
-      <outputs name="Powiedz, ze nie mowisz im nic zlego - wszystko, co chcesz, to porozmawiac i odwiedzic." ownerID="5" targetID="49" fromX="759" fromY="-92" />„Ze wzgledu na twoje dobre samopoczucie prosimy cie, abys sie poruszal, poniewaz nie jestes przyjacielem starszego ludu.'
+      <outputs name="Powiedz, ze nie myslisz o nich nic zlego - wszystko, co chcesz, to porozmawiac i odwiedzic." ownerID="5" targetID="49" fromX="759" fromY="-92" />„Ze wzgledu na twoje dobre samopoczucie prosimy cie, abys sie poruszal, poniewaz nie jestes przyjacielem starszego ludu.'
 
 Nie widzisz nikogo, ale czujesz sie obserwowany.</nodes>
     <nodes xsi:type="NodeAdventure" ID="6" positionX="1459.86108" positionY="819.161255" width="350" height="725">
@@ -2367,7 +2368,7 @@ Mozesz szukac naszych uzdrowicieli, a moze odmlodzic umysl i ducha, jesli los da
         </FilterBlock>
       </logic>
       <outputs name="[Elf] Delikatnie przechyl glowe." ownerID="26" targetID="29" fromX="2385" fromY="-2670" />
-      <outputs name="[Magiczni uzytkownicy] Powiedz, ze znasz troche oczyszczania, ale potrzebujesz ich pomocy, aby zrobic to wlasciwie." ownerID="26" targetID="64" fromX="2385" fromY="-2750" />
+      <outputs name="[Magiczni uzytkownicy] Powiedz, ze znasz troche oczyszczania, ale potrzebujesz ich pomocy, aby zrobic to poprawnie." ownerID="26" targetID="64" fromX="2385" fromY="-2750" />
       <outputs name="Zgodz sie zaplacic cene za usuniecie klatwy. [20 szlachetnych klejnotow]" ownerID="26" targetID="31" fromX="2385" fromY="-2830" />
       <outputs name="Pros o uzdrowienie ran duchowych." ownerID="26" targetID="55" fromX="2385" fromY="-2910" />
       <outputs name="Powiedz, ze nie masz platnosci." ownerID="26" targetID="11" fromX="2385" fromY="-2990" />Jeden z elfow kiwa glowa i pokazuje ci miejsce do siedzenia. 
@@ -2416,7 +2417,7 @@ Mozesz szukac naszych uzdrowicieli, a moze odmlodzic umysl i ducha, jesli los da
         </ModifierBlock>
       </logic>
       <outputs name="Dziekuje im i odejdzcie." ownerID="29" targetID="4" fromX="2845" fromY="-2377" />
-      <outputs name="[Magiczni uzytkownicy] Powiedz, ze znasz troche oczyszczania, ale potrzebujesz ich pomocy, aby zrobic to wlasciwie." ownerID="29" targetID="64" fromX="2845" fromY="-2457" />
+      <outputs name="[Magiczni uzytkownicy] Powiedz, ze znasz troche oczyszczania, ale potrzebujesz ich pomocy, aby zrobic to poprawnie." ownerID="29" targetID="64" fromX="2845" fromY="-2457" />
       <outputs name="Zgodz sie zaplacic cene za usuniecie klatwy." ownerID="29" targetID="65" fromX="2845" fromY="-2537" />
       <outputs name="Pros o uzdrowienie ran duchowych." ownerID="29" targetID="55" fromX="2845" fromY="-2618" />Uzdrowiciel ducha usmiecha sie. - Ach, przepraszam, poczulem dotyk mlodych bogow i nie spodziewalem sie starszego dziecka. 
 
@@ -2511,7 +2512,7 @@ Usiadz, odpocznij i medytuj, a twoja dusza zostanie oczyszczona. Oczywiscie twoi
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Zycze im dobrze i odejdz." ownerID="37" targetID="4" fromX="4722" fromY="-1474" />Elf patrzy na ciebie przez jakis czas, a ty zastanawiasz sie, czy poszli w medytacje. 
+      <outputs name="Zycze im dobrze i odejdz." ownerID="37" targetID="4" fromX="4722" fromY="-1474" />Elf patrzy na ciebie przez jakis czas i zastanawiasz sie, czy poszli w medytacje. 
 
 'Widze. Droga twojego panteonu jest naprawde interesujaca. Przyjmujemy Twoje prezenty z wdziecznoscia. Tutaj jest to skrzynia nieznanego pochodzenia, ktora niedawno znalazlem - jest twoja.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="40" positionX="-455" positionY="74" width="350" height="725">
@@ -2536,7 +2537,7 @@ Usiadz, odpocznij i medytuj, a twoja dusza zostanie oczyszczona. Oczywiscie twoi
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Zgadzam sie." ownerID="40" targetID="57" fromX="-129" fromY="-417" />„Nie handlujemy demonami jako zwierzetami domowymi, ale pozwolimy ci sprobowac zaprzyjaznic sie z cmuch lub skshackiem, a oni moga poprosic cie o wyplate demonow.'</nodes>
+      <outputs name="Zgadzam sie." ownerID="40" targetID="57" fromX="-129" fromY="-417" />„Nie handlujemy demonami jako zwierzetami domowymi, ale pozwolimy ci sprobowac zaprzyjaznic sie z cmuchem lub skshackiem, a oni moga poprosic cie o wyplate demonow.'</nodes>
     <nodes xsi:type="NodeTrade" ID="41" positionX="-1641" positionY="-449" width="460" height="559" traderProfile="TRADER-BANDIT_TWO" playerInventory="ruby" startingBalance="-2">
       <logic>
         <FilterBlock>
@@ -2697,7 +2698,7 @@ Usiadz, odpocznij i medytuj, a twoja dusza zostanie oczyszczona. Oczywiscie twoi
         </FilterBlock>
       </logic>
       <outputs name="Zgadzam sie." ownerID="58" targetID="59" fromX="-793" fromY="-1583" />
-      <outputs name="Odrzuc i odejdz." ownerID="58" targetID="3" fromX="-793" fromY="-1664" />A cmuch interesuje sie toba i dolaczy do ciebie, jesli dasz mu troche swojego ducha.</nodes>
+      <outputs name="Odrzuc i odejdz." ownerID="58" targetID="3" fromX="-793" fromY="-1664" />cmuch interesuje sie toba i dolaczy do ciebie, jesli dasz mu troche swojego ducha.</nodes>
     <nodes xsi:type="NodeDealDamage" ID="59" positionX="-2204.47021" positionY="-1238.80676" width="460" height="539" challengeTypeDamage="TypeSpirit" minDamage="20" maxDamage="30" useCountInPercent="true" targetGroup="ppl">
       <outputs ownerID="59" targetID="62" group="G1" fromX="-1775" fromY="-1220" />
       <outputs ownerID="59" targetID="63" group="G1" fromX="-1775" fromY="-1220" />
@@ -2805,7 +2806,7 @@ Czujesz, ze ciemna energia powoli odplywa.
         </FilterBlock>
       </logic>
       <outputs name="[Elf] Delikatnie przechyl glowe." ownerID="68" targetID="29" fromX="1595" fromY="-3754" />
-      <outputs name="[Magiczni uzytkownicy] Powiedz, ze znasz troche oczyszczania, ale potrzebujesz ich pomocy, aby zrobic to wlasciwie." ownerID="68" targetID="64" fromX="1595" fromY="-3834" />
+      <outputs name="[Magiczni uzytkownicy] Powiedz, ze znasz troche oczyszczania, ale potrzebujesz ich pomocy, aby zrobic to poprawnie." ownerID="68" targetID="64" fromX="1595" fromY="-3834" />
       <outputs name="Zgodz sie zaplacic cene za usuniecie klatwy. [20 szlachetnych klejnotow]" ownerID="68" targetID="31" fromX="1595" fromY="-3914" />
       <outputs name="Pros o uzdrowienie ran duchowych." ownerID="68" targetID="55" fromX="1595" fromY="-3994" />
       <outputs name="Powiedz, ze nie masz platnosci." ownerID="68" targetID="11" fromX="1595" fromY="-4074" />Jeden z elfow kiwa glowa i pokazuje ci miejsce do siedzenia. 
@@ -3379,14 +3380,14 @@ Elfy wydaja sie jednak zasmucone:
 
 Elfy sa pod wrazeniem twoich wysilkow: 
 
-„Przyznaje, ze nie sadzilem, ze twoj gatunek wklada tyle wysilku w ratowanie zycia bestii. Tutaj, wez to z moim podziekowaniem.'</nodes>
+„Przyznaje, ze nie sadzilem, ze twoj gatunek wklada tak wiele wysilku w ratowanie zycia bestii. Tutaj, wez to z moim podziekowaniem.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="51" positionX="2387.60938" positionY="1388.12378" width="350" height="681">
       <outputs name="Wyjdz." ownerID="51" targetID="15" fromX="2713" fromY="941" />Atakujesz roj i zabijasz pszczoly, a takze odkrywasz niedzwiedzia uwiezionego wewnatrz ula. Udaje ci sie go tez zabic, zanim bedzie mogl cie zaatakowac. 
 
 Elfy sa przerazone twoja brutalna natura. Placa ci zgodnie z ustaleniami, ale tracisz wiele ze swojego szacunku.</nodes>
     <nodes xsi:type="NodeAdventure" ID="52" positionX="3399.887" positionY="-186.133545" width="350" height="761">
       <outputs name="Zabij niedzwiedzia." ownerID="52" targetID="20" fromX="3725" fromY="-633" />
-      <outputs name="Uwolnij niedzwiedzia, pomimo ryzyka. " ownerID="52" targetID="53" fromX="3725" fromY="-713" />Moglbys probowac uwolnic niedzwiedzia bez zniszczenia zbyt duzej czesci ula, ale prawdopodobnie doznasz obrazen zarowno w panice, jak iw rannym niedzwiedziu. </nodes>
+      <outputs name="Uwolnij niedzwiedzia, pomimo ryzyka. " ownerID="52" targetID="53" fromX="3725" fromY="-713" />Mozesz sprobowac uwolnic niedzwiedzia bez zniszczenia zbyt duzej czesci ula, ale prawdopodobnie doznasz obrazen zarowno w panice, jak i rannym niedzwiedziu. </nodes>
     <nodes xsi:type="NodeDealDamage" ID="53" positionX="3772.817" positionY="-764.289551" width="460" height="459.36" challengeTypeDamage="TypePhysical" minDamage="30" maxDamage="60" useCountInPercent="true" targetGroup="ppl">
       <outputs ownerID="53" targetID="48" fromX="4202.067" fromY="-1152.64954" />
     </nodes>
@@ -3485,7 +3486,7 @@ Elfy sa przerazone twoja brutalna natura. Placa ci zgodnie z ustaleniami, ale tr
       </logic>
       <outputs name="Zapytaj, czy mozesz w czyms pomoc." ownerID="2" targetID="21" fromX="717" fromY="-552" />
       <outputs name="Powiedz, ze wlasnie przyszedles odpoczac i odwiedzic, byc moze uleczyc rany." ownerID="2" targetID="79" fromX="717" fromY="-632" />
-      <outputs name="Zapytaj, czy mozesz sprobowac zaprzyjaznic sie z niektorymi demonami, ktore tu zamieszkuja." ownerID="2" targetID="67" fromX="717" fromY="-712" />
+      <outputs name="Zapytaj, czy mozesz sprobowac zaprzyjaznic sie z niektorymi demonami, ktore tutaj zamieszkuja." ownerID="2" targetID="67" fromX="717" fromY="-712" />
       <outputs name="Handel." ownerID="2" targetID="35" fromX="717" fromY="-792" />
       <outputs name="Wyjdz." ownerID="2" targetID="3" fromX="717" fromY="-872" />
       <outputs name="Zapytaj, czy mozesz odwiedzic swiete drzewo debowe, aby je uczcic." ownerID="2" targetID="87" fromX="717" fromY="-953" />
@@ -3495,7 +3496,7 @@ Elfy sa przerazone twoja brutalna natura. Placa ci zgodnie z ustaleniami, ale tr
       <outputs name="Zapytaj, czy ktorys z ludzi chcialby dolaczyc do twojej sciezki?" ownerID="2" targetID="116" group="G1" fromX="717" fromY="-1273" />
       <outputs name="Widzisz znajoma twarz, podejdz." ownerID="2" targetID="117" fromX="717" fromY="-1354" />„Witaj, co sprowadza cie do naszej przystani?'
 
-Niektore zajecia w wiosce beda dostepne tylko wtedy, gdy przyjaznisz sie z jej ludzmi, a niektore sa ograniczone do szansy, wiec powrot od czasu do czasu moze byc tego wart.</nodes>
+Niektore zajecia w wiosce beda dostepne tylko wtedy, gdy przyjaznisz sie z jej ludzmi, a niektore sa ograniczone do szansy, wiec powrot od czasu do czasu moze byc wart.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="3" positionX="3565.721" positionY="1486.53271" width="350" height="360.8" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventureEnd" ID="4" positionX="4497" positionY="-2120" width="350" height="530" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventure" ID="5" positionX="432.185" positionY="931.1078" width="350" height="885">
@@ -3511,7 +3512,7 @@ Niektore zajecia w wiosce beda dostepne tylko wtedy, gdy przyjaznisz sie z jej l
       </logic>
       <outputs name="Atak!" ownerID="5" targetID="7" fromX="757" fromY="439" />
       <outputs name="Wyjdz." ownerID="5" targetID="3" fromX="757" fromY="359" />
-      <outputs name="Powiedz, ze nie mowisz im nic zlego - wszystko, co chcesz, to porozmawiac i odwiedzic." ownerID="5" targetID="48" fromX="757" fromY="279" />„Ze wzgledu na twoje dobre samopoczucie prosimy cie, abys sie poruszal, poniewaz nie jestes przyjacielem starszego ludu.'
+      <outputs name="Powiedz, ze nie myslisz o nich nic zlego - wszystko, co chcesz, to porozmawiac i odwiedzic." ownerID="5" targetID="48" fromX="757" fromY="279" />„Ze wzgledu na twoje dobre samopoczucie prosimy cie, abys sie poruszal, poniewaz nie jestes przyjacielem starszego ludu.'
 
 Nie widzisz nikogo, ale czujesz sie obserwowany. </nodes>
     <nodes xsi:type="NodeAdventure" ID="6" positionX="1479.20837" positionY="971.37915" width="350" height="725">
@@ -3607,7 +3608,7 @@ Nie widzisz nikogo, ale czujesz sie obserwowany. </nodes>
 Elfickie ruiny leza niedaleko stad. Jesli szukasz oswiecenia, odszukaj je, ale prosze, zachowaj szacunek dla naszych przodkow.'</nodes>
     <nodes xsi:type="NodeAdventure" allowOnce="true" ID="19" positionX="2458.121" positionY="-31.6077137" width="350" height="805">
       <outputs name="Zgadzam sie." ownerID="19" targetID="20" fromX="2783" fromY="-522" />
-      <outputs name="Odrzuc i odejdz." ownerID="19" targetID="3" fromX="2783" fromY="-602" />„Resztki mrocznej klatwy zawsze pozostaja w naszych lasach, tak wiele lesnych demonow, a nawet zwierzat zachowuje sie dziwnie, delikatnie mowiac. 
+      <outputs name="Odrzuc i odejdz." ownerID="19" targetID="3" fromX="2783" fromY="-602" />„Resztki mrocznej klatwy kiedykolwiek tkwia w naszych lasach, tak wiele lesnych demonow, a nawet zwierzat zachowuje sie dziwnie, delikatnie mowiac. 
 
 Jedno takie miejsce lezy w poblizu. Szukaj tego, co dolega naszemu lasowi i naprawiaj.'</nodes>
     <nodes xsi:type="NodeSpawnOnMap" ID="20" positionX="2834.08447" positionY="-74.88287" width="480" height="503" radius="5" groupID="GROUP-BOARS_2P_1M_0S" destroyOwner="false" linkedEventUniqueID="26">
@@ -3898,7 +3899,7 @@ Swiete drzewo lezy w poblizu. Jesli zostaniesz uznany za godnego, mozesz znalezc
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Zgadzam sie. Daj dwa klejnoty." ownerID="67" targetID="68" fromX="-632" fromY="-985" />„Nie handlujemy demonami jako zwierzetami domowymi, ale pozwolimy ci sprobowac zaprzyjaznic sie z cmuch lub skshackiem, a oni moga poprosic cie o wyplate demonow.'</nodes>
+      <outputs name="Zgadzam sie. Daj dwa klejnoty." ownerID="67" targetID="68" fromX="-632" fromY="-985" />„Nie handlujemy demonami jako zwierzetami domowymi, ale pozwolimy ci sprobowac zaprzyjaznic sie z cmuchem lub skshackiem, a oni moga poprosic cie o wyplate demonow.'</nodes>
     <nodes xsi:type="NodeProduceDrop" ID="68" positionX="-1456.63379" positionY="-460.990021" width="460" height="589">
       <outputs ownerID="68" targetID="69" group="G1" fromX="-1026" fromY="-819" />
       <outputs ownerID="68" targetID="70" group="G1" fromX="-1026" fromY="-899" />
@@ -3925,7 +3926,7 @@ Swiete drzewo lezy w poblizu. Jesli zostaniesz uznany za godnego, mozesz znalezc
         </FilterBlock>
       </logic>
       <outputs name="Zgadzam sie." ownerID="70" targetID="75" fromX="-1279" fromY="-1540" />
-      <outputs name="Odrzuc i odejdz." ownerID="70" targetID="78" fromX="-1279" fromY="-1620" />A cmuch interesuje sie toba i dolaczy do ciebie, jesli dasz mu troche swojego ducha.</nodes>
+      <outputs name="Odrzuc i odejdz." ownerID="70" targetID="78" fromX="-1279" fromY="-1620" />cmuch interesuje sie toba i dolaczy do ciebie, jesli dasz mu troche swojego ducha.</nodes>
     <nodes xsi:type="NodeAdventure" ID="71" positionX="-1972" positionY="-837" width="350" height="725">
       <outputs name="Wyjdz." ownerID="71" targetID="78" fromX="-1646" fromY="-1328" />Niestety, zaden demon nie chce teraz dolaczyc do twoich szeregow.</nodes>
     <nodes xsi:type="NodeTrade" ID="72" positionX="-2123.16821" positionY="-377.821838" width="460" height="559" traderProfile="TRADER-BANDIT_TWO" playerInventory="ruby" startingBalance="-2">
@@ -4064,7 +4065,7 @@ Mozesz szukac naszych uzdrowicieli, a moze odmlodzic umysl i ducha, jesli los da
         </FilterBlock>
       </logic>
       <outputs name="[Elf] Delikatnie przechyl glowe." ownerID="82" targetID="83" fromX="3239" fromY="-2375" />
-      <outputs name="[Magiczni uzytkownicy] Powiedz, ze znasz troche oczyszczania, ale potrzebujesz ich pomocy, aby zrobic to wlasciwie." ownerID="82" targetID="84" fromX="3239" fromY="-2455" />
+      <outputs name="[Magiczni uzytkownicy] Powiedz, ze znasz troche oczyszczania, ale potrzebujesz ich pomocy, aby zrobic to poprawnie." ownerID="82" targetID="84" fromX="3239" fromY="-2455" />
       <outputs name="Zgodz sie zaplacic cene za usuniecie klatwy. [20 szlachetnych klejnotow]" ownerID="82" targetID="86" fromX="3239" fromY="-2535" />
       <outputs name="Pros o uzdrowienie ran duchowych." ownerID="82" targetID="62" fromX="3239" fromY="-2615" />
       <outputs name="Powiedz, ze nie masz platnosci." ownerID="82" targetID="79" fromX="3239" fromY="-2695" />Jeden z elfow kiwa glowa i pokazuje ci miejsce do siedzenia. 
@@ -4131,7 +4132,7 @@ Czujesz, ze ciemna energia powoli odplywa.
         </FilterBlock>
       </logic>
       <outputs name="[Elf] Delikatnie przechyl glowe." ownerID="85" targetID="83" fromX="2025" fromY="-2799" />
-      <outputs name="[Magiczni uzytkownicy] Powiedz, ze znasz troche oczyszczania, ale potrzebujesz ich pomocy, aby zrobic to wlasciwie." ownerID="85" targetID="84" fromX="2025" fromY="-2879" />
+      <outputs name="[Magiczni uzytkownicy] Powiedz, ze znasz troche oczyszczania, ale potrzebujesz ich pomocy, aby zrobic to poprawnie." ownerID="85" targetID="84" fromX="2025" fromY="-2879" />
       <outputs name="Zgodz sie zaplacic cene za usuniecie klatwy. [20 szlachetnych klejnotow]" ownerID="85" targetID="86" fromX="2025" fromY="-2959" />
       <outputs name="Pros o uzdrowienie ran duchowych." ownerID="85" targetID="62" fromX="2025" fromY="-3039" />
       <outputs name="Powiedz, ze nie masz platnosci i wyjdz." ownerID="85" targetID="3" fromX="2025" fromY="-3119" />Jeden z elfow kiwa glowa i pokazuje ci miejsce do siedzenia. 
@@ -4628,12 +4629,12 @@ To jest teraz miasto cienia, a jego skorumpowani mieszkancy nie wydaja sie chetn
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wiesz, jak sobie poradzic z vily. Sprobuj to rozgryzc." ownerID="2" targetID="3" fromX="337" fromY="-482" />
+      <outputs name="Wiesz, jak sobie radzic z vily. Sprobuj to rozgryzc." ownerID="2" targetID="3" fromX="337" fromY="-482" />
       <outputs name="[Hunter] Przesledz ich przez jakis czas i obserwuj ich." ownerID="2" targetID="4" fromX="337" fromY="-562" />
       <outputs name="Poprzez nature lub intelekt uzyj swojej zdolnosci umyslowej, aby dowiedziec sie, co robic. " ownerID="2" targetID="16" fromX="337" fromY="-642" />
-      <outputs name="[Leshy] Dominuj vily i wzywaj posluszenstwa!" ownerID="2" targetID="50" fromX="337" fromY="-723" />
+      <outputs name="[Leshy] Zdominuj vily i wolaj o posluszenstwo!" ownerID="2" targetID="50" fromX="337" fromY="-723" />
       <outputs name="Atak!" ownerID="2" targetID="24" fromX="337" fromY="-803" />
-      <outputs name="Wroc pozniej." ownerID="2" targetID="31" fromX="337" fromY="-883" />Podchodzisz do miejsca, w ktorym paczka niezdyscyplinowanej ofiary zostala poproszona o rozmowe.</nodes>
+      <outputs name="Wroc pozniej." ownerID="2" targetID="31" fromX="337" fromY="-883" />Podchodzisz do miejsca, w ktorym paczka niesfornego vily, o ktora cie proszono, mowi sie, ze wedruje.</nodes>
     <nodes xsi:type="NodeAdventure" ID="3" positionX="-702.95" positionY="1802.00781" width="350" height="1162.65">
       <logic>
         <FilterBlock>
@@ -4651,10 +4652,10 @@ To jest teraz miasto cienia, a jego skorumpowani mieszkancy nie wydaja sie chetn
       <outputs name="[Vily i viatroviec] Dolacz do ich chaotycznego lotu i sprobuj dowiedziec sie, co dzieje sie od wewnatrz. " ownerID="3" targetID="7" group="G1" fromX="-377.199982" fromY="1354.93774" />
       <outputs name="[Vily i viatroviec] Dolacz do ich chaotycznego lotu i sprobuj dowiedziec sie, co dzieje sie od wewnatrz. " ownerID="3" targetID="42" group="G1" fromX="-377.199982" fromY="1274.73779" />
       <outputs name="Porozmawiaj z vily. Wezwij ich obowiazek wobec lasu!" ownerID="3" targetID="5" group="G1" fromX="-377.199982" fromY="1194.53784" />
-      <outputs name="[Leshy] Dominuj vily i wzywaj posluszenstwa!" ownerID="3" targetID="50" fromX="-377.199982" fromY="1114.33789" />
+      <outputs name="[Leshy] Zdominuj vily i wolaj o posluszenstwo!" ownerID="3" targetID="50" fromX="-377.199982" fromY="1114.33789" />
       <outputs name="Ustaw pulapke na paczke i atakuj, gdy sa oslabione." ownerID="3" targetID="30" fromX="-377.199982" fromY="1034.13782" />
-      <outputs name="[Magiczny uzytkownik] Te vily wydaja sie byc brane przez jakas mroczna klatwe. Sprobuj przelamac go, aby je uwolnic!" ownerID="3" targetID="52" fromX="-377.199982" fromY="953.937744" />
-      <outputs name="[Leshy] Wyczuwasz, ze ci cwaniacy trzymani sa przez jakas dziwna sile. Uzyj swojego lesnego glosu, aby wzywac posluszenstwa!" ownerID="3" targetID="6" fromX="-377.199982" fromY="873.7379" />Zblizasz sie i obserwujesz. Vily wiruja wokol jednego mlodego drzewka. Wydaja sie szaleni, klapia i sycza na drzewie. </nodes>
+      <outputs name="[Magiczny uzytkownik] Te vily wydaja sie byc przejete przez jakas mroczna klatwe. Sprobuj przelamac go, aby je uwolnic!" ownerID="3" targetID="52" fromX="-377.199982" fromY="953.937744" />
+      <outputs name="[Leshy] Wyczuwasz, ze ci cwaniacy trzymaja sie jakiejs dziwnej sily. Uzyj swojego lesnego glosu, aby wzywac posluszenstwa!" ownerID="3" targetID="6" fromX="-377.199982" fromY="873.7379" />Zblizasz sie i obserwujesz. Vily wiruja wokol jednego mlodego drzewka. Wydaja sie szaleni, klapia i sycza na drzewie. </nodes>
     <nodes xsi:type="NodeAdventure" ID="4" positionX="1079.43433" positionY="-21.7207184" width="350" height="805">
       <logic>
         <FilterBlock>
@@ -4801,7 +4802,7 @@ Wiatr sie uspokaja, a demony wracaja do swoich obowiazkow. Elfy sa bardzo wdziec
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="17" targetID="36" fromX="2050" fromY="340" />Dowiesz sie, ze vily sa w transie i przez pewien czas obserwujesz wzor ich lotu. 
+      <outputs name="Wyjdz." ownerID="17" targetID="36" fromX="2050" fromY="340" />Dowiedziales sie, ze vily sa w transie i przez pewien czas obserwujesz wzor ich lotu. 
 
 To prowadzi do malego drewnianego bozka, pochowanego w poblizu. Niszczysz go i vily zostaja uwolnione. Odlatuja ze wstydem, ale elfy sa bardzo wdzieczne za sprytne rozwiazanie. 
 </nodes>
@@ -4852,7 +4853,7 @@ To prowadzi do malego drewnianego bozka, pochowanego w poblizu. Niszczysz go i v
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="32" positionX="1231.30652" positionY="1968.82031" width="350" height="841.85">
       <outputs name="Daj spokoj." ownerID="32" targetID="37" fromX="1557.0564" fromY="1521.75024" />
-      <outputs name="[Magiczny uzytkownik] Te vily wydaja sie brane przez jakas mroczna klatwe. Sprobuj przelamac go, aby je uwolnic." ownerID="32" targetID="52" fromX="1557.0564" fromY="1441.55029" />
+      <outputs name="[Magiczny uzytkownik] Te vily wydaja sie byc przejete przez jakas mroczna klatwe. Sprobuj przelamac go, aby je uwolnic." ownerID="32" targetID="52" fromX="1557.0564" fromY="1441.55029" />
       <outputs name="Atak!" ownerID="32" targetID="30" fromX="1557.0564" fromY="1361.35034" />Nie przekonujesz. Vily kontynuuja swoje dziwne zachowanie.</nodes>
     <nodes xsi:type="NodeAdventure" ID="33" positionX="2306" positionY="732" width="350" height="725">
       <logic>
@@ -4995,7 +4996,7 @@ Vily odlatuja, ale zostawiaja cie z prezentem, a elfy sa wdzieczne za twoja pomo
         </ModifierBlock>
       </logic>
       <outputs name="Wyjdz." ownerID="51" targetID="36" group="G1" fromX="2761" fromY="980" />Vily zatrzymuja sie i patrza na ciebie, zszokowani wlasnym zachowaniem: 
-'Zaklecie, paskudne zaklecie zabralo nas, kazalo nam to zabic tutaj ... coz, w naszym oszolomieniu myslelismy, ze to diabel ciemnosci. Twoje slowa przywrocily nas i mozemy teraz walczyc z klatwa. Dziekuje Ci!'
+'Zaklecie, paskudne zaklecie zabralo nas, kazalo nam to zabic tutaj ... coz, w naszym oszolomieniu myslelismy, ze diabel ciemnosci. Twoje slowa przywrocily nas i mozemy teraz walczyc z klatwa. Dziekuje Ci!'
 
 Vily odlatuja, ale zostawiaja cie z prezentem, a elfy sa wdzieczne za twoja pomoc. 
 </nodes>
@@ -5073,7 +5074,7 @@ Vily odlatuja, ale zostawiaja cie z prezentem, a elfy sa wdzieczne za twoja pomo
       <outputs name="Uzyj jedzenia, aby zwabic te zwierzeta z terytorium i miec nadzieje, ze nie wroca." ownerID="2" targetID="15" fromX="392" fromY="-905" />
       <outputs name="[Ork] Czas na zapasy!" ownerID="2" targetID="7" group="G2" fromX="392" fromY="-985" />
       <outputs name="[Ork] Czas na zapasy!" ownerID="2" targetID="42" group="G2" fromX="392" fromY="-1065" />
-      <outputs name="Wroc pozniej." ownerID="2" targetID="31" fromX="392" fromY="-1145" />Podchodzisz do obszaru, na ktorym mowi sie, ze paczka niedzwiedzi, o ktora cie poproszono, wedruje.</nodes>
+      <outputs name="Wroc pozniej." ownerID="2" targetID="31" fromX="392" fromY="-1145" />Podchodzisz do obszaru, na ktorym mowi sie, ze paczka niedzwiedzi, z ktora zostales poproszony, porusza sie.</nodes>
     <nodes xsi:type="NodeAdventure" ID="3" positionX="-368.302673" positionY="1761.61182" width="350" height="1046">
       <logic>
         <FilterBlock>
@@ -5082,7 +5083,7 @@ Vily odlatuja, ale zostawiaja cie z prezentem, a elfy sa wdzieczne za twoja pomo
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="[Animal kin] Sprobuj ocenic, czy ktores z niedzwiedzi nadal moze byc wspomagane, nawet jesli oznacza to narazenie wlasnego zdrowia." ownerID="3" targetID="5" group="G2" fromX="-42" fromY="1270" />
+      <outputs name="[Zwierzecy krewny] Sprobuj ocenic, czy ktores z niedzwiedzi nadal moze byc wspomagane, nawet jesli oznacza to narazenie wlasnego zdrowia." ownerID="3" targetID="5" group="G2" fromX="-42" fromY="1270" />
       <outputs name="[Natura lub harmonia] Szukaj boskiego wgladu, aby dowiedziec sie, czy ktoregos z niedzwiedzi nadal mozna pomoc, nawet jesli oznacza to narazenie wlasnego zdrowia." ownerID="3" targetID="52" group="G2" fromX="-42" fromY="1190" />
       <outputs name="[Hunter] Sledz niedzwiedzie." ownerID="3" targetID="4" group="G1" fromX="-42" fromY="1110" />
       <outputs name="[Lowca] Ustaw pulapki i szybko zabij wsciekle niedzwiedzie. Jest to najbezpieczniejszy sposob na powstrzymanie rozprzestrzeniania sie choroby." ownerID="3" targetID="30" group="G1" fromX="-42" fromY="1029" />
@@ -5144,7 +5145,7 @@ Vily odlatuja, ale zostawiaja cie z prezentem, a elfy sa wdzieczne za twoja pomo
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="7" targetID="40" fromX="399" fromY="2530" />Walczysz z niedzwiedziem alfa i lamiesz go golymi rekami. Inni podporzadkowuja sie twojej dominacji i uciekaja. Zdajesz sobie sprawe, ze pozniej byli wsciekli, ale na szczescie nie byles zarazony. 
+      <outputs name="Wyjdz." ownerID="7" targetID="40" fromX="399" fromY="2530" />Walczysz z niedzwiedziem alfa i lamiesz go golymi rekami. Inni podporzadkowuja sie twojej dominacji i uciekaja. Zdajesz sobie sprawe, ze pozniej byli wsciekli, ale na szczescie nie zostales zainfekowany. 
 
 Elfy ciesza sie, ze oczysciles jaskinie, ale mniej pod wrazeniem twojej brutalnej sily i faktu, ze wscieklizna bedzie sie teraz rozprzestrzeniac. 
 </nodes>
@@ -5373,7 +5374,7 @@ Nie sa pod wrazeniem twojej pomocy.'
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="50" targetID="36" group="G1" fromX="806" fromY="-422" />Niektore niedzwiedzie sa wsciekle i nieosiagalne, ale niektorzy sluchaja twojego wezwania. Nie tylko zgadzaja sie na odejscie, ale zabijaja swoich wscieklych braci. 
+      <outputs name="Wyjdz." ownerID="50" targetID="36" group="G1" fromX="806" fromY="-422" />Niektore niedzwiedzie sa wsciekle i nieosiagalne, ale niektorzy sluchaja twojego powolania. Nie tylko zgadzaja sie na odejscie, ale zabijaja swoich wscieklych braci. 
 
 W legowisku znajdziesz martwych dzikow [R34], ale takze kilka, ktore moga jeszcze zyc. Elfy sa zadowolone z twojej pracy. 
 </nodes>
@@ -5409,7 +5410,8 @@ W legowisku znajdziesz martwych dzikow [R34], ale takze kilka, ktore moga jeszcz
       <outputs name="Tak, zrob to." ownerID="53" targetID="9" fromX="1437" fromY="-1183" />
       <outputs name="[Lowca] Ustaw pulapki i szybko zabij wsciekle niedzwiedzie. Jest to najbezpieczniejszy sposob na powstrzymanie rozprzestrzeniania sie choroby." ownerID="53" targetID="30" fromX="1437" fromY="-1263" />
       <outputs name="Zabij niedzwiedzie. To najbezpieczniejszy sposob na zatrzymanie choroby." ownerID="53" targetID="24" fromX="1437" fromY="-1343" />
-      <outputs name="Zglos sie do elfow. Wydaje sie to wiekszym problemem dla nich." ownerID="53" targetID="54" fromX="1437" fromY="-1423" />Obserwujesz niedzwiedzie i widzisz, ze niektore juz umieraja z powodu wscieklizny. To wydaje sie byc agresywnym napieciem. Odkrywasz rowniez, ze wejscie do jaskini, w ktorym sie znajduja, jest niestabilne, wiec mozesz ich uwiezic, choc bedzie to powolna smierc.</nodes>
+      <outputs name="Zglos sie do elfow. Wydaje sie to wiekszym problemem dla nich." ownerID="53" targetID="54" fromX="1437" fromY="-1423" />Obserwujesz niedzwiedzie i widzisz, ze niektore juz umieraja z powodu wscieklizny. To wydaje sie byc agresywnym napieciem. Odkrywasz rowniez, ze wejscie do jaskini, w ktorym sie znajduja, jest niestabilne, wiec mozesz ich uwiezic, choc bedzie to powolna smierc. 
+</nodes>
     <nodes xsi:type="NodeAdventure" ID="54" positionX="1316" positionY="-1683" width="350" height="725">
       <logic>
         <ModifierBlock>
@@ -5424,7 +5426,7 @@ W legowisku znajdziesz martwych dzikow [R34], ale takze kilka, ktore moga jeszcz
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="54" targetID="36" fromX="1641" fromY="-2174" />Elfy nie sa zadowolone, ze przekazujesz prace, ale sa pod wrazeniem, ze nie uciekles sie do brutalnej sily. Po tym jak uda im sie uratowac niektore niedzwiedzie, dziekuje ci, ze zwrociliscie na nie uwage i nagrodzili.</nodes>
+      <outputs name="Wyjdz." ownerID="54" targetID="36" fromX="1641" fromY="-2174" />Elfy nie sa zadowolone, ze przekazujesz prace, ale sa pod wrazeniem, ze nie uciekles sie do brutalnej sily. Po tym, jak uda im sie uratowac niektore niedzwiedzie, dziekuje ci, ze zwrociliscie na nie uwage i nagrodzili.</nodes>
     <nodes xsi:type="NodeDealDamage" ID="55" positionX="1010.5791" positionY="1787.3313" width="460" height="459" challengeTypeDamage="TypePhysical" minDamage="10" maxDamage="30" useCountInPercent="true" targetGroup="ppl">
       <logic>
         <ModifierBlock>
@@ -5474,7 +5476,7 @@ W legowisku znajdziesz martwych dzikow [R34], ale takze kilka, ktore moga jeszcz
       <outputs name="Atak!" ownerID="2" targetID="3" fromX="747" fromY="-335" />
       <outputs name="[Madrosc i lowca] Uloz kilka pulapek ognia i spal te niezyjace istoty do zuzli." ownerID="2" targetID="4" fromX="747" fromY="-415" />
       <outputs name="[Magiczny uzytkownik] Wiesz, jak sobie poradzic z niezyjaca plaga. Przygotuj rytual." ownerID="2" targetID="7" fromX="747" fromY="-495" />
-      <outputs name="[Tylko unliving] Nie musisz zabijac. Powiedz swoim niezyjacym braciom, aby porzucili te lasy." ownerID="2" targetID="8" fromX="747" fromY="-575" />
+      <outputs name="[Unliving only] Nie trzeba zabijac. Powiedz swoim niezyjacym braciom, aby porzucili te lasy." ownerID="2" targetID="8" fromX="747" fromY="-575" />
       <outputs name="[Natura] Twoim smutnym obowiazkiem jest zniszczenie takich skaz. Atak!" ownerID="2" targetID="66" fromX="747" fromY="-655" />
       <outputs name="Zbadaj to gniazdo szczurow." ownerID="2" targetID="52" fromX="747" fromY="-736" />
       <outputs name="[Szkielet] Idz sam i przekonaj swoich krewnych, by odeszli." ownerID="2" targetID="10" group="G1" fromX="747" fromY="-816" />
@@ -5524,7 +5526,7 @@ W legowisku znajdziesz martwych dzikow [R34], ale takze kilka, ktore moga jeszcz
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Zabij tych, ktorzy pozostali po starym stylu. Atak!" ownerID="7" targetID="44" fromX="1294" fromY="-1158" />
+      <outputs name="Zabij tych, ktorzy pozostawili staromodny sposob. Atak!" ownerID="7" targetID="44" fromX="1294" fromY="-1158" />
       <outputs name="Zniszcz zrodlo." ownerID="7" targetID="45" fromX="1294" fromY="-1239" />
       <outputs name="To wyzwanie jest zbyt wielkie. Wroc innym razem." ownerID="7" targetID="5" fromX="1294" fromY="-1319" />Przygotowujesz rytual, ktory oslabia szkielety i wiaze je w granicach. Sprawi to, ze zabijanie ich bedzie znacznie latwiejsze, albo mozesz stawic im czola w krolestwie duchow i zniszczyc czarna magie, ktora je animuje. 
 </nodes>
@@ -5653,7 +5655,7 @@ Elfy dziekuje za pozbycie sie plagi i pozostawienie nagrody.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wez konia i wyjdz." ownerID="20" targetID="21" fromX="4545" fromY="-784" />Przynajmniej jeden z koni jest na tyle dobry, zeby z toba przyjechac.</nodes>
+      <outputs name="Wez konia i wyjdz." ownerID="20" targetID="21" fromX="4545" fromY="-784" />Przynajmniej jeden z koni jest na tyle dobry, ze moze przyjechac z toba.</nodes>
     <nodes xsi:type="NodeSpawnOnMap" ID="21" positionX="4155.85449" positionY="-1061.1748" width="480" height="503" radius="0" destroyOwner="true" linkedEventUniqueID="0">
       <outputs ownerID="21" targetID="22" fromX="4604" fromY="-1493" />
     </nodes>
@@ -5675,7 +5677,7 @@ Elfy dziekuje za pozbycie sie plagi i pozostawienie nagrody.</nodes>
         </ModifierBlock>
       </logic>
       <outputs name="Wez upior." ownerID="25" targetID="60" fromX="-1963" fromY="-1246" />
-      <outputs name="Zabij widmo. To wyraznie narzedzie tego zla!" ownerID="25" targetID="34" fromX="-1963" fromY="-1326" />Odkrywasz pozostalosci rytualu i odczuwasz niespokojna energie w powietrzu, powodujac, ze jestes chory. 
+      <outputs name="Zabij widmo. To wyraznie narzedzie tego zla!" ownerID="25" targetID="34" fromX="-1963" fromY="-1326" />Odkrywasz pozostalosci rytualu i odczuwasz niespokojna energie w powietrzu, czyniac cie chorym. 
 
 Znajdziesz tu takze widmo, prawdopodobnie produkt wszelkich ciemnych sztuk, ktore zostaly tu wykonane. Wydaje sie, ze chce zostac z toba.</nodes>
     <nodes xsi:type="NodeAdventure" ID="27" positionX="-1090" positionY="84" width="350" height="725">
@@ -5692,7 +5694,7 @@ Znajdziesz tu takze widmo, prawdopodobnie produkt wszelkich ciemnych sztuk, ktor
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Wyszukaj miejsce." ownerID="27" targetID="25" fromX="-764" fromY="-407" />Ustawiasz pulapke, a dziwny taniec szkieletow prowadzi ich bezposrednio do tego. Leza zniszczone, a cialo starej kobiety lezy z nimi. 
+      <outputs name="Wyszukaj miejsce." ownerID="27" targetID="25" fromX="-764" fromY="-407" />Ustawiasz pulapke, a dziwny taniec szkieletow prowadzi ich wprost do tego. Leza zniszczone, a cialo starej kobiety lezy z nimi. 
 </nodes>
     <nodes xsi:type="NodeAdventure" ID="28" positionX="2564.47339" positionY="-378.023468" width="350" height="725">
       <outputs name="Wyjdz." ownerID="28" targetID="48" fromX="2890" fromY="-869" />Szkielety pokonuja twoje wysilki i roi sie od ciebie. Elfy musza przyjsc ci z pomoca i nie jestes pod wrazeniem twojej pomocy.'</nodes>
@@ -5747,7 +5749,7 @@ Znajdziesz tu takze widmo, prawdopodobnie produkt wszelkich ciemnych sztuk, ktor
       <outputs ownerID="38" targetID="53" fromX="1835" fromY="-2756" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="39" positionX="2051.287" positionY="-2936.04956" width="350" height="725">
-      <outputs name="Wyjdz." ownerID="39" targetID="69" fromX="2377" fromY="-3427" />Decyzja cie niepokoi, ale sluchasz swoich przyjaciol i zegnasz sie ze szkieletami. 
+      <outputs name="Wyjdz." ownerID="39" targetID="69" fromX="2377" fromY="-3427" />Jestes zrozpaczony decyzja, ale sluchasz swoich przyjaciol i zegnasz sie ze szkieletami. 
 
 Wyjezdzaja, ale niektorzy juz narzekaja, ze stary sposob jest lepszy i ze powinni znalezc jakies ludzkie mieso do jedzenia.</nodes>
     <nodes xsi:type="NodeChallenge" ID="44" positionX="2055" positionY="598" width="500" height="726" challengeType="TypePhysical" versusGroup="GROUP-SKELETON_MIX_5P_3M_3S" challengeScale="101" challengedList="ppl">
@@ -5848,7 +5850,7 @@ Elfy nie maja pewnosci, czy nienaturalna plaga nie zostanie uwolniona, ale honor
         </ModifierBlock>
       </logic>
       <outputs name="Zauwazasz, ze jeden z koni zyje i patrzy na ciebie. Podejdz do niego." ownerID="53" targetID="20" group="G1" fromX="1286" fromY="-2033" />
-      <outputs name="Wyjdz." ownerID="53" targetID="21" group="G1" fromX="1286" fromY="-2113" />Elfy nie maja pewnosci, czy nienaturalna plaga nie zostanie uwolniona, ale honoruja twoja umowe i pozostawiaja platnosc. 
+      <outputs name="Wyjdz." ownerID="53" targetID="21" group="G1" fromX="1286" fromY="-2113" />Elfy nie maja pewnosci, czy nienaturalna plaga nie zostanie uwolniona, ale honoruja twoja transakcje i pozostawiaja platnosc. 
 
 Znajdziesz tu takze resztki wozu konnego i martwych ludzi, ktorzy zostali zaatakowani przez szkielety.</nodes>
     <nodes xsi:type="NodeDealDamage" ID="54" positionX="1465.62891" positionY="-3139.79785" width="460" height="459" challengeTypeDamage="TypeMental" minDamage="50" maxDamage="70" useCountInPercent="true" targetGroup="skeletons">
@@ -6274,10 +6276,10 @@ Czesc utrzymujacej sie energii wzmacnia cie, a upior utworzony z tego dziwnego r
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wiesz, jak sobie radzic z lotrzykami - tez w tym zyciu sie bawiles. Porozmawiaj z nimi. " ownerID="2" targetID="3" fromX="763" fromY="-532" />
+      <outputs name="Wiesz, jak sobie radzic z lotrzykami - ty tez sie tym zajmowales. Porozmawiaj z nimi. " ownerID="2" targetID="3" fromX="763" fromY="-532" />
       <outputs name="[Orc Matriarch] Powiedz im, zeby wyszli, teraz!" ownerID="2" targetID="4" fromX="763" fromY="-612" />
-      <outputs name="[Intelekt i harmonia] Przekonaj bandytow, ze madrzej jest odejsc niz stawic czola tobie - a pozniej zmierzyc sie takze z elfami." ownerID="2" targetID="16" fromX="763" fromY="-693" />
-      <outputs name="Zaplac orkom za wyjscie." ownerID="2" targetID="15" fromX="763" fromY="-773" />
+      <outputs name="[Intelekt i harmonia] Przekonaj bandytow, ze madrzej jest odejsc niz stawic czola tobie - a pozniej takze stawic czola elfom." ownerID="2" targetID="16" fromX="763" fromY="-693" />
+      <outputs name="Zaplac orkom, aby wyszli." ownerID="2" targetID="15" fromX="763" fromY="-773" />
       <outputs name="Atak!" ownerID="2" targetID="24" fromX="763" fromY="-853" />
       <outputs name="Wroc pozniej." ownerID="2" targetID="31" fromX="763" fromY="-933" />Znajdziesz miejsce, w ktorym zostales wyslany, aby poradzic sobie z niektorymi orkowymi bandytami, ktorzy niszcza las i atakuja mala osade.</nodes>
     <nodes xsi:type="NodeAdventure" ID="3" positionX="472.686584" positionY="1107.54968" width="350" height="1046">
@@ -6300,7 +6302,7 @@ Czesc utrzymujacej sie energii wzmacnia cie, a upior utworzony z tego dziwnego r
       <outputs name="[Ork] Przekonaj ich, ze zawracanie sobie glowy mala osada elfow nie jest godnym wyzwaniem. Opowiedz im o innych miejscach, w ktorych natknales sie na honor ich wojownika." ownerID="3" targetID="7" group="G1" fromX="798" fromY="616" />
       <outputs name="[Ork] Przekonaj ich, ze zawracanie sobie glowy mala osada elfow nie jest godnym wyzwaniem. Opowiedz im o innych miejscach, w ktorych natknales sie na honor ich wojownika." ownerID="3" targetID="42" group="G1" fromX="798" fromY="536" />
       <outputs name="[Bandyta] Handluj z nimi. Przekonaj ich, ze nie jest prawdziwym wyzwaniem pozostac z elfami bratek." ownerID="3" targetID="5" group="G1" fromX="798" fromY="455" />
-      <outputs name="Bandyci sa za dobrami, wiec zaoferujcie im troche za odejscie." ownerID="3" targetID="45" fromX="798" fromY="375" />
+      <outputs name="Bandyci sa za dobrami, wiec zaoferujcie im troche do opuszczenia." ownerID="3" targetID="45" fromX="798" fromY="375" />
       <outputs name="Znasz ich taktyke, wiec walka bedzie latwiejsza. Atak." ownerID="3" targetID="30" fromX="798" fromY="295" />Podchodzisz do obozu bandytow i dostrzegasz kilku orkow. Wygladaja na szczuplych i zmeczonych, wiec moze byc miejsce na negocjacje, choc nigdy nie jest pewne, ze ci tak wypelnieni chaosem.</nodes>
     <nodes xsi:type="NodeAdventure" ID="4" positionX="973.52124" positionY="21.580246" width="350" height="725">
       <logic>
@@ -6318,7 +6320,7 @@ Czesc utrzymujacej sie energii wzmacnia cie, a upior utworzony z tego dziwnego r
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Obserwuj ich kazdy krok, kiedy ida." ownerID="4" targetID="12" fromX="1299" fromY="-469" />„Cholera, tak, ehm, jak mowisz, to jest wyraznie twoja darn. Czesc tobie, matko krwi!'</nodes>
+      <outputs name="Obserwuj ich kazdy krok, gdy ida." ownerID="4" targetID="12" fromX="1299" fromY="-469" />„Cholera, tak, ehm, jak mowisz, to jest wyraznie twoja darn. Czesc tobie, matko krwi!'</nodes>
     <nodes xsi:type="NodeChallenge" ID="5" positionX="1340.92554" positionY="2223.457" width="500" height="726" challengeType="TypeMental" versusGroup="GROUP-LOTS_ORCS_7P_6M_6S" challengeScale="101" challengedList="ppl">
       <logic>
         <FilterBlock>
@@ -6356,7 +6358,7 @@ Czesc utrzymujacej sie energii wzmacnia cie, a upior utworzony z tego dziwnego r
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="7" targetID="40" fromX="98" fromY="1179" />„Zgoda. Twoj honor jest silny. Tego dnia nie bedziemy go kwestionowac.'
+      <outputs name="Wyjdz." ownerID="7" targetID="40" fromX="98" fromY="1179" />„Uzgodnione. Twoj honor jest silny. Tego dnia nie bedziemy go kwestionowac.'
 
 Pozbyles sie problemu, tak jak zostales poproszony, a twoja przyjazn z pewnoscia wzrosnie. 
 </nodes>
@@ -6520,7 +6522,7 @@ W koncu zostali pobici przez elfy bez twojej pomocy, a twoja przyjazn ucierpiala
         </ModifierBlock>
       </logic>
       <outputs name="Wyjdz." ownerID="34" targetID="50" group="G1" fromX="2346" fromY="1979" />
-      <outputs name="Wyjdz." ownerID="34" targetID="36" group="G1" fromX="2346" fromY="1899" />„Uzgodnione. Twoj honor jest silny. Tego dnia nie bedziemy go kwestionowac. Wyjdziemy.'
+      <outputs name="Wyjdz." ownerID="34" targetID="36" group="G1" fromX="2346" fromY="1899" />„Zgoda. Twoj honor jest silny. Tego dnia nie bedziemy go kwestionowac. Wyjdziemy.'
 
 Ida dalej, a elfy sa pod wrazeniem twojego pokojowego rozwiazania. 
 </nodes>
@@ -6704,7 +6706,7 @@ Kto wie, jakie tajemnice moze posiadac?</nodes>
       <outputs name="Ostroznie przeszukaj miejsce. " ownerID="8" targetID="17" group="G1" fromX="2371" fromY="-189" />
       <outputs name="Ostroznie przeszukaj miejsce. " ownerID="8" targetID="14" group="G1" fromX="2371" fromY="-270" />Las okazuje sie milosierny i wspinasz sie bez przeszkod. 
 
-Stoisz w zwodniczo duzej, otwartej komnacie, ktorej sciany sa zrobione z dziwnego krysztalu, porosnietego winorosla i kwiatami, z resztkami starych mebli i sztuki - kruche i zapomniane, ale wciaz piekne.</nodes>
+Stoisz w zwodniczo duzej, otwartej komnacie, ktorej sciany sa zrobione z dziwnego krysztalu, teraz porosnietego winorosla i kwiatami, z resztkami starych mebli i sztuki - kruche i zapomniane, ale wciaz piekne.</nodes>
     <nodes xsi:type="NodeDealDamage" ID="9" positionX="2588" positionY="-865" width="460" height="459" challengeTypeDamage="TypePhysical" minDamage="10" maxDamage="30" useCountInPercent="true" targetGroup="ppl">
       <outputs ownerID="9" targetID="10" fromX="2974" fromY="-1151" />
     </nodes>
@@ -6723,7 +6725,7 @@ Stoisz w zwodniczo duzej, otwartej komnacie, ktorej sciany sa zrobione z dziwneg
         </ModifierBlock>
       </logic>
       <outputs name="Zbadaj." ownerID="14" targetID="16" fromX="3412" fromY="-860" />
-      <outputs name="Zbierz to, co juz masz i wyjdz." ownerID="14" targetID="64" fromX="3412" fromY="-940" />Wspinasz sie i znajdujesz szereg opuszczonych domkow na drzewie, ale wiekszosc z nich jest teraz niedostepna i zarosnieta. 
+      <outputs name="Zbierz to, co juz masz i wyjdz." ownerID="14" targetID="64" fromX="3412" fromY="-940" />Wspinasz sie i znajdujesz szereg opuszczonych domow na drzewie, ale wiekszosc z nich jest teraz niedostepna i zarosnieta. 
 
 Znajdziesz troche rozrzuconych ziol i kawalkow uzytecznego drewna, ale niewiele wiecej. Ale w poblizu slychac dziwny, niepokojacy dzwiek belkotu.</nodes>
     <nodes xsi:type="NodeAdventure" ID="16" positionX="4759.851" positionY="794.916565" width="350" height="1126" image="Event180">
@@ -6746,9 +6748,9 @@ Posrod tego wszystkiego widzisz samotnego elfa, kolysajacego sie i mamroczacego 
         </FilterBlock>
       </logic>
       <outputs name="Atak!" ownerID="17" targetID="19" fromX="2957" fromY="139" />
-      <outputs name="[Zwierzecy krewny] Zastrasza wrony." ownerID="17" targetID="62" group="G1" fromX="2957" fromY="58" />
-      <outputs name="[Zwierzecy krewny] Zastrasza wrony." ownerID="17" targetID="21" group="G1" fromX="2957" fromY="-21" />
-      <outputs name="Wyjdz." ownerID="17" targetID="63" fromX="2957" fromY="-101" />Przechodzisz przez komnate i odkrywasz wiele ukrytych wnek, korytarzy prowadzacych do dlugo zniszczonych sciezek i malego zaplecza. 
+      <outputs name="[Zwierze kinowe] Zastraszac wrony." ownerID="17" targetID="62" group="G1" fromX="2957" fromY="58" />
+      <outputs name="[Zwierze kinowe] Zastraszac wrony." ownerID="17" targetID="21" group="G1" fromX="2957" fromY="-21" />
+      <outputs name="Wyjdz." ownerID="17" targetID="63" fromX="2957" fromY="-101" />Przechodzisz przez komnate i odkrywasz wiele ukrytych wnek, korytarzy prowadzacych do dawno zniszczonych sciezek i malego zaplecza. 
 
 Wewnatrz widzisz resztki narzedzi, fiolek, ziol, a moze nawet ksiazek. 
 
@@ -6787,7 +6789,7 @@ Jest tez gniazdo wron chetnie obserwujace kazdy twoj ruch.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Zbierz lup i wyjdz." ownerID="22" targetID="69" fromX="4354" fromY="1561" />Gdy zniknely wrony, przeszukujesz pokoj w spokoju.</nodes>
+      <outputs name="Zbierz lup i wyjdz." ownerID="22" targetID="69" fromX="4354" fromY="1561" />Kiedy zniknely wrony, przeszukujesz pokoj w spokoju.</nodes>
     <nodes xsi:type="NodeAdventure" ID="23" positionX="3430.80078" positionY="1357.129" width="350" height="725">
       <outputs name="Wyjdz." ownerID="23" targetID="64" fromX="3756" fromY="865" />Jestes ciezko pobity i zmuszony do ucieczki.</nodes>
     <nodes xsi:type="NodeAdventure" ID="26" positionX="5667" positionY="1532" width="350" height="885">
@@ -6798,7 +6800,7 @@ Jest tez gniazdo wron chetnie obserwujace kazdy twoj ruch.</nodes>
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Zaoferuj troche swojego zdrowia duchowego, aby zlagodzic umysl. Moze z toba porozmawia." ownerID="26" targetID="47" fromX="5992" fromY="1040" />
+      <outputs name="Ofiaruj troche swojego zdrowia duchowego, aby zlagodzic umysl. Moze z toba porozmawia." ownerID="26" targetID="47" fromX="5992" fromY="1040" />
       <outputs name="Uderz go w twarz. Czasami pomaga z szalonym." ownerID="26" targetID="50" group="G1" fromX="5992" fromY="960" />
       <outputs name="Uderz go w twarz. Czasami pomaga z szalonym." ownerID="26" targetID="58" group="G1" fromX="5992" fromY="880" />Elf zatrzymuje sie na sekunde, odwraca glowe w twoja strone, slucha, a potem znow sie cofa, mamroczac: 
 
@@ -6809,9 +6811,9 @@ Elf jest wyraznie starozytny, byc moze z czasow ciemnosci, sadzac po wyblaklych 
       <outputs name="Uderz go w twarz. Czasami pomaga z szalonym." ownerID="27" targetID="50" group="G2" fromX="5625" fromY="30" />
       <outputs name="Zabij elfa. " ownerID="27" targetID="28" group="G1" fromX="5625" fromY="-49" />
       <outputs name="Zabij elfa. " ownerID="27" targetID="30" group="G1" fromX="5625" fromY="-130" />
-      <outputs name="Po prostu spladruj pokoj i zostaw tego dziwnego elfa." ownerID="27" targetID="66" fromX="5625" fromY="-210" />
+      <outputs name="Po prostu spladruj pokoj i opusc tego dziwnego elfa." ownerID="27" targetID="66" fromX="5625" fromY="-210" />
       <outputs name="Uderz go w twarz. Czasami pomaga z szalonym." ownerID="27" targetID="58" group="G2" fromX="5625" fromY="-290" />
-      <outputs name="[Ork] Zabij go szybko, zanim szalony sie zetrze." ownerID="27" targetID="55" fromX="5625" fromY="-370" />„Swiatlo, za duzo, za duzo, znowu sie nie powiodlo, nie udalo sie ... spalic ...'
+      <outputs name="[Ork] Zabij go szybko, zanim szalony sie zetrze." ownerID="27" targetID="55" fromX="5625" fromY="-370" />„Swiatlo, za duzo, za duzo, nie powiodlo sie, nie udalo sie ... spalic ...'
 
 Elf nie wydaje sie potwierdzac twojej obecnosci.</nodes>
     <nodes xsi:type="NodeAdventure" ID="28" positionX="6044.288" positionY="42.48124" width="350" height="725">
@@ -6859,11 +6861,11 @@ Ale gdy cialo rozpuszcza sie w pyl, robi to z gwaltownym wybuchem oslepiajacego 
       </logic>
       <outputs name="Zbierz kazdy lup, ktory znajdziesz i wyjdz." ownerID="30" targetID="68" fromX="5949" fromY="-1214" />Zabijasz elfa jednym precyzyjnym ciosem, jego oslabione cialo nie daje zadnego oporu. 
 
-Cialo zamienia sie w srebrny pyl i czujesz, ze twoja dusza jest wzmocniona tym aktem milosierdzia, czy to zamierzonym, czy przypadkowym. </nodes>
+Cialo zamienia sie w srebrny pyl i czujesz, ze twoja dusza jest wzmocniona przez ten akt milosierdzia, zamierzony lub przypadkowy. </nodes>
     <nodes xsi:type="NodeAdventure" ID="31" positionX="6685.921" positionY="1702.22034" width="350" height="1286">
       <outputs name="Wezwij nature i popros ten las, aby pozwolil swemu dziecku na wieczny sen, gdyz z czasem moze wyleczyc jego chore umysly." ownerID="31" targetID="53" group="G1" fromX="7011" fromY="1211" />
       <outputs name="Jego umysl jest wyraznie atakowany przez jakas mistyczna sile. Jest zbyt silny, by go zniszczyc, ale mozesz polaczyc sie duchowo z elfem i probowac go oslonic." ownerID="31" targetID="35" fromX="7011" fromY="1130" />
-      <outputs name="[Harmonia] To nie jest sposob na harmonie, aby zniszczyc zycie, a nawet dreczyc zycie w ten sposob. Wezwij swoja domene, aby probowac oslonic biedne stworzenie przed tym, co mu dolega. " ownerID="31" targetID="35" fromX="7011" fromY="1050" />
+      <outputs name="[Harmonia] To nie jest droga harmonii, by zniszczyc zycie, nawet udreczone zycie w ten sposob. Wezwij swoja domene, aby probowac oslonic biedne stworzenie przed tym, co mu dolega. " ownerID="31" targetID="35" fromX="7011" fromY="1050" />
       <outputs name="Wyrzuc ich z nedzy." ownerID="31" targetID="28" group="G2" fromX="7011" fromY="970" />
       <outputs name="Wyrzuc ich z nedzy." ownerID="31" targetID="30" group="G2" fromX="7011" fromY="890" />
       <outputs name="Wezwij nature i popros ten las, aby pozwolil swemu dziecku na wieczny sen, gdyz z czasem moze wyleczyc jego chore umysly." ownerID="31" targetID="32" group="G1" fromX="7011" fromY="810" />
@@ -7090,7 +7092,7 @@ Ale gdy cialo rozpuszcza sie w pyl, robi to z gwaltownym wybuchem oslepiajacego 
     <nodes xsi:type="NodeAdventure" ID="58" positionX="6646.43066" positionY="416.206757" width="350" height="1286">
       <outputs name="Wezwij nature i popros ten las, aby pozwolil swemu dziecku na wieczny sen, gdyz z czasem moze wyleczyc jego chore umysly." ownerID="58" targetID="53" group="G1" fromX="6972" fromY="-74" />
       <outputs name="Jego umysl jest wyraznie atakowany przez jakas mistyczna sile. Jest zbyt silny, by go zniszczyc, ale mozesz polaczyc sie duchowo z elfem i probowac go oslonic." ownerID="58" targetID="35" fromX="6972" fromY="-155" />
-      <outputs name="Nie jest sposobem na harmonie, aby zniszczyc zycie, nawet zycie, ktore jest tak dreczone. Wezwij swoja domene, aby probowac oslonic biedne stworzenie przed tym, co mu dolega. " ownerID="58" targetID="35" fromX="6972" fromY="-235" />
+      <outputs name="To nie jest droga harmonii, aby zniszczyc zycie, nawet zycie, ktore jest tak dreczone. Wezwij swoja domene, aby probowac oslonic biedne stworzenie przed tym, co mu dolega. " ownerID="58" targetID="35" fromX="6972" fromY="-235" />
       <outputs name="Wyrzuc ich z nedzy." ownerID="58" targetID="28" group="G2" fromX="6972" fromY="-315" />
       <outputs name="Wyrzuc ich z nedzy." ownerID="58" targetID="30" group="G2" fromX="6972" fromY="-395" />
       <outputs name="Wezwij nature i popros ten las, aby pozwolil swemu dziecku na wieczny sen, gdyz z czasem moze wyleczyc jego chore umysly." ownerID="58" targetID="32" group="G1" fromX="6972" fromY="-475" />
@@ -7178,7 +7180,7 @@ Nagle widzisz, jak skreca sie z bolu, a jego oczy swieca slabym swiatlem. Kolysa
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Zbierz lup i wyjdz." ownerID="62" targetID="69" fromX="3997" fromY="76" />Gdy zniknely wrony, przeszukujesz pokoj w spokoju.</nodes>
+      <outputs name="Zbierz lup i wyjdz." ownerID="62" targetID="69" fromX="3997" fromY="76" />Kiedy zniknely wrony, przeszukujesz pokoj w spokoju.</nodes>
     <nodes xsi:type="NodeSpawnOnMap" ID="63" positionX="320" positionY="-908" width="480" height="503" radius="0" destroyOwner="true" linkedEventUniqueID="0">
       <outputs ownerID="63" targetID="3" fromX="768" fromY="-1340" />
     </nodes>
@@ -7210,7 +7212,7 @@ Nagle widzisz, jak skreca sie z bolu, a jego oczy swieca slabym swiatlem. Kolysa
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Zaoferuj troche swojego zdrowia duchowego, aby zlagodzic umysl. Moze z toba porozmawia." ownerID="70" targetID="47" fromX="5588" fromY="948" />
+      <outputs name="Ofiaruj troche swojego zdrowia duchowego, aby zlagodzic umysl. Moze z toba porozmawia." ownerID="70" targetID="47" fromX="5588" fromY="948" />
       <outputs name="Uderz go w twarz. Czasami pomaga z szalonym." ownerID="70" targetID="50" group="G1" fromX="5591" fromY="868" />
       <outputs name="Uderz go w twarz. Czasami pomaga z szalonym." ownerID="70" targetID="58" group="G1" fromX="5591" fromY="788" />Elf zatrzymuje sie na sekunde, odwraca glowe w twoja strone, slucha, a potem znow sie cofa, mamroczac: 
 
@@ -7594,7 +7596,7 @@ Choroba duchowa cie spotka.
           </LogicFilter>
         </FilterBlock>
       </logic>
-      <outputs name="[Lesny demon] Zadaja, zeby odlozyli te luki, bo jestes lesnym stworzeniem, a wiec tym lepiej!" ownerID="2" targetID="26" fromX="704" fromY="-348" />
+      <outputs name="[Demon Lasu] Zadaja, zeby odlozyli te luki, bo jestes lesnym stworzeniem, a wiec tym lepiej!" ownerID="2" targetID="26" fromX="704" fromY="-348" />
       <outputs name="[Elf] Mow w jezyku elfow, aby uspokoic te sytuacje." ownerID="2" targetID="4" fromX="704" fromY="-428" />
       <outputs name="[Ork] Warknij na nich obelgami i powiedz, ze wolisz nie skazywac dzis elfa." ownerID="2" targetID="29" fromX="704" fromY="-508" />
       <outputs name="Sprobuj z nimi porozmawiac. Zapytaj, dlaczego celuja w ciebie luki." ownerID="2" targetID="3" fromX="704" fromY="-588" />
@@ -7640,7 +7642,7 @@ Choroba duchowa cie spotka.
       </logic>
       <outputs name="Pij ze wiosny. " ownerID="5" targetID="27" group="G1" fromX="1902" fromY="2010" />
       <outputs name="Pij ze wiosny. " ownerID="5" targetID="28" group="G1" fromX="1902" fromY="1929" />
-      <outputs name="Pij ze wiosny. " ownerID="5" targetID="9" group="G1" fromX="1902" fromY="1849" />„Dziewa, lowczyni, tak, chociaz moze byc mloda, jest z naszego gatunku. Widzimy teraz, ze jestes godny, by przetestowac swoj umysl i dusze na wiosne. 
+      <outputs name="Pij ze wiosny. " ownerID="5" targetID="9" group="G1" fromX="1902" fromY="1849" />„Dziewa, lowczyni, tak, chociaz moze byc mloda, jest naszym rodzajem. Widzimy teraz, ze jestes godny, by przetestowac swoj umysl i dusze na wiosne. 
 
 Pamietaj, wiosna bierze cie, zanim sie odda. Idz, a niech ona z lasu prowadzi twoja sciezke.'</nodes>
     <nodes xsi:type="NodeChallenge" ID="6" positionX="1848.895" positionY="304.813171" width="500" height="726" challengeType="TypeMental" versusGroup="GROUP-ELVES_5P_5M_4S" challengeScale="101" challengedList="ppl">
@@ -7707,7 +7709,7 @@ Pamietaj, wiosna bierze cie, zanim sie odda. Idz, a niech ona z lasu prowadzi tw
 
 Blogoslawienstwa wiosny moga byc liczne lub zadne, ale czujesz sie wspaniale, probujac tego. 
 
-Elfy przyznaja ci rowniez pozwolenie na przeszukiwanie ruin w poszukiwaniu uzytecznych zasobow - oczywiscie, niczego nie niszczac. </nodes>
+Elfy przyznaja ci rowniez pozwolenie na przeszukiwanie ruin w poszukiwaniu uzytecznych zasobow - oczywiscie, niczego nie uszkadzajac. </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="10" positionX="4419.40771" positionY="1047.98474" width="350" height="360.8" allPlayersXP="3" allPlayersRP="1" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventure" ID="11" positionX="2416.465" positionY="52.4650955" width="350" height="805">
       <outputs name="Zbierz, co mozesz tu znalezc i odejdz." ownerID="11" targetID="7" group="G1" fromX="2742" fromY="-438" />
@@ -7751,7 +7753,7 @@ Znikaja w lesie, ale wiesz, ze wciaz jestes obserwowany.</nodes>
       <outputs name="Zbierz, co mozesz znalezc i odejsc." ownerID="18" targetID="43" fromX="1253" fromY="-2177" />
       <outputs name="I tak pij ze zrodla. Nastepnie zbierz jakikolwiek lup i wyjdz." ownerID="18" targetID="40" group="G1" fromX="1253" fromY="-2257" />
       <outputs name="I tak pij ze zrodla. Nastepnie zbierz jakikolwiek lup i wyjdz." ownerID="18" targetID="36" group="G1" fromX="1253" fromY="-2338" />
-      <outputs name="I tak pij ze zrodla. Nastepnie zbierz jakikolwiek lup i wyjdz." ownerID="18" targetID="38" group="G1" fromX="1253" fromY="-2418" />Zabijasz elfich straznikow i mozesz je spladrowac. 
+      <outputs name="I tak pij ze zrodla. Nastepnie zbierz jakikolwiek lup i wyjdz." ownerID="18" targetID="38" group="G1" fromX="1253" fromY="-2418" />Zabijasz elfich straznikow i mozesz zrabowac te ruiny. 
 
 Jednak gdy zblizasz sie do miejsca, ktore strzega, malej wiosny, jej wody staja sie czarne.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="19" positionX="3085" positionY="-1529" width="350" height="530" allPlayersXP="6" allPlayersRP="2" linkedEventUniqueID="0">
@@ -7793,7 +7795,7 @@ Jednak gdy zblizasz sie do miejsca, ktore strzega, malej wiosny, jej wody staja 
       <outputs name="Zapewnij, ze podazasz sciezka Dievanny iz pewnoscia nawet oni szanuja ja jako wlasna." ownerID="24" targetID="5" fromX="1156" fromY="727" />
       <outputs name="Popros o pozwolenie na honor bycia testowanym." ownerID="24" targetID="25" group="G1" fromX="1156" fromY="647" />
       <outputs name="[Wood folk] Popros o pozwolenie na honor bycia testowanym." ownerID="24" targetID="15" group="G1" fromX="1156" fromY="567" />
-      <outputs name="Domagaj sie, abys mogl zostac przetestowany. " ownerID="24" targetID="3" fromX="1156" fromY="486" />„Jestesmy lesnymi krewnymi, a to pozostaje naszym domem, przynajmniej wtedy, gdy strzezemy tutaj wody zycia - swietego miejsca uzdrawiania. 
+      <outputs name="Domagaj sie, abys mogl zostac przetestowany. " ownerID="24" targetID="3" fromX="1156" fromY="486" />„Jestesmy lesnymi krewnymi, a to pozostaje naszym domem, przynajmniej wtedy, gdy strzezemy tutaj wody zycia - swietego miejsca leczenia. 
 
 Jak dobrze wiecie, tylko godni moga zblizyc sie do wiosny, poniewaz niesie wielkie niebezpieczenstwo, jak rowniez obietnice zycia.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="25" positionX="780.8842" positionY="228.945023" width="350" height="885">
@@ -7824,7 +7826,7 @@ Nie maja szacunku dla natury, tylko stala potrzebe zmiany, ruchu, przemocy. Nie,
         </FilterBlock>
       </logic>
       <outputs name="Ignoruj lekcewazenie i zapytaj, dlaczego wciaz tu mieszkaja." ownerID="26" targetID="24" fromX="300" fromY="504" />
-      <outputs name="Nie bedziesz cierpial z powodu takich drzewek jak te. Atak!" ownerID="26" targetID="17" fromX="300" fromY="424" />Jest dluga pauza, podczas ktorej czujesz elfie ego walczace ze swoim poczuciem obowiazku. W koncu mowia: 
+      <outputs name="Nie bedziesz cierpial z powodu takich drzewek jak te. Atak!" ownerID="26" targetID="17" fromX="300" fromY="424" />Jest dluga przerwa, podczas ktorej czujesz elfie ego walczace ze swoim poczuciem obowiazku. W koncu mowia: 
 
 'Przeprosiny, duch lesny. Mieliscie nas zdezorientowanych, poniewaz kroczycie sciezka dzieciecych bogow, jakby byli waszymi mistrzami.'
 </nodes>
@@ -8105,7 +8107,7 @@ Nadal masz skrzynie.</nodes>
       <outputs name="[Natura] Potwierdz swoja wiernosc lasowi i popros las, aby sie uspokoil." ownerID="2" targetID="4" group="G1" fromX="549" fromY="38" />
       <outputs name="Sprobuj negocjowac z wyraznie rozgniewanym lasem." ownerID="2" targetID="8" fromX="549" fromY="-41" />
       <outputs name="Walcz!" ownerID="2" targetID="9" fromX="549" fromY="-122" />
-      <outputs name="[Lesne demony] Twoi krewni wygladaja na bardzo zlych. Zaoferuj im swoje zdrowie duchowe jako danine w zamian za wolny przejazd." ownerID="2" targetID="29" fromX="549" fromY="-202" />
+      <outputs name="[Lesne demony] Twoi krewni wygladaja na bardzo rozgniewanych. Zaoferuj im swoje zdrowie duchowe jako danine w zamian za wolny przejazd." ownerID="2" targetID="29" fromX="549" fromY="-202" />
       <outputs name="Uciekaj." ownerID="2" targetID="41" fromX="549" fromY="-282" />Wspinasz sie, by zbadac elfie ruiny, ale slyszysz niepokojace poruszenie w lesie. Niektore drzewa wydaja sie opadac na ciebie!</nodes>
     <nodes xsi:type="NodeChallenge" ID="4" positionX="835" positionY="289" width="500" height="726" challengeType="TypeMental" versusGroup="GROUP-DEMONS_F_3P_4M_4S" challengeScale="101" challengedList="ppl">
       <logic>
@@ -8135,7 +8137,7 @@ Nadal masz skrzynie.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Zakoncz eksploracje szybko i wyjdz." ownerID="5" targetID="38" fromX="1317" fromY="-1786" />Dajesz swojej duchowej esencji i lasowi spokoj, na razie ... 
+      <outputs name="Dokoncz eksploracje szybko i wyjdz." ownerID="5" targetID="38" fromX="1317" fromY="-1786" />Dajesz swojej duchowej esencji i lasowi spokoj, na razie ... 
 
 Mozesz swobodnie przeszukiwac ruiny.</nodes>
     <nodes xsi:type="NodeAdventure" ID="6" positionX="643.9422" positionY="2656.35522" width="350" height="725">
@@ -8227,7 +8229,7 @@ Mozesz swobodnie przeszukiwac ruiny.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Zakoncz eksploracje szybko i wyjdz." ownerID="16" targetID="38" fromX="892" fromY="-1797" />Chociaz wiekszosc starego miasta jest nie do uratowania, znajdziesz cos, co moze byc starym magazynem, a moze warsztat kowalski, w ktorym znajdziesz kilka dobrych zasobow.</nodes>
+      <outputs name="Dokoncz eksploracje szybko i wyjdz." ownerID="16" targetID="38" fromX="892" fromY="-1797" />Chociaz wiekszosc starego miasta jest nie do uratowania, znajdziesz cos, co moze byc starym magazynem, a moze warsztat kowalski, w ktorym znajdziesz kilka niezmienionych zasobow.</nodes>
     <nodes xsi:type="NodeAdventure" ID="19" positionX="122.441986" positionY="-1178.51538" width="350" height="725">
       <logic>
         <ModifierBlock>
@@ -8241,7 +8243,7 @@ Mozesz swobodnie przeszukiwac ruiny.</nodes>
       </logic>
       <outputs name="Kontynuuj przeszukiwanie ruin." ownerID="19" targetID="33" fromX="448" fromY="-1669" />Straznicy lasu leza martwi, wiec mozesz spokojnie spladrowac ruiny. </nodes>
     <nodes xsi:type="NodeAdventure" ID="21" positionX="-863.2759" positionY="-1778.387" width="350" height="725">
-      <outputs name="Zakoncz eksploracje szybko i wyjdz." ownerID="21" targetID="40" fromX="-537" fromY="-2269" />Chociaz wiekszosc starego miasta jest nie do uratowania, odkrywasz, co moglo byc pracownia rzemieslnicza. </nodes>
+      <outputs name="Dokoncz eksploracje szybko i wyjdz." ownerID="21" targetID="40" fromX="-537" fromY="-2269" />Chociaz wiekszosc starego miasta jest nie do uratowania, odkrywasz, co moglo byc pracownia rzemieslnicza. </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="22" positionX="166.02388" positionY="-1944.58154" width="350" height="530" allPlayersXP="5" allPlayersRP="2" linkedEventUniqueID="0">
       <logic>
         <FilterBlock>
@@ -8496,7 +8498,7 @@ Mozesz swobodnie przeszukiwac ruiny.</nodes>
       <outputs name="[Ork lub zamieszanie] Czujesz sie dziwnie oslabiony, stojac w obecnosci drzewa. Powiedz, ze przychodzisz w pokoju." ownerID="2" targetID="28" fromX="775" fromY="13" />
       <outputs name="Atakuj elfy i rabuj drzewo." ownerID="2" targetID="32" fromX="775" fromY="-67" />
       <outputs name="Powiedz, ze jestes tu tylko z ciekawosci." ownerID="2" targetID="56" fromX="775" fromY="-147" />
-      <outputs name="Wyjdz." ownerID="2" targetID="62" fromX="775" fromY="-227" />Podchodzisz blizej i slyszysz cichy szelest lisci. Patrzysz w gore i widzisz luki wycelowane w ciebie. 
+      <outputs name="Wyjdz." ownerID="2" targetID="62" fromX="775" fromY="-227" />Podchodzisz blizej i slyszysz cichy szelest lisci. Patrzysz w gore i widzisz luki skierowane na ciebie. 
 
 'Czego szukasz w tym swietym miejscu?'
 </nodes>
@@ -8659,7 +8661,7 @@ To najwyrazniej duch lesny zbladzony, a nie zagubiona dusza. Byc moze dlatego el
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="19" targetID="42" fromX="3994.41479" fromY="2998.744" />Duch lasu skreca sie w agonii z twojego rytualu i przemienia sie w widmo, ale teraz ci to pomoze. 
+      <outputs name="Wyjdz." ownerID="19" targetID="42" fromX="3994.41479" fromY="2998.744" />Duch lasu skreca sie w agonii z twojego rytualu i przemienia sie w upior, ale teraz bedzie ci sluzyc. 
 
 Jest zlowieszczy szelest lisci i czujesz, ze spada na ciebie klatwa, prawdopodobnie za zlamanie slowa.</nodes>
     <nodes xsi:type="NodeAdventure" ID="20" positionX="3204.501" positionY="3471.86182" width="350" height="681.449951">
@@ -9168,7 +9170,7 @@ Pozwole ci takze siegnac po te, ktore sa na gorze, poniewaz niosa wieksze blogos
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="13" positionX="2826.117" positionY="888.9533" width="350" height="761.649963">
       <outputs name="Przyjmij krysztal pamieci i powiedz, ze tego dnia nie staniesz przed wyzwaniem. Dziekuje mu i odejdz." ownerID="13" targetID="48" fromX="3151.86719" fromY="441.8833" />
-      <outputs name="Dziekuje mu za oferte i zmierzyc sie z wyzwaniem." ownerID="13" targetID="12" fromX="3151.86719" fromY="361.683258" />„Jestes elfem i mowisz ze mna wyraznie, a wiec moge ci zaoferowac dobrodziejstwo. Wybierz jeden z krysztalow pamieci i zabierz ze soba jego blogoslawienstwa. 
+      <outputs name="Dziekuje mu za oferte i zmierzyc sie z wyzwaniem." ownerID="13" targetID="12" fromX="3151.86719" fromY="361.683258" />„Jestes elfem i mowisz wyraznie ze mna, a wiec moge ci zaoferowac dobrodziejstwo. Wybierz jeden z krysztalow pamieci i zabierz ze soba jego blogoslawienstwa. 
 
 Pozwole ci takze siegnac po te, ktore sa na gorze, poniewaz niosa wieksze blogoslawienstwa, ale musisz stawic czola wyzwaniu, aby je wziac.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="14" positionX="1182.39966" positionY="916.0624" width="350" height="841">
@@ -9217,7 +9219,7 @@ Wieczny sen jest wtedy, gdy decydujemy sie zrzucic nasze materialne powloki i po
       <outputs name="Surrender" ownerID="19" targetID="42" fromX="1955" fromY="-1493" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="20" positionX="905.9325" positionY="-1557.60449" width="350" height="681.449951">
-      <outputs name="Broncie sie!" ownerID="20" targetID="21" fromX="1231.68262" fromY="-2004.67456" />Atakujesz upiorna postac bezskutecznie, a zamiast tego czujesz sie atakowany przez silna magie!</nodes>
+      <outputs name="Broncie sie!" ownerID="20" targetID="21" fromX="1231.68262" fromY="-2004.67456" />Bezskutecznie atakujesz upiorna postac, a zamiast tego natkniesz sie na silna magie!</nodes>
     <nodes xsi:type="NodeChallenge" ID="21" positionX="1514.876" positionY="-1660.06824" width="500" height="689.76" challengeType="TypeSpirit" versusGroup="GROUP-GHOST_3P_4M_5S" challengeScale="120" challengedList="ppl">
       <outputs name="Win" ownerID="21" targetID="38" fromX="1956.001" fromY="-2118.42822" />
       <outputs name="Lose" ownerID="21" targetID="42" fromX="1956.001" fromY="-2198.62817" />
@@ -10150,7 +10152,7 @@ Przyznam, ze wielu z nas chetnie do nich dolaczylo lub odmawia ich dzialania. W 
 
 A poniewaz jestescie spokrewnieni, powiem, ze to dziwne, jak rada dokladnie wiedziala, co sie stalo i jakie sa jej konsekwencje, prawie tak, jakby jeden z nich mogl dostarczyc konto. . .'</nodes>
     <nodes xsi:type="NodeAdventure" ID="6" positionX="1969" positionY="-465" width="350" height="725">
-      <outputs name="Dobrze, jak?" ownerID="6" targetID="8" fromX="2294" fromY="-956" />„To jest wstrzasajace i bedzie to robic przez dluzszy czas. Te rzeczy nie zdarzaja sie tylko przez zycie smiertelnika lub dwa. 
+      <outputs name="Dobrze, jak?" ownerID="6" targetID="8" fromX="2294" fromY="-956" />„To wstrzasajace i bedzie to robic przez dluzszy czas. Te rzeczy nie zdarzaja sie tylko przez zycie smiertelnika lub dwa. 
 
 Ale nie przyjechalem tutaj, by oferowac zniechecenie. Obawiam sie, ze ten konflikt moze nam zaszkodzic. Wiec wolalbym pomoc ci rozwiazac sprawe.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="7" positionX="941" positionY="-944" width="350" height="725">
@@ -10196,10 +10198,10 @@ Ale jak powiedzialem, ten konflikt spowodowal impas. Gdybyscie udowodnili, ze el
     <nodes xsi:type="NodeAdventure" ID="14" positionX="-1452" positionY="-373" width="350" height="725">
       <outputs name="Co!" ownerID="14" targetID="15" fromX="-1126" fromY="-864" />Nai-ysir robi dziwna mine, a nastepnie mowi tak, jakby dziecko nasladowalo doroslego: 
 
-- Dziekujemy ci za te pomoc, ktora dostarczyles, dziecko bogow. Ale nie jest naszym zwyczajem spieszyc sie z osadem, zwlaszcza dla naszych krewnych. Ail'yleth zmierzy sie z nami, ale okreslenie naszego sposobu dzialania zajmie troche czasu.'</nodes>
+„Dziekujemy ci za te pomoc, ktora dostarczyles, dziecko bogow. Ale nie jest naszym zwyczajem spieszyc sie z osadem, zwlaszcza dla naszych krewnych. Ail'yleth zmierzy sie z nami, ale okreslenie naszego sposobu dzialania zajmie troche czasu.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="15" positionX="-1909" positionY="-392" width="350" height="805">
-      <outputs name="Zgadzam sie i udajcie sie do rady, aby zajac sie sprawa." ownerID="15" targetID="17" fromX="-1583" fromY="-883" />
-      <outputs name="[Inteligencja] Powiedz jej, ze zamiast tego przygotujesz rzeczowy opis wszystkich dowodow, a tym samym apel do rady z powodow intelektualnych." ownerID="15" targetID="23" fromX="-1583" fromY="-963" />„Ale nie martw sie, zebralem juz sojusznikow i wygralem prawo do przemawiania ze mna do rady. Razem wierze, ze mozemy ich przekonac do - przepraszam za moj jezyk - przesuwac ich dna!'</nodes>
+      <outputs name="Zgadzam sie i udajcie sie do rady, aby zrobic sprawe." ownerID="15" targetID="17" fromX="-1583" fromY="-883" />
+      <outputs name="[Inteligencja] Powiedz jej, ze zamiast tego przygotujesz rzeczowy opis wszystkich dowodow, a tym samym apel do rady z powodow intelektualnych." ownerID="15" targetID="23" fromX="-1583" fromY="-963" />„Ale nie martw sie, zebralem juz sprzymierzencow i wygralem prawo do przemawiania ze mna do rady. Razem wierze, ze mozemy ich przekonac do - przepraszam za moj jezyk - przesuwac ich dna!'</nodes>
     <nodes xsi:type="NodeAdventure" ID="16" positionX="-3348" positionY="-66" width="350" height="805">
       <outputs name="Luk dzieki." ownerID="16" targetID="18" fromX="-3022" fromY="-557" />
       <outputs name="Powiedz im, ze nadszedl czas, zeby cos zrobili!" ownerID="16" targetID="18" fromX="-3022" fromY="-637" />Rada slucha, a ich mowca zwraca sie do ciebie: 
@@ -10300,8 +10302,8 @@ Rada odchodzi i Nai-ysir stoi obok ciebie, oszolomiony:
       <outputs name="Wyjdz." ownerID="2" targetID="3" fromX="703" fromY="-499" />Znajdziesz samotne drzewo, o ktorym ci powiedziano, i podazasz za nim do wielkiej jaskini przy wodospadzie. Powiedziano ci, ze elfi mag Ail'yleth zyje. </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="3" positionX="-207" positionY="-734" width="350" height="530" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventure" ID="4" positionX="504" positionY="894" width="350" height="805" image="Event260">
-      <outputs name="Wiec ona przyznaje, ze jest cos, za co moze zostac wzieta? Przynoszac o rozbiciu?" ownerID="4" targetID="5" fromX="829" fromY="402" />
-      <outputs name="Powiedz jej, ze nie jestes tutaj, aby grac w gry. Elfy moga miec czas wolny, ale twoi ludzie tego nie robia. Jestes tutaj po kilka odpowiedzi!" ownerID="4" targetID="5" fromX="829" fromY="322" />„Witaj. Przyznaje, ze jestem zaskoczony, ze moi krewni uznali, ze konieczne jest wyslanie tutaj ludzi z zewnatrz. Z drugiej strony, przypuszczam, ze to madry ruch. 
+      <outputs name="Wiec ona przyznaje, ze jest w czyms, z czego mozna ja wziac? Przynoszac o rozbiciu?" ownerID="4" targetID="5" fromX="829" fromY="402" />
+      <outputs name="Powiedz jej, ze nie jestes tutaj, aby grac w gry. Elfy moga miec czas wolny, ale twoi ludzie tego nie robia. Jestes tutaj po kilka odpowiedzi!" ownerID="4" targetID="5" fromX="829" fromY="322" />„Witamy. Przyznaje, ze jestem zaskoczony, ze moi krewni uznali, ze konieczne jest wyslanie tutaj ludzi z zewnatrz. Z drugiej strony, przypuszczam, ze to madry ruch. 
 
 Jesli ci sie nie uda, ich rece sa czyste, a jesli ci sie uda i przyprowadzisz, otrzymaja kredyt. Tak. Teraz to widze.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="5" positionX="1387" positionY="140" width="350" height="1126">
@@ -10338,11 +10340,11 @@ Wiec jak mozna sluchac swojej prosby, gdy tylko czesc z was jest prawdziwa?'</no
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Jaki jest jej cel? Czy chce, zeby swiatlowcy zabrali nas wszystkich i Roztrzaskanie, by zniszczyc ziemie?" ownerID="7" targetID="8" fromX="2291" fromY="-1085" />„Tak, to wstyd mowic nieprawde swoim krewnym, a przeciez jestes taki? Czy nie porzuciles naszej sprawy, kiedy zdecydowales sie pojsc w slady Velesa i mlodego upstartego Dievanna, ktory tak jak ty opuscil nasze szeregi, by dolaczyc do Them? 
+      <outputs name="Jaki jest jej cel? Czy chce, zeby swiatlowcy zabrali nas wszystkich i Roztrzaskanie, by zniszczyc ziemie?" ownerID="7" targetID="8" fromX="2291" fromY="-1085" />„Tak, to wstyd mowic nieprawde swoim krewnym, ale czy ty jestes taki? Czy nie porzuciles naszej sprawy, kiedy zdecydowales sie pojsc w slady Velesa i mlodego upstartego Dievanna, ktory tak jak ty opuscil nasze szeregi, by dolaczyc do Them? 
 
 To ty zlamales zaufanie, przyjacielu, dlatego nie mam obowiazku mowic szczerze w twojej obecnosci.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="8" positionX="2489" positionY="596" width="350" height="725">
-      <outputs name="Ale czy to nie kradnie naszej woli, zabierajac nasza indywidualnosc?" ownerID="8" targetID="10" fromX="2814" fromY="104" />„Rzeczy rzadko sa tak proste, jak sie wydaja. Tak, swiatlowody wydaja ci sie niebezpieczne, ale co wlasciwie robia? Lacza nas w symfonii swiatla. Jeden umysl i wiele, na zawsze polaczonych. Bez konfliktu, bez konfliktow. Prawie tak jak w pierwotnym swietle i zaufajcie mi, bylo wspaniale. Zrzucajac to fizyczne polaczenie, cialo i wszystko, co z nim pochodzi.'</nodes>
+      <outputs name="Ale czy to nie kradnie naszej woli, odsuwajac nasza indywidualnosc?" ownerID="8" targetID="10" fromX="2814" fromY="104" />„Rzeczy rzadko sa tak proste, jak sie wydaja. Tak, swiatlowody wydaja ci sie niebezpieczne, ale co wlasciwie robia? Lacza nas w symfonii swiatla. Jeden umysl i wiele, na zawsze polaczonych. Bez konfliktu, bez konfliktow. Prawie tak jak w pierwotnym swietle i zaufajcie mi, bylo wspaniale. Zrzucajac to fizyczne polaczenie, cialo i wszystko, co z nim pochodzi.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="9" positionX="1441" positionY="-1148" width="350" height="885">
       <logic>
         <FilterBlock>
@@ -10361,7 +10363,7 @@ To ty zlamales zaufanie, przyjacielu, dlatego nie mam obowiazku mowic szczerze w
       <outputs name="[Swiatlo lub harmonia] Tak, mozesz zobaczyc jej punkt. Jesli swiatlowody zabiora wszystko, swiat bedzie bezpieczniejszy i spokojniejszy. " ownerID="10" targetID="12" fromX="3296" fromY="-369" />
       <outputs name="[Madrosc] Wyglada na to, ze przez nia przemawia wiele goryczy. Czy to naprawde jest dazenie swiata do znalezienia spokoju, albo do pozbycia sie smiertelnych emocji, ludzkich zwiazkow na rzecz jednego umyslu, ktory nie odrozni jej bolu od drugiego, a tym samym sprawi, ze wszystko zniknie?" ownerID="10" targetID="11" fromX="3296" fromY="-449" />
       <outputs name="To jest kontrowersyjne, ale moze ma racje. Jaka jest jej sugestia? Jesli pozwolisz swiatu sie rozbic, jak to przyniesie pokoj?" ownerID="10" targetID="13" fromX="3296" fromY="-529" />
-      <outputs name="To jest szalenstwo - ani swiatlo, ani ciemnosc nie powinny rzadzic, gdyz ludzie Thea beda cierpiec. Bogowie zostali oskarzeni o zachowanie rownowagi, a ty podazasz ich sciezka. Czy zapomniala, ze elfy zlozyly takie sluby?" ownerID="10" targetID="40" fromX="3296" fromY="-609" />„Tak, tak! I doceniam, jak przerazajace moze wydawac sie stworzenie tak przyzwyczajone do swojej smiertelnej cewki, ale staraj sie poszerzac swoj umysl. 
+      <outputs name="To jest glupota - ani swiatlo, ani ciemnosc nie powinny rzadzic, poniewaz ludzie Thea beda cierpiec. Bogowie zostali oskarzeni o zachowanie rownowagi, a ty podazasz ich sciezka. Czy zapomniala, ze elfy zlozyly takie sluby?" ownerID="10" targetID="40" fromX="3296" fromY="-609" />„Tak, tak! I doceniam, jak przerazajace moze wydawac sie stworzenie tak przyzwyczajone do swojej smiertelnej cewki, ale staraj sie poszerzac swoj umysl. 
 
 Nie zabiera niczego - po prostu jednoczy wszystko w prawdziwej rownosci. Kiedy kiedykolwiek staralismy sie o zmiane? To, co nazywacie postepem, przynosi tylko spor, wojne, gniew, przemoc i nietolerancje. Dlaczego to masz? Dlaczego nie zadowolic sie jednym umyslem w zgodzie, pokoju?'</nodes>
     <nodes xsi:type="NodeChallenge" ID="11" positionX="3437" positionY="53" width="500" height="726" challengeType="TypeMental" versusGroup="GROUP-LOTS_ELVES_8P_8M_7S" challengeScale="101" challengedList="ppl">
@@ -10434,7 +10436,7 @@ Ale jesli ulatwimy pelne uwolnienie, powstrzymamy to Roztrzaskanie, o ktorym mow
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="[Goblin] Powiedz, ze twoj rodzaj od dawna byl oddany ludowi lesnemu, dawnym tradycjom i swiatu szaremu, ktory utrzymuje duchy tej ziemi. Czy naprawde bedzie tym, ktory zniszczy porzadek rzeczy? To brzmi jak cos, czym rozkoszowalaby sie istota zamieszania i ciemnosci, a nie taka, ktora sluzy porzadkowi." ownerID="16" targetID="41" fromX="2307" fromY="-1829" />
+      <outputs name="[Goblin] Powiedz, ze twoj rodzaj od dawna byl oddany ludowi lesnemu, dawnym tradycjom i swiatu szarosci, ktory utrzymuje duchy tej ziemi. Czy naprawde bedzie tym, ktory zniszczy porzadek rzeczy? To brzmi jak cos, czym rozkoszowalaby sie istota zamieszania i ciemnosci, a nie taka, ktora sluzy porzadkowi." ownerID="16" targetID="41" fromX="2307" fromY="-1829" />
       <outputs name="Jaki jest jej cel? Czy chce, zeby swiatlowcy zabrali nas wszystkich i Roztrzaskanie, by zniszczyc ziemie?" ownerID="16" targetID="8" fromX="2307" fromY="-1909" />
       <outputs name="Ona jest bez powodu. Zaatakuj ja i odciagnij do elfow!" ownerID="16" targetID="43" fromX="2307" fromY="-1989" />Ail'yleth marszczy brwi i wzdycha: 
 
@@ -10443,7 +10445,7 @@ Ale jesli ulatwimy pelne uwolnienie, powstrzymamy to Roztrzaskanie, o ktorym mow
       <outputs name="Jak to?" ownerID="17" targetID="18" fromX="1770" fromY="452" />„Uczeni poswieceni intelektowi spogladali na mistyke i starali sie pozbyc naszego swiata z wszelkiej magii. Gdyby nie moja interwencja, udalo im sie spalic drzewo, a nastepnie zniszczyc ziarno.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="18" positionX="1968" positionY="1232" width="350" height="805">
       <outputs name="To nie jest historia, ktora slyszales; kosmiczne drzewo zostalo uratowane przez mistrzow." ownerID="18" targetID="19" fromX="2293" fromY="740" />
-      <outputs name="Kiwnij glowa, ale zapytaj, jakie sa jej plany. Zeby ziemia sie rozpadla?" ownerID="18" targetID="8" fromX="2293" fromY="660" />„Zepsuli mistrzow waszych bogow i kazali im spalic to, co uwazali za ostatnie ziarno kosmicznego drzewa. 
+      <outputs name="Kiwnij glowa, ale zapytaj, jakie sa jej plany. Zeby ziemia sie rozpadla?" ownerID="18" targetID="8" fromX="2293" fromY="660" />„Zepsuli mistrzow waszych bogow i kazali im spalic to, co uwazali za ostatnie nasienie kosmicznego drzewa. 
 
 Ale udalo mi sie przekonac niektorych glupcow, by z czasem zniszczyli ziemskie serce. Swiatlo, ktore ucieklo, pomoglo odrodzic sie kosmicznemu drzewu. Ty i twoi bogowie jestescie mi winni.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="19" positionX="2455" positionY="1315" width="350" height="725">
@@ -10459,12 +10461,12 @@ Znalazlem zagubione dusze, nakarmilem ich tym, czego potrzebowali, by uslyszec, 
     <nodes xsi:type="NodeAdventure" ID="22" positionX="464" positionY="-1641" width="350" height="885">
       <outputs name="Jaka bogini?" ownerID="22" targetID="24" fromX="789" fromY="-2132" />
       <outputs name="Brzmi okropnie dumnie ze swojej pracy. To duzo zlosliwosci dla starszego rodu, ktory twierdzi, ze faworyzuje harmonie i pokoj." ownerID="22" targetID="23" fromX="789" fromY="-2212" />
-      <outputs name="Jaki jest jej cel? Czy chce, zeby swiatlowcy zabrali nas wszystkich i Roztrzaskanie, by zniszczyc ziemie?" ownerID="22" targetID="8" fromX="789" fromY="-2292" />„To nie ma znaczenia. Pokazalem im droge i podsycilem ich slabe pragnienia, a oni poszli bez pytania. Zniszczyli relikwie ludzi, elfow i goblinow. Zniszczyli slup rownowagi. Po co? Bogini, ktora im powiedzialem, byla w potrzebie i nagrodzilaby ich, gdy zostanie uwolniona, gdy przez caly czas byla wolna, wypelniajac swoje obowiazki, nieswiadoma glupcow.'</nodes>
+      <outputs name="Jaki jest jej cel? Czy chce, zeby swiatlowcy zabrali nas wszystkich i Roztrzaskanie, by zniszczyc ziemie?" ownerID="22" targetID="8" fromX="789" fromY="-2292" />„To nie ma znaczenia. Pokazalem im sciezke i podsycilem ich slabe pragnienia, a oni poszli bez pytania. Zniszczyli relikwie ludzi, elfow i goblinow. Zniszczyli slup rownowagi. Po co? Bogini, ktora im powiedzialem, byla w potrzebie i nagrodzilaby ich, gdy zostanie uwolniona, gdy przez caly czas byla wolna, wypelniajac swoje obowiazki, nieswiadoma glupcow.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="23" positionX="871" positionY="-1818" width="350" height="725">
       <outputs name="Jaki jest jej cel? Czy chce, zeby swiatlowcy zabrali nas wszystkich i Roztrzaskanie, by zniszczyc ziemie?" ownerID="23" targetID="8" fromX="1196" fromY="-2309" />„Byc moze. To smutna prawda kazdego mistrza, z ktora walczymy, przeciwko czemu walczymy, nie? Zbyt dlugo przebywalem w tym smiertelnym swiecie. Nie oklamuje sie i nie powiem, ze nie cenie moich zwyciestw.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="24" positionX="-76" positionY="-1616" width="350" height="805">
       <outputs name="Brzmi okropnie dumnie ze swojej pracy. To duzo zlosliwosci dla starszego rodu, ktory twierdzi, ze faworyzuje harmonie i pokoj." ownerID="24" targetID="23" fromX="249" fromY="-2107" />
-      <outputs name="Jaki jest jej cel? Czy chce, zeby swiatlowcy zabrali nas wszystkich i Roztrzaskanie, by zniszczyc ziemie?" ownerID="24" targetID="8" fromX="249" fromY="-2187" />„Nyia, ta, ktora teraz nosi obowiazki Velesa i Moreny, najnowszej damy smierci - byla wtedy jedna z wielu corek, poslancow. 
+      <outputs name="Jaki jest jej cel? Czy chce, zeby swiatlowcy zabrali nas wszystkich i Roztrzaskanie, by zniszczyc ziemie?" ownerID="24" targetID="8" fromX="249" fromY="-2187" />„Nyia, ktora nosi teraz obowiazki Velesa i Moreny, najnowszej damy smierci - byla wowczas jedna z wielu corek, poslancow. 
 
 Przypuszczam, ze moj podstep wymusil smierc starych bogow, a zatem Nyia podniosla sie do boskosci. W ten sposob nie oszukalem glupcow.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="25" positionX="4605" positionY="95" width="350" height="805">
@@ -10496,7 +10498,7 @@ Bo jesli wrocimy do moich krewnych i oni zdecyduja sie ci pomoc, poczuja sie win
     <nodes xsi:type="NodeAdventure" ID="30" positionX="7026" positionY="-657" width="350" height="725">
       <outputs name="Wyjdz i sprobuj znalezc inny sposob, moze uratuj tego krasnoluda?" ownerID="30" targetID="31" fromX="7351" fromY="-1148" />Ail'yleth cie pokonuje i ucieka: 
 
-'Byc moze zmieniles zdanie na temat tych, ktorzy piora swiatlo, ale twoje gwaltowne sposoby poglebiaja moje obawy o ten swiat. Zostawiam cie na twojej drodze, a ty zostawiasz mnie w mojej. Idz szukac swoich rozwiazan gdzie indziej i zostaw nas elfami.'
+'Byc moze zmieniles zdanie na temat tych, ktorzy padaja ofiara swiatla, ale twoje gwaltowne sposoby poglebiaja moje obawy o ten swiat. Zostawiam cie na twojej drodze, a ty zostawiasz mnie w mojej. Idz szukac swoich rozwiazan gdzie indziej i zostaw nas elfami.'
 
 Znika w jaskini.</nodes>
     <nodes xsi:type="NodeSpawnOnMap" ID="31" positionX="7465" positionY="-620" width="480" height="503" radius="0" destroyOwner="true" linkedEventUniqueID="0">
@@ -10589,9 +10591,9 @@ Znika w jaskini.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="45" targetID="37" fromX="3238" fromY="-3367" />Ail'yleth cie pokonuje, a jej sojusznicy z lekkim swiatlem spuszczaja czesc twojego ducha, zanim pozwoli ci uciec: 
+      <outputs name="Wyjdz." ownerID="45" targetID="37" fromX="3238" fromY="-3367" />Ail'yleth cie pokonuje, a jej sojusznicy ze swiatlowodem wysysaja czesc twojego ducha, zanim pozwoli ci uciec: 
 
-'Wyjdz, bo nie chce tu wiecej przemocy, ale bede sie bronic Jesli potrzebne.'
+'Odejdz, bo nie chce tu wiecej przemocy, ale bede sie bronic Jesli potrzebne.'
 </nodes>
     <nodes xsi:type="NodeDealDamage" ID="46" positionX="1927" positionY="-3099" width="460" height="459" challengeTypeDamage="TypeSpirit" minDamage="40" maxDamage="80" useCountInPercent="true" targetGroup="ppl">
       <outputs ownerID="46" targetID="45" fromX="2356" fromY="-3487" />
@@ -10701,7 +10703,7 @@ To jest teraz miasto cienia, a jego skorumpowani mieszkancy nie wydaja sie chetn
 - Dlugo czekalismy, az ktos przyjdzie ukarac nasza porazke. To ty?'</nodes>
     <nodes xsi:type="NodeAdventure" ID="5" positionX="989" positionY="-85" width="350" height="805">
       <outputs name="Atak!" ownerID="5" targetID="6" fromX="1314" fromY="-576" />
-      <outputs name="[Magiczny uzytkownik] Jesli sa duchami, mozesz ich pokonac w mistycznej bitwie. Atak!" ownerID="5" targetID="13" fromX="1314" fromY="-656" />„Klamiesz! Mozemy to wyczuc. Nie przynosisz tutaj prawdziwego serca. Przynosisz koniec tego, co powinno byc. Zawroc lub umrzyj!'</nodes>
+      <outputs name="[Magiczny uzytkownik] Jesli sa duchami, mozesz pokonac ich w mistycznej bitwie. Atak!" ownerID="5" targetID="13" fromX="1314" fromY="-656" />„Klamiesz! Mozemy to wyczuc. Nie przynosisz tutaj prawdziwego serca. Przynosisz koniec tego, co powinno byc. Zawroc lub umrzyj!'</nodes>
     <nodes xsi:type="NodeChallenge" ID="6" positionX="83" positionY="-1318" width="500" height="726" challengeType="TypePhysical" versusGroup="GROUP-Q_DWAR_GUARD_7P_7M_7S" challengeScale="101" challengedList="ppl">
       <outputs name="Win" ownerID="6" targetID="19" fromX="524" fromY="-1813" />
       <outputs name="Lose" ownerID="6" targetID="8" fromX="524" fromY="-1893" />
@@ -10890,7 +10892,7 @@ Intonuje zaklecie, a lekka bestia rosnie i rozprzestrzenia sie. Ona krzyczy do c
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Idz naprzod, by stawic czola straznikom." ownerID="3" targetID="4" fromX="1256" fromY="-621" />„Jestem tutaj. Ale napotkalismy niewielka komplikacje. Sciezka do komory swietlnej jest strzezona przez krasnoludzkie posagi. Wyglada na to, ze twoj Alchemik reaktywowal stara siec bezpieczenstwa, prawdopodobnie podejrzewajac zmiane twojego serca. 
+      <outputs name="Idz, aby stawic czola straznikom." ownerID="3" targetID="4" fromX="1256" fromY="-621" />„Jestem tutaj. Ale napotkalismy niewielka komplikacje. Sciezka do komory swietlnej jest strzezona przez krasnoludzkie posagi. Wyglada na to, ze twoj Alchemik reaktywowal stara siec bezpieczenstwa, prawdopodobnie podejrzewajac zmiane twojego serca. 
 
 Zabijmy wiec tych glupcow i uwolnijmy bestie.'
 
@@ -10975,17 +10977,17 @@ To jest teraz miasto cienia, a jego skorumpowani mieszkancy nie wydaja sie chetn
       <outputs name="Tak, daj psa do wytrenowania." ownerID="3" targetID="5" fromX="734" fromY="-497" />
       <outputs name="Tak, daj kotowi przeszkolenie." ownerID="3" targetID="4" fromX="734" fromY="-577" />
       <outputs name="Tak, daj wilka do szkolenia." ownerID="3" targetID="11" fromX="734" fromY="-657" />
-      <outputs name="Tak, daj koze do wytrenowania." ownerID="3" targetID="19" fromX="734" fromY="-737" />
+      <outputs name="Tak, daj koze, ktora ma zostac przeszkolona." ownerID="3" targetID="19" fromX="734" fromY="-737" />
       <outputs name="Tak, daj dzikowi przeszkolenie." ownerID="3" targetID="18" fromX="734" fromY="-817" />
       <outputs name="Tak, daj niedzwiedziowi przeszkolenie." ownerID="3" targetID="23" fromX="734" fromY="-898" />
       <outputs name="Nie, odejdz." ownerID="3" targetID="10" fromX="734" fromY="-978" />
-      <outputs name="Tak, daj konia do wytrenowania." ownerID="3" targetID="27" fromX="734" fromY="-1058" />
-      <outputs name="Tak, daj zelazna zabe do wytrenowania." ownerID="3" targetID="31" fromX="734" fromY="-1138" />
-      <outputs name="Trenuj swojego kutasa." ownerID="3" targetID="35" fromX="734" fromY="-1218" />„Towarzysza ci bestie, ktore ci sluza, i wyczuwam, ze robia to dobrowolnie, bo inaczej ich wyzwole. Ale ich potencjal nie jest w pelni odblokowany w twojej obecnosci. Za oplata pojda z nami sciezka druidow i tym samym stana sie bardziej.'
+      <outputs name="Tak, daj konowi szkolenie." ownerID="3" targetID="27" fromX="734" fromY="-1058" />
+      <outputs name="Tak, daj zelazna zabe, aby zostala przeszkolona." ownerID="3" targetID="31" fromX="734" fromY="-1138" />
+      <outputs name="Trenuj swojego kutasa." ownerID="3" targetID="35" fromX="734" fromY="-1218" />„Towarzysza ci bestie, ktore ci sluza, i wyczuwam, ze robia to chetnie, w przeciwnym razie wyzwolilbym je. Ale ich potencjal nie jest w pelni odblokowany w twojej obecnosci. Za oplata pojda z nami sciezka druidow i tym samym stana sie bardziej.'
 
 [Trening twojego zwierzaka podniesie do czwartej rangi i mozesz trenowac tylko jednego zwierzaka na raz]</nodes>
     <nodes xsi:type="NodeAdventure" ID="4" positionX="-15" positionY="-756" width="350" height="725">
-      <outputs name="Zapytaj o inne zwierzeta." ownerID="4" targetID="3" fromX="310" fromY="-1247" />„Niestety, kotow nalezy szanowac takimi, jakie sa.'</nodes>
+      <outputs name="Zapytaj o inne zwierzeta." ownerID="4" targetID="3" fromX="310" fromY="-1247" />„Niestety, kotow nalezy szanowac takimi, jakimi sa.'</nodes>
     <nodes xsi:type="NodeTrade" ID="5" positionX="826" positionY="179" width="460" height="479" traderProfile="TRADER-BANDIT_TWO" playerInventory="stuff" startingBalance="-70">
       <logic>
         <FilterBlock>
@@ -11223,10 +11225,10 @@ To jest teraz miasto cienia, a jego skorumpowani mieszkancy nie wydaja sie chetn
       <outputs name="Popros zbieracza, aby przylaczyl sie do ciebie." ownerID="2" targetID="7" fromX="723" fromY="-494" />
       <outputs name="Popros rzemieslnika, aby podazal twoja sciezka." ownerID="2" targetID="8" fromX="723" fromY="-574" />
       <outputs name="Zapytaj dziecko, czy naprawde chca z toba przyjsc?" ownerID="2" targetID="9" fromX="723" fromY="-654" />
-      <outputs name="Wiec musisz zaplacic, zeby ich zatrudnic?" ownerID="2" targetID="15" fromX="723" fromY="-734" />
-      <outputs name="Straznik wydaje sie zainteresowany, podejdz do nich." ownerID="2" targetID="10" fromX="723" fromY="-814" />
+      <outputs name="Wiec musisz zaplacic, aby ich zatrudnic?" ownerID="2" targetID="15" fromX="723" fromY="-734" />
+      <outputs name="Opiekun wydaje sie zainteresowany, podejdz do nich." ownerID="2" targetID="10" fromX="723" fromY="-814" />
       <outputs name="Wygnany druid czeka, popros ich, aby sie przylaczyli." ownerID="2" targetID="13" fromX="723" fromY="-895" />
-      <outputs name="Wyjdz." ownerID="2" targetID="12" fromX="723" fromY="-975" />„Chcesz, zeby nasz rodzaj przylaczyl sie do twojego? Dziwny pomysl, ale nie bez jego zalet. Jest malo prawdopodobne, aby ktorys ze starszych podjal te sciezke, ale mlodzieniec moze chciec zbadac takie pelne przygod zycie. Ci, ktorzy wyrazili zainteresowanie, czekaja na ciebie. 
+      <outputs name="Wyjdz." ownerID="2" targetID="12" fromX="723" fromY="-975" />„Chcesz, zeby nasz rodzaj przylaczyl sie do twojego? Dziwny pomysl, ale nie bez jego zalet. Jest malo prawdopodobne, aby ktokolwiek ze starszych podjal te droge, ale mlodzieniec moze chciec zbadac takie pelne przygod zycie. Ci, ktorzy wyrazili zainteresowanie, czekaja na ciebie. 
 
 Bedziesz oczywiscie zostawic zwyczajowy prezent w zamian za ich sluzbe.'
 
@@ -11346,7 +11348,7 @@ Bedziesz oczywiscie zostawic zwyczajowy prezent w zamian za ich sluzbe.'
       <outputs name="Popros zbieracza, aby przylaczyl sie do ciebie." ownerID="15" targetID="7" fromX="-300" fromY="-546" />
       <outputs name="Popros rzemieslnika, aby podazal twoja sciezka." ownerID="15" targetID="8" fromX="-300" fromY="-626" />
       <outputs name="Zapytaj dziecko, czy naprawde chca z toba przyjsc?" ownerID="15" targetID="9" fromX="-300" fromY="-706" />
-      <outputs name="Straznik wydaje sie zainteresowany, podejdz do nich." ownerID="15" targetID="10" fromX="-300" fromY="-786" />
+      <outputs name="Opiekun wydaje sie zainteresowany, podejdz do nich." ownerID="15" targetID="10" fromX="-300" fromY="-786" />
       <outputs name="Wygnany druid czeka, popros ich, aby sie przylaczyli." ownerID="15" targetID="13" fromX="-300" fromY="-866" />
       <outputs name="Wyjdz." ownerID="15" targetID="12" fromX="-300" fromY="-947" />„Prosze, zostaw dar pod drzewem lub odejdz cicho, dziekuje.'</nodes>
   </Adventure>

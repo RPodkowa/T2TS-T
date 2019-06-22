@@ -925,7 +925,7 @@ Niewolnicy staja sie podnieceni podnieceniami, gdy ci groza, a ty masz niewielka
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Impreza z goblinami." ownerID="8" targetID="11" fromX="2761" fromY="-1669" />„Och, czemu nie, gobbos lamie chleb. Masz kilka ziol, aby uczynic impreze lepsza.'
+      <outputs name="Impreza z goblinami." ownerID="8" targetID="11" fromX="2761" fromY="-1669" />„Och, czemu nie, gobbos lamie chleb. Masz kilka ziol, aby uczynic impreze lepszym.'
    </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="11" positionX="2851" positionY="-1407" width="350" height="530" allPlayersXP="3" allPlayersRP="2" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventure" ID="12" positionX="630.616943" positionY="-978.387634" width="350" height="1126">
@@ -3193,7 +3193,7 @@ Wykonujesz gest blogoslawienstwa, zgodnie z poleceniem kobiety. Kiwa glowa:
         </FilterBlock>
       </logic>
       <outputs name="Ogien i stal." ownerID="5" targetID="14" group="G1" fromX="2059" fromY="-192" />
-      <outputs name="Ogien i stal." ownerID="5" targetID="15" group="G1" fromX="2059" fromY="-272" />„Teraz wez tego bachora i zrob to, jak chcesz. Jego kundlowa krew dobrze by sie posluzyla, ale wyglada na zbyt ludzka i prawdopodobnie moze okazac sie meska. 
+      <outputs name="Ogien i stal." ownerID="5" targetID="15" group="G1" fromX="2059" fromY="-272" />„Teraz wez tego bachora i zrob z nim, jak chcesz. Jego kundlowa krew dobrze by sie posluzyla, ale wyglada na zbyt ludzka i prawdopodobnie moze okazac sie meska. 
 
 Nie potrzebujemy takiego szczeniaka. 
 

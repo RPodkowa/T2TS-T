@@ -779,7 +779,7 @@ Byc moze ten chram jest miejscem kultu dla dziecka dwoch bogow. W ten sposob dwa
 
 Gdy swiat sie rozpadl, tak tez pamiec twojego boskiego. Jesli potrafisz polaczyc przeszlosc, twoja przyszlosc bedzie silna. Powiedz mi, ktora sciezka idziesz, wybrano?'</nodes>
     <nodes xsi:type="NodeAdventure" ID="11" positionX="2932" positionY="856" width="350" height="725">
-      <outputs name="Zapytaj go, kim jest." ownerID="11" targetID="12" fromX="3257" fromY="364" />„Wiedza o tym, co zostalo utracone, rzeczywiscie poprowadzi cie ku twojej przyszlosci. Jestem zaskoczony, ze zostales tu przyprowadzony, do mnie, ale potem, kto lepiej powiedziec ci o rzeczach zapomnianych, pogrzebanych?'</nodes>
+      <outputs name="Zapytaj go, kim jest." ownerID="11" targetID="12" fromX="3257" fromY="364" />„Wiedza o tym, co zostalo utracone, rzeczywiscie poprowadzi cie ku przyszlosci. Jestem zaskoczony, ze zostales tu przyprowadzony, do mnie, ale potem, kto lepiej powiedziec ci o rzeczach zapomnianych, pogrzebanych?'</nodes>
     <nodes xsi:type="NodeAdventure" ID="12" positionX="3559" positionY="865" width="350" height="805">
       <outputs name="Zapytaj go, dlaczego zostales tutaj wyslany. Co to ma wspolnego z odblokowaniem Twojego potencjalu?" ownerID="12" targetID="38" fromX="3884" fromY="373" />
       <outputs name="Jego ojcem byl Perun? Dlaczego wiec nie jest bogiem panteonu?" ownerID="12" targetID="39" fromX="3884" fromY="293" />„Jarillo jest moim imieniem, chociaz nie jest to imie, ktore najprawdopodobniej slyszales w Thea. 
@@ -2245,7 +2245,7 @@ Kiedy znajdujesz sie w objeciach Marovita, czujesz, jak twoja dusza jest wydobyw
       </logic>
       <outputs name="Co to znaczy, ze wybral te sciezke? Czy byli inni?" ownerID="9" targetID="10" fromX="3650" fromY="1036" />
       <outputs name="Dlaczego na poczatku stracil pamiec? " ownerID="9" targetID="11" fromX="3650" fromY="956" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="9" targetID="16" fromX="3650" fromY="876" />„Ha, tak, czuje, ze nasze stado jest poswiecone mojemu staremu ja. Gobliny lub duchy dobrze slysza moje wezwanie lub te naznaczone mistyczna sila, tak? Dobry. 
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="9" targetID="16" fromX="3650" fromY="876" />„Ha, tak, czuje, ze nasze stado jest poswiecone mojemu staremu ja. Gobliny lub duchy dobrze slysza moje wezwanie lub te naznaczone mistyczna sila, tak? Dobry. 
 
 Widze to teraz, moje dni jako szaman, przewodnik duchowy - to sciezka, ktora wybiore. Teraz powiedz swoje pytania, moj mistrzu, poniewaz nie mamy tu zbyt wiele czasu.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="10" positionX="3778" positionY="1797" width="350" height="805">
@@ -2255,15 +2255,15 @@ Widze to teraz, moje dni jako szaman, przewodnik duchowy - to sciezka, ktora wyb
 Dales mi jasnosc, wybrano. Teraz rozumiem ofiary skladane przez starszych bogow i to, co my, mlodzi, musimy zrobic.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="11" positionX="4227" positionY="1856" width="350" height="885">
       <outputs name="Sluchaj dalej." ownerID="11" targetID="12" fromX="4552" fromY="1364" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="11" targetID="16" group="G1" fromX="4552" fromY="1284" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="11" targetID="21" group="G1" fromX="4552" fromY="1204" />„Kiedy trzej starsi bogowie postanowili stworzyc boskie domeny, wzieli wladze od nas wszystkich. Podejrzewam, ze mialo to swoje skutki uboczne. 
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="11" targetID="16" group="G1" fromX="4552" fromY="1284" />
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="11" targetID="21" group="G1" fromX="4552" fromY="1204" />„Kiedy trzej starsi bogowie postanowili stworzyc boskie domeny, wzieli wladze od nas wszystkich. Podejrzewam, ze mialo to swoje skutki uboczne. 
 
 Veles dal swoja moc stworzenia Magii i Intelektu, a ja bylem obdarzony obojgiem. Jako najbardziej bezposredni odbiorca jego mocy i zwiazany z duchami od urodzenia, bylem zwiazany z swiatem szarosci, zapewniajac stabilny przeplyw dusz do ich zycia po smierci. Ale to mnie wyczerpalo i zgubilem sie.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="12" positionX="4717" positionY="1892" width="350" height="966">
       <outputs name="Wiec odeszli na dobre?" ownerID="12" targetID="13" fromX="5042" fromY="1400" />
       <outputs name="Ale dlaczego swiatlo jest zle? " ownerID="12" targetID="26" fromX="5042" fromY="1320" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="12" targetID="16" group="G1" fromX="5042" fromY="1240" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="12" targetID="21" group="G1" fromX="5042" fromY="1160" />„Tak wiec ci trzej mogli swobodnie wykuwac swoje domeny i dawac je z powrotem, abysmy mogli stawic czola temu nowemu zagrozeniu i innym, ktore na pewno przyjda. 
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="12" targetID="16" group="G1" fromX="5042" fromY="1240" />
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="12" targetID="21" group="G1" fromX="5042" fromY="1160" />„Tak wiec ci trzej mogli swobodnie wykuwac swoje domeny i oddawac je nam, abysmy mogli stawic czola temu nowemu zagrozeniu i innym, ktore na pewno przyjda. 
 
 Ich prawdziwa esencja oczywiscie nie zostala utracona. To, co utrzymywalo swiat w stanie nienaruszonym, pomimo ciaglych wstrzasow.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="13" positionX="5184" positionY="1832" width="350" height="805">
@@ -2331,7 +2331,7 @@ Marovit odchodzi w swiat szarosci i zostajesz sam z ostatnim prezentem umieszczo
     <nodes xsi:type="NodeAdventure" ID="19" positionX="2929" positionY="419" width="350" height="885">
       <outputs name="Co to znaczy, ze wybral te sciezke? Czy byli inni?" ownerID="19" targetID="20" fromX="3254" fromY="-72" />
       <outputs name="Dlaczego na poczatku stracil pamiec? " ownerID="19" targetID="11" fromX="3254" fromY="-152" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="19" targetID="21" fromX="3254" fromY="-232" />„Ha, tak, czuje, ze nasze stado jest roznorodne. Nie skupiles sie na moich rodzicach, goblinach ani na sciezce mistycznej ponad innymi. Czuje rowniez, ze sam zachwiales sie, gdy podazales za moimi domenami i dlatego czuje, ze musze wzmocnic moja boska sciezke i puscic przeszlosc. To jest dobre.
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="19" targetID="21" fromX="3254" fromY="-232" />„Ha, tak, czuje, ze nasze stado jest roznorodne. Nie skupiles sie na moich rodzicach, goblinach ani na sciezce mistycznej ponad innymi. Czuje rowniez, ze sam zachwiales sie, gdy podazales za moimi domenami i dlatego czuje, ze musze wzmocnic moja boska sciezke i puscic przeszlosc. To jest dobre.
 
 Teraz powiedz swoje pytania, moj mistrzu, poniewaz nie mamy tu zbyt wiele czasu.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="20" positionX="3364" positionY="500" width="350" height="725">
@@ -2783,7 +2783,7 @@ Swiatlo ksiezycowej kryjowki na zawsze prowadzi sciezke syczaca, ale to nowa zas
       </logic>
       <outputs name="Dziekuje zmey i wyjdz." ownerID="29" targetID="47" fromX="9350" fromY="-1908" />„Droga Nyii do boskosci nie byla latwa. Zawstydzony za bycie w ciemnosci dawno temu. Nekani przez blednych zwolennikow, ktorzy splugawili nasze prawa w jej imieniu ... 
 
-A jednak, gdy Morena odeszla i Veles, nie zaslonila sie swoim obowiazkiem ani nie jeczala o przeszlych bledach. Wielu boi sie jej i nie bez powodu. W jej wydrazonym sercu musisz zapalic iskre, bo inaczej nigdy sie nie obudzi. Aby to zrobic, musisz udac sie do krainy metalu lub ponurych pustkowi Ciemnosci.'</nodes>
+A jednak, gdy Morena odeszla i Veles, nie zaslonila sie swoim obowiazkiem ani nie jeczala o przeszlych krzywdach. Wielu boi sie jej i nie bez powodu. W jej wydrazonym sercu musisz zapalic iskre, bo inaczej nigdy sie nie obudzi. Aby to zrobic, musisz udac sie do krainy metalu lub ponurych pustkowi Ciemnosci.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="30" positionX="4219" positionY="-342" width="350" height="725">
       <outputs name="Zachowaj spokoj." ownerID="30" targetID="17" fromX="4544" fromY="-833" />Zmysly przyjmuja twoja ofiare. Jego kamienne usta sa teraz uchylone, pozerajace zycie dane mu i zamieniajace je w ciemna energie. 
 
@@ -3018,7 +3018,7 @@ To moze byc wedka, ktorej szukasz.</nodes>
       </logic>
       <outputs name="Wymus to przez rozbicie skaly." ownerID="4" targetID="8" fromX="1628" fromY="-533" />
       <outputs name="[Narzedzia i rzemieslnik] Sprobuj go wyciagnac bez zrywania skaly." ownerID="4" targetID="35" fromX="1628" fromY="-613" />
-      <outputs name="Zostaw to na razie." ownerID="4" targetID="23" fromX="1628" fromY="-693" />Przypominasz sobie opowiesci o powrocie gigantow w czasach Przebudzenia. Te starozytne stworzenia ziemi obudzily sie ze snu i zagrozily zniszczeniem ziemi. W koncu zostali ponownie uspieni. Wiesz tez, ze odgrywaja istotna role w naturalnej rownowadze rzeczy, nawet gdy spia.</nodes>
+      <outputs name="Zostaw to na razie." ownerID="4" targetID="23" fromX="1628" fromY="-693" />Przypominasz sobie opowiesci o powrocie gigantow w czasach Przebudzenia. Te starozytne stworzenia ziemi obudzily sie ze snu i zagrozily zniszczeniem ziemi. W koncu zostali ponownie uspieni. Wiesz rowniez, ze odgrywaja one istotna role w naturalnej rownowadze rzeczy, nawet gdy spia.</nodes>
     <nodes xsi:type="NodeAdventure" ID="5" positionX="1855" positionY="-496" width="350" height="885">
       <logic>
         <FilterBlock>
@@ -3099,14 +3099,14 @@ Rozlega sie grzmiacy glos:
     <nodes xsi:type="NodeAdventure" ID="15" positionX="4493" positionY="2757" width="350" height="1046">
       <outputs name="Zapytaj, dlaczego porzucil panteon." ownerID="15" targetID="16" fromX="4818" fromY="2265" />
       <outputs name="Zorya." ownerID="15" targetID="17" fromX="4818" fromY="2185" />
-      <outputs name="Trzyglow." ownerID="15" targetID="18" fromX="4818" fromY="2105" />
-      <outputs name="Swarog." ownerID="15" targetID="45" fromX="4818" fromY="2025" />
-      <outputs name="Strzybog." ownerID="15" targetID="46" fromX="4818" fromY="1945" />„Jestem glosem Peruna, ojca niebios. Jestem tutaj, aby powiedziec, jakie beda twoje nastepne kroki. Komu sluzysz, dziecko?'</nodes>
+      <outputs name="Triglav." ownerID="15" targetID="18" fromX="4818" fromY="2105" />
+      <outputs name="Svarog." ownerID="15" targetID="45" fromX="4818" fromY="2025" />
+      <outputs name="Stribog." ownerID="15" targetID="46" fromX="4818" fromY="1945" />„Jestem glosem Peruna, ojca niebios. Jestem tutaj, aby powiedziec, jakie beda twoje nastepne kroki. Komu sluzysz, dziecko?'</nodes>
     <nodes xsi:type="NodeAdventure" ID="16" positionX="4874" positionY="3771" width="350" height="966">
       <outputs name="Zorya." ownerID="16" targetID="17" fromX="5199" fromY="3279" />
-      <outputs name="Trzyglow." ownerID="16" targetID="18" fromX="5199" fromY="3199" />
-      <outputs name="Swarog." ownerID="16" targetID="45" fromX="5199" fromY="3119" />
-      <outputs name="Strzybog." ownerID="16" targetID="46" fromX="5199" fromY="3039" />„Niebo nie moze pozostac w bezruchu; grzmot nie pozostaje. Bylismy potrzebni, wiec wyszlismy. Niebo, ziemia i swiat podziemny, potega trzech jako jednosci, aby utrzymac Ziemie w naszym uscisku i pozwolic naszym dzieciom stac silnymi. Zostalem uczyniony boskim, by stanac za Swiatlem, a zatem moja moc byla potrzebna, aby utrzymac go w ryzach. Ale poznacie wszystko, gdy odzyskasz pamiec boska. Teraz komu sluzysz, dziecko?'</nodes>
+      <outputs name="Triglav." ownerID="16" targetID="18" fromX="5199" fromY="3199" />
+      <outputs name="Svarog." ownerID="16" targetID="45" fromX="5199" fromY="3119" />
+      <outputs name="Stribog." ownerID="16" targetID="46" fromX="5199" fromY="3039" />„Niebo nie moze pozostac w bezruchu; grzmot nie pozostaje. Bylismy potrzebni, wiec wyszlismy. Niebo, ziemia i swiat podziemny, potega trzech jako jednosci, aby utrzymac Ziemie w naszym uscisku i pozwolic naszym dzieciom stac silnymi. Zostalem uczyniony boskim, by stanac za Swiatlem, a zatem moja moc byla potrzebna, aby utrzymac go w ryzach. Ale poznacie wszystko, gdy wasza boska pamiec zostanie przywrocona. Teraz komu sluzysz, dziecko?'</nodes>
     <nodes xsi:type="NodeAdventure" ID="17" positionX="5405" positionY="3780" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -3599,7 +3599,7 @@ To moze byc wedka, ktorej szukasz.</nodes>
       </logic>
       <outputs name="Wymus to przez rozbicie skaly." ownerID="4" targetID="8" fromX="1628" fromY="-533" />
       <outputs name="[Narzedzia i rzemieslnik] Sprobuj go wyciagnac bez zrywania skaly." ownerID="4" targetID="35" fromX="1628" fromY="-613" />
-      <outputs name="Zostaw to na razie." ownerID="4" targetID="23" fromX="1628" fromY="-693" />Przypominasz sobie opowiesci o powrocie gigantow w czasach Przebudzenia. Te starozytne stworzenia ziemi obudzily sie ze snu i zagrozily zniszczeniem ziemi. W koncu zostali ponownie uspieni. Wiesz tez, ze odgrywaja istotna role w naturalnej rownowadze rzeczy, nawet gdy spia.</nodes>
+      <outputs name="Zostaw to na razie." ownerID="4" targetID="23" fromX="1628" fromY="-693" />Przypominasz sobie opowiesci o powrocie gigantow w czasach Przebudzenia. Te starozytne stworzenia ziemi obudzily sie ze snu i zagrozily zniszczeniem ziemi. W koncu zostali ponownie uspieni. Wiesz rowniez, ze odgrywaja one istotna role w naturalnej rownowadze rzeczy, nawet gdy spia.</nodes>
     <nodes xsi:type="NodeAdventure" ID="5" positionX="1855" positionY="-496" width="350" height="885">
       <logic>
         <FilterBlock>
@@ -3680,14 +3680,14 @@ Rozlega sie grzmiacy glos:
     <nodes xsi:type="NodeAdventure" ID="15" positionX="4495" positionY="2450" width="350" height="1046">
       <outputs name="Zapytaj, dlaczego porzucil panteon." ownerID="15" targetID="16" fromX="4820" fromY="1958" />
       <outputs name="Zorya." ownerID="15" targetID="17" fromX="4820" fromY="1878" />
-      <outputs name="Trzyglow." ownerID="15" targetID="18" fromX="4820" fromY="1798" />
-      <outputs name="Swarog." ownerID="15" targetID="45" fromX="4820" fromY="1718" />
-      <outputs name="Strzybog." ownerID="15" targetID="46" fromX="4820" fromY="1638" />„Jestem glosem Peruna, ojca niebios. Jestem tutaj, aby powiedziec, jakie beda twoje nastepne kroki. Komu sluzysz, dziecko?'</nodes>
+      <outputs name="Triglav." ownerID="15" targetID="18" fromX="4820" fromY="1798" />
+      <outputs name="Svarog." ownerID="15" targetID="45" fromX="4820" fromY="1718" />
+      <outputs name="Stribog." ownerID="15" targetID="46" fromX="4820" fromY="1638" />„Jestem glosem Peruna, ojca niebios. Jestem tutaj, aby powiedziec, jakie beda twoje nastepne kroki. Komu sluzysz, dziecko?'</nodes>
     <nodes xsi:type="NodeAdventure" ID="16" positionX="4972" positionY="2778" width="350" height="966">
       <outputs name="Zorya." ownerID="16" targetID="17" fromX="5297" fromY="2286" />
-      <outputs name="Trzyglow." ownerID="16" targetID="18" fromX="5297" fromY="2206" />
-      <outputs name="Swarog." ownerID="16" targetID="45" fromX="5297" fromY="2126" />
-      <outputs name="Strzybog." ownerID="16" targetID="46" fromX="5297" fromY="2046" />„Niebo nie moze pozostac w bezruchu; grzmot nie pozostaje. Bylismy potrzebni, wiec wyszlismy. Niebo, ziemia i swiat podziemny, potega trzech jako jednosci, aby utrzymac Ziemie w naszym uscisku i pozwolic naszym dzieciom stac silnymi. Ale poznacie wszystko, gdy odzyskasz pamiec boska. Teraz komu sluzysz, dziecko?'</nodes>
+      <outputs name="Triglav." ownerID="16" targetID="18" fromX="5297" fromY="2206" />
+      <outputs name="Svarog." ownerID="16" targetID="45" fromX="5297" fromY="2126" />
+      <outputs name="Stribog." ownerID="16" targetID="46" fromX="5297" fromY="2046" />„Niebo nie moze pozostac w bezruchu; grzmot nie pozostaje. Bylismy potrzebni, wiec wyszlismy. Niebo, ziemia i swiat podziemny, potega trzech jako jednosci, aby utrzymac Ziemie w naszym uscisku i pozwolic naszym dzieciom stac silnymi. Ale poznacie wszystko, gdy wasza boska pamiec zostanie przywrocona. Teraz komu sluzysz, dziecko?'</nodes>
     <nodes xsi:type="NodeAdventure" ID="17" positionX="5440" positionY="3104" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -4327,7 +4327,7 @@ Choroba rozciaga jego galezie i czujesz otaczajaca cie boska laske.</nodes>
       <outputs name="Dlaczego musiala odejsc i dlaczego nikt jej nie pamieta?" ownerID="14" targetID="15" fromX="3134" fromY="957" />
       <outputs name="Jesli musisz sie spieszyc, jaki jest nastepny krok?" ownerID="14" targetID="13" fromX="3134" fromY="877" />„Drzewo jest tym, co nazywacie kosmicznym drzewem, starozytnym lenistwem, swego rodzaju - korzeniem zycia, jak mowia niektorzy. 
 
-Mokosh to drzewko, ktore z niego wyroslo, ale inne. Ona jest jak my, ale nie tak jak my. Ona jest dla nas siostrzanym drzewem. Ona jest matka twoich bogow, ale jak wielu matek musi, musiala odejsc, aby jej dzieci mogly rosnac.'</nodes>
+Mokosh to drzewko, ktore z niego wyroslo, ale inne. Ona jest taka jak my, ale nie tak jak my. Ona jest dla nas siostrzanym drzewem. Ona jest matka twoich bogow, ale jak wielu matek musi, musiala odejsc, aby jej dzieci mogly rosnac.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="15" positionX="3323" positionY="1740" width="350" height="725">
       <outputs name="Co z rozbiciem?" ownerID="15" targetID="16" fromX="3648" fromY="1248" />„Niektorzy pamietaja jeszcze. Ale twoi bogowie istnieja tylko wtedy, gdy sa czczeni, poniewaz bez tego traca swoja boskosc. 
 
@@ -4541,10 +4541,10 @@ Czujesz jednak przeplyw negatywnej energii z pnia drzewa. Wyglada na to, ze niez
     <nodes xsi:type="NodeAdventure" ID="36" positionX="5653" positionY="2643" width="350" height="1126">
       <outputs name="Dievanna." ownerID="36" targetID="41" fromX="5978" fromY="2151" />
       <outputs name="Horz." ownerID="36" targetID="43" fromX="5978" fromY="2071" />
-      <outputs name="Trzyglow." ownerID="36" targetID="44" fromX="5978" fromY="1991" />
+      <outputs name="Triglav." ownerID="36" targetID="44" fromX="5978" fromY="1991" />
       <outputs name="Nyia." ownerID="36" targetID="45" fromX="5978" fromY="1911" />
       <outputs name="Lada." ownerID="36" targetID="46" fromX="5978" fromY="1831" />
-      <outputs name="Strzybog." ownerID="36" targetID="58" fromX="5978" fromY="1750" />„Ten wybor jest zawsze twoj, ale jest ostatni etap twojej podrozy, ktory doprowadzi cie do twojego boskiego patrona i odblokuje w ten sposob oba twoje potencjaly. 
+      <outputs name="Stribog." ownerID="36" targetID="58" fromX="5978" fromY="1750" />„Ten wybor jest zawsze twoj, ale jest ostatni etap twojej podrozy, ktory doprowadzi cie do twojego boskiego patrona i odblokuje w ten sposob oba twoje potencjaly. 
 
 Do jakiego bostwa dzwonisz?'</nodes>
     <nodes xsi:type="NodeAdventure" ID="37" positionX="5391" positionY="1066" width="350" height="725">
@@ -4683,7 +4683,7 @@ Chory nie czeka na odpowiedz, ale wraca do snu.</nodes>
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Luk w podziekowaniu i odejdz." ownerID="44" targetID="56" fromX="7503" fromY="1967" />„Hmm. Umysl twojego pana jest jeden i trzy, a zatem nie moze sobie przypomniec. Wznosili sie, gdy potrzebna byla wielka potrzeba i brutalna sila. Triglav jest mlotem bogow. 
+      <outputs name="Luk w podziekowaniu i odejdz." ownerID="44" targetID="56" fromX="7503" fromY="1967" />„Hmm. Umysl twojego pana jest jeden i trzy, a zatem nie moze sobie przypomniec. Wznosili sie, gdy byla wielka potrzeba i potrzebna byla brutalna sila. Triglav jest mlotem bogow. 
 
 Ale pomimo ich ognistego wygladu i brutalnej postawy, Triglav ma wiecej niz na pierwszy rzut oka. Szukajcie ich miejsca urodzenia w czarnym popiele i czerwonej lawie ziem wulkanicznych.'
 
@@ -5004,7 +5004,7 @@ Choroba rozciaga jego galezie i czujesz otaczajaca cie boska laske.</nodes>
       <outputs name="Dlaczego musiala odejsc i dlaczego nikt jej nie pamieta?" ownerID="14" targetID="15" fromX="3147" fromY="1408" />
       <outputs name="Jesli musisz sie spieszyc, jaki jest nastepny krok?" ownerID="14" targetID="13" fromX="3147" fromY="1328" />„Drzewo jest tym, co nazywacie kosmicznym drzewem, starozytnym lenistwem, swego rodzaju - korzeniem zycia, jak mowia niektorzy. 
 
-Mokosh to drzewko, ktore z niego wyroslo, ale inne. Ona jest jak my, ale nie tak jak my. Ona jest dla nas siostrzanym drzewem. Ona jest matka twoich bogow, ale jak wielu matek musi, musiala odejsc, aby jej dzieci mogly rosnac.'</nodes>
+Mokosh to drzewko, ktore z niego wyroslo, ale inne. Ona jest taka jak my, ale nie tak jak my. Ona jest dla nas siostrzanym drzewem. Ona jest matka twoich bogow, ale jak wielu matek musi, musiala odejsc, aby jej dzieci mogly rosnac.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="15" positionX="3323" positionY="1740" width="350" height="725">
       <outputs name="Co z rozbiciem?" ownerID="15" targetID="16" fromX="3648" fromY="1248" />„Niektorzy pamietaja jeszcze. Ale twoi bogowie istnieja tylko wtedy, gdy sa czczeni, poniewaz bez tego traca swoja boskosc. 
 
@@ -5218,10 +5218,10 @@ Czujesz jednak przeplyw negatywnej energii z pnia drzewa. Wyglada na to, ze niez
     <nodes xsi:type="NodeAdventure" ID="36" positionX="5566" positionY="2692" width="350" height="1126">
       <outputs name="Dievanna." ownerID="36" targetID="41" fromX="5891" fromY="2200" />
       <outputs name="Horz." ownerID="36" targetID="43" fromX="5891" fromY="2120" />
-      <outputs name="Trzyglow." ownerID="36" targetID="44" fromX="5891" fromY="2040" />
+      <outputs name="Triglav." ownerID="36" targetID="44" fromX="5891" fromY="2040" />
       <outputs name="Nyia." ownerID="36" targetID="45" fromX="5891" fromY="1960" />
       <outputs name="Lada." ownerID="36" targetID="46" fromX="5891" fromY="1880" />
-      <outputs name="Strzybog." ownerID="36" targetID="64" fromX="5891" fromY="1799" />„Ten wybor jest zawsze twoj, ale jest ostatni etap twojej podrozy, ktory doprowadzi cie do twojego boskiego patrona i odblokuje w ten sposob oba twoje potencjaly. 
+      <outputs name="Stribog." ownerID="36" targetID="64" fromX="5891" fromY="1799" />„Ten wybor jest zawsze twoj, ale jest ostatni etap twojej podrozy, ktory doprowadzi cie do twojego boskiego patrona i odblokuje w ten sposob oba twoje potencjaly. 
 
 Do jakiego bostwa dzwonisz?'</nodes>
     <nodes xsi:type="NodeAdventure" ID="37" positionX="5391" positionY="1066" width="350" height="725">
@@ -5360,7 +5360,7 @@ Chory nie czeka na odpowiedz, ale wraca do snu.</nodes>
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Luk w podziekowaniu i odejdz." ownerID="44" targetID="60" fromX="7480" fromY="1881" />„Hmm. Umysl twojego pana jest jeden i trzy, a zatem nie moze sobie przypomniec. Wznosili sie, gdy potrzebna byla wielka potrzeba i brutalna sila. Triglav jest mlotem bogow. 
+      <outputs name="Luk w podziekowaniu i odejdz." ownerID="44" targetID="60" fromX="7480" fromY="1881" />„Hmm. Umysl twojego pana jest jeden i trzy, a zatem nie moze sobie przypomniec. Wznosili sie, gdy byla wielka potrzeba i potrzebna byla brutalna sila. Triglav jest mlotem bogow. 
 
 Ale pomimo ich ognistego wygladu i brutalnej postawy, Triglav ma wiecej niz na pierwszy rzut oka. Szukajcie ich miejsca urodzenia w czarnym popiele i czerwonej lawie ziem wulkanicznych.'
 
@@ -5666,7 +5666,7 @@ Widzisz, ze tylko wybrani moga sie poruszac. Wszyscy inni stoja zamrozeni w zach
       </logic>
       <outputs name="Co to znaczy, ze wybral te sciezke? Czy byli inni?" ownerID="9" targetID="10" fromX="3666" fromY="977" />
       <outputs name="Dlaczego na poczatku stracil pamiec? " ownerID="9" targetID="11" fromX="3666" fromY="897" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="9" targetID="16" fromX="3666" fromY="817" />„Ogien plonie, podobnie jak moje serce. Przebuduje teraz moj umysl, abym mogl znowu sluzyc. A ty - dobrze zrobiles, podazajac moja sciezka, widze. Czcisz rzemioslo, cenisz madrosc lub zaprzyjazniasz sie z wielkim krasnoludzkim krewnym. To madre. 
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="9" targetID="16" fromX="3666" fromY="817" />„Ogien plonie, podobnie jak moje serce. Przebuduje teraz moj umysl, abym mogl znowu sluzyc. A ty - dobrze zrobiles, podazajac moja sciezka, widze. Czcisz rzemioslo, cenisz madrosc lub zaprzyjazniasz sie z wielkim krasnoludzkim krewnym. To madre. 
 
 Widze teraz, ze musze wzmocnic moje powolanie jako rzemieslnika i pamietac moje korzenie, aby pomoc w ksztaltowaniu lepszej przyszlosci. Teraz powiedz swoje pytania, moj mistrzu, poniewaz nie mamy tu zbyt wiele czasu.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="10" positionX="3778" positionY="1797" width="350" height="805">
@@ -5676,15 +5676,15 @@ Widze teraz, ze musze wzmocnic moje powolanie jako rzemieslnika i pamietac moje 
 Dales mi jasnosc, wybrano. Teraz rozumiem ofiary skladane przez starszych bogow i to, co my, mlodzi, musimy zrobic.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="11" positionX="4227" positionY="1856" width="350" height="885">
       <outputs name="Sluchaj dalej." ownerID="11" targetID="12" fromX="4552" fromY="1364" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="11" targetID="16" group="G1" fromX="4552" fromY="1284" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="11" targetID="21" group="G1" fromX="4552" fromY="1204" />„Kiedy trzej starsi bogowie postanowili stworzyc boskie domeny, wzieli wladze od nas wszystkich. Podejrzewam, ze mialo to swoje skutki uboczne. 
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="11" targetID="16" group="G1" fromX="4552" fromY="1284" />
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="11" targetID="21" group="G1" fromX="4552" fromY="1204" />„Kiedy trzej starsi bogowie postanowili stworzyc boskie domeny, wzieli wladze od nas wszystkich. Podejrzewam, ze mialo to swoje skutki uboczne. 
 
 Zamieszanie i Swiatlo pochodza od mojego ojca, ale on musial wyzywic moje mistrzostwo slonca, aby to osiagnac. Podejrzewam, ze to oslabilo mnie na jakis czas. Bylem kiedys bogiem slonca. Kiedy swiatlo ucieklo z jego granic, najbardziej mnie to pociagalo. Podejrzewam, ze moja utrata mocy byla konieczna, abym nie upadl.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="12" positionX="4709" positionY="1870" width="350" height="966">
       <outputs name="Wiec odeszli na dobre?" ownerID="12" targetID="13" fromX="5034" fromY="1378" />
       <outputs name="Ale dlaczego swiatlo jest zle? " ownerID="12" targetID="26" fromX="5034" fromY="1298" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="12" targetID="16" group="G1" fromX="5034" fromY="1218" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="12" targetID="21" group="G1" fromX="5034" fromY="1138" />„Tak wiec ci trzej mogli swobodnie wykuwac swoje domeny i dawac je z powrotem, abysmy mogli stawic czola temu nowemu zagrozeniu i innym, ktore na pewno przyjda. 
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="12" targetID="16" group="G1" fromX="5034" fromY="1218" />
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="12" targetID="21" group="G1" fromX="5034" fromY="1138" />„Tak wiec ci trzej mogli swobodnie wykuwac swoje domeny i oddawac je nam, abysmy mogli stawic czola temu nowemu zagrozeniu i innym, ktore na pewno przyjda. 
 
 Ich prawdziwa esencja oczywiscie nie zostala utracona. To, co utrzymywalo swiat w stanie nienaruszonym, pomimo ciaglych wstrzasow.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="13" positionX="5148" positionY="1817" width="350" height="805">
@@ -5749,7 +5749,7 @@ Svarog odwraca sie i powoli zamienia sie w czyste swiatlo sloneczne i znika.  Zo
     <nodes xsi:type="NodeAdventure" ID="19" positionX="2926" positionY="488" width="350" height="885">
       <outputs name="Co to znaczy, ze wybral te sciezke? Czy byli inni?" ownerID="19" targetID="20" fromX="3251" fromY="-3" />
       <outputs name="Dlaczego na poczatku stracil pamiec? " ownerID="19" targetID="11" fromX="3251" fromY="-83" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="19" targetID="21" fromX="3251" fromY="-163" />„Ogien plonie, podobnie jak moje serce. Przebuduje teraz moj umysl, abym mogl znowu sluzyc. Wy, wyraznie, faworyzujecie zawirowania na swojej drodze, poniewaz nie zawsze podazaliscie za moimi wyborami. Dlatego bede musial wzmocnic moja boska obecnosc, byc moze znow spojrzec na slonce, a nie na przyziemne. Tak. Dobry.
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="19" targetID="21" fromX="3251" fromY="-163" />„Ogien plonie, podobnie jak moje serce. Przebuduje teraz moj umysl, abym mogl znowu sluzyc. Wy, wyraznie, faworyzujecie zawirowania na swojej drodze, poniewaz nie zawsze podazaliscie za moimi wyborami. Dlatego bede musial wzmocnic moja boska obecnosc, byc moze znow spojrzec na slonce, a nie na przyziemne. Tak. Dobry.
 
 Teraz powiedz swoje pytania, moj mistrzu, poniewaz nie mamy tu zbyt wiele czasu.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="20" positionX="3364" positionY="500" width="350" height="725">
@@ -6074,7 +6074,7 @@ Dmuchi cie pocalunkiem i kontynuuje taniec.</nodes>
       </logic>
       <outputs name="Co to znaczy, ze wybrala te sciezke? Czy byli inni?" ownerID="9" targetID="10" fromX="3518" fromY="1152" />
       <outputs name="Dlaczego przede wszystkim stracila pamiec? " ownerID="9" targetID="11" fromX="3518" fromY="1072" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="9" targetID="16" fromX="3518" fromY="992" />„Wyczuwam, ze dobrze szedles moja sciezka i czuje, ze wolanie mojej prawdziwej natury promieniuje od ciebie. Preferowales intelekt w swoim ludowym, pielegnowanym pieknie lub doceniales uzdrawiajaca moc, a moze jestes wyjatkowo plodny. Niezaleznie od tego, dobrze wybrales sciezke. 
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="9" targetID="16" fromX="3518" fromY="992" />„Wyczuwam, ze dobrze szedles moja sciezka i czuje, ze wolanie mojej prawdziwej natury promieniuje od ciebie. Preferowales intelekt w swoim ludowym, pielegnowanym pieknie lub doceniales uzdrawiajaca moc, a moze jestes wyjatkowo plodny. Niezaleznie od tego, dobrze wybrales sciezke. 
 
 Teraz powiedz swoje pytania, moj mistrzu, poniewaz nie mamy tu zbyt wiele czasu.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="10" positionX="3730" positionY="1843" width="350" height="805">
@@ -6084,15 +6084,15 @@ Teraz powiedz swoje pytania, moj mistrzu, poniewaz nie mamy tu zbyt wiele czasu.
 Dales mi jasnosc, wybrano. Teraz rozumiem ofiary skladane przez starszych bogow i to, co my, mlodzi, musimy zrobic.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="11" positionX="4227" positionY="1856" width="350" height="885">
       <outputs name="Sluchaj dalej." ownerID="11" targetID="12" fromX="4552" fromY="1364" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="11" targetID="16" group="G1" fromX="4552" fromY="1284" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="11" targetID="21" group="G1" fromX="4552" fromY="1204" />„Kiedy trzej starsi bogowie postanowili stworzyc boskie domeny, wzieli wladze od nas wszystkich. Podejrzewam, ze mialo to swoje skutki uboczne. 
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="11" targetID="16" group="G1" fromX="4552" fromY="1284" />
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="11" targetID="21" group="G1" fromX="4552" fromY="1204" />„Kiedy trzej starsi bogowie postanowili stworzyc boskie domeny, wzieli wladze od nas wszystkich. Podejrzewam, ze mialo to swoje skutki uboczne. 
 
 To swiatlo, ktore teraz niepokoi nasza ziemie, mowi glosno o harmonii i rozsadku. Probuje zwabic istoty takie jak ja na bok. Byc moze musialem zapomniec na jakis czas, aby nie ulec pokusie, by czekac, az wybrany czlowiek przyjdzie i stanie sie moim narzedziem w krolestwach smiertelnikow. Tak.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="12" positionX="4709" positionY="1870" width="350" height="966">
       <outputs name="Wiec odeszli na dobre?" ownerID="12" targetID="13" fromX="5034" fromY="1378" />
       <outputs name="Ale dlaczego swiatlo jest zle? " ownerID="12" targetID="26" fromX="5034" fromY="1298" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="12" targetID="16" group="G1" fromX="5034" fromY="1218" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="12" targetID="21" group="G1" fromX="5034" fromY="1138" />„Tak wiec ci trzej mogli swobodnie wykuwac swoje domeny i dawac je z powrotem, abysmy mogli stawic czola temu nowemu zagrozeniu i innym, ktore na pewno przyjda. 
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="12" targetID="16" group="G1" fromX="5034" fromY="1218" />
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="12" targetID="21" group="G1" fromX="5034" fromY="1138" />„Tak wiec ci trzej mogli swobodnie wykuwac swoje domeny i oddawac je nam, abysmy mogli stawic czola temu nowemu zagrozeniu i innym, ktore na pewno przyjda. 
 
 Ich prawdziwa esencja oczywiscie nie zostala utracona. To, co utrzymywalo swiat w stanie nienaruszonym, pomimo ciaglych wstrzasow.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="13" positionX="5163" positionY="1791" width="350" height="805">
@@ -6153,7 +6153,7 @@ Urzekajaca wada Lady oslodzi powietrze, gdy odchodzi, zostawiajac cie samego z o
     <nodes xsi:type="NodeAdventure" ID="19" positionX="2926" positionY="488" width="350" height="885">
       <outputs name="Co to znaczy, ze wybral te sciezke? Czy byli inni?" ownerID="19" targetID="20" fromX="3251" fromY="-3" />
       <outputs name="Dlaczego na poczatku stracil pamiec? " ownerID="19" targetID="11" fromX="3251" fromY="-83" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="19" targetID="21" fromX="3251" fromY="-163" />„Tak, dales mi iskre radosci z powrotem, chociaz czuje, ze nie zawsze chodziles dobrze moja sciezka. Ale to tylko oznacza, ze musze odnowic moje zaufanie jako boskie i byc moze mniej martwic sie o frywolnosc mojej natury. Dales mi jasna sciezke. To jest dobre.
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="19" targetID="21" fromX="3251" fromY="-163" />„Tak, dales mi iskre radosci z powrotem, chociaz czuje, ze nie zawsze chodziles dobrze moja sciezka. Ale to tylko oznacza, ze musze odnowic moje zaufanie jako boskie i byc moze mniej martwic sie o frywolnosc mojej natury. Dales mi jasna sciezke. To jest dobre.
 
 Teraz powiedz swoje pytania, moj mistrzu, poniewaz nie mamy tu zbyt wiele czasu.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="20" positionX="3399" positionY="495" width="350" height="725">
@@ -6463,7 +6463,7 @@ Widzisz paczke dzikiego wloczegi Dievanny. Jeden z nich wyroznia sie - wyzszy, s
       </logic>
       <outputs name="Co to znaczy, ze wybrala te sciezke? Czy byli inni?" ownerID="9" targetID="10" fromX="3513" fromY="1160" />
       <outputs name="Dlaczego przede wszystkim stracila pamiec? " ownerID="9" targetID="11" fromX="3513" fromY="1080" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="9" targetID="16" fromX="3513" fromY="1000" />„Jak dotad podazales moja sciezka. Szanowal prawa lasu, byc moze zaprzyjaznil sie z niektorymi moimi stworzeniami, lub, jesli to mozliwe, wybral harmonie ponad przemoc. Dobry. Od dawna powiedzialem, ze nalezy podazac za instynktem, a ja rowniez wybiore boskosc. 
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="9" targetID="16" fromX="3513" fromY="1000" />„Jak dotad podazales moja sciezka. Szanowal prawa lasu, byc moze zaprzyjaznil sie z niektorymi moimi stworzeniami, lub, jesli to mozliwe, wybral harmonie ponad przemoc. Dobry. Od dawna powiedzialem, ze nalezy podazac za instynktem, a ja rowniez wybiore boskosc. 
 
 Teraz powiedz swoje pytania, moj mistrzu, bo nie mamy tu zbyt wiele czasu.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="10" positionX="3653" positionY="1871" width="350" height="805">
@@ -6473,15 +6473,15 @@ Teraz powiedz swoje pytania, moj mistrzu, bo nie mamy tu zbyt wiele czasu.'</nod
 Dales mi jasnosc, wybrano. Teraz rozumiem ofiary skladane przez starszych bogow i to, co my, mlodzi, musimy zrobic.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="11" positionX="4158" positionY="1875" width="350" height="885">
       <outputs name="Sluchaj dalej." ownerID="11" targetID="12" fromX="4483" fromY="1383" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="11" targetID="16" group="G1" fromX="4483" fromY="1303" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="11" targetID="21" group="G1" fromX="4483" fromY="1223" />„Nie zrobilem tego. Bylem zajety i czekalem, az sie rozwiniesz. Kiedy trzej bogowie dali nam domeny, to rowniez wyczerpalo nasza moc. Dla niektorych sprawilo to, ze byli zdezorientowani, zagubieni, a dla innych poszlismy cicho, aby odzyskac spokoj. 
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="11" targetID="16" group="G1" fromX="4483" fromY="1303" />
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="11" targetID="21" group="G1" fromX="4483" fromY="1223" />„Nie zrobilem tego. Bylem zajety i czekalem, az sie rozwiniesz. Kiedy trzej bogowie dali nam domeny, to rowniez wyczerpalo nasza moc. Dla niektorych sprawilo to, ze byli zdezorientowani, zagubieni, a dla innych poszlismy cicho, aby odzyskac spokoj. 
 
 To swiatlo, ktore teraz niepokoi nasza ziemie, jest nienaturalne, niezrownowazone - obiecuje harmonie, ale klamie. Harmonia moze pochodzic tylko ze wspolistnienia dwoch sil, a nie dominacji jednej. Ale kiedy czekalismy na rozwoj naszych narzedzi, musialem chronic lasy przed plaga.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="12" positionX="4669" positionY="1880" width="350" height="966">
       <outputs name="Wiec odeszli na dobre?" ownerID="12" targetID="13" fromX="4994" fromY="1388" />
       <outputs name="Ale dlaczego swiatlo jest zle? " ownerID="12" targetID="26" fromX="4994" fromY="1308" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="12" targetID="16" group="G1" fromX="4994" fromY="1228" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="12" targetID="21" group="G1" fromX="4994" fromY="1148" />„Tak wiec ci trzej mogli swobodnie wykuwac swoje domeny i dawac je z powrotem, abysmy mogli stawic czola temu nowemu zagrozeniu i innym, ktore na pewno przyjda. 
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="12" targetID="16" group="G1" fromX="4994" fromY="1228" />
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="12" targetID="21" group="G1" fromX="4994" fromY="1148" />„Tak wiec ci trzej mogli swobodnie wykuwac swoje domeny i dawac je z powrotem, abysmy mogli stawic czola temu nowemu zagrozeniu i innym, ktore na pewno przyjda. 
 
 Ich prawdziwa esencja oczywiscie nie zostala utracona. To, co utrzymywalo swiat w stanie nienaruszonym, pomimo ciaglych wstrzasow.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="13" positionX="5163" positionY="1791" width="350" height="725">
@@ -6546,7 +6546,7 @@ Odwracasz sie na sekunde i juz nie widzisz Dievanny, tylko las, wiec zostajesz s
     <nodes xsi:type="NodeAdventure" ID="19" positionX="2926" positionY="488" width="350" height="885">
       <outputs name="Co to znaczy, ze wybrala te sciezke? Czy byli inni?" ownerID="19" targetID="20" fromX="3251" fromY="-3" />
       <outputs name="Dlaczego na poczatku stracil pamiec? " ownerID="19" targetID="11" fromX="3251" fromY="-83" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="19" targetID="21" fromX="3251" fromY="-163" />„Widze, ze z trudem staraliscie sie podazac moja sciezka, ale takze przeszliscie wszystkie testy, ktore wam dano i przybyliscie tutaj. To mi mowi, ze nadszedl czas, aby wybrac boska sciezke i przelac moja pierwotna nature, przynajmniej na razie. 
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="19" targetID="21" fromX="3251" fromY="-163" />„Widze, ze z trudem staraliscie sie podazac moja sciezka, ale takze przeszliscie wszystkie testy, ktore wam dano i przybyliscie tutaj. To mi mowi, ze nadszedl czas, aby wybrac boska sciezke i przelac moja pierwotna nature, przynajmniej na razie. 
 
 Teraz powiedz swoje pytania, moj mistrzu, poniewaz nie mamy tu zbyt wiele czasu.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="20" positionX="3399" positionY="495" width="350" height="725">
@@ -6593,8 +6593,8 @@ Odwracasz sie na sekunde i juz nie widzisz Dievanny, tylko las, wiec zostajesz s
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="25" positionX="5099" positionY="2852" width="350" height="966">
       <outputs name="Dlaczego przede wszystkim stracila pamiec? " ownerID="25" targetID="11" fromX="5424" fromY="2360" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="25" targetID="16" group="G1" fromX="5424" fromY="2360" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="25" targetID="21" group="G1" fromX="5424" fromY="2360" />
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="25" targetID="16" group="G1" fromX="5424" fromY="2360" />
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="25" targetID="21" group="G1" fromX="5424" fromY="2360" />
       <outputs name="Czy wiec trzej bogowie odeszli na dobre?" ownerID="25" targetID="13" fromX="5424" fromY="2360" />„Veles wybral ciemna sciezke z dala od swojego pochodzenia. Mokosh stal sie silniejszy jako tworca i nie byl w stanie pozostac blisko lasow. Nowi bogowie sa potrzebni, a las potrzebowal, wiec zrzucilem moja elfia przeszlosc, tak jak kiedys Veles, i zdecydowalem sie dolaczyc do dzieci kosmicznego drzewa.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="26" positionX="4397" positionY="2706" width="350" height="725">
       <outputs name="Sluchaj dalej." ownerID="26" targetID="34" fromX="4722" fromY="2214" />„To nie jest ani zle, ani dobre, tak jak jego rodzenstwo, ciemnosc. Oboje sa zmuszeni do przestrzegania ich natury. 
@@ -6904,7 +6904,7 @@ Widzisz, ze jest przykuta do tej skaly; jej oczy sa nabrzmiale od lez, usta i sk
       </logic>
       <outputs name="Co to znaczy, ze wybral te sciezke? Czy byli inni?" ownerID="9" targetID="10" fromX="3582" fromY="1026" />
       <outputs name="Dlaczego na poczatku stracil pamiec? " ownerID="9" targetID="11" fromX="3582" fromY="946" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="9" targetID="16" fromX="3582" fromY="866" />„Piosenka jest wreszcie cicha, wiec znow slysze wiatr i morze. Jak dotad nosiles moja wole, podazalem za moja natura w swoich wyborach, wiec musze tez wybrac te sciezke. Razem przywrocimy ziemie i poprowadzimy zgubionych w prawdziwe swiatlo panteonu, a nie przerazenie slepoty, ktora zstepuje. 
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="9" targetID="16" fromX="3582" fromY="866" />„Piosenka jest wreszcie cicha, wiec znow slysze wiatr i morze. Jak dotad nosiles moja wole, podazalem za moja natura w swoich wyborach, wiec musze tez wybrac te sciezke. Razem przywrocimy ziemie i poprowadzimy zgubionych w prawdziwe swiatlo panteonu, a nie przerazenie slepoty, ktora zstepuje. 
 
 Teraz powiedz swoje pytania, moj mistrzu, poniewaz nie mamy tu zbyt wiele czasu.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="10" positionX="3723" positionY="1843" width="350" height="805">
@@ -6914,16 +6914,16 @@ Teraz powiedz swoje pytania, moj mistrzu, poniewaz nie mamy tu zbyt wiele czasu.
 Dales mi jasnosc, wybrano. Teraz rozumiem ofiary skladane przez starszych bogow i to, co my, mlodzi, musimy zrobic.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="11" positionX="4227" positionY="1856" width="350" height="885">
       <outputs name="Sluchaj dalej." ownerID="11" targetID="12" fromX="4552" fromY="1364" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="11" targetID="16" group="G1" fromX="4552" fromY="1284" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="11" targetID="21" group="G1" fromX="4552" fromY="1204" />„Kiedy trzej starsi bogowie postanowili stworzyc boskie domeny, wzieli wladze od nas wszystkich, zanim zdazyli ja oddac. 
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="11" targetID="16" group="G1" fromX="4552" fromY="1284" />
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="11" targetID="21" group="G1" fromX="4552" fromY="1204" />„Kiedy trzej starsi bogowie postanowili stworzyc boskie domeny, wzieli wladze od nas wszystkich, zanim zdazyli ja oddac. 
 
 Oslabiony, istota Swiatla i Harmonii, taka jak ja, bylaby bardziej podatna na wezwanie tej nowej sily, ktora probuje nas zlamac. Potrzebowalismy czasu, aby stac sie ponownie, czas na wzrost naszych mistrzow. Z tego powodu dalem czytlica moc, by trzymac mnie swoja piosenka.'
 </nodes>
     <nodes xsi:type="NodeAdventure" ID="12" positionX="4710" positionY="1872" width="350" height="966">
       <outputs name="Wiec odeszli na dobre?" ownerID="12" targetID="13" fromX="5035" fromY="1380" />
       <outputs name="Ale dlaczego swiatlo jest zle? " ownerID="12" targetID="26" fromX="5035" fromY="1300" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="12" targetID="16" group="G1" fromX="5035" fromY="1220" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="12" targetID="21" group="G1" fromX="5035" fromY="1140" />„Tak wiec ci trzej mogli swobodnie wykuwac swoje domeny i dawac je z powrotem, abysmy mogli stawic czola temu nowemu zagrozeniu i innym, ktore na pewno przyjda. 
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="12" targetID="16" group="G1" fromX="5035" fromY="1220" />
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="12" targetID="21" group="G1" fromX="5035" fromY="1140" />„Tak wiec ci trzej mogli swobodnie wykuwac swoje domeny i dawac je z powrotem, abysmy mogli stawic czola temu nowemu zagrozeniu i innym, ktore na pewno przyjda. 
 
 Ich prawdziwa esencja oczywiscie nie zostala utracona. To, co utrzymywalo swiat w stanie nienaruszonym, pomimo ciaglych wstrzasow.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="13" positionX="5163" positionY="1791" width="350" height="805">
@@ -6986,7 +6986,7 @@ Slyszysz glos Striboga, ktory staje sie wiatrem, gdy jestes sam, z ostatnim prez
     <nodes xsi:type="NodeAdventure" ID="19" positionX="2926" positionY="488" width="350" height="885">
       <outputs name="Co to znaczy, ze wybral te sciezke? Czy byli inni?" ownerID="19" targetID="20" fromX="3251" fromY="-3" />
       <outputs name="Dlaczego na poczatku stracil pamiec? " ownerID="19" targetID="11" fromX="3251" fromY="-83" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="19" targetID="21" fromX="3251" fromY="-163" />„Piosenka jest wreszcie cicha, wiec znow slysze wiatr i morze. Widze, ze nie zawsze byles w stanie podazac moja sciezka, kiedy bylem ogluszony, wiec musze ponownie skupic sie na moich boskich obowiazkach, stanac ponad przeszloscia i pozostac niezlomny. 
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="19" targetID="21" fromX="3251" fromY="-163" />„Piosenka jest wreszcie cicha, wiec znow slysze wiatr i morze. Widze, ze nie zawsze byles w stanie podazac moja sciezka, kiedy bylem ogluszony, wiec musze ponownie skupic sie na moich boskich obowiazkach, stanac ponad przeszloscia i pozostac niezlomny. 
 
 Teraz powiedz swoje pytania, moj mistrzu, bo nie mamy tu zbyt wiele czasu.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="20" positionX="3364" positionY="500" width="350" height="725">
@@ -7232,7 +7232,7 @@ Wiec tak i nie. Niosa wole wszystkich trzech starszych bogow, ale takze ich wlas
           </LogicFilter>
         </FilterBlock>
       </logic>
-      <outputs name="Podejscie." ownerID="2" targetID="3" fromX="765" fromY="-518" />Kiedy podrozujesz po pustkowiach wulkanicznych, natrafiasz na wiele dolow lawy, ale przyciaga cie w szczegolnosci jedna. Wyglada to zwyczajnie w tym miejscu, z palacym upalem i bulgoczaca, rozgrzana do czerwonosci plazma wydmuchujaca czarny popiol. 
+      <outputs name="Podejscie." ownerID="2" targetID="3" fromX="765" fromY="-518" />Kiedy podrozujesz po pustkowiach wulkanicznych, natrafiasz na wiele dolow lawy, ale przyciaga cie w szczegolnosci jedna. Wyglada zwyczajnie w tym miejscu, z palacym upalem i bulgoczaca, rozgrzana do czerwonosci plazma wydmuchujaca czarny popiol. 
 
 Ale im dluzej tu stoisz, tym bardziej jestes pewien, ze wlasnie tam urodzil sie Triglav.</nodes>
     <nodes xsi:type="NodeAdventure" ID="3" positionX="886" positionY="238" width="350" height="725">
@@ -7325,7 +7325,7 @@ Te swiatla stale oslepiaja moj wzrok. Zniszcz je, abym mogl sie z toba zmierzyc!
       </logic>
       <outputs name="Co to znaczy, ze wybral te sciezke? Czy byli inni?" ownerID="9" targetID="10" fromX="3513" fromY="1052" />
       <outputs name="Dlaczego na poczatku stracil pamiec? " ownerID="9" targetID="11" fromX="3513" fromY="972" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="9" targetID="16" fromX="3513" fromY="892" />„Ach, pozbyles sie szkodnikow, ktore nas rozpraszaly. Dobrze chodzisz sciezka ognia. Wojownicy, silni ludzie, krasnoludy wykuwane w metalu, lub zaciekly ork, obejmujcie ich, dobrze! Teraz znow mamy jasno okreslony cel. Teraz moge wybrac walke jako moje pierwotne ja. 
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="9" targetID="16" fromX="3513" fromY="892" />„Ach, pozbyles sie szkodnikow, ktore nas rozpraszaly. Dobrze chodzisz sciezka ognia. Wojownicy, silni ludzie, krasnoludy wykuwane w metalu, lub zaciekly ork, obejmujcie ich, dobrze! Teraz znow mamy jasno okreslony cel. Teraz moge wybrac walke jako moje pierwotne ja. 
 
 Teraz powiedz swoje pytania, moj mistrzu, poniewaz nie mamy tu zbyt wiele czasu.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="10" positionX="3683" positionY="1915" width="350" height="805">
@@ -7335,16 +7335,16 @@ Teraz powiedz swoje pytania, moj mistrzu, poniewaz nie mamy tu zbyt wiele czasu.
 Dales mi jasnosc, wybrano. Teraz rozumiem ofiary skladane przez starszych bogow.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="11" positionX="4227" positionY="1856" width="350" height="885">
       <outputs name="Sluchaj dalej." ownerID="11" targetID="12" fromX="4552" fromY="1364" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="11" targetID="16" group="G1" fromX="4552" fromY="1284" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="11" targetID="21" group="G1" fromX="4552" fromY="1204" />„Zgubiony? Jest nas wielu. Dzielimy sie przeblyskami tych, ktorzy dali nam zycie, ale nie mamy zadnych wspomnien, gdy wstalismy z lawy i walczylismy. Pamietamy, ze wzywalismy cie, abys byl naszym wybranym i wiemy, ze musimy walczyc. 
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="11" targetID="16" group="G1" fromX="4552" fromY="1284" />
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="11" targetID="21" group="G1" fromX="4552" fromY="1204" />„Zgubiony? Jest nas wielu. Dzielimy sie przeblyskami tych, ktorzy dali nam zycie, ale nie mamy zadnych wspomnien, gdy wstalismy z lawy i walczylismy. Pamietamy, ze wzywalismy cie, abys byl naszym wybranym i wiemy, ze musimy walczyc. 
 
 Ale przez ciebie i twoja podroz tutaj, cos gleboko w srodku teraz porusza. Wspomnienia? Albo zwykle odciski? Trzy istoty potrzebowaly wiecej mocy, trzy istoty oddaly swoja, trzy staly sie boskimi domenami, a wiecej - my?'
 </nodes>
     <nodes xsi:type="NodeAdventure" ID="12" positionX="4692" positionY="1886" width="350" height="966">
       <outputs name="Wiec odeszli na dobre?" ownerID="12" targetID="13" fromX="5017" fromY="1394" />
       <outputs name="Ale dlaczego swiatlo jest zle? " ownerID="12" targetID="26" fromX="5017" fromY="1314" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="12" targetID="16" group="G1" fromX="5017" fromY="1234" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="12" targetID="21" group="G1" fromX="5017" fromY="1154" />„Wszyscy trzej polozyli swoje boskie zycie, aby osiagnac swoje cele, wiec teraz wszyscy dzielimy ich moc. 
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="12" targetID="16" group="G1" fromX="5017" fromY="1234" />
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="12" targetID="21" group="G1" fromX="5017" fromY="1154" />„Wszyscy trzej polozyli swoje boskie zycie, aby osiagnac swoje cele, wiec teraz wszyscy dzielimy ich moc. 
 
 Ich prawdziwa esencja oczywiscie nie zostala utracona. To, co utrzymywalo swiat w stanie nienaruszonym, pomimo ciaglych wstrzasow.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="13" positionX="5163" positionY="1791" width="350" height="805">
@@ -7407,7 +7407,7 @@ Twoj bog topi sie w lawie, a ty zostajesz sam, z ostatnim prezentem u stop.</nod
     <nodes xsi:type="NodeAdventure" ID="19" positionX="2926" positionY="488" width="350" height="885">
       <outputs name="Co to znaczy, ze wybral te sciezke? Czy byli inni?" ownerID="19" targetID="20" fromX="3251" fromY="-3" />
       <outputs name="Dlaczego na poczatku stracil pamiec? " ownerID="19" targetID="11" fromX="3251" fromY="-83" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="19" targetID="21" fromX="3251" fromY="-163" />„Tak, jestesmy zwolnieni. Ale odczuwamy, ze nasza potrojna natura nie zawsze byla jasna, abys mogla podazac. Oznacza to, ze musimy wybrac, aby karmic boska nature naszego powolania, nieco uspokoic ogien, aby nasze powolanie stalo sie wyrazniejsze. Dobry.
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="19" targetID="21" fromX="3251" fromY="-163" />„Tak, jestesmy zwolnieni. Ale odczuwamy, ze nasza potrojna natura nie zawsze byla jasna, abys mogla podazac. Oznacza to, ze musimy wybrac, aby karmic boska nature naszego powolania, nieco uspokoic ogien, aby nasze powolanie stalo sie wyrazniejsze. Dobry.
 
 Teraz powiedz swoje pytania, moj mistrzu, poniewaz nie mamy tu zbyt wiele czasu.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="20" positionX="3364" positionY="500" width="350" height="725">
@@ -7742,7 +7742,7 @@ Teraz zdajesz sobie sprawe, ze wszyscy oprocz ciebie, wybranego, zachwycaja sie 
       </logic>
       <outputs name="Co to znaczy, ze wybral te sciezke? Czy byli inni?" ownerID="9" targetID="10" fromX="3518" fromY="1152" />
       <outputs name="Dlaczego na poczatku stracil pamiec? " ownerID="9" targetID="11" fromX="3518" fromY="1072" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="9" targetID="16" fromX="3518" fromY="992" />„Dobrze kroczysz sciezka ksiezyca. Szanujesz nocne bestie, akceptujac je w swojej paczce, lub cenisz wage bystrego oka. Dobry. Dlatego wybieram uwolnienie mojej pierwotnej natury, abysmy mogli sluzyc ksiezycowi. 
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="9" targetID="16" fromX="3518" fromY="992" />„Dobrze kroczysz sciezka ksiezyca. Szanujesz nocne bestie, akceptujac je w swojej paczce, lub cenisz wage bystrego oka. Dobry. Dlatego wybieram uwolnienie mojej pierwotnej natury, abysmy mogli sluzyc ksiezycowi. 
 
 Teraz powiedz swoje pytania, moj mistrzu, poniewaz nie mamy tu zbyt wiele czasu.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="10" positionX="3730" positionY="1843" width="350" height="805">
@@ -7752,8 +7752,8 @@ Teraz powiedz swoje pytania, moj mistrzu, poniewaz nie mamy tu zbyt wiele czasu.
 Dales mi jasnosc, wybrano. Teraz rozumiem ofiary skladane przez starszych bogow i to, co my, mlodzi, musimy zrobic.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="11" positionX="4227" positionY="1856" width="350" height="885">
       <outputs name="Sluchaj dalej." ownerID="11" targetID="12" fromX="4552" fromY="1364" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="11" targetID="16" group="G1" fromX="4552" fromY="1284" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="11" targetID="21" group="G1" fromX="4552" fromY="1204" />„Pamietam, ze zgodzilem sie pozwolic starszym trzem pozyczyc moc ksiezyca przeze mnie, aby ziemia nie rozpadla sie dalej. 
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="11" targetID="16" group="G1" fromX="4552" fromY="1284" />
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="11" targetID="21" group="G1" fromX="4552" fromY="1204" />„Pamietam, ze zgodzilem sie pozwolic starszym trzem pozyczyc moc ksiezyca przeze mnie, aby ziemia nie rozpadla sie dalej. 
 
 To swiatlo, ktore teraz niepokoi nasza ziemie, jest nienaturalne. To nie ksiezyc ani gwiazdy nie swieca najjasniej, ani nawet wiecznie pompatyczne slonce. Tak wiec wszyscy musielismy zmienic, aby z tym walczyc. 
 
@@ -7761,8 +7761,8 @@ Jestem ksiezycem, a ksiezyc jest mna. Aby trojka odebrala mi wladze, musialem sp
     <nodes xsi:type="NodeAdventure" ID="12" positionX="4698" positionY="1861" width="350" height="966">
       <outputs name="Wiec odeszli na dobre?" ownerID="12" targetID="13" fromX="5023" fromY="1369" />
       <outputs name="Ale dlaczego swiatlo jest zle? " ownerID="12" targetID="26" fromX="5023" fromY="1289" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="12" targetID="16" group="G1" fromX="5023" fromY="1209" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="12" targetID="21" group="G1" fromX="5023" fromY="1129" />„Tak wiec ci trzej mogli swobodnie wykuwac swoje domeny i dawac je z powrotem, abysmy mogli stawic czola temu nowemu zagrozeniu i innym, ktore na pewno przyjda. 
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="12" targetID="16" group="G1" fromX="5023" fromY="1209" />
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="12" targetID="21" group="G1" fromX="5023" fromY="1129" />„Tak wiec ci trzej mogli swobodnie wykuwac swoje domeny i oddawac je nam, abysmy mogli stawic czola temu nowemu zagrozeniu i innym, ktore na pewno przyjda. 
 
 Ich prawdziwa esencja oczywiscie nie zostala utracona. To, co utrzymywalo swiat w stanie nienaruszonym, pomimo ciaglych wstrzasow.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="13" positionX="5163" positionY="1791" width="350" height="805">
@@ -7790,7 +7790,7 @@ Ich prawdziwa esencja oczywiscie nie zostala utracona. To, co utrzymywalo swiat 
 
 Moje ostatnie blogoslawienstwo moze sie ujawnic, gdy jedno z waszych dzieci stanie sie dorosle. Ale jak widze, twoja sciezka tutaj juz odblokowala twoja moc, wiec idz, moj wybrany, i wybierz swoja sciezke w moim imieniu.'
 
-Slyszysz ostatnie wycie Horza i klekasz w jego chwale, zanim zostaniesz sam, z ostatnim prezentem umieszczonym u twoich stop.</nodes>
+Slyszysz ostateczne wycie Horza i klekasz w jego chwale, zanim zostaniesz sam, z ostatnim prezentem u stop.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="17" positionX="6686" positionY="-279" width="350" height="530" allPlayersXP="10" allPlayersRP="7" logBookName="QUEST_DIV_HORZ" logBookDescription="QUEST_DIV_ALLGODS_DES" linkedEventUniqueID="0" endOfQuest="true">
       <logic>
         <ModifierBlock>
@@ -7823,7 +7823,7 @@ Slyszysz ostatnie wycie Horza i klekasz w jego chwale, zanim zostaniesz sam, z o
     <nodes xsi:type="NodeAdventure" ID="19" positionX="2926" positionY="488" width="350" height="885">
       <outputs name="Co to znaczy, ze wybral te sciezke? Czy byli inni?" ownerID="19" targetID="20" fromX="3251" fromY="-3" />
       <outputs name="Dlaczego na poczatku stracil pamiec? " ownerID="19" targetID="11" fromX="3251" fromY="-83" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="19" targetID="21" fromX="3251" fromY="-163" />„Walczysz, by podazac sciezka ksiezyca, nie? Wyczuwam, ze nie zawsze kierowaly mna moje domeny, ale byc moze jest to dokladnie to, czego potrzebuje wybrany - ich wlasna sciezka. Mimo to musze teraz skupic sie na boskim powolaniu, poniewaz moj pierwotny sen wyraznie zostawil moj glos obudzony. 
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="19" targetID="21" fromX="3251" fromY="-163" />„Walczysz, by podazac sciezka ksiezyca, nie? Wyczuwam, ze nie zawsze kierowaly mna moje domeny, ale byc moze jest to dokladnie to, czego potrzebuje wybrany - ich wlasna sciezka. Mimo to musze teraz skupic sie na boskim powolaniu, poniewaz moj pierwotny sen wyraznie zostawil moj glos obudzony. 
 
 Teraz powiedz swoje pytania, moj mistrzu, bo nie mamy tu zbyt wiele czasu.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="20" positionX="3399" positionY="495" width="350" height="725">
@@ -7835,7 +7835,7 @@ Dales mi jasnosc, wybrano. Teraz rozumiem ofiary skladane przez starszych bogow 
 
 Moje ostatnie blogoslawienstwo moze sie ujawnic, gdy jedno z waszych dzieci stanie sie dorosle. Ale jak widze, twoja sciezka tutaj juz odblokowala twoja moc, wiec idz, moj wybrany, i wybierz swoja sciezke w moim imieniu.'
 
-Slyszysz ostatnie wycie Horza i klekasz w jego chwale, zanim zostaniesz sam, z ostatnim prezentem umieszczonym u twoich stop.</nodes>
+Slyszysz ostateczne wycie Horza i klekasz w jego chwale, zanim zostaniesz sam, z ostatnim prezentem u stop.</nodes>
     <nodes xsi:type="NodeAdventure" ID="22" positionX="5244" positionY="59" width="350" height="805">
       <logic>
         <ModifierBlock>
@@ -8149,7 +8149,7 @@ Widzisz ogien w oczach matriarchy i zauwazasz, ze wszyscy twoi ludzie, ale ty, w
       </logic>
       <outputs name="Co to znaczy, ze wybrala te sciezke? Czy byli inni?" ownerID="9" targetID="10" fromX="3478" fromY="1174" />
       <outputs name="Dlaczego przede wszystkim stracila pamiec? " ownerID="9" targetID="11" fromX="3478" fromY="1094" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="9" targetID="16" fromX="3478" fromY="1014" />„Idziesz dobrze moja sciezka. Szanujesz surowy potencjal Zamartwionych dzieci, orkow, cenisz sile i sciezke wojownika i dokonales wyborow, aby dzialac szybko i bez litosci, kiedy to mialo znaczenie. Dobry. Moge realizowac moja pierwotna nature z wybranym, ktory dobrze zna swoje miejsce. 
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="9" targetID="16" fromX="3478" fromY="1014" />„Idziesz dobrze moja sciezka. Szanujesz surowy potencjal Zamartwionych dzieci, orkow, cenisz sile i sciezke wojownika i dokonales wyborow, aby dzialac szybko i bez litosci, kiedy to mialo znaczenie. Dobry. Moge realizowac moja pierwotna nature z wybranym, ktory dobrze zna swoje miejsce. 
 
 Teraz powiedz swoje pytania, moj mistrzu, poniewaz nie mamy tu zbyt wiele czasu.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="10" positionX="3598" positionY="1936" width="350" height="805">
@@ -8159,15 +8159,15 @@ Teraz powiedz swoje pytania, moj mistrzu, poniewaz nie mamy tu zbyt wiele czasu.
 Dales mi jasnosc, wybrano. Teraz rozumiem ofiary skladane przez starszych bogow i to, co my, mlodzi, musimy zrobic.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="11" positionX="4140" positionY="1914" width="350" height="885">
       <outputs name="Sluchaj dalej." ownerID="11" targetID="12" fromX="4465" fromY="1422" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="11" targetID="16" group="G1" fromX="4465" fromY="1342" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="11" targetID="21" group="G1" fromX="4465" fromY="1262" />„Moj ojciec Svarog przemowil do mnie, kiedy poczul zepsucie swiatla. Pozwolilem moim gwiazdom sluzyc jego woli iz tego, co teraz wyczuwam, dal te moc trzem starszym, aby mogli zbudowac domene. 
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="11" targetID="16" group="G1" fromX="4465" fromY="1342" />
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="11" targetID="21" group="G1" fromX="4465" fromY="1262" />„Moj ojciec Svarog przemowil do mnie, kiedy poczul zepsucie swiatla. Pozwolilem moim gwiazdom sluzyc jego woli iz tego, co teraz wyczuwam, dal te moc trzem starszym, aby mogli zbudowac domene. 
 
 To swiatlo, ktore teraz niepokoi nasza ziemie, uderzyloby mocno, a ja odmowilbym niczego oprocz frontalnego ataku. Moj ojciec naprawde dobrze mnie zna. I tak, bez mojej pelnej sily, bylem rozdrobniony, kawalek mnie dany tobie. Musial znalezc droge powrotna do mnie, a teraz ma.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="12" positionX="4618" positionY="1888" width="350" height="966">
       <outputs name="Wiec odeszli na dobre?" ownerID="12" targetID="13" fromX="4943" fromY="1396" />
       <outputs name="Ale dlaczego swiatlo jest zle? " ownerID="12" targetID="26" fromX="4943" fromY="1316" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="12" targetID="16" group="G1" fromX="4943" fromY="1236" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="12" targetID="21" group="G1" fromX="4943" fromY="1156" />„Tak wiec, majac wszystkie nasze moce dane nam swobodnie, trzej mogli swobodnie wykuwac swoje domeny i oddawac je nam, abysmy mogli stawic czola temu nowemu zagrozeniu i innym, ktorzy na pewno przyjda. 
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="12" targetID="16" group="G1" fromX="4943" fromY="1236" />
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="12" targetID="21" group="G1" fromX="4943" fromY="1156" />„Tak wiec, majac wszystkie nasze moce dane nam swobodnie, trzej mogli swobodnie wykuwac swoje domeny i oddawac je nam, abysmy mogli stawic czola temu nowemu zagrozeniu i innym, ktorzy na pewno przyjda. 
 
 Ich prawdziwa esencja oczywiscie nie zostala utracona. To, co utrzymywalo swiat w stanie nienaruszonym, pomimo ciaglych wstrzasow.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="13" positionX="5163" positionY="1791" width="350" height="805">
@@ -8228,7 +8228,7 @@ Swiatlo Zoryi obmywa cie i uderza w niebo. Zostajesz sam, z ostatnim prezentem u
     <nodes xsi:type="NodeAdventure" ID="19" positionX="2926" positionY="488" width="350" height="885">
       <outputs name="Co to znaczy, ze wybrala te sciezke? Czy byli inni?" ownerID="19" targetID="20" fromX="3251" fromY="-3" />
       <outputs name="Dlaczego na poczatku stracil pamiec? " ownerID="19" targetID="11" fromX="3251" fromY="-83" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="19" targetID="21" fromX="3251" fromY="-163" />„Dobrze zrobiles, ze przyszedles tutaj, ale czuje, ze Zamet zmieszal twoja droge do mnie i nie zawsze podazales za moim wezwaniem. Musze wtedy wzmocnic moje boskie ja, abysmy oboje mogli chodzic z gwiazdami z pewnoscia. Dobry.
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="19" targetID="21" fromX="3251" fromY="-163" />„Dobrze zrobiles, ze przyszedles tutaj, ale czuje, ze Zamet zmieszal twoja droge do mnie i nie zawsze podazales za moim wezwaniem. Musze wtedy wzmocnic moje boskie ja, abysmy oboje mogli chodzic z gwiazdami z pewnoscia. Dobry.
 
 Teraz powiedz swoje pytania, moj mistrzu, poniewaz nie mamy tu zbyt wiele czasu.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="20" positionX="3399" positionY="495" width="350" height="725">
@@ -8530,7 +8530,7 @@ Zauwazasz rowniez, ze wszyscy oprocz ciebie, wybrani, stali sie zachwyceni i nie
       </logic>
       <outputs name="Co to znaczy, ze wybrala te sciezke? Czy byli inni?" ownerID="9" targetID="10" fromX="3478" fromY="1174" />
       <outputs name="Dlaczego przede wszystkim stracila pamiec? " ownerID="9" targetID="11" fromX="3478" fromY="1094" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="9" targetID="16" fromX="3478" fromY="1014" />„Moja sciezka jest dla mnie zawsze tajemnica, wiec jestem zaskoczony, ze tak dobrze probowales podazac za nia. Preferowaliscie sztuki mistyczne lub przeznaczenie i przyjeliscie przeklete nieozywione, pomimo ich nienaturalnego stanu. W koncu, jesli nie moge im wspolczuc, to kto? W zwiazku z tym wybieram teraz te sciezke. 
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="9" targetID="16" fromX="3478" fromY="1014" />„Moja sciezka jest dla mnie zawsze tajemnica, wiec jestem zaskoczony, ze tak dobrze probowales podazac za nia. Preferowaliscie sztuki mistyczne lub przeznaczenie i przyjeliscie przeklete nieozywione, pomimo ich nienaturalnego stanu. W koncu, jesli nie moge im wspolczuc, to kto? W zwiazku z tym wybieram teraz te sciezke. 
 
 Teraz powiedz swoje pytania, moj mistrzu, poniewaz nie mamy tu zbyt wiele czasu.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="10" positionX="3598" positionY="1936" width="350" height="805">
@@ -8540,15 +8540,15 @@ Teraz powiedz swoje pytania, moj mistrzu, poniewaz nie mamy tu zbyt wiele czasu.
 Dales mi jasnosc, wybrano. Teraz rozumiem ofiary skladane przez starszych bogow i to, co my, mlodzi, musimy zrobic.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="11" positionX="4140" positionY="1914" width="350" height="885">
       <outputs name="Sluchaj dalej." ownerID="11" targetID="12" fromX="4465" fromY="1422" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="11" targetID="16" group="G1" fromX="4465" fromY="1342" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="11" targetID="21" group="G1" fromX="4465" fromY="1262" />„Strace moje wspomnienia? Czy kiedykolwiek zostali naprawde znalezieni, czy w ogole ich mialem? Mieszkam w miejscach mrocznych i samotnych - mieszkalem tam przed przyjsciem. Czy to jakis projekt, czy po prostu moja natura? 
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="11" targetID="16" group="G1" fromX="4465" fromY="1342" />
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="11" targetID="21" group="G1" fromX="4465" fromY="1262" />„Strace moje wspomnienia? Czy kiedykolwiek zostali naprawde znalezieni, czy w ogole ich mialem? Mieszkam w miejscach mrocznych i samotnych - mieszkalem tam przed przyjsciem. Czy to jakis projekt, czy po prostu moja natura? 
 
 To swiatlo, ktore teraz niepokoi nasza ziemie, inni powiedzieli, ze nalezy ja powstrzymac, ze trzeba dac moc, aby narodzila sie nowa moc. Zrozumialem to, wiec zgodzilem sie. Potem bylo ciemno, dopoki nie przyszedles.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="12" positionX="4654" positionY="1865" width="350" height="966">
       <outputs name="Wiec odeszli na dobre?" ownerID="12" targetID="13" fromX="4979" fromY="1373" />
       <outputs name="Ale dlaczego swiatlo jest zle? " ownerID="12" targetID="26" fromX="4979" fromY="1293" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="12" targetID="16" group="G1" fromX="4979" fromY="1213" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="12" targetID="21" group="G1" fromX="4979" fromY="1133" />„Z tego, co wyczuwam, starsi bogowie, trzej - stworzyli domeny. Oczywiscie dostalem trzech do noszenia ... ale moze zasluguje na to. Dali za to swoja boska istote. Ciekawy.
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="12" targetID="16" group="G1" fromX="4979" fromY="1213" />
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="12" targetID="21" group="G1" fromX="4979" fromY="1133" />„Z tego, co wyczuwam, starsi bogowie, trzej - stworzyli domeny. Oczywiscie dostalem trzech do noszenia ... ale moze zasluguje na to. Dali za to swoja boska istote. Ciekawy.
 
 Ich prawdziwa esencja oczywiscie nie zostala utracona. To, co utrzymywalo swiat w stanie nienaruszonym, pomimo ciaglych wstrzasow.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="13" positionX="5163" positionY="1791" width="350" height="805">
@@ -8609,7 +8609,7 @@ Cialo Nyii zostaje okryte ciemna mgla, gdy odchodzi, a ty zostajesz sam, z ostat
     <nodes xsi:type="NodeAdventure" ID="19" positionX="2926" positionY="488" width="350" height="885">
       <outputs name="Co to znaczy, ze wybrala te sciezke? Czy byli inni?" ownerID="19" targetID="20" fromX="3251" fromY="-3" />
       <outputs name="Dlaczego na poczatku stracil pamiec? " ownerID="19" targetID="11" fromX="3251" fromY="-83" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="19" targetID="21" fromX="3251" fromY="-163" />„Moja sciezka jest zawsze owiana tajemnica, nawet dla mnie. Smierc to pewnosc, ale nie dla mnie, wiec co jest pewne - nic? Ale przyjalem ten ciezar, wiec sprobuje znalezc moje boskie powolanie, aby nasze przeznaczenie stalo sie dla nas jasne, wybrane. To dobrze, moze ... 
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="19" targetID="21" fromX="3251" fromY="-163" />„Moja sciezka jest zawsze owiana tajemnica, nawet dla mnie. Smierc to pewnosc, ale nie dla mnie, wiec co jest pewne - nic? Ale przyjalem ten ciezar, wiec sprobuje znalezc moje boskie powolanie, aby nasze przeznaczenie stalo sie dla nas jasne, wybrane. To dobrze, moze ... 
 
 Teraz powiedz swoje pytania, moj mistrzu, poniewaz nie mamy tu zbyt wiele czasu.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="20" positionX="3399" positionY="495" width="350" height="725">
@@ -8898,7 +8898,7 @@ Kiedy znajdujesz sie w objeciach Marovita, czujesz, jak twoja dusza jest wydobyw
       </logic>
       <outputs name="Co to znaczy, ze wybral te sciezke? Czy byli inni?" ownerID="9" targetID="10" fromX="3650" fromY="1036" />
       <outputs name="Dlaczego na poczatku stracil pamiec? " ownerID="9" targetID="11" fromX="3650" fromY="956" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="9" targetID="16" fromX="3650" fromY="876" />„Ha, tak, czuje, ze nasze stado jest poswiecone mojemu staremu ja. Gobliny lub duchy dobrze slysza moje wezwanie lub te naznaczone mistyczna sila, tak? Dobry. 
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="9" targetID="16" fromX="3650" fromY="876" />„Ha, tak, czuje, ze nasze stado jest poswiecone mojemu staremu ja. Gobliny lub duchy dobrze slysza moje wezwanie lub te naznaczone mistyczna sila, tak? Dobry. 
 
 Widze to teraz, moje dni jako szaman, przewodnik duchowy - to sciezka, ktora wybiore. Teraz powiedz swoje pytania, moj mistrzu, poniewaz nie mamy tu zbyt wiele czasu.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="10" positionX="3778" positionY="1797" width="350" height="805">
@@ -8908,15 +8908,15 @@ Widze to teraz, moje dni jako szaman, przewodnik duchowy - to sciezka, ktora wyb
 Dales mi jasnosc, wybrano. Teraz rozumiem ofiary skladane przez starszych bogow i to, co my, mlodzi, musimy zrobic.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="11" positionX="4227" positionY="1856" width="350" height="885">
       <outputs name="Sluchaj dalej." ownerID="11" targetID="12" fromX="4552" fromY="1364" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="11" targetID="16" group="G1" fromX="4552" fromY="1284" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="11" targetID="21" group="G1" fromX="4552" fromY="1204" />„Kiedy trzej starsi bogowie postanowili stworzyc boskie domeny, wzieli wladze od nas wszystkich. Podejrzewam, ze mialo to swoje skutki uboczne. 
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="11" targetID="16" group="G1" fromX="4552" fromY="1284" />
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="11" targetID="21" group="G1" fromX="4552" fromY="1204" />„Kiedy trzej starsi bogowie postanowili stworzyc boskie domeny, wzieli wladze od nas wszystkich. Podejrzewam, ze mialo to swoje skutki uboczne. 
 
 Veles dal swoja moc stworzenia Magii i Intelektu, a ja bylem obdarzony obojgiem. Jako najbardziej bezposredni odbiorca jego mocy i zwiazany z duchami od urodzenia, bylem zwiazany z swiatem szarosci, zapewniajac stabilny przeplyw dusz do ich zycia po smierci. Ale to mnie wyczerpalo i zgubilem sie.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="12" positionX="4717" positionY="1892" width="350" height="966">
       <outputs name="Wiec odeszli na dobre?" ownerID="12" targetID="13" fromX="5042" fromY="1400" />
       <outputs name="Ale dlaczego swiatlo jest zle? " ownerID="12" targetID="26" fromX="5042" fromY="1320" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="12" targetID="16" group="G1" fromX="5042" fromY="1240" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="12" targetID="21" group="G1" fromX="5042" fromY="1160" />„Tak wiec ci trzej mogli swobodnie wykuwac swoje domeny i dawac je z powrotem, abysmy mogli stawic czola temu nowemu zagrozeniu i innym, ktore na pewno przyjda. 
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="12" targetID="16" group="G1" fromX="5042" fromY="1240" />
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="12" targetID="21" group="G1" fromX="5042" fromY="1160" />„Tak wiec ci trzej mogli swobodnie wykuwac swoje domeny i oddawac je nam, abysmy mogli stawic czola temu nowemu zagrozeniu i innym, ktore na pewno przyjda. 
 
 Ich prawdziwa esencja oczywiscie nie zostala utracona. To, co utrzymywalo swiat w stanie nienaruszonym, pomimo ciaglych wstrzasow.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="13" positionX="5184" positionY="1832" width="350" height="805">
@@ -8984,7 +8984,7 @@ Marovit odchodzi w swiat szarosci i zostajesz sam z ostatnim prezentem umieszczo
     <nodes xsi:type="NodeAdventure" ID="19" positionX="2929" positionY="419" width="350" height="885">
       <outputs name="Co to znaczy, ze wybral te sciezke? Czy byli inni?" ownerID="19" targetID="20" fromX="3254" fromY="-72" />
       <outputs name="Dlaczego na poczatku stracil pamiec? " ownerID="19" targetID="11" fromX="3254" fromY="-152" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="19" targetID="21" fromX="3254" fromY="-232" />„Ha, tak, czuje, ze nasze stado jest roznorodne. Nie skupiles sie na moich rodzicach, goblinach ani na sciezce mistycznej ponad innymi. Czuje rowniez, ze sam zachwiales sie, gdy podazales za moimi domenami i dlatego czuje, ze musze wzmocnic moja boska sciezke i puscic przeszlosc. To jest dobre.
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="19" targetID="21" fromX="3254" fromY="-232" />„Ha, tak, czuje, ze nasze stado jest roznorodne. Nie skupiles sie na moich rodzicach, goblinach ani na sciezce mistycznej ponad innymi. Czuje rowniez, ze sam zachwiales sie, gdy podazales za moimi domenami i dlatego czuje, ze musze wzmocnic moja boska sciezke i puscic przeszlosc. To jest dobre.
 
 Teraz powiedz swoje pytania, moj mistrzu, poniewaz nie mamy tu zbyt wiele czasu.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="20" positionX="3364" positionY="500" width="350" height="725">
@@ -9211,7 +9211,7 @@ Widzisz, ze tylko wybrani moga sie poruszac. Wszyscy inni stoja zamrozeni w zach
       </logic>
       <outputs name="Co to znaczy, ze wybral te sciezke? Czy byli inni?" ownerID="9" targetID="10" fromX="3666" fromY="977" />
       <outputs name="Dlaczego na poczatku stracil pamiec? " ownerID="9" targetID="11" fromX="3666" fromY="897" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="9" targetID="16" fromX="3666" fromY="817" />„Ogien plonie, podobnie jak moje serce. Przebuduje teraz moj umysl, abym mogl znowu sluzyc. A ty - dobrze zrobiles, podazajac moja sciezka, widze. Czcisz rzemioslo, cenisz madrosc lub zaprzyjazniasz sie z wielkim krasnoludzkim krewnym. To madre. 
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="9" targetID="16" fromX="3666" fromY="817" />„Ogien plonie, podobnie jak moje serce. Przebuduje teraz moj umysl, abym mogl znowu sluzyc. A ty - dobrze zrobiles, podazajac moja sciezka, widze. Czcisz rzemioslo, cenisz madrosc lub zaprzyjazniasz sie z wielkim krasnoludzkim krewnym. To madre. 
 
 Widze teraz, ze musze wzmocnic moje powolanie jako rzemieslnika i pamietac moje korzenie, aby pomoc w ksztaltowaniu lepszej przyszlosci. Teraz powiedz swoje pytania, moj mistrzu, poniewaz nie mamy tu zbyt wiele czasu.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="10" positionX="3778" positionY="1797" width="350" height="805">
@@ -9221,15 +9221,15 @@ Widze teraz, ze musze wzmocnic moje powolanie jako rzemieslnika i pamietac moje 
 Dales mi jasnosc, wybrano. Teraz rozumiem ofiary skladane przez starszych bogow i to, co my, mlodzi, musimy zrobic.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="11" positionX="4227" positionY="1856" width="350" height="885">
       <outputs name="Sluchaj dalej." ownerID="11" targetID="12" fromX="4552" fromY="1364" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="11" targetID="16" group="G1" fromX="4552" fromY="1284" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="11" targetID="21" group="G1" fromX="4552" fromY="1204" />„Kiedy trzej starsi bogowie postanowili stworzyc boskie domeny, wzieli wladze od nas wszystkich. Podejrzewam, ze mialo to swoje skutki uboczne. 
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="11" targetID="16" group="G1" fromX="4552" fromY="1284" />
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="11" targetID="21" group="G1" fromX="4552" fromY="1204" />„Kiedy trzej starsi bogowie postanowili stworzyc boskie domeny, wzieli wladze od nas wszystkich. Podejrzewam, ze mialo to swoje skutki uboczne. 
 
 Zamieszanie i Swiatlo pochodza od mojego ojca, ale on musial wyzywic moje mistrzostwo slonca, aby to osiagnac. Podejrzewam, ze to oslabilo mnie na jakis czas. Bylem kiedys bogiem slonca. Kiedy swiatlo ucieklo z jego granic, najbardziej mnie to pociagalo. Podejrzewam, ze moja utrata mocy byla konieczna, abym nie upadl.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="12" positionX="4709" positionY="1870" width="350" height="966">
       <outputs name="Wiec odeszli na dobre?" ownerID="12" targetID="13" fromX="5034" fromY="1378" />
       <outputs name="Ale dlaczego swiatlo jest zle? " ownerID="12" targetID="26" fromX="5034" fromY="1298" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="12" targetID="16" group="G1" fromX="5034" fromY="1218" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="12" targetID="21" group="G1" fromX="5034" fromY="1138" />„Tak wiec ci trzej mogli swobodnie wykuwac swoje domeny i dawac je z powrotem, abysmy mogli stawic czola temu nowemu zagrozeniu i innym, ktore na pewno przyjda. 
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="12" targetID="16" group="G1" fromX="5034" fromY="1218" />
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="12" targetID="21" group="G1" fromX="5034" fromY="1138" />„Tak wiec ci trzej mogli swobodnie wykuwac swoje domeny i oddawac je nam, abysmy mogli stawic czola temu nowemu zagrozeniu i innym, ktore na pewno przyjda. 
 
 Ich prawdziwa esencja oczywiscie nie zostala utracona. To, co utrzymywalo swiat w stanie nienaruszonym, pomimo ciaglych wstrzasow.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="13" positionX="5148" positionY="1817" width="350" height="805">
@@ -9294,7 +9294,7 @@ Marovit odchodzi w swiat szarosci i zostajesz sam z ostatnim prezentem umieszczo
     <nodes xsi:type="NodeAdventure" ID="19" positionX="2926" positionY="488" width="350" height="885">
       <outputs name="Co to znaczy, ze wybral te sciezke? Czy byli inni?" ownerID="19" targetID="20" fromX="3251" fromY="-3" />
       <outputs name="Dlaczego na poczatku stracil pamiec? " ownerID="19" targetID="11" fromX="3251" fromY="-83" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="19" targetID="21" fromX="3251" fromY="-163" />„Ogien plonie, podobnie jak moje serce. Przebuduje teraz moj umysl, abym mogl znowu sluzyc. Wy, wyraznie, faworyzujecie zawirowania na swojej drodze, poniewaz nie zawsze podazaliscie za moimi wyborami. Dlatego bede musial wzmocnic moja boska obecnosc, byc moze znow spojrzec na slonce, a nie na przyziemne. Tak. Dobry.
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="19" targetID="21" fromX="3251" fromY="-163" />„Ogien plonie, podobnie jak moje serce. Przebuduje teraz moj umysl, abym mogl znowu sluzyc. Wy, wyraznie, faworyzujecie zawirowania na swojej drodze, poniewaz nie zawsze podazaliscie za moimi wyborami. Dlatego bede musial wzmocnic moja boska obecnosc, byc moze znow spojrzec na slonce, a nie na przyziemne. Tak. Dobry.
 
 Teraz powiedz swoje pytania, moj mistrzu, poniewaz nie mamy tu zbyt wiele czasu.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="20" positionX="3364" positionY="500" width="350" height="725">
@@ -9584,7 +9584,7 @@ Dmuchi cie pocalunkiem i kontynuuje taniec.</nodes>
       </logic>
       <outputs name="Co to znaczy, ze wybrala te sciezke? Czy byli inni?" ownerID="9" targetID="10" fromX="3518" fromY="1152" />
       <outputs name="Dlaczego przede wszystkim stracila pamiec? " ownerID="9" targetID="11" fromX="3518" fromY="1072" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="9" targetID="16" fromX="3518" fromY="992" />„Wyczuwam, ze dobrze szedles moja sciezka i czuje, ze wolanie mojej prawdziwej natury promieniuje od ciebie. Preferowales intelekt w swoim ludowym, pielegnowanym pieknie lub doceniales uzdrawiajaca moc, a moze jestes wyjatkowo plodny. Niezaleznie od tego, dobrze wybrales sciezke. 
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="9" targetID="16" fromX="3518" fromY="992" />„Wyczuwam, ze dobrze szedles moja sciezka i czuje, ze wolanie mojej prawdziwej natury promieniuje od ciebie. Preferowales intelekt w swoim ludowym, pielegnowanym pieknie lub doceniales uzdrawiajaca moc, a moze jestes wyjatkowo plodny. Niezaleznie od tego, dobrze wybrales sciezke. 
 
 Teraz powiedz swoje pytania, moj mistrzu, poniewaz nie mamy tu zbyt wiele czasu.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="10" positionX="3730" positionY="1843" width="350" height="805">
@@ -9594,15 +9594,15 @@ Teraz powiedz swoje pytania, moj mistrzu, poniewaz nie mamy tu zbyt wiele czasu.
 Dales mi jasnosc, wybrano. Teraz rozumiem ofiary skladane przez starszych bogow i to, co my, mlodzi, musimy zrobic.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="11" positionX="4227" positionY="1856" width="350" height="885">
       <outputs name="Sluchaj dalej." ownerID="11" targetID="12" fromX="4552" fromY="1364" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="11" targetID="16" group="G1" fromX="4552" fromY="1284" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="11" targetID="21" group="G1" fromX="4552" fromY="1204" />„Kiedy trzej starsi bogowie postanowili stworzyc boskie domeny, wzieli wladze od nas wszystkich. Podejrzewam, ze mialo to swoje skutki uboczne. 
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="11" targetID="16" group="G1" fromX="4552" fromY="1284" />
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="11" targetID="21" group="G1" fromX="4552" fromY="1204" />„Kiedy trzej starsi bogowie postanowili stworzyc boskie domeny, wzieli wladze od nas wszystkich. Podejrzewam, ze mialo to swoje skutki uboczne. 
 
 To swiatlo, ktore teraz niepokoi nasza ziemie, mowi glosno o harmonii i rozsadku. Probuje zwabic istoty takie jak ja na bok. Byc moze musialem zapomniec na jakis czas, aby nie ulec pokusie, by czekac, az wybrany czlowiek przyjdzie i stanie sie moim narzedziem w krolestwach smiertelnikow. Tak.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="12" positionX="4709" positionY="1870" width="350" height="966">
       <outputs name="Wiec odeszli na dobre?" ownerID="12" targetID="13" fromX="5034" fromY="1378" />
       <outputs name="Ale dlaczego swiatlo jest zle? " ownerID="12" targetID="26" fromX="5034" fromY="1298" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="12" targetID="16" group="G1" fromX="5034" fromY="1218" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="12" targetID="21" group="G1" fromX="5034" fromY="1138" />„Tak wiec ci trzej mogli swobodnie wykuwac swoje domeny i dawac je z powrotem, abysmy mogli stawic czola temu nowemu zagrozeniu i innym, ktore na pewno przyjda. 
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="12" targetID="16" group="G1" fromX="5034" fromY="1218" />
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="12" targetID="21" group="G1" fromX="5034" fromY="1138" />„Tak wiec ci trzej mogli swobodnie wykuwac swoje domeny i oddawac je nam, abysmy mogli stawic czola temu nowemu zagrozeniu i innym, ktore na pewno przyjda. 
 
 Ich prawdziwa esencja oczywiscie nie zostala utracona. To, co utrzymywalo swiat w stanie nienaruszonym, pomimo ciaglych wstrzasow.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="13" positionX="5163" positionY="1791" width="350" height="805">
@@ -9663,7 +9663,7 @@ Urzekajaca wada Lady oslodzi powietrze, gdy odchodzi, zostawiajac cie samego z o
     <nodes xsi:type="NodeAdventure" ID="19" positionX="2926" positionY="488" width="350" height="885">
       <outputs name="Co to znaczy, ze wybral te sciezke? Czy byli inni?" ownerID="19" targetID="20" fromX="3251" fromY="-3" />
       <outputs name="Dlaczego na poczatku stracil pamiec? " ownerID="19" targetID="11" fromX="3251" fromY="-83" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="19" targetID="21" fromX="3251" fromY="-163" />„Tak, dales mi iskre radosci z powrotem, chociaz czuje, ze nie zawsze chodziles dobrze moja sciezka. Ale to tylko oznacza, ze musze odnowic moje zaufanie jako boskie i byc moze mniej martwic sie o frywolnosc mojej natury. Dales mi jasna sciezke. To jest dobre.
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="19" targetID="21" fromX="3251" fromY="-163" />„Tak, dales mi iskre radosci z powrotem, chociaz czuje, ze nie zawsze chodziles dobrze moja sciezka. Ale to tylko oznacza, ze musze odnowic moje zaufanie jako boskie i byc moze mniej martwic sie o frywolnosc mojej natury. Dales mi jasna sciezke. To jest dobre.
 
 Teraz powiedz swoje pytania, moj mistrzu, poniewaz nie mamy tu zbyt wiele czasu.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="20" positionX="3399" positionY="495" width="350" height="725">
@@ -9955,7 +9955,7 @@ Widzisz paczke dzikiego wloczegi Dievanny. Jeden z nich wyroznia sie - wyzszy, s
       </logic>
       <outputs name="Co to znaczy, ze wybrala te sciezke? Czy byli inni?" ownerID="9" targetID="10" fromX="3513" fromY="1160" />
       <outputs name="Dlaczego przede wszystkim stracila pamiec? " ownerID="9" targetID="11" fromX="3513" fromY="1080" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="9" targetID="16" fromX="3513" fromY="1000" />„Jak dotad podazales moja sciezka. Szanowal prawa lasu, byc moze zaprzyjaznil sie z niektorymi moimi stworzeniami, lub, jesli to mozliwe, wybral harmonie ponad przemoc. Dobry. Od dawna powiedzialem, ze nalezy podazac za instynktem, a ja rowniez wybiore boskosc. 
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="9" targetID="16" fromX="3513" fromY="1000" />„Jak dotad podazales moja sciezka. Szanowal prawa lasu, byc moze zaprzyjaznil sie z niektorymi moimi stworzeniami, lub, jesli to mozliwe, wybral harmonie ponad przemoc. Dobry. Od dawna powiedzialem, ze nalezy podazac za instynktem, a ja rowniez wybiore boskosc. 
 
 Teraz powiedz swoje pytania, moj mistrzu, bo nie mamy tu zbyt wiele czasu.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="10" positionX="3653" positionY="1871" width="350" height="805">
@@ -9965,15 +9965,15 @@ Teraz powiedz swoje pytania, moj mistrzu, bo nie mamy tu zbyt wiele czasu.'</nod
 Dales mi jasnosc, wybrano. Teraz rozumiem ofiary skladane przez starszych bogow i to, co my, mlodzi, musimy zrobic.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="11" positionX="4158" positionY="1875" width="350" height="885">
       <outputs name="Sluchaj dalej." ownerID="11" targetID="12" fromX="4483" fromY="1383" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="11" targetID="16" group="G1" fromX="4483" fromY="1303" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="11" targetID="21" group="G1" fromX="4483" fromY="1223" />„Nie zrobilem tego. Bylem zajety i czekalem, az sie rozwiniesz. Kiedy trzej bogowie dali nam domeny, to rowniez wyczerpalo nasza moc. Dla niektorych sprawilo to, ze byli zdezorientowani, zagubieni, a dla innych poszlismy cicho, aby odzyskac spokoj. 
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="11" targetID="16" group="G1" fromX="4483" fromY="1303" />
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="11" targetID="21" group="G1" fromX="4483" fromY="1223" />„Nie zrobilem tego. Bylem zajety i czekalem, az sie rozwiniesz. Kiedy trzej bogowie dali nam domeny, to rowniez wyczerpalo nasza moc. Dla niektorych sprawilo to, ze byli zdezorientowani, zagubieni, a dla innych poszlismy cicho, aby odzyskac spokoj. 
 
 To swiatlo, ktore teraz niepokoi nasza ziemie, jest nienaturalne, niezrownowazone - obiecuje harmonie, ale klamie. Harmonia moze pochodzic tylko ze wspolistnienia dwoch sil, a nie dominacji jednej. Ale kiedy czekalismy na rozwoj naszych narzedzi, musialem chronic lasy przed plaga.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="12" positionX="4669" positionY="1880" width="350" height="966">
       <outputs name="Wiec odeszli na dobre?" ownerID="12" targetID="13" fromX="4994" fromY="1388" />
       <outputs name="Ale dlaczego swiatlo jest zle? " ownerID="12" targetID="26" fromX="4994" fromY="1308" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="12" targetID="16" group="G1" fromX="4994" fromY="1228" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="12" targetID="21" group="G1" fromX="4994" fromY="1148" />„Tak wiec ci trzej mogli swobodnie wykuwac swoje domeny i dawac je z powrotem, abysmy mogli stawic czola temu nowemu zagrozeniu i innym, ktore na pewno przyjda. 
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="12" targetID="16" group="G1" fromX="4994" fromY="1228" />
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="12" targetID="21" group="G1" fromX="4994" fromY="1148" />„Tak wiec ci trzej mogli swobodnie wykuwac swoje domeny i dawac je z powrotem, abysmy mogli stawic czola temu nowemu zagrozeniu i innym, ktore na pewno przyjda. 
 
 Ich prawdziwa esencja oczywiscie nie zostala utracona. To, co utrzymywalo swiat w stanie nienaruszonym, pomimo ciaglych wstrzasow.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="13" positionX="5163" positionY="1791" width="350" height="725">
@@ -10038,7 +10038,7 @@ Odwracasz sie na sekunde i juz nie widzisz Dievanny, tylko las, wiec zostajesz s
     <nodes xsi:type="NodeAdventure" ID="19" positionX="2926" positionY="488" width="350" height="885">
       <outputs name="Co to znaczy, ze wybrala te sciezke? Czy byli inni?" ownerID="19" targetID="20" fromX="3251" fromY="-3" />
       <outputs name="Dlaczego na poczatku stracil pamiec? " ownerID="19" targetID="11" fromX="3251" fromY="-83" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="19" targetID="21" fromX="3251" fromY="-163" />„Widze, ze z trudem staraliscie sie podazac moja sciezka, ale takze przeszliscie wszystkie testy, ktore wam dano i przybyliscie tutaj. To mi mowi, ze nadszedl czas, aby wybrac boska sciezke i przelac moja pierwotna nature, przynajmniej na razie. 
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="19" targetID="21" fromX="3251" fromY="-163" />„Widze, ze z trudem staraliscie sie podazac moja sciezka, ale takze przeszliscie wszystkie testy, ktore wam dano i przybyliscie tutaj. To mi mowi, ze nadszedl czas, aby wybrac boska sciezke i przelac moja pierwotna nature, przynajmniej na razie. 
 
 Teraz powiedz swoje pytania, moj mistrzu, poniewaz nie mamy tu zbyt wiele czasu.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="20" positionX="3399" positionY="495" width="350" height="725">
@@ -10085,8 +10085,8 @@ Odwracasz sie na sekunde i juz nie widzisz Dievanny, tylko las, wiec zostajesz s
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="25" positionX="5099" positionY="2852" width="350" height="966">
       <outputs name="Dlaczego przede wszystkim stracila pamiec? " ownerID="25" targetID="11" fromX="5424" fromY="2360" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="25" targetID="16" group="G1" fromX="5424" fromY="2360" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="25" targetID="21" group="G1" fromX="5424" fromY="2360" />
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="25" targetID="16" group="G1" fromX="5424" fromY="2360" />
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="25" targetID="21" group="G1" fromX="5424" fromY="2360" />
       <outputs name="Czy wiec trzej bogowie odeszli na dobre?" ownerID="25" targetID="13" fromX="5424" fromY="2360" />„Veles wybral ciemna sciezke z dala od swojego pochodzenia. Mokosh stal sie silniejszy jako tworca i nie byl w stanie pozostac blisko lasow. Nowi bogowie sa potrzebni, a las potrzebowal, wiec zrzucilem moja elfia przeszlosc, tak jak kiedys Veles, i zdecydowalem sie dolaczyc do dzieci kosmicznego drzewa.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="26" positionX="4397" positionY="2706" width="350" height="725">
       <outputs name="Sluchaj dalej." ownerID="26" targetID="34" fromX="4722" fromY="2214" />„To nie jest ani zle, ani dobre, tak jak jego rodzenstwo, ciemnosc. Oboje sa zmuszeni do przestrzegania ich natury. 
@@ -10362,7 +10362,7 @@ Teraz zdajesz sobie sprawe, ze wszyscy oprocz ciebie, wybranego, zachwycaja sie 
       </logic>
       <outputs name="Co to znaczy, ze wybral te sciezke? Czy byli inni?" ownerID="9" targetID="10" fromX="3518" fromY="1152" />
       <outputs name="Dlaczego na poczatku stracil pamiec? " ownerID="9" targetID="11" fromX="3518" fromY="1072" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="9" targetID="16" fromX="3518" fromY="992" />„Dobrze kroczysz sciezka ksiezyca. Szanujesz nocne bestie, akceptujac je w swojej paczce, lub cenisz wage bystrego oka. Dobry. Dlatego wybieram uwolnienie mojej pierwotnej natury, abysmy mogli sluzyc ksiezycowi. 
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="9" targetID="16" fromX="3518" fromY="992" />„Dobrze kroczysz sciezka ksiezyca. Szanujesz nocne bestie, akceptujac je w swojej paczce, lub cenisz wage bystrego oka. Dobry. Dlatego wybieram uwolnienie mojej pierwotnej natury, abysmy mogli sluzyc ksiezycowi. 
 
 Teraz powiedz swoje pytania, moj mistrzu, poniewaz nie mamy tu zbyt wiele czasu.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="10" positionX="3730" positionY="1843" width="350" height="805">
@@ -10372,8 +10372,8 @@ Teraz powiedz swoje pytania, moj mistrzu, poniewaz nie mamy tu zbyt wiele czasu.
 Dales mi jasnosc, wybrano. Teraz rozumiem ofiary skladane przez starszych bogow i to, co my, mlodzi, musimy zrobic.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="11" positionX="4227" positionY="1856" width="350" height="885">
       <outputs name="Sluchaj dalej." ownerID="11" targetID="12" fromX="4552" fromY="1364" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="11" targetID="16" group="G1" fromX="4552" fromY="1284" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="11" targetID="21" group="G1" fromX="4552" fromY="1204" />„Pamietam, ze zgodzilem sie pozwolic starszym trzem pozyczyc moc ksiezyca przeze mnie, aby ziemia nie rozpadla sie dalej. 
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="11" targetID="16" group="G1" fromX="4552" fromY="1284" />
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="11" targetID="21" group="G1" fromX="4552" fromY="1204" />„Pamietam, ze zgodzilem sie pozwolic starszym trzem pozyczyc moc ksiezyca przeze mnie, aby ziemia nie rozpadla sie dalej. 
 
 To swiatlo, ktore teraz niepokoi nasza ziemie, jest nienaturalne. To nie ksiezyc ani gwiazdy nie swieca najjasniej, ani nawet wiecznie pompatyczne slonce. Tak wiec wszyscy musielismy zmienic, aby z tym walczyc. 
 
@@ -10381,8 +10381,8 @@ Jestem ksiezycem, a ksiezyc jest mna. Aby trojka odebrala mi wladze, musialem sp
     <nodes xsi:type="NodeAdventure" ID="12" positionX="4698" positionY="1861" width="350" height="966">
       <outputs name="Wiec odeszli na dobre?" ownerID="12" targetID="13" fromX="5023" fromY="1369" />
       <outputs name="Ale dlaczego swiatlo jest zle? " ownerID="12" targetID="26" fromX="5023" fromY="1289" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="12" targetID="16" group="G1" fromX="5023" fromY="1209" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="12" targetID="21" group="G1" fromX="5023" fromY="1129" />„Tak wiec ci trzej mogli swobodnie wykuwac swoje domeny i dawac je z powrotem, abysmy mogli stawic czola temu nowemu zagrozeniu i innym, ktore na pewno przyjda. 
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="12" targetID="16" group="G1" fromX="5023" fromY="1209" />
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="12" targetID="21" group="G1" fromX="5023" fromY="1129" />„Tak wiec ci trzej mogli swobodnie wykuwac swoje domeny i oddawac je nam, abysmy mogli stawic czola temu nowemu zagrozeniu i innym, ktore na pewno przyjda. 
 
 Ich prawdziwa esencja oczywiscie nie zostala utracona. To, co utrzymywalo swiat w stanie nienaruszonym, pomimo ciaglych wstrzasow.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="13" positionX="5163" positionY="1791" width="350" height="805">
@@ -10410,7 +10410,7 @@ Ich prawdziwa esencja oczywiscie nie zostala utracona. To, co utrzymywalo swiat 
 
 Moje ostatnie blogoslawienstwo moze sie ujawnic, gdy jedno z waszych dzieci stanie sie dorosle. Ale jak widze, twoja sciezka tutaj juz odblokowala twoja moc, wiec idz, moj wybrany, i wybierz swoja sciezke w moim imieniu.'
 
-Slyszysz ostatnie wycie Horza i klekasz w jego chwale, zanim zostaniesz sam, z ostatnim prezentem umieszczonym u twoich stop.</nodes>
+Slyszysz ostateczne wycie Horza i klekasz w jego chwale, zanim zostaniesz sam, z ostatnim prezentem u stop.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="17" positionX="6823" positionY="-389" width="350" height="530" allPlayersXP="10" allPlayersRP="7" logBookName="QUEST_DIV_HORZ" logBookDescription="QUEST_DIV_ALLGODS_DES" linkedEventUniqueID="0" endOfQuest="true">
       <logic>
         <ModifierBlock>
@@ -10443,7 +10443,7 @@ Slyszysz ostatnie wycie Horza i klekasz w jego chwale, zanim zostaniesz sam, z o
     <nodes xsi:type="NodeAdventure" ID="19" positionX="2926" positionY="488" width="350" height="885">
       <outputs name="Co to znaczy, ze wybral te sciezke? Czy byli inni?" ownerID="19" targetID="20" fromX="3251" fromY="-3" />
       <outputs name="Dlaczego na poczatku stracil pamiec? " ownerID="19" targetID="11" fromX="3251" fromY="-83" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="19" targetID="21" fromX="3251" fromY="-163" />„Walczysz, by podazac sciezka ksiezyca, nie? Wyczuwam, ze nie zawsze kierowaly mna moje domeny, ale byc moze jest to dokladnie to, czego potrzebuje wybrany - ich wlasna sciezka. Mimo to musze teraz skupic sie na boskim powolaniu, poniewaz moj pierwotny sen wyraznie zostawil moj glos obudzony. 
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="19" targetID="21" fromX="3251" fromY="-163" />„Walczysz, by podazac sciezka ksiezyca, nie? Wyczuwam, ze nie zawsze kierowaly mna moje domeny, ale byc moze jest to dokladnie to, czego potrzebuje wybrany - ich wlasna sciezka. Mimo to musze teraz skupic sie na boskim powolaniu, poniewaz moj pierwotny sen wyraznie zostawil moj glos obudzony. 
 
 Teraz powiedz swoje pytania, moj mistrzu, bo nie mamy tu zbyt wiele czasu.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="20" positionX="3399" positionY="495" width="350" height="725">
@@ -10455,7 +10455,7 @@ Dales mi jasnosc, wybrano. Teraz rozumiem ofiary skladane przez starszych bogow 
 
 Moje ostatnie blogoslawienstwo moze sie ujawnic, gdy jedno z waszych dzieci stanie sie dorosle. Ale jak widze, twoja sciezka tutaj juz odblokowala twoja moc, wiec idz, moj wybrany, i wybierz swoja sciezke w moim imieniu.'
 
-Slyszysz ostatnie wycie Horza i klekasz w jego chwale, zanim zostaniesz sam, z ostatnim prezentem umieszczonym u twoich stop.</nodes>
+Slyszysz ostateczne wycie Horza i klekasz w jego chwale, zanim zostaniesz sam, z ostatnim prezentem u stop.</nodes>
     <nodes xsi:type="NodeAdventure" ID="22" positionX="5244" positionY="59" width="350" height="805">
       <logic>
         <ModifierBlock>
@@ -10745,7 +10745,7 @@ Zauwazasz rowniez, ze wszyscy oprocz ciebie, wybrani, stali sie zachwyceni i nie
       </logic>
       <outputs name="Co to znaczy, ze wybrala te sciezke? Czy byli inni?" ownerID="9" targetID="10" fromX="3478" fromY="1174" />
       <outputs name="Dlaczego przede wszystkim stracila pamiec? " ownerID="9" targetID="11" fromX="3478" fromY="1094" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="9" targetID="16" fromX="3478" fromY="1014" />„Moja sciezka jest dla mnie zawsze tajemnica, wiec jestem zaskoczony, ze tak dobrze probowales podazac za nia. Preferowaliscie sztuki mistyczne lub przeznaczenie i przyjeliscie przeklete nieozywione, pomimo ich nienaturalnego stanu. W koncu, jesli nie moge im wspolczuc, to kto? W zwiazku z tym wybieram teraz te sciezke. 
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="9" targetID="16" fromX="3478" fromY="1014" />„Moja sciezka jest dla mnie zawsze tajemnica, wiec jestem zaskoczony, ze tak dobrze probowales podazac za nia. Preferowaliscie sztuki mistyczne lub przeznaczenie i przyjeliscie przeklete nieozywione, pomimo ich nienaturalnego stanu. W koncu, jesli nie moge im wspolczuc, to kto? W zwiazku z tym wybieram teraz te sciezke. 
 
 Teraz powiedz swoje pytania, moj mistrzu, poniewaz nie mamy tu zbyt wiele czasu.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="10" positionX="3598" positionY="1936" width="350" height="805">
@@ -10755,15 +10755,15 @@ Teraz powiedz swoje pytania, moj mistrzu, poniewaz nie mamy tu zbyt wiele czasu.
 Dales mi jasnosc, wybrano. Teraz rozumiem ofiary skladane przez starszych bogow i to, co my, mlodzi, musimy zrobic.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="11" positionX="4140" positionY="1914" width="350" height="885">
       <outputs name="Sluchaj dalej." ownerID="11" targetID="12" fromX="4465" fromY="1422" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="11" targetID="16" group="G1" fromX="4465" fromY="1342" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="11" targetID="21" group="G1" fromX="4465" fromY="1262" />„Strace moje wspomnienia? Czy kiedykolwiek zostali naprawde znalezieni, czy w ogole ich mialem? Mieszkam w miejscach mrocznych i samotnych - mieszkalem tam przed przyjsciem. Czy to jakis projekt, czy po prostu moja natura? 
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="11" targetID="16" group="G1" fromX="4465" fromY="1342" />
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="11" targetID="21" group="G1" fromX="4465" fromY="1262" />„Strace moje wspomnienia? Czy kiedykolwiek zostali naprawde znalezieni, czy w ogole ich mialem? Mieszkam w miejscach mrocznych i samotnych - mieszkalem tam przed przyjsciem. Czy to jakis projekt, czy po prostu moja natura? 
 
 To swiatlo, ktore teraz niepokoi nasza ziemie, inni powiedzieli, ze nalezy ja powstrzymac, ze trzeba dac moc, aby narodzila sie nowa moc. Zrozumialem to, wiec zgodzilem sie. Potem bylo ciemno, dopoki nie przyszedles.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="12" positionX="4654" positionY="1865" width="350" height="966">
       <outputs name="Wiec odeszli na dobre?" ownerID="12" targetID="13" fromX="4979" fromY="1373" />
       <outputs name="Ale dlaczego swiatlo jest zle? " ownerID="12" targetID="26" fromX="4979" fromY="1293" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="12" targetID="16" group="G1" fromX="4979" fromY="1213" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="12" targetID="21" group="G1" fromX="4979" fromY="1133" />„Z tego, co wyczuwam, starsi bogowie, trzej - stworzyli domeny. Oczywiscie dostalem trzech do noszenia ... ale moze zasluguje na to. Dali za to swoja boska istote. Ciekawy.
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="12" targetID="16" group="G1" fromX="4979" fromY="1213" />
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="12" targetID="21" group="G1" fromX="4979" fromY="1133" />„Z tego, co wyczuwam, starsi bogowie, trzej - stworzyli domeny. Oczywiscie dostalem trzech do noszenia ... ale moze zasluguje na to. Dali za to swoja boska istote. Ciekawy.
 
 Ich prawdziwa esencja oczywiscie nie zostala utracona. To, co utrzymywalo swiat w stanie nienaruszonym, pomimo ciaglych wstrzasow.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="13" positionX="5163" positionY="1791" width="350" height="805">
@@ -10824,7 +10824,7 @@ Cialo Nyii zostaje okryte ciemna mgla, gdy odchodzi, a ty zostajesz sam, z ostat
     <nodes xsi:type="NodeAdventure" ID="19" positionX="2926" positionY="488" width="350" height="885">
       <outputs name="Co to znaczy, ze wybrala te sciezke? Czy byli inni?" ownerID="19" targetID="20" fromX="3251" fromY="-3" />
       <outputs name="Dlaczego na poczatku stracil pamiec? " ownerID="19" targetID="11" fromX="3251" fromY="-83" />
-      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostateczne blogoslawienstwo. " ownerID="19" targetID="21" fromX="3251" fromY="-163" />„Moja sciezka jest zawsze owiana tajemnica, nawet dla mnie. Smierc to pewnosc, ale nie dla mnie, wiec co jest pewne - nic? Ale przyjalem ten ciezar, wiec sprobuje znalezc moje boskie powolanie, aby nasze przeznaczenie stalo sie dla nas jasne, wybrane. To dobrze, moze ... 
+      <outputs name="Powiedz, ze nie szukasz odpowiedzi; swiat czeka na twoj powrot. Uklon sie przed swoim bogiem i popros o ostatnie blogoslawienstwo. " ownerID="19" targetID="21" fromX="3251" fromY="-163" />„Moja sciezka jest zawsze owiana tajemnica, nawet dla mnie. Smierc to pewnosc, ale nie dla mnie, wiec co jest pewne - nic? Ale przyjalem ten ciezar, wiec sprobuje znalezc moje boskie powolanie, aby nasze przeznaczenie stalo sie dla nas jasne, wybrane. To dobrze, moze ... 
 
 Teraz powiedz swoje pytania, moj mistrzu, poniewaz nie mamy tu zbyt wiele czasu.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="20" positionX="3399" positionY="495" width="350" height="725">

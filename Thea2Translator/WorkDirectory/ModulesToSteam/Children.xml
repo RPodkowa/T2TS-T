@@ -69,7 +69,8 @@
       </logic>
       <outputs name="Radujcie sie." ownerID="2" targetID="3" fromX="760" fromY="-647" />Dwaj z was lubia razem troche czasu, byc moze jestescie przyjaciolmi wiecej. 
 
-Ale wciaz czujny i nieco zafascynowany bocian jest dostrzegany w poblizu i pewny jak smierc, wkrotce przyprowadzane jest do ciebie dziecko. </nodes>
+Ale wciaz czujny i nieco zafascynowany bocian jest dostrzegany w poblizu i pewny jak smierc, wkrotce przyprowadzane jest do ciebie dziecko. 
+</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="3" positionX="854" positionY="-334" width="350" height="530" linkedEventUniqueID="0" />
   </Adventure>
   <Adventure name="StorkGob" uniqueID="2" allowOnce="true" typeGeneric="false" typePerGroupGeneric="true" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="3" joinIsForced="false" joinType="OnlyOwn" joinRange="SinglePosition">
@@ -913,7 +914,7 @@ Bocian zwiastuje dziecko ze zwiazku, ale to, kim bedzie to dziecko, jest tajemni
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Wez je." ownerID="5" targetID="6" fromX="1366" fromY="-171" />W przeciwienstwie do wszystkich znanych zwyczajow z zakresu wiedzy i krasnoludow, krasnoludzkie dziecko, wyrosle poza rockowe niemowlectwo, przychodzi i wiesz, ze to twoje.</nodes>
+      <outputs name="Wez je." ownerID="5" targetID="6" fromX="1366" fromY="-171" />W przeciwienstwie do wszystkich znanych zwyczajow z zakresu wiedzy i krasnoludow, krasnoludzkie dziecko, wyrosle poza rockowe niemowlectwo, przychodzi i wiesz, ze jest ono twoje.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="6" positionX="1906" positionY="-264" width="350" height="455" linkedEventUniqueID="0">
       <logic>
         <ModifierBlock>
@@ -958,7 +959,7 @@ Bocian zwiastuje dziecko ze zwiazku, ale to, kim bedzie to dziecko, jest tajemni
           </LogicFilter>
         </FilterBlock>
       </logic>
-      <outputs name="Wez je." ownerID="10" targetID="11" fromX="1207" fromY="-1678" />Rusalkowie znani sa z tego, ze zwabiaja samcow, a zatem rozmnazaja sie, ale tak rzadko zdarza sie to u nie-ludzi. 
+      <outputs name="Wez je." ownerID="10" targetID="11" fromX="1207" fromY="-1678" />Rusalkowie znani sa z tego, ze zwabiaja samcow, a tym samym rozmnazaja sie, ale tak rzadko zdarza sie to u ludzi. 
 
 Dziwnie, dziecko wygladajace na czlowieka rodzi sie na rusalce, ale takie, ktore nosi cechy od obu rodzicow.</nodes>
     <nodes xsi:type="NodeDealDamage" ID="11" positionX="1328" positionY="-1357" width="460" height="459" challengeTypeDamage="TypeMental" minDamage="0" maxDamage="0" useCountInPercent="false">

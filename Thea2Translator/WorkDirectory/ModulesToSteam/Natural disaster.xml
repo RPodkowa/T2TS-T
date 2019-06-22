@@ -76,7 +76,7 @@
       <outputs name="Poszukaj bezpiecznego miejsca do ukrycia sie." ownerID="2" targetID="32" group="G4" fromX="1160" fromY="-985" />
       <outputs name="Poszukaj bezpiecznego miejsca do ukrycia sie." ownerID="2" targetID="34" group="G4" fromX="1160" fromY="-1065" />
       <outputs name="[Ork] Gory sa twoja domena. Szukaj oslony." ownerID="2" targetID="49" group="G1" fromX="1160" fromY="-1146" />
-      <outputs name="[Ork] Gory sa twoja domena. Szukaj oslony." ownerID="2" targetID="5" group="G1" fromX="1160" fromY="-1226" />Glosne lomot, a nastepnie wstrzasy lapia cie w gorach. Prawdopodobnie nastapi lawina.</nodes>
+      <outputs name="[Ork] Gory sa twoja domena. Szukaj oslony." ownerID="2" targetID="5" group="G1" fromX="1160" fromY="-1226" />Glosne lomotanie, a potem drzenie, lapie cie w gorach. Prawdopodobnie nastapi lawina.</nodes>
     <nodes xsi:type="NodeAdventure" ID="3" positionX="1360.1062" positionY="756.312439" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -102,7 +102,7 @@
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Zbierz kamien i wyjdz." ownerID="3" targetID="6" fromX="1685" fromY="265" />Dzieki swojemu doswiadczonemu oku znajdziesz idealne miejsce do przeczekania nadchodzacej lawiny. 
+      <outputs name="Zbierz kamien i wyjdz." ownerID="3" targetID="6" fromX="1685" fromY="265" />Twoim fachowym okiem znajdziesz idealne miejsce do przeczekania nadchodzacej lawiny. 
 
 Potem mozesz zebrac kilka dobrych mineralow z gruzu. 
 </nodes>
@@ -126,7 +126,7 @@ Potem mozesz zebrac kilka dobrych mineralow z gruzu.
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Daj im szybki pogrzeb i zbierz ich rzeczy." ownerID="4" targetID="47" fromX="2202" fromY="-1240" />Lecisz w bezpieczne miejsce, zanim lawina cie dopadnie, a gdy opadnie, dostrzezesz grupe martwych podroznikow, ktorzy nie mieli tyle szczescia. 
+      <outputs name="Daj im szybki pogrzeb i zbierz swoje rzeczy." ownerID="4" targetID="47" fromX="2202" fromY="-1240" />Lecisz w bezpieczne miejsce, zanim lawina cie dopadnie, a gdy opadnie, dostrzezesz grupe martwych podroznikow, ktorzy nie mieli tyle szczescia. 
 </nodes>
     <nodes xsi:type="NodeAdventure" ID="5" positionX="1796" positionY="115" width="350" height="725">
       <logic>
@@ -263,7 +263,7 @@ Niestety, wejscie nie bylo tak silne, jak sadziles, i zapada sie pod ciezarem la
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Zaplanuj bezpieczna trase. " ownerID="34" targetID="36" fromX="904" fromY="-2018" />Znajdujesz polke, na ktorej przeczekasz lawine. Niestety, droga powrotna zostala uszkodzona, a znalezienie bezpiecznej sciezki bedzie bardzo trudne.</nodes>
+      <outputs name="Zaplanuj bezpieczna trase. " ownerID="34" targetID="36" fromX="904" fromY="-2018" />Znajdziesz polke, na ktorej przeczekasz lawine. Niestety, droga powrotna zostala uszkodzona, a znalezienie bezpiecznej sciezki bedzie bardzo trudne.</nodes>
     <nodes xsi:type="NodeChallenge" ID="36" positionX="-249.246857" positionY="-1727.17151" width="500" height="726" challengeType="TypeMental" versusConcept="true" versusGroup="GROUP-CON_M_0P_2M_0S" challengeScale="101" challengedList="ppl">
       <outputs name="Win" ownerID="36" targetID="37" fromX="191" fromY="-2222" />
       <outputs name="Lose" ownerID="36" targetID="45" fromX="191" fromY="-2302" />
@@ -283,7 +283,7 @@ Niestety, wejscie nie bylo tak silne, jak sadziles, i zapada sie pod ciezarem la
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="37" targetID="40" fromX="944" fromY="-2756" />Dokladnie planujesz kazdy krok i sprawisz, ze bedzie bezpieczny. </nodes>
+      <outputs name="Wyjdz." ownerID="37" targetID="40" fromX="944" fromY="-2756" />Dokladnie planujesz kazdy krok i robisz go bezpiecznym. </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="40" positionX="1122.95264" positionY="-2502.90137" width="350" height="408" allPlayersXP="3" allPlayersRP="1" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventure" ID="45" positionX="-256.511627" positionY="-2465.947" width="350" height="725">
       <logic>
@@ -394,10 +394,10 @@ Uciekasz, ale nie bez zadrapan i siniakow.
           </LogicFilter>
         </FilterBlock>
       </logic>
-      <outputs name="[Zamieszanie] W imie szalejacej potegi zamieszania, przyjmij te burze i popros o blogoslawienstwo gromu!" ownerID="2" targetID="17" group="G1" fromX="773" fromY="-357" />
-      <outputs name="[Zamieszanie] W imie szalejacej potegi zamieszania, przyjmij te burze i popros o blogoslawienstwo gromu!" ownerID="2" targetID="18" group="G1" fromX="773" fromY="-438" />
-      <outputs name="[Natura lub intelekt] Szanuj gniew natury i szukaj schronienia tak szybko, jak mozesz. " ownerID="2" targetID="19" group="G2" fromX="773" fromY="-518" />
-      <outputs name="Zabezpiecz sie." ownerID="2" targetID="4" group="G2" fromX="773" fromY="-598" />
+      <outputs name="[Zamieszanie] W imie szalejacej potegi zamieszania wez te burze i popros o blogoslawienstwo gromu!" ownerID="2" targetID="17" group="G1" fromX="773" fromY="-357" />
+      <outputs name="[Zamieszanie] W imie szalejacej potegi zamieszania wez te burze i popros o blogoslawienstwo gromu!" ownerID="2" targetID="18" group="G1" fromX="773" fromY="-438" />
+      <outputs name="[Natura lub intelekt] Szanuj gniew natury i szukaj schronienia tak szybko, jak to mozliwe. " ownerID="2" targetID="19" group="G2" fromX="773" fromY="-518" />
+      <outputs name="Ukryj sie." ownerID="2" targetID="4" group="G2" fromX="773" fromY="-598" />
       <outputs name="Sprobuj przescignac burze." ownerID="2" targetID="5" group="G3" fromX="773" fromY="-678" />
       <outputs name="Sprobuj przescignac burze." ownerID="2" targetID="7" group="G3" fromX="773" fromY="-758" />Nagla burza zaskakuje cie. Pioruny przeciete przez niebo i podmuchy wiatru zmiataja cie z nog. 
 </nodes>
@@ -457,7 +457,7 @@ Uciekasz, ale nie bez zadrapan i siniakow.
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="11" targetID="12" fromX="3343" fromY="-1951" />Udajesz sie do jaskini, ale zimny wiatr i przemywajacy deszcz przenikaja do tej zbyt plytkiej pokrywy. W koncu czujesz sie zle. </nodes>
+      <outputs name="Wyjdz." ownerID="11" targetID="12" fromX="3343" fromY="-1951" />Udajesz sie do jaskini, ale zimny wiatr i przemaczajacy deszcz przenikaja do tej zbyt plytkiej pokrywy. W koncu czujesz sie zle. </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="12" positionX="3450.392" positionY="-1657.08691" width="350" height="408" allPlayersXP="1" allPlayersRP="1" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventure" ID="17" positionX="906.545044" positionY="1151.70935" width="350" height="725">
       <logic>
@@ -543,7 +543,7 @@ Uciekasz, ale nie bez zadrapan i siniakow.
       <outputs name="[Demon wody] Wyjedz z powodzi." ownerID="2" targetID="4" group="G1" fromX="774" fromY="-644" />
       <outputs name="Sprobuj znalezc wyzszy grunt. " ownerID="2" targetID="12" group="G2" fromX="774" fromY="-724" />
       <outputs name="Sprobuj znalezc wyzszy grunt. " ownerID="2" targetID="13" group="G2" fromX="774" fromY="-804" />
-      <outputs name="Sprobuj znalezc wyzszy grunt. " ownerID="2" targetID="16" group="G2" fromX="774" fromY="-884" />Kiedy obozujesz nad woda, blyskawiczna powodz rosnie niespodziewanie!</nodes>
+      <outputs name="Sprobuj znalezc wyzszy grunt. " ownerID="2" targetID="16" group="G2" fromX="774" fromY="-884" />Gdy obozujesz nad woda, blyskawiczna powodz rosnie niespodziewanie!</nodes>
     <nodes xsi:type="NodeAdventure" ID="3" positionX="994.3815" positionY="344.733276" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -574,7 +574,7 @@ Nastepnie znajdziesz zasoby, ktore zostaly wyrzucone na brzeg.</nodes>
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Walcz z falami." ownerID="4" targetID="6" fromX="2244" fromY="-482" />Jezdzisz na gwaltownych falach, jakbys byl do tego stworzony, ale natura pani jest dzis zla i trudno ci sie trzymac.</nodes>
+      <outputs name="Walcz z falami." ownerID="4" targetID="6" fromX="2244" fromY="-482" />Jezdzisz na gwaltownych falach, jakbys byl do tego stworzony, ale natura pani jest dzis wsciekla i trudno ci sie trzymac.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="5" positionX="1496.51123" positionY="-472.682922" width="350" height="530" allPlayersXP="2" allPlayersRP="1" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeChallenge" ID="6" positionX="2349.81934" positionY="-164.186462" width="500" height="726" challengeType="TypePhysical" versusConcept="true" versusGroup="GROUP-CON_P_2P_0M_0S" challengeScale="101" challengedList="ppl">
       <outputs name="Win" ownerID="6" targetID="25" fromX="2790" fromY="-659" />
@@ -598,7 +598,7 @@ Nastepnie znajdziesz zasoby, ktore zostaly wyrzucone na brzeg.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="8" targetID="11" fromX="3953" fromY="-1154" />Wody nie zostana oswojone, a ty wiesz na tyle dobrze, aby nie probowac szczescia dalej. 
+      <outputs name="Wyjdz." ownerID="8" targetID="11" fromX="3953" fromY="-1154" />Wody nie zostana oswojone, a ty wiesz wystarczajaco dobrze, aby nie probowac szczescia dalej. 
 
 Znajdziesz schronienie, ale nie przed falami, ktore uderza cie o surowa glebie i twardy brzeg. 
 </nodes>
@@ -659,7 +659,7 @@ Niektore uzyteczne zasoby rowniez umywaja sie na brzegu.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="13" targetID="23" fromX="1126" fromY="-1649" />Podbiegasz w kierunku wzgorza, ktore cie ochroni, ale musisz upuscic kilka rzeczy, aby uciec przed powodzia. 
+      <outputs name="Wyjdz." ownerID="13" targetID="23" fromX="1126" fromY="-1649" />Biegniesz w kierunku wzgorza, ktore cie ochroni, ale musisz upuscic kilka rzeczy, aby uciec przed powodzia. 
 
 Niektore szczatki obmywaja brzeg. </nodes>
     <nodes xsi:type="NodeAdventure" ID="16" positionX="336.980835" positionY="-1229.84265" width="350" height="725">
@@ -724,11 +724,11 @@ Nastepnie znajdziesz zasoby, ktore zostaly wyrzucone na brzeg.</nodes>
           </LogicFilter>
         </FilterBlock>
       </logic>
-      <outputs name="[Lodowy demon] Absorbuj lodowaty snieg, aby nie mogl zaszkodzic. " ownerID="2" targetID="3" group="G1" fromX="763" fromY="-553" />
-      <outputs name="[Lodowy demon] Absorbuj lodowaty snieg, aby nie mogl zaszkodzic. " ownerID="2" targetID="5" group="G1" fromX="763" fromY="-633" />
+      <outputs name="[Lodowy demon] Absorbuj lodowaty snieg, aby nie mogl zrobic nic zlego. " ownerID="2" targetID="3" group="G1" fromX="763" fromY="-553" />
+      <outputs name="[Lodowy demon] Absorbuj lodowaty snieg, aby nie mogl zrobic nic zlego. " ownerID="2" targetID="5" group="G1" fromX="763" fromY="-633" />
       <outputs name="Sprobuj go przepchnac." ownerID="2" targetID="11" fromX="763" fromY="-713" />
       <outputs name="Wykorzystaj czesc zapasow drewna, aby szybko wzmocnic swoje schronienie." ownerID="2" targetID="12" fromX="763" fromY="-794" />
-      <outputs name="[Dziad mroz] Powiedz, ze zamiec ustala teraz. " ownerID="2" targetID="22" fromX="763" fromY="-874" />Nagla zamiec ogarnia cie w lodowych szponach!</nodes>
+      <outputs name="[Dziad mroz] Powiedz teraz, ze zamiec ustala. " ownerID="2" targetID="22" fromX="763" fromY="-874" />Nagla zamiec ogarnia cie w lodowych szponach!</nodes>
     <nodes xsi:type="NodeAdventure" ID="3" positionX="1153.00256" positionY="626.9866" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -769,7 +769,7 @@ Nastepnie znajdziesz zasoby, ktore zostaly wyrzucone na brzeg.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Stoj mocno." ownerID="5" targetID="6" fromX="1779" fromY="-690" />Obejmujesz sniezyce i wchlaniasz snieg, ale zimne ciecia gleboko i mozesz miec trudnosci z wytrzymaniem nacisku. </nodes>
+      <outputs name="Stan stabilnie." ownerID="5" targetID="6" fromX="1779" fromY="-690" />Obejmujesz sniezyce i wchlaniasz snieg, ale zimne ciosy sa glebokie i moze ci byc trudno wytrzymac nacisk. </nodes>
     <nodes xsi:type="NodeChallenge" ID="6" positionX="1861.03687" positionY="-112.195442" width="500" height="726" challengeType="TypePhysical" versusConcept="true" versusGroup="GROUP-CON_P_4P_0M_0S" challengeScale="101" challengedList="ppl">
       <outputs name="Win" ownerID="6" targetID="7" fromX="2302" fromY="-607" />
       <outputs name="Lose" ownerID="6" targetID="23" fromX="2302" fromY="-687" />
@@ -969,8 +969,8 @@ Odkrywasz cialo mniej szczesliwej duszy, by spladrowac.
       </logic>
       <outputs name="Przepchnij sie." ownerID="2" targetID="11" fromX="795" fromY="-478" />
       <outputs name="Sprobuj znalezc schronienie i rozbij oboz, aby ukryc sie przed burza." ownerID="2" targetID="24" fromX="795" fromY="-559" />
-      <outputs name="[Zbieracze] Twoi ludzie wedruja po rowninach w poszukiwaniu nastepnej okazji. Szybko znajdz droge do bezpieczenstwa." ownerID="2" targetID="27" group="G1" fromX="795" fromY="-639" />
-      <outputs name="[Zbieracze] Twoi ludzie wedruja po rowninach w poszukiwaniu nastepnej okazji. Szybko znajdz droge do bezpieczenstwa." ownerID="2" targetID="26" group="G1" fromX="795" fromY="-719" />
+      <outputs name="[Scavengers] Twoi ludzie wedruja po rowninach w poszukiwaniu nastepnej okazji. Szybko znajdz droge do bezpieczenstwa." ownerID="2" targetID="27" group="G1" fromX="795" fromY="-639" />
+      <outputs name="[Scavengers] Twoi ludzie wedruja po rowninach w poszukiwaniu nastepnej okazji. Szybko znajdz droge do bezpieczenstwa." ownerID="2" targetID="26" group="G1" fromX="795" fromY="-719" />
       <outputs name="[Ork] Twoi ludzie zyli na rowninach przez dziesieciolecia, zanim osiedlili sie w domenach wulkanicznych. Szukaj oslony tak szybko, jak to mozliwe." ownerID="2" targetID="3" group="G1" fromX="795" fromY="-799" />
       <outputs name="[Ork] Twoi ludzie zyli na rowninach przez dziesieciolecia, zanim osiedlili sie w domenach wulkanicznych. Szukaj oslony tak szybko, jak to mozliwe." ownerID="2" targetID="22" group="G1" fromX="795" fromY="-879" />Nagly podmuch wiatru zapowiada nadejscie burzy. </nodes>
     <nodes xsi:type="NodeAdventure" ID="3" positionX="973.2755" positionY="702.4834" width="350" height="725">
@@ -1171,10 +1171,10 @@ Wyglada na to, ze miejsce, na ktore sie natknales, jest cmentarzem bestii, wiec 
       <outputs name="[Natura lub harmonia] Wzywaj harmonii i natury, aby poprosic o deszcz, aby uspokoic ten pozar, zanim zginie zycie. " ownerID="2" targetID="3" fromX="966" fromY="-88" />
       <outputs name="[Demon lasu] Dowodz lasami, aby pomoc ci walczyc z ogniem. " ownerID="2" targetID="4" group="G1" fromX="966" fromY="-168" />
       <outputs name="[Demon lasu] Dowodz lasami, aby pomoc ci walczyc z ogniem. " ownerID="2" targetID="53" group="G1" fromX="966" fromY="-248" />
-      <outputs name="[Elf] Zapytaj las, aby pomogl ci w walce z tym ogniem." ownerID="2" targetID="5" group="G1" fromX="966" fromY="-328" />
+      <outputs name="[Elf] Zapytaj las, by pomogl ci w walce z tym ogniem." ownerID="2" targetID="5" group="G1" fromX="966" fromY="-328" />
       <outputs name="Uciekaj!" ownerID="2" targetID="19" group="G2" fromX="966" fromY="-409" />
       <outputs name="Uciekaj!" ownerID="2" targetID="22" group="G2" fromX="966" fromY="-489" />
-      <outputs name="Sprobuj ugasic ogien woda z pobliskiego stawu i piasku, ktory go otacza. " ownerID="2" targetID="7" group="G1" fromX="966" fromY="-569" />Czujesz zapach dymu i czujesz fale upalow idaca w twoja strone. To ogien!</nodes>
+      <outputs name="Sprobuj ugasic ogien woda z pobliskiego stawu i otaczajacego go piasku. " ownerID="2" targetID="7" group="G1" fromX="966" fromY="-569" />Czujesz zapach dymu i czujesz fale upalow idaca w twoja strone. To ogien!</nodes>
     <nodes xsi:type="NodeAdventure" ID="3" positionX="1122.363" positionY="761.070435" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -1197,7 +1197,7 @@ Wyglada na to, ze miejsce, na ktore sie natknales, jest cmentarzem bestii, wiec 
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="3" targetID="6" fromX="1448" fromY="269" />Niebo ciemnieje, chmury gromadza sie, a kojacy deszcz pada na szalejacy ogien. 
+      <outputs name="Wyjdz." ownerID="3" targetID="6" fromX="1448" fromY="269" />Niebo ciemnieje, chmury gromadza sie, a kojacy deszcz spada na szalejacy ogien. 
 
 </nodes>
     <nodes xsi:type="NodeAdventure" ID="4" positionX="1841.91418" positionY="-724.1622" width="350" height="725">
@@ -1225,7 +1225,7 @@ Wyglada na to, ze miejsce, na ktore sie natknales, jest cmentarzem bestii, wiec 
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Daj im pogrzeb i zbierz ich dobytek." ownerID="4" targetID="16" fromX="2167" fromY="-1215" />Las budzi sie i odsuwa od sciezki plomienia, wiec plomien stopniowo wygasa. 
+      <outputs name="Daj im pochowek i zbierz ich dobytek." ownerID="4" targetID="16" fromX="2167" fromY="-1215" />Las budzi sie i odsuwa od sciezki plomienia, wiec plomien stopniowo wygasa. 
 
 Na spalonych obszarach odkrywasz szczatki niektorych mniej szczesliwych dusz. </nodes>
     <nodes xsi:type="NodeAdventure" ID="5" positionX="1605.13586" positionY="10.4252319" width="350" height="725">
@@ -1480,7 +1480,7 @@ Czesc twojego sprzetu jest spalona w plomieniach.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="4" targetID="5" fromX="1590" fromY="-347" />Udaje ci sie wrocic na stale podloze, ale po drodze tracisz kilka toreb. 
+      <outputs name="Wyjdz." ownerID="4" targetID="5" fromX="1590" fromY="-347" />Udaje ci sie wrocic na stale podloze, ale po drodze tracisz niektore torby. 
 </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="5" positionX="1905.23608" positionY="53.4249878" width="350" height="530" allPlayersXP="2" allPlayersRP="1" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeChallenge" ID="6" positionX="2070.52368" positionY="-380.1651" width="500" height="726" challengeType="TypePhysical" versusConcept="true" versusGroup="GROUP-CON_P_3P_0M_0S" challengeScale="101" challengedList="ppl">
@@ -1546,7 +1546,7 @@ Czesc twojego sprzetu jest spalona w plomieniach.</nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Zbierz ich rzeczy i wyjdz." ownerID="14" targetID="15" fromX="1980" fromY="-1327" />Zrobisz to bezpiecznie na stalym podlozu, a wzdluz sciezki odkrywasz szczatki mniej szczesliwej duszy, byc moze wyplules ja z piaskow. 
+      <outputs name="Zbierz ich rzeczy i wyjdz." ownerID="14" targetID="15" fromX="1980" fromY="-1327" />Zrobiles to bezpiecznie na solidnym gruncie, a wzdluz sciezki odkrywasz szczatki mniej szczesliwej duszy, byc moze wyplules ja z piaskow. 
 </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="15" positionX="2427.7124" positionY="-1582.16919" width="350" height="455" allPlayersXP="2" allPlayersRP="1" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeChallenge" ID="16" positionX="1781.85339" positionY="-1614.09351" width="500" height="726" challengeType="TypeMental" versusConcept="true" versusGroup="GROUP-CON_M_0P_2M_0S" challengeScale="101" challengedList="ppl">
@@ -1609,7 +1609,7 @@ Odkrywasz szczatki mniej szczesliwej duszy, byc moze wyplules ja z piaskow.
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="20" targetID="26" fromX="911" fromY="-2578" />Szybko biegniesz od skaly do skaly i znow na twarda ziemie. 
+      <outputs name="Wyjdz." ownerID="20" targetID="26" fromX="911" fromY="-2578" />Pedzisz szybko ze skaly na skale i znowu na twarda ziemie. 
 
 Odkrywasz szczatki mniej szczesliwej duszy, byc moze wyplules ja z piaskow. 
 </nodes>
@@ -1631,7 +1631,7 @@ Odkrywasz szczatki mniej szczesliwej duszy, byc moze wyplules ja z piaskow.
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="24" targetID="15" fromX="3726" fromY="-1369" />Udaje ci sie wrocic na stale podloze, ale po drodze tracisz kilka toreb. 
+      <outputs name="Wyjdz." ownerID="24" targetID="15" fromX="3726" fromY="-1369" />Udaje ci sie wrocic na stale podloze, ale po drodze tracisz niektore torby. 
 </nodes>
     <nodes xsi:type="NodeDealDamage" ID="25" positionX="2789.19287" positionY="-937.024963" width="460" height="459" challengeTypeDamage="TypePhysical" minDamage="2" maxDamage="4" useCountInPercent="false" targetGroup="ppl">
       <outputs ownerID="25" targetID="24" fromX="3218" fromY="-1325" />
@@ -1674,7 +1674,7 @@ Odkrywasz szczatki mniej szczesliwej duszy, byc moze wyplules ja z piaskow.
       <outputs name="[Ork] Wykorzystaj swoj instynkt, by poprowadzic droge przez doly lawy." ownerID="2" targetID="14" group="G2" fromX="748" fromY="-445" />
       <outputs name="[Ork] Wykorzystaj swoj instynkt, by poprowadzic droge przez doly lawy." ownerID="2" targetID="20" group="G2" fromX="748" fromY="-525" />
       <outputs name="[Krasnolud] Zajmowales sie dolami lawy w gorach. Uzyj swojej wiedzy, aby znalezc bezpieczna sciezke." ownerID="2" targetID="21" group="G3" fromX="748" fromY="-605" />
-      <outputs name="[Krasnolud] Zajmowales sie dolami lawy w gorach. Widzisz sciezke przez jakas solidna skale, ale bedzie ona wymagala skoku." ownerID="2" targetID="7" group="G3" fromX="748" fromY="-685" />
+      <outputs name="[Karzel] Masz do czynienia z lawowymi dolami w gorach. Widzisz sciezke przez jakas solidna skale, ale bedzie ona wymagala skoku." ownerID="2" targetID="7" group="G3" fromX="748" fromY="-685" />
       <outputs name="[Lava rockers] Wez kapiel w lawie, zanim przejdziesz dalej." ownerID="2" targetID="22" fromX="748" fromY="-765" />
       <outputs name="Biegnij jak najszybciej." ownerID="2" targetID="3" group="G1" fromX="748" fromY="-846" />
       <outputs name="Biegnij jak najszybciej." ownerID="2" targetID="5" group="G1" fromX="748" fromY="-926" />
@@ -1717,7 +1717,7 @@ Odkrywasz szczatki mniej szczesliwej duszy, byc moze wyplules ja z piaskow.
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="4" targetID="17" fromX="2337" fromY="-1783" />Ledwo sie przedostales, a ty zostales zmuszony porzucic niektore torby, aby nie wpasc w roztopiona lawe. </nodes>
+      <outputs name="Wyjdz." ownerID="4" targetID="17" fromX="2337" fromY="-1783" />Ledwo sie przedostales, i zostales zmuszony do porzucenia niektorych workow, aby nie wpasc w roztopiona lawe. </nodes>
     <nodes xsi:type="NodeAdventure" ID="5" positionX="1958" positionY="12" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -1810,7 +1810,7 @@ Odkrywasz szczatki mniej szczesliwej duszy, byc moze wyplules ja z piaskow.
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="19" targetID="11" fromX="4016" fromY="-1405" />Ledwo sie przedostales, a ty zostales zmuszony porzucic niektore torby, aby nie wpasc w roztopiona lawe. </nodes>
+      <outputs name="Wyjdz." ownerID="19" targetID="11" fromX="4016" fromY="-1405" />Ledwo sie przedostales, i zostales zmuszony do porzucenia niektorych workow, aby nie wpasc w roztopiona lawe. </nodes>
     <nodes xsi:type="NodeAdventure" ID="20" positionX="903.439758" positionY="-1572.468" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -1985,7 +1985,7 @@ Dowodzisz sila natury, by odwrocic sie od swojej sciezki, i robi to dobrowolnie.
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Stoj mocno." ownerID="5" targetID="7" fromX="1993" fromY="-592" />Lecisz z wiatrem i czujesz jego zimny, ale zywy uscisk. 
+      <outputs name="Stan stabilnie." ownerID="5" targetID="7" fromX="1993" fromY="-592" />Lecisz z wiatrem i czujesz jego zimny, ale zywy uscisk. 
 
 Dowodzisz sila natury, aby odwrocic sie od swojej sciezki, ale nie jest ona w pelni posluszna. Musisz sie przygotowac lub zostaniesz porwany. </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="6" positionX="1666.67163" positionY="447.050476" width="350" height="530" allPlayersXP="2" allPlayersRP="1" linkedEventUniqueID="0" />
@@ -2062,8 +2062,8 @@ I masz szczescie, bo masz wystarczajaco silnych ludzi, by biegac szybko, aby sie
       <outputs name="Surrender" ownerID="17" targetID="19" fromX="1028" fromY="-2778" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="18" positionX="1903.51416" positionY="-1440.08447" width="350" height="805">
-      <outputs name="Zbierz gruz i wyjdz." ownerID="18" targetID="24" group="G1" fromX="2229" fromY="-1931" />
-      <outputs name="Zbierz gruz i wyjdz." ownerID="18" targetID="23" group="G1" fromX="2229" fromY="-2011" />Udaje ci sie pozostac na miejscu, a huragan mija, zostawiajac za soba resztki.</nodes>
+      <outputs name="Zbierz smieci i wyjdz." ownerID="18" targetID="24" group="G1" fromX="2229" fromY="-1931" />
+      <outputs name="Zbierz smieci i wyjdz." ownerID="18" targetID="23" group="G1" fromX="2229" fromY="-2011" />Udaje ci sie pozostac na miejscu, a huragan mija, zostawiajac za soba resztki.</nodes>
     <nodes xsi:type="NodeDealDamage" ID="19" positionX="1342.71887" positionY="-2775.583" width="460" height="459" challengeTypeDamage="TypePhysical" minDamage="20" maxDamage="50" useCountInPercent="true" targetGroup="ppl">
       <outputs ownerID="19" targetID="25" fromX="1771" fromY="-3163" />
     </nodes>
@@ -2136,7 +2136,7 @@ I masz szczescie, bo masz wystarczajaco silnych ludzi, by biegac szybko, aby sie
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="26" targetID="6" fromX="1462" fromY="-807" />Jako mistrz Striboga podnosisz ramiona i nakazujesz wiatrowi byc poslusznym swojemu mistrzowi. 
+      <outputs name="Wyjdz." ownerID="26" targetID="6" fromX="1462" fromY="-807" />Jako mistrz Striboga, podnosisz ramiona i nakazujesz wiatrowi byc poslusznym swojemu mistrzowi. 
 
 Na poczatku zostajesz porwany i niesiony przez wiatry jak na smierc, ale wtedy czujesz uscisk swojego boga, a huragan podporzadkowuje sie twojemu rozkazowi i calkowicie zanika. 
 
@@ -2260,7 +2260,7 @@ Jestes wzmocniony i wolny do zbierania smieci.</nodes>
         </FilterBlock>
       </logic>
       <outputs name="[Light or Harmony] Skup sie na swojej domenie i sprobuj dowiedziec sie, co sie tutaj dzieje." ownerID="2" targetID="3" fromX="650" fromY="-460" />
-      <outputs name="[Intelekt lub natura] Niezwykla jest norma w Thea, a zatem nie wolno panikowac. Sprobuj odejsc spokojnie." ownerID="2" targetID="31" fromX="650" fromY="-540" />
+      <outputs name="[Intelekt lub natura] Niezwykla jest norma w Thea, a zatem nie mozna wpadac w panike. Sprobuj odejsc spokojnie." ownerID="2" targetID="31" fromX="650" fromY="-540" />
       <outputs name="[Zamet lub magia] To swiatlo pali cie zywcem! Sprobuj znalezc zrodlo, abys mogl je pokonac." ownerID="2" targetID="19" fromX="650" fromY="-620" />Gdy slonce wschodzi wysoko, czujesz jego delikatne cieplo na skorze i ciesz sie rosnaca sila swiatla nad ciemnoscia. 
 
 Ale kiedy to robisz, zaczynasz czuc sie nieswojo. Cieplo staje sie coraz bardziej stale, nieublagane. Powietrze stechle i przytlaczajace.</nodes>
@@ -2277,7 +2277,7 @@ Ale kiedy to robisz, zaczynasz czuc sie nieswojo. Cieplo staje sie coraz bardzie
       </logic>
       <outputs name="Oprzyj sie fizycznie i odejdz." ownerID="3" targetID="4" fromX="1115" fromY="209" />
       <outputs name="Uzyj polaczenia do swojej domeny i oprzyj sie duchowo." ownerID="3" targetID="10" fromX="1115" fromY="129" />
-      <outputs name="Twoja wola nie zostanie zlamana. Twoj umysl odeprze te diably." ownerID="3" targetID="14" fromX="1115" fromY="49" />Gdy obserwujesz otaczajacy cie swiat, wkrotce widzisz, ze promienie sloneczne sa pelne dziwnych stworzen. Te lekkie kosmyki probuja przywiazac sie do ciebie swoimi mackami, a ty wyczuwasz ich probe spalenia przez twoje cialo i ducha. 
+      <outputs name="Twoja wola nie zostanie zlamana. Twoj umysl odeprze te diably." ownerID="3" targetID="14" fromX="1115" fromY="49" />Kiedy obserwujesz otaczajacy cie swiat, wkrotce widzisz, ze promienie sloneczne sa pelne dziwnych stworzen. Te lekkie kosmyki probuja przywiazac sie do ciebie swoimi mackami, a ty wyczuwasz ich probe spalenia przez twoje cialo i ducha. 
 
 Twoja domena nieco Cie chroni, ale wtedy tez czujesz to cieplo, tak slodkie i obiecujace. </nodes>
     <nodes xsi:type="NodeChallenge" ID="4" positionX="1296" positionY="892" width="500" height="726" challengeType="TypePhysical" versusConcept="true" versusGroup="GROUP-CON_P_1P_0M_0S" challengeScale="300" challengedList="ppl">
@@ -2380,7 +2380,7 @@ Udaje ci sie uwolnic, ale czujesz sie wyczerpany, a niektorzy ze slabszych towar
         </FilterBlock>
       </logic>
       <outputs name="[Zamieszanie] Oprzyj sie fizycznie i sprobuj je zniszczyc!" ownerID="19" targetID="20" fromX="-237" fromY="-1295" />
-      <outputs name="[Magia] Uzyj polaczenia z twoja domena i przeciwstaw sie duchowo." ownerID="19" targetID="21" fromX="-237" fromY="-1375" />
+      <outputs name="[Magia] Uzyj polaczenia do swojej domeny i przeciwstaw sie duchowo." ownerID="19" targetID="21" fromX="-237" fromY="-1375" />
       <outputs name="Twoja wola nie zostanie zlamana. Twoj umysl odeprze te diably." ownerID="19" targetID="25" fromX="-237" fromY="-1455" />Kiedy przygotowujesz sie przed upalem, wkrotce widzisz, ze promienie sloneczne sa pelne dziwnych stworzen. Te lekkie kosmyki probuja przywiazac sie do ciebie swoimi mackami i plona przez twoje cialo i ducha. 
 
 Ciemnosc, ktora towarzyszy zamieszaniu i magii, jest slaba wobec tego wroga, ale jesli sie opierasz, twoja ciemna moc moze je zniszczyc.</nodes>
@@ -2611,7 +2611,7 @@ Udaje ci sie uwolnic, a klarownosc twojej naturalnej domeny sprawia, ze jestes w
       <outputs name="Poszukaj bezpiecznego miejsca do ukrycia sie." ownerID="2" targetID="32" group="G4" fromX="846" fromY="-883" />
       <outputs name="Poszukaj bezpiecznego miejsca do ukrycia sie." ownerID="2" targetID="34" group="G4" fromX="846" fromY="-963" />
       <outputs name="[Ork] Gory sa twoja domena. Szukaj oslony." ownerID="2" targetID="49" group="G1" fromX="846" fromY="-1043" />
-      <outputs name="[Ork] Gory sa twoja domena. Szukaj oslony." ownerID="2" targetID="5" group="G1" fromX="846" fromY="-1124" />Glosne lomot, a nastepnie wstrzasy lapia cie w gorach. Prawdopodobnie nastapi lawina.</nodes>
+      <outputs name="[Ork] Gory sa twoja domena. Szukaj oslony." ownerID="2" targetID="5" group="G1" fromX="846" fromY="-1124" />Glosne lomotanie, a potem drzenie, lapie cie w gorach. Prawdopodobnie nastapi lawina.</nodes>
     <nodes xsi:type="NodeAdventure" ID="3" positionX="1360.1062" positionY="756.312439" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -2640,7 +2640,7 @@ Udaje ci sie uwolnic, a klarownosc twojej naturalnej domeny sprawia, ze jestes w
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Zbierz kamien i wyjdz." ownerID="3" targetID="6" fromX="1685" fromY="265" />Dzieki swojemu doswiadczonemu oku znajdziesz idealne miejsce do przeczekania nadchodzacej lawiny. 
+      <outputs name="Zbierz kamien i wyjdz." ownerID="3" targetID="6" fromX="1685" fromY="265" />Twoim fachowym okiem znajdziesz idealne miejsce do przeczekania nadchodzacej lawiny. 
 
 Potem mozesz zebrac kilka dobrych mineralow z gruzu. 
 </nodes>
@@ -2664,7 +2664,7 @@ Potem mozesz zebrac kilka dobrych mineralow z gruzu.
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Daj im szybki pogrzeb i zbierz ich rzeczy." ownerID="4" targetID="47" fromX="2202" fromY="-1240" />Lecisz w bezpieczne miejsce, zanim lawina cie dopadnie, a gdy opadnie, dostrzezesz grupe martwych podroznikow, ktorzy nie mieli tyle szczescia. 
+      <outputs name="Daj im szybki pogrzeb i zbierz swoje rzeczy." ownerID="4" targetID="47" fromX="2202" fromY="-1240" />Lecisz w bezpieczne miejsce, zanim lawina cie dopadnie, a gdy opadnie, dostrzezesz grupe martwych podroznikow, ktorzy nie mieli tyle szczescia. 
 </nodes>
     <nodes xsi:type="NodeAdventure" ID="5" positionX="1760.90625" positionY="126.388626" width="350" height="725">
       <logic>
@@ -2801,7 +2801,7 @@ Niestety, wejscie nie bylo tak silne, jak sadziles, i zapada sie pod ciezarem la
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="Zaplanuj bezpieczna trase. " ownerID="34" targetID="36" fromX="904" fromY="-2018" />Znajdujesz polke, na ktorej przeczekasz lawine. Niestety, droga powrotna zostala uszkodzona, a znalezienie bezpiecznej sciezki bedzie bardzo trudne.</nodes>
+      <outputs name="Zaplanuj bezpieczna trase. " ownerID="34" targetID="36" fromX="904" fromY="-2018" />Znajdziesz polke, na ktorej przeczekasz lawine. Niestety, droga powrotna zostala uszkodzona, a znalezienie bezpiecznej sciezki bedzie bardzo trudne.</nodes>
     <nodes xsi:type="NodeChallenge" ID="36" positionX="-249.246857" positionY="-1727.17151" width="500" height="726" challengeType="TypeMental" versusConcept="true" versusGroup="GROUP-CON_M_0P_4M_0S" challengeScale="101" challengedList="ppl">
       <outputs name="Win" ownerID="36" targetID="37" fromX="191" fromY="-2222" />
       <outputs name="Lose" ownerID="36" targetID="45" fromX="191" fromY="-2302" />
@@ -2821,7 +2821,7 @@ Niestety, wejscie nie bylo tak silne, jak sadziles, i zapada sie pod ciezarem la
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="37" targetID="40" fromX="944" fromY="-2756" />Dokladnie planujesz kazdy krok i sprawisz, ze bedzie bezpieczny. </nodes>
+      <outputs name="Wyjdz." ownerID="37" targetID="40" fromX="944" fromY="-2756" />Dokladnie planujesz kazdy krok i robisz go bezpiecznym. </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="40" positionX="1122.95264" positionY="-2502.90137" width="350" height="455" allPlayersXP="4" allPlayersRP="1" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventure" ID="45" positionX="-256.511627" positionY="-2465.947" width="350" height="725">
       <logic>
@@ -2944,10 +2944,10 @@ Uciekasz, ale nie bez zadrapan i siniakow.
       <outputs name="[Natura lub harmonia] Wzywaj harmonii i natury, aby poprosic o deszcz, aby uspokoic ten pozar, zanim zginie zycie. " ownerID="2" targetID="3" fromX="966" fromY="-88" />
       <outputs name="[Demon lasu] Dowodz lasami, aby pomoc ci walczyc z ogniem. " ownerID="2" targetID="4" group="G1" fromX="966" fromY="-168" />
       <outputs name="[Demon lasu] Dowodz lasami, aby pomoc ci walczyc z ogniem. " ownerID="2" targetID="53" group="G1" fromX="966" fromY="-248" />
-      <outputs name="[Elf] Zapytaj las, aby pomogl ci w walce z tym ogniem." ownerID="2" targetID="5" group="G1" fromX="966" fromY="-328" />
+      <outputs name="[Elf] Zapytaj las, by pomogl ci w walce z tym ogniem." ownerID="2" targetID="5" group="G1" fromX="966" fromY="-328" />
       <outputs name="Uciekaj!" ownerID="2" targetID="19" group="G2" fromX="966" fromY="-409" />
       <outputs name="Uciekaj!" ownerID="2" targetID="22" group="G2" fromX="966" fromY="-489" />
-      <outputs name="Sprobuj ugasic ogien woda z pobliskiego stawu i piasku, ktory go otacza. " ownerID="2" targetID="7" group="G1" fromX="966" fromY="-569" />Czujesz zapach dymu i czujesz fale upalow idaca w twoja strone. To ogien!</nodes>
+      <outputs name="Sprobuj ugasic ogien woda z pobliskiego stawu i otaczajacego go piasku. " ownerID="2" targetID="7" group="G1" fromX="966" fromY="-569" />Czujesz zapach dymu i czujesz fale upalow idaca w twoja strone. To ogien!</nodes>
     <nodes xsi:type="NodeAdventure" ID="3" positionX="1122.363" positionY="761.070435" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -2979,7 +2979,7 @@ Uciekasz, ale nie bez zadrapan i siniakow.
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="3" targetID="6" fromX="1448" fromY="269" />Niebo ciemnieje, chmury gromadza sie, a kojacy deszcz pada na szalejacy ogien. 
+      <outputs name="Wyjdz." ownerID="3" targetID="6" fromX="1448" fromY="269" />Niebo ciemnieje, chmury gromadza sie, a kojacy deszcz spada na szalejacy ogien. 
 
 </nodes>
     <nodes xsi:type="NodeAdventure" ID="4" positionX="1841.91418" positionY="-724.1622" width="350" height="725">
@@ -3007,7 +3007,7 @@ Uciekasz, ale nie bez zadrapan i siniakow.
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Daj im pogrzeb i zbierz ich dobytek." ownerID="4" targetID="16" fromX="2167" fromY="-1215" />Las budzi sie i odsuwa od sciezki plomienia, wiec plomien stopniowo wygasa. 
+      <outputs name="Daj im pochowek i zbierz ich dobytek." ownerID="4" targetID="16" fromX="2167" fromY="-1215" />Las budzi sie i odsuwa od sciezki plomienia, wiec plomien stopniowo wygasa. 
 
 Na spalonych obszarach odkrywasz szczatki niektorych mniej szczesliwych dusz. </nodes>
     <nodes xsi:type="NodeAdventure" ID="5" positionX="1605.13586" positionY="10.4252319" width="350" height="725">
@@ -3244,7 +3244,7 @@ Czesc twojego sprzetu jest spalona w plomieniach.</nodes>
         </FilterBlock>
       </logic>
       <outputs name="[Light or Harmony] Skup sie na swojej domenie i sprobuj dowiedziec sie, co sie tutaj dzieje." ownerID="2" targetID="3" fromX="650" fromY="-460" />
-      <outputs name="[Intelekt lub natura] Niezwykla jest norma w Thea, a zatem nie wolno panikowac. Sprobuj odejsc spokojnie." ownerID="2" targetID="31" fromX="650" fromY="-540" />
+      <outputs name="[Intelekt lub natura] Niezwykla jest norma w Thea, a zatem nie mozna wpadac w panike. Sprobuj odejsc spokojnie." ownerID="2" targetID="31" fromX="650" fromY="-540" />
       <outputs name="[Zamet lub magia] To swiatlo pali cie zywcem! Sprobuj znalezc zrodlo, abys mogl je pokonac." ownerID="2" targetID="19" fromX="650" fromY="-620" />Gdy slonce wschodzi wysoko, czujesz jego delikatne cieplo na skorze i ciesz sie rosnaca sila swiatla nad ciemnoscia. 
 
 Ale kiedy to robisz, zaczynasz czuc sie nieswojo. Cieplo staje sie coraz bardziej stale, nieublagane. Powietrze stechle i przytlaczajace.</nodes>
@@ -3261,7 +3261,7 @@ Ale kiedy to robisz, zaczynasz czuc sie nieswojo. Cieplo staje sie coraz bardzie
       </logic>
       <outputs name="Oprzyj sie fizycznie i odejdz." ownerID="3" targetID="4" fromX="1142" fromY="115" />
       <outputs name="Uzyj polaczenia do swojej domeny i oprzyj sie duchowo." ownerID="3" targetID="10" fromX="1142" fromY="35" />
-      <outputs name="Twoja wola nie zostanie zlamana. Twoj umysl odeprze te diably." ownerID="3" targetID="14" fromX="1142" fromY="-44" />Gdy obserwujesz otaczajacy cie swiat, wkrotce widzisz, ze promienie sloneczne sa pelne dziwnych stworzen. Te lekkie kosmyki probuja przywiazac sie do ciebie swoimi mackami, a ty wyczuwasz ich probe spalenia przez twoje cialo i ducha. 
+      <outputs name="Twoja wola nie zostanie zlamana. Twoj umysl odeprze te diably." ownerID="3" targetID="14" fromX="1142" fromY="-44" />Kiedy obserwujesz otaczajacy cie swiat, wkrotce widzisz, ze promienie sloneczne sa pelne dziwnych stworzen. Te lekkie kosmyki probuja przywiazac sie do ciebie swoimi mackami, a ty wyczuwasz ich probe spalenia przez twoje cialo i ducha. 
 
 Twoja domena nieco Cie chroni, ale wtedy tez czujesz to cieplo, tak slodkie i obiecujace. </nodes>
     <nodes xsi:type="NodeChallenge" ID="4" positionX="1296" positionY="892" width="500" height="726" challengeType="TypePhysical" versusConcept="true" versusGroup="GROUP-CON_P_3P_0M_0S" challengeScale="300" challengedList="ppl">
@@ -3364,7 +3364,7 @@ Udaje ci sie uwolnic, ale czujesz sie wyczerpany, a niektorzy ze slabszych towar
         </FilterBlock>
       </logic>
       <outputs name="[Zamieszanie] Oprzyj sie fizycznie i sprobuj je zniszczyc!" ownerID="19" targetID="20" fromX="-237" fromY="-1295" />
-      <outputs name="[Magia] Uzyj polaczenia z twoja domena i przeciwstaw sie duchowo." ownerID="19" targetID="21" fromX="-237" fromY="-1375" />
+      <outputs name="[Magia] Uzyj polaczenia do swojej domeny i przeciwstaw sie duchowo." ownerID="19" targetID="21" fromX="-237" fromY="-1375" />
       <outputs name="Twoja wola nie zostanie zlamana. Twoj umysl odeprze te diably." ownerID="19" targetID="25" fromX="-237" fromY="-1455" />Kiedy przygotowujesz sie przed upalem, wkrotce widzisz, ze promienie sloneczne sa pelne dziwnych stworzen. Te lekkie kosmyki probuja przywiazac sie do ciebie swoimi mackami i plona przez twoje cialo i ducha. 
 
 Ciemnosc, ktora towarzyszy zamieszaniu i magii, jest slaba wobec tego wroga, ale jesli sie opierasz, twoja ciemna moc moze je zniszczyc.</nodes>

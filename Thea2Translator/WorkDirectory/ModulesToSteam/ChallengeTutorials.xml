@@ -126,7 +126,7 @@ Daje ci jeden ze swoich powaznych spojrzen:
 
 Pojecia sa reprezentowane przez karty, tak jak postacie, ale we wszystkich koncepcjach licza sie tylko naturalne zdolnosci twoich postaci. Wszelkie posiadane urzadzenia sa ignorowane. Pozostale zasady pozostaja takie same. 
 
-Za kazdym razem, gdy widzisz symbol z czarnymi kartami w ten sposob - &lt;sprite name = "MentalConceptChallengeIcon"&gt; - oznacza to, ze jest to wyzwanie przeciwko koncepcji.'
+Za kazdym razem, gdy widzisz symbol z czarnymi kartami w ten sposob - &lt;sprite name = "MentalConceptChallengeIcon"&gt; - oznacza to, ze jest to wyzwanie w stosunku do koncepcji.'
 </nodes>
     <nodes xsi:type="NodeChallenge" ID="4" positionX="1499" positionY="24" width="500" height="726" challengeType="TypeMental" versusConcept="true" versusGroup="GROUP-TUT_CON" challengeScale="101" challengedList="ppl">
       <logic>

@@ -743,9 +743,7 @@ Twoj rytual rozpuszcza sie, a kosci zapadaja w spokoju. Czujesz na sobie chorobe
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="23" targetID="50" fromX="3957" fromY="-2534" />Wydaje sie, ze dziala wiazacy rytual, ale wtedy wybuch niekontrolowanej energii niszczy nieozywione. 
-
-Jednak widmo rodzi sie z mocy i teraz podaza za toba.</nodes>
+      <outputs name="Wyjdz." ownerID="23" targetID="50" fromX="3957" fromY="-2534" />Wydaje sie, ze rytual wiazania dziala, ale wtedy wybuch niekontrolowanej energii niszczy nieozywione.Jednak widmo rodzi sie z mocy i teraz podaza za toba.</nodes>
     <nodes xsi:type="NodeAdventure" ID="24" positionX="3835.5332" positionY="-1311.54041" width="350" height="725">
       <outputs name="Uciekaj." ownerID="24" targetID="51" fromX="4161" fromY="-1802" />Rytualy nie dzialaja, a ty ledwo unikasz zycia. 
 </nodes>
@@ -1052,7 +1050,7 @@ To moze nie byc przebudzenie, na ktore miales nadzieje, ale to pierwszy krok. Sz
       <outputs name="[Ork] Nie masz pojecia, co to jest, ale sprobuj to zrobic." ownerID="2" targetID="22" group="G2" fromX="790" fromY="-817" />
       <outputs name="Nie masz pojecia, co to jest, ale sprobuj to zrobic." ownerID="2" targetID="21" group="G2" fromX="790" fromY="-898" />
       <outputs name="Cokolwiek to jest, sprobuj je otworzyc." ownerID="2" targetID="6" fromX="790" fromY="-978" />
-      <outputs name="Po prostu zostaw to." ownerID="2" targetID="26" fromX="790" fromY="-1058" />Widzisz dziwny blyskotek na jednym z miejsc pochowku.</nodes>
+      <outputs name="Po prostu zostaw to." ownerID="2" targetID="26" fromX="790" fromY="-1058" />Widzisz dziwny swiecidelko w jednym z miejsc pochowku.</nodes>
     <nodes xsi:type="NodeAdventure" ID="3" positionX="829.552" positionY="697.849" width="350" height="805">
       <logic>
         <FilterBlock>
@@ -1876,7 +1874,7 @@ Pokazuja ci kamienny pierscien. Wiesz, ze musisz wejsc i zostac osadzonym przez 
       <outputs name="Wejdz na ring." ownerID="24" targetID="19" fromX="1772" fromY="-2552" />
       <outputs name="Odrzuc i odejdz." ownerID="24" targetID="50" fromX="1772" fromY="-2632" />
       <outputs name="Atak!" ownerID="24" targetID="11" fromX="1772" fromY="-2712" />
-      <outputs name="Zamiast tego zaoferuj handel." ownerID="24" targetID="32" fromX="1772" fromY="-2793" />„To sa nowe dni, a nasz cel jest stary. Twoje slowa brzmia prawdziwie i odwaznie bylo nam o nich mowic. Pozwolimy ci wejsc i stanac przed proba, jakbys byl jednym z naszych. Wiecej nie mozemy zrobic. Uwazaj, bo jesli ci sie nie uda, coz ...'
+      <outputs name="Zamiast tego zaoferuj handel." ownerID="24" targetID="32" fromX="1772" fromY="-2793" />„To sa nowe dni, a nasz cel jest stary. Twoje slowa brzmia prawdziwie i odwaznie bylo nam o nich mowic. Pozwolimy ci wejsc i stanac przed proba, jakbys byl jednym z naszych. Wiecej nie mozemy zrobic. Strzez sie, bo jesli ci sie nie uda ...'
 
 Pokazuja ci kamienny pierscien. Wiesz, ze musisz wejsc i zostac osadzonym przez ducha kamienia i zelaza.</nodes>
     <nodes xsi:type="NodeAdventure" ID="26" positionX="946.4595" positionY="-2630.919" width="350" height="805">
@@ -2056,12 +2054,12 @@ Pokazuja ci kamienny pierscien. Wiesz, ze musisz wejsc i zostac osadzonym przez 
           </LogicFilter>
         </FilterBlock>
       </logic>
-      <outputs name="[Krasnolud] Zwolennicy swietych terenow. Atak!" ownerID="3" targetID="4" group="G1" fromX="771" fromY="-623" />
+      <outputs name="[Krasnolud] Zwolennicy swietej ziemi. Atak!" ownerID="3" targetID="4" group="G1" fromX="771" fromY="-623" />
       <outputs name="[Krasnolud] Rozkazuj kamienne stworzenia, aby byly posluszne." ownerID="3" targetID="5" fromX="771" fromY="-703" />
       <outputs name="Atak!" ownerID="3" targetID="6" group="G1" fromX="771" fromY="-783" />
       <outputs name="Sprobuj rozmawiac ze stworzeniami." ownerID="3" targetID="7" fromX="771" fromY="-863" />
       <outputs name="[Domena] Pozwol swojej domenie poprowadzic cie i dowiedziec sie, dlaczego stworzenia sa tak wzburzone." ownerID="3" targetID="8" fromX="771" fromY="-943" />
-      <outputs name="Lepiej nie zadzieraj z krasnoludzkimi grobami lub bujakami. Pozostawiac." ownerID="3" targetID="9" fromX="771" fromY="-1024" />Wchodzisz do starej podziemnej komory, udostepnianej, gdy ziemia sie poruszyla, i widzisz, co musialo byc cmentarzem krasnoludow. Teraz stoi w ruinie. Co gorsza, cokolwiek pozostaje, jest energicznie zjadane przez paczke malych kamiennych stworzen, prawdopodobnie bujakow! 
+      <outputs name="Lepiej nie zadzieraj z krasnoludzkimi grobami lub bujakami. Pozostawiac." ownerID="3" targetID="9" fromX="771" fromY="-1024" />Wchodzisz do starej podziemnej komory, udostepnianej, gdy ziemia sie poruszyla, i widzisz, co musial byc krasnoludzki cmentarz. Teraz stoi w ruinie. Co gorsza, cokolwiek pozostaje, jest energicznie zjadane przez paczke malych kamiennych stworzen, prawdopodobnie bujakow! 
 </nodes>
     <nodes xsi:type="NodeChallenge" ID="4" positionX="858.8877" positionY="962.491455" width="500" height="807" challengeType="TypePhysical" versusGroup="GROUP-ROCKERS_1P_3M_2S" challengeScale="101" challengedList="ppl">
       <logic>
@@ -2790,7 +2788,7 @@ Kamienna statua staje sie animowana i zwraca sie do ciebie.
       <outputs name="Powiedz, ze jest ci przykro, ale nie ryzykujesz. Pozostawiac." ownerID="22" targetID="56" fromX="3835" fromY="-1189" />„Brzydcy rabusie przyjechali i splugawili naszych przodkow. Szczesliwi drani wzieli kamien smierci, zanim zdolalem sie w pelni obudzic. Teraz sa uwiezieni w grobie, ale trzymaja moj kamien smierci. Jestesmy w impasie.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="24" positionX="128.453079" positionY="-1927.062" width="350" height="805">
       <outputs name="Co mozna zrobic?" ownerID="24" targetID="22" fromX="454" fromY="-2418" />
-      <outputs name="Kamien smierci?" ownerID="24" targetID="21" fromX="454" fromY="-2498" />„Moj kamien smierci, moje serce ... skradzione ... zniknelo ... '</nodes>
+      <outputs name="Deathstone?" ownerID="24" targetID="21" fromX="454" fromY="-2498" />„Moj kamien smierci, moje serce ... skradzione ... zniknelo ... '</nodes>
     <nodes xsi:type="NodeAdventure" ID="25" positionX="-369.151917" positionY="-2821.27979" width="350" height="805">
       <outputs name="Zapytaj, jakiej pomocy potrzebuja." ownerID="25" targetID="24" fromX="-43" fromY="-3312" />
       <outputs name="Wyjdz." ownerID="25" targetID="56" fromX="-43" fromY="-3392" />Duch milczy, jego obecnosc migocze i skupia sie. Czujesz nagromadzenie ciemnych energii.</nodes>
@@ -3082,7 +3080,7 @@ Gdy kowal odwraca sie do ciebie, widzisz krasnoludzkie zwloki, ktore zostaly cze
 
 Tak jak powiedzialem, to dluga opowiesc, a ty zyjesz i chcesz byc na swojej drodze. Wiec moge ci to powiedziec, jesli chcesz?'</nodes>
     <nodes xsi:type="NodeAdventure" ID="14" positionX="4667.197" positionY="481.1644" width="350" height="725">
-      <outputs name="Wiec mieszkales na gorze, u nas?" ownerID="14" targetID="15" fromX="4992" fromY="-9" />„Tak, masz racje. Pochwalilem sie swoimi umiejetnosciami i wspialem po drabinie, och, tak, panienki. Z czasem moj pan byl tak chory na mnie, ze wyslal mnie na powierzchnie, aby sie nauczyc i udowodnic moja wartosc.'</nodes>
+      <outputs name="Wiec mieszkales na gorze, u nas?" ownerID="14" targetID="15" fromX="4992" fromY="-9" />„Tak, masz racje. Pochwalilem sie swoimi umiejetnosciami i wspialem po drabinie, och, tak, chlopaki. Z czasem moj pan byl tak chory na mnie, ze wyslal mnie na powierzchnie, aby sie nauczyc i udowodnic moja wartosc.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="15" positionX="5103.561" positionY="464.800781" width="350" height="725">
       <outputs name="Kontynuuj." ownerID="15" targetID="16" fromX="5429" fromY="-26" />„Tak zrobilem. Przezylem mroczne czasy, a z czasem zapomnialem o podziemiach, a przynajmniej nie czulem juz tego wezwania. Stawalem sie coraz bardziej ambitny i dumny. Nazywac siebie mistrzem kowala wszechczasow, przechwalajac sie, jak bylem najlepszy.</nodes>
     <nodes xsi:type="NodeAdventure" ID="16" positionX="5535.834" positionY="425.255341" width="350" height="725">
@@ -3180,7 +3178,7 @@ Slyszysz dziwne szperanie w kacie i zdajesz sobie sprawe, ze obserwujesz, jak ni
       </logic>
       <outputs name="[Smith] Znajdz uchwyt otwierajacy i wyjdz." ownerID="35" targetID="63" fromX="609" fromY="-2026" />
       <outputs name="Sprobuj dowiedziec sie, jak go otworzyc." ownerID="35" targetID="37" fromX="609" fromY="-2107" />
-      <outputs name="Otworz to." ownerID="35" targetID="36" fromX="609" fromY="-2187" />Zbierasz to, co mozesz, ale kiedy skradasz posagi, ozywa mechanizm, ktory zamyka cie w komnacie!</nodes>
+      <outputs name="Bash it open." ownerID="35" targetID="36" fromX="609" fromY="-2187" />Zbierasz to, co mozesz, ale kiedy skradasz posagi, ozywa mechanizm, ktory zamyka cie w komnacie!</nodes>
     <nodes xsi:type="NodeAdventure" ID="36" positionX="218.918488" positionY="-2429.173" width="350" height="725">
       <outputs name="Sprobuj dowiedziec sie, jak go otworzyc." ownerID="36" targetID="37" fromX="544" fromY="-2920" />Bez wzgledu na to, jak mocno uderzysz, kamien pozostaje nieruchomy.</nodes>
     <nodes xsi:type="NodeChallenge" ID="37" positionX="753" positionY="-1944" width="500" height="726" challengeType="TypeMental" versusConcept="true" versusGroup="GROUP-CON_M_0P_4M_0S" challengeScale="101" challengedList="ppl">
@@ -4145,7 +4143,7 @@ Kiedy wchodzisz do srodka, swiece zapalaja sie wzdluz twojej sciezki, a wewnatrz
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="50" targetID="56" fromX="406" fromY="-1359" />Twoj plan dziala, ale rzeczy, ktore zdobedziesz, sa zainfekowane jakas paskudna choroba szczurow.</nodes>
+      <outputs name="Wyjdz." ownerID="50" targetID="56" fromX="406" fromY="-1359" />Twoj plan dziala, ale rzeczy, ktore zdobedziesz, sa zainfekowane jakas paskudna choroba szczura.</nodes>
     <nodes xsi:type="NodeDealDamage" ID="51" positionX="-1252.78662" positionY="-2114.45117" width="460" height="539" challengeTypeDamage="TypeMental" minDamage="10" maxDamage="20" useCountInPercent="false" targetGroup="unl">
       <logic>
         <FilterBlock>
@@ -4899,7 +4897,7 @@ Postac cie widzi i mowi: „Ty zyjesz ... dobrze ... czy nie? Nie, zle ... beda zy
       <outputs name="Znasz prosty rytual wypedzania dola bez zabijania go, ale wiadomo, ze magia czasami sie odwraca. Mimo to warto podjac ryzyko." ownerID="16" targetID="20" group="G1" fromX="3353" fromY="2798" />
       <outputs name="Znasz prosty rytual wypedzania dola bez zabijania go, ale wiadomo, ze magia czasami sie odwraca. Mimo to warto podjac ryzyko." ownerID="16" targetID="21" group="G1" fromX="3353" fromY="2717" />
       <outputs name="Znasz prosty rytual wypedzania dola bez zabijania go, ale wiadomo, ze magia czasami sie odwraca. Mimo to warto podjac ryzyko." ownerID="16" targetID="22" group="G1" fromX="3353" fromY="2637" />
-      <outputs name="Zabij tylko niezyjacych. Powiedz dola, zeby odszedl i nigdy wiecej tego nie robil." ownerID="16" targetID="6" fromX="3353" fromY="2557" />„Po prostu, dalem im moje swiatlo ... ale to poszlo zle, sprawilo, ze ozyli, ale wszyscy sie mylili ... a ja probowalem ... 
+      <outputs name="Zabij tylko niezyjacych. Powiedz dola, zeby stad wyszedl i nigdy wiecej tego nie rob." ownerID="16" targetID="6" fromX="3353" fromY="2557" />„Po prostu, dalem im moje swiatlo ... ale poszlo zle, sprawilo, ze ozyli, ale wszyscy sie mylili ... a ja probowalem i probowalem ... 
 
 Uderz mnie. Powinien je tez wziac. Nie widze innej drogi.'
 </nodes>
@@ -4960,7 +4958,9 @@ Pozostale swiatlo dola pozostawia ci blogoslawienstwo. </nodes>
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="22" targetID="92" fromX="5081" fromY="2170" />Rytual zdaje sie dzialac, gdy niezyjaca zapasc na ziemi i dola zaczyna zanikac, ale widzisz, jak jej forma skreca sie i zamienia w cicha agonie!Czujesz na sobie przeklenstwo.</nodes>
+      <outputs name="Wyjdz." ownerID="22" targetID="92" fromX="5081" fromY="2170" />Rytual zdaje sie dzialac, gdy niezyjaca zapasc na ziemi i dola zaczyna zanikac, ale widzisz, jak jej forma skreca sie i zamienia w cicha agonie! 
+
+Czujesz na sobie przeklenstwo.</nodes>
     <nodes xsi:type="NodeSpawnOnMap" ID="23" positionX="4238.33252" positionY="1965.18323" width="480" height="503" radius="0" groupID="GROUP-UNLI_MIX_2P_1M_1S" destroyOwner="false" linkedEventUniqueID="0">
       <outputs ownerID="23" targetID="92" fromX="4686" fromY="1533" />
     </nodes>
@@ -4980,8 +4980,8 @@ Zauwazysz, ze postacie poruszaja sie w cieniu, powoli, ale pewnie zblizaja sie d
     <nodes xsi:type="NodeAdventureEnd" ID="26" positionX="218.6937" positionY="3265.08032" width="350" height="408" allPlayersXP="1" allPlayersRP="1" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventure" ID="27" positionX="2522" positionY="1634" width="350" height="966">
       <outputs name="Zabij demona, zanim wezwie wiecej zycia. " ownerID="27" targetID="91" fromX="2847" fromY="1142" />
-      <outputs name="Zwiaz demona ze swoja sluzba za pomoca magii. Jest to ryzykowne i moze skonczyc sie przeklenstwem, ale moze zadzialac." ownerID="27" targetID="90" group="G2" fromX="2847" fromY="1062" />
-      <outputs name="Zwiaz demona ze swoja sluzba za pomoca magii. Jest to ryzykowne i moze skonczyc sie przeklenstwem, ale moze zadzialac." ownerID="27" targetID="76" group="G2" fromX="2847" fromY="982" />
+      <outputs name="Zwiaz demona ze sluzba za pomoca magii. Jest to ryzykowne i moze skonczyc sie przeklenstwem, ale moze zadzialac." ownerID="27" targetID="90" group="G2" fromX="2847" fromY="1062" />
+      <outputs name="Zwiaz demona ze sluzba za pomoca magii. Jest to ryzykowne i moze skonczyc sie przeklenstwem, ale moze zadzialac." ownerID="27" targetID="76" group="G2" fromX="2847" fromY="982" />
       <outputs name="Po prostu opusc to miejsce. " ownerID="27" targetID="89" fromX="2847" fromY="902" />Rytual dziala i niezywa zapasc sie tam, gdzie stoja. Stworzenie, ktore je wezwalo, wola jak gdyby z bolu. 
 
 „Nie! Moje zarzuty, martwe. Zawiodlem ... znowu ... martw sie nie moi drodzy, dam ci znowu racje ...'
@@ -5538,7 +5538,7 @@ To najwyrazniej duch lesny zbladzony, a nie zagubiona dusza. Byc moze dlatego el
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="19" targetID="42" fromX="3994" fromY="2954" />Duch lasu skreca sie w agonii z twojego rytualu i przemienia sie w widmo, ale teraz ci to pomoze. 
+      <outputs name="Wyjdz." ownerID="19" targetID="42" fromX="3994" fromY="2954" />Duch lasu skreca sie w agonii z twojego rytualu i przemienia sie w upior, ale teraz bedzie ci sluzyc. 
 
 Jest zlowieszczy szelest lisci i czujesz, ze spada na ciebie klatwa, prawdopodobnie za zlamanie slowa.</nodes>
     <nodes xsi:type="NodeAdventure" ID="20" positionX="3195" positionY="3533" width="350" height="725">
@@ -6463,7 +6463,7 @@ W spiacym elfie jest pustka, a twoja domena wydaje sie odpowiadac temu, czego br
       </logic>
       <outputs name="Kontynuuj piosenke przed wyjsciem." ownerID="9" targetID="44" fromX="864" fromY="-2468" />
       <outputs name="Bracia, czy nie, maja drogocenne kamienie. Lup spiacego elfa." ownerID="9" targetID="12" group="G2" fromX="864" fromY="-2549" />
-      <outputs name="Bracia, czy nie, maja drogocenne kamienie. Lup spiacego elfa." ownerID="9" targetID="19" group="G2" fromX="864" fromY="-2629" />Znasz ten posag jako elfa, ktory wszedl w wieczny sen, ale nie zrzucil calkowicie swojej fizycznej powloki. Elficcy krewni moga pozostawac przez stulecia w tym stanie, wciaz swiadomi tego, co dzieje sie wokol nich i zdolni do przebudzenia, jesli to konieczne, ale odpoczywania i kontemplacji w tym samym czasie. 
+      <outputs name="Bracia, czy nie, maja drogocenne kamienie. Lup spiacego elfa." ownerID="9" targetID="19" group="G2" fromX="864" fromY="-2629" />Znasz ten posag jako elfa, ktory wszedl w wieczny sen, ale nie zrzucil calkowicie swojej fizycznej powloki. Elficcy krewni moga pozostawac przez stulecia w tym stanie, wciaz swiadomi tego, co dzieje sie wokol nich i zdolni do przebudzenia, jesli to konieczne, ale odpoczywania i kontemplacji jednoczesnie. 
 
 Piosenka o wiecznym snie koi takich spiacych i mowi im o wlasnej sciezce zycia. </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="10" positionX="1756.85193" positionY="-1761.53333" width="350" height="530" allPlayersXP="4" allPlayersRP="1" linkedEventUniqueID="0">
@@ -6952,7 +6952,9 @@ Poniewaz moc twojej domeny jest bezposrednio przeciwna tej sile, mozesz sprobowa
       </logic>
       <outputs name="Tak, sprobuj wykorzystac energie. " ownerID="7" targetID="8" fromX="1332" fromY="61" />
       <outputs name="Nie, bedzie bezpieczniej i latwiej go zamknac." ownerID="7" targetID="15" fromX="1332" fromY="-18" />
-      <outputs name="Na razie zadanie jest zbyt wielkie. Opusc to miejsce." ownerID="7" targetID="46" fromX="1332" fromY="-98" />Dym jest wyraznie ciemnoscia sama w sobie i wibruje z zametu i mrocznej magii, starajac sie zostac uwolnionym lub pozrec wszystko, co sie pojawi.Ta manifestacja jest nienaturalnie silna i moze byc bardzo niebezpieczna, ale poniewaz jestes do niej dostrojony, mozesz sprobowac ja bezpiecznie wykorzystac. To nie bedzie latwe.</nodes>
+      <outputs name="Na razie zadanie jest zbyt wielkie. Opusc to miejsce." ownerID="7" targetID="46" fromX="1332" fromY="-98" />Dym jest wyraznie ciemnoscia sama w sobie i wibruje z zametu i mrocznej magii, starajac sie zostac uwolnionym lub pozrec wszystko, co sie pojawi. 
+
+Ta manifestacja jest nienaturalnie silna i moze byc bardzo niebezpieczna, ale poniewaz jestes do niej dostrojony, mozesz sprobowac ja bezpiecznie wykorzystac. To nie bedzie latwe.</nodes>
     <nodes xsi:type="NodeChallenge" ID="8" positionX="1487.65149" positionY="1087.91833" width="500" height="887" challengeType="TypeSpirit" versusConcept="true" versusGroup="GROUP-CON_S_0P_0M_5S" challengeScale="101" challengedList="ppl">
       <outputs name="Win" ownerID="8" targetID="17" group="G1" fromX="1928" fromY="592" />
       <outputs name="Lose" ownerID="8" targetID="13" fromX="1928" fromY="512" />
@@ -7823,9 +7825,9 @@ Jesli jestes magicznym uzytkownikiem, mozesz tutaj wykonac kilka rytualow.</node
       <outputs name="Jak co?" ownerID="3" targetID="4" fromX="1273" fromY="155" />
       <outputs name="Wez duchowa esencje krasnoluda i sprobuj uwolnic go tutaj." ownerID="3" targetID="5" fromX="1273" fromY="75" />Miejsca mocy to miejsca, w ktorych niezwykla duchowa lub magiczna obecnosc pozostawila trwaly slad. Moga przybierac rozne formy.</nodes>
     <nodes xsi:type="NodeAdventure" ID="4" positionX="1405.55859" positionY="610.6704" width="350" height="725">
-      <outputs name="Wez duchowa esencje krasnoluda i sprobuj uwolnic go tutaj." ownerID="4" targetID="5" fromX="1731" fromY="119" />Moga to byc miejsca, w ktorych polaczenie ze swiatem szarosci - krolestwo duchow - jest silne lub gdzie duch postanowil zamieszkac i pomoc zyjacym. 
+      <outputs name="Wez duchowa esencje krasnoluda i sprobuj uwolnic go tutaj." ownerID="4" targetID="5" fromX="1731" fromY="119" />Moga to byc miejsca, w ktorych polaczenie ze swiatem szarosci - krolestwo duchow - jest silne, lub gdzie duch postanowil zamieszkac i pomoc zyjacym. 
 
-Moga to byc rowniez miejsca, w ktorych mialy miejsce ekstremalne zdarzenia, tworzac emocjonalne odciski, a moze wielkie magiczne czyny, ktore pozostawily slady. Moga byc miejscami, w ktorych mieszkali wielcy magowie, pozwalajac, by ich magia przenikala do samej ziemi. 
+Moga to byc rowniez miejsca, w ktorych mialy miejsce ekstremalne zdarzenia, tworzac emocjonalne slady, a moze wielkie magiczne czyny, ktore pozostawily slady. Moga byc miejscami, w ktorych mieszkali wielcy magowie, pozwalajac, by ich magia przenikala do samej ziemi. 
 
 I tak dalej.</nodes>
     <nodes xsi:type="NodeAdventure" ID="5" positionX="1827.0127" positionY="429.193481" width="350" height="885">
@@ -8886,7 +8888,7 @@ Stara wiedzma opowiada ci wiele historii, zanim w koncu mowi, ze czas isc. </nod
       </logic>
       <outputs name="Handel." ownerID="28" targetID="45" fromX="2676" fromY="1150" />
       <outputs name="Naucz sie rytualow.  " ownerID="28" targetID="46" fromX="2676" fromY="1069" />
-      <outputs name="Dziekuje jej na razie i wyjdz." ownerID="28" targetID="59" fromX="2676" fromY="989" />„Ha! Dobry. Dobrze poznana, siostro. Teraz, dla nieznajomych, bralbym udzial w grach, transakcjach i oszustwach. 
+      <outputs name="Dziekuje jej na razie i odejdz." ownerID="28" targetID="59" fromX="2676" fromY="989" />„Ha! Dobry. Dobrze poznana, siostro. Teraz, dla nieznajomych, bralbym udzial w grach, transakcjach i oszustwach. 
 
 Ale dla ciebie oferuje uczciwa wymiane miedzy siostrami, albo moge nauczyc cie pewnych rytualow i dac ci kilka ziol, ale potrzebuje troche twojej energii duchowej w zamian.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="29" positionX="4651.93262" positionY="1254.00342" width="350" height="530" allPlayersXP="3" allPlayersRP="1" linkedEventUniqueID="0" />
@@ -9622,9 +9624,7 @@ Twoj rytual rozpuszcza sie, a kosci zapadaja w spokoju. Czujesz na sobie chorobe
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wyjdz." ownerID="23" targetID="50" fromX="3957" fromY="-2534" />Wydaje sie, ze dziala wiazacy rytual, ale wtedy wybuch niekontrolowanej energii niszczy nieozywione. 
-
-Jednak widmo rodzi sie z mocy i teraz podaza za toba.</nodes>
+      <outputs name="Wyjdz." ownerID="23" targetID="50" fromX="3957" fromY="-2534" />Wydaje sie, ze rytual wiazania dziala, ale wtedy wybuch niekontrolowanej energii niszczy nieozywione.Jednak widmo rodzi sie z mocy i teraz podaza za toba.</nodes>
     <nodes xsi:type="NodeAdventure" ID="24" positionX="3835.5332" positionY="-1311.54041" width="350" height="725">
       <outputs name="Uciekaj." ownerID="24" targetID="51" fromX="4161" fromY="-1802" />Rytual nie dziala i ledwo uciec od nieozywionego. 
 </nodes>
@@ -10216,7 +10216,7 @@ Czujesz, ze duchy metalu i kamienia sprzyjaja tobie.</nodes>
       <outputs name="[Ork] Nie masz pojecia, co to jest, ale sprobuj to zrobic." ownerID="2" targetID="22" group="G2" fromX="790" fromY="-817" />
       <outputs name="Nie masz pojecia, co to jest, ale sprobuj to zrobic." ownerID="2" targetID="21" group="G2" fromX="790" fromY="-898" />
       <outputs name="Cokolwiek to jest, sprobuj je otworzyc." ownerID="2" targetID="6" fromX="790" fromY="-978" />
-      <outputs name="Po prostu zostaw to." ownerID="2" targetID="30" fromX="790" fromY="-1058" />Widzisz dziwny blyskotek na jednym z miejsc pochowku.</nodes>
+      <outputs name="Po prostu zostaw to." ownerID="2" targetID="30" fromX="790" fromY="-1058" />Widzisz dziwny swiecidelko w jednym z miejsc pochowku.</nodes>
     <nodes xsi:type="NodeAdventure" ID="3" positionX="829.552" positionY="697.849" width="350" height="805">
       <logic>
         <FilterBlock>

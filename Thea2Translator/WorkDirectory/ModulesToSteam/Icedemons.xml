@@ -348,7 +348,7 @@ Trudno nazwac to ugoda, ale prawdopodobnie tak blisko, jak tylko sie do niej doj
         </FilterBlock>
       </logic>
       <outputs name="Obron sie!" ownerID="7" targetID="14" fromX="-269" fromY="-607" />
-      <outputs name="Biegnij!" ownerID="7" targetID="6" fromX="-269" fromY="-687" />Znajdujesz miejsce ukryte przed prostym widokiem, aw tobie spotykaja sie gromadzace sie demony lodu. 
+      <outputs name="Biegnij!" ownerID="7" targetID="6" fromX="-269" fromY="-687" />Znajdujesz miejsce ukryte przed prostym wzrokiem, aw tobie spotykaja sie gromadzace sie demony lodu. 
 
 Trudno nazwac to ugoda, ale prawdopodobnie jest tak blisko, jak do jednej. Dostrzegaja cie i atakuja! 
 </nodes>
@@ -488,7 +488,7 @@ Kiedy zostaniesz przyjaciolmi, bedziesz mogl rekrutowac, handlowac i leczyc wszy
         </ModifierBlock>
       </logic>
       <outputs name="Tak, zaakceptuj." ownerID="21" targetID="23" fromX="1307" fromY="-1459" />
-      <outputs name="Upadek polityczny." ownerID="21" targetID="16" fromX="1307" fromY="-1539" />Dziad mroz siedzi w centrum, jego cialo jest czesciowo zanurzone w lodowej podlodze: 
+      <outputs name="Upadek polityczny." ownerID="21" targetID="16" fromX="1307" fromY="-1539" />Dziad mroz siedzi posrodku, jego cialo jest czesciowo zanurzone w lodowej podlodze: 
 
 'Udowodniles, ze jestes silny. Jestem zainteresowany, aby dowiedziec sie wiecej. Jeden z moich wnukow, sniezynka, dolaczy do ciebie, a jeden z twoich stanie sie lodem. W ten sposob mozemy sie oboje wzajemnie uczyc. Po prostu nie daj mi swojego wybranego, bo bogowie nie byliby ze mnie zadowoleni. Zgoda?'
 
@@ -522,7 +522,7 @@ Kiedy zostaniesz przyjaciolmi, bedziesz mogl rekrutowac, handlowac i leczyc wszy
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="24" positionX="2497" positionY="-1255" width="350" height="805">
       <outputs name="Tak, zaakceptuj." ownerID="24" targetID="23" fromX="2822" fromY="-1746" />
-      <outputs name="Upadek polityczny." ownerID="24" targetID="16" fromX="2822" fromY="-1826" />Dziad mroz siedzi w centrum, jego cialo jest czesciowo zanurzone w lodowej podlodze: 
+      <outputs name="Upadek polityczny." ownerID="24" targetID="16" fromX="2822" fromY="-1826" />Dziad mroz siedzi posrodku, jego cialo jest czesciowo zanurzone w lodowej podlodze: 
 
 'Udowodniles, ze jestes silny. Jestem zainteresowany, aby dowiedziec sie wiecej. Jeden z moich wnukow, sniezynka, dolaczy do ciebie, a jeden z twoich stanie sie lodem. W ten sposob mozemy sie oboje wzajemnie uczyc. Zgoda?'
 </nodes>

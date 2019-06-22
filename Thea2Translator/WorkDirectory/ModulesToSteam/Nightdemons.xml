@@ -256,7 +256,7 @@
         </ModifierBlock>
       </logic>
       <outputs name="Wyjdz." ownerID="11" targetID="66" group="G1" fromX="2964" fromY="-1890" />
-      <outputs name="Wyjdz." ownerID="11" targetID="67" group="G1" fromX="2964" fromY="-1970" />„Przyjmuje twoja oferte i wezwe cie do sluzby.'</nodes>
+      <outputs name="Wyjdz." ownerID="11" targetID="67" group="G1" fromX="2964" fromY="-1970" />„Przyjmuje twoja ofiare i wezwe niewolnikow do twojej sluzby.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="12" positionX="3293" positionY="-1343" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -454,7 +454,7 @@ Twoj blysk jest przywrocony, ale czujesz, ze czesc twojej krwi zostala spuszczon
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Zostaw ..." ownerID="22" targetID="23" fromX="6330" fromY="-3570" />Upiles sie w nocnym domu rozrywki dla demonow, kiedy sie budzisz, jestes pokryty wilczym futrem i raczej szorstkimi „ukaszeniami milosci” ... a kiedy spojrzysz na siebie z gory - jestes striga!</nodes>
+      <outputs name="Zostaw ..." ownerID="22" targetID="23" fromX="6330" fromY="-3570" />Upiles sie w nocnym domu rozrywki dla demonow, kiedy sie budzisz, jestes pokryty wilczym futrem i raczej szorstkimi „ukaszeniami milosci”… a kiedy spojrzysz na siebie z gory - jestes striga!</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="23" positionX="4927" positionY="-3093" width="350" height="530" linkedEventUniqueID="0">
       <logic>
         <ModifierBlock>
@@ -849,7 +849,7 @@ Jeden z rywali budzi sie z pelnia ksiezyca jako dziecko nocy!</nodes>
         </ModifierBlock>
       </logic>
       <outputs name="Zaoferuj picie ze swoim przeciwnikiem, aby walczyc dobrze." ownerID="63" targetID="54" fromX="3863" fromY="-4938" />
-      <outputs name="Pros, abys stal sie dzieckiem ksiezyca, takim jak on!" ownerID="63" targetID="64" fromX="3863" fromY="-5018" />Wilkolak poddaje sie twojej sile i daje ci trofea jako nagrode za twoje zwyciestwo. 
+      <outputs name="Popros, abys stal sie dzieckiem ksiezyca, takim jak on!" ownerID="63" targetID="64" fromX="3863" fromY="-5018" />Wilkolak poddaje sie twojej sile i daje ci trofea jako nagrode za twoje zwyciestwo. 
 
 Jego paczka wyje na twoj honor.</nodes>
     <nodes xsi:type="NodeAdventure" allowOnce="true" ID="64" positionX="4111" positionY="-3958" width="350" height="725">
@@ -944,7 +944,7 @@ Jeden z rywali budzi sie z pelnia ksiezyca jako dziecko nocy!</nodes>
       </logic>
       <outputs name="[Elf] Niestety, elfy nie moga przyjac takich ciemnych darow. Tak samo mu dziekuje." ownerID="70" targetID="72" fromX="2962" fromY="-5855" />
       <outputs name="Zaakceptuj oferte." ownerID="70" targetID="74" group="G1" fromX="2962" fromY="-5935" />
-      <outputs name="Grzecznie odmow i wyjdz." ownerID="70" targetID="73" fromX="2962" fromY="-6015" />
+      <outputs name="Odrzuc grzecznie i odejdz." ownerID="70" targetID="73" fromX="2962" fromY="-6015" />
       <outputs name="Zaakceptuj oferte." ownerID="70" targetID="92" group="G1" fromX="2962" fromY="-6095" />„Zaczarowales moje serce mistrzowskimi umiejetnosciami. Klaniam sie twojej najwyzszej mocy i twojemu zadziwiajacemu pieknu. 
 
 Czy zgodzisz sie ze mna, kochanie nocy? Jeden slodki kes i twoj swiat zmieni sie na zawsze!'</nodes>
@@ -1019,8 +1019,8 @@ Czy zgodzisz sie ze mna, kochanie nocy? Jeden slodki kes i twoj swiat zmieni sie
         </ModifierBlock>
       </logic>
       <outputs name="Dziekuje mu i odejdz." ownerID="75" targetID="73" fromX="2173" fromY="-6463" />
-      <outputs name="Popros o przeksztalcenie sie w mistrza striga!" ownerID="75" targetID="76" group="G1" fromX="2173" fromY="-6543" />
-      <outputs name="Popros o przeksztalcenie w zwykla strige." ownerID="75" targetID="77" group="G1" fromX="2173" fromY="-6623" />„Cudownie, tak, twoja moc jest wspaniala i jestem pod wrazeniem. Klaniam sie twojej wyzszosci, przyjacielu. Oto nagroda za wyzwanie.'</nodes>
+      <outputs name="Popros o zmiane w mistrza striga!" ownerID="75" targetID="76" group="G1" fromX="2173" fromY="-6543" />
+      <outputs name="Popros o przeksztalcenie w zwykla strige." ownerID="75" targetID="77" group="G1" fromX="2173" fromY="-6623" />„Cudownie, tak, twoja moc jest swietna i jestem pod wrazeniem. Klaniam sie twojej wyzszosci, przyjacielu. Oto nagroda za wyzwanie.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="76" positionX="2277" positionY="-6213" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -1069,7 +1069,7 @@ Czy zgodzisz sie ze mna, kochanie nocy? Jeden slodki kes i twoj swiat zmieni sie
       </logic>
       <outputs name="Zaakceptuj swoja porazke. " ownerID="78" targetID="79" group="G1" fromX="1208" fromY="-5873" />
       <outputs name="Zaakceptuj swoja porazke. " ownerID="78" targetID="81" group="G1" fromX="1208" fromY="-5953" />
-      <outputs name="Zaakceptuj swoja porazke. " ownerID="78" targetID="80" group="G1" fromX="1208" fromY="-6033" />„A wiec klaniasz sie mojej najwyzszej mocy, dobrej ...</nodes>
+      <outputs name="Zaakceptuj swoja porazke. " ownerID="78" targetID="80" group="G1" fromX="1208" fromY="-6033" />„A wiec klaniasz sie mojej najwyzszej wladzy, dobrej ...</nodes>
     <nodes xsi:type="NodeAdventure" ID="79" positionX="371" positionY="-5727" width="350" height="725">
       <logic>
         <FilterBlock>
@@ -1147,7 +1147,7 @@ Stajesz sie kochanka nocy. Mistrz striga jest wyczerpany rytualem, wiec jest dob
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Zostaw ..." ownerID="82" targetID="23" fromX="6793" fromY="-3861" />Upiles sie w nocnym domu rozrywki dla demonow, kiedy sie budzisz, jestes pokryty wilczym futrem i raczej szorstkimi „ukaszeniami milosci” ... a kiedy spojrzysz na siebie - jestes wilkolakiem!</nodes>
+      <outputs name="Zostaw ..." ownerID="82" targetID="23" fromX="6793" fromY="-3861" />Upiles sie w nocnym domu rozrywki dla demonow, kiedy sie budzisz, jestes pokryty wilczym futrem i raczej szorstkimi „ukaszeniami milosci”… a kiedy spojrzysz na siebie - jestes wilkolakiem!</nodes>
     <nodes xsi:type="NodeAdventure" ID="83" positionX="5551" positionY="-3611" width="350" height="725">
       <logic>
         <ModifierBlock>
@@ -1173,7 +1173,7 @@ Stajesz sie kochanka nocy. Mistrz striga jest wyczerpany rytualem, wiec jest dob
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Handel." ownerID="84" targetID="14" fromX="4350" fromY="-1539" />„Jak dotad okazales sie przyjazny, tak, bedziemy z Toba handlowac.'</nodes>
+      <outputs name="Handel." ownerID="84" targetID="14" fromX="4350" fromY="-1539" />„Dotychczas okazaliscie sie nam przyjazni, tak, bedziemy handlowac z wami.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="85" positionX="162" positionY="-1692" width="350" height="1046">
       <logic>
         <FilterBlock>
@@ -1227,7 +1227,7 @@ Stajesz sie kochanka nocy. Mistrz striga jest wyczerpany rytualem, wiec jest dob
       <outputs name="Lepsze wyjscie." ownerID="87" targetID="25" fromX="2866" fromY="-2761" />
       <outputs name="Odwiedz domy rozrywki." ownerID="87" targetID="17" fromX="2866" fromY="-2841" />
       <outputs name="Jest kilka wilkolakow na ringu, idz do nich." ownerID="87" targetID="15" fromX="2866" fromY="-2921" />
-      <outputs name="Zapytaj, czy beda z toba handlowac?" ownerID="87" targetID="12" fromX="2866" fromY="-3001" />„Bez porozumienia, czas na wyjazd?'</nodes>
+      <outputs name="Zapytaj, czy beda z toba handlowac?" ownerID="87" targetID="12" fromX="2866" fromY="-3001" />„Nie ma sprawy, czas odejsc?'</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="88" positionX="-1280" positionY="-2561" width="350" height="530" allPlayersXP="1" allPlayersRP="1" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventureEnd" ID="89" positionX="-966" positionY="-1948" width="350" height="530" allPlayersXP="8" allPlayersRP="2" linkedEventUniqueID="0">
       <logic>
@@ -1257,7 +1257,7 @@ Stajesz sie kochanka nocy. Mistrz striga jest wyczerpany rytualem, wiec jest dob
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Zabierz je ze soba i wyjdz." ownerID="90" targetID="91" fromX="31" fromY="-2204" />Ktos, kogo kiedys zgubiles, demony wrocily do ciebie, choc zmienil sie.</nodes>
+      <outputs name="Zabierz je ze soba i wyjdz." ownerID="90" targetID="91" fromX="31" fromY="-2204" />Ktos, kogo kiedys zgubiles, demony, wrocil do ciebie, choc zmienil sie.</nodes>
     <nodes xsi:type="NodeDealDamage" ID="91" positionX="-426" positionY="-2595" width="460" height="459" challengeTypeDamage="TypeMental" minDamage="0" maxDamage="0" useCountInPercent="false">
       <logic>
         <FilterBlock>
@@ -1363,7 +1363,7 @@ Jeden z rywali budzi sie z pelnia ksiezyca jako dziecko nocy!</nodes>
       <outputs name="Wyjdz." ownerID="11" targetID="10" fromX="1198" fromY="-675" />
       <outputs name="Uzyj srebra lub lepszego metalu, aby zastraszyc ich do wycofania sie!" ownerID="11" targetID="12" fromX="1198" fromY="-755" />
       <outputs name="Walcz!" ownerID="11" targetID="15" fromX="1198" fromY="-835" />
-      <outputs name="Stan twarza w twarz z nocnymi bestiami, aby zyskac ich szacunek." ownerID="11" targetID="27" fromX="1198" fromY="-915" />Oni nie odpowiadaja, oni ciagle przychodza do ciebie.</nodes>
+      <outputs name="Zmierz sie z nocnymi bestiami z duchem, aby zyskac ich szacunek." ownerID="11" targetID="27" fromX="1198" fromY="-915" />Oni nie odpowiadaja, oni ciagle przychodza do ciebie.</nodes>
     <nodes xsi:type="NodeChallenge" ID="12" positionX="1416" positionY="-259" width="500" height="726" challengeType="TypeMental" versusEventOwner="true" challengeScale="101" challengedList="ppl">
       <logic>
         <FilterBlock>

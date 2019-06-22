@@ -70,7 +70,7 @@
         </FilterBlock>
       </logic>
       <outputs name="[Zamieszanie] Ogarnij los i zacznij szarzowac." ownerID="2" targetID="4" fromX="942" fromY="154" />
-      <outputs name="[Natura] Zaufajcie cokolwiek, co zdecyduje sie rzucic na wasza sciezke." ownerID="2" targetID="6" fromX="942" fromY="74" />
+      <outputs name="[Natura] Ufaj w cokolwiek, co zdecyduje sie rzucic na twoja sciezke." ownerID="2" targetID="6" fromX="942" fromY="74" />
       <outputs name="Po co czekac? Zaladuj i odszukaj pajaki, aby je zabic!" ownerID="2" targetID="3" fromX="942" fromY="-5" />
       <outputs name="[Hunter] Znajdz bezpieczna sciezke." ownerID="2" targetID="7" group="G1" fromX="942" fromY="-86" />
       <outputs name="Znajdz alternatywna sciezke." ownerID="2" targetID="30" group="G1" fromX="942" fromY="-166" />

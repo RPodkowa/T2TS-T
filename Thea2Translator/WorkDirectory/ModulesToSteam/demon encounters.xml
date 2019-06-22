@@ -1326,7 +1326,7 @@ I nic nadzwyczajnego, inaczej cie ugryze.'</nodes>
 Oto formula, ktora mam powiedziec: 
 Bogowie wznosza sie poprzez zrozumienie i wole stawania sie. Tak wiec, czyniac zyczenie, udowodniles na zawsze, ze jestes niegodny. 
 
-I oto jedno ode mnie: te pompatyczne bekarty nie lubia smiertelnikow probujacych otworzyc drzwi, wiec kazdy glupiec, ktory probuje, zostaje przeklety. Ostrzeglem cie!' </nodes>
+I oto jedno ode mnie: te pompatyczne bekarty nie lubia smiertelnikow probujacych tylnymi drzwiami, wiec kazdy glupiec, ktory probuje, zostaje przeklety. Ostrzeglem cie!' </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="16" positionX="3953.27246" positionY="627.663269" width="350" height="530" allPlayersXP="2" allPlayersRP="1" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeDealDamage" ID="19" positionX="2968.68359" positionY="2738.58423" width="460" height="459" challengeTypeDamage="TypeMental" minDamage="0" maxDamage="8" useCountInPercent="false">
       <logic>
@@ -1921,7 +1921,7 @@ Postac odchodzi, a ziemia pod toba drzy. Powietrze staje sie lodowate, a niebo c
 
 Sila czystego swiatla uderza w figure, a ty czujesz, ze sie nie opieraly. W rzeczywistosci czujesz, ze pomogly ci w wysilkach. 
 
-Swiatlo plonie cialo i dusze stworzenia, pozostawiajac tylko czarny popiol, chociaz odkrywasz w nim drobinki srebrnego pylu.</nodes>
+Swiatlo pali cialo i dusze stworzenia, pozostawiajac tylko czarny popiol, chociaz odkrywasz w nim drobinki srebrnego pylu.</nodes>
     <nodes xsi:type="NodeChallenge" ID="41" positionX="2561.56934" positionY="-3315.4707" width="500" height="726" challengeType="TypeMental" versusGroup="GROUP-ELF_SHADOW_MIX_4P_4M_4S" challengeScale="101" challengedList="ppl">
       <outputs name="Win" ownerID="41" targetID="42" fromX="3002" fromY="-3810" />
       <outputs name="Lose" ownerID="41" targetID="51" fromX="3002" fromY="-3891" />
@@ -2692,7 +2692,7 @@ Slyszysz chrapanie z krzewow, ale znajdziesz tez prezent z wiadomoscia „Dzieki z
           </LogicResultAction>
         </FilterBlock>
       </logic>
-      <outputs name="?" ownerID="36" targetID="37" fromX="1210" fromY="-2686" />Podazasz sciezka do miejsca, gdzie powinny byc zle wiewiorki, ale wszystko, co widzisz, to przerazony wlochaty stwor o duzych zoltych oczach, zielonkawym futrze, ptasich skrzydlach i okropnym smrodzie. Zanim bedziesz mogl zareagowac, stwor rzuca na ciebie bombe smierdzaca, a potem ucieka. Slyszysz smiech pod stopami.</nodes>
+      <outputs name="?" ownerID="36" targetID="37" fromX="1210" fromY="-2686" />Podazasz sciezka do miejsca, gdzie powinny byc zle wiewiorki, ale wszystko, co widzisz, to przerazony wlochaty stwor o duzych zoltych oczach, zielonkawym futrze, ptasich skrzydlach i okropnym odorze. Zanim bedziesz mogl zareagowac, stwor rzuca na ciebie bombe smierdzaca, a potem ucieka. Slyszysz smiech pod stopami.</nodes>
     <nodes xsi:type="NodeAdventure" ID="37" positionX="946.828064" positionY="-2990.13818" width="350" height="805">
       <logic>
         <ModifierBlock>
@@ -3810,13 +3810,13 @@ Masz szanse uciec, ale nie bez ceny. </nodes>
       <outputs name="Dostrzegasz takze szczatki rodzica trolla. Zbierz lup i wyjdz." ownerID="8" targetID="17" group="G1" fromX="2714" fromY="-907" />
       <outputs name="Wyjdz." ownerID="8" targetID="12" group="G1" fromX="2714" fromY="-987" />To sa wyraznie bagnisci - mlodziency trolli blotnych. Moga byc bardzo niebezpieczne w roju, ale sa dosc lagodne i typowo przyjazne, chyba ze zostana sprowokowane. 
 
-Wstajesz i bierzesz kilka trafien, ale nie wykonujesz zadnych groznych ruchow. Bagniacze przestaja cie bombardowac i rozpraszaja. 
+Stoisz nieruchomo i bierzesz kilka trafien, ale nie wykonujesz zadnych groznych ruchow. Bagniacze przestaja cie bombardowac i rozpraszaja. 
 
 Zaskakujace jest to, ze popiol wyplul leczone rany, jakie moglbys miec. 
 </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="12" positionX="3333.90381" positionY="-579.8473" width="350" height="408" allPlayersXP="4" allPlayersRP="1" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventure" ID="13" positionX="1716.38892" positionY="189.509216" width="350" height="725">
-      <outputs name="Upusc torby i uciekaj." ownerID="13" targetID="14" fromX="2042" fromY="-301" />Male blotne stworzenia bija cie, a potem rozpraszaja. Ku twojemu przerazeniu, widzisz sylwetki dwoch blotnych trolli poruszajacych sie w twoja strone! 
+      <outputs name="Upusc torby i uciekaj." ownerID="13" targetID="14" fromX="2042" fromY="-301" />Male blotne stworzenia bija cie, a potem rozpraszaja. Ku twojemu przerazeniu, widzisz sylwetki dwoch blotnych trolli, ktore poruszaja sie w twoja strone! 
 
 Musisz upuscic kilka workow, aby uciec.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="14" positionX="2131.87524" positionY="172.131332" width="350" height="530" allPlayersXP="1" allPlayersRP="1" linkedEventUniqueID="0">

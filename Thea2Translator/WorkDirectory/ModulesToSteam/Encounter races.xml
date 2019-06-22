@@ -307,7 +307,7 @@ Odchodza. </nodes>
       </logic>
       <outputs name="Wyjdz." ownerID="34" targetID="13" fromX="850" fromY="-1937" />Gobliny siedza przy ognisku i dziela sie z toba historiami. Przemierzaja dziwny chwast i wkrotce widzicie wizje duchow, o ktorych mowia. 
 
-Zdajesz sobie jednak sprawe, ze rzeczy, ktore dzielili, byly dosc silne, a ty wszyscy czujesz sie bardzo chory. 
+Zdajesz sobie jednak sprawe, ze rzeczy, ktore dzielili, byly dosc silne, a ty wszyscy czujesz sie bardzo zle. 
 </nodes>
     <nodes xsi:type="NodeAdventure" ID="35" positionX="-586.557" positionY="-372.566681" width="350" height="805">
       <logic>
@@ -817,7 +817,7 @@ Ale zmiana, konflikt, pasja - tylko jesli je zaakceptujesz, osiagniemy prawdziwa
 </nodes>
     <nodes xsi:type="NodeAdventure" ID="59" positionX="4639" positionY="1054" width="350" height="805">
       <outputs name="Zgadzam sie nie zgadzac." ownerID="59" targetID="29" fromX="4965" fromY="563" />
-      <outputs name="Nalegaj, aby dzialania wojenne nie byly madroscia, a jedynie srodkiem, ktorego trzeba czasem uzyc." ownerID="59" targetID="60" fromX="4965" fromY="482" />„Jestes mlody i podazasz za swoimi gladkimi bogami, ale masz Zorye, masz Triglav, masz Horza, wiec sluchaj ich, szczeniaku! Nie pozwol, aby twoje serca zmiekly, a wrog nas wszystkich zniszczy!'</nodes>
+      <outputs name="Nalegaj, aby dzialania wojenne nie byly madroscia, a jedynie srodkiem, ktorego trzeba czasem uzyc." ownerID="59" targetID="60" fromX="4965" fromY="482" />„Jestes mlody i podazasz za swoimi gladkimi bogami, ale masz Zorye, masz Triglav, masz Horza, wiec sluchaj ich, szczenie! Nie pozwol, aby twoje serca zmiekly, a wrog nas wszystkich zniszczy!'</nodes>
     <nodes xsi:type="NodeAdventure" ID="60" positionX="5176.122" positionY="1686.34229" width="350" height="725">
       <outputs name="Wyjdz." ownerID="60" targetID="29" fromX="5501" fromY="1195" />Widzisz, jak stare oczy orka plona, gdy zaciska piesc, ale ona wydycha i dodaje tylko: 
 
@@ -1626,7 +1626,7 @@ Oni takze zostawiaja prezent.
 
 Teraz, gdy istoty nocy poluja na nasze sny, a swiatlo dnia stara sie spalic nasze dusze, podczas gdy ziemia wciaz sie rozpada - coz, niewiele czasu na wiedze. A jednak znosimy. Jako uczeni mezczyzni i kobiety zbieramy wiedze i zapisujemy ja.'</nodes>
     <nodes xsi:type="NodeAdventure" ID="40" positionX="1024.83679" positionY="1768.3219" width="350" height="725">
-      <outputs name="Nod." ownerID="40" targetID="47" fromX="1350" fromY="1277" />„Oczywiscie na przyszlosc. Gdy swiat powroci do pozorow rownowagi, jeszcze raz bedziemy potrzebowac wiedzy! To nasza najlepsza bron, nasz jedyny zbawiciel, nasza laska ...'
+      <outputs name="Nod. " ownerID="40" targetID="47" fromX="1350" fromY="1277" />„Oczywiscie na przyszlosc. Gdy swiat powroci do pozorow rownowagi, jeszcze raz bedziemy potrzebowac wiedzy! To nasza najlepsza bron, nasz jedyny zbawiciel, nasza laska ...'
 
 Odjezdza.</nodes>
     <nodes xsi:type="NodeAdventure" ID="42" positionX="1337.474" positionY="1024.735" width="350" height="805">
@@ -2011,7 +2011,7 @@ Odchodza. </nodes>
       </logic>
       <outputs name="Wyjdz." ownerID="34" targetID="13" fromX="850" fromY="-1937" />Gobliny siedza przy ognisku i dziela sie z toba historiami. Przemierzaja dziwny chwast i wkrotce widzicie wizje duchow, o ktorych mowia. 
 
-Zdajesz sobie jednak sprawe, ze rzeczy, ktore dzielili, byly dosc silne, a ty wszyscy czujesz sie bardzo chory. 
+Zdajesz sobie jednak sprawe, ze rzeczy, ktore dzielili, byly dosc silne, a ty wszyscy czujesz sie bardzo zle. 
 </nodes>
     <nodes xsi:type="NodeAdventure" ID="35" positionX="-586.557" positionY="-372.566681" width="350" height="805">
       <logic>

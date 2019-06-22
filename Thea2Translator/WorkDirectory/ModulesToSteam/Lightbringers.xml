@@ -13,18 +13,18 @@
           </LogicFilter>
         </FilterBlock>
       </logic>
-      <outputs name="Nie, powiedz im, ze przyszedles porozmawiac i byc moze ustanowic przyjazn." ownerID="2" targetID="3" fromX="735" fromY="-688" />Przychodzisz do osady, ktorej domaga sie swiatlo. Jego lud wedruje ulicami w zgodzie, pracujac, tworzac, orajac pola, wszystko w ciszy, razem. 
+      <outputs name="Nie, powiedz im, ze przyszedles porozmawiac i byc moze nawiazac przyjazn." ownerID="2" targetID="3" fromX="735" fromY="-688" />Przychodzisz do osady zadanej przez swiatlo. Jego lud wedruje ulicami w zgodzie, pracujac, tworzac, orajac pola, wszystko w ciszy, razem. 
 
 Kiedy cie zauwaza, zblizaja sie: 
 
 'Przyszedles do nas dolaczyc?'</nodes>
     <nodes xsi:type="NodeAdventure" ID="3" positionX="835" positionY="-54" width="350" height="966" image="Event056">
-      <outputs name="Odmow i odejdz szybko." ownerID="3" targetID="5" fromX="1160" fromY="-545" />
-      <outputs name="[Zamieszanie lub Swiatlo] To jest obrzydliwosc, ktora przeciwstawia sie zarowno zametowi (probujac go oswoic), jak i swiatlu (naduzywajac jego mocy). Atak na glowe!" ownerID="3" targetID="4" fromX="1160" fromY="-625" />
+      <outputs name="Odrzuc i odejdz szybko." ownerID="3" targetID="5" fromX="1160" fromY="-545" />
+      <outputs name="[Zamieszanie lub Swiatlo] To jest obrzydliwosc, ktora sprzeciwia sie zarowno zametowi (probujac go oswoic), jak i swiatlu (naduzywajac jego mocy). Atak na glowe!" ownerID="3" targetID="4" fromX="1160" fromY="-625" />
       <outputs name="[Magia lub natura] Ta sila wydaje sie nieistotna. Wzywaj swojej domeny i staw czola tym diablom swoim duchem!" ownerID="3" targetID="11" fromX="1160" fromY="-705" />
       <outputs name="[Harmonia lub Intelekt] Pokaz im sile twojego umyslu, wole, ktora nie bedzie wygieta. " ownerID="3" targetID="12" fromX="1160" fromY="-785" />„Jestes jednym z nas, albo nie jestes. Chodz . . .'
 
-Lekkie kosmyki zaczynaja krazyc wokol ciebie, ich zimny upal na twojej skorze i plonace sople dotykaja twoich wnetrznosci w probie dolaczenia.</nodes>
+Lekkie kosmyki zaczynaja krazyc wokol ciebie, ich zimny upal na twojej skorze i plonace sople dotykaja twoich wnetrznosci w probie polaczenia.</nodes>
     <nodes xsi:type="NodeChallenge" ID="4" positionX="1316" positionY="-476" width="500" height="726" challengeType="TypePhysical" versusGroup="GROUP-LIGHT_7P_7M_7S" challengeScale="101" challengedList="ppl">
       <logic>
         <FilterBlock>
@@ -195,10 +195,10 @@ Wies sama plonie, jakby swiatlo nie wytrzymalo twojego zwyciestwa.</nodes>
         </FilterBlock>
       </logic>
       <outputs name="Niech twoj duch zostanie uzdrowiony." ownerID="19" targetID="20" fromX="-674" fromY="-852" />
-      <outputs name="Niech twoje zdrowie psychiczne zostanie wyleczone." ownerID="19" targetID="22" fromX="-674" fromY="-932" />
+      <outputs name="Wylecz swoje zdrowie psychiczne." ownerID="19" targetID="22" fromX="-674" fromY="-932" />
       <outputs name="Usun przeklenstwa. " ownerID="19" targetID="25" fromX="-674" fromY="-1012" />
       <outputs name="Rekrutuj malarzy swiatla." ownerID="19" targetID="26" fromX="-674" fromY="-1092" />
-      <outputs name="Nic na teraz, odejdz." ownerID="19" targetID="31" fromX="-674" fromY="-1172" />Wies wydaje sie zamrozona w czasie. Ludzie poruszaja sie tak wolno, ze ledwo to widac. Jednak wszyscy wydaja sie naprawde szczesliwi. 
+      <outputs name="Na razie nic do zrobienia, odejdz." ownerID="19" targetID="31" fromX="-674" fromY="-1172" />Wies wydaje sie zamrozona w czasie. Ludzie poruszaja sie tak wolno, ze ledwo to widac. Jednak wszyscy wydaja sie naprawde szczesliwi. 
 
 </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="20" positionX="-1513" positionY="-325" width="350" height="530" linkedEventUniqueID="0">
@@ -344,8 +344,8 @@ Wies sama plonie, jakby swiatlo nie wytrzymalo twojego zwyciestwa.</nodes>
       </logic>
       <outputs name="Porozmawiaj z nimi." ownerID="2" targetID="27" fromX="729" fromY="-677" />
       <outputs name="Walcz!" ownerID="2" targetID="12" fromX="729" fromY="-757" />
-      <outputs name="Stan twarza w twarz ze swoim duchem!" ownerID="2" targetID="15" fromX="729" fromY="-837" />
-      <outputs name="Odsun sie." ownerID="2" targetID="10" fromX="729" fromY="-917" />Zbliza sie do ciebie grupa ludzi zabrana przez lekka bicze - swierszczy, tak jak sa teraz znani. 
+      <outputs name="Zmierz sie z duchem!" ownerID="2" targetID="15" fromX="729" fromY="-837" />
+      <outputs name="Odsun sie." ownerID="2" targetID="10" fromX="729" fromY="-917" />Podchodzi do ciebie grupa ludu zabrana przez lekka bicze - swierszcze, jak sa teraz znane. 
 
 Oni nie mowia. Staraja sie tylko wprowadzic was do ich wspolnoty z umyslem-swiatlem.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="10" positionX="-13" positionY="-1203" width="350" height="530" linkedEventUniqueID="0">
@@ -401,7 +401,7 @@ Oni nie mowia. Staraja sie tylko wprowadzic was do ich wspolnoty z umyslem-swiat
       <outputs ownerID="16" targetID="17" fromX="2019" fromY="-1546" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="17" positionX="2275" positionY="-1007" width="350" height="725">
-      <outputs name="Wez ich rzeczy i wyjdz." ownerID="17" targetID="22" fromX="2600" fromY="-1498" />Niszczysz malarzy swiatla, a ich ciala zamieniaja sie w popiol. </nodes>
+      <outputs name="Wez ich rzeczy i wyjdz." ownerID="17" targetID="22" fromX="2600" fromY="-1498" />Niszczycie miotacze swiatla, a ich ciala zamieniaja sie w popiol. </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="18" positionX="3575.53" positionY="-1343.55945" width="350" height="530" allPlayersXP="-1" linkedEventUniqueID="0">
       <logic>
         <ModifierBlock>
@@ -483,18 +483,18 @@ Odchodza.</nodes>
           </LogicFilter>
         </FilterBlock>
       </logic>
-      <outputs name="Nie, powiedz im, ze przyszedles porozmawiac i byc moze ustanowic przyjazn." ownerID="2" targetID="3" fromX="735" fromY="-688" />Przychodzisz do osady, ktorej domaga sie swiatlo. Jego lud wedruje ulicami w zgodzie, pracujac, tworzac, orajac pola, wszystko w ciszy, razem. 
+      <outputs name="Nie, powiedz im, ze przyszedles porozmawiac i byc moze nawiazac przyjazn." ownerID="2" targetID="3" fromX="735" fromY="-688" />Przychodzisz do osady zadanej przez swiatlo. Jego lud wedruje ulicami w zgodzie, pracujac, tworzac, orajac pola, wszystko w ciszy, razem. 
 
 Kiedy cie zauwaza, zblizaja sie: 
 
 'Przyszedles do nas dolaczyc?'</nodes>
     <nodes xsi:type="NodeAdventure" ID="3" positionX="835" positionY="-54" width="350" height="966" image="Event056">
-      <outputs name="Odmow i odejdz szybko." ownerID="3" targetID="5" fromX="1160" fromY="-545" />
-      <outputs name="[Zamieszanie lub Swiatlo] To jest obrzydliwosc, ktora przeciwstawia sie zarowno zametowi (probujac go oswoic), jak i swiatlu (naduzywajac jego mocy). Atak na glowe!" ownerID="3" targetID="4" fromX="1160" fromY="-625" />
+      <outputs name="Odrzuc i odejdz szybko." ownerID="3" targetID="5" fromX="1160" fromY="-545" />
+      <outputs name="[Zamieszanie lub Swiatlo] To jest obrzydliwosc, ktora sprzeciwia sie zarowno zametowi (probujac go oswoic), jak i swiatlu (naduzywajac jego mocy). Atak na glowe!" ownerID="3" targetID="4" fromX="1160" fromY="-625" />
       <outputs name="[Magia lub natura] Ta sila wydaje sie nieistotna. Wzywaj swojej domeny i staw czola tym diablom swoim duchem!" ownerID="3" targetID="11" fromX="1160" fromY="-705" />
       <outputs name="[Harmonia lub Intelekt] Pokaz im sile twojego umyslu, wole, ktora nie bedzie wygieta. " ownerID="3" targetID="12" fromX="1160" fromY="-785" />„Jestes jednym z nas, albo nie jestes. Chodz . . .'
 
-Lekkie kosmyki zaczynaja krazyc wokol ciebie, ich zimny upal na twojej skorze i plonace sople dotykaja twoich wnetrznosci w probie dolaczenia.</nodes>
+Lekkie kosmyki zaczynaja krazyc wokol ciebie, ich zimny upal na twojej skorze i plonace sople dotykaja twoich wnetrznosci w probie polaczenia.</nodes>
     <nodes xsi:type="NodeChallenge" ID="4" positionX="1316" positionY="-476" width="500" height="726" challengeType="TypePhysical" versusGroup="GROUP-LIGHT_9P_9M_9S" challengeScale="101" challengedList="ppl">
       <logic>
         <FilterBlock>
@@ -686,10 +686,10 @@ Wies sama plonie, jakby swiatlo nie wytrzymalo twojego zwyciestwa.</nodes>
         </FilterBlock>
       </logic>
       <outputs name="Niech twoj duch zostanie uzdrowiony." ownerID="19" targetID="20" fromX="-674" fromY="-852" />
-      <outputs name="Niech twoje zdrowie psychiczne zostanie wyleczone." ownerID="19" targetID="22" fromX="-674" fromY="-932" />
+      <outputs name="Wylecz swoje zdrowie psychiczne." ownerID="19" targetID="22" fromX="-674" fromY="-932" />
       <outputs name="Usun przeklenstwa. " ownerID="19" targetID="25" fromX="-674" fromY="-1012" />
       <outputs name="Rekrutuj malarzy swiatla." ownerID="19" targetID="26" fromX="-674" fromY="-1092" />
-      <outputs name="Nic na teraz, odejdz." ownerID="19" targetID="31" fromX="-674" fromY="-1172" />Wies wydaje sie zamrozona w czasie. Ludzie poruszaja sie tak wolno, ze ledwo to widac. Jednak wszyscy wydaja sie naprawde szczesliwi. 
+      <outputs name="Na razie nic do zrobienia, odejdz." ownerID="19" targetID="31" fromX="-674" fromY="-1172" />Wies wydaje sie zamrozona w czasie. Ludzie poruszaja sie tak wolno, ze ledwo to widac. Jednak wszyscy wydaja sie naprawde szczesliwi. 
 
 </nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="20" positionX="-1513" positionY="-325" width="350" height="530" linkedEventUniqueID="0">

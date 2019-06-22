@@ -29433,7 +29433,8 @@
     </Groups>
     <Texts>
       <Input>Artisan's Aid</Input>
-      <Output>Pomoc rzemieślnika</Output>
+      <Output>Artisan's Aid</Output>
+      <Old>Worker's Aid </Old>
     </Texts>
   </Element>
   <Element ID="2311" Key="DES_SKILL_WEAK_CRAFTING_TOOL_DES" Flag="0">
@@ -33022,8 +33023,9 @@
       <Group>DES_SKILL_TRUE_HEROES</Group>
     </Groups>
     <Texts>
-      <Input>A bit shielding in every challenge granted to each follower by their God.</Input>
-      <Output>Trochę osłaniać w każdym wyzwaniu przyznanym każdemu wyznawcy przez ich Boga.</Output>
+      <Input>A bit of shielding in every challenge granted to each follower by their God.</Input>
+      <Output>A bit of shielding in every challenge granted to each follower by their God.</Output>
+      <Old>Trochę osłaniać w każdym wyzwaniu przyznanym każdemu wyznawcy przez ich Boga.</Old>
     </Texts>
   </Element>
   <Element ID="2604" Key="DES_SKILL_LOGIC_WALL" Flag="0">
@@ -41992,7 +41994,8 @@
     </Groups>
     <Texts>
       <Input>This character receives a bonus to Healing attribute from a nearby building.</Input>
-      <Output>Ta postać otrzymuje bonus do atrybutu leczenia z pobliskiego budynku.</Output>
+      <Output>This character receives a bonus to Healing attribute from a nearby building.</Output>
+      <Old>Healing Bonus</Old>
     </Texts>
   </Element>
   <Element ID="3313" Key="DES_SUBSKILL_GROUP_LOWER_DEATH_CHANCE" Flag="0">
@@ -43760,6 +43763,7 @@
     <Texts>
       <Input>Smarter Every Day</Input>
       <Output>Smarter Every Day</Output>
+      <Old>New Day, New Adventure</Old>
     </Texts>
   </Element>
   <Element ID="3450" Key="DES_TRAIT_SMARTER_EVERY_DAY_DES" Flag="0">
@@ -43772,7 +43776,8 @@
     </Groups>
     <Texts>
       <Input>Each day each of your characters receive 0.2 Experience Points.</Input>
-      <Output>Każdego dnia każda z twoich postaci otrzymuje 0,2 punktów doświadczenia.</Output>
+      <Output>Each day each of your characters receive 0.2 Experience Points.</Output>
+      <Old>Every day each character gets 1 XP.</Old>
     </Texts>
   </Element>
   <Element ID="3451" Key="DES_TRAIT_LOGIC_WALL" Flag="0">
@@ -56557,8 +56562,9 @@ Orkowie zazwyczaj nie handlują kością ani skórą, ponieważ zazwyczaj mają 
       <Group>UI_TRIGLAV</Group>
     </Groups>
     <Texts>
-      <Input>Argh! From the scorching lava seeping out of the ashes of our land, I was forged! Veins of wrath pulsate thought my body with rage and purpose. My stone hearts beat in unison, my minds meld into one vision, my fists are driven trifold. I do not know who raised me from the darkness. I do not know why our hearts melt with anger, but I am ready to stand and fight against any who will dare to oppose us!\n\nA new force rises to devour Thea once again and I will stand in its way. This is why I have risen from fire. Walk with me into war, burn our enemies to the ground, melt away those who seek to wound us, crush whoever stands in the path of divine justice and wrath.\n\nAnd you? You are to bow before me and obey!</Input>
-      <Output>Argh! Z palącej się lawy, wysypującej się z popiołów naszej ziemi, zostałem wykuty! Żyły gniewu pulsują, myśląc o moim ciele z wściekłością i celem. Moje kamienne serca biły unisono, moje umysły łączą się w jedną wizję, moje pięści są potrójne. Nie wiem, kto mnie wychował z ciemności. Nie wiem, dlaczego nasze serca rozpływają się w gniewie, ale jestem gotów stanąć i walczyć przeciwko każdemu, kto ośmieli się sprzeciwić nam! \n\nNowa siła wznosi się, by ponownie pożreć Theę i stanę na jej drodze. Dlatego powstałem z ognia. Idź ze mną na wojnę, spal naszych wrogów na ziemię, rozpuść tych, którzy chcą nas zranić, zmiażdżyć każdego, kto stanie na drodze boskiej sprawiedliwości i gniewu. \n\nA ty? Masz się ukłonić przede mną i być posłusznym!</Output>
+      <Input>Argh! From the scorching lava seeping out of the ashes of our land, I was forged! Veins of wrath pulsate throughout my body with rage and purpose. My stone hearts beat in unison, my minds meld into one vision, my fists are driven trifold. I do not know who raised me from the darkness. I do not know why our hearts melt with anger, but I am ready to stand and fight against any who will dare to oppose us!\n\nA new force rises to devour Thea once again and I will stand in its way. This is why I have risen from fire. Walk with me into war, burn our enemies to the ground, melt away those who seek to wound us, crush whoever stands in the path of divine justice and wrath.\n\nAnd you? You are to bow before me and obey!</Input>
+      <Output>Argh! From the scorching lava seeping out of the ashes of our land, I was forged! Veins of wrath pulsate throughout my body with rage and purpose. My stone hearts beat in unison, my minds meld into one vision, my fists are driven trifold. I do not know who raised me from the darkness. I do not know why our hearts melt with anger, but I am ready to stand and fight against any who will dare to oppose us!\n\nA new force rises to devour Thea once again and I will stand in its way. This is why I have risen from fire. Walk with me into war, burn our enemies to the ground, melt away those who seek to wound us, crush whoever stands in the path of divine justice and wrath.\n\nAnd you? You are to bow before me and obey!</Output>
+      <Old>Argh! Z palącej się lawy, wysypującej się z popiołów naszej ziemi, zostałem wykuty! Żyły gniewu pulsują, myśląc o moim ciele z wściekłością i celem. Moje kamienne serca biły unisono, moje umysły łączą się w jedną wizję, moje pięści są potrójne. Nie wiem, kto mnie wychował z ciemności. Nie wiem, dlaczego nasze serca rozpływają się w gniewie, ale jestem gotów stanąć i walczyć przeciwko każdemu, kto ośmieli się sprzeciwić nam! {}{}Nowa siła wznosi się, by ponownie pożreć Theę i stanę na jej drodze. Dlatego powstałem z ognia. Idź ze mną na wojnę, spal naszych wrogów na ziemię, rozpuść tych, którzy chcą nas zranić, zmiażdżyć każdego, kto stanie na drodze boskiej sprawiedliwości i gniewu. {}{}A ty? Masz się ukłonić przede mną i być posłusznym!</Old>
     </Texts>
   </Element>
   <Element ID="4570" Key="UI_ZORYA" Flag="0">
@@ -60797,8 +60803,9 @@ Orkowie zazwyczaj nie handlują kością ani skórą, ponieważ zazwyczaj mają 
       <Group>UI_EVENTS_TAKEN_PART_IN</Group>
     </Groups>
     <Texts>
-      <Input>Events Taken Part In:</Input>
-      <Output>Zdarzenia wzięte pod uwagę:</Output>
+      <Input>Event Paths Uncovered:</Input>
+      <Output>Event Paths Uncovered:</Output>
+      <Old>Zdarzenia wzięte pod uwagę:</Old>
     </Texts>
   </Element>
   <Element ID="4951" Key="UI_TOTAL_POINTS" Flag="0">
@@ -65019,6 +65026,261 @@ Orkowie zazwyczaj nie handlują kością ani skórą, ponieważ zazwyczaj mają 
     <Texts>
       <Input>Total Value:</Input>
       <Output>Łączna wartość:</Output>
+    </Texts>
+  </Element>
+  <Element ID="5314" Key="DES_TOOLTIP_REPLAY_VO" Flag="0">
+    <Groups>
+      <Group>DES</Group>
+      <Group>DES_TOOLTIP</Group>
+      <Group>DES_TOOLTIP_REPLAY</Group>
+      <Group>DES_TOOLTIP_REPLAY_VO</Group>
+    </Groups>
+    <Texts>
+      <Input>Replay Narration</Input>
+      <Output>Replay Narration</Output>
+    </Texts>
+  </Element>
+  <Element ID="5315" Key="DES_TOOLTIP_REPLAY_VO_DES" Flag="0">
+    <Groups>
+      <Group>DES</Group>
+      <Group>DES_TOOLTIP</Group>
+      <Group>DES_TOOLTIP_REPLAY</Group>
+      <Group>DES_TOOLTIP_REPLAY_VO</Group>
+    </Groups>
+    <Texts>
+      <Input>Replay the narration of the current paragraph.</Input>
+      <Output>Replay the narration of the current paragraph.</Output>
+    </Texts>
+  </Element>
+  <Element ID="5316" Key="DES_TOOLTIP_MORALE" Flag="0">
+    <Groups>
+      <Group>DES</Group>
+      <Group>DES_TOOLTIP</Group>
+      <Group>DES_TOOLTIP_MORALE</Group>
+    </Groups>
+    <Texts>
+      <Input>Morale Gain</Input>
+      <Output>Morale Gain</Output>
+    </Texts>
+  </Element>
+  <Element ID="5317" Key="DES_TOOLTIP_MORALE_DES" Flag="0">
+    <Groups>
+      <Group>DES</Group>
+      <Group>DES_TOOLTIP</Group>
+      <Group>DES_TOOLTIP_MORALE</Group>
+    </Groups>
+    <Texts>
+      <Input>The amount of Morale gained from food each turn. Each character gets +1 Morale per turn for each type of food present in the group's inventory.</Input>
+      <Output>The amount of Morale gained from food each turn. Each character gets +1 Morale per turn for each type of food present in the group's inventory.</Output>
+    </Texts>
+  </Element>
+  <Element ID="5318" Key="UI_SELECT_LANGUAGE" Flag="0">
+    <Groups>
+      <Group>UI</Group>
+      <Group>UI_SELECT</Group>
+      <Group>UI_SELECT_LANGUAGE</Group>
+    </Groups>
+    <Texts>
+      <Input>Select Language</Input>
+      <Output>Select Language</Output>
+    </Texts>
+  </Element>
+  <Element ID="5319" Key="UI_LOADING_FILES_FROM_CLOUD_FAILED" Flag="0">
+    <Groups>
+      <Group>UI</Group>
+      <Group>UI_LOADING</Group>
+      <Group>UI_LOADING_FILES</Group>
+      <Group>UI_LOADING_FILES_FROM</Group>
+      <Group>UI_LOADING_FILES_FROM_CLOUD</Group>
+      <Group>UI_LOADING_FILES_FROM_CLOUD_FAILED</Group>
+    </Groups>
+    <Texts>
+      <Input>Loading files from could has failed, possibly something is blocking drive access.\n\nWarning - data loss may occur! Please contact us on bugs@muhagames.com and we will try to help you resolve your issue.</Input>
+      <Output>Loading files from could has failed, possibly something is blocking drive access.\n\nWarning - data loss may occur! Please contact us on bugs@muhagames.com and we will try to help you resolve your issue.</Output>
+    </Texts>
+  </Element>
+  <Element ID="5320" Key="UI_LOCAL_AND_CLOUD_IS_DIFFERENT" Flag="0">
+    <Groups>
+      <Group>UI</Group>
+      <Group>UI_LOCAL</Group>
+      <Group>UI_LOCAL_AND</Group>
+      <Group>UI_LOCAL_AND_CLOUD</Group>
+      <Group>UI_LOCAL_AND_CLOUD_IS</Group>
+      <Group>UI_LOCAL_AND_CLOUD_IS_DIFFERENT</Group>
+    </Groups>
+    <Texts>
+      <Input>Files on your local drive and in the cloud share the same name but are out of sync, which version would you like to keep?\n\n(Note: saves/profiles removed or lost on one computer will not be removed from the other. To prevent data loss, you will have to remove them again on the other computer if you wish.)</Input>
+      <Output>Files on your local drive and in the cloud share the same name but are out of sync, which version would you like to keep?\n\n(Note: saves/profiles removed or lost on one computer will not be removed from the other. To prevent data loss, you will have to remove them again on the other computer if you wish.)</Output>
+    </Texts>
+  </Element>
+  <Element ID="5321" Key="UI_USE_CLOUD" Flag="0">
+    <Groups>
+      <Group>UI</Group>
+      <Group>UI_USE</Group>
+      <Group>UI_USE_CLOUD</Group>
+    </Groups>
+    <Texts>
+      <Input>Use Cloud</Input>
+      <Output>Use Cloud</Output>
+    </Texts>
+  </Element>
+  <Element ID="5322" Key="UI_USE_LOCAL" Flag="0">
+    <Groups>
+      <Group>UI</Group>
+      <Group>UI_USE</Group>
+      <Group>UI_USE_LOCAL</Group>
+    </Groups>
+    <Texts>
+      <Input>Use Local</Input>
+      <Output>Use Local</Output>
+    </Texts>
+  </Element>
+  <Element ID="5323" Key="UI_MODS" Flag="0">
+    <Groups>
+      <Group>UI</Group>
+      <Group>UI_MODS</Group>
+    </Groups>
+    <Texts>
+      <Input>Mods</Input>
+      <Output>Mods</Output>
+    </Texts>
+  </Element>
+  <Element ID="5324" Key="UI_MOVE_UP" Flag="0">
+    <Groups>
+      <Group>UI</Group>
+      <Group>UI_MOVE</Group>
+      <Group>UI_MOVE_UP</Group>
+    </Groups>
+    <Texts>
+      <Input>Move Up</Input>
+      <Output>Move Up</Output>
+    </Texts>
+  </Element>
+  <Element ID="5325" Key="UI_MOVE_DOWN" Flag="0">
+    <Groups>
+      <Group>UI</Group>
+      <Group>UI_MOVE</Group>
+      <Group>UI_MOVE_DOWN</Group>
+    </Groups>
+    <Texts>
+      <Input>Move Down</Input>
+      <Output>Move Down</Output>
+    </Texts>
+  </Element>
+  <Element ID="5326" Key="UI_MOD_MANAGER" Flag="0">
+    <Groups>
+      <Group>UI</Group>
+      <Group>UI_MOD</Group>
+      <Group>UI_MOD_MANAGER</Group>
+    </Groups>
+    <Texts>
+      <Input>Mod Manager</Input>
+      <Output>Mod Manager</Output>
+    </Texts>
+  </Element>
+  <Element ID="5327" Key="UI_PUBLISH" Flag="0">
+    <Groups>
+      <Group>UI</Group>
+      <Group>UI_PUBLISH</Group>
+    </Groups>
+    <Texts>
+      <Input>Publish</Input>
+      <Output>Publish</Output>
+    </Texts>
+  </Element>
+  <Element ID="5328" Key="UI_DESCRIPTION" Flag="0">
+    <Groups>
+      <Group>UI</Group>
+      <Group>UI_DESCRIPTION</Group>
+    </Groups>
+    <Texts>
+      <Input>Description</Input>
+      <Output>Description</Output>
+    </Texts>
+  </Element>
+  <Element ID="5329" Key="UI_AUTHOR" Flag="0">
+    <Groups>
+      <Group>UI</Group>
+      <Group>UI_AUTHOR</Group>
+    </Groups>
+    <Texts>
+      <Input>Author:</Input>
+      <Output>Author:</Output>
+    </Texts>
+  </Element>
+  <Element ID="5330" Key="UI_VISIBILITY" Flag="0">
+    <Groups>
+      <Group>UI</Group>
+      <Group>UI_VISIBILITY</Group>
+    </Groups>
+    <Texts>
+      <Input>Visibility:</Input>
+      <Output>Visibility:</Output>
+    </Texts>
+  </Element>
+  <Element ID="5331" Key="UI_CHANGES_TO_HAVE_EFFECT" Flag="0">
+    <Groups>
+      <Group>UI</Group>
+      <Group>UI_CHANGES</Group>
+      <Group>UI_CHANGES_TO</Group>
+      <Group>UI_CHANGES_TO_HAVE</Group>
+      <Group>UI_CHANGES_TO_HAVE_EFFECT</Group>
+    </Groups>
+    <Texts>
+      <Input>Please restart the application for the changes to take effect.</Input>
+      <Output>Please restart the application for the changes to take effect.</Output>
+    </Texts>
+  </Element>
+  <Element ID="5332" Key="UI_LATER" Flag="0">
+    <Groups>
+      <Group>UI</Group>
+      <Group>UI_LATER</Group>
+    </Groups>
+    <Texts>
+      <Input>Later</Input>
+      <Output>Later</Output>
+    </Texts>
+  </Element>
+  <Element ID="5333" Key="UI_PUBLIC" Flag="0">
+    <Groups>
+      <Group>UI</Group>
+      <Group>UI_PUBLIC</Group>
+    </Groups>
+    <Texts>
+      <Input>Public</Input>
+      <Output>Public</Output>
+    </Texts>
+  </Element>
+  <Element ID="5334" Key="UI_FRIENDS_ONLY" Flag="0">
+    <Groups>
+      <Group>UI</Group>
+      <Group>UI_FRIENDS</Group>
+      <Group>UI_FRIENDS_ONLY</Group>
+    </Groups>
+    <Texts>
+      <Input>Friends Only</Input>
+      <Output>Friends Only</Output>
+    </Texts>
+  </Element>
+  <Element ID="5335" Key="UI_PRIVATE" Flag="0">
+    <Groups>
+      <Group>UI</Group>
+      <Group>UI_PRIVATE</Group>
+    </Groups>
+    <Texts>
+      <Input>Private</Input>
+      <Output>Private</Output>
+    </Texts>
+  </Element>
+  <Element ID="5336" Key="UI_INCORRECT_VALUE" Flag="0">
+    <Groups>
+      <Group>UI</Group>
+      <Group>UI_INCORRECT</Group>
+      <Group>UI_INCORRECT_VALUE</Group>
+    </Groups>
+    <Texts>
+      <Input>{COLOR:yellow}Incorrect Value{END_COLOR}</Input>
+      <Output>{COLOR:yellow}Incorrect Value{END_COLOR}</Output>
     </Texts>
   </Element>
 </Database>

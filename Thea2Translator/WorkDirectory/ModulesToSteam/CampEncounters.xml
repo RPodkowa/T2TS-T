@@ -72,7 +72,7 @@
           </LogicFilter>
         </FilterBlock>
       </logic>
-      <outputs name="Sprobuj sie obudzic." ownerID="2" targetID="3" fromX="814" fromY="-605" />Kiedy zasypiasz na swoim kempingu, twoje sny staja sie ciezkie i niepokojace. Kiedy rzucasz i odwracasz sie, czujesz sie coraz bardziej niepewny, gdy twoje najglebsze, najciemniejsze leki staja sie rzeczywiste i trzymaja cie w pulapce koszmaru.</nodes>
+      <outputs name="Sprobuj sie obudzic." ownerID="2" targetID="3" fromX="814" fromY="-605" />Kiedy zasypiasz na swoim kempingu, twoje sny staja sie ciezkie i niepokojace. Kiedy rzucasz i odwracasz sie, czujesz sie coraz bardziej zaniepokojony, gdy twoje najglebsze, najciemniejsze leki staja sie rzeczywiste i trzymaja cie w pulapce koszmaru.</nodes>
     <nodes xsi:type="NodeChallenge" ID="3" positionX="920" positionY="190" width="500" height="726" challengeType="TypeSpirit" versusConcept="true" versusGroup="GROUP-CON_S_0P_0M_2S" challengeScale="101" challengedList="ppl">
       <outputs name="Win" ownerID="3" targetID="4" fromX="1361" fromY="-305" />
       <outputs name="Lose" ownerID="3" targetID="10" fromX="1361" fromY="-385" />

@@ -170,7 +170,6 @@ namespace Thea2Translator.Logic
         {
             TranslatedText = text;
             OutputText = TextHelper.UnNormalize(text, Specials);
-           // if (IsModulesElem) OutputText = TextHelper.ReplacePolishChars(OutputText);
             OldTranslatedText = "";
         }
 

@@ -1,5 +1,5 @@
 <DATABASE_UI_LOCALIZATION-NO_HSH>
-  <LOC_LIBRARY-EN_UI>
+  <LOC_LIBRARY-UI>
     <Entry Key="QUOTE_MARKS_EXAMPLE" Val="„Przykład”" />
     <Entry Key="UI_GREET_PLAYER" Val="Pozdrowienia {SCRIPT:UIS_GetCurentPlayerName}!" />
     <Entry Key="UI_YOU_ARE_ABOUT_TO_DELETE_PROFILE" Val="Zamierzasz usunąć profil gracza: {SCRIPT:UIS_GetProfileToDelete}!" />
@@ -149,7 +149,7 @@
     <Entry Key="UI_SVAROG" Val="Svarog" />
     <Entry Key="UI_SVAROG_DES" Val="Z płomieni nieba i popiołów z przeszłości ciemności wstaję do mego obowiązku! Bóg słońca i mistrz niebiańskich pożarów - to mój zaszczyt znieść. Ale kiedy kiedyś dzierżyłem strój wojownika, teraz znam prawdziwą moc światła i ognia, proste ognisko, które oświetla domy i serca mojej trzody. \n\nTo nie moc bogów uratuje nasze ziemie, ale moc, którą możemy dać naszym wiernym. W palących płomieniach mojej domeny powstają narzędzia i broń prawdziwych bohaterów, śmiertelników i nieśmiertelnych, przysięgających podtrzymać moją żelazną wolę. \n\nChroń tych, którzy są w potrzebie, nigdy się nie wycofuj, nigdy się nie poddawaj i nigdy więcej nie pozwól ciemności rządzić światłem!" />
     <Entry Key="UI_TRIGLAV" Val="Triglav" />
-    <Entry Key="UI_TRIGLAV_DES" Val="Argh! Z palącej się lawy, wysypującej się z popiołów naszej ziemi, zostałem wykuty! Żyły gniewu pulsują, myśląc o moim ciele z wściekłością i celem. Moje kamienne serca biły unisono, moje umysły łączą się w jedną wizję, moje pięści są potrójne. Nie wiem, kto mnie wychował z ciemności. Nie wiem, dlaczego nasze serca rozpływają się w gniewie, ale jestem gotów stanąć i walczyć przeciwko każdemu, kto ośmieli się sprzeciwić nam! \n\nNowa siła wznosi się, by ponownie pożreć Theę i stanę na jej drodze. Dlatego powstałem z ognia. Idź ze mną na wojnę, spal naszych wrogów na ziemię, rozpuść tych, którzy chcą nas zranić, zmiażdżyć każdego, kto stanie na drodze boskiej sprawiedliwości i gniewu. \n\nA ty? Masz się ukłonić przede mną i być posłusznym!" />
+    <Entry Key="UI_TRIGLAV_DES" Val="Argh! From the scorching lava seeping out of the ashes of our land, I was forged! Veins of wrath pulsate throughout my body with rage and purpose. My stone hearts beat in unison, my minds meld into one vision, my fists are driven trifold. I do not know who raised me from the darkness. I do not know why our hearts melt with anger, but I am ready to stand and fight against any who will dare to oppose us!\n\nA new force rises to devour Thea once again and I will stand in its way. This is why I have risen from fire. Walk with me into war, burn our enemies to the ground, melt away those who seek to wound us, crush whoever stands in the path of divine justice and wrath.\n\nAnd you? You are to bow before me and obey!" />
     <Entry Key="UI_ZORYA" Val="Zorya" />
     <Entry Key="UI_ZORYA_DES" Val="Mój ojciec twierdzi, że ma prawo być mistrzem światła i słońca, ale to my jedziemy na niebie w nieskończoność! Gwiazda poranna wznosi się daleko i wyblakła, jest subtelna i zawsze czujna wobec swoich wrogów. Gwiazda południa wisi nisko i ciężko, gotowa do walki i pożerania wrogów. Wieczorna gwiazda rozświetla niebo i przygotowuje się na wojnę! Zorya, Zorza, Auroras, wszystkie imiona nadane nam przez tych, którzy są na tyle odważni, by ich śledzić! \n\nJestem jasnym ostrzem nocy i lśniącą rękawicą dnia. Trzymam bestię, która pożre nasz świat w mojej dłoni i śmieję się w obliczu wroga. Bądź odważny, brutalny i szybki. \n\nWrogowie równowagi znów rosną w siłę, rozerwę ich na strzępy i pochłonę ich wnętrzności! Dołącz do mnie!" />
     <Entry Key="UI_LOAD_A_SAVED_GAME" Val="Załaduj zapisaną grę" />
@@ -541,7 +541,7 @@
     <Entry Key="UI_TURNS_SURVIVED" Val="Przetrwały zwroty:" />
     <Entry Key="UI_BEST_ITEM" Val="Najlepszy przedmiot:" />
     <Entry Key="UI_MOST_POWERFUL_CHARACTER" Val="Najmocniejsza postać:" />
-    <Entry Key="UI_EVENTS_TAKEN_PART_IN" Val="Zdarzenia wzięte pod uwagę:" />
+    <Entry Key="UI_EVENTS_TAKEN_PART_IN" Val="Event Paths Uncovered:" />
     <Entry Key="UI_TOTAL_POINTS" Val="PUNKTY CAŁKOWITE:" />
     <Entry Key="UI_GAME_DIFFICULTY_ADJUSTMENT" Val="Dostosowanie trudności gry:" />
     <Entry Key="UI_GOD_POINTS_AWARDED" Val="Przyznano punkty God:" />
@@ -898,5 +898,24 @@
     <Entry Key="UI_ADDED_TO_PROFILE" Val="Dodano do profilu:" />
     <Entry Key="UI_CLAIM" Val="Punkty roszczenia" />
     <Entry Key="UI_TOTAL_VALUE" Val="Łączna wartość:" />
-  </LOC_LIBRARY-EN_UI>
+    <Entry Key="UI_SELECT_LANGUAGE" Val="Select Language" />
+    <Entry Key="UI_LOADING_FILES_FROM_CLOUD_FAILED" Val="Loading files from could has failed, possibly something is blocking drive access.\n\nWarning - data loss may occur! Please contact us on bugs@muhagames.com and we will try to help you resolve your issue." />
+    <Entry Key="UI_LOCAL_AND_CLOUD_IS_DIFFERENT" Val="Files on your local drive and in the cloud share the same name but are out of sync, which version would you like to keep?\n\n(Note: saves/profiles removed or lost on one computer will not be removed from the other. To prevent data loss, you will have to remove them again on the other computer if you wish.)" />
+    <Entry Key="UI_USE_CLOUD" Val="Use Cloud" />
+    <Entry Key="UI_USE_LOCAL" Val="Use Local" />
+    <Entry Key="UI_MODS" Val="Mods" />
+    <Entry Key="UI_MOVE_UP" Val="Move Up" />
+    <Entry Key="UI_MOVE_DOWN" Val="Move Down" />
+    <Entry Key="UI_MOD_MANAGER" Val="Mod Manager" />
+    <Entry Key="UI_PUBLISH" Val="Publish" />
+    <Entry Key="UI_DESCRIPTION" Val="Description" />
+    <Entry Key="UI_AUTHOR" Val="Author:" />
+    <Entry Key="UI_VISIBILITY" Val="Visibility:" />
+    <Entry Key="UI_CHANGES_TO_HAVE_EFFECT" Val="Please restart the application for the changes to take effect." />
+    <Entry Key="UI_LATER" Val="Later" />
+    <Entry Key="UI_PUBLIC" Val="Public" />
+    <Entry Key="UI_FRIENDS_ONLY" Val="Friends Only" />
+    <Entry Key="UI_PRIVATE" Val="Private" />
+    <Entry Key="UI_INCORRECT_VALUE" Val="{COLOR:yellow}Incorrect Value{END_COLOR}" />
+  </LOC_LIBRARY-UI>
 </DATABASE_UI_LOCALIZATION-NO_HSH>

@@ -691,7 +691,9 @@ Jaskinia ma w sobie dobre mineraly. Widzisz takze odchody nietoperzy, wiec spodz
     <nodes xsi:type="NodeAdventureEnd" ID="16" positionX="4382.30859" positionY="-772.2433" width="350" height="530" allPlayersXP="1" allPlayersRP="1" linkedEventUniqueID="0" />
     <nodes xsi:type="NodeAdventure" ID="18" positionX="2090.94434" positionY="-26.772604" width="350" height="805">
       <outputs name="Atak!" ownerID="18" targetID="11" fromX="2416" fromY="-517" />
-      <outputs name="Uciekaj!" ownerID="18" targetID="26" group="G1" fromX="2416" fromY="-598" />O zmroku nietoperze wyruszaja na karmienie, a ty wkradasz sie, by wziac z jaskini to, co mozesz.Niestety, nietoperze musialy cie zauwazyc. Wracaja i roi sie od ciebie!</nodes>
+      <outputs name="Uciekaj!" ownerID="18" targetID="26" group="G1" fromX="2416" fromY="-598" />O zmroku nietoperze wyruszaja na karmienie, a ty wkradasz sie, by wziac z jaskini to, co mozesz. 
+
+Niestety, nietoperze musialy cie zauwazyc. Wracaja i roi sie od ciebie!</nodes>
     <nodes xsi:type="NodeAdventure" ID="19" positionX="3371.455" positionY="982.107666" width="350" height="805">
       <outputs name="Przeszukaj jaskinie." ownerID="19" targetID="20" group="G1" fromX="3697" fromY="490" />
       <outputs name="Przeszukaj jaskinie, zbierz lup i wyjdz." ownerID="19" targetID="28" group="G1" fromX="3697" fromY="410" />Zabijasz nietoperze i mozesz je odkrywac.</nodes>
@@ -1126,7 +1128,7 @@ Mozna jednak opuscic te jaskinie i robi to, spogladajac na ciebie z ostatnim bly
       </logic>
       <outputs name="Zapytaj niedzwiedzia o jego historie." ownerID="47" targetID="33" fromX="4210" fromY="-1681" />
       <outputs name="Niedzwiedz postanawia dolaczyc do ciebie, poniewaz nie chce pozostac na pustyni sam. Zostawcie razem." ownerID="47" targetID="64" group="G1" fromX="4210" fromY="-1761" />
-      <outputs name="Niedzwiedz odchodzi, ale w jaskini znajduja sie szczatki innych, ktorzy tu mieszkali. Wez co mozesz i wyjdz." ownerID="47" targetID="75" group="G1" fromX="4210" fromY="-1841" />Niedzwiedz krzyczy z bolu w glosie dziewczyny, ale kiedy sie zatrzyma, patrzy na ciebie zdezorientowany: 
+      <outputs name="Niedzwiedz odchodzi, ale w jaskini znajduja sie szczatki innych, ktorzy mieszkali tutaj wczesniej. Wez co mozesz i wyjdz." ownerID="47" targetID="75" group="G1" fromX="4210" fromY="-1841" />Niedzwiedz krzyczy z bolu w glosie dziewczyny, ale kiedy sie zatrzyma, patrzy na ciebie zdezorientowany: 
 
 'Co ... co mi zrobiles? Jestem teraz bestia, naprawde? Ale wtedy... Jestem wolny...'
 </nodes>
@@ -1184,7 +1186,7 @@ Mozna jednak opuscic te jaskinie i robi to, spogladajac na ciebie z ostatnim bly
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="51" positionX="5437.54541" positionY="-1160.43579" width="350" height="805">
       <outputs name="Niedzwiedz postanawia dolaczyc do ciebie, poniewaz nie chce pozostac na pustyni sam. Zostawcie razem." ownerID="51" targetID="64" group="G1" fromX="5763" fromY="-1651" />
-      <outputs name="Niedzwiedz odchodzi, ale w jaskini znajduja sie szczatki innych, ktorzy tu mieszkali. Wez co mozesz i wyjdz." ownerID="51" targetID="75" group="G1" fromX="5763" fromY="-1731" />„Tak, jestem wolny. W tej skorze ... na zawsze ...'
+      <outputs name="Niedzwiedz odchodzi, ale w jaskini znajduja sie szczatki innych, ktorzy mieszkali tutaj wczesniej. Wez co mozesz i wyjdz." ownerID="51" targetID="75" group="G1" fromX="5763" fromY="-1731" />„Tak, jestem wolny. W tej skorze ... na zawsze ...'
 </nodes>
     <nodes xsi:type="NodeAdventure" ID="52" positionX="2021" positionY="-1303" width="350" height="805">
       <outputs name="Atak!" ownerID="52" targetID="10" fromX="2346" fromY="-1794" />
@@ -1906,7 +1908,7 @@ Stara wiedzma opowiada ci wiele historii, zanim w koncu mowi, ze czas isc. </nod
       </logic>
       <outputs name="Handel." ownerID="28" targetID="45" fromX="2676" fromY="1150" />
       <outputs name="Naucz sie rytualow.  " ownerID="28" targetID="46" fromX="2676" fromY="1069" />
-      <outputs name="Dziekuje jej na razie i wyjdz." ownerID="28" targetID="54" fromX="2676" fromY="989" />„Ha! Dobry. Dobrze poznana, siostro. Teraz, dla nieznajomych, bralbym udzial w grach, transakcjach i oszustwach. 
+      <outputs name="Dziekuje jej na razie i odejdz." ownerID="28" targetID="54" fromX="2676" fromY="989" />„Ha! Dobry. Dobrze poznana, siostro. Teraz, dla nieznajomych, bralbym udzial w grach, transakcjach i oszustwach. 
 
 Ale dla ciebie oferuje uczciwa wymiane miedzy siostrami, albo moge nauczyc cie pewnych rytualow i dac ci kilka ziol, ale potrzebuje troche twojej energii duchowej w zamian.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="29" positionX="4497.395" positionY="1401.17529" width="350" height="530" allPlayersXP="3" allPlayersRP="1" linkedEventUniqueID="0" />
@@ -3010,7 +3012,7 @@ Albo mam inna propozycje, ktora obiecuje jakies bogactwo, choc nie tak bardzo.'
       <outputs name="Cancel" ownerID="11" targetID="9" fromX="3488" fromY="-458" />
     </nodes>
     <nodes xsi:type="NodeAdventure" ID="12" positionX="4087" positionY="-298" width="350" height="725">
-      <outputs name="Wyjdz." ownerID="12" targetID="31" fromX="4412" fromY="-789" />„Jakze zachwycajace jest nawet dla wybranych bogow podazanie moja droga. Tu utracona jest twoja cnota, twoje skarby rosly, moje serce wypelnialo radosc. Pozegnanie.'
+      <outputs name="Wyjdz." ownerID="12" targetID="31" fromX="4412" fromY="-789" />„Jakze zachwycajace jest nawet dla wybranych bogow podazanie moja droga. Tu utracona jest twoja cnota, twoje skarby rosly, moje serce przepelniala radosc. Pozegnanie.'
 
 Twoj towarzysz jest przyciagany do glosu i gdy tylko dotkna plynacego strumienia, zapadaja sie w stos zlota. Zostaje ci mala saszetka, a cala jaskinia staje sie po prostu stara opuszczona komora.</nodes>
     <nodes xsi:type="NodeAdventure" ID="13" positionX="3060" positionY="1031" width="350" height="966">
@@ -3394,7 +3396,7 @@ Powoli sie kurzy.
           </LogicModifiers>
         </ModifierBlock>
       </logic>
-      <outputs name="Wez niedzwiedzia i wyjdz." ownerID="21" targetID="32" fromX="5558" fromY="20" />Niedlugo potem pojawia sie mlody niedzwiedz i poslusznie za toba podaza. Musi byc nagroda od uratowanego stwora.</nodes>
+      <outputs name="Wez niedzwiedzia i wyjdz." ownerID="21" targetID="32" fromX="5558" fromY="20" />Niedlugo potem pojawia sie mlody niedzwiedz, ktory poslusznie podaza za toba. Musi byc nagroda od uratowanego stwora.</nodes>
     <nodes xsi:type="NodeSpawnOnMap" ID="30" positionX="1120.54285" positionY="-1233.71045" width="480" height="503" radius="0" destroyOwner="true" linkedEventUniqueID="0">
       <outputs ownerID="30" targetID="4" fromX="1569" fromY="-1665" />
     </nodes>

@@ -89,5 +89,11 @@ namespace Thea2Translator.DesktopApp.Pages
             Settings.Default.Language = Logic.Languages.Languages.English;
             Settings.Default.Save();
         }
+
+        private void BtnMod_Click(object sender, RoutedEventArgs e)
+        {
+            ModWindow window = new ModWindow();
+            window.Show();
+        }
     }
 }

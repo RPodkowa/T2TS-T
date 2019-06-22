@@ -136,6 +136,9 @@
     <Compile Include="Pages\DictinaryWindow.xaml.cs">
       <DependentUpon>DictinaryWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\ModWindow.xaml.cs">
+      <DependentUpon>ModWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Setting.cs" />
     <Compile Include="ViewModels\CacheElemViewModel.cs" />
     <Page Include="MainWindow.xaml">
@@ -151,6 +154,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\ModuleSelectionPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\ModWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

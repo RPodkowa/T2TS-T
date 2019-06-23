@@ -30,6 +30,23 @@ namespace Thea2Translator.Logic
             return Directory.GetFiles(GetDirName(dir));
         }
 
+        public static string GetCopiedFile(string file, string destinationDirectory)
+        {
+            if (!File.Exists(file))
+                return "";
+
+            destinationDirectory = GetDirName(destinationDirectory);
+            var fileName = Path.GetFileName(file);
+            var newFile = Path.Combine(destinationDirectory, fileName);
+            File.Copy(file, newFile);
+            return newFile;
+        }
+
+        public static void CopyFile(string file, string destinationDirectory)
+        {
+            var newFile = GetCopiedFile(file, destinationDirectory);
+        }
+
         public static void CreatedPathIfNotExists(string path)
         {
             path = Path.GetDirectoryName(path);

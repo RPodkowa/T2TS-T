@@ -12,6 +12,9 @@ namespace Thea2Translator.Logic.Cache.Interfaces
         int TranslatedItemsCount { get; }
         int ItemWithoutTranslationCount { get; }
         int TranslatedPercent { get; }
+        int ConfirmedItemsCount { get; }
+        int ItemWithoutConfirmationCount { get; }
+        int ConfirmedPercent { get; }
 
         void Reload(IDataCache dataCache);
     }

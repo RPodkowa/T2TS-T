@@ -117,6 +117,7 @@
     <Compile Include="Languages\Interfaces\ILanguageManager.cs" />
     <Compile Include="Languages\Language.cs" />
     <Compile Include="Languages\LanguageManager.cs" />
+    <Compile Include="Mods\ModManager.cs" />
     <Compile Include="Vocabulary\Vocabulary.cs" />
     <Compile Include="Vocabulary\VocabularyElem.cs" />
     <Compile Include="Helpers\FileHelper.cs" />

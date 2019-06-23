@@ -17,22 +17,24 @@
             <ColumnDefinition Width="4*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
+            <RowDefinition Height="61*"/>
+            <RowDefinition Height="61*"/>
+            <RowDefinition Height="61*"/>
             <RowDefinition Height="10*"/>
-            <RowDefinition Height="10*"/>
-            <RowDefinition Height="10*"/>
-            <RowDefinition Height="8*"/>
-            <RowDefinition Height="10*"/>
-            <RowDefinition Height="8*"/>
-            <RowDefinition Height="10*"/>
-            <RowDefinition Height="8*"/>
+            <RowDefinition Height="38*"/>
+            <RowDefinition Height="11*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="48*"/>
+            <RowDefinition Height="61*"/>
+            <RowDefinition Height="49*"/>
         </Grid.RowDefinitions>
-        <Button x:Name="btnChooseFolder" Grid.Column="3" Grid.Row="2" Width="30" Height="20" Content="..." Click="BtnChooseFolder_Click" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button x:Name="btnChooseFolder" Grid.Column="3" Grid.Row="2" Width="30" Height="20" Content="..." Click="BtnChooseFolder_Click" Margin="19,20,18,21" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <TextBox x:Name="txtFolderDir" Grid.Row="2" TextWrapping="Wrap" Grid.Column="2"/>
         <Label Content="Dir:" Style="{StaticResource fontBase}" FontSize="{DynamicResource mediumFontSize}" Grid.Row="2" Grid.Column="1" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" />
 
-        <Border Background="#FF18BD54" CornerRadius="40" Grid.Column="2" Grid.Row="4" BorderBrush="#FF818181" BorderThickness="3">
+        <Border Background="#FF18BD54" CornerRadius="40" Grid.Column="2" Grid.Row="6" BorderBrush="#FF818181" BorderThickness="3">
             <Button x:Name="btnStartTranslate" FontWeight="Bold" FontSize="{DynamicResource bigFontSize}" Content="{DynamicResource startButtonHome}" Click="BtnStartTranslate_Click" BorderThickness="0" 
-            Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" FontFamily="Palatino Linotype" Margin="-3" Width="134" Height="84"/>
+            Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" FontFamily="Palatino Linotype" Margin="-3" Width="134" Height="50"/>
         </Border>
 
         <Label Content="{DynamicResource chooseFolderLabelHomePage}" FontSize="{DynamicResource veryBigFontSize}" Style="{StaticResource labelCenterTitle}" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="3"/>
@@ -60,7 +62,9 @@
                 </Image.RenderTransform>
             </Image>
         </Grid>
-        <Button x:Name="btnMod" Content="Mod" Grid.Column="2" Grid.Row="6" Click="BtnMod_Click"/>
+        <Button x:Name="btnMod" Content="Mod" Grid.Column="2" Grid.Row="8" Click="BtnMod_Click"/>
+        <Label Content="User:" Style="{StaticResource fontBase}" FontSize="{DynamicResource mediumFontSize}" Grid.Row="4" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Grid.Column="1" />
+        <TextBox x:Name="txtUserName" Grid.Row="4" TextWrapping="Wrap" Grid.Column="2"/>
 
     </Grid>
 </Page>

@@ -8,6 +8,7 @@ namespace Thea2Translator.Logic
     public static class LogicProvider
     {
         public static string UserId;
+        public static string UserName;
 
         private static DataCache _dataBase;
         private static DataCache _modules;

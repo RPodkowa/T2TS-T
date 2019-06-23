@@ -11,6 +11,9 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Thea2Translator.DesktopApp.Properties;
+using Thea2Translator.Logic;
+using Thea2Translator.Logic.Mods;
 
 namespace Thea2Translator.DesktopApp.Pages
 {
@@ -22,6 +25,18 @@ namespace Thea2Translator.DesktopApp.Pages
         public ModWindow()
         {
             InitializeComponent();
+            txtTitle.Text = Settings.Default.ModTitle;
+            txtBody.Text = Settings.Default.ModBody;
+            txtState.Text = LogicProvider.DataBase.GetSummary();
+        }
+
+        private void btnConfirm_Click(object sender, RoutedEventArgs e)
+        {
+            Settings.Default.ModTitle = txtTitle.Text;
+            Settings.Default.ModBody = txtBody.Text;
+
+            var manager = new ModManager(txtTitle.Text, txtBody.Text, txtState.Text);
+            manager.PrepareMod();
         }
     }
 }

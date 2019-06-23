@@ -179,7 +179,7 @@ namespace Thea2Translator.Logic
             {
                 IsCorrectedByHuman = true;
                 ConfirmationTime = DateTime.Now.ToString("MM/dd/yyyy HH:mm:ss");
-                ConfirmationUser = Environment.UserName;
+                ConfirmationUser = LogicProvider.UserName;
                 ConfirmationGuid = LogicProvider.UserId;
             }
             else

@@ -32,6 +32,11 @@ namespace Thea2Translator.DesktopApp.Pages
             txtFolderDir.IsEnabled = false;
             txtFolderDir.Text = Settings.Default.FolderSrc;
 
+            if (string.IsNullOrEmpty(Settings.Default.UserName))
+                Settings.Default.UserName = Environment.UserName;
+
+            txtUserName.Text = Settings.Default.UserName;
+
             LogicProvider.Language.SetLanguage(Settings.Default.Language);
 
             this.SetLanguageDictinary();
@@ -45,9 +50,11 @@ namespace Thea2Translator.DesktopApp.Pages
                 Settings.Default.UserId = Guid.NewGuid().ToString();
                        
             Settings.Default.FolderSrc = txtFolderDir.Text;
+            Settings.Default.UserName = txtUserName.Text;
             Settings.Default.Save();
 
             LogicProvider.UserId = Settings.Default.UserId;
+            LogicProvider.UserName = Settings.Default.UserName;
 
             this.NavigationService.Navigate(new ModuleSelectionPage());
         }
@@ -92,6 +99,8 @@ namespace Thea2Translator.DesktopApp.Pages
 
         private void BtnMod_Click(object sender, RoutedEventArgs e)
         {
+            FileHelper.MainDir = txtFolderDir.Text;
+            Settings.Default.FolderSrc = txtFolderDir.Text;
             ModWindow window = new ModWindow();
             window.Show();
         }

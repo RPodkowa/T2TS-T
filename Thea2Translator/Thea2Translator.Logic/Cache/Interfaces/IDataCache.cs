@@ -18,6 +18,8 @@ namespace Thea2Translator.Logic
         void ReloadElems(bool withGroups = false, bool withVocabulary = false);
         void SaveElems(bool withVocabulary = false);
         void MakeStep(AlgorithmStep step);
+        string GetDirectoryName(AlgorithmStep step);
 
+        string GetSummary();
     }
 }

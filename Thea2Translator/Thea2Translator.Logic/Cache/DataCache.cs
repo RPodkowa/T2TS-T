@@ -32,6 +32,22 @@ namespace Thea2Translator.Logic
             ResetElems();
         }
 
+        public string GetSummary()
+        {            
+            LoadFromFile();
+            var statistic = LogicProvider.Statistic;
+            statistic.Reload(this);
+
+            var arr = new List<string>();
+            arr.Add($"{Type.ToString()}:");
+            arr.Add($"\tLinii: {statistic.AllItemsCount}");
+            arr.Add($"\tPrzetlumaczonych: {statistic.TranslatedItemsCount} ({statistic.TranslatedPercent}%)");
+            arr.Add($"\tPotwierdzonych/skorygowanych: {statistic.ConfirmedItemsCount} ({statistic.ConfirmedPercent}%)");
+
+            string text = string.Join("\r\n", arr.ToArray());
+            return text;
+        }
+
         private void ChangeStatus(string status, double progress)
         {
             StatusChanged?.Invoke(status, progress);
@@ -577,7 +593,7 @@ namespace Thea2Translator.Logic
             CacheElems.Add(CreateElem(key, value, groups));
         }
 
-        private string GetDirectoryName(AlgorithmStep step)
+        public string GetDirectoryName(AlgorithmStep step)
         {
             var dir = "DataBase";
             if (IsModulesCache) dir = "Modules";

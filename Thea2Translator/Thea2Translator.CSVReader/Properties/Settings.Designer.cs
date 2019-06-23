@@ -36,6 +36,20 @@ namespace Thea2Translator.DesktopApp.Properties {
         }
 
         [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public string UserName
+        {
+            get
+            {
+                return ((string)(this["UserName"]));
+            }
+            set
+            {
+                this["UserName"] = value;
+            }
+        }
+
+        [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]        
         public string UserId
         {
@@ -58,6 +72,34 @@ namespace Thea2Translator.DesktopApp.Properties {
             }
             set {
                 this["Language"] = value;
+            }
+        }
+
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public string ModTitle
+        {
+            get
+            {
+                return ((string)(this["ModTitle"]));
+            }
+            set
+            {
+                this["ModTitle"] = value;
+            }
+        }
+
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public string ModBody
+        {
+            get
+            {
+                return ((string)(this["ModBody"]));
+            }
+            set
+            {
+                this["ModBody"] = value;
             }
         }
     }

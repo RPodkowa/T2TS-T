@@ -210,7 +210,7 @@ namespace Thea2Translator.DesktopApp.Pages
                 {
                     case 0: filtredElements = filtredElements.ToList(); break;
                     case 1: filtredElements = filtredElements.Where(c => c.CacheElem.ToTranslate).ToList(); break;
-                    case 2: filtredElements = filtredElements.Where(c => c.CacheElem.ToConfirm).ToList(); break;
+                    case 2: filtredElements = filtredElements.Where(c => c.CacheElem.ToConfirm && !c.CacheElem.ToTranslate).ToList(); break;
                 }
 
                 if(txtSearch.Text != "")

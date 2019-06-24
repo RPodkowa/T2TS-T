@@ -33,7 +33,7 @@
 
     <system:String x:Key="allComboItemTranslate">Wszystkie</system:String>
     <system:String x:Key="withoutTranslationComboItemTranslate">Nieprzetłumaczone</system:String>
-	<system:String x:Key="withoutConfirmationComboItemTranslate">Niepotwierdzone</system:String>
+    <system:String x:Key="withoutConfirmationComboItemTranslate">Niepotwierdzone</system:String>
 
     <system:String x:Key="titleLabelDictinary">Słownik</system:String>
     <system:String x:Key="usageCountLabelDictinary">Liczba użyć</system:String>

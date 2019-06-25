@@ -26,6 +26,8 @@ namespace Thea2Translator.DesktopApp
         double startBigFontSize;
         double startVeryBigFontSize;
 
+        double maxSmallFontSize;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -36,6 +38,8 @@ namespace Thea2Translator.DesktopApp
             startBigFontSize = (double)Application.Current.Resources["bigFontSize"];
             startVeryBigFontSize = (double)Application.Current.Resources["veryBigFontSize"];
 
+            maxSmallFontSize = (double)Application.Current.Resources["maxSmallFontSize"];       
+
             NavigationCommands.BrowseBack.InputGestures.Clear();
             NavigationCommands.BrowseForward.InputGestures.Clear();
             navigationFrame.Navigate(new HomePage());
@@ -43,18 +47,22 @@ namespace Thea2Translator.DesktopApp
 
         private void Window_SizeChanged(object sender, SizeChangedEventArgs e)
         {
-            ChangeFontSize(startSmallFontSize, "smallFontSize");
+            ChangeFontSize(startSmallFontSize, "smallFontSize", maxSmallFontSize);
             ChangeFontSize(startMediumFontSize, "mediumFontSize");
             ChangeFontSize(startBigFontSize, "bigFontSize");
             ChangeFontSize(startVeryBigFontSize, "veryBigFontSize");
         }
 
-        private void ChangeFontSize(double startFontSize, string resourceName)
+        private void ChangeFontSize(double startFontSize, string resourceName, double? maxSize = null)
         {
             double heightPerSizePoint = startHeight / startFontSize;
 
             var height = this.ActualHeight;
             double newFontSize = height / heightPerSizePoint;
+
+            if (maxSize.HasValue && newFontSize > maxSize)
+                newFontSize = maxSize.Value;
+
             Application.Current.Resources[resourceName] = newFontSize;
         }
     }

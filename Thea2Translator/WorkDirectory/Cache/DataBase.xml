@@ -575,7 +575,12 @@
       <Output>Maksymalna Wiara</Output>
     </Texts>
   </Element>
-  <Element ID="36" Key="DES_TAG_MAX_HEALTH_SPIRITUAL_DES" Flag="0">
+  <Element ID="36" Key="DES_TAG_MAX_HEALTH_SPIRITUAL_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 11:33:11</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -585,7 +590,7 @@
     </Groups>
     <Texts>
       <Input>The maximum amount of Faith the character can have. 1 Faith point is recovered each turn, but you can also perform the Spiritual Healing ritual. Faith below 30% causes gradual Health loss.</Input>
-      <Output>Maksymalna ilość wiary, jaką postać może mieć. 1 punkt wiary jest odzyskiwany w każdej turze, ale możesz również wykonać rytuał duchowego uzdrawiania. Wiara poniżej 30% powoduje stopniową utratę zdrowia.555</Output>
+      <Output>Maksymalna ilość wiary, jaką może posiadać postać. W każdej turze odzyskiwany jest 1 punkt wiary. Można również wykonać rytuał duchowego uzdrawiania. Wiara poniżej 30% powoduje stopniową utratę zdrowia.</Output>
     </Texts>
   </Element>
   <Element ID="37" Key="DES_TAG_SHIELDING" Flag="1">
@@ -604,7 +609,12 @@
       <Output>Osłona</Output>
     </Texts>
   </Element>
-  <Element ID="38" Key="DES_TAG_SHIELDING_DES" Flag="0">
+  <Element ID="38" Key="DES_TAG_SHIELDING_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 11:33:49</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -612,10 +622,15 @@
     </Groups>
     <Texts>
       <Input>The amount of renewable protection the character has during a challenge.</Input>
-      <Output>Ilość ochrony odnawialnej, jaką ma postać podczas wyzwania.</Output>
+      <Output>Ilość odnawialnej ochrony, jaką ma postać podczas wyzwania.</Output>
     </Texts>
   </Element>
-  <Element ID="39" Key="DES_TAG_SHIELDING_PHYSICAL" Flag="0">
+  <Element ID="39" Key="DES_TAG_SHIELDING_PHYSICAL" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 11:33:56</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -624,10 +639,15 @@
     </Groups>
     <Texts>
       <Input>Physical Armour</Input>
-      <Output>Zbroja fizyczna</Output>
+      <Output>Pancerz fizyczny</Output>
     </Texts>
   </Element>
-  <Element ID="40" Key="DES_TAG_SHIELDING_PHYSICAL_DES" Flag="0">
+  <Element ID="40" Key="DES_TAG_SHIELDING_PHYSICAL_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 11:34:24</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -636,10 +656,15 @@
     </Groups>
     <Texts>
       <Input>The amount of renewable protection the character has during a Physical challenge.</Input>
-      <Output>Ilość ochrony odnawialnej, jaką ma postać podczas wyzwania fizycznego.</Output>
+      <Output>Ilość odnawialnej ochrony, jaką ma postać podczas wyzwania fizycznego.</Output>
     </Texts>
   </Element>
-  <Element ID="41" Key="DES_TAG_SHIELDING_MENTAL" Flag="0">
+  <Element ID="41" Key="DES_TAG_SHIELDING_MENTAL" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 11:34:49</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -651,7 +676,12 @@
       <Output>Pancerz mentalny</Output>
     </Texts>
   </Element>
-  <Element ID="42" Key="DES_TAG_SHIELDING_MENTAL_DES" Flag="0">
+  <Element ID="42" Key="DES_TAG_SHIELDING_MENTAL_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 11:35:53</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -660,10 +690,15 @@
     </Groups>
     <Texts>
       <Input>The amount of renewable protection the character has during a Mental challenge.</Input>
-      <Output>Ilość ochrony odnawialnej, jaką ma postać podczas wyzwania mentalnego.</Output>
+      <Output>Ilość odnawialnej ochrony, jaką ma postać podczas wyzwania mentalnego.</Output>
     </Texts>
   </Element>
-  <Element ID="43" Key="DES_TAG_SHIELDING_SPIRITUAL" Flag="0">
+  <Element ID="43" Key="DES_TAG_SHIELDING_SPIRITUAL" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 11:36:35</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -672,10 +707,15 @@
     </Groups>
     <Texts>
       <Input>Spiritual Armour</Input>
-      <Output>Duchowa zbroja</Output>
+      <Output>Pancerz duchowy</Output>
     </Texts>
   </Element>
-  <Element ID="44" Key="DES_TAG_SHIELDING_SPIRITUAL_DES" Flag="0">
+  <Element ID="44" Key="DES_TAG_SHIELDING_SPIRITUAL_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 11:36:47</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -684,10 +724,15 @@
     </Groups>
     <Texts>
       <Input>The amount of renewable protection the character has during a Spiritual challenge.</Input>
-      <Output>Ilość ochrony odnawialnej, jaką ma postać podczas wyzwania duchowego.</Output>
+      <Output>Ilość odnawialnej ochrony, jaką ma postać podczas wyzwania duchowego.</Output>
     </Texts>
   </Element>
-  <Element ID="45" Key="DES_TAG_DELAY" Flag="0">
+  <Element ID="45" Key="DES_TAG_DELAY" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 11:36:49</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -698,7 +743,12 @@
       <Output>Opóźnienie</Output>
     </Texts>
   </Element>
-  <Element ID="46" Key="DES_TAG_DELAY_DES" Flag="0">
+  <Element ID="46" Key="DES_TAG_DELAY_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 11:39:21</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -706,10 +756,15 @@
     </Groups>
     <Texts>
       <Input>Position in queue during a challenge's fight phase. Based on Wits, Phase and selected skill.</Input>
-      <Output>Pozycja w kolejce podczas fazy walki wyzwania. Na podstawie Wits, Phase i wybranej umiejętności.</Output>
+      <Output>Pozycja w kolejce podczas fazy walki wyzwania. Bazuje na sprycie i wybranej umiejętności.</Output>
     </Texts>
   </Element>
-  <Element ID="47" Key="DES_TAG_PERSONAL_CARRY_LIMIT" Flag="0">
+  <Element ID="47" Key="DES_TAG_PERSONAL_CARRY_LIMIT" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 11:39:46</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -719,10 +774,15 @@
     </Groups>
     <Texts>
       <Input>Personal Carry Limit</Input>
-      <Output>Personal Carry Limit</Output>
+      <Output>Udźwig osobisty</Output>
     </Texts>
   </Element>
-  <Element ID="48" Key="DES_TAG_PERSONAL_CARRY_LIMIT_DES" Flag="0">
+  <Element ID="48" Key="DES_TAG_PERSONAL_CARRY_LIMIT_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 11:40:10</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -732,10 +792,15 @@
     </Groups>
     <Texts>
       <Input>Additional character carry limit.</Input>
-      <Output>Dodatkowy limit przenoszenia postaci.</Output>
+      <Output>Dodatkowy udźwig postaci.</Output>
     </Texts>
   </Element>
-  <Element ID="49" Key="DES_TAG_GROUP_CARRY_LIMIT" Flag="0">
+  <Element ID="49" Key="DES_TAG_GROUP_CARRY_LIMIT" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 11:40:52</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -745,10 +810,15 @@
     </Groups>
     <Texts>
       <Input>Group Carry Limit</Input>
-      <Output>Limit Carry Group</Output>
+      <Output>Udźwig grupy</Output>
     </Texts>
   </Element>
-  <Element ID="50" Key="DES_TAG_GROUP_CARRY_LIMIT_DES" Flag="0">
+  <Element ID="50" Key="DES_TAG_GROUP_CARRY_LIMIT_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 11:41:10</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -758,10 +828,15 @@
     </Groups>
     <Texts>
       <Input>Additional group carry limit.</Input>
-      <Output>Dodatkowy limit grupowy.</Output>
+      <Output>Dodatkowy udźwig grupy</Output>
     </Texts>
   </Element>
-  <Element ID="51" Key="DES_TAG_ACTION_POINT_AVAILABLE" Flag="0">
+  <Element ID="51" Key="DES_TAG_ACTION_POINT_AVAILABLE" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 11:41:13</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -774,7 +849,12 @@
       <Output>Dostępne punkty akcji</Output>
     </Texts>
   </Element>
-  <Element ID="52" Key="DES_TAG_ACTION_POINT_AVAILABLE_DES" Flag="0">
+  <Element ID="52" Key="DES_TAG_ACTION_POINT_AVAILABLE_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 11:41:25</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -787,7 +867,12 @@
       <Output>Pozostała ilość punktów akcji, które możesz wydać na grę w tej turze.</Output>
     </Texts>
   </Element>
-  <Element ID="53" Key="DES_TAG_ACTION_POINT_COST" Flag="0">
+  <Element ID="53" Key="DES_TAG_ACTION_POINT_COST" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 11:41:29</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -800,7 +885,12 @@
       <Output>Koszt punktu akcji</Output>
     </Texts>
   </Element>
-  <Element ID="54" Key="DES_TAG_ACTION_POINT_COST_DES" Flag="0">
+  <Element ID="54" Key="DES_TAG_ACTION_POINT_COST_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 11:41:34</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -813,7 +903,12 @@
       <Output>Ilość punktów akcji wymaganych do zagrania tej karty.</Output>
     </Texts>
   </Element>
-  <Element ID="55" Key="DES_TAG_DUPLICATE" Flag="0">
+  <Element ID="55" Key="DES_TAG_DUPLICATE" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 11:41:38</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -824,7 +919,12 @@
       <Output>Duplikat</Output>
     </Texts>
   </Element>
-  <Element ID="56" Key="DES_TAG_DUPLICATE_DES" Flag="0">
+  <Element ID="56" Key="DES_TAG_DUPLICATE_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 11:43:04</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -832,7 +932,7 @@
     </Groups>
     <Texts>
       <Input>This character has been placed more than once on the battlefield. Each copy has its own action but every time it becomes affected by a skill, all other copies are affected as well. All copies of one character share the same colour.</Input>
-      <Output>Ta postać została umieszczona więcej niż raz na polu bitwy. Każda kopia ma swoją własną akcję, ale za każdym razem, gdy wpływa na nią umiejętność, wszystkie inne kopie również są dotknięte. Wszystkie kopie jednego znaku mają ten sam kolor.</Output>
+      <Output>Ta postać została umieszczona więcej niż raz na polu bitwy. Każda kopia ma swoją własną akcję, ale za każdym razem, gdy wpływa na nią umiejętność, wszystkie inne kopie również są nią obięte. Wszystkie kopie jednej postaci mają ten sam kolor.</Output>
     </Texts>
   </Element>
   <Element ID="57" Key="DES_TAG_SUMMON" Flag="1">
@@ -884,7 +984,12 @@
       <Output>Zasięg ruchu</Output>
     </Texts>
   </Element>
-  <Element ID="60" Key="DES_TAG_MOVEMENT_RANGE_DES" Flag="0">
+  <Element ID="60" Key="DES_TAG_MOVEMENT_RANGE_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 11:43:22</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -896,7 +1001,12 @@
       <Output>Maksymalna ilość punktów ruchu (MP), którą ma postać.</Output>
     </Texts>
   </Element>
-  <Element ID="61" Key="DES_TAG_SEA_MOVEMENT_RANGE" Flag="0">
+  <Element ID="61" Key="DES_TAG_SEA_MOVEMENT_RANGE" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 11:43:26</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -909,7 +1019,12 @@
       <Output>Zasięg ruchu morskiego</Output>
     </Texts>
   </Element>
-  <Element ID="62" Key="DES_TAG_SEA_MOVEMENT_RANGE_DES" Flag="0">
+  <Element ID="62" Key="DES_TAG_SEA_MOVEMENT_RANGE_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 11:43:34</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -946,10 +1061,15 @@
     </Groups>
     <Texts>
       <Input>How well does the character feel, their level of approval and attitude towards everything around them.\n\nMorale replenishes Sanity and directly depends on food variety. Each food type increases Morale by 1 per turn until it reaches 10x the carried food types, capped at 100.</Input>
-      <Output>Jak dobrze czuje się postać, poziom jej akceptacji i stosunek do wszystkiego wokół. \n\nMorale uzupełnia zdrowie i bezpośrednio zależy od odmiany żywności. Każdy rodzaj żywności zwiększa Morale o 1 na turę, aż osiągnie 10x przenoszone typy żywności, ograniczone do 100.</Output>
+      <Output>Jak dobrze czuje się postać, poziom jej akceptacji i stosunek do wszystkiego wokół.\n\nMorale uzupełnia zdrowie i bezpośrednio zależy od odmiany żywności. Każdy rodzaj żywności zwiększa Morale o 1 na turę, aż osiągnie 10x przenoszone typy żywności, ograniczone do 100.</Output>
     </Texts>
   </Element>
-  <Element ID="65" Key="DES_TAG_RANGE_OF_SIGHT_DAY" Flag="0">
+  <Element ID="65" Key="DES_TAG_RANGE_OF_SIGHT_DAY" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 11:43:53</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -963,7 +1083,12 @@
       <Output>Zasięg widzenia (dzień)</Output>
     </Texts>
   </Element>
-  <Element ID="66" Key="DES_TAG_RANGE_OF_SIGHT_DAY_DES" Flag="0">
+  <Element ID="66" Key="DES_TAG_RANGE_OF_SIGHT_DAY_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 11:44:10</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -977,7 +1102,12 @@
       <Output>Jak daleko postać może widzieć w turach dziennych.</Output>
     </Texts>
   </Element>
-  <Element ID="67" Key="DES_TAG_RANGE_OF_SIGHT_NIGHT" Flag="0">
+  <Element ID="67" Key="DES_TAG_RANGE_OF_SIGHT_NIGHT" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 11:43:54</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -991,7 +1121,12 @@
       <Output>Zasięg widzenia (noc)</Output>
     </Texts>
   </Element>
-  <Element ID="68" Key="DES_TAG_RANGE_OF_SIGHT_NIGHT_DES" Flag="0">
+  <Element ID="68" Key="DES_TAG_RANGE_OF_SIGHT_NIGHT_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 11:44:25</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -1002,10 +1137,15 @@
     </Groups>
     <Texts>
       <Input>How far away the character can see during Night turns.</Input>
-      <Output>Jak daleko postać może zobaczyć podczas nocnych zakrętów.</Output>
+      <Output>Jak daleko postać może widzieć w turach nocnych.</Output>
     </Texts>
   </Element>
-  <Element ID="69" Key="DES_TAG_CA1" Flag="0">
+  <Element ID="69" Key="DES_TAG_CA1" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 11:44:29</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -1016,7 +1156,12 @@
       <Output>Atrybut podstawowy</Output>
     </Texts>
   </Element>
-  <Element ID="70" Key="DES_TAG_CA1_DES" Flag="0">
+  <Element ID="70" Key="DES_TAG_CA1_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 16:23:16</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -1024,10 +1169,15 @@
     </Groups>
     <Texts>
       <Input>The primary attribute influencing efficiency in challenges.\nStrength ({ICON:StrengthIcon}) in {COLOR:#E15E5E}Physical Challenges{END_COLOR}\nIntelligence ({ICON:IntelligenceIcon}) in {COLOR:#DFC742}Mental Challenges{END_COLOR}\nMysticism ({ICON:MysticismIcon}) in {COLOR:#BF73FF}Spiritual Challenges{END_COLOR}</Input>
-      <Output>Główny atrybut wpływający na wydajność w wyzwaniach. \nSiła ({ICON:StrengthIcon}) w {COLOR:#E15E5E}Fizycznych wyzwaniach {END_COLOR}\nInteligencja ({ICON:IntelligenceIcon}) w {COLOR:#DFC742}Wyzwaniach psychicznych {END_COLOR}\nMistycyzm ({ICON:MysticismIcon}) w {COLOR:#BF73FF}Wyzwaniach duchowych {END_COLOR}</Output>
+      <Output>Główny atrybut wpływający na wydajność w wyzwaniach.\nSiła ({ICON:StrengthIcon}) w {COLOR:#E15E5E}Wyzwaniach fizycznych{END_COLOR}\nInteligencja ({ICON:IntelligenceIcon}) w {COLOR:#DFC742}Wyzwaniach psychicznych{END_COLOR}\nMistycyzm ({ICON:MysticismIcon}) w {COLOR:#BF73FF}Wyzwaniach duchowych {END_COLOR}</Output>
     </Texts>
   </Element>
-  <Element ID="71" Key="DES_TAG_CA2" Flag="0">
+  <Element ID="71" Key="DES_TAG_CA2" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 11:44:35</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -1038,7 +1188,12 @@
       <Output>Dodatkowy atrybut</Output>
     </Texts>
   </Element>
-  <Element ID="72" Key="DES_TAG_CA2_DES" Flag="0">
+  <Element ID="72" Key="DES_TAG_CA2_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 16:24:39</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -1046,10 +1201,15 @@
     </Groups>
     <Texts>
       <Input>The secondary attribute influencing efficiency in challenges.\nPerception ({ICON:PerceptionIcon}) in {COLOR:#E15E5E}Physical Challenges{END_COLOR}\nWisdom ({ICON:WisdomIcon}) in {COLOR:#DFC742}Mental Challenges{END_COLOR}\nDestiny ({ICON:DestinyIcon}) in {COLOR:#BF73FF}Spiritual Challenges{END_COLOR}</Input>
-      <Output>Drugorzędny atrybut wpływający na wydajność w wyzwaniach. \nPercepcja ({ICON:PerceptionIcon}) w {COLOR:#E15E5E}Fizycznych wyzwaniach {END_COLOR}\nMądrość ({ICON:WisdomIcon}) w {COLOR:#DFC742}Wyzwaniach psychicznych {END_COLOR}\nPrzeznaczenie ({ICON:DestinyIcon}) w {COLOR:#BF73FF}Wyzwaniach duchowych {END_COLOR}</Output>
+      <Output>Dodatkowy atrybut wpływający na wydajność w wyzwaniach. \nPercepcja ({ICON:PerceptionIcon}) w {COLOR:#E15E5E}Wyzwaniach fizycznych{END_COLOR}\nMądrość ({ICON:WisdomIcon}) w {COLOR:#DFC742}Wyzwaniach psychicznych{END_COLOR}\nPrzeznaczenie ({ICON:DestinyIcon}) w {COLOR:#BF73FF}Wyzwaniach duchowych{END_COLOR}</Output>
     </Texts>
   </Element>
-  <Element ID="73" Key="DES_TAG_CA_MAX_HEALTH" Flag="0">
+  <Element ID="73" Key="DES_TAG_CA_MAX_HEALTH" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 16:25:29</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -1062,7 +1222,12 @@
       <Output>Maksymalne punkty wytrzymałości</Output>
     </Texts>
   </Element>
-  <Element ID="74" Key="DES_TAG_CA_MAX_HEALTH_DES" Flag="0">
+  <Element ID="74" Key="DES_TAG_CA_MAX_HEALTH_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 16:26:30</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -1072,10 +1237,15 @@
     </Groups>
     <Texts>
       <Input>The maximum amount of Hit Points the character can take before they are removed from a challenge.</Input>
-      <Output>Maksymalna ilość punktów wytrzymałości, które postać może zdobyć, zanim zostaną usunięte z wyzwania.</Output>
+      <Output>Maksymalna ilość punktów wytrzymałości, które postać może stracić, zanim zostanie usunięta z wyzwania.</Output>
     </Texts>
   </Element>
-  <Element ID="75" Key="DES_TAG_CA_HEALTH" Flag="0">
+  <Element ID="75" Key="DES_TAG_CA_HEALTH" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 16:26:46</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -1084,10 +1254,15 @@
     </Groups>
     <Texts>
       <Input>Hit Points</Input>
-      <Output>Punkty życia</Output>
+      <Output>Punkty wytrzymałości</Output>
     </Texts>
   </Element>
-  <Element ID="76" Key="DES_TAG_CA_HEALTH_DES" Flag="0">
+  <Element ID="76" Key="DES_TAG_CA_HEALTH_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 16:26:54</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -1099,7 +1274,12 @@
       <Output>Aktualna liczba punktów wytrzymałości podczas wyzwania.</Output>
     </Texts>
   </Element>
-  <Element ID="77" Key="DES_TAG_CA_SHIELD" Flag="0">
+  <Element ID="77" Key="DES_TAG_CA_SHIELD" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 16:27:01</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -1108,10 +1288,15 @@
     </Groups>
     <Texts>
       <Input>Armour</Input>
-      <Output>Zbroja</Output>
+      <Output>Pancerz</Output>
     </Texts>
   </Element>
-  <Element ID="78" Key="DES_TAG_CA_SHIELD_DES" Flag="0">
+  <Element ID="78" Key="DES_TAG_CA_SHIELD_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 16:28:32</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -1120,10 +1305,15 @@
     </Groups>
     <Texts>
       <Input>The amout of Shielding Points during a challenge. These normally need to be taken down first before Hit Points are affected by Damage.</Input>
-      <Output>Amouting Shielding Points podczas wyzwania. Zwykle należy je najpierw zlikwidować, zanim punkty obrażeń zostaną dotknięte obrażeniami.</Output>
+      <Output>Ilość punktów osłony podczas wyzwania. Zwykle należy je najpierw zlikwidować, zanim punkty wytrzymałości będą odejmowane.</Output>
     </Texts>
   </Element>
-  <Element ID="79" Key="DES_TAG_CHOSEN" Flag="0">
+  <Element ID="79" Key="DES_TAG_CHOSEN" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 16:28:45</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -1131,10 +1321,15 @@
     </Groups>
     <Texts>
       <Input>Chosen</Input>
-      <Output>Wybrany</Output>
+      <Output>Wybraniec</Output>
     </Texts>
   </Element>
-  <Element ID="80" Key="DES_TAG_CHOSEN_DES" Flag="0">
+  <Element ID="80" Key="DES_TAG_CHOSEN_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 16:31:03</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -1142,7 +1337,7 @@
     </Groups>
     <Texts>
       <Input>This character is the gods' chosen. They are immune to mental death and less likely to be kidnapped, but if they die your time is up.</Input>
-      <Output>Ta postać jest wybrana przez bogów. Są odporni na śmierć umysłową i mniej prawdopodobne, że zostaną porwani, ale jeśli umrą, twój czas się skończy.</Output>
+      <Output>Ta postać jest wybrana przez bogów. Jest odporna na odejście z grupy z powodu utraty poczytalności i mniej prawdopodobne, że zostanie porwana, ale jeśli umrze, twój czas się skończy.</Output>
     </Texts>
   </Element>
   <Element ID="81" Key="DES_TAG_WOODFOLK" Flag="1">
@@ -1161,7 +1356,12 @@
       <Output>Leśny lud</Output>
     </Texts>
   </Element>
-  <Element ID="82" Key="DES_TAG_WOODFOLK_DES" Flag="0">
+  <Element ID="82" Key="DES_TAG_WOODFOLK_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 16:31:51</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -1169,10 +1369,15 @@
     </Groups>
     <Texts>
       <Input>Beings who are attuned to the forest.</Input>
-      <Output>Istoty, które są dostrojone do lasu.</Output>
+      <Output>Istoty, które są zestrojone z lasem.</Output>
     </Texts>
   </Element>
-  <Element ID="83" Key="DES_TAG_MAGIC_USER" Flag="0">
+  <Element ID="83" Key="DES_TAG_MAGIC_USER" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 16:32:02</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -1181,10 +1386,15 @@
     </Groups>
     <Texts>
       <Input>Magic User</Input>
-      <Output>Magiczny użytkownik</Output>
+      <Output>Użytkownicy magii</Output>
     </Texts>
   </Element>
-  <Element ID="84" Key="DES_TAG_MAGIC_USER_DES" Flag="0">
+  <Element ID="84" Key="DES_TAG_MAGIC_USER_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 16:32:12</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -1196,7 +1406,12 @@
       <Output>Ci, którzy zostali wyszkoleni do władania splotami magii.</Output>
     </Texts>
   </Element>
-  <Element ID="85" Key="DES_TAG_TARGET_SELF" Flag="0">
+  <Element ID="85" Key="DES_TAG_TARGET_SELF" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 15:34:50</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -1205,10 +1420,15 @@
     </Groups>
     <Texts>
       <Input>Target - Self</Input>
-      <Output>Cel - Jaźń</Output>
+      <Output>Cel - Na siebie</Output>
     </Texts>
   </Element>
-  <Element ID="86" Key="DES_TAG_TARGET_SELF_DES" Flag="0">
+  <Element ID="86" Key="DES_TAG_TARGET_SELF_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 15:34:57</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -1220,7 +1440,12 @@
       <Output>Celuje w postać rzucającą.</Output>
     </Texts>
   </Element>
-  <Element ID="87" Key="DES_TAG_TARGET_EMPTY_ALLY_SLOT" Flag="0">
+  <Element ID="87" Key="DES_TAG_TARGET_EMPTY_ALLY_SLOT" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 15:35:00</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -1234,7 +1459,12 @@
       <Output>Cel - puste miejsce</Output>
     </Texts>
   </Element>
-  <Element ID="88" Key="DES_TAG_TARGET_EMPTY_ALLY_SLOT_DES" Flag="0">
+  <Element ID="88" Key="DES_TAG_TARGET_EMPTY_ALLY_SLOT_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 15:35:12</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -1245,10 +1475,15 @@
     </Groups>
     <Texts>
       <Input>Targets an empty card spot in either ally melee or ally ranged row.</Input>
-      <Output>Celuje w puste miejsce karty w sojuszniczym zwarciu lub w sojuszniczym rzędzie dystansowym.</Output>
+      <Output>Celuje w puste miejsce w sojuszniczym rzędzie zwarcia lub dystansowym.</Output>
     </Texts>
   </Element>
-  <Element ID="89" Key="DES_TAG_TARGET_EMPTY_ALLY_MELEE_SLOT" Flag="0">
+  <Element ID="89" Key="DES_TAG_TARGET_EMPTY_ALLY_MELEE_SLOT" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 15:38:38</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -1260,10 +1495,15 @@
     </Groups>
     <Texts>
       <Input>Target - Empty Melee Spot</Input>
-      <Output>Cel - Pusta plama walki wręcz</Output>
+      <Output>Cel - Puste miejsce zwarcia</Output>
     </Texts>
   </Element>
-  <Element ID="90" Key="DES_TAG_TARGET_EMPTY_ALLY_MELEE_SLOT_DES" Flag="0">
+  <Element ID="90" Key="DES_TAG_TARGET_EMPTY_ALLY_MELEE_SLOT_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 15:39:07</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -1275,10 +1515,15 @@
     </Groups>
     <Texts>
       <Input>Targets an empty card spot in ally melee row.</Input>
-      <Output>Celuje w puste miejsce kart w sojuszniczym rzędzie do walki wręcz.</Output>
+      <Output>Celuje w puste miejsce w sojuszniczym rzędzie zwarcia.</Output>
     </Texts>
   </Element>
-  <Element ID="91" Key="DES_TAG_TARGET_EMPTY_ALLY_RANGED_SLOT" Flag="0">
+  <Element ID="91" Key="DES_TAG_TARGET_EMPTY_ALLY_RANGED_SLOT" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 15:40:44</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -1290,10 +1535,15 @@
     </Groups>
     <Texts>
       <Input>Target - Empty Ranged Spot</Input>
-      <Output>Cel - pusty punkt zasięgu</Output>
+      <Output>Cel - Puste miejsce dystansowe</Output>
     </Texts>
   </Element>
-  <Element ID="92" Key="DES_TAG_TARGET_EMPTY_ALLY_RANGED_SLOT_DES" Flag="0">
+  <Element ID="92" Key="DES_TAG_TARGET_EMPTY_ALLY_RANGED_SLOT_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 15:41:03</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -1305,7 +1555,7 @@
     </Groups>
     <Texts>
       <Input>Targets an empty card spot in ally ranged row.</Input>
-      <Output>Celuje w puste miejsce kart w sojuszniczym rzędzie dystansowym.</Output>
+      <Output>Celuje w puste miejsce w sojuszniczym rzędzie dystansowym.</Output>
     </Texts>
   </Element>
   <Element ID="93" Key="DES_TAG_TARGET_SINGLE_MELEE" Flag="0">
@@ -1318,7 +1568,7 @@
     </Groups>
     <Texts>
       <Input>Target - Single Melee</Input>
-      <Output>Cel - pojedyncza walka wręcz</Output>
+      <Output>Cel - pojedyńczy walczący wręcz</Output>
     </Texts>
   </Element>
   <Element ID="94" Key="DES_TAG_TARGET_SINGLE_MELEE_DES" Flag="0">
@@ -1331,7 +1581,7 @@
     </Groups>
     <Texts>
       <Input>Targets 1 closest enemy.</Input>
-      <Output>Celuje w jednego najbliższego wroga.</Output>
+      <Output>Celuje w 1 najbliższego wroga.</Output>
     </Texts>
   </Element>
   <Element ID="95" Key="DES_TAG_TARGET_RANGED_ON_MELEE" Flag="0">
@@ -1419,7 +1669,12 @@
       <Output>Celuje w jednego lub więcej wrogów w rzędzie walczącym przed postacią. Jeśli go nie ma, można zaatakować dowolnego wroga na polu bitwy.</Output>
     </Texts>
   </Element>
-  <Element ID="101" Key="DES_TAG_TARGET_HORIZONTAL_MELEE_ENEMY" Flag="0">
+  <Element ID="101" Key="DES_TAG_TARGET_HORIZONTAL_MELEE_ENEMY" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 16:03:22</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -1430,10 +1685,15 @@
     </Groups>
     <Texts>
       <Input>Target - Horiz. Splash</Input>
-      <Output>Cel - poziomo. Pluśnięcie</Output>
+      <Output>Cel - Rozprysk poziomy</Output>
     </Texts>
   </Element>
-  <Element ID="102" Key="DES_TAG_TARGET_HORIZONTAL_MELEE_ENEMY_DES" Flag="0">
+  <Element ID="102" Key="DES_TAG_TARGET_HORIZONTAL_MELEE_ENEMY_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 16:04:01</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -1444,10 +1704,15 @@
     </Groups>
     <Texts>
       <Input>Targets 1 closest enemy and up to 2 enemies standing to their left and right.</Input>
-      <Output>Celuje w jednego najbliższego wroga i maksymalnie 2 wrogów stojących po ich lewej i prawej stronie.</Output>
+      <Output>Celuje w 1 najbliższego wroga i maksymalnie 2 wrogów stojących po jego lewej i prawej stronie.</Output>
     </Texts>
   </Element>
-  <Element ID="103" Key="DES_TAG_TARGET_VERICAL_MELEE_ENEMY" Flag="0">
+  <Element ID="103" Key="DES_TAG_TARGET_VERICAL_MELEE_ENEMY" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 16:05:23</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -1458,10 +1723,15 @@
     </Groups>
     <Texts>
       <Input>Target - Vert. Splash</Input>
-      <Output>Cel - Vert. Pluśnięcie</Output>
+      <Output>Cel - Rozprysk pionowy</Output>
     </Texts>
   </Element>
-  <Element ID="104" Key="DES_TAG_TARGET_VERICAL_MELEE_ENEMY_DES" Flag="0">
+  <Element ID="104" Key="DES_TAG_TARGET_VERICAL_MELEE_ENEMY_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 16:06:14</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -1472,10 +1742,15 @@
     </Groups>
     <Texts>
       <Input>Targets 1 closest enemy. If the attacker stands in melee row, the attack will splash onto another enemy standing behind the main target.</Input>
-      <Output>Celuje w 1 najbliższego wroga. Jeśli atakujący stoi w rzędzie w zwarciu, atak rozleje się na innego wroga stojącego za głównym celem.</Output>
+      <Output>Celuje w 1 najbliższego wroga. Jeśli atakujący stoi w rzędzie zwarcia, atak przejdzie na kolejnego wroga stojącego za głównym celem.</Output>
     </Texts>
   </Element>
-  <Element ID="105" Key="DES_TAG_TARGET_T_SPLASH_ENEMY" Flag="0">
+  <Element ID="105" Key="DES_TAG_TARGET_T_SPLASH_ENEMY" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 16:14:38</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -1486,10 +1761,15 @@
     </Groups>
     <Texts>
       <Input>Target - T-Splash</Input>
-      <Output>Cel - T-Splash</Output>
+      <Output>Cel - Rozprysk T</Output>
     </Texts>
   </Element>
-  <Element ID="106" Key="DES_TAG_TARGET_T_SPLASH_ENEMY_DES" Flag="0">
+  <Element ID="106" Key="DES_TAG_TARGET_T_SPLASH_ENEMY_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 16:15:17</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -1500,10 +1780,15 @@
     </Groups>
     <Texts>
       <Input>Targets 1 closest enemy and up to 3 enemies standing right next to them.</Input>
-      <Output>Celuje w jednego najbliższego wroga i maksymalnie 3 wrogów stojących tuż obok nich.</Output>
+      <Output>Celuje w 1 najbliższego wroga i maksymalnie 3 wrogów stojących tuż obok niego.</Output>
     </Texts>
   </Element>
-  <Element ID="107" Key="DES_TAG_TARGET_O_SPLASH_ENEMY" Flag="0">
+  <Element ID="107" Key="DES_TAG_TARGET_O_SPLASH_ENEMY" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 16:15:29</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -1514,10 +1799,15 @@
     </Groups>
     <Texts>
       <Input>Target - O-Splash</Input>
-      <Output>Cel - O-Splash</Output>
+      <Output>Cel - Rozprysk O</Output>
     </Texts>
   </Element>
-  <Element ID="108" Key="DES_TAG_TARGET_O_SPLASH_ENEMY_DES" Flag="0">
+  <Element ID="108" Key="DES_TAG_TARGET_O_SPLASH_ENEMY_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 16:15:43</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -1528,10 +1818,15 @@
     </Groups>
     <Texts>
       <Input>Targets 1 closest enemy and all enemies around the target.</Input>
-      <Output>Celuje w jednego najbliższego wroga i wszystkich wrogów wokół celu.</Output>
+      <Output>Celuje w 1 najbliższego wroga i wszystkich wrogów wokół niego.</Output>
     </Texts>
   </Element>
-  <Element ID="109" Key="DES_TAG_TARGET_SELECTED_ENEMY" Flag="0">
+  <Element ID="109" Key="DES_TAG_TARGET_SELECTED_ENEMY" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 16:16:02</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -1544,7 +1839,12 @@
       <Output>Cel - Wybrany wróg</Output>
     </Texts>
   </Element>
-  <Element ID="110" Key="DES_TAG_TARGET_SELECTED_ENEMY_DES" Flag="0">
+  <Element ID="110" Key="DES_TAG_TARGET_SELECTED_ENEMY_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 16:16:07</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -1557,7 +1857,12 @@
       <Output>Celuje 1 wroga stojącego w dowolnym miejscu na polu bitwy.</Output>
     </Texts>
   </Element>
-  <Element ID="111" Key="DES_TAG_TARGET_SELECTED_ENEMIES" Flag="0">
+  <Element ID="111" Key="DES_TAG_TARGET_SELECTED_ENEMIES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 16:16:11</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -1570,7 +1875,12 @@
       <Output>Cel - Wybrani wrogowie</Output>
     </Texts>
   </Element>
-  <Element ID="112" Key="DES_TAG_TARGET_SELECTED_ENEMIES_DES" Flag="0">
+  <Element ID="112" Key="DES_TAG_TARGET_SELECTED_ENEMIES_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 16:16:19</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -1583,7 +1893,12 @@
       <Output>Celuje w 2 lub więcej wybranych wrogów stojących w dowolnym miejscu na polu bitwy.</Output>
     </Texts>
   </Element>
-  <Element ID="113" Key="DES_TAG_TARGET_ALL_PLAYED_ENEMY" Flag="0">
+  <Element ID="113" Key="DES_TAG_TARGET_ALL_PLAYED_ENEMY" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 16:16:29</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -1597,7 +1912,12 @@
       <Output>Cel - Wrogowie na polu bitwy</Output>
     </Texts>
   </Element>
-  <Element ID="114" Key="DES_TAG_TARGET_ALL_PLAYED_ENEMY_DES" Flag="0">
+  <Element ID="114" Key="DES_TAG_TARGET_ALL_PLAYED_ENEMY_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 16:16:39</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -1611,7 +1931,12 @@
       <Output>Celuje wszystkich wrogów stojących w dowolnym miejscu na polu bitwy.</Output>
     </Texts>
   </Element>
-  <Element ID="115" Key="DES_TAG_TARGET_RANDOM_ENEMIES1" Flag="0">
+  <Element ID="115" Key="DES_TAG_TARGET_RANDOM_ENEMIES1" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 15:48:35</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -1624,7 +1949,12 @@
       <Output>Cel - 1 losowy wróg</Output>
     </Texts>
   </Element>
-  <Element ID="116" Key="DES_TAG_TARGET_RANDOM_ENEMIES1_DES" Flag="0">
+  <Element ID="116" Key="DES_TAG_TARGET_RANDOM_ENEMIES1_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 15:48:38</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -1634,10 +1964,15 @@
     </Groups>
     <Texts>
       <Input>Targets 1 enemy chosen at random.</Input>
-      <Output>Celuje w jednego wroga wybranego losowo.</Output>
+      <Output>Celuje w 1 wroga wybranego losowo.</Output>
     </Texts>
   </Element>
-  <Element ID="117" Key="DES_TAG_TARGET_RANDOM_ENEMIES2" Flag="0">
+  <Element ID="117" Key="DES_TAG_TARGET_RANDOM_ENEMIES2" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 15:48:40</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -1650,7 +1985,12 @@
       <Output>Cel - 2 losowych wrogów</Output>
     </Texts>
   </Element>
-  <Element ID="118" Key="DES_TAG_TARGET_RANDOM_ENEMIES2_DES" Flag="0">
+  <Element ID="118" Key="DES_TAG_TARGET_RANDOM_ENEMIES2_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 15:48:43</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -1663,7 +2003,12 @@
       <Output>Celuje w 1 do 2 wrogów wybranych losowo.</Output>
     </Texts>
   </Element>
-  <Element ID="119" Key="DES_TAG_TARGET_RANDOM_ENEMIES3" Flag="0">
+  <Element ID="119" Key="DES_TAG_TARGET_RANDOM_ENEMIES3" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 15:48:45</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -1676,7 +2021,12 @@
       <Output>Cel - 3 losowych wrogów</Output>
     </Texts>
   </Element>
-  <Element ID="120" Key="DES_TAG_TARGET_RANDOM_ENEMIES3_DES" Flag="0">
+  <Element ID="120" Key="DES_TAG_TARGET_RANDOM_ENEMIES3_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 15:48:47</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -1689,7 +2039,12 @@
       <Output>Celuje od 1 do 3 wrogów wybranych losowo.</Output>
     </Texts>
   </Element>
-  <Element ID="121" Key="DES_TAG_TARGET_RANDOM_ENEMIES4" Flag="0">
+  <Element ID="121" Key="DES_TAG_TARGET_RANDOM_ENEMIES4" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 15:48:49</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -1702,7 +2057,12 @@
       <Output>Cel - 4 losowych wrogów</Output>
     </Texts>
   </Element>
-  <Element ID="122" Key="DES_TAG_TARGET_RANDOM_ENEMIES4_DES" Flag="0">
+  <Element ID="122" Key="DES_TAG_TARGET_RANDOM_ENEMIES4_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 15:48:52</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -1715,7 +2075,12 @@
       <Output>Celuje od 1 do 4 wrogów wybranych losowo.</Output>
     </Texts>
   </Element>
-  <Element ID="123" Key="DES_TAG_TARGET_RANDOM_ENEMIES5" Flag="0">
+  <Element ID="123" Key="DES_TAG_TARGET_RANDOM_ENEMIES5" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 15:48:56</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -1728,7 +2093,12 @@
       <Output>Cel - 5 losowych wrogów</Output>
     </Texts>
   </Element>
-  <Element ID="124" Key="DES_TAG_TARGET_RANDOM_ENEMIES5_DES" Flag="0">
+  <Element ID="124" Key="DES_TAG_TARGET_RANDOM_ENEMIES5_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 15:49:01</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -1741,7 +2111,12 @@
       <Output>Celuje od 1 do 5 wrogów wybranych losowo.</Output>
     </Texts>
   </Element>
-  <Element ID="125" Key="DES_TAG_TARGET_RANDOM_ENEMIES6" Flag="0">
+  <Element ID="125" Key="DES_TAG_TARGET_RANDOM_ENEMIES6" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 15:49:04</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -1754,7 +2129,12 @@
       <Output>Cel - 6 losowych wrogów</Output>
     </Texts>
   </Element>
-  <Element ID="126" Key="DES_TAG_TARGET_RANDOM_ENEMIES6_DES" Flag="0">
+  <Element ID="126" Key="DES_TAG_TARGET_RANDOM_ENEMIES6_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 15:49:06</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -1767,7 +2147,12 @@
       <Output>Celuje w 1 do 6 wrogów wybranych losowo.</Output>
     </Texts>
   </Element>
-  <Element ID="127" Key="DES_TAG_TARGET_RANDOM_ALLIES1" Flag="0">
+  <Element ID="127" Key="DES_TAG_TARGET_RANDOM_ALLIES1" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 15:49:15</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -1780,7 +2165,12 @@
       <Output>Cel - 1 losowy sojusznik</Output>
     </Texts>
   </Element>
-  <Element ID="128" Key="DES_TAG_TARGET_RANDOM_ALLIES1_DES" Flag="0">
+  <Element ID="128" Key="DES_TAG_TARGET_RANDOM_ALLIES1_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 15:49:18</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -1793,7 +2183,12 @@
       <Output>Cel 1 sojusznik wybrany losowo.</Output>
     </Texts>
   </Element>
-  <Element ID="129" Key="DES_TAG_TARGET_RANDOM_ALLIES2" Flag="0">
+  <Element ID="129" Key="DES_TAG_TARGET_RANDOM_ALLIES2" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 15:49:38</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -1803,10 +2198,15 @@
     </Groups>
     <Texts>
       <Input>Target - 2 Random Allies</Input>
-      <Output>Cel - 2 przypadkowych sprzymierzeńców</Output>
+      <Output>Cel - 2 losowych sojuszników</Output>
     </Texts>
   </Element>
-  <Element ID="130" Key="DES_TAG_TARGET_RANDOM_ALLIES2_DES" Flag="0">
+  <Element ID="130" Key="DES_TAG_TARGET_RANDOM_ALLIES2_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 15:49:55</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -1819,7 +2219,12 @@
       <Output>Celuje od 1 do 2 sojuszników wybranych losowo.</Output>
     </Texts>
   </Element>
-  <Element ID="131" Key="DES_TAG_TARGET_RANDOM_ALLIES3" Flag="0">
+  <Element ID="131" Key="DES_TAG_TARGET_RANDOM_ALLIES3" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 15:49:59</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -1829,10 +2234,15 @@
     </Groups>
     <Texts>
       <Input>Target - 3 Random Allies</Input>
-      <Output>Cel - 3 losowych sprzymierzeńców</Output>
+      <Output>Cel - 3 losowych sojuszników</Output>
     </Texts>
   </Element>
-  <Element ID="132" Key="DES_TAG_TARGET_RANDOM_ALLIES3_DES" Flag="0">
+  <Element ID="132" Key="DES_TAG_TARGET_RANDOM_ALLIES3_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 15:50:02</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -1845,7 +2255,12 @@
       <Output>Celuje od 1 do 3 sojuszników wybranych losowo.</Output>
     </Texts>
   </Element>
-  <Element ID="133" Key="DES_TAG_TARGET_RANDOM_ALLIES4" Flag="0">
+  <Element ID="133" Key="DES_TAG_TARGET_RANDOM_ALLIES4" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 15:50:19</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -1855,10 +2270,15 @@
     </Groups>
     <Texts>
       <Input>Target - 4 Random Allies</Input>
-      <Output>Cel - 4 losowych sprzymierzeńców</Output>
+      <Output>Cel - 4 losowych sojuszników</Output>
     </Texts>
   </Element>
-  <Element ID="134" Key="DES_TAG_TARGET_RANDOM_ALLIES4_DES" Flag="0">
+  <Element ID="134" Key="DES_TAG_TARGET_RANDOM_ALLIES4_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 15:50:12</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -1871,7 +2291,12 @@
       <Output>Celuje od 1 do 4 sojuszników wybranych losowo.</Output>
     </Texts>
   </Element>
-  <Element ID="135" Key="DES_TAG_TARGET_RANDOM_ALLIES5" Flag="0">
+  <Element ID="135" Key="DES_TAG_TARGET_RANDOM_ALLIES5" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 15:50:18</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -1881,10 +2306,15 @@
     </Groups>
     <Texts>
       <Input>Target - 5 Random Allies</Input>
-      <Output>Cel - 5 losowych sprzymierzeńców</Output>
+      <Output>Cel - 5 losowych sojuszników</Output>
     </Texts>
   </Element>
-  <Element ID="136" Key="DES_TAG_TARGET_RANDOM_ALLIES5_DES" Flag="0">
+  <Element ID="136" Key="DES_TAG_TARGET_RANDOM_ALLIES5_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 15:50:11</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -1897,7 +2327,12 @@
       <Output>Celuje od 1 do 5 sojuszników wybranych losowo.</Output>
     </Texts>
   </Element>
-  <Element ID="137" Key="DES_TAG_TARGET_RANDOM_ALLIES6" Flag="0">
+  <Element ID="137" Key="DES_TAG_TARGET_RANDOM_ALLIES6" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 15:50:17</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -1907,10 +2342,15 @@
     </Groups>
     <Texts>
       <Input>Target - 6 Random Allies</Input>
-      <Output>Cel - 6 losowych sprzymierzeńców</Output>
+      <Output>Cel - 6 losowych sojuszników</Output>
     </Texts>
   </Element>
-  <Element ID="138" Key="DES_TAG_TARGET_RANDOM_ALLIES6_DES" Flag="0">
+  <Element ID="138" Key="DES_TAG_TARGET_RANDOM_ALLIES6_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 15:50:11</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -1923,7 +2363,12 @@
       <Output>Celuje od 1 do 6 sojuszników wybranych losowo.</Output>
     </Texts>
   </Element>
-  <Element ID="139" Key="DES_TAG_TARGET_SELECTED_ALLY" Flag="0">
+  <Element ID="139" Key="DES_TAG_TARGET_SELECTED_ALLY" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 16:17:55</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -1936,7 +2381,12 @@
       <Output>Cel - Wybrany sojusznik</Output>
     </Texts>
   </Element>
-  <Element ID="140" Key="DES_TAG_TARGET_SELECTED_ALLY_DES" Flag="0">
+  <Element ID="140" Key="DES_TAG_TARGET_SELECTED_ALLY_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 16:18:07</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -1946,10 +2396,15 @@
     </Groups>
     <Texts>
       <Input>Targets 1 selected ally standing anywhere on the battlefield.</Input>
-      <Output>Cele 1 wybranego sojusznika stojącego w dowolnym miejscu na polu bitwy.</Output>
+      <Output>Celuje w 1 wybranego sojusznika stojącego w dowolnym miejscu na polu bitwy.</Output>
     </Texts>
   </Element>
-  <Element ID="141" Key="DES_TAG_TARGET_SELECTED_ALLIES" Flag="0">
+  <Element ID="141" Key="DES_TAG_TARGET_SELECTED_ALLIES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 16:18:10</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -1962,7 +2417,12 @@
       <Output>Cel - Wybrani sojusznicy</Output>
     </Texts>
   </Element>
-  <Element ID="142" Key="DES_TAG_TARGET_SELECTED_ALLIES_DES" Flag="0">
+  <Element ID="142" Key="DES_TAG_TARGET_SELECTED_ALLIES_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 16:18:17</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -1972,10 +2432,15 @@
     </Groups>
     <Texts>
       <Input>Targets 2 or more selected allies standing anywhere on the battlefield.</Input>
-      <Output>Celuje w dwóch lub więcej wybranych sojuszników stojących gdziekolwiek na polu bitwy.</Output>
+      <Output>Celuje w 2 lub więcej wybranych sojuszników stojących gdziekolwiek na polu bitwy.</Output>
     </Texts>
   </Element>
-  <Element ID="143" Key="DES_TAG_TARGET_ALL_ALLIES" Flag="0">
+  <Element ID="143" Key="DES_TAG_TARGET_ALL_ALLIES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 16:18:21</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -1985,10 +2450,15 @@
     </Groups>
     <Texts>
       <Input>Target - All Allies</Input>
-      <Output>Cel - wszyscy sojusznicy</Output>
+      <Output>Cel - Wszyscy sojusznicy</Output>
     </Texts>
   </Element>
-  <Element ID="144" Key="DES_TAG_TARGET_ALL_ALLIES_DES" Flag="0">
+  <Element ID="144" Key="DES_TAG_TARGET_ALL_ALLIES_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 16:18:40</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -2001,7 +2471,12 @@
       <Output>Celuje wszystkich sojuszników stojących gdziekolwiek na polu bitwy.</Output>
     </Texts>
   </Element>
-  <Element ID="145" Key="DES_TAG_TARGET_SELECTED_AND_HORIZONTAL_ALLIES" Flag="0">
+  <Element ID="145" Key="DES_TAG_TARGET_SELECTED_AND_HORIZONTAL_ALLIES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 16:18:57</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -2013,7 +2488,7 @@
     </Groups>
     <Texts>
       <Input>Target - Selected Ally with Splash</Input>
-      <Output>Cel - wybrany sojusznik z zachlapaniem</Output>
+      <Output>Cel - Wybrany sojusznik z rozpryskiem</Output>
     </Texts>
   </Element>
   <Element ID="146" Key="DES_TAG_TARGET_SELECTED_AND_HORIZONTAL_ALLIES_DES" Flag="0">
@@ -2061,7 +2536,12 @@
       <Output>Celuje w jednego lub więcej wybranych wrogów stojących w dowolnym miejscu na polu bitwy i wpływa na wrogów stojących bezpośrednio po lewej i na prawo od nich.</Output>
     </Texts>
   </Element>
-  <Element ID="149" Key="DES_TAG_TARGET_ATTACKER" Flag="0">
+  <Element ID="149" Key="DES_TAG_TARGET_ATTACKER" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 16:19:24</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -2070,7 +2550,7 @@
     </Groups>
     <Texts>
       <Input>Target - Attacker</Input>
-      <Output>Cel - atakujący</Output>
+      <Output>Cel - Atakujący</Output>
     </Texts>
   </Element>
   <Element ID="150" Key="DES_TAG_TARGET_ATTACKER_DES" Flag="0">
@@ -2085,7 +2565,12 @@
       <Output>Celuje w atakującego.</Output>
     </Texts>
   </Element>
-  <Element ID="151" Key="DES_TAG_TARGET_RANDOM_ATTACKERS" Flag="0">
+  <Element ID="151" Key="DES_TAG_TARGET_RANDOM_ATTACKERS" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 16:19:33</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -2095,7 +2580,7 @@
     </Groups>
     <Texts>
       <Input>Target - Random Attacker</Input>
-      <Output>Cel - losowy atakujący</Output>
+      <Output>Cel - Losowy atakujący</Output>
     </Texts>
   </Element>
   <Element ID="152" Key="DES_TAG_TARGET_RANDOM_ATTACKERS_DES" Flag="0">
@@ -2111,7 +2596,12 @@
       <Output>Celuje w przypadkowego napastnika.</Output>
     </Texts>
   </Element>
-  <Element ID="153" Key="DES_TAG_TARGET_BATTLEFIELD_WITHOUT_CASTER" Flag="0">
+  <Element ID="153" Key="DES_TAG_TARGET_BATTLEFIELD_WITHOUT_CASTER" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 16:19:41</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -2125,7 +2615,12 @@
       <Output>Cel - Pole bitwy z wyjątkiem rzucającego.</Output>
     </Texts>
   </Element>
-  <Element ID="154" Key="DES_TAG_TARGET_BATTLEFIELD_WITHOUT_CASTER_DES" Flag="0">
+  <Element ID="154" Key="DES_TAG_TARGET_BATTLEFIELD_WITHOUT_CASTER_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 16:19:48</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -2139,7 +2634,12 @@
       <Output>Celuje we wszystkich wrogów i sojuszników z wyjątkiem rzucającego.</Output>
     </Texts>
   </Element>
-  <Element ID="155" Key="DES_TAG_TARGET_SELF_GROUP" Flag="0">
+  <Element ID="155" Key="DES_TAG_TARGET_SELF_GROUP" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 16:19:58</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -2149,10 +2649,15 @@
     </Groups>
     <Texts>
       <Input>Target - Group</Input>
-      <Output>Grupa docelowa</Output>
+      <Output>Cel - Grupa</Output>
     </Texts>
   </Element>
-  <Element ID="156" Key="DES_TAG_TARGET_SELF_GROUP_DES" Flag="0">
+  <Element ID="156" Key="DES_TAG_TARGET_SELF_GROUP_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 16:20:10</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -2165,7 +2670,12 @@
       <Output>Celuje w grupę posiadającą ten przedmiot lub postać znającą tę umiejętność.</Output>
     </Texts>
   </Element>
-  <Element ID="157" Key="DES_TAG_TARGET_DIRECTLY_OPPOSITE" Flag="0">
+  <Element ID="157" Key="DES_TAG_TARGET_DIRECTLY_OPPOSITE" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 16:20:15</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -2178,7 +2688,12 @@
       <Output>Cel - Bezpośrednio naprzeciwko</Output>
     </Texts>
   </Element>
-  <Element ID="158" Key="DES_TAG_TARGET_DIRECTLY_OPPOSITE_DES" Flag="0">
+  <Element ID="158" Key="DES_TAG_TARGET_DIRECTLY_OPPOSITE_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 16:20:52</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -2188,10 +2703,15 @@
     </Groups>
     <Texts>
       <Input>Targets only the enemy card located directly opposite in melee or ranged row.</Input>
-      <Output>Celuje tylko wrogą kartę znajdującą się naprzeciwko w rzędzie walczącym lub dystansowym.</Output>
+      <Output>Celuje tylko wrogą znajdującego się naprzeciwko w rzędzie zwarcia lub dystansowym.</Output>
     </Texts>
   </Element>
-  <Element ID="159" Key="DES_TAG_DAMAGE_NORMAL" Flag="0">
+  <Element ID="159" Key="DES_TAG_DAMAGE_NORMAL" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 16:33:00</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -2203,7 +2723,12 @@
       <Output>Normalne obrażenia</Output>
     </Texts>
   </Element>
-  <Element ID="160" Key="DES_TAG_DAMAGE_NORMAL_DES" Flag="0">
+  <Element ID="160" Key="DES_TAG_DAMAGE_NORMAL_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 16:34:12</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -2212,10 +2737,15 @@
     </Groups>
     <Texts>
       <Input>Regular damage. The number typically indicates damage multiplier, or added damage with '+' sign.</Input>
-      <Output>Regularne obrażenia. Liczba zazwyczaj wskazuje na mnożnik obrażeń lub dodatkowe obrażenia przy znaku „+”.</Output>
+      <Output>Zwykłe obrażenia. Liczba zazwyczaj wskazuje mnożnik obrażeń lub dodatkowe obrażenia przy znaku „+”.</Output>
     </Texts>
   </Element>
-  <Element ID="161" Key="DES_TAG_DAMAGE_HEAL" Flag="0">
+  <Element ID="161" Key="DES_TAG_DAMAGE_HEAL" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 16:34:35</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -2224,10 +2754,15 @@
     </Groups>
     <Texts>
       <Input>Heal</Input>
-      <Output>Uzdrawiaj</Output>
+      <Output>Leczenie</Output>
     </Texts>
   </Element>
-  <Element ID="162" Key="DES_TAG_DAMAGE_HEAL_DES" Flag="0">
+  <Element ID="162" Key="DES_TAG_DAMAGE_HEAL_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 16:37:07</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -2239,7 +2774,12 @@
       <Output>Zwiększa punkty wytrzymałości.</Output>
     </Texts>
   </Element>
-  <Element ID="163" Key="DES_TAG_DAMAGE_GUARDIAN_DEMON" Flag="0">
+  <Element ID="163" Key="DES_TAG_DAMAGE_GUARDIAN_DEMON" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 16:38:17</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -2249,10 +2789,15 @@
     </Groups>
     <Texts>
       <Input>Summon Guardian Demon</Input>
-      <Output>Summon Guardian Demon</Output>
+      <Output>Przywołanie strażniczego demona</Output>
     </Texts>
   </Element>
-  <Element ID="164" Key="DES_TAG_DAMAGE_GUARDIAN_DEMON_DES" Flag="0">
+  <Element ID="164" Key="DES_TAG_DAMAGE_GUARDIAN_DEMON_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 16:38:55</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -2262,10 +2807,15 @@
     </Groups>
     <Texts>
       <Input>Summons a small immobile house demon to your village to help guard it against any threats.</Input>
-      <Output>Przywołuje do wioski małego, nieruchomego demona domu, który pomaga mu go chronić przed wszelkimi zagrożeniami.</Output>
+      <Output>Przywołuje do wioski małego, nieruchomego domowego demona, który pomaga chronić ją przed wszelkimi zagrożeniami.</Output>
     </Texts>
   </Element>
-  <Element ID="165" Key="DES_TAG_DAMAGE_SUMMON" Flag="0">
+  <Element ID="165" Key="DES_TAG_DAMAGE_SUMMON" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 16:39:16</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -2274,10 +2824,15 @@
     </Groups>
     <Texts>
       <Input>Summon Creature</Input>
-      <Output>Przywołaj Stwora</Output>
+      <Output>Przywołaj stwora</Output>
     </Texts>
   </Element>
-  <Element ID="166" Key="DES_TAG_DAMAGE_SUMMON_DES" Flag="0">
+  <Element ID="166" Key="DES_TAG_DAMAGE_SUMMON_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 16:39:22</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -2289,7 +2844,12 @@
       <Output>Przywołuje postać na pole bitwy.</Output>
     </Texts>
   </Element>
-  <Element ID="167" Key="DES_TAG_DAMAGE_SUMMON_ONCE_DES" Flag="0">
+  <Element ID="167" Key="DES_TAG_DAMAGE_SUMMON_ONCE_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 16:39:33</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -2302,7 +2862,12 @@
       <Output>Przywołuje postać na pole bitwy. Tylko jedna kopia tej postaci jest dozwolona na polu bitwy w dowolnym momencie.</Output>
     </Texts>
   </Element>
-  <Element ID="168" Key="DES_TAG_DAMAGE_SUMMON_CB_DES" Flag="0">
+  <Element ID="168" Key="DES_TAG_DAMAGE_SUMMON_CB_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 16:39:44</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -2315,7 +2880,12 @@
       <Output>Przywołuje postać na pole bitwy. Rzucający musi być obecny na polu bitwy.</Output>
     </Texts>
   </Element>
-  <Element ID="169" Key="DES_TAG_DAMAGE_BLOODY_SUMMON_ONCE" Flag="0">
+  <Element ID="169" Key="DES_TAG_DAMAGE_BLOODY_SUMMON_ONCE" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 16:40:11</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -2326,10 +2896,15 @@
     </Groups>
     <Texts>
       <Input>Bloody Summon</Input>
-      <Output>Bloody Summon</Output>
+      <Output>Krwawe przywołanie</Output>
     </Texts>
   </Element>
-  <Element ID="170" Key="DES_TAG_DAMAGE_BLOODY_SUMMON_ONCE_DES" Flag="0">
+  <Element ID="170" Key="DES_TAG_DAMAGE_BLOODY_SUMMON_ONCE_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 16:46:12</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -2343,7 +2918,12 @@
       <Output>Przywołuje postać na pole bitwy kosztem 50% aktualnego zdrowia rzucającego. Tylko jedna kopia tej postaci jest dozwolona na polu bitwy w dowolnym momencie.</Output>
     </Texts>
   </Element>
-  <Element ID="171" Key="DES_TAG_DAMAGE_LOW_BLOODY_SUMMON_ONCE" Flag="0">
+  <Element ID="171" Key="DES_TAG_DAMAGE_LOW_BLOODY_SUMMON_ONCE" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 16:46:25</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -2355,10 +2935,15 @@
     </Groups>
     <Texts>
       <Input>Low Bloody Summon</Input>
-      <Output>Low Bloody Summon</Output>
+      <Output>Mniejsze krwawe przywołanie</Output>
     </Texts>
   </Element>
-  <Element ID="172" Key="DES_TAG_DAMAGE_LOW_BLOODY_SUMMON_ONCE_DES" Flag="0">
+  <Element ID="172" Key="DES_TAG_DAMAGE_LOW_BLOODY_SUMMON_ONCE_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 16:46:29</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -2373,7 +2958,12 @@
       <Output>Przywołuje postać na pole bitwy kosztem 20% aktualnego zdrowia rzucającego. Tylko jedna kopia tej postaci jest dozwolona na polu bitwy w dowolnym momencie.</Output>
     </Texts>
   </Element>
-  <Element ID="173" Key="DES_TAG_DAMAGE_SHIELD" Flag="0">
+  <Element ID="173" Key="DES_TAG_DAMAGE_SHIELD" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 16:47:04</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -2382,10 +2972,15 @@
     </Groups>
     <Texts>
       <Input>Shield</Input>
-      <Output>Tarcza</Output>
+      <Output>Osłona</Output>
     </Texts>
   </Element>
-  <Element ID="174" Key="DES_TAG_DAMAGE_SHIELD_DES" Flag="0">
+  <Element ID="174" Key="DES_TAG_DAMAGE_SHIELD_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 16:47:41</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -2394,10 +2989,15 @@
     </Groups>
     <Texts>
       <Input>Shielding.</Input>
-      <Output>Osłona.</Output>
+      <Output>Osłanianie</Output>
     </Texts>
   </Element>
-  <Element ID="175" Key="DES_TAG_DAMAGE_SHIELD_P" Flag="0">
+  <Element ID="175" Key="DES_TAG_DAMAGE_SHIELD_P" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 16:47:17</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -2407,10 +3007,15 @@
     </Groups>
     <Texts>
       <Input>Physical Shield</Input>
-      <Output>Fizyczna tarcza</Output>
+      <Output>Fizyczna osłona</Output>
     </Texts>
   </Element>
-  <Element ID="176" Key="DES_TAG_DAMAGE_SHIELD_P_DES" Flag="0">
+  <Element ID="176" Key="DES_TAG_DAMAGE_SHIELD_P_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 16:47:49</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -2420,10 +3025,15 @@
     </Groups>
     <Texts>
       <Input>Shielding in Physical challenges.</Input>
-      <Output>Ekranowanie w wyzwaniach fizycznych.</Output>
+      <Output>Osłanianie w wyzwaniach fizycznych.</Output>
     </Texts>
   </Element>
-  <Element ID="177" Key="DES_TAG_DAMAGE_SHIELD_M" Flag="0">
+  <Element ID="177" Key="DES_TAG_DAMAGE_SHIELD_M" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 16:48:07</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -2433,10 +3043,15 @@
     </Groups>
     <Texts>
       <Input>Mental Shield</Input>
-      <Output>Mental Shield</Output>
+      <Output>Mentalna osłona</Output>
     </Texts>
   </Element>
-  <Element ID="178" Key="DES_TAG_DAMAGE_SHIELD_M_DES" Flag="0">
+  <Element ID="178" Key="DES_TAG_DAMAGE_SHIELD_M_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 16:48:24</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -2446,10 +3061,15 @@
     </Groups>
     <Texts>
       <Input>Shielding in Mental challenges.</Input>
-      <Output>Ochrona przed wyzwaniami mentalnymi.</Output>
+      <Output>Osłanianie w wyzwaniach mentalnych.</Output>
     </Texts>
   </Element>
-  <Element ID="179" Key="DES_TAG_DAMAGE_SHIELD_S" Flag="0">
+  <Element ID="179" Key="DES_TAG_DAMAGE_SHIELD_S" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 16:48:36</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -2459,10 +3079,15 @@
     </Groups>
     <Texts>
       <Input>Spiritual Shield</Input>
-      <Output>Duchowa tarcza</Output>
+      <Output>Duchowa osłona</Output>
     </Texts>
   </Element>
-  <Element ID="180" Key="DES_TAG_DAMAGE_SHIELD_S_DES" Flag="0">
+  <Element ID="180" Key="DES_TAG_DAMAGE_SHIELD_S_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 16:48:53</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -2472,7 +3097,7 @@
     </Groups>
     <Texts>
       <Input>Shielding in Spiritual challenges.</Input>
-      <Output>Ochrona przed wyzwaniami duchowymi.</Output>
+      <Output>Osłanianie w wyzwaniach duchowych.</Output>
     </Texts>
   </Element>
   <Element ID="181" Key="DES_TAG_DAMAGE_SHIELD_P_M" Flag="0">
@@ -6504,7 +7129,12 @@
       <Output>Opis esencji inwencji</Output>
     </Texts>
   </Element>
-  <Element ID="469" Key="DES_TAG_DOMAIN_NEUTRAL" Flag="0">
+  <Element ID="469" Key="DES_TAG_DOMAIN_NEUTRAL" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 12:57:10</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -6513,7 +7143,7 @@
     </Groups>
     <Texts>
       <Input>Domain - Neutral</Input>
-      <Output>Domena - neutralna</Output>
+      <Output>Domena - Neutralność</Output>
     </Texts>
   </Element>
   <Element ID="470" Key="DES_TAG_DOMAIN_NEUTRAL_DES" Flag="0">
@@ -6528,7 +7158,12 @@
       <Output>Boska domena wszechstronności.</Output>
     </Texts>
   </Element>
-  <Element ID="471" Key="DES_TAG_DOMAIN_TURMOIL" Flag="0">
+  <Element ID="471" Key="DES_TAG_DOMAIN_TURMOIL" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 12:57:13</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -6537,7 +7172,7 @@
     </Groups>
     <Texts>
       <Input>Domain - Turmoil </Input>
-      <Output>Domena - zamieszanie </Output>
+      <Output>Domena - Zamieszanie </Output>
     </Texts>
   </Element>
   <Element ID="472" Key="DES_TAG_DOMAIN_TURMOIL_DES" Flag="0">
@@ -6552,7 +7187,12 @@
       <Output>Zamieszanie - boska domena zmian i chaosu, zrodzona z samej ciemności, często patronuje wojnie, ale także postępowi.</Output>
     </Texts>
   </Element>
-  <Element ID="473" Key="DES_TAG_DOMAIN_HARMONY" Flag="0">
+  <Element ID="473" Key="DES_TAG_DOMAIN_HARMONY" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 12:58:36</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -6576,7 +7216,12 @@
       <Output>Harmonia - boska domena pokoju i porządku często zbliżona do światła, patron dyplomacji i tradycji, często sprzeczna z chaosem.</Output>
     </Texts>
   </Element>
-  <Element ID="475" Key="DES_TAG_DOMAIN_LIGHT" Flag="0">
+  <Element ID="475" Key="DES_TAG_DOMAIN_LIGHT" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 12:58:38</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -6600,7 +7245,12 @@
       <Output>Światło - boska domena zrodzona z wiecznego światła, patrona sprawiedliwości i bezpośredniości, nieporuszony słup prawdy, ale także czasami stagnacja.</Output>
     </Texts>
   </Element>
-  <Element ID="477" Key="DES_TAG_DOMAIN_MAGIC" Flag="0">
+  <Element ID="477" Key="DES_TAG_DOMAIN_MAGIC" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 12:58:43</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -6609,7 +7259,7 @@
     </Groups>
     <Texts>
       <Input>Domain - Magic</Input>
-      <Output>Domena - magia</Output>
+      <Output>Domena - Magia</Output>
     </Texts>
   </Element>
   <Element ID="478" Key="DES_TAG_DOMAIN_MAGIC_DES" Flag="0">
@@ -6624,7 +7274,12 @@
       <Output>Magia - boska domena sił mistycznych, które wiążą wszystkie rzeczy. Patron czarów i mądrości często prowadzi do ciemności. </Output>
     </Texts>
   </Element>
-  <Element ID="479" Key="DES_TAG_DOMAIN_NATURE" Flag="0">
+  <Element ID="479" Key="DES_TAG_DOMAIN_NATURE" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 12:58:47</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -6633,7 +7288,7 @@
     </Groups>
     <Texts>
       <Input>Domain - Nature</Input>
-      <Output>Domena - natura</Output>
+      <Output>Domena - Natura</Output>
     </Texts>
   </Element>
   <Element ID="480" Key="DES_TAG_DOMAIN_NATURE_DES" Flag="0">
@@ -6648,7 +7303,12 @@
       <Output>Natura - boska domena sił naturalnych, życia, śmierci i odrodzenia. Patron mieszkańców lasu i tych, którzy szanują cykl życia.</Output>
     </Texts>
   </Element>
-  <Element ID="481" Key="DES_TAG_DOMAIN_INTELLECT" Flag="0">
+  <Element ID="481" Key="DES_TAG_DOMAIN_INTELLECT" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 12:59:20</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -7929,7 +8589,12 @@
       <Output>Noc</Output>
     </Texts>
   </Element>
-  <Element ID="585" Key="DES_TAG_LOYALTY_SLAVYAN" Flag="0">
+  <Element ID="585" Key="DES_TAG_LOYALTY_SLAVYAN" Flag="1">
+    <Confirmation>
+      <Time>06-25-2019 08:29:01</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -7938,10 +8603,15 @@
     </Groups>
     <Texts>
       <Input>Slavyan</Input>
-      <Output>Slavyan</Output>
+      <Output>Słowianie</Output>
     </Texts>
   </Element>
-  <Element ID="586" Key="DES_TAG_LOYALTY_SCAVENGERS" Flag="0">
+  <Element ID="586" Key="DES_TAG_LOYALTY_SCAVENGERS" Flag="1">
+    <Confirmation>
+      <Time>06-25-2019 08:29:54</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -7950,7 +8620,7 @@
     </Groups>
     <Texts>
       <Input>Scavengers</Input>
-      <Output>Zbieracze</Output>
+      <Output>Śmieciarz</Output>
     </Texts>
   </Element>
   <Element ID="587" Key="DES_TAG_LOYALTY_WOODLAND_KIN" Flag="0">
@@ -8042,7 +8712,12 @@
       <Output>Lightbringers</Output>
     </Texts>
   </Element>
-  <Element ID="594" Key="DES_TAG_LOYALTY_FOREST_DEMONS" Flag="0">
+  <Element ID="594" Key="DES_TAG_LOYALTY_FOREST_DEMONS" Flag="1">
+    <Confirmation>
+      <Time>06-25-2019 08:31:50</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -8055,7 +8730,12 @@
       <Output>Leśne demony</Output>
     </Texts>
   </Element>
-  <Element ID="595" Key="DES_TAG_LOYALTY_NIGHT_DEMONS" Flag="0">
+  <Element ID="595" Key="DES_TAG_LOYALTY_NIGHT_DEMONS" Flag="1">
+    <Confirmation>
+      <Time>06-25-2019 08:31:52</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -8068,7 +8748,12 @@
       <Output>Nocne demony</Output>
     </Texts>
   </Element>
-  <Element ID="596" Key="DES_TAG_LOYALTY_WATER_DEMONS" Flag="0">
+  <Element ID="596" Key="DES_TAG_LOYALTY_WATER_DEMONS" Flag="1">
+    <Confirmation>
+      <Time>06-25-2019 08:31:54</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -8081,7 +8766,12 @@
       <Output>Wodne demony</Output>
     </Texts>
   </Element>
-  <Element ID="597" Key="DES_TAG_LOYALTY_ICE_DEMONS" Flag="0">
+  <Element ID="597" Key="DES_TAG_LOYALTY_ICE_DEMONS" Flag="1">
+    <Confirmation>
+      <Time>06-25-2019 08:31:58</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -8094,7 +8784,12 @@
       <Output>Lodowe demony</Output>
     </Texts>
   </Element>
-  <Element ID="598" Key="DES_TAG_LOYALTY_STINGERS" Flag="0">
+  <Element ID="598" Key="DES_TAG_LOYALTY_STINGERS" Flag="1">
+    <Confirmation>
+      <Time>06-25-2019 08:32:07</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -8103,10 +8798,15 @@
     </Groups>
     <Texts>
       <Input>Stingers</Input>
-      <Output>Stingers</Output>
+      <Output>Żądła</Output>
     </Texts>
   </Element>
-  <Element ID="599" Key="DES_TAG_LOYALTY_NEUTRAL" Flag="0">
+  <Element ID="599" Key="DES_TAG_LOYALTY_NEUTRAL" Flag="1">
+    <Confirmation>
+      <Time>06-25-2019 08:32:10</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -8480,7 +9180,12 @@
       <Output>Ludzki uzdrowiciel</Output>
     </Texts>
   </Element>
-  <Element ID="621" Key="DES_SUBRACE_HUM_HEALER_DES" Flag="0">
+  <Element ID="621" Key="DES_SUBRACE_HUM_HEALER_DES" Flag="1">
+    <Confirmation>
+      <Time>06-25-2019 08:56:08</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBRACE</Group>
@@ -8489,7 +9194,7 @@
     </Groups>
     <Texts>
       <Input>A wise one learned in the ways of herbs and basic medicine. Healers have always been respected, not only for their knowledge, but their willingness to help those in need. </Input>
-      <Output>Mądry uczył się na temat ziół i podstawowej medycyny. Uzdrowiciele zawsze byli szanowani nie tylko ze względu na swoją wiedzę, ale także gotowość do pomocy potrzebującym. </Output>
+      <Output>Znawca w temacie ziół i podstawowej medycyny. Uzdrowiciele zawsze byli szanowani nie tylko ze względu na swoją wiedzę, ale także gotowość do pomocy potrzebującym. </Output>
     </Texts>
   </Element>
   <Element ID="622" Key="DES_SUBRACE_HUM_WITCH" Flag="1">
@@ -8636,7 +9341,7 @@
     </Groups>
     <Texts>
       <Input>Human Scavenger</Input>
-      <Output>Ludzki padlinożerca</Output>
+      <Output>Ludzki śmieciarz</Output>
     </Texts>
   </Element>
   <Element ID="632" Key="DES_SUBRACE_HUM_SCAVENGER_DES" Flag="0">
@@ -12782,7 +13487,12 @@
       <Output>Iron Storm jest młodym wojownikiem z kamienia i żelaza, który raz po raz udowodnił swoją niezachwianą lojalność wobec krasnoludzkich krewnych. Jeśli zgodzi się przyłączyć do ciebie, to pokaż swoim młodym bogom, z czego składa się prawdziwy krasnolud.</Output>
     </Texts>
   </Element>
-  <Element ID="965" Key="DES_RES_WOOD" Flag="0">
+  <Element ID="965" Key="DES_RES_WOOD" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 11:47:34</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -12793,7 +13503,12 @@
       <Output>Drewno</Output>
     </Texts>
   </Element>
-  <Element ID="966" Key="DES_RES_WOOD_DES" Flag="0">
+  <Element ID="966" Key="DES_RES_WOOD_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 11:48:11</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -12801,10 +13516,15 @@
     </Groups>
     <Texts>
       <Input>Common timber suitable mostly for firewood.</Input>
-      <Output>Wspólne drewno odpowiednie głównie na drewno opałowe.</Output>
+      <Output>Zwykłe drewno, odpowiednie głównie na opał.</Output>
     </Texts>
   </Element>
-  <Element ID="967" Key="DES_RES_DRYAD_WOOD" Flag="0">
+  <Element ID="967" Key="DES_RES_DRYAD_WOOD" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 11:48:59</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -12813,10 +13533,15 @@
     </Groups>
     <Texts>
       <Input>Dryad Wood</Input>
-      <Output>Dryad Wood</Output>
+      <Output>Drewno driad</Output>
     </Texts>
   </Element>
-  <Element ID="968" Key="DES_RES_DRYAD_WOOD_DES" Flag="0">
+  <Element ID="968" Key="DES_RES_DRYAD_WOOD_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 11:49:39</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -12825,10 +13550,15 @@
     </Groups>
     <Texts>
       <Input>Fabled to be the gift of the dryads. Black wood that releases golden resin when cut. </Input>
-      <Output>Osławiony jako dar driad. Czarne drewno, które uwalnia złotą żywicę podczas cięcia. </Output>
+      <Output>Legendarny dar driad. Czarne drewno, które podczas cięcia uwalnia złotą żywicę. </Output>
     </Texts>
   </Element>
-  <Element ID="969" Key="DES_RES_DARK_WOOD" Flag="0">
+  <Element ID="969" Key="DES_RES_DARK_WOOD" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 11:49:41</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -12840,7 +13570,12 @@
       <Output>Ciemne drewno</Output>
     </Texts>
   </Element>
-  <Element ID="970" Key="DES_RES_DARK_WOOD_DES" Flag="0">
+  <Element ID="970" Key="DES_RES_DARK_WOOD_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 11:51:19</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -12849,10 +13584,15 @@
     </Groups>
     <Texts>
       <Input>Wood from a forest tainted by darkness long ago. If used carefully it can be crafted in many ways.\n\nWild resource ({ICON:WildResourceIcon}).</Input>
-      <Output>Drewno z lasu skażonego ciemnością dawno temu. Jeśli zostanie ostrożnie użyty, można go wykonać na wiele sposobów. \n\nDziki zasób ({ICON:WildResourceIcon}).</Output>
+      <Output>Drewno z lasu dawno temu skażonego ciemnością. Ostrożnie użyte możne mieć wiele zastosowań.\n\nDziki zasób ({ICON:WildResourceIcon}).</Output>
     </Texts>
   </Element>
-  <Element ID="971" Key="DES_RES_ELVEN_WOOD" Flag="0">
+  <Element ID="971" Key="DES_RES_ELVEN_WOOD" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 11:51:39</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -12861,10 +13601,15 @@
     </Groups>
     <Texts>
       <Input>Elven Wood</Input>
-      <Output>Elven Wood</Output>
+      <Output>Elfie drewno</Output>
     </Texts>
   </Element>
-  <Element ID="972" Key="DES_RES_ELVEN_WOOD_DES" Flag="0">
+  <Element ID="972" Key="DES_RES_ELVEN_WOOD_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 11:56:56</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -12873,10 +13618,15 @@
     </Groups>
     <Texts>
       <Input>Nimble yet resilient, elven wood is a valued resource throughout the lands.\n\nImproved resource ({ICON:ImprovedResourceIcon}).</Input>
-      <Output>Zwinny, ale sprężysty, elfie drewno jest cennym surowcem w całym kraju. \n\nUlepszony zasób ({ICON:ImprovedResourceIcon}).</Output>
+      <Output>Elastyczne, ale odporne. Elfie drewno jest cennym surowcem w całym kraju.\n\nUlepszony zasób ({ICON:ImprovedResourceIcon}).</Output>
     </Texts>
   </Element>
-  <Element ID="973" Key="DES_RES_ANCIENT_WOOD" Flag="0">
+  <Element ID="973" Key="DES_RES_ANCIENT_WOOD" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 11:56:58</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -12888,7 +13638,12 @@
       <Output>Starożytne drewno</Output>
     </Texts>
   </Element>
-  <Element ID="974" Key="DES_RES_ANCIENT_WOOD_DES" Flag="0">
+  <Element ID="974" Key="DES_RES_ANCIENT_WOOD_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 11:58:38</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -12897,10 +13652,15 @@
     </Groups>
     <Texts>
       <Input>Found in the depths of ancient, elven forests and said to keep the wisdom and memory of the ages past, it is both rare and beautiful.</Input>
-      <Output>Znaleziony w głębi starożytnych, elfich lasów i mówiący o zachowaniu mądrości i pamięci o minionych wiekach, jest zarówno rzadki, jak i piękny.</Output>
+      <Output>Znaleziony w głębi starożytnych, elfich lasów. Mówi o zachowaniu mądrości i pamięci o minionych wiekach. Jest zarówno rzadki, jak i piękny.</Output>
     </Texts>
   </Element>
-  <Element ID="975" Key="DES_RES_AMBER" Flag="0">
+  <Element ID="975" Key="DES_RES_AMBER" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 11:58:40</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -12911,7 +13671,12 @@
       <Output>Bursztyn</Output>
     </Texts>
   </Element>
-  <Element ID="976" Key="DES_RES_AMBER_DES" Flag="0">
+  <Element ID="976" Key="DES_RES_AMBER_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 11:58:44</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -12922,7 +13687,12 @@
       <Output>Skamieniała żywica drzewna, powszechnie stosowana w rzemiośle.</Output>
     </Texts>
   </Element>
-  <Element ID="977" Key="DES_RES_MALACHITE" Flag="0">
+  <Element ID="977" Key="DES_RES_MALACHITE" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 11:58:47</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -12933,7 +13703,12 @@
       <Output>Malachit</Output>
     </Texts>
   </Element>
-  <Element ID="978" Key="DES_RES_MALACHITE_DES" Flag="0">
+  <Element ID="978" Key="DES_RES_MALACHITE_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 12:06:31</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -12941,10 +13716,15 @@
     </Groups>
     <Texts>
       <Input>Beautiful green crystal stone, used as an ornament and for crafting.</Input>
-      <Output>Piękny zielony kryształowy kamień, używany jako ozdoba i do wytwarzania.</Output>
+      <Output>Piękny zielony kryształowy kamień, używany w zdobnictwie i rzemiośle.</Output>
     </Texts>
   </Element>
-  <Element ID="979" Key="DES_RES_TOPAZ" Flag="0">
+  <Element ID="979" Key="DES_RES_TOPAZ" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 12:01:24</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -12955,7 +13735,12 @@
       <Output>Topaz</Output>
     </Texts>
   </Element>
-  <Element ID="980" Key="DES_RES_TOPAZ_DES" Flag="0">
+  <Element ID="980" Key="DES_RES_TOPAZ_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 12:02:24</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -12963,10 +13748,15 @@
     </Groups>
     <Texts>
       <Input>Shiny crystal gemstone. Can come in many colours and is widely used in crafting.\n\nImproved resource ({ICON:ImprovedResourceIcon}).</Input>
-      <Output>Błyszczący kryształowy kamień. Może występować w wielu kolorach i jest szeroko stosowany w rzemiośle. \n\nUlepszony zasób ({ICON:ImprovedResourceIcon}).</Output>
+      <Output>Błyszczący kryształowy kamień. Może występować w wielu kolorach i jest szeroko stosowany w rzemiośle.\n\nUlepszony zasób ({ICON:ImprovedResourceIcon}).</Output>
     </Texts>
   </Element>
-  <Element ID="981" Key="DES_RES_RUBY" Flag="0">
+  <Element ID="981" Key="DES_RES_RUBY" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 12:02:31</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -12974,10 +13764,15 @@
     </Groups>
     <Texts>
       <Input>Ruby</Input>
-      <Output>Ruby</Output>
+      <Output>Rubin</Output>
     </Texts>
   </Element>
-  <Element ID="982" Key="DES_RES_RUBY_DES" Flag="0">
+  <Element ID="982" Key="DES_RES_RUBY_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 12:04:14</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -12985,10 +13780,15 @@
     </Groups>
     <Texts>
       <Input>Often referred to as the blood-stone, the ruby is a sought-after gemstone. Fable says the hearts of powerful striga turn to ruby upon death.\n\nWild resource ({ICON:WildResourceIcon}).</Input>
-      <Output>Rubin, często nazywany kamieniem, jest poszukiwanym kamieniem szlachetnym. Fable mówi, że serca potężnej strigi zamieniają się w ruby po śmierci. \n\nDziki zasób ({ICON:WildResourceIcon}).</Output>
+      <Output>Często nazywany krwawym kamieniem, jest poszukiwanym kamieniem szlachetnym. Legenda mówi, że serca potężnych strzyg po śmierci zamieniają się w rubiny.\n\nDziki zasób ({ICON:WildResourceIcon}).</Output>
     </Texts>
   </Element>
-  <Element ID="983" Key="DES_RES_DIAMOND" Flag="0">
+  <Element ID="983" Key="DES_RES_DIAMOND" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 12:04:29</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -12999,7 +13799,12 @@
       <Output>Diament</Output>
     </Texts>
   </Element>
-  <Element ID="984" Key="DES_RES_DIAMOND_DES" Flag="0">
+  <Element ID="984" Key="DES_RES_DIAMOND_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 12:05:06</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -13007,10 +13812,15 @@
     </Groups>
     <Texts>
       <Input>Diamond is not only a girl's best friend, everyone likes it. It's rare, tough and beautiful. </Input>
-      <Output>Diament to nie tylko najlepszy przyjaciel dziewczyny, wszystkim się to podoba. To rzadkie, trudne i piękne. </Output>
+      <Output>Diament to nie tylko najlepszy przyjaciel kobiety, wszystkim się podoba. Jest rzadki, twardy i piękny. </Output>
     </Texts>
   </Element>
-  <Element ID="985" Key="DES_RES_BONE" Flag="0">
+  <Element ID="985" Key="DES_RES_BONE" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 12:05:13</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -13021,7 +13831,12 @@
       <Output>Kość</Output>
     </Texts>
   </Element>
-  <Element ID="986" Key="DES_RES_BONE_DES" Flag="0">
+  <Element ID="986" Key="DES_RES_BONE_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 12:05:35</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -13029,10 +13844,15 @@
     </Groups>
     <Texts>
       <Input>Bones are a common resource used for crafting.</Input>
-      <Output>Kości są powszechnym zasobem używanym do tworzenia.</Output>
+      <Output>Kości są powszechnym surowcem używanym w rzemiośle.</Output>
     </Texts>
   </Element>
-  <Element ID="987" Key="DES_RES_BLOOD_BONE" Flag="0">
+  <Element ID="987" Key="DES_RES_BLOOD_BONE" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 12:07:27</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -13041,10 +13861,15 @@
     </Groups>
     <Texts>
       <Input>Blood Bone</Input>
-      <Output>Blood Bone</Output>
+      <Output>Krwawa kość</Output>
     </Texts>
   </Element>
-  <Element ID="988" Key="DES_RES_BLOOD_BONE_DES" Flag="0">
+  <Element ID="988" Key="DES_RES_BLOOD_BONE_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 12:08:18</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -13053,10 +13878,15 @@
     </Groups>
     <Texts>
       <Input>Bones of unfortunates carrying a heavy curse so that their bones bleed even after death.\n\nImproved resource ({ICON:ImprovedResourceIcon}).</Input>
-      <Output>Kości nieszczęśników niosących ciężkie przekleństwo, tak że ich kości krwawią nawet po śmierci. \n\nUlepszony zasób ({ICON:ImprovedResourceIcon}).</Output>
+      <Output>Kości nieszczęśników niosących ciężkie przekleństwo, tak że ich kości krwawią nawet po śmierci.\n\nUlepszony zasób ({ICON:ImprovedResourceIcon}).</Output>
     </Texts>
   </Element>
-  <Element ID="989" Key="DES_RES_SHADOW_BONE" Flag="0">
+  <Element ID="989" Key="DES_RES_SHADOW_BONE" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 12:08:43</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -13065,10 +13895,15 @@
     </Groups>
     <Texts>
       <Input>Shadow Bone</Input>
-      <Output>Cień Bone</Output>
+      <Output>Kość cienia</Output>
     </Texts>
   </Element>
-  <Element ID="990" Key="DES_RES_SHADOW_BONE_DES" Flag="0">
+  <Element ID="990" Key="DES_RES_SHADOW_BONE_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 12:10:13</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -13077,10 +13912,15 @@
     </Groups>
     <Texts>
       <Input>Bones of creatures so tainted by the dark a shadow seeped deep into their core.\n\nWild resource ({ICON:WildResourceIcon}).</Input>
-      <Output>Kości istot tak skażonych ciemnością, że cień przeniknął do ich rdzenia. \n\nDziki zasób ({ICON:WildResourceIcon}).</Output>
+      <Output>Kości istot tak skażonych ciemnością, że cień przeniknął do ich szpiku.\n\nDziki zasób ({ICON:WildResourceIcon}).</Output>
     </Texts>
   </Element>
-  <Element ID="991" Key="DES_RES_MONSTER_BONE" Flag="0">
+  <Element ID="991" Key="DES_RES_MONSTER_BONE" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 12:12:35</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -13089,10 +13929,15 @@
     </Groups>
     <Texts>
       <Input>Monster Bone</Input>
-      <Output>Monster Bone</Output>
+      <Output>Kość potwora</Output>
     </Texts>
   </Element>
-  <Element ID="992" Key="DES_RES_MONSTER_BONE_DES" Flag="0">
+  <Element ID="992" Key="DES_RES_MONSTER_BONE_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 12:11:49</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -13101,10 +13946,15 @@
     </Groups>
     <Texts>
       <Input>Durable and impressive, trophies from slain monsters are used both as ornament and crafting.</Input>
-      <Output>Trwałe i imponujące, trofea z zabitych potworów są używane zarówno jako ozdoba, jak i rzemiosło.</Output>
+      <Output>Wytrzymałe i efektowne trofea z zabitych potworów, są używane zarówno w zdobnictwie, jak i rzemiośle.</Output>
     </Texts>
   </Element>
-  <Element ID="993" Key="DES_RES_DRAGON_BONE" Flag="0">
+  <Element ID="993" Key="DES_RES_DRAGON_BONE" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 12:12:46</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -13113,10 +13963,15 @@
     </Groups>
     <Texts>
       <Input>Dragon Bone</Input>
-      <Output>Dragon Bone</Output>
+      <Output>Smocza kość</Output>
     </Texts>
   </Element>
-  <Element ID="994" Key="DES_RES_DRAGON_BONE_DES" Flag="0">
+  <Element ID="994" Key="DES_RES_DRAGON_BONE_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 12:13:33</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -13125,10 +13980,15 @@
     </Groups>
     <Texts>
       <Input>Rare crafting material and trophy. Sharp as mithril, tough as stone, mighty as the fallen drakes themselves.</Input>
-      <Output>Rzadki materiał rzemieślniczy i trofeum. Ostry jak mithril, twardy jak kamień, potężny jak upadli sami.</Output>
+      <Output>Rzadki materiał rzemieślniczy i trofeum. Ostry jak mithril, twardy jak kamień, potężny jak sam upadły smok.</Output>
     </Texts>
   </Element>
-  <Element ID="995" Key="DES_RES_LEATHER" Flag="0">
+  <Element ID="995" Key="DES_RES_LEATHER" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 12:13:34</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -13139,7 +13999,12 @@
       <Output>Skóra</Output>
     </Texts>
   </Element>
-  <Element ID="996" Key="DES_RES_LEATHER_DES" Flag="0">
+  <Element ID="996" Key="DES_RES_LEATHER_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 12:13:59</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -13147,10 +14012,15 @@
     </Groups>
     <Texts>
       <Input>Commonly used for crafting.</Input>
-      <Output>Powszechnie używany do tworzenia.</Output>
+      <Output>Powszechnie stosowana w rzemiośle.</Output>
     </Texts>
   </Element>
-  <Element ID="997" Key="DES_RES_SCALED_LEATHER" Flag="0">
+  <Element ID="997" Key="DES_RES_SCALED_LEATHER" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 12:14:35</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -13159,10 +14029,15 @@
     </Groups>
     <Texts>
       <Input>Scaled Leather</Input>
-      <Output>Skalowana skóra</Output>
+      <Output>Skóra z łuskami</Output>
     </Texts>
   </Element>
-  <Element ID="998" Key="DES_RES_SCALED_LEATHER_DES" Flag="0">
+  <Element ID="998" Key="DES_RES_SCALED_LEATHER_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 12:15:07</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -13171,10 +14046,15 @@
     </Groups>
     <Texts>
       <Input>More durable than normal leather and has that nice scaly shine to it.\n\nImproved resource ({ICON:ImprovedResourceIcon}).</Input>
-      <Output>Trwalszy niż zwykła skóra i ma ładny połysk łuski. \n\nUlepszony zasób ({ICON:ImprovedResourceIcon}).</Output>
+      <Output>Trwalszy niż zwykła skóra i ma ładny połysk.\n\nUlepszony zasób ({ICON:ImprovedResourceIcon}).</Output>
     </Texts>
   </Element>
-  <Element ID="999" Key="DES_RES_FUR_LEATHER" Flag="0">
+  <Element ID="999" Key="DES_RES_FUR_LEATHER" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 18:49:26</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -13183,10 +14063,15 @@
     </Groups>
     <Texts>
       <Input>Fur Leather</Input>
-      <Output>Skóra futerkowa</Output>
+      <Output>Skóra z futrem</Output>
     </Texts>
   </Element>
-  <Element ID="1000" Key="DES_RES_FUR_LEATHER_DES" Flag="0">
+  <Element ID="1000" Key="DES_RES_FUR_LEATHER_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 18:49:34</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -13198,7 +14083,12 @@
       <Output>Cięższe niż normalna skóra, a futro jest idealne na długie zimowe noce.</Output>
     </Texts>
   </Element>
-  <Element ID="1001" Key="DES_RES_ENCHANTED_LEATHER" Flag="0">
+  <Element ID="1001" Key="DES_RES_ENCHANTED_LEATHER" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 18:50:04</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -13210,7 +14100,12 @@
       <Output>Zaczarowana skóra</Output>
     </Texts>
   </Element>
-  <Element ID="1002" Key="DES_RES_ENCHANTED_LEATHER_DES" Flag="0">
+  <Element ID="1002" Key="DES_RES_ENCHANTED_LEATHER_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 18:50:23</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -13219,10 +14114,15 @@
     </Groups>
     <Texts>
       <Input>Rare leather, typically found on those who were born of magic.\n\nWild resource ({ICON:WildResourceIcon}).</Input>
-      <Output>Rzadka skóra, zwykle spotykana u tych, którzy narodzili się z magii. \n\nDziki zasób ({ICON:WildResourceIcon}).</Output>
+      <Output>Rzadka skóra, zwykle spotykana u tych, którzy narodzili się z magii.\n\nDziki zasób ({ICON:WildResourceIcon}).</Output>
     </Texts>
   </Element>
-  <Element ID="1003" Key="DES_RES_MYTHICAL_LEATHER" Flag="0">
+  <Element ID="1003" Key="DES_RES_MYTHICAL_LEATHER" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 18:50:26</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -13234,7 +14134,12 @@
       <Output>Mityczna skóra</Output>
     </Texts>
   </Element>
-  <Element ID="1004" Key="DES_RES_MYTHICAL_LEATHER_DES" Flag="0">
+  <Element ID="1004" Key="DES_RES_MYTHICAL_LEATHER_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 18:50:33</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -13246,7 +14151,12 @@
       <Output>Znaleziono tylko na najbardziej rzadkich, mitycznych bestiach, cenionych za trwałość i piękno.</Output>
     </Texts>
   </Element>
-  <Element ID="1005" Key="DES_RES_IRON" Flag="0">
+  <Element ID="1005" Key="DES_RES_IRON" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 18:50:35</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -13257,7 +14167,12 @@
       <Output>Żelazo</Output>
     </Texts>
   </Element>
-  <Element ID="1006" Key="DES_RES_IRON_DES" Flag="0">
+  <Element ID="1006" Key="DES_RES_IRON_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 18:50:47</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -13265,10 +14180,15 @@
     </Groups>
     <Texts>
       <Input>Commonly used for crafting.</Input>
-      <Output>Powszechnie używany do wytwarzania.</Output>
+      <Output>Powszechnie używany w rzemiośle.</Output>
     </Texts>
   </Element>
-  <Element ID="1007" Key="DES_RES_GOLD" Flag="0">
+  <Element ID="1007" Key="DES_RES_GOLD" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 18:50:48</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -13279,7 +14199,12 @@
       <Output>Złoto</Output>
     </Texts>
   </Element>
-  <Element ID="1008" Key="DES_RES_GOLD_DES" Flag="0">
+  <Element ID="1008" Key="DES_RES_GOLD_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 18:53:08</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -13287,10 +14212,15 @@
     </Groups>
     <Texts>
       <Input>Not as durable as some metals, but still sought after especially for ornaments, trinkets and jewellery. Bandits and dragons love it.\n\nWild resource ({ICON:WildResourceIcon}).</Input>
-      <Output>Nie tak trwały jak niektóre metale, ale wciąż poszukiwany szczególnie w przypadku ozdób, bibelotów i biżuterii. Bandyci i smoki to kochają. \n\nDziki zasób ({ICON:WildResourceIcon}).</Output>
+      <Output>Nie tak trwały jak niektóre metale, ale wciąż poszukiwany szczególnie w przypadku ozdób, bibelotów i biżuterii. Bandyci i smoki je kochają.\n\nDziki zasób ({ICON:WildResourceIcon}).</Output>
     </Texts>
   </Element>
-  <Element ID="1009" Key="DES_RES_STEEL" Flag="0">
+  <Element ID="1009" Key="DES_RES_STEEL" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 18:53:14</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -13301,7 +14231,12 @@
       <Output>Stal</Output>
     </Texts>
   </Element>
-  <Element ID="1010" Key="DES_RES_STEEL_DES" Flag="0">
+  <Element ID="1010" Key="DES_RES_STEEL_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 18:54:02</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -13309,10 +14244,15 @@
     </Groups>
     <Texts>
       <Input>As they say, sharp as steel. Good crafting material all around.</Input>
-      <Output>Jak mówią, ostre jak stal. Dobry materiał rzemieślniczy dookoła.</Output>
+      <Output>Jak mówią, ostre jak stal. Dobry materiał rzemieślniczy.</Output>
     </Texts>
   </Element>
-  <Element ID="1011" Key="DES_RES_SILVER" Flag="0">
+  <Element ID="1011" Key="DES_RES_SILVER" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 18:54:09</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -13320,10 +14260,15 @@
     </Groups>
     <Texts>
       <Input>Silver</Input>
-      <Output>Srebrny</Output>
+      <Output>Srebro</Output>
     </Texts>
   </Element>
-  <Element ID="1012" Key="DES_RES_SILVER_DES" Flag="0">
+  <Element ID="1012" Key="DES_RES_SILVER_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 18:54:21</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -13331,10 +14276,15 @@
     </Groups>
     <Texts>
       <Input>Apart from its quality as a metal, silver has been known to repel some night demons, especially werewolves.\n\nImproved resource ({ICON:ImprovedResourceIcon}).</Input>
-      <Output>Poza jakością metalu, srebro jest znane z odpierania niektórych nocnych demonów, zwłaszcza wilkołaków. \n\nUlepszony zasób ({ICON:ImprovedResourceIcon}).</Output>
+      <Output>Poza jakością metalu, srebro jest znane z odpierania niektórych nocnych demonów, zwłaszcza wilkołaków.\n\nUlepszony zasób ({ICON:ImprovedResourceIcon}).</Output>
     </Texts>
   </Element>
-  <Element ID="1013" Key="DES_RES_MITHRIL" Flag="0">
+  <Element ID="1013" Key="DES_RES_MITHRIL" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 18:54:25</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -13345,7 +14295,12 @@
       <Output>Mithril</Output>
     </Texts>
   </Element>
-  <Element ID="1014" Key="DES_RES_MITHRIL_DES" Flag="0">
+  <Element ID="1014" Key="DES_RES_MITHRIL_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 18:55:00</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -13353,10 +14308,15 @@
     </Groups>
     <Texts>
       <Input>Rare and sought-after metal sometimes known as dwarven blood, due to their strong affinity for the metal.</Input>
-      <Output>Rzadki i poszukiwany metal, czasami znany jako krasnoludzka krew, ze względu na ich silne powinowactwo do metalu.</Output>
+      <Output>Rzadki i poszukiwany metal, czasami znany jako krasnoludzka krew, ze względu na ich silny pociąg do tego metalu.</Output>
     </Texts>
   </Element>
-  <Element ID="1015" Key="DES_RES_SANDSTONE" Flag="0">
+  <Element ID="1015" Key="DES_RES_SANDSTONE" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 18:55:02</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -13367,7 +14327,12 @@
       <Output>Piaskowiec</Output>
     </Texts>
   </Element>
-  <Element ID="1016" Key="DES_RES_SANDSTONE_DES" Flag="0">
+  <Element ID="1016" Key="DES_RES_SANDSTONE_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 18:55:23</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -13375,10 +14340,15 @@
     </Groups>
     <Texts>
       <Input>Commonly used for crafting and building.</Input>
-      <Output>Powszechnie używany do tworzenia i budowania.</Output>
+      <Output>Powszechnie używany w rzemiośle i budownictwie.</Output>
     </Texts>
   </Element>
-  <Element ID="1017" Key="DES_RES_CLAY" Flag="0">
+  <Element ID="1017" Key="DES_RES_CLAY" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 18:55:25</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -13389,7 +14359,12 @@
       <Output>Glina</Output>
     </Texts>
   </Element>
-  <Element ID="1018" Key="DES_RES_CLAY_DES" Flag="0">
+  <Element ID="1018" Key="DES_RES_CLAY_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 18:55:40</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -13400,7 +14375,12 @@
       <Output>Nie jest najbardziej efektowny, ale bardzo uniwersalny i powszechnie używany w rzemiośle.</Output>
     </Texts>
   </Element>
-  <Element ID="1019" Key="DES_RES_QUARTZ" Flag="0">
+  <Element ID="1019" Key="DES_RES_QUARTZ" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 18:55:42</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -13411,7 +14391,12 @@
       <Output>Kwarc</Output>
     </Texts>
   </Element>
-  <Element ID="1020" Key="DES_RES_QUARTZ_DES" Flag="0">
+  <Element ID="1020" Key="DES_RES_QUARTZ_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 18:57:00</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -13419,10 +14404,15 @@
     </Groups>
     <Texts>
       <Input>Good quality stone, also valued for its sharp looks.\n\nImproved resource ({ICON:ImprovedResourceIcon}).</Input>
-      <Output>Kamień dobrej jakości, ceniony także za ostry wygląd. \n\nUlepszony zasób ({ICON:ImprovedResourceIcon}).</Output>
+      <Output>Kamień dobrej jakości, ceniony także wygląd.\n\nUlepszony zasób ({ICON:ImprovedResourceIcon}).</Output>
     </Texts>
   </Element>
-  <Element ID="1021" Key="DES_RES_GRANITE" Flag="0">
+  <Element ID="1021" Key="DES_RES_GRANITE" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 18:57:03</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -13433,7 +14423,12 @@
       <Output>Granit</Output>
     </Texts>
   </Element>
-  <Element ID="1022" Key="DES_RES_GRANITE_DES" Flag="0">
+  <Element ID="1022" Key="DES_RES_GRANITE_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 18:57:13</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -13441,10 +14436,15 @@
     </Groups>
     <Texts>
       <Input>Very tough and durable, often used for gravestones.\n\nWild resource ({ICON:WildResourceIcon}).</Input>
-      <Output>Bardzo wytrzymały i trwały, często używany do nagrobków. \n\nDziki zasób ({ICON:WildResourceIcon}).</Output>
+      <Output>Bardzo wytrzymały i trwały, często używany do nagrobków.\n\nDziki zasób ({ICON:WildResourceIcon}).</Output>
     </Texts>
   </Element>
-  <Element ID="1023" Key="DES_RES_OBSIDIAN" Flag="0">
+  <Element ID="1023" Key="DES_RES_OBSIDIAN" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 18:57:27</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -13452,10 +14452,15 @@
     </Groups>
     <Texts>
       <Input>Obsidian</Input>
-      <Output>Obsidian</Output>
+      <Output>Obsydian</Output>
     </Texts>
   </Element>
-  <Element ID="1024" Key="DES_RES_OBSIDIAN_DES" Flag="0">
+  <Element ID="1024" Key="DES_RES_OBSIDIAN_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 18:58:09</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -13463,10 +14468,15 @@
     </Groups>
     <Texts>
       <Input>Also referred to as the black stone, it is fabled to come from the blackened hearts of those corrupted by darkness.</Input>
-      <Output>Nazywany także czarnym kamieniem, jest legendarny, by pochodzić z poczerniałych serc tych, którzy są spaczeni przez ciemność.</Output>
+      <Output>Nazywany także czarnym kamieniem. Legenda mówi, że pochodzi z poczerniałych serc tych, którzy są spaczeni przez ciemność.</Output>
     </Texts>
   </Element>
-  <Element ID="1025" Key="DES_RES_PURE_STONE" Flag="0">
+  <Element ID="1025" Key="DES_RES_PURE_STONE" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 18:58:28</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -13478,7 +14488,12 @@
       <Output>Czysty kamień</Output>
     </Texts>
   </Element>
-  <Element ID="1026" Key="DES_RES_PURE_STONE_DES" Flag="0">
+  <Element ID="1026" Key="DES_RES_PURE_STONE_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 18:59:57</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -13487,10 +14502,15 @@
     </Groups>
     <Texts>
       <Input>Pure, unadulterated stone power.\n\nThis composite fits into Stone material category.</Input>
-      <Output>Czysta, nieskażona moc kamienia. \n\nTen kompozyt pasuje do kategorii materiału Stone.</Output>
+      <Output>Czysta, nieskażona moc kamienia. \n\nTen kompozyt pasuje do kategorii materiałów kamiennych.</Output>
     </Texts>
   </Element>
-  <Element ID="1027" Key="DES_RES_ARMOURED_STONE" Flag="0">
+  <Element ID="1027" Key="DES_RES_ARMOURED_STONE" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 19:00:33</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -13499,10 +14519,15 @@
     </Groups>
     <Texts>
       <Input>Armoured Stone</Input>
-      <Output>Kamień opancerzony</Output>
+      <Output>Pancerny kamień</Output>
     </Texts>
   </Element>
-  <Element ID="1028" Key="DES_RES_ARMOURED_STONE_DES" Flag="0">
+  <Element ID="1028" Key="DES_RES_ARMOURED_STONE_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 19:05:36</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -13511,10 +14536,15 @@
     </Groups>
     <Texts>
       <Input>Stone, with some armour to boot. Yup.\n\nThis composite fits into Stone and Metal material categories.\n\nWild resource ({ICON:WildResourceIcon}).</Input>
-      <Output>Kamień, z jakimś pancerzem do startu. Tak.\n\nTen kompozyt pasuje do kategorii materiałów Stone i Metal. \n\nDziki zasób ({ICON:WildResourceIcon}).</Output>
+      <Output>Kamień, z jakimś rodzajem pancernej skorupy. Tak.\n\nTen kompozyt pasuje do kategorii materiałów kamiennych i metalowych.\n\nDziki zasób ({ICON:WildResourceIcon}).</Output>
     </Texts>
   </Element>
-  <Element ID="1029" Key="DES_RES_METAL_COMPOSITE" Flag="0">
+  <Element ID="1029" Key="DES_RES_METAL_COMPOSITE" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 19:05:52</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -13526,7 +14556,12 @@
       <Output>Kompozyt metalowy</Output>
     </Texts>
   </Element>
-  <Element ID="1030" Key="DES_RES_METAL_COMPOSITE_DES" Flag="0">
+  <Element ID="1030" Key="DES_RES_METAL_COMPOSITE_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 19:06:30</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -13535,10 +14570,15 @@
     </Groups>
     <Texts>
       <Input>Sharper and stronger together, composite metal.\n\nThis composite fits into Metal material category.</Input>
-      <Output>Ostrzejsze i silniejsze razem, kompozytowy metal. \n\nTen kompozyt pasuje do kategorii materiałów metalowych.</Output>
+      <Output>Ostrzejsze i mocniejszy jednocześnie, kompozytowy metal. \n\nTen kompozyt pasuje do kategorii materiałów metalowych.</Output>
     </Texts>
   </Element>
-  <Element ID="1031" Key="DES_RES_GOLEM_LEATHER" Flag="0">
+  <Element ID="1031" Key="DES_RES_GOLEM_LEATHER" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 19:07:03</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -13547,10 +14587,15 @@
     </Groups>
     <Texts>
       <Input>Golem Leather</Input>
-      <Output>Golem Leather</Output>
+      <Output>Skóra golema</Output>
     </Texts>
   </Element>
-  <Element ID="1032" Key="DES_RES_GOLEM_LEATHER_DES" Flag="0">
+  <Element ID="1032" Key="DES_RES_GOLEM_LEATHER_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 19:07:15</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -13562,7 +14607,12 @@
       <Output>Twarda i trwała skóra formowana przy użyciu starożytnych, obcych technik. \n\nTen kompozyt pasuje do kategorii materiałów metalowych i skórzanych. \n\nUlepszony zasób ({ICON:ImprovedResourceIcon}).</Output>
     </Texts>
   </Element>
-  <Element ID="1033" Key="DES_RES_COMBAT_LEATHER" Flag="0">
+  <Element ID="1033" Key="DES_RES_COMBAT_LEATHER" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 19:07:42</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -13574,7 +14624,12 @@
       <Output>Bojowa skóra</Output>
     </Texts>
   </Element>
-  <Element ID="1034" Key="DES_RES_COMBAT_LEATHER_DES" Flag="0">
+  <Element ID="1034" Key="DES_RES_COMBAT_LEATHER_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 19:08:17</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -13583,10 +14638,15 @@
     </Groups>
     <Texts>
       <Input>Bound by craft masters for extreme durability in combat.\n\nThis composite fits into Leather material category.</Input>
-      <Output>Związany przez mistrzów rzemiosła dla ekstremalnej wytrzymałości w walce. \n\nTen kompozyt pasuje do kategorii materiałów skórzanych.</Output>
+      <Output>Związana przez mistrzów rzemiosła dla ekstremalnej wytrzymałości w walce. \n\nTen kompozyt pasuje do kategorii materiałów skórzanych.</Output>
     </Texts>
   </Element>
-  <Element ID="1035" Key="DES_RES_SPIKE_LEATHER" Flag="0">
+  <Element ID="1035" Key="DES_RES_SPIKE_LEATHER" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 19:08:47</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -13595,10 +14655,15 @@
     </Groups>
     <Texts>
       <Input>Spike Leather</Input>
-      <Output>Spike Leather</Output>
+      <Output>Skóra z kolcami</Output>
     </Texts>
   </Element>
-  <Element ID="1036" Key="DES_RES_SPIKE_LEATHER_DES" Flag="0">
+  <Element ID="1036" Key="DES_RES_SPIKE_LEATHER_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 19:11:09</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -13607,10 +14672,15 @@
     </Groups>
     <Texts>
       <Input>First choice for achieving that special, ruffian style.\n\nThis composite fits into Leather and Bone material categories.\n\nWild resource ({ICON:WildResourceIcon}).</Input>
-      <Output>Pierwszy wybór dla osiągnięcia tego wyjątkowego stylu. \n\nTen kompozyt pasuje do kategorii materiałów ze skóry i kości. \n\nDziki zasób ({ICON:WildResourceIcon}).</Output>
+      <Output>Pierwszy krok do osiągnięcia tego chuligańskiego stylu.\n\nTen kompozyt pasuje do kategorii materiałów skórzanych i kościanych. \n\nDziki zasób ({ICON:WildResourceIcon}).</Output>
     </Texts>
   </Element>
-  <Element ID="1037" Key="DES_RES_RUNE_BONE" Flag="0">
+  <Element ID="1037" Key="DES_RES_RUNE_BONE" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 19:11:50</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -13619,10 +14689,15 @@
     </Groups>
     <Texts>
       <Input>Rune Bone</Input>
-      <Output>Rune Bone</Output>
+      <Output>Runiczna kość</Output>
     </Texts>
   </Element>
-  <Element ID="1038" Key="DES_RES_RUNE_BONE_DES" Flag="0">
+  <Element ID="1038" Key="DES_RES_RUNE_BONE_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 19:12:37</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -13631,10 +14706,15 @@
     </Groups>
     <Texts>
       <Input>Powerful runes were carved into the bones - the question is, was the recipient alive?\n\nThis composite fits into Bone material category.</Input>
-      <Output>Potężne runy zostały wyryte w kościach - pytanie brzmi, czy odbiorca żył? \n\nTen kompozyt pasuje do kategorii materiałów Bone.</Output>
+      <Output>Potężne runy zostały wyryte w kościach - pytanie brzmi, czy właściciel żył?\n\nTen kompozyt pasuje do kategorii materiałów kościanych.</Output>
     </Texts>
   </Element>
-  <Element ID="1039" Key="DES_RES_ENCHANTED_BONE" Flag="0">
+  <Element ID="1039" Key="DES_RES_ENCHANTED_BONE" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 19:12:55</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -13646,7 +14726,12 @@
       <Output>Zaczarowana kość</Output>
     </Texts>
   </Element>
-  <Element ID="1040" Key="DES_RES_ENCHANTED_BONE_DES" Flag="0">
+  <Element ID="1040" Key="DES_RES_ENCHANTED_BONE_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 19:15:34</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -13655,10 +14740,15 @@
     </Groups>
     <Texts>
       <Input>Infused with remnants of mystical force, excellent for crafting.\n\nThis composite fits into Bone and Gem material categories.\n\nImproved resource ({ICON:ImprovedResourceIcon}).</Input>
-      <Output>Natchniony resztkami siły mistycznej, doskonały do tworzenia. \n\nTen kompozyt pasuje do kategorii materiałów kości i klejnotów. \n\nUlepszony zasób ({ICON:ImprovedResourceIcon}).</Output>
+      <Output>Natchnione resztkami siły mistycznej, doskonałe do rzemiosła. \n\nTen kompozyt pasuje do kategorii materiałów kościanych i klejnotów.\n\nUlepszony zasób ({ICON:ImprovedResourceIcon}).</Output>
     </Texts>
   </Element>
-  <Element ID="1041" Key="DES_RES_GRANDGEM" Flag="0">
+  <Element ID="1041" Key="DES_RES_GRANDGEM" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 19:16:28</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -13666,10 +14756,15 @@
     </Groups>
     <Texts>
       <Input>Grandgem</Input>
-      <Output>Grandgem</Output>
+      <Output>Arcyklejnot</Output>
     </Texts>
   </Element>
-  <Element ID="1042" Key="DES_RES_GRANDGEM_DES" Flag="0">
+  <Element ID="1042" Key="DES_RES_GRANDGEM_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 19:21:28</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -13677,10 +14772,15 @@
     </Groups>
     <Texts>
       <Input>Fused together in perfect, grand harmony.\n\nThis composite fits into Gem material category.</Input>
-      <Output>Połączeni razem w doskonałą, wielką harmonię. \n\nTen kompozyt pasuje do kategorii materiałów Gem.</Output>
+      <Output>Doskonałość i harmonia zamknięta w kamieniu. \n\nTen kompozyt pasuje do kategorii klejnotów.</Output>
     </Texts>
   </Element>
-  <Element ID="1043" Key="DES_RES_CRYSTAL_WOOD" Flag="0">
+  <Element ID="1043" Key="DES_RES_CRYSTAL_WOOD" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 19:21:31</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -13692,7 +14792,12 @@
       <Output>Kryształowe drewno</Output>
     </Texts>
   </Element>
-  <Element ID="1044" Key="DES_RES_CRYSTAL_WOOD_DES" Flag="0">
+  <Element ID="1044" Key="DES_RES_CRYSTAL_WOOD_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 19:23:18</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -13701,10 +14806,15 @@
     </Groups>
     <Texts>
       <Input>Crafted using ancient elven techniques, both beautiful and extremely resilient for wood.\n\nThis composite fits into Gem and Wood material categories.\n\nWild resource ({ICON:WildResourceIcon}).</Input>
-      <Output>Wykonane przy użyciu starożytnych technik elfów, zarówno pięknych, jak i niezwykle odpornych na drewno. \n\nTen kompozyt pasuje do kategorii materiałów Gem i Wood. \n\nDziki zasób ({ICON:WildResourceIcon}).</Output>
+      <Output>Wykonane przy użyciu starożytnych technik elfów, zarówno piękne, jak i niezwykle odporne.\n\nTen kompozyt pasuje do kategorii materiałów drewnianych i klejnotów. \n\nDziki zasób ({ICON:WildResourceIcon}).</Output>
     </Texts>
   </Element>
-  <Element ID="1045" Key="DES_RES_SACRED_WOOD" Flag="0">
+  <Element ID="1045" Key="DES_RES_SACRED_WOOD" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 19:23:48</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -13713,10 +14823,15 @@
     </Groups>
     <Texts>
       <Input>Sacred Wood</Input>
-      <Output>Święte drewno</Output>
+      <Output>Poświęcone drewno</Output>
     </Texts>
   </Element>
-  <Element ID="1046" Key="DES_RES_SACRED_WOOD_DES" Flag="0">
+  <Element ID="1046" Key="DES_RES_SACRED_WOOD_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 19:24:21</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -13725,10 +14840,15 @@
     </Groups>
     <Texts>
       <Input>Made using techniques passed on from forest guardians, it is said to hold their blessing within.\n\nThis composite fits into Wood material category.</Input>
-      <Output>Wykonane przy użyciu technik przekazanych przez strażników leśnych, mówi się, że trzymają swoje błogosławieństwo wewnątrz. \n\nTen kompozyt pasuje do kategorii materiałów drewnianych.</Output>
+      <Output>Wykonane przy użyciu technik przekazanych przez leśnych strażników, mówi się, że trzymają ich błogosławieństwo wewnątrz. \n\nTen kompozyt pasuje do kategorii materiałów drewnianych.</Output>
     </Texts>
   </Element>
-  <Element ID="1047" Key="DES_RES_STONE_WOOD" Flag="0">
+  <Element ID="1047" Key="DES_RES_STONE_WOOD" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 19:24:33</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -13740,7 +14860,12 @@
       <Output>Kamienne drewno</Output>
     </Texts>
   </Element>
-  <Element ID="1048" Key="DES_RES_STONE_WOOD_DES" Flag="0">
+  <Element ID="1048" Key="DES_RES_STONE_WOOD_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 19:26:23</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -13749,10 +14874,15 @@
     </Groups>
     <Texts>
       <Input>Combined thanks to knowledge of both elves and dwarves to create a truly unique blend.\n\nThis composite fits into Wood and Stone material categories.\n\nImproved resource ({ICON:ImprovedResourceIcon}).</Input>
-      <Output>Połączone dzięki wiedzy zarówno elfów, jak i krasnoludów, aby stworzyć prawdziwie unikalną mieszankę. \n\nTen kompozyt pasuje do kategorii materiałów Wood and Stone. \n\nUlepszony zasób ({ICON:ImprovedResourceIcon}).</Output>
+      <Output>Połączone dzięki wiedzy zarówno elfów, jak i krasnoludów, aby stworzyć prawdziwie unikalną mieszankę. \n\nTen kompozyt pasuje do kategorii materiałów drewnianych i metalowych.\n\nUlepszony zasób ({ICON:ImprovedResourceIcon}).</Output>
     </Texts>
   </Element>
-  <Element ID="1049" Key="DES_RES_PRISTINE_MATTER" Flag="0">
+  <Element ID="1049" Key="DES_RES_PRISTINE_MATTER" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 19:26:54</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -13761,10 +14891,15 @@
     </Groups>
     <Texts>
       <Input>Pristine Matter</Input>
-      <Output>Pristine Matter</Output>
+      <Output>Nieskazitelna materia</Output>
     </Texts>
   </Element>
-  <Element ID="1050" Key="DES_RES_PRISTINE_MATTER_DES" Flag="0">
+  <Element ID="1050" Key="DES_RES_PRISTINE_MATTER_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 19:27:35</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -13773,10 +14908,15 @@
     </Groups>
     <Texts>
       <Input>Pristine Matter was developed by alchemists before darkness destroyed civilisation.\n\nThis composite fits into Wood and Stone material categories.\n\nImproved resource ({ICON:ImprovedResourceIcon}).</Input>
-      <Output>Pristine Matter został opracowany przez alchemików, zanim ciemność zniszczyła cywilizację. \n\nTen kompozyt pasuje do kategorii materiałów Wood and Stone. \n\nUlepszony zasób ({ICON:ImprovedResourceIcon}).</Output>
+      <Output>Został opracowany przez alchemików, zanim ciemność zniszczyła cywilizację. \n\nTen kompozyt pasuje do kategorii materiałów drewnianych i kamiennych. \n\nUlepszony zasób ({ICON:ImprovedResourceIcon}).</Output>
     </Texts>
   </Element>
-  <Element ID="1051" Key="DES_RES_MOONSTONE" Flag="0">
+  <Element ID="1051" Key="DES_RES_MOONSTONE" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 19:27:55</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -13795,10 +14935,15 @@
     </Groups>
     <Texts>
       <Input>Moonstone owns its name to the precise moon phases that are needed for its creation.\n\nThis composite fits into Stone and Metal material categories.\n\nWild resource ({ICON:WildResourceIcon}).</Input>
-      <Output>Moonstone posiada swoją nazwę do dokładnych faz księżyca, które są potrzebne do jego utworzenia. \n\nTen kompozyt pasuje do kategorii materiałów Stone i Metal. \n\nDziki zasób ({ICON:WildResourceIcon}).</Output>
+      <Output>Kamień księżycowy posiada swoją nazwę do dokładnych faz księżyca, które są potrzebne do jego utworzenia. \n\nTen kompozyt pasuje do kategorii materiałów kamiennych i metalowych. \n\nDziki zasób ({ICON:WildResourceIcon}).</Output>
     </Texts>
   </Element>
-  <Element ID="1053" Key="DES_RES_SECRET_ALLOY" Flag="0">
+  <Element ID="1053" Key="DES_RES_SECRET_ALLOY" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 19:34:42</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -13807,10 +14952,15 @@
     </Groups>
     <Texts>
       <Input>Secret Alloy</Input>
-      <Output>Secret Alloy</Output>
+      <Output>Sekretny stop</Output>
     </Texts>
   </Element>
-  <Element ID="1054" Key="DES_RES_SECRET_ALLOY_DES" Flag="0">
+  <Element ID="1054" Key="DES_RES_SECRET_ALLOY_DES" Flag="1">
+    <Confirmation>
+      <Time>06-24-2019 19:35:11</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_RES</Group>
@@ -14328,7 +15478,12 @@
       <Output>Dość dziwny rodzaj rocka. Dość bezużyteczny do tworzenia, ale przynajmniej pali się dobrze.</Output>
     </Texts>
   </Element>
-  <Element ID="1099" Key="DES_TERRAIN_ARTIFACT" Flag="0">
+  <Element ID="1099" Key="DES_TERRAIN_ARTIFACT" Flag="1">
+    <Confirmation>
+      <Time>06-25-2019 08:04:16</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TERRAIN</Group>
@@ -14339,7 +15494,12 @@
       <Output>Artefakt terenu</Output>
     </Texts>
   </Element>
-  <Element ID="1100" Key="DES_TERRAIN_ARTIFACT_DES" Flag="0">
+  <Element ID="1100" Key="DES_TERRAIN_ARTIFACT_DES" Flag="1">
+    <Confirmation>
+      <Time>06-25-2019 08:04:00</Time>
+      <GUID>51735609-794B-4E47-9A0A-E6AE9E1D3C07</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TERRAIN</Group>
@@ -14347,7 +15507,7 @@
     </Groups>
     <Texts>
       <Input>These shiny floating crystals look a bit unusual. Maybe they were sent by the gods to aid you? Gather them and uncover bits of ancient knowledge stored within.</Input>
-      <Output>Te błyszczące pływające kryształy wyglądają nieco nietypowo. Może wysłali ich bogowie, żeby ci pomóc? Zbierz je i odszukaj fragmenty starożytnej wiedzy przechowywane wewnątrz.</Output>
+      <Output>Te błyszczące pływające kryształy wyglądają nieco nietypowo. Może wysłali je bogowie, żeby ci pomóc? Zbierz je i odszukaj fragmenty starożytnej wiedzy przechowywane wewnątrz.</Output>
     </Texts>
   </Element>
   <Element ID="1101" Key="DES_RESEARCH_GENERIC" Flag="0">

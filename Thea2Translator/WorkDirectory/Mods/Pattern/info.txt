@@ -3,7 +3,8 @@
 <ModInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="[NAME]" Graphic="mod_art.png" Visibility="0">  
 	<DB>DATABASE_DES_LOCALIZATION.xml</DB>
 	<DB>DATABASE_QUEST_LOCALIZATION.xml</DB>
-	<DB>DATABASE_UI_LOCALIZATION.xml</DB>  
+	<DB>DATABASE_UI_LOCALIZATION.xml</DB>	
 	<TAG>Translation</TAG>
+	<TAG>Polish</TAG>
 [BODY]
 </ModInfo>

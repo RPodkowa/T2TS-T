@@ -6,12 +6,19 @@ namespace Thea2Translator.Logic
     public class Vocabulary
     {
         public IList<VocabularyElem> VocabularyElems { get; private set; }
-        
+
+        private readonly FilesType Type;
+
+        public Vocabulary(FilesType type)
+        {
+            Type = type;
+        }
+
         public void Reload(IDataCache dataCache)
         {
             ReadFromFile();
             UpdateByCache(dataCache);
-            VocabularyElems = ((List<VocabularyElem>)VocabularyElems).OrderByDescending(x => x.UsageCount).ToList();
+            VocabularyElems = ((List<VocabularyElem>)VocabularyElems).OrderByDescending(x => x.GetUsageCount(Type)).ToList();
         }
 
         private void ReadFromFile()
@@ -36,6 +43,7 @@ namespace Thea2Translator.Logic
         public void SaveElems()
         {
             var fullPath = $"{FileHelper.MainDir}\\Cache\\Vocabulary.cache";
+            VocabularyElems = ((List<VocabularyElem>)VocabularyElems).OrderBy(x => x.OriginalWord).ToList();
             FileHelper.SaveElemsToFile(VocabularyElems, fullPath);
         }
 
@@ -46,7 +54,7 @@ namespace Thea2Translator.Logic
 
             foreach (var elem in VocabularyElems)
             {
-                elem.ResetUsages();
+                elem.ResetUsages(Type);
             }
 
             foreach (var cacheElem in dataCache.CacheElems)
@@ -61,7 +69,7 @@ namespace Thea2Translator.Logic
                     if (word.Length == 1) continue;
 
                     var VocabularyElem = GetElem(word, true);
-                    VocabularyElem.AddUsage();
+                    VocabularyElem.AddUsage(Type);
                 }
             }
         }
@@ -70,7 +78,7 @@ namespace Thea2Translator.Logic
         {
             text = TextHelper.RemoveUnnecessaryForVocabulary(text).ToLower();
 
-            var elems = VocabularyElems.Where(x => x.IsActive).Where(x => x.OccursInPreparedText(text)).OrderByDescending(x => x.UsageCount);
+            var elems = VocabularyElems.Where(x => x.CanShowElemForPreparedText(Type, text)).OrderByDescending(x => x.GetUsageCount(Type));
 
             return elems.ToList();
         }

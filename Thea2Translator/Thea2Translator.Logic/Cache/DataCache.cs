@@ -141,7 +141,10 @@ namespace Thea2Translator.Logic
 
         private void ReloadVocabulary()
         {
-            Vocabulary = new Vocabulary();
+            if (Type == FilesType.Names)
+                return;
+
+            Vocabulary = new Vocabulary(Type);
             Vocabulary.Reload(this);
         }
 

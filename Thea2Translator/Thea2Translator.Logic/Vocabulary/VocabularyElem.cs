@@ -5,7 +5,9 @@ namespace Thea2Translator.Logic
 {
     public class VocabularyElem
     {
-        public int UsageCount { get; private set; }
+        public int UsageCountDataBase { get; private set; }
+        public int UsageCountModules { get; private set; }
+
         public int Flag { get; private set; }
         public bool IsActive
         {
@@ -20,11 +22,13 @@ namespace Thea2Translator.Logic
         {            
             var elems = line.Split(';');
 
-            if (elems.Length != 4)
+            if (elems.Length != 4 && elems.Length != 5)
                 throw new Exception($"Niepoprawna linia '{line}'!");
 
             int elem = 0;
-            UsageCount = int.Parse(elems[elem++]);
+            UsageCountDataBase = int.Parse(elems[elem++]);
+            UsageCountModules = 0;
+            if (elems.Length == 5) UsageCountModules = int.Parse(elems[elem++]);
             Flag = int.Parse(elems[elem++]);
             OriginalWord = elems[elem++];
             Translation = elems[elem++];
@@ -32,38 +36,63 @@ namespace Thea2Translator.Logic
 
         public VocabularyElem(string originalWord, string translation)
         {
-            UsageCount = 0;
+            UsageCountDataBase = 0;
+            UsageCountModules = 0;
             Flag = 0;
             IsActive = true;
             OriginalWord = originalWord;
             Translation = translation;
         }
 
-        public void ResetUsages()
+        public void ResetUsages(FilesType filesType)
         {
-            UsageCount = 0;
+            switch (filesType)
+            {
+                case FilesType.DataBase: UsageCountDataBase = 0; break;
+                case FilesType.Modules: UsageCountModules = 0; break;
+            }
         }
 
-        public void AddUsage(int usages = 1)
+        public void AddUsage(FilesType filesType, int usages = 1)
         {
-            UsageCount += usages;
+            switch (filesType)
+            {
+                case FilesType.DataBase: UsageCountDataBase += usages; break;
+                case FilesType.Modules: UsageCountModules += usages; break;
+            }
         }
 
-        public bool OccursInText(string text)
-        {
-            return OccursInPreparedText(TextHelper.RemoveUnnecessaryForVocabulary(text).ToLower());
-        }
-
-        public bool OccursInPreparedText(string text)
+        private bool OccursInPreparedText(string text)
         {
             var word = OriginalWord.ToLower();
             return text.Contains(word);
         }
 
+        public bool CanShowElemForPreparedText(FilesType filesType, string text)
+        {
+            if (!IsActive) return false;
+            if (GetUsageCount(filesType) <= 1) return false;
+                        
+            return OccursInPreparedText(text);
+        }
+
+        public int GetUsageCount(FilesType filesType)
+        {
+            int usageCount = 0;
+            switch (filesType)
+            {
+                case FilesType.DataBase: usageCount = UsageCountDataBase; break;
+                case FilesType.Modules: usageCount = UsageCountModules; break;
+            }
+
+            return usageCount;
+        }
+
         public string GetStringToSave()
         {
             var arr = new List<string>();
-            arr.Add(UsageCount.ToString());
+            arr.Add(UsageCountDataBase.ToString());
+            arr.Add(UsageCountModules.ToString());
             arr.Add(Flag.ToString());
             arr.Add(OriginalWord);
             arr.Add(Translation);
@@ -73,7 +102,7 @@ namespace Thea2Translator.Logic
 
         public override string ToString()
         {
-            string text = $"({UsageCount}) {OriginalWord}";
+            string text = $"({UsageCountDataBase},{UsageCountModules}) {OriginalWord}";
             if (!string.IsNullOrEmpty(Translation)) text = $"{text} - {Translation}";
             return text;
         }

@@ -30,7 +30,7 @@ namespace Thea2Translator.DesktopApp.Pages
             vocabulary = _vocabulary;
             elem = _vocabularyElem;
 
-            lblUsageCount.Content = elem.UsageCount;
+            lblUsageCount.Content = $"Database: {elem.UsageCountDataBase} Modules: {elem.UsageCountModules}";
             checkBoxIsActive.IsChecked = elem.IsActive;
             lblOriginalWord.Content = elem.OriginalWord;
             txtTranslation.Text = elem.Translation;

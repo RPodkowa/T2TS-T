@@ -37,15 +37,8 @@ namespace Thea2Translator.Logic
             LoadFromFile();
             var statistic = LogicProvider.Statistic;
             statistic.Reload(this);
-
-            var arr = new List<string>();
-            arr.Add($"{Type.ToString()}:");
-            arr.Add($"\tLinii: {statistic.AllItemsCount}");
-            arr.Add($"\tPrzetlumaczonych: {statistic.TranslatedItemsCount} ({statistic.TranslatedPercent}%)");
-            arr.Add($"\tPotwierdzonych/skorygowanych: {statistic.ConfirmedItemsCount} ({statistic.ConfirmedPercent}%)");
-
-            string text = string.Join("\r\n", arr.ToArray());
-            return text;
+            
+            return $"{Type.ToString()}:\r\n{statistic.GetSummary()}";
         }
 
         private void ChangeStatus(string status, double progress)

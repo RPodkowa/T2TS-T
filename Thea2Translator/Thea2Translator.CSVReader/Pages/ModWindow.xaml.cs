@@ -34,6 +34,7 @@ namespace Thea2Translator.DesktopApp.Pages
         {
             Settings.Default.ModTitle = txtTitle.Text;
             Settings.Default.ModBody = txtBody.Text;
+            Settings.Default.Save();
 
             var manager = new ModManager(txtTitle.Text, txtBody.Text, txtState.Text);
             manager.PrepareMod();

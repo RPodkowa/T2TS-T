@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
+using System.Linq;
 using Thea2Translator.Logic.Cache.Interfaces;
 
 namespace Thea2Translator.Logic.Cache
@@ -12,6 +13,17 @@ namespace Thea2Translator.Logic.Cache
         public int ConfirmedItemsCount { get; private set; }
         public int ItemWithoutConfirmationCount { get; private set; }
         public int ConfirmedPercent { get; private set; }
+
+        public string GetSummary()
+        {
+            var arr = new List<string>();
+            arr.Add($"\tLinii: {AllItemsCount}");
+            arr.Add($"\tPrzetlumaczonych: {TranslatedItemsCount} ({TranslatedPercent}%)");
+            arr.Add($"\tPotwierdzonych/skorygowanych: {ConfirmedItemsCount} ({ConfirmedPercent}%)");
+
+            string text = string.Join("\r\n", arr.ToArray());
+            return text;
+        }
 
         public void Reload(IDataCache dataCache)
         {

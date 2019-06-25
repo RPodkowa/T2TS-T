@@ -1,18 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using Thea2Translator.DesktopApp.Helpers;
 using Thea2Translator.DesktopApp.ViewModels;
 using Thea2Translator.Logic;
@@ -28,7 +20,7 @@ namespace Thea2Translator.DesktopApp.Pages
         public static RoutedCommand SaveCommand = new RoutedCommand();
         public static RoutedCommand GoogleCommand = new RoutedCommand();
         public static RoutedCommand NextItemCommand = new RoutedCommand();
-        
+
         private static readonly Regex _regex = new Regex("[^0-9.-]+");
 
         private string oldStartRange = "";
@@ -78,6 +70,7 @@ namespace Thea2Translator.DesktopApp.Pages
             }
 
             lbItemsToTranslate.ItemsSource = filtredElements;
+            lblCount.Content = $"Elementów: {filtredElements.Count.ToString()}";
 
             this.SetLanguageDictinary();
 
@@ -115,7 +108,7 @@ namespace Thea2Translator.DesktopApp.Pages
 
         private void LbItemsToTranslate_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            if(selectedCacheElement != null 
+            if (selectedCacheElement != null
                 && txtTranslatedText.Text != selectedCacheElement.CacheElem.OriginalText)
             {
                 selectedCacheElement.CacheElem.SetTranslated(txtTranslatedText.Text);
@@ -135,7 +128,7 @@ namespace Thea2Translator.DesktopApp.Pages
 
         private void SetAvaibleGroups()
         {
-            if(selectedCacheElement != null)
+            if (selectedCacheElement != null)
             {
                 groups = selectedCacheElement.CacheElem.Groups;
                 var allGroup = cbGroups.Items[0];
@@ -144,7 +137,7 @@ namespace Thea2Translator.DesktopApp.Pages
                 cbGroups.Items.Clear();
                 cbGroups.Items.Add(allGroup);
 
-                foreach(var group in groups)
+                foreach (var group in groups)
                 {
                     cbGroups.Items.Add(group);
                 }
@@ -159,9 +152,7 @@ namespace Thea2Translator.DesktopApp.Pages
         {
             statistic.Reload(dataCache);
 
-            lblAllCount.Content = statistic.AllItemsCount;
-            lblTranslatedCount.Content = statistic.TranslatedItemsCount;
-            lblPercent.Content = $"{statistic.TranslatedPercent}%";
+            lblState.Content = statistic.GetSummary();
         }
 
         private void BtnSaveToFile_Click(object sender, RoutedEventArgs e)
@@ -213,7 +204,7 @@ namespace Thea2Translator.DesktopApp.Pages
                     case 2: filtredElements = filtredElements.Where(c => c.CacheElem.ToConfirm && !c.CacheElem.ToTranslate).ToList(); break;
                 }
 
-                if(txtSearch.Text != "")
+                if (txtSearch.Text != "")
                 {
                     var text = txtSearch.Text.ToLower();
                     filtredElements = filtredElements.Where(e => e.CacheElem.OriginalText.ToLower().Contains(text)
@@ -229,7 +220,8 @@ namespace Thea2Translator.DesktopApp.Pages
                 }
 
                 //lbItemsToTranslate.ItemsSource = null;
-                lbItemsToTranslate.ItemsSource = filtredElements;              
+                lbItemsToTranslate.ItemsSource = filtredElements;
+                lblCount.Content = $"Elementów: {filtredElements.Count.ToString()}";
             }
         }
 
@@ -366,7 +358,7 @@ namespace Thea2Translator.DesktopApp.Pages
         {
             if (lbDictinaryItems.SelectedItem == null)
                 return;
-            
+
             if (dictinaryWindow != null)
                 dictinaryWindow.Close();
 

@@ -1,16 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
+﻿using System.Windows;
 using Thea2Translator.DesktopApp.Helpers;
 using Thea2Translator.Logic;
 
@@ -32,6 +20,7 @@ namespace Thea2Translator.DesktopApp.Pages
 
             lblUsageCount.Content = $"Database: {elem.UsageCountDataBase} Modules: {elem.UsageCountModules}";
             checkBoxIsActive.IsChecked = elem.IsActive;
+            checkBoxIsConflict.IsChecked = elem.HasConflict;
             lblOriginalWord.Content = elem.OriginalWord;
             txtTranslation.Text = elem.Translation;
 
@@ -41,6 +30,7 @@ namespace Thea2Translator.DesktopApp.Pages
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             elem.IsActive = checkBoxIsActive.IsChecked.HasValue ? checkBoxIsActive.IsChecked.Value : true;
+            elem.HasConflict = checkBoxIsConflict.IsChecked.HasValue ? checkBoxIsConflict.IsChecked.Value : true;
             elem.Translation = txtTranslation.Text;
 
             vocabulary.SaveElems();

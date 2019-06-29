@@ -1,0 +1,9 @@
+﻿<PROTOTYPE_WEATHER>
+	<WEATHER Name="Weather">
+		<!-- Weather description  -->
+        <WeatherTag Name="weatherTag" Type="TAG" Required="TRUE"/>
+        <DescriptionInfo Name="descriptionInfo" Type="DESCRIPTION_INFO" Required="TRUE"/>				
+		<WorldScript Name="worldScript" Type="SCRIPT" Required="FALSE"/>
+	</WEATHER>
+	
+</PROTOTYPE_WEATHER>

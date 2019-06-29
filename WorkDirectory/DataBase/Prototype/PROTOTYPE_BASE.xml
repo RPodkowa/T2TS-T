@@ -1,0 +1,162 @@
+﻿<PROTOTYPE_BASE_AND_TAGS_RESOURCE_MODELS_GODS>
+
+	<!-- Tag type category-->
+	<E_TAG_TYPE Type="enum" Name="ETagType">
+		<!-- god -->
+		<GodType/>
+        <!-- world -->
+        <WorldType/>
+		<!-- essence -->
+		<EssenceType/>
+		<!-- domain -->
+		<DomainType/>
+		<!-- item-->
+		<ItemType/>
+		<!-- resources-->
+		<ResourcesType/>
+		<!-- character  -->
+		<CharacterType/>
+		<!-- building  -->
+		<BuildingType/>
+		<!-- terrain type  -->
+		<TerrainType/>
+		<!-- loyalty type  -->
+		<LoyaltyType/>
+		<!--  -->
+		<QuestType/>
+	</E_TAG_TYPE>
+	
+	<!-- information if a given element is necessary, optional or forbidden -->
+	<E_SCOPE_TYPES Type="enum" Name="EScopeType">
+		<!-- necessary -->
+		<NecessaryType/>
+		<!-- optional -->
+		<OptionalType/>
+		<!-- forbidden -->
+		<ForbiddenType/>
+	</E_SCOPE_TYPES>
+	
+	<!-- Categories in which a skill can be used -->
+	<E_CHALLENGE_TYPE Type="enum" Name="EChallengeType">
+		<!-- challenge Mental -->
+		<TypeMental/>
+		<!-- Physical -->
+		<TypePhysical/>
+		<!-- challenge Spirit -->
+		<TypeSpirit/>
+	</E_CHALLENGE_TYPE>
+
+	<!-- available ratio of information to information -->
+	<EQUATION_DIFFERENCE_TYPE Type="enum" Name="EquationDifferenceType">
+		<EqualType/>
+		<OverType/>
+		<UnderType/>
+	</EQUATION_DIFFERENCE_TYPE>
+
+	<!-- Description and graphic information of tag, essences, weapon etc.  -->
+	<DESCRIPTION_INFO Name="DescriptionInfo">
+		<!--  -->
+		<Name Name="name" Type="string" Required="TRUE"/>
+		<!--  -->
+		<Description Name="description" Type="string" Required="TRUE"/>
+		<!-- Icon Name, define in different atlases-->
+		<IconName Name="iconName" Type="string" Required="FALSE"/>
+	</DESCRIPTION_INFO>
+	
+	<!-- Quantifiable tags -->
+	<COUNTED_TAG Name="CountedTag">
+		<!-- -->
+		<Amount Name="amount" Type="float" Required="TRUE"/>
+		<!-- -->
+		<Tag Name="tag" Type="TAG" Required="TRUE"/>
+	</COUNTED_TAG>
+
+	<!-- Quantifiable number of tags, checked and defined by -->
+	<CONFORMANCE_TAG_COUNT Name="ConformanceTagCount">
+		<!-- -->
+		<NeededTagCount Name="neededTagCount" Type="int" Required="TRUE"/>
+		<!-- -->
+		<Tag Name="tag" Type="TAG" Required="TRUE"/>
+		<!-- -->
+		<CheckMethod Name="checkMethods" Type="ArrayEQUATION_DIFFERENCE_TYPE" Required="TRUE"/>
+	</CONFORMANCE_TAG_COUNT>
+
+	<!-- random number within a given range -->
+	<FLOATING_RANGE Name="FloatingRange">
+		<!-- inclusive -->
+		<MinimumCount Name="minimumCount" Type="float" Required="TRUE"/>
+		<!-- exclusive -->
+		<MaximumCount Name="maximumCount" Type="float" Required="TRUE"/>
+	</FLOATING_RANGE>
+	
+	<!-- range of integers   -->
+	<INT_RANGE Name="IntRange">
+		<!-- inclusive -->
+		<MinimumCount Name="minimumCount" Type="int" Required="TRUE"/>
+		<!-- inclusive -->
+		<MaximumCount Name="maximumCount" Type="int" Required="TRUE"/>
+	</INT_RANGE>
+
+	<!-- chance for the availability of a given resource -->
+	<RESOURCE_CHANCE Name="ResourceChance">
+		<!-- -->
+		<ChanceToSpawn Name="chanceToSpawn" Type="float" Required="TRUE"/>
+		<!-- -->
+		<Resource Name="resource" Type="RESOURCE" Required="TRUE"/>
+	</RESOURCE_CHANCE>
+
+	<!-- terrain type with information is if NecessaryType or is it ForbiddenType -->
+	<SPAWN_TERRAIN Name="SpawnTerrain">
+		<!-- -->
+		<Terrain Name="terrain" Type="TERRAIN" Required="FALSE"/>
+		<!-- is the given element necessary/optional/forbidden -->
+		<Requirement Name="requirement" Type="E_SCOPE_TYPES" Required="TRUE"/>
+	</SPAWN_TERRAIN>
+		
+	<!-- quantifiable units from a given subrace -->
+	<COUNTED_MEMBERS Name="CountedMembers">
+		<!-- -->
+		<MemberSubrace Name="membersSubrace" Type="SUBRACE" Required="TRUE"/>
+		<!-- -->
+		<MemberCount Name="membersCount" Type="INT_RANGE" Required="TRUE"/>
+        <!-- -->
+        <MembersLevelRange Name="membersLevelRange" Type="INT_RANGE" Required="FALSE"/>
+	</COUNTED_MEMBERS>
+	
+	<!-- regeneration time and harvest season-->
+	<RES_LIFE_CYCLE Name="ResLifeCycle">
+		<!-- Resource deposit percent regeneration in year cycle-->
+		<RSeasonGrowPercent Name="hSeasonGrowPercent" Type="float" Required="TRUE"/>
+		<!-- Is res disappear on dead season. 100 is terminating all res -->
+		<DSeasonKillPercent Name="dSeasonKillPercent" Type="int" Required="FALSE"/>
+		<!-- season when res is full ready for harvest -->
+		<RegenerationSeason Name="regenerationSeason" Type="TAG" Required="TRUE"/>
+		<!-- season when player is unable to harvest-->
+		<DeadSeason Name="deadSeason" Type="TAG" Required="TRUE"/>
+	</RES_LIFE_CYCLE>	
+	
+	<!-- domain type and default trait -->
+	<CARD_SLOT Name="CardSlot">
+		<!-- domain type -->
+		<Domain Name="domain" Type="TAG" Required="TRUE"/>
+		<!-- default trait -->
+		<DefTrait Name="defTrait" Type="TRAIT_CARD" Required="FALSE"/>
+	</CARD_SLOT>
+	
+	
+	<!-- checking if a subskill meats all the conditions for activation -->
+	<TRIGGER Name="Trigger">
+		<!-- The two bits of information below can be FALSE. Thanks to this no line will be required-->
+		<!-- Requires that the character is in the first line -->
+		<RequiredToBeInFrontline Name="requiredToBeInFrontline" Type="bool" Required="TRUE"/>		
+		<!-- Requires that the character is in the second line -->
+		<RequiredToBeInBackline Name="requiredToBeInBackline" Type="bool" Required="TRUE"/>
+		<!-- how fast does the subskill work in relation to other subskills, earlier subskills can destroy stack or invalidate other skill targets -->
+		<Priority Name="priority" Type="int" Required="TRUE"/>
+		<!-- general conditions for activation , like entering challenges etc. -->
+		<TriggerGroup Name="triggerGroup" Type="E_TRIGGER_GROUP_TYPE" Required="TRUE"/>
+		<!-- specific conditions for activation , like 5 targets -->
+		<TriggerScript Name="script" Type="SCRIPT" Required="TRUE"/>
+	</TRIGGER>
+    
+</PROTOTYPE_BASE_AND_TAGS_RESOURCE_MODELS_GODS>

@@ -1,0 +1,662 @@
+﻿<!-- RESEARCH COSTS:
+1 or more = locked, visible on the advancement graph and available for unlock at the specified cost
+0         = unlocked and visible on the graph (e.g. basic Wood)
+-1        = unlocked and not visible on the graph (e.g. Idol)
+-2        = locked and invisible on the graph, unlocking will require a special script
+-->
+
+<RECEIPTS_BUILDING>
+	<BUILD_REC-IDOL Durability="40">
+		<RecipeBase ResearchCost="0" ResChildForbid="FALSE" CraftingTimePercent="50">
+			<DescriptionInfo Name="DES_IDOL" Description="DES_IDOL_DES" IconName="BuildingIdolWood"/>
+			<CountedTag Tag="TAG-BUILDING_IDOL" Amount="1.0"/>
+			<MaterialRow>
+				<Material ResourceCount="32">
+					<Resource Value="RES-SANDSTONE"/>
+				</Material>
+				<Material ResourceCount="31">
+					<Resource Value="RES-AMBER"/>
+				</Material>
+				<Material ResourceCount="30">
+					<Resource Value="RES-WOOD"/>
+				</Material>
+				<Material ResourceCount="29">
+					<Resource Value="RES-BONE"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="1">
+					<Resource Value="RES-COSMIC_SEED"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+		<Skills Value="SKILL_PACK-BUILDING_IDOL"/>
+	</BUILD_REC-IDOL>
+	<BUILD_REC-WAREHOUSE Durability="40">
+		<RecipeBase ResearchCost="1" ResChildForbid="FALSE">
+			<DescriptionInfo Name="DES_WAREHOUSE" Description="DES_WAREHOUSE_DES" IconName="BuildingWarehouseWood"/>
+			<CountedTag Tag="TAG-BUILDING_WAREHOUSE" Amount="1.0"/>
+			<MaterialRow>
+				<Material ResourceCount="70">
+					<Resource Value="RES-SANDSTONE"/>
+				</Material>
+				<Material ResourceCount="61">
+					<Resource Value="RES-WOOD"/>
+				</Material>
+				<Material ResourceCount="60">
+					<Resource Value="RES-BONE"/>
+				</Material>
+				<Material ResourceCount="50">
+					<Resource Value="RES-SANDSTONE"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="35">
+					<Resource Value="RES-SANDSTONE"/>
+				</Material>
+				<Material ResourceCount="31">
+					<Resource Value="RES-WOOD"/>
+				</Material>
+				<Material ResourceCount="30">
+					<Resource Value="RES-BONE"/>
+				</Material>
+				<Material ResourceCount="25">
+					<Resource Value="RES-IRON"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+		<Skills Value="SKILL_PACK-BUILDING_WAREHOUSE"/>
+	</BUILD_REC-WAREHOUSE>
+	<BUILD_REC-FORGE Durability="50">
+		<RecipeBase ResearchCost="1" ResChildForbid="FALSE">
+			<DescriptionInfo Name="DES_FORGE" Description="DES_FORGE_DES" IconName="BuildingForgeStone"/>
+			<CountedTag Tag="TAG-BUILDING_FORGE" Amount="1.0"/>
+			<MaterialRow>
+				<Material ResourceCount="70">
+					<Resource Value="RES-IRON"/>
+				</Material>
+				<Material ResourceCount="61">
+					<Resource Value="RES-SANDSTONE"/>
+				</Material>
+				<Material ResourceCount="60">
+					<Resource Value="RES-AMBER"/>
+				</Material>
+				<Material ResourceCount="50">
+					<Resource Value="RES-IRON"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="35">
+					<Resource Value="RES-IRON"/>
+				</Material>
+				<Material ResourceCount="31">
+					<Resource Value="RES-LEATHER"/>
+				</Material>			
+				<Material ResourceCount="30">
+					<Resource Value="RES-SANDSTONE"/>
+				</Material>
+				<Material ResourceCount="25">
+					<Resource Value="RES-BONE"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+		<Skills Value="SKILL_PACK-BUILDING_FORGE"/>
+	</BUILD_REC-FORGE>
+	<BUILD_REC-ARMOURY Durability="60">
+		<RecipeBase ResearchCost="1" ResChildForbid="FALSE">
+			<DescriptionInfo Name="DES_ARMOURY" Description="DES_ARMOURY_DES" IconName="BuildingArmouryStone"/>
+			<CountedTag Tag="TAG-BUILDING_ARMOURY" Amount="1.0"/>
+			<MaterialRow>
+				<Material ResourceCount="70">
+					<Resource Value="RES-SANDSTONE"/>
+				</Material>
+				<Material ResourceCount="61">
+					<Resource Value="RES-IRON"/>
+				</Material>
+				<Material ResourceCount="60">
+					<Resource Value="RES-AMBER"/>
+				</Material>
+				<Material ResourceCount="50">
+					<Resource Value="RES-SANDSTONE"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="35">
+					<Resource Value="RES-SANDSTONE"/>
+				</Material>
+				<Material ResourceCount="31">
+					<Resource Value="RES-IRON"/>
+				</Material>
+				<Material ResourceCount="30">
+					<Resource Value="RES-AMBER"/>
+				</Material>
+				<Material ResourceCount="25">
+					<Resource Value="RES-BONE"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+		<Skills Value="SKILL_PACK-BUILDING_ARMOURY"/>
+	</BUILD_REC-ARMOURY>
+	<BUILD_REC-SCHOOL Durability="30">
+		<RecipeBase ResearchCost="1" ResChildForbid="FALSE">
+			<DescriptionInfo Name="DES_SCHOOL" Description="DES_SCHOOL_DES" IconName="BuildingSchoolWood"/>
+			<CountedTag Tag="TAG-BUILDING_SCHOOL" Amount="1.0"/>
+			<MaterialRow>
+				<Material ResourceCount="70">
+					<Resource Value="RES-WOOD"/>
+				</Material>
+				<Material ResourceCount="61">
+					<Resource Value="RES-BONE"/>
+				</Material>
+				<Material ResourceCount="60">
+					<Resource Value="RES-SANDSTONE"/>
+				</Material>
+				<Material ResourceCount="50">
+					<Resource Value="RES-WOOD"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="35">
+					<Resource Value="RES-WOOD"/>
+				</Material>			
+				<Material ResourceCount="31">
+					<Resource Value="RES-BONE"/>
+				</Material>
+				<Material ResourceCount="30">
+					<Resource Value="RES-SANDSTONE"/>
+				</Material>
+				<Material ResourceCount="25">
+					<Resource Value="RES-LEATHER"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+		<Skills Value="SKILL_PACK-BUILDING_SCHOOL"/>
+	</BUILD_REC-SCHOOL>
+	<BUILD_REC-DWELLING_BEDS Durability="30">
+		<RecipeBase ResearchCost="1" ResChildForbid="FALSE">
+			<DescriptionInfo Name="DES_DWELLING_BEDS" Description="DES_DWELLING_BEDS_DES" IconName="BuildingDwellingBedsWood"/>
+			<CountedTag Tag="TAG-BUILDING_DWELLING_BEDS" Amount="1.0"/>			
+			<MaterialRow>
+				<Material ResourceCount="70">
+					<Resource Value="RES-LEATHER"/>
+				</Material>
+				<Material ResourceCount="61">
+					<Resource Value="RES-WOOD"/>
+				</Material>
+				<Material ResourceCount="60">
+					<Resource Value="RES-SANDSTONE"/>
+				</Material>
+				<Material ResourceCount="50">
+					<Resource Value="RES-LEATHER"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="35">
+					<Resource Value="RES-LEATHER"/>
+				</Material>
+				<Material ResourceCount="31">
+					<Resource Value="RES-WOOD"/>
+				</Material>			
+				<Material ResourceCount="30">
+					<Resource Value="RES-SANDSTONE"/>
+				</Material>
+				<Material ResourceCount="25">
+					<Resource Value="RES-AMBER"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+		<Skills Value="SKILL_PACK-BUILDING_DWELLING_BEDS"/>
+	</BUILD_REC-DWELLING_BEDS>
+	<BUILD_REC-HERBALIST_HUT Durability="30">
+		<RecipeBase ResearchCost="1" ResChildForbid="FALSE">
+			<DescriptionInfo Name="DES_HERBALIST_HUT" Description="DES_HERBALIST_HUT_DES" IconName="BuildingHerbalistsHutLeather"/>
+			<CountedTag Tag="TAG-BUILDING_HERBALIST_HUT" Amount="1.0"/>				
+			<MaterialRow>
+				<Material ResourceCount="70">
+					<Resource Value="RES-BONE"/>
+				</Material>
+				<Material ResourceCount="61">
+					<Resource Value="RES-AMBER"/>
+				</Material>
+				<Material ResourceCount="60">
+					<Resource Value="RES-LEATHER"/>
+				</Material>
+				<Material ResourceCount="50">
+					<Resource Value="RES-BONE"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="35">
+					<Resource Value="RES-BONE"/>
+				</Material>
+				<Material ResourceCount="31">
+					<Resource Value="RES-AMBER"/>
+				</Material>			
+				<Material ResourceCount="30">
+					<Resource Value="RES-LEATHER"/>
+				</Material>
+				<Material ResourceCount="25">
+					<Resource Value="RES-WOOD"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+		<Skills Value="SKILL_PACK-BUILDING_HERBALIST_HUT"/>
+	</BUILD_REC-HERBALIST_HUT>
+	<BUILD_REC-WISHING_WELL Durability="40">
+		<RecipeBase ResearchCost="1" ResChildForbid="FALSE" CraftingTimePercent="75">
+			<DescriptionInfo Name="DES_WISHING_WELL" Description="DES_WISHING_WELL_DES" IconName="BuildingWishingWellWood"/>
+			<CountedTag Tag="TAG-BUILDING_WISHING_WELL" Amount="1.0"/>
+			<MaterialRow>
+				<Material ResourceCount="33">
+					<Resource Value="RES-WOOD"/>
+				</Material>
+				<Material ResourceCount="31">
+					<Resource Value="RES-SANDSTONE"/>
+				</Material>
+				<Material ResourceCount="30">
+					<Resource Value="RES-IRON"/>
+				</Material>
+				<Material ResourceCount="27">
+					<Resource Value="RES-WOOD"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="22">
+					<Resource Value="RES-WOOD"/>
+				</Material>
+				<Material ResourceCount="21">
+					<Resource Value="RES-IRON"/>
+				</Material>
+				<Material ResourceCount="20">
+					<Resource Value="RES-AMBER"/>
+				</Material>
+				<Material ResourceCount="18">
+					<Resource Value="RES-IRON"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+		<Skills Value="SKILL_PACK-BUILDING_WISHING_WELL"/>
+	</BUILD_REC-WISHING_WELL>
+	<BUILD_REC-LUMBER_MILL Durability="40">
+		<RecipeBase ResearchCost="1" ResChildForbid="FALSE" CraftingTimePercent="50">
+			<DescriptionInfo Name="DES_LUMBER_MILL" Description="DES_LUMBER_MILL_DES" IconName="BuildingLumberMillMetal"/>
+			<CountedTag Tag="TAG-BUILDING_LUMBER_MILL" Amount="1.0"/>
+			<MaterialRow>
+				<Material ResourceCount="33">
+					<Resource Value="RES-IRON"/>
+				</Material>
+				<Material ResourceCount="31">
+					<Resource Value="RES-BONE"/>
+				</Material>
+				<Material ResourceCount="30">
+					<Resource Value="RES-AMBER"/>
+				</Material>
+				<Material ResourceCount="27">
+					<Resource Value="RES-IRON"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="22">
+					<Resource Value="RES-FRUITS"/>
+				</Material>
+				<Material ResourceCount="21">
+					<Resource Value="RES-VEGGIES"/>
+				</Material>
+				<Material ResourceCount="20">
+					<Resource Value="RES-GRAIN"/>
+				</Material>
+				<Material ResourceCount="18">
+					<Resource Value="RES-MEAT"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+		<Skills Value="SKILL_PACK-BUILDING_LUMBER_MILL"/>
+	</BUILD_REC-LUMBER_MILL>
+	<BUILD_REC-GUARD_TOWER Durability="40">
+		<RecipeBase ResearchCost="1" ResChildForbid="FALSE" CraftingTimePercent="50">
+			<DescriptionInfo Name="DES_GUARD_TOWER" Description="DES_GUARD_TOWER_DES" IconName="BuildingWatchtowerStone"/>
+			<CountedTag Tag="TAG-BUILDING_GUARD_TOWER" Amount="1.0"/>
+			<MaterialRow>
+				<Material ResourceCount="15">
+					<Resource Value="RES-IRON"/>
+				</Material>
+				<Material ResourceCount="14">
+					<Resource Value="RES-SANDSTONE"/>
+				</Material>
+				<Material ResourceCount="13">
+					<Resource Value="RES-AMBER"/>
+				</Material>
+				<Material ResourceCount="11">
+					<Resource Value="RES-IRON"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="13">
+					<Resource Value="RES-WOOD"/>
+				</Material>
+				<Material ResourceCount="12">
+					<Resource Value="RES-IRON"/>
+				</Material>
+				<Material ResourceCount="11">
+					<Resource Value="RES-AMBER"/>
+				</Material>
+				<Material ResourceCount="10">
+					<Resource Value="RES-SANDSTONE"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+		<Skills Value="SKILL_PACK-BUILDING_GUARD_TOWER"/>
+	</BUILD_REC-GUARD_TOWER>
+	<BUILD_REC-CHILD_PLAYGROUND Durability="40">
+		<RecipeBase ResearchCost="1" ResChildForbid="FALSE" >
+			<DescriptionInfo Name="DES_CHILD_PLAYGROUND" Description="DES_CHILD_PLAYGROUND_DES" IconName="BuildingPlaygroundWood"/>
+			<CountedTag Tag="TAG-BUILDING_CHILD_PLAYGROUND" Amount="1.0"/>
+			<MaterialRow>
+				<Material ResourceCount="33">
+					<Resource Value="RES-LEATHER"/>
+				</Material>
+				<Material ResourceCount="31">
+					<Resource Value="RES-BONE"/>
+				</Material>
+				<Material ResourceCount="30">
+					<Resource Value="RES-AMBER"/>
+				</Material>
+				<Material ResourceCount="27">
+					<Resource Value="RES-LEATHER"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="22">
+					<Resource Value="RES-BONE"/>
+				</Material>
+				<Material ResourceCount="21">
+					<Resource Value="RES-LEATHER"/>
+				</Material>
+				<Material ResourceCount="20">
+					<Resource Value="RES-AMBER"/>
+				</Material>
+				<Material ResourceCount="18">
+					<Resource Value="RES-IRON"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+		<Skills Value="SKILL_PACK-BUILDING_CHILD_PLAYGROUND"/>
+	</BUILD_REC-CHILD_PLAYGROUND>
+	<BUILD_REC-CROP_FIELD Durability="40">
+		<RecipeBase ResearchCost="1" ResChildForbid="FALSE" CraftingTimePercent="50">
+			<DescriptionInfo Name="DES_CROP_FIELD" Description="DES_CROP_FIELD_DES" IconName="BuildingCropFieldStone"/>
+			<CountedTag Tag="TAG-BUILDING_CROP_FIELD" Amount="1.0"/>
+			<MaterialRow>
+				<Material ResourceCount="15">
+					<Resource Value="RES-IRON"/>
+				</Material>
+				<Material ResourceCount="14">
+					<Resource Value="RES-SANDSTONE"/>
+				</Material>
+				<Material ResourceCount="13">
+					<Resource Value="RES-AMBER"/>
+				</Material>
+				<Material ResourceCount="11">
+					<Resource Value="RES-IRON"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="27">
+					<Resource Value="RES-GRAIN"/>
+				</Material>
+				<Material ResourceCount="26">
+					<Resource Value="RES-FRUITS"/>
+				</Material>
+				<Material ResourceCount="25">
+					<Resource Value="RES-VEGGIES"/>
+				</Material>
+				<Material ResourceCount="24">
+					<Resource Value="RES-HERBS"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+		<Skills Value="SKILL_PACK-BUILDING_CROP_FIELD"/>
+	</BUILD_REC-CROP_FIELD>
+	<BUILD_REC-WITCH_HUT Durability="40">
+		<RecipeBase ResearchCost="1" ResChildForbid="FALSE" CraftingTimePercent="50">
+			<DescriptionInfo Name="DES_WITCH_HUT" Description="DES_WITCH_HUT_DES" IconName="BuildingWitchHutLeather"/>
+			<CountedTag Tag="TAG-BUILDING_WITCH_HUT" Amount="1.0"/>
+			<MaterialRow>
+				<Material ResourceCount="70">
+					<Resource Value="RES-BONE"/>
+				</Material>
+				<Material ResourceCount="61">
+					<Resource Value="RES-AMBER"/>
+				</Material>
+				<Material ResourceCount="60">
+					<Resource Value="RES-LEATHER"/>
+				</Material>
+				<Material ResourceCount="50">
+					<Resource Value="RES-BONE"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="35">
+					<Resource Value="RES-BONE"/>
+				</Material>
+				<Material ResourceCount="31">
+					<Resource Value="RES-IRON"/>
+				</Material>
+				<Material ResourceCount="30">
+					<Resource Value="RES-AMBER"/>
+				</Material>
+				<Material ResourceCount="25">
+					<Resource Value="RES-SANDSTONE"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+		<Skills Value="SKILL_PACK-BUILDING_WITCH_HUT"/>
+	</BUILD_REC-WITCH_HUT>
+	<BUILD_REC-MINE Durability="40">
+		<RecipeBase ResearchCost="1" ResChildForbid="FALSE" CraftingTimePercent="50">
+			<DescriptionInfo Name="DES_MINE" Description="DES_MINE_DES" IconName="BuildingMineMetal"/>
+			<CountedTag Tag="TAG-BUILDING_MINE" Amount="1.0"/>
+			<MaterialRow>
+				<Material ResourceCount="33">
+					<Resource Value="RES-IRON"/>
+				</Material>
+				<Material ResourceCount="31">
+					<Resource Value="RES-SANDSTONE"/>
+				</Material>
+				<Material ResourceCount="30">
+					<Resource Value="RES-AMBER"/>
+				</Material>
+				<Material ResourceCount="27">
+					<Resource Value="RES-IRON"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="22">
+					<Resource Value="RES-BONE"/>
+				</Material>
+				<Material ResourceCount="21">
+					<Resource Value="RES-LEATHER"/>
+				</Material>
+				<Material ResourceCount="20">
+					<Resource Value="RES-WOOD"/>
+				</Material>
+				<Material ResourceCount="18">
+					<Resource Value="RES-BONE"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+		<Skills Value="SKILL_PACK-BUILDING_MINE"/>
+	</BUILD_REC-MINE>
+	<BUILD_REC-TRADING_POST Durability="40">
+		<RecipeBase ResearchCost="1" ResChildForbid="FALSE" CraftingTimePercent="50">
+			<DescriptionInfo Name="DES_TRADING_POST" Description="DES_TRADING_POST_DES" IconName="BuildingTradingPostLeather"/>
+			<CountedTag Tag="TAG-BUILDING_TRADING_POST" Amount="1.0"/>
+			<MaterialRow>
+				<Material ResourceCount="33">
+					<Resource Value="RES-LEATHER"/>
+				</Material>
+				<Material ResourceCount="31">
+					<Resource Value="RES-AMBER"/>
+				</Material>
+				<Material ResourceCount="30">
+					<Resource Value="RES-BONE"/>
+				</Material>
+				<Material ResourceCount="27">
+					<Resource Value="RES-LEATHER"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="22">
+					<Resource Value="RES-LEATHER"/>
+				</Material>
+				<Material ResourceCount="21">
+					<Resource Value="RES-AMBER"/>
+				</Material>
+				<Material ResourceCount="20">
+					<Resource Value="RES-IRON"/>
+				</Material>
+				<Material ResourceCount="18">
+					<Resource Value="RES-SANDSTONE"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+		<Skills Value="SKILL_PACK-BUILDING_TRADING_POST"/>
+	</BUILD_REC-TRADING_POST>
+	
+	
+	
+	
+	<!-- SHIPS LAYOUTS -->
+	<BUILD_REC-SHIP_SMALL Durability="30" WeightMultiplier="4">
+		<RecipeBase ResearchCost="-1" ResChildForbid="FALSE">
+			<DescriptionInfo Name="DES_SHIP_SMALL" Description="DES_SHIP_SMALL_DES" IconName="Ship1Raft"/>
+			<CountedTag Tag="TAG-SHIP" Amount="1.0"/>
+			<CountedTag Tag="TAG-RAFT" Amount="1.0"/>
+			<MaterialRow>
+				<Material ResourceCount="25">
+					<Resource Value="RES-WOOD"/>
+				</Material>                
+				<Material ResourceCount="18">
+					<Resource Value="RES-WOOD"/>
+				</Material>
+                <Material ResourceCount="14">
+                    <Resource Value="RES-BONE"/>
+                </Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="15">
+					<Resource Value="RES-LEATHER"/>
+				</Material>
+                <Material ResourceCount="13">
+                    <Resource Value="RES-WOOD"/>
+                </Material>
+                <Material ResourceCount="12">
+                    <Resource Value="RES-AMBER"/>
+                </Material>
+                <Material ResourceCount="10">
+                    <Resource Value="RES-BONE"/>
+                </Material>
+            </MaterialRow>
+		</RecipeBase>
+		<Skills Value="SKILL_PACK-SHIP_SMALL"/>
+	</BUILD_REC-SHIP_SMALL>
+	<BUILD_REC-SHIP_MEDIUM Durability="50" WeightMultiplier="1.8">
+		<RecipeBase ResearchCost="-1" ResChildForbid="FALSE">
+			<DescriptionInfo Name="DES_SHIP_MEDIUM" Description="DES_SHIP_MEDIUM_DES" IconName="Ship2Sailboat"/>
+			<CountedTag Tag="TAG-SHIP" Amount="1.0"/>
+			<CountedTag Tag="TAG-MEDIUM_SHIP" Amount="1.0"/>
+			<MaterialRow>
+				<Material ResourceCount="75">
+					<Resource Value="RES-WOOD"/>
+				</Material>				
+				<Material ResourceCount="50">
+					<Resource Value="RES-BONE"/>
+				</Material>
+                <Material ResourceCount="40">
+                    <Resource Value="RES-WOOD"/>
+                </Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="45">
+					<Resource Value="RES-WOOD"/>
+				</Material>
+				<Material ResourceCount="40">
+					<Resource Value="RES-LEATHER"/>
+				</Material>
+				<Material ResourceCount="35">
+					<Resource Value="RES-BONE"/>
+				</Material>
+                <Material ResourceCount="30">
+                    <Resource Value="RES-AMBER"/>
+                </Material>
+			</MaterialRow>
+		</RecipeBase>
+		<Skills Value="SKILL_PACK-SHIP_MEDIUM"/>
+	</BUILD_REC-SHIP_MEDIUM>
+	<BUILD_REC-SHIP_LARGE Durability="80" WeightMultiplier="1.4">
+		<RecipeBase ResearchCost="-1" ResChildForbid="FALSE">
+			<DescriptionInfo Name="DES_SHIP_LARGE" Description="DES_SHIP_LARGE_DES" IconName="Ship3Ship"/>
+			<CountedTag Tag="TAG-SHIP" Amount="1.0"/>
+			<CountedTag Tag="TAG-HEAVY_SHIP" Amount="1.0"/>
+			<MaterialRow>
+				<Material ResourceCount="200">
+					<Resource Value="RES-WOOD"/>
+				</Material>
+				<Material ResourceCount="160">
+					<Resource Value="RES-WOOD"/>
+				</Material>
+				<Material ResourceCount="130">
+					<Resource Value="RES-BONE"/>
+				</Material>				
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="75">
+					<Resource Value="RES-LEATHER"/>
+				</Material>
+				<Material ResourceCount="65">
+					<Resource Value="RES-AMBER"/>
+				</Material>				
+				<Material ResourceCount="60">
+					<Resource Value="RES-WOOD"/>
+				</Material>
+                <Material ResourceCount="50">
+                    <Resource Value="RES-BONE"/>
+                </Material>
+			</MaterialRow>
+		</RecipeBase>
+		<Skills Value="SKILL_PACK-SHIP_LARGE"/>
+	</BUILD_REC-SHIP_LARGE>
+	
+	<BUILD_REC-SHIP_SMALL_STRIBOG Durability="30" WeightMultiplier="0.5">
+		<RecipeBase ResearchCost="1" ResChildForbid="FALSE">
+			<DescriptionInfo Name="DES_SHIP_SMALL_STRIBOG" Description="DES_SHIP_SMALL_STRIBOG_DES" IconName="Ship1Raft"/>
+			<CountedTag Tag="TAG-STRIBOG_RAFT" Amount="1.0"/>
+			<MaterialRow>
+				<Material ResourceCount="25">
+					<Resource Value="RES-WOOD"/>
+				</Material>                
+				<Material ResourceCount="18">
+					<Resource Value="RES-WOOD"/>
+				</Material>
+                <Material ResourceCount="14">
+                    <Resource Value="RES-BONE"/>
+                </Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="15">
+					<Resource Value="RES-LEATHER"/>
+				</Material>
+                <Material ResourceCount="13">
+                    <Resource Value="RES-WOOD"/>
+                </Material>
+                <Material ResourceCount="12">
+                    <Resource Value="RES-AMBER"/>
+                </Material>
+                <Material ResourceCount="10">
+                    <Resource Value="RES-BONE"/>
+                </Material>
+            </MaterialRow>
+		</RecipeBase>
+		<Skills Value="SKILL_PACK-SHIP_SMALL_STRIBOG"/>
+	</BUILD_REC-SHIP_SMALL_STRIBOG>
+</RECEIPTS_BUILDING>

@@ -15,6 +15,11 @@ namespace Thea2Translator.Logic
             get { return FlagHelper.IsSettedBit(Flag, 0); }
             private set { Flag = FlagHelper.GetSettedBitValue(Flag, 0, value); }
         }
+        public bool HasConflict
+        {
+            get { return FlagHelper.IsSettedBit(Flag, 1); }
+            private set { Flag = FlagHelper.GetSettedBitValue(Flag, 1, value); }
+        }
 
         public string Key { get; private set; }
         /// <summary>
@@ -43,6 +48,11 @@ namespace Thea2Translator.Logic
         /// Taki tekst jest zapisywany w trakcie exportu
         /// </summary>
         public string OutputText { get; private set; }
+        /// <summary>
+        /// Konfliktowy tekst
+        /// Powstaje przy mergowaniu w momencie powstania konfliktu
+        /// </summary>
+        public string ConflictTranslatedText { get; private set; }
 
         private string ConfirmationTime;
         private string ConfirmationUser;
@@ -96,10 +106,24 @@ namespace Thea2Translator.Logic
             OutputText = GetNodeText(element, "Texts/Output");
             TranslatedText = TextHelper.Normalize(OutputText);
             OldTranslatedText = GetNodeText(element, "Texts/Old");
+            ConflictTranslatedText = GetNodeText(element, "Texts/Conflict");
 
             ConfirmationTime = GetNodeText(element, "Confirmation/Time");
             ConfirmationGuid = GetNodeText(element, "Confirmation/GUID");
             ConfirmationUser = GetNodeText(element, "Confirmation/User");
+        }
+
+        public void ResolveConflict(bool resolved, string text)
+        {
+            HasConflict = !resolved;
+            if (resolved)
+                SetTranslated(text);
+        }       
+
+        public void SetConlfictWith(CacheElem elem)
+        {
+            HasConflict = true;
+            ConflictTranslatedText = elem.TranslatedText;
         }
 
         private string GetNodeText(XmlNode element, string xpath)
@@ -147,6 +171,7 @@ namespace Thea2Translator.Logic
             textsNode.AppendChild(GetNode(doc, "Input", InputText));
             textsNode.AppendChild(GetNode(doc, "Output", OutputText));
             if (!string.IsNullOrEmpty(OldTranslatedText)) textsNode.AppendChild(GetNode(doc, "Old", OldTranslatedText));
+            if (HasConflict) textsNode.AppendChild(GetNode(doc, "Conflict", ConflictTranslatedText));
             elementNode.AppendChild(textsNode);
 
             return elementNode;
@@ -225,6 +250,17 @@ namespace Thea2Translator.Logic
         public string GetTranslateLink()
         {
             return @"https://translate.google.pl/?hl=pl#view=home&op=translate&sl=en&tl=pl&text=" + OriginalText.ToLower();
+        }
+
+        public static bool IsEquals(CacheElem elem1, CacheElem elem2)
+        {
+            if (elem1 == null && elem2 == null) return true;
+
+            if (elem1 == null && elem2 != null) return false;
+            if (elem1 != null && elem2 == null) return false;
+            if (elem1.IsCorrectedByHuman != elem2.IsCorrectedByHuman) return false;
+            if (elem1.TranslatedText != elem2.TranslatedText) return false;
+            return true;
         }
     }
 }

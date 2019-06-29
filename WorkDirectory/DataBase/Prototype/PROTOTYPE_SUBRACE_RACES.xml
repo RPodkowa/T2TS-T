@@ -1,0 +1,59 @@
+﻿<PROTOTYPE_SUBRACE_RACES>
+
+	<!-- quantifiable tags with a chance of receiving them-->
+	<COUNTED_TAG_CHANCE Name="CountedTagChance">
+		<!-- percentage chance -->
+		<Chance Name="chance" Type="float" Required="TRUE"/>
+		<!-- -->
+		<CountedTag Name="countedTag" Type="COUNTED_TAG" Required="TRUE"/>
+	</COUNTED_TAG_CHANCE>
+
+	<!-- countable item number with chance -->
+	<COUNTED_CARGO_CHANCE Name="CountedCargoChance">
+		<!-- percentage chance -->
+		<Chance Name="chance" Type="float" Required="TRUE"/>
+		<!-- -->
+		<ItemCargo Name="itemCargo" Type="ITEM_CARGO" Required="TRUE"/>
+	</COUNTED_CARGO_CHANCE>
+
+	<!--xxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	
+	<!-- race information-->
+	<RACE Name="Race">
+		<!-- description -->
+		<DescriptionInfo Name="descriptionInfo" Type="DESCRIPTION_INFO" Required="FALSE"/>
+	</RACE>	
+	
+	<!-- Subrace information-->
+	<SUBRACE Name="Subrace">
+		<!-- description -->
+		<DescriptionInfo Name="descriptionInfo" Type="DESCRIPTION_INFO" Required="TRUE"/>
+		<!-- Race -->
+		<Race Name="race" Type="RACE" Required="TRUE"/>
+		<!-- Subrace main attributes -->
+		<MainSubraceAttributes Name="mainSubraceAttributes" Type="ArrayCOUNTED_TAG" Required="TRUE"/>
+		<!-- Subrace second attributes -->
+		<SecondSubraceAttributes Name="secondSubraceAttributes" Type="ArrayCOUNTED_TAG" Required="TRUE"/>
+		<!-- tags with their chance of appearing -->
+		<CommonSubraceAttributes Name="commonSubraceAttributes" Type="ArrayCOUNTED_TAG_CHANCE" Required="FALSE"/>
+		<!-- if it cannot use some slots Type items-->
+		<BlockedItemSlot Name="blockedItemSlot" Type="ArrayTAG" Required="FALSE"/>
+		<!-- This skill category do not lvl -->
+		<NaturalEffects Name="naturalEffects" Type="SKILL_PACK" Required="FALSE"/>
+		<!-- does not take up a slot, you’re dwarf, orc etc. All skills from pack are taken.-->
+		<NaturalSkills Name="NaturalSkills" Type="SKILL_PACK" Required="FALSE"/>
+		<!-- One random skill from skill pack is taken -->
+		<ClassSkills Name="classSkills" Type="SKILL_PACK" Required="FALSE"/>
+		<!-- group of skills that you can get on level up -->
+		<AdvancementSkills Name="advancementSkills" Type="SKILL_PACK" Required="FALSE"/>
+		<!-- -->
+		<GraphicMale Name="graphicsMale" Type="Arraystring" Required="FALSE"/>
+		<!-- -->
+		<GraphicFemale Name="graphicsFemale" Type="Arraystring" Required="FALSE"/>
+		<!-- items receive after death-->
+		<BodyCargo Name="bodyCargos" Type="ArrayCOUNTED_CARGO_CHANCE" Required="FALSE"/>
+		<!-- items used by subrace-->
+		<DefaultCargo Name="defaultCargos" Type="ArrayCOUNTED_CARGO_CHANCE" Required="FALSE"/>
+	</SUBRACE>
+	
+</PROTOTYPE_SUBRACE_RACES>

@@ -38,6 +38,7 @@
     <system:String x:Key="titleLabelDictinary">Dictinary</system:String>
     <system:String x:Key="usageCountLabelDictinary">Usage count</system:String>
     <system:String x:Key="isActiveLabelDictinary">Is active</system:String>
+    <system:String x:Key="isConflictLabelDictinary">Is conflict</system:String>
     <system:String x:Key="originalWordLabelDictinary">Original word</system:String>
     <system:String x:Key="translationLabelDictinary">Translation</system:String>
 

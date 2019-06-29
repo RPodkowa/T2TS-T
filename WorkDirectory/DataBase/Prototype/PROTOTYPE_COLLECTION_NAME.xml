@@ -1,0 +1,15 @@
+﻿<PROTOTYPE_COLLECTION_NAME>
+
+	<!-- character names-->
+	<NAME_COLLECTION Name="NameCollection">
+		<!--  -->
+		<Race Name="race" Type="RACE" Required="FALSE"/>
+		<!--  -->
+		<Subrace Name="subrace" Type="ArraySUBRACE" Required="FALSE"/>
+		<!--  -->
+		<CharacterMale Name="characterMales" Type="Arraystring" Required="FALSE"/>
+		<!--  -->
+		<CharacterFemale Name="characterFemales" Type="Arraystring" Required="FALSE"/>
+	</NAME_COLLECTION>
+	
+</PROTOTYPE_COLLECTION_NAME>

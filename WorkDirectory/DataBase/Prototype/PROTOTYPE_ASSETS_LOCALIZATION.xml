@@ -1,0 +1,55 @@
+﻿<PROTOTYPE_ASSETS_LOCALIZATION>
+	<!--PROTOTYPE_2D_ICONS_AND_DES-->
+	<!-- This binds crafted item, buildings etc. based on resorce to their icon and texts which will be shown ui-->
+	<ICON_TO_RES Name="IconToCraft">
+		<ResorceName Name="resorceName" Type="RESOURCE" Required="TRUE"/>
+		<SecondResorceName Name="secondResorceName" Type="RESOURCE" Required="FALSE"/>
+		<DescriptionInfo Name="descriptionInfo" Type="DESCRIPTION_INFO" Required="FALSE"/>
+	</ICON_TO_RES>
+
+	<ICON_TO_RECIPE Name="IconToRecipe">
+		<ResourceRecipe Name="resourceRecipe" Type="RESOURCE_RECIPE" Required="FALSE"/>
+		<ItemRecipe Name="itemRecipe" Type="ITEM_RECIPE" Required="FALSE"/>
+		<BuildingRecipe Name="buildingRecipe" Type="BUILDING_RECIPE" Required="FALSE"/>
+		<IconResLink Name="iconResLink" Type="ArrayICON_TO_RES" Required="TRUE"/>
+	</ICON_TO_RECIPE>
+
+	<ICON_TO_RECIPES_LIBRARY Name="IconToRecipesLibrary">
+		<IconRecipeLink Name="iconRecipeLink" Type="ArrayICON_TO_RECIPE" Required="TRUE"/>
+	</ICON_TO_RECIPES_LIBRARY>
+
+	
+	<!--PROTOTYPE_3D_MODELS-->
+	<!-- This binds 2d art for characters, buildings etc. to their respective 3d model which will be shown in map view-->
+	<ICON_TO_MODEL Name="IconToModel">		
+		<IconName Name="iconName" Type="string" Required="TRUE"/>
+		<ModelName Name="modelName" Type="string" Required="TRUE"/>
+	</ICON_TO_MODEL>
+
+	<ICON_TO_MODEL_LIBRARY Name="IconToModelLibrary">		
+		<IconModelLink Name="iconModelLink" Type="ArrayICON_TO_MODEL" Required="TRUE"/>		
+	</ICON_TO_MODEL_LIBRARY>
+
+	
+	<!-- DATABASE_UI_SCRIPTS-->
+    <SCRIPT_INFO  Name="ScriptInfo">
+        <NameString Name="nameString"  Type="string" Required="TRUE"/>
+        <Script Name="script" Type="string" Required="TRUE"/>        
+    </SCRIPT_INFO>
+
+    <SCRIPT_PACK  Name="ScriptPack">   
+        <Script Name="script" Type="ArraySCRIPT_INFO"  Required="TRUE"/>
+    </SCRIPT_PACK>
+	
+	
+	<!-- PROTOTYPE_LOCALIZATION-->
+	<ENTRY Name="Entry">
+		<Key Name="key" Type="string" Required="TRUE"/>
+		<Val Name="value" Type="string" Required="TRUE"/>
+	</ENTRY>
+
+	<LOC_LIBRARY Name="LocalizationLibrary">
+		<Entry Name="entries" Type="ArrayENTRY" Required="TRUE"/>
+	</LOC_LIBRARY>
+
+</PROTOTYPE_ASSETS_LOCALIZATION>

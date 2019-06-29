@@ -1,0 +1,511 @@
+﻿<TRAIT_CARD_CARDS>
+	<!--GODS SPECIALISATION-->
+	<!-- DIEVANA -->
+	<TRAIT_CARD-ANIMAL_PATH UnlockCost="-1">
+		<DescriptionInfo Name="DES_TRAIT_ANIMAL_PATH" Description="DES_TRAIT_ANIMAL_PATH_DES" IconName="TraitDzievanna"/>
+    <SkillForAllFollowers Value="SKILL-DZIEVANNA_ANIMAL_PATH"/>		
+	</TRAIT_CARD-ANIMAL_PATH>
+	<!-- ZORYA -->
+	<TRAIT_CARD-WARCRY UnlockCost="-1">
+		<DescriptionInfo Name="DES_TRAIT_WARCRY" Description="DES_TRAIT_WARCRY_DES" IconName="TraitZorya"/>
+		<SkillForAllFollowers Value="SKILL-ZORYA_WARCRY"/>		
+	</TRAIT_CARD-WARCRY>
+	<!-- LADA -->
+	<TRAIT_CARD-MUTUAL_LOVE UnlockCost="-1">
+		<DescriptionInfo Name="DES_TRAIT_MUTUAL_LOVE" Description="DES_TRAIT_MUTUAL_LOVE_DES" IconName="TraitLada"/>
+		<SkillForAllFollowers Value="SKILL-LADA_I_LOVE_YOU"/>
+		<TraitGameStartScript>
+			<ScriptName Value="Tra_ILoveYou"/>
+		</TraitGameStartScript>
+	</TRAIT_CARD-MUTUAL_LOVE>
+	<!-- STRIBOG -->
+	<TRAIT_CARD-LONG_TRAVEL UnlockCost="-1">
+		<DescriptionInfo Name="DES_TRAIT_LONG_TRAVEL" Description="DES_TRAIT_LONG_TRAVEL_DES" IconName="TraitStribog"/>
+		<TraitGameStartScript>
+			<ScriptName Value="Tra_LongTravel"/>
+		</TraitGameStartScript>
+		<AddItemCargo Value="ITEM_CARGO-STRIBOG_RAFT"/> 
+	</TRAIT_CARD-LONG_TRAVEL>
+	<!-- HORZ -->
+	<TRAIT_CARD-NIGHT_AFFINITY UnlockCost="-1">
+		<DescriptionInfo Name="DES_TRAIT_NIGHT_AFFINITY" Description="DES_TRAIT_NIGHT_AFFINITY_DES" IconName="TraitHorz"/>
+		<SkillForAllFollowers Value="SKILL-HORZ_NIGHT_PREDATOR"/>
+		<TraitGameStartScript>
+			<ScriptName Value="Tra_BeastOnYourSide"/>
+		</TraitGameStartScript>
+	</TRAIT_CARD-NIGHT_AFFINITY>
+	<!-- MAROVIT -->
+	<TRAIT_CARD-NIGHTMARE_GIFT UnlockCost="-1">
+		<DescriptionInfo Name="DES_TRAIT_NIGHTMARE_GIFT" Description="DES_TRAIT_NIGHTMARE_GIFT_DES" IconName="TraitMarovit"/>
+    <SkillForAllFollowers Value="SKILL-MAROVIT_NIGHTMARE_GIFT"/>
+	</TRAIT_CARD-NIGHTMARE_GIFT>
+	<!-- SVAROG -->
+	<TRAIT_CARD-MANY_HAMMERS_ONE_ANVIL UnlockCost="-1">
+		<DescriptionInfo Name="DES_TRAIT_MANY_HAMMERS_ONE_ANVIL" Description="DES_TRAIT_MANY_HAMMERS_ONE_ANVIL_DES" IconName="TraitSvarog"/>
+    <SkillForAllFollowers Value="SKILL-SVAROG_MANY_HAMMERS"/>
+	</TRAIT_CARD-MANY_HAMMERS_ONE_ANVIL>
+	<!-- TRIGLAV -->
+	<TRAIT_CARD-DIVINE_COMMANDER UnlockCost="-1">
+		<DescriptionInfo Name="DES_TRAIT_DIVINE_COMMANDER" Description="DES_TRAIT_DIVINE_COMMANDER_DES" IconName="TraitTriglav"/>
+    <SkillForAllFollowers Value="SKILL-TRIGLAV_GODS_COMMANDER"/>
+    <TraitGameStartScript>
+		<ScriptName Value="Tra_GodsCommander"/>
+    </TraitGameStartScript>
+	</TRAIT_CARD-DIVINE_COMMANDER>
+	<!-- NYIA -->
+	<TRAIT_CARD-IDOL_OF_PAIN UnlockCost="-1">
+		<DescriptionInfo Name="DES_TRAIT_IDOL_OF_PAIN" Description="DES_TRAIT_IDOL_OF_PAIN_DES" IconName="TraitNyia"/>
+    <SkillForAllFollowers Value="SKILL-IDOL_OF_PAIN"/>
+  </TRAIT_CARD-IDOL_OF_PAIN>
+	
+	<!-- CHARACTERS -->
+	<TRAIT_CARD-ADD_HUM_CHILDREN UnlockCost="0" UseCost="1">
+		<DescriptionInfo Name="DES_TRAIT_ADD_HUM_CHILDREN" Description="DES_TRAIT_ADD_HUM_CHILDREN_DES" IconName="DomainNeutral"/>
+		<AddSubrace Value="SUBRACE-HUM_STRONG_CHILD1"/> 
+		<AddSubrace Value="SUBRACE-HUM_STRONG_CHILD2"/> 
+		<DomainType Value="TAG-DOMAIN_NEUTRAL"/>
+	</TRAIT_CARD-ADD_HUM_CHILDREN>
+	<TRAIT_CARD-ADD_CHARACTER_WARRIOR_GRAY UnlockCost="0" UseCost="2">
+		<DescriptionInfo Name="DES_TRAIT_ADD_CHARACTER_WARRIOR" Description="DES_TRAIT_ADD_CHARACTER_WARRIOR_DES" IconName="DomainNeutral"/>
+		<AddSubrace Value="SUBRACE-HUM_WARRIOR"/> 
+		<DomainType Value="TAG-DOMAIN_NEUTRAL"/>
+	</TRAIT_CARD-ADD_CHARACTER_WARRIOR_GRAY>
+	<TRAIT_CARD-ADD_CHARACTER_CRAFTSMAN_GRAY UnlockCost="0" UseCost="2">
+		<DescriptionInfo Name="DES_TRAIT_ADD_CHARACTER_CRAFTSMAN" Description="DES_TRAIT_ADD_CHARACTER_CRAFTSMAN_DES" IconName="DomainNeutral"/>
+		<AddSubrace Value="SUBRACE-HUM_CRAFTSMAN"/> 
+		<DomainType Value="TAG-DOMAIN_NEUTRAL"/>
+	</TRAIT_CARD-ADD_CHARACTER_CRAFTSMAN_GRAY>
+	<TRAIT_CARD-ADD_CHARACTER_GATHERER_GRAY UnlockCost="0" UseCost="2">
+		<DescriptionInfo Name="DES_TRAIT_ADD_CHARACTER_GATHERER" Description="DES_TRAIT_ADD_CHARACTER_GATHERER_DES" IconName="DomainNeutral"/>
+		<AddSubrace Value="SUBRACE-HUM_GATHERER"/> 
+		<DomainType Value="TAG-DOMAIN_NEUTRAL"/>
+	</TRAIT_CARD-ADD_CHARACTER_GATHERER_GRAY>
+	<TRAIT_CARD-ADD_CHARACTER_SCOUNDREL_GRAY UnlockCost="0" UseCost="1">
+		<DescriptionInfo Name="DES_TRAIT_ADD_CHARACTER_SCOUNDREL" Description="DES_TRAIT_ADD_CHARACTER_SCOUNDREL_DES" IconName="DomainNeutral"/>
+		<AddSubrace Value="SUBRACE-HUM_SCOUNDREL_TRAIT"/>
+		<DomainType Value="TAG-DOMAIN_NEUTRAL"/>
+	</TRAIT_CARD-ADD_CHARACTER_SCOUNDREL_GRAY>
+	<TRAIT_CARD-ADD_RAT UnlockCost="5" UseCost="1">
+		<DescriptionInfo Name="DES_TRAIT_ADD_RAT" Description="DES_TRAIT_ADD_RAT_DES" IconName="DomainNeutral"/>
+		<AddSubrace Value="SUBRACE-RAT"/>
+		<DomainType Value="TAG-DOMAIN_NEUTRAL"/>
+	</TRAIT_CARD-ADD_RAT>
+	
+	<TRAIT_CARD-ADD_CHARACTER_HUNTER UnlockCost="0" UseCost="2">
+		<DescriptionInfo Name="DES_TRAIT_ADD_CHARACTER_HUNTER" Description="DES_TRAIT_ADD_CHARACTER_HUNTER_DES" IconName="DomainNature"/>
+		<AddSubrace Value="SUBRACE-HUM_HUNTER"/> 
+		<DomainType Value="TAG-DOMAIN_NATURE"/>
+	</TRAIT_CARD-ADD_CHARACTER_HUNTER>
+	<TRAIT_CARD-WOLF_ALFA UnlockCost="10" UseCost="2">
+		<DescriptionInfo Name="DES_TRAIT_ADD_WOLF_ALPHA" Description="DES_TRAIT_ADD_WOLF_ALPHA_DES" IconName="DomainNature"/>
+		<AddSubrace Value="SUBRACE-WOLF_ALFA"/>
+		<DomainType Value="TAG-DOMAIN_NATURE"/>
+	</TRAIT_CARD-WOLF_ALFA>
+	<TRAIT_CARD-ADD_SNAKE_ROYAL UnlockCost="10" UseCost="2">
+		<DescriptionInfo Name="DES_TRAIT_ADD_SNAKE_ROYAL" Description="DES_TRAIT_ADD_SNAKE_ROYAL_DES" IconName="DomainNature"/>
+		<AddSubrace Value="SUBRACE-SNAKE_ROYAL"/>
+		<DomainType Value="TAG-DOMAIN_NATURE"/>
+	</TRAIT_CARD-ADD_SNAKE_ROYAL>
+	<TRAIT_CARD-ADD_SPIDER_GIANT UnlockCost="5" UseCost="1">
+		<DescriptionInfo Name="DES_TRAIT_ADD_SPIDER_GIANT" Description="DES_TRAIT_ADD_SPIDER_GIANT_DES" IconName="DomainNature"/>
+		<AddSubrace Value="SUBRACE-SPIDER_GIANT"/>
+		<DomainType Value="TAG-DOMAIN_NATURE"/>
+	</TRAIT_CARD-ADD_SPIDER_GIANT>
+	
+	<TRAIT_CARD-ADD_CHARACTER_WARRIOR UnlockCost="0" UseCost="1">
+		<DescriptionInfo Name="DES_TRAIT_ADD_CHARACTER_WARRIOR" Description="DES_TRAIT_ADD_CHARACTER_WARRIOR_DES" IconName="DomainTurmoil"/>
+		<AddSubrace Value="SUBRACE-HUM_WARRIOR"/> 
+		<DomainType Value="TAG-DOMAIN_TURMOIL"/>
+	</TRAIT_CARD-ADD_CHARACTER_WARRIOR>
+	<TRAIT_CARD-ADD_ORC_CHILD UnlockCost="5" UseCost="1">
+		<DescriptionInfo Name="DES_TRAIT_ADD_ORC_CHILD" Description="DES_TRAIT_ADD_ORC_CHILD_DES" IconName="DomainTurmoil"/>
+		<AddSubrace Value="SUBRACE-ORC_CHILD"/> 
+		<DomainType Value="TAG-DOMAIN_TURMOIL"/>
+	</TRAIT_CARD-ADD_ORC_CHILD>
+	<TRAIT_CARD-ADD_ORC_YOUNG_PLODDER_GATHERER UnlockCost="15" UseCost="3">
+		<DescriptionInfo Name="DES_TRAIT_ADD_ORC_YOUNG_PLODDER_GATHERER" Description="DES_TRAIT_ADD_ORC_YOUNG_PLODDER_GATHERER_DES" IconName="DomainTurmoil"/>
+		<AddSubrace Value="SUBRACE-ORC_YOUNG_PLODDER_GATHERER_TRAIT"/> 
+		<DomainType Value="TAG-DOMAIN_TURMOIL"/>
+	</TRAIT_CARD-ADD_ORC_YOUNG_PLODDER_GATHERER>
+	
+	<TRAIT_CARD-ADD_CHARACTER_CRAFTSMAN UnlockCost="0" UseCost="1">
+		<DescriptionInfo Name="DES_TRAIT_ADD_CHARACTER_CRAFTSMAN" Description="DES_TRAIT_ADD_CHARACTER_CRAFTSMAN_DES" IconName="DomainLight"/>
+		<AddSubrace Value="SUBRACE-HUM_CRAFTSMAN"/> 
+		<DomainType Value="TAG-DOMAIN_LIGHT"/>
+	</TRAIT_CARD-ADD_CHARACTER_CRAFTSMAN>
+	<TRAIT_CARD-ADD_CHARACTER_ZERCA UnlockCost="20" UseCost="4">
+		<DescriptionInfo Name="DES_TRAIT_ADD_CHARACTER_ZERCA" Description="DES_TRAIT_ADD_CHARACTER_ZERCA_DES" IconName="DomainLight"/>
+		<AddSubrace Value="SUBRACE-HUM_YOUNG_ZERCA"/> 
+		<DomainType Value="TAG-DOMAIN_LIGHT"/>
+	</TRAIT_CARD-ADD_CHARACTER_ZERCA>
+	<TRAIT_CARD-DWARF_CHILD UnlockCost="10" UseCost="3">
+		<DescriptionInfo Name="DES_TRAIT_ADD_DWARF_CHILD" Description="DES_TRAIT_ADD_DWARF_CHILD_DES" IconName="DomainLight"/>
+		<AddSubrace Value="SUBRACE-DWARF_CHILD"/> 
+		<DomainType Value="TAG-DOMAIN_LIGHT"/>
+	</TRAIT_CARD-DWARF_CHILD>
+	<TRAIT_CARD-ADD_DWARF_CLANLESS_SMITH_TRAIT UnlockCost="25" UseCost="5">
+		<DescriptionInfo Name="DES_TRAIT_ADD_DWARF_CLANLESS_SMITH" Description="DES_TRAIT_ADD_DWARF_CLANLESS_SMITH_DES" IconName="DomainLight"/>
+		<AddSubrace Value="SUBRACE-DWARF_CLANLESS_SMITH_TRAIT"/> 
+		<DomainType Value="TAG-DOMAIN_LIGHT"/>
+	</TRAIT_CARD-ADD_DWARF_CLANLESS_SMITH_TRAIT>
+	
+	<TRAIT_CARD-ADD_CHARACTER_GATHERER UnlockCost="0" UseCost="1">
+		<DescriptionInfo Name="DES_TRAIT_ADD_CHARACTER_GATHERER" Description="DES_TRAIT_ADD_CHARACTER_GATHERER_DES" IconName="DomainHarmony"/>
+		<AddSubrace Value="SUBRACE-HUM_GATHERER"/> 
+		<DomainType Value="TAG-DOMAIN_HARMONY"/>
+	</TRAIT_CARD-ADD_CHARACTER_GATHERER>
+	<TRAIT_CARD-ADD_ELF_CHILD UnlockCost="10" UseCost="3">
+		<DescriptionInfo Name="DES_TRAIT_ADD_ELF_CHILD" Description="DES_TRAIT_ADD_ELF_CHILD_DES" IconName="DomainHarmony"/>
+		<AddSubrace Value="SUBRACE-ELF_CHILD"/> 
+		<DomainType Value="TAG-DOMAIN_HARMONY"/>
+	</TRAIT_CARD-ADD_ELF_CHILD>
+	<TRAIT_CARD-ADD_ELF_YOUNG_DRUID UnlockCost="25" UseCost="5">
+		<DescriptionInfo Name="DES_TRAIT_ADD_ELF_YOUNG_DRUID" Description="DES_TRAIT_ADD_ELF_YOUNG_DRUID_DES" IconName="DomainHarmony"/>
+		<AddSubrace Value="SUBRACE-ELF_BANISHED_DRUID_TRAIT"/> 
+		<DomainType Value="TAG-DOMAIN_HARMONY"/>
+	</TRAIT_CARD-ADD_ELF_YOUNG_DRUID>
+	
+	<TRAIT_CARD-ADD_CHARACTER_SCAVENGER UnlockCost="0" UseCost="1">
+		<DescriptionInfo Name="DES_TRAIT_ADD_CHARACTER_SCAVENGER" Description="DES_TRAIT_ADD_CHARACTER_SCAVENGER_DES" IconName="DomainMagic"/>
+		<AddSubrace Value="SUBRACE-HUM_SCAVENGER_TRAIT"/> 
+		<DomainType Value="TAG-DOMAIN_MAGIC"/>
+	</TRAIT_CARD-ADD_CHARACTER_SCAVENGER>
+	<TRAIT_CARD-ADD_GOB_CHILD UnlockCost="5" UseCost="1">
+		<DescriptionInfo Name="DES_TRAIT_ADD_GOB_CHILD" Description="DES_TRAIT_ADD_GOB_CHILD_DES" IconName="DomainMagic"/>
+		<AddSubrace Value="SUBRACE-GOB_CHILD"/> 
+		<DomainType Value="TAG-DOMAIN_MAGIC"/>
+	</TRAIT_CARD-ADD_GOB_CHILD>
+	<TRAIT_CARD-ADD_CHARACTER_SHAMAN UnlockCost="20" UseCost="4">
+		<DescriptionInfo Name="DES_TRAIT_ADD_CHARACTER_SHAMAN" Description="DES_TRAIT_ADD_CHARACTER_SHAMAN_DES" IconName="DomainMagic"/>
+		<AddSubrace Value="SUBRACE-GOB_TAINTED_SHAMAN"/> 
+		<DomainType Value="TAG-DOMAIN_MAGIC"/>
+	</TRAIT_CARD-ADD_CHARACTER_SHAMAN>
+	<TRAIT_CARD-ADD_GOB_YOUNG_SKIRMISHER_TRAIT UnlockCost="10" UseCost="2">
+		<DescriptionInfo Name="DES_TRAIT_ADD_GOB_YOUNG_SKIRMISHER" Description="DES_TRAIT_ADD_GOB_YOUNG_SKIRMISHER_DES" IconName="DomainMagic"/>
+		<AddSubrace Value="SUBRACE-GOB_YOUNG_SKIRMISHER"/> 
+		<DomainType Value="TAG-DOMAIN_MAGIC"/>
+	</TRAIT_CARD-ADD_GOB_YOUNG_SKIRMISHER_TRAIT>
+	
+	<TRAIT_CARD-ADD_CHARACTER_SCOUNDREL UnlockCost="0" UseCost="1">
+		<DescriptionInfo Name="DES_TRAIT_ADD_CHARACTER_SCOUNDREL_RAT" Description="DES_TRAIT_ADD_CHARACTER_SCOUNDREL_RAT_DES" IconName="DomainIntellect"/>
+		<AddSubrace Value="SUBRACE-HUM_SCOUNDREL_TRAIT"/> 
+		<AddSubrace Value="SUBRACE-RAT"/>
+		<DomainType Value="TAG-DOMAIN_INTELLECT"/>
+	</TRAIT_CARD-ADD_CHARACTER_SCOUNDREL>
+	<TRAIT_CARD-ADD_ICE_YOUNG_SNIEZYNKI_TRAIT UnlockCost="15" UseCost="4">
+		<DescriptionInfo Name="DES_TRAIT_ADD_ICE_YOUNG_SNIEZYNKI" Description="DES_TRAIT_ADD_ICE_YOUNG_SNIEZYNKI_DES" IconName="DomainIntellect"/>
+		<AddSubrace Value="SUBRACE-ICE_YOUNG_SNIEZYNKI_TRAIT"/> 
+		<DomainType Value="TAG-DOMAIN_INTELLECT"/>
+	</TRAIT_CARD-ADD_ICE_YOUNG_SNIEZYNKI_TRAIT>
+	<TRAIT_CARD-ADD_DEMON_YOUNG_HOHLICK_TRAIT UnlockCost="10" UseCost="2">
+		<DescriptionInfo Name="DES_TRAIT_ADD_DEMON_YOUNG_HOHLICK" Description="DES_TRAIT_ADD_DEMON_YOUNG_HOHLICK_DES" IconName="DomainIntellect"/>
+		<AddSubrace Value="SUBRACE-DEMON_YOUNG_HOHLICK_TRAIT"/> 
+		<DomainType Value="TAG-DOMAIN_INTELLECT"/>
+	</TRAIT_CARD-ADD_DEMON_YOUNG_HOHLICK_TRAIT>
+	
+
+	<!-- DOMAIN NEUTRAL-->
+	<TRAIT_CARD-BASIC_EQUIPMENT UnlockCost="0">
+		<DescriptionInfo Name="DES_TRAIT_BASIC_EQUIPMENT" Description="DES_TRAIT_BASIC_EQUIPMENT_DES" IconName="DomainNeutral"/>
+		<AddItemCargo Value="ITEM_CARGO-PACK_LOW_RANDOM_GEMSTONE"/>
+		<AddItemCargo Value="ITEM_CARGO-WEAK_ONE_PET_CROW"/> 
+		<DomainType Value="TAG-DOMAIN_NEUTRAL"/>
+	</TRAIT_CARD-BASIC_EQUIPMENT>
+	<TRAIT_CARD-ADD_BASIC_PACK_FOOD UnlockCost="0">
+		<DescriptionInfo Name="DES_TRAIT_ADD_BASIC_PACK_FOOD" Description="DES_TRAIT_ADD_BASIC_PACK_FOOD_DES" IconName="DomainNeutral"/>
+		<AddItemCargo Value="ITEM_CARGO-BASIC_LOTS_FOOD"/>
+		<AddItemCargo Value="ITEM_CARGO-BASIC_ONE_EQUIPMENT"/>
+		<DomainType Value="TAG-DOMAIN_NEUTRAL"/>
+	</TRAIT_CARD-ADD_BASIC_PACK_FOOD>
+	<TRAIT_CARD-BASIC_THREE_EQUIPMENT UnlockCost="1">
+		<DescriptionInfo Name="DES_TRAIT_BASIC_THREE_EQUIPMENT" Description="DES_TRAIT_BASIC_THREE_EQUIPMENT_DES" IconName="DomainNeutral"/>
+		<AddItemCargo Value="ITEM_CARGO-LOW_RES_TWO_EQUIPMENT"/> 
+		<DomainType Value="TAG-DOMAIN_NEUTRAL"/>
+	</TRAIT_CARD-BASIC_THREE_EQUIPMENT>
+	<TRAIT_CARD-BASIC_TWENTY_SUPPLIES UnlockCost="1">
+		<DescriptionInfo Name="DES_TRAIT_BASIC_TWENTY_SUPPLIES" Description="DES_TRAIT_BASIC_TWENTY_SUPPLIES_DES" IconName="DomainNeutral"/>
+		<AddItemCargo Value="ITEM_CARGO-BASIC_FORTY_SUPPLIES_NO_COAL"/>
+		<DomainType Value="TAG-DOMAIN_NEUTRAL"/>
+	</TRAIT_CARD-BASIC_TWENTY_SUPPLIES>
+	<TRAIT_CARD-BASIC_ONE_ROBE UnlockCost="3">
+		<DescriptionInfo Name="DES_TRAIT_BASIC_ONE_ROBE" Description="DES_TRAIT_BASIC_ONE_ROBE_DES" IconName="DomainNeutral"/>
+		<AddItemCargo Value="ITEM_CARGO-ADV_ONE_ROBE"/> 
+		<DomainType Value="TAG-DOMAIN_NEUTRAL"/>
+	</TRAIT_CARD-BASIC_ONE_ROBE>
+	<TRAIT_CARD-BASIC_ONE_JEWELLERY UnlockCost="3">
+		<DescriptionInfo Name="DES_TRAIT_BASIC_ONE_JEWELLERY" Description="DES_TRAIT_BASIC_ONE_JEWELLERY_DES" IconName="DomainNeutral"/>
+		<AddItemCargo Value="ITEM_CARGO-ADV_ONE_JEWELLERY"/> 
+		<DomainType Value="TAG-DOMAIN_NEUTRAL"/>
+	</TRAIT_CARD-BASIC_ONE_JEWELLERY>
+	<TRAIT_CARD-BASIC_ONE_SHIELD UnlockCost="3">
+		<DescriptionInfo Name="DES_TRAIT_BASIC_ONE_SHIELD" Description="DES_TRAIT_BASIC_ONE_SHIELD_DES" IconName="DomainNeutral"/>
+		<AddItemCargo Value="ITEM_CARGO-ADV_ONE_SHIELD"/> 
+		<DomainType Value="TAG-DOMAIN_NEUTRAL"/>
+	</TRAIT_CARD-BASIC_ONE_SHIELD>
+	<TRAIT_CARD-BASIC_ONE_GATHERING_TOOL UnlockCost="3">
+		<DescriptionInfo Name="DES_TRAIT_BASIC_ONE_GATHERING_TOOL" Description="DES_TRAIT_BASIC_ONE_GATHERING_TOOL_DES" IconName="DomainNeutral"/>
+		<AddItemCargo Value="ITEM_CARGO-ADV_ONE_GATHERING_TOOL"/> 
+		<DomainType Value="TAG-DOMAIN_NEUTRAL"/>
+	</TRAIT_CARD-BASIC_ONE_GATHERING_TOOL>
+	<TRAIT_CARD-BASIC_ONE_CRAFTING_TOOL UnlockCost="3">
+		<DescriptionInfo Name="DES_TRAIT_BASIC_ONE_CRAFTING_TOOL" Description="DES_TRAIT_BASIC_ONE_CRAFTING_TOOL_DES" IconName="DomainNeutral"/>
+		<AddItemCargo Value="ITEM_CARGO-ADV_ONE_CRAFTING_TOOL"/> 
+		<DomainType Value="TAG-DOMAIN_NEUTRAL"/>
+	</TRAIT_CARD-BASIC_ONE_CRAFTING_TOOL>
+
+	<TRAIT_CARD-I_LIKE_GREEN UnlockCost="3">
+		<DescriptionInfo Name="DES_TRAIT_I_LIKE_GREEN" Description="DES_TRAIT_I_LIKE_GREEN_DES" IconName="DomainNeutral"/>
+		<TraitGameStartScript>
+			<ScriptName Value="Tra_ILikeGreen"/>
+		</TraitGameStartScript>
+		<DomainType Value="TAG-DOMAIN_NEUTRAL"/>
+	</TRAIT_CARD-I_LIKE_GREEN>
+	<TRAIT_CARD-I_LIKE_FIGHT UnlockCost="3">
+		<DescriptionInfo Name="DES_TRAIT_I_LIKE_FIGHT" Description="DES_TRAIT_I_LIKE_FIGHT_DES" IconName="DomainNeutral"/>
+		<TraitGameStartScript>
+			<ScriptName Value="Tra_ILikeFight"/>
+		</TraitGameStartScript>
+		<DomainType Value="TAG-DOMAIN_NEUTRAL"/>
+	</TRAIT_CARD-I_LIKE_FIGHT>
+	<TRAIT_CARD-TRUE_HEROES UnlockCost="5">
+		<DescriptionInfo Name="DES_TRAIT_TRUE_HEROES" Description="DES_TRAIT_TRUE_HEROES_DES" IconName="DomainNeutral"/>
+		<SkillForAllFollowers Value="SKILL-TRUE_HEROES"/>
+		<DomainType Value="TAG-DOMAIN_NEUTRAL"/>
+	</TRAIT_CARD-TRUE_HEROES>
+	<TRAIT_CARD-RAFT UnlockCost="5">
+		<DescriptionInfo Name="DES_TRAIT_RAFT" Description="DES_TRAIT_RAFT_DES" IconName="DomainNeutral"/>
+		<AddItemCargo Value="ITEM_CARGO-RAFT"/> 
+		<DomainType Value="TAG-DOMAIN_NEUTRAL"/>
+	</TRAIT_CARD-RAFT>
+	<TRAIT_CARD-WISH_I_HAD_A_WELL UnlockCost="5">
+		<DescriptionInfo Name="DES_TRAIT_WISH_I_HAD_A_WELL" Description="DES_TRAIT_WISH_I_HAD_A_WELL_DES" IconName="DomainNeutral"/>
+		<AddItemCargo Value="ITEM_CARGO-BASIC_30TO50_MATERIALS"/>
+		<DomainType Value="TAG-DOMAIN_NEUTRAL"/>
+	</TRAIT_CARD-WISH_I_HAD_A_WELL>
+	<TRAIT_CARD-FOG_OF_KNOWLADGE UnlockCost="5">
+		<DescriptionInfo Name="DES_TRAIT_FOG_OF_KNOWLEDGE" Description="DES_TRAIT_FOG_OF_KNOWLEDGE_DES" IconName="DomainNeutral"/>
+		<AddItemCargo Value="ITEM_CARGO-BASIC_TWENTY_MATERIALS"/>
+		<SkillForAllFollowers Value="SKILL-FOG_OF_KNOWLADGE"/>
+		<DomainType Value="TAG-DOMAIN_NEUTRAL"/>
+	</TRAIT_CARD-FOG_OF_KNOWLADGE>
+	<TRAIT_CARD-SEASONED_FOLLOWERS UnlockCost="2">
+		<DescriptionInfo Name="DES_TRAIT_SEASONED_FOLLOWERS" Description="DES_TRAIT_SEASONED_FOLLOWERS_DES" IconName="DomainNeutral"/>
+		<TraitGameStartScript>
+			<ScriptName Value="Tra_SeasonedFollowers"/>
+		</TraitGameStartScript>
+		<DomainType Value="TAG-DOMAIN_NEUTRAL"/>
+	</TRAIT_CARD-SEASONED_FOLLOWERS>
+	
+	<!-- DOMAIN INTELLECT-->
+	<TRAIT_CARD-FATHERS_TOOL UnlockCost="5">
+		<DescriptionInfo Name="DES_TRAIT_FATHERS_TOOLS" Description="DES_TRAIT_FATHERS_TOOLS_DES" IconName="DomainIntellect"/>
+		<AddItemCargo Value="ITEM_CARGO-RARE_ONE_TOOL"/> 
+		<DomainType Value="TAG-DOMAIN_INTELLECT"/>
+	</TRAIT_CARD-FATHERS_TOOL>
+	<TRAIT_CARD-SMARTER_EVERY_DAY UnlockCost="5">
+		<DescriptionInfo Name="DES_TRAIT_SMARTER_EVERY_DAY" Description="DES_TRAIT_SMARTER_EVERY_DAY_DES" IconName="DomainIntellect"/>
+		<SkillForAllFollowers Value="SKILL-SMARTER_EVERY_DAY"/>
+		<DomainType Value="TAG-DOMAIN_INTELLECT"/>
+	</TRAIT_CARD-SMARTER_EVERY_DAY>
+	<TRAIT_CARD-LOGIC_WALL UnlockCost="5">
+		<DescriptionInfo Name="DES_TRAIT_LOGIC_WALL" Description="DES_TRAIT_LOGIC_WALL_DES" IconName="DomainIntellect"/>
+		<SkillForAllFollowers Value="SKILL-LOGIC_WALL"/>
+		<DomainType Value="TAG-DOMAIN_INTELLECT"/>
+	</TRAIT_CARD-LOGIC_WALL>
+	<!--<TRAIT_CARD-ADDITIONAL_RESEARCH_POINT UnlockCost="5">
+		<DescriptionInfo Name="DES_TRAIT_ADDITIONAL_RESEARCH_POINTS" Description="DES_TRAIT_ADDITIONAL_RESEARCH_POINTS_DES" IconName="DomainIntellect"/>
+		<TraitGameStartScript>
+			<ScriptName Value="Tra_AditionalResearchAdvancementPoints"/>
+		</TraitGameStartScript>
+		<DomainType Value="TAG-DOMAIN_INTELLECT"/>
+	</TRAIT_CARD-ADDITIONAL_RESEARCH_POINT>-->
+	<!--<TRAIT_CARD-BRAINER UnlockCost="5">
+		<DescriptionInfo Name="DES_TRAIT_BRAINER" Description="DES_TRAIT_BRAINER_DES" IconName="DomainIntellect"/>
+		<SkillForAllFollowers Value="SKILL-BRAINER"/>
+		<TraitGameStartScript>
+			<ScriptName Value="Tra_Brainer"/>
+		</TraitGameStartScript>
+		<DomainType Value="TAG-DOMAIN_INTELLECT"/>
+	</TRAIT_CARD-BRAINER>-->
+	
+	<!-- DOMAIN LIGHT-->
+	<TRAIT_CARD-FAMILY_ARMOUR UnlockCost="5">
+		<DescriptionInfo Name="DES_TRAIT_FAMILY_ARMOUR" Description="DES_TRAIT_FAMILY_ARMOUR_DES" IconName="DomainLight"/>
+		<AddItemCargo Value="ITEM_CARGO-RARE_ONE_ARMOUR"/>
+		<DomainType Value="TAG-DOMAIN_LIGHT"/>
+	</TRAIT_CARD-FAMILY_ARMOUR>
+	<TRAIT_CARD-SOLAR_POWERED UnlockCost="5">
+		<DescriptionInfo Name="DES_TRAIT_SOLAR_POWERED" Description="DES_TRAIT_SOLAR_POWERED_DES" IconName="DomainLight"/>
+		<SkillForAllFollowers Value="SKILL-SOLAR_POWERED"/>
+		<DomainType Value="TAG-DOMAIN_LIGHT"/>
+	</TRAIT_CARD-SOLAR_POWERED>
+	<TRAIT_CARD-JUMPING_FISH UnlockCost="3">
+		<DescriptionInfo Name="DES_TRAIT_JUMPING_FISH" Description="DES_TRAIT_JUMPING_FISH_DES" IconName="DomainLight"/>
+		<AddItemCargo Value="ITEM_CARGO-TWO_FISH"/> 
+		<TraitGameStartScript>
+			<ScriptName Value="Tra_JumpingFish"/>
+		</TraitGameStartScript>
+		<DomainType Value="TAG-DOMAIN_LIGHT"/>
+	</TRAIT_CARD-JUMPING_FISH>
+	<TRAIT_CARD-NEW_DAY UnlockCost="5">
+		<DescriptionInfo Name="DES_TRAIT_NEW_DAY" Description="DES_TRAIT_NEW_DAY_DES" IconName="DomainLight"/>
+		<SkillForAllFollowers Value="SKILL-NEW_DAY"/>
+		<DomainType Value="TAG-DOMAIN_LIGHT"/>
+	</TRAIT_CARD-NEW_DAY>
+	<TRAIT_CARD-EAGLE_EYE UnlockCost="5">
+		<DescriptionInfo Name="DES_TRAIT_EAGLE_EYE" Description="DES_TRAIT_EAGLE_EYE_DES" IconName="DomainLight"/>
+		<SkillForAllFollowers Value="SKILL-EAGLE_EYE"/>
+		<DomainType Value="TAG-DOMAIN_LIGHT"/>
+	</TRAIT_CARD-EAGLE_EYE>
+	
+	<!-- DOMAIN HARMONY-->
+	<TRAIT_CARD-STRONG_ONE_PET_DOG UnlockCost="5">
+		<DescriptionInfo Name="DES_TRAIT_STRONG_ONE_PET_DOG" Description="DES_TRAIT_STRONG_ONE_PET_DOG_DES" IconName="DomainHarmony"/>
+		<AddItemCargo Value="ITEM_CARGO-RARE_ONE_PET_DOG"/> 
+		<DomainType Value="TAG-DOMAIN_HARMONY"/>
+	</TRAIT_CARD-STRONG_ONE_PET_DOG>
+	<!--<TRAIT_CARD-FRIENDLY_FACE UnlockCost="5">
+		<DescriptionInfo Name="DES_TRAIT_FRIENDLY_FACE" Description="DES_TRAIT_FRIENDLY_FACE_DES" IconName="DomainHarmony"/>
+		<TraitGameStartScript>
+			<ScriptName Value="Tra_FriendlyFace"/>
+		</TraitGameStartScript>
+		<DomainType Value="TAG-DOMAIN_HARMONY"/>
+	</TRAIT_CARD-FRIENDLY_FACE>-->
+	<!--<TRAIT_CARD-FRIEND_OF_THE_FOREST UnlockCost="5">
+		<DescriptionInfo Name="DES_TRAIT_FRIEND_OF_THE_FOREST" Description="DES_TRAIT_FRIEND_OF_THE_FOREST_DES" IconName="DomainHarmony"/>
+		<TraitGameStartScript>
+			<ScriptName Value="Tra_FriendOfTheForest"/>
+		</TraitGameStartScript>
+		<DomainType Value="TAG-DOMAIN_HARMONY"/>
+	</TRAIT_CARD-FRIEND_OF_THE_FOREST>-->
+	<TRAIT_CARD-INNER_PEACE UnlockCost="15">
+		<DescriptionInfo Name="DES_TRAIT_INNER_PEACE" Description="DES_TRAIT_INNER_PEACE_DES" IconName="DomainHarmony"/>
+		<TraitGameStartScript>
+			<ScriptName Value="Tra_InnerPeace"/>
+		</TraitGameStartScript>
+		<DomainType Value="TAG-DOMAIN_HARMONY"/>
+	</TRAIT_CARD-INNER_PEACE>
+	<TRAIT_CARD-HEALING_TOUCH UnlockCost="15">
+		<DescriptionInfo Name="DES_TRAIT_HEALING_TOUCH" Description="DES_TRAIT_HEALING_TOUCH_DES" IconName="DomainHarmony"/>
+		<TraitGameStartScript>
+			<ScriptName Value="Tra_LifeTouchSkill"/>
+		</TraitGameStartScript>
+		<DomainType Value="TAG-DOMAIN_HARMONY"/>
+	</TRAIT_CARD-HEALING_TOUCH>
+		
+	
+	<!-- DOMAIN NATURE-->
+	<TRAIT_CARD-FOUR_LEGS_FRIEND UnlockCost="3">
+		<DescriptionInfo Name="DES_TRAIT_FOUR_LEGS_FRIEND" Description="DES_TRAIT_FOUR_LEGS_FRIEND_DES" IconName="DomainNature"/>
+		<AddItemCargo Value="ITEM_CARGO-RARE_ONE_PET_HORSE"/> 
+		<DomainType Value="TAG-DOMAIN_NATURE"/>
+	</TRAIT_CARD-FOUR_LEGS_FRIEND>
+	<TRAIT_CARD-MITHRIL_GOAT UnlockCost="3">
+		<DescriptionInfo Name="DES_TRAIT_MITHRIL_GOAT" Description="DES_TRAIT_MITHRIL_GOAT_DES" IconName="DomainNature"/>
+		<AddItemCargo Value="ITEM_CARGO-PILE_MITHRILL"/> 
+		<AddItemCargo Value="ITEM_CARGO-WEAK_ONE_PET_GOAT"/> 
+		<DomainType Value="TAG-DOMAIN_NATURE"/>
+	</TRAIT_CARD-MITHRIL_GOAT>
+	<!--<TRAIT_CARD-FAMILIAR_AREA UnlockCost="5">
+		<DescriptionInfo Name="DES_TRAIT_FAMILIAR_AREA" Description="DES_TRAIT_FAMILIAR_AREA_DES" IconName="DomainNature"/>
+		<TraitGameStartScript>
+			<ScriptName Value="Tra_FamiliarArea"/>
+		</TraitGameStartScript>
+		<DomainType Value="TAG-DOMAIN_NATURE"/>
+	</TRAIT_CARD-FAMILIAR_AREA >-->
+	<TRAIT_CARD-KINGS_TABLE UnlockCost="5">
+		<DescriptionInfo Name="DES_TRAIT_KINGS_TABLE" Description="DES_TRAIT_KINGS_TABLE_DES" IconName="DomainNature"/>
+		<TraitGameStartScript>
+			<ScriptName Value="Tra_UnlockAllFoodRecipes"/>
+		</TraitGameStartScript>
+		<DomainType Value="TAG-DOMAIN_NATURE"/>
+	</TRAIT_CARD-KINGS_TABLE>
+	<TRAIT_CARD-BEST_MEAL_EVER UnlockCost="5">
+		<DescriptionInfo Name="DES_TRAIT_BEST_MEAL_EVER" Description="DES_TRAIT_BEST_MEAL_EVER_DES" IconName="DomainNature"/>
+    <TraitGameStartScript>
+      <ScriptName Value="Tra_ExtraMoraleForFood"/>
+    </TraitGameStartScript>
+		<DomainType Value="TAG-DOMAIN_NATURE"/>
+	</TRAIT_CARD-BEST_MEAL_EVER>
+	<TRAIT_CARD-GATHERERS_FLOCK UnlockCost="5">
+		<DescriptionInfo Name="DES_TRAIT_GATHERERS_FLOCK" Description="DES_TRAIT_GATHERERS_FLOCK_DES" IconName="DomainNature"/>
+		<SkillForAllFollowers Value="SKILL-GATHERERS_FLOCK"/>
+		<DomainType Value="TAG-DOMAIN_NATURE"/>
+	</TRAIT_CARD-GATHERERS_FLOCK>
+	<TRAIT_CARD-CAMPING_GATHERING_RANGE UnlockCost="15">
+		<DescriptionInfo Name="DES_TRAIT_CAMPING_GATHERING_RANGE" Description="DES_TRAIT_CAMPING_GATHERING_RANGE_DES" IconName="DomainNature"/>
+    <TraitGameStartScript>
+      <ScriptName Value="Tra_CampGatheringRange"/>
+    </TraitGameStartScript>
+		<DomainType Value="TAG-DOMAIN_NATURE"/>
+	</TRAIT_CARD-CAMPING_GATHERING_RANGE>
+	
+	<!-- DOMAIN TURMOIL-->
+	<TRAIT_CARD-FAMILY_WEAPON UnlockCost="5">
+		<DescriptionInfo Name="DES_TRAIT_FAMILY_WEAPON" Description="DES_TRAIT_FAMILY_WEAPON_DES" IconName="DomainTurmoil"/>
+		<AddItemCargo Value="ITEM_CARGO-RARE_ONE_WEAPON"/> 
+		<DomainType Value="TAG-DOMAIN_TURMOIL"/>
+	</TRAIT_CARD-FAMILY_WEAPON>
+	<!--<TRAIT_CARD-SEAL_OF_STRENGTH UnlockCost="1">
+		<DescriptionInfo Name="DES_TRAIT_SEAL_OF_STRENGTH" Description="DES_TRAIT_SEAL_OF_STRENGTH_DES" IconName="DomainTurmoil"/>
+		<SkillForAllFollowers Value="SKILL-SEAL_OF_STRENGTH"/>
+		<TraitGameStartScript>
+			<ScriptName Value="Tra_SealOfStrength"/>
+		</TraitGameStartScript>
+		<DomainType Value="TAG-DOMAIN_TURMOIL"/>
+	</TRAIT_CARD-SEAL_OF_STRENGTH>-->
+	<TRAIT_CARD-CRAFTERS_FLOCK UnlockCost="5">
+		<DescriptionInfo Name="DES_TRAIT_CRAFTERS_FLOCK" Description="DES_TRAIT_CRAFTERS_FLOCK_DES" IconName="DomainTurmoil"/>
+		<TraitGameStartScript>
+			<ScriptName Value="Tra_CrafterFlock"/>
+		</TraitGameStartScript>
+		<DomainType Value="TAG-DOMAIN_TURMOIL"/>
+	</TRAIT_CARD-CRAFTERS_FLOCK>
+	<TRAIT_CARD-ALL_ENEMIES_ARE_MINE UnlockCost="10">
+		<DescriptionInfo Name="DES_TRAIT_ALL_ENEMIES_ARE_MINE" Description="DES_TRAIT_ALL_ENEMIES_ARE_MINE_DES" IconName="DomainTurmoil"/>
+		<TraitGameStartScript>
+			<ScriptName Value="Tra_AllEnemiesAreMine"/>
+		</TraitGameStartScript>
+		<DomainType Value="TAG-DOMAIN_TURMOIL"/>
+	</TRAIT_CARD-ALL_ENEMIES_ARE_MINE>
+	<TRAIT_CARD-TOUGH_GUY UnlockCost="10">
+		<DescriptionInfo Name="DES_TRAIT_TOUGH_GUY" Description="DES_TRAIT_TOUGH_GUY_DES" IconName="DomainTurmoil"/>
+		<SkillForAllFollowers Value="SKILL-TOUGH_GUY"/>
+		<DomainType Value="TAG-DOMAIN_TURMOIL"/>
+	</TRAIT_CARD-TOUGH_GUY>
+	
+	
+	<!-- DOMAIN MAGIC-->
+	<TRAIT_CARD-NATURAL_KNOWLEDGE UnlockCost="5">
+		<DescriptionInfo Name="DES_TRAIT_NATURAL_KNOWLEDGE" Description="DES_TRAIT_NATURAL_KNOWLEDGE_DES" IconName="DomainMagic"/>
+		<SkillForAllFollowers Value="SKILL-NATURAL_KNOWLEDGE"/>
+		<DomainType Value="TAG-DOMAIN_MAGIC"/>
+	</TRAIT_CARD-NATURAL_KNOWLEDGE>
+	<TRAIT_CARD-START_LOYALTY_DEMONS UnlockCost="5">
+		<DescriptionInfo Name="DES_TRAIT_START_LOYALTY_DEMONS" Description="DES_TRAIT_START_LOYALTY_DEMONS_DES" IconName="DomainMagic"/>
+		<TraitGameStartScript>
+			<ScriptName Value="Tra_StartingLoyaltyDemons"/>
+		</TraitGameStartScript>
+		<DomainType Value="TAG-DOMAIN_MAGIC"/>
+	</TRAIT_CARD-START_LOYALTY_DEMONS>
+	<TRAIT_CARD-DEMONIC_POSSESSION UnlockCost="10">
+		<DescriptionInfo Name="DES_TRAIT_DEMONIC_POSSESSION" Description="DES_TRAIT_DEMONIC_POSSESSION_DES" IconName="DomainMagic"/>
+		<SkillForAllFollowers Value="SKILL-DEMONIC_POSSESSION"/>
+		<DomainType Value="TAG-DOMAIN_MAGIC"/>
+	</TRAIT_CARD-DEMONIC_POSSESSION>
+	<!--
+			NEED TO BE CHANGE
+	<TRAIT_CARD-SHADOW_PROTECTION UnlockCost="10">
+		<DescriptionInfo Name="DES_TRAIT_SHADOW_PROTECTION" Description="DES_TRAIT_SHADOW_PROTECTION_DES" IconName="DomainMagic"/>
+		<TraitGameStartScript>
+			<ScriptName Value="Tra_ShadowProtection"/>
+		</TraitGameStartScript>
+		<DomainType Value="TAG-DOMAIN_MAGIC"/>
+	</TRAIT_CARD-SHADOW_PROTECTION>-->
+	<TRAIT_CARD-MAGIC_SCROLL  UnlockCost="10">
+		<DescriptionInfo Name="DES_TRAIT_MAGIC_SCROLL" Description="DES_TRAIT_MAGIC_SCROLL_DES" IconName="DomainMagic"/>
+		<AddItemCargo Value="ITEM_CARGO-RARE_ONE_SCROLL_2H"/>
+		<DomainType Value="TAG-DOMAIN_MAGIC"/>
+	</TRAIT_CARD-MAGIC_SCROLL>
+	
+</TRAIT_CARD_CARDS>

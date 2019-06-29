@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ModInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="TheaPL" Graphic="mod_art.png" Visibility="0">  
+	<DB>DATABASE_DES_LOCALIZATION.xml</DB>
+	<DB>DATABASE_QUEST_LOCALIZATION.xml</DB>
+	<DB>DATABASE_UI_LOCALIZATION.xml</DB>	
+	<TAG>Translation</TAG>
+	<TAG>Polish</TAG>
+v20190623.223525
+
+Thea 2: The Shattering po polsku :-)
+
+Na ta chwile nad projektem pracuja dwie osoby, trzecia jest wdrażana.
+Nie da sie ukryć, że wieksze wsparcie społeczności przyśpieszy prace.
+Jeśli chcesz pomóc odezwij się w temacie na forum Steam:
+https://steamcommunity.com/app/606230/discussions/5/
+
+Na razie mod nie tłumaczy quest'ów, te nadal trzeba pobierać z dysku google (zgodnie z instrukcją z forum Steam)
+
+-----------------
+DataBase:
+	Linii: 5336
+	Przetlumaczonych: 4577 (85%)
+	Potwierdzonych/skorygowanych: 213 (3%)
+</ModInfo>

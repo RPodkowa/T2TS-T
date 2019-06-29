@@ -1,0 +1,419 @@
+<RECIPTS_RITUALS>
+
+	<!-- Heals all characters within the group by 50% SHP points -->
+	<RITUAL_REC-SPIRITUAL_HEALING UseCount="-1" WorkCost="100">
+        <Script ScriptName="Rit_HealSHP"/>
+		<RecipeBase ResearchCost="0" ResChildForbid="FALSE">
+			<DescriptionInfo Name="DES_SPIRITUAL_HEALING" Description="DES_SPIRITUAL_HEALING_DES" IconName="RitualSpiritualHealing"/>
+			<CountedTag Tag="TAG-BUILDING_RITUAL" Amount="1.0"/>      
+			<MaterialRow>
+				<Material ResourceCount="35">
+					<Resource Value="RES-WOOD"/>
+				</Material>
+                <Material ResourceCount="5">
+                    <Resource Value="RES-DRYAD_WOOD"/>
+                </Material>
+				<Material ResourceCount="20">
+					<Resource Value="RES-AMBER"/>
+				</Material>
+				<Material ResourceCount="5">
+					<Resource Value="RES-SHADOW_BONE"/>
+				</Material>
+                <Material ResourceCount="8">
+                    <Resource Value="RES-HERBS"/>
+                </Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="15">
+					<Resource Value="RES-MEAT"/>
+				</Material>
+				<Material ResourceCount="5">
+					<Resource Value="RES-FISH"/>
+				</Material>				
+				<Material ResourceCount="15">
+					<Resource Value="RES-FRUITS"/>
+				</Material>
+                <Material ResourceCount="10">
+                    <Resource Value="RES-MUSHROOMS"/>
+                </Material>
+                <Material ResourceCount="8">
+                    <Resource Value="RES-HERBS"/>
+                </Material>
+			</MaterialRow>
+		</RecipeBase>		
+	</RITUAL_REC-SPIRITUAL_HEALING>
+    <RITUAL_REC-CURSE_REMOVAL UseCount="-1" WorkCost="200">
+        <Script ScriptName="Rit_CurseRemoval"/>
+        <RecipeBase ResearchCost="1" ResChildForbid="FALSE">
+            <DescriptionInfo Name="DES_RITUAL_CURSE_REMOVAL" Description="DES_RITUAL_CURSE_REMOVAL_DES" IconName="RitualCurseRemoval"/>
+            <CountedTag Tag="TAG-BUILDING_RITUAL" Amount="1.0"/>
+            <MaterialRow>
+                <Material ResourceCount="50">
+                    <Resource Value="RES-AMBER"/>
+                </Material>
+                <Material ResourceCount="25">
+                    <Resource Value="RES-HERBS"/>
+                </Material>
+            </MaterialRow>
+            <MaterialRow>
+                <Material ResourceCount="50">
+                    <Resource Value="RES-AMBER"/>
+                </Material>                
+                <Material ResourceCount="40">
+                    <Resource Value="RES-MUSHROOMS"/>
+                </Material>
+                <Material ResourceCount="25">
+                    <Resource Value="RES-HERBS"/>
+                </Material>
+            </MaterialRow>
+        </RecipeBase>
+    </RITUAL_REC-CURSE_REMOVAL>
+    <RITUAL_REC-UPGRADE_IDOL UseCount="-1" WorkCost="1000">
+        <Script ScriptName="Rit_RefreshUpgradeIdol"/>
+        <RecipeBase ResearchCost="1" ResChildForbid="FALSE">
+            <DescriptionInfo Name="DES_RITUAL_UPGRADE_IDOL" Description="DES_RITUAL_UPGRADE_IDOL_DES" IconName="RitualUpgradeIdol"/>
+            <CountedTag Tag="TAG-BUILDING_RITUAL" Amount="1.0"/>
+			<MaterialRow>
+				<Material ResourceCount="32">
+					<Resource Value="RES-SANDSTONE"/>
+				</Material>
+				<Material ResourceCount="31">
+					<Resource Value="RES-AMBER"/>
+				</Material>
+				<Material ResourceCount="30">
+					<Resource Value="RES-WOOD"/>
+				</Material>
+				<Material ResourceCount="29">
+					<Resource Value="RES-BONE"/>
+				</Material>
+			</MaterialRow>
+            <MaterialRow>
+                <Material ResourceCount="100">
+                    <Resource Value="RES-FRUITS"/>
+                </Material>
+                <Material ResourceCount="100">
+                    <Resource Value="RES-MUSHROOMS"/>
+                </Material>
+                <Material ResourceCount="100">
+                    <Resource Value="RES-VEGGIES"/>
+                </Material>
+                <Material ResourceCount="100">
+                    <Resource Value="RES-MEAT"/>
+                </Material>
+            </MaterialRow>
+        </RecipeBase>
+    </RITUAL_REC-UPGRADE_IDOL>
+    
+	<!-- Level up each character.-->
+	<RITUAL_REC-HIGHER_EDUCATION UseCount="1" WorkCost="500">
+        <Script ScriptName="Rit_HealSHP"/>
+		<RecipeBase ResearchCost="1" ResChildForbid="TRUE">
+			<DescriptionInfo Name="DES_HIGHER_EDUCATION" Description="DES_HIGHER_EDUCATION_DES" IconName="RitualHigherEducation"/>
+			<CountedTag Tag="TAG-BUILDING_RITUAL" Amount="1.0"/>
+			<!-- Creation from mind essence and invention as best choice + gold as pay -->
+			<MaterialRow>
+				<Material ResourceCount="20">
+					<Resource Value="RES-TOPAZ"/>
+				</Material>
+				<Material ResourceCount="3">
+					<Resource Value="RES-CRYSTAL_WOOD"/>
+				</Material>
+				<Material ResourceCount="6">
+					<Resource Value="RES-GRANITE"/>
+				</Material>
+				<Material ResourceCount="10">
+					<Resource Value="RES-GOLD"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="10">
+					<Resource Value="RES-DIAMOND"/>
+				</Material>
+				<Material ResourceCount="3">
+					<Resource Value="RES-PURE_STONE"/>
+				</Material>
+				<Material ResourceCount="1">
+					<Resource Value="RES-MOONSTONE"/>
+				</Material>
+				<Material ResourceCount="10">
+					<Resource Value="RES-GOLD"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+		<Skills Value="SKILL_PACK-RITUAL_HIGHER_EDUCATION"/>
+	</RITUAL_REC-HIGHER_EDUCATION>
+	<!-- Each character get random tag like TAG-WARRIOR, TAG-CRAFTSMAN, TAG-GATHERER, 
+		TAG-HUNTER, TAG-HEALER, TAG-MAGIC_USER-->
+	<RITUAL_REC-MYSTICAL_KNOWLEDGE  UseCount="1" WorkCost="250">
+        <Script ScriptName="Rit_HealSHP"/>
+		<RecipeBase ResearchCost="1" ResChildForbid="TRUE">
+			<DescriptionInfo Name="DES_MYSTICAL_KNOWLEDGE" Description="DES_MYSTICAL_KNOWLEDGE_DES" IconName="RitualMysticalKnowledge"/>
+			<CountedTag Tag="TAG-BUILDING_RITUAL" Amount="1.0"/>
+			<!-- Creation from mind essence and invention as best choice + gold as pay -->
+			<MaterialRow>
+				<Material ResourceCount="10">
+					<Resource Value="RES-TOPAZ"/>
+				</Material>
+				<Material ResourceCount="2">
+					<Resource Value="RES-CRYSTAL_WOOD"/>
+				</Material>
+				<Material ResourceCount="3">
+					<Resource Value="RES-GRANITE"/>
+				</Material>
+				<Material ResourceCount="5">
+					<Resource Value="RES-GOLD"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="5">
+					<Resource Value="RES-DIAMOND"/>
+				</Material>
+				<Material ResourceCount="2">
+					<Resource Value="RES-PURE_STONE"/>
+				</Material>
+				<Material ResourceCount="1">
+					<Resource Value="RES-MOONSTONE"/>
+				</Material>
+				<Material ResourceCount="5">
+					<Resource Value="RES-GOLD"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+		<Skills Value="SKILL_PACK-RITUAL_MYSTICAL_KNOWLEDGE"/>
+	</RITUAL_REC-MYSTICAL_KNOWLEDGE>
+	
+	<!-- Take 10% of each demon life (P M S) and lower demon fraction loyalty for 30 -->
+	<RITUAL_REC-DEMONIC_SPLINTER UseCount="1" WorkCost="750">
+        <Script ScriptName="Rit_HealSHP"/>
+		<RecipeBase ResearchCost="1" ResChildForbid="TRUE">
+			<DescriptionInfo Name="DES_DEMONIC_SPLINTER" Description="DES_DEMONIC_SPLINTER_DES" IconName="RitualDemonicSplinter"/>
+			<CountedTag Tag="TAG-BUILDING_RITUAL" Amount="1.0"/>
+			<!-- Creation from wind essence and CLAY as best choice + MONSTER_BONE with death -->
+			<MaterialRow>
+				<Material ResourceCount="40">
+					<Resource Value="RES-FUR_LEATHER"/>
+				</Material>
+				<Material ResourceCount="6">
+					<Resource Value="RES-GOLEM_LEATHER"/>
+				</Material>
+				<Material ResourceCount="40">
+					<Resource Value="RES-CLAY"/>
+				</Material>
+				<Material ResourceCount="20">
+					<Resource Value="RES-MONSTER_BONE"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="20">
+					<Resource Value="RES-MYTHICAL_LEATHER"/>
+				</Material>
+				<Material ResourceCount="6">
+					<Resource Value="RES-COMBAT_LEATHER"/>
+				</Material>
+				<Material ResourceCount="2">
+					<Resource Value="RES-WYRM_SILK"/>
+				</Material>
+				<Material ResourceCount="20">
+					<Resource Value="RES-MONSTER_BONE"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+		<Skills Value="SKILL_PACK-RITUAL_DEMONIC_SPLINTER"/>
+	</RITUAL_REC-DEMONIC_SPLINTER>	
+	
+	<!-- Give 10% personal carry more -->
+	<RITUAL_REC-SHOULDERS_POWER UseCount="1" WorkCost="150">
+        <Script ScriptName="Rit_HealSHP"/>
+		<RecipeBase ResearchCost="1" ResChildForbid="TRUE">
+			<DescriptionInfo Name="DES_SHOULDERS_POWER" Description="DES_SHOULDERS_POWER_DES" IconName="RitualShouldersPower"/>
+			<CountedTag Tag="TAG-BUILDING_RITUAL" Amount="1.0"/>
+			<!-- Creation from earth and MALACHITE as best choice + ENCHANTED_LEATHER with Darkness -->
+			<MaterialRow>
+				<Material ResourceCount="20">
+					<Resource Value="RES-QUARTZ"/>
+				</Material>
+				<Material ResourceCount="3">
+					<Resource Value="RES-ARMOURED_STONE"/>
+				</Material>
+				<Material ResourceCount="6">
+					<Resource Value="RES-MALACHITE"/>
+				</Material>
+				<Material ResourceCount="10">
+					<Resource Value="RES-ENCHANTED_LEATHER"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="10">
+					<Resource Value="RES-OBSIDIAN"/>
+				</Material>
+				<Material ResourceCount="3">
+					<Resource Value="RES-PURE_STONE"/>
+				</Material>
+				<Material ResourceCount="1">
+					<Resource Value="RES-ALCHEMY_SKIN"/>
+				</Material>
+				<Material ResourceCount="10">
+					<Resource Value="RES-ENCHANTED_LEATHER"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+		<Skills Value="SKILL_PACK-RITUAL_SHOULDERS_POWER"/>
+	</RITUAL_REC-SHOULDERS_POWER>
+	
+	<!-- Give +10% (minimal 3 points) of Crafting for worst crafters and -5% (minimal 2 points) of Gathering from best Gatherer -->
+	<RITUAL_REC-FIRE_GIFT UseCount="1" WorkCost="500">
+        <Script ScriptName="Rit_HealSHP"/>
+		<RecipeBase ResearchCost="1" ResChildForbid="TRUE">
+			<DescriptionInfo Name="DES_FIRE_GIFT" Description="DES_FIRE_GIFT_DES" IconName="RitualFireGift"/>
+			<CountedTag Tag="TAG-BUILDING_RITUAL" Amount="1.0"/>
+			<!-- Creation from fire essence and DRYAD_WOOD as best choice + SILVER with Sunlight -->
+			<MaterialRow>
+				<Material ResourceCount="20">
+					<Resource Value="RES-STEEL"/>
+				</Material>
+				<Material ResourceCount="3">
+					<Resource Value="RES-ARMOURED_STONE"/>
+				</Material>
+				<Material ResourceCount="6">
+					<Resource Value="RES-DRYAD_WOOD"/>
+				</Material>
+				<Material ResourceCount="10">
+					<Resource Value="RES-SILVER"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="10">
+					<Resource Value="RES-MITHRILL"/>
+				</Material>
+				<Material ResourceCount="3">
+					<Resource Value="RES-METAL_COMPOSITE"/>
+				</Material>
+				<Material ResourceCount="1">
+					<Resource Value="RES-IGNEOUS_SPIKE"/>
+				</Material>
+				<Material ResourceCount="10">
+					<Resource Value="RES-SILVER"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+		<Skills Value="SKILL_PACK-RITUAL_FIRE_GIFT"/>
+	</RITUAL_REC-FIRE_GIFT>
+	
+	<!-- Instant pHeal each player character in world.-->
+	<RITUAL_REC-MAGIC_POWDER UseCount="1" WorkCost="20">
+        <Script ScriptName="Rit_HealSHP"/>
+		<RecipeBase ResearchCost="1" ResChildForbid="TRUE">
+			<DescriptionInfo Name="DES_MAGIC_POWDER" Description="DES_MAGIC_POWDER_DES" IconName="RitualMagicPowder"/>
+			<CountedTag Tag="TAG-BUILDING_RITUAL" Amount="1.0"/>
+			<!-- Creation from water essence and BLOOD_BONE with water + ELVEN_WOOD with Life -->
+			<MaterialRow>
+				<Material ResourceCount="20">
+					<Resource Value="RES-DARK_WOOD"/>
+				</Material>
+				<Material ResourceCount="3">
+					<Resource Value="RES-SACRED_WOOD"/>
+				</Material>
+				<Material ResourceCount="6">
+					<Resource Value="RES-ELVEN_WOOD"/>
+				</Material>
+				<Material ResourceCount="10">
+					<Resource Value="RES-BLOOD_BONE"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="10">
+					<Resource Value="RES-ANCIENT_WOOD"/>
+				</Material>
+				<Material ResourceCount="3">
+					<Resource Value="RES-CRYSTAL_WOOD"/>
+				</Material>
+				<Material ResourceCount="1">
+					<Resource Value="RES-LIFE_ROOT"/>
+				</Material>
+				<Material ResourceCount="10">
+					<Resource Value="RES-BLOOD_BONE"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+		<Skills Value="SKILL_PACK-RITUAL_MAGIC_POWDER"/>
+	</RITUAL_REC-MAGIC_POWDER>
+	
+	<!-- Give one child -->
+	<RITUAL_REC-CABBAGE_FIELD UseCount="1" WorkCost="500">
+        <Script ScriptName="Rit_HealSHP"/>
+		<RecipeBase ResearchCost="1" ResChildForbid="TRUE">
+			<DescriptionInfo Name="DES_CABBAGE_FIELD" Description="DES_CABBAGE_FIELD_DES" IconName="RitualCabbageField"/>
+			<CountedTag Tag="TAG-BUILDING_RITUAL" Amount="1.0"/>
+			<!-- Creation from water essence and SCALED_LEATHER with soul + ELVEN_WOOD with Life -->
+			<MaterialRow>
+				<Material ResourceCount="20">
+					<Resource Value="RES-SHADOW_BONE"/>
+				</Material>
+				<Material ResourceCount="3">
+					<Resource Value="RES-GRANDGEM"/>
+				</Material>
+				<Material ResourceCount="6">
+					<Resource Value="RES-ELVEN_WOOD"/>
+				</Material>
+				<Material ResourceCount="10">
+					<Resource Value="RES-SCALED_LEATHER"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="10">
+					<Resource Value="RES-DRAGON_BONE"/>
+				</Material>
+				<Material ResourceCount="3">
+					<Resource Value="RES-SACRED_WOOD"/>
+				</Material>
+				<Material ResourceCount="1">
+					<Resource Value="RES-GODS_BRANCH"/>
+				</Material>
+				<Material ResourceCount="10">
+					<Resource Value="RES-SCALED_LEATHER"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+		<Skills Value="SKILL_PACK-RITUAL_CABBAGE_FIELD"/>
+	</RITUAL_REC-CABBAGE_FIELD>
+
+	<!-- Give PShieldign=person lvl for each person -->
+	<RITUAL_REC-KNOWLEDGE_ARMOR UseCount="1" WorkCost="500">
+        <Script ScriptName="Rit_HealSHP"/>
+		<RecipeBase ResearchCost="1" ResChildForbid="TRUE">
+			<DescriptionInfo Name="DES_KNOWLEDGE_ARMOR" Description="DES_KNOWLEDGE_ARMOR_DES" IconName="RitualKnowledgeArmour"/>
+			<CountedTag Tag="TAG-BUILDING_RITUAL" Amount="1.0"/>
+			<!-- Creation from earth and DRYAD_WOOD as best choice + STEEL with Fire -->
+			<MaterialRow>
+				<Material ResourceCount="20">
+					<Resource Value="RES-QUARTZ"/>
+				</Material>
+				<Material ResourceCount="3">
+					<Resource Value="RES-GOLEM_LEATHER"/>
+				</Material>
+				<Material ResourceCount="6">
+					<Resource Value="RES-DRYAD_WOOD"/>
+				</Material>
+				<Material ResourceCount="10">
+					<Resource Value="RES-STEEL"/>
+				</Material>
+			</MaterialRow>
+			<MaterialRow>
+				<Material ResourceCount="10">
+					<Resource Value="RES-MITHRILL"/>
+				</Material>
+				<Material ResourceCount="3">
+					<Resource Value="RES-PURE_STONE"/>
+				</Material>
+				<Material ResourceCount="1">
+					<Resource Value="RES-VOID_SPARKLER"/>
+				</Material>
+				<Material ResourceCount="10">
+					<Resource Value="RES-STEEL"/>
+				</Material>
+			</MaterialRow>
+		</RecipeBase>
+		<Skills Value="SKILL_PACK-RITUAL_KNOWLEDGE_ARMOR"/>
+	</RITUAL_REC-KNOWLEDGE_ARMOR>
+
+</RECIPTS_RITUALS>

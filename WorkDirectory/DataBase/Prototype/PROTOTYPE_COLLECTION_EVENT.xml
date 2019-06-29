@@ -1,0 +1,17 @@
+﻿<PROTOTYPE_COLLECTION_EVENT>
+	
+	<!-- Event reference-->
+	<EVENT_REFERENCE Name="EventReference">
+        <ModuleName Name="moduleName" Type="string" Required="TRUE"/>
+		<EventID Name="eventID" Type="int" Required="FALSE"/>
+	</EVENT_REFERENCE>
+	
+	<!--xxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	
+	<!-- Collection of events. Randomly event will be taken from it if needet. -->
+	<EVENT_COLLECTION Name="EventCollection" Abbreviation="EVENTC">
+		<!-- Event aded to collection. If there is only Modul name, each of events from modul is taken to collection. -->
+		<Event Name="events" Type="ArrayEVENT_REFERENCE" Required="TRUE"/>
+	</EVENT_COLLECTION>
+    
+</PROTOTYPE_COLLECTION_EVENT>

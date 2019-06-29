@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace Thea2Translator.Logic
@@ -14,19 +15,19 @@ namespace Thea2Translator.Logic
             Type = type;
         }
 
-        public void Reload(IDataCache dataCache)
+        public void Reload(IDataCache dataCache, DirectoryType directoryType = DirectoryType.Cache)
         {
-            ReadFromFile();
+            ReadFromFile(directoryType);
             UpdateByCache(dataCache);
             VocabularyElems = ((List<VocabularyElem>)VocabularyElems).OrderByDescending(x => x.GetUsageCount(Type)).ToList();
         }
 
-        private void ReadFromFile()
+        public void ReadFromFile(DirectoryType directoryType)
         {
             if (VocabularyElems == null)
                 VocabularyElems = new List<VocabularyElem>();
 
-            var fullPath = $"{FileHelper.MainDir}\\Cache\\Vocabulary.cache";
+            var fullPath = FileHelper.GetLocalFilePatch(directoryType, FilesType.Vocabulary);
             var lines = FileHelper.ReadFileLines(fullPath);
             foreach (var line in lines)
             {
@@ -42,7 +43,7 @@ namespace Thea2Translator.Logic
 
         public void SaveElems()
         {
-            var fullPath = $"{FileHelper.MainDir}\\Cache\\Vocabulary.cache";
+            var fullPath = FileHelper.GetLocalFilePatch(DirectoryType.Cache, FilesType.Vocabulary);
             VocabularyElems = ((List<VocabularyElem>)VocabularyElems).OrderBy(x => x.OriginalWord).ToList();
             FileHelper.SaveElemsToFile(VocabularyElems, fullPath);
         }
@@ -102,6 +103,89 @@ namespace Thea2Translator.Logic
             VocabularyElem ret = new VocabularyElem(word, "");
             VocabularyElems.Add(ret);
             return ret;
+        }
+
+        public static bool HasConflicts()
+        {
+            var vocabulary = new Vocabulary(FilesType.Vocabulary);
+            vocabulary.ReadFromFile(DirectoryType.Cache);
+            foreach (var elem in vocabulary.VocabularyElems)
+            {
+                if (elem.HasConflict) return true;
+            }
+
+            return false;
+        }
+
+        protected void AddElem(VocabularyElem elem)
+        {
+            if (VocabularyElems == null)
+                VocabularyElems = new List<VocabularyElem>();
+
+            VocabularyElems.Add(elem);
+        }
+
+        protected void RemoveElem(VocabularyElem elem)
+        {
+            if (elem == null)
+                return;
+
+            if (VocabularyElems == null)
+                VocabularyElems = new List<VocabularyElem>();
+
+            VocabularyElems.Remove(elem);
+        }
+
+        public static void MergeCache()
+        {
+            var original = new Vocabulary(FilesType.Vocabulary);
+            var originalOld = new Vocabulary(FilesType.Vocabulary);
+            var cacheOld = new Vocabulary(FilesType.Vocabulary);
+
+            original.ReadFromFile(DirectoryType.Original);
+            originalOld.ReadFromFile(DirectoryType.OriginalOld);
+            cacheOld.ReadFromFile(DirectoryType.CacheOld);
+
+            var cacheNew = new Vocabulary(FilesType.Vocabulary);
+
+            foreach (var originalElem in original.VocabularyElems)
+            {
+                var word = originalElem.OriginalWord;
+                var originalOldElem = originalOld.GetElem(word, false);
+                var cacheOldElem = cacheOld.GetElem(word, false);
+
+                if ((originalOldElem == null && cacheOldElem != null) || (cacheOldElem == null && originalOldElem != null))
+                    throw new Exception($"Cos nie tak ze slowem='{word}'");
+
+                if (originalOldElem == null && cacheOldElem == null)
+                {
+                    cacheNew.AddElem(originalElem);
+                    continue;
+                }
+
+                if (VocabularyElem.IsEquals(originalOldElem, cacheOldElem))
+                {
+                    cacheNew.AddElem(cacheOldElem);
+                    originalOld.RemoveElem(originalOldElem);
+                    cacheOld.RemoveElem(cacheOldElem);
+                    continue;
+                }
+
+                if (VocabularyElem.IsEquals(originalOldElem, originalElem))
+                {
+                    cacheNew.AddElem(cacheOldElem);
+                    originalOld.RemoveElem(originalOldElem);
+                    cacheOld.RemoveElem(cacheOldElem);
+                    continue;
+                }
+
+                originalElem.SetConlfictWith(cacheOldElem);
+                cacheNew.AddElem(originalElem);
+                originalOld.RemoveElem(originalOldElem);
+                cacheOld.RemoveElem(cacheOldElem);
+            }
+
+            cacheNew.SaveElems();
         }
     }
 }

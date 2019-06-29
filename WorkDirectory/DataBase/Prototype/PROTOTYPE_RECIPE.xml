@@ -1,0 +1,122 @@
+﻿<PROTOTYPE_RECIPE>
+
+	<!-- Item slot used or which slot is unavailable for a subrace-->
+	<E_INVENTORY_SLOT Type="enum" Name="EInventorySlot">
+		<LeftHand/>
+		<RightHand/>		
+		<Armour/>
+		<Jewellery/>
+		<Tool/>
+		<SpecialItem/>
+		<Companion/>
+		<None/>
+	</E_INVENTORY_SLOT>
+
+	<!-- Quantifiable resources -->
+	<COUNTED_RESOURCE Name="CountedResource">
+		<!-- -->
+		<ResourceCount Name="resourceCount" Type="int" Required="TRUE"/>
+		<!-- -->
+		<Resource Name="resourceName" Type="RESOURCE" Required="TRUE"/>
+	</COUNTED_RESOURCE>
+
+	<!-- Material for item creation-->
+	<MATERIAL_ROW Name="MaterialRow">
+		<!-- first material row give information about icons-->
+		<Material Name="materials" Type="ArrayCOUNTED_RESOURCE" Required="FALSE"/>
+	</MATERIAL_ROW>
+
+	<!-- shared information for recipes -->
+	<RECIPE_BASE Name="RecipeBase">
+		<!-- Is resource children forbid to use -->
+		<ResChildForbid Name="resChildForbid" Type="bool" Required="FALSE"/>
+		<!-- Research cost. Cost 0 is automatically researched -->
+		<ResearchCost Name="researchCost" Type="int" Required="FALSE"/>
+        <!-- Crafting time Percent. Cost 0  or 100 is equal to base time from resource amounts, 1-99 makes crafting faster, 101+ makes crafting slower -->
+        <CraftingTimePercent Name="craftingTimePercent" Type="int" Required="FALSE"/>
+		<!-- description -->
+		<DescriptionInfo Name="descriptionInfo" Type="DESCRIPTION_INFO" Required="FALSE"/>
+		<!-- tags contained within a given recipe -->
+		<CountedTag Name="tags" Type="ArrayCOUNTED_TAG" Required="FALSE"/>
+		<!-- Number of materials needed -->
+		<MaterialRow Name="materialRows" Type="ArrayMATERIAL_ROW" Required="FALSE"/>
+	</RECIPE_BASE>
+	
+	<!-- -->
+	<AMOUNT_NUMBER Name="AmountNumber">
+		<Amount Name="amount" Type="float" Required="FALSE"/>
+	</AMOUNT_NUMBER>
+	
+	
+	<!--xxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	
+	<!-- building items -->
+	<ITEM_RECIPE Name="ItemRecipe" Abbreviation="ITEM_REC">
+		<!-- base amount of items made with one job -->		
+		<ItemsAmount Name="itemsAmount" Type="int" Required="TRUE"/>
+        <!-- scaling weight of the item -->
+		<WeightMultiplier Name="weightMultiplier" Type="float" Required="TRUE"/>
+        <!-- addon to the weight of the item -->
+        <WeightBase Name="weightBase" Type="float" Required="FALSE"/>        
+		<!-- The slot to be used by a given item -->
+		<InventorySlot Name="inventorySlot" Type="ArrayE_INVENTORY_SLOT" Required="TRUE"/>
+		<!-- base recipe information -->
+		<RecipeBase Name="recipeBase" Type="RECIPE_BASE" Required="FALSE"/>		
+		<!-- Potential skills from skill pack chosen based on essence, some items, like food, may not need skillpacks  -->
+		<Skills Name="skills" Type="SKILL_PACK" Required="FALSE"/>
+	</ITEM_RECIPE>
+
+	<!-- buildings recipes -->
+	<BUILDING_RECIPE Name="BuildingRecipe" Abbreviation="BUILD_REC">
+		<!-- durability tested during earthquakes -->
+		<Durability Name="durability" Type="float" Required="FALSE"/>
+        <!-- scaling weight of the item -->
+        <WeightMultiplier Name="weightMultiplier" Type="float" Required="FALSE"/>
+		<!-- base recipe information -->
+		<RecipeBase Name="recipeBase" Type="RECIPE_BASE" Required="FALSE"/>
+		<!-- Potential skills from skill pack chosen based on essence  -->
+		<Skills Name="skills" Type="SKILL_PACK" Required="TRUE"/>
+		<!-- Recipe parent -->
+		<ParentRecipe Name="ParentRecipes" Type="ArrayBUILDING_RECIPE" Required="FALSE"/>
+	</BUILDING_RECIPE>
+	
+	<!-- amount of resources crafted from recipe based on resource level -->
+	<RES_AMOUNT_CHART Name="ResAmoutChart">
+		<!--  -->
+		<ResResult Name="resResults" Type="ArrayAMOUNT_NUMBER" Required="FALSE"/>
+	</RES_AMOUNT_CHART>
+
+	<!-- resource recipes  -->
+	<RESOURCE_RECIPE Name="ResourceRecipe" Abbreviation="RES_REC">
+		<!-- base recipe information -->
+		<RecipeBase Name="recipeBase" Type="RECIPE_BASE" Required="FALSE"/>
+		<!-- produced resource -->
+		<Resource Name="resourceName" Type="RESOURCE" Required="TRUE"/>
+		<!-- crafting amount -->
+		<ResChart Name="resChart" Type="RES_AMOUNT_CHART" Required="TRUE"/>
+	</RESOURCE_RECIPE>
+	
+	<!-- ritual recipes -->
+	<RITUAL_RECIPE Name="RitualRecipe" Abbreviation="RITUAL_REC">
+		<!-- How many times you may create ritual -->
+        <UseCount Name="useCount" Type="int" Required="TRUE"/>
+		<!-- How much work need to be done to finish ritual once -->
+        <WorkCost Name="workCost" Type="int" Required="TRUE"/>
+		<!-- base recipe information -->
+		<RecipeBase Name="recipeBase" Type="RECIPE_BASE" Required="FALSE"/>
+		<!-- Potential skills from skill pack chosen based on essence  -->
+		<Skills Name="skills" Type="SKILL_PACK" Required="FALSE"/> <!-- REMOVE THAT -->        
+        <Script Name="script" Type="SCRIPT" Required="TRUE"/>
+    </RITUAL_RECIPE>
+	
+	<!-- a spell made of a skill -->
+	<SPELL_RECIPE Name="SpellRecipe">
+		<!-- Research cost. Cost 0 is automatically researched -->
+		<ResearchCost Name="researchCost" Type="int" Required="FALSE"/>
+		<!-- description -->
+		<DescriptionInfo Name="descriptionInfo" Type="DESCRIPTION_INFO" Required="TRUE"/>			
+		<!-- what skill is contained within a given spell -->
+		<Skill Name="Skill" Type="SKILL" Required="TRUE"/>
+	</SPELL_RECIPE>
+
+</PROTOTYPE_RECIPE>

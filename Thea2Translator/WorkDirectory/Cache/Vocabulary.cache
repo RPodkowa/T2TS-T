@@ -2291,7 +2291,7 @@
 0;3;1;Cluttered;
 2;0;1;Cmok;
 0;2;1;C'mon;
-16;49;1;Cmuch;
+16;49;1;Cmuch;Ćmuch
 0;1;1;Cmucha;
 0;1;1;Cmuchoffer;
 0;1;1;Cmuchs;
@@ -2394,7 +2394,7 @@
 0;2;1;Commitmentthe;
 0;6;1;Committed;
 0;1;1;Commo;
-21;29;1;Common;
+21;29;1;Common;Pospolity
 7;1;1;Commonly;
 0;2;1;Commotion;
 1;6;1;Commune;
@@ -3101,7 +3101,7 @@
 0;1;1;Defiledalthough;
 0;1;1;Defiledbut;
 0;1;1;Defilers;
-2;0;1;Define;
+2;0;0;Define;
 0;1;1;Definite;
 0;1;1;Definitely;
 0;4;1;Deformed;
@@ -4550,7 +4550,7 @@
 4;7;1;Fiery;
 0;1;1;Fifteen;
 0;1;1;Fifty-fifty;
-42;185;1;Fight;
+42;185;1;Fight;Walka
 0;3;1;Fight';
 1;11;1;Fighter;
 1;6;1;Fighters;
@@ -4756,7 +4756,7 @@
 9;15;1;Followed;
 0;1;1;'follower;
 10;5;1;Follower;
-13;9;1;Followers;
+13;9;1;Followers;Towarzysze
 0;2;1;Followerss;
 0;1;1;Followeth;
 0;4;1;Follow'he;
@@ -5405,7 +5405,7 @@
 14;137;1;Great;
 4;30;1;Greater;
 1;8;1;Greatest;
-15;10;1;Greatly;
+15;10;1;Greatly;Wielkie
 0;5;1;Greatness;
 0;1;1;Greatness';
 43;0;1;Greatsword;
@@ -5454,12 +5454,12 @@
 0;1;1;Ground'those;
 0;3;1;Ground'yes;
 0;1;1;Groundyou;
-105;83;1;Group;
+105;83;1;Group;Grupa
 0;1;1;Group';
 1;0;1;Groupimprove;
 0;1;1;Grouping;
 1;0;1;Groupings;
-25;3;1;Groups;
+25;3;1;Groups;Grupy
 31;1;1;Group's;
 3;38;1;Grove;
 0;1;1;Grove'he;
@@ -5732,7 +5732,7 @@
 0;1;1;Headswell;
 0;1;1;Headthe;
 0;1;1;Head'weary;
-10;64;1;Heal;
+10;64;1;Heal;Życie
 0;3;1;Heal';
 2;9;1;Healed;
 0;1;1;Healedwould;
@@ -6075,7 +6075,7 @@
 2;0;1;Hover;
 0;1;1;Hovering;
 0;9;1;'how;
-23;302;1;How;
+23;302;0;How;
 0;6;1;How';
 2;55;1;However;
 0;9;1;Howl;
@@ -6562,7 +6562,7 @@
 0;4;1;Invigorated;
 0;1;1;Invigoratedafterwards;
 0;3;1;Invisible;
-1;3;1;Invitation;
+1;3;1;Invitation;Zaproszenie
 0;3;1;Invitation';
 0;1;1;Invitation''choose;
 2;12;1;Invite;
@@ -8727,7 +8727,7 @@
 0;1;1;Outlet;
 0;1;1;Outline;
 0;1;1;Outlines;
-2;0;1;Outmanoeuvre;
+2;0;1;Outmanoeuvre;Przechytrzenie
 0;1;1;Outnumbered;
 0;1;1;Out'oh;
 0;2;1;Outpost;
@@ -9736,8 +9736,8 @@
 1;4;1;Rascal;
 0;7;1;Rascals;
 0;2;1;Rash;
-10;28;0;Rat;
-6;0;0;Rate;
+10;28;1;Rat;Szczur
+6;0;1;Rate;Racje
 0;2;1;Ratgo;
 3;57;1;Rather;
 2;0;1;Ratio;
@@ -9920,7 +9920,7 @@
 6;0;1;Regenerate;
 6;0;1;Regenerated;
 3;0;1;Regenerates;
-33;0;1;Regeneration;
+33;0;1;Regeneration;Regeneracja
 2;1;1;Region;
 0;3;1;Regret;
 0;1;1;Regrets;
@@ -12290,7 +12290,7 @@
 0;4;1;Swirl;
 0;3;1;Swirling;
 0;4;1;Swirls;
-9;6;1;Switch;
+9;6;1;Switch;Przełącz
 0;1;1;Switched;
 1;0;1;Switching;
 0;8;1;Swollen;
@@ -12854,7 +12854,7 @@
 0;5;1;Tracking;
 0;38;1;Tracks;
 0;1;1;Tracksthe;
-13;99;1;Trade;
+13;99;1;Trade;Handel
 0;10;1;Trade';
 1;2;1;Traded;
 4;9;1;Trader;
@@ -13096,7 +13096,7 @@
 0;3;1;Turncoat;
 6;19;1;Turned;
 1;18;1;Turning;
-43;164;1;Turns;
+43;164;1;Turns;Tury
 1;0;1;Turns-;
 0;1;1;Turnsyou;
 1;0;1;Turnyou;
@@ -13895,7 +13895,7 @@
 0;1;1;Welcoming;
 0;66;1;'well;
 0;1;1;-well;
-23;444;1;Well;
+23;444;1;Well;Studnia
 0;13;1;Well';
 0;81;1;We'll;
 0;1;1;Welland;
@@ -14311,11 +14311,11 @@
 0;1;1;Wouldn't';
 0;2;1;Would'thank;
 0;1;1;Would've;
-1;11;1;Wound;
+1;11;1;Wound;Rana
 8;50;1;Wounded;
 0;1;1;Woundedthe;
 0;1;1;Wounding;
-18;42;1;Wounds;
+18;42;1;Wounds;Rany
 0;1;1;Wounds';
 0;6;1;Woven;
 0;1;1;Wow';

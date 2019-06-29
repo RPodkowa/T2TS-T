@@ -6,6 +6,7 @@ using System.Windows.Controls;
 using System.Windows.Media;
 using Thea2Translator.DesktopApp.Helpers;
 using Thea2Translator.Logic;
+using Thea2Translator.Logic.Cache;
 
 namespace Thea2Translator.DesktopApp.Pages
 {
@@ -95,6 +96,12 @@ namespace Thea2Translator.DesktopApp.Pages
 
         private void BtnTranslate_Click(object sender, RoutedEventArgs e)
         {
+            if (!FileHelper.LocalDirectoryExists(DirectoryType.Original))
+            {
+                MessageBox.Show("Przed rozpoczęciem tłumaczenia należy pobrać chache z serwera!");
+                return;
+            }
+
             int selectetCount = 0;
             if (isDataBaseModuleSelected) selectetCount++;
             if (isModulesModuleSelected) selectetCount++;
@@ -219,6 +226,25 @@ namespace Thea2Translator.DesktopApp.Pages
             if (isDataBaseModuleSelected) ProcessFiles(FilesType.DataBase, step);
             if (isModulesModuleSelected) ProcessFiles(FilesType.Modules, step);
             if (isNamesModuleSelected) ProcessFiles(FilesType.Names, step);
+        }
+
+        private void btnDownloadFiles_Click(object sender, RoutedEventArgs e)
+        {
+            var synchronization = new Synchronization();
+            if (synchronization.DownloadCache())
+                MessageBox.Show("Pobieranie plików zakończone sukcesem!");
+        }
+
+        private void btnUploadFiles_Click(object sender, RoutedEventArgs e)
+        {
+            var synchronization = new Synchronization();
+            if (synchronization.UploadCache())
+                MessageBox.Show("Wysyłanie plików zakończone sukcesem!");
+        }
+
+        private void btnVocabulary_Click(object sender, RoutedEventArgs e)
+        {
+           // NavigationService.Navigate(new VocabularyPage());
         }
     }
 }

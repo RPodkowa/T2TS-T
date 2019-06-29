@@ -64,6 +64,7 @@
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal">
                             <CheckBox IsChecked="{Binding IsConfirm}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="SetConfirmOnCache" />
+                            <CheckBox IsChecked="{Binding HasConflict}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="SetResolvedOnCache" />
                             <Label Content="{Binding CacheElem.Id}" Foreground="{Binding Color}" FontWeight="Bold" />
                             <Label Content="{Binding CacheElem.OriginalText}" Foreground="{Binding Color}" FontWeight="Bold" />
                         </StackPanel>
@@ -85,6 +86,7 @@
                     <ComboBoxItem Content="{DynamicResource allComboItemTranslate}" IsSelected="True" />
                     <ComboBoxItem Content="{DynamicResource withoutTranslationComboItemTranslate}" />
                     <ComboBoxItem Content="{DynamicResource withoutConfirmationComboItemTranslate}" />
+                    <ComboBoxItem Content="{DynamicResource withConflictComboItemTranslate}" />                    
                 </ComboBox>
                 <ComboBox x:Name="cbGroups" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Style="{StaticResource fontBase}" FontSize="{DynamicResource smallFontSize}" SelectionChanged="CbGroups_SelectionChanged" Grid.Column="2" Grid.Row="1">
                     <ComboBoxItem Content="{DynamicResource allComboItemTranslate}" Selector.IsSelected="True"/>
@@ -130,7 +132,7 @@
                 </Grid.ColumnDefinitions>
                 <Label x:Name="lblState" Content="Label" FontSize="{DynamicResource smallFontSize}" Grid.ColumnSpan="3" Grid.RowSpan="3"/>
             </Grid>
-            <Button Content="{DynamicResource backButtonTranslate}" FontSize="{DynamicResource bigFontSize}" Style="{StaticResource styleButton}" FontWeight="Bold" Grid.Column="1" Grid.Row="1" Click="Button_Click"/>
+            <Button Content="{DynamicResource backButtonTranslate}" FontSize="{DynamicResource bigFontSize}" Style="{StaticResource styleButton}" FontWeight="Bold" Grid.Column="1" Grid.Row="1" Click="Button_Click" Margin="0,0,140,0"/>
             <Grid Grid.Row="1" Grid.RowSpan="2">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="10*"/>
@@ -155,6 +157,7 @@
                          />
                 <Label Content="-" Style="{StaticResource labelCenterTitle}" Grid.Column="2" Grid.Row="1"/>
             </Grid>
+            <Button Content="Vocabulary" FontSize="{DynamicResource bigFontSize}" Style="{StaticResource styleButton}" FontWeight="Bold" Grid.Column="1" Grid.Row="1" Click="ButtonVocabulary_Click" Margin="140,1,0,9" Grid.RowSpan="2"/>
         </Grid>
         <cefSharp:ChromiumWebBrowser x:Name="wbGoogleTranslate" Grid.Column="5" Grid.Row="1" />
     </Grid>

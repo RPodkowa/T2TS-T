@@ -12,11 +12,14 @@ namespace Thea2Translator.DesktopApp.ViewModels
     {
         public CacheElem CacheElem { get; set; }
         public bool IsConfirm { get; set; }
+        public bool HasConflict { get; set; }
 
         public string Color
         {
             get
-            {               
+            {
+                if (HasConflict) return Colors.DarkRed.ToString();
+
                 return CacheElem.ToConfirm ? 
                     (CacheElem.ToTranslate? Colors.Red.ToString()
                     :Colors.Black.ToString())
@@ -27,7 +30,8 @@ namespace Thea2Translator.DesktopApp.ViewModels
         public CacheElemViewModel(CacheElem CacheElem)
         {
             this.CacheElem = CacheElem;
-            this.IsConfirm = !CacheElem.ToConfirm;
+            IsConfirm = !CacheElem.ToConfirm;
+            HasConflict = CacheElem.HasConflict;
         }
 
 

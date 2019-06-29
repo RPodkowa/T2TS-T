@@ -1,0 +1,612 @@
+﻿ <SKILLS_4_OTHER>
+
+	<!-- Person states skills -->
+	<SKILL-OVERENCUMBERED Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_OVERENCUMBERED" Description="DES_SKILL_OVERENCUMBERED_DES" IconName="SkillOverencumbered"/>
+		<BaseEssence Amount="0" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-OVERENCUMBERED"/>
+		<SkillGroupFilter Value="Overencumbered"/>
+	</SKILL-OVERENCUMBERED>
+	<SKILL-LOW_PHYSICAL_HEALTH Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_LOW_PHYSICAL_HEALTH" Description="DES_SKILL_LOW_PHYSICAL_HEALTH_DES" IconName="SkillLowPhysicalHealth"/>
+		<BaseEssence Amount="0" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-CHARACTER_DIE_CHANCE"/>
+		<SkillGroupFilter Value="LowPhysicalHealth"/>
+	</SKILL-LOW_PHYSICAL_HEALTH>
+	<SKILL-LOW_MENTAL_HEALTH Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_LOW_MENTAL_HEALTH" Description="DES_SKILL_LOW_MENTAL_HEALTH_DES" IconName="SkillLowMentalHealth"/>
+		<BaseEssence Amount="0" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-CHARACTER_LEAVE_CHANCE"/>
+		<SkillSubskill Value="SUBSKILL-MULTI_SUB_CA"/>
+		<SkillGroupFilter Value="LowMentalHealth"/>
+	</SKILL-LOW_MENTAL_HEALTH>
+	<SKILL-LOW_SPIRIT_HEALTH Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_LOW_SPIRIT_HEALTH" Description="DES_SKILL_LOW_SPIRIT_HEALTH_DES" IconName="SkillLowSpiritHealth"/>
+		<BaseEssence Amount="0" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-MAGIC_POISONING"/>
+		<SkillGroupFilter Value="LowSpiritHealth"/>
+	</SKILL-LOW_SPIRIT_HEALTH>
+	
+	<!-- DMG over time -->
+	<SKILL-TOXINE Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_TOXINE" Description="DES_SKILL_TOXINE_DES" IconName="SkillToxine"/>
+		<BaseEssence Amount="0" Tag="TAG-ESSENCE_GRAY"/>
+		<ChargesCounter>
+			<ChargesCount MinimumCount="10" MaximumCount="10"/>
+			<ChargesTrigger Priority="0" RequiredToBeInFrontline="FALSE" RequiredToBeInBackline="FALSE">
+				<TriggerGroup Value="OnStartTurn"/>
+				<TriggerScript ScriptName=""/>
+			</ChargesTrigger>
+			<Script ScriptName="Deg_InverseLevelCountdown"/>
+		</ChargesCounter>
+		<SkillSubskill Value="SUBSKILL-TOXINE"/>
+		<SkillGroupFilter Value="Curse"/>
+	</SKILL-TOXINE>
+
+	<SKILL-ILLNESS Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_ILLNESS" Description="DES_SKILL_ILLNESS_DES" IconName="SkillIllness"/>
+		<BaseEssence Amount="0" Tag="TAG-ESSENCE_GRAY"/>
+		<ChargesCounter>
+			<ChargesCount MinimumCount="10" MaximumCount="10"/>
+			<ChargesTrigger Priority="0" RequiredToBeInFrontline="FALSE" RequiredToBeInBackline="FALSE">
+				<TriggerGroup Value="OnStartTurn"/>
+				<TriggerScript ScriptName=""/>
+			</ChargesTrigger>
+			<Script ScriptName="Deg_InverseLevelCountdown"/>
+		</ChargesCounter>
+		<SkillSubskill Value="SUBSKILL-CONST_WEAK_SUB_MOVEMENT"/>
+		<SkillSubskill Value="SUBSKILL-MULTI_SUB_CRAFTING"/>
+		<SkillSubskill Value="SUBSKILL-MULTI_SUB_GATHERING"/>
+		<SkillSubskill Value="SUBSKILL-MULTI_SUB_MAX_HEALTH_P"/>
+		<SkillSubskill Value="SUBSKILL-MULTI_SUB_MAX_HEALTH_M"/>
+		<SkillSubskill Value="SUBSKILL-MULTI_SUB_MAX_HEALTH_S"/>
+		<SkillGroupFilter Value="Curse"/>
+	</SKILL-ILLNESS>
+	
+	<!-- Attribute reduce for some time -->
+	<SKILL-CURSE_P Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_CURSE_P" Description="DES_SKILL_CURSE_P_DES" IconName="SkillCurseP"/>
+		<BaseEssence Amount="0" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-MULTI_SUB_STRENGTH"/>
+		<SkillSubskill Value="SUBSKILL-MULTI_SUB_PERCEPTION"/>
+		<SkillSubskill Value="SUBSKILL-WEAK_SUB_MOVEMENT"/>
+		<SkillGroupFilter Value="Curse"/>
+	</SKILL-CURSE_P>
+	<SKILL-CURSE_M Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_CURSE_M" Description="DES_SKILL_CURSE_M_DES" IconName="SkillCurseM"/>
+		<BaseEssence Amount="0" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-MULTI_SUB_INTELLIGENCE"/>
+		<SkillSubskill Value="SUBSKILL-MULTI_SUB_WISDOM"/>
+		<SkillGroupFilter Value="Curse"/>
+	</SKILL-CURSE_M>
+	<SKILL-CURSE_S Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_CURSE_S" Description="DES_SKILL_CURSE_S_DES" IconName="SkillCurseS"/>
+		<BaseEssence Amount="0" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-MULTI_SUB_MYSTICISM"/>
+		<SkillSubskill Value="SUBSKILL-MULTI_SUB_DESTINY"/>
+		<SkillGroupFilter Value="Curse"/>
+	</SKILL-CURSE_S>
+	
+	<!-- Attribute added for some time -->
+	<SKILL-BLESS_P Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_BLESS_P" Description="DES_SKILL_BLESS_P_DES" IconName="SkillBlessP"/>
+		<BaseEssence Amount="0" Tag="TAG-ESSENCE_GRAY"/>
+		<ChargesCounter>
+			<ChargesCount MinimumCount="10" MaximumCount="10"/>
+			<ChargesTrigger Priority="0" RequiredToBeInFrontline="FALSE" RequiredToBeInBackline="FALSE">
+				<TriggerGroup Value="OnStartTurn"/>
+				<TriggerScript ScriptName=""/>
+			</ChargesTrigger>
+			<Script ScriptName="Deg_InverseLevelCountdown"/>
+		</ChargesCounter>
+		<SkillSubskill Value="SUBSKILL-MULTI_ADD_MAX_HEALTH_P"/>
+		<SkillSubskill Value="SUBSKILL-ADD_MOVEMENT"/>
+		<SkillGroupFilter Value="Bless"/>
+	</SKILL-BLESS_P>
+	<SKILL-BLESS_M Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_BLESS_M" Description="DES_SKILL_BLESS_M_DES" IconName="SkillBlessM"/>
+		<BaseEssence Amount="0" Tag="TAG-ESSENCE_GRAY"/>
+		<ChargesCounter>
+			<ChargesCount MinimumCount="10" MaximumCount="10"/>
+			<ChargesTrigger Priority="0" RequiredToBeInFrontline="FALSE" RequiredToBeInBackline="FALSE">
+				<TriggerGroup Value="OnStartTurn"/>
+				<TriggerScript ScriptName=""/>
+			</ChargesTrigger>
+			<Script ScriptName="Deg_InverseLevelCountdown"/>
+		</ChargesCounter>
+		<SkillSubskill Value="SUBSKILL-MULTI_ADD_INTELLIGENCE"/>
+		<SkillSubskill Value="SUBSKILL-MULTI_ADD_WISDOM"/>
+		<SkillGroupFilter Value="Bless"/>
+	</SKILL-BLESS_M>
+	<SKILL-BLESS_S Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_BLESS_S" Description="DES_SKILL_BLESS_S_DES" IconName="SkillBlessS"/>
+		<BaseEssence Amount="0" Tag="TAG-ESSENCE_GRAY"/>
+		<ChargesCounter>
+			<ChargesCount MinimumCount="10" MaximumCount="10"/>
+			<ChargesTrigger Priority="0" RequiredToBeInFrontline="FALSE" RequiredToBeInBackline="FALSE">
+				<TriggerGroup Value="OnStartTurn"/>
+				<TriggerScript ScriptName=""/>
+			</ChargesTrigger>
+			<Script ScriptName="Deg_InverseLevelCountdown"/>
+		</ChargesCounter>
+		<SkillSubskill Value="SUBSKILL-MULTI_ADD_MYSTICISM"/>
+		<SkillSubskill Value="SUBSKILL-MULTI_ADD_DESTINY"/>
+		<SkillGroupFilter Value="Bless"/>
+	</SKILL-BLESS_S>
+	
+	<!-- MORALE IMPACT -->
+	<SKILL-MORALE_IMPACT_NLOWEST Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_MORALE_IMPACT_0" Description="DES_SKILL_MORALE_IMPACT_0_DES" IconName="SkillMorale0"/>
+		<BaseEssence Amount="0" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-CHARACTER_LEAVE_CHANCE"/>
+		<SkillGroupFilter Value="MoraleImpact"/>
+	</SKILL-MORALE_IMPACT_NLOWEST>	
+	<SKILL-MORALE_IMPACT_LOW Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_MORALE_IMPACT_1" Description="DES_SKILL_MORALE_IMPACT_1_DES" IconName="SkillMorale1"/>
+		<BaseEssence Amount="0" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-CONST_VWEAK_ADD_SHIELDING"/>
+		<SkillGroupFilter Value="MoraleImpact"/>
+	</SKILL-MORALE_IMPACT_LOW>
+	<SKILL-MORALE_IMPACT_POOR Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_MORALE_IMPACT_2" Description="DES_SKILL_MORALE_IMPACT_2_DES" IconName="SkillMorale2"/>
+		<BaseEssence Amount="0" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-CONST_VWEAK_ADD_SHIELDING"/>
+		<SkillSubskill Value="SUBSKILL-CONST_VWEAK_MULTI_ADD_HEALTH"/>
+		<SkillGroupFilter Value="MoraleImpact"/>
+	</SKILL-MORALE_IMPACT_POOR>
+	<SKILL-MORALE_IMPACT_NORMAL Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_MORALE_IMPACT_3" Description="DES_SKILL_MORALE_IMPACT_3_DES" IconName="SkillMorale3"/>
+		<BaseEssence Amount="0" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-CONST_WEAK_ADD_SHIELDING"/>
+		<SkillSubskill Value="SUBSKILL-CONST_VWEAK_MULTI_ADD_HEALTH"/>
+		<SkillSubskill Value="SUBSKILL-CONST_VWEAK_MULTI_ADD_TASK_EFFICIENCY"/>
+		<SkillGroupFilter Value="MoraleImpact"/>
+	</SKILL-MORALE_IMPACT_NORMAL>
+	<SKILL-MORALE_IMPACT_ENOUGH Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_MORALE_IMPACT_4" Description="DES_SKILL_MORALE_IMPACT_4_DES" IconName="SkillMorale4"/>
+		<BaseEssence Amount="0" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-CONST_WEAK_ADD_SHIELDING"/>
+		<SkillSubskill Value="SUBSKILL-CONST_VWEAK_MULTI_ADD_HEALTH"/>
+		<SkillSubskill Value="SUBSKILL-CONST_VWEAK_MULTI_ADD_TASK_EFFICIENCY"/>
+		<SkillSubskill Value="SUBSKILL-CONST_VWEAK_ADD_HEALTH_P_REGENERATION"/>
+		<SkillGroupFilter Value="MoraleImpact"/>
+	</SKILL-MORALE_IMPACT_ENOUGH>
+	<SKILL-MORALE_IMPACT_GOOD Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_MORALE_IMPACT_5" Description="DES_SKILL_MORALE_IMPACT_5_DES" IconName="SkillMorale5"/>
+		<BaseEssence Amount="0" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-CONST_WEAK_ADD_SHIELDING"/>
+		<SkillSubskill Value="SUBSKILL-CONST_VWEAK_MULTI_ADD_HEALTH"/>
+		<SkillSubskill Value="SUBSKILL-CONST_VWEAK_MULTI_ADD_TASK_EFFICIENCY"/>
+		<SkillSubskill Value="SUBSKILL-CONST_VWEAK_ADD_HEALTH_P_REGENERATION"/>
+		<SkillSubskill Value="SUBSKILL-CONST_WEAK_ADD_MOVEMENT"/>
+		<SkillGroupFilter Value="MoraleImpact"/>
+	</SKILL-MORALE_IMPACT_GOOD>
+	<SKILL-MORALE_IMPACT_WELL Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_MORALE_IMPACT_6" Description="DES_SKILL_MORALE_IMPACT_6_DES" IconName="SkillMorale6"/>
+		<BaseEssence Amount="0" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-CONST_WEAK_ADD_SHIELDING"/>
+		<SkillSubskill Value="SUBSKILL-CONST_VWEAK_MULTI_ADD_HEALTH"/>
+		<SkillSubskill Value="SUBSKILL-CONST_VWEAK_MULTI_ADD_TASK_EFFICIENCY"/>
+		<SkillSubskill Value="SUBSKILL-CONST_VWEAK_ADD_HEALTH_P_REGENERATION"/>
+		<SkillSubskill Value="SUBSKILL-CONST_WEAK_ADD_MOVEMENT"/>
+		<!--<SkillSubskill Value="SUBSKILL-CONST_WEAK_MULTI_ADD_CA"/>-->
+		<SkillSubskill Value="SUBSKILL-CONST_VWEAK_ADD_XP"/> <!-- Added until CONST_WEAK_MULTI_ADD_CA is repaired-->
+		<SkillGroupFilter Value="MoraleImpact"/>
+	</SKILL-MORALE_IMPACT_WELL>
+	<SKILL-MORALE_IMPACT_BEST Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_MORALE_IMPACT_7" Description="DES_SKILL_MORALE_IMPACT_7_DES" IconName="SkillMorale7"/>
+		<BaseEssence Amount="0" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-CONST_WEAK_ADD_SHIELDING"/>
+		<SkillSubskill Value="SUBSKILL-CONST_WEAK_MULTI_ADD_HEALTH"/>
+		<SkillSubskill Value="SUBSKILL-CONST_VWEAK_MULTI_ADD_TASK_EFFICIENCY"/>
+		<SkillSubskill Value="SUBSKILL-CONST_WEAK_ADD_HEALTH_P_REGENERATION"/>
+		<SkillSubskill Value="SUBSKILL-CONST_WEAK_ADD_MOVEMENT"/>
+		<!--<SkillSubskill Value="SUBSKILL-CONST_WEAK_MULTI_ADD_CA"/>-->
+		<SkillSubskill Value="SUBSKILL-CONST_VWEAK_ADD_XP"/> <!-- Added until CONST_WEAK_MULTI_ADD_CA is repaired-->
+		<SkillGroupFilter Value="MoraleImpact"/>
+	</SKILL-MORALE_IMPACT_BEST>
+	<SKILL-MORALE_IMPACT_AMAZING Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_MORALE_IMPACT_8" Description="DES_SKILL_MORALE_IMPACT_8_DES" IconName="SkillMorale8"/>
+		<BaseEssence Amount="0" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-CONST_WEAK_ADD_SHIELDING"/>
+		<SkillSubskill Value="SUBSKILL-CONST_WEAK_MULTI_ADD_HEALTH"/>
+		<SkillSubskill Value="SUBSKILL-CONST_WEAK_MULTI_ADD_TASK_EFFICIENCY"/>
+		<SkillSubskill Value="SUBSKILL-CONST_WEAK_ADD_HEALTH_P_REGENERATION"/>
+		<SkillSubskill Value="SUBSKILL-CONST_WEAK_ADD_MOVEMENT"/>
+		<!--<SkillSubskill Value="SUBSKILL-CONST_WEAK_MULTI_ADD_CA"/>-->
+		<SkillSubskill Value="SUBSKILL-CONST_WEAK_ADD_XP"/> <!-- Added until CONST_WEAK_MULTI_ADD_CA is repaired-->
+		<SkillGroupFilter Value="MoraleImpact"/>
+	</SKILL-MORALE_IMPACT_AMAZING>
+	<SKILL-MORALE_IMPACT_PERFECT Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_MORALE_IMPACT_9" Description="DES_SKILL_MORALE_IMPACT_9_DES" IconName="SkillMorale9"/>
+		<BaseEssence Amount="0" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-CONST_WEAK_ADD_SHIELDING"/>
+		<SkillSubskill Value="SUBSKILL-CONST_WEAK_MULTI_ADD_HEALTH"/>
+		<SkillSubskill Value="SUBSKILL-CONST_WEAK_MULTI_ADD_TASK_EFFICIENCY"/>
+		<SkillSubskill Value="SUBSKILL-CONST_WEAK_ADD_HEALTH_P_REGENERATION"/>
+		<SkillSubskill Value="SUBSKILL-CONST_WEAK_ADD_MOVEMENT"/>
+		<!--<SkillSubskill Value="SUBSKILL-CONST_WEAK_MULTI_ADD_CA"/>-->
+		<SkillSubskill Value="SUBSKILL-CONST_WEAK_ADD_XP"/> <!-- Added until CONST_WEAK_MULTI_ADD_CA is repaired-->
+		<SkillSubskill Value="SUBSKILL-CONST_WEAK_ADD_RANGE_OF_SIGHT"/>
+		<SkillGroupFilter Value="MoraleImpact"/>
+	</SKILL-MORALE_IMPACT_PERFECT>
+	<SKILL-MORALE_IMPACT_GODLIKE Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_MORALE_IMPACT_10" Description="DES_SKILL_MORALE_IMPACT_10_DES" IconName="SkillMorale10"/>
+		<BaseEssence Amount="0" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-CONST_WEAK_ADD_SHIELDING"/>
+		<SkillSubskill Value="SUBSKILL-CONST_WEAK_MULTI_ADD_HEALTH"/>
+		<SkillSubskill Value="SUBSKILL-CONST_WEAK_MULTI_ADD_TASK_EFFICIENCY"/>
+		<SkillSubskill Value="SUBSKILL-CONST_WEAK_ADD_HEALTH_P_REGENERATION"/>
+		<SkillSubskill Value="SUBSKILL-CONST_ADD_MOVEMENT"/>
+		<!--<SkillSubskill Value="SUBSKILL-CONST_WEAK_MULTI_ADD_CA"/>-->
+		<SkillSubskill Value="SUBSKILL-CONST_ADD_XP"/> <!-- Added until CONST_WEAK_MULTI_ADD_CA is repaired--> 
+		<SkillSubskill Value="SUBSKILL-CONST_WEAK_ADD_RANGE_OF_SIGHT"/>
+		<SkillGroupFilter Value="MoraleImpact"/>
+	</SKILL-MORALE_IMPACT_GODLIKE>
+	
+	
+	<!-- CHILD SKILLS -->
+	<SKILL-HUM_CHILD_GROW_UP Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_CHILD_GROW_UP" Description="DES_SKILL_CHILD_GROW_UP_DES" IconName="SkillChildrenGrowUp"/>
+		<BaseEssence Amount="0" Tag="TAG-ESSENCE_GRAY"/>
+		<ChargesCounter>
+			<ChargesCount MinimumCount="25" MaximumCount="45"/>
+			<ChargesTrigger Priority="0" RequiredToBeInFrontline="FALSE" RequiredToBeInBackline="FALSE">
+				<TriggerGroup Value="OnEndTurn"/>
+				<TriggerScript ScriptName=""/>
+			</ChargesTrigger>
+			<Script ScriptName="Deg_SimpleCountdown"/>
+            <FinalScript ScriptName="WActA_GrowUp"/>
+		</ChargesCounter>
+		<SkillSubskill Value="SUBSKILL-CHILD_GROW_UP"/>
+		<SkillSubskill Value="SUBSKILL-STRONG_REDUCE_PERSONAL_CARRY_LIMIT"/>
+		<SkillGroupFilter Value="Child"/>
+	</SKILL-HUM_CHILD_GROW_UP>
+	<SKILL-DWARF_CHILD_GROW_UP Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_CHILD_GROW_UP" Description="DES_SKILL_CHILD_GROW_UP_DES" IconName="SkillChildrenGrowUp"/>
+		<BaseEssence Amount="0" Tag="TAG-ESSENCE_GRAY"/>
+		<ChargesCounter>
+			<ChargesCount MinimumCount="25" MaximumCount="45"/>
+			<ChargesTrigger Priority="0" RequiredToBeInFrontline="FALSE" RequiredToBeInBackline="FALSE">
+				<TriggerGroup Value="OnEndTurn"/>
+				<TriggerScript ScriptName=""/>
+			</ChargesTrigger>
+			<Script ScriptName="Deg_SimpleCountdown"/>
+            <FinalScript ScriptName="WActA_GrowUp"/>
+		</ChargesCounter>
+		<SkillSubskill Value="SUBSKILL-CHILD_GROW_UP"/>
+		<SkillGroupFilter Value="Child"/>
+	</SKILL-DWARF_CHILD_GROW_UP>
+	<SKILL-ELF_CHILD_GROW_UP Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_CHILD_GROW_UP" Description="DES_SKILL_CHILD_GROW_UP_DES" IconName="SkillChildrenGrowUp"/>
+		<BaseEssence Amount="0" Tag="TAG-ESSENCE_GRAY"/>
+		<ChargesCounter>
+			<ChargesCount MinimumCount="35" MaximumCount="55"/>
+			<ChargesTrigger Priority="0" RequiredToBeInFrontline="FALSE" RequiredToBeInBackline="FALSE">
+				<TriggerGroup Value="OnEndTurn"/>
+				<TriggerScript ScriptName=""/>
+			</ChargesTrigger>
+			<Script ScriptName="Deg_SimpleCountdown"/>
+            <FinalScript ScriptName="WActA_GrowUp"/>
+		</ChargesCounter>
+		<SkillSubskill Value="SUBSKILL-CHILD_GROW_UP"/>
+		<SkillSubskill Value="SUBSKILL-STRONG_REDUCE_PERSONAL_CARRY_LIMIT"/>
+		<SkillSubskill Value="SUBSKILL-CHILD_MAGIC_SHIELD"/>
+		<SkillGroupFilter Value="Child"/>
+	</SKILL-ELF_CHILD_GROW_UP>
+	<SKILL-ORC_CHILD_GROW_UP Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_CHILD_GROW_UP" Description="DES_SKILL_CHILD_GROW_UP_DES" IconName="SkillChildrenGrowUp"/>
+		<BaseEssence Amount="0" Tag="TAG-ESSENCE_GRAY"/>
+		<ChargesCounter>
+			<ChargesCount MinimumCount="20" MaximumCount="40"/>
+			<ChargesTrigger Priority="0" RequiredToBeInFrontline="FALSE" RequiredToBeInBackline="FALSE">
+				<TriggerGroup Value="OnEndTurn"/>
+				<TriggerScript ScriptName=""/>
+			</ChargesTrigger>
+			<Script ScriptName="Deg_SimpleCountdown"/>
+            <FinalScript ScriptName="WActA_GrowUp"/>
+		</ChargesCounter>
+		<SkillSubskill Value="SUBSKILL-CHILD_GROW_UP"/>
+		<SkillSubskill Value="SUBSKILL-STRONG_REDUCE_PERSONAL_CARRY_LIMIT"/>
+		<SkillGroupFilter Value="Child"/>
+	</SKILL-ORC_CHILD_GROW_UP>
+	<SKILL-GOB_CHILD_GROW_UP Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_CHILD_GROW_UP" Description="DES_SKILL_CHILD_GROW_UP_DES" IconName="SkillChildrenGrowUp"/>
+		<BaseEssence Amount="0" Tag="TAG-ESSENCE_GRAY"/>
+		<ChargesCounter>
+			<ChargesCount MinimumCount="38" MaximumCount="50"/>
+			<ChargesTrigger Priority="0" RequiredToBeInFrontline="FALSE" RequiredToBeInBackline="FALSE">
+				<TriggerGroup Value="OnEndTurn"/>
+				<TriggerScript ScriptName=""/>
+			</ChargesTrigger>
+			<Script ScriptName="Deg_SimpleCountdown"/>
+            <FinalScript ScriptName="WActA_GrowUp"/>
+		</ChargesCounter>
+		<SkillSubskill Value="SUBSKILL-CHILD_GROW_UP"/>
+		<SkillSubskill Value="SUBSKILL-STRONG_REDUCE_PERSONAL_CARRY_LIMIT"/>
+		<SkillSubskill Value="SUBSKILL-SUMMON_DEMON"/>
+		<SkillGroupFilter Value="Child"/>
+	</SKILL-GOB_CHILD_GROW_UP>
+	
+	<!-- SPECIAL SKILLS -->
+	<SKILL-FOODIE Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_FOODIE" Description="DES_SKILL_FOODIE_DES" IconName="SkillFoodie"/>
+		<BaseEssence Amount="0" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-FOODIE"/>
+		<SkillGroupFilter Value="Foodie"/>
+	</SKILL-FOODIE>
+	<SKILL-FOREFATHER_STIGMA Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_FOREFATHER_STIGMA" Description="DES_SKILL_FOREFATHER_STIGMA_DES" IconName="SkillForefatherStigma"/>
+		<BaseEssence Amount="0" Tag="TAG-ESSENCE_GRAY"/>
+		<ChargesCounter>
+			<ChargesCount MinimumCount="150" MaximumCount="150"/>
+			<ChargesTrigger Priority="0" RequiredToBeInFrontline="FALSE" RequiredToBeInBackline="FALSE">
+				<TriggerGroup Value="OnEndTurn"/>
+				<TriggerScript ScriptName=""/>
+			</ChargesTrigger>
+			<Script ScriptName="Deg_SimpleCountdown"/>
+		</ChargesCounter>
+		<SkillSubskill Value="SUBSKILL-CONST_SUB_ATTRIBUTES_MIND_SPIRIT"/>
+		<SkillGroupFilter Value="ForefatherStigma"/>
+	</SKILL-FOREFATHER_STIGMA>
+	<SKILL-GREED Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_GREED" Description="DES_SKILL_GREED_DES" IconName="SkillGreed"/>
+		<BaseEssence Amount="0" Tag="TAG-ESSENCE_GRAY"/>
+		<ChargesCounter>
+			<ChargesCount MinimumCount="150" MaximumCount="150"/>
+			<ChargesTrigger Priority="0" RequiredToBeInFrontline="FALSE" RequiredToBeInBackline="FALSE">
+				<TriggerGroup Value="OnEndTurn"/>
+				<TriggerScript ScriptName=""/>
+			</ChargesTrigger>
+			<Script ScriptName="Deg_NoCountdown"/>
+		</ChargesCounter>
+		<SkillSubskill Value="SUBSKILL-GREED"/>
+		<SkillGroupFilter Value="Greed"/>
+	</SKILL-GREED>
+	<SKILL-NATURE_PURITY Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_NATURE_PURITY" Description="DES_SKILL_NATURE_PURITY_DES" IconName="SkillNaturePurity"/>
+		<BaseEssence Amount="0" Tag="TAG-ESSENCE_GRAY"/>
+		<ChargesCounter>
+			<ChargesCount MinimumCount="150" MaximumCount="150"/>
+			<ChargesTrigger Priority="0" RequiredToBeInFrontline="FALSE" RequiredToBeInBackline="FALSE">
+				<TriggerGroup Value="OnEndTurn"/>
+				<TriggerScript ScriptName=""/>
+			</ChargesTrigger>
+			<Script ScriptName="Deg_SimpleCountdown"/>
+      <FinalScript ScriptName="WActA_UnlockBlockedSlots"/>
+		</ChargesCounter>
+		<SkillSubskill Value="SUBSKILL-NATURE_PURITY"/>
+		<SkillSubskill Value="SUBSKILL-GROUP_HEAL_M"/>
+		<SkillGroupFilter Value="NaturePurity"/>
+	</SKILL-NATURE_PURITY>
+
+	<!-- GODS SKILL-->
+	<SKILL-DZIEVANNA_ANIMAL_PATH Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_DZIEVANNA_ANIMAL_PATH" Description="DES_SKILL_DZIEVANNA_ANIMAL_PATH_DES" IconName="SkillDzievanna"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-DIEVANNA_ADD_MAIN_ATT"/>
+		<SkillSubskill Value="SUBSKILL-DIEVANNA_GATHERING"/>
+		<SkillSubskill Value="SUBSKILL-DIEVANNA_CRAFTING"/>
+		<SkillGroupFilter Value="GodDzievanna"/>
+	</SKILL-DZIEVANNA_ANIMAL_PATH>
+	<SKILL-ZORYA_WARCRY Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_ZORYA_WARCRY" Description="DES_SKILL_ZORYA_WARCRY_DES" IconName="SkillZorya"/>
+		<BaseEssence Amount="25" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-ZORYA_WARCRY"/>
+		<SkillGroupFilter Value="GodZorya"/>
+	</SKILL-ZORYA_WARCRY>
+	<SKILL-LADA_I_LOVE_YOU Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_LADA_I_LOVE_YOU" Description="DES_SKILL_LADA_I_LOVE_YOU_DES" IconName="SkillLada"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-CONST_ADD_SHIELDING_MENTAL"/>
+		<SkillGroupFilter Value="GodLada"/>
+	</SKILL-LADA_I_LOVE_YOU>
+	<SKILL-STRIBOG_LONG_TRAVEL Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_STRIBOG_LONG_TRAVEL" Description="DES_SKILL_STRIBOG_LONG_TRAVEL_DES" IconName="SkillStribog"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-CONST_ADD_SEA_MOVEMENT"/>
+		<SkillGroupFilter Value="GodStribog"/>
+	</SKILL-STRIBOG_LONG_TRAVEL>
+	<SKILL-HORZ_NIGHT_PREDATOR Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_HORZ_NIGHT_PREDATOR" Description="DES_SKILL_HORZ_NIGHT_PREDATOR_DES" IconName="SkillHorz"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-CONST_NIGHT_PREDATOR_WITS"/>
+		<SkillSubskill Value="SUBSKILL-CONST_NIGHT_PREDATOR_RANGE_OF_SIGHT"/>
+		<SkillSubskill Value="SUBSKILL-CONST_NIGHT_PREDATOR_PER_DEST"/>
+		<SkillSubskill Value="SUBSKILL-CONST_DAY_BLINDNESS"/>
+		<SkillGroupFilter Value="GodHorz"/>
+	</SKILL-HORZ_NIGHT_PREDATOR>
+	<SKILL-HORZ_BLOODY_SUMMON_WEREWOLF Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_HORZ_BLOODY_SUMMON_WEREWOLF" Description="DES_SKILL_HORZ_BLOODY_SUMMON_WEREWOLF_DES" IconName="SkillSummonWerewolf"/>
+		<BaseEssence Amount="50" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-BLOODY_SUMMON_WEREWOLF"/>
+		<SkillGroupFilter Value="GodHorz"/>
+	</SKILL-HORZ_BLOODY_SUMMON_WEREWOLF>
+	<SKILL-MAROVIT_NIGHTMARE_GIFT Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_MAROVIT_NIGHTMARE_GIFT" Description="DES_SKILL_MAROVIT_NIGHTMARE_GIFT_DES" IconName="SkillMarovit"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-CONST_ADD_SHIELDING_SPIRIT"/>
+		<SkillSubskill Value="SUBSKILL-CONST_GROUP_HEAL_S"/>
+		<SkillSubskill Value="SUBSKILL-CONST_WEAK_MULTI_RITUALS"/>
+		<SkillGroupFilter Value="GodMarovit"/>
+	</SKILL-MAROVIT_NIGHTMARE_GIFT>
+	<SKILL-SVAROG_MANY_HAMMERS Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_SVAROG_MANY_HAMMERS_PATH" Description="DES_SKILL_SVAROG_MANY_HAMMERS_PATH_DES" IconName="SkillSvarog"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-CONST_MULTI_ADD_CRAFTING"/>
+		<SkillSubskill Value="SUBSKILL-CONST_MULTI_SUB_GATHERING"/>
+		<SkillSubskill Value="SUBSKILL-CONST_ADD_MAX_HEALTH_P"/>
+		<SkillSubskill Value="SUBSKILL-CONST_ADD_MAX_HEALTH_M"/>
+		<SkillGroupFilter Value="GodSwarog"/>
+	</SKILL-SVAROG_MANY_HAMMERS>
+	<SKILL-TRIGLAV_GODS_COMMANDER Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_TRIGLAV_GODS_COMMANDER" Description="DES_SKILL_TRIGLAV_GODS_COMMANDER_DES" IconName="SkillTriglav"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-CONST_ADD_XP"/>
+		<SkillGroupFilter Value="GodTriglav"/>
+	</SKILL-TRIGLAV_GODS_COMMANDER>
+	<SKILL-TRIGLAV_GODS_COMMANDER_CHOSEN Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_TRIGLAV_GODS_COMMANDER_CHOSEN" Description="DES_SKILL_TRIGLAV_GODS_COMMANDER_CHOSEN_DES" IconName="SkillTriglavsChosen"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-BLOODY_SACRIFICE"/>
+		<SkillGroupFilter Value="GodTriglav"/>
+	</SKILL-TRIGLAV_GODS_COMMANDER_CHOSEN>
+	<SKILL-IDOL_OF_PAIN Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_IDOL_OF_PAIN" Description="DES_SKILL_IDOL_OF_PAIN" IconName="SkillNyia"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-NYIA_LOWER_DEATH_CHANCE"/>
+		<SkillGroupFilter Value="GodNyia"/>
+	</SKILL-IDOL_OF_PAIN>
+	
+	<!-- TRAIT SKILLS -->
+	<SKILL-FOG_OF_KNOWLADGE Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_FOG_OF_KNOWLEDGE" Description="DES_SKILL_FOG_OF_KNOWLEDGE_DES" IconName="SkillFogOfKnowledge"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-CONST_STRONG_RANGE_OF_SIGHT"/>
+		<SkillGroupFilter Value="SkillTrait"/>
+		<ChargesCounter>
+			<ChargesCount MinimumCount="2" MaximumCount="2"/>
+			<ChargesTrigger Priority="0" RequiredToBeInFrontline="FALSE" RequiredToBeInBackline="FALSE">
+				<TriggerGroup Value="OnStartTurn"/>
+				<TriggerScript ScriptName=""/>
+			</ChargesTrigger>
+			<Script ScriptName="Deg_SimpleCountdown"/>
+		</ChargesCounter>
+	</SKILL-FOG_OF_KNOWLADGE>
+	<SKILL-SMARTER_EVERY_DAY Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_SMARTER_EVERY_DAY" Description="DES_SKILL_SMARTER_EVERY_DAY_DES" IconName="SkillSmarterEveryDay"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-CONST_WEAK_ADD_XP"/>
+		<SkillGroupFilter Value="SkillTrait"/>
+	</SKILL-SMARTER_EVERY_DAY>
+	<SKILL-TRUE_HEROES Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_TRUE_HEROES" Description="DES_SKILL_TRUE_HEROES_DES" IconName="SkillTrueHeroes"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-CONST_ADD_STRONG_SHIELDING"/>
+		<SkillGroupFilter Value="SkillTrait"/>
+	</SKILL-TRUE_HEROES>
+	<SKILL-LOGIC_WALL Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_LOGIC_WALL" Description="DES_SKILL_LOGIC_WALL_DES" IconName="SkillMentalWall"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-CONST_ADD_SHIELDING_MENTAL"/>
+		<SkillSubskill Value="SUBSKILL-CONST_ADD_SHIELDING_SPIRIT"/>
+		<SkillGroupFilter Value="SkillTrait"/>
+	</SKILL-LOGIC_WALL>
+	<SKILL-BRAINER Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_BRAINER" Description="DES_SKILL_BRAINER_DES" IconName="SkillBrainer"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-CONST_ADD_INTELLIGENCE"/>
+		<SkillSubskill Value="SUBSKILL-CONST_ADD_WISDOM"/>
+		<SkillGroupFilter Value="SkillTrait"/>
+	</SKILL-BRAINER>
+	<SKILL-SOLAR_POWERED Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_SOLAR_POWERED" Description="DES_SKILL_SOLAR_POWERED_DES" IconName="SkillSolarPowered"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-CONST_ADD_DAY_HEAL"/>
+		<SkillSubskill Value="SUBSKILL-CONST_SUB_NIGHT_MENTAL_INJURIES"/>
+		<SkillGroupFilter Value="SkillTrait"/>
+	</SKILL-SOLAR_POWERED>
+	<SKILL-JUMPING_FISH Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_JUMPING_FISH" Description="DES_SKILL_JUMPING_FISH_DES" IconName="SkillJumpingFish"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-JUMPING_FISH"/>
+		<SkillGroupFilter Value="SkillTrait"/>
+	</SKILL-JUMPING_FISH>
+   <SKILL-ETERNAL_LIGHT Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_ETERNAL_LIGHT" Description="DES_SKILL_ETERNAL_LIGHT_DES" IconName="Placeholder"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-CONST_VWEAK_MULTI_ADD_HEALTH_P"/>
+		<ChargesCounter>
+			<ChargesCount MinimumCount="16" MaximumCount="16"/>
+			<ChargesTrigger Priority="0" RequiredToBeInFrontline="FALSE" RequiredToBeInBackline="FALSE">
+				<TriggerGroup Value="OnStartTurn"/>
+				<TriggerScript ScriptName=""/>
+			</ChargesTrigger>
+			<Script ScriptName="Deg_SimpleCountdown"/>
+      <FinalScript ScriptName="WActA_ExtraSkillNewDay"/>
+		</ChargesCounter>
+		<SkillGroupFilter Value="SkillTrait"/>
+	</SKILL-ETERNAL_LIGHT>
+	<SKILL-NEW_DAY Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_NEW_DAY" Description="DES_SKILL_NEW_DAY_DES" IconName="SkillNewDay"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-CONST_ADD_MOVEMENT"/>
+		<SkillSubskill Value="SUBSKILL-CONST_VWEAK_MULTI_ADD_HEALTH_P"/>
+		<SkillGroupFilter Value="SkillTrait"/>
+		<ChargesCounter>
+			<ChargesCount MinimumCount="4" MaximumCount="4"/>
+			<ChargesTrigger Priority="0" RequiredToBeInFrontline="FALSE" RequiredToBeInBackline="FALSE">
+				<TriggerGroup Value="OnStartTurn"/>
+				<TriggerScript ScriptName=""/>
+			</ChargesTrigger>
+			<Script ScriptName="Deg_SimpleCountdown"/>
+      <FinalScript ScriptName="WActA_ExtraSkillEternalLight"/>
+		</ChargesCounter>
+	</SKILL-NEW_DAY>
+	<SKILL-EAGLE_EYE Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_EAGLE_EYE" Description="DES_SKILL_EAGLE_EYE_DES" IconName="SkillEagleEye"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-CONST_WEAK_ADD_RANGE_OF_SIGHT"/>
+		<SkillGroupFilter Value="SkillTrait"/>
+	</SKILL-EAGLE_EYE>
+	<SKILL-INNER_PEACE Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_INNER_PEACE" Description="DES_SKILL_INNER_PEACE_DES" IconName="SkillInnerPeace"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-CONST_ADD_SHIELDING"/>
+		<SkillSubskill Value="SUBSKILL-CONST_WEAK_MULTI_ADD_ATT"/>
+		<SkillGroupFilter Value="SkillTrait"/>
+	</SKILL-INNER_PEACE>
+	<SKILL-HEALING_TOUCH  Rarity="10">
+		<DescriptionInfo Name="DES_SKILL_HEALING_TOUCH" Description="DES_SKILL_HEALING_TOUCH_DES" IconName="SkillHealingTouch"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-CONST_GROUP_HEAL_P"/>
+		<SkillSubskill Value="SUBSKILL-CONST_LOWER_DEATH_CHANCE"/>
+		<SkillGroupFilter Value="SkillTrait"/>
+	</SKILL-HEALING_TOUCH>
+	<SKILL-NATURAL_KNOWLEDGE  Rarity="10">
+		<DescriptionInfo Name="DES_SKILL_NATURAL_KNOWLEDGE" Description="DES_SKILL_NATURAL_KNOWLEDGE_DES" IconName="SkillNaturalKnowledge"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-CONST_ADD_STRONG_RESEARCH"/>
+		<SkillGroupFilter Value="SkillTrait"/>
+	</SKILL-NATURAL_KNOWLEDGE>
+	<SKILL-SEAL_OF_STRENGTH  Rarity="10">
+		<DescriptionInfo Name="DES_SKILL_SEAL_OF_STRENGTH" Description="DES_SKILL_SEAL_OF_STRENGTH_DES" IconName="SkillSealOfStrength"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-CONST_STRONG_ADD_STRENGTH"/>
+		<SkillGroupFilter Value="SkillTrait"/>
+	</SKILL-SEAL_OF_STRENGTH>
+	<SKILL-CRAFTERS_FLOCK Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_CRAFTERS_FLOCK" Description="DES_SKILL_CRAFTERS_FLOCK_DES" IconName="SkillCraftersFlock"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-CONST_ADD_STRONG_CRAFTING"/>
+		<SkillGroupFilter Value="SkillTrait"/>
+	</SKILL-CRAFTERS_FLOCK>
+	<SKILL-GATHERERS_FLOCK Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_GATHERERS_FLOCK" Description="DES_SKILL_GATHERERS_FLOCK_DES" IconName="SkillGatherersFlock"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-CONST_ADD_STRONG_GATHERING"/>
+		<SkillGroupFilter Value="SkillTrait"/>
+	</SKILL-GATHERERS_FLOCK>
+	<SKILL-TOUGH_GUY Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_TOUGH_GUY" Description="DES_SKILL_TOUGH_GUY_DES" IconName="SkillToughGuy"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-CONST_VWEAK_MULTI_ADD_HEALTH_P"/>
+		<SkillSubskill Value="SUBSKILL-CONST_BIGGER_DEATH_CHANCE"/>
+		<SkillGroupFilter Value="SkillTrait"/>
+	</SKILL-TOUGH_GUY>
+	<SKILL-DEMONIC_POSSESSION Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_DEMONIC_POSSESSION" Description="DES_SKILL_DEMONIC_POSSESSION_DES" IconName="SkillDemonicPossession"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-CONST_VVSTRONG_ADD_HEALTH_PHYSICAL"/>
+		<SkillSubskill Value="SUBSKILL-CONST_VVSTRONG_ADD_SHIELDING_SPIRIT"/>
+		<SkillSubskill Value="SUBSKILL-CONST_VSTRONG_MULTI_SUB_DESTINY"/>
+		<SkillSubskill Value="SUBSKILL-CONST_VSTRONG_MULTI_SUB_MYSTICISM"/>
+		<SkillGroupFilter Value="SkillTrait"/>
+	</SKILL-DEMONIC_POSSESSION>
+	<SKILL-CAMPING_GATHERING_RANGE Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_CAMP_GATHERING_RANGE" Description="DES_SKILL_CAMP_GATHERING_RANGE_DES" IconName="SkillCampingGatheringRange"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-CAMP_CONST_WEAK_GATHERING_RANGE"/>
+		<SkillGroupFilter Value="SkillTrait"/>
+	</SKILL-CAMPING_GATHERING_RANGE>
+</SKILLS_4_OTHER>

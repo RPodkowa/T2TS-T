@@ -1,0 +1,150 @@
+﻿<UI_SCRIPTS>
+
+    <!-- Equipment screen, inventory side scripts-->
+    <SCRIPT_PACK-EQ_FILTERS>
+        <Script NameString="UI_NO_FILTER" Script="UIF_NoFilter"/>        
+        <Script NameString="UI_WEAPONS_FILTER" Script="UIF_WeaponsFilter"/>
+        <Script NameString="UI_ARMOURS_FILTER" Script="UIF_ArmourFilter"/>
+        <Script NameString="UI_TOOLS_FILTER" Script="UIF_ToolsFilter"/>
+        <Script NameString="UI_JEWELLERY_FILTER" Script="UIF_JewelleryFilter"/>
+        <Script NameString="UI_PETS_FILTER" Script="UIF_PetsFilter"/>
+    </SCRIPT_PACK-EQ_FILTERS>
+    <SCRIPT_PACK-EQ_SORT>
+      <Script NameString="UI_TYPE_SORT" Script="UIF_TypeSort"/>
+      <Script NameString="UI_AZ_SORT" Script="UIF_AZSort"/>
+      <Script NameString="UI_SKILL_LVL_SORT" Script="UIF_SkillLevelSort"/>
+      <Script NameString="UI_WEIGHT_SORT" Script="UIF_WeightSort"/>
+      <Script NameString="UI_VALUE_SORT" Script="UIF_ValueSort"/>
+    </SCRIPT_PACK-EQ_SORT>
+
+    <!-- Equipment screen, character list scripts-->
+    <SCRIPT_PACK-EQ_CLIST_FILTERS>
+        <Script NameString="UI_NO_FILTER" Script="UIF_NoFilter"/>
+    </SCRIPT_PACK-EQ_CLIST_FILTERS>
+    <SCRIPT_PACK-EQ_CLIST_SORT>
+        <Script NameString="UI_AZ_SORT" Script="UIF_AZSort"/>
+        <Script NameString="UI_LEVEL_CHARACTER_SORT" Script="UIF_CharacterLevelSort"/>
+        <Script NameString="UI_CLASS_CHARACTER_SORT" Script="UIF_CharacterClassSort"/>
+        <Script NameString="UI_CARRY_LIMIT_CHARACTER_SORT" Script="UIF_CharacterCarryLimitSort"/>
+        <Script NameString="UI_STRENGTH_CHARACTER_SORT" Script="UIF_StrengthCharacerSort"/>
+        <Script NameString="UI_PERCEPTION_CHARACTER_SORT" Script="UIF_PerceptionCharacerSort"/>
+        <Script NameString="UI_INTELLIGENCE_CHARACTER_SORT" Script="UIF_IntelligenceCharacerSort"/>
+        <Script NameString="UI_WISDOM_CHARACTER_SORT" Script="UIF_WisdomCharacerSort"/>
+        <Script NameString="UI_MYSTICISM_CHARACTER_SORT" Script="UIF_MysticismCharacerSort"/>
+        <Script NameString="UI_DESTINY_CHARACTER_SORT" Script="UIF_DestinyCharacerSort"/>
+        <Script NameString="UI_GATHERING_CHARACTER_SORT" Script="UIF_GatheringCharacerSort"/>
+        <Script NameString="UI_CRAFTING_CHARACTER_SORT" Script="UIF_CraftingCharacerSort"/>
+        <Script NameString="UI_RESEARCH_CHARACTER_SORT" Script="UIF_ResearchCharacerSort"/>
+        <Script NameString="UI_RITUALS_CHARACTER_SORT" Script="UIF_RitualCharacerSort"/>
+        <Script NameString="UI_LUCK_CHARACTER_SORT" Script="UIF_LuckCharacerSort"/>
+    </SCRIPT_PACK-EQ_CLIST_SORT>
+
+    <!-- Inventory screen -->
+    <SCRIPT_PACK-INV_FILTERS>
+        <Script NameString="UI_NO_FILTER" Script="UIF_NoFilter"/>
+        <Script NameString="UI_WEAPONS_FILTER" Script="UIF_WeaponsFilter"/>
+        <Script NameString="UI_ARMOURS_FILTER" Script="UIF_ArmourFilter"/>
+        <Script NameString="UI_FUEL_FILTER" Script="UIF_FuelFilter"/>
+        <Script NameString="UI_COOKED_FOOD_FILTER" Script="UIF_CookedFoodFilter"/>
+        <Script NameString="UI_RAW_FOOD_FILTER" Script="UIF_RawFoodFilter"/>
+    </SCRIPT_PACK-INV_FILTERS>
+    <SCRIPT_PACK-INV_SORT>
+      <Script NameString="UI_TYPE_SORT" Script="UIF_TypeSort"/>
+      <Script NameString="UI_AZ_SORT" Script="UIF_AZSort"/>
+      <Script NameString="UI_COUNT_SORT" Script="UIF_CountSort"/>
+      <Script NameString="UI_WEIGHT_SORT" Script="UIF_WeightSort"/>
+      <Script NameString="UI_WEIGHT_TOTAL_SORT" Script="UIF_WeightTotalSort"/>
+      <Script NameString="UI_VALUE_SORT" Script="UIF_ValueSort"/>
+    </SCRIPT_PACK-INV_SORT>
+
+    <!-- Tasks sorting -->    
+    <SCRIPT_PACK-GATHER_SORT>
+      <Script NameString="UI_GATHERING_SORT" Script="UIF_GatheringSort"/>
+      <Script NameString="UI_AZ_SORT" Script="UIF_AZSort"/>        
+    </SCRIPT_PACK-GATHER_SORT>
+    <SCRIPT_PACK-CRAFTING_SORT>
+      <Script NameString="UI_CRAFTING_SORT" Script="UIF_CraftingSort"/>
+      <Script NameString="UI_AZ_SORT" Script="UIF_AZSort"/>        
+    </SCRIPT_PACK-CRAFTING_SORT>
+    <SCRIPT_PACK-RESEARCH_SORT>
+      <Script NameString="UI_RESEARCH_SORT" Script="UIF_ResearchSort"/>
+      <Script NameString="UI_AZ_SORT" Script="UIF_AZSort"/>
+    </SCRIPT_PACK-RESEARCH_SORT>
+    <SCRIPT_PACK-RITUALS_SORT>  
+      <Script NameString="UI_RITUALS_SORT" Script="UIF_RitualsSort"/>
+      <Script NameString="UI_AZ_SORT" Script="UIF_AZSort"/>
+    </SCRIPT_PACK-RITUALS_SORT>
+    <SCRIPT_PACK-SCOUT_SORT>
+      <Script NameString="UI_LUCK_SORT" Script="UIF_LuckSort"/>
+      <Script NameString="UI_AZ_SORT" Script="UIF_AZSort"/>        
+    </SCRIPT_PACK-SCOUT_SORT>
+
+    <!-- Recipe sorting -->
+    <SCRIPT_PACK-RECIPE_SORT>
+      <Script NameString="UI_TYPE_SORT" Script="UIF_TypeReverseSort"/>
+      <Script NameString="UI_AZ_SORT" Script="UIF_AZSort"/>
+      <Script NameString="UI_ESSENCE_AMOUNT_SORT" Script="UIF_EssenceAmountSort"/>
+      <Script NameString="UI_ESSENCE_TYPE_SORT" Script="UIF_EssenceTypeSort"/>
+      <Script NameString="UI_RARITY_SORT" Script="UIF_RaritySort"/>
+      <Script NameString="UI_WEIGHT_SORT" Script="UIF_WeightReverseSort"/>
+    </SCRIPT_PACK-RECIPE_SORT>
+  
+    <!-- Crafting favourites filters and sorting-->  
+    <SCRIPT_PACK-CRAFTING_FAVS_FILTERS>
+        <Script NameString="UI_NO_FILTER" Script="UIF_NoFilterFavs"/>
+        <Script NameString="UI_BUILDINGS_FILTER" Script="UIF_BuildingsFavsFilter"/>
+        <Script NameString="UI_EQUIPMENT_FILTER" Script="UIF_EquipmentFavsFilter"/>
+        <Script NameString="UI_SHIPS_FILTER" Script="UIF_EquipmentShipsFavsFilter"/>
+    </SCRIPT_PACK-CRAFTING_FAVS_FILTERS>
+    <SCRIPT_PACK-CRAFTING_FAVS_SORT>
+      <Script NameString="UI_AZ_SORT" Script="UIF_AZFavsSort"/>
+      <Script NameString="UI_WEIGHT_SORT" Script="UIF_WeightFavsSort"/>
+      <Script NameString="UI_PRODUCTION_COST_SORT" Script="UIF_ProductionCostFavsSort"/>
+    </SCRIPT_PACK-CRAFTING_FAVS_SORT>
+
+    <!-- Cooking favourites sorting-->
+    <SCRIPT_PACK-COOKING_FAVS_SORT>
+      <Script NameString="UI_AZ_SORT" Script="UIF_AZFavsSort"/>
+    </SCRIPT_PACK-COOKING_FAVS_SORT>
+
+    <!-- Rituals favourites sorting-->
+    <SCRIPT_PACK-RITUALS_FAVS_SORT>
+      <Script NameString="UI_AZ_SORT" Script="UIF_AZFavsSort"/>
+      <Script NameString="UI_PRODUCTION_COST_SORT" Script="UIF_ProductionCostFavsSort"/>
+    </SCRIPT_PACK-RITUALS_FAVS_SORT>
+  
+    <!-- God's Traits screen -->
+    <SCRIPT_PACK-TRAITS_FILTERS>
+		<Script NameString="UI_MATCHING" Script="UIF_TraitsMatching"/>
+        <Script NameString="UI_NO_FILTER" Script="UIF_TraitsNoFilter"/>
+        <Script NameString="UI_UNLOCKED" Script="UIF_TraitsUnlocked"/>
+        <Script NameString="UI_LOCKED" Script="UIF_TraitsLocked"/>        
+    </SCRIPT_PACK-TRAITS_FILTERS>
+    <SCRIPT_PACK-TRAITS_SORT>
+        <!--<Script NameString="UI_AZ_SORT" Script="UIF_AZSortTraits"/>-->
+        <Script NameString="UI_COST_SORT" Script="UIF_CostSortTraits"/>
+        <Script NameString="UI_DOMAIN_SORT" Script="UIF_DomainSortTraits"/>
+    </SCRIPT_PACK-TRAITS_SORT>
+
+    <!-- Development menu functionality -->
+    <!-- Use those scripts to 
+     - find issues during gameplay and log them, 
+     - change, spawn, add or remove things to set player ready for scpeific debug sytuations 
+     - etc
+     -->
+    <SCRIPT_PACK-DEBUG_SCRIPTS>
+        <Script NameString="UI_DEV_ADD_RP" Script="DEV_AddRP"/>
+        <Script NameString="UI_DEV_ADD_RESOURCES" Script="DEV_AddResources"/>
+        <Script NameString="UI_DEV_TOXINE_GROUP" Script="DEV_AddToxines"/>
+        <Script NameString="UI_DEV_COMBO_ADD" Script="DEV_Add"/>
+        <Script NameString="UI_DEV_EXPORT_GROUP_POWERS" Script="DEV_DebugGroupsPower"/>
+        <Script NameString="UI_DEV_LOG_SELECTED_GROUP_DEBUG" Script="DEV_DebugSelectedGroup"/>
+        
+        <Script NameString="UI_DEV_ADD_MP" Script="DEV_AddMP"/>
+        <Script NameString="UI_DEV_ADD_XP" Script="DEV_AddXP"/>
+        <Script NameString="UI_DEV_HEAL_GROUP" Script="DEV_HealGroup"/>
+        
+
+    </SCRIPT_PACK-DEBUG_SCRIPTS>
+    
+</UI_SCRIPTS>

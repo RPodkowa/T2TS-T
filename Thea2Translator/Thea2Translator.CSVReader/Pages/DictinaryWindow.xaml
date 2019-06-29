@@ -31,14 +31,14 @@
                 <ColumnDefinition Width="64*"/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
-                <RowDefinition Height="5*"/>
-                <RowDefinition Height="1*"/>
-                <RowDefinition Height="5*"/>
-                <RowDefinition Height="1*"/>
-                <RowDefinition Height="5*"/>
-                <RowDefinition Height="1*"/>
-                <RowDefinition Height="5*"/>
-                <RowDefinition Height="1*"/>
+                <RowDefinition Height="63*"/>
+                <RowDefinition Height="13*"/>
+                <RowDefinition Height="36*"/>
+                <RowDefinition Height="40*"/>
+                <RowDefinition Height="63*"/>
+                <RowDefinition Height="12*"/>
+                <RowDefinition Height="63*"/>
+                <RowDefinition Height="13*"/>
             </Grid.RowDefinitions>
             <Label Style="{StaticResource labelCenterTitle}" FontSize="{DynamicResource smallFontSize}" Content="{DynamicResource usageCountLabelDictinary}" Grid.Column="1" />
             <Label Style="{StaticResource labelCenterTitle}" FontSize="{DynamicResource smallFontSize}" Content="{DynamicResource isActiveLabelDictinary}" Grid.Column="1" Grid.Row="2"/>
@@ -46,7 +46,7 @@
             <Label Style="{StaticResource labelCenterTitle}" FontSize="{DynamicResource smallFontSize}" Content="{DynamicResource translationLabelDictinary}" Grid.Column="1" Grid.Row="6"/>
             <Label x:Name="lblUsageCount" FontSize="{DynamicResource smallFontSize}" Style="{StaticResource fontCenter}" Content="COUNT" Grid.Column="3"/>
             <Label x:Name="lblOriginalWord" FontSize="{DynamicResource smallFontSize}"  Style="{StaticResource fontCenter}" Content="TEXT" Grid.Column="3" Grid.Row="4"/>
-            <CheckBox x:Name="checkBoxIsActive" Grid.Column="3" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <CheckBox x:Name="checkBoxIsActive" Grid.Column="3" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" Height="16" Margin="99,10,98,10" Width="16">
                 <CheckBox.LayoutTransform>
                     <ScaleTransform ScaleX="1.5" ScaleY="1.5" />
                 </CheckBox.LayoutTransform>
@@ -57,6 +57,12 @@
                      TextWrapping="Wrap" 
                      FontSize="{DynamicResource smallFontSize}"
                      Text="TEXT"/>
+            <Label Style="{StaticResource labelCenterTitle}" FontSize="{DynamicResource smallFontSize}" Content="{DynamicResource isConflictLabelDictinary}" Grid.Column="1" Grid.Row="2" Margin="0,35,0,5" Grid.RowSpan="2"/>
+            <CheckBox x:Name="checkBoxIsConflict" Grid.Column="3" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center" Height="16" Margin="101,14,96,10" Width="16">
+                <CheckBox.LayoutTransform>
+                    <ScaleTransform ScaleX="1.5" ScaleY="1.5" />
+                </CheckBox.LayoutTransform>
+            </CheckBox>
         </Grid>
         <Button Content="{DynamicResource saveChangesButtonDictinary}" FontSize="{DynamicResource mediumFontSize}" Style="{StaticResource styleButton}" Grid.Column="1" Grid.Row="4" Click="Button_Click"/>
 

@@ -25,10 +25,10 @@ namespace Thea2Translator.Logic
         internal bool IsModulesCache { get { return Type == FilesType.Modules; } }
         internal bool IsNamesCache { get { return Type == FilesType.Names; } }
 
-        public DataCache(FilesType type)
+        public DataCache(FilesType type, DirectoryType directoryType = DirectoryType.Cache)
         {
             Type = type;
-            FullPath = $"{FileHelper.MainDir}\\Cache\\{type}.xml";
+            FullPath = FileHelper.GetLocalFilePatch(directoryType, type);
             ResetElems();
         }
 
@@ -117,8 +117,21 @@ namespace Thea2Translator.Logic
             {
                 var elem = new CacheElem(Type, element);
                 CurrentId = Math.Max(CurrentId, elem.Id);
-                CacheElems.Add(elem);
+                AddElem(elem);
             }
+        }
+
+        protected void AddElem(CacheElem elem)
+        {
+            CacheElems.Add(elem);
+        }
+
+        protected void RemoveElem(CacheElem elem)
+        {
+            if (elem == null)
+                return;
+
+            CacheElems.Remove(elem);
         }
 
         private void ReloadGroups()
@@ -606,6 +619,84 @@ namespace Thea2Translator.Logic
             }
             dir += sufix;
             return dir;
+        }
+
+        public static bool HasConflicts(FilesType type)
+        {
+            var dataCache = new DataCache(type);
+            if (type == FilesType.Vocabulary)
+                return Vocabulary.HasConflicts();
+
+            return dataCache.HasConflicts();
+        }
+
+        protected bool HasConflicts()
+        {
+            LoadFromFile();
+            foreach (var elem in CacheElems)
+            {
+                if (elem.HasConflict) return true;
+            }
+
+            return false;
+        }
+
+        public static void MergeCache(FilesType type)
+        {
+            if (type == FilesType.Vocabulary)
+            {
+                Vocabulary.MergeCache();
+                return;
+            }
+
+            var original = new DataCache(type, DirectoryType.Original);
+            var originalOld = new DataCache(type, DirectoryType.OriginalOld);
+            var cacheOld = new DataCache(type, DirectoryType.CacheOld);
+
+            original.LoadFromFile();
+            originalOld.LoadFromFile();
+            cacheOld.LoadFromFile();
+
+            var cacheNew = new DataCache(type, DirectoryType.Cache);
+
+            foreach (var originalElem in original.CacheElems)
+            {
+                var id = originalElem.Id;
+                var originalOldElem = originalOld.GetElemById(id);
+                var cacheOldElem = cacheOld.GetElemById(id);
+
+                if ((originalOldElem == null && cacheOldElem != null) || (cacheOldElem == null && originalOldElem != null))
+                    throw new Exception($"Cos nie tak z ID={id}");
+
+                if (originalOldElem == null && cacheOldElem == null)
+                {
+                    cacheNew.AddElem(originalElem);
+                    continue;
+                }
+
+                if (CacheElem.IsEquals(originalOldElem, cacheOldElem))
+                {
+                    cacheNew.AddElem(cacheOldElem);
+                    originalOld.RemoveElem(originalOldElem);
+                    cacheOld.RemoveElem(cacheOldElem);
+                    continue;
+                }
+
+                if (CacheElem.IsEquals(originalOldElem, originalElem))
+                {
+                    cacheNew.AddElem(cacheOldElem);
+                    originalOld.RemoveElem(originalOldElem);
+                    cacheOld.RemoveElem(cacheOldElem);
+                    continue;
+                }
+
+                originalElem.SetConlfictWith(cacheOldElem);
+                cacheNew.AddElem(originalElem);
+                originalOld.RemoveElem(originalOldElem);
+                cacheOld.RemoveElem(cacheOldElem);
+            }
+
+            cacheNew.SaveToFile();
         }
     }
 }

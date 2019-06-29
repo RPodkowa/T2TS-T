@@ -1,0 +1,28 @@
+﻿<PROTOTYPE_GROUP>
+	<!-- Group predicted physical, mental, spirit challenge lvl -->
+	<GROUP_CHALLENGE Name="GroupChallenge">
+		<!-- -->
+		<Physical Name="physical" Type="int" Required="TRUE"/>
+		<!-- -->
+		<Mental Name="mental" Type="int" Required="TRUE"/>
+		<!-- -->
+		<Spirit Name="spirit" Type="int" Required="TRUE"/>
+	</GROUP_CHALLENGE>
+
+	<!-- information about group-->
+	<GROUP Name="Group">
+		<!-- Predicted group challenge lvl -->
+		<ChallengeLvl Name="challengeLvl" Type="GROUP_CHALLENGE" Required="TRUE"/>
+		<!-- Type of event trigger when player meets a group with Loyalty Tags -->
+		<EventsLoyalty Name="eventLoyalty" Type="EVENT_COLLECTION" Required="TRUE"/>
+		<!-- Type of event trigger when player meets a group without Loyalty Tags -->
+		<EventsRoaming Name="eventRoaming" Type="EVENT_COLLECTION" Required="TRUE"/>
+		<!-- description -->
+		<DescriptionInfo Name="descriptionInfo" Type="DESCRIPTION_INFO" Required="TRUE"/>
+		<!-- challenge type preferred by the group as primary attack mode -->
+		<PreferredChallenge Name="preferredChallenges" Type="ArrayE_CHALLENGE_TYPE" Required="TRUE"/>
+		<!-- group members-->
+		<Member Name="members" Type="ArrayCOUNTED_MEMBERS" Required="TRUE"/>
+	</GROUP>
+	
+</PROTOTYPE_GROUP>

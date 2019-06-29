@@ -1,0 +1,345 @@
+﻿<SKILLS_1_NATURAL>
+	<SKILL-BLUNT_ATTACK Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_BLUNT_ATTACK" Description="DES_SKILL_BLUNT_ATTACK_DES" IconName="SkillBluntAttack"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-BLUNT_ATTACK_M_P_S"/>
+		<SkillGroupFilter Value="Fallback"/>
+	</SKILL-BLUNT_ATTACK>
+	<SKILL-JUNK_ATTACK Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_TRASH_ATTACK" Description="DES_SKILL_TRASH_ATTACK_DES" IconName="SkillTrashAttack"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-BLUNT_ATTACK_M_P_S"/>
+		<SkillSubskill Value="SUBSKILL-ADD_GATHERING"/>
+		<SkillGroupFilter Value="ScraperPunch"/>
+	</SKILL-JUNK_ATTACK>
+
+	<SKILL-BITE Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_BITE" Description="DES_SKILL_BITE_DES" IconName="SkillBite"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-BITE"/>
+		<SkillGroupFilter Value="Animal"/>
+		<SkillGroupFilter Value="SharpTeeth"/>
+	</SKILL-BITE>
+	<SKILL-LEECH_BITE Rarity="30">
+		<DescriptionInfo Name="DES_SKILL_LEECH_BITE" Description="DES_SKILL_LEECH_BITE_DES" IconName="SkillLeechBite"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-LEECH_BITE"/>
+		<SkillGroupFilter Value="BloodSuck"/>
+	</SKILL-LEECH_BITE>
+	<SKILL-POISON_BITE Rarity="30">
+		<DescriptionInfo Name="DES_SKILL_POISON_BITE" Description="DES_SKILL_POISON_BITE_DES" IconName="SkillPoisonBite"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-POISON_BITE"/>
+		<SkillGroupFilter Value="Poison"/>
+	</SKILL-POISON_BITE>
+	<SKILL-CLAW_HIT Rarity="15">
+		<DescriptionInfo Name="DES_SKILL_CLAW_HIT" Description="DES_SKILL_CLAW_HIT_DES" IconName="SkillClawHit"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-CLAW_HIT"/>
+		<SkillGroupFilter Value="Claw"/>
+	</SKILL-CLAW_HIT>
+	<SKILL-HORN_IMPALE Rarity="30">
+		<DescriptionInfo Name="DES_SKILL_HORN_IMPALE" Description="DES_SKILL_HORN_IMPALE_DES" IconName="SkillHornImpale"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-HORN_IMPALE"/>
+		<SkillGroupFilter Value="Horn"/>
+	</SKILL-HORN_IMPALE>
+	<SKILL-DIVE_ATTACK Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_DIVE_ATTACK" Description="DES_SKILL_DIVE_ATTACK_DES" IconName="SkillDiveAttack"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-DIVE_ATTACK"/>
+		<SkillGroupFilter Value="Flying"/>
+	</SKILL-DIVE_ATTACK>
+	<SKILL-POISON_SPIT Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_POISON_SPIT" Description="DES_SKILL_POISON_SPIT_DES" IconName="SkillPoisonSpit"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-POISON_SPIT"/>
+		<SkillGroupFilter Value="PoisonSpit"/>
+	</SKILL-POISON_SPIT>
+	
+	
+	<SKILL-DRAGON_BREATH Rarity="90">
+		<DescriptionInfo Name="DES_SKILL_DRAGON_BREATH" Description="DES_SKILL_DRAGON_BREATH_DES" IconName="SkillDragonBreath"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-DRAGON_BREATH"/>
+		<SkillGroupFilter Value="ClassDragon"/>
+	</SKILL-DRAGON_BREATH>
+	<SKILL-POISON_SPEW Rarity="90">
+		<DescriptionInfo Name="DES_SKILL_POISON_SPEW" Description="DES_SKILL_POISON_SPEW_DES" IconName="SkillPoisonSpew"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-POISON_SPEW"/>
+		<SkillGroupFilter Value="ClassUnliDragon"/>
+	</SKILL-POISON_SPEW>
+	<SKILL-ZMEY_BITE Rarity="90">
+		<DescriptionInfo Name="DES_SKILL_ZMEY_BITE" Description="DES_SKILL_ZMEY_BITE_DES" IconName="SkillZmeyBite"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-ESSENCE_TRUE_DMG_BITE"/>
+		<SkillGroupFilter Value="ClassZmey"/>
+	</SKILL-ZMEY_BITE>
+	<SKILL-MIGHTY_ROAR Rarity="90">
+		<DescriptionInfo Name="DES_SKILL_MIGHTY_ROAR" Description="DES_SKILL_MIGHTY_ROAR_DES" IconName="SkillMightyRoar"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-MIGHTY_ROAR"/>
+		<SkillGroupFilter Value="ClassZmey"/>
+	</SKILL-MIGHTY_ROAR>
+	<SKILL-TAIL_WHIP Rarity="90">
+		<DescriptionInfo Name="DES_SKILL_TAIL_WHIP" Description="DES_SKILL_TAIL_WHIP_DES" IconName="SkillTailWhip"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-LEECH_WHIP_HIT"/>
+		<SkillGroupFilter Value="ClassZmey"/>
+	</SKILL-TAIL_WHIP>
+	<SKILL-CHAIN_WHIP Rarity="90">
+		<DescriptionInfo Name="DES_SKILL_CHAIN_WHIP" Description="DES_SKILL_CHAIN_WHIP_DES" IconName="SkillChainWhip"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-LEECH_WHIP_HIT"/>
+		<SkillGroupFilter Value="ClassNecromancer"/>
+	</SKILL-CHAIN_WHIP>
+	<SKILL-SEEDS_GROW Rarity="90">
+		<DescriptionInfo Name="DES_SKILL_SEEDS_GROW" Description="DES_SKILL_SEEDS_GROW_DES" IconName="SkillSeedsGrow"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-SUMMON_ON_NAIYSIR"/>
+		<SkillGroupFilter Value="ClassNaiysir"/>
+	</SKILL-SEEDS_GROW>
+
+
+	<!--CONCEPT -->
+	<SKILL-CON_DEFAULT_MELEE Rarity="0">
+		<DescriptionInfo Name="DES_PLACEHOLDER" Description="DES_PLACEHOLDER" IconName="SkillConceptDefaultMelee"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-CON_DEFAULT_MELEE"/>
+		<SkillGroupFilter Value="ConMelee"/>
+	</SKILL-CON_DEFAULT_MELEE>
+	<SKILL-CON_DEFAULT_RANGE Rarity="0">
+		<DescriptionInfo Name="DES_PLACEHOLDER" Description="DES_PLACEHOLDER" IconName="SkillConceptDefaultRange"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-CON_DEFAULT_RANGE"/>
+		<SkillGroupFilter Value="ConRange"/>
+	</SKILL-CON_DEFAULT_RANGE>
+	<SKILL-CON_DEFAULT_RANGE_HEAVY Rarity="0">
+		<DescriptionInfo Name="DES_PLACEHOLDER" Description="DES_PLACEHOLDER" IconName="SkillConceptDefaultRangeHeavy"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-CON_DEFAULT_RANGE_HEAVY"/>
+		<SkillGroupFilter Value="ConRangeHeavy"/>
+	</SKILL-CON_DEFAULT_RANGE_HEAVY>
+	
+
+	<!-- RACES SKILLS -->
+	<SKILL-RACE_SNAKE Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_RACE_SNAKES" Description="DES_SKILL_RACE_SNAKES_DES" IconName="SkillRaceSnake"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-BITE"/>
+		<SkillSubskill Value="SUBSKILL-SHOWING_OFF"/>
+		<SkillSubskill Value="SUBSKILL-ADD_WEAK_RESEARCH"/>
+		<SkillGroupFilter Value="Race"/>
+		<SkillGroupFilter Value="RaceSnakes"/>
+	</SKILL-RACE_SNAKE>
+	<SKILL-RACE_SPIDER Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_RACE_SPIDERS" Description="DES_SKILL_RACE_SPIDERS_DES" IconName="SkillRaceSpider"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-BITE"/>
+		<SkillSubskill Value="SUBSKILL-SHOWING_OFF"/>
+		<SkillSubskill Value="SUBSKILL-ADD_WEAK_CRAFTING"/>
+		<SkillSubskill Value="SUBSKILL-ADD_WEAK_GATHERING"/>
+		<SkillGroupFilter Value="Race"/>
+		<SkillGroupFilter Value="RaceSpiders"/>
+	</SKILL-RACE_SPIDER>
+	<SKILL-RACE_DWARVES_CHILD Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_RACE_DWARVES" Description="DES_SKILL_RACE_DWARVES_DES" IconName="SkillRaceDwarves"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-ADD_CRAFTING"/>
+		<SkillSubskill Value="SUBSKILL-MULTI_WEAK_ADD_PERSONAL_CARRY"/>
+		<SkillSubskill Value="SUBSKILL-MULTI_WEAK_ADD_MAX_HEALTH_P"/>
+		<SkillSubskill Value="SUBSKILL-CONST_WEAK_SUB_MOVEMENT"/>
+		<SkillGroupFilter Value="Race"/>
+		<SkillGroupFilter Value="RaceDwarves"/>
+	</SKILL-RACE_DWARVES_CHILD>
+	<SKILL-RACE_DWARVES Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_RACE_DWARVES" Description="DES_SKILL_RACE_DWARVES_DES" IconName="SkillRaceDwarves"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-ADD_CRAFTING"/>
+		<SkillSubskill Value="SUBSKILL-MULTI_WEAK_ADD_PERSONAL_CARRY"/>
+		<SkillSubskill Value="SUBSKILL-MULTI_WEAK_ADD_MAX_HEALTH_P"/>
+		<SkillSubskill Value="SUBSKILL-ADD_SHIELDING_MEDIUM"/>
+		<SkillSubskill Value="SUBSKILL-CONST_WEAK_SUB_MOVEMENT"/>
+		<SkillGroupFilter Value="Race"/>
+		<SkillGroupFilter Value="RaceDwarves"/>
+	</SKILL-RACE_DWARVES>
+	<SKILL-RACE_ELVES_CHILD Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_RACE_ELVES_WEAK" Description="DES_SKILL_RACE_ELVES_DES" IconName="SkillRaceElves"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-CONST_WEAK_ADD_MOVEMENT"/>
+		<SkillSubskill Value="SUBSKILL-MULTI_STRONG_ADD_WITS"/>
+		<SkillSubskill Value="SUBSKILL-MULTI_WEAK_ADD_PERCEPTION"/>
+		<SkillSubskill Value="SUBSKILL-HEAL_ON_DMG"/>
+		<SkillSubskill Value="SUBSKILL-CONST_WEAK_SUB_PERSONAL_CARRY"/>
+		<SkillSubskill Value="SUBSKILL-REDUCE_PERSONAL_CARRY_LIMIT"/>
+		<SkillGroupFilter Value="Race"/>
+		<SkillGroupFilter Value="RaceElves"/>
+	</SKILL-RACE_ELVES_CHILD>
+	<SKILL-RACE_ELVES_WEAK Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_RACE_ELVES_WEAK" Description="DES_SKILL_RACE_ELVES_DES" IconName="SkillRaceElves"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-CONST_WEAK_ADD_MOVEMENT"/>
+		<SkillSubskill Value="SUBSKILL-MULTI_STRONG_ADD_WITS"/>
+		<SkillSubskill Value="SUBSKILL-MULTI_WEAK_ADD_PERCEPTION"/>
+		<SkillSubskill Value="SUBSKILL-HEAL_ON_DMG"/>
+		<SkillSubskill Value="SUBSKILL-CONST_WEAK_SUB_PERSONAL_CARRY"/>
+		<SkillSubskill Value="SUBSKILL-ANCESTOR_VOICE"/>
+		<SkillSubskill Value="SUBSKILL-REDUCE_PERSONAL_CARRY_LIMIT"/>
+		<SkillGroupFilter Value="Race"/>
+		<SkillGroupFilter Value="RaceElves"/>
+	</SKILL-RACE_ELVES_WEAK>
+	<SKILL-RACE_ELVES Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_RACE_ELVES" Description="DES_SKILL_RACE_ELVES_DES" IconName="SkillRaceElves"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-CONST_WEAK_ADD_MOVEMENT"/>
+		<SkillSubskill Value="SUBSKILL-MULTI_STRONG_ADD_WITS"/>
+		<SkillSubskill Value="SUBSKILL-MULTI_WEAK_ADD_PERCEPTION"/>
+		<SkillSubskill Value="SUBSKILL-HEAL_ON_DMG"/>
+		<SkillSubskill Value="SUBSKILL-CONST_WEAK_SUB_PERSONAL_CARRY"/>
+		<SkillSubskill Value="SUBSKILL-ANCESTOR_VOICE"/>
+		<SkillGroupFilter Value="Race"/>
+		<SkillGroupFilter Value="RaceElves"/>
+	</SKILL-RACE_ELVES>
+	<SKILL-RACE_ORCS Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_RACE_ORCS" Description="DES_SKILL_RACE_ORCS_DES" IconName="SkillRaceOrcs"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-MULTI_WEAK_ADD_STRENGTH"/>
+		<SkillSubskill Value="SUBSKILL-SMALL_WEAPON_HATE"/>
+		<SkillGroupFilter Value="Race"/>
+		<SkillGroupFilter Value="RaceOrcs"/>
+	</SKILL-RACE_ORCS>
+	<SKILL-RACE_GOBLINS Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_RACE_GOBLINS" Description="DES_SKILL_RACE_GOBLINS_DES" IconName="SkillRaceGoblins"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-ADD_RESEARCH"/>
+		<SkillSubskill Value="SUBSKILL-ADD_RITUALS"/>
+		<SkillGroupFilter Value="Race"/>
+		<SkillGroupFilter Value="RaceGoblins"/>
+	</SKILL-RACE_GOBLINS>
+	<SKILL-RACE_DEMON Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_RACE_DEMON" Description="DES_SKILL_RACE_DEMON_DES" IconName="SkillRaceDemon"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-ENERGY_DISTURB"/>
+		<SkillGroupFilter Value="Race"/>
+		<SkillGroupFilter Value="RaceDemons"/>
+	</SKILL-RACE_DEMON>
+	<SKILL-RACE_DEMON_FLYING Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_RACE_DEMON_FLYING" Description="DES_SKILL_RACE_DEMON_DES" IconName="SkillRaceDemon"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-ENERGY_DISTURB"/>
+		<SkillSubskill Value="SUBSKILL-REDUCE_PERSONAL_CARRY_LIMIT"/>
+		<SkillGroupFilter Value="Race"/>
+		<SkillGroupFilter Value="RaceDemons"/>
+	</SKILL-RACE_DEMON_FLYING>
+	<SKILL-RACE_DEMON_CMUCH Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_RACE_DEMON_CMUCH" Description="DES_SKILL_RACE_DEMON_DES" IconName="SkillRaceDemon"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-ENERGY_DISTURB"/>
+		<SkillSubskill Value="SUBSKILL-RANDOM_PROTECTION"/>
+		<SkillSubskill Value="SUBSKILL-POISON_SPIT"/>
+		<SkillGroupFilter Value="Race"/>
+		<SkillGroupFilter Value="RaceDemons"/>
+	</SKILL-RACE_DEMON_CMUCH>
+    <SKILL-RACE_VILLAGE_DEMON Rarity="0">
+        <DescriptionInfo Name="DES_SKILL_RACE_VILLAGE_DEMON" Description="DES_SKILL_RACE_VILLAGE_DEMON_DES" IconName="SkillRaceDemon"/>
+        <BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+        <SkillSubskill Value="SUBSKILL-ENERGY_SCATTERING"/>
+        <SkillSubskill Value="SUBSKILL-VILLAGE_DEMON_BIND"/>
+        <SkillSubskill Value="SUBSKILL-CONST_ADD_XP"/>
+        <SkillGroupFilter Value="Race"/>
+        <SkillGroupFilter Value="RaceVillageDemons"/>
+    </SKILL-RACE_VILLAGE_DEMON>
+    
+    <SKILL-RACE_NIGHT_DEMON Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_RACE_NIGHT_DEMON" Description="DES_SKILL_RACE_NIGHT_DEMON_DES" IconName="SkillRaceNightDemon"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-ENERGY_DISTURB"/>
+		<SkillSubskill Value="SUBSKILL-NIGHT_POWER"/>
+		<SkillSubskill Value="SUBSKILL-DAY_WEAKNESS"/>
+		<SkillGroupFilter Value="Race"/>
+		<SkillGroupFilter Value="RaceDemons"/>
+	</SKILL-RACE_NIGHT_DEMON>
+    <SKILL-RACE_NIGHT_DEMON_FLYING Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_RACE_NIGHT_DEMON_FLYING" Description="DES_SKILL_RACE_NIGHT_DEMON_DES" IconName="SkillRaceNightDemon"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-ENERGY_DISTURB"/>
+		<SkillSubskill Value="SUBSKILL-NIGHT_POWER"/>
+		<SkillSubskill Value="SUBSKILL-DAY_WEAKNESS"/>
+		<SkillSubskill Value="SUBSKILL-REDUCE_PERSONAL_CARRY_LIMIT"/>
+		<SkillGroupFilter Value="Race"/>
+		<SkillGroupFilter Value="RaceDemons"/>
+	</SKILL-RACE_NIGHT_DEMON_FLYING>
+    <SKILL-RACE_NIGHT_DEMON_STRIGA Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_RACE_DEMON_STRIGA" Description="DES_SKILL_RACE_DEMON_STRIGA_DES" IconName="SkillRaceNightDemonStriga"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-ENERGY_DISTURB"/>
+		<SkillSubskill Value="SUBSKILL-NIGHT_POWER"/>
+		<SkillSubskill Value="SUBSKILL-DAY_WEAKNESS"/>
+		<SkillSubskill Value="SUBSKILL-BLOOD_THIRSTY"/>
+		<SkillGroupFilter Value="Race"/>
+		<SkillGroupFilter Value="RaceDemons"/>
+	</SKILL-RACE_NIGHT_DEMON_STRIGA>
+	<SKILL-RACE_UNLI Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_RACE_UNLI" Description="DES_SKILL_RACE_UNLI_DES" IconName="SkillRaceUnliving"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-ADD_SHIELDING_VLIGHT_P"/>
+		<SkillGroupFilter Value="Race"/>
+		<SkillGroupFilter Value="RaceUnliving"/>
+	</SKILL-RACE_UNLI>
+	<SKILL-RACE_DRAGON Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_RACE_DRAGON" Description="DES_SKILL_RACE_DRAGON_DES" IconName="SkillRaceDragon"/>
+		<BaseEssence Amount="50" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-TRANSFER_DMG"/>
+		<SkillSubskill Value="SUBSKILL-STRONG_OVERWHELM"/>
+		<SkillSubskill Value="SUBSKILL-SUMMON_TROLL_LAVA_ROCKERS"/>
+		<SkillGroupFilter Value="Race"/>
+		<SkillGroupFilter Value="RaceDragon"/>
+	</SKILL-RACE_DRAGON>
+	<SKILL-RACE_UNLI_DRAGON Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_RACE_UNLI_DRAGON" Description="DES_SKILL_RACE_UNLI_DRAGON_DES" IconName="SkillRaceDragon"/>
+		<BaseEssence Amount="35" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-STRONG_OVERWHELM"/>
+		<SkillGroupFilter Value="Race"/>
+		<SkillGroupFilter Value="RaceUnliDragon"/>
+	</SKILL-RACE_UNLI_DRAGON>
+	<SKILL-RACE_DRAGON_ZMEY Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_RACE_DRAGON_ZMEY" Description="DES_SKILL_RACE_DRAGON_ZMEY_DES" IconName="SkillRaceDragon"/>
+		<BaseEssence Amount="35" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-STRONG_OVERWHELM"/>
+		<SkillGroupFilter Value="Race"/>
+		<SkillGroupFilter Value="RaceDragonZmey"/>
+	</SKILL-RACE_DRAGON_ZMEY>
+	<SKILL-RACE_LIGHT_SICK_DRAGON Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_RACE_LIGHT_SICK_DRAGON" Description="DES_SKILL_RACE_LIGHT_SICK_DRAGON_DES" IconName="SkillRaceDragon"/>
+		<BaseEssence Amount="35" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-STRONG_OVERWHELM"/>
+		<SkillSubskill Value="SUBSKILL-STRONG_ARRIVAL_TRAP_DMG"/>
+		<SkillSubskill Value="SUBSKILL-SUMMON_LIGHT_SVIATELKO"/>
+		<SkillGroupFilter Value="Race"/>
+		<SkillGroupFilter Value="RaceDragonLightSickZmey"/>
+	</SKILL-RACE_LIGHT_SICK_DRAGON>
+	<SKILL-RACE_TROLL Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_RACE_TROLL" Description="DES_SKILL_RACE_TROLL_DES" IconName="SkillRaceTroll"/>
+		<BaseEssence Amount="25" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-REGENERATION_P"/>
+		<SkillSubskill Value="SUBSKILL-EXTRA_SHIELDING"/>
+		<SkillGroupFilter Value="Race"/>
+		<SkillGroupFilter Value="RaceTrolls"/>
+	</SKILL-RACE_TROLL>
+	<SKILL-RACE_DARKNESS_CHILDREN Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_RACE_DARKNESS_CHILDREN" Description="DES_SKILL_RACE_DARKNESS_CHILDREN_DES" IconName="SkillRaceDarknessChildren"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+        <SkillSubskill Value="SUBSKILL-NIGHT_POWER"/>
+		<SkillGroupFilter Value="Race"/>
+		<SkillGroupFilter Value="RaceDarknessChildren"/>
+	</SKILL-RACE_DARKNESS_CHILDREN>
+	<SKILL-RACE_DARKNESS_CHILDREN_MENAVCA Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_RACE_DARKNESS_CHILDREN" Description="DES_SKILL_RACE_DARKNESS_CHILDREN_MANEVCA_DES" IconName="SkillRaceDarknessChildren"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+        <SkillSubskill Value="SUBSKILL-NIGHT_POWER"/>
+        <SkillSubskill Value="SUBSKILL-MIMIC_FRIEND_HEALTH"/>
+		<SkillGroupFilter Value="Race"/>
+		<SkillGroupFilter Value="RaceDarknessChildren"/>
+	</SKILL-RACE_DARKNESS_CHILDREN_MENAVCA>
+</SKILLS_1_NATURAL>

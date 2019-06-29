@@ -14,7 +14,12 @@ namespace Thea2Translator.Logic
             get { return FlagHelper.IsSettedBit(Flag, 0); }
             set { Flag = FlagHelper.GetSettedBitValue(Flag, 0, value); }
         }
-        
+        public bool HasConflict
+        {
+            get { return FlagHelper.IsSettedBit(Flag, 1); }
+            set { Flag = FlagHelper.GetSettedBitValue(Flag, 1, value); }
+        }
+
         public string OriginalWord;
         public string Translation;
 
@@ -105,6 +110,22 @@ namespace Thea2Translator.Logic
             string text = $"({UsageCountDataBase},{UsageCountModules}) {OriginalWord}";
             if (!string.IsNullOrEmpty(Translation)) text = $"{text} - {Translation}";
             return text;
+        }
+
+        public static bool IsEquals(VocabularyElem elem1, VocabularyElem elem2)
+        {
+            if (elem1 == null && elem2 == null) return true;
+
+            if (elem1 == null && elem2 != null) return false;
+            if (elem1 != null && elem2 == null) return false;
+            if (elem1.Translation != elem2.Translation) return false;
+            return true;
+        }
+
+        public void SetConlfictWith(VocabularyElem elem)
+        {
+            HasConflict = true;
+            Translation += $"###" + elem.Translation;
         }
     }
 }

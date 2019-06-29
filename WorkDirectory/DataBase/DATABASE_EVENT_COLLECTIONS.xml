@@ -1,0 +1,217 @@
+﻿<EVENT_COLLECTIONS>
+	<EVENTC-SLAVYAN_VILLAGE_SMALL>
+		<Event ModuleName="Slavyan" EventID="23"/>
+	</EVENTC-SLAVYAN_VILLAGE_SMALL>
+	<EVENTC-SLAVYAN_VILLAGE_MED>
+		<Event ModuleName="Slavyan" EventID="25"/>
+	</EVENTC-SLAVYAN_VILLAGE_MED>
+	<EVENTC-ARMY_SLAVYAN>
+		<Event ModuleName="Slavyan" EventID="29"/>
+	</EVENTC-ARMY_SLAVYAN>
+	
+	<EVENTC-SCAVENGERS_VILLAGE_SMALL>
+		<Event ModuleName="Scavengers" EventID="32"/>
+	</EVENTC-SCAVENGERS_VILLAGE_SMALL>
+	<EVENTC-SCAVENGERS_VILLAGE_MED>
+		<Event ModuleName="Scavengers" EventID="33"/>
+	</EVENTC-SCAVENGERS_VILLAGE_MED>
+	<EVENTC-ARMY_SCAVENGERS>
+		<Event ModuleName="Scavengers" EventID="62"/>
+	</EVENTC-ARMY_SCAVENGERS>
+	
+	<EVENTC-STINGERS_VILLAGE_SMALL>
+		<Event ModuleName="Stingers" EventID="7"/>
+	</EVENTC-STINGERS_VILLAGE_SMALL>
+	<EVENTC-STINGERS_VILLAGE_MED>
+		<Event ModuleName="Stingers" EventID="7"/>
+	</EVENTC-STINGERS_VILLAGE_MED>
+	<EVENTC-ARMY_STINGERS>
+		<Event ModuleName="Stingers" EventID="5"/>
+	</EVENTC-ARMY_STINGERS>
+	
+	<EVENTC-WOODKIN_VILLAGE_SMALL>
+		<Event ModuleName="Woodlandkin" EventID="23"/>
+	</EVENTC-WOODKIN_VILLAGE_SMALL>
+	<EVENTC-WOODKIN_VILLAGE_MED>
+		<Event ModuleName="Woodlandkin" EventID="25"/>
+	</EVENTC-WOODKIN_VILLAGE_MED>
+	<EVENTC-ARMY_WOODLANDKIN>
+		<Event ModuleName="Woodlandkin" EventID="44"/>
+	</EVENTC-ARMY_WOODLANDKIN>
+	
+	<EVENTC-ALPHACLAN_VILLAGE_SMALL>
+		<Event ModuleName="Alphaclan" EventID="32"/>
+	</EVENTC-ALPHACLAN_VILLAGE_SMALL>
+	<EVENTC-ALPHACLAN_VILLAGE_MED>
+		<Event ModuleName="Alphaclan" EventID="35"/>
+	</EVENTC-ALPHACLAN_VILLAGE_MED>
+	<EVENTC-ARMY_ALPHACLAN>
+		<Event ModuleName="Alphaclan" EventID="61"/>
+	</EVENTC-ARMY_ALPHACLAN>
+	
+	<EVENTC-EARTHBOUND_VILLAGE_SMALL>
+		<Event ModuleName="Earthbound" EventID="32"/>
+	</EVENTC-EARTHBOUND_VILLAGE_SMALL>
+	<EVENTC-EARTHBOUND_VILLAGE_MED>
+		<Event ModuleName="Earthbound" EventID="35"/>
+	</EVENTC-EARTHBOUND_VILLAGE_MED>
+	<EVENTC-ARMY_EARTHBOUND>
+		<Event ModuleName="Earthbound" EventID="65"/>
+	</EVENTC-ARMY_EARTHBOUND>
+	
+	<EVENTC-SPIRIT_TALKERS_VILLAGE_SMALL>
+		<Event ModuleName="SpiritTalkers" EventID="23"/>
+	</EVENTC-SPIRIT_TALKERS_VILLAGE_SMALL>
+	<EVENTC-SPIRIT_TALKERS_VILLAGE_MED>
+		<Event ModuleName="SpiritTalkers" EventID="57"/>
+	</EVENTC-SPIRIT_TALKERS_VILLAGE_MED>
+	<EVENTC-ARMY_SPIRIT_TALKERS>
+		<Event ModuleName="SpiritTalkers" EventID="44"/>
+	</EVENTC-ARMY_SPIRIT_TALKERS>
+	
+	<EVENTC-FOREST_DEMONS_VILLAGE_SMALL>
+		<Event ModuleName="Forestdemons" EventID="32"/>
+	</EVENTC-FOREST_DEMONS_VILLAGE_SMALL>
+	<EVENTC-FOREST_DEMONS_VILLAGE_MED>
+		<Event ModuleName="Forestdemons" EventID="32"/>
+	</EVENTC-FOREST_DEMONS_VILLAGE_MED>
+	<EVENTC-ARMY_FOREST_DEMONS>
+		<Event ModuleName="Forestdemons" EventID="33"/>
+	</EVENTC-ARMY_FOREST_DEMONS>
+	
+	<EVENTC-NIGHT_DEMONS_VILLAGE_SMALL>
+		<Event ModuleName="Nightdemons" EventID="32"/>
+	</EVENTC-NIGHT_DEMONS_VILLAGE_SMALL>
+	<EVENTC-NIGHT_DEMONS_VILLAGE_MED>
+		<Event ModuleName="Nightdemons" EventID="32"/>
+	</EVENTC-NIGHT_DEMONS_VILLAGE_MED>
+	<EVENTC-ARMY_NIGHT_DEMONS>
+		<Event ModuleName="Nightdemons" EventID="34"/>
+	</EVENTC-ARMY_NIGHT_DEMONS>
+	
+	<EVENTC-ICE_DEMONS_VILLAGE_SMALL>
+		<Event ModuleName="Icedemons" EventID="32"/>
+	</EVENTC-ICE_DEMONS_VILLAGE_SMALL>
+	<EVENTC-ICE_DEMONS_VILLAGE_MED>
+		<Event ModuleName="Icedemons" EventID="32"/>
+	</EVENTC-ICE_DEMONS_VILLAGE_MED>
+	<EVENTC-ARMY_ICE_DEMONS>
+		<Event ModuleName="Icedemons" EventID="33"/>
+	</EVENTC-ARMY_ICE_DEMONS>
+	
+	<EVENTC-SHADOWKIN_VILLAGE_SMALL>
+		<Event ModuleName="Shadowkin" EventID="32"/>
+	</EVENTC-SHADOWKIN_VILLAGE_SMALL>
+	<EVENTC-SHADOWKIN_VILLAGE_MED>
+		<Event ModuleName="Shadowkin" EventID="32"/>
+	</EVENTC-SHADOWKIN_VILLAGE_MED>
+	<EVENTC-ARMY_SHADOWKIN>
+		<Event ModuleName="Shadowkin" EventID="34"/>
+	</EVENTC-ARMY_SHADOWKIN>
+	
+	<EVENTC-LIGHTBRINGERS_VILLAGE_SMALL>
+		<Event ModuleName="Lightbringers" EventID="1"/>
+	</EVENTC-LIGHTBRINGERS_VILLAGE_SMALL>
+	<EVENTC-LIGHTBRINGERS_VILLAGE_MED>
+		<Event ModuleName="Lightbringers" EventID="3"/>
+	</EVENTC-LIGHTBRINGERS_VILLAGE_MED>
+	<EVENTC-ARMY_LIGHTBRINGERS>
+		<Event ModuleName="Lightbringers" EventID="2"/>
+	</EVENTC-ARMY_LIGHTBRINGERS>
+	
+	<EVENTC-ARMY_NEUTRAL_BEAST>
+		<Event ModuleName="Generic" EventID="3"/>
+	</EVENTC-ARMY_NEUTRAL_BEAST>
+	<EVENTC-ARMY_NEUTRAL_HUMANOID>
+		<Event ModuleName="Generic" EventID="2"/>
+	</EVENTC-ARMY_NEUTRAL_HUMANOID>
+	<EVENTC-ARMY_NEUTRAL_SPIRIT>
+		<Event ModuleName="Generic" EventID="13"/>
+	</EVENTC-ARMY_NEUTRAL_SPIRIT>
+	<EVENTC-ARMY_NEUTRAL_SOCIAL>
+		<Event ModuleName="Generic" EventID="7"/>
+	</EVENTC-ARMY_NEUTRAL_SOCIAL>
+	<EVENTC-ARMY_NEUTRAL_MYTHICAL>
+		<Event ModuleName="Generic" EventID="5"/>
+	</EVENTC-ARMY_NEUTRAL_MYTHICAL>
+	<EVENTC-ARMY_NEUTRAL_TROLL>
+		<Event ModuleName="Generic" EventID="6"/>
+	</EVENTC-ARMY_NEUTRAL_TROLL>
+	<EVENTC-ARMY_NEUTRAL_PHYSICAL_DEMON>
+		<Event ModuleName="Generic" EventID="8"/>
+	</EVENTC-ARMY_NEUTRAL_PHYSICAL_DEMON>
+	<EVENTC-ARMY_NEUTRAL_UNLIVING>
+		<Event ModuleName="Generic" EventID="9"/>
+	</EVENTC-ARMY_NEUTRAL_UNLIVING>
+	
+	<EVENTC-RUINS>
+		<Event ModuleName="Ruins Basic" EventID="37"/>
+	</EVENTC-RUINS>
+	<EVENTC-RUINS_DEF>
+		<Event ModuleName="Ruins Basic" EventID="37"/>
+		<Event ModuleName="Ruins Basic" EventID="1"/>
+	</EVENTC-RUINS_DEF>
+	<EVENTC-RUINS_ANCIENT_FOREST>
+		<Event ModuleName="Ruins Basic" EventID="2"/>
+		<Event ModuleName="Ruins Basic" EventID="49"/>
+	</EVENTC-RUINS_ANCIENT_FOREST>
+	<EVENTC-RUINS_METAL>
+		<Event ModuleName="Ruins Basic" EventID="3"/>
+	</EVENTC-RUINS_METAL>
+	<EVENTC-RUINS_ICE>
+		<Event ModuleName="Ruins Basic" EventID="3"/>
+	</EVENTC-RUINS_ICE>
+	<EVENTC-RUINS_VULCANIC>
+		<Event ModuleName="Ruins Basic" EventID="4"/>
+	</EVENTC-RUINS_VULCANIC>
+	<EVENTC-RUINS_DARKNESS>
+		<Event ModuleName="Ruins Basic" EventID="5"/>
+		<Event ModuleName="Ruins Basic" EventID="42"/>
+		<Event ModuleName="Ruins Basic" EventID="44"/>
+	</EVENTC-RUINS_DARKNESS>
+	
+	<EVENTC-CEMENTARY>
+		<Event ModuleName="Cemetery" EventID="14"/>
+	</EVENTC-CEMENTARY>
+	<EVENTC-CEMENTARY_DEF>
+		<Event ModuleName="Cemetery" EventID="14"/>        
+	</EVENTC-CEMENTARY_DEF>
+	<EVENTC-CEMENTARY_ANCIENT_FOREST>
+		<Event ModuleName="Cemetery" EventID="19"/>
+	</EVENTC-CEMENTARY_ANCIENT_FOREST>
+	<EVENTC-CEMENTARY_VULCANIC>
+		<Event ModuleName="Cemetery" EventID="23"/>
+	</EVENTC-CEMENTARY_VULCANIC>
+	<EVENTC-CEMENTARY_METAL>
+		<Event ModuleName="Cemetery" EventID="8"/>
+	</EVENTC-CEMENTARY_METAL>
+	<EVENTC-CEMENTARY_DARKNESS>
+		<Event ModuleName="Cemetery" EventID="3"/>
+	</EVENTC-CEMENTARY_DARKNESS>
+	
+	<EVENTC-CAVE>
+		<Event ModuleName="Cave" EventID="1"/>
+		<Event ModuleName="Cave" EventID="13"/>
+	</EVENTC-CAVE>
+	<EVENTC-ABANDONED_HOUSE>
+		<Event ModuleName="Abandoned House" EventID="1"/>
+		<Event ModuleName="Abandoned House" EventID="9"/>
+	</EVENTC-ABANDONED_HOUSE>
+	<EVENTC-NEST>
+		<Event ModuleName="Generic" EventID="15"/>
+	</EVENTC-NEST>
+	<EVENTC-BEAST_NEST>
+		<Event ModuleName="Generic" EventID="16"/>
+	</EVENTC-BEAST_NEST>
+	<EVENTC-UNDEAD_NEST>
+		<Event ModuleName="Generic" EventID="17"/>
+	</EVENTC-UNDEAD_NEST>
+	<EVENTC-DEMON_NEST>
+		<Event ModuleName="Generic" EventID="18"/>
+	</EVENTC-DEMON_NEST>
+	<EVENTC-LIGHTBRINGERS_NEST>
+		<Event ModuleName="Lightbringers" EventID="1"/>
+	</EVENTC-LIGHTBRINGERS_NEST>
+
+
+</EVENT_COLLECTIONS>

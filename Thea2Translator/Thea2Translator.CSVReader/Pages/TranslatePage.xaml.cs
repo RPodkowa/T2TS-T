@@ -117,7 +117,15 @@ namespace Thea2Translator.DesktopApp.Pages
             selectedCacheElement = lbItemsToTranslate.SelectedItem as CacheElemViewModel;
 
             txtOriginalText.Text = selectedCacheElement?.CacheElem?.OriginalText;
-            txtTranslatedText.Text = selectedCacheElement?.CacheElem?.TranslatedText;
+
+            if (selectedCacheElement?.CacheElem !=null)
+            {
+                var text = selectedCacheElement.CacheElem.TranslatedText;
+                if (selectedCacheElement.CacheElem.HasConflict)                
+                    text+="\r\n===============\r\n"+ selectedCacheElement.CacheElem.ConflictTranslatedText;
+                
+                txtTranslatedText.Text = text;
+            }
 
             btnGoogle.IsEnabled = selectedCacheElement == null ? false : true;
 
@@ -202,6 +210,7 @@ namespace Thea2Translator.DesktopApp.Pages
                     case 0: filtredElements = filtredElements.ToList(); break;
                     case 1: filtredElements = filtredElements.Where(c => c.CacheElem.ToTranslate).ToList(); break;
                     case 2: filtredElements = filtredElements.Where(c => c.CacheElem.ToConfirm && !c.CacheElem.ToTranslate).ToList(); break;
+                    case 3: filtredElements = filtredElements.Where(c => c.CacheElem.HasConflict).ToList(); break;
                 }
 
                 if (txtSearch.Text != "")
@@ -229,6 +238,18 @@ namespace Thea2Translator.DesktopApp.Pages
         {
             this.NavigationService.Navigate(new ModuleSelectionPage());
         }
+
+        private void ButtonVocabulary_Click(object sender, RoutedEventArgs e)
+        {
+            if (vocabulary is null) return;
+
+            var vocabularyElems = vocabulary.VocabularyElems.Where(x => x.HasConflict);
+
+            var selectedIndex = lbDictinaryItems.SelectedIndex;
+            lbDictinaryItems.ItemsSource = vocabularyElems;
+            lbDictinaryItems.SelectedIndex = Math.Min(selectedIndex, lbDictinaryItems.Items.Count - 1);
+        }
+        
 
         private void btnGoogle_Click(object sender, RoutedEventArgs e)
         {
@@ -339,6 +360,7 @@ namespace Thea2Translator.DesktopApp.Pages
 
         private void RefreshVocabularyList()
         {
+            if (vocabulary is null) return;
             if (selectedCacheElement?.CacheElem?.OriginalText == null)
                 return;
 
@@ -378,6 +400,15 @@ namespace Thea2Translator.DesktopApp.Pages
             var index = lbItemsToTranslate.Items.IndexOf(checkBox.DataContext);
 
             filtredElements[index].CacheElem.SetConfirmation(checkBox.IsChecked.Value);
+            dataCache.SaveElems();
+            FilterItems();
+        }
+        private void SetResolvedOnCache(object sender, RoutedEventArgs e)
+        {
+            var checkBox = sender as CheckBox;
+            var index = lbItemsToTranslate.Items.IndexOf(checkBox.DataContext);
+
+            filtredElements[index].CacheElem.ResolveConflict(!checkBox.IsChecked.Value, txtTranslatedText.Text);
             dataCache.SaveElems();
             FilterItems();
         }

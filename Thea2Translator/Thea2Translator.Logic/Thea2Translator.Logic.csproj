@@ -99,6 +99,7 @@
     <Reference Include="System.Interactive.Async, Version=3.2.0.0, Culture=neutral, PublicKeyToken=94bc3704cddfc263, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Interactive.Async.3.2.0\lib\net46\System.Interactive.Async.dll</HintPath>
     </Reference>
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -107,6 +108,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cache\DirectoryType.cs" />
     <Compile Include="Cache\AlgorithmStep.cs" />
     <Compile Include="Cache\CacheElem.cs" />
     <Compile Include="Cache\DataCache.cs" />
@@ -114,6 +116,7 @@
     <Compile Include="Cache\Interfaces\IDataCache.cs" />
     <Compile Include="Cache\Interfaces\IStatistic.cs" />
     <Compile Include="Cache\Statistic.cs" />
+    <Compile Include="Cache\Synchronization.cs" />
     <Compile Include="Languages\Interfaces\ILanguageManager.cs" />
     <Compile Include="Languages\Language.cs" />
     <Compile Include="Languages\LanguageManager.cs" />

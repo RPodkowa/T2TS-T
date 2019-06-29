@@ -1,0 +1,284 @@
+﻿<SKILLS_2_CLASS_ADVANCEMENT>
+
+	<!-- CLASS_SKILLS -->
+	<SKILL-MASTER_LUCK Rarity="10">
+		<DescriptionInfo Name="DES_SKILL_MASTER_LUCK" Description="DES_SKILL_MASTER_LUCK_DES" IconName="SkillMasterLuck"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-ADD_VSTRONG_LUCK"/>
+		<SkillGroupFilter Value="ClassScavenger"/>
+	</SKILL-MASTER_LUCK>
+	<SKILL-MASTER_GATHERER Rarity="10">
+		<DescriptionInfo Name="DES_SKILL_MASTER_GATHERER" Description="DES_SKILL_MASTER_GATHERER_DES" IconName="SkillMasterGatherer"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-ADD_VSTRONG_GATHERING"/>
+		<SkillGroupFilter Value="ClassGatherer"/>
+	</SKILL-MASTER_GATHERER>
+	<SKILL-MASTER_CRAFTSMAN  Rarity="10">
+		<DescriptionInfo Name="DES_SKILL_MASTER_CRAFTSMAN" Description="DES_SKILL_MASTER_CRAFTSMAN_DES" IconName="SkillMasterCraftsman"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-ADD_VSTRONG_CRAFTING"/>
+		<SkillGroupFilter Value="ClassCraftsman"/>
+	</SKILL-MASTER_CRAFTSMAN>
+	<SKILL-MASTER_INVENTOR  Rarity="40">
+		<DescriptionInfo Name="DES_SKILL_MASTER_INVENTOR" Description="DES_SKILL_MASTER_INVENTOR_DES" IconName="SkillMasterInventor"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-ADD_STRONG_CRAFTING"/>
+		<SkillSubskill Value="SUBSKILL-ADD_RESEARCH"/>
+		<SkillGroupFilter Value="ClassInventor"/>
+	</SKILL-MASTER_INVENTOR>
+	<SKILL-MASTER_HEALER  Rarity="10">
+		<DescriptionInfo Name="DES_SKILL_MASTER_HEALER" Description="DES_SKILL_MASTER_HEALER_DES" IconName="SkillMasterHealer"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-GROUP_HEAL_P"/>
+		<SkillSubskill Value="SUBSKILL-LOWER_DEATH_CHANCE"/>
+		<SkillGroupFilter Value="ClassHealer"/>
+	</SKILL-MASTER_HEALER>
+	
+	<!-- CLASS_ADVANCEMENT_SKILLS -->
+	<SKILL-TOUGHNESS Rarity="10">
+		<DescriptionInfo Name="DES_SKILL_TOUGHNESS" Description="DES_SKILL_TOUGHNESS_DES" IconName="SkillToughness"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-ADD_MAX_HEALTH_P"/>
+		<SkillSubskill Value="SUBSKILL-ADD_MAX_HEALTH_S"/>
+		<SkillGroupFilter Value="AdvFighter"/>
+		<SkillGroupFilter Value="AdvTank"/>
+		<SkillGroupFilter Value="ClassCraftsman"/>
+	</SKILL-TOUGHNESS>
+	<SKILL-PARRY Rarity="10">
+		<DescriptionInfo Name="DES_SKILL_PARRY" Description="DES_SKILL_PARRY_DES" IconName="SkillParry"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-ADD_SHIELDING_LIGHT"/>
+		<SkillGroupFilter Value="AdvFighter"/>
+		<SkillGroupFilter Value="AdvAssassin"/>
+	</SKILL-PARRY>
+	<SKILL-LUCK Rarity="10">
+		<DescriptionInfo Name="DES_SKILL_LUCK" Description="DES_SKILL_LUCK_DES" IconName="SkillMasterLuck"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-ADD_STRONG_LUCK"/>
+		<SkillGroupFilter Value="ClassWarrior"/>
+		<SkillGroupFilter Value="ClassCraftsman"/>
+		<SkillGroupFilter Value="ClassInventor"/>
+		<SkillGroupFilter Value="ClassGatherer"/>
+		<SkillGroupFilter Value="ClassHunter"/>
+		<SkillGroupFilter Value="ClassHealer"/>
+		<SkillGroupFilter Value="ClassMage"/>
+		<SkillGroupFilter Value="ClassDruid"/>
+		<SkillGroupFilter Value="ClassShaman"/>
+	</SKILL-LUCK>
+	<SKILL-GATHERER Rarity="10">
+		<DescriptionInfo Name="DES_SKILL_GATHERER" Description="DES_SKILL_GATHERER_DES" IconName="SkillMasterGatherer"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-ADD_STRONG_GATHERING"/>
+		<SkillGroupFilter Value="BaseGatherer"/>
+		<SkillGroupFilter Value="AdvWorker"/>
+		<SkillGroupFilter Value="ClassScavenger"/>
+		<SkillGroupFilter Value="ClassSpider"/>
+	</SKILL-GATHERER>
+	<SKILL-CRAFTSMAN  Rarity="10">
+		<DescriptionInfo Name="DES_SKILL_CRAFTSMAN" Description="DES_SKILL_CRAFTSMAN_DES" IconName="SkillMasterCraftsman"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-ADD_STRONG_CRAFTING"/>
+		<SkillGroupFilter Value="BaseCraftsman"/>
+		<SkillGroupFilter Value="AdvWorker"/>
+		<SkillGroupFilter Value="ClassScavenger"/>
+		<SkillGroupFilter Value="ClassSpider"/>
+	</SKILL-CRAFTSMAN >
+	<SKILL-LINE_CHARGE Rarity="15">
+		<DescriptionInfo Name="DES_SKILL_LINE_CHARGE" Description="DES_SKILL_LINE_CHARGE_DES" IconName="SkillLineCharge"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-LINE_CHARGE"/>
+		<SkillGroupFilter Value="ClassLargeAnimal"/>
+		<SkillGroupFilter Value="AdvFighter"/>
+	</SKILL-LINE_CHARGE>
+	<SKILL-SUMMON_BEE Rarity="20">
+		<DescriptionInfo Name="DES_SKILL_SUMMON_BEE" Description="DES_SKILL_SUMMON_BEE_DES" IconName="SkillSummonBee"/>
+		<BaseEssence Amount="35" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-SUMMON_BEE"/>
+		<SkillGroupFilter Value="SummonBee"/>
+	</SKILL-SUMMON_BEE>
+	<SKILL-SUMMON_KRAKEN_TENTACLE Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_SUMMON_KRAKEN_TENTACLE" Description="DES_SKILL_SUMMON_KRAKEN_TENTACLE_DES" IconName="SkillSummonKrakenTentacle"/>
+		<BaseEssence Amount="35" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-SUMMON_KRAKEN_TENTACLE"/>
+		<SkillGroupFilter Value="SummonTentacle"/>
+	</SKILL-SUMMON_KRAKEN_TENTACLE>
+	<SKILL-DIZZINESS_POWDER Rarity="10">
+		<DescriptionInfo Name="DES_SKILL_DIZZINESS_POWDER" Description="DES_SKILL_DIZZINESS_POWDER_DES" IconName="SkillDizzinessPowder"/>
+		<BaseEssence Amount="15" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-DELAY_ENEMIES"/>
+		<SkillGroupFilter Value="AdvWiseman"/>
+	</SKILL-DIZZINESS_POWDER>
+	<SKILL-BLIZZARD Rarity="10">
+		<DescriptionInfo Name="DES_SKILL_BLIZZARD" Description="DES_SKILL_BLIZZARD_DES" IconName="SkillBlizzard"/>
+		<BaseEssence Amount="20" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-ENTRANCE_STUN_ALL"/>
+		<SkillGroupFilter Value="ClassIceTroll"/>
+	</SKILL-BLIZZARD>
+	<SKILL-HEADBUTT Rarity="20">
+		<DescriptionInfo Name="DES_SKILL_HEADBUTT" Description="DES_SKILL_HEADBUTT_DES" IconName="SkillHeadbutt"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-HEADBUTT"/>
+		<SkillGroupFilter Value="AdvFighter"/>
+	</SKILL-HEADBUTT>
+	<SKILL-POISON_THROWING_DAGGER Rarity="30">
+		<DescriptionInfo Name="DES_SKILL_POISON_THROWING_DAGGER" Description="DES_SKILL_POISON_THROWING_DAGGER_DES" IconName="SkillPoisonThrowingDagger"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-POISON_THROWING_DAGGER"/>
+		<SkillGroupFilter Value="AdvAssassin"/>
+		<SkillGroupFilter Value="ClassHunter"/>
+		<SkillGroupFilter Value="ClassWarrior"/>
+		<SkillGroupFilter Value="ClassGatherer"/>
+	</SKILL-POISON_THROWING_DAGGER>
+	<SKILL-BOILED_BLOOD Rarity="30">
+		<DescriptionInfo Name="DES_SKILL_BOILED_BLOOD" Description="DES_SKILL_BOILED_BLOOD_DES" IconName="SkillBoiledBlood"/>
+		<BaseEssence Amount="20" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-RETALIATION_DMG_STR"/>
+		<SkillGroupFilter Value="BoiledBlood"/>
+	</SKILL-BOILED_BLOOD>
+	<SKILL-INSPIRE Rarity="60">
+		<DescriptionInfo Name="DES_SKILL_INSPIRE" Description="DES_SKILL_INSPIRE_DES" IconName="SkillInspire"/>
+		<BaseEssence Amount="20" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-INSPIRE"/>
+		<SkillGroupFilter Value="AdvWiseman"/>
+	</SKILL-INSPIRE>
+	<SKILL-FROGS_RAIN Rarity="40">
+		<DescriptionInfo Name="DES_SKILL_FROGS_RAIN" Description="DES_SKILL_FROGS_RAIN_DES" IconName="SkillFrogsRain"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-FROGS_RAIN"/>
+		<SkillGroupFilter Value="ClassWitch"/>
+	</SKILL-FROGS_RAIN>
+	<SKILL-ENERGY_EXPLOSION Rarity="80">
+		<DescriptionInfo Name="DES_SKILL_ENERGY_EXPLOSION" Description="DES_SKILL_ENERGY_EXPLOSION_DES" IconName="SkillEnergyExplosion"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-ENERGY_EXPLOSION"/>
+		<SkillGroupFilter Value="AdvMagicUser"/>
+		<SkillGroupFilter Value="ClassNecromancer"/>
+	</SKILL-ENERGY_EXPLOSION>
+	<SKILL-TWO_DAGGERS_THROW Rarity="10">
+		<DescriptionInfo Name="DES_SKILL_TWO_DAGGERS_THROW" Description="DES_SKILL_TWO_DAGGERS_THROW_DES" IconName="SkillTwoDaggersThrow"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-FAST_MULTI_THROW_2"/>
+		<SkillGroupFilter Value="AdvAssassin"/>
+		<SkillGroupFilter Value="AdvShooter"/>
+	</SKILL-TWO_DAGGERS_THROW>
+	<SKILL-PRIMAL_DESIRE Rarity="60">
+		<DescriptionInfo Name="DES_SKILL_PRIMAL_DESIRE" Description="DES_SKILL_PRIMAL_DESIRE_DES" IconName="SkillPrimalDesire"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-PRIMAL_DESIRE"/>
+		<SkillGroupFilter Value="Erotic"/>
+		<SkillGroupFilter Value="ClassDruid"/>
+		<SkillGroupFilter Value="ClassWitch"/>
+		<SkillGroupFilter Value="ClassMage"/>
+	</SKILL-PRIMAL_DESIRE>
+	<SKILL-SHOWING_OFF Rarity="40">
+		<DescriptionInfo Name="DES_SKILL_SHOWING_OFF" Description="DES_SKILL_SHOWING_OFF_DES" IconName="SkillShowingOff"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-SHOWING_OFF"/>
+		<SkillGroupFilter Value="AdvBeast"/>
+		<SkillGroupFilter Value="ClassWarrior"/>
+		<SkillGroupFilter Value="AdvWorker"/>
+	</SKILL-SHOWING_OFF>
+	<SKILL-WAR_SHOUT Rarity="40">
+		<DescriptionInfo Name="DES_SKILL_WAR_SHOUT" Description="DES_SKILL_WAR_SHOUT_DES" IconName="SkillWarShout"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-WAR_SHOUT"/>
+		<SkillGroupFilter Value="AdvMindSoulWarrior"/>
+	</SKILL-WAR_SHOUT>
+	<SKILL-EVADE_ORDERS Rarity="20">
+		<DescriptionInfo Name="DES_SKILL_EVADE_ORDERS" Description="DES_SKILL_EVADE_ORDERS_DES" IconName="SkillBattleOrders"/>
+		<BaseEssence Amount="15" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-PROTECTING_OTHERS"/>
+		<SkillGroupFilter Value="AdvFighter"/>
+		<SkillGroupFilter Value="ClassWarrior"/>
+		<SkillGroupFilter Value="ClassCraftsman"/>
+	</SKILL-EVADE_ORDERS>
+	<SKILL-PROTECTIVE_WORD Rarity="30">
+		<DescriptionInfo Name="DES_SKILL_PROTECTIVE_WORD" Description="DES_SKILL_PROTECTIVE_WORD_DES" IconName="SkillProtectiveWord"/>
+		<BaseEssence Amount="15" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-PROTECTION_M_S"/>
+		<SkillGroupFilter Value="AdvWiseman"/>
+		<SkillGroupFilter Value="AdvGodMessenger"/>
+	</SKILL-PROTECTIVE_WORD>
+	<SKILL-HURRY_UP Rarity="20">
+		<DescriptionInfo Name="DES_SKILL_HURRY_UP" Description="DES_SKILL_HURRY_UP_DES" IconName="SkillHurryUp"/>
+		<BaseEssence Amount="15" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-HURRY_UP"/>
+		<SkillGroupFilter Value="AdvWiseman"/>
+	</SKILL-HURRY_UP>
+	<SKILL-SWARM_STRENGTH Rarity="10">
+		<DescriptionInfo Name="DES_SKILL_SWARM_STRENGTH" Description="DES_SKILL_SWARM_STRENGTH_DES" IconName="SkillSwarmStrength"/>
+		<BaseEssence Amount="35" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-SWARM_STRENGTH"/>
+		<SkillGroupFilter Value="ClassSmallAnimal"/>
+		<SkillGroupFilter Value="Swarm"/>
+	</SKILL-SWARM_STRENGTH>
+	<SKILL-HUNTERS_MARK Rarity="10">
+		<DescriptionInfo Name="DES_SKILL_HUNTERS_MARK" Description="DES_SKILL_HUNTERS_MARK_DES" IconName="SkillHuntersMark"/>
+		<BaseEssence Amount="25" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-HUNTERS_MARK"/>
+		<SkillGroupFilter Value="ClassHunter"/>
+	</SKILL-HUNTERS_MARK>
+	<SKILL-DEVOURING_ROAR Rarity="60">
+		<DescriptionInfo Name="DES_SKILL_DEVOURING_ROAR" Description="DES_SKILL_DEVOURING_ROAR_DES" IconName="SkillDevouringRoar"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-DEVOURING_ROAR"/>
+		<SkillGroupFilter Value="ClassIceTroll"/>
+	</SKILL-DEVOURING_ROAR>
+	<SKILL-DARKNESS_VORTEX Rarity="80">
+		<DescriptionInfo Name="DES_SKILL_DARKNESS_VORTEX" Description="DES_SKILL_DARKNESS_VORTEX_DES" IconName="SkillDarknessVortex"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-DARKNESS_VORTEX"/>
+		<SkillGroupFilter Value="ClassMroki"/>
+	</SKILL-DARKNESS_VORTEX>
+	<SKILL-BLESSED_ARMOUR Rarity="80">
+		<DescriptionInfo Name="DES_SKILL_BLESSED_ARMOUR" Description="DES_SKILL_BLESSED_ARMOUR_DES" IconName="SkillBlessedArmour"/>
+		<BaseEssence Amount="25" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-BLESSED_ARMOUR"/>
+		<SkillGroupFilter Value="AdvLightDemon"/>
+	</SKILL-BLESSED_ARMOUR>
+	<SKILL-LIGHT_CONNECTION Rarity="80">
+		<DescriptionInfo Name="DES_SKILL_LIGHT_CONNECTION" Description="DES_SKILL_LIGHT_CONNECTION_DES" IconName="SkillLightConnection"/>
+		<BaseEssence Amount="20" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-SWARM_SPEED"/>
+		<SkillGroupFilter Value="AdvLightDemon"/>
+	</SKILL-LIGHT_CONNECTION>
+	<SKILL-EERIE_THROWING_AXE Rarity="20">
+		<DescriptionInfo Name="DES_SKILL_EERIE_THROWING_AXE" Description="DES_SKILL_EERIE_THROWING_AXE_DES" IconName="SkillEerieThrowingAxe"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-EERIE_THROWING_AXE"/>
+		<SkillGroupFilter Value="ClassHunter"/>
+		<SkillGroupFilter Value="AdvShooter"/>
+	</SKILL-EERIE_THROWING_AXE>
+	<SKILL-PEBBLES_THROW Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_PEBBLES_THROW" Description="DES_SKILL_PEBBLES_THROW_DES" IconName="SkillPebblesThrow"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-THROW"/>
+		<SkillGroupFilter Value="AdvUntrainShooter"/>
+	</SKILL-PEBBLES_THROW>
+	<SKILL-RESIST_BEAST Rarity="0">
+		<DescriptionInfo Name="DES_SKILL_RESIST_BEAST" Description="DES_SKILL_RESIST_BEAST_DES" IconName="SkillResistBeast"/>
+		<BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-MULTI_ADD_MAX_HEALTH"/>
+		<SkillSubskill Value="SUBSKILL-VWEAK_ADD_ATT"/>
+		<SkillGroupFilter Value="AdvAnimalTrain"/>
+	</SKILL-RESIST_BEAST>
+	<SKILL-HYPNOSIS Rarity="20">
+		<DescriptionInfo Name="DES_SKILL_HYPNOSIS" Description="DES_SKILL_HYPNOSIS_DES" IconName="SkillHypnosis"/>
+		<BaseEssence Amount="20" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-HYPNOTISE_MOVE"/>
+		<SkillSubskill Value="SUBSKILL-DELAY_ENEMY"/>
+		<SkillGroupFilter Value="Hypnosis"/>
+	</SKILL-HYPNOSIS>
+	<SKILL-OUTMANOEUVRE Rarity="30">
+		<DescriptionInfo Name="DES_SKILL_OUTMANOEUVRE" Description="DES_SKILL_OUTMANOEUVRE_DES" IconName="SkillOutmanoeuvre"/>
+		<BaseEssence Amount="10" Tag="TAG-ESSENCE_GRAY"/>
+		<SkillSubskill Value="SUBSKILL-OUTMANOEUVRE"/>
+		<SkillGroupFilter Value="ClassHunter"/>
+	</SKILL-OUTMANOEUVRE>
+
+
+
+
+
+
+</SKILLS_2_CLASS_ADVANCEMENT>

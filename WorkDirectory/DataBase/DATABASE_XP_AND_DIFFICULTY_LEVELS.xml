@@ -1,0 +1,156 @@
+﻿<XP_AND_DIFFICULTYS>
+	<DIFF-BASE>
+        <Diff Min="0" Max="10" IconName="Placeholder"/>
+        <Diff Min="10" Max="30" IconName="Placeholder"/>
+        <Diff Min="30" Max="60" IconName="Placeholder"/>
+        <Diff Min="60" Max="100" IconName="Placeholder"/>
+        <Diff Min="100" Max="250" IconName="Placeholder"/>
+        <Diff Min="250" Max="500" IconName="Placeholder"/>
+        <Diff Min="500" Max="900" IconName="Placeholder"/>
+        <Diff Min="900" Max="1500" IconName="Placeholder"/>
+        <Diff Min="1500" Max="2300" IconName="Placeholder"/>
+        <Diff Min="2300" Max="3500" IconName="Placeholder"/>
+        <Diff Min="3500" Max="500000" IconName="Placeholder"/>
+    </DIFF-BASE>
+
+    <EXP_LVL-BASE>
+        <XPLevel Value="7"/>
+        <XPLevel Value="15"/>
+        <XPLevel Value="31"/>
+        <XPLevel Value="48"/>
+        <XPLevel Value="67"/>
+        <XPLevel Value="89"/>
+        <XPLevel Value="112"/>
+        <XPLevel Value="137"/>
+        <XPLevel Value="169"/>
+        <XPLevel Value="210"/>
+        <XPLevel Value="254"/>
+        <XPLevel Value="301"/>
+        <XPLevel Value="351"/>
+        <XPLevel Value="418"/>
+        <XPLevel Value="504"/>
+        <XPLevel Value="595"/>
+        <XPLevel Value="691"/>
+        <XPLevel Value="793"/>
+        <XPLevel Value="920"/>
+        <XPLevel Value="1074"/>
+        <XPLevel Value="1235"/>
+    </EXP_LVL-BASE>
+    <EXP_LVL-RP>
+        <XPLevel Value="7"/>
+        <XPLevel Value="14"/>
+        <XPLevel Value="21"/>
+        <XPLevel Value="29"/>
+        <XPLevel Value="37"/>
+        <XPLevel Value="46"/>
+        <XPLevel Value="55"/>
+        <XPLevel Value="65"/>
+        <XPLevel Value="75"/>
+        <XPLevel Value="87"/>
+        <XPLevel Value="100"/>
+        <XPLevel Value="113"/>
+        <XPLevel Value="128"/>
+        <XPLevel Value="144"/>
+        <XPLevel Value="162"/>
+        <XPLevel Value="181"/>
+        <XPLevel Value="202"/>
+        <XPLevel Value="225"/>
+        <XPLevel Value="250"/>
+        <XPLevel Value="276"/>
+        <XPLevel Value="305"/>
+        <XPLevel Value="336"/>
+        <XPLevel Value="370"/>
+        <XPLevel Value="406"/>
+        <XPLevel Value="445"/>
+        <XPLevel Value="487"/>
+        <XPLevel Value="532"/>
+        <XPLevel Value="581"/>
+        <XPLevel Value="632"/>
+        <XPLevel Value="687"/>
+        <XPLevel Value="746"/>
+        <XPLevel Value="808"/>
+        <XPLevel Value="874"/>
+        <XPLevel Value="945"/>
+        <XPLevel Value="1020"/>
+        <XPLevel Value="1099"/>
+        <XPLevel Value="1183"/>
+        <XPLevel Value="1272"/>
+        <XPLevel Value="1365"/>
+        <XPLevel Value="1464"/>
+        <XPLevel Value="1568"/>
+        <XPLevel Value="1678"/>
+        <XPLevel Value="1793"/>
+        <XPLevel Value="1914"/>
+        <XPLevel Value="2041"/>
+        <XPLevel Value="2175"/>
+        <XPLevel Value="2315"/>
+        <XPLevel Value="2461"/>
+        <XPLevel Value="2614"/>
+        <XPLevel Value="2774"/>
+        <XPLevel Value="2941"/>
+        <XPLevel Value="3116"/>
+        <XPLevel Value="3298"/>
+        <XPLevel Value="3488"/>
+        <XPLevel Value="3686"/>
+        <XPLevel Value="3892"/>
+        <XPLevel Value="4106"/>
+        <XPLevel Value="4329"/>
+        <XPLevel Value="4560"/>
+        <XPLevel Value="4801"/>
+        <XPLevel Value="5051"/>
+        <XPLevel Value="5310"/>
+        <XPLevel Value="5578"/>
+        <XPLevel Value="5857"/>
+        <XPLevel Value="6145"/>
+        <XPLevel Value="6444"/>
+        <XPLevel Value="6753"/>
+        <XPLevel Value="7072"/>
+        <XPLevel Value="7403"/>
+        <XPLevel Value="7744"/>
+        <XPLevel Value="8097"/>
+        <XPLevel Value="8462"/>
+        <XPLevel Value="8838"/>
+        <XPLevel Value="9226"/>
+        <XPLevel Value="9626"/>
+        <XPLevel Value="10039"/>
+        <XPLevel Value="10464"/>
+        <XPLevel Value="10903"/>
+        <XPLevel Value="11354"/>
+        <XPLevel Value="11818"/>
+        <XPLevel Value="12297"/>
+        <XPLevel Value="12789"/>
+        <XPLevel Value="13295"/>
+        <XPLevel Value="13815"/>
+        <XPLevel Value="14350"/>
+        <XPLevel Value="14899"/>
+        <XPLevel Value="15464"/>
+        <XPLevel Value="16043"/>
+        <XPLevel Value="16638"/>
+        <XPLevel Value="17249"/>
+        <XPLevel Value="17876"/>
+        <XPLevel Value="18519"/>
+        <XPLevel Value="19178"/>
+        <XPLevel Value="19854"/>
+        <XPLevel Value="20547"/>
+        <XPLevel Value="21258"/>
+        <XPLevel Value="21985"/>
+        <XPLevel Value="22730"/>
+        <XPLevel Value="23493"/>
+        <XPLevel Value="24275"/>
+    </EXP_LVL-RP>
+
+    <EV_EXP-BASE>
+        <Exp Value="2"/>
+        <Exp Value="3"/>
+        <Exp Value="4"/>
+        <Exp Value="5"/>
+        <Exp Value="6"/>
+        <Exp Value="8"/>
+        <Exp Value="10"/>
+        <Exp Value="11"/>
+        <Exp Value="12"/>
+        <Exp Value="13"/>
+        <Exp Value="15"/>
+    </EV_EXP-BASE>
+	
+</XP_AND_DIFFICULTYS>

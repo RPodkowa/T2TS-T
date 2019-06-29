@@ -34,10 +34,12 @@
     <system:String x:Key="allComboItemTranslate">Wszystkie</system:String>
     <system:String x:Key="withoutTranslationComboItemTranslate">Nieprzetłumaczone</system:String>
     <system:String x:Key="withoutConfirmationComboItemTranslate">Niepotwierdzone</system:String>
+	<system:String x:Key="withConflictComboItemTranslate">Konfliktowe</system:String>
 
     <system:String x:Key="titleLabelDictinary">Słownik</system:String>
     <system:String x:Key="usageCountLabelDictinary">Liczba użyć</system:String>
     <system:String x:Key="isActiveLabelDictinary">Czy aktywne</system:String>
+    <system:String x:Key="isConflictLabelDictinary">Czy z konfliktem</system:String>
     <system:String x:Key="originalWordLabelDictinary">Oryginalne słowo</system:String>
     <system:String x:Key="translationLabelDictinary">Tłumaczenie</system:String>
 

@@ -45,7 +45,7 @@
         </Grid>
         <Button x:Name="btnChooseDataBase" FontWeight="Bold" FontSize="{DynamicResource bigFontSize}" Content="DataBase" Style="{StaticResource styleButton}" Grid.Column="2" Grid.Row="3" />
         <Button x:Name="btnChooseModulus" FontWeight="Bold" FontSize="{DynamicResource bigFontSize}" Content="Modules" Style="{StaticResource styleButton}" Grid.Column="4" Grid.Row="3" />
-        <Label Content="{DynamicResource selectModuleLabelModuleSelection}" Style="{StaticResource fontBase}" FontSize="{DynamicResource veryBigFontSize}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontWeight="Bold" Grid.Column="2" Grid.Row="1" Grid.ColumnSpan="5"/>
+        <Label Content="{DynamicResource selectModuleLabelModuleSelection}" Style="{StaticResource fontBase}" FontSize="{DynamicResource veryBigFontSize}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontWeight="Bold" Grid.Column="3" Grid.Row="1" Grid.ColumnSpan="3"/>
         <Grid Grid.Column="1" Grid.Row="5" Grid.ColumnSpan="7">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="5*"/>
@@ -75,6 +75,9 @@
             </Button>
         </Grid>
         <Button x:Name="btnChooseNames" FontWeight="Bold" FontSize="{DynamicResource bigFontSize}" Content="Names" Style="{StaticResource styleButton}" Grid.Column="6" Grid.Row="3"/>
+        <Button x:Name="btnDownloadFiles" FontWeight="Bold" FontSize="{DynamicResource bigFontSize}" Content="Download" Style="{StaticResource styleButton}" Grid.Column="6" Grid.Row="1" Margin="10,0" Click="btnDownloadFiles_Click" />
+        <Button x:Name="btnUploadFiles" FontWeight="Bold" FontSize="{DynamicResource bigFontSize}" Content="Upload" Style="{StaticResource styleButton}" Grid.Column="7" Grid.Row="1" Margin="10,0,11,0" Click="btnUploadFiles_Click" />
+        <Button x:Name="btnVocabulary" FontWeight="Bold" FontSize="{DynamicResource bigFontSize}" Content="Vocabulary" Style="{StaticResource styleButton}" Grid.Column="7" Grid.Row="3" Margin="10,0,0,0" Click="btnVocabulary_Click"/>
 
     </Grid>
 </Page>

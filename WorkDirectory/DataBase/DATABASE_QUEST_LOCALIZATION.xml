@@ -1,0 +1,444 @@
+﻿<DATABASE_QUEST_LOCALIZATION-NO_HSH>
+    <LOC_LIBRARY-QUEST>
+	
+<Entry Key="QUEST_RATS_NEST" Val="Rat's Nest"/>   <!-- Quest name example -->
+ 		<Entry Key="QUEST_RATS_NEST_DES" Val="Your Grandma asked you to clear out her cellar of some pesky rodents."/>   <!-- Quest description example -->
+    <Entry Key="QUEST_MAINLOGBOOK1" Val="Lightbringers"/>
+    <Entry Key="QUEST_MQ_SHATTERING1" Val="A house was destroyed in a shattering."/>   
+ 		<Entry Key="QUEST_MQ_SHATTERING1_DES" Val="The family that lived there was taken by the light and they act really strangely now. These light attacks are becoming more frequent int he land, you must keep your eyes open for an opportunity to investigate this."/>   
+    <Entry Key="QUEST_MQ_DREAM" Val="The gods visited your dreams."/>   
+ 		<Entry Key="QUEST_MQ_DREAM_DES" Val="Whether willingly or by force, you were marked as chosen and told you will one day need to face a great task for the gods."/>
+    <Entry Key="QUEST_MQ_STOLEN" Val="Bandits have stolen your goods."/>   
+ 		<Entry Key="QUEST_MQ_STOLEN_DES" Val="You managed to track the bandits to their lair, you can take revenge and reclaim your goods."/>
+    <Entry Key="QUEST_MQ_STOLEN2_DES" Val="The bastards have escaped with your stuff, but maybe you will catch up to them with some luck."/>
+    <Entry Key="QUEST_MQ_HAHALEK" Val="A hahalek demon was holding your goods."/>   
+ 		<Entry Key="QUEST_MQ_HAHALEK_DES" Val="The demon spoke of light hurting it and so forcing even a house demon to work for the bandits. The lightbringers are clearly disturbing the balance in the land."/>
+    <Entry Key="QUEST_MQ_HAHALEK2_DES" Val="You killed the pesky demon, but it is odd why a house demon would work for bandits. Demons seem to be acting strange these days."/>
+
+    <Entry Key="QUEST_MQ_CMUCH" Val="You found an eerily empty swamp with only one odd-looking toad left."/>   
+ 		<Entry Key="QUEST_MQ_CMUCH_DES" Val="The toad asked to be taken to a witch's hut nearby. It gave you directions so you should see the hut if you look for it."/>
+    <Entry Key="QUEST_MQ_CMUCH2_DES" Val="You killed the weird toad."/>
+    <Entry Key="QUEST_MQ_CMUCH3_DES" Val="You left the swamp."/>
+
+    <Entry Key="QUEST_MQ_BABA" Val="You found the witch's hut and it seems to be a baba yaga. She asked for the toad."/>
+    <Entry Key="QUEST_MQ_BABA_DES" Val="The toad looked like a cmuch demon, but was actually a cursed vodnik. The 'prince' was grateful for his release. He told you of demons being burned by the light that came from the ground. Some died, some became changed. This light is clearly poisoning the land."/>
+    <Entry Key="QUEST_MQ_BABA2_DES" Val="You failed to undo the cmuch's curse, but the yaga, she mentioned something about the swamp's demons disappearing after a shattering and a light appearing. Likely another case of the lightbringers meddling."/> 
+    <Entry Key="QUEST_MQ_BABA3_DES" Val="You attacked the baba yaga and so you did not get much information from her or the cmuch. Keep an eye out for more trails of the lightbringers activities"/>
+    <Entry Key="QUEST_MQ_BABA4_DES" Val="You left the toad with the yaga, she mentioned something about the swamp's demons disappearing after a shattering and a light appearing. Likely another case of the lightbringers meddling."/>
+    <Entry Key="QUEST_MQ_BABA5_DES" Val="You attacked the vodnik and so you did not get much information from him or the yaga. Keep an eye out for more trails of the lightbringers activities."/>
+
+    <Entry Key="QUEST_MQ_WISPS" Val="You were assaulted by light-wisps."/>
+    <Entry Key="QUEST_MQ_WISPS_DES" Val="Eventually the wisps flicker away towards the sun and disappear.You see burnt carcasses of bugs and small critters around you, but you also spot a small pack of oddly paired beings moving away in unison, as if trying to follow the wisps. This light-scourge needs to be stopped. keep a lookout for a way."/>
+
+    <Entry Key="QUEST_MQ_AMBUSH" Val="You are ambushed by the scoundrels that took your goods earlier."/>
+    <Entry Key="QUEST_MQ_AMBUSH_DES" Val="You defeated the bandits and reclaimed your goods. The scoundrels spoke of the earth shattering their homes and light taking their folk driving them to banditry. This light-scourge needs to be stopped. keep a lookout for a way."/>
+    <Entry Key="QUEST_MQ_AMBUSH2_DES" Val="They defeat you but let you go. The scoundrels spoke of the earth shattering their homes and light taking their folk driving them to banditry. This light-scourge needs to be stopped. keep a lookout for a way."/>
+    
+    <Entry Key="QUEST_MQ_ALECHEMIST" Val="You came across an odd man, calling himself an Alchemist."/>
+    <Entry Key="QUEST_MQ_ALECHEMIST2_DES" Val="You kill the man and loot his strange table. Among other things, you find a map with a place distinctly marked: 'Stupid bandits unable to grasp the importance of their cave - need to get in here before all shatters!'"/>
+    <Entry Key="QUEST_MQ_ALECHEMIST3_DES" Val="You tried but failed to kill the Alchemist, but he let you live and proved to be an agent of the divine will like you. He told you of a red cave that may hold the secret to the lightbringer scourge. But in order to get into the cave, you need to deal with the Red Ridge Bandits, who set up camp near the cave's entrance. The bandit lair should appear on your map."/>
+    <Entry Key="QUEST_MQ_ALECHEMIST_DES" Val="The Alchemist proved to be an agent of the divine will also, and he told you of a red cave that may hold the secret to the lightbringer scourge. But in order to get into the cave, you need to deal with the Red Ridge Bandits, who set up camp near the cave's entrance. The bandit lair should appear on your map."/>
+
+    <Entry Key="QUEST_MQ_BANDITLAIR" Val="You found the lair of the Red Ridge Bandits."/>
+    <Entry Key="QUEST_MQ_BANDITLAIR_DES" Val="You destroyed the bandits and thus the entrance to the Red Cave stands open for you. The Alchemist agreed to meet you inside when you are ready."/>
+    <Entry Key="QUEST_MQ_BANDITLAIR2_DES" Val="You tried to kill the bandits but they defeated you and so there is little chance of getting into the cave that way. The Alchemist recommended going to a scavenger camp nearby to seek their aid in defeating the bandits."/>
+    <Entry Key="QUEST_MQ_BANDITLAIR3_DES" Val="The bandits are willing to let you into the Red Cave, but only if you deal with some scavengers that are bothering them, or a pesky demon living in an old mine. Both locations should appear on your map now."/>
+    <Entry Key="QUEST_MQ_BANDITLAIR4_DES" Val="The bandits are willing to let you into the Red Cave, but only if you deal with some scavengers that are bothering them, or a baba yaga living in a hut nearby. Both locations should appear on your map now."/>
+    <Entry Key="QUEST_MQ_BANDITLAIR5_DES" Val="You sneak into the bandit camp and manage to rescue the scavenger child, along with a few others.They are unusually reluctant to be rescued, so they make a real ruckus and you are forced to run fast before the bandits catch you. There's little chance of them being friendly now, but you can go back to the scavengers and report your success."/>
+    <Entry Key="QUEST_MQ_BANDITLAIR6_DES" Val="The bandits sold you the scavenger child. Now you can go back to the scavengers and report your success."/>
+    <Entry Key="QUEST_MQ_BANDITLAIR7_DES" Val="The Red Ridge bandits allowed you access to the Red Cave as agreed. The Alchemist will meet you at the cave when you're ready."/>
+    <Entry Key="QUEST_MQ_BANDITLAIR8_DES" Val="After making the deal with the scavengers, you destroyed the bandits. To get to the Red Cave return to the scavengers and give them their child back."/>
+
+    <Entry Key="QUEST_MQ_SCAVENGERS" Val="You arrived at the scavenger settlement that is at odds with the Red Ridge bandits."/>
+    <Entry Key="QUEST_MQ_SCAVENGERS_DES" Val="You agreed to pretend you killed the scavengers, to either poison the bandits or steal back the scavenger child. Go back to the Red Ridge bandit camp and lie to them."/>
+    <Entry Key="QUEST_MQ_SCAVENGERS2_DES" Val="You failed to convince the scavengers to help you out, so they chase you away. You can try killing them when you're better prepared."/>
+    <Entry Key="QUEST_MQ_SCAVENGERS3_DES" Val="You failed to kill the scavengers, so they chase you away. You can try killing them when you're better prepared."/>
+    <Entry Key="QUEST_MQ_SCAVENGERS4_DES" Val="You killed the scavengers, time to report back to the bandits so you may gain access to the Red Cave."/>
+    <Entry Key="QUEST_MQ_SCAVENGERS5_DES" Val="You convinced the scavengers to leave, time to report back to the bandits so you may gain access to the Red Cave."/>
+    <Entry Key="QUEST_MQ_SCAVENGERS6_DES" Val="The scavengers were not eager to help you in any way, killing the bandits seems like the only way to get into the Red Cave now."/>
+    <Entry Key="QUEST_MQ_SCAVENGERS7_DES" Val="The scavengers are happy with your results and so they help you get into the Red Cave. The Alchemist will likely await you at the entrance when you're ready."/>
+    <Entry Key="QUEST_MQ_SCAVENGERS8_DES" Val="You see the remains of a scavenger settlement, it is destroyed. perhaps the bandits decided to deal with them after all."/>
+
+    <Entry Key="QUEST_MQ_YAGA" Val="You found the witch hut the bandits wanted destroyed."/>
+    <Entry Key="QUEST_MQ_YAGA_DES" Val="Your actions failed. The house shifts and shakes and you feel it becoming very hostile towards you. You can try to attack later, or find another path."/>
+    <Entry Key="QUEST_MQ_YAGA2_DES" Val="You succeeded to deal with the witch so you can go back to the bandits and report your success."/>
+    <Entry Key="QUEST_MQ_YAGA3_DES" Val="The witch convinced you not to kill her, instead she will stay low for a time, so you can try and lie to the bandits and say you did kill her."/>
+    <Entry Key="QUEST_MQ_YAGA4_DES" Val="But you decided to leave for now."/>
+    <Entry Key="QUEST_MQ_YAGA5_DES" Val="The witch was happy to learn of your success and wished you well. She and her hut have moved away from this place."/>
+    
+    <Entry Key="QUEST_MQ_MINE" Val="You found the demon occupied mine the bandits wanted cleared."/>
+    <Entry Key="QUEST_MQ_MINE_DES" Val="But you decided to leave for now."/>
+    <Entry Key="QUEST_MQ_MINE2_DES" Val="The demons were happy to learn of your success and wished you well."/>
+    <Entry Key="QUEST_MQ_MINE3_DES" Val="You made a deal with the demon to go back to the bandits, lie about killing the demons and then call upon the demons with a secret word so that they can aid you in killing the Red Ridgers."/>
+    <Entry Key="QUEST_MQ_MINE4_DES" Val="The demons offered a deal, where they will help you to kill the bandits. You said you will consider it."/>
+    <Entry Key="QUEST_MQ_MINE5_DES" Val="The demons offered to hide, so that you may lie to the bandits and say you killed them. Go back to the bandit camp. "/>
+    <Entry Key="QUEST_MQ_MINE6_DES" Val="You killed the demons as asked. Time to report back to the bandits."/>
+    <Entry Key="QUEST_MQ_MINE7_DES" Val="The demons beat you badly and forced you to run away. You can try again, or try another path."/>
+    <Entry Key="QUEST_MQ_MINE8_DES" Val="You failed to deal with the demons. You can try again, or try another path."/>
+
+    <Entry Key="QUEST_MQ_REDCAVE" Val="You arrived at the Red Cave, where the Alchemist awaits."/>
+    <Entry Key="QUEST_MQ_REDCAVE_DES" Val="You tried to get through the barrier, but failed. You need to come back stronger in brawn or magic to try again."/>
+    <Entry Key="QUEST_MQ_REDCAVE2_DES" Val="You have entered deeper into the cave, but it holds more mysteries and you need aid to unravel them. You can either choose to rescue an old dwarf from a prison, a tough, but straight forward path. Or, you can look for aid with other factions, the orcs, goblins, dwarves or elves. Seek any of their larger villages and make sure you are friendly before approaching them."/>
+
+    <Entry Key="QUEST_MQ_PRISON" Val="You arrived at the dungeon where the dwarven prisoner is held."/>
+    <Entry Key="QUEST_MQ_PRISON_DES" Val="You failed to rescue the dwarf and were forced to leave. Try again, or perhaps look for other paths, the elves, dwarves, goblins or orcs may have some answers for you. Maybe search for their villages."/>
+    <Entry Key="QUEST_MQ_PRISON2_DES" Val="You rescued the grandmaster, time to return to the Red Cave."/>
+    <Entry Key="QUEST_MQ_PRISON3_DES" Val="You come to where the dwarven prisoner was supposed to be held, but you find the earth parted and only rabble where the entrance once was."/>
+
+    <Entry Key="QUEST_MQ_REDCAVEONE" Val="You returned to the Red Cave after rescuing the grandmaster dwarf."/>
+    <Entry Key="QUEST_MQ_REDCAVEONE_DES" Val="The Alchemist sent you to find a druid-tree and retrieve its blood so that a new heart may be forged and stabilise the earth."/>
+    
+    <Entry Key="QUEST_MQ_DRUIDTREE" Val="You find the druid-tree in an old grove."/>
+    <Entry Key="QUEST_MQ_DRUIDTREE_DES" Val="The druid-tree agreed to sacrifice their own life for your cause. You have the blood so you can return to the Red Cave."/>
+    <Entry Key="QUEST_MQ_DRUIDTREE2_DES" Val="You were tasked with finding a dying druid-tree and end their misery. This way you will also achieve your goal. Search for the forest where the tree is trapped."/>
+    <Entry Key="QUEST_MQ_DRUIDTREE3_DES" Val="The druid-tree did not agree to aid you. You must either force it, or try another path altogether."/>
+    <Entry Key="QUEST_MQ_DRUIDTREE4_DES" Val="You killed the druid-tree and got theblood. Time to return to the Red Cave."/>
+    <Entry Key="QUEST_MQ_DRUIDTREE5_DES" Val="The forest is quiet and ordinary. You walk and walk but do not find traces of the druid-tree anywhere."/>
+    
+    <Entry Key="QUEST_MQ_MROKI" Val="You find the place where a dying druid-tree is supposed to be held."/>
+    <Entry Key="QUEST_MQ_MROKI_DES" Val="You failed to retrieve the druid-tree's blood. Try again later, or try another path amongst the other factions."/>
+    <Entry Key="QUEST_MQ_MROKI2_DES" Val="You retrieved the blood of the druid-tree, return to the Red Cave."/>
+    <Entry Key="QUEST_MQ_MROKI3_DES" Val="But you find nothing of interest here."/>
+
+    <Entry Key="QUEST_MQ_CULT" Val="You were attacked by lightbringers who wanted to take away the druid blood."/>
+    <Entry Key="QUEST_MQ_CULT_DES" Val="After the fight, you were approached by a group of hooded figures. You decided to move away and do not engage."/>
+    <Entry Key="QUEST_MQ_CULT2_DES" Val="You were told that they were the cult of Nyia and that they were the ones led astray and used to destroy the earth-heart that held the ground together. They recognise your mission and wish you well on your path."/>
+    <Entry Key="QUEST_MQ_CULT3_DES" Val="You were defeated and the blood stolen! Try to track them down."/>
+    
+    <Entry Key="QUEST_MQ_LIGHTBRINGERS" Val="You catch the lightbringers who took the druid-blood and one of your people"/>
+    <Entry Key="QUEST_MQ_LIGHTBRINGERS_DES" Val="You retrieve the stolen blood, so you can now go back to the Red Cave."/>
+    <Entry Key="QUEST_MQ_LIGHTBRINGERS2_DES" Val="You decided not to approach for now."/>
+    <Entry Key="QUEST_MQ_LIGHTBRINGERS3_DES" Val="You were badly beaten and forced to flee. You must try again if you want to retrieve the druid blood."/>
+
+    <Entry Key="QUEST_MQ_DSTATUES" Val="You enter the ancient, underground chamber where four dwarven statues stand guard over the entrance to the heart-chamber."/>
+    <Entry Key="QUEST_MQ_DSTATUES_DES" Val="You defeated the guardians and they bid you to right their wrongs and restore balance. Go back to the Red Cave to complete the stone heart."/>
+    <Entry Key="QUEST_MQ_DSTATUES2_DES" Val="You were defeated by the guardians and they bid you return when you are ready."/>
+
+    <Entry Key="QUEST_MQ_LIGHTZMEY" Val="You finally enter the heart chamber where the light-beast dwells and seeks to escape into the world."/>
+    <Entry Key="QUEST_MQ_LIGHTZMEY_DES" Val="You have defeated the light-zmey! It will take time for Thea to fully absorb the changes your decisions brought, but your task as chosen is done. For now..."/>
+    <Entry Key="QUEST_MQ_LIGHTZMEY2_DES" Val="The light-zmey defeats you. Return when you are ready to face them again."/>
+
+    <Entry Key="QUEST_MQ_MROKINEC" Val="You track down a group of mroki. Perhaps you can harvest their hearts for the necromancer."/>
+    <Entry Key="QUEST_MQ_MROKINEC_DES" Val="You defeated the mroki. You can now head to the red cave and meet the necromancer and find your way into the chamber where the light-beast awaits."/>
+    <Entry Key="QUEST_MQ_MROKINEC2_DES" Val="The mroki defeated you, but perhaps you can try to track them down again."/>
+
+    <Entry Key="QUEST_MQ_ELFPATHBROKEN" Val="The elven mage has confronted you and demands you follow her path."/>      
+    <Entry Key="QUEST_MQ_ELFPATHBROKEN_DES" Val="You agreed to stay on her side and go straight to the zmey cave, and not the Alchemist."/>        
+    <Entry Key="QUEST_MQ_ELFPATHBROKEN2_DES" Val="You decided you do not want to follow her path and so you defeated the elf in combat. Seek out another path to end the light-zmey."/>  
+    <Entry Key="QUEST_MQ_ELFPATHBROKEN3_DES" Val="You decided you do not want to follow her path and so you tried to kill the mage. She defeated you but allowed you to live. Seek out another path to end the light-zmey."/>  
+
+    <Entry Key="QUEST_MQ_ORCPATH" Val="You visited the Aphaclans and asked for aid in defeating the light-beast."/>  
+    <Entry Key="QUEST_MQ_ORCPATH_DES" Val="The orcs were unable to aid you in discovering more about the Red Cave, but they recommended you seek out an orc necromancer, who is known to meddle in many mysteries."/>  
+    
+    <Entry Key="QUEST_MQ_GOBPATH" Val="You visited the Spirit Talkers and asked for aid in defeating the light-beast."/> 
+    <Entry Key="QUEST_MQ_GOBPATH_DES" Val="The goblins were unable to aid you in discovering more about the Red Cave, but they recommended you seek out an orc necromancer, who is known to meddle in many mysteries."/>  
+
+    <Entry Key="QUEST_MQ_NECROMANCER" Val="You visited the necromancer in his tower."/> 
+    <Entry Key="QUEST_MQ_NECROMANCER_DES" Val="He told you of his design to release the power of darkness, so it may destroy light. You agreed to follow his path. Hunt down some mroki, in the lands of darkness or the volcanic wastelands. Afterwards, meet the necromancer at the cave to defeat the light-beast."/> 
+    <Entry Key="QUEST_MQ_NECROMANCER2_DES" Val="He told you of his design to release the power of darkness, so it may destroy light. You refused to follow his path, and so you must now find another way."/> 
+    
+    <Entry Key="QUEST_MQ_DWARFPATH" Val="You sought the aid of the dwarves in the fight against the lightbringers."/> 
+    <Entry Key="QUEST_MQ_DWARFPATH_DES" Val="The Earthbound admitted their shame in failing their duty and allowing the destruction of the earth-heart. They will forge a new heart rune, but you need to go seek out the dziad mroz. The ancient demon dwells in the ice plains."/> 
+
+    <Entry Key="QUEST_MQ_DZIAD" Val="You found the dziad mroz in his domain of the ice plains."/> 
+    <Entry Key="QUEST_MQ_DZIAD_DES" Val="The ancient demon agreed to hand over the ice drop that you need for the dwarves. You can now return to the cave to fight the light-beast."/> 
+    <Entry Key="QUEST_MQ_DZIAD2_DES" Val="You killed the dziad mroz, so you now need to seek another way to deal with the light-beast."/> 
+    <Entry Key="QUEST_MQ_DZIAD3_DES" Val="You failed to obtain the ice heart from the dziad mroz, so you now need to seek another way to deal with the light-beast."/> 
+
+    <Entry Key="QUEST_MQ_ELFPATH" Val="You approached the Woodlandkin in search for answers and aid with the lightbringer threat."/>
+    <Entry Key="QUEST_MQ_ELFPATH_DES" Val="A young elven druid, Nai-ysir, told you of how the council is too slow to act. But she also said she knows of an elf mage that may be the cause of all this, thus capturing her and bringing her before the council may secure their aid. Go seek out the rouge mage."/>
+    
+    <Entry Key="QUEST_MQ_ELFMAGE" Val="You found the hideout of Ail'yleth, the rogue elven mage."/>
+    <Entry Key="QUEST_MQ_ELFMAGE_DES" Val="Ail'yleth tried to sway you to her side, claiming it is time for light to rule. You agreed to follow her path and go seek out a hidden entrance into the heart chamber where the light beast resides."/>
+    <Entry Key="QUEST_MQ_ELFMAGE2_DES" Val="Ail'yleth tried to sway you to her side, claiming it is time for light to rule. You did not agree, and instead you convinced her balance needs to be served. The mage will join you at the old prison and held rescue the dwarven grandmaster."/>
+    <Entry Key="QUEST_MQ_ELFMAGE3_DES" Val="Ail'yleth tried to sway you to her side, claiming it is time for light to rule. You refused to listen to her madness and captured her to be taken to back to the elves."/>
+    <Entry Key="QUEST_MQ_ELFMAGE4_DES" Val="Ail'yleth tried to sway you to her side, claiming it is time for light to rule. You refused her madness, but also failed to capture her. You must seek another way to destroy the light."/>
+    <Entry Key="QUEST_MQ_ELFMAGE5_DES" Val="You returned the elf mage to the council and they agreed to aid you in destroying the light-beast. The envoy will meet you back at the Red Cave."/>
+    <Entry Key="QUEST_MQ_ELFMAGE6_DES" Val="You returned the elf mage to the council but they did not agree to aid you. Nai-ysir was angry and decided to join you, but you must now find another way to deal with the light."/>
+
+    <Entry Key="QUEST_MQ_ELFZMEY" Val="You found the entrance to the heart chamber just as Ail'yleth directed you."/>
+    <Entry Key="QUEST_MQ_ELFZMEY_DES" Val="The mage joins you and guides you to face some dwarven guardians."/>
+    <Entry Key="QUEST_MQ_ELFZMEY2_DES" Val="You have defeated the dwarven guardians and aided the light-zmey so that one day, light will rule Thea. For better or worse, you have completed your task."/>
+    <Entry Key="QUEST_MQ_ELFZMEY3_DES" Val="The dwarven guardians have defeated you, return when you are better prepared."/>
+    <Entry Key="QUEST_MQ_ELFZMEYCAVE" Val="You entered the heart chamber to face the dwarven guards and aid the light-zmey."/>
+
+    <Entry Key="QUEST_THEO_START" Val="Theodore, a former house demon, now divine messenger, visited you."/>
+    <Entry Key="QUEST_THEO_START_DES" Val="He laid out some of the basic rules to survive in this world. His final words were: 'I may pop up now and again to tell you of things, but for now, you must take your first steps into this hostile land. Remember to check for resources on the map for Gathering, set up camp for Craft and Cooking, and check your Inventory to make sure you are well equipped. Here have some wood, so you may heal when camping. My advice is to explore, learn the ropes, and only then decide on a settlement.'"/>
+    <Entry Key="QUEST_THEO_VISIT2_DES" Val="Theodore praised you on your progress with the lightbringers and awarded you a second cosmic seed."/>
+    <Entry Key="QUEST_THEO_TUTORIAL" Val="Theodore has once again visited you."/>
+    <Entry Key="QUEST_THEO_TUTORIAL_DES" Val="The messenger asked you to find a Slavyan village where an ex-chosen needs to be taught a lesson. you should find the village on your map."/>
+    <Entry Key="QUEST_THEO_FOODTASK" Val="Theodore showed up to give you some more advice."/>
+    <Entry Key="QUEST_THEO_FOODTASK_DES" Val="You were tasked with gathering or cooking some more food, as this is a crucial skill in surviving Thea. He also reminded you that the death of the chosen will mean the end for all."/>
+    <Entry Key="QUEST_THEO_WITCH" Val="Theodore showed up again with yet another task."/>
+    <Entry Key="QUEST_THEO_WITCH_DES" Val="He was happy with the food and he asked you to visit an old hut nearby."/>
+    <Entry Key="QUEST_THEO_WITCHHOUSE" Val="Theodore showed up again after your meeting with the witch."/> 
+    <Entry Key="QUEST_THEO_WITCHHOUSE_DES" Val="He praised you for defeating the hag and said you will make a good chosen. He mentioned he will be back for a final, small task before you are ready for the big stuff."/>
+    <Entry Key="QUEST_THEO_WITCHHOUSE2_DES" Val="He was worried you did not do well, but said you have time to get better. He mentioned he will be back for a final, small task before you are ready for the big stuff."/>
+
+    <Entry Key="QUEST_THEO" Val="Theodore"/>
+    <Entry Key="QUEST_THEO_HERESY" Val="You found the village where Theodore sent you."/>
+    <Entry Key="QUEST_THEO_HERESY_DES" Val="The villagers gave you the location of Zbigniev, the fallen chosen, but all they could say was 'go that way'. So you must search for him nearby."/>
+    <Entry Key="QUEST_THEO_HERESY2_DES" Val="You destroyed the village and Theodore seems pleased with the firm message this sends to any other non-believers. He said it is time for him to disappear, he told you to keep an eye out for the lightbringers, and that in time, you find clues to your next task."/>
+    <Entry Key="QUEST_THEO_HERESY3_DES" Val="You attacked the villagers but failed, you must return when you're better prepared."/>
+    <Entry Key="QUEST_THEO_ZBIGNIEV" Val="You found Zbigniev, the fallen chosen who seemed very angry with the gods."/>
+    <Entry Key="QUEST_THEO_ZBIGNIEV_DES" Val="You dealt with the heretic and Theodore appeared to speak to you. He said it is time for him to disappear, he told you to keep an eye out for the lightbringers, and that in time, you will find clues to your next task."/>
+
+    <Entry Key="QUEST_DIVINELOGBOOK" Val="Divine path"/>
+    <Entry Key="QUEST_DIV_CROW" Val="A crow visited you and spoke of your chosen path."/>
+    <Entry Key="QUEST_DIV_CROW_DES" Val="The bird measured your worth as chosen so far and said that you must unlock your true potential if you are to truly aid the gods. You chose to follow one of your divine domains to discover more."/>
+    <Entry Key="QUEST_DIV_ALLPATHS1" Val="You came to the place where the crow sent you to unlock your true potential as chosen."/>
+    <Entry Key="QUEST_DIV_ALLPATHS_ONE_DES" Val="But you cannot proceed without the chosen being present."/>
+    <Entry Key="QUEST_DIV_PATH_ONEA_DES" Val="The placed proved to be the fallen temple of Jarillo, a forgotten god. He spoke to you of Perun, the father of the pantheon, and he urged you to discover what become of the god of thunder, so that your own divine path may become clearer. You are to go to the ice lands, there you will find your next task."/>
+    <Entry Key="QUEST_DIV_PATH_ONEB_DES" Val="The placed proved to be one of the divine roots of the old goddess Mokosh. Some lightbringers were assaulting the root, and so you had to deal with them. When you touched the root, you knew you must seek out another such place and discover the truth of Mokosh's fate so that your own divine path may become clearer. You are to go to the Ancient Forest; there you will find your next task."/>
+    <Entry Key="QUEST_DIV_PATH_ONEC_DES" Val="It turned out you interrupted a sabbath of witches, loyal to the old god and father of human witchcraft, Veles. You must seek out the resting place of Veles and discover the truth of his fate so that your own divine path may become clearer. You are to go to the Ancient Forest; there you will find your next task."/>
+    <Entry Key="QUEST_DIV_PATH_TWOCMAROVIT_DES" Val="The placed proved to be the resting place of the old god, Veles, and as such, one of the gates to the underworlds guarded by a zmey. When you spoke to the zmey he told you that you must now seek out and release your own god to complete your journey as chosen. Find Marovit's trail in the lands of darkness."/>
+    <Entry Key="QUEST_DIV_PATH_TWOCZORYA_DES" Val="The placed proved to be the resting place of the old god, Veles, and as such, one of the gates to the underworlds guarded by a zmey. When you spoke to the zmey he told you that you must now seek out and release your own god to complete your journey as chosen. Find Zorya's trail in the volcanic lands."/>
+    <Entry Key="QUEST_DIV_PATH_TWOCNYIA_DES" Val="The placed proved to be the resting place of the old god, Veles, and as such, one of the gates to the underworlds guarded by a zmey. When you spoke to the zmey he told you that you must now seek out and release your own god to complete your journey as chosen. Find Nyia's trail in the lands of darkness or Metal."/>
+    <Entry Key="QUEST_DIV_PATH_TWOCHORZ_DES" Val="The placed proved to be the resting place of the old god, Veles, and as such, one of the gates to the underworlds guarded by a zmey. When you spoke to the zmey he told you that you must now seek out and release your own god to complete your journey as chosen. Find Horz's trail in the volcanic lands."/>
+    <Entry Key="QUEST_DIV_PATH_TWOCLADA_DES" Val="The placed proved to be the resting place of the old god, Veles, and as such, one of the gates to the underworlds guarded by a zmey. When you spoke to the zmey he told you that you must now seek out and release your own god to complete your journey as chosen. Find Lada's trail in the lands of the Ancient Forest or the ice plains."/>
+    <Entry Key="QUEST_DIV_PATH_TWOC_DES" Val="The placed proved to be the resting place of the old god, Veles, and as such, one of the gates to the underworlds guarded by a zmey. Alas, you were defeated in battle, so must return better prepared."/>
+    <Entry Key="QUEST_DIV_PATH_ALLPATHS2" Val="You found the divine location where your chosen's path may continue."/>
+    <Entry Key="QUEST_DIV_PATH_ONEB1_DES" Val="The placed proved to be one of the divine roots of the old goddess Mokosh. Some lightbringers were assaulting the root and you were defeated by them. Return when  you are ready for the challenge."/>
+
+    <Entry Key="QUEST_DIV_PATH_TWOA_DES" Val="You found the rod of Perun, but failed to release it. You must return when you are better prepared."/>
+    <Entry Key="QUEST_DIV_PATH_TWOAZORYA_DES" Val="You found the rod of Perun and released it from the giant's grasp. The voice of the old god spoke to you and commanded you go seek out your own god's fate now, to complete your journey. Find Zorya's trail in the volcanic lands. "/>
+    <Entry Key="QUEST_DIV_PATH_TWOATRIGLAV_DES" Val="You found the rod of Perun and released it from the giant's grasp. The voice of the old god spoke to you and commanded you go seek out your own god's fate now, to complete your journey. Find Triglav's trail in the volcanic lands. "/>
+    <Entry Key="QUEST_DIV_PATH_TWOASVAROG_DES" Val="You found the rod of Perun and released it from the giant's grasp. The voice of the old god spoke to you and commanded you go seek out your own god's fate now, to complete your journey. Find Svarog's trail in the lands of Metal. "/>
+    <Entry Key="QUEST_DIV_PATH_TWOASTRIBOG_DES" Val="You found the rod of Perun and released it from the giant's grasp. The voice of the old god spoke to you and commanded you go seek out your own god's fate now, to complete your journey. Find Stribog's trail while sailing the seas."/>
+    <Entry Key="QUEST_DIV_PATH_TWOB_DES" Val="You found another root of a Mokosh tree, but failed to interact with it properly. You must return when you are better prepared."/>
+    <Entry Key="QUEST_DIV_PATH_TWOB1_DES" Val="You found another root of a Mokosh tree, but decided to attack its keeper and destroy it. The divine path is now closed to you."/>
+    <Entry Key="QUEST_DIV_PATH_TWOBDZIEVANNA_DES" Val="You found another root of a Mokosh tree and you offered appropriate tribute so that its divine power blessed you. Through the leshy, the earth-mother urged you to seek out your own god now and thus end your journey as chosen. Find Dzievanna's trail in the lands of the Ancient Forest."/>
+    <Entry Key="QUEST_DIV_PATH_TWOBHORZ_DES" Val="You found another root of a Mokosh tree and you offered appropriate tribute so that its divine power blessed you. Through the leshy, the earth-mother urged you to seek out your own god now and thus end your journey as chosen. Find Horz's trail in the volcanic lands."/>
+    <Entry Key="QUEST_DIV_PATH_TWOBTRIGLAV_DES" Val="You found another root of a Mokosh tree and you offered appropriate tribute so that its divine power blessed you. Through the leshy, the earth-mother urged you to seek out your own god now and thus end your journey as chosen. Find Triglav's trail in the volcanic lands."/>
+    <Entry Key="QUEST_DIV_PATH_TWOBNYIA_DES" Val="You found another root of a Mokosh tree and you offered appropriate tribute so that its divine power blessed you. Through the leshy, the earth-mother urged you to seek out your own god now and thus end your journey as chosen. Find Nyia's trail in the lands of Darkness or Metal."/>
+    <Entry Key="QUEST_DIV_PATH_TWOBLADA_DES" Val="You found another root of a Mokosh tree and you offered appropriate tribute so that its divine power blessed you. Through the leshy, the earth-mother urged you to seek out your own god now and thus end your journey as chosen. Find Lada's trail in the lands of the Ancient Forest or the ice plains."/>
+    <Entry Key="QUEST_DIV_PATH_TWOBSTRIBOG_DES" Val="You found another root of a Mokosh tree and you offered appropriate tribute so that its divine power blessed you. Through the leshy, the earth-mother urged you to seek out your own god now and thus end your journey as chosen. Find Stribog's trail while sailing the seas."/>
+
+    <Entry Key="QUEST_DIV_MAROVIT" Val="You have followed the divine path and found Marovit's avatar."/>
+    <Entry Key="QUEST_DIV_ALLGODS_DES" Val="You have completed your divine path of the chosen. As reward, your children will now have a chance to grow stronger, in accordance to the domain you chose."/>
+    <Entry Key="QUEST_DIV_ALLGODSs_DES" Val="You have completed your divine path of the chosen. As reward, your children will now have a chance to grow up into an unusual creature, blessed by your god."/>
+    <Entry Key="QUEST_DIV_SVAROG" Val="You have followed the divine path and found Svarog's avatar."/>
+    <Entry Key="QUEST_DIV_LADA_DES" Val="You were violent and so disrespectful to your Lady's path. She deemed you unworthy. Your divine path has ended, you can only hope you will redeem yourself in Her eyes one day."/>
+    <Entry Key="QUEST_DIV_LADA" Val="You have followed the divine path and found Lada's avatar."/>
+    <Entry Key="QUEST_DIV_DZIEVANNA" Val="You have followed the divine path and found Lada's avatar."/>
+    <Entry Key="QUEST_DIV_DZIEVANNA_DES" Val="You destroyed nature's children for no reason and thus disrespected you goddess. She deemed you unworthy. Your divine path has ended, you can only hope you will redeem yourself in Her eyes one day."/>
+    <Entry Key="QUEST_DIV_HORZ" Val="You have followed the divine path and found Horz's avatar."/>
+    <Entry Key="QUEST_DIV_HORZ_DES" Val="You attack the night children and then lost, showing only weakness. You are not the pack leader Horz hoped for and so this is where your chosen's path ended. You can only hope you will show your worth through all your actions from now on..."/>
+    <Entry Key="QUEST_DIV_STRIBOG" Val="You have followed the divine path and found Stribog's avatar."/>
+    <Entry Key="QUEST_DIV_TRIGLAV" Val="You have followed the divine path and found Triglav's avatar."/>
+    <Entry Key="QUEST_DIV_ZORYA" Val="You have followed the divine path and found Zorya's avatar."/>
+    <Entry Key="QUEST_DIV_ZORYA_DES" Val="You have failed to unchain your goddess' essence. You do still feel your connection to Zorya, she is not gone, but you also know you have failed your final task and will not receive any last blessings."/>
+    <Entry Key="QUEST_DIV_NYIA" Val="You have followed the divine path and found Nyia's avatar."/>
+    <Entry Key="QUEST_DIV_NYIA_DES" Val=" You know that you have failed your goddess and you will have to prove your worth with what gifts you already received on this journey.  "/>
+
+    <Entry Key="QUEST_LOG1" Val="The Smith's Legacy"/>
+    <Entry Key="QUEST_SMITH" Val="You notice an interesting building nearby."/>
+    <Entry Key="QUEST_SMITH_DES" Val="The place is secluded, but there is smoke coming out and the sounds of a smithy."/>
+    <Entry Key="QUEST_BOHDAN" Val="You found the forge of Bohdan, the dwarf."/>
+    <Entry Key="QUEST_BOHDAN_DES" Val="Bohdan asked you to track down his two wayward granddaughters who have run away. He is too old to do it himself and promises a good reward. There are two possible spots on your map where the girls could be."/>
+    <Entry Key="QUEST_BOHDAN2_DES" Val="You killed Bohdan and his troll and you loot the place."/>
+    <Entry Key="QUEST_BOHDAN3_DES" Val="You attacked Bohdan, but he and his troll friend beat you badly and chase you away."/>
+    <Entry Key="QUEST_BOHDAN4_DES" Val="You brought the bad news to Bohdan and he was not happy with you. He told you to leave before he sends his troll friend after you."/>
+    <Entry Key="QUEST_BOHDAN5_DES" Val="You dealt with Bohdan's unruly granddaughters and he was very grateful."/>
+    <Entry Key="QUEST_POND" Val="You found the pond where Bohdan's granddaughters may be."/>
+    <Entry Key="QUEST_POND_DES" Val="You found the girls and made sure they go back to Bohdan. Go back to the smithy for your reward."/>
+    <Entry Key="QUEST_POND2_DES" Val="There were some rusalka trying to entrance you, but no sign of the girls. Check the other location."/>
+    <Entry Key="QUEST_POND4_DES" Val="There were some rusalka trying to entrance you."/>
+    <Entry Key="QUEST_POND3_DES" Val="You found the girls and supported their decision to stay and become rusalka by drowning some children. Return to the smithy to tell Bohdan of his granddaughters decision."/>
+    <Entry Key="QUEST_BOHDANCAVE" Val="You found the cave where Bohdan's granddaughters may be."/>
+    <Entry Key="QUEST_BOHDANCAVE_DES" Val="You managed to get the girls out before some angry trolls killed them. Go back to Bohdan for your reward."/>
+    <Entry Key="QUEST_BOHDANCAVE2_DES" Val="You managed to get one of the girls out before some angry trolls killed them both. Go back to Bohdan for your reward."/>
+    <Entry Key="QUEST_BOHDANCAVE3_DES" Val="You found the cave, but no sign of the girls. Check the second location."/>
+     <Entry Key="QUEST_BOHDANCAVE4_DES" Val="You found the cave, but no sign of the girls as you already dealt with them."/>
+     <Entry Key="QUEST_LOG2" Val="Kurv Game"/>
+      <Entry Key="QUEST_LEO" Val="You were visited by a skshack, Leopold."/>
+      <Entry Key="QUEST_LEO_DES" Val="The house demon begged for your help else he may be forced to steal from you again. He asked for you to gain entrance into a demon game and win it for him. To do so, you must search for one of his demon friends first and gain their help."/>
+      <Entry Key="QUEST_LEO2_DES" Val="You killed Leopold; he should bother you no more."/>
+      <Entry Key="QUEST_LEO3_DES" Val="You tried to kill it, but you failed. The very surprised house demon escaped."/>
+      <Entry Key="QUEST_LEO_HOCH" Val="A hochlick came to you offering a deal."/>
+      <Entry Key="QUEST_LEO_HOCH_DES" Val="The hochlick wanted you to kill Leopold the next time he appears, in exchange they will offer a reward. You agreed."/>
+      <Entry Key="QUEST_LEO_HOCH2_DES" Val="The hochlick wanted you to kill Leopold the next time he appears, in exchange they will offer a reward. You declined."/>
+      <Entry Key="QUEST_LEO_HOCH3_DES" Val="The hochlick wanted you to kill Leopold the next time he appears, in exchange they will offer a reward. You killed the hochlick."/>
+      <Entry Key="QUEST_LEO_KILL_DES" Val="You killed Leopold and got your reward from the hohlick."/>
+      <Entry Key="QUEST_LEO_KILL2_DES" Val="You failed to kill Leopold, he run off and asked you to play the demon game for him anyway. If you visited the dola or cmuch, you will soon find the entrance to the game."/>
+      <Entry Key="QUEST_LEO_KILL3_DES" Val="You did not kill Leopold like the hohlick asked, so you still need to play the demon game. If you visited the dola or cmuch, you will soon find the entrance to the game. "/>
+      <Entry Key="QUEST_LEO_HOCH4_DES" Val="You agreed to sell Leopold into servitude after you win the demon game. In exchange the hochlick will offer a reward. So you must now seek out the game. If you visited the dola or cmuch, you will soon find the entrance to the game. "/>
+      <Entry Key="QUEST_LEO_HOCHEND" Val="The hochlick, Frix, came to you after the game."/>
+      <Entry Key="QUEST_LEO_HOCHEND_DES" Val="You were rewarded for your service."/>
+      <Entry Key="QUEST_LEOEND" Val="Leopold visited you after the Kurv Game fiasco."/>
+      <Entry Key="QUEST_LEOEND_DES" Val="He said the game was suspended because the demons were shaken by your violent outburst. He left you a thank you gift before moving on."/>
+      <Entry Key="QUEST_LEO_GAME" Val="You entered the Kurv Game."/>
+      <Entry Key="QUEST_LEO_GAME_DES" Val="You killed all the demons, but Leopold seemed very ungrateful and simply run off saying humans are bloody. Still, no more thieving from him."/>
+      <Entry Key="QUEST_LEO_GAME2_DES" Val="You tried to kill the demons, but failed badly. You're not sure what happens now."/>
+      <Entry Key="QUEST_LEO_GAME3_DES" Val="You won the game and asked for Leopold's freedom. No more thievery and one happy skshack."/>
+      <Entry Key="QUEST_LEO_GAME4_DES" Val="You won the game but condemned Leopold to servitude. After all the little bastard stole from you."/>
+      <Entry Key="QUEST_LEO_GAME5_DES" Val="You lost the game and so condemned Leopold to further servitude. But it seems you will no longer be bothered by the game, so there's that..."/>
+      <Entry Key="QUEST_LEO_CMUCH" Val="You found the swamp where Leopold's cmuch friend lives."/>
+      <Entry Key="QUEST_LEO_CMUCH_DES" Val="The demon greed to help, so you must now wait until a doorway into the game appears to you."/>
+      <Entry Key="QUEST_LEO_CMUCH2_DES" Val="You killed the cmuch, so not much chance for his help now... Perhaps Leopold will appear again and offer another option."/>
+      <Entry Key="QUEST_LEO_DOLA" Val="You found the house where Leopold's dola friend lives."/>
+      <Entry Key="QUEST_LEO_DOLA_DES" Val="You failed to get the dola's help. Perhaps Leopold will appear again and offer another option."/>
+      <Entry Key="QUEST_LEO_GAME6_DES" Val="You trusted a demon to aid you, but they tricked you instead and had Leopold condemned to servitude. But the skshack did exlude you from the game at least."/>
+
+      <Entry Key="QUEST_LOG3" Val="Alphaclans"/>
+      <Entry Key="QUEST_ALPHACLANS" Val="You have discovered the main settlement of the Alphaclans"/>
+      <Entry Key="QUEST_ALPHACLANS_DES" Val="The orcs are traditionally a nomadic, clan-based society, rules by clan matriarchs. The alpha matriarch is in charge of all the clans, and it she who holds power in the settled orc villages. Orcs despise cowardice, so think twice before you choose to surrender in their presence. 
+             Orcs will not typically trade for bone or leather as they usually have it in abundance. When you become friends, you may be able to recruit an orc via the fighting pits. To gain friendship, you can try doing tasks for the Alphas when they are available. "/>
+      <Entry Key="QUEST_ALPHACLANSARMY" Val="You have come across an Alphaclans band. This may mean their settlement lies nearby."/>
+     
+      <Entry Key="QUEST_LOG4" Val="Slavyans"/>
+      <Entry Key="QUEST_SLAYVANS" Val="You have discovered the main settlement of the Slavyans"/>
+      <Entry Key="QUEST_SLAVYANS_DES" Val="The Slavyans are the largest, stable community of humans who like you, worship the Cosmic Tree Pantheon. Some of your own folk have likely come from a Slavyan village before they were thrown into the path of the chosen and forced to forge their own path. Slavyans accept all trade goods, and once friendly, you will be able to recruit up to two humans from the tavern."/>
+      <Entry Key="QUEST_SLAVYANARMY" Val="You have come across a Slavyan group. This may mean their settlement lies nearby."/>
+      <Entry Key="QUEST_LOG5" Val="Scavengers."/>
+      <Entry Key="QUEST_SCAVENGERS" Val="You have discovered the main settlement of the Scavengers"/>
+      <Entry Key="QUEST_SCAVENGERS_DES" Val="They are the second largest human community, but they are not followers of the pantheon. As the story goes, Scavengers were folk who displeased the gods and thus never received their protection during the days of Darkness. As such, they became wilder, often ridden with disease and madness. These days they are able to form more controlled societies and are known for slave trade across the land. You may be able to acquire some slaves from them, or even sell your own people."/>
+      <Entry Key="QUEST_LOG6" Val="The Glass King"/>
+      <Entry Key="QUEST_KS_GLASSK" Val="You found the ruins of an old city, covered in ice so clear that it looks almost like glass."/>
+      <Entry Key="QUEST_KS_GLASSK_DES" Val="The glass king asked you to help him break a curse by retrieving his beautiful face from a creature that now wears it. The location was marked on your map."/>
+      <Entry Key="QUEST_KS_GLASSK1_DES" Val="But you were not interested in helping him and left."/>
+      <Entry Key="QUEST_KS_GLASSK2_DES" Val="You killed the glass king."/>
+      <Entry Key="QUEST_KS_GLASSK3_DES" Val="You were defeated by the glass king and chased away from his land."/>
+      <Entry Key="QUEST_KS_GLASSKCH_DES" Val="Within, there was a demon-child with the face attached to their body. You convinced the glass king to face the demon child you found, as you suspect it is his own son. The king listened and asked you to come back to him for your reward."/>
+      <Entry Key="QUEST_KS_GLASSKCH" Val="You found the place where the glass king sent you for his face."/>
+      <Entry Key="QUEST_KS_GLASSKCH1_DES" Val="Within, there was a demon-child with the face attached to their body. You failed to convince the glass king to face this child, as his own son, and the king decided not to give you any rewards. You left the place."/>
+      <Entry Key="QUEST_KS_GLASSKCH2_DES" Val="Within, there was a demon-child with the face attached to their body. You killed the child, and yet the curse remained so the king did not offer any rewards."/>
+      <Entry Key="QUEST_KS_GLASSKCH3_DES" Val="You were defeated and get no reward."/>
+      <Entry Key="QUEST_KS_GLASSKCH4_DES" Val="You killed the demon-child and carried their body back to the glass king. But upon seeing the body the king wept and exclaimed this was his son. The city turned black and you had to flee."/>
+      <Entry Key="QUEST_KS_GLASSKSPWN" Val="You return to the ruins of an old city, covered in ice so clear that it looks almost like glass."/>
+      <Entry Key="QUEST_KS_GLASSKSPWN_DES" Val="The king asked you to stab him through his heart, so that his son may be released from the curse at last. You agreed."/>
+      <Entry Key="QUEST_KS_GLASSKSPWN2_DES" Val="The king asked you to stab him through his heart, so that his son may be released from the curse at last. You declined and left the place."/>
+      <Entry Key="QUEST_LOG7" Val="Fli Catapult"/>
+      <Entry Key="QUEST_KS_FLI" Val="You found the construction site of the Fli Catapult"/>
+      <Entry Key="QUEST_KS_FLI_DES" Val="One of the goblin developers is known to work around the clock, so the others asked you to get a special brew for him."/>
+      <Entry Key="QUEST_KS_FLI2_DES" Val="A group of devoted goblin developers are constructing a complex machine called the Fli Catapult. You were not interested in helping out so you left."/>
+      <Entry Key="QUEST_KS_FLI3_DES" Val="A group of devoted goblin developers are constructing a complex machine called the Fli Catapult. You stole some of their stuff and run away with it."/>
+      <Entry Key="QUEST_KS_FLI4_DES" Val="A group of devoted goblin developers are constructing a complex machine called the Fli Catapult. You were not friendly and so you were made to leave."/>
+      <Entry Key="QUEST_KS_FLI5_DES" Val="A group of devoted goblin developers are constructing a complex machine called the Fli Catapult. You killed them and looted the site."/>
+      <Entry Key="QUEST_KS_FLISPWNTWO" Val="One of the Fli Catapult goblins approached you."/>
+      <Entry Key="QUEST_KS_FLISPWNTWO_DES" Val="Avix told you the others have moved to a new, secret, location. She thanked you for the potions and left a reward."/>
+      <Entry Key="QUEST_KS_FLISPWNONE" Val="You find the cave where you were told to look for a shaman that can give you a potion for the goblin, Khax."/>
+      <Entry Key="QUEST_KS_FLISPWNONE_DES" Val="You paid the price the shaman asked for and he promised to deliver the potions to the goblins. Try looking for the Fli Catapult again to get your reward."/>
+      <Entry Key="QUEST_KS_FLISPWNONE2_DES" Val="You decided the price was too high and abandoned the task."/>
+      <Entry Key="QUEST_LOG8" Val="Vanero"/>
+      <Entry Key="QUEST_KS_VANERO" Val="Vanero, the spider silk and robe trader offered his wares to you."/>
+      <Entry Key="QUEST_KS_VANERO_DES" Val="He moved away after you concluded your business."/>
+      <Entry Key="QUEST_KS_VANERO2_DES" Val="You killed him and looted his wares."/>
+      <Entry Key="QUEST_KS_VANERO3_DES" Val="You tried to kill him but you were defeated and had to pay for your attack."/>
+      <Entry Key="QUEST_KS_VANERO_SP" Val="You met a young girl, Suri."/>
+      <Entry Key="QUEST_KS_VANERO_SP_DES" Val="She asked you to avenge her family and you agreed to help her. She said she will lead you to where the murderers are."/>
+      <Entry Key="QUEST_KS_VANERO_SP2_DES" Val="She asked you to avenge her family but it turned out you already killed the murderers - they were the robe traders. Suri gave you a reward and left."/>
+      <Entry Key="QUEST_KS_VANERO_SP3_DES" Val="She asked you to avenge her family but you were not interested and left."/>
+      <Entry Key="QUEST_KS_VANERO_TWO" Val="Led by Suri, you tracked down her family's murderers and it turned out it was Vanero, the trader."/>
+      <Entry Key="QUEST_KS_VANERO_TWO_DES" Val="You killed Vanero and Suri was very grateful you took her side despite her beast nature."/>
+      <Entry Key="QUEST_KS_VANERO_TWO2_DES" Val="You killed Suri and Vanero was grateful you stood with humans."/>
+      <Entry Key="QUEST_KS_VANERO_TWO3_DES" Val="You decided this was none of your business and left."/>
+      <Entry Key="QUEST_KS_VANERO_TWO4_DES" Val="You convinced the two sides to talk and find common ground. They were grateful for your insight and managed a dialogue."/>
+      <Entry Key="QUEST_KS_VANERO_TWO5_DES" Val="You fought and lost and you were forced to flee, so you never did find out how the conflict ended."/>
+      <Entry Key="QUEST_LOG9" Val="Father's choice"/>
+      <Entry Key="QUEST_KS_ZLOS" Val="You came across a small hamlet where a father was about to kill his cursed daughter."/>
+      <Entry Key="QUEST_KS_ZLOS_DES" Val="But you decided to leave."/>
+      <Entry Key="QUEST_KS_ZLOS2_DES" Val="You killed the villagers and you decided to take on the cursed girl yourself, claiming you can handle it. Zloslava is now your problem, or blessing, depending on how fate will see it."/>
+      <Entry Key="QUEST_KS_ZLOS3_DES" Val="You killed the villagers and you decided to leave the girl behind."/>
+      <Entry Key="QUEST_KS_ZLOS4_DES" Val="You tried to kill the villagers, but failed and had to run away."/>
+      <Entry Key="QUEST_KS_ZLOS5_DES" Val="You assisted the father in cleansing the curse, he was very grateful to you that his daughter is now free, even if she is not alive."/>
+      <Entry Key="QUEST_KS_ZLOS6_DES" Val="You allowed the father to kill the cursed child and the villagers were grateful you did not interfere."/>
+      <Entry Key="QUEST_KS_ZLOS7_DES" Val="You tried to cleanse the curse from the child, but failed to do it properly and so the child became a wraith."/>
+      <Entry Key="QUEST_LOG10" Val="Sea Heaven"/>
+      <Entry Key="QUEST_KS_SEA" Val="You came across a shipwreck with a female floating atop a raft, clutching a golden treasure chest. She called out for help."/>
+      <Entry Key="QUEST_KS_SEA_DES" Val="But you decided to ignore her."/>
+      <Entry Key="QUEST_KS_SEA2_DES" Val="But a kraken devoured her and you did not pursue."/>
+      <Entry Key="QUEST_KS_SEA3_DES" Val="She told you of the treasure chest and how it must be taken to her home, or else her people will suffer. But a kraken devoured her. You decided to try and track the beast to see if you can help and you think you can find where it went once you land on the shore."/>
+      <Entry Key="QUEST_KS_SEA4_DES" Val="But a kraken devoured her and you could not pursue."/>
+      <Entry Key="QUEST_KS_SEASHORE" Val="You found the kraken who kidnaped a girl at sea."/>
+      <Entry Key="QUEST_KS_SEASHORE_DES" Val="You spotted the kraken's hideout in a cave nearby."/>
+      <Entry Key="QUEST_KS_SEASHORE2_DES" Val="You stole the chest from the kraken when he was busy with the girl, and you were able to recover some loot."/>
+      <Entry Key="QUEST_KS_SEASHORE3_DES" Val="You stole the chest from the kraken when he was busy with the girl, and you decided to carry it back to her home as she begged you to do. The location should become visible to you as you get closer."/>
+      <Entry Key="QUEST_KS_SEASHORE4_DES" Val="You killed the kraken and rescued the girl, but she was weak and said she could only be healed in her home. You decided to carry her and the chest back to this home as she begged you to do. The location should become visible to you as you get closer."/>
+      <Entry Key="QUEST_KS_SEASHORE5_DES" Val="You killed the kraken and rescued the girl, but she was weak and said she could only be healed in her home. But you decided to abandon her and take the chest."/>
+      <Entry Key="QUEST_KS_SEASHORE6_DES" Val="The kraken beat you and chased you away. You were not able to find the cave again."/>
+      <Entry Key="QUEST_KS_SEA_DES" Val="But you decided to ignore her."/>
+      <Entry Key="QUEST_KS_SEAHEAVENEND" Val="You found the refuge of the water demons."/>
+      <Entry Key="QUEST_KS_SEAHEAVENEND_DES" Val="They were happy you honoured their friend's request, and so you gained their friendship."/>
+      <Entry Key="QUEST_LOG11" Val="Koshei"/>
+      <Entry Key="QUEST_KS_KOSHEI" Val="Someone stalked your camp at night."/>
+      <Entry Key="QUEST_KS_KOSHEI_DES" Val="One of your magic users is gone! Try to search for the kidnapper."/>
+      <Entry Key="QUEST_KS_KOSHEITASK" Val="You found the tower of Koshei, where he took your wise one."/>
+      <Entry Key="QUEST_KS_KOSHEITASK_DES" Val="It turned out the Koshei is an immortal being. He needs a witch's life essence for his rituals and so he was not willing to give up his prey. You must try to search for help if you hope to rescue your friend."/>
+      <Entry Key="QUEST_KS_KOSHEIWITCH" Val="You found a witch that knows Koshei."/>
+      <Entry Key="QUEST_KS_KOSHEIWITCH_DES" Val="She proved to be the man's ex, and so she agreed to tell you of a way t kill the immortal. You must search for a chest, where he locked his life away."/>
+      <Entry Key="QUEST_KS_KOSHEIWITCH2_DES" Val="She proved to be the man's ex, but was not willing to help in hurting him. Instead, she told you of another witch you may capture and exchange for your friend. She marked the location of the rival witch on your map."/>
+      <Entry Key="QUEST_KS_KOSHEIWITCH3_DES" Val="You tried to capture the witch to exchange for your friend, but that only angered Koshei. All chance of reclaiming your lost one is gone."/>
+      <Entry Key="QUEST_KS_KOSHEIGROVE" Val="You found the grove where you sought the aid of the divine against Koshei."/>
+      <Entry Key="QUEST_KS_KOSHEIGROVE_DES" Val="The gods were clearly angry with the ancient mage's defiance and thus they gave you the power to smite him. Go look for his tower again."/>
+      <Entry Key="QUEST_KS_KOSHEIGROVE2_DES" Val="The gods were clearly angry with the ancient mage's defiance, but you failed their test and thus not only felt the displeasure of the divine, but also lost your friend for good."/>
+      <Entry Key="QUEST_KS_KOSHEIWITCHTWO" Val="You tracked down the witch whom you must capture and exchange for your kidnapped friend."/>
+      <Entry Key="QUEST_KS_KOSHEIWITCHTWO_DES" Val="The witch proved to be honourable and good and she agreed to lay down her life for that of your friend. You accepted her sacrifice."/>
+      <Entry Key="QUEST_KS_KOSHEIWITCHTWO2_DES" Val="The witch proved to be honourable and good and she agreed to lay down her life for that of your friend. You declined her sacrifice and accepted the fate of your friend."/>
+      <Entry Key="QUEST_KS_KOSHEIWITCHTWO3_DES" Val="You captured her and must now find the Koshei again."/>
+      <Entry Key="QUEST_KS_KOSHEITREE" Val="You found the tree where Koshei's life was hidden."/>
+      <Entry Key="QUEST_KS_KOSHEITREE_DES" Val="You unlocked the chest and destroyed what was within, thus ending the unnatural life of the Koshei and rescuing your friend."/>
+      <Entry Key="QUEST_LOG12" Val="The bunny man"/>
+      <Entry Key="QUEST_KS_BUNNYMAN" Val="You came across an odd fella in distress."/>
+      <Entry Key="QUEST_KS_BUNNYMAN_DES" Val="He begged you to find his lost bunny and you agreed."/>
+      <Entry Key="QUEST_KS_BUNNYMAN2_DES" Val="He begged you to find his lost bunny but you killed the crazy man instead."/>
+      <Entry Key="QUEST_KS_BUNNYMAN3_DES" Val="He begged you to find his lost bunny but you decided to just leave."/>
+      <Entry Key="QUEST_KS_BUNNYMANONE" Val="You tracked the bunny's possible location."/>
+      <Entry Key="QUEST_KS_BUNNYMANONE_DES" Val="You discovered a pack of wolves, desperate for you to take the bunny away as they say it is a cursed creature and who try catching it die. You eventually managed to get the little bugger. Better go find the bunny man."/>
+      <Entry Key="QUEST_KS_BUNNYMANONE2_DES" Val="You discovered a pack of wolves, desperate for you to take the bunny away as they say it is a cursed creature and who try catching it die. They were right, the little shit kept hurting you, so you gave up and abandoned the quest."/>
+      <Entry Key="QUEST_KS_BUNNYMANONE3_DES" Val="You discovered a pack of wolves, desperate for you to take the bunny away as they say it is a cursed creature and who try catching it die. They were right, the little shit kept hurting you, so you killed it."/>
+      <Entry Key="QUEST_KS_BUNNYMANTWO" Val="You tracked the bunny's possible location."/>
+      <Entry Key="QUEST_KS_BUNNYMANTWO_DES" Val="The bunny was long dead and used as ornament for some rusalkas who served an old man. You freed the rusalkas, but that did mean no bunny. They gave you a bunny goat instead, so you can find the bunny man and try to trick him."/>
+     <Entry Key="QUEST_KS_BUNNYMANTWO2_DES" Val="The bunny was long dead and used as ornament for some rusalkas who served an old man. The man, Huffmir, sold you a bunny goat, and swore it is just like a bunny. Find the bunny man and try to trick him."/>
+      <Entry Key="QUEST_KS_BUNNYMANTWO3_DES" Val="You failed to retrieve a bunny."/>
+      <Entry Key="QUEST_KS_BUNNYMANTWO4_DES" Val="You returned the bunny to Tobiasz."/>      
+      <Entry Key="QUEST_KS_BUNNYMANTHREE_DES" Val="And you found a group of knights trying to get past the bunny to get into a cave. It was not easy, but you got the furry critter and can go look for the bunny man and his reward now."/>
+      <Entry Key="QUEST_KS_BUNNYMANTHREE2_DES" Val="And you found a group of knights trying to get past the bunny to get into a cave. You failed to retrieve the bunny."/>
+      <Entry Key="QUEST_KS_BUNNYMANLAST" Val="You found the bunny man again."/>
+      <Entry Key="QUEST_KS_BUNNYMANTWO5_DES" Val="You returned the bunny-goat to Tobiasz and he accepted it."/>      
+      <Entry Key="QUEST_KS_BUNNYMANTWO6_DES" Val="You returned the bunny-goat to Tobiasz be he did not buy it and left."/>      
+     <Entry Key="QUEST_LOG13" Val="Dwarf baker"/>
+      <Entry Key="QUEST_KS_BAKER" Val="You found a house of a dwarf baker."/>
+      <Entry Key="QUEST_KS_BAKER_DES" Val="The baker was having some trouble with a nasty spirit haunting his oven. He asked you to bring him a lump of stone he thinks the spirit came from, so that it may be destroyed. You agreed."/>
+      <Entry Key="QUEST_KS_BAKER2_DES" Val="The baker was having some trouble with a nasty spirit haunting his oven. You dealt with the spirit for him."/>
+      <Entry Key="QUEST_KS_BAKER3_DES" Val="The baker was having some trouble with a nasty spirit haunting his oven. You tried banishing the spirit but failed and so you had to leave quickly before the dwarf took his anger out on you."/>
+      <Entry Key="QUEST_KS_BAKER4_DES" Val="The baker was having some trouble with a nasty spirit haunting his oven. You dealt with the spirit, but your ritual destroyed the oven, so you had to leave quickly."/>
+      <Entry Key="QUEST_KS_BAKER5_DES" Val="The baker was having some trouble with a nasty spirit haunting his oven, but you decided to side with the spirit and attacked the dwarf. You killed him and left."/>
+      <Entry Key="QUEST_KS_BAKER6_DES" Val="The baker was having some trouble with a nasty spirit haunting his oven, but you decided to side with the spirit and attacked the dwarf. You killed him and agreed to help the spirit by taking it back to its original dwelling. The ghost marked it on your map."/>
+      <Entry Key="QUEST_KS_BAKER7_DES" Val="The baker was having some trouble with a nasty spirit haunting his oven, but you decided to side with the spirit and attacked the dwarf. He beat you and you had to run."/>
+      <Entry Key="QUEST_KS_BAKER8_DES" Val="You dealt with the spirit by returning the stone it was bound to and the dwarf was very grateful to you."/>
+      <Entry Key="QUEST_KS_BAKERSPWNONE" Val="You find the small quarry where the dwarf baker sent you."/>
+      <Entry Key="QUEST_KS_BAKERSPWNONE_DES" Val="You discovered the stone that is linked with the spirit haunting the dwarven baker's oven. Time to return it to him."/>
+      <Entry Key="QUEST_KS_BAKERSPWNTWO" Val="You find the small quarry where the ghost sent you."/>
+      <Entry Key="QUEST_KS_BAKERSPWNTWO_DES" Val="You reunite the spirit with the stone it was originally bound to."/>
+      <Entry Key="QUEST_KS_BAKERSPWNTWO2_DES" Val="You fail to uncover the stone that originally held the spirit and the ghost perishes."/>
+     <Entry Key="QUEST_LOG14" Val="Goldfish"/>
+      <Entry Key="QUEST_MISC_GOLDFISH" Val="You found a goldfish."/>
+      <Entry Key="QUEST_MISC_GOLDFISH_DES" Val="You helped her and she told you of a location for hidden treasure in some old castle ruins."/>
+      <Entry Key="QUEST_MISC_GOLDFISH2_DES" Val="You helped her and she told you of a location for hidden treasure in some old castle ruins and she tipped you to sing a lullaby if you encounter a child ghost on your way."/>
+      <Entry Key="QUEST_MISC_GOLDFISH3_DES" Val="The fish was dying and you demanded a reward for saving it from her sister. The sister agreed and threw in a location of some treasure."/>
+      <Entry Key="QUEST_MISC_GOLDFISHSPWNONE" Val="You found the castle ruins."/>
+      <Entry Key="QUEST_MISC_GOLDFISHSPWNONE_DES" Val="And explored its depths as much as it was possible."/>
+      <Entry Key="QUEST_MISC_GOLDFISHSPWNONE3_DES" Val="But all you find is some angry ghosts. You did uncover another treasure trail though, maybe you will have more luck there."/>
+      <Entry Key="QUEST_MISC_GOLDFISHSPWNONE4_DES" Val="But all you find is some angry ghosts."/>
+      <Entry Key="QUEST_MISC_GOLDFISHSPWNTWO" Val="You found the remains of some old village, where you were supposed to find a treasure."/>
+      <Entry Key="QUEST_MISC_GOLDFISHSPWNTWO_DES" Val="It was a dormant place of power and you were able to unravel its mysteries."/>
+      <Entry Key="QUEST_MISC_GOLDFISHSPWNTWO2_DES" Val="It was a dormant place of power and you were not able to unravel its mysteries."/>
+     <Entry Key="QUEST_LOG15" Val="Goblin killer"/>
+     <Entry Key="QUEST_MISC3_GOBKILL" Val="You came across some goblins who asked you for help as they were being chased by a goblin killer."/>
+     <Entry Key="QUEST_MISC3_GOBKILL_DES" Val="You realised they were not truthfull and when confronted, they told you it was them who murdered the man's village in the first place. You left them to their fate."/>
+     <Entry Key="QUEST_MISC3_GOBKILL2_DES" Val="You agreed to track down the man who is chasing them."/>
+     <Entry Key="QUEST_MISC3_GOBKILL3_DES" Val="You realised they were not truthfull and when confronted, they told you it was them who murdered the man's village in the first place. Reluctantly, you still agreddd to search for the man and try to help them."/>
+     <Entry Key="QUEST_MISC3_GOBKILL4_DES" Val="You did not want to get involved."/>
+     <Entry Key="QUEST_MISC3_GOBKILL5_DES" Val="You killed the goblins and left."/>
+     <Entry Key="QUEST_MISC3_GOBKILLSPWNONE" Val="Your paths crossed with the goblin killer."/>
+     <Entry Key="QUEST_MISC3_GOBKILLSPWNONE_DES" Val="You chose to avoid confrontation and left."/>
+     <Entry Key="QUEST_MISC3_GOBKILLSPWNONE2_DES" Val="You killed the notorious brute and many goblins sent you gifts in thanks."/>
+     <Entry Key="QUEST_MISC3_GOBKILLSPWNONE3_DES" Val="He and his band were adamant all goblins must die, seeing as you weree not their prey, they left to track down their target."/>
+     <Entry Key="QUEST_MISC3_GOBKILLSPWNONE4_DES" Val="You tried to kill them, but you were beaten instead."/>
+     <Entry Key="QUEST_MISC3_GOBKILLSPWNONE5_DES" Val="You convinced the goblin killer and one way or another, convinced them not to pursue the goblins."/>
+     <Entry Key="QUEST_MISC3_GOBKILLSPWNONE6_DES" Val="You were forced to run away."/>
+     <Entry Key="QUEST_MISC3_GOBKILLSPWNONE7_DES" Val="You helped them to track down the goblins and they were grateful."/>
+    </LOC_LIBRARY-QUEST>
+  </DATABASE_QUEST_LOCALIZATION-NO_HSH>
+  

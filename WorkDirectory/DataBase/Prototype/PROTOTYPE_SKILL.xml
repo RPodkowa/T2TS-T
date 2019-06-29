@@ -1,0 +1,42 @@
+﻿<PROTOTYPE_SKILL>
+
+    <E_SKILL_GROUP_TYPE Type="enum" Name="ESkillGroupeType">
+        <!--skill is trigerred only by characterer which is equipped with it-->
+        <!-- Character is default value for this enum-->
+        <Character/>
+        <!--skill is trigerred by the group.
+        passive skill will get trigered each time after "attributesDirty" is cleared on the group
+        other triggers will be tirgerred at specified by trigger intervals-->
+        <Group/>
+    </E_SKILL_GROUP_TYPE>
+    
+	<!-- using duration by removing Charges in specific circumstances dictated by the script together with the trigger -->
+	<CHARGES_COUNTER Name="ChargesCounter">
+		<!-- charges count -->
+		<ChargesCount Name="chargesCount" Type="INT_RANGE" Required="TRUE"/>
+		<!-- -->
+		<ChargesTrigger Name="chargesTrigger" Type="TRIGGER" Required="TRUE"/>
+		<!-- management of removing and adding charges in specified circumstances -->
+		<Script Name="script" Type="SCRIPT" Required="TRUE"/>
+        <FinalScript Name="finalScript" Type="SCRIPT" Required="FALSE"/>
+	</CHARGES_COUNTER>
+
+
+	<SKILL Name="Skill">
+		<!-- How popular is it? 0- available everywhere 100 – not available -->
+		<Rarity Name="rarity" Type="float" Required="TRUE"/>
+
+		<!-- description -->		
+		<DescriptionInfo Name="descriptionInfo" Type="DESCRIPTION_INFO" Required="TRUE"/>
+		<!-- duration of a skill, in turns, rounds etc. -->
+		<ChargesCounter Name="chargesCounter" Type="CHARGES_COUNTER" Required="FALSE"/>
+		<!-- how many essence points does the skill need to increase its level -->
+		<BaseEssence Name="baseEssence" Type="ArrayCOUNTED_TAG" Required="TRUE"/>	
+		<!-- skill components in the form of subskills -->
+		<SkillSubskill Name="skillSubskills" Type="ArraySUBSKILL" Required="TRUE"/>
+		<!--  -->
+		<SkillGroupFilter Name="skillGroupFilters" Type="Arraystring" Required="TRUE"/>
+        <SkillGroupType Name="skillGroupType" Type="E_SKILL_GROUP_TYPE" Required="FALSE"/>
+    </SKILL>
+
+</PROTOTYPE_SKILL>

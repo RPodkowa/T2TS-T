@@ -1,0 +1,31 @@
+﻿<PROTOTYPE_BIOME>
+
+    <BIOME Name="Biome">
+        <Name Name="name" Type="string" Required="TRUE"/>
+		
+        <X Name="xOffset" Type="float" Required="TRUE"/>
+        <Y Name="yOffset" Type="float" Required="TRUE"/>
+        <!-- Minimum difficulty of events that biom could accept -->
+		<MinDiff Name="minDiff" Type="int" Required="TRUE"/>
+        <!-- Maximum difficulty of events that biom could accept -->
+		<MaxDiff Name="maxDiff" Type="int" Required="TRUE"/>
+        <!-- Factions which are majority on the island, form political interactions -->
+        <FactionRequired Name="factionsRequired" Type="ArrayFACTION" Required="FALSE"/>
+        <!-- Factions which may or may not join majority on the island -->
+        <FactionOptional Name="factionsOptional" Type="ArrayFACTION" Required="FALSE"/>
+        <!-- Factions which are rogue (Neutral groups) -->
+        <FactionRogue Name="factionsRogue" Type="ArrayFACTION" Required="FALSE"/>
+        <!-- Factions which are rogue (Neutral groups) on sea -->
+        <SeaFactionRogue Name="seaFactionsSeaRogue" Type="ArrayFACTION" Required="FALSE"/>
+        <!-- Settlements that are spawning in biom -->
+        <Settlement Name="settlements" Type="ArraySETTLEMENT" Required="FALSE"/>
+		
+		<AMountain Name="aMountain" Type="DESCRIPTION_INFO" Required="TRUE"/>
+		<AHill Name="aHill" Type="DESCRIPTION_INFO" Required="TRUE"/>
+		<ASwamp Name="aSwamp" Type="DESCRIPTION_INFO" Required="TRUE"/>
+		<APlains Name="aPlains" Type="DESCRIPTION_INFO" Required="TRUE"/>
+		<ADesert Name="aDesert" Type="DESCRIPTION_INFO" Required="TRUE"/>
+		<AForest Name="aForest" Type="DESCRIPTION_INFO" Required="TRUE"/>
+    </BIOME>
+	
+</PROTOTYPE_BIOME>

@@ -1,0 +1,32 @@
+﻿<PROTOTYPE_SETTLEMENT>
+
+	<!-- a group tha will have a variety of points -->
+	<SCALED_GROUP Name="ScaledGroup">
+		<!-- group strength percent -->
+		<Scale Name="scale" Type="FLOATING_RANGE" Required="TRUE"/>
+		<!-- -->
+		<Group Name="group" Type="GROUP" Required="TRUE"/>
+	</SCALED_GROUP>
+
+	<!--xxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+
+	<!--Information about the settlement and its inhabitants/groups inside-->
+	<SETTLEMENT Name="Settlement" Abbreviation="SET">
+		<!-- How popular is it? 0 – available anywhere, 100 – not available -->		
+		<Rarity Name="rarity" Type="int" Required="TRUE"/>
+		<!-- Type of event this group take-->
+		<EventsCollection Name="eventsCollection" Type="EVENT_COLLECTION" Required="TRUE"/>
+		<!-- description -->
+		<DescriptionInfo Name="descriptionInfo" Type="DESCRIPTION_INFO" Required="TRUE"/>
+		<!-- what model is spawned in the world -->
+		<TerrainModel Name="terrainModels" Type="Arraystring" Required="FALSE"/>
+		<!-- spawned groups-->
+		<SpawnGroup Name="spawnGroups" Type="ArraySCALED_GROUP" Required="FALSE"/>
+		<!-- creatures defending this settlement -->
+		<DefaultDefender Name="defaultDefenders" Type="ArraySCALED_GROUP" Required="FALSE"/>
+		<!-- preferred terrain to spawn-->
+		<SpawnTerrain Name="spawnTerrains" Type="ArraySPAWN_TERRAIN" Required="FALSE"/>
+	</SETTLEMENT>
+	
+		
+</PROTOTYPE_SETTLEMENT>

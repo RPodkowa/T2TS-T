@@ -1,0 +1,131 @@
+﻿<GODS>
+	<!-- Lady of the forest, elves god -->
+	<GOD-DZIEVANNA RandomStartGod="TRUE">
+		<DescriptionInfo Name="UI_DZIEVANNA" Description="UI_DZIEVANNA_DES" IconName="Dzievanna"/>
+		<Tag Value="TAG-DZIEVANNA"/>
+		<Domain Value="TAG-DOMAIN_NATURE"/>
+		<Domain Value="TAG-DOMAIN_HARMONY"/>
+		<SpecialSlot Value="TRAIT_CARD-ANIMAL_PATH"/>
+		<CardSlot Domain="TAG-DOMAIN_NATURE" DefTrait="TRAIT_CARD-BASIC_EQUIPMENT"/>
+		<CardSlot Domain="TAG-DOMAIN_HARMONY" DefTrait="TRAIT_CARD-ADD_CHARACTER_HUNTER"/>
+		<CardSlot Domain="TAG-DOMAIN_NEUTRAL" DefTrait="TRAIT_CARD-BASIC_EQUIPMENT"/>
+		<CardSlot Domain="TAG-DOMAIN_NEUTRAL" DefTrait="TRAIT_CARD-ADD_BASIC_PACK_FOOD"/>
+		<CardSlot Domain="TAG-DOMAIN_NEUTRAL" DefTrait="TRAIT_CARD-BASIC_EQUIPMENT"/>
+    <CardSlot Domain="TAG-DOMAIN_NEUTRAL" DefTrait="TRAIT_CARD-BASIC_EQUIPMENT"/>
+	</GOD-DZIEVANNA>
+	<!-- A warrior goddess with many faces, orc features god-->
+	<GOD-ZORYA RandomStartGod="TRUE">
+		<DescriptionInfo Name="UI_ZORYA" Description="UI_ZORYA_DES" IconName="Zorya"/>
+		<Tag Value="TAG-ZORYA"/>
+		<Domain Value="TAG-DOMAIN_MAGIC"/>
+		<Domain Value="TAG-DOMAIN_TURMOIL"/>
+		<SpecialSlot Value="TRAIT_CARD-WARCRY"/>
+		<CardSlot Domain="TAG-DOMAIN_MAGIC" DefTrait="TRAIT_CARD-BASIC_EQUIPMENT"/>
+		<CardSlot Domain="TAG-DOMAIN_TURMOIL" DefTrait="TRAIT_CARD-ADD_CHARACTER_WARRIOR"/>
+		<CardSlot Domain="TAG-DOMAIN_NEUTRAL" DefTrait="TRAIT_CARD-BASIC_EQUIPMENT"/>
+		<CardSlot Domain="TAG-DOMAIN_NEUTRAL" DefTrait="TRAIT_CARD-ADD_BASIC_PACK_FOOD"/>
+		<CardSlot Domain="TAG-DOMAIN_NEUTRAL" DefTrait="TRAIT_CARD-BASIC_EQUIPMENT"/>
+    <CardSlot Domain="TAG-DOMAIN_NEUTRAL" DefTrait="TRAIT_CARD-BASIC_EQUIPMENT"/>
+	</GOD-ZORYA>
+	<!-- Goddess of love, beauty, hope and fertility. -->
+	<GOD-LADA RandomStartGod="TRUE">
+		<DescriptionInfo Name="UI_LADA" Description="UI_LADA_DES" IconName="Lada"/>
+		<Tag Value="TAG-LADA"/>
+		<Domain Value="TAG-DOMAIN_HARMONY"/>
+		<Domain Value="TAG-DOMAIN_INTELLECT"/>
+		<SpecialSlot Value="TRAIT_CARD-MUTUAL_LOVE"/>
+		<CardSlot Domain="TAG-DOMAIN_INTELLECT" DefTrait="TRAIT_CARD-BASIC_EQUIPMENT"/>
+		<CardSlot Domain="TAG-DOMAIN_HARMONY" DefTrait="TRAIT_CARD-ADD_CHARACTER_GATHERER"/>
+		<CardSlot Domain="TAG-DOMAIN_NEUTRAL" DefTrait="TRAIT_CARD-BASIC_EQUIPMENT"/>
+		<CardSlot Domain="TAG-DOMAIN_NEUTRAL" DefTrait="TRAIT_CARD-ADD_BASIC_PACK_FOOD"/>
+		<CardSlot Domain="TAG-DOMAIN_NEUTRAL" DefTrait="TRAIT_CARD-BASIC_EQUIPMENT"/>
+    <CardSlot Domain="TAG-DOMAIN_NEUTRAL" DefTrait="TRAIT_CARD-BASIC_EQUIPMENT"/>
+	</GOD-LADA>
+	<!-- Father of the four winds and patron of travelers. He is also the master of the seas, sea god -->
+	<GOD-STRIBOG RandomStartGod="TRUE">
+		<DescriptionInfo Name="UI_STRIBOG" Description="UI_STRIBOG_DES" IconName="Stribog"/>
+		<Tag Value="TAG-STRIBOG"/>
+		<Domain Value="TAG-DOMAIN_LIGHT"/>
+		<Domain Value="TAG-DOMAIN_HARMONY"/>
+		<SpecialSlot Value="TRAIT_CARD-LONG_TRAVEL"/>
+		<CardSlot Domain="TAG-DOMAIN_LIGHT" DefTrait="TRAIT_CARD-BASIC_EQUIPMENT"/>
+		<CardSlot Domain="TAG-DOMAIN_HARMONY" DefTrait="TRAIT_CARD-ADD_CHARACTER_GATHERER"/>
+		<CardSlot Domain="TAG-DOMAIN_NEUTRAL" DefTrait="TRAIT_CARD-BASIC_EQUIPMENT"/>
+		<CardSlot Domain="TAG-DOMAIN_NEUTRAL" DefTrait="TRAIT_CARD-ADD_BASIC_PACK_FOOD"/>
+		<CardSlot Domain="TAG-DOMAIN_NEUTRAL" DefTrait="TRAIT_CARD-BASIC_EQUIPMENT"/>
+    <CardSlot Domain="TAG-DOMAIN_NEUTRAL" DefTrait="TRAIT_CARD-BASIC_EQUIPMENT"/>
+	</GOD-STRIBOG>
+	<!-- Master of the moon, beats and night creatures, animalistic god-->
+	<GOD-HORZ RandomStartGod="TRUE">
+		<DescriptionInfo Name="UI_HORZ" Description="UI_HORZ_DES" IconName="Horz"/>
+		<Tag Value="TAG-HORZ"/>
+		<Domain Value="TAG-DOMAIN_NATURE"/>
+		<Domain Value="TAG-DOMAIN_MAGIC"/>
+		<SpecialSlot Value="TRAIT_CARD-NIGHT_AFFINITY"/>
+		<CardSlot Domain="TAG-DOMAIN_NATURE" DefTrait="TRAIT_CARD-BASIC_EQUIPMENT"/>
+		<CardSlot Domain="TAG-DOMAIN_MAGIC" DefTrait="TRAIT_CARD-ADD_CHARACTER_SCAVENGER"/>
+		<CardSlot Domain="TAG-DOMAIN_NEUTRAL" DefTrait="TRAIT_CARD-BASIC_EQUIPMENT"/>
+		<CardSlot Domain="TAG-DOMAIN_NEUTRAL" DefTrait="TRAIT_CARD-ADD_BASIC_PACK_FOOD"/>
+		<CardSlot Domain="TAG-DOMAIN_NEUTRAL" DefTrait="TRAIT_CARD-BASIC_EQUIPMENT"/>
+    <CardSlot Domain="TAG-DOMAIN_NEUTRAL" DefTrait="TRAIT_CARD-BASIC_EQUIPMENT"/>
+	</GOD-HORZ>	
+	<!-- Master of dreams, nightmares and the spirit world,	goblins god -->
+	<GOD-MAROVIT RandomStartGod="TRUE">
+		<DescriptionInfo Name="UI_MAROVIT" Description="UI_MAROVIT_DES" IconName="Marovit"/>
+		<Tag Value="TAG-MAROVIT"/>
+		<Domain Value="TAG-DOMAIN_MAGIC"/>
+		<Domain Value="TAG-DOMAIN_INTELLECT"/>
+		<SpecialSlot Value="TRAIT_CARD-NIGHTMARE_GIFT"/>
+		<CardSlot Domain="TAG-DOMAIN_MAGIC" DefTrait="TRAIT_CARD-BASIC_EQUIPMENT"/>
+		<CardSlot Domain="TAG-DOMAIN_INTELLECT" DefTrait="TRAIT_CARD-ADD_CHARACTER_SCOUNDREL"/>
+		<CardSlot Domain="TAG-DOMAIN_NEUTRAL" DefTrait="TRAIT_CARD-BASIC_EQUIPMENT"/>
+		<CardSlot Domain="TAG-DOMAIN_NEUTRAL" DefTrait="TRAIT_CARD-ADD_BASIC_PACK_FOOD"/>
+		<CardSlot Domain="TAG-DOMAIN_NEUTRAL" DefTrait="TRAIT_CARD-BASIC_EQUIPMENT"/>
+    <CardSlot Domain="TAG-DOMAIN_NEUTRAL" DefTrait="TRAIT_CARD-BASIC_EQUIPMENT"/>
+	</GOD-MAROVIT>
+	<!-- God of heavenly fires, patron of smiths and craftsmen, once known as the sun god. Golden haired, well built, older. He is the patron of smiths and craftsmen, but he used to be a warrior. 
+	craft - attract dwarves god  -->
+	<GOD-SVAROG RandomStartGod="TRUE">
+		<DescriptionInfo Name="UI_SVAROG" Description="UI_SVAROG_DES" IconName="Svarog"/>
+		<Tag Value="TAG-SVAROG"/>
+		<Domain Value="TAG-DOMAIN_LIGHT"/>
+		<Domain Value="TAG-DOMAIN_TURMOIL"/>
+		<SpecialSlot Value="TRAIT_CARD-MANY_HAMMERS_ONE_ANVIL"/>
+		<CardSlot Domain="TAG-DOMAIN_LIGHT" DefTrait="TRAIT_CARD-ADD_CHARACTER_CRAFTSMAN"/>
+		<CardSlot Domain="TAG-DOMAIN_TURMOIL" DefTrait="TRAIT_CARD-BASIC_EQUIPMENT"/>
+		<CardSlot Domain="TAG-DOMAIN_NEUTRAL" DefTrait="TRAIT_CARD-BASIC_EQUIPMENT"/>
+		<CardSlot Domain="TAG-DOMAIN_NEUTRAL" DefTrait="TRAIT_CARD-ADD_BASIC_PACK_FOOD"/>
+		<CardSlot Domain="TAG-DOMAIN_NEUTRAL" DefTrait="TRAIT_CARD-BASIC_EQUIPMENT"/>
+    <CardSlot Domain="TAG-DOMAIN_NEUTRAL" DefTrait="TRAIT_CARD-BASIC_EQUIPMENT"/>
+	</GOD-SVAROG>
+	<!--Triglav is made out of three domains - the heavens (domain of the gods), the earth (domain of the mortals) and the underworld (lands of the dead) -->
+	<GOD-TRIGLAV RandomStartGod="FALSE">
+		<DescriptionInfo Name="UI_TRIGLAV" Description="UI_TRIGLAV_DES" IconName="Triglav"/>
+		<Tag Value="TAG-TRIGLAV"/>
+		<Domain Value="TAG-DOMAIN_TURMOIL"/>
+		<Domain Value="TAG-DOMAIN_LIGHT"/>
+		<Domain Value="TAG-DOMAIN_NATURE"/>
+		<SpecialSlot Value="TRAIT_CARD-DIVINE_COMMANDER"/>
+		<CardSlot Domain="TAG-DOMAIN_NATURE" DefTrait="TRAIT_CARD-BASIC_EQUIPMENT"/>
+		<CardSlot Domain="TAG-DOMAIN_TURMOIL" DefTrait="TRAIT_CARD-ADD_CHARACTER_WARRIOR"/>
+		<CardSlot Domain="TAG-DOMAIN_LIGHT" DefTrait="TRAIT_CARD-BASIC_EQUIPMENT"/>
+		<CardSlot Domain="TAG-DOMAIN_NEUTRAL" DefTrait="TRAIT_CARD-BASIC_EQUIPMENT"/>
+		<CardSlot Domain="TAG-DOMAIN_NEUTRAL" DefTrait="TRAIT_CARD-ADD_BASIC_PACK_FOOD"/>
+    <CardSlot Domain="TAG-DOMAIN_NEUTRAL" DefTrait="TRAIT_CARD-BASIC_EQUIPMENT"/>
+	</GOD-TRIGLAV>
+	<!--Death bringer and wayfarer of the underworlds. Nyia is the goddess of despair and death, mistress of pain and loss -->
+	<GOD-NYIA RandomStartGod="FALSE">
+		<DescriptionInfo Name="UI_NYIA" Description="UI_NYIA_DES" IconName="Nyia"/>
+		<Tag Value="TAG-NYIA"/>
+		<Domain Value="TAG-DOMAIN_MAGIC"/>
+		<Domain Value="TAG-DOMAIN_NATURE"/>
+		<Domain Value="TAG-DOMAIN_INTELLECT"/>
+		<SpecialSlot Value="TRAIT_CARD-IDOL_OF_PAIN"/>
+		<CardSlot Domain="TAG-DOMAIN_NATURE" DefTrait="TRAIT_CARD-ADD_CHARACTER_HUNTER"/>
+		<CardSlot Domain="TAG-DOMAIN_MAGIC" DefTrait="TRAIT_CARD-BASIC_EQUIPMENT"/>
+		<CardSlot Domain="TAG-DOMAIN_INTELLECT" DefTrait="TRAIT_CARD-BASIC_EQUIPMENT"/>
+		<CardSlot Domain="TAG-DOMAIN_NEUTRAL" DefTrait="TRAIT_CARD-BASIC_EQUIPMENT"/>
+		<CardSlot Domain="TAG-DOMAIN_NEUTRAL" DefTrait="TRAIT_CARD-ADD_BASIC_PACK_FOOD"/>
+    <CardSlot Domain="TAG-DOMAIN_NEUTRAL" DefTrait="TRAIT_CARD-BASIC_EQUIPMENT"/>
+	</GOD-NYIA>
+</GODS>

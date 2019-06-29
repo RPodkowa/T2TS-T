@@ -1,0 +1,313 @@
+﻿<PROCEDURAL_ITEM_DATA>
+	<RAT-SWORD_1H Animation="Slash1" Sound="AttackSword1H" SpeedStars="5" DamageStars="1" AdditionalSubskillsCount="0" IconPrefix="Sword1H" >
+		<RelatedRecipe Value="ITEM_REC-SWORD_1H"/>
+	</RAT-SWORD_1H>
+	<RAT-SWORD_2H Animation="Slash1" Sound="AttackSword2H" SpeedStars="4" DamageStars="3" AdditionalSubskillsCount="0" IconPrefix="Sword2H">
+		<RelatedRecipe Value="ITEM_REC-SWORD_2H"/>
+	</RAT-SWORD_2H>	
+	<RAT-AXE_1H Animation="BloodyHit2" Sound="AttackAxe1H" SpeedStars="4" DamageStars="3" AdditionalSubskillsCount="0" IconPrefix="Axe1H">
+		<RelatedRecipe Value="ITEM_REC-AXE_1H"/>
+	</RAT-AXE_1H>
+    <RAT-AXE_2H Animation="BloodyHit2" Sound="AttackAxe2H" SpeedStars="4" DamageStars="5" AdditionalSubskillsCount="0" IconPrefix="Axe2H">
+		<RelatedRecipe Value="ITEM_REC-AXE_2H"/>
+	</RAT-AXE_2H>
+    <RAT-CLUB_1H Animation="BloodyHit5" Sound="AttackClub1H" SpeedStars="2" DamageStars="1" AdditionalSubskillsCount="0" IconPrefix="Club1H">
+		<RelatedRecipe Value="ITEM_REC-CLUB_1H"/>
+	</RAT-CLUB_1H>
+    <RAT-CLUB_2H Animation="BloodyHit5" Sound="AttackClub2H" SpeedStars="2" DamageStars="4" AdditionalSubskillsCount="0" IconPrefix="Club2H">
+		<RelatedRecipe Value="ITEM_REC-CLUB_2H"/>
+	</RAT-CLUB_2H>
+    <RAT-POLEARM_1H Animation="BloodyHit4" Sound="AttackPolearm1H" SpeedStars="3" DamageStars="1" AdditionalSubskillsCount="0" IconPrefix="Polearm1H">
+		<RelatedRecipe Value="ITEM_REC-POLEARM_1H"/>
+	</RAT-POLEARM_1H>
+    <RAT-POLEARM_2H Animation="BloodyHit4" Sound="AttackPolearm2H" SpeedStars="2" DamageStars="2" AdditionalSubskillsCount="0" IconPrefix="Polearm2H">
+        <RelatedRecipe Value="ITEM_REC-POLEARM_2H"/>
+    </RAT-POLEARM_2H>
+
+    <RAT-ARTIFACT_1H Animation="Hit14" Sound="AttackArtifact1H" SpeedStars="4" DamageStars="1" AdditionalSubskillsCount="2" IconPrefix="Artifact1H">
+        <RelatedRecipe Value="ITEM_REC-ARTIFACT_1H"/>
+		<SubskillCollection EssenceQuality="Gray">
+			<SubskillEssenceType>
+				<Subskill Value="SUBSKILL-MULTI_ADD_VWEAK_SHIELDING_PHYSICAL"/>
+				<EssenceType Value="TAG-ESSENCE_STONE"/>
+				<EssenceType Value="TAG-ESSENCE_METAL"/>
+			</SubskillEssenceType>
+			<SubskillEssenceType>
+				<Subskill Value="SUBSKILL-MULTI_ADD_VWEAK_SHIELDING_MENTAL"/>
+				<EssenceType Value="TAG-ESSENCE_LEATHER"/>
+				<EssenceType Value="TAG-ESSENCE_WOOD"/>
+			</SubskillEssenceType>
+			<SubskillEssenceType>
+				<Subskill Value="SUBSKILL-MULTI_ADD_VWEAK_SHIELDING_SPIRIT"/>
+				<EssenceType Value="TAG-ESSENCE_GEM"/>
+				<EssenceType Value="TAG-ESSENCE_BONE"/>
+			</SubskillEssenceType>
+		</SubskillCollection>
+		<SubskillCollection EssenceQuality="Essence">
+			<SubskillEssenceType>
+				<Subskill Value="SUBSKILL-FIRST_STRIKE_DMG_M_S"/>
+				<Subskill Value="SUBSKILL-MULTI_ADD_WEAK_SHIELDING_PHYSICAL_SPIRIT"/>
+				<EssenceType Value="TAG-ESSENCE_STONE"/>
+				<EssenceType Value="TAG-ESSENCE_METAL"/>
+			</SubskillEssenceType>
+			<SubskillEssenceType>
+				<Subskill Value="SUBSKILL-MULTI_WEAK_ADD_WISDOM"/>
+				<Subskill Value="SUBSKILL-MULTI_ADD_WEAK_SHIELDING_PHYSICAL_MENTAL"/>
+				<EssenceType Value="TAG-ESSENCE_LEATHER"/>
+				<EssenceType Value="TAG-ESSENCE_WOOD"/>
+			</SubskillEssenceType>
+			<SubskillEssenceType>
+				<Subskill Value="SUBSKILL-MULTI_WEAK_ADD_DESTINY"/>
+				<Subskill Value="SUBSKILL-MULTI_ADD_WEAK_SHIELDING_MENTAL_SPIRIT"/>
+				<EssenceType Value="TAG-ESSENCE_GEM"/>
+				<EssenceType Value="TAG-ESSENCE_BONE"/>
+			</SubskillEssenceType>
+		</SubskillCollection>
+		<SubskillCollection EssenceQuality="Ancient">
+			<SubskillEssenceType>
+				<Subskill Value="SUBSKILL-INSPIRE_STANCE"/>
+				<Subskill Value="SUBSKILL-MULTI_ADD_SHIELDING_PHYSICAL_SPIRIT"/>
+				<EssenceType Value="TAG-ESSENCE_STONE"/>
+				<EssenceType Value="TAG-ESSENCE_METAL"/>
+			</SubskillEssenceType>
+			<SubskillEssenceType>
+				<Subskill Value="SUBSKILL-BLOODY_SACRIFICE"/>
+				<Subskill Value="SUBSKILL-MULTI_ADD_SHIELDING_PHYSICAL_MENTAL"/>
+				<EssenceType Value="TAG-ESSENCE_LEATHER"/>
+				<EssenceType Value="TAG-ESSENCE_WOOD"/>
+			</SubskillEssenceType>
+			<SubskillEssenceType>
+				<Subskill Value="SUBSKILL-TRUE_FOG"/>
+				<Subskill Value="SUBSKILL-MULTI_ADD_DESTINY"/>
+				<Subskill Value="SUBSKILL-MULTI_ADD_SHIELDING_MENTAL_SPIRIT"/>
+				<EssenceType Value="TAG-ESSENCE_GEM"/>
+				<EssenceType Value="TAG-ESSENCE_BONE"/>
+			</SubskillEssenceType>
+		</SubskillCollection>
+    </RAT-ARTIFACT_1H>
+    <RAT-ARTIFACT_2H Animation="Hit14" Sound="AttackArtifact2H" SpeedStars="3" DamageStars="2" AdditionalSubskillsCount="3" IconPrefix="Artifact2H">
+        <RelatedRecipe Value="ITEM_REC-ARTIFACT_2H"/>
+		<SubskillCollection EssenceQuality="Gray">
+			<SubskillEssenceType>
+				<Subskill Value="SUBSKILL-ARRIVAL_TRAP_DMG"/>
+				<Subskill Value="SUBSKILL-MULTI_ADD_WEAK_SHIELDING_PHYSICAL_SPIRIT"/>
+				<EssenceType Value="TAG-ESSENCE_METAL"/>
+				<EssenceType Value="TAG-ESSENCE_STONE"/>
+			</SubskillEssenceType>
+			<SubskillEssenceType>
+				<Subskill Value="SUBSKILL-ARRIVAL_TRAP_DELAY"/>
+				<Subskill Value="SUBSKILL-MULTI_ADD_WEAK_SHIELDING_PHYSICAL_MENTAL"/>
+				<EssenceType Value="TAG-ESSENCE_WOOD"/>
+				<EssenceType Value="TAG-ESSENCE_LEATHER"/>
+			</SubskillEssenceType>
+			<SubskillEssenceType>
+				<Subskill Value="SUBSKILL-MULTI_WEAK_ADD_MYSTICISM"/>
+				<Subskill Value="SUBSKILL-MULTI_ADD_WEAK_SHIELDING_MENTAL_SPIRIT"/>
+				<EssenceType Value="TAG-ESSENCE_GEM"/>
+				<EssenceType Value="TAG-ESSENCE_BONE"/>
+			</SubskillEssenceType>
+		</SubskillCollection>
+		<SubskillCollection EssenceQuality="Essence">
+			<SubskillEssenceType>
+				<Subskill Value="SUBSKILL-BLOOD_BROTHERHOOD"/>
+				<Subskill Value="SUBSKILL-MULTI_ADD_SHIELDING_PHYSICAL_SPIRIT"/>
+				<EssenceType Value="TAG-ESSENCE_METAL"/>
+				<EssenceType Value="TAG-ESSENCE_STONE"/>
+			</SubskillEssenceType>
+			<SubskillEssenceType>
+				<Subskill Value="SUBSKILL-SUSPENSION_ENEMIES"/>
+				<Subskill Value="SUBSKILL-MULTI_ADD_SHIELDING_PHYSICAL_MENTAL"/>
+				<EssenceType Value="TAG-ESSENCE_LEATHER"/>
+				<EssenceType Value="TAG-ESSENCE_WOOD"/>
+			</SubskillEssenceType>
+			<SubskillEssenceType>
+				<Subskill Value="SUBSKILL-CORPSE_EATER_HEAL2"/>
+				<Subskill Value="SUBSKILL-MULTI_ADD_SHIELDING_MENTAL_SPIRIT"/>
+				<EssenceType Value="TAG-ESSENCE_GEM"/>
+				<EssenceType Value="TAG-ESSENCE_BONE"/>
+			</SubskillEssenceType>
+		</SubskillCollection>
+		<SubskillCollection EssenceQuality="Ancient">
+			<SubskillEssenceType> 
+				<Subskill Value="SUBSKILL-EXPLODING_DEATH"/>
+			<Subskill Value="SUBSKILL-MULTI_ADD_PERCEPTION"/>
+			<Subskill Value="SUBSKILL-WEAK_REGENERATION_P"/>
+				<EssenceType Value="TAG-ESSENCE_STONE"/>
+				<EssenceType Value="TAG-ESSENCE_METAL"/>
+			</SubskillEssenceType>
+			<SubskillEssenceType>
+				<Subskill Value="SUBSKILL-BLOODY_SACRIFICE"/>
+				<Subskill Value="SUBSKILL-MULTI_ADD_WISDOM"/>
+				<Subskill Value="SUBSKILL-WEAK_REGENERATION_M"/>
+				<EssenceType Value="TAG-ESSENCE_WOOD"/>
+				<EssenceType Value="TAG-ESSENCE_LEATHER"/>
+			</SubskillEssenceType>
+			<SubskillEssenceType>
+			<Subskill Value="SUBSKILL-CORPSE_EATER_HEAL_ALL"/>
+				<Subskill Value="SUBSKILL-MULTI_ADD_MYSTICISM"/>
+				<Subskill Value="SUBSKILL-WEAK_REGENERATION_S"/>
+				<EssenceType Value="TAG-ESSENCE_GEM"/>
+				<EssenceType Value="TAG-ESSENCE_BONE"/>
+			</SubskillEssenceType>
+		</SubskillCollection>
+    </RAT-ARTIFACT_2H>
+
+    <RAT-SCROLL_1H Animation="Hit7" Sound="AttackScroll1H" SpeedStars="2" DamageStars="1" AdditionalSubskillsCount="2" IconPrefix="Scroll1H">
+        <RelatedRecipe Value="ITEM_REC-SCROLL_1H"/>
+		<SubskillCollection EssenceQuality="Gray">
+			<SubskillEssenceType>
+				<Subskill Value="SUBSKILL-RANDOM_BLASTS1"/>
+				<Subskill Value="SUBSKILL-DELAY_ENEMY"/>
+				<EssenceType Value="TAG-ESSENCE_STONE"/>
+				<EssenceType Value="TAG-ESSENCE_METAL"/>
+			</SubskillEssenceType>
+			<SubskillEssenceType>
+				<Subskill Value="SUBSKILL-RANDOM_BLASTS1"/>
+				<Subskill Value="SUBSKILL-HURRY_UP"/>
+				<EssenceType Value="TAG-ESSENCE_WOOD"/>
+				<EssenceType Value="TAG-ESSENCE_LEATHER"/>
+			</SubskillEssenceType>
+			<SubskillEssenceType>
+				<Subskill Value="SUBSKILL-ENERGY_BLUR"/>
+				<Subskill Value="SUBSKILL-DELAY_ENEMY"/>
+				<EssenceType Value="TAG-ESSENCE_GEM"/>
+				<EssenceType Value="TAG-ESSENCE_BONE"/>
+			</SubskillEssenceType>
+		</SubskillCollection>
+		<SubskillCollection EssenceQuality="Essence">
+			<SubskillEssenceType>
+				<Subskill Value="SUBSKILL-RANDOM_BLASTS2"/>
+				<Subskill Value="SUBSKILL-ESSENCE_SKIN"/>
+				<EssenceType Value="TAG-ESSENCE_STONE"/>
+				<EssenceType Value="TAG-ESSENCE_METAL"/>
+			</SubskillEssenceType>
+			<SubskillEssenceType>
+				<Subskill Value="SUBSKILL-ILUSION_BITE"/>
+				<Subskill Value="SUBSKILL-ESSENCE_SKIN"/>
+				<EssenceType Value="TAG-ESSENCE_WOOD"/>
+				<EssenceType Value="TAG-ESSENCE_LEATHER"/>
+			</SubskillEssenceType>
+			<SubskillEssenceType>
+				<Subskill Value="SUBSKILL-EERIE_THROWING_AXE"/>
+				<Subskill Value="SUBSKILL-WEAKNESS"/>
+				<EssenceType Value="TAG-ESSENCE_GEM"/>
+				<EssenceType Value="TAG-ESSENCE_BONE"/>
+			</SubskillEssenceType>
+		</SubskillCollection>
+		<SubskillCollection EssenceQuality="Ancient">
+			<SubskillEssenceType>
+				<Subskill Value="SUBSKILL-DESTROY_SHIELDING"/>
+				<Subskill Value="SUBSKILL-STRONG_BLESSED_ARMOUR"/>
+				<EssenceType Value="TAG-ESSENCE_STONE"/>
+				<EssenceType Value="TAG-ESSENCE_METAL"/>
+			</SubskillEssenceType>
+			<SubskillEssenceType>
+				<Subskill Value="SUBSKILL-RANDOM_BLASTS3"/>
+				<Subskill Value="SUBSKILL-SUMMON_CMUCH_ITEM"/>
+				<EssenceType Value="TAG-ESSENCE_WOOD"/>
+				<EssenceType Value="TAG-ESSENCE_LEATHER"/>
+			</SubskillEssenceType>
+			<SubskillEssenceType>
+				<Subskill Value="SUBSKILL-LIGHTNING"/>
+				<Subskill Value="SUBSKILL-SUMMON_DEMON_ITEM"/>
+				<EssenceType Value="TAG-ESSENCE_GEM"/>
+				<EssenceType Value="TAG-ESSENCE_BONE"/>
+			</SubskillEssenceType>
+		</SubskillCollection>
+    </RAT-SCROLL_1H>
+    <RAT-SCROLL_2H Animation="Hit7" Sound="AttackScroll2H" SpeedStars="2" DamageStars="1" AdditionalSubskillsCount="3" IconPrefix="Scroll2H">
+        <RelatedRecipe Value="ITEM_REC-SCROLL_2H"/>
+		<SubskillCollection EssenceQuality="Gray">
+			<SubskillEssenceType>
+				<Subskill Value="SUBSKILL-ICE_SPIKE"/>
+				<Subskill Value="SUBSKILL-SPIRIT_CUTOFF"/>
+				<Subskill Value="SUBSKILL-DAMAGE_SHIELDING_3"/>
+				<EssenceType Value="TAG-ESSENCE_STONE"/>
+				<EssenceType Value="TAG-ESSENCE_METAL"/>
+			</SubskillEssenceType>
+			<SubskillEssenceType>
+				<Subskill Value="SUBSKILL-RANDOM_BLASTS2"/>
+				<Subskill Value="SUBSKILL-ICE_SPIKE"/>
+				<Subskill Value="SUBSKILL-DELAY_ENEMIES"/>
+				<EssenceType Value="TAG-ESSENCE_WOOD"/>
+				<EssenceType Value="TAG-ESSENCE_LEATHER"/>
+			</SubskillEssenceType>
+			<SubskillEssenceType>
+				<Subskill Value="SUBSKILL-RANDOM_BLASTS2"/>
+				<Subskill Value="SUBSKILL-SPIRIT_CUTOFF"/>
+				<Subskill Value="SUBSKILL-WEAKNESS"/>
+				<EssenceType Value="TAG-ESSENCE_GEM"/>
+				<EssenceType Value="TAG-ESSENCE_BONE"/>
+			</SubskillEssenceType>
+		</SubskillCollection>
+		<SubskillCollection EssenceQuality="Essence">
+			<SubskillEssenceType>
+				<Subskill Value="SUBSKILL-RANDOM_BLASTS3"/>
+				<Subskill Value="SUBSKILL-FIRE_GLANCE"/>
+				<Subskill Value="SUBSKILL-INSPIRE"/>
+				<EssenceType Value="TAG-ESSENCE_STONE"/>
+				<EssenceType Value="TAG-ESSENCE_METAL"/>
+			</SubskillEssenceType>
+			<SubskillEssenceType>
+				<Subskill Value="SUBSKILL-RANDOM_BLASTS3"/>
+				<Subskill Value="SUBSKILL-FIREBALL"/>
+				<Subskill Value="SUBSKILL-INSPIRE"/>
+				<EssenceType Value="TAG-ESSENCE_WOOD"/>
+				<EssenceType Value="TAG-ESSENCE_LEATHER"/>
+			</SubskillEssenceType>
+			<SubskillEssenceType>
+				<Subskill Value="SUBSKILL-VIGOUR_DRAIN"/>
+				<Subskill Value="SUBSKILL-HURRY_UP_SHIELDING"/>
+				<Subskill Value="SUBSKILL-FIRE_GLANCE"/>
+				<EssenceType Value="TAG-ESSENCE_GEM"/>
+				<EssenceType Value="TAG-ESSENCE_BONE"/>
+			</SubskillEssenceType>
+		</SubskillCollection>
+		<SubskillCollection EssenceQuality="Ancient">
+			<SubskillEssenceType>
+				<Subskill Value="SUBSKILL-INTERNAL_ARMOR_GROW"/>
+				<Subskill Value="SUBSKILL-RANDOM_BLASTS4"/>
+				<Subskill Value="SUBSKILL-ESSENCE_SKINS"/>
+				<EssenceType Value="TAG-ESSENCE_STONE"/>
+				<EssenceType Value="TAG-ESSENCE_METAL"/>
+			</SubskillEssenceType>
+			<SubskillEssenceType>
+				<Subskill Value="SUBSKILL-RANDOM_BLASTS4"/>
+				<Subskill Value="SUBSKILL-SUMMON_UNLIVING_ITEM"/>
+				<Subskill Value="SUBSKILL-INTERNAL_ARMOR_GROW"/>
+				<EssenceType Value="TAG-ESSENCE_WOOD"/>
+				<EssenceType Value="TAG-ESSENCE_LEATHER"/>
+			</SubskillEssenceType>
+			<SubskillEssenceType>
+				<Subskill Value="SUBSKILL-SUMMON_UNLIVING_ARCHERS_ITEM"/>
+				<Subskill Value="SUBSKILL-CHAIN_LIGHTNING"/>
+				<Subskill Value="SUBSKILL-ESSENCE_SKINS"/>
+				<EssenceType Value="TAG-ESSENCE_GEM"/>
+				<EssenceType Value="TAG-ESSENCE_BONE"/>
+			</SubskillEssenceType>
+		</SubskillCollection>
+    </RAT-SCROLL_2H>
+
+    <RAT-BOW Animation="BloodyHit4" Sound="AttackBow" SpeedStars="4" DamageStars="2" AdditionalSubskillsCount="0" IconPrefix="Bow">
+		<RelatedRecipe Value="ITEM_REC-BOW"/>
+	</RAT-BOW>
+    <RAT-THROWN_SPEARS Animation="BloodyHit2" Sound="AttackThrownSpears" SpeedStars="1" DamageStars="2" AdditionalSubskillsCount="0" IconPrefix="ThrownSpears">
+        <RelatedRecipe Value="ITEM_REC-THROWN_SPEARS"/>
+    </RAT-THROWN_SPEARS>
+    <RAT-WAND Animation="Hit8" Sound="AttackWand" SpeedStars="1" DamageStars="3" AdditionalSubskillsCount="0" IconPrefix="Wand">
+		<RelatedRecipe Value="ITEM_REC-WAND"/>
+	</RAT-WAND>
+    <RAT-SHIELD Animation="" Sound="IncreaseShield" SpeedStars="1" DamageStars="2" AdditionalSubskillsCount="0" IconPrefix="Shield">
+        <RelatedRecipe Value="ITEM_REC-SHIELD"/>
+    </RAT-SHIELD>
+    <RAT-ROBES Animation="" Sound="IncreaseShield" SpeedStars="1" DamageStars="1" AdditionalSubskillsCount="0" IconPrefix="Robes">
+        <RelatedRecipe Value="ITEM_REC-ROBES"/>
+    </RAT-ROBES>
+    <RAT-MEDIUM_ARMOUR Animation="IncreaseShield" Sound="" SpeedStars="1" DamageStars="3" AdditionalSubskillsCount="0" IconPrefix="MediumArmour">
+        <RelatedRecipe Value="ITEM_REC-MEDIUM_ARMOUR"/>
+    </RAT-MEDIUM_ARMOUR>
+    <RAT-HEAVY_ARMOUR Animation="" Sound="IncreaseShield" SpeedStars="1" DamageStars="5" AdditionalSubskillsCount="0" IconPrefix="HeavyArmour">
+        <RelatedRecipe Value="ITEM_REC-HEAVY_ARMOUR"/>
+    </RAT-HEAVY_ARMOUR>    
+
+</PROCEDURAL_ITEM_DATA>

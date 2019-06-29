@@ -1,0 +1,1969 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<MODULE xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="MiscEncounters 3" lastEventIndex="24" allowToUse="true" uniqueModuleID="-411177473">
+  <Adventure name="Haunted wife" uniqueID="12" allowOnce="true" typeGeneric="false" typePerGroupGeneric="false" typeInterrupt="false" typeExpedition="true" typeVillage="false" difficulty="2" nodeIdMax="40" joinIsForced="false" joinType="AllAlly" joinRange="MovementArea">
+    <nodes xsi:type="NodeStarting" ID="1" positionX="-349" positionY="934" width="347" height="661" image="Event093">
+      <outputs ownerID="1" targetID="2" fromX="-24" fromY="330" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="2" positionX="388" positionY="967" width="350" height="885">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="ppl" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" />
+          </LogicFilter>
+          <LogicFilter name="shaman" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="TAG-SHAMAN" />
+          </LogicFilter>
+        </FilterBlock>
+      </logic>
+      <outputs name="Ask them what's wrong." ownerID="2" targetID="3" fromX="713" fromY="475" />
+      <outputs name="Use this distraction to attack them!" ownerID="2" targetID="18" fromX="713" fromY="395" />
+      <outputs name="None of your business, really; just leave." ownerID="2" targetID="32" fromX="713" fromY="315" />You come across a small hamlet. Within, you find a group of worried-looking folk gathered around a crying woman.</nodes>
+    <nodes xsi:type="NodeAdventure" ID="3" positionX="833" positionY="314" width="350" height="725">
+      <outputs name="Ask her why the others will not help. Surely one man isn't that dangerous?" ownerID="3" targetID="4" fromX="1158" fromY="-177" />The woman turns to you, hesitant, then looks to others for courage and they nod, so she speaks:
+
+'It's that useless lump of a husband of mine. He won't leave me alone!'</nodes>
+    <nodes xsi:type="NodeAdventure" ID="4" positionX="1259" positionY="488" width="350" height="885">
+      <outputs name="[Zerca or wisdom]Tell her you know of a way to be rid of the apparition, for it is bound to her by marital attachment for sure. Tell her to wear seven dresses." ownerID="4" targetID="5" fromX="1584" fromY="-3" />
+      <outputs name="[Shaman]Tell her spirits are your expertise, and you will speak to this husband of hers." ownerID="4" targetID="8" fromX="1584" fromY="-83" />
+      <outputs name="Say that you are happy to kill the ghost if she likes -- for a price, of course." ownerID="4" targetID="10" fromX="1584" fromY="-163" />'The bugger had to hold on to grass when he shat, so no, it's not that. He's a dead one, you see. He passed two weeks gone. But he keeps comin' my way, climbing into my bed as if nothin' happened!'</nodes>
+    <nodes xsi:type="NodeAdventure" ID="5" positionX="1705" positionY="489" width="350" height="805">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="wise">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="12" tag="TAG-WISDOM" />
+          </LogicFilter>
+          <LogicFilter name="ppl">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" />
+          </LogicFilter>
+          <LogicFilter name="zerca">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="TAG-ZERCA" />
+          </LogicFilter>
+          <LogicProcessing name="wiseorzerca" list1="wise" list2="zerca">
+            <scriptCallWithTag scriptName="FLP_AorB" />
+          </LogicProcessing>
+          <LogicResultAction list="wiseorzerca">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="40" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Nod in confirmation." ownerID="5" targetID="6" group="G1" fromX="2030" fromY="-2" />
+      <outputs name="Nod in confirmation." ownerID="5" targetID="29" group="G1" fromX="2030" fromY="-82" />'So, you say I should put on seven of my best frocks, then go to sleep as always? 
+
+Seems an odd thing, and I'll have to borrow frocks. You sure about this?'</nodes>
+    <nodes xsi:type="NodeAdventure" ID="6" positionX="1919" positionY="1341" width="350" height="725">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="60" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Wait to hear the rest." ownerID="6" targetID="7" fromX="2244" fromY="849" />The woman reports the next day:
+
+'Smart one, you are! I did as you asked, wore my seven frocks, and the bugger came and he stands there gawking at me. Seven frocks? - says he with his stupid mouth open wide. Seven, say I.'</nodes>
+    <nodes xsi:type="NodeAdventure" ID="7" positionX="2471" positionY="1456" width="350" height="725">
+      <logic>
+        <ModifierBlock>
+          <LogicFilter name="ppl" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" />
+          </LogicFilter>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="1" tag="ITEM_CARGO-STRONG_ONE_SWORD_1H" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Tell her you were happy to help." ownerID="7" targetID="35" fromX="2796" fromY="964" />'He frowns at me - Why, I never saw no woman wearing seven frocks before!
+
+Why, I never saw a dead husband come into the marital bed before! - say I. And the wretched thing, stumped, goes and disappears!'
+
+She gives you her family heirloom as reward.</nodes>
+    <nodes xsi:type="NodeAdventure" ID="8" positionX="1793" positionY="-407" width="350" height="966">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction list="shaman">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Say that in that case, you wish her many more nights with her beloved." ownerID="8" targetID="9" fromX="2118" fromY="-898" />
+      <outputs name="Shrug and say that either she'll take your help, pay for it and be done with it, or you'll happily leave." ownerID="8" targetID="9" fromX="2118" fromY="-978" />
+      <outputs name="In that case, just kill those ungrateful bastards!" ownerID="8" targetID="18" fromX="2118" fromY="-1058" />
+      <outputs name="Ask why she is so set against spirits. It is still her husband, no?" ownerID="8" targetID="22" fromX="2118" fromY="-1138" />The woman looks unsure.
+
+'You ghost-meddling folk, you worry me as much as my deadbeat husband.'</nodes>
+    <nodes xsi:type="NodeAdventure" ID="9" positionX="2249" positionY="-298" width="350" height="725">
+      <outputs name="Agree and go into her house to talk to the spirit." ownerID="9" targetID="24" fromX="2574" fromY="-789" />'No need to get all bothered, sirs. I meant no offendin'. Kill fire with fire's what I say. 
+
+You go speak to that husband of mine. Night is comin', and he will come too.'</nodes>
+    <nodes xsi:type="NodeAdventure" ID="10" positionX="1114" positionY="-752" width="350" height="805">
+      <outputs name="Stake out the house and attack the ghost when it appears." ownerID="10" targetID="11" fromX="1439" fromY="-1243" />
+      <outputs name="None of your business, really; just leave." ownerID="10" targetID="32" fromX="1439" fromY="-1323" />'Kill a spirit, will ya? I say good. My husband is gone and done. This thing is no kin of mine. You be careful, though, these things can bring fellow nasties when attacked. It's why we haven't done it ourselves yet.'
+
+The rest of the villagers nod in agreement.</nodes>
+    <nodes xsi:type="NodeChallenge" ID="11" positionX="1608" positionY="-1472" width="500" height="726" challengeType="TypePhysical" versusGroup="GROUP-GHOST_2P_3M_4S" challengeScale="101" challengedList="ppl">
+      <outputs name="Win" ownerID="11" targetID="12" fromX="2049" fromY="-1967" />
+      <outputs name="Lose" ownerID="11" targetID="16" fromX="2049" fromY="-2047" />
+      <outputs name="Surrender" ownerID="11" targetID="16" fromX="2049" fromY="-2127" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="12" positionX="2253" positionY="-1589" width="350" height="885">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="20;40" tag="ITEM_CARGO-BASIC_COOKED_FEW_FOOD" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="8;15" tag="ITEM_CARGO-NUTTINCTURE" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="3" tag="TAG-LOYALTY_SLAVYAN" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Ask for a better reward." ownerID="12" targetID="13" group="G1" fromX="2578" fromY="-2080" />
+      <outputs name="Ask for a better reward." ownerID="12" targetID="15" group="G1" fromX="2578" fromY="-2160" />
+      <outputs name="Thank her and move on." ownerID="12" targetID="14" fromX="2578" fromY="-2240" />You slay the wayward husband-ghost, and the wife throws herself in your arms:
+
+'Thank you! I don't have much, but here's some food I made, warm and tasty. Just what you need after fightin'.'</nodes>
+    <nodes xsi:type="NodeAdventure" ID="13" positionX="2723" positionY="-1289" width="350" height="725">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="50" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicProcessing name="ill" list1="ppl">
+            <scriptCallWithTag scriptName="FLP_GetRandomXelementsIfPossible" parameter="3" />
+          </LogicProcessing>
+          <LogicModifiers list="ill">
+            <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="3" tag="SKILL_PACK-ILLNESS" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="1;7" tag="ITEM_CARGO-FEW_GOLD" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Damned witch." ownerID="13" targetID="14" fromX="3048" fromY="-1780" />'You cheeky buggers! Help, they say, but our livelihoods is all they want...
+
+Here, have some gold and choke on it.'
+
+You get some gold coins, but over the next few days, your throat gets sore and swollen as if you were about to choke.</nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="14" positionX="1893" positionY="-2919" width="350" height="530" allPlayersXP="3" allPlayersRP="2" linkedEventUniqueID="0" />
+    <nodes xsi:type="NodeAdventure" ID="15" positionX="2760" positionY="-2275" width="350" height="725">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="1;4" tag="ITEM_CARGO-FEW_GOLD" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Good, take the gold and leave." ownerID="15" targetID="14" fromX="3085" fromY="-2766" />'You cheeky buggers! Help, they say, but our livelihoods is all they want...
+
+Here, have some gold and choke on it.'
+</nodes>
+    <nodes xsi:type="NodeAdventure" ID="16" positionX="3333" positionY="-2212" width="350" height="725">
+      <outputs name="Best leave quickly then." ownerID="16" targetID="17" fromX="3658" fromY="-2703" />The husband-ghost is ferocious and chases you away from his house!
+
+The villagers curse you out too, for you only angered the spirit.</nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="17" positionX="1614" positionY="-3045" width="350" height="530" allPlayersXP="1" allPlayersRP="1" linkedEventUniqueID="0" />
+    <nodes xsi:type="NodeChallenge" ID="18" positionX="-1011" positionY="-34" width="500" height="807" challengeType="TypePhysical" versusGroup="GROUP-HUMS_2P_2M_1S" challengeScale="101" challengedList="ppl">
+      <outputs name="Win" ownerID="18" targetID="19" group="G1" fromX="-569" fromY="-529" />
+      <outputs name="Lose" ownerID="18" targetID="21" fromX="-569" fromY="-609" />
+      <outputs name="Surrender" ownerID="18" targetID="21" fromX="-569" fromY="-689" />
+      <outputs name="Win" ownerID="18" targetID="20" group="G1" fromX="-569" fromY="-770" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="19" positionX="238" positionY="-979" width="350" height="885">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="3" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="10;20" tag="ITEM_CARGO-NUTTINCTURE" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="10;15" tag="ITEM_CARGO-FEW_WOOD" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="0;1" tag="ITEM_CARGO-ADV_ONE_PET_GOAT" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="-5" tag="TAG-LOYALTY_SLAVYAN" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Kill them too. No need for enemies later." ownerID="19" targetID="40" fromX="563" fromY="-1470" />
+      <outputs name="Take them in. They are young and will forget." ownerID="19" targetID="37" fromX="563" fromY="-1550" />
+      <outputs name="Leave them in a nearby grove for forest demons to take. Some may get lucky and become something good, and others, well, at least you'll give them a chance." ownerID="19" targetID="38" fromX="563" fromY="-1630" />You slay all the settlers without mercy!
+
+Their hamlet was poor and barely sustainable, but you find some resources you can take. You also find some young children hiding in one of the houses.</nodes>
+    <nodes xsi:type="NodeAdventure" ID="20" positionX="-510" positionY="-1948" width="350" height="725">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="10;20" tag="ITEM_CARGO-NUTTINCTURE" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="10;15" tag="ITEM_CARGO-FEW_WOOD" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="0;1" tag="ITEM_CARGO-ADV_ONE_PET_GOAT" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="-5" tag="TAG-LOYALTY_SLAVYAN" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Leave." ownerID="20" targetID="14" fromX="-184" fromY="-2439" />You slay all the settlers without mercy!
+
+Their hamlet was poor and barely sustainable, but you find some resources you can take.</nodes>
+    <nodes xsi:type="NodeAdventure" ID="21" positionX="83" positionY="-1975" width="350" height="725">
+      <outputs name="Keep running." ownerID="21" targetID="17" fromX="408" fromY="-2466" />The angry mob beats you badly, but they do not pursue as you run away.</nodes>
+    <nodes xsi:type="NodeAdventure" ID="22" positionX="3174" positionY="-1020" width="350" height="805">
+      <outputs name="Try to convince her that spirits can be good too and that she should give her husband a chance." ownerID="22" targetID="23" fromX="3499" fromY="-1511" />
+      <outputs name="Agree that it is never a clear thing, and offer to solve this problem for her by talking to the ghost." ownerID="22" targetID="24" fromX="3499" fromY="-1591" />'It's unnatural's what it is! And yeah, sure, we live in a place where there be demon folk round every corner, but how's I supposed to know what is evil and what is not? Best just keep away from it all.'</nodes>
+    <nodes xsi:type="NodeChallenge" ID="23" positionX="3775" positionY="-1338" width="500" height="726" challengeType="TypeMental" versusGroup="GROUP-HUMS_2P_2M_1S" challengeScale="101" challengedList="ppl">
+      <outputs name="Win" ownerID="23" targetID="34" fromX="4216" fromY="-1833" />
+      <outputs name="Lose" ownerID="23" targetID="33" fromX="4216" fromY="-1913" />
+      <outputs name="Surrender" ownerID="23" targetID="33" fromX="4216" fromY="-1993" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="24" positionX="2734" positionY="-180" width="350" height="725">
+      <outputs name="Ask him why he keeps returning here." ownerID="24" targetID="25" fromX="3059" fromY="-671" />The husband-ghost is a lean, tired, middle-aged man with a bulging head who looks frail and sickly. 
+
+He stares at you blankly, waiting for his wife to come to bed.
+</nodes>
+    <nodes xsi:type="NodeAdventure" ID="25" positionX="3234" positionY="-21" width="350" height="885">
+      <outputs name="This ghost will be hard to convince, but try to do so anyway." ownerID="25" targetID="27" fromX="3559" fromY="-512" />
+      <outputs name="Poor thing, just leave him be." ownerID="25" targetID="26" fromX="3559" fromY="-592" />
+      <outputs name="Seems unlikely to leave quietly, so kill him." ownerID="25" targetID="11" fromX="3559" fromY="-672" />'I was told by my missus to always come home to her bed else she'd hang my precious on the fence. 
+
+You seen her mean face? She do it, she do it even in my death. I ain't losin' my preciousness!'</nodes>
+    <nodes xsi:type="NodeAdventure" ID="26" positionX="3789" positionY="-535" width="350" height="725">
+      <outputs name="Leave." ownerID="26" targetID="30" fromX="4114" fromY="-1026" />You leave the ghost be and while the wife is not happy, she does not say anything.
+</nodes>
+    <nodes xsi:type="NodeChallenge" ID="27" positionX="3846" positionY="213" width="500" height="726" challengeType="TypeMental" versusGroup="GROUP-GHOST_2P_3M_4S" challengeScale="101" challengedList="ppl">
+      <outputs name="Win" ownerID="27" targetID="28" fromX="4287" fromY="-282" />
+      <outputs name="Lose" ownerID="27" targetID="16" fromX="4287" fromY="-362" />
+      <outputs name="Surrender" ownerID="27" targetID="16" fromX="4287" fromY="-442" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="28" positionX="4457" positionY="663" width="350" height="725">
+      <outputs name="Tell her she is freed from the ghost." ownerID="28" targetID="31" fromX="4783" fromY="172" />'Oh, so my, my things are not, I mean she can't, oh! Great! Finally, I am free, thank you!'
+
+The ghost disappears and the wife comes in to see your work done.</nodes>
+    <nodes xsi:type="NodeAdventure" ID="29" positionX="2954.13428" positionY="807.756348" width="350" height="805">
+      <outputs name="Tell the villagers there was no other way. The ghost was too attached to his wife, so he took her with him." ownerID="29" targetID="36" fromX="3279" fromY="316" />
+      <outputs name="Try to apologise for your error. Mistakes happen, and ghost whispering isn't a precise art." ownerID="29" targetID="36" fromX="3279" fromY="236" />The wife cries out at night. You run into the bedroom and see the ghost ripping her apart with spectral claws.
+
+Once she is gone, the spirit dissolves.</nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="30" positionX="4238" positionY="-659" width="350" height="530" allPlayersXP="3" allPlayersRP="2" linkedEventUniqueID="0" />
+    <nodes xsi:type="NodeAdventure" ID="31" positionX="5021" positionY="641" width="350" height="885">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="10;20" tag="ITEM_CARGO-BASIC_FEW_HERBS" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="10;20" tag="ITEM_CARGO-BASIC_COOKED_FEW_FOOD" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Ask for a better reward." ownerID="31" targetID="13" group="G1" fromX="5346" fromY="150" />
+      <outputs name="Ask for a better reward." ownerID="31" targetID="15" group="G1" fromX="5346" fromY="69" />
+      <outputs name="Thank her and move on." ownerID="31" targetID="14" fromX="5346" fromY="-10" />'Thank you! I don't have much, but here's some food I made, warm and tasty. Just what you need after fightin'.'</nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="32" positionX="1" positionY="-389" width="350" height="530" linkedEventUniqueID="0" />
+    <nodes xsi:type="NodeAdventure" ID="33" positionX="4141" positionY="-2213" width="350" height="805">
+      <outputs name="Just leave her be, then. Not your business." ownerID="33" targetID="17" fromX="4466" fromY="-2704" />
+      <outputs name="Offer to speak to the ghost instead." ownerID="33" targetID="24" fromX="4466" fromY="-2784" />'You stop spillin' that filth from your mouth! I ain't sharing my bed with no ghost!'</nodes>
+    <nodes xsi:type="NodeAdventure" ID="34" positionX="4569" positionY="-1422" width="350" height="885">
+      <outputs name="Ask for a better reward." ownerID="34" targetID="13" group="G1" fromX="4894" fromY="-1913" />
+      <outputs name="Ask for a better reward." ownerID="34" targetID="15" group="G1" fromX="4894" fromY="-1993" />
+      <outputs name="Thank her and move on." ownerID="34" targetID="14" fromX="4894" fromY="-2073" />'Well, he was a bugger, and drunk, but he was mine. I guess I'll give him another go. Thank you for helpin'. Here, have a hot dinner I made - I ain't got much more.''</nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="35" positionX="3045" positionY="1382" width="350" height="530" allPlayersXP="3" allPlayersRP="2" linkedEventUniqueID="0" />
+    <nodes xsi:type="NodeAdventure" ID="36" positionX="3564" positionY="991" width="350" height="725">
+      <logic>
+        <ModifierBlock>
+          <LogicFilter name="ppl">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" />
+          </LogicFilter>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="30" tag="ITEM_CARGO-BASIC_FEW_FOOD" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Take the food and leave." ownerID="36" targetID="35" fromX="3889" fromY="499" />The villagers are bewildered, but they know better than to question the words of a wise one, especially now that the problem is gone.
+
+They offer you food in thanks, and you get the feeling that asking for more may be pushing it.</nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="37" positionX="663" positionY="-1353" width="350" height="530" allPlayersXP="3" allPlayersRP="2" linkedEventUniqueID="0">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddCharacterNoDefaultCargo" parameter="1;2" tag="SUBRACE-Q_HUM_CHILD" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="1" tag="TAG-QUEST1" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+    </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="38" positionX="1144" positionY="-1725" width="350" height="530" allPlayersXP="3" allPlayersRP="2" linkedEventUniqueID="0">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="1" tag="TAG-QUEST2" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+    </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="40" positionX="1256" positionY="-2379" width="350" height="530" allPlayersXP="3" allPlayersRP="2" linkedEventUniqueID="0">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="-2" tag="TAG-LOYALTY_SLAVYAN" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+    </nodes>
+  </Adventure>
+  <Adventure name="HW Children" uniqueID="13" allowOnce="true" typeGeneric="false" typePerGroupGeneric="true" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="34" joinIsForced="false" joinType="AllAlly" joinRange="MovementArea">
+    <nodes xsi:type="NodeStarting" ID="1" positionX="-172" positionY="51" width="347" height="741" image="Event191">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="special">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="SUBRACE-Q_HUM_CHILD" />
+          </LogicFilter>
+          <LogicResultAction resultGroup="G1">
+            <scriptCallWithTag scriptName="FRA_PlayersHaveSharedTag" parameter="1" tag="TAG-QUEST2" />
+          </LogicResultAction>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="40" />
+          </LogicResultAction>
+          <LogicResultAction list="special" resultGroup="G1">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs ownerID="1" targetID="2" group="G1" fromX="152" fromY="-552" />
+      <outputs ownerID="1" targetID="3" group="G1" fromX="152" fromY="-632" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="2" positionX="258" positionY="745" width="350" height="966">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="ppl" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" />
+          </LogicFilter>
+          <LogicFilter name="child">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" />
+          </LogicFilter>
+          <LogicFilter name="chosen" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="TAG-CHOSEN" />
+          </LogicFilter>
+          <LogicFilter name="special" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="SUBRACE-Q_HUM_CHILD" />
+          </LogicFilter>
+          <LogicProcessing name="adult" makePublic="true" list1="ppl" list2="child">
+            <scriptCallWithTag scriptName="FLP_AminusB" parameter="" />
+          </LogicProcessing>
+          <LogicProcessing name="hurt" makePublic="true" list1="adult">
+            <scriptCallWithTag scriptName="FLP_GetRandomXelements" parameter="1" />
+          </LogicProcessing>
+          <LogicProcessing name="childnocho" list1="child" list2="chosen">
+            <scriptCallWithTag scriptName="FLP_AminusB" parameter="" />
+          </LogicProcessing>
+          <LogicProcessing name="1child" makePublic="true" list1="childnocho">
+            <scriptCallWithTag scriptName="FLP_GetRandomXelements" parameter="1" />
+          </LogicProcessing>
+          <LogicResultAction list="special">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" tag="TAG-QUEST1" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_SetTagToPlayer" parameter="0" tag="TAG-QUEST1" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Try to talk this kid down. Explain that you had to kill those villagers because they were weakened by demons." ownerID="2" targetID="4" fromX="583" fromY="253" />
+      <outputs name="Intimidate the child. Say that they may get lucky and kill one person, but they will surely die next!" ownerID="2" targetID="16" fromX="583" fromY="173" />
+      <outputs name="Attack the child before it can do harm!" ownerID="2" targetID="20" group="G1" fromX="583" fromY="93" />
+      <outputs name="Attack the child before it can do harm!" ownerID="2" targetID="21" group="G1" fromX="583" fromY="13" />You are woken by a scream and find that a child stands atop one of your teammates, holding a bloodied knife and about to plunge the deadly blow!
+
+It is one of the children you 'rescued' from a settlement after killing all its folk.</nodes>
+    <nodes xsi:type="NodeAdventure" ID="3" positionX="456" positionY="-658" width="350" height="885">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="ppl" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" />
+          </LogicFilter>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_SetTagToAllPlayers" parameter="0" tag="TAG-QUEST2" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Defend yourself." ownerID="3" targetID="10" fromX="781" fromY="-1149" />
+      <outputs name="Try to run away." ownerID="3" targetID="25" fromX="781" fromY="-1229" />
+      <outputs name="Try to convince the child to calm down. Say that you made a mistake and would like them to stay with you and be safe and loved!" ownerID="3" targetID="28" fromX="781" fromY="-1309" />A deformed, childlike creature creeps up on you as you sleep. 
+
+It croaks:
+
+'You, you did this to me, you monster! You killed my ma and pa and left me for them demons, and now I am like this!'
+
+It lunges at you!</nodes>
+    <nodes xsi:type="NodeChallenge" ID="4" positionX="938" positionY="1653" width="500" height="726" challengeType="TypeMental" versusConcept="true" versusGroup="GROUP-CON_M_0P_2M_0S" challengeScale="101" challengedList="nppl">
+      <logic>
+        <FilterBlock>
+          <LogicProcessing name="nppl" list1="ppl" list2="1child">
+            <scriptCallWithTag scriptName="FLP_AminusB" />
+          </LogicProcessing>
+        </FilterBlock>
+      </logic>
+      <outputs name="Win" ownerID="4" targetID="5" fromX="1379" fromY="1157" />
+      <outputs name="Lose" ownerID="4" targetID="19" fromX="1379" fromY="1077" />
+      <outputs name="Surrender" ownerID="4" targetID="19" fromX="1379" fromY="997" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="5" positionX="1575" positionY="1740" width="350" height="805">
+      <outputs name="Say that you will not do them harm as long as they behave from now on." ownerID="5" targetID="22" fromX="1900" fromY="1248" />
+      <outputs name="Kill the child. It is an enemy waiting to strike again." ownerID="5" targetID="7" fromX="1900" fromY="1168" />'I...I am sorry. I didn't mean to. Please don't hurt me like you hurt my pa...please...'</nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="6" positionX="192" positionY="2302" width="350" height="530" allPlayersXP="2" allPlayersRP="1" linkedEventUniqueID="0" />
+    <nodes xsi:type="NodeAdventureEnd" ID="7" positionX="2776" positionY="1629" width="350" height="530" allPlayersXP="3" allPlayersRP="2" linkedEventUniqueID="0">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers list="special">
+            <scriptCallWithTag scriptName="FMO_TakeCharacters" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="8" positionX="1808" positionY="749" width="350" height="805">
+      <outputs name="Grab the child by force and restrain them, but allow them to live on in the hope that they will calm down in time." ownerID="8" targetID="22" fromX="2133" fromY="257" />
+      <outputs name="Kill the child. It is an enemy waiting to strike again." ownerID="8" targetID="7" fromX="2133" fromY="177" />'You KILLED my pa, you monster!'
+
+The child stabs wildly and although they have little strength, much blood is drawn.</nodes>
+    <nodes xsi:type="NodeAdventure" ID="9" positionX="722" positionY="254" width="350" height="805">
+      <outputs name="Grab the child by force and restrain them, but allow them to live on in the hope that they will calm down in time." ownerID="9" targetID="22" fromX="1047" fromY="-237" />
+      <outputs name="Kill the child. It is an enemy waiting to strike again." ownerID="9" targetID="7" fromX="1047" fromY="-317" />'You KILLED my pa, you monster!'
+
+The child stabs wildly and although they have little strength, much blood is drawn.</nodes>
+    <nodes xsi:type="NodeChallenge" ID="10" positionX="940" positionY="-790" width="500" height="726" challengeType="TypePhysical" versusGroup="GROUP-BOG_BIES_2P_1M_1S" challengeScale="101" challengedList="ppl">
+      <outputs name="Win" ownerID="10" targetID="11" fromX="1381" fromY="-1285" />
+      <outputs name="Lose" ownerID="10" targetID="13" fromX="1381" fromY="-1365" />
+      <outputs name="Surrender" ownerID="10" targetID="34" fromX="1381" fromY="-1445" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="11" positionX="1553" positionY="-571" width="350" height="725">
+      <outputs name="Leave." ownerID="11" targetID="15" fromX="1878" fromY="-1062" />You slay the demon child before they are able to utter a curse upon you in full.</nodes>
+    <nodes xsi:type="NodeAdventure" ID="13" positionX="1607" positionY="-1320" width="350" height="725">
+      <logic>
+        <ModifierBlock>
+          <LogicProcessing name="2" list1="ppl">
+            <scriptCallWithTag scriptName="FLP_GetRandomXelements" parameter="2" />
+          </LogicProcessing>
+          <LogicModifiers list="2">
+            <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="2" tag="SKILL_PACK-CURSE_P" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Leave." ownerID="13" targetID="14" fromX="1932" fromY="-1811" />'I should leave you to the bies to devour your flesh, just like you left me.
+
+Instead, I curse you and all your kin!'
+
+The creature disappears, but a curse lingers upon your souls. </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="14" positionX="2574.31641" positionY="-1403.76636" width="350" height="530" allPlayersXP="1" allPlayersRP="1" linkedEventUniqueID="0" />
+    <nodes xsi:type="NodeAdventureEnd" ID="15" positionX="2036.13037" positionY="-629.746338" width="350" height="530" allPlayersXP="3" allPlayersRP="2" linkedEventUniqueID="0" />
+    <nodes xsi:type="NodeChallenge" ID="16" positionX="72" positionY="1592" width="500" height="726" challengeType="TypeMental" versusConcept="true" versusGroup="GROUP-CON_M_0P_2M_0S" challengeScale="101" challengedList="nnp">
+      <logic>
+        <FilterBlock>
+          <LogicProcessing name="nnp" list1="ppl" list2="1child">
+            <scriptCallWithTag scriptName="FLP_AminusB" />
+          </LogicProcessing>
+        </FilterBlock>
+      </logic>
+      <outputs name="Win" ownerID="16" targetID="5" fromX="513" fromY="1096" />
+      <outputs name="Lose" ownerID="16" targetID="18" fromX="513" fromY="1016" />
+      <outputs name="Surrender" ownerID="16" targetID="18" fromX="513" fromY="936" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="17" positionX="2933" positionY="501" width="350" height="805">
+      <logic>
+        <ModifierBlock>
+          <LogicProcessing name="hurt" list1="ppl">
+            <scriptCallWithTag scriptName="FLP_GetRandomXelements" parameter="1" />
+          </LogicProcessing>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Grab the child by force and restrain them, but allow them to live on in the hope that they will calm down in time." ownerID="17" targetID="22" fromX="3258" fromY="9" />
+      <outputs name="Kill the child. It is an enemy waiting to strike again." ownerID="17" targetID="7" fromX="3258" fromY="-70" />'You KILLED my pa, you monster!'
+
+The child stabs wildly, driven even more ferocious by your intimidation attempts.</nodes>
+    <nodes xsi:type="NodeDealDamage" ID="18" positionX="2389" positionY="521" width="460" height="459" challengeTypeDamage="TypePhysical" minDamage="70" maxDamage="100" useCountInPercent="true" targetGroup="hurt">
+      <outputs ownerID="18" targetID="17" fromX="2818" fromY="132" />
+    </nodes>
+    <nodes xsi:type="NodeDealDamage" ID="19" positionX="2192" positionY="-15" width="460" height="459" challengeTypeDamage="TypePhysical" minDamage="50" maxDamage="70" useCountInPercent="true" targetGroup="hurt">
+      <outputs ownerID="19" targetID="8" fromX="2621" fromY="-403" />
+    </nodes>
+    <nodes xsi:type="NodeDealDamage" ID="20" positionX="1363" positionY="-97" width="460" height="459" challengeTypeDamage="TypePhysical" minDamage="70" maxDamage="90" useCountInPercent="true" targetGroup="hurt">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="50" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs ownerID="20" targetID="9" fromX="1792" fromY="-485" />
+    </nodes>
+    <nodes xsi:type="NodeDealDamage" ID="21" positionX="1236" positionY="429" width="460" height="459" challengeTypeDamage="TypePhysical" minDamage="50" maxDamage="70" useCountInPercent="true" targetGroup="hurt">
+      <outputs ownerID="21" targetID="8" fromX="1665" fromY="40" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="22" positionX="-1061" positionY="2148" width="350" height="805">
+      <outputs name="Try to watch out for them in the future." ownerID="22" targetID="23" group="G1" fromX="-735" fromY="1656" />
+      <outputs name="Try to watch out for them in the future." ownerID="22" targetID="24" group="G1" fromX="-735" fromY="1576" />You let the wronged child live, even after they attacked you viciously and proclaimed revenge upon your kin.</nodes>
+    <nodes xsi:type="NodeAdventure" ID="23" positionX="-422" positionY="2578" width="350" height="725">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="55" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="0;1" tag="ITEM_CARGO-STRONG_ONE_PET_GOAT" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="20;40" tag="ITEM_CARGO-FEW_FUR_LEATHER" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="1;2" tag="ITEM_CARGO-ADV_FEW_RANDOM_ITEMS" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="5;10" tag="ITEM_CARGO-FEW_GOLD" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Great. " ownerID="23" targetID="6" fromX="-96" fromY="2086" />Your commitment to care for the youth made them forgive your past, and they have truly become your own. 
+
+One day, they bring you a treasure chest, proclaiming that it was their family's secret, but now you are their family so you should have it.</nodes>
+    <nodes xsi:type="NodeAdventure" ID="24" positionX="-475" positionY="1481" width="350" height="725">
+      <logic>
+        <ModifierBlock>
+          <LogicFilter name="stuff">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsItems" />
+          </LogicFilter>
+          <LogicProcessing name="unstuff" list1="stuff">
+            <scriptCallWithTag scriptName="FLP_FilterAnyUnEquippedItems" />
+          </LogicProcessing>
+          <LogicProcessing name="60" list1="unstuff">
+            <scriptCallWithTag scriptName="FLP_GetRandomXPercentElements" parameter="40" />
+          </LogicProcessing>
+          <LogicModifiers list="special">
+            <scriptCallWithTag scriptName="FMO_TakeCharacters" parameter="" />
+          </LogicModifiers>
+          <LogicModifiers list="60">
+            <scriptCallWithTag scriptName="FMO_TakeItems" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Damn." ownerID="24" targetID="6" fromX="-149" fromY="989" />Despite your efforts to keep watch, one day you find you were robbed and the child is gone!</nodes>
+    <nodes xsi:type="NodeDealDamage" ID="25" positionX="-99" positionY="-966" width="460" height="459" challengeTypeDamage="TypePhysical" minDamage="50" maxDamage="70" useCountInPercent="true" targetGroup="ppl">
+      <outputs ownerID="25" targetID="27" fromX="330" fromY="-1354" />
+    </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="26" positionX="-1066" positionY="-1006" width="350" height="530" allPlayersXP="2" allPlayersRP="1" linkedEventUniqueID="0" />
+    <nodes xsi:type="NodeAdventure" ID="27" positionX="-605" positionY="-875" width="350" height="725">
+      <outputs name="Leave." ownerID="27" targetID="26" fromX="-279" fromY="-1366" />You run away, but the creature spits burning mud at you, leaving you scarred.</nodes>
+    <nodes xsi:type="NodeChallenge" ID="28" positionX="-104" positionY="-1610" width="500" height="807" challengeType="TypeMental" versusGroup="GROUP-BOG_BIES_2P_1M_1S" challengeScale="101" challengedList="ppl">
+      <outputs name="Win" ownerID="28" targetID="29" group="G1" fromX="337" fromY="-2105" />
+      <outputs name="Lose" ownerID="28" targetID="32" fromX="337" fromY="-2185" />
+      <outputs name="Surrender" ownerID="28" targetID="32" fromX="337" fromY="-2265" />
+      <outputs name="Win" ownerID="28" targetID="31" group="G1" fromX="337" fromY="-2346" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="29" positionX="488" positionY="-1625" width="350" height="725">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="30" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddCharacterNoDefaultCargo" parameter="1" tag="SUBRACE-BOG_BIES" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Welcome them." ownerID="29" targetID="30" fromX="813" fromY="-2116" />The creature stops and stares at you, its eyes sad and lonely. It nods, more to itself than you, and then it joins you.</nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="30" positionX="915" positionY="-1619" width="350" height="530" allPlayersXP="2" allPlayersRP="1" linkedEventUniqueID="0" />
+    <nodes xsi:type="NodeAdventure" ID="31" positionX="917" positionY="-2097" width="350" height="725">
+      <outputs name="Leave." ownerID="31" targetID="30" fromX="1242" fromY="-2588" />The creature stops and stares at you, its eyes sad and lonely. It nods, more to itself than you. It does not attack, but neither does it join you. It only growls:
+
+'You slaughtered them all, and now you talk of love? I am a better being than this. I leave you to your fate, monster.'
+
+It walks off into the shadows.</nodes>
+    <nodes xsi:type="NodeAdventure" ID="32" positionX="209" positionY="-2529" width="350" height="725">
+      <logic>
+        <ModifierBlock>
+          <LogicProcessing name="2" list1="ppl">
+            <scriptCallWithTag scriptName="FLP_GetRandomXelements" parameter="2" />
+          </LogicProcessing>
+          <LogicModifiers list="2">
+            <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="2" tag="SKILL_PACK-CURSE_P" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Leave." ownerID="32" targetID="33" fromX="534" fromY="-3020" />The creature stops and stares at you, its eyes sad and lonely. It nods, more to itself than you. It does not attack, but neither does it join you. It only growls:
+
+'You slaughtered them all, and now you talk of love? I am a better being than this. I leave you to your fate, monster.'
+
+It walks off into the shadows, and you feel a heavy curse upon you.</nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="33" positionX="643" positionY="-2936" width="350" height="530" allPlayersXP="1" allPlayersRP="1" linkedEventUniqueID="0" />
+    <nodes xsi:type="NodeAdventure" ID="34" positionX="3027" positionY="-1146" width="350" height="725">
+      <logic>
+        <ModifierBlock>
+          <LogicProcessing name="2" list1="ppl">
+            <scriptCallWithTag scriptName="FLP_GetRandomXelements" parameter="2" />
+          </LogicProcessing>
+          <LogicModifiers list="2">
+            <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="2" tag="SKILL_PACK-CURSE_P" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Leave." ownerID="34" targetID="14" fromX="3352" fromY="-1637" />'Surrender! Surrender, like I did as a child. I should leave you to the bies to devour your flesh, just like you left me.
+
+Instead, I curse you and all your kin!'
+
+The creature disappears, but a curse lingers upon your souls. </nodes>
+  </Adventure>
+  <Adventure name="Goblin Killer" uniqueID="14" allowOnce="true" typeGeneric="false" typePerGroupGeneric="false" typeInterrupt="false" typeExpedition="true" typeVillage="false" difficulty="8" nodeIdMax="33" eventTag="TAG-LOG15" joinIsForced="false" joinType="AllAlly" joinRange="MovementArea">
+    <nodes xsi:type="NodeStarting" ID="1" positionX="-384" positionY="718" width="347" height="661" image="Event060">
+      <outputs ownerID="1" targetID="2" fromX="-59" fromY="114" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="2" positionX="140" positionY="293" width="350" height="805">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="ppl" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" />
+          </LogicFilter>
+          <LogicFilter name="hum" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="" tag="RACE-HUMAN" />
+          </LogicFilter>
+          <LogicFilter name="elf" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" tag="RACE-ELF" />
+          </LogicFilter>
+          <LogicFilter name="wis" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="12" tag="TAG-PERCEPTION" />
+          </LogicFilter>
+          <LogicFilter name="int" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="12" tag="TAG-INTELLIGENCE" />
+          </LogicFilter>
+          <LogicFilter name="luck" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="12" tag="TAG-LUCK" />
+          </LogicFilter>
+          <LogicFilter name="gob" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="" tag="RACE-GOBLIN" />
+          </LogicFilter>
+          <LogicProcessing name="humanlike" makePublic="true" list1="hum" list2="elf">
+            <scriptCallWithTag scriptName="FLP_AorB" />
+          </LogicProcessing>
+        </FilterBlock>
+      </logic>
+      <outputs name="Tell them to stop and state what they want." ownerID="2" targetID="4" fromX="465" fromY="-198" />
+      <outputs name="Attack!" ownerID="2" targetID="3" fromX="465" fromY="-278" />A group of goblins runs in your direction. They look scared, and it seems they are mostly elders or young ones.
+
+Still, a few are armed.</nodes>
+    <nodes xsi:type="NodeChallenge" ID="3" positionX="-1583" positionY="124" width="500" height="726" challengeType="TypePhysical" versusGroup="GROUP-Q_GOBS_6P_3M_2S" challengeScale="101" challengedList="ppl">
+      <outputs name="Win" ownerID="3" targetID="28" fromX="-1141" fromY="-371" />
+      <outputs name="Lose" ownerID="3" targetID="30" fromX="-1141" fromY="-451" />
+      <outputs name="Surrender" ownerID="3" targetID="30" fromX="-1141" fromY="-531" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="4" positionX="789" positionY="0" width="350" height="885">
+      <outputs name="Ask what he is talking about." ownerID="4" targetID="6" fromX="1114" fromY="-491" />
+      <outputs name="Shrug and let them pass." ownerID="4" targetID="8" fromX="1114" fromY="-571" />
+      <outputs name="Ask for the short version of what is going on. [Skip story]" ownerID="4" targetID="27" fromX="1114" fromY="-651" />They comply, but they keep looking behind them nervously. One of them speaks:
+
+'You, you will not kill us, right? We only want to go, we find a new place, we swear, just let us go!'</nodes>
+    <nodes xsi:type="NodeAdventure" ID="5" positionX="1340" positionY="1116" width="350" height="725">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction list="humanlike">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Who?" ownerID="5" targetID="7" fromX="1665" fromY="624" />'Oh, yes. Sorry. You just look a little like them. I think it's an elf, but may be a thin human...'</nodes>
+    <nodes xsi:type="NodeProduceDrop" ID="6" positionX="692" positionY="720" width="460" height="509">
+      <outputs ownerID="6" targetID="5" group="G1" fromX="1122" fromY="361" />
+      <outputs ownerID="6" targetID="11" group="G1" fromX="1122" fromY="281" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="7" positionX="1861" positionY="1797" width="350" height="885">
+      <outputs name="Do they know why this goblin killer attacked them?" ownerID="7" targetID="9" fromX="2186" fromY="1305" />
+      <outputs name="Say that this seems like none of your business, but if they pay, you could deal with the killer." ownerID="7" targetID="12" fromX="2186" fromY="1225" />
+      <outputs name="Tell them it seems dangerous, so they'd better keep running and leave." ownerID="7" targetID="8" fromX="2186" fromY="1145" />'Goblin killer man! I kid you not, it isn't a mere name. That dude, or lady, they come and they kill and kill and kill. 
+
+They murdered our village whole and then went for the little ones, spouting that they will only grow to become like any of us.'</nodes>
+    <nodes xsi:type="NodeAdventure" ID="8" positionX="1945" positionY="-417" width="350" height="885">
+      <outputs name="Agree to help them stop this threat. Perhaps the goblin killer will listen to reason -- if not, then the blade." ownerID="8" targetID="20" fromX="2270" fromY="-908" />
+      <outputs name="Say that this seems like none of your business, but if they pay, you could deal with the killer." ownerID="8" targetID="12" fromX="2270" fromY="-988" />
+      <outputs name="No, leave." ownerID="8" targetID="32" fromX="2270" fromY="-1068" />'Oh, yes, thank you. But maybe you help us? Maybe kill this psycho? Think of our children!'</nodes>
+    <nodes xsi:type="NodeAdventure" ID="9" positionX="2591" positionY="1805" width="350" height="885">
+      <outputs name="Are orcs known for raping after a raid?" ownerID="9" targetID="10" fromX="2916" fromY="1313" />
+      <outputs name="So this goblin killer is hunting them now?" ownerID="9" targetID="13" fromX="2916" fromY="1233" />
+      <outputs name="Say that this seems like none of your business, but if they pay, you could deal with the killer." ownerID="9" targetID="12" fromX="2916" fromY="1153" />'Well, it is really weird, they keep saying we animals, we destroyed their farm and raped all the women. I mean, sure, we like a bit of big-folk lovin' but we not raid and rape! They must take us for orcs or something.'</nodes>
+    <nodes xsi:type="NodeAdventure" ID="10" positionX="3172" positionY="1107" width="350" height="805">
+      <outputs name="So this goblin killer is hunting them now?" ownerID="10" targetID="13" fromX="3497" fromY="615" />
+      <outputs name="Say that this seems like none of your business, but if they pay, you could deal with the killer." ownerID="10" targetID="12" fromX="3497" fromY="535" />'Humans, orcs, sure. Dwarves and elves maybe less, and listen, I'm not sayin' it never happens with our lot. We have bad apples, just like you do. But we not do it all the time, I swear!'</nodes>
+    <nodes xsi:type="NodeAdventure" ID="11" positionX="2510" positionY="3" width="350" height="725">
+      <outputs name="Who?" ownerID="11" targetID="7" fromX="2835" fromY="-488" />'Oh, yes. Sorry. You don't even look like them at all. I think it's an elf, but may be a thin human?.?.?.'</nodes>
+    <nodes xsi:type="NodeAdventure" ID="12" positionX="3525" positionY="-164" width="350" height="725">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="8;15" tag="ITEM_CARGO-FEW_ADV_METAL" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Nod and leave to find this goblin killer." ownerID="12" targetID="18" fromX="3850" fromY="-655" />'You, you will? Thanking you for sure! Yes, we pay, we pay what we can. 
+
+A bit now, a bit when you bring their head to us. Oh, be careful, they come with others sometimes.'</nodes>
+    <nodes xsi:type="NodeAdventure" ID="13" positionX="3666" positionY="1241" width="350" height="885">
+      <outputs name="[Perception, intelligence, goblin or luck]Try to determine if he is telling the truth." ownerID="13" targetID="14" fromX="3991" fromY="749" />
+      <outputs name="Agree to help them stop this threat. Perhaps the goblin killer will listen to reason -- if not, then the blade." ownerID="13" targetID="20" fromX="3991" fromY="669" />
+      <outputs name="Say that this seems like none of your business, but if they pay, you could deal with the killer." ownerID="13" targetID="12" fromX="3991" fromY="589" />'Yes, yes, and he comes with friends often, they very bad. I do not know who harmed their family, but it wasn't my kin, I swear!'</nodes>
+    <nodes xsi:type="NodeChallenge" ID="14" positionX="4069" positionY="1657" width="500" height="726" challengeType="TypeMental" versusConcept="true" versusGroup="GROUP-CON_M_0P_5M_0S" challengeScale="101" challengedList="ppl">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction list="wis" resultGroup="G1">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+          <LogicResultAction list="int" resultGroup="G1">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+          <LogicResultAction list="luck" resultGroup="G1">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+          <LogicResultAction list="gob" resultGroup="G1">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Win" ownerID="14" targetID="15" fromX="4510" fromY="1161" />
+      <outputs name="Lose" ownerID="14" targetID="24" fromX="4510" fromY="1081" />
+      <outputs name="Surrender" ownerID="14" targetID="24" fromX="4510" fromY="1001" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="15" positionX="4678" positionY="1531" width="350" height="805">
+      <logic>
+        <ModifierBlock>
+          <LogicProcessing name="1" list1="ppl">
+            <scriptCallWithTag scriptName="FLP_GetRandomXelements" parameter="1" />
+          </LogicProcessing>
+          <LogicModifiers list="1">
+            <scriptCallWithTag scriptName="FMO_AddTags" parameter="2" tag="TAG-INTELLIGENCE" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Confront him and say he has one chance to tell you the truth!" ownerID="15" targetID="16" fromX="5003" fromY="1039" />
+      <outputs name="Attack the lying scum!" ownerID="15" targetID="3" fromX="5003" fromY="959" />You see the goblin sweating and averting eye contact with you. Others look equally uncomfortable. He is lying for sure.</nodes>
+    <nodes xsi:type="NodeAdventure" ID="16" positionX="5107" positionY="1621" width="350" height="1046">
+      <outputs name="Tell them you will try to speak to this goblin killer, but you cannot promise anything, since they are guilty in part." ownerID="16" targetID="21" fromX="5432" fromY="1129" />
+      <outputs name="Agree that the whole village should not pay for the actions of some, especially children. Say that you will speak to this goblin killer." ownerID="16" targetID="21" fromX="5432" fromY="1049" />
+      <outputs name="Say that whatever comes their way is well deserved. Leave." ownerID="16" targetID="22" fromX="5432" fromY="969" />
+      <outputs name="Tell them you will take their children to safety, but the rest should stand and pay the price for their crimes." ownerID="16" targetID="17" fromX="5432" fromY="889" />
+      <outputs name="They are guilty. Attack!" ownerID="16" targetID="3" fromX="5432" fromY="809" />'Oh, fine...so it was our boys that did it. We think. I mean, our village was doing bad, crops died, spirits did not help. 
+
+Those boys, they say they go find us stuff. And they did. We did not ask where. But we did know. Maybe not all of it, but how else would they get so much? The raping, though, we really didn't know that. Those boys, they dead now, proper dead. We did not go, we did not kill. Our children, they good, please...'</nodes>
+    <nodes xsi:type="NodeAdventure" ID="17" positionX="5563" positionY="1069" width="350" height="805">
+      <outputs name="Let them run." ownerID="17" targetID="22" fromX="5888" fromY="577" />
+      <outputs name="Attack!" ownerID="17" targetID="3" fromX="5888" fromY="497" />'Take our children? Never! We will fight and we may die, but we will do it together. If you see us as guilty, then at least let us be. We will try to run.'</nodes>
+    <nodes xsi:type="NodeSpawnOnMap" ID="18" positionX="5214" positionY="-654" width="480" height="503" radius="3" groupID="GROUP-Q_SLAYER_8P_7M_6S" destroyOwner="false" linkedEventUniqueID="16">
+      <outputs ownerID="18" targetID="19" fromX="5662" fromY="-1086" />
+    </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="19" positionX="4669" positionY="-747" width="350" height="530" allPlayersXP="2" allPlayersRP="1" logBookName="QUEST_MISC3_GOBKILL" logBookDescription="QUEST_MISC3_GOBKILL2_DES" linkedEventUniqueID="0" />
+    <nodes xsi:type="NodeAdventure" ID="20" positionX="4351" positionY="335" width="350" height="725">
+      <outputs name="Nod and leave to find this goblin killer." ownerID="20" targetID="18" fromX="4676" fromY="-156" />'You, you will? Thanking you for sure! Oh, be careful, they come with others sometimes.'</nodes>
+    <nodes xsi:type="NodeAdventure" ID="21" positionX="5686" positionY="1833" width="350" height="725">
+      <outputs name="Nod and leave to find this goblin killer." ownerID="21" targetID="18" fromX="6011" fromY="1341" />'You, you will? Thanking you for sure! Oh, be careful, they come with others sometimes.'</nodes>
+    <nodes xsi:type="NodeAdventure" ID="22" positionX="6074" positionY="919" width="350" height="725">
+      <outputs name="Leave." ownerID="22" targetID="23" fromX="6399" fromY="427" />The goblins depart as quickly as they can. Some look at you with gratitude for sparing their lives, some with fear, and others with anger and pain. One of the children waves goodbye and throws a flower as a gift.</nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="23" positionX="6525" positionY="884" width="350" height="530" allPlayersXP="6" allPlayersRP="3" logBookName="QUEST_MISC3_GOBKILL" logBookDescription="QUEST_MISC3_GOBKILL3_DES" linkedEventUniqueID="0" endOfQuest="true">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="-5" tag="TAG-LOYALTY_SPIRIT_TALKERS" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="5" tag="TAG-LOYALTY_SLAVYAN" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="24" positionX="5081" positionY="510" width="350" height="725">
+      <outputs name="Ask them again for the truth." ownerID="24" targetID="25" fromX="5406" fromY="18" />The goblins seem nervous. Perhaps they aren't telling you everything.</nodes>
+    <nodes xsi:type="NodeAdventure" ID="25" positionX="2754" positionY="-1053" width="350" height="885">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="1" tag="TAG-QUEST49" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Say that it all seems fishy and they should deal with it themselves. Leave." ownerID="25" targetID="8" fromX="3079" fromY="-1544" />
+      <outputs name="Agree to help them stop this threat. Perhaps the goblin killer will listen to reason -- if not, then the blade." ownerID="25" targetID="20" fromX="3079" fromY="-1624" />
+      <outputs name="Say that this seems like none of your business, but if they pay, you could deal with the killer." ownerID="25" targetID="12" fromX="3079" fromY="-1704" />'Oh, yes. Well, we did know the goblins who may have done wrong to that killer. Perhaps that is why he targets us. But he is a monster, we did nothing to him!'</nodes>
+    <nodes xsi:type="NodeAdventure" ID="27" positionX="1337" positionY="-656" width="350" height="966">
+      <outputs name="Agree to help them stop this threat. Perhaps the goblin killer will listen to reason -- if not, then the blade." ownerID="27" targetID="20" fromX="1662" fromY="-1147" />
+      <outputs name="Say that this seems like none of your business, but if they pay, you could deal with the killer." ownerID="27" targetID="12" fromX="1662" fromY="-1227" />
+      <outputs name="No, leave." ownerID="27" targetID="32" fromX="1662" fromY="-1307" />
+      <outputs name="[Perception, intelligence, goblin or luck]Try to determine if he is telling the truth." ownerID="27" targetID="14" fromX="1662" fromY="-1387" />'A goblin killer destroyed our village and is hunting us. But maybe you help us? Maybe kill this psycho? Think of our children!'</nodes>
+    <nodes xsi:type="NodeAdventure" ID="28" positionX="-854" positionY="-160" width="350" height="725">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="0;1" tag="ITEM_CARGO-RARE_ONE_WAND" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="20;30" tag="ITEM_CARGO-GOBLINWINE" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="5;15" tag="ITEM_CARGO-FEW_ADV_GEMSTONE" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="1" tag="TAG-QUEST65" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="-8" tag="TAG-LOYALTY_SPIRIT_TALKERS" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Leave." ownerID="28" targetID="33" fromX="-528" fromY="-651" />You kill the goblins and gather the loot.</nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="29" positionX="439" positionY="-989" width="350" height="530" allPlayersXP="6" allPlayersRP="3" logBookName="QUEST_MISC3_GOBKILL" logBookDescription="QUEST_MISC3_GOBKILL5_DES" linkedEventUniqueID="0" />
+    <nodes xsi:type="NodeAdventure" ID="30" positionX="-1487" positionY="-1057" width="350" height="725">
+      <logic>
+        <ModifierBlock>
+          <LogicFilter name="stuff">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsItems" />
+          </LogicFilter>
+          <LogicProcessing name="unstuff" list1="stuff">
+            <scriptCallWithTag scriptName="FLP_FilterAnyUnEquippedItems" />
+          </LogicProcessing>
+          <LogicProcessing name="30" list1="unstuff">
+            <scriptCallWithTag scriptName="FLP_GetRandomXPercentElements" parameter="30" />
+          </LogicProcessing>
+          <LogicModifiers list="30">
+            <scriptCallWithTag scriptName="FMO_TakeItems" parameter="goblintake" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Leave." ownerID="30" targetID="32" fromX="-1161" fromY="-1548" />'Oi, you same as that psychopath. You go die, we run.'
+
+The goblins rush off and leave you on the ground.</nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="31" positionX="1227" positionY="-1926" width="350" height="530" allPlayersXP="2" allPlayersRP="1" logBookName="QUEST_MISC3_GOBKILL" logBookDescription="QUEST_MISC3_GOBKILL4_DES" linkedEventUniqueID="0" />
+    <nodes xsi:type="NodeSpawnOnMap" ID="32" positionX="598" positionY="-1783" width="480" height="503" radius="4" groupID="GROUP-Q_SLAYER_8P_7M_6S" destroyOwner="false" linkedEventUniqueID="15">
+      <outputs ownerID="32" targetID="31" fromX="1046" fromY="-2215" />
+    </nodes>
+    <nodes xsi:type="NodeSpawnOnMap" ID="33" positionX="-322" positionY="-715" width="480" height="503" radius="4" groupID="GROUP-Q_SLAYER_8P_7M_6S" destroyOwner="false" linkedEventUniqueID="15">
+      <outputs ownerID="33" targetID="29" fromX="126" fromY="-1147" />
+    </nodes>
+  </Adventure>
+  <Adventure name="Goblin Killer Spwn" uniqueID="15" typeGeneric="false" typePerGroupGeneric="false" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="41" eventTag="TAG-LOG15" joinIsForced="false" joinType="AllAlly" joinRange="MovementArea">
+    <nodes xsi:type="NodeStarting" ID="1" positionX="-449" positionY="272" width="347" height="741" image="Event231">
+      <outputs ownerID="1" targetID="3" group="G1" fromX="-124" fromY="-331" />
+      <outputs ownerID="1" targetID="2" group="G1" fromX="-124" fromY="-411" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="2" positionX="473" positionY="-516" width="350" height="885">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="ppl" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" />
+          </LogicFilter>
+          <LogicFilter name="gob" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" tag="RACE-GOBLIN" />
+          </LogicFilter>
+        </FilterBlock>
+      </logic>
+      <outputs name="Ask them what they want." ownerID="2" targetID="18" fromX="798" fromY="-1007" />
+      <outputs name="Attack!" ownerID="2" targetID="4" fromX="798" fromY="-1087" />
+      <outputs name="Get off their path and leave." ownerID="2" targetID="17" fromX="798" fromY="-1167" />You come across an armed group of fighters. There is a human wearing a helmet, a tall, hooded orc with a bone wand, a zerca, an elf, and a dwarf.
+The human has goblin heads on his belt, so this must be the crazed goblin killer you were told about.
+
+They look you up and down but do not speak. </nodes>
+    <nodes xsi:type="NodeAdventure" ID="3" positionX="133" positionY="614" width="350" height="885">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="gob" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" tag="RACE-GOBLIN" />
+          </LogicFilter>
+          <LogicFilter name="ppl" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" />
+          </LogicFilter>
+          <LogicResultAction list="gob">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Fight!" ownerID="3" targetID="4" fromX="458" fromY="122" />
+      <outputs name="Stand between them and your goblin friend and tell them to calm themselves -- there is no need for violence here. " ownerID="3" targetID="7" fromX="458" fromY="42" />
+      <outputs name="Run away." ownerID="3" targetID="17" fromX="458" fromY="-37" />You come across an armed group of fighters. There is a human wearing a helmet, a tall, hooded orc with a bone wand, a zerca, an elf, and a dwarf.
+The human has goblin heads on his belt, so this must be the crazed goblin killer you were told about.
+
+They look at you and spit: 'Goblin scum, come to us? Good.'
+
+They ready themselves for an attack.</nodes>
+    <nodes xsi:type="NodeChallenge" ID="4" positionX="746" positionY="1008" width="500" height="726" challengeType="TypePhysical" versusGroup="GROUP-Q_SLAYER_8P_7M_6S" challengeScale="101" challengedList="ppl">
+      <outputs name="Win" ownerID="4" targetID="5" fromX="1187" fromY="512" />
+      <outputs name="Lose" ownerID="4" targetID="6" fromX="1187" fromY="432" />
+      <outputs name="Surrender" ownerID="4" targetID="6" fromX="1187" fromY="352" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="5" positionX="1341" positionY="1549" width="350" height="725">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="8" tag="TAG-LOYALTY_SPIRIT_TALKERS" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="20;40" tag="ITEM_CARGO-BASIC_FEW_HERBS" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="20;40" tag="ITEM_CARGO-GOBLINWINE" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="0;1" tag="ITEM_CARGO-RARE_ONE_TOOL" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="0;1" tag="ITEM_CARGO-RARE_ONE_PET_GOAT" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="20%;0;1" tag="ITEM_CARGO-RARE_ONE_SWORD_1H" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="1" tag="ITEM_CARGO-STRONG_ONE_PET_CHICKEN" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Leave." ownerID="5" targetID="19" fromX="1666" fromY="1057" />You kill the notorious goblin slayer, and for a time, you receive letters of thanks from various goblin survivors. Some even send gifts.</nodes>
+    <nodes xsi:type="NodeAdventure" ID="6" positionX="2013" positionY="1195" width="350" height="725">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers list="gob">
+            <scriptCallWithTag scriptName="FMO_TakeCharacters" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Run away." ownerID="6" targetID="21" fromX="2338" fromY="703" />You are defeated, and any greenskins in your party do not make it out alive.</nodes>
+    <nodes xsi:type="NodeChallenge" ID="7" positionX="1325" positionY="316" width="500" height="726" challengeType="TypeMental" versusGroup="GROUP-Q_SLAYER_8P_7M_6S" challengeScale="101" challengedList="ppl">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="int">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="14" tag="TAG-INTELLIGENCE" />
+          </LogicFilter>
+          <LogicProcessing name="nogob" list1="ppl" list2="gob">
+            <scriptCallWithTag scriptName="FLP_AminusB" />
+          </LogicProcessing>
+          <LogicResultAction list="nogob">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+          <LogicResultAction list="int">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Win" ownerID="7" targetID="9" fromX="1766" fromY="-179" />
+      <outputs name="Lose" ownerID="7" targetID="16" fromX="1766" fromY="-259" />
+      <outputs name="Surrender" ownerID="7" targetID="16" fromX="1766" fromY="-339" />
+    </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="8" positionX="-544" positionY="-710" width="350" height="530" allPlayersXP="1" logBookName="QUEST_MISC3_GOBKILLSPWNONE" logBookDescription="QUEST_MISC3_GOBKILLSPWNONE_DES" linkedEventUniqueID="0" endOfQuest="true" />
+    <nodes xsi:type="NodeAdventure" ID="9" positionX="1979" positionY="379" width="350" height="885">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers list="ppl">
+            <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="3" tag="SKILL_PACK-BLESS_M" />
+          </LogicModifiers>
+          <LogicModifiers list="gob">
+            <scriptCallWithTag scriptName="FMO_AddTags" parameter="2" tag="TAG-INTELLIGENCE" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Deny that you saw anything. " ownerID="9" targetID="10" fromX="2304" fromY="-112" />
+      <outputs name="Say that you did see them, but you did not want to get involved, so you let them run." ownerID="9" targetID="29" fromX="2304" fromY="-192" />
+      <outputs name="Say that you did see them and you killed them." ownerID="9" targetID="23" fromX="2304" fromY="-272" />'Speak quickly, goblin lover. Did you see a band of the green scum running this way?'</nodes>
+    <nodes xsi:type="NodeProduceDrop" ID="10" positionX="2483" positionY="314" width="460" height="509">
+      <outputs ownerID="10" targetID="11" group="G1" fromX="2913" fromY="-44" />
+      <outputs ownerID="10" targetID="32" group="G1" fromX="2913" fromY="-124" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="11" positionX="3357" positionY="778" width="350" height="885">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="40" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="[Rat]!!!" ownerID="11" targetID="12" fromX="3682" fromY="286" />
+      <outputs name="Nod and leave." ownerID="11" targetID="13" fromX="3682" fromY="206" />
+      <outputs name="Ask why they hate goblins so. You've never known them to be any more or less violent than humans." ownerID="11" targetID="15" fromX="3682" fromY="126" />'Fine, we will leave you be. But you are making a mistake with the goblin. The greenskins will always trick you. No better than vermin.'</nodes>
+    <nodes xsi:type="NodeAdventure" ID="12" positionX="3830" positionY="1412" width="350" height="805">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="rat">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" tag="SUBRACE-RAT" />
+          </LogicFilter>
+          <LogicResultAction list="rat">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Nod and leave." ownerID="12" targetID="13" fromX="4155" fromY="920" />
+      <outputs name="Ask why they hate goblins so. You've never known them to be any more or less violent than humans." ownerID="12" targetID="15" fromX="4155" fromY="840" />The warrior does not answer, only looks away, searching for goblin tracks. The priest speaks instead:
+
+'Bah, you clearly have very little sense when it comes to friends. No matter. I need to catch the ones that got away. Begone from our path.'</nodes>
+    <nodes xsi:type="NodeSpawnOnMap" ID="13" positionX="4527" positionY="903" width="480" height="503" radius="0" destroyOwner="true" linkedEventUniqueID="0">
+      <outputs ownerID="13" targetID="14" fromX="4975" fromY="470" />
+    </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="14" positionX="5190" positionY="773" width="350" height="530" allPlayersXP="6" allPlayersRP="3" logBookName="QUEST_MISC3_GOBKILLSPWNONE" logBookDescription="QUEST_MISC3_GOBKILLSPWNONE3_DES" linkedEventUniqueID="0" endOfQuest="true" />
+    <nodes xsi:type="NodeAdventure" ID="15" positionX="3785" positionY="152" width="350" height="885">
+      <outputs name="Say that this is none of your concern and depart. " ownerID="15" targetID="13" fromX="4110" fromY="-339" />
+      <outputs name="[Hunter]Offer to tell them which way the goblins went." ownerID="15" targetID="37" fromX="4110" fromY="-419" />
+      <outputs name="Tell them you understand grief, but murdering every goblin they meet seems extreme." ownerID="15" targetID="39" fromX="4110" fromY="-499" />The man in the helmet does not answer, but his elven companion speaks:
+
+'As a mere child, our friend witnessed their home burned and pillaged, and a sister raped. Goblins were the culprits. Ever since, they have become an enemy. We trust our friend, so we give aid. Perhaps there is truth in their words. Goblins pretend to be weak and nice, but they always plot, scheme, meddle with evil spirits, and seek to spread darkness.'</nodes>
+    <nodes xsi:type="NodeAdventure" ID="16" positionX="1365" positionY="-478" width="350" height="805">
+      <outputs name="Attack!" ownerID="16" targetID="4" fromX="1690" fromY="-969" />
+      <outputs name="Run away, accepting that you will likely be hit by the elven archer as you escape." ownerID="16" targetID="33" fromX="1690" fromY="-1049" />The band does not listen. One of them shouts:
+
+'Goblins must die!'
+
+They begin to move, trying to circle you.</nodes>
+    <nodes xsi:type="NodeSpawnOnMap" ID="17" positionX="-123" positionY="-756" width="480" height="503" radius="0" destroyOwner="true" linkedEventUniqueID="0">
+      <outputs ownerID="17" targetID="8" fromX="325" fromY="-1188" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="18" positionX="965" positionY="-581" width="350" height="885">
+      <outputs name="Deny that you saw anything. " ownerID="18" targetID="10" fromX="1290" fromY="-1072" />
+      <outputs name="Say that you did see them, but you did not want to get involved, so you let them run." ownerID="18" targetID="31" fromX="1290" fromY="-1152" />
+      <outputs name="Say that you did see them and you killed them." ownerID="18" targetID="23" fromX="1290" fromY="-1232" />'Speak quickly. Did you see a band of the green scum running this way?'</nodes>
+    <nodes xsi:type="NodeSpawnOnMap" ID="19" positionX="1994" positionY="1751" width="480" height="503" radius="0" destroyOwner="true" linkedEventUniqueID="0">
+      <outputs ownerID="19" targetID="20" fromX="2442" fromY="1318" />
+    </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="20" positionX="2577" positionY="1778" width="350" height="530" allPlayersXP="7" allPlayersRP="3" logBookName="QUEST_MISC3_GOBKILLSPWNONE" logBookDescription="QUEST_MISC3_GOBKILLSPWNONE2_DES" linkedEventUniqueID="0" endOfQuest="true" />
+    <nodes xsi:type="NodeSpawnOnMap" ID="21" positionX="2421" positionY="1175" width="480" height="503" radius="0" destroyOwner="true" linkedEventUniqueID="0">
+      <outputs ownerID="21" targetID="22" fromX="2869" fromY="742" />
+    </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="22" positionX="2942" positionY="1235" width="350" height="530" allPlayersXP="1" allPlayersRP="1" logBookName="QUEST_MISC3_GOBKILLSPWNONE" logBookDescription="QUEST_MISC3_GOBKILLSPWNONE4_DES" linkedEventUniqueID="0" endOfQuest="true" />
+    <nodes xsi:type="NodeAdventure" ID="23" positionX="2510" positionY="-416" width="350" height="885">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_PlayersHaveSharedTag" parameter="1" tag="TAG-QUEST65" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Shrug and say it is none of your business, but the goblins are dead. Any reward?" ownerID="23" targetID="24" fromX="2835" fromY="-907" />
+      <outputs name="Nod and say in that case you did a good deed, right?" ownerID="23" targetID="28" fromX="2835" fromY="-987" />
+      <outputs name="Tell them you understand grief, but murdering every goblin they meet seems extreme. Then again, you did it too, so who are you to judge?" ownerID="23" targetID="27" fromX="2835" fromY="-1067" />'Oh. Disappointing for me, but dead is dead. Good.'
+
+One of the others continues:
+
+'The little shits raped and killed their dear sister. Been tracking them for years. Sneaky buggers. None deserves to live. That tribe, they worship some dark deity, want darkness to come back so humans lose again.'
+
+The warrior in the helmet spits and the others nod solemnly.</nodes>
+    <nodes xsi:type="NodeAdventure" ID="24" positionX="3005" positionY="-401" width="350" height="725">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="1" tag="ITEM_CARGO-RARE_ONE_SWORD_1H" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="50%;0;1" tag="ITEM_CARGO-ANCIENT_ONE_SHIELD" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Nod and leave." ownerID="24" targetID="25" fromX="3330" fromY="-892" />The warrior nods and hands you their weapon:
+
+'Here.'
+
+The priest lets out a sigh and speaks up: 'You're not getting more words out of that one. We thank you. Your deed was good. Be well, and stay wary of the greenskins.'</nodes>
+    <nodes xsi:type="NodeSpawnOnMap" ID="25" positionX="3510" positionY="-1174" width="480" height="503" radius="0" destroyOwner="true" linkedEventUniqueID="0">
+      <outputs ownerID="25" targetID="26" fromX="3958" fromY="-1606" />
+    </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="26" positionX="4056" positionY="-1272" width="350" height="530" allPlayersXP="6" allPlayersRP="3" logBookName="QUEST_MISC3_GOBKILLSPWNONE" logBookDescription="QUEST_MISC3_GOBKILLSPWNONE3_DES" linkedEventUniqueID="0" endOfQuest="true" />
+    <nodes xsi:type="NodeAdventure" ID="27" positionX="2946" positionY="-1211" width="350" height="805">
+      <outputs name="Nod and leave." ownerID="27" targetID="25" fromX="3271" fromY="-1702" />
+      <outputs name="Shrug and say it is none of your business, but the goblins are dead. Any reward?" ownerID="27" targetID="24" fromX="3271" fromY="-1782" />The warrior speaks:
+
+'Yes, the children grow, hate, become adult goblins, and seek revenge. If I kill, I must kill all.'
+
+The priest looks uncomfortable but remains silent.</nodes>
+    <nodes xsi:type="NodeAdventure" ID="28" positionX="2508" positionY="-1314" width="350" height="725">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="1" tag="ITEM_CARGO-RARE_ONE_PET_BEAR" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Nod and leave." ownerID="28" targetID="25" fromX="2833" fromY="-1805" />The warrior nods and hands you their weapon:
+
+'Yes.' He then hands you a cage with an animal inside. 'For killing more greenskins.'
+
+The priest lets out a sigh and speaks up: 'You're not getting more words out of that one. We thank you. Your deed was good. Be well, and stay wary of the greenskins.'</nodes>
+    <nodes xsi:type="NodeAdventure" ID="29" positionX="4304" positionY="-194" width="350" height="805">
+      <outputs name="Move away from them." ownerID="29" targetID="38" fromX="4629" fromY="-685" />
+      <outputs name="Ask why they hate goblins so. You've never known them to be any more or less violent than humans." ownerID="29" targetID="15" fromX="4629" fromY="-765" />The warrior nods and speaks:
+
+'That was stupid. They will run, grow. More killing.'
+
+An uncomfortable silence falls over the group, and one of the companions speaks up:
+
+'Better just leave now, goblin lover.'</nodes>
+    <nodes xsi:type="NodeAdventure" ID="31" positionX="1378" positionY="-1347" width="350" height="885">
+      <outputs name="Affirm that it was none of your concern, and you also did not aid the goblins -- merely let them go." ownerID="31" targetID="36" fromX="1703" fromY="-1838" />
+      <outputs name="[Hunter]Offer to tell them which way the goblins went." ownerID="31" targetID="37" fromX="1703" fromY="-1918" />
+      <outputs name="Ask why they hate goblins so. You've never known them to be any more or less violent than humans." ownerID="31" targetID="15" fromX="1703" fromY="-1998" />The warrior nods and speaks:
+
+'That was stupid. They will run, grow. More killing.'
+
+An uncomfortable silence falls over the group, and one of the companions speaks up:
+
+'Better just leave now, goblin lover.'</nodes>
+    <nodes xsi:type="NodeAdventure" ID="32" positionX="4753" positionY="-226" width="350" height="725">
+      <logic>
+        <ModifierBlock>
+          <LogicProcessing name="1" list1="ppl">
+            <scriptCallWithTag scriptName="FLP_GetRandomXelements" parameter="1" />
+          </LogicProcessing>
+          <LogicModifiers list="1">
+            <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="3" tag="SKILL_PACK-CURSE_M" />
+          </LogicModifiers>
+          <LogicModifiers list="gob">
+            <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="3" tag="SKILL_PACK-CURSE_S" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Leave." ownerID="32" targetID="13" fromX="5078" fromY="-717" />'You lie. You walk with them and lie for them. Foolish.'
+
+An uncomfortable silence falls over the group, and one of the companions speaks up:
+
+'Better just leave now, goblin lover.'
+
+They depart and you realise later that one of their mages has cursed you.</nodes>
+    <nodes xsi:type="NodeDealDamage" ID="33" positionX="1891" positionY="-950" width="460" height="459" challengeTypeDamage="TypePhysical" minDamage="30" maxDamage="60" useCountInPercent="true" targetGroup="ppl">
+      <outputs ownerID="33" targetID="34" fromX="2320" fromY="-1338" />
+    </nodes>
+    <nodes xsi:type="NodeSpawnOnMap" ID="34" positionX="1895" positionY="-1448" width="480" height="503" radius="0" destroyOwner="true" linkedEventUniqueID="0">
+      <outputs ownerID="34" targetID="35" fromX="2343" fromY="-1880" />
+    </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="35" positionX="1714" positionY="-2350" width="350" height="530" allPlayersXP="1" allPlayersRP="1" logBookName="QUEST_MISC3_GOBKILLSPWNONE" logBookDescription="QUEST_MISC3_GOBKILLSPWNONE_DES" linkedEventUniqueID="0" endOfQuest="true" />
+    <nodes xsi:type="NodeAdventure" ID="36" positionX="2314" positionY="-2155" width="350" height="725">
+      <logic>
+        <ModifierBlock>
+          <LogicProcessing name="1" list1="ppl">
+            <scriptCallWithTag scriptName="FLP_GetRandomXelements" parameter="1" />
+          </LogicProcessing>
+          <LogicModifiers list="1">
+            <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="3" tag="SKILL_PACK-BLESS_M" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Leave." ownerID="36" targetID="13" fromX="2639" fromY="-2646" />The warrior looks at you for a time, then nods again:
+
+'Yes. Foolish, but perhaps better. They could have harmed you. We will leave now. Do not trust them.'
+</nodes>
+    <nodes xsi:type="NodeAdventure" ID="37" positionX="675" positionY="-1746" width="350" height="725">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="hunt">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="TAG-HUNTER" />
+          </LogicFilter>
+          <LogicResultAction list="hunt">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="5;15" tag="ITEM_CARGO-FEW_MITHRILL" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="-8" tag="TAG-LOYALTY_SPIRIT_TALKERS" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Wish them luck and leave." ownerID="37" targetID="25" fromX="1000" fromY="-2237" />'Yes, good. Here.'
+
+The warrior hands you payment for the information, and the band moves out in a hunting formation.</nodes>
+    <nodes xsi:type="NodeAdventure" ID="38" positionX="5396" positionY="-184" width="350" height="725">
+      <logic>
+        <ModifierBlock>
+          <LogicProcessing name="1" list1="ppl">
+            <scriptCallWithTag scriptName="FLP_GetRandomXelements" parameter="1" />
+          </LogicProcessing>
+          <LogicModifiers list="1">
+            <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="3" tag="SKILL_PACK-CURSE_M" />
+          </LogicModifiers>
+          <LogicModifiers list="gob">
+            <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="3" tag="SKILL_PACK-CURSE_S" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Leave." ownerID="38" targetID="13" fromX="5721" fromY="-675" />They watch you move, then depart also, and you realise later that one of their mages has cursed you.</nodes>
+    <nodes xsi:type="NodeAdventure" ID="39" positionX="4821" positionY="-1002" width="350" height="966">
+      <outputs name="[Hunter]Offer to tell them which way the goblins went." ownerID="39" targetID="37" fromX="5146" fromY="-1493" />
+      <outputs name="[Turmoil]Agree with his point of view. An enemy left alive is an enemy forever in the shadows. Wish them good hunting." ownerID="39" targetID="40" fromX="5146" fromY="-1573" />
+      <outputs name="[Harmony]Tell them that their hateful path will lead only to more death. If those goblins are indeed in league with darkness, they need to be stopped. But killing young ones in pre-emptive action will never be good." ownerID="39" targetID="41" fromX="5146" fromY="-1653" />
+      <outputs name="Say that this is none of your concern and depart. " ownerID="39" targetID="38" fromX="5146" fromY="-1733" />The warrior speaks:
+
+'The children grow, hate, become adult goblins, and seek revenge. If I kill, I must kill all.'
+
+The priest looks uncomfortable but remains silent. The others nod.</nodes>
+    <nodes xsi:type="NodeAdventure" ID="40" positionX="5294" positionY="-979" width="350" height="725">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_PlayerHaveTag" parameter="1" tag="TAG-DOMAIN_TURMOIL" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicProcessing name="1" list1="ppl">
+            <scriptCallWithTag scriptName="FLP_GetRandomXelements" parameter="2" />
+          </LogicProcessing>
+          <LogicModifiers list="1">
+            <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="4" tag="SKILL_PACK-BLESS_P" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Leave." ownerID="40" targetID="13" fromX="5619" fromY="-1470" />They do not reply, but you see one of the mages about to cast a spell your way, before stopping and putting their wand away. 
+
+The band moves out.</nodes>
+    <nodes xsi:type="NodeAdventure" ID="41" positionX="5704" positionY="-1297" width="350" height="725">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_PlayerHaveTag" parameter="1" tag="TAG-DOMAIN_HARMONY" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicModifiers list="ppl">
+            <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="4" tag="SKILL_PACK-BLESS_M" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Leave." ownerID="41" targetID="13" fromX="6029" fromY="-1788" />The priest breaks down in tears, mumbling 'I told you so,' and 'damnation.'
+
+The warrior looks very uncomfortable and turns to you:
+
+'Now you've done it. You talk like this, but when they bring darkness, your gods will ask us to do something. 
+
+But I will spare the green children, for now. Happy?'
+
+The question was clearly more for the priest than for you. The zerca nods and the band moves away.</nodes>
+  </Adventure>
+  <Adventure name="Goblin Killer Spwn2" uniqueID="16" typeGeneric="false" typePerGroupGeneric="false" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="54" eventTag="TAG-LOG15" joinIsForced="false" joinType="AllAlly" joinRange="MovementArea">
+    <nodes xsi:type="NodeStarting" ID="1" positionX="10" positionY="-10" width="347" height="661" image="Event231">
+      <outputs ownerID="1" targetID="2" fromX="334" fromY="-613" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="2" positionX="462" positionY="36" width="350" height="966">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="ppl" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" />
+          </LogicFilter>
+          <LogicFilter name="gob" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" tag="RACE-GOBLIN" />
+          </LogicFilter>
+        </FilterBlock>
+      </logic>
+      <outputs name="Ask if they are the ones chasing a group of goblins." ownerID="2" targetID="18" fromX="787" fromY="-455" />
+      <outputs name="Attack!" ownerID="2" targetID="4" fromX="787" fromY="-535" />
+      <outputs name="Get off their path and leave." ownerID="2" targetID="17" fromX="787" fromY="-615" />
+      <outputs name="[Goblin]Murdering scum. Attack them!" ownerID="2" targetID="42" fromX="787" fromY="-695" />You come across an armed group of fighters. There is a human wearing a helmet, a tall, hooded orc with a bone wand, a zerca, an elf, and a dwarf.
+The human has goblin heads on his belt, so this must be the crazed goblin killer you were told about.
+
+They look you up and down but do not speak. </nodes>
+    <nodes xsi:type="NodeChallenge" ID="4" positionX="513" positionY="1695" width="500" height="726" challengeType="TypePhysical" versusGroup="GROUP-Q_SLAYER_8P_7M_6S" challengeScale="101" challengedList="ppl">
+      <outputs name="Win" ownerID="4" targetID="5" fromX="954" fromY="1199" />
+      <outputs name="Lose" ownerID="4" targetID="6" fromX="954" fromY="1119" />
+      <outputs name="Surrender" ownerID="4" targetID="6" fromX="954" fromY="1039" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="5" positionX="1303" positionY="1701" width="350" height="725">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="8" tag="TAG-LOYALTY_SPIRIT_TALKERS" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="20;40" tag="ITEM_CARGO-BASIC_FEW_HERBS" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="20;40" tag="ITEM_CARGO-GOBLINWINE" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="0;1" tag="ITEM_CARGO-RARE_ONE_TOOL" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="0;1" tag="ITEM_CARGO-RARE_ONE_PET_GOAT" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="20%;0;1" tag="ITEM_CARGO-RARE_ONE_SWORD_1H" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="1" tag="ITEM_CARGO-STRONG_ONE_PET_CHICKEN" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Leave." ownerID="5" targetID="19" fromX="1628" fromY="1209" />You kill the notorious goblin slayer, and for a time, you receive letters of thanks from various goblin survivors. Some even send gifts.</nodes>
+    <nodes xsi:type="NodeAdventure" ID="6" positionX="1970" positionY="1254" width="350" height="725">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers list="gob">
+            <scriptCallWithTag scriptName="FMO_TakeCharacters" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Run away." ownerID="6" targetID="21" fromX="2295" fromY="762" />You are defeated, and any greenskins in your party do not make it out alive.</nodes>
+    <nodes xsi:type="NodeChallenge" ID="7" positionX="2006" positionY="436" width="500" height="726" challengeType="TypeMental" versusGroup="GROUP-Q_SLAYER_8P_7M_6S" challengeScale="101" challengedList="ppl">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="int">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="12" tag="TAG-INTELLIGENCE" />
+          </LogicFilter>
+          <LogicProcessing name="nogob" list1="ppl" list2="gob">
+            <scriptCallWithTag scriptName="FLP_AminusB" />
+          </LogicProcessing>
+          <LogicResultAction list="nogob">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+          <LogicResultAction list="int">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Win" ownerID="7" targetID="23" fromX="2447" fromY="-59" />
+      <outputs name="Lose" ownerID="7" targetID="16" fromX="2447" fromY="-139" />
+      <outputs name="Surrender" ownerID="7" targetID="16" fromX="2447" fromY="-219" />
+    </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="8" positionX="-781" positionY="-573" width="350" height="530" allPlayersXP="1" logBookName="QUEST_MISC3_GOBKILLSPWNONE" logBookDescription="QUEST_MISC3_GOBKILLSPWNONE_DES" linkedEventUniqueID="0" endOfQuest="true" />
+    <nodes xsi:type="NodeAdventure" ID="15" positionX="1797" positionY="-1466" width="350" height="1126">
+      <outputs name="Say that you know what the goblins did to their family, but surely the whole village does not need to pay for it, at least not with death?" ownerID="15" targetID="44" fromX="2122" fromY="-1957" />
+      <outputs name="The goblins did not tell you this. Offer to reveal which way they went." ownerID="15" targetID="45" fromX="2122" fromY="-2037" />
+      <outputs name="Try to convince them to let this go. Surely children can be spared?" ownerID="15" targetID="43" fromX="2122" fromY="-2117" />
+      <outputs name="Attack!" ownerID="15" targetID="4" fromX="2122" fromY="-2197" />
+      <outputs name="[Harmony]Tell them that their hateful path will lead only to more death. If those goblins are indeed in league with darkness, they need to be stopped. But killing young ones in pre-emptive action will never be good." ownerID="15" targetID="41" fromX="2122" fromY="-2277" />
+      <outputs name="[Turmoil]Agree with his point of view. An enemy left alive is an enemy forever in the shadows. Wish them good hunting and point them to where the goblins went." ownerID="15" targetID="40" fromX="2122" fromY="-2358" />The man in the helmet does not answer, but his elven companion speaks:
+
+'As a mere child, our friend witnessed their home burned and pillaged, and a sister raped. Goblins were the culprits. Ever since, they have become an enemy. We trust our friend, so we give aid. Perhaps there is truth in their words. Goblins pretend to be weak and nice, but they always plot, scheme, meddle with evil spirits, and seek to spread darkness.'</nodes>
+    <nodes xsi:type="NodeAdventure" ID="16" positionX="2024" positionY="-373" width="350" height="805">
+      <outputs name="Attack!" ownerID="16" targetID="4" fromX="2349" fromY="-864" />
+      <outputs name="Run away, accepting that you will likely be hit by the elven archer as you escape." ownerID="16" targetID="33" fromX="2349" fromY="-944" />The band does not listen. One of them shouts:
+
+'Goblins must die!'
+
+They begin to move, trying to circle you.</nodes>
+    <nodes xsi:type="NodeSpawnOnMap" ID="17" positionX="-251" positionY="-794" width="480" height="503" radius="0" destroyOwner="true" linkedEventUniqueID="0">
+      <outputs ownerID="17" targetID="8" fromX="197" fromY="-1226" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="18" positionX="920" positionY="-81" width="350" height="885">
+      <outputs name="[Intelligence]Tell them you killed the goblins." ownerID="18" targetID="7" fromX="1245" fromY="-572" />
+      <outputs name="Ask them why they are chasing mere children and elders. Surely destroying their village was enough." ownerID="18" targetID="31" fromX="1245" fromY="-652" />
+      <outputs name="Try to convince them to let this go. Surely children can be spared?" ownerID="18" targetID="43" fromX="1245" fromY="-732" />'Yes. You have seen them? Where?'</nodes>
+    <nodes xsi:type="NodeSpawnOnMap" ID="19" positionX="1981" positionY="1859" width="480" height="503" radius="0" destroyOwner="true" linkedEventUniqueID="0">
+      <outputs ownerID="19" targetID="20" fromX="2429" fromY="1426" />
+    </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="20" positionX="2591" positionY="1881" width="350" height="530" allPlayersXP="7" allPlayersRP="3" logBookName="QUEST_MISC3_GOBKILLSPWNONE" logBookDescription="QUEST_MISC3_GOBKILLSPWNONE2_DES" linkedEventUniqueID="0" endOfQuest="true" />
+    <nodes xsi:type="NodeSpawnOnMap" ID="21" positionX="2421" positionY="1175" width="480" height="503" radius="0" destroyOwner="true" linkedEventUniqueID="0">
+      <outputs ownerID="21" targetID="22" fromX="2869" fromY="742" />
+    </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="22" positionX="2942" positionY="1235" width="350" height="530" allPlayersXP="1" allPlayersRP="1" logBookName="QUEST_MISC3_GOBKILLSPWNONE" logBookDescription="QUEST_MISC3_GOBKILLSPWNONE4_DES" linkedEventUniqueID="0" endOfQuest="true" />
+    <nodes xsi:type="NodeAdventure" ID="23" positionX="2591" positionY="432" width="350" height="725">
+      <outputs name="Shrug and say it is none of your business, but the goblins are dead. Any reward?" ownerID="23" targetID="46" fromX="2916" fromY="-59" />'Oh. Disappointing for me, but dead is dead. Good.'
+
+One of the others continues:
+
+'The little shits raped and killed their dear sister. Been tracking them for years. Sneaky buggers. None deserves to live. That tribe, they worship some dark deity, want darkness to come back so humans lose again.'
+
+The warrior in the helmet spits and the others nod solemnly.</nodes>
+    <nodes xsi:type="NodeAdventure" ID="24" positionX="3569" positionY="205" width="350" height="725">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="50" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="1" tag="ITEM_CARGO-RARE_ONE_SWORD_1H" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="0;1" tag="ITEM_CARGO-ANCIENT_ONE_SHIELD" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Nod and leave." ownerID="24" targetID="54" fromX="3894" fromY="-286" />The warrior nods and hands you their weapon:
+
+'Here.'
+
+The priest lets out a sigh and speaks up: 'You're not getting more words out of that one. We thank you. Your deed was good. Be well, and stay wary of the greenskins.'</nodes>
+    <nodes xsi:type="NodeSpawnOnMap" ID="25" positionX="4322" positionY="-372" width="480" height="503" radius="0" destroyOwner="true" linkedEventUniqueID="0">
+      <outputs ownerID="25" targetID="26" fromX="4770" fromY="-804" />
+    </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="26" positionX="4867" positionY="-312" width="350" height="530" allPlayersXP="6" allPlayersRP="3" logBookName="QUEST_MISC3_GOBKILLSPWNONE" logBookDescription="QUEST_MISC3_GOBKILLSPWNONE5_DES" linkedEventUniqueID="0" endOfQuest="true" />
+    <nodes xsi:type="NodeAdventure" ID="28" positionX="3164" positionY="-382" width="350" height="725">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="1" tag="ITEM_CARGO-RARE_ONE_PET_BEAR" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Nod and leave." ownerID="28" targetID="54" fromX="3489" fromY="-873" />The warrior nods and grunts:
+
+'Yes.' He then hands you a cage with an animal inside. 'For killing more greenskins.'
+
+The priest lets out a sigh and speaks up:
+
+ 'You're not getting more words out of that one. We thank you. Your deed was good. Be well, and stay wary of the greenskins.'</nodes>
+    <nodes xsi:type="NodeAdventure" ID="31" positionX="1519" positionY="-351" width="350" height="966">
+      <outputs name="Ask why they hate goblins so. You've never known them to be any more or less violent than humans." ownerID="31" targetID="15" fromX="1844" fromY="-842" />
+      <outputs name="Say that you know what the goblins did to their family, but surely the whole village does not need to pay for it, at least not with death?" ownerID="31" targetID="44" fromX="1844" fromY="-922" />
+      <outputs name="Try to convince them to let this go. Surely children can be spared?" ownerID="31" targetID="43" fromX="1844" fromY="-1002" />
+      <outputs name="Attack!" ownerID="31" targetID="4" fromX="1844" fromY="-1082" />The warrior speaks:
+
+'The children grow, hate, become adult goblins, and seek revenge. If I kill, I must kill all.'
+
+The priest looks uncomfortable but remains silent. The others nod.</nodes>
+    <nodes xsi:type="NodeAdventure" ID="32" positionX="3548" positionY="1302" width="350" height="725">
+      <logic>
+        <ModifierBlock>
+          <LogicProcessing name="1" list1="ppl">
+            <scriptCallWithTag scriptName="FLP_GetRandomXelements" parameter="1" />
+          </LogicProcessing>
+          <LogicModifiers list="1">
+            <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="3" tag="SKILL_PACK-BLESS_M" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Say that it is the right thing to do. The cycle of violence should end. Wish them well and leave." ownerID="32" targetID="54" fromX="3873" fromY="810" />'Yes. This once, I will leave them be. But if they grow to kill and bring darkness, you will bear the blame also.'
+
+They move out.</nodes>
+    <nodes xsi:type="NodeDealDamage" ID="33" positionX="2561" positionY="-1221" width="460" height="459" challengeTypeDamage="TypePhysical" minDamage="30" maxDamage="60" useCountInPercent="true" targetGroup="ppl">
+      <outputs ownerID="33" targetID="34" fromX="2990" fromY="-1609" />
+    </nodes>
+    <nodes xsi:type="NodeSpawnOnMap" ID="34" positionX="2573" positionY="-647" width="480" height="503" radius="0" destroyOwner="true" linkedEventUniqueID="0">
+      <outputs ownerID="34" targetID="35" fromX="3021" fromY="-1079" />
+    </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="35" positionX="3360" positionY="-1248" width="350" height="530" allPlayersXP="1" allPlayersRP="1" logBookName="QUEST_MISC3_GOBKILLSPWNONE" logBookDescription="QUEST_MISC3_GOBKILLSPWNONE6_DES" linkedEventUniqueID="0" endOfQuest="true" />
+    <nodes xsi:type="NodeAdventure" ID="37" positionX="1954" positionY="-2682" width="350" height="725">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="5;15" tag="ITEM_CARGO-FEW_MITHRILL" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="-15" tag="TAG-LOYALTY_SPIRIT_TALKERS" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="0;1" tag="ITEM_CARGO-RARE_ONE_ELF_ARMOUR" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Wish them luck and leave." ownerID="37" targetID="50" fromX="2279" fromY="-3173" />'Yes, good. Here.'
+
+The warrior hands you payment for the information, and the band moves out in a hunting formation.</nodes>
+    <nodes xsi:type="NodeAdventure" ID="40" positionX="2651" positionY="-2878" width="350" height="725">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_PlayerHaveTag" parameter="1" tag="TAG-DOMAIN_TURMOIL" />
+          </LogicResultAction>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="60" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicProcessing name="1" list1="ppl">
+            <scriptCallWithTag scriptName="FLP_GetRandomXelements" parameter="2" />
+          </LogicProcessing>
+          <LogicModifiers list="1">
+            <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="4" tag="SKILL_PACK-BLESS_P" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="5;15" tag="ITEM_CARGO-FEW_MITHRILL" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="-15" tag="TAG-LOYALTY_SPIRIT_TALKERS" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="0;1" tag="ITEM_CARGO-RARE_ONE_ELF_ARMOUR" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Leave." ownerID="40" targetID="52" fromX="2976" fromY="-3369" />'Yes, you understand. Here.'
+
+The warrior hands you payment for the information, and the band moves out in a hunting formation.</nodes>
+    <nodes xsi:type="NodeAdventure" ID="41" positionX="2442" positionY="-1992" width="350" height="725">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_PlayerHaveTag" parameter="1" tag="TAG-DOMAIN_HARMONY" />
+          </LogicResultAction>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="20" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicModifiers list="ppl">
+            <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="4" tag="SKILL_PACK-BLESS_M" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Say that it is the only right thing to do for harmony." ownerID="41" targetID="54" fromX="2767" fromY="-2483" />The priest breaks down in tears, mumbling 'I told you so,' and 'damnation.'
+
+The warrior looks very uncomfortable and turns to you:
+
+'Now you've done it. You talk like this, but when they bring darkness, your gods will ask us to do something. 
+
+But I will spare the green children, for now. Happy?'
+
+The question was clearly more for the priest than for you. The zerca nods and the band moves away.</nodes>
+    <nodes xsi:type="NodeChallenge" ID="42" positionX="-219" positionY="1426" width="500" height="726" challengeType="TypePhysical" versusGroup="GROUP-Q_SLAYER_8P_7M_6S" challengeScale="101" challengedList="ppl">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction list="gob">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Win" ownerID="42" targetID="5" fromX="222" fromY="930" />
+      <outputs name="Lose" ownerID="42" targetID="6" fromX="222" fromY="850" />
+      <outputs name="Surrender" ownerID="42" targetID="6" fromX="222" fromY="770" />
+    </nodes>
+    <nodes xsi:type="NodeChallenge" ID="43" positionX="1330" positionY="528" width="500" height="726" challengeType="TypeMental" versusGroup="GROUP-Q_SLAYER_8P_7M_6S" challengeScale="101" challengedList="ppl">
+      <outputs name="Win" ownerID="43" targetID="32" fromX="1771" fromY="32" />
+      <outputs name="Lose" ownerID="43" targetID="16" fromX="1771" fromY="-47" />
+      <outputs name="Surrender" ownerID="43" targetID="16" fromX="1771" fromY="-127" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="44" positionX="925" positionY="-1334" width="350" height="885">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_PlayersHaveSharedTag" parameter="1" tag="TAG-QUEST49" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Try to convince them to let this go. Surely children can be spared?" ownerID="44" targetID="43" fromX="1250" fromY="-1825" />
+      <outputs name="Yes, tell them where the goblins went." ownerID="44" targetID="45" fromX="1250" fromY="-1905" />
+      <outputs name="Attack!" ownerID="44" targetID="4" fromX="1250" fromY="-1985" />'So it was them, good. I was not certain. Now, did you see where they went? They will pay.'</nodes>
+    <nodes xsi:type="NodeDealDamage" ID="45" positionX="1251" positionY="-2606" width="460" height="459" challengeTypeDamage="TypeMental" minDamage="40" maxDamage="80" useCountInPercent="true" targetGroup="gob">
+      <outputs ownerID="45" targetID="37" fromX="1680" fromY="-2994" />
+    </nodes>
+    <nodes xsi:type="NodeProduceDrop" ID="46" positionX="3007" positionY="151" width="460" height="509">
+      <outputs ownerID="46" targetID="24" group="G1" fromX="3437" fromY="-207" />
+      <outputs ownerID="46" targetID="28" group="G1" fromX="3437" fromY="-287" />
+    </nodes>
+    <nodes xsi:type="NodeSpawnOnMap" ID="50" positionX="933" positionY="-3241" width="480" height="503" radius="0" destroyOwner="true" linkedEventUniqueID="0">
+      <outputs ownerID="50" targetID="51" fromX="1381" fromY="-3673" />
+    </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="51" positionX="1523" positionY="-3444" width="350" height="530" allPlayersXP="6" allPlayersRP="3" logBookName="QUEST_MISC3_GOBKILLSPWNONE" logBookDescription="QUEST_MISC3_GOBKILLSPWNONE7_DES" linkedEventUniqueID="0" endOfQuest="true" />
+    <nodes xsi:type="NodeDealDamage" ID="52" positionX="710" positionY="-2622" width="460" height="459" challengeTypeDamage="TypeMental" minDamage="40" maxDamage="80" useCountInPercent="true" targetGroup="gob">
+      <outputs ownerID="52" targetID="50" fromX="1139" fromY="-3010" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="54" positionX="3848" positionY="-574" width="350" height="725">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="8" tag="TAG-LOYALTY_SPIRIT_TALKERS" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="20;40" tag="ITEM_CARGO-BASIC_FEW_HERBS" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="20;40" tag="ITEM_CARGO-GOBLINWINE" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="0;1" tag="ITEM_CARGO-RARE_ONE_TOOL" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="0;1" tag="ITEM_CARGO-RARE_ONE_PET_GOAT" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="20%;0;1" tag="ITEM_CARGO-ANCIENT_ONE_WAND" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="1" tag="ITEM_CARGO-STRONG_ONE_PET_TURTLE" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Leave." ownerID="54" targetID="25" fromX="4173" fromY="-1065" />The goblins find you later and thank you for giving them time to run. They found some kin and together they leave you a reward.</nodes>
+  </Adventure>
+  <Adventure name="VOLCANIC" uniqueID="18" allowOnce="true" typeGeneric="false" typePerGroupGeneric="true" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="4" joinIsForced="true" joinType="AllAlly" joinRange="MovementArea">
+    <nodes xsi:type="NodeStarting" ID="1" positionX="10" positionY="-10" width="347" height="661" image="Event031">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_IsOnTerrain" tag="BIOME-VOLCANIC" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs ownerID="1" targetID="2" fromX="334" fromY="-613" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="2" positionX="645" positionY="-78" width="350" height="725">
+      <outputs name="Disembark." ownerID="2" targetID="3" fromX="970" fromY="-569" />You arrive in the volcanic lands, so named for the many active volcanoes and lava pits. 
+
+From the ash-covered plains and burned-out drylands to the high peaks of the volcanic mountains, the ever-hot, stifling air and constant threat of eruption keeps the wildlife and any mad settlers on their toes.</nodes>
+    <nodes xsi:type="NodeAdventure" ID="3" positionX="1180" positionY="-180" width="350" height="725">
+      <outputs name="Move out." ownerID="3" targetID="4" fromX="1505" fromY="-671" />This harsh, unforgiving land is home to the alpha clans, who enjoy the daily challenge of the environment. 
+
+You can also find lava trolls and even the occasional dragon lurking amongst the molten rocks.
+
+This land is rich in obsidian and other rocks, and beetle jelly is the local specialty.</nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="4" positionX="1680" positionY="-268" width="350" height="530" allPlayersXP="1" allPlayersRP="2" linkedEventUniqueID="0">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="5" tag="ITEM_CARGO-ONE_OBSIDIAN" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="10" tag="ITEM_CARGO-BEETLE_JELLY" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+    </nodes>
+  </Adventure>
+  <Adventure name="DARKNESS" uniqueID="19" allowOnce="true" typeGeneric="false" typePerGroupGeneric="true" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="4" joinIsForced="true" joinType="AllAlly" joinRange="MovementArea">
+    <nodes xsi:type="NodeStarting" ID="1" positionX="10" positionY="-10" width="347" height="661" image="Event032">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_IsOnTerrain" tag="BIOME-DARKNESS" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs ownerID="1" targetID="2" fromX="334" fromY="-613" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="2" positionX="460" positionY="21" width="350" height="725">
+      <outputs name="Disembark." ownerID="2" targetID="3" fromX="785" fromY="-470" />You have arrived in the lands of darkness. Here the last remnants of the deadly black mist remain ever-lingering and the sun is constantly dimmed, creating a feeling of perpetual dusk.
+
+Beware of night terrors and creatures of the dark skulking in every corner.</nodes>
+    <nodes xsi:type="NodeAdventure" ID="3" positionX="905" positionY="-60" width="350" height="725">
+      <outputs name="Move out." ownerID="3" targetID="4" fromX="1230" fromY="-551" />Despite its dangers, the land of darkness is home to the spirit talkers, goblin tribes that feel at ease in the dark and take advantage of the thinned veil between this world and the greyworld of the spirits.
+
+The shadowkin, a more elusive and dangerous faction of those changed by darkness long ago, lurks in the shadows.
+
+The island is known for dragon bones and mushrooms.</nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="4" positionX="1379" positionY="-160" width="350" height="530" allPlayersXP="1" allPlayersRP="2" linkedEventUniqueID="0">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="5" tag="ITEM_CARGO-FEW_DRAGON_BONE" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="10" tag="ITEM_CARGO-MUSHROOMS" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+    </nodes>
+  </Adventure>
+  <Adventure name="ICY" uniqueID="20" allowOnce="true" typeGeneric="false" typePerGroupGeneric="true" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="4" joinIsForced="true" joinType="AllAlly" joinRange="MovementArea">
+    <nodes xsi:type="NodeStarting" ID="1" positionX="10" positionY="-10" width="347" height="661" image="Event034">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_IsOnTerrain" tag="BIOME-ICY" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs ownerID="1" targetID="2" fromX="334" fromY="-613" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="2" positionX="656" positionY="-157" width="350" height="725">
+      <outputs name="Disembark." ownerID="2" targetID="3" fromX="981" fromY="-648" />You have arrived in the ice lands, the forever-frozen pastures ruled by the mysterious dziad mroz. 
+
+When the cold swallowed this island, cities fell into instant ruin and folk fled, unable to live in such a harsh environment.</nodes>
+    <nodes xsi:type="NodeAdventure" ID="3" positionX="1338" positionY="-219" width="350" height="725" image="Event239">
+      <outputs name="Move out." ownerID="3" targetID="4" fromX="1663" fromY="-710" />You will not find many creatures alive here, but the ice demons are known to make lairs from time to time. 
+
+Dziad mroz is a creature who is many but one. You can also find the terrifying ice trolls, whimsical sniezynka, or mischievous icicles roaming the ice plains or hiding amongst the mountain peaks. 
+
+You may find diamonds and nuts here.
+</nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="4" positionX="1950" positionY="-535" width="350" height="530" allPlayersXP="1" allPlayersRP="2" linkedEventUniqueID="0">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="5" tag="ITEM_CARGO-ONE_DIAMOND" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="10" tag="ITEM_CARGO-NUTS" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+    </nodes>
+  </Adventure>
+  <Adventure name="ANCFOREST" uniqueID="21" allowOnce="true" typeGeneric="false" typePerGroupGeneric="true" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="4" joinIsForced="true" joinType="AllAlly" joinRange="MovementArea">
+    <nodes xsi:type="NodeStarting" ID="1" positionX="10" positionY="-10" width="347" height="661" image="Event035">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_IsOnTerrain" tag="BIOME-ANCIENT_FOREST" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs ownerID="1" targetID="2" fromX="334" fromY="-613" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="2" positionX="533" positionY="-88" width="350" height="725">
+      <outputs name="Disembark." ownerID="2" targetID="3" fromX="858" fromY="-579" />You have arrived on the fabled ancient forest island. It is said that this land emerged from hiding when the earth shattered, much like the cities of the dwarves. 
+
+Much of the woodland here has been destroyed, but what remains is no less breathtaking.</nodes>
+    <nodes xsi:type="NodeAdventure" ID="3" positionX="1024" positionY="-296" width="350" height="725">
+      <outputs name="Move out." ownerID="3" targetID="4" fromX="1349" fromY="-787" />These lands are home to the elder races. Both woodlandkin and forest demons stand as guardians of the evergreen woodlands, hoping to one day regrow what was lost.
+
+Creatures of the forest are fiercely territorial, so one should remain on guard. 
+
+Ancient wood and exotic spices can be found here.</nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="4" positionX="1590" positionY="-500" width="350" height="530" allPlayersXP="2" allPlayersRP="2" linkedEventUniqueID="0">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="5" tag="ITEM_CARGO-PACK_ANCIENT_WOOD" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="10" tag="ITEM_CARGO-SPICES" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+    </nodes>
+  </Adventure>
+  <Adventure name="METALLIC" uniqueID="22" allowOnce="true" typeGeneric="false" typePerGroupGeneric="true" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="4" joinIsForced="true" joinType="AllAlly" joinRange="MovementArea">
+    <nodes xsi:type="NodeStarting" ID="1" positionX="10" positionY="-10" width="347" height="661" image="Event033">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_IsOnTerrain" tag="BIOME-METALLIC" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs ownerID="1" targetID="2" fromX="334" fromY="-613" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="2" positionX="533" positionY="-88" width="350" height="725">
+      <outputs name="Disembark." ownerID="2" targetID="3" fromX="858" fromY="-579" />You have arrived in the metallic lands, an unforgiving region of stone and metal. When the Shattering unearthed the ancient dwarven cities, the land around them changed. Even trees became hollow husks of iron, and grass fossilised into rock. </nodes>
+    <nodes xsi:type="NodeAdventure" ID="3" positionX="1024" positionY="-296" width="350" height="725">
+      <outputs name="Move out." ownerID="3" targetID="4" fromX="1349" fromY="-787" />This foreboding land is the home to the earthbound, who were forced out of their underground kingdoms. The earthbound are a proud people, protective of their privacy. 
+
+The land of metal and stone is also home to rock trolls and dragons, so it is not for the faint of heart. 
+
+You can gather mithril and eggs here.</nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="4" positionX="1590" positionY="-500" width="350" height="530" allPlayersXP="2" allPlayersRP="2" linkedEventUniqueID="0">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="5" tag="ITEM_CARGO-ONE_MITHRILL" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="10" tag="ITEM_CARGO-EGGS" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+    </nodes>
+  </Adventure>
+  <Adventure name="Chosen death" uniqueID="23" typeGeneric="false" typePerGroupGeneric="false" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="17" joinIsForced="false" joinType="OnlyOwn" joinRange="SinglePosition">
+    <nodes xsi:type="NodeStarting" ID="1" positionX="-349" positionY="24" width="347" height="661" image="Event018">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="deadchosen">
+            <scriptCallWithTag scriptName="FwT_UnSafe_AllPlayersAllGroupsCharacters" parameter="1" tag="TAG-CHOSEN" />
+          </LogicFilter>
+          <LogicResultAction list="deadchosen">
+            <scriptCallWithTag scriptName="FRA_ListSizeLessEqualThan" parameter="0" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs ownerID="1" targetID="2" fromX="-24" fromY="-579" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="2" positionX="127" positionY="58" width="350" height="1286">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="ppl" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" />
+          </LogicFilter>
+        </FilterBlock>
+      </logic>
+      <outputs name="Pay with two lives to return the one." ownerID="2" targetID="3" fromX="452" fromY="-433" />
+      <outputs name="Pay with four lives to return the one." ownerID="2" targetID="6" fromX="452" fromY="-513" />
+      <outputs name="Pay with six lives to return the one." ownerID="2" targetID="8" fromX="452" fromY="-593" />
+      <outputs name="Pay with eight lives to return the one." ownerID="2" targetID="9" fromX="452" fromY="-673" />
+      <outputs name="Pay with ten lives to return the one." ownerID="2" targetID="10" fromX="452" fromY="-753" />
+      <outputs name="Pay with fifteen lives to return the one." ownerID="2" targetID="16" fromX="452" fromY="-834" />
+      <outputs name="Pay with twenty lives to return the one." ownerID="2" targetID="17" fromX="452" fromY="-914" />
+      <outputs name="You cannot or will not pay. It is time to end this journey." ownerID="2" targetID="11" fromX="452" fromY="-994" />You allowed your chosen to die! Without the divine bond, you will no longer have any power or influence over the world, and thus your reign will end.
+
+You have one more chance to remain in the game. Call upon the spirit of the cosmic tree itself and ask for the soul of your chosen to be returned to you. 
+
+Remember, the price is high and it will get higher every time you abuse your divine power like this. </nodes>
+    <nodes xsi:type="NodeTrade" ID="3" positionX="788" positionY="88" width="460" height="479" traderProfile="TRADER-BANDIT_TWO" playerInventory="ppl" startingBalance="-2">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_PlayerHaveTag" parameter="0" tag="TAG-QUEST63" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Confirm" ownerID="3" targetID="4" fromX="1218" fromY="-240" />
+      <outputs name="Cancel" ownerID="3" targetID="2" fromX="1218" fromY="-320" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="4" positionX="1387" positionY="-35" width="350" height="725">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagToPlayer" parameter="1" tag="TAG-QUEST63" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Await your chosen." ownerID="4" targetID="5" fromX="1712" fromY="-526" />You paid your bloody dues and the spirit of your chosen is returned. Now pray that it comes back in the right flesh?.?.?.</nodes>
+    <nodes xsi:type="NodeDealDamage" ID="5" positionX="1913" positionY="134" width="460" height="699" challengeTypeDamage="TypeMental" minDamage="0" maxDamage="0" useCountInPercent="false">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_ReturnCharacters" parameter="died" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs ownerID="5" targetID="15" group="G1" fromX="2342" fromY="-254" />
+      <outputs ownerID="5" targetID="14" group="G1" fromX="2342" fromY="-334" />
+      <outputs ownerID="5" targetID="13" group="G1" fromX="2342" fromY="-414" />
+      <outputs ownerID="5" targetID="12" group="G1" fromX="2342" fromY="-494" />
+    </nodes>
+    <nodes xsi:type="NodeTrade" ID="6" positionX="711" positionY="-390" width="460" height="479" traderProfile="TRADER-BANDIT_TWO" playerInventory="ppl" startingBalance="-4">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_PlayerHaveTagExactly" parameter="1" tag="TAG-QUEST63" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Confirm" ownerID="6" targetID="4" fromX="1141" fromY="-718" />
+      <outputs name="Cancel" ownerID="6" targetID="2" fromX="1141" fromY="-798" />
+    </nodes>
+    <nodes xsi:type="NodeTrade" ID="8" positionX="1332" positionY="-789" width="460" height="479" traderProfile="TRADER-BANDIT_TWO" playerInventory="ppl" startingBalance="-6">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_PlayerHaveTagExactly" parameter="2" tag="TAG-QUEST63" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Confirm" ownerID="8" targetID="4" fromX="1762" fromY="-1117" />
+      <outputs name="Cancel" ownerID="8" targetID="2" fromX="1762" fromY="-1197" />
+    </nodes>
+    <nodes xsi:type="NodeTrade" ID="9" positionX="1935" positionY="-760" width="460" height="479" traderProfile="TRADER-BANDIT_TWO" playerInventory="ppl" startingBalance="-8">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_PlayerHaveTagExactly" parameter="3" tag="TAG-QUEST63" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Confirm" ownerID="9" targetID="4" fromX="2365" fromY="-1088" />
+      <outputs name="Cancel" ownerID="9" targetID="2" fromX="2365" fromY="-1168" />
+    </nodes>
+    <nodes xsi:type="NodeTrade" ID="10" positionX="630" positionY="-1195" width="460" height="479" traderProfile="TRADER-BANDIT_TWO" playerInventory="ppl" startingBalance="-10">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_PlayerHaveTagExactly" parameter="4" tag="TAG-QUEST63" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Confirm" ownerID="10" targetID="4" fromX="1060" fromY="-1523" />
+      <outputs name="Cancel" ownerID="10" targetID="2" fromX="1060" fromY="-1603" />
+    </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="11" positionX="-275" positionY="-1191" width="350" height="530" linkedEventUniqueID="0">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="1" tag="TAG-END" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+    </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="12" positionX="2738" positionY="-403" width="350" height="530" linkedEventUniqueID="0">
+      <logic>
+        <ModifierBlock>
+          <LogicFilter name="chosen">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="TAG-CHOSEN" />
+          </LogicFilter>
+          <LogicModifiers list="chosen">
+            <scriptCallWithTag scriptName="FMO_AddTags" parameter="-5" tag="TAG-MAX_HEALTH_MENTAL" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+    </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="13" positionX="3628" positionY="-142" width="350" height="530" linkedEventUniqueID="0">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="2" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicFilter name="chosen">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="TAG-CHOSEN" />
+          </LogicFilter>
+          <LogicModifiers list="chosen">
+            <scriptCallWithTag scriptName="FMO_UpgradeToSubraceNoLevelReset" tag="SUBRACE-UNLI_HUM_SKELETON" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+    </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="14" positionX="3165" positionY="124" width="350" height="530" linkedEventUniqueID="0">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="2" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicFilter name="chosen">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="TAG-CHOSEN" />
+          </LogicFilter>
+          <LogicModifiers list="chosen">
+            <scriptCallWithTag scriptName="FMO_UpgradeToSubraceNoLevelReset" tag="SUBRACE-RAT" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+    </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="15" positionX="2712" positionY="174" width="350" height="530" linkedEventUniqueID="0">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="2" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicFilter name="chosen">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="TAG-CHOSEN" />
+          </LogicFilter>
+          <LogicModifiers list="chosen">
+            <scriptCallWithTag scriptName="FMO_UpgradeToSubraceNoLevelReset" tag="SUBRACE-GOB_CHILD" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+    </nodes>
+    <nodes xsi:type="NodeTrade" ID="16" positionX="1221" positionY="-1308" width="460" height="479" traderProfile="TRADER-BANDIT_TWO" playerInventory="ppl" startingBalance="-15">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_PlayerHaveTagExactly" parameter="5" tag="TAG-QUEST63" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Confirm" ownerID="16" targetID="4" fromX="1651" fromY="-1636" />
+      <outputs name="Cancel" ownerID="16" targetID="2" fromX="1651" fromY="-1716" />
+    </nodes>
+    <nodes xsi:type="NodeTrade" ID="17" positionX="1888" positionY="-1352" width="460" height="479" traderProfile="TRADER-BANDIT_TWO" playerInventory="ppl" startingBalance="-20">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_PlayerHaveTagExactly" parameter="6" tag="TAG-QUEST63" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Confirm" ownerID="17" targetID="4" fromX="2318" fromY="-1680" />
+      <outputs name="Cancel" ownerID="17" targetID="2" fromX="2318" fromY="-1760" />
+    </nodes>
+  </Adventure>
+</MODULE>

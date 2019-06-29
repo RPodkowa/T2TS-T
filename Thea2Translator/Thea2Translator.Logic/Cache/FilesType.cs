@@ -10,6 +10,7 @@ namespace Thea2Translator.Logic
     {
         DataBase,
         Modules,
-        Names
+        Names,
+        Vocabulary
     }
 }

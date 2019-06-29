@@ -1,0 +1,172 @@
+﻿<ITEM_REC>
+    <ITEM_REC-SWORD_1H ItemsAmount="1" BaseItemWeight="25.0" WeightMultiplier="2.0">
+        <InventorySlot Value="RightHand"/>
+        <RecipeBase ResearchCost="1">
+            <DescriptionInfo Name="DES_SWORD_1H" Description="DES_SWORD_1H_DES" IconName="ItemSword1H"/>
+            <CountedTag Tag="TAG-SWORD_1H" Amount="1.0"/>
+            <MaterialRow>
+                <Material ResourceCount="6">
+                    <Resource Value="RES-IRON"/>
+                </Material>
+                <Material ResourceCount="3">
+                    <Resource Value="RES-BONE"/>
+                </Material>
+                <Material ResourceCount="5">
+                    <Resource Value="RES-WOOD"/>
+                </Material>
+                <Material ResourceCount="2">
+                    <Resource Value="RES-SANDSTONE"/>
+                </Material>
+            </MaterialRow>
+            <MaterialRow>
+                <Material ResourceCount="3">
+                    <Resource Value="RES-AMBER"/>
+                </Material>
+                <Material ResourceCount="4">
+                    <Resource Value="RES-LEATHER"/>
+                </Material>
+                <Material ResourceCount="3">
+                    <Resource Value="RES-IRON"/>
+                </Material>
+                <Material ResourceCount="6">
+                    <Resource Value="RES-SANDSTONE"/>
+                </Material>
+            </MaterialRow>
+        </RecipeBase>
+        <Skills Value="SKILL_PACK-SWORD_1H"/>
+    </ITEM_REC-SWORD_1H>
+    <ITEM_REC-CLUB_1H ItemsAmount="1" BaseItemWeight="50.0" WeightMultiplier="2.0">
+      <InventorySlot Value="RightHand"/>
+      <RecipeBase ResearchCost="1">
+        <DescriptionInfo Name="DES_CLUB_1H" Description="DES_CLUB_1H_DES" IconName="ItemClub1H"/>
+        <CountedTag Tag="TAG-CLUB_1H" Amount="1.0"/>
+        <MaterialRow>
+          <Material ResourceCount="6">
+            <Resource Value="RES-IRON"/>
+          </Material>
+          <Material ResourceCount="3">
+            <Resource Value="RES-BONE"/>
+          </Material>
+          <Material ResourceCount="5">
+            <Resource Value="RES-WOOD"/>
+          </Material>
+          <Material ResourceCount="2">
+            <Resource Value="RES-SANDSTONE"/>
+          </Material>
+        </MaterialRow>
+        <MaterialRow>
+          <Material ResourceCount="3">
+            <Resource Value="RES-AMBER"/>
+          </Material>
+          <Material ResourceCount="4">
+            <Resource Value="RES-LEATHER"/>
+          </Material>
+          <Material ResourceCount="3">
+            <Resource Value="RES-IRON"/>
+          </Material>
+          <Material ResourceCount="6">
+            <Resource Value="RES-SANDSTONE"/>
+          </Material>
+        </MaterialRow>
+      </RecipeBase>
+      <Skills Value="SKILL_PACK-CLUB_1H"/>
+    </ITEM_REC-CLUB_1H>
+
+    <ITEM_REC-BOW ItemsAmount="1" BaseItemWeight="10.0" WeightMultiplier="3.0">
+      <InventorySlot Value="LeftHand"/>      
+      <RecipeBase ResearchCost="1">
+        <DescriptionInfo Name="DES_BOW" Description="DES_BOW_DES" IconName="ItemBow"/>
+        <CountedTag Tag="TAG-BOW" Amount="1.0"/>
+        <MaterialRow>
+          <Material ResourceCount="3">
+            <Resource Value="RES-IRON"/>
+          </Material>
+          <Material ResourceCount="4">
+            <Resource Value="RES-BONE"/>
+          </Material>
+          <Material ResourceCount="5">
+            <Resource Value="RES-WOOD"/>
+          </Material>
+          <Material ResourceCount="3">
+            <Resource Value="RES-SANDSTONE"/>
+          </Material>
+        </MaterialRow>
+        <MaterialRow>
+          <Material ResourceCount="5">
+            <Resource Value="RES-AMBER"/>
+          </Material>
+          <Material ResourceCount="6">
+            <Resource Value="RES-LEATHER"/>
+          </Material>
+          <Material ResourceCount="3">
+            <Resource Value="RES-WOOD"/>
+          </Material>
+          <Material ResourceCount="4">
+            <Resource Value="RES-BONE"/>
+          </Material>
+        </MaterialRow>
+      </RecipeBase>
+      <Skills Value="SKILL_PACK-BOW"/>
+    </ITEM_REC-BOW>
+  
+    <ITEM_REC-SHIELD ItemsAmount="1" BaseItemWeight="30.0" WeightMultiplier="2.0">
+        <InventorySlot Value="LeftHand"/>
+        <RecipeBase ResearchCost="1">
+            <DescriptionInfo Name="DES_SHIELD" Description="DES_SCROLL_DES" IconName="ItemShield"/>
+            <CountedTag Tag="TAG-SHIELD" Amount="1.0"/>
+            <MaterialRow>
+                <Material ResourceCount="5">
+                    <Resource Value="RES-IRON"/>
+                </Material>
+                <Material ResourceCount="5">
+                    <Resource Value="RES-WOOD"/>
+                </Material>
+                <Material ResourceCount="5">
+                    <Resource Value="RES-BONE"/>
+                </Material>
+            </MaterialRow>
+            <MaterialRow>
+                <Material ResourceCount="4">
+                    <Resource Value="RES-WOOD"/>
+                </Material>
+                <Material ResourceCount="4">
+                    <Resource Value="RES-BONE"/>
+                </Material>
+                <Material ResourceCount="4">
+                    <Resource Value="RES-IRON"/>
+                </Material>
+                <Material ResourceCount="4">
+                    <Resource Value="RES-LEATHER"/>
+                </Material>
+            </MaterialRow>
+        </RecipeBase>
+        <Skills Value="SKILL_PACK-SHIELD"/>
+    </ITEM_REC-SHIELD>
+    <ITEM_REC-MEDIUM_ARMOUR ItemsAmount="1" BaseItemWeight="40.0" WeightMultiplier="3.0">
+        <InventorySlot Value="Armour"/>
+        <RecipeBase ResearchCost="1">
+            <DescriptionInfo Name="DES_MEDIUM_ARMOUR" Description="DES_MEDIUM_ARMOUR_DES" IconName="ItemLightArmour"/>
+            <CountedTag Tag="TAG-MEDIUM_ARMOUR" Amount="1.0"/>
+            <MaterialRow>
+                <Material ResourceCount="5">
+                    <Resource Value="RES-LEATHER"/>
+                </Material>
+                <Material ResourceCount="5">
+                    <Resource Value="RES-BONE"/>
+                </Material>
+            </MaterialRow>
+            <MaterialRow>
+                <Material ResourceCount="5">
+                    <Resource Value="RES-AMBER"/>
+                </Material>
+                <Material ResourceCount="4">
+                    <Resource Value="RES-IRON"/>
+                </Material>
+                <Material ResourceCount="5">
+                    <Resource Value="RES-LEATHER"/>
+                </Material>
+            </MaterialRow>
+        </RecipeBase>
+        <Skills Value="SKILL_PACK-MEDIUM_ARMOUR"/>
+    </ITEM_REC-MEDIUM_ARMOUR>
+</ITEM_REC>

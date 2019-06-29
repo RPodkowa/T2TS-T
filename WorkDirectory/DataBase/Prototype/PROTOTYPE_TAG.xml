@@ -1,0 +1,21 @@
+﻿<PROTOTYPE_TAG>
+
+	<!-- Keeps part of common information and information that can be assigned -->
+	<TAG Name="Tag">
+		<!-- Is this TAG visible when inspecting the object/ character?  -->
+		<Visible Name="visible" Type="bool" Required="TRUE"/>
+		<!-- Is this TAG listed on character paperdoll page?  -->
+		<Listed Name="listed" Type="bool" Required="FALSE"/>
+		<!-- Can it stack?  -->
+		<UseCount Name="useCount" Type="bool" Required="FALSE"/>
+        <!-- Tag data ie power or other value associated with it permanently  -->
+        <Data Name="data" Type="float" Required="FALSE"/>
+		<!-- Description of given object  -->
+		<DescriptionInfo Name="descriptionInfo" Type="DESCRIPTION_INFO" Required="FALSE"/>
+		<!-- Tag category  -->
+		<TagType Name="tagTypes" Type="ArrayE_TAG_TYPE" Required="TRUE"/>
+		<!-- Shared tag qualities  -->	
+		<Parent Name="parents" Type="ArrayTAG" Required="FALSE"/>
+	</TAG>
+	
+</PROTOTYPE_TAG>

@@ -1,0 +1,197 @@
+﻿<SUBSKILLS_SPELLS>
+
+	<SUBSKILL-LIGHTNING_SPELL Delay="3.0" Animation="Slash2" Sound="SubskillLightning">
+		<DescriptionInfo Name="DES_SUBSKILL_LIGHTNING_SPELL" Description="DES_SUBSKILL_LIGHTNING_SPELL_DES" IconName="SubskillLightningSpell"/>
+        <ShortInfo TriggerIcon="TAG-TRIGGER_DO_CAST" DamageIcon="TAG-DAMAGE_TRUE" TargetIcon="TAG-TARGET_SELECTED_ENEMY" AttackInfo="{SCRIPT:SI_Damage}"/>
+		<Trigger Priority="10" RequiredToBeInFrontline="FALSE" RequiredToBeInBackline="FALSE">
+			<TriggerGroup Value="DoCast"/>
+			<TriggerScript ScriptName=""/>
+		</Trigger>
+		<Targets>
+			<TargetScript ScriptName="Trg_OpponentBattlefieldOrHandPositions"/>
+			<TargetCountRange MinimumCount="1" MaximumCount="1" TargetIndication="Random"/>
+		</Targets>
+		<Activation ScriptName="Act_PureSpellAttack"/>
+		<ChallengeType Value="TypeMental"/>
+		<ChallengeType Value="TypePhysical"/>
+		<ChallengeType Value="TypeSpirit"/>
+        <SubskillAttributesOnLevel Level="0" PowerLevel="0.0">
+            <SubskillAttribute Identifier="PowerPoint" AttributeFloatValue="1"/>
+            <MainAtt Amount="1.0" Tag="TAG-CA_1"/>
+        </SubskillAttributesOnLevel>
+        <SubskillAttributesOnLevel Level="1" PowerLevel="10.0">
+            <SubskillAttribute Identifier="PowerPoint" AttributeFloatValue="1"/>
+            <MainAtt Amount="5.0" Tag="TAG-CA_1"/>
+        </SubskillAttributesOnLevel>
+        <SubskillAttributesOnLevel Level="2" PowerLevel="30.0">
+            <SubskillAttribute Identifier="PowerPoint" AttributeFloatValue="2"/>
+            <MainAtt Amount="30.0" Tag="TAG-CA_1"/>
+        </SubskillAttributesOnLevel>
+        <SubskillAttributesOnLevel Level="3" PowerLevel="90.0">
+            <SubskillAttribute Identifier="PowerPoint" AttributeFloatValue="4"/>
+            <MainAtt Amount="80.0" Tag="TAG-CA_1"/>
+        </SubskillAttributesOnLevel>
+        <SubskillAttributesOnLevel Level="4" PowerLevel="250.0">
+            <SubskillAttribute Identifier="PowerPoint" AttributeFloatValue="7"/>
+            <MainAtt Amount="120.0" Tag="TAG-CA_1"/>
+        </SubskillAttributesOnLevel>
+        <SubskillAttributesOnLevel Level="5" PowerLevel="500.0">
+            <SubskillAttribute Identifier="PowerPoint" AttributeFloatValue="10"/>
+            <MainAtt Amount="200.0" Tag="TAG-CA_1"/>
+        </SubskillAttributesOnLevel>
+	</SUBSKILL-LIGHTNING_SPELL>
+
+	<SUBSKILL-SUMMON_DEMON_SPELL Delay="3.0" Animation="Spell2" Sound="SubskillSummonDemon">
+		<DescriptionInfo Name="DES_SUBSKILL_SUMMON_DEMON_SPELL" Description="DES_SUBSKILL_SUMMON_DEMON_SPELL_DES" IconName="SubskillSummonDemon"/>
+        <ShortInfo TriggerIcon="TAG-TRIGGER_DO_CAST_INSTANT" DamageIcon="TAG-DAMAGE_SUMMON" TargetIcon="TAG-TARGET_EMPTY_ALLY_SLOT" AttackInfo="{SCRIPT:SI_Summon}"/>
+		<Trigger Priority="20" RequiredToBeInFrontline="FALSE" RequiredToBeInBackline="FALSE">
+			<TriggerGroup Value="DoCastInstant"/>
+			<TriggerScript ScriptName=""/>
+		</Trigger>
+		<Targets>
+			<TargetScript ScriptName="Trg_OwnFreePositions"/>
+			<TargetCountRange MinimumCount="1" MaximumCount="1" TargetIndication="Random"/>
+		</Targets>
+		<Activation ScriptName="Act_Summon"/>
+		<ChallengeType Value="TypeMental"/>
+		<ChallengeType Value="TypePhysical"/>
+		<ChallengeType Value="TypeSpirit"/>
+		<SubskillAttributesOnLevel Level="0" PowerLevel="0.0">
+			<SubskillAttribute Identifier="PowerPoint" AttributeFloatValue="1"/>
+			<SubskillAttribute Identifier="Summon" AttributeStringValue="SUBRACE-FAIL_SUMMON"/>
+			<SubskillAttribute Identifier="SummonLevel" AttributeFloatValue="0"/>
+			<SubskillAttribute Identifier="SummonEquipment" AttributeFloatValue="0"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="1" PowerLevel="10.0">
+			<SubskillAttribute Identifier="PowerPoint" AttributeFloatValue="1"/>
+			<SubskillAttribute Identifier="Summon" AttributeStringValue="SUBRACE-SUMMON_DEMON_SKSHACK"/>
+			<SubskillAttribute Identifier="SummonLevel" AttributeFloatValue="2"/>
+			<SubskillAttribute Identifier="SummonEquipment" AttributeFloatValue="1"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="2" PowerLevel="30.0">
+			<SubskillAttribute Identifier="PowerPoint" AttributeFloatValue="2"/>
+			<SubskillAttribute Identifier="Summon" AttributeStringValue="SUBRACE-SUMMON_DEMON_CMUCH"/>
+			<SubskillAttribute Identifier="SummonLevel" AttributeFloatValue="3"/>
+			<SubskillAttribute Identifier="SummonEquipment" AttributeFloatValue="1"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="3" PowerLevel="90.0">
+			<SubskillAttribute Identifier="PowerPoint" AttributeFloatValue="3"/>
+			<SubskillAttribute Identifier="Summon" AttributeStringValue="SUBRACE-SUMMON_DEMON_POLUDNICA"/>
+			<SubskillAttribute Identifier="SummonLevel" AttributeFloatValue="2"/>
+			<SubskillAttribute Identifier="SummonEquipment" AttributeFloatValue="1"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="4" PowerLevel="250.0">
+			<SubskillAttribute Identifier="PowerPoint" AttributeFloatValue="4"/>
+			<SubskillAttribute Identifier="Summon" AttributeStringValue="SUBRACE-SUMMON_DEMON_ALKONOST"/>
+			<SubskillAttribute Identifier="SummonLevel" AttributeFloatValue="2"/>
+			<SubskillAttribute Identifier="SummonEquipment" AttributeFloatValue="1"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="5" PowerLevel="500.0">
+			<SubskillAttribute Identifier="PowerPoint" AttributeFloatValue="5"/>
+			<SubskillAttribute Identifier="Summon" AttributeStringValue="SUBRACE-SUMMON_DEMON_BIES"/>
+			<SubskillAttribute Identifier="SummonLevel" AttributeFloatValue="3"/>
+			<SubskillAttribute Identifier="SummonEquipment" AttributeFloatValue="1"/>
+		</SubskillAttributesOnLevel>
+	</SUBSKILL-SUMMON_DEMON_SPELL>	
+	<SUBSKILL-SUMMON_UNLIVING_SPELL Delay="4.0" Animation="Spell2" Sound="SubskillSummonUnliving">
+		<DescriptionInfo Name="DES_SUBSKILL_SUMMON_UNLIVING_SPELL" Description="DES_SUBSKILL_SUMMON_UNLIVING_SPELL_DES" IconName="SubskillSummonUnliving"/>
+        <ShortInfo TriggerIcon="TAG-TRIGGER_DO_CAST_INSTANT" DamageIcon="TAG-DAMAGE_SUMMON" TargetIcon="TAG-TARGET_EMPTY_ALLY_SLOT" AttackInfo="{SCRIPT:SI_Summon}"/>
+		<Trigger Priority="20" RequiredToBeInFrontline="FALSE" RequiredToBeInBackline="FALSE">
+			<TriggerGroup Value="DoCastInstant"/>
+			<TriggerScript ScriptName=""/>
+		</Trigger>
+		<Targets>
+			<TargetScript ScriptName="Trg_OwnFreePositions"/>
+			<TargetCountRange MinimumCount="1" MaximumCount="2" TargetIndication="Random"/>
+		</Targets>
+		<Activation ScriptName="Act_Summon"/>
+		<ChallengeType Value="TypePhysical"/>
+		<ChallengeType Value="TypeSpirit"/>
+		<SubskillAttributesOnLevel Level="0" PowerLevel="0.0">
+			<SubskillAttribute Identifier="PowerPoint" AttributeFloatValue="1"/>
+			<SubskillAttribute Identifier="Summon" AttributeStringValue="SUBRACE-FAIL_SUMMON"/>
+			<SubskillAttribute Identifier="SummonLevel" AttributeFloatValue="0"/>
+			<SubskillAttribute Identifier="SummonEquipment" AttributeFloatValue="0"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="1" PowerLevel="10.0">
+			<SubskillAttribute Identifier="PowerPoint" AttributeFloatValue="1"/>
+			<SubskillAttribute Identifier="Summon" AttributeStringValue="SUBRACE-SUMMON_UNLI_BROKEN_SKELETON"/>
+			<SubskillAttribute Identifier="SummonLevel" AttributeFloatValue="1"/>
+			<SubskillAttribute Identifier="SummonEquipment" AttributeFloatValue="1"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="2" PowerLevel="30.0">
+			<SubskillAttribute Identifier="PowerPoint" AttributeFloatValue="2"/>
+			<SubskillAttribute Identifier="Summon" AttributeStringValue="SUBRACE-SUMMON_UNLI_CORPSE"/>
+			<SubskillAttribute Identifier="SummonLevel" AttributeFloatValue="4"/>
+			<SubskillAttribute Identifier="SummonEquipment" AttributeFloatValue="1"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="3" PowerLevel="90.0">
+			<SubskillAttribute Identifier="PowerPoint" AttributeFloatValue="3"/>
+			<SubskillAttribute Identifier="Summon" AttributeStringValue="SUBRACE-SUMMON_UNLI_TOPIELEC"/>
+			<SubskillAttribute Identifier="SummonLevel" AttributeFloatValue="5"/>
+			<SubskillAttribute Identifier="SummonEquipment" AttributeFloatValue="1"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="4" PowerLevel="250.0">
+			<SubskillAttribute Identifier="PowerPoint" AttributeFloatValue="4"/>
+			<SubskillAttribute Identifier="Summon" AttributeStringValue="SUBRACE-SUMMON_UNLI_HUM_SKELETON"/>
+			<SubskillAttribute Identifier="SummonLevel" AttributeFloatValue="8"/>
+			<SubskillAttribute Identifier="SummonEquipment" AttributeFloatValue="1"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="5" PowerLevel="500.0">
+			<SubskillAttribute Identifier="PowerPoint" AttributeFloatValue="5"/>
+			<SubskillAttribute Identifier="Summon" AttributeStringValue="SUBRACE-SUMMON_UNLI_ORC_SKELETON"/>
+			<SubskillAttribute Identifier="SummonLevel" AttributeFloatValue="12"/>
+			<SubskillAttribute Identifier="SummonEquipment" AttributeFloatValue="1"/>
+		</SubskillAttributesOnLevel>
+	</SUBSKILL-SUMMON_UNLIVING_SPELL>
+	<SUBSKILL-SUMMON_WILD_BEAST_SPELL Delay="3.0" Animation="Spell2" Sound="SubskillSummonWildBeast">
+		<DescriptionInfo Name="DES_SUBSKILL_SUMMON_WILD_BEAST_SPELL" Description="DES_SUBSKILL_SUMMON_WILD_BEAST_SPELL_DES" IconName="SubskillSummonWildBeast"/>
+        <ShortInfo TriggerIcon="TAG-TRIGGER_DO_CAST_INSTANT" DamageIcon="TAG-DAMAGE_SUMMON" TargetIcon="TAG-TARGET_EMPTY_ALLY_SLOT" AttackInfo="{SCRIPT:SI_Summon}"/>
+		<Trigger Priority="20" RequiredToBeInFrontline="FALSE" RequiredToBeInBackline="FALSE">
+			<TriggerGroup Value="DoCastInstant"/>
+			<TriggerScript ScriptName=""/>
+		</Trigger>
+		<Targets>
+			<TargetScript ScriptName="Trg_OwnFreePositions"/>
+			<TargetCountRange MinimumCount="1" MaximumCount="2" TargetIndication="Chosen"/>
+		</Targets>
+		<Activation ScriptName="Act_Summon"/>
+		<ChallengeType Value="TypePhysical"/>
+		<SubskillAttributesOnLevel Level="0" PowerLevel="0.0">
+			<SubskillAttribute Identifier="PowerPoint" AttributeFloatValue="1"/>
+			<SubskillAttribute Identifier="Summon" AttributeStringValue="SUBRACE-FAIL_SUMMON"/>
+			<SubskillAttribute Identifier="SummonLevel" AttributeFloatValue="0"/>
+			<SubskillAttribute Identifier="SummonEquipment" AttributeFloatValue="0"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="1" PowerLevel="10.0">
+			<SubskillAttribute Identifier="PowerPoint" AttributeFloatValue="1"/>
+			<SubskillAttribute Identifier="Summon" AttributeStringValue="SUBRACE-SUMMON_RAT"/>
+			<SubskillAttribute Identifier="SummonLevel" AttributeFloatValue="1"/>
+			<SubskillAttribute Identifier="SummonEquipment" AttributeFloatValue="0"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="2" PowerLevel="30.0">
+			<SubskillAttribute Identifier="PowerPoint" AttributeFloatValue="2"/>
+			<SubskillAttribute Identifier="Summon" AttributeStringValue="SUBRACE-SUMMON_SPIDER_SPITTING_FRONT"/>
+			<SubskillAttribute Identifier="SummonLevel" AttributeFloatValue="3"/>
+			<SubskillAttribute Identifier="SummonEquipment" AttributeFloatValue="0"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="3" PowerLevel="90.0">
+			<SubskillAttribute Identifier="PowerPoint" AttributeFloatValue="3"/>
+			<SubskillAttribute Identifier="Summon" AttributeStringValue="SUBRACE-SUMMON_SPIDER_GIANT"/>
+			<SubskillAttribute Identifier="SummonLevel" AttributeFloatValue="5"/>
+			<SubskillAttribute Identifier="SummonEquipment" AttributeFloatValue="0"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="4" PowerLevel="250.0">
+			<SubskillAttribute Identifier="PowerPoint" AttributeFloatValue="4"/>
+			<SubskillAttribute Identifier="Summon" AttributeStringValue="SUBRACE-SUMMON_WOLF"/>
+			<SubskillAttribute Identifier="SummonLevel" AttributeFloatValue="6"/>
+			<SubskillAttribute Identifier="SummonEquipment" AttributeFloatValue="0"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="5" PowerLevel="500.0">
+			<SubskillAttribute Identifier="PowerPoint" AttributeFloatValue="5"/>
+			<SubskillAttribute Identifier="Summon" AttributeStringValue="SUBRACE-SUMMON_BOAR_GIANT_WILD"/>
+			<SubskillAttribute Identifier="SummonLevel" AttributeFloatValue="10"/>
+			<SubskillAttribute Identifier="SummonEquipment" AttributeFloatValue="0"/>
+		</SubskillAttributesOnLevel>
+	</SUBSKILL-SUMMON_WILD_BEAST_SPELL>
+</SUBSKILLS_SPELLS>

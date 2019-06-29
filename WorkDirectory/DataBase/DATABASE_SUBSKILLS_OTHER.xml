@@ -1,0 +1,67 @@
+﻿<SUBSKILLS_OTHER>
+	<SUBSKILL-INTERNAL_PAIN Delay="0.0" Animation="BloodyHit3" Sound="SubskillInternalPain">
+		<DescriptionInfo Name="DES_SUBSKILL_INTERNAL_PAIN" Description="DES_SUBSKILL_INTERNAL_PAIN_DES" IconName="SubskillInternalPain"/>
+		<ShortInfo TriggerIcon="TAG-TRIGGER_ON_DAMAGE" DamageIcon="TAG-DAMAGE_NORMAL" TargetIcon="TAG-TARGET_SELF" AttackInfo="{SCRIPT:SI_LoseHealPercentage}"/>
+		<Trigger Priority="0" RequiredToBeInFrontline="FALSE" RequiredToBeInBackline="FALSE">
+			<TriggerGroup Value="OnDamage"/>
+			<TriggerScript ScriptName="Tri_OnDamage"/>
+		</Trigger>
+		<Targets>
+			<TargetScript ScriptName="Trg_Self"/>
+			<TargetCountRange MinimumCount="1" MaximumCount="1" TargetIndication="Random"/>
+		</Targets>
+		<Activation ScriptName="Act_LoseHealPercentage"/>
+		<ChallengeType Value="TypePhysical"/>
+		<SubskillAttributesOnLevel Level="0" PowerLevel="0.0">
+			<MainAtt Amount="0.0" Tag="TAG-MAX_HEALTH_PHYSICAL"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="1" PowerLevel="0.0">
+			<MainAtt Amount="0.1" Tag="TAG-MAX_HEALTH_PHYSICAL"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="2" PowerLevel="0.0">
+			<MainAtt Amount="0.1" Tag="TAG-MAX_HEALTH_PHYSICAL"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="3" PowerLevel="0.0">
+			<MainAtt Amount="0.2" Tag="TAG-MAX_HEALTH_PHYSICAL"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="4" PowerLevel="0.0">
+			<MainAtt Amount="0.2" Tag="TAG-MAX_HEALTH_PHYSICAL"/>
+		</SubskillAttributesOnLevel>
+		<SubskillAttributesOnLevel Level="5" PowerLevel="0.0">
+			<MainAtt Amount="0.3" Tag="TAG-MAX_HEALTH_PHYSICAL"/>
+		</SubskillAttributesOnLevel>
+	</SUBSKILL-INTERNAL_PAIN>
+
+	<SUBSKILL-BLOOD_THIRSTY Delay="0" Animation="" Sound="">
+        <DescriptionInfo Name="DES_SUBSKILL_BLOOD_THIRSTY" Description="DES_SUBSKILL_BLOOD_THIRSTY_DES" IconName="SubskillBloodthirsty"/>
+        <ShortInfo TriggerIcon="TAG-TRIGGER_GROUP_ON_START_TURN" DamageIcon="TAG-DAMAGE_NORMAL" TargetIcon="TAG-TARGET_SELF_GROUP" AttackInfo="{SCRIPT:SI_DefaultAttributeChange}"/>
+        <Trigger Priority="10" RequiredToBeInFrontline="FALSE" RequiredToBeInBackline="FALSE">
+            <TriggerGroup Value="OnStartTurn"/>
+            <TriggerScript ScriptName=""/>
+        </Trigger>
+        <Targets>
+            <TargetScript ScriptName="Trg_Self"/>
+            <TargetCountRange MinimumCount="1" MaximumCount="1" TargetIndication="Random"/>
+        </Targets>
+        <Activation ScriptName="WActA_StrigaBite"/>
+        <SubskillAttributesOnLevel Level="0" PowerLevel="0.0"> 
+			<SubskillAttribute Identifier="StrigaBite" AttributeStringValue="+" AttributeFloatValue="0.0"/>     
+        </SubskillAttributesOnLevel>
+        <SubskillAttributesOnLevel Level="1" PowerLevel="0.0">
+			<SubskillAttribute Identifier="StrigaBite" AttributeStringValue="+" AttributeFloatValue="1.0"/>
+        </SubskillAttributesOnLevel>
+        <SubskillAttributesOnLevel Level="2" PowerLevel="0.0">
+			<SubskillAttribute Identifier="StrigaBite" AttributeStringValue="+" AttributeFloatValue="1.0"/>      
+        </SubskillAttributesOnLevel>
+        <SubskillAttributesOnLevel Level="3" PowerLevel="0.0">
+			<SubskillAttribute Identifier="StrigaBite" AttributeStringValue="+" AttributeFloatValue="1.0"/>
+        </SubskillAttributesOnLevel>
+        <SubskillAttributesOnLevel Level="4" PowerLevel="0.0">
+			<SubskillAttribute Identifier="StrigaBite" AttributeStringValue="+" AttributeFloatValue="2.0"/>
+        </SubskillAttributesOnLevel>
+        <SubskillAttributesOnLevel Level="5" PowerLevel="0.0">
+			<SubskillAttribute Identifier="StrigaBite" AttributeStringValue="+" AttributeFloatValue="2.0"/>
+        </SubskillAttributesOnLevel>
+    </SUBSKILL-BLOOD_THIRSTY>
+
+</SUBSKILLS_OTHER>

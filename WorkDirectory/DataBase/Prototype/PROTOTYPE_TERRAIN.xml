@@ -1,0 +1,17 @@
+﻿<PROTOTYPE_TERRAIN>
+
+	<!-- define types of terrain and differences in resources  -->
+	<TERRAIN Name="Terrain">
+		<!-- movement cost on given terrain type -->
+		<MovementCost Name="movementCost" Type="int" Required="FALSE"/>
+		<!-- terrain identifier  -->
+		<ID Name="ID" Type="string" Required="FALSE"/>
+		<!-- Description of given object  -->
+		<DescriptionInfo Name="descriptionInfo" Type="DESCRIPTION_INFO" Required="FALSE"/>
+		<!-- resources available and their chance to appear -->
+		<ResourcesSpawnChance Name="resourcesSpawnChance" Type="ArrayRESOURCE_CHANCE" Required="FALSE"/>
+		<!-- shared tag attributes  -->
+		<Tag Name="tags" Type="ArrayTAG" Required="FALSE"/>		
+	</TERRAIN>
+	
+</PROTOTYPE_TERRAIN>

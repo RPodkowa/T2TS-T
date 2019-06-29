@@ -1,0 +1,1275 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<MODULE xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Shadowkin" lastEventIndex="34" allowToUse="true" uniqueModuleID="0">
+  <Adventure name="ShadowKinTradesmall" uniqueID="29" allowToUse="false" typeGeneric="false" typePerGroupGeneric="false" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="12" joinIsForced="false" joinType="OnlyOwn" joinRange="SinglePosition">
+    <nodes xsi:type="NodeStarting" ID="1" positionX="10" positionY="-10" width="347" height="704" image="Event006">
+      <outputs ownerID="1" targetID="2" fromX="334" fromY="-656" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="2" positionX="478.965057" positionY="-130.811157" width="350" height="966">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="stuff">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsItems" />
+          </LogicFilter>
+          <LogicFilter name="armour">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsItems" parameter="1" tag="TAG-ARMOUR" />
+          </LogicFilter>
+          <LogicFilter name="stone">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsResources" parameter="1" tag="TAG-GRANITE" />
+          </LogicFilter>
+          <LogicProcessing name="unstuff" makePublic="true" list1="stuff">
+            <scriptCallWithTag scriptName="FLP_FilterAnyUnEquippedItems" />
+          </LogicProcessing>
+          <LogicProcessing name="metsto" makePublic="true" list1="armour" list2="stone">
+            <scriptCallWithTag scriptName="FLP_AorB" />
+          </LogicProcessing>
+          <LogicProcessing name="sell" makePublic="true" list1="unstuff" list2="metsto">
+            <scriptCallWithTag scriptName="FLP_AminusB" />
+          </LogicProcessing>
+        </FilterBlock>
+      </logic>
+      <outputs name="Handel." ownerID="2" targetID="7" group="G1" fromX="804" fromY="-621" />
+      <outputs name="Handel." ownerID="2" targetID="5" group="G1" fromX="804" fromY="-702" />
+      <outputs name="Handel." ownerID="2" targetID="3" group="G1" fromX="804" fromY="-782" />
+      <outputs name="Wracaj innym razem." ownerID="2" targetID="6" fromX="804" fromY="-862" />Stoiska handlowca sa dla ciebie otwarte.   
+</nodes>
+    <nodes xsi:type="NodeTrade" ID="3" positionX="1021.18225" positionY="131.77655" width="460" height="479" traderProfile="TRADER-SHADOW_KIN_SMALL" playerInventory="sell">
+      <outputs name="Confirm" ownerID="3" targetID="6" fromX="1451" fromY="-196" />
+      <outputs name="Cancel" ownerID="3" targetID="11" fromX="1451" fromY="-276" />
+    </nodes>
+    <nodes xsi:type="NodeTrade" ID="4" positionX="1662" positionY="-484" width="460" height="479" traderProfile="TRADER-SHADOW_KIN_SMALL" playerInventory="nofood" startingBalance="-50">
+      <logic>
+        <ModifierBlock>
+          <LogicFilter name="food">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsItems" parameter="1" tag="TAG-FOOD" />
+          </LogicFilter>
+          <LogicProcessing name="nosell" list1="food" list2="metsto">
+            <scriptCallWithTag scriptName="FLP_AorB" />
+          </LogicProcessing>
+          <LogicProcessing name="nofood" makePublic="true" list1="unstuff" list2="nosell">
+            <scriptCallWithTag scriptName="FLP_AminusB" />
+          </LogicProcessing>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Confirm" ownerID="4" targetID="6" fromX="2092" fromY="-812" />
+      <outputs name="Cancel" ownerID="4" targetID="11" fromX="2092" fromY="-892" />
+    </nodes>
+    <nodes xsi:type="NodeTrade" ID="5" positionX="1804.08765" positionY="-1106.60278" width="460" height="479" traderProfile="TRADER-SHADOW_KIN_SMALL_FRIENDLY" playerInventory="sell">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_PlayersHaveSharedTag" parameter="50" tag="TAG-LOYALTY_SHADOW_KIN" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Confirm" ownerID="5" targetID="6" fromX="2234" fromY="-1434" />
+      <outputs name="Cancel" ownerID="5" targetID="11" fromX="2234" fromY="-1515" />
+    </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="6" positionX="2576.332" positionY="-789.021667" width="350" height="408" linkedEventUniqueID="0" />
+    <nodes xsi:type="NodeAdventure" ID="7" positionX="1119.83972" positionY="-417.843842" width="350" height="805">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_PlayersHaveSharedTag" parameter="0" tag="TAG-LOYALTY_SHADOW_KIN" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Handel." ownerID="7" targetID="4" fromX="1445" fromY="-908" />
+      <outputs name="Wracaj innym razem." ownerID="7" targetID="6" fromX="1445" fromY="-989" />„Nie jestescie naszymi przyjaciolmi, wiec nie bedziemy przyjmowac zywnosci jako platnosci, a najpierw musicie zaplacic nam dodatkowo.'</nodes>
+    <nodes xsi:type="NodeAdventure" ID="11" positionX="1789.41174" positionY="355.919952" width="350" height="725">
+      <outputs name="Wyjdz." ownerID="11" targetID="6" fromX="2115" fromY="-135" />„Dobry handel z toba. Bogowie niech beda z toba.'</nodes>
+  </Adventure>
+  <Adventure name="ShadowKinTrademedium" uniqueID="30" typeGeneric="false" typePerGroupGeneric="false" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="12" joinIsForced="false" joinType="OnlyOwn" joinRange="SinglePosition">
+    <nodes xsi:type="NodeStarting" ID="1" positionX="10" positionY="-10" width="347" height="704" image="Event009">
+      <outputs ownerID="1" targetID="2" fromX="334" fromY="-656" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="2" positionX="478.965057" positionY="-130.811157" width="350" height="966">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="stuff">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsItems" />
+          </LogicFilter>
+          <LogicFilter name="armour">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsItems" parameter="1" tag="TAG-ARMOUR" />
+          </LogicFilter>
+          <LogicFilter name="stone">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsResources" parameter="1" tag="TAG-GRANITE" />
+          </LogicFilter>
+          <LogicProcessing name="unstuff" makePublic="true" list1="stuff">
+            <scriptCallWithTag scriptName="FLP_FilterAnyUnEquippedItems" />
+          </LogicProcessing>
+          <LogicProcessing name="metsto" makePublic="true" list1="armour" list2="stone">
+            <scriptCallWithTag scriptName="FLP_AorB" />
+          </LogicProcessing>
+          <LogicProcessing name="sell" makePublic="true" list1="unstuff" list2="metsto">
+            <scriptCallWithTag scriptName="FLP_AminusB" />
+          </LogicProcessing>
+        </FilterBlock>
+      </logic>
+      <outputs name="Handel." ownerID="2" targetID="7" group="G1" fromX="804" fromY="-621" />
+      <outputs name="Handel." ownerID="2" targetID="5" group="G1" fromX="804" fromY="-702" />
+      <outputs name="Handel." ownerID="2" targetID="3" group="G1" fromX="804" fromY="-782" />
+      <outputs name="Wracaj innym razem." ownerID="2" targetID="6" fromX="804" fromY="-862" />Stoiska kupca sa otwarte dla ciebie.  </nodes>
+    <nodes xsi:type="NodeTrade" ID="3" positionX="1021.18225" positionY="131.77655" width="460" height="479" traderProfile="TRADER-SHADOW_KIN" playerInventory="sell">
+      <outputs name="Confirm" ownerID="3" targetID="6" fromX="1451" fromY="-196" />
+      <outputs name="Cancel" ownerID="3" targetID="11" fromX="1451" fromY="-276" />
+    </nodes>
+    <nodes xsi:type="NodeTrade" ID="4" positionX="1642" positionY="-506" width="460" height="479" traderProfile="TRADER-SHADOW_KIN" playerInventory="nofood" startingBalance="-50">
+      <logic>
+        <ModifierBlock>
+          <LogicFilter name="food">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsItems" parameter="1" tag="TAG-FOOD" />
+          </LogicFilter>
+          <LogicProcessing name="nosell" list1="food" list2="metsto">
+            <scriptCallWithTag scriptName="FLP_AorB" />
+          </LogicProcessing>
+          <LogicProcessing name="nofood" makePublic="true" list1="unstuff" list2="nosell">
+            <scriptCallWithTag scriptName="FLP_AminusB" />
+          </LogicProcessing>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Confirm" ownerID="4" targetID="6" fromX="2072" fromY="-834" />
+      <outputs name="Cancel" ownerID="4" targetID="11" fromX="2072" fromY="-914" />
+    </nodes>
+    <nodes xsi:type="NodeTrade" ID="5" positionX="1804.08765" positionY="-1106.60278" width="460" height="479" traderProfile="TRADER-SHADOW_KIN_FRIENDLY" playerInventory="sell">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_PlayersHaveSharedTag" parameter="50" tag="TAG-LOYALTY_SHADOW_KIN" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Confirm" ownerID="5" targetID="6" fromX="2234" fromY="-1434" />
+      <outputs name="Cancel" ownerID="5" targetID="11" fromX="2234" fromY="-1515" />
+    </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="6" positionX="2576.332" positionY="-789.021667" width="350" height="408" linkedEventUniqueID="0" />
+    <nodes xsi:type="NodeAdventure" ID="7" positionX="1119.83972" positionY="-417.843842" width="350" height="805">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_PlayersHaveSharedTag" parameter="0" tag="TAG-LOYALTY_SHADOW_KIN" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Handel." ownerID="7" targetID="4" fromX="1445" fromY="-908" />
+      <outputs name="Wracaj innym razem." ownerID="7" targetID="6" fromX="1445" fromY="-989" />„Nie jestescie naszymi przyjaciolmi, wiec nie bedziemy przyjmowac zywnosci jako platnosci, a najpierw musicie zaplacic nam dodatkowo.'</nodes>
+    <nodes xsi:type="NodeAdventure" ID="11" positionX="1789.41174" positionY="355.919952" width="350" height="725">
+      <outputs name="Wyjdz." ownerID="11" targetID="6" fromX="2115" fromY="-135" />„Dobry handel z toba. Bogowie niech beda z toba.'</nodes>
+  </Adventure>
+  <Adventure name="ShadowKinTradeadv" uniqueID="31" typeGeneric="false" typePerGroupGeneric="false" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="12" joinIsForced="false" joinType="OnlyOwn" joinRange="SinglePosition">
+    <nodes xsi:type="NodeStarting" ID="1" positionX="10" positionY="-10" width="347" height="704" image="Event009">
+      <outputs ownerID="1" targetID="2" fromX="334" fromY="-656" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="2" positionX="478.965057" positionY="-130.811157" width="350" height="966">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="stuff">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsItems" />
+          </LogicFilter>
+          <LogicFilter name="armour">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsItems" parameter="1" tag="TAG-ARMOUR" />
+          </LogicFilter>
+          <LogicFilter name="stone">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsResources" parameter="1" tag="TAG-GRANITE" />
+          </LogicFilter>
+          <LogicProcessing name="unstuff" makePublic="true" list1="stuff">
+            <scriptCallWithTag scriptName="FLP_FilterAnyUnEquippedItems" />
+          </LogicProcessing>
+          <LogicProcessing name="metsto" makePublic="true" list1="armour" list2="stone">
+            <scriptCallWithTag scriptName="FLP_AorB" />
+          </LogicProcessing>
+          <LogicProcessing name="sell" makePublic="true" list1="unstuff" list2="metsto">
+            <scriptCallWithTag scriptName="FLP_AminusB" />
+          </LogicProcessing>
+        </FilterBlock>
+      </logic>
+      <outputs name="Handel." ownerID="2" targetID="7" group="G1" fromX="804" fromY="-621" />
+      <outputs name="Handel." ownerID="2" targetID="5" group="G1" fromX="804" fromY="-702" />
+      <outputs name="Handel." ownerID="2" targetID="3" group="G1" fromX="804" fromY="-782" />
+      <outputs name="Wracaj innym razem." ownerID="2" targetID="6" fromX="804" fromY="-862" />Stoiska handlowca sa dla ciebie otwarte.   
+</nodes>
+    <nodes xsi:type="NodeTrade" ID="3" positionX="1021.18225" positionY="131.77655" width="460" height="479" traderProfile="TRADER-SHADOW_KIN_LARGE" playerInventory="sell">
+      <outputs name="Confirm" ownerID="3" targetID="6" fromX="1451" fromY="-196" />
+      <outputs name="Cancel" ownerID="3" targetID="11" fromX="1451" fromY="-276" />
+    </nodes>
+    <nodes xsi:type="NodeTrade" ID="4" positionX="1786.36035" positionY="-502.659027" width="460" height="479" traderProfile="TRADER-SHADOW_KIN_LARGE" playerInventory="nofood" startingBalance="-50">
+      <logic>
+        <ModifierBlock>
+          <LogicFilter name="food">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsItems" parameter="1" tag="TAG-FOOD" />
+          </LogicFilter>
+          <LogicProcessing name="nosell" list1="food" list2="metsto">
+            <scriptCallWithTag scriptName="FLP_AorB" />
+          </LogicProcessing>
+          <LogicProcessing name="nofood" makePublic="true" list1="unstuff" list2="nosell">
+            <scriptCallWithTag scriptName="FLP_AminusB" />
+          </LogicProcessing>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Confirm" ownerID="4" targetID="6" fromX="2216" fromY="-831" />
+      <outputs name="Cancel" ownerID="4" targetID="11" fromX="2216" fromY="-911" />
+    </nodes>
+    <nodes xsi:type="NodeTrade" ID="5" positionX="1804.08765" positionY="-1106.60278" width="460" height="479" traderProfile="TRADER-SHADOW_KIN_LARGE_FRIENDLY" playerInventory="sell">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_PlayersHaveSharedTag" parameter="50" tag="TAG-LOYALTY_SHADOW_KIN" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Confirm" ownerID="5" targetID="6" fromX="2234" fromY="-1434" />
+      <outputs name="Cancel" ownerID="5" targetID="11" fromX="2234" fromY="-1515" />
+    </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="6" positionX="2576.332" positionY="-789.021667" width="350" height="408" linkedEventUniqueID="0" />
+    <nodes xsi:type="NodeAdventure" ID="7" positionX="1119.83972" positionY="-417.843842" width="350" height="805">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_PlayersHaveSharedTag" parameter="0" tag="TAG-LOYALTY_SHADOW_KIN" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Handel." ownerID="7" targetID="4" fromX="1445" fromY="-908" />
+      <outputs name="Wracaj innym razem." ownerID="7" targetID="6" fromX="1445" fromY="-989" />„Nie jestescie naszymi przyjaciolmi, wiec nie bedziemy przyjmowac zywnosci jako platnosci, a najpierw musicie zaplacic nam dodatkowo.'</nodes>
+    <nodes xsi:type="NodeAdventure" ID="11" positionX="1789.41174" positionY="355.919952" width="350" height="725">
+      <outputs name="Wyjdz." ownerID="11" targetID="6" fromX="2115" fromY="-135" />„Skonczylismy, zostaw nas teraz.'</nodes>
+  </Adventure>
+  <Adventure name="ShadowkinTown" uniqueID="32" typeGeneric="false" typePerGroupGeneric="false" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="65" joinIsForced="false" joinType="AllAlly" joinRange="MovementArea">
+    <nodes xsi:type="NodeStarting" ID="1" positionX="-57" positionY="173" width="347" height="741" image="Event005">
+      <outputs ownerID="1" targetID="33" group="G1" fromX="267" fromY="-430" />
+      <outputs ownerID="1" targetID="2" group="G1" fromX="267" fromY="-510" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="2" positionX="443" positionY="-132" width="350" height="1286">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="ppl" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" />
+          </LogicFilter>
+          <LogicFilter name="shelf" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" tag="SUBRACE-ELF_SHADOW" />
+          </LogicFilter>
+          <LogicFilter name="orc" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" tag="RACE-ORC" />
+          </LogicFilter>
+          <LogicFilter name="goblin" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" tag="RACE-GOBLIN" />
+          </LogicFilter>
+          <LogicFilter name="ndemon" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="TAG-NIGHT" />
+          </LogicFilter>
+          <LogicFilter name="demon" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" tag="RACE-DEMON" />
+          </LogicFilter>
+          <LogicFilter name="elf" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" tag="RACE-ELF" />
+          </LogicFilter>
+          <LogicFilter name="children" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="TAG-CHILD" />
+          </LogicFilter>
+          <LogicFilter name="elfchild" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" tag="SUBRACE-ELF_CHILD" />
+          </LogicFilter>
+          <LogicFilter name="stuff">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsItems" />
+          </LogicFilter>
+          <LogicProcessing name="elfnochild" makePublic="true" list1="elf" list2="children">
+            <scriptCallWithTag scriptName="FLP_AminusB" />
+          </LogicProcessing>
+          <LogicProcessing name="mentalwounds" makePublic="true" list1="ppl">
+            <scriptCallWithTag scriptName="FLP_FilterByUnhealthy" tag="TAG-HEALTH_MENTAL" />
+          </LogicProcessing>
+          <LogicProcessing name="healed" makePublic="true" list1="mentalwounds">
+            <scriptCallWithTag scriptName="FLP_GetRandomXelementsIfPossible" parameter="2" />
+          </LogicProcessing>
+          <LogicProcessing name="unstuff" makePublic="true" list1="stuff">
+            <scriptCallWithTag scriptName="FLP_FilterAnyUnEquippedItems" />
+          </LogicProcessing>
+        </FilterBlock>
+      </logic>
+      <outputs name="[Swiatlo lub harmonia] Czujesz sie tu wyjatkowo nieswojo. Ale zapewnij ich, ze nie jestes wrogiem, po prostu chcesz porozmawiac i odwiedzic." ownerID="2" targetID="3" group="G1" fromX="768" fromY="-623" />
+      <outputs name="[Elf] To jest miejsce, gdzie zyja teraz twoi przekleci bracia, elfy cienia. Ta ciemnosc czyni cie chorym. Ale powiedz, ze jestes tutaj bez uprzedzen i chcesz tylko odwiedzic." ownerID="2" targetID="6" fromX="768" fromY="-703" />
+      <outputs name="[Zamieszanie lub magia] Czujesz tutaj silna domene. Powiedz mieszkancom, ze chcesz rozmawiac, a nie jestes wrogiem." ownerID="2" targetID="27" group="G1" fromX="768" fromY="-783" />
+      <outputs name="[Ork] Jako stworzenie zrodzone z ciemnosci, czujesz sie tutaj jak w domu. Powiedz, ze jestes tutaj tylko po to, by odwiedzic." ownerID="2" targetID="42" fromX="768" fromY="-863" />
+      <outputs name="Powiedz glosowi, ktory chcesz wejsc do osady, a nie walczyc." ownerID="2" targetID="44" fromX="768" fromY="-943" />
+      <outputs name="[Demon] Wszystkie demony rodza sie z magii, a ta z kolei jest zanurzona w ciemnosci z natury, wiec nie jestes tutaj, aby walczyc z nimi bez powodu. " ownerID="2" targetID="43" fromX="768" fromY="-1024" />
+      <outputs name="[Shadow Elf] Powiedz, ze jestes tu jako krewny i chcesz tylko odwiedzic. " ownerID="2" targetID="47" fromX="768" fromY="-1104" />
+      <outputs name="Atak!" ownerID="2" targetID="49" fromX="768" fromY="-1184" />Wchodzisz na krainy cienia i czujesz tutaj surowa obecnosc ciemnosci. Gruba, nisko zawieszona czarna mgla pokrywa ziemie, dzieki czemu nigdy nie zobaczysz stop. A inna taka warstwa, choc ciensza, zaslania niebo. Glos z cienia mowi: 
+
+'Dlaczego przychodzisz szukac ciemnosci? Czy chcesz, zebys sie zmienil, czy jestes tu, by sprobowac nas wyrzucic?'
+
+</nodes>
+    <nodes xsi:type="NodeAdventure" ID="3" positionX="918" positionY="359" width="350" height="805">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction resultGroup="G1">
+            <scriptCallWithTag scriptName="FRA_PlayerHaveTag" parameter="1" tag="TAG-DOMAIN_LIGHT" />
+          </LogicResultAction>
+          <LogicResultAction resultGroup="G1">
+            <scriptCallWithTag scriptName="FRA_PlayerHaveTag" parameter="1" tag="TAG-DOMAIN_HARMONY" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Wejdz." ownerID="3" targetID="5" fromX="1243" fromY="-132" />
+      <outputs name="Zawroc." ownerID="3" targetID="4" fromX="1243" fromY="-212" />„Wyznawca sciezki stagnacji. Najlepiej trzymaj sie z dala od naszego serca lub ryzykuj, ze poczernisz. A moze to jest twoje zyczenie? 
+
+Mozesz wejsc, ale na wlasne ryzyko i wiesz, ze los jest w naszym domu zamieszany i nie bedziemy ci pomagac, jesli chce grac w gry.'</nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="4" positionX="2023" positionY="-3249" width="350" height="530" linkedEventUniqueID="0" />
+    <nodes xsi:type="NodeDealDamage" ID="5" positionX="1383" positionY="956" width="460" height="699" challengeTypeDamage="TypeSpirit" minDamage="10" maxDamage="20" useCountInPercent="true" targetGroup="ppl">
+      <outputs ownerID="5" targetID="25" group="G1" fromX="1812" fromY="567" />
+      <outputs ownerID="5" targetID="26" group="G1" fromX="1812" fromY="487" />
+      <outputs ownerID="5" targetID="24" group="G1" fromX="1812" fromY="407" />
+      <outputs ownerID="5" targetID="11" group="G1" fromX="1812" fromY="327" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="6" positionX="1471" positionY="-134" width="350" height="966">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction list="elf">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" tag="TAG-DOMAIN_LIGHT" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Wejdz." ownerID="6" targetID="5" fromX="1796" fromY="-625" />
+      <outputs name="Zawroc." ownerID="6" targetID="4" fromX="1796" fromY="-705" />
+      <outputs name="Powiedz, ze chcesz zostac przemieniony w cienia." ownerID="6" targetID="7" fromX="1796" fromY="-785" />
+      <outputs name="Powiedz im, ze twoje elfie dziecko obejmie sciezke cienia, jesli ich oferta jest prawdziwa?" ownerID="6" targetID="9" fromX="1796" fromY="-865" />„Dziecko swiatla laskawi nas swoja obecnoscia, czy chcesz zostac shadowkinem? Czy jestes ciekawy, jak przekierowalismy przeklenstwo na nowa sciezke? Zapraszamy do przylaczenia sie, ciemnosc jest otwarta dla wszystkich. Oczywiscie mozesz umrzec ... 
+
+Wejdz, ale na wlasne ryzyko i wiedz, ze los jest w naszym domu zamieszany i nie bedziemy ci pomagac, jesli chce grac w gry.'</nodes>
+    <nodes xsi:type="NodeAdventure" ID="7" positionX="1942" positionY="-528" width="350" height="805" image="Event173">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction list="elfnochild">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Kontynuuj." ownerID="7" targetID="8" fromX="2267" fromY="-1019" />
+      <outputs name="Zawroc." ownerID="7" targetID="4" fromX="2267" fromY="-1099" />Wejdz wiec, obejmij ciemnosc, bracia, a ja poprowadze cie na twoja nowa sciezke. </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="8" positionX="2481" positionY="-655" width="350" height="530" linkedEventUniqueID="0">
+      <logic>
+        <ModifierBlock>
+          <LogicProcessing name="1elf" list1="elfnochild">
+            <scriptCallWithTag scriptName="FLP_GetRandomXelements" parameter="1" />
+          </LogicProcessing>
+          <LogicModifiers list="1elf">
+            <scriptCallWithTag scriptName="FMO_UpgradeToSubrace" tag="SUBRACE-ELF_SHADOW" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="10" tag="TAG-LOYALTY_SHADOW_KIN" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="-5" tag="TAG-LOYALTY_WOODLAND_KIN" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+    </nodes>
+    <nodes xsi:type="NodeAdventure" allowOnce="true" ID="9" positionX="2350" positionY="-1231" width="350" height="805" image="Event173">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction list="elfchild">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Kontynuuj." ownerID="9" targetID="10" fromX="2675" fromY="-1722" />
+      <outputs name="Zawroc." ownerID="9" targetID="4" fromX="2675" fromY="-1802" />Wejdz wiec, obejmij ciemnosc, bracia, a ja poprowadzimy naszego mlodego przyjaciela do mrocznego i pieknego losu. Chodz dziecko, idz za mna.</nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="10" positionX="2800" positionY="-1239" width="350" height="530" linkedEventUniqueID="0">
+      <logic>
+        <ModifierBlock>
+          <LogicProcessing name="1ch" list1="elfchild">
+            <scriptCallWithTag scriptName="FLP_GetRandomXelements" parameter="1" />
+          </LogicProcessing>
+          <LogicModifiers list="1ch">
+            <scriptCallWithTag scriptName="FMO_UpgradeToSubrace" tag="SUBRACE-ELF_SHADOW" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="10" tag="TAG-LOYALTY_SHADOW_KIN" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="11" positionX="2824" positionY="653" width="350" height="966" image="Event002">
+      <outputs name="Istnieje taki rodzaj ratusza, w ktorym ludzie placa skladki, robia to, rozdajac ciemna energie, aby w ten sposob pozbyc sie swoich przeklenstw. " ownerID="11" targetID="21" fromX="3149" fromY="161" />
+      <outputs name="Chata zielarza interesuje sie toksynami, beda one wysysac twoje, ale procedura nie jest calkowicie bezpieczna." ownerID="11" targetID="22" fromX="3149" fromY="81" />
+      <outputs name="Czarownica oferuje ci sprzedaz niektorych swoich chowancow. " ownerID="11" targetID="13" fromX="3149" fromY="1" />
+      <outputs name="Po prostu ciesz sie wizyta, rozmawiaj z ludzmi i odpoczywaj." ownerID="11" targetID="12" fromX="3149" fromY="-78" />Ciemnosc obciaza twoja nature, ale przenikasz i wchodzisz do miasta, usytuowanego w ukrytej jaskini. 
+
+Tutaj mozesz odwiedzic kilka miejsc otwartych dla osob z zewnatrz. 
+
+</nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="12" positionX="3355" positionY="-157" width="350" height="530" linkedEventUniqueID="0">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers list="healed">
+            <scriptCallWithTag scriptName="FMO_SetHealthPercentTo" parameter="100" tag="TAG-HEALTH_MENTAL" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="13" positionX="3802" positionY="638" width="350" height="885" image="Event250">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_TurnAboveOrEqualTag" parameter="" tag="TAG-TRADERSHADOWSM1" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_SetTurnTag" parameter="10" tag="TAG-TRADERSHADOWSM1" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Kup kota." ownerID="13" targetID="14" fromX="4127" fromY="146" />
+      <outputs name="Kup wrona." ownerID="13" targetID="62" fromX="4127" fromY="66" />
+      <outputs name="Kup pajaka." ownerID="13" targetID="63" fromX="4127" fromY="-13" />„Przyjrzyj sie mojemu losowi, niektorzy z nich sa gotowi znalezc nowych mistrzow.'</nodes>
+    <nodes xsi:type="NodeTrade" ID="14" positionX="4225" positionY="727" width="460" height="479" traderProfile="TRADER-BANDIT" playerInventory="nocat" startingBalance="-3000">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="stuff">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsItems" />
+          </LogicFilter>
+          <LogicFilter name="food">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsItems" parameter="1" tag="TAG-FOOD" />
+          </LogicFilter>
+          <LogicFilter name="cat">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsItems" parameter="1" tag="TAG-PET_CAT" />
+          </LogicFilter>
+          <LogicProcessing name="nofood" list1="stuff" list2="food">
+            <scriptCallWithTag scriptName="FLP_AminusB" />
+          </LogicProcessing>
+          <LogicProcessing name="nocat" list1="nofood" list2="cat">
+            <scriptCallWithTag scriptName="FLP_AminusB" />
+          </LogicProcessing>
+        </FilterBlock>
+      </logic>
+      <outputs name="Confirm" ownerID="14" targetID="15" fromX="4655" fromY="398" />
+      <outputs name="Cancel" ownerID="14" targetID="16" fromX="4655" fromY="318" />
+    </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="15" positionX="4837" positionY="797" width="350" height="530" linkedEventUniqueID="0">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="1" tag="ITEM_CARGO-STRONG_ONE_PET_CAT" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="5%;0;1" tag="ITEM_CARGO-RARE_ONE_PET_CAT" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="16" positionX="4887" positionY="197" width="350" height="966" image="Event250">
+      <outputs name="Kup kota." ownerID="16" targetID="14" fromX="5212" fromY="-294" />
+      <outputs name="Kup wrona." ownerID="16" targetID="62" fromX="5212" fromY="-374" />
+      <outputs name="Kup pajaka." ownerID="16" targetID="63" fromX="5212" fromY="-454" />
+      <outputs name="Byc moze innym razem. Pozostawiac." ownerID="16" targetID="4" fromX="5212" fromY="-534" />„Przyjrzyj sie mojemu losowi, niektorzy z nich sa gotowi znalezc nowych mistrzow.'</nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="18" positionX="5273" positionY="324" width="350" height="530" linkedEventUniqueID="0">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="1" tag="ITEM_CARGO-STRONG_ONE_PET_CROW" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="5%;0;1" tag="ITEM_CARGO-RARE_ONE_PET_CROW" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+    </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="19" positionX="5304" positionY="-212" width="350" height="530" linkedEventUniqueID="0">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="1" tag="ITEM_CARGO-STRONG_ONE_PET_SPIDER_SPITTING" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="5%;0;1" tag="ITEM_CARGO-RARE_ONE_PET_SPIDER_SPITTING" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+    </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="21" positionX="3385" positionY="1041" width="350" height="530" linkedEventUniqueID="0">
+      <logic>
+        <FilterBlock>
+          <LogicProcessing name="P" list1="ppl">
+            <scriptCallWithTag scriptName="FLP_CharactersWithSkill" tag="SKILL-CURSE_P" />
+          </LogicProcessing>
+          <LogicProcessing name="M" list1="ppl">
+            <scriptCallWithTag scriptName="FLP_CharactersWithSkill" tag="SKILL-CURSE_M" />
+          </LogicProcessing>
+          <LogicProcessing name="S" list1="ppl">
+            <scriptCallWithTag scriptName="FLP_CharactersWithSkill" tag="SKILL-CURSE_S" />
+          </LogicProcessing>
+          <LogicProcessing name="PM" list1="P" list2="M">
+            <scriptCallWithTag scriptName="FLP_AorB" />
+          </LogicProcessing>
+          <LogicProcessing name="PMS" list1="PM" list2="S">
+            <scriptCallWithTag scriptName="FLP_AorB" />
+          </LogicProcessing>
+          <LogicResultAction list="PMS">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicModifiers list="PMS">
+            <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="-5" tag="SKILL_PACK-CURSE_S" />
+          </LogicModifiers>
+          <LogicModifiers list="PMS">
+            <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="-5" tag="SKILL_PACK-CURSE_M" />
+          </LogicModifiers>
+          <LogicModifiers list="PMS">
+            <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="-5" tag="SKILL_PACK-CURSE_P" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+    </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="22" positionX="3344" positionY="441" width="350" height="530" linkedEventUniqueID="0">
+      <logic>
+        <FilterBlock>
+          <LogicProcessing name="toxin" list1="ppl">
+            <scriptCallWithTag scriptName="FLP_CharactersWithSkill" tag="SKILL-TOXINE" />
+          </LogicProcessing>
+          <LogicResultAction list="toxin">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicModifiers list="toxin">
+            <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="-5" tag="SKILL_PACK-TOXINE" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="23" positionX="2868" positionY="1447" width="350" height="725">
+      <outputs name="Wpisz." ownerID="23" targetID="11" fromX="3193" fromY="955" />Zostales poblogoslawiony, kiedy wszedles, ale ciemnosc przekrecila swiatlo blogoslawienstw i pozostawila cie pusta. 
+
+Mozesz jednak teraz wejsc do miasta.</nodes>
+    <nodes xsi:type="NodeDealDamage" ID="24" positionX="2167" positionY="1637" width="460" height="459" challengeTypeDamage="TypeMental" minDamage="30" maxDamage="40" useCountInPercent="true" targetGroup="ppl">
+      <logic>
+        <FilterBlock>
+          <LogicProcessing name="P" list1="ppl">
+            <scriptCallWithTag scriptName="FLP_CharactersWithSkill" tag="SKILL-BLESS_P" />
+          </LogicProcessing>
+          <LogicProcessing name="M" list1="ppl">
+            <scriptCallWithTag scriptName="FLP_CharactersWithSkill" tag="SKILL-BLESS_M" />
+          </LogicProcessing>
+          <LogicProcessing name="S" list1="ppl">
+            <scriptCallWithTag scriptName="FLP_CharactersWithSkill" tag="SKILL-BLESS_S" />
+          </LogicProcessing>
+          <LogicProcessing name="PM" list1="P" list2="M">
+            <scriptCallWithTag scriptName="FLP_AorB" />
+          </LogicProcessing>
+          <LogicProcessing name="PMS" list1="PM" list2="S">
+            <scriptCallWithTag scriptName="FLP_AorB" />
+          </LogicProcessing>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="45" />
+          </LogicResultAction>
+          <LogicResultAction list="PMS">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs ownerID="24" targetID="23" fromX="2596" fromY="1248" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="25" positionX="1533" positionY="1975" width="350" height="725">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="fem">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="TAG-GENDER_FEMALE" />
+          </LogicFilter>
+          <LogicFilter name="hum">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" tag="RACE-HUMAN" />
+          </LogicFilter>
+          <LogicFilter name="witch" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="TAG-WITCH" />
+          </LogicFilter>
+          <LogicProcessing name="femhum" list1="fem" list2="hum">
+            <scriptCallWithTag scriptName="FLP_AandB" />
+          </LogicProcessing>
+          <LogicProcessing name="femhumnotwitch" list1="femhum" list2="witch">
+            <scriptCallWithTag scriptName="FLP_AminusB" parameter="" />
+          </LogicProcessing>
+          <LogicProcessing name="1femhum" list1="femhumnotwitch">
+            <scriptCallWithTag scriptName="FLP_GetRandomXelementsIfPossible" parameter="1" />
+          </LogicProcessing>
+          <LogicResultAction list="femhumnotwitch">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="3" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicModifiers list="1femhum">
+            <scriptCallWithTag scriptName="FMO_UpgradeToSubrace" parameter="" tag="SUBRACE-HUM_WITCH" />
+          </LogicModifiers>
+          <LogicModifiers list="1femhum">
+            <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="1" tag="SKILL_PACK-BLESS_S" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Wpisz." ownerID="25" targetID="11" fromX="1858" fromY="1483" />Ciemnosc jest sila zmiany, a niektorzy mowia, korupcja. Jedna z twoich kobiet miala na sobie slad mrocznych sztuk, a czarna mgla go obudzila, przemieniajac w czarownice. 
+
+Mozesz teraz wejsc do miasta.</nodes>
+    <nodes xsi:type="NodeAdventure" ID="26" positionX="1994" positionY="1117" width="350" height="725">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="30" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicProcessing name="1c" list1="ppl">
+            <scriptCallWithTag scriptName="FLP_GetRandomXelements" parameter="1" />
+          </LogicProcessing>
+          <LogicModifiers list="1c">
+            <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="4" tag="SKILL_PACK-CURSE_S" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Wyjdz." ownerID="26" targetID="4" fromX="2319" fromY="625" />Czarna mgla wsiaka gleboko w jedna z twoich dusz, pozostawiajac ja przekleta i na razie nie mozesz wejsc do osady.</nodes>
+    <nodes xsi:type="NodeAdventure" ID="27" positionX="1024" positionY="-786" width="350" height="805">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction resultGroup="G1">
+            <scriptCallWithTag scriptName="FRA_PlayerHaveTag" parameter="1" tag="TAG-DOMAIN_MAGIC" />
+          </LogicResultAction>
+          <LogicResultAction resultGroup="G1">
+            <scriptCallWithTag scriptName="FRA_PlayerHaveTag" parameter="1" tag="TAG-DOMAIN_TURMOIL" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Wejdz." ownerID="27" targetID="37" fromX="1349" fromY="-1277" />
+      <outputs name="Zawroc." ownerID="27" targetID="4" fromX="1349" fromY="-1357" />„Ach, zwolennicy ciemniejszych sciezek. Dobry. Strzez sie jednak, ze ciemnosc nie jest jedna z wielu przyslug, poniewaz nie jestescie naszymi przyjaciolmi, nadal bedziecie musieli zmierzyc sie z czarnymi kaprysami mgly, jesli chcecie wejsc.'</nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="29" positionX="-913" positionY="-63" width="350" height="530" linkedEventUniqueID="31" />
+    <nodes xsi:type="NodeAdventure" ID="30" positionX="-869" positionY="-663" width="350" height="1046" image="Event002">
+      <outputs name="Istnieje taki rodzaj ratusza, w ktorym ludzie placa skladki, robia to, rozdajac ciemna energie, aby w ten sposob pozbyc sie swoich przeklenstw. " ownerID="30" targetID="21" fromX="-543" fromY="-1154" />
+      <outputs name="Chata zielarza interesuje sie toksynami, beda one wysysac twoje, ale procedura nie jest calkowicie bezpieczna." ownerID="30" targetID="22" fromX="-543" fromY="-1234" />
+      <outputs name="Czarownica oferuje ci sprzedaz niektorych swoich chowancow. " ownerID="30" targetID="13" fromX="-543" fromY="-1314" />
+      <outputs name="Po prostu ciesz sie wizyta, rozmawiaj z ludzmi i odpoczywaj." ownerID="30" targetID="12" fromX="-543" fromY="-1394" />
+      <outputs name="Porozmawiaj z ludzmi, moze ktos chcialby dolaczyc do sciezki kosmicznego drzewa?" ownerID="30" targetID="31" fromX="-543" fromY="-1474" />Ciemnosc obciaza twoja nature, ale przenikasz i wchodzisz do miasta, usytuowanego w ukrytej jaskini. 
+
+Tutaj mozesz odwiedzic kilka miejsc otwartych dla osob z zewnatrz. 
+
+</nodes>
+    <nodes xsi:type="NodeAdventure" ID="31" positionX="-1481" positionY="-769" width="350" height="885">
+      <outputs name="Zaplac za rekrutacje elfa cienia." ownerID="31" targetID="32" fromX="-1155" fromY="-1260" />
+      <outputs name="Zaoferuj wymiane, jedna z twoich na jedna z nich." ownerID="31" targetID="35" fromX="-1155" fromY="-1340" />
+      <outputs name="Nie ma nikogo zainteresowanego. Pozostawiac." ownerID="31" targetID="4" fromX="-1155" fromY="-1420" />„Udowodniles, ze jestes przyjacielem cieni, moze jeden z nas pojdzie za toba, ale tylko wtedy, gdy uczynisz go wartym dla nas wszystkich. Przyjmiemy rowniez dziecko w zamian za nasze uslugi. Nie jestesmy idealistami, musimy przetrwac. Obie oferty sa jednorazowe.'</nodes>
+    <nodes xsi:type="NodeTrade" ID="32" positionX="-2314" positionY="-552" width="460" height="479" traderProfile="TRADER-BANDIT" playerInventory="nopet" startingBalance="-10000">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="food">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsItems" parameter="1" tag="TAG-FOOD" />
+          </LogicFilter>
+          <LogicFilter name="pet">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsItems" parameter="1" tag="TAG-PET" />
+          </LogicFilter>
+          <LogicProcessing name="nofood" list1="stuff" list2="food">
+            <scriptCallWithTag scriptName="FLP_AminusB" />
+          </LogicProcessing>
+          <LogicProcessing name="nopet" list1="nofood" list2="pet">
+            <scriptCallWithTag scriptName="FLP_AminusB" />
+          </LogicProcessing>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_PlayerHaveTag" parameter="0" tag="TAG-TRADERSHADOWSM1" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Confirm" ownerID="32" targetID="65" fromX="-1883" fromY="-880" />
+      <outputs name="Cancel" ownerID="32" targetID="4" fromX="-1883" fromY="-960" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="33" positionX="-467" positionY="-41" width="350" height="805">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="ppl" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" />
+          </LogicFilter>
+          <LogicFilter name="shelf" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" tag="SUBRACE-ELF_SHADOW" />
+          </LogicFilter>
+          <LogicFilter name="orc" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" tag="RACE-ORC" />
+          </LogicFilter>
+          <LogicFilter name="goblin" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" tag="RACE-GOBLIN" />
+          </LogicFilter>
+          <LogicFilter name="ndemon" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="TAG-NIGHT" />
+          </LogicFilter>
+          <LogicFilter name="demon" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" tag="RACE-DEMON" />
+          </LogicFilter>
+          <LogicFilter name="elf" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" tag="RACE-ELF" />
+          </LogicFilter>
+          <LogicFilter name="children" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="TAG-CHILD" />
+          </LogicFilter>
+          <LogicFilter name="elfchild" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" tag="SUBRACE-ELF_CHILD" />
+          </LogicFilter>
+          <LogicFilter name="stuff" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsItems" />
+          </LogicFilter>
+          <LogicProcessing name="elfnochild" makePublic="true" list1="elf" list2="children">
+            <scriptCallWithTag scriptName="FLP_AminusB" />
+          </LogicProcessing>
+          <LogicProcessing name="mentalwounds" makePublic="true" list1="ppl">
+            <scriptCallWithTag scriptName="FLP_FilterByUnhealthy" tag="TAG-HEALTH_MENTAL" />
+          </LogicProcessing>
+          <LogicProcessing name="healed" makePublic="true" list1="mentalwounds">
+            <scriptCallWithTag scriptName="FLP_GetRandomXelementsIfPossible" parameter="2" />
+          </LogicProcessing>
+          <LogicProcessing name="unstuff" makePublic="true" list1="stuff">
+            <scriptCallWithTag scriptName="FLP_FilterAnyUnEquippedItems" />
+          </LogicProcessing>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_PlayersHaveSharedTag" parameter="50" tag="TAG-LOYALTY_SHADOW_KIN" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Handel." ownerID="33" targetID="29" fromX="-141" fromY="-532" />
+      <outputs name="Odwiedz miasto." ownerID="33" targetID="30" fromX="-141" fromY="-612" />Wchodzisz na krainy cienia i czujesz tutaj surowa obecnosc ciemnosci. Gruba, nisko zawieszona czarna mgla pokrywa ziemie, dzieki czemu nigdy nie zobaczysz stop. A inna taka warstwa, choc ciensza, zaslania niebo. Glos z cienia mowi: 
+
+'Przyjacielu, wejdz i oslonimy cie przed nasza ciemnoscia.'</nodes>
+    <nodes xsi:type="NodeTrade" ID="34" positionX="-2656" positionY="-1372" width="460" height="479" traderProfile="TRADER-BANDIT_TWO" playerInventory="noch" startingBalance="-1">
+      <outputs name="Confirm" ownerID="34" targetID="65" fromX="-2225" fromY="-1700" />
+      <outputs name="Cancel" ownerID="34" targetID="31" fromX="-2225" fromY="-1780" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="35" positionX="-2032" positionY="-1246" width="350" height="725">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="ch">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="TAG-CHOSEN" />
+          </LogicFilter>
+          <LogicProcessing name="noch" makePublic="true" list1="children" list2="ch">
+            <scriptCallWithTag scriptName="FLP_AminusB" />
+          </LogicProcessing>
+          <LogicResultAction list="noch">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_PlayerHaveTag" parameter="0" tag="TAG-TRADERSHADOWSM1" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Handel." ownerID="35" targetID="34" fromX="-1706" fromY="-1737" />„Tak, jest to dopuszczalne. Mlody nauczy sie naszych sposobow, a jeden z nas dolaczy do ciebie.'</nodes>
+    <nodes xsi:type="NodeDealDamage" ID="37" positionX="142" positionY="1873" width="460" height="699" challengeTypeDamage="TypeMental" minDamage="0" maxDamage="0" useCountInPercent="false">
+      <outputs ownerID="37" targetID="38" group="G1" fromX="571" fromY="1484" />
+      <outputs ownerID="37" targetID="39" group="G1" fromX="571" fromY="1404" />
+      <outputs ownerID="37" targetID="40" group="G1" fromX="571" fromY="1324" />
+      <outputs ownerID="37" targetID="11" group="G1" fromX="571" fromY="1244" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="38" positionX="770" positionY="2267" width="350" height="725">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="fem">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="TAG-GENDER_FEMALE" />
+          </LogicFilter>
+          <LogicFilter name="hum">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" tag="RACE-HUMAN" />
+          </LogicFilter>
+          <LogicFilter name="witch" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="TAG-WITCH" />
+          </LogicFilter>
+          <LogicProcessing name="femhum" list1="fem" list2="hum">
+            <scriptCallWithTag scriptName="FLP_AandB" />
+          </LogicProcessing>
+          <LogicProcessing name="femhumnotwitch" list1="femhum" list2="witch">
+            <scriptCallWithTag scriptName="FLP_AminusB" parameter="" />
+          </LogicProcessing>
+          <LogicProcessing name="1femhum" list1="femhumnotwitch">
+            <scriptCallWithTag scriptName="FLP_GetRandomXelementsIfPossible" parameter="1" />
+          </LogicProcessing>
+          <LogicResultAction list="femhumnotwitch">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="1" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicModifiers list="1femhum">
+            <scriptCallWithTag scriptName="FMO_UpgradeToSubraceNoLevelReset" parameter="" tag="SUBRACE-HUM_WITCH" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Wpisz." ownerID="38" targetID="11" fromX="1095" fromY="1775" />Ciemnosc jest sila zmiany, a niektorzy mowia, korupcja. Jedna z twoich kobiet miala na sobie slad mrocznych sztuk, a czarna mgla go obudzila, przemieniajac w czarownice. 
+
+Mozesz teraz wejsc do miasta.</nodes>
+    <nodes xsi:type="NodeAdventure" ID="39" positionX="1010" positionY="1503" width="350" height="725">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="20" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicProcessing name="1c" list1="ppl">
+            <scriptCallWithTag scriptName="FLP_GetRandomXelements" parameter="1" />
+          </LogicProcessing>
+          <LogicModifiers list="1c">
+            <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="4" tag="SKILL_PACK-CURSE_S" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Wyjdz." ownerID="39" targetID="4" fromX="1335" fromY="1011" />Czarna mgla wsiaka gleboko w jedna z twoich dusz, pozostawiajac ja przekleta i na razie nie mozesz wejsc do osady.</nodes>
+    <nodes xsi:type="NodeDealDamage" ID="40" positionX="2005" positionY="2234" width="460" height="459" challengeTypeDamage="TypeMental" minDamage="30" maxDamage="40" useCountInPercent="true" targetGroup="ppl">
+      <logic>
+        <FilterBlock>
+          <LogicProcessing name="P" list1="ppl">
+            <scriptCallWithTag scriptName="FLP_CharactersWithSkill" tag="SKILL-BLESS_P" />
+          </LogicProcessing>
+          <LogicProcessing name="M" list1="ppl">
+            <scriptCallWithTag scriptName="FLP_CharactersWithSkill" tag="SKILL-BLESS_M" />
+          </LogicProcessing>
+          <LogicProcessing name="S" list1="ppl">
+            <scriptCallWithTag scriptName="FLP_CharactersWithSkill" tag="SKILL-BLESS_S" />
+          </LogicProcessing>
+          <LogicProcessing name="PM" list1="P" list2="M">
+            <scriptCallWithTag scriptName="FLP_AorB" />
+          </LogicProcessing>
+          <LogicProcessing name="PMS" list1="PM" list2="S">
+            <scriptCallWithTag scriptName="FLP_AorB" />
+          </LogicProcessing>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="35" />
+          </LogicResultAction>
+          <LogicResultAction list="PMS">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs ownerID="40" targetID="23" fromX="2434" fromY="1845" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" allowOnce="true" ID="41" positionX="939" positionY="-1656" width="350" height="725">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="fem">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="TAG-GENDER_FEMALE" />
+          </LogicFilter>
+          <LogicFilter name="hum">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" tag="RACE-ORC" />
+          </LogicFilter>
+          <LogicFilter name="witch" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="TAG-WITCH" />
+          </LogicFilter>
+          <LogicProcessing name="femhum" list1="fem" list2="hum">
+            <scriptCallWithTag scriptName="FLP_AandB" />
+          </LogicProcessing>
+          <LogicProcessing name="femhumnotwitch" list1="femhum" list2="witch">
+            <scriptCallWithTag scriptName="FLP_AminusB" parameter="" />
+          </LogicProcessing>
+          <LogicProcessing name="1femhum" list1="femhumnotwitch">
+            <scriptCallWithTag scriptName="FLP_GetRandomXelementsIfPossible" parameter="1" />
+          </LogicProcessing>
+          <LogicResultAction list="femhumnotwitch">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicModifiers list="1femhum">
+            <scriptCallWithTag scriptName="FMO_UpgradeToSubraceNoLevelReset" parameter="" tag="SUBRACE-ORC_WITCH" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Wpisz." ownerID="41" targetID="11" fromX="1264" fromY="-2147" />Wchodzisz do jednej z ciemnych jaskin, a wnetrze ciemnosci wita cie. Dziela sie swoja energia z toba i budza sie twoje ciemne dary. Stajesz sie czarownica. 
+
+Mozesz rowniez odwiedzic osade teraz. </nodes>
+    <nodes xsi:type="NodeAdventure" ID="42" positionX="498" positionY="-1519" width="350" height="805">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction list="orc">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Jedna z twoich orkowych kobiet ma na sobie ciemna plame magii, mimo ze nie jest wyszkolona. Oferta cienia, aby obudzic te prezenty, przeksztalci ja w czarownice." ownerID="42" targetID="41" fromX="823" fromY="-2010" />
+      <outputs name="Wpisz." ownerID="42" targetID="46" fromX="823" fromY="-2090" />„Ach, dziecko zrodzone z ciemnosci, bardzo podobne do nas, tylko bardziej - pierwotne. Czego od nas szukasz? Jesli jestes tutaj, aby odwiedzic, wejdz, ciemnosc cie nie skrzywdzi, prawdopodobnie ...'</nodes>
+    <nodes xsi:type="NodeAdventure" ID="43" positionX="46" positionY="-1359" width="350" height="805">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction list="demon">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" tag="---" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Wejdz." ownerID="43" targetID="37" fromX="371" fromY="-1850" />
+      <outputs name="Zawroc." ownerID="43" targetID="4" fromX="371" fromY="-1930" />„Ach, zwolennicy ciemniejszych sciezek. Dobry. Strzez sie jednak, ze ciemnosc nie jest jedna z wielu przyslug, poniewaz nie jestescie naszymi przyjaciolmi, nadal bedziecie musieli zmierzyc sie z czarnymi kaprysami mgly, jesli chcecie wejsc.„”</nodes>
+    <nodes xsi:type="NodeAdventure" ID="44" positionX="541" positionY="957" width="350" height="805">
+      <outputs name="Wejdz." ownerID="44" targetID="45" fromX="866" fromY="465" />
+      <outputs name="Zawroc." ownerID="44" targetID="4" fromX="866" fromY="385" />„Najlepiej trzymaj sie z daleka od naszego serca lub ryzykuj, ze poczernisz. A moze to jest twoje zyczenie? 
+
+Mozesz wejsc, ale na wlasne ryzyko i wiesz, ze los jest w naszym domu zamieszany i nie bedziemy ci pomagac, jesli chce grac w gry.'</nodes>
+    <nodes xsi:type="NodeDealDamage" ID="45" positionX="-322" positionY="982" width="460" height="699" challengeTypeDamage="TypeSpirit" minDamage="10" maxDamage="20" useCountInPercent="true" targetGroup="ppl">
+      <outputs ownerID="45" targetID="25" group="G1" fromX="107" fromY="593" />
+      <outputs ownerID="45" targetID="26" group="G1" fromX="107" fromY="513" />
+      <outputs ownerID="45" targetID="24" group="G1" fromX="107" fromY="433" />
+      <outputs ownerID="45" targetID="11" group="G1" fromX="107" fromY="353" />
+    </nodes>
+    <nodes xsi:type="NodeDealDamage" ID="46" positionX="1449" positionY="-1749" width="460" height="539" challengeTypeDamage="TypeMental" minDamage="0" maxDamage="0" useCountInPercent="false">
+      <outputs ownerID="46" targetID="40" group="G1" fromX="1878" fromY="-2137" />
+      <outputs ownerID="46" targetID="11" group="G1" fromX="1878" fromY="-2217" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="47" positionX="38" positionY="-2212" width="350" height="805">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction list="shelf">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Powiedz, ze chcialbys, aby jedno z twoich elfich dzieci poszlo sciezka cienia. " ownerID="47" targetID="48" fromX="363" fromY="-2703" />
+      <outputs name="Wpisz." ownerID="47" targetID="46" fromX="363" fromY="-2783" />„Witajcie, krewni cieniu, to byl wasz dom, ale postanowiliscie odejsc, wiec badzcie zmeczeni kaprysami swojej starej rodziny.  Jesli jestes tutaj, aby odwiedzic, wejdz, ciemnosc cie nie skrzywdzi, prawdopodobnie ...'</nodes>
+    <nodes xsi:type="NodeAdventure" allowOnce="true" ID="48" positionX="457" positionY="-2477" width="350" height="725">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction list="elfchild">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Kontynuuj." ownerID="48" targetID="10" fromX="782" fromY="-2968" />„Tak, jest to dopuszczalne. Mlody nauczy sie naszych sposobow, a jeden z nas dolaczy do ciebie.'</nodes>
+    <nodes xsi:type="NodeChallenge" ID="49" positionX="-1520" positionY="-2022" width="500" height="726" challengeType="TypePhysical" versusGroup="GROUP-MROKI_MIX_6P_5M_6S" challengeScale="101" challengedList="ppl">
+      <outputs name="Win" ownerID="49" targetID="50" fromX="-1078" fromY="-2517" />
+      <outputs name="Lose" ownerID="49" targetID="61" fromX="-1078" fromY="-2597" />
+      <outputs name="Surrender" ownerID="49" targetID="61" fromX="-1078" fromY="-2677" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="50" positionX="-876" positionY="-1898" width="350" height="805">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_SetTagShared" parameter="-10" tag="TAG-LOYALTY_SHADOW_KIN" />
+          </LogicModifiers>
+          <LogicModifiers list="ppl">
+            <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="4" tag="SKILL_PACK-BLESS_S" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="15" tag="TAG-LOYALTY_WOODLAND_KIN" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="-20" tag="TAG-LOYALTY_SPIRIT_TALKERS" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Opusc bez grabiezy." ownerID="50" targetID="53" fromX="-550" fromY="-2389" />
+      <outputs name="Lup i wyjdz." ownerID="50" targetID="55" fromX="-550" fromY="-2469" />Mroczne miasto jest zrujnowane i mozesz je spladrowac, ale uwazaj, ciemnosc sie tu utrzymuje i prawdopodobnie cie zarazi.</nodes>
+    <nodes xsi:type="NodeAdventure" ID="52" positionX="-1284" positionY="1754" width="350" height="725">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="fem">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="TAG-GENDER_FEMALE" />
+          </LogicFilter>
+          <LogicFilter name="hum">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" tag="RACE-HUMAN" />
+          </LogicFilter>
+          <LogicFilter name="witch" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" parameter="1" tag="TAG-WITCH" />
+          </LogicFilter>
+          <LogicProcessing name="femhum" list1="fem" list2="hum">
+            <scriptCallWithTag scriptName="FLP_AandB" />
+          </LogicProcessing>
+          <LogicProcessing name="femhumnotwitch" list1="femhum" list2="witch">
+            <scriptCallWithTag scriptName="FLP_AminusB" parameter="" />
+          </LogicProcessing>
+          <LogicProcessing name="1femhum" list1="femhumnotwitch">
+            <scriptCallWithTag scriptName="FLP_GetRandomXelementsIfPossible" parameter="1" />
+          </LogicProcessing>
+          <LogicResultAction list="femhumnotwitch">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="1" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicModifiers list="1femhum">
+            <scriptCallWithTag scriptName="FMO_UpgradeToSubrace" parameter="" tag="SUBRACE-HUM_WITCH" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="10;30" tag="ITEM_CARGO-FEW_OBSIDIAN" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Wyjdz." ownerID="52" targetID="53" fromX="-958" fromY="1262" />Ciemnosc jest sila zmiany, a niektorzy mowia, korupcja. Jedna z twoich kobiet miala na sobie slad mrocznych sztuk, a czarna mgla go obudzila, przemieniajac w czarownice. 
+
+Udalo ci sie odzyskac kilka uzytecznych zasobow, ale wiekszosc miasta zdawala sie natychmiast popadac w ruine, kiedy zabiles lud cienia. 
+
+</nodes>
+    <nodes xsi:type="NodeSpawnOnMap" ID="53" positionX="-692" positionY="2357" width="480" height="503" radius="0" destroyOwner="true" linkedEventUniqueID="0">
+      <outputs ownerID="53" targetID="54" fromX="-243" fromY="1924" />
+    </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="54" positionX="-156" positionY="2473" width="350" height="530" allPlayersXP="5" allPlayersRP="2" linkedEventUniqueID="0" />
+    <nodes xsi:type="NodeDealDamage" ID="55" positionX="-1896" positionY="2108" width="460" height="619" challengeTypeDamage="TypeMental" minDamage="0" maxDamage="0" useCountInPercent="false">
+      <outputs ownerID="55" targetID="56" group="G1" fromX="-1466" fromY="1719" />
+      <outputs ownerID="55" targetID="52" group="G1" fromX="-1466" fromY="1639" />
+      <outputs ownerID="55" targetID="57" group="G1" fromX="-1466" fromY="1559" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="56" positionX="-1290" positionY="2529" width="350" height="725">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="65" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicProcessing name="1c" list1="ppl">
+            <scriptCallWithTag scriptName="FLP_GetRandomXelements" parameter="2" />
+          </LogicProcessing>
+          <LogicModifiers list="1c">
+            <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="3" tag="SKILL_PACK-CURSE_S" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="30;60" tag="ITEM_CARGO-FEW_OBSIDIAN" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="10;30" tag="ITEM_CARGO-FEW_SHADOW_BONE" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Wyjdz." ownerID="56" targetID="53" fromX="-964" fromY="2037" />Czarna mgla wsiaka gleboko w jedna z twoich dusz, zostawiajac ja przekleta. 
+
+Udalo ci sie odzyskac uzyteczne zasoby, ale wiekszosc miasta zdawala sie natychmiast popadac w ruine, gdy zabiles lud cienia.</nodes>
+    <nodes xsi:type="NodeAdventure" ID="57" positionX="-2348" positionY="1726" width="350" height="725">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="20;60" tag="ITEM_CARGO-FEW_OBSIDIAN" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="20;30" tag="ITEM_CARGO-FEW_SHADOW_BONE" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Wyjdz." ownerID="57" targetID="53" fromX="-2022" fromY="1234" />Ciemnosc ci nie zaszkodzi. 
+
+Udalo ci sie odzyskac uzyteczne zasoby, ale wiekszosc miasta zdawala sie natychmiast popadac w ruine, gdy zabiles lud cienia.</nodes>
+    <nodes xsi:type="NodeAdventure" ID="58" positionX="-932" positionY="-2770" width="350" height="725">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_SetTagShared" parameter="-10" tag="TAG-LOYALTY_SHADOW_KIN" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Wyjdz." ownerID="58" targetID="59" fromX="-606" fromY="-3261" />Byliscie bardzo pobici, a ciemnosci wnikaja gleboko w wasze dusze, gdy uciekacie.</nodes>
+    <nodes xsi:type="NodeSpawnOnMap" ID="59" positionX="-499" positionY="-3125" width="480" height="503" radius="0" destroyOwner="false" linkedEventUniqueID="0">
+      <outputs ownerID="59" targetID="60" fromX="-50" fromY="-3557" />
+    </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="60" positionX="32" positionY="-3345" width="350" height="530" allPlayersXP="1" linkedEventUniqueID="0" />
+    <nodes xsi:type="NodeDealDamage" ID="61" positionX="-1481" positionY="-2777" width="460" height="459" challengeTypeDamage="TypeSpirit" minDamage="40" maxDamage="70" useCountInPercent="true" targetGroup="ppl">
+      <outputs ownerID="61" targetID="58" fromX="-1051" fromY="-3165" />
+    </nodes>
+    <nodes xsi:type="NodeTrade" ID="62" positionX="4228" positionY="224" width="460" height="479" traderProfile="TRADER-BANDIT" playerInventory="nocat" startingBalance="-3000">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="stuff">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsItems" />
+          </LogicFilter>
+          <LogicFilter name="food">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsItems" parameter="1" tag="TAG-FOOD" />
+          </LogicFilter>
+          <LogicFilter name="cat">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsItems" parameter="1" tag="TAG-PET_CROW" />
+          </LogicFilter>
+          <LogicProcessing name="nofood" list1="stuff" list2="food">
+            <scriptCallWithTag scriptName="FLP_AminusB" />
+          </LogicProcessing>
+          <LogicProcessing name="nocat" list1="nofood" list2="cat">
+            <scriptCallWithTag scriptName="FLP_AminusB" />
+          </LogicProcessing>
+        </FilterBlock>
+      </logic>
+      <outputs name="Confirm" ownerID="62" targetID="18" fromX="4658" fromY="-104" />
+      <outputs name="Cancel" ownerID="62" targetID="16" fromX="4658" fromY="-184" />
+    </nodes>
+    <nodes xsi:type="NodeTrade" ID="63" positionX="4231" positionY="-280" width="460" height="479" traderProfile="TRADER-BANDIT" playerInventory="nocat" startingBalance="-3000">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="stuff">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsItems" />
+          </LogicFilter>
+          <LogicFilter name="food">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsItems" parameter="1" tag="TAG-FOOD" />
+          </LogicFilter>
+          <LogicFilter name="cat">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsItems" parameter="1" tag="TAG-PET_SPIDER_SPITTING" />
+          </LogicFilter>
+          <LogicProcessing name="nofood" list1="stuff" list2="food">
+            <scriptCallWithTag scriptName="FLP_AminusB" />
+          </LogicProcessing>
+          <LogicProcessing name="nocat" list1="nofood" list2="cat">
+            <scriptCallWithTag scriptName="FLP_AminusB" />
+          </LogicProcessing>
+        </FilterBlock>
+      </logic>
+      <outputs name="Confirm" ownerID="63" targetID="19" fromX="4661" fromY="-608" />
+      <outputs name="Cancel" ownerID="63" targetID="16" fromX="4661" fromY="-688" />
+    </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="65" positionX="-2992" positionY="-647" width="350" height="530" linkedEventUniqueID="0">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddCharacterNoDefaultCargo" parameter="1" tag="SUBRACE-ELF_SHADOW" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagToPlayer" parameter="1" tag="TAG-TRADERSHADOWSM1" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+    </nodes>
+  </Adventure>
+  <Adventure name="ArmyShadowKin" uniqueID="34" typeGeneric="false" typePerGroupGeneric="false" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="25" joinIsForced="false" joinType="AllAlly" joinRange="MovementArea">
+    <nodes xsi:type="NodeStarting" ID="1" positionX="10" positionY="-10" width="347" height="661" image="Event172">
+      <outputs ownerID="1" targetID="2" fromX="334" fromY="-613" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="2" positionX="403.4507" positionY="-186.133682" width="350" height="1046">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="ppl" makePublic="true">
+            <scriptCallWithTag scriptName="FwT_AllPlayersAllGroupsCharacters" />
+          </LogicFilter>
+        </FilterBlock>
+      </logic>
+      <outputs name="Pozdrow swoich sojusznikow. " ownerID="2" targetID="3" fromX="729" fromY="-677" />
+      <outputs name="Badz ostrozny, ale rozmawiaj z nimi." ownerID="2" targetID="11" fromX="729" fromY="-757" />
+      <outputs name="Sprobuj poradzic sobie z tym." ownerID="2" targetID="12" fromX="729" fromY="-837" />
+      <outputs name="Walcz!" ownerID="2" targetID="15" fromX="729" fromY="-917" />
+      <outputs name="Odsun sie." ownerID="2" targetID="10" fromX="729" fromY="-998" />Zdajesz sobie sprawe, ze cienie podazaja za toba!</nodes>
+    <nodes xsi:type="NodeAdventure" ID="3" positionX="813" positionY="717" width="350" height="805">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_PlayersHaveSharedTag" parameter="50" tag="TAG-LOYALTY_SHADOW_KIN" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Zapytaj, czy chca handlowac." ownerID="3" targetID="4" fromX="1138" fromY="225" />
+      <outputs name="Medytujcie razem." ownerID="3" targetID="23" fromX="1138" fromY="145" />„Przepraszam, przyjaciele. Nie poznalismy cie. Pozdrowienia i zyczenia.'</nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="4" positionX="1238" positionY="746" width="350" height="530" linkedEventUniqueID="31" />
+    <nodes xsi:type="NodeAdventureEnd" ID="10" positionX="-84" positionY="-1283" width="350" height="455" linkedEventUniqueID="0">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_IsPlayerTurn" parameter="" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="11" positionX="911" positionY="-222" width="350" height="885">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_PlayersHaveSharedTag" parameter="0" tag="TAG-LOYALTY_SHADOW_KIN" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Wyjdz." ownerID="11" targetID="10" fromX="1236" fromY="-713" />
+      <outputs name="Sprobuj poradzic sobie z tym." ownerID="11" targetID="12" fromX="1236" fromY="-793" />
+      <outputs name="Walcz!" ownerID="11" targetID="15" fromX="1236" fromY="-873" />Oni nie odpowiadaja, oni ciagle przychodza do ciebie.</nodes>
+    <nodes xsi:type="NodeChallenge" ID="12" positionX="1416" positionY="-259" width="500" height="726" challengeType="TypeMental" versusEventOwner="true" challengeScale="101" challengedList="ppl">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_IsPlayerTurn" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs name="Win" ownerID="12" targetID="16" fromX="1857" fromY="-754" />
+      <outputs name="Lose" ownerID="12" targetID="20" fromX="1857" fromY="-834" />
+      <outputs name="Surrender" ownerID="12" targetID="20" fromX="1857" fromY="-914" />
+    </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="13" positionX="3457" positionY="-337" width="350" height="530" allPlayersXP="-1" linkedEventUniqueID="0">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="2" tag="TAG-LOYALTY_SHADOW_KIN" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+    </nodes>
+    <nodes xsi:type="NodeChallenge" ID="15" positionX="944" positionY="-1259" width="500" height="726" challengeType="TypePhysical" versusEventOwner="true" challengeScale="101" challengedList="ppl">
+      <outputs name="Win" ownerID="15" targetID="17" fromX="1385" fromY="-1754" />
+      <outputs name="Lose" ownerID="15" targetID="20" fromX="1385" fromY="-1834" />
+      <outputs name="Surrender" ownerID="15" targetID="20" fromX="1385" fromY="-1914" />
+    </nodes>
+    <nodes xsi:type="NodeProduceDrop" ID="16" positionX="2003" positionY="-322" width="460" height="429" fromEventOwner="true">
+      <outputs ownerID="16" targetID="25" fromX="2433" fromY="-680" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="17" positionX="2234" positionY="-1419" width="350" height="725">
+      <outputs name="Wyjdz." ownerID="17" targetID="22" fromX="2559" fromY="-1910" />Pokonujesz cienia. 
+</nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="18" positionX="3337.90649" positionY="-1385.14355" width="350" height="530" allPlayersXP="-1" linkedEventUniqueID="0">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="-1" tag="TAG-LOYALTY_SHADOW_KIN" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="19" positionX="1579.68909" positionY="-1842.37109" width="350" height="725">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers list="ppl">
+            <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="2" tag="SKILL_PACK-ILLNESS" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Uruchom." ownerID="19" targetID="24" fromX="1905" fromY="-2333" />The shadowkin pokonuje cie i zaraza cie ciemnoscia, zanim uda ci sie uciec.</nodes>
+    <nodes xsi:type="NodeDealDamage" ID="20" positionX="1018" positionY="-2116" width="460" height="459" challengeTypeDamage="TypeSpirit" minDamage="50" maxDamage="70" useCountInPercent="true" targetGroup="ppl">
+      <outputs ownerID="20" targetID="19" fromX="1447" fromY="-2504" />
+    </nodes>
+    <nodes xsi:type="NodeSpawnOnMap" ID="21" positionX="2929" positionY="-52" width="480" height="503" radius="0" destroyOwner="true" linkedEventUniqueID="0">
+      <outputs ownerID="21" targetID="13" fromX="3377" fromY="-484" />
+    </nodes>
+    <nodes xsi:type="NodeSpawnOnMap" ID="22" positionX="2748.798" positionY="-1401.57886" width="480" height="503" radius="0" destroyOwner="true" linkedEventUniqueID="0">
+      <outputs ownerID="22" targetID="18" fromX="3197" fromY="-1833" />
+    </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="23" positionX="1767" positionY="527" width="350" height="530" linkedEventUniqueID="0">
+      <logic>
+        <FilterBlock>
+          <LogicProcessing name="blessed" list1="ppl">
+            <scriptCallWithTag scriptName="FLP_CharactersWithSkill" parameter="" tag="SKILL-BLESS_P" />
+          </LogicProcessing>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_Chance" parameter="20" />
+          </LogicResultAction>
+          <LogicResultAction list="blessed">
+            <scriptCallWithTag scriptName="FRA_ListSizeLessEqualThan" parameter="0" tag="---" />
+          </LogicResultAction>
+        </FilterBlock>
+        <ModifierBlock>
+          <LogicProcessing name="one" list1="ppl">
+            <scriptCallWithTag scriptName="FLP_GetRandomXelements" parameter="2" />
+          </LogicProcessing>
+          <LogicModifiers list="one">
+            <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="1" tag="SKILL_PACK-BLESS_P" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+    </nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="24" positionX="2053" positionY="-2230" width="350" height="530" linkedEventUniqueID="0">
+      <logic>
+        <ModifierBlock>
+          <LogicFilter name="stuff">
+            <scriptCallWithTag scriptName="FwT_ThisPlayerThisGroupItems" parameter="1" tag="TAG-PET_WOLF" />
+          </LogicFilter>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddTagShared" parameter="1" tag="TAG-LOYALTY_SHADOW_KIN" />
+          </LogicModifiers>
+          <LogicModifiers list="stuff">
+            <scriptCallWithTag scriptName="FMO_TakeItems" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="25" positionX="2513" positionY="-174" width="350" height="725">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers list="ppl">
+            <scriptCallWithTag scriptName="FMO_ChangeEffectSkillOnCharacter" parameter="1" tag="SKILL_PACK-BLESS_M" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs name="Wyjdz." ownerID="25" targetID="21" fromX="2838" fromY="-665" />Cienie oddalaja sie.</nodes>
+  </Adventure>
+</MODULE>

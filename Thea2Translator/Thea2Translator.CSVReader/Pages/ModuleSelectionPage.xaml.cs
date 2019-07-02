@@ -84,6 +84,7 @@ namespace Thea2Translator.DesktopApp.Pages
             btnImportFromMachineTranslate.Visibility = isVisible ? Visibility.Visible : Visibility.Hidden;
             btnTranslate.Visibility = isVisible ? Visibility.Visible : Visibility.Hidden;
             btnExportToSteam.Visibility = isVisible ? Visibility.Visible : Visibility.Hidden;
+            actionTitleLabel.Visibility = isVisible ? Visibility.Visible : Visibility.Hidden;
         }
 
         private void ClearProgressBar()
@@ -244,7 +245,7 @@ namespace Thea2Translator.DesktopApp.Pages
 
         private void btnVocabulary_Click(object sender, RoutedEventArgs e)
         {
-           // NavigationService.Navigate(new VocabularyPage());
+           //NavigationService.Navigate(new VocabularyPage());
         }
     }
 }

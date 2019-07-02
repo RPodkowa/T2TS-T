@@ -4,8 +4,11 @@
     
     <system:String x:Key="startButtonHome">Rozpocznij</system:String>
     <system:String x:Key="chooseFolderLabelHomePage">Wybierz folder z danymi:</system:String>
-    
-    <system:String x:Key="selectModuleLabelModuleSelection">Wybierz moduł</system:String>
+
+    <system:String x:Key="titleModuleSelection">Wybór Modułu</system:String>
+
+    <system:String x:Key="downloadButtonModuleSelection">Pobierz</system:String>
+    <system:String x:Key="uploadButtonModuleSelection">Wgraj</system:String>
 
     <system:String x:Key="importSteamButtonModuleSelection">Importuj ze Steama</system:String>
     <system:String x:Key="prepareMachineButtonModuleSelection">Przygotuj do Maszynowego Tłumaczenia</system:String>

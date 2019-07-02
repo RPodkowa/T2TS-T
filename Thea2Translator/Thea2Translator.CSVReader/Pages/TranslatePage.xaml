@@ -64,7 +64,7 @@
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal">
                             <CheckBox IsChecked="{Binding IsConfirm}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="SetConfirmOnCache" />
-                            <CheckBox IsChecked="{Binding HasConflict}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="SetResolvedOnCache" />
+                            <CheckBox IsChecked="{Binding HasConflict}" IsEnabled="False" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="SetResolvedOnCache" />
                             <Label Content="{Binding CacheElem.Id}" Foreground="{Binding Color}" FontWeight="Bold" />
                             <Label Content="{Binding CacheElem.OriginalText}" Foreground="{Binding Color}" FontWeight="Bold" />
                         </StackPanel>

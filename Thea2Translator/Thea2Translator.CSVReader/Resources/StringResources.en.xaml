@@ -4,8 +4,11 @@
     <system:String x:Key="startButtonHome">Start</system:String>
     <system:String x:Key="chooseFolderLabelHomePage">Choose folder with data:</system:String>
 
-    <system:String x:Key="selectModuleLabelModuleSelection">Select module</system:String>
-    
+    <system:String x:Key="titleModuleSelection">Module Selection</system:String>
+
+    <system:String x:Key="downloadButtonModuleSelection">Download</system:String>
+    <system:String x:Key="uploadButtonModuleSelection">Upload</system:String>
+
     <system:String x:Key="importSteamButtonModuleSelection">Import From Steam</system:String>
     <system:String x:Key="prepareMachineButtonModuleSelection">Prepare To Machine Translate</system:String>
     <system:String x:Key="importMachineButtonModuleSelection">Import From Machine Translate</system:String>

@@ -232,13 +232,18 @@ namespace Thea2Translator.DesktopApp.Pages
         private void btnDownloadFiles_Click(object sender, RoutedEventArgs e)
         {
             var synchronization = new Synchronization();
+            var workingNow = synchronization.WorkingNow();
             if (synchronization.DownloadCache())
-                MessageBox.Show("Pobieranie plików zakończone sukcesem!");
+            {
+                string txt = "Pobieranie plików zakończone sukcesem!";
+                if (!string.IsNullOrEmpty(workingNow)) txt += $"\r\nAktualnie pracujacy: {workingNow}";
+                MessageBox.Show(txt);
+            }
         }
 
         private void btnUploadFiles_Click(object sender, RoutedEventArgs e)
         {
-            var synchronization = new Synchronization();
+            var synchronization = new Synchronization();            
             if (synchronization.UploadCache())
                 MessageBox.Show("Wysyłanie plików zakończone sukcesem!");
         }

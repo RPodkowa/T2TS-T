@@ -117,7 +117,9 @@ namespace Thea2Translator.Logic
 
         public static void DeletePath(DirectoryType directoryType)
         {
-            DeletePath(GetLocalDirectoryPatch(directoryType));
+            var path= GetLocalDirectoryPatch(directoryType);
+            if (Directory.Exists(path))
+                Directory.Delete(path, true);
         }
 
         public static void DeletePath(string path)
@@ -182,16 +184,66 @@ namespace Thea2Translator.Logic
                 client.UploadFile(fileDestonationLocation, "STOR", fileSourceLocation);
             }
         }
+
+        public static void UploadEmptyFile(DirectoryType directoryType, string fileName)
+        {
+            var tmpFile = GetLocalFilePatch(fileName);
+            var fileDestonationLocation = GetServerFtpFilePatch(directoryType, fileName);
+            File.Create(tmpFile).Dispose();
+            UploadFile(tmpFile, fileDestonationLocation);
+            DeleteFileIfExists(tmpFile);
+        }
+        
+        public static void DeleteFtpFile(DirectoryType directoryType, string fileName)
+        {
+            var fileLocation = GetServerFtpFilePatch(directoryType, fileName);
+            DeleteFtpFile(fileLocation);
+        }
+
+        public static void DeleteFtpFile(string fileLocation)
+        {
+            try
+            {
+                FtpWebRequest request = (FtpWebRequest)WebRequest.Create(fileLocation);
+                request.Method = WebRequestMethods.Ftp.DeleteFile;
+                request.Credentials = new NetworkCredential(ftpUser, ftpPassword);
+
+                FtpWebResponse response = (FtpWebResponse)request.GetResponse();
+                Stream ftpStream = response.GetResponseStream();
+
+                ftpStream.Close();
+                response.Close();
+            }
+            catch (WebException ex)
+            {
+                FtpWebResponse response = (FtpWebResponse)ex.Response;
+                response.Close();
+            }
+        }
         #region Patch
         #region Ftp
         public static string GetServerFtpDirectoryPatch(DirectoryType directoryType)
         {
             return GetServerFtpFilePatch(GetDirectoryName(directoryType));
         }
+        public static string GetServerFtpDirectoryPatch(string directory)
+        {
+            return GetServerFtpFilePatch(directory);
+        }
 
         public static string GetServerFtpFilePatch(DirectoryType directoryType, FilesType filesType)
         {
-            return GetServerFtpFilePatch($"{GetDirectoryName(directoryType)}/{GetFileName(filesType)}");
+            return GetServerFtpFilePatch(GetDirectoryName(directoryType), filesType);
+        }
+
+        public static string GetServerFtpFilePatch(string directory, FilesType filesType)
+        {
+            return GetServerFtpFilePatch($"{directory}/{GetFileName(filesType)}");
+        }
+
+        public static string GetServerFtpFilePatch(DirectoryType directoryType, string fileName)
+        {
+            return GetServerFtpFilePatch($"{GetDirectoryName(directoryType)}/{fileName}");
         }
 
         private static string GetServerFtpFilePatch(string fileName)

@@ -13,6 +13,8 @@ namespace Thea2Translator.Logic
         Working,
         Original,
         OriginalOld,
-        Backup
+        Backup,
+        History,
+        Logs
     }
 }

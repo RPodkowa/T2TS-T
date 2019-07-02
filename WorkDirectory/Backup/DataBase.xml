@@ -35359,7 +35359,12 @@
       <Output>Przywołuje dzika i dodaje ruch</Output>
     </Texts>
   </Element>
-  <Element ID="2650" Key="DES_SKILL_PET_SKSHACK" Flag="0">
+  <Element ID="2650" Key="DES_SKILL_PET_SKSHACK" Flag="1">
+    <Confirmation>
+      <Time>06-07-2019 16:58:09</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -35368,10 +35373,15 @@
     </Groups>
     <Texts>
       <Input>Pet Skshack</Input>
-      <Output>Pet Skshack</Output>
+      <Output>Skrzak</Output>
     </Texts>
   </Element>
-  <Element ID="2651" Key="DES_SKILL_PET_SKSHACK_DES" Flag="0">
+  <Element ID="2651" Key="DES_SKILL_PET_SKSHACK_DES" Flag="1">
+    <Confirmation>
+      <Time>06-06-2019 13:46:05</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -35383,7 +35393,12 @@
       <Output>Dodaje zbieranie</Output>
     </Texts>
   </Element>
-  <Element ID="2652" Key="DES_SKILL_PET_CMUCH" Flag="0">
+  <Element ID="2652" Key="DES_SKILL_PET_CMUCH" Flag="1">
+    <Confirmation>
+      <Time>06-06-2019 14:03:12</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -35392,10 +35407,15 @@
     </Groups>
     <Texts>
       <Input>Pet Cmuch</Input>
-      <Output>Pet Cmuch</Output>
+      <Output>Ćmuch</Output>
     </Texts>
   </Element>
-  <Element ID="2653" Key="DES_SKILL_PET_CMUCH_DES" Flag="0">
+  <Element ID="2653" Key="DES_SKILL_PET_CMUCH_DES" Flag="1">
+    <Confirmation>
+      <Time>06-06-2019 13:45:56</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -35407,7 +35427,12 @@
       <Output>Dodaje fizyczne punkty zdrowia.</Output>
     </Texts>
   </Element>
-  <Element ID="2654" Key="DES_SKILL_PET_CROW" Flag="0">
+  <Element ID="2654" Key="DES_SKILL_PET_CROW" Flag="1">
+    <Confirmation>
+      <Time>06-06-2019 13:45:11</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -35416,10 +35441,15 @@
     </Groups>
     <Texts>
       <Input>Pet Crow</Input>
-      <Output>Pet Crow</Output>
+      <Output>Kruk</Output>
     </Texts>
   </Element>
-  <Element ID="2655" Key="DES_SKILL_PET_CROW_DES" Flag="0">
+  <Element ID="2655" Key="DES_SKILL_PET_CROW_DES" Flag="1">
+    <Confirmation>
+      <Time>06-06-2019 13:45:45</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -35428,10 +35458,15 @@
     </Groups>
     <Texts>
       <Input>Improves perception and rituals</Input>
-      <Output>Poprawia percepcję i rytuały</Output>
+      <Output>Poprawia percepcję oraz rytuały.</Output>
     </Texts>
   </Element>
-  <Element ID="2656" Key="DES_SKILL_PET_WOLF" Flag="0">
+  <Element ID="2656" Key="DES_SKILL_PET_WOLF" Flag="1">
+    <Confirmation>
+      <Time>06-06-2019 13:46:45</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -35440,10 +35475,15 @@
     </Groups>
     <Texts>
       <Input>Pet Wolf</Input>
-      <Output>Pet Wolf</Output>
+      <Output>Wilk</Output>
     </Texts>
   </Element>
-  <Element ID="2657" Key="DES_SKILL_PET_WOLF_DES" Flag="0">
+  <Element ID="2657" Key="DES_SKILL_PET_WOLF_DES" Flag="1">
+    <Confirmation>
+      <Time>06-06-2019 13:46:49</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -35452,10 +35492,15 @@
     </Groups>
     <Texts>
       <Input>Pet Wolf</Input>
-      <Output>Pet Wolf</Output>
+      <Output>Wilk</Output>
     </Texts>
   </Element>
-  <Element ID="2658" Key="DES_SKILL_PET_BEAR" Flag="0">
+  <Element ID="2658" Key="DES_SKILL_PET_BEAR" Flag="1">
+    <Confirmation>
+      <Time>06-06-2019 13:46:59</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -35464,10 +35509,15 @@
     </Groups>
     <Texts>
       <Input>Pet Bear</Input>
-      <Output>Pet Bear</Output>
+      <Output>Niedźwiedź</Output>
     </Texts>
   </Element>
-  <Element ID="2659" Key="DES_SKILL_PET_BEAR_DES" Flag="0">
+  <Element ID="2659" Key="DES_SKILL_PET_BEAR_DES" Flag="1">
+    <Confirmation>
+      <Time>06-06-2019 13:47:06</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -35476,10 +35526,15 @@
     </Groups>
     <Texts>
       <Input>Pet Bear</Input>
-      <Output>Pet Bear</Output>
+      <Output>Niedźwiedź</Output>
     </Texts>
   </Element>
-  <Element ID="2660" Key="DES_SKILL_PET_WRAITH" Flag="0">
+  <Element ID="2660" Key="DES_SKILL_PET_WRAITH" Flag="1">
+    <Confirmation>
+      <Time>06-06-2019 13:47:16</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -35488,10 +35543,15 @@
     </Groups>
     <Texts>
       <Input>Pet Wraith</Input>
-      <Output>Pet Wraith</Output>
+      <Output>Upiór</Output>
     </Texts>
   </Element>
-  <Element ID="2661" Key="DES_SKILL_PET_WRAITH_DES" Flag="0">
+  <Element ID="2661" Key="DES_SKILL_PET_WRAITH_DES" Flag="1">
+    <Confirmation>
+      <Time>06-06-2019 13:47:17</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -35500,10 +35560,15 @@
     </Groups>
     <Texts>
       <Input>Pet Wraith</Input>
-      <Output>Pet Wraith</Output>
+      <Output>Upiór</Output>
     </Texts>
   </Element>
-  <Element ID="2662" Key="DES_SKILL_PET_GHOST" Flag="0">
+  <Element ID="2662" Key="DES_SKILL_PET_GHOST" Flag="1">
+    <Confirmation>
+      <Time>06-06-2019 13:47:24</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -35512,10 +35577,15 @@
     </Groups>
     <Texts>
       <Input>Pet Ghost</Input>
-      <Output>Pet Ghost</Output>
+      <Output>Duch</Output>
     </Texts>
   </Element>
-  <Element ID="2663" Key="DES_SKILL_PET_GHOST_DES" Flag="0">
+  <Element ID="2663" Key="DES_SKILL_PET_GHOST_DES" Flag="1">
+    <Confirmation>
+      <Time>06-06-2019 13:47:26</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -35524,10 +35594,15 @@
     </Groups>
     <Texts>
       <Input>Pet Ghost</Input>
-      <Output>Pet Ghost</Output>
+      <Output>Duch</Output>
     </Texts>
   </Element>
-  <Element ID="2664" Key="DES_SKILL_PET_SPIDER_SPITTING" Flag="0">
+  <Element ID="2664" Key="DES_SKILL_PET_SPIDER_SPITTING" Flag="1">
+    <Confirmation>
+      <Time>06-06-2019 13:47:48</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -35537,10 +35612,15 @@
     </Groups>
     <Texts>
       <Input>Pet Spitting Spider</Input>
-      <Output>Pet Spitting Spider</Output>
+      <Output>Plujący pająk</Output>
     </Texts>
   </Element>
-  <Element ID="2665" Key="DES_SKILL_PET_SPIDER_SPITTING_DES" Flag="0">
+  <Element ID="2665" Key="DES_SKILL_PET_SPIDER_SPITTING_DES" Flag="1">
+    <Confirmation>
+      <Time>06-06-2019 13:47:53</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -35550,10 +35630,15 @@
     </Groups>
     <Texts>
       <Input>Pet Spitting Spider</Input>
-      <Output>Pet Spitting Spider</Output>
+      <Output>Plujący pająk</Output>
     </Texts>
   </Element>
-  <Element ID="2666" Key="DES_SKILL_PET_TURTLE" Flag="0">
+  <Element ID="2666" Key="DES_SKILL_PET_TURTLE" Flag="1">
+    <Confirmation>
+      <Time>06-06-2019 13:48:01</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -35562,10 +35647,15 @@
     </Groups>
     <Texts>
       <Input>Pet Turtle</Input>
-      <Output>Pet Turtle</Output>
+      <Output>Żółw</Output>
     </Texts>
   </Element>
-  <Element ID="2667" Key="DES_SKILL_PET_TURTLE_DES" Flag="0">
+  <Element ID="2667" Key="DES_SKILL_PET_TURTLE_DES" Flag="1">
+    <Confirmation>
+      <Time>06-06-2019 13:48:37</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -35574,10 +35664,15 @@
     </Groups>
     <Texts>
       <Input>Pet Turtle</Input>
-      <Output>Pet Turtle</Output>
+      <Output>Żółw</Output>
     </Texts>
   </Element>
-  <Element ID="2668" Key="DES_SKILL_PET_CHICKEN" Flag="0">
+  <Element ID="2668" Key="DES_SKILL_PET_CHICKEN" Flag="1">
+    <Confirmation>
+      <Time>06-07-2019 09:23:40</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -35586,10 +35681,15 @@
     </Groups>
     <Texts>
       <Input>Pet Chicken</Input>
-      <Output>Pet Chicken</Output>
+      <Output>Kurczak</Output>
     </Texts>
   </Element>
-  <Element ID="2669" Key="DES_SKILL_PET_CHICKEN_DES" Flag="0">
+  <Element ID="2669" Key="DES_SKILL_PET_CHICKEN_DES" Flag="1">
+    <Confirmation>
+      <Time>06-06-2019 14:03:18</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -35598,10 +35698,15 @@
     </Groups>
     <Texts>
       <Input>Pet Chicken</Input>
-      <Output>Pet Chicken</Output>
+      <Output>Kurczak</Output>
     </Texts>
   </Element>
-  <Element ID="2670" Key="DES_SKILL_PET_SUMMON_DES" Flag="0">
+  <Element ID="2670" Key="DES_SKILL_PET_SUMMON_DES" Flag="1">
+    <Confirmation>
+      <Time>06-07-2019 15:23:24</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -35613,7 +35718,12 @@
       <Output>Przywołaj zwierzaka</Output>
     </Texts>
   </Element>
-  <Element ID="2671" Key="DES_SKILL_IDOL" Flag="0">
+  <Element ID="2671" Key="DES_SKILL_IDOL" Flag="1">
+    <Confirmation>
+      <Time>06-07-2019 15:23:30</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -35624,7 +35734,12 @@
       <Output>Idol</Output>
     </Texts>
   </Element>
-  <Element ID="2672" Key="DES_SKILL_IDOL_DES" Flag="0">
+  <Element ID="2672" Key="DES_SKILL_IDOL_DES" Flag="1">
+    <Confirmation>
+      <Time>06-06-2019 14:32:52</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -35632,10 +35747,15 @@
     </Groups>
     <Texts>
       <Input>Creates a village and allows villagers to carry out gathering tasks within its range. Base visibility and gathering range is 1 hex.</Input>
-      <Output>Tworzy wioskę i pozwala mieszkańcom wioski wykonywać zadania zbierania w jej zasięgu. Podstawowa widoczność i zasięg zbierania wynosi 1 heks.</Output>
+      <Output>Tworzy wioskę i pozwala mieszkańcom wykonywać zadanie zbierania w jej zasięgu. Bazowa widoczność oraz zasięg zbierania wynosi 1 heks.</Output>
     </Texts>
   </Element>
-  <Element ID="2673" Key="DES_SKILL_WAREHOUSE" Flag="0">
+  <Element ID="2673" Key="DES_SKILL_WAREHOUSE" Flag="1">
+    <Confirmation>
+      <Time>06-07-2019 15:23:42</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -35646,7 +35766,12 @@
       <Output>Magazyn</Output>
     </Texts>
   </Element>
-  <Element ID="2674" Key="DES_SKILL_WAREHOUSE_DES" Flag="0">
+  <Element ID="2674" Key="DES_SKILL_WAREHOUSE_DES" Flag="1">
+    <Confirmation>
+      <Time>06-07-2019 09:21:34</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -35654,10 +35779,15 @@
     </Groups>
     <Texts>
       <Input>Increases Gathering skill and provides extra slots for gathering tasks.</Input>
-      <Output>Zwiększa umiejętność gromadzenia i zapewnia dodatkowe miejsca do zbierania zadań.</Output>
+      <Output>Zwiększa umiejętność zbierania oraz zapewnia dodatkowe miejsca do zbierania.</Output>
     </Texts>
   </Element>
-  <Element ID="2675" Key="DES_SKILL_FORGE" Flag="0">
+  <Element ID="2675" Key="DES_SKILL_FORGE" Flag="1">
+    <Confirmation>
+      <Time>06-07-2019 15:24:31</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -35668,7 +35798,12 @@
       <Output>Kuźnia</Output>
     </Texts>
   </Element>
-  <Element ID="2676" Key="DES_SKILL_FORGE_DES" Flag="0">
+  <Element ID="2676" Key="DES_SKILL_FORGE_DES" Flag="1">
+    <Confirmation>
+      <Time>06-07-2019 09:23:33</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -35676,10 +35811,15 @@
     </Groups>
     <Texts>
       <Input>Increases Crafting skill and provides extra slots for crafting tasks.</Input>
-      <Output>Zwiększa umiejętność wytwarzania i zapewnia dodatkowe miejsca na zadania rzemieślnicze.</Output>
+      <Output>Zwiększa umiejętności rzemieślnicze oraz zapewnia dodatkowe miejsca do rzemiosła.</Output>
     </Texts>
   </Element>
-  <Element ID="2677" Key="DES_SKILL_ARMOURY" Flag="0">
+  <Element ID="2677" Key="DES_SKILL_ARMOURY" Flag="1">
+    <Confirmation>
+      <Time>06-07-2019 15:23:49</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -35690,7 +35830,12 @@
       <Output>Zbrojownia</Output>
     </Texts>
   </Element>
-  <Element ID="2678" Key="DES_SKILL_ARMOURY_DES" Flag="0">
+  <Element ID="2678" Key="DES_SKILL_ARMOURY_DES" Flag="1">
+    <Confirmation>
+      <Time>06-07-2019 15:25:31</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -35698,10 +35843,15 @@
     </Groups>
     <Texts>
       <Input>Provides Physical Shielding bonus to villagers.</Input>
-      <Output>Zapewnia premię do osłony fizycznej wieśniakom.</Output>
+      <Output>Zapewnia premię do osłony fizycznej dla mieszkańców.</Output>
     </Texts>
   </Element>
-  <Element ID="2679" Key="DES_SKILL_SCHOOL" Flag="0">
+  <Element ID="2679" Key="DES_SKILL_SCHOOL" Flag="1">
+    <Confirmation>
+      <Time>06-07-2019 15:27:14</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -35712,7 +35862,12 @@
       <Output>Szkoła</Output>
     </Texts>
   </Element>
-  <Element ID="2680" Key="DES_SKILL_SCHOOL_DES" Flag="0">
+  <Element ID="2680" Key="DES_SKILL_SCHOOL_DES" Flag="1">
+    <Confirmation>
+      <Time>06-07-2019 15:28:43</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -35720,10 +35875,15 @@
     </Groups>
     <Texts>
       <Input>Provides Research Points each turn.</Input>
-      <Output>Zapewnia punkty badawcze w każdej turze.</Output>
+      <Output>Dostarcza punkty badawcze w każdej turze.</Output>
     </Texts>
   </Element>
-  <Element ID="2681" Key="DES_SKILL_DWELLING_BEDS" Flag="0">
+  <Element ID="2681" Key="DES_SKILL_DWELLING_BEDS" Flag="1">
+    <Confirmation>
+      <Time>06-07-2019 15:27:26</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -35735,7 +35895,12 @@
       <Output>Mieszkanie</Output>
     </Texts>
   </Element>
-  <Element ID="2682" Key="DES_SKILL_DWELLING_BEDS_DES" Flag="0">
+  <Element ID="2682" Key="DES_SKILL_DWELLING_BEDS_DES" Flag="1">
+    <Confirmation>
+      <Time>06-07-2019 15:29:37</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -35744,10 +35909,15 @@
     </Groups>
     <Texts>
       <Input>Provides Morale on or above certain level to villagers.</Input>
-      <Output>Zapewnia wieśniakom morale na określonym poziomie lub powyżej.</Output>
+      <Output>Zapewnia morale na określonym lub wyższym poziomie dla mieszkańców.</Output>
     </Texts>
   </Element>
-  <Element ID="2683" Key="DES_SKILL_HERBALIST_HUT" Flag="0">
+  <Element ID="2683" Key="DES_SKILL_HERBALIST_HUT" Flag="1">
+    <Confirmation>
+      <Time>06-07-2019 15:29:45</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -35756,10 +35926,15 @@
     </Groups>
     <Texts>
       <Input>Herbalist's Hut</Input>
-      <Output>Chata zielarki</Output>
+      <Output>Chata zielarza</Output>
     </Texts>
   </Element>
-  <Element ID="2684" Key="DES_SKILL_HERBALIST_HUT_DES" Flag="0">
+  <Element ID="2684" Key="DES_SKILL_HERBALIST_HUT_DES" Flag="1">
+    <Confirmation>
+      <Time>06-07-2019 15:34:42</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -35768,10 +35943,15 @@
     </Groups>
     <Texts>
       <Input>Increases Health regeneration rate and decreases chance to die from wounds.</Input>
-      <Output>Zwiększa szybkość regeneracji zdrowia i zmniejsza szansę na śmierć z powodu ran.</Output>
+      <Output>Zwiększa tempo regeneracji zdrowia i zmniejsza szansę na śmierć z powodu ran.</Output>
     </Texts>
   </Element>
-  <Element ID="2685" Key="DES_SKILL_WISHING_WELL" Flag="0">
+  <Element ID="2685" Key="DES_SKILL_WISHING_WELL" Flag="1">
+    <Confirmation>
+      <Time>06-07-2019 15:36:07</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -35780,10 +35960,15 @@
     </Groups>
     <Texts>
       <Input>Wishing Well</Input>
-      <Output>Życząc dobrze</Output>
+      <Output>Studia życzeń</Output>
     </Texts>
   </Element>
-  <Element ID="2686" Key="DES_SKILL_WISHING_WELL_DES" Flag="0">
+  <Element ID="2686" Key="DES_SKILL_WISHING_WELL_DES" Flag="1">
+    <Confirmation>
+      <Time>06-07-2019 15:36:30</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -35795,7 +35980,12 @@
       <Output>Zapewnia garść losowych zasobów w każdej turze.</Output>
     </Texts>
   </Element>
-  <Element ID="2687" Key="DES_SKILL_LUMBER_MILL" Flag="0">
+  <Element ID="2687" Key="DES_SKILL_LUMBER_MILL" Flag="1">
+    <Confirmation>
+      <Time>06-07-2019 16:58:16</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -35807,7 +35997,12 @@
       <Output>Tartak</Output>
     </Texts>
   </Element>
-  <Element ID="2688" Key="DES_SKILL_LUMBER_MILL_DES" Flag="0">
+  <Element ID="2688" Key="DES_SKILL_LUMBER_MILL_DES" Flag="1">
+    <Confirmation>
+      <Time>06-07-2019 16:58:41</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -35819,7 +36014,12 @@
       <Output>Zapewnia niewielką ilość drewna w każdej turze.</Output>
     </Texts>
   </Element>
-  <Element ID="2689" Key="DES_SKILL_CHILD_PLAYGROUND" Flag="0">
+  <Element ID="2689" Key="DES_SKILL_CHILD_PLAYGROUND" Flag="1">
+    <Confirmation>
+      <Time>06-07-2019 16:59:00</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -35831,7 +36031,12 @@
       <Output>Plac zabaw dla dzieci</Output>
     </Texts>
   </Element>
-  <Element ID="2690" Key="DES_SKILL_CHILD_PLAYGROUND_DES" Flag="0">
+  <Element ID="2690" Key="DES_SKILL_CHILD_PLAYGROUND_DES" Flag="1">
+    <Confirmation>
+      <Time>06-09-2019 15:45:38</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -35843,7 +36048,12 @@
       <Output>Zwiększa główne atrybuty dzieci.</Output>
     </Texts>
   </Element>
-  <Element ID="2691" Key="DES_SKILL_GUARD_TOWER" Flag="0">
+  <Element ID="2691" Key="DES_SKILL_GUARD_TOWER" Flag="1">
+    <Confirmation>
+      <Time>06-09-2019 15:45:49</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -35855,7 +36065,12 @@
       <Output>Wieża strażnicza</Output>
     </Texts>
   </Element>
-  <Element ID="2692" Key="DES_SKILL_GUARD_TOWER_DES" Flag="0">
+  <Element ID="2692" Key="DES_SKILL_GUARD_TOWER_DES" Flag="1">
+    <Confirmation>
+      <Time>06-09-2019 15:46:51</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -35864,10 +36079,15 @@
     </Groups>
     <Texts>
       <Input>Increases Health and Sanity.</Input>
-      <Output>Zwiększa zdrowie i zdrowie psychiczne.</Output>
+      <Output>Zwiększa zdrowie fizyczne oraz psychiczne.</Output>
     </Texts>
   </Element>
-  <Element ID="2693" Key="DES_SKILL_WITCH_HUT" Flag="0">
+  <Element ID="2693" Key="DES_SKILL_WITCH_HUT" Flag="1">
+    <Confirmation>
+      <Time>06-09-2019 00:12:43</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -35876,10 +36096,15 @@
     </Groups>
     <Texts>
       <Input>Witch Hut</Input>
-      <Output>Witch Hut</Output>
+      <Output>Chata czarownicy</Output>
     </Texts>
   </Element>
-  <Element ID="2694" Key="DES_SKILL_WITCH_HUT_DES" Flag="0">
+  <Element ID="2694" Key="DES_SKILL_WITCH_HUT_DES" Flag="1">
+    <Confirmation>
+      <Time>06-09-2019 15:48:13</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -35888,10 +36113,15 @@
     </Groups>
     <Texts>
       <Input>Increases Rituals attribute, extra slots and provides a small amount of herbs each turn.</Input>
-      <Output>Zwiększa atrybut Rytuały, dodatkowe sloty i dostarcza niewielką ilość ziół w każdej turze.</Output>
+      <Output>Zwiększa atrybut rytuałów, dodaje miejsca oraz zapewnia niewielką ilość ziół w każdej turze.</Output>
     </Texts>
   </Element>
-  <Element ID="2695" Key="DES_SKILL_LEATHER_WITCH_HUT_DES" Flag="0">
+  <Element ID="2695" Key="DES_SKILL_LEATHER_WITCH_HUT_DES" Flag="1">
+    <Confirmation>
+      <Time>06-09-2019 15:48:24</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -35901,10 +36131,15 @@
     </Groups>
     <Texts>
       <Input>Increases Rituals attribute, extra slots and provides a small amount of herbs each turn.</Input>
-      <Output>Zwiększa atrybut Rytuały, dodatkowe sloty i zapewnia niewielką ilość ziół w każdej turze.</Output>
+      <Output>Zwiększa atrybut rytuałów, dodaje miejsca oraz zapewnia niewielką ilość ziół w każdej turze.</Output>
     </Texts>
   </Element>
-  <Element ID="2696" Key="DES_SKILL_AMBER_WITCH_HUT_DES" Flag="0">
+  <Element ID="2696" Key="DES_SKILL_AMBER_WITCH_HUT_DES" Flag="1">
+    <Confirmation>
+      <Time>06-09-2019 15:48:26</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -35914,10 +36149,15 @@
     </Groups>
     <Texts>
       <Input>Increases Rituals attribute, extra slots and provides a small amount of herbs each turn.</Input>
-      <Output>Zwiększa atrybut Rytuały, dodatkowe sloty i dostarcza niewielką ilość ziół w każdej turze.</Output>
+      <Output>Zwiększa atrybut rytuałów, dodaje miejsca oraz zapewnia niewielką ilość ziół w każdej turze.</Output>
     </Texts>
   </Element>
-  <Element ID="2697" Key="DES_SKILL_BONE_WITCH_HUT_DES" Flag="0">
+  <Element ID="2697" Key="DES_SKILL_BONE_WITCH_HUT_DES" Flag="1">
+    <Confirmation>
+      <Time>06-09-2019 15:49:06</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -35927,10 +36167,15 @@
     </Groups>
     <Texts>
       <Input>Increases Rituals attribute, extra slots and increases Faith (spiritual hit points).</Input>
-      <Output>Zwiększa atrybut Rytuały, dodatkowe miejsca i zwiększa wiarę (duchowe punkty wytrzymałości).</Output>
+      <Output>Zwiększa atrybut rytuałów, dodaje miejsca oraz zwiększa wiarę (duchowe punkty wytrzymałości).</Output>
     </Texts>
   </Element>
-  <Element ID="2698" Key="DES_SKILL_CROP_FIELD" Flag="0">
+  <Element ID="2698" Key="DES_SKILL_CROP_FIELD" Flag="1">
+    <Confirmation>
+      <Time>06-09-2019 15:49:17</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -35939,10 +36184,15 @@
     </Groups>
     <Texts>
       <Input>Crop Field</Input>
-      <Output>Pole uprawy</Output>
+      <Output>Pole uprawne</Output>
     </Texts>
   </Element>
-  <Element ID="2699" Key="DES_SKILL_CROP_FIELD_DES" Flag="0">
+  <Element ID="2699" Key="DES_SKILL_CROP_FIELD_DES" Flag="1">
+    <Confirmation>
+      <Time>06-09-2019 15:50:10</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -35951,10 +36201,15 @@
     </Groups>
     <Texts>
       <Input>Provides a small amount of food each turn and a chance to get a vegetable-loving pet.</Input>
-      <Output>Zapewnia niewielką ilość jedzenia w każdej turze i szansę zdobycia zwierzęcia kochającego warzywa.</Output>
+      <Output>Zapewnia małą ilość pożywienia w każdej turze oraz szansę zdobycia zwierzęcia jedzącego warzywa.</Output>
     </Texts>
   </Element>
-  <Element ID="2700" Key="DES_SKILL_MINE" Flag="0">
+  <Element ID="2700" Key="DES_SKILL_MINE" Flag="1">
+    <Confirmation>
+      <Time>06-09-2019 15:50:17</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -35962,10 +36217,15 @@
     </Groups>
     <Texts>
       <Input>Mine</Input>
-      <Output>Mój</Output>
+      <Output>Kopalnia</Output>
     </Texts>
   </Element>
-  <Element ID="2701" Key="DES_SKILL_MINE_DES" Flag="0">
+  <Element ID="2701" Key="DES_SKILL_MINE_DES" Flag="1">
+    <Confirmation>
+      <Time>06-09-2019 15:50:37</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -35973,10 +36233,15 @@
     </Groups>
     <Texts>
       <Input>Provides mineable resources like gems, metal or stone each turn.</Input>
-      <Output>Zapewnia kopalne zasoby, takie jak klejnoty, metal lub kamień w każdej turze.</Output>
+      <Output>Zapewnia zasoby do wydobycia, takie jak klejnoty, metal lub kamień w każdej turze.</Output>
     </Texts>
   </Element>
-  <Element ID="2702" Key="DES_SKILL_MINE_GEM_DES" Flag="0">
+  <Element ID="2702" Key="DES_SKILL_MINE_GEM_DES" Flag="1">
+    <Confirmation>
+      <Time>06-09-2019 15:50:46</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -35988,7 +36253,12 @@
       <Output>Zapewnia niewielką ilość zwykłych klejnotów w każdej turze.</Output>
     </Texts>
   </Element>
-  <Element ID="2703" Key="DES_SKILL_MINE_METAL_DES" Flag="0">
+  <Element ID="2703" Key="DES_SKILL_MINE_METAL_DES" Flag="1">
+    <Confirmation>
+      <Time>06-08-2019 01:24:14</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -35997,10 +36267,15 @@
     </Groups>
     <Texts>
       <Input>Provides a small amount of common metal each turn.</Input>
-      <Output>Zapewnia niewielką ilość zwykłego metalu w każdej turze.</Output>
+      <Output>Zapewnia małą ilość zwykłego metalu w każdej turze.</Output>
     </Texts>
   </Element>
-  <Element ID="2704" Key="DES_SKILL_MINE_STONE_DES" Flag="0">
+  <Element ID="2704" Key="DES_SKILL_MINE_STONE_DES" Flag="1">
+    <Confirmation>
+      <Time>06-08-2019 01:24:25</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -36009,10 +36284,15 @@
     </Groups>
     <Texts>
       <Input>Provides a small amount of common stone each turn.</Input>
-      <Output>Zapewnia niewielką ilość wspólnego kamienia w każdej turze.</Output>
+      <Output>Zapewnia małą ilość wspólnego kamienia w każdej turze.</Output>
     </Texts>
   </Element>
-  <Element ID="2705" Key="DES_SKILL_TRADING_POST" Flag="0">
+  <Element ID="2705" Key="DES_SKILL_TRADING_POST" Flag="1">
+    <Confirmation>
+      <Time>06-08-2019 01:24:41</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -36024,7 +36304,12 @@
       <Output>Punkt handlowy</Output>
     </Texts>
   </Element>
-  <Element ID="2706" Key="DES_SKILL_TRADING_POST_DES" Flag="0">
+  <Element ID="2706" Key="DES_SKILL_TRADING_POST_DES" Flag="1">
+    <Confirmation>
+      <Time>06-08-2019 01:27:55</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -36033,10 +36318,15 @@
     </Groups>
     <Texts>
       <Input>When this building is completed, a trader will show up immediately and you get a chance he will visit you in the future. Also provides a random common resource each turn.</Input>
-      <Output>Kiedy ten budynek zostanie ukończony, trader pojawi się natychmiast, a ty będziesz miał szansę odwiedzić Cię w przyszłości. Zapewnia również losowy wspólny zasób w każdej turze.</Output>
+      <Output>Kiedy ten budynek zostanie ukończony, natychmiast pojawi się handlowiec, a ty będziesz mieć szansę, że odwiedzi was w przyszłości. Zapewnia również losowy pospolity zasób w każdej turze.</Output>
     </Texts>
   </Element>
-  <Element ID="2707" Key="DES_SKILL_EXTRA_MAX_HEALTH_P" Flag="0">
+  <Element ID="2707" Key="DES_SKILL_EXTRA_MAX_HEALTH_P" Flag="1">
+    <Confirmation>
+      <Time>06-09-2019 00:38:17</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -36047,10 +36337,15 @@
     </Groups>
     <Texts>
       <Input>Increase Max Health</Input>
-      <Output>Zwiększ Max Health</Output>
+      <Output>Zwiększenie maksymalnego zdrowia</Output>
     </Texts>
   </Element>
-  <Element ID="2708" Key="DES_SKILL_EXTRA_MAX_HEALTH_P_DES" Flag="0">
+  <Element ID="2708" Key="DES_SKILL_EXTRA_MAX_HEALTH_P_DES" Flag="1">
+    <Confirmation>
+      <Time>06-11-2019 13:23:38</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -36061,10 +36356,15 @@
     </Groups>
     <Texts>
       <Input>This skill is applied by a building. It increases Maximum Physical Hit Points (Health).</Input>
-      <Output>Ta umiejętność jest stosowana przez budynek. Zwiększa maksymalne fizyczne punkty wytrzymałości (zdrowie).</Output>
+      <Output>Efekt jest nałożony przez budynek. Zwiększa maksymalne punkty zdrowia fizycznego.</Output>
     </Texts>
   </Element>
-  <Element ID="2709" Key="DES_SKILL_EXTRA_MAX_HEALTH_M" Flag="0">
+  <Element ID="2709" Key="DES_SKILL_EXTRA_MAX_HEALTH_M" Flag="1">
+    <Confirmation>
+      <Time>06-08-2019 01:29:08</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -36075,10 +36375,15 @@
     </Groups>
     <Texts>
       <Input>Increase Max Sanity</Input>
-      <Output>Zwiększ maksymalne zdrowie</Output>
+      <Output>Zwiększ maksymalne zdrowie psychiczne</Output>
     </Texts>
   </Element>
-  <Element ID="2710" Key="DES_SKILL_EXTRA_MAX_HEALTH_M_DES" Flag="0">
+  <Element ID="2710" Key="DES_SKILL_EXTRA_MAX_HEALTH_M_DES" Flag="1">
+    <Confirmation>
+      <Time>06-11-2019 13:24:12</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -36089,10 +36394,15 @@
     </Groups>
     <Texts>
       <Input>This skill is applied by a building. It increases Maximum Mental Hit Points (Sanity).</Input>
-      <Output>Ta umiejętność jest stosowana przez budynek. Zwiększa Maksymalne Punkty Umysłu (Poczytalność).</Output>
+      <Output>Efekt jest nałożony przez budynek. Zwiększa maksymalne punkty zdrowia psychicznego.</Output>
     </Texts>
   </Element>
-  <Element ID="2711" Key="DES_SKILL_EXTRA_MAX_HEALTH_S" Flag="0">
+  <Element ID="2711" Key="DES_SKILL_EXTRA_MAX_HEALTH_S" Flag="1">
+    <Confirmation>
+      <Time>06-09-2019 00:38:04</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -36103,10 +36413,15 @@
     </Groups>
     <Texts>
       <Input>Increase Max Faith</Input>
-      <Output>Zwiększ maksymalną wiarę</Output>
+      <Output>Zwiększenie maksymalnej wiary</Output>
     </Texts>
   </Element>
-  <Element ID="2712" Key="DES_SKILL_EXTRA_MAX_HEALTH_S_DES" Flag="0">
+  <Element ID="2712" Key="DES_SKILL_EXTRA_MAX_HEALTH_S_DES" Flag="1">
+    <Confirmation>
+      <Time>06-11-2019 13:25:17</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -36117,10 +36432,15 @@
     </Groups>
     <Texts>
       <Input>This skill is applied by a building. It increases Maximum Spiritual Hit Points (Faith).</Input>
-      <Output>Ta umiejętność jest stosowana przez budynek. Zwiększa maksymalne punkty duchowego trafienia (wiara).</Output>
+      <Output>Efekt jest nałożony przez budynek. Zwiększa maksymalne punkty zdrowia duchowego.</Output>
     </Texts>
   </Element>
-  <Element ID="2713" Key="DES_SKILL_EXTRA_GATHERING" Flag="0">
+  <Element ID="2713" Key="DES_SKILL_EXTRA_GATHERING" Flag="1">
+    <Confirmation>
+      <Time>06-09-2019 00:37:50</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -36129,10 +36449,15 @@
     </Groups>
     <Texts>
       <Input>Increase Gathering</Input>
-      <Output>Zwiększ zgromadzenie</Output>
+      <Output>Zwiększenie zbieractwa</Output>
     </Texts>
   </Element>
-  <Element ID="2714" Key="DES_SKILL_EXTRA_GATHERING_DES" Flag="0">
+  <Element ID="2714" Key="DES_SKILL_EXTRA_GATHERING_DES" Flag="1">
+    <Confirmation>
+      <Time>06-11-2019 13:25:36</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -36141,10 +36466,15 @@
     </Groups>
     <Texts>
       <Input>This skill is applied by a building. It increases Gathering ability.</Input>
-      <Output>Ta umiejętność jest stosowana przez budynek. Zwiększa zdolność gromadzenia.</Output>
+      <Output>Efekt jest nałożony przez budynek. Zwiększa zdolność zbieractwa.</Output>
     </Texts>
   </Element>
-  <Element ID="2715" Key="DES_SKILL_EXTRA_STRONG_GATHERING" Flag="0">
+  <Element ID="2715" Key="DES_SKILL_EXTRA_STRONG_GATHERING" Flag="1">
+    <Confirmation>
+      <Time>06-11-2019 10:48:43</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -36154,10 +36484,15 @@
     </Groups>
     <Texts>
       <Input>Greatly Inc. Gathering</Input>
-      <Output>Greatly Inc. Gathering</Output>
+      <Output>Wielkie zwiększenie zbieractwa</Output>
     </Texts>
   </Element>
-  <Element ID="2716" Key="DES_SKILL_EXTRA_STRONG_GATHERING_DES" Flag="0">
+  <Element ID="2716" Key="DES_SKILL_EXTRA_STRONG_GATHERING_DES" Flag="1">
+    <Confirmation>
+      <Time>06-11-2019 13:22:22</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -36167,10 +36502,15 @@
     </Groups>
     <Texts>
       <Input>This skill is applied by a building. It greatly increases Gathering ability.</Input>
-      <Output>Ta umiejętność jest stosowana przez budynek. Zwiększa znacznie zdolność gromadzenia.</Output>
+      <Output>Efekt jest nałożony przez budynek. Znacznie zwiększa zdolność zbieractwa.</Output>
     </Texts>
   </Element>
-  <Element ID="2717" Key="DES_SKILL_EXTRA_CRAFTING" Flag="0">
+  <Element ID="2717" Key="DES_SKILL_EXTRA_CRAFTING" Flag="1">
+    <Confirmation>
+      <Time>06-09-2019 00:37:41</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -36179,10 +36519,15 @@
     </Groups>
     <Texts>
       <Input>Increase Crafting</Input>
-      <Output>Zwiększ rzemiosło</Output>
+      <Output>Zwiększenie rzemiosła</Output>
     </Texts>
   </Element>
-  <Element ID="2718" Key="DES_SKILL_EXTRA_CRAFTING_DES" Flag="0">
+  <Element ID="2718" Key="DES_SKILL_EXTRA_CRAFTING_DES" Flag="1">
+    <Confirmation>
+      <Time>06-11-2019 13:22:49</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -36191,10 +36536,15 @@
     </Groups>
     <Texts>
       <Input>This skill is applied by a building. It increases Crafting ability.</Input>
-      <Output>Ta umiejętność jest stosowana przez budynek. Zwiększa zdolności rzemieślnicze.</Output>
+      <Output>Efekt jest nałożony przez budynek. Zwiększa zdolności rzemieślnicze.</Output>
     </Texts>
   </Element>
-  <Element ID="2719" Key="DES_SKILL_EXTRA_STRONG_CRAFTING" Flag="0">
+  <Element ID="2719" Key="DES_SKILL_EXTRA_STRONG_CRAFTING" Flag="1">
+    <Confirmation>
+      <Time>06-11-2019 10:48:56</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -36204,10 +36554,15 @@
     </Groups>
     <Texts>
       <Input>Greatly Inc. Crafting</Input>
-      <Output>Greatly Inc. Crafting</Output>
+      <Output>Wielkie zwiększenie rzemiosła</Output>
     </Texts>
   </Element>
-  <Element ID="2720" Key="DES_SKILL_EXTRA_STRONG_CRAFTING_DES" Flag="0">
+  <Element ID="2720" Key="DES_SKILL_EXTRA_STRONG_CRAFTING_DES" Flag="1">
+    <Confirmation>
+      <Time>06-11-2019 13:22:59</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -36217,10 +36572,15 @@
     </Groups>
     <Texts>
       <Input>This skill is applied by a building. It greatly increases Crafting ability.</Input>
-      <Output>Ta umiejętność jest stosowana przez budynek. Zwiększa to znacznie zdolności rzemieślnicze.</Output>
+      <Output>Efekt jest nałożony przez budynek. Znacznie zwiększa zdolności rzemieślnicze.</Output>
     </Texts>
   </Element>
-  <Element ID="2721" Key="DES_SKILL_EXTRA_MOVEMENT_RANGE" Flag="0">
+  <Element ID="2721" Key="DES_SKILL_EXTRA_MOVEMENT_RANGE" Flag="1">
+    <Confirmation>
+      <Time>06-10-2019 09:31:05</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -36233,7 +36593,12 @@
       <Output>Zwiększ MP</Output>
     </Texts>
   </Element>
-  <Element ID="2722" Key="DES_SKILL_EXTRA_MOVEMENT_RANGE_DES" Flag="0">
+  <Element ID="2722" Key="DES_SKILL_EXTRA_MOVEMENT_RANGE_DES" Flag="1">
+    <Confirmation>
+      <Time>06-11-2019 13:25:58</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -36243,10 +36608,15 @@
     </Groups>
     <Texts>
       <Input>This skill is applied by a building. It increases Movement Points.</Input>
-      <Output>Ta umiejętność jest stosowana przez budynek. Zwiększa punkty ruchu.</Output>
+      <Output>Efekt jest nałożony przez budynek. Zwiększa punkty ruchu.</Output>
     </Texts>
   </Element>
-  <Element ID="2723" Key="DES_SKILL_EXTRA_STRONG_MOVEMENT_RANGE" Flag="0">
+  <Element ID="2723" Key="DES_SKILL_EXTRA_STRONG_MOVEMENT_RANGE" Flag="1">
+    <Confirmation>
+      <Time>06-11-2019 10:48:18</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -36257,10 +36627,15 @@
     </Groups>
     <Texts>
       <Input>Greatly Inc. MP</Input>
-      <Output>Znacznie Inc. MP</Output>
+      <Output>Wielkie zwiększenie MP</Output>
     </Texts>
   </Element>
-  <Element ID="2724" Key="DES_SKILL_EXTRA_STRONG_MOVEMENT_RANGE_DES" Flag="0">
+  <Element ID="2724" Key="DES_SKILL_EXTRA_STRONG_MOVEMENT_RANGE_DES" Flag="1">
+    <Confirmation>
+      <Time>06-11-2019 13:26:25</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -36271,10 +36646,15 @@
     </Groups>
     <Texts>
       <Input>This skill is applied by a building. It greatly increases Movement Points.</Input>
-      <Output>Ta umiejętność jest stosowana przez budynek. Zwiększa znacznie punkty ruchu.</Output>
+      <Output>Efekt jest nałożony przez budynek. Znacznie zwiększa punkty ruchu.</Output>
     </Texts>
   </Element>
-  <Element ID="2725" Key="DES_SKILL_EXTRA_SHIELDING_P" Flag="0">
+  <Element ID="2725" Key="DES_SKILL_EXTRA_SHIELDING_P" Flag="1">
+    <Confirmation>
+      <Time>06-11-2019 13:34:29</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -36284,10 +36664,15 @@
     </Groups>
     <Texts>
       <Input>Increase Physical Shielding</Input>
-      <Output>Zwiększ ekranowanie fizyczne</Output>
+      <Output>Zwiększenie fizycznej osłony</Output>
     </Texts>
   </Element>
-  <Element ID="2726" Key="DES_SKILL_EXTRA_SHIELDING_P_DES" Flag="0">
+  <Element ID="2726" Key="DES_SKILL_EXTRA_SHIELDING_P_DES" Flag="1">
+    <Confirmation>
+      <Time>06-11-2019 13:26:56</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -36297,10 +36682,15 @@
     </Groups>
     <Texts>
       <Input>This skill is applied by a building. It increases Physical Shielding.</Input>
-      <Output>Ta umiejętność jest stosowana przez budynek. Zwiększa ekranowanie fizyczne.</Output>
+      <Output>Efekt jest nałożony przez budynek. Zwiększa fizyczną osłonę.</Output>
     </Texts>
   </Element>
-  <Element ID="2727" Key="DES_SKILL_EXTRA_SHIELDING_S" Flag="0">
+  <Element ID="2727" Key="DES_SKILL_EXTRA_SHIELDING_S" Flag="1">
+    <Confirmation>
+      <Time>06-11-2019 13:34:43</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -36310,10 +36700,15 @@
     </Groups>
     <Texts>
       <Input>Increase Spiritual Shielding</Input>
-      <Output>Zwiększ osłonę duchową</Output>
+      <Output>Zwiększenie duchowej osłony</Output>
     </Texts>
   </Element>
-  <Element ID="2728" Key="DES_SKILL_EXTRA_SHIELDING_S_DES" Flag="0">
+  <Element ID="2728" Key="DES_SKILL_EXTRA_SHIELDING_S_DES" Flag="1">
+    <Confirmation>
+      <Time>06-11-2019 13:27:11</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -36323,10 +36718,15 @@
     </Groups>
     <Texts>
       <Input>This skill is applied by a building. It increases Spiritual Shielding.</Input>
-      <Output>Ta umiejętność jest stosowana przez budynek. Zwiększa osłonę duchową.</Output>
+      <Output>Efekt jest nałożony przez budynek. Zwiększa duchową osłonę.</Output>
     </Texts>
   </Element>
-  <Element ID="2729" Key="DES_SKILL_EXTRA_SHIELDING_P_M" Flag="0">
+  <Element ID="2729" Key="DES_SKILL_EXTRA_SHIELDING_P_M" Flag="1">
+    <Confirmation>
+      <Time>06-11-2019 10:53:31</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -36337,10 +36737,15 @@
     </Groups>
     <Texts>
       <Input>Inc. Physical and Mental Shielding</Input>
-      <Output>Inc. Fizyczne i mentalne ekranowanie</Output>
+      <Output>Zwiększa fizyczną oraz psychiczną osłone</Output>
     </Texts>
   </Element>
-  <Element ID="2730" Key="DES_SKILL_EXTRA_SHIELDING_P_M_DES" Flag="0">
+  <Element ID="2730" Key="DES_SKILL_EXTRA_SHIELDING_P_M_DES" Flag="1">
+    <Confirmation>
+      <Time>06-11-2019 13:27:51</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -36351,10 +36756,15 @@
     </Groups>
     <Texts>
       <Input>This skill is applied by a building. It increases Physical and Mental Shielding.</Input>
-      <Output>Ta umiejętność jest stosowana przez budynek. Zwiększa ekranowanie fizyczne i psychiczne.</Output>
+      <Output>Efekt jest nałożony przez budynek. Zwiększa fizyczną i psychiczną osłonę.</Output>
     </Texts>
   </Element>
-  <Element ID="2731" Key="DES_SKILL_EXTRA_SHIELDING_P_M_S" Flag="0">
+  <Element ID="2731" Key="DES_SKILL_EXTRA_SHIELDING_P_M_S" Flag="1">
+    <Confirmation>
+      <Time>06-11-2019 10:53:22</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -36366,10 +36776,15 @@
     </Groups>
     <Texts>
       <Input>Inc. Physical, Mental and Spiritual Shielding</Input>
-      <Output>Inc. Fizyczne, mentalne i duchowe osłony</Output>
+      <Output>Zwiększa fizyczną, psychiczną oraz duchową osłone</Output>
     </Texts>
   </Element>
-  <Element ID="2732" Key="DES_SKILL_EXTRA_SHIELDING_P_M_S_DES" Flag="0">
+  <Element ID="2732" Key="DES_SKILL_EXTRA_SHIELDING_P_M_S_DES" Flag="1">
+    <Confirmation>
+      <Time>06-11-2019 13:28:41</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -36381,10 +36796,15 @@
     </Groups>
     <Texts>
       <Input>This skill is applied by a building. It increases Physical, Mental and Spirit Shielding.</Input>
-      <Output>Ta umiejętność jest stosowana przez budynek. Zwiększa ekranowanie fizyczne, psychiczne i duchowe.</Output>
+      <Output>Efekt jest nałożony przez budynek. Zwiększa fizyczną, psychiczną i duchową osłonę.</Output>
     </Texts>
   </Element>
-  <Element ID="2733" Key="DES_SKILL_EXTRA_STRONG_SHIELDING_P" Flag="0">
+  <Element ID="2733" Key="DES_SKILL_EXTRA_STRONG_SHIELDING_P" Flag="1">
+    <Confirmation>
+      <Time>06-11-2019 10:53:23</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -36395,10 +36815,15 @@
     </Groups>
     <Texts>
       <Input>Greatly Inc. Physical Shielding</Input>
-      <Output>Greatly Inc. Fizyczne ekranowanie</Output>
+      <Output>Wielkie zwiększenie fizycznej osłony</Output>
     </Texts>
   </Element>
-  <Element ID="2734" Key="DES_SKILL_EXTRA_STRONG_SHIELDING_P_DES" Flag="0">
+  <Element ID="2734" Key="DES_SKILL_EXTRA_STRONG_SHIELDING_P_DES" Flag="1">
+    <Confirmation>
+      <Time>06-11-2019 13:29:03</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -36409,10 +36834,15 @@
     </Groups>
     <Texts>
       <Input>This skill is applied by a building. It greatly increases Physical Shielding.</Input>
-      <Output>Ta umiejętność jest stosowana przez budynek. Zwiększa znacznie ekranowanie fizyczne.</Output>
+      <Output>Efekt jest nałożony przez budynek. Znacznie zwiększa fizyczną osłonę.</Output>
     </Texts>
   </Element>
-  <Element ID="2735" Key="DES_SKILL_EXTRA_RESEARCH" Flag="0">
+  <Element ID="2735" Key="DES_SKILL_EXTRA_RESEARCH" Flag="1">
+    <Confirmation>
+      <Time>06-08-2019 01:30:43</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -36424,7 +36854,12 @@
       <Output>Zwiększ badania</Output>
     </Texts>
   </Element>
-  <Element ID="2736" Key="DES_SKILL_EXTRA_RESEARCH_DES" Flag="0">
+  <Element ID="2736" Key="DES_SKILL_EXTRA_RESEARCH_DES" Flag="1">
+    <Confirmation>
+      <Time>06-11-2019 13:29:34</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -36433,10 +36868,15 @@
     </Groups>
     <Texts>
       <Input>This skill is applied by a building. It increases Research ability.</Input>
-      <Output>Ta umiejętność jest stosowana przez budynek. Zwiększa zdolność badawczą.</Output>
+      <Output>Efekt jest nałożony przez budynek. Zwiększa zdolności badawcze.</Output>
     </Texts>
   </Element>
-  <Element ID="2737" Key="DES_SKILL_EXTRA_STRONG_RESEARCH" Flag="0">
+  <Element ID="2737" Key="DES_SKILL_EXTRA_STRONG_RESEARCH" Flag="1">
+    <Confirmation>
+      <Time>06-11-2019 10:50:06</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -36446,10 +36886,15 @@
     </Groups>
     <Texts>
       <Input>Greatly Inc. Research</Input>
-      <Output>Greatly Inc. Research</Output>
+      <Output>Wielkie zwiększenie badania</Output>
     </Texts>
   </Element>
-  <Element ID="2738" Key="DES_SKILL_EXTRA_STRONG_RESEARCH_DES" Flag="0">
+  <Element ID="2738" Key="DES_SKILL_EXTRA_STRONG_RESEARCH_DES" Flag="1">
+    <Confirmation>
+      <Time>06-11-2019 13:29:55</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -36459,10 +36904,15 @@
     </Groups>
     <Texts>
       <Input>This skill is applied by a building. It greatly increases Research ability.</Input>
-      <Output>Ta umiejętność jest stosowana przez budynek. Zwiększa znacznie zdolność badawczą.</Output>
+      <Output>Efekt jest nałożony przez budynek. Znacznie zwiększa zdolności badawcze.</Output>
     </Texts>
   </Element>
-  <Element ID="2739" Key="DES_SKILL_EXTRA_HEALING" Flag="0">
+  <Element ID="2739" Key="DES_SKILL_EXTRA_HEALING" Flag="1">
+    <Confirmation>
+      <Time>06-08-2019 01:30:57</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -36471,10 +36921,15 @@
     </Groups>
     <Texts>
       <Input>Increase Regeneration</Input>
-      <Output>Zwiększ regenerację</Output>
+      <Output>Zwiększ regeneracje</Output>
     </Texts>
   </Element>
-  <Element ID="2740" Key="DES_SKILL_EXTRA_HEALING_DES" Flag="0">
+  <Element ID="2740" Key="DES_SKILL_EXTRA_HEALING_DES" Flag="1">
+    <Confirmation>
+      <Time>06-11-2019 13:30:22</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -36483,10 +36938,15 @@
     </Groups>
     <Texts>
       <Input>This skill is applied by a building. It increases Health regeneration.</Input>
-      <Output>Ta umiejętność jest stosowana przez budynek. Zwiększa regenerację zdrowia.</Output>
+      <Output>Efekt jest nałożony przez budynek. Zwiększa regenerację zdrowia.</Output>
     </Texts>
   </Element>
-  <Element ID="2741" Key="DES_SKILL_EXTRA_STRONG_HEALING" Flag="0">
+  <Element ID="2741" Key="DES_SKILL_EXTRA_STRONG_HEALING" Flag="1">
+    <Confirmation>
+      <Time>06-11-2019 10:50:16</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -36496,10 +36956,15 @@
     </Groups>
     <Texts>
       <Input>Greatly Inc. Regeneration</Input>
-      <Output>Greatly Inc. Regeneration</Output>
+      <Output>Wielkie zwiększenie regeneracji</Output>
     </Texts>
   </Element>
-  <Element ID="2742" Key="DES_SKILL_EXTRA_STRONG_HEALING_DES" Flag="0">
+  <Element ID="2742" Key="DES_SKILL_EXTRA_STRONG_HEALING_DES" Flag="1">
+    <Confirmation>
+      <Time>06-11-2019 13:30:55</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -36509,10 +36974,15 @@
     </Groups>
     <Texts>
       <Input>This skill is applied by a building. It greatly increases Health regeneration.</Input>
-      <Output>Ta umiejętność jest stosowana przez budynek. Zwiększa znacznie regenerację zdrowia.</Output>
+      <Output>Efekt jest nałożony przez budynek. Znacznie zwiększa regenerację zdrowia.</Output>
     </Texts>
   </Element>
-  <Element ID="2743" Key="DES_SKILL_EXTRA_LOWER_DEATH_CHANCE" Flag="0">
+  <Element ID="2743" Key="DES_SKILL_EXTRA_LOWER_DEATH_CHANCE" Flag="1">
+    <Confirmation>
+      <Time>06-11-2019 13:35:22</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -36523,10 +36993,15 @@
     </Groups>
     <Texts>
       <Input>Lower Death Chance</Input>
-      <Output>Dolna szansa na śmierć</Output>
+      <Output>Mniejsza szansa na śmierć</Output>
     </Texts>
   </Element>
-  <Element ID="2744" Key="DES_SKILL_EXTRA_LOWER_DEATH_CHANCE_DES" Flag="0">
+  <Element ID="2744" Key="DES_SKILL_EXTRA_LOWER_DEATH_CHANCE_DES" Flag="1">
+    <Confirmation>
+      <Time>06-11-2019 13:31:58</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -36537,10 +37012,15 @@
     </Groups>
     <Texts>
       <Input>This skill is applied by a building. It decreases the chance of dying from low Health.</Input>
-      <Output>Ta umiejętność jest stosowana przez budynek. Zmniejsza szansę na śmierć z powodu niskiego stanu zdrowia.</Output>
+      <Output>Efekt jest nałożony przez budynek. Zmniejsza szansę na śmierć z powodu niskiego zdrowia.</Output>
     </Texts>
   </Element>
-  <Element ID="2745" Key="DES_SKILL_EXTRA_CHILDREN_ATT" Flag="0">
+  <Element ID="2745" Key="DES_SKILL_EXTRA_CHILDREN_ATT" Flag="1">
+    <Confirmation>
+      <Time>06-11-2019 13:35:38</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -36553,7 +37033,12 @@
       <Output>Zwiększenie atrybutów dzieci</Output>
     </Texts>
   </Element>
-  <Element ID="2746" Key="DES_SKILL_EXTRA_CHILDREN_ATT_DES" Flag="0">
+  <Element ID="2746" Key="DES_SKILL_EXTRA_CHILDREN_ATT_DES" Flag="1">
+    <Confirmation>
+      <Time>06-11-2019 13:32:17</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -36563,10 +37048,15 @@
     </Groups>
     <Texts>
       <Input>This skill is applied by a building. It increases children's attributes.</Input>
-      <Output>Ta umiejętność jest stosowana przez budynek. Zwiększa atrybuty dzieci.</Output>
+      <Output>Efekt jest nałożony przez budynek. Zwiększa atrybuty dzieci.</Output>
     </Texts>
   </Element>
-  <Element ID="2747" Key="DES_SKILL_EXTRA_RITUALS" Flag="0">
+  <Element ID="2747" Key="DES_SKILL_EXTRA_RITUALS" Flag="1">
+    <Confirmation>
+      <Time>06-11-2019 13:36:07</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -36575,10 +37065,15 @@
     </Groups>
     <Texts>
       <Input>Increase Rituals</Input>
-      <Output>Zwiększ rytuały</Output>
+      <Output>Zwiększenie rytuałów</Output>
     </Texts>
   </Element>
-  <Element ID="2748" Key="DES_SKILL_EXTRA_RITUALS_DES" Flag="0">
+  <Element ID="2748" Key="DES_SKILL_EXTRA_RITUALS_DES" Flag="1">
+    <Confirmation>
+      <Time>06-11-2019 13:33:23</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -36587,10 +37082,15 @@
     </Groups>
     <Texts>
       <Input>This skill is applied by a building. It increases Rituals attribute.</Input>
-      <Output>Ta umiejętność jest stosowana przez budynek. Zwiększa atrybut Rytuałów.</Output>
+      <Output>Efekt jest nałożony przez budynek. Zwiększa atrybut rytuałów.</Output>
     </Texts>
   </Element>
-  <Element ID="2749" Key="DES_SKILL_EXTRA_LUCK" Flag="0">
+  <Element ID="2749" Key="DES_SKILL_EXTRA_LUCK" Flag="1">
+    <Confirmation>
+      <Time>06-08-2019 01:31:09</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -36602,7 +37102,12 @@
       <Output>Zwiększ szczęście</Output>
     </Texts>
   </Element>
-  <Element ID="2750" Key="DES_SKILL_EXTRA_LUCK_DES" Flag="0">
+  <Element ID="2750" Key="DES_SKILL_EXTRA_LUCK_DES" Flag="1">
+    <Confirmation>
+      <Time>06-11-2019 13:33:36</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -36611,10 +37116,15 @@
     </Groups>
     <Texts>
       <Input>This skill is applied by a building. It increases Luck attribute.</Input>
-      <Output>Ta umiejętność jest stosowana przez budynek. Zwiększa atrybut Luck.</Output>
+      <Output>Efekt jest nałożony przez budynek. Zwiększa atrybut szczęścia.</Output>
     </Texts>
   </Element>
-  <Element ID="2751" Key="DES_SKILL_PEBBLES_THROW" Flag="0">
+  <Element ID="2751" Key="DES_SKILL_PEBBLES_THROW" Flag="1">
+    <Confirmation>
+      <Time>06-11-2019 13:36:33</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -36623,10 +37133,15 @@
     </Groups>
     <Texts>
       <Input>Throw Pebbles</Input>
-      <Output>Rzuć kamyczki</Output>
+      <Output>Rzut kamieniami</Output>
     </Texts>
   </Element>
-  <Element ID="2752" Key="DES_SKILL_PEBBLES_THROW_DES" Flag="0">
+  <Element ID="2752" Key="DES_SKILL_PEBBLES_THROW_DES" Flag="1">
+    <Confirmation>
+      <Time>06-11-2019 13:37:17</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -36635,10 +37150,15 @@
     </Groups>
     <Texts>
       <Input>The ultimate weapon of a five-year-old. Rarely effective, highly annoying.</Input>
-      <Output>Najlepsza broń pięciolatka. Rzadko skuteczny, bardzo denerwujący.</Output>
+      <Output>Ostateczna broń pięciolatka. Rzadko skuteczna, bardzo denerwująca.</Output>
     </Texts>
   </Element>
-  <Element ID="2753" Key="DES_SKILL_RESIST_BEAST" Flag="0">
+  <Element ID="2753" Key="DES_SKILL_RESIST_BEAST" Flag="1">
+    <Confirmation>
+      <Time>06-08-2019 01:31:22</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -36647,10 +37167,15 @@
     </Groups>
     <Texts>
       <Input>Thick Skin</Input>
-      <Output>Gruba skóra</Output>
+      <Output>Gruba Skóra</Output>
     </Texts>
   </Element>
-  <Element ID="2754" Key="DES_SKILL_RESIST_BEAST_DES" Flag="0">
+  <Element ID="2754" Key="DES_SKILL_RESIST_BEAST_DES" Flag="1">
+    <Confirmation>
+      <Time>06-12-2019 10:48:54</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -36659,10 +37184,15 @@
     </Groups>
     <Texts>
       <Input>Some beasts have thicker skin that makes them more difficult to slay. If experienced hunters say so, then it must be true.</Input>
-      <Output>Niektóre zwierzęta mają grubszą skórę, co utrudnia ich zabijanie. Jeśli tak twierdzą doświadczeni myśliwi, to musi być prawda.</Output>
+      <Output>Niektóre bestie mają grubszą skórę przez co ciężej je zabić. Jeżeli tak mówią łowcy to na pewno tak musi być,</Output>
     </Texts>
   </Element>
-  <Element ID="2755" Key="DES_SKILL_HYPNOSIS" Flag="0">
+  <Element ID="2755" Key="DES_SKILL_HYPNOSIS" Flag="1">
+    <Confirmation>
+      <Time>06-09-2019 15:55:14</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -36673,7 +37203,12 @@
       <Output>Hipnoza</Output>
     </Texts>
   </Element>
-  <Element ID="2756" Key="DES_SKILL_HYPNOSIS_DES" Flag="0">
+  <Element ID="2756" Key="DES_SKILL_HYPNOSIS_DES" Flag="1">
+    <Confirmation>
+      <Time>06-12-2019 10:50:52</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -36681,10 +37216,15 @@
     </Groups>
     <Texts>
       <Input>Relax... Your head is getting heavy... Your eyes slowly close. Imagine you're in the good place...</Input>
-      <Output>Relax ... Twoja głowa robi się ciężka ... Twoje oczy powoli się zamykają. Wyobraź sobie, że jesteś w dobrym miejscu ...</Output>
+      <Output>Spokojnie... Twoja głowa staje się ciężka... Twoje oczy powoli się zamykają. Wyobraź sobie, że jesteś w dobrym miejscu...</Output>
     </Texts>
   </Element>
-  <Element ID="2757" Key="DES_SKILL_OUTMANOEUVRE" Flag="0">
+  <Element ID="2757" Key="DES_SKILL_OUTMANOEUVRE" Flag="1">
+    <Confirmation>
+      <Time>06-11-2019 13:38:21</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -36692,10 +37232,15 @@
     </Groups>
     <Texts>
       <Input>Outmanoeuvre</Input>
-      <Output>Outmanoeuvre</Output>
+      <Output>Przechytrzenie</Output>
     </Texts>
   </Element>
-  <Element ID="2758" Key="DES_SKILL_OUTMANOEUVRE_DES" Flag="0">
+  <Element ID="2758" Key="DES_SKILL_OUTMANOEUVRE_DES" Flag="1">
+    <Confirmation>
+      <Time>06-11-2019 13:18:57</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SKILL</Group>
@@ -36703,10 +37248,15 @@
     </Groups>
     <Texts>
       <Input>You know your ground for the upcoming battle. Now you need to use that information to you advantage.</Input>
-      <Output>Znasz swoją podstawę do nadchodzącej bitwy. Teraz musisz wykorzystać te informacje, aby zyskać przewagę.</Output>
+      <Output>Wiesz czego się spodziewać w nadchodzącej bitwie. Musisz teraz wykorzystać te informacje aby uzyskać przewagę.</Output>
     </Texts>
   </Element>
-  <Element ID="2759" Key="DES_SUBSKILL_INCREASE_ATTRIBUTE" Flag="0">
+  <Element ID="2759" Key="DES_SUBSKILL_INCREASE_ATTRIBUTE" Flag="1">
+    <Confirmation>
+      <Time>06-11-2019 13:17:28</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBSKILL</Group>
@@ -36715,10 +37265,15 @@
     </Groups>
     <Texts>
       <Input>Increase Attribute</Input>
-      <Output>Zwiększ atrybut</Output>
+      <Output>Zwiększenie atrybutu</Output>
     </Texts>
   </Element>
-  <Element ID="2760" Key="DES_SUBSKILL_INCREASE_ATTRIBUTE_DES" Flag="0">
+  <Element ID="2760" Key="DES_SUBSKILL_INCREASE_ATTRIBUTE_DES" Flag="1">
+    <Confirmation>
+      <Time>06-12-2019 10:51:20</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBSKILL</Group>
@@ -36730,7 +37285,12 @@
       <Output>Zapewnia premię do określonego atrybutu po wyposażeniu.</Output>
     </Texts>
   </Element>
-  <Element ID="2761" Key="DES_SUBSKILL_BLUNT_ATTACK_M_P_S" Flag="0">
+  <Element ID="2761" Key="DES_SUBSKILL_BLUNT_ATTACK_M_P_S" Flag="1">
+    <Confirmation>
+      <Time>06-09-2019 15:53:36</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBSKILL</Group>
@@ -36742,10 +37302,15 @@
     </Groups>
     <Texts>
       <Input>Brute Force</Input>
-      <Output>Brute Force</Output>
+      <Output>Brutalna siła</Output>
     </Texts>
   </Element>
-  <Element ID="2762" Key="DES_SUBSKILL_BLUNT_ATTACK_M_P_S_DES" Flag="0">
+  <Element ID="2762" Key="DES_SUBSKILL_BLUNT_ATTACK_M_P_S_DES" Flag="1">
+    <Confirmation>
+      <Time>06-14-2019 14:02:17</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBSKILL</Group>
@@ -36757,10 +37322,15 @@
     </Groups>
     <Texts>
       <Input>Single target basic attack from the front row.</Input>
-      <Output>Podstawowy atak pojedynczego celu z pierwszego rzędu.</Output>
+      <Output>Atak celujący w przeciwnika z pierwszego rzędu.</Output>
     </Texts>
   </Element>
-  <Element ID="2763" Key="DES_SUBSKILL_GHOST_TOUCH" Flag="0">
+  <Element ID="2763" Key="DES_SUBSKILL_GHOST_TOUCH" Flag="1">
+    <Confirmation>
+      <Time>06-09-2019 15:53:58</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBSKILL</Group>
@@ -36769,10 +37339,15 @@
     </Groups>
     <Texts>
       <Input>Ghost Touch</Input>
-      <Output>Ghost Touch</Output>
+      <Output>Dotyk ducha</Output>
     </Texts>
   </Element>
-  <Element ID="2764" Key="DES_SUBSKILL_GHOST_TOUCH_DES" Flag="0">
+  <Element ID="2764" Key="DES_SUBSKILL_GHOST_TOUCH_DES" Flag="1">
+    <Confirmation>
+      <Time>06-14-2019 14:00:08</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBSKILL</Group>
@@ -36781,10 +37356,15 @@
     </Groups>
     <Texts>
       <Input>Single target basic attack from the front row, attacks any random oponent.</Input>
-      <Output>Pojedynczy podstawowy cel ataku z pierwszego rzędu, atakuje dowolnego losowego przeciwnika.</Output>
+      <Output>Atak celujący w losowego przeciwnika z pierwszego rzędu.</Output>
     </Texts>
   </Element>
-  <Element ID="2765" Key="DES_SUBSKILL_ENERGY_DISTURB" Flag="0">
+  <Element ID="2765" Key="DES_SUBSKILL_ENERGY_DISTURB" Flag="1">
+    <Confirmation>
+      <Time>06-12-2019 10:53:22</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBSKILL</Group>
@@ -36793,10 +37373,15 @@
     </Groups>
     <Texts>
       <Input>Energy Disturb</Input>
-      <Output>Zakłócenia energetyczne</Output>
+      <Output>Zakłócenia energii</Output>
     </Texts>
   </Element>
-  <Element ID="2766" Key="DES_SUBSKILL_ENERGY_DISTURB_DES" Flag="0">
+  <Element ID="2766" Key="DES_SUBSKILL_ENERGY_DISTURB_DES" Flag="1">
+    <Confirmation>
+      <Time>06-14-2019 14:00:41</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBSKILL</Group>
@@ -36805,10 +37390,15 @@
     </Groups>
     <Texts>
       <Input>Single target melee attack from any row.</Input>
-      <Output>Pojedynczy celowy atak wręcz z dowolnego rzędu.</Output>
+      <Output>Atak wręcz celujący w przeciwnika z dowolnego rzędu.</Output>
     </Texts>
   </Element>
-  <Element ID="2767" Key="DES_SUBSKILL_ENERGY_BLUR" Flag="0">
+  <Element ID="2767" Key="DES_SUBSKILL_ENERGY_BLUR" Flag="1">
+    <Confirmation>
+      <Time>06-09-2019 15:55:23</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBSKILL</Group>
@@ -36817,10 +37407,15 @@
     </Groups>
     <Texts>
       <Input>Energy Blur</Input>
-      <Output>Blur energetyczny</Output>
+      <Output>Rozmycie energii</Output>
     </Texts>
   </Element>
-  <Element ID="2768" Key="DES_SUBSKILL_ENERGY_BLUR_DES" Flag="0">
+  <Element ID="2768" Key="DES_SUBSKILL_ENERGY_BLUR_DES" Flag="1">
+    <Confirmation>
+      <Time>06-14-2019 14:02:03</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBSKILL</Group>
@@ -36829,10 +37424,15 @@
     </Groups>
     <Texts>
       <Input>Single target melee attack from any row.</Input>
-      <Output>Pojedynczy celowy atak wręcz z dowolnego rzędu.</Output>
+      <Output>Atak wręcz celujący w przeciwnika z dowolnego rzędu.</Output>
     </Texts>
   </Element>
-  <Element ID="2769" Key="DES_SUBSKILL_ENERGY_SCATTERING" Flag="0">
+  <Element ID="2769" Key="DES_SUBSKILL_ENERGY_SCATTERING" Flag="1">
+    <Confirmation>
+      <Time>06-12-2019 10:59:03</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBSKILL</Group>
@@ -36841,10 +37441,15 @@
     </Groups>
     <Texts>
       <Input>Energy Scattering</Input>
-      <Output>Rozpraszanie energii</Output>
+      <Output>Rozproszenie energii</Output>
     </Texts>
   </Element>
-  <Element ID="2770" Key="DES_SUBSKILL_ENERGY_SCATTERING_DES" Flag="0">
+  <Element ID="2770" Key="DES_SUBSKILL_ENERGY_SCATTERING_DES" Flag="1">
+    <Confirmation>
+      <Time>06-14-2019 14:02:04</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBSKILL</Group>
@@ -36853,10 +37458,15 @@
     </Groups>
     <Texts>
       <Input>Single target melee attack from any row.</Input>
-      <Output>Pojedynczy celowy atak wręcz z dowolnego rzędu.</Output>
+      <Output>Atak wręcz celujący w przeciwnika z dowolnego rzędu.</Output>
     </Texts>
   </Element>
-  <Element ID="2771" Key="DES_SUBSKILL_PRIMAL_DESIRE" Flag="0">
+  <Element ID="2771" Key="DES_SUBSKILL_PRIMAL_DESIRE" Flag="1">
+    <Confirmation>
+      <Time>06-12-2019 10:59:36</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBSKILL</Group>
@@ -36868,7 +37478,12 @@
       <Output>Przekonujący głos</Output>
     </Texts>
   </Element>
-  <Element ID="2772" Key="DES_SUBSKILL_PRIMAL_DESIRE_DES" Flag="0">
+  <Element ID="2772" Key="DES_SUBSKILL_PRIMAL_DESIRE_DES" Flag="1">
+    <Confirmation>
+      <Time>06-14-2019 14:03:52</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBSKILL</Group>
@@ -36877,10 +37492,15 @@
     </Groups>
     <Texts>
       <Input>Single target, True Damage melee attack from the front row.</Input>
-      <Output>Pojedynczy cel, atak zadający obrażenia od pierwszego rzędu.</Output>
+      <Output>Atak wręcz ignorujący odporności oraz pancerz celujący w przeciwnika z pierwszego rzędu.</Output>
     </Texts>
   </Element>
-  <Element ID="2773" Key="DES_SUBSKILL_FIRE_GLANCE" Flag="0">
+  <Element ID="2773" Key="DES_SUBSKILL_FIRE_GLANCE" Flag="1">
+    <Confirmation>
+      <Time>06-12-2019 11:15:19</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBSKILL</Group>
@@ -36892,7 +37512,12 @@
       <Output>Ogniste spojrzenie</Output>
     </Texts>
   </Element>
-  <Element ID="2774" Key="DES_SUBSKILL_FIRE_GLANCE_DES" Flag="0">
+  <Element ID="2774" Key="DES_SUBSKILL_FIRE_GLANCE_DES" Flag="1">
+    <Confirmation>
+      <Time>06-14-2019 14:05:56</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBSKILL</Group>
@@ -36901,10 +37526,15 @@
     </Groups>
     <Texts>
       <Input>True Damage melee attack from the front row dealing damage to the target enemy and up to 3 enemies next to them.</Input>
-      <Output>Prawdziwe obrażenia w walce wręcz w pierwszym rzędzie zadające obrażenia wrogowi docelowemu i do 3 wrogów obok nich.</Output>
+      <Output>Atak wręcz ignorujący odporności oraz pancerz celujący w przeciwnika z pierwszego rzędu oraz do 3 wrogów obok niego.</Output>
     </Texts>
   </Element>
-  <Element ID="2775" Key="DES_SUBSKILL_WAR_SHOUT" Flag="0">
+  <Element ID="2775" Key="DES_SUBSKILL_WAR_SHOUT" Flag="1">
+    <Confirmation>
+      <Time>06-11-2019 13:38:34</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBSKILL</Group>
@@ -36916,7 +37546,12 @@
       <Output>Okrzyk wojenny</Output>
     </Texts>
   </Element>
-  <Element ID="2776" Key="DES_SUBSKILL_WAR_SHOUT_DES" Flag="0">
+  <Element ID="2776" Key="DES_SUBSKILL_WAR_SHOUT_DES" Flag="1">
+    <Confirmation>
+      <Time>06-14-2019 14:08:13</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBSKILL</Group>
@@ -36925,10 +37560,15 @@
     </Groups>
     <Texts>
       <Input>Melee attack from the front row dealing damage to the target enemy and up to 3 enemies next to them.</Input>
-      <Output>Atak w zwarciu z pierwszego rzędu zadający obrażenia wrogowi docelowemu i do 3 wrogów obok niego.</Output>
+      <Output>Atak wręcz celujący w przeciwnika z pierwszego rzędu oraz do 3 wrogów obok niego.</Output>
     </Texts>
   </Element>
-  <Element ID="2777" Key="DES_SUBSKILL_CORRUPTION" Flag="0">
+  <Element ID="2777" Key="DES_SUBSKILL_CORRUPTION" Flag="1">
+    <Confirmation>
+      <Time>06-12-2019 11:15:33</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBSKILL</Group>
@@ -36939,7 +37579,12 @@
       <Output>Korupcja</Output>
     </Texts>
   </Element>
-  <Element ID="2778" Key="DES_SUBSKILL_CORRUPTION_DES" Flag="0">
+  <Element ID="2778" Key="DES_SUBSKILL_CORRUPTION_DES" Flag="1">
+    <Confirmation>
+      <Time>06-14-2019 14:08:48</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBSKILL</Group>
@@ -36947,10 +37592,15 @@
     </Groups>
     <Texts>
       <Input>Single target, poison damage melee attack from the front row.</Input>
-      <Output>Pojedynczy cel, trucizna uszkadza atak w zwarciu z pierwszego rzędu.</Output>
+      <Output>Atak trucizną celujący w przeciwnka z pierwszego rzędu.</Output>
     </Texts>
   </Element>
-  <Element ID="2779" Key="DES_SUBSKILL_WILL_DRAIN" Flag="0">
+  <Element ID="2779" Key="DES_SUBSKILL_WILL_DRAIN" Flag="1">
+    <Confirmation>
+      <Time>06-11-2019 13:20:03</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBSKILL</Group>
@@ -36959,10 +37609,15 @@
     </Groups>
     <Texts>
       <Input>Will Drain</Input>
-      <Output>Will Drain</Output>
+      <Output>Drenaż woli</Output>
     </Texts>
   </Element>
-  <Element ID="2780" Key="DES_SUBSKILL_WILL_DRAIN_DES" Flag="0">
+  <Element ID="2780" Key="DES_SUBSKILL_WILL_DRAIN_DES" Flag="1">
+    <Confirmation>
+      <Time>06-14-2019 14:11:21</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBSKILL</Group>
@@ -36971,10 +37626,15 @@
     </Groups>
     <Texts>
       <Input>Single target, leech damage melee attack.</Input>
-      <Output>Pojedynczy cel, pijawka uszkadza atak w zwarciu.</Output>
+      <Output>Atak wysysający celujący w przeciwnika z pierwszego rzędu.</Output>
     </Texts>
   </Element>
-  <Element ID="2781" Key="DES_SUBSKILL_RELIABLE_ARGUMENT" Flag="0">
+  <Element ID="2781" Key="DES_SUBSKILL_RELIABLE_ARGUMENT" Flag="1">
+    <Confirmation>
+      <Time>06-11-2019 13:20:31</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBSKILL</Group>
@@ -36983,10 +37643,15 @@
     </Groups>
     <Texts>
       <Input>Reliable Argument</Input>
-      <Output>Rzetelny argument</Output>
+      <Output>Wiarygodny argument</Output>
     </Texts>
   </Element>
-  <Element ID="2782" Key="DES_SUBSKILL_RELIABLE_ARGUMENT_DES" Flag="0">
+  <Element ID="2782" Key="DES_SUBSKILL_RELIABLE_ARGUMENT_DES" Flag="1">
+    <Confirmation>
+      <Time>06-14-2019 14:11:45</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBSKILL</Group>
@@ -36995,10 +37660,15 @@
     </Groups>
     <Texts>
       <Input>Single target attack from the front row.</Input>
-      <Output>Atak pojedynczego celu z pierwszego rzędu.</Output>
+      <Output>Atak wręcz celujący w przeciwnika z pierwszego rzędu.</Output>
     </Texts>
   </Element>
-  <Element ID="2783" Key="DES_SUBSKILL_SHOWING_OFF" Flag="0">
+  <Element ID="2783" Key="DES_SUBSKILL_SHOWING_OFF" Flag="1">
+    <Confirmation>
+      <Time>06-12-2019 11:15:53</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBSKILL</Group>
@@ -37007,10 +37677,15 @@
     </Groups>
     <Texts>
       <Input>Showing off</Input>
-      <Output>Pokazywanie</Output>
+      <Output>Popisywanie się</Output>
     </Texts>
   </Element>
-  <Element ID="2784" Key="DES_SUBSKILL_SHOWING_OFF_DES" Flag="0">
+  <Element ID="2784" Key="DES_SUBSKILL_SHOWING_OFF_DES" Flag="1">
+    <Confirmation>
+      <Time>06-14-2019 14:11:48</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBSKILL</Group>
@@ -37019,10 +37694,15 @@
     </Groups>
     <Texts>
       <Input>Single target attack from the front row.</Input>
-      <Output>Atak pojedynczego celu z pierwszego rzędu.</Output>
+      <Output>Atak wręcz celujący w przeciwnika z pierwszego rzędu.</Output>
     </Texts>
   </Element>
-  <Element ID="2785" Key="DES_SUBSKILL_HYPNOTISE_MOVE" Flag="0">
+  <Element ID="2785" Key="DES_SUBSKILL_HYPNOTISE_MOVE" Flag="1">
+    <Confirmation>
+      <Time>06-12-2019 11:31:53</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBSKILL</Group>
@@ -37031,10 +37711,15 @@
     </Groups>
     <Texts>
       <Input>Hypnotise</Input>
-      <Output>Zahipnotyzuj</Output>
+      <Output>Hipnotyzowanie</Output>
     </Texts>
   </Element>
-  <Element ID="2786" Key="DES_SUBSKILL_HYPNOTISE_MOVE_DES" Flag="0">
+  <Element ID="2786" Key="DES_SUBSKILL_HYPNOTISE_MOVE_DES" Flag="1">
+    <Confirmation>
+      <Time>06-14-2019 13:58:39</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBSKILL</Group>
@@ -37043,10 +37728,15 @@
     </Groups>
     <Texts>
       <Input>Melee attack, targets 3 enemies in a horizontal line.</Input>
-      <Output>Atak wręcz, celuje w 3 wrogów w poziomej linii.</Output>
+      <Output>Atak wręcz celujący w 3 wrogów wzdłuż linii poziomej.</Output>
     </Texts>
   </Element>
-  <Element ID="2787" Key="DES_SUBSKILL_OUTMANOEUVRE" Flag="0">
+  <Element ID="2787" Key="DES_SUBSKILL_OUTMANOEUVRE" Flag="1">
+    <Confirmation>
+      <Time>06-11-2019 13:38:50</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBSKILL</Group>
@@ -37054,10 +37744,15 @@
     </Groups>
     <Texts>
       <Input>Outmanoeuvre</Input>
-      <Output>Outmanoeuvre</Output>
+      <Output>Przechytrzenie</Output>
     </Texts>
   </Element>
-  <Element ID="2788" Key="DES_SUBSKILL_OUTMANOEUVRE_DES" Flag="0">
+  <Element ID="2788" Key="DES_SUBSKILL_OUTMANOEUVRE_DES" Flag="1">
+    <Confirmation>
+      <Time>06-14-2019 14:12:51</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBSKILL</Group>
@@ -37065,10 +37760,15 @@
     </Groups>
     <Texts>
       <Input>Single target attack from ranged row.</Input>
-      <Output>Atak pojedynczego celu z rzędu dystansowego.</Output>
+      <Output>Atak celujący w przeciwnika z dystansowego rzędu.</Output>
     </Texts>
   </Element>
-  <Element ID="2789" Key="DES_SUBSKILL_SOUL_TEAR" Flag="0">
+  <Element ID="2789" Key="DES_SUBSKILL_SOUL_TEAR" Flag="1">
+    <Confirmation>
+      <Time>06-11-2019 13:20:47</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBSKILL</Group>
@@ -37077,10 +37777,15 @@
     </Groups>
     <Texts>
       <Input>Soul Damage</Input>
-      <Output>Obrażenia Duszy</Output>
+      <Output>Uszkodzenie duszy</Output>
     </Texts>
   </Element>
-  <Element ID="2790" Key="DES_SUBSKILL_SOUL_TEAR_DES" Flag="0">
+  <Element ID="2790" Key="DES_SUBSKILL_SOUL_TEAR_DES" Flag="1">
+    <Confirmation>
+      <Time>06-14-2019 14:45:55</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBSKILL</Group>
@@ -37089,10 +37794,15 @@
     </Groups>
     <Texts>
       <Input>Single target attack from any row.</Input>
-      <Output>Pojedynczy atak z dowolnego rzędu.</Output>
+      <Output>Atak celujacy w przeciwnika z dowolnego rzędu.</Output>
     </Texts>
   </Element>
-  <Element ID="2791" Key="DES_SUBSKILL_SPIRIT_CUTOFF" Flag="0">
+  <Element ID="2791" Key="DES_SUBSKILL_SPIRIT_CUTOFF" Flag="1">
+    <Confirmation>
+      <Time>06-11-2019 13:20:58</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBSKILL</Group>
@@ -37101,10 +37811,15 @@
     </Groups>
     <Texts>
       <Input>Detach Spirit</Input>
-      <Output>Odłącz Ducha</Output>
+      <Output>Oderwanie ducha</Output>
     </Texts>
   </Element>
-  <Element ID="2792" Key="DES_SUBSKILL_SPIRIT_CUTOFF_DES" Flag="0">
+  <Element ID="2792" Key="DES_SUBSKILL_SPIRIT_CUTOFF_DES" Flag="1">
+    <Confirmation>
+      <Time>06-14-2019 14:46:12</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBSKILL</Group>
@@ -37113,10 +37828,15 @@
     </Groups>
     <Texts>
       <Input>Single target attack from ranged row.</Input>
-      <Output>Atak pojedynczego celu z rzędu dystansowego.</Output>
+      <Output>Atak celujacy w przeciwnika z dystansowego rzędu.</Output>
     </Texts>
   </Element>
-  <Element ID="2793" Key="DES_SUBSKILL_SHADOW_WHISPERS" Flag="0">
+  <Element ID="2793" Key="DES_SUBSKILL_SHADOW_WHISPERS" Flag="1">
+    <Confirmation>
+      <Time>06-14-2019 14:46:28</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBSKILL</Group>
@@ -37125,10 +37845,15 @@
     </Groups>
     <Texts>
       <Input>Destructive Words</Input>
-      <Output>Słowa niszczące</Output>
+      <Output>Destrukcyjne słowa</Output>
     </Texts>
   </Element>
-  <Element ID="2794" Key="DES_SUBSKILL_SHADOW_WHISPERS_DES" Flag="0">
+  <Element ID="2794" Key="DES_SUBSKILL_SHADOW_WHISPERS_DES" Flag="1">
+    <Confirmation>
+      <Time>06-14-2019 14:48:42</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBSKILL</Group>
@@ -37137,10 +37862,15 @@
     </Groups>
     <Texts>
       <Input>Attack from the front row dealing poison damage to the target enemy and up to 3 enemies next to them.</Input>
-      <Output>Atak z pierwszego rzędu zadający obrażenia od trucizny wrogowi docelowemu i maksymalnie 3 wrogom obok nich.</Output>
+      <Output>Atak trucizną celujący w przeciwnika z pierwszego rzędu oraz maksymalnie 3 wrogów obok niego.</Output>
     </Texts>
   </Element>
-  <Element ID="2795" Key="DES_SUBSKILL_RANDOM_BLAST" Flag="0">
+  <Element ID="2795" Key="DES_SUBSKILL_RANDOM_BLAST" Flag="1">
+    <Confirmation>
+      <Time>06-12-2019 11:30:02</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBSKILL</Group>
@@ -37152,7 +37882,12 @@
       <Output>Losowy wybuch</Output>
     </Texts>
   </Element>
-  <Element ID="2796" Key="DES_SUBSKILL_RANDOM_BLAST_DES" Flag="0">
+  <Element ID="2796" Key="DES_SUBSKILL_RANDOM_BLAST_DES" Flag="1">
+    <Confirmation>
+      <Time>06-12-2019 11:30:52</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBSKILL</Group>
@@ -37164,7 +37899,12 @@
       <Output>Losowo atakuje 1 cel.</Output>
     </Texts>
   </Element>
-  <Element ID="2797" Key="DES_SUBSKILL_RANDOM_BLASTS" Flag="0">
+  <Element ID="2797" Key="DES_SUBSKILL_RANDOM_BLASTS" Flag="1">
+    <Confirmation>
+      <Time>06-12-2019 11:30:14</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBSKILL</Group>
@@ -37173,10 +37913,15 @@
     </Groups>
     <Texts>
       <Input>Random Blasts 2</Input>
-      <Output>Losowe wybuchy 2</Output>
+      <Output>Losowy wybuch 2</Output>
     </Texts>
   </Element>
-  <Element ID="2798" Key="DES_SUBSKILL_RANDOM_BLASTS_DES" Flag="0">
+  <Element ID="2798" Key="DES_SUBSKILL_RANDOM_BLASTS_DES" Flag="1">
+    <Confirmation>
+      <Time>06-12-2019 11:31:05</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBSKILL</Group>
@@ -37188,7 +37933,12 @@
       <Output>Losowo atakuje 1-2 cele.</Output>
     </Texts>
   </Element>
-  <Element ID="2799" Key="DES_SUBSKILL_RANDOM_BLASTS3" Flag="0">
+  <Element ID="2799" Key="DES_SUBSKILL_RANDOM_BLASTS3" Flag="1">
+    <Confirmation>
+      <Time>06-12-2019 11:30:18</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBSKILL</Group>
@@ -37197,10 +37947,15 @@
     </Groups>
     <Texts>
       <Input>Random Blasts 3</Input>
-      <Output>Losowe wybuchy 3</Output>
+      <Output>Losowy wybuch 3</Output>
     </Texts>
   </Element>
-  <Element ID="2800" Key="DES_SUBSKILL_RANDOM_BLASTS3_DES" Flag="0">
+  <Element ID="2800" Key="DES_SUBSKILL_RANDOM_BLASTS3_DES" Flag="1">
+    <Confirmation>
+      <Time>06-12-2019 11:31:12</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBSKILL</Group>
@@ -37209,10 +37964,15 @@
     </Groups>
     <Texts>
       <Input>Randomly attacks 1-3 targets.</Input>
-      <Output>Losowo atakuje 1-3 celów.</Output>
+      <Output>Losowo atakuje 1-3 cele.</Output>
     </Texts>
   </Element>
-  <Element ID="2801" Key="DES_SUBSKILL_RANDOM_BLASTS4" Flag="0">
+  <Element ID="2801" Key="DES_SUBSKILL_RANDOM_BLASTS4" Flag="1">
+    <Confirmation>
+      <Time>06-12-2019 11:30:23</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBSKILL</Group>
@@ -37221,10 +37981,15 @@
     </Groups>
     <Texts>
       <Input>Random Blasts 4</Input>
-      <Output>Losowe wybuchy 4</Output>
+      <Output>Losowy wybuch 4</Output>
     </Texts>
   </Element>
-  <Element ID="2802" Key="DES_SUBSKILL_RANDOM_BLASTS4_DES" Flag="0">
+  <Element ID="2802" Key="DES_SUBSKILL_RANDOM_BLASTS4_DES" Flag="1">
+    <Confirmation>
+      <Time>06-12-2019 11:31:16</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBSKILL</Group>
@@ -37236,7 +38001,12 @@
       <Output>Losowo atakuje 1-4 cele.</Output>
     </Texts>
   </Element>
-  <Element ID="2803" Key="DES_SUBSKILL_RANDOM_BLASTS5" Flag="0">
+  <Element ID="2803" Key="DES_SUBSKILL_RANDOM_BLASTS5" Flag="1">
+    <Confirmation>
+      <Time>06-12-2019 11:30:32</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBSKILL</Group>
@@ -37245,10 +38015,15 @@
     </Groups>
     <Texts>
       <Input>Random Blasts 5</Input>
-      <Output>Losowe wybuchy 5</Output>
+      <Output>Losowy wybuch 5</Output>
     </Texts>
   </Element>
-  <Element ID="2804" Key="DES_SUBSKILL_RANDOM_BLASTS5_DES" Flag="0">
+  <Element ID="2804" Key="DES_SUBSKILL_RANDOM_BLASTS5_DES" Flag="1">
+    <Confirmation>
+      <Time>06-12-2019 11:31:21</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBSKILL</Group>
@@ -37257,10 +38032,15 @@
     </Groups>
     <Texts>
       <Input>Randomly attacks 1-5 targets.</Input>
-      <Output>Losowo atakuje 1-5 celów.</Output>
+      <Output>Losowo atakuje 1-5 cele.</Output>
     </Texts>
   </Element>
-  <Element ID="2805" Key="DES_SUBSKILL_DARKNESS_VORTEX" Flag="0">
+  <Element ID="2805" Key="DES_SUBSKILL_DARKNESS_VORTEX" Flag="1">
+    <Confirmation>
+      <Time>06-14-2019 14:48:50</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBSKILL</Group>
@@ -37272,7 +38052,12 @@
       <Output>Wir ciemności</Output>
     </Texts>
   </Element>
-  <Element ID="2806" Key="DES_SUBSKILL_DARKNESS_VORTEX_DES" Flag="0">
+  <Element ID="2806" Key="DES_SUBSKILL_DARKNESS_VORTEX_DES" Flag="1">
+    <Confirmation>
+      <Time>06-14-2019 14:49:11</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBSKILL</Group>
@@ -37284,7 +38069,12 @@
       <Output>Losowo atakuje 1 cel.</Output>
     </Texts>
   </Element>
-  <Element ID="2807" Key="DES_SUBSKILL_POISON_FOG" Flag="0">
+  <Element ID="2807" Key="DES_SUBSKILL_POISON_FOG" Flag="1">
+    <Confirmation>
+      <Time>06-14-2019 14:49:23</Time>
+      <GUID>86906C84-419D-4978-8B85-EB8833C770DD</GUID>
+      <User>miol</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBSKILL</Group>
@@ -37293,7 +38083,7 @@
     </Groups>
     <Texts>
       <Input>Poison Fog</Input>
-      <Output>Mgła trucizny</Output>
+      <Output>Trująca mgła</Output>
     </Texts>
   </Element>
   <Element ID="2808" Key="DES_SUBSKILL_POISON_FOG_DES" Flag="0">

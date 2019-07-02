@@ -3,7 +3,7 @@
 1;0;1;02;
 1;0;1;04;
 1;0;1;05;
-7;0;1;1-;
+7;0;0;1-;
 22;4;1;10;
 2;1;1;100;
 1;0;1;100ranged;
@@ -24,7 +24,7 @@
 1;0;1;18;
 1;0;1;192168019999;
 2;0;1;1h;
-35;0;1;1-handed;
+35;0;0;1-handed;
 1;0;1;1mp;
 11;9;1;20;
 1;3;1;200;
@@ -32,7 +32,7 @@
 1;0;1;24;
 7;1;1;25;
 1;0;1;28;
-41;0;1;2-handed;
+41;0;0;2-handed;
 1;0;1;2x;
 15;4;1;30;
 1;0;1;30-50;
@@ -81,7 +81,7 @@
 0;4;1;Abide;
 7;3;1;Abilities;
 13;1;1;Ability;
-58;96;1;Able;
+58;96;0;Able;
 0;1;1;Abnormal;
 0;1;1;Aboard;
 1;9;1;Abode;
@@ -414,7 +414,7 @@
 9;93;1;Always;
 0;2;1;Always';
 0;1;1;Alwaysnow;
-8;340;1;Am;
+8;340;0;Am;
 0;3;1;Am';
 1;0;1;Amalgamation;
 0;1;1;Amass;
@@ -654,7 +654,7 @@
 0;1;1;Arm-wrestle;
 0;2;1;Army;
 0;1;1;Aromas;
-40;157;1;Around;
+40;157;0;Around;
 0;1;1;Around'you;
 0;1;1;Arrangement;
 0;1;1;Array;
@@ -674,9 +674,9 @@
 0;3;1;Arseholes;
 0;10;1;Arses;
 0;1;1;Arses';
-2;6;1;Art;
+2;6;0;Art;
 0;1;1;Art--;
-47;10;1;Artefact;
+47;10;1;Artefact;Artefakt
 10;2;1;Artefacts;
 0;1;1;Arteries;
 2;0;1;Artifact;
@@ -690,7 +690,7 @@
 0;5;1;'as;
 169;1718;0;As;
 0;4;1;Ascend;
-2;46;1;Ash;
+2;46;0;Ash;
 1;2;1;Ashamed;
 0;1;1;Ashany;
 0;2;1;Ashat;
@@ -1278,7 +1278,7 @@
 6;44;1;Bies;
 0;1;1;Biesthe;
 0;2;1;Biesyou;
-7;45;1;Big;
+7;45;0;Big;
 0;1;1;Bigfolk';
 0;1;1;Big-folk;
 2;8;1;Bigger;
@@ -1526,7 +1526,7 @@
 0;1;1;Borrowed;
 3;8;1;Boss;
 0;1;1;'both;
-28;93;1;Both;
+28;93;0;Both;
 2;22;1;Bother;
 1;3;1;Bothered;
 0;1;1;Botherednow;
@@ -1626,7 +1626,7 @@
 0;1;1;Brilliance;
 0;7;1;Brim;
 0;1;1;'bring;
-8;93;1;Bring;
+8;93;0;Bring;
 0;1;1;'bringer;
 1;4;1;Bringer;
 0;2;1;Bringers;
@@ -1848,7 +1848,7 @@
 0;1;1;Cannotbelieving;
 0;1;1;Canopy;
 2;42;1;Can't;
-4;0;1;Capable;
+4;0;0;Capable;
 1;0;1;Capacious;
 3;0;1;Capacity;
 0;1;1;Cape;
@@ -2126,7 +2126,7 @@
 0;1;1;Chirping;
 1;0;1;Chiselled;
 0;1;1;Chocolate;
-8;45;1;Choice;
+8;45;0;Choice;
 0;4;1;Choice';
 0;1;1;Choiceanyway;
 1;22;1;Choices;
@@ -2291,7 +2291,7 @@
 0;3;1;Cluttered;
 2;0;1;Cmok;
 0;2;1;C'mon;
-16;49;1;Cmuch;
+16;49;1;Cmuch;Ćmuch
 0;1;1;Cmucha;
 0;1;1;Cmuchoffer;
 0;1;1;Cmuchs;
@@ -2394,7 +2394,7 @@
 0;2;1;Commitmentthe;
 0;6;1;Committed;
 0;1;1;Commo;
-21;29;1;Common;
+21;29;1;Common;Pospolity
 7;1;1;Commonly;
 0;2;1;Commotion;
 1;6;1;Commune;
@@ -2993,14 +2993,14 @@
 0;1;1;Deafening;
 0;2;1;Deafens;
 0;1;1;'deal;
-27;184;1;Deal;
+27;184;0;Deal;
 0;11;1;Deal';
-12;12;1;Dealing;
+12;12;0;Dealing;
 0;1;1;Dealings;
 0;1;1;Dealin's;
 0;1;1;Dealrabsik;
 0;3;1;'deal's;
-7;19;1;Deals;
+7;19;0;Deals;
 0;13;1;Deal's;
 11;19;1;Dealt;
 0;4;1;Deal'the;
@@ -3043,7 +3043,7 @@
 0;1;1;Deceit;
 0;1;1;Deceive;
 0;1;1;Deceived;
-2;4;1;Decent;
+2;4;0;Decent;
 0;1;1;Decent-looking;
 0;1;1;Deception;
 1;0;1;Deceptive;
@@ -3101,7 +3101,7 @@
 0;1;1;Defiledalthough;
 0;1;1;Defiledbut;
 0;1;1;Defilers;
-2;0;1;Define;
+2;0;0;Define;
 0;1;1;Definite;
 0;1;1;Definitely;
 0;4;1;Deformed;
@@ -3829,8 +3829,8 @@
 2;0;1;Education;
 0;9;1;Eerie;
 1;5;1;Eerily;
-11;9;1;Effect;
-5;0;1;Effective;
+11;9;0;Effect;
+5;0;0;Effective;
 1;0;1;Effectiveness;
 34;16;1;Effects;
 0;1;1;Effects';
@@ -4550,7 +4550,7 @@
 4;7;1;Fiery;
 0;1;1;Fifteen;
 0;1;1;Fifty-fifty;
-42;185;1;Fight;
+42;185;1;Fight;Walka
 0;3;1;Fight';
 1;11;1;Fighter;
 1;6;1;Fighters;
@@ -4618,7 +4618,7 @@
 0;1;1;Fireworks;
 1;21;1;Firm;
 0;1;1;Firmer;
-24;139;1;First;
+24;139;0;First;
 0;10;1;First';
 0;1;1;Firsti;
 18;59;1;Fish;
@@ -4756,7 +4756,7 @@
 9;15;1;Followed;
 0;1;1;'follower;
 10;5;1;Follower;
-13;9;1;Followers;
+13;9;1;Followers;Towarzysze
 0;2;1;Followerss;
 0;1;1;Followeth;
 0;4;1;Follow'he;
@@ -5167,7 +5167,7 @@
 0;3;1;Give';
 5;30;1;Given;
 1;0;1;Giver;
-9;34;1;Gives;
+9;34;0;Gives;
 0;1;1;Giveth;
 1;15;1;Giving;
 0;1;1;'glad;
@@ -5405,7 +5405,7 @@
 14;137;1;Great;
 4;30;1;Greater;
 1;8;1;Greatest;
-15;10;1;Greatly;
+15;10;1;Greatly;Wielkie
 0;5;1;Greatness;
 0;1;1;Greatness';
 43;0;1;Greatsword;
@@ -5454,12 +5454,12 @@
 0;1;1;Ground'those;
 0;3;1;Ground'yes;
 0;1;1;Groundyou;
-105;83;1;Group;
+105;83;1;Group;Grupa
 0;1;1;Group';
 1;0;1;Groupimprove;
 0;1;1;Grouping;
 1;0;1;Groupings;
-25;3;1;Groups;
+25;3;1;Groups;Grupy
 31;1;1;Group's;
 3;38;1;Grove;
 0;1;1;Grove'he;
@@ -5572,11 +5572,11 @@
 2;1;1;Hammers;
 0;3;1;Hammock;
 0;1;1;Hamph;
-20;86;1;Hand;
+20;86;0;Hand;
 0;1;1;Hand';
 1;0;1;Hand2;
 0;1;1;Handcrafted;
-4;1;1;Handed;
+4;1;0;Handed;
 2;1;1;Handful;
 0;1;1;Handicap;
 0;1;1;Handit;
@@ -5584,7 +5584,7 @@
 4;15;1;Handle;
 0;1;1;Handlers;
 0;1;1;Handling;
-10;99;1;Hands;
+10;99;0;Hands;
 0;2;1;Hands'aye;
 0;1;1;Hands'good;
 0;1;1;Handsnow;
@@ -5621,7 +5621,7 @@
 0;14;1;Harass;
 0;2;1;Harbinger;
 0;1;1;Harbingers;
-4;74;1;Hard;
+4;74;0;Hard;
 0;1;1;Hard';
 0;1;1;Hard-edged;
 1;1;1;Hardened;
@@ -5732,7 +5732,7 @@
 0;1;1;Headswell;
 0;1;1;Headthe;
 0;1;1;Head'weary;
-10;64;1;Heal;
+10;64;1;Heal;Życie
 0;3;1;Heal';
 2;9;1;Healed;
 0;1;1;Healedwould;
@@ -5791,7 +5791,7 @@
 0;4;1;Heavens;
 3;2;1;Heavier;
 1;7;1;Heavily;
-68;64;1;Heavy;
+68;64;0;Heavy;
 0;1;1;Heavy-set;
 0;13;1;He'd;
 0;2;1;Hee;
@@ -5807,7 +5807,7 @@
 0;1;1;Height;
 0;1;1;Heir;
 2;4;1;Heirloom;
-14;40;1;Held;
+14;40;0;Held;
 0;1;1;Helga;
 0;1;1;Hell;
 0;5;1;He'll;
@@ -6075,7 +6075,7 @@
 2;0;1;Hover;
 0;1;1;Hovering;
 0;9;1;'how;
-23;302;1;How;
+23;302;0;How;
 0;6;1;How';
 2;55;1;However;
 0;9;1;Howl;
@@ -6562,7 +6562,7 @@
 0;4;1;Invigorated;
 0;1;1;Invigoratedafterwards;
 0;3;1;Invisible;
-1;3;1;Invitation;
+1;3;1;Invitation;Zaproszenie
 0;3;1;Invitation';
 0;1;1;Invitation''choose;
 2;12;1;Invite;
@@ -6587,7 +6587,7 @@
 0;7;1;Islands;
 0;1;1;Islandsitting;
 0;1;1;Islandto;
-2;52;1;Isn't;
+2;52;0;Isn't;
 0;8;1;Iss;
 0;1;1;Is'speak;
 0;5;1;Isss;
@@ -7121,8 +7121,8 @@
 0;1;1;Light-beast's;
 0;1;1;Light-bond;
 0;1;1;Lightbow;
-5;4;1;Lightbringer;
-21;62;1;Lightbringers;
+5;4;1;Lightbringer;Siewca burz
+21;62;1;Lightbringers;Siewcy burz
 1;1;1;Lightbringers';
 0;7;1;Lightcall;
 0;1;1;Lightcleanse;
@@ -7413,7 +7413,7 @@
 0;2;1;Madeyou;
 0;1;1;Madly;
 4;7;1;Madness;
-11;13;1;Mage;
+11;13;0;Mage;
 1;6;1;Mages;
 2;0;1;Mage's;
 0;1;1;Magethe;
@@ -7568,7 +7568,7 @@
 5;0;1;Masterwork;
 0;5;1;Mastery;
 0;1;1;Masteryou;
-6;2;1;Match;
+6;2;0;Match;
 1;0;1;Matches;
 3;0;1;Matching;
 0;10;0;Mate;
@@ -7658,7 +7658,7 @@
 0;1;1;Medicuse;
 0;10;1;Meditate;
 0;2;1;Meditation'i;
-66;1;1;Medium;
+66;1;0;Medium;
 0;4;1;Mee;
 0;5;1;Meek;
 7;28;1;Meet;
@@ -8236,7 +8236,7 @@
 0;1;1;Nitpicking;
 0;41;1;'no;
 0;4;1;'no';
-34;722;1;No;
+34;722;0;No;
 0;12;1;No';
 0;1;1;Noble;
 2;0;1;Nocturnal;
@@ -8262,7 +8262,7 @@
 0;1;1;Nondescript;
 0;1;1;Non-dwarven;
 0;2;1;'none;
-6;42;1;None;
+6;42;0;None;
 0;1;1;Non-elven;
 0;3;1;Nonetheless;
 0;1;1;Nonetheless'the;
@@ -8727,7 +8727,7 @@
 0;1;1;Outlet;
 0;1;1;Outline;
 0;1;1;Outlines;
-2;0;1;Outmanoeuvre;
+2;0;1;Outmanoeuvre;Przechytrzenie
 0;1;1;Outnumbered;
 0;1;1;Out'oh;
 0;2;1;Outpost;
@@ -9074,7 +9074,7 @@
 0;3;1;Pestering;
 0;4;1;Pests;
 0;1;1;Pests';
-36;36;1;Pet;
+36;36;1;Pet;Chowaniec
 1;2;1;Petals;
 1;20;1;Pets;
 0;1;1;Pets';
@@ -9516,11 +9516,11 @@
 0;1;1;Prospered;
 0;5;1;Prosperity;
 0;2;1;Prosperous;
-6;25;1;Protect;
+6;25;0;Protect;
 1;16;1;Protected;
 0;1;1;Protectedthe;
 1;9;1;Protecting;
-19;22;1;Protection;
+19;22;0;Protection;
 0;1;1;Protection';
 4;20;1;Protective;
 0;1;1;Protectively;
@@ -9670,8 +9670,8 @@
 0;1;1;Quietthe;
 0;1;1;Quiet''we;
 0;3;1;Quill;
-3;1;1;Quit;
-3;11;1;Quite;
+3;1;0;Quit;
+3;11;0;Quite;
 0;1;1;'qwerty';
 0;1;1;R12lie;
 0;1;1;R3are;
@@ -9736,10 +9736,10 @@
 1;4;1;Rascal;
 0;7;1;Rascals;
 0;2;1;Rash;
-10;28;0;Rat;
-6;0;0;Rate;
+10;28;1;Rat;Szczur
+6;0;1;Rate;Racje
 0;2;1;Ratgo;
-3;57;1;Rather;
+3;57;0;Rather;
 2;0;1;Ratio;
 1;0;1;Rationally;
 6;91;1;Rats;
@@ -9920,7 +9920,7 @@
 6;0;1;Regenerate;
 6;0;1;Regenerated;
 3;0;1;Regenerates;
-33;0;1;Regeneration;
+33;0;1;Regeneration;Regeneracja
 2;1;1;Region;
 0;3;1;Regret;
 0;1;1;Regrets;
@@ -10060,11 +10060,11 @@
 0;1;1;Reptile;
 0;5;1;Reputation;
 3;6;1;Request;
-7;12;1;Require;
+7;12;0;Require;
 4;2;1;Required;
 2;0;1;Requirement;
 1;0;1;Requirements;
-14;8;1;Requires;
+14;8;0;Requires;
 1;0;1;Re-roll;
 5;64;1;Rescue;
 0;1;1;'rescued';
@@ -10311,7 +10311,7 @@
 2;0;1;Rolada;
 0;7;1;Role;
 0;1;1;Rolewithin;
-2;14;1;Roll;
+2;14;0;Roll;
 1;1;1;Rolled;
 1;0;1;Rollers;
 0;4;1;Rolling;
@@ -10337,7 +10337,7 @@
 0;3;1;Rotting;
 1;0;1;Rouge;
 0;18;1;Rough;
-7;3;1;Round;
+7;3;0;Round;
 2;0;1;Rounds;
 0;5;1;Route;
 0;1;1;Routine'oh;
@@ -10345,7 +10345,7 @@
 0;5;1;Rows;
 6;0;1;Royal;
 1;0;1;Royalty;
-5;0;1;Rp;
+5;0;0;Rp;
 2;0;1;Rps;
 1;4;0;Rub;
 0;1;1;Rubbed;
@@ -10656,7 +10656,7 @@
 0;1;1;Scribbling;
 2;0;0;Script;
 1;1;1;Scripts;
-42;1;1;Scroll;
+42;1;1;Scroll;Zwój
 10;5;1;Scrolls;
 0;3;1;Scruffy;
 1;0;1;Sculpted;
@@ -11610,7 +11610,7 @@
 0;1;1;Spines;
 0;2;1;Spinning;
 0;1;1;Spins;
-35;560;1;Spirit;
+35;560;1;Spirit;Spirit talkers - Mówiący z duchami
 0;2;1;Spirit';
 0;1;1;Spiritchild;
 0;6;1;Spirited;
@@ -11867,7 +11867,7 @@
 0;1;1;Stifles;
 0;13;1;Stifling;
 2;0;1;Stigma;
-18;297;1;Still;
+18;297;0;Still;
 0;4;1;Still';
 0;1;1;Stillness;
 0;1;1;Stilloh;
@@ -12290,7 +12290,7 @@
 0;4;1;Swirl;
 0;3;1;Swirling;
 0;4;1;Swirls;
-9;6;1;Switch;
+9;6;1;Switch;Przełącz
 0;1;1;Switched;
 1;0;1;Switching;
 0;8;1;Swollen;
@@ -12355,12 +12355,12 @@
 0;21;1;Tales;
 0;1;1;Tales'i;
 0;6;1;Talia;
-2;108;1;Talk;
+2;108;0;Talk;
 0;1;1;Talk';
 1;0;1;Talkative;
 0;3;1;Talked;
 0;5;1;Talker;
-4;10;1;Talkers;
+4;10;1;Talkers;Spirit talkers - Mówiący z duchami
 0;1;1;Talkers';
 0;2;1;Talkin';
 0;26;1;Talking;
@@ -12377,7 +12377,7 @@
 0;1;1;Tantrum;
 0;1;1;Tantrums;
 0;1;1;Tap;
-85;2;1;Target;
+85;2;0;Target;
 4;0;1;Targeted;
 68;1;1;Targets;
 2;0;1;Target's;
@@ -12519,7 +12519,7 @@
 1;11;1;Theirs;
 0;1;1;Theirs';
 0;1;1;'them;
-89;1521;1;Them;
+89;1521;0;Them;
 0;24;1;Them';
 0;1;1;Thema;
 0;1;1;Them'ah;
@@ -12780,7 +12780,7 @@
 0;3;1;Tonight;
 0;2;1;Tonight';
 0;2;1;'too;
-16;389;1;Too;
+16;389;0;Too;
 0;9;1;Too';
 0;1;1;Too'another;
 0;1;1;Toobe;
@@ -12854,7 +12854,7 @@
 0;5;1;Tracking;
 0;38;1;Tracks;
 0;1;1;Tracksthe;
-13;99;1;Trade;
+13;99;1;Trade;Handel
 0;10;1;Trade';
 1;2;1;Traded;
 4;9;1;Trader;
@@ -13096,7 +13096,7 @@
 0;3;1;Turncoat;
 6;19;1;Turned;
 1;18;1;Turning;
-43;164;1;Turns;
+43;164;1;Turns;Tury
 1;0;1;Turns-;
 0;1;1;Turnsyou;
 1;0;1;Turnyou;
@@ -13845,7 +13845,7 @@
 0;1;1;Weaknesses;
 0;11;1;Wealth;
 2;2;1;Wealthy;
-19;32;1;Weapon;
+19;32;0;Weapon;
 0;1;1;Weapon'here'the;
 0;5;1;Weaponry;
 12;60;1;Weapons;
@@ -13895,7 +13895,7 @@
 0;1;1;Welcoming;
 0;66;1;'well;
 0;1;1;-well;
-23;444;1;Well;
+23;444;1;Well;Studnia
 0;13;1;Well';
 0;81;1;We'll;
 0;1;1;Welland;
@@ -14035,7 +14035,7 @@
 1;0;1;Widely;
 0;2;1;Wider;
 0;1;1;Widespread;
-2;8;1;Wield;
+2;8;0;Wield;
 1;1;1;Wielded;
 0;1;1;Wielders;
 0;1;1;Wields;
@@ -14311,11 +14311,11 @@
 0;1;1;Wouldn't';
 0;2;1;Would'thank;
 0;1;1;Would've;
-1;11;1;Wound;
+1;11;1;Wound;Rana
 8;50;1;Wounded;
 0;1;1;Woundedthe;
 0;1;1;Wounding;
-18;42;1;Wounds;
+18;42;1;Wounds;Rany
 0;1;1;Wounds';
 0;6;1;Woven;
 0;1;1;Wow';

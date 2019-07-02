@@ -3486,7 +3486,12 @@
       <Output>Poprawia widoczność wokół wioski, dzięki czemu będziesz w stanie dostrzec wrogów z większej odległości.</Output>
     </Texts>
   </Element>
-  <Element ID="209" Key="DES_TAG_DAMAGE_BUILDING_GATHERING_RANGE" Flag="0">
+  <Element ID="209" Key="DES_TAG_DAMAGE_BUILDING_GATHERING_RANGE" Flag="1">
+    <Confirmation>
+      <Time>06-29-2019 00:18:00</Time>
+      <GUID>3F77FAF1-B25D-4178-9166-07BBB7F0088A</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -3497,7 +3502,7 @@
     </Groups>
     <Texts>
       <Input>Gathering Range</Input>
-      <Output>Gathering Range</Output>
+      <Output>Zasięg zbieractwa</Output>
     </Texts>
   </Element>
   <Element ID="210" Key="DES_TAG_DAMAGE_BUILDING_GATHERING_RANGE_DES" Flag="0">
@@ -3874,7 +3879,12 @@
       <Output>Obrażenia od trucizny</Output>
     </Texts>
   </Element>
-  <Element ID="237" Key="DES_TAG_DAMAGE_AOE" Flag="0">
+  <Element ID="237" Key="DES_TAG_DAMAGE_AOE" Flag="1">
+    <Confirmation>
+      <Time>07-02-2019 10:24:25</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -7146,7 +7156,12 @@
       <Output>Domena - Neutralność</Output>
     </Texts>
   </Element>
-  <Element ID="470" Key="DES_TAG_DOMAIN_NEUTRAL_DES" Flag="0">
+  <Element ID="470" Key="DES_TAG_DOMAIN_NEUTRAL_DES" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:22:49</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -7175,7 +7190,12 @@
       <Output>Domena - Zamieszanie </Output>
     </Texts>
   </Element>
-  <Element ID="472" Key="DES_TAG_DOMAIN_TURMOIL_DES" Flag="0">
+  <Element ID="472" Key="DES_TAG_DOMAIN_TURMOIL_DES" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:23:13</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -7204,7 +7224,12 @@
       <Output>Domena - Harmonia</Output>
     </Texts>
   </Element>
-  <Element ID="474" Key="DES_TAG_DOMAIN_HARMONY_DES" Flag="0">
+  <Element ID="474" Key="DES_TAG_DOMAIN_HARMONY_DES" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:24:16</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -7213,7 +7238,7 @@
     </Groups>
     <Texts>
       <Input>Harmony - divine domain of peace and order often akin to light, patron of diplomacy and tradition, often at odds with chaos.</Input>
-      <Output>Harmonia - boska domena pokoju i porządku często zbliżona do światła, patron dyplomacji i tradycji, często sprzeczna z chaosem.</Output>
+      <Output>Harmonia - boska domena pokoju i porządku często zbliżona do światła, patron dyplomacji i tradycji, przeważnie sprzeczna z chaosem.</Output>
     </Texts>
   </Element>
   <Element ID="475" Key="DES_TAG_DOMAIN_LIGHT" Flag="1">
@@ -7233,7 +7258,12 @@
       <Output>Domena - Światło</Output>
     </Texts>
   </Element>
-  <Element ID="476" Key="DES_TAG_DOMAIN_LIGHT_DES" Flag="0">
+  <Element ID="476" Key="DES_TAG_DOMAIN_LIGHT_DES" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:25:58</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -7242,7 +7272,7 @@
     </Groups>
     <Texts>
       <Input>Light - divine domain born out of eternal light, patron of justice and directness, unmovable pillar of truth but also stagnation at times.</Input>
-      <Output>Światło - boska domena zrodzona z wiecznego światła, patrona sprawiedliwości i bezpośredniości, nieporuszony słup prawdy, ale także czasami stagnacja.</Output>
+      <Output>Światło - boska domena zrodzona z wiecznego światła, patron sprawiedliwości i bezpośredniości, niewzruszony filar prawdy, ale czasem także stagnacja.</Output>
     </Texts>
   </Element>
   <Element ID="477" Key="DES_TAG_DOMAIN_MAGIC" Flag="1">
@@ -7262,7 +7292,12 @@
       <Output>Domena - Magia</Output>
     </Texts>
   </Element>
-  <Element ID="478" Key="DES_TAG_DOMAIN_MAGIC_DES" Flag="0">
+  <Element ID="478" Key="DES_TAG_DOMAIN_MAGIC_DES" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:26:11</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -7291,7 +7326,12 @@
       <Output>Domena - Natura</Output>
     </Texts>
   </Element>
-  <Element ID="480" Key="DES_TAG_DOMAIN_NATURE_DES" Flag="0">
+  <Element ID="480" Key="DES_TAG_DOMAIN_NATURE_DES" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:26:23</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -7320,7 +7360,12 @@
       <Output>Domena - Intelekt</Output>
     </Texts>
   </Element>
-  <Element ID="482" Key="DES_TAG_DOMAIN_INTELLECT_DES" Flag="0">
+  <Element ID="482" Key="DES_TAG_DOMAIN_INTELLECT_DES" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:27:08</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -7380,7 +7425,12 @@
       <Output>Zoria</Output>
     </Texts>
   </Element>
-  <Element ID="486" Key="DES_TAG_ZORYA_DES" Flag="0">
+  <Element ID="486" Key="DES_TAG_ZORYA_DES" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:27:22</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -7388,10 +7438,15 @@
     </Groups>
     <Texts>
       <Input>Zorya Description</Input>
-      <Output>Opis Zorya</Output>
+      <Output>Zoria - opis</Output>
     </Texts>
   </Element>
-  <Element ID="487" Key="DES_TAG_LADA" Flag="0">
+  <Element ID="487" Key="DES_TAG_LADA" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:08:43</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -7402,7 +7457,12 @@
       <Output>Łada</Output>
     </Texts>
   </Element>
-  <Element ID="488" Key="DES_TAG_LADA_DES" Flag="0">
+  <Element ID="488" Key="DES_TAG_LADA_DES" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:27:29</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -7410,7 +7470,7 @@
     </Groups>
     <Texts>
       <Input>Lada Description</Input>
-      <Output>Opis Łady</Output>
+      <Output>Łada - opis</Output>
     </Texts>
   </Element>
   <Element ID="489" Key="DES_TAG_STRIBOG" Flag="1">
@@ -7429,7 +7489,12 @@
       <Output>Strzybóg</Output>
     </Texts>
   </Element>
-  <Element ID="490" Key="DES_TAG_STRIBOG_DES" Flag="0">
+  <Element ID="490" Key="DES_TAG_STRIBOG_DES" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:27:39</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -7437,7 +7502,7 @@
     </Groups>
     <Texts>
       <Input>Stribog Description</Input>
-      <Output>Opis Stribog</Output>
+      <Output>Strzybóg - opis</Output>
     </Texts>
   </Element>
   <Element ID="491" Key="DES_TAG_HORZ" Flag="1">
@@ -7488,7 +7553,12 @@
       <Output>Marowit</Output>
     </Texts>
   </Element>
-  <Element ID="494" Key="DES_TAG_MAROVIT_DES" Flag="0">
+  <Element ID="494" Key="DES_TAG_MAROVIT_DES" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:27:51</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -7496,7 +7566,7 @@
     </Groups>
     <Texts>
       <Input>Marovit Description</Input>
-      <Output>Opis Marovit</Output>
+      <Output>Marowit - opis</Output>
     </Texts>
   </Element>
   <Element ID="495" Key="DES_TAG_SVAROG" Flag="1">
@@ -7515,7 +7585,12 @@
       <Output>Swaróg</Output>
     </Texts>
   </Element>
-  <Element ID="496" Key="DES_TAG_SVAROG_DES" Flag="0">
+  <Element ID="496" Key="DES_TAG_SVAROG_DES" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:27:57</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -7523,7 +7598,7 @@
     </Groups>
     <Texts>
       <Input>Svarog Description</Input>
-      <Output>Opis Svaroga</Output>
+      <Output>Swaróg - opis</Output>
     </Texts>
   </Element>
   <Element ID="497" Key="DES_TAG_TRIGLAV" Flag="1">
@@ -7542,7 +7617,12 @@
       <Output>Trzygłów</Output>
     </Texts>
   </Element>
-  <Element ID="498" Key="DES_TAG_TRIGLAV_DES" Flag="0">
+  <Element ID="498" Key="DES_TAG_TRIGLAV_DES" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:28:09</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -7550,7 +7630,7 @@
     </Groups>
     <Texts>
       <Input>Triglav Description</Input>
-      <Output>Opis Triglav</Output>
+      <Output>Trzygłów - opis</Output>
     </Texts>
   </Element>
   <Element ID="499" Key="DES_TAG_NYIA" Flag="1">
@@ -7569,7 +7649,12 @@
       <Output>Nyja</Output>
     </Texts>
   </Element>
-  <Element ID="500" Key="DES_TAG_NYIA_DES" Flag="0">
+  <Element ID="500" Key="DES_TAG_NYIA_DES" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:28:20</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -7577,10 +7662,15 @@
     </Groups>
     <Texts>
       <Input>Nyia Description</Input>
-      <Output>Opis Nyia</Output>
+      <Output>Nyja - opis</Output>
     </Texts>
   </Element>
-  <Element ID="501" Key="DES_TAG_MASTERPIECE_QUALITY" Flag="0">
+  <Element ID="501" Key="DES_TAG_MASTERPIECE_QUALITY" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:30:14</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -7589,10 +7679,15 @@
     </Groups>
     <Texts>
       <Input>Masterpiece Quality</Input>
-      <Output>Jakość arcydzieła</Output>
+      <Output>Mistrzowska jakość</Output>
     </Texts>
   </Element>
-  <Element ID="502" Key="DES_TAG_MASTERPIECE_QUALITY_DES" Flag="0">
+  <Element ID="502" Key="DES_TAG_MASTERPIECE_QUALITY_DES" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:30:27</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -7601,7 +7696,7 @@
     </Groups>
     <Texts>
       <Input>Masterpiece Quality Description</Input>
-      <Output>Opis jakości arcydzieła</Output>
+      <Output>Opis mistrzowskiej jakości</Output>
     </Texts>
   </Element>
   <Element ID="503" Key="DES_TAG_GOOD_QUALITY" Flag="1">
@@ -7638,7 +7733,12 @@
       <Output>Opis dobrej jakości</Output>
     </Texts>
   </Element>
-  <Element ID="505" Key="DES_TAG_NORMAL_QUALITY" Flag="0">
+  <Element ID="505" Key="DES_TAG_NORMAL_QUALITY" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:30:36</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -7650,7 +7750,12 @@
       <Output>Normalna jakość</Output>
     </Texts>
   </Element>
-  <Element ID="506" Key="DES_TAG_NORMAL_QUALITY_DES" Flag="0">
+  <Element ID="506" Key="DES_TAG_NORMAL_QUALITY_DES" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:30:39</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -7662,7 +7767,12 @@
       <Output>Opis normalnej jakości</Output>
     </Texts>
   </Element>
-  <Element ID="507" Key="DES_TAG_POOR_QUALITY" Flag="0">
+  <Element ID="507" Key="DES_TAG_POOR_QUALITY" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:30:42</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -7674,7 +7784,12 @@
       <Output>Słaba jakość</Output>
     </Texts>
   </Element>
-  <Element ID="508" Key="DES_TAG_POOR_QUALITY_DES" Flag="0">
+  <Element ID="508" Key="DES_TAG_POOR_QUALITY_DES" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:30:53</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -7683,10 +7798,15 @@
     </Groups>
     <Texts>
       <Input>Poor Quality Description</Input>
-      <Output>Słaby opis jakości</Output>
+      <Output>Opis słabej jakości</Output>
     </Texts>
   </Element>
-  <Element ID="509" Key="DES_TAG_TRASH_QUALITY" Flag="0">
+  <Element ID="509" Key="DES_TAG_TRASH_QUALITY" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:31:09</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -7695,10 +7815,15 @@
     </Groups>
     <Texts>
       <Input>Trash Quality</Input>
-      <Output>Jakość śmieci</Output>
+      <Output>Śmieciowa jakość</Output>
     </Texts>
   </Element>
-  <Element ID="510" Key="DES_TAG_TRASH_QUALITY_DES" Flag="0">
+  <Element ID="510" Key="DES_TAG_TRASH_QUALITY_DES" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:31:22</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -7707,10 +7832,15 @@
     </Groups>
     <Texts>
       <Input>Trash Quality Description</Input>
-      <Output>Opis jakości kosza</Output>
+      <Output>Opis śmieciowej jakości</Output>
     </Texts>
   </Element>
-  <Element ID="511" Key="DES_TAG_FUEL" Flag="0">
+  <Element ID="511" Key="DES_TAG_FUEL" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:10:13</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -7721,7 +7851,12 @@
       <Output>Paliwo</Output>
     </Texts>
   </Element>
-  <Element ID="512" Key="DES_TAG_FUEL_DES" Flag="0">
+  <Element ID="512" Key="DES_TAG_FUEL_DES" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:31:41</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -7729,7 +7864,7 @@
     </Groups>
     <Texts>
       <Input>Used to stoke the fire in settlements and camps.</Input>
-      <Output>Używane do podsycania ognia w osadach i obozach.</Output>
+      <Output>Używane do podtrzymywania ognia w osadach i obozach.</Output>
     </Texts>
   </Element>
   <Element ID="513" Key="DES_TAG_FOOD" Flag="1">
@@ -7780,7 +7915,12 @@
       <Output>Zioło</Output>
     </Texts>
   </Element>
-  <Element ID="516" Key="DES_TAG_HERB_DES" Flag="0">
+  <Element ID="516" Key="DES_TAG_HERB_DES" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:32:01</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -7791,7 +7931,12 @@
       <Output>Służy do gotowania lub do celów leczniczych.</Output>
     </Texts>
   </Element>
-  <Element ID="517" Key="DES_TAG_ITEM" Flag="0">
+  <Element ID="517" Key="DES_TAG_ITEM" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:32:04</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -7802,7 +7947,12 @@
       <Output>Przedmiot</Output>
     </Texts>
   </Element>
-  <Element ID="518" Key="DES_TAG_ITEM_DES" Flag="0">
+  <Element ID="518" Key="DES_TAG_ITEM_DES" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:32:06</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -7813,7 +7963,12 @@
       <Output>Opis przedmiotu</Output>
     </Texts>
   </Element>
-  <Element ID="519" Key="DES_TAG_RESOURCE" Flag="0">
+  <Element ID="519" Key="DES_TAG_RESOURCE" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:32:15</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -7821,10 +7976,15 @@
     </Groups>
     <Texts>
       <Input>Resource</Input>
-      <Output>Zasób</Output>
+      <Output>Surowiec</Output>
     </Texts>
   </Element>
-  <Element ID="520" Key="DES_TAG_RESOURCE_DES" Flag="0">
+  <Element ID="520" Key="DES_TAG_RESOURCE_DES" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:32:26</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -7835,7 +7995,12 @@
       <Output>Używany jako komponent rzemieślniczy.</Output>
     </Texts>
   </Element>
-  <Element ID="521" Key="DES_TAG_GENDER_MALE" Flag="0">
+  <Element ID="521" Key="DES_TAG_GENDER_MALE" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:32:29</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -7847,7 +8012,12 @@
       <Output>Mężczyzna</Output>
     </Texts>
   </Element>
-  <Element ID="522" Key="DES_TAG_GENDER_MALE_DES" Flag="0">
+  <Element ID="522" Key="DES_TAG_GENDER_MALE_DES" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:32:32</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -7859,7 +8029,12 @@
       <Output>Ta postać jest mężczyzną.</Output>
     </Texts>
   </Element>
-  <Element ID="523" Key="DES_TAG_GENDER_FEMALE" Flag="0">
+  <Element ID="523" Key="DES_TAG_GENDER_FEMALE" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:32:34</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -7871,7 +8046,12 @@
       <Output>Kobieta</Output>
     </Texts>
   </Element>
-  <Element ID="524" Key="DES_TAG_GENDER_FEMALE_DES" Flag="0">
+  <Element ID="524" Key="DES_TAG_GENDER_FEMALE_DES" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:32:38</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -7883,7 +8063,12 @@
       <Output>Ta postać jest kobietą.</Output>
     </Texts>
   </Element>
-  <Element ID="525" Key="DES_TAG_GENDER_OTHER" Flag="0">
+  <Element ID="525" Key="DES_TAG_GENDER_OTHER" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:32:44</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -7895,7 +8080,12 @@
       <Output>Inne</Output>
     </Texts>
   </Element>
-  <Element ID="526" Key="DES_TAG_GENDER_OTHER_DES" Flag="0">
+  <Element ID="526" Key="DES_TAG_GENDER_OTHER_DES" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:33:09</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -7907,7 +8097,12 @@
       <Output>Inne odnosi się do płci nieludzkiego charakteru.</Output>
     </Texts>
   </Element>
-  <Element ID="527" Key="DES_TAG_CREEPY" Flag="0">
+  <Element ID="527" Key="DES_TAG_CREEPY" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:33:41</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -7915,10 +8110,15 @@
     </Groups>
     <Texts>
       <Input>Creepy</Input>
-      <Output>Przerażające</Output>
+      <Output>Przerażający</Output>
     </Texts>
   </Element>
-  <Element ID="528" Key="DES_TAG_CREEPY_DES" Flag="0">
+  <Element ID="528" Key="DES_TAG_CREEPY_DES" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:33:45</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -7929,7 +8129,12 @@
       <Output>Ta postać jest przerażająca.</Output>
     </Texts>
   </Element>
-  <Element ID="529" Key="DES_TAG_ATTRACTIVE" Flag="0">
+  <Element ID="529" Key="DES_TAG_ATTRACTIVE" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:33:48</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -7940,7 +8145,12 @@
       <Output>Atrakcyjny</Output>
     </Texts>
   </Element>
-  <Element ID="530" Key="DES_TAG_ATTRACTIVE_DES" Flag="0">
+  <Element ID="530" Key="DES_TAG_ATTRACTIVE_DES" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:33:51</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -7951,7 +8161,12 @@
       <Output>Ta postać jest atrakcyjna.</Output>
     </Texts>
   </Element>
-  <Element ID="531" Key="DES_TAG_BEAUTIFUL" Flag="0">
+  <Element ID="531" Key="DES_TAG_BEAUTIFUL" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:33:53</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -7962,7 +8177,12 @@
       <Output>Piękny</Output>
     </Texts>
   </Element>
-  <Element ID="532" Key="DES_TAG_BEAUTIFUL_DES" Flag="0">
+  <Element ID="532" Key="DES_TAG_BEAUTIFUL_DES" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:33:56</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -7973,7 +8193,12 @@
       <Output>Ta postać jest piękna.</Output>
     </Texts>
   </Element>
-  <Element ID="533" Key="DES_TAG_SWORD_1H" Flag="0">
+  <Element ID="533" Key="DES_TAG_SWORD_1H" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:36:53</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -8002,7 +8227,12 @@
       <Output>Miecz jednoręczny</Output>
     </Texts>
   </Element>
-  <Element ID="535" Key="DES_TAG_SWORD_2H" Flag="0">
+  <Element ID="535" Key="DES_TAG_SWORD_2H" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:36:55</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -8014,7 +8244,12 @@
       <Output>Miecz dwuręczny</Output>
     </Texts>
   </Element>
-  <Element ID="536" Key="DES_TAG_SWORD_2H_DES" Flag="0">
+  <Element ID="536" Key="DES_TAG_SWORD_2H_DES" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:36:59</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -8026,7 +8261,12 @@
       <Output>Miecz dwuręczny.</Output>
     </Texts>
   </Element>
-  <Element ID="537" Key="DES_TAG_AXE_1H" Flag="0">
+  <Element ID="537" Key="DES_TAG_AXE_1H" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:37:18</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -8035,7 +8275,7 @@
     </Groups>
     <Texts>
       <Input>1-Handed Axe</Input>
-      <Output>Topór z jedną ręką</Output>
+      <Output>Topór jednoręczny</Output>
     </Texts>
   </Element>
   <Element ID="538" Key="DES_TAG_AXE_1H_DES" Flag="1">
@@ -8055,7 +8295,12 @@
       <Output>Topór jednoręczny</Output>
     </Texts>
   </Element>
-  <Element ID="539" Key="DES_TAG_AXE_2H" Flag="0">
+  <Element ID="539" Key="DES_TAG_AXE_2H" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:37:21</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -8067,7 +8312,12 @@
       <Output>Topór dwuręczny</Output>
     </Texts>
   </Element>
-  <Element ID="540" Key="DES_TAG_AXE_2H_DES" Flag="0">
+  <Element ID="540" Key="DES_TAG_AXE_2H_DES" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:37:34</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -8076,10 +8326,15 @@
     </Groups>
     <Texts>
       <Input>Two Handed Axe.</Input>
-      <Output>Dwa rozdane topory.</Output>
+      <Output>Topór dwuręczny</Output>
     </Texts>
   </Element>
-  <Element ID="541" Key="DES_TAG_THROWN_SPEARS" Flag="0">
+  <Element ID="541" Key="DES_TAG_THROWN_SPEARS" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:38:21</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -8088,10 +8343,15 @@
     </Groups>
     <Texts>
       <Input>Thrown Spears</Input>
-      <Output>Rzucone włócznie</Output>
+      <Output>Włócznie rzucane</Output>
     </Texts>
   </Element>
-  <Element ID="542" Key="DES_TAG_THROWN_SPEARS_DES" Flag="0">
+  <Element ID="542" Key="DES_TAG_THROWN_SPEARS_DES" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:38:25</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -8100,10 +8360,15 @@
     </Groups>
     <Texts>
       <Input>Thrown Spears</Input>
-      <Output>Rzucone włócznie</Output>
+      <Output>Włócznie rzucane</Output>
     </Texts>
   </Element>
-  <Element ID="543" Key="DES_TAG_CLUB_1H" Flag="0">
+  <Element ID="543" Key="DES_TAG_CLUB_1H" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:39:22</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -8112,10 +8377,15 @@
     </Groups>
     <Texts>
       <Input>1-Handed club</Input>
-      <Output>Klub 1-ręczny</Output>
+      <Output>Pałka jednoręczna</Output>
     </Texts>
   </Element>
-  <Element ID="544" Key="DES_TAG_CLUB_1H_DES" Flag="0">
+  <Element ID="544" Key="DES_TAG_CLUB_1H_DES" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:45:28</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -8124,10 +8394,15 @@
     </Groups>
     <Texts>
       <Input>1-Handed club</Input>
-      <Output>Klub 1-ręczny</Output>
+      <Output>Pałka jednoręczna</Output>
     </Texts>
   </Element>
-  <Element ID="545" Key="DES_TAG_CLUB_2H" Flag="0">
+  <Element ID="545" Key="DES_TAG_CLUB_2H" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:45:53</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -8136,10 +8411,15 @@
     </Groups>
     <Texts>
       <Input>2-Handed club</Input>
-      <Output>Klub dwuręczny</Output>
+      <Output>Młot dwuręczny</Output>
     </Texts>
   </Element>
-  <Element ID="546" Key="DES_TAG_CLUB_2H_DES" Flag="0">
+  <Element ID="546" Key="DES_TAG_CLUB_2H_DES" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:45:56</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -8148,10 +8428,15 @@
     </Groups>
     <Texts>
       <Input>2-Handed club</Input>
-      <Output>Klub dwuręczny</Output>
+      <Output>Młot dwuręczny</Output>
     </Texts>
   </Element>
-  <Element ID="547" Key="DES_TAG_POLEARM_1H" Flag="0">
+  <Element ID="547" Key="DES_TAG_POLEARM_1H" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:46:07</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -8160,10 +8445,15 @@
     </Groups>
     <Texts>
       <Input>1-Handed Spear</Input>
-      <Output>Włócznia 1-ręczna</Output>
+      <Output>Włócznia jednoręczna</Output>
     </Texts>
   </Element>
-  <Element ID="548" Key="DES_TAG_POLEARM_1H_DES" Flag="0">
+  <Element ID="548" Key="DES_TAG_POLEARM_1H_DES" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:46:11</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -8172,10 +8462,15 @@
     </Groups>
     <Texts>
       <Input>1-Handed Spear</Input>
-      <Output>Włócznia 1-ręczna</Output>
+      <Output>Włócznia jednoręczna</Output>
     </Texts>
   </Element>
-  <Element ID="549" Key="DES_TAG_POLEARM_2H" Flag="0">
+  <Element ID="549" Key="DES_TAG_POLEARM_2H" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:46:19</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -8187,7 +8482,12 @@
       <Output>Broń drzewcowa dwuręczna</Output>
     </Texts>
   </Element>
-  <Element ID="550" Key="DES_TAG_POLEARM_2H_DES" Flag="0">
+  <Element ID="550" Key="DES_TAG_POLEARM_2H_DES" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:46:22</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -8199,7 +8499,12 @@
       <Output>Broń drzewcowa dwuręczna</Output>
     </Texts>
   </Element>
-  <Element ID="551" Key="DES_TAG_BOW" Flag="0">
+  <Element ID="551" Key="DES_TAG_BOW" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:46:24</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -8210,7 +8515,12 @@
       <Output>Łuk</Output>
     </Texts>
   </Element>
-  <Element ID="552" Key="DES_TAG_BOW_DES" Flag="0">
+  <Element ID="552" Key="DES_TAG_BOW_DES" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:46:27</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -8221,7 +8531,12 @@
       <Output>Łuk</Output>
     </Texts>
   </Element>
-  <Element ID="553" Key="DES_TAG_SCROLL_1H" Flag="0">
+  <Element ID="553" Key="DES_TAG_SCROLL_1H" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:47:03</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -8230,10 +8545,15 @@
     </Groups>
     <Texts>
       <Input>1-Handed Scroll</Input>
-      <Output>Przewijanie 1 ręką</Output>
+      <Output>Zwój jednoręczny</Output>
     </Texts>
   </Element>
-  <Element ID="554" Key="DES_TAG_SCROLL_1H_DES" Flag="0">
+  <Element ID="554" Key="DES_TAG_SCROLL_1H_DES" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:47:06</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -8242,10 +8562,15 @@
     </Groups>
     <Texts>
       <Input>1-Handed Scroll</Input>
-      <Output>Przewijanie 1 ręką</Output>
+      <Output>Zwój jednoręczny</Output>
     </Texts>
   </Element>
-  <Element ID="555" Key="DES_TAG_SCROLL_2H" Flag="0">
+  <Element ID="555" Key="DES_TAG_SCROLL_2H" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:47:13</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -8257,7 +8582,12 @@
       <Output>Zwój dwuręczny</Output>
     </Texts>
   </Element>
-  <Element ID="556" Key="DES_TAG_SCROLL_2H_DES" Flag="0">
+  <Element ID="556" Key="DES_TAG_SCROLL_2H_DES" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:47:15</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -8269,7 +8599,12 @@
       <Output>Zwój dwuręczny </Output>
     </Texts>
   </Element>
-  <Element ID="557" Key="DES_TAG_ARTIFACT_1H" Flag="0">
+  <Element ID="557" Key="DES_TAG_ARTIFACT_1H" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:47:38</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -8278,10 +8613,15 @@
     </Groups>
     <Texts>
       <Input>1-Handed Artefact</Input>
-      <Output>Artefakt 1-ręczny</Output>
+      <Output>Artefakt jednoręczny</Output>
     </Texts>
   </Element>
-  <Element ID="558" Key="DES_TAG_ARTIFACT_1H_DES" Flag="0">
+  <Element ID="558" Key="DES_TAG_ARTIFACT_1H_DES" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:47:42</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -8290,10 +8630,15 @@
     </Groups>
     <Texts>
       <Input>1-Handed Artefact </Input>
-      <Output>Artefakt 1-ręczny </Output>
+      <Output>Artefakt jednoręczny</Output>
     </Texts>
   </Element>
-  <Element ID="559" Key="DES_TAG_ARTIFACT_2H" Flag="0">
+  <Element ID="559" Key="DES_TAG_ARTIFACT_2H" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:47:51</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -8302,10 +8647,15 @@
     </Groups>
     <Texts>
       <Input>2-Handed Artefact</Input>
-      <Output>Artefakt 2-ręczny</Output>
+      <Output>Artefakt dwuręczny</Output>
     </Texts>
   </Element>
-  <Element ID="560" Key="DES_TAG_ARTIFACT_2H_DES" Flag="0">
+  <Element ID="560" Key="DES_TAG_ARTIFACT_2H_DES" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:47:55</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -8314,10 +8664,15 @@
     </Groups>
     <Texts>
       <Input>2-Handed Artefact </Input>
-      <Output>Artefakt 2-ręczny </Output>
+      <Output>Artefakt dwuręczny</Output>
     </Texts>
   </Element>
-  <Element ID="561" Key="DES_TAG_WAND" Flag="0">
+  <Element ID="561" Key="DES_TAG_WAND" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:48:11</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -8328,7 +8683,12 @@
       <Output>Różdżka</Output>
     </Texts>
   </Element>
-  <Element ID="562" Key="DES_TAG_WAND_DES" Flag="0">
+  <Element ID="562" Key="DES_TAG_WAND_DES" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:48:13</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -8339,7 +8699,12 @@
       <Output>Różdżka</Output>
     </Texts>
   </Element>
-  <Element ID="563" Key="DES_TAG_SHIELD" Flag="0">
+  <Element ID="563" Key="DES_TAG_SHIELD" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:48:18</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -8350,7 +8715,12 @@
       <Output>Tarcza</Output>
     </Texts>
   </Element>
-  <Element ID="564" Key="DES_TAG_SHIELD_DES" Flag="0">
+  <Element ID="564" Key="DES_TAG_SHIELD_DES" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:48:20</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -8361,7 +8731,12 @@
       <Output>Tarcza</Output>
     </Texts>
   </Element>
-  <Element ID="565" Key="DES_TAG_ROBES" Flag="0">
+  <Element ID="565" Key="DES_TAG_ROBES" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:48:28</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -8372,7 +8747,12 @@
       <Output>Szaty</Output>
     </Texts>
   </Element>
-  <Element ID="566" Key="DES_TAG_ROBES_DES" Flag="0">
+  <Element ID="566" Key="DES_TAG_ROBES_DES" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:49:09</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -8380,10 +8760,15 @@
     </Groups>
     <Texts>
       <Input>Robes. Lightweight and unrestrictive, prime choice for mystics and wise ones.</Input>
-      <Output>Szaty. Lekki i nieskrępowany, doskonały wybór dla mistyków i mądrych.</Output>
+      <Output>Szaty. Lekkie i niekrępujące ruchów, doskonały wybór dla mistyków i uczonych.</Output>
     </Texts>
   </Element>
-  <Element ID="567" Key="DES_TAG_MEDIUM_ARMOUR" Flag="0">
+  <Element ID="567" Key="DES_TAG_MEDIUM_ARMOUR" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:49:12</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -8395,7 +8780,12 @@
       <Output>Średni pancerz</Output>
     </Texts>
   </Element>
-  <Element ID="568" Key="DES_TAG_MEDIUM_ARMOUR_DES" Flag="0">
+  <Element ID="568" Key="DES_TAG_MEDIUM_ARMOUR_DES" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:50:24</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -8404,10 +8794,15 @@
     </Groups>
     <Texts>
       <Input>Medium Armour gives decent protection but isn't too heavy. First choice for scoundrels.</Input>
-      <Output>Średni pancerz zapewnia przyzwoitą ochronę, ale nie jest zbyt ciężki. Pierwszy wybór dla łotrów.</Output>
+      <Output>Średni pancerz zapewnia przyzwoitą ochronę, ale nie jest zbyt ciężki. Pierwszy wybór dla łotrzyków.</Output>
     </Texts>
   </Element>
-  <Element ID="569" Key="DES_TAG_HEAVY_ARMOUR" Flag="0">
+  <Element ID="569" Key="DES_TAG_HEAVY_ARMOUR" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:50:27</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -8419,7 +8814,12 @@
       <Output>Ciężka zbroja</Output>
     </Texts>
   </Element>
-  <Element ID="570" Key="DES_TAG_HEAVY_ARMOUR_DES" Flag="0">
+  <Element ID="570" Key="DES_TAG_HEAVY_ARMOUR_DES" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:50:36</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -8431,7 +8831,12 @@
       <Output>Ciężki pancerz jest twardy i wytrzymały, co zapewnia najlepszą ochronę. Pierwszy wybór dla wojowników.</Output>
     </Texts>
   </Element>
-  <Element ID="571" Key="DES_TAG_JEWELLERY" Flag="0">
+  <Element ID="571" Key="DES_TAG_JEWELLERY" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:50:38</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -8442,7 +8847,12 @@
       <Output>Biżuteria</Output>
     </Texts>
   </Element>
-  <Element ID="572" Key="DES_TAG_JEWELLERY_DES" Flag="0">
+  <Element ID="572" Key="DES_TAG_JEWELLERY_DES" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:50:44</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -8453,7 +8863,12 @@
       <Output>Biżuteria może być zarówno ozdobna, jak i praktyczna, zwłaszcza gdy jest nasycona mocą mistyczną.</Output>
     </Texts>
   </Element>
-  <Element ID="573" Key="DES_TAG_PET" Flag="0">
+  <Element ID="573" Key="DES_TAG_PET" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:36:42</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -8461,10 +8876,15 @@
     </Groups>
     <Texts>
       <Input>Pet</Input>
-      <Output>Pieścić</Output>
+      <Output>Chowaniec</Output>
     </Texts>
   </Element>
-  <Element ID="574" Key="DES_TAG_PET_DES" Flag="0">
+  <Element ID="574" Key="DES_TAG_PET_DES" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:35:09</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -8475,7 +8895,12 @@
       <Output>Lojalny towarzysz.</Output>
     </Texts>
   </Element>
-  <Element ID="575" Key="DES_TAG_BUILDING" Flag="0">
+  <Element ID="575" Key="DES_TAG_BUILDING" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:51:10</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -8483,10 +8908,15 @@
     </Groups>
     <Texts>
       <Input>Building</Input>
-      <Output>Budowanie</Output>
+      <Output>Budowla</Output>
     </Texts>
   </Element>
-  <Element ID="576" Key="DES_TAG_BUILDING_DES" Flag="0">
+  <Element ID="576" Key="DES_TAG_BUILDING_DES" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:51:16</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -8494,10 +8924,15 @@
     </Groups>
     <Texts>
       <Input>Building</Input>
-      <Output>Budowanie</Output>
+      <Output>Budowla</Output>
     </Texts>
   </Element>
-  <Element ID="577" Key="DES_TAG_GATHERING_TOOL" Flag="0">
+  <Element ID="577" Key="DES_TAG_GATHERING_TOOL" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:51:47</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -8506,10 +8941,15 @@
     </Groups>
     <Texts>
       <Input>Gathering Tool</Input>
-      <Output>Narzędzie gromadzenia danych</Output>
+      <Output>Narzędzie zbieracza</Output>
     </Texts>
   </Element>
-  <Element ID="578" Key="DES_TAG_GATHERING_TOOL_DES" Flag="0">
+  <Element ID="578" Key="DES_TAG_GATHERING_TOOL_DES" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:51:56</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -8518,10 +8958,15 @@
     </Groups>
     <Texts>
       <Input>Gathering Tool</Input>
-      <Output>Narzędzie gromadzenia danych</Output>
+      <Output>Narzędzie zbieracza</Output>
     </Texts>
   </Element>
-  <Element ID="579" Key="DES_TAG_CRAFTING_TOOL" Flag="0">
+  <Element ID="579" Key="DES_TAG_CRAFTING_TOOL" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:52:09</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -8530,10 +8975,15 @@
     </Groups>
     <Texts>
       <Input>Crafting Tool</Input>
-      <Output>Narzędzie do tworzenia</Output>
+      <Output>Narzędzie rzemieślnicze</Output>
     </Texts>
   </Element>
-  <Element ID="580" Key="DES_TAG_CRAFTING_TOOL_DES" Flag="0">
+  <Element ID="580" Key="DES_TAG_CRAFTING_TOOL_DES" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:52:13</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -8542,10 +8992,15 @@
     </Groups>
     <Texts>
       <Input>Crafting Tool</Input>
-      <Output>Narzędzie do tworzenia</Output>
+      <Output>Narzędzie rzemieślnicze</Output>
     </Texts>
   </Element>
-  <Element ID="581" Key="DES_TAG_DAY" Flag="0">
+  <Element ID="581" Key="DES_TAG_DAY" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:52:16</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -8556,7 +9011,12 @@
       <Output>Dzień</Output>
     </Texts>
   </Element>
-  <Element ID="582" Key="DES_TAG_DAY_DES" Flag="0">
+  <Element ID="582" Key="DES_TAG_DAY_DES" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:52:18</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -8567,7 +9027,12 @@
       <Output>Dzień</Output>
     </Texts>
   </Element>
-  <Element ID="583" Key="DES_TAG_NIGHT" Flag="0">
+  <Element ID="583" Key="DES_TAG_NIGHT" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:52:20</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -8578,7 +9043,12 @@
       <Output>Noc</Output>
     </Texts>
   </Element>
-  <Element ID="584" Key="DES_TAG_NIGHT_DES" Flag="0">
+  <Element ID="584" Key="DES_TAG_NIGHT_DES" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:52:21</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -8620,10 +9090,15 @@
     </Groups>
     <Texts>
       <Input>Scavengers</Input>
-      <Output>Śmieciarz</Output>
+      <Output>Śmieciarze</Output>
     </Texts>
   </Element>
-  <Element ID="587" Key="DES_TAG_LOYALTY_WOODLAND_KIN" Flag="0">
+  <Element ID="587" Key="DES_TAG_LOYALTY_WOODLAND_KIN" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:53:01</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -8633,10 +9108,15 @@
     </Groups>
     <Texts>
       <Input>Woodland Kin</Input>
-      <Output>Woodland Kin</Output>
+      <Output>Leślny lud</Output>
     </Texts>
   </Element>
-  <Element ID="588" Key="DES_TAG_LOYALTY_SHADOW_KIN" Flag="0">
+  <Element ID="588" Key="DES_TAG_LOYALTY_SHADOW_KIN" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:53:14</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -8646,7 +9126,7 @@
     </Groups>
     <Texts>
       <Input>Shadow Kin</Input>
-      <Output>Shadow Kin</Output>
+      <Output>Lud cienia</Output>
     </Texts>
   </Element>
   <Element ID="589" Key="DES_TAG_LOYALTY_EARTHBOUND" Flag="0">
@@ -8661,7 +9141,12 @@
       <Output>Earthbound</Output>
     </Texts>
   </Element>
-  <Element ID="590" Key="DES_TAG_LOYALTY_ALPHA_CLANS" Flag="0">
+  <Element ID="590" Key="DES_TAG_LOYALTY_ALPHA_CLANS" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:55:08</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -8671,10 +9156,15 @@
     </Groups>
     <Texts>
       <Input>Alphaclans</Input>
-      <Output>Alfaklany</Output>
+      <Output>Klan alfa</Output>
     </Texts>
   </Element>
-  <Element ID="591" Key="DES_TAG_LOYALTY_BETA_CLANS" Flag="0">
+  <Element ID="591" Key="DES_TAG_LOYALTY_BETA_CLANS" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:55:15</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -8684,10 +9174,15 @@
     </Groups>
     <Texts>
       <Input>Beta Clans</Input>
-      <Output>Klany Beta</Output>
+      <Output>Klan Beta</Output>
     </Texts>
   </Element>
-  <Element ID="592" Key="DES_TAG_LOYALTY_SPIRIT_TALKERS" Flag="0">
+  <Element ID="592" Key="DES_TAG_LOYALTY_SPIRIT_TALKERS" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:56:32</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -8697,10 +9192,15 @@
     </Groups>
     <Texts>
       <Input>Spirit Talkers</Input>
-      <Output>Spirit Talkers</Output>
+      <Output>Mówiący z duchami</Output>
     </Texts>
   </Element>
-  <Element ID="593" Key="DES_TAG_LOYALTY_LIGHTBRINGERS" Flag="0">
+  <Element ID="593" Key="DES_TAG_LOYALTY_LIGHTBRINGERS" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:57:08</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_TAG</Group>
@@ -8709,7 +9209,7 @@
     </Groups>
     <Texts>
       <Input>Lightbringers</Input>
-      <Output>Lightbringers</Output>
+      <Output>Siewcy burz</Output>
     </Texts>
   </Element>
   <Element ID="594" Key="DES_TAG_LOYALTY_FOREST_DEMONS" Flag="1">
@@ -9382,7 +9882,12 @@
       <Output>Zbieracze są zazwyczaj bandą niewykwalifikowanych zbirów, ale nawet wśród ich rodzaju można znaleźć mroczny znak czarów. Czarownice zwiadowcze są bardziej narażone na korupcję i na ogół mają mniejszą kontrolę niż ich odpowiedniki ludzkie lub orkowe.</Output>
     </Texts>
   </Element>
-  <Element ID="635" Key="DES_SUBRACE_HUM_BANDIT_CAP_BEAR" Flag="0">
+  <Element ID="635" Key="DES_SUBRACE_HUM_BANDIT_CAP_BEAR" Flag="1">
+    <Confirmation>
+      <Time>07-02-2019 09:17:40</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBRACE</Group>
@@ -17528,7 +18033,12 @@
       <Output>Pałka</Output>
     </Texts>
   </Element>
-  <Element ID="1262" Key="DES_CLUB_1H_DES" Flag="0">
+  <Element ID="1262" Key="DES_CLUB_1H_DES" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 05:59:39</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_CLUB</Group>
@@ -17536,7 +18046,7 @@
     </Groups>
     <Texts>
       <Input>A rather primitive, but still quite effective blunt weapon capable of dealing splash damage around the main target. Held in one hand.</Input>
-      <Output>Dość prymitywna, ale wciąż dość skuteczna broń tępa, która zadaje obrażenia od rozbryzgu wokół głównego celu. Trzymany w jednej ręce.</Output>
+      <Output>Dość prymitywna, ale wciąż dość skuteczna broń obuchowa, która zadaje obrażenia z rozpryskiem wokół głównego celu. Trzymana w jednej ręce.</Output>
     </Texts>
   </Element>
   <Element ID="1263" Key="DES_CLUB_1H_IRON" Flag="1">
@@ -18328,7 +18838,12 @@
       <Output>Młot</Output>
     </Texts>
   </Element>
-  <Element ID="1308" Key="DES_CLUB_2H_DES" Flag="0">
+  <Element ID="1308" Key="DES_CLUB_2H_DES" Flag="1">
+    <Confirmation>
+      <Time>07-01-2019 06:02:13</Time>
+      <GUID>BA7D7B90-7CE0-41DE-B8F6-9A9194FD8502</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_CLUB</Group>
@@ -18336,7 +18851,7 @@
     </Groups>
     <Texts>
       <Input>A big, heavy and quite unwieldy weapon but it's smashing power is hard to match. Can deal splash damage around the main target. Requires both hands.</Input>
-      <Output>Duża, ciężka i dość nieporęczna broń, ale jej moc niszcząca jest trudna do dopasowania. Może zadawać obrażenia od rozbryzgów wokół głównego celu. Wymaga obu rąk.</Output>
+      <Output>Duża, ciężka i dość nieporęczna broń, ale jej moc niszcząca jest niezrównana. Może zadawać obrażenia z rozpryskiem wokół głównego celu. Wymaga obu rąk.</Output>
     </Texts>
   </Element>
   <Element ID="1309" Key="DES_CLUB_2H_IRON" Flag="0">

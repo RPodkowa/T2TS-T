@@ -15,7 +15,7 @@ using Thea2Translator.DesktopApp.Properties;
 using Thea2Translator.Logic;
 using Thea2Translator.Logic.Mods;
 
-namespace Thea2Translator.DesktopApp.Pages
+namespace Thea2Translator.DesktopApp.Windows
 {
     /// <summary>
     /// Interaction logic for ModWindow.xaml

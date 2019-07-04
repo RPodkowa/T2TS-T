@@ -50,8 +50,8 @@
                 <RowDefinition/>
                 <RowDefinition Height="6*"/>
             </Grid.RowDefinitions>
-            <Image x:Name="imgEnglishFlag" Source="/Thea2Translator.DesktopApp;component/Resources/Images/english-flag-circle.png" MaxHeight="50" MouseLeftButtonDown="Image_MouseLeftButtonDown" Grid.Column="3" Grid.Row="1" />
-            <Image x:Name="imgPolishFlag" Source="/Thea2Translator.DesktopApp;component/Resources/Images/polish-flag-circle.png" MaxHeight="50" MouseLeftButtonDown="BtnChangeLangToPolish_Click" RenderTransformOrigin="0.5,0.5" Grid.Row="1" Grid.Column="1" >
+            <Image x:Name="imgEnglishFlag" Source="/Thea2Translator;component/Resources/Images/english-flag-circle.png" MaxHeight="50" MouseLeftButtonDown="Image_MouseLeftButtonDown" Grid.Column="3" Grid.Row="1" />
+            <Image x:Name="imgPolishFlag" Source="/Thea2Translator;component/Resources/Images/polish-flag-circle.png" MaxHeight="50" MouseLeftButtonDown="BtnChangeLangToPolish_Click" RenderTransformOrigin="0.5,0.5" Grid.Row="1" Grid.Column="1" >
                 <Image.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform ScaleX="-1"/>
@@ -62,7 +62,6 @@
                 </Image.RenderTransform>
             </Image>
         </Grid>
-        <Button x:Name="btnMod" Content="Mod" Grid.Column="2" Grid.Row="8" Click="BtnMod_Click"/>
         <Label Content="User:" Style="{StaticResource fontBase}" FontSize="{DynamicResource mediumFontSize}" Grid.Row="4" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Grid.Column="1" />
         <TextBox x:Name="txtUserName" Grid.Row="4" TextWrapping="Wrap" Grid.Column="2"/>
 

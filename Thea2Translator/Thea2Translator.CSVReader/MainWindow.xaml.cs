@@ -42,6 +42,7 @@ namespace Thea2Translator.DesktopApp
 
             NavigationCommands.BrowseBack.InputGestures.Clear();
             NavigationCommands.BrowseForward.InputGestures.Clear();
+
             navigationFrame.Navigate(new HomePage());
         }
 

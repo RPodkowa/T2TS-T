@@ -7,6 +7,7 @@ using System.Windows.Controls;
 using System.Windows.Input;
 using Thea2Translator.DesktopApp.Helpers;
 using Thea2Translator.DesktopApp.ViewModels;
+using Thea2Translator.DesktopApp.Windows;
 using Thea2Translator.Logic;
 using Thea2Translator.Logic.Cache.Interfaces;
 
@@ -236,7 +237,7 @@ namespace Thea2Translator.DesktopApp.Pages
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new ModuleSelectionPage());
+            this.NavigationService.Navigate(new ModuleSelectionAdminPage());
         }
 
         private void ButtonVocabulary_Click(object sender, RoutedEventArgs e)

@@ -14,6 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Thea2Translator.DesktopApp.Helpers;
+using Thea2Translator.DesktopApp.Pages.ModuleSelectionPages;
 using Thea2Translator.DesktopApp.Properties;
 using Thea2Translator.Logic;
 
@@ -56,7 +57,11 @@ namespace Thea2Translator.DesktopApp.Pages
             LogicProvider.UserId = Settings.Default.UserId;
             LogicProvider.UserName = Settings.Default.UserName;
 
-            this.NavigationService.Navigate(new ModuleSelectionPage());
+#if DEBUG
+            this.NavigationService.Navigate(new ModuleSelectionAdminPage());
+#else
+             this.NavigationService.Navigate(new ModuleSelectionUserPage());
+#endif
         }
 
         private void BtnChooseFolder_Click(object sender, RoutedEventArgs e)
@@ -70,6 +75,7 @@ namespace Thea2Translator.DesktopApp.Pages
             {
                 txtFolderDir.Text = fbd.SelectedPath;
                 btnStartTranslate.IsEnabled = true;
+                Settings.Default.FolderSrc = txtFolderDir.Text;
             }
         }      
 
@@ -95,14 +101,6 @@ namespace Thea2Translator.DesktopApp.Pages
 
             Settings.Default.Language = Logic.Languages.Languages.English;
             Settings.Default.Save();
-        }
-
-        private void BtnMod_Click(object sender, RoutedEventArgs e)
-        {
-            FileHelper.MainDir = txtFolderDir.Text;
-            Settings.Default.FolderSrc = txtFolderDir.Text;
-            ModWindow window = new ModWindow();
-            window.Show();
         }
     }
 }

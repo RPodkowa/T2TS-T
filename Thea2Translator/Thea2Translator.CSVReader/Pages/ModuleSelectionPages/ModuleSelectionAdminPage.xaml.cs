@@ -5,6 +5,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 using Thea2Translator.DesktopApp.Helpers;
+using Thea2Translator.DesktopApp.Windows;
 using Thea2Translator.Logic;
 using Thea2Translator.Logic.Cache;
 
@@ -13,7 +14,7 @@ namespace Thea2Translator.DesktopApp.Pages
     /// <summary>
     /// Interaction logic for WorkMenuSelector.xaml
     /// </summary>
-    public partial class ModuleSelectionPage : Page
+    public partial class ModuleSelectionAdminPage : Page
     {
         private object _lockObject = new object();
         private TimeSpan? processTimeSpan;
@@ -26,7 +27,7 @@ namespace Thea2Translator.DesktopApp.Pages
         bool isNamesModuleSelected = false;
 
 
-        public ModuleSelectionPage()
+        public ModuleSelectionAdminPage()
         {
             InitializeComponent();
             SetStepsButtonVisibility(false);
@@ -85,6 +86,7 @@ namespace Thea2Translator.DesktopApp.Pages
             btnTranslate.Visibility = isVisible ? Visibility.Visible : Visibility.Hidden;
             btnExportToSteam.Visibility = isVisible ? Visibility.Visible : Visibility.Hidden;
             actionTitleLabel.Visibility = isVisible ? Visibility.Visible : Visibility.Hidden;
+            btnOpenMod.Visibility = isVisible ? Visibility.Visible : Visibility.Hidden;
         }
 
         private void ClearProgressBar()
@@ -251,6 +253,17 @@ namespace Thea2Translator.DesktopApp.Pages
         private void btnVocabulary_Click(object sender, RoutedEventArgs e)
         {
            //NavigationService.Navigate(new VocabularyPage());
+        }
+
+        private void BackButton_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new HomePage());
+        }
+
+        private void BtnOpenMod_Click(object sender, RoutedEventArgs e)
+        {
+            ModWindow window = new ModWindow();
+            window.Show();
         }
     }
 }

@@ -2,7 +2,7 @@
 using Thea2Translator.DesktopApp.Helpers;
 using Thea2Translator.Logic;
 
-namespace Thea2Translator.DesktopApp.Pages
+namespace Thea2Translator.DesktopApp.Windows
 {
     /// <summary>
     /// Interaction logic for DictinaryWindow.xaml

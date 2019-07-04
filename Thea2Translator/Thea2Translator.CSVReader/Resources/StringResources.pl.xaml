@@ -7,9 +7,13 @@
 
     <system:String x:Key="titleModuleSelection">Wybór Modułu</system:String>
 
+    <system:String x:Key="translateFileLabelModuleSelection">Pliki Tłumaczenia</system:String>
     <system:String x:Key="downloadButtonModuleSelection">Pobierz</system:String>
     <system:String x:Key="uploadButtonModuleSelection">Wgraj</system:String>
 
+    <system:String x:Key="moduleLabelModuleSelection">Moduły</system:String>
+    
+    <system:String x:Key="actionsLabelModuleSelection">Akcje</system:String>
     <system:String x:Key="importSteamButtonModuleSelection">Importuj ze Steama</system:String>
     <system:String x:Key="prepareMachineButtonModuleSelection">Przygotuj do Maszynowego Tłumaczenia</system:String>
     <system:String x:Key="importMachineButtonModuleSelection">Importuj Maszynowe Tłumaczenie</system:String>

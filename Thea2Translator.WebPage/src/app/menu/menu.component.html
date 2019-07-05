@@ -1,0 +1,9 @@
+<div class="bg-dark sidenav text-center h-100">
+
+    <div class="p-3">Greetings Stranger</div>
+
+    <div class="menuItem p-3 noselect" *ngFor="let item of items" routerLink="{{item.path}}" routerLinkActive="activeMenuItem">
+        <a>{{item.name}}</a>
+    </div>
+
+</div>

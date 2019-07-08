@@ -160,6 +160,9 @@
     <Compile Include="Pages\ModuleSelectionPages\ModuleSelectionUserPage.xaml.cs">
       <DependentUpon>ModuleSelectionUserPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windows\FullDictinaryWindow.xaml.cs">
+      <DependentUpon>FullDictinaryWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\ModWindow.xaml.cs">
       <DependentUpon>ModWindow.xaml</DependentUpon>
     </Compile>
@@ -182,6 +185,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\ModuleSelectionPages\ModuleSelectionUserPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\FullDictinaryWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

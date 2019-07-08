@@ -13,6 +13,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Thea2Translator.DesktopApp.Helpers;
+using Thea2Translator.DesktopApp.Windows;
+using Thea2Translator.Logic;
 using Thea2Translator.Logic.Cache;
 
 namespace Thea2Translator.DesktopApp.Pages.ModuleSelectionPages
@@ -67,7 +69,8 @@ namespace Thea2Translator.DesktopApp.Pages.ModuleSelectionPages
 
         private void btnVocabulary_Click(object sender, RoutedEventArgs e)
         {
-            //NavigationService.Navigate(new VocabularyPage());
+            FullDictinaryWindow dictinary = new FullDictinaryWindow();
+            dictinary.Show();
         }
 
         private void BackButton_Click(object sender, RoutedEventArgs e)

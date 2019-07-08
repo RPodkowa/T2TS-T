@@ -8,6 +8,14 @@ namespace Thea2Translator.Logic
         public int UsageCountDataBase { get; private set; }
         public int UsageCountModules { get; private set; }
 
+        public int TotalUsageCount {
+            get
+            {
+                return UsageCountDataBase + UsageCountModules;
+            }
+        }
+
+
         public int Flag { get; private set; }
         public bool IsActive
         {
@@ -20,7 +28,7 @@ namespace Thea2Translator.Logic
             set { Flag = FlagHelper.GetSettedBitValue(Flag, 1, value); }
         }
 
-        public string OriginalWord;
+        public string OriginalWord { get; set; }
         public string Translation;
 
         public VocabularyElem(string line)

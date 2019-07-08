@@ -3,10 +3,10 @@
   <PropertyGroup>
     <PublishUrlHistory>ftp://ftp.thea2pl.webd.pro/|publish\</PublishUrlHistory>
     <InstallUrlHistory>http://www.thea2pl.webd.pro/thea2pl.webd.pro/translator/</InstallUrlHistory>
-    <SupportUrlHistory>http://www.thea2pl.webd.pro/</SupportUrlHistory>
+    <SupportUrlHistory />
     <UpdateUrlHistory />
     <BootstrapperUrlHistory />
-    <ErrorReportUrlHistory>http://www.thea2pl.webd.pro/</ErrorReportUrlHistory>
+    <ErrorReportUrlHistory />
     <FallbackCulture>en-US</FallbackCulture>
     <VerifyUploadedFiles>false</VerifyUploadedFiles>
     <ProjectView>ShowAllFiles</ProjectView>

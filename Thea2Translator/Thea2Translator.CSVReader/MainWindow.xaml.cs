@@ -31,8 +31,7 @@ namespace Thea2Translator.DesktopApp
 
         public MainWindow()
         {
-            InitializeComponent();
-
+            InitializeComponent();          
             startHeight = this.Height;
             startSmallFontSize = (double)Application.Current.Resources["smallFontSize"];
             startMediumFontSize = (double)Application.Current.Resources["mediumFontSize"];

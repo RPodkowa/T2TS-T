@@ -53,7 +53,7 @@ namespace Thea2Translator.DesktopApp.Pages
 
             if (string.IsNullOrEmpty(Settings.Default.UserId))
                 Settings.Default.UserId = Guid.NewGuid().ToString();
-                       
+
             Settings.Default.WorkingDirectory = txtFolderDir.Text;
             Settings.Default.UserName = txtUserName.Text;
             Settings.Default.Save();
@@ -61,6 +61,11 @@ namespace Thea2Translator.DesktopApp.Pages
             LogicProvider.UserId = Settings.Default.UserId;
             LogicProvider.UserName = Settings.Default.UserName;
 
+            NavigateToCorrectPage();
+        }
+
+        private void NavigateToCorrectPage()
+        {
 #if DEBUG
             this.NavigationService.Navigate(new ModuleSelectionAdminPage());
 #else

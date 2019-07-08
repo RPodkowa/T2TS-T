@@ -237,18 +237,25 @@ namespace Thea2Translator.DesktopApp.Pages
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+#if DEBUG
             this.NavigationService.Navigate(new ModuleSelectionAdminPage());
+#else
+             this.NavigationService.Navigate(new ModuleSelectionUserPage());
+#endif
         }
 
         private void ButtonVocabulary_Click(object sender, RoutedEventArgs e)
         {
-            if (vocabulary is null) return;
+            //if (vocabulary is null) return;
 
-            var vocabularyElems = vocabulary.VocabularyElems.Where(x => x.HasConflict);
+            //var vocabularyElems = vocabulary.VocabularyElems.Where(x => x.HasConflict);
 
-            var selectedIndex = lbDictinaryItems.SelectedIndex;
-            lbDictinaryItems.ItemsSource = vocabularyElems;
-            lbDictinaryItems.SelectedIndex = Math.Min(selectedIndex, lbDictinaryItems.Items.Count - 1);
+            //var selectedIndex = lbDictinaryItems.SelectedIndex;
+            //lbDictinaryItems.ItemsSource = vocabularyElems;
+            //lbDictinaryItems.SelectedIndex = Math.Min(selectedIndex, lbDictinaryItems.Items.Count - 1);
+
+            FullDictinaryWindow fullDictinary = new FullDictinaryWindow();
+            fullDictinary.Show();
         }
         
 

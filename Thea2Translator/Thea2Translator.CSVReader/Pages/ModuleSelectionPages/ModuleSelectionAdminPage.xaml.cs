@@ -252,7 +252,8 @@ namespace Thea2Translator.DesktopApp.Pages
 
         private void btnVocabulary_Click(object sender, RoutedEventArgs e)
         {
-           //NavigationService.Navigate(new VocabularyPage());
+            FullDictinaryWindow dictinary = new FullDictinaryWindow();
+            dictinary.Show();
         }
 
         private void BackButton_Click(object sender, RoutedEventArgs e)

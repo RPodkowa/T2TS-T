@@ -25,13 +25,12 @@ namespace Thea2Translator.DesktopApp.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("C:\\")]
-        public string FolderSrc {
+        public string WorkingDirectory {
             get {
-                return ((string)(this["FolderSrc"]));
+                return ((string)(this["WorkingDirectory"]));
             }
             set {
-                this["FolderSrc"] = value;
+                this["WorkingDirectory"] = value;
             }
         }
 

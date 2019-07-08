@@ -117,6 +117,7 @@
     <Compile Include="Cache\Interfaces\IStatistic.cs" />
     <Compile Include="Cache\Statistic.cs" />
     <Compile Include="Cache\Synchronization.cs" />
+    <Compile Include="Helpers\UpdateHelper.cs" />
     <Compile Include="Languages\Interfaces\ILanguageManager.cs" />
     <Compile Include="Languages\Language.cs" />
     <Compile Include="Languages\LanguageManager.cs" />

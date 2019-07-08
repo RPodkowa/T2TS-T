@@ -27,6 +27,15 @@ namespace Thea2Translator.Logic
             return ret;
         }
 
+        public static string ReadFileString(string file)
+        {
+            var ret = "";
+            if (File.Exists(file))
+                ret = File.ReadAllText(file);
+
+            return ret;
+        }
+
         public static string[] GetFiles(string dir)
         {
             var path = GetDirName(dir);
@@ -167,13 +176,22 @@ namespace Thea2Translator.Logic
             tw.Close();
         }
 
+        public static string ReadHttpFileString(string file)
+        {
+            WebClient client = new WebClient();
+            Stream stream = client.OpenRead(file);
+            StreamReader reader = new StreamReader(stream);
+            String content = reader.ReadToEnd();
+            return content;
+        }
+
         public static void DownloadFile(string fileSourceLocation, string fileDestonationLocation)
         {
             CreatedPathIfNotExists(fileDestonationLocation);
             using (WebClient client = new WebClient())
             {
                 client.DownloadFile(fileSourceLocation, fileDestonationLocation);
-            }
+            }        
         }
 
         public static void UploadFile(string fileSourceLocation, string fileDestonationLocation)
@@ -257,7 +275,7 @@ namespace Thea2Translator.Logic
             return GetServerHttpFilePatch($"{GetDirectoryName(directoryType)}/{GetFileName(filesType)}");
         }
 
-        private static string GetServerHttpFilePatch(string fileName)
+        public static string GetServerHttpFilePatch(string fileName)
         {
             return $"{httpServerAdres}/{fileName}";
         }
@@ -298,7 +316,6 @@ namespace Thea2Translator.Logic
             if (directoryType == DirectoryType.Original) return true;
             if (directoryType == DirectoryType.OriginalOld) return true;
             if (directoryType == DirectoryType.CacheOld) return true;
-
             return false;
         }
 
@@ -364,6 +381,11 @@ namespace Thea2Translator.Logic
         public static List<string> GetFtpFilesList(DirectoryType directoryType, bool withCreate)
         {
             var requestUriString = GetServerFtpDirectoryPatch(directoryType);
+            return GetFtpFilesList(requestUriString, withCreate);
+        }
+
+        public static List<string> GetFtpFilesList(string requestUriString, bool withCreate)
+        {
             // Get the object used to communicate with the server.
             FtpWebRequest request = (FtpWebRequest)WebRequest.Create(requestUriString);
             request.Method = WebRequestMethods.Ftp.ListDirectoryDetails;
@@ -398,9 +420,27 @@ namespace Thea2Translator.Logic
             return ret;
         }
 
+        public static void DownloadAllFiles(string serverFtpDirectory, string serverHttpDirectory, string localDirectory)
+        {
+    //        CreatedPathIfNotExists(localDirectory);
+            var files = GetFtpFilesList(serverFtpDirectory, false);
+            foreach (var file in files)
+            {
+                if (file == "." || file == "..") continue;
+                var serverFile = serverHttpDirectory+"/"+(file);
+                var localFile = localDirectory + "\\" + file;
+                DownloadFile(serverFile, localFile);
+            }
+        }
+
         public static List<string> GetLocalFilesList(DirectoryType directoryType, bool withCreate)
         {
             var directory = GetLocalDirectoryPatch(directoryType);
+            return GetLocalFilesList(directory, withCreate);
+        }
+
+        public static List<string> GetLocalFilesList(string directory, bool withCreate)
+        {
             if (withCreate) CreatedPathIfNotExists(directory);
             var ret = new List<string>();
             if (!DirectoryExists(directory))

@@ -17,6 +17,7 @@ using Thea2Translator.DesktopApp.Helpers;
 using Thea2Translator.DesktopApp.Pages.ModuleSelectionPages;
 using Thea2Translator.DesktopApp.Properties;
 using Thea2Translator.Logic;
+using Thea2Translator.Logic.Helpers;
 
 namespace Thea2Translator.DesktopApp.Pages
 {
@@ -31,11 +32,11 @@ namespace Thea2Translator.DesktopApp.Pages
         {
             InitializeComponent();
             txtFolderDir.IsEnabled = false;
-            txtFolderDir.Text = Settings.Default.FolderSrc;
 
-            if (string.IsNullOrEmpty(Settings.Default.UserName))
-                Settings.Default.UserName = Environment.UserName;
+            if (string.IsNullOrEmpty(Settings.Default.WorkingDirectory)) Settings.Default.WorkingDirectory = UpdateHelper.GetApplicationBaseParentPath();
+            txtFolderDir.Text = Settings.Default.WorkingDirectory;
 
+            if (string.IsNullOrEmpty(Settings.Default.UserName)) Settings.Default.UserName = Environment.UserName;
             txtUserName.Text = Settings.Default.UserName;
 
             LogicProvider.Language.SetLanguage(Settings.Default.Language);
@@ -45,12 +46,15 @@ namespace Thea2Translator.DesktopApp.Pages
 
         private void BtnStartTranslate_Click(object sender, RoutedEventArgs e)
         {
+            UpdateHelper.TryUpdate(ApplicationType.Updater);
+            UpdateHelper.TryUpdate(ApplicationType.Translator);
+
             FileHelper.MainDir = txtFolderDir.Text;
 
             if (string.IsNullOrEmpty(Settings.Default.UserId))
                 Settings.Default.UserId = Guid.NewGuid().ToString();
                        
-            Settings.Default.FolderSrc = txtFolderDir.Text;
+            Settings.Default.WorkingDirectory = txtFolderDir.Text;
             Settings.Default.UserName = txtUserName.Text;
             Settings.Default.Save();
 
@@ -75,7 +79,7 @@ namespace Thea2Translator.DesktopApp.Pages
             {
                 txtFolderDir.Text = fbd.SelectedPath;
                 btnStartTranslate.IsEnabled = true;
-                Settings.Default.FolderSrc = txtFolderDir.Text;
+                Settings.Default.WorkingDirectory = txtFolderDir.Text;
             }
         }      
 

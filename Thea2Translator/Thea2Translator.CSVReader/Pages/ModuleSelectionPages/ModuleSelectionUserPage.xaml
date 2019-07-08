@@ -60,7 +60,7 @@
                 <ColumnDefinition Width="15*"/>
             </Grid.ColumnDefinitions>
             <Label x:Name="moduleTitleLabel" Content="{DynamicResource moduleLabelModuleSelection}" Style="{StaticResource labelCenterTitle}" FontSize="{DynamicResource bigFontSize}" Grid.ColumnSpan="7" Grid.Row="1" BorderBrush="Black" BorderThickness="0 0 0 1" />
-            <Button x:Name="btnChooseDataBase" FontWeight="Bold" FontSize="{DynamicResource bigFontSize}" Content="DataBase" Style="{StaticResource styleButton}" Grid.Row="3" />
+            <Button x:Name="btnChooseDataBase" FontWeight="Bold" FontSize="{DynamicResource bigFontSize}" Content="DataBase" Style="{StaticResource styleButton}" Grid.Row="3" HorizontalAlignment="Left" Width="126" />
             <Button x:Name="btnChooseModulus" FontWeight="Bold" FontSize="{DynamicResource bigFontSize}" Content="Modules" Style="{StaticResource styleButton}" Grid.Column="2" Grid.Row="3" />
             <Button x:Name="btnChooseNames" FontWeight="Bold" FontSize="{DynamicResource bigFontSize}" Content="Names" Style="{StaticResource styleButton}" Grid.Column="4" Grid.Row="3"/>
             <Button x:Name="btnVocabulary" FontWeight="Bold" FontSize="{DynamicResource bigFontSize}" Content="Vocabulary" Style="{StaticResource styleButton}" Click="btnVocabulary_Click" Grid.Column="6" Grid.Row="3"/>

@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using Thea2Translator.DesktopApp.Pages;
+using Thea2Translator.Logic.Helpers;
 
 namespace Thea2Translator.DesktopApp
 {

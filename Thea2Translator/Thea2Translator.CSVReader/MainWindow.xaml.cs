@@ -43,6 +43,24 @@ namespace Thea2Translator.DesktopApp
             NavigationCommands.BrowseBack.InputGestures.Clear();
             NavigationCommands.BrowseForward.InputGestures.Clear();
 
+            var args = Environment.GetCommandLineArgs();
+            if (args.Length != 2 || args[1] != "START")
+            {
+                MessageBox.Show($"Nie poprawne parametry! ({string.Join(",", args)})");
+                System.Diagnostics.Process.GetCurrentProcess().Kill();
+            }
+
+            try
+            {
+                UpdateHelper.TryUpdate(ApplicationType.Updater);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Blad aktualizacji Updater'a! ({ex.ToString()})");
+                System.Diagnostics.Process.GetCurrentProcess().Kill();
+            }
+
+
             navigationFrame.Navigate(new HomePage());
         }
 

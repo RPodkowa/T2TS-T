@@ -25,19 +25,11 @@ namespace Thea2Translator.Logic.Helpers
         private static void UpdateIt(ApplicationType applicationType)
         {
             if (applicationType == ApplicationType.Updater) UpdateUpdater();
-            if (applicationType == ApplicationType.Translator) UpdateTranslator();
         }
 
         private static void UpdateUpdater()
         {
-            FileHelper.DownloadAllFiles(GetApplicationServerFtpPatch(ApplicationType.Updater),GetApplicationServerHttpPatch(ApplicationType.Updater), GetApplicationLocalPatch(ApplicationType.Updater));
-        }
-
-        private static void UpdateTranslator()
-        {
-            var app = GetApplicationLocalPatch(ApplicationType.Updater) + "//Thea2translator.Updater.exe";
-            System.Diagnostics.Process.Start(app);
-            System.Diagnostics.Process.GetCurrentProcess().Kill();
+            FileHelper.DownloadAllFiles(GetApplicationServerFtpPatch(ApplicationType.Updater), GetApplicationServerHttpPatch(ApplicationType.Updater), GetApplicationLocalPatch(ApplicationType.Updater));
         }
 
         private static bool CheckNeedForUpdate(ApplicationType applicationType)

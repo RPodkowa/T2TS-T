@@ -11,10 +11,25 @@ namespace Thea2translator.Updater
 {
     class Program
     {
+        static string Version = "1";
         static void Main(string[] args)
         {
-            UpdateIt();
-            Console.ReadLine();
+            UpdateHelper.CreateIfNotExistsVersionFile(Version);
+
+            if (UpdateHelper.CheckNeedForUpdate(ApplicationType.Translator))
+                UpdateIt();
+            
+            var app = UpdateHelper.GetApplicationLocalPatch(ApplicationType.Translator) + "//Thea2Translator.exe";
+            if (!File.Exists(app))
+            {
+                Console.WriteLine($"Brak pliku '{app}'!");
+                Console.ReadLine();
+            }
+            else
+            {
+                Console.WriteLine($"Uruchamiam {app}");
+                System.Diagnostics.Process.Start(app, "START");
+            }
         }
 
         static void UpdateIt()
@@ -23,12 +38,6 @@ namespace Thea2translator.Updater
             DeleteFiles();
             //2. Download new files
             DownloadFiles();
-            //3. Run Translator            
-            var app = UpdateHelper.GetApplicationLocalPatch(ApplicationType.Translator) + "//Thea2Translator.exe";
-            Console.WriteLine($"Uruchamiam {app}");
-            System.Diagnostics.Process.Start(app);
-            //4. Close Updater
-            //System.Diagnostics.Process.GetCurrentProcess().Kill();
         }
 
         static void DeleteFiles()
@@ -45,6 +54,7 @@ namespace Thea2translator.Updater
             catch(Exception ex)
             {
                 Console.WriteLine(ex.ToString());
+                Console.ReadLine();
             }
         }
 

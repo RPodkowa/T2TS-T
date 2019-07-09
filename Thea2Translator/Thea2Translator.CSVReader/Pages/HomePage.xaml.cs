@@ -46,9 +46,6 @@ namespace Thea2Translator.DesktopApp.Pages
 
         private void BtnStartTranslate_Click(object sender, RoutedEventArgs e)
         {
-            UpdateHelper.TryUpdate(ApplicationType.Updater);
-            UpdateHelper.TryUpdate(ApplicationType.Translator);
-
             FileHelper.MainDir = txtFolderDir.Text;
 
             if (string.IsNullOrEmpty(Settings.Default.UserId))

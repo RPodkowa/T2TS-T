@@ -127,42 +127,7 @@ namespace Thea2Translator.Logic
         
         #endregion
         #endregion
-                
-        public static bool CreateFTPDirectory(string directory)
-        {
-            try
-            {
-                //create the directory
-                FtpWebRequest requestDir = (FtpWebRequest)FtpWebRequest.Create(new Uri(directory));
-                requestDir.Method = WebRequestMethods.Ftp.MakeDirectory;
-                requestDir.Credentials = new NetworkCredential(ftpUser, ftpPassword);
-                requestDir.UsePassive = true;
-                requestDir.UseBinary = true;
-                requestDir.KeepAlive = false;
-                FtpWebResponse response = (FtpWebResponse)requestDir.GetResponse();
-                Stream ftpStream = response.GetResponseStream();
-
-                ftpStream.Close();
-                response.Close();
-
-                return true;
-            }
-            catch (WebException ex)
-            {
-                FtpWebResponse response = (FtpWebResponse)ex.Response;
-                if (response.StatusCode == FtpStatusCode.ActionNotTakenFileUnavailable)
-                {
-                    response.Close();
-                    return true;
-                }
-                else
-                {
-                    response.Close();
-                    return false;
-                }
-            }
-        }
-                
+                               
         public static List<string> GetFtpFilesList(string requestUriString, bool withCreate)
         {
             // Get the object used to communicate with the server.
@@ -201,7 +166,6 @@ namespace Thea2Translator.Logic
 
         public static void DownloadAllFiles(string serverFtpDirectory, string serverHttpDirectory, string localDirectory)
         {
-    //        CreatedPathIfNotExists(localDirectory);
             var files = GetFtpFilesList(serverFtpDirectory, false);
             foreach (var file in files)
             {
@@ -210,27 +174,6 @@ namespace Thea2Translator.Logic
                 var localFile = localDirectory + "\\" + file;
                 DownloadFile(serverFile, localFile);
             }
-        }
-                
-        public static List<string> GetLocalFilesList(string directory, bool withCreate)
-        {
-            if (withCreate) CreatedPathIfNotExists(directory);
-            var ret = new List<string>();
-            if (!DirectoryExists(directory))
-                return ret;
-
-            string[] files = Directory.GetFiles(directory);
-            foreach (string file in files)            
-                ret.Add(file);            
-
-            if (ret.Count == 0) // sprawdze jeszce foldery
-            {
-                string[] directories = Directory.GetDirectories(directory);
-                foreach (string dir in directories)
-                    ret.Add(dir);
-            }
-
-            return ret;
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,37 +14,24 @@ namespace Thea2Translator.Logic.Helpers
     }
     public class UpdateHelper
     {
-
-        public static void TryUpdate(ApplicationType applicationType)
-        {
-            if (!CheckNeedForUpdate(applicationType))
-                return;
-
-            UpdateIt(applicationType);
-        }
-
-        private static void UpdateIt(ApplicationType applicationType)
-        {
-            if (applicationType == ApplicationType.Updater) UpdateUpdater();
-            if (applicationType == ApplicationType.Translator) UpdateTranslator();
-        }
-
-        private static void UpdateUpdater()
-        {
-            FileHelper.DownloadAllFiles(GetApplicationServerFtpPatch(ApplicationType.Updater),GetApplicationServerHttpPatch(ApplicationType.Updater), GetApplicationLocalPatch(ApplicationType.Updater));
-        }
-
-        private static void UpdateTranslator()
-        {
-            System.Diagnostics.Process.GetCurrentProcess().Kill();
-        }
-
-        private static bool CheckNeedForUpdate(ApplicationType applicationType)
+        public static bool CheckNeedForUpdate(ApplicationType applicationType)
         {
             var serverVersion = GetServerVersionInfo(applicationType);
             var localVersion = GetLocalVersionInfo(applicationType);
 
             return serverVersion!= localVersion;
+        }
+
+        public static void CreateIfNotExistsVersionFile(string version)
+        {
+            var file = GetApplicationLocalPatch(ApplicationType.Updater) + "\\version.info";
+            if (File.Exists(file))
+                return;
+
+            using (StreamWriter writer = new StreamWriter(file))
+            {
+                writer.Write(version);
+            }
         }
 
         private static string GetLocalVersionInfo(ApplicationType applicationType)
@@ -59,19 +47,11 @@ namespace Thea2Translator.Logic.Helpers
             var version = FileHelper.ReadHttpFileString(file);
             return version;
         }
-
-        private static string GetApplicationBaseParentPath()
-        {
-            var a = AppDomain.CurrentDomain.BaseDirectory;
-            var b = System.IO.Directory.GetParent(System.IO.Directory.GetParent(a).FullName);
-            return b.FullName;
-        }
-
+        
         public static string GetApplicationLocalPatch(ApplicationType applicationType)
         {
-            string localDir = GetApplicationBaseParentPath();
+            string localDir = AppDomain.CurrentDomain.BaseDirectory;
             if (applicationType == ApplicationType.Translator) localDir += "\\Translator";
-            if (applicationType == ApplicationType.Updater) localDir += "\\Updater";
             if (!System.IO.Directory.Exists(localDir)) System.IO.Directory.CreateDirectory(localDir);
             return localDir;
         }

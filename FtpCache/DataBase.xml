@@ -11631,7 +11631,12 @@
       <Output>Krakensi są stworzeniami z dawnych mrocznych legend, powracającymi po rozbiciu, by raz jeszcze sprowadzić terror na morza.</Output>
     </Texts>
   </Element>
-  <Element ID="776" Key="DES_SUBRACE_DEMON_BABA_YAGA" Flag="0">
+  <Element ID="776" Key="DES_SUBRACE_DEMON_BABA_YAGA" Flag="1">
+    <Confirmation>
+      <Time>07-08-2019 12:18:28</Time>
+      <GUID>84CC4745-B7FB-4B8B-802F-3F42F32048F1</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBRACE</Group>
@@ -11644,7 +11649,12 @@
       <Output>Baba Jaga</Output>
     </Texts>
   </Element>
-  <Element ID="777" Key="DES_SUBRACE_DEMON_BABA_YAGA_DES" Flag="0">
+  <Element ID="777" Key="DES_SUBRACE_DEMON_BABA_YAGA_DES" Flag="1">
+    <Confirmation>
+      <Time>07-08-2019 12:57:27</Time>
+      <GUID>84CC4745-B7FB-4B8B-802F-3F42F32048F1</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBRACE</Group>
@@ -11654,10 +11664,15 @@
     </Groups>
     <Texts>
       <Input>Baba Yaga is one of the oldest Slavyan demons, but her true nature remains hidden. Is it a witch gone too far? An apparition of darkness? Or simply another tormented soul twisted by sorrow?</Input>
-      <Output>Baba Jaga jest jednym z najstarszych słowiańskich demonów, ale jej prawdziwa natura pozostaje ukryta. Czy to czarownica zaszła za daleko? Widmo ciemności? A może po prostu kolejna udręczona dusza skręcona przez smutek?</Output>
+      <Output>Baba Jaga jest jednym z najstarszych słowiańskich demonów, ale jej prawdziwa natura pozostaje ukryta. Czy to czarownica, która zaszła za daleko? Widmo ciemności? A może po prostu kolejna udręczona dusza skręcona przez smutek?</Output>
     </Texts>
   </Element>
-  <Element ID="778" Key="DES_SUBRACE_DEMON_SKSHACK" Flag="0">
+  <Element ID="778" Key="DES_SUBRACE_DEMON_SKSHACK" Flag="1">
+    <Confirmation>
+      <Time>07-08-2019 12:19:49</Time>
+      <GUID>84CC4745-B7FB-4B8B-802F-3F42F32048F1</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBRACE</Group>
@@ -11666,10 +11681,15 @@
     </Groups>
     <Texts>
       <Input>Skshack</Input>
-      <Output>Skshack</Output>
+      <Output>Skrzak</Output>
     </Texts>
   </Element>
-  <Element ID="779" Key="DES_SUBRACE_DEMON_SKSHACK_DES" Flag="0">
+  <Element ID="779" Key="DES_SUBRACE_DEMON_SKSHACK_DES" Flag="1">
+    <Confirmation>
+      <Time>07-08-2019 12:20:54</Time>
+      <GUID>84CC4745-B7FB-4B8B-802F-3F42F32048F1</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBRACE</Group>
@@ -11678,7 +11698,7 @@
     </Groups>
     <Texts>
       <Input>Skshack is a house demon and as such, it can have mischievous nature. He is also known to do the bidding of the gods from time to time.</Input>
-      <Output>Skshack jest demonem domowym i jako taki może mieć psotną naturę. Znany jest również z tego, że od czasu do czasu licytuje bogów.</Output>
+      <Output>Skrzak jest demonem domowym i jako taki może mieć psotną naturę. Znany jest również z tego, że od czasu do czasu wykonauje polecenia bogów.</Output>
     </Texts>
   </Element>
   <Element ID="780" Key="DES_SUBRACE_DIVINE_SKSHACK" Flag="0">
@@ -11705,7 +11725,12 @@
       <Output>Boski Skshack jest demonem domowym i jako taki może mieć psotną naturę. Znany jest również z tego, że od czasu do czasu licytuje bogów.</Output>
     </Texts>
   </Element>
-  <Element ID="782" Key="DES_SUBRACE_DEMON_POLUDNICA_LIGHT_SICK" Flag="0">
+  <Element ID="782" Key="DES_SUBRACE_DEMON_POLUDNICA_LIGHT_SICK" Flag="1">
+    <Confirmation>
+      <Time>07-08-2019 12:48:46</Time>
+      <GUID>84CC4745-B7FB-4B8B-802F-3F42F32048F1</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBRACE</Group>
@@ -11716,10 +11741,15 @@
     </Groups>
     <Texts>
       <Input>Light-Sick Poludnica</Input>
-      <Output>Light-Sick Poludnica</Output>
+      <Output>Południca skażona jasnością</Output>
     </Texts>
   </Element>
-  <Element ID="783" Key="DES_SUBRACE_DEMON_POLUDNICA_LIGHT_SICK_DES" Flag="0">
+  <Element ID="783" Key="DES_SUBRACE_DEMON_POLUDNICA_LIGHT_SICK_DES" Flag="1">
+    <Confirmation>
+      <Time>07-08-2019 12:23:31</Time>
+      <GUID>84CC4745-B7FB-4B8B-802F-3F42F32048F1</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBRACE</Group>
@@ -11730,10 +11760,15 @@
     </Groups>
     <Texts>
       <Input>Poludnica, or the midday lady is a field demon who appears at high noon and can cause sudden death to farmers or stray children.</Input>
-      <Output>Poludnica, czyli pani z południa, to demon polowy, który pojawia się w samo południe i może spowodować nagłą śmierć dla rolników lub bezpańskich dzieci.</Output>
+      <Output>Południca, czyli pani z południa, to demon polowy, który pojawia się w samo południe i może spowodować nagłą śmierć rolników lub zabląkanych dzieci.</Output>
     </Texts>
   </Element>
-  <Element ID="784" Key="DES_SUBRACE_DEMON_POLUDNICA" Flag="0">
+  <Element ID="784" Key="DES_SUBRACE_DEMON_POLUDNICA" Flag="1">
+    <Confirmation>
+      <Time>07-08-2019 12:24:04</Time>
+      <GUID>84CC4745-B7FB-4B8B-802F-3F42F32048F1</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBRACE</Group>
@@ -11742,10 +11777,15 @@
     </Groups>
     <Texts>
       <Input>Poludnica</Input>
-      <Output>Poludnica</Output>
+      <Output>Południca</Output>
     </Texts>
   </Element>
-  <Element ID="785" Key="DES_SUBRACE_DEMON_POLUDNICA_DES" Flag="0">
+  <Element ID="785" Key="DES_SUBRACE_DEMON_POLUDNICA_DES" Flag="1">
+    <Confirmation>
+      <Time>07-08-2019 12:23:40</Time>
+      <GUID>84CC4745-B7FB-4B8B-802F-3F42F32048F1</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBRACE</Group>
@@ -11754,10 +11794,15 @@
     </Groups>
     <Texts>
       <Input>Poludnica, or the midday lady is a field demon who appears at high noon and can cause sudden death to farmers or stray children.</Input>
-      <Output>Poludnica, czyli pani z południa, to demon polowy, który pojawia się w samo południe i może spowodować nagłą śmierć dla rolników lub bezpańskich dzieci.</Output>
+      <Output>Południca, czyli pani z południa, to demon polowy, który pojawia się w samo południe i może spowodować nagłą śmierć rolników lub zabląkanych dzieci.</Output>
     </Texts>
   </Element>
-  <Element ID="786" Key="DES_SUBRACE_DEMON_KARAKANDZA" Flag="0">
+  <Element ID="786" Key="DES_SUBRACE_DEMON_KARAKANDZA" Flag="1">
+    <Confirmation>
+      <Time>07-08-2019 12:49:44</Time>
+      <GUID>84CC4745-B7FB-4B8B-802F-3F42F32048F1</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBRACE</Group>
@@ -11769,7 +11814,12 @@
       <Output>Karakandza</Output>
     </Texts>
   </Element>
-  <Element ID="787" Key="DES_SUBRACE_DEMON_KARAKANDZA_DES" Flag="0">
+  <Element ID="787" Key="DES_SUBRACE_DEMON_KARAKANDZA_DES" Flag="1">
+    <Confirmation>
+      <Time>07-08-2019 12:50:34</Time>
+      <GUID>84CC4745-B7FB-4B8B-802F-3F42F32048F1</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBRACE</Group>
@@ -11778,10 +11828,15 @@
     </Groups>
     <Texts>
       <Input>An evil-natured, goblin-like creature that tends to prefer living underground, often tunnelling under structures to weaken them on purpose.</Input>
-      <Output>Złowrogie, podobne do goblinów stworzenie, które woli żyć pod ziemią, często tuneluje pod strukturami, aby celowo je osłabić.</Output>
+      <Output>Złowrogie, podobne do goblinów stworzenie, które woli żyć pod ziemią, często kupie pod budynkami, aby celowo je osłabić.</Output>
     </Texts>
   </Element>
-  <Element ID="788" Key="DES_SUBRACE_DEMON_LIGHT_SICK_KARAKANDZA" Flag="0">
+  <Element ID="788" Key="DES_SUBRACE_DEMON_LIGHT_SICK_KARAKANDZA" Flag="1">
+    <Confirmation>
+      <Time>07-08-2019 12:50:29</Time>
+      <GUID>84CC4745-B7FB-4B8B-802F-3F42F32048F1</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBRACE</Group>
@@ -11792,10 +11847,15 @@
     </Groups>
     <Texts>
       <Input>Light-Sick Karakandza</Input>
-      <Output>Light-Sick Karakandza</Output>
+      <Output>Karakandza skażona jasnością</Output>
     </Texts>
   </Element>
-  <Element ID="789" Key="DES_SUBRACE_DEMON_LIGHT_SICK_KARAKANDZA_DES" Flag="0">
+  <Element ID="789" Key="DES_SUBRACE_DEMON_LIGHT_SICK_KARAKANDZA_DES" Flag="1">
+    <Confirmation>
+      <Time>07-08-2019 12:51:31</Time>
+      <GUID>84CC4745-B7FB-4B8B-802F-3F42F32048F1</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBRACE</Group>
@@ -11806,10 +11866,15 @@
     </Groups>
     <Texts>
       <Input> An evil-natured, goblin-like creature but weakened by light-sickness.</Input>
-      <Output>Zła natura, goblinopodobne stworzenie, ale osłabione przez chorobę świetlną.</Output>
+      <Output>Złowrogie, podobne do goblinów stworzenie, ale osłabione przez skażenie jasności.</Output>
     </Texts>
   </Element>
-  <Element ID="790" Key="DES_SUBRACE_DEMON_LIGHT_SICK_CMUCH" Flag="0">
+  <Element ID="790" Key="DES_SUBRACE_DEMON_LIGHT_SICK_CMUCH" Flag="1">
+    <Confirmation>
+      <Time>07-08-2019 12:51:57</Time>
+      <GUID>84CC4745-B7FB-4B8B-802F-3F42F32048F1</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBRACE</Group>
@@ -11820,10 +11885,15 @@
     </Groups>
     <Texts>
       <Input>Light-Sick Cmuch</Input>
-      <Output>Light-Sick Cmuch</Output>
+      <Output>Ćmuch skażony jasnością</Output>
     </Texts>
   </Element>
-  <Element ID="791" Key="DES_SUBRACE_DEMON_LIGHT_SICK_CMUCH_DES" Flag="0">
+  <Element ID="791" Key="DES_SUBRACE_DEMON_LIGHT_SICK_CMUCH_DES" Flag="1">
+    <Confirmation>
+      <Time>07-08-2019 12:53:29</Time>
+      <GUID>84CC4745-B7FB-4B8B-802F-3F42F32048F1</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBRACE</Group>
@@ -11834,10 +11904,15 @@
     </Groups>
     <Texts>
       <Input>The cmuch is a shy, recluse of a demon. It lives in the swamps and is said to attack weakened or wounded folk, but it is also said to have healing properties.</Input>
-      <Output>cmuch jest nieśmiałym, pustelnikiem demona. Żyje na bagnach i mówi się, że atakuje osłabionych lub rannych ludzi, ale mówi się również, że ma właściwości lecznicze.</Output>
+      <Output>Ćmuch jest nieśmiałym, samotniczym demonem. Żyje na bagnach i mówi się, że atakuje osłabionych lub rannych ludzi. Mówi się również, że ma właściwości lecznicze.</Output>
     </Texts>
   </Element>
-  <Element ID="792" Key="DES_SUBRACE_DEMON_CMUCH" Flag="0">
+  <Element ID="792" Key="DES_SUBRACE_DEMON_CMUCH" Flag="1">
+    <Confirmation>
+      <Time>07-08-2019 12:53:39</Time>
+      <GUID>84CC4745-B7FB-4B8B-802F-3F42F32048F1</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBRACE</Group>
@@ -11846,10 +11921,15 @@
     </Groups>
     <Texts>
       <Input>Cmuch</Input>
-      <Output>Dużo</Output>
+      <Output>Ćmuch</Output>
     </Texts>
   </Element>
-  <Element ID="793" Key="DES_SUBRACE_DEMON_CMUCH_DES" Flag="0">
+  <Element ID="793" Key="DES_SUBRACE_DEMON_CMUCH_DES" Flag="1">
+    <Confirmation>
+      <Time>07-08-2019 12:53:46</Time>
+      <GUID>84CC4745-B7FB-4B8B-802F-3F42F32048F1</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBRACE</Group>
@@ -11858,10 +11938,15 @@
     </Groups>
     <Texts>
       <Input>The cmuch is a shy, recluse of a demon. It lives in the swamps and is said to attack weakened or wounded folk, but it is also said to have healing properties.</Input>
-      <Output>cmuch jest nieśmiałym, pustelnikiem demona. Żyje na bagnach i mówi się, że atakuje osłabionych lub rannych ludzi, ale mówi się również, że ma właściwości lecznicze.</Output>
+      <Output>Ćmuch jest nieśmiałym, samotniczym demonem. Żyje na bagnach i mówi się, że atakuje osłabionych lub rannych ludzi. Mówi się również, że ma właściwości lecznicze.</Output>
     </Texts>
   </Element>
-  <Element ID="794" Key="DES_SUBRACE_DEMON_LIGHT_SICK_BIES" Flag="0">
+  <Element ID="794" Key="DES_SUBRACE_DEMON_LIGHT_SICK_BIES" Flag="1">
+    <Confirmation>
+      <Time>07-08-2019 12:54:10</Time>
+      <GUID>84CC4745-B7FB-4B8B-802F-3F42F32048F1</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBRACE</Group>
@@ -11872,10 +11957,15 @@
     </Groups>
     <Texts>
       <Input>Light-Sick Bies</Input>
-      <Output>Light-Sick Bies</Output>
+      <Output>Bies skażony jasnością</Output>
     </Texts>
   </Element>
-  <Element ID="795" Key="DES_SUBRACE_DEMON_LIGHT_SICK_BIES_DES" Flag="0">
+  <Element ID="795" Key="DES_SUBRACE_DEMON_LIGHT_SICK_BIES_DES" Flag="1">
+    <Confirmation>
+      <Time>07-08-2019 12:55:25</Time>
+      <GUID>84CC4745-B7FB-4B8B-802F-3F42F32048F1</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBRACE</Group>
@@ -11886,10 +11976,15 @@
     </Groups>
     <Texts>
       <Input>Bies is a dark and foreboding beast that is known to possess its victims and have them wreak havoc upon the land.</Input>
-      <Output>Bies jest mroczną i złowrogą bestią, o której wiadomo, że posiada swoje ofiary i sprawia, że siać spustoszenie na ziemi.</Output>
+      <Output>Bies jest mroczną i złowrogą bestią, o której wiadomo, że opętuje swoje ofiary i sprawia, że sieją spustoszenie na ziemi.</Output>
     </Texts>
   </Element>
-  <Element ID="796" Key="DES_SUBRACE_DEMON_BIES" Flag="0">
+  <Element ID="796" Key="DES_SUBRACE_DEMON_BIES" Flag="1">
+    <Confirmation>
+      <Time>07-08-2019 12:54:13</Time>
+      <GUID>84CC4745-B7FB-4B8B-802F-3F42F32048F1</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBRACE</Group>
@@ -11901,7 +11996,12 @@
       <Output>Bies</Output>
     </Texts>
   </Element>
-  <Element ID="797" Key="DES_SUBRACE_DEMON_BIES_DES" Flag="0">
+  <Element ID="797" Key="DES_SUBRACE_DEMON_BIES_DES" Flag="1">
+    <Confirmation>
+      <Time>07-08-2019 12:55:34</Time>
+      <GUID>84CC4745-B7FB-4B8B-802F-3F42F32048F1</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBRACE</Group>
@@ -11910,10 +12010,15 @@
     </Groups>
     <Texts>
       <Input>Bies is a dark and foreboding beast that is known to possess its victims and have them wreak havoc upon the land.</Input>
-      <Output>Bies jest mroczną i złowrogą bestią, o której wiadomo, że posiada swoje ofiary i sprawia, że siać spustoszenie na ziemi.</Output>
+      <Output>Bies jest mroczną i złowrogą bestią, o której wiadomo, że opętuje swoje ofiary i sprawia, że sieją spustoszenie na ziemi.</Output>
     </Texts>
   </Element>
-  <Element ID="798" Key="DES_SUBRACE_DEMON_SYRIN" Flag="0">
+  <Element ID="798" Key="DES_SUBRACE_DEMON_SYRIN" Flag="1">
+    <Confirmation>
+      <Time>07-08-2019 12:59:19</Time>
+      <GUID>84CC4745-B7FB-4B8B-802F-3F42F32048F1</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBRACE</Group>
@@ -11922,10 +12027,15 @@
     </Groups>
     <Texts>
       <Input>Syrin</Input>
-      <Output>Syrin</Output>
+      <Output>Syrena</Output>
     </Texts>
   </Element>
-  <Element ID="799" Key="DES_SUBRACE_DEMON_SYRIN_DES" Flag="0">
+  <Element ID="799" Key="DES_SUBRACE_DEMON_SYRIN_DES" Flag="1">
+    <Confirmation>
+      <Time>07-08-2019 13:00:37</Time>
+      <GUID>84CC4745-B7FB-4B8B-802F-3F42F32048F1</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBRACE</Group>
@@ -11934,10 +12044,15 @@
     </Groups>
     <Texts>
       <Input>Part bird, part humanoid, known to sit on rocks by the water and enchant menfolk - for that, they are sometimes confused with the jurata.</Input>
-      <Output>Częściowy ptak, częściowo humanoidalny, znany z tego, że siada na skałach przy wodzie i oczarowuje ludzi - za to są czasami mylone z juratą.</Output>
+      <Output>Częściowo ptak, częściowo humanoid, znany z tego, że siada na skałach przy wodzie i oczarowuje mężczyzn - za to są czasami mylone z juratą.</Output>
     </Texts>
   </Element>
-  <Element ID="800" Key="DES_SUBRACE_DEMON_LIGHT_SICK_SYRIN" Flag="0">
+  <Element ID="800" Key="DES_SUBRACE_DEMON_LIGHT_SICK_SYRIN" Flag="1">
+    <Confirmation>
+      <Time>07-08-2019 13:01:19</Time>
+      <GUID>84CC4745-B7FB-4B8B-802F-3F42F32048F1</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBRACE</Group>
@@ -11948,10 +12063,15 @@
     </Groups>
     <Texts>
       <Input>Light-Sick Syrin</Input>
-      <Output>Light-Sick Syrin</Output>
+      <Output>Syrena skażona jasnością</Output>
     </Texts>
   </Element>
-  <Element ID="801" Key="DES_SUBRACE_DEMON_LIGHT_SICK_SYRIN_DES" Flag="0">
+  <Element ID="801" Key="DES_SUBRACE_DEMON_LIGHT_SICK_SYRIN_DES" Flag="1">
+    <Confirmation>
+      <Time>07-08-2019 13:01:57</Time>
+      <GUID>84CC4745-B7FB-4B8B-802F-3F42F32048F1</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBRACE</Group>
@@ -11962,7 +12082,7 @@
     </Groups>
     <Texts>
       <Input>Part bird, part humanoid, known to sit on rocks by the water and enchant menfolk - but this one seems weakened by light sickness.</Input>
-      <Output>Częściowy ptak, częściowo humanoidalny, znany z tego, że siedzi na skałach przy wodzie i oczarowuje mężczyzn - ale ten wydaje się osłabiony przez lekką chorobę.</Output>
+      <Output>Częściowo ptak, częściowo humanoid, znany z tego, że siada na skałach przy wodzie i oczarowuje mężczyzn - ale ten wydaje się osłabiony przez skażenie jasnością.</Output>
     </Texts>
   </Element>
   <Element ID="802" Key="DES_SUBRACE_DEMON_ALKONOST" Flag="0">
@@ -12017,7 +12137,12 @@
       <Output>Część ptaka, częściowo humanoidalna siostra syryny. Alkonost są bardzo temperamentni i znani z tego, że stają się paskudni z kaprysu, a ten jest zarażony chorobą lekką.</Output>
     </Texts>
   </Element>
-  <Element ID="806" Key="DES_SUBRACE_DEMON_CZORT" Flag="0">
+  <Element ID="806" Key="DES_SUBRACE_DEMON_CZORT" Flag="1">
+    <Confirmation>
+      <Time>07-08-2019 13:02:14</Time>
+      <GUID>84CC4745-B7FB-4B8B-802F-3F42F32048F1</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBRACE</Group>
@@ -12029,7 +12154,12 @@
       <Output>Czort</Output>
     </Texts>
   </Element>
-  <Element ID="807" Key="DES_SUBRACE_DEMON_CZORT_DES" Flag="0">
+  <Element ID="807" Key="DES_SUBRACE_DEMON_CZORT_DES" Flag="1">
+    <Confirmation>
+      <Time>07-08-2019 13:02:34</Time>
+      <GUID>84CC4745-B7FB-4B8B-802F-3F42F32048F1</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBRACE</Group>
@@ -12041,7 +12171,12 @@
       <Output>Przebiegłe stworzenia, zawsze poszukujące sposobów na bycie wrednym i mają bardzo wysoką opinię o sobie.</Output>
     </Texts>
   </Element>
-  <Element ID="808" Key="DES_SUBRACE_DEMON_HOHLICK" Flag="0">
+  <Element ID="808" Key="DES_SUBRACE_DEMON_HOHLICK" Flag="1">
+    <Confirmation>
+      <Time>07-08-2019 13:03:01</Time>
+      <GUID>84CC4745-B7FB-4B8B-802F-3F42F32048F1</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBRACE</Group>
@@ -12050,10 +12185,15 @@
     </Groups>
     <Texts>
       <Input>Hohlick</Input>
-      <Output>Hohlick</Output>
+      <Output>Chochlik</Output>
     </Texts>
   </Element>
-  <Element ID="809" Key="DES_SUBRACE_DEMON_YOUNG_HOHLICK" Flag="0">
+  <Element ID="809" Key="DES_SUBRACE_DEMON_YOUNG_HOHLICK" Flag="1">
+    <Confirmation>
+      <Time>07-08-2019 13:03:24</Time>
+      <GUID>84CC4745-B7FB-4B8B-802F-3F42F32048F1</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBRACE</Group>
@@ -12063,10 +12203,15 @@
     </Groups>
     <Texts>
       <Input>Young Hohlick</Input>
-      <Output>Młody Hohlick</Output>
+      <Output>Młody Chochlik</Output>
     </Texts>
   </Element>
-  <Element ID="810" Key="DES_SUBRACE_DEMON_HOHLICK_DES" Flag="0">
+  <Element ID="810" Key="DES_SUBRACE_DEMON_HOHLICK_DES" Flag="1">
+    <Confirmation>
+      <Time>07-08-2019 13:04:42</Time>
+      <GUID>84CC4745-B7FB-4B8B-802F-3F42F32048F1</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBRACE</Group>
@@ -12075,7 +12220,7 @@
     </Groups>
     <Texts>
       <Input>Small, winged critters, with big eyes and tiny teeth. Very mischievous and playful, but they have been known to lead people astray into some real bad trouble. They can also get a bit touchy about their size and you better be careful about lending them anything as returning stuff is not their strong suit. They are very fond of games.</Input>
-      <Output>Małe, skrzydlate stworzenia, z dużymi oczami i małymi zębami. Bardzo złośliwy i zabawny, ale wiadomo, że prowadzą ludzi na manowce w jakieś poważne kłopoty. Mogą też być nieco drażniący w stosunku do swoich rozmiarów i lepiej być ostrożnym w pożyczaniu im czegokolwiek, ponieważ powracające rzeczy nie są ich mocną stroną. Bardzo lubią gry.</Output>
+      <Output>Małe, skrzydlate stworzenia, z dużymi oczami i małymi zębami. Bardzo złośliwy i zabawny, ale wiadomo, że prowadzą ludzi na manowce w jakieś poważne kłopoty. Mogą też być nieco drażliwe w stosunku do swoich rozmiarów i lepiej być ostrożnym w pożyczaniu im czegokolwiek, ponieważ oddawanie rzeczy nie jest ich mocną stroną. Bardzo lubią gry.</Output>
     </Texts>
   </Element>
   <Element ID="811" Key="DES_SUBRACE_FOREST_PINECONETTES" Flag="0">
@@ -12252,7 +12397,12 @@
       <Output>Viatroviec to duchy wiatru i natury. Często tworzą sojusz z demonami leśnymi i służą jako opiekunowie obok swoich brzydkich sióstr.</Output>
     </Texts>
   </Element>
-  <Element ID="825" Key="DES_SUBRACE_NIGHT_WEREWOLF_WEAK" Flag="0">
+  <Element ID="825" Key="DES_SUBRACE_NIGHT_WEREWOLF_WEAK" Flag="1">
+    <Confirmation>
+      <Time>07-08-2019 10:37:56</Time>
+      <GUID>5D8A0F64-CE78-411C-945C-921BFF052EC2</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBRACE</Group>
@@ -12265,7 +12415,12 @@
       <Output>Słaby wilkołak</Output>
     </Texts>
   </Element>
-  <Element ID="826" Key="DES_SUBRACE_NIGHT_WEREWOLF_WEAK_DES" Flag="0">
+  <Element ID="826" Key="DES_SUBRACE_NIGHT_WEREWOLF_WEAK_DES" Flag="1">
+    <Confirmation>
+      <Time>07-08-2019 10:38:52</Time>
+      <GUID>5D8A0F64-CE78-411C-945C-921BFF052EC2</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBRACE</Group>
@@ -12275,10 +12430,15 @@
     </Groups>
     <Texts>
       <Input>Also known as wolf men, werewolves are seen as both blessed by the moon lord and yet cursed with the beast taint.</Input>
-      <Output>Znane również jako wilki, wilkołaki są postrzegane jako błogosławione przez władcę księżyca, a mimo to przeklęte skażeniem bestii.</Output>
+      <Output>Znane również jako ludzie wilki, wilkołaki są postrzegane jako błogosławione przez władcę księżyca, a mimo to przeklęte skażeniem bestii.</Output>
     </Texts>
   </Element>
-  <Element ID="827" Key="DES_SUBRACE_NIGHT_WEREWOLF" Flag="0">
+  <Element ID="827" Key="DES_SUBRACE_NIGHT_WEREWOLF" Flag="1">
+    <Confirmation>
+      <Time>07-08-2019 10:38:55</Time>
+      <GUID>5D8A0F64-CE78-411C-945C-921BFF052EC2</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBRACE</Group>
@@ -12290,7 +12450,12 @@
       <Output>Wilkołak</Output>
     </Texts>
   </Element>
-  <Element ID="828" Key="DES_SUBRACE_NIGHT_WEREWOLF_DES" Flag="0">
+  <Element ID="828" Key="DES_SUBRACE_NIGHT_WEREWOLF_DES" Flag="1">
+    <Confirmation>
+      <Time>07-08-2019 10:39:06</Time>
+      <GUID>5D8A0F64-CE78-411C-945C-921BFF052EC2</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBRACE</Group>
@@ -12299,10 +12464,15 @@
     </Groups>
     <Texts>
       <Input>Also known as wolf men, werewolves are seen as both blessed by the moon lord and yet cursed with the beast taint.</Input>
-      <Output>Znane również jako wilki, wilkołaki są postrzegane jako błogosławione przez władcę księżyca, a mimo to przeklęte skażeniem bestii.</Output>
+      <Output>Znane również jako ludzie wilki, wilkołaki są postrzegane jako błogosławione przez władcę księżyca, a mimo to przeklęte skażeniem bestii.</Output>
     </Texts>
   </Element>
-  <Element ID="829" Key="DES_SUBRACE_NIGHT_STRIGA" Flag="0">
+  <Element ID="829" Key="DES_SUBRACE_NIGHT_STRIGA" Flag="1">
+    <Confirmation>
+      <Time>07-08-2019 10:39:13</Time>
+      <GUID>5D8A0F64-CE78-411C-945C-921BFF052EC2</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBRACE</Group>
@@ -12311,10 +12481,15 @@
     </Groups>
     <Texts>
       <Input>Striga</Input>
-      <Output>Striga</Output>
+      <Output>Strzyga</Output>
     </Texts>
   </Element>
-  <Element ID="830" Key="DES_SUBRACE_NIGHT_STRIGA_DES" Flag="0">
+  <Element ID="830" Key="DES_SUBRACE_NIGHT_STRIGA_DES" Flag="1">
+    <Confirmation>
+      <Time>07-08-2019 10:40:03</Time>
+      <GUID>5D8A0F64-CE78-411C-945C-921BFF052EC2</GUID>
+      <User>Radek</User>
+    </Confirmation>
     <Groups>
       <Group>DES</Group>
       <Group>DES_SUBRACE</Group>
@@ -12323,7 +12498,7 @@
     </Groups>
     <Texts>
       <Input>Those born with extra row of teeth, a unibrow, or uncommon organs all risk awakening after death to become striga and haunt their own loved ones.</Input>
-      <Output>Ci, którzy urodzili się z dodatkowym rzędem zębów, unibrowem lub rzadkimi organami, ryzykują przebudzenie po śmierci, by stać się striga i prześladować swoich bliskich.</Output>
+      <Output>Ci, którzy urodzili się z dodatkowym rzędem zębów, jedną brwią lub rzadkimi organami, ryzykują przebudzenie po śmierci, by stać się strzygą i prześladować swoich bliskich.</Output>
     </Texts>
   </Element>
   <Element ID="831" Key="DES_SUBRACE_NIGHT_LIGHT_SICK_STRIGA" Flag="0">

@@ -639,6 +639,17 @@ namespace Thea2Translator.Logic
                 cacheOld.RemoveElem(cacheOldElem);
             }
 
+            foreach (var oldElem in cacheOld.CacheElems)
+            {
+                var id = oldElem.Id;
+                var originalOldElem = originalOld.GetElemById(id);
+
+                if (originalOldElem != null)
+                    throw new Exception($"Cos nie tak z ID={id}");
+                                
+                cacheNew.AddElem(oldElem);
+            }
+
             cacheNew.SaveToFile();
         }
     }

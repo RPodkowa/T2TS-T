@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Diagnostics;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -8,6 +7,7 @@ using Thea2Translator.DesktopApp.Helpers;
 using Thea2Translator.DesktopApp.Windows;
 using Thea2Translator.Logic;
 using Thea2Translator.Logic.Cache;
+using Thea2Translator.Logic.Helpers;
 
 namespace Thea2Translator.DesktopApp.Pages
 {
@@ -17,11 +17,10 @@ namespace Thea2Translator.DesktopApp.Pages
     public partial class ModuleSelectionAdminPage : Page
     {
         private object _lockObject = new object();
-        private TimeSpan? processTimeSpan;
 
         private static SolidColorBrush selectedButtonColor = Brushes.LightGreen;
         private static SolidColorBrush unSelectedButtonColor = Brushes.Orange;
-                
+
         bool isDataBaseModuleSelected = false;
         bool isModulesModuleSelected = false;
         bool isNamesModuleSelected = false;
@@ -91,10 +90,11 @@ namespace Thea2Translator.DesktopApp.Pages
 
         private void ClearProgressBar()
         {
-            this.Dispatcher.Invoke(() => {
+            this.Dispatcher.Invoke(() =>
+            {
                 barTextBlock.Text = "";
                 barStatus.Value = 0;
-            });    
+            });
         }
 
         private void BtnTranslate_Click(object sender, RoutedEventArgs e)
@@ -123,7 +123,7 @@ namespace Thea2Translator.DesktopApp.Pages
             if (isDataBaseModuleSelected) filesType = FilesType.DataBase;
             if (isModulesModuleSelected) filesType = FilesType.Modules;
             if (isNamesModuleSelected) filesType = FilesType.Names;
-            
+
             NavigationService.Navigate(new TranslatePage(filesType));
         }
 
@@ -136,7 +136,7 @@ namespace Thea2Translator.DesktopApp.Pages
                     try
                     {
                         IDataCache cache = null;
-                        switch(filesType)
+                        switch (filesType)
                         {
                             case FilesType.DataBase: cache = LogicProvider.DataBase; break;
                             case FilesType.Modules: cache = LogicProvider.Modules; break;
@@ -149,24 +149,15 @@ namespace Thea2Translator.DesktopApp.Pages
                         this.Dispatcher.Invoke(() =>
                         {
                             SetButtonEnableProp(false);
-                            txtCurrentModuleInProcess.Content = $"{step.ToString()} - {filesType.ToString()}";
                         });
 
-                        var stopWatch = new Stopwatch();
-                        stopWatch.Start();
                         cache.MakeStep(step);
-                        stopWatch.Stop();
-
-                        if (processTimeSpan == null) processTimeSpan = stopWatch.Elapsed;
-                        else processTimeSpan += stopWatch.Elapsed;
 
                         cache.StatusChanged -= UpdateStatus;
 
                         this.Dispatcher.Invoke(() =>
                         {
                             SetButtonEnableProp(true);
-                            string elapsedTime = string.Format(" [{0:00}:{1:00}:{2:00}.{3:00}]", processTimeSpan?.Hours, processTimeSpan?.Minutes, processTimeSpan?.Seconds, processTimeSpan?.Milliseconds / 10);
-                            txtCurrentModuleInProcess.Content = $"{step.ToString()} done in {elapsedTime}";
                         });
                     }
                     catch (Exception ex)
@@ -183,9 +174,13 @@ namespace Thea2Translator.DesktopApp.Pages
 
         private void SetButtonEnableProp(bool isEnable)
         {
+            btnDownloadFiles.IsEnabled = isEnable;
+            btnUploadFiles.IsEnabled = isEnable;
+
             btnChooseDataBase.IsEnabled = isEnable;
             btnChooseModulus.IsEnabled = isEnable;
             btnChooseNames.IsEnabled = isEnable;
+            btnVocabulary.IsEnabled = isEnable;
 
             btnImportFromSteam.IsEnabled = isEnable;
             btnImportFromMachineTranslate.IsEnabled = isEnable;
@@ -198,14 +193,18 @@ namespace Thea2Translator.DesktopApp.Pages
         {
             this.Dispatcher.Invoke(() =>
             {
-                barTextBlock.Text = s;
+                if (!string.IsNullOrEmpty(s))
+                {
+                    txtCurrentModuleInProcess.Content = s;
+                    barTextBlock.Text = s;
+                }
                 barStatus.Value = p * 100;
             });
         }
 
         private void BtnImportFromSteam_Click(object sender, RoutedEventArgs e)
-        {        
-                Process(AlgorithmStep.ImportFromSteam);         
+        {
+            Process(AlgorithmStep.ImportFromSteam);
         }
 
         private void BtnPrepareToMachineTranslate_Click(object sender, RoutedEventArgs e)
@@ -225,7 +224,6 @@ namespace Thea2Translator.DesktopApp.Pages
 
         private void Process(AlgorithmStep step)
         {
-            processTimeSpan = null;
             if (isDataBaseModuleSelected) ProcessFiles(FilesType.DataBase, step);
             if (isModulesModuleSelected) ProcessFiles(FilesType.Modules, step);
             if (isNamesModuleSelected) ProcessFiles(FilesType.Names, step);
@@ -233,21 +231,12 @@ namespace Thea2Translator.DesktopApp.Pages
 
         private void btnDownloadFiles_Click(object sender, RoutedEventArgs e)
         {
-            var synchronization = new Synchronization();
-            var workingNow = synchronization.WorkingNow();
-            if (synchronization.DownloadCache())
-            {
-                string txt = "Pobieranie plików zakończone sukcesem!";
-                if (!string.IsNullOrEmpty(workingNow)) txt += $"\r\nAktualnie pracujacy: {workingNow}";
-                MessageBox.Show(txt);
-            }
+            ProcessSynhronization(true);
         }
 
         private void btnUploadFiles_Click(object sender, RoutedEventArgs e)
         {
-            var synchronization = new Synchronization();            
-            if (synchronization.UploadCache())
-                MessageBox.Show("Wysyłanie plików zakończone sukcesem!");
+            ProcessSynhronization(false);
         }
 
         private void btnVocabulary_Click(object sender, RoutedEventArgs e)
@@ -259,6 +248,59 @@ namespace Thea2Translator.DesktopApp.Pages
         private void BackButton_Click(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new HomePage());
+        }
+
+        private void ProcessSynhronization(bool download)
+        {
+            Task.Run(() =>
+            {
+                lock (_lockObject)
+                {
+                    try
+                    {
+                        var synchronization = new Synchronization();
+
+                        ClearProgressBar();
+                        synchronization.StatusChanged += (s, p) => UpdateStatus(s, p);
+
+                        this.Dispatcher.Invoke(() =>
+                        {
+                            SetButtonEnableProp(false);
+                        });
+
+                        ProcessResult result = null;
+                        if (download)
+                        {
+                            result = synchronization.DownloadCache();
+                            var workingNow = synchronization.WorkingNow();
+                            if (!string.IsNullOrEmpty(workingNow)) result.AddMessage($"\r\nAktualnie pracujacy: {workingNow}");
+                        }
+                        else
+                        {
+                            result = synchronization.UploadCache();
+                        }
+
+                        synchronization.StatusChanged -= UpdateStatus;
+
+
+                        this.Dispatcher.Invoke(() =>
+                        {
+                            SetButtonEnableProp(true);
+                        });
+
+                        MessageBox.Show(result.Message);
+
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message, "Error");
+                        this.Dispatcher.Invoke(() =>
+                        {
+                            SetButtonEnableProp(true);
+                        });
+                    }
+                }
+            });
         }
 
         private void BtnOpenMod_Click(object sender, RoutedEventArgs e)

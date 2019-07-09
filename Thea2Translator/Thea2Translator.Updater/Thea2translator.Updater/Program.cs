@@ -11,7 +11,7 @@ namespace Thea2translator.Updater
 {
     class Program
     {
-        static string Version = "1";
+        static string Version = "2";
         static void Main(string[] args)
         {
             UpdateHelper.CreateIfNotExistsVersionFile(Version);
@@ -19,7 +19,7 @@ namespace Thea2translator.Updater
             if (UpdateHelper.CheckNeedForUpdate(ApplicationType.Translator))
                 UpdateIt();
             
-            var app = UpdateHelper.GetApplicationLocalPatch(ApplicationType.Translator) + "//Thea2Translator.exe";
+            var app = UpdateHelper.GetApplicationLocalPatch(ApplicationType.Translator) + "//Translator.exe";
             if (!File.Exists(app))
             {
                 Console.WriteLine($"Brak pliku '{app}'!");

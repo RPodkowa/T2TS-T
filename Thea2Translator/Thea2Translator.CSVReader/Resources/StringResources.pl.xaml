@@ -9,7 +9,7 @@
 
     <system:String x:Key="translateFileLabelModuleSelection">Pliki Tłumaczenia</system:String>
     <system:String x:Key="downloadButtonModuleSelection">Pobierz</system:String>
-    <system:String x:Key="uploadButtonModuleSelection">Wgraj</system:String>
+    <system:String x:Key="uploadButtonModuleSelection">Wyślij</system:String>
 
     <system:String x:Key="moduleLabelModuleSelection">Moduły</system:String>
     

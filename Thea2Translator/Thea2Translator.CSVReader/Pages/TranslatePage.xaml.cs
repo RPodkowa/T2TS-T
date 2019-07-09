@@ -6,6 +6,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using Thea2Translator.DesktopApp.Helpers;
+using Thea2Translator.DesktopApp.Pages.ModuleSelectionPages;
 using Thea2Translator.DesktopApp.ViewModels;
 using Thea2Translator.DesktopApp.Windows;
 using Thea2Translator.Logic;

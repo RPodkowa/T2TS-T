@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Xml;
+using Thea2Translator.Logic.Helpers;
 
 namespace Thea2Translator.Logic
 {
-    internal class DataCache : IDataCache
+    internal class DataCache : ProcessHelper, IDataCache
     {
         internal const int LinesInFile = 6000;
 
@@ -16,10 +17,6 @@ namespace Thea2Translator.Logic
         private readonly FilesType Type;
         private readonly string FullPath;
         private int CurrentId;
-        private int PartsOfStep;
-        private int CurrentPartOfStep;
-
-        public event Action<string, double> StatusChanged;
 
         internal bool IsDataBaseCache { get { return Type == FilesType.DataBase; } }
         internal bool IsModulesCache { get { return Type == FilesType.Modules; } }
@@ -40,55 +37,7 @@ namespace Thea2Translator.Logic
             
             return $"{Type.ToString()}:\r\n{statistic.GetSummary()}";
         }
-
-        private void ChangeStatus(string status, double progress)
-        {
-            StatusChanged?.Invoke(status, progress);
-        }
-
-        private void UpdateStatusWithPortion(string status, int elemNumber, int elemCount)
-        {
-            UpdateStatus(status, elemNumber, elemCount, true);
-        }
-
-        private void UpdateStatus(string status)
-        {
-            UpdateStatus(status, 1, 2, false);
-        }
-
-        private void UpdateStatus(string status, int elemNumber, int elemCount, bool statusWithPortion)
-        {
-            double progress = 0;
-            if (elemCount != 0) progress = (double)elemNumber / elemCount;
-            if (PartsOfStep != 0)
-            {
-                progress *= ((double)1 / PartsOfStep);
-                if (CurrentPartOfStep > 0) progress += ((double)(CurrentPartOfStep - 1) / PartsOfStep);
-            }
-
-            if (statusWithPortion) status += $" ({elemNumber}/{elemCount})";
-
-            ChangeStatus(status, progress);
-        }
-
-        private void StartAlgorithmStep(int parts)
-        {
-            PartsOfStep = parts;
-            CurrentPartOfStep = 1;
-        }
-
-        private void StartNextPart()
-        {
-            CurrentPartOfStep++;
-        }
-
-        private void StopAlgorithmStep()
-        {
-            PartsOfStep = 0;
-            CurrentPartOfStep = 0;
-            UpdateStatus($"Done", 1, 1, false);
-        }
-
+        
         private void ResetElems()
         {
             CurrentId = 0;
@@ -168,7 +117,6 @@ namespace Thea2Translator.Logic
 
         public void SaveElems(bool withVocabulary = false)
         {
-            UpdateStatus($"SaveElemsToFile '{FullPath}'");
             SaveToFile();
             if (withVocabulary) SaveVocabulary();
         }
@@ -209,23 +157,20 @@ namespace Thea2Translator.Logic
         #region ImportFromSteam
         private void MakeImportFromSteam()
         {
-            StartAlgorithmStep(3);
+            StartProcess(AlgorithmStep.ImportFromSteam.ToString(), 3);
             ReloadElems();
-            StartNextPart();
+            StartNextProcessStep();
             ReadSteamFiles();
-            StartNextPart();
+            StartNextProcessStep();
             SaveElems();
-            StopAlgorithmStep();
+            StopProcess();
         }
         private void ReadSteamFiles()
         {
             string[] files = FileHelper.GetFiles(GetDirectoryName(AlgorithmStep.ImportFromSteam));
-            if (files == null) return;
-            int filesCount = files.Length;
-            int currentFile = 1;
+            if (files == null) return;            
             foreach (string file in files)
             {
-                UpdateStatusWithPortion($"Process file '{file}'", currentFile++, filesCount);
                 if (IsDataBaseCache) ProcessFileDataBase(file, false);
                 if (IsModulesCache) ProcessFileModules(file, false);
                 if (IsNamesCache) ProcessFileNames(file, false);
@@ -235,13 +180,13 @@ namespace Thea2Translator.Logic
         #region PrepareToMachineTranslate
         private void MakePrepareToMachineTranslate()
         {
-            StartAlgorithmStep(3);
+            StartProcess(AlgorithmStep.PrepareToMachineTranslate.ToString(), 3);
             ReloadElems();
-            StartNextPart();
+            StartNextProcessStep();
             DeleteFilesToMachineTranslate();
-            StartNextPart();
+            StartNextProcessStep();
             SaveFilesToMachineTranslate();
-            StopAlgorithmStep();
+            StopProcess();
         }
         private void DeleteFilesToMachineTranslate()
         {
@@ -280,13 +225,13 @@ namespace Thea2Translator.Logic
         #region ImportFromMachineTranslate
         private void MakeImportFromMachineTranslate()
         {
-            StartAlgorithmStep(3);
+            StartProcess(AlgorithmStep.ImportFromMachineTranslate.ToString(),3);
             ReloadElems();
-            StartNextPart();
+            StartNextProcessStep();
             ReadMachineTranslatedFiles();
-            StartNextPart();
+            StartNextProcessStep();
             SaveElems();
-            StopAlgorithmStep();
+            StopProcess();
         }
         private void ReadMachineTranslatedFiles()
         {
@@ -322,15 +267,15 @@ namespace Thea2Translator.Logic
         #region ExportToSteam
         private void MakeExportToSteam()
         {
-            StartAlgorithmStep(4);
+            StartProcess(AlgorithmStep.ExportToSteam.ToString(), 4);
             ReloadElems();
-            StartNextPart();
+            StartNextProcessStep();
             DeleteFilesToSteam();
-            StartNextPart();
+            StartNextProcessStep();
             SaveElems();
-            StartNextPart();
+            StartNextProcessStep();
             SaveFilesToSteam();
-            StopAlgorithmStep();
+            StopProcess();
         }
         private void DeleteFilesToSteam()
         {
@@ -341,10 +286,8 @@ namespace Thea2Translator.Logic
             string[] files = FileHelper.GetFiles(GetDirectoryName(AlgorithmStep.ImportFromSteam));
             if (files == null) return;
             int filesCount = files.Length;
-            int currentFile = 1;
             foreach (string file in files)
             {
-                UpdateStatusWithPortion($"Process file '{file}'", currentFile++, filesCount);
                 if (IsDataBaseCache) ProcessFileDataBase(file, true);
                 if (IsModulesCache) ProcessFileModules(file, true);
                 if (IsNamesCache) ProcessFileNames(file, true);

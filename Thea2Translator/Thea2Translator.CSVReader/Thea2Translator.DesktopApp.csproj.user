@@ -17,4 +17,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
     <StartArguments>START</StartArguments>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <StartArguments>START</StartArguments>
+  </PropertyGroup>
 </Project>

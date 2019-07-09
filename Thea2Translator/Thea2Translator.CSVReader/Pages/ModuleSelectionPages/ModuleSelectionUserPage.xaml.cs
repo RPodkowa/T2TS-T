@@ -16,6 +16,7 @@ using Thea2Translator.DesktopApp.Helpers;
 using Thea2Translator.DesktopApp.Windows;
 using Thea2Translator.Logic;
 using Thea2Translator.Logic.Cache;
+using Thea2Translator.Logic.Helpers;
 
 namespace Thea2Translator.DesktopApp.Pages.ModuleSelectionPages
 {
@@ -50,21 +51,98 @@ namespace Thea2Translator.DesktopApp.Pages.ModuleSelectionPages
 
         private void btnDownloadFiles_Click(object sender, RoutedEventArgs e)
         {
-            var synchronization = new Synchronization();
-            var workingNow = synchronization.WorkingNow();
-            if (synchronization.DownloadCache())
-            {
-                string txt = "Pobieranie plików zakończone sukcesem!";
-                if (!string.IsNullOrEmpty(workingNow)) txt += $"\r\nAktualnie pracujacy: {workingNow}";
-                MessageBox.Show(txt);
-            }
+            ProcessSynhronization(true);
         }
 
         private void btnUploadFiles_Click(object sender, RoutedEventArgs e)
         {
-            var synchronization = new Synchronization();
-            if (synchronization.UploadCache())
-                MessageBox.Show("Wysyłanie plików zakończone sukcesem!");
+            ProcessSynhronization(false);
+        }
+        
+        private void ClearProgressBar()
+        {
+            this.Dispatcher.Invoke(() =>
+            {
+                barTextBlock.Text = "";
+                barStatus.Value = 0;
+            });
+        }
+        
+        private void UpdateStatus(string s, double p)
+        {
+            this.Dispatcher.Invoke(() =>
+            {
+                if (!string.IsNullOrEmpty(s))
+                {
+                    txtCurrentModuleInProcess.Content = s;
+                    barTextBlock.Text = s;
+                }
+                barStatus.Value = p * 100;
+            });
+        }
+
+        private void SetButtonEnableProp(bool isEnable)
+        {
+            btnDownloadFiles.IsEnabled = isEnable;
+            btnUploadFiles.IsEnabled = isEnable;
+
+            btnChooseDataBase.IsEnabled = isEnable;
+            btnChooseModulus.IsEnabled = isEnable;
+            btnChooseNames.IsEnabled = isEnable;
+            btnVocabulary.IsEnabled = isEnable;
+        }
+
+        private void ProcessSynhronization(bool download)
+        {
+            Task.Run(() =>
+            {
+                lock (_lockObject)
+                {
+                    try
+                    {
+                        var synchronization = new Synchronization();
+
+                        ClearProgressBar();
+                        synchronization.StatusChanged += (s, p) => UpdateStatus(s, p);
+
+                        this.Dispatcher.Invoke(() =>
+                        {
+                            SetButtonEnableProp(false);
+                        });
+
+                        ProcessResult result = null;
+                        if (download)
+                        {
+                            result = synchronization.DownloadCache();
+                            var workingNow = synchronization.WorkingNow();
+                            if (!string.IsNullOrEmpty(workingNow)) result.AddMessage($"\r\nAktualnie pracujacy: {workingNow}");
+                        }
+                        else
+                        {
+                            result = synchronization.UploadCache();
+                        }
+
+                        synchronization.StatusChanged -= UpdateStatus;
+
+
+                        this.Dispatcher.Invoke(() =>
+                        {
+                            SetButtonEnableProp(true);
+                        });
+
+                        MessageBox.Show(result.Message);
+
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message, "Error");
+                        this.Dispatcher.Invoke(() =>
+                        {
+                            SetButtonEnableProp(true);
+                        });
+                    }
+                }
+            });
         }
 
         private void btnVocabulary_Click(object sender, RoutedEventArgs e)

@@ -13,6 +13,12 @@ namespace Thea2Translator.Logic.Helpers
     }
     public class UpdateHelper
     {
+        public static bool ApplicationInAdminMode()
+        {
+            var file = GetApplicationLocalPatch(ApplicationType.Translator) + "\\admin.mode";
+            var ret = FileHelper.FileExists(file);
+            return ret;
+        }
 
         public static void TryUpdate(ApplicationType applicationType)
         {
@@ -64,8 +70,7 @@ namespace Thea2Translator.Logic.Helpers
         public static string GetApplicationLocalPatch(ApplicationType applicationType)
         {
             string localDir = GetApplicationBaseParentPath();
-            if (applicationType == ApplicationType.Translator) localDir += "\\Translator";
-            if (applicationType == ApplicationType.Updater) localDir += "\\Updater";
+            if (applicationType == ApplicationType.Translator) localDir += "\\Translator";            
             if (!System.IO.Directory.Exists(localDir)) System.IO.Directory.CreateDirectory(localDir);
             return localDir;
         }

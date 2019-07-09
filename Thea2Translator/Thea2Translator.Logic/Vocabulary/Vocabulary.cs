@@ -53,26 +53,26 @@ namespace Thea2Translator.Logic
             if (VocabularyElems == null)
                 VocabularyElems = new List<VocabularyElem>();
 
-            foreach (var elem in VocabularyElems)
-            {
-                elem.ResetUsages(Type);
-            }
+            //foreach (var elem in VocabularyElems)
+            //{
+            //    elem.ResetUsages(Type);
+            //}
 
-            foreach (var cacheElem in dataCache.CacheElems)
-            {
-                var txt = cacheElem.OriginalText;
+            //foreach (var cacheElem in dataCache.CacheElems)
+            //{
+            //    var txt = cacheElem.OriginalText;
 
-                var elems = txt.Split(' ');
-                foreach (var elem in elems)
-                {
-                    var word = TextHelper.NormalizeForVocabulary(elem);
-                    if (string.IsNullOrEmpty(word)) continue;
-                    if (word.Length == 1) continue;
+            //    var elems = txt.Split(' ');
+            //    foreach (var elem in elems)
+            //    {
+            //        var word = TextHelper.NormalizeForVocabulary(elem);
+            //        if (string.IsNullOrEmpty(word)) continue;
+            //        if (word.Length == 1) continue;
 
-                    var VocabularyElem = GetElem(word, true);
-                    VocabularyElem.AddUsage(Type);
-                }
-            }
+            //        var VocabularyElem = GetElem(word, true);
+            //        VocabularyElem.AddUsage(Type);
+            //    }
+            //}
         }
 
         public IList<VocabularyElem> GetElemsForText(string text)

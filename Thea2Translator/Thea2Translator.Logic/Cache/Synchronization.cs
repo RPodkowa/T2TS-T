@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Thea2Translator.Logic.Helpers;
 
 namespace Thea2Translator.Logic.Cache
 {
-    public class Synchronization
+    public class Synchronization: ProcessHelper
     {
         public string WorkingNow()
         {
@@ -25,26 +26,43 @@ namespace Thea2Translator.Logic.Cache
         }
 
         #region Download
-        public bool DownloadCache(bool forUpload = false)
+        public ProcessResult DownloadCache(bool forUpload = false)
         {
-            if (HasConflictsInCacheFiles())
-            {
-                MessageBox.Show("Przed ściągnięciem plików z serwera należy rozwiązać konflikty!");
-                return false;
-            }
+            if (HasConflictsInCacheFiles())            
+                return new ProcessResult(false, "Przed ściągnięciem plików z serwera należy rozwiązać konflikty!");            
 
+            ////////////////////////////////////////////////////////////////////////////////////////////////////////
+            if (forUpload) StartNextProcessStep();
+            else StartProcess("Download cache", 5);
             if (FileHelper.LocalDirectoryExists(DirectoryType.Original))
                 FileHelper.MoveFiles(DirectoryType.Original, DirectoryType.OriginalOld);
 
+            ////////////////////////////////////////////////////////////////////////////////////////////////////////
+            StartNextProcessStep();
             if (FileHelper.LocalDirectoryExists(DirectoryType.Cache))
                 FileHelper.MoveFiles(DirectoryType.Cache, DirectoryType.CacheOld);
 
+            ////////////////////////////////////////////////////////////////////////////////////////////////////////
+            StartNextProcessStep();
             DownloadCacheFiles();
+
+            ////////////////////////////////////////////////////////////////////////////////////////////////////////
+            StartNextProcessStep();
             SendToLogs(forUpload ? "DownloadForUpload" : "Download");
             MergeFiles();
+
+            ////////////////////////////////////////////////////////////////////////////////////////////////////////
+            StartNextProcessStep();
             RemoveFilesAfterDownload();
-            if (!forUpload) AddWorkingInfo();
-            return true;
+
+            ////////////////////////////////////////////////////////////////////////////////////////////////////////
+            if (!forUpload)
+            {
+                AddWorkingInfo();
+                StopProcess();
+            }
+
+            return new ProcessResult(true, "Pobieranie plików zakończone sukcesem!");
         }
 
         private void MergeFiles()
@@ -82,22 +100,28 @@ namespace Thea2Translator.Logic.Cache
         }
         #endregion
         #region Upload
-        public bool UploadCache()
+        public ProcessResult UploadCache()
         {
-            if (!DownloadCache(true))
-                return false;
+            ////////////////////////////////////////////////////////////////////////////////////////////////////////
+            StartProcess("Upload cache", 5 + 3);
+            var downloadResult = DownloadCache(true);
+            if (!downloadResult.Result)
+                return downloadResult;
 
             if (HasConflictsInCacheFiles())
-            {
-                MessageBox.Show("Przed wysłaniem plików na serwer należy rozwiązać konflikty!");
-                return false;
-            }
+                return new ProcessResult(false, "Przed wysłaniem plików na serwer należy rozwiązać konflikty!");
 
+            ////////////////////////////////////////////////////////////////////////////////////////////////////////
+            StartNextProcessStep();
             UploadCacheFiles();
             SendToLogs("Upload");
+            ////////////////////////////////////////////////////////////////////////////////////////////////////////
+            StartNextProcessStep();
             RemoveFilesAfterUpload();
             DeleteWorkingInfo();
-            return true;
+            ////////////////////////////////////////////////////////////////////////////////////////////////////////
+            StopProcess();
+            return new ProcessResult(true, "Wysyłanie plików zakończone sukcesem!");
         }
 
         private void RemoveFilesAfterUpload()
@@ -119,7 +143,7 @@ namespace Thea2Translator.Logic.Cache
 
         private void UploadToHistory()
         {
-            string directory = $"{FileHelper.GetDirectoryName(DirectoryType.History)}/{LogicProvider.UserName}_{DateTime.Now.ToString("yyyyMMdd_HHmmss")}";            
+            string directory = $"{FileHelper.GetDirectoryName(DirectoryType.History)}/{LogicProvider.UserName}_{DateTime.Now.ToString("yyyyMMdd_HHmmss")}";
             FileHelper.CreateFTPDirectory(FileHelper.GetServerFtpDirectoryPatch(directory));
             UploadCacheFileOtherDirectory(FilesType.DataBase, directory);
             UploadCacheFileOtherDirectory(FilesType.Modules, directory);
@@ -154,14 +178,14 @@ namespace Thea2Translator.Logic.Cache
 
         private void AddWorkingInfo()
         {
-            string fileName = $"{LogicProvider.UserName}.work";
-            FileHelper.UploadEmptyFile(DirectoryType.Working, fileName);
+            //string fileName = $"{LogicProvider.UserName}.work";
+            //FileHelper.UploadEmptyFile(DirectoryType.Working, fileName);
         }
 
         private void DeleteWorkingInfo()
         {
-            string fileName = $"{LogicProvider.UserName}.work";
-            FileHelper.DeleteFtpFile(DirectoryType.Working, fileName);
+            //string fileName = $"{LogicProvider.UserName}.work";
+            //FileHelper.DeleteFtpFile(DirectoryType.Working, fileName);
         }
     }
 }

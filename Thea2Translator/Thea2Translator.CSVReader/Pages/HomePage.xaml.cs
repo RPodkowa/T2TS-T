@@ -42,9 +42,22 @@ namespace Thea2Translator.DesktopApp.Pages
             LogicProvider.Language.SetLanguage(Settings.Default.Language);
 
             this.SetLanguageDictinary();
+
+            btnAdminPage.Visibility = UpdateHelper.ApplicationInAdminMode()? Visibility.Visible: Visibility.Hidden;
+        }
+
+        private void BtnAdminPage_Click(object sender, RoutedEventArgs e)
+        {
+            if (btnAdminPage.Visibility == Visibility.Visible)
+                btnNavigeteClicked(true);
         }
 
         private void BtnStartTranslate_Click(object sender, RoutedEventArgs e)
+        {
+            btnNavigeteClicked(false);
+        }
+
+        private void btnNavigeteClicked(bool admin)
         {
             FileHelper.MainDir = txtFolderDir.Text;
 
@@ -58,16 +71,10 @@ namespace Thea2Translator.DesktopApp.Pages
             LogicProvider.UserId = Settings.Default.UserId;
             LogicProvider.UserName = Settings.Default.UserName;
 
-            NavigateToCorrectPage();
-        }
-
-        private void NavigateToCorrectPage()
-        {
-#if DEBUG
-            this.NavigationService.Navigate(new ModuleSelectionAdminPage());
-#else
-             this.NavigationService.Navigate(new ModuleSelectionUserPage());
-#endif
+            if (admin)
+                this.NavigationService.Navigate(new ModuleSelectionAdminPage());
+            else
+                this.NavigationService.Navigate(new ModuleSelectionUserPage());
         }
 
         private void BtnChooseFolder_Click(object sender, RoutedEventArgs e)

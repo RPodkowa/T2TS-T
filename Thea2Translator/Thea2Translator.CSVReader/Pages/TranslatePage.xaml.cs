@@ -417,6 +417,13 @@ namespace Thea2Translator.DesktopApp.Pages
             var checkBox = sender as CheckBox;
             var index = lbItemsToTranslate.Items.IndexOf(checkBox.DataContext);
 
+            var cacheElem = filtredElements[index].CacheElem;
+            if (!cacheElem.WithConflictText())
+            {
+                checkBox.IsChecked = false;
+                return;
+            }
+
             filtredElements[index].CacheElem.ResolveConflict(!checkBox.IsChecked.Value, txtTranslatedText.Text);
             dataCache.SaveElems();
             FilterItems();

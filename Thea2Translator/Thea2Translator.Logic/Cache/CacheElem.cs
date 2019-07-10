@@ -113,6 +113,11 @@ namespace Thea2Translator.Logic
             ConfirmationUser = GetNodeText(element, "Confirmation/User");
         }
 
+        public bool WithConflictText()
+        {
+            return !string.IsNullOrEmpty(ConflictTranslatedText);
+        }
+
         public void ResolveConflict(bool resolved, string text)
         {
             HasConflict = !resolved;

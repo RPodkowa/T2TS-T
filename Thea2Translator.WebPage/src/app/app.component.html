@@ -1,10 +1,48 @@
 <!--The content below is only a placeholder and can be replaced.-->
+<div class="bg-dark text-center row">
 
+    <div class="menuItem p-3 noselect col h2">
+        <a (click)="scroll(projectElem)">Projekt</a>
+    </div>
 
-<div class="row">
-  <div class="col"><router-outlet></router-outlet></div>
-  <div class="col-2"><app-menu></app-menu></div>
+    <div class="menuItem p-3 noselect col h2">
+        <a (click)="scroll(statusElem)">Status</a>
+    </div>
+
+    <div class="menuItem p-3 noselect col h2">
+        <a (click)="scroll(translationElem)">Tłumaczenie</a>
+    </div>
+
+    <div class="menuItem p-3 noselect col h2">
+        <a (click)="scroll(supportElem)">Wsparcie</a>
+    </div>
+
+    <div class="menuItem p-3 noselect col h2">
+        <a (click)="scroll(contactElem)">Kontakt</a>
+    </div>
+
 </div>
 
+<div>
+  <img src="assets/img/MainArt.jpg" class="img-fluid" alt="">
+</div>
 
+<div class="mt-6" #projectElem>
+  <app-project></app-project>
+</div>
 
+<div class="mt-7" #statusElem>
+  <app-status ></app-status>
+</div>
+
+<div class="mt-7" #translationElem>
+  <app-translation></app-translation>
+</div>
+
+<div class="mt-7" #supportElem>
+  <app-support></app-support>
+</div>
+
+<div class="mt-7" #contactElem>
+  <app-contact></app-contact>
+</div>

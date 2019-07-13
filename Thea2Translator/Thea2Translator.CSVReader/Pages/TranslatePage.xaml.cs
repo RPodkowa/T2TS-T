@@ -33,6 +33,7 @@ namespace Thea2Translator.DesktopApp.Pages
         private Vocabulary vocabulary;
         private IDataCache dataCache;
         private IStatistic statistic;
+        private bool isAdmin;
 
 
         IList<string> groups;
@@ -40,9 +41,11 @@ namespace Thea2Translator.DesktopApp.Pages
         IList<CacheElemViewModel> filtredElements;
         CacheElemViewModel selectedCacheElement;
 
-        public TranslatePage(FilesType fileType)
+        public TranslatePage(FilesType fileType, bool isAdmin)
         {
             InitializeComponent();
+
+            this.isAdmin = isAdmin;
 
             dataCache = null;
             switch (fileType)
@@ -238,11 +241,10 @@ namespace Thea2Translator.DesktopApp.Pages
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-#if DEBUG
-            this.NavigationService.Navigate(new ModuleSelectionAdminPage());
-#else
-             this.NavigationService.Navigate(new ModuleSelectionUserPage());
-#endif
+            if (isAdmin)
+                this.NavigationService.Navigate(new ModuleSelectionAdminPage());
+            else
+                this.NavigationService.Navigate(new ModuleSelectionUserPage());
         }
 
         private void ButtonVocabulary_Click(object sender, RoutedEventArgs e)

@@ -124,7 +124,7 @@ namespace Thea2Translator.DesktopApp.Pages
             if (isModulesModuleSelected) filesType = FilesType.Modules;
             if (isNamesModuleSelected) filesType = FilesType.Names;
 
-            NavigationService.Navigate(new TranslatePage(filesType));
+            NavigationService.Navigate(new TranslatePage(filesType, true));
         }
 
         private void ProcessFiles(FilesType filesType, AlgorithmStep step)

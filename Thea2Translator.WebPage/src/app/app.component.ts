@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Thea 2 PL';
+
+  scroll(elemName: HTMLElement) {
+    elemName.scrollIntoView();
+  }
 }

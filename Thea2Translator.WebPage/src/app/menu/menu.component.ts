@@ -1,22 +1,43 @@
-import { Component, OnInit } from '@angular/core';
+import { Component} from '@angular/core';
 
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.less']
 })
-export class MenuComponent implements OnInit {
+export class MenuComponent {
 
-  items = [
-    {name:"Strona domowa", path: "/home"},
-    {name:"Status tłumaczenia", path: "/translate-progress"},
-    {name:"O nas", path: "/about"},
-    {name:"Wsparcie", path: "/support"}
-  ];
+  // @Input("projectElem") projectElem:HTMLElement;
+  // @Input("statusElem") statusElem:HTMLElement;
+  // @Input("translationElem") translationElem:HTMLElement;
+  // @Input("supportElem") supportElem:HTMLElement;
+  // @Input("contactElem") contactElem:HTMLElement;
 
-  constructor() { }
+  // items = [
+  //   {name:"Projekt"},
+  //   {name:"Status"},
+  //   {name:"Tłumaczenie"},
+  //   {name:"Wsparcie"},
+  //   {name:"Kontakt"}
+  // ];
 
-  ngOnInit() {
-  }
+  // constructor() { }
+
+  // ngOnInit() {
+  // }
+
+  // scroll(elemName) {
+
+  //   console.log(this.projectElem);
+
+  //   switch(elemName){
+  //     case 'Projekt':
+  //       this.projectElem.scrollIntoView();
+  //     break;
+  //     case 'Status':
+  //         this.statusElem.scrollIntoView();
+  //     break;
+  //   }
+// }
 
 }

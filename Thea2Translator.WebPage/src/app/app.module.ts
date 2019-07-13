@@ -4,19 +4,21 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { MenuComponent } from './menu/menu.component';
-import { HomeComponent } from './home/home.component';
-import { TranslateProgressComponent } from './translate-progress/translate-progress.component';
-import { AboutComponent } from './about/about.component';
+import { ProjectComponent } from './project/project.component';
+import { StatusComponent } from './status/status.component';
+import { TranslationComponent } from './translation/translation.component';
 import { SupportComponent } from './support/support.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
-    HomeComponent,
-    TranslateProgressComponent,
-    AboutComponent,
-    SupportComponent
+    ProjectComponent,
+    StatusComponent,
+    TranslationComponent,
+    SupportComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

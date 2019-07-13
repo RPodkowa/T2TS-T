@@ -33,17 +33,17 @@ namespace Thea2Translator.DesktopApp.Pages.ModuleSelectionPages
 
             btnChooseDataBase.Click += (o, e) =>
             {
-                NavigationService.Navigate(new TranslatePage(Logic.FilesType.DataBase));
+                NavigationService.Navigate(new TranslatePage(Logic.FilesType.DataBase, false));
             };
 
             btnChooseModulus.Click += (o, e) =>
             {
-                NavigationService.Navigate(new TranslatePage(Logic.FilesType.Modules));
+                NavigationService.Navigate(new TranslatePage(Logic.FilesType.Modules, false));
             };
 
             btnChooseNames.Click += (o, e) =>
             {
-                NavigationService.Navigate(new TranslatePage(Logic.FilesType.Names));
+                NavigationService.Navigate(new TranslatePage(Logic.FilesType.Names, false));
             };
 
             this.SetLanguageDictinary();

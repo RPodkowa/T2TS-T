@@ -15,7 +15,9 @@ namespace Thea2Translator.Logic
         private const string ftpUser = "translator@thea2pl.webd.pro";
         private const string ftpPassword = "vh+4{zBE=}69";
 
+        public static bool TestMode = false;
         public static string MainDir = "";
+        private static string BackupDirectoryName = "";
 
         public static List<string> ReadFileLines(string file)
         {
@@ -69,6 +71,17 @@ namespace Thea2Translator.Logic
             var newFile = GetCopiedFile(file, GetDirectoryName(destinationDirectoryType));
         }
 
+        public static void PrepareBackupDirectory(bool forDownload)
+        {
+            BackupDirectoryName = DateTime.Now.ToString("yyyyMMdd_HHmmss");
+            if (forDownload) BackupDirectoryName += "_Download";
+
+            string backupDirectory = GetLocalFilePatch(DirectoryType.Backup.ToString());
+            if (!Directory.Exists(backupDirectory)) Directory.CreateDirectory(backupDirectory);
+            backupDirectory = GetLocalDirectoryPatch(DirectoryType.Backup);
+            if (!Directory.Exists(backupDirectory)) Directory.CreateDirectory(backupDirectory);
+        }
+
         public static void MoveFiles(DirectoryType sourceDirectoryType, DirectoryType destinationDirectoryType)
         {
             var files = GetLocalFilesList(sourceDirectoryType, false);
@@ -81,6 +94,12 @@ namespace Thea2Translator.Logic
             {
                 CopyFile(file, destinationDirectoryType,true);
             }
+        }
+
+        public static void CopyFiles(DirectoryType sourceDirectoryType, DirectoryType destinationDirectoryType)
+        {
+            var files = GetLocalFilesList(sourceDirectoryType, false);
+            CopyFiles(files, destinationDirectoryType);
         }
 
         public static void CopyFiles(List<string> files, DirectoryType destinationDirectoryType)
@@ -266,7 +285,9 @@ namespace Thea2Translator.Logic
 
         private static string GetServerFtpFilePatch(string fileName)
         {
-            return $"{ftpServerAdres}/{fileName}";
+            var mainAdres = ftpServerAdres;
+            if (TestMode) mainAdres += "/Test";
+            return $"{mainAdres}/{fileName}";
         }
         #endregion
         #region Http
@@ -277,7 +298,9 @@ namespace Thea2Translator.Logic
 
         public static string GetServerHttpFilePatch(string fileName)
         {
-            return $"{httpServerAdres}/{fileName}";
+            var mainAdres = httpServerAdres;
+            if (TestMode) mainAdres += "/Test";
+            return $"{mainAdres}/{fileName}";
         }
         #endregion
         #region Local
@@ -307,6 +330,9 @@ namespace Thea2Translator.Logic
         {
             if (IsDirectoryInCahce(directoryType))
                 return $"{DirectoryType.Cache.ToString()}\\{directoryType.ToString()}";
+
+            if (directoryType == DirectoryType.Backup)
+                return $"{DirectoryType.Backup.ToString()}\\{BackupDirectoryName}";
 
             return directoryType.ToString();
         }

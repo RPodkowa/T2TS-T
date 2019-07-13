@@ -18,7 +18,10 @@ namespace Thea2Translator.Logic
         public void Reload(IDataCache dataCache, DirectoryType directoryType = DirectoryType.Cache)
         {
             ReadFromFile(directoryType);
-            UpdateByCache(dataCache);
+
+            if (VocabularyElems == null)
+                VocabularyElems = new List<VocabularyElem>();
+
             VocabularyElems = ((List<VocabularyElem>)VocabularyElems).OrderByDescending(x => x.GetUsageCount(Type)).ToList();
         }
 
@@ -48,31 +51,35 @@ namespace Thea2Translator.Logic
             FileHelper.SaveElemsToFile(VocabularyElems, fullPath);
         }
 
-        private void UpdateByCache(IDataCache dataCache)
+        public void UpdateByCache(IDataCache dataCache)
         {
             if (VocabularyElems == null)
                 VocabularyElems = new List<VocabularyElem>();
 
-            //foreach (var elem in VocabularyElems)
-            //{
-            //    elem.ResetUsages(Type);
-            //}
+            dataCache.ReloadElems(false, false);
 
-            //foreach (var cacheElem in dataCache.CacheElems)
-            //{
-            //    var txt = cacheElem.OriginalText;
+            foreach (var elem in VocabularyElems)
+            {
+                elem.ResetUsages(dataCache.GetFileType());
+            }
 
-            //    var elems = txt.Split(' ');
-            //    foreach (var elem in elems)
-            //    {
-            //        var word = TextHelper.NormalizeForVocabulary(elem);
-            //        if (string.IsNullOrEmpty(word)) continue;
-            //        if (word.Length == 1) continue;
+            foreach (var cacheElem in dataCache.CacheElems)
+            {
+                var txt = cacheElem.OriginalText;
 
-            //        var VocabularyElem = GetElem(word, true);
-            //        VocabularyElem.AddUsage(Type);
-            //    }
-            //}
+                var elems = txt.Split(' ');
+                foreach (var elem in elems)
+                {
+                    var word = TextHelper.NormalizeForVocabulary(elem);
+                    if (string.IsNullOrEmpty(word)) continue;
+                    if (word.Length == 1) continue;
+
+                    var VocabularyElem = GetElem(word, true);
+                    VocabularyElem.AddUsage(dataCache.GetFileType());
+                }
+            }
+
+            SaveElems();
         }
 
         public IList<VocabularyElem> GetElemsForText(string text)
@@ -148,6 +155,17 @@ namespace Thea2Translator.Logic
 
             var cacheNew = new Vocabulary(FilesType.Vocabulary);
 
+            //-----------------------------------
+            //  	O   |   OO	|	CO	|	CN	|
+            //-----------------------------------
+            //0. 	A	|	-	|	-	|	A	|
+            //1.	A	|	A	|	A	|	A	|
+            //2.	A	|	A	|	B	|	B	|
+            //3.	A	|	B	|	B	|	A	|
+            //4.	A	|	B	|	A	|	A	|
+            //5.    A   |   B   |   C   |   ?   |
+            //-----------------------------------
+
             foreach (var originalElem in original.VocabularyElems)
             {
                 var word = originalElem.OriginalWord;
@@ -156,33 +174,64 @@ namespace Thea2Translator.Logic
 
                 if ((originalOldElem == null && cacheOldElem != null) || (cacheOldElem == null && originalOldElem != null))
                     throw new Exception($"Cos nie tak ze slowem='{word}'");
-
+                
+                //0. 	A	|	-	|	-	|	A	|
                 if (originalOldElem == null && cacheOldElem == null)
                 {
                     cacheNew.AddElem(originalElem);
                     continue;
                 }
 
+                //1.	A	|	A	|	A	|	A	|
+                //2.	A	|	A	|	B	|	B	|
+                if (VocabularyElem.IsEquals(originalElem, originalOldElem))
+                {
+                    cacheNew.AddElem(cacheOldElem);
+                    originalOld.RemoveElem(originalOldElem);
+                    cacheOld.RemoveElem(cacheOldElem);
+                    continue;
+                }
+
+                //3.	A	|	B	|	B	|	A	|
+                // !VocabularyElem.IsEquals(originalElem, originalOldElem)
                 if (VocabularyElem.IsEquals(originalOldElem, cacheOldElem))
                 {
-                    cacheNew.AddElem(cacheOldElem);
+                    cacheNew.AddElem(originalElem);
                     originalOld.RemoveElem(originalOldElem);
                     cacheOld.RemoveElem(cacheOldElem);
                     continue;
                 }
 
-                if (VocabularyElem.IsEquals(originalOldElem, originalElem))
+                //4.	A	|	B	|	A	|	A	|
+                // !VocabularyElem.IsEquals(originalElem, originalOldElem)
+                // !VocabularyElem.IsEquals(originalOldElem, cacheOldElem)
+                if (VocabularyElem.IsEquals(originalElem, cacheOldElem))
                 {
-                    cacheNew.AddElem(cacheOldElem);
+                    cacheNew.AddElem(originalElem);
                     originalOld.RemoveElem(originalOldElem);
                     cacheOld.RemoveElem(cacheOldElem);
                     continue;
                 }
 
+                //5.    A   |   B   |   C   |   ?   |
+                // !VocabularyElem.IsEquals(originalElem, originalOldElem)
+                // !VocabularyElem.IsEquals(originalOldElem, cacheOldElem)
+                // !VocabularyElem.IsEquals(originalElem, cacheOldElem))
                 originalElem.SetConlfictWith(cacheOldElem);
                 cacheNew.AddElem(originalElem);
                 originalOld.RemoveElem(originalOldElem);
                 cacheOld.RemoveElem(cacheOldElem);
+            }
+
+            foreach (var oldElem in cacheOld.VocabularyElems)
+            {
+                var word = oldElem.OriginalWord;
+                var originalOldElem = originalOld.GetElem(word, false);
+
+                if (originalOldElem != null)
+                    throw new Exception($"Cos nie tak ze slowem='{word}' (petla 2)");
+
+                cacheNew.AddElem(oldElem);
             }
 
             cacheNew.SaveElems();

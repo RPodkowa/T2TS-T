@@ -241,7 +241,7 @@ namespace Thea2Translator.DesktopApp.Pages
 
         private void btnVocabulary_Click(object sender, RoutedEventArgs e)
         {
-            FullDictinaryWindow dictinary = new FullDictinaryWindow();
+            FullDictinaryWindow dictinary = new FullDictinaryWindow(true);
             dictinary.Show();
         }
 

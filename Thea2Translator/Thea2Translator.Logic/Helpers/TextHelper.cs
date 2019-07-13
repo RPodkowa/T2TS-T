@@ -88,6 +88,16 @@ namespace Thea2Translator.Logic
             return Normalize(text, out specials);
         }
 
+        public static string PrepereToCompare(string text)
+        {
+            var ret = text;
+            ret = ret.Replace("\\n", "");
+            ret = ret.Replace("\n", "");
+            ret = ret.Replace("\\r", "");
+            ret = ret.Replace("\r", "");
+            return ret;
+        }
+
         public static string Normalize(string text, out List<string> specials)
         {
             specials = null;

@@ -142,13 +142,21 @@ namespace Thea2Translator.Logic
 
         public bool EqualsTexts(string inputText)
         {
-            return (GetTextToCompare() == inputText);
+            bool ret = (TextHelper.PrepereToCompare(GetTextToCompare()) == TextHelper.PrepereToCompare(inputText));
+            if (ret) SetNewTextToCompare(inputText);
+            return ret;
         }
 
         private string GetTextToCompare()
         {
             if (IsDataBaseElem) return Key;
             return InputText;
+        }
+
+        private void SetNewTextToCompare(string newText)
+        {
+            if (IsDataBaseElem) return;
+            InputText = newText;
         }
 
         public XmlNode ToXmlNode(XmlDocument doc)
@@ -208,7 +216,7 @@ namespace Thea2Translator.Logic
             if (confirm)
             {
                 IsCorrectedByHuman = true;
-                ConfirmationTime = DateTime.Now.ToString("MM/dd/yyyy HH:mm:ss");
+                ConfirmationTime = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
                 ConfirmationUser = LogicProvider.UserName;
                 ConfirmationGuid = LogicProvider.UserId;
             }

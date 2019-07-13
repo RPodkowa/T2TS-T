@@ -27,11 +27,17 @@ namespace Thea2Translator.DesktopApp.Windows
         IEnumerable<VocabularyElem> vocabularyElems;
 
 
-        public FullDictinaryWindow()
+        public FullDictinaryWindow(bool adminMode)
         {
             InitializeComponent();
             vocabulary = new Vocabulary(FilesType.Vocabulary);
             vocabulary.ReadFromFile(DirectoryType.Cache);
+
+            if (adminMode)
+            {
+                vocabulary.UpdateByCache(LogicProvider.DataBase);
+                vocabulary.UpdateByCache(LogicProvider.Modules);
+            }
 
             vocabularyElems = vocabulary.VocabularyElems;
             lbDictinaryItems.ItemsSource = vocabularyElems;
@@ -48,7 +54,7 @@ namespace Thea2Translator.DesktopApp.Windows
         {
             if (selectedElem != null)
             {
-                usageCountLabel.Content = selectedElem.GetUsageCount(FilesType.Vocabulary).ToString();
+                usageCountLabel.Content = $"Database: {selectedElem.UsageCountDataBase} Modules: {selectedElem.UsageCountModules}";
                 checkBoxIsActive.IsChecked = selectedElem.IsActive;
                 checkBoxIsConflict.IsChecked = selectedElem.HasConflict;
                 originalWordLabel.Content = selectedElem.OriginalWord;

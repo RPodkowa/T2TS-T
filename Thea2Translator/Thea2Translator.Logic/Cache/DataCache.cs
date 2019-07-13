@@ -602,6 +602,17 @@ namespace Thea2Translator.Logic
 
             var cacheNew = new DataCache(type, DirectoryType.Cache);
 
+            //-----------------------------------
+            //  	O   |   OO	|	CO	|	CN	|
+            //-----------------------------------
+            //0. 	A	|	-	|	-	|	A	|
+            //1.	A	|	A	|	A	|	A	|
+            //2.	A	|	A	|	B	|	B	|
+            //3.	A	|	B	|	B	|	A	|
+            //4.	A	|	B	|	A	|	A	|
+            //5.    A   |   B   |   C   |   ?   |
+            //-----------------------------------
+
             foreach (var originalElem in original.CacheElems)
             {
                 var id = originalElem.Id;
@@ -611,32 +622,52 @@ namespace Thea2Translator.Logic
                 if ((originalOldElem == null && cacheOldElem != null) || (cacheOldElem == null && originalOldElem != null))
                     throw new Exception($"Cos nie tak z ID={id}");
 
+                //0. 	A	|	-	|	-	|	A	|
                 if (originalOldElem == null && cacheOldElem == null)
                 {
                     cacheNew.AddElem(originalElem);
                     continue;
                 }
 
+                //1.	A	|	A	|	A	|	A	|
+                //2.	A	|	A	|	B	|	B	|
+                if (CacheElem.IsEquals(originalElem, originalOldElem))
+                {
+                    cacheNew.AddElem(cacheOldElem);
+                    originalOld.RemoveElem(originalOldElem);
+                    cacheOld.RemoveElem(cacheOldElem);
+                    continue;
+                }
+
+                //3.	A	|	B	|	B	|	A	|
+                // !CacheElem.IsEquals(originalElem, originalOldElem)
                 if (CacheElem.IsEquals(originalOldElem, cacheOldElem))
                 {
-                    cacheNew.AddElem(cacheOldElem);
+                    cacheNew.AddElem(originalElem);
                     originalOld.RemoveElem(originalOldElem);
                     cacheOld.RemoveElem(cacheOldElem);
                     continue;
                 }
 
-                if (CacheElem.IsEquals(originalOldElem, originalElem))
+                //4.	A	|	B	|	A	|	A	|
+                // !CacheElem.IsEquals(originalElem, originalOldElem)
+                // !CacheElem.IsEquals(originalOldElem, cacheOldElem)
+                if (CacheElem.IsEquals(originalElem, cacheOldElem))
                 {
-                    cacheNew.AddElem(cacheOldElem);
+                    cacheNew.AddElem(originalElem);
                     originalOld.RemoveElem(originalOldElem);
                     cacheOld.RemoveElem(cacheOldElem);
                     continue;
                 }
 
+                //5.    A   |   B   |   C   |   ?   |
+                // !CacheElem.IsEquals(originalElem, originalOldElem)
+                // !CacheElem.IsEquals(originalOldElem, cacheOldElem)
+                // !CacheElem.IsEquals(originalElem, cacheOldElem))
                 originalElem.SetConlfictWith(cacheOldElem);
                 cacheNew.AddElem(originalElem);
                 originalOld.RemoveElem(originalOldElem);
-                cacheOld.RemoveElem(cacheOldElem);
+                cacheOld.RemoveElem(cacheOldElem);                
             }
 
             foreach (var oldElem in cacheOld.CacheElems)
@@ -645,12 +676,17 @@ namespace Thea2Translator.Logic
                 var originalOldElem = originalOld.GetElemById(id);
 
                 if (originalOldElem != null)
-                    throw new Exception($"Cos nie tak z ID={id}");
+                    throw new Exception($"Cos nie tak z ID={id} (2 petla)");
                                 
                 cacheNew.AddElem(oldElem);
             }
 
             cacheNew.SaveToFile();
+        }
+
+        public FilesType GetFileType()
+        {
+            return Type;
         }
     }
 }

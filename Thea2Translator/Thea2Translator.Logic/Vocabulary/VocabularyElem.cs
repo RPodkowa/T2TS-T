@@ -15,7 +15,6 @@ namespace Thea2Translator.Logic
             }
         }
 
-
         public int Flag { get; private set; }
         public bool IsActive
         {

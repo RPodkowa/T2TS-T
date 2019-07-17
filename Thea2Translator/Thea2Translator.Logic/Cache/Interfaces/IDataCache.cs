@@ -21,5 +21,7 @@ namespace Thea2Translator.Logic
         string GetDirectoryName(AlgorithmStep step);
 
         string GetSummary();
+
+        FilesType GetFileType();
     }
 }

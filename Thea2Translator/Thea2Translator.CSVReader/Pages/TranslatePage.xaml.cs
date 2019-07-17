@@ -257,7 +257,7 @@ namespace Thea2Translator.DesktopApp.Pages
             //lbDictinaryItems.ItemsSource = vocabularyElems;
             //lbDictinaryItems.SelectedIndex = Math.Min(selectedIndex, lbDictinaryItems.Items.Count - 1);
 
-            FullDictinaryWindow fullDictinary = new FullDictinaryWindow();
+            FullDictinaryWindow fullDictinary = new FullDictinaryWindow(false);
             fullDictinary.Show();
         }
         

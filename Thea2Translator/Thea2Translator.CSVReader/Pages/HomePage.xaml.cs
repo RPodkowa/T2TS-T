@@ -1,18 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Forms;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using Thea2Translator.DesktopApp.Helpers;
 using Thea2Translator.DesktopApp.Pages.ModuleSelectionPages;
 using Thea2Translator.DesktopApp.Properties;
@@ -43,7 +33,8 @@ namespace Thea2Translator.DesktopApp.Pages
 
             this.SetLanguageDictinary();
 
-            btnAdminPage.Visibility = UpdateHelper.ApplicationInAdminMode()? Visibility.Visible: Visibility.Hidden;
+            btnAdminPage.Visibility = UpdateHelper.ApplicationInAdminMode() ? Visibility.Visible : Visibility.Hidden;
+            checkBox_Test.Visibility = UpdateHelper.ApplicationInAdminMode() ? Visibility.Visible : Visibility.Hidden;
         }
 
         private void BtnAdminPage_Click(object sender, RoutedEventArgs e)
@@ -59,6 +50,10 @@ namespace Thea2Translator.DesktopApp.Pages
 
         private void btnNavigeteClicked(bool admin)
         {
+            FileHelper.TestMode = false;
+            var testMode = checkBox_Test.IsChecked;
+            if (testMode.HasValue && testMode.Value) testMode = UpdateHelper.ApplicationInAdminMode();
+            if (testMode.HasValue && testMode.Value) FileHelper.TestMode = true;
             FileHelper.MainDir = txtFolderDir.Text;
 
             if (string.IsNullOrEmpty(Settings.Default.UserId))
@@ -90,7 +85,7 @@ namespace Thea2Translator.DesktopApp.Pages
                 btnStartTranslate.IsEnabled = true;
                 Settings.Default.WorkingDirectory = txtFolderDir.Text;
             }
-        }      
+        }
 
         private void BtnChangeLangToPolish_Click(object sender, MouseButtonEventArgs e)
         {

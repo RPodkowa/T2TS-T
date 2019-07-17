@@ -30,7 +30,7 @@ namespace Thea2Translator.Logic.Cache
         {
             if (HasConflictsInCacheFiles())            
                 return new ProcessResult(false, "Przed ściągnięciem plików z serwera należy rozwiązać konflikty!");            
-
+                        
             ////////////////////////////////////////////////////////////////////////////////////////////////////////
             if (forUpload) StartNextProcessStep();
             else StartProcess("Download cache", 5);
@@ -40,7 +40,11 @@ namespace Thea2Translator.Logic.Cache
             ////////////////////////////////////////////////////////////////////////////////////////////////////////
             StartNextProcessStep();
             if (FileHelper.LocalDirectoryExists(DirectoryType.Cache))
+            {
+                FileHelper.PrepareBackupDirectory(true);
+                FileHelper.CopyFiles(DirectoryType.Cache, DirectoryType.Backup);
                 FileHelper.MoveFiles(DirectoryType.Cache, DirectoryType.CacheOld);
+            }
 
             ////////////////////////////////////////////////////////////////////////////////////////////////////////
             StartNextProcessStep();
@@ -126,7 +130,7 @@ namespace Thea2Translator.Logic.Cache
 
         private void RemoveFilesAfterUpload()
         {
-            FileHelper.DeletePath(DirectoryType.Backup);
+            FileHelper.PrepareBackupDirectory(false);
             FileHelper.MoveFiles(DirectoryType.Cache, DirectoryType.Backup);
             FileHelper.DeletePath(DirectoryType.Original);
             FileHelper.DeletePath(DirectoryType.Cache);
@@ -178,14 +182,14 @@ namespace Thea2Translator.Logic.Cache
 
         private void AddWorkingInfo()
         {
-            //string fileName = $"{LogicProvider.UserName}.work";
-            //FileHelper.UploadEmptyFile(DirectoryType.Working, fileName);
+            string fileName = $"{LogicProvider.UserName}.work";
+            FileHelper.UploadEmptyFile(DirectoryType.Working, fileName);
         }
 
         private void DeleteWorkingInfo()
         {
-            //string fileName = $"{LogicProvider.UserName}.work";
-            //FileHelper.DeleteFtpFile(DirectoryType.Working, fileName);
+            string fileName = $"{LogicProvider.UserName}.work";
+            FileHelper.DeleteFtpFile(DirectoryType.Working, fileName);
         }
     }
 }

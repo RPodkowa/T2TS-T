@@ -1,4 +1,7 @@
+import { StatusRecord } from './../_model/statusRecord';
+import { StatusService } from './../_services/status.service';
 import { Component, OnInit } from '@angular/core';
+import { Status } from '../_model/status';
 
 @Component({
   selector: 'app-status',
@@ -7,9 +10,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StatusComponent implements OnInit {
 
-  constructor() { }
+  status:Status;
+
+  constructor(private statusService:StatusService) { }
 
   ngOnInit() {
+    this.statusService.getStatus().subscribe(data =>{
+      console.log(data);
+      var record:Status = JSON.parse(data.toString());
+      this.status = record;
+    });
   }
 
 }

@@ -9,6 +9,9 @@ import { StatusComponent } from './status/status.component';
 import { TranslationComponent } from './translation/translation.component';
 import { SupportComponent } from './support/support.component';
 import { ContactComponent } from './contact/contact.component';
+import { StatusService } from './_services/status.service';
+import { HttpClientModule } from '@angular/common/http';
+import { ProgressBarComponent } from './progress-bar/progress-bar.component'; 
 
 @NgModule({
   declarations: [
@@ -18,14 +21,16 @@ import { ContactComponent } from './contact/contact.component';
     StatusComponent,
     TranslationComponent,
     SupportComponent,
-    ContactComponent
+    ContactComponent,
+    ProgressBarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     NgbModule 
   ],
-  providers: [],
+  providers: [StatusService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

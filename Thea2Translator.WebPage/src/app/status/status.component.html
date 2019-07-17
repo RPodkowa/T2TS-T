@@ -1,34 +1,44 @@
 <div class="primaryFontColor text-justify w-75 ml-12 h6">
-        <div class="mb-3 h1 font-weight-bold bottomBorder">Status tłumaczenia (stan na 12.07.2019)</div>
+        <div class="mb-3 h1 font-weight-bold bottomBorder">Status tłumaczenia (stan na {{status?.modifiedDate}})</div>
     
     <div>
            <div class="row h4">
               
-               <div class="col-1"><img src="assets/img/Book1.png" width="100px" alt=""></div>
+               <div class="col-auto"><img src="assets/img/Book1.png" class="bookImage" alt=""></div>
                <div class="col">
-                   <div class="font-weight-bold">Database (opisy, interface itp):</div>
-                   <div>Ogólnie: 5336</div>
-                   <div>Przetłumaczonych przez Google: 4724 (88%)</div>
-                   <div>Zatwierdzonych: 1033 (19%)</div>
+                   <div class="font-weight-bold mb-2">Database (opisy, interface itp):</div>
+                   <div>Ogólnie: {{status?.modules[0]?.allRecords}}</div>
+                   <div>Przetłumaczonych przez Google: {{status?.modules[0]?.translatedByGoogle}} ({{status?.modules[0]?.translatedByGooglePercent}}%)</div>
+                   <div>Zatwierdzonych: {{status?.modules[0]?.correctedRecords}} ({{status?.modules[0]?.correctedPercent}}%)</div>
                </div>
                <div class="col-1"></div>
-               <div class="col-1"><img src="assets/img/Book2.png" width="100px" alt=""></div>
+               <div class="col-auto"><img src="assets/img/Book2.png" class="bookImage" alt=""></div>
                <div class="col">
-                <div class="font-weight-bold">Modules (questy):</div>
-                <div>Ogólnie: 15 543</div>
-                <div>Przetłumaczonych przez Google: 15 519 (99%)</div>
-                <div>Zatwierdzonych: 0 (0%)</div>
-               </div>
+                <div class="font-weight-bold mb-2">Modules (questy):</div>
+                <div>Ogólnie: {{status?.modules[1]?.allRecords}}</div>
+                <div>Przetłumaczonych przez Google: {{status?.modules[1]?.translatedByGoogle}} ({{status?.modules[1]?.translatedByGooglePercent}}%)</div>
+                <div>Zatwierdzonych: {{status?.modules[1]?.correctedRecords}} ({{status?.modules[1]?.correctedPercent}}%)</div>
+            </div>
                
            </div>
 
+           <div class="row mb-2">
+                <div class="col">
+                    <ngb-progressbar type="info" [value]="status?.modules[0]?.translatedByGooglePercent"></ngb-progressbar>
+                 </div>
+                 <div class="col-1"></div>
+                <div class="col">
+                     <ngb-progressbar type="info" [value]="status?.modules[1]?.translatedByGooglePercent"></ngb-progressbar>
+                </div>
+            </div>
+
            <div class="row">
                <div class="col">
-                   <ngb-progressbar type="success" [value]="19"></ngb-progressbar>
+                   <ngb-progressbar class="bg-database" type="success" [value]="status?.modules[0]?.correctedPercent"></ngb-progressbar>
                 </div>
                 <div class="col-1"></div>
                <div class="col">
-                    <ngb-progressbar type="danger" [value]="0"></ngb-progressbar>
+                    <ngb-progressbar type="danger" [value]="status?.modules[1]?.correctedPercent"></ngb-progressbar>
                </div>
            </div>
     </div>

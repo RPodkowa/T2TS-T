@@ -10,5 +10,6 @@ export class AppComponent {
 
   scroll(elemName: HTMLElement) {
     elemName.scrollIntoView();
+    window.scrollBy(0, -100); 
   }
 }

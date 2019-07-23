@@ -10,10 +10,11 @@ namespace Thea2Translator.Logic
     {
         internal const int LinesInFile = 6000;
 
-        public IList<CacheElem> CacheElems { get; private set; }
+        public IList<CacheElem> CacheElems { get; private set; }                
         public IList<string> Groups { get; private set; }
         public Vocabulary Vocabulary { get; private set; }
-
+        public Navigation Navigation { get; private set; }
+        
         private readonly FilesType Type;
         private readonly string FullPath;
         private int CurrentId;
@@ -168,13 +169,18 @@ namespace Thea2Translator.Logic
         private void ReadSteamFiles()
         {
             string[] files = FileHelper.GetFiles(GetDirectoryName(AlgorithmStep.ImportFromSteam));
-            if (files == null) return;            
+            if (files == null) return;
+
+            Navigation = new Navigation();
+
             foreach (string file in files)
             {
                 if (IsDataBaseCache) ProcessFileDataBase(file, false);
                 if (IsModulesCache) ProcessFileModules(file, false);
                 if (IsNamesCache) ProcessFileNames(file, false);
             }
+
+            Navigation.SaveElems();
         }
         #endregion
         #region PrepareToMachineTranslate
@@ -337,7 +343,7 @@ namespace Thea2Translator.Logic
                         continue;
                     }
 
-                    TryAddToCacheWithGroup(key, val, TextHelper.GetGroupsFromKey(key, false));
+                    TryAddToCacheWithGroupAndGetId(key, val, TextHelper.GetGroupsFromKey(key, false));
                 }
                 else
                 {
@@ -363,6 +369,7 @@ namespace Thea2Translator.Logic
 
             XmlDocument doc = new XmlDocument();
             doc.Load(file);
+            if (!saveToFile) Navigation.AddDocument(doc, fileName);
             var adventures = doc.DocumentElement.GetElementsByTagName("Adventure");
             foreach (XmlNode adventure in adventures)
             {
@@ -370,6 +377,8 @@ namespace Thea2Translator.Logic
                     continue;
 
                 var adventureName = adventure.Attributes["name"]?.Value;
+                var adventureId = adventure.Attributes["uniqueID"]?.Value;
+                var adventureInfo = new NavigationElemAdventureInfo(fileName, adventureName, adventureId);
 
                 var nodes = adventure.SelectNodes("nodes");
                 foreach (XmlNode node in nodes)
@@ -382,10 +391,13 @@ namespace Thea2Translator.Logic
                         continue;
 
                     var adventureNodeId = node.Attributes["ID"]?.Value;
-                    var group = $"{fileName}_{adventureName}_{adventureNodeId}";
+                    var group = adventureInfo.GetGroupName(adventureNodeId);
                     var inputText = node.InnerText;
                     if (!saveToFile)
-                        TryAddToCacheWithGroup(inputText, TextHelper.GetGroupsFromKey(group, true));
+                    {
+                        var nodeId = TryAddToCacheWithGroupAndGetId(inputText, TextHelper.GetGroupsFromKey(group, true));
+                        Navigation.SetNodeElementId(nodeId, adventureInfo, adventureNodeId);
+                    }
                     else
                     {
                         var key = inputText;
@@ -399,16 +411,22 @@ namespace Thea2Translator.Logic
                             }
                         }
                     }
-
+                    
                     var outputs = node.SelectNodes("outputs");
                     foreach (XmlNode output in outputs)
                     {
                         if (output.Attributes == null)
                             continue;
 
-                        var inputTextName = output.Attributes["name"].Value.ToString();
+                        var inputTextName = output.Attributes["name"]?.Value.ToString();
+                        var ownerID = output.Attributes["ownerID"]?.Value.ToString();
+                        var targetID = output.Attributes["targetID"]?.Value.ToString();
+
                         if (!saveToFile)
-                            TryAddToCacheWithGroup(inputTextName, TextHelper.GetGroupsFromKey(group, true));
+                        {
+                            var outputId = TryAddToCacheWithGroupAndGetId(inputTextName, TextHelper.GetGroupsFromKey(group, true));
+                            Navigation.SetOutputElementId(outputId, adventureInfo, adventureNodeId, targetID);
+                        }
                         else
                         {
                             if (!string.IsNullOrEmpty(inputTextName))
@@ -419,6 +437,7 @@ namespace Thea2Translator.Logic
                                     output.Attributes["name"].Value = TextHelper.ReplacePolishChars(elem.OutputText);
                             }
                         }
+
                     }
                 }
             }
@@ -467,7 +486,7 @@ namespace Thea2Translator.Logic
                         }
                         
                         var groups = new List<string>() { collectionName, collectionElemName };
-                        TryAddToCacheWithGroup(key, collectionElemValue, groups);
+                        TryAddToCacheWithGroupAndGetId(key, collectionElemValue, groups);
                     }
                     else
                     {
@@ -525,24 +544,26 @@ namespace Thea2Translator.Logic
             return file += sufix;
         }
 
-        private void TryAddToCacheWithGroup(string value, List<string> groups)
+        private int TryAddToCacheWithGroupAndGetId(string value, List<string> groups)
         {
-            TryAddToCacheWithGroup(value, value, groups);
+            return TryAddToCacheWithGroupAndGetId(value, value, groups);
         }
 
-        private void TryAddToCacheWithGroup(string key, string value, List<string> groups)
+        private int TryAddToCacheWithGroupAndGetId(string key, string value, List<string> groups)
         {
             if (string.IsNullOrEmpty(key))
-                return;
+                return 0;
 
             var elem = GetElem(key);
             if (elem != null)
             {
                 elem.AddGroups(groups);
-                return;
+                return elem.Id;
             }
 
-            CacheElems.Add(CreateElem(key, value, groups));
+            elem = CreateElem(key, value, groups);
+            CacheElems.Add(elem);
+            return elem.Id;
         }
 
         public string GetDirectoryName(AlgorithmStep step)

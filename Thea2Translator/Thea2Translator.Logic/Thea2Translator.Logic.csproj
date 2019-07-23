@@ -108,6 +108,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Navigation\Navigation.cs" />
+    <Compile Include="Navigation\NavigationElemRelation.cs" />
+    <Compile Include="Navigation\NavigationElemAdventureInfo.cs" />
+    <Compile Include="Navigation\RelationType.cs" />
+    <Compile Include="Navigation\NodeType.cs" />
     <Compile Include="Cache\DirectoryType.cs" />
     <Compile Include="Cache\AlgorithmStep.cs" />
     <Compile Include="Cache\CacheElem.cs" />
@@ -115,6 +120,7 @@
     <Compile Include="Cache\FilesType.cs" />
     <Compile Include="Cache\Interfaces\IDataCache.cs" />
     <Compile Include="Cache\Interfaces\IStatistic.cs" />
+    <Compile Include="Navigation\NavigationElem.cs" />
     <Compile Include="Cache\Statistic.cs" />
     <Compile Include="Cache\Synchronization.cs" />
     <Compile Include="Helpers\ProcessHelper.cs" />

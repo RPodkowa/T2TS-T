@@ -44,20 +44,23 @@ namespace Thea2Translator.DesktopApp
             NavigationCommands.BrowseForward.InputGestures.Clear();
 
             var args = Environment.GetCommandLineArgs();
-            if (args.Length != 2 || args[1] != "START")
+            if (!args.Contains("START"))
             {
-                MessageBox.Show($"Nie poprawne parametry! ({string.Join(",", args)})");
+                MessageBox.Show($"Niepoprawne parametry! ({string.Join(",", args)})");
                 System.Diagnostics.Process.GetCurrentProcess().Kill();
             }
 
-            try
+            if (!args.Contains("OFFLINE"))
             {
-                UpdateHelper.TryUpdate(ApplicationType.Updater);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Blad aktualizacji Updater'a! ({ex.ToString()})");
-                System.Diagnostics.Process.GetCurrentProcess().Kill();
+                try
+                {
+                    UpdateHelper.TryUpdate(ApplicationType.Updater);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Blad aktualizacji Updater'a! ({ex.ToString()})");
+                    System.Diagnostics.Process.GetCurrentProcess().Kill();
+                }
             }
 
 

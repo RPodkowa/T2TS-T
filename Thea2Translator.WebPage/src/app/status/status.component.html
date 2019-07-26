@@ -23,21 +23,21 @@
            </div>
 
            <div class="row mb-2">
-                <div class="col">
+                <div class="col statusBar">
                     <ngb-progressbar type="info" [value]="status?.modules[0]?.translatedByGooglePercent"></ngb-progressbar>
                  </div>
                  <div class="col-1"></div>
-                <div class="col">
+                <div class="col statusBar">
                      <ngb-progressbar type="info" [value]="status?.modules[1]?.translatedByGooglePercent"></ngb-progressbar>
                 </div>
             </div>
 
            <div class="row">
-               <div class="col">
+               <div class="col statusBar">
                    <ngb-progressbar class="bg-database" type="success" [value]="status?.modules[0]?.correctedPercent"></ngb-progressbar>
                 </div>
                 <div class="col-1"></div>
-               <div class="col">
+               <div class="col statusBar">
                     <ngb-progressbar type="danger" [value]="status?.modules[1]?.correctedPercent"></ngb-progressbar>
                </div>
            </div>

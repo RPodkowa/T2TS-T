@@ -16,7 +16,6 @@ export class StatusComponent implements OnInit {
 
   ngOnInit() {
     this.statusService.getStatus().subscribe(data =>{
-      console.log(data);
       var record:Status = JSON.parse(data.toString());
       this.status = record;
     });

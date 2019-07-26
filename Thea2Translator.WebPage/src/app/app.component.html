@@ -1,6 +1,10 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div class="bg-dark text-center row menu">
 
+  <div class="menuItem p-3 noselect col h2">
+    <a (click)="scroll(gameElem)">O grze</a>
+</div>
+
     <div class="menuItem p-3 noselect col h2">
         <a (click)="scroll(projectElem)">Projekt</a>
     </div>
@@ -23,8 +27,10 @@
 
 </div>
 
-<div >
-  <img src="assets/img/MainArt2.jpg" width="100%" alt="">
+<div ><img src="assets/img/MainArt2.jpg" width="100%" alt=""></div>
+
+<div class="mt-6" #gameElem>
+<app-game-info></app-game-info>
 </div>
 
 <div class="mt-6" #projectElem>

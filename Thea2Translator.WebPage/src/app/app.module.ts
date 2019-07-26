@@ -11,7 +11,8 @@ import { SupportComponent } from './support/support.component';
 import { ContactComponent } from './contact/contact.component';
 import { StatusService } from './_services/status.service';
 import { HttpClientModule } from '@angular/common/http';
-import { ProgressBarComponent } from './progress-bar/progress-bar.component'; 
+import { ProgressBarComponent } from './progress-bar/progress-bar.component';
+import { GameInfoComponent } from './game-info/game-info.component'; 
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ProgressBarComponent } from './progress-bar/progress-bar.component';
     TranslationComponent,
     SupportComponent,
     ContactComponent,
-    ProgressBarComponent
+    ProgressBarComponent,
+    GameInfoComponent
   ],
   imports: [
     BrowserModule,

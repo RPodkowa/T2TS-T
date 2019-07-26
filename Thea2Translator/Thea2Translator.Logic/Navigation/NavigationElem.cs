@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using System.Xml;
 
 namespace Thea2Translator.Logic
 {
@@ -60,11 +61,6 @@ namespace Thea2Translator.Logic
             return AdventureInfo.GetGroupName(OwnerId);
         }
 
-        public string GetAdventureNodeElemUniqueId()
-        {
-            return $"{GetMyGroupName()}:{CacheElemId}";
-        }
-
         public bool IsNodeStartingElem()
         {
             if (Type != NodeType.NodeStarting) return false;
@@ -89,25 +85,6 @@ namespace Thea2Translator.Logic
         public bool IsOkTargetId()
         {
             return (!string.IsNullOrEmpty(TargetId));
-        }
-
-        public string GetNextAdventures(IList<NavigationElem> navigationElems)
-        {
-            var relations = NavigationElemRelation.GetNextAdventureElemRelations(this, navigationElems);
-
-            var elems = new List<string>();
-            foreach (var relation in relations)
-            {
-                if (!relation.IsAcceptableRealtionForMap())
-                    continue;
-
-                elems.Add(relation.ToString());
-            }
-
-            if (elems.Count == 0)
-                return null;
-
-            return $"{GetMyGroupName()}:{CacheElemId} ({TargetId})->({string.Join(",", elems)})";
         }
 
         public override string ToString()

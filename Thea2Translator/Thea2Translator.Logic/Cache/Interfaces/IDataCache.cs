@@ -13,12 +13,15 @@ namespace Thea2Translator.Logic
         IList<CacheElem> CacheElems { get; }
         IList<string> Groups { get; }
         Vocabulary Vocabulary { get; }
+        Navigation Navigation { get; }
 
         void UpdateVocabulary(Vocabulary vocabulary);
-        void ReloadElems(bool withGroups = false, bool withVocabulary = false);
+        void ReloadElems(bool withGroups = false, bool withVocabulary = false, bool withNavigation = false);
         void SaveElems(bool withVocabulary = false);
         void MakeStep(AlgorithmStep step);
         string GetDirectoryName(AlgorithmStep step);
+
+        IList<string> GetStartingGroups();
 
         string GetSummary();
 

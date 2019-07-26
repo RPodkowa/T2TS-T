@@ -69,9 +69,10 @@
         <system:String x:Key="allLabelStatistic">All</system:String>
         <system:String x:Key="translatedLabelStatistic">Translated</system:String>
         <system:String x:Key="percentLabelStatistic">Percent</system:String>
-        
+
 
         <system:String x:Key="allComboItemTranslate">All</system:String>
+        <system:String x:Key="startGroupsComboItemTranslate">Starting the adventure</system:String>
         <system:String x:Key="withoutTranslationComboItemTranslate">Without translation</system:String>
         <system:String x:Key="withoutConfirmationComboItemTranslate">Without confirmation</system:String>
 

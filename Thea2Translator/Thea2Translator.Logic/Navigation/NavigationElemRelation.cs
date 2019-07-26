@@ -1,5 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Xml;
 
 namespace Thea2Translator.Logic
 {
@@ -7,6 +9,7 @@ namespace Thea2Translator.Logic
     {
         public IList<RelationType> RelationTypes { get; private set; }
         public NavigationElem NextElem { get; private set; }
+        public string NextElemGroup { get; private set; }
 
         private NavigationElemRelation(NavigationElem nextElem, IList<RelationType> relationTypes)
         {
@@ -15,16 +18,25 @@ namespace Thea2Translator.Logic
             
             SetNextElem(nextElem);
         }
-
-        public void ExpandRelation(IList<NavigationElem> navigationElems)
+        public NavigationElemRelation(XmlNode xmlNode)
         {
-            if (GetLastRelation() == RelationType.Normal) return;
+            RelationTypes = new List<RelationType>();
+            var steps = XmlHelper.GetNodeAttribute(xmlNode, "Steps");
+            if (!string.IsNullOrEmpty(steps))
+            {
+                foreach (var step in steps.Split(':'))                
+                    RelationTypes.Add((RelationType)Enum.Parse(typeof(RelationType), step));                
+            }
+
+            NextElem = null;
+            NextElemGroup = xmlNode.InnerText;
         }
 
         private void SetNextElem(NavigationElem nextElem)
         {
             if (RelationTypes == null) RelationTypes = new List<RelationType>();
             NextElem = nextElem;
+            NextElemGroup = NextElem.GetMyGroupName();
             RelationTypes.Add(NextElem.GetRelationType());
         }
 
@@ -98,9 +110,18 @@ namespace Thea2Translator.Logic
         }
 
         public override string ToString()
+        {            
+            return $"{GetRelationTypes()};{NextElemGroup}";
+        }
+
+        public string GetRelationTypes(string separator=":")
         {
-            var types = string.Join(":", RelationTypes.ToList());
-            return $"{types};{NextElem.GetMyGroupName()}";
+            return string.Join(separator, RelationTypes.ToList());
+        }
+
+        public string GetMenuItemName()
+        {
+            return $"({GetRelationTypes("->")}) => '{NextElemGroup}'";
         }
     }
 }

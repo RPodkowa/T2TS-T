@@ -195,30 +195,6 @@ namespace Thea2Translator.Logic
             tw.Close();
         }
 
-        public static void SaveElemsToFile(IEnumerable<NavigationElem> elems, string path)
-        {
-            CreatedPathIfNotExists(path);
-            DeleteFileIfExists(path);
-            TextWriter tw = new StreamWriter(path, true);
-            foreach (var elem in elems)
-            {
-                tw.WriteLine(elem.ToString());
-            }
-
-            tw.Close();
-        }
-
-        public static void SaveElemsToFile(IEnumerable<string> elems1, IEnumerable<string> elems2, IEnumerable<string> elems3, string path)
-        {
-            CreatedPathIfNotExists(path);
-            DeleteFileIfExists(path);
-            TextWriter tw = new StreamWriter(path, true);
-            foreach (var elem in elems1) tw.WriteLine(elem.ToString());
-            foreach (var elem in elems2) tw.WriteLine(elem.ToString());
-            foreach (var elem in elems3) tw.WriteLine(elem.ToString());
-            tw.Close();
-        }
-
         public static string ReadHttpFileString(string file)
         {
             WebClient client = new WebClient();
@@ -385,6 +361,7 @@ namespace Thea2Translator.Logic
                 case FilesType.DataBase:
                 case FilesType.Modules:
                 case FilesType.Names:
+                case FilesType.Navigation:
                     return ".xml";
                 case FilesType.Vocabulary:
                     return ".cache";

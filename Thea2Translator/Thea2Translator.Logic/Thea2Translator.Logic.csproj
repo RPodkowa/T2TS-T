@@ -108,7 +108,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Helpers\XmlHelper.cs" />
     <Compile Include="Navigation\Navigation.cs" />
+    <Compile Include="Navigation\NavigationNextAdventureElem.cs" />
+    <Compile Include="Navigation\NavigationStartGroup.cs" />
+    <Compile Include="Navigation\NavigationAdventureNodeElem.cs" />
     <Compile Include="Navigation\NavigationElemRelation.cs" />
     <Compile Include="Navigation\NavigationElemAdventureInfo.cs" />
     <Compile Include="Navigation\RelationType.cs" />

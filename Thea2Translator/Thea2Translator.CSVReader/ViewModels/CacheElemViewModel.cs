@@ -25,7 +25,18 @@ namespace Thea2Translator.DesktopApp.ViewModels
                     :Colors.Black.ToString())
                     : Colors.DarkGreen.ToString();
             }
-        }     
+        }
+
+        public string Weight
+        {
+            get
+            {
+                if (CacheElem.IsAdventureNodeRecord)
+                    return "Bold";
+
+                return "Normal";
+            }
+        }
 
         public CacheElemViewModel(CacheElem CacheElem)
         {

@@ -7,42 +7,110 @@ namespace Thea2Translator.Logic
     public class Navigation
     {
         public IList<NavigationElem> NavigationElems { get; private set; }
-        private IList<string> StartGroups;
-        private IList<string> AdventureNodeElems;
-        private IList<string> NextAdventureElems;
+
+        public IList<NavigationStartGroup> NavigationStartGroups { get; private set; }
+        public IList<NavigationAdventureNodeElem> NavigationAdventureNodeElems { get; private set; }
+        public IList<NavigationNextAdventureElem> NavigationNextAdventureElems { get; private set; }
+                
+        private readonly string FullPath;
+        private IList<string> startGroups;
+
+        public Navigation(DirectoryType directoryType = DirectoryType.Cache)
+        {
+            FullPath = FileHelper.GetLocalFilePatch(directoryType, FilesType.Navigation);            
+        }
+
+        public void Reload()
+        {
+            if (!FileHelper.FileExists(FullPath))
+                return;
+
+            XmlDocument doc = new XmlDocument();
+            doc.Load(FullPath);
+            //StartGroups              
+            NavigationStartGroups = NavigationStartGroup.GetNodesFromXml(doc);
+            NavigationAdventureNodeElems = NavigationAdventureNodeElem.GetNodesFromXml(doc);
+            NavigationNextAdventureElems = NavigationNextAdventureElem.GetNodesFromXml(doc);
+        }
+
+        public void UpdateAdventureNodeElems(IDataCache dataCache)
+        {
+            var navigationAdventureNodeElemsCopy = new List<NavigationAdventureNodeElem>(NavigationAdventureNodeElems);
+            foreach (var dataCacheElem in dataCache.CacheElems)
+            {
+                for (int i = navigationAdventureNodeElemsCopy.Count - 1; i > -1; i--)
+                {
+                    if (navigationAdventureNodeElemsCopy[i].CacheElemId == dataCacheElem.Id)
+                    {
+                        dataCacheElem.AddAdventureNodeGroup(navigationAdventureNodeElemsCopy[i].Group);
+                        navigationAdventureNodeElemsCopy.RemoveAt(i);
+                    }
+                }
+            }
+        }
+
+        public void UpdateNextAdventureElems(CacheElem cacheElem)
+        {
+            foreach (var navigationNextAdventureElem in NavigationNextAdventureElems)
+            {
+                if (navigationNextAdventureElem.CacheElemId == cacheElem.Id)
+                    cacheElem.AddNavigationNextAdventureElem(navigationNextAdventureElem);
+            }
+        }
+
+        public IList<string> GetStartingGroups()
+        {
+            if (startGroups != null) return startGroups;
+            startGroups = new List<string>();
+            foreach(var navigationStartGroup in NavigationStartGroups)
+            {
+                startGroups.Add(navigationStartGroup.Group);
+            }
+
+            return startGroups;
+        }
 
         public void SaveElems()
         {
-            StartGroups = new List<string>();
-            AdventureNodeElems = new List<string>();
-            NextAdventureElems = new List<string>();
+            FileHelper.CreatedPathIfNotExists(FullPath);
+            FileHelper.DeleteFileIfExists(FullPath);
+
+            XmlDocument doc = new XmlDocument();
+            XmlNode navigationNode = doc.CreateElement("Navigation");
+            doc.AppendChild(navigationNode);
+
+            XmlNode startGroupsNode = doc.CreateElement("StartGroups");
+            XmlNode adventureNodeElemsNode = doc.CreateElement("AdventureNodeElems");
+            XmlNode nextAdventureElemsNode = doc.CreateElement("NextAdventureElems");
 
             foreach (var elem in NavigationElems)
             {
                 if (elem.IsNodeStartingElem())
                 {
-                    StartGroups.Add(elem.GetTargetGroupName());
+                    startGroupsNode.AppendChild(new NavigationStartGroup(elem).ToXmlNode(doc));
                     continue;
                 }
 
                 if (elem.IsAdventureNodeElem())
                 {
-                    AdventureNodeElems.Add(elem.GetAdventureNodeElemUniqueId());
+                    adventureNodeElemsNode.AppendChild(new NavigationAdventureNodeElem(elem).ToXmlNode(doc));
                     continue;
                 }
 
                 if (elem.IsAdventureOutputElem())
                 {
-                    var nextAdventures = elem.GetNextAdventures(NavigationElems);
-                    if (!string.IsNullOrEmpty(nextAdventures))
-                        NextAdventureElems.Add(nextAdventures);
+                    var nextAdventures = new NavigationNextAdventureElem(elem, NavigationElems).ToXmlNode(doc);
+                    if (nextAdventures!=null)
+                        nextAdventureElemsNode.AppendChild(nextAdventures);
 
                     continue;
                 }
             }
 
-            FileHelper.SaveElemsToFile(NavigationElems, @"D:\test.txt");
-            FileHelper.SaveElemsToFile(StartGroups, AdventureNodeElems, NextAdventureElems, @"D:\test2.txt");
+            navigationNode.AppendChild(startGroupsNode);
+            navigationNode.AppendChild(adventureNodeElemsNode);
+            navigationNode.AppendChild(nextAdventureElemsNode);
+            doc.Save(FullPath);
         }
 
         public void SetNodeElementId(int cacheElemId, NavigationElemAdventureInfo adventureInfo, string adventureNodeId)

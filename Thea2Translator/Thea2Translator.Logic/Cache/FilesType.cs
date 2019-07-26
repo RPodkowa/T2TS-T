@@ -11,6 +11,7 @@ namespace Thea2Translator.Logic
         DataBase,
         Modules,
         Names,
-        Vocabulary
+        Vocabulary,
+        Navigation
     }
 }

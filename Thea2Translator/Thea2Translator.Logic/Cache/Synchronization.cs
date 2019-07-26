@@ -75,6 +75,7 @@ namespace Thea2Translator.Logic.Cache
             MergeFile(FilesType.Modules);
             MergeFile(FilesType.Names);
             MergeFile(FilesType.Vocabulary);
+            FileHelper.CopyFile(FilesType.Navigation, DirectoryType.Original, DirectoryType.Cache);
         }
 
         private void MergeFile(FilesType filesType)
@@ -94,6 +95,7 @@ namespace Thea2Translator.Logic.Cache
             DownloadCacheFile(FilesType.Modules);
             DownloadCacheFile(FilesType.Names);
             DownloadCacheFile(FilesType.Vocabulary);
+            DownloadCacheFile(FilesType.Navigation);
         }
 
         private void DownloadCacheFile(FilesType filesType)

@@ -45,12 +45,17 @@ namespace Thea2Translator.Logic
             CacheElems = new List<CacheElem>();
         }
 
-        public void ReloadElems(bool withGroups = false, bool withVocabulary = false)
+        public void ReloadElems(bool withGroups = false, bool withVocabulary = false, bool withNavigation = false)
         {
             LoadFromFile();
 
             if (withGroups) ReloadGroups();
             if (withVocabulary) ReloadVocabulary();
+            if (withNavigation)
+            {
+                ReloadNavigation();
+                UpdateAdventureNodeElems();
+            }
         }
 
         private void LoadFromFile()
@@ -100,6 +105,23 @@ namespace Thea2Translator.Logic
             }
 
             ((List<string>)Groups).Sort();
+        }
+
+        private void ReloadNavigation()
+        {
+            if (Type != FilesType.Modules)
+                return;
+
+            Navigation = new Navigation();
+            Navigation.Reload();
+        }
+
+        private void UpdateAdventureNodeElems()
+        {
+            if (Navigation == null)
+                return;
+
+            Navigation.UpdateAdventureNodeElems(this);
         }
 
         private void ReloadVocabulary()
@@ -708,6 +730,14 @@ namespace Thea2Translator.Logic
         public FilesType GetFileType()
         {
             return Type;
+        }
+
+        public IList<string> GetStartingGroups()
+        {
+            if (Navigation == null)
+                return Groups;
+
+            return Navigation.GetStartingGroups();
         }
     }
 }

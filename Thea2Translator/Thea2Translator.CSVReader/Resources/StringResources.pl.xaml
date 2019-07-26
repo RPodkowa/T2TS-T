@@ -39,6 +39,7 @@
     <system:String x:Key="percentLabelStatistic">Procent</system:String>
 
     <system:String x:Key="allComboItemTranslate">Wszystkie</system:String>
+    <system:String x:Key="startGroupsComboItemTranslate">Rozpoczynające przygodę</system:String>
     <system:String x:Key="withoutTranslationComboItemTranslate">Nieprzetłumaczone</system:String>
     <system:String x:Key="withoutConfirmationComboItemTranslate">Niepotwierdzone</system:String>
 	<system:String x:Key="withConflictComboItemTranslate">Konfliktowe</system:String>

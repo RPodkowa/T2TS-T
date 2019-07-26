@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text.RegularExpressions;
 using System.Windows;
 using System.Windows.Controls;
+//using System.Windows.Forms;
 using System.Windows.Input;
 using Thea2Translator.DesktopApp.Helpers;
 using Thea2Translator.DesktopApp.Pages.ModuleSelectionPages;
@@ -36,6 +37,8 @@ namespace Thea2Translator.DesktopApp.Pages
         private bool isAdmin;
 
 
+        IList<string> groupsHistory = new List<string>();
+
         IList<string> groups;
         IList<CacheElemViewModel> allElements;
         IList<CacheElemViewModel> filtredElements;
@@ -58,13 +61,13 @@ namespace Thea2Translator.DesktopApp.Pages
             cbItemsToTranslateFilter.SelectedIndex = 0;
             btnGoogle.IsEnabled = false;
 
-            dataCache.ReloadElems(true, true);
+            dataCache.ReloadElems(true, true, true);
             vocabulary = dataCache.Vocabulary;
             statistic = LogicProvider.Statistic;
 
             statistic.Reload(dataCache);
             RealodStatistic();
-
+            
             allElements = dataCache.CacheElems.Select(c => new CacheElemViewModel(c)).ToList();
             filtredElements = allElements;
             groups = dataCache.Groups;
@@ -145,10 +148,12 @@ namespace Thea2Translator.DesktopApp.Pages
             {
                 groups = selectedCacheElement.CacheElem.Groups;
                 var allGroup = cbGroups.Items[0];
+                var startingGroups = cbGroups.Items[1];
                 var selectedGroup = cbGroups.SelectedItem;
 
                 cbGroups.Items.Clear();
                 cbGroups.Items.Add(allGroup);
+                cbGroups.Items.Add(startingGroups);
 
                 foreach (var group in groups)
                 {
@@ -209,12 +214,16 @@ namespace Thea2Translator.DesktopApp.Pages
                     int.Parse(txtEndRange.Text) : allElements.Count;
 
                 filtredElements = allElements.Skip(start).Take(end - start).ToList();
+                foreach (var elem in filtredElements)
+                {
+                    elem.CacheElem.ResetAdventureNodeRecord();
+                }
 
                 switch (cbItemsToTranslateFilter.SelectedIndex)
                 {
                     case 0: filtredElements = filtredElements.ToList(); break;
                     case 1: filtredElements = filtredElements.Where(c => c.CacheElem.ToTranslate).ToList(); break;
-                    case 2: filtredElements = filtredElements.Where(c => c.CacheElem.ToConfirm && !c.CacheElem.ToTranslate).ToList(); break;
+                    case 2: filtredElements = filtredElements.Where(c => c.CacheElem.ToConfirm).ToList(); break;
                     case 3: filtredElements = filtredElements.Where(c => c.CacheElem.HasConflict).ToList(); break;
                 }
 
@@ -228,9 +237,22 @@ namespace Thea2Translator.DesktopApp.Pages
 
                 if (cbGroups.SelectedIndex != 0 && cbGroups.SelectedIndex != -1)
                 {
-                    filtredElements = filtredElements.Where(e =>
-                    e.CacheElem.Groups.Contains(cbGroups.SelectedValue))
-                        .ToList();
+                    var filterGroups = new List<string>();
+                    if (cbGroups.SelectedIndex == 1)
+                    {
+                        filterGroups = dataCache.GetStartingGroups().ToList();
+                        filtredElements = filtredElements.Where(e => e.CacheElem.OccursInStartingGroup(filterGroups)).ToList();
+                    }
+                    else
+                    {
+                        filterGroups.Add(cbGroups.SelectedValue.ToString());
+                        filtredElements = filtredElements.Where(e => e.CacheElem.Groups.Contains(cbGroups.SelectedValue)).ToList();
+                    }
+
+                    foreach (var elem in filtredElements)
+                    {
+                        elem.CacheElem.SetGroupContext(filterGroups);
+                    }
                 }
 
                 //lbItemsToTranslate.ItemsSource = null;
@@ -280,7 +302,49 @@ namespace Thea2Translator.DesktopApp.Pages
 
         private void CbGroups_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            var cb = sender as ComboBox;
+            if (
+                (cbGroups.SelectedIndex == 0 || cbGroups.SelectedIndex == 1)  &&
+                (e.AddedItems.Count>0 && e.RemovedItems.Count>0 ) &&
+                (e.AddedItems[0].ToString()!= e.RemovedItems[0].ToString())
+                )
+            {
+                var oldSelectedIndex = cbGroups.SelectedIndex;
+                groups = dataCache.Groups;
+                if (cbGroups.SelectedIndex == 1) groups = dataCache.GetStartingGroups();
+                var allGroup = cbGroups.Items[0];
+                var startingGroups = cbGroups.Items[1];
+
+                cbGroups.Items.Clear();
+                cbGroups.Items.Add(allGroup);
+                cbGroups.Items.Add(startingGroups);
+
+                foreach (var group in groups)
+                {
+                    cbGroups.Items.Add(group);
+                }
+
+                cbGroups.SelectedIndex = oldSelectedIndex;
+            }
+
+            FilterItems();
+        }
+        private void SetFilteGroups(string group)
+        {
+            if (string.IsNullOrEmpty(group))
+                return;
+
+            var allGroup = cbGroups.Items[0];
+            var startingGroups = cbGroups.Items[1];
+
+            cbGroups.Items.Clear();
+            cbGroups.Items.Add(allGroup);
+            cbGroups.Items.Add(startingGroups);
+            cbGroups.Items.Add(group);
+
+            var index = cbGroups.Items.IndexOf(group);
+
+            cbGroups.SelectedIndex = index != -1 ? index : 0;
+
             FilterItems();
         }
 
@@ -429,6 +493,51 @@ namespace Thea2Translator.DesktopApp.Pages
             filtredElements[index].CacheElem.ResolveConflict(!checkBox.IsChecked.Value, txtTranslatedText.Text);
             dataCache.SaveElems();
             FilterItems();
+        }
+
+        private void btnNavigationPrev_Click(object sender, RoutedEventArgs e)
+        {
+            if (groupsHistory == null || groupsHistory.Count == 0)
+                return;
+            var lastIndex = groupsHistory.Count - 1;
+            var lastGroup = groupsHistory[lastIndex];
+            groupsHistory.RemoveAt(lastIndex);
+            SetFilteGroups(lastGroup);
+        }
+
+        private void btnNavigationNext_Click(object sender, RoutedEventArgs e)
+        {
+            if (selectedCacheElement == null)            
+                return;
+
+            var actualGroup = cbGroups.SelectedValue.ToString();
+
+            var relations = selectedCacheElement.CacheElem.GetNextElemRelations(dataCache, actualGroup);
+            if (relations == null || relations.Count == 0)
+                return;
+
+            System.Windows.Forms.ContextMenuStrip contextMenu = new System.Windows.Forms.ContextMenuStrip();
+
+            foreach(var relation in relations)
+            {
+                AddMenuItem(contextMenu, relation.GetMenuItemName(), relation.NextElemGroup);
+            }
+
+            contextMenu.Show(System.Windows.Forms.Cursor.Position);
+        }
+
+        private void AddMenuItem(System.Windows.Forms.ContextMenuStrip menu, string name, string group)
+        {
+            var item = new System.Windows.Forms.ToolStripMenuItem();
+            item.Text = name;
+            item.Click += (s, e) => MenuClick(group, s, e);
+            menu.Items.Add(item);
+        }
+
+        private void MenuClick(string group, object sender, EventArgs e)
+        {
+            groupsHistory.Add(cbGroups.SelectedValue.ToString());
+            SetFilteGroups(group);
         }
     }
 }

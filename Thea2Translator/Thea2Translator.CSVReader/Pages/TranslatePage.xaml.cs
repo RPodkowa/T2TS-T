@@ -59,7 +59,7 @@ namespace Thea2Translator.DesktopApp.Pages
             }
 
             cbItemsToTranslateFilter.SelectedIndex = 0;
-            btnGoogle.IsEnabled = false;
+            btnOpenGoogle.IsEnabled = false;
 
             dataCache.ReloadElems(true, true, true);
             vocabulary = dataCache.Vocabulary;
@@ -135,7 +135,7 @@ namespace Thea2Translator.DesktopApp.Pages
                 txtTranslatedText.Text = text;
             }
 
-            btnGoogle.IsEnabled = selectedCacheElement == null ? false : true;
+            btnOpenGoogle.IsEnabled = selectedCacheElement == null ? false : true;
 
             RefreshVocabularyList();
             RealodStatistic();
@@ -171,11 +171,6 @@ namespace Thea2Translator.DesktopApp.Pages
             statistic.Reload(dataCache);
 
             lblState.Content = statistic.GetSummary();
-        }
-
-        private void BtnSaveToFile_Click(object sender, RoutedEventArgs e)
-        {
-            SaveToFile();
         }
 
         private void SaveToFile()
@@ -261,34 +256,6 @@ namespace Thea2Translator.DesktopApp.Pages
             }
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            if (isAdmin)
-                this.NavigationService.Navigate(new ModuleSelectionAdminPage());
-            else
-                this.NavigationService.Navigate(new ModuleSelectionUserPage());
-        }
-
-        private void ButtonVocabulary_Click(object sender, RoutedEventArgs e)
-        {
-            //if (vocabulary is null) return;
-
-            //var vocabularyElems = vocabulary.VocabularyElems.Where(x => x.HasConflict);
-
-            //var selectedIndex = lbDictinaryItems.SelectedIndex;
-            //lbDictinaryItems.ItemsSource = vocabularyElems;
-            //lbDictinaryItems.SelectedIndex = Math.Min(selectedIndex, lbDictinaryItems.Items.Count - 1);
-
-            FullDictinaryWindow fullDictinary = new FullDictinaryWindow(false);
-            fullDictinary.Show();
-        }
-        
-
-        private void btnGoogle_Click(object sender, RoutedEventArgs e)
-        {
-            OpenGoogleTranslate();
-        }
-
         private void OpenGoogleTranslate()
         {
             if (selectedCacheElement != null)
@@ -296,7 +263,7 @@ namespace Thea2Translator.DesktopApp.Pages
                 var link = selectedCacheElement.CacheElem.GetTranslateLink();
 
                 wbGoogleTranslate.Address = link;
-                btnGoogle.IsEnabled = false;
+                btnOpenGoogle.IsEnabled = false;
             }
         }
 
@@ -495,37 +462,6 @@ namespace Thea2Translator.DesktopApp.Pages
             FilterItems();
         }
 
-        private void btnNavigationPrev_Click(object sender, RoutedEventArgs e)
-        {
-            if (groupsHistory == null || groupsHistory.Count == 0)
-                return;
-            var lastIndex = groupsHistory.Count - 1;
-            var lastGroup = groupsHistory[lastIndex];
-            groupsHistory.RemoveAt(lastIndex);
-            SetFilteGroups(lastGroup);
-        }
-
-        private void btnNavigationNext_Click(object sender, RoutedEventArgs e)
-        {
-            if (selectedCacheElement == null)            
-                return;
-
-            var actualGroup = cbGroups.SelectedValue.ToString();
-
-            var relations = selectedCacheElement.CacheElem.GetNextElemRelations(dataCache, actualGroup);
-            if (relations == null || relations.Count == 0)
-                return;
-
-            System.Windows.Forms.ContextMenuStrip contextMenu = new System.Windows.Forms.ContextMenuStrip();
-
-            foreach(var relation in relations)
-            {
-                AddMenuItem(contextMenu, relation.GetMenuItemName(), relation.NextElemGroup);
-            }
-
-            contextMenu.Show(System.Windows.Forms.Cursor.Position);
-        }
-
         private void AddMenuItem(System.Windows.Forms.ContextMenuStrip menu, string name, string group)
         {
             var item = new System.Windows.Forms.ToolStripMenuItem();
@@ -538,6 +474,61 @@ namespace Thea2Translator.DesktopApp.Pages
         {
             groupsHistory.Add(cbGroups.SelectedValue.ToString());
             SetFilteGroups(group);
+        }  
+
+        private void BtnSaveToFile_Click(object sender, RoutedEventArgs e)
+        {
+            SaveToFile();
+        }
+
+        private void BtnOpenGoogle_Click(object sender, RoutedEventArgs e)
+        {
+            OpenGoogleTranslate();
+        }
+
+        private void BtnBack_Click(object sender, RoutedEventArgs e)
+        {
+            if (isAdmin)
+                this.NavigationService.Navigate(new ModuleSelectionAdminPage());
+            else
+                this.NavigationService.Navigate(new ModuleSelectionUserPage());
+        }
+
+        private void BtnVocabulary_Click(object sender, RoutedEventArgs e)
+        {
+            FullDictinaryWindow fullDictinary = new FullDictinaryWindow(false);
+            fullDictinary.Show();
+        }
+
+        private void BtnNavigationPrev_Click(object sender, RoutedEventArgs e)
+        {
+            if (groupsHistory == null || groupsHistory.Count == 0)
+                return;
+            var lastIndex = groupsHistory.Count - 1;
+            var lastGroup = groupsHistory[lastIndex];
+            groupsHistory.RemoveAt(lastIndex);
+            SetFilteGroups(lastGroup);
+        }
+
+        private void BtnNavigationNext_Click(object sender, RoutedEventArgs e)
+        {
+            if (selectedCacheElement == null)
+                return;
+
+            var actualGroup = cbGroups.SelectedValue.ToString();
+
+            var relations = selectedCacheElement.CacheElem.GetNextElemRelations(dataCache, actualGroup);
+            if (relations == null || relations.Count == 0)
+                return;
+
+            System.Windows.Forms.ContextMenuStrip contextMenu = new System.Windows.Forms.ContextMenuStrip();
+
+            foreach (var relation in relations)
+            {
+                AddMenuItem(contextMenu, relation.GetMenuItemName(), relation.NextElemGroup);
+            }
+
+            contextMenu.Show(System.Windows.Forms.Cursor.Position);
         }
     }
 }

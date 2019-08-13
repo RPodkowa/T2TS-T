@@ -360,6 +360,23 @@
       <FileType>File</FileType>
     </PublishFile>
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\Icons\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\Icons\arrow-circle-left.png" />
+    <Resource Include="Resources\Images\Icons\arrow-circle-right.png" />
+    <Resource Include="Resources\Images\Icons\arrow-left.png" />
+    <Resource Include="Resources\Images\Icons\arrow-right.png" />
+    <Resource Include="Resources\Images\Icons\book.png" />
+    <Resource Include="Resources\Images\Icons\google.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\Icons\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\Icons\google2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

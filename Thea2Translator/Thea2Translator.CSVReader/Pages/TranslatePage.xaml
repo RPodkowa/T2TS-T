@@ -37,14 +37,16 @@
             </Grid.RowDefinitions>
             <Grid Grid.Row="6">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
+                    <ColumnDefinition Width="5*"/>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="5*"/>
                 </Grid.ColumnDefinitions>
-                <Button x:Name="btnSaveToFile" Style="{StaticResource styleButton}" FontWeight="Bold" FontSize="{DynamicResource mediumFontSize}" Click="BtnSaveToFile_Click" Grid.Column="0">
-                    <TextBlock TextWrapping="Wrap" TextAlignment="Center"><Run Text="{DynamicResource saveFileButtonTranslate}"/><LineBreak /><Run>(CTRL+S)</Run></TextBlock>
+                <Button x:Name="btnSaveToFile" Height="{StaticResource iconWidth}" ToolTip="{DynamicResource saveFileButtonTranslate}" Width="{StaticResource iconWidth}" Grid.Column="1" Click="BtnSaveToFile_Click" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Image Source="/Translator;component/Resources/Images/Icons/save.png" />
                 </Button>
-                <Button x:Name="btnGoogle" Style="{StaticResource styleButton}" FontSize="{DynamicResource mediumFontSize}" Click="btnGoogle_Click" FontWeight="Bold" Grid.Column="1">
-                    <TextBlock TextWrapping="Wrap" TextAlignment="Center"><Run Text="{DynamicResource googleButtonTranslate}"/><LineBreak /><Run>(CTRL+G)</Run></TextBlock>
+                <Button x:Name="btnOpenGoogle" Height="{StaticResource iconWidth}" Width="{StaticResource iconWidth}" Grid.Column="2" Click="BtnOpenGoogle_Click" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Image x:Name="imgGoogle" Grid.Column="3" Source="/Translator;component/Resources/Images/Icons/google2.png"/>
                 </Button>
             </Grid>
             <TextBox x:Name="txtOriginalText" TextWrapping="Wrap" IsEnabled="False"  FontSize="{DynamicResource smallFontSize}" />
@@ -52,14 +54,16 @@
             <ListBox x:Name="lbDictinaryItems" Grid.Row="2" SelectionChanged="LbDictinary_SelectionChange" FontSize="{DynamicResource smallFontSize}" MouseDoubleClick="lbDictinaryItems_MouseDoubleClick" KeyDown="lbDictinaryItems_KeyDown" />
 
         </Grid>
-        <Grid x:Name="filterAndChooseItemsGrid" Grid.Column="1" Grid.Row="1" Margin="0,0,0,30">
+        <Grid x:Name="filterAndChooseItemsGrid" Grid.Column="1" Grid.Row="1">
             <Grid.RowDefinitions>
-                <RowDefinition Height="46*"/>
-                <RowDefinition Height="8*"/>
-                <RowDefinition Height="35*"/>
-                <RowDefinition Height="296*"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="14*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
             </Grid.RowDefinitions>
-            <ListBox x:Name="lbItemsToTranslate" FontSize="{DynamicResource smallFontSize}" Grid.Row="3" SelectionChanged="LbItemsToTranslate_SelectionChanged" Margin="0,0,0,31">
+            <ListBox x:Name="lbItemsToTranslate" FontSize="{DynamicResource smallFontSize}" Grid.Row="3" SelectionChanged="LbItemsToTranslate_SelectionChanged" Margin="0,0,0,3">
                 <ListBox.ItemTemplate >
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal">
@@ -107,7 +111,21 @@
                 <Label Content="{DynamicResource searchLabelTranslate}" Style="{StaticResource labelCenterTitle}" FontSize="{DynamicResource smallFontSize}" Grid.Row="1"/>
                 <TextBox x:Name="txtSearch" Grid.Column="1" Grid.Row="1" Style="{StaticResource fontCenter}" TextWrapping="Wrap" FontSize="{DynamicResource smallFontSize}" Text="" TextChanged="TxtSearch_TextChanged"/>
             </Grid>
-            <Label x:Name="lblCount" Content="Label" FontSize="{DynamicResource smallFontSize}" Margin="0,0,0,3" Grid.Row="3" VerticalAlignment="Bottom"/>
+            <Label x:Name="lblCount" Content="Label" FontSize="{DynamicResource smallFontSize}" Grid.Row="4"/>
+            <Grid x:Name="navigationGrid" Grid.Row="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="btnNavigationPrev" Grid.Column="1" Click="BtnNavigationPrev_Click">
+                    <Image Source="/Translator;component/Resources/Images/Icons/arrow-left.png"/>
+                </Button>
+                <Button x:Name="btnNavigationNext" Grid.Column="2" Click="BtnNavigationNext_Click">
+                    <Image Source="/Translator;component/Resources/Images/Icons/arrow-right.png"/>
+                </Button>
+            </Grid>
         </Grid>
         <Grid Grid.Column="1" Grid.ColumnSpan="5">
             <Grid.RowDefinitions>
@@ -159,18 +177,19 @@
             </Grid>
             <Grid Grid.Column="1" Grid.Row="1">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="10*"/>
-                    <ColumnDefinition/>
-                    <ColumnDefinition Width="10*"/>
+                    <ColumnDefinition Width="5*"/>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="5*"/>
                 </Grid.ColumnDefinitions>
-                <Button Content="{DynamicResource backButtonTranslate}" FontSize="{DynamicResource bigFontSize}" Style="{StaticResource styleButton}" FontWeight="Bold" Click="Button_Click"/>
-                <Button Content="Vocabulary" FontSize="{DynamicResource bigFontSize}" Style="{StaticResource styleButton}" FontWeight="Bold" Click="ButtonVocabulary_Click" Grid.Column="2"/>
+                <Button x:Name="btnBack" Height="{StaticResource iconWidth}" Width="{StaticResource iconWidth}" Grid.Column="1" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Click="BtnBack_Click">
+                    <Image Height="{StaticResource iconWidth}" Source="/Translator;component/Resources/Images/Icons/home.png"/>
+                </Button>
+                <Button x:Name="btnVocabulary" Height="{StaticResource iconWidth}" Width="{StaticResource iconWidth}" Grid.Column="2" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Click="BtnVocabulary_Click">
+                    <Image x:Name="imgVocabulary" Source="/Translator;component/Resources/Images/Icons/book.png" />
+                </Button>
             </Grid>
         </Grid>
         <cefSharp:ChromiumWebBrowser x:Name="wbGoogleTranslate" Grid.Column="5" Grid.Row="1" />
-        <Grid x:Name="navigationGrid" Grid.Column="1" Height="30" Margin="0,335,0,0" Grid.Row="1" Width="249" VerticalAlignment="Bottom" HorizontalAlignment="Left">
-            <Button x:Name="btnNavigationNext" Content="NEXT" HorizontalAlignment="Left" Margin="170,0,0,0" VerticalAlignment="Top" Width="79" Height="30" Click="btnNavigationNext_Click"/>
-            <Button x:Name="btnNavigationPrev" Content="PREV" HorizontalAlignment="Left" VerticalAlignment="Top" Width="79" Height="30" Click="btnNavigationPrev_Click"/>
-        </Grid>
     </Grid>
 </Page>

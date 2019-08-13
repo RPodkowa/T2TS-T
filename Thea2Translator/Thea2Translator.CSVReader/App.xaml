@@ -33,6 +33,9 @@
 
         <system:Double x:Key="maxSmallFontSize">14</system:Double>
 
+        <system:Double x:Key="iconWidth">45</system:Double>
+        
+        
         <system:String x:Key="startButtonHome">Start</system:String>
         <system:String x:Key="chooseFolderLabelHomePage">Choose folder with data:</system:String>
 

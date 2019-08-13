@@ -29,35 +29,7 @@ namespace Thea2Translator.DesktopApp.Pages.ModuleSelectionPages
 
         public ModuleSelectionUserPage()
         {
-            InitializeComponent();
-
-            var txtList = new List<string>();
-            txtList.Add("Database:");
-            txtList.Add($" All: {DateTime.Now.ToString("_yyyyMMdd_HHmmss")}");
-            txtList.Add($" Translated: {2}%");
-            txtList.Add($" Confirm: {2}%");
-            txtList.Add($" Conflicts: {2}");
-            txtList.Add($"------------------------");
-            txtList.Add("Modules:");
-            txtList.Add($" All: {1}");
-            txtList.Add($" Translated: {2}%");
-            txtList.Add($" Confirm: {2}%");
-            txtList.Add($" Conflicts: {2}");
-            txtList.Add($"------------------------");
-            txtList.Add("Names:");
-            txtList.Add($" All: {1}");
-            txtList.Add($" Translated: {2}%");
-            txtList.Add($" Confirm: {2}%");
-            txtList.Add($" Conflicts: {2}");
-            txtList.Add($"------------------------");
-            txtList.Add("Vocabulary:");
-            txtList.Add($" All: {1}");
-            txtList.Add($" Translated: {2}%");
-            txtList.Add($" Confirm: {2}%");
-            txtList.Add($" Conflicts: {2}");
-            txtList.Add($"------------------------");
-            //txtSummaryLabel.Content = string.Join("\r\n", txtList.ToArray());
-
+            InitializeComponent();            
             btnChooseDataBase.Click += (o, e) =>
             {
                 NavigationService.Navigate(new TranslatePage(Logic.FilesType.DataBase, false));

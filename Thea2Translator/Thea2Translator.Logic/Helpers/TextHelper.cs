@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 
 namespace Thea2Translator.Logic
 {
@@ -112,6 +113,33 @@ namespace Thea2Translator.Logic
 
             ret = removeSpecials(ret, out specials, "{", "}");
             return ret;
+        }
+
+        public static int StringOccurens(string text, string pattern)
+        {
+            return Regex.Matches(text, pattern).Count;
+        }
+
+        public static bool IsEqualsSpecials(List<string> specialsL, List<string> specialsR)
+        {
+            if (specialsL == null && specialsR == null) return true;
+
+            if (specialsL == null && specialsR != null) return false;
+            if (specialsL != null && specialsR == null) return false;
+            if (specialsL.Count != specialsR.Count) return false;
+
+            for (int i=0; i< specialsL.Count;i++)
+            {
+                var specialL = specialsL[i];
+                var specialR = specialsR[i];
+
+                if (specialL.Substring(0, 3) == "EOL" && specialR.Substring(0, 3) == "EOL")
+                    continue;
+
+                if (specialL != specialR) return false;
+            }
+
+            return true;
         }
 
         private static string removeSpecials(string text, out List<string> specials, string c1, string c2)

@@ -12,6 +12,7 @@ namespace Thea2Translator.Logic
         Modules,
         Names,
         Vocabulary,
-        Navigation
+        Navigation,
+        Status
     }
 }

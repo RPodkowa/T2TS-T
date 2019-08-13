@@ -144,7 +144,22 @@ namespace Thea2Translator.Logic.Cache
             UploadCacheFile(FilesType.Modules);
             UploadCacheFile(FilesType.Names);
             UploadCacheFile(FilesType.Vocabulary);
+            CreateStatusFile();
+            UploadCacheFile(FilesType.Status);
             UploadToHistory();
+            UploadToWww();
+        }
+
+        private void CreateStatusFile()
+        {
+            var status = LogicProvider.GetWwwStatus();
+            var json = JsonHelper.ToJson(status);
+            var fullPath = FileHelper.GetLocalFilePatch(DirectoryType.Cache, FilesType.Status);
+            FileHelper.WriteFileString(fullPath, json);
+        }
+        private void UploadToWww()
+        {
+            UploadCacheFileOtherDirectory(FilesType.Status, FileHelper.GetDirectoryName(DirectoryType.Www));
         }
 
         private void UploadToHistory()
@@ -155,6 +170,7 @@ namespace Thea2Translator.Logic.Cache
             UploadCacheFileOtherDirectory(FilesType.Modules, directory);
             UploadCacheFileOtherDirectory(FilesType.Names, directory);
             UploadCacheFileOtherDirectory(FilesType.Vocabulary, directory);
+            UploadCacheFileOtherDirectory(FilesType.Status, directory);
         }
 
         private void UploadCacheFileOtherDirectory(FilesType filesType, string directory)

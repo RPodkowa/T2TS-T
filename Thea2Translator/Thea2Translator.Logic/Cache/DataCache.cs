@@ -121,6 +121,9 @@ namespace Thea2Translator.Logic
             if (Navigation == null)
                 return;
 
+            if (Type != FilesType.Modules)
+                return;
+
             Navigation.UpdateAdventureNodeElems(this);
         }
 
@@ -202,7 +205,8 @@ namespace Thea2Translator.Logic
                 if (IsNamesCache) ProcessFileNames(file, false);
             }
 
-            Navigation.SaveElems();
+            if (IsModulesCache)
+                Navigation.SaveElems();
         }
         #endregion
         #region PrepareToMachineTranslate
@@ -532,9 +536,10 @@ namespace Thea2Translator.Logic
         {
             CacheElem ret = null;
 
+            var keyToCompare = TextHelper.PrepereToCompare(key);
             foreach (var elem in CacheElems)
             {
-                if (elem.EqualsTexts(key)) return elem;
+                if (elem.EqualsPreparedTexts(keyToCompare)) return elem;
             }
 
             return ret;

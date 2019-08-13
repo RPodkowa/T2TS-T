@@ -195,6 +195,13 @@ namespace Thea2Translator.Logic
             tw.Close();
         }
 
+        public static void WriteFileString(string file, string txt)
+        {
+            TextWriter tw = new StreamWriter(file);
+            tw.WriteLine(txt);
+            tw.Close();
+        }
+
         public static string ReadHttpFileString(string file)
         {
             WebClient client = new WebClient();
@@ -333,8 +340,12 @@ namespace Thea2Translator.Logic
 
             if (directoryType == DirectoryType.Backup)
                 return $"{DirectoryType.Backup.ToString()}\\{BackupDirectoryName}";
+            
+            var ret= directoryType.ToString();
+            if (directoryType == DirectoryType.Www)
+                ret = ret.ToLower();
 
-            return directoryType.ToString();
+            return ret;
         }
 
         private static bool IsDirectoryInCahce(DirectoryType directoryType)
@@ -348,6 +359,7 @@ namespace Thea2Translator.Logic
         public static string GetFileName(FilesType filesType, bool withExtention = true)
         {
             var fileName = filesType.ToString();
+            if (filesType == FilesType.Status) fileName = fileName.ToLower();
             if (withExtention)
                 fileName += GetFileExtention(filesType);
 
@@ -365,6 +377,8 @@ namespace Thea2Translator.Logic
                     return ".xml";
                 case FilesType.Vocabulary:
                     return ".cache";
+                case FilesType.Status:
+                    return ".txt";
             }
 
             return "";

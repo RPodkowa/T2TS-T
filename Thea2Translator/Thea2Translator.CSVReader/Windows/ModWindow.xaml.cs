@@ -27,7 +27,7 @@ namespace Thea2Translator.DesktopApp.Windows
             InitializeComponent();
             txtTitle.Text = Settings.Default.ModTitle;
             txtBody.Text = Settings.Default.ModBody;
-            txtState.Text = LogicProvider.DataBase.GetSummary();
+            txtState.Text = LogicProvider.DataBase.GetSummary() + "\r\n\r\n" + LogicProvider.Modules.GetSummary();
         }
 
         private void btnConfirm_Click(object sender, RoutedEventArgs e)

@@ -74,6 +74,8 @@ namespace Thea2Translator.Logic
         public List<string> AdventureNodeGroups;
         public IList<NavigationNextAdventureElem> NavigationNextAdventureElems { get; private set; }
 
+        private string ToCompareText = null;
+
         public CacheElem(FilesType type, int id, string key, string inputText)
         {
             Type = type;
@@ -108,15 +110,24 @@ namespace Thea2Translator.Logic
             }
 
             InputText = XmlHelper.GetNodeText(element, "Texts/Input");
-            OriginalText = TextHelper.Normalize(InputText, out Specials);
             OutputText = XmlHelper.GetNodeText(element, "Texts/Output");
-            TranslatedText = TextHelper.Normalize(OutputText);
+
+            List<string> tmpSpecials = null;
+           OriginalText = TextHelper.Normalize(InputText, out Specials);
+            TranslatedText = TextHelper.Normalize(OutputText, out tmpSpecials);
+
             OldTranslatedText = XmlHelper.GetNodeText(element, "Texts/Old");
             ConflictTranslatedText = XmlHelper.GetNodeText(element, "Texts/Conflict");
 
             ConfirmationTime = XmlHelper.GetNodeText(element, "Confirmation/Time");
             ConfirmationGuid = XmlHelper.GetNodeText(element, "Confirmation/GUID");
             ConfirmationUser = XmlHelper.GetNodeText(element, "Confirmation/User");
+
+            if (IsModulesElem && !TextHelper.IsEqualsSpecials(Specials, tmpSpecials))
+            {
+                HasConflict = true;
+                ConflictTranslatedText = TranslatedText;
+            }
         }
 
         public bool WithConflictText()
@@ -137,23 +148,27 @@ namespace Thea2Translator.Logic
             ConflictTranslatedText = elem.TranslatedText;
         }
 
-        public bool EqualsTexts(string inputText)
+        public bool EqualsPreparedTexts(string preparedInputText)
         {
-            bool ret = (TextHelper.PrepereToCompare(GetTextToCompare()) == TextHelper.PrepereToCompare(inputText));
-            if (ret) SetNewTextToCompare(inputText);
+            bool ret = GetTextToCompare() == preparedInputText;
+            if (ret) SetNewTextToCompare(preparedInputText);
             return ret;
         }
 
         private string GetTextToCompare()
         {
-            if (IsDataBaseElem) return Key;
-            return InputText;
+            if (!string.IsNullOrEmpty(ToCompareText)) return ToCompareText;
+            ToCompareText = InputText;
+            if (IsDataBaseElem) ToCompareText= Key;
+            ToCompareText = TextHelper.PrepereToCompare(ToCompareText);
+            return ToCompareText;
         }
 
         private void SetNewTextToCompare(string newText)
         {
             if (IsDataBaseElem) return;
             InputText = newText;
+            ToCompareText = newText;
         }
 
         public XmlNode ToXmlNode(XmlDocument doc)
@@ -216,6 +231,13 @@ namespace Thea2Translator.Logic
         {
             if (TextHelper.EqualsTexts(InputText, text))
                 return;
+
+            //Mam roznice! a juz zatwierdzilem
+            if (IsCorrectedByHuman)
+            {
+                HasConflict = true;
+                ConflictTranslatedText = TranslatedText;
+            }
 
             OldTranslatedText = TranslatedText;
             InputText = text;

@@ -6,6 +6,7 @@ namespace Thea2Translator.Logic.Cache
 {
     class Statistic : IStatistic
     {
+        public FilesType Type { get; private set; }
         public int AllItemsCount { get; private set; }
         public int TranslatedItemsCount { get; private set; }
         public int ItemWithoutTranslationCount { get; private set; }
@@ -27,6 +28,8 @@ namespace Thea2Translator.Logic.Cache
 
         public void Reload(IDataCache dataCache)
         {
+            Type = dataCache.GetFileType();
+
             var allElements = dataCache.CacheElems;
             AllItemsCount = allElements.Count;
 
@@ -37,6 +40,11 @@ namespace Thea2Translator.Logic.Cache
             ConfirmedItemsCount = allElements.Count(e => e.IsCorrectedByHuman);
             ItemWithoutConfirmationCount = AllItemsCount - ConfirmedItemsCount;
             ConfirmedPercent = (int)(((double)ConfirmedItemsCount / (double)AllItemsCount) * 100);
+        }
+
+        public void MakeFile()
+        {
+
         }
     }
 }

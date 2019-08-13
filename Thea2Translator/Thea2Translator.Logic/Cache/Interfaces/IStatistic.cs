@@ -8,6 +8,7 @@ namespace Thea2Translator.Logic.Cache.Interfaces
 {
     public interface IStatistic
     {
+        FilesType Type { get; }
         int AllItemsCount { get; }
         int TranslatedItemsCount { get; }
         int ItemWithoutTranslationCount { get; }
@@ -18,6 +19,6 @@ namespace Thea2Translator.Logic.Cache.Interfaces
 
         void Reload(IDataCache dataCache);
 
-        string GetSummary();
+        string GetSummary();        
     }
 }

@@ -33,9 +33,15 @@
 
         <system:Double x:Key="maxSmallFontSize">14</system:Double>
 
-        <system:Double x:Key="iconWidth">45</system:Double>
-        
-        
+        <system:Double x:Key="iconWidth">20</system:Double>
+        <system:Double x:Key="iconButtonWidth">80</system:Double>
+        <system:Double x:Key="iconButtonHeight">40</system:Double>
+
+        <system:String x:Key="saveIconLabel">Save</system:String>
+        <system:String x:Key="googleIconLabel">Google</system:String>
+        <system:String x:Key="dictinaryIconLabel">Dictinary</system:String>
+        <system:String x:Key="homeIconLabel">Home</system:String>
+
         <system:String x:Key="startButtonHome">Start</system:String>
         <system:String x:Key="chooseFolderLabelHomePage">Choose folder with data:</system:String>
 

@@ -23,6 +23,8 @@ namespace Thea2Translator.DesktopApp.Pages
         public static RoutedCommand SaveCommand = new RoutedCommand();
         public static RoutedCommand GoogleCommand = new RoutedCommand();
         public static RoutedCommand NextItemCommand = new RoutedCommand();
+        public static RoutedCommand OpenDictinaryCommandItemCommand = new RoutedCommand();
+        public static RoutedCommand HomeCommandItemCommand = new RoutedCommand();
 
         private static readonly Regex _regex = new Regex("[^0-9.-]+");
 
@@ -85,6 +87,8 @@ namespace Thea2Translator.DesktopApp.Pages
             SaveCommand.InputGestures.Add(new KeyGesture(Key.S, ModifierKeys.Control));
             GoogleCommand.InputGestures.Add(new KeyGesture(Key.G, ModifierKeys.Control));
             NextItemCommand.InputGestures.Add(new KeyGesture(Key.N, ModifierKeys.Control));
+            OpenDictinaryCommandItemCommand.InputGestures.Add(new KeyGesture(Key.D, ModifierKeys.Control));
+            HomeCommandItemCommand.InputGestures.Add(new KeyGesture(Key.Escape));
 
             CommandBindings.Add(new CommandBinding(SaveCommand, (d, e) =>
             {
@@ -99,6 +103,16 @@ namespace Thea2Translator.DesktopApp.Pages
             CommandBindings.Add(new CommandBinding(NextItemCommand, (d, e) =>
             {
                 ChooseNextItem();
+            }));
+
+            CommandBindings.Add(new CommandBinding(OpenDictinaryCommandItemCommand, (d, e) =>
+            {
+                OpenVocabulary();
+            }));
+
+            CommandBindings.Add(new CommandBinding(HomeCommandItemCommand, (d, e) =>
+            {
+                BackToPrevPage();
             }));
         }
 
@@ -488,6 +502,11 @@ namespace Thea2Translator.DesktopApp.Pages
 
         private void BtnBack_Click(object sender, RoutedEventArgs e)
         {
+            BackToPrevPage();
+        }
+
+        private void BackToPrevPage()
+        {
             if (isAdmin)
                 this.NavigationService.Navigate(new ModuleSelectionAdminPage());
             else
@@ -495,6 +514,11 @@ namespace Thea2Translator.DesktopApp.Pages
         }
 
         private void BtnVocabulary_Click(object sender, RoutedEventArgs e)
+        {
+            OpenVocabulary();
+        }
+
+        private static void OpenVocabulary()
         {
             FullDictinaryWindow fullDictinary = new FullDictinaryWindow(false);
             fullDictinary.Show();

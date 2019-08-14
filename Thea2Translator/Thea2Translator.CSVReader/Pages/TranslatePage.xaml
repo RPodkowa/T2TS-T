@@ -37,16 +37,36 @@
             </Grid.RowDefinitions>
             <Grid Grid.Row="6">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="5*"/>
-                    <ColumnDefinition Width="3*"/>
-                    <ColumnDefinition Width="3*"/>
-                    <ColumnDefinition Width="5*"/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="47*"/>
+                    <ColumnDefinition Width="47*"/>
+                    <ColumnDefinition Width="47*"/>
+                    <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
-                <Button x:Name="btnSaveToFile" Height="{StaticResource iconWidth}" ToolTip="{DynamicResource saveFileButtonTranslate}" Width="{StaticResource iconWidth}" Grid.Column="1" Click="BtnSaveToFile_Click" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center">
-                    <Image Source="/Translator;component/Resources/Images/Icons/save.png" />
+                <Button x:Name="btnSaveToFile" Height="{StaticResource iconButtonHeight}" Width="{StaticResource iconButtonWidth}" ToolTip="{DynamicResource saveFileButtonTranslate}"  Grid.Column="1" Click="BtnSaveToFile_Click" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <StackPanel Orientation="Horizontal">
+                        <Image  Width="{StaticResource iconWidth}" Source="/Translator;component/Resources/Images/Icons/save.png" Margin="4,0,0,0" />
+                        <Label FontSize="10" FontWeight="Bold">
+                            <TextBlock TextAlignment="Center">
+                                <TextBlock Text="{DynamicResource saveIconLabel}" /><LineBreak/>[CTRL+S]</TextBlock>
+                        </Label>
+                    </StackPanel>
                 </Button>
-                <Button x:Name="btnOpenGoogle" Height="{StaticResource iconWidth}" Width="{StaticResource iconWidth}" Grid.Column="2" Click="BtnOpenGoogle_Click" HorizontalAlignment="Center" VerticalAlignment="Center">
-                    <Image x:Name="imgGoogle" Grid.Column="3" Source="/Translator;component/Resources/Images/Icons/google2.png"/>
+                <Button x:Name="btnVocabulary" Height="{StaticResource iconButtonHeight}" Width="{StaticResource iconButtonWidth}" Grid.Column="3" Click="BtnVocabulary_Click">
+                    <StackPanel Orientation="Horizontal">
+                        <Image x:Name="imgVocabulary" Height="{StaticResource iconWidth}" Source="/Translator;component/Resources/Images/Icons/book.png" Margin="4,0,0,0" />
+                        <Label FontSize="10" FontWeight="Bold">
+                            <TextBlock TextAlignment="Center"><TextBlock Text="{DynamicResource dictinaryIconLabel}" /><LineBreak/>[CTRL+D]</TextBlock>
+                        </Label>
+                    </StackPanel>
+                </Button>
+                <Button x:Name="btnOpenGoogle" Height="{StaticResource iconButtonHeight}" Width="{StaticResource iconButtonWidth}" Grid.Column="2" Click="BtnOpenGoogle_Click" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Height="{StaticResource iconWidth}" x:Name="imgGoogle" Source="/Translator;component/Resources/Images/Icons/google2.png" Margin="4,0,0,0"/>
+                        <Label FontSize="10" FontWeight="Bold">
+                            <TextBlock TextAlignment="Center"><TextBlock Text="{DynamicResource googleIconLabel}" /><LineBreak/>[CTRL+G]</TextBlock>
+                        </Label>
+                    </StackPanel>
                 </Button>
             </Grid>
             <TextBox x:Name="txtOriginalText" TextWrapping="Wrap" IsEnabled="False"  FontSize="{DynamicResource smallFontSize}" />
@@ -138,7 +158,7 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <Grid Grid.Row="1" Grid.Column="2">
+            <Grid Grid.Row="1" Grid.Column="1">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="8*"/>
                     <RowDefinition/>
@@ -182,14 +202,42 @@
                     <ColumnDefinition Width="3*"/>
                     <ColumnDefinition Width="5*"/>
                 </Grid.ColumnDefinitions>
-                <Button x:Name="btnBack" Height="{StaticResource iconWidth}" Width="{StaticResource iconWidth}" Grid.Column="1" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Click="BtnBack_Click">
-                    <Image Height="{StaticResource iconWidth}" Source="/Translator;component/Resources/Images/Icons/home.png"/>
+            </Grid>
+        </Grid>
+        <Grid Grid.Column="5" Grid.RowSpan="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="20*"/>
+                <RowDefinition Height="102*"/>
+                <RowDefinition Height="18*"/>
+            </Grid.RowDefinitions>
+            <cefSharp:ChromiumWebBrowser x:Name="wbGoogleTranslate" Grid.RowSpan="2" Grid.Row="1" />
+            <Grid Grid.Row="2" Grid.RowSpan="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="122*"/>
+                    <ColumnDefinition Width="127*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="11*"/>
+                    <RowDefinition Height="2*"/>
+                </Grid.RowDefinitions>
+                <Button x:Name="btnBack" Height="{StaticResource iconButtonHeight}" Width="{StaticResource iconButtonWidth}" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Click="BtnBack_Click" Grid.Row="1">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Height="{StaticResource iconWidth}" Source="/Translator;component/Resources/Images/Icons/home.png"/>
+                        <Label FontSize="10" FontWeight="Bold">
+                            <TextBlock TextAlignment="Center"><TextBlock Text="{DynamicResource homeIconLabel}" /><LineBreak/>[ESC]</TextBlock>
+                        </Label>
+                    </StackPanel>
                 </Button>
-                <Button x:Name="btnVocabulary" Height="{StaticResource iconWidth}" Width="{StaticResource iconWidth}" Grid.Column="2" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Click="BtnVocabulary_Click">
-                    <Image x:Name="imgVocabulary" Source="/Translator;component/Resources/Images/Icons/book.png" />
+                <Button x:Name="btnBack_Copy" Height="{StaticResource iconButtonHeight}" Width="{StaticResource iconButtonWidth}" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Click="BtnBack_Click" Grid.Row="1" Grid.Column="1">
+                    <StackPanel Orientation="Horizontal">
+                        <!--<Image Height="{StaticResource iconWidth}" Source="/Translator;component/Resources/Images/Icons/home.png"/>-->
+                        <Label FontSize="10" FontWeight="Bold">
+                            Functions
+                        </Label>
+                    </StackPanel>
                 </Button>
             </Grid>
         </Grid>
-        <cefSharp:ChromiumWebBrowser x:Name="wbGoogleTranslate" Grid.Column="5" Grid.Row="1" />
     </Grid>
 </Page>

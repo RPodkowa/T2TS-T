@@ -229,7 +229,7 @@
                         </Label>
                     </StackPanel>
                 </Button>
-                <Button x:Name="btnBack_Copy" Height="{StaticResource iconButtonHeight}" Width="{StaticResource iconButtonWidth}" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Click="BtnBack_Click" Grid.Row="1" Grid.Column="1">
+                <Button x:Name="btnFunctions" Height="{StaticResource iconButtonHeight}" Width="{StaticResource iconButtonWidth}" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Grid.Column="1" Click="BtnFunctions_Click">
                     <StackPanel Orientation="Horizontal">
                         <!--<Image Height="{StaticResource iconWidth}" Source="/Translator;component/Resources/Images/Icons/home.png"/>-->
                         <Label FontSize="10" FontWeight="Bold">

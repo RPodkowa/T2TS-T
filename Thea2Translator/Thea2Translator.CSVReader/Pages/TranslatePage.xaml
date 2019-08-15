@@ -32,8 +32,8 @@
                 <RowDefinition Height="10*"/>
                 <RowDefinition Height="1*"/>
                 <RowDefinition Height="10*"/>
-                <RowDefinition Height="1*"/>
-                <RowDefinition Height="6*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="5*"/>
             </Grid.RowDefinitions>
             <Grid Grid.Row="6">
                 <Grid.ColumnDefinitions>
@@ -76,12 +76,12 @@
         </Grid>
         <Grid x:Name="filterAndChooseItemsGrid" Grid.Column="1" Grid.Row="1">
             <Grid.RowDefinitions>
-                <RowDefinition Height="3*"/>
+                <RowDefinition Height="8*"/>
                 <RowDefinition/>
-                <RowDefinition Height="2*"/>
-                <RowDefinition Height="14*"/>
-                <RowDefinition Height="2*"/>
-                <RowDefinition Height="2*"/>
+                <RowDefinition Height="4*"/>
+                <RowDefinition Height="30*"/>
+                <RowDefinition Height="4*"/>
+                <RowDefinition Height="7*"/>
             </Grid.RowDefinitions>
             <ListBox x:Name="lbItemsToTranslate" FontSize="{DynamicResource smallFontSize}" Grid.Row="3" SelectionChanged="LbItemsToTranslate_SelectionChanged" Margin="0,0,0,3">
                 <ListBox.ItemTemplate >
@@ -139,10 +139,10 @@
                     <ColumnDefinition Width="3*"/>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
-                <Button x:Name="btnNavigationPrev" Grid.Column="1" Click="BtnNavigationPrev_Click">
+                <Button Height="{StaticResource iconButtonHeight}" Width="{StaticResource iconButtonWidth}" x:Name="btnNavigationPrev" Grid.Column="1" Click="BtnNavigationPrev_Click">
                     <Image Source="/Translator;component/Resources/Images/Icons/arrow-left.png"/>
                 </Button>
-                <Button x:Name="btnNavigationNext" Grid.Column="2" Click="BtnNavigationNext_Click">
+                <Button Height="{StaticResource iconButtonHeight}" Width="{StaticResource iconButtonWidth}" x:Name="btnNavigationNext" Grid.Column="2" Click="BtnNavigationNext_Click">
                     <Image Source="/Translator;component/Resources/Images/Icons/arrow-right.png"/>
                 </Button>
             </Grid>
@@ -218,8 +218,8 @@
                     <ColumnDefinition Width="127*"/>
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="11*"/>
-                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="20*"/>
+                    <RowDefinition Height="3*"/>
                 </Grid.RowDefinitions>
                 <Button x:Name="btnBack" Height="{StaticResource iconButtonHeight}" Width="{StaticResource iconButtonWidth}" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Click="BtnBack_Click" Grid.Row="1">
                     <StackPanel Orientation="Horizontal">

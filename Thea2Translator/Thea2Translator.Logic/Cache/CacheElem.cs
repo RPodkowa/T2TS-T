@@ -227,6 +227,11 @@ namespace Thea2Translator.Logic
             }
         }
 
+        public void ChangeConfirmation()
+        {
+            SetConfirmation(!IsCorrectedByHuman);
+        }
+
         public void TryUpdateValue(string text)
         {
             if (TextHelper.EqualsTexts(InputText, text))

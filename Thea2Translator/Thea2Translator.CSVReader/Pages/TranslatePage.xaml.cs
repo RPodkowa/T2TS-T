@@ -20,11 +20,20 @@ namespace Thea2Translator.DesktopApp.Pages
     /// </summary>
     public partial class TranslatePage : Page
     {
-        public static RoutedCommand SaveCommand = new RoutedCommand();
-        public static RoutedCommand GoogleCommand = new RoutedCommand();
-        public static RoutedCommand NextItemCommand = new RoutedCommand();
-        public static RoutedCommand OpenDictinaryCommandItemCommand = new RoutedCommand();
-        public static RoutedCommand HomeCommandItemCommand = new RoutedCommand();
+        public static RoutedCommand SaveCommand = new RoutedCommand(); //Ctrl+S
+        public static RoutedCommand ConfirmCommand = new RoutedCommand(); //Ctrl+P
+        public static RoutedCommand ConflictCommand = new RoutedCommand(); //Ctrl+K
+        public static RoutedCommand GoogleCommand = new RoutedCommand(); //Ctrl+G
+        public static RoutedCommand NextItemCommand = new RoutedCommand(); //Ctrl+Down
+        public static RoutedCommand PrevItemCommand = new RoutedCommand(); //Ctrl+Up
+        public static RoutedCommand NextQuestItemCommand = new RoutedCommand(); //Ctrl+Right
+        public static RoutedCommand PrevQuestItemCommand = new RoutedCommand(); //Ctrl+Left
+        public static RoutedCommand HistoryCommand = new RoutedCommand(); //Ctrl+H
+        public static RoutedCommand OpenDictinaryCommand = new RoutedCommand(); //Ctrl+D
+        public static RoutedCommand FunctionsCommand = new RoutedCommand(); //F1
+        public static RoutedCommand HomeCommand = new RoutedCommand(); //ESC
+
+        private IList<System.Windows.Forms.ToolStripMenuItem> menuItems = new List<System.Windows.Forms.ToolStripMenuItem>();
 
         private static readonly Regex _regex = new Regex("[^0-9.-]+");
 
@@ -37,7 +46,6 @@ namespace Thea2Translator.DesktopApp.Pages
         private IDataCache dataCache;
         private IStatistic statistic;
         private bool isAdmin;
-
 
         IList<string> groupsHistory = new List<string>();
 
@@ -69,7 +77,7 @@ namespace Thea2Translator.DesktopApp.Pages
 
             statistic.Reload(dataCache);
             RealodStatistic();
-            
+
             allElements = dataCache.CacheElems.Select(c => new CacheElemViewModel(c)).ToList();
             filtredElements = allElements;
             groups = dataCache.Groups;
@@ -83,49 +91,7 @@ namespace Thea2Translator.DesktopApp.Pages
             lblCount.Content = $"Elementów: {filtredElements.Count.ToString()}";
 
             this.SetLanguageDictinary();
-
-            SaveCommand.InputGestures.Add(new KeyGesture(Key.S, ModifierKeys.Control));
-            GoogleCommand.InputGestures.Add(new KeyGesture(Key.G, ModifierKeys.Control));
-            NextItemCommand.InputGestures.Add(new KeyGesture(Key.N, ModifierKeys.Control));
-            OpenDictinaryCommandItemCommand.InputGestures.Add(new KeyGesture(Key.D, ModifierKeys.Control));
-            HomeCommandItemCommand.InputGestures.Add(new KeyGesture(Key.Escape));
-
-            CommandBindings.Add(new CommandBinding(SaveCommand, (d, e) =>
-            {
-                SaveToFile();
-            }));
-
-            CommandBindings.Add(new CommandBinding(GoogleCommand, (d, e) =>
-            {
-                OpenGoogleTranslate();
-            }));
-
-            CommandBindings.Add(new CommandBinding(NextItemCommand, (d, e) =>
-            {
-                ChooseNextItem();
-            }));
-
-            CommandBindings.Add(new CommandBinding(OpenDictinaryCommandItemCommand, (d, e) =>
-            {
-                OpenVocabulary();
-            }));
-
-            CommandBindings.Add(new CommandBinding(HomeCommandItemCommand, (d, e) =>
-            {
-                BackToPrevPage();
-            }));
-        }
-
-        private void ChooseNextItem()
-        {
-            if (selectedCacheElement == null)
-            {
-                lbItemsToTranslate.SelectedIndex = 0;
-            }
-            else if (lbItemsToTranslate.SelectedIndex + 1 < filtredElements.Count)
-            {
-                lbItemsToTranslate.SelectedIndex++;
-            }
+            AddComands();
         }
 
         private void LbItemsToTranslate_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -140,12 +106,12 @@ namespace Thea2Translator.DesktopApp.Pages
 
             txtOriginalText.Text = selectedCacheElement?.CacheElem?.OriginalText;
 
-            if (selectedCacheElement?.CacheElem !=null)
+            if (selectedCacheElement?.CacheElem != null)
             {
                 var text = selectedCacheElement.CacheElem.TranslatedText;
-                if (selectedCacheElement.CacheElem.HasConflict)                
-                    text+="\r\n===============\r\n"+ selectedCacheElement.CacheElem.ConflictTranslatedText;
-                
+                if (selectedCacheElement.CacheElem.HasConflict)
+                    text += "\r\n===============\r\n" + selectedCacheElement.CacheElem.ConflictTranslatedText;
+
                 txtTranslatedText.Text = text;
             }
 
@@ -185,25 +151,6 @@ namespace Thea2Translator.DesktopApp.Pages
             statistic.Reload(dataCache);
 
             lblState.Content = statistic.GetSummary();
-        }
-
-        private void SaveToFile()
-        {
-            if (txtTranslatedText.Text != null && selectedCacheElement?.CacheElem != null)
-            {
-                selectedCacheElement.CacheElem.SetTranslated(txtTranslatedText.Text);
-
-                var index = lbItemsToTranslate.SelectedIndex;
-
-                FilterItems();
-                lbItemsToTranslate.SelectedIndex = index;
-            }
-
-            dataCache.UpdateVocabulary(vocabulary);
-            dataCache.SaveElems(true);
-
-            if (cbItemsToTranslateFilter.SelectedIndex != 1)
-                ChooseNextItem();
         }
 
         private void CbItemsToTranslateFilter_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -270,23 +217,13 @@ namespace Thea2Translator.DesktopApp.Pages
             }
         }
 
-        private void OpenGoogleTranslate()
-        {
-            if (selectedCacheElement != null)
-            {
-                var link = selectedCacheElement.CacheElem.GetTranslateLink();
-
-                wbGoogleTranslate.Address = link;
-                btnOpenGoogle.IsEnabled = false;
-            }
-        }
 
         private void CbGroups_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (
-                (cbGroups.SelectedIndex == 0 || cbGroups.SelectedIndex == 1)  &&
-                (e.AddedItems.Count>0 && e.RemovedItems.Count>0 ) &&
-                (e.AddedItems[0].ToString()!= e.RemovedItems[0].ToString())
+                (cbGroups.SelectedIndex == 0 || cbGroups.SelectedIndex == 1) &&
+                (e.AddedItems.Count > 0 && e.RemovedItems.Count > 0) &&
+                (e.AddedItems[0].ToString() != e.RemovedItems[0].ToString())
                 )
             {
                 var oldSelectedIndex = cbGroups.SelectedIndex;
@@ -390,7 +327,7 @@ namespace Thea2Translator.DesktopApp.Pages
 
         private void lbDictinaryItems_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.Key == Key.D && Keyboard.Modifiers == ModifierKeys.Control)
+            if (e.Key == Key.Delete)
             {
                 DeactivationVocabularyItem();
             }
@@ -476,23 +413,9 @@ namespace Thea2Translator.DesktopApp.Pages
             FilterItems();
         }
 
-        private void AddMenuItem(System.Windows.Forms.ContextMenuStrip menu, string name, string group)
-        {
-            var item = new System.Windows.Forms.ToolStripMenuItem();
-            item.Text = name;
-            item.Click += (s, e) => MenuClick(group, s, e);
-            menu.Items.Add(item);
-        }
-
-        private void MenuClick(string group, object sender, EventArgs e)
-        {
-            groupsHistory.Add(cbGroups.SelectedValue.ToString());
-            SetFilteGroups(group);
-        }  
-
         private void BtnSaveToFile_Click(object sender, RoutedEventArgs e)
         {
-            SaveToFile();
+            SaveToFile(false);
         }
 
         private void BtnOpenGoogle_Click(object sender, RoutedEventArgs e)
@@ -500,17 +423,14 @@ namespace Thea2Translator.DesktopApp.Pages
             OpenGoogleTranslate();
         }
 
+        private void BtnFunctions_Click(object sender, RoutedEventArgs e)
+        {
+            ShowMainMenu();
+        }
+
         private void BtnBack_Click(object sender, RoutedEventArgs e)
         {
             BackToPrevPage();
-        }
-
-        private void BackToPrevPage()
-        {
-            if (isAdmin)
-                this.NavigationService.Navigate(new ModuleSelectionAdminPage());
-            else
-                this.NavigationService.Navigate(new ModuleSelectionUserPage());
         }
 
         private void BtnVocabulary_Click(object sender, RoutedEventArgs e)
@@ -518,23 +438,126 @@ namespace Thea2Translator.DesktopApp.Pages
             OpenVocabulary();
         }
 
-        private static void OpenVocabulary()
-        {
-            FullDictinaryWindow fullDictinary = new FullDictinaryWindow(false);
-            fullDictinary.Show();
-        }
-
         private void BtnNavigationPrev_Click(object sender, RoutedEventArgs e)
         {
-            if (groupsHistory == null || groupsHistory.Count == 0)
-                return;
-            var lastIndex = groupsHistory.Count - 1;
-            var lastGroup = groupsHistory[lastIndex];
-            groupsHistory.RemoveAt(lastIndex);
-            SetFilteGroups(lastGroup);
+            UseNavigation(false);
         }
 
         private void BtnNavigationNext_Click(object sender, RoutedEventArgs e)
+        {
+            UseNavigation(true);
+        }
+
+        #region Commands
+        private void AddComands()
+        {
+            AddCommand(SaveCommand, new KeyGesture(Key.S, ModifierKeys.Control, "Ctrl+S"), "Zapis");
+            AddCommand(ConfirmCommand, new KeyGesture(Key.P, ModifierKeys.Control, "Ctrl+P"), "Potwierdź");
+            AddCommand(ConflictCommand, new KeyGesture(Key.K, ModifierKeys.Control, "Ctrl+K"), "Rozwiązany konflikt");
+            AddCommand(GoogleCommand, new KeyGesture(Key.G, ModifierKeys.Control, "Ctrl+G"), "Google");
+            AddCommand(PrevItemCommand, new KeyGesture(Key.F3, ModifierKeys.None, "F3"), "Poprzednia fraza");
+            AddCommand(NextItemCommand, new KeyGesture(Key.F4, ModifierKeys.None, "F4"), "Następna fraza");
+            AddCommand(PrevQuestItemCommand, new KeyGesture(Key.F7, ModifierKeys.None, "F7"), "Przygoda - Wstecz");
+            AddCommand(NextQuestItemCommand, new KeyGesture(Key.F8, ModifierKeys.None, "F8"), "Przygoda - Dalej");
+            AddCommand(HistoryCommand, new KeyGesture(Key.H, ModifierKeys.Control, "Ctrl+H"), "Historia");
+            AddCommand(OpenDictinaryCommand, new KeyGesture(Key.D, ModifierKeys.Control, "Ctrl+D"), "Słownik");
+            AddCommand(FunctionsCommand, new KeyGesture(Key.F1, ModifierKeys.None, "F1"), "Funkcje");
+            AddCommand(HomeCommand, new KeyGesture(Key.Escape, ModifierKeys.None, "Esc"), "Wyjście");
+        }
+
+        private void AddCommand(RoutedCommand command, KeyGesture keyGesture, string description)
+        {
+            command.InputGestures.Add(keyGesture);
+            CommandBindings.Add(new CommandBinding(command, (d, e) => { RunCommand(keyGesture); }));
+
+            var item = new System.Windows.Forms.ToolStripMenuItem();
+            item.Text = $"{description}";
+            item.ShortcutKeyDisplayString = keyGesture.DisplayString;
+            item.ShowShortcutKeys = true;
+            item.Click += (s, e) => RunCommand(keyGesture);
+            menuItems.Add(item);
+        }
+
+        private void RunCommand(KeyGesture keyGesture)
+        {
+            if (keyGesture.Key == Key.S && keyGesture.Modifiers == ModifierKeys.Control) SaveToFile(false);
+            if (keyGesture.Key == Key.P && keyGesture.Modifiers == ModifierKeys.Control) ChangeConfirmation();
+            if (keyGesture.Key == Key.K && keyGesture.Modifiers == ModifierKeys.Control) ChangeConflictResolved();
+            if (keyGesture.Key == Key.G && keyGesture.Modifiers == ModifierKeys.Control) OpenGoogleTranslate();
+            if (keyGesture.Key == Key.F3) ChooseItem(false);
+            if (keyGesture.Key == Key.F4) ChooseItem(true);
+            if (keyGesture.Key == Key.F7) UseNavigation(false);
+            if (keyGesture.Key == Key.F8) UseNavigation(true);
+            if (keyGesture.Key == Key.D && keyGesture.Modifiers == ModifierKeys.Control) OpenVocabulary();
+            if (keyGesture.Key == Key.H && keyGesture.Modifiers == ModifierKeys.Control) OpenHistory();
+            if (keyGesture.Key == Key.F1) ShowMainMenu();
+            if (keyGesture.Key == Key.Escape) BackToPrevPage();
+        }
+
+        private void SaveToFile(bool withChangeConfirmation)
+        {
+            if (txtTranslatedText.Text != null && selectedCacheElement?.CacheElem != null)
+            {
+                selectedCacheElement.CacheElem.SetTranslated(txtTranslatedText.Text);
+                if (withChangeConfirmation)
+                {
+                    selectedCacheElement.CacheElem.ChangeConfirmation();
+                    selectedCacheElement.IsConfirm = selectedCacheElement.CacheElem.IsCorrectedByHuman;
+                }
+
+                var index = lbItemsToTranslate.SelectedIndex;
+
+                FilterItems();
+                lbItemsToTranslate.SelectedIndex = index;
+            }
+
+            dataCache.UpdateVocabulary(vocabulary);
+            dataCache.SaveElems(true);
+
+            if (withChangeConfirmation) ChooseItem(true);
+        }
+        private void ChangeConfirmation()
+        {
+            SaveToFile(true);
+        }
+        private void ChangeConflictResolved()
+        {
+
+        }
+        private void OpenGoogleTranslate()
+        {
+            if (selectedCacheElement != null)
+            {
+                var link = selectedCacheElement.CacheElem.GetTranslateLink();
+
+                wbGoogleTranslate.Address = link;
+                btnOpenGoogle.IsEnabled = false;
+            }
+        }
+        private void ChooseItem(bool next)
+        {
+            if (selectedCacheElement == null)
+            {
+                lbItemsToTranslate.SelectedIndex = 0;
+                return;
+            }
+
+            if (next && lbItemsToTranslate.SelectedIndex + 1 < filtredElements.Count)            
+                lbItemsToTranslate.SelectedIndex++;
+            
+            if (!next && lbItemsToTranslate.SelectedIndex != 0)
+                lbItemsToTranslate.SelectedIndex--;
+        }
+        private void UseNavigation(bool next)
+        {
+            if (next) NavigationNext();
+            else NavigationPrev();
+        }
+        private void NavigationPrev()
+        {
+            GoToGroup(false, "");
+        }
+        private void NavigationNext()
         {
             if (selectedCacheElement == null)
                 return;
@@ -545,6 +568,12 @@ namespace Thea2Translator.DesktopApp.Pages
             if (relations == null || relations.Count == 0)
                 return;
 
+            if (relations.Count == 1)
+            {
+                GoToGroup(true, relations[0].NextElemGroup);
+                return;
+            }
+
             System.Windows.Forms.ContextMenuStrip contextMenu = new System.Windows.Forms.ContextMenuStrip();
 
             foreach (var relation in relations)
@@ -554,5 +583,57 @@ namespace Thea2Translator.DesktopApp.Pages
 
             contextMenu.Show(System.Windows.Forms.Cursor.Position);
         }
+        private void AddMenuItem(System.Windows.Forms.ContextMenuStrip menu, string name, string group)
+        {
+            var item = new System.Windows.Forms.ToolStripMenuItem();
+            item.Text = name;
+            item.Click += (s, e) => GoToGroup(true, group);
+            menu.Items.Add(item);
+        }
+
+        private void GoToGroup(bool moveForward, string group)
+        {
+            if (moveForward)
+                groupsHistory.Add(cbGroups.SelectedValue.ToString());
+            else
+            {
+                if (groupsHistory == null || groupsHistory.Count == 0)
+                    return;
+
+                var lastIndex = groupsHistory.Count - 1;
+                group = groupsHistory[lastIndex];
+                groupsHistory.RemoveAt(lastIndex);                
+            }
+
+            SetFilteGroups(group);
+        }
+        private static void OpenVocabulary()
+        {
+            FullDictinaryWindow fullDictinary = new FullDictinaryWindow(false);
+            fullDictinary.Show();
+        }
+        private void OpenHistory()
+        {
+
+        }
+        private void ShowMainMenu()
+        {
+            System.Windows.Forms.ContextMenuStrip contextMenu = new System.Windows.Forms.ContextMenuStrip();
+
+            foreach (var menuItem in menuItems)
+            {
+                contextMenu.Items.Add(menuItem);
+            }
+
+            contextMenu.Show(System.Windows.Forms.Cursor.Position);
+        }
+        private void BackToPrevPage()
+        {
+            if (isAdmin)
+                this.NavigationService.Navigate(new ModuleSelectionAdminPage());
+            else
+                this.NavigationService.Navigate(new ModuleSelectionUserPage());
+        }
+        #endregion
     }
 }

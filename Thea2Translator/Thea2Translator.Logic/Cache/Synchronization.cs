@@ -164,7 +164,7 @@ namespace Thea2Translator.Logic.Cache
 
         private void UploadToHistory()
         {
-            string directory = $"{FileHelper.GetDirectoryName(DirectoryType.History)}/{DateTime.Now.ToString("yyyyMMdd_HHmmss")}_{LogicProvider.UserName}";
+            string directory = $"{FileHelper.GetDirectoryName(DirectoryType.History)}/T_{DateTime.Now.ToString("yyyyMMdd_HHmmss")}_{LogicProvider.UserName}";
             FileHelper.CreateFTPDirectory(FileHelper.GetServerFtpDirectoryPatch(directory));
             UploadCacheFileOtherDirectory(FilesType.DataBase, directory);
             UploadCacheFileOtherDirectory(FilesType.Modules, directory);

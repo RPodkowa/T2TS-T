@@ -159,6 +159,7 @@ namespace Thea2Translator.Logic
             foreach (var cacheElem in CacheElems)
             {
                 databaseNode.AppendChild(cacheElem.ToXmlNode(doc));
+                cacheElem.SetChanged(false);
             }
 
             doc.Save(FullPath);

@@ -27,8 +27,7 @@ namespace Thea2Translator.DesktopApp.Pages
         public static RoutedCommand NextItemCommand = new RoutedCommand(); //Ctrl+Down
         public static RoutedCommand PrevItemCommand = new RoutedCommand(); //Ctrl+Up
         public static RoutedCommand NextQuestItemCommand = new RoutedCommand(); //Ctrl+Right
-        public static RoutedCommand PrevQuestItemCommand = new RoutedCommand(); //Ctrl+Left
-        public static RoutedCommand HistoryCommand = new RoutedCommand(); //Ctrl+H
+        public static RoutedCommand PrevQuestItemCommand = new RoutedCommand(); //Ctrl+Left        
         public static RoutedCommand OpenDictinaryCommand = new RoutedCommand(); //Ctrl+D
         public static RoutedCommand FunctionsCommand = new RoutedCommand(); //F1
         public static RoutedCommand HomeCommand = new RoutedCommand(); //ESC
@@ -96,10 +95,9 @@ namespace Thea2Translator.DesktopApp.Pages
 
         private void LbItemsToTranslate_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            if (selectedCacheElement != null
-                && txtTranslatedText.Text != selectedCacheElement.CacheElem.OriginalText)
+            if (selectedCacheElement != null && txtTranslatedText.Text != selectedCacheElement.CacheElem.OriginalText)
             {
-                selectedCacheElement.CacheElem.SetTranslated(txtTranslatedText.Text);
+                selectedCacheElement.CacheElem.SetTranslated(txtTranslatedText.Text, true);
             }
 
             selectedCacheElement = lbItemsToTranslate.SelectedItem as CacheElemViewModel;
@@ -110,7 +108,7 @@ namespace Thea2Translator.DesktopApp.Pages
             {
                 var text = selectedCacheElement.CacheElem.TranslatedText;
                 if (selectedCacheElement.CacheElem.HasConflict)
-                    text += "\r\n===============\r\n" + selectedCacheElement.CacheElem.ConflictTranslatedText;
+                    text += CacheElem.ConflictSeparator + selectedCacheElement.CacheElem.ConflictTranslatedText;
 
                 txtTranslatedText.Text = text;
             }
@@ -163,7 +161,7 @@ namespace Thea2Translator.DesktopApp.Pages
             FilterItems();
         }
 
-        private void FilterItems()
+        private void FilterItems(bool withTryChooseFirstAdventure = false)
         {
             if (cbItemsToTranslateFilter != null && cbGroups != null && txtStartRange != null && txtEndRange != null)
             {
@@ -209,11 +207,14 @@ namespace Thea2Translator.DesktopApp.Pages
                         filterGroups.Add(cbGroups.SelectedValue.ToString());
                         filtredElements = filtredElements.Where(e => e.CacheElem.Groups.Contains(cbGroups.SelectedValue)).ToList();
                     }
-
+                                         
                     foreach (var elem in filtredElements)
                     {
                         elem.CacheElem.SetGroupContext(filterGroups);
                     }
+
+                    if (withTryChooseFirstAdventure)
+                        TryChooseFirstAdventureItem();
                 }
 
                 //lbItemsToTranslate.ItemsSource = null;
@@ -223,10 +224,29 @@ namespace Thea2Translator.DesktopApp.Pages
                 GoToSelectedItem();
             }
         }
+        
+        private void TryChooseFirstAdventureItem()
+        {
+            if (filtredElements == null) return;
+            if (filtredElements.Count == 0) return;
 
+            CacheElemViewModel firstElem = null;
+            int? index = null;
+            for (int i = 0; i < filtredElements.Count && i < 20; i++)
+            {
+                if (filtredElements[i].CacheElem.IsAdventureNodeRecord)
+                {
+                    index = i;
+                    break;
+                }
+            }
+
+            if (index.HasValue) lbItemsToTranslate.SelectedIndex = index.Value;
+        }
 
         private void CbGroups_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            bool withTryChooseFirstAdventure = false;
             if (
                 (cbGroups.SelectedIndex == 0 || cbGroups.SelectedIndex == 1) &&
                 (e.AddedItems.Count > 0 && e.RemovedItems.Count > 0) &&
@@ -248,7 +268,7 @@ namespace Thea2Translator.DesktopApp.Pages
                     cbGroups.Items.Add(group);
                 }
 
-                cbGroups.SelectedIndex = oldSelectedIndex;
+                cbGroups.SelectedIndex = oldSelectedIndex;                
             }
 
             FilterItems();
@@ -270,7 +290,7 @@ namespace Thea2Translator.DesktopApp.Pages
 
             cbGroups.SelectedIndex = index != -1 ? index : 0;
 
-            FilterItems();
+            FilterItems(true);
         }
 
         private void TxtStartRange_TextChanged(object sender, TextChangedEventArgs e)
@@ -447,12 +467,12 @@ namespace Thea2Translator.DesktopApp.Pages
 
         private void BtnNavigationPrev_Click(object sender, RoutedEventArgs e)
         {
-            UseNavigation(false);
+            UseNavigationFromButton(false);
         }
 
         private void BtnNavigationNext_Click(object sender, RoutedEventArgs e)
         {
-            UseNavigation(true);
+            UseNavigationFromButton(true);
         }
 
         #region Commands
@@ -462,11 +482,10 @@ namespace Thea2Translator.DesktopApp.Pages
             AddCommand(ConfirmCommand, new KeyGesture(Key.P, ModifierKeys.Control, "Ctrl+P"), "Potwierdź");
             AddCommand(ConflictCommand, new KeyGesture(Key.K, ModifierKeys.Control, "Ctrl+K"), "Rozwiązany konflikt");
             AddCommand(GoogleCommand, new KeyGesture(Key.G, ModifierKeys.Control, "Ctrl+G"), "Google");
-            AddCommand(PrevItemCommand, new KeyGesture(Key.F3, ModifierKeys.None, "F3"), "Poprzednia fraza");
-            AddCommand(NextItemCommand, new KeyGesture(Key.F4, ModifierKeys.None, "F4"), "Następna fraza");
-            AddCommand(PrevQuestItemCommand, new KeyGesture(Key.F7, ModifierKeys.None, "F7"), "Przygoda - Wstecz");
-            AddCommand(NextQuestItemCommand, new KeyGesture(Key.F8, ModifierKeys.None, "F8"), "Przygoda - Dalej");
-            AddCommand(HistoryCommand, new KeyGesture(Key.H, ModifierKeys.Control, "Ctrl+H"), "Historia");
+            AddCommand(PrevItemCommand, new KeyGesture(Key.Down, ModifierKeys.Alt, "Alt+Góra"), "Poprzednia fraza");
+            AddCommand(NextItemCommand, new KeyGesture(Key.Up, ModifierKeys.Alt, "Alt+Dół"), "Następna fraza");
+            AddCommand(PrevQuestItemCommand, new KeyGesture(Key.Left, ModifierKeys.Alt, "Alt+Lew"), "Przygoda - Wstecz");
+            AddCommand(NextQuestItemCommand, new KeyGesture(Key.Right, ModifierKeys.Alt, "Alt+Prawo"), "Przygoda - Dalej");            
             AddCommand(OpenDictinaryCommand, new KeyGesture(Key.D, ModifierKeys.Control, "Ctrl+D"), "Słownik");
             AddCommand(FunctionsCommand, new KeyGesture(Key.F1, ModifierKeys.None, "F1"), "Funkcje");
             AddCommand(HomeCommand, new KeyGesture(Key.Escape, ModifierKeys.None, "Esc"), "Wyjście");
@@ -491,25 +510,32 @@ namespace Thea2Translator.DesktopApp.Pages
             if (keyGesture.Key == Key.P && keyGesture.Modifiers == ModifierKeys.Control) ChangeConfirmation();
             if (keyGesture.Key == Key.K && keyGesture.Modifiers == ModifierKeys.Control) ChangeConflictResolved();
             if (keyGesture.Key == Key.G && keyGesture.Modifiers == ModifierKeys.Control) OpenGoogleTranslate();
-            if (keyGesture.Key == Key.F3) ChooseItem(false);
-            if (keyGesture.Key == Key.F4) ChooseItem(true);
-            if (keyGesture.Key == Key.F7) UseNavigation(false);
-            if (keyGesture.Key == Key.F8) UseNavigation(true);
+            if (keyGesture.Key == Key.Up && keyGesture.Modifiers == ModifierKeys.Alt) ChooseItem(false);
+            if (keyGesture.Key == Key.Down && keyGesture.Modifiers == ModifierKeys.Alt) ChooseItem(true);
+            if (keyGesture.Key == Key.Left && keyGesture.Modifiers == ModifierKeys.Alt) UseNavigationFromMenu(false);
+            if (keyGesture.Key == Key.Right && keyGesture.Modifiers == ModifierKeys.Alt) UseNavigationFromMenu(true);
             if (keyGesture.Key == Key.D && keyGesture.Modifiers == ModifierKeys.Control) OpenVocabulary();
-            if (keyGesture.Key == Key.H && keyGesture.Modifiers == ModifierKeys.Control) OpenHistory();
             if (keyGesture.Key == Key.F1) ShowMainMenu();
             if (keyGesture.Key == Key.Escape) BackToPrevPage();
         }
 
-        private void SaveToFile(bool withChangeConfirmation)
+        private void SaveToFile(bool withChangeConfirmation, bool withResolveConflict = false)
         {
             if (txtTranslatedText.Text != null && selectedCacheElement?.CacheElem != null)
             {
-                selectedCacheElement.CacheElem.SetTranslated(txtTranslatedText.Text);
-                if (withChangeConfirmation)
+                if (withResolveConflict)
                 {
-                    selectedCacheElement.CacheElem.ChangeConfirmation();
-                    selectedCacheElement.IsConfirm = selectedCacheElement.CacheElem.IsCorrectedByHuman;
+                    selectedCacheElement.CacheElem.ResolveConflict(true, txtTranslatedText.Text);
+                    selectedCacheElement.HasConflict = false;
+                }
+                else
+                {
+                    selectedCacheElement.CacheElem.SetTranslated(txtTranslatedText.Text, true);
+                    if (withChangeConfirmation)
+                    {
+                        selectedCacheElement.CacheElem.ChangeConfirmation();
+                        selectedCacheElement.IsConfirm = selectedCacheElement.CacheElem.IsCorrectedByHuman;
+                    }
                 }
 
                 var index = lbItemsToTranslate.SelectedIndex;
@@ -529,7 +555,7 @@ namespace Thea2Translator.DesktopApp.Pages
         }
         private void ChangeConflictResolved()
         {
-
+            SaveToFile(false, true);
         }
         private void OpenGoogleTranslate()
         {
@@ -549,22 +575,34 @@ namespace Thea2Translator.DesktopApp.Pages
                 return;
             }
 
-            if (next && lbItemsToTranslate.SelectedIndex + 1 < filtredElements.Count)            
-                lbItemsToTranslate.SelectedIndex++;
-            
-            if (!next && lbItemsToTranslate.SelectedIndex != 0)
-                lbItemsToTranslate.SelectedIndex--;
+            int index = lbItemsToTranslate.SelectedIndex;
+            if (next) index++;
+            else index--;
+
+            if (index >= filtredElements.Count) index = 0;
+            if (index < 0) index = filtredElements.Count - 1;
+
+            lbItemsToTranslate.SelectedIndex = index;
+            FocusManager.SetFocusedElement(this, txtTranslatedText);
         }
-        private void UseNavigation(bool next)
+        private void UseNavigationFromButton(bool next)
         {
-            if (next) NavigationNext();
+            UseNavigation(true, next);
+        }
+        private void UseNavigationFromMenu(bool next)
+        {
+            UseNavigation(false, next);
+        }
+        private void UseNavigation(bool fromButton, bool next)
+        {
+            if (next) NavigationNext(fromButton);
             else NavigationPrev();
         }
         private void NavigationPrev()
         {
             GoToGroup(false, "");
         }
-        private void NavigationNext()
+        private void NavigationNext(bool fromButton)
         {
             if (selectedCacheElement == null)
                 return;
@@ -588,7 +626,12 @@ namespace Thea2Translator.DesktopApp.Pages
                 AddMenuItem(contextMenu, relation.GetMenuItemName(), relation.NextElemGroup);
             }
 
-            contextMenu.Show(System.Windows.Forms.Cursor.Position);
+            if (fromButton) contextMenu.Show(System.Windows.Forms.Cursor.Position);
+            else
+            {
+                var point = lbItemsToTranslate.PointToScreen(new Point(0, 0));
+                contextMenu.Show(new System.Drawing.Point((int)point.X, (int)point.Y));
+            }            
         }
         private void AddMenuItem(System.Windows.Forms.ContextMenuStrip menu, string name, string group)
         {
@@ -612,16 +655,12 @@ namespace Thea2Translator.DesktopApp.Pages
                 groupsHistory.RemoveAt(lastIndex);                
             }
 
-            SetFilteGroups(group);
+            SetFilteGroups(group);            
         }
         private static void OpenVocabulary()
         {
             FullDictinaryWindow fullDictinary = new FullDictinaryWindow(false);
             fullDictinary.Show();
-        }
-        private void OpenHistory()
-        {
-
         }
         private void ShowMainMenu()
         {

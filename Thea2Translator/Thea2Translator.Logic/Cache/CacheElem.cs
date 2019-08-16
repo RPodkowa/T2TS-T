@@ -6,8 +6,10 @@ namespace Thea2Translator.Logic
 {
     public class CacheElem
     {
+        public static string ConflictSeparator = "\r\n===============\r\n";
         public FilesType Type { get; private set; }
         public int Id { get; private set; }
+        public string StatusString { get; private set; }
 
         public int Flag { get; private set; }
         public bool IsCorrectedByHuman
@@ -88,6 +90,7 @@ namespace Thea2Translator.Logic
             TranslatedText = OriginalText;
             OutputText = InputText;
             Groups = new List<string>();
+            StatusString = string.Empty;
         }
 
         public CacheElem(FilesType type, XmlNode element)
@@ -113,7 +116,7 @@ namespace Thea2Translator.Logic
             OutputText = XmlHelper.GetNodeText(element, "Texts/Output");
 
             List<string> tmpSpecials = null;
-           OriginalText = TextHelper.Normalize(InputText, out Specials);
+            OriginalText = TextHelper.Normalize(InputText, out Specials);
             TranslatedText = TextHelper.Normalize(OutputText, out tmpSpecials);
 
             OldTranslatedText = XmlHelper.GetNodeText(element, "Texts/Old");
@@ -128,6 +131,8 @@ namespace Thea2Translator.Logic
                 HasConflict = true;
                 ConflictTranslatedText = TranslatedText;
             }
+
+            StatusString = string.Empty;
         }
 
         public bool WithConflictText()
@@ -202,11 +207,30 @@ namespace Thea2Translator.Logic
             return elementNode;
         }
 
-        public void SetTranslated(string text)
+        public void SetTranslated(string text, bool withChanged = false)
         {
+            string conflictText = "";
+            if (HasConflict)
+            {
+                var textList = text.Split(new string[] { ConflictSeparator }, StringSplitOptions.None);
+                if (textList.Length > 1)
+                {
+                    text = textList[0];
+                    conflictText = textList[1];
+                }
+            }
+
+            if (withChanged) withChanged = TranslatedText != text;
             TranslatedText = text;
+            if (!string.IsNullOrEmpty(conflictText)) ConflictTranslatedText = conflictText;
             OutputText = TextHelper.UnNormalize(text, Specials);
             OldTranslatedText = "";
+            if (withChanged) SetChanged(true);
+        }
+
+        public void SetChanged(bool how)
+        {
+            StatusString = how ? "*" : string.Empty;
         }
 
         public void SetConfirmation(bool confirm)

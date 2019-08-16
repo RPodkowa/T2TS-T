@@ -122,6 +122,11 @@ namespace Thea2Translator.DesktopApp.Pages
             SetAvaibleGroups();
         }
 
+        private void GoToSelectedItem()
+        {
+            lbItemsToTranslate.ScrollIntoView(lbItemsToTranslate.SelectedItem);
+        }
+
         private void SetAvaibleGroups()
         {
             if (selectedCacheElement != null)
@@ -214,6 +219,8 @@ namespace Thea2Translator.DesktopApp.Pages
                 //lbItemsToTranslate.ItemsSource = null;
                 lbItemsToTranslate.ItemsSource = filtredElements;
                 lblCount.Content = $"Elementów: {filtredElements.Count.ToString()}";
+
+                GoToSelectedItem();
             }
         }
 

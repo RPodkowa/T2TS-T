@@ -6,13 +6,13 @@
       xmlns:cefSharp="clr-namespace:CefSharp.Wpf;assembly=CefSharp.Wpf"
       xmlns:local="clr-namespace:Thea2Translator.DesktopApp.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="800" d:DesignWidth="1100"
       Title="WorkPage"
       Style="{StaticResource MainPageStyle}">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="11*"/>
-            <RowDefinition Height="60*"/>
+            <RowDefinition Height="6*"/>
+            <RowDefinition Height="67*"/>
             <RowDefinition Height="3*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
@@ -33,7 +33,7 @@
                 <RowDefinition Height="1*"/>
                 <RowDefinition Height="10*"/>
                 <RowDefinition Height="2*"/>
-                <RowDefinition Height="5*"/>
+                <RowDefinition Height="3*"/>
             </Grid.RowDefinitions>
             <Grid Grid.Row="6">
                 <Grid.ColumnDefinitions>
@@ -76,12 +76,12 @@
         </Grid>
         <Grid x:Name="filterAndChooseItemsGrid" Grid.Column="1" Grid.Row="1">
             <Grid.RowDefinitions>
-                <RowDefinition Height="8*"/>
+                <RowDefinition Height="4*"/>
                 <RowDefinition/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="35*"/>
+                <RowDefinition Height="2*"/>
                 <RowDefinition Height="4*"/>
-                <RowDefinition Height="30*"/>
-                <RowDefinition Height="4*"/>
-                <RowDefinition Height="7*"/>
             </Grid.RowDefinitions>
             <ListBox x:Name="lbItemsToTranslate" FontSize="{DynamicResource smallFontSize}" Grid.Row="3" SelectionChanged="LbItemsToTranslate_SelectionChanged" Margin="0,0,0,3">
                 <ListBox.ItemTemplate >
@@ -155,11 +155,13 @@
                 <RowDefinition/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
+                <ColumnDefinition Width="372*"/>
+                <ColumnDefinition Width="19*"/>
+                <ColumnDefinition Width="372*"/>
+                <ColumnDefinition Width="19*"/>
+                <ColumnDefinition Width="372*"/>
             </Grid.ColumnDefinitions>
-            <Grid Grid.Row="1" Grid.Column="1">
+            <Grid Grid.Column="2" Margin="1.333,7,13.333,0" Grid.RowSpan="2" Grid.ColumnSpan="2">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="8*"/>
                     <RowDefinition/>
@@ -170,21 +172,21 @@
                     <ColumnDefinition/>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
-                <Label x:Name="lblState" Content="Label" FontSize="{DynamicResource smallFontSize}" Grid.ColumnSpan="3" Grid.RowSpan="3"/>
+                <Label x:Name="lblState" Content="Label" FontSize="{DynamicResource smallFontSize}" Grid.ColumnSpan="3" Grid.RowSpan="3" Margin="0,0,-0.333,0.333"/>
             </Grid>
-            <Grid Grid.Row="1" Grid.RowSpan="2">
+            <Grid Grid.RowSpan="3" Grid.ColumnSpan="2">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="10*"/>
                     <RowDefinition Height="10*"/>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="8*"/>
-                    <ColumnDefinition Width="3*"/>
                     <ColumnDefinition Width="2*"/>
-                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="2*"/>
                     <ColumnDefinition Width="8*"/>
                 </Grid.ColumnDefinitions>
-                <Label Content="{DynamicResource rangeLabelTranslate}" Style="{StaticResource labelCenterTitle}" FontSize="{DynamicResource mediumFontSize}" Grid.ColumnSpan="5"/>
+                <Label Content="{DynamicResource rangeLabelTranslate}" Style="{StaticResource labelCenterTitle}" FontSize="{DynamicResource smallFontSize}" Grid.ColumnSpan="5"/>
                 <TextBox x:Name="txtStartRange" Grid.Row="1" TextWrapping="Wrap" Text="" Grid.Column="1"
                          FontSize="{DynamicResource mediumFontSize}"
                          VerticalContentAlignment="Center" HorizontalContentAlignment="Center"
@@ -196,7 +198,7 @@
                          />
                 <Label Content="-" Style="{StaticResource labelCenterTitle}" Grid.Column="2" Grid.Row="1"/>
             </Grid>
-            <Grid Grid.Column="1" Grid.Row="1">
+            <Grid Grid.Column="2" Margin="1.333,7,13.333,0" Grid.RowSpan="2" Grid.ColumnSpan="2">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="5*"/>
                     <ColumnDefinition Width="3*"/>
@@ -220,7 +222,7 @@
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="20*"/>
-                    <RowDefinition Height="3*"/>
+                    <RowDefinition Height="2*"/>
                 </Grid.RowDefinitions>
                 <Button x:Name="btnBack" Height="{StaticResource iconButtonHeight}" Width="{StaticResource iconButtonWidth}" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Click="BtnBack_Click" Grid.Row="1">
                     <StackPanel Orientation="Horizontal">

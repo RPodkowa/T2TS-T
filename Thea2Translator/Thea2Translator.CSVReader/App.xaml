@@ -26,6 +26,7 @@
             <Setter Property="FontWeight" Value="Bold" />
         </Style>
 
+        <system:Double x:Key="verySmallFontSize">8</system:Double>
         <system:Double x:Key="smallFontSize">11</system:Double>
         <system:Double x:Key="mediumFontSize">14</system:Double>
         <system:Double x:Key="bigFontSize">18</system:Double>

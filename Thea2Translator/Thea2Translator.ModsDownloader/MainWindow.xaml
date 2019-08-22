@@ -5,8 +5,55 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Thea2Translator.ModsDownloader"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="MainWindow" Height="350" Width="800">
+    <Grid x:Name="MainGrid" Background="Gainsboro">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid x:Name="FolderSrcGrid" Grid.Column="1" Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="202*"/>
+                <ColumnDefinition Width="285*"/>
+                <ColumnDefinition Width="220*"/>
+            </Grid.ColumnDefinitions>
+            <Label Content="Folder:" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Center" />
+            <TextBox Grid.Column="1" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Center" Height="28"  TextWrapping="Wrap" Text="TextBox" Width="285" Margin="0,18,0,12"/>
+            <Button Content="..." FontSize="18"  Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Width="75" Height="36" />
+        </Grid>
+        <Grid Grid.Column="1" Grid.Row="2">
+            <ListBox x:Name="lbItemToUpload" HorizontalAlignment="Center" Height="120" VerticalAlignment="Center" Width="200">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Margin="0,2">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="20" />
+                                <ColumnDefinition Width="100" />
+                            </Grid.ColumnDefinitions>
+                            <CheckBox  IsChecked="{Binding IsChecked}" />
+                            <TextBlock Grid.Column="1" Text="{Binding Name}" />
+                        </Grid>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </Grid>
+        <Grid Grid.Column="1" Grid.Row="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="190*"/>
+                <ColumnDefinition Width="101*"/>
+                <ColumnDefinition Width="90*"/>
+            </Grid.ColumnDefinitions>
+            <Button Content="Ok" FontSize="18" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Height="40" Width="75"/>
+            <Button Content="Anulluj" FontSize="18" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Height="40" Width="75"/>
+        </Grid>
+
     </Grid>
 </Window>

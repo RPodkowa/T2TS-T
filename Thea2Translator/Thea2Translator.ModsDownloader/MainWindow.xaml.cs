@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Thea2Translator.ModsDownloader.Model.ViewModel;
 
 namespace Thea2Translator.ModsDownloader
 {
@@ -20,9 +21,29 @@ namespace Thea2Translator.ModsDownloader
     /// </summary>
     public partial class MainWindow : Window
     {
+        private readonly IEnumerable<UploadViewModel> uploadItemList;
+
         public MainWindow()
         {
             InitializeComponent();
+
+            uploadItemList = PrepareUploadItems();
+
+            lbItemToUpload.ItemsSource = uploadItemList;
+        }
+
+        private IEnumerable<UploadViewModel> PrepareUploadItems()
+        {
+            return new List<UploadViewModel>
+            {
+                new UploadViewModel{Name="Database", IsChecked = false},
+                new UploadViewModel{Name="Modules", IsChecked = true},
+                new UploadViewModel{Name="Names", IsChecked = false},
+                new UploadViewModel{Name="NamesSpecial", IsChecked = false},
+                new UploadViewModel{Name="DatabaseSpecial", IsChecked = false},
+                new UploadViewModel{Name="ModulesSpecial", IsChecked = false},
+                new UploadViewModel{Name="Test", IsChecked = false}
+            };
         }
     }
 }

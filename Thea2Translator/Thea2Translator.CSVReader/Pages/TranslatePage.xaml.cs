@@ -78,7 +78,7 @@ namespace Thea2Translator.DesktopApp.Pages
             RealodStatistic();
 
             allElements = dataCache.CacheElems.Select(c => new CacheElemViewModel(c)).ToList();
-            filtredElements = allElements;
+            filtredElements = allElements.Where(x => x.IsActive).ToList();
             groups = dataCache.Groups;
 
             foreach (var group in groups)
@@ -172,7 +172,7 @@ namespace Thea2Translator.DesktopApp.Pages
                 var end = txtEndRange.Text != "" ?
                     int.Parse(txtEndRange.Text) : allElements.Count;
 
-                filtredElements = allElements.Skip(start).Take(end - start).ToList();
+                filtredElements = allElements.Skip(start).Take(end - start).Where(x => x.IsActive).ToList();
                 foreach (var elem in filtredElements)
                 {
                     elem.CacheElem.ResetAdventureNodeRecord();
@@ -184,6 +184,7 @@ namespace Thea2Translator.DesktopApp.Pages
                     case 1: filtredElements = filtredElements.Where(c => c.CacheElem.ToTranslate).ToList(); break;
                     case 2: filtredElements = filtredElements.Where(c => c.CacheElem.ToConfirm).ToList(); break;
                     case 3: filtredElements = filtredElements.Where(c => c.CacheElem.HasConflict).ToList(); break;
+                    case 4: filtredElements = allElements.Where(c => c.CacheElem.IsInactive).ToList(); break;                        
                 }
 
                 if (txtSearch.Text != "")

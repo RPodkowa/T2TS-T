@@ -21,6 +21,7 @@ namespace Thea2Translator.Logic.Cache
             if (DataCache.HasConflicts(FilesType.DataBase)) return true;
             if (DataCache.HasConflicts(FilesType.Modules)) return true;
             if (DataCache.HasConflicts(FilesType.Names)) return true;
+            if (DataCache.HasConflicts(FilesType.NamesGenerator)) return true;
             if (DataCache.HasConflicts(FilesType.Vocabulary)) return true;
             return false;
         }
@@ -74,6 +75,7 @@ namespace Thea2Translator.Logic.Cache
             MergeFile(FilesType.DataBase);
             MergeFile(FilesType.Modules);
             MergeFile(FilesType.Names);
+            MergeFile(FilesType.NamesGenerator);
             MergeFile(FilesType.Vocabulary);
             FileHelper.CopyFile(FilesType.Navigation, DirectoryType.Original, DirectoryType.Cache);
         }
@@ -94,6 +96,7 @@ namespace Thea2Translator.Logic.Cache
             DownloadCacheFile(FilesType.DataBase);
             DownloadCacheFile(FilesType.Modules);
             DownloadCacheFile(FilesType.Names);
+            DownloadCacheFile(FilesType.NamesGenerator);
             DownloadCacheFile(FilesType.Vocabulary);
             DownloadCacheFile(FilesType.Navigation);
         }
@@ -143,6 +146,7 @@ namespace Thea2Translator.Logic.Cache
             UploadCacheFile(FilesType.DataBase);
             UploadCacheFile(FilesType.Modules);
             UploadCacheFile(FilesType.Names);
+            UploadCacheFile(FilesType.NamesGenerator);
             UploadCacheFile(FilesType.Vocabulary);
             CreateStatusFile();
             UploadCacheFile(FilesType.Status);
@@ -169,6 +173,7 @@ namespace Thea2Translator.Logic.Cache
             UploadCacheFileOtherDirectory(FilesType.DataBase, directory);
             UploadCacheFileOtherDirectory(FilesType.Modules, directory);
             UploadCacheFileOtherDirectory(FilesType.Names, directory);
+            UploadCacheFileOtherDirectory(FilesType.NamesGenerator, directory);
             UploadCacheFileOtherDirectory(FilesType.Vocabulary, directory);
             UploadCacheFileOtherDirectory(FilesType.Status, directory);
         }

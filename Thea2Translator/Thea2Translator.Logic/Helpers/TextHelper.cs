@@ -99,6 +99,20 @@ namespace Thea2Translator.Logic
             return ret;
         }
 
+        public static string NormalizeName(string text)
+        {
+            var ret = text;
+            ret = ret.Replace("\\n", "");
+            ret = ret.Replace("\n", "");
+            ret = ret.Replace("\\r", "");
+            ret = ret.Replace("\r", "");
+            ret = ret.Replace("\\t", "");
+            ret = ret.Replace("\t", "");
+            ret = ret.Replace(" ", "");
+            ret = ret.Replace("_", " ");
+            return ret;
+        }
+
         public static string Normalize(string text, out List<string> specials)
         {
             specials = null;

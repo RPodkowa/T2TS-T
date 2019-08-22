@@ -374,6 +374,7 @@ namespace Thea2Translator.Logic
                 case FilesType.Modules:
                 case FilesType.Names:
                 case FilesType.Navigation:
+                case FilesType.NamesGenerator:
                     return ".xml";
                 case FilesType.Vocabulary:
                     return ".cache";

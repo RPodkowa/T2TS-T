@@ -86,12 +86,12 @@
             <ListBox x:Name="lbItemsToTranslate" FontSize="{DynamicResource smallFontSize}" Grid.Row="3" SelectionChanged="LbItemsToTranslate_SelectionChanged" Margin="0,0,0,3">
                 <ListBox.ItemTemplate >
                     <DataTemplate>
-                        <StackPanel Orientation="Horizontal">
-                            <CheckBox IsChecked="{Binding IsConfirm}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="SetConfirmOnCache" />
-                            <CheckBox IsChecked="{Binding HasConflict}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="SetResolvedOnCache" />
-                            <Label Content="{Binding CacheElem.Id}" Foreground="{Binding Color}" FontWeight="{Binding Weight}" />
-                            <Label Content="{Binding CacheElem.StatusString}" Foreground="{Binding Color}" FontWeight="{Binding Weight}" />
-                            <Label Content="{Binding CacheElem.OriginalText}" Foreground="{Binding Color}" FontWeight="{Binding Weight}" />
+                        <StackPanel Orientation="Horizontal" Background="{Binding BackgroundColor}">
+                            <CheckBox IsChecked="{Binding IsConfirm}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="SetConfirmOnCache"/>
+                            <CheckBox IsChecked="{Binding HasConflict}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="SetResolvedOnCache"/>
+                            <Label Content="{Binding CacheElem.Id}" Foreground="{Binding Color}" FontWeight="{Binding Weight}"/>
+                            <Label Content="{Binding CacheElem.StatusString}" Foreground="{Binding Color}" FontWeight="{Binding Weight}"/>
+                            <Label Content="{Binding CacheElem.OriginalText}" Foreground="{Binding Color}" FontWeight="{Binding Weight}"/>
                         </StackPanel>
                     </DataTemplate>
                 </ListBox.ItemTemplate>
@@ -112,6 +112,7 @@
                     <ComboBoxItem Content="{DynamicResource withoutTranslationComboItemTranslate}" />
                     <ComboBoxItem Content="{DynamicResource withoutConfirmationComboItemTranslate}" />
                     <ComboBoxItem Content="{DynamicResource withConflictComboItemTranslate}" />
+                    <ComboBoxItem Content="{DynamicResource allInactive}" />
                 </ComboBox>
                 <ComboBox x:Name="cbGroups" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Style="{StaticResource fontBase}" FontSize="{DynamicResource smallFontSize}" SelectionChanged="CbGroups_SelectionChanged" Grid.Column="2" Grid.Row="1">
                     <ComboBoxItem Content="{DynamicResource allComboItemTranslate}" Selector.IsSelected="True"/>

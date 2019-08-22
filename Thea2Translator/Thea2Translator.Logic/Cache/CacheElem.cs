@@ -7,21 +7,19 @@ namespace Thea2Translator.Logic
     public class CacheElem
     {
         public static string ConflictSeparator = "\r\n===============\r\n";
+
         public FilesType Type { get; private set; }
         public int Id { get; private set; }
         public string StatusString { get; private set; }
 
         public int Flag { get; private set; }
-        public bool IsCorrectedByHuman
-        {
-            get { return FlagHelper.IsSettedBit(Flag, 0); }
-            private set { Flag = FlagHelper.GetSettedBitValue(Flag, 0, value); }
-        }
-        public bool HasConflict
-        {
-            get { return FlagHelper.IsSettedBit(Flag, 1); }
-            private set { Flag = FlagHelper.GetSettedBitValue(Flag, 1, value); }
-        }
+        public bool IsCorrectedByHuman { get { return FlagHelper.IsSettedBit(Flag, 0); } private set { Flag = FlagHelper.GetSettedBitValue(Flag, 0, value); } }
+        public bool HasConflict { get { return FlagHelper.IsSettedBit(Flag, 1); } private set { Flag = FlagHelper.GetSettedBitValue(Flag, 1, value); } }
+        public bool IsGenericName { get { return FlagHelper.IsSettedBit(Flag, 2); } private set { Flag = FlagHelper.GetSettedBitValue(Flag, 2, value); } }
+        public bool IsInactive { get { return FlagHelper.IsSettedBit(Flag, 3); } private set { Flag = FlagHelper.GetSettedBitValue(Flag, 3, value); } }
+        public bool IsActive { get { return !IsInactive; } private set { IsInactive = !value; } }
+        public bool IsMale { get { return FlagHelper.IsSettedBit(Flag, 4); } private set { Flag = FlagHelper.GetSettedBitValue(Flag, 4, value); } }
+        public bool IsFemale { get { return FlagHelper.IsSettedBit(Flag, 5); } private set { Flag = FlagHelper.GetSettedBitValue(Flag, 5, value); } }
 
         public string Key { get; private set; }
         /// <summary>
@@ -66,6 +64,16 @@ namespace Thea2Translator.Logic
         public bool IsDataBaseElem { get { return Type == FilesType.DataBase; } }
         public bool IsModulesElem { get { return Type == FilesType.Modules; } }
         public bool IsNamesElem { get { return Type == FilesType.Names; } }
+        public bool IsDescription
+        {
+            get
+            {
+                if (!IsDataBaseElem) return false;
+                string lastPart = Key.Substring(Key.Length - 4);
+                string lastPartWithNumber = Key.Substring(Key.Length - 5, 4);
+                return (lastPart == "_DES" || lastPartWithNumber == "_DES");
+            }
+        }
 
         public bool ToTranslate { get { return !IsCorrectedByHuman && TextHelper.EqualsTexts(OriginalText, TranslatedText); } }
         public bool ToConfirm { get { return !IsCorrectedByHuman; } }
@@ -81,7 +89,7 @@ namespace Thea2Translator.Logic
         public CacheElem(FilesType type, int id, string key, string inputText)
         {
             Type = type;
-            Id = id;
+            if (type != FilesType.Names) Id = id;
             Flag = 0;
             Key = key;
             if (IsModulesElem) Key = "";
@@ -90,7 +98,23 @@ namespace Thea2Translator.Logic
             TranslatedText = OriginalText;
             OutputText = InputText;
             Groups = new List<string>();
-            StatusString = string.Empty;
+            StatusString = GetCommonStatusString();
+        }
+
+        public CacheElem(string collection, string race, List<string> subraces, string gender, string name)
+        {
+            Type = FilesType.Names;
+            Flag = 0;
+            IsCorrectedByHuman = true;
+            IsGenericName = true;
+            SetGender(gender);
+            Key = GetNameKey(collection, race, subraces, gender, name);
+            InputText = name;
+            OriginalText = name;
+            TranslatedText = name;
+            OutputText = name;
+            Groups = GetNameGroups(collection, race, subraces, gender);
+            StatusString = GetCommonStatusString();
         }
 
         public CacheElem(FilesType type, XmlNode element)
@@ -99,7 +123,7 @@ namespace Thea2Translator.Logic
 
             if (element.Attributes != null)
             {
-                Id = int.Parse(element.Attributes["ID"]?.Value);
+                if (type != FilesType.Names) Id = int.Parse(element.Attributes["ID"]?.Value);
                 Key = element.Attributes["Key"]?.Value.ToString();
                 Flag = int.Parse(element.Attributes["Flag"]?.Value);
             }
@@ -132,7 +156,7 @@ namespace Thea2Translator.Logic
                 ConflictTranslatedText = TranslatedText;
             }
 
-            StatusString = string.Empty;
+            StatusString = GetCommonStatusString();
         }
 
         public bool WithConflictText()
@@ -164,14 +188,14 @@ namespace Thea2Translator.Logic
         {
             if (!string.IsNullOrEmpty(ToCompareText)) return ToCompareText;
             ToCompareText = InputText;
-            if (IsDataBaseElem) ToCompareText= Key;
+            if (IsDataBaseElem || IsNamesElem) ToCompareText = Key;
             ToCompareText = TextHelper.PrepereToCompare(ToCompareText);
             return ToCompareText;
         }
 
         private void SetNewTextToCompare(string newText)
         {
-            if (IsDataBaseElem) return;
+            if (IsDataBaseElem || IsNamesElem) return;
             InputText = newText;
             ToCompareText = newText;
         }
@@ -179,7 +203,8 @@ namespace Thea2Translator.Logic
         public XmlNode ToXmlNode(XmlDocument doc)
         {
             XmlNode elementNode = doc.CreateElement("Element");
-            elementNode.Attributes.Append(XmlHelper.GetAttribute(doc, "ID", Id.ToString()));
+            if (Type != FilesType.Names)
+                elementNode.Attributes.Append(XmlHelper.GetAttribute(doc, "ID", Id.ToString()));
             elementNode.Attributes.Append(XmlHelper.GetAttribute(doc, "Key", Key));
             elementNode.Attributes.Append(XmlHelper.GetAttribute(doc, "Flag", Flag.ToString()));
 
@@ -228,9 +253,30 @@ namespace Thea2Translator.Logic
             if (withChanged) SetChanged(true);
         }
 
+        public void SetActivation(bool how) { IsActive = how; }
+        public void SetConfirmedtion(bool how) { IsCorrectedByHuman = how; }
+        public void SetGender(string gender)
+        {
+            IsMale = (gender == NameGeneratorElem.MaleString);
+            IsFemale = (gender == NameGeneratorElem.FemaleString);
+        }
+
         public void SetChanged(bool how)
         {
-            StatusString = how ? "*" : string.Empty;
+            var status = GetCommonStatusString();
+            if (how) status += "🖊️";
+            StatusString = status;
+        }
+
+        public string GetCommonStatusString()
+        {
+            var status = string.Empty;
+            if (IsInactive) status += "🚫";
+            if (HasConflict) status += "⚠️";
+            if (IsMale) status += "♂️";
+            if (IsFemale) status += "♀️";
+            if (IsDescription) status += "📖";
+            return status;
         }
 
         public void SetConfirmation(bool confirm)
@@ -256,8 +302,10 @@ namespace Thea2Translator.Logic
             SetConfirmation(!IsCorrectedByHuman);
         }
 
-        public void TryUpdateValue(string text)
+        public void TryUpdateValue(string text, bool withActivation)
         {
+            if (withActivation) IsActive = true;
+
             if (TextHelper.EqualsTexts(InputText, text))
                 return;
 
@@ -388,6 +436,39 @@ namespace Thea2Translator.Logic
         public void AddNavigationNextAdventureElem(NavigationNextAdventureElem navigationNextAdventureElem)
         {
             NavigationNextAdventureElems.Add(navigationNextAdventureElem);
+        }
+
+        public static string GetNameKey(string collection, string race, List<string> subraces, string gender, string name)
+        {
+            var ret = $"{collection}:{race}:";
+            if (subraces != null && subraces.Count > 0) ret += $"{string.Join(",", subraces.ToArray())}";
+            ret += $":{gender}:{name}";
+            return ret;
+        }
+
+        public static List<string> GetNameGroups(string collection, string race, List<string> subraces, string gender)
+        {
+            var ret = new List<string>();
+            ret.Add(collection);
+            if (!string.IsNullOrEmpty(race))
+            {
+                ret.Add(race);
+                ret.Add($"{race}_{gender}");
+            }
+
+            if (subraces != null)
+            {
+                foreach (var subrace in subraces)
+                {
+                    if (string.IsNullOrEmpty(subrace))
+                        continue;
+
+                    ret.Add(subrace);
+                    ret.Add($"{subrace}_{gender}");
+                }
+            }
+
+            return ret;
         }
     }
 }

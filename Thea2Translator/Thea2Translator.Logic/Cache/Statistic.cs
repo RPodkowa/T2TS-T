@@ -30,7 +30,8 @@ namespace Thea2Translator.Logic.Cache
         {
             Type = dataCache.GetFileType();
 
-            var allElements = dataCache.CacheElems;
+            var allElements = dataCache.CacheElems.Where(x => x.IsActive).ToList();
+
             AllItemsCount = allElements.Count;
 
             TranslatedItemsCount = allElements.Count(e => !e.ToTranslate);

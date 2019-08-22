@@ -13,6 +13,7 @@ namespace Thea2Translator.Logic
         Names,
         Vocabulary,
         Navigation,
-        Status
+        Status,
+        NamesGenerator
     }
 }

@@ -95,6 +95,7 @@ namespace Thea2Translator.Logic
             {
                 case FilesType.DataBase: usageCount = UsageCountDataBase; break;
                 case FilesType.Modules: usageCount = UsageCountModules; break;
+                case FilesType.Names: usageCount = UsageCountDataBase + UsageCountModules; break;
             }
 
             return usageCount;

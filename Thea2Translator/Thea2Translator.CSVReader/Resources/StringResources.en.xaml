@@ -46,6 +46,7 @@
     <system:String x:Key="startGroupsComboItemTranslate">Starting the adventure</system:String>
     <system:String x:Key="withoutTranslationComboItemTranslate">Without translation</system:String>
     <system:String x:Key="withoutConfirmationComboItemTranslate">Without confirmation</system:String>
+    <system:String x:Key="allInactive">Inactive</system:String>
 
     <system:String x:Key="titleLabelDictinary">Dictinary</system:String>
     <system:String x:Key="usageCountLabelDictinary">Usage count</system:String>

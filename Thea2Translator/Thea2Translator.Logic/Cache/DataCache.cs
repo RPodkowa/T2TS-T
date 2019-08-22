@@ -14,7 +14,7 @@ namespace Thea2Translator.Logic
         public IList<string> Groups { get; private set; }
         public Vocabulary Vocabulary { get; private set; }
         public Navigation Navigation { get; private set; }
-        
+
         private readonly FilesType Type;
         private readonly string FullPath;
         private int CurrentId;
@@ -129,9 +129,6 @@ namespace Thea2Translator.Logic
 
         private void ReloadVocabulary()
         {
-            if (Type == FilesType.Names)
-                return;
-
             Vocabulary = new Vocabulary(Type);
             Vocabulary.Reload(this);
         }
@@ -187,13 +184,21 @@ namespace Thea2Translator.Logic
             StartProcess(AlgorithmStep.ImportFromSteam.ToString(), 3);
             ReloadElems();
             StartNextProcessStep();
-            ReadSteamFiles();
+            ReadSteamFiles(true);
             StartNextProcessStep();
             SaveElems();
             StopProcess();
         }
-        private void ReadSteamFiles()
+        private void ReadSteamFiles(bool withInactivation)
         {
+            if (withInactivation)
+            {
+                foreach (var cacheElem in CacheElems)
+                {
+                    cacheElem.SetActivation(false);
+                }
+            }
+
             string[] files = FileHelper.GetFiles(GetDirectoryName(AlgorithmStep.ImportFromSteam));
             if (files == null) return;
 
@@ -203,7 +208,7 @@ namespace Thea2Translator.Logic
             {
                 if (IsDataBaseCache) ProcessFileDataBase(file, false);
                 if (IsModulesCache) ProcessFileModules(file, false);
-                if (IsNamesCache) ProcessFileNames(file, false);
+                if (IsNamesCache) ProcessFileNamesLoad(file);
             }
 
             if (IsModulesCache)
@@ -323,7 +328,7 @@ namespace Thea2Translator.Logic
             {
                 if (IsDataBaseCache) ProcessFileDataBase(file, true);
                 if (IsModulesCache) ProcessFileModules(file, true);
-                if (IsNamesCache) ProcessFileNames(file, true);
+                //if (IsNamesCache) ProcessFileNames(file, true);
             }
         }
         #endregion
@@ -366,11 +371,11 @@ namespace Thea2Translator.Logic
                     var elem = GetElem(key);
                     if (elem != null)
                     {
-                        elem.TryUpdateValue(val);
+                        elem.TryUpdateValue(val, true);
                         continue;
                     }
 
-                    TryAddToCacheWithGroupAndGetId(key, val, TextHelper.GetGroupsFromKey(key, false));
+                    GetUpdatedOrCreatedElem(key, val, TextHelper.GetGroupsFromKey(key, false), true);
                 }
                 else
                 {
@@ -422,7 +427,7 @@ namespace Thea2Translator.Logic
                     var inputText = node.InnerText;
                     if (!saveToFile)
                     {
-                        var nodeId = TryAddToCacheWithGroupAndGetId(inputText, TextHelper.GetGroupsFromKey(group, true));
+                        var nodeId = GetUpdatedOrCreatedElemId(inputText, TextHelper.GetGroupsFromKey(group, true), true);
                         Navigation.SetNodeElementId(nodeId, adventureInfo, adventureNodeId);
                     }
                     else
@@ -451,7 +456,7 @@ namespace Thea2Translator.Logic
 
                         if (!saveToFile)
                         {
-                            var outputId = TryAddToCacheWithGroupAndGetId(inputTextName, TextHelper.GetGroupsFromKey(group, true));
+                            var outputId = GetUpdatedOrCreatedElemId(inputTextName, TextHelper.GetGroupsFromKey(group, true), true);
                             Navigation.SetOutputElementId(outputId, adventureInfo, adventureNodeId, targetID);
                         }
                         else
@@ -464,7 +469,6 @@ namespace Thea2Translator.Logic
                                     output.Attributes["name"].Value = TextHelper.ReplacePolishChars(elem.OutputText);
                             }
                         }
-
                     }
                 }
             }
@@ -476,11 +480,18 @@ namespace Thea2Translator.Logic
                 doc.Save(newFile);
             }
         }
-        private void ProcessFileNames(string file, bool saveToFile)
+        private void ProcessFileNamesLoad(string file)
         {
             var fileName = Path.GetFileNameWithoutExtension(file);
             if (fileName != "DATABASE_DES_NAMES")
                 return;
+
+            ((List<CacheElem>)(CacheElems)).RemoveAll(x => x.IsGenericName);
+
+            var newCacheElems = new List<CacheElem>();
+
+            var nameGenerator = new NameGenerator();
+            nameGenerator.LoadFromFile();
 
             XmlDocument doc = new XmlDocument();
             doc.Load(file);
@@ -488,49 +499,75 @@ namespace Thea2Translator.Logic
             foreach (XmlNode collection in collections)
             {
                 var collectionName = collection.Name;
-                collectionName = collectionName.Replace("NAME_COLLECTION-", "");
+                var nameGeneratorElem = nameGenerator.GetElemByCollectionName(collectionName);
                 var collectionElems = collection.ChildNodes;
+
+                bool elemActivation = true;
+                bool groupConfirmation = false;
+                if (nameGeneratorElem != null)
+                {
+                    elemActivation = !nameGeneratorElem.IsDeactivation;
+                    groupConfirmation = nameGeneratorElem.IsConfirmation;
+                }
+                
+                var raceNames = new List<string>();
+                var subRaceNames = new List<string>();
+
                 foreach (XmlNode collectionElem in collectionElems)
                 {
                     var collectionElemName = collectionElem.Name;
-                    if (collectionElemName != "CharacterMale" && collectionElemName != "CharacterFemale")
-                        continue;
-
-                    collectionElemName = $"{collectionName}_{collectionElemName}";
 
                     if (collectionElem.Attributes == null)
                         continue;
 
-                    var collectionElemValue = collectionElem.Attributes["Value"]?.Value;
-                    var key = $"{collectionElemValue}_{collectionElemName}";
-                    if (!saveToFile)
+                    var name = collectionElem.Attributes["Value"]?.Value;
+                    var gender = "";
+
+                    switch (collectionElemName)
                     {
-                        var elem = GetElem(key);
-                        if (elem != null)
-                        {
-                            elem.TryUpdateValue(collectionElemValue);
-                            continue;
-                        }
-                        
-                        var groups = new List<string>() { collectionName, collectionElemName };
-                        TryAddToCacheWithGroupAndGetId(key, collectionElemValue, groups);
+                        case "Race": raceNames.Add(name); break;
+                        case "Subrace": subRaceNames.Add(name); break;
+                        case "CharacterMale":
+                        case "CharacterFemale":
+                            gender = collectionElemName;
+                            break;
+                        default:
+                            throw new Exception($"Cos nie tak '{collectionElemName}'");
+                    }
+
+                    if (string.IsNullOrEmpty(gender))
+                        continue;
+
+                    var key = CacheElem.GetNameKey(collectionName, string.Join("_", raceNames.ToArray()), subRaceNames, gender, name);
+
+                    var elem = GetElem(key);
+                    if (elem != null)
+                    {
+                        elem.TryUpdateValue(name, elemActivation);                        
                     }
                     else
                     {
-                        var elem = GetElem(key);
-                        if (elem == null) continue;
-
-                        collectionElem.Attributes["Value"].Value = elem.OutputText;
+                        var groups = CacheElem.GetNameGroups(collectionName, string.Join("_", raceNames.ToArray()), subRaceNames, gender);
+                        elem = GetUpdatedOrCreatedElem(key, name, groups, elemActivation);
                     }
+                    if (elem == null) throw new Exception($"Cos nie tak :-( '{collectionElemName}'");
+
+                    elem.SetActivation(elemActivation);
+                    elem.SetGender(gender);
+                    if (!elem.IsCorrectedByHuman) elem.SetConfirmedtion(groupConfirmation);
+
+                    newCacheElems.Add(elem);
+                }
+
+                // Na koniec dodaje z generatora
+                if (nameGeneratorElem != null)
+                {
+                    nameGeneratorElem.InsertCacheElems(newCacheElems);
+                    continue;
                 }
             }
 
-            if (saveToFile)
-            {
-                string path = FileHelper.GetCreatedPath(GetDirectoryName(AlgorithmStep.ExportToSteam));
-                string newFile = path + Path.GetFileName(file);
-                doc.Save(newFile);
-            }
+            CacheElems = newCacheElems;
         }
 
         private CacheElem GetElem(string key)
@@ -572,26 +609,33 @@ namespace Thea2Translator.Logic
             return file += sufix;
         }
 
-        private int TryAddToCacheWithGroupAndGetId(string value, List<string> groups)
+        private int GetUpdatedOrCreatedElemId(string value, List<string> groups, bool withActivation)
         {
-            return TryAddToCacheWithGroupAndGetId(value, value, groups);
+            var elem = GetUpdatedOrCreatedElem(value, value, groups, withActivation);
+            if (elem == null) return 0;
+            return elem.Id;
         }
 
-        private int TryAddToCacheWithGroupAndGetId(string key, string value, List<string> groups)
+        private CacheElem GetUpdatedOrCreatedElem(string value, List<string> groups, bool withActivation)
+        {
+            return GetUpdatedOrCreatedElem(value, value, groups, withActivation);
+        }
+
+        private CacheElem GetUpdatedOrCreatedElem(string key, string value, List<string> groups, bool withActivation)
         {
             if (string.IsNullOrEmpty(key))
-                return 0;
+                return null;
 
             var elem = GetElem(key);
-            if (elem != null)
+            if (elem != null)            
+                elem.AddGroups(groups);            
+            else
             {
-                elem.AddGroups(groups);
-                return elem.Id;
+                elem = CreateElem(key, value, groups);
+                CacheElems.Add(elem);
             }
-
-            elem = CreateElem(key, value, groups);
-            CacheElems.Add(elem);
-            return elem.Id;
+            if (withActivation) elem.SetActivation(true);
+            return elem;
         }
 
         public string GetDirectoryName(AlgorithmStep step)

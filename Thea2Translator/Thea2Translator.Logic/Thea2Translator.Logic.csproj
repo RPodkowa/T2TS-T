@@ -114,6 +114,9 @@
     <Compile Include="Helpers\ImageHelper.cs" />
     <Compile Include="Helpers\JsonHelper.cs" />
     <Compile Include="Helpers\XmlHelper.cs" />
+    <Compile Include="NameGenerator\NameGenerator.cs" />
+    <Compile Include="NameGenerator\NameGeneratorElem.cs" />
+    <Compile Include="NameGenerator\NameGeneratorElemCollection.cs" />
     <Compile Include="Navigation\Navigation.cs" />
     <Compile Include="Navigation\NavigationNextAdventureElem.cs" />
     <Compile Include="Navigation\NavigationStartGroup.cs" />

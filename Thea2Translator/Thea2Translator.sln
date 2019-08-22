@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thea2Translator.DesktopApp"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thea2Translator.Logic", "Thea2Translator.Logic\Thea2Translator.Logic.csproj", "{9A00A297-D602-4D39-A138-B0A7972656F1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thea2Translator.ModsDownloader", "Thea2Translator.ModsDownloader\Thea2Translator.ModsDownloader.csproj", "{084A7A4C-6431-442B-B85B-95B226FD0DF0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +43,18 @@ Global
 		{9A00A297-D602-4D39-A138-B0A7972656F1}.Release|x64.Build.0 = Release|x64
 		{9A00A297-D602-4D39-A138-B0A7972656F1}.Release|x86.ActiveCfg = Release|x86
 		{9A00A297-D602-4D39-A138-B0A7972656F1}.Release|x86.Build.0 = Release|x86
+		{084A7A4C-6431-442B-B85B-95B226FD0DF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{084A7A4C-6431-442B-B85B-95B226FD0DF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{084A7A4C-6431-442B-B85B-95B226FD0DF0}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{084A7A4C-6431-442B-B85B-95B226FD0DF0}.Debug|x64.Build.0 = Debug|Any CPU
+		{084A7A4C-6431-442B-B85B-95B226FD0DF0}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{084A7A4C-6431-442B-B85B-95B226FD0DF0}.Debug|x86.Build.0 = Debug|Any CPU
+		{084A7A4C-6431-442B-B85B-95B226FD0DF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{084A7A4C-6431-442B-B85B-95B226FD0DF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{084A7A4C-6431-442B-B85B-95B226FD0DF0}.Release|x64.ActiveCfg = Release|Any CPU
+		{084A7A4C-6431-442B-B85B-95B226FD0DF0}.Release|x64.Build.0 = Release|Any CPU
+		{084A7A4C-6431-442B-B85B-95B226FD0DF0}.Release|x86.ActiveCfg = Release|Any CPU
+		{084A7A4C-6431-442B-B85B-95B226FD0DF0}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

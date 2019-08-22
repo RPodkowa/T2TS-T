@@ -24,6 +24,7 @@ namespace Thea2Translator.DesktopApp.Pages
         public static RoutedCommand ConfirmCommand = new RoutedCommand(); //Ctrl+P
         public static RoutedCommand ConflictCommand = new RoutedCommand(); //Ctrl+K
         public static RoutedCommand GoogleCommand = new RoutedCommand(); //Ctrl+G
+        public static RoutedCommand ElemInfoCommand = new RoutedCommand(); //Ctrl+I
         public static RoutedCommand NextItemCommand = new RoutedCommand(); //Ctrl+Down
         public static RoutedCommand PrevItemCommand = new RoutedCommand(); //Ctrl+Up
         public static RoutedCommand NextQuestItemCommand = new RoutedCommand(); //Ctrl+Right
@@ -483,6 +484,7 @@ namespace Thea2Translator.DesktopApp.Pages
             AddCommand(ConfirmCommand, new KeyGesture(Key.P, ModifierKeys.Control, "Ctrl+P"), "Potwierdź");
             AddCommand(ConflictCommand, new KeyGesture(Key.K, ModifierKeys.Control, "Ctrl+K"), "Rozwiązany konflikt");
             AddCommand(GoogleCommand, new KeyGesture(Key.G, ModifierKeys.Control, "Ctrl+G"), "Google");
+            AddCommand(ElemInfoCommand, new KeyGesture(Key.I, ModifierKeys.Control, "Ctrl+I"), "Informacja o elemencie");            
             AddCommand(PrevItemCommand, new KeyGesture(Key.Down, ModifierKeys.Alt, "Alt+Góra"), "Poprzednia fraza");
             AddCommand(NextItemCommand, new KeyGesture(Key.Up, ModifierKeys.Alt, "Alt+Dół"), "Następna fraza");
             AddCommand(PrevQuestItemCommand, new KeyGesture(Key.Left, ModifierKeys.Alt, "Alt+Lew"), "Przygoda - Wstecz");
@@ -511,6 +513,7 @@ namespace Thea2Translator.DesktopApp.Pages
             if (keyGesture.Key == Key.P && keyGesture.Modifiers == ModifierKeys.Control) ChangeConfirmation();
             if (keyGesture.Key == Key.K && keyGesture.Modifiers == ModifierKeys.Control) ChangeConflictResolved();
             if (keyGesture.Key == Key.G && keyGesture.Modifiers == ModifierKeys.Control) OpenGoogleTranslate();
+            if (keyGesture.Key == Key.I && keyGesture.Modifiers == ModifierKeys.Control) ShowElementInfo();
             if (keyGesture.Key == Key.Up && keyGesture.Modifiers == ModifierKeys.Alt) ChooseItem(false);
             if (keyGesture.Key == Key.Down && keyGesture.Modifiers == ModifierKeys.Alt) ChooseItem(true);
             if (keyGesture.Key == Key.Left && keyGesture.Modifiers == ModifierKeys.Alt) UseNavigationFromMenu(false);
@@ -547,6 +550,7 @@ namespace Thea2Translator.DesktopApp.Pages
 
             dataCache.UpdateVocabulary(vocabulary);
             dataCache.SaveElems(true);
+            FilterItems();
 
             if (withChangeConfirmation) ChooseItem(true);
         }
@@ -567,6 +571,13 @@ namespace Thea2Translator.DesktopApp.Pages
                 wbGoogleTranslate.Address = link;
                 btnOpenGoogle.IsEnabled = false;
             }
+        }
+        private void ShowElementInfo()
+        {
+            if (selectedCacheElement == null)
+                return;
+
+            MessageBox.Show(selectedCacheElement.CacheElem.GetElemInfoString());
         }
         private void ChooseItem(bool next)
         {

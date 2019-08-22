@@ -98,7 +98,7 @@ namespace Thea2Translator.Logic
             TranslatedText = OriginalText;
             OutputText = InputText;
             Groups = new List<string>();
-            StatusString = GetCommonStatusString();
+            RefreshStatusString();
         }
 
         public CacheElem(string collection, string race, List<string> subraces, string gender, string name)
@@ -114,7 +114,7 @@ namespace Thea2Translator.Logic
             TranslatedText = name;
             OutputText = name;
             Groups = GetNameGroups(collection, race, subraces, gender);
-            StatusString = GetCommonStatusString();
+            RefreshStatusString();
         }
 
         public CacheElem(FilesType type, XmlNode element)
@@ -156,6 +156,11 @@ namespace Thea2Translator.Logic
                 ConflictTranslatedText = TranslatedText;
             }
 
+            RefreshStatusString();
+        }
+
+        private void RefreshStatusString()
+        {
             StatusString = GetCommonStatusString();
         }
 
@@ -251,6 +256,7 @@ namespace Thea2Translator.Logic
             OutputText = TextHelper.UnNormalize(text, Specials);
             OldTranslatedText = "";
             if (withChanged) SetChanged(true);
+            else RefreshStatusString();
         }
 
         public void SetActivation(bool how) { IsActive = how; }
@@ -268,14 +274,15 @@ namespace Thea2Translator.Logic
             StatusString = status;
         }
 
-        public string GetCommonStatusString()
+        private string GetCommonStatusString()
         {
             var status = string.Empty;
             if (IsInactive) status += "🚫";
             if (HasConflict) status += "⚠️";
+            if (IsGenericName) status += "⚙️";
             if (IsMale) status += "♂️";
             if (IsFemale) status += "♀️";
-            if (IsDescription) status += "📖";
+            if (IsDescription) status += "📖";            
             return status;
         }
 
@@ -295,6 +302,8 @@ namespace Thea2Translator.Logic
                 ConfirmationUser = "";
                 ConfirmationGuid = "";
             }
+
+            RefreshStatusString();
         }
 
         public void ChangeConfirmation()
@@ -469,6 +478,78 @@ namespace Thea2Translator.Logic
             }
 
             return ret;
+        }
+
+        public string GetElemInfoString()
+        {
+            if (IsDataBaseElem) return GetDataBaseElemInfoString();
+            if (IsModulesElem) return GetModulesElemInfoString();
+            if (IsNamesElem) return GetNamesElemInfoString();
+
+            return "???";
+        }
+
+        private string GetDataBaseElemInfoString()
+        {
+            var stringList = new List<string>();
+
+            stringList.Add($"ID ='{Id}' Key='{Key}'");
+            stringList.Add($"Status='{StatusString}'");
+            stringList.Add(GetConfirmationInfoString());
+
+            return string.Join("\r\n", stringList.ToArray());
+        }
+
+        private string GetModulesElemInfoString()
+        {
+            var stringList = new List<string>();
+            stringList.Add($"ID ='{Id}'");
+            stringList.Add(GetGroupsInfoString(6));
+            stringList.Add(GetConfirmationInfoString());
+            return string.Join("\r\n", stringList.ToArray());
+        }
+
+        private string GetNamesElemInfoString()
+        {
+            var stringList = new List<string>();
+            stringList.Add($"Key='{Key}'");
+            stringList.Add($"Status='{StatusString}'");
+            stringList.Add(GetGroupsInfoString(10));
+            stringList.Add(GetConfirmationInfoString());
+            return string.Join("\r\n", stringList.ToArray());
+        }
+
+        private string GetConfirmationInfoString()
+        {
+            var stringList = new List<string>();
+
+            if (!IsCorrectedByHuman)
+            {
+                stringList.Add("Niezatwierdzone");
+            }
+            else
+            {
+                stringList.Add($"Zatwierdzono: '{ConfirmationTime}'");
+                stringList.Add($"Zatwierdzający: '{ConfirmationUser}' ({ConfirmationGuid})");
+            }
+
+            return string.Join("\r\n", stringList.ToArray());
+        }
+
+        private string GetGroupsInfoString(int limit)
+        {
+            if (Groups == null)
+                return "Błąd: Brak grup";
+
+            var stringList = new List<string>();
+
+            stringList.Add($"Występowanie: {Groups.Count} grup");
+            for (int i = 0; i < Groups.Count && i < limit; i++)
+            {
+                stringList.Add($"\tGrupa[{i}]: '{Groups[i]}'");
+            }
+
+            return string.Join("\r\n", stringList.ToArray());
         }
     }
 }

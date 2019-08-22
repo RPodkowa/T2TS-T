@@ -50,14 +50,19 @@ namespace Thea2Translator.DesktopApp.Pages.ModuleSelectionPages
 
         private void btnDownloadFiles_Click(object sender, RoutedEventArgs e)
         {
-            ProcessSynhronization(true);
+            ProcessSynhronization(SynchronizationMode.Download);
+        }
+
+        private void btnRefreshFiles_Click(object sender, RoutedEventArgs e)
+        {
+            ProcessSynhronization(SynchronizationMode.Refresh);
         }
 
         private void btnUploadFiles_Click(object sender, RoutedEventArgs e)
         {
-            ProcessSynhronization(false);
+            ProcessSynhronization(SynchronizationMode.Upload);
         }
-        
+
         private void ClearProgressBar()
         {
             this.Dispatcher.Invoke(() =>
@@ -83,6 +88,7 @@ namespace Thea2Translator.DesktopApp.Pages.ModuleSelectionPages
         private void SetButtonEnableProp(bool isEnable)
         {
             btnDownloadFiles.IsEnabled = isEnable;
+            btnRefreshFiles.IsEnabled = isEnable;
             btnUploadFiles.IsEnabled = isEnable;
 
             btnChooseDataBase.IsEnabled = isEnable;
@@ -91,7 +97,7 @@ namespace Thea2Translator.DesktopApp.Pages.ModuleSelectionPages
             btnVocabulary.IsEnabled = isEnable;
         }
 
-        private void ProcessSynhronization(bool download)
+        private void ProcessSynhronization(SynchronizationMode synchronizationMode)
         {
             Task.Run(() =>
             {
@@ -110,15 +116,27 @@ namespace Thea2Translator.DesktopApp.Pages.ModuleSelectionPages
                         });
 
                         ProcessResult result = null;
-                        if (download)
+                        switch (synchronizationMode)
                         {
-                            result = synchronization.DownloadCache();
-                            var workingNow = synchronization.WorkingNow();
-                            if (!string.IsNullOrEmpty(workingNow)) result.AddMessage($"\r\nAktualnie pracujacy: {workingNow}");
-                        }
-                        else
-                        {
-                            result = synchronization.UploadCache();
+                            case SynchronizationMode.Download:
+                                {
+                                    result = synchronization.DownloadCache();
+                                    var workingNow = synchronization.WorkingNow();
+                                    if (!string.IsNullOrEmpty(workingNow)) result.AddMessage($"\r\nAktualnie pracujący: {workingNow}");
+                                }
+                                break;
+                            case SynchronizationMode.Refresh:
+                                {
+                                    result = synchronization.RefreshCache();
+                                    var workingNow = synchronization.WorkingNow();
+                                    if (!string.IsNullOrEmpty(workingNow)) result.AddMessage($"\r\nAktualnie pracujący: {workingNow}");
+                                }
+                                break;
+                            case SynchronizationMode.Upload:
+                                {
+                                    result = synchronization.UploadCache();
+                                }
+                                break;
                         }
 
                         synchronization.StatusChanged -= UpdateStatus;

@@ -50,6 +50,7 @@
 
         <system:String x:Key="translateFileLabelModuleSelection">Translation Files</system:String>
         <system:String x:Key="downloadButtonModuleSelection">Download</system:String>
+        <system:String x:Key="refreshButtonModuleSelection">Refresh</system:String>
         <system:String x:Key="uploadButtonModuleSelection">Upload</system:String>
 
         <system:String x:Key="moduleLabelModuleSelection">Modules</system:String>

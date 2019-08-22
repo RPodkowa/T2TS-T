@@ -55,5 +55,13 @@ namespace Thea2Translator.Logic
         {
             NameGeneratorElems.Add(elem);
         }
+
+        public static void MergeCache()
+        {
+            //Narazie nie merguje, chyba nie ma takiego powodu, biore jak jest z olda
+            var original = new NameGenerator(DirectoryType.CacheOld);
+            if (!FileHelper.FileExists(original.FullPath)) original = new NameGenerator(DirectoryType.Original);
+            FileHelper.CopyFile(original.FullPath, DirectoryType.Cache);
+        }
     }
 }

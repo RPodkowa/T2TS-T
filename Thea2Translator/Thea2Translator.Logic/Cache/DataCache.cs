@@ -685,6 +685,12 @@ namespace Thea2Translator.Logic
                 return;
             }
 
+            if (type == FilesType.NamesGenerator)
+            {
+                NameGenerator.MergeCache();
+                return;
+            }
+
             var original = new DataCache(type, DirectoryType.Original);
             var originalOld = new DataCache(type, DirectoryType.OriginalOld);
             var cacheOld = new DataCache(type, DirectoryType.CacheOld);

@@ -8,6 +8,13 @@ using Thea2Translator.Logic.Helpers;
 
 namespace Thea2Translator.Logic.Cache
 {
+    public enum SynchronizationMode
+    {
+        Download,
+        Refresh,
+        Upload
+    }
+
     public class Synchronization: ProcessHelper
     {
         public string WorkingNow()
@@ -21,19 +28,21 @@ namespace Thea2Translator.Logic.Cache
             if (DataCache.HasConflicts(FilesType.DataBase)) return true;
             if (DataCache.HasConflicts(FilesType.Modules)) return true;
             if (DataCache.HasConflicts(FilesType.Names)) return true;
-            if (DataCache.HasConflicts(FilesType.NamesGenerator)) return true;
             if (DataCache.HasConflicts(FilesType.Vocabulary)) return true;
             return false;
         }
 
         #region Download
-        public ProcessResult DownloadCache(bool forUpload = false)
+        public ProcessResult DownloadCache(SynchronizationMode forMode = SynchronizationMode.Download)
         {
             if (HasConflictsInCacheFiles())            
-                return new ProcessResult(false, "Przed ściągnięciem plików z serwera należy rozwiązać konflikty!");            
-                        
+                return new ProcessResult(false, "Przed ściągnięciem plików z serwera należy rozwiązać konflikty!");
+
+            bool forUpload = forMode == SynchronizationMode.Upload;
+            bool forRefresh = forMode == SynchronizationMode.Refresh;
+
             ////////////////////////////////////////////////////////////////////////////////////////////////////////
-            if (forUpload) StartNextProcessStep();
+            if (forUpload || forRefresh) StartNextProcessStep();
             else StartProcess("Download cache", 5);
             if (FileHelper.LocalDirectoryExists(DirectoryType.Original))
                 FileHelper.MoveFiles(DirectoryType.Original, DirectoryType.OriginalOld);
@@ -53,7 +62,10 @@ namespace Thea2Translator.Logic.Cache
 
             ////////////////////////////////////////////////////////////////////////////////////////////////////////
             StartNextProcessStep();
-            SendToLogs(forUpload ? "DownloadForUpload" : "Download");
+            string LogText = "Download";
+            if (forUpload) LogText = "DownloadForUpload";
+            if (forRefresh) LogText = "DownloadForRefresh";
+            SendToLogs(LogText);
             MergeFiles();
 
             ////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -61,11 +73,8 @@ namespace Thea2Translator.Logic.Cache
             RemoveFilesAfterDownload();
 
             ////////////////////////////////////////////////////////////////////////////////////////////////////////
-            if (!forUpload)
-            {
-                AddWorkingInfo();
-                StopProcess();
-            }
+            if (!forUpload) AddWorkingInfo();
+            if (!forUpload && !forRefresh) StopProcess();
 
             return new ProcessResult(true, "Pobieranie plików zakończone sukcesem!");
         }
@@ -108,12 +117,33 @@ namespace Thea2Translator.Logic.Cache
             FileHelper.DownloadFile(fileSourceLocation, fileDestonationLocation);
         }
         #endregion
+        #region Refresh
+        public ProcessResult RefreshCache()
+        {
+            ////////////////////////////////////////////////////////////////////////////////////////////////////////
+            StartProcess("Refresh cache", 5 + 2);
+            var downloadResult = DownloadCache(SynchronizationMode.Refresh);
+            if (!downloadResult.Result)
+                return downloadResult;
+
+            if (HasConflictsInCacheFiles())
+                return new ProcessResult(false, "Przed wysłaniem plików na serwer należy rozwiązać konflikty!");
+
+            ////////////////////////////////////////////////////////////////////////////////////////////////////////
+            StartNextProcessStep();
+            UploadCacheFiles();
+            SendToLogs("Refresh");
+            ////////////////////////////////////////////////////////////////////////////////////////////////////////
+            StopProcess();
+            return new ProcessResult(true, "Odświeżenie plików zakończone sukcesem!");
+        }
+        #endregion
         #region Upload
         public ProcessResult UploadCache()
         {
             ////////////////////////////////////////////////////////////////////////////////////////////////////////
             StartProcess("Upload cache", 5 + 3);
-            var downloadResult = DownloadCache(true);
+            var downloadResult = DownloadCache(SynchronizationMode.Upload);
             if (!downloadResult.Result)
                 return downloadResult;
 

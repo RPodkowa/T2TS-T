@@ -83,7 +83,7 @@
                 <RowDefinition Height="2*"/>
                 <RowDefinition Height="4*"/>
             </Grid.RowDefinitions>
-            <ListBox x:Name="lbItemsToTranslate" FontSize="{DynamicResource smallFontSize}" Grid.Row="3" SelectionChanged="LbItemsToTranslate_SelectionChanged" Margin="0,0,0,3">
+            <ListBox x:Name="lbItemsToTranslate" VirtualizingPanel.IsVirtualizing="true" FontSize="{DynamicResource smallFontSize}" Grid.Row="3" SelectionChanged="LbItemsToTranslate_SelectionChanged" Margin="0,0,0,3">
                 <ListBox.ItemTemplate >
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal" Background="{Binding BackgroundColor}">
@@ -117,6 +117,11 @@
                 <ComboBox x:Name="cbGroups" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Style="{StaticResource fontBase}" FontSize="{DynamicResource smallFontSize}" SelectionChanged="CbGroups_SelectionChanged" Grid.Column="2" Grid.Row="1">
                     <ComboBoxItem Content="{DynamicResource allComboItemTranslate}" Selector.IsSelected="True"/>
                     <ComboBoxItem Content="{DynamicResource startGroupsComboItemTranslate}" Selector.IsSelected="False"/>
+                    <ComboBox.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <VirtualizingStackPanel />
+                        </ItemsPanelTemplate>
+                    </ComboBox.ItemsPanel>
                 </ComboBox>
                 <Label Content="{DynamicResource groupLabelTranslate}" Style="{StaticResource labelCenterTitle}" FontSize="{DynamicResource smallFontSize}" Grid.Column="2"/>
             </Grid>

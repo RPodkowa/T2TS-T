@@ -26,13 +26,18 @@
             <Setter Property="FontWeight" Value="Bold" />
         </Style>
 
-        <system:Double x:Key="verySmallFontSize">8</system:Double>
-        <system:Double x:Key="smallFontSize">11</system:Double>
-        <system:Double x:Key="mediumFontSize">14</system:Double>
+        <system:Double x:Key="verySmallFontSize">9</system:Double>
+        <system:Double x:Key="smallFontSize">13</system:Double>
+        <system:Double x:Key="mediumFontSize">15</system:Double>
         <system:Double x:Key="bigFontSize">18</system:Double>
         <system:Double x:Key="veryBigFontSize">23</system:Double>
 
-        <system:Double x:Key="maxSmallFontSize">14</system:Double>
+        <system:Double x:Key="maxVerySmallFontSize">12</system:Double>
+        <system:Double x:Key="maxSmallFontSize">15</system:Double>
+        <system:Double x:Key="maxMediumFontSize">17</system:Double>
+        <system:Double x:Key="maxBigFontSize">20</system:Double>
+        <system:Double x:Key="maxVeryBigFontSize">25</system:Double>
+
 
         <system:Double x:Key="iconWidth">20</system:Double>
         <system:Double x:Key="iconButtonWidth">80</system:Double>

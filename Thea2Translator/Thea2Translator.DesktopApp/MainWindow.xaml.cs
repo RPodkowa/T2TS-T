@@ -21,24 +21,36 @@ namespace Thea2Translator.DesktopApp
     /// </summary>
     public partial class MainWindow : Window
     {
+
         double startHeight;
+        double startVerySmallFontSize;
         double startSmallFontSize;
         double startMediumFontSize;
         double startBigFontSize;
         double startVeryBigFontSize;
 
+        double maxVerSmallFontSize;
         double maxSmallFontSize;
+        double maxMediumFontSize;
+        double maxBigFontSize;
+        double maxVeryBigFontSize;
 
         public MainWindow()
         {
             InitializeComponent();          
             startHeight = this.Height;
+
+            startVerySmallFontSize = (double)Application.Current.Resources["verySmallFontSize"];
             startSmallFontSize = (double)Application.Current.Resources["smallFontSize"];
             startMediumFontSize = (double)Application.Current.Resources["mediumFontSize"];
             startBigFontSize = (double)Application.Current.Resources["bigFontSize"];
             startVeryBigFontSize = (double)Application.Current.Resources["veryBigFontSize"];
 
+            maxVerSmallFontSize = (double)Application.Current.Resources["maxVerySmallFontSize"];
             maxSmallFontSize = (double)Application.Current.Resources["maxSmallFontSize"];       
+            maxMediumFontSize = (double)Application.Current.Resources["maxMediumFontSize"];       
+            maxBigFontSize = (double)Application.Current.Resources["maxBigFontSize"];
+            maxVeryBigFontSize = (double)Application.Current.Resources["maxVeryBigFontSize"];
 
             NavigationCommands.BrowseBack.InputGestures.Clear();
             NavigationCommands.BrowseForward.InputGestures.Clear();
@@ -69,10 +81,11 @@ namespace Thea2Translator.DesktopApp
 
         private void Window_SizeChanged(object sender, SizeChangedEventArgs e)
         {
+            ChangeFontSize(startSmallFontSize, "verySmallFontSize", maxVerSmallFontSize);
             ChangeFontSize(startSmallFontSize, "smallFontSize", maxSmallFontSize);
-            ChangeFontSize(startMediumFontSize, "mediumFontSize");
-            ChangeFontSize(startBigFontSize, "bigFontSize");
-            ChangeFontSize(startVeryBigFontSize, "veryBigFontSize");
+            ChangeFontSize(startMediumFontSize, "mediumFontSize", maxMediumFontSize);
+            ChangeFontSize(startBigFontSize, "bigFontSize", maxBigFontSize);
+            ChangeFontSize(startVeryBigFontSize, "veryBigFontSize", maxVeryBigFontSize);
         }
 
         private void ChangeFontSize(double startFontSize, string resourceName, double? maxSize = null)

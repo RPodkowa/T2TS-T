@@ -25,7 +25,7 @@
             <ColumnDefinition Width="19*"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Grid x:Name="editTranslateGrid" Grid.Column="3" Grid.Row="1">
+        <Grid x:Name="editTranslateGrid" Grid.Column="3" Grid.Row="1" Margin="0,21,0,0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="10*"/>
                 <RowDefinition Height="1*"/>
@@ -89,9 +89,9 @@
                         <StackPanel Orientation="Horizontal" Background="{Binding BackgroundColor}">
                             <CheckBox IsChecked="{Binding IsConfirm}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="SetConfirmOnCache"/>
                             <CheckBox IsChecked="{Binding HasConflict}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="SetResolvedOnCache"/>
-                            <Label Content="{Binding CacheElem.Id}" Foreground="{Binding Color}" FontWeight="{Binding Weight}"/>
-                            <Label Content="{Binding CacheElem.StatusString}" Foreground="{Binding Color}" FontWeight="{Binding Weight}"/>
-                            <Label Content="{Binding CacheElem.OriginalText}" Foreground="{Binding Color}" FontWeight="{Binding Weight}"/>
+                            <Label Content="{Binding CacheElem.Id}" FontSize="{DynamicResource smallFontSize}" Foreground="{Binding Color}" FontWeight="{Binding Weight}"/>
+                            <Label Content="{Binding CacheElem.StatusString}" FontSize="{DynamicResource smallFontSize}" Foreground="{Binding Color}" FontWeight="{Binding Weight}"/>
+                            <Label Content="{Binding CacheElem.OriginalText}" FontSize="{DynamicResource smallFontSize}" Foreground="{Binding Color}" FontWeight="{Binding Weight}"/>
                         </StackPanel>
                     </DataTemplate>
                 </ListBox.ItemTemplate>
@@ -173,7 +173,7 @@
                     <ColumnDefinition/>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
-                <Label x:Name="lblState" Content="Label" FontSize="{DynamicResource smallFontSize}" Grid.ColumnSpan="3" Grid.RowSpan="3" Margin="0,0,-0.333,0.333"/>
+                <Label x:Name="lblState" Content="Label" FontSize="{DynamicResource smallFontSize}" Grid.ColumnSpan="3" Grid.RowSpan="3" Margin="0,0,0,-19"/>
             </Grid>
             <Grid Grid.RowSpan="3" Grid.ColumnSpan="2">
                 <Grid.RowDefinitions>
@@ -222,10 +222,10 @@
                     <ColumnDefinition Width="127*"/>
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="20*"/>
-                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="54*"/>
+                    <RowDefinition Height="5*"/>
                 </Grid.RowDefinitions>
-                <Button x:Name="btnBack" Height="{StaticResource iconButtonHeight}" Width="{StaticResource iconButtonWidth}" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Click="BtnBack_Click" Grid.Row="1">
+                <Button x:Name="btnBack" Height="{StaticResource iconButtonHeight}" Width="{StaticResource iconButtonWidth}" HorizontalAlignment="Center" VerticalAlignment="Center" Click="BtnBack_Click" Grid.Row="1">
                     <StackPanel Orientation="Horizontal">
                         <Image Height="{StaticResource iconWidth}" Source="/Translator;component/Resources/Images/Icons/home.png"/>
                         <Label FontSize="10" FontWeight="Bold">
@@ -233,7 +233,7 @@
                         </Label>
                     </StackPanel>
                 </Button>
-                <Button x:Name="btnFunctions" Height="{StaticResource iconButtonHeight}" Width="{StaticResource iconButtonWidth}" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Grid.Column="1" Click="BtnFunctions_Click">
+                <Button x:Name="btnFunctions" Height="{StaticResource iconButtonHeight}" Width="{StaticResource iconButtonWidth}" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Grid.Column="1" Click="BtnFunctions_Click">
                     <StackPanel Orientation="Horizontal">
                         <!--<Image Height="{StaticResource iconWidth}" Source="/Translator;component/Resources/Images/Icons/home.png"/>-->
                         <Label FontSize="10" FontWeight="Bold">

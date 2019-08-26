@@ -62,9 +62,7 @@ namespace Thea2Translator.DesktopApp.Pages
                 var devMode = checkBox_Test.IsChecked;
                 if (devMode.HasValue && devMode.Value) FileHelper.MainWorkMode = WorkMode.Developer;
             }
-
-            FileHelper.MainDir = txtFolderDir.Text;
-
+                        
             if (FileHelper.MainWorkMode != WorkMode.Normal)            
                 System.Windows.MessageBox.Show($"Praca w trybie {FileHelper.MainWorkMode.ToString()}!", "Uwaga");            
 
@@ -116,20 +114,7 @@ namespace Thea2Translator.DesktopApp.Pages
         private void btnRole_Click(object sender, RoutedEventArgs e)
         {
             SaveSettings();
-        }
 
-        private void SaveSettings()
-        {
-            if (string.IsNullOrEmpty(Settings.Default.UserId))
-                Settings.Default.UserId = Guid.NewGuid().ToString();
-
-            Settings.Default.WorkingDirectory = txtFolderDir.Text;
-            Settings.Default.UserName = txtUserName.Text;
-            Settings.Default.Save();
-
-            UserHelper.UserId = Settings.Default.UserId;
-            UserHelper.UserName = Settings.Default.UserName;
-            
             UserHelper.ReadUserRoleFromFtp();
 
             string message = "Dane autoryzacyjne zostały pobrane";
@@ -142,6 +127,20 @@ namespace Thea2Translator.DesktopApp.Pages
 
             System.Windows.MessageBox.Show(message, "Sukces");
             RefreshControls();
+        }
+
+        private void SaveSettings()
+        {
+            if (string.IsNullOrEmpty(Settings.Default.UserId))
+                Settings.Default.UserId = Guid.NewGuid().ToString();
+
+            Settings.Default.WorkingDirectory = txtFolderDir.Text;
+            Settings.Default.UserName = txtUserName.Text;
+            Settings.Default.Save();
+
+            FileHelper.MainDir = txtFolderDir.Text;
+            UserHelper.UserId = Settings.Default.UserId;
+            UserHelper.UserName = Settings.Default.UserName;
         }
 
         private void RefreshControls()

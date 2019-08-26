@@ -128,7 +128,14 @@ namespace Thea2Translator.Logic.Cache
             bool forceDownloadDatabase = (filesType.HasValue && filesType.Value == FilesType.DataBase);
             bool forceDownloadModule = (filesType.HasValue && filesType.Value == FilesType.Modules);
             bool forceDownloadNames = (filesType.HasValue && filesType.Value == FilesType.Names);
-            
+
+            if (filesType.HasValue && filesType.Value == FilesType.All)
+            {
+                forceDownloadDatabase = true;
+                forceDownloadModule = true;
+                forceDownloadNames = true;
+            }
+
             DownloadCacheFile(FilesType.DataBase, !forceDownloadDatabase);
 
             DownloadCacheFile(FilesType.Modules, !forceDownloadModule);

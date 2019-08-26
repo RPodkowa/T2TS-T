@@ -271,7 +271,7 @@ namespace Thea2Translator.DesktopApp.Pages
                         ProcessResult result = null;
                         if (download)
                         {
-                            result = synchronization.DownloadCache();
+                            result = synchronization.DownloadCache(SynchronizationMode.Download, FilesType.All);
                             var workingNow = synchronization.WorkingNow();
                             if (!string.IsNullOrEmpty(workingNow)) result.AddMessage($"\r\nAktualnie pracujacy: {workingNow}");
                         }

@@ -8,6 +8,7 @@ namespace Thea2Translator.Logic
 {
     public enum FilesType
     {
+        All,
         DataBase,
         Modules,
         Names,

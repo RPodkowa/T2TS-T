@@ -439,7 +439,7 @@ namespace Thea2Translator.Logic
                             foreach (XmlNode child in node.ChildNodes)
                             {
                                 if (child.Name != "#text") continue;
-                                child.InnerText = TextHelper.ReplacePolishChars(elem.OutputText);
+                                child.InnerText = elem.OutputText;
                             }
                         }
                     }
@@ -466,7 +466,7 @@ namespace Thea2Translator.Logic
                                 var key = inputTextName;
                                 var elem = GetElem(key);
                                 if (elem != null)
-                                    output.Attributes["name"].Value = TextHelper.ReplacePolishChars(elem.OutputText);
+                                    output.Attributes["name"].Value = elem.OutputText;
                             }
                         }
                     }

@@ -13,13 +13,6 @@ namespace Thea2Translator.Logic.Helpers
     }
     public class UpdateHelper
     {
-        public static bool ApplicationInAdminMode()
-        {
-            var file = GetApplicationLocalPatch(ApplicationType.Translator) + "\\admin.mode";
-            var ret = FileHelper.FileExists(file);
-            return ret;
-        }
-
         public static void TryUpdate(ApplicationType applicationType)
         {
             if (!CheckNeedForUpdate(applicationType))

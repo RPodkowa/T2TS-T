@@ -292,8 +292,8 @@ namespace Thea2Translator.Logic
             {
                 IsCorrectedByHuman = true;
                 ConfirmationTime = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
-                ConfirmationUser = LogicProvider.UserName;
-                ConfirmationGuid = LogicProvider.UserId;
+                ConfirmationUser = UserHelper.UserName;
+                ConfirmationGuid = UserHelper.UserId;
             }
             else
             {

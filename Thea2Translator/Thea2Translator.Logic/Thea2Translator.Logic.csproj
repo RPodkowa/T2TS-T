@@ -113,6 +113,8 @@
     <Compile Include="Cache\Models\WwwStatusModel.cs" />
     <Compile Include="Helpers\ImageHelper.cs" />
     <Compile Include="Helpers\JsonHelper.cs" />
+    <Compile Include="Helpers\UserHelper.cs" />
+    <Compile Include="Helpers\WorkMode.cs" />
     <Compile Include="Helpers\XmlHelper.cs" />
     <Compile Include="NameGenerator\NameGenerator.cs" />
     <Compile Include="NameGenerator\NameGeneratorElem.cs" />

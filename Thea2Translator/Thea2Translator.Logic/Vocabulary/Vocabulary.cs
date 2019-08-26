@@ -25,6 +25,12 @@ namespace Thea2Translator.Logic
             VocabularyElems = ((List<VocabularyElem>)VocabularyElems).OrderByDescending(x => x.GetUsageCount(Type)).ToList();
         }
 
+        public bool FileExists(DirectoryType directoryType)
+        {
+            var fullPath = FileHelper.GetLocalFilePatch(directoryType, FilesType.Vocabulary);
+            return FileHelper.FileExists(fullPath);
+        }
+
         public void ReadFromFile(DirectoryType directoryType)
         {
             if (VocabularyElems == null)
@@ -148,6 +154,9 @@ namespace Thea2Translator.Logic
             var original = new Vocabulary(FilesType.Vocabulary);
             var originalOld = new Vocabulary(FilesType.Vocabulary);
             var cacheOld = new Vocabulary(FilesType.Vocabulary);
+            
+            if (!original.FileExists(DirectoryType.Original) && !originalOld.FileExists(DirectoryType.OriginalOld) && !cacheOld.FileExists(DirectoryType.CacheOld))
+                return;
 
             original.ReadFromFile(DirectoryType.Original);
             originalOld.ReadFromFile(DirectoryType.OriginalOld);

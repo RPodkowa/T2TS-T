@@ -657,12 +657,28 @@ namespace Thea2Translator.Logic
             return dir;
         }
 
+        public static bool FilesExists(FilesType type)
+        {
+            if (type==FilesType.DataBase || type==FilesType.Modules || type == FilesType.Names)
+            {
+                var dataCache = new DataCache(type);
+                return dataCache.FilesExists();
+            }
+            
+            return false;
+        }
+
+        public bool FilesExists()
+        {
+            return FileHelper.FileExists(FullPath);
+        }
+
         public static bool HasConflicts(FilesType type)
         {
-            var dataCache = new DataCache(type);
             if (type == FilesType.Vocabulary)
                 return Vocabulary.HasConflicts();
 
+            var dataCache = new DataCache(type);
             return dataCache.HasConflicts();
         }
 
@@ -690,10 +706,13 @@ namespace Thea2Translator.Logic
                 NameGenerator.MergeCache();
                 return;
             }
-
+            
             var original = new DataCache(type, DirectoryType.Original);
             var originalOld = new DataCache(type, DirectoryType.OriginalOld);
             var cacheOld = new DataCache(type, DirectoryType.CacheOld);
+
+            if (!original.FilesExists() && !originalOld.FilesExists() && !cacheOld.FilesExists())
+                return;
 
             original.LoadFromFile();
             originalOld.LoadFromFile();

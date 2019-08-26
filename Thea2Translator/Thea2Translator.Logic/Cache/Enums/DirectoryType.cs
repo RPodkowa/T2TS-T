@@ -16,6 +16,7 @@ namespace Thea2Translator.Logic
         Backup,
         History,
         Logs,
-        Www
+        Www,
+        Users
     }
 }

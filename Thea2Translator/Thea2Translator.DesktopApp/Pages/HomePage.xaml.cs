@@ -33,8 +33,11 @@ namespace Thea2Translator.DesktopApp.Pages
 
             this.SetLanguageDictinary();
 
-            btnAdminPage.Visibility = UpdateHelper.ApplicationInAdminMode() ? Visibility.Visible : Visibility.Hidden;
-            checkBox_Test.Visibility = UpdateHelper.ApplicationInAdminMode() ? Visibility.Visible : Visibility.Hidden;
+            UserHelper.UserId = Settings.Default.UserId;
+            UserHelper.UserName = Settings.Default.UserName;
+            UserHelper.ReadUserRoleFromFtp();
+
+            RefreshControls();
         }
 
         private void BtnAdminPage_Click(object sender, RoutedEventArgs e)
@@ -50,21 +53,20 @@ namespace Thea2Translator.DesktopApp.Pages
 
         private void btnNavigeteClicked(bool admin)
         {
-            FileHelper.TestMode = false;
-            var testMode = checkBox_Test.IsChecked;
-            if (testMode.HasValue && testMode.Value) testMode = UpdateHelper.ApplicationInAdminMode();
-            if (testMode.HasValue && testMode.Value) FileHelper.TestMode = true;
+            SaveSettings();
+
+            if (UserHelper.IsTestUser) FileHelper.MainWorkMode = WorkMode.Test;
+            if (!UserHelper.IsAdminUser && admin) return;
+            if (UserHelper.IsAdminUser)
+            {
+                var devMode = checkBox_Test.IsChecked;
+                if (devMode.HasValue && devMode.Value) FileHelper.MainWorkMode = WorkMode.Developer;
+            }
+
             FileHelper.MainDir = txtFolderDir.Text;
 
-            if (string.IsNullOrEmpty(Settings.Default.UserId))
-                Settings.Default.UserId = Guid.NewGuid().ToString();
-
-            Settings.Default.WorkingDirectory = txtFolderDir.Text;
-            Settings.Default.UserName = txtUserName.Text;
-            Settings.Default.Save();
-
-            LogicProvider.UserId = Settings.Default.UserId;
-            LogicProvider.UserName = Settings.Default.UserName;
+            if (FileHelper.MainWorkMode != WorkMode.Normal)            
+                System.Windows.MessageBox.Show($"Praca w trybie {FileHelper.MainWorkMode.ToString()}!", "Uwaga");            
 
             if (admin)
                 this.NavigationService.Navigate(new ModuleSelectionAdminPage());
@@ -109,6 +111,46 @@ namespace Thea2Translator.DesktopApp.Pages
 
             Settings.Default.Language = Logic.Languages.Languages.English;
             Settings.Default.Save();
+        }
+
+        private void btnRole_Click(object sender, RoutedEventArgs e)
+        {
+            SaveSettings();
+        }
+
+        private void SaveSettings()
+        {
+            if (string.IsNullOrEmpty(Settings.Default.UserId))
+                Settings.Default.UserId = Guid.NewGuid().ToString();
+
+            Settings.Default.WorkingDirectory = txtFolderDir.Text;
+            Settings.Default.UserName = txtUserName.Text;
+            Settings.Default.Save();
+
+            UserHelper.UserId = Settings.Default.UserId;
+            UserHelper.UserName = Settings.Default.UserName;
+            
+            UserHelper.ReadUserRoleFromFtp();
+
+            string message = "Dane autoryzacyjne zostały pobrane";
+
+            if (UserHelper.UserRole == null)
+            {
+                UserHelper.SendUserPetition();
+                message = "Prośba o autoryzację została wysłana";
+            }
+
+            System.Windows.MessageBox.Show(message, "Sukces");
+            RefreshControls();
+        }
+
+        private void RefreshControls()
+        {
+            btnAdminPage.Visibility = UserHelper.IsAdminUser ? Visibility.Visible : Visibility.Hidden;
+            checkBox_Test.Visibility = UserHelper.IsAdminUser ? Visibility.Visible : Visibility.Hidden;
+
+            if (UserHelper.IsTestUser) btnStartTranslate.Content = "Test";
+            else btnStartTranslate.Content = "Rozpocznij";
         }
     }
 }

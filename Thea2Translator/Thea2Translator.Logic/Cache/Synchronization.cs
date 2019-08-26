@@ -23,19 +23,42 @@ namespace Thea2Translator.Logic.Cache
             return string.Join(", ", working.Select(s => s.Replace(".work", "")).ToList());
         }
 
+        public static bool HasFiles(FilesType filesType)
+        {
+            return DataCache.FilesExists(filesType);
+        }
+
         private bool HasConflictsInCacheFiles()
         {
-            if (DataCache.HasConflicts(FilesType.DataBase)) return true;
-            if (DataCache.HasConflicts(FilesType.Modules)) return true;
-            if (DataCache.HasConflicts(FilesType.Names)) return true;
-            if (DataCache.HasConflicts(FilesType.Vocabulary)) return true;
+            bool? result = null;
+            result = HasConflictsInCacheFiles(FilesType.DataBase, !result.HasValue);
+            if (result.HasValue && result.Value) return true;
+
+            result = HasConflictsInCacheFiles(FilesType.Modules, !result.HasValue);
+            if (result.HasValue && result.Value) return true;
+
+            result = HasConflictsInCacheFiles(FilesType.Names, !result.HasValue);
+            if (result.HasValue && result.Value) return true;
+
             return false;
         }
 
-        #region Download
-        public ProcessResult DownloadCache(SynchronizationMode forMode = SynchronizationMode.Download)
+        private bool? HasConflictsInCacheFiles(FilesType filesType, bool checkVocabulary)
         {
-            if (HasConflictsInCacheFiles())            
+            if (!DataCache.FilesExists(filesType))
+                return null;
+
+            if (DataCache.HasConflicts(filesType)) return true;
+            if (checkVocabulary && DataCache.HasConflicts(FilesType.Vocabulary)) return true;
+
+            return false;
+        }
+
+
+        #region Download
+        public ProcessResult DownloadCache(SynchronizationMode forMode = SynchronizationMode.Download, FilesType? filesType = null)
+        {
+            if (HasConflictsInCacheFiles())
                 return new ProcessResult(false, "Przed ściągnięciem plików z serwera należy rozwiązać konflikty!");
 
             bool forUpload = forMode == SynchronizationMode.Upload;
@@ -58,14 +81,14 @@ namespace Thea2Translator.Logic.Cache
 
             ////////////////////////////////////////////////////////////////////////////////////////////////////////
             StartNextProcessStep();
-            DownloadCacheFiles();
+            DownloadCacheFiles(filesType);
 
             ////////////////////////////////////////////////////////////////////////////////////////////////////////
             StartNextProcessStep();
             string LogText = "Download";
             if (forUpload) LogText = "DownloadForUpload";
             if (forRefresh) LogText = "DownloadForRefresh";
-            SendToLogs(LogText);
+            SendToLogs(filesType, LogText);
             MergeFiles();
 
             ////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -100,18 +123,32 @@ namespace Thea2Translator.Logic.Cache
             FileHelper.DeletePath(DirectoryType.CacheOld);
         }
 
-        private void DownloadCacheFiles()
+        private void DownloadCacheFiles(FilesType? filesType)
         {
-            DownloadCacheFile(FilesType.DataBase);
-            DownloadCacheFile(FilesType.Modules);
-            DownloadCacheFile(FilesType.Names);
-            DownloadCacheFile(FilesType.NamesGenerator);
-            DownloadCacheFile(FilesType.Vocabulary);
-            DownloadCacheFile(FilesType.Navigation);
+            bool forceDownloadDatabase = (filesType.HasValue && filesType.Value == FilesType.DataBase);
+            bool forceDownloadModule = (filesType.HasValue && filesType.Value == FilesType.Modules);
+            bool forceDownloadNames = (filesType.HasValue && filesType.Value == FilesType.Names);
+            
+            DownloadCacheFile(FilesType.DataBase, !forceDownloadDatabase);
+
+            DownloadCacheFile(FilesType.Modules, !forceDownloadModule);
+            DownloadCacheFile(FilesType.Navigation, !forceDownloadModule);
+
+            DownloadCacheFile(FilesType.Names, !forceDownloadNames);
+            DownloadCacheFile(FilesType.NamesGenerator, !forceDownloadNames);
+
+            DownloadCacheFile(FilesType.Vocabulary, false);
         }
 
-        private void DownloadCacheFile(FilesType filesType)
+        private void DownloadCacheFile(FilesType filesType, bool withCheckOlds)
         {
+            if (withCheckOlds)
+            {
+                var oldFileLocation = FileHelper.GetLocalFilePatch(DirectoryType.CacheOld, filesType);
+                if (!FileHelper.FileExists(oldFileLocation))
+                    return;
+            }
+
             var fileSourceLocation = FileHelper.GetServerHttpFilePatch(DirectoryType.Cache, filesType);
             var fileDestonationLocation = FileHelper.GetLocalFilePatch(DirectoryType.Original, filesType);
             FileHelper.DownloadFile(fileSourceLocation, fileDestonationLocation);
@@ -132,7 +169,7 @@ namespace Thea2Translator.Logic.Cache
             ////////////////////////////////////////////////////////////////////////////////////////////////////////
             StartNextProcessStep();
             UploadCacheFiles();
-            SendToLogs("Refresh");
+            SendToLogs(null, "Refresh");
             ////////////////////////////////////////////////////////////////////////////////////////////////////////
             StopProcess();
             return new ProcessResult(true, "Odświeżenie plików zakończone sukcesem!");
@@ -153,7 +190,7 @@ namespace Thea2Translator.Logic.Cache
             ////////////////////////////////////////////////////////////////////////////////////////////////////////
             StartNextProcessStep();
             UploadCacheFiles();
-            SendToLogs("Upload");
+            SendToLogs(null, "Upload");
             ////////////////////////////////////////////////////////////////////////////////////////////////////////
             StartNextProcessStep();
             RemoveFilesAfterUpload();
@@ -198,7 +235,7 @@ namespace Thea2Translator.Logic.Cache
 
         private void UploadToHistory()
         {
-            string directory = $"{FileHelper.GetDirectoryName(DirectoryType.History)}/T_{DateTime.Now.ToString("yyyyMMdd_HHmmss")}_{LogicProvider.UserName}";
+            string directory = $"{FileHelper.GetDirectoryName(DirectoryType.History)}/T_{DateTime.Now.ToString("yyyyMMdd_HHmmss")}_{UserHelper.UserName}";
             FileHelper.CreateFTPDirectory(FileHelper.GetServerFtpDirectoryPatch(directory));
             UploadCacheFileOtherDirectory(FilesType.DataBase, directory);
             UploadCacheFileOtherDirectory(FilesType.Modules, directory);
@@ -223,25 +260,28 @@ namespace Thea2Translator.Logic.Cache
         private void UploadCacheFile(FilesType filesType, string fileDestonationLocation)
         {
             var fileSourceLocation = FileHelper.GetLocalFilePatch(DirectoryType.Cache, filesType);
-            FileHelper.UploadFile(fileSourceLocation, fileDestonationLocation);
+            if (FileHelper.FileExists(fileSourceLocation))
+                FileHelper.UploadFile(fileSourceLocation, fileDestonationLocation);
         }
         #endregion
 
-        private void SendToLogs(string text)
+        private void SendToLogs(FilesType? filesType, string text)
         {
-            string fileName = $"{DateTime.Now.ToString("yyyyMMdd_HHmmss")}_{LogicProvider.UserName}_{text}.log";            
+            string moduleName = "ALL";
+            if (filesType.HasValue) moduleName = filesType.Value.ToString();
+            string fileName = $"{DateTime.Now.ToString("yyyyMMdd_HHmmss")}_{UserHelper.UserName}_{moduleName}_{text}.log";
             FileHelper.UploadEmptyFile(DirectoryType.Logs, fileName);
         }
 
         private void AddWorkingInfo()
         {
-            string fileName = $"{LogicProvider.UserName}.work";
+            string fileName = $"{UserHelper.UserName}.work";
             FileHelper.UploadEmptyFile(DirectoryType.Working, fileName);
         }
 
         private void DeleteWorkingInfo()
         {
-            string fileName = $"{LogicProvider.UserName}.work";
+            string fileName = $"{UserHelper.UserName}.work";
             FileHelper.DeleteFtpFile(DirectoryType.Working, fileName);
         }
     }

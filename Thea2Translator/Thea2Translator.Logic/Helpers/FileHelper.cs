@@ -15,7 +15,7 @@ namespace Thea2Translator.Logic
         private const string ftpUser = "translator@thea2pl.webd.pro";
         private const string ftpPassword = "vh+4{zBE=}69";
 
-        public static bool TestMode = false;
+        public static WorkMode MainWorkMode = WorkMode.Normal;
         public static string MainDir = "";
         private static string BackupDirectoryName = "";
 
@@ -204,11 +204,19 @@ namespace Thea2Translator.Logic
 
         public static string ReadHttpFileString(string file)
         {
-            WebClient client = new WebClient();
-            Stream stream = client.OpenRead(file);
-            StreamReader reader = new StreamReader(stream);
-            String content = reader.ReadToEnd();
-            return content;
+            try
+            {
+                WebClient client = new WebClient();
+                Stream stream = client.OpenRead(file);
+                StreamReader reader = new StreamReader(stream);
+                return reader.ReadToEnd();
+            }
+            catch (Exception ex)
+            {
+
+            }
+
+            return "";
         }
 
         public static void DownloadFile(string fileSourceLocation, string fileDestonationLocation)
@@ -229,15 +237,23 @@ namespace Thea2Translator.Logic
             }
         }
 
-        public static void UploadEmptyFile(DirectoryType directoryType, string fileName)
+        public static void UploadEmptyFile(DirectoryType directoryType, string fileName, WorkMode? forceWorkMode = null)
         {
             var tmpFile = GetLocalFilePatch(fileName);
-            var fileDestonationLocation = GetServerFtpFilePatch(directoryType, fileName);
+            var fileDestonationLocation = GetServerFtpFilePatch(directoryType, fileName, forceWorkMode);
             File.Create(tmpFile).Dispose();
             UploadFile(tmpFile, fileDestonationLocation);
             DeleteFileIfExists(tmpFile);
         }
-        
+
+        public static void UploadEmptyFile(string fileDestonationLocation, string fileName)
+        {
+            var tmpFile = GetLocalFilePatch(fileName);
+            File.Create(tmpFile).Dispose();
+            UploadFile(tmpFile, fileDestonationLocation);
+            DeleteFileIfExists(tmpFile);
+        }
+
         public static void DeleteFtpFile(DirectoryType directoryType, string fileName)
         {
             var fileLocation = GetServerFtpFilePatch(directoryType, fileName);
@@ -266,13 +282,13 @@ namespace Thea2Translator.Logic
         }
         #region Patch
         #region Ftp
-        public static string GetServerFtpDirectoryPatch(DirectoryType directoryType)
+        public static string GetServerFtpDirectoryPatch(DirectoryType directoryType, WorkMode? forceWorkMode = null)
         {
-            return GetServerFtpFilePatch(GetDirectoryName(directoryType));
+            return GetServerFtpFilePatch(GetDirectoryName(directoryType), forceWorkMode);
         }
-        public static string GetServerFtpDirectoryPatch(string directory)
+        public static string GetServerFtpDirectoryPatch(string directory, WorkMode? forceWorkMode = null)
         {
-            return GetServerFtpFilePatch(directory);
+            return GetServerFtpFilePatch(directory, forceWorkMode);
         }
 
         public static string GetServerFtpFilePatch(DirectoryType directoryType, FilesType filesType)
@@ -280,36 +296,46 @@ namespace Thea2Translator.Logic
             return GetServerFtpFilePatch(GetDirectoryName(directoryType), filesType);
         }
 
-        public static string GetServerFtpFilePatch(string directory, FilesType filesType)
+        public static string GetServerFtpFilePatch(string directory, FilesType filesType, WorkMode? forceWorkMode = null)
         {
-            return GetServerFtpFilePatch($"{directory}/{GetFileName(filesType)}");
+            return GetServerFtpFilePatch($"{directory}/{GetFileName(filesType)}", forceWorkMode);
         }
 
-        public static string GetServerFtpFilePatch(DirectoryType directoryType, string fileName)
+        public static string GetServerFtpFilePatch(DirectoryType directoryType, string fileName, WorkMode? forceWorkMode = null)
         {
-            return GetServerFtpFilePatch($"{GetDirectoryName(directoryType)}/{fileName}");
+            return GetServerFtpFilePatch($"{GetDirectoryName(directoryType)}/{fileName}", forceWorkMode);
         }
 
-        private static string GetServerFtpFilePatch(string fileName)
+        private static string GetServerFtpFilePatch(string fileName, WorkMode? forceWorkMode)
         {
-            var mainAdres = ftpServerAdres;
-            if (TestMode) mainAdres += "/Test";
-            return $"{mainAdres}/{fileName}";
+            return GetServerFilePatch(ftpServerAdres, fileName, forceWorkMode);
         }
         #endregion
         #region Http
         public static string GetServerHttpFilePatch(DirectoryType directoryType, FilesType filesType)
-        {            
+        {
             return GetServerHttpFilePatch($"{GetDirectoryName(directoryType)}/{GetFileName(filesType)}");
         }
-
-        public static string GetServerHttpFilePatch(string fileName)
+        public static string GetServerHttpFilePatch(DirectoryType directoryType, string fileName, WorkMode? forceWorkMode = null)
         {
-            var mainAdres = httpServerAdres;
-            if (TestMode) mainAdres += "/Test";
-            return $"{mainAdres}/{fileName}";
+            return GetServerHttpFilePatch($"{GetDirectoryName(directoryType)}/{fileName}", forceWorkMode);
+        }
+        public static string GetServerHttpFilePatch(string fileName, WorkMode? forceWorkMode = null)
+        {
+            return GetServerFilePatch(httpServerAdres, fileName, forceWorkMode);
         }
         #endregion
+
+        private static string GetServerFilePatch(string mainServerAdres, string fileName, WorkMode? forceWorkMode = null)
+        {
+            WorkMode tmpWormMode = MainWorkMode;
+            if (forceWorkMode.HasValue) tmpWormMode = forceWorkMode.Value;
+
+            var mainAdres = mainServerAdres;
+            if (tmpWormMode != WorkMode.Normal) mainAdres += $"/{tmpWormMode.ToString()}";
+            return $"{mainAdres}/{fileName}";
+        }
+
         #region Local
         public static string GetLocalDirectoryPatch(DirectoryType directoryType)
         {
@@ -418,6 +444,32 @@ namespace Thea2Translator.Logic
                     return false;
                 }
             }
+        }
+
+        public static bool FtpFileExists(DirectoryType directoryType, string fileName, WorkMode? forceWorkMode = null)
+        {
+            var requestUriString = GetServerFtpFilePatch(directoryType, fileName, forceWorkMode);
+            return FtpFileExists(requestUriString);
+        }
+
+        private static bool FtpFileExists(string requestUriString)
+        {
+            FtpWebRequest request = (FtpWebRequest)WebRequest.Create(requestUriString);
+            request.Credentials = new NetworkCredential(ftpUser, ftpPassword);
+            request.Method = WebRequestMethods.Ftp.GetFileSize;
+
+            try
+            {
+                FtpWebResponse response = (FtpWebResponse)request.GetResponse();
+            }
+            catch (WebException ex)
+            {
+                FtpWebResponse response = (FtpWebResponse)ex.Response;
+                if (response.StatusCode == FtpStatusCode.ActionNotTakenFileUnavailable)
+                    return false;
+            }
+
+            return true;
         }
 
         public static List<string> GetFtpFilesList(DirectoryType directoryType, bool withCreate)

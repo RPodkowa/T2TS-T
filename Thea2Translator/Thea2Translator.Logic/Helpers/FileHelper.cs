@@ -385,7 +385,8 @@ namespace Thea2Translator.Logic
         public static string GetFileName(FilesType filesType, bool withExtention = true)
         {
             var fileName = filesType.ToString();
-            if (filesType == FilesType.Status) fileName = fileName.ToLower();
+            if (filesType == FilesType.StatusDatabase) fileName = "status_database";
+            if (filesType == FilesType.StatusModules) fileName = "status_modules";
             if (withExtention)
                 fileName += GetFileExtention(filesType);
 
@@ -404,7 +405,8 @@ namespace Thea2Translator.Logic
                     return ".xml";
                 case FilesType.Vocabulary:
                     return ".cache";
-                case FilesType.Status:
+                case FilesType.StatusDatabase:
+                case FilesType.StatusModules:
                     return ".txt";
             }
 

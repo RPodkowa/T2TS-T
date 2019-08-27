@@ -13,7 +13,7 @@ namespace Thea2Translator.Logic
         {
             var json = new JavaScriptSerializer().Serialize(obj);
             json = json.Replace("{", "{\r\n");
-            json = json.Replace("}", "}\r\n");
+            json = json.Replace("}", "\r\n}");
             json = json.Replace("[", "[\r\n");
             json = json.Replace("]", "]\r\n");
             json = json.Replace(",", ",\r\n");

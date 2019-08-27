@@ -30,31 +30,33 @@ namespace Thea2Translator.Logic
         public static IStatistic Statistic =>
             _statistic != null ? _statistic : _statistic = new Statistic();
 
-        public static WwwStatusModel GetWwwStatus()
+        public static WwwModuleStatus GetWwwStatus(FilesType filesType)
         {
-            var ret = new WwwStatusModel();
-            ret.modifiedDate = DateTime.Now.ToString("dd.MM.yyyy");
-            ret.modules = new List<Module>();
-            ret.modules.Add(GetModuleInfo(DataBase));
-            ret.modules.Add(GetModuleInfo(Modules));
-            return ret;
+            if (filesType == FilesType.StatusDatabase) return GetModuleInfo(DataBase);
+            if (filesType == FilesType.StatusModules) return GetModuleInfo(Modules);            
+            return null;
         }
 
-        private static Module GetModuleInfo(IDataCache dataCache)
+        private static WwwModuleStatus GetModuleInfo(IDataCache dataCache)
         {
             dataCache.ReloadElems();
+            if (dataCache.CacheElems == null || dataCache.CacheElems.Count == 0)
+                return null;
+
             var statistic = new Statistic();
             statistic.Reload(dataCache);
 
-            var ret = new Module();
-            ret.name = statistic.Type.ToString().ToLower(); //"name":"database",
-            ret.allRecords = statistic.AllItemsCount.ToString(); //"allRecords":"5 336",
-            ret.translatedByGoogle = statistic.TranslatedItemsCount.ToString(); //"translatedByGoogle":"4 761",
-            ret.translatedByGooglePercent = statistic.TranslatedPercent.ToString(); //"translatedByGooglePercent":"89",
-            ret.correctedRecords = statistic.ConfirmedItemsCount.ToString(); //"correctedRecords": "1 191",
-            ret.correctedPercent = statistic.ConfirmedPercent.ToString(); //"correctedPercent":"22"
-            return ret;
+            var ret = new WwwModuleStatus
+            {
+                modifiedDate = DateTime.Now.ToString("dd.MM.yyyy"),
+                allRecords = statistic.AllItemsCount.ToString(), //"allRecords":"5 336",
+                translatedByGoogle = statistic.TranslatedItemsCount.ToString(), //"translatedByGoogle":"4 761",
+                translatedByGooglePercent = statistic.TranslatedPercent.ToString(), //"translatedByGooglePercent":"89",
+                correctedRecords = statistic.ConfirmedItemsCount.ToString(), //"correctedRecords": "1 191",
+                correctedPercent = statistic.ConfirmedPercent.ToString() //"correctedPercent":"22"
+            };
 
+            return ret;
         }
     }
 }

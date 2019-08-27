@@ -214,7 +214,6 @@ namespace Thea2Translator.Logic.Cache
             FileHelper.DeletePath(DirectoryType.Original);
             FileHelper.DeletePath(DirectoryType.Cache);
         }
-
         private void UploadCacheFiles()
         {
             UploadCacheFile(FilesType.DataBase);
@@ -222,22 +221,30 @@ namespace Thea2Translator.Logic.Cache
             UploadCacheFile(FilesType.Names);
             UploadCacheFile(FilesType.NamesGenerator);
             UploadCacheFile(FilesType.Vocabulary);
-            CreateStatusFile();
-            UploadCacheFile(FilesType.Status);
+            CreateStatusFiles();
+            UploadCacheFile(FilesType.StatusDatabase);
+            UploadCacheFile(FilesType.StatusModules);
             UploadToHistory();
             UploadToWww();
         }
-
-        private void CreateStatusFile()
+        private void CreateStatusFiles()
         {
-            var status = LogicProvider.GetWwwStatus();
+            CreateStatusFile(FilesType.StatusDatabase);
+            CreateStatusFile(FilesType.StatusModules);
+        }
+        private void CreateStatusFile(FilesType filesType)
+        {
+            var status = LogicProvider.GetWwwStatus(filesType);
+            if (status == null) return;
+
             var json = JsonHelper.ToJson(status);
-            var fullPath = FileHelper.GetLocalFilePatch(DirectoryType.Cache, FilesType.Status);
+            var fullPath = FileHelper.GetLocalFilePatch(DirectoryType.Cache, filesType);
             FileHelper.WriteFileString(fullPath, json);
         }
         private void UploadToWww()
         {
-            UploadCacheFileOtherDirectory(FilesType.Status, FileHelper.GetDirectoryName(DirectoryType.Www));
+            UploadCacheFileOtherDirectory(FilesType.StatusDatabase, FileHelper.GetDirectoryName(DirectoryType.Www));
+            UploadCacheFileOtherDirectory(FilesType.StatusModules, FileHelper.GetDirectoryName(DirectoryType.Www));
         }
 
         private void UploadToHistory()
@@ -249,7 +256,8 @@ namespace Thea2Translator.Logic.Cache
             UploadCacheFileOtherDirectory(FilesType.Names, directory);
             UploadCacheFileOtherDirectory(FilesType.NamesGenerator, directory);
             UploadCacheFileOtherDirectory(FilesType.Vocabulary, directory);
-            UploadCacheFileOtherDirectory(FilesType.Status, directory);
+            UploadCacheFileOtherDirectory(FilesType.StatusDatabase, directory);
+            UploadCacheFileOtherDirectory(FilesType.StatusModules, directory);
         }
 
         private void UploadCacheFileOtherDirectory(FilesType filesType, string directory)

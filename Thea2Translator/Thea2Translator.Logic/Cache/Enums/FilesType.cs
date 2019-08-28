@@ -14,7 +14,8 @@ namespace Thea2Translator.Logic
         Names,
         Vocabulary,
         Navigation,
-        Status,
+        StatusDatabase,
+        StatusModules,
         NamesGenerator
     }
 }

@@ -418,6 +418,16 @@ namespace Thea2Translator.Logic
             if (fileName == "sAbandoned lumbermil")
                 return;
 
+            if (saveToFile)
+            {                
+                string newFile = FileHelper.GetCopiedFile(file, GetDirectoryName(AlgorithmStep.ExportToSteam));
+
+                string text = File.ReadAllText(newFile);
+                text = text.Replace("encoding=\"Windows-1252\"", "encoding =\"UTF-8\"");
+                File.WriteAllText(newFile, text);
+                file = newFile;
+            }
+
             XmlDocument doc = new XmlDocument();
             doc.Load(file);
             if (!saveToFile) Navigation.AddDocument(doc, fileName);
@@ -494,9 +504,7 @@ namespace Thea2Translator.Logic
 
             if (saveToFile)
             {
-                string path = FileHelper.GetCreatedPath(GetDirectoryName(AlgorithmStep.ExportToSteam));
-                string newFile = path + Path.GetFileName(file);
-                doc.Save(newFile);
+                doc.Save(file);
             }
         }
         private void ProcessFileNamesLoad(string file)

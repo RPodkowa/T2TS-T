@@ -78,7 +78,7 @@ namespace Thea2Translator.DesktopApp.Pages.ModuleSelectionPages
         {
             btnChooseDataBase.IsEnabled = isEnable;
             btnChooseModulus.IsEnabled = isEnable;
-            btnChooseNames.IsEnabled = isEnable;
+            btnChooseNames.IsEnabled = false;
 
             if (isEnable) isEnable = FileHelper.LocalDirectoryExists(DirectoryType.Cache);
             btnDownloadFiles.IsEnabled = isEnable;

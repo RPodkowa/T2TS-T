@@ -1,5 +1,5 @@
 export class StatusRecord{
-    public name:string;
+    public modifiedDate:string;
     public allRecords:string;
     public translatedByGoogle:string;
     public translatedByGooglePercent:string;

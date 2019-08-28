@@ -154,6 +154,9 @@
     </Compile>
     <Compile Include="Helpers\ExtensionsMethods.cs" />
     <Compile Include="Helpers\LanguageHelper.cs" />
+    <Compile Include="Windows\AdvancedFiterWindow.xaml.cs">
+      <DependentUpon>AdvancedFiterWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\DictinaryWindow.xaml.cs">
       <DependentUpon>DictinaryWindow.xaml</DependentUpon>
     </Compile>
@@ -169,6 +172,10 @@
     <Compile Include="Setting.cs" />
     <Compile Include="ViewModels\CacheElemViewModel.cs" />
     <Page Include="MainWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\AdvancedFiterWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

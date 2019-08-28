@@ -12,6 +12,7 @@ namespace Thea2Translator.Logic
 
         public IList<CacheElem> CacheElems { get; private set; }                
         public IList<string> Groups { get; private set; }
+        public IList<string> Authors { get; private set; }
         public Vocabulary Vocabulary { get; private set; }
         public Navigation Navigation { get; private set; }
 
@@ -48,6 +49,7 @@ namespace Thea2Translator.Logic
         public void ReloadElems(bool withGroups = false, bool withVocabulary = false, bool withNavigation = false)
         {
             LoadFromFile();
+            ReloadAuthors();
 
             if (withGroups) ReloadGroups();
             if (withVocabulary) ReloadVocabulary();
@@ -105,6 +107,23 @@ namespace Thea2Translator.Logic
             }
 
             ((List<string>)Groups).Sort();
+        }
+
+        private void ReloadAuthors()
+        {
+            Authors = new List<string>();
+
+            foreach (var elem in CacheElems)
+            {
+
+                if (string.IsNullOrWhiteSpace(elem.ConfirmationUser) || Authors.Contains(elem.ConfirmationUser))
+                    continue;
+
+                Authors.Add(elem.ConfirmationUser);
+
+            }
+
+            ((List<string>)Authors).Sort();
         }
 
         private void ReloadNavigation()

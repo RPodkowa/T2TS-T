@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Xml;
 
 namespace Thea2Translator.Logic
@@ -54,8 +55,10 @@ namespace Thea2Translator.Logic
         /// </summary>
         public string ConflictTranslatedText { get; private set; }
 
+        public string ConfirmationUser { get; private set; }
+        public DateTime? FormatedDate { get; private set; }
+
         private string ConfirmationTime;
-        private string ConfirmationUser;
         private string ConfirmationGuid;
 
         public List<string> Groups;
@@ -115,7 +118,9 @@ namespace Thea2Translator.Logic
             OutputText = name;
             Groups = GetNameGroups(collection, race, subraces, gender);
             RefreshStatusString();
-        }
+
+            SetFormatedDate();
+        }     
 
         public CacheElem(FilesType type, XmlNode element)
         {
@@ -157,6 +162,7 @@ namespace Thea2Translator.Logic
             }
 
             RefreshStatusString();
+            SetFormatedDate();
         }
 
         private void RefreshStatusString()
@@ -550,6 +556,27 @@ namespace Thea2Translator.Logic
             }
 
             return string.Join("\r\n", stringList.ToArray());
+        }
+
+        private void SetFormatedDate()
+        {
+            if (!string.IsNullOrWhiteSpace(ConfirmationTime))
+            {
+                var splitedDate = ConfirmationTime.Split(' ');
+                DateTime date;
+                
+                if(!DateTime.TryParseExact(splitedDate[0], "dd-MM-yyyy", CultureInfo.InvariantCulture, DateTimeStyles.AdjustToUniversal, out date))
+                {
+                    if (DateTime.TryParseExact(splitedDate[0], "MM-dd-yyyy", CultureInfo.InvariantCulture, DateTimeStyles.AdjustToUniversal, out date))
+                        FormatedDate = date;
+                }
+                else
+                {
+                    FormatedDate = date;
+                }
+
+
+            }
         }
     }
 }

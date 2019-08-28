@@ -12,6 +12,8 @@ namespace Thea2Translator.Logic
 
         IList<CacheElem> CacheElems { get; }
         IList<string> Groups { get; }
+        IList<string> Authors { get; }
+
         Vocabulary Vocabulary { get; }
         Navigation Navigation { get; }
 

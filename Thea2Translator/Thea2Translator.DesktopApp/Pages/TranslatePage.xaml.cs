@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text.RegularExpressions;
 using System.Windows;
@@ -12,6 +13,7 @@ using Thea2Translator.DesktopApp.ViewModels;
 using Thea2Translator.DesktopApp.Windows;
 using Thea2Translator.Logic;
 using Thea2Translator.Logic.Cache.Interfaces;
+using Thea2Translator.Logic.Filter;
 
 namespace Thea2Translator.DesktopApp.Pages
 {
@@ -43,6 +45,7 @@ namespace Thea2Translator.DesktopApp.Pages
         private DictinaryWindow dictinaryWindow;
 
         private Vocabulary vocabulary;
+        private FilterModel filterModel;
         private IDataCache dataCache;
         private IStatistic statistic;
         private bool isAdmin;
@@ -58,6 +61,7 @@ namespace Thea2Translator.DesktopApp.Pages
         {
             InitializeComponent();
 
+            filterModel = new FilterModel();
             this.isAdmin = isAdmin;
 
             dataCache = null;
@@ -177,6 +181,17 @@ namespace Thea2Translator.DesktopApp.Pages
                 foreach (var elem in filtredElements)
                 {
                     elem.CacheElem.ResetAdventureNodeRecord();
+                }
+
+                if (!string.IsNullOrWhiteSpace(filterModel.Author))
+                    filtredElements = filtredElements.Where(e => e.CacheElem.ConfirmationUser == filterModel.Author).ToList();
+
+                if(filterModel.From.HasValue || filterModel.To.HasValue)
+                {
+                    filtredElements = filtredElements.Where(e => e.CacheElem.FormatedDate.HasValue
+                    && (!filterModel.From.HasValue || (filterModel.From.HasValue && e.CacheElem.FormatedDate >= filterModel.From))
+                    && (!filterModel.To.HasValue || (filterModel.To.HasValue && e.CacheElem.FormatedDate <= filterModel.To))
+                    ).ToList();
                 }
 
                 switch (cbItemsToTranslateFilter.SelectedIndex)
@@ -477,6 +492,16 @@ namespace Thea2Translator.DesktopApp.Pages
             UseNavigationFromButton(true);
         }
 
+        private void BtnAdvancedFilters_Click(object sender, RoutedEventArgs e)
+        {
+            AdvancedFiterWindow filterWindow = new AdvancedFiterWindow(filterModel, dataCache.Authors);
+            filterWindow.Show();
+
+            filterWindow.Closed += (o,ev) => {
+                FilterItems();
+            };
+        }
+
         #region Commands
         private void AddComands()
         {
@@ -693,5 +718,7 @@ namespace Thea2Translator.DesktopApp.Pages
                 this.NavigationService.Navigate(new ModuleSelectionUserPage());
         }
         #endregion
+
+        
     }
 }

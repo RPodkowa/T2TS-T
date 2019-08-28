@@ -10,14 +10,23 @@ import { Status } from '../_model/status';
 })
 export class StatusComponent implements OnInit {
 
-  status:Status;
+  databaseStatus:StatusRecord;
+  modulesStatus:StatusRecord;
 
   constructor(private statusService:StatusService) { }
 
   ngOnInit() {
-    this.statusService.getStatus().subscribe(data =>{
-      var record:Status = JSON.parse(data.toString());
-      this.status = record;
+
+    this.statusService.getDatabaseStatus().subscribe(data =>{
+      var record:StatusRecord = JSON.parse(data.toString());
+      this.databaseStatus = record;
+      console.log(this.databaseStatus);
+    });
+
+    this.statusService.getModulesStatus().subscribe(data =>{
+      var record:StatusRecord = JSON.parse(data.toString());
+      this.modulesStatus = record;
+      console.log(this.modulesStatus);
     });
   }
 

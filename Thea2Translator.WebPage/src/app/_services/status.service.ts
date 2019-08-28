@@ -9,8 +9,13 @@ export class StatusService {
 
   constructor(private http:HttpClient) { }
 
-  public getStatus(){
-  return this.http.get("http://www.thea2pl.webd.pro/thea2pl.webd.pro/translator/www/status.txt"
+  public getDatabaseStatus(){
+  return this.http.get("http://www.thea2pl.webd.pro/thea2pl.webd.pro/translator/www/status_database.txt"
     ,{ responseType: 'text' as 'json'});
   }
+
+  public getModulesStatus(){
+    return this.http.get("http://www.thea2pl.webd.pro/thea2pl.webd.pro/translator/www/status_modules.txt"
+      ,{ responseType: 'text' as 'json'});
+    }
 }

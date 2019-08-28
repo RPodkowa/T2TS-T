@@ -223,8 +223,9 @@
             <cefSharp:ChromiumWebBrowser x:Name="wbGoogleTranslate" Grid.RowSpan="2" Grid.Row="1" />
             <Grid Grid.Row="2" Grid.RowSpan="2">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="122*"/>
-                    <ColumnDefinition Width="127*"/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="54*"/>
@@ -238,11 +239,18 @@
                         </Label>
                     </StackPanel>
                 </Button>
-                <Button x:Name="btnFunctions" Height="{StaticResource iconButtonHeight}" Width="{StaticResource iconButtonWidth}" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Grid.Column="1" Click="BtnFunctions_Click">
+                <Button x:Name="btnFunctions" Height="{StaticResource iconButtonHeight}" Width="{StaticResource iconButtonWidth}" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Grid.Column="2" Click="BtnFunctions_Click">
                     <StackPanel Orientation="Horizontal">
                         <!--<Image Height="{StaticResource iconWidth}" Source="/Translator;component/Resources/Images/Icons/home.png"/>-->
                         <Label FontSize="10" FontWeight="Bold">
                             Functions
+                        </Label>
+                    </StackPanel>
+                </Button>
+                <Button x:Name="btnAdvancedFilters" Height="{StaticResource iconButtonHeight}" Width="{StaticResource iconButtonWidth}" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Grid.Column="1" Margin="17,7.5" Click="BtnAdvancedFilters_Click">
+                    <StackPanel Orientation="Horizontal">
+                        <Label FontSize="10" FontWeight="Bold">
+                            Filters
                         </Label>
                     </StackPanel>
                 </Button>

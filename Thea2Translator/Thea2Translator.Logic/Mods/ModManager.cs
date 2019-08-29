@@ -15,10 +15,10 @@ namespace Thea2Translator.Logic.Mods
         private const string EVENT_END = "[/EVENT]";
         private const string NODE_END = "[/NODE]";
         private const string STORY_END = "[/STORY]";
-        
+
         public string Title { get; private set; }
         public string Body { get; private set; }
-        
+
         private readonly string PatternPath;
         private readonly string OutputPath;
 
@@ -42,11 +42,11 @@ namespace Thea2Translator.Logic.Mods
                 var newFile = FileHelper.GetCopiedFile(file, OutputPath);
                 var fileName = Path.GetFileName(newFile);
                 if (fileName == "info.txt")
-                    infoFile = newFile;                
+                    infoFile = newFile;
             }
 
-            var dbFiles=PrapareDatabase();
-            var moduleFiles =PrapareModules();
+            var dbFiles = PrapareDatabase();
+            var moduleFiles = PrapareModules();
             PrepareInfoFile(infoFile, dbFiles, moduleFiles);
         }
 
@@ -121,6 +121,8 @@ namespace Thea2Translator.Logic.Mods
             if (fileName == "sAbandoned lumbermil")
                 return null;
 
+            if (fileName == "demon encounters") fileName = "Demon encounters";
+
             fileName = fileName + ".txt";
             OutputPath = FileHelper.GetDirName(OutputPath);
             StreamWriter file = new StreamWriter(OutputPath + "/" + fileName);
@@ -170,7 +172,7 @@ namespace Thea2Translator.Logic.Mods
                     sb.AppendLine(NODE_END);
                     sb.AppendLine("");
                 }
-                
+
                 sb.AppendLine(EVENT_END);
                 sb.AppendLine("");
             }

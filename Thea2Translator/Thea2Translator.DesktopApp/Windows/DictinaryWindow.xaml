@@ -45,7 +45,7 @@
             <Label Style="{StaticResource labelCenterTitle}" FontSize="{DynamicResource smallFontSize}" Content="{DynamicResource originalWordLabelDictinary}" Grid.Column="1" Grid.Row="4"/>
             <Label Style="{StaticResource labelCenterTitle}" FontSize="{DynamicResource smallFontSize}" Content="{DynamicResource translationLabelDictinary}" Grid.Column="1" Grid.Row="6"/>
             <Label x:Name="lblUsageCount" FontSize="{DynamicResource smallFontSize}" Style="{StaticResource fontCenter}" Content="COUNT" Grid.Column="3"/>
-            <Label x:Name="lblOriginalWord" FontSize="{DynamicResource smallFontSize}"  Style="{StaticResource fontCenter}" Content="TEXT" Grid.Column="3" Grid.Row="4"/>
+            <TextBox x:Name="txtOriginalWord" FontSize="{DynamicResource smallFontSize}"  Style="{StaticResource fontCenter}" Text="TEXT" Grid.Column="3" Grid.Row="4"/>
             <CheckBox x:Name="checkBoxIsActive" Grid.Column="3" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" Height="16" Margin="99,10,98,10" Width="16">
                 <CheckBox.LayoutTransform>
                     <ScaleTransform ScaleX="1.5" ScaleY="1.5" />

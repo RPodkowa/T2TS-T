@@ -21,7 +21,7 @@ namespace Thea2Translator.DesktopApp.Windows
             lblUsageCount.Content = $"Database: {elem.UsageCountDataBase} Modules: {elem.UsageCountModules}";
             checkBoxIsActive.IsChecked = elem.IsActive;
             checkBoxIsConflict.IsChecked = elem.HasConflict;
-            lblOriginalWord.Content = elem.OriginalWord;
+            txtOriginalWord.Text = elem.OriginalWord;
             txtTranslation.Text = elem.Translation;
 
             this.SetLanguageDictinary();
@@ -32,6 +32,7 @@ namespace Thea2Translator.DesktopApp.Windows
             elem.IsActive = checkBoxIsActive.IsChecked.HasValue ? checkBoxIsActive.IsChecked.Value : true;
             elem.HasConflict = checkBoxIsConflict.IsChecked.HasValue ? checkBoxIsConflict.IsChecked.Value : true;
             elem.Translation = txtTranslation.Text;
+            elem.OriginalWord = txtOriginalWord.Text;
 
             vocabulary.SaveElems();
             this.Close();

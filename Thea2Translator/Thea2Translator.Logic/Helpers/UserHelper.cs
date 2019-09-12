@@ -17,6 +17,8 @@ namespace Thea2Translator.Logic
         public static bool IsTestUser => !IsTeamMemberUser;
         public static bool IsAdminUser => (UserRole.HasValue && FlagHelper.IsSettedBit(UserRole.Value, 1));
 
+        public static Dictionary<FilesType, string> UserBookmarks;
+
         public static string GetUserRoleFileName()
         {
             if (string.IsNullOrEmpty(UserId)) return string.Empty;
@@ -49,6 +51,25 @@ namespace Thea2Translator.Logic
             var userRoleFile = GetUserRoleFileName();
             if (string.IsNullOrEmpty(userRoleFile)) return;
             FileHelper.UploadEmptyFile(DirectoryType.Users, userRoleFile, WorkMode.Normal);
+        }
+
+        public static void SetUserBookmarks(FilesType filesType, string bookmarks)
+        {
+            if (UserBookmarks == null) UserBookmarks = new Dictionary<FilesType, string>();
+            UserBookmarks[filesType] = bookmarks;
+        }
+
+        public static List<string> GetUserBookmarks(FilesType filesType)
+        {
+            List<string> ret = null;
+            if (UserBookmarks == null) return ret;
+            if (!UserBookmarks.Keys.Contains(filesType)) return ret;
+
+            var bookmarks = UserBookmarks[filesType];
+            if (string.IsNullOrEmpty(bookmarks)) return ret;
+
+            ret = bookmarks.Split(',').ToList();
+            return ret;
         }
     }
 }

@@ -153,6 +153,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Helpers\ExtensionsMethods.cs" />
+    <Compile Include="Helpers\SettingsHelper.cs" />
     <Compile Include="Helpers\LanguageHelper.cs" />
     <Compile Include="Windows\AdvancedFiterWindow.xaml.cs">
       <DependentUpon>AdvancedFiterWindow.xaml</DependentUpon>

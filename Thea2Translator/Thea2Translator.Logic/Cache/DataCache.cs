@@ -10,9 +10,9 @@ namespace Thea2Translator.Logic
     {
         internal const int LinesInFile = 6000;
 
-        public IList<CacheElem> CacheElems { get; private set; }                
+        public IList<CacheElem> CacheElems { get; private set; }
         public IList<string> Groups { get; private set; }
-        public IList<string> Authors { get; private set; }
+        public IList<string> Authors { get; private set; }        
         public Vocabulary Vocabulary { get; private set; }
         public Navigation Navigation { get; private set; }
 
@@ -31,21 +31,25 @@ namespace Thea2Translator.Logic
             ResetElems();
         }
 
+        public string GetFullPath()
+        {
+            return FullPath;
+        }
+
         public string GetSummary()
-        {            
+        {
             LoadFromFile();
             var statistic = LogicProvider.Statistic;
             statistic.Reload(this);
-            
+
             return $"{Type.ToString()}:\r\n{statistic.GetSummary()}";
         }
-        
+
         private void ResetElems()
         {
             CurrentId = 0;
             CacheElems = new List<CacheElem>();
-        }
-
+        }        
         public void ReloadElems(bool withGroups = false, bool withVocabulary = false, bool withNavigation = false)
         {
             LoadFromFile();
@@ -67,12 +71,13 @@ namespace Thea2Translator.Logic
             if (!FileHelper.FileExists(FullPath))
                 return;
 
+            var bookmarks = UserHelper.GetUserBookmarks(Type);
             XmlDocument doc = new XmlDocument();
             doc.Load(FullPath);
             var elements = doc.DocumentElement.GetElementsByTagName("Element");
             foreach (XmlNode element in elements)
             {
-                var elem = new CacheElem(Type, element);
+                var elem = new CacheElem(Type, element, bookmarks);
                 CurrentId = Math.Max(CurrentId, elem.Id);
                 AddElem(elem);
             }
@@ -282,7 +287,7 @@ namespace Thea2Translator.Logic
         #region ImportFromMachineTranslate
         private void MakeImportFromMachineTranslate()
         {
-            StartProcess(AlgorithmStep.ImportFromMachineTranslate.ToString(),3);
+            StartProcess(AlgorithmStep.ImportFromMachineTranslate.ToString(), 3);
             ReloadElems();
             StartNextProcessStep();
             ReadMachineTranslatedFiles();
@@ -419,7 +424,7 @@ namespace Thea2Translator.Logic
                 return;
 
             if (saveToFile)
-            {                
+            {
                 string newFile = FileHelper.GetCopiedFile(file, GetDirectoryName(AlgorithmStep.ExportToSteam));
 
                 string text = File.ReadAllText(newFile);
@@ -456,8 +461,9 @@ namespace Thea2Translator.Logic
                     var inputText = node.InnerText;
                     if (!saveToFile)
                     {
-                        var nodeId = GetUpdatedOrCreatedElemId(inputText, TextHelper.GetGroupsFromKey(group, true), true);
-                        Navigation.SetNodeElementId(nodeId, adventureInfo, adventureNodeId);
+                        var nodeElem = GetUpdatedOrCreatedElem(inputText, TextHelper.GetGroupsFromKey(group, true), true);
+                        nodeElem.TryUpdateValue(inputText, false);
+                        Navigation.SetNodeElementId(nodeElem.Id, adventureInfo, adventureNodeId);
                     }
                     else
                     {
@@ -472,7 +478,7 @@ namespace Thea2Translator.Logic
                             }
                         }
                     }
-                    
+
                     var outputs = node.SelectNodes("outputs");
                     foreach (XmlNode output in outputs)
                     {
@@ -485,8 +491,9 @@ namespace Thea2Translator.Logic
 
                         if (!saveToFile)
                         {
-                            var outputId = GetUpdatedOrCreatedElemId(inputTextName, TextHelper.GetGroupsFromKey(group, true), true);
-                            Navigation.SetOutputElementId(outputId, adventureInfo, adventureNodeId, targetID);
+                            var outputElem = GetUpdatedOrCreatedElem(inputTextName, TextHelper.GetGroupsFromKey(group, true), true);
+                            outputElem.TryUpdateValue(inputTextName, false);
+                            Navigation.SetOutputElementId(outputElem.Id, adventureInfo, adventureNodeId, targetID);
                         }
                         else
                         {
@@ -536,7 +543,7 @@ namespace Thea2Translator.Logic
                     elemActivation = !nameGeneratorElem.IsDeactivation;
                     groupConfirmation = nameGeneratorElem.IsConfirmation;
                 }
-                
+
                 var raceNames = new List<string>();
                 var subRaceNames = new List<string>();
 
@@ -570,7 +577,7 @@ namespace Thea2Translator.Logic
                     var elem = GetElem(key);
                     if (elem != null)
                     {
-                        elem.TryUpdateValue(name, elemActivation);                        
+                        elem.TryUpdateValue(name, elemActivation);
                     }
                     else
                     {
@@ -636,13 +643,6 @@ namespace Thea2Translator.Logic
             return file += sufix;
         }
 
-        private int GetUpdatedOrCreatedElemId(string value, List<string> groups, bool withActivation)
-        {
-            var elem = GetUpdatedOrCreatedElem(value, value, groups, withActivation);
-            if (elem == null) return 0;
-            return elem.Id;
-        }
-
         private CacheElem GetUpdatedOrCreatedElem(string value, List<string> groups, bool withActivation)
         {
             return GetUpdatedOrCreatedElem(value, value, groups, withActivation);
@@ -654,8 +654,8 @@ namespace Thea2Translator.Logic
                 return null;
 
             var elem = GetElem(key);
-            if (elem != null)            
-                elem.AddGroups(groups);            
+            if (elem != null)
+                elem.AddGroups(groups);
             else
             {
                 elem = CreateElem(key, value, groups);
@@ -686,12 +686,12 @@ namespace Thea2Translator.Logic
 
         public static bool FilesExists(FilesType type)
         {
-            if (type==FilesType.DataBase || type==FilesType.Modules || type == FilesType.Names)
+            if (type == FilesType.DataBase || type == FilesType.Modules || type == FilesType.Names)
             {
                 var dataCache = new DataCache(type);
                 return dataCache.FilesExists();
             }
-            
+
             return false;
         }
 
@@ -733,7 +733,7 @@ namespace Thea2Translator.Logic
                 NameGenerator.MergeCache();
                 return;
             }
-            
+
             var original = new DataCache(type, DirectoryType.Original);
             var originalOld = new DataCache(type, DirectoryType.OriginalOld);
             var cacheOld = new DataCache(type, DirectoryType.CacheOld);
@@ -812,7 +812,7 @@ namespace Thea2Translator.Logic
                 originalElem.SetConlfictWith(cacheOldElem);
                 cacheNew.AddElem(originalElem);
                 originalOld.RemoveElem(originalOldElem);
-                cacheOld.RemoveElem(cacheOldElem);                
+                cacheOld.RemoveElem(cacheOldElem);
             }
 
             foreach (var oldElem in cacheOld.CacheElems)
@@ -822,7 +822,7 @@ namespace Thea2Translator.Logic
 
                 if (originalOldElem != null)
                     throw new Exception($"Cos nie tak z ID={id} (2 petla)");
-                                
+
                 cacheNew.AddElem(oldElem);
             }
 

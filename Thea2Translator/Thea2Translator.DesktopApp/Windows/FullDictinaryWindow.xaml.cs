@@ -54,8 +54,7 @@ namespace Thea2Translator.DesktopApp.Windows
         {
             if (selectedElem != null)
             {
-                usageCountLabel.Content = $"Database: {selectedElem.UsageCountDataBase} Modules: {selectedElem.UsageCountModules}";
-                checkBoxIsActive.IsChecked = selectedElem.IsActive;
+                usageCountLabel.Content = selectedElem.GetUsagesText();
                 checkBoxIsConflict.IsChecked = selectedElem.HasConflict;
                 originalWordLabel.Content = selectedElem.OriginalWord;
                 txtTranslation.Text = selectedElem.Translation;
@@ -66,7 +65,6 @@ namespace Thea2Translator.DesktopApp.Windows
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            selectedElem.IsActive = checkBoxIsActive.IsChecked.Value;
             selectedElem.HasConflict = checkBoxIsConflict.IsChecked.Value;
             selectedElem.Translation = txtTranslation.Text;
 

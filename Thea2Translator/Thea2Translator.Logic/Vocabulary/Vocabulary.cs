@@ -18,6 +18,7 @@ namespace Thea2Translator.Logic
         public void Reload(IDataCache dataCache, DirectoryType directoryType = DirectoryType.Cache)
         {
             ReadFromFile(directoryType);
+            UpdateByCache(dataCache, true);
 
             if (VocabularyElems == null)
                 VocabularyElems = new List<VocabularyElem>();
@@ -54,55 +55,72 @@ namespace Thea2Translator.Logic
         {
             var fullPath = FileHelper.GetLocalFilePatch(DirectoryType.Cache, FilesType.Vocabulary);
             VocabularyElems = ((List<VocabularyElem>)VocabularyElems).OrderBy(x => x.OriginalWord).ToList();
+            VocabularyElems = VocabularyElems.Where(x => !x.DontSave).ToList();
+            VocabularyElems = VocabularyElems.Where(x => !string.IsNullOrEmpty(x.Translation)).ToList();
             FileHelper.SaveElemsToFile(VocabularyElems, fullPath);
         }
 
         public void UpdateByCache(IDataCache dataCache)
+        {
+            UpdateByCache(dataCache, false);
+        }
+
+        private void UpdateByCache(IDataCache dataCache, bool onlyUnknownElems)
         {
             if (VocabularyElems == null)
                 VocabularyElems = new List<VocabularyElem>();
 
             dataCache.ReloadElems(false, false);
 
+            bool hasElemsToUpdate = false;
             foreach (var elem in VocabularyElems)
             {
+                if (onlyUnknownElems && !elem.IsUnknown(dataCache.GetFileType()))
+                    continue;
+
                 elem.ResetUsages(dataCache.GetFileType());
+                hasElemsToUpdate = true;
             }
+
+            if (!hasElemsToUpdate)
+                return;
 
             foreach (var cacheElem in dataCache.CacheElems)
             {
-                var txt = cacheElem.OriginalText;
-
-                var elems = txt.Split(' ');
-                foreach (var elem in elems)
+                var normalizedTxt = TextHelper.NormalizeForVocabulary(cacheElem.OriginalText);
+                foreach (var elem in VocabularyElems)
                 {
-                    var word = TextHelper.NormalizeForVocabulary(elem);
-                    if (string.IsNullOrEmpty(word)) continue;
-                    if (word.Length == 1) continue;
+                    if (onlyUnknownElems && !elem.IsUnknown(dataCache.GetFileType()))
+                        continue;
 
-                    var VocabularyElem = GetElem(word, true);
-                    VocabularyElem.AddUsage(dataCache.GetFileType());
+                    elem.TryAddUsagesByNormalizedText(normalizedTxt, dataCache.GetFileType());
+                }
+            }
+
+            if (onlyUnknownElems)
+            {
+                foreach (var elem in VocabularyElems)
+                {
+                    if (!elem.IsUnknown(dataCache.GetFileType()))
+                        continue;
+
+                    elem.ForceResetUsages(dataCache.GetFileType());
                 }
             }
 
             SaveElems();
         }
 
-        public IList<VocabularyElem> GetElemsForText(string text)
+        public IList<VocabularyElem> GetElemsForText(string text, bool withAll)
         {
             text = TextHelper.RemoveUnnecessaryForVocabulary(text).ToLower();
 
-            var elems = VocabularyElems.Where(x => x.CanShowElemForPreparedText(Type, text)).OrderByDescending(x => x.GetUsageCount(Type));
+            var elems = VocabularyElems.Where(x => x.CanShowElemForPreparedText(Type, text, withAll)).OrderByDescending(x => x.GetUsageCount(Type));
 
             return elems.ToList();
         }
 
-        private bool Contains(string word)
-        {
-            return (GetElem(word, false) != null);
-        }
-
-        private VocabularyElem GetElem(string word, bool withCreate)
+        private VocabularyElem GetElem(string word)
         {
             foreach (var elem in VocabularyElems)
             {
@@ -110,12 +128,7 @@ namespace Thea2Translator.Logic
                     return elem;
             }
 
-            if (!withCreate)
-                return null;
-
-            VocabularyElem ret = new VocabularyElem(word, "");
-            VocabularyElems.Add(ret);
-            return ret;
+            return null;
         }
 
         public static bool HasConflicts()
@@ -178,8 +191,8 @@ namespace Thea2Translator.Logic
             foreach (var originalElem in original.VocabularyElems)
             {
                 var word = originalElem.OriginalWord;
-                var originalOldElem = originalOld.GetElem(word, false);
-                var cacheOldElem = cacheOld.GetElem(word, false);
+                var originalOldElem = originalOld.GetElem(word);
+                var cacheOldElem = cacheOld.GetElem(word);
 
                 if ((originalOldElem == null && cacheOldElem != null) || (cacheOldElem == null && originalOldElem != null))
                     throw new Exception($"Cos nie tak ze slowem='{word}'");
@@ -235,7 +248,7 @@ namespace Thea2Translator.Logic
             foreach (var oldElem in cacheOld.VocabularyElems)
             {
                 var word = oldElem.OriginalWord;
-                var originalOldElem = originalOld.GetElem(word, false);
+                var originalOldElem = originalOld.GetElem(word);
 
                 if (originalOldElem != null)
                     throw new Exception($"Cos nie tak ze slowem='{word}' (petla 2)");

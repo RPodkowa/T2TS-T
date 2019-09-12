@@ -15,8 +15,8 @@ namespace Thea2Translator.Logic
         private static LanguageManager _languageManager;
         private static Statistic _statistic;
 
-        public static IDataCache DataBase => 
-            _dataBase != null ?_dataBase : _dataBase = new DataCache(FilesType.DataBase);
+        public static IDataCache DataBase =>
+            _dataBase != null ? _dataBase : _dataBase = new DataCache(FilesType.DataBase);
 
         public static IDataCache Modules =>
             _modules != null ? _modules : _modules = new DataCache(FilesType.Modules);
@@ -29,6 +29,37 @@ namespace Thea2Translator.Logic
 
         public static IStatistic Statistic =>
             _statistic != null ? _statistic : _statistic = new Statistic();
+
+        public static void RepairDates()
+        {
+            RepairDates(DataBase);
+            RepairDates(Modules);
+        }
+
+        private static void RepairDates(IDataCache dataCache)
+        {
+            string filePath = dataCache.GetFullPath();
+            var db = FileHelper.ReadFileString(filePath);
+            FileHelper.DeleteFileIfExists(filePath);
+
+            for (int m = 5; m <= 9; m++)
+            {
+                string mounth = m.ToString();
+                if (m < 10) mounth = "0" + mounth;
+                for (int d = 1; d <= 31; d++)
+                {
+                    string day = d.ToString();
+                    if (d < 10) day = "0" + day;
+
+                    db = db.Replace($"<Time>{mounth}-{day}-2019", $"<Time>2019-{mounth}-{day}");
+                    db = db.Replace($"<Time>{mounth}.{day}.2019", $"<Time>2019-{mounth}-{day}");
+                    db = db.Replace($"<Time>{day}-{mounth}-2019", $"<Time>2019-{mounth}-{day}");
+                    db = db.Replace($"<Time>{day}.{mounth}.2019", $"<Time>2019-{mounth}-{day}");
+                }
+            }
+
+            FileHelper.WriteFileString(filePath, db);
+        }
 
         public static WwwModuleStatus GetWwwStatus(FilesType filesType)
         {

@@ -64,13 +64,14 @@ namespace Thea2Translator.DesktopApp.Pages
             }
                         
             if (FileHelper.MainWorkMode != WorkMode.Normal)            
-                System.Windows.MessageBox.Show($"Praca w trybie {FileHelper.MainWorkMode.ToString()}!", "Uwaga");            
-
+                System.Windows.MessageBox.Show($"Praca w trybie {FileHelper.MainWorkMode.ToString()}!", "Uwaga");
+                        
             if (admin)
                 this.NavigationService.Navigate(new ModuleSelectionAdminPage());
             else
                 this.NavigationService.Navigate(new ModuleSelectionUserPage());
         }
+        
 
         private void BtnChooseFolder_Click(object sender, RoutedEventArgs e)
         {

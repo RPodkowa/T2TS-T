@@ -17,7 +17,7 @@ namespace Thea2Translator.Logic
         Vocabulary Vocabulary { get; }
         Navigation Navigation { get; }
 
-        void UpdateVocabulary(Vocabulary vocabulary);
+        void UpdateVocabulary(Vocabulary vocabulary);        
         void ReloadElems(bool withGroups = false, bool withVocabulary = false, bool withNavigation = false);
         void SaveElems(bool withVocabulary = false);
         void MakeStep(AlgorithmStep step);
@@ -28,5 +28,6 @@ namespace Thea2Translator.Logic
         string GetSummary();
 
         FilesType GetFileType();
+        string GetFullPath();
     }
 }

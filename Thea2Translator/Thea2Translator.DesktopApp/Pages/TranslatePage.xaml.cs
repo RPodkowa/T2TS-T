@@ -9,6 +9,7 @@ using System.Windows.Controls;
 using System.Windows.Input;
 using Thea2Translator.DesktopApp.Helpers;
 using Thea2Translator.DesktopApp.Pages.ModuleSelectionPages;
+using Thea2Translator.DesktopApp.Properties;
 using Thea2Translator.DesktopApp.ViewModels;
 using Thea2Translator.DesktopApp.Windows;
 using Thea2Translator.Logic;
@@ -33,6 +34,9 @@ namespace Thea2Translator.DesktopApp.Pages
         public static RoutedCommand PrevQuestItemCommand = new RoutedCommand(); //Ctrl+Left        
         public static RoutedCommand OpenDictinaryCommand = new RoutedCommand(); //Ctrl+D
         public static RoutedCommand FunctionsCommand = new RoutedCommand(); //F1
+        public static RoutedCommand ToggleBookmarkCommand = new RoutedCommand(); //F2
+        public static RoutedCommand NextBookmarkCommand = new RoutedCommand(); //F3
+        public static RoutedCommand PrevBookmarkCommand = new RoutedCommand(); //Shift+F3
         public static RoutedCommand HomeCommand = new RoutedCommand(); //ESC
 
         private IList<System.Windows.Forms.ToolStripMenuItem> menuItems = new List<System.Windows.Forms.ToolStripMenuItem>();
@@ -43,6 +47,7 @@ namespace Thea2Translator.DesktopApp.Pages
         private string oldEndRange = "";
 
         private DictinaryWindow dictinaryWindow;
+        private bool dictionaryShowAllMode = false;
 
         private Vocabulary vocabulary;
         private FilterModel filterModel;
@@ -75,6 +80,7 @@ namespace Thea2Translator.DesktopApp.Pages
             cbItemsToTranslateFilter.SelectedIndex = 0;
             btnOpenGoogle.IsEnabled = false;
 
+            SettingsHelper.ReadUserBookmarks(dataCache.GetFileType());            
             dataCache.ReloadElems(true, true, true);
             vocabulary = dataCache.Vocabulary;
             statistic = LogicProvider.Statistic;
@@ -96,6 +102,7 @@ namespace Thea2Translator.DesktopApp.Pages
 
             this.SetLanguageDictinary();
             AddComands();
+            TrySetLastItem();
         }
 
         private void LbItemsToTranslate_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -106,7 +113,7 @@ namespace Thea2Translator.DesktopApp.Pages
             }
 
             selectedCacheElement = lbItemsToTranslate.SelectedItem as CacheElemViewModel;
-
+            TrySaveLastItem();
             txtOriginalText.Text = selectedCacheElement?.CacheElem?.OriginalText;
 
             if (selectedCacheElement?.CacheElem != null)
@@ -123,6 +130,51 @@ namespace Thea2Translator.DesktopApp.Pages
             RefreshVocabularyList();
             RealodStatistic();
             SetAvaibleGroups();
+        }
+        private void TrySetLastItem()
+        {
+            var lastItem = GetLastItem();
+            if (string.IsNullOrEmpty(lastItem))
+                return;
+
+            int? index = null;
+            for (int i = 0; i < filtredElements.Count; i++)
+            {
+                if (filtredElements[i].CacheElem.Id.ToString()==lastItem)
+                {
+                    index = i;
+                    break;
+                }
+            }
+
+            if (index.HasValue)
+            {
+                lbItemsToTranslate.SelectedIndex = index.Value;
+                GoToSelectedItem();
+                FocusManager.SetFocusedElement(this, txtTranslatedText);
+            }
+        }
+
+        private string GetLastItem()
+        {
+            string lastItem = null;
+            if (dataCache.GetFileType() == FilesType.DataBase) lastItem = Settings.Default.LastItemDatabase;
+            if (dataCache.GetFileType() == FilesType.Modules) lastItem = Settings.Default.LastItemModules;
+            return lastItem;
+        }
+
+        private void TrySaveLastItem()
+        {
+            if (selectedCacheElement == null)
+                return;
+
+            if (dataCache.GetFileType() != FilesType.DataBase && dataCache.GetFileType() != FilesType.Modules)
+                return;
+
+            string lastItem = selectedCacheElement.CacheElem.Id.ToString();
+            if (dataCache.GetFileType() == FilesType.DataBase) Settings.Default.LastItemDatabase = lastItem;
+            if (dataCache.GetFileType() == FilesType.Modules) Settings.Default.LastItemModules = lastItem;
+            Settings.Default.Save();
         }
 
         private void GoToSelectedItem()
@@ -188,9 +240,9 @@ namespace Thea2Translator.DesktopApp.Pages
 
                 if(filterModel.From.HasValue || filterModel.To.HasValue)
                 {
-                    filtredElements = filtredElements.Where(e => e.CacheElem.FormatedDate.HasValue
-                    && (!filterModel.From.HasValue || (filterModel.From.HasValue && e.CacheElem.FormatedDate >= filterModel.From))
-                    && (!filterModel.To.HasValue || (filterModel.To.HasValue && e.CacheElem.FormatedDate <= filterModel.To))
+                    filtredElements = filtredElements.Where(e => e.CacheElem.ConfirmationTime.HasValue
+                    && (!filterModel.From.HasValue || (filterModel.From.HasValue && e.CacheElem.ConfirmationTime >= filterModel.From))
+                    && (!filterModel.To.HasValue || (filterModel.To.HasValue && e.CacheElem.ConfirmationTime <= filterModel.To))
                     ).ToList();
                 }
 
@@ -247,7 +299,6 @@ namespace Thea2Translator.DesktopApp.Pages
             if (filtredElements == null) return;
             if (filtredElements.Count == 0) return;
 
-            CacheElemViewModel firstElem = null;
             int? index = null;
             for (int i = 0; i < filtredElements.Count && i < 20; i++)
             {
@@ -263,7 +314,6 @@ namespace Thea2Translator.DesktopApp.Pages
 
         private void CbGroups_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            bool withTryChooseFirstAdventure = false;
             if (
                 (cbGroups.SelectedIndex == 0 || cbGroups.SelectedIndex == 1) &&
                 (e.AddedItems.Count > 0 && e.RemovedItems.Count > 0) &&
@@ -369,20 +419,68 @@ namespace Thea2Translator.DesktopApp.Pages
         {
         }
 
-        private void lbDictinaryItems_KeyDown(object sender, KeyEventArgs e)
+        private void lbDictinaryItems_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            if (e.Key == Key.Delete)
-            {
-                DeactivationVocabularyItem();
-            }
+            if (e.RightButton == MouseButtonState.Pressed) ShowDictionaryMenu();
+        }
+        private void ShowDictionaryMenu()
+        {
+            System.Windows.Forms.ContextMenuStrip contextMenu = new System.Windows.Forms.ContextMenuStrip();
 
-            if (e.Key == Key.Enter)
-            {
-                ShowSelectedVocabularyDialog();
-            }
+            contextMenu.Items.Add(GetDictionaryMenuItem("Aktywuj/deaktywuj słowo", "Del", () => ChangeActivationVocabularyItem()));
+            contextMenu.Items.Add(GetDictionaryMenuItem("Pokaż dialog słowa", "Enter", () => ShowSelectedVocabularyDialog()));
+            contextMenu.Items.Add(GetDictionaryMenuItem("Pokaż/ukryj nieaktywne", "F5", () => ChangeDictionaryShowAllMode()));
+            contextMenu.Items.Add(GetDictionaryMenuItem("Dodaj słowo", "Ins", () => AddVocabularyItem(false)));
+            contextMenu.Items.Add(GetDictionaryMenuItem("Dodaj aktualną frazę", "Ctrl+Ins", () => AddVocabularyItem(true)));
+
+            contextMenu.Show(System.Windows.Forms.Cursor.Position);
         }
 
-        private void DeactivationVocabularyItem()
+        private System.Windows.Forms.ToolStripMenuItem GetDictionaryMenuItem(string description, string shortcut, Action action)
+        {
+            var item = new System.Windows.Forms.ToolStripMenuItem();
+            item.Text = $"{description}";
+            item.ShortcutKeyDisplayString = shortcut;
+            item.ShowShortcutKeys = true;
+            item.Click += (s, e) => action.Invoke();
+            return item;
+        }
+
+        private void lbDictinaryItems_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Delete) ChangeActivationVocabularyItem();
+            if (e.Key == Key.Enter) ShowSelectedVocabularyDialog();
+            if (e.Key == Key.F5) ChangeDictionaryShowAllMode();
+            if (e.Key == Key.Insert)
+                AddVocabularyItem(e.KeyboardDevice.Modifiers == ModifierKeys.Control);
+        }
+
+        private void AddVocabularyItem(bool fastInsert)
+        {
+            string originalWord = "";
+            string translation = "";
+            if (fastInsert)
+            {
+                if (selectedCacheElement == null) return;
+                if (selectedCacheElement.CacheElem == null) return;
+                originalWord = selectedCacheElement.CacheElem.OriginalText;
+                translation = selectedCacheElement.CacheElem.TranslatedText;
+            }
+
+            VocabularyElem elem = new VocabularyElem(originalWord, translation);
+            elem.NewElem = true;
+            dictinaryWindow = new DictinaryWindow(vocabulary, elem);
+            dictinaryWindow.ShowDialog();
+            RefreshVocabularyList();
+        }
+
+        private void ChangeDictionaryShowAllMode()
+        {
+            dictionaryShowAllMode = !dictionaryShowAllMode;
+            RefreshVocabularyList();
+        }
+
+        private void ChangeActivationVocabularyItem()
         {
             if (lbDictinaryItems.SelectedItem == null)
                 return;
@@ -391,7 +489,7 @@ namespace Thea2Translator.DesktopApp.Pages
             if (vocabularyElem == null)
                 return;
 
-            vocabularyElem.IsActive = false;
+            vocabularyElem.DontSave = !vocabularyElem.DontSave;
             RefreshVocabularyList();
         }
 
@@ -401,7 +499,7 @@ namespace Thea2Translator.DesktopApp.Pages
             if (selectedCacheElement?.CacheElem?.OriginalText == null)
                 return;
 
-            var vocabularyElems = vocabulary.GetElemsForText(selectedCacheElement?.CacheElem?.OriginalText);
+            var vocabularyElems = vocabulary.GetElemsForText(selectedCacheElement?.CacheElem?.OriginalText, dictionaryShowAllMode);
 
             var selectedIndex = lbDictinaryItems.SelectedIndex;
             lbDictinaryItems.ItemsSource = vocabularyElems;
@@ -509,13 +607,16 @@ namespace Thea2Translator.DesktopApp.Pages
             AddCommand(ConfirmCommand, new KeyGesture(Key.P, ModifierKeys.Control, "Ctrl+P"), "Potwierdź");
             AddCommand(ConflictCommand, new KeyGesture(Key.K, ModifierKeys.Control, "Ctrl+K"), "Rozwiązany konflikt");
             AddCommand(GoogleCommand, new KeyGesture(Key.G, ModifierKeys.Control, "Ctrl+G"), "Google");
-            AddCommand(ElemInfoCommand, new KeyGesture(Key.I, ModifierKeys.Control, "Ctrl+I"), "Informacja o elemencie");            
+            AddCommand(ElemInfoCommand, new KeyGesture(Key.I, ModifierKeys.Control, "Ctrl+I"), "Informacja o elemencie");
             AddCommand(PrevItemCommand, new KeyGesture(Key.Down, ModifierKeys.Alt, "Alt+Góra"), "Poprzednia fraza");
             AddCommand(NextItemCommand, new KeyGesture(Key.Up, ModifierKeys.Alt, "Alt+Dół"), "Następna fraza");
             AddCommand(PrevQuestItemCommand, new KeyGesture(Key.Left, ModifierKeys.Alt, "Alt+Lew"), "Przygoda - Wstecz");
-            AddCommand(NextQuestItemCommand, new KeyGesture(Key.Right, ModifierKeys.Alt, "Alt+Prawo"), "Przygoda - Dalej");            
+            AddCommand(NextQuestItemCommand, new KeyGesture(Key.Right, ModifierKeys.Alt, "Alt+Prawo"), "Przygoda - Dalej");
             AddCommand(OpenDictinaryCommand, new KeyGesture(Key.D, ModifierKeys.Control, "Ctrl+D"), "Słownik");
             AddCommand(FunctionsCommand, new KeyGesture(Key.F1, ModifierKeys.None, "F1"), "Funkcje");
+            AddCommand(ToggleBookmarkCommand, new KeyGesture(Key.F2, ModifierKeys.None, "F2"), "Zakładka - zaznacz/odznacz");
+            AddCommand(PrevBookmarkCommand, new KeyGesture(Key.F3, ModifierKeys.Shift, "Shift+F3"), "Poprzednia zakładka");
+            AddCommand(NextBookmarkCommand, new KeyGesture(Key.F3, ModifierKeys.None, "F3"), "Następna zakładka");
             AddCommand(HomeCommand, new KeyGesture(Key.Escape, ModifierKeys.None, "Esc"), "Wyjście");
         }
 
@@ -544,8 +645,11 @@ namespace Thea2Translator.DesktopApp.Pages
             if (keyGesture.Key == Key.Left && keyGesture.Modifiers == ModifierKeys.Alt) UseNavigationFromMenu(false);
             if (keyGesture.Key == Key.Right && keyGesture.Modifiers == ModifierKeys.Alt) UseNavigationFromMenu(true);
             if (keyGesture.Key == Key.D && keyGesture.Modifiers == ModifierKeys.Control) OpenVocabulary();
-            if (keyGesture.Key == Key.F1) ShowMainMenu();
-            if (keyGesture.Key == Key.Escape) BackToPrevPage();
+            if (keyGesture.Key == Key.F1 && keyGesture.Modifiers == ModifierKeys.None) ShowMainMenu();
+            if (keyGesture.Key == Key.F2 && keyGesture.Modifiers == ModifierKeys.None) ToggleBookmark();
+            if (keyGesture.Key == Key.F3 && keyGesture.Modifiers == ModifierKeys.None) ChooseBookmark(true);
+            if (keyGesture.Key == Key.F3 && keyGesture.Modifiers == ModifierKeys.Shift) ChooseBookmark(false);
+            if (keyGesture.Key == Key.Escape && keyGesture.Modifiers == ModifierKeys.None) BackToPrevPage();
         }
 
         private void SaveToFile(bool withChangeConfirmation, bool withResolveConflict = false)
@@ -717,8 +821,78 @@ namespace Thea2Translator.DesktopApp.Pages
             else
                 this.NavigationService.Navigate(new ModuleSelectionUserPage());
         }
-        #endregion
+        private void ToggleBookmark()
+        {
+            if (selectedCacheElement == null)            
+                return;
 
-        
+            SettingsHelper.ToggleUserBookmark(dataCache.GetFileType(), selectedCacheElement.CacheElem.Id.ToString());
+            selectedCacheElement.CacheElem.ToggleBookmark();
+        }
+        private void ChooseBookmark(bool next)
+        {
+            if (selectedCacheElement == null)
+            {
+                lbItemsToTranslate.SelectedIndex = 0;
+                return;
+            }
+
+            int index = lbItemsToTranslate.SelectedIndex;
+            var newIndex = GetNewIndex(index, GetBookmarkIndexes(), next);
+            if (!newIndex.HasValue) return;
+            if (newIndex == index) return;
+
+            lbItemsToTranslate.SelectedIndex = newIndex.Value;
+            GoToSelectedItem();
+            FocusManager.SetFocusedElement(this, txtTranslatedText);
+        }
+        private int? GetNewIndex(int selectedIndex, List<int?> bookmarkIndexes, bool next)
+        {
+            if (bookmarkIndexes == null || bookmarkIndexes.Count == 0)
+                return null;
+
+            if (bookmarkIndexes.Count == 1)
+                return bookmarkIndexes[0];
+
+            if (next) return GetNextIndex(selectedIndex, bookmarkIndexes);
+            return GetPrevIndex(selectedIndex, bookmarkIndexes);
+        }
+        private int? GetNextIndex(int selectedIndex, List<int?> bookmarkIndexes)
+        {
+            var next = bookmarkIndexes.FirstOrDefault(x => x > selectedIndex);
+            if (!next.HasValue) next = bookmarkIndexes.FirstOrDefault();
+            return next;
+        }
+        private int? GetPrevIndex(int selectedIndex, List<int?> bookmarkIndexes)
+        {
+            var prev = bookmarkIndexes.LastOrDefault(x => x < selectedIndex);
+            if (!prev.HasValue) prev = bookmarkIndexes.LastOrDefault();
+            return prev;
+        }
+        private List<int?> GetBookmarkIndexes()
+        {
+            var bookmarks = UserHelper.GetUserBookmarks(dataCache.GetFileType());
+            if (bookmarks == null || bookmarks.Count == 0)
+                return null;
+
+            var indexes = new List<int?>();
+            for (int i = 0; i < filtredElements.Count; i++)
+            {
+                var elemId = filtredElements[i].CacheElem.Id.ToString();
+                if (bookmarks.Contains(elemId))
+                {
+                    indexes.Add(i);
+                    bookmarks.Remove(elemId);
+                }
+
+                if (bookmarks.Count == 0) break;
+            }
+
+            if (indexes.Count == 0)
+                return null;
+
+            return indexes;
+        }
+        #endregion
     }
 }

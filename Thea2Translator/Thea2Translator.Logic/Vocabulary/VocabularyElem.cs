@@ -5,107 +5,217 @@ namespace Thea2Translator.Logic
 {
     public class VocabularyElem
     {
-        public int UsageCountDataBase { get; private set; }
-        public int UsageCountModules { get; private set; }
-
-        public int TotalUsageCount {
-            get
-            {
-                return UsageCountDataBase + UsageCountModules;
-            }
-        }
+        public const int UsageTypesCount = 2;
+        private int?[] UsageCount;
 
         public int Flag { get; private set; }
-        public bool IsActive
+        public bool HasConflict
         {
             get { return FlagHelper.IsSettedBit(Flag, 0); }
             set { Flag = FlagHelper.GetSettedBitValue(Flag, 0, value); }
-        }
-        public bool HasConflict
-        {
-            get { return FlagHelper.IsSettedBit(Flag, 1); }
-            set { Flag = FlagHelper.GetSettedBitValue(Flag, 1, value); }
-        }
+        }        
+
+        public bool NewElem;
+        public bool DontSave;
 
         public string OriginalWord { get; set; }
+        public string NormalizedOriginalWord { get; private set; }
         public string Translation;
-
+        
         public VocabularyElem(string line)
-        {            
+        {
+            InitUsages();
+            DontSave = false;
+            NewElem = false;
             var elems = line.Split(';');
 
-            if (elems.Length != 4 && elems.Length != 5)
+            if (elems.Length != 4)
                 throw new Exception($"Niepoprawna linia '{line}'!");
 
             int elem = 0;
-            UsageCountDataBase = int.Parse(elems[elem++]);
-            UsageCountModules = 0;
-            if (elems.Length == 5) UsageCountModules = int.Parse(elems[elem++]);
+            ParseUsages(elems[elem++]);
             Flag = int.Parse(elems[elem++]);
             OriginalWord = elems[elem++];
             Translation = elems[elem++];
+
+            NormalizedOriginalWord = TextHelper.NormalizeForVocabulary(OriginalWord);
         }
 
         public VocabularyElem(string originalWord, string translation)
         {
-            UsageCountDataBase = 0;
-            UsageCountModules = 0;
+            InitUsages();
+            DontSave = false;
+            NewElem = false;
             Flag = 0;
-            IsActive = true;
             OriginalWord = originalWord;
             Translation = translation;
+
+            NormalizedOriginalWord = TextHelper.NormalizeForVocabulary(OriginalWord);
+        }
+
+        private void InitUsages()
+        {
+            UsageCount = new int?[UsageTypesCount] { null, null };
         }
 
         public void ResetUsages(FilesType filesType)
         {
-            switch (filesType)
-            {
-                case FilesType.DataBase: UsageCountDataBase = 0; break;
-                case FilesType.Modules: UsageCountModules = 0; break;
-            }
+            TryResetUsages(GetUsagesIndex(filesType), false);
         }
 
-        public void AddUsage(FilesType filesType, int usages = 1)
+        public void ForceResetUsages(FilesType filesType)
         {
-            switch (filesType)
-            {
-                case FilesType.DataBase: UsageCountDataBase += usages; break;
-                case FilesType.Modules: UsageCountModules += usages; break;
-            }
+            TryResetUsages(GetUsagesIndex(filesType), true);
         }
 
-        private bool OccursInPreparedText(string text)
+        public bool IsUnknown(FilesType filesType)
         {
-            var word = OriginalWord.ToLower();
-            return text.Contains(word);
+            var usagesIndex = GetUsagesIndex(filesType);
+            if (!CheckUsagesIndex(usagesIndex)) return false;
+
+            var usageCount = UsageCount[usagesIndex.Value];
+            return (usageCount == null);
         }
 
-        public bool CanShowElemForPreparedText(FilesType filesType, string text)
+        private bool CheckUsagesIndex(int? usagesIndex)
         {
-            if (!IsActive) return false;
-            if (GetUsageCount(filesType) <= 1) return false;
-                        
-            return OccursInPreparedText(text);
+            if (usagesIndex == null) return false;
+            if (UsageCount.Length <= usagesIndex) return false;
+            return true;
+        }
+
+        private void TryResetUsages(int? usagesIndex, bool force)
+        {
+            if (!CheckUsagesIndex(usagesIndex)) return;
+            if (UsageCount[usagesIndex.Value] == null && !force) return;
+            UsageCount[usagesIndex.Value] = 0;
+        }
+
+        private void TryAddUsages(int? usagesIndex, int usages)
+        {
+            if (!CheckUsagesIndex(usagesIndex)) return;
+
+            if (UsageCount[usagesIndex.Value] == null) UsageCount[usagesIndex.Value] = 0;
+            UsageCount[usagesIndex.Value] += usages;
         }
 
         public int GetUsageCount(FilesType filesType)
         {
-            int usageCount = 0;
+            return GetUsageCount(GetUsagesIndex(filesType));
+        }
+
+        private int GetUsageCount(int? usagesIndex)
+        {
+            if (!CheckUsagesIndex(usagesIndex)) return 0;
+
+            var usageCount = UsageCount[usagesIndex.Value];
+            if (usageCount == null) usageCount = 0;
+            return usageCount.Value;
+        }
+
+        private string GetUsageValue(int? usagesIndex)
+        {
+            if (!CheckUsagesIndex(usagesIndex)) return "-";
+
+            var usageCount = UsageCount[usagesIndex.Value];
+            if (usageCount == null) return "?";
+            return usageCount.Value.ToString();
+        }
+
+        private int? GetUsagesIndex(FilesType filesType)
+        {
             switch (filesType)
             {
-                case FilesType.DataBase: usageCount = UsageCountDataBase; break;
-                case FilesType.Modules: usageCount = UsageCountModules; break;
-                case FilesType.Names: usageCount = UsageCountDataBase + UsageCountModules; break;
+                case FilesType.DataBase: return 0;
+                case FilesType.Modules: return 1;
             }
 
-            return usageCount;
+            return null;
+        }
+
+        private void ParseUsages(string usages)
+        {
+            var elems = usages.Split(',');
+            for (int i = 0; i < elems.Length; i++)
+            {
+                if (UsageCount.Length <= i) break;
+
+                int usage;
+                if (int.TryParse(elems[i],out usage))
+                    UsageCount[i] = usage;
+            }
+        }
+
+        public string GetUsagesText()
+        {
+            if (UsageCount == null) InitUsages();
+
+            var ret = new List<string>();
+
+            ret.Add($"Database: {GetUsageValue(0)}");
+            ret.Add($"Modules: {GetUsageValue(1)}");
+
+            return string.Join(" ", ret.ToArray());
+        }
+
+        private string GetUsages()
+        {
+            if (UsageCount == null) InitUsages();
+            var ret = new List<string>();
+
+            for (int i = 0; i < UsageCount.Length; i++)
+            {
+                ret.Add(GetUsageValue(i));
+            }
+
+            return string.Join(",", ret.ToArray());
+        }
+
+        public void CalculateUsages()
+        {
+            CalculateUsages(LogicProvider.DataBase);
+            CalculateUsages(LogicProvider.Modules);
+        }
+
+        private void CalculateUsages(IDataCache dataCache)
+        {
+            ResetUsages(dataCache.GetFileType());
+
+            NormalizedOriginalWord = TextHelper.NormalizeForVocabulary(OriginalWord);
+
+            foreach (var cacheElem in dataCache.CacheElems)
+            {
+                var normalizedTxt = TextHelper.NormalizeForVocabulary(cacheElem.OriginalText);
+                TryAddUsagesByNormalizedText(normalizedTxt, dataCache.GetFileType());
+            }
+        }
+
+        public void TryAddUsagesByNormalizedText(string normalizedTxt, FilesType filesType)
+        {
+            var occurens = TextHelper.StringOccurens(normalizedTxt, NormalizedOriginalWord);
+            if (occurens > 0)
+                AddUsage(filesType, occurens);
+        }
+
+        private void AddUsage(FilesType filesType, int usages = 1)
+        {
+            TryAddUsages(GetUsagesIndex(filesType), usages);
+        }
+
+        private bool OccursInPreparedText(string text)
+        {
+            return text.Contains(NormalizedOriginalWord);
+        }
+
+        public bool CanShowElemForPreparedText(FilesType filesType, string text, bool withAll)
+        {                        
+            return OccursInPreparedText(text);
         }
 
         public string GetStringToSave()
         {
             var arr = new List<string>();
-            arr.Add(UsageCountDataBase.ToString());
-            arr.Add(UsageCountModules.ToString());
+            arr.Add(GetUsages());
             arr.Add(Flag.ToString());
             arr.Add(OriginalWord);
             arr.Add(Translation);
@@ -115,7 +225,10 @@ namespace Thea2Translator.Logic
 
         public override string ToString()
         {
-            string text = $"({UsageCountDataBase},{UsageCountModules}) {OriginalWord}";
+            string text = "";
+            if (DontSave) text += "🚫";
+            if (HasConflict) text += "⚠️";
+            text += $"({GetUsages()}) {OriginalWord}";            
             if (!string.IsNullOrEmpty(Translation)) text = $"{text} - {Translation}";
             return text;
         }

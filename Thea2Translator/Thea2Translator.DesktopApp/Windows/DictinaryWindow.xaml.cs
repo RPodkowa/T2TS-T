@@ -18,21 +18,29 @@ namespace Thea2Translator.DesktopApp.Windows
             vocabulary = _vocabulary;
             elem = _vocabularyElem;
 
-            lblUsageCount.Content = $"Database: {elem.UsageCountDataBase} Modules: {elem.UsageCountModules}";
-            checkBoxIsActive.IsChecked = elem.IsActive;
+            var content = elem.GetUsagesText();
+            lblUsageCount.Content = content;
             checkBoxIsConflict.IsChecked = elem.HasConflict;
             txtOriginalWord.Text = elem.OriginalWord;
             txtTranslation.Text = elem.Translation;
+
+            if (!elem.NewElem)
+                txtOriginalWord.IsEnabled = false;
 
             this.SetLanguageDictinary();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            elem.IsActive = checkBoxIsActive.IsChecked.HasValue ? checkBoxIsActive.IsChecked.Value : true;
             elem.HasConflict = checkBoxIsConflict.IsChecked.HasValue ? checkBoxIsConflict.IsChecked.Value : true;
             elem.Translation = txtTranslation.Text;
             elem.OriginalWord = txtOriginalWord.Text;
+
+            if (elem.NewElem)
+            {
+                elem.CalculateUsages();
+                vocabulary.VocabularyElems.Add(elem);
+            }
 
             vocabulary.SaveElems();
             this.Close();

@@ -15,6 +15,10 @@ namespace Thea2Translator.Logic
             node.AppendChild(doc.CreateTextNode(value));
             return node;
         }
+        public static XmlNode GetNode(XmlDocument doc, string name, DateTime value)
+        {
+            return GetNode(doc, name, value.ToString("yyyy-MM-dd HH:mm:ss"));
+        }
 
         public static XmlAttribute GetAttribute(XmlDocument doc, string name, string value)
         {
@@ -30,6 +34,15 @@ namespace Thea2Translator.Logic
 
             var ret = node.InnerText;
             return ret;
+        }
+
+        public static DateTime? GetNodeDate(XmlNode element, string xpath)
+        {
+            var timeString = GetNodeText(element, xpath);
+            if (!DateTime.TryParse(timeString, out DateTime time))
+                return null;
+
+            return time;
         }
 
         public static string GetNodeAttribute(XmlNode xmlNode, string key)

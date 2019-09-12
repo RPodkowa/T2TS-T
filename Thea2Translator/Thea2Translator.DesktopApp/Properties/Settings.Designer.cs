@@ -8,98 +8,63 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Thea2Translator.DesktopApp.Properties {
-    
-    
+using Thea2Translator.Logic.Languages;
+
+namespace Thea2Translator.DesktopApp.Properties
+{
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.9.0.0")]
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
-        
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase
+    {
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
-        
-        public static Settings Default {
-            get {
-                return defaultInstance;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public string WorkingDirectory {
-            get {
-                return ((string)(this["WorkingDirectory"]));
-            }
-            set {
-                this["WorkingDirectory"] = value;
-            }
-        }
+
+        public static Settings Default { get { return defaultInstance; } }
 
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public string UserName
-        {
-            get
-            {
-                return ((string)(this["UserName"]));
-            }
-            set
-            {
-                this["UserName"] = value;
-            }
-        }
+        public string WorkingDirectory { get { return ((string)(this["WorkingDirectory"])); } set { this["WorkingDirectory"] = value; } }
 
         [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]        
-        public string UserId
-        {
-            get
-            {
-                return ((string)(this["UserId"]))?.ToUpper();
-            }
-            set
-            {
-                this["UserId"] = value;
-            }
-        }
-        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public string UserName { get { return ((string)(this["UserName"])); } set { this["UserName"] = value; } }
+
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public string UserId { get { return ((string)(this["UserId"]))?.ToUpper(); } set { this["UserId"] = value; } }
+
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("Polish")]
-        public global::Thea2Translator.Logic.Languages.Languages Language {
-            get {
-                return ((global::Thea2Translator.Logic.Languages.Languages)(this["Language"]));
-            }
-            set {
-                this["Language"] = value;
-            }
-        }
+        public Languages Language { get { return ((Languages)(this["Language"])); } set { this["Language"] = value; } }
+
+        #region Mod
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public string ModTitle { get { return ((string)(this["ModTitle"])); } set { this["ModTitle"] = value; } }
 
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public string ModTitle
-        {
-            get
-            {
-                return ((string)(this["ModTitle"]));
-            }
-            set
-            {
-                this["ModTitle"] = value;
-            }
-        }
+        public string ModBody { get { return ((string)(this["ModBody"])); } set { this["ModBody"] = value; } }
+        #endregion
+
+        #region DataBase
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public string LastItemDatabase { get { return ((string)(this["LastItemDatabase"])); } set { this["LastItemDatabase"] = value; } }
 
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public string ModBody
-        {
-            get
-            {
-                return ((string)(this["ModBody"]));
-            }
-            set
-            {
-                this["ModBody"] = value;
-            }
-        }
+        public string BookmarksDatabase { get { return ((string)(this["BookmarksDatabase"])); } set { this["BookmarksDatabase"] = value; } }
+        #endregion
+
+        #region Modules
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public string LastItemModules { get { return ((string)(this["LastItemModules"])); } set { this["LastItemModules"] = value; } }
+
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public string BookmarksModules { get { return ((string)(this["BookmarksModules"])); } set { this["BookmarksModules"] = value; } }
+        #endregion
     }
 }

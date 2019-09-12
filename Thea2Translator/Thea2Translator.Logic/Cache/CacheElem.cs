@@ -56,9 +56,8 @@ namespace Thea2Translator.Logic
         public string ConflictTranslatedText { get; private set; }
 
         public string ConfirmationUser { get; private set; }
-        public DateTime? FormatedDate { get; private set; }
 
-        private string ConfirmationTime;
+        public DateTime? ConfirmationTime { get; private set; }
         private string ConfirmationGuid;
 
         public List<string> Groups;
@@ -77,6 +76,8 @@ namespace Thea2Translator.Logic
                 return (lastPart == "_DES" || lastPartWithNumber == "_DES");
             }
         }
+        public bool Changed { get; private set; }
+        public bool HasMark { get; private set; }
 
         public bool ToTranslate { get { return !IsCorrectedByHuman && TextHelper.EqualsTexts(OriginalText, TranslatedText); } }
         public bool ToConfirm { get { return !IsCorrectedByHuman; } }
@@ -118,11 +119,9 @@ namespace Thea2Translator.Logic
             OutputText = name;
             Groups = GetNameGroups(collection, race, subraces, gender);
             RefreshStatusString();
+        }
 
-            SetFormatedDate();
-        }     
-
-        public CacheElem(FilesType type, XmlNode element)
+        public CacheElem(FilesType type, XmlNode element, IList<string> bookmarks)
         {
             Type = type;
 
@@ -151,7 +150,7 @@ namespace Thea2Translator.Logic
             OldTranslatedText = XmlHelper.GetNodeText(element, "Texts/Old");
             ConflictTranslatedText = XmlHelper.GetNodeText(element, "Texts/Conflict");
 
-            ConfirmationTime = XmlHelper.GetNodeText(element, "Confirmation/Time");
+            ConfirmationTime = XmlHelper.GetNodeDate(element, "Confirmation/Time");
             ConfirmationGuid = XmlHelper.GetNodeText(element, "Confirmation/GUID");
             ConfirmationUser = XmlHelper.GetNodeText(element, "Confirmation/User");
 
@@ -161,8 +160,10 @@ namespace Thea2Translator.Logic
                 ConflictTranslatedText = TranslatedText;
             }
 
+            if (bookmarks != null && bookmarks.Count > 0 && bookmarks.Contains(Id.ToString()))
+                HasMark = true;
+
             RefreshStatusString();
-            SetFormatedDate();
         }
 
         private void RefreshStatusString()
@@ -207,7 +208,7 @@ namespace Thea2Translator.Logic
         private void SetNewTextToCompare(string newText)
         {
             if (IsDataBaseElem || IsNamesElem) return;
-            InputText = newText;
+            //InputText = newText;
             ToCompareText = newText;
         }
 
@@ -220,7 +221,7 @@ namespace Thea2Translator.Logic
             elementNode.Attributes.Append(XmlHelper.GetAttribute(doc, "Flag", Flag.ToString()));
 
             XmlNode confirmationNode = doc.CreateElement("Confirmation");
-            if (!string.IsNullOrEmpty(ConfirmationTime)) confirmationNode.AppendChild(XmlHelper.GetNode(doc, "Time", ConfirmationTime));
+            if (ConfirmationTime.HasValue) confirmationNode.AppendChild(XmlHelper.GetNode(doc, "Time", ConfirmationTime.Value));
             if (!string.IsNullOrEmpty(ConfirmationGuid)) confirmationNode.AppendChild(XmlHelper.GetNode(doc, "GUID", ConfirmationGuid));
             if (!string.IsNullOrEmpty(ConfirmationUser)) confirmationNode.AppendChild(XmlHelper.GetNode(doc, "User", ConfirmationUser));
             if (confirmationNode.ChildNodes != null && confirmationNode.ChildNodes.Count > 0)
@@ -275,14 +276,21 @@ namespace Thea2Translator.Logic
 
         public void SetChanged(bool how)
         {
-            var status = GetCommonStatusString();
-            if (how) status += "🖊️";
-            StatusString = status;
+            Changed = how;
+            RefreshStatusString();
+        }
+
+        public void ToggleBookmark()
+        {
+            HasMark = !HasMark;
+            RefreshStatusString();
         }
 
         private string GetCommonStatusString()
         {
             var status = string.Empty;
+            if (Changed) status += "🖊️";
+            if (HasMark) status += "📌";
             if (IsInactive) status += "🚫";
             if (HasConflict) status += "⚠️";
             if (IsGenericName) status += "⚙️";
@@ -297,14 +305,14 @@ namespace Thea2Translator.Logic
             if (confirm)
             {
                 IsCorrectedByHuman = true;
-                ConfirmationTime = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
+                ConfirmationTime = DateTime.Now;
                 ConfirmationUser = UserHelper.UserName;
                 ConfirmationGuid = UserHelper.UserId;
             }
             else
             {
                 IsCorrectedByHuman = false;
-                ConfirmationTime = "";
+                ConfirmationTime = null;
                 ConfirmationUser = "";
                 ConfirmationGuid = "";
             }
@@ -556,27 +564,6 @@ namespace Thea2Translator.Logic
             }
 
             return string.Join("\r\n", stringList.ToArray());
-        }
-
-        private void SetFormatedDate()
-        {
-            if (!string.IsNullOrWhiteSpace(ConfirmationTime))
-            {
-                var splitedDate = ConfirmationTime.Split(' ');
-                DateTime date;
-                
-                if(!DateTime.TryParseExact(splitedDate[0], "dd-MM-yyyy", CultureInfo.InvariantCulture, DateTimeStyles.AdjustToUniversal, out date))
-                {
-                    if (DateTime.TryParseExact(splitedDate[0], "MM-dd-yyyy", CultureInfo.InvariantCulture, DateTimeStyles.AdjustToUniversal, out date))
-                        FormatedDate = date;
-                }
-                else
-                {
-                    FormatedDate = date;
-                }
-
-
-            }
         }
     }
 }

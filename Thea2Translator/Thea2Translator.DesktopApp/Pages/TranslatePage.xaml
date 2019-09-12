@@ -71,7 +71,7 @@
             </Grid>
             <TextBox x:Name="txtOriginalText" TextWrapping="Wrap" IsEnabled="False"  FontSize="{DynamicResource smallFontSize}" />
             <TextBox x:Name="txtTranslatedText" Grid.Row="4" TextWrapping="Wrap" FontSize="{DynamicResource smallFontSize}"/>
-            <ListBox x:Name="lbDictinaryItems" Grid.Row="2" SelectionChanged="LbDictinary_SelectionChange" FontSize="{DynamicResource smallFontSize}" MouseDoubleClick="lbDictinaryItems_MouseDoubleClick" KeyDown="lbDictinaryItems_KeyDown" />
+            <ListBox x:Name="lbDictinaryItems" Grid.Row="2" SelectionChanged="LbDictinary_SelectionChange" FontSize="{DynamicResource smallFontSize}" MouseDoubleClick="lbDictinaryItems_MouseDoubleClick" KeyDown="lbDictinaryItems_KeyDown" MouseDown="lbDictinaryItems_MouseDown" />
 
         </Grid>
         <Grid x:Name="filterAndChooseItemsGrid" Grid.Column="1" Grid.Row="1">

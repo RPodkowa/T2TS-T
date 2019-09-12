@@ -61,9 +61,7 @@ namespace Thea2Translator.Logic
         public static string NormalizeForVocabulary(string text)
         {
             var ret = RemoveUnnecessaryForVocabulary(text);
-            if (ret.Length > 1)
-                ret = ret.First().ToString() + ret.Substring(1).ToLower();
-
+            ret = ret.ToLower();
             return ret;
         }
 

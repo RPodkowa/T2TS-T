@@ -17,6 +17,7 @@ namespace Thea2Translator.Logic
         History,
         Logs,
         Www,
-        Users
+        Users,
+        Statistics
     }
 }

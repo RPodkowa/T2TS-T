@@ -37,6 +37,7 @@ namespace Thea2Translator.DesktopApp.Pages
         public static RoutedCommand ToggleBookmarkCommand = new RoutedCommand(); //F2
         public static RoutedCommand NextBookmarkCommand = new RoutedCommand(); //F3
         public static RoutedCommand PrevBookmarkCommand = new RoutedCommand(); //Shift+F3
+        public static RoutedCommand FullModuleStatistics = new RoutedCommand(); //F12
         public static RoutedCommand HomeCommand = new RoutedCommand(); //ESC
 
         private IList<System.Windows.Forms.ToolStripMenuItem> menuItems = new List<System.Windows.Forms.ToolStripMenuItem>();
@@ -46,8 +47,7 @@ namespace Thea2Translator.DesktopApp.Pages
         private string oldStartRange = "";
         private string oldEndRange = "";
 
-        private DictinaryWindow dictinaryWindow;
-        private bool dictionaryShowAllMode = false;
+        private DictinaryWindow dictinaryWindow;        
 
         private Vocabulary vocabulary;
         private FilterModel filterModel;
@@ -429,7 +429,6 @@ namespace Thea2Translator.DesktopApp.Pages
 
             contextMenu.Items.Add(GetDictionaryMenuItem("Aktywuj/deaktywuj słowo", "Del", () => ChangeActivationVocabularyItem()));
             contextMenu.Items.Add(GetDictionaryMenuItem("Pokaż dialog słowa", "Enter", () => ShowSelectedVocabularyDialog()));
-            contextMenu.Items.Add(GetDictionaryMenuItem("Pokaż/ukryj nieaktywne", "F5", () => ChangeDictionaryShowAllMode()));
             contextMenu.Items.Add(GetDictionaryMenuItem("Dodaj słowo", "Ins", () => AddVocabularyItem(false)));
             contextMenu.Items.Add(GetDictionaryMenuItem("Dodaj aktualną frazę", "Ctrl+Ins", () => AddVocabularyItem(true)));
 
@@ -449,8 +448,7 @@ namespace Thea2Translator.DesktopApp.Pages
         private void lbDictinaryItems_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.Key == Key.Delete) ChangeActivationVocabularyItem();
-            if (e.Key == Key.Enter) ShowSelectedVocabularyDialog();
-            if (e.Key == Key.F5) ChangeDictionaryShowAllMode();
+            if (e.Key == Key.Enter) ShowSelectedVocabularyDialog();            
             if (e.Key == Key.Insert)
                 AddVocabularyItem(e.KeyboardDevice.Modifiers == ModifierKeys.Control);
         }
@@ -474,12 +472,6 @@ namespace Thea2Translator.DesktopApp.Pages
             RefreshVocabularyList();
         }
 
-        private void ChangeDictionaryShowAllMode()
-        {
-            dictionaryShowAllMode = !dictionaryShowAllMode;
-            RefreshVocabularyList();
-        }
-
         private void ChangeActivationVocabularyItem()
         {
             if (lbDictinaryItems.SelectedItem == null)
@@ -499,7 +491,7 @@ namespace Thea2Translator.DesktopApp.Pages
             if (selectedCacheElement?.CacheElem?.OriginalText == null)
                 return;
 
-            var vocabularyElems = vocabulary.GetElemsForText(selectedCacheElement?.CacheElem?.OriginalText, dictionaryShowAllMode);
+            var vocabularyElems = vocabulary.GetElemsForText(selectedCacheElement?.CacheElem?.OriginalText);
 
             var selectedIndex = lbDictinaryItems.SelectedIndex;
             lbDictinaryItems.ItemsSource = vocabularyElems;
@@ -617,6 +609,7 @@ namespace Thea2Translator.DesktopApp.Pages
             AddCommand(ToggleBookmarkCommand, new KeyGesture(Key.F2, ModifierKeys.None, "F2"), "Zakładka - zaznacz/odznacz");
             AddCommand(PrevBookmarkCommand, new KeyGesture(Key.F3, ModifierKeys.Shift, "Shift+F3"), "Poprzednia zakładka");
             AddCommand(NextBookmarkCommand, new KeyGesture(Key.F3, ModifierKeys.None, "F3"), "Następna zakładka");
+            AddCommand(FullModuleStatistics, new KeyGesture(Key.F12, ModifierKeys.None, "F12"), "Pełna statystyka");
             AddCommand(HomeCommand, new KeyGesture(Key.Escape, ModifierKeys.None, "Esc"), "Wyjście");
         }
 
@@ -649,6 +642,7 @@ namespace Thea2Translator.DesktopApp.Pages
             if (keyGesture.Key == Key.F2 && keyGesture.Modifiers == ModifierKeys.None) ToggleBookmark();
             if (keyGesture.Key == Key.F3 && keyGesture.Modifiers == ModifierKeys.None) ChooseBookmark(true);
             if (keyGesture.Key == Key.F3 && keyGesture.Modifiers == ModifierKeys.Shift) ChooseBookmark(false);
+            if (keyGesture.Key == Key.F12 && keyGesture.Modifiers == ModifierKeys.None) SaveFullModuleStatistics();
             if (keyGesture.Key == Key.Escape && keyGesture.Modifiers == ModifierKeys.None) BackToPrevPage();
         }
 
@@ -707,6 +701,10 @@ namespace Thea2Translator.DesktopApp.Pages
                 return;
 
             MessageBox.Show(selectedCacheElement.CacheElem.GetElemInfoString());
+        }
+        private void SaveFullModuleStatistics()
+        {
+            statistic.SaveFullModuleStatistics(dataCache);
         }
         private void ChooseItem(bool next)
         {

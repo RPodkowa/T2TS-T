@@ -207,7 +207,7 @@ namespace Thea2Translator.Logic
             return text.Contains(NormalizedOriginalWord);
         }
 
-        public bool CanShowElemForPreparedText(FilesType filesType, string text, bool withAll)
+        public bool CanShowElemForPreparedText(FilesType filesType, string text)
         {                        
             return OccursInPreparedText(text);
         }

@@ -111,11 +111,11 @@ namespace Thea2Translator.Logic
             SaveElems();
         }
 
-        public IList<VocabularyElem> GetElemsForText(string text, bool withAll)
+        public IList<VocabularyElem> GetElemsForText(string text)
         {
             text = TextHelper.RemoveUnnecessaryForVocabulary(text).ToLower();
 
-            var elems = VocabularyElems.Where(x => x.CanShowElemForPreparedText(Type, text, withAll)).OrderByDescending(x => x.GetUsageCount(Type));
+            var elems = VocabularyElems.Where(x => x.CanShowElemForPreparedText(Type, text)).OrderByDescending(x => x.GetUsageCount(Type));
 
             return elems.ToList();
         }
@@ -194,9 +194,12 @@ namespace Thea2Translator.Logic
                 var originalOldElem = originalOld.GetElem(word);
                 var cacheOldElem = cacheOld.GetElem(word);
 
-                if ((originalOldElem == null && cacheOldElem != null) || (cacheOldElem == null && originalOldElem != null))
+                if ((originalOldElem == null && cacheOldElem != null) /*|| (cacheOldElem == null && originalOldElem != null)*/)
                     throw new Exception($"Cos nie tak ze slowem='{word}'");
-                
+
+                if (cacheOldElem == null && originalOldElem != null)
+                    continue;
+
                 //0. 	A	|	-	|	-	|	A	|
                 if (originalOldElem == null && cacheOldElem == null)
                 {

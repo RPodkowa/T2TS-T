@@ -110,6 +110,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cache\Enums\StatisticType.cs" />
     <Compile Include="Filter\FilterModel.cs" />
     <Compile Include="Cache\Models\WwwModuleStatus.cs" />
     <Compile Include="Helpers\ImageHelper.cs" />
@@ -117,6 +118,7 @@
     <Compile Include="Helpers\UserHelper.cs" />
     <Compile Include="Helpers\WorkMode.cs" />
     <Compile Include="Helpers\XmlHelper.cs" />
+    <Compile Include="Mods\ModType.cs" />
     <Compile Include="NameGenerator\NameGenerator.cs" />
     <Compile Include="NameGenerator\NameGeneratorElem.cs" />
     <Compile Include="NameGenerator\NameGeneratorElemCollection.cs" />

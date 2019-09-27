@@ -56,5 +56,35 @@ namespace Thea2Translator.DesktopApp.Helpers
             
             UserHelper.SetUserBookmarks(filesType, GetBookmarks(filesType));
         }
+
+        public static string GetModTitle(ModType modType)
+        {
+            if (modType == ModType.Translation) return Settings.Default.ModTitle;
+            if (modType == ModType.TranslationDebug) return Settings.Default.ModTitle_Translation_Debug;
+            return "";
+        }
+
+        public static string GetModBody(ModType modType)
+        {
+            if (modType == ModType.Translation) return Settings.Default.ModBody;
+            if (modType == ModType.TranslationDebug) return Settings.Default.ModBody_Translation_Debug;
+            return "";
+        }
+
+        public static void SetModTexts(ModType modType, string title, string body)
+        {
+            if (modType == ModType.Translation)
+            {
+                Settings.Default.ModTitle = title;
+                Settings.Default.ModBody = body;
+                Settings.Default.Save();
+            }
+            if (modType == ModType.TranslationDebug)
+            {
+                Settings.Default.ModTitle_Translation_Debug = title;
+                Settings.Default.ModBody_Translation_Debug = body;
+                Settings.Default.Save();
+            }
+        }
     }
 }

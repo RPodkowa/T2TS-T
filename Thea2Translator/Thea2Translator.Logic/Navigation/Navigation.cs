@@ -35,6 +35,9 @@ namespace Thea2Translator.Logic
 
         public void UpdateAdventureNodeElems(IDataCache dataCache)
         {
+            if (NavigationAdventureNodeElems == null)
+                return;
+
             var navigationAdventureNodeElemsCopy = new List<NavigationAdventureNodeElem>(NavigationAdventureNodeElems);
             foreach (var dataCacheElem in dataCache.CacheElems)
             {
@@ -60,9 +63,10 @@ namespace Thea2Translator.Logic
 
         public IList<string> GetStartingGroups()
         {
-            if (startGroups != null) return startGroups;
+            if (startGroups != null || NavigationStartGroups == null) return startGroups;
             startGroups = new List<string>();
-            foreach(var navigationStartGroup in NavigationStartGroups)
+            if (NavigationStartGroups == null) return startGroups;
+            foreach (var navigationStartGroup in NavigationStartGroups)
             {
                 startGroups.Add(navigationStartGroup.Group);
             }

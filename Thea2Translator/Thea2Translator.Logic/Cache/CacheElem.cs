@@ -79,6 +79,8 @@ namespace Thea2Translator.Logic
         public bool Changed { get; private set; }
         public bool HasMark { get; private set; }
 
+        public bool HasWarning { get; private set; }
+
         public bool ToTranslate { get { return !IsCorrectedByHuman && TextHelper.EqualsTexts(OriginalText, TranslatedText); } }
         public bool ToConfirm { get { return !IsCorrectedByHuman; } }
 
@@ -157,6 +159,7 @@ namespace Thea2Translator.Logic
             if (IsModulesElem && !TextHelper.IsEqualsSpecials(Specials, tmpSpecials))
             {
                 HasConflict = true;
+                HasWarning = true;
                 ConflictTranslatedText = TranslatedText;
             }
 
@@ -179,6 +182,7 @@ namespace Thea2Translator.Logic
         public void ResolveConflict(bool resolved, string text)
         {
             HasConflict = !resolved;
+            HasWarning = false;
             if (resolved)
                 SetTranslated(text);
         }
@@ -291,6 +295,7 @@ namespace Thea2Translator.Logic
             var status = string.Empty;
             if (Changed) status += "🖊️";
             if (HasMark) status += "📌";
+            if (HasWarning) status += "{}?";
             if (IsInactive) status += "🚫";
             if (HasConflict) status += "⚠️";
             if (IsGenericName) status += "⚙️";

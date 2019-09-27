@@ -39,6 +39,7 @@ namespace Thea2Translator.DesktopApp.Windows
             if (elem.NewElem)
             {
                 elem.CalculateUsages();
+                elem.NewElem = false;
                 vocabulary.VocabularyElems.Add(elem);
             }
 

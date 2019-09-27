@@ -11,6 +11,7 @@ namespace Thea2Translator.Logic
         ImportFromSteam,
         PrepareToMachineTranslate,
         ImportFromMachineTranslate,
-        ExportToSteam
+        ExportToSteam,
+        ExportToSteamDebug
     }
 }

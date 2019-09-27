@@ -199,7 +199,8 @@ namespace Thea2Translator.Logic
             if (step == AlgorithmStep.ImportFromSteam) MakeImportFromSteam();
             if (step == AlgorithmStep.PrepareToMachineTranslate) MakePrepareToMachineTranslate();
             if (step == AlgorithmStep.ImportFromMachineTranslate) MakeImportFromMachineTranslate();
-            if (step == AlgorithmStep.ExportToSteam) MakeExportToSteam();
+            if (step == AlgorithmStep.ExportToSteam) MakeExportToSteam(step);
+            if (step == AlgorithmStep.ExportToSteamDebug) MakeExportToSteam(step);
         }
 
         #region ImportFromSteam
@@ -223,15 +224,16 @@ namespace Thea2Translator.Logic
                 }
             }
 
-            string[] files = FileHelper.GetFiles(GetDirectoryName(AlgorithmStep.ImportFromSteam));
+            AlgorithmStep step = AlgorithmStep.ImportFromSteam;
+            string[] files = FileHelper.GetFiles(GetDirectoryName(step));
             if (files == null) return;
 
             Navigation = new Navigation();
 
             foreach (string file in files)
             {
-                if (IsDataBaseCache) ProcessFileDataBase(file, false);
-                if (IsModulesCache) ProcessFileModules(file, false);
+                if (IsDataBaseCache) ProcessFileDataBase(file, step);
+                if (IsModulesCache) ProcessFileModules(file, step);
                 if (IsNamesCache) ProcessFileNamesLoad(file);
             }
 
@@ -327,31 +329,31 @@ namespace Thea2Translator.Logic
         }
         #endregion
         #region ExportToSteam
-        private void MakeExportToSteam()
+        private void MakeExportToSteam(AlgorithmStep step)
         {
-            StartProcess(AlgorithmStep.ExportToSteam.ToString(), 4);
+            StartProcess(step.ToString(), 4);
             ReloadElems();
             StartNextProcessStep();
-            DeleteFilesToSteam();
+            DeleteFilesToSteam(step);
             StartNextProcessStep();
             SaveElems();
             StartNextProcessStep();
-            SaveFilesToSteam();
+            SaveFilesToSteam(step);
             StopProcess();
         }
-        private void DeleteFilesToSteam()
+        private void DeleteFilesToSteam(AlgorithmStep step)
         {
-            FileHelper.DeletePath(GetDirectoryName(AlgorithmStep.ExportToSteam));
+            FileHelper.DeletePath(GetDirectoryName(step));
         }
-        private void SaveFilesToSteam()
+        private void SaveFilesToSteam(AlgorithmStep step)
         {
             string[] files = FileHelper.GetFiles(GetDirectoryName(AlgorithmStep.ImportFromSteam));
             if (files == null) return;
             int filesCount = files.Length;
             foreach (string file in files)
             {
-                if (IsDataBaseCache) ProcessFileDataBase(file, true);
-                if (IsModulesCache) ProcessFileModules(file, true);
+                if (IsDataBaseCache) ProcessFileDataBase(file, step);
+                if (IsModulesCache) ProcessFileModules(file, step);
                 //if (IsNamesCache) ProcessFileNames(file, true);
             }
         }
@@ -373,10 +375,13 @@ namespace Thea2Translator.Logic
             return !string.IsNullOrEmpty(GetMainNodesName(file));
         }
 
-        private void ProcessFileDataBase(string file, bool saveToFile)
+        private void ProcessFileDataBase(string file, AlgorithmStep step)
         {
             if (!IsFileToProcess(file))
                 return;
+
+            bool saveToFile = (step == AlgorithmStep.ExportToSteam || step == AlgorithmStep.ExportToSteamDebug);
+            bool debugMode = (step == AlgorithmStep.ExportToSteamDebug);
 
             XmlDocument doc = new XmlDocument();
             doc.Load(file);
@@ -406,26 +411,31 @@ namespace Thea2Translator.Logic
                     var elem = GetElem(key);
                     if (elem == null) continue;
 
-                    entry.Attributes["Val"].Value = elem.OutputText;
+                    var text = elem.OutputText;
+                    if (debugMode) text = $"[{elem.Id}] {text}";
+
+                    entry.Attributes["Val"].Value = text;
                 }
             }
 
             if (saveToFile)
             {
-                string path = FileHelper.GetCreatedPath(GetDirectoryName(AlgorithmStep.ExportToSteam));
+                string path = FileHelper.GetCreatedPath(GetDirectoryName(step));
                 string newFile = path + Path.GetFileName(file);
                 doc.Save(newFile);
             }
         }
-        private void ProcessFileModules(string file, bool saveToFile)
+        private void ProcessFileModules(string file, AlgorithmStep step)
         {
             var fileName = Path.GetFileNameWithoutExtension(file);
             if (fileName == "sAbandoned lumbermil")
                 return;
 
+            bool saveToFile = (step == AlgorithmStep.ExportToSteam || step == AlgorithmStep.ExportToSteamDebug);
+            bool debugMode = (step == AlgorithmStep.ExportToSteamDebug);
             if (saveToFile)
             {
-                string newFile = FileHelper.GetCopiedFile(file, GetDirectoryName(AlgorithmStep.ExportToSteam));
+                string newFile = FileHelper.GetCopiedFile(file, GetDirectoryName(step));
 
                 string text = File.ReadAllText(newFile);
                 text = text.Replace("encoding=\"Windows-1252\"", "encoding =\"UTF-8\"");
@@ -474,7 +484,9 @@ namespace Thea2Translator.Logic
                             foreach (XmlNode child in node.ChildNodes)
                             {
                                 if (child.Name != "#text") continue;
-                                child.InnerText = elem.OutputText;
+                                var text = elem.OutputText;
+                                if (debugMode) text = $"[{elem.Id}] {text}";
+                                child.InnerText = text;
                             }
                         }
                     }
@@ -502,7 +514,11 @@ namespace Thea2Translator.Logic
                                 var key = inputTextName;
                                 var elem = GetElem(key);
                                 if (elem != null)
-                                    output.Attributes["name"].Value = elem.OutputText;
+                                {
+                                    var text = elem.OutputText;
+                                    if (debugMode) text = $"[{elem.Id}] {text}";
+                                    output.Attributes["name"].Value = text;
+                                }
                             }
                         }
                     }
@@ -679,6 +695,7 @@ namespace Thea2Translator.Logic
                 case AlgorithmStep.PrepareToMachineTranslate: sufix = "ToMachineTranslate"; break;
                 case AlgorithmStep.ImportFromMachineTranslate: sufix = "FromMachineTranslate"; break;
                 case AlgorithmStep.ExportToSteam: sufix = "ToSteam"; break;
+                case AlgorithmStep.ExportToSteamDebug: sufix = "ToSteamDebug"; break;
             }
             dir += sufix;
             return dir;

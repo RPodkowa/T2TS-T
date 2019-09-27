@@ -4,7 +4,7 @@ using System.IO;
 using System.Text;
 using System.Xml;
 
-namespace Thea2Translator.Logic.Mods
+namespace Thea2Translator.Logic
 {
     public class ModManager
     {
@@ -16,22 +16,29 @@ namespace Thea2Translator.Logic.Mods
         private const string NODE_END = "[/NODE]";
         private const string STORY_END = "[/STORY]";
 
-        public string Title { get; private set; }
-        public string Body { get; private set; }
-
+        private readonly ModType Type;
+        private readonly string Title;
+        private readonly string Body;
         private readonly string PatternPath;
         private readonly string OutputPath;
 
-        public ModManager(string title, string body, string summary)
+        public ModManager(ModType type, string title, string body, string summary)
         {
+            Type = type;
             Title = title;
             Body = $"v{DateTime.Now.ToString("yyyyMMdd.HHmmss")}\r\n\r\n{body}\r\n\r\n-----------------\r\n{summary}";
 
-            PatternPath = "Mods\\Pattern";
-            OutputPath = "Mods\\New";
+            PatternPath = $"Mods\\Pattern_{Type.ToString()}";
+            OutputPath = $"Mods\\{title}";
+        }
+                
+        public void PrepareMod()
+        {
+            if (Type == ModType.Translation) PrepareModTranslation(false);
+            if (Type == ModType.TranslationDebug) PrepareModTranslation(true);            
         }
 
-        public void PrepareMod()
+        private void PrepareModTranslation(bool debugMode)
         {
             FileHelper.DeletePath(OutputPath);
             FileHelper.CreateDirectory(OutputPath);
@@ -45,8 +52,10 @@ namespace Thea2Translator.Logic.Mods
                     infoFile = newFile;
             }
 
-            var dbFiles = PrapareDatabase();
-            var moduleFiles = PrapareModules();
+            AlgorithmStep step = AlgorithmStep.ExportToSteam;
+            if (debugMode) step = AlgorithmStep.ExportToSteamDebug;
+            var dbFiles = PrapareDatabase(step);
+            var moduleFiles = PrapareModules(step);
             PrepareInfoFile(infoFile, dbFiles, moduleFiles);
         }
 
@@ -78,11 +87,11 @@ namespace Thea2Translator.Logic.Mods
             return text.Replace($"{formatString}[FILES]", filesTxt);
         }
 
-        private List<string> PrapareDatabase()
+        private List<string> PrapareDatabase(AlgorithmStep step)
         {
             var ret = new List<string>();
-            LogicProvider.DataBase.MakeStep(AlgorithmStep.ExportToSteam);
-            var toSteamPath = LogicProvider.DataBase.GetDirectoryName(AlgorithmStep.ExportToSteam);
+            LogicProvider.DataBase.MakeStep(step);
+            var toSteamPath = LogicProvider.DataBase.GetDirectoryName(step);
             var files = FileHelper.GetFiles(toSteamPath);
             foreach (string file in files)
             {
@@ -97,11 +106,11 @@ namespace Thea2Translator.Logic.Mods
             return ret;
         }
 
-        private List<string> PrapareModules()
+        private List<string> PrapareModules(AlgorithmStep step)
         {
             var ret = new List<string>();
-            //LogicProvider.Modules.MakeStep(AlgorithmStep.ExportToSteam);
-            var toSteamPath = LogicProvider.Modules.GetDirectoryName(AlgorithmStep.ExportToSteam);
+            LogicProvider.Modules.MakeStep(step);
+            var toSteamPath = LogicProvider.Modules.GetDirectoryName(step);
             var moduleFiles = FileHelper.GetFiles(toSteamPath);
             foreach (string moduleFile in moduleFiles)
             {

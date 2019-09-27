@@ -45,6 +45,14 @@ namespace Thea2Translator.DesktopApp.Properties
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         public string ModBody { get { return ((string)(this["ModBody"])); } set { this["ModBody"] = value; } }
+
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public string ModTitle_Translation_Debug { get { return ((string)(this["ModTitle_Translation_Debug"])); } set { this["ModTitle_Translation_Debug"] = value; } }
+
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public string ModBody_Translation_Debug { get { return ((string)(this["ModBody_Translation_Debug"])); } set { this["ModBody_Translation_Debug"] = value; } }
         #endregion
 
         #region DataBase

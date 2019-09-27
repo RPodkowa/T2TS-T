@@ -195,6 +195,19 @@ namespace Thea2Translator.Logic
             tw.Close();
         }
 
+        public static void SaveListToFile(IList<string> elems, string path)
+        {
+            CreatedPathIfNotExists(path);
+            DeleteFileIfExists(path);
+            TextWriter tw = new StreamWriter(path, true);
+            foreach (var elem in elems)
+            {
+                tw.WriteLine(elem);
+            }
+
+            tw.Close();
+        }
+
         public static void WriteFileString(string file, string txt)
         {
             TextWriter tw = new StreamWriter(file);
@@ -345,6 +358,11 @@ namespace Thea2Translator.Logic
         public static string GetLocalFilePatch(DirectoryType directoryType, FilesType filesType)
         {
             return GetLocalFilePatch($"{GetDirectoryName(directoryType)}\\{GetFileName(filesType)}");
+        }
+
+        public static string GetLocalFilePatch(DirectoryType directoryType, string file)
+        {
+            return GetLocalFilePatch($"{GetDirectoryName(directoryType)}\\{file}");
         }
 
         private static string GetLocalFilePatch(string fileName)

@@ -499,6 +499,26 @@ namespace Thea2Translator.Logic
             return ret;
         }
 
+        public List<string> GetNameSubraces()
+        {
+            var ret = new List<string>();
+            
+            foreach (var group in Groups)
+            {
+                if (!group.StartsWith("SUBRACE-"))
+                    continue;
+
+                var g = group;
+                g = group.Replace("_CharacterFemale", "");
+                g = g.Replace("_CharacterMale", "");
+
+                if (!ret.Contains(g))
+                    ret.Add(g);
+            }
+
+            return ret;
+        }
+
         public string GetElemInfoString()
         {
             if (IsDataBaseElem) return GetDataBaseElemInfoString();

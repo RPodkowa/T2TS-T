@@ -16,6 +16,7 @@ namespace Thea2Translator.DesktopApp.Helpers
         {
             if (filesType == FilesType.DataBase) return true;
             if (filesType == FilesType.Modules) return true;
+            if (filesType == FilesType.Names) return true;
             return false;
         }
         public static void ToggleUserBookmark(FilesType filesType, string bookmark)
@@ -38,6 +39,7 @@ namespace Thea2Translator.DesktopApp.Helpers
         {
             if (filesType == FilesType.DataBase) return Settings.Default.BookmarksDatabase;
             if (filesType == FilesType.Modules) return Settings.Default.BookmarksModules;
+            if (filesType == FilesType.Names) return Settings.Default.BookmarksNames;
             return null;
         }
 
@@ -45,6 +47,7 @@ namespace Thea2Translator.DesktopApp.Helpers
         {
             if (filesType == FilesType.DataBase) Settings.Default.BookmarksDatabase = bookmarks;
             if (filesType == FilesType.Modules) Settings.Default.BookmarksModules = bookmarks;
+            if (filesType == FilesType.Names) Settings.Default.BookmarksNames = bookmarks;
             UserHelper.SetUserBookmarks(filesType, bookmarks);
             Settings.Default.Save();
         }
@@ -61,6 +64,7 @@ namespace Thea2Translator.DesktopApp.Helpers
         {
             if (modType == ModType.Translation) return Settings.Default.ModTitle;
             if (modType == ModType.TranslationDebug) return Settings.Default.ModTitle_Translation_Debug;
+            if (modType == ModType.Names) return Settings.Default.ModTitle_Names;
             return "";
         }
 
@@ -68,6 +72,7 @@ namespace Thea2Translator.DesktopApp.Helpers
         {
             if (modType == ModType.Translation) return Settings.Default.ModBody;
             if (modType == ModType.TranslationDebug) return Settings.Default.ModBody_Translation_Debug;
+            if (modType == ModType.Names) return Settings.Default.ModBody_Names;
             return "";
         }
 
@@ -83,6 +88,12 @@ namespace Thea2Translator.DesktopApp.Helpers
             {
                 Settings.Default.ModTitle_Translation_Debug = title;
                 Settings.Default.ModBody_Translation_Debug = body;
+                Settings.Default.Save();
+            }
+            if (modType == ModType.Names)
+            {
+                Settings.Default.ModTitle_Names = title;
+                Settings.Default.ModBody_Names = body;
                 Settings.Default.Save();
             }
         }

@@ -94,7 +94,7 @@ namespace Thea2Translator.Logic
                 using (Font font = new Font("PT Serif", 10))
                 {
                     var brush = new SolidBrush(Color.FromArgb(255, 245, 204));
-                    gr.DrawString(statistic.GetSummary(), font, brush, statusRectangle.Rectangle);
+                    gr.DrawString(statistic.GetSummary(false), font, brush, statusRectangle.Rectangle);
                 }
             }
         }

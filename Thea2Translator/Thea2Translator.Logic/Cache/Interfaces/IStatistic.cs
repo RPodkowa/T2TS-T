@@ -19,6 +19,6 @@ namespace Thea2Translator.Logic.Cache.Interfaces
 
         void Reload(IDataCache dataCache);
         void SaveFullModuleStatistics(IDataCache dataCache);
-        string GetSummary();        
+        string GetSummary(bool forPublication);        
     }
 }

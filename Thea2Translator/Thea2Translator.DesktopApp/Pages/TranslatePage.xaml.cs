@@ -160,6 +160,7 @@ namespace Thea2Translator.DesktopApp.Pages
             string lastItem = null;
             if (dataCache.GetFileType() == FilesType.DataBase) lastItem = Settings.Default.LastItemDatabase;
             if (dataCache.GetFileType() == FilesType.Modules) lastItem = Settings.Default.LastItemModules;
+            if (dataCache.GetFileType() == FilesType.Names) lastItem = Settings.Default.LastItemNames;
             return lastItem;
         }
 
@@ -168,12 +169,13 @@ namespace Thea2Translator.DesktopApp.Pages
             if (selectedCacheElement == null)
                 return;
 
-            if (dataCache.GetFileType() != FilesType.DataBase && dataCache.GetFileType() != FilesType.Modules)
+            if (dataCache.GetFileType() != FilesType.DataBase && dataCache.GetFileType() != FilesType.Modules && dataCache.GetFileType() != FilesType.Names)
                 return;
 
             string lastItem = selectedCacheElement.CacheElem.Id.ToString();
             if (dataCache.GetFileType() == FilesType.DataBase) Settings.Default.LastItemDatabase = lastItem;
             if (dataCache.GetFileType() == FilesType.Modules) Settings.Default.LastItemModules = lastItem;
+            if (dataCache.GetFileType() == FilesType.Names) Settings.Default.LastItemNames = lastItem;
             Settings.Default.Save();
         }
 
@@ -210,7 +212,7 @@ namespace Thea2Translator.DesktopApp.Pages
         {
             statistic.Reload(dataCache);
 
-            lblState.Content = statistic.GetSummary();
+            lblState.Content = statistic.GetSummary(false);
         }
 
         private void CbItemsToTranslateFilter_SelectionChanged(object sender, SelectionChangedEventArgs e)

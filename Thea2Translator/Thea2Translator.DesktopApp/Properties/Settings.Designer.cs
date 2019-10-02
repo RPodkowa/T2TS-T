@@ -53,6 +53,14 @@ namespace Thea2Translator.DesktopApp.Properties
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         public string ModBody_Translation_Debug { get { return ((string)(this["ModBody_Translation_Debug"])); } set { this["ModBody_Translation_Debug"] = value; } }
+
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public string ModTitle_Names { get { return ((string)(this["ModTitle_Names"])); } set { this["ModTitle_Names"] = value; } }
+
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public string ModBody_Names { get { return ((string)(this["ModBody_Names"])); } set { this["ModBody_Names"] = value; } }
         #endregion
 
         #region DataBase
@@ -64,7 +72,6 @@ namespace Thea2Translator.DesktopApp.Properties
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         public string BookmarksDatabase { get { return ((string)(this["BookmarksDatabase"])); } set { this["BookmarksDatabase"] = value; } }
         #endregion
-
         #region Modules
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -73,6 +80,15 @@ namespace Thea2Translator.DesktopApp.Properties
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         public string BookmarksModules { get { return ((string)(this["BookmarksModules"])); } set { this["BookmarksModules"] = value; } }
+        #endregion
+        #region Names
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public string LastItemNames { get { return ((string)(this["LastItemNames"])); } set { this["LastItemNames"] = value; } }
+
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public string BookmarksNames { get { return ((string)(this["BookmarksNames"])); } set { this["BookmarksNames"] = value; } }
         #endregion
     }
 }

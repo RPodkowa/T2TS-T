@@ -25,7 +25,7 @@ namespace Thea2Translator.Logic
 
         IList<string> GetStartingGroups();
 
-        string GetSummary();
+        string GetSummary(bool forPublication);
 
         FilesType GetFileType();
         string GetFullPath();

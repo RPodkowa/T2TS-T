@@ -36,13 +36,21 @@ namespace Thea2Translator.Logic
             return FullPath;
         }
 
-        public string GetSummary()
+        public string GetSummary(bool forPublication)
         {
             LoadFromFile();
             var statistic = LogicProvider.Statistic;
             statistic.Reload(this);
 
-            return $"{Type.ToString()}:\r\n{statistic.GetSummary()}";
+            string header = Type.ToString();
+            if (forPublication)
+            {
+                if (IsDataBaseCache) header = "Nazwy, opisy, przyciski itp.";
+                if (IsModulesCache) header = "Zdarzenia";
+                if (IsNamesCache) header = "Imiona";
+            }
+
+            return $"{header}:\r\n{statistic.GetSummary(forPublication)}";
         }
 
         private void ResetElems()
@@ -228,17 +236,35 @@ namespace Thea2Translator.Logic
             string[] files = FileHelper.GetFiles(GetDirectoryName(step));
             if (files == null) return;
 
-            Navigation = new Navigation();
-
+            if (IsDataBaseCache) ReadSteamFilesDataBase(files, step);
+            if (IsModulesCache) ReadSteamFileModules(files, step);
+            if (IsNamesCache) ReadSteamFileNames();
+        }
+        private void ReadSteamFilesDataBase(string[] files, AlgorithmStep step)
+        {
             foreach (string file in files)
             {
-                if (IsDataBaseCache) ProcessFileDataBase(file, step);
-                if (IsModulesCache) ProcessFileModules(file, step);
-                if (IsNamesCache) ProcessFileNamesLoad(file);
+                ProcessFileDataBase(file, step);
             }
+        }
+        private void ReadSteamFileModules(string[] files, AlgorithmStep step)
+        {
+            Navigation = new Navigation();
+            foreach (string file in files)
+            {
+                ProcessFileModules(file, step);
+            }
+            Navigation.SaveElems();
+        }
+        private void ReadSteamFileNames()
+        {
+            string path = FileHelper.GetCreatedPath(GetDirectoryName(AlgorithmStep.ImportFromSteam));
 
-            if (IsModulesCache)
-                Navigation.SaveElems();
+            string fileNames = path + "DATABASE_DES_NAMES.xml";
+            string fileSubraces = path + "DATABASE_SUBRACE.xml";
+
+            ProcessFileNames(fileNames);
+            ProcessFileSubraces(fileSubraces);
         }
         #endregion
         #region PrepareToMachineTranslate
@@ -347,6 +373,12 @@ namespace Thea2Translator.Logic
         }
         private void SaveFilesToSteam(AlgorithmStep step)
         {
+            if (IsNamesCache)
+            {
+                ProcessFileNamesSave();
+                return;
+            }
+
             string[] files = FileHelper.GetFiles(GetDirectoryName(AlgorithmStep.ImportFromSteam));
             if (files == null) return;
             int filesCount = files.Length;
@@ -354,7 +386,6 @@ namespace Thea2Translator.Logic
             {
                 if (IsDataBaseCache) ProcessFileDataBase(file, step);
                 if (IsModulesCache) ProcessFileModules(file, step);
-                //if (IsNamesCache) ProcessFileNames(file, true);
             }
         }
         #endregion
@@ -530,12 +561,8 @@ namespace Thea2Translator.Logic
                 doc.Save(file);
             }
         }
-        private void ProcessFileNamesLoad(string file)
+        private void ProcessFileNames(string file)
         {
-            var fileName = Path.GetFileNameWithoutExtension(file);
-            if (fileName != "DATABASE_DES_NAMES")
-                return;
-
             ((List<CacheElem>)(CacheElems)).RemoveAll(x => x.IsGenericName);
 
             var newCacheElems = new List<CacheElem>();
@@ -618,6 +645,90 @@ namespace Thea2Translator.Logic
             }
 
             CacheElems = newCacheElems;
+        }
+        private void ProcessFileSubraces(string file)
+        {
+            XmlDocument doc = new XmlDocument();
+            doc.Load(file);
+            var subraces = doc.DocumentElement.ChildNodes;
+            var subraceInfos = new List<SubraceInfo>();
+            var excludedRaces = new List<RaceType> { RaceType.HUMAN, RaceType.ELF, RaceType.ORC, RaceType.GOBLIN, RaceType.DWARF, RaceType.CONCEPT };
+            foreach (XmlNode subrace in subraces)
+            {
+                var subraceInfo = SubraceInfo.ReadFromXml(subrace);
+                if (subraceInfo == null)
+                    continue;
+
+                if (subraceInfo.HasRace(excludedRaces))
+                    continue;
+
+                if (subraceInfo.UseAllCharacters())
+                    continue;
+
+                subraceInfos.Add(subraceInfo);
+            }
+
+            var subracesElems = new Dictionary<string, List<CacheElem>>();
+            foreach (var cacheElem in CacheElems)
+            {
+                if (cacheElem.IsGenericName) continue;
+                if (cacheElem.IsInactive) continue;
+                var elemSubraces = cacheElem.GetNameSubraces();
+                foreach (var elemSubrace in elemSubraces)
+                {
+                    if (!subracesElems.ContainsKey(elemSubrace))
+                        subracesElems.Add(elemSubrace, new List<CacheElem>());
+
+                    subracesElems[elemSubrace].Add(cacheElem);
+                }
+            }
+
+            var errors = new List<string>();
+            foreach (var subraceInfo in subraceInfos)
+            {
+                bool hideFemale = !subraceInfo.UseCharacterFemale();
+                bool hideMale = !subraceInfo.UseCharacterMale();
+
+                if (!subracesElems.ContainsKey(subraceInfo.Name))
+                {
+                    errors.Add(subraceInfo.Name);
+                    continue;
+                }
+
+                var elems = subracesElems[subraceInfo.Name];
+                if (elems == null || elems.Count == 0)
+                    continue;
+
+                foreach (var elem in elems)
+                {
+                    if (elem.IsFemale && hideFemale) elem.SetActivation(false);
+                    if (elem.IsMale && hideMale) elem.SetActivation(false);
+                }
+            }
+
+            var errorsString = string.Join("\r\n", errors.ToArray());
+            SaveElems();
+        }
+                
+        private void ProcessFileNamesSave()
+        {            
+            string path = FileHelper.GetCreatedPath(GetDirectoryName(AlgorithmStep.ExportToSteam));
+            string newFile = path + "DATABASE_DES_NAMES.xml";
+
+            FileHelper.DeleteFileIfExists(newFile);
+
+            XmlDocument doc = new XmlDocument();
+            XmlNode mainNode = doc.CreateElement("CHARACTER_NAMES");
+            doc.AppendChild(mainNode);
+
+            var nameSaver = new NameSaver(CacheElems);
+                        
+            foreach (var elem in nameSaver.NameSaverElems)
+            {
+                mainNode.AppendChild(elem.ToXmlNode(doc));
+            }
+
+            doc.Save(newFile);
         }
 
         private CacheElem GetElem(string key)

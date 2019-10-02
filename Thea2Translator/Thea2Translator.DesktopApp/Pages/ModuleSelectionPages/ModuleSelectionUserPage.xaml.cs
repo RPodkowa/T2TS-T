@@ -18,6 +18,10 @@ namespace Thea2Translator.DesktopApp.Pages.ModuleSelectionPages
     {
         private object _lockObject = new object();
 
+        private string btnNameDataBase;
+        private string btnNameModules;
+        private string btnNameNames;
+
         public ModuleSelectionUserPage()
         {
             InitializeComponent();
@@ -26,6 +30,15 @@ namespace Thea2Translator.DesktopApp.Pages.ModuleSelectionPages
             btnChooseNames.Click += (o, e) => { btnChooseClick(FilesType.Names); };
 
             this.SetLanguageDictinary();
+
+            btnNameDataBase = btnChooseDataBase.Content.ToString();
+            btnNameModules = btnChooseModulus.Content.ToString();
+            btnNameNames = btnChooseNames.Content.ToString();
+
+            btnDownloadFiles.Content += " 📥";
+            btnRefreshFiles.Content += " 🔄";
+            btnUploadFiles.Content += " 📤";
+
             SetButtonEnableProp(true);
         }
 
@@ -78,13 +91,27 @@ namespace Thea2Translator.DesktopApp.Pages.ModuleSelectionPages
         {
             btnChooseDataBase.IsEnabled = isEnable;
             btnChooseModulus.IsEnabled = isEnable;
-            btnChooseNames.IsEnabled = false;
+            btnChooseNames.IsEnabled = isEnable;
 
             if (isEnable) isEnable = FileHelper.LocalDirectoryExists(DirectoryType.Cache);
             btnDownloadFiles.IsEnabled = isEnable;
             btnRefreshFiles.IsEnabled = isEnable;
             btnUploadFiles.IsEnabled = isEnable;
             btnVocabulary.IsEnabled = isEnable;
+
+            SetButtonName(FilesType.DataBase, btnChooseDataBase, btnNameDataBase);
+            SetButtonName(FilesType.Modules, btnChooseModulus, btnNameModules);
+            SetButtonName(FilesType.Names, btnChooseNames, btnNameNames);
+        }
+
+        private void SetButtonName(FilesType filesType, Button button, string commonName)
+        {
+            string buttonName = commonName;
+
+            if (!Synchronization.HasFiles(filesType))
+                buttonName += " 📥";
+
+            button.Content = buttonName;
         }
 
         private void TryDownload(FilesType filesType)

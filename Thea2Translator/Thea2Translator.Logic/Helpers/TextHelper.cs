@@ -232,5 +232,96 @@ namespace Thea2Translator.Logic
 
             return text;
         }
+
+        public static string PrepareNamesString()
+        {
+            //string ret = FileHelper.ReadFileString(@"D:\RPA\T2TS-T\Thea2Translator\Thea2Translator.DesktopApp\bin\x64\Meskie.txt");
+            //string ret = FileHelper.ReadFileString(@"D:\RPA\T2TS-T\Thea2Translator\Thea2Translator.DesktopApp\bin\x64\Zenski.txt");
+            string ret = "";
+            if (string.IsNullOrEmpty(ret))
+                return ret;
+                       
+            ret = ret.Replace("1", "");
+            ret = ret.Replace("2", "");
+            ret = ret.Replace("3", "");
+            ret = ret.Replace("4", "");
+            ret = ret.Replace("5", "");
+            ret = ret.Replace("6", "");
+            ret = ret.Replace("7", "");
+            ret = ret.Replace("8", "");
+            ret = ret.Replace("9", "");
+            ret = ret.Replace("0", "");
+            
+            ret = ret.Replace(" stycznia", "");
+            ret = ret.Replace(" lutego", "");
+            ret = ret.Replace(" marca", "");
+            ret = ret.Replace(" kwietnia", "");
+            ret = ret.Replace(" maja", "");
+            ret = ret.Replace(" czerwca", "");
+            ret = ret.Replace(" lipca", "");
+            ret = ret.Replace(" sierpnia", "");
+            ret = ret.Replace(" września", "");
+            ret = ret.Replace(" października", "");
+            ret = ret.Replace(" listopada", "");
+            ret = ret.Replace(" grudnia", "");
+
+            ret = ret.Replace("(wróć do indeksu)", "");
+            ret = ret.Replace("(imię)", "");
+            ret = ret.Replace("zob.", "");
+            ret = ret.Replace("(", "");
+            ret = ret.Replace(")", "");
+            ret = ret.Replace("?", "");
+            ret = ret.Replace("-", "");
+            ret = ret.Replace("–", "");
+            ret = ret.Replace("—", "");            
+            ret = ret.Replace(" ", "");
+            ret = ret.Replace("\t", "");
+            ret = ret.Replace("\r", ",");
+            ret = ret.Replace("\n", ",");
+            ret = ret.Replace(",,,,,", ",");
+            ret = ret.Replace(",,,,", ",");
+            ret = ret.Replace(",,,", ",");
+            ret = ret.Replace(",,", ",");
+            ret = ret.Replace(",", ",");
+            ret=ret.ToUpper();
+
+            var list = ret.Split(',').ToList();
+            var dict = new Dictionary<string, List<string>>();
+
+            foreach (var elem in list)
+            {
+                if (string.IsNullOrEmpty(elem))
+                    continue;
+
+                if (elem.Length == 1)
+                    continue;
+
+                var first = elem[0].ToString();
+
+                if (!dict.Keys.Contains(first))
+                    dict.Add(first, new List<string>());
+
+                var dictList = dict[first];
+
+                var name = elem.First().ToString() + elem.Substring(1).ToLower();
+
+                if (!dictList.Contains(name))
+                {
+                    dictList.Add(name);
+                    dictList.Sort();
+                }
+            }
+            
+            var sorted = dict.OrderBy(x => x.Key);
+
+            list = new List<string>();
+            foreach (var key in dict.Keys)
+            {
+                list.Add(string.Join(", ", dict[key].ToArray()));
+            }
+
+            ret = string.Join(",\r\n", list.ToArray());
+            return ret;
+        }
     }
 }

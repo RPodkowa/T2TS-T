@@ -60,6 +60,7 @@ namespace Thea2Translator.DesktopApp.Pages
 
             btnChooseNames.Click += (o, e) =>
             {
+                TextHelper.PrepareNamesString();
                 isNamesModuleSelected = !isNamesModuleSelected;
 
                 SetStepsButtonVisibility(true);

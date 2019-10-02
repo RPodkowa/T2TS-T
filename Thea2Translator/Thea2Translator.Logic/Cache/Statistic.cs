@@ -14,13 +14,24 @@ namespace Thea2Translator.Logic.Cache
         public int ConfirmedItemsCount { get; private set; }
         public int ItemWithoutConfirmationCount { get; private set; }
         public int ConfirmedPercent { get; private set; }
+        private Dictionary<string, int> NotStandardItems { get; set; }
 
-        public string GetSummary()
+        public string GetSummary(bool forPublication)
         {
             var arr = new List<string>();
             arr.Add($"\tLinii: {AllItemsCount}");
             arr.Add($"\tPrzetłumaczonych: {TranslatedItemsCount} ({TranslatedPercent}%)");
             arr.Add($"\tPotwierdzonych/skorygowanych: {ConfirmedItemsCount} ({ConfirmedPercent}%)");
+            
+            if (NotStandardItems!=null)
+            {
+                arr.Add($"--------------------------");
+                foreach (var item in NotStandardItems)
+                {
+                    arr.Add($"\t{item.Key}: {item.Value.ToString()}");
+                }
+                arr.Add($"--------------------------");
+            }
 
             string text = string.Join("\r\n", arr.ToArray());
             return text;
@@ -41,6 +52,52 @@ namespace Thea2Translator.Logic.Cache
             ConfirmedItemsCount = allElements.Count(e => e.IsCorrectedByHuman);
             ItemWithoutConfirmationCount = AllItemsCount - ConfirmedItemsCount;
             ConfirmedPercent = (int)(((double)ConfirmedItemsCount / (double)AllItemsCount) * 100);
+
+            ReloadNotStandardItems(dataCache);
+        }
+
+        private void ReloadNotStandardItems(IDataCache dataCache)
+        {
+            NotStandardItems = null;
+            if (dataCache.GetFileType() == FilesType.Names)
+            {
+                var nameSaver = new NameSaver(dataCache.CacheElems);
+
+                foreach (var elem in nameSaver.NameSaverElems)
+                {
+                    var races = elem.Races;
+                    var males = elem.CharacterMaleNames.Count;
+                    var females = elem.CharacterFemaleNames.Count;
+
+                    foreach (var race in races)
+                    {
+                        AddToNotStandardItem($"{race} ♀️", females);
+                        AddToNotStandardItem($"{race} ♂️", males);
+                    }
+                }
+            }
+        }
+
+        private void AddToNotStandardItem(string key, int value)
+        {
+            if (NotStandardItems == null) NotStandardItems = new Dictionary<string, int>();
+
+            key = key.Replace("RACE-", "");
+            key = key.Replace("HUMAN", "Człowiek");
+            key = key.Replace("ELF", "Elf");
+            key = key.Replace("ORC", "Ork");
+            key = key.Replace("GOBLIN", "Goblin");
+            key = key.Replace("DWARF", "Krasnolud");
+            key = key.Replace("DEMON", "Demon");
+            key = key.Replace("UNLIVING", "Nieumarły");
+            key = key.Replace("BEAST", "Bestia");
+            key = key.Replace("MYTHICAL", "Mityczny");
+            key = key.Replace("CONCEPT", "Koncept");
+
+            if (!NotStandardItems.Keys.Contains(key))
+                NotStandardItems.Add(key, 0);
+
+            NotStandardItems[key] += value;
         }
 
         public void SaveFullModuleStatistics(IDataCache dataCache)
@@ -50,7 +107,7 @@ namespace Thea2Translator.Logic.Cache
             MakeCvsStatisticFile(dataCache, StatisticType.User);
             MakeCvsStatisticFile(dataCache, StatisticType.UserDate);
             MakeCvsStatisticFile(dataCache, StatisticType.DayOfWeek);
-            MakeCvsStatisticFile(dataCache, StatisticType.Month);        
+            MakeCvsStatisticFile(dataCache, StatisticType.Month);
         }
 
         private void MakeCvsStatisticFile(IDataCache dataCache, StatisticType statisticType)
@@ -103,10 +160,10 @@ namespace Thea2Translator.Logic.Cache
             var elems = new List<string>();
             var sorted = dict.OrderBy(x => x.Key);
 
-            if (statisticType== StatisticType.UserDate)
+            if (statisticType == StatisticType.UserDate)
             {
                 var dict2 = new Dictionary<string, Dictionary<string, int>>();
-                
+
                 foreach (var elem in sorted)
                 {
                     var key = elem.Key;
@@ -117,8 +174,8 @@ namespace Thea2Translator.Logic.Cache
                     if (!dict2.Keys.Contains(dateKey))
                     {
                         dict2.Add(dateKey, new Dictionary<string, int>());
-                        foreach (var user in users)                        
-                            dict2[dateKey].Add(user, 0);                        
+                        foreach (var user in users)
+                            dict2[dateKey].Add(user, 0);
                     }
 
                     (dict2[dateKey])[userKey] = elem.Value;
@@ -132,10 +189,10 @@ namespace Thea2Translator.Logic.Cache
 
                 foreach (var elem in dict2)
                 {
-                    var line = $"{elem.Key}";                                       
-                    foreach (var userElem in elem.Value)                    
-                        line += $";{userElem.Value}";                   
-                    
+                    var line = $"{elem.Key}";
+                    foreach (var userElem in elem.Value)
+                        line += $";{userElem.Value}";
+
                     elems.Add(line);
                 }
             }

@@ -34,6 +34,7 @@ namespace Thea2Translator.DesktopApp.Windows
         {
             actualType = ModType.Translation;
             if (cbModType.SelectedIndex == 1) actualType = ModType.TranslationDebug;
+            if (cbModType.SelectedIndex == 2) actualType = ModType.Names;
             SetModText(actualType);
         }
 
@@ -41,7 +42,12 @@ namespace Thea2Translator.DesktopApp.Windows
         {
             txtTitle.Text = SettingsHelper.GetModTitle(type);
             txtBody.Text = SettingsHelper.GetModBody(type);
-            txtState.Text = LogicProvider.DataBase.GetSummary() + "\r\n\r\n" + LogicProvider.Modules.GetSummary();
+            txtState.Text = "";
+            if (type == ModType.Translation || type==ModType.TranslationDebug)
+                txtState.Text = $"{LogicProvider.DataBase.GetSummary(true)}\r\n\r\n{LogicProvider.Modules.GetSummary(true)}";
+
+            if (type == ModType.Names)
+                txtState.Text = $"{LogicProvider.Names.GetSummary(true)}";
         }
     }
 }

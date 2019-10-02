@@ -31,14 +31,15 @@ namespace Thea2Translator.Logic
             PatternPath = $"Mods\\Pattern_{Type.ToString()}";
             OutputPath = $"Mods\\{title}";
         }
-                
+
         public void PrepareMod()
         {
             if (Type == ModType.Translation) PrepareModTranslation(false);
-            if (Type == ModType.TranslationDebug) PrepareModTranslation(true);            
+            if (Type == ModType.TranslationDebug) PrepareModTranslation(true);
+            if (Type == ModType.Names) PrepareModNames();
         }
 
-        private void PrepareModTranslation(bool debugMode)
+        private void CopyFilesFromPattern()
         {
             FileHelper.DeletePath(OutputPath);
             FileHelper.CreateDirectory(OutputPath);
@@ -51,12 +52,41 @@ namespace Thea2Translator.Logic
                 if (fileName == "info.txt")
                     infoFile = newFile;
             }
+        }
+
+        private string GetInfoFile()
+        {
+            var files = FileHelper.GetFiles(OutputPath);
+            foreach (string file in files)
+            {                
+                var fileName = Path.GetFileName(file);
+                if (fileName == "info.txt")
+                    return file;
+            }
+
+            return null;
+        }
+
+        private void PrepareModTranslation(bool debugMode)
+        {
+            CopyFilesFromPattern();
+            var infoFile = GetInfoFile();
 
             AlgorithmStep step = AlgorithmStep.ExportToSteam;
             if (debugMode) step = AlgorithmStep.ExportToSteamDebug;
-            var dbFiles = PrapareDatabase(step);
-            var moduleFiles = PrapareModules(step);
+            var dbFiles = PrapareFiles(FilesType.DataBase, step);
+            var moduleFiles = PrapareFiles(FilesType.Modules, step);
+
             PrepareInfoFile(infoFile, dbFiles, moduleFiles);
+        }
+
+        private void PrepareModNames()
+        {
+            CopyFilesFromPattern();
+            var infoFile = GetInfoFile();
+
+            var dbFiles = PrapareFiles(FilesType.Names, AlgorithmStep.ExportToSteam);
+            PrepareInfoFile(infoFile, dbFiles, null);
         }
 
         private void PrepareInfoFile(string infoFile, List<string> dbFiles, List<string> moduleFiles)
@@ -72,12 +102,14 @@ namespace Thea2Translator.Logic
         {
             var lines = new List<string>();
             //<DB>DATABASE_SUBRACE.xml</DB>
+            if (dbFiles == null) dbFiles = new List<string>();
             foreach (var dbFile in dbFiles)
             {
                 lines.Add($"{formatString}<DB>{dbFile}</DB>");
             }
 
             //<LOCALIZATION>TestsModule.txt</LOCALIZATION>
+            if (moduleFiles == null) moduleFiles = new List<string>();
             foreach (var moduleFile in moduleFiles)
             {
                 lines.Add($"{formatString}<LOCALIZATION>{moduleFile}</LOCALIZATION>");
@@ -87,16 +119,23 @@ namespace Thea2Translator.Logic
             return text.Replace($"{formatString}[FILES]", filesTxt);
         }
 
-        private List<string> PrapareDatabase(AlgorithmStep step)
+        private List<string> PrapareFiles(FilesType filesType, AlgorithmStep step)
         {
+            IDataCache dataCache = null;
+            if (filesType == FilesType.DataBase) dataCache = LogicProvider.DataBase;
+            if (filesType == FilesType.Modules) dataCache = LogicProvider.Modules;
+            if (filesType == FilesType.Names) dataCache = LogicProvider.Names;
+
+            if (dataCache == null)
+                return null;
+
             var ret = new List<string>();
-            LogicProvider.DataBase.MakeStep(step);
-            var toSteamPath = LogicProvider.DataBase.GetDirectoryName(step);
+            dataCache.MakeStep(step);
+            var toSteamPath = dataCache.GetDirectoryName(step);
             var files = FileHelper.GetFiles(toSteamPath);
             foreach (string file in files)
             {
-                FileHelper.CopyFile(file, OutputPath);
-                var preparedFile = Path.GetFileName(file);
+                var preparedFile = GetPreparedFileName(filesType, file);
                 if (string.IsNullOrEmpty(preparedFile))
                     continue;
 
@@ -106,22 +145,19 @@ namespace Thea2Translator.Logic
             return ret;
         }
 
-        private List<string> PrapareModules(AlgorithmStep step)
+        private string GetPreparedFileName(FilesType filesType, string file)
         {
-            var ret = new List<string>();
-            LogicProvider.Modules.MakeStep(step);
-            var toSteamPath = LogicProvider.Modules.GetDirectoryName(step);
-            var moduleFiles = FileHelper.GetFiles(toSteamPath);
-            foreach (string moduleFile in moduleFiles)
-            {
-                var preparedFile = PrapareModuleFile(moduleFile, OutputPath);
-                if (string.IsNullOrEmpty(preparedFile))
-                    continue;
-
-                ret.Add(preparedFile);
-            }
-
+            string ret = null;
+            if (filesType == FilesType.DataBase) ret = PrapareFile(file, OutputPath);
+            if (filesType == FilesType.Modules) ret = PrapareModuleFile(file, OutputPath);
+            if (filesType == FilesType.Names) ret = PrapareFile(file, OutputPath);
             return ret;
+        }
+
+        private static string PrapareFile(string file, string OutputPath)
+        {
+            FileHelper.CopyFile(file, OutputPath);
+            return Path.GetFileName(file);
         }
 
         private static string PrapareModuleFile(string moduleFile, string OutputPath)

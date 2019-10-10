@@ -50,6 +50,7 @@
     <system:String x:Key="withoutConfirmationComboItemTranslate">Niepotwierdzone</system:String>
     <system:String x:Key="withConflictComboItemTranslate">Konfliktowe</system:String>
     <system:String x:Key="allInactive">Nieaktywne</system:String>
+	<system:String x:Key="withoutGenerated">Bez wygenerowanych</system:String>
 
     <system:String x:Key="titleLabelDictinary">Słownik</system:String>
     <system:String x:Key="usageCountLabelDictinary">Liczba użyć</system:String>

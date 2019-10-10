@@ -254,7 +254,8 @@ namespace Thea2Translator.DesktopApp.Pages
                     case 1: filtredElements = filtredElements.Where(c => c.CacheElem.ToTranslate).ToList(); break;
                     case 2: filtredElements = filtredElements.Where(c => c.CacheElem.ToConfirm).ToList(); break;
                     case 3: filtredElements = filtredElements.Where(c => c.CacheElem.HasConflict).ToList(); break;
-                    case 4: filtredElements = allElements.Where(c => c.CacheElem.IsInactive).ToList(); break;                        
+                    case 4: filtredElements = allElements.Where(c => c.CacheElem.IsInactive).ToList(); break;
+                    case 5: filtredElements = filtredElements.Where(c => !c.CacheElem.IsGenericName).ToList(); break;
                 }
 
                 if (txtSearch.Text != "")

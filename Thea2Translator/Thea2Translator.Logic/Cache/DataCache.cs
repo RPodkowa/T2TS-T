@@ -568,7 +568,7 @@ namespace Thea2Translator.Logic
             var newCacheElems = new List<CacheElem>();
 
             var nameGenerator = new NameGenerator();
-            nameGenerator.LoadFromFile();
+            nameGenerator.LoadFromFile(false);
 
             XmlDocument doc = new XmlDocument();
             doc.Load(file);
@@ -644,6 +644,7 @@ namespace Thea2Translator.Logic
                 }
             }
 
+            nameGenerator.LoadNotUsed(newCacheElems);
             CacheElems = newCacheElems;
         }
         private void ProcessFileSubraces(string file)
@@ -691,7 +692,18 @@ namespace Thea2Translator.Logic
 
                 if (!subracesElems.ContainsKey(subraceInfo.Name))
                 {
-                    errors.Add(subraceInfo.Name);
+                    subracesElems.Add(subraceInfo.Name, new List<CacheElem>());
+                    string collection = $"NAME_COLLECTION-{subraceInfo.Name}";
+                    string race = $"RACE-{subraceInfo.Race.Race}";
+                    List<string> elemSubraces = new List<string>() { subraceInfo.Name };
+                    string name = $"MISSING-{subraceInfo.Name}";
+
+                    if (!hideFemale) CacheElems.Add(new CacheElem(collection, race, elemSubraces, "CharacterFemale", name, true));
+                    if (!hideMale) CacheElems.Add(new CacheElem(collection, race, elemSubraces, "CharacterMale", name, true));
+
+                    if (!hideFemale) errors.Add($"{subraceInfo.Name} (F)");
+                    if (!hideMale) errors.Add($"{subraceInfo.Name} (M)");
+
                     continue;
                 }
 
@@ -722,9 +734,17 @@ namespace Thea2Translator.Logic
             doc.AppendChild(mainNode);
 
             var nameSaver = new NameSaver(CacheElems);
-                        
+
+            RaceType? acctualRace = null;
             foreach (var elem in nameSaver.NameSaverElems)
             {
+                var elemRace = elem.Race.Race;
+                if (acctualRace != elemRace)
+                {
+                    acctualRace = elemRace;
+                    XmlNode node1 = doc.CreateComment($" {acctualRace.ToString().ToUpper()} ");
+                    mainNode.AppendChild(node1);
+                }
                 mainNode.AppendChild(elem.ToXmlNode(doc));
             }
 

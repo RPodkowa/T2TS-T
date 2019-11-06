@@ -53,12 +53,39 @@ namespace Thea2Translator.Logic
             return xmlNode.Attributes[key]?.Value;
         }
 
+        public static int GetNodeAttribute(XmlNode xmlNode, string key, int dafaultValue)
+        {
+            if (xmlNode.Attributes == null)
+                return dafaultValue;
+
+            int result = dafaultValue;
+            if (!int.TryParse(xmlNode.Attributes[key]?.Value, out result))
+                return dafaultValue;
+
+            return result;
+        }
+
         public static XmlNodeList GetNodeList(XmlDocument doc, string xpath)
         {
             if (doc == null) return null;
             if (doc.DocumentElement == null) return null;
             if (doc.DocumentElement.ParentNode == null) return null;
             return doc.DocumentElement.ParentNode.SelectNodes(xpath);
+        }
+
+        public static XmlNodeList GetChildNodes(XmlNode element, string name)
+        {
+            if (element == null) return null;
+            if (element.ChildNodes == null) return null;
+            return element.SelectNodes(name);
+        }
+
+        public static XmlNode GetChildNode(XmlNode element, string name)
+        {
+            var childs = GetChildNodes(element, name);
+            if (childs == null) return null;
+            if (childs.Count==0) return null;
+            return childs[0];
         }
     }
 }

@@ -6,6 +6,18 @@ namespace Thea2Translator.Logic
 {
     public class TextHelper
     {
+        public static string GetStringFromList(List<string> list, string separator)
+        {
+            if (list == null)
+                return "";
+
+            list.RemoveAll(x => string.IsNullOrEmpty(x));
+            if (list.Count == 0)
+                return "";
+
+            return string.Join(separator, list.ToArray());
+        }
+
         public static bool EqualsTexts(string text1, string text2)
         {
             text1 = new string(text1.Where(c => char.IsLetterOrDigit(c)).ToArray());
@@ -97,7 +109,7 @@ namespace Thea2Translator.Logic
             return ret;
         }
 
-        public static string NormalizeName(string text)
+        public static string NormalizeNames(string text)
         {
             var ret = text;
             ret = ret.Replace("\\n", "");
@@ -109,6 +121,21 @@ namespace Thea2Translator.Logic
             ret = ret.Replace(" ", "");
             ret = ret.Replace("_", " ");
             return ret;
+        }
+
+        public static string NormalizeName(string text, out string translated)
+        {
+            translated = "";
+
+            int indexOfOpen = text.IndexOf("[", 0);
+            int indexOfClose = text.IndexOf("]", indexOfOpen + 1);
+            if (indexOfOpen>0 && indexOfClose>0)
+            {
+                translated = text.Substring(indexOfOpen + 1, indexOfClose - indexOfOpen - 1);
+                text = text.Replace($"[{translated}]", "");
+            }
+
+            return text;
         }
 
         public static string Normalize(string text, out List<string> specials)
@@ -235,9 +262,9 @@ namespace Thea2Translator.Logic
 
         public static string PrepareNamesString()
         {
-            //string ret = FileHelper.ReadFileString(@"D:\RPA\T2TS-T\Thea2Translator\Thea2Translator.DesktopApp\bin\x64\Meskie.txt");
-            //string ret = FileHelper.ReadFileString(@"D:\RPA\T2TS-T\Thea2Translator\Thea2Translator.DesktopApp\bin\x64\Zenski.txt");
             string ret = "";
+            //ret = FileHelper.ReadFileString(@"D:\RPA\T2TS-T\Thea2Translator\Thea2Translator.DesktopApp\bin\x64\Meskie.txt");
+            //ret = FileHelper.ReadFileString(@"D:\RPA\T2TS-T\Thea2Translator\Thea2Translator.DesktopApp\bin\x64\Zenski.txt");
             if (string.IsNullOrEmpty(ret))
                 return ret;
                        
@@ -319,8 +346,29 @@ namespace Thea2Translator.Logic
             {
                 list.Add(string.Join(", ", dict[key].ToArray()));
             }
+                        
+            ret = string.Join(",", list.ToArray());
+            //ret = string.Join(",\r\n", list.ToArray());
 
-            ret = string.Join(",\r\n", list.ToArray());
+            var newList = ret.Split(',').ToList();
+            newList = newList.Where(x => x.EndsWith("sław")).ToList();
+            var newList2 = new List<string>();
+            foreach (var newElem in newList)
+            {
+                var e = newElem.Replace("sław", "");
+                e = e.Replace(" ", "");
+                if (e.Length <= 2)
+                    continue;
+                var l = e.Last().ToString();
+                if (l=="o" || l=="i")
+                {
+                    if (newList2.Contains(e)) continue;
+                    newList2.Add(e);
+                }
+            }
+            var ret2 = string.Join(",", newList.ToArray());
+            var ret3 = string.Join(",", newList2.ToArray());
+
             return ret;
         }
     }

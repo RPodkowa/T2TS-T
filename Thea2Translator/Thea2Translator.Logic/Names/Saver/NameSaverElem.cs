@@ -7,10 +7,10 @@ using System.Xml;
 
 namespace Thea2Translator.Logic
 {
-    public class NameSaverElem
+    public class NameSaverElem : IComparable<NameSaverElem>
     {
         public string Collection { get; private set; }
-        public List<string> Races { get; private set; }
+        public RaceInfo Race { get; private set; }
         public List<string> Subraces { get; private set; }
         public List<string> CharacterMaleNames { get; private set; }
         public List<string> CharacterFemaleNames { get; private set; }
@@ -18,7 +18,7 @@ namespace Thea2Translator.Logic
         public NameSaverElem(string collection, string[] keyArray)
         {
             Collection = collection;
-            Races = new List<string>();
+            Race = RaceInfo.GetEmptyRaceInfo();
             Subraces = new List<string>();
             CharacterMaleNames = new List<string>();
             CharacterFemaleNames = new List<string>();
@@ -39,7 +39,13 @@ namespace Thea2Translator.Logic
 
         private void TryAddRaces(List<string> keyList)
         {
+            var Races = new List<string>();
             TryAddListElem(keyList, Races, "RACE-");
+            if (Races.Count > 1)
+                throw new Exception("Wiecej niz 1 rasa!");
+
+            if (Races.Count > 0)
+                Race = new RaceInfo(Races[0]);
         }
 
         private void TryAddSubraces(List<string> keyList)
@@ -76,7 +82,9 @@ namespace Thea2Translator.Logic
         {
             XmlNode elementNode = doc.CreateElement(Collection);
 
-            AddXmlNodeByList(elementNode, Races, "Race");
+            if (Race.Race != RaceType.NONE)
+                AddXmlNodeByList(elementNode, new List<string> { Race.GetFullName() }, "Race");
+
             AddXmlNodeByList(elementNode, Subraces, "Subrace");
             AddXmlNodeByList(elementNode, CharacterMaleNames, "CharacterMale");
             AddXmlNodeByList(elementNode, CharacterFemaleNames, "CharacterFemale");
@@ -94,6 +102,41 @@ namespace Thea2Translator.Logic
                 node.Attributes.Append(XmlHelper.GetAttribute(elementNode.OwnerDocument, "Value", value));
                 elementNode.AppendChild(node);
             }
+        }
+
+        public int CompareTo(NameSaverElem other)
+        {
+            var raceCompareResult = Race.CompareTo(other.Race);
+            if (raceCompareResult != 0)
+                return raceCompareResult;
+
+            var subraceCompareResult = CompareSubraces(other.Subraces);
+            if (subraceCompareResult != 0)
+                return subraceCompareResult;
+
+            return string.Compare(Collection, other.Collection, comparisonType: StringComparison.OrdinalIgnoreCase);
+        }
+
+        private int CompareSubraces(List<string> otherSubraces)
+        {
+            int myCount = 0;
+            int otherCount = 0;
+            if (Subraces != null) myCount = Subraces.Count;
+            if (otherSubraces != null) otherCount = otherSubraces.Count;
+
+            return myCount.CompareTo(otherCount);
+        }
+
+        public override string ToString()
+        {
+            var stringList = new List<string>();
+
+            if (Race == null) stringList.Add($"NULL");
+            else stringList.Add($"{Race.Race.ToString()}");
+
+            stringList.Add($"{Collection} ({Subraces.Count}) ♀️({CharacterFemaleNames.Count}) ♂️({CharacterMaleNames.Count})");
+
+            return string.Join(" ", stringList.ToArray());
         }
     }
 }

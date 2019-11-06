@@ -11,6 +11,7 @@ namespace Thea2Translator.Logic
     {
         private readonly string FullPath;
         public IList<NameGeneratorElem> NameGeneratorElems { get; private set; }
+        public RaceDictionary RaceDictionary { get; private set; }        
 
         public NameGenerator(DirectoryType directoryType = DirectoryType.Cache)
         {
@@ -29,12 +30,21 @@ namespace Thea2Translator.Logic
             return null;
         }
 
+        public void LoadNotUsed(List<CacheElem> cacheElems)
+        {
+            foreach (var elem in NameGeneratorElems)
+            {
+                if (elem.Used) continue;
+                elem.InsertCacheElems(cacheElems);
+            }
+        }
+
         private void ResetElems()
         {
             NameGeneratorElems = new List<NameGeneratorElem>();
         }
 
-        public void LoadFromFile()
+        public void LoadFromFile(bool withDictionary)
         {
             ResetElems();
 
@@ -49,6 +59,35 @@ namespace Thea2Translator.Logic
                 var elem = new NameGeneratorElem(element);
                 AddElem(elem);
             }
+
+            if (withDictionary)
+                LoadNameDictionary();
+        }
+
+        private void LoadNameDictionary()
+        {
+            RaceDictionary = new RaceDictionary();
+            foreach (var elem in NameGeneratorElems)
+            {
+                RaceDictionary.ReadFromNameGeneratorElem(elem);
+            }
+        }
+
+        public string GetRacesDictionarysDescriptions()
+        {
+            if (RaceDictionary == null)
+                return null;
+
+            var ret = new List<string>();
+
+            ret.Add("\r\n");
+            ret.Add("----------------------------------------------------");
+            ret.Add("\tSŁOWNICZEK");
+            ret.Add("----------------------------------------------------");
+            ret.Add("\r\n");
+            ret.Add(RaceDictionary.ToString());
+
+            return TextHelper.GetStringFromList(ret, "\r\n");
         }
 
         protected void AddElem(NameGeneratorElem elem)

@@ -11,6 +11,7 @@
         UNLIVING,
         BEAST,
         MYTHICAL,
-        CONCEPT
+        CONCEPT,
+        NONE
     }
 }

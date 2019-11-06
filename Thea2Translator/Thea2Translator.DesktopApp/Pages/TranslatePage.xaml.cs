@@ -37,6 +37,7 @@ namespace Thea2Translator.DesktopApp.Pages
         public static RoutedCommand ToggleBookmarkCommand = new RoutedCommand(); //F2
         public static RoutedCommand NextBookmarkCommand = new RoutedCommand(); //F3
         public static RoutedCommand PrevBookmarkCommand = new RoutedCommand(); //Shift+F3
+        public static RoutedCommand FullGroupsStatistics = new RoutedCommand(); //F11
         public static RoutedCommand FullModuleStatistics = new RoutedCommand(); //F12
         public static RoutedCommand HomeCommand = new RoutedCommand(); //ESC
 
@@ -611,7 +612,8 @@ namespace Thea2Translator.DesktopApp.Pages
             AddCommand(FunctionsCommand, new KeyGesture(Key.F1, ModifierKeys.None, "F1"), "Funkcje");
             AddCommand(ToggleBookmarkCommand, new KeyGesture(Key.F2, ModifierKeys.None, "F2"), "Zakładka - zaznacz/odznacz");
             AddCommand(PrevBookmarkCommand, new KeyGesture(Key.F3, ModifierKeys.Shift, "Shift+F3"), "Poprzednia zakładka");
-            AddCommand(NextBookmarkCommand, new KeyGesture(Key.F3, ModifierKeys.None, "F3"), "Następna zakładka");
+            AddCommand(NextBookmarkCommand, new KeyGesture(Key.F3, ModifierKeys.None, "F3"), "Następna zakładka");            
+            AddCommand(FullGroupsStatistics, new KeyGesture(Key.F11, ModifierKeys.None, "F11"), "Pełna statystyka grup");
             AddCommand(FullModuleStatistics, new KeyGesture(Key.F12, ModifierKeys.None, "F12"), "Pełna statystyka");
             AddCommand(HomeCommand, new KeyGesture(Key.Escape, ModifierKeys.None, "Esc"), "Wyjście");
         }
@@ -645,6 +647,7 @@ namespace Thea2Translator.DesktopApp.Pages
             if (keyGesture.Key == Key.F2 && keyGesture.Modifiers == ModifierKeys.None) ToggleBookmark();
             if (keyGesture.Key == Key.F3 && keyGesture.Modifiers == ModifierKeys.None) ChooseBookmark(true);
             if (keyGesture.Key == Key.F3 && keyGesture.Modifiers == ModifierKeys.Shift) ChooseBookmark(false);
+            if (keyGesture.Key == Key.F11 && keyGesture.Modifiers == ModifierKeys.None) SaveFullGroupsStatistics();
             if (keyGesture.Key == Key.F12 && keyGesture.Modifiers == ModifierKeys.None) SaveFullModuleStatistics();
             if (keyGesture.Key == Key.Escape && keyGesture.Modifiers == ModifierKeys.None) BackToPrevPage();
         }
@@ -704,6 +707,10 @@ namespace Thea2Translator.DesktopApp.Pages
                 return;
 
             MessageBox.Show(selectedCacheElement.CacheElem.GetElemInfoString());
+        }
+        private void SaveFullGroupsStatistics()
+        {
+            statistic.SaveFullGroupsStatistics(dataCache);
         }
         private void SaveFullModuleStatistics()
         {

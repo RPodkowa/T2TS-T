@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using Thea2Translator.Logic.Cache.Interfaces;
 
@@ -15,6 +16,7 @@ namespace Thea2Translator.Logic.Cache
         public int ItemWithoutConfirmationCount { get; private set; }
         public int ConfirmedPercent { get; private set; }
         private Dictionary<string, int> NotStandardItems { get; set; }
+        private string AdditionalSummary { get; set; }
 
         public string GetSummary(bool forPublication)
         {
@@ -22,16 +24,19 @@ namespace Thea2Translator.Logic.Cache
             arr.Add($"\tLinii: {AllItemsCount}");
             arr.Add($"\tPrzetłumaczonych: {TranslatedItemsCount} ({TranslatedPercent}%)");
             arr.Add($"\tPotwierdzonych/skorygowanych: {ConfirmedItemsCount} ({ConfirmedPercent}%)");
-            
-            if (NotStandardItems!=null)
+
+            if (NotStandardItems != null)
             {
-                arr.Add($"--------------------------");
+                arr.Add($"----------------------------------------------------");
                 foreach (var item in NotStandardItems)
                 {
                     arr.Add($"\t{item.Key}: {item.Value.ToString()}");
                 }
-                arr.Add($"--------------------------");
+                arr.Add($"----------------------------------------------------");
             }
+
+            if (!string.IsNullOrEmpty(AdditionalSummary))
+                arr.Add(AdditionalSummary);
 
             string text = string.Join("\r\n", arr.ToArray());
             return text;
@@ -54,6 +59,20 @@ namespace Thea2Translator.Logic.Cache
             ConfirmedPercent = (int)(((double)ConfirmedItemsCount / (double)AllItemsCount) * 100);
 
             ReloadNotStandardItems(dataCache);
+            ReloadAdditionalSummary(dataCache);
+        }
+
+        private void ReloadAdditionalSummary(IDataCache dataCache)
+        {
+            AdditionalSummary = null;
+
+            if (dataCache.GetFileType() == FilesType.Names)
+            {
+                var nameGenerator = new NameGenerator();
+                nameGenerator.LoadFromFile(true);
+
+                AdditionalSummary = nameGenerator.GetRacesDictionarysDescriptions();
+            }
         }
 
         private void ReloadNotStandardItems(IDataCache dataCache)
@@ -65,15 +84,12 @@ namespace Thea2Translator.Logic.Cache
 
                 foreach (var elem in nameSaver.NameSaverElems)
                 {
-                    var races = elem.Races;
+                    var race = elem.Race.GetName(true);
                     var males = elem.CharacterMaleNames.Count;
                     var females = elem.CharacterFemaleNames.Count;
 
-                    foreach (var race in races)
-                    {
-                        AddToNotStandardItem($"{race} ♀️", females);
-                        AddToNotStandardItem($"{race} ♂️", males);
-                    }
+                    AddToNotStandardItem($"{race} ♀️", females);
+                    AddToNotStandardItem($"{race} ♂️", males);
                 }
             }
         }
@@ -81,23 +97,42 @@ namespace Thea2Translator.Logic.Cache
         private void AddToNotStandardItem(string key, int value)
         {
             if (NotStandardItems == null) NotStandardItems = new Dictionary<string, int>();
-
-            key = key.Replace("RACE-", "");
-            key = key.Replace("HUMAN", "Człowiek");
-            key = key.Replace("ELF", "Elf");
-            key = key.Replace("ORC", "Ork");
-            key = key.Replace("GOBLIN", "Goblin");
-            key = key.Replace("DWARF", "Krasnolud");
-            key = key.Replace("DEMON", "Demon");
-            key = key.Replace("UNLIVING", "Nieumarły");
-            key = key.Replace("BEAST", "Bestia");
-            key = key.Replace("MYTHICAL", "Mityczny");
-            key = key.Replace("CONCEPT", "Koncept");
-
             if (!NotStandardItems.Keys.Contains(key))
                 NotStandardItems.Add(key, 0);
 
             NotStandardItems[key] += value;
+        }
+
+        public void SaveFullGroupsStatistics(IDataCache dataCache)
+        {
+            var dict = new Dictionary<string, GroupValuesModel>();
+            var users = new List<string>();
+
+            var elements = dataCache.CacheElems.Where(x => x.IsActive).ToList();
+            foreach (var elem in elements)
+            {
+                foreach (var group in elem.Groups)
+                {
+                    if (dataCache.GetFileType() == FilesType.Modules && group.Contains("_"))
+                        continue;                    
+
+                    if (!dict.Keys.Contains(group))
+                        dict.Add(group, new GroupValuesModel());
+                    
+                    dict[group].AddValue(elem.IsCorrectedByHuman);
+                }
+            }
+
+            var elems = new List<string>();
+            var sorted = dict.OrderByDescending(x => x.Value.SumValue);
+
+            foreach (var elem in sorted)
+            {
+                elems.Add($"{elem.Key};{elem.Value.SumValue};{elem.Value.CorrectedValue};{elem.Value.NotCorrectedValue}");
+            }
+
+            var file = FileHelper.GetLocalFilePatch(DirectoryType.Statistics, $"{dataCache.GetFileType()}_Groups.csv");
+            FileHelper.SaveListToFile(elems, file);
         }
 
         public void SaveFullModuleStatistics(IDataCache dataCache)
@@ -207,7 +242,5 @@ namespace Thea2Translator.Logic.Cache
             var file = FileHelper.GetLocalFilePatch(DirectoryType.Statistics, $"{dataCache.GetFileType()}_{statisticType}.csv");
             FileHelper.SaveListToFile(elems, file);
         }
-
-        //private void 
     }
 }

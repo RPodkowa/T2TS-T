@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Xml;
 
 namespace Thea2Translator.Logic
@@ -11,9 +9,10 @@ namespace Thea2Translator.Logic
     {
         public static string MaleString = "CharacterMale";
         public static string FemaleString = "CharacterFemale";
-        
+
         public string Collection { get; private set; }
         public string Race { get; private set; }
+        public string Description { get; private set; }
         public int Flag { get; private set; }
         public bool IsConfirmation
         {
@@ -25,21 +24,23 @@ namespace Thea2Translator.Logic
             get { return FlagHelper.IsSettedBit(Flag, 1); }
             private set { Flag = FlagHelper.GetSettedBitValue(Flag, 1, value); }
         }
-        public List<string> Subraces { get; private set; }        
+        public List<string> Subraces { get; private set; }
         public List<string> CharacterMaleNames { get; private set; }
         public List<string> CharacterFemaleNames { get; private set; }
         public List<NameGeneratorElemCollection> Collections { get; private set; }
+
+        public bool Used { get; private set; }
 
         public NameGeneratorElem(XmlNode element)
         {
             if (element.Attributes != null)
             {
-                Collection = element.Attributes["Collection"]?.Value.ToString();
-                Race = element.Attributes["Race"]?.Value.ToString();
-                int flag = 0;
-                if (int.TryParse(element.Attributes["Flag"]?.Value, out flag))
-                    Flag = flag;
+                Collection = XmlHelper.GetNodeAttribute(element, "Collection");
+                Race = XmlHelper.GetNodeAttribute(element, "Race");
+                Flag = XmlHelper.GetNodeAttribute(element, "Flag", 0);
             }
+
+            Description = XmlHelper.GetNodeText(element, "Description");
 
             Subraces = new List<string>();
 
@@ -53,12 +54,14 @@ namespace Thea2Translator.Logic
             ReadNamesFromString(XmlHelper.GetNodeText(element, "Names/Female"), false);
 
             Collections = NameGeneratorElemCollection.ReadFromXmlNode(element);
+            Used = false;
         }
 
         public void InsertCacheElems(IList<CacheElem> cacheElems)
-        {            
+        {
             InsertCacheElemsFromNames(cacheElems, true);
             InsertCacheElemsFromNames(cacheElems, false);
+            Used = true;
         }
 
         private void InsertCacheElemsFromNames(IList<CacheElem> cacheElems, bool male)
@@ -79,7 +82,7 @@ namespace Thea2Translator.Logic
             var allNames = new List<string>();
             if (male && CharacterMaleNames != null) allNames.AddRange(CharacterMaleNames);
             if (!male && CharacterFemaleNames != null) allNames.AddRange(CharacterFemaleNames);
-            
+
             if (Collections == null)
                 return allNames;
 
@@ -97,7 +100,7 @@ namespace Thea2Translator.Logic
             if (string.IsNullOrEmpty(namesString))
                 return;
 
-            namesString = TextHelper.NormalizeName(namesString);
+            namesString = TextHelper.NormalizeNames(namesString);
 
             var list = namesString.Split(new string[] { "," }, StringSplitOptions.RemoveEmptyEntries).ToList();
             if (male) CharacterMaleNames = list;
@@ -132,4 +135,3 @@ namespace Thea2Translator.Logic
 //  </Element>
 //</NameGenerator>
 
-    

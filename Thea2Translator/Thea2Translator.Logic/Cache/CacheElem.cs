@@ -21,6 +21,7 @@ namespace Thea2Translator.Logic
         public bool IsActive { get { return !IsInactive; } private set { IsInactive = !value; } }
         public bool IsMale { get { return FlagHelper.IsSettedBit(Flag, 4); } private set { Flag = FlagHelper.GetSettedBitValue(Flag, 4, value); } }
         public bool IsFemale { get { return FlagHelper.IsSettedBit(Flag, 5); } private set { Flag = FlagHelper.GetSettedBitValue(Flag, 5, value); } }
+        public bool IsMissingItem { get { return FlagHelper.IsSettedBit(Flag, 6); } private set { Flag = FlagHelper.GetSettedBitValue(Flag, 6, value); } }
 
         public string Key { get; private set; }
         /// <summary>
@@ -107,12 +108,13 @@ namespace Thea2Translator.Logic
             RefreshStatusString();
         }
 
-        public CacheElem(string collection, string race, List<string> subraces, string gender, string name)
+        public CacheElem(string collection, string race, List<string> subraces, string gender, string name, bool missingItem = false)
         {
             Type = FilesType.Names;
             Flag = 0;
-            IsCorrectedByHuman = true;
-            IsGenericName = true;
+            IsCorrectedByHuman = !missingItem;
+            IsGenericName = !missingItem;
+            IsMissingItem = missingItem;
             SetGender(gender);
             Key = GetNameKey(collection, race, subraces, gender, name);
             InputText = name;
@@ -299,6 +301,7 @@ namespace Thea2Translator.Logic
             if (IsInactive) status += "🚫";
             if (HasConflict) status += "⚠️";
             if (IsGenericName) status += "⚙️";
+            if (IsMissingItem) status += "❌";
             if (IsMale) status += "♂️";
             if (IsFemale) status += "♀️";
             if (IsDescription) status += "📖";            

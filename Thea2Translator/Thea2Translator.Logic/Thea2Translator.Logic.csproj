@@ -111,6 +111,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cache\Enums\StatisticType.cs" />
+    <Compile Include="Cache\Models\GroupValuesModel.cs" />
     <Compile Include="Filter\FilterModel.cs" />
     <Compile Include="Cache\Models\WwwModuleStatus.cs" />
     <Compile Include="Helpers\ImageHelper.cs" />
@@ -124,6 +125,10 @@
     <Compile Include="Infos\RaceInfo.cs" />
     <Compile Include="Infos\SubraceInfo.cs" />
     <Compile Include="Mods\ModType.cs" />
+    <Compile Include="Names\Dictionary\RaceDictionaryElem.cs.cs" />
+    <Compile Include="Names\Dictionary\RaceDictionary.cs" />
+    <Compile Include="Names\Dictionary\NameDictionaryElem.cs" />
+    <Compile Include="Names\Dictionary\NameDictionary.cs" />
     <Compile Include="Names\Saver\NameSaverElem.cs" />
     <Compile Include="Names\Generator\NameGenerator.cs" />
     <Compile Include="Names\Generator\NameGeneratorElem.cs" />

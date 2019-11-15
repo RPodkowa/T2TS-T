@@ -18,6 +18,7 @@ namespace Thea2Translator.Logic.Cache.Interfaces
         int ConfirmedPercent { get; }
 
         void Reload(IDataCache dataCache);
+        void SaveFullGroupsStatistics(IDataCache dataCache);
         void SaveFullModuleStatistics(IDataCache dataCache);
         string GetSummary(bool forPublication);        
     }

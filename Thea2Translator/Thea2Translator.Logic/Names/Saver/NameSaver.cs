@@ -8,7 +8,7 @@ namespace Thea2Translator.Logic
 {
     public class NameSaver
     {
-        public IList<NameSaverElem> NameSaverElems { get; private set; }
+        public List<NameSaverElem> NameSaverElems { get; private set; }
 
         public NameSaver(IList<CacheElem> cacheElems)
         {
@@ -18,6 +18,8 @@ namespace Thea2Translator.Logic
             {
                 AddCacheElem(cacheElem);
             }
+
+            NameSaverElems.Sort();
         }
 
         private void AddCacheElem(CacheElem cacheElem)

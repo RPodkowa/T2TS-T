@@ -1,5 +1,5 @@
 <div class="primaryFontColor text-justify w-75 ml-12 h6">
-        <div class="mb-3 h1 font-weight-bold bottomBorder">Status tłumaczenia (stan na {{databaseStatus?.modifiedDate}})</div>
+        <div class="mb-3 h1 font-weight-bold bottomBorder">Status tłumaczenia (stan na {{dateForDisplay}})</div>
     
     <div>
            <div class="row h4">
@@ -24,21 +24,25 @@
 
            <div class="row mb-2">
                 <div class="col statusBar">
-                    <ngb-progressbar type="info" [value]="databaseStatus?.translatedByGooglePercent"></ngb-progressbar>
+                        <app-progress-bar [value] = "databaseStatus?.translatedByGooglePercent" [firstGradient]="'#17a2b8'" ></app-progress-bar>    
+                    <!-- <ngb-progressbar type="info" [value]="databaseStatus?.translatedByGooglePercent"></ngb-progressbar> -->
                  </div>
                  <div class="col-1"></div>
                 <div class="col statusBar">
-                     <ngb-progressbar type="info" [value]="modulesStatus?.translatedByGooglePercent"></ngb-progressbar>
+                        <app-progress-bar [value] = "modulesStatus?.translatedByGooglePercent" [firstGradient]="'#17a2b8'"></app-progress-bar>  
+                     <!-- <ngb-progressbar type="info" [value]="modulesStatus?.translatedByGooglePercent"></ngb-progressbar> -->
                 </div>
             </div>
 
            <div class="row">
                <div class="col statusBar">
-                   <ngb-progressbar class="bg-database" type="success" [value]="databaseStatus?.correctedPercent"></ngb-progressbar>
+                    <app-progress-bar [value] = "databaseStatus?.correctedPercent" [firstGradient]="'#9AFFFF'" [secondGradient]="'#1A9683'"></app-progress-bar>  
+                   <!-- <ngb-progressbar class="bg-database" type="success" [value]="databaseStatus?.correctedPercent"></ngb-progressbar> -->
                 </div>
                 <div class="col-1"></div>
                <div class="col statusBar">
-                    <ngb-progressbar type="danger" [value]="modulesStatus?.correctedPercent"></ngb-progressbar>
+                    <app-progress-bar [value] = "modulesStatus?.correctedPercent" [firstGradient]="'#EE755F'" [secondGradient]="'#531921'"></app-progress-bar>  
+                    <!-- <ngb-progressbar type="danger" [value]="modulesStatus?.correctedPercent"></ngb-progressbar> -->
                </div>
            </div>
     </div>

@@ -1,1 +1,18 @@
-<p>progress-bar works!</p>
+<div class="outer">
+    <div class="inner">
+      <i class="top left"></i>
+      <i class="top right"></i>
+      <div class="content">
+        <div class="progressBar">
+          <div class="progress" [style.width.%] = "value" [ngStyle]="setStyle()">
+            
+          </div>
+          <div class="rest">
+            
+          </div>
+        </div>
+      </div>
+      <i class="bottom right"></i>
+      <i class="bottom left"></i>
+    </div>
+  </div>

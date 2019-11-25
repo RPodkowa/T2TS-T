@@ -108,14 +108,20 @@ namespace Thea2Translator.DesktopApp.Pages
 
         private void LbItemsToTranslate_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            if (selectedCacheElement != null && txtTranslatedText.Text != selectedCacheElement.CacheElem.OriginalText)
-            {
+            if (selectedCacheElement != null && txtTranslatedText.Text != selectedCacheElement.CacheElem.OriginalText)            
                 selectedCacheElement.CacheElem.SetTranslated(txtTranslatedText.Text, true);
-            }
 
             selectedCacheElement = lbItemsToTranslate.SelectedItem as CacheElemViewModel;
             TrySaveLastItem();
-            txtOriginalText.Text = selectedCacheElement?.CacheElem?.OriginalText;
+            string org_text = "???";
+            if (selectedCacheElement != null && selectedCacheElement.CacheElem != null)
+            {
+                org_text = selectedCacheElement.CacheElem.OriginalText;
+                if (dataCache.GetFileType() == FilesType.DataBase)
+                    org_text += $"\r\n===================\r\n{selectedCacheElement.CacheElem.Key}";
+            }
+
+            txtOriginalText.Text = org_text;
 
             if (selectedCacheElement?.CacheElem != null)
             {

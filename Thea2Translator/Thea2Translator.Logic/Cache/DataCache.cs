@@ -443,7 +443,11 @@ namespace Thea2Translator.Logic
                     if (elem == null) continue;
 
                     var text = elem.OutputText;
-                    if (debugMode) text = $"[{elem.Id}] {text}";
+                    if (debugMode)
+                    {
+                        if (elem.IsCorrectedByHuman) text = $"[{elem.Id}] {text}";
+                        else text = $"({elem.Id}) {text}";
+                    }
 
                     entry.Attributes["Val"].Value = text;
                 }
